@@ -34,4 +34,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R28 16 micro-variants of the root — all σ₀-blind; root neighbourhood exhausted. [R028.lean](Riemann/Tree/R028.lean)
 - R29 program blueprints — open core per program; machine-checked: any of NB/BD/Lagarias/Mertens cores ⇒ RH. [R029.lean](Riemann/Tree/R029.lean)
 - R30 Euler-product positivity beyond 3-4-1 — all pole-anchored. [R030.lean](Riemann/Tree/R030.lean)
-- R31 FRONTIER (next)
+- R31 second anchors beyond the pole — all dead; the pole is the only exclusion anchor. [R031.lean](Riemann/Tree/R031.lean)
+- R32 FRONTIER (next)

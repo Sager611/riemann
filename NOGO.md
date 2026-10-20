@@ -149,3 +149,4 @@
 - R25 fixed Weil windows (Zhu 1.6, ours 1.75, Liu 17/8, Mori log 15): no uniformity in L; RH-verified heights don't give windows.
 - R28 root micro-variants (domain, G, p, T, η, averages, integers+Stolz, EM orders, ∂s, multiplicity, conj, Perron shift, p≠q, Poisson, eta): all σ₀-blind.
 - R30 Euler-product positivity (optimal trig polys, Stechkin, Landau–Ingham, Turán, Rankin–Selberg, Selberg mollifier/sieve, Landau–Page): all pole-anchored, width O(1/log t).
+- R31 second anchors (Γ poles, special values, Stirling χ, p-adic, real-segment sign, on-line zeros, shifted poles, archimedean term): none excludes zeros.
