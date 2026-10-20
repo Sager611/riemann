@@ -35,3 +35,4 @@ import Riemann.Deep.DH.ZeroFinal
 import Riemann.Deep.FirstZero.Simple
 import Riemann.Deep.Stenger.Paper
 import Riemann.Deep.FirstZero.SimpleNext
+import Riemann.Deep.FirstZero.Count

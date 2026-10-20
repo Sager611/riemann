@@ -7,7 +7,7 @@ Goal: Fayed arXiv 2209.01890 (v55) "proof" of RH → Lean 4 + Mathlib; pin faili
 2. Branch: ≥8 parallel scouts; directions = some straightforward + many wild/out-of-box/original.
 3. Write every branch in Lean (`Riemann/Tree/R###/`): claim, counterexample or reduction; `sorry` only for open obligations, marked.
 4. Dead ends → `NOGO.md`, few words each.
-5. Hard branch → Orca agent: `pi --provider anthropic --model claude-opus-5-5 --thinking high`, tight full brief; close its tab when done.
+5. Hard branch → Orca agent: `pi --provider anthropic --model claude-opus-5-5 --thinking max` (user, 2026-10-20), tight full brief; close its tab when done.
 6. `lake build` green → git commit per round.
 
 ## Discoveries
