@@ -189,3 +189,4 @@
 - R67 diagnosis of (55): weight 1−t = O(1/u) turns F'/G' ~ u^p into O(u^{p−1}); a G dropping by a fixed factor per component would make F/G ↛ 0. No G works. [Lean](Riemann/Tree/R067.lean)
 - R69 computability (busy beaver, RH machines, DPRM, independence, proof mining, AI provers, verified Lagarias checks, zero algorithms): no decision in reach. [Lean](Riemann/Tree/R069.lean)
 - R70 personas 2.0 (Connes, Scholze, Tao, Sarnak, Bombieri, Deninger, Iwaniec, Soundararajan–Radziwiłł): 7/8 need a missing structure; moments need averaged→pointwise. [Lean](Riemann/Tree/R070.lean)
+- R71 quantitative heat flow (Rodgers–Tao, Polymath 15, stability, KKL, Lehmer pairs, function fields, CM dynamics, Λ ≤ 0.1787 claim): Λ ≤ 0 needs backward stability ≡ RH. [Lean](Riemann/Tree/R071.lean)
