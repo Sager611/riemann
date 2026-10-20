@@ -42,4 +42,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R35 function-field mechanism transfer — no Frobenius over ℚ; tensor_power_trick machine-checked. [R035.lean](Riemann/Tree/R035.lean)
 - R36 random models — none transfers; Bagchi strong recurrence defined in Lean. [R036.lean](Riemann/Tree/R036.lean)
 - R37 rigidity / uniqueness — pins ζ, not its zeros; DH filter refined via Hamburger. [R037.lean](Riemann/Tree/R037.lean)
-- R38 FRONTIER (next)
+- R38 next audit targets (8 claims); counterexample core to "log-concave ⇒ real zeros" machine-checked. [R038.lean](Riemann/Tree/R038.lean)
+- R39 FRONTIER (next)

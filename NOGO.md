@@ -156,3 +156,4 @@
 - R35 function-field mechanisms (Castelnuovo, Deligne, Stepanov, Hodge index, standard conj., Lefschetz/Frobenius flow, F₁, rationality): no Frobenius over ℚ; positivity gap. [Lean](Riemann/Tree/R035.lean)
 - R36 random models (Wintner, Harper, Selberg CLT, Bagchi recurrence, GMC, FHK maxima, GUE statistics, Ng's M(x) law): one deterministic sample; recurrence ≡ RH. [Lean](Riemann/Tree/R036.lean)
 - R37 rigidity (Hamburger, Kaczorowski–Perelli, converse theorems, Bombieri–Hejhal, zero moving, Katz–Sarnak, Beurling, Saias–Weingartner): pins ζ, not its zeros. [Lean](Riemann/Tree/R037.lean)
+- R38 audit-target search: 8 recent claims listed (Velez, Li-Zenodo, Gershon, Yakaboylu, Bhattacharjee, Robin-Zenodo, Q(A)-Zenodo, Abe); log-concave ⇏ real zeros (Lean core). [Lean](Riemann/Tree/R038.lean)
