@@ -68,4 +68,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R57 Inputs non-vacuity plan — all three remaining fields judged true; formalization queued. [R057.lean](Riemann/Tree/R057.lean)
 - R58 dynamical & scattering equivalents — none gives leverage. [R058.lean](Riemann/Tree/R058.lean)
 - R59 structure of hypothetical counterexamples — narrows, never empties. [R059.lean](Riemann/Tree/R059.lean)
+- Deep: Yakaboylu audit — no discovery: positivity step assumes RH; author's v17 drops the claim. [REPORT](Riemann/Deep/Yakaboylu/REPORT.md)
 - R60 FRONTIER (next)
