@@ -94,7 +94,7 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R76 what the formal Weil criterion makes cheap — Yoshida log 2 window launched. [R076.lean](Riemann/Tree/R076.lean)
 - R77 contour-topology arguments — killed by Davenport–Heilbronn. [R077.lean](Riemann/Tree/R077.lean)
 - R78 cheap numerical milestones — ζ(1/2) < 0 launched. [R078.lean](Riemann/Tree/R078.lean)
-- Deep: first zero is the first (first_zero_is_first, no zeros below 14.13); ζ(1/2) ∈ (−1.461, −1.460); Yoshida partial: WeilPos L for L ≤ 1/3 (weilPos_le_third; earlier 1/16). [FirstZero](Riemann/Deep/FirstZero/) [Yoshida](Riemann/Deep/Yoshida/)
+- Deep: first zero is the first (first_zero_is_first, no zeros below 14.13); ζ(1/2) ∈ (−1.461, −1.460); Yoshida partial: WeilPos L for L ≤ 0.55 (weilPos_le_55; earlier 1/3, 1/16). [FirstZero](Riemann/Deep/FirstZero/) [Yoshida](Riemann/Deep/Yoshida/)
 - R79 necessity directions — bottlenecks: 1/ζ bounds under RH, Hadamard product for ξ. [R079.lean](Riemann/Tree/R079.lean)
 - R80 Hadamard / 1/ζ bottleneck lemmas — ≈ 5k–12k lines total. [R080.lean](Riemann/Tree/R080.lean)
 - R81 filters as Lean theorems — dh_offline, zero_free_of_criterion, finite_check_consistent. [R081.lean](Riemann/Tree/R081.lean)

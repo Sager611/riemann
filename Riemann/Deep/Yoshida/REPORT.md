@@ -1,32 +1,51 @@
 # Yoshida deep dive: Weil positivity on small windows (Lean)
 
-**Verdict: strict improvement, not log 2.** Sorry-free, axioms = propext, Classical.choice, Quot.sound:
-- `Fayed.Yoshida.weilPos_le_third : ∀ L ≤ 1/3, WeilPos L` (f supported in [−1/6, 1/6]). Window 1/3, up from 1/16; log 2 ≈ 0.693.
-- Kept from round 1: `weilPos_small` (L ≤ 1/16, `Small.lean`), `weilPos_iff_primeFree` (exact prime-free target below log 2).
-- New exact identity `weilQ_re_eq_W` (below log 2): `Re Q(f) = (1/2π) ∫ |F(r)|² (2π μ(r) + J(r)) dr`, with
-  `J(r) = ∫_{−2a}^{2a} 2cosh(x/2) cos(rx) dx = 4((1/2) sinh a cos 2ar + r cosh a sin 2ar)/(1/4 + r²)`.
-  The pole term is no longer bounded crudely; it becomes part of a single weight on the Fourier side.
-- Build: `lake build Riemann.Deep.Yoshida.Windows` (≈ 3 min; peak memory ≈ 5.8 GB, about the same as importing Mathlib, because the certificate is elaborated sequentially). Not imported by Riemann.lean.
+**Verdict (round 3): window 0.55, up from 1/3; not yet log 2 ≈ 0.693.** Sorry-free, no `native_decide`,
+axioms = propext, Classical.choice, Quot.sound:
+- `Fayed.Yoshida.weilPos_le_55 : ∀ L ≤ 11/20, WeilPos L` (f supported in [−0.275, 0.275]).
+- `weilPos_le_half` (L ≤ 1/2) and `weilPos_le_third` (now a corollary) in `Windows.lean`.
+- Build: `lake build Riemann.Deep.Yoshida.Windows` ≈ 8 min wall (Half ≈ 2.5 min, W55 ≈ 3.5 min of kernel
+  arithmetic), resident ≈ 6.9 GB (mostly mapped Mathlib). Not imported by Riemann.lean. `Third.lean` still
+  builds on its own but is no longer needed.
+
+## What changed: the cap is gone
+Round 2 bounded `∫ |F|² t` (t = deficit of the weight `W = 2πμ + J` below a level s) by `|F|² ≤ 2aN`.
+That is a trace bound and dies at L ≈ 0.355 whatever the cells. Round 3 bounds it by the Taylor
+moments of F (a Galerkin step with a rigorous tail):
+1. `F(r) = Σ_{m<K} r^m B_m + E(r)`, `B_m = ∫ f(u)(iu)^m/m!`, `|E| ≤ 2(|r|a)^K/K! ∫|f|` (Mathlib `exp_bound'`).
+2. `∫ t |P|² = xᵀHx + yᵀHy` exactly (x, y = Re, Im of B; H = Hankel matrix of the moments of the step t).
+3. Bessel: `N ≥ 2(d·x + e·y) − dᵀĜd − eᵀĜe` for all real d, e (from `0 ≤ ∫|f − ḡ|²`, g a polynomial).
+4. With d = Λx: if `M = α(Λ + Λᵀ − ΛᵀĜΛ) − H ⪰ 0` then `∫ t|P|² ≤ αN`; the remainder adds β = 8a^{2K+1}·Mom_{2K}/K!².
+5. `2π Re Q ≥ N (2πs − (1+ε)α − (1+1/ε)β) ≥ 0`.
+`M ⪰ 0` is certified by `UᵀMU` diagonally dominant with `UW = I` (rational U, W).
+
+Numerically this is close to sharp: the true lowest eigenvalue (W units) is 0.033 at L = 1/2, 0.0075 at
+0.6, 0.0013 at log 2; the moment bound with exact W gives 0.025 / 0.005 / 0.0002 (`galerkin.py`).
+
+## Reflective checking (new)
+All numerics run as rational arithmetic inside the kernel (`decide +kernel`), with soundness lemmas:
+digamma partial sums rounded down to 2⁻⁴⁰ plus a telescoping tail bound (`MuTail.two_pi_mu_ge_tel`),
+γ < 0.57725 from a rounded H_{2^14} (`euler_lt'`), sin/cos by reduction mod 2π (π to 20 digits) and
+alternating Taylor bounds, cells on a 1/256 grid with integer moment sums. About 0.1 s per cell.
 
 ## Files
 | file | content |
 |---|---|
-| `Taylor.lean` | alternating Taylor bounds for cos and sin on x ≥ 0, every degree, by induction (comparing derivatives) |
-| `PoleKernel.lean` | `J` closed form (FTC), evenness, Lipschitz bound (constant 8a² cosh a), tail bound; `pole_re_eq_J`: Re pole = (1/2π)∫|F|²J (Fourier inversion of the autocorrelation + Fubini) |
-| `MuBounds.lean` | `2πμ(r) ≥` partial sum of the digamma series; γ < 0.5792 (H₂₅₆ − log 256); log π < 1.1448; Taylor bounds for exp |
-| `Hybrid.lean` | `weilQ_re_eq_W`; layer cake with a step function over a list of cells; `weilPos_of_cert` (certificate ⇒ WeilPos); per-cell and tail lemmas |
-| `Third.lean` | GENERATED certificate, 139 cells, s = 9/20, R = 18, margin 0.082 (in W units) |
-| `gen_cells.py` | generator (Python stdlib, exact rationals; checks every inequality before writing Lean) |
-| `Windows.lean` | `weilPos_third`, `weilPos_le_third` |
+| `Moment.lean` | Taylor split, polynomial cell integrals, Bessel inequality, `weilPos_of_moment` |
+| `MuTail.lean` | telescoping digamma tail, sharper γ |
+| `Reflect.lean` | rational checkers + soundness, `weilPos_of_qcert` |
+| `Half.lean`, `W55.lean` | GENERATED certificates: a = 1/4 (950 cells, K = 14, margin 0.090 in 2π·W units); a = 11/40 (1696 cells, K = 16, s = 0.9, margin 0.031) |
+| `Windows.lean` | `weilPos_half`, `weilPos_55`, `weilPos_le_55` |
+| `.scratch/yoshida3/gen3.py` | generator (`python3.11 gen3.py 11/40 9/10 1/128 0 40 16 W55 150`); `qcheck.py` mirrors the Lean checker exactly |
 
-## Proof (f supported in [−a, a], N = ∫|f|², φ = |F|²)
-1. Pole term = ∫ k(x) 2cosh(x/2) dx, k = autocorrelation (lives in [−2a, 2a]); Fourier inversion + Fubini give (1/2π)∫ φ J.
-2. Hence Re Q = (1/2π)∫ φ W, W = 2πμ + J. Plancherel ∫φ = 2πN; pointwise φ ≤ 2aN.
-3. If W(r) ≥ s − t(r) with t ≥ 0 a step function, then ∫φW ≥ 2πN s − 2aN ∫t. Positive when 2a∫t ≤ 2πs.
-4. Per cell lo ≤ |r| < hi: μ(r) ≥ μ(lo) (monotone), J(r) ≥ J(mid) − Lipschitz·half-width, J(mid) from Taylor bounds of cos/sin, μ(lo) from 50 digamma-series terms. For |r| ≥ 18: μ(18) minus a crude bound on J.
-5. The cells and s come from a dynamic program in `gen_cells.py` and are checked by `norm_num` in Lean.
-
-## Why it stops near 1/3 (numerics in .scratch/yoshida2/, not tracked)
-- With this weight and the cap φ ≤ 2aN, the best possible bound (exact μ, infinitely fine cells) turns negative at about L ≈ 0.355 (`hyb.py`). At 1/3 the certified margin is small (0.082 out of an ideal 0.28) because cells lose some sharpness.
-- **Next rung, about 3/8 (numerically checked, not formalised).** For any b ≥ a, the pole also equals (1/2π)∫φ J_b, because the autocorrelation vanishes beyond 2a. So W = 2πμ + Σ λ_k J_{b_k} with Σλ_k = 1 is allowed. With 3 values of b and about 210 cells, a certified-style margin of 0.043 is reached at L = 3/8 (`genL_probe.py`); L = 0.4 still fails (−0.12). Missing Lean pieces: upper bounds for J (some λ < 0), range reduction for sin and cos at arguments up to about 20, and a telescoping bound for the series tail.
-- **Toward log 2.** Without the cap the dual problem is exact: find H equal to 2cosh(x/2) on [−2a, 2a], free outside, with μ + Ĥ/2π ≥ 0. A linear program finds such H at L = 0.5 (margin 0.0026), but H has about 300 nodes (`lp.py`). The true lowest eigenvalue at log 2 is 1.3e-3. A fixed-size cell certificate cannot close that gap; a proof at log 2 needs the prolate/Sonin structure (Connes–Consani) or a Galerkin certificate with tail bounds (Route A of round 1).
+## Why it stops at 0.55, and the next rung (numerics in `.scratch/yoshida3/`)
+At L = 0.6 the certified margin is −0.003 (2π units) with 1/256 cells; the ideal moment bound is +0.020.
+`diag.py` splits the loss: per-cell W lower bound ≈ 0.014 (J via a global Lipschitz constant, μ only at
+the left end of a cell), μ accuracy ≈ 0.005 (M = 20 terms; the h₂ tail term is dropped when r < √2).
+Planned fixes, in order of value:
+1. **Affine cells** (t linear on each cell): μ(r) − μ(lo) ≥ (r − lo)·σ from the term-wise differences
+   (no derivatives); J(r) ≥ J(p) + J′(p)(r − p) − C₂(r − p)²/2 from the cos inequality inside
+   J = ∫ 2cosh(x/2) cos(rx). The loss becomes second order, so cells can be about 1/64 wide.
+2. Sharper μ: tail factor c = 1 − 1/(2(M+5/4)²) for every r, M = 40, log π < 1.14473 (error 1e−4).
+3. Larger K plus finer cells near the top eigenfunction. Expected reach: 0.6 is clear, 0.65 is tight
+   (ideal 0.008); log 2 − ε needs μ to about 1e−5 and is not in reach with this method as it stands.
