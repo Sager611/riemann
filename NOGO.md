@@ -155,3 +155,4 @@
 - R34 real-rootedness toolbox (Lee–Yang/Newman, Pólya, Jensen/GORZ, Borcea–Brändén, interlacing families, Hermite–Biehler, Ki–Kim–Lee/Cardon, Jacobi): needs a real-rooted model of Ξ ≡ RH. [Lean](Riemann/Tree/R034.lean)
 - R35 function-field mechanisms (Castelnuovo, Deligne, Stepanov, Hodge index, standard conj., Lefschetz/Frobenius flow, F₁, rationality): no Frobenius over ℚ; positivity gap. [Lean](Riemann/Tree/R035.lean)
 - R36 random models (Wintner, Harper, Selberg CLT, Bagchi recurrence, GMC, FHK maxima, GUE statistics, Ng's M(x) law): one deterministic sample; recurrence ≡ RH. [Lean](Riemann/Tree/R036.lean)
+- R37 rigidity (Hamburger, Kaczorowski–Perelli, converse theorems, Bombieri–Hejhal, zero moving, Katz–Sarnak, Beurling, Saias–Weingartner): pins ζ, not its zeros. [Lean](Riemann/Tree/R037.lean)

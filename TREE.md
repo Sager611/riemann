@@ -41,4 +41,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R34 real-rootedness toolbox — dead/circular; turan_of_real_roots machine-checked. [R034.lean](Riemann/Tree/R034.lean)
 - R35 function-field mechanism transfer — no Frobenius over ℚ; tensor_power_trick machine-checked. [R035.lean](Riemann/Tree/R035.lean)
 - R36 random models — none transfers; Bagchi strong recurrence defined in Lean. [R036.lean](Riemann/Tree/R036.lean)
-- R37 FRONTIER (next)
+- R37 rigidity / uniqueness — pins ζ, not its zeros; DH filter refined via Hamburger. [R037.lean](Riemann/Tree/R037.lean)
+- R38 FRONTIER (next)
