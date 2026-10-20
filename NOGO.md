@@ -178,3 +178,4 @@
 - R55 self-audit II: no new serious bug (two docstring nits; Weil guards adequate for WeilPos). [Lean](Riemann/Tree/R055.lean)
 - R56 modern positivity (Lorentzian, AHK Hodge, real stability, PF∞/ASWE, Toeplitz, Soergel, hard Lefschetz, multiplier sequences): stops at log-concave/ULC; real-rooted ≡ RH. [Lean](Riemann/Tree/R056.lean)
 - R57 Inputs fidelity: em17, perron33, leibniz44 judged TRUE as stated; plan leibniz44 → em17 → perron33. [Lean](Riemann/Tree/R057.lean)
+- R58 dynamical/scattering (horocycles, Lax–Phillips, Eisenstein, Hecke, QUE, Farey, nilsystems): spectral parameter complex; no positivity. [Lean](Riemann/Tree/R058.lean)
