@@ -38,6 +38,39 @@ compact perturbation of a positive operator, checked numerically on a finite pie
 fact our certificate checks: the smallest eigenvalue of the prime-free form stays positive (≈ 0.0013 in W units)
 up to `log 2`. Beyond `log 2` the prime 2 enters and this method, as is, stops.
 
+## Beyond log 2
+
+DISCOVERY: first machine-checked proof of Weil positivity beyond `log 2`: `Fayed.Yoshida.weilPos_le_75 : ∀ L ≤ 3/4,
+WeilPos L` (`Beyond.lean`; the prime 2 enters); the inequality itself was known only numerically (Zhu 1.6, Mori
+`log 15`, our Arb 7/4). Sorry-free, no `native_decide`, axioms = propext, Classical.choice, Quot.sound.
+
+**How.** `BeyondCore.lean`: for every window `2a < log 3` only `n = 2` enters, and
+`Re Q(f) = (1/2π)∫|F|² W3` with `W3 = 2πμ + J(b,·) − √2 log 2·cos(r log 2) + Σ d_k cos(r x_k)`, any `b ≥ a` and any
+free terms with `|x_k| > 2a` (they integrate to zero against `|F|²`: the autocorrelation vanishes there).
+`weilPos_of_affine3` is the affine moment certificate for `W3`; it covers every `L ≤ 2a₁` at once.
+1. **Free cosines (the key step).** With the bare prime weight the level-set moment bound needs `s ≥ 1.2` and
+   deficit bumps up to `r ≈ 64` (Taylor order ≈ 80, ~10⁴ cells). Twelve free terms `x = jℓ/8`, `j = 9..20`,
+   chosen by L-BFGS (`.scratch/yoshida5/opt2.py`), cut the bumps to `r ≈ 29` and keep 72% of the true margin
+   (by Krein-type duality such terms make the bound exact in the limit).
+2. **`ℤ` balls** (`BeyondBall.lean`, `BeyondReflect.lean`): the kernel does ~1 ms per `ℚ` operation but ~0.05 ms
+   per `ℤ` one, so `2πμ`, `cos`, `sin` and the harmonics `cos(jθ)` (angle addition) are checked in fixed point
+   `2⁻⁶²` with proved rounding: 16 ms and 115 ms per grid point instead of ~1 s.
+3. **Certificate** `BeyondW75.lean` (`gen5.py`): `a = 3/8`, `s = 6/5`, 3440 cells (3204 affine) to `r = 196.7`,
+   `K = 40`, margin 0.0016 in 2π units (true value 0.0031; float model 0.0017).
+
+| window | true λ_min (W units) | ideal margin with free terms (2π units) | status |
+|---|---|---|---|
+| 0.70 | ≈ 0.0012 | ≈ 0.005 | covered by 0.75 |
+| 0.75 | 4.9e-4 | 0.0022 | **proved** |
+| 0.80 | 1.8e-4 | ≈ 0.0009 (without free terms) | next rung, tight |
+| 1.0 | 9.3e-7 | — | needs μ to ~1e-7 and a new precision regime |
+
+**Cost.** `lake build Riemann.Deep.Yoshida.Beyond`: 3.7 h wall on a loaded machine (7600 s user), peak RSS 6.9 GB.
+Not imported by `Riemann.lean`. Most kernel time is the moment check `momCheckA`: `(Hi : ℤ) ^ p` unfolds by
+recursion for all 3440 cells up to `p = 82`. Next: `Nat.pow` (GMP in the kernel) and skipping zero cells there;
+then window 0.8 with more free terms and finer cells near `r = 0`.
+Prior art: Mathlib, openai/math, facebookresearch/atlas-lean have no Weil positivity windows (checked 2026-10-20).
+
 ---
 
 # Round 3 (kept for reference)

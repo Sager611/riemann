@@ -40,3 +40,4 @@ import Riemann.Deep.Zhang.Paper
 import Riemann.Deep.Yoshida.Log2
 import Riemann.Deep.Hasse.Main
 import Riemann.Deep.Hasse.Hasse
+import Riemann.Deep.Yoshida.Beyond
