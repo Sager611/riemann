@@ -202,3 +202,4 @@
 - Musings (arXiv 2605.30767) audit: NO DISCOVERY — no RH claim; its §3 contour lemma is correct (proved in Lean); the R75 scout lead was false (lesson: scout "high confidence" flaws need verification). [report](Riemann/Deep/Musings/REPORT.md)
 - R89 candidates to audit later: arXiv 1607.04551 ("Approach to a Proof of the Riemann Hypothesis", Ξ integral + second mean value theorem); reported 2206.0168 (id malformed, verify).
 - R90 Wünsche 1607.04551 main theorem false (K = e^{-u²}(1+u⁴/4) positive, decreasing, transform has off-axis zeros); Stenger 1708.01209 symmetry ≠ fixedness; 2206.0168 not real. [Lean](Riemann/Tree/R090.lean)
+- Kernel counterexample machine-checked (Fayed.Kernel): K = e^{-t²}(1+t⁴/4) positive, non-increasing on [0,∞), strictly log-concave, ∫K e^{zt} = √π e^{z²/4}(19/16 + 3z²/16 + z⁴/64), zero off the imaginary axis — refutes Wünsche 1607.04551's theorem and "log-concave ⇒ real zeros". [Lean](Riemann/Deep/Kernel/Counterexample.lean)
