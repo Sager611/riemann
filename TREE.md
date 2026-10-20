@@ -81,4 +81,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - Deep: correct L'Hôpital on unions (forward direction with endpoint control) — `Fayed.LHopital.lhopital_union`; Fayed needed the false converse. [Union](Riemann/Deep/LHopital/Union.lean)
 - R67 precise diagnosis of step (55) via the correct rule — no comparison function G can work. [R067.lean](Riemann/Tree/R067.lean)
 - R68 new arXiv RH claims — scarce; Ryazanov 1808.10774 revised 2026. [R068.lean](Riemann/Tree/R068.lean)
-- R69 FRONTIER (next)
+- R69 computability angles — RH is Π⁰₁ but undecidable in practice; Lagarias form in Lean. [R069.lean](Riemann/Tree/R069.lean)
+- R70 FRONTIER (next)

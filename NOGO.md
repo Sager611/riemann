@@ -187,3 +187,4 @@
 - R64 salvage Fayed: all correct parts standard; only novelty is the false Theorem 1. [Lean](Riemann/Tree/R064.lean)
 - R65 composites II (8 pairs of earlier dead directions): one obstacle always survives. [Lean](Riemann/Tree/R065.lean)
 - R67 diagnosis of (55): weight 1−t = O(1/u) turns F'/G' ~ u^p into O(u^{p−1}); a G dropping by a fixed factor per component would make F/G ↛ 0. No G works. [Lean](Riemann/Tree/R067.lean)
+- R69 computability (busy beaver, RH machines, DPRM, independence, proof mining, AI provers, verified Lagarias checks, zero algorithms): no decision in reach. [Lean](Riemann/Tree/R069.lean)
