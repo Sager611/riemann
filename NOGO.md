@@ -12,3 +12,13 @@
 - R1.8 de Bruijn–Newman: Λ≤0 ≡RH.
 - R1.9 Bohr/period means: B̄ₖ mean 0; positivity ≡RH.
 - R1.10 orbit identity search {s,1−s,s̄,1−s̄}: all vanish; restates FE.
+- R2.1 Λ≥0 explicit formula/Landau: abscissa-1 singularity only; Ω-results.
+- R2.2 dlVP trig positivity: pole at 1 wins only near σ=1.
+- R2.3 1/ζ, Mertens: M=O(x^½⁺ᵋ) ≡RH.
+- R2.4 Hamburger conductor-1: identifies ζ, no zero info.
+- R2.5 Jensen/Laguerre–Pólya/Lee–Yang: needs degree-uniformity (open).
+- R2.6 Fourier quasicrystals: log-primes not uniformly discrete.
+- R2.7 prime sums: Σp^-σ diverges σ≤1. [Lean](Riemann/Tree/R002.lean)
+- R2.8 Connes trace / Weil positivity: ≡RH.
+- R2.9 DH+Beurling minimal axioms: Selberg-class GRH no easier.
+- R2.10 xp Hamiltonians: no self-adjoint realization.
