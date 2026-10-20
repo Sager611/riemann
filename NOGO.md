@@ -145,3 +145,4 @@
 - R20 Lindelöf/density attacks: decoupling endpoint, moments, additive energy, large values→ZFR, LH+DH+simple⇒RH, Motohashi, local moments — dead/circular; Guth–Maynard→DH open.
 - R21 failed proofs as filters: false positivity (Li, de Branges), false lemma (Atiyah), randomness-as-proof (Eswaran), domain/self-adjointness (BBM), finite→limit (Wong), numerics-as-proof, symmetry≠fixedness. [Lean](Riemann/Tree/R021.lean)
 - R22 invention II (topos polarization, K-theory regulators, SUSY determinants, buildings, differential algebra, Padé/Stahl, Petersson unitarity, transport, Tate phases, combinatorial Hodge): all circular/dead.
+- R23 left field (Collatz, Ramsey, Mandelbrot, knot Floer, holography, crypto, Wright–Fisher, symbolic dynamics, MFG, tuning): dead/circular — each either σ-blind or reduces to Weil positivity.

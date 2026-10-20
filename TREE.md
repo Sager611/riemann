@@ -26,4 +26,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R20 stepping stones II — 6 dead, 1 circular, 1 open (Guth–Maynard → density hyp.). [R020.lean](Riemann/Tree/R020.lean); Lagarias positivity & Salem sufficiency machine-checked [Lagarias](Riemann/Deep/Lagarias/)
 - R21 failed proofs catalogued — 8 failure classes become filters. [R021.lean](Riemann/Tree/R021.lean)
 - R22 invention II — 7 circular, 3 dead. [R022.lean](Riemann/Tree/R022.lean)
-- R23 FRONTIER (next)
+- R23 left field — 6 dead, 4 circular. [R023.lean](Riemann/Tree/R023.lean)
+- R24 FRONTIER (next)
