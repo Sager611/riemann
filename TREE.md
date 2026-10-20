@@ -60,4 +60,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R50 fresh directions after 49 rounds — Hilbert–Pólya convergence; cores machine-checked. [R050.lean](Riemann/Tree/R050.lean)
 - R51 Hilbert–Pólya candidates 2.0 — missing property always ≡ RH or open. [R051.lean](Riemann/Tree/R051.lean)
 - R52 2025–26 news — quantitative progress only; authors verified via arXiv API. [R052.lean](Riemann/Tree/R052.lean)
+- Backbone: Riesz criterion sufficiency machine-checked (`Fayed.Riesz.RH_of_rieszBound`). [Suff](Riemann/Deep/Riesz/Suff.lean)
 - R53 FRONTIER (next)
