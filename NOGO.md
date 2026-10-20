@@ -207,3 +207,4 @@
 - R98 bound g(log 2) by overlap length: mass can sit at both support ends, no δ-decay. [Lean](Riemann/Tree/R098.lean)
 - R98 analytic window log 2 + δ: δ tiny, weaker than certified numerical windows. [Lean](Riemann/Tree/R098.lean)
 - R100 Turán partial-sum, Pólya, Turán T(x), Mertens routes: all false (Montgomery, Haselgrove, Odlyzko–te Riele). [Lean](Riemann/Tree/R100.lean)
+- Zhang (Preprints 202108.0146 v60) audit: NO DISCOVERY — step (19) mistakes a conjugate-pair factor for a zero quadruplet; circular. [report](Riemann/Deep/Zhang/REPORT.md)
