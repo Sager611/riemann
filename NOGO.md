@@ -22,3 +22,12 @@
 - R2.8 Connes trace / Weil positivity: ≡RH.
 - R2.9 DH+Beurling minimal axioms: Selberg-class GRH no easier.
 - R2.10 xp Hamiltonians: no self-adjoint realization.
+- R3.2 partial sums ζ_N (Turán): ζ_N zeros ≠ ζ zeros; Montgomery kills.
+- R3.3 Robin via colossally abundant n: needs RH-quality primes.
+- R3.4 Bagchi strong recurrence: ≡RH.
+- R3.5 Guth–Maynard density→zero-free: density never excludes one zero.
+- R3.6 Deligne tensor powers: GL₁ powers trivial.
+- R3.7 Lean-certified zeros to height T: finite only. [Lean](Riemann/Tree/R003.lean)
+- R3.8 o-minimality/Pila–Wilkie: zeros not algebraic points.
+- R3.9 Connes–Consani RR for Spec ℤ: no Hodge index.
+- R3.10 adelic renormalized heat flow: no functorial finite-prime flow.
