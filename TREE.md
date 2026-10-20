@@ -39,4 +39,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - Deep: Desogus audit — Thm 8.6 (201) false (Arb witness, 10 orders of magnitude). [REPORT](Riemann/Deep/Desogus/REPORT.md)
 - R33 repair the Desogus induction — dead/circular; steps_iff_endpoints machine-checked. [R033.lean](Riemann/Tree/R033.lean)
 - R34 real-rootedness toolbox — dead/circular; turan_of_real_roots machine-checked. [R034.lean](Riemann/Tree/R034.lean)
-- R35 FRONTIER (next)
+- R35 function-field mechanism transfer — no Frobenius over ℚ; tensor_power_trick machine-checked. [R035.lean](Riemann/Tree/R035.lean)
+- R36 FRONTIER (next)
