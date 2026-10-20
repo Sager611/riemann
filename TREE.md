@@ -28,4 +28,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R22 invention II — 7 circular, 3 dead. [R022.lean](Riemann/Tree/R022.lean)
 - R23 left field — 6 dead, 4 circular. [R023.lean](Riemann/Tree/R023.lean)
 - R24 positive critical-line results as Lean targets — Hardy 1914 chosen (Orca deep dive). [R024.lean](Riemann/Tree/R024.lean); DH function + FE machine-checked [FE](Riemann/Deep/DH/FE.lean)
-- R25 FRONTIER (next)
+- R25 2026 claims + root history — Desogus 2609.20367 flagged for a Fayed-style audit. [R025.lean](Riemann/Tree/R025.lean)
+- R26 FRONTIER (next)
