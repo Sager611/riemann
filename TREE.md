@@ -52,4 +52,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R44 tricks from famous breakthroughs — none transfers. [R044.lean](Riemann/Tree/R044.lean)
 - Deep: ζ convexity bound machine-checked; Fayed input `convexity` discharged (`fayed_RH_noConvexity`). [Convexity](Riemann/Deep/Convexity/)
 - Deep: Gershon audit — Lemma 11.6 false (Arb). [REPORT](Riemann/Deep/Gershon/REPORT.md)
-- R45 FRONTIER (next)
+- R45 tail lemmas per family — tail ≡ RH everywhere; tail_iff machine-checked. [R045.lean](Riemann/Tree/R045.lean)
+- R46 FRONTIER (next)
