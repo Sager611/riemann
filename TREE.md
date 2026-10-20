@@ -14,5 +14,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R9 gap map of RH-equivalents — no gap closable by known methods. [R009.lean](Riemann/Tree/R009.lean); formal backbone: Mertens ⇒ zero-free (Orca deep dive, Riemann/Deep/Mertens)
 - R10 radical reformulations — 6 dead, 4 circular. [R010.lean](Riemann/Tree/R010.lean); Redheffer det formalization (ultraworker)
 - R11 attack the obstructions — all heuristic/theorem; none broken. [R011.lean](Riemann/Tree/R011.lean)
-- Formal backbone: Redheffer det R_n = M(n) proved [Det.lean](Riemann/Deep/Redheffer/Det.lean); Mertens ⇒ zero-free (in progress); Weil windows (in progress)
-- R12 FRONTIER (next)
+- Formal backbone (machine-checked): Redheffer det R_n = M(n) [Det](Riemann/Deep/Redheffer/Det.lean); Mertens ⇒ zero-free [ZeroFree](Riemann/Deep/Mertens/ZeroFree.lean); RH ⟸ Mertens / Redheffer bounds [Backbone](Riemann/Deep/Backbone.lean); Weil windows (in progress)
+- R12 unusual angles — 7 dead, 3 circular. [R012.lean](Riemann/Tree/R012.lean)
+- R13 FRONTIER (next)

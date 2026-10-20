@@ -100,3 +100,13 @@
 - R11.6 Euler product on Re s=1: no zero info.
 - R11.7 Mertens Ω±(x^½): rules out δ>½ only.
 - R11.8 operator with prescribed spectrum: trivial by fiat. [Lean](Riemann/Tree/R011.lean)
+- R12.1 log-gas equilibrium: minimizer identification ≡RH.
+- R12.2 tropical ζ: rescaling only.
+- R12.3 Ax–Kochen transfer from F_q(t): zeros not first-order.
+- R12.4 Dedekind zeta families: boundary info only.
+- R12.5 off-line zero self-repulsion: no theorem.
+- R12.6 RG flow: = Weil positivity.
+- R12.7 measure rigidity: measures ≠ poles.
+- R12.8 low-lying zeros in families: exceptions allowed.
+- R12.9 Stolz on gaps with Λ: needs RH-strength.
+- R12.10 PCP local-to-global: no soundness invariant.
