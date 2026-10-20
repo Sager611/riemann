@@ -11,4 +11,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R6 "Fayed + X": root identity + one global input — EXHAUSTED: 8 dead, 2 circular. [R006.lean](Riemann/Tree/R006.lean)
 - R7 transfer from proven RH analogs — 9 dead, 1 open on a weaker goal (FUP strip). [R007.lean](Riemann/Tree/R007.lean): RH ⟺ QuasiRH ½ proved
 - R8 invention: 10 new mechanisms — 5 dead, 5 circular. [R008.lean](Riemann/Tree/R008.lean)
-- R9 formal backbone: Lean proofs of RH reductions (Mertens ⇒ zero-free, Dirichlet series holomorphy) — Orca deep dive; R9 scouts: weakest open statements that would still imply RH — FRONTIER
+- R9 gap map of RH-equivalents — no gap closable by known methods. [R009.lean](Riemann/Tree/R009.lean); formal backbone: Mertens ⇒ zero-free (Orca deep dive, Riemann/Deep/Mertens)
+- R10 radical reformulations: change the object (ξ as a limit, as a determinant, as a trace, as a probability) — FRONTIER

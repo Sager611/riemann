@@ -77,3 +77,9 @@
 - R8.8 uniform ζ'/ζ bound σ>½: false (universality).
 - R8.9 prime-constrained Weil SDP: ≡ Weil positivity.
 - R8.10 Dirichlet-polynomial mean values: unconditional, zero-blind.
+- R9.1 Mertens gap: exponent ½ untouched since 1958.
+- R9.2 Schoenfeld ψ gap: explicit constants only.
+- R9.3 Lagarias Re ξ'/ξ>0: ≡ zero-free strip (quasi-RH).
+- R9.4 Speiser ζ' left zeros: counts, never 0.
+- R9.6 de Bruijn–Newman: 0.1 by computation, 0 never.
+- R9.8 density hyp. + simplicity ⇒ RH: no implication.
