@@ -11,3 +11,5 @@
 
 So a Lean proof beyond log 2 (yoshida5) would be the first formal one; certified-numerics windows exist (Chuk; ours 1.75 in Arb).
 -/
+
+/-! Late scouts: Connes–Consani 2020 (arXiv 2006.13771) window [−1,1] heuristic; Garrett heuristic; Suzuki arXiv 2607.24830 numerical; a claimed certified autocorrelation window [−3,3] by "Philip Gordon 2026, id CC+" is unverified (no usable id). -/
