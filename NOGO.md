@@ -172,3 +172,4 @@
 - R49 Siegel zeros & repulsion (Zhang 2022, Deuring–Heilbronn, Conrey–Iwaniec, abc, Heath-Brown, Lehmer pairs, Iwaniec–Sarnak, ζ-repulsion): repulsion lives near s = 1. [Lean](Riemann/Tree/R049.lean)
 - R50 fresh directions (8 lenses): 3/8 converge on Hilbert–Pólya; all very low odds; finite cores in Lean. [Lean](Riemann/Tree/R050.lean)
 - R51 Hilbert–Pólya 2.0 (Berry–Keating/Sierra, BBM, Connes, Yakaboylu, LeClair–Mussardo, Remmen, de Branges, Okubo/Wu–Sprung): missing property = the whole problem. [Lean](Riemann/Tree/R051.lean)
+- R52 2025–26 news: >2/3 on line, sixth moment (de Faveri–Pandey), BTY zero-free regions, window bounds; quantitative only. Scouts misattribute authors: always check arXiv API. [Lean](Riemann/Tree/R052.lean)
