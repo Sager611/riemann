@@ -13,4 +13,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R8 invention: 10 new mechanisms — 5 dead, 5 circular. [R008.lean](Riemann/Tree/R008.lean)
 - R9 gap map of RH-equivalents — no gap closable by known methods. [R009.lean](Riemann/Tree/R009.lean); formal backbone: Mertens ⇒ zero-free (Orca deep dive, Riemann/Deep/Mertens)
 - R10 radical reformulations — 6 dead, 4 circular. [R010.lean](Riemann/Tree/R010.lean); Redheffer det formalization (ultraworker)
-- R11 attack the obstructions themselves (σ-blindness, DH filter, positivity≡RH, density≠exclusion, finite≠infinite) — FRONTIER
+- R11 attack the obstructions — all heuristic/theorem; none broken. [R011.lean](Riemann/Tree/R011.lean)
+- Formal backbone: Redheffer det R_n = M(n) proved [Det.lean](Riemann/Deep/Redheffer/Det.lean); Mertens ⇒ zero-free (in progress); Weil windows (in progress)
+- R12 FRONTIER (next)

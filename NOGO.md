@@ -93,3 +93,10 @@
 - R10.8 ξ as determinant: self-adjointness missing.
 - R10.9 Newton dynamics of ξ: no localization. [Lean](Riemann/Tree/R010.lean)
 - R10.10 archimedean Iwasawa module: none canonical.
+- R11.1 σ-blindness: FE alone allows zeros anywhere. [Lean](Riemann/Tree/R011.lean)
+- R11.3 restricted positivity: classical regions only.
+- R11.4 density ⇒ exclusion: impossible (counting).
+- R11.5 bounded counterexample search: no explicit bound known.
+- R11.6 Euler product on Re s=1: no zero info.
+- R11.7 Mertens Ω±(x^½): rules out δ>½ only.
+- R11.8 operator with prescribed spectrum: trivial by fiat. [Lean](Riemann/Tree/R011.lean)
