@@ -120,3 +120,11 @@
 - R13.8 proven Turán families: don't force hyperbolicity.
 - R13.9 complexity/Möbius randomness: no equivalence.
 - R13.10 Franel–Landau: SL₂(ℤ) gap too weak.
+- R14.1 Weil windows + RH-to-T₀ + symbol growth: no cross-term margin.
+- R14.2 dBN t≥0.2 + GORZ: can't cross t=0.2.
+- R14.3 Levinson + left ζ' zeros: needs κ<0.2915. [Lean](Riemann/Tree/R014.lean)
+- R14.4 Fayed kernel as Weil pairing: not ξ'/ξ.
+- R14.5 d_N + Korobov–Vinogradov: near-1 only.
+- R14.6 Bagchi + Voronin + density: ≡RH.
+- R14.7 Hardy + symmetry: no stability.
+- R14.8 Selberg CLT + BSY: distributional only.
