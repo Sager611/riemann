@@ -83,3 +83,13 @@
 - R9.4 Speiser ζ' left zeros: counts, never 0.
 - R9.6 de Bruijn–Newman: 0.1 by computation, 0 never.
 - R9.8 density hyp. + simplicity ⇒ RH: no implication.
+- R10.1 Z sign changes: N₀=N is RH.
+- R10.2 Biane–Pitman–Yor Mellin law: positive laws allow off-line zeros.
+- R10.3 Remmen amplitude unitarity: ≡RH.
+- R10.4 Redheffer spectrum: product is M(n).
+- R10.5 arithmetic topology torsion: no 3-manifold/flow.
+- R10.6 Busy Beaver encoding: bound decides RH.
+- R10.7 P_N→ζ Hurwitz: wrong direction.
+- R10.8 ξ as determinant: self-adjointness missing.
+- R10.9 Newton dynamics of ξ: no localization. [Lean](Riemann/Tree/R010.lean)
+- R10.10 archimedean Iwasawa module: none canonical.
