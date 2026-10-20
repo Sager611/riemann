@@ -1,6 +1,6 @@
 # riemann — rules
 
-Goal: Fayed arXiv 2209.01890 (v55) "proof" of RH → Lean 4 + Mathlib; pin failing step; then fix it by endless proof-tree search.
+Goal: Prove or disprove the Riemann Hypothesis by endless proof-tree search.
 
 ## Work loop (never stop)
 1. Pick frontier node in `TREE.md`.
@@ -9,7 +9,7 @@ Goal: Fayed arXiv 2209.01890 (v55) "proof" of RH → Lean 4 + Mathlib; pin faili
 4. Dead ends → `NOGO.md`, few words each.
 5. Hard branch → Orca agent: `pi --provider anthropic --model claude-opus-5-5 --thinking max` (user, 2026-10-20), tight full brief; close its tab when done.
 5b. Before any formalization: check Mathlib, openai/math, facebookresearch/atlas-lean, zeta23 trees yourself (GitHub API); scouts' "none known" is unreliable (Hasse was in ATLAS).
-6. `lake build` green → git commit per round.
+6. `lake build` green → git commit and push per round.
 
 ## Discoveries
 One-liner + link in `DISCOVERIES.md`; tell user; `reviewer` judges significance; scouts check online novelty; insignificant or known → remove.
