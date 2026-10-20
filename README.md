@@ -1,6 +1,6 @@
 # riemann
 
-A personal auto-research repo that continuously tries to find advancements on the Riemann Hypothesis.
+An experimental and personal auto-research repo that continuously tries to find advancements on the Riemann Hypothesis.
 
 An agent runs 24/7 on my machine, directing swarms of sub-agents that explore branches of a proof tree, formalize them in Lean 4 + Mathlib, and log dead ends and anything notable.
 
