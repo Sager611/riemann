@@ -198,3 +198,4 @@
 - R75 details: Ryazanov (4.1)–(4.3): n = 3, t = 13/2 gives φ*₃ = 1/5 ≠ 0 (scouts; Orca verifying); Velez Lemma 7.1 dense-subspace positivity ⇏ distributional convergence; Li-Zenodo remainder ignores the partner zero's exponential term.
 - R77 contour topology (crossing lemma, X-ray, level curves, winding, harmonicity, PL, phase, DH pictures): DH has off-line crossings with a ζ-type FE. [Lean](Riemann/Tree/R077.lean)
 - R81 filters as Lean theorems: DH filter (dh_offline, from the cited Spira zero), local criteria = zero-free regions, finite checks consistent with failure; Beurling deferred. [Lean](Riemann/Tree/R081.lean)
+- R83 counterexample library: lim/Σ swap and continuation-of-inequalities false lemmas in Lean; table of 8 patterns for future audits. [Lean](Riemann/Tree/R083.lean)
