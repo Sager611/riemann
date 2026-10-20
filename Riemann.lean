@@ -11,3 +11,4 @@ import Riemann.Deep.Lagarias.Salem
 import Riemann.Deep.DH.FE
 import Riemann.Deep.Weil.Defs
 import Riemann.Deep.Desogus.Paper
+import Riemann.Deep.Hardy.Hardy

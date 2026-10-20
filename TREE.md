@@ -44,4 +44,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R37 rigidity / uniqueness — pins ζ, not its zeros; DH filter refined via Hamburger. [R037.lean](Riemann/Tree/R037.lean)
 - R38 next audit targets (8 claims); counterexample core to "log-concave ⇒ real zeros" machine-checked. [R038.lean](Riemann/Tree/R038.lean)
 - R39 failing steps of 8 claims pinned (scout level); Yakaboylu next for an Orca audit. [R039.lean](Riemann/Tree/R039.lean)
+- Deep: Hardy 1914 machine-checked — `Fayed.Hardy.hardy`, sorry-free. [Hardy](Riemann/Deep/Hardy/)
 - R40 FRONTIER (next)
