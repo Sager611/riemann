@@ -1,3 +1,4 @@
 # Discoveries
 
 - Fayed's RH proof breaks at (55): its Appendix Theorem 1 ("L'Hôpital on a disconnected domain") is false — Lean counterexample on the paper's own D_γ; the reconstructed argument is otherwise machine-checked from 4 standard analytic inputs. Reviewer: significant (flaw); machine-check alone: verification milestone. Online: not found. [details](Riemann/Fayed/Theorem1.lean), [proof check](Riemann/Fayed/HARDEN_REPORT.md)
+- Desogus's claimed RH proof ("The Three Gates", arXiv 2609.20367v3) breaks at Thm 8.6, ineq. (201): explicit odd test on window log 8 gives Q(v)/⟨e₇,v⟩² ≈ 1.1e-10 (Arb-rigorous) vs claimed ≥ 1.878; bare diagonal Q(e₇) = 1.23 already below. [report](Riemann/Deep/Desogus/REPORT.md) Reviewer: pending. Online: pending.

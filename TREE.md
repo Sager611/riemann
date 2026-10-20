@@ -36,4 +36,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R30 Euler-product positivity beyond 3-4-1 — all pole-anchored. [R030.lean](Riemann/Tree/R030.lean)
 - R31 second anchors beyond the pole — all dead; the pole is the only exclusion anchor. [R031.lean](Riemann/Tree/R031.lean)
 - R32 elementary/pretentious methods — all stop at o(x) / exp-savings. [R032.lean](Riemann/Tree/R032.lean)
+- Deep: Desogus audit — Thm 8.6 (201) false (Arb witness, 10 orders of magnitude). [REPORT](Riemann/Deep/Desogus/REPORT.md)
 - R33 FRONTIER (next)
