@@ -98,4 +98,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R79 necessity directions — bottlenecks: 1/ζ bounds under RH, Hadamard product for ξ. [R079.lean](Riemann/Tree/R079.lean)
 - R80 Hadamard / 1/ζ bottleneck lemmas — ≈ 5k–12k lines total. [R080.lean](Riemann/Tree/R080.lean)
 - R81 filters as Lean theorems — dh_offline, zero_free_of_criterion, finite_check_consistent. [R081.lean](Riemann/Tree/R081.lean)
-- R82 FRONTIER (next)
+- R82 small-window positivity techniques — Taylor route incremental; log 2 needs Yoshida/Connes–Consani machinery. [R082.lean](Riemann/Tree/R082.lean)
+- R83 FRONTIER (next)
