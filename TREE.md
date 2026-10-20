@@ -50,4 +50,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R42 beyond two thirds — proportion results cannot reach RH; zero counts and ProportionOnLine defined in Lean. [R042.lean](Riemann/Tree/R042.lean)
 - R43 certified numerics feasibility — first zero via real Λ sign change queued. [R043.lean](Riemann/Tree/R043.lean)
 - R44 tricks from famous breakthroughs — none transfers. [R044.lean](Riemann/Tree/R044.lean)
+- Deep: ζ convexity bound machine-checked; Fayed input `convexity` discharged (`fayed_RH_noConvexity`). [Convexity](Riemann/Deep/Convexity/)
+- Deep: Gershon audit — Lemma 11.6 false (Arb). [REPORT](Riemann/Deep/Gershon/REPORT.md)
 - R45 FRONTIER (next)

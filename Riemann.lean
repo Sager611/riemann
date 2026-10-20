@@ -12,3 +12,5 @@ import Riemann.Deep.DH.FE
 import Riemann.Deep.Weil.Defs
 import Riemann.Deep.Desogus.Paper
 import Riemann.Deep.Hardy.Hardy
+import Riemann.Deep.Convexity.Convexity
+import Riemann.Deep.Gershon.Paper
