@@ -166,3 +166,4 @@
 - R44 breakthrough tricks (Huang, Tao EDP, Perelman, Wiles, cap set, Guth–Katz, Green–Tao, Maynard): no exact identity / monotone quantity seeing Re ρ. [Lean](Riemann/Tree/R044.lean)
 - Gershon discovery removed: reviewer NOT SIGNIFICANT (paper-specific refutation on a preprint server); audit kept in Riemann/Deep/Gershon/.
 - R45 finite base + uniform tail (Li, Jensen, Weil, Báez-Duarte, Robin, Riesz, Mertens, dBN): tail ≡ RH; base buys nothing (tail_iff). [Lean](Riemann/Tree/R045.lean)
+- R46 deformation paths (Selberg, Ihara, q-zeta, CUE, F_q curves, dBN flow, partial sums, Epstein): no controllable path; zeros leave the line only by collision (zeta_offline_pair). [Lean](Riemann/Tree/R046.lean)
