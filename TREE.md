@@ -25,4 +25,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R19 quasi-RH attacks — 7 dead, 1 open (additive prime correlations). [R019.lean](Riemann/Tree/R019.lean): Mertens power saving ⇒ strip, machine-checked
 - R20 stepping stones II — 6 dead, 1 circular, 1 open (Guth–Maynard → density hyp.). [R020.lean](Riemann/Tree/R020.lean); Lagarias positivity & Salem sufficiency machine-checked [Lagarias](Riemann/Deep/Lagarias/)
 - R21 failed proofs catalogued — 8 failure classes become filters. [R021.lean](Riemann/Tree/R021.lean)
-- R22 FRONTIER (next)
+- R22 invention II — 7 circular, 3 dead. [R022.lean](Riemann/Tree/R022.lean)
+- R23 FRONTIER (next)
