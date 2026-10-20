@@ -31,4 +31,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R25 2026 claims + root history — Desogus 2609.20367 flagged for a Fayed-style audit. [R025.lean](Riemann/Tree/R025.lean)
 - R26 flaw triage of 8 recent claims — all fall into known failure classes. [R026.lean](Riemann/Tree/R026.lean); Desogus audit (Orca)
 - R27 Mathlib infrastructure gap map — next formal target: ζ convexity (discharges a Fayed input). [R027.lean](Riemann/Tree/R027.lean)
-- R28 FRONTIER (next)
+- R28 16 micro-variants of the root — all σ₀-blind; root neighbourhood exhausted. [R028.lean](Riemann/Tree/R028.lean)
+- R29 FRONTIER (next)

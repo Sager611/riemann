@@ -147,3 +147,4 @@
 - R22 invention II (topos polarization, K-theory regulators, SUSY determinants, buildings, differential algebra, Padé/Stahl, Petersson unitarity, transport, Tate phases, combinatorial Hodge): all circular/dead.
 - R23 left field (Collatz, Ramsey, Mandelbrot, knot Floer, holography, crypto, Wright–Fisher, symbolic dynamics, MFG, tuning): dead/circular — each either σ-blind or reduces to Weil positivity.
 - R25 fixed Weil windows (Zhu 1.6, ours 1.75, Liu 17/8, Mori log 15): no uniformity in L; RH-verified heights don't give windows.
+- R28 root micro-variants (domain, G, p, T, η, averages, integers+Stolz, EM orders, ∂s, multiplicity, conj, Perron shift, p≠q, Poisson, eta): all σ₀-blind.
