@@ -40,4 +40,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R33 repair the Desogus induction — dead/circular; steps_iff_endpoints machine-checked. [R033.lean](Riemann/Tree/R033.lean)
 - R34 real-rootedness toolbox — dead/circular; turan_of_real_roots machine-checked. [R034.lean](Riemann/Tree/R034.lean)
 - R35 function-field mechanism transfer — no Frobenius over ℚ; tensor_power_trick machine-checked. [R035.lean](Riemann/Tree/R035.lean)
-- R36 FRONTIER (next)
+- R36 random models — none transfers; Bagchi strong recurrence defined in Lean. [R036.lean](Riemann/Tree/R036.lean)
+- R37 FRONTIER (next)
