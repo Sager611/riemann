@@ -23,18 +23,11 @@ open Riemann.Deep.Weil Zeta23 Zeta23.EF
 
 lemma ft_eq_paperFT (g : ℝ → ℂ) (z : ℂ) : ft g z = paperFT g z := rfl
 
-/-! ### A parsing bug in `Riemann/Deep/Weil/Defs.lean`
+/-! ### The (fixed) archimedean term
 
-`archTerm` is written `(1/2π) * ∫ r, h r * Re ψ(..) - g 0 * log π`; the integral binder swallows
-`- g 0 * log π`, so the integrand contains the constant `g 0 · log π` (not integrable unless
-`g 0 = ‖f‖² = 0`) and Bochner's junk value makes the integral `0`.  The intended term is
-`archTermFix` below (parenthesised integral). -/
-
-/-- How `archTerm` actually parses (`rfl`). -/
-lemma archTerm_parse (g : ℝ → ℂ) :
-    archTerm g = (1 / (2 * Real.pi) : ℂ) * ∫ r : ℝ,
-      (ft g r * ((logDeriv Complex.Gamma (1 / 4 + I * r / 2)).re : ℂ) -
-        g 0 * (Real.log Real.pi : ℂ)) := rfl
+`archTerm` in `Riemann/Deep/Weil/Defs.lean` used to read `(1/2π) * ∫ r, h r * Re ψ(..) - g 0 * log π`,
+whose binder swallowed `- g 0 * log π` (see `Bug.lean`, which keeps a frozen copy `archTermOld`).
+It is now parenthesised and agrees with `archTermFix` definitionally. -/
 
 /-- The intended archimedean term `(1/2π) ∫ h(r) Re ψ(1/4 + ir/2) dr − g(0) log π`. -/
 def archTermFix (g : ℝ → ℂ) : ℂ :=
@@ -50,10 +43,13 @@ def weilQFix (f : ℝ → ℂ) : ℂ :=
 def WeilPosFix (L : ℝ) : Prop :=
   ∀ f : ℝ → ℂ, TestFn (L / 2) f → 0 ≤ (weilQFix f).re
 
-/-- Once `archTerm` is parenthesised (so that it agrees with `archTermFix`), the two notions agree. -/
-lemma weilPos_iff_fix (h : ∀ g, archTerm g = archTermFix g) (L : ℝ) : WeilPos L ↔ WeilPosFix L := by
-  have : ∀ f, weilQ f = weilQFix f := fun f => by simp only [weilQ, weilQFix, h]
-  simp only [WeilPos, WeilPosFix, this]
+/-- After the parenthesisation fix, `archTerm` is `archTermFix` by `rfl`. -/
+lemma archTerm_eq_fix (g : ℝ → ℂ) : archTerm g = archTermFix g := rfl
+
+lemma weilQ_eq_fix (f : ℝ → ℂ) : weilQ f = weilQFix f := rfl
+
+/-- `WeilPos` (Defs.lean) is the honest Weil positivity `WeilPosFix`. -/
+lemma weilPos_iff_fix (L : ℝ) : WeilPos L ↔ WeilPosFix L := Iff.rfl
 
 lemma autocorr_eq_weilTest (f : ℝ → ℂ) : autocorr f = weilTest f f := by
   funext x

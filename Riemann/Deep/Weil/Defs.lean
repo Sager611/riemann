@@ -40,10 +40,12 @@ noncomputable def ft (g : ℝ → ℂ) (z : ℂ) : ℂ :=
 noncomputable def poleTerm (g : ℝ → ℂ) : ℂ :=
   ft g (I / 2) + ft g (-(I / 2))
 
-/-- Archimedean term `(1/2π) ∫ h(r) Re ψ(1/4 + ir/2) dr − g(0) log π`, `ψ = Γ'/Γ`. -/
+/-- Archimedean term `(1/2π) ∫ h(r) Re ψ(1/4 + ir/2) dr − g(0) log π`, `ψ = Γ'/Γ`.
+(The integral is parenthesised: an unparenthesised `∫ r, … - g 0 * log π` would let the binder
+swallow the constant; see `Riemann/Deep/WeilEF/Bug.lean`.) -/
 noncomputable def archTerm (g : ℝ → ℂ) : ℂ :=
   (1 / (2 * Real.pi) : ℂ) *
-      ∫ r : ℝ, ft g r * ((logDeriv Complex.Gamma (1 / 4 + I * r / 2)).re : ℂ) -
+      (∫ r : ℝ, ft g r * ((logDeriv Complex.Gamma (1 / 4 + I * r / 2)).re : ℂ)) -
     g 0 * (Real.log Real.pi : ℂ)
 
 /-- Prime term `Σ_n Λ(n) n^{-1/2} (g(log n) + g(−log n))`. -/

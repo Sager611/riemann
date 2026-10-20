@@ -1,12 +1,14 @@
 /-
-Riemann/Deep/WeilEF/Bug.lean — `WeilPos L` of `Riemann/Deep/Weil/Defs.lean` is FALSE for every `L > 0`.
+Riemann/Deep/WeilEF/Bug.lean — the ORIGINAL (unparenthesised) `WeilPos L` of
+`Riemann/Deep/Weil/Defs.lean` was FALSE for every `L > 0`. Defs.lean is now fixed; this file keeps a
+frozen copy (`archTermOld`, `weilQOld`, `WeilPosOld`) of the buggy definitions.
 
-Cause (`Bridge.archTerm_parse`): `∫ r, h r * Re ψ − g 0 * log π` puts the constant inside the
+Cause (`archTermOld_parse`): `∫ r, h r * Re ψ − g 0 * log π` puts the constant inside the
 integrand, which is then not integrable (`g 0 = ‖f‖² > 0`), so `archTerm = 0` (Bochner junk value).
 Witness: `f = φ − φ(· − r)` (`φ` a small bump): no prime enters, the archimedean term is `0`, and the
 pole term `2 F(i/2) F(−i/2) < 0` because `F(i/2) = A(1 − e^{−r/2}) > 0`, `F(−i/2) = B(1 − e^{r/2}) < 0`.
-Consequently every cited window Prop in Defs.lean (Yoshida, Zhu, Liu, Mori, CertWindow) is false as
-stated in Lean, and `WeilCriterion` there is equivalent to `¬ RH`.
+Consequently, before the fix, every cited window Prop in Defs.lean (Yoshida, Zhu, Liu, Mori,
+CertWindow) was false as stated in Lean, and `WeilCriterion` was equivalent to `¬ RH`.
 -/
 import Riemann.Deep.WeilEF.Suff
 
@@ -18,6 +20,26 @@ open scoped ComplexConjugate
 namespace Fayed.WeilSuff.Bug
 
 open Riemann.Deep.Weil Riemann.Deep.WeilEF Zeta23 Zeta23.EF Fayed.WeilSuff
+
+/-- Frozen copy of the original, buggy `archTerm` (binder swallows `- g 0 * log π`). -/
+def archTermOld (g : ℝ → ℂ) : ℂ :=
+  (1 / (2 * Real.pi) : ℂ) *
+      ∫ r : ℝ, ft g r * ((logDeriv Complex.Gamma (1 / 4 + I * r / 2)).re : ℂ) -
+    g 0 * (Real.log Real.pi : ℂ)
+
+/-- How `archTermOld` parses (`rfl`). -/
+lemma archTermOld_parse (g : ℝ → ℂ) :
+    archTermOld g = (1 / (2 * Real.pi) : ℂ) * ∫ r : ℝ,
+      (ft g r * ((logDeriv Complex.Gamma (1 / 4 + I * r / 2)).re : ℂ) -
+        g 0 * (Real.log Real.pi : ℂ)) := rfl
+
+/-- The original Weil functional. -/
+def weilQOld (f : ℝ → ℂ) : ℂ :=
+  poleTerm (autocorr f) + archTermOld (autocorr f) - primeTerm (autocorr f)
+
+/-- The original window positivity. -/
+def WeilPosOld (L : ℝ) : Prop :=
+  ∀ f : ℝ → ℂ, TestFn (L / 2) f → 0 ≤ (weilQOld f).re
 
 /-- Bump of radius `r`. -/
 def bumpR {r : ℝ} (hr : 0 < r) : ContDiffBump (0 : ℝ) := ⟨r / 2, r, half_pos hr, half_lt_self hr⟩
@@ -92,11 +114,11 @@ lemma autocorr_wit_zero_ne {r : ℝ} (hr : 0 < r) : autocorr (wit hr) 0 ≠ 0 :=
   · simp [wit_zero hr]
 
 /-- The archimedean term of the witness is the junk value `0`. -/
-lemma archTerm_wit {r : ℝ} (hr : 0 < r) : archTerm (autocorr (wit hr)) = 0 := by
+lemma archTerm_wit {r : ℝ} (hr : 0 < r) : archTermOld (autocorr (wit hr)) = 0 := by
   have hf := testFn_wit hr
   have hk := hf.autocorr_contDiff
   have hkc := hf.autocorr_hasCompactSupport
-  rw [archTerm_parse]
+  rw [archTermOld_parse]
   suffices hni : ¬ Integrable (fun r : ℝ => ft (autocorr (wit hr)) r *
       ((logDeriv Complex.Gamma (1 / 4 + I * r / 2)).re : ℂ) - (autocorr (wit hr)) 0 * (Real.log Real.pi : ℂ)) by
     rw [integral_undef hni, mul_zero]
@@ -129,8 +151,8 @@ lemma archTerm_wit {r : ℝ} (hr : 0 < r) : archTerm (autocorr (wit hr)) = 0 := 
     rw [Real.volume_univ] at this
     exact lt_irrefl _ this
 
-/-- **The bug**: `WeilPos L` (as defined in `Riemann/Deep/Weil/Defs.lean`) fails for every `L > 0`. -/
-theorem not_weilPos {L : ℝ} (hL : 0 < L) : ¬ WeilPos L := by
+/-- **The bug**: the original `WeilPos L` (`WeilPosOld`) fails for every `L > 0`. -/
+theorem not_weilPos {L : ℝ} (hL : 0 < L) : ¬ WeilPosOld L := by
   intro hW
   set r := min (L / 4) (1 / 8) with hr_def
   have hr : 0 < r := lt_min (by linarith) (by norm_num)
@@ -159,9 +181,9 @@ theorem not_weilPos {L : ℝ} (hL : 0 < L) : ¬ WeilPos L := by
     rw [ft_eq_paperFT, ft_eq_paperFT, paperFT_autocorr hf, paperFT_autocorr hf, hcI, hcI', hP, hN,
       Complex.conj_ofReal, Complex.conj_ofReal]
     push_cast; ring
-  have hval : weilQ (wit hr) = ((2 * (A * (1 - Real.exp ((-(1 / 2) : ℝ) * r))) *
+  have hval : weilQOld (wit hr) = ((2 * (A * (1 - Real.exp ((-(1 / 2) : ℝ) * r))) *
       (B * (1 - Real.exp ((1 / 2 : ℝ) * r))) : ℝ) : ℂ) := by
-    rw [weilQ, hpole, archTerm_wit hr, hprime]; ring
+    rw [weilQOld, hpole, archTerm_wit hr, hprime]; ring
   rw [hval, ofReal_re] at hpos
   have h1 : 0 < 1 - Real.exp ((-(1 / 2) : ℝ) * r) := by
     have : Real.exp ((-(1 / 2) : ℝ) * r) < 1 := Real.exp_lt_one_iff.mpr (by nlinarith)
@@ -174,6 +196,6 @@ theorem not_weilPos {L : ℝ} (hL : 0 < L) : ¬ WeilPos L := by
   linarith
 
 /-- Hence `∀ L > 0, WeilPos L` (the hypothesis of the brief's theorem) is refutable outright. -/
-theorem not_forall_weilPos : ¬ ∀ L : ℝ, 0 < L → WeilPos L := fun h => not_weilPos one_pos (h 1 one_pos)
+theorem not_forall_weilPos : ¬ ∀ L : ℝ, 0 < L → WeilPosOld L := fun h => not_weilPos one_pos (h 1 one_pos)
 
 end Fayed.WeilSuff.Bug

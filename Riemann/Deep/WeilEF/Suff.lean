@@ -367,10 +367,16 @@ theorem weilPosFix_of_RH (hRH : RiemannHypothesis) (L : ℝ) : WeilPosFix L := b
 theorem weil_criterion : RiemannHypothesis ↔ ∀ L : ℝ, 0 < L → WeilPosFix L :=
   ⟨fun h L _ => weilPosFix_of_RH h L, RH_of_weilPosFix⟩
 
-/-- The brief's statement, for `Riemann/Deep/Weil/Defs.lean`'s `WeilPos`, conditional on the
-parenthesisation fix of `archTerm` (after the fix, `hfix := fun _ => rfl`). -/
-theorem RH_of_weilPos (hfix : ∀ g, archTerm g = archTermFix g)
-    (h : ∀ L : ℝ, 0 < L → WeilPos L) : RiemannHypothesis :=
-  RH_of_weilPosFix fun L hL => (weilPos_iff_fix hfix L).mp (h L hL)
+/-- The brief's statement, for `Riemann/Deep/Weil/Defs.lean`'s (fixed) `WeilPos`. -/
+theorem RH_of_weilPos (h : ∀ L : ℝ, 0 < L → WeilPos L) : RiemannHypothesis :=
+  RH_of_weilPosFix fun L hL => (weilPos_iff_fix L).mp (h L hL)
+
+/-- **Weil's criterion** for `Riemann/Deep/Weil/Defs.lean`'s `WeilPos`. -/
+theorem weil_criterion_weilPos : RiemannHypothesis ↔ ∀ L : ℝ, 0 < L → WeilPos L :=
+  weil_criterion
+
+/-- `Defs.WeilCriterion` (all windows `L : ℝ`) holds outright, sorry-free. -/
+theorem weilCriterion_holds : WeilCriterion :=
+  ⟨fun h L => weilPosFix_of_RH h L, fun h => RH_of_weilPos fun L _ => h L⟩
 
 end Fayed.WeilSuff
