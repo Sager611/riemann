@@ -157,3 +157,4 @@
 - R36 random models (Wintner, Harper, Selberg CLT, Bagchi recurrence, GMC, FHK maxima, GUE statistics, Ng's M(x) law): one deterministic sample; recurrence ≡ RH. [Lean](Riemann/Tree/R036.lean)
 - R37 rigidity (Hamburger, Kaczorowski–Perelli, converse theorems, Bombieri–Hejhal, zero moving, Katz–Sarnak, Beurling, Saias–Weingartner): pins ζ, not its zeros. [Lean](Riemann/Tree/R037.lean)
 - R38 audit-target search: 8 recent claims listed (Velez, Li-Zenodo, Gershon, Yakaboylu, Bhattacharjee, Robin-Zenodo, Q(A)-Zenodo, Abe); log-concave ⇏ real zeros (Lean core). [Lean](Riemann/Tree/R038.lean)
+- R39 failing steps: Velez finite→limit; Li-Zenodo remainder; Yakaboylu biorthogonal⇏complete; Bhattacharjee logic; Robin-Zenodo partial products; Q(A) numerics; Abe n/a; Gershon TP2⇏LP. [Lean](Riemann/Tree/R039.lean)
