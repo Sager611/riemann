@@ -92,4 +92,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R75 pin false statements — Ryazanov (arXiv) to Orca audit. [R075.lean](Riemann/Tree/R075.lean)
 - Deep: Ryazanov audit — periodicity claim false for all n ≥ 3 (Lean). [REPORT](Riemann/Deep/Ryazanov/REPORT.md)
 - R76 what the formal Weil criterion makes cheap — Yoshida log 2 window launched. [R076.lean](Riemann/Tree/R076.lean)
-- R77 FRONTIER (next)
+- R77 contour-topology arguments — killed by Davenport–Heilbronn. [R077.lean](Riemann/Tree/R077.lean)
+- R78 FRONTIER (next)
