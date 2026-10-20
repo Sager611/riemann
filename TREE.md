@@ -56,4 +56,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R46 deformation paths — none controllable; zeta_offline_pair machine-checked. [R046.lean](Riemann/Tree/R046.lean)
 - R47 horizontal monotonicity — local criteria are zero-free regions in disguise. [R047.lean](Riemann/Tree/R047.lean)
 - R48 statistical mechanics & transfer operators — all dead. [R048.lean](Riemann/Tree/R048.lean)
-- R49 FRONTIER (next)
+- R49 Siegel zeros & zero repulsion — near s = 1 only. [R049.lean](Riemann/Tree/R049.lean)
+- R50 FRONTIER (next)
