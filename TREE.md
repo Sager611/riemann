@@ -84,4 +84,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R69 computability angles — RH is Π⁰₁ but undecidable in practice; Lagarias form in Lean. [R069.lean](Riemann/Tree/R069.lean)
 - R70 personas 2.0 — every bet needs a missing structure. [R070.lean](Riemann/Tree/R070.lean)
 - R71 quantitative heat flow — upper bounds on Λ improve, Λ ≤ 0 ≡ RH. [R071.lean](Riemann/Tree/R071.lean)
-- R72 FRONTIER (next)
+- R72 derivative zeros & a-points — the integration direction is the hard one. [R072.lean](Riemann/Tree/R072.lean)
+- R73 FRONTIER (next)
