@@ -213,3 +213,4 @@
 - Beat 0.874886647 with de Faveri-Pandey / Guth-Maynard / Chen-Gupta-Li / twelfth moment: none fills a slot of Liu system. [report](Riemann/Deep/QRHImprove/REPORT2.md)
 - R109 floor 13/15: bootstrapping, density-only, reflection to σ<1/2 dead. [Lean](Riemann/Tree/R109.lean)
 - Break 13/15 floor (two-piece / mollified detector): no; floor also forced elsewhere in the system. [report](Riemann/Deep/QRHImprove/REPORT3.md)
+- R75 correction: Q(A) eq. (38) is correct (misuse elsewhere); Velez Lemma 7.1 follows from Prop. 6.1; Li-Zenodo states no claim. Robin-Zenodo eq. (19) refuted in Lean. [Lean](Riemann/Deep/Pinned/Refute.lean)
