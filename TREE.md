@@ -58,4 +58,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R48 statistical mechanics & transfer operators — all dead. [R048.lean](Riemann/Tree/R048.lean)
 - R49 Siegel zeros & zero repulsion — near s = 1 only. [R049.lean](Riemann/Tree/R049.lean)
 - R50 fresh directions after 49 rounds — Hilbert–Pólya convergence; cores machine-checked. [R050.lean](Riemann/Tree/R050.lean)
-- R51 FRONTIER (next)
+- R51 Hilbert–Pólya candidates 2.0 — missing property always ≡ RH or open. [R051.lean](Riemann/Tree/R051.lean)
+- R52 FRONTIER (next)
