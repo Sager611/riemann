@@ -100,4 +100,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R81 filters as Lean theorems — dh_offline, zero_free_of_criterion, finite_check_consistent. [R081.lean](Riemann/Tree/R081.lean)
 - R82 small-window positivity techniques — Taylor route incremental; log 2 needs Yoshida/Connes–Consani machinery. [R082.lean](Riemann/Tree/R082.lean)
 - R83 counterexample library of false lemmas — two machine-checked, eight catalogued. [R083.lean](Riemann/Tree/R083.lean)
-- R84 FRONTIER (next)
+- R84 decay laws for λ_min(L) — decay is unconditional, positivity for all L is RH. [R084.lean](Riemann/Tree/R084.lean)
+- R85 FRONTIER (next)
