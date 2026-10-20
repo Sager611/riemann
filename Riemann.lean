@@ -20,3 +20,4 @@ import Riemann.Deep.HardyLittlewood.Suff
 import Riemann.Deep.FirstZero.FirstZero
 import Riemann.Deep.LHopital.Union
 import Riemann.Deep.FirstZero.Next
+import Riemann.Deep.WeilEF.Suff
