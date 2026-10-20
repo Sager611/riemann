@@ -161,3 +161,4 @@
 - R40 Fourier optimization / bootstrap (Cohn–Elkies, magic functions, CMS, Beurling–Selberg, explicit-formula bootstrap, SOS, crossing analogy, de Branges extremals): spectral side not positive without RH. [Lean](Riemann/Tree/R040.lean)
 - Hardy discovery: removed — Lean formalization of >2/3 on the line (Alpöge–Furman 2026, anthropics/formal-math zeta23) already implies it. Record now >2/3, not PRZZ 41.7%.
 - R41 critical-line formal targets: proportions/N(T)/Z already in zeta23 (Lean); remaining: certified numerics, zero-free regions. [Lean](Riemann/Tree/R041.lean)
+- R42 beyond 2/3: density one ≠ all (DH), no quasi-RH/Lindelöf/Möbius consequence; Levinson toolkit gives density only. [Lean](Riemann/Tree/R042.lean)

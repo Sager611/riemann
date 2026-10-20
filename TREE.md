@@ -47,4 +47,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - Deep: Hardy 1914 machine-checked — `Fayed.Hardy.hardy`, sorry-free. [Hardy](Riemann/Deep/Hardy/) — not new: superseded by Alpöge–Furman (arXiv 2608.13637, >2/3 of zeros simple and on the line), already formalized in Lean (github.com/anthropics/formal-math, zeta23).
 - R40 Fourier optimization & bootstrap — no positivity without RH. [R040.lean](Riemann/Tree/R040.lean)
 - R41 next formal targets on the line — most covered by zeta23; remaining: certified numerics, zero-free regions. [R041.lean](Riemann/Tree/R041.lean)
-- R42 FRONTIER (next)
+- R42 beyond two thirds — proportion results cannot reach RH; zero counts and ProportionOnLine defined in Lean. [R042.lean](Riemann/Tree/R042.lean)
+- R43 FRONTIER (next)
