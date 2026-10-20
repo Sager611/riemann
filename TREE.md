@@ -71,4 +71,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - Deep: Yakaboylu audit — no discovery: positivity step assumes RH; author's v17 drops the claim. [REPORT](Riemann/Deep/Yakaboylu/REPORT.md)
 - R60 gap-finding — 8 untried directions → R61. [R060.lean](Riemann/Tree/R060.lean)
 - R61 untried directions — only Bethe ansatz left open. [R061.lean](Riemann/Tree/R061.lean)
-- R62 FRONTIER (next)
+- R62 integrable systems deep dive — reduces to Hilbert–Pólya. [R062.lean](Riemann/Tree/R062.lean)
+- R63 FRONTIER (next)
