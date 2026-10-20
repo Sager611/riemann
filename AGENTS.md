@@ -1,6 +1,6 @@
 # riemann — rules
 
-Goal: Prove or disprove the Riemann Hypothesis by endless proof-tree search.
+Goal: Prove or disprove the Riemann Hypothesis by endless Lean proof-tree search (≥8 scouts/round, NOGO log, commit per round, never stop).
 
 ## Work loop (never stop)
 1. Pick frontier node in `TREE.md`.
