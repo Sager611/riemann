@@ -16,4 +16,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R11 attack the obstructions — all heuristic/theorem; none broken. [R011.lean](Riemann/Tree/R011.lean)
 - Formal backbone (machine-checked): Redheffer det R_n = M(n) [Det](Riemann/Deep/Redheffer/Det.lean); Mertens ⇒ zero-free [ZeroFree](Riemann/Deep/Mertens/ZeroFree.lean); RH ⟸ Mertens / Redheffer bounds [Backbone](Riemann/Deep/Backbone.lean); Weil windows (in progress)
 - R12 unusual angles — 7 dead, 3 circular. [R012.lean](Riemann/Tree/R012.lean)
-- R13 FRONTIER (next)
+- R13 exotic equivalents — 3 dead, 7 circular. [R013.lean](Riemann/Tree/R013.lean); Nyman–Beurling sufficiency formalization (ultraworker)
+- R14 FRONTIER (next)

@@ -110,3 +110,13 @@
 - R12.8 low-lying zeros in families: exceptions allowed.
 - R12.9 Stolz on gaps with Λ: needs RH-strength.
 - R12.10 PCP local-to-global: no soundness invariant.
+- R13.1 Balazard–Saias–Yor integral: = Σ off-line log-masses; ≡RH.
+- R13.2 Salem/Wiener–Tauberian: Re s=1 only; strip ≡RH.
+- R13.3 Hardy-space outerness: ≡ zero-free.
+- R13.4 Riesz series: ≡RH.
+- R13.5 Volchkov integral: ≡RH.
+- R13.6 Hilbert transform S(t): ≡ Weil.
+- R13.7 Bohr–Jessen law: zero-insensitive.
+- R13.8 proven Turán families: don't force hyperbolicity.
+- R13.9 complexity/Möbius randomness: no equivalence.
+- R13.10 Franel–Landau: SL₂(ℤ) gap too weak.
