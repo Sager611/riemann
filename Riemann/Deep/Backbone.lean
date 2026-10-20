@@ -1,6 +1,7 @@
 import Riemann.Deep.Mertens.ZeroFree
 import Riemann.Deep.Redheffer.Det
 import Riemann.Tree.R007
+import Riemann.Deep.NymanBeurling.Suff
 
 /-!
 # Formal backbone: machine-checked reductions of RH
@@ -43,7 +44,25 @@ theorem RH_of_redheffer
     push_cast at this
     exact this
 
+/-- Báez-Duarte's approximation property: 1 approximated by combinations of ρ_{1/k} only. -/
+def BDApprox : Prop :=
+  ∀ ε > 0, ∃ (n : ℕ) (c : Fin n → ℝ) (k : Fin n → ℕ), (∀ i, 1 ≤ k i) ∧
+    ∫ x in Set.Ioc (0 : ℝ) 1, (1 - ∑ i, c i * Fayed.NB.rhoNB (1 / (k i : ℝ)) x) ^ 2 < ε
+
+/-- Báez-Duarte's criterion, sufficiency: a special case of Nyman–Beurling (θ = 1/k). -/
+theorem RH_of_BDApprox (h : BDApprox) : RiemannHypothesis := by
+  apply Fayed.NB.RH_of_NBApprox
+  intro ε hε
+  obtain ⟨n, c, k, hk, hint⟩ := h ε hε
+  refine ⟨n, c, fun i => 1 / (k i : ℝ), fun i => ⟨?_, ?_⟩, hint⟩
+  · have : (1 : ℝ) ≤ k i := by exact_mod_cast hk i
+    positivity
+  · have : (1 : ℝ) ≤ k i := by exact_mod_cast hk i
+    rw [div_le_one (by linarith)]
+    exact this
+
 end Fayed.Backbone
 
 #print axioms Fayed.Backbone.RH_of_mertens
 #print axioms Fayed.Backbone.RH_of_redheffer
+#print axioms Fayed.Backbone.RH_of_BDApprox
