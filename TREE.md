@@ -85,4 +85,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R70 personas 2.0 — every bet needs a missing structure. [R070.lean](Riemann/Tree/R070.lean)
 - R71 quantitative heat flow — upper bounds on Λ improve, Λ ≤ 0 ≡ RH. [R071.lean](Riemann/Tree/R071.lean)
 - R72 derivative zeros & a-points — the integration direction is the hard one. [R072.lean](Riemann/Tree/R072.lean)
-- R73 FRONTIER (next)
+- R73 objects containing ζ as a factor — never easier. [R073.lean](Riemann/Tree/R073.lean)
+- R74 FRONTIER (next)

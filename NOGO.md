@@ -191,3 +191,4 @@
 - R70 personas 2.0 (Connes, Scholze, Tao, Sarnak, Bombieri, Deninger, Iwaniec, Soundararajan–Radziwiłł): 7/8 need a missing structure; moments need averaged→pointwise. [Lean](Riemann/Tree/R070.lean)
 - R71 quantitative heat flow (Rodgers–Tao, Polymath 15, stability, KKL, Lehmer pairs, function fields, CM dynamics, Λ ≤ 0.1787 claim): Λ ≤ 0 needs backward stability ≡ RH. [Lean](Riemann/Tree/R071.lean)
 - R72 derivative zeros & a-points (Speiser, ζ' near line, Ξ^(k), a-points, Conrey, Levinson V, Gram): derivatives help, integration back does not. [Lean](Riemann/Tree/R072.lean)
+- R73 objects containing ζ (Dedekind, cyclotomic, Rankin–Selberg, Eisenstein, Selberg zeta, Epstein, Artin, Galois families): never easier. [Lean](Riemann/Tree/R073.lean)
