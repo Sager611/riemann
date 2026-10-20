@@ -176,3 +176,4 @@
 - R53 sufficiency formalization plan: Hardy–Littlewood next (Riesz pattern); Weil/Li blocked on explicit formula. [Lean](Riemann/Tree/R053.lean)
 - R54 self-audit: LagariasPositivity junk-value bug (ξ'/ξ = 0 at zeros) — fix launched; Fayed Inputs not yet inhabited (em17, perron33, leibniz44 unproved) — queued. [Lean](Riemann/Tree/R054.lean)
 - R55 self-audit II: no new serious bug (two docstring nits; Weil guards adequate for WeilPos). [Lean](Riemann/Tree/R055.lean)
+- R56 modern positivity (Lorentzian, AHK Hodge, real stability, PF∞/ASWE, Toeplitz, Soergel, hard Lefschetz, multiplier sequences): stops at log-concave/ULC; real-rooted ≡ RH. [Lean](Riemann/Tree/R056.lean)
