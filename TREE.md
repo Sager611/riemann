@@ -88,5 +88,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R73 objects containing ζ as a factor — never easier. [R073.lean](Riemann/Tree/R073.lean)
 - R74 Euler products inside the strip — DH-safe, convergence ≡ RH. [R074.lean](Riemann/Tree/R074.lean)
 - Deep: Weil criterion both directions machine-checked (`Fayed.WeilSuff.weil_criterion`); found a parenthesisation bug in our archTerm (integral swallowed −g(0) log π) — fix pending in Bridge. [WeilEF](Riemann/Deep/WeilEF/)
-- Deep (in progress): Fayed Inputs — leibniz44 and em17 proved; Inputs ↔ Perron33 (inputs_iff_perron33); perron33 open. [Inputs](Riemann/Deep/Inputs/)
+- Deep: Fayed Inputs ALL proved (inputs_holds); RH_of_theorem1C : Theorem1C → RH unconditional — step (55) is the only gap. [Inputs](Riemann/Deep/Inputs/)
 - R75 FRONTIER (next)
