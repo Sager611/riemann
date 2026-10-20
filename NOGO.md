@@ -46,3 +46,13 @@
 - R5.6 de Branges/screw functions: Conrey–Li counterexample.
 - R5.7 F₁ geometry: no Frobenius + Hodge index.
 - R5.8 transport/Fourier interpolation: reduces to Weil.
+- R6.1 Fayed+ζ'/ζ, Λ≥0: positivity lost for t≠0.
+- R6.2 Fayed+1/ζ: residues restate symmetry.
+- R6.3 Fayed+mean square in t: zeros measure-zero.
+- R6.4 Fayed+Hadamard/Guinand: positivity ≡RH.
+- R6.5 Fayed+Jensen: counts, can't locate.
+- R6.6 Fayed+AFE χ: cancellation absorbs χ. [Lean](Riemann/Tree/R006.lean)
+- R6.7 complex p families: I≡0 ∀p. [Lean](Riemann/Tree/R006.lean)
+- R6.8 Hurwitz a-average: nothing singles out a=1.
+- R6.9 small u: D_γ bounded below. [Lean](Riemann/Tree/R006.lean)
+- R6.10 log ζ 3-4-1 inside J: Euler product needs Re>1.
