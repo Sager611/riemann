@@ -204,3 +204,5 @@
 - R90 Wünsche 1607.04551 main theorem false (K = e^{-u²}(1+u⁴/4) positive, decreasing, transform has off-axis zeros); Stenger 1708.01209 symmetry ≠ fixedness; 2206.0168 not real. [Lean](Riemann/Tree/R090.lean)
 - Kernel counterexample machine-checked (Fayed.Kernel): K = e^{-t²}(1+t⁴/4) positive, non-increasing on [0,∞), strictly log-concave, ∫K e^{zt} = √π e^{z²/4}(19/16 + 3z²/16 + z⁴/64), zero off the imaginary axis — refutes Wünsche 1607.04551's theorem and "log-concave ⇒ real zeros". [Lean](Riemann/Deep/Kernel/Counterexample.lean)
 - Stenger (arXiv 1708.01209 v19) audit: NO DISCOVERY — §4 Lemmas 4.2/4.3 use a false complex Rolle theorem (a standard objection; refuted in Lean). [report](Riemann/Deep/Stenger/REPORT.md)
+- R98 bound g(log 2) by overlap length: mass can sit at both support ends, no δ-decay. [Lean](Riemann/Tree/R098.lean)
+- R98 analytic window log 2 + δ: δ tiny, weaker than certified numerical windows. [Lean](Riemann/Tree/R098.lean)
