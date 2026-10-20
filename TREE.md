@@ -32,4 +32,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R26 flaw triage of 8 recent claims — all fall into known failure classes. [R026.lean](Riemann/Tree/R026.lean); Desogus audit (Orca)
 - R27 Mathlib infrastructure gap map — next formal target: ζ convexity (discharges a Fayed input). [R027.lean](Riemann/Tree/R027.lean)
 - R28 16 micro-variants of the root — all σ₀-blind; root neighbourhood exhausted. [R028.lean](Riemann/Tree/R028.lean)
-- R29 FRONTIER (next)
+- R29 program blueprints — open core per program; machine-checked: any of NB/BD/Lagarias/Mertens cores ⇒ RH. [R029.lean](Riemann/Tree/R029.lean)
+- R30 FRONTIER (next)
