@@ -152,3 +152,4 @@
 - R31 second anchors (Γ poles, special values, Stirling χ, p-adic, real-segment sign, on-line zeros, shifted poles, archimedean term): none excludes zeros.
 - R32 elementary/pretentious (Selberg–Erdős, Halász, Matomäki–Radziwiłł, Wirsing, Vaughan/HB, BV/Zhang, Chowla/Sarnak, dispersion): no power saving for μ.
 - R33 repair Desogus induction (exact Schur gaps, continuous L, prime-power jumps, interlacing, semi-local, prolate, de Branges chain, large-L limit): all steps ⇔ all windows (machine-checked). [Lean](Riemann/Tree/R033.lean)
+- R34 real-rootedness toolbox (Lee–Yang/Newman, Pólya, Jensen/GORZ, Borcea–Brändén, interlacing families, Hermite–Biehler, Ki–Kim–Lee/Cardon, Jacobi): needs a real-rooted model of Ξ ≡ RH. [Lean](Riemann/Tree/R034.lean)

@@ -38,4 +38,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R32 elementary/pretentious methods — all stop at o(x) / exp-savings. [R032.lean](Riemann/Tree/R032.lean)
 - Deep: Desogus audit — Thm 8.6 (201) false (Arb witness, 10 orders of magnitude). [REPORT](Riemann/Deep/Desogus/REPORT.md)
 - R33 repair the Desogus induction — dead/circular; steps_iff_endpoints machine-checked. [R033.lean](Riemann/Tree/R033.lean)
-- R34 FRONTIER (next)
+- R34 real-rootedness toolbox — dead/circular; turan_of_real_roots machine-checked. [R034.lean](Riemann/Tree/R034.lean)
+- R35 FRONTIER (next)
