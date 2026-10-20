@@ -1,5 +1,47 @@
 # Yoshida deep dive: Weil positivity on small windows (Lean)
 
+**Verdict (round 4): the whole Yoshida range is formalized.** `Fayed.Yoshida.weilPos_lt_log2 : ∀ L < log 2,
+WeilPos L` (`Log2.lean`), sorry-free, no `native_decide`, axioms = propext, Classical.choice, Quot.sound.
+`weilPos_le_60` and `weilPos_le_65` are corollaries. This is Yoshida's 1992 theorem, proved by our own
+numerical route, not by his argument.
+
+## Round 4: what changed
+1. **Affine cells** (`Affine.lean`, `Chord.lean`). The deficit is `t = A + B|r|` per cell. Two chord bounds:
+   `2πμ` is concave in `u = (r/2)²` (every digamma term `−c/(c²+u)` is), and `y ↦ cos(yx) − x²y²/2` is
+   concave, so `J(r) ≥ chord − (16/3)a³cosh a·θ(1−θ)(hi−lo)²`. The loss per cell is second order:
+   `δ = (mH − mL)(hi − lo)/(4(hi + lo)) + E_j(hi − lo)²`. Cells 1/64 wide now beat round 3's 1/256 cells.
+2. **Wider support** (`weilQ_re_eq_W'`). For `f` supported in `[−a, a]` with `2a < log 2`, the prime sum is
+   still zero, but the pole kernel `2cosh(x/2)` may be cut at any `2a₁ ≥ 2a`, giving the weight `W(a₁, ·)`;
+   Taylor and Bessel steps also hold with `a₁`. So **one** certificate at a rational `a₁ ≥ log 2 / 2` covers
+   every window below `log 2`. The certificate is at `a₁ = 1733/5000 = 0.3466` (log 2 / 2 = 0.346574).
+3. Sharper constants: `log π < 1.14474` (`log_pi_lt'`); `2πμ` and `J` are bounded once per grid point
+   (shared by neighbouring cells, `chkA`).
+
+| certificate | cells | K | s | margin (2π units, α ≈ 6.9) |
+|---|---|---|---|---|
+| `WLog2` (a₁ = 0.3466) | 1179 (1172 affine) up to R = 23.6 | 24 | 1.1 | 0.0038 |
+| test only: a = 0.3 (L = 0.6) | 742 | 16 | 0.8 | 0.0188 (deleted, superseded) |
+
+The float model (`.scratch/yoshida4/aff.py`) puts the ideal margin at log 2 near 0.0054; rounding and cell
+loss eat 30%. K = 32, s = 1.3 gives 0.0050 if a later change needs headroom.
+
+## Cost
+`lake build Riemann.Deep.Yoshida.Log2`: `WLog2` alone ≈ 19 min wall standalone (443 s user), 52 min wall when
+the machine was busy; peak footprint ≈ 300 MB, resident ≈ 5–7 GB (mapped Mathlib). Not imported by
+`Riemann.lean`. Generator: `cd .scratch/yoshida4 && python3.11 gen4.py 1733/5000 11/10 24 6 WLog2 150` (2 s).
+
+## Yoshida 1992 / Connes–Consani 2021 (goal 2)
+Not formalized and no longer needed: the full range `L < log 2` now follows from one rational certificate.
+Yoshida's proof works with the same prime-free quadratic form but argues by operator bounds (the form is a
+compact perturbation of a positive operator, checked numerically on a finite piece); Connes–Consani (arXiv
+2006.13771) prove positivity on `[2^{-1/2}, 2^{1/2}]` via prolate spheroidal functions. Both rest on the same
+fact our certificate checks: the smallest eigenvalue of the prime-free form stays positive (≈ 0.0013 in W units)
+up to `log 2`. Beyond `log 2` the prime 2 enters and this method, as is, stops.
+
+---
+
+# Round 3 (kept for reference)
+
 **Verdict (round 3): window 0.55, up from 1/3; not yet log 2 ≈ 0.693.** Sorry-free, no `native_decide`,
 axioms = propext, Classical.choice, Quot.sound:
 - `Fayed.Yoshida.weilPos_le_55 : ∀ L ≤ 11/20, WeilPos L` (f supported in [−0.275, 0.275]).
