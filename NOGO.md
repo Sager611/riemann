@@ -185,3 +185,4 @@
 - R62 integrable systems (ODE/IM, França–LeClair, Q-operators, TBA, SoV, RH-problems, KdV/Toda, XXZ): reality needs self-adjointness = Hilbert–Pólya. [Lean](Riemann/Tree/R062.lean)
 - Lesson (HL formalization): Σ μ(n)/n·e^{-x/n²} is not absolutely summable, so Lean's tsum = 0 would make the criterion vacuous; use Σ μ(n)/n (e^{-x/n²} − 1) (= Σ_{k≥1} (−x)^k/(k! ζ(2k+1))).
 - R64 salvage Fayed: all correct parts standard; only novelty is the false Theorem 1. [Lean](Riemann/Tree/R064.lean)
+- R65 composites II (8 pairs of earlier dead directions): one obstacle always survives. [Lean](Riemann/Tree/R065.lean)

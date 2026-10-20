@@ -75,4 +75,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - Backbone: Hardy–Littlewood criterion sufficiency machine-checked (`Fayed.HL.RH_of_hlBound`, absolutely summable form Σ μ(n)/n (e^{-x/n²} − 1)). [Suff](Riemann/Deep/HardyLittlewood/Suff.lean)
 - R63 zeta23 reuse map — port residues + explicit formula, then Weil sufficiency (queued). [R063.lean](Riemann/Tree/R063.lean)
 - R64 salvage Fayed — correct parts standard. [R064.lean](Riemann/Tree/R064.lean)
-- R65 FRONTIER (next)
+- R65 composites II — one obstacle always survives. [R065.lean](Riemann/Tree/R065.lean)
+- R66 FRONTIER (next)
