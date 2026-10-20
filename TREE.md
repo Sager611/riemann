@@ -102,3 +102,4 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R83 counterexample library of false lemmas — two machine-checked, eight catalogued. [R083.lean](Riemann/Tree/R083.lean)
 - R84 decay laws for λ_min(L) — decay is unconditional, positivity for all L is RH. [R084.lean](Riemann/Tree/R084.lean)
 - R85 FRONTIER (next)
+- QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.

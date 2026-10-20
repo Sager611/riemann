@@ -1,0 +1,28 @@
+Quasi-Riemann hypothesis (zeta has no zero with Re s > 7/8): Lean port into this repository.
+
+This directory includes software developed by OpenAI, taken from the "math" repository
+(https://github.com/openai/math, subdirectory lean/, commit 1581d4cbdd69a0faf34b2089614fe2a814316a6a),
+licensed under the Apache License, Version 2.0 (see LICENSE, a verbatim copy of lean/LICENSE).
+The derived files are the ones under OAI/: the import closure of the module
+OAI.NumberTheory.DirichletL.Nonvanishing, which proves
+OAI.riemannZeta_ne_zero_of_seven_eighths_lt_re (the statement of lean/ComparatorChallenges/QuasiRiemannHypothesis.lean).
+Each file starts with a two-line header naming its upstream file and stating the local modification
+(import paths rewritten from OAI.* to Riemann.Deep.QRH.OAI.*); any further compatibility fix is listed in REPORT.md.
+Accompanying paper: OpenAI, "The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane Re(s) > 7/8" (30 September 2026),
+github.com/openai/math/tree/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026.
+
+This directory also includes software derived from:
+- PrimeNumberTheoremAnd (https://github.com/AlexKontorovich/PrimeNumberTheoremAnd, commit
+  c39a751132c88b6e8080b74c74023fd95b3d8be0), Copyright Alex Kontorovich and the PrimeNumberTheoremAnd contributors,
+  Apache License, Version 2.0. Files under Ext/PrimeNumberTheoremAnd/, with OpenAI's compatibility patch
+  lean/patches/PrimeNumberTheoremAnd-lean4341.patch (same openai/math commit) applied. Local modifications:
+  import paths; Fourier.lean and Sobolev.lean wrapped in namespace QRHPNT (their names clash with
+  Riemann/Deep/WeilEF/Z23/FromPNTPlus); Wiener.lean opens QRHPNT. Each file's header records this.
+- rellich-kondrachov (https://github.com/abenenson/rellich-kondrachov, commit 70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23),
+  Copyright (c) 2026 Adam Benenson, Apache License, Version 2.0. Files under Ext/RellichKondrachov/, with OpenAI's
+  compatibility patch lean/patches/rellich-kondrachov-lean4341.patch applied. Local modification: import paths.
+Both upstream licenses are the Apache License, Version 2.0, identical in text to LICENSE.
+
+Upstream builds against Lean v4.34.1 and mathlib commit d13f23b723b8a846827a245b89c10fc7d3f11612; this port builds
+against the Lean toolchain and mathlib pinned in this repository's lean-toolchain and lake-manifest.json.
+None of Lean, mathlib or mathlib's dependencies is included here.
