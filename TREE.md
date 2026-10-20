@@ -63,4 +63,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - Backbone: Riesz criterion sufficiency machine-checked (`Fayed.Riesz.RH_of_rieszBound`). [Suff](Riemann/Deep/Riesz/Suff.lean)
 - R53 next sufficiency formalizations — Hardy–Littlewood launched. [R053.lean](Riemann/Tree/R053.lean)
 - R54 adversarial self-audit — Lagarias junk-value bug found (fix running); Inputs non-vacuity open. [R054.lean](Riemann/Tree/R054.lean)
-- R55 FRONTIER (next)
+- R55 self-audit II — no new serious bug. [R055.lean](Riemann/Tree/R055.lean)
+- R56 FRONTIER (next)
