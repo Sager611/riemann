@@ -38,3 +38,5 @@ import Riemann.Deep.FirstZero.SimpleNext
 import Riemann.Deep.FirstZero.Count
 import Riemann.Deep.Zhang.Paper
 import Riemann.Deep.Yoshida.Log2
+import Riemann.Deep.Hasse.Main
+import Riemann.Deep.Hasse.Hasse
