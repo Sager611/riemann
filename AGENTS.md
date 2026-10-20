@@ -16,7 +16,7 @@ One-liner + link in `DISCOVERIES.md`; tell user; `reviewer` judges significance;
 ## Constraints
 - Never ask permission; decide, act, log.
 - Orca agents: no new worktrees (.lake ≈ 6 GB, disk tight); own subdir; orchestrator commits.
-- Few parallel Lean compiles; scratch in `.scratch/`.
+- Few parallel Lean compiles; scratch in `.scratch/`. Lean LSP off (`.pi-lens.json`): each worker loads Mathlib (~3 GB).
 - `rg`, never `grep`. No Docker. No vitest.
 - Compile: `lake env lean <file>`; all: `lake build`.
 

@@ -31,3 +31,10 @@
 - R3.8 o-minimality/Pila–Wilkie: zeros not algebraic points.
 - R3.9 Connes–Consani RR for Spec ℤ: no Hodge index.
 - R3.10 adelic renormalized heat flow: no functorial finite-prime flow.
+- R4.2 Weil window: p=2 norm ≈0.49 vs gap unknown — no pure norm proof.
+- R4.3 sharp high-freq cutoff: impossible with compact support.
+- R4.4 fixed window ⇒ zero region: modulation reaches all heights.
+- R4.5 prolate interlacing: no monotone λ_min(L).
+- R4.6 function-field window induction: Hodge index global.
+- R4.7 induction on primes: insertions indefinite. [Lean](Riemann/Tree/R004.lean)
+- R4.8 Lean Weil form: no explicit formula in Mathlib yet.
