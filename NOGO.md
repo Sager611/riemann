@@ -173,3 +173,4 @@
 - R50 fresh directions (8 lenses): 3/8 converge on Hilbert–Pólya; all very low odds; finite cores in Lean. [Lean](Riemann/Tree/R050.lean)
 - R51 Hilbert–Pólya 2.0 (Berry–Keating/Sierra, BBM, Connes, Yakaboylu, LeClair–Mussardo, Remmen, de Branges, Okubo/Wu–Sprung): missing property = the whole problem. [Lean](Riemann/Tree/R051.lean)
 - R52 2025–26 news: >2/3 on line, sixth moment (de Faveri–Pandey), BTY zero-free regions, window bounds; quantitative only. Scouts misattribute authors: always check arXiv API. [Lean](Riemann/Tree/R052.lean)
+- R53 sufficiency formalization plan: Hardy–Littlewood next (Riesz pattern); Weil/Li blocked on explicit formula. [Lean](Riemann/Tree/R053.lean)
