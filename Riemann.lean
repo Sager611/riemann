@@ -24,3 +24,6 @@ import Riemann.Deep.WeilEF.Suff
 import Riemann.Deep.Inputs.All
 import Riemann.Deep.Inputs.Perron
 import Riemann.Deep.Ryazanov.Paper
+import Riemann.Deep.FirstZero.Min
+import Riemann.Deep.FirstZero.ZetaHalf
+import Riemann.Deep.Yoshida.Small

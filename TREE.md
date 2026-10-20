@@ -94,4 +94,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R76 what the formal Weil criterion makes cheap — Yoshida log 2 window launched. [R076.lean](Riemann/Tree/R076.lean)
 - R77 contour-topology arguments — killed by Davenport–Heilbronn. [R077.lean](Riemann/Tree/R077.lean)
 - R78 cheap numerical milestones — ζ(1/2) < 0 launched. [R078.lean](Riemann/Tree/R078.lean)
+- Deep: first zero is the first (first_zero_is_first, no zeros below 14.13); ζ(1/2) ∈ (−1.461, −1.460); Yoshida partial: WeilPos L for L ≤ 1/16 (weilPos_small). [FirstZero](Riemann/Deep/FirstZero/) [Yoshida](Riemann/Deep/Yoshida/)
 - R79 FRONTIER (next)
