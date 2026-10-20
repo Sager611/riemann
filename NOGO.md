@@ -38,3 +38,11 @@
 - R4.6 function-field window induction: Hodge index global.
 - R4.7 induction on primes: insertions indefinite. [Lean](Riemann/Tree/R004.lean)
 - R4.8 Lean Weil form: no explicit formula in Mathlib yet.
+- R5.1 mollifiers to 100%: 100% ≠ RH; off-diagonal barrier.
+- R5.2 finite Li positivity: no zero exclusion.
+- R5.3 computational disproof: no targeted height.
+- R5.4 logic/independence: no internal proof.
+- R5.5 Lax–Phillips causality: ≡RH.
+- R5.6 de Branges/screw functions: Conrey–Li counterexample.
+- R5.7 F₁ geometry: no Frobenius + Hodge index.
+- R5.8 transport/Fourier interpolation: reduces to Weil.
