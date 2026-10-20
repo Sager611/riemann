@@ -139,3 +139,4 @@
 - R16.x personas (large sieve, NCG scaling, polarized H¹, Hecke packets, negative moments, PT, SOS): infrastructure only, RH bridge missing.
 - R16.6 de Branges canonical system for Ξ: positivity ≡RH.
 - R16.9 Lorentzian Jensen arrays: degree-2 known (CNV 1986).
+- R17 ladder: FE-only (DH) and Euler-only (Beurling) rungs have off-line zeros; Euler+FE rung open (≡ class GRH); classification/orthonormality/random/rigidity/finite-factor routes dead.
