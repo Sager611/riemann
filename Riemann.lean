@@ -6,3 +6,5 @@ import Riemann.Tree
 import Riemann.Deep.Redheffer.Det
 import Riemann.Deep.Backbone
 import Riemann.Deep.NymanBeurling.Suff
+import Riemann.Deep.Lagarias.Suff
+import Riemann.Deep.Lagarias.Salem
