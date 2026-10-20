@@ -70,4 +70,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R59 structure of hypothetical counterexamples — narrows, never empties. [R059.lean](Riemann/Tree/R059.lean)
 - Deep: Yakaboylu audit — no discovery: positivity step assumes RH; author's v17 drops the claim. [REPORT](Riemann/Deep/Yakaboylu/REPORT.md)
 - R60 gap-finding — 8 untried directions → R61. [R060.lean](Riemann/Tree/R060.lean)
-- R61 FRONTIER (next)
+- R61 untried directions — only Bethe ansatz left open. [R061.lean](Riemann/Tree/R061.lean)
+- R62 FRONTIER (next)

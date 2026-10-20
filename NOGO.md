@@ -181,3 +181,4 @@
 - R58 dynamical/scattering (horocycles, Lax–Phillips, Eisenstein, Hecke, QUE, Farey, nilsystems): spectral parameter complex; no positivity. [Lean](Riemann/Tree/R058.lean)
 - R59 minimal-counterexample structure (Robin superabundant, Nicolas primorials, zero quartets > 3e12, Mertens, Li, Lagarias, Weil, Gram): narrows, never empties. [Lean](Riemann/Tree/R059.lean)
 - R54 fix done: LagariasPositivity now quantifies over ξ(s) ≠ 0; RH_of_LagariasPositivity reproved via the pole of ξ'/ξ (honest).
+- R61 gap directions (Kuznetsov, Tate Plancherel, Dirac/heat, PSLQ, reverse math, cocycles, argument principle): dead/circular; Bethe ansatz open → R62. [Lean](Riemann/Tree/R061.lean)
