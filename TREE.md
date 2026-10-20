@@ -23,4 +23,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R17 axiom ladder — only "Euler product + FE" rung lacks counter-models. [R017.lean](Riemann/Tree/R017.lean); Báez-Duarte sufficiency [Backbone](Riemann/Deep/Backbone.lean)
 - R18 stepping stones — on-path open: quasi-RH strip, Lindelöf, density hyp., exponent < 2/3; off-path dead. [R018.lean](Riemann/Tree/R018.lean)
 - R19 quasi-RH attacks — 7 dead, 1 open (additive prime correlations). [R019.lean](Riemann/Tree/R019.lean): Mertens power saving ⇒ strip, machine-checked
-- R20 FRONTIER (next)
+- R20 stepping stones II — 6 dead, 1 circular, 1 open (Guth–Maynard → density hyp.). [R020.lean](Riemann/Tree/R020.lean); Lagarias positivity & Salem sufficiency machine-checked [Lagarias](Riemann/Deep/Lagarias/)
+- R21 FRONTIER (next)
