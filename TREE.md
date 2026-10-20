@@ -19,4 +19,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R13 exotic equivalents — 3 dead, 7 circular. [R013.lean](Riemann/Tree/R013.lean); Nyman–Beurling sufficiency formalization (ultraworker)
 - R14 composites — 7 dead, 1 circular. [R014.lean](Riemann/Tree/R014.lean)
 - R15 resurrection — 6 dead, 2 circular; no kill reversed. [R015.lean](Riemann/Tree/R015.lean)
-- R16 personas: best unexplored direction per school of thought — FRONTIER
+- R16 personas — 7 infrastructure-only, 1 circular, 2 dead. [R016.lean](Riemann/Tree/R016.lean); Nyman–Beurling sufficiency machine-checked [Suff](Riemann/Deep/NymanBeurling/Suff.lean)
+- R17 FRONTIER (next)
