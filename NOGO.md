@@ -141,3 +141,4 @@
 - R16.9 Lorentzian Jensen arrays: degree-2 known (CNV 1986).
 - R17 ladder: FE-only (DH) and Euler-only (Beurling) rungs have off-line zeros; Euler+FE rung open (≡ class GRH); classification/orthonormality/random/rigidity/finite-factor routes dead.
 - R18 off-path stepping stones: >50% on line, >19/27 simple, Λ<0.1, full pair correlation — don't constrain real parts.
+- R19 quasi-RH attacks: VMVT (constants only), parity sieves, repulsion, large values, nilsequences, exponent pairs, sieve variance — dead; additive prime correlations open & very hard.
