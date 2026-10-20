@@ -209,3 +209,4 @@
 - R100 Turán partial-sum, Pólya, Turán T(x), Mertens routes: all false (Montgomery, Haselgrove, Odlyzko–te Riele). [Lean](Riemann/Tree/R100.lean)
 - Zhang (Preprints 202108.0146 v60) audit: NO DISCOVERY — step (19) mistakes a conjugate-pair factor for a zero quadruplet; circular. [report](Riemann/Deep/Zhang/REPORT.md)
 - Hasse's theorem (odd characteristic, any cubic y² = x³ + c₂x² + c₁x + c₀): proved (Hasse.hasse) but NOT new — Meta's ATLAS formalized it 2026-10-05. [Lean](Riemann/Deep/Hasse/Main.lean)
+- Improve quasi-RH exponent: best is 0.874886647040 (Liu 2610.26835, 18 Oct 2026); not beaten (parameter-level only). [report](Riemann/Deep/QRHImprove/REPORT.md)
