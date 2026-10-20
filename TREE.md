@@ -82,4 +82,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R67 precise diagnosis of step (55) via the correct rule — no comparison function G can work. [R067.lean](Riemann/Tree/R067.lean)
 - R68 new arXiv RH claims — scarce; Ryazanov 1808.10774 revised 2026. [R068.lean](Riemann/Tree/R068.lean)
 - R69 computability angles — RH is Π⁰₁ but undecidable in practice; Lagarias form in Lean. [R069.lean](Riemann/Tree/R069.lean)
-- R70 FRONTIER (next)
+- R70 personas 2.0 — every bet needs a missing structure. [R070.lean](Riemann/Tree/R070.lean)
+- R71 FRONTIER (next)
