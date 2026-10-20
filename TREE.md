@@ -62,7 +62,7 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R52 2025–26 news — quantitative progress only; authors verified via arXiv API. [R052.lean](Riemann/Tree/R052.lean)
 - Backbone: Riesz criterion sufficiency machine-checked (`Fayed.Riesz.RH_of_rieszBound`). [Suff](Riemann/Deep/Riesz/Suff.lean)
 - R53 next sufficiency formalizations — Hardy–Littlewood launched. [R053.lean](Riemann/Tree/R053.lean)
-- R54 adversarial self-audit — Lagarias junk-value bug found (fix running); Inputs non-vacuity open. [R054.lean](Riemann/Tree/R054.lean)
+- R54 adversarial self-audit — Lagarias junk-value bug found and fixed (honest pole-based proof); Inputs non-vacuity open. [R054.lean](Riemann/Tree/R054.lean)
 - R55 self-audit II — no new serious bug. [R055.lean](Riemann/Tree/R055.lean)
 - R56 modern positivity machinery — stops at ULC; real-rootedness ≡ RH. [R056.lean](Riemann/Tree/R056.lean)
 - R57 Inputs non-vacuity plan — all three remaining fields judged true; formalization queued. [R057.lean](Riemann/Tree/R057.lean)
