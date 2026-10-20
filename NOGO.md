@@ -194,3 +194,4 @@
 - R73 objects containing ζ (Dedekind, cyclotomic, Rankin–Selberg, Eisenstein, Selberg zeta, Epstein, Artin, Galois families): never easier. [Lean](Riemann/Tree/R073.lean)
 - R74 Euler products in the strip (Conrad, Gonek, GHK, Littlewood, Goldfeld, Akatsuka–Kaneko, EP+FE, races): DH-safe but convergence ≡ RH. [Lean](Riemann/Tree/R074.lean)
 - Correction to R55: the scout's "serious" flag on Weil/Defs.lean was right — archTerm's integral swallowed −g(0) log π (junk 0); found by the WeilEF agent, fixed in 2a978b8.
+- R75 pinned: Ryazanov (4.1) periodicity; Musings §2 contour lemma; Robin-Zenodo (19) partial products < ζ(3); Q(A) Thm 4.8. [Lean](Riemann/Tree/R075.lean)
