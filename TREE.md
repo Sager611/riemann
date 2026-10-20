@@ -35,4 +35,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R29 program blueprints — open core per program; machine-checked: any of NB/BD/Lagarias/Mertens cores ⇒ RH. [R029.lean](Riemann/Tree/R029.lean)
 - R30 Euler-product positivity beyond 3-4-1 — all pole-anchored. [R030.lean](Riemann/Tree/R030.lean)
 - R31 second anchors beyond the pole — all dead; the pole is the only exclusion anchor. [R031.lean](Riemann/Tree/R031.lean)
-- R32 FRONTIER (next)
+- R32 elementary/pretentious methods — all stop at o(x) / exp-savings. [R032.lean](Riemann/Tree/R032.lean)
+- R33 FRONTIER (next)

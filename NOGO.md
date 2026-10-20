@@ -150,3 +150,4 @@
 - R28 root micro-variants (domain, G, p, T, η, averages, integers+Stolz, EM orders, ∂s, multiplicity, conj, Perron shift, p≠q, Poisson, eta): all σ₀-blind.
 - R30 Euler-product positivity (optimal trig polys, Stechkin, Landau–Ingham, Turán, Rankin–Selberg, Selberg mollifier/sieve, Landau–Page): all pole-anchored, width O(1/log t).
 - R31 second anchors (Γ poles, special values, Stirling χ, p-adic, real-segment sign, on-line zeros, shifted poles, archimedean term): none excludes zeros.
+- R32 elementary/pretentious (Selberg–Erdős, Halász, Matomäki–Radziwiłł, Wirsing, Vaughan/HB, BV/Zhang, Chowla/Sarnak, dispersion): no power saving for μ.
