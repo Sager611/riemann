@@ -206,3 +206,4 @@
 - Stenger (arXiv 1708.01209 v19) audit: NO DISCOVERY — §4 Lemmas 4.2/4.3 use a false complex Rolle theorem (a standard objection; refuted in Lean). [report](Riemann/Deep/Stenger/REPORT.md)
 - R98 bound g(log 2) by overlap length: mass can sit at both support ends, no δ-decay. [Lean](Riemann/Tree/R098.lean)
 - R98 analytic window log 2 + δ: δ tiny, weaker than certified numerical windows. [Lean](Riemann/Tree/R098.lean)
+- R100 Turán partial-sum, Pólya, Turán T(x), Mertens routes: all false (Montgomery, Haselgrove, Odlyzko–te Riele). [Lean](Riemann/Tree/R100.lean)
