@@ -163,3 +163,4 @@
 - R41 critical-line formal targets: proportions/N(T)/Z already in zeta23 (Lean); remaining: certified numerics, zero-free regions. [Lean](Riemann/Tree/R041.lean)
 - R42 beyond 2/3: density one ≠ all (DH), no quasi-RH/Lindelöf/Möbius consequence; Levinson toolkit gives density only. [Lean](Riemann/Tree/R042.lean)
 - R43 certified numerics: feasible (first zero via sign change of real Λ(1/2+it), 1k–3k lines); Turing/rectangle counting 5k+. [Lean](Riemann/Tree/R043.lean)
+- R44 breakthrough tricks (Huang, Tao EDP, Perelman, Wiles, cap set, Guth–Katz, Green–Tao, Maynard): no exact identity / monotone quantity seeing Re ρ. [Lean](Riemann/Tree/R044.lean)

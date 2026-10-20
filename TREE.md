@@ -49,4 +49,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R41 next formal targets on the line — most covered by zeta23; remaining: certified numerics, zero-free regions. [R041.lean](Riemann/Tree/R041.lean)
 - R42 beyond two thirds — proportion results cannot reach RH; zero counts and ProportionOnLine defined in Lean. [R042.lean](Riemann/Tree/R042.lean)
 - R43 certified numerics feasibility — first zero via real Λ sign change queued. [R043.lean](Riemann/Tree/R043.lean)
-- R44 FRONTIER (next)
+- R44 tricks from famous breakthroughs — none transfers. [R044.lean](Riemann/Tree/R044.lean)
+- R45 FRONTIER (next)
