@@ -211,3 +211,4 @@
 - Hasse's theorem (odd characteristic, any cubic y² = x³ + c₂x² + c₁x + c₀): proved (Hasse.hasse) but NOT new — Meta's ATLAS formalized it 2026-10-05. [Lean](Riemann/Deep/Hasse/Main.lean)
 - Improve quasi-RH exponent: best is 0.874886647040 (Liu 2610.26835, 18 Oct 2026); not beaten (parameter-level only). [report](Riemann/Deep/QRHImprove/REPORT.md)
 - Beat 0.874886647 with de Faveri-Pandey / Guth-Maynard / Chen-Gupta-Li / twelfth moment: none fills a slot of Liu system. [report](Riemann/Deep/QRHImprove/REPORT2.md)
+- R109 floor 13/15: bootstrapping, density-only, reflection to σ<1/2 dead. [Lean](Riemann/Tree/R109.lean)
