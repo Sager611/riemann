@@ -54,4 +54,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - Deep: Gershon audit — Lemma 11.6 false (Arb). [REPORT](Riemann/Deep/Gershon/REPORT.md)
 - R45 tail lemmas per family — tail ≡ RH everywhere; tail_iff machine-checked. [R045.lean](Riemann/Tree/R045.lean)
 - R46 deformation paths — none controllable; zeta_offline_pair machine-checked. [R046.lean](Riemann/Tree/R046.lean)
-- R47 FRONTIER (next)
+- R47 horizontal monotonicity — local criteria are zero-free regions in disguise. [R047.lean](Riemann/Tree/R047.lean)
+- R48 FRONTIER (next)
