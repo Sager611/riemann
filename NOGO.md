@@ -151,3 +151,4 @@
 - R30 Euler-product positivity (optimal trig polys, Stechkin, Landau–Ingham, Turán, Rankin–Selberg, Selberg mollifier/sieve, Landau–Page): all pole-anchored, width O(1/log t).
 - R31 second anchors (Γ poles, special values, Stirling χ, p-adic, real-segment sign, on-line zeros, shifted poles, archimedean term): none excludes zeros.
 - R32 elementary/pretentious (Selberg–Erdős, Halász, Matomäki–Radziwiłł, Wirsing, Vaughan/HB, BV/Zhang, Chowla/Sarnak, dispersion): no power saving for μ.
+- R33 repair Desogus induction (exact Schur gaps, continuous L, prime-power jumps, interlacing, semi-local, prolate, de Branges chain, large-L limit): all steps ⇔ all windows (machine-checked). [Lean](Riemann/Tree/R033.lean)

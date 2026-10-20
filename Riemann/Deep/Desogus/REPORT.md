@@ -44,3 +44,6 @@ Failing step: `Thm86Quant k g` (consequence of (201)); `Witness7` (the Arb fact,
 - `diag.py` (Q(e_k)), `diag_check.py` (Galerkin cross-check, λ_min of A_7 and A_8)
 
 Paper text: /tmp/riemann/desogus.txt. Referee report: /tmp/riemann/referee.txt.
+
+## Reviewer note (orchestrator)
+- Dichotomy: (201) needs A_7 ≻ 0 to define H_7. If A_7 is not ≻ 0, the base certificate 6.64 fails; otherwise (201) fails by the witness. Either way the proof breaks.
