@@ -67,4 +67,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R56 modern positivity machinery — stops at ULC; real-rootedness ≡ RH. [R056.lean](Riemann/Tree/R056.lean)
 - R57 Inputs non-vacuity plan — all three remaining fields judged true; formalization queued. [R057.lean](Riemann/Tree/R057.lean)
 - R58 dynamical & scattering equivalents — none gives leverage. [R058.lean](Riemann/Tree/R058.lean)
-- R59 FRONTIER (next)
+- R59 structure of hypothetical counterexamples — narrows, never empties. [R059.lean](Riemann/Tree/R059.lean)
+- R60 FRONTIER (next)
