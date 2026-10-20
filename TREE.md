@@ -46,4 +46,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R39 failing steps of 8 claims pinned (scout level); Yakaboylu next for an Orca audit. [R039.lean](Riemann/Tree/R039.lean)
 - Deep: Hardy 1914 machine-checked — `Fayed.Hardy.hardy`, sorry-free. [Hardy](Riemann/Deep/Hardy/) — not new: superseded by Alpöge–Furman (arXiv 2608.13637, >2/3 of zeros simple and on the line), already formalized in Lean (github.com/anthropics/formal-math, zeta23).
 - R40 Fourier optimization & bootstrap — no positivity without RH. [R040.lean](Riemann/Tree/R040.lean)
-- R41 FRONTIER (next)
+- R41 next formal targets on the line — most covered by zeta23; remaining: certified numerics, zero-free regions. [R041.lean](Riemann/Tree/R041.lean)
+- R42 FRONTIER (next)
