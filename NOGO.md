@@ -180,3 +180,4 @@
 - R57 Inputs fidelity: em17, perron33, leibniz44 judged TRUE as stated; plan leibniz44 → em17 → perron33. [Lean](Riemann/Tree/R057.lean)
 - R58 dynamical/scattering (horocycles, Lax–Phillips, Eisenstein, Hecke, QUE, Farey, nilsystems): spectral parameter complex; no positivity. [Lean](Riemann/Tree/R058.lean)
 - R59 minimal-counterexample structure (Robin superabundant, Nicolas primorials, zero quartets > 3e12, Mertens, Li, Lagarias, Weil, Gram): narrows, never empties. [Lean](Riemann/Tree/R059.lean)
+- R54 fix done: LagariasPositivity now quantifies over ξ(s) ≠ 0; RH_of_LagariasPositivity reproved via the pole of ξ'/ξ (honest).

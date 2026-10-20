@@ -28,8 +28,10 @@ def SchoenfeldBound : Prop := ∀ x : ℝ, 73 ≤ x → |psi x - x| ≤ (8 * π)
 /-- R9.3: Riemann's ξ, entire: ξ(s) = s(s-1)/2 · Λ₀(s) + 1/2. -/
 noncomputable def xi (s : ℂ) : ℂ := s * (s - 1) / 2 * completedRiemannZeta₀ s + 1 / 2
 
-/-- R9.3: Lagarias' positivity (≡ RH, cited). -/
-def LagariasPositivity : Prop := ∀ s : ℂ, 1 / 2 < s.re → 0 < (deriv xi s / xi s).re
+/-- R9.3: Lagarias' positivity (≡ RH, cited): Re ξ'(s)/ξ(s) > 0 at every non-zero of ξ in
+Re s > 1/2. The hypothesis `xi s ≠ 0` keeps Lean's junk value ξ'/0 = 0 out of the statement. -/
+def LagariasPositivity : Prop :=
+  ∀ s : ℂ, 1 / 2 < s.re → xi s ≠ 0 → 0 < (deriv xi s / xi s).re
 
 /-- R9.4: Speiser's criterion (≡ RH, cited). -/
 def Speiser : Prop := ∀ s : ℂ, 0 < s.re → s.re < 1 / 2 → deriv riemannZeta s ≠ 0
