@@ -174,3 +174,4 @@
 - R51 Hilbert–Pólya 2.0 (Berry–Keating/Sierra, BBM, Connes, Yakaboylu, LeClair–Mussardo, Remmen, de Branges, Okubo/Wu–Sprung): missing property = the whole problem. [Lean](Riemann/Tree/R051.lean)
 - R52 2025–26 news: >2/3 on line, sixth moment (de Faveri–Pandey), BTY zero-free regions, window bounds; quantitative only. Scouts misattribute authors: always check arXiv API. [Lean](Riemann/Tree/R052.lean)
 - R53 sufficiency formalization plan: Hardy–Littlewood next (Riesz pattern); Weil/Li blocked on explicit formula. [Lean](Riemann/Tree/R053.lean)
+- R54 self-audit: LagariasPositivity junk-value bug (ξ'/ξ = 0 at zeros) — fix launched; Fayed Inputs not yet inhabited (em17, perron33, leibniz44 unproved) — queued. [Lean](Riemann/Tree/R054.lean)
