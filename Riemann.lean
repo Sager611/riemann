@@ -9,3 +9,4 @@ import Riemann.Deep.NymanBeurling.Suff
 import Riemann.Deep.Lagarias.Suff
 import Riemann.Deep.Lagarias.Salem
 import Riemann.Deep.DH.FE
+import Riemann.Deep.Weil.Defs

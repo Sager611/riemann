@@ -3,3 +3,5 @@
 /tmp/
 .scratch/
 logs/
+__pycache__/
+*.pyc

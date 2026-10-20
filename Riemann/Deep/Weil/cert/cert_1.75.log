@@ -1,0 +1,22 @@
+L=1.7500000 a=0.8750 R=800.0 primes=[2, 3, 4, 5] P=4.3814986 eps=0.46523604 N=1050 n/panel=64 prec=192 bprec=1429
+  tail: ||E|| <= 1.6572e-46  (sup|w| <= 10.219)
+  quadrature: rho=2.0806 ||Delta||_F <= 4.2026e-31
+  node perturbation: max node radius 1.63e-55; ||Delta||_F <= 4.2026e-31
+    nodes 400/51200 7s
+    nodes 4400/51200 56s
+    nodes 8400/51200 91s
+    nodes 12400/51200 121s
+    nodes 16400/51200 151s
+    nodes 20400/51200 186s
+    nodes 24400/51200 217s
+    nodes 28400/51200 252s
+    nodes 32400/51200 293s
+    nodes 36400/51200 325s
+    nodes 40400/51200 354s
+    nodes 44400/51200 382s
+    nodes 48400/51200 409s
+  diag even: max radius 6.031e-55, approx lam_min(G) = 1.37816e-21
+  even: lam_min >= delta=1e-21(1-1e-3)  [residual+radius bound 1.13e-43, max entry radius 6.03e-55, 3s]
+  diag odd: max radius 6.028e-55, approx lam_min(G) = 2.12242e-18
+  odd: lam_min >= delta=1e-21(1-1e-3)  [residual+radius bound 1.13e-43, max entry radius 6.03e-55, 3s]
+RESULT L=1.7500000: CERTIFIED Q(f) >= 9.989999999999998e-22 ||f||^2
