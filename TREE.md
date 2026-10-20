@@ -86,4 +86,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R71 quantitative heat flow — upper bounds on Λ improve, Λ ≤ 0 ≡ RH. [R071.lean](Riemann/Tree/R071.lean)
 - R72 derivative zeros & a-points — the integration direction is the hard one. [R072.lean](Riemann/Tree/R072.lean)
 - R73 objects containing ζ as a factor — never easier. [R073.lean](Riemann/Tree/R073.lean)
-- R74 FRONTIER (next)
+- R74 Euler products inside the strip — DH-safe, convergence ≡ RH. [R074.lean](Riemann/Tree/R074.lean)
+- R75 FRONTIER (next)
