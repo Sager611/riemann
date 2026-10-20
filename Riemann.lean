@@ -30,3 +30,4 @@ import Riemann.Deep.Yoshida.Small
 import Riemann.Deep.Yoshida.Windows
 import Riemann.Deep.Musings.Paper
 import Riemann.Deep.Kernel.Counterexample
+import Riemann.Deep.Beta.FirstZero
