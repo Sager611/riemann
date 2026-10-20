@@ -56,3 +56,14 @@
 - R6.8 Hurwitz a-average: nothing singles out a=1.
 - R6.9 small u: D_γ bounded below. [Lean](Riemann/Tree/R006.lean)
 - R6.10 log ζ 3-4-1 inside J: Euler product needs Re>1.
+- R7.1 Ihara/Ramanujan graphs: no graph with zeta ζ.
+- R7.2 interlacing families: no finite model for Ξ.
+- R7.3 Selberg compact surfaces: ζ zeros only resonances.
+- R7.4 Goss/Newton polygons: no archimedean valuation forcing.
+- R7.5 period polynomials/Cohn: no certified self-inversive approximants.
+- R7.6 Pólya kernels: Φ not PF∞. [Lean](Riemann/Tree/R007.lean)
+- R7.7 Stepanov auxiliary polynomials: no degree count over ℤ. [Lean](Riemann/Tree/R007.lean)
+- R7.8 FUP for primes: weaker goal (quasi-RH strip), no mechanism.
+- R7.9 Lee–Yang/primon gas: no ferromagnet with Z = ξ.
+- R7.10 Deligne monodromy families: statistical only.
+- R5.1+ 100%-on-line ≠ RH: Davenport–Heilbronn has 100% (Bombieri–Hejhal, cond.) yet off-line zeros.

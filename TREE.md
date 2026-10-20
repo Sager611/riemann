@@ -9,4 +9,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
   - R3.1 Weil positivity beyond window log 2 — OPEN: R4 (7 dead, 1 promising) [R004.lean](Riemann/Tree/R004.lean); Orca deep dive [Deep/Weil](Riemann/Deep/Weil/)
 - R5 breadth: frontiers, disproof, meta — 5 dead, 2 circular, 1 open-insufficient. [R005.lean](Riemann/Tree/R005.lean)
 - R6 "Fayed + X": root identity + one global input — EXHAUSTED: 8 dead, 2 circular. [R006.lean](Riemann/Tree/R006.lean)
-- R7 transfer from proven RH analogs (graphs, Selberg, Goss, period polynomials, Pólya kernels, interlacing, FUP) — FRONTIER
+- R7 transfer from proven RH analogs — 9 dead, 1 open on a weaker goal (FUP strip). [R007.lean](Riemann/Tree/R007.lean): RH ⟺ QuasiRH ½ proved
+- R8 invention round: new mechanisms built to pass both filters (σ-blindness, Davenport–Heilbronn) — FRONTIER
