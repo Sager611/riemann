@@ -168,3 +168,4 @@
 - R45 finite base + uniform tail (Li, Jensen, Weil, Báez-Duarte, Robin, Riesz, Mertens, dBN): tail ≡ RH; base buys nothing (tail_iff). [Lean](Riemann/Tree/R045.lean)
 - R46 deformation paths (Selberg, Ihara, q-zeta, CUE, F_q curves, dBN flow, partial sums, Epstein): no controllable path; zeros leave the line only by collision (zeta_offline_pair). [Lean](Riemann/Tree/R046.lean)
 - R47 horizontal monotonicity / modulus criteria (Sondow–Dumitrescu, MSZ, Spira, Speiser, Lagarias, log-convexity, minima, Gram): local criteria = zero-free regions in disguise. [Lean](Riemann/Tree/R047.lean)
+- R48 stat-mech & transfer operators (primon gas, Knauf chain, Bost–Connes, Fisher zeros, Mayer, cluster expansions, REM, Farey Ruelle): positivity acts on another variable. [Lean](Riemann/Tree/R048.lean)
