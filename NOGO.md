@@ -177,3 +177,4 @@
 - R54 self-audit: LagariasPositivity junk-value bug (ξ'/ξ = 0 at zeros) — fix launched; Fayed Inputs not yet inhabited (em17, perron33, leibniz44 unproved) — queued. [Lean](Riemann/Tree/R054.lean)
 - R55 self-audit II: no new serious bug (two docstring nits; Weil guards adequate for WeilPos). [Lean](Riemann/Tree/R055.lean)
 - R56 modern positivity (Lorentzian, AHK Hodge, real stability, PF∞/ASWE, Toeplitz, Soergel, hard Lefschetz, multiplier sequences): stops at log-concave/ULC; real-rooted ≡ RH. [Lean](Riemann/Tree/R056.lean)
+- R57 Inputs fidelity: em17, perron33, leibniz44 judged TRUE as stated; plan leibniz44 → em17 → perron33. [Lean](Riemann/Tree/R057.lean)

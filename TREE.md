@@ -65,4 +65,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R54 adversarial self-audit — Lagarias junk-value bug found (fix running); Inputs non-vacuity open. [R054.lean](Riemann/Tree/R054.lean)
 - R55 self-audit II — no new serious bug. [R055.lean](Riemann/Tree/R055.lean)
 - R56 modern positivity machinery — stops at ULC; real-rootedness ≡ RH. [R056.lean](Riemann/Tree/R056.lean)
-- R57 FRONTIER (next)
+- R57 Inputs non-vacuity plan — all three remaining fields judged true; formalization queued. [R057.lean](Riemann/Tree/R057.lean)
+- R58 FRONTIER (next)
