@@ -67,3 +67,13 @@
 - R7.9 Lee–Yang/primon gas: no ferromagnet with Z = ξ.
 - R7.10 Deligne monodromy families: statistical only.
 - R5.1+ 100%-on-line ≠ RH: Davenport–Heilbronn has 100% (Bombieri–Hejhal, cond.) yet off-line zeros.
+- R8.1 prime-log entropy deficit: zero-weighted bound ≡RH.
+- R8.2 Euler-product GMC: moments see variance, not zeros.
+- R8.3 Euler–Choi complete positivity: Weil in Choi form.
+- R8.4 Λ-weighted GCD kernel: PSD ∀σ, σ-blind. [Lean](Riemann/Tree/R008.lean)
+- R8.5 prime heat energy: decay automatic. [Lean](Riemann/Tree/R008.lean)
+- R8.6 Morse flux of log ζ: defect ≡ no off-line zeros.
+- R8.7 additive energy of log p: bridge ≡RH.
+- R8.8 uniform ζ'/ζ bound σ>½: false (universality).
+- R8.9 prime-constrained Weil SDP: ≡ Weil positivity.
+- R8.10 Dirichlet-polynomial mean values: unconditional, zero-blind.
