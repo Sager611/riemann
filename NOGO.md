@@ -128,3 +128,11 @@
 - R14.6 Bagchi + Voronin + density: ≡RH.
 - R14.7 Hardy + symmetry: no stability.
 - R14.8 Selberg CLT + BSY: distributional only.
+- R15.1 Turán power sums: tails absorb dominant zero.
+- R15.2 Rankin–Selberg (GHL): real positivity only.
+- R15.3 AFE |χ|≠1 many shifts: density, not exclusion.
+- R15.4 self-repulsion: abundance ≠ repulsion.
+- R15.5 ζ_N amoebas: no stable limit.
+- R15.6 Fayed B̄₂-shaped G: same identity twice.
+- R15.7 subconvexity vs zeros: compatible.
+- R15.8 prolate operators: bridge ≡RH.

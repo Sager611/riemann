@@ -18,4 +18,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R12 unusual angles — 7 dead, 3 circular. [R012.lean](Riemann/Tree/R012.lean)
 - R13 exotic equivalents — 3 dead, 7 circular. [R013.lean](Riemann/Tree/R013.lean); Nyman–Beurling sufficiency formalization (ultraworker)
 - R14 composites — 7 dead, 1 circular. [R014.lean](Riemann/Tree/R014.lean)
-- R15 resurrection: re-examine quick kills with fresh angles — FRONTIER
+- R15 resurrection — 6 dead, 2 circular; no kill reversed. [R015.lean](Riemann/Tree/R015.lean)
+- R16 personas: best unexplored direction per school of thought — FRONTIER
