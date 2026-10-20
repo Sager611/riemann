@@ -77,4 +77,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R64 salvage Fayed — correct parts standard. [R064.lean](Riemann/Tree/R064.lean)
 - R65 composites II — one obstacle always survives. [R065.lean](Riemann/Tree/R065.lean)
 - Deep: first zero certified — `Fayed.FirstZero.first_zero` (14.13 < t < 14.14), sorry-free. [FirstZero](Riemann/Deep/FirstZero/)
-- R66 FRONTIER (next)
+- R66 routes to minimality — all costly; cheapest is porting zeta23's argument principle. [R066.lean](Riemann/Tree/R066.lean)
+- R67 FRONTIER (next)
