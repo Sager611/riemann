@@ -73,4 +73,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R61 untried directions — only Bethe ansatz left open. [R061.lean](Riemann/Tree/R061.lean)
 - R62 integrable systems deep dive — reduces to Hilbert–Pólya. [R062.lean](Riemann/Tree/R062.lean)
 - Backbone: Hardy–Littlewood criterion sufficiency machine-checked (`Fayed.HL.RH_of_hlBound`, absolutely summable form Σ μ(n)/n (e^{-x/n²} − 1)). [Suff](Riemann/Deep/HardyLittlewood/Suff.lean)
-- R63 FRONTIER (next)
+- R63 zeta23 reuse map — port residues + explicit formula, then Weil sufficiency (queued). [R063.lean](Riemann/Tree/R063.lean)
+- R64 FRONTIER (next)
