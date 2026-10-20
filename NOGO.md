@@ -186,3 +186,4 @@
 - Lesson (HL formalization): Σ μ(n)/n·e^{-x/n²} is not absolutely summable, so Lean's tsum = 0 would make the criterion vacuous; use Σ μ(n)/n (e^{-x/n²} − 1) (= Σ_{k≥1} (−x)^k/(k! ζ(2k+1))).
 - R64 salvage Fayed: all correct parts standard; only novelty is the false Theorem 1. [Lean](Riemann/Tree/R064.lean)
 - R65 composites II (8 pairs of earlier dead directions): one obstacle always survives. [Lean](Riemann/Tree/R065.lean)
+- R67 diagnosis of (55): weight 1−t = O(1/u) turns F'/G' ~ u^p into O(u^{p−1}); a G dropping by a fixed factor per component would make F/G ↛ 0. No G works. [Lean](Riemann/Tree/R067.lean)
