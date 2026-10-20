@@ -96,4 +96,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R78 cheap numerical milestones — ζ(1/2) < 0 launched. [R078.lean](Riemann/Tree/R078.lean)
 - Deep: first zero is the first (first_zero_is_first, no zeros below 14.13); ζ(1/2) ∈ (−1.461, −1.460); Yoshida partial: WeilPos L for L ≤ 1/16 (weilPos_small). [FirstZero](Riemann/Deep/FirstZero/) [Yoshida](Riemann/Deep/Yoshida/)
 - R79 necessity directions — bottlenecks: 1/ζ bounds under RH, Hadamard product for ξ. [R079.lean](Riemann/Tree/R079.lean)
-- R80 FRONTIER (next)
+- R80 Hadamard / 1/ζ bottleneck lemmas — ≈ 5k–12k lines total. [R080.lean](Riemann/Tree/R080.lean)
+- R81 FRONTIER (next)
