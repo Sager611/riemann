@@ -80,4 +80,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R66 routes to minimality — all costly; cheapest is porting zeta23's argument principle. [R066.lean](Riemann/Tree/R066.lean)
 - Deep: correct L'Hôpital on unions (forward direction with endpoint control) — `Fayed.LHopital.lhopital_union`; Fayed needed the false converse. [Union](Riemann/Deep/LHopital/Union.lean)
 - R67 precise diagnosis of step (55) via the correct rule — no comparison function G can work. [R067.lean](Riemann/Tree/R067.lean)
-- R68 FRONTIER (next)
+- R68 new arXiv RH claims — scarce; Ryazanov 1808.10774 revised 2026. [R068.lean](Riemann/Tree/R068.lean)
+- R69 FRONTIER (next)
