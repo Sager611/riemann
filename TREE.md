@@ -93,4 +93,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - Deep: Ryazanov audit — periodicity claim false for all n ≥ 3 (Lean). [REPORT](Riemann/Deep/Ryazanov/REPORT.md)
 - R76 what the formal Weil criterion makes cheap — Yoshida log 2 window launched. [R076.lean](Riemann/Tree/R076.lean)
 - R77 contour-topology arguments — killed by Davenport–Heilbronn. [R077.lean](Riemann/Tree/R077.lean)
-- R78 FRONTIER (next)
+- R78 cheap numerical milestones — ζ(1/2) < 0 launched. [R078.lean](Riemann/Tree/R078.lean)
+- R79 FRONTIER (next)
