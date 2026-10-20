@@ -90,4 +90,5 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - Deep: Weil criterion both directions machine-checked (`Fayed.WeilSuff.weil_criterion`); found a parenthesisation bug in our archTerm (integral swallowed −g(0) log π) — fix pending in Bridge. [WeilEF](Riemann/Deep/WeilEF/)
 - Deep: Fayed Inputs ALL proved (inputs_holds); RH_of_theorem1C : Theorem1C → RH unconditional — step (55) is the only gap. [Inputs](Riemann/Deep/Inputs/)
 - R75 pin false statements — Ryazanov (arXiv) to Orca audit. [R075.lean](Riemann/Tree/R075.lean)
+- Deep: Ryazanov audit — periodicity claim false for all n ≥ 3 (Lean). [REPORT](Riemann/Deep/Ryazanov/REPORT.md)
 - R76 FRONTIER (next)
