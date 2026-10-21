@@ -1,5 +1,7 @@
 
-"""Independent auditor for DBN4_MIXED_PORTFOLIO_V1 histories (imports no producer code).
+"""SUPERSEDED by EVIDENCE/scripts/audit_superset.py (a superset of Planat's auditor; see EVIDENCE/README.md).
+Index range checks added 2026-10-21 (before, a negative index wrapped around).
+Independent auditor for DBN4_MIXED_PORTFOLIO_V1 histories (imports no producer code).
 Checks every record: contiguity, incoming state, provider/height ownership, source floors, own-pair caps on the
 whole decreasing range, kernel domain, exact rate, outward exponential restart, dyadic lattice, terminal lag,
 initial separation and the final strip cost. Mixed kernels: geometry re-certified (certify_mix) and the
@@ -56,6 +58,7 @@ def audit(path,ev='evidence',recertify=True):
         h=F(src['plan']['rows'][i]['height']); req(F(rec['height'])==h,'height')
         v=q/h**2
         if rec['type']=='single':
+            req(type(rec['kernel']) is int and 0<=rec['kernel']<len(src['kernels']),'kernel index')
             k=src['kernels'][rec['kernel']]; r,rho,lam=F(k['r']),F(k['rho']),F(k['lambda'])
             req(v<=rho*rho and abs(h*r)<2 and 0<lam<=2,'kernel domain')
             ell=F(src['rows'][i]['r_'+k['r'].replace('/','_')]); cap=F(k['self_cap'])
@@ -63,6 +66,7 @@ def audit(path,ev='evidence',recertify=True):
             req(cap_ok(cap,r,v),'cap range')
             c=2*lam/h*(ell-cap/h); single_used.add(rec['kernel'])
         elif rec['type']=='mix':
+            req(type(rec['mix']) is int and 0<=rec['mix']<len(MK),'mixture index')
             m=MK[rec['mix']]; req(m['id']==rec['mix'] and m['cell']==i and m['provider']==pi,'mixed ownership')
             r1,r2,rho,l1,l2=F(m['r1']),F(m['r2']),F(m['rho']),F(m['lam1']),F(m['lam2'])
             req(v<=rho*rho and abs(h*r1)<2 and abs(h*r2)<2,'mixed domain')

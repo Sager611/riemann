@@ -1,0 +1,27 @@
+# Symbolic identities behind the kernel certificates (derive_identities.py, sympy 1.14.0)
+scaling: K_{hy}(hd,hb) - K_y(d,b)/h                                        -> 0
+scaling: J_{h,r}(hd,hb) - J_{1,r}(d,b)/h                                   -> 0
+evenness: K_y(-d,-b) - K_y(d,b) and J_r(-d,-b) - J_r(d,b)                  -> 0
+2K_y(d,b)/y - 4(D+v-B)/Q*   (D=d^2, v=y^2, B=b^2)                          -> 0
+Q* - (d^2+(y-b)^2)(d^2+(y+b)^2)                                            -> 0
+J_{1,r}(d,b) - 2G/D4   (R=r^2)                                             -> 0
+D4 - prod_{+-}((d+-r)^2+(1-b)^2)((d+-r)^2+(1+b)^2)                         -> 0
+one shift: 4X/Q - 2lam G/A1 - 4[X A1 - (Q/2) lam G]/(Q A1)                 -> 0
+two shifts: 4X/Q - 2l1G1/A1 - 2l2G2/A2 - 4Pmix/(Q A1 A2)                   -> 0
+homogenised block (Planat check_geometry.poly): W_h - (1-z)(D+v-B), D=z/(1-z) -> 0
+homogenised block (Planat check_geometry.poly): C_h - (1-z) C, D=z/(1-z)   -> 0
+homogenised block (Planat check_geometry.poly): A_h - (1-z)^2 A, D=z/(1-z) -> 0
+homogenised block (Planat check_geometry.poly): D4_h - (1-z)^4 D4, D=z/(1-z) -> 0
+homogenised block (Planat check_geometry.poly): G_h - (1-z)^3 G, D=z/(1-z) -> 0
+homogenised block (Planat check_geometry.poly): Q_h - (1-z)^2 Q*, D=z/(1-z) -> 0
+degree: (1-z)^5 P has W_h D4_h and Q_h G_h of total z-weight 1+4 = 2+3     -> 0
+own pair: J_{1,r}(0,b) - s_r(b^2), s_r(w) = 2(1+R-w)/((1+R-w)^2+4Rw)       -> 0
+own pair: M den - 2(1+R-w) - [M w^2 + (M(2R-2)+2) w + M(1+R)^2 - 2(1+R)]   -> 0
+own pair: den - [(1-w)^2 + R^2 + 2R(1+w)]   (so den > 0 for w >= 0, R > 0) -> 0
+ODE: q(t) = (q0+2/c)e^{-ct} - 2/c solves q' = -2 - c q                     -> 0
+terminal time: q(T) - qe with T = ln(1+z)/c, z = c(q0-qe)/(2+c qe)         -> 0
+log bound: (1+w)/(1-w) - (1+z) with w = z/(2+z)  (ln(1+z) = 2 artanh w)    -> 0
+positivity facts used: Q* > 0 unless d = 0 and b = y; D4 > 0 because 0 <= b <= y <= rho < 1 (all rho < 1 checked);
+(1-z)^n > 0 on [0,1); lcm and binomial scalings and powers of 2 are positive integers. J_r and K_y are even in d and b,
+so D = d^2 >= 0 and 0 <= B <= v cover every real d and every other zero a+ib with |b| <= y.
+RESULT all identities hold

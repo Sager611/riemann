@@ -1,0 +1,16 @@
+# Exact certificates for the 345 two-shift mixtures (step s5_mix_certs.py)
+history classical_dbn4_mix.json.gz sha256 e9c63c8a05b4dd54950e80853afd49af100f88f4028f8ac749c21cdee69ef9e2 ; mixtures 345 ; equal to dbn4/mixed_kernels.json: True
+all 345 mixtures: polynomial A == B == producer polynomial; degree <= 9; identity exact at 3 points each (1035 points)
+all 345 mixtures: lam1, lam2 >= 0; r1 != r2 among the declared shifts; 0 < rho < 1 (max rho 1148679/2500000)
+all 345 mixtures: boxes tile [0,1]^3 exactly; all directly recomputed Bernstein coefficients >= 0
+leaf boxes total 6160 ; leaf/node/depth counts equal to the producer's recorded certificate for 345 of 345
+mixtures used by the history: 343 ; mixture steps 9012
+
+## negative controls
+  mixture 0 lam1+1e-2: its boxes reject (negative Bernstein coefficient on ((5, 4), (2)
+  mixture 1 lam1+1e-2: its boxes reject (negative Bernstein coefficient on ((2, 3), (2)
+  mixture 2 lam1+1e-2: its boxes reject (negative Bernstein coefficient on ((4, 4), (0)
+  mixture 3 lam1+1e-2: its boxes reject (negative Bernstein coefficient on ((5, 4), (2)
+  mixture 4 lam1+1e-2: its boxes reject (negative Bernstein coefficient on ((2, 3), (2)
+certificate file EVIDENCE/certs/mix_leaves.txt sha256 b1f732e9ad5a6d7eec408d56502a481cb272583fd7c97f806bee2a032e0ee2f7
+RESULT all 345 mixtures certified; 137 s

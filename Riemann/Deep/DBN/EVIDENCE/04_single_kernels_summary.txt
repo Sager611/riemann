@@ -1,0 +1,35 @@
+# Exact certificates for the 843 single kernels (step s4_kernel_certs.py)
+Planat code/check_geometry.py sha256 995c8ea60792e0303cac4ccd85a9eaa13f85f64fc464354e87e326db95168cf2 (equals his SHA256SUMS.json entry)
+kernels read from the hashed evidence sources (identical in both providers): 843
+all 843 kernels: polynomial A == Planat poly == B; degree <= 5; identity exact at 3 rational points each (2529 points)
+all 843 kernels: certificate boxes tile [0,1]^3 (exact volume 1, disjoint interiors) and all Bernstein
+coefficients recomputed directly on each box are >= 0; own-pair cap valid on [0, rho^2]; 0 < rho < 1; 0 < lam <= 2
+total leaf boxes 9944 (Planat 57: 434 ; appended 786: 9510 )
+appended kernels used by the 0.148409 history: 751 distinct, all certified; original kernels used: 0
+Planat's unchanged prove() (depth cap 30): passes 830 of 843; agrees with leafcert leaf and node counts on all of them
+kernels needing a deeper subdivision than his cap 30 (his prove with only "depth>=30" -> "depth>=max_depth"):
+  index       r        rho       lambda max_depth  nodes leaves  passes then steps used
+     83  49/100  2287/5000 9998403/5000000        34     69     35         True 127
+     84  49/100    183/400 19991187/10000000        34     69     35         True 114
+     85  49/100    286/625 9992783/5000000        34     69     35         True 105
+     86  49/100 4577/10000 19979941/10000000        34     69     35         True 110
+    140   21/40  2249/5000 3989643/2000000        34     71     36         True 113
+    141   21/40 4499/10000 4985803/2500000        34     71     36         True 111
+    142   21/40       9/20 4984551/2500000        34     71     36         True 107
+    180 107/200 4467/10000 4990663/2500000        34     73     37         True 110
+    181 107/200  1117/2500 2494733/1250000        34     73     37         True 119
+    182 107/200 4469/10000 19953071/10000000        34     73     37         True 112
+    183 107/200   447/1000 9974137/5000000        34     73     37         True 84
+    200 113/200 4379/10000 4981243/2500000        34     77     39         True 12
+    287   23/40     87/200 9946811/5000000        34     75     38         True 6
+  (a cap is a resource limit: raising it cannot admit a wrong kernel, since every leaf still needs all coefficients >= 0)
+
+## negative controls
+  kernel 82 lambda+1e-4: its boxes reject (negative Bernstein coefficient on ((2, 3); Planat prove fails
+  kernel 110 lambda+1e-4: its boxes reject (negative Bernstein coefficient on ((1, 1); Planat prove fails
+  kernel 67 lambda+1e-4: its boxes reject (negative Bernstein coefficient on ((1, 1); Planat prove fails
+  kernel 514 lambda+1e-4: its boxes reject (negative Bernstein coefficient on ((14, ); Planat prove fails
+  kernel 513 lambda+1e-4: its boxes reject (negative Bernstein coefficient on ((14, ); Planat prove fails
+  forged kernel of step 3 (kernel 67 with lambda 21/10): boxes reject ; Planat prove fails
+certificate file EVIDENCE/certs/single_leaves.txt sha256 41b0c56d55e94aeae3a11048daedd8c6719c8b5538fc20c17c9d966ecc7b132e
+RESULT all 843 single kernels certified; 186 s

@@ -1,0 +1,103 @@
+# Superset auditor for the 0.148369 mixture history (step s6_superset_run.py)
+auditor generated from Planat file sha256 76bac79f402d25b727f52fb7add121acd45c55601383a4d8594238129cc04a0e ; superset file sha256 6068e1f6ec828adc91dc4655b1f62d66fac749ec744ef59afa5a25cb6c8b6faa
+lines removed when indentation is ignored: 3 -> def audit(H,S,hashes): | require(H['schema']=='PLANAT_CLASSICAL_SOURCE_PORTFOLIO_V1','History schema') | return {'schema':'PLANAT_CLASSICAL_PORTFOLIO_AUDIT_V1','PASS':True,
+wrapped history classical_dbn4_mix_v2.json.gz sha256 ff338aa9dfb136d4589722886ea94acf7d33c17ea5740629ba6166fca179c3b9 ; added keys: ['kernel_count', 'provider_steps', 'providers', 'shift_steps', 'source_bounds_are_assumptions', 'uses_continuum_shift', 'uses_seven_eighths']
+records unchanged: True 0cc2712b7fe054e0 ; mixture table unchanged: True
+certificate files: single_leaves.txt 41b0c56d55e94aea, mix_leaves.txt b1f732e9ad5a6d7e
+
+## superset audits, geometry certificates ON (every kernel and mixture used is re-certified)
+Planat classical_section7 (his 0.148612 history)   PASS=True U=148611789321711/1000000000000000 steps=19023 mixed_steps=0 geometry=True (3 s)
+dbn4 classical_dbn4 (0.148409)                     PASS=True U=148408913066829/1000000000000000 steps=18997 mixed_steps=0 geometry=True (13 s)
+dbn4 classical_dbn4_mix_v2 (0.148369)              PASS=True U=148368783506957/1000000000000000 steps=18992 mixed_steps=9012 geometry=True (45 s)
+
+## per-check calls on the 0.148369 history (all labels of the superset auditor)
+check                                          calls  mixture  fail
+Own-pair range                                 28004    18024     0
+Contiguous time steps                          18992     9012     0
+Height and incoming state                      18992     9012     0
+Full kernel domain                             18992     9012     0
+Whole source and own pair                      18992     9012     0
+Own-pair bound on entire decreasing range      18992     9012     0
+Complete positive contraction rate             18992     9012     0
+Positive decreasing restart                    18991     9012     0
+Declared dyadic lattice                        18991     9012     0
+Independent outward exponential bound          18991     9012     0
+Provider and kernel ownership                   9980        0     0
+Kernel geometry certificate                     9980        0     0
+Record type                                     9012     9012     0
+Provider and mixture ownership                  9012     9012     0
+Mixture cell and provider                       9012     9012     0
+Declared fixed shifts                           9012     9012     0
+Mixture coefficient signs                       9012     9012     0
+Mixture geometry certificate                    9012     9012     0
+Exponential argument                            2090      343     0
+Closed source time cells                        1216        0     0
+Complete source schedule                           2        0     0
+Frequency class coverage                           2        0     0
+History schema                                     1        0     0
+Source identities                                  1        0     0
+Scope                                              1        0     0
+Analytic boundary                                  1        0     0
+Substeps                                           1        0     0
+Classical initial strip                            1        0     0
+Source providers                                   1        0     0
+Strict classical time-zero separation              1        1     0
+Logarithmic argument                               1        0     0
+Independent terminal logarithm bound               1        0     0
+Terminal strip cost and wall range                 1        0     0
+Complete history                                   1        0     0
+Reported source partition                          1        0     0
+
+forged history of step 3 (kernel 67 with lambda 21/10, consistent hashes and rates): rejected: Kernel geometry certificate
+
+## negative controls on the 0.148369 history
+Planat's 9 (his function, through the superset auditor, on the all-single 0.148409 history):
+  rejected: missing strip cushion          reason: Classical initial strip
+  rejected: changed source identity        reason: Source identities
+  rejected: wrong provider                 reason: Height and incoming state
+  rejected: wrong physical height          reason: Height and incoming state
+  rejected: omitted own pair               reason: Whole source and own pair
+  rejected: inflated source floor          reason: Whole source and own pair
+  rejected: time gap                       reason: Contiguous time steps
+  rejected: downward restart               reason: Declared dyadic lattice
+  rejected: wrong external-strip status    reason: Scope
+the same 9 adapted to the 0.148369 history, plus mixture-specific controls:
+  rejected: missing strip cushion                              reason: Classical initial strip
+  rejected: changed source identity                            reason: Source identities
+  rejected: wrong provider on a mixture step                   reason: Mixture cell and provider
+  rejected: wrong physical height on a mixture step            reason: Height and incoming state
+  rejected: omitted own pair on a single step                  reason: Whole source and own pair
+  rejected: inflated source floor on a single step             reason: Whole source and own pair
+  rejected: time gap                                           reason: Contiguous time steps
+  rejected: downward restart                                   reason: Declared dyadic lattice
+  rejected: wrong external-strip status                        reason: Scope
+  rejected: mixture lam1 +1e-2, rates consistent, old boxes re-filed reason: Mixture geometry certificate
+  rejected: mixture floor1 raised by 1e-6                      reason: Whole source and own pair
+  rejected: mixture cap1 omitted (0)                           reason: Own-pair range
+  rejected: mixture cap2 lowered by 1e-9                       reason: Own-pair bound on entire decreasing range
+  rejected: mixture rho 1/100 (outside domain)                 reason: Full kernel domain
+  rejected: mixture lam1 +1e-2, all its rates made consistent  reason: Mixture geometry certificate
+  rejected: mixture lam2 made negative, rates made consistent  reason: Mixture coefficient signs
+  rejected: mixture certificate with one leaf box removed      reason: Mixture geometry certificate
+  rejected: mixture used one cell late                         reason: Mixture cell and provider
+  rejected: mixture table provider flipped                     reason: Mixture cell and provider
+  rejected: mixture height changed                             reason: Height and incoming state
+  rejected: mixture shift r1 = 1/3 (undeclared)                reason: Declared fixed shifts
+  rejected: mixture shifts equal (r2 = r1)                     reason: Declared fixed shifts
+  rejected: mixture index -1                                   reason: Provider and mixture ownership
+  rejected: mixture index 345                                  reason: Provider and mixture ownership
+  rejected: mixture table rate differs from record             reason: Complete positive contraction rate
+  rejected: record rate raised by 1e-12 on a mixture step      reason: Complete positive contraction rate
+  rejected: restart lowered by 2^-96 on a mixture step         reason: Independent outward exponential bound
+  rejected: record type unknown                                reason: Record type
+  rejected: single-kernel index -1                             reason: Provider and kernel ownership
+  rejected: mixture record in a V1-style Planat history        reason: Record type
+  rejected: reported step partition altered                    reason: Reported source partition
+  rejected: continuum-shift flag set                           reason: Scope
+  rejected: step 9000 deleted                                  reason: Contiguous time steps
+  rejected: final bound U lowered by 1e-15                     reason: Terminal strip cost and wall range
+mixture-specific and general controls: 34 of 34 rejected
+same lam1 forgery with geometry certificates OFF: PASS=True (so the certificate check is what rejects it)
+
+RESULT superset auditor: Planat 0.148612, dbn4 0.148409 and dbn4 0.148369 all PASS with every kernel and mixture
+re-certified; forged and damaged histories rejected (34 controls + 9 of Planat + forged lambda).

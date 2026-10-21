@@ -1,4 +1,4 @@
-DISCOVERY: rigorous Λ ≤ 0.148368783506957 under exactly the premises A1–A3 of the posted Λ ≤ 0.148612 (Planat arXiv:2610.18214). A cleaner variant, Λ ≤ 0.148408913066829, passes Planat's own unchanged auditor.
+DISCOVERY (conditional on the premises A1–A3 of Planat's posted Λ ≤ 0.148612, arXiv:2610.18214): Λ ≤ 0.148408913066829 is the bound backed by Planat's unchanged producer and auditor, with the new kernels proved by separate exact certificates. The sharper Λ ≤ 0.148368783506957 uses two-shift mixtures and is backed only by our superset of his auditor (all his checks plus mixture and kernel-geometry checks). Evidence: EVIDENCE/README.md.
 
 # Pushing Planat's classical-strip comparison below 0.148612 (2026-10-21)
 **What sets 0.148612.** The bound is the time for q' = −2 − c·q to take q from 1 to 10⁻⁸. Here c = (2λ/h)(ℓ − M/h), where ℓ is a source floor (A1), λ a kernel constant, M the own-pair cap and h the height. Float replays (`sens.py`, `q0sens.py`) give these sensitivities:

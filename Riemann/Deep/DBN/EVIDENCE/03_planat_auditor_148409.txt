@@ -1,0 +1,80 @@
+# Planat unchanged producer + auditor on the dbn4 sources (step s3_planat_run.py)
+producer code/produce_classical_portfolio.py sha256 5e311df16d764bf4c1395a73cd6b5e7818b5a87138fad25a4b02c23979ecfc71 (equals Planat SHA256SUMS.json entry)
+auditor  code/audit_classical_portfolio.py  sha256 76bac79f402d25b727f52fb7add121acd45c55601383a4d8594238129cc04a0e (equals Planat SHA256SUMS.json entry)
+evidence sources (from step 2): SOURCE_OLD_ENHANCED.json 235c34ae1c0efb03458a39687685451f9b2e0febbaab3d2d6ef38cf9d9cad714, SOURCE_RETUNED.json 29840261b1fee53867a61ab32c4ab1f4b81ecc588c93463b0ef28d02fcb76058
+
+## fresh producer run: U = 148408913066829/1000000000000000 = 0.148408913066829 steps 18997 (321 s)
+history sha256 e8b13ddcc455a5ed18cc60d4a022f0d63b249f19af12d7cbb50e8e421e5ec2fc ; identical to committed dbn4/classical_dbn4.json.gz: True
+
+## plain audit: PASS = True U = 148408913066829/1000000000000000 steps 18997 minimum kernel margin 5.021697120472625e-09 (14 s)
+records 18997 ; records using appended kernels (index >= 57): 18997 ; distinct kernels used 751 of which appended 751
+
+## coverage table: every check of the unchanged auditor, as executed on this history
+check (label in the auditor)               line        calls appended  fail  what it verifies
+Exponential argument                       15           3949     3949     0  0 < c dt < 1 before the exponential bound
+Logarithmic argument                       18              1        1     0  0 < z < 1 before the logarithm bound
+Own-pair range                             23          18997    18997     0  cap > 0 and v >= 0 (inside cap_ok)
+History schema                             28              1        0     0  history format is Planat V1
+Source identities                          29              1        0     0  sha256 of both source files = header hashes (binds every floor, height, kernel)
+Scope                                      30              1        0     0  no 7/8 zero-free hypothesis, no continuum shift
+Analytic boundary                          31              1        0     0  source floors flagged as assumptions (premise A1)
+Substeps                                   32              1        0     0  substeps per cell is a positive integer (32)
+Classical initial strip                    34              1        0     0  q0 = (1+1e-6)^2, initial strip q = 1, terminal q = 1e-8
+Source providers                           35              1        0     0  providers are 0 and/or 1
+Complete source schedule                   39              2        0     0  608 source rows and 608 plan rows per provider
+Frequency class coverage                   40              2        0     0  all 11 frequency classes present
+Closed source time cells                   42           1216        0     0  cell i is exactly [i/4000, (i+1)/4000]
+Contiguous time steps                      45          18997    18997     0  record n is (cell, substep) = divmod(n, 32): no gaps, no reordering
+Provider and kernel ownership              46          18997    18997     0  provider declared; 0 <= kernel index < kernel_count
+Height and incoming state                  49          18997    18997     0  q_in = previous q_out; height = source plan height of (provider, cell)
+Full kernel domain                         50          18997    18997     0  ELIGIBILITY: q_in/h^2 <= rho^2 and |h r| < 2 for the kernel used
+Whole source and own pair                  53          18997    18997     0  VALIDITY: floor and own-pair cap = source values for (provider, cell, shift)
+Own-pair bound on entire decreasing range  54          18997    18997     0  CAPS: s_r(w) <= cap for all w in [0, q_in/h^2] (exact quadratic)
+Complete positive contraction rate         56          18997    18997     0  RATES: rate = 2 lam/h (floor - cap/h) exactly; 0 < rate*dt < 1
+Strict classical time-zero separation      59              1        1     0  first step: q0 - (2 + c q0) 1e-8 > 1
+Independent terminal logarithm bound       62              1        1     0  TERMINAL: lag >= upper bound of (1/c) ln(1+z) = time from q_in to 1e-8; lag <= dt
+Terminal strip cost and wall range         64              1        1     0  TERMINAL: now + lag + 1e-8/2 <= U < 41/250 (de Bruijn strip cost; wall range)
+Complete history                           65              1        1     0  terminal record is the last record; steps = number of records
+Reported source partition                  66              1        1     0  per-shift and per-provider step counts equal the header
+Positive decreasing restart                74          18996    18996     0  1e-8 < q_out < q_in
+Declared dyadic lattice                    75          18996    18996     0  q_out is a multiple of 2^-96
+Independent outward exponential bound      78          18996    18996     0  ODE STEP: q_out >= (q+2/c) E - 2/c, E = sum_{k<=20} (-c dt)^k/k! >= exp(-c dt)
+labels in the auditor source 28 ; labels executed 28 ; failures 0
+NOT checked by the auditor (by design, Planat docstring: "Source inequalities and kernel inequalities have
+separate certificates"): (a) kernel geometry 2K_y >= lam (y/h) J -> step 4 (04_*); (b) that the source files
+equal Planat's refined sources -> step 2 (02_floor_identity.txt); (c) premises A1-A3 themselves (REPORT4).
+
+## Planat negative controls (his function, unchanged)
+  rejected: missing strip cushion          reason: Classical initial strip
+  rejected: changed source identity        reason: Source identities
+  rejected: wrong provider                 reason: Height and incoming state
+  rejected: wrong physical height          reason: Height and incoming state
+  rejected: omitted own pair               reason: Whole source and own pair
+  rejected: inflated source floor          reason: Whole source and own pair
+  rejected: time gap                       reason: Contiguous time steps
+  rejected: downward restart               reason: Declared dyadic lattice
+  rejected: wrong external-strip status    reason: Scope
+Planat negative controls: 9 of 9 rejected
+
+## extra negative controls on records that use appended kernels
+  rejected: kernel 57 (rho=917/2000) used outside its domain at step 0 reason: Full kernel domain
+  rejected: kernel index 843 (out of range)                            reason: Provider and kernel ownership
+  rejected: kernel index -1                                            reason: Provider and kernel ownership
+  rejected: floor raised by 1e-6 at step 10000                         reason: Whole source and own pair
+  rejected: own-pair cap lowered by 1e-9 at step 10000                 reason: Whole source and own pair
+  rejected: rate raised by 1e-12 at step 10000                         reason: Complete positive contraction rate
+  rejected: restart lowered by one lattice unit 2^-96 at step 5000     reason: Independent outward exponential bound
+  rejected: terminal lag set just below the auditor's log bound        reason: Independent terminal logarithm bound
+  rejected: final bound U lowered by 1e-15                             reason: Terminal strip cost and wall range
+  rejected: step 7000 deleted                                          reason: Contiguous time steps
+  rejected: source file: lambda of kernel 67 raised to 21/10           reason: Source identities
+  rejected: source file: floor (provider 0, cell 0, r=19/40) raised by 1e-6 reason: Source identities
+extra negative controls: 12 of 12 rejected
+
+## what the auditor cannot see: an invalid kernel with consistent hashes and rates
+forged history (kernel 67: lambda 2 -> 21/10, 563 records re-rated): unchanged auditor PASS = True U = 0.148408913066829
+=> expected: kernel geometry is outside the auditor; 21/10 violates the kernel inequality (step 4 rejects it;
+   the superset auditor of step 7 rejects this forged history).
+
+RESULT the 0.148408913066829 history is reproduced byte for byte by Planat's unchanged producer and passes his unchanged auditor;
+every one of its 18997 steps uses an appended kernel, so every per-step check above ran on appended kernels.

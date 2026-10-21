@@ -1,0 +1,51 @@
+# Floor identity: dbn4 evidence sources vs Planat refined sources (step s2_floor_identity.py)
+catalogue.json sha256 6857ba9b6e457be71f98da6dce825f79b7ecb43e1e671960ad39784ca8c514b5 kernels 786
+
+## provider 0 SOURCE_OLD_ENHANCED.json
+Planat refined file bytes 603614 sha256 f047655ac110ab34767aa0db61cd3802888158ca5fa6b6ce68c33d22b2d22960 (listed in SHA256SUMS.json: True )
+Planat file is already canonical json (sorted keys, compact): True
+rebuilt evidence bytes 703275 sha256 235c34ae1c0efb03458a39687685451f9b2e0febbaab3d2d6ef38cf9d9cad714
+  == hash in classical_dbn4 header: True ; == hash in classical_dbn4_mix header: True ; == recorded EVIDENCE_SHA256: True
+  == the file used in the original dbn4 run (.scratch/dbn4/evidence): True
+byte diff: common prefix 7465 bytes, common suffix 596149 bytes, prefix+suffix == whole original: True
+  => evidence = original[:7465] + insertion(99661 bytes) + original[7465:]; no original byte removed or changed
+  "kernels" array of the original closes at byte 7465 ; insertion offset 7465 ; equal: True
+  context around the insertion point: 'ho":"9/20","self_cap":"25/17"}],"plan":{"init'
+  insertion starts with ",": True ; parses as 786 kernels; equals the 786 appended: True
+  key frequency_pairs                            sha256(canonical) c3f02510e74242eb identical: True
+  key plan                                       sha256(canonical) 66e73224ffc1fc6e identical: True
+  key rows                                       sha256(canonical) 885fa6f26ef6d21f identical: True
+  key schema                                     sha256(canonical) 67580a5171beef7a identical: True
+  key scope                                      sha256(canonical) 0631d17ec1a44117 identical: True
+  key section7_uniform_finite_Weyl_refinement    sha256(canonical) a17fcf0a2f50e2d4 identical: True
+  key sharp_bands                                sha256(canonical) 085a91b18a335411 identical: True
+  key source_kind                                sha256(canonical) 1dfa558fde8df71c identical: True
+  kernels: original 57 evidence 843 ; first 57 identical: True
+  floors identical: 6080 of 6080 (608 cells x shifts 107/200,113/200,19/40,1/2,21/40,23/40,3/5,49/100,51/100,9/20); heights identical: 608 of 608
+
+## provider 1 SOURCE_RETUNED.json
+Planat refined file bytes 603824 sha256 0ee511e46d6125450e63b932b3369a44995ce386e24ef139611ed3b58e3e15eb (listed in SHA256SUMS.json: True )
+Planat file is already canonical json (sorted keys, compact): True
+rebuilt evidence bytes 703485 sha256 29840261b1fee53867a61ab32c4ab1f4b81ecc588c93463b0ef28d02fcb76058
+  == hash in classical_dbn4 header: True ; == hash in classical_dbn4_mix header: True ; == recorded EVIDENCE_SHA256: True
+  == the file used in the original dbn4 run (.scratch/dbn4/evidence): True
+byte diff: common prefix 7465 bytes, common suffix 596359 bytes, prefix+suffix == whole original: True
+  => evidence = original[:7465] + insertion(99661 bytes) + original[7465:]; no original byte removed or changed
+  "kernels" array of the original closes at byte 7465 ; insertion offset 7465 ; equal: True
+  context around the insertion point: 'ho":"9/20","self_cap":"25/17"}],"plan":{"init'
+  insertion starts with ",": True ; parses as 786 kernels; equals the 786 appended: True
+  key frequency_pairs                            sha256(canonical) c3f02510e74242eb identical: True
+  key plan                                       sha256(canonical) 22d76566b8fc3af2 identical: True
+  key rows                                       sha256(canonical) 533b7c16cbafd592 identical: True
+  key schema                                     sha256(canonical) 67580a5171beef7a identical: True
+  key scope                                      sha256(canonical) 463ff11cdd48da3f identical: True
+  key section7_uniform_finite_Weyl_refinement    sha256(canonical) a17fcf0a2f50e2d4 identical: True
+  key sharp_bands                                sha256(canonical) 085a91b18a335411 identical: True
+  key source_kind                                sha256(canonical) 1dfa558fde8df71c identical: True
+  kernels: original 57 evidence 843 ; first 57 identical: True
+  floors identical: 6080 of 6080 (608 cells x shifts 107/200,113/200,19/40,1/2,21/40,23/40,3/5,49/100,51/100,9/20); heights identical: 608 of 608
+
+## floors and heights consumed by the histories, compared with Planat's ORIGINAL refined files
+classical_dbn4 (0.148409)        records 18997: floors compared 18997, heights 18997, own-pair caps 18997, mismatches 0
+classical_dbn4_mix (0.148369)    records 18992: floors compared 10666, heights 19335, own-pair caps  9980, mismatches 0
+RESULT floor identity holds byte for byte; the only change is the appended kernel list

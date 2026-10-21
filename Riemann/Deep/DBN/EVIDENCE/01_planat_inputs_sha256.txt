@@ -1,0 +1,59 @@
+# Planat arXiv:2610.18214v1 source: authenticity of every file used (step s1_inputs.py)
+tarball https://arxiv.org/e-print/2610.18214v1 bytes 9624857 sha256 4599b663fe3c0913b78c445834b93ff2721e33e819601185a43bb88dd226ed5b expected 4599b663fe3c0913b78c445834b93ff2721e33e819601185a43bb88dd226ed5b MATCH
+SHA256SUMS.json sha256 2b979d6313c3901e998da718b8edab307d60b35483b428492ee9be82a59e8ab4 entries 54
+file (Planat SHA256SUMS.json)                            bytes sha256                                                           how checked
+NUMERICAL_RESULT.json                                      639 cb9917d5009098e955c7cfa30bf1cc53a5ca759a921b9678f794df34878ba496 file bytes OK
+README.md                                                 5949 94f5de2f6b55f34a61208ea0b9eec3eb157d5c17a9b1f8fce7fcf0c8b7505d64 file bytes OK
+code/arb_native.py                                        4664 833caa25567b1a4d646bd0ca8a2975c566ffc57f3767e17331fe3376928396a7 file bytes OK
+code/audit_classical_portfolio.py                         7122 76bac79f402d25b727f52fb7add121acd45c55601383a4d8594238129cc04a0e file bytes OK
+code/check_cone_fixture.py                                2579 a2a8729a129182b712a08781a6875c5392399d214ad25a0518f34eb003f6b075 file bytes OK
+code/check_geometry.py                                    4726 995c8ea60792e0303cac4ccd85a9eaa13f85f64fc464354e87e326db95168cf2 file bytes OK
+code/check_mass_fixture.py                                1706 34d5887940c7bac5fca75e965f4e60e6c51078dbea4aa9aed4e2e1f54abd8691 file bytes OK
+code/check_matched_tail.py                                2634 29ebffec65245a4ce10c3f991d1c2d1c0ee4586bfc2c1fc5ea73d69865977042 file bytes OK
+code/check_section7.py                                   13513 a2a64862fad771e2b0529bf468b63b36d77b8c0fd14078a81d841599031c0ecc file bytes OK
+code/directed_tail.py                                    12229 ade362e01f092b10780fcaa33d2a388d741b51b3cf94ff08a855cd3fe484a082 file bytes OK
+code/float_hint.py                                        2377 0b0c3fea0a38de984a495212e85f6a91795e9703632913c2fa43c7220d4248ab file bytes OK
+code/produce_classical_portfolio.py                       5523 5e311df16d764bf4c1395a73cd6b5e7818b5a87138fad25a4b02c23979ecfc71 file bytes OK
+code/setup_runtime.py                                     2574 bf5ad110472e095ab60dfca13c098944471688ebe850fd36ab7e2b877b2acba0 file bytes OK
+histories/CLASSICAL_COMPARISON_RESULTS.json               3573 63396fc515375b860e3ed59cc90e8d09eb764007f5d4c76ffe97047339c4cc0f file bytes OK
+histories/NEGATIVE_CONTROLS.json                          1058 caa84f7a7f08632ebd8bb8768c2d2d2aadd5a113991806b348500dae4bc0fc3f file bytes OK
+histories/classical_new_kernels.json.gz                 511031 6cac3a29b04f79ef3f09697c6fec5ad947a670bb6c09e157166777aa791b3638 gzip -9 of arXiv-decompressed member OK
+histories/classical_new_kernels_AUDIT.json                 707 aca7c9784b3ae8bcef351afe5b4f62ac0819d5f80e18b37668bb2293a2762176 file bytes OK
+histories/classical_new_kernels_RESULT.json               1098 5f258728be15946fac4d7139f3e95e3d726f6878dd2ec6618df1cc273598cede file bytes OK
+histories/classical_old_kernels.json.gz                 511723 a304d6f5dc5ad0f0b9397290a6b28fc42f771ea4f74d185fd393503331eaded7 gzip -9 of arXiv-decompressed member OK
+histories/classical_old_kernels_AUDIT.json                 710 28dff6da88712b2d97bd4202ca6d4c9af526d49ee7bcb215921f67cc5daed18b file bytes OK
+histories/classical_old_kernels_RESULT.json               1101 7f545d6aace004feab90935bc92f5dec42a2ba411174288a4791a37dac2ec1fd file bytes OK
+histories/classical_section7.json.gz                    510761 90d120c378589ca7f7e68508a4037c2a9e1b3245f403386dad3d36da9dc215b0 gzip -9 of arXiv-decompressed member OK
+histories/classical_section7_AUDIT.json                    688 e3e01a2635429d02851e2aba0624077b0829948eb19b1020592b58721c2633b8 file bytes OK
+histories/classical_section7_RESULT.json                  1117 e0020dcf50cb4ad55d66f863ebc2a162e6ca3001a1dfde1487afadcf3e0b1cbc file bytes OK
+histories/classical_two_sources.json.gz                 511126 6107489584d9fba824f8b487ee7eb20c23938f3a58b42d8536e9e294d91bb51f gzip -9 of arXiv-decompressed member OK
+histories/classical_two_sources_AUDIT.json                 718 9c077ffa0e2d15da8a31cab23ac8b9ab9ebebbe9364c36e1f05bc8e4fddfcc5b file bytes OK
+histories/classical_two_sources_RESULT.json               1118 2875d0bf47cb5cee72bf3fef7dc83172fd95cbf34ea85efbe2c381ad11e1a643 file bytes OK
+inputs/DIRECTED_192.json.gz                             208558 0e4358f3526dd753e4452174f34c086a99493446394efd8c9579677a08d0623f gzip -9 of arXiv-decompressed member OK
+inputs/DIRECTED_256.json.gz                             208446 81e17c4a63cfe33ce94039e04b2c4d9aa48fa8659cb1062f648f4daa11b7d51f gzip -9 of arXiv-decompressed member OK
+inputs/EXACT_PARENT_CASES.json.gz                      1010449 a1ae96ead1dc19cbc29f3f21c1a1aff229934f303e87c63691ab767eba878e42 gzip -9 of arXiv-decompressed member OK
+inputs/TAIL_SETTINGS.json                                30660 90263279f00f414323e51674877f589ae412129d835c0287d9bbd3bbcb7aa25c file bytes OK
+inputs/original/SOURCE_OLD_ENHANCED.json                796953 9f1d9952ba8a4bc6769b3df4cfead04059df4d6f241be3a3d1918f9c10d8d0f6 file bytes OK
+inputs/original/SOURCE_RETUNED.json                     797304 786fe395cbc5fd4e364e27d4085e30255e1926f9d2c88819aa8461d3cd99adc9 file bytes OK
+inputs/refined/SOURCE_OLD_ENHANCED.json                 603614 f047655ac110ab34767aa0db61cd3802888158ca5fa6b6ce68c33d22b2d22960 file bytes OK
+inputs/refined/SOURCE_RETUNED.json                      603824 0ee511e46d6125450e63b932b3369a44995ce386e24ef139611ed3b58e3e15eb file bytes OK
+receipts/ANALYTIC_SAFETY.json                             1988 e3403ae1d6ffefb4554dc72573d40ba687ce330e57d17ad9d78a634fa2c6d2cd file bytes OK
+receipts/ARXIV_FINITE_CERTIFICATE_CHECK.json             25158 deee964c11bb9c2df68a0c336b0bd0bbfc7b0a37dcc0c80fc901de76a5fcce76 file bytes OK
+receipts/EXECUTION_RECEIPT.json                           4341 682b3873b1767ea6bbd5809d29cba84af2a27da5bd8518253c48678a6329fef0 file bytes OK
+receipts/FINAL_AUDIT_V1.json                              4455 8ce6bab41455b173c0c78475a9693dd85727701533712be257b540d52a236bd8 file bytes OK
+receipts/FULL_JMAA_REPRODUCTION.json                     25156 34f180b7bb7b3dd359b391aec8aa192df8faada18ef28fe8867553cc141ab40c file bytes OK
+receipts/GEOMETRY_57.json                                17367 4c98de36df6ef4f292b747ec7efdecb12796af051759b2d1560edc170b8ba8d1 file bytes OK
+receipts/MANUSCRIPT_CHECKS_V1.json                         394 cf09be39531790faceded1f190e300eec96b80beb797e98facafeaa88a24f8f5 file bytes OK
+receipts/MANUSCRIPT_RECONCILIATION.json                    368 353a05b72df6aa1ee3d0e31f90ca5bf6b99baa31f35fa0487054a0af93595ae9 file bytes OK
+receipts/MATCHED_TAIL_CHECK.json                           414 2f22dcd8287218420bc54bbd85e302a97cfa365ca04c443a3af8013e3cb91d78 file bytes OK
+receipts/REPRODUCTION_V1.json                             4455 4a7e025c846a1f59fc21e334ab1eea43920af37f0d28fe0c511ae1c32add5ea2 file bytes OK
+receipts/SECTION7_CONE_FIXTURE.json                        317 fa7ce7a1bb797fc8e04e835206750ad56fd39d5b2cfa02766b75b6f0e5779f42 file bytes OK
+receipts/SECTION7_GEOMETRY_57.json                       17367 599b51015055c91037cd7d2e907db53239a093e0c8c959f854ba4088d8e4717a file bytes OK
+receipts/SECTION7_MASS_FIXTURE.json                       2225 ef67860ab9cfb82b3e6497de153e6770facf33572f0f66a2b463254c4edfe128 file bytes OK
+receipts/SECTION7_REPRODUCTION.json                      23086 e9dbecabdad99a5fef4939526fdf488807e3180f0d119f9645c000c64acd8364 file bytes OK
+receipts/SECTION7_SECTION7_SOURCE_AUDIT.json.gz        5479426 6a37c3c723bb746cad0356276d0abf2d4c2ab232aa0e7b4c94b2dad2bda9499f gzip -9 of arXiv-decompressed member OK
+receipts/SOURCE_REBUILD_RECEIPT.json                       711 b4adca159295e56efcf60e65011c79456ebc3cf45395dd2a2ac518d06c905b7d file bytes OK
+receipts/main_alternate_AUDIT.json                        1080 141e3df321f91fa8073b0510517f6a442f4959c767d5033846353eb1b76edf41 file bytes OK
+receipts/main_primary_AUDIT.json                          1044 b4ceb86b1017b18d7dc37e0d02ffb4a41b12f9480ec968fe776376de8f4315df file bytes OK
+verify.py                                                 5399 95946e5b09078ffbce25330b63cb204110e56accb2c9e142a2db8ef17c4a76ab file bytes OK
+RESULT 54 of 54 entries match
