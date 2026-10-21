@@ -6,7 +6,9 @@ Date 2026-10-21. Brief: `.scratch/orca/rcapps3-brief.md`. Files in `.scratch/rca
 computed by brute force over all orders, §7), `thresh.py` (thresholds), `notes0.md`–`notes2.md` (working notes), `ax*.xml`,
 `ax3_queries.txt`, `axparse*.py`, `gxl3_*.json`, `rutgers.txt` (novelty). References: [C] = [Combos NOTE](../Combos/NOTE.md), [D2] = [Density2 NOTE](../Density2/NOTE.md),
 [R] = [RCApps NOTE](../RCApps/NOTE.md), [R2] = [RCApps2 NOTE](../RCApps2/NOTE.md). Paper proofs, not refereed, no Lean, no
-2026 half-planes.
+2026 half-planes. Review (2026-10-21): correct in substance; its corrections are applied below (Lemma 2: X ≥ 32; Lemma 4:
+c₁ = c₁(δ); Lemma 7: cube-free M; §3: no size claim for the uncancelled pole residue; §5 step 4: inherited errors).
+Novelty: [NOVELTY.md](./NOVELTY.md).
 
 ## Verdicts
 
@@ -45,7 +47,7 @@ T_p = 0 and T_{p²} = [(p)] = 1, so T_p² = T_{p²} − 1; if p ramifies, T_p = 
 T_p² = T_{p²} + (Δ/p). If p | f then T_p = T_{p²} = 0 and (Δ/p) = 0. Hence T_g² = Π_{p|g}(T_{p²} + (Δ/p)) = Σ_{c|g}(Δ/c)T_{(g/c)²},
 and T_nT_{n'} = T_{mm'}T_g². □
 
-**Lemma 2 (the dual identity).** Let b be supported on admissible n, X ≥ 1, and S_C := Σ_n b(n)[C](T_n) = Σ_{𝔞∈C}b(N𝔞). Then
+**Lemma 2 (the dual identity).** Let b be supported on admissible n, X ≥ 32, and S_C := Σ_n b(n)[C](T_n) = Σ_{𝔞∈C}b(N𝔞). Then
 (i) Σ_{χ∈Ĝ_Δ}|Σ_n b(n)λ_χ(n)|² = h(Δ)Σ_{C∈G_Δ}|S_C|²;
 (ii) 𝒬(b) := Σ_{Δ∈𝒟, |Δ|>4}Φ(|Δ|/X)Σ_{C∈G_Δ}|S_C|² = ½ Σ_{n,n'}b(n)b̄(n') Σ_{c,w: cw|(n,n'), (c,w)=1} μ(w) 𝒩_c(nn'/(cw)²; X/w²),
 where for M ≥ 1, X' > 0 and odd squarefree c,
@@ -60,7 +62,8 @@ O_Δ. Write M_c = mm'r², r = g/c. If p ∥ M_c and p | f, no γ exists (p² | �
 v_p(4M_c) = 1), so on the support 1[(M_c,f)=1] = 1[(r,f)=1] = Σ_{w|r}μ(w)1[w|f] = Σ_{w|r}μ(w)1[w²|Δ]. For w | r the map
 (T,y,Δ) ↦ (T/w, y, Δ/w²) is a bijection from the solutions of T² − Δy² = 4M_c with w² | Δ onto the solutions of
 T₂² − Δ₂y² = 4M_c/w² (w² | Δy² and w² | 4M_c give w | T; w is odd, so parities and Δ₂ ≡ Δ (mod 4) are preserved), and
-(Δ/c) = (Δ₂/c) since (c, w) = 1, Φ(|Δ|/X) = Φ(|Δ₂|/(X/w²)). The terms |Δ| ≤ 4 are absent because Φ(|Δ|/X) = 0 for X ≥ 32. □
+(Δ/c) = (Δ₂/c) since (c, w) = 1, Φ(|Δ|/X) = Φ(|Δ₂|/(X/w²)). The terms |Δ| ≤ 4 are absent because Φ(|Δ|/X) = 0 for X ≥ 32; this is where X ≥ 32 is needed (for X ≤ 16 the right
+side would also count Δ = −3, −4 with w = 1, where O_Δ^× ≠ {±1}). □
 
 *Check.* `dualcheck.py` (5 coprime pairs; its 4 pairs with (n,n') > 1 show that the naive lattice count fails there),
 `dualcheck2.py` (Lemma 1 summed over Δ, 7 pairs) and `dualcheck3.py` (Lemma 2 with a sharp range of Δ, 16 pairs incl. n = n' and
@@ -106,13 +109,14 @@ zero of L(s,χ) with σ ≤ β ≤ 9/10. Put c₀ := (2^{1/5} − 1)/8. Then eit
 (I) |Σ_j F_j(χ,ρ)| ≥ c₀, j over 2^{j+1} > V, 2^{j−1} < Z, where
   F_j(χ,ρ) := Σ_{n adm.}a_V(n)λ_χ(n)[φ(n/2^j)n^{−ρ}e^{−n/Y} − ℓ²φ(ℓ²n/2^j)(ℓ²n)^{−ρ}e^{−ℓ²n/Y}]
   (φ the dyadic partition of unity of [C] Theorem 1); or
-(II) ∫_R|𝒢^F(½+δ+i(γ+u),χ)|e^{−|u|}du ≥ c₁Y^{β−1/2−δ}, c₁ > 0 absolute.
+(II) ∫_R|𝒢^F(½+δ+i(γ+u),χ)|e^{−|u|}du ≥ c₁Y^{β−1/2−δ}, c₁ = c₁(δ) ≫ δ.
 
 *Proof.* As [C] Lemma 5 for 𝒢^F(s,χ) = Σ_n c_nn^{−s}, c_n := 1_{adm}(n)a_V(n)λ(n) − ℓ²1_{adm}(n/ℓ²)a_V(n/ℓ²)λ(n/ℓ²):
 (2πi)^{−1}∫_{(2)}𝒢^F(ρ+w)Γ(w)Y^wdw = Σ_n c_nn^{−ρ}e^{−n/Y}. Moving to Re w = 1/2 + δ − β < 0 crosses only w = 0, with residue
 𝒢^F(ρ) = 0 (Lemma 3(a)). By Lemma 3(b) the left side is e^{−1/Y} − ℓ^{2−2ρ}e^{−ℓ²/Y} + Σ_j F_j(χ,ρ) + (tail n > Z, ≤ c₀ for
 |D| ≥ D₀), and |e^{−1/Y} − ℓ^{2−2ρ}e^{−ℓ²/Y}| ≥ |F(ρ)| − 2ℓ²/Y ≥ 8c₀ − o(1) by Lemma 3(d). If (I) fails, the right side, which is
-≤ (2π)^{−1}∫|𝒢^F(½+δ+i(γ+u))||Γ(½+δ−β+iu)|Y^{1/2+δ−β}du, is ≥ 4c₀; Stirling gives (II). □
+≤ (2π)^{−1}∫|𝒢^F(½+δ+i(γ+u))||Γ(½+δ−β+iu)|Y^{1/2+δ−β}du, is ≥ 4c₀. Since Re(½+δ−β+iu) ∈ [−2/5+δ, −δ] can lie within δ of the pole of Γ at 0, Stirling only gives
+|Γ(½+δ−β+iu)| ≤ Cδ^{−1}e^{−|u|}; hence (II) with c₁ = 8πc₀δ/C (the constant C(δ) of Theorem 2, class II, absorbs 1/c₁). □
 
 **Removing β; the class I sequences.** As in [C] Theorem 1, with φ₂ ∈ C_c^∞((1/4,4)), 0 ≤ φ₂ ≤ 1, φ₂ = 1 on supp φ (inserted
 for free) and Φ_β(v) := φ(v)v^{σ−β} (smooth, compact support, uniformly for 0 ≤ β − σ ≤ 1/2, so |Φ̂_β(τ)| ≤ C_A(1+|τ|)^{−A}):
@@ -139,7 +143,9 @@ V/4 ≤ N ≤ X^{1−4δ}. Let b be b_{j,t'} or ∂_{t'}b_{j,t'} (§2). Then
   Σ_{D∈𝔇(X)}Σ_{χ∈Ĝ(D)}|Σ_n b(n)λ_χ(n)|² ≤ C(δ)X^{40δ}(X^{3/2} + N³X^{−1})N^{1−2σ}.
 
 For comparison, the per-D sieve ([C] Lemma 2) gives X(N + X^{1/2})N^{1−2σ}, and the left side is ≥ the trivial-character
-terms Σ_D|Σ_n b(n)r_D(n)|², which for a weight without (Z) are ≍ X N^{2−2σ}(log V)^{−2} (numerics: §7). Write ‖b‖² := N^{1−2σ}.
+terms Σ_D|Σ_n b(n)r_D(n)|². Without (Z) these carry the pole of ζ(s)L(s,χ_D); for the mollified b its coefficient is a
+truncated Möbius sum, whose size is not estimated here; numerically the unmollified pole-carrying sequences grow like N/√X
+relative to X^{3/2}‖b‖² (§7). Write ‖b‖² := N^{1−2σ}.
 All b considered satisfy |b(n)| ≤ C log(2N)·d(n)n^{−σ}, supp b ⊂ [N/(4ℓ²), 4N], so Σ_n d(n)^A|b(n)|² ≤ C(A)X^{δ}‖b‖².
 
 ### 3.1 Positivity and the dual identity
@@ -198,7 +204,8 @@ gives the formula. □
 For c, w with w ≤ G₂ and admissible n₂, n₂' ≤ 4N/(cw) prime to c: M = n₂n₂' ≤ 16N²/(cw)², so 64c√M X^δ ≤ 256NX^{δ}/w ≤
 X/w² = X' (w ≤ G₂ = X^{1−2δ}/(64N)). Lemma 6 applies.
 
-**Lemma 7 (local densities).** For odd M, A_M(y) = A^{(2)}_M(2^{v₂(y)})·Π_{p^k∥y, p odd}A_M(p^k), where A^{(2)}_M(1) = A^{(2)}_M(2) = 1,
+**Lemma 7 (local densities).** For odd M with p³ ∤ M for every p (as M = n₂n₂' with n₂, n₂' squarefree, the only case used;
+the list below does not cover p³ | M), A_M(y) = A^{(2)}_M(2^{v₂(y)})·Π_{p^k∥y, p odd}A_M(p^k), where A^{(2)}_M(1) = A^{(2)}_M(2) = 1,
 A^{(2)}_M(4) = 2·1[M ≡ 1 (4)], A^{(2)}_M(2^a) = 4·1[M ≡ 1 (8)] (a ≥ 3); and for odd p, k ≥ 1: A_M(p^k) = 1 + (M/p) if p ∤ M,
 0 if p ∥ M, p if p² ∥ M and k = 1, p(1 + ((M/p²)/p)) if p² ∥ M and k ≥ 2.
 
@@ -299,8 +306,10 @@ Res_{s'=1}𝒟·κ^{−s}(N/κ)^{1−s}Ŵ(1 − s), and Ŵ(1 − s) = ∫W(v)v^{
 The y = 0 terms (n₂ = n₂', Lemma 5(a)) give Σ_{c,w}4(X/w²)Σ|b(cwn₂)|² ≪ X^{2δ}X‖b‖². With §3.3, §3.6, §3.7:
 Σ_{c,w}|Q_{c,w}| ≪ X^{12δ}(X + N³X^{−3/2})‖b‖², and §3.1 gives Theorem 1 (with room in the exponent of X^δ). □
 
-*Remarks.* (1) Without (Z) the residue in Lemma 9 is ≍ N^{1−σ}κ^{−1}(log V)^{−1} for q = 1, and 𝔐_{c,w} contains
-√X·|Σ_n b(n)|²-type terms of size √X N^{2−2σ}(log V)^{−2}: the trivial character's contribution; this is the X·N of the per-D sieve.
+*Remarks.* (1) Without (Z), Lemma 9 has a residue at s' = 1 for q = 1, of modulus ≤ CN^{1−σ}κ^{−1}|R_κ| with
+R_κ := Σ_{k₁|κ}μ(k₁)Σ_{k₂≤V/k₁ adm., (k₂,κ)=1}μ(k₂)k₂^{−1}Π_{p|k₂}(1+p^{−1})^{−1}, a truncated Möbius sum whose size is
+not estimated (no ≍ claim is made); 𝔐_{c,w} then contains √X·|Σ_n b(n)ψ(n)|²-type terms: the trivial character's contribution,
+which for unmollified b is the X·N of the per-D sieve.
 (2) The only place where the size of N enters beyond X^{1−4δ} is G₂ (Poisson needs X' ≫ c√M): pairs n, n' sharing a factor w > G₂ are
 bounded trivially in §3.3. This costs N³X^{−3/2}, and is the only obstruction to the full family size (§6).
 
@@ -342,13 +351,15 @@ Z^{4−2σ}X^{−1} ≤ C X^{(5/(7−2σ))(4−2σ)−1} = CX^{(13−8σ)/(7−2
 such that all D ∈ 𝔇 with |D| ≤ X, outside a set of size ≪_A X^{1−c}, satisfy (2.1) of [R] for every class C, every x ≥ |D|^A
 and every H ∈ [x|D|^{−κ}, x]. In particular every primitive positive definite binary quadratic form of discriminant D represents
 a prime ≤ 2|D|^A, and (Corollary) for all but O(N^{1−c}) squarefree n ≤ N with n ≡ 1, 2 (mod 4) the least prime a² + nb² is
-≤ 2(4n)^A, and (x, x + x(4n)^{−κ}] contains such a prime for every x ≥ (4n)^A.
+≤ 2(4n)^A, and (x, x + x(4n)^{−κ}] contains such a prime for every x ≥ (4n)^A. (For the least prime alone, Baier–Zhao,
+Math. Ann. 338 (2007), give a prime m² + n < 4n for all but O(N(log N)^{−C}) squarefree n ≤ N; the corollary adds the power-saving
+exceptional set and the short intervals.)
 
 A₀ is where the two family bounds meet the Markov bar: with F₁(σ) := (13−8σ)/(7−2σ) (Theorem 2) and F₂(σ) := 10(1−σ)/(3−2σ)
 ([R] Prop 1), F_i(σ) < 1 + A(1−σ) ⟺ A > 6/(7−2σ) resp. A > 10/(3−2σ) − 1/(1−σ); these are equal at σ_c = 5 − √69/2 = 0.84669,
 where both are (3+√69)/10 (σ_c is the smaller root of 4σ² − 40σ + 31 = 0). `thresh.py` checks this and the sup over a grid.
 
-*Proof.* [R] §2 (with [R2]'s bookkeeping), with three changes; it suffices to treat A₀ < A ≤ 1.2.
+*Proof.* [R] §2 (with [R2]'s bookkeeping), with four changes; it suffices to treat A₀ < A ≤ 1.2.
 1. *Parameters.* Put ε' := (1 − σ_c)(A − A₀)/8, δ := min{ε'/100, (A − 1)/80, A/4400}, κ := δ/4, ε₀ := ε₁ := δ/100,
    σ₀ := 1/2 + 4δ, σ_j := σ₀ + jε'/A (0 ≤ j ≤ J, J minimal with σ_J ≥ 1 − ε'/A); σ_g, T_X, Q₀ as in [R] §2.1.
 2. *E₁ (Markov).* E₁(X) := {D ∈ 𝔇(X) : some j has N^c_D(σ_j, T_X) > X^{A(1−σ_j)−2ε'}}. For every σ ∈ [σ₀, 1),
@@ -360,8 +371,13 @@ where both are (3+√69)/10 (σ_c is the smaller root of 4σ² − 40σ + 31 = 0
    61δ and the T_X-powers are ≤ ε').
 3. *Zeros with β < σ₀ ([R] §2.4(b)).* Each unit window holds ≤ C|D|^{1/2}log³(3|D|)log(|k|+3) zeros of all χ ∈ Ĝ(D) ([C] Thm 1(b)),
    and x^{β−1} ≤ x^{σ₀−1} ≤ |D|^{−A(1/2−4δ)}. Summing over |k| ≤ T₁: E_b ≤ H|D|^{1/2−A/2+5δ+κ+ε₁+o(1)} ≤ H|D|^{−(A−1)/2+6δ}.
-Everything else ([R] §2.2 E₂, §2.3, §2.4(a),(c)–(f), §2.5) is unchanged; the conclusion needs ε' > δ/2, (A−1)/2 − 6δ > δ/2 and
-0.005A − κ − ε₁ > δ/2, which hold by the choice of δ. The corollaries follow as in [R] §3 and [R2] Corollary 4′ (D = −4n,
+4. *Inherited errors ([R] §2.4(e), (f)).* [R] evaluated them at A > 1.65; for general A the zeros with β ≤ 39/40 in (e) give
+   HQ₀³x^{−1/40}log Q₀ ≤ H|D|^{3δ−A/40+o(1)} (not H|D|^{−0.04}), and (f) gives Σ|R| ≤ C(h + 2^{ω(D)})(H/x + x^{−1/2})log(|D|x)
+   ≤ H|D|^{1/2−A+o(1)} (not H|D|^{−1}). Both still suffice: [R] §2.5 needs them ≤ H|D|^{−δ/2−η}, and 3δ − A/40 ≤ −107A/4400
+   < −0.027, 1/2 − A < −0.63, while δ/2 < 0.0002. (E_c ≤ H|D|^{−1} does not involve A; the prime-power term of [R] §2.5 needs
+   x ≥ |D|^{1+2δ}, true for A > 1.13.)
+Everything else ([R] §2.2 E₂, §2.3, §2.4(a),(c),(d), §2.5) is unchanged; the conclusion needs ε' > δ/2, (A−1)/2 − 6δ > δ/2,
+0.005A − κ − ε₁ > δ/2 and the two bounds of step 4, which hold by the choice of δ. The corollaries follow as in [R] §3 and [R2] Corollary 4′ (D = −4n,
 principal class). □
 
 Sectors ([R2] Theorem 3′, angular Hecke characters) and D > 0 ([R2] Theorem 4) are not improved: Theorem 1 is proved only for
@@ -401,7 +417,8 @@ with / without the ℓ-term; prime = primes, no ℓ-term; rand = random signs. R
 | 20000 | 30000 | 0.115 | – | – | 27.07 | – | 0.148 |
 | 80000 | 16000 | 0.120 | – | – | 7.377 | – | 0.132 |
 
-Pole-carrying sequences grow like N/√X (the trivial-character term √X(Σ b)², ratio 𝒬/(√X(Σ|b|)²) ≈ 0.42 for sqf throughout);
+Pole-carrying sequences grow: sqf like N/√X (the trivial-character term √X(Σ b)², ratio 𝒬/(√X(Σ|b|)²) ≈ 0.42 throughout),
+prime consistently with N/(√X log N), molnokill differently (its pole coefficient is a truncated Möbius sum, §3 Remark (1));
 pole-killed ones stay at the level of random signs, i.e. at the family size, even for N up to 1.5X (beyond what Theorem 1 proves).
 Since max h(Δ) ≍ √X log X, 𝒬 ≈ 0.12X‖b‖² corresponds to Σ_{(D,χ)}|P|² ≈ X^{3/2}‖b‖².
 
@@ -420,10 +437,15 @@ Since max h(Δ) ≍ √X log X, 𝒬 ≈ 0.12X‖b‖² corresponds to Σ_{(D,χ
 - None of these has a family large sieve at the family size, a density estimate on average over D below [R], or an almost-all
   exponent below 3/2 ([R2], ours).
 - The ingredients are classical (Hecke relations, positivity, Poisson summation, Heath-Brown's quadratic large sieve, Jutila's mean
-  value). New here: (i) the dual identity of Lemma 2 (all orders at once turn the dual of the family sieve into a plain lattice-point
-  count with no class numbers and no squarefree condition); (ii) the pole-killing weight w(v) − ℓ^{2−2σ−2it'}w(ℓ²v), which removes
+  value). New here: (i) the exact form of the dual identity, Lemma 2 (all orders at once turn the dual of the family sieve into a
+  plain lattice-point count with no class numbers and no squarefree condition; the underlying pair count, two ideals in one class ⟺
+  4nn' = T² − Δy², is Soundararajan's device, summed over d by Heath-Brown–Pierce 2017 with upper-bound counts only); (ii) the pole-killing weight w(v) − ℓ^{2−2σ−2it'}w(ℓ²v), which removes
   the trivial-character main term from the class I sums of every D simultaneously; (iii) the squarefree-supported detector that keeps
   the class I coefficients independent of D.
+- Adversarial check (2026-10-21, [NOVELTY.md](./NOVELTY.md), raw data `.scratch/rcnov3/`): NEW. Closest: Ditchen's large sieve for
+  varying fields (N + N^{1/2}Q^{5/2+ε}), Pascadi–Thorner 2025 (N + Q²|S|, here N + X^{7/2}), Young 2024 (sharp, but Eisenstein
+  series of trivial nebentypus); all weaker than the sum of the per-D sieves for N ≤ X. Caveats: the pair-counting device behind
+  Lemma 2 is known (above), and for a² + nb² Baier–Zhao 2007 already give a prime < 4n for density-one n.
 
 ## 9. Dead ends (NOGO candidates)
 - Matching the main terms of the family sieve with the trivial and genus characters (Siegel–Weil on average, trace formula,

@@ -1,7 +1,8 @@
-DISCOVERY: threshold A > (3+√69)/10 = 1.1307 (was 3/2): for every such A, all but O(X^{1−c}) negative fundamental discriminants D with |D| ≤ X have primes in every ring class in every interval (x, x + x|D|^{−κ}] with x ≥ |D|^A; so every positive definite primitive binary quadratic form of discriminant D represents a prime ≤ 2|D|^A, and for almost all squarefree n the least prime a² + nb² is ≤ 2(4n)^A. GRH would give A = 1.
+DISCOVERY: threshold A > (3+√69)/10 = 1.1307 (was 3/2): for every such A, all but O(X^{1−c}) negative fundamental discriminants D with |D| ≤ X have primes in every ring class in every interval (x, x + x|D|^{−κ}] with x ≥ |D|^A; so every positive definite primitive binary quadratic form of discriminant D represents a prime ≤ 2|D|^A, and for all but O(N^{1−c}) squarefree n ≤ N the least prime a² + nb² is ≤ 2(4n)^A (for density-one n, Baier–Zhao 2007 already give < 4n). GRH would give A = 1.
 
 # RCApps3 report (2026-10-21)
 Proofs: [NOTE.md](NOTE.md). Brief: `.scratch/orca/rcapps3-brief.md`. Paper proofs, not refereed, no Lean. Unconditional.
+Review: correct in substance; its five corrections are applied in the NOTE (header lists them). Novelty: [NOVELTY.md](./NOVELTY.md), NEW.
 
 ## Theorems (complete proofs in the NOTE)
 - **Thm 1 (family large sieve, new tool).** For the coefficient sequences b of a new zero detector (squarefree n, mollified, with the pole of the trivial character removed): Σ_{X/2<|D|≤X} Σ_{χ∈Cl(D)^} |Σ_n b(n)λ_χ(n)|² ≪ X^{O(δ)}(X^{3/2} + N³/X)·N^{1−2σ} for N ≤ X^{1−4δ}. X^{3/2} is the size of the family; adding the per-D large sieves gives X·N·N^{1−2σ}, i.e. Thm 1 saves N/√X for √X < N < X^{5/6}.
@@ -20,10 +21,11 @@ Proofs: [NOTE.md](NOTE.md). Brief: `.scratch/orca/rcapps3-brief.md`. Paper proof
 - Dual identities exact on 28 test pairs over all discriminants in [20, 1500]. Local densities verified exhaustively. The Poisson main term matches brute force.
 - Brute-force family sums over all orders (X up to 80000, σ = 5/6):
   - Pole-killed sequences: 𝒬/(X‖b‖²) ≈ 0.12, flat for N from 500 to 1.5X, the same as random signs.
-  - Sequences with the pole: grow like N/√X.
+  - Unmollified sequences with the pole grow like N/√X; the mollified one grows too (its pole coefficient is a truncated Möbius sum, not estimated).
 - `thresh.py` gives the crossover σ = 0.846688 and A₀ = 1.130662; a grid sup agrees.
 
 ## Novelty
+- Adversarial check ([NOVELTY.md](./NOVELTY.md)): NEW. Closest: Ditchen's large sieve for varying fields (N + N^{1/2}Q^{5/2+ε}), Pascadi–Thorner 2025 (here N + X^{7/2}), Young 2024 (sharp, but Eisenstein series); all are weaker than the sum of the per-D sieves for N ≤ X. Known pieces: the pair count behind Lemma 2 (Soundararajan 2000; summed over d by Heath-Brown–Pierce 2017); for a² + nb² alone, Baier–Zhao 2007 (prime < 4n for density-one n).
 - arXiv API: 20 queries answered; 22 more refused with "Rate exceeded".
 - Also checked: web search, the GXL evidence API (3 claims), Sardari 1803.03218, Gaudet's thesis, and Ditchen 1312.1502 (|D|^{20/3+ε} outside a density-zero set).
 - No family large sieve at the family size and no average density below RCApps were found. The best almost-all exponent was 3/2 (RCApps2).
