@@ -6,28 +6,31 @@ inequality of §5 at sample A, and the minorants of Corollary D1; `thresh.py`, `
 References: [C] = [Combos NOTE](../Combos/NOTE.md) (Lemmas 2–5), [R] = [RCApps NOTE](../RCApps/NOTE.md) (§0 notation, (I1)–(I6),
 §2), [R2] = [RCApps2 NOTE](../RCApps2/NOTE.md) (Proposition 1, Theorems 2′, 4), [D2] = [Density2 NOTE](../Density2/NOTE.md) (Lemma 5).
 Nothing here uses the 2026 half-planes. Paper proofs, not refereed, no Lean.
+Repaired 2026-10-21 after review (brief `.scratch/orca/rsfamfix-brief.md`, scratch `.scratch/rsfamfix/`): five items, listed in
+§10 with the places changed; `params2.py` → `params2.out` re-checks §5 with the corrected margins and the minorant constants.
+Second novelty audit: [NOVELTY.md](NOVELTY.md).
 
 ## Verdicts
 
 | Item | Result | Status |
 |---|---|---|
-| (a) large sieve | Lemma A: Σ_χ\|Σ_𝔞 λ_m(𝔞)b_𝔞χ(𝔞)\|² ≤ (30/ε)log²(3\|D\|)(N + \|D\|^{1/2})Σ m(𝔞)^{1+2ε}d_{m+1}(𝔞)²\|b_𝔞\|² | routine ([C] Lemma 2 with Deligne) |
-| (b) second moment | Lemma B: Σ_χ\|L(½+iv, Sym^m f × θ_χ)M_V\|² ≪ \|D\|^{(m+1)/2+ε}V^{1+ε}(\|v\|+3)^{m+1+ε}; saves h ≍ \|D\|^{1/2} over convexity summed | routine; used in (c) and (c′) |
-| (c) per-D density | Theorem C: Σ_{χ∈Ĝ}N(σ;t, Sym^m f × θ_χ) ≪ (\|D\|^{m+2}T^{2m+2})^{(1−σ)/(3−2σ)+ε}, 0.6 ≤ σ ≤ 1, every m ≥ 1. For f (m = 1): \|D\|^{3(1−σ)/(3−2σ)}, nontrivial for σ > 3/4 | new statement; best published for this family: \|D\|^{(m+7)(1−σ)/(3−2σ)} (Pascadi–Thorner 2025, Thm 1.3), nontrivial only for σ > (2m+11)/(2m+12) |
+| (a) large sieve | Lemma A: Σ_χ\|Σ_𝔞 λ_m(𝔞)b_𝔞χ(𝔞)\|² ≤ (30/ε)log²(3\|D\|)(N + \|D\|^{1/2})Σ m(𝔞)^{1+2ε}d_{m+1}(𝔞)²\|b_𝔞\|², λ_m the base-change coefficients of (R1′) (not λ_{Sym^m f}(N𝔞)) | routine ([C] Lemma 2 with \|λ_m(𝔞)\| ≤ d_{m+1}(𝔞), (R1′)) |
+| (b) second moment | Lemma B: Σ_χ\|L(½+iv, Sym^m f × θ_χ)M_V\|² ≪ \|D\|^{(m+1)/2+ε}V^{1+ε}(\|v\|+3)^{m+1+ε}, uniformly in V ≥ 1, v ∈ R; saves h ≍ \|D\|^{1/2} over convexity summed | routine; proof repaired (cutoff enlarged by (\|D\|V(\|v\|+3))^ε); used only with V = 1, in (c) and (c′) |
+| (c) per-D density | Theorem C: Σ_{χ∈Ĝ}N(σ;t, Sym^m f × θ_χ) ≪ (\|D\|^{m+2}T^{2m+2})^{(1−σ)/(3−2σ)+ε}, 0.6 ≤ σ ≤ 1, every m ≥ 1, zeros in the unit window \|γ − t\| ≤ 1; all \|γ\| ≤ T costs a factor T (C′). For f (m = 1): \|D\|^{3(1−σ)/(3−2σ)} per window, nontrivial for σ > 3/4 | new statement; best published for this family: \|D\|^{(m+7)(1−σ)/(3−2σ)} (Pascadi–Thorner 2025, Thm 1.3), nontrivial only for σ > (2m+11)/(2m+12) |
 | (c′) density over D | Proposition F: Σ_{\|D\|~X}Σ_{χ²≠1}N(σ,T; Sym^m f × θ_χ) ≪ (X^{m+10}T^{2m+10})^{(1−σ)/(3−2σ)+ε} | new statement; Pascadi–Thorner give X^{(m+11)(1−σ)/(3−2σ)} |
-| (d) application | Theorem D: for every A > 3, all but O(X^{1−c}) fundamental D < 0, \|D\| ≤ X: every ideal class has degree-one primes 𝔭 with N𝔭 = p ∈ (x, x+x\|D\|^{−κ}], λ_f(p) > 0, and others with λ_f(p) < 0, for all x ≥ \|D\|^A. Any set S admitting a Chebyshev minorant of degree ≤ 2 with positive mean: A > 3; degree 1 (S ⊃ (α, 2], α < 0): A > 9/4. Same for D > 0 (Theorem D⁺, indefinite forms) | **new** (no statement found with any power of \|D\|, on average or not) |
-| thresholds | A₀ = 3/2, 9/4, 3, (M+7)/3 for minorant degree M = 0, 1, 2, ≥ 2; the published densities would give 8/3, 3, 10/3, (M+8)/3 | M ≥ 3 conditional on no Siegel zeros for Sym^m f ⊗ χ_d (§7) |
+| (d) application | Theorem D: for every A > 3, all but O(X^{1−c}) fundamental D < 0, \|D\| ≤ X: every ideal class has degree-one primes 𝔭 with N𝔭 = p ∈ (x, x+x\|D\|^{−κ}], λ_f(p) > 0, and others with λ_f(p) < 0, for all x ≥ \|D\|^A. Positivity comes from the m = 0 lower bound ≥ ν_DH/8 together with m = 1, 2 errors ≤ η₀ν_DH (§5, Positivity). Any set S admitting a Chebyshev minorant of degree ≤ 2 with positive mean: A > 3; degree 1 (S ⊃ (α, 2], α < 0): A > 9/4. Same for D > 0 (Theorem D⁺, indefinite forms) | **new** (no statement found with an explicit power of \|D\|, on average or not; a per-D bound with an inexplicit power of order 10^{10} looks derivable from published inputs, [NOVELTY.md](NOVELTY.md)) |
+| thresholds | A₀ = 3/2, 9/4, 3, (M+7)/3 for minorant degree M = 0, 1, 2, ≥ 2; the published densities would give 8/3, 3, 10/3, (M+8)/3 | M ≥ 3 now unconditional: Thorner (IMRN 2025, arXiv 2404.06482, Thm 1.1 with n = 0) excludes Landau–Siegel zeros of Sym^m f ⊗ χ for every m (§7) |
 | below 3 for the sign | at m = 2, A = 3, σ = 5/6 the trivial per-D count, Theorem C, Proposition F and the Markov bar all equal X^{3/2} | NOGO with present tools (§7, §9) |
 
 Effective constants: c, κ, X₀ are effective but not numerical, because the constants of (J4) (Brumley–Thorner–Zaman) and (J5)
-(no Landau–Siegel zeros on GL₂, GL₃) are not explicit. The thresholds A₀ are exact.
+(no Landau–Siegel zeros for the Dirichlet twists Sym^m f ⊗ χ_d) are not explicit. The thresholds A₀ are exact.
 
 ## 0. Setup
 
 - f ∈ S_k(Γ₀(N)): a holomorphic newform, k ≥ 2, trivial nebentypus, without CM; λ_f(n) := a_f(n)n^{−(k−1)/2}, so
   λ_f(p) = 2cos θ_p ∈ [−2, 2] for p ∤ N (Deligne). For E/Q without CM take f = f_E: a_E(p) = √p λ_f(p).
 - π_f: the automorphic representation of f; Π_m := Sym^m π_f (m ≥ 1), cuspidal on GL_{m+1}(A_Q) (Gelbart–Jacquet m = 2;
-  Kim–Shahidi m = 3; Kim m = 4; Newton–Thorne, Publ. IHÉS 2021, all m; the unconditional theorems use only m ≤ 2). Π_{m,v} = Sym^m π_{f,v}
+  Kim–Shahidi m = 3; Kim m = 4; Newton–Thorne, Publ. IHÉS 2021, all m; Theorems D, D⁺ use m ≤ 2, Theorem D_M of §7 uses m ≤ M). Π_{m,v} = Sym^m π_{f,v}
   under the local Langlands correspondence, so Π_m is tempered at every place (π_{f,p} is tempered at every p by Deligne and
   Carayol's local–global compatibility) and self-dual (trivial central character). Π_0 := 𝟙. For p ∤ N the trace of Π_{m,p} is
   U_m(cos θ_p) = sin((m+1)θ_p)/sin θ_p (Chebyshev); U_1(x/2) = x, U_2(x/2) = x² − 1.
@@ -65,7 +68,10 @@ Inputs besides [C], [R], [R2] (exact statements used):
   one real simple zero when Π_m⊗χ is self-dual; that zero is excluded for f⊗χ (non-dihedral cuspidal GL₂) by Hoffstein–
   Ramakrishnan (IMRN 1995), and for Sym²f⊗χ by Goldfeld–Hoffstein–Lieman (Ann. of Math. 140 (1994), appendix; χ = 1) and Banks
   (Duke Math. J. 87 (1997)); see [BTZ] §2.2. So for m ∈ {1, 2} there is an effective c₁ > 0 such that for every primitive
-  Dirichlet character χ, L(s, Π_m ⊗ χ) ≠ 0 for Re s ≥ 1 − c₁/log(C(Π_m⊗χ)(|Im s| + 3)).
+  Dirichlet character χ, L(s, Π_m ⊗ χ) ≠ 0 for Re s ≥ 1 − c₁/log(C(Π_m⊗χ)(|Im s| + 3)). The same holds for every m ≥ 1
+  by Thorner (IMRN 2025, arXiv 2404.06482, Theorem 1.1 and Corollary 1.2 with F = Q, n = 0; f is regular algebraic and
+  non-dihedral): L(σ+it, Sym^m f ⊗ χ) ≠ 0 for σ ≥ 1 − c/(m²[m^{y}log(mC(f)) + log(C(χ)(3+|t|))]), c absolute, y ∈ {0, 2}.
+  (J5) concerns only Dirichlet twists, i.e. the genus characters; the twists by χ ∈ Ĝ_c are treated in §5.6.
 - (J6) Explicit formula ([R] (I6), Iwaniec–Kowalski Thm 5.11): for an entire L-function L of degree 2m+2 as in (R2) below,
   w ∈ C_c^∞([x, x+H]), x ≥ 2: Σ_n Λ_L(n)w(n) = −Σ_ρ W(ρ) + R, W(s) := ∫w(u)u^{s−1}du, |R| ≤ C(H/x + x^{−1/2})log(q x).
 
@@ -87,6 +93,26 @@ factors; self-duality of τ gives real coefficients. For split p ∤ N, τ is un
 |λ_m(𝔭^k)| = |h_k(α)| ≤ binom(k+m, m) = d_{m+1}(𝔭^k). □
 (Concretely: at p | D, p ∤ N, π_{χ,p} = ν ⊞ νη_p with ν unramified, ν(p) = χ(𝔭), η_p the local component of χ_D; at inert p,
 π_{χ,p} is unramified with Satake parameters ±1, since χ((p)) = 1.)
+
+**(R1′) The coefficients explicitly.** λ_m(𝔞) are the coefficients of the base change of Sym^m f to K, an L-function over K;
+they are multiplicative on ideals of O_K and are *not* λ_{Sym^m f}(N𝔞) in general. For p ∤ N put α_j := e^{i(m−2j)θ_p}
+(0 ≤ j ≤ m), so λ_{Sym^m f}(p^k) = h_k(α_0, …, α_m) (complete symmetric polynomial) and λ_{Sym^m f}(p) = U_m(λ_f(p)/2). By (R1):
+- p = 𝔭𝔭̄ split: λ_m(𝔭^a𝔭̄^b) = λ_{Sym^m f}(p^a)λ_{Sym^m f}(p^b);
+- p = 𝔭² ramified (p | D): λ_m(𝔭^k) = λ_{Sym^m f}(p^k);
+- p inert, 𝔭 = (p), N𝔭 = p²: λ_m(𝔭^k) = h_k(α_0², …, α_m²) = Σ_{i=0}^{2k}(−1)^iλ_{Sym^m f}(p^i)λ_{Sym^m f}(p^{2k−i})
+  (the local factor is Π_j(1 − α_jp^{−s})^{−1}(1 + α_jp^{−s})^{−1} = Π_j(1 − α_j²N𝔭^{−s})^{−1});
+- p | N: λ_m(𝔭^k) = h_k(α_{m,1}(𝔭), …, α_{m,r_𝔭}(𝔭)), r_𝔭 ≤ m+1, |α_{m,i}(𝔭)| ≤ 1 (proof of (R1)).
+For m = 1: λ_1(𝔭𝔭̄) = λ_f(p)² but λ_f(N(𝔭𝔭̄)) = λ_f(p²) = λ_f(p)² − 1; at inert p, λ_1((p)) = λ_f(p)² − 2 but λ_f(N(p)) = λ_f(p)² − 1.
+What holds is the identity of Dirichlet series over Q, Σ_{N𝔞=n}λ_m(𝔞)χ(𝔞) = a_{Π_m×π_χ}(n), and for m = 1 Rankin's identity
+  L_1(s,χ) = L(2s, χ_D)·Σ_𝔞 λ_f(N𝔞)χ(𝔞)N𝔞^{−s}   (up to Euler factors at p | N),
+checked prime by prime: at split p both sides equal (1 − X²)^{−1}Σ_{a,b}λ_f(p^{a+b})z^a z̄^b X^{a+b} with X = p^{−s}, z = χ(𝔭); at inert p,
+(1 + X²)^{−1}Σ_aλ_f(p^{2a})X^{2a} = Π_j(1 − α_j²X²)^{−1}; at p | D, p ∤ N, both are Σ_kλ_f(p^k)χ(𝔭)^kX^k. So the brief's coefficients
+λ_f(N𝔞)χ(𝔞) are those of L_1(s,χ)/L(2s,χ_D); for m ≥ 2 there is no such identity with λ_{Sym^m f}(N𝔞).
+*Bounds* (Deligne; temperedness at p | N). In every case λ_m(𝔭^k) = h_k(β_1, …, β_r) with r ≤ m+1 and |β_i| ≤ 1, hence
+|λ_m(𝔭^k)| ≤ binom(k+r−1, r−1) ≤ binom(k+m, m) = d_{m+1}(𝔭^k), and |λ_m(𝔞)| ≤ d_{m+1}(𝔞) for every ideal 𝔞 (d_{m+1} is the divisor
+function of O_K; at inert p it is d_{m+1}((p)^k) = binom(k+m, m), not d_{m+1}(p^{2k})). Likewise |μ_m(𝔭^k)| = |e_k(β)| ≤
+binom(m+1, k) ≤ d_{m+1}(𝔭^k) (§3), |b_m(𝔭^k)| ≤ m+1, and |λ_f(N𝔞)| ≤ d(N𝔞) ≤ d(𝔞)² ≤ d_4(𝔞). These bounds are the only properties of
+the coefficients used in Lemmas A, B and Theorem C.
 
 **(R2) Analytic properties.** Let m ≥ 1. For every χ ∈ Ĝ, L_m(s,χ) is entire of order 1, of polynomial growth in vertical
 strips, and Λ_m(s,χ) := q_m^{s/2}γ_m(s)L_m(s,χ) = ε_m(χ)Λ_m(1−s,χ), with |ε_m(χ)| = 1, γ_m(s) = Π_{j=1}^{2m+2}Γ_R(s+μ_j),
@@ -112,36 +138,56 @@ S₂ = Σ_𝔞 λ_m(𝔞)χ(𝔞)N𝔞^{s−1}V_{1−s}(N𝔞/√q_m), |V_s(y)| 
 **Lemma A (weighted large sieve, twisted).** For m ≥ 0, 0 < ε ≤ ½, N ≥ 1 and complex b_𝔞 supported on N𝔞 ≤ N:
   Σ_{χ∈Ĝ}|Σ_𝔞 λ_m(𝔞)b_𝔞χ(𝔞)|² ≤ (30/ε)log²(3|D|)(N + |D|^{1/2})Σ_𝔞 m(𝔞)^{1+2ε}d_{m+1}(𝔞)²|b_𝔞|².
 
-*Proof.* [C] Lemma 2 with c_𝔞 = λ_m(𝔞)b_𝔞 and (R1). □
+*Proof.* [C] Lemma 2 holds for arbitrary complex c_𝔞 supported on N𝔞 ≤ N (here f = 1, so on all ideals); take
+c_𝔞 = λ_m(𝔞)b_𝔞 and use |λ_m(𝔞)| ≤ d_{m+1}(𝔞) from (R1′). Nothing else about the coefficients enters. □
 
 Remarks. (i) The weight m(𝔞)^{1+2ε} cannot be dropped ([C] Remark after Lemma 2). (ii) For coefficients bounded by divisor
 functions, [C] Lemma 3 makes the weight cost N^{2ε}: the h ≍ |D|^{1/2} characters behave like characters of a modulus |D|^{1/2},
-for the twisted coefficients as well. (iii) The brief's coefficients: up to Euler factors at p | ND, L_1(s,χ) =
-L(2s,χ_D)Σ_𝔞 λ_f(N𝔞)χ(𝔞)N𝔞^{−s} (Rankin's unfolding for f × θ_χ). Lemma A also holds with λ_f(N𝔞) in place of λ_m(𝔞) and
+for the twisted coefficients as well. (iii) The brief's coefficients λ_f(N𝔞)χ(𝔞) differ from λ_1(𝔞)χ(𝔞) ((R1′)): up to Euler factors at p | N,
+L_1(s,χ) = L(2s,χ_D)Σ_𝔞 λ_f(N𝔞)χ(𝔞)N𝔞^{−s} (Rankin's identity, (R1′)). Lemma A also holds with λ_f(N𝔞) in place of λ_m(𝔞) and
 d(N𝔞) in place of d_{m+1}(𝔞) ([C] Lemma 2 again), and [C] Lemma 3 applies to it because d(N𝔞) ≤ d(𝔞)² ≤ d_{16}(𝔞) (check at
 split, inert and ramified prime powers). (iv) General-family large
 sieves (Humphries–Thorner, Pascadi–Thorner) have threshold Q²|𝒮| ≍ |D|^{5/2} for this family, i.e. |D|² times worse.
 
 **Lemma B (mollified second moment).** Let m ≥ 1, ε > 0, V ≥ 1, v ∈ R, and |μ(𝔡)| ≤ d_{m+1}(𝔡); M_V(s,χ) :=
-Σ_{N𝔡≤V}μ(𝔡)χ(𝔡)N𝔡^{−s}. Then
+Σ_{N𝔡≤V}μ(𝔡)χ(𝔡)N𝔡^{−s}. Then, with C(ε) depending only on ε, f, m (uniform in V ≥ 1 and v ∈ R),
   Σ_{χ∈Ĝ}|L_m(½+iv,χ)M_V(½+iv,χ)|² ≤ C(ε)|D|^{(m+1)/2+ε}V^{1+ε}(|v|+3)^{m+1+ε},
 and Σ_{χ∈Ĝ}|M_V(½+iv,χ)|² ≤ C(ε)(V + |D|^{1/2})(V|D|)^{ε}.
 
-*Proof.* By (R3), |L_mM_V|² ≤ 2|S₁M_V|² + 2|S₂M_V|², and S_jM_V = Σ_𝔟 c_{j,𝔟}χ(𝔟) with c_{j,𝔟} independent of χ and
-|c_{j,𝔟}| ≤ C_B d_{2m+2}(𝔟)N𝔟^{−1/2} (convolution of d_{m+1} with d_{m+1}). Put P := V√q_m(|v|+3)^{m+1}|D|^ε. Terms with
-N𝔟 > P have N𝔞 > √q_m(|v|+3)^{m+1}|D|^ε in every summand, so with B = 20/ε their total is ≤ C(ε)|D|^{−8}. Lemma A (m = 0)
-and [C] Lemma 3 on N𝔟 ≤ P give Σ_χ|S_jM_V|² ≤ C(ε)log²(3|D|)(P + |D|^{1/2})P^{2ε} + C(ε)h|D|^{−16} ≤ C(ε)P^{1+3ε}, as
-P ≥ |D|^{1/2}. By (R2), √q_m ≤ C|D|^{(m+1)/2}. The second claim is Lemma A with [C] Lemma 3. Rename ε. □
+*Proof.* Put s = ½ + iv, L₀ := √q_m(|v|+3)^{m+1} and 𝔏 := 3|D|V(|v|+3) ≥ 9. By (R3), |L_mM_V|² ≤ 2|S₁M_V|² + 2|S₂M_V|², and
+S_jM_V = Σ_𝔟 c_{j,𝔟}χ(𝔟) with c_{j,𝔟} independent of χ and, by (R1′) and the bound on V_s in (R3),
+  |c_{j,𝔟}| ≤ C_B N𝔟^{−1/2} Σ_{𝔞𝔡=𝔟, N𝔡≤V} d_{m+1}(𝔞)d_{m+1}(𝔡)(1 + N𝔞/L₀)^{−B} ≤ C_B d_{2m+2}(𝔟)N𝔟^{−1/2}.
+Cut at P := VL₀𝔏^ε (the old proof cut at VL₀|D|^ε and claimed a tail O(|D|^{−8}); that tail is not uniform in V and v, since it
+carries a factor ≍ (VL₀)^{1/2}).
+*Tail.* If N𝔟 > P, every term of c_{j,𝔟} has N𝔞 > P/V = L₀𝔏^ε. The number of ideals of norm n is ≤ d(n), d_{m+1}(𝔞) ≤
+d_{m+1}(N𝔞)², and d(n)d_{m+1}(n)² ≤ C(m)n^{1/2}. So for B ≥ 2, with Y := L₀𝔏^ε,
+  Σ_{N𝔟>P}|c_{j,𝔟}| ≤ C_B Σ_{N𝔡≤V}d_{m+1}(𝔡)N𝔡^{−1/2} · L₀^B Σ_{n>Y}C(m)n^{−B} ≤ C(m,B)·V·L₀(L₀/Y)^{B−1} ≤ C(m,B)𝔏^{m+3−ε(B−1)},
+using V ≤ 𝔏 and L₀ ≤ C|D|^{(m+1)/2}(|v|+3)^{m+1} ≤ C𝔏^{m+1} (R2). With B := 1 + (m+13)/ε the tail is ≤ C(ε)𝔏^{−10} for every
+χ, uniformly in V and v (a dyadic decomposition of N𝔞 > Y gives the same).
+*Main part.* Lemma A (m = 0) and [C] Lemma 3 (k = 2m+2) on N𝔟 ≤ P:
+  Σ_χ|Σ_{N𝔟≤P}c_{j,𝔟}χ(𝔟)|² ≤ (30/ε)log²(3|D|)(P + |D|^{1/2})C_B²Σ_{N𝔟≤P}m(𝔟)^{1+2ε}d_{2m+2}(𝔟)²N𝔟^{−1} ≤ C(ε)log²(3|D|)P^{1+2ε},
+as P ≥ L₀ ≥ √q_m ≥ c|D|^{1/2}. With the tail (h ≤ |D|): Σ_χ|S_jM_V|² ≤ C(ε)P^{1+3ε} + C(ε)|D|𝔏^{−20} ≤ C(ε)P^{1+3ε}. Finally
+P ≤ CV|D|^{(m+1)/2}(|v|+3)^{m+1}𝔏^ε and 𝔏^{O(ε)} = (|D|V(|v|+3))^{O(ε)}; rename ε. The second claim is Lemma A (m = 0) with
+b_𝔡 = μ(𝔡)N𝔡^{−1/2−iv} (N𝔡 ≤ V) and [C] Lemma 3; there is no tail. □
+
+*Uses (re-checked).* Only V = 1 (M_V ≡ 1) and the second claim are used: Theorem C class II integrates
+Σ_χ|L_m(½+iv,χ)|² ≤ C(ε)|D|^{(m+1)/2+ε}(|v|+3)^{m+1+ε} against e^{−|v−t|} over all v ∈ R, which needs exactly this uniformity in v
+(∫e^{−|v−t|}(|v|+3)^{(m+1+ε)/2}dv ≤ C(m)T^{(m+1+ε)/2}); Proposition F uses it on |v| ≤ T (I₂); Theorem D⁺ uses it for each
+archimedean type. The statement did not change, so every bound downstream is unchanged.
 
 Compare: convexity gives |L_m(½+iv,χ)|² ≪ |D|^{(m+1)/2+ε} for each χ, i.e. h·|D|^{(m+1)/2} for the sum; Lemma B saves h. Lindelöf
 on average would be h|D|^ε (§9).
 
 ## 3. Per-D zero density
 
-**Theorem C.** Let m ≥ 1, ε > 0, D ∈ 𝔇, t ∈ R, T = |t|+3 and 0.6 ≤ σ ≤ 1. Then
+**Theorem C.** Let m ≥ 1, ε > 0, D ∈ 𝔇, t ∈ R, T = |t|+3 and 0.6 ≤ σ ≤ 1. Then, for the zeros in the unit window
+|γ − t| ≤ 1,
   N_D^{(m)}(σ;t) ≤ C(ε)(|D|^{m+2}T^{2m+2})^{(1−σ)/(3−2σ)+ε}.
-For m = 1 (f ⊗ θ_χ, degree 4): ≤ C(ε)(|D|³T⁴)^{(1−σ)/(3−2σ)+ε}; this is below the trivial bound |D|^{1/2} exactly for σ > 3/4
-(for general m: σ > (2m+1)/(2m+2)). Summing windows: Σ_χ N_m(σ,T;χ) ≤ C(ε)T(|D|^{m+2}T^{2m+2})^{(1−σ)/(3−2σ)+ε}.
+**(C′) All heights.** For T ≥ 3: Σ_{χ∈Ĝ}N_m(σ,T;χ) ≤ C(ε)·T·(|D|^{m+2}T^{2m+2})^{(1−σ)/(3−2σ)+ε}. Cover |γ| ≤ T by the ≤ 2T+1
+windows |γ − k| ≤ 1 (k ∈ Z, |k| ≤ T), each with |k| + 3 ≤ 2T. The factor T is the number of windows: Theorem C is a unit-window
+estimate and does not absorb it. Every use below says which form it uses.
+For m = 1 (f ⊗ θ_χ, degree 4): ≤ C(ε)(|D|³T⁴)^{(1−σ)/(3−2σ)+ε} per window; this is below the trivial per-window bound |D|^{1/2}
+exactly for σ > 3/4 (general m: σ > (2m+1)/(2m+2)); for |γ| ≤ T both bounds carry the factor T.
 
 *Proof.* [R2] Proposition 1 with the following substitutions; we write it out. Assume |D| ≥ D₀(ε) (else use (R4)).
 Put ε₀ := ε/10, 𝔔 := |D|^{m+2}T^{2m+2}, V := |D|^{1/2}, Y := 𝔔^{1/(2(3−2σ))}, Z := 2Y log²Y. Then Y ≥ |D|^{(m+2)/(2(3−2σ))}
@@ -167,10 +213,12 @@ Z^{2−2σ+2ε₀}.
 *Comparison.* For 𝒮 = {π_χ : χ ∈ Ĝ_c} (n = 2, Q ≍ |D|, |𝒮| ≍ |D|^{1/2}) and π₀ = Π_m (n₀ = m+1), Pascadi–Thorner
 (arXiv 2508.14888, Theorem 1.3, second line) give Σ_{π∈𝒮}N_{π×π₀}(σ,T) ≪ (Q^{2n+n₀}|𝒮|⁴T^{2(m+3)+4})^{(1−σ)/(3−2σ)+o(1)} =
 (|D|^{m+7}T^{2m+10})^{(1−σ)/(3−2σ)+o(1)}; Humphries–Thorner Thm 1.1 give (|D|^{2+6.15·max(4,2m+2)})^{1−σ+ε}; the log-free bounds
-(BTZ Thm 1.2, PT Thm 1.5) have exponents 10^7(2m+2)^4(1−σ) and 543·max{8,(m+1)³}(1−σ). Theorem C lowers the |D|-exponent from
-(m+7)(1−σ)/(3−2σ) to (m+2)(1−σ)/(3−2σ) for every σ ∈ [0.6, 1), and moves the start of the nontrivial range from
-σ > (2m+11)/(2m+12) (13/14 for f) to σ > (2m+1)/(2m+2) (3/4 for f). The gain has two sources: the per-D sieve threshold |D|^{1/2}
-instead of Q²|𝒮| = |D|^{5/2}, and Lemma B instead of convexity. Only the D-aspect is claimed; PT's T-dependence is better.
+(BTZ Thm 1.2, PT Thm 1.5) have exponents 10^7(2m+2)^4(1−σ) and 543·max{8,(m+1)³}(1−σ). PT count all |γ| ≤ T, so the comparison is with (C′):
+T(|D|^{m+2}T^{2m+2})^{e} against (|D|^{m+7}T^{2m+10})^{e}, e = (1−σ)/(3−2σ). In the D-aspect (T fixed, or T ≤ |D|^{o(1)}) (C′) lowers
+the |D|-exponent from (m+7)e to (m+2)e for every σ ∈ [0.6, 1), and moves the start of the nontrivial range from
+σ > (2m+11)/(2m+12) (13/14 for f) to σ > (2m+1)/(2m+2) (3/4 for f). In T, (C′) has T^{1+(2m+2)e} against T^{(2m+10)e}: better
+for σ < 5/6, worse for σ > 5/6. The gain has two sources: the per-D sieve threshold |D|^{1/2}
+instead of Q²|𝒮| = |D|^{5/2}, and Lemma B instead of convexity. Only the D-aspect is claimed.
 (Kowalski–Michel's 2002 family theorem needs automorphy of Π_m ⊠ π_χ and has exponent c(1−σ)/(2σ−1) with an unspecified c
 larger than the family-size exponent; not computed here.)
 
@@ -183,7 +231,7 @@ larger than the family-size exponent; not computed here.)
 conductor |D| and its central character χ_D, hence K), so the left side is 2Σ_{π∈𝒮}N_{π×Π_m}(σ,T). GRC holds for π_χ ([R]
 Prop 1); C(π_χ) ≤ 12|D|, so Q := 12X; |𝒮| ≤ Σ_{|D|≤X}h(D) ≤ CX^{3/2}log X; Π_m ≇ π̃ for π ∈ 𝒮 (R2). Hence
 V ≤ C(ε)X^{7/2+2ε}T^{3+ε}. For I₂: |L^{ur}| ≤ 4^{(m+1)ω(DN)}|L| on Re s = ½ (the removed Euler factors have ≤ 2m+2 roots of
-modulus ≤ 1), so Lemma B (V = 1, M ≡ 1) gives I₂ ≤ C(ε)Σ_{D∈𝔇(X)}|D|^{(m+1)/2+ε}T^{m+2+ε} ≤ C(ε)X^{(m+3)/2+2ε}T^{m+2+ε}.
+modulus ≤ 1), so Lemma B (V = 1, M ≡ 1; uniform in v, integrated over |v| ≤ T) gives I₂ ≤ C(ε)Σ_{D∈𝔇(X)}|D|^{(m+1)/2+ε}T^{m+2+ε} ≤ C(ε)X^{(m+3)/2+2ε}T^{m+2+ε}.
 (HT's convexity bound is |𝒮|·X^{(m+1)/2}T^{m+2} ≍ X^{(m+4)/2}.) Take Y := (V·I₂)^{1/(3−2σ)}; then log Y ≍ log V and
 Y^{½−σ}(VI₂)^{1/2} = Y^{2−2σ} ≤ C(ε)(X^{m+10}T^{2m+10})^{(1−σ)/(3−2σ)+O(ε)}. Rename ε. □
 
@@ -207,7 +255,8 @@ The same holds (A > 3) for a_E(p) ≠ 0, |a_E(p)| < β√p (β > 1), |a_E(p)| > 
 for a_E(p) > −α√p and a_E(p) < α√p with α > 0. In particular, for all but O(N^{1−c}) squarefree n ≤ N with n ≡ 1, 2 (mod 4):
 a prime p = a² + nb² ≤ 2(4n)^A with a_E(p) > 0 (and one with a_E(p) < 0).
 
-*Proof of D1 from D.* Minorants, all checked in `params.py` (P ≤ 1_S on [−2,2], Sato–Tate mean = c₀):
+*Proof of D1 from D.* Minorants, all checked in `params.py` and `params2.py` (P ≤ 1_S on [−2,2], Sato–Tate mean = c₀;
+c₁, c₂, η₀ and the constant of (5.1) in the table after the proof of Theorem D):
 S = (0,2]: P = x(x+2)/8 = 1/8 + x/4 + (x²−1)/8; S = [−2,0): x(x−2)/8; S = [−2,2]∖{0}: x²/4 = ¼ + (x²−1)/4;
 S = (α,2], α < 0: (x−α)/(2−α), c₀ = |α|/(2+|α|), c₂ = 0; S = (α,2], 0 ≤ α < ½: (x+2)(x−α)/(4(2−α)), c₀ = (1−2α)/(4(2−α));
 S = (−β,β), β > 1: 1 − x²/β², c₀ = 1 − 1/β²; S = {|x| > β}, β < 1: (x²−β²)/(4−β²), c₀ = (1−β²)/(4−β²); [−2,α) by x ↦ −x.
@@ -235,6 +284,28 @@ x ≥ |D|² (A > 9/4 when c₁ or c₂ ≠ 0; if c₁ = c₂ = 0 the claim is [R
 contribution is ≤ c₀ν_DH/(32h) for |D| ≥ D₀. So
 Σ_{p∤ND} P(λ_f(p))log p·w(p) ≥ c₀ν_DH/(32h) over degree-one 𝔭 ∈ C; as P(λ) ≤ 1 for λ ∈ S, P(λ) ≤ 0 otherwise, and
 0 ≤ w ≤ 1_{(x,x+H]}, (5.1) follows. □
+
+**Positivity: what c₀ > 0 does and does not give.** c₀ > 0 is the Sato–Tate mean of P (∫U_m dμ_ST = 0 for m ≥ 1), but
+Theorem D never uses equidistribution. Positivity of the minorant sum needs three inputs for the same D, C, x, H:
+(i) the m = 0 lower bound hS_C^{(0)} ≥ ν_DH/8 ([R] §2.5 with [R2] Theorem 2′); a Landau–Siegel zero of a genus factor χ_{d₀},
+d₀ | D, shrinks this main term to ν_DH/8, with ν_D as small as c′|D|^{−δ/2}/log|D|;
+(ii) the m = 1, 2 sums as errors relative to that shrunken main term: |hS_C^{(m)}| ≤ η₀ν_DH, η₀ := c₀/(16(|c₁| + |c₂|))
+(Proposition T); this is why (e) of §5.4 needs the Landau–Siegel repulsion ν^♯ ≤ 2ν_D of (J4): without it (e) gives only
+E_e ≤ η₀H/8, which is not ≤ η₀ν_DH/8 when ν_D is small;
+(iii) the non-degree-one ideals (≤ c₀ν_DH/(32h) after division by h).
+Then c₀ν_DH/8 − (|c₁| + |c₂|)η₀ν_DH = c₀ν_DH/16 and c₀ν_DH/(16h) − c₀ν_DH/(32h) = c₀ν_DH/(32h), which is (5.1). With c₀ > 0 but
+without (i) or (ii) at this size nothing follows. The constants of Corollary D1 (`params2.py` re-checks P ≤ 1_S, the mean c₀, η₀
+and the constant in (5.1); α, β as in Corollary D1):
+
+| S | P | c₀ | c₁ | c₂ | η₀ | (5.1): Σ log p ≥ |
+|---|---|---|---|---|---|---|
+| λ > 0 | x(x+2)/8 | 1/8 | 1/4 | 1/8 | 1/48 | ν_DH/(256h) |
+| λ < 0 | x(x−2)/8 | 1/8 | −1/4 | 1/8 | 1/48 | ν_DH/(256h) |
+| λ ≠ 0 | x²/4 | 1/4 | 0 | 1/4 | 1/16 | ν_DH/(128h) |
+| λ > α, α < 0 | (x−α)/(2−α) | \|α\|/(2+\|α\|) | 1/(2+\|α\|) | 0 | \|α\|/16 | \|α\|ν_DH/(32(2+\|α\|)h) |
+| λ > α, 0 ≤ α < ½ | (x+2)(x−α)/(4(2−α)) | (1−2α)/(4(2−α)) | 1/4 | 1/(4(2−α)) | (1−2α)/(16(3−α)) | (1−2α)ν_DH/(128(2−α)h) |
+| \|λ\| < β, 1 < β ≤ 2 | 1 − x²/β² | 1 − 1/β² | 0 | −1/β² | (β²−1)/16 | (1−β^{−2})ν_DH/(32h) |
+| \|λ\| > β, β < 1 | (x²−β²)/(4−β²) | (1−β²)/(4−β²) | 0 | 1/(4−β²) | (1−β²)/16 | (1−β²)ν_DH/(32(4−β²)h) |
 
 ### 5.1 Parameters for Proposition T
 The statement for A implies it for every A′ > A (same δ, κ, exceptional set), so assume A_m < A ≤ A_m + ¼.
@@ -272,14 +343,16 @@ bound the parts: (a) zeros of L_m(·,χ), χ ∈ Ĝ_c, β ≥ σ₀, |γ| ≤ T�
 |γ| ≤ T₁; (f) remainders. Every zero lies in at least one part; overlaps only enlarge the bound.
 
 ### 5.4 Bounds (|D| ≥ D₀; x = |D|^A y, y ≥ 1)
-- (a) D ∉ E₁ and x^{σ−1} ≤ |D|^{−A(1−σ)} ≤ 2^AX^{−A(1−σ)}: E_a ≤ HΣ_{j<J}N_D^{c,m}(σ_j,T_X)x^{σ_{j+1}−1} ≤ J2^AHX^{−ε′};
+- (a) (N_D^{c,m}(σ,T_X) and Proposition F count all |γ| ≤ T_X; no window count enters here.)
+  D ∉ E₁ and x^{σ−1} ≤ |D|^{−A(1−σ)} ≤ 2^AX^{−A(1−σ)}: E_a ≤ HΣ_{j<J}N_D^{c,m}(σ_j,T_X)x^{σ_{j+1}−1} ≤ J2^AHX^{−ε′};
   N_D^{c,m}(σ_J,T_X) < 1 since A(1−σ_J) ≤ ε′.
-- (b) Per unit window |γ − k| ≤ 1 with N(σ) := N_D^{(m)}(σ;k): Σ_{β<σ₀}x^{β−1} ≤ x^{−½}N(0) + log x∫_{½}^{σ₀}x^{σ−1}N(σ)dσ, and
+- (b) Cover |γ| ≤ T₁ by the unit windows |γ − k| ≤ 1, k ∈ Z, |k| ≤ T₁: at most 2T₁ + 1 ≤ 3T₁ windows, each with |k| + 3 ≤ 2T₁.
+  Per window, with N(σ) := N_D^{(m)}(σ;k): Σ_{β<σ₀}x^{β−1} ≤ x^{−½}N(0) + log x∫_{½}^{σ₀}x^{σ−1}N(σ)dσ, and
   x^{σ−1}log x ≤ |D|^{−A(1−σ)}(A log|D| + 10) for σ ≤ σ₀ ≤ 0.9. (R4): N(σ) ≤ |D|^{½+o(1)}(|k|+3)^{o(1)}.
-  m = 2: each window ≤ |D|^{½−A/2+o(1)} + |D|^{½−A/6+o(1)} = |D|^{−s₁+o(1)}, so E_b ≤ H|D|^{−s₁+κ+ε₁+o(1)}.
-  m = 1: σ ∈ [½, 0.6]: |D|^{½−0.4A+o(1)} ≤ |D|^{−0.4}; [0.6, ¾]: |D|^{−1/16+o(1)}; [¾, σ₀]: Theorem C (ε = ε₀),
-  |D|^{−(1−σ)(A−3/(3−2σ))+3ε₀}(|k|+3)^{2/3+4ε₀} ≤ |D|^{−s₁+3ε₀}(|k|+3)^{2/3+4ε₀}. So E_b ≤ H|D|^{−s₁+3ε₀+(5/3)(κ+ε₁)+o(1)}
-  + H|D|^{−1/16+κ+ε₁+o(1)}.
+  m = 2: each window ≤ |D|^{½−A/2+o(1)} + |D|^{½−A/6+o(1)} = |D|^{−s₁+o(1)}; times 3T₁ windows: E_b ≤ H|D|^{−s₁+κ+ε₁+o(1)}.
+  m = 1: σ ∈ [½, 0.6]: |D|^{½−0.4A+o(1)} ≤ |D|^{−0.4}; [0.6, ¾]: |D|^{−1/16+o(1)}; [¾, σ₀]: Theorem C per window (ε = ε₀),
+  |D|^{−(1−σ)(A−3/(3−2σ))+3ε₀}(|k|+3)^{2/3+4ε₀} ≤ |D|^{−s₁+3ε₀}(2T₁)^{2/3+4ε₀}. Summing over the ≤ 3T₁ windows (this factor T₁ is
+  the window count of (C′), not part of Theorem C): E_b ≤ H|D|^{−s₁+3ε₀+(5/3+4ε₀)(κ+ε₁)+o(1)} + H|D|^{−1/16+κ+ε₁+o(1)}.
 - (c) Each window holds ≤ C h log(|D|(|k|+3)) zeros (R4); with k ≥ 2/ε₁ in the decay bound and x/H ≤ |D|^κ: E_c ≤ H|D|^{−1}.
 - (d) D ∉ E₂ (|d| > |D|^δ ≥ Q₀(X), T₁ ≤ T_X): these zeros have β ≤ σ_g, and number ≤ 2^{ω(D)}CT₁log(|D|T₁):
   E_d ≤ H|D|^{−A/(2c_m)+κ+ε₁+o(1)}.
@@ -293,9 +366,28 @@ bound the parts: (a) zeros of L_m(·,χ), χ ∈ Ĝ_c, β ≥ σ₀, |γ| ≤ T�
 - (f) Σ|R| ≤ Ch(H/x + x^{−½})log(|D|x) ≤ H|D|^{−1} (x ≥ |D|², H ≥ x|D|^{−κ}).
 
 ### 5.5 Conclusion
-By §5.1 (checked in `params.py`): ε′ > δ/2; m = 2: s₁ − κ − ε₁ > δ/2; m = 1: s₁ − 3ε₀ − (5/3)(κ+ε₁) > δ/2 and
+By §5.1 (checked in `params.py`, `params2.py`): ε′ > δ/2; m = 2: s₁ − κ − ε₁ > δ/2; m = 1: s₁ − 3ε₀ − (5/3+4ε₀)(κ+ε₁) > δ/2 and
 1/16 − κ − ε₁ > δ/2; A/(2c_m) − κ − ε₁ > δ/2. So E_a + E_b + E_c + E_d + E_f ≤ H|D|^{−δ/2−η₁} for some η₁ > 0, which is
 ≤ η₀ν_DH/8 for |D| ≥ D₀ because ν_D ≥ c′|D|^{−δ/2}/log|D| ([R] (I5)). With (e): |hS_C^{(m)}| ≤ η₀ν_DH/4 < η₀ν_DH. □
+
+### 5.6 Exceptional zeros: which are excluded, and by what
+- *Genus characters* χ = χ_{d,D/d}: L_m(s,χ) = L(s,Π_m⊗χ_d)L(s,Π_m⊗χ_{D/d}) are Dirichlet twists of Π_m. Only these are covered by
+  (J5) (Hoffstein–Ramakrishnan for f⊗χ_d, Banks for Sym²f⊗χ_d, Thorner 2025 for every m) and by the repulsion ν^♯ of (J4). They
+  enter only (d), (e) and E₂: |d| > Q₀ through E₂ (a count over D), |d| ≤ Q₀ through (J5) and (J4).
+- *Non-genus characters* χ ∈ Ĝ_c: L_m(s,χ) = L(s, Π_m × π_χ) with π_χ cuspidal and dihedral; over K it is L(s, BC_K(Π_m) ⊗ χ). Its
+  coefficients are real ((R1)), so self-duality does not rule out a real zero near 1, and (J5) says nothing about it. The proof
+  never excludes such zeros by a zero-free region. Every zero of L_m(s,χ), χ ∈ Ĝ_c, with β ≥ σ₀ and |γ| ≤ T_X, a real exceptional
+  zero included, is counted by N_D^{c,m}(σ₀, T_X); the D for which one of the counts N_D^{c,m}(σ_j, T_X) exceeds its Markov bar
+  X^{A(1−σ_j)−2ε′} form E₁^{(m)}(X), the exceptional set of Proposition F (≤ CJX^{1−ε′} discriminants per dyadic X). For
+  D ∉ E₁^{(m)}(X), N_D^{c,m}(σ_J, T_X) = 0, so there is no zero at all with β ≥ σ_J = 1 − O(ε′/A), |γ| ≤ T_X, and between σ₀ and σ_J
+  the count is at most the bar, which (a) absorbs. So possible exceptional zeros of non-genus twists are removed by discarding the
+  D in E₁^{(m)}(X). They do not enter ν_D, which concerns only the Dirichlet characters χ_d (m = 0, [R] (I4)). Zeros with β < σ₀,
+  genus or not, are bounded per D in (b) by (R4) and Theorem C.
+- *Remark (not used).* Such zeros do not exist anyway: by Ramakrishnan–Wang (m = 1: f is non-dihedral and f ≁ π_χ) and Luo
+  (m = 2: π_χ is dihedral), as listed in Thorner–Zhao (arXiv 2601.04189, Proposition 1.1 (4), (6)), and for every m by their
+  Theorem 1.7 (π_χ ⊗ χ_D = π_χ while Sym^m f ⊗ χ_D ≠ Sym^m f, so L(s, Sym^m f × π_χ) has no exceptional zero). Even with
+  this, E₁ stays necessary: the zeros with σ₀ ≤ β ≤ 1 − c/log(|D|T) need a count, and the only per-D log-free count (BTZ,
+  exponent ≈ 10^{10}(1−σ)) is far too weak for A near 3.
 
 ## 6. Positive discriminants
 
@@ -304,7 +396,8 @@ a² − nb², n ≡ 2, 3 (mod 4), D = 4n) hold for fundamental D > 0, with the s
 
 *Proof.* The dictionary of [R2] Theorem 4: G⁺, h⁺, Ĝ⁺_c, Ĝ⁺₂; π_χ (χ ∈ Ĝ⁺_c) is a Maass form of eigenvalue ¼ with
 π_{χ,∞} = sgn^a ⊞ sgn^a, tempered, self-dual (𝔞𝔞^c = (N𝔞), N𝔞 > 0). Changes here: (R1) is unchanged (χ unramified at finite
-places, χ((p)) = 1 at inert p); in (R2)–(R3) the gamma factor depends on a ∈ {0,1}, so Lemma B is applied to the two groups
+places, χ((p)) = 1 at inert p), and so are the local formulas and bounds of (R1′); in (R2)–(R3) the gamma factor depends on
+a ∈ {0,1}, so Lemma B (uniform in v) is applied to the two groups
 of χ separately; Lemma A holds with [D2] Lemma 5 (𝔔 = 9D, M = 0) in place of [C] Lemma 2; (R4) with h⁺ ≤ 5D^{1/2}log²(3D).
 Theorem C (needed for A₀ = 9/4) follows as in §3 (the detector of [R2] Prop 1 covers narrow class characters). Proposition F:
 |𝒮⁺| ≤ CX^{3/2}, C(π_χ) ≤ 12D ([R2] Prop 2), I₂ by Lemma B. Genus theory for narrow classes and the factorization of
@@ -330,10 +423,18 @@ where A(1−σ) > min{½, a(1−σ)/(3−2σ)}, and Markov needs φ(σ) = (b/(3�
 - Payoffs (`hyp.py`, m = 2): A₀ = b/3 − 1 for 6 ≤ b ≤ 12: each factor X^{1/2} saved in V·I₂ of (J3) lowers A₀ by 1/3. A family large
   sieve with threshold |𝒮| = X^{3/2} (instead of X^{7/2}) gives b = 8, A₀ = 5/3; with also Lindelöf on average for the
   degree-6 family (I₂ ≍ X^{3/2}) b = 6, A₀ = 1 (GRH: |D|^{1+ε} for every D).
-- M ≥ 3 (short intervals of the Sato–Tate parameter): the proofs go through for every m ≤ M (Newton–Thorne for automorphy;
-  (J3), (J4) need only GRC) except (J5): Landau–Siegel zeros of L(s, Sym^m f ⊗ χ_d) are excluded only for m ≤ 2 (for odd m,
-  Sym^m f ⊗ χ_d = Sym^m(f⊗χ_d), so Hoffstein–Ramakrishnan's Theorem B applies if its constant is uniform in the level; not
-  checked). Conditional on (J5) for 3 ≤ m ≤ M: A₀ = (M+7)/3.
+- All exponents here are per unit window (Theorem C) or for bounded T (Proposition F); in §5 the T₁ ≤ 2|D|^{κ+ε₁} windows cost
+  |D|^{O(κ+ε₁)} = |D|^{O(δ)}, which goes into the margins and does not move A₀.
+- M ≥ 3 (short intervals of the Sato–Tate parameter), now unconditional.
+  **Theorem D_M.** Let M ≥ 2, P = Σ_{m=0}^{M}c_mU_m(x/2) ≤ 1_S on [−2,2], c₀ > 0, c_M ≠ 0. Then Theorem D (and Theorem D⁺)
+  holds for every A > (M+7)/3, with η₀ := c₀/(16Σ_{m≥1}|c_m|).
+  *Proof.* Proposition T for m = 1 (as proved) and for every 2 ≤ m ≤ M with A > A_m := (m+7)/3, exactly as for m = 2
+  (A₂ = 3): σ₀ := 1 − 1/(2A_m), s₁ := (A − A_m)/(2A_m), ε′ := s₁/4. Then φ_m(σ₀) = 1 − (A − A_m)/(2A_m) = 1 − 4ε′, φ_m′ = A − (m+10)/(3−2σ)² < 0 on [σ₀, 1]
+  for A ≤ A_m + ¼, the T_X-exponent (2m+10)(1−σ)/(3−2σ) is ≤ 3 there, and the E₁ margin is 3(κ+ε₁) + (m+11)ε₀ ≤ ε′
+  (`params2.py`, m ≤ 20). In (b) the constant 10 becomes 2A_m, since 1 − σ ≥ 1/(2A_m). Automorphy of Sym^m f: Newton–Thorne;
+  (J3), (J4) need only GRC; (J5) for m ≥ 3: Thorner (IMRN 2025, arXiv 2404.06482, Theorem 1.1 and Corollary 1.2 with F = Q,
+  n = 0), whose region c/(m²[m^{y}log(mC(f)) + log(C(χ)(3+|t|))]) is uniform in χ, so c₁′ := c/(2m²) for |D| ≥ D₀. Positivity
+  as in §5 with Σ_{m≥1}|c_m|. □ (The first version of this note made M ≥ 3 conditional on (J5); Thorner's theorem removes that.)
 
 ## 8. Novelty audit (2026-10-21)
 - arXiv API, 35 queries (`axq1.out`…`axq4.out`): Sato–Tate × quadratic form / ring class / class group / least prime / imaginary
@@ -358,6 +459,15 @@ where A(1−σ) > min{½, a(1−σ)/(3−2σ)}, and Markov needs φ(σ) = (b/(3�
 - Conclusion: Theorem C, Proposition F and Theorems D, D⁺ were not found. Per D, the joint (class, Sato–Tate) least-prime
   problem has, as far as found, no stated polynomial bound at all; fixed-field Chebotarev–Sato–Tate results are exponential in
   h(D) when applied to ring class fields.
+- Second audit after the review (2026-10-21, [NOVELTY.md](NOVELTY.md), `.scratch/rsfamfix/`): 65 more arXiv API queries and 2 author lists, OpenAlex
+  (25 searches, 15 of them replacing arXiv queries refused by the API rate limit, and the work lists of Thorner, Wong, Zaman,
+  Lemke Oliver), Zenodo (15 queries, 2025–2026), Hexagon (all 323
+  works), openai/math (749 preprints), 5 GXL claims, and the TeX of Thorner 2404.06482, Thorner–Zhao 2601.04189, Akbary–Wong
+  2103.15713. Still nothing with an ideal-class (or form) condition and a sign or Sato–Tate condition, uniform in D. One caveat:
+  a per-D bound |D|^{C} with C of order 10^{10} looks derivable from published results (BTZ Theorems 1.2 and 1.4 for the dihedral
+  family; Ramakrishnan–Wang, Luo, Thorner–Zhao, Hoffstein–Ramakrishnan, Banks and Thorner 2025 for exceptional zeros;
+  Thorner–Zaman for m = 0) by Linnik's method; we did not write it out and found it stated nowhere. Theorem D's content is the
+  exponent 3 (9/4 one-sided) for almost all D, with short intervals.
 
 ## 9. Dead ends (NOGO candidates)
 - Sign with a degree-one minorant: impossible (Remark in §5). Sign needs the degree-6 family Sym²f ⊗ θ_χ, so A₀ = 3.
@@ -369,4 +479,27 @@ where A(1−σ) > min{½, a(1−σ)/(3−2σ)}, and Markov needs φ(σ) = (b/(3�
 - Per-D sieve inside the family detector: reproduces X times Theorem C (the sum of per-D bounds), no gain over the endpoints.
 - Lindelöf on average for Σ_χ|L(½, f⊗θ_χ)|² via Waldspurger/Gross periods: equals a fourth moment of toric periods over the
   class group, i.e. averaged mixing (Michel–Venkatesh conjecture; Khayutin, Blomer–Brumley–Khayutin under GRH). Out of reach.
-- Intervals needing M ≥ 3: blocked only by Landau–Siegel zeros of Sym^m f ⊗ χ_d, m ≥ 3 (§7).
+- (Withdrawn 2026-10-21: "intervals needing M ≥ 3 are blocked by Landau–Siegel zeros of Sym^m f ⊗ χ_d". Thorner, IMRN 2025,
+  excludes those zeros for every m; Theorem D_M of §7 is unconditional.)
+- Lead (not pursued): a log-free form of Theorem C (no |D|^ε loss near σ = 1) together with the exceptional-zero results of §5.6
+  would give a per-D theorem with a moderate exponent instead of the almost-all statement.
+
+## 10. Repairs after review (2026-10-21)
+The reviewer judged the first version FLAWED as written, repairable. Items and where they are fixed:
+1. *Unit windows.* Theorem C counts zeros with |γ − t| ≤ 1; (C′) states the all-heights version with the extra factor T. Uses:
+   §3 comparison (PT count |γ| ≤ T; T-exponents compared), §5.4(b) (≤ 3T₁ windows written out; the m = 1 margin is now
+   s₁ − 3ε₀ − (5/3+4ε₀)(κ+ε₁) > δ/2), §7 (per window, resp. bounded T), REPORT.
+2. *Lemma B tail.* The old tail bound O(|D|^{−8}) was not uniform in V and v. New cutoff P = VL₀(3|D|V(|v|+3))^ε with
+   B = 1 + (m+13)/ε gives a tail ≤ C(ε)(|D|V(|v|+3))^{−10} for every χ; the statement is unchanged and now proved uniformly in
+   V ≥ 1, v ∈ R. Uses re-checked: only V = 1 and the mollifier bound are used (Theorem C class II, Proposition F, Theorem D⁺).
+3. *Coefficients.* (R1′) gives the base-change coefficients λ_m(𝔞) prime by prime (split, ramified, inert, p | N), shows where they
+   differ from λ_{Sym^m f}(N𝔞), gives Rankin's identity for the brief's λ_f(N𝔞)χ(𝔞), and proves |λ_m(𝔞)| ≤ d_{m+1}(𝔞),
+   |μ_m(𝔞)| ≤ d_{m+1}(𝔞), |λ_f(N𝔞)| ≤ d_4(𝔞); Lemma A uses nothing else.
+4. *Exceptional zeros.* §5.6: (J5) and the repulsion of (J4) cover only the genus (Dirichlet) twists; possible exceptional zeros of
+   the non-genus twists are removed by discarding the exceptional set E₁ of Proposition F (for D ∉ E₁ there is no non-genus zero
+   with β ≥ σ_J at all). (Remark: such zeros do not exist anyway, by Ramakrishnan–Wang, Luo, Thorner–Zhao; not used.)
+5. *Minorants.* §5, "Positivity": c₀ > 0 gives positivity only together with the m = 0 lower bound ν_DH/8 and m = 1, 2 errors
+   ≤ η₀ν_DH (which is why (e) needs the repulsion ν^♯ ≤ 2ν_D); table of c₀, c₁, c₂, η₀ and the constant of (5.1) for every set of
+   Corollary D1. `params2.py` → `params2.out`: 85 checks, all OK (minorants, margins, δ_e, the Lemma B exponent, Theorem D_M).
+Found while repairing: Thorner (IMRN 2025) excludes Landau–Siegel zeros of Sym^m f ⊗ χ for every m, so the thresholds
+(M+7)/3 for minorant degree M ≥ 3 are unconditional (Theorem D_M, §7); the §9 entry saying otherwise is withdrawn.
