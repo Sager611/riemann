@@ -214,3 +214,4 @@
 - R109 floor 13/15: bootstrapping, density-only, reflection to σ<1/2 dead. [Lean](Riemann/Tree/R109.lean)
 - Break 13/15 floor (two-piece / mollified detector): no; floor also forced elsewhere in the system. [report](Riemann/Deep/QRHImprove/REPORT3.md)
 - R75 correction: Q(A) eq. (38) is correct (misuse elsewhere); Velez Lemma 7.1 follows from Prop. 6.1; Li-Zenodo states no claim. Robin-Zenodo eq. (19) refuted in Lean. [Lean](Riemann/Deep/Pinned/Refute.lean)
+- OpenAI primitive-roots preprint audit: no false step; rests on the unrefereed Type II estimate (Thm 3.1) of OpenAI "The Poisson–Dirichlet law for prime predecessors" (24 Sep 2026). [report](Riemann/Deep/PrimRoot/REPORT.md)
