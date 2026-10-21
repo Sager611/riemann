@@ -1,0 +1,46 @@
+{
+  "history_sha256": "e8b13ddcc455a5ed18cc60d4a022f0d63b249f19af12d7cbb50e8e421e5ec2fc",
+  "initial_delay": "1/100000000",
+  "initial_q": "1000002000001/1000000000000",
+  "initial_strip_q": "1",
+  "kernel_count": 843,
+  "label": "classical_dbn4",
+  "parts": 32,
+  "provider_steps": {
+    "0": 8512,
+    "1": 10485
+  },
+  "providers": [
+    0,
+    1
+  ],
+  "rounding_grid_bits": 96,
+  "schema": "PLANAT_CLASSICAL_SOURCE_PORTFOLIO_V1",
+  "seconds": 31.278438091278076,
+  "shift_steps": {
+    "r_107_200": 1988,
+    "r_113_200": 356,
+    "r_19_40": 563,
+    "r_1_2": 70,
+    "r_21_40": 3763,
+    "r_23_40": 471,
+    "r_3_5": 8122,
+    "r_49_100": 2823,
+    "r_51_100": 841
+  },
+  "source_bounds_are_assumptions": true,
+  "source_files": [
+    "SOURCE_OLD_ENHANCED.json",
+    "SOURCE_RETUNED.json"
+  ],
+  "source_hashes": [
+    "235c34ae1c0efb03458a39687685451f9b2e0febbaab3d2d6ef38cf9d9cad714",
+    "29840261b1fee53867a61ab32c4ab1f4b81ecc588c93463b0ef28d02fcb76058"
+  ],
+  "steps": 18997,
+  "terminal_q": "1/100000000",
+  "upper_decimal": "0.148408913066829",
+  "upper_exact": "148408913066829/1000000000000000",
+  "uses_continuum_shift": false,
+  "uses_seven_eighths": false
+}

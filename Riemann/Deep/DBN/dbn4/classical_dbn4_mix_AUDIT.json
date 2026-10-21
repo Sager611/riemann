@@ -1,0 +1,9 @@
+{
+  "PASS": true,
+  "upper_exact": "148368783506957/1000000000000000",
+  "upper_decimal": "0.148368783506957",
+  "steps": 18992,
+  "mixed_kernels_used": 343,
+  "single_kernels_used": 583,
+  "mixed_steps": 9012
+}
