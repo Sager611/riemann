@@ -222,3 +222,4 @@
 - Generalize ring-class density: three wider thin families work (routine, same method); general number fields fail (lattice lemma breaks in degree 3). [report](Riemann/Deep/Density2/REPORT.md)
 - Unconditional least prime by a form from ring-class density + Linnik machinery: no improvement on the record 455 (exponent set by zeros within 0.6/log|D| of 1). [report](Riemann/Deep/LeastPrimeForm/REPORT.md)
 - Elston Weil certificate (half-width 1.495, Zenodo 23174403): audited, rigorous, no gap. [audit](Riemann/Deep/WeilRecord/ELSTON.md)
+- Improve ring-class density exponent: second-moment toolkit is optimal (e(σ) = 2(1−σ)/(3−2σ)); subconvexity helps only for σ > 0.9915–0.9995. [report](Riemann/Deep/Density3/REPORT.md)
