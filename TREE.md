@@ -135,5 +135,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R117 can family / thin-family methods say anything new about ζ itself? [R117.lean](Riemann/Tree/R117.lean)
 - R118 where new records or theorems can hide: Chebotarev–Sato–Tate in every class open (→ Orca); 4 dead or known, 4 later. [R118.lean](Riemann/Tree/R118.lean)
 - R119 claimed proofs and RH-equivalent records 2025–26: 120-state RH Turing machine (→ Orca audit), two proof claims queued. [R119.lean](Riemann/Tree/R119.lean)
-- R120 FRONTIER (next)
+- R120 eight recent Zenodo claims: all conditional, circular or broken on first reading (one Lean "proof" only restates RH). [R120.lean](Riemann/Tree/R120.lean)
+- R121 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
