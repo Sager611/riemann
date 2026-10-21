@@ -2,6 +2,7 @@
 
 Goal: Prove or disprove the Riemann Hypothesis by endless Lean proof-tree search (≥8 scouts/round, NOGO log, commit per round, never stop).
 Priority (user, 2026-10-20): hunt NEW discoveries (new theorems, records, counterexamples, false steps); formalizing known results is secondary. DISCOVERIES.md strict: new theorems, records, counterexamples to established statements only. Broken claimed proofs → REFUTATIONS.md; routine/conditional deductions → COROLLARIES.md; formalizations → FORMALIZATIONS.md.
+Disk (user, 2026-10-21): keep on disk only what is actively worked on; delete scratch, downloads, caches and `.lake` of finished work immediately (re-fetch Mathlib with `lake exe cache get` when a build is needed).
 
 ## Work loop (never stop)
 1. Pick frontier node in `TREE.md`.
