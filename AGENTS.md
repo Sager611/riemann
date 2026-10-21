@@ -1,7 +1,7 @@
 # riemann — rules
 
 Goal: Prove or disprove the Riemann Hypothesis by endless Lean proof-tree search (≥8 scouts/round, NOGO log, commit per round, never stop).
-Priority (user, 2026-10-20): hunt NEW discoveries (new theorems, records, counterexamples, false steps); formalizing known results is secondary. DISCOVERIES.md = new mathematics only; formalizations of known proofs go to FORMALIZATIONS.md.
+Priority (user, 2026-10-20): hunt NEW discoveries (new theorems, records, counterexamples, false steps); formalizing known results is secondary. DISCOVERIES.md strict: new theorems, records, counterexamples to established statements only. Broken claimed proofs → REFUTATIONS.md; routine/conditional deductions → COROLLARIES.md; formalizations → FORMALIZATIONS.md.
 
 ## Work loop (never stop)
 1. Pick frontier node in `TREE.md`.
