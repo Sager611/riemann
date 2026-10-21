@@ -14,8 +14,8 @@ zero count (Z), the functional equation (FE), the test function and the explicit
 
 | # | Candidate | Previous record | Best from the 2026 inputs | Verdict |
 |---|---|---|---|---|
-| 1 | least prime p(Q) represented by a primitive positive definite form of discriminant D | \|D\|^694 (Thorner–Zaman 2017); \|D\|^A with A unspecified (Hexagon 2610.00178 §54, Oct 2026) | p(Q) ≪ \|D\|^{2B♭+ε} (§1, Thm 2); \|D\|^{7/4+ε} from (Hu) | **NEW (main)** |
-| 1' | zero density for ring class L-functions | none with a small exponent found | Σ_χ N(σ) ≪ \|D\|^{2σ(1−σ)+ε}, unconditional (§1, Thm 1) | **NEW (tool)** |
+| 1 | least prime p(Q) represented by a primitive positive definite form of discriminant D | \|D\|^455 (Zaman, PhD thesis 2017, Cor 1.4.1); \|D\|^694 (Thorner–Zaman 2017); \|D\|^A with A unspecified (Hexagon 2610.00178 §54, Oct 2026) | under (L): p(Q) ≪ \|D\|^{2B♭+ε} (§1, Thm 2); under (Hu): \|D\|^{7/4+ε} | **NEW (main; conditional on (L))** |
+| 1' | zero density for ring class L-functions | weaker in \|D\| for every σ: Pascadi–Thorner 2508.14888 Thm 1.3; Kowalski–Michel 2002; Weiss/Thorner–Zaman (log-free); see [NOVELTY.md](NOVELTY.md) | Σ_χ N(σ;t) ≪ \|D\|^{2σ(1−σ)+ε}T³ per unit window, unconditional (§1, Thm 1) | **NEW (tool)** |
 | 2 | least prime ideal in a ray class | \|d_K\|^694 N𝔪^521 (TZ17 Thm 1.1, K imaginary quadratic) | (\|d_K\|N𝔪)^{3+ε} for K imaginary quadratic (§2, Thm 8); general K: substitution only | new, minor |
 | 3 | Goldbach exceptional set | X^{7/12+ε} (Pintz–Althöfer 2610.15559) | N^{1/2}(log N)^100: Li–Liu arXiv 2610.26756 (19 Oct) | known |
 | 4 | least QNR, least prime QR | (log q)^8 (Hexagon 178, Lemma 1.6) | (log q)^{1/δ♭} = (log q)^{7.993} | substitution; barrier |
@@ -73,7 +73,7 @@ in an interval of length 2(N/a)^{1/2}. Row y = 0 contains only the primitive vec
 ≤ 2V rows with y ≠ 0 holds ≤ 2(N/a)^{1/2} + 1 points. So P_Q(N) ≤ 2 + 2V(2(N/a)^{1/2} + 1) =
 2 + 8N|D|^{−1/2} + 2V. Reduction gives |D| = 4ac − b² ≥ 3a², so V ≤ 2·3^{−1/4}N^{1/2}|D|^{−1/4}. □
 
-### Lemma 2 (large sieve for ring class characters)
+### Lemma 2 (weighted large sieve for ring class characters)
 For 0 < ε ≤ 1/2, N ≥ 1 and complex c_𝔞 supported on (𝔞,f) = 1, N𝔞 ≤ N:
 
   Σ_{χ∈Ĝ} |Σ_𝔞 c_𝔞χ(𝔞)|² ≤ (30/ε) log²(3|D|) (N + |D|^{1/2}) Σ_𝔞 m(𝔞)^{1+2ε}|c_𝔞|².
@@ -86,9 +86,14 @@ prime to f with [𝔟] = C and N𝔟 ≤ N. Choose a reduced Q with [𝔞_Q] = C
 h·π_C ≤ 3log²(3|D|)(2|D|^{1/2} + 8N + 4N^{1/2}|D|^{1/4}) ≤ 30log²(3|D|)(N + |D|^{1/2}).
 Finally |B_𝔟|² ≤ ζ(1+2ε)Σ_m m^{1+2ε}|c_{m𝔟}|² and ζ(1+2ε) ≤ 1/ε. □
 
-*Remark.* Without the decomposition 𝔞 = m𝔟 the constant is at least hN^{1/2} for N < |D|: in the
-principal class the ideals of norm ≤ N are essentially the (n), n ≤ N^{1/2}. The decomposition is the
-step that makes h ≈ |D|^{1/2} characters behave like the characters to a modulus ≈ |D|^{1/2}.
+*Remark.* Lemma 2 is a weighted inequality, and the weight m(𝔞)^{1+2ε} cannot be dropped. Take c_𝔞 = 1
+on the R ideals (n), n ≤ N^{1/2}, (n,f) = 1: every χ sees the sum R, so the left side is hR² while
+Σ|c_𝔞|² = R. An unweighted constant is therefore ≥ hR ≍ hN^{1/2}φ(f)/f, which exceeds N + |D|^{1/2} by
+a power of |D| when |D|^ε < N < |D|^{1−ε}. The decomposition 𝔞 = m𝔟 moves this loss into the weight.
+For coefficients bounded by divisor functions (every use below) Lemma 3 shows the weight costs only
+N^{2ε}; then h ≈ |D|^{1/2} characters behave like the characters to a modulus ≈ |D|^{1/2}. Published
+large sieves for this family have constant ≍ N + |D| (Huxley/Schaal/Schumer specialised, as quoted by
+Ditchen 1312.1502; Pascadi–Thorner 2508.14888, Thm 1.1).
 
 ### Lemma 3 (coefficient sums)
 For k ≥ 1, ε > 0, M ≥ 2: Σ_{N𝔞≤M} m(𝔞)^{1+2ε}d_k(𝔞)²/N𝔞 ≤ C(k,ε)M^{2ε}, and the same sum without
@@ -123,7 +128,8 @@ Let 1 ≤ X ≤ |D| and M_X(s,χ) := Σ_{N𝔡≤X,(𝔡,f)=1} μ_K(𝔡)χ(𝔡
    Lemma 3 to the part N𝔟 ≤ P:
    Σ_{χ∈Ĝ}|S_{j,𝔢}M_X|² ≤ C(ε)log²(3|D|)(P + |D|^{1/2})P^{2ε} + 2h·C(ε)|D|^{−16} ≤ C(ε)|D|^ε P^{1+3ε}.
 5. Sum over 𝔢, j and the groups, and include step 1: the total is
-   ≤ C(ε)|D|^{12ε}P^{1+3ε} ≤ C(ε)|D|^{1/2+15ε}(X(|u|+3))^{1+5ε}. Rename ε. □
+   ≤ Cd(f)^{14}|D|^εP^{1+3ε} ≤ C(ε)|D|^{15ε}P^{1+3ε} ≤ C(ε)|D|^{1/2+19ε}(X(|u|+3))^{1+5ε} (ε ≤ 1/3).
+   Rename ε. □
 
 ### Lemma 5 (zero detector)
 Let 0.6 ≤ σ ≤ 1 and 2 ≤ X ≤ Y. For (𝔞,f) = 1 put a_𝔞 := Σ_{𝔡|𝔞, N𝔡≤X} μ_K(𝔡); so a_{O_K} = 1,
@@ -145,6 +151,11 @@ By Stirling, |Γ(v+iu)| ≤ C₃e^{−|u|} for −1/2 ≤ v ≤ −1/10. If (I) 
 For every ε > 0, every D < 0 and every t ∈ R:
 - (a) N_D(σ;t) ≤ C(ε)|D|^{2σ(1−σ)+ε}T³ for 0.6 ≤ σ ≤ 1;
 - (b) N_D(σ;t) ≤ C|D|^{1/2}log³(3|D|)log T for every σ.
+
+Height dependence: (a) is per unit window. Summing over the windows |t − k| ≤ 1, |k| ≤ T, gives
+Σ_χ N(σ,T,χ) ≤ C(ε)|D|^{2σ(1−σ)+ε}T⁴ for T ≥ 3, where N(σ,T,χ) counts the zeros of L(s,χ*) with
+β ≥ σ and |γ| ≤ T. Only the discriminant aspect is claimed. The T-aspect is crude (Pascadi–Thorner's
+family bound has T^{8(1−σ)/(3−2σ)}); Theorem 2 needs only bounded heights, since |W(ρ)| ≪ (1+|γ|)^{−6}.
 
 *Proof.* (b) follows from (F3) and (F4). For (a) we may assume |D| ≥ D₀(ε); otherwise use (b).
 Put ε₀ := ε/100, X := |D|^{ε₀}, Y := |D|^{σ−1/2} ≥ |D|^{1/10}, Z := 2Y log²Y. The trivial character
@@ -215,8 +226,9 @@ With x^β ≤ x^{1/2} + 1_{β>1/2}log x∫_{1/2}^{β}x^σdσ,
   Σ_χΣ_ρ x^β|W(ρ)| ≤ CΣ_k (1+|k|)^{−6}[x^{1/2}N_D(0;k) + log x∫_{1/2}^{B♭}x^σN_D(σ;k)dσ].   (2)
 
 Write x = |D|^{2B♭+ε}y with y ≥ 1, and let |D| ≥ D₀(ε). Put T_k = |k| + 3.
-- By Theorem 1(b), x^{1/2}N_D(0;k) ≤ x|D|^{−0.37}log T_k, and x^σN_D(σ;k) ≤ x|D|^{−0.19}log T_k for
-  1/2 ≤ σ ≤ 0.6, because x^{−0.4} ≤ |D|^{−0.69}.
+- By Theorem 1(b), x^{1/2}N_D(0;k) ≤ x|D|^{−0.37}log T_k, and x^σN_D(σ;k) ≤ x|D|^{−0.19}y^{−0.4}log T_k
+  for 1/2 ≤ σ ≤ 0.6, because x^{−0.4} ≤ |D|^{−0.69}y^{−0.4}. Keep the factor y^{−0.4}: the integral in
+  (2) carries log x = log(|D|^{2B♭+ε}y), and y^{−0.4}log x ≤ C log(3|D|) for every y ≥ 1.
 - For 0.6 ≤ σ ≤ B♭, Theorem 1(a) with ε′ = εδ♭/4 gives
   x^σN_D(σ;k) ≤ C(ε)x(|D|^{2σ}/x)^{1−σ}|D|^{ε′}T_k³ ≤ C(ε)x(|D|^{−ε}y^{−1})^{δ♭}|D|^{ε′}T_k³,
   since |D|^{2σ} ≤ |D|^{2B♭} and 1 − σ ≥ δ♭. As y^{−δ♭}log(|D|³y) ≤ C(ε)|D|^{ε′}, the integral term
@@ -231,8 +243,12 @@ h ≤ 3|D|^{1/2}log²(3|D|) and x ≥ |D|^{1.7}. So for |D| ≥ D₀(ε),
 Σ_{good 𝔭, x/2<N𝔭<x} log N𝔭·w(N𝔭/x) ≥ xW(1)/(2h). Each p lies under at most two good 𝔭, so there
 are ≥ xW(1)/(4h‖w‖log x) good primes p.
 
-For |D| < D₀(ε) the forms are finitely many. Each represents a prime (Weber), and a finite search
-gives an effective bound. Under (Hu) replace B♭ by 7/8 throughout. □
+*Small discriminants.* Let |D| < D₀(ε), and use Theorem 1(b) for every σ in (2). The zero sum in (1)
+is ≤ Cx^{B♭}(1 + log x)D₀^{1/2}log³(3D₀), the error term in (1) is ≤ Ch·log(3D₀)log x, and the bad
+terms are ≤ C(log D₀·log x + √x). Since 1 ≤ h ≤ 3D₀^{1/2}log²(3D₀), the first two are ≤ xW(1)/8 and
+the third is ≤ xW(1)/(8h) once x ≥ C′(ε), an effective constant depending only on D₀(ε). Then the
+good terms are ≥ xW(1)/(2h) as before. So both claims hold for |D| < D₀(ε) once C(ε) ≥ C′(ε).
+Under (Hu) replace B♭ by 7/8 throughout. □
 
 ### Corollary 3 (ring class PNT in a power range)
 Assume (L). For every ε > 0 there is c(ε) > 0 such that, uniformly for |D| ≤ x^{1/(2B♭)−ε}
@@ -243,7 +259,9 @@ Assume (L). For every ε > 0 there is c(ε) > 0 such that, uniformly for |D| ≤
 So #{p ≤ x : Q represents p} = (Li(x)/h(D))(1 + O(x^{−c})) if C ≠ C^{−1}, and half of that if
 C = C^{−1}, up to the ≤ log|D| primes dividing D. Before, an asymptotic was known only for
 |D| = x^{o(1)}: Thorner–Zaman 2019, Thm 1.4, has relative error exp(−c log x/log|D|) plus an
-exceptional-zero term, which Hexagon 2610.00178 §54 removes using (O).
+exceptional-zero term, which Hexagon 2610.00178 §54 removes using (O). Under (L), the published family
+density of Pascadi–Thorner (2508.14888, Thm 1.3) would give only |D| ≤ x^{(3−2B♭)/3−ε} = x^{0.4167−ε},
+for fundamental D (not stated there).
 
 *Proof.* Put η := εδ♭/100, y := x^{1−η}, T₀ := x^{2η}. Take the smooth weights g_± of the proof of
 Theorem D′ in the ArtinHalfPlane NOTE. They satisfy 0 ≤ g₋ ≤ 1_{(y,x]} ≤ g₊ ≤ 1, have supports in
@@ -261,19 +279,23 @@ ideals of norm ≤ u in C number ≤ (2V+1)(2(u/a)^{1/2}+1) ≤ 8u|D|^{−1/2} +
 ψ_C(y) ≤ C log x(x^{1−η}|D|^{−1/2} + x^{1/2}) ≤ (x/h)x^{−η/2}, using h ≤ 3|D|^{1/2}log²(3|D|) and
 |D|^{1/2} ≤ x^{0.286}. Partial summation, and removal of prime powers (≤ 6√x), give π_C(x). □
 
-**Corollary 4.**
+**Corollary 4.** Assume (L).
 - The least prime of the form x² + ny² is ≪_ε n^{2B♭+ε}. Here D = −4n; trivially such a prime is ≥ n.
 - Let L/Q be generalized dihedral with imaginary quadratic subfield K, and let L lie in the ring class
   field of conductor f. Then for every σ ∈ Gal(L/K), the least p with Frob_p = {σ, σ^{−1}} is
   ≪_ε (f²|d_K|)^{2B♭+ε}. Lift σ to the ring class field and apply Theorem 2.
 
 **Remarks.**
-1. The exponent is 2B, so every improvement of the half-plane lowers it. B = 1/2 would give 1, the
-   GRH exponent. For Linnik's problem, by contrast, the density peak at σ = 5/7 makes B irrelevant.
+1. The exponent is 2B + ε (the ε is the |D|^ε of Theorem 1(a)), so every improvement of the
+   half-plane lowers it. B = 1/2 would give 1 + ε, the GRH exponent up to ε. For Linnik's problem, by contrast, the density peak at σ = 5/7 makes B irrelevant.
 2. Simple variant: take X = |D|^{1/2}, no k-th powers, and convexity instead of Lemma 4. This gives
    N_D ≪ |D|^{2(1−σ)+ε} unconditionally and p(Q) ≪ |D|^{2+ε} under (L).
 3. With (L) alone and the trivial zero count, x^{δ♭} ≫ h log|D| gives only |D|^{1/(2δ♭)} = |D|^{3.996}.
    The same comes from the least Chebotarev prime (FSW Cor 1.2, Hu (9.10)) on the ring class field.
+   The best published family densities do better but stay above 2B♭: (L) with Pascadi–Thorner
+   (2508.14888, Thm 1.3) gives |D|^{3/(3−2B♭)+ε} = |D|^{2.40} for fundamental D (up to |D|^{4.0} for
+   D = f²d_K with f large), and (L) with Kowalski–Michel (Pacific J. Math. 207 (2002), Thm 2) gives
+   |D|^{11}. Neither is stated in those papers.
 4. Three structural facts enter: h ≈ |D|^{1/2} (the family is the square root of its conductor);
    χ(m𝔞) = χ(𝔞) (Lemma 2); and χ̄(𝔞) = χ(𝔞̄), which makes the dual AFE sum a ring class sum (Lemma 4).
 
@@ -281,11 +303,13 @@ ideals of norm ≤ u in C number ≤ (2V+1)(2(u/a)^{1/2}+1) ≤ 8u|D|^{−1/2} +
 
 | Bound on p(Q) | Source |
 |---|---|
-| \|D\|^694 | Thorner–Zaman, ANT 11 (2017) (arXiv 1604.01750), Thm 1.2: best published, unconditional |
+| \|D\|^455 | Zaman, PhD thesis (Toronto 2017), Cor 1.4.1: best unconditional; Gaudet (arXiv 2408.01610) calls it the record |
+| \|D\|^694 | Thorner–Zaman, ANT 11 (2017) (arXiv 1604.01750), Thm 1.2: best in a journal, unconditional |
 | \|D\|^{20/3+ε} on average over D; \|D\|^{3+ε} for most forms of most D | Ditchen, arXiv 1312.1502 |
-| \|D\|^L, L unspecified | Gaudet, arXiv 2408.01610 (prime D, sieve); Hexagon 2610.00178 §54 (Oct 2026, uses (O)) |
+| \|D\|^L, L unspecified | Gaudet, arXiv 2408.01610 (prime D, sieve; L = 1.3·10^10 in his 2023 thesis); Hexagon 2610.00178 §54 (Oct 2026, uses (O)) |
 | \|D\|^{3.996} | substitution of (L), or of FSW/Hu with (L); not stated anywhere found |
-| **\|D\|^{1.7498}** | **this note, Thm 2** |
+| \|D\|^{2.40} (fundamental D) | (L) with Pascadi–Thorner's family density (Remark 3); not stated anywhere |
+| **\|D\|^{1.7498}** | **this note, Thm 2, under (L)** |
 | \|D\|log⁴\|D\| | GRH (Lagarias–Odlyzko/Bach–Sorenson on the ring class field; Sardari arXiv 1802.06193) |
 
 ## 2. Ray classes over imaginary quadratic fields (candidate 2)
@@ -325,7 +349,8 @@ Assume (L). For K imaginary quadratic, 𝔪 ⊂ O_K and C ∈ Cl_𝔪(K), there 
 degree one with N𝔭 ≤ C(ε)(|d_K|N𝔪)^{3+ε}.
 
 *Proof.* As for Theorem 2, with x = A^{3+ε}y. For 0.6 ≤ σ ≤ B♭, Theorem 7 gives
-x^σN_𝔪(σ;k) ≤ x(A^{−ε}/y)^{δ♭}A^{ε′}T_k³. For σ ≤ 0.6, x^{0.6}A^{1+ε′} ≤ xA^{−0.19}. The error
+x^σN_𝔪(σ;k) ≤ x(A^{−ε}/y)^{δ♭}A^{ε′}T_k³. For σ ≤ 0.6, x^{0.6}A^{1+ε′} ≤ xA^{−0.19}y^{−0.4}; keep y^{−0.4} to absorb the log x in (2), as in
+Theorem 2. The error
 H log(Ax) is ≤ xA^{−1}. Prime powers, degree-two primes and ramified primes contribute
 ≤ (x/H)A^{−0.4}. □
 
@@ -461,6 +486,9 @@ the OpenAI preprints, or arXiv 2026 (abs:"divisor problem", abs:"Piltz").
     class, represented: only Naslund's 3.99.
   - GXL evidence API, two claims: only the records above.
   - Keyless web search.
+- **Second audit (2026-10-20): [NOVELTY.md](NOVELTY.md).** The closest densities (Pascadi–Thorner
+  2508.14888, Kowalski–Michel 2002, Weiss/Thorner–Zaman) are weaker in |D| for every σ. The
+  unconditional record for p(Q) is |D|^455 (Zaman's thesis), not |D|^694.
 
 ## 9. Dead ends (NOGO candidates)
 
