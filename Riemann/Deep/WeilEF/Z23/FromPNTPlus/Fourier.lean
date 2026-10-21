@@ -24,7 +24,8 @@ set_option autoImplicit true
 open FourierTransform Real Complex MeasureTheory Filter Topology BoundedContinuousFunction
   SchwartzMap VectorFourier BigOperators
 
-local instance {E : Type*} : Coe (E → ℝ) (E → ℂ) := ⟨fun f n => f n⟩
+-- Named (was anonymous) to avoid an auto-name clash with the OpenAI PNT+ port (QRH/Ext/.../Wiener.lean).
+local instance Z23PNT.instCoeRealToComplexFun {E : Type*} : Coe (E → ℝ) (E → ℂ) := ⟨fun f n => f n⟩
 
 section lemmas
 

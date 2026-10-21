@@ -42,3 +42,9 @@ import Riemann.Deep.Hasse.Main
 import Riemann.Deep.Hasse.Hasse
 import Riemann.Deep.Yoshida.Beyond
 import Riemann.Deep.Pinned.Refute
+import Riemann.Deep.QRH.Bridge
+import Riemann.Deep.PNTError.Psi
+import Riemann.Deep.QRHCor.LOne
+import Riemann.Deep.QRHCor.Lindelof
+import Riemann.Deep.QRHCor.LindelofL
+import Riemann.Deep.QRHCor.Dirichlet
