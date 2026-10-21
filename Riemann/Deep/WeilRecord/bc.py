@@ -47,8 +47,13 @@ def vm_int(n):
 class Setup:
     def __init__(self, tag):
         self.tag = tag
+        self.rat = tag.startswith('L')          # tag 'L<p>o<q>': half-width L = p/q exactly (added 2026-10-20)
         if tag == 'e3':
             self.L = arb(3)/2; self.mu_f = math.exp(3.0)
+        elif self.rat:
+            from flint import fmpq
+            p_, q_ = [int(x) for x in tag[1:].split('o')]
+            self.Lq = fmpq(p_, q_); self.L = arb(self.Lq); self.mu_f = math.exp(2*p_/q_)
         else:
             self.L = arb(int(tag)).log()/2; self.mu_f = float(int(tag))
         self.ns = []
@@ -56,13 +61,21 @@ class Setup:
             p = vm_int(n)
             if p is None: continue
             if tag == 'e3': ok = n < self.mu_f
+            elif self.rat:
+                lg = arb(n).log()
+                if lg < 2*self.L: ok = True
+                elif lg > 2*self.L: ok = False
+                else: raise ValueError('cannot decide n < e^{2L}')
             else: ok = n < int(tag)
             if ok: self.ns.append((n, p))
-    def L_(self): return self.L if self.tag == 'e3' else arb(int(self.tag)).log()/2
+    def L_(self):
+        if self.tag == 'e3': return self.L
+        if self.rat: return arb(self.Lq)
+        return arb(int(self.tag)).log()/2
     def coef(self, n, p): return arb(p).log()/arb(n).sqrt()
     def tau(self, n):
         """log n / L in u-units; exact rational 2b/a when n^a = mu^b (e.g. mu=16, n=2,4,8)."""
-        if self.tag != 'e3':
+        if self.tag != 'e3' and not self.rat:
             mu = int(self.tag)
             for a_ in range(1, 65):
                 for b_ in range(1, 2*a_ + 1):

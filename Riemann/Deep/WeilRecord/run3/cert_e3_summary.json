@@ -1,0 +1,65 @@
+{
+ "mu": "e3",
+ "L": "1.50000000000",
+ "N": 3000,
+ "prec": 384,
+ "prec_c": 512,
+ "Omega": "1216.0000",
+ "gamma": "5.1500000",
+ "s": "4.295900000",
+ "tau": "1.00000e-100",
+ "u": [
+  660,
+  219
+ ],
+ "parity": {
+  "0": {
+   "d": 1500,
+   "epsJ": "4.070e-100",
+   "radH_F": "1.025e-109",
+   "normW_upper": "3.505",
+   "sigma": "2^-326",
+   "resF": "1.625e-108",
+   "chol_bound": "1.728e-108",
+   "certified": true,
+   "lambda_min_H_lower": "7.315e-99",
+   "lambda_min_T_lower": "5.953e-100"
+  },
+  "1": {
+   "d": 1500,
+   "epsJ": "1.373e-100",
+   "radH_F": "9.297e-110",
+   "normW_upper": "3.468",
+   "sigma": "2^-312",
+   "resF": "7.887e-111",
+   "chol_bound": "1.009e-109",
+   "certified": true,
+   "lambda_min_H_lower": "1.199e-94",
+   "lambda_min_T_lower": "9.965e-96"
+  }
+ },
+ "H1": {
+  "schur_bound": "4.29580974607",
+  "cells": 32000,
+  "all_cells_checked": true,
+  "weight_exactly_even": true,
+  "weight_file": "w_e3_32000.txt"
+ },
+ "H3_C": "0.1154449679",
+ "H4": [
+  "0.1152410651",
+  "0.1147801238"
+ ],
+ "H2_mt": "0.854100000000",
+ "H5": {
+  "rho": 3.0,
+  "rN": "3.598e-375",
+  "e": "2.636e-371",
+  "n": "5.273e-746",
+  "h": "4.458e-744",
+  "alpha": "2.636e-371",
+  "beta": "3.613e-371",
+  "correction_norm_bound": "3.250e-369"
+ },
+ "certified": true
+}

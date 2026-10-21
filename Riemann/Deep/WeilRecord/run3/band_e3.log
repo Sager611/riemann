@@ -1,0 +1,30 @@
+band: mu=e3 N=3000 Omega=1216.0 gamma=5.150000 prec=384 bprec=2336 panels=26 nodes=3856 entry err K<=2.25e-105 B<=2.04e-106 (122s)
+  per-entry error budget (normalised entries): K: gauss 2.25e-105 + node rounding 1.11e-108 + flush 9.33e-113 = 2.25e-105;  B: gauss 2.04e-106 + 8.21e-110 + 9.33e-113 = 2.04e-106
+    nodes 400/3856 8s
+    nodes 800/3856 17s
+    nodes 1200/3856 27s
+    nodes 1600/3856 44s
+    nodes 2000/3856 67s
+    nodes 2400/3856 100s
+    nodes 2800/3856 142s
+    nodes 3200/3856 224s
+    nodes 3600/3856 313s
+    nodes 3856/3856 381s
+      567.60 real       443.79 user        31.26 sys
+          1075281920  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             3078681  page reclaims
+                 230  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               12112  voluntary context switches
+             2416006  involuntary context switches
+       4050553201093  instructions retired
+       1085835519113  cycles elapsed
+          1795753784  peak memory footprint

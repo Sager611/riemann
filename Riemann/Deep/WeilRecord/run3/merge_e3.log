@@ -1,0 +1,20 @@
+  parity 0: max radius A0 4.24e-114, B0 1.59e-113
+  parity 1: max radius A0 2.14e-114, B0 5.91e-114
+      253.91 real       175.28 user        16.82 sys
+          1890598912  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1491690  page reclaims
+                 518  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               37374  voluntary context switches
+             1217220  involuntary context switches
+       1871676581142  instructions retired
+        455334673872  cycles elapsed
+          2385348720  peak memory footprint

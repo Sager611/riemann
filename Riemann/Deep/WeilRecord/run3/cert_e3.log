@@ -1,0 +1,33 @@
+cert3 inputs: grams_e3_3000_384.bin sha256:265c36ba7cd8a4d8  band_e3_3000_1216_103o20_384.bin sha256:698f5e79b613fa10  w_e3_32000.txt sha256:5181ae8068b26341  python-flint 0.9.0  python 3.14.7  prec=384 prec_c=512
+schur: mu=e3 cells=32000 (all 32000 cells checked; weight exactly even: True) sup R_w <= 4.295809746 (cell 8861)
+  H1 ||C_p|| <= 4.295809746 <= s = 4.295900000  [weighted Schur test, all 32000 cells, weight exactly even: True]
+  H3 C = a(Omega) - gamma = 0.11544497 > 0;  H4 u0 E0 = 0.11524107 <= C, u1 E1 = 0.11478012 <= C
+cert3: mu=e3 L=1.500000000 N=3000 Omega=1216.0000 c=1824.00 gamma=5.1500000 s=4.2959000 b=9.4459 tau=1.00e-100
+  H2 m_t = gamma - s - tau = 0.8541000000 > 0;  H5 (rho=3.0): r_N = 3.60e-375, e = 2.64e-371, n = 5.27e-746 < m_t, h = 4.46e-744, alpha = 2.64e-371, beta = 3.61e-371, ||alpha I + beta D|| <= 3.25e-369
+  parity 0: d=1500  H6 epsJ = 4.07e-100 (ev = 3.06e-103);  ||W||_2 <= 3.505;  ||rad H||_F <= 1.03e-109  (461s)
+  parity 0: lambda_est(H_mid) = 1/||L^-1||_F^2 = 1.096e-98  (509s)
+  parity 0: H7 H_mid - 2^-326 I = L L^T + Res;  ||Res||_F + ||rad H||_F <= 1.63e-108 + 1.03e-109 = 1.73e-108 < 2^-326 = 7.32e-99 -> PSD CERTIFIED  (598s)
+  parity 0: proved margins  lambda_min(H) >= 7.315e-99;  ||W||_2 <= 3.505;  lambda_min(W^-1 + Z) >= 5.953e-100 > 0
+  parity 1: d=1500  H6 epsJ = 1.37e-100 (ev = 3.06e-103);  ||W||_2 <= 3.468;  ||rad H||_F <= 9.30e-110  (1079s)
+  parity 1: lambda_est(H_mid) = 1/||L^-1||_F^2 = 2.300e-94  (1130s)
+  parity 1: H7 H_mid - 2^-312 I = L L^T + Res;  ||Res||_F + ||rad H||_F <= 7.89e-111 + 9.30e-110 = 1.01e-109 < 2^-312 = 1.20e-94 -> PSD CERTIFIED  (1227s)
+  parity 1: proved margins  lambda_min(H) >= 1.199e-94;  ||W||_2 <= 3.468;  lambda_min(W^-1 + Z) >= 9.965e-96 > 0
+RESULT mu=e3: CERTIFIED  Q(f) >= 1.00000e-100 ||f||^2 for every f supported in [-L, L], L = 1.500000000
+     1258.05 real       954.23 user        99.29 sys
+          2308898816  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             9663086  page reclaims
+                 251  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               79926  voluntary context switches
+             6563512  involuntary context switches
+       9264882446865  instructions retired
+       2373953874425  cycles elapsed
+          4504867280  peak memory footprint
