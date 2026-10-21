@@ -30,6 +30,13 @@ conditionally for this reason.
 - **(CGL)** Chen–Gupta–Li, arXiv 2507.08296v2, Thm 1.2 ("in all cases"). For 1/2 < σ < 1, T ≥ 2
   and ε > 0: Σ_{χ mod q} N(σ,T,χ) ≪_ε (qT)^{ε}(q^{7/3(1−σ)}T^{2(1−σ)} + (qT)^{30/13(1−σ)}).
   Here N(σ,T,χ) counts zeros β+iγ of L(s,χ) with β ≥ σ and |γ| ≤ T, with multiplicity.
+  *Uniformity and effectivity* (source checked, 2026-10-20). CGL state the bound as (qT)^{o(1)}(…),
+  which by their ⪅ convention (§1, l. 270 of the source) means ≤ C(ε)(qT)^ε(…) for qT ≥ Q(ε), with
+  C(ε), Q(ε) depending only on ε: uniform in q and T. For qT < Q(ε), (Z) bounds the left side by
+  O_ε(1), so the bound holds for all q, T after enlarging C(ε). The source never says "effective" or
+  "ineffective" (rg: 0 hits). Its proof (Guth–Maynard large values, Heath-Brown's double zeta sums,
+  zero detection) uses no Siegel-zero or other ineffective input ("exceptional" occurs only in the
+  introduction), so C(ε), Q(ε) are expected to be effective, but this is not asserted or checked.
 - **(Z)** Zero count [Iwaniec–Kowalski, Prop. 5.7]. Let χ be a primitive Hecke character of E and
   A(χ) = Δ_E·N𝔣_χ. Then #{ρ : |Im ρ − t| ≤ 1} ≤ c₀(log A(χ) + n_E log(|t|+3)), with c₀ absolute.
 - **(FE)** Hecke functional equation: Λ(s,χ) = A(χ)^{s/2}γ_χ(s)L(s,χ) = W(χ)Λ(1−s,χ̄), where γ_χ
@@ -81,7 +88,8 @@ Finally |x^ρ| ≤ x^{1−δ}, and by (Z),
 - (ii) there are A ≥ 2 and A' ∈ [0,3] such that for 1/2 ≤ σ ≤ 1−δ, T ≥ 1 and ε > 0:
   N(σ,T;q) := Σ_{χ mod q} N(σ,T,χ) ≤ C_ε(qT)^ε q^{A(1−σ)}T^{A'(1−σ)}.
 
-Then for every η > 0 there are effective q₀(η) and c = c(η,δ) > 0 with the following property.
+Then for every η > 0 there are q₀(η) and c = c(η,δ) > 0, effective in terms of δ, η and the
+constants C_ε of (ii), with the following property.
 For q ≥ q₀, (a,q) = 1 and x ≥ q^{A+η},
 
   S(x;q,a) := Σ_{n≡a (q)} Λ(n)f(n/x) = (xΦ(1)/φ(q))·(1 + O_η(q^{−c})).
@@ -100,7 +108,8 @@ x^β ≤ x^{1/2} + 1_{β≥1/2}∫_{1/2}^{β}x^σ log x dσ. Hypothesis (i) give
 
   Z(T) ≤ x^{1/2}N(0,T;q) + log x·∫_{1/2}^{1−δ}x^σ N(σ,T;q)dσ.
 
-By (Z), N(0,T;q) ≤ CqT log(3qT). Take ε := ηδ/4 in (ii). For 1/2 ≤ σ ≤ 1−δ we have 1−σ ≥ δ.
+By (Z), N(0,T;q) ≤ CqT log(3qT). We may assume η ≤ 1: the conclusion for η implies it for every
+η' ≥ η. Take ε := ηδ/4 ≤ 1/8 in (ii); ε < 2 is needed below for the k-sum to converge. For 1/2 ≤ σ ≤ 1−δ we have 1−σ ≥ δ.
 Writing x = q^{A+η}y with y ≥ 1,
 
   x^σN(σ,T;q) ≤ C_ε x(qT)^ε T^{3}(q^A/x)^{1−σ} ≤ C_ε x(qT)^ε T³(q^{−η}/y)^δ.
@@ -109,7 +118,7 @@ Since y^{−δ}log(q^{A+η}y) ≪_δ log q, this gives
 
   Z(T)/x ≤ Cq log(3qT)T x^{−1/2} + C_{η,δ}T^{3+ε}q^{−3ηδ/4}log q.
 
-Then Σ_χΣ_ρ x^β|Φ(ρ)| ≤ Σ_{k≥0}C_f(1+k)^{−6}Z(k+1). The weights make Σ_k(1+k)^{−6}(k+1)^{3+ε} finite, so
+Then Σ_χΣ_ρ x^β|Φ(ρ)| ≤ Σ_{k≥0}C_f(1+k)^{−6}Z(k+1). Since ε ≤ 1/8 < 2, Σ_k(1+k)^{−6}(k+1)^{3+ε} ≤ Σ_k(1+k)^{−2.875} < ∞, so
 
   Σ_χΣ_ρ x^β|Φ(ρ)| ≤ x·[Cq log(3q)x^{−1/2} + C_{η,δ}q^{−ηδ/2}].
 
@@ -128,7 +137,9 @@ so there is a prime p ≡ a (mod q) with x/2 < p < x. The finitely many q < q₀
   P(a,q) ≪_η q^{7/3+η}, using (CGL);
   P(a,q) ≪_η q^{12/5+η}, using only the published (H).
 
-The constants are effective.
+Effectivity: the (H) bound is effective (Huxley's proof has no Siegel-zero input). The (CGL)
+bound is uniform in q and is effective if CGL's C(ε), Q(ε) are (see (CGL) in §0: expected, not
+asserted). (O) is a qualitative zero-free region and adds no constant.
 
 *Proof.* Take δ = 1/8 from (O).
 - For (CGL): when T ≥ 1, q^{7/3(1−σ)}T^{2(1−σ)} + (qT)^{30/13(1−σ)} ≤ 2q^{7/3(1−σ)}T^{3(1−σ)}.
@@ -142,7 +153,8 @@ For every ε ∈ (0,1/10) there is c(ε) > 0 such that, uniformly for (a,q) = 1 
 
   ψ(x;q,a) = (x/φ(q))·(1 + O_ε(x^{−c(ε)})).
 
-With (H) instead of (CGL), the same holds for q ≤ x^{5/12−ε}.
+With (H) instead of (CGL), the same holds for q ≤ x^{5/12−ε}. The O_ε and c(ε) are effective
+with (H), and with (CGL) if CGL's constants are (§0).
 
 *Proof (sandwich).* Put η := ε/40, y := x^{1−η} and T₀ := x^{2η}. Take smooth weights
 0 ≤ g₋ ≤ 1_{(y,x]} ≤ g₊ ≤ 1 such that:
@@ -151,10 +163,36 @@ With (H) instead of (CGL), the same holds for q ≤ x^{5/12−ε}.
 - the transitions have widths ≍ y near y and ≍ x^{1−η} near x.
 
 Put G_±(t) = g_±(xt) and Φ_±(s) = ∫G_±(t)t^{s−1}dt. Then xΦ_±(1) = ∫g_± = x(1+O(x^{−η})).
-For Re s ≥ 1/8, |Φ_±(s)| ≤ ∫_{y/2x}^{2}t^{−7/8}dt ≤ 16. Integrating by parts m times gives
-|Φ_±(σ+it)| ≤ C_m(x^η/|t|)^m for |t| ≥ 1. The transition at t ≍ y/x costs only (y/x)^σ ≤ 1.
+G_± ∈ C_c^∞([y/2x, 2]), so Φ_± is entire. Write u := y/x = x^{−η}.
 
-Run the proof of Proposition 2 with Φ_± in place of Φ:
+*Mellin bounds.* Integrating by parts m times,
+|Φ_±(s)| ≤ |s(s+1)⋯(s+m−1)|^{−1}∫|G_±^{(m)}(t)|t^{σ+m−1}dt. The transition near t ≍ u has
+length ≍ u and |G^{(m)}| ≪_m u^{−m}, so it contributes ≪_m u^σ; the one near t = 1 has length ≍ x^{−η}
+and |G^{(m)}| ≪_m x^{ηm}, so it contributes ≪_m x^{η(m−1)}. If σ = −1/2, or −1/2 ≤ σ ≤ 2 and |t| ≥ 1, then
+|s(s+1)⋯(s+m−1)| ≫_m (1+|t|)^m, hence
+
+  |Φ_±(σ+it)| ≪_m (u^{min(σ,0)} + 1)·x^{ηm}(1+|t|)^{−m} ≤ x^{η/2+ηm}(1+|t|)^{−m}.      (B1)
+
+By (O) and (FE), every nontrivial zero of every Dirichlet L-function has 1/8 ≤ β ≤ 7/8. On this
+strip only, u^σ ≤ 1 and t^{σ−1} ≤ t^{−7/8} on (0,1], so
+
+  |Φ_±(σ+it)| ≤ ∫_0^2 t^{σ−1}dt ≤ 16,  |Φ_±(σ+it)| ≤ C_m(x^η/|t|)^m (|t| ≥ 1),  1/8 ≤ σ ≤ 7/8.   (B2)
+
+*Explicit formula per character.* Lemma 1's constant C depends on the fixed f, so it is not reused
+for the x-dependent G_±. Redo its contour shift for a primitive χ* mod q* | q, from Re s = 2 to
+Re s = −1/2. The horizontal segments vanish as T_k → ∞ because, for fixed x, (B1) with m = 2 gives
+decay T_k^{−2} against |L'/L| ≪ log²(qT_k). Residues: xΦ_±(1) at s = 1 if χ* = 1; −x^ρΦ_±(ρ) at each
+nontrivial zero; −Φ_±(0) at s = 0 only if χ* ≠ 1 is even, where |Φ_±(0)| ≤ ∫_{u/2}^2 dt/t ≤ 2 + η log x.
+On Re s = −1/2, |L'/L| ≪ log(q(|t|+3)) as in Lemma 1, and (B1) with m = 2 gives
+|x^sΦ_±(s)| ≪ x^{−1/2+5η/2}(1+|t|)^{−2}. Hence
+
+  Σ_nΛ(n)χ*(n)g_±(n) = 1_{χ*=1}xΦ_±(1) − Σ_ρ x^ρΦ_±(ρ) + O(log x + x^{−1/2+3η}log 3q),
+
+with an absolute O. Replacing χ by χ* costs ≤ ω(q)log 2x per character, as in Proposition 2.
+Averaged over χ with weight φ(q)^{−1}, the remainders total O(log 3q·log x), which is
+≤ (x/φ(q))·x^{−4/7}log²x because q ≤ x^{3/7}.
+
+Run the zero-sum part of the proof of Proposition 2 with Φ_± in place of Φ, using (B2):
 - Zeros with |γ| > T₀: take m := ⌈1/η⌉. By (Z) they contribute
   ≤ x^{7/8}·C_m x^{ηm}·Σ_{k≥T₀}k^{−m}·Cq log(qk) ≤ C_ε q x^{7/8−ηm+2η}log x ≤ C_ε q x^{−1/8+2η}log x ≤ x^{1/2}.
 - Zeros with |γ| ≤ T₀ contribute ≤ 16Z(T₀). Take ε' := ε/100 in (CGL). Since q^{7/3} ≤ x^{1−7ε/3}
