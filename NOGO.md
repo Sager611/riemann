@@ -221,3 +221,4 @@
 - Certified Weil window half-width log 4 (all gaps closed, rigorous): not a record — Elston (Zenodo 23174403, 6 Oct 2026) claims half-width 1.495. [proof](Riemann/Deep/WeilRecord/PROOF.md)
 - Generalize ring-class density: three wider thin families work (routine, same method); general number fields fail (lattice lemma breaks in degree 3). [report](Riemann/Deep/Density2/REPORT.md)
 - Unconditional least prime by a form from ring-class density + Linnik machinery: no improvement on the record 455 (exponent set by zeros within 0.6/log|D| of 1). [report](Riemann/Deep/LeastPrimeForm/REPORT.md)
+- Elston Weil certificate (half-width 1.495, Zenodo 23174403): audited, rigorous, no gap. [audit](Riemann/Deep/WeilRecord/ELSTON.md)
