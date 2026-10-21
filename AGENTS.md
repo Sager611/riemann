@@ -12,6 +12,7 @@ Priority (user, 2026-10-20): hunt NEW discoveries (new theorems, records, counte
 5b. Before any formalization: check Mathlib, openai/math, facebookresearch/atlas-lean, zeta23 trees yourself (GitHub API); scouts' "none known" is unreliable (Hasse was in ATLAS).
 5c. Disk low: truncate `.lake/build/ir/**/*.setup.json` to 0 bytes (no rebuild; QRH port had 8.9 GB). Never delete `.c` files (triggers rebuild).
 5d. Scout timeouts can orphan their python/bash (ppid 1, cwd = repo); check `ps -Ao pid,ppid,etime,args | awk '$2==1'` and kill ours (a 15 h mpmath loop was found).
+5e. Orca agents stall silently on "Response was truncated": if no Working line, read the terminal tail and nudge ("continue; write long derivations to files").
 6. `lake build` green → git commit and push per round.
 
 ## Discoveries
