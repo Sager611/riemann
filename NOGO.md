@@ -217,3 +217,4 @@
 - OpenAI primitive-roots preprint audit: no false step; rests on the unrefereed Type II estimate (Thm 3.1) of OpenAI "The Poisson–Dirichlet law for prime predecessors" (24 Sep 2026). [report](Riemann/Deep/PrimRoot/REPORT.md)
 - OpenAI Type II estimate (Thm 3.1, Poisson–Dirichlet prime predecessors) audit: re-derived step by step, no gap. [report](Riemann/Deep/PrimRoot/REPORT2.md)
 - OpenAI Goldfeld analytic density / 2-converse preprint (7 Oct 2026) audit: no gap found. [report](Riemann/Deep/Goldfeld/REPORT.md)
+- 11/12 half-plane for Hecke L of Q(√−3) with infinite-order characters (CM elliptic curves): already published (Rubinstein–Restrepo Borrero, Hexagon 2610.00220; Hu, Hexagon 2610.00216, 13 Oct 2026). [verdict](Riemann/Deep/QRHNew/VERDICT.md)
