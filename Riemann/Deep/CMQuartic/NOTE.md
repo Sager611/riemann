@@ -296,10 +296,16 @@ zeros, genus ones included, satisfy β ≤ B). For COROLLARIES.md, not DISCOVERI
    and the smooth part of 𝔡 exceeds D^{θ} for a positive proportion of 𝔡. Needed: a Q-aspect log-free zero density with Deuring–Heilbronn for Hecke
    characters of F (not found; An, arXiv 2004.14410, proves log-free densities for automorphic families over number fields; whether it
    covers this case, with the repulsion, was not checked). With it, Theorem B extends to all K/F with N𝔡 ≤ X (with a factor ν_K as in [R]).
-2. **F varying ("all quartic CM fields with d_K ≤ X").** Lemma 2's constant (4π)ⁿe^{nr_F}d_F is ε_F²d_F for n = 2, up to e^{c√d_F}. Cutting 𝒫 into unit
-   cubes replaces e^{nr_F} by C^n(1 + vol 𝒫) ≍ R_F (sketch), so Theorem A holds with a factor d_F^{O(1)}. But (HT) and (TZ) are used with constants
-   depending on F, so Theorem B is for each fixed F. Since the quartic CM fields with d_K ≤ X and d_F > X^η number ≪ X^{1−η+o(1)}, an F-uniform form
-   of (HT) would give the full family.
+2. **F varying ("all quartic CM fields with d_K ≤ X").** Lemma 2 holds with e^{nr_F} deleted, for every totally real F, and step (ii) is not
+   needed: take any generators β_𝔞 ((i) still gives β_𝔞′/β_𝔞 ∉ F for 𝔞 ≠ 𝔞′). As Π_v|σ_vβ| = (Nβ)^{1/2}, two ideals in one box give
+   N𝔠√D ≤ |NΔ|^{1/2} < (4π/k)ⁿ(Nβ_𝔞Nβ_𝔞′)^{1/2} ≤ (4π/k)ⁿN·N𝔠 (Lemma 1, √d_K/d_F = √D), so kⁿ ≥ (4π)ⁿN/√D suffices and
+   π_C(N) ≤ (1 + 4π(N/√D)^{1/n})ⁿ ≤ 2^{n−1}(1 + (4π)ⁿd_FN/√d_K)  (F = Q(√5): 2 + 1579N/√d_K instead of 2 + 4134N/√d_K).
+   No unit or regulator enters, so the earlier unit-cube sketch (a factor ≍ R_F) is obsolete. Against the mean of Remark 2.1, ≍_n R_FN/(d_F√D)
+   (R_K = 2^{n−1}R_F/Q_K, Q_K ∈ {1,2}), the bound loses ≍_n d_F/R_F. Check (.scratch/cmnov/run3.gp → run3.out): on the 10 fields of §6,
+   max_C π_C(N) ≤ 0.43(1 + 4π(N/√D)^{1/2})² for every N ≤ N_max. With Fact (c) (uniform: Louboutin, Friedman) and ζ_F(1+2ε) ≤ ζ(1+2ε)ⁿ, Lemma 3
+   holds with constant C(n)ε^{−n}log^{2n−1}(3d_K)(√d_K + d_FN), so Theorem A holds with a factor d_F^{O(1)} (sketch: d_F enters only through
+   Lemma 3 and the ≤ h_F cosets). But (HT) and (TZ) are used with constants depending on F, so Theorem B is for each fixed F. Since the quartic CM
+   fields with d_K ≤ X and d_F > X^η number ≪ X^{1−η+o(1)}, an F-uniform form of (HT) would give the full family.
 3. **Non-CM fields.** Lemma 1 holds verbatim for every quadratic extension K/F (Δ ∈ N_{K/F}(𝔠)𝔇_{K/F}); the count then needs hyperbolic
    coordinates at real places of F that split in K (as in [D2] Lemma 3) and the relative units (rank r_K − r_F), and the threshold stays √d_K
    because h_KR_K ≍ √d_Kκ_K. Sketch only, not proved here. For fields with **no quadratic subfield** (cubic, S₄/A₄ quartic) there is no involution:
