@@ -219,3 +219,5 @@
 - OpenAI Goldfeld analytic density / 2-converse preprint (7 Oct 2026) audit: no gap found. [report](Riemann/Deep/Goldfeld/REPORT.md)
 - 11/12 half-plane for Hecke L of Q(√−3) with infinite-order characters (CM elliptic curves): already published (Rubinstein–Restrepo Borrero, Hexagon 2610.00220; Hu, Hexagon 2610.00216, 13 Oct 2026). [verdict](Riemann/Deep/QRHNew/VERDICT.md)
 - Certified Weil window half-width log 4 (all gaps closed, rigorous): not a record — Elston (Zenodo 23174403, 6 Oct 2026) claims half-width 1.495. [proof](Riemann/Deep/WeilRecord/PROOF.md)
+- Generalize ring-class density: three wider thin families work (routine, same method); general number fields fail (lattice lemma breaks in degree 3). [report](Riemann/Deep/Density2/REPORT.md)
+- Unconditional least prime by a form from ring-class density + Linnik machinery: no improvement on the record 455 (exponent set by zeros within 0.6/log|D| of 1). [report](Riemann/Deep/LeastPrimeForm/REPORT.md)
