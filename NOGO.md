@@ -228,3 +228,4 @@
 - Planat Λ ≤ 0.148612 (arXiv 2610.18214): no false step; explicitly conditional on premises A1–A3 from D. J. Raymond (unrefereed Zenodo). [report](Riemann/Deep/DBN/REPORT3.md)
 - Raymond premises A1–A3 (behind Planat Λ ≤ 0.148612): written computer-assisted proofs; every re-derivation and numerical test passed; no false premise. [report](Riemann/Deep/DBN/REPORT4.md)
 - R117 thin-family methods for ζ itself: all dead or long shots; the trivial character (ζ) is invisible to large sieves. [Lean](Riemann/Tree/R117.lean)
+- Cubic (S₃) Chebotarev for almost all cubic fields from our ring class results: weaker than published almost-all bounds (Ellenberg–Pierce–Wood 2017, Pierce–Turnage-Butterbaugh–Wood 2020, Lemke Oliver–Thorner–Zaman). [report](Riemann/Deep/CubicCheb/REPORT.md)
