@@ -71,6 +71,61 @@ recursion for all 3440 cells up to `p = 82`. Next: `Nat.pow` (GMP in the kernel)
 then window 0.8 with more free terms and finer cells near `r = 0`.
 Prior art: Mathlib, openai/math, facebookresearch/atlas-lean have no Weil positivity windows (checked 2026-10-20).
 
+## Beyond log 2, round 6
+
+Status: no new window proved. No Lean file was added or changed and no build was started (the orchestrator stopped the
+round during design). `weilPos_le_75` stays the record. This round measured where the margin is lost and designed a
+sharper certificate; all numbers come from `.scratch/yoshida6/` (`env.py`, `dens.py`, `model6.py`). The prior-art
+check of the four repositories was not repeated (nothing was formalized).
+
+**Where the margin is lost.** The round-5 bound uses `W3 ≥ s − t` with `t ≥ 0` and throws away all of `W3 − s` where
+`W3 > s`. Letting `t = s − W3` take either sign on `|r| < R`, and using `W3 ≥ s` only beyond `R`, keeps most of the
+true lowest eigenvalue. Lowest eigenvalue of that truncated weight (W units; even sector binds, odd is ≥ 100× larger):
+
+| L | R = 30 | R = 40 | R = 60 | larger R | true λ_min |
+|---|---|---|---|---|---|
+| 0.75 | 2.3e-4 | 3.4e-4 | 4.1e-4 | — | 4.9e-4 |
+| 0.80 | 7.9e-5 | 1.2e-4 | 1.5e-4 | 1.6e-4 (R = 100) | 1.8e-4 |
+| 0.85 | 2.2e-5 | 3.4e-5 | 4.6e-5 | — | ≈ 5e-5 |
+| 0.90 | 4.5e-6 | 8.8e-6 | 1.2e-5 | — | 1.6e-5 |
+| 1.0 | 1.1e-7 | 5.5e-7 | 7.2e-7 | 8.5e-7 (R = 120) | 9.3e-7 |
+| 1.0986 (< log 3) | < 0 | 1.0e-8 | 3.7e-8 | 5.0e-8 (R = 120) | 5.5e-8 |
+| 1.2 (n = 3 enters) | — | < 0 | < 0 | 1.3e-9 (R = 150) | 1.6e-9 |
+
+(Legendre Galerkin, N = 60–90; pole kernel cut at b = a; tail level s = 2πμ(R) − 4(sinh a/(2R²) + cosh a/R) − Σ prime
+coefficients.) Free cosine terms are not needed in this form: a zero-mean cosine sum cannot raise the tail level.
+The lowest eigenfunction spreads its mass over all of [0, R] (L = 1, R = 40: 34% on [0, 2), 20% on [5, 10), 12% on
+[20, 40), 10% beyond R), so an error in the weight anywhere on [0, R] costs about its full size. Needed uniform accuracy
+≈ λ/5: 7e-6 at 0.85, 1e-7 at 1.0, 5e-9 just below log 3.
+
+**Bottlenecks in the current Lean machinery (each one alone blocks 0.85).**
+1. Constants: γ < 0.57725 and log π < 1.14474 are off by 3.4e-5 and 1.0e-5, so the weight is low by 4.4e-5 everywhere,
+   more than λ at 0.85. Fix: γ ≤ H_n − log n − 1/(2n) + 1/(12n²) (this sequence decreases; n = 512 gives 1e-13);
+   log π from exponential partial sums against π to 20 digits; log 2 to 1e-15 from Mathlib's
+   `abs_log_sub_add_sum_range_le` at x = 1/2 (today's `lB` has radius 1e-10, so cos(r log 2) is off by up to r·1e-10).
+2. Digamma tail in `muLowZ`: the telescoping tail loses about v²/4, v = (r/2)²/(M + 3/4)² (≈ 1e-3 at r = 40, M = 80),
+   plus (5/32)/M² ≈ 2.4e-5. Fix (designed): split each term into an r-free part (one constant, computed once) and
+   t²/(x(x² + t²)); bound the latter below by Σ_{k<12} (−1)^k t^{2k+2}/x^{2k+3} (valid for every t) and sum over n ≥ M with
+   the constants Σ_{n≥M} (n + 5/4)^{−(2k+3)} bracketed once. Error ≈ 1e-12 with M ≈ 1.25·max(r/2) direct terms per point,
+   fewer than today's 80.
+3. sinh a and cosh a come from 8 exponential terms (error about 1e-7): use about 20.
+4. Cells: the chord loss E_j h² (E_j ≈ 0.17–0.25 without free terms) forces h = 1/256 at 0.85 (10k cells on [0, 40]),
+   1/2048 at 1.0 (82k cells), about 1/7000 just below log 3 (≈ 420k cells at R = 60). Affine cells cannot reach log 3;
+   that needs quadratic cells.
+5. Taylor order: R·a ≤ (K + 1)/2 and a negligible remainder need K ≈ 56 at 0.85, 70–76 at 1.0, ≈ 110 just below log 3.
+   The monomial Gram matrix is too ill-conditioned for such K (the model's own Cholesky failed at 200 digits, K = 56).
+   Check positivity in Legendre coordinates instead: αD⁻¹ − TᵀH̃T ⪰ 0 with exact rational T (monomials in Legendre
+   polynomials), QĜQᵀ = D, TQ = I.
+6. Kernel cost: `ent` list indexing makes each matrix check O(K⁴); moments use recursive `Int.pow`. Use `Nat.pow`
+   (GMP), row-by-row dot products and separate even/odd blocks (4× fewer operations).
+
+Estimated kernel time with these fixes: 0.85 ≈ 30–40 min, 1.0 ≈ 2–2.5 h; log 3 is out of reach with affine cells.
+
+**Missing, in order:** (A) γ, log π, log 2 bounds; (B) the new digamma lower bound and its soundness; (C) a grid evaluator
+for J + prime term with the new log 2 ball; (D) signed cells with |t| ≤ T and their checker; (E) the signed Taylor step
+bound ∫ t|F|² ≤ ∫ (t + εT)|P|² + (1 + 1/ε) T ∫_{|r|<R} |E|²; (F) fast moments; (G) the Legendre-coordinate positivity
+check; (H) the certificate theorem; (I) the generator. Formulas and resume plan: `.scratch/yoshida6/NOTES.md`.
+
 ---
 
 # Round 3 (kept for reference)
