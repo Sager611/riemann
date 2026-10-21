@@ -1,0 +1,9 @@
+cert: mu=16 L=1.3862944 N=1400 Omega=640.0 c=887.23 gamma=4.500000 s=3.642100 m_eff=0.857900 b=8.1421 C=0.123591
+  u=(343,114) E0=0.0003592 E1=0.001079 rho=3.0 e=1.07e-150 n=1.89e-304 h=8.94e-303 alpha=1.07e-150 beta=1.46e-150
+  parity 0: d=700 epsJ=3.04e-99 ||rad H||_F<=2.75e-110  (81s)
+    diag: lam_min(A+J)~2.2133e-75 lam_min(T)~1.9051e-75
+  parity 0: H - 2^-256 = LL^T + Res, ||Res||+||rad H|| <= 1.06e-80 -> PSD CERTIFIED  (658s)
+  parity 1: d=700 epsJ=1.01e-99 ||rad H||_F<=2.39e-110  (729s)
+    diag: lam_min(A+J)~3.2576e-71 lam_min(T)~2.8206e-71
+  parity 1: H - 2^-240 = LL^T + Res, ||Res||+||rad H|| <= 1.60e-82 -> PSD CERTIFIED  (1285s)
+RESULT mu=16: CERTIFIED  Q(f) >= 1.00000e-80 ||f||^2 for every f supported in [-L, L], L = 1.386294361

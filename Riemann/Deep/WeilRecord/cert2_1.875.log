@@ -1,0 +1,14 @@
+L=1.8750000 a=0.93750 R=900.0 primes=[2, 3, 4, 5] P=4.3814986 eps=0.58301909 N=1230 prec=192 bprec=1163
+  tail: ||E|| <= 5.5073e-39
+  quadrature: 22 panels, 2372 nodes, entry err <= 7.09e-62, ||Delta|| <= 4.36e-59 (35s)
+  node rounding + flush: ||Delta|| <= 1.18e-48
+    nodes 500/2372 4s
+    nodes 1000/2372 9s
+    nodes 1500/2372 19s
+    nodes 2000/2372 52s
+    nodes 2372/2372 77s
+  even: max entry radius 6.465e-55, approx lam_min(G) = 1.44287e-25
+  even: lam_min >= 1e-25(1-1e-3) [residual+radius 2.15e-46, 14s]
+  odd: max entry radius 6.476e-55, approx lam_min(G) = 2.99080e-22
+  odd: lam_min >= 1e-25(1-1e-3) [residual+radius 4.10e-48, 11s]
+RESULT L=1.8750000: CERTIFIED Q(f) >= 9.99e-26 ||f||^2 for all f supported in [-L/2, L/2]
