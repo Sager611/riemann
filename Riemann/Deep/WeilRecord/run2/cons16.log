@@ -1,0 +1,20 @@
+parity 0 (N0=40): lam_min(Q_N0) = 8.0977e-30  lam_min((M+V)_N0) = 7.9980e-30  lam_min(Q_N0 - (M+V)_N0) = 7.2970e-76 (must be >= 0 up to x-space quadrature error)
+parity 1 (N0=40): lam_min(Q_N0) = 3.7642e-27  lam_min((M+V)_N0) = 3.7479e-27  lam_min(Q_N0 - (M+V)_N0) = 1.7888e-75 (must be >= 0 up to x-space quadrature error)
+       33.92 real        20.69 user         0.96 sys
+           260521984  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               63731  page reclaims
+                  96  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1310  voluntary context switches
+              117510  involuntary context switches
+        210631599061  instructions retired
+         50707161910  cycles elapsed
+           325616288  peak memory footprint

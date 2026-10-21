@@ -132,31 +132,37 @@ def load_mats(path):
 
 # ---------------- (1) Schur bound ----------------
 def schur(S, wfile):
+    """Rigorous weighted Schur bound ||C_p|| <= max_i R_i, checked on EVERY cell i (no symmetry assumption).
+    w = positive step function on M uniform cells of u = x/L in [-1,1] (exact binary values of the file's doubles).
+    R_i = sum over shifts +-t_n of c_n * max{w_j : cell j meets (cell i + t) n [-1,1]} / w_i  >=  ess sup_{cell i} (C_p w)/w.
+    Returns (bound, weight_exactly_even, M, argmax cell)."""
     try:
         with open(wfile) as fh: ws = [float(l) for l in fh]
     except (OSError, ValueError) as ex:
         raise SystemExit(f'bad weight file {wfile}: {ex}')
     M = len(ws); assert M % 2 == 0
+    if not all(x > 0 and math.isfinite(x) for x in ws): raise ValueError("weight must be positive and finite")
+    even = all(ws[i] == ws[M - 1 - i] for i in range(M))      # exact double comparison (informational only)
     w = [arb(x) for x in ws]                 # exact binary values of the floats
-    assert all(x > 0 for x in ws)
     shifts = []
     for n, p in S.ns:
         t = S.tau(n); c = S.coef(n, p)
         shifts.append((t, c)); shifts.append((-t, c))
     best = arb(0); argbest = None
-    for i in range(M//2, M):
+    for i in range(M):                       # ALL cells (the old code checked i >= M/2 only)
         ui = arb(-1) + arb(2*i)/M; ui1 = arb(-1) + arb(2*(i+1))/M
         tot = arb(0)
         for t, c in shifts:
             lo = ui + t; hi = ui1 + t
-            if hi <= -1 or lo >= 1: continue
+            if hi <= -1 or lo >= 1: continue          # shifted cell provably outside I (up to a null set)
             jl = int(math.floor(float(((lo + 1)*M/2).lower()) - 1e-6)); jh = int(math.ceil(float(((hi + 1)*M/2).upper()) + 1e-6)) - 1
             jl = max(jl, 0); jh = min(jh, M - 1)
-            tot += c*max(w[jl:jh+1])
+            if jl > jh: raise ValueError("empty cell range")
+            tot += c*arb(max(ws[jl:jh+1]))            # exact: max of exact doubles
         r = arb((tot/w[i]).upper())
         if r > best: best = r; argbest = i
-    log(f"schur: mu={S.tag} cells={M} sup R_w <= {best.str(10, radius=False)} (cell {argbest})")
-    return best
+    log(f"schur: mu={S.tag} cells={M} (all {M} cells checked; weight exactly even: {even}) sup R_w <= {best.str(10, radius=False)} (cell {argbest})")
+    return best, even, M, argbest
 
 # ---------------- (5a) A0, B0 ----------------
 def legendre_vec(y, N, a_c, b_c):
@@ -194,10 +200,10 @@ def grams(S, N, prec, chunk=256, part=None):
         if part is not None and ip % part[1] != part[0]: continue
         ctx.prec = bprec
         md = (al + be)/2; hh = (be - al)/2
-        if float(hh.mid()) < 1e-40:
-            log(f"  piece [{float(al.mid()):.6f},{float(be.mid()):.6f}] degenerate: skipped (true length 0; contribution 0)")
-            if not (hh.lower() > -1e-60 and abs(hh) < arb(2)**(-bprec + 40)): raise ValueError("bad degenerate piece")
+        if hh == 0:      # arb equality: certainly exactly 0 (coincident EXACT rational breakpoints, e.g. mu=16, n=2,8)
+            log(f"  piece [{float(al.mid()):.6f},{float(be.mid()):.6f}] has exact length 0: skipped (contribution exactly 0)")
             continue
+        if not (hh > 0): raise ValueError("piece of undetermined length (breakpoints not separated)")
         act = []
         for t, c in taus:
             if md + t < 1: act.append((t, c))
@@ -300,7 +306,9 @@ def band(S, N, Omega, gamma, prec, lmax=64, target=None, chunk=400):
             nodes.append((arb(rr.mid()), w*hh)); mr = max(mr, float(rr.rad()))
         perr += 2*hh*arb(mr)
     flush = 3*arb(2)**(-cert2.TINY_EXP)*Omega*(2*L/arb.pi())*(2*N)*(supg + 1)
+    errK_parts = [errK, perr*dK, flush]; errB_parts = [errB, perr*dB, flush]     # Gauss, node rounding, flush
     errK += perr*dK + flush; errB += perr*dB + flush
+    log(f"  per-entry error budget (normalised entries): K: gauss {errK_parts[0].str(3,radius=False)} + node rounding {errK_parts[1].str(3,radius=False)} + flush {flush.str(3,radius=False)} = {errK.str(3,radius=False)};  B: gauss {errB_parts[0].str(3,radius=False)} + {errB_parts[1].str(3,radius=False)} + {flush.str(3,radius=False)} = {errB.str(3,radius=False)}")
     dims = [(N+1)//2, N//2]
     K = [arb_mat(dims[0], dims[0]), arb_mat(dims[1], dims[1])]
     Bg = [arb_mat(dims[0], dims[0]), arb_mat(dims[1], dims[1])]
@@ -335,6 +343,7 @@ def band(S, N, Omega, gamma, prec, lmax=64, target=None, chunk=400):
     Av = [(2*(2*j+1)*L).sqrt()*(arb.pi()/L).sqrt()*(L/2).bessel_i(arb(j)+arb(1)/2) for j in range(N)]
     assert all(v.is_finite() for v in Av)
     res['Av'] = Av; res['errK'] = errK; res['errB'] = errB; res['N'] = N; res['Omega'] = Omega; res['gamma'] = gamma
+    res['errK_parts'] = errK_parts; res['errB_parts'] = errB_parts
     return res
 
 # ---------------- (4) certificate ----------------
@@ -365,7 +374,10 @@ def sub_mat(M, r, c):
     return X
 
 DIAG = False
-def certify(S, G, Bd, s, m, tau, u, prec, rho_list=(2, 2.5, 3, 3.5, 4, 5, 6), G2=None, N=None):
+def _s(x, d=4):
+    return x.str(d, radius=False)
+
+def certify(S, G, Bd, s, m, tau, u, prec, rho_list=(2, 2.5, 3, 3.5, 4, 5, 6), G2=None, N=None, wfile=None, summary=None):
     """G2 (optional): Gram file at a larger order N2 for the two-level bound
     G <= W2(X) = X*F + F*X - X*A2X + m^{-1}(I - X*A2F - F*A2X + X*B2X), F = [I;0], X: C^N -> C^{N2}
     (proof: Y = E2 X, G = Y*E + E*Y - Y*MY + R*M^{-1}R with R = E - MY, and M^{-1} <= m^{-1})."""
@@ -375,36 +387,62 @@ def certify(S, G, Bd, s, m, tau, u, prec, rho_list=(2, 2.5, 3, 3.5, 4, 5, 6), G2
     assert N <= G['N'] and N <= Bd['N']
     Omega = Bd['Omega']; gamma = Bd['gamma']
     s = arb(s); m = arb(m); tau = arb(tau)
+    summ = {'mu': S.tag, 'L': _s(L, 12), 'N': N, 'prec': prec, 'Omega': _s(Omega, 8), 'gamma': _s(gamma, 8),
+            's': _s(s, 10), 'tau': _s(tau, 6), 'u': [int(u[0]), int(u[1])], 'parity': {}}
+    # (H1) ||C_p|| <= s, re-verified inside this run from the weight file (every cell; no symmetry assumption)
+    if wfile is not None:
+        oldp = ctx.prec; ctx.prec = 128
+        s_cert, w_even, Mc, _ = schur(S, wfile)
+        ctx.prec = oldp
+        if not (s_cert <= s): raise SystemExit(f"H1 FAILED: Schur bound {s_cert} > s = {s}")
+        log(f"  H1 ||C_p|| <= {_s(s_cert, 10)} <= s = {_s(s, 10)}  [weighted Schur test, all {Mc} cells, weight exactly even: {w_even}]")
+        summ['H1'] = {'schur_bound': _s(s_cert, 12), 'cells': Mc, 'all_cells_checked': True,
+                      'weight_exactly_even': w_even, 'weight_file': os.path.basename(wfile)}
+    else:
+        log("  H1 WARNING: s is taken from the command line and NOT re-verified in this run (set BC_WFILE)")
+        summ['H1'] = None
     assert gamma >= s + m, "gamma must be >= s + m"
     m_eff = gamma - s                                   # M >= gamma - s
     b = gamma + s
     c = Omega*L
     C = a_fun(Omega) - gamma
-    assert C > 0, "C <= 0"
+    if not (C > 0): raise SystemExit("H3 FAILED: C = a(Omega) - gamma is not > 0")
     E0 = (c + 1)/(arb.pi()*c**2); E1 = (3*c**2 + 6*c + 2)/(arb.pi()*c**3)
     u0, u1 = arb(u[0]), arb(u[1])
-    assert u0*E0 <= C and u1*E1 <= C, "u too large"
+    if not (u0*E0 <= C and u1*E1 <= C): raise SystemExit("H4 FAILED: u_j E_j <= C violated")
+    log(f"  H3 C = a(Omega) - gamma = {_s(C, 8)} > 0;  H4 u0 E0 = {_s(u0*E0, 8)} <= C, u1 E1 = {_s(u1*E1, 8)} <= C")
+    summ['H3_C'] = _s(C, 10); summ['H4'] = [_s(u0*E0, 10), _s(u1*E1, 10)]
     # projection errors (Lemma 3.2), choose rho
     K0 = (Omega/arb.pi())*max(abs(a_fun(arb(0)) - gamma), abs(a_fun(Omega) - gamma))
     Hp = (2*L).sqrt()*(L/2).cosh()
     qN = (2*L).sqrt()*(L/2).exp()*(L/2)**N/arb(N).fac()
     mt = m_eff - tau
+    if not (mt > 0): raise SystemExit("H2 FAILED: m_t = gamma - s - tau is not > 0")
     best = None
     for rho in rho_list:
         rho = arb(rho)
-        rN = ((8*L*rho**2/(rho - 1)**2)*(c*(rho - 1/rho)).exp()*rho**(-2*N)).sqrt()
-        e = (K0*(2*L).sqrt() + (Omega/arb.pi()).sqrt()*(u0*E0.sqrt() + u1*E1.sqrt()))*rN + 4*Hp*qN
-        n = K0*rN**2 + 4*qN**2
-        h = (K0 + (Omega/arb.pi())*(u0 + u1))*rN**2 + 4*qN**2
+        rN = ((8*L*rho**2/(rho - 1)**2)*(c*(rho - 1/rho)).exp()*rho**(-2*N)).sqrt()   # >= ||(I-P) e^{itx}||, |t| <= Omega
+        e_band = K0*(2*L).sqrt()*rN                                    # ||(I-P) K_band P||
+        e_U = (Omega/arb.pi()).sqrt()*(u0*E0.sqrt() + u1*E1.sqrt())*rN  # ||(I-P) U P||
+        e_pole = 4*Hp*qN                                               # ||(I-P) K_pole P||
+        e = e_band + e_U + e_pole
+        n = K0*rN**2 + 4*qN**2                                         # (I-P)V(I-P) >= -n  (U part is >= 0)
+        h = (K0 + (Omega/arb.pi())*(u0 + u1))*rN**2 + 4*qN**2           # ||(I-P)V(I-P)|| <= h
         if not (n < mt): continue
         alpha = e + 2*e**2/(mt - n)
         beta = (e + n)/mt**2 + 2*h**2/(mt**2*(mt - n))
         tot = alpha + beta*b**2
-        if best is None or tot < best[0]: best = (tot, rho, e, n, h, alpha, beta)
+        if best is None or tot < best[0]: best = (tot, rho, e, n, h, alpha, beta, (rN, e_band, e_U, e_pole, K0*rN**2, 4*qN**2))
     if best is None: raise ValueError('no admissible rho (n >= m)')
-    tot, rho, e, n, h, alpha, beta = best
+    tot, rho, e, n, h, alpha, beta, (rN, e_band, e_U, e_pole, n_band, n_pole) = best
+    corr = alpha + beta*(b - tau)**2       # >= ||alpha I + beta D||:  0 <= D <= ||M - tau||^2 <= (b - tau)^2
     log(f"cert: mu={S.tag} L={L.str(8,radius=False)} N={N} Omega={float(Omega.mid())} c={float(c.mid()):.2f} gamma={float(gamma.mid()):.6f} s={float(s.mid()):.6f} m_eff={float(m_eff.mid()):.6f} b={float(b.mid()):.4f} C={C.str(6,radius=False)}")
     log(f"  u=({u[0]},{u[1]}) E0={E0.str(4,radius=False)} E1={E1.str(4,radius=False)} rho={float(rho.mid())} e={e.str(3,radius=False)} n={n.str(3,radius=False)} h={h.str(3,radius=False)} alpha={alpha.str(3,radius=False)} beta={beta.str(3,radius=False)}")
+    log(f"  H2 m_t = gamma - s - tau = {_s(mt, 10)} > 0;  H5 Legendre tail (rho={float(rho.mid())}): r_N = {_s(rN, 3)};  e = e_band {_s(e_band, 3)} + e_U {_s(e_U, 3)} + e_pole {_s(e_pole, 3)} = {_s(e, 3)};  n = {_s(n_band, 3)} + {_s(n_pole, 3)} = {_s(n, 3)} < m_t;  h = {_s(h, 3)}")
+    log(f"     alpha = {_s(alpha, 3)}, beta = {_s(beta, 3)};  ||alpha I + beta D|| <= alpha + beta (b - tau)^2 = {_s(corr, 3)}  (vs tau = {_s(tau, 3)}; this correction is subtracted inside Z exactly)")
+    summ['H2_mt'] = _s(mt, 12)
+    summ['H5'] = {'rho': float(rho.mid()), 'rN': _s(rN, 4), 'e': _s(e, 4), 'e_band': _s(e_band, 4), 'e_U': _s(e_U, 4), 'e_pole': _s(e_pole, 4),
+                  'n': _s(n, 4), 'h': _s(h, 4), 'alpha': _s(alpha, 4), 'beta': _s(beta, 4), 'correction_norm_bound': _s(corr, 4)}
     out = {}
     T0 = time.time()
     for p in (0, 1):
@@ -446,7 +484,8 @@ def certify(S, G, Bd, s, m, tau, u, prec, rho_list=(2, 2.5, 3, 3.5, 4, 5, 6), G2
         H = sym(W + W*Z*W)
         rH = frob_rad(H)
         Hm = H.mid()
-        log(f"  parity {p}: d={d} epsJ={epsJ.str(3,radius=False)} ||rad H||_F<={rH.str(3,radius=False)}  ({time.time()-T0:.0f}s)")
+        log(f"  parity {p}: d={d}  H6 quadrature: ||J_true - J_quad||_2 <= epsJ = d*errK {_s(arb(d)*Bd['errK'], 3)} + u(2 ev + ev^2) {_s(uu*(2*ev + ev**2), 3)} = {_s(epsJ, 3)} (ev = d*errB = {_s(ev, 3)});  ||rad H||_F <= {_s(rH, 3)}  ({time.time()-T0:.0f}s)")
+        summ['parity'][p] = {'d': d, 'epsJ': _s(epsJ, 4), 'epsJ_band': _s(arb(d)*Bd['errK'], 4), 'epsJ_U': _s(uu*(2*ev + ev**2), 4), 'radH_F': _s(rH, 4)}
         if DIAG:
             log(f"    diag: lam_min(A+J)~{lam_min_mid(sym(A.mid() + J.mid())).str(5,radius=False)} lam_min(T)~{lam_min_mid(sym(W.mid().inv() + Z.mid())).str(5,radius=False)}")
         # sigma search: largest sigma = 2^-k for which the midpoint Cholesky of H - sigma exists and certifies
@@ -461,12 +500,36 @@ def certify(S, G, Bd, s, m, tau, u, prec, rho_list=(2, 2.5, 3, 3.5, 4, 5, 6), G2
             res2 = arb(0)
             for i in range(d):
                 for kk in range(d): res2 += arb(abs(Res[i, kk]).upper())**2
-            bound = res2.sqrt() + rH
+            resF = arb(res2.sqrt().upper())                 # >= ||Res_exact||_F >= ||Res_exact||_2
+            bound = resF + rH                               # >= ||Res_exact + (H_true - mid H)||_2
             ok = bool(bound < sigma)
-            log(f"  parity {p}: H - 2^-{k} = LL^T + Res, ||Res||+||rad H|| <= {bound.str(3,radius=False)} -> {'PSD CERTIFIED' if ok else 'FAIL'}  ({time.time()-T0:.0f}s)")
+            log(f"  parity {p}: H7 H_mid - 2^-{k} I = L L^T + Res;  ||Res||_F + ||rad H||_F <= {_s(resF, 3)} + {_s(rH, 3)} = {_s(bound, 3)} {'<' if ok else 'NOT <'} 2^-{k} = {_s(sigma, 3)} -> {'PSD CERTIFIED' if ok else 'FAIL'}  ({time.time()-T0:.0f}s)")
+            summ['parity'][p].update({'sigma': f'2^-{k}', 'resF': _s(resF, 4), 'chol_bound': _s(bound, 4), 'certified': ok})
+            if ok:
+                lamH = arb((sigma - bound).lower())         # lambda_min(H_true) >= sigma - ||Res + dH||_2
+                Winf = arb(0); Wfro = arb(0)
+                for i in range(d):
+                    rs = arb(0)
+                    for kk in range(d):
+                        a_ = arb(abs(W[i, kk]).upper()); rs += a_; Wfro += a_**2
+                    rs = arb(rs.upper())
+                    if rs > Winf: Winf = rs
+                Wfro = arb(Wfro.sqrt().upper())
+                nW = Winf if Winf < Wfro else Wfro          # ||W||_2 <= ||W||_inf (W symmetric) and <= ||W||_F
+                lamT = arb((lamH/nW**2).lower())            # T = W^-1 H W^-1  =>  lambda_min(T) >= lambda_min(H)/||W||_2^2
+                log(f"  parity {p}: proved margins  lambda_min(H) >= {_s(lamH, 4)};  ||W||_2 <= {_s(nW, 4)};  lambda_min(W^-1 + Z) >= {_s(lamT, 4)} > 0")
+                summ['parity'][p].update({'lambda_min_H_lower': _s(lamH, 4), 'normW_upper': _s(nW, 4), 'lambda_min_T_lower': _s(lamT, 4)})
             break
         out[p] = ok
-    if out.get(0) and out.get(1):
+    allok = bool(out.get(0) and out.get(1))
+    summ['certified'] = allok and summ['H1'] is not None
+    if summary:
+        try:
+            with open(summary, 'w') as fh: json.dump(summ, fh, indent=1)
+        except OSError as ex:
+            log(f"  cannot write summary {summary}: {ex}")
+    if allok:
+        if summ['H1'] is None: log("  (H1 not re-verified in this run: the RESULT below is conditional on ||C_p|| <= s)")
         log(f"RESULT mu={S.tag}: CERTIFIED  Q(f) >= {tau.str(6,radius=False)} ||f||^2 for every f supported in [-L, L], L = {L.str(10,radius=False)}")
         return True
     log(f"RESULT mu={S.tag}: not certified"); return False
@@ -517,6 +580,19 @@ if __name__ == "__main__":
         ctx.prec = int(prec)
         from flint import fmpq
         def q(x): return arb(fmpq(*[int(y) for y in x.split('/')])) if '/' in x else arb(x)
+        wfile = os.environ.get('BC_WFILE'); summary = os.environ.get('BC_SUMMARY')
+        import hashlib, flint as _fl
+        def sha(pth):
+            hs = hashlib.sha256()
+            try:
+                with open(pth, 'rb') as fh:
+                    for blk in iter(lambda: fh.read(1 << 20), b''): hs.update(blk)
+            except OSError as ex:
+                raise SystemExit(f'cannot read {pth}: {ex}')
+            return hs.hexdigest()[:16]
+        log(f"inputs: {os.path.basename(gfile)} sha256:{sha(gfile)}  {os.path.basename(bfile)} sha256:{sha(bfile)}"
+            + (f"  {os.path.basename(wfile)} sha256:{sha(wfile)}" if wfile else "") + f"  python-flint {_fl.__version__}  python {sys.version.split()[0]}")
         G = load_mats(gfile); Bd = load_mats(bfile)
         G2 = load_mats(g2file) if g2file else None
-        certify(S, G, Bd, q(s), q(m), q(tau), (int(u0), int(u1)), int(prec), G2=G2, N=Nuse)
+        ok = certify(S, G, Bd, q(s), q(m), q(tau), (int(u0), int(u1)), int(prec), G2=G2, N=Nuse, wfile=wfile, summary=summary)
+        sys.exit(0 if ok else 1)

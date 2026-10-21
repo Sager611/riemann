@@ -218,3 +218,4 @@
 - OpenAI Type II estimate (Thm 3.1, Poisson–Dirichlet prime predecessors) audit: re-derived step by step, no gap. [report](Riemann/Deep/PrimRoot/REPORT2.md)
 - OpenAI Goldfeld analytic density / 2-converse preprint (7 Oct 2026) audit: no gap found. [report](Riemann/Deep/Goldfeld/REPORT.md)
 - 11/12 half-plane for Hecke L of Q(√−3) with infinite-order characters (CM elliptic curves): already published (Rubinstein–Restrepo Borrero, Hexagon 2610.00220; Hu, Hexagon 2610.00216, 13 Oct 2026). [verdict](Riemann/Deep/QRHNew/VERDICT.md)
+- Certified Weil window half-width log 4 (all gaps closed, rigorous): not a record — Elston (Zenodo 23174403, 6 Oct 2026) claims half-width 1.495. [proof](Riemann/Deep/WeilRecord/PROOF.md)

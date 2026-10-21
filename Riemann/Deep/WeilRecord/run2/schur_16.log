@@ -1,0 +1,19 @@
+schur: mu=16 cells=32000 (all 32000 cells checked; weight exactly even: True) sup R_w <= 3.642073270 (cell 10506)
+        1.11 real         0.77 user         0.07 sys
+            34275328  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                4215  page reclaims
+                 104  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  38  voluntary context switches
+                7311  involuntary context switches
+          7956344298  instructions retired
+          2102118119  cycles elapsed
+            20709808  peak memory footprint

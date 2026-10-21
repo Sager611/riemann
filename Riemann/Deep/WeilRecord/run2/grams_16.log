@@ -1,0 +1,79 @@
+grams: mu=16 N=1400 prec=384 bprec=2240 pieces=10 gauss(1401) 3s
+  piece [0.000000,0.000000] has exact length 0: skipped (contribution exactly 0)
+  piece [0.000000,0.160964] active shifts 5
+    nodes 256/1401  28s  (legendre steps 2.150e+06)
+    nodes 512/1401  56s  (legendre steps 4.301e+06)
+    nodes 768/1401  80s  (legendre steps 6.451e+06)
+    nodes 1024/1401  105s  (legendre steps 8.602e+06)
+    nodes 1280/1401  130s  (legendre steps 1.075e+07)
+    nodes 1401/1401  146s  (legendre steps 1.177e+07)
+  piece [0.160964,0.207519] active shifts 6
+    nodes 256/1401  171s  (legendre steps 1.428e+07)
+    nodes 512/1401  194s  (legendre steps 1.679e+07)
+    nodes 768/1401  219s  (legendre steps 1.929e+07)
+    nodes 1024/1401  244s  (legendre steps 2.180e+07)
+    nodes 1280/1401  271s  (legendre steps 2.431e+07)
+    nodes 1401/1401  287s  (legendre steps 2.550e+07)
+  piece [0.207519,0.403677] active shifts 5
+    nodes 256/1401  313s  (legendre steps 2.765e+07)
+    nodes 512/1401  339s  (legendre steps 2.980e+07)
+    nodes 768/1401  367s  (legendre steps 3.195e+07)
+    nodes 1024/1401  393s  (legendre steps 3.410e+07)
+    nodes 1280/1401  417s  (legendre steps 3.625e+07)
+    nodes 1401/1401  436s  (legendre steps 3.727e+07)
+  piece [0.403677,0.500000] active shifts 6
+    nodes 256/1401  466s  (legendre steps 3.978e+07)
+    nodes 512/1401  506s  (legendre steps 4.228e+07)
+    nodes 768/1401  535s  (legendre steps 4.479e+07)
+    nodes 1024/1401  570s  (legendre steps 4.730e+07)
+    nodes 1280/1401  613s  (legendre steps 4.981e+07)
+    nodes 1401/1401  641s  (legendre steps 5.100e+07)
+  piece [0.500000,0.500000] has exact length 0: skipped (contribution exactly 0)
+  piece [0.500000,0.584963] active shifts 6
+    nodes 256/1401  670s  (legendre steps 5.351e+07)
+    nodes 512/1401  705s  (legendre steps 5.601e+07)
+    nodes 768/1401  750s  (legendre steps 5.852e+07)
+    nodes 1024/1401  783s  (legendre steps 6.103e+07)
+    nodes 1280/1401  830s  (legendre steps 6.354e+07)
+    nodes 1401/1401  851s  (legendre steps 6.473e+07)
+  piece [0.584963,0.729716] active shifts 7
+    nodes 256/1401  888s  (legendre steps 6.759e+07)
+    nodes 512/1401  933s  (legendre steps 7.046e+07)
+    nodes 768/1401  970s  (legendre steps 7.333e+07)
+    nodes 1024/1401  1011s  (legendre steps 7.620e+07)
+    nodes 1280/1401  1051s  (legendre steps 7.906e+07)
+    nodes 1401/1401  1078s  (legendre steps 8.042e+07)
+  piece [0.729716,0.850220] active shifts 8
+    nodes 256/1401  1121s  (legendre steps 8.364e+07)
+    nodes 512/1401  1158s  (legendre steps 8.687e+07)
+    nodes 768/1401  1195s  (legendre steps 9.009e+07)
+    nodes 1024/1401  1232s  (legendre steps 9.332e+07)
+    nodes 1280/1401  1259s  (legendre steps 9.655e+07)
+    nodes 1401/1401  1278s  (legendre steps 9.807e+07)
+  piece [0.850220,1.000000] active shifts 9
+    nodes 256/1401  1308s  (legendre steps 1.017e+08)
+    nodes 512/1401  1340s  (legendre steps 1.052e+08)
+    nodes 768/1401  1373s  (legendre steps 1.088e+08)
+    nodes 1024/1401  1405s  (legendre steps 1.124e+08)
+    nodes 1280/1401  1437s  (legendre steps 1.160e+08)
+    nodes 1401/1401  1460s  (legendre steps 1.177e+08)
+  parity 0: max radius A0 2.89e-114, B0 1.02e-113
+  parity 1: max radius A0 1.50e-114, B0 3.41e-114
+     1478.45 real       977.01 user        57.32 sys
+           492699648  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             3857486  page reclaims
+                  44  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               25431  voluntary context switches
+             6282596  involuntary context switches
+       7994592056833  instructions retired
+       2514330893530  cycles elapsed
+           537707336  peak memory footprint

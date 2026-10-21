@@ -1,0 +1,71 @@
+{
+ "mu": "16",
+ "L": "1.38629436112",
+ "N": 1400,
+ "prec": 384,
+ "Omega": "640.00000",
+ "gamma": "4.5000000",
+ "s": "3.642100000",
+ "tau": "1.00000e-76",
+ "u": [
+  343,
+  114
+ ],
+ "parity": {
+  "0": {
+   "d": 700,
+   "epsJ": "3.037e-99",
+   "epsJ_band": "3.916e-102",
+   "epsJ_U": "3.033e-99",
+   "radH_F": "2.748e-110",
+   "sigma": "2^-256",
+   "resF": "8.043e-81",
+   "chol_bound": "8.043e-81",
+   "certified": true,
+   "lambda_min_H_lower": "8.628e-78",
+   "normW_upper": "3.039",
+   "lambda_min_T_lower": "9.341e-79"
+  },
+  "1": {
+   "d": 700,
+   "epsJ": "1.012e-99",
+   "epsJ_band": "3.916e-102",
+   "epsJ_U": "1.008e-99",
+   "radH_F": "2.389e-110",
+   "sigma": "2^-240",
+   "resF": "1.887e-82",
+   "chol_bound": "1.887e-82",
+   "certified": true,
+   "lambda_min_H_lower": "5.660e-73",
+   "normW_upper": "2.986",
+   "lambda_min_T_lower": "6.346e-74"
+  }
+ },
+ "H1": {
+  "schur_bound": "3.64207327046",
+  "cells": 32000,
+  "all_cells_checked": true,
+  "weight_exactly_even": true,
+  "weight_file": "w_16_32000.txt"
+ },
+ "H3_C": "0.1235910082",
+ "H4": [
+  "0.1231964055",
+  "0.1229756309"
+ ],
+ "H2_mt": "0.857900000000",
+ "H5": {
+  "rho": 3.0,
+  "rN": "3.067e-154",
+  "e": "1.072e-150",
+  "e_band": "1.027e-150",
+  "e_U": "4.484e-152",
+  "e_pole": "1.147e-4020",
+  "n": "1.891e-304",
+  "h": "8.945e-303",
+  "alpha": "1.072e-150",
+  "beta": "1.456e-150",
+  "correction_norm_bound": "9.761e-149"
+ },
+ "certified": true
+}

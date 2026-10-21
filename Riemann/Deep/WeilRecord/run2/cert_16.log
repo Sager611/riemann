@@ -1,0 +1,33 @@
+inputs: grams_16_1400_384.bin sha256:31c8af4e83e8a636  band_16_1400_640_9o2_384.bin sha256:2f730902e2bc4bb2  w_16_32000.txt sha256:37d59ebe68f3ccab  python-flint 0.9.0  python 3.14.7
+schur: mu=16 cells=32000 (all 32000 cells checked; weight exactly even: True) sup R_w <= 3.642073270 (cell 10506)
+  H1 ||C_p|| <= 3.642073270 <= s = 3.642100000  [weighted Schur test, all 32000 cells, weight exactly even: True]
+  H3 C = a(Omega) - gamma = 0.12359101 > 0;  H4 u0 E0 = 0.12319641 <= C, u1 E1 = 0.12297563 <= C
+cert: mu=16 L=1.3862944 N=1400 Omega=640.0 c=887.23 gamma=4.500000 s=3.642100 m_eff=0.857900 b=8.1421 C=0.123591
+  u=(343,114) E0=0.0003592 E1=0.001079 rho=3.0 e=1.07e-150 n=1.89e-304 h=8.94e-303 alpha=1.07e-150 beta=1.46e-150
+  H2 m_t = gamma - s - tau = 0.8579000000 > 0;  H5 Legendre tail (rho=3.0): r_N = 3.07e-154;  e = e_band 1.03e-150 + e_U 4.48e-152 + e_pole 1.15e-4020 = 1.07e-150;  n = 1.89e-304 + 7.59e-8042 = 1.89e-304 < m_t;  h = 8.94e-303
+     alpha = 1.07e-150, beta = 1.46e-150;  ||alpha I + beta D|| <= alpha + beta (b - tau)^2 = 9.76e-149  (vs tau = 1.00e-76; this correction is subtracted inside Z exactly)
+  parity 0: d=700  H6 quadrature: ||J_true - J_quad||_2 <= epsJ = d*errK 3.92e-102 + u(2 ev + ev^2) 3.03e-99 = 3.04e-99 (ev = d*errB = 4.42e-102);  ||rad H||_F <= 2.75e-110  (85s)
+  parity 0: H7 H_mid - 2^-256 I = L L^T + Res;  ||Res||_F + ||rad H||_F <= 8.04e-81 + 2.75e-110 = 8.04e-81 < 2^-256 = 8.64e-78 -> PSD CERTIFIED  (126s)
+  parity 0: proved margins  lambda_min(H) >= 8.628e-78;  ||W||_2 <= 3.039;  lambda_min(W^-1 + Z) >= 9.341e-79 > 0
+  parity 1: d=700  H6 quadrature: ||J_true - J_quad||_2 <= epsJ = d*errK 3.92e-102 + u(2 ev + ev^2) 1.01e-99 = 1.01e-99 (ev = d*errB = 4.42e-102);  ||rad H||_F <= 2.39e-110  (244s)
+  parity 1: H7 H_mid - 2^-240 I = L L^T + Res;  ||Res||_F + ||rad H||_F <= 1.89e-82 + 2.39e-110 = 1.89e-82 < 2^-240 = 5.66e-73 -> PSD CERTIFIED  (286s)
+  parity 1: proved margins  lambda_min(H) >= 5.660e-73;  ||W||_2 <= 2.986;  lambda_min(W^-1 + Z) >= 6.346e-74 > 0
+RESULT mu=16: CERTIFIED  Q(f) >= 1.00000e-76 ||f||^2 for every f supported in [-L, L], L = 1.386294361
+      322.91 real       193.50 user        17.90 sys
+           783892480  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1674388  page reclaims
+                 232  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               35376  voluntary context switches
+             1333122  involuntary context switches
+       1808493096135  instructions retired
+        494436370797  cycles elapsed
+          2187774064  peak memory footprint

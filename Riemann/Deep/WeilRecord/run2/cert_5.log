@@ -1,0 +1,15 @@
+inputs: grams_5_140_320.bin sha256:e9550ba05644b6a6  band_5_140_48_7o4_320.bin sha256:2b23e5fa690bf39c  w_5_8000.txt sha256:10204a30bf2f3f9c  python-flint 0.9.0  python 3.14.7
+schur: mu=5 cells=8000 (all 8000 cells checked; weight exactly even: True) sup R_w <= 1.219137998 (cell 1154)
+  H1 ||C_p|| <= 1.219137998 <= s = 1.219200000  [weighted Schur test, all 8000 cells, weight exactly even: True]
+  H3 C = a(Omega) - gamma = 0.28330586 > 0;  H4 u0 E0 = 0.27898378 <= C, u1 E1 = 0.26013238 <= C
+cert: mu=5 L=0.80471896 N=140 Omega=48.0 c=38.63 gamma=1.750000 s=1.219200 m_eff=0.530800 b=2.9692 C=0.283306
+  u=(33,10) E0=0.008454 E1=0.02601 rho=6.0 e=4.61e-58 n=9.49e-118 h=6.68e-117 alpha=4.61e-58 beta=1.64e-57
+  H2 m_t = gamma - s - tau = 0.5308000000 > 0;  H5 Legendre tail (rho=6.0): r_N = 2.95e-60;  e = e_band 4.08e-58 + e_U 5.36e-59 + e_pole 3.42e-296 = 4.61e-58;  n = 9.49e-118 + 1.56e-592 = 9.49e-118 < m_t;  h = 6.68e-117
+     alpha = 4.61e-58, beta = 1.64e-57;  ||alpha I + beta D|| <= alpha + beta (b - tau)^2 = 1.49e-56  (vs tau = 1.00e-20; this correction is subtracted inside Z exactly)
+  parity 0: d=70  H6 quadrature: ||J_true - J_quad||_2 <= epsJ = d*errK 3.91e-84 + u(2 ev + ev^2) 5.29e-83 = 5.68e-83 (ev = d*errB = 8.01e-85);  ||rad H||_F <= 1.39e-91  (0s)
+  parity 0: H7 H_mid - 2^-64 I = L L^T + Res;  ||Res||_F + ||rad H||_F <= 2.07e-89 + 1.39e-91 = 2.09e-89 < 2^-64 = 5.42e-20 -> PSD CERTIFIED  (0s)
+  parity 0: proved margins  lambda_min(H) >= 5.421e-20;  ||W||_2 <= 4.418;  lambda_min(W^-1 + Z) >= 2.777e-21 > 0
+  parity 1: d=70  H6 quadrature: ||J_true - J_quad||_2 <= epsJ = d*errK 3.91e-84 + u(2 ev + ev^2) 1.60e-83 = 1.99e-83 (ev = d*errB = 8.01e-85);  ||rad H||_F <= 9.94e-92  (0s)
+  parity 1: H7 H_mid - 2^-52 I = L L^T + Res;  ||Res||_F + ||rad H||_F <= 2.70e-90 + 9.94e-92 = 2.80e-90 < 2^-52 = 2.22e-16 -> PSD CERTIFIED  (0s)
+  parity 1: proved margins  lambda_min(H) >= 2.220e-16;  ||W||_2 <= 4.291;  lambda_min(W^-1 + Z) >= 1.206e-17 > 0
+RESULT mu=5: CERTIFIED  Q(f) >= 1.00000e-20 ||f||^2 for every f supported in [-L, L], L = 0.8047189562
