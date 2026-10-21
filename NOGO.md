@@ -226,3 +226,4 @@
 - de Bruijn–Newman audit: Gomila Λ ≤ 0.1787854 (GitHub, 20 Aug 2026) no gap; Planat arXiv 2609.37164 (Λ ≤ 0.177953) lower-barrier nodes use F1 + γ·conj(F2) instead of F1 + γ·F2 — a real slip but harmless (corrected margin 0.312). [report](Riemann/Deep/DBN/REPORT.md)
 - de Bruijn–Newman below 0.17795 within the Polymath criterion at the Platt–Trudgian height: no record — best certificate type reaches ≈ 0.1705; Planat posted Λ ≤ 0.148612 (arXiv 2610.18214). [report](Riemann/Deep/DBN/REPORT2.md)
 - Planat Λ ≤ 0.148612 (arXiv 2610.18214): no false step; explicitly conditional on premises A1–A3 from D. J. Raymond (unrefereed Zenodo). [report](Riemann/Deep/DBN/REPORT3.md)
+- Raymond premises A1–A3 (behind Planat Λ ≤ 0.148612): written computer-assisted proofs; every re-derivation and numerical test passed; no false premise. [report](Riemann/Deep/DBN/REPORT4.md)
