@@ -227,3 +227,4 @@
 - de Bruijn–Newman below 0.17795 within the Polymath criterion at the Platt–Trudgian height: no record — best certificate type reaches ≈ 0.1705; Planat posted Λ ≤ 0.148612 (arXiv 2610.18214). [report](Riemann/Deep/DBN/REPORT2.md)
 - Planat Λ ≤ 0.148612 (arXiv 2610.18214): no false step; explicitly conditional on premises A1–A3 from D. J. Raymond (unrefereed Zenodo). [report](Riemann/Deep/DBN/REPORT3.md)
 - Raymond premises A1–A3 (behind Planat Λ ≤ 0.148612): written computer-assisted proofs; every re-derivation and numerical test passed; no false premise. [report](Riemann/Deep/DBN/REPORT4.md)
+- R117 thin-family methods for ζ itself: all dead or long shots; the trivial character (ζ) is invisible to large sieves. [Lean](Riemann/Tree/R117.lean)
