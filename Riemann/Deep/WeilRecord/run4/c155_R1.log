@@ -1,0 +1,54 @@
+cert4 inputs: g155_B.bin sha256:8fea742bace24f4e pieces=[1, 3, 4, 5, 6, 12] parities=[0, 1]  g155_A0.bin sha256:b83c61b5f040dc46 pieces=[0, 2, 7, 8, 9, 10, 11] parities=[0]  g155_A1.bin sha256:16bff0dd45718d07 pieces=[0, 2, 7, 8, 9, 10, 11] parities=[1]
+  w_L31o20_32000.txt sha256:71147155f5f3b5f8  python-flint 0.9.0  python 3.14.7  prec=448 prec_c=576 TINY_EXP=608
+schur: mu=L31o20 cells=32000 (all 32000 cells checked; weight exactly even: True) sup R_w <= 4.591281212 (cell 10125)
+  H1 ||C_p|| <= 4.591281212 <= s = 4.591300000  [weighted Schur test, all 32000 cells, weight exactly even: True]
+  H3 C = a(Omega) - gamma = 0.11457444 > 0;  H4 u0 E0 = 0.11437107 <= C, u1 E1 = 0.11391478 <= C
+cert4: mu=L31o20 L=1.550000000 N=3400 Omega=1640.0000 c=2542.00 N/c=1.338 gamma=5.4500000 s=4.5913000 b=10.0413 tau=1.00e-112
+  H2 m_t = gamma - s - tau = 0.8587000000 > 0;  H5 (rho=2.2): r_N = 1.10e-200, e = 1.14e-196, n = 6.90e-397 < m_t, h = 7.82e-395, alpha = 1.14e-196, beta = 1.55e-196;  alpha + beta (b - tau)^2 = 1.57e-194 (subtracted in Z)
+  parity 0: d=1700  grams (pieces 0..12 covered once by 2 part(s)) loaded  (203s, maxrss 1.82 GB)
+  parity 0: W assembled, ||W||_2 <= 3.310  (521s, maxrss 3.69 GB)
+  band (parity 0): N=3400 Omega=1640.0000 gamma=5.4500000 bprec=3118 panels=33 nodes=5508 TINY_EXP=608
+    entry error (normalised): K: gauss 1.56e-124 + node rounding 1.16e-127 + flush 3.67e-175 = 1.56e-124;  B: gauss 1.05e-124 + 8.47e-129 + flush = 1.05e-124
+    band nodes 1600/5508 314s
+    band nodes 3200/5508 479s
+    band nodes 4800/5508 1139s
+    band nodes 5508/5508 1261s
+  parity 0: H6 epsJ = d errK 2.66e-121 + u(2 ev + ev^2) 7.89e-120 = 8.16e-120 (ev = sqrt(d) errB = 4.32e-123);  Z = J - (epsJ + alpha + beta(b-tau)^2) I  (1797s, maxrss 3.69 GB)
+  parity 0: H = W + W Z W;  ||rad H||_F <= 1.17e-127  (2765s, maxrss 3.69 GB)
+  parity 0: lambda_est(H_mid) = 1/||L^-1||_F^2 = 4.598e-110;  inverse power: lambda_min(H_mid) ~ 4.598e-110  (2902s)
+  parity 0: DIAG lambda_min(T) ~ 1.516e-108 (T = W^-1 + Z, includes -tau and -epsJ);  lambda_min(A + J) ~ 1.667e-108 (Galerkin, includes -tau);  ratio 0.9096  (3193s)
+  parity 0: H7 H_mid - 2^-365 I = L L^T + Res;  ||Res||_F + ||rad H||_F <= 1.38e-122 + 1.17e-127 = 1.38e-122 < 2^-365 = 1.33e-110 -> PSD CERTIFIED  (5764s, maxrss 3.69 GB)
+  parity 0: proved margins  lambda_min(H) >= 1.331e-110;  ||W||_2 <= 3.310;  lambda_min(W^-1 + Z) >= 1.215e-111 > 0
+  parity 1: d=1700  grams (pieces 0..12 covered once by 2 part(s)) loaded  (5971s, maxrss 3.69 GB)
+  parity 1: W assembled, ||W||_2 <= 3.300  (6764s, maxrss 3.69 GB)
+  band (parity 1): N=3400 Omega=1640.0000 gamma=5.4500000 bprec=3118 panels=33 nodes=5508 TINY_EXP=608
+    entry error (normalised): K: gauss 1.56e-124 + node rounding 1.16e-127 + flush 3.67e-175 = 1.56e-124;  B: gauss 1.05e-124 + 8.47e-129 + flush = 1.05e-124
+    band nodes 1600/5508 401s
+    band nodes 3200/5508 499s
+    band nodes 4800/5508 917s
+    band nodes 5508/5508 1180s
+  parity 1: H6 epsJ = d errK 2.66e-121 + u(2 ev + ev^2) 2.62e-120 = 2.88e-120 (ev = sqrt(d) errB = 4.32e-123);  Z = J - (epsJ + alpha + beta(b-tau)^2) I  (7965s, maxrss 3.69 GB)
+  parity 1: H = W + W Z W;  ||rad H||_F <= 1.16e-127  (8686s, maxrss 3.69 GB)
+  parity 1: lambda_est(H_mid) = 1/||L^-1||_F^2 = 1.162e-105;  inverse power: lambda_min(H_mid) ~ 1.162e-105  (8819s)
+  parity 1: DIAG lambda_min(T) ~ 3.954e-104 (T = W^-1 + Z, includes -tau and -epsJ);  lambda_min(A + J) ~ 4.393e-104 (Galerkin, includes -tau);  ratio 0.9000  (9080s)
+  parity 1: H7 H_mid - 2^-350 I = L L^T + Res;  ||Res||_F + ||rad H||_F <= 1.60e-124 + 1.16e-127 = 1.60e-124 < 2^-350 = 4.36e-106 -> PSD CERTIFIED  (9279s, maxrss 3.69 GB)
+  parity 1: proved margins  lambda_min(H) >= 4.360e-106;  ||W||_2 <= 3.300;  lambda_min(W^-1 + Z) >= 4.004e-107 > 0
+RESULT mu=L31o20: CERTIFIED  Q(f) >= 1.00000e-112 ||f||^2 for every f supported in [-L, L], L = 1.550000000
+     9287.40 real      3301.09 user       281.03 sys
+          3961487360  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            24404957  page reclaims
+                 319  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              317153  voluntary context switches
+            20260480  involuntary context switches
+      26619449742340  instructions retired
+       8229797984909  cycles elapsed
+          5366912376  peak memory footprint

@@ -1,0 +1,127 @@
+{
+ "mu": "L31o20",
+ "L": "1.55000000000",
+ "N": 3400,
+ "prec": 448,
+ "prec_c": 576,
+ "TINY_EXP": 608,
+ "Omega": "1640.0000",
+ "gamma": "5.4500000",
+ "s": "4.591300000",
+ "tau": "1.00000e-112",
+ "u": [
+  913,
+  303
+ ],
+ "parity": {
+  "0": {
+   "d": 1700,
+   "grams": "pieces 0..12 covered once by 2 part(s)",
+   "epsJ": "8.155e-120",
+   "errK": "1.565e-124",
+   "errB": "1.048e-124",
+   "radH_F": "1.166e-127",
+   "normW_upper": "3.310",
+   "lambda_est_H": "4.598e-110",
+   "lambda_pow_H": "4.598e-110",
+   "diag_lambda_T": "1.516e-108",
+   "diag_lambda_AJ": "1.667e-108",
+   "sigma": "2^-365",
+   "resF": "1.379e-122",
+   "chol_bound": "1.379e-122",
+   "certified": true,
+   "lambda_min_H_lower": "1.331e-110",
+   "lambda_min_T_lower": "1.215e-111"
+  },
+  "1": {
+   "d": 1700,
+   "grams": "pieces 0..12 covered once by 2 part(s)",
+   "epsJ": "2.884e-120",
+   "errK": "1.565e-124",
+   "errB": "1.048e-124",
+   "radH_F": "1.159e-127",
+   "normW_upper": "3.300",
+   "lambda_est_H": "1.162e-105",
+   "lambda_pow_H": "1.162e-105",
+   "diag_lambda_T": "3.954e-104",
+   "diag_lambda_AJ": "4.393e-104",
+   "sigma": "2^-350",
+   "resF": "1.601e-124",
+   "chol_bound": "1.602e-124",
+   "certified": true,
+   "lambda_min_H_lower": "4.360e-106",
+   "lambda_min_T_lower": "4.004e-107"
+  }
+ },
+ "grams": [
+  {
+   "file": "g155_B.bin",
+   "pieces": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    12
+   ],
+   "parities": [
+    0,
+    1
+   ]
+  },
+  {
+   "file": "g155_A0.bin",
+   "pieces": [
+    0,
+    2,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "parities": [
+    0
+   ]
+  },
+  {
+   "file": "g155_A1.bin",
+   "pieces": [
+    0,
+    2,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "parities": [
+    1
+   ]
+  }
+ ],
+ "H1": {
+  "schur_bound": "4.59128121193",
+  "cells": 32000,
+  "all_cells_checked": true,
+  "weight_exactly_even": true,
+  "weight_file": "w_L31o20_32000.txt"
+ },
+ "H3_C": "0.1145744389",
+ "H4": [
+  "0.1143710669",
+  "0.1139147784"
+ ],
+ "H2_mt": "0.858700000000",
+ "H5": {
+  "rho": 2.2,
+  "rN": "1.105e-200",
+  "e": "1.140e-196",
+  "n": "6.896e-397",
+  "h": "7.818e-395",
+  "alpha": "1.140e-196",
+  "beta": "1.546e-196",
+  "correction_norm_bound": "1.570e-194"
+ },
+ "certified": true
+}

@@ -1,0 +1,25 @@
+    nodes 745/745  3002s  (legendre steps 1.822e+08; chunk: values 45.4s, products 72.9s)
+  piece 11 [0.827880,0.899638] active shifts 11  gauss 970 (rho 4.00, err A 9.33e-302, B 4.68e-137)  3006s
+    nodes 256/970  3112s  (legendre steps 1.951e+08; chunk: values 48.1s, products 57.9s)
+    nodes 512/970  3235s  (legendre steps 2.080e+08; chunk: values 55.2s, products 67.5s)
+    nodes 768/970  3352s  (legendre steps 2.209e+08; chunk: values 50.4s, products 66.5s)
+    nodes 970/970  3442s  (legendre steps 2.311e+08; chunk: values 34.7s, products 55.3s)
+grams_c done: g155_A0.bin  max raw radius A0 7.83e-134 B0 3.14e-133  3457s  flint 3.6.0
+     3457.43 real      1902.14 user       130.20 sys
+          1731264512  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            10621302  page reclaims
+                 147  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               33337  voluntary context switches
+            12982623  involuntary context switches
+      17032863498836  instructions retired
+       4588650953434  cycles elapsed
+          1855817408  peak memory footprint

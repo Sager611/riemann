@@ -1,0 +1,49 @@
+cert4 inputs: g155_B.bin sha256:8fea742bace24f4e pieces=[1, 3, 4, 5, 6, 12] parities=[0, 1]  g155_A0.bin sha256:b83c61b5f040dc46 pieces=[0, 2, 7, 8, 9, 10, 11] parities=[0]  g155_A1.bin sha256:16bff0dd45718d07 pieces=[0, 2, 7, 8, 9, 10, 11] parities=[1]
+  w_L31o20_32000.txt sha256:71147155f5f3b5f8  python-flint 0.9.0  python 3.14.7  prec=448 prec_c=576 TINY_EXP=608
+schur: mu=L31o20 cells=32000 (all 32000 cells checked; weight exactly even: True) sup R_w <= 4.591281212 (cell 10125)
+  H1 ||C_p|| <= 4.591281212 <= s = 4.591300000  [weighted Schur test, all 32000 cells, weight exactly even: True]
+  H3 C = a(Omega) - gamma = 0.12254780 > 0;  H4 u0 E0 = 0.12235608 <= C, u1 E1 = 0.12241498 <= C
+cert4: mu=L31o20 L=1.550000000 N=2825 Omega=1340.0000 c=2077.00 N/c=1.360 gamma=5.2400000 s=4.5913000 b=9.8313 tau=1.00e-112
+  H2 m_t = gamma - s - tau = 0.6487000000 > 0;  H5 (rho=2.2): r_N = 4.92e-180, e = 4.08e-176, n = 1.09e-355 < m_t, h = 1.11e-353, alpha = 4.08e-176, beta = 9.69e-176;  alpha + beta (b - tau)^2 = 9.41e-174 (subtracted in Z)
+  parity 0: d=1413  grams (pieces 0..12 covered once by 2 part(s)) loaded  (197s, maxrss 2.10 GB)
+  parity 0: W assembled, ||W||_2 <= 3.666  (410s, maxrss 2.30 GB)
+  band (parity 0): N=2825 Omega=1340.0000 gamma=5.2400000 bprec=2653 panels=28 nodes=4664 TINY_EXP=608
+    entry error (normalised): K: gauss 1.89e-124 + node rounding 7.90e-128 + flush 2.45e-175 = 1.89e-124;  B: gauss 9.16e-125 + 5.85e-129 + flush = 9.16e-125
+    band nodes 1600/4664 250s
+    band nodes 3200/4664 309s
+    band nodes 4664/4664 494s
+  parity 0: H6 epsJ = d errK 2.67e-121 + u(2 ev + ev^2) 5.50e-120 = 5.76e-120 (ev = sqrt(d) errB = 3.44e-123);  Z = J - (epsJ + alpha + beta(b-tau)^2) I  (926s, maxrss 2.30 GB)
+  parity 0: H = W + W Z W;  ||rad H||_F <= 1.15e-127  (1811s, maxrss 2.30 GB)
+  parity 0: lambda_est(H_mid) = 1/||L^-1||_F^2 = 2.790e-110;  inverse power: lambda_min(H_mid) ~ 2.790e-110  (1883s)
+  parity 0: DIAG lambda_min(T) ~ 8.580e-109 (T = W^-1 + Z, includes -tau and -epsJ);  lambda_min(A + J) ~ 1.661e-108 (Galerkin, includes -tau);  ratio 0.5165  (1958s)
+  parity 0: H7 H_mid - 2^-365 I = L L^T + Res;  ||Res||_F + ||rad H||_F <= 2.38e-122 + 1.15e-127 = 2.38e-122 < 2^-365 = 1.33e-110 -> PSD CERTIFIED  (2101s, maxrss 2.30 GB)
+  parity 0: proved margins  lambda_min(H) >= 1.331e-110;  ||W||_2 <= 3.666;  lambda_min(W^-1 + Z) >= 9.900e-112 > 0
+  parity 1: d=1412  grams (pieces 0..12 covered once by 2 part(s)) loaded  (2453s, maxrss 2.30 GB)
+  parity 1: W assembled, ||W||_2 <= 3.629  (2859s, maxrss 2.30 GB)
+  band (parity 1): N=2825 Omega=1340.0000 gamma=5.2400000 bprec=2653 panels=28 nodes=4664 TINY_EXP=608
+    entry error (normalised): K: gauss 1.89e-124 + node rounding 7.90e-128 + flush 2.45e-175 = 1.89e-124;  B: gauss 9.16e-125 + 5.85e-129 + flush = 9.16e-125
+    band nodes 1600/4664 2631s
+    band nodes 3200/4664 2976s
+    band nodes 4664/4664 3158s
+  parity 1: H6 epsJ = d errK 2.67e-121 + u(2 ev + ev^2) 1.83e-120 = 2.10e-120 (ev = sqrt(d) errB = 3.44e-123);  Z = J - (epsJ + alpha + beta(b-tau)^2) I  (6030s, maxrss 2.30 GB)
+  parity 1: H = W + W Z W;  ||rad H||_F <= 1.14e-127  (6715s, maxrss 2.30 GB)
+  parity 1: midpoint Cholesky of H_mid fails (H_mid not numerically PD) -> FAIL  (6718s)
+RESULT mu=L31o20: not certified (parities run: [0, 1])
+     6729.44 real      2162.04 user       155.68 sys
+          2473623552  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            12320962  page reclaims
+                 517  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+              139512  voluntary context switches
+            13589331  involuntary context switches
+      17593756167820  instructions retired
+       5320333983332  cycles elapsed
+          3797586048  peak memory footprint
