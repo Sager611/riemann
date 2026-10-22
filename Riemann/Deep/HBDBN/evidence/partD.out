@@ -1,0 +1,45 @@
+OK   Ebar160(111/5) < 7*6e10/88 
+OK   k=21/4-8/(16-9/16) 
+OK   E20(k*4/25) > 73691/34608 
+OK   zeta(5/2) cert < 269/200 1.3415024167053267
+OK   J cert < 39/100 0.3874050364551905
+OK   log n <= ell_n (n=2..64, arb) 
+OK   E60(12) > 60000 
+OK   S(x,4,t) bound > 5.25228 > 21/4 5.252282060346749
+OK   F'/F bound < 0.297717 
+OK   t* < 4/25 and Lambda<=0.17972754... [0.179727541426 +/- 3.95e-13]
+OK   Ebar160(557/25) < 7X/88 
+OK   Ebar160(13929/625) < 113X/1420 
+OK   69098^2 < 113X/1420 
+OK   direct: L/4 at X (arb) [5.57164688785 +/- 2.53e-12]
+OK   direct: sqrt(X/4pi) >= 69098 [69098.8782355 +/- 3.68e-9]
+OK   J(2) bound < 1 [0.9428710484 +/- 2.47e-11]
+OK   log 65536 < 12 
+OK   int_{N1}^inf log y y^{-81/40} < 1e-3 [0.0001361276208 +/- 1.57e-14]
+OK   gauss1 < 1e-8 5.733333335586e-10
+OK   gauss2 < 3/10 0.25475883872465754
+OK   gauss3 < 4/100 0.029719275159707424
+OK   log3<11/10, log2/2<7/20 
+OK   eps_sigma worst < 1/25 
+OK   P0<0.036, kappa0<0.445 
+OK   first-100 coeff sum < 0.029 
+OK   d(x)<1e-10 [3.1129e-11 +/- 1.70e-16]
+OK   F4 bracket (0.90664,0.90665) 
+OK   T4 bracket (0.93835,0.93836) 
+OK   F5 bracket (0.88328,0.88330) 
+OK   T5 bracket (0.91043,0.91045) 
+OK   S(x,5)>5 
+OK   height5 Lambda value [0.193879836695 +/- 3.88e-13]
+OK   triangle: chain/k>0/p^2>=5q 
+OK   triangle min(C*-C) > 8.5e-7 8.564503148889773e-07
+OK   triangle min gate > 3.48e-7 3.4817106372018094e-07
+OK   triangle final time 3793/25000 0.17172
+OK   Euler: chain/k>0/p^2>=5q 
+OK   Euler min(C*-C) > 1.48e-6 1.4867300280319736e-06
+OK   Euler min gate > 1.25e-7 1.2532755753157636e-07
+OK   Euler final time 1801/12500 0.16408
+OK   tail n>60000 n^-2.005 < 1.7e-5 
+OK   tail n>60000 log n n^-2.005 < 2.1e-4 
+OK   tail n>65536 n^-2.005 < 1.6e-5 
+OK   tail n>65536 log < 1.9e-4 
+ALL OK: True
