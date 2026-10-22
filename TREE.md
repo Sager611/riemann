@@ -176,5 +176,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R158 our Weil, NT and Gale records unchallenged; Gale counterexamples also exist in R⁴, R⁵ (repository of 2610.28828) → refine; Moser's worm upper bound 0.246332 looks improvable → Orca. [R158.lean](Riemann/Tree/R158.lean)
 - R159 Padhi's Zenodo proof of the unconditional Ramanujan inequality fails as published (factor 2 in a zero-density term) but looks repairable → Orca; Lemma 6 of our Sun–Hou proof rechecked; perfect-cuboid paper gap to check. [R159.lean](Riemann/Tree/R159.lean)
 - R160 Bellotti's explicit zero density (2405.12545) has two real flaws (a missing factor 2; a sign-dropping bound), propagating to its constants; the Padhi refutation needs fuller quotation (reviewer); perfect-cuboid paper fine. [R160.lean](Riemann/Tree/R160.lean)
-- R161 FRONTIER (next)
+- R161 today's targets: a likely gap in the Erdős–Graham c = 8 paper (a short-interval prime bound that is not known) and an unjustified identification in the Wiman-sextic paper → verify; five papers clean. [R161.lean](Riemann/Tree/R161.lean)
+- R162 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
