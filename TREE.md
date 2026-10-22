@@ -170,5 +170,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R152 Sun's MathOverflow 316143 lower bound fails for A = {0,1,2,3}, λ = (1,1,2) (over Q); Sun–Zhao Erdős–Heilbronn extension survives 9.1 million cases; 1811.10503 Conj. 4.2–4.8 hold for n ≤ 9. [R152.lean](Riemann/Tree/R152.lean)
 - R153 MathOverflow 316142 (Sun) repeats the n = 2 failure of 1811.10503 Conj. 4.9; other MO, Math.SE and OEIS sweeps found nothing new (one scout misreading rejected). [R153.lean](Riemann/Tree/R153.lean)
 - R154 Sun's MathOverflow pages 1–8: five failures, all already reported in answers; Gale record 0.8906210556 certified (pending review); least-prime theorem now for all discriminants (DISCOVERIES). [R154.lean](Riemann/Tree/R154.lean)
-- R155 FRONTIER (next)
+- R155 Gale record independently recomputed and reviewed correct; STLemP thresholds and mean square into DISCOVERIES; Sun counterexamples: 7 new, 3 known; a Zenodo claim of Ramanujan's inequality unconditionally for x ≥ 38,358,837,683 → audit. [R155.lean](Riemann/Tree/R155.lean)
+- R156 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.

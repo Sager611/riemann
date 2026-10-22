@@ -266,3 +266,4 @@
 - R152 survived: Sun–Zhao Erdős–Heilbronn extension (0810.0467 Conj. 1.1; p ≤ 13, n ≤ 3, |A| ≤ 6); 1811.10503 Conj. 4.2–4.8 (n ≤ 9–10); OEIS A229827(i) (q ≤ 7), A227399(i) (Z/m, m ≤ 12); MO 316921, 301832, 303632. [R152](Riemann/Tree/R152.lean)
 - R153 survived: MO 363834 (odd m ≤ 11); Sun 1807.01181 Conj. 1.1 (F_p, p ≤ 13). Known already: MO 379370 failure (in an answer); A394532 generalization (marked false in OEIS). [R153](Riemann/Tree/R153.lean)
 - R154: Sun MathOverflow failures already reported there: 479301, 484517, 397577, 379318, 321100. Survived small cases: 25 other Sun MO questions (list in R154). [R154](Riemann/Tree/R154.lean)
+- R155 survived: 2610.29197 local dyadic conjecture (clutters on ≤ 4 elements); 2610.25661 (n ≤ 200 overall). Known already: Sun 1309.1679 printed 3.8 failure at (11, 2) (anonymous Zenodo 23307915), 3.3(ii) (author-corrected), A229827(ii) (Sun Remark 1.3). [R155](Riemann/Tree/R155.lean)
