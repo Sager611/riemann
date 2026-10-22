@@ -178,5 +178,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R160 Bellotti's explicit zero density (2405.12545) has two real flaws (a missing factor 2; a sign-dropping bound), propagating to its constants; the Padhi refutation needs fuller quotation (reviewer); perfect-cuboid paper fine. [R160.lean](Riemann/Tree/R160.lean)
 - R161 today's targets: a likely gap in the Erdős–Graham c = 8 paper (a short-interval prime bound that is not known) and an unjustified identification in the Wiman-sextic paper → verify; five papers clean. [R161.lean](Riemann/Tree/R161.lean)
 - R162 the Erdős–Graham c = 8 paper's variance claim is unproved (needs PNT in intervals of length (log X)²); Bellotti's zero-density constants are ≥ 15.7% too small; Wiman-sextic identification false (theorem unaffected). → reviewers. [R162.lean](Riemann/Tree/R162.lean)
-- R163 FRONTIER (next)
+- R163 refutation papers verified (local antimagic caterpillars exact; matroid and homotopy partly); Bellotti 2405.12545 unpublished, uncorrected; Zenodo counterexample uploads to check. [R163.lean](Riemann/Tree/R163.lean)
+- R164 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
