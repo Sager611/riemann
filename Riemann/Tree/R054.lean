@@ -13,3 +13,6 @@
 Lesson: every RH criterion written with a quotient or log must exclude the zeros explicitly, or the junk
 value 0 silently turns the criterion into "no zeros".
 -/
+
+/-! Status 2026-10-22: both SERIOUS findings are fixed. LagariasPositivity now assumes xi s ≠ 0 (R009.lean) and the
+proof uses the pole of ξ'/ξ. Inputs is inhabited: Fayed.InputsProof.inputs_holds (Riemann/Deep/Inputs/Perron.lean). -/

@@ -1,5 +1,7 @@
 # R3.1 deep dive — Weil positivity beyond the log 2 window
 
+**Status 2026-10-22:** historical. Window sizes here are FULL widths (1.75 = half-width 0.875). Superseded by Riemann/Deep/WeilRecord/ (certified half-width 3/2, DISCOVERIES entry 3).
+
 **Verdict: DEAD as a route to RH. Our rigorous window 1.75 is NOT a record** (it beats Zhu's 1.6, but unrefereed 2026 preprints already claim 17/8 and log 15). No DISCOVERY.
 
 Convention: Q(f) = Σ_ρ |f̂(γ_ρ)|²-side functional; f supported in [−L/2, L/2] (window L); only prime powers n < e^L enter.

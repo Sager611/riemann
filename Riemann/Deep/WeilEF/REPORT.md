@@ -1,5 +1,7 @@
 # Weil positivity ⇒ RH in Lean (WeilEF deep dive)
 
+**Status 2026-10-22:** the archTerm bug below is fixed in Riemann/Deep/Weil/Defs.lean (the integral is now parenthesised); Riemann.Deep.WeilEF.Suff is imported by Riemann.lean; Bug.lean (which records the old bug) is not imported.
+
 **Verdict: top rung reached.** Weil's criterion is proved in Lean, both directions, sorry-free, axioms = propext, Classical.choice, Quot.sound only:
 `Fayed.WeilSuff.weil_criterion : RiemannHypothesis ↔ ∀ L > 0, WeilPosFix L` (Suff.lean).
 **Bug found in Riemann/Deep/Weil/Defs.lean:** `archTerm` reads `(1/2π) * ∫ r, h r * Re ψ - g 0 * log π`; the integral swallows `- g 0 * log π`, the integrand is then not integrable, and Lean's junk value makes the term 0. Proved: `Fayed.WeilSuff.Bug.not_weilPos : 0 < L → ¬ WeilPos L` (Bug.lean). So every window Prop in Defs.lean (Yoshida, Zhu, Liu, Mori, CertWindow) is false as written, `WeilCriterion` there is equivalent to ¬RH, and Desogus/Paper.lean's `WeilPosOdd` uses the same broken `weilQ`. The round-55 audit missed this.
