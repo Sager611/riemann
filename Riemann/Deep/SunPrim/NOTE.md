@@ -17,5 +17,7 @@ Full neighbourhoods: 1: {4,5,6}, 2: {3,8}, 3: {2,5,9}, 4: {1,7}, 5: {1,3,10}, 6:
 ## Verification
 `python3 verify.py` (< 1 s): recomputes the primitive roots and the neighbourhoods and confirms by exhaustive search that no Hamilton cycle exists. A scout also searched every prime q ≤ 61 and every a₀: (11, 2) is the only failure with q > 7 among primes up to 61.
 
-## Status
-To check: Sun's original wording (exceptions?), prime powers q = 8, 9, 16, 25, 27, …, novelty, reviewer.
+## Status (2026-10-22)
+- Original: Z.-W. Sun, arXiv 1309.1679, Conjecture 3.10 (TeX l. 629–633): every q > 7, every a₀, no exceptions. arXiv 2610.06289 cites it as Conjecture 3.8 (a numbering slip). Neither source reports small-q checks.
+- Reviewer: correct; significant if new.
+- Pending: prime powers and larger q; adversarial novelty (OEIS, MathOverflow, Sun's later versions and book, citing papers).
