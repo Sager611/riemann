@@ -21,7 +21,7 @@ Proofs: [NOTE.md](NOTE.md) (repairs listed in §10). Briefs: `.scratch/orca/rsfa
 | 0 | none | 3/2 (RCApps2) | 8/3 |
 | 1 | a_E(p) > −α√p | 9/4 | 3 |
 | 2 | sign, a_E(p) ≠ 0, … | 3 | 10/3 |
-| ≥ 3 | small Sato–Tate intervals | (M+7)/3, unconditional (Thorner 2025 removes the Siegel-zero condition of the first version) | (M+8)/3 |
+| ≥ 3 | small Sato–Tate intervals | (M+7)/3, unconditional (Thorner, IMRN 2025, arXiv 2404.06482, eq. (5.1), removes the Siegel-zero condition of the first version) | (M+8)/3 |
 
 ## Repairs after review (NOTE §10)
 1. Theorem C is a unit-window bound; (C′) and every use state the extra factor T (window count 3T₁ in §5.4(b)). 2. Lemma B: the old tail O(|D|^{−8}) was not uniform in V, v; the cutoff is now enlarged by (|D|V(|v|+3))^ε, statement unchanged, uses re-checked. 3. Base-change coefficients written out ((R1′)) with Rankin's identity for the brief's λ_f(N𝔞)χ(𝔞); the large sieve and Deligne bounds re-verified for them. 4. Non-genus exceptional zeros are removed through Proposition F's exceptional set of D (§5.6). 5. Positivity needs the m = 0 lower bound and small m = 1, 2 errors; constants checked (`params2.py`: 85 checks OK).

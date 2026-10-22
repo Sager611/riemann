@@ -18,7 +18,7 @@ Proofs: [NOTE.md](NOTE.md). Novelty: [NOVELTY.md](NOVELTY.md) (first line NEW). 
 | RSFam D_M | 9/4 | 3 | 10/3 | 11/3 | (M+7)/3 | (M+7)/3 |
 
 ## Uniformity in m (NOTE §7)
-Explicit in m: conductors, coefficient bounds, the per-D large sieve, mollifier lengths, Thorner's zero-free region (no Landau–Siegel zeros for Sym^m f ⊗ χ, every m), c_m = 10⁷(m+1)⁴. Not explicit: Brumley–Thorner–Zaman's constant B_m (genus twists; enters δ logarithmically), Humphries–Thorner's constant for π′ = Sym^m f (route F only; routes H, H′ use only GL₂ family sieves, whose constants do not depend on m), Lemma B's C(ε, m). Hence no explicit rate when M grows with X.
+Explicit in m: conductors, coefficient bounds, the per-D large sieve, mollifier lengths, Thorner's zero-free region (IMRN 2025, arXiv 2404.06482, eq. (5.1): no Landau–Siegel zeros for Sym^m f ⊗ χ, every Dirichlet χ, every m; re-read in the TeX 2026-10-21, [FIX.md](FIX.md)), c_m = 10⁷(m+1)⁴. Not explicit: Brumley–Thorner–Zaman's constant B_m (genus twists; enters δ logarithmically), Humphries–Thorner's constant for π′ = Sym^m f (route F only; routes H, H′ use only GL₂ family sieves, whose constants do not depend on m), Lemma B's C(ε, m). Hence no explicit rate when M grows with X.
 
 ## Relation to RSFam and significance (for the reviewer)
 RSFam §7 already stated Theorem D_M (any degree-M minorant, A > (M+7)/3) with a short proof; its DISCOVERIES line covers only degree ≤ 2. This note proves Proposition T_m for every m with all m-dependence, adds explicit minorants for every interval, the equidistribution form, sectors, and lowers the thresholds for M ≥ 5 by up to 4/3 (new family density). The step from T_m to intervals and equidistribution is classical; the reviewer may prefer to merge this into the RSFam entry rather than list it separately.
@@ -29,4 +29,4 @@ RSFam §7 already stated Theorem D_M (any degree-M minorant, A > (M+7)/3) with a
 - Theorem C (per-D density, all m, already in RSFam) never helps for m ≥ 2. Per-D (every D) statements need a log-free per-D density.
 
 ## Novelty
-arXiv (34 phrase queries; 4 bulk listings, 378 records scanned), the 400 arXiv ids 2610.00001–00400, Hexagon (all 342 works), Zenodo (20 queries), OpenAlex (8), Semantic Scholar, openai/math (749), TeX of Humphries–Thorner, Pascadi–Thorner, Thorner 2021. Nothing states a Sato–Tate condition on primes in ideal classes of varying quadratic fields with any power of |D|. GXL evidence API unavailable (HTTP 429).
+arXiv (34 phrase queries; 4 bulk listings, 378 records scanned), the 400 arXiv ids 2610.00001–00400, Hexagon (all 342 works), Zenodo (20 queries), OpenAlex (8), Semantic Scholar, openai/math (749), TeX of Humphries–Thorner, Pascadi–Thorner, Thorner 2021 (arXiv 2002.10450) and Thorner 2025 (arXiv 2404.06482, the source of (J5)). Nothing states a Sato–Tate condition on primes in ideal classes of varying quadratic fields with any power of |D|. GXL evidence API unavailable (HTTP 429).

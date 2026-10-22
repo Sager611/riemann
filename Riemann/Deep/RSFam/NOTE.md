@@ -71,6 +71,10 @@ Inputs besides [C], [R], [R2] (exact statements used):
   Dirichlet character χ, L(s, Π_m ⊗ χ) ≠ 0 for Re s ≥ 1 − c₁/log(C(Π_m⊗χ)(|Im s| + 3)). The same holds for every m ≥ 1
   by Thorner (IMRN 2025, arXiv 2404.06482, Theorem 1.1 and Corollary 1.2 with F = Q, n = 0; f is regular algebraic and
   non-dihedral): L(σ+it, Sym^m f ⊗ χ) ≠ 0 for σ ≥ 1 − c/(m²[m^{y}log(mC(f)) + log(C(χ)(3+|t|))]), c absolute, y ∈ {0, 2}.
+  Pinned 2026-10-21 in the TeX of v2 ([ChebST FIX.md](../ChebST/FIX.md)): Theorem 1.1 (l. 97–118), Corollary 1.2 and the Remark after
+  it (n = 0: C(π′) → 1, y_{π′} → 0; l. 123–132), and, in the proof, eq. (5.1) (l. 600–604): L(σ, Sym^m(π) ⊗ ξ) ≠ 0 for
+  σ ≥ 1 − c/(m^{2+y}log(mC(π)) + m²log C(ξ)), every Hecke character ξ (ξ = χ|·|^{it}, C(ξ) ≤ (4/3)C(χ)(3+|t|)); it covers m = 1, 2
+  as well. Thorner, Res. Math. Sci. 2021 (arXiv 2002.10450) is a different paper (its Cor. ZFR allows one real simple zero); not used.
   (J5) concerns only Dirichlet twists, i.e. the genus characters; the twists by χ ∈ Ĝ_c are treated in §5.6.
 - (J6) Explicit formula ([R] (I6), Iwaniec–Kowalski Thm 5.11): for an entire L-function L of degree 2m+2 as in (R2) below,
   w ∈ C_c^∞([x, x+H]), x ≥ 2: Σ_n Λ_L(n)w(n) = −Σ_ρ W(ρ) + R, W(s) := ∫w(u)u^{s−1}du, |R| ≤ C(H/x + x^{−1/2})log(q x).
@@ -433,7 +437,7 @@ where A(1−σ) > min{½, a(1−σ)/(3−2σ)}, and Markov needs φ(σ) = (b/(3�
   for A ≤ A_m + ¼, the T_X-exponent (2m+10)(1−σ)/(3−2σ) is ≤ 3 there, and the E₁ margin is 3(κ+ε₁) + (m+11)ε₀ ≤ ε′
   (`params2.py`, m ≤ 20). In (b) the constant 10 becomes 2A_m, since 1 − σ ≥ 1/(2A_m). Automorphy of Sym^m f: Newton–Thorne;
   (J3), (J4) need only GRC; (J5) for m ≥ 3: Thorner (IMRN 2025, arXiv 2404.06482, Theorem 1.1 and Corollary 1.2 with F = Q,
-  n = 0), whose region c/(m²[m^{y}log(mC(f)) + log(C(χ)(3+|t|))]) is uniform in χ, so c₁′ := c/(2m²) for |D| ≥ D₀. Positivity
+  n = 0; eq. (5.1) of its proof), whose region c/(m²[m^{y}log(mC(f)) + log(C(χ)(3+|t|))]) is uniform in χ, so c₁′ := c/(2m²) for |D| ≥ D₀. Positivity
   as in §5 with Σ_{m≥1}|c_m|. □ (The first version of this note made M ≥ 3 conditional on (J5); Thorner's theorem removes that.)
 
 ## 8. Novelty audit (2026-10-21)
@@ -503,3 +507,6 @@ The reviewer judged the first version FLAWED as written, repairable. Items and w
    Corollary D1. `params2.py` → `params2.out`: 85 checks, all OK (minorants, margins, δ_e, the Lemma B exponent, Theorem D_M).
 Found while repairing: Thorner (IMRN 2025) excludes Landau–Siegel zeros of Sym^m f ⊗ χ for every m, so the thresholds
 (M+7)/3 for minorant degree M ≥ 3 are unconditional (Theorem D_M, §7); the §9 entry saying otherwise is withdrawn.
+Citation check (2026-10-21, [ChebST FIX.md](../ChebST/FIX.md)): a reviewer did not find the (J5) region in Thorner arXiv 2002.10450,
+which is not the cited paper. In the TeX of the cited one (arXiv 2404.06482v2 = IMRN 2025, rnaf307) it is eq. (5.1), for every m ≥ 1
+and every Hecke character; (J5) is now pinned to it. No statement or constant changes.

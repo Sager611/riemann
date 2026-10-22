@@ -13,6 +13,8 @@ HT = Humphries–Thorner, Compos. Math. 160 (2024), arXiv 2103.05634v2, Theorem 
 source); PT = Pascadi–Thorner, *Large sieves for GL_n and applications*, arXiv 2508.14888v2 (2025, preprint), Theorem 1.1 and
 Corollary 1.2 (labels thm:large_sieve2, cor:large_sieve2, read in the source). Paper proofs, not refereed, no Lean, no 2026
 zero-free half-planes.
+Citation check 2026-10-21 ([FIX.md](FIX.md)): (J5) re-read in the TeX of the cited paper (Thorner, IMRN 2025 = arXiv 2404.06482v2,
+eq. (5.1)) and pinned in §2.1; no statement or constant changes. Also named Proposition F″ in Theorem 3 (iii)(a).
 
 ## Verdicts
 
@@ -24,7 +26,7 @@ zero-free half-planes.
 | Theorem 1 (§4) | every interval J with nonempty interior: for A > A(J) := 𝒜(M*(J)), almost all D (both signs) have primes 𝔭 of degree one with cos θ_p ∈ J in every (narrow) class and every (x, x + x∣D∣^{−κ}], x ≥ ∣D∣^A; A(J) ≤ max{11/3, 25.2/L + 1.7} | **new** statement (no source found); for M*(J) ≤ 4 the threshold is that of [RS] Theorem D_M |
 | Theorem 2 (§5) | Sato–Tate inside every class: discrepancy ≤ 5/(n+1) (intervals), ≤ 3/(n+1) (half-lines) for A > 𝒜(2n); for A > 11/3: ≤ 10/(3A−3) | **new** |
 | Theorem 3 (§6) | sectors for D < 0 (Hecke angle in arcs of length ≥ ∣D∣^{−κ}) with the same thresholds (8/3 instead of 9/4 for degree one) | new; proof by listed changes |
-| uniformity in m (§7) | non-explicit in m: HT's constant for π′ = Sym^m f (route F only), BTZ's B_m, Lemma B's C(ε, m); m-free: HT/PT for π′ = 𝟙 (routes H, H′); explicit: Thorner's zero-free region, conductors, coefficient bounds, c_m = 10⁷(m+1)⁴ | — |
+| uniformity in m (§7) | non-explicit in m: HT's constant for π′ = Sym^m f (route F only), BTZ's B_m, Lemma B's C(ε, m); m-free: HT/PT for π′ = 𝟙 (routes H, H′); explicit: Thorner's zero-free region (IMRN 2025, arXiv 2404.06482, eq. (5.1)), conductors, coefficient bounds, c_m = 10⁷(m+1)⁴ | — |
 
 Thresholds (minorant degree M ↦ 𝒜(M); the published densities would give (M+8)/3, [RS] §7):
 
@@ -187,7 +189,12 @@ with published inputs only), smaller than (m+7)/3 for m ≥ 9. 𝒜(m) is the mi
   1 − φ_H(σ₀) > 0 (= s₁ if A^♭ = (m+3)/3, and a direct computation otherwise). On [σ₂, 1]: (m+12)e(σ) ≤ (m+12)(1−σ) ≤ ⅓
   and (2m+2)e(σ) ≤ ½. On [σ₀, σ₂]: (2m+2)e(σ) ≤ (m+1)/(A^♭+1) ≤ 3.
 - Common: c_m := 10⁷(m+1)⁴ and B_m from (J4) of [RS]; c₁′ := c/(2m²), c the absolute constant in Thorner's zero-free region ((J5) of
-  [RS]: L(σ+it, Sym^m f ⊗ χ) ≠ 0 for σ ≥ 1 − c/(m²[m^y log(mC(f)) + log(C(χ)(3+∣t∣))]), uniform in χ); σ_g := 1 − 1/(2c_m);
+  [RS]: L(σ+it, Sym^m f ⊗ χ) ≠ 0 for σ ≥ 1 − c/(m²[m^y log(mC(f)) + log(C(χ)(3+∣t∣))]), uniform in χ; source pinned 2026-10-21,
+  [FIX.md](FIX.md): Thorner, IMRN 2025, no. 20, rnaf307 = arXiv 2404.06482v2, eq. (5.1) in the proof of its Theorem 1.1 (TeX l. 600–604):
+  L(σ, Sym^m(π) ⊗ ξ) ≠ 0 for σ ≥ 1 − c/(m^{2+y}log(mC(π)) + m²log C(ξ)), every Hecke character ξ; here ξ = χ∣·∣^{it},
+  C(ξ) ≤ (4/3)C(χ)(3+∣t∣); also its Theorem 1.1, Corollary 1.2 and the Remark after it with n = 0, l. 97–132. Not in Thorner,
+  Res. Math. Sci. 2021 (arXiv 2002.10450), whose Cor. ZFR allows one real simple zero. In (e), C(ξ) ≤ 4Q₀T₁ ≤ e^L and
+  m^y log(mC(f)) ≤ L for ∣D∣ ≥ D₀(f, m, δ), so the bracket is ≤ 2L, whence c₁′); σ_g := 1 − 1/(2c_m);
   δ_m := min{1/2840, s₁/10, ε′/10, A/(8c_m), δ_e}, δ_e := A/(1.3(c_m + c₁′^{−1}log(64B_m/η₀))).
   For δ ≤ δ_m: κ := δ/4, ε₁ := δ/100, ε₀ := δ/(100(m+1)), δ′ := δ/100 (Proposition F′), σ_j := σ₀ + jε′/A (0 ≤ j ≤ J, J minimal
   with σ_J ≥ 1 − ε′/A), T_X := 2X^{κ+ε₁}, Q₀(X) := (X/2)^δ; for a given D: Q₀ := ∣D∣^δ, T₁ := 2∣D∣^{κ+ε₁} ≤ T_X, 𝔉_s := {d ∈ 𝔉(D) :
@@ -222,7 +229,7 @@ L(s, Π_m ⊗ χ_d) for d ∈ 𝔉_l, resp. d ∈ 𝔉_s, ∣γ∣ ≤ T₁; (f)
 - (c) Each window holds ≤ C(m)h log(∣D∣(∣k∣+3)) zeros; ∣W(ρ)∣ ≤ C_kHx^{β−1}(2x/(H∣ρ∣))^k with k ≥ 2/ε₁ and x/H ≤ ∣D∣^κ: E_c ≤ H∣D∣^{−1}.
 - (d) D ∉ E₂: these zeros have β ≤ σ_g and number ≤ 2^{ω(D)}C(m)T₁log(∣D∣T₁): E_d ≤ H∣D∣^{−A/(2c_m)+κ+ε₁+o(1)}.
 - (e) As [RS] §5.4(e): L := log(3C(Π_m)Q₀T₁) ≤ 1.3δ log∣D∣ (∣D∣ ≥ D₀(m)), ℓ := log x ≥ A log∣D∣ ≥ 2c_mL (δ ≤ A/(8c_m)); no zero with
-  β > 1 − c₁′/L ((J5), Thorner, for every m); (J4) with the Landau–Siegel repulsion ν^♯ ≤ 2ν_D; with δ ≤ δ_e this gives
+  β > 1 − c₁′/L ((J5): Thorner, IMRN 2025, eq. (5.1), for every m); (J4) with the Landau–Siegel repulsion ν^♯ ≤ 2ν_D; with δ ≤ δ_e this gives
   E_e ≤ η₀ν_DH/8.
 - (f) Σ∣R∣ ≤ C(m)h(H/x + x^{−1/2})log(∣D∣x) ≤ H∣D∣^{−1} (x ≥ ∣D∣²).
 
@@ -231,7 +238,7 @@ L(s, Π_m ⊗ χ_d) for d ∈ 𝔉_l, resp. d ∈ 𝔉_s, ∣γ∣ ≤ T₁; (f)
 η₁ > 0, which is ≤ η₀ν_DH/8 for ∣D∣ ≥ D₀, since ν_D ≥ c′∣D∣^{−δ/2}/log∣D∣ ([R] (I5)). With (e), ∣hS_C^{(m)}∣ ≤ η₀ν_DH/4. □
 
 Exceptional zeros are handled as in [RS] §5.6: those of the non-genus twists (χ ∈ Ĝ_c) by discarding E₁ (for D ∉ E₁ there is no
-zero with β ≥ σ_J, ∣γ∣ ≤ T_X), those of the genus twists L(s, Sym^m f ⊗ χ_d) by Thorner's theorem (no Landau–Siegel zero, every m) and
+zero with β ≥ σ_J, ∣γ∣ ≤ T_X), those of the genus twists L(s, Sym^m f ⊗ χ_d) by Thorner's theorem (IMRN 2025, arXiv 2404.06482, eq. (5.1): no Landau–Siegel zero, every m) and
 the repulsion of (J4).
 
 ## 3. Propositions F′ and F″: per-D mollifiers, three large sieves
@@ -433,7 +440,8 @@ trivial count over the ≤ (2K+1)h characters, ≤ ∣D∣^{1/2+κ+ε₂+o(1)} z
 exceptional set E₁′ defined by Markov from the angular family densities: route F, HT with 𝒮′ := {π_ψ : D ∈ 𝔇(X), ψ ∈ 𝒜(D,M_X) ∖ Ĝ},
 ∣𝒮′∣ ≤ CX^{3/2}M_X log X, C(π_ψ) ≤ 12X(M_X+4)², and I₂′ ≤ C(ε)X^{(m+3)/2+ε}M_X^{m+2+ε}T^{m+2+ε} from [RS] Lemma B for each ∞-type
 (absorb the fixed character χ_ℓ into the coefficients; the gamma factor of type ℓ raises the length to √q_m(∣ℓ∣ + km + ∣v∣ + 3)^{m+1}):
-density (X^{m+10}M_X^{2m+14}T^{2m+10})^{e(σ)+ε}; routes H, H′, Proposition F′ with λ_ψ(n) := Σ_{N𝔞=n}ψ(𝔞) (still D-independent class I
+density (X^{m+10}M_X^{2m+14}T^{2m+10})^{e(σ)+ε}; routes H, H′, Proposition F′ for σ_j < σ₂ and Proposition F″ for σ_j ≥ σ₂ (as in §2.2; F″ with V := X^{7/2}M_X^5,
+class I by (LS2) only, density (X^{m+12}M_X^{O(m)}T^{2m+2})^{e(σ)}; F″ named 2026-10-21, [FIX.md](FIX.md)), with λ_ψ(n) := Σ_{N𝔞=n}ψ(𝔞) (still D-independent class I
 coefficients), (LS1) by the weighted large sieve for 𝒜(D, M) behind [D2] Theorem A (threshold ≍ ∣D∣^{1/2}(M+3)), (LS2), (LS3) by
 HT and PT for 𝒮′ (thresholds X^{7/2}M_X^5, X^{5/2}M_X^3, and N∣𝒮′∣^{1/2} ≤ NX^{3/4}M_X^{1/2}). Here M_X := 6X^{κ+ε₂}, so all extra factors are X^{O(m(κ+ε₂))}, absorbed by taking δ smaller by a factor C·m.
 (c), (f) as before. (iv) Positivity: with η₀ := c₀/(64Σ_{m≥1}∣c_m∣), the m ≥ 1 sector sums are ≤ (9/8)η₀ĝ(0)ν_DH/h each, so the total is
@@ -452,7 +460,7 @@ input at A ≤ 3 would be Theorem C for angular characters, not written here; ro
 | HT Theorem 4.1 with π′ = Sym^m f | [RS] Prop F (route F) | ≪_{ε,n′}, n′ = m+1 | **not explicit in m** |
 | HT Theorem 4.1 / PT Theorem 1.1 and Corollary 1.2 with π′ = 𝟙 | (LS2), (LS3) (routes H, H′) | none: GL₂ family, k = 2 | constant not explicit but m-free |
 | BTZ (J4): exponent c_m = 10⁷(m+1)⁴, constant B_m | E₂, (e) | c_m explicit; B_m effective, not explicit | **B_m not explicit** (enters δ_e through log B_m) |
-| Thorner, IMRN 2025 (J5): no Landau–Siegel zero, region c/(m²[m^y log(mC(f)) + log(C(χ)(3+∣t∣))]) | (e) | explicit, c absolute | yes |
+| Thorner, IMRN 2025, rnaf307 = arXiv 2404.06482v2, eq. (5.1) (J5): no Landau–Siegel zero, region c/(m²[m^y log(mC(f)) + log(C(χ)(3+∣t∣))]) | (e) | explicit, c absolute | yes |
 | mollifier lengths | Prop F: the HT length (family threshold); F′: V = X^{1/2}/2 per D; admissible primes p > 64(m+1)² | explicit | yes |
 | δ_m, κ, exceptional exponent | §2.1 | δ_m = min{1/2840, s₁/10, ε′/10, A/(8c_m), δ_e} with s₁, ε′ ≫ (A − 𝒜(m))/m explicit, A/(8c_m) ≍ m⁻⁴, δ_e ≍ 1/(c_m + m² log(B_m/η₀)) | explicit except B_m |
 | X₀ | everywhere | all of the above | effective, not explicit |
@@ -488,7 +496,7 @@ the only non-explicit m-dependence there is B_m (genus twists) and Lemma B's C(�
 No source found states, for varying quadratic fields, a Sato–Tate condition on primes in every ideal class with any power of ∣D∣,
 per D or on average, nor any joint (ideal class, Sato–Tate) equidistribution in the range x ≥ ∣D∣^{O(1)}. Closest: Lemke Oliver–Thorner
 (IMRN 2019; Hoheisel-type short intervals and the least prime with θ_p ∈ I, for a fixed form over a fixed field), Thorner (Res. Math.
-Sci. 2021; IMRN 2025), Wong (JNT 2019) and later Chebotarev–Sato–Tate papers (Amri; Malik–Prabhu; Lee; Yang; Kumar–Kumari–Mishra):
+Sci. 2021, arXiv 2002.10450; IMRN 2025, arXiv 2404.06482), Wong (JNT 2019) and later Chebotarev–Sato–Tate papers (Amri; Malik–Prabhu; Lee; Yang; Kumar–Kumari–Mishra):
 a fixed Galois extension, where ring class fields give bounds exponential in h(D); Pierce–Turnage-Butterbaugh–Wood (Invent. 2020):
 Chebotarev for almost all fields of a fixed Galois group, no Sato–Tate, dihedral groups of growing order not covered; Thorner–Zaman,
 Chen–Park–Swaminathan: no varying class groups with a Sato–Tate condition. [RS] (this project): Theorems D, D_M (degree ≤ 2 in
