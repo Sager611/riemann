@@ -1,4 +1,5 @@
 NOT A RECORD (2026-10-22): Hakimoglu-Brown, arXiv 2610.12803 (8 Oct 2026), claims Λ ≤ 0.13963 assuming quasi-RH 7/8 (proved in our Lean port) plus a published Polymath boundary computation. The bound below is valid under its stated premises but is not the lowest posted bound.
+Reviewer (2026-10-22): GAP, not a disproof. run5.py:61–90 converts Arb lower endpoints with float(), which can round up, before flooring to 1e−12 (fix: exact downward rational floor); retained older floors still need their original certification.
 DISCOVERY: Λ ≤ 0.147373586543538, from Planat's unchanged producer and auditor (PASS; 18,864 steps; all 9 of his negative controls rejected). The inputs are his sources with our 786 certified kernels and with source floors raised to new certified paired-probe floors. Premises that remain: A2 (wall), A3 (first contact) and the analytic half of A1 (Raymond's model-to-function transfer). Our certificate replaces only the numerical moment-cone and paired-credit step of A1.
 
 # Raising the A1 floors (2026-10-21)
