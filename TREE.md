@@ -158,5 +158,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R140 Blaschke step is a missing sentence, not a gap (reviewer); Nagata, MDS (even q), section conjecture, Janson–Sós clean; KPR one slip; 3 Zenodo RH items conditional or not auditable; quasi-RH B♭ = 0.874886647 pinned by one inequality (no record). [R140.lean](Riemann/Tree/R140.lean)
 - R141 counterexample claims: Kozma–Nitzan exposition has a candidate false step (operator ≠ transition, explicit 3-vertex example) → verify; Tóth–Varolin and bipanchromatic papers overclaim beyond what they prove; Fried, Sard, Plotnick, E₂ zeros clean; Zenodo Lean dBN bounds conditional. [R141.lean](Riemann/Tree/R141.lean)
 - R142 Kozma–Nitzan flag was a false alarm (fresh inner law; both sides 1/2); OpenAI's original uses the same transition; Ward, Four Colour small covers, HLY hyperplane, Diverio–Trapani obstruction, Euler relation clean. [R142.lean](Riemann/Tree/R142.lean)
-- R143 FRONTIER (next)
+- R143 four audits clean (matroid points-lines-planes, polygon counterexamples verified, Kelly, Bolaños); first fresh testable conjectures found (factorial separation, a Krzyż-type problem, an evolution-algebra problem that may have a short proof). [R143.lean](Riemann/Tree/R143.lean)
+- R144 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
