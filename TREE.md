@@ -139,5 +139,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R121 quick audits of 6 recent arXiv papers: a false equivalence in Visser 2610.27830 (Theorems 2–3 unproved on part of the range); 2 minor slips. [R121.lean](Riemann/Tree/R121.lean)
 - R122 audits of 7 new arXiv papers: Kerr no-Siegel-zeros and Cobeli–Zaharescu 8/9 sent to Orca; one scout flaw was a pdftotext artifact. [R122.lean](Riemann/Tree/R122.lean)
 - R123 audits of 8 more new arXiv papers: no false step that matters; Liu's all-number-fields Hecke transfer looks under-proved (queued). [R123.lean](Riemann/Tree/R123.lean)
-- R124 FRONTIER (next)
+- R124 audits of 8 more new arXiv papers: one statement ≠ proof (Yang), one reversed inequality (Li), one rejected scout claim. [R124.lean](Riemann/Tree/R124.lean)
+- R125 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
