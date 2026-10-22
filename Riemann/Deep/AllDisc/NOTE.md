@@ -6,16 +6,18 @@ Date 2026-10-22. Brief: `.scratch/orca/alldisc-brief.md`. Check scripts and outp
 [R3] = [RCApps3 NOTE](../RCApps3/NOTE.md), [R4] = [RCApps4 NOTE](../RCApps4/NOTE.md), [R5] = [RCApps5 NOTE](../RCApps5/NOTE.md).
 Paper proofs, not refereed, no Lean. Unconditional (no 2026 half-plane, no Kerr). The inputs are those of [R5]. New here: Lemma M
 (ring class conductors and multiplicities), Proposition 1^o (zeros near 1 with multiplicities), Lemma G (real characters of orders),
-and the bookkeeping of §2–§6.
+and the bookkeeping of §2–§6. Revised after review (2026-10-22): Proposition 1^o is restricted to 7/8 ≤ σ ≤ 1, where its bound is
+linear in T; it is used only at σ ≥ 9/10 (§1, §5). The forms that represent primes are the positive definite (Δ < 0) and the
+indefinite (Δ > 0) ones.
 
 ## Verdicts
 
 | Item (brief) | Result | Status |
 |---|---|---|
-| (1) target | Theorems 3^o, 3⁺^o: for every A > 1, all but O(X^{1−c}) non-square discriminants Δ ≡ 0, 1 (mod 4) with \|Δ\| ≤ X (fundamental or not, either sign) satisfy: every ring class of O_Δ (narrow if Δ > 0) has ≥ ν_Δ H/(16h(Δ) log 2x) degree-one primes with norm in (x, x+H], for all x ≥ \|Δ\|^A and H ∈ [x\|Δ\|^{−κ}, x]. So every primitive form of discriminant Δ represents a prime in each such interval, and a prime ≤ 2\|Δ\|^A | **new**, complete proof. [R5] had fundamental D only, about 61% of all discriminants |
+| (1) target | Theorems 3^o, 3⁺^o: for every A > 1, all but O(X^{1−c}) non-square discriminants Δ ≡ 0, 1 (mod 4) with \|Δ\| ≤ X (fundamental or not, either sign) satisfy: every ring class of O_Δ (narrow if Δ > 0) has ≥ ν_Δ H/(16h(Δ) log 2x) degree-one primes with norm in (x, x+H], for all x ≥ \|Δ\|^A and H ∈ [x\|Δ\|^{−κ}, x]. So every primitive form of discriminant Δ that is positive definite (Δ < 0) or indefinite (Δ > 0) represents a prime in each such interval, and a prime ≤ 2\|Δ\|^A; negative definite forms represent no positive primes | **new**, complete proof. [R5] had fundamental D only, about 61% of all discriminants |
 | (2) family sieve | Theorem 1^o: [R5] Theorems 1, 1⁺ over all pairs (Δ, χ ∈ Ĝ_Δ), all orders: ≪ X^{3/2+14δ}N^{1−2σ}. No new analysis is needed: Lemma P already sums over all orders, and the left side only gains the non-fundamental Δ | new statement |
 | (2) family density | Theorem 2^o: Σ_{Δ∈𝒟(X)}N^♮_Δ(σ;t) ≪ X^{2−σ+60δ} for ½+3δ ≤ σ ≤ 9/10, both signs | new |
-| (2) conductors, induced characters, family count | Lemma M: every χ ∈ Ĝ_Δ is inflated from a unique primitive pair (Δ′, χ′), with Δ = m²Δ′. Each primitive pair lies under ≤ 1 + (X/\|Δ′\|)^{1/2} elements of 𝒟(X); each GL₂ form comes from ≤ 6 primitive pairs; Σ_{Δ∈𝒟(X)}h(Δ) ≤ 5X^{3/2}log²(3X). Proposition 1^o: Σ_Δ N^c_Δ(σ,T) ≪ (XT)^ε T(X^{10(1−σ)/(3−2σ)} + X^{1/2}) | new; the extra X^{1/2} comes from small conductors with large multiplicity and is harmless for Markov |
+| (2) conductors, induced characters, family count | Lemma M: every χ ∈ Ĝ_Δ is inflated from a unique primitive pair (Δ′, χ′), with Δ = m²Δ′. Each primitive pair lies under ≤ 1 + (X/\|Δ′\|)^{1/2} elements of 𝒟(X); each GL₂ form comes from ≤ 6 primitive pairs; Σ_{Δ∈𝒟(X)}h(Δ) ≤ 5X^{3/2}log²(3X). Proposition 1^o: for 7/8 ≤ σ ≤ 1, Σ_Δ N^c_Δ(σ,T) ≪ (XT)^ε T^{F₂(σ)}(X^{F₂(σ)} + X^{1/2}) ≤ (XT)^ε T(X^{F₂(σ)} + X^{1/2}), where F₂(σ) = 10(1−σ)/(3−2σ) ≤ 1; it is used only at σ ≥ 9/10 | new; the extra X^{1/2} comes from small conductors with large multiplicity and is harmless for Markov. Restricted to σ ≥ 7/8 after review: below 7/8 the power of T is F₂(σ) > 1 |
 | (3) zero detector | [R3] Lemmas 3, 4 hold for every χ ∈ Ĝ_Δ∖{1}: λ_χ(p) = 0 = (Δ/p) for p \| f, and L(s,χ) = L(s,χ*)E_χ(s) with E_χ zero-free in Re s > 0. The class I coefficients stay independent of Δ (Lemma D) | routine |
 | (4) genus characters, Siegel zeros | Lemma G: the real characters of G_Δ correspond to disjoint pairs {d, d′} with L(s,χ*) = L(s,χ_d)L(s,χ_{d′}) and dd′ \| Δ. E₂ counts the Δ with d \| Δ; ν_Δ is defined as in [R]. Only the χ_d can have Siegel zeros | routine (genus theory of orders, proved for both signs) |
 | (5) Δ > 0 | narrow classes (P⁺_{K,Z}(f)), the unit η_Δ and the regulator R⁺_Δ of each order enter only through Lemma P⁺ (per order), h⁺R⁺ = √Δ L_Δ (per order) and h⁺ ≤ 5Δ^{1/2}log²(3Δ) | routine (§6) |
@@ -101,11 +103,12 @@ total (§9). The analytic conductors are A(χ*) ≤ |Δ_χ| ≤ |Δ|, with equal
 use only the upper bound |Δ| (the level of the imprimitive L(s,χ)). The large multiplicity of the small conductors matters only near
 σ = 1, in Proposition 1^o.
 
-**Proposition 1^o (zeros near the 1-line, all orders).** For X, T ≥ 3, 0 ≤ σ ≤ 1 and ε > 0:
+**Proposition 1^o (zeros near the 1-line, all orders).** For X, T ≥ 3, 7/8 ≤ σ ≤ 1 and ε > 0:
 
-  Σ_{Δ∈𝒟(X)}N^c_Δ(σ,T) ≤ C(ε)(XT)^ε T·(X^{F₂(σ)} + X^{1/2}),
+  Σ_{Δ∈𝒟(X)}N^c_Δ(σ,T) ≤ C(ε)(XT)^ε T^{F₂(σ)}·(X^{F₂(σ)} + X^{1/2}) ≤ C(ε)(XT)^ε T·(X^{F₂(σ)} + X^{1/2}),
 
-and the same for 𝒟⁺(X).
+and the same for 𝒟⁺(X). Only the second inequality uses σ ≥ 7/8: F₂ is decreasing with F₂(7/8) = 1, so T^{F₂(σ)} ≤ T. For
+σ < 7/8 see the remark after the proof.
 
 *Proof.* By Lemma M(b), (c),
 
@@ -122,9 +125,18 @@ parameters), and C(π) ≤ 12Y. By Lemma M(e), |𝒮_Y| ≤ 5Y^{3/2}log²(3Y). F
 - Σ_{χ∈Ĝ_{Δ′}∖{1}}|L(½+iv,χ*)|² ≤ C(ε)|Δ′|^{1/2+ε}(|v|+3)^{1+ε} for every order. This is [C] Lemma 4 with mollifier length 1,
   whose steps 2–5 bound Σ_χ|L(½+iu,χ*)M_X|² for D = f²d_K. For Δ′ > 0 it is [D2] (2.1) with 𝒵 = Ĝ⁺.
 
-So Σ_{π∈𝒮_Y}N_π(σ,T) ≤ C(ε)(YT)^{F₂(σ)+ε}. Summing over k, 2^{k/2}(X/2^k)^{F₂} = X^{F₂}2^{k(1/2−F₂)} ≤ max{X^{F₂}, X^{1/2}}
-for 0 ≤ k ≤ log₂X + 1, and there are ≤ log₂X + 2 values of k. For Δ′ > 0 use the inputs of [R2] Proposition 2: π_{χ*} is a Maass
-form of eigenvalue ¼, tempered with GRC, and C(π) ≤ 12Y. Rename ε. □
+So Σ_{π∈𝒮_Y}N_π(σ,T) ≤ C(ε)(YT)^{F₂(σ)+ε} ≤ C(ε)(XT)^εY^{F₂(σ)}T^{F₂(σ)}: as in [R] Proposition 1, whose bound is
+(XT)^{F₂(σ)+ε}, T carries the same power F₂(σ) as the conductor. Summing over k, (1 + 2^{(k+1)/2})(X/2^k)^{F₂} ≤ 3X^{F₂}2^{k(1/2−F₂)}
+≤ 5max{X^{F₂}, X^{1/2}} for 0 ≤ k ≤ log₂X + 1, and there are ≤ log₂X + 2 values of k. This gives the first bound, and T^{F₂(σ)} ≤ T
+gives the second. For Δ′ > 0 use the inputs of [R2] Proposition 2 (bound (XT)^{F₂(σ)+ε} as well): π_{χ*} is a Maass form of
+eigenvalue ¼, tempered with GRC, and C(π) ≤ 12Y. Rename ε. □
+
+*Range, and where Proposition 1^o is used (review 2026-10-22).* The first bound holds, by the same proof, for all 0 ≤ σ ≤ 1. For
+σ < 7/8 it is not linear in T, because F₂(σ) > 1: at σ = 5/6, F₂ = 5/4 and the argument leaves T^{5/4}. The version reviewed on
+2026-10-22 stated the linear bound for all 0 ≤ σ ≤ 1; below 7/8 that would need a stronger hybrid estimate, which is not proved
+here. Nothing needs it. Proposition 1^o is used only in §5 step 2′ (and in §6, through step 2′, for 𝒟⁺): at σ = 9/10 with T = T_X,
+for the zeros with β > 9/10, and at σ > 9/10. There F₂(σ) ≤ F₂(9/10) = 5/6 < 1, so step 2′ is unchanged, and so are Theorems 3^o,
+3⁺^o, Corollary 4^o, κ and c. Theorems 1^o and 2^o do not use Proposition 1^o.
 
 ## 2. Theorem 1^o: the family large sieve over all pairs (Δ, χ ∈ Ĝ_Δ)
 
@@ -270,7 +282,8 @@ E₁^o(X) be the set of Δ ∈ 𝒟(X) for which some j has N^c_Δ(σ_j,T_X) > X
 *Step 2′ (Markov).* For σ ∈ [σ₀, 1), Σ_{Δ∈𝒟(X)}N^c_Δ(σ,T_X) ≤ C(δ)X^{F^o(σ)+61δ}, where:
 - F^o(σ) := 2 − σ for σ ≤ 9/10. The zeros with β ≤ 9/10 are counted by Theorem 2^o, summed over ≤ 2T_X unit windows; those with
   β > 9/10 by Proposition 1^o at 9/10, which gives C(XT_X)^{ε}T_X(X^{5/6} + X^{1/2}), and 5/6 < 2 − σ.
-- F^o(σ) := max{F₂(σ), ½} for σ > 9/10, by Proposition 1^o.
+- F^o(σ) := max{F₂(σ), ½} for σ > 9/10, by Proposition 1^o. Both uses of Proposition 1^o (here and in the previous item) are at
+  σ ≥ 9/10, inside its range 7/8 ≤ σ ≤ 1; with §6, which applies this step to 𝒟⁺, they are its only uses.
 
 Then φ(σ) := F^o(σ) − A(1−σ) ≤ 1 − 8ε′ on [σ₀, 1): on [σ₀, 9/10] as in [R5], and on (9/10, 1) because φ ≤ max{F₂(σ), ½} ≤ 5/6.
 Markov as in [R] §2.2 gives #E₁^o(X) ≤ C(δ)J X^{1−ε′}; #E₂^o(X) ≤ CX^{1−0.505δ} (§4). Take the union over dyadic X and both
@@ -312,7 +325,7 @@ Every primitive indefinite binary quadratic form of discriminant Δ represents a
 H ∈ [xΔ^{−κ}, x], hence a prime ≤ 2Δ^A.
 
 *Proof.* Use [R5] Theorem 3⁺ (the dictionary of [R2] Theorem 4 and [R4] Theorem 3⁺) with these replacements:
-- Theorem 2^o and Proposition 1^o for 𝒟⁺(X) in step 2′;
+- Theorem 2^o and Proposition 1^o for 𝒟⁺(X) in step 2′ (Proposition 1^o again only at σ ≥ 9/10);
 - Lemma G for the genus part. It is proved for both signs at once; d, d′ have the sign of d_K·□ and may be negative, e.g. Δ = 12:
   𝔉 = {1, 12, −3, −4};
 - E₂^o and ν_Δ as in §4;
@@ -359,7 +372,7 @@ squarefree k) remain stronger.
 
 | Place | Use of "D fundamental" | Replacement |
 |---|---|---|
-| [R] §0, Proposition 1 | Ĝ(D) consists of primitive characters, distinct π_χ, conductor \|D\| | Lemma M: unique primitive pair, inflation multiplicity ≤ 1 + (X/\|Δ′\|)^{1/2}, ≤ 6 pairs per π. Proposition 1^o: extra X^{1/2} |
+| [R] §0, Proposition 1 | Ĝ(D) consists of primitive characters, distinct π_χ, conductor \|D\| | Lemma M: unique primitive pair, inflation multiplicity ≤ 1 + (X/\|Δ′\|)^{1/2}, ≤ 6 pairs per π. Proposition 1^o (7/8 ≤ σ ≤ 1): extra X^{1/2} |
 | [R] (G), (2.2) | Cox §6: Ĝ₂ = {χ_{d,D/d}}, L = L(χ_d)L(χ_{D/d}) | Lemma G(i), (iii), (iv); imprimitive Euler factors give R_f |
 | [R] §2.2 E₂ | d \| D, ≤ X/\|d\| + 1 discriminants per d | Lemma G(ii): dd′ \| Δ, ≤ X/(2\|d\|) + 1 |
 | [R] ν_D | χ₁ = χ_d, d ∈ 𝔉(D) | ν_Δ with 𝔉(Δ); \|d\| ≤ \|Δ\|^δ, (I5) |
@@ -444,7 +457,7 @@ forced: the principal form takes no prime value below |Δ|/4.
 - Inherited: [R5]'s adversarial audit ([NOVELTY2](../RCApps5/NOVELTY2.md)) found nothing that states or implies any almost-all
   exponent below 1.1307, even for fundamental D. Theorems 3^o, 3⁺^o contain [R5]'s theorems (fundamental D are 61% of all
   discriminants), so they are new as statements. The literature for all discriminants is per-Δ with large exponents (Weiss;
-  Thorner–Zaman 694 and Zaman 455 for ray and ring classes) or GRH (Sardari 1802.06193, every form represents a prime
+  Thorner–Zaman 694 and Zaman 455 for ray and ring classes) or GRH (Sardari 1802.06193, every positive definite form represents a prime
   ≪ |D|log^{2+ε}|D| under GRH).
 - Method: no new analytic input. Lemma P already sums over all orders, so the extension is bookkeeping: primitive pairs and
   multiplicities, genus theory of orders, imprimitive Euler factors. The new content is that this bookkeeping closes.
