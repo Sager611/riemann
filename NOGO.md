@@ -271,3 +271,4 @@
 - R156 survived: 2609.18522 (2-sumfree sequences, 100 starts); 2609.35252 (y² = x³ + k, x ≤ 10⁶). [R156](Riemann/Tree/R156.lean)
 - R157 survived: 2610.20306 quandle-ring conjectures (Alexander quandles Z/n, n ≤ 6); 2610.10665 (discrete Erdős–Falconer, small grids). [R157](Riemann/Tree/R157.lean)
 - R158 survived: 2610.29291 (Latin ⇔ wide partitions, size ≤ 10). Record re-checks: Weil 1.55, NT entries, Gale R³ unchallenged (2026-10-22). [R158](Riemann/Tree/R158.lean)
+- R159 survived: 2609.02041, 2609.10234 (m ≤ 100), 2609.17561 (small skew shapes). [R159](Riemann/Tree/R159.lean)
