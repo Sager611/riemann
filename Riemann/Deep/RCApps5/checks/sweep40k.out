@@ -1,0 +1,5 @@
+X=40000 N=5000 m=0 Qnew/(X||b||^2)=0.53434  Qold/(X||b||^2)=0.53010  Qfund/(X||b||^2)=0.32623  extra=(Qnew-Qold)/Qold=0.0080  fam_fund/(X^1.5||b||^2)=0.15370
+X=40000 N=20000 m=0 Qnew/(X||b||^2)=0.50425  Qold/(X||b||^2)=0.49825  Qfund/(X||b||^2)=0.31016  extra=(Qnew-Qold)/Qold=0.0120  fam_fund/(X^1.5||b||^2)=0.14747
+X=40000 N=40000 m=0 Qnew/(X||b||^2)=0.51380  Qold/(X||b||^2)=0.50795  Qfund/(X||b||^2)=0.32019  extra=(Qnew-Qold)/Qold=0.0115  fam_fund/(X^1.5||b||^2)=0.14844
+X=40000 N=60000 m=0 Qnew/(X||b||^2)=0.51210  Qold/(X||b||^2)=0.50661  Qfund/(X||b||^2)=0.32158  extra=(Qnew-Qold)/Qold=0.0108  fam_fund/(X^1.5||b||^2)=0.14827
+X=40000 N=40000 m=2 Qnew/(X||b||^2)=210.11830  Qold/(X||b||^2)=208.10938  Qfund/(X||b||^2)=129.08298  extra=(Qnew-Qold)/Qold=0.0097  fam_fund/(X^1.5||b||^2)=43.51728
