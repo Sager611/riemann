@@ -143,5 +143,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R125 audits of 8 October math.NT papers: no real flaw; Salinas et al. de Bruijn–Newman bounds for real characters lack certificates (record target). [R125.lean](Riemann/Tree/R125.lean)
 - R126 audits of 8 September papers on zeros and explicit bounds: one misprinted theorem, one malformed paper; Grobner's divergence of Σ R(x^ρ) is plausible. [R126.lean](Riemann/Tree/R126.lean)
 - R127 audits of 8 papers claiming open problems: a reversed probability inclusion breaks a Collatz-type proof; the Karp proof overclaims; the Legendre irreducibility proof needs a deep audit. [R127.lean](Riemann/Tree/R127.lean)
-- R128 FRONTIER (next)
+- R128 checks of our own candidates: Weil window raised to half-width 1.55 (reviewed rigorous, novelty clean); one Sato–Tate input misattributed (repair running). [R128.lean](Riemann/Tree/R128.lean)
+- R129 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
