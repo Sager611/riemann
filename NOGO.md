@@ -236,3 +236,4 @@
 - R122 Lamzouri 2610.26841 "false functional equation": pdftotext artifact (overline dropped); no flaw.
 - RH Turing machine (Shunia 2609.30306, 120 states): audit found no false step; record already cut to 119 by the author. [report](Riemann/Deep/RHTM/REPORT.md)
 - Kerr 2610.21099 (no Landau–Siegel zeros, simpler proof): audited line by line, correct; minor slips only (q = 8, finite range, Masser basis wording). [report](Riemann/Deep/Siegel/REPORT.md)
+- de Bruijn–Newman "records" 0.148409 (REPORT5) and 0.147374 (REPORT6, raised A1 floors) are NOT records: Hakimoglu-Brown arXiv 2610.12803 (8 Oct 2026) claims Λ ≤ 0.13963 assuming only quasi-RH 7/8 (a theorem in our Lean port) plus a published Polymath computation, while ours rest on Raymond's unrefereed A1–A3. Our novelty search missed it. Removed from DISCOVERIES 2026-10-22; restore only if that paper fails audit.
