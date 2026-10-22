@@ -1,0 +1,55 @@
+OK   m=1: (2-s) - A(1-s) == 1 - (A-1)(1-s)
+OK   m=1: 11 e(9/10) == 11/12
+OK   m=1: 11 e(s) decreasing on [9/10,1)
+OK   m=1: 11/12 <= 1 - (A-1)/10 for A <= 1.2
+OK   m=2: class II constant (i2+m2)/2 == 15/8
+OK   m=2: I2 lifted = 3(m+1)/4 at m=2 is 9/4 < per-D (m+3)/2 = 5/2
+OK   m=2: y* == 15/(8(1+eta))
+OK   m=2: F_H == 15(1+4eta)/(16(1+eta))
+OK   m=2: lifted class I max over [1,y] attained at nu = y (v = y/4)
+OK   m=2: lift exponent at x = nu (grid of 2000 rational points)
+OK   m=2: R(y*/4) = F_H exactly at eta = 1/14
+OK   m=2: R(y*/4) <= F_H for eta in [1/14, 1/2)
+OK   m=2: v = y*/4 <= 15/32 < 1/2 (mollifier shorter than |D|^{1/2})
+OK   m=2: f == (44 eta - 1)/(16 eta (1+eta))
+OK   m=2: critical point eta* == (1+3 sqrt5)/44
+OK   m=2: A2* == (23 - 3 sqrt5)/8
+     A2* = 2.03647450843758   eta* = 0.175186453011349   sigma* = 0.824813546988651
+OK   m=2: f <= A2* on (0, 1/2) (single max)
+OK   m=2: 1/14 <= eta* <= 1/(2 A2*)
+OK   m=2: A2* > 2 (so 1 + 2 eta < 1 + A eta)
+OK   m=2: route F, 12 eta/(1+2 eta) <= 3/4 on (0, 1/14]
+OK   m=2: route F (b=12) fails at eta*, A = A2*
+OK   m=2: route F (b=23/2) fails at eta*, A = A2*
+OK   m=2: margin identity F_H - A eta - 1 == eta (f - A)
+OK   m=2: optimality (c2 decreasing, c1top increasing in y at eta*)
+OK   m=2: old route F threshold (m+7)/3 = 3
+OK   m=2: lifted-I2-only route H (per-D class I) threshold 21/8
+OK   m=2 (I2 lift only): F_H == 1 + 7 eta/(2(1+2 eta))
+OK   m=2 (I2 lift only, routes F(23/2)+H(per-D)): threshold 21/8
+OK   m=2 (lift class I, per-D I2): F_H == (1+4eta)/(1+eta)
+OK   m=2 (lift class I, per-D I2): R(y/4) <= F_H for eta in (0,1/2)
+     lifted class I + per-D I2: threshold = 2.6055513
+OK   m=2 (lift class I, per-D I2): threshold in (2.60, 2.61)
+     at eta*: 12 e = 1.55678  11.5 e = 1.49192  bar = 1.35676
+OK   hypothetical: 15 eta/(2(1+2 eta)) at eta = 1/(2A) is < 3/2 iff A > 3/2
+OK   hypothetical: g(eta) = Fhyp - (3/2) eta <= 1 on (0, 1/3]
+OK   m=1: 11e(sigma) = 2 - sigma at eta = 2 - sqrt(14)/2
+OK   m=3: d/deta g >= 27/8 - A on (0, 1/6]
+OK   m=3: g(1/6) = 3/2 - A/6
+OK   m=3: y = 3/(1+2 eta)
+OK   m=3: PT top value 3/4 + 6 eta/(1+2 eta)
+OK   m=3: y >= 7/4 (PT branch 3/4 + 2 nu eta) for eta <= 5/14
+OK   m=3: A = 3 + 1/100 works (all eta in (0,1/(2A)])
+OK   m=3: A = 3 - 1/100 fails
+OK   m=3: old ChebST value (m+7)/3 = 10/3
+OK   m=4: y needed at sigma0 is 2A/(A-1) and equals 11/4 at A = 11/3
+OK   m=4: every sieve at N = X^{11/4} is >= 3/4 + 11 eta/2
+OK   m=4: 3/4 + 11/(4A) < 3/2 iff A > 11/3
+OK   lift I2 3(m+1)/4 >= per-D (m+3)/2 for m >= 3
+OK   lift I2 3(m+1)/4 < per-D (m+3)/2 for m = 1, 2
+OK   discrepancy: A=4 n=4, Acal(2n) = (2n+3)/3 < A, n+1 >= (3A-3)/2
+OK   discrepancy: A=5 n=5, Acal(2n) = (2n+3)/3 < A, n+1 >= (3A-3)/2
+OK   discrepancy: A=11 n=14, Acal(2n) = (2n+3)/3 < A, n+1 >= (3A-3)/2
+OK   discrepancy: A=35 n=50, Acal(2n) = (2n+3)/3 < A, n+1 >= (3A-3)/2
+total OK 51 FAIL 0

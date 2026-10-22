@@ -1,0 +1,17 @@
+orig 1 2.25
+orig 2 3.0
+orig 3 3.0
+orig 4 3.6667
+orig 5 3.6667
+orig 8 3.6667
+orig 10 4.3333
+orig_noPT 2 3.0
+orig_noPT 3 3.3333
+orig_noPT 4 3.6667
+orig_noPT 5 4.0
+orig_noPT 8 5.0
+orig_noPT 12 5.0
+lift 1 1.0
+lift_varyV 2 2.0391
+lift_varyV 3 3.0
+lift_varyV 4 3.6667
