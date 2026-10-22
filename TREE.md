@@ -159,5 +159,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R141 counterexample claims: Kozma–Nitzan exposition has a candidate false step (operator ≠ transition, explicit 3-vertex example) → verify; Tóth–Varolin and bipanchromatic papers overclaim beyond what they prove; Fried, Sard, Plotnick, E₂ zeros clean; Zenodo Lean dBN bounds conditional. [R141.lean](Riemann/Tree/R141.lean)
 - R142 Kozma–Nitzan flag was a false alarm (fresh inner law; both sides 1/2); OpenAI's original uses the same transition; Ward, Four Colour small covers, HLY hyperplane, Diverio–Trapani obstruction, Euler relation clean. [R142.lean](Riemann/Tree/R142.lean)
 - R143 four audits clean (matroid points-lines-planes, polygon counterexamples verified, Kelly, Bolaños); first fresh testable conjectures found (factorial separation, a Krzyż-type problem, an evolution-algebra problem that may have a short proof). [R143.lean](Riemann/Tree/R143.lean)
-- R144 FRONTIER (next)
+- R144 evolution-algebra problem (2610.22248): over Q the biregular case may fail (P3 needs a cube root of 4), pending a full isomorphism check; 11 fresh testable conjectures found; two searches timed out. [R144.lean](Riemann/Tree/R144.lean)
+- R145 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
