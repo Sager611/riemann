@@ -274,3 +274,4 @@
 - R159 survived: 2609.02041, 2609.10234 (m ≤ 100), 2609.17561 (small skew shapes). [R159](Riemann/Tree/R159.lean)
 - R160: arXiv 2610.10643 (perfect cuboid rank obstruction) has no gap; Sun–Hou primes 11 ≤ q ≤ 300 independently consistent. [R160](Riemann/Tree/R160.lean)
 - R161 clean audits: 2610.28874 (51-line sporadic simplicial arrangement, verified exactly), 2610.03229 (HK counterexample reproduced), 2610.29048, 2610.29115, 2610.28774. [R161](Riemann/Tree/R161.lean)
+- R162: 2608.30798 (Wiman sextic) false identification of rational forms, main theorem unaffected (known by Calegari–Dimitrov–Tang); 2602.03626 minor (no interval transcript). [R162](Riemann/Tree/R162.lean)
