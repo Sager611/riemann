@@ -264,7 +264,7 @@ Put a_{2j+1} = r^j for 0 ≤ j < m, and a_{2j} = u r^{1−j} for 1 ≤ j ≤ m. 
 - The odd-position entries are exactly Q, and the even-position entries are exactly uQ = F_q^* ∖ Q.
 - Each entry appears exactly once, because ord r = m. ∎
 
-**Lemma 10 (geometric products, new).** Let q be even, n = q−1 = 2m + 1, and let s be primitive with a₀ + u, a₀ + us, a₀ + us² ∈ P. Put r = s² and t = s·u^{q/2}, so that t² = ur. Define
+**Lemma 10 (geometric products, new).** Let q be even, n = q−1 = 2m + 1, let u ∈ F_q^* (u ≠ 0; reviewer 2026-10-22: for u = 0 the cycle degenerates, e.g. q = 8), and let s be primitive with a₀ + u, a₀ + us, a₀ + us² ∈ P. Put r = s² and t = s·u^{q/2}, so that t² = ur. Define
 - a_{2j+1} = t r^j for 0 ≤ j ≤ m;
 - a_{2j} = (u/t) r^{1−j} = t r^{−j} for 1 ≤ j ≤ m.
 
