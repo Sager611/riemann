@@ -167,5 +167,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R149 two more false generalizations in Sun's OEIS comments (A228766 in Z/6; A229827(ii) for every 3-term progression, even over Q); 100 OEIS data checks clean; 3.1, 3.4(i), 3.5(ii) survive thorough small cases. [R149.lean](Riemann/Tree/R149.lean)
 - R150 Sun Conj. 3.10(ii) fails ({2,3,4,6}) and OEIS A228728 fails ({0,1,2,3,4,5,8}); Smale disproof sound, no explicit counterexample; A > 1 extended to all discriminants (pending review); STLemP repaired. [R150.lean](Riemann/Tree/R150.lean)
 - R151 numbering corrected (printed 3.2, 3.3(ii), 3.4(i), 3.8, 3.10(ii)); Sun's 1811.10503 Conj. 4.9 fails for n = 2 (A = {0,1,2}, even over Q); STLemP re-review correct; AllDisc needs a range restriction in Prop. 1° and a wording fix. [R151.lean](Riemann/Tree/R151.lean)
-- R152 FRONTIER (next)
+- R152 Sun's MathOverflow 316143 lower bound fails for A = {0,1,2,3}, λ = (1,1,2) (over Q); Sun–Zhao Erdős–Heilbronn extension survives 9.1 million cases; 1811.10503 Conj. 4.2–4.8 hold for n ≤ 9. [R152.lean](Riemann/Tree/R152.lean)
+- R153 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.

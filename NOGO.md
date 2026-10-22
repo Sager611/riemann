@@ -263,3 +263,4 @@
 - Smale's mean value conjecture: 2610.21472 sound (exact Schur–Cohn re-check of (9/16, 3/8)); earlier disproof = GPT-6 Astra's Lean proof (non-explicit); no explicit P with S(P) > 1 (S ≤ (d−1)/d to d = 48; known admissible pairs need degree ≳ 10⁴). [report](Riemann/Deep/Smale/REPORT.md)
 - R150 survived: Sun Conj. 3.10(i) (25,776 integer sets); A228762 (odd |G| ≤ 11, Z/3 × Z/3). [R150](Riemann/Tree/R150.lean)
 - R151 survived: Sun 1811.10503 Conj. 4.1, 4.10 (Z/m, m ≤ 10); 1402.6641 Conj. 2.2 (n < 150), 2.14(i) (n < 100), 3.24 (n < 500), 3.25 (n < 300); 1211.1588 Conj. 4.17(i) (p < 5·10⁶), 4.18(i) (n < 150); OEIS A185645(i) ([−8, 8], random rationals), A320044 (p < 20000). [R151](Riemann/Tree/R151.lean)
+- R152 survived: Sun–Zhao Erdős–Heilbronn extension (0810.0467 Conj. 1.1; p ≤ 13, n ≤ 3, |A| ≤ 6); 1811.10503 Conj. 4.2–4.8 (n ≤ 9–10); OEIS A229827(i) (q ≤ 7), A227399(i) (Z/m, m ≤ 12); MO 316921, 301832, 303632. [R152](Riemann/Tree/R152.lean)
