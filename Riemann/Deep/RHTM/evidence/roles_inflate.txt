@@ -1,0 +1,14 @@
+leaf00 4
+leaf01 31
+leaf10 44
+leaf11 56
+leaf20 101
+leaf21 71
+leaf30 36
+leaf31 46
+leaf40 85
+leaf41 73
+ret0 15
+ret1 62
+root2 25
+rootN 27

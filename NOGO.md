@@ -234,3 +234,4 @@
 - R120 Zenodo RH claims (Sep–Oct 2026): conditional, circular or broken; not worth REFUTATIONS.
 - R121 Kuipers 2509.16240 RH proof: contraction assumed (imported), RH-strength. Mishra–Sarkar, Wunderlich: minor slips only.
 - R122 Lamzouri 2610.26841 "false functional equation": pdftotext artifact (overline dropped); no flaw.
+- RH Turing machine (Shunia 2609.30306, 120 states): audit found no false step; record already cut to 119 by the author. [report](Riemann/Deep/RHTM/REPORT.md)
