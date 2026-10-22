@@ -1,0 +1,36 @@
+K2 Mellin check at z=1/2: 12.069471 vs 12.069548
+mu1 = p11^2 p19 p29: M0 = 66671 = [11, 19, 29], #t = 1847
+   X'/sqrt(M0) = 20.0: brute 333.0775  main 327.7884  ratio 1.0161  (6 y-terms)
+   X'/sqrt(M0) = 40.0: brute 372.1148  main 376.3817  ratio 0.9887  (5 y-terms)
+mu2 = p11^2 p19^2 p29: M0 = 1266749 = [11, 19, 29], #t = 8051
+   X'/sqrt(M0) = 20.0: brute 917.4509  main 920.8887  ratio 0.9963  (11 y-terms)
+   X'/sqrt(M0) = 40.0: brute 1404.7632  main 1402.6190  ratio 1.0015  (8 y-terms)
+mu3 = p11 p19 p29 p31 (control): M0 = 187891 = [11, 19, 29, 31], #t = 3101
+   X'/sqrt(M0) = 20.0: brute 214.1132  main 215.8493  ratio 0.9920  (10 y-terms)
+   X'/sqrt(M0) = 40.0: brute 323.1085  main 321.9855  ratio 1.0035  (7 y-terms)
+mu4 = p11^2 p19 p19': M0 = 43681 = [11, 19], #t = 1497
+   X'/sqrt(M0) = 20.0: brute 310.1456  main 329.4171  ratio 0.9415  (7 y-terms)
+   X'/sqrt(M0) = 40.0: brute 342.4478  main 352.5345  ratio 0.9714  (5 y-terms)
+   X'/sqrt(M0) = 80.0: brute 387.6684  main 382.1530  ratio 1.0144  (5 y-terms)
+   X'/sqrt(M0) = 160.0: brute 476.7966  main 471.2273  ratio 1.0118  (4 y-terms)
+mu1 again, larger X': M0 = 66671 = [11, 19, 29], #t = 1847
+   X'/sqrt(M0) = 80.0: brute 410.8349  main 412.2981  ratio 0.9965  (4 y-terms)
+   X'/sqrt(M0) = 160.0: brute 557.4712  main 557.0238  ratio 1.0008  (3 y-terms)
+      215.12 real       178.72 user         2.66 sys
+            13287424  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                2151  page reclaims
+                 417  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  10  voluntary context switches
+              638095  involuntary context switches
+       1918331013594  instructions retired
+        396242400542  cycles elapsed
+            12206440  peak memory footprint

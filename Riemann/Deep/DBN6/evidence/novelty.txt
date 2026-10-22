@@ -1,0 +1,14 @@
+Novelty scan, 2026-10-21 (evening).
+arXiv listings https://arxiv.org/list/<cat>/<YYYY-MM>?show=2000 for math.NT, math.CV, math.GM, math.CA, months 2026-09 and 2026-10
+(821/596/290/203/86/42/336/230 entries). Titles matching bruijn|newman|heat flow|Lambda:
+  2610.12803  Hakimoglu-Brown, A conditional bound Lambda <= 0.13963 (7/8 hypothesis)              [math.NT 2026-10]
+  2610.18214  Planat, A certified classical-strip comparison (0.148611789321711 under A1-A3);
+              supplementary section restates Raymond's 0.116397726408291 under H(7/8);
+              translated derivative pilot (r=19/40, V=211/1000, lambda=10019/10000, mu=1/500), G not certified  [math.NT 2026-10]
+  2609.37164  Planat, Collective contraction ... (0.1779532546 relative to Gomila)                  [math.NT 2026-09]
+  2610.27343  Freire, Gonzalez-Riquelme, Munoz, Poblete, Salinas: Dirichlet L-functions (not zeta) [math.CV/math.NT 2026-10]
+Zenodo: API https://zenodo.org/api/records returned HTTP 403 ("unusual traffic") at 19:22. Cached search of the same day
+(10:16, .scratch/raymond/*.json, query 'creators.name:Raymond AND Bruijn' and 'de Bruijn-Newman Raymond'):
+  22626161 (2026-09-08) Raymond, Lambda < 0.163297
+  22867547 (2026-09-21) Raymond, Lambda < 0.149396
+  23272725 (2026-10-10) Raymond, conditional Lambda < 0.116398 under H(7/8)   <-- below 0.13963
