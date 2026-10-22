@@ -31,3 +31,9 @@ Found by a scout (Riemann/Tree/R148.lean), checked exhaustively by `python3 veri
 - **Conjecture 3.5(i)** (2013-09-20): *|A| = n > 3, G finite with 3 ∤ |G|. Then some numbering has the n circular sums a_i + 2a_{i+1} pairwise distinct.* Fails for G = Z/7Z and every 5-subset (21 of 21; e.g. A = {0, 1, 2, 3, 4}, all 120 numberings fail), and in Z/8Z for 8, 8, 4 of the subsets of sizes 4, 5, 6.
 - Survive the small cases: 3.1, 3.4(i), 3.5(ii); Section 4 is not finitely testable.
 - Status: pending adversarial novelty check (these are elementary; someone may have noticed).
+
+## Two more false generalizations in Sun's OEIS comments (checked 2026-10-22; no correction note in OEIS)
+Checked by `python3 verify3.py` (< 2 s).
+- **A228766** (comment, general form): *if a₁, …, a_n are n > 2 distinct elements of a finite additive abelian group G with n odd or |G| not divisible by n, then some circular permutation has the n adjacent sums pairwise distinct.* Fails for G = Z/6Z, {0, 1, 3, 4} and G = Z/10Z, {0, 1, 5, 6} (n = 4); these are the only failing subsets with |G| ≤ 12 (2 and 4 of them).
+- **A229827 (ii)**: *F any field with |F| > 7, A ⊂ F finite with |A| = n > 2, P a polynomial (degree < p − 1 in characteristic p) not of the form c − x: some circular permutation has the n sums P(a₁) + a₂, …, P(a_n) + a₁ pairwise distinct.* Fails for P(x) = 2x and every 3-term progression {x, x + d, x + 2d}: the order (x, x + d, x + 2d) gives 2(x + d) + (x + 2d) = 2(x + 2d) + x, and the other order gives 2x + (x + 2d) = 2(x + d) + x. E.g. A = {0, 1, 2} in Q or in F₁₁.
+- Related: A227399's "strong version" (any abelian group, n > 4) fails in Z/7Z like Conjecture 3.5(i); A185645(ii) is Conjecture 3.3. Already known: the finite-field form in A229910 (fails at q = 25, 121; Cohen–Oliveira e Silva–Sutherland–Trudgian, OEIS note by E. Rodríguez, Sep 2026).

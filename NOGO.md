@@ -259,3 +259,4 @@
 - R146 fresh conjectures that survived small-case searches: 2610.24758 (necklace Hamiltonicity, n ≤ 9), 2610.06527 (induced saturation dichotomy, posets ≤ 4, n ≤ 4), 2610.07442 (s₃₁₂ formula, r, k ≤ 4), 2610.01747 (t-intersecting partitions, k ≤ 4, n ≤ 16). [R146](Riemann/Tree/R146.lean)
 - R147 Sun (arXiv 1309.1679) conjectures that survived small cases: 3.7(i) Sun–Hou (primes 11–61, q = 8, 9), 3.7(ii), 3.8, 3.9 (primes ≤ 23), 3.11, 3.13–3.18 (n ≤ 23); 3.10 fails only at (11, 2) among primes ≤ 61 and q = 8, 9, 16, 25, 27. [R147](Riemann/Tree/R147.lean)
 - R148 survived: Sun 1309.1679 Conj. 3.1, 3.4(i), 3.5(ii) (small cases); 3.10 for primes 67–113; 2608.18197 (n ≤ 2000). [R148](Riemann/Tree/R148.lean)
+- R149 survived: Sun 1309.1679 Conj. 3.1 (n ≤ 8), 3.4(i) (odd |G| ≤ 15), 3.5(ii) (m ≤ 9); 1807.01181 Conj. 1.1; 1811.10503 Conj. 4.1; 100 OEIS "a(n) > 0" conjectures vs data; 2610.05776 (v ≤ 10). [R149](Riemann/Tree/R149.lean)
