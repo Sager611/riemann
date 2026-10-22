@@ -172,5 +172,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R154 Sun's MathOverflow pages 1–8: five failures, all already reported in answers; Gale record 0.8906210556 certified (pending review); least-prime theorem now for all discriminants (DISCOVERIES). [R154.lean](Riemann/Tree/R154.lean)
 - R155 Gale record independently recomputed and reviewed correct; STLemP thresholds and mean square into DISCOVERIES; Sun counterexamples: 7 new, 3 known; a Zenodo claim of Ramanujan's inequality unconditionally for x ≥ 38,358,837,683 → audit. [R155.lean](Riemann/Tree/R155.lean)
 - R156 seven Sun counterexamples into DISCOVERIES (reviewed, minor); Sun–Hou completion new if correct (review running); two Zenodo Lean "RH proofs" refuted (RH-equivalent projection identity); Ramanujan inequality unconditionally only from e^3915. [R156.lean](Riemann/Tree/R156.lean)
-- R157 FRONTIER (next)
+- R157 record finders: fresh computer records to attack (quaternary covering codes K₄(6,2) ≤ 48, triangle covering by 303 homothets 1.0633, Ramsey R(6,8) ≥ 135, …); Ramanujan threshold e^3915 never re-optimized with newer explicit inputs. [R157.lean](Riemann/Tree/R157.lean)
+- R158 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
