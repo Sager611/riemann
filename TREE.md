@@ -160,5 +160,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R142 Kozma–Nitzan flag was a false alarm (fresh inner law; both sides 1/2); OpenAI's original uses the same transition; Ward, Four Colour small covers, HLY hyperplane, Diverio–Trapani obstruction, Euler relation clean. [R142.lean](Riemann/Tree/R142.lean)
 - R143 four audits clean (matroid points-lines-planes, polygon counterexamples verified, Kelly, Bolaños); first fresh testable conjectures found (factorial separation, a Krzyż-type problem, an evolution-algebra problem that may have a short proof). [R143.lean](Riemann/Tree/R143.lean)
 - R144 evolution-algebra problem (2610.22248): over Q the biregular case may fail (P3 needs a cube root of 4), pending a full isomorphism check; 11 fresh testable conjectures found; two searches timed out. [R144.lean](Riemann/Tree/R144.lean)
-- R145 FRONTIER (next)
+- R145 counterexample hunts: Sun's circular-permutation conjecture fails at q = 11, a₀ = 2 (two degree-2 vertices force a 4-cycle); the evolution-algebra problem of 2610.22248 fails over Q for P3; 5 other fresh conjectures survive. [R145.lean](Riemann/Tree/R145.lean)
+- R146 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
