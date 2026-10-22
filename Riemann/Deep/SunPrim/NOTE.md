@@ -22,3 +22,12 @@ Full neighbourhoods: 1: {4,5,6}, 2: {3,8}, 3: {2,5,9}, 4: {1,7}, 5: {1,3,10}, 6:
 - Reviewer: correct; significant if new.
 - Wider search: no other failing (q, a₀) for primes q ≤ 61 or q = 8, 9, 16, 25, 27 (all a₀).
 - Novelty so far: arXiv 1309.1679 v9 (2020) unchanged, with a q = 11 example for a₀ = −1 only; OEIS A229232 states the cases a₀ = ±1; nothing found on (11, 2). Pending: the citing papers ("Hamiltonicity in graphs defined by primes and primitive elements", Sun's later notes), adversarial novelty check.
+
+## More counterexamples in the same paper (arXiv 1309.1679 v9, Section 3)
+Found by a scout (Riemann/Tree/R148.lean), checked exhaustively by `python3 verify2.py` (< 1 s). Statements quoted from the TeX (l. 512–516, 525–534, 541–555).
+
+- **Conjecture 3.3** (2013-09-02): *a₁, …, a_n distinct in a finite abelian group G; n ∤ |G|, or n even with cyclic Sylow 2-subgroup. Then some permutation (b₁, …, b_n) with b₁ = a₁ has the n − 1 differences b_i − b_{i+1} pairwise distinct.* Fails for G = Z/6Z, (a₁, …, a₄) = (0, 1, 3, 5) (4 ∤ 6, and the Sylow 2-subgroup is cyclic): after b₁ = 0 the last three entries are the coset 1 + {0, 2, 4}, whose two consecutive differences d, d′ lie in {2, 4} with d + d′ = b₂ − b₄ ≠ 0, forcing d = d′. Same in Z/9Z with (0, 1, 4, 7).
+- **Conjecture 3.4(ii)** (2013-09-03): *n > 2, A an n-subset of G with |G| odd and n ∤ |G|. Then some numbering has the n circular differences a₁ − a₂, …, a_n − a₁ pairwise distinct.* Fails for every 3-term progression {x, x + d, x + 2d} when 3 ∤ |G|: up to rotation the differences are (−d, −d, 2d) or (−2d, d, d). Smallest: G = Z/5Z, A = {0, 1, 2}.
+- **Conjecture 3.5(i)** (2013-09-20): *|A| = n > 3, G finite with 3 ∤ |G|. Then some numbering has the n circular sums a_i + 2a_{i+1} pairwise distinct.* Fails for G = Z/7Z and every 5-subset (21 of 21; e.g. A = {0, 1, 2, 3, 4}, all 120 numberings fail), and in Z/8Z for 8, 8, 4 of the subsets of sizes 4, 5, 6.
+- Survive the small cases: 3.1, 3.4(i), 3.5(ii); Section 4 is not finitely testable.
+- Status: pending adversarial novelty check (these are elementary; someone may have noticed).

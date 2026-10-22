@@ -163,5 +163,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R145 counterexample hunts: Sun's circular-permutation conjecture fails at q = 11, a₀ = 2 (two degree-2 vertices force a 4-cycle); the evolution-algebra problem of 2610.22248 fails over Q for P3; 5 other fresh conjectures survive. [R145.lean](Riemann/Tree/R145.lean)
 - R146 Sun's conjecture (Sun 2013, Conj. 3.10, no exceptions) fails at (11, 2): reviewer correct; the evolution-algebra Q failure is new, the singular case is open over R; 4 more fresh conjectures survive; STLemP has one repairable gap. [R146.lean](Riemann/Tree/R146.lean)
 - R147 Sun's conjecture: no other failure (prime powers ≤ 27); the 2020 version still has no exceptions and OEIS records only a₀ = ±1; Sun–Hou and 15 other conjectures of the same paper survive small cases. [R147.lean](Riemann/Tree/R147.lean)
-- R148 FRONTIER (next)
+- R148 three more conjectures of Sun's 2013 paper fail on tiny groups (3.3 in Z/6, 3.4(ii) for every 3-term progression, 3.5(i) in Z/7); (11, 2) is still the only failure of 3.10 up to q = 113. [R148.lean](Riemann/Tree/R148.lean)
+- R149 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
