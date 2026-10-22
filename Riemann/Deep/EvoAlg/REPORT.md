@@ -1,4 +1,4 @@
-DISCOVERY: Over every field 𝕜 of characteristic 0, for every finite connected graph G (≥ 2 vertices), A(G) ≅ A_RW(G) iff G is regular, or G is bipartite biregular with part degrees d₁, d₂ such that d₁/d₂ is a cube in 𝕜. So the open problem of arXiv 2610.22248 (the 2021 CRR conjecture) holds over R and C (in characteristic 0 exactly over the fields with cube roots of all primes) and fails over Q (P₃, K_{1,3}, K_{2,3}, …).
+DISCOVERY: Over every field 𝕜 of characteristic 0, for every finite connected graph G (≥ 2 vertices), A(G) ≅ A_RW(G) iff G is regular, or G is bipartite biregular with part degrees d₁, d₂ such that d₁/d₂ is a cube in 𝕜. So the open problem of arXiv 2610.22248 holds over R and C (in characteristic 0 exactly over the fields with cube roots of all primes) and fails over Q (P₃, K_{1,3}, K_{2,3}, …). The 2021 CRR conjecture holds over R; over C its isomorphism part holds but its "moreover" clause fails for every singular G that is neither regular nor biregular (e.g. the diamond). Pending novelty check.
 
 # EvoAlg report (2026-10-22)
 Proofs: [NOTE.md](NOTE.md). Checks: [verify.py](verify.py) (25 s; `--full` 6–8 min; all pass, < 150 MB). Brief: `.scratch/orca/evoalg-brief.md`. Paper proofs, not refereed, no Lean.
@@ -26,3 +26,15 @@ Proofs: [NOTE.md](NOTE.md). Checks: [verify.py](verify.py) (25 s; `--full` 6–8
 
 ## Not done
 - Infinite graphs and the Hilbert-space version.
+
+## Review (2026-10-22)
+> INCOMPLETE / GAP — source verification only; the self-contained mathematical proofs are CORRECT.
+> Theorem N’s rank-one multiplication argument works over every field and independently proves the needed BCS22 implication.
+> Theorem I correctly derives the twin-quotient permutation, preserved sizes/degrees, and block equations.
+> Lemma 2 and the connectedness argument correctly yield Theorem A’s precise cube-root condition.
+> The characteristic-p criterion and the complex counterexamples to CRR’s “moreover” clause are valid.
+> `verify.py`: exit 0; all checks passed.
+> Significance: establishes the stated characteristic-zero classification, including singular graphs; independent novelty remains unverified.
+> `REPORT.md:1`: over C, only the isomorphism part of CRR’s conjecture holds—not its “moreover” clause; “DISCOVERY” asserts unverified priority.
+> TODO @scout: authenticate the BCS22 quotation against the original; the permitted NOTE/REPORT-only review cannot establish quotation fidelity.
+- Fixed: line 1 (CRR's "moreover" clause over C; priority pending the novelty check). The BCS22 quotation is checked separately; Theorem N's own argument proves the implication used.
