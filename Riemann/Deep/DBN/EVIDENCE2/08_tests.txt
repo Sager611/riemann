@@ -1,0 +1,17 @@
+T1 interval arithmetic failures: 0
+T3 seed 2: n 10 A 0.350 B 1.334: one-point cert 1.00353 >= brute 0.98802;  paired cert 0.81690 >= brute 0.76714
+T3 seed 3: n 11 A 0.350 B 1.320: one-point cert 0.98947 >= brute 0.97769;  paired cert 0.77006 >= brute 0.71840
+T3 seed 4: n 12 A 0.350 B 1.530: one-point cert 1.15801 >= brute 1.13365;  paired cert 0.86447 >= brute 0.68237
+T3 seed 5: n 8 A 0.350 B 1.155: one-point cert 0.88193 >= brute 0.85527;  paired cert 0.56462 >= brute 0.43217
+T3 seed 6: n 9 A 0.071 B 0.497: one-point cert 0.46472 >= brute 0.46428;  paired cert 0.23525 >= brute 0.13194
+T3 seed 7: n 10 A 0.350 B 1.146: one-point cert 0.87792 >= brute 0.84866;  paired cert 0.67613 >= brute 0.59901
+T3 seed 8: n 11 A 0.350 B 1.788: one-point cert 1.34258 >= brute 1.32477;  paired cert 0.98143 >= brute 0.84711
+T3 seed 9: n 12 A 0.342 B 1.217: one-point cert 0.93036 >= brute 0.90688;  paired cert 0.69941 >= brute 0.63473
+T3 seed 10: n 8 A 0.350 B 1.424: one-point cert 1.07889 >= brute 1.05503;  paired cert 0.64825 >= brute 0.60281
+T3 seed 11: n 9 A 0.350 B 1.058: one-point cert 0.79578 >= brute 0.78353;  paired cert 0.58749 >= brute 0.54870
+T3 seed 12: n 10 A 0.219 B 0.985: one-point cert 0.81316 >= brute 0.80820;  paired cert 0.51812 >= brute 0.50777
+T3 seed 13: n 11 A 0.350 B 0.973: one-point cert 0.74559 >= brute 0.72105;  paired cert 0.56557 >= brute 0.51511
+T3 min margin (must be >= 0): 0.00043584363806792314
+T4 rho 0.3 a 0.5: bound 0.2801953245 grid 0.2801952798 diff 4.47e-08
+T4 rho 0.45 a 1.1: bound 0.4120322435 grid 0.4120320862 diff 1.57e-07
+T4 rho 0.15 a 0.8: bound 0.0908496831 grid 0.0908496727 diff 1.04e-08

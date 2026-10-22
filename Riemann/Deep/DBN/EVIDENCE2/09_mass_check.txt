@@ -1,0 +1,4 @@
+s [0.0,0.004] t 0.125: F-bins direct<=bound all: True; ratio direct/bound min -0.0000 mean 0.98962 max 0.999879; total F direct 0.227652 bound 0.230040; refl direct 1.971909e-02 bound 1.972248e-02
+s [0.0,0.004] t 0.12525: F-bins direct<=bound all: True; ratio direct/bound min -0.0000 mean 0.98415 max 0.996845; total F direct 0.226394 bound 0.230040; refl direct 1.949049e-02 bound 1.972248e-02
+s [0.06,0.2] t 0.125: F-bins direct<=bound all: True; ratio direct/bound min -0.0000 mean 0.98970 max 0.999878; total F direct 0.226675 bound 0.229034; refl direct 2.108611e-02 bound 2.108952e-02
+s [0.06,0.2] t 0.12525: F-bins direct<=bound all: True; ratio direct/bound min -0.0000 mean 0.98415 max 0.996830; total F direct 0.225403 bound 0.229034; refl direct 2.083891e-02 bound 2.108952e-02

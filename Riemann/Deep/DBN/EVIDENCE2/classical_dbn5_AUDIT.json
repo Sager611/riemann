@@ -1,0 +1,28 @@
+{
+ "PASS": true,
+ "independent_producer_imported": false,
+ "label": "classical_dbn5",
+ "minimum_kernel_margin": "58374153010425584407665197761/34215502117061080754204075622400000000",
+ "physical_source_is_an_external_analytic_premise": true,
+ "provider_steps": {
+  "0": 8512,
+  "1": 10352
+ },
+ "schema": "PLANAT_CLASSICAL_PORTFOLIO_AUDIT_V1",
+ "seven_eighths_assumed": false,
+ "shift_steps": {
+  "r_107_200": 2237,
+  "r_113_200": 265,
+  "r_19_40": 563,
+  "r_1_2": 70,
+  "r_21_40": 3481,
+  "r_23_40": 446,
+  "r_3_5": 8105,
+  "r_49_100": 2823,
+  "r_51_100": 874
+ },
+ "steps": 18864,
+ "transcendentals_regenerated": false,
+ "upper_decimal": "0.147373586543538",
+ "upper_exact": "73686793271769/500000000000000"
+}

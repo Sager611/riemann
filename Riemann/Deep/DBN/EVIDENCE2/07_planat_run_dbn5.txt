@@ -1,0 +1,32 @@
+# dbn5: Planat unchanged producer + auditor with the new certified paired-probe floors (s7_new_floor_run.py)
+producer sha256 5e311df16d764bf4c1395a73cd6b5e7818b5a87138fad25a4b02c23979ecfc71 ; auditor sha256 76bac79f402d25b727f52fb7add121acd45c55601383a4d8594238129cc04a0e (both equal Planat SHA256SUMS.json entries)
+floors_dbn5.json sha256 ee07bde3b1b2cfdb3692afea3d8aef7e54a56263a8d8974e4eeaafa2e17b1ad1 ; records 882
+provider 0 SOURCE_OLD_ENHANCED.json : floors raised 4211 of 6080; new source sha256 8169212e2e0e1f6a27de56a12a381088939f3f13124a2b95dd17bdec773f7695
+   cells   0- 99: raised    0, mean gain 0.00000, max 0.00000
+   cells 100-199: raised  131, mean gain 0.00641, max 0.02370
+   cells 200-299: raised 1000, mean gain 0.06569, max 0.13808
+   cells 300-399: raised 1000, mean gain 0.12019, max 0.15560
+   cells 400-499: raised 1000, mean gain 0.09824, max 0.13541
+   cells 500-607: raised 1080, mean gain 0.10376, max 0.14906
+provider 1 SOURCE_RETUNED.json : floors raised 5939 of 6080; new source sha256 6cdc1fac875b5f8bfb4bbf14df67b621a11aea5883d57e7a6ed44d1fa78662d7
+   cells   0- 99: raised  859, mean gain 0.06333, max 0.09770
+   cells 100-199: raised 1000, mean gain 0.08292, max 0.13154
+   cells 200-299: raised 1000, mean gain 0.12355, max 0.15937
+   cells 300-399: raised 1000, mean gain 0.12006, max 0.15545
+   cells 400-499: raised 1000, mean gain 0.10020, max 0.13529
+   cells 500-607: raised 1080, mean gain 0.10368, max 0.14899
+
+## producer: U = 73686793271769/500000000000000 = 0.147373586543538 steps 18864 (53 s)
+history sha256 bc097acb38799be7b55b06fe9a264c5f38c3f2e9fdaa43ffc267f7c29ba3843c
+## auditor: PASS = True U = 73686793271769/500000000000000 steps 18864 (4 s)
+  negative control rejected: missing strip cushion          Classical initial strip
+  negative control rejected: changed source identity        Source identities
+  negative control rejected: wrong provider                 Height and incoming state
+  negative control rejected: wrong physical height          Height and incoming state
+  negative control rejected: omitted own pair               Whole source and own pair
+  negative control rejected: inflated source floor          Whole source and own pair
+  negative control rejected: time gap                       Contiguous time steps
+  negative control rejected: downward restart               Declared dyadic lattice
+  negative control rejected: wrong external-strip status    Scope
+Planat negative controls rejected: 9
+records 18864 ; distinct kernels 712 ; appended (dbn4) kernels used in 18849 records
