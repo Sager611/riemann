@@ -20,4 +20,5 @@ Full neighbourhoods: 1: {4,5,6}, 2: {3,8}, 3: {2,5,9}, 4: {1,7}, 5: {1,3,10}, 6:
 ## Status (2026-10-22)
 - Original: Z.-W. Sun, arXiv 1309.1679, Conjecture 3.10 (TeX l. 629–633): every q > 7, every a₀, no exceptions. arXiv 2610.06289 cites it as Conjecture 3.8 (a numbering slip). Neither source reports small-q checks.
 - Reviewer: correct; significant if new.
-- Pending: prime powers and larger q; adversarial novelty (OEIS, MathOverflow, Sun's later versions and book, citing papers).
+- Wider search: no other failing (q, a₀) for primes q ≤ 61 or q = 8, 9, 16, 25, 27 (all a₀).
+- Novelty so far: arXiv 1309.1679 v9 (2020) unchanged, with a q = 11 example for a₀ = −1 only; OEIS A229232 states the cases a₀ = ±1; nothing found on (11, 2). Pending: the citing papers ("Hamiltonicity in graphs defined by primes and primitive elements", Sun's later notes), adversarial novelty check.
