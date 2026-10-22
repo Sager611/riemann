@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Two more counterexamples (checked 2026-10-22).
-Sun, arXiv 1309.1679, Conjecture 3.12(ii): for any set A of n > 3 distinct nonzero reals there is a circular permutation with
+Sun, arXiv 1309.1679, Conjecture 3.10(ii) (TeX label Conj3.12): for any set A of n > 3 distinct nonzero reals there is a circular permutation with
   the n adjacent differences a_i - a_(i+1) pairwise distinct AND the n adjacent products a_i a_(i+1) pairwise distinct,
   unless |A| = 4 and A = {+-s, +-t}.
 OEIS A228728 (Sun, comment): for distinct reals a_1 < ... < a_n, if some cyclic arrangement has the n cyclic distances
@@ -25,7 +25,7 @@ def ok312ii(A):
 
 for A in ([2, 3, 4, 6], [-8, -2, 1, 4], [Fr(-3), Fr(-1), Fr(-1, 3), Fr(1, 3), Fr(1), Fr(3)]):
     assert ok312ii(A) is None
-print("3.12(ii) fails for {2,3,4,6}, {-8,-2,1,4} (n = 4, not of the form {+-s,+-t}) and {+-1/3, +-1, +-3} (n = 6)")
+print("3.10(ii) fails for {2,3,4,6}, {-8,-2,1,4} (n = 4, not of the form {+-s,+-t}) and {+-1/3, +-1, +-3} (n = 6)")
 
 A = [0, 1, 2, 3, 4, 5, 8]
 b = (0, 3, 4, 2, 8, 1, 5)
