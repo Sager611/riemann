@@ -240,3 +240,4 @@
 - Liu 2610.26835 transfer of the 0.8749 half-plane to every number field: sound as written (Part II itself not re-audited). [report](Riemann/Deep/LiuHecke/REPORT.md)
 - Cobeli–Zaharescu 2610.23467 (> 8/9 of zeros simple or on the line): theorem holds; we proved its computer lemma S(g) ≥ 11/250 by an independent Arb branch-and-bound; the paper's own reported run is not reproducible (true margin 6.4e-5). [report](Riemann/Deep/CZ89/REPORT.md)
 - Deng 2609.22336v2 (Stieltjes' irreducibility conjecture for Legendre polynomials): audited, every lemma re-derived and tested exactly; no false step (granting cited classical inputs). Not ours. [report](Riemann/Deep/Legendre/REPORT.md)
+- κ ≥ 13/18 extension of OpenAI's fourth-moment lemma (7/8 paper, Lemma 18.1) behind the 0.8748867 half-plane (Xu–Sang 2610.15291, Liu 2610.12234, 2610.26835): proved correctly by re-running OpenAI's induction; needs only κ ≥ 0.74977. No refutation. [report](Riemann/Deep/Kappa/REPORT.md)
