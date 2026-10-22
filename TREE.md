@@ -141,5 +141,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R123 audits of 8 more new arXiv papers: no false step that matters; Liu's all-number-fields Hecke transfer looks under-proved (queued). [R123.lean](Riemann/Tree/R123.lean)
 - R124 audits of 8 more new arXiv papers: one statement ≠ proof (Yang), one reversed inequality (Li), one rejected scout claim. [R124.lean](Riemann/Tree/R124.lean)
 - R125 audits of 8 October math.NT papers: no real flaw; Salinas et al. de Bruijn–Newman bounds for real characters lack certificates (record target). [R125.lean](Riemann/Tree/R125.lean)
-- R126 FRONTIER (next)
+- R126 audits of 8 September papers on zeros and explicit bounds: one misprinted theorem, one malformed paper; Grobner's divergence of Σ R(x^ρ) is plausible. [R126.lean](Riemann/Tree/R126.lean)
+- R127 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
