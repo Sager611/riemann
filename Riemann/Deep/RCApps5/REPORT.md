@@ -34,3 +34,8 @@ Proofs: [NOTE.md](NOTE.md). Checks: [checks/](checks/). Brief: `.scratch/orca/rc
 ## Corrections and pointers
 - RCApps3 §6 and RCApps4 §4 called the N³/X term intrinsic (needing Salié-sum cancellation). It was an artifact of the conductor inclusion–exclusion.
 - CM2 (CM fields over a totally real F, threshold 1.1307) has the same Möbius terms. Lemma P looks transferable (A → 1 there too); not checked.
+
+## Review (2026-10-22)
+- Reviewer: correct as proved. Theorem 1 holds for the detector sequences only; for arbitrary coefficients it is false (b = 1 on primes: the trivial characters give ≫ Xπ(N)²).
+- 8 independent scout checks passed (Lemma P tests, Poisson check, §4/§5 arithmetic, D > 0, sectors).
+- Wording fix for NOTE.md l. 74–76: read "a principal ideal of norm M prime to f_e is (γ)"; principal ideals form the identity-class part, r_{Δ_e}(M) = (w_e/2)·[1](T_M).

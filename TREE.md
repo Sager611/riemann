@@ -147,5 +147,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R129 audits of 8 September papers: one record certificate (Schur–Siegel–Smyth 1.80220) is not rigorous as written; one scout flaw rejected. [R129.lean](Riemann/Tree/R129.lean)
 - R130 Schur–Siegel–Smyth record re-verified rigorously (margin 2.1e-5); 7 more audits found only typos; audit yield falling. [R130.lean](Riemann/Tree/R130.lean)
 - R131 Siegel-zero constants, Linnik–Goldbach and quasi-RH refinements: no confirmed flaw; the extension of the fourth-moment lemma to κ ≥ 13/18 behind 0.8748867 looks unproved (queued). [R131.lean](Riemann/Tree/R131.lean)
-- R132 FRONTIER (next)
+- R132 independent checks of A > 1 for almost all D: reviewer correct for detector sequences, 8 scouts OK, one wording fix. [R132.lean](Riemann/Tree/R132.lean)
+- R133 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
