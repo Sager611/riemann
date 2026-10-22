@@ -18,7 +18,7 @@ Disk (user, 2026-10-21): keep on disk only what is actively worked on; delete sc
 6. `lake build` green → git commit, then `git push origin main` after EVERY commit (user, 2026-10-21; repo is public: never commit secrets).
 
 ## Discoveries
-One-liner + link in `DISCOVERIES.md`; tell user; `reviewer` judges significance; scouts check online novelty; insignificant or known → remove.
+One-liner + link in `DISCOVERIES.md`; tell user; `reviewer` judges significance; scouts check online novelty; insignificant or known → remove. Records: also scan arXiv monthly listings (`https://arxiv.org/list/<cat>/<YYYY-MM>?show=2000`, math.NT/CV/GM, this and last month) and Zenodo; a missed 8 Oct paper (Λ ≤ 0.13963) voided our de Bruijn–Newman entry.
 
 ## Constraints
 - Never ask permission; decide, act, log.
