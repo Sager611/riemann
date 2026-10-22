@@ -233,3 +233,4 @@
 - R118 more certified Li coefficients: no value (Johansson 10^5; RH checks imply more).
 - R120 Zenodo RH claims (Sep–Oct 2026): conditional, circular or broken; not worth REFUTATIONS.
 - R121 Kuipers 2509.16240 RH proof: contraction assumed (imported), RH-strength. Mishra–Sarkar, Wunderlich: minor slips only.
+- R122 Lamzouri 2610.26841 "false functional equation": pdftotext artifact (overline dropped); no flaw.
