@@ -235,3 +235,4 @@
 - R121 Kuipers 2509.16240 RH proof: contraction assumed (imported), RH-strength. Mishra–Sarkar, Wunderlich: minor slips only.
 - R122 Lamzouri 2610.26841 "false functional equation": pdftotext artifact (overline dropped); no flaw.
 - RH Turing machine (Shunia 2609.30306, 120 states): audit found no false step; record already cut to 119 by the author. [report](Riemann/Deep/RHTM/REPORT.md)
+- Kerr 2610.21099 (no Landau–Siegel zeros, simpler proof): audited line by line, correct; minor slips only (q = 8, finite range, Masser basis wording). [report](Riemann/Deep/Siegel/REPORT.md)

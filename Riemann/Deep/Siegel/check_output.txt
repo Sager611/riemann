@@ -1,0 +1,18 @@
+1) exact sums vs claimed leading terms
+  D=1000: r/(D^3/384)=1.027200  W/(5D^4/6144)=1.031502  I/(D^4/1536)=1.034369  (W-5I/4)/D^3=-0.002334
+  D=10000: r/(D^3/384)=1.002702  W/(5D^4/6144)=1.003123  I/(D^4/1536)=1.003404  (W-5I/4)/D^3=-0.002284
+  D=100000: r/(D^3/384)=1.000270  W/(5D^4/6144)=1.000312  I/(D^4/1536)=1.000340  (W-5I/4)/D^3=-0.002279
+  E_p: max |E_p - D^4/(1536p)|/D^3 over sample p (D=4000) = 0.0011
+2) Frobenius congruences theta^p = sigma(theta) / sigma tau(theta) mod p for chi(p)=-1
+  tested 1386 cases, failures 0
+3) det and kernel (exact in Q(a,b))
+  q=5: pi(v)=[(0, 0, 0, 0), (0, 0, 0, 0), (0, 0, 0, 0)]  det=(0, 0, 0, 4) (expect 4ab=(0,0,0,4))
+  q=-23: pi(v)=[(0, 0, 0, 0), (0, 0, 0, 0), (0, 0, 0, 0)]  det=(0, 0, 0, 4) (expect 4ab=(0,0,0,4))
+  q=12: pi(v)=[(0, 0, 0, 0), (0, 0, 0, 0), (0, 0, 0, 0)]  det=(0, 0, 0, 4) (expect 4ab=(0,0,0,4))
+  q=-8: pi(v)=[(0, 0, 0, 0), (0, 0, 0, 0), (0, 0, 0, 0)]  det=(0, 0, 0, 4) (expect 4ab=(0,0,0,4))
+  q=8: pi(v)=[(0, 0, 0, 0), (0, 0, 0, 0), (0, 0, 0, 0)]  det=(0, 0, 0, 4) (expect 4ab=(0,0,0,4))
+4) 1+sqrt2+(1+sqrt2)sqrt|q| <= 8 sqrt|q| for 3<=|q|<1e5: True
+5) slack in (PS) => (count-condition) using exact r,I,W and E_p >= I/p - r
+  N=1000,|q|=10: D=1154, lhs/rhs=1.0301
+  N=10000,|q|=10: D=24893, lhs/rhs=1.0367
+  N=1000000,|q|=1000: D=11556005, lhs/rhs=1.0391
