@@ -1,0 +1,31 @@
+OK   A0: support formula K = [P/(4 s0)] + 1 .. [(4P-1)/s0] (brute force, P <= 2^6)
+OK   A1: 2^ceil(log2(P/s0)) computed exactly; N_new = max(1, .) is a power of 2 with exponent >= 0 (log 2N >= log 2 in (B1))
+OK   A2: supp b in [N/16, 4N] for N_new, every block
+OK   A3: s0 >= 2P: N_new = 1 and supp b = {1} (the single AFE term n = s0)
+OK   A4: s0 < 2P: N_new = N_old, s0 N/P in [1, 2), supp b in [N/8, 4N] (Mellin bounds of W uniform)
+OK   A5: N_new <= max(1, 2P/s0) <= 2P
+OK   A6: the old N is <= 1/2 exactly for s0 >= 2P (the gap: log(2N) <= 0 while b(1) may be nonzero)
+     blocks checked: 65518   degenerate (2P <= s0 < 4P, old N <= 1/2, k = 1 only): 32766
+OK   A8: admissible kappa <= 4N = 4 (N = 1): only kappa = 1
+OK   A9: (m,P)-admissible k <= 2 (prime factors > P_m = 64(m+1)^2): only k = 1
+OK   A10: L_b = 1: sum_{q <= Q, q odd squarefree} 1 <= Q for Q <= 10^4
+OK   B1 m=1: N <= 8 P0 <= X'^{1-4 delta}: xp(1-4d) - P0 > 0
+OK   B2 m=1: s0 = s < 4P <= 8 P0 <= X' (Lemma W(ii) needs s0 <= X')
+OK   B3 m=1: |t'| <= 2 X^delta <= X'^delta: delta xp - delta > 0
+OK   B4 m=1: sqrt(X') E^{(m-1)/2} <= 5 X' (E <= 23 X'^{1/2}): 1/2 + (m-1)/4 <= 1 and 23^{(m-1)/4} <= 5
+OK   B5 m=1: degenerate blocks via Theorem 1' (N = 1, E = 1): exponent 3/2 + 21 delta of X', same as the others
+OK   B6 m=1: degenerate blocks directly: |b(1)|^2 sum_D h(D) << X^{3/2} log X <= X'^{3/2}
+OK   B7 m=1: S_2: N^{4 delta} <= (8 P0)^{4 delta} = X^{(2m+2) delta + 16 delta^2}, |eps_m|^2 <= X^{-(2m+2) delta}: net 16 delta^2 <= 20 delta^2
+OK   B8 m=1: X'^{3/2+21 delta} <= 16 X^{3(m+1)/4+50 delta} (X' <= 4 X^{3/2+12 delta})
+OK   B9 m=1: with the S_2 loss 20 delta^2 and the logs: 50 delta + 20 delta^2 < 60 delta
+OK   B1 m=2: N <= 8 P0 <= X'^{1-4 delta}: xp(1-4d) - P0 > 0
+OK   B2 m=2: s0 = s < 4P <= 8 P0 <= X' (Lemma W(ii) needs s0 <= X')
+OK   B3 m=2: |t'| <= 2 X^delta <= X'^delta: delta xp - delta > 0
+OK   B4 m=2: sqrt(X') E^{(m-1)/2} <= 5 X' (E <= 23 X'^{1/2}): 1/2 + (m-1)/4 <= 1 and 23^{(m-1)/4} <= 5
+OK   B5 m=2: degenerate blocks via Theorem 1' (N = 1, E = 1): exponent 3/2 + 21 delta of X', same as the others
+OK   B6 m=2: degenerate blocks directly: |b(1)|^2 sum_D h(D) << X^{3/2} log X <= X'^{3/2}
+OK   B7 m=2: S_2: N^{4 delta} <= (8 P0)^{4 delta} = X^{(2m+2) delta + 16 delta^2}, |eps_m|^2 <= X^{-(2m+2) delta}: net 16 delta^2 <= 20 delta^2
+OK   B8 m=2: X'^{3/2+21 delta} <= 16 X^{3(m+1)/4+50 delta} (X' <= 4 X^{3/2+12 delta})
+OK   B9 m=2: with the S_2 loss 20 delta^2 and the logs: 50 delta + 20 delta^2 < 60 delta
+OK   C1: class I blocks of Theorem 2_1 and Proposition F_2 have N > V/2 >= 1 (V = X^{1/2}/2, resp. X^v, v = 15/(32(1+eta)) in [3/8, 7/16] for eta in [1/14, 1/4]): Lemma W(i) only for N >= 2
+total OK 29 FAIL 0

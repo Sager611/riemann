@@ -1,0 +1,50 @@
+self-test h(-23) = 3 (expected 3) ok
+self-test h(-47) = 5 (expected 5) ok
+self-test h(-56) = 4 (expected 4) ok
+self-test h(-71) = 7 (expected 7) ok
+self-test h(-108) = 3 (expected 3) ok
+self-test h(-36) = 2 (expected 2) ok
+self-test h(-12) = 1 (expected 1) ok
+self-test h(-16) = 1 (expected 1) ok
+self-test h(-27) = 1 (expected 1) ok
+self-test h(-28) = 1 (expected 1) ok
+self-test h(-400) = 4 (expected 4) ok
+self-test h(-1984) = 12 (expected 12) ok
+self-test h(5) = 1 (expected 1) ok
+self-test h(8) = 1 (expected 1) ok
+self-test h(12) = 2 (expected 2) ok
+self-test h(13) = 1 (expected 1) ok
+self-test h(20) = 1 (expected 1) ok
+self-test h(21) = 2 (expected 2) ok
+self-test h(24) = 2 (expected 2) ok
+self-test h(28) = 2 (expected 2) ok
+self-test h(32) = 2 (expected 2) ok
+self-test h(60) = 4 (expected 4) ok
+self-test h(136) = 4 (expected 4) ok
+self-test h(145) = 4 (expected 4) ok
+self-test h(401) = 5 (expected 5) ok
+self-test h(316) = 6 (expected 6) ok
+Delta < 0, fundamental     n=6017  median e=0.858  max e=1.231 at Delta=-479 (h=25, P=1997)  max P/|Delta|=4.17
+Delta < 0, non-fundamental n=3884  median e=0.855  max e=1.054 at Delta=-236 (h=9, P=317)  max P/|Delta|=1.34
+Delta > 0, fundamental     n=6021  median e=0.376  max e=0.892 at Delta=1345 (h=12, P=619)  max P/|Delta|=0.49
+Delta > 0, non-fundamental n=3753  median e=0.444  max e=0.891 at Delta=2889 (h=18, P=1213)  max P/|Delta|=0.50
+largest P/|Delta| among non-fundamental: [(-236, 9, 317), (-575, 18, 719), (-1143, 20, 1399), (-13775, 104, 16691), (-3020, 36, 3461), (-4671, 54, 5347), (-2943, 36, 3343), (-1175, 30, 1319)]
+discriminants tested: 19857 (non-fundamental 7699)
+       89.79 real        59.70 user         0.47 sys
+            38731776  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                3355  page reclaims
+                  45  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+              109468  involuntary context switches
+        648170687881  instructions retired
+        124610355478  cycles elapsed
+            30392752  peak memory footprint

@@ -260,3 +260,5 @@
 - R147 Sun (arXiv 1309.1679) conjectures that survived small cases: 3.7(i) Sun–Hou (primes 11–61, q = 8, 9), 3.7(ii), 3.8, 3.9 (primes ≤ 23), 3.11, 3.13–3.18 (n ≤ 23); 3.10 fails only at (11, 2) among primes ≤ 61 and q = 8, 9, 16, 25, 27. [R147](Riemann/Tree/R147.lean)
 - R148 survived: Sun 1309.1679 Conj. 3.1, 3.4(i), 3.5(ii) (small cases); 3.10 for primes 67–113; 2608.18197 (n ≤ 2000). [R148](Riemann/Tree/R148.lean)
 - R149 survived: Sun 1309.1679 Conj. 3.1 (n ≤ 8), 3.4(i) (odd |G| ≤ 15), 3.5(ii) (m ≤ 9); 1807.01181 Conj. 1.1; 1811.10503 Conj. 4.1; 100 OEIS "a(n) > 0" conjectures vs data; 2610.05776 (v ≤ 10). [R149](Riemann/Tree/R149.lean)
+- Smale's mean value conjecture: 2610.21472 sound (exact Schur–Cohn re-check of (9/16, 3/8)); earlier disproof = GPT-6 Astra's Lean proof (non-explicit); no explicit P with S(P) > 1 (S ≤ (d−1)/d to d = 48; known admissible pairs need degree ≳ 10⁴). [report](Riemann/Deep/Smale/REPORT.md)
+- R150 survived: Sun Conj. 3.12(i) (25,776 integer sets); A228762 (odd |G| ≤ 11, Z/3 × Z/3). [R150](Riemann/Tree/R150.lean)

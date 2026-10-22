@@ -1,0 +1,39 @@
+X=20000 N=1250 mode=0 V=70 nD=17499 nfund=10636  ||b||^2=1.378686e-02
+Qnew/(X||b||^2)=0.53442  Qold/(X||b||^2)=0.52774  Qfund/(X||b||^2)=0.32549  extra=(Qnew-Qold)/Qold=0.0127  fam_fund/(X^1.5||b||^2)=0.15823
+ALL ORDERS: fam_all/(X^1.5||b||^2)=0.23854  fam_nonfund/(X^1.5||b||^2)=0.08031  fam_fund/(X^1.5||b||^2)=0.15823  maxh=325  fam_all/(maxh*Qnew)=0.1942 (Thm 1^o needs <= 1)
+X=20000 N=5000 mode=0 V=70 nD=17499 nfund=10636  ||b||^2=4.308553e-03
+Qnew/(X||b||^2)=0.51499  Qold/(X||b||^2)=0.50939  Qfund/(X||b||^2)=0.31643  extra=(Qnew-Qold)/Qold=0.0110  fam_fund/(X^1.5||b||^2)=0.14954
+ALL ORDERS: fam_all/(X^1.5||b||^2)=0.22415  fam_nonfund/(X^1.5||b||^2)=0.07460  fam_fund/(X^1.5||b||^2)=0.14954  maxh=325  fam_all/(maxh*Qnew)=0.1894 (Thm 1^o needs <= 1)
+X=20000 N=20000 mode=0 V=70 nD=17499 nfund=10636  ||b||^2=1.663069e-03
+Qnew/(X||b||^2)=0.50670  Qold/(X||b||^2)=0.50043  Qfund/(X||b||^2)=0.31870  extra=(Qnew-Qold)/Qold=0.0125  fam_fund/(X^1.5||b||^2)=0.14861
+ALL ORDERS: fam_all/(X^1.5||b||^2)=0.22021  fam_nonfund/(X^1.5||b||^2)=0.07160  fam_fund/(X^1.5||b||^2)=0.14861  maxh=325  fam_all/(maxh*Qnew)=0.1891 (Thm 1^o needs <= 1)
+X=20000 N=30000 mode=0 V=70 nD=17499 nfund=10636  ||b||^2=1.269667e-03
+Qnew/(X||b||^2)=0.50171  Qold/(X||b||^2)=0.49585  Qfund/(X||b||^2)=0.31856  extra=(Qnew-Qold)/Qold=0.0118  fam_fund/(X^1.5||b||^2)=0.14790
+ALL ORDERS: fam_all/(X^1.5||b||^2)=0.21744  fam_nonfund/(X^1.5||b||^2)=0.06955  fam_fund/(X^1.5||b||^2)=0.14790  maxh=325  fam_all/(maxh*Qnew)=0.1886 (Thm 1^o needs <= 1)
+X=40000 N=5000 mode=0 V=100 nD=34999 nfund=21274  ||b||^2=4.417538e-03
+Qnew/(X||b||^2)=0.53434  Qold/(X||b||^2)=0.53010  Qfund/(X||b||^2)=0.32623  extra=(Qnew-Qold)/Qold=0.0080  fam_fund/(X^1.5||b||^2)=0.15370
+ALL ORDERS: fam_all/(X^1.5||b||^2)=0.23406  fam_nonfund/(X^1.5||b||^2)=0.08037  fam_fund/(X^1.5||b||^2)=0.15370  maxh=468  fam_all/(maxh*Qnew)=0.1872 (Thm 1^o needs <= 1)
+X=40000 N=20000 mode=0 V=100 nD=34999 nfund=21274  ||b||^2=1.597710e-03
+Qnew/(X||b||^2)=0.50425  Qold/(X||b||^2)=0.49825  Qfund/(X||b||^2)=0.31016  extra=(Qnew-Qold)/Qold=0.0120  fam_fund/(X^1.5||b||^2)=0.14747
+ALL ORDERS: fam_all/(X^1.5||b||^2)=0.22095  fam_nonfund/(X^1.5||b||^2)=0.07348  fam_fund/(X^1.5||b||^2)=0.14747  maxh=468  fam_all/(maxh*Qnew)=0.1873 (Thm 1^o needs <= 1)
+X=40000 N=40000 mode=0 V=100 nD=34999 nfund=21274  ||b||^2=1.021260e-03
+Qnew/(X||b||^2)=0.51380  Qold/(X||b||^2)=0.50795  Qfund/(X||b||^2)=0.32019  extra=(Qnew-Qold)/Qold=0.0115  fam_fund/(X^1.5||b||^2)=0.14844
+ALL ORDERS: fam_all/(X^1.5||b||^2)=0.22244  fam_nonfund/(X^1.5||b||^2)=0.07400  fam_fund/(X^1.5||b||^2)=0.14844  maxh=468  fam_all/(maxh*Qnew)=0.1850 (Thm 1^o needs <= 1)
+X=40000 N=60000 mode=0 V=100 nD=34999 nfund=21274  ||b||^2=7.832928e-04
+Qnew/(X||b||^2)=0.51210  Qold/(X||b||^2)=0.50661  Qfund/(X||b||^2)=0.32158  extra=(Qnew-Qold)/Qold=0.0108  fam_fund/(X^1.5||b||^2)=0.14827
+ALL ORDERS: fam_all/(X^1.5||b||^2)=0.22064  fam_nonfund/(X^1.5||b||^2)=0.07238  fam_fund/(X^1.5||b||^2)=0.14827  maxh=468  fam_all/(maxh*Qnew)=0.1841 (Thm 1^o needs <= 1)
+X=20000 N=5000 mode=1 V=70 nD=17499 nfund=10636  ||b||^2=1.488190e-03
+Qnew/(X||b||^2)=0.61263  Qold/(X||b||^2)=0.60382  Qfund/(X||b||^2)=0.36932  extra=(Qnew-Qold)/Qold=0.0146  fam_fund/(X^1.5||b||^2)=0.16968
+ALL ORDERS: fam_all/(X^1.5||b||^2)=0.26020  fam_nonfund/(X^1.5||b||^2)=0.09052  fam_fund/(X^1.5||b||^2)=0.16968  maxh=325  fam_all/(maxh*Qnew)=0.1848 (Thm 1^o needs <= 1)
+X=20000 N=20000 mode=1 V=70 nD=17499 nfund=10636  ||b||^2=5.904355e-04
+Qnew/(X||b||^2)=0.63231  Qold/(X||b||^2)=0.62247  Qfund/(X||b||^2)=0.37683  extra=(Qnew-Qold)/Qold=0.0158  fam_fund/(X^1.5||b||^2)=0.17075
+ALL ORDERS: fam_all/(X^1.5||b||^2)=0.26450  fam_nonfund/(X^1.5||b||^2)=0.09374  fam_fund/(X^1.5||b||^2)=0.17075  maxh=325  fam_all/(maxh*Qnew)=0.1820 (Thm 1^o needs <= 1)
+X=20000 N=5000 mode=2 V=70 nD=17499 nfund=10636  ||b||^2=1.488190e-03
+Qnew/(X||b||^2)=37.71567  Qold/(X||b||^2)=37.36433  Qfund/(X||b||^2)=23.37185  extra=(Qnew-Qold)/Qold=0.0094  fam_fund/(X^1.5||b||^2)=7.85562
+ALL ORDERS: fam_all/(X^1.5||b||^2)=12.46168  fam_nonfund/(X^1.5||b||^2)=4.60606  fam_fund/(X^1.5||b||^2)=7.85562  maxh=325  fam_all/(maxh*Qnew)=0.1438 (Thm 1^o needs <= 1)
+X=20000 N=20000 mode=2 V=70 nD=17499 nfund=10636  ||b||^2=5.904355e-04
+Qnew/(X||b||^2)=148.46956  Qold/(X||b||^2)=147.05449  Qfund/(X||b||^2)=91.30706  extra=(Qnew-Qold)/Qold=0.0096  fam_fund/(X^1.5||b||^2)=30.74575
+ALL ORDERS: fam_all/(X^1.5||b||^2)=49.08249  fam_nonfund/(X^1.5||b||^2)=18.33674  fam_fund/(X^1.5||b||^2)=30.74575  maxh=325  fam_all/(maxh*Qnew)=0.1439 (Thm 1^o needs <= 1)
+X=40000 N=40000 mode=2 V=100 nD=34999 nfund=21274  ||b||^2=3.719980e-04
+Qnew/(X||b||^2)=210.11830  Qold/(X||b||^2)=208.10938  Qfund/(X||b||^2)=129.08298  extra=(Qnew-Qold)/Qold=0.0097  fam_fund/(X^1.5||b||^2)=43.51728
+ALL ORDERS: fam_all/(X^1.5||b||^2)=69.64645  fam_nonfund/(X^1.5||b||^2)=26.12917  fam_fund/(X^1.5||b||^2)=43.51728  maxh=468  fam_all/(maxh*Qnew)=0.1417 (Thm 1^o needs <= 1)

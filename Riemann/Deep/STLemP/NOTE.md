@@ -1,7 +1,7 @@
 # STLemP: Lemma P lifted to ring class groups; family mean squares of L(½, Sym^m f ⊗ θ_χ); new thresholds for Frobenius conditions in ideal classes
 
 Date 2026-10-22 (arXiv listings fetched 2026-10-21). Brief: `.scratch/orca/stlemp-brief.md`. Checks: [checks/](checks/) (§8; every script under a hard alarm, every process
-< 10 MB; the scratch directory `.scratch/stlemp/` with the arXiv listings was deleted). References: [C] = [Combos](../Combos/NOTE.md),
+< 100 MB; the scratch directory `.scratch/stlemp/` with the arXiv listings was deleted). References: [C] = [Combos](../Combos/NOTE.md),
 [D2] = [Density2](../Density2/NOTE.md), [R] = [RCApps](../RCApps/NOTE.md), [R2] = [RCApps2](../RCApps2/NOTE.md), [R3] = [RCApps3](../RCApps3/NOTE.md),
 [R4] = [RCApps4](../RCApps4/NOTE.md), [R5] = [RCApps5](../RCApps5/NOTE.md) (Lemma P, Corollary P, Theorem 1), [RS] = [RSFam](../RSFam/NOTE.md),
 [CS] = [ChebST](../ChebST/NOTE.md) (with [FIX](../ChebST/FIX.md)); HT, PT, BTZ and inputs (J1)–(J6) as in [RS] §0 and [CS] header;
@@ -10,6 +10,11 @@ Notation of [RS] §0 and [CS] §0, §3 throughout (f a non-CM newform of level N
 N_m(σ;t,χ), N_D^{c,m}(σ,T), e(σ) := (1−σ)/(3−2σ)); notation of [R3] §0 and [R5] §2 for orders (𝒟, Δ, f(Δ), G_Δ, T_n, λ_χ(n), Φ,
 Q′_Δ, 𝒬′). Paper proofs, not refereed, no Lean. Unconditional, no 2026 half-planes; the preprint PT is used only where marked (the
 degree-3 threshold), as in [CS].
+
+**Repair (2026-10-22, after review; brief `.scratch/orca/stlempfix-brief.md`).** Lemma W(ii) took N := 2^{⌈log₂(P/s₀)⌉}, which is ≤ ½
+for s₀ ≥ 2P, where (B1) fails, so the AFE blocks of Theorem MS with 2P ≤ s₀ < 4P (the single terms n = s₀, k = 1) were not covered.
+Now N := max{1, 2^{⌈log₂(P/s₀)⌉}} and class 𝔅 requires N = 2^j with j ≥ 0; those blocks are in 𝔅 with N = 1 (§3, §4; `checks/wcheck.py`).
+§7: the GRH comparison is x^{1/2}log² against x/h (an extra h removed). No bound, exponent or threshold changes.
 
 ## Verdicts
 
@@ -52,7 +57,7 @@ For X′ ≥ 32 and b supported on admissible n (odd, squarefree, every prime fa
 
   𝒬′_{X′}(b) := Σ_{Δ∈𝒟}Φ(|Δ|/X′)Q′_Δ(b) = ½Σ_{n,n′}b(n)b̄(n′)Σ_{c|(n,n′)}𝒩_c(nn′/c²; X′).
 
-**Definition (class 𝔅).** Let 0 < δ ≤ 1/100, X′ ≥ 32, N = 2^j, ½ − δ ≤ σ ≤ 1, 𝔙 ≥ 1, 0 ≤ θ ≤ ½, C_b ≥ 1. A sequence b is in
+**Definition (class 𝔅).** Let 0 < δ ≤ 1/100, X′ ≥ 32, N = 2^j with j ≥ 0, ½ − δ ≤ σ ≤ 1, 𝔙 ≥ 1, 0 ≤ θ ≤ ½, C_b ≥ 1. A sequence b is in
 𝔅 = 𝔅(N, σ, 𝔙, θ; X′) if supp b ⊂ {admissible n ∈ [N/16, 4N]} and
 - (B1) |b(n)| ≤ C_b log(2N)·d(n)^{C_b}n^{−σ};
 - (B2) for every admissible κ ≤ 4N, every odd squarefree q ≥ 1 and every character ψ mod 8, with ψ̃ := ψ·(·/q),
@@ -146,13 +151,14 @@ O(log P₀) blocks: Σ_q|S₁|² ≤ C(δ)(QP₀)^{δ/4}(Q + P₀) ≤ C(δ, f)(
 of size n^{−½+δ}, i.e. an extra factor ≤ P₀^{2δ}, cancelled by |ε(s)|² ≤ C(𝔮(|u|+3)^d)^{−2δ}. □
 
 **Lemma W (the sequences are in 𝔅).** Let m ∈ {1, 2}, 0 < δ ≤ 1/1000, X ≤ X′ ≤ X^{3}, |t′| ≤ X′^{δ}, 𝒫 as above, and C_b := C(δ, f, m).
-- (i) (twisted detector) Let 2 ≤ V ≤ Y, N = 2^j ≤ 4Y log²Y, ½ + 2δ ≤ σ ≤ 1, W(v) := e^{−vN/Y}φ₂(v), and
+- (i) (twisted detector) Let 2 ≤ V ≤ Y, N = 2^j with 1 ≤ N ≤ 4Y log²Y, ½ + 2δ ≤ σ ≤ 1, W(v) := e^{−vN/Y}φ₂(v), and
   b(n) := 1_{(m,𝒫)-adm}(n)a_V(n)λ_m(n)n^{−σ−it′}W(n/N), or ∂_{t′} of it (a_V(n) = Σ_{k|n,k≤V}μ(k); these are the class I sequences
   b_{j,t′}, ∂_{t′}b_{j,t′} of [CS] §3 with (m,𝒫)-admissibility). Then b ∈ 𝔅(N, σ, V, (m−1)/2; X′).
-- (ii) (AFE pieces) Let s₀ ≤ X′ be an integer, P ≥ 1, |σ − ½| ≤ δ, w := σ + it′, N := 2^{⌈log₂(P/s₀)⌉}, and
+- (ii) (AFE pieces) Let s₀ ≤ X′ be an integer, P ≥ 1, |σ − ½| ≤ δ, w := σ + it′, N := max{1, 2^{⌈log₂(P/s₀)⌉}}, and
   b(k) := 1_{(m,𝒫)-adm}(k)1[(k, s₀) = 1]λ_m(k)k^{−w}φ₂(s₀k/P). Then b ∈ 𝔅(N, σ, 1, (m−1)/2; X′).
 
-*Proof.* (B1) is clear (|a_V(n)| ≤ d(n), |λ_m(n)| ≤ d(n)^{2}; ∂_{t′} multiplies by −i log n). (B2), case (i): let κ ≤ 4N be admissible,
+*Proof.* (B1) is clear, as N ≥ 1 (|a_V(n)| ≤ d(n), |λ_m(n)| ≤ d(n)^{2}, |φ₂| ≤ C; ∂_{t′} multiplies by −i log n, 0 ≤ log n ≤ 2log(2N)
+on supp b). (B2), case (i): let κ ≤ 4N be admissible,
 q odd squarefree, ψ mod 8, ψ̃ := ψ(·/q), s := σ + it′. Terms with κ not (m,𝒫)-admissible vanish. For (m,𝒫)-admissible m coprime to κ,
 λ_m(κm) = λ_m(κ)λ_m(m) and a_V(κm) = Σ_{k₁|κ}Σ_{k₂|m, k₁k₂≤V}μ(k₁)μ(k₂). By Mellin inversion,
   Σ_m b(κm)ψ̃(m) = λ_m(κ)κ^{−s}(2πi)^{−1}∫_{(2)}𝒟_κ(s+u)(N/κ)^uŴ(u)du,  Ŵ(u) := ∫_0^∞W(v)v^{u−1}dv,
@@ -169,9 +175,13 @@ principal: L(z, Sym^m f) is entire). On the new line |κ^{−s}(N/κ)^u| = N^{½
 the factors N^δ, (log 2Y)^{C}, |λ_m(κ)| ≤ d(κ)² being absorbed in X′^{3δ}d(κ)^{C_b}. By Cauchy–Schwarz in r and Lemma H (d = m+1),
 Σ_{q≤Q}𝓛(q,ψ)² ≤ C∫Σ_q|L(½+δ+i(t′+r))|²(1+|r|)^{−8}dr ≤ C(δ, f)Q^{1+(m−1)/2}·Q^{δ}(|t′|+3)² ≤ C_bX′^{3δ}Q^{1+(m−1)/2}
 for Q ≤ X′ (|t′| ≤ X′^δ). The ∂_{t′} case: W^♯(v) :=
-−i log(Nv)W(v) has the same Mellin bounds. Case (ii): the same computation with V = 1 (no k₁, k₂ sums), W(v) := φ₂(s₀Nv/P)
-(smooth, supported in v ∈ [1/16, 4], derivative bounds uniform), the extra coprimality (m′, s₀) = 1 costing d(s₀)^{m+1} ≤ X′^{δ}, and
-the line moved from Re u = 2 to Re u = ½ + δ − σ ∈ [0, 2δ] (no pole). □
+−i log(Nv)W(v) has the same Mellin bounds. Case (ii), s₀ < 2P: N = 2^{⌈log₂(P/s₀)⌉} ∈ [P/s₀, 2P/s₀) and N ≥ 1,
+so supp b ⊂ (P/(4s₀), 4P/s₀) ⊂ [N/8, 4N]; (B2) is the same computation with V = 1 (no k₁, k₂ sums), W(v) := φ₂(s₀Nv/P) (s₀N/P ∈ [1, 2):
+smooth, supported in v ∈ (1/8, 4), derivative bounds uniform), the extra coprimality (m′, s₀) = 1 costing d(s₀)^{m+1} ≤ X′^{δ}, and the
+line moved from Re u = 2 to Re u = ½ + δ − σ ∈ [0, 2δ] (no pole). Case (ii), s₀ ≥ 2P (there 2^{⌈log₂(P/s₀)⌉} ≤ ½): N = 1 and
+b = φ₂(s₀/P)·1_{k=1}, since φ₂(s₀k/P) ≠ 0 forces k < 4P/s₀ ≤ 2; this is the single AFE term n = s₀. So supp b ⊂ {1} ⊂ [1/16, 4], (B1)
+holds once C_b log 2 ≥ ‖φ₂‖_∞, and (B2) holds with 𝓛_b ≡ 1: the only admissible κ ≤ 4N = 4 is κ = 1, the sum is b(1)ψ̃(1) = b(1), and
+Σ_{q≤Q}1 ≤ Q ≤ Q^{1+θ}. (Directly: the family sum of such a block is |b(1)|²Σ_{D∈𝔇(X)}h(D) ≤ CX^{3/2}log X.) □
 
 ## 4. Family mean squares
 
@@ -198,10 +208,11 @@ uniformly in P, D, Mellin inversion in v gives φ(n/P)V_{s′}(n/√q_m) = (2π)
   |B_{P,τ}(χ)|² ≤ 𝔖·Σ_{s∈𝒮, s≤4P}d_{2m+2}(s)s^{−½}|Σ_kb_{s,P,τ}(k)λ_χ(k)|²,  𝔖 := Σ_{s∈𝒮, s≤4P}d_{2m+2}(s)s^{−½} ≤ C(f,m)(log X)^{C(m)},
 since the primes of 𝔅𝔓 give Π_{p∈𝔅𝔓}(1 − p^{−½})^{−2m−2} ≤ C(f, m) (the factor of p₀ is ≤ 2) and the squarefull part gives
 Π_{p≤4P}(1 + C(m)/p).
-*The family sieve.* For |τ| ≤ X^{δ}: b_{s,P,τ} ∈ 𝔅(N, ½+δ, 1, (m−1)/2; X′) with N = 2^{⌈log₂(P/s)⌉} ≤ 8P₀ (Lemma W(ii), t′ = v + τ), it
-vanishes on multiples of p₀, and N ≤ 8X^{(m+1)/2+4δ} ≤ X′^{1−4δ}. Lemma L and Theorem 1′ give
+*The family sieve.* For |τ| ≤ X^{δ} and every s ∈ 𝒮 with b_{s,P,τ} ≠ 0 (so s < 4P ≤ 8P₀ ≤ X′): b_{s,P,τ} ∈ 𝔅(N, ½+δ, 1, (m−1)/2; X′)
+with N = max{1, 2^{⌈log₂(P/s)⌉}} (Lemma W(ii) with s₀ = s, t′ = v + τ; for 2P ≤ s < 4P, b_{s,P,τ} is the single term k = 1, i.e. n = s,
+and N = 1), it vanishes on multiples of p₀, and 1 ≤ N ≤ max{1, 2P/s} ≤ 8X^{(m+1)/2+4δ} ≤ X′^{1−4δ}. Lemma L and Theorem 1′ give
   Σ_{D∈𝔇(X)}Σ_{χ∈Ĝ(D)}|Σ_kb_{s,P,τ}(k)λ_χ(k)|² ≤ C(δ, f)X′^{1/2+21δ}(X′ + √X′E^{(m−1)/2})N^{−2δ} ≤ C(δ, f)X′^{3/2+21δ},
-because E ≤ 23X′^{1/2}, so √X′E^{(m−1)/2} ≤ 5X′^{½+(m−1)/4} ≤ 5X′ for m ≤ 3. For |τ| > X^δ use, for each D, [C] Lemma 2:
+because N^{−2δ} ≤ 1 and E ≤ 23X′^{1/2}, so √X′E^{(m−1)/2} ≤ 5X′^{½+(m−1)/4} ≤ 5X′ for m ≤ 3. For |τ| > X^δ use, for each D, [C] Lemma 2:
 Σ_χ|Σ_kbλ_χ|² ≤ C log²(3X)(4N + X^{1/2})Σ_kτ(k)|b(k)|² ≤ CX^{(m+1)/2+6δ}; with A := 20/δ the weight (1+|τ|)^{−A+2} makes this ≪ X^{−5}.
 *Collecting.* Σ_{D,χ}|S₁(χ)|² ≤ (log 4P₀)Σ_PΣ_{D,χ}|S₁^{(P)}|² + O(X^{−5}) ≤ C(δ, f)(log X)^{C}X′^{3/2+21δ}. S₂ is treated identically
 (ā_χ = a_{χ̄} since λ_m is real, and χ̄ runs over Ĝ(D)), with k^{−(½−δ)−iv} in place of k^{−s′}: Lemma W(ii) with σ = ½ − δ gives the
@@ -362,7 +373,9 @@ gives 1 (m = 1), 2.039 (m = 2; grid of V), 3 (m = 3), 11/3 (m = 4, 5, 8) and rep
   (N/X)^{3/2}.
 - *The slope ⅓ per degree (M ≥ 8)* is class II with I₂ = X^{(m+3)/2}; the lift gives X^{3(m+1)/4}, which is better only for m ≤ 2.
 - *GRH* (for all L(s, Sym^m f ⊗ θ_χ), m ≤ M, and L(s, χ)): every D, every M, every A > 1 (explicit formula with absolute values:
-  h·x^{1/2}log² ≤ |D|^{−κ}x/h for x ≥ |D|^{1+3κ}). So M ≤ 1 reaches the GRH value; below 1 nothing is possible by this method ([R5] §7).
+  in each class the error is ≪ x^{1/2}log²(|D|x) (h characters, each O(x^{1/2}log²(|D|x)), and the factor 1/h of the class sum), against
+  the main term ≫ H/h ≥ |D|^{−κ}x/h; and x^{1/2}log²(|D|x) ≤ |D|^{−2κ}x/h for x ≥ |D|^{1+5κ}, as h ≤ C|D|^{1/2}log|D|).
+  So M ≤ 1 reaches the GRH value; below 1 nothing is possible by this method ([R5] §7).
 - *A family sieve at the family size for every length* (numerically true for the twisted sequences, §8) would give by route H
   (class I diagonal above X^{3/2}, class II with the per-D I₂) 𝒜(M) = (M+3)/3 for M ≥ 3, and with the lifted I₂ 𝒜(2) = 3/2 (balance
   15/8 − y(½−η) = 2yη, i.e. X^{(15/2)e(σ)}; checked in `thresholds.py`). Lindelöf on average for every Sym^m family as well would give 1 for every M ([CS] §8).
@@ -377,6 +390,12 @@ gives 1 (m = 1), 2.039 (m = 2; grid of V), 3 (m = 3), 11/3 (m = 4, 5, 8) and rep
   and without PT 10/3, 4, 5 (m = 3, 5, 8), and finds 3 for m = 3 with free Y, 1 for m = 1 and 2.039 for m = 2 with the lift (grid
   optimum; the exact value is (23 − 3√5)/8 = 2.0365). `drv.sh` runs `famqE.c`; `apcheck.py` checks a_p(37a).
 - `liftcheck.py` → `liftcheck.out`: Lemma L on 43 pairs (D, p₀) (§2).
+- `wcheck.py` → `wcheck.out` (review repair, 2026-10-22): 29 exact checks (integers, Fractions, sympy), 0 failures: for P = 2^i (i ≤ 13) and
+  all 65518 pairs (P, s₀) whose block has nonempty support, N = max{1, 2^{⌈log₂(P/s₀)⌉}} is 2^j with j ≥ 0 and supp b ⊂ [N/16, 4N]; the old N is ≤ ½
+  exactly for s₀ ≥ 2P (32766 blocks, all with support {1}); only κ = 1 is admissible below 4; and, for m = 1, 2 and δ ≤ 1/1000, the
+  Theorem MS exponents after the repair (N ≤ 8P₀ ≤ X′^{1−4δ}, s₀ ≤ X′, |t′| ≤ X′^δ, the single-term blocks at X′^{3/2+21δ}, the S₂ loss
+  16δ², X′^{3/2+21δ} ≤ 16X^{3(m+1)/4+50δ}). Rerun the same day: `thresholds.py` (51 OK, 0 FAIL), `thr2.py`, `thr4.py`, `liftcheck.py`,
+  outputs identical to the stored ones; max RSS ≤ 70 MB.
 - `famqE.c` (from [R5] `checks/famq.c`) → `famqE.out`: the family sums by brute force over all orders, X = 20000, for f = f_E, E = 37a
   (a_p by point counting, checked against a_5…a_43): mode 3: b = λ_E(n)n^{−½}φ₂(n/N) (unmollified, as in the AFE); mode 4: λ_{Sym²}(n)n^{−½}φ₂;
   mode 5: a_V(n)λ_E(n)n^{−5/6}φ₂ (V = √X/2); mode 6: a_V(n)λ_{Sym²}(n)n^{−5/6}φ₂ (V = X^{1/4}); mode 2: n^{−5/6}φ₂ (pole present).
