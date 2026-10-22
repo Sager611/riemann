@@ -242,3 +242,4 @@
 - Deng 2609.22336v2 (Stieltjes' irreducibility conjecture for Legendre polynomials): audited, every lemma re-derived and tested exactly; no false step (granting cited classical inputs). Not ours. [report](Riemann/Deep/Legendre/REPORT.md)
 - κ ≥ 13/18 extension of OpenAI's fourth-moment lemma (7/8 paper, Lemma 18.1) behind the 0.8748867 half-plane (Xu–Sang 2610.15291, Liu 2610.12234, 2610.26835): proved correctly by re-running OpenAI's induction; needs only κ ≥ 0.74977. No refutation. [report](Riemann/Deep/Kappa/REPORT.md)
 - R133 clean audits (no false step): 2610.29018 (real quadratic L(s,χ) has no real zeros, q ≤ 10^9/10^10), 2610.29963 (additive complements). [R133](Riemann/Tree/R133.lean)
+- R134: R133 flaws in 2610.28685, 2610.29470, 2610.28839 are harmless typos; 2610.28688 not a flaw; Schäffer 2610.28768 only a statement slip (omits 24 → 70). [R134](Riemann/Tree/R134.lean)
