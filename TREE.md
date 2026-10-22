@@ -155,5 +155,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R137 audits: Blaschke-conjecture paper has a candidate gap (component argument, l. 735–736) → verify; 3 papers clean; Gauss–Fourier passages extracted for a reviewer; A > 1 extends to all discriminants with work. [R137.lean](Riemann/Tree/R137.lean)
 - R138 conjecture claims: Blaschke-conjecture gap confirmed (→ reviewer); Gale counterexample in R³ verified; Ramsey R(5,10;5,8) = 21 not reproducible as published; sunflower (all k) clean on first pass → Orca deep audit; 3 more clean. [R138.lean](Riemann/Tree/R138.lean)
 - R139 Blaschke passages quoted (the gap may be one missing sentence: 𝒦 irreducible ⇒ the cover is connected ⇒ a section forces degree 1) → reviewer; cover-free second check clean; exact Gale value 0.8892810 (no real gain); new targets. [R139.lean](Riemann/Tree/R139.lean)
-- R140 FRONTIER (next)
+- R140 Blaschke step is a missing sentence, not a gap (reviewer); Nagata, MDS (even q), section conjecture, Janson–Sós clean; KPR one slip; 3 Zenodo RH items conditional or not auditable; quasi-RH B♭ = 0.874886647 pinned by one inequality (no record). [R140.lean](Riemann/Tree/R140.lean)
+- R141 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
