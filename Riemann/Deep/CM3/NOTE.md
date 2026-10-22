@@ -129,7 +129,7 @@ integral 𝔞 the relative norm form of 𝔞 takes a value generating 𝔭N_{K/F
 The family is nontrivial: prime 𝔡 alone give ≫_F X/log X fields ([CMQ] §4).
 
 *Remark (sharpness).* For every CM K/F, every β ∈ O_K∖F has N_{K/Q}β ≥ d_K/(4ⁿd_F²) ([CMQ] Remark 2.3, from the relative determinant lemma with
-β′ = 1), and a degree-one prime of the principal class is βO_K with β ∉ F. So the least prime of the principal class is ≥ d_K/(4ⁿd_F²) for every
+β′ = 1), and a degree-one prime of the principal class is βO_K with β ∉ F. So the least degree-one prime of the principal class is ≥ d_K/(4ⁿd_F²) for every
 K, and by Theorem 3 it is ≤ 2d_K^{1+ε} for almost all K: the exponent 1 is optimal (for F = Q: x² + ny² represents no prime below n).
 
 *Proof.* [CM2] Theorem 3 (= [CMQ] Theorem B with the changes of [R3]) with steps 1, 2 replaced. The statement for A implies it for every A′ > A

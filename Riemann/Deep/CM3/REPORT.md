@@ -1,4 +1,4 @@
-DISCOVERY: least primes in every ideal class of almost all CM fields, for every A > 1 (was (3+√69)/10 ≈ 1.1307; 1 is sharp): for a fixed totally real F and every A > 1, all but O(X^{1−c}) CM fields K/F with prime (or δ₀-rough, odd) relative discriminant of norm ≤ X have degree-one primes in every ideal class in every interval (x, x + xD^{−κ}], x ≥ D^A (D = N𝔡_{K/F}); so every class has a prime of norm ≤ 2d_K^A. The exponent cannot go below 1: for every K, the principal class has no prime of norm below d_K/(4ⁿd_F²).
+DISCOVERY: least primes in every ideal class of almost all CM fields, for every A > 1 (was (3+√69)/10 ≈ 1.1307; 1 is sharp): for a fixed totally real F and every A > 1, all but O(X^{1−c}) CM fields K/F with prime (or δ₀-rough, odd) relative discriminant of norm ≤ X have degree-one primes in every ideal class in every interval (x, x + xD^{−κ}], x ≥ D^A (D = N𝔡_{K/F}); so every class has a prime of norm ≤ 2d_K^A. The exponent cannot go below 1: for every K, the principal class has no degree-one prime of norm below d_K/(4ⁿd_F²).
 
 # CM3 report (2026-10-21)
 Proofs: [NOTE.md](NOTE.md). Checks: [checks/](checks/). Brief: `.scratch/orca/cm3-brief.md`. Paper proofs, not refereed, no Lean. Unconditional.
@@ -25,3 +25,6 @@ Proofs: [NOTE.md](NOTE.md). Checks: [checks/](checks/). Brief: `.scratch/orca/cm
 
 ## Not done
 - All CM fields (not only rough relative discriminants), F varying, sectors, non-CM K/F: open as before (NOTE §8).
+
+## Review (2026-10-22)
+Reviewer: correct for the degree-one theorem (Lemma P_F with non-principal 𝔢, unit weights incl. Hasse index 2, Theorem 1 restricted to detector sequences, Theorems 2–3). The sharpness sentence needed "degree-one" (in Q(√−163), (2) is a principal prime of norm 4 < 163/4); fixed here and in NOTE §4.
