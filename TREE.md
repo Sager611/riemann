@@ -179,5 +179,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R161 today's targets: a likely gap in the Erdős–Graham c = 8 paper (a short-interval prime bound that is not known) and an unjustified identification in the Wiman-sextic paper → verify; five papers clean. [R161.lean](Riemann/Tree/R161.lean)
 - R162 the Erdős–Graham c = 8 paper's variance claim is unproved (needs PNT in intervals of length (log X)²); Bellotti's zero-density constants are ≥ 15.7% too small; Wiman-sextic identification false (theorem unaffected). → reviewers. [R162.lean](Riemann/Tree/R162.lean)
 - R163 refutation papers verified (local antimagic caterpillars exact; matroid and homotopy partly); Bellotti 2405.12545 unpublished, uncorrected; Zenodo counterexample uploads to check. [R163.lean](Riemann/Tree/R163.lean)
-- R164 FRONTIER (next)
+- R164 REFUTATIONS: Erdős–Graham c = 8 variance gap (repairable), Bellotti zero-density constants unsupported, Padhi's unconditional Ramanujan inequality not proved as published; four Zenodo counterexample uploads recomputed (three correct, one overclaims); TriCover record 1.0633023. [R164.lean](Riemann/Tree/R164.lean)
+- R165 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
