@@ -6,12 +6,12 @@
 
 **Before.** K₄(10,3) ≤ 832 (Bertolo, di Nasso, Di Pasquale, Jurcovich, Santisi 2004, in G. Kéri's covering-code tables); lower bound 313. K₄(11,3) ≤ 2048 (Bertolo, Di Pasquale, Santisi 2004–06, in Kéri's tables).
 
-**Method.** The octacode (256 words, K₄(8,2) ≤ 256; Maharaj, arXiv 2610.03760, Sept 2026) amalgamated on its last coordinate with a 12-word code of length 3 found by a set-cover search. The textbook amalgamated-direct-sum theorem does not apply (the octacode is not normal), so the search was needed.
+**Method.** The octacode (256 words, K₄(8,2) ≤ 256; Maharaj, arXiv 2610.03760, Sept 2026) amalgamated on its last coordinate with a 12-word code of length 3 found by a set-cover search. The textbook amalgamated-direct-sum theorem does not apply (the octacode is not normal), so the search was needed. The length-11 code is a union of 30 cosets of the 64-word subcode of the octacode with last coordinate 0, padded with zeros; tabu search found the coset representatives.
 
 **Certificate.** verify.py checks the covering radius exhaustively in 0.1 s (standard library only); an independent C program agrees word by word.
 
-**Review.** Certificate correct; a modest but genuine record (one table entry, −7.7%).
+**Review.** Certificate correct; modest but genuine records (−7.7% and −6.25% on one table entry each).
 
-**Novelty.** Kéri's tables, newer tables and repositories, and this year's papers list 832 or nothing lower ([novelty](../Riemann/Deep/CovCodes/NOVELTY.md)).
+**Novelty.** Kéri's tables, newer tables and repositories, and this year's papers list 832 and 2048 or nothing lower ([novelty](../Riemann/Deep/CovCodes/NOVELTY.md); the 1920 code was checked against the same tables and the September–October listings).
 
 **Files.** [report](../Riemann/Deep/CovCodes/REPORT.md), [note](../Riemann/Deep/CovCodes/NOTE.md), [code n = 10](../Riemann/Deep/CovCodes/codes/K4_10_3_768.txt), [code n = 11](../Riemann/Deep/CovCodes/codes/K4_11_3_1920.txt), [verify.py](../Riemann/Deep/CovCodes/verify.py)
