@@ -1,0 +1,7 @@
+max psi(n)/n, 2<=n<=1e7: 1.03882057760913 at n = 113  vs log4 = 1.3862943611198906
+max M(p)-log p (sup of M(x)-log x): -0.34657359027997264  vs log4 = 1.3862943611198906
+min over n of upper-A(n): 0.9497197817819076
+min over n of A(n)-lower: 0.15342640972002736
+min over 100<=y<=x<=1e7 of M(x)-M(y)-log(x/y): -0.1937286681276129  (claim > -2); attained near x = 9993079
+sum_{odd p<=1e7} log p/p^2 = 0.31980421422600436 (claim < 7/20)
+V = sum log p/(p(p-1)) = 0.7553665108289095 (claim < 33/40)

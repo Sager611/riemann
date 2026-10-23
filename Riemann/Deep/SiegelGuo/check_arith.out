@@ -1,0 +1,11 @@
+(a) 1820 fundamental discriminants |D|<=3000, x<=1e6: violations of arith:target = 0
+    largest excess S_-(x) - 11/20 log x - 29/60 log q (bound 6): [(-0.566, -3, 2), (-0.669, 5, 3), (-0.908, -4, 3), (-1.138, -7, 5), (-1.194, -11, 2), (-1.202, 8, 5)]
+(b) exact exponent mass H versus counting bound (all logs natural)
+  D=    -3 p0=10007 s0=333 m=101: H/norm=2.5439  counting/norm=6.2682  (arith:H-lower)=-0.7547 (arith:H-upper)=6.2708  U=3.7466  consistent=True
+  D=    -4 p0=10007 s0=333 m=101: H/norm=2.5784  counting/norm=6.4073  (arith:H-lower)=-0.4626 (arith:H-upper)=6.4098  U=4.0391  consistent=True
+  D=     5 p0=10007 s0=333 m=101: H/norm=2.5748  counting/norm=6.5151  (arith:H-lower)=-0.4881 (arith:H-upper)=6.5177  U=4.0136  consistent=True
+  D=  -163 p0=10009 s0=333 m=101: H/norm=2.8859  counting/norm=8.1995  (arith:H-lower)=0.3692 (arith:H-upper)=8.2019  U=4.8736  consistent=True
+  D= -1003 p0=10007 s0=333 m=101: H/norm=2.4443  counting/norm=9.0778  (arith:H-lower)=-0.4773 (arith:H-upper)=9.0800  U=4.0244  consistent=True
+  D=     8 p0=10037 s0=334 m=101: H/norm=2.6207  counting/norm=6.7440  (arith:H-lower)=-0.2725 (arith:H-upper)=6.7465  U=4.2284  consistent=True
+  D=    -8 p0=10007 s0=333 m=101: H/norm=2.5927  counting/norm=6.7423  (arith:H-lower)=-0.5597 (arith:H-upper)=6.7449  U=3.9419  consistent=True
+  D= -8012 p0=32059 s0=1068 m=180: H/norm=3.2049  counting/norm=10.7216  (arith:H-lower)=0.1773 (arith:H-upper)=10.7223  U=4.6721  consistent=True

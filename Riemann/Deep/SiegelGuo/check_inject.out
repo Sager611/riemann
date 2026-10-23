@@ -1,0 +1,7 @@
+(1) injectivity: full column rank of iota (n = p0*s0 unknowns)
+    251 cases (p0<=97, s0 in {1,2,3,floor(p0/30),p0-1}, n<=400): rank deficient = none
+    (info) split p0 analog: full rank in 63/63 cases
+(2) divisibility iota(g_{r,s}^{(p)}) in p^h Z^M, exact integers
+    pairs (p0, s0, d): [(19, 4, -1), (23, 3, -2), (19, 5, 2), (23, 4, -3), (19, 3, 3), (23, 3, 5), (19, 3, -7), (19, 2, -163)]
+    774 basis vectors with h>=1 checked: failures = none; Frobenius rho((u+vt)^p) = u-vt mod p held 760/760 times
+(3) negative control, split p: divisibility fails as it should in 12 / 12 cases [(-1, 5, True), (-1, 13, True), (-1, 17, True), (-2, 3, True), (-2, 11, True), (-2, 17, True), (-2, 19, True), (2, 7, True), (2, 17, True), (-3, 7, True), (-3, 13, True), (-3, 19, True)]

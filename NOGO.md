@@ -292,3 +292,4 @@
 - R177 correct as tested: 2610.12816 (κ = 10⁵, n ≤ 10⁶), Zenodo 23583993 (N = 64 primitive); not a record: 2609.18414. [R177](Riemann/Tree/R177.lean)
 - R178 nothing new: 2610.03707, 2609.39706, 2610.26949, Zenodo 23580985, 23576452; RamRepair: unconditional N_R = 38,358,837,683 already posted (liqsweep, 14 Oct 2026, via the 7/8 half-plane). [R178](Riemann/Tree/R178.lean)
 - R179 verified (others' counterexamples, correct): 2610.15145, 2610.27294; not checkable: 2610.31637, 2610.15199; small cases agree: 2610.01240. [R179](Riemann/Tree/R179.lean)
+- R180 audited, no flaw: 2610.30476 (Guo, (1 − β) log q > 1/100; [audit](Riemann/Deep/SiegelGuo/REPORT.md)); small cases agree: 2610.05146, 2610.27707, 2610.03740, 2610.31531, 2610.10511. [R180](Riemann/Tree/R180.lean)

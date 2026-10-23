@@ -1,0 +1,5 @@
+p0=    10007: counting bound/norm=  6.268  H/norm all-inert model=  4.967 (below)  true chi_-3= 2.544
+p0=   100043: counting bound/norm=  7.533  H/norm all-inert model=  7.252 (below)  true chi_-3= 3.693
+p0=  1000037: counting bound/norm=  8.800  H/norm all-inert model=  9.550 (EXCEEDS)  true chi_-3= 4.844
+p0= 10000079: counting bound/norm= 10.066  H/norm all-inert model= 11.851 (EXCEEDS)  true chi_-3= 5.995
+p0= 20000003: counting bound/norm= 10.447  H/norm all-inert model= 12.544 (EXCEEDS)  true chi_-3= 6.341

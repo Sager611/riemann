@@ -1,0 +1,59 @@
+PASS log2 < 7/10 via (2,1)
+PASS 13/12 < log3 via (3,2)
+PASS log3 < 11/10 via (3,2)
+PASS log5 < 13/8 via (5,3)
+PASS 35/18 < log7 via (7,9)
+PASS log7 < 39/20 via (7,9)
+PASS log100 = 2log2+2log5 < 5
+  enclosures: [0.6944444444444444, 1.0833333333333333, 1.1, 1.613639035861258, 1.9449958350111949, 1.9460131661595246]
+PASS odd-square certificate == 30607/88200
+PASS 30607/88200 < 7/20
+  true sum_{odd p<2e6} log p/p^2 = 0.3198038144 (tail < 1e-5)
+PASS true odd-square sum < 30607/88200
+PASS 7/20+11/360+7/16 == 589/720
+PASS 589/720 < 33/40
+PASS log2/2 < 7/20
+PASS log3/36 < 11/360
+  true V = 0.755366111
+PASS loss certificate == 2 - 7/675
+PASS (1+log100)/100 < 3/50
+PASS 14040/9999 < 141/100
+PASS log4 < 7/5
+PASS log10000 < 10
+PASS p0/s0 < 301/10 (s0>=333)
+PASS U/(2s0) bound < 1/50
+PASS 7*2*(301/10)/120 == 2107/600 < 53/15
+PASS 22/15*log2 < 77/75
+PASS sum == 599/100 < 6
+PASS small case 9/20*10+7/5 == 59/10
+PASS small case 89/60*7/5 == 623/300 < 6
+PASS (29/30)+(1/2) == 22/15
+PASS H-upper coefficients 29/60+1/15 == 11/20
+PASS square normalization == 282431/176400 > 8/5
+PASS sum_{m<=27} 1/m^2 >= that
+PASS B(y) bound (4+3 log3)/27 < 73/270
+PASS B(xy) bound < 50*3^-38 < 1e-4
+PASS integral error == 332/585 < 4/7
+PASS kappa = 70*6 + 4900/2 = 2870
+PASS error certificate == 1176629/118125 = 10 - 4621/118125
+PASS prime mass 699/20 < 35
+PASS 70-6-35/2 == 93/2
+PASS 11/20*70+29/60 == 2339/60
+PASS 93/2-2339/60 == 451/60
+PASS 451/60*13/12 == 8+103/720
+PASS beta>1/2: 1/(100 log3) < 1/2
+PASS 76/100 < 1; 3^6=729
+PASS app B(y) (8+2log7)/49 == 17/70
+PASS app B(xy) < 57*7^-25 < 1e-4
+PASS app kappa = 46*4+46^2/2 = 1242
+PASS app 1242/64 == 621/32
+PASS app error certificate == 6 - 21863/548800
+PASS app J bound 741/32
+PASS app gap == 4453/960
+PASS app 4453/960*35/18 == 8+3523/3456
+PASS app 50/64 == 25/32 < 1
+PASS f_k'(q) as printed (TeX l.1166-1168) is correct
+PASS int_y^oo B(t)/t dt == 2B(y)+2y^-1/2 (G' = -B/y, G(oo)=0)
+PASS main term of weighted Abel == eps*kappa
+PASS g(v) = (1/v) int_u^v w^-beta dw
+ALL PASS
