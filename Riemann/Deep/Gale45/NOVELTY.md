@@ -1,0 +1,17 @@
+NEW RECORD: R⁴ 0.914708699770 (93 points) and R⁵ 0.927931845768 (135 points) (were 0.913148536990 and 0.925763634681)
+
+# Adversarial novelty check, 2026-10-23 06:25 UTC (values from NOTE.md at that time)
+Verdict: nothing found that matches or beats either value. The only R⁴/R⁵ Gale counterexamples anywhere are Voronov's (61 and 87 points). Every other hit is a Borsuk-number result, a different problem, or a link to his R³ paper.
+
+## Sources checked
+1. GXL evidence API, 8 claims (Gale false in R⁴/R⁵; explicit R⁴ ≥ 0.9147 and R⁵ ≥ 0.9279 sets; SAT-found Gale counterexamples; ball extremality of d_n(n+1); R³ four-part bounds; non-(d+1)-colourable diameter graphs; R⁴ sets beating √(5/6)): no supporting passage, and 2610.28828 is not in the index. Nearest hits 2605.19068, 2608.12561, 2210.12394, 1010.0383 give no R⁴/R⁵ ratio.
+2. arXiv 2610.28828: v1 only (20 Oct 18:47 UTC; v2 returns 404). TeX Table 2 "Current records": n=4 0.91314…, 61 points; n=5 0.92576…, 87 points; n=6 0.93696…, 64 points. Its references followed up: Kalai's blog, the OpenAI R⁹ Borsuk preprint, 2605.19068 (Tolmachev–Voronov: no Gale, no five-part bound), 2608.12561, GigaEvo (R³ only, ≈ 0.872).
+3. arXiv listings math.MG and math.CO for 2026-10 (190 + 1053 entries, through the 22 Oct mailing) and 2026-09 (242 + 1477), titles parsed with python: 2610.28828 is the only Gale paper. Near misses read (2609.23867, 2610.06340, 2610.18907, 2610.16555, 2610.19980, 2610.22241): no Gale ratios.
+4. arXiv API, all categories: Gale with diameter/partition/sphere, "Gale conjecture", Borsuk with diameter/ball/counterexample, ti:Borsuk, "smaller diameter", "parts of smaller diameter", "diameter ratio"; authors Voronov, Tolmachev, Raigorodskii. Nothing after 2610.28828.
+5. Citing works: no arXiv trackbacks; no alphaXiv comments; not yet in OpenAlex (404); Semantic Scholar refused 3 tries (429). Kalai's blog (TYI 60 on 11 Oct, "Progress on Borsuk's problem" on 21 Oct, all comments up to 22 Oct) only links the R³ paper.
+6. github.com/vsvor/Gale-conjecture at 06:17 UTC: 2 commits (last bd6dc959, 22 Oct 12:55 UTC); no issues, PRs, releases, tags or forks; only branch main. best_known/ unchanged (4d_61p_091314, 5d_87p_092576, 6d_64p_093696). A scan of the whole tree finds at most 0.913148536991 (R⁴) and 0.925763634681 (R⁵). paper_v5.pdf (the algorithm companion) has no R⁴/R⁵ values. vsvor's Borsuk-problem and distance-graphs-with-AI repositories: no Gale.
+7. GitHub-wide: code, commit, issue and repository search for Gale's conjecture and for the exact old values; Borsuk repositories pushed after 19 Oct; new "gale" repositories since 15 Oct. Only digests citing 2610.28828 (broadside-observer, justin-sun-prize-lean, rss_fetch, aftd-platform). openai/math (Borsuk fails in R⁹, no Gale), google-deepmind, the AIRI/FusionBrainLab GigaEvo repositories and plasma-ai/erdos #505: no Gale ratios.
+8. Zenodo (Gale conjecture, Gale + diameter, Borsuk, "Borsuk number", "smaller diameter"), 2026 searches in Crossref and OpenAlex (including Russian), MathOverflow, Math.SE: no Gale-ratio uploads. Borsuk-number uploads (CP² is 9, the 1.37^√d bound, ternary T₄) are other problems.
+9. Survey: Kalai 2015 (1505.04952): the ball partition is known to be optimal only in dimensions 2 and 3; no R⁴/R⁵ sets. Before 2610.28828 no R⁴/R⁵ counterexample was known.
+
+Residual risk: submissions after the 22 Oct mailing, an unannounced v2 of 2610.28828, or a new push to the repository (the author calls his values "most likely far from optimal"). Recheck before citing.

@@ -13,6 +13,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - Record: counterexample to Gale's conjecture in R³ with ratio 0.8906211 (previous 0.8892812). [details](discoveries/gale-r3.md)
 - A graph's evolution algebra is isomorphic to its random-walk version iff the graph is regular, or bipartite biregular with degree ratio a cube (open problem of arXiv 2610.22248). [details](discoveries/evolution-algebras.md)
 - Record: non-separable homothetic triangles with covering factor 1.0633023 (was 1.0631883), and a proof that λ_simplex ≥ 1.0633083. [details](discoveries/tricover.md)
-- Record: a quaternary covering code of length 10 and radius 3 with 768 words, so K₄(10,3) ≤ 768 (was 832). [details](discoveries/covering-code-k4-10-3.md)
+- Records: quaternary covering codes K₄(10,3) ≤ 768 (was 832) and K₄(11,3) ≤ 1920 (was 2048). [details](discoveries/covering-code-k4-10-3.md)
 - The open question of arXiv 2610.10095 answered: exactly 11 of the 24 cyclic orders of +, ×, −, ÷ make every number 1..N for all large N. [details](discoveries/operation-orders.md)
 - Record: a body of volume 1.8755015 moves through the 3D snaky corridor K₄ (was 1.8558404). [details](discoveries/sofa3d.md)
+- Records: stronger counterexamples to Gale's conjecture in R⁴ (0.9164674, was 0.9131485) and R⁵ (0.9283700, was 0.9257636). [details](discoveries/gale-r4-r5.md)
