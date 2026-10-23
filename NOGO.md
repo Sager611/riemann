@@ -281,3 +281,4 @@
 - R166 verified (others' results): Zenodo 23553010 (Hou–Zhao Conj. 4.10 fails, n = 7 witness), 23552993 (τ_k-maximal, n ≤ 6), 23567153 (Wormald constant, small d); no counterexample: 2610.04498 P3, 2610.30003. [R166](Riemann/Tree/R166.lean)
 - R167 no counterexample: 2609.31489 Conj. 5.11 (n ≤ 12), 2610.29846 moments (n ≤ 12), OEIS A400277, A400792, A394634; 2610.08168 quoted only; Wormald 2610.16245 timed out. [R167](Riemann/Tree/R167.lean)
 - R168 no counterexample: 2610.02913 (n ≤ 16), 2610.19249 (n ≤ 40), 2610.16245 Conj. 3 (n ≤ 9 sampled), 2610.25080 (tripod toy), 2610.10095; audit clean 2610.25229; Zenodo 23444674 out of scope. [R168](Riemann/Tree/R168.lean)
+- R169 checked, nothing new: Zenodo 23462601 (open estimate), 23348776 (identity correct, certificate conditional); 2610.18235 Chen LIS n ≤ 30 (BLS n ≤ 50); 2609.04176 Catalan series to 1e-9; NT/CO API finders empty. [R169](Riemann/Tree/R169.lean)
