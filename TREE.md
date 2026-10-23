@@ -186,5 +186,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R168 no counterexamples to five threshold or open conjectures (double comets n ≤ 16, Guo–Krattenthaler n ≤ 40, Wormald Conj. 3, 2610.25080, 2610.10095); audit 2610.25229 clean; Zenodo 23555113 RH-proof certificate flagged. [R168.lean](Riemann/Tree/R168.lean)
 - R169 Zenodo 23555113 RH 'proof' refuted (positivity certificate has the wrong sign); 2610.10095 open question answered for 12 of 24 orders; nothing new in three more checks. [R169.lean](Riemann/Tree/R169.lean)
 - R170 Catalan-irrationality claim 2609.04176 triaged (weak points located; a published note exists); double comets clean to n = 30; leads: six claimed counterexamples, four Zenodo claims. [R170.lean](Riemann/Tree/R170.lean)
-- R171 FRONTIER (next)
+- R171 three claimed counterexamples verified correct; the claimed Wormald counterexample 2610.00086 is a disconnected graph (original wording to check); the Catalan gap was already found (2609.22339). [R171.lean](Riemann/Tree/R171.lean)
+- R172 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
