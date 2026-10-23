@@ -290,3 +290,4 @@
 - R175 triaged: 2610.13848, 2610.00153, 2610.13979 look correct; 2610.01536, 2610.31589, 2610.02809, 2610.08581 not checkable from source; OEIS A401145 comment false as written (n = 8), trivial. [R175](Riemann/Tree/R175.lean)
 - R176 verified (others' results, correct): Zenodo 23580381, 23497760, 23541166; small cases agree: 2610.00599, 2610.03730, 2610.11324. [R176](Riemann/Tree/R176.lean)
 - R177 correct as tested: 2610.12816 (κ = 10⁵, n ≤ 10⁶), Zenodo 23583993 (N = 64 primitive); not a record: 2609.18414. [R177](Riemann/Tree/R177.lean)
+- R178 nothing new: 2610.03707, 2609.39706, 2610.26949, Zenodo 23580985, 23576452; RamRepair: unconditional N_R = 38,358,837,683 already posted (liqsweep, 14 Oct 2026, via the 7/8 half-plane). [R178](Riemann/Tree/R178.lean)
