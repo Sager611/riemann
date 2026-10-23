@@ -208,5 +208,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R190 record targets collected (optimization constants, AlphaEvolve problems); the prefix-reversal classification proved and reviewed (novelty pending); four clean tests. [R190.lean](Riemann/Tree/R190.lean)
 - R191 fresh October records collected as targets; record hunt on 2610.00386 started. [R191.lean](Riemann/Tree/R191.lean)
 - R192 3-SAT ≤ 4.268 certificate reproduced; μ(ζ(2)) records checked; prefix-reversal classification confirmed new. [R192.lean](Riemann/Tree/R192.lean)
-- R193 FRONTIER (next)
+- R193 last week's listings in eight categories: nothing new; prefix-reversal classification logged in DISCOVERIES. [R193.lean](Riemann/Tree/R193.lean)
+- R194 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
