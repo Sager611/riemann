@@ -191,5 +191,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R173 Wormald connected case survives a targeted search; OEIS A399309/A399861 growth conjecture looks false (to settle); claimed proof of optimal packing in R⁴ (2609.25120) flagged for audit; four clean checks. [R173.lean](Riemann/Tree/R173.lean)
 - R174 the OEIS growth conjecture (A399309, A399861) is consistent with the data once the 1/log n bias of binary primes is accounted for; Wormald connected case survives 2-edge-cut joins; new claimed counterexamples to audit. [R174.lean](Riemann/Tree/R174.lean)
 - R175 October's claimed counterexamples triaged (three look correct, four not checkable from source); OEIS A401145 comment false as written; RamRepair (unconditional Ramanujan inequality) under review and repair. [R175.lean](Riemann/Tree/R175.lean)
-- R176 FRONTIER (next)
+- R176 three Zenodo certificates verified; small cases of three October papers agree; RH-adjacent claims found (zeta zeros on the line, no Siegel zeros) for audit; Orders classification reviewed. [R176.lean](Riemann/Tree/R176.lean)
+- R177 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
