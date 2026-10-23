@@ -277,3 +277,4 @@
 - R162: 2608.30798 (Wiman sextic) false identification of rational forms, main theorem unaffected (known by Calegari–Dimitrov–Tang); 2602.03626 minor (no interval transcript). [R162](Riemann/Tree/R162.lean)
 - R163 verified (others' refutations, correct): 2610.22783 (local antimagic leaf conjecture), 2610.23059 (P₁ part), 2610.29690 (π₂ part). [R163](Riemann/Tree/R163.lean)
 - R164 verified (others' counterexamples, correct): Zenodo 23575681 (Gautschi–Hairer Conj. 5.3 reverse clause), 23541298 (entropy-production bound), 23575572 (Zuckerman Conj. 1.16), arXiv 2610.22559 (CNCF 3-colouring of planar graphs); Zenodo 23533711 overclaims (finite-m only). [R164](Riemann/Tree/R164.lean)
+- R165: Zenodo 23533711 does not contradict Kircheis–Potts–Tasche Thm 2.1 (bound 2.8e-7 vs errors 1.4e-9). [R165](Riemann/Tree/R165.lean)
