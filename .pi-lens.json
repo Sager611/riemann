@@ -1,3 +1,13 @@
 {
-  "lsp": { "disabledServers": ["lean"] }
+  "lsp": {
+    "disabledServers": [
+      "lean",
+      "python",
+      "python-jedi",
+      "marksman",
+      "typos",
+      "opengrep",
+      "ast-grep"
+    ]
+  }
 }
