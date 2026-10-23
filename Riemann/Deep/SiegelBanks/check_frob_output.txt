@@ -1,0 +1,3 @@
+  ***   Warning: new stack size = 64000000 (61.035 Mbytes).
+case1 S3 over Q: primes=76 congruence checks=1410 failures=0 norm-formula failures=0
+case2 C3 over Q(sqrt-3): congruence checks=1410 failures=0 Frobenius not fixing k: 0 norm failures: 0

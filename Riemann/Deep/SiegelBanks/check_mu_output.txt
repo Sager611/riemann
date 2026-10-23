@@ -1,0 +1,6 @@
+K=Q(sqrt13, xi_5): n_K=8 s=5 n_K/s=1.6000  trials=11867  violations=0  min tested (n_K-r)/(s-d)=1.7500  #subgroups=8
+K=Q(sqrt-7, xi_5): n_K=8 s=5 n_K/s=1.6000  trials=11839  violations=0  min tested (n_K-r)/(s-d)=1.7500  #subgroups=8
+K=Q(sqrt5, xi_7): n_K=12 s=7 n_K/s=1.7143  trials=15978  violations=0  min tested (n_K-r)/(s-d)=1.8333  #subgroups=10
+K=Q(sqrt-3, xi_7): n_K=12 s=7 n_K/s=1.7143  trials=15984  violations=0  min tested (n_K-r)/(s-d)=1.8333  #subgroups=10
+K=Q(sqrt2, xi_7): n_K=12 s=7 n_K/s=1.7143  trials=15980  violations=0  min tested (n_K-r)/(s-d)=1.8333  #subgroups=10
+total violations: 0

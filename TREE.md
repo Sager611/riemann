@@ -196,5 +196,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R178 claimed counterexamples in coding, spectral theory and physics found for checking; RamRepair not new (liqsweep, 14 Oct); Orders classification logged as a discovery. [R178.lean](Riemann/Tree/R178.lean)
 - R179 claimed counterexamples checked: Game of Arrows and Hohenberg–Kohn correct; the multiple unicast counterexample is under-specified (audit next); two not checkable. [R179.lean](Riemann/Tree/R179.lean)
 - R180 Guo's elementary Siegel-zero bound (2610.30476) audited with no flaw found; small cases of five claimed proofs agree; Erdős-problem solutions to check. [R180.lean](Riemann/Tree/R180.lean)
-- R181 FRONTIER (next)
+- R181 Erdős #1147, #193 solutions correct; Braverman–He multiple unicast counterexample correct; Banks's effective Siegel-zero exclusion audited; Sofa3D record under repair. [R181.lean](Riemann/Tree/R181.lean)
+- R182 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
