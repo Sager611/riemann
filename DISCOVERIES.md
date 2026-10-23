@@ -15,3 +15,4 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - Record: non-separable homothetic triangles with covering factor 1.0633023 (was 1.0631883), and a proof that λ_simplex ≥ 1.0633083. [details](discoveries/tricover.md)
 - Record: a quaternary covering code of length 10 and radius 3 with 768 words, so K₄(10,3) ≤ 768 (was 832). [details](discoveries/covering-code-k4-10-3.md)
 - The open question of arXiv 2610.10095 answered: exactly 11 of the 24 cyclic orders of +, ×, −, ÷ make every number 1..N for all large N. [details](discoveries/operation-orders.md)
+- Record: a body of volume 1.8755015 moves through the 3D snaky corridor K₄ (was 1.8558404). [details](discoveries/sofa3d.md)
