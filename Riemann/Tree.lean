@@ -188,3 +188,4 @@ import Riemann.Tree.R188
 import Riemann.Tree.R189
 import Riemann.Tree.R190
 import Riemann.Tree.R191
+import Riemann.Tree.R192

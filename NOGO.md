@@ -303,3 +303,4 @@
 - R188 no counterexample: 2610.27640, 2610.30503 (q = 3), 2610.24148, 2610.28762, 2610.25571, 2610.31363, 2610.22970; 2610.30538: a misstatement of Bourin's conjecture (drops Z ≥ 0). [R188](Riemann/Tree/R188.lean)
 - R189 no counterexample: Bourin 1999 (numerical, n ≤ 4, max ratio 1.0421 for Ky Fan 2); 2610.27997, 2610.31589, 2610.25571, 2610.24927. [R189](Riemann/Tree/R189.lean)
 - R190 no counterexample: 2610.28241, 2610.29551, 2610.25661, 2610.24953; OpenAI 7 Oct 2026 preprints not finitely checkable. [R190](Riemann/Tree/R190.lean)
+- R192 verified (others' results): 2610.10599 (3-SAT ≤ 4.268, exact certificate), 2610.02912 (constants); doubtful: 2610.27799; no counterexample: 2610.29197, 2610.27497, 2610.31531, 2610.23785. [R192](Riemann/Tree/R192.lean)
