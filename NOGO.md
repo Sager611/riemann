@@ -289,3 +289,4 @@
 - R174 no counterexample: OEIS A399309/A399861 (growth → Viswanath plausible, excess ~ 1/log n; limsup bound via Copeland–Erdős normality); Wormald connected (2-edge-cut joins, 6- and 10-vertex parts). [R174](Riemann/Tree/R174.lean)
 - R175 triaged: 2610.13848, 2610.00153, 2610.13979 look correct; 2610.01536, 2610.31589, 2610.02809, 2610.08581 not checkable from source; OEIS A401145 comment false as written (n = 8), trivial. [R175](Riemann/Tree/R175.lean)
 - R176 verified (others' results, correct): Zenodo 23580381, 23497760, 23541166; small cases agree: 2610.00599, 2610.03730, 2610.11324. [R176](Riemann/Tree/R176.lean)
+- R177 correct as tested: 2610.12816 (κ = 10⁵, n ≤ 10⁶), Zenodo 23583993 (N = 64 primitive); not a record: 2609.18414. [R177](Riemann/Tree/R177.lean)
