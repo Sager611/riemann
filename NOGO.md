@@ -287,3 +287,4 @@
 - R172 verified (others' results, correct): 2610.00086 (Wormald, as stated), GitHub K₄(10,4) ≤ 192 and K₄(8,4) ≤ 27, 2610.02443; no counterexample: Sun 2605.16240; flag only: 2609.10586 (det g vs (det g)^(1/3)). [R172](Riemann/Tree/R172.lean)
 - R173 no counterexample: Wormald connected (Sylvester graph, 96 bridged, 2000 random, n ≤ 28); clean: 2609.15330, 2609.29250, 2609.29477, 2609.27788. [R173](Riemann/Tree/R173.lean)
 - R174 no counterexample: OEIS A399309/A399861 (growth → Viswanath plausible, excess ~ 1/log n; limsup bound via Copeland–Erdős normality); Wormald connected (2-edge-cut joins, 6- and 10-vertex parts). [R174](Riemann/Tree/R174.lean)
+- R175 triaged: 2610.13848, 2610.00153, 2610.13979 look correct; 2610.01536, 2610.31589, 2610.02809, 2610.08581 not checkable from source; OEIS A401145 comment false as written (n = 8), trivial. [R175](Riemann/Tree/R175.lean)
