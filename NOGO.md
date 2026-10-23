@@ -298,3 +298,4 @@
 - R183 no counterexample: 2609.21195 (small), 2609.28404 (n ≤ 4), 2608.26259 (small tori), Sun 2411.14308 (n ≤ 10⁵), OEIS A399681, A400920; Erdős #1095 recomputed k ≤ 43. [R183](Riemann/Tree/R183.lean)
 - R184 no counterexample or known: OEIS A401236 (misread), 2307.15996 (locked tilings, known in v5), 2610.31392, 2610.30845, 2601.21958, 2610.10665. [R184](Riemann/Tree/R184.lean)
 - R185 no counterexample: 2610.26125, 2610.25661 (n ≤ 300), 2505.21373, 2610.30142, 2602.02211, 2610.30380, 2610.10665. [R185](Riemann/Tree/R185.lean)
+- R186 no counterexample: 2610.30155, 2610.30543, 2506.20909, 2610.31655, 2610.31619; nothing testable: 2610.29012. [R186](Riemann/Tree/R186.lean)

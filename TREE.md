@@ -201,5 +201,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R183 newest-listing hunts: a candidate counterexample to the prefix-reversal conjecture of 2610.30892 at n = 7 and an OEIS A401236 comment failure, both to verify; five clean tests. [R183.lean](Riemann/Tree/R183.lean)
 - R184 Conjecture 4 of 2610.30892 is false: ⟨r_7, r_4, r_2⟩ = S_7 and ⟨r_11, r_6, r_4⟩ = S_11 (confirmed twice); characterization of the open case running; other hunts clean. [R184.lean](Riemann/Tree/R184.lean)
 - R185 newest-listing hunts in eight more categories, all clean; the 3D sofa record logged in DISCOVERIES. [R185.lean](Riemann/Tree/R185.lean)
-- R186 FRONTIER (next)
+- R186 eight more categories hunted; a matrix-norm conjecture candidate (2610.30538) to verify. [R186.lean](Riemann/Tree/R186.lean)
+- R187 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
