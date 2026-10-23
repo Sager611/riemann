@@ -12,3 +12,4 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - The Sun–Hou conjecture holds for every finite field F_q with q > 7 (prime powers up to 18,888,871 were open). [details](discoveries/sun-hou.md)
 - Record: counterexample to Gale's conjecture in R³ with ratio 0.8906211 (previous 0.8892812). [details](discoveries/gale-r3.md)
 - A graph's evolution algebra is isomorphic to its random-walk version iff the graph is regular, or bipartite biregular with degree ratio a cube (open problem of arXiv 2610.22248). [details](discoveries/evolution-algebras.md)
+- Record: non-separable homothetic triangles with covering factor 1.0633023 (was 1.0631883), and a proof that λ_simplex ≥ 1.0633083. [details](discoveries/tricover.md)

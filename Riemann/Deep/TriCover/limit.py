@@ -12,9 +12,11 @@ Certifies, with outward-rounded interval arithmetic at 60 digits:
  (4) an upper bound for S_cont = 3 (1 - c - d + int_0^s E dt) (trapezoid rule plus the
      error term (s h^2 / 12) max|E''|, both enclosed).
 NOTE.md, section 4, proves that this gives lambda_simplex >= 1/S_cont(p) > 1.0633083237.
+Printed bounds are rounded outward (upper bounds up, lower bounds down), so they stay valid as printed.
 """
+from decimal import Decimal, localcontext, ROUND_CEILING, ROUND_FLOOR
+from fractions import Fraction
 from mpmath import mp, iv, mpf
-import mpmath
 
 mp.dps = 60
 iv.dps = 60
@@ -65,6 +67,13 @@ def F_and_J(tau, s):
 def lo(x): return mpf(x.a)
 def hi(x): return mpf(x.b)
 def mid(x): return (lo(x) + hi(x)) / 2
+def dec(x, n, up):
+    """the binary number x as a decimal with n significant digits, rounded up (up=True) or down"""
+    man, e = mpf(x).man_exp
+    q = Fraction(man) * Fraction(2) ** e
+    with localcontext() as ctx:
+        ctx.prec, ctx.rounding = n, (ROUND_CEILING if up else ROUND_FLOOR)
+        return str(Decimal(q.numerator) / Decimal(q.denominator))
 
 # float Newton (mp) for the centre
 tau0, s0 = mpf('0.6737630444333738'), mpf('1.1213014301809736')
@@ -90,7 +99,7 @@ dx = (Bt - iv.mpf(tau0), Bs - iv.mpf(s0))
 K = [ iv.mpf((tau0, s0)[i]) - (Cm[i][0] * f1 + Cm[i][1] * f2) + M[i][0] * dx[0] + M[i][1] * dx[1] for i in range(2)]
 inside = (lo(K[0]) > lo(Bt) and hi(K[0]) < hi(Bt) and lo(K[1]) > lo(Bs) and hi(K[1]) < hi(Bs))
 normM = max(hi(abs(M[i][0])) + hi(abs(M[i][1])) for i in range(2))
-print('Krawczyk K(B) in int(B):', inside, ' ||I - C J(B)|| <=', mpmath.nstr(normM, 3))
+print('Krawczyk K(B) in int(B):', inside, ' ||I - C J(B)|| <=', dec(normM, 3, up=True))
 assert inside and normM < 1
 
 # domain inequalities on B
@@ -100,7 +109,7 @@ checks = {'tau in (0,1)': (Bt, 1 - Bt), 'u > 0': (u,), 'v - u > 0': (v - u,), 'd
           'A0 = 1 - u - c - d > 0': (1 - u - c - d,), 'E0 > 0': (E0,), 'v - kappa > 0': (v - kap,), 's > 0': (Bs,)}
 for name, vals in checks.items():
     ok = all(lo(x) > 0 for x in vals)
-    print('  %-24s %s  (min %s)' % (name, ok, mpmath.nstr(min(lo(x) for x in vals), 4)))
+    print('  %-24s %s  (min %s)' % (name, ok, dec(min(lo(x) for x in vals), 4, up=False)))
     assert ok
 
 # integral bound
@@ -114,7 +123,7 @@ def g_parts(t):
 NP = 200
 E2max = mpf(0)
 for j in range(NP):
-    t = iv.mpf([sh * j / NP, sh * (j + 1) / NP])
+    t = iv.mpf([j, j + 1]) * sh / NP   # outward enclosure of [s j/NP, s (j+1)/NP]: the pieces cover all of [0, s]
     g, g1, g2 = g_parts(t)
     assert hi(g) < 0, 'denominator not negative'
     E2 = -D * kap * (g2 * g - 2 * g1 * g1) / (g * g * g)
@@ -128,13 +137,15 @@ for j in range(N + 1):
     w = iv.mpf(0.5) if j in (0, N) else iv.mpf(1)
     T += w * D * kap / g
 T = T * h
-Iup = hi(T) + sh * (hi(h) ** 2) / 12 * E2max
+# trapezoid sum plus the error term (s h^2/12) max|E''|, added in outward-rounded interval arithmetic
+Iup = hi(T + iv.mpf(sh) * h * h / 12 * iv.mpf(E2max))
 SupI = 3 * (1 - c - d + iv.mpf(Iup))
 Sup = hi(SupI)
 lam_low = iv.mpf(1) / SupI
-print('int_0^s E dt <=', mpmath.nstr(Iup, 15), '  max|E2| <=', mpmath.nstr(E2max, 4))
-print('S_cont <=', mpmath.nstr(Sup, 16))
-print('lambda_simplex >= 1/S_cont >=', mpmath.nstr(lo(lam_low), 16))
-assert lo(lam_low) > mpf('1.0633083237')
-print('certified: lambda_simplex >= 1.0633083237')
+print('int_0^s E dt <=', dec(Iup, 15, up=True), '  max|E2| <=', dec(E2max, 4, up=True))
+print('S_cont <=', dec(Sup, 16, up=True))
+print('lambda_simplex >= 1/S_cont >=', dec(lo(lam_low), 16, up=False))
+TARGET = '1.0633083237'
+assert lo(lam_low) > hi(iv.mpf(TARGET))   # iv.mpf(TARGET) encloses the decimal; compare with its upper end
+print('certified: lambda_simplex >= ' + TARGET)
 
