@@ -279,3 +279,4 @@
 - R164 verified (others' counterexamples, correct): Zenodo 23575681 (Gautschi–Hairer Conj. 5.3 reverse clause), 23541298 (entropy-production bound), 23575572 (Zuckerman Conj. 1.16), arXiv 2610.22559 (CNCF 3-colouring of planar graphs); Zenodo 23533711 overclaims (finite-m only). [R164](Riemann/Tree/R164.lean)
 - R165: Zenodo 23533711 does not contradict Kircheis–Potts–Tasche Thm 2.1 (bound 2.8e-7 vs errors 1.4e-9). [R165](Riemann/Tree/R165.lean)
 - R166 verified (others' results): Zenodo 23553010 (Hou–Zhao Conj. 4.10 fails, n = 7 witness), 23552993 (τ_k-maximal, n ≤ 6), 23567153 (Wormald constant, small d); no counterexample: 2610.04498 P3, 2610.30003. [R166](Riemann/Tree/R166.lean)
+- R167 no counterexample: 2609.31489 Conj. 5.11 (n ≤ 12), 2610.29846 moments (n ≤ 12), OEIS A400277, A400792, A394634; 2610.08168 quoted only; Wormald 2610.16245 timed out. [R167](Riemann/Tree/R167.lean)

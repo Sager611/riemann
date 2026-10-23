@@ -182,5 +182,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R164 REFUTATIONS: Erdős–Graham c = 8 variance gap (repairable), Bellotti zero-density constants unsupported, Padhi's unconditional Ramanujan inequality not proved as published; four Zenodo counterexample uploads recomputed (three correct, one overclaims); TriCover record 1.0633023. [R164.lean](Riemann/Tree/R164.lean)
 - R165 TriCover record and limit theorem reviewed correct (novelty next); a Zenodo claim against Kircheis–Potts–Tasche Thm 2.1 not reproduced; new record target: 3D moving sofa V*(K₄) ≥ 1.8558404. [R165.lean](Riemann/Tree/R165.lean)
 - R166 three Zenodo results verified (Welch function not 3rd-order sum-free, τ_k-maximal sizes, Wormald's constant); no counterexamples for PSD rank 4 or optical orthogonal codes. [R166.lean](Riemann/Tree/R166.lean)
-- R167 FRONTIER (next)
+- R167 no counterexamples (Hou–Zhao Conj. 5.11 to n = 12, moment-sequence claim 2610.29846, three OEIS conjectures); new targets: conjectures proved only beyond a threshold. [R167.lean](Riemann/Tree/R167.lean)
+- R168 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
