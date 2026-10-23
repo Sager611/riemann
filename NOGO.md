@@ -284,3 +284,4 @@
 - R169 checked, nothing new: Zenodo 23462601 (open estimate), 23348776 (identity correct, certificate conditional); 2610.18235 Chen LIS n ≤ 30 (BLS n ≤ 50); 2609.04176 Catalan series to 1e-9; NT/CO API finders empty. [R169](Riemann/Tree/R169.lean)
 - R170 no counterexample: 2610.02913 to n = 30 (local search); 2610.13971 (Strassen check); 2609.25011 spot check passes. [R170](Riemann/Tree/R170.lean)
 - R171 verified (others' counterexamples, correct): 2610.06033, 2610.11642, 2610.13987; known: Catalan 2609.04176 gap (Wachs 2609.22339); unverifiable: 2610.03550, Zenodo 23566520; 2609.10633 holds on tests. [R171](Riemann/Tree/R171.lean)
+- R172 verified (others' results, correct): 2610.00086 (Wormald, as stated), GitHub K₄(10,4) ≤ 192 and K₄(8,4) ≤ 27, 2610.02443; no counterexample: Sun 2605.16240; flag only: 2609.10586 (det g vs (det g)^(1/3)). [R172](Riemann/Tree/R172.lean)
