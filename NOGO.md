@@ -296,3 +296,4 @@
 - R181 verified (others' results, correct): Erdős #1147, #193; 2610.10108 ([check](Riemann/Deep/Unicast/REPORT.md)); 2610.31402 ([audit](Riemann/Deep/SiegelBanks/REPORT.md)); not checkable: #318, #190, 2610.01536 (certificate private). [R181](Riemann/Tree/R181.lean)
 - R182 audited, no flaw: 2610.08965 (67.354% of zeta zeros simple and on the line, unconditional; [audit](Riemann/Deep/ZetaZeros/REPORT.md)); DISCOVERIES guard: all entries safe. [R182](Riemann/Tree/R182.lean)
 - R183 no counterexample: 2609.21195 (small), 2609.28404 (n ≤ 4), 2608.26259 (small tori), Sun 2411.14308 (n ≤ 10⁵), OEIS A399681, A400920; Erdős #1095 recomputed k ≤ 43. [R183](Riemann/Tree/R183.lean)
+- R184 no counterexample or known: OEIS A401236 (misread), 2307.15996 (locked tilings, known in v5), 2610.31392, 2610.30845, 2601.21958, 2610.10665. [R184](Riemann/Tree/R184.lean)
