@@ -205,5 +205,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R187 the matrix-norm conjecture as stated in 2610.30538 fails trivially (B = I; ratio unbounded), probably a dropped hypothesis; other hunts clean. [R187.lean](Riemann/Tree/R187.lean)
 - R188 2610.30538 misstates Bourin's 1999 conjecture (drops Z ≥ 0); the original is open, a search follows; seven second-pick hunts clean. [R188.lean](Riemann/Tree/R188.lean)
 - R189 Bourin's conjecture survives a numerical search (max ratio 1.04 against √2); deeper listing picks clean. [R189.lean](Riemann/Tree/R189.lean)
-- R190 FRONTIER (next)
+- R190 record targets collected (optimization constants, AlphaEvolve problems); the prefix-reversal classification proved and reviewed (novelty pending); four clean tests. [R190.lean](Riemann/Tree/R190.lean)
+- R191 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
