@@ -1,0 +1,19 @@
+E0  sanity: D4 contacts -> 8
+
+[E1 far centre cuts the cell]  deletion alone: 25/3; + centre at unit distance 2.9 (> 2*sqrt2 = 2.8284): 1328453/160000 = 8.302831; packing min dist^2 = 2
+
+[E2 49 balls, F4 directions, unit distance 2.6131]  neighbours 48; unit-frame distances 2.6131..2.6131; packing min dist^2 (native, need >= 2) = 2.000000
+   true cell volume 19.216162 (float)
+   corner: max <u,u'> = 0.7071 (contact config needs <= 1/2), 48 directions, volume 6.593944
+
+[E3 49 balls, rational radii]  neighbours 48; unit-frame distances 2.5000..2.7577; packing min dist^2 (native, need >= 2) = 2.052500 exact
+   true cell volume 18.433175 (= 737327/40000)
+   corner: max <u,u'> = 0.7071 (contact config needs <= 1/2), 48 directions, volume 6.593944
+
+[E4 two roots replaced by one centre between them]  neighbours 23; unit-frame distances 2.0000..2.3094; packing min dist^2 (native, need >= 2) = 2.000000 exact
+   true cell volume 8.479167 (= 407/48)
+   corner: max <u,u'> = 0.5774 (contact config needs <= 1/2), 23 directions, volume 8.231729
+
+[E5 24 roots at 2.3 + one non-root at 2.8]  neighbours 25; unit-frame distances 2.3000..2.8001; packing min dist^2 (native, need >= 2) = 2.011400 exact
+   true cell volume 13.986807 (= 174835089/12500000)
+   corner: max <u,u'> = 0.7071 (contact config needs <= 1/2), 25 directions, volume 7.941125

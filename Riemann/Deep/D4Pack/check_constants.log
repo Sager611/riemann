@@ -1,0 +1,25 @@
+cap measure: integral == pi(2r - sin 2r) at 3 radii
+lens closed form vs own integral, max diff: 2.19e-31
+covering table: 20 rows parsed, 0 mismatches;  m=22 -> 8.046375922, m=23 -> 7.916727568, m=24 -> 7.798989459
+covering bound strictly decreasing on 5..24: True
+OK    covering bound m=22 via layer-cake integral: computed 8.04637592173  paper 8.046376  (TeX l.2125)
+OK    r_* (deg): computed 35.2643896828  paper 35.2644  (TeX l.4750)
+OK    r_4 (deg): computed 37.761243907  paper 37.7612  (TeX l.4751)
+OK    2 r_23 (deg): computed 69.2212997334  paper 69.2213  (TeX l.3489)
+OK    2 r_* (deg): computed 70.5287793655  paper 70.5288  (TeX l.3490)
+OK    A_*: computed 7.90714442971  paper 7.907144430  (TeX l.4879)
+OK    A_* closed form (eq:A-star-closed): computed 7.90714442971  paper 7.90714442970634764153209092415  (TeX l.5167)
+OK    8 - A_*: computed 0.0928555702937  paper 0.0928555702  (TeX l.5088)
+OK    A_4: computed 7.64755830742  paper 7.647558  (TeX l.4801)
+OK    8 - A_4: computed 0.352441692577  paper 0.352442  (TeX l.4887)
+OK    omega(60deg) at r_*: computed 0.00144540861923  paper 0.00144540  (TeX l.4973)
+OK    omega(60deg) at r_23: computed 0.000922241940774  paper 0.000922  (TeX l.3488)
+OK    omega_4(60deg): computed 0.0056594692226  paper 0.00565947  (TeX l.4854)
+OK    88 omega_4(60deg): computed 0.498033291589  paper 0.498033  (TeX l.4854)
+OK    deletion pair-only bound A_*+88 omega - 8 (spare): computed 0.034340388199  paper 0.034  (TeX l.4866)
+omega_3(60,60,60) = 6.035422e-05  (paper 5.65e-5, TeX l.4856)
+FAIL  deletion three-point bound A_4+88w4-84w3 (uses own omega_3): computed 8.14052184422  paper 8.140848  (TeX l.4853)
+D4 pair inner products: {np.float64(0.0): 72, np.float64(-1.0): 12, np.float64(0.5): 96, np.float64(-0.5): 96} (paper 96,72,96,12, TeX l.2856)
+deletion: 88 tight pairs (paper 88), 84 tight triangles (paper 84)
+
+2 CHECK(S) FAILED
