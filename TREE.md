@@ -183,5 +183,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R165 TriCover record and limit theorem reviewed correct (novelty next); a Zenodo claim against Kircheis–Potts–Tasche Thm 2.1 not reproduced; new record target: 3D moving sofa V*(K₄) ≥ 1.8558404. [R165.lean](Riemann/Tree/R165.lean)
 - R166 three Zenodo results verified (Welch function not 3rd-order sum-free, τ_k-maximal sizes, Wormald's constant); no counterexamples for PSD rank 4 or optical orthogonal codes. [R166.lean](Riemann/Tree/R166.lean)
 - R167 no counterexamples (Hou–Zhao Conj. 5.11 to n = 12, moment-sequence claim 2610.29846, three OEIS conjectures); new targets: conjectures proved only beyond a threshold. [R167.lean](Riemann/Tree/R167.lean)
-- R168 FRONTIER (next)
+- R168 no counterexamples to five threshold or open conjectures (double comets n ≤ 16, Guo–Krattenthaler n ≤ 40, Wormald Conj. 3, 2610.25080, 2610.10095); audit 2610.25229 clean; Zenodo 23555113 RH-proof certificate flagged. [R168.lean](Riemann/Tree/R168.lean)
+- R169 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
