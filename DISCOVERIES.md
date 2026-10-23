@@ -17,3 +17,4 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - The open question of arXiv 2610.10095 answered: exactly 11 of the 24 cyclic orders of +, ×, −, ÷ make every number 1..N for all large N. [details](discoveries/operation-orders.md)
 - Record: a body of volume 1.8755015 moves through the 3D snaky corridor K₄ (was 1.8558404). [details](discoveries/sofa3d.md)
 - Records: stronger counterexamples to Gale's conjecture in R⁴ (0.9164674, was 0.9131485) and R⁵ (0.9283700, was 0.9257636). [details](discoveries/gale-r4-r5.md)
+- Exactly which triples of prefix reversals generate S_n below the diagonal (m + k < n): a complete classification, refuting the conjecture of Blanco et al. [details](discoveries/prefix-reversals.md)
