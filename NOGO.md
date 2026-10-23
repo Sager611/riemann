@@ -301,3 +301,4 @@
 - R186 no counterexample: 2610.30155, 2610.30543, 2506.20909, 2610.31655, 2610.31619; nothing testable: 2610.29012. [R186](Riemann/Tree/R186.lean)
 - R187 no counterexample: 2610.30493, 2610.30800, 2610.30164, 2610.25661 (n ≤ 500), 2610.31557; 2610.30538 as stated fails trivially (misstatement suspected). [R187](Riemann/Tree/R187.lean)
 - R188 no counterexample: 2610.27640, 2610.30503 (q = 3), 2610.24148, 2610.28762, 2610.25571, 2610.31363, 2610.22970; 2610.30538: a misstatement of Bourin's conjecture (drops Z ≥ 0). [R188](Riemann/Tree/R188.lean)
+- R189 no counterexample: Bourin 1999 (numerical, n ≤ 4, max ratio 1.0421 for Ky Fan 2); 2610.27997, 2610.31589, 2610.25571, 2610.24927. [R189](Riemann/Tree/R189.lean)
