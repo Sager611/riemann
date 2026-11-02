@@ -19,3 +19,4 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - Records: stronger counterexamples to Gale's conjecture in R⁴ (0.9164674, was 0.9131485), R⁵ (0.9283700, was 0.9257636) and R⁶ (0.9373384, was 0.9369672). [details](discoveries/gale-r4-r5.md)
 - Exactly which triples of prefix reversals generate S_n below the diagonal (m + k < n): a complete classification, refuting the conjecture of Blanco et al. [details](discoveries/prefix-reversals.md)
 - Record: a convex cover of area 0.2453479 contains a copy of every planar arc of length 1 (Moser's worm problem; was 0.2463322). [details](discoveries/moser-worm.md)
+- Record: the integer Chebyshev constant of [0, 1] is at least 0.4222355 (was 0.4222286). [details](discoveries/integer-chebyshev.md)
