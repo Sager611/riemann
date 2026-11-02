@@ -311,3 +311,4 @@
 - R197 not new: Fasi–Higham Conjecture 3.2 counterexamples are 2610.39051's own. No counterexample: 2610.31906, 2610.38757, 2610.34912. [R197](Riemann/Tree/R197.lean)
 - R198 no counterexample: 2610.34300 (k = 199, 259 give period 4; paper checked to 487); Fasi–Higham diagonal m ≤ 61, m = 3 to k = 20000. [R198](Riemann/Tree/R198.lean)
 - R199 no counterexample: 2610.36132, 2610.41155, 2610.40585, 2610.40989, 2610.42085. [R199](Riemann/Tree/R199.lean)
+- R200 no counterexample: 2610.32302 (Theorem 2.1 holds, m ≤ 3000), 2610.34388, 2610.32673, 2610.38845, 2610.32508. [R200](Riemann/Tree/R200.lean)

@@ -215,5 +215,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R197 corrects R196: the Padé counterexample is 2610.39051's own; 2610.34300's 4-cycle is certified only up to k = 147, open lead beyond. [R197.lean](Riemann/Tree/R197.lean)
 - R198 Finch's 4-cycle conjecture holds where tested (paper already to k = 487); diagonal Fasi–Higham positive for m ≤ 61; record leads. [R198.lean](Riemann/Tree/R198.lean)
 - R199 record leads read (Borsuk b₄ ≤ 7; average kissing numbers); five hunts, no counterexample. [R199.lean](Riemann/Tree/R199.lean)
-- R200 FRONTIER (next)
+- R200 record finders, an audit (2610.32302 holds: ℕ ∋ 0), five hunts: nothing new. [R200.lean](Riemann/Tree/R200.lean)
+- R201 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
