@@ -1,0 +1,40 @@
+{
+ "files": [
+  "multipliers-000.jsonl.xz",
+  "multipliers-001.jsonl.xz",
+  "multipliers-002.jsonl.xz",
+  "multipliers-003.jsonl.xz",
+  "multipliers-004.jsonl.xz",
+  "multipliers-005.jsonl.xz",
+  "multipliers-006.jsonl.xz",
+  "multipliers-007.jsonl.xz",
+  "multipliers-008.jsonl.xz",
+  "multipliers-009.jsonl.xz",
+  "multipliers-010.jsonl.xz",
+  "multipliers-011.jsonl.xz",
+  "multipliers-012.jsonl.xz",
+  "multipliers-013.jsonl.xz",
+  "multipliers-014.jsonl.xz"
+ ],
+ "format": "compact",
+ "schema": 2,
+ "sha256": {
+  "header.json": "774cd1b76a7494cb116939292560c0e54b68ef42ddce9a1a32bd1f3cbe1e7ea0",
+  "multipliers-000.jsonl.xz": "f2f74f1b141a56c8f1082bab43fa9628f3abcd6ebe8cd8864c9056f32b16f9e3",
+  "multipliers-001.jsonl.xz": "7dffe2a21b09f0c0f4b8741f4b4082c2d924e162371f53c3dc267403210ac3fd",
+  "multipliers-002.jsonl.xz": "fbe926c3ed089ed3acd313909dab970b79eb30557ac9857ba2cf181c48c9d2f3",
+  "multipliers-003.jsonl.xz": "c5cb397e1fa0c2c8a93eb91f9bade21040628627be2ca040180df4ede1d5e36a",
+  "multipliers-004.jsonl.xz": "05d807258eaf10f7bd56b61a86230c52352d4738af77ccf8bfce583438873b4a",
+  "multipliers-005.jsonl.xz": "36d664b7ccf5af6e8c2449be98592016c43535747854872975701c903b31a367",
+  "multipliers-006.jsonl.xz": "46f0c37eb5715fc2608edcc1f3f444b175b6cf225b1fe71e9e80214efb4f332e",
+  "multipliers-007.jsonl.xz": "fdccddd76717e2e28c95658104a2ef5d2959acf5f25495591fd440368f345d5c",
+  "multipliers-008.jsonl.xz": "34dc76bbc6f465303ec723fb26de39fe9f05692fecc31a28e00302bc03f46770",
+  "multipliers-009.jsonl.xz": "700b42bbfef878c7243d72281156edc3f5fe3c8252c54c81ee4f863ae816abba",
+  "multipliers-010.jsonl.xz": "868735e3b893ca1dbf09884cd05c7eb79eed36374c3fd8bfb05d5f879a432a61",
+  "multipliers-011.jsonl.xz": "87763359889923f6da1c1a3f08a510f81f796eb381fe609537e28bf4cba9e89c",
+  "multipliers-012.jsonl.xz": "b9e510bec235571b282997af02b1b1f3d0ef6055655d233b02a2a0eb5dc18048",
+  "multipliers-013.jsonl.xz": "c4ab310f8942d4e4f48bf1d414f93b0ec8c6b5752f1631bd918e3f324d74b349",
+  "multipliers-014.jsonl.xz": "d911687c34bc1c797cf850197cebcec47b18dfc9cbf582957d861b7f360fa8c9",
+  "tree.json.gz": "bd4a813e50de365cf8f4101905febe677b185e4e38a3d4f5bd59e76f4b8ecd56"
+ }
+}

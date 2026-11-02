@@ -16,5 +16,6 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - Records: quaternary covering codes K₄(10,3) ≤ 768 (was 832) and K₄(11,3) ≤ 1920 (was 2048). [details](discoveries/covering-code-k4-10-3.md)
 - The open question of arXiv 2610.10095 answered: exactly 11 of the 24 cyclic orders of +, ×, −, ÷ make every number 1..N for all large N. [details](discoveries/operation-orders.md)
 - Record: a body of volume 1.8755015 moves through the 3D snaky corridor K₄ (was 1.8558404). [details](discoveries/sofa3d.md)
-- Records: stronger counterexamples to Gale's conjecture in R⁴ (0.9164674, was 0.9131485) and R⁵ (0.9283700, was 0.9257636). [details](discoveries/gale-r4-r5.md)
+- Records: stronger counterexamples to Gale's conjecture in R⁴ (0.9164674, was 0.9131485), R⁵ (0.9283700, was 0.9257636) and R⁶ (0.9373384, was 0.9369672). [details](discoveries/gale-r4-r5.md)
 - Exactly which triples of prefix reversals generate S_n below the diagonal (m + k < n): a complete classification, refuting the conjecture of Blanco et al. [details](discoveries/prefix-reversals.md)
+- Record: a convex cover of area 0.2453479 contains a copy of every planar arc of length 1 (Moser's worm problem; was 0.2463322). [details](discoveries/moser-worm.md)
