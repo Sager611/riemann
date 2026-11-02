@@ -314,3 +314,4 @@
 - R200 no counterexample: 2610.32302 (Theorem 2.1 holds, m ≤ 3000), 2610.34388, 2610.32673, 2610.38845, 2610.32508. [R200](Riemann/Tree/R200.lean)
 - R201 no counterexample: 2610.40321, 2610.41843, 2610.41781, 2610.38031 (numerics only), 2610.34300 (k ≤ 787 inconclusive), 2610.33692. [R201](Riemann/Tree/R201.lean)
 - R202 holds: 2610.36417, 2610.33567. No counterexample: 2610.32798, 2610.34643, 2610.35779. [R202](Riemann/Tree/R202.lean)
+- R203 no counterexample: A400939, A401194, A401314, A401368, A397903; 2610.41027, 2610.41984. [R203](Riemann/Tree/R203.lean)
