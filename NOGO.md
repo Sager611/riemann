@@ -315,3 +315,4 @@
 - R201 no counterexample: 2610.40321, 2610.41843, 2610.41781, 2610.38031 (numerics only), 2610.34300 (k ≤ 787 inconclusive), 2610.33692. [R201](Riemann/Tree/R201.lean)
 - R202 holds: 2610.36417, 2610.33567. No counterexample: 2610.32798, 2610.34643, 2610.35779. [R202](Riemann/Tree/R202.lean)
 - R203 no counterexample: A400939, A401194, A401314, A401368, A397903; 2610.41027, 2610.41984. [R203](Riemann/Tree/R203.lean)
+- R204 no counterexample: 2609.04176 (Catalan series), 2607.16382 (zombie damage), 2610.35274 (cubic bisection), 2610.03729 (Schurian). [R204](Riemann/Tree/R204.lean)

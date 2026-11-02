@@ -219,5 +219,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R201 Gale's conjecture in R⁷ is open (Orca hunt); six hunts, nothing new. [R201.lean](Riemann/Tree/R201.lean)
 - R202 two computer-assisted proofs hold (2610.36417, 2610.33567); hunts clean; Fasi–Higham failures stay at k ≈ 2m + 13. [R202.lean](Riemann/Tree/R202.lean)
 - R203 newest OEIS conjectures and today's arXiv hold beyond their ranges. [R203.lean](Riemann/Tree/R203.lean)
-- R204 FRONTIER (next)
+- R204 Sun's papers, automated graph conjectures, nauty hunts: clean; Gale R⁷ hit 0.9433983 > σ₇ (Orca). [R204.lean](Riemann/Tree/R204.lean)
+- R205 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
