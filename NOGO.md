@@ -316,3 +316,4 @@
 - R202 holds: 2610.36417, 2610.33567. No counterexample: 2610.32798, 2610.34643, 2610.35779. [R202](Riemann/Tree/R202.lean)
 - R203 no counterexample: A400939, A401194, A401314, A401368, A397903; 2610.41027, 2610.41984. [R203](Riemann/Tree/R203.lean)
 - R204 no counterexample: 2609.04176 (Catalan series), 2607.16382 (zombie damage), 2610.35274 (cubic bisection), 2610.03729 (Schurian). [R204](Riemann/Tree/R204.lean)
+- R205 holds: 2610.33418. Not answered: 2610.39599, 2610.09474, 2610.37990; no counterexample: 2610.41027, 2610.37300, 2610.39705. [R205](Riemann/Tree/R205.lean)
