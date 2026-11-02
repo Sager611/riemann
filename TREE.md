@@ -212,5 +212,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R194 sixteen of Sun's newest OEIS conjectures tested beyond his ranges: all hold. [R194.lean](Riemann/Tree/R194.lean)
 - R195 novelty guard after a nine-day pause: all records stand; Moser cover and Gale R⁶ logged. [R195.lean](Riemann/Tree/R195.lean)
 - R196 November listings: a candidate counterexample to the Padé-denominator positivity conjecture of 2610.39051 (to verify); six clean tests. [R196.lean](Riemann/Tree/R196.lean)
-- R197 FRONTIER (next)
+- R197 corrects R196: the Padé counterexample is 2610.39051's own; 2610.34300's 4-cycle is certified only up to k = 147, open lead beyond. [R197.lean](Riemann/Tree/R197.lean)
+- R198 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
