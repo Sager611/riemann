@@ -309,3 +309,4 @@
 - R195 no record: covering-code table sweep (K₄(12,4) ≤ 1536 untabulated); Weil beyond 1.55 needs an out-of-core rewrite. [R195](Riemann/Tree/R195.lean)
 - R196 no counterexample: 2610.40321, 2610.28986, 2610.32158, 2610.40585, 2610.34300, 2610.40489. [R196](Riemann/Tree/R196.lean)
 - R197 not new: Fasi–Higham Conjecture 3.2 counterexamples are 2610.39051's own. No counterexample: 2610.31906, 2610.38757, 2610.34912. [R197](Riemann/Tree/R197.lean)
+- R198 no counterexample: 2610.34300 (k = 199, 259 give period 4; paper checked to 487); Fasi–Higham diagonal m ≤ 61, m = 3 to k = 20000. [R198](Riemann/Tree/R198.lean)
