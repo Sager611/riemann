@@ -217,5 +217,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R199 record leads read (Borsuk b₄ ≤ 7; average kissing numbers); five hunts, no counterexample. [R199.lean](Riemann/Tree/R199.lean)
 - R200 record finders, an audit (2610.32302 holds: ℕ ∋ 0), five hunts: nothing new. [R200.lean](Riemann/Tree/R200.lean)
 - R201 Gale's conjecture in R⁷ is open (Orca hunt); six hunts, nothing new. [R201.lean](Riemann/Tree/R201.lean)
-- R202 FRONTIER (next)
+- R202 two computer-assisted proofs hold (2610.36417, 2610.33567); hunts clean; Fasi–Higham failures stay at k ≈ 2m + 13. [R202.lean](Riemann/Tree/R202.lean)
+- R203 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
