@@ -202,3 +202,4 @@ import Riemann.Tree.R202
 import Riemann.Tree.R203
 import Riemann.Tree.R204
 import Riemann.Tree.R205
+import Riemann.Tree.R206
