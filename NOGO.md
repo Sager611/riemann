@@ -305,3 +305,5 @@
 - R190 no counterexample: 2610.28241, 2610.29551, 2610.25661, 2610.24953; OpenAI 7 Oct 2026 preprints not finitely checkable. [R190](Riemann/Tree/R190.lean)
 - R192 verified (others' results): 2610.10599 (3-SAT ≤ 4.268, exact certificate), 2610.02912 (constants); doubtful: 2610.27799; no counterexample: 2610.29197, 2610.27497, 2610.31531, 2610.23785. [R192](Riemann/Tree/R192.lean)
 - R193 no counterexample: 2610.24758, 2610.25571, 2610.27433, 2610.26409, 2610.23672, 2610.27329; known in paper: 2610.25271. [R193](Riemann/Tree/R193.lean)
+- R194 no counterexample: Sun OEIS A392732, A392775, A390118, A390107, A389789, A387043, A389517, A385678, A379654, A356976, A352632, A352503, A351617, A352356. [R194](Riemann/Tree/R194.lean)
+- R195 no record: covering-code table sweep (K₄(12,4) ≤ 1536 untabulated); Weil beyond 1.55 needs an out-of-core rewrite. [R195](Riemann/Tree/R195.lean)

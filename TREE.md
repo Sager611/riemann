@@ -209,5 +209,7 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R191 fresh October records collected as targets; record hunt on 2610.00386 started. [R191.lean](Riemann/Tree/R191.lean)
 - R192 3-SAT ≤ 4.268 certificate reproduced; μ(ζ(2)) records checked; prefix-reversal classification confirmed new. [R192.lean](Riemann/Tree/R192.lean)
 - R193 last week's listings in eight categories: nothing new; prefix-reversal classification logged in DISCOVERIES. [R193.lean](Riemann/Tree/R193.lean)
-- R194 FRONTIER (next)
+- R194 sixteen of Sun's newest OEIS conjectures tested beyond his ranges: all hold. [R194.lean](Riemann/Tree/R194.lean)
+- R195 novelty guard after a nine-day pause: all records stand; Moser cover and Gale R⁶ logged. [R195.lean](Riemann/Tree/R195.lean)
+- R196 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
