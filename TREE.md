@@ -240,5 +240,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R222 hunts clean. [R222.lean](Riemann/Tree/R222.lean)
 - R223 hunts clean; two scout flaw claims on Zenodo 23839754 rejected. [R223.lean](Riemann/Tree/R223.lean)
 - R224 OpenAI's sharp dimension-2 circle-packing certificate: no flaw found (Orca audit); hunts clean. [R224.lean](Riemann/Tree/R224.lean)
-- R225 FRONTIER (next)
+- R225 hunts clean. [R225.lean](Riemann/Tree/R225.lean)
+- R226 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
