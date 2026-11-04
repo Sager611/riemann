@@ -24,3 +24,6 @@ Gale's conjecture says no bounded set in Rⁿ is harder to cut into n+1 pieces o
 - Found by making the R⁶ simplex-product structure exactly symmetric in R³ ⊕ R⁴ and optimising its 8 parameters with SAT and LP steps (about a minute), then reading off which distances are long and proving that pattern can't be coloured. A free search in R⁷ (twins, splits) added only 4.5·10⁻⁵.
 - The excess is small (≈ 0.29/n² for large n); no asymptotic proof (not needed: exact check up to n = 1000, Borsuk beyond 64). The family fails for n = 3, 4. Nothing in Lean.
 
+
+## Correction after the novelty check (orchestrator, 4 Nov 2026)
+Borsuk counterexamples (hence Gale counterexamples) exist for every n ≥ 9 (OpenAI's Borsuk preprint, Cor. 7.1; finite ones from dimension 63, Ji 2608.12561), not only n ≥ 64; so the family is new for n ≥ 9 only as an explicit elementary alternative, and the new dimensions are 7 and 8. The two-simplex template appears as a search seed in Voronov's repository (22 Oct 2026). See NOVELTY.md.
