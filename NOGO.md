@@ -346,3 +346,4 @@
 - R232 broken: Zenodo 23646708 (93)–(95). Verified others': 2611.03572, 2609.34197, 2611.03541. No counterexample: 2611.03778, 2611.04880, 2611.01741. [R232](Riemann/Tree/R232.lean)
 - R233 verified others': 2611.04542, 2611.01104, 2610.41995; not testable: 2611.04575, 2611.05299, 2611.02760, 2601.12495; unverified: Zenodo 23905708. [R233](Riemann/Tree/R233.lean)
 - R234 rejected scout claim: 2611.04599 Lemma 7.4 (pdftotext dropped ⟨⟩). Verified others': 2611.03527, 2610.28820. No counterexample: 2611.01703, 2610.34053; not testable: 2611.03607, 2611.04699; unverified: Zenodo 23680304. [R234](Riemann/Tree/R234.lean)
+- R235 broken: Zenodo 23680304 Thm 4. Verified others': 2611.05002, 2611.01259, 2611.05183, 2611.03797. No counterexample: 2611.04540; not testable: 2611.01963, 2611.00577. [R235](Riemann/Tree/R235.lean)
