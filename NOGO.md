@@ -339,3 +339,4 @@
 - R225 verified others': 2610.32239, 2611.02544. No counterexample: 2611.03427, 2505.02767, 2611.03515, 2610.41125, 2610.39820; not testable: 2611.02301. [R225](Riemann/Tree/R225.lean)
 - R226 verified others': 2610.42005. No counterexample: 2611.04644, 2611.05254, 2609.23867, 2611.03190, 2610.35783; not testable: Zenodo 23891946, 2610.40342. [R226](Riemann/Tree/R226.lean)
 - R227 no counterexample: 2610.30583, 2611.04862, 2610.40291, 2611.03191; not testable: 2611.04730, 2611.05228, 2611.03169, Zenodo 23964169. [R227](Riemann/Tree/R227.lean)
+- R228 verified others': 2611.03933, 2611.05059, 2611.02068, 2611.04020; not testable: 2611.00459, 2611.02762; Krzyż n = 6, 7 (Zenodo 23964169) under audit. [R228](Riemann/Tree/R228.lean)
