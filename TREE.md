@@ -242,5 +242,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R224 OpenAI's sharp dimension-2 circle-packing certificate: no flaw found (Orca audit); hunts clean. [R224.lean](Riemann/Tree/R224.lean)
 - R225 hunts clean. [R225.lean](Riemann/Tree/R225.lean)
 - R226 hunts clean. [R226.lean](Riemann/Tree/R226.lean)
-- R227 FRONTIER (next)
+- R227 Gale's conjecture fails for every n ≥ 5 (explicit family, hand proof, exact checks n ≤ 1000 + Borsuk n ≥ 64); verified + reviewed; novelty pending. [R227.lean](Riemann/Tree/R227.lean)
+- R228 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
