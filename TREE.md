@@ -225,5 +225,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R207 beyond-range confirmations; withdrawn Ryser proof (audit of its successor); sofa upper bound 3.1 certified. [R207.lean](Riemann/Tree/R207.lean)
 - R208 braid B₈ needs a new method; kissing-number record targets (dims 33–39, 49–61); hunts clean. [R208.lean](Riemann/Tree/R208.lean)
 - R209 hunts clean; sofa bound 3.1 not a record (Tomar 2√2); Gale family reaches R⁹. [R209.lean](Riemann/Tree/R209.lean)
-- R210 FRONTIER (next)
+- R210 Zenodo RH proof broken at (7) (relative vs absolute error); a claimed book-Ramsey record fails; hunts clean. [R210.lean](Riemann/Tree/R210.lean)
+- R211 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
