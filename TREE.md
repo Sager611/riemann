@@ -229,5 +229,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R211 Ξ positivity audit holds (k* exact); GMR counterexample confirmed; hunts clean. [R211.lean](Riemann/Tree/R211.lean)
 - R212 OpenAI's circulant Hadamard proof: no flaw found (Orca audit); openai/math counterexample claims are the next target; hunts clean. [R212.lean](Riemann/Tree/R212.lean)
 - R213 two scout flaw claims rejected on checking; openai/math spot checks hold; hunts clean. [R213.lean](Riemann/Tree/R213.lean)
-- R214 FRONTIER (next)
+- R214 second Zenodo RH proof broken (claimed PF∞ function is not log-concave); circle-packing certificate audit queued; hunts clean. [R214.lean](Riemann/Tree/R214.lean)
+- R215 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
