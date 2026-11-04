@@ -1,0 +1,55 @@
+### python3 check_comparison.py
+(a) Z[C_9], FF*=9: 108 solutions, supports [(1, 1, 1, 1, 1, 2), (1, 2, 2), (3,)], ratio-test failures: 0
+    sample non-rational solution: (2, 1, 0, -1, 1, 0, -1, 1, 0)
+(b) Z[C_9] (p=3, e=2): 300 pairs F*K = p^e*b tested, v(F(1)) values [0, 1, 2], 235 with irrational F(rho); ratio-test failures: 0
+(b) Z[C_27] (p=3, e=3): 300 pairs F*K = p^e*b tested, v(F(1)) values [0, 1, 2, 3], 266 with irrational F(rho); ratio-test failures: 0
+(b) Z[C_25] (p=5, e=2): 300 pairs F*K = p^e*b tested, v(F(1)) values [0, 1, 2], 300 with irrational F(rho); ratio-test failures: 0
+(b) Z[C_49] (p=7, e=2): 150 pairs F*K = p^e*b tested, v(F(1)) values [0, 1, 2], 150 with irrational F(rho); ratio-test failures: 0
+(b) Z[i][C_9] (p=3, e=2): 150 pairs F*K = p^e*b tested, v(F(1)) values [0, 1, 2], 139 with irrational F(rho); ratio-test failures: 0
+(b) Z[i][C_25] (p=5, e=2): 100 pairs F*K = p^e*b tested, v(F(1)) values [0, 1, 2], 100 with irrational F(rho); ratio-test failures: 0
+(c) Z[C_3]: F = p - 2J, F F* = p^2 (exponent 2 > 1): F(1) = -3, F(rho) = 3 (const), ratio test passes: False  [expected False]
+(c) Z[C_5]: F = p - 2J, F F* = p^2 (exponent 2 > 1): F(1) = -5, F(rho) = 5 (const), ratio test passes: False  [expected False]
+(c) Z[C_7]: F = p - 2J, F F* = p^2 (exponent 2 > 1): F(1) = -7, F(rho) = 7 (const), ratio test passes: False  [expected False]
+(c) Z[C_9]: F = p^e - 2J, F F* = p^(2e) (scalar exponent 2e > e): ratio test passes: False  [expected False]
+(c) Z[C_25]: F = p^e - 2J, F F* = p^(2e) (scalar exponent 2e > e): ratio test passes: False  [expected False]
+(c) Z[C_3 x C_3]: F = 3 - 2J_H, F F* = 9: F(1) = -3, F(phi) = 3 (phi nontrivial on H): ratio = -1  [non-cyclic 3-group: the lemma's conclusion fails]
+SUMMARY comparison lemma: consistent
+exit=0
+### python3 check_alternating.py
+u=  3 N=u^2=   9 primes [3]: 16 integral rational x with xx*=u^2; Delta != 1 for 0
+u=  5 N=u^2=  25 primes [5]: 24 integral rational x with xx*=u^2; Delta != 1 for 0
+u=  9 N=u^2=  81 primes [3]: 64 integral rational x with xx*=u^2; Delta != 1 for 0
+u= 15 N=u^2= 225 primes [3, 5]: 1152 integral rational x with xx*=u^2; Delta != 1 for 0
+u= 21 N=u^2= 441 primes [3, 7]: 256 integral rational x with xx*=u^2; Delta != 1 for 0
+control u=3 N=3: 16 integral x with xx*=u^2 in Z[i][C_3]; Delta != 1 for 12  e.g. alpha={1: (0, -3), 3: (-3, 0)}, Delta = (0, -3)/(-3, 0)
+control u=5 N=5: 24 integral x with xx*=u^2 in Z[i][C_5]; Delta != 1 for 12  e.g. alpha={1: (0, -5), 5: (-5, 0)}, Delta = (0, -5)/(-5, 0)
+control u=15 N=15: 576 integral x with xx*=u^2 in Z[i][C_15]; Delta != 1 for 384  e.g. alpha={1: (0, -15), 3: (-15, 0), 5: (-15, 0), 15: (-15, 0)}, Delta = (0, 225)/(225, 0)
+control u=15 N=45: 1152 integral x with xx*=u^2 in Z[i][C_45]; Delta != 1 for 0  
+SUMMARY alternating products: consistent
+exit=0
+### python3 check_binary.py
+(1) order 4, row (1,1,1,-1): c=1, d=1, g=0+1i  -> R = 1/1, W = g/c = i (order 4, even): paper's Remark reproduced; hh*=4: True
+(2) random sign arrays on C_4 x C_9 (u=3): 128 with all values 2-units; identity lambda_2(R)+lambda_(1+i)(W) = u^2/c holds in 128/128; R=W=1 in 0; membership failures 0
+(2) random sign arrays on C_4 x C_25 (u=5): 62 with all values 2-units; identity lambda_2(R)+lambda_(1+i)(W) = u^2/c holds in 62/62; R=W=1 in 0; membership failures 0
+(2) random sign arrays on C_4 x C_81 (u=9): 39 with all values 2-units; identity lambda_2(R)+lambda_(1+i)(W) = u^2/c holds in 39/39; R=W=1 in 0; membership failures 0
+(2') n = 4u^2 = 36 (u=3, I=[3], residue field F_2^2, 1 primes over 2): 110 random sign arrays with all 3*2^|I| values 2-units; identity holds 110/110; R=W=1: 0; membership failures: 0
+(2') n = 4u^2 = 100 (u=5, I=[5], residue field F_2^4, 1 primes over 2): 65 random sign arrays with all 3*2^|I| values 2-units; identity holds 65/65; R=W=1: 0; membership failures: 0
+(2') n = 4u^2 = 196 (u=7, I=[7], residue field F_2^3, 2 primes over 2): 42 random sign arrays with all 3*2^|I| values 2-units; identity holds 42/42; R=W=1: 0; membership failures: 0
+(2') n = 4u^2 = 324 (u=9, I=[3], residue field F_2^2, 1 primes over 2): 43 random sign arrays with all 3*2^|I| values 2-units; identity holds 43/43; R=W=1: 0; membership failures: 0
+(2') n = 4u^2 = 900 (u=15, I=[3, 5], residue field F_2^4, 2 primes over 2): 21 random sign arrays with all 3*2^|I| values 2-units; identity holds 21/21; R=W=1: 0; membership failures: 0
+(3) near miss: D in C_4 x C_3^2, |D| = 15, all 35 periodic autocorrelations zero: True  (a 12x3 perfect binary array; P = C_3^2 is NOT cyclic)
+    c c* = d d* = g g* = 9: True
+    chi with chi(e) = rho^(1a+0b): c(chi)/c(1) = -3/3, d: 3/3, g: (0, -3)/(0, 3); identity holds: True, R=1: False, W=1: True
+    chi with chi(e) = rho^(0a+1b): c(chi)/c(1) = -3/3, d: -3/3, g: (-3, 0)/(0, 3); identity holds: True, R=1: True, W=1: False
+    chi with chi(e) = rho^(1a+1b): c(chi)/c(1) = 3/3, d: -3/3, g: (0, -3)/(0, 3); identity holds: True, R=1: False, W=1: False
+    chi with chi(e) = rho^(1a+2b): c(chi)/c(1) = -3/3, d: -3/3, g: (3, 0)/(0, 3); identity holds: True, R=1: True, W=1: False
+SUMMARY binary identity: consistent
+exit=0
+### python3 check_barker.py
+(1) paper's Barker table rows are Barker: True
+(2) Barker sequences (first entry +1) by length 2..20: {2: 2, 3: 2, 4: 4, 5: 2, 7: 2, 11: 2, 13: 2}
+(3) P(t) = n mod 4 for all sign sequences, n <= 16: True
+(4) even-length Barker (n > 2) rows are circulant Hadamard rows: True
+(5) circulant Hadamard rows: n=4: 8, n=16: 0
+SUMMARY barker/small orders: consistent
+exit=0
