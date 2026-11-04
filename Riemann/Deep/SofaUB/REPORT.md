@@ -1,4 +1,4 @@
-RECORD: V*(K_M) ≤ 3.1 for M > 2.2 (was 3.4083)
+NO RECORD (2026-11-04): our certified V*(K_M) ≤ 3.1 (M > 2.09) is beaten for M ≥ 2.5092, including the problem's M = 4, by Tomar's V*(K_M) ≤ 2√2 = 2.8284 (Zenodo 10.5281/zenodo.23505335, Oct 2026, Lean-checked); see NOVELTY.md. Ours is best only for 2.09 < M < 2.5092.
 
 - What: every connected body that passes through the 3D snaky corridor K_M has volume ≤ 3.0999999989, for every
   middle length M > 2.09 (so also for M > 2.2 and the problem's M = 4). Previous upper bound 3.4083 (arXiv

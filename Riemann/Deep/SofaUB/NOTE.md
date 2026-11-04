@@ -1,3 +1,5 @@
+> Status (2026-11-04): not a record for the problem (M = 4): Tomar's 2√2 (Zenodo 23505335, Lean) is smaller; see NOVELTY.md.
+
 # 3D snaky-corridor sofa: certified V*(K_M) <= 3.1 for every M > 2.09 (was 3.4083 for M > 2.2)
 
 **Statement.** Let u = fl(2.09) = 2.08999999999999985789... (a double; c = 1 + u is exact). Every compact connected
