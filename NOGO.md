@@ -319,3 +319,4 @@
 - R205 holds: 2610.33418. Not answered: 2610.39599, 2610.09474, 2610.37990; no counterexample: 2610.41027, 2610.37300, 2610.39705. [R205](Riemann/Tree/R205.lean)
 - R206 holds where tested: 2610.39120 Q1 (a ≤ 32). No counterexample: 2610.40321 (n = 11), 2610.38017, 2610.26940, 2610.39666. [R206](Riemann/Tree/R206.lean)
 - R207 consistent beyond range: 2610.38386, 2610.38237, 2610.33676, 2610.28986; 2302.08346 withdrawn already; 2610.26940 open. [R207](Riemann/Tree/R207.lean)
+- R208 no counterexample: 2611.05196, 2611.03879, 2611.03403, 2611.05154, 2611.05014; 2611.00893 example only (A₄). [R208](Riemann/Tree/R208.lean)

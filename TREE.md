@@ -223,5 +223,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R205 RH-related lead: 2610.39120 Question 1 (Robin's G at CA3 doubling steps); D-optimal order 198 holds. [R205.lean](Riemann/Tree/R205.lean)
 - R206 2610.39120 Question 1 holds for all CA3 doubling steps with a ≤ 32 (log N ≤ 6·10⁸). [R206.lean](Riemann/Tree/R206.lean)
 - R207 beyond-range confirmations; withdrawn Ryser proof (audit of its successor); sofa upper bound 3.1 certified. [R207.lean](Riemann/Tree/R207.lean)
-- R208 FRONTIER (next)
+- R208 braid B₈ needs a new method; kissing-number record targets (dims 33–39, 49–61); hunts clean. [R208.lean](Riemann/Tree/R208.lean)
+- R209 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
