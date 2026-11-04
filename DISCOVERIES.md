@@ -20,3 +20,4 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - Exactly which triples of prefix reversals generate S_n below the diagonal (m + k < n): a complete classification, refuting the conjecture of Blanco et al. [details](discoveries/prefix-reversals.md)
 - Record: a convex cover of area 0.2453479 contains a copy of every planar arc of length 1 (Moser's worm problem; was 0.2463322). [details](discoveries/moser-worm.md)
 - Record: the integer Chebyshev constant of [0, 1] is at least 0.4222355 (was 0.4222286). [details](discoveries/integer-chebyshev.md)
+- Record: kissing number in dimension 38 is at least 624020 (was 611522): a known 3-modular lattice gives a far larger equator. [details](discoveries/kissing-38.md)
