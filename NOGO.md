@@ -331,3 +331,4 @@
 - R217 no counterexample: 2611.04184, 2611.03299, 2611.02399; verified: 2611.00927; not testable: 2611.05217, 2611.03624; unverified scout reports: Zenodo 23839754 (83), 23804621 (factor 2). [R217](Riemann/Tree/R217.lean)
 - R218 audit, no flaw: openai/math 40 counterexample claims. Rejected scout claim: 2611.04436 (3/7 correct). No counterexample: 2611.05366; not testable: 2611.04869, 2611.01007, 2611.03733, 2512.11983. [R218](Riemann/Tree/R218.lean)
 - R219 no counterexample: 2611.04855, 2608.14972; not testable: Zenodo 23904867, 2611.02092, 2611.00809; unverified: 2611.05216. [R219](Riemann/Tree/R219.lean)
+- R220 no counterexample: 2610.07214, 2609.25974, Zenodo 23848597, 2508.01163; three scouts timed out. [R220](Riemann/Tree/R220.lean)
