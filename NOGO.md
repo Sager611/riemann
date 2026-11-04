@@ -327,3 +327,4 @@
 - R213 scout flaw claims rejected: Zenodo 23879511 clone step (valid), openai/math Gaussian walks PDF (correct file). Verified others': 2611.05300. Holds: openai/math Liénard, totient fibers; 2610.41569 Lean clean. No counterexample: 2611.04345, 2602.15905, 2603.29973. [R213](Riemann/Tree/R213.lean)
 - R214 broken: Zenodo 23788542 Thm 68.1 (Λ₀ not log-concave). No counterexample: 2611.04923, 2611.05060, Erdős #9 (tiny range). Leads: 2610.28547, 2610.29593, 2610.21263, 2610.39116, 2611.03763, 2611.01064. [R214](Riemann/Tree/R214.lean)
 - R215 small questions only: 2611.05162 (M₂(5,5) = 8), 2611.05321 (T(9,1) = 159, bounded periods), 2607.12873; holds: Zenodo 23957586; not testable: 2609.03755, 2611.05267, 2409.19379. [R215](Riemann/Tree/R215.lean)
+- R216 broken: Zenodo 23775116 eq. (72) (non-real eigenvalue). No counterexample: 2611.05160, 2611.05057, 2610.40367, 2509.05814, 2611.00868; not testable: 2610.41183. [R216](Riemann/Tree/R216.lean)
