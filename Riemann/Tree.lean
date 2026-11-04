@@ -230,3 +230,4 @@ import Riemann.Tree.R230
 import Riemann.Tree.R231
 import Riemann.Tree.R232
 import Riemann.Tree.R233
+import Riemann.Tree.R234
