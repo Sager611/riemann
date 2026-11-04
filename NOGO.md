@@ -334,3 +334,4 @@
 - R220 no counterexample: 2610.07214, 2609.25974, Zenodo 23848597, 2508.01163; three scouts timed out. [R220](Riemann/Tree/R220.lean)
 - R221 no counterexample: 2611.05226, 2611.01273, 2611.02249, 2611.04767, 2611.05146; not testable: 2611.02246, 2611.00997, 2610.36919. [R221](Riemann/Tree/R221.lean)
 - R222 no counterexample: 2611.04178, 2611.05015, 2611.01554, 2503.23177 (n ≤ 10⁶); not testable: 2610.32086; two scouts timed out. [R222](Riemann/Tree/R222.lean)
+- R223 rejected scout flaw claims: Zenodo 23839754 (83) and (41). Verified others': 2611.03236, 2610.34482, 2611.05261. No counterexample: 2611.04551, 2611.00397, 2611.01535. [R223](Riemann/Tree/R223.lean)
