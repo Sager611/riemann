@@ -343,3 +343,4 @@
 - R229 verified others': 2611.05046, 2611.04387. No counterexample: 2611.04297, 2610.39967, 2611.05271; minor edge case (unverified): 2611.05034; not testable: 2610.41781, 2512.24343. [R229](Riemann/Tree/R229.lean)
 - R230 verified others': 2611.03572 (Jacobian counterexample map), 2611.05043, 2611.00379; not testable: 2611.03609, Zenodo 23891944, 2611.01577, 2611.02768, 2611.04577. [R230](Riemann/Tree/R230.lean)
 - R231 rejected scout claims: 2611.02128 (whp theorem), 2611.04896 (witness supports paper). Verified others': 2611.01972. No counterexample: 2611.02572, 2611.01172, 2611.02749; not testable: A401249; unverified: Zenodo 23964711. [R231](Riemann/Tree/R231.lean)
+- R232 broken: Zenodo 23646708 (93)–(95). Verified others': 2611.03572, 2609.34197, 2611.03541. No counterexample: 2611.03778, 2611.04880, 2611.01741. [R232](Riemann/Tree/R232.lean)
