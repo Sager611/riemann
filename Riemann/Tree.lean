@@ -222,3 +222,4 @@ import Riemann.Tree.R222
 import Riemann.Tree.R223
 import Riemann.Tree.R224
 import Riemann.Tree.R225
+import Riemann.Tree.R226
