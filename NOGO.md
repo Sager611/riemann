@@ -335,3 +335,4 @@
 - R221 no counterexample: 2611.05226, 2611.01273, 2611.02249, 2611.04767, 2611.05146; not testable: 2611.02246, 2611.00997, 2610.36919. [R221](Riemann/Tree/R221.lean)
 - R222 no counterexample: 2611.04178, 2611.05015, 2611.01554, 2503.23177 (n ≤ 10⁶); not testable: 2610.32086; two scouts timed out. [R222](Riemann/Tree/R222.lean)
 - R223 rejected scout flaw claims: Zenodo 23839754 (83) and (41). Verified others': 2611.03236, 2610.34482, 2611.05261. No counterexample: 2611.04551, 2611.00397, 2611.01535. [R223](Riemann/Tree/R223.lean)
+- R224 audit, no flaw: openai/math planar circle-packing certificate. No counterexample: 2611.04773, 2611.05090, 2611.03151, 2611.04691, 2611.01068; not testable: 2611.01503, 2610.38894; unverified: Zenodo 23925447. [R224](Riemann/Tree/R224.lean)
