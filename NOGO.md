@@ -329,3 +329,4 @@
 - R215 small questions only: 2611.05162 (M₂(5,5) = 8), 2611.05321 (T(9,1) = 159, bounded periods), 2607.12873; holds: Zenodo 23957586; not testable: 2609.03755, 2611.05267, 2409.19379. [R215](Riemann/Tree/R215.lean)
 - R216 broken: Zenodo 23775116 eq. (72) (non-real eigenvalue). No counterexample: 2611.05160, 2611.05057, 2610.40367, 2509.05814, 2611.00868; not testable: 2610.41183. [R216](Riemann/Tree/R216.lean)
 - R217 no counterexample: 2611.04184, 2611.03299, 2611.02399; verified: 2611.00927; not testable: 2611.05217, 2611.03624; unverified scout reports: Zenodo 23839754 (83), 23804621 (factor 2). [R217](Riemann/Tree/R217.lean)
+- R218 audit, no flaw: openai/math 40 counterexample claims. Rejected scout claim: 2611.04436 (3/7 correct). No counterexample: 2611.05366; not testable: 2611.04869, 2611.01007, 2611.03733, 2512.11983. [R218](Riemann/Tree/R218.lean)
