@@ -1,0 +1,20 @@
+NEW: the m = 3 theorem (c_n(k,3) > 0 for every k, n) is in no source found; the diagonal (odd m ≤ 201) and k_min data are KNOWN: Goodchild, Zenodo 23919117, 3 Nov 2026 (diagonal to m = 361, k*(9) = 42, k* = 2m + 12..14).
+
+Adversarial check by fhnov, 2026-11-04. Full texts read unless marked.
+
+## m = 3, every k: no earlier proof
+- Source: Fasi–Higham, MIMS EPrint 2018.36 (deposited 25 Nov 2018: "For odd m, all the coefficients of the series expansion of q_km(z)^{-1} at 0 are positive"; 19 Mar 2019 version: "Let k, m ∈ N. If m is odd, then …"), SIAM J. Matrix Anal. Appl. 40 (2019) 1233–1256, Conj. 3.2. https://eprints.maths.manchester.ac.uk/2721/ , https://doi.org/10.1137/18M1228876 . Evidence only, no case proved; m = 2 lies outside it (even; their 1/q_22 has −z⁶/1728).
+- Fasi, PhD thesis, Manchester 2019, Conj. 5.2 (https://pure.manchester.ac.uk/ws/portalfiles/portal/110279442/FULL_TEXT.PDF): factorization and Faà di Bruno attempts, "none of them led us to a proof".
+- Scardino, arXiv 2610.39051 (only v1, 28 Oct 2026; TeX https://arxiv.org/e-print/2610.39051): k = 0 for all odd m, m = 1 "immediate", D1 and eventual positivity for fixed odd m ≥ 3 and large k, counterexamples for m = 5, 7, 9. No m = 3 statement, no Ψ₃; cites no other work on the conjecture.
+- Goodchild, Zenodo 23919117 (v1, 3 Nov 2026, AI-assisted, https://zenodo.org/records/23919117 ; repo https://github.com/JacobGoodchild/findformula3 results/pade_positivity, last push 3 Nov): m = 3 only numerical, "no negative coefficient for any k < 1500 (checking n ≤ 4k + 200)".
+- Status pages list it open, nothing on m = 3: MathWorld https://mathworld.wolfram.com/Fasi-HighamPositivityConjecture.html ; MathDB #414209 (https://mathdb.com/p/414209 , "Open", 0 solutions); Marino, MSc thesis Pisa, Oct 2026 (https://etd.adm.unipi.it/theses/available/etd-09042026-154051/unrestricted/main.pdf): "remains unproven".
+- Classical: absolute monotonicity of Padé approximants (van de Griend–Kraaijevanger, Numer. Math. 49 (1986), paywalled, seen through Lóczi–Ketcheson arXiv 1303.6651 §2.2, §4.1) concerns p/q, not 1/q, and only k = m = 3 (same residue-vs-dominant-pole comparison, at a shifted point). Saff–Varga, Driver–Temme: zero location only. Kaluza needs positive log-convex coefficients (q alternates). No criterion covering all k.
+- No further hit: OpenAlex citing works of Fasi–Higham (30), Semantic Scholar (32, with contexts); arXiv API (abs:Fasi AND abs:Higham; Padé with positivity / reciprocal / Taylor coefficients / denominator; reverse Bessel); listings math.CA, math.NA, math.CV for 2026-10 and 2026-11, plus API date queries 28 Oct–5 Nov; Zenodo (Fasi AND Higham …: only 23919117); evidence API (2 claims); MathOverflow, Math.SE; Exa web search; openai/math and atlas-lean trees. GitHub code search does not index the new repos yet (no signal). Riemann/Deep: no other NOVELTY.md mentions Fasi.
+
+## Diagonal and k_min: KNOWN
+- Goodchild Thm 4.2: c_n(m,m) > 0 for all n, every odd 3 ≤ m ≤ 361 (Arb: isolated zeros, dominant positive zero, residue bound N0, ball series inversion; N0 = 372 888 at m = 361). Same method as ours; supersedes our m ≤ 201.
+- Goodchild §4.4: k*(5) = 66, k*(7) = 44, k*(9) = 42 (n = 41), "a smaller counterexample than his (45, 9, 42)", k*(19) = 54; k* − 2m ∈ {12, 13, 14} for sampled 109 ≤ m ≤ 1009; first negative near n = k + m − 3. Their k* assume contiguity in k and check only n ≤ 5k + 300. Every value they list for m ≤ 101 (5, 7, 9, 19, 29, …, 99) agrees with our table, first negative index included where given.
+- Timing: our pushed public commit R202 (2 Nov 21:56 UTC, k_min ≈ 2m + 13 for odd m ≤ 41) and Goodchild's first k* commit (2 Nov 22:25 UTC) are simultaneous and independent; the first citable record is Goodchild's Zenodo, 3 Nov.
+- Still ours, incremental: exact k_min for EVERY odd m ≤ 101 with all-n certification of every k < k_min (whole columns), and the saddle-point heuristic σ*(τ).
+
+Verdict: only the m = 3 theorem may go to DISCOVERIES.md (modest: elementary cubic proof, tight to 1/(3(k+1)), first odd case settled for all k). Diagonal and k_min items: cite Goodchild; corollary level at most.
