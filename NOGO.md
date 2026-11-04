@@ -333,3 +333,4 @@
 - R219 no counterexample: 2611.04855, 2608.14972; not testable: Zenodo 23904867, 2611.02092, 2611.00809; unverified: 2611.05216. [R219](Riemann/Tree/R219.lean)
 - R220 no counterexample: 2610.07214, 2609.25974, Zenodo 23848597, 2508.01163; three scouts timed out. [R220](Riemann/Tree/R220.lean)
 - R221 no counterexample: 2611.05226, 2611.01273, 2611.02249, 2611.04767, 2611.05146; not testable: 2611.02246, 2611.00997, 2610.36919. [R221](Riemann/Tree/R221.lean)
+- R222 no counterexample: 2611.04178, 2611.05015, 2611.01554, 2503.23177 (n ≤ 10⁶); not testable: 2610.32086; two scouts timed out. [R222](Riemann/Tree/R222.lean)

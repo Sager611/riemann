@@ -237,5 +237,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R219 hunts clean; covering-design and kissing-table leads. [R219.lean](Riemann/Tree/R219.lean)
 - R220 hunts clean; 28D kissing package structure noted for kiss2. [R220.lean](Riemann/Tree/R220.lean)
 - R221 hunts in numerical analysis, dynamics, algebraic geometry, spectral theory: clean. [R221.lean](Riemann/Tree/R221.lean)
-- R222 FRONTIER (next)
+- R222 hunts clean. [R222.lean](Riemann/Tree/R222.lean)
+- R223 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
