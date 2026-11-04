@@ -254,5 +254,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R236 hunts clean. [R236.lean](Riemann/Tree/R236.lean)
 - R237 arXiv 2611.03878: ξ(K₆) ≥ 31 false as proved (two-coloured K₆ in its K₃₁ colouring); hunts clean. [R237.lean](Riemann/Tree/R237.lean)
 - R238 hunts clean; newest listings exhausted. [R238.lean](Riemann/Tree/R238.lean)
-- R239 FRONTIER (next)
+- R239 October hunts clean. [R239.lean](Riemann/Tree/R239.lean)
+- R240 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.

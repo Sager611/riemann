@@ -350,3 +350,4 @@
 - R236 verified others': 2611.03096, 2611.04851, 2611.03208, 2610.39026, 2611.05000; not testable: 2508.05347; unverified: Zenodo 23609234. [R236](Riemann/Tree/R236.lean)
 - R237 broken: 2611.03878 Thm 3.2 (K₃₁ colouring has two-coloured K₆; K₁₉ part fine). Verified others': 2610.41555, 2611.02454, 2611.04952, 2610.39856; not testable: 2611.04210, 2611.03515. [R237](Riemann/Tree/R237.lean)
 - R238 no counterexample: 2610.36522, 2606.02468; not testable: 2610.12819, 2611.04514, 2611.03192, Zenodo 23904867. [R238](Riemann/Tree/R238.lean)
+- R239 verified others': 2610.20408, 2610.42094, 2610.37512; no counterexample: 2610.26878, 2610.27706, 2610.19464, 2610.39966; not testable: Zenodo 23753685. [R239](Riemann/Tree/R239.lean)
