@@ -352,3 +352,4 @@
 - R238 no counterexample: 2610.36522, 2606.02468; not testable: 2610.12819, 2611.04514, 2611.03192, Zenodo 23904867. [R238](Riemann/Tree/R238.lean)
 - R239 verified others': 2610.20408, 2610.42094, 2610.37512; no counterexample: 2610.26878, 2610.27706, 2610.19464, 2610.39966; not testable: Zenodo 23753685. [R239](Riemann/Tree/R239.lean)
 - R240 rejected scout claim: 2610.23853 (Kraetzer's conjecture misread as the paper's claim). Verified others': 2610.32000, 2610.31362, 2610.32879, 2610.37207, 2610.40863; not testable: 2610.23626, 2610.19585. [R240](Riemann/Tree/R240.lean)
+- R241 audit, no flaw: OpenAI SSNC, Saxl, tensor squares, Hill, Zarankiewicz. Rejected scout claims: 2609.15133, 2609.24239. Verified others': 2609.00583, 2610.28541, 2609.14526, 2609.37774; not testable: 2609.37459, Zenodo 23848597. [R241](Riemann/Tree/R241.lean)

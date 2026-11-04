@@ -1,0 +1,32 @@
+Key output lines of the audit scripts (single-threaded runs, Nov 2026)
+
+== Seymour second-neighbourhood paper
+seymour_pruning exh 3 : instances=134217728 with_conflict=121380583 bound_fail=0 bound_tight=39435649 konig_fail=0   (all 512 relations on 3 points incl. loops, all R, C)
+seymour_pruning exh 2 : instances=4096 with_conflict=2223 bound_fail=0 konig_fail=0 exact_fail=0 exact_tight=1483
+seymour_pruning exact 3 200000 : with_conflict=139378 bound_fail=0 konig_fail=0 exact_fail=0 (exact optimum = |H| exactly when nu = |Z|+|H|)
+seymour_pruning rnd 4/5/6 : 2,000,000 / 1,000,000 / 300,000 instances, bound_fail=0 konig_fail=0
+seymour_graphs n<=7 (2142288 oriented graphs, 1057492 with all indegrees > 0): ssnc_fail=0 concavity_graphs=0 deficit_graphs=0 best_min_slack=0
+seymour_extremal exh n=3,4 : all compatible pairs and all 7044 maximisers: C1..C6 fail=0 (7603 pairs with negative summed defect, all strictly improved by pruning)
+seymour_extremal rnd n=5 : 3,040,000 pairs, n=6 : 3,252,800 pairs: C1..C5 fail=0, strictImproveFail=0
+seymour_reduction.py seed 1: 277307 subset-deficit steps, 98310 blow-up instances: (a)-(j) hold
+
+== Saxl paper
+saxl_kron.py: g(rho_m,rho_m,lam) >= 1 for every lam |- N_m, m<=8 (N=36, 17977 partitions)
+saxl_band.py: unique high set B_h (2<=m<=9, s=1,2); P_s(w_m) = w~_h (x) u_{m,s} with signs (-1)^{ab}, product 1 (m<=5);
+              path contraction + u = (-1)^(m-1) u_{m,2} (m=3..7); segment table and Example 5.4;
+              nonzero pairing <u,t_N> for every eta |- 2m-1 with <=4 rows (m=3..8, brute-force expansion); Q(v_R (x) v_R) (m<=4)
+saxl_cyclic.py S1: W_m contains all irreducibles, m=1..4 (W_4: 42/42, S_10 enumerated)
+saxl_cyclic.py S2: U_(3,2), U_(4,2), U_(5,2) contain exactly the shapes with <=4 rows (6/7, 11/15, 18/30)
+
+== Universal tensor squares paper
+saxl_cyclic.py S3: odd path tensor, k=1,3,5,7,9: all shapes with <=4 rows present
+saxl_cyclic.py S4: one extra copy E=(b+delta,b), |E|<=9: every claimed shape present (more shapes present than claimed)
+uts_comb.py U1 candidate (n<=30000) U2 rectangle (n<=26, 6083673 triples) U3 large-M (22<=M<=2000) U4 intermediate (177 pairs, 2832 assertions; failing pairs = exactly the 19 listed)
+            U5 balance packing (9<=M<=400) + Young inequalities (96295 profiles, 9<=M<=16) U6 odd strip U7 two-path Pieri step U8 two-extra splits + LR positivity: all pass
+uts_finite.py n<=24: degrees without a universal self-conjugate square = [2, 4, 9]
+
+== Hill (complete graphs) and Zarankiewicz (complete bipartite) papers
+kn_check.py: Lemmas 3.2/3.3 (s<=5); cycle pairing, injectivity (rank C(s,2)^2), isotropy on straight and bent drawings of K_5, K_7, K_9;
+             hill-climb over bent normalized drawings: min |T|/2 = 1, 9, 36 = Z(n), never below
+kmn_check.py: subspace bound exhaustive (Q^2, m<=5; Q^3, m<=3) and hill-climb (Q^3, Q^4, m<=5): max = bound, never above;
+              detector (i)-(iii) s<=4; K_(3,5), K_(4,5), K_(5,5), K_(3,7): additive relation, ranks, rank sum; climb min |T|/2 = d_m d_n
