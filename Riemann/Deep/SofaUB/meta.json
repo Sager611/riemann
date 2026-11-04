@@ -1,0 +1,20 @@
+{
+ "problem": "3D snaky-corridor moving sofa (Problem 6.64 of arXiv:2511.02864), upper bound via the event-forced tube family of arXiv:2610.14050 (Prop. 6.1)",
+ "u": 2.09,
+ "u_exact_double": "2.0899999999999998578914528479799628257751464843750",
+ "target": 3.1,
+ "ya": 0.75,
+ "grid": [
+  16,
+  8,
+  4,
+  4
+ ],
+ "grid_meaning": "nkx, nkz, nt, nx: root boxes = kx-cells x kz-cells x t-cells x X1-cells x X2-cells",
+ "nodes": 32247596,
+ "leaves": 16127894,
+ "max_leaf_bound": 3.099999998842,
+ "codes_sha256": "3f888cf6eb3289ba310d08cec467a821c11fd707bc36fcd9ab2c4410017fd835",
+ "codes_format": "one byte per node in depth-first preorder over the root boxes (root index order: kx slowest, then kz, t, X1, X2 fastest; child order: lower half first); 0 = leaf, d+1 = split at the midpoint of dimension d (0 kx, 1 kz, 2 t, 3 X1, 4 X2)",
+ "n_sample": 300
+}
