@@ -322,3 +322,4 @@
 - R208 no counterexample: 2611.05196, 2611.03879, 2611.03403, 2611.05154, 2611.05014; 2611.00893 example only (A₄). [R208](Riemann/Tree/R208.lean)
 - R209 not a record: SofaUB 3.1 (Tomar 2√2 for M ≥ 2+√2). No counterexample: 2611.01282, 2611.03879, 2610.04948, 2611.03906, 2611.03991. [R209](Riemann/Tree/R209.lean)
 - R210 broken: Zenodo 23960915 at (7). Not a record: circulant for R(B63,B64) (complement has B93). No counterexample: 2611.03057, 2611.05178, 2611.02944, 2611.04530, 2611.05363, A401070; not testable: 2611.02063, 2611.00251. [R210](Riemann/Tree/R210.lean)
+- R211 holds: 2611.02944 (k* exact). Verified others' counterexample: 2611.00156. No counterexample: 2611.02191, 2610.36483, 2611.05137, openai/math Hodge-powers Prop. 5.2; not testable: 2607.21517, 2610.37420, 2611.01711. [R211](Riemann/Tree/R211.lean)
