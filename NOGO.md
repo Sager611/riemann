@@ -348,3 +348,4 @@
 - R234 rejected scout claim: 2611.04599 Lemma 7.4 (pdftotext dropped ⟨⟩). Verified others': 2611.03527, 2610.28820. No counterexample: 2611.01703, 2610.34053; not testable: 2611.03607, 2611.04699; unverified: Zenodo 23680304. [R234](Riemann/Tree/R234.lean)
 - R235 broken: Zenodo 23680304 Thm 4. Verified others': 2611.05002, 2611.01259, 2611.05183, 2611.03797. No counterexample: 2611.04540; not testable: 2611.01963, 2611.00577. [R235](Riemann/Tree/R235.lean)
 - R236 verified others': 2611.03096, 2611.04851, 2611.03208, 2610.39026, 2611.05000; not testable: 2508.05347; unverified: Zenodo 23609234. [R236](Riemann/Tree/R236.lean)
+- R237 broken: 2611.03878 Thm 3.2 (K₃₁ colouring has two-coloured K₆; K₁₉ part fine). Verified others': 2610.41555, 2611.02454, 2611.04952, 2610.39856; not testable: 2611.04210, 2611.03515. [R237](Riemann/Tree/R237.lean)
