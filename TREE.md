@@ -385,5 +385,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R349 node N13 round 6: no spectral realization; 2402.13082's statements need RH, not the half-plane; no new Zenodo operator claims [R349.lean](Riemann/Tree/R349.lean)
 - R350 node N5 round 7: the Moebius series of 2611.03924 converges in H^2(C_alpha) for every alpha > B (routine; the paper had alpha > 1); s_n(alpha) law n^{1-2alpha} rechecked; number-field L^p criterion open [R350.lean](Riemann/Tree/R350.lean)
 - R351 node N12 round 6: classification and density records stand; degree-2 half-planes only for CM/dihedral inductions (2610.00216), generic GL(2) open; maximal-curve count rechecked [R351.lean](Riemann/Tree/R351.lean)
-- R352 FRONTIER (next)
+- R352 node N10 round 6: first explicit power-saving Mertens bound (mertens78, DISCOVERIES) stands as new; explicit Liouville and Moebius-mean power savings (routine) [R352.lean](Riemann/Tree/R352.lean)
+- R353 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
