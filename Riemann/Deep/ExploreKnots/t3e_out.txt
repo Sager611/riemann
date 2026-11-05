@@ -1,0 +1,3 @@
+coefficients: (-0.5-0j) (-0.5-0j)  conjugate pair: True  odd: True
+root number eps = (0.525731112119-0.850650808352j) |eps| = 1.0
+Poincare H_minus zero (0.604987666972022 + 19.7461969162445j) |value| 1.26e-44

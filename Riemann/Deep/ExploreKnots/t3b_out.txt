@@ -1,0 +1,14 @@
+psi20(3) = 1j  root number eps = (0.85065080835204+0.5257311121191334j)  |eps| = 0.9999999999999999  tan(arg eps) = 0.6180339887498945  1/golden = 0.6180339887498949
+T(2,5) periodic fn equals Im psi20: True
+EM check: 1.7610251087506115e-14
+C2_T25_H_minus arg-principle count in [0.51,2.6]x[0.5,60]: 10.0
+B_T25_Im_psi20 arg-principle count in [0.51,2.6]x[0.5,60]: 17.0
+D_T34 arg-principle count in [0.51,2.6]x[0.5,60]: 16.0
+E_T27 arg-principle count in [0.51,2.6]x[0.5,60]: 12.0
+G_plus: 2 zeros with Re s > 1/2 for t < 400; first: [(0.6524004144, 122.84672476), (0.5897221094, 374.87624634)] [62s]
+G_plus arg-principle count in [0.51,2.6]x[0.5,123.8]: 1.0
+C2_T25_H_minus: zero (1.195270648642 + 5.53931464311642j)  |value| 6.19e-45
+B_T25_Im_psi20: zero (0.838544451284974 + 8.29214600054949j)  |value| 0.0
+D_T34: zero (0.986306813310765 + 6.98229592160686j)  |value| 1.09e-45
+E_T27: zero (0.820173484808779 + 9.76668958010292j)  |value| 4.4e-45
+C_T25_G_plus: zero (0.65240041440672 + 122.846724764454j)  |value| 2.82e-44
