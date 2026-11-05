@@ -273,5 +273,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R255 Wang-Sun 2210.12044 Conj. 1.1 (L) / OEIS A357130 Conj. 2(ii) fails: A_1 = A_3 = {0,1,2}, A_2 = {0,2} (candidate); hunts clean [R255.lean](Riemann/Tree/R255.lean)
 - R256 Sun OEIS A229827 Conj. (ii) fails: A = {0,1,2}, P(x) = 2x (candidate); Wang-Sun 2210.12044 reviewer CORRECT; hunts clean [R256.lean](Riemann/Tree/R256.lean)
 - R257 Sun OEIS A229827(i) fails for Frobenius in F_8 (x^2, x^4) and F_9 (x^3) (candidate); A229827(ii) known (Sun's remark) [R257.lean](Riemann/Tree/R257.lean)
-- R258 FRONTIER (next)
+- R258 Frobenius hunt: only known exceptions (A229910 q = 25); false step in Zenodo 23909592 (Collatz permutation) [R258.lean](Riemann/Tree/R258.lean)
+- R259 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
