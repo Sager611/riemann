@@ -321,5 +321,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R285 node N13: newest operator claims are function-field (2610.41115) or RH-conditional (2609.04908); nothing new [R285.lean](Riemann/Tree/R285.lean)
 - R286 node N10: explicit 7/8 consequence known (Fiori-Jaskari 2609.23222); RH height 3*10^12 still the record [R286.lean](Riemann/Tree/R286.lean)
 - R287 node N8: 67.354% (2610.08965) re-checked and reproduced; pair-correlation method, inputs unconditional; nothing beyond [R287.lean](Riemann/Tree/R287.lean)
-- R288 FRONTIER (next)
+- R288 node N2: 0.13963 still best; Lambda(theta) table: 0.13958 / 0.13941 / 0.13924 for the newer (unrefereed) half-planes, pending re-run [R288.lean](Riemann/Tree/R288.lean)
+- R289 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
