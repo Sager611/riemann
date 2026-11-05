@@ -382,5 +382,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R346 node N3 round 5: Li records stand; Dedekind zeta of abelian fields lambda_n > 0 for n <= 26.12 (10^8/f)^2 (routine); Chung's claimed RH proof: Section 6 step valid in form, flaw open [R346.lean](Riemann/Tree/R346.lean)
 - R347 node N2 round 6: Lambda <= 0.107559925318 stands; HB's 11/12 table obsolete; zero density cannot beat the strip bound 2a^2 without RH to a height [R347.lean](Riemann/Tree/R347.lean)
 - R348 node N7 round 6: B_2 + 2.2e-254 stands; the half-plane mu line gives no large-value gain at s0 = 1/2, but moment interpolation with Lindelof on Re s = B may lower A(sigma) below B (candidate densityB) [R348.lean](Riemann/Tree/R348.lean)
-- R349 FRONTIER (next)
+- R349 node N13 round 6: no spectral realization; 2402.13082's statements need RH, not the half-plane; no new Zenodo operator claims [R349.lean](Riemann/Tree/R349.lean)
+- R350 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
