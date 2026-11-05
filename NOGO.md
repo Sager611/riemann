@@ -396,3 +396,4 @@
 - R279 N7: our recorded R_0 = 5.558691 was outdated (4.896, 2603.21490); a_1/a_0 of cosine polynomials alone does not improve R_0; Liu 2610.26835 arithmetic reproduced [R279](Riemann/Tree/R279.lean)
 - R280 N9: no 2026 improvement of 13/84; convexity from the 7/8 half-plane is routine (COROLLARIES), not a discovery [R280](Riemann/Tree/R280.lean)
 - R281 N11: no Oct-Nov 2026 claim beyond the record; explicit L(1,chi) bounds hold for D <= 2*10^5; family averaging needs uniform conductor errors [R281](Riemann/Tree/R281.lean)
+- R282 N3: no extension of the 10^5 range found; Zenodo 23884485 is not a proof; Lorentzian Hessians cannot certify Weil PSD alone [R282](Riemann/Tree/R282.lean)
