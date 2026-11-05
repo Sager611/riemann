@@ -1,0 +1,57 @@
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreMobius/t1_analyze.py:36: RuntimeWarning: Mean of empty slice
+  print("%2d %9d   %.3f (%d classes)              %.3f (%d classes)                                   %.4f" % (L, M, math.sqrt((z**2).mean()), sel.sum(), math.sqrt((z2**2).mean()), sel2.sum(), abs(M) / 2**(L/2)))
+/Users/adriansager/.cache/uv/archive-v0/UTEvaJF4Vk-CIGAIBp5iE/lib/python3.12/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+# Test A: S_f(y) = sum_(n<=y) mu(n) f(n), y < N = 2^27 = 134217728
+# m(K) = max_{2^K <= y < 2^(K+1)} |S_f(y)|; slope = least-squares d log2 m / dK over K = 12..26
+f                  slope  slope2 | m(K)/2^(K/2) for K = 14, 17, 20, 23, 25, 26
+mertens            0.508   0.517 |  0.570  0.425  0.537  0.500  0.491  0.563
+liouville          0.498   0.500 |  1.453  1.566  1.701  1.684  1.408  1.530
+rot_golden         0.459   0.350 |  0.741  1.248  1.559  0.632  0.740  0.670
+rot_sqrt2          0.498   0.527 |  1.604  1.285  1.214  1.231  1.446  1.741
+quad_n2sqrt2       0.519   0.562 |  1.599  1.398  1.710  1.538  1.299  1.400
+bracket_heis       0.604   0.483 |  0.590  2.017  1.648  2.036  1.706  1.481
+thue_morse         0.455   0.354 |  1.211  2.099  1.500  0.554  0.672  0.652
+rudin_shapiro      0.505   0.448 |  1.055  1.215  0.928  0.926  0.888  1.052
+digit_0.1          0.530   0.570 |  0.770  0.740  0.977  1.012  0.922  0.959
+sturmian_golden    0.514   0.474 |  0.238  0.521  0.657  0.397  0.459  0.608
+random_pm1         0.434   0.559 |  2.438  2.978  0.565  1.314  1.542  1.023
+
+# T1: digit-sum family; c_k(L) = sum_{n<2^L, s_2(n)=k} mu(n); F(alpha) = sum_k c_k e(k alpha); M = F(0)
+L   M(2^L)   rms z_k naive (6/pi^2*#class)   rms z_k exact-model (8/pi^2*#odd top-half class)   |M|/sqrt(2^L)
+14       -32   0.430 (7 classes)              nan (0 classes)                                   0.2500
+15        26   0.406 (8 classes)              0.907 (4 classes)                                   0.1436
+16        14   0.634 (9 classes)              0.864 (7 classes)                                   0.0547
+17       -20   0.399 (10 classes)              0.710 (8 classes)                                   0.0552
+18        24   0.590 (11 classes)              0.991 (9 classes)                                   0.0469
+19      -125   0.493 (12 classes)              0.719 (10 classes)                                   0.1726
+20       257   0.533 (15 classes)              1.036 (11 classes)                                   0.2510
+21      -362   0.498 (16 classes)              0.766 (12 classes)                                   0.2500
+22       228   0.429 (17 classes)              0.642 (15 classes)                                   0.1113
+23       -10   0.579 (18 classes)              0.827 (16 classes)                                   0.0035
+24       211   0.573 (19 classes)              0.951 (17 classes)                                   0.0515
+25     -1042   0.537 (20 classes)              0.896 (18 classes)                                   0.1799
+26       329   0.635 (21 classes)              0.968 (19 classes)                                   0.0402
+27       330   0.683 (22 classes)              1.059 (20 classes)                                   0.0285
+
+# x = 2^27: M = 330, Theta_true = log|M|/log x = 0.3099
+# check: P = (1+z)^L must give equality in the two-constants bound (harmonic measure); slack of the sup form = log2(1+sin pi d)
+delta   G/ln2   c(d)=-log2cos   slack  | (1+z)^L: lhs/L  2const/L  sup/L | mu: Theta_2const Theta_sup | M-part only | random model Theta_true Theta_2c
+0.002  0.0091  0.0000   0.0090  |  1.0000  1.0000  1.0090 |  0.3327  0.5033  |  0.3099  |  0.4808  0.4889
+0.005  0.0227  0.0002   0.0225  |  1.0000  1.0000  1.0225 |  0.3655  0.5169  |  0.3099  |  0.4808  0.5011
+0.010  0.0453  0.0007   0.0446  |  1.0000  1.0000  1.0446 |  0.4141  0.5395  |  0.3099  |  0.4808  0.5214
+0.020  0.0907  0.0028   0.0879  |  1.0000  1.0000  1.0879 |  0.4937  0.5849  |  0.3099  |  0.4808  0.5621
+0.050  0.2276  0.0179   0.2097  |  1.0000  1.0000  1.2097 |  0.6745  0.7217  |  0.3099  |  0.4808  0.6847
+0.100  0.4609  0.0724   0.3885  |  1.0000  1.0000  1.3885 |  0.9203  0.9551  |  0.3099  |  0.4808  0.8980
+0.200  0.9728  0.3058   0.6670  |  1.0000  1.0000  1.6670 |  1.4191  1.4670  |  0.3099  |  0.4808  1.4175
+0.300  1.6218  0.7666   0.8552  |  1.0000  1.0000  1.8552 |  2.0951  2.1160  |  0.3099  |  0.4808  2.0657
+
+# To beat B_2 = 0.8733819666: sup form needs sigma(d) > (1-B_2) + c(d) + log2(1+sin pi d); two-constants form needs
+#   int_A (sigma - c) d omega_1 > 1 - B_2 = 0.12662, where sigma(alpha) is the proven saving exponent and c(alpha) = -log2|cos pi alpha|.
+delta  sup-form needed sigma(d)   frequency-0 value c(d)   proven-method cap (= c(d), Type I term m = 1)
+0.01   0.1719                     0.0007                   0.0007
+0.05   0.3542                     0.0179                   0.0179
+0.10   0.5875                     0.0724                   0.0724
+0.20   1.0994                     0.3058                   0.3058
+0.30   1.7485                     0.7666                   0.7666
+0.40   2.7851                     1.6942                   1.6942
