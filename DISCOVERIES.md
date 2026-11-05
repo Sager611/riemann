@@ -11,7 +11,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N11) Sato–Tate in every ideal class of Q(√D), for almost all D: e.g. every class has primes with a_f(p) > 0 and with a_f(p) < 0 below |D|^{2.04}. [details](discoveries/sato-tate-classes.md)
 - (N11) Least primes in every ideal class of almost all CM fields: below d_K^{1+ε} (known for every field: d_K^{694}). [details](discoveries/cm-least-primes.md)
 - (N10 (barrier)) Record: the integer Chebyshev constant of [0, 1] is at least 0.4222355 (was 0.4222286). [details](discoveries/integer-chebyshev.md)
-- (N4) Record: Robin's inequality verified for all n ≤ 10^(10^38.71), Nicolas' for primorials with p_k ≤ 1.31·10^40 (was 10^(10^22.85); refereed 10^(10^13.1)). [details](discoveries/robin-nicolas-ranges.md)
+- (N4) Record: Robin's inequality verified for all n ≤ 10^(10^46.79), Nicolas' for primorials with p_k ≤ 1.78·10^48 (was ours 10^(10^38.71); Polak 10^(10^22.85)). [details](discoveries/robin-nicolas-ranges.md)
 - (N5) Báez-Duarte's natural-number Nyman–Beurling criterion holds in L^p for all 1 < p < 2, also for every Dirichlet L-function; unconditionally true for p ≤ 1.14497. [details](discoveries/nyman-beurling-lp.md)
 - (N10) First explicit power-saving Mertens bound: |M(x)| ≤ 1.84·10^6 x^0.9382 for all x ≥ 1 (before: no explicit exponent below 1). [details](discoveries/mertens-power-saving.md)
 
