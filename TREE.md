@@ -371,5 +371,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R335 node N1 round 5: no window beyond Chekmachev's claim; R322's constant transcription corrected; Dirichlet-L Weil windows uncertified (candidate weilchi) [R335.lean](Riemann/Tree/R335.lean)
 - R336 node N10 round 5: no explicit power-saving Mertens bound exists (candidate mertens78); explicit 1/zeta bounds only in classical regions [R336.lean](Riemann/Tree/R336.lean)
 - R337 node N2 round 5: Raymond's 0.107964910079 stands; Planat-Raymond 0.156821 classical-strip; HB's 11/12 table uncertified (open) [R337.lean](Riemann/Tree/R337.lean)
-- R338 FRONTIER (next)
+- R338 node N13 round 5: no new proved spectral realization; Aksman 23839754 breaks at (79) (REFUTATIONS); 2609.25564's U_E zeros leave the unit circle for E >= 4 [R338.lean](Riemann/Tree/R338.lean)
+- R339 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.

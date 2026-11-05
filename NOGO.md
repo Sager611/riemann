@@ -467,3 +467,4 @@
 - R335 N1: Beurling generalized primes and spectral-flow counts give no zero-free mechanism; R322's Theta_c reading was wrong (quadratic, not linear, in c) [R335](Riemann/Tree/R335.lean)
 - R336 N10: statistical tests of zeros, sampling-density theorems and Alexander-polynomial 'RH' give no DH-failing mechanism [R336](Riemann/Tree/R336.lean)
 - R337 N2: compressed sensing, planar-network total positivity and combinatorial Hodge theory give no DH-failing mechanism [R337](Riemann/Tree/R337.lean)
+- R338 N13: finite Rodriguez-Villegas approximants (2609.25564): U_E off the unit circle for E = 4..40; Z_E real-rootedness at small E is generic (also for H_lambda, lambda = -1); canonical strip, group zeta functions and Guerra interpolation give no idea [R338](Riemann/Tree/R338.lean)
