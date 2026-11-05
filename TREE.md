@@ -370,5 +370,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R334 node N4 round 4: Robin to 10^(10^38.6) stands (Polak v1.0.0 only); Lagarias' form verified on the same range; Nicolas rechecked to 10^6 [R334.lean](Riemann/Tree/R334.lean)
 - R335 node N1 round 5: no window beyond Chekmachev's claim; R322's constant transcription corrected; Dirichlet-L Weil windows uncertified (candidate weilchi) [R335.lean](Riemann/Tree/R335.lean)
 - R336 node N10 round 5: no explicit power-saving Mertens bound exists (candidate mertens78); explicit 1/zeta bounds only in classical regions [R336.lean](Riemann/Tree/R336.lean)
-- R337 FRONTIER (next)
+- R337 node N2 round 5: Raymond's 0.107964910079 stands; Planat-Raymond 0.156821 classical-strip; HB's 11/12 table uncertified (open) [R337.lean](Riemann/Tree/R337.lean)
+- R338 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
