@@ -333,5 +333,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R297 node N6 round 2: our d <= (16T^2-4)/9 re-verified, still the record; Liu's conditional region gives 1.6081e25 [R297.lean](Riemann/Tree/R297.lean)
 - R298 node N1 round 2: partial RH + 7/8 strip + S(t) bounds give heuristic windows 0.72-1.26 only (zero gaps up to 3.11 near T); no height-tied record [R298.lean](Riemann/Tree/R298.lean)
 - R299 node N9 round 2: records unchanged; 7/8 gives only sigma > 7/8 statements (classical Titchmarsh 14.5); moments unaffected [R299.lean](Riemann/Tree/R299.lean)
-- R300 FRONTIER (next)
+- R300 node N8 round 2: 67.354% re-verified from exact TeX constants; Levinson 0.3428 reproduced; nothing newer; 7/8 gives no near-line gain [R300.lean](Riemann/Tree/R300.lean)
+- R301 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
