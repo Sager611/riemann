@@ -265,5 +265,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R247 today's mailing verified; scout's out-of-range counterexample rejected. [R247.lean](Riemann/Tree/R247.lean)
 - R248 today's mailing (later picks) verified; hunts clean. [R248.lean](Riemann/Tree/R248.lean)
 - R249 Sun's circular-permutation conjecture (1309.1679 Conj. 3.10) fails for q = 11, a₀ = 2 (two vertices share the neighbours {3, 8}); Orca settling exceptions + novelty. [R249.lean](Riemann/Tree/R249.lean)
-- R250 FRONTIER (next)
+- R250 Sun 1309.1679: Conj. 3.3, 3.4(ii), 3.5(i) also fail in tiny cases (with 3.10); 20 others hold in small cases; novelty check running. [R250.lean](Riemann/Tree/R250.lean)
+- R251 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
