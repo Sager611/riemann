@@ -509,3 +509,4 @@
 - R369 N2: function-field Newman constants (double-root mechanism, 1411.2071) and mean-field heat-flow limits give no zeta bound; kinetic theory, p-adic and adelic quantum mechanics, Seiberg-Witten theory give no mechanism [R369](Riemann/Tree/R369.lean)
 - R370 N11: the effective Siegel-zero exclusion does not move Linnik's constant (L = 5 binds at moderate lambda_1); chemical reaction networks, geometric Langlands and population genetics give no mechanism [R370](Riemann/Tree/R370.lean)
 - R371 N12: converse theorems with all twists (2207.00451) do not reach the Selberg class; dessins d'enfants, harmonic-polynomial zero counts and Sturm zero-number arguments (forward heat flow only) give no mechanism [R371](Riemann/Tree/R371.lean)
+- R372 N4: Ramanujan's c_1 (1905.09327) is an asymptotic constant beyond finite verification; majorization, algebraic statistics of the zeta distribution and interacting particle systems give no mechanism [R372](Riemann/Tree/R372.lean)

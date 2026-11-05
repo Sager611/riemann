@@ -405,5 +405,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R369 node N2 round 8: Lambda <= 0.107559925318 stands; the chain uses no zero-count constant (the sharper count of 2606.31441 cannot move it); no new Zenodo claim; function-field Newman results give no zeta bound [R369.lean](Riemann/Tree/R369.lean)
 - R370 node N11 round 7: records stand; our explicit Littlewood bound puts every imaginary quadratic field with h <= 10^4 below 7.63e11 < 2^40, inside the Mosunov-Jacobson tables (candidate, Orca imqclass); Linnik's constant does not move [R370.lean](Riemann/Tree/R370.lean)
 - R371 node N12 round 8: records stand; the conductor 2, 3, 4 classification stays open (converse theorems need all twists, 2207.00451); Guth-Maynard for GL_d undone; a Zenodo RH proof refuted (unproved amplitude inequality) [R371.lean](Riemann/Tree/R371.lean)
-- R372 FRONTIER (next)
+- R372 node N4 round 7: records stand; no other open progression gap in Washington-Yang; Ramanujan's c_1 is an asymptotic RH constant; a superabundant monotonicity conjecture of 2601.22413 harvested [R372.lean](Riemann/Tree/R372.lean)
+- R373 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
