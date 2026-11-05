@@ -1,0 +1,373 @@
+# cert_chi.py: Chekmachev's periodized lattice minorant (Zenodo 23848597, Thm 5.10 + Def. 6.1), ported from
+# Riemann/Deep/ChekAudit/evidence/cert2.py to the Weil form of L(s, chi), chi real primitive (no pole terms).
+# Q_chi(f) = (1/2L) sum_k mu(k) |f^(r_k)|^2,  r_k = pi k / L,  L = ln c,  f in L^2(-L/2, L/2), with
+# mu(k) = log(q/pi) + Re psi(1/4 + a/2 + i r/2) + 2 (-1)^k sum_n c^{-b_n} b_n/(b_n^2 + r^2) - 2 sum_{m<c} chi(m) Lambda(m) m^{-1/2} cos(r ln m),
+# b_n = 2n + 1/2 + a, a = 0 (even chi) or 1 (odd chi).  Derivation: DERIVATION.md.
+# Usage: cert_chi.py CHAR c sector eps bits [K2] [scanmode]     CHAR in m4 m3 p5 p8; c = integer or p/q; eps = 0 or 2^-k or decimal
+import sys, time, math, random, json
+import numpy as np, mpmath as mp
+from flint import arb, acb, arb_mat, acb_mat, ctx, fmpq
+
+CH = {'m4': ([0,1,0,-1], 4, 1), 'm3': ([0,1,-1], 3, 1), 'p5': ([0,1,-1,-1,1], 5, 0), 'p8': ([0,1,0,-1,0,-1,0,1], 8, 0)}
+
+def ppow(n):   # (p, k) if n = p^k else None
+    for p in range(2, n+1):
+        if n % p == 0:
+            m = n; e = 0
+            while m % p == 0: m //= p; e += 1
+            return (p, e) if m == 1 else None
+    return None
+
+class SymChi:
+    def __init__(s, key, cq):
+        tab, q, a = CH[key]
+        s.key, s.q, s.a, s.tab = key, q, a, tab
+        s.cq = cq; s.c = arb(cq); s.L = s.c.log(); s.pi = arb.pi()
+        s.const = (arb(q)/s.pi).log()
+        s.atoms = []           # (n, ln n, chi(n) Lambda(n)/sqrt n)
+        n = 2
+        while fmpq(n) < cq:
+            pe = ppow(n); x = tab[n % q]
+            if pe is not None and x != 0:
+                s.atoms.append((n, arb(n).log(), x*arb(pe[0]).log()/arb(n).sqrt()))
+            n += 1
+        s.sig2 = 2*sum((abs(w) for _, _, w in s.atoms), arb(0))
+        s.tail = []; nn = 0
+        while True:
+            b = arb(2*nn) + arb(1)/2 + a; t = s.c**(-b)
+            s.tail.append((b, t)); nn += 1
+            if t < arb(2)**(-(ctx.prec + 40)) and nn > 2: break
+        bN = arb(2*nn) + arb(1)/2 + a
+        s.trem = s.c**(-bN)/(bN*(1 - s.c**(-2)))     # sum_{n>=N} c^{-b_n} b_n/(b_n^2+r^2) <= this
+    def r(s, k): return s.pi*k/s.L
+    def h(s, r): return s.const + acb(arb(1)/4 + arb(s.a)/2, r/2).digamma().real
+    def tailsum(s, r):
+        r2 = r*r; tot = arb(0)
+        for b, t in s.tail: tot += t*b/(b*b + r2)
+        return tot + arb(0, s.trem.upper())
+    def mu(s, k):
+        r = s.r(k); ps = arb(0)
+        for _, ln, w in s.atoms: ps += w*(r*ln).cos()
+        return s.h(r) + 2*(1 if k % 2 == 0 else -1)*s.tailsum(r) - 2*ps
+    def monotone(s, k):   # lower bound of mu(k') for all k' >= k >= 1 (h increasing, b/(b^2+r^2) decreasing in r)
+        r = s.r(k)
+        return s.h(r) - s.sig2 - 2*(s.tailsum(r) + s.trem)
+
+def scan_end(S, start, thr):
+    ok = lambda k: S.monotone(k+1).lower() >= thr
+    if ok(start): return start
+    lo, hi = start, start*2
+    while not ok(hi): lo, hi = hi, hi*2
+    while hi - lo > 1:
+        m = (lo + hi)//2
+        if ok(m): hi = m
+        else: lo = m
+    return hi
+
+def fscan(S, K2, J, ks, kse, t1f=1.0):
+    # float64 pre-scan with exact uint64 phases; flags candidates (margin 1e-6), confirmed later in Arb
+    mp.mp.dps = 40
+    cmp_ = mp.mpf(int(S.cq.p))/mp.mpf(int(S.cq.q)); Lm = mp.log(cmp_)
+    B = np.array([int(mp.nint(mp.log(n)/(2*Lm)*mp.mpf(2)**64)) for n, _, _ in S.atoms], dtype=np.uint64)
+    W = np.array([float(w.mid()) for _, _, w in S.atoms]); Lf = float(Lm); cst = float(S.const.mid()); a = S.a
+    bn = np.array([2*n + 0.5 + a for n in range(8)]); cbn = np.array([float(cmp_**(-(2*n + mp.mpf(1)/2 + a))) for n in range(8)])
+    def mu(k):
+        k = k.astype(np.uint64); r = np.pi*k.astype(np.float64)/Lf; w = 0.25 + 0.5*a + 0.5j*r
+        psi = np.log(w) - 1/(2*w) - 1/(12*w**2) + 1/(120*w**4) - 1/(252*w**6) + 1/(240*w**8) - 1/(132*w**10)
+        sgn = np.where(k % 2 == 0, 1.0, -1.0)
+        T = 2*sgn*sum(cbn[i]*bn[i]/(bn[i]**2 + r*r) for i in range(8))
+        s = np.zeros_like(r)
+        for i in range(len(B)): s += W[i]*np.cos(2*np.pi*((k*B[i]).astype(np.float64)/2.0**64))
+        return psi.real + cst + T - 2*s
+    selo, sele = [], []; CHK = 2_000_000
+    k0 = K2 + 2
+    while k0 <= ks:
+        k = np.arange(k0, min(k0 + 2*CHK, ks + 1), 2, dtype=np.int64); m = mu(k); selo.extend(k[m < t1f + 1e-6].tolist()); k0 += 2*CHK
+    j0 = J + 1
+    while 2*j0 <= kse:
+        j = np.arange(j0, min(j0 + CHK, kse//2 + 1), dtype=np.int64); m = mu(2*j); sele.extend(j[m < 1e-6].tolist()); j0 += CHK
+    return selo, sele
+
+def cscan(S, K2, J, ks, kse, exe, t1f=1.0):
+    # same pre-scan in C (cscan.c): rotator recurrence with exact 64-bit phase resync every 1024 nodes; flags at margin 1e-6
+    import subprocess
+    mp.mp.dps = 40
+    cmp_ = mp.mpf(int(S.cq.p))/mp.mpf(int(S.cq.q)); Lm = mp.log(cmp_); a = S.a
+    hdr = f"{float(Lm)!r} {a} {float(S.const.mid())!r} 8 "
+    hdr += " ".join(f"{2*n + 0.5 + a!r} {float(cmp_**(-(2*n + mp.mpf(1)/2 + a)))!r}" for n in range(8))
+    hdr += f" {len(S.atoms)} " + " ".join(f"{int(mp.nint(mp.log(n)/(2*Lm)*mp.mpf(2)**64)) % 2**64} {float(w.mid())!r}" for n, _, w in S.atoms)
+    def run(k0, k1, thr):
+        if k0 > k1: return []
+        out = subprocess.run([exe], input=hdr + f" {k0} {k1} {thr}\n", capture_output=True, text=True, check=True)
+        return [int(v) for v in out.stdout.split()]
+    selo = run(K2 + 2, ks, t1f)
+    sele = [k//2 for k in run(2*(J + 1), kse - (kse % 2), 0)]
+    return selo, sele
+
+def rscan(S, K2, J, ks, kse, exe, t1f=1.0):
+    # RIGOROUS pre-scan (rscan.c; proof of the error bound in RIGOR.md): every node k in (K2, ks] (odd) or (2J, kse] (even) with
+    # mu(k) < threshold is printed by rscan.c, because mu(k) >= mu_c(k) - E and E < margin.  Returns flagged lists and the bound data.
+    import subprocess, math, mpmath as mpm
+    key, cq = S.key, S.cq
+    oldp = ctx.prec; ctx.prec = 192
+    S2 = SymChi(key, cq); pi = arb.pi(); L = arb(cq).log(); two64 = arb(2)**64
+    u = 2.0**-53
+    def dn(x): return math.nextafter(float(x.lower()), -math.inf)
+    def up(x): return math.nextafter(float(x.upper()), math.inf)
+    tab = []
+    for a in range(65536):
+        ang = 2*pi*a/65536
+        tab.append(f"{float(ang.cos().mid()).hex()} {float(ang.sin().mid()).hex()}")
+    K = float((2*pi/two64).mid())
+    mpm.mp.dps = 60; Lm = mpm.log(mpm.mpf(int(cq.p))/mpm.mpf(int(cq.q)))
+    at = []; emax = arb(0); dW = arb(0); sigW = 0.0
+    for n, _, w in S2.atoms:
+        Bn = int(mpm.floor(mpm.log(n)/(2*Lm)*mpm.mpf(2)**64 + mpm.mpf(1)/2))
+        en = abs(arb(n).log()/(2*L)*two64 - Bn)
+        if en.upper() > emax.upper(): emax = arb(en.upper())
+        Wn = float(w.mid()); dW += abs(arb(Wn) - w).upper(); sigW += abs(Wn)
+        at.append(f"{Bn} {Wn.hex()}")
+    assert emax < arb('0.5000001')
+    def blocks(k0, k1):
+        out = []; Hmax = 0.0; Tmax = 0.0
+        if k0 > k1: return out, Hmax, Tmax
+        k1 -= (k1 - k0) % 2
+        k = k0
+        while k <= k1:
+            m = max(0, int(k*0.0005)); kb = min(k1, k + 2*m)
+            r = S2.r(k); H = dn(S2.h(r)); T = up(2*S2.tailsum(r) + 2*S2.trem)
+            out.append(f"{k} {kb} {H.hex()} {T.hex()}"); Hmax = max(Hmax, abs(H)); Tmax = max(Tmax, abs(T))
+            k = kb + 2
+        return out, Hmax, Tmax
+    bo, Ho, To = blocks(K2 + 2, ks); be, He, Te = blocks(2*(J + 1), kse)
+    na = len(S2.atoms); kmax = max(ks, kse)
+    gam = na*u/(1 - na*u)
+    # a-priori bound (RIGOR.md): |cos_c - cos(theta_used)| <= 1e-15; phase error <= 2 pi k e_n 2^-64; sum and final rounding
+    E = 2*(sigW*(1 + u)*(gam*(1 + u) + u + 1e-15) + float(dW.upper())*1.0001 + sigW*1.0001*2*math.pi*kmax*float(emax.upper())*2.0**-64)
+    E += 3*u*(max(Ho, He) + max(To, Te) + 2*sigW*1.0001)
+    E *= 1.01
+    margin = 1e-6
+    assert E < margin/10, E
+    ctx.prec = oldp
+    hdr = "\n".join(tab) + f"\n{K.hex()}\n{na}\n" + "\n".join(at) + "\n"
+    def run(bl, thr):
+        if not bl: return []
+        inp = hdr + f"{float(thr).hex()} {margin.hex()}\n{len(bl)}\n" + "\n".join(bl) + "\n"
+        out = subprocess.run([exe], input=inp, capture_output=True, text=True, check=True)
+        return [int(v) for v in out.stdout.split()]
+    selo = run(bo, t1f)
+    sele = [k//2 for k in run(be, 0.0)]
+    info = dict(method='rigorous', E=E, margin=margin, emax=float(emax.upper()), blocks=[len(bo), len(be)], kmax=kmax)
+    return selo, sele, info
+
+def parse_c(s):
+    if '/' in s: p, q = s.split('/'); return fmpq(int(p), int(q))
+    return fmpq(int(s))
+
+def main():
+    key = sys.argv[1]; cq = parse_c(sys.argv[2]); sector = sys.argv[3]; epsstr = sys.argv[4]; ctx.prec = int(sys.argv[5])
+    if epsstr == '0': eps = arb(0)
+    elif epsstr.startswith('2^-'): eps = arb(2)**(-int(epsstr[3:]))
+    else: eps = arb(epsstr)
+    t0 = time.time()
+    S = SymChi(key, cq); L = S.L; pi = S.pi
+    cf = int(cq.p)/int(cq.q)
+    K2 = max(201, math.ceil(5*cf*cf/3)); K2 += (K2 % 2 == 0)
+    if len(sys.argv) > 6 and sys.argv[6] != '-': K2 = int(sys.argv[6]); K2 += (K2 % 2 == 0)
+    J = K2
+    import os
+    T1s = os.environ.get('WEILCHI_T1', '1'); t1 = arb(T1s); t1f = float(T1s)
+    ks = scan_end(S, K2, t1f); kse = scan_end(S, 2*J, 0)
+    cache = os.path.join(os.environ.get('WEILCHI_SCAN', '.'), f"scan_{key}_{str(cq).replace('/', 'o')}_{K2}" + ("" if T1s == '1' else f"_t{T1s}") + ("_rig" if os.environ.get('WEILCHI_RSCAN') else "") + ".json")
+    if os.path.exists(cache):
+        sc = json.load(open(cache)); assert sc['ks'] == ks and sc['kse'] == kse
+        selo, sele = sc['selo'], sc['sele']
+    else:
+        exe = os.environ.get('WEILCHI_CSCAN'); rexe = os.environ.get('WEILCHI_RSCAN'); sinfo = dict(method='float')
+        if rexe: fo, fe, sinfo = rscan(S, K2, J, ks, kse, rexe, t1f)
+        else: fo, fe = cscan(S, K2, J, ks, kse, exe, t1f) if exe else fscan(S, K2, J, ks, kse, t1f)
+        oldp = ctx.prec; ctx.prec = 96; S96 = SymChi(key, cq)
+        selo = [k for k in fo if S96.mu(k).lower() < t1f]
+        sele = [j for j in fe if S96.mu(2*j).lower() < 0]
+        ctx.prec = oldp
+        json.dump(dict(ks=ks, kse=kse, selo=selo, sele=sele, flagged=[len(fo), len(fe)], scan=sinfo), open(cache, 'w'))
+    tscan = time.time() - t0
+    NBO = int(os.environ.get('WEILCHI_NBO', '32')); NBEK = int(os.environ.get('WEILCHI_NBEK', '1')); NBEJ = int(os.environ.get('WEILCHI_NBEJ', '3'))
+    Kset = set(range(1, K2+1, 2)) | set(selo); Eset = set(range(0, J+1)) | set(sele)
+    for k in selo:
+        for j in range((k-1)//2 - NBO, (k-1)//2 + NBO + 1):
+            if j >= 0: Eset.add(j)
+    for j in sele:
+        for jj in range(j-NBEJ, j+NBEJ+1): Eset.add(jj)
+    mus = {}
+    def mu(k):
+        if k not in mus: mus[k] = S.mu(k)
+        return mus[k]
+    changed = True; done = set()
+    while changed:
+        changed = False
+        for j in sorted(Eset):
+            if j in done or 2*j <= K2: continue
+            done.add(j)
+            if mu(2*j).mid() < 0:
+                for k in range(2*j-2*NBEK+1, 2*j+2*NBEK, 2):
+                    if k > 0 and k not in Kset: Kset.add(k); changed = True
+                for jj in range(j-NBEJ, j+NBEJ+1):
+                    if jj >= 0 and jj not in Eset: Eset.add(jj); changed = True
+    if sector == 'odd': Eset.discard(0)
+    Kl = sorted(Kset); El = sorted(Eset)
+    w = {k: ((mu(k) - t1)/L).lower() for k in Kl}
+    deff = t1/2 - eps
+    assert deff > 0
+    dl = {j: ((mu(2*j) + t1)/2 - eps).lower() for j in El}
+    Kp = [k for k in Kl if w[k] > 0]; Km = [k for k in Kl if not (w[k] > 0)]
+    G = [j for j in El if dl[j] > 0]; Jm = [j for j in El if not (dl[j] > 0)]
+    tsym = time.time() - t0
+    def Nj(j): return (1/L).sqrt() if (j == 0 and sector == 'even') else (2/L).sqrt()
+    sgn = lambda j: 1 if j % 2 == 0 else -1
+    sgk = lambda k: 1 if ((k-1)//2) % 2 == 0 else -1
+    if sector == 'even':
+        A = lambda j: Nj(j)*(L/pi)*sgn(j); bk = lambda k: arb(2*k*sgk(k))
+    else:
+        A = lambda j: Nj(j)*sgn(j)*4*j*(L/pi); bk = lambda k: arb(sgk(k))
+    cols = [('phi', j, (deff - dl[j]).sqrt(), None, None) for j in Jm]
+    cols += [('node', k, (-w[k]).sqrt(), arb(k*k), bk(k)) for k in Km]
+    nB = len(cols)
+    ucols = [('node', k, arb(1), arb(k*k), bk(k)) for k in Kp]; Md = [w[k] for k in Kp]
+    allc = cols + ucols; nA = len(allc)
+    GA2 = [((1/dl[j] - 1/deff)*A(j)**2, arb(4*j*j)) for j in G]
+    F = {}; F2 = {}
+    for ci, col in enumerate(allc):
+        if col[0] == 'phi': continue
+        y = col[3]; f1 = arb(0); f2 = arb(0)
+        for (ca, x) in GA2:
+            d = 1/(y - x); f1 += ca*d; f2 += ca*d*d
+        F[ci] = f1; F2[ci] = f2
+    tF = time.time() - t0
+    def ipf(a, b):
+        ta, ia = a[0], a[1]; tb, ib = b[0], b[1]
+        if ta == 'phi' and tb == 'phi': return arb(1) if ia == ib else arb(0)
+        if ta == 'phi' and tb == 'node': return A(ia)*b[4]/(b[3] - arb(4*ia*ia))
+        if tb == 'phi' and ta == 'node': return A(ib)*a[4]/(a[3] - arb(4*ib*ib))
+        return L/2 if ia == ib else arb(0)
+    def gram(p, qq):   # <col_p, D''^{-1} col_q> (scaled)
+        a = allc[p]; b = allc[qq]
+        v = ipf(a, b)/deff
+        if a[0] != 'phi' and b[0] != 'phi':
+            if p == qq: v += a[4]*a[4]*F2[p]
+            else: v += a[4]*b[4]*(F[p] - F[qq])/(b[3] - a[3])
+        return v*a[2]*b[2]
+    nU = len(ucols)
+    X = arb_mat(nB, nB); Y = arb_mat(nU, nB); Sm = arb_mat(nU, nU)   # blocks of the Gram matrix, built directly (memory)
+    for p in range(nB):
+        for qq in range(p, nB):
+            v = gram(p, qq); X[p, qq] = v; X[qq, p] = v
+    for a in range(nU):
+        for b in range(nB): Y[a, b] = gram(nB + a, b)
+        for b in range(a, nU):
+            v = gram(nB + a, nB + b)
+            if a == b: v = v + 1/Md[a]
+            Sm[a, b] = v; Sm[b, a] = v
+    del F, F2, GA2
+    tasm = time.time() - t0
+    # IW = Id - W, W = X - Y^T Sm^{-1} Y (Woodbury), built in place of X in column blocks (memory)
+    if nU > 0:
+        BS = nB if nB <= 600 else 192      # one solve when B is small (each solve re-factors Sm)
+        for b0 in range(0, nB, BS):
+            b1 = min(nB, b0 + BS); bs = b1 - b0
+            Yb = arb_mat(nU, bs)
+            for a in range(nU):
+                for b in range(bs): Yb[a, b] = Y[a, b0 + b]
+            Zb = Sm.solve(Yb)
+            PbT = Zb.transpose()*Y          # rows b0..b1 of Y^T Sm^{-1} Y, transposed
+            del Zb, Yb
+            for b in range(bs):
+                for a in range(nB): X[a, b0 + b] = (1 if a == b0 + b else 0) - X[a, b0 + b] + PbT[b, a]
+            del PbT
+    else:
+        for a in range(nB):
+            for b in range(nB): X[a, b] = (1 if a == b else 0) - X[a, b]
+    IW = X
+    del Y, Sm
+    tW = time.time() - t0
+    maxrad = max((IW[a, b].rad() for a in range(nB) for b in range(nB)), default=arb(0))
+    R = arb_mat(nB, nB)
+    for a in range(nB):
+        for b in range(nB): R[a, b] = IW[a, b].mid()
+    random.seed(1)
+    rig = None; lmin = None; ritz = []; nu = None
+    if nB > 0:
+        # block inverse iteration (p vectors) + Rayleigh-Ritz: estimates of the smallest eigenvalues of mid(IW)
+        p = min(6, nB)
+        Q = [[arb(random.uniform(-1, 1)) for _ in range(nB)] for _ in range(p)]
+        for it in range(6):
+            V = arb_mat(nB, p)
+            for j in range(p):
+                for i in range(nB): V[i, j] = Q[j][i]
+            Yv = R.solve(V, algorithm="approx"); Q = []
+            for j in range(p):
+                v = [Yv[i, j] for i in range(nB)]
+                for _ in range(2):
+                    for qv in Q:
+                        d = sum((v[i]*qv[i] for i in range(nB)), arb(0))
+                        v = [v[i] - d*qv[i] for i in range(nB)]
+                nrm = sum((vi*vi for vi in v), arb(0)).sqrt()
+                Q.append([(vi/nrm).mid() for vi in v])
+        V = arb_mat(nB, p)
+        for j in range(p):
+            for i in range(nB): V[i, j] = Q[j][i]
+        H = V.transpose()*(R*V)
+        Hm = arb_mat(p, p)
+        for i in range(p):
+            for j in range(p): Hm[i, j] = ((H[i, j] + H[j, i])/2).mid()
+        ritz = sorted([e.real.mid() for e in acb_mat(Hm).eig(algorithm="approx")], key=lambda z: float(z))
+        lmin = ritz[0]
+        n = nB; okc = False; emax = None
+        if lmin > 0:
+            for fac in ('0.5', '0.125', '0.01'):
+                s0 = lmin*arb(fac); nu = s0/2
+                Lc = [[None]*n for _ in range(n)]; okc = True
+                for i in range(n):
+                    for j in range(i+1):
+                        s = R[i, j] - (s0 if i == j else 0)
+                        for kk in range(j): s -= Lc[i][kk]*Lc[j][kk]
+                        if i == j:
+                            if not (s > 0): okc = False; break
+                            Lc[i][j] = s.sqrt().mid()
+                        else: Lc[i][j] = (s/Lc[j][j]).mid()
+                    if not okc: break
+                if okc: break
+                del Lc
+        if okc:
+            del R
+            Lm = arb_mat(n, n)
+            for i in range(n):
+                row = Lc[i]
+                for j in range(i+1): Lm[i, j] = row[j]
+                Lc[i] = None
+            del Lc
+            LmT = Lm.transpose(); emax = arb(0); RB = 128
+            for i0 in range(0, n, RB):        # residual IW - Lm Lm^T - s0 Id in row blocks (memory)
+                i1 = min(n, i0 + RB)
+                Lb = arb_mat(i1 - i0, n)
+                for i in range(i0, i1):
+                    for j in range(i+1): Lb[i - i0, j] = Lm[i, j]
+                Pb = Lb*LmT
+                for i in range(i0, i1):
+                    rs = arb(0)
+                    for j in range(n): rs += abs(IW[i, j] - Pb[i - i0, j] - (s0 if i == j else 0)).upper()
+                    if rs.upper() > emax.upper(): emax = rs.upper()
+                del Lb, Pb
+            del Lm, LmT
+            rig = bool(emax <= s0 - nu)      # then lambda_min(IW) >= s0 - emax >= nu > 0
+        else: rig = False
+    else:
+        rig = True   # no negative part: P - N = P > 0 trivially (deff > 0, dl_j > 0 on G, w_k > 0 on K+)
+    res = dict(char=key, c=str(cq), sector=sector, eps=epsstr, prec=ctx.prec, K2=K2, t1=T1s, nb=[NBO, NBEK, NBEJ], kscan=ks, kscan_e=kse, sel_odd=len(selo), sel_even=len(sele),
+               Kp=len(Kp), Km=len(Km), Jm=len(Jm), G=len(G), order=nB, atoms=[n for n, _, _ in S.atoms], sig2=float(S.sig2.mid()),
+               margin=(lmin.str(12, radius=False) if lmin is not None else None), rigorous=rig, maxrad=maxrad.str(3, radius=False), ritz=[z.str(6, radius=False) for z in ritz[:3]], nu=(nu.str(6, radius=False) if nu is not None else None),
+               mu1=mu(1).str(8, radius=False), mu0=mu(0).str(8, radius=False), times=[round(tscan), round(tsym), round(tF), round(tasm), round(tW), round(time.time()-t0)])
+    print(json.dumps(res), flush=True)
+
+if __name__ == '__main__':
+    main()
