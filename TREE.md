@@ -389,5 +389,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R353 node N4 round 5: the 10^(10^46.79) Robin record stands; its inputs (Chirre-Helfgott hypotheses, C_T = 113.66888, exact MAD_k) rechecked adversarially, no flaw [R353.lean](Riemann/Tree/R353.lean)
 - R354 node N9 round 6: records stand; conductor-aspect Lindelof beyond B and mu line (B - sigma)/(6(B - 1/2)) from Petrow-Young (routine, COROLLARIES); Bluteau's Zenodo AFE false (REFUTATIONS) [R354.lean](Riemann/Tree/R354.lean)
 - R355 node N8 round 6: 67.353% stands; Johns's ported definitions audited (sound); 2610.08965's preprint inputs recorded; no degree-2 transfer (theta 17/20 vs < 1/2) [R355.lean](Riemann/Tree/R355.lean)
-- R356 FRONTIER (next)
+- R356 node N3 round 6: Li records stand; Platt heights behind the Dirichlet ranges rechecked; explicit zero density would lift the range only to about 114 T^2 [R356.lean](Riemann/Tree/R356.lean)
+- R357 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
