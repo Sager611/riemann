@@ -1,0 +1,17 @@
+# Robin's and Nicolas' inequalities verified far beyond earlier ranges (node N4)
+
+**Claim.** Robin's inequality σ(n) < e^γ n log log n holds for every 5041 ≤ n ≤ 10^(10^38.60), i.e. for every colossally abundant number whose largest prime is at most 9.37·10^38. Nicolas' inequality N_k/φ(N_k) > e^γ log log N_k holds for every primorial N_k with p_k ≤ 1.04·10^40. Without the half-plane the same method gives 10^(10^32.98) and p_k ≤ 1.42·10^34.
+
+**Before.** Robin: Polak (Zenodo 21808589, Aug 2026, unrefereed) n ≤ 10^(10^22.85) (largest prime 1.65·10^23); refereed: Morrill–Platt (arXiv 1809.10813) n ≤ 10^(10^13.11485). Nicolas: no verified height-tied range; floating-point computations to p_k ≤ 10^9 (Nicolas 2012, arXiv 1202.0729).
+
+**Method.** Both inequalities reduce to two-sided bounds on the tail integral −I(x) = ∫_x^∞ (t − θ(t))(1 + log t)/(t² log² t) dt (Rosser–Schoenfeld's Mertens identity), whose explicit formula has zero weights about 1/(ρ(ρ − 1)). Inputs: RH to height 3·10^12 (Platt–Trudgian), no zeros with Re s > 7/8 (OpenAI 2026; Lean port in Riemann/Deep/QRH), the explicit zero count of Hasanalizade–Shen–Wong, Büthe's bounds below 10^19, Morrill–Platt below 10^(10^13.11). New step (Level 2): the cutoff at x is smoothed linearly in log t over a window of log-width λ ≈ 10^−9, so zeros above the verified height cost x^(β−1)/(λγ³) instead of x^(β−1)/γ²; the window costs a pointwise bound η ≈ 4·10^−11 on |θ(x)/x − 1| (our Lemma 10_k, k-fold box averages of ψ). The smoothing alone gives 10^(10^32.98); the 7/8 half-plane adds a factor of about 4·10^5 in the prime range.
+
+**Certificate.** `check_all.py` rechecks every inequality in arb ball arithmetic (python-flint): Nicolas for every primorial with p_k ≤ 9,999,991 directly; the analytic certificates on 369 + 1285 boxes (Level 2, 7/8), minimum normalised margins 1.0·10^−4 (Nicolas) and 1.45·10^−6 (Robin). Rerun by the orchestrator on a fresh copy: ALL PASS in 128 s.
+
+**Review.** Reviewer (orchestrator's call, PROOF.md): reduction, the D bound, the colossally abundant choice of x₂, the smoothing signs and constants and the high-zero pairing are sound; it asked for a uniform bound on the smoothing window and checks of the 10^19 seam: certify2.py uses Büthe's bound only when the window stays below 10^19 (margin 10^−3 in log x, λ ≤ 10^−3), Lemma 10_k's bound decreases in x so η(x) covers the window [x, x e^λ], and the 10^38 seam is handled explicitly (factor 1 + η_1). The agent's three review passes found one wrong constant and two code edge cases, fixed with no change in the numbers. Significant if certified; the certificates are the scripts, rerun ALL PASS.
+
+**Novelty.** The agent scanned the arXiv math.NT listings for September–November 2026, Zenodo (Robin, Nicolas, colossally abundant, quasi-Riemann) and our files; the orchestrator repeated arXiv (Robin inequality, Nicolas primorial) and Zenodo searches (5 Nov 2026): nothing beyond Polak. Polak's deposit is the same sharp-cutoff method without the half-plane and names a change of smoothing kernel as a route; Level 2 and the half-plane are new here. Not new: Level 1 without the half-plane (essentially Polak).
+
+**RH relevance:** N4 (Robin/Lagarias criteria): any counterexample to Robin's inequality, which exists iff RH fails, must now exceed 10^(10^38.6), and any primorial counterexample to Nicolas' inequality must have p_k > 1.04·10^40.
+
+**Files.** [Riemann/Deep/RobinHeight/](../Riemann/Deep/RobinHeight/) (REPORT.md, PROOF.md, certify.py, certify2.py, check_all.py).
