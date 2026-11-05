@@ -11,7 +11,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N11) Sato–Tate in every ideal class of Q(√D), for almost all D: e.g. every class has primes with a_f(p) > 0 and with a_f(p) < 0 below |D|^{2.04}. [details](discoveries/sato-tate-classes.md)
 - (N11) Least primes in every ideal class of almost all CM fields: below d_K^{1+ε} (known for every field: d_K^{694}). [details](discoveries/cm-least-primes.md)
 - (N10 (barrier)) Record: the integer Chebyshev constant of [0, 1] is at least 0.4222355 (was 0.4222286). [details](discoveries/integer-chebyshev.md)
-- (N5) Báez-Duarte's natural-number Nyman–Beurling criterion holds in L^p for all 1 < p < 2; unconditionally true for p ≤ 1.14497. [details](discoveries/nyman-beurling-lp.md)
+- (N5) Báez-Duarte's natural-number Nyman–Beurling criterion holds in L^p for all 1 < p < 2, also for every Dirichlet L-function; unconditionally true for p ≤ 1.14497. [details](discoveries/nyman-beurling-lp.md)
 
 ## Side results (off the RH tree)
 
