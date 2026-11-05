@@ -1,0 +1,37 @@
+# Raw outputs (2026-11-05, explore1). Scripts in this directory; all single-threaded, nice 19, perl alarm.
+
+## b_lehmer.py (mpmath dps 30), Lehmer pair t ~ 7005.06-7005.10, N = 33
+true Z sign changes: [7005.063, 7005.101]
+main-term sign changes: []
+Z(7005.08)= 0.00392896  Zmain(7005.08)= -0.0660427
+Zmain max in [7005.0,7005.15]: -0.0660042 at 7005.082 ; Z max there: 0.00396712 at 7005.082
+zero of F_33: sigma-1/2 = 0.07648412561, t = 7005.08414101, |F| = 1.68e-27   (mirror at 1/2 - 0.0765 by F(s)=chi(s)F(1-s))
+
+## b_scan.py 1000 30000 0.003  (numpy; Z_main vs Riemann-Siegel with C0 term; then mpmath findroot on F_N)
+sign changes main=34620, RS(C0)=35024 (= N(30000)-N(1000) from Riemann-von Mangoldt), lost-pair candidates=280
+first 40 candidates: 24 verified off-line zeros of F_N, sigma-1/2 in [0.0598, 0.2017], e.g.
+  1329.123 (N=14) 0.1384 | 1610.133 (16) 0.2017 | 2301.348 (19) 0.0692 | 3449.588 (23) 0.0598 | 4589.709 (27) 0.1780 | 5226.258 (28) 0.0789
+  (16 "not found" = findroot from 0.5+{0.02,0.05,0.1}+i t_mid did not converge; not checked further)
+
+## c_pgf.py 1e7 1e6  (P_x(z)=sum_{n<=x} mu(n)^2 z^omega(n); A_x(z)=sum_{n<=x} z^omega(n))
+P_x exhaustive x<=1e6: 607926 polys, non-real-rooted 258542; first x = 114,191,193,195,197,199,201,202,285,...
+  x=113: 8z^3+32z^2+30z+1 (disc +63040, real-rooted); x=114: 9z^3+32z^2+30z+1 (disc -28139)
+A_x (all n) x<=2e5: non-real-rooted 133192, first x = 42732
+P_x sampled 14561 squarefree x in (1e6,1e7]: non-real-rooted 11098
+zero near -1 vs Mertens:   x      M(x)   r+1          -M/P'(-1)
+                          1e3     2     +2.960e-02   +2.985e-02
+                          1e4   -23     -1.601e-01   -1.377e-01
+                          1e5   -48     -5.802e-02   -4.786e-02
+                          1e6   212     +2.611e-02   +2.780e-02
+                          1e7  1037     +1.906e-02   +2.003e-02
+roots at x=1e7: -1012.28, -20.169, -4.728, -2.667, -1.5897±(complex pair), -0.98065, -1.5e-6
+
+## a_basu_midha.py (mpmath dps 40/60)
+b0 = 0.124280194547 = Xi(0)/4 (check)
+Riemann law X ~ Phi(|u|)du: m_l^(1/2l) = 0.1075, 0.2003, 0.2636, 0.3076, 0.3417, 0.3699, 0.3940 at l = 1,5,10,15,20,25,30
+  Gaussian with same variance: 0.1075, 0.2132, 0.2966, 0.3612, 0.4159, 0.4642, 0.5079  (Riemann: unbounded, sub-Gaussian)
+constant-coefficient admissible flows from delta_0, b_k^(1/2k) at k=5,10,20,30:
+  a=0.05 b=0   g=1 p=2: 2.959 3.464 3.858 4.027  (bound 2sqrt(g/a)=8.94)
+  a=0.01 b=0.1 g=1 p=3: 3.855 5.007 6.264 6.974  (bound 20.0)
+  a=0.2 b=-0.3 g=1 p=1: 1.882 2.040 2.136 2.170  (bound 4.47)
+R_n(z)=E(z+iX)^n real-rooted for n<=30 (max |Im root| = 0 at 60 digits); largest root n=30: 1.318 (> 2sqrt(n m_1)=1.177)
