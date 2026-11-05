@@ -377,3 +377,4 @@
 - R260 verified others': OpenAI Cycle-clique Ramsey, Graph decompositions, Snaky; 2610.33283, 2610.37356, 1504.02410, 2611.05623, 2610.32704; OEIS A093348, A193142 hold; A088226 initial-term slip; not testable: Zenodo 23736963 [R260](Riemann/Tree/R260.lean)
 - R261 hold: A270096, A195422, A275206, A309717, MO 316208, 2609.13764, 2608.21351; scout errors: A297741 (offset slip), A308620, A131393; known: Zenodo 23555113; timed out: Bala supercongruences [R261](Riemann/Tree/R261.lean)
 - R262 hold: 2402.01471, 2409.15075, 2610.21577, 1202.1816, A362676; known: 2410.23097, 2609.07113; misprint only: 1610.02539 (delta: n = 2 for k = 2); not testable: Zenodo 23968068 [R262](Riemann/Tree/R262.lean)
+- R263 verified others': 2609.09179, 2609.37056, 2611.03074, 2610.08480, 2611.06269, 2610.15115, 2610.41999, 2610.11574, 2611.01243, 2611.00817, 2611.00818; misread: 2611.01170 [R263](Riemann/Tree/R263.lean)
