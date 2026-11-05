@@ -310,5 +310,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R274 Sun OEIS permanents/determinants/Hamiltonian/residue conjectures hold; A372409 Conj. 2 misprint (factor 2) [R274.lean](Riemann/Tree/R274.lean)
 - R275 Erdős-problem solutions, OpenAI preprints, Sun's Lucas/Bernoulli conjectures: all hold [R275.lean](Riemann/Tree/R275.lean)
 - R276 Fasi-Higham off-diagonal: first failing k0(m) = 2m + 13..15 for 23 <= m <= 49 (k0 > 2m for all m <= 49) [R276.lean](Riemann/Tree/R276.lean)
-- R277 FRONTIER (next)
+- R277 off-tree, pre-scoping: congruence conjectures (Z.-H. Sun, Mao, Liu, C. Wang, Pan) hold [R277.lean](Riemann/Tree/R277.lean)
+- R278 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
