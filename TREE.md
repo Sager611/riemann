@@ -394,5 +394,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R358 node N11 round 6: the explicit Littlewood record stands; its Dusart inputs and Lemma 6 rechecked, no flaw; observed minima 0.709 (real) and 0.738 (prime moduli) against the proved 0.11 [R358.lean](Riemann/Tree/R358.lean)
 - R359 node N13 round 7: no spectral realization or new Zenodo operator claim; Suzuki's Psi > 0 window is not RH-equivalent; the simple-even condition for the Weil form (2511.22755) is open and checkable (candidate) [R359.lean](Riemann/Tree/R359.lean)
 - R360 node N12 round 7: records stand; Cossaboom's 5/2 inputs rechecked; linear-twist results do not close the conductor 2, 3, 4 classification; R351's half-plane citation is Hexagon 2610.00216 (corrected) [R360.lean](Riemann/Tree/R360.lean)
-- R361 FRONTIER (next)
+- R361 node N10 round 7: records stand; short-interval prime hand-overs and Hurst's Mertens oscillations rechecked; pi(x) < li(x) proved only to 1e19, RH to 3e12 could reach about 3.6e21 in principle (candidate) [R361.lean](Riemann/Tree/R361.lean)
+- R362 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
