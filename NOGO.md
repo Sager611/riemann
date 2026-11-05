@@ -412,3 +412,4 @@
 - R293 N2: plugging a better theta into HB's fixed Table 2 gives no gain; height-local strips do not shrink faster [R293](Riemann/Tree/R293.lean)
 - R294 N4: the 7/8 half-plane extends neither Robin's computational range (endpoint p ~ 3.0e13) nor the 21-free family (relative error 0.021 there); Nicolas' range is direct arithmetic; Liouville Boolean-complexity bounds carry no RH information [R294](Riemann/Tree/R294.lean)
 - R295 N10: Turan power-sum constants and proof mining give nothing new for N7/N10/N11; the 7/8 bound alone does not reach the sqrt(x) range [R295](Riemann/Tree/R295.lean)
+- R296 N3: the height-tied Li range (77 T^2) is Fabbian's; 7/8 adds only a constant (~105 T^2); Omar-Ouni-Mazhouda's Dirichlet version dismisses the tail [R296](Riemann/Tree/R296.lean)
