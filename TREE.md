@@ -290,5 +290,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R272 fresh math.NT papers: tables and examples recomputed, all correct [R272.lean](Riemann/Tree/R272.lean)
 - R273 RH-adjacent numerics: arXiv API throttled; Zenodo RH proofs known or conditional [R273.lean](Riemann/Tree/R273.lean)
 - R274 Sun OEIS permanents/determinants/Hamiltonian/residue conjectures hold; A372409 Conj. 2 misprint (factor 2) [R274.lean](Riemann/Tree/R274.lean)
-- R275 FRONTIER (next)
+- R275 Erdős-problem solutions, OpenAI preprints, Sun's Lucas/Bernoulli conjectures: all hold [R275.lean](Riemann/Tree/R275.lean)
+- R276 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
