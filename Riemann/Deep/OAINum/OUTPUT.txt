@@ -1,0 +1,135 @@
+# Outputs of the oainum audit scripts (single-threaded, one job at a time)
+
+## test_table.py 1 (Section 3 table construction)
+(5, 3, 37, 2, 'omega_q ok')
+(7, 3, 37, 1, 'omega_q ok')
+(7, 5, 61, 4, 'omega_q ok')
+(11, 3, 73, 2, 'omega_q ok')
+(11, 5, 181, 1, 'omega_q ok')
+(11, 7, 337, 3, 'omega_q ok')
+(13, 3, 37, 1, 'omega_q ok')
+(13, 5, 181, 4, 'omega_q ok')
+(13, 7, 337, 2, 'omega_q ok')
+(17, 3, 37, 2, 'omega_q ok')
+(17, 5, 61, 4, 'omega_q ok')
+(17, 7, 337, 6, 'omega_q ok')
+(19, 3, 37, 1, 'omega_q ok')
+(19, 5, 61, 2, 'omega_q ok')
+(19, 7, 337, 6, 'omega_q ok')
+(23, 3, 73, 2, 'omega_q ok')
+(23, 5, 61, 4, 'omega_q ok')
+(23, 7, 337, 3, 'omega_q ok')
+(29, 3, 73, 2, 'omega_q ok')
+(29, 5, 181, 2, 'omega_q ok')
+(29, 7, 337, 1, 'omega_q ok')
+(31, 3, 73, 1, 'omega_q ok')
+(31, 5, 61, 1, 'omega_q ok')
+(31, 7, 337, 6, 'omega_q ok')
+(37, 3, 73, 1, 'omega_q ok')
+(37, 5, 61, 4, 'omega_q ok')
+(37, 7, 337, 3, 'omega_q ok')
+(41, 3, 37, 2, 'omega_q ok')
+(41, 5, 61, 1, 'omega_q ok')
+(41, 7, 337, 2, 'omega_q ok')
+(43, 3, 181, 1, 'omega_q ok')
+(43, 5, 61, 4, 'omega_q ok')
+(43, 7, 337, 1, 'omega_q ok')
+(61, 3, 37, 1, 'omega_q ok')
+(61, 5, 241, 1, 'omega_q ok')
+(101, 3, 73, 2, 'omega_q ok')
+(101, 5, 241, 1, 'omega_q ok')
+(103, 3, 109, 1, 'omega_q ok')
+(103, 5, 61, 4, 'omega_q ok')
+54 table entries built and verified
+[(5, 2, 73, 'omega2 ok'), (5, 3, 37, 2, 'omega_q ok'), (7, 2, 73, 'omega2 ok'), (7, 3, 37, 1, 'omega_q ok'), (7, 5, 61, 4, 'omega_q ok'), (11, 2, 73, 'omega2 ok')]
+
+## test_unitroot.py 1 (Lemma 2.2 UnitRoot) and distinct-degree check
+unitroot tests passed: 720 max c used in unit search: 0
+ddf ok 1000 pieces with 3|d: 384
+
+## evensplit.py (Prop 2.3)
+even split: cases 4425 no factor 0 orientation violations 0
+
+## genus1.py (Section 4 geometry, genus 1)
+p 7 Kdeg 1 #F 35 {'F': 35, 'rational27': 35, 'chain_rational': 35, 'sep_ok': 945, 'sep_fail': 0, 'label_formula_ok': 1365, 'label_formula_bad': 0, 'first_t_hist': {3: 105, 1: 630, 2: 210}}
+p 13 Kdeg 1 #F 286 {'F': 286, 'rational27': 286, 'chain_rational': 286, 'sep_ok': 7722, 'sep_fail': 0, 'label_formula_ok': 11154, 'label_formula_bad': 0, 'first_t_hist': {3: 858, 1: 5148, 2: 1716}}
+p 19 Kdeg 1 #F 40 {'F': 40, 'rational27': 40, 'chain_rational': 40, 'sep_ok': 1080, 'sep_fail': 0, 'label_formula_ok': 1560, 'label_formula_bad': 0, 'first_t_hist': {2: 240, 3: 120, 1: 720}}
+p 31 Kdeg 1 #F 12 {'F': 12, 'rational27': 12, 'chain_rational': 12, 'sep_ok': 324, 'sep_fail': 0, 'label_formula_ok': 468, 'label_formula_bad': 0, 'first_t_hist': {2: 72, 3: 36, 1: 216}}
+p 5 Kdeg 2 #F 10 {'F': 10, 'rational27': 10, 'chain_rational': 10, 'sep_ok': 270, 'sep_fail': 0, 'label_formula_ok': 390, 'label_formula_bad': 0, 'first_t_hist': {3: 30, 1: 180, 2: 60}}
+
+## test_nsolve.py 7 batch (Thm 6.1 norm solver, q=3; neg; M stability)
+case (10009, 3, 3, 0, False) D 6 M 11 groups [(3, 1, 2), (1, 0, -3)] unk 504 eq 576 dimS 9 dimB 9 dimN 0 dimU 3 a0inB True idem True trd1 True N(h)=G True 0.8s
+case (10009, 3, 3, 0, False) D 6 M 11 groups [(2, 0, -3), (3, 1, 0)] unk 603 eq 630 dimS 9 dimB 7 dimN 2 dimU 2 a0inB True idem True trd1 True N(h)=G True 1.5s
+case (10009, 3, 3, 0, False) D 6 M 11 groups [(2, 0, -3), (3, 1, 0)] unk 603 eq 630 dimS 9 dimB 9 dimN 0 dimU 3 a0inB True idem True trd1 True N(h)=G True 1.5s
+case (10009, 3, 3, 0, False) D 6 M 11 groups [(3, 1, 1), (3, 0, 1), (1, 0, -3)] unk 801 eq 873 dimS 9 dimB 9 dimN 0 dimU 3 a0inB True idem True trd1 True N(h)=G True 4.7s
+case (10009, 3, 3, 0, False) D 6 M 11 groups [(3, 1, 1), (2, 0, -3)] unk 603 eq 630 dimS 9 dimB 9 dimN 0 dimU 3 a0inB True idem True trd1 True N(h)=G True 1.4s
+case (10009, 3, 3, 0, False) D 6 M 11 groups [(3, 1, 2), (2, 0, -3)] unk 603 eq 630 dimS 9 dimB 7 dimN 2 dimU 1 a0inB True idem True trd1 True N(h)=G True 1.2s
+case (10009, 3, 3, 0, False) D 6 M 11 groups [(2, 0, -3), (3, 1, 0)] unk 603 eq 630 dimS 9 dimB 7 dimN 2 dimU 1 a0inB True idem True trd1 True N(h)=G True 1.4s
+case (10009, 3, 3, 0, False) D 6 M 11 groups [(3, 1, 1), (3, 0, 1)] unk 702 eq 819 dimS 9 dimB 9 dimN 0 dimU 3 a0inB True idem True trd1 True N(h)=G True 3.1s
+case (10009, 3, 3, 0, False) D 6 M 11 groups [(3, 1, 2), (1, 0, -3)] unk 504 eq 576 dimS 9 dimB 7 dimN 2 dimU 1 a0inB True idem True trd1 True N(h)=G True 0.9s
+case (10009, 3, 3, 0, False) D 6 M 11 groups [(6, 0, 1), (1, 0, -3), (3, 1, 0)] unk 1098 eq 1170 dimS 9 dimB 9 dimN 0 dimU 3 a0inB True idem True trd1 True N(h)=G True 12.1s
+case (10009, 3, 3, 0, False) D 3 M 8 groups [(3, 1, 1), (1, 0, -3)] unk 369 eq 387 dimS 10 dimB 6 dimN 3 dimU 1 a0inB True idem True trd1 True N(h)=G True 0.4s
+case (10009, 3, 3, 0, False) D 6 M 11 groups [(3, 1, 2)] unk 405 eq 522 dimS 9 dimB 9 dimN 0 dimU 3 a0inB True idem True trd1 True N(h)=G True 0.3s
+case (10009, 3, 3, 0, False) D 6 M 11 groups [(3, 1, 2)] unk 405 eq 522 dimS 9 dimB 9 dimN 0 dimU 3 a0inB True idem True trd1 True N(h)=G True 0.4s
+case (10009, 3, 3, 0, False) D 6 M 11 groups [(6, 0, 1), (2, 0, -3), (3, 1, 0)] unk 1197 eq 1224 dimS 10 dimB 6 dimN 3 dimU 1 a0inB True idem True trd1 True N(h)=G True 16.3s
+case (10009, 3, 3, 0, False) D 3 M 8 groups [(1, 0, -3), (3, 1, 0)] unk 369 eq 387 dimS 9 dimB 7 dimN 2 dimU 1 a0inB True idem True trd1 True N(h)=G True 0.3s
+case (10009, 3, 3, 0, False) D 6 M 11 groups [(3, 1, 1), (3, 0, 1)] unk 702 eq 819 dimS 9 dimB 9 dimN 0 dimU 3 a0inB True idem True trd1 True N(h)=G True 3.3s
+case (10009, 3, 3, 1, False) D 6 M 11 groups [(6, 0, 1), (3, 1, 0)] unk 999 eq 1116 dimS 9 dimB 7 dimN 2 dimU 2 a0inB True idem True trd1 True N(h)=G True 8.9s
+case (10009, 3, 3, 1, False) D 9 M 14 groups [(3, 1, 2), (1, 0, 3)] unk 639 eq 801 dimS 9 dimB 7 dimN 2 dimU 1 a0inB True idem True trd1 True N(h)=G True 1.7s
+case (10009, 3, 3, 1, False) D 9 M 14 groups [(3, 1, 2), (1, 0, 3)] unk 639 eq 801 dimS 9 dimB 7 dimN 2 dimU 1 a0inB True idem True trd1 True N(h)=G True 1.8s
+case (10009, 3, 3, 1, False) D 6 M 11 groups [(3, 0, 1), (2, 0, -3), (3, 1, 0)] unk 900 eq 927 dimS 9 dimB 9 dimN 0 dimU 3 a0inB True idem True trd1 True N(h)=G True 6.4s
+case (1009, 3, 3, 0, False) D 6 M 11 groups [(2, 0, -3), (3, 1, 0)] unk 603 eq 630 dimS 9 dimB 7 dimN 2 dimU 1 a0inB True idem True trd1 True N(h)=G True 1.5s
+case (1009, 3, 3, 0, False) D 0 M 5 groups [(3, 1, 0)] unk 189 eq 198 dimS 10 dimB 6 dimN 3 dimU 1 a0inB True idem True trd1 True N(h)=G True 0.1s
+case (1009, 3, 3, 0, False) D 3 M 8 groups [(3, 1, 1)] unk 297 eq 360 dimS 9 dimB 9 dimN 0 dimU 3 a0inB True idem True trd1 True N(h)=G True 0.1s
+case (1009, 3, 3, 0, False) D 6 M 11 groups [(6, 0, 1), (3, 1, 0)] unk 999 eq 1116 dimS 9 dimB 9 dimN 0 dimU 3 a0inB True idem True trd1 True N(h)=G True 8.5s
+case (331, 3, 3, 0, False) D 6 M 11 groups [(3, 1, 1), (3, 0, 1), (1, 0, -3)] unk 801 eq 873 dimS 9 dimB 7 dimN 2 dimU 1 a0inB True idem True trd1 True N(h)=G True 4.7s
+case (331, 3, 3, 0, False) D 6 M 11 groups [(3, 1, 1), (3, 0, 1), (1, 0, -3)] unk 801 eq 873 dimS 9 dimB 9 dimN 0 dimU 3 a0inB True idem True trd1 True N(h)=G True 4.7s
+case (331, 3, 3, 0, False) D 6 M 11 groups [(6, 0, 1), (2, 0, -3), (3, 1, 0)] unk 1197 eq 1224 dimS 10 dimB 6 dimN 3 dimU 1 a0inB True idem True trd1 True N(h)=G True 16.1s
+case (331, 3, 3, 0, False) D 6 M 11 groups [(3, 1, 2)] unk 405 eq 522 dimS 9 dimB 9 dimN 0 dimU 3 a0inB True idem True trd1 True N(h)=G True 0.3s
+q3 batch {'ok': 28, 'fail': 0, 'dimS': [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 10, 9, 9, 10, 9, 9, 9, 9, 9, 9, 9, 10, 9, 9, 9, 9, 10, 9], 'groups': 0, 'a0_in_B': 28}
+EXC case (10009, 3, 3, 0, True) AssertionError log not divisible by q: not a q-th power
+case (10009, 3, 3, 0, True) D 6 M 11 groups [(6, 0, 1), (1, 0, -3), (3, 1, 0)] unk 1098 eq 1170 dimS 9 dimB 9 dimN 0 dimU 3 a0inB True idem True trd1 True N(h)=G True 12.2s
+case (10009, 3, 3, 0, True) D 6 M 11 groups [(3, 1, 2)] unk 405 eq 522 dimS 9 dimB 9 dimN 0 dimU 3 a0inB True idem True trd1 True N(h)=G True 0.5s
+EXC case (10009, 3, 3, 0, True) AssertionError log not divisible by q: not a q-th power
+EXC case (10009, 3, 3, 0, True) AssertionError log not divisible by q: not a q-th power
+EXC case (10009, 3, 3, 0, True) AssertionError log not divisible by q: not a q-th power
+neg batch {'ok': 2, 'fail': 4, 'dimS': [9, 9], 'groups': 0, 'a0_in_B': 2}
+M stability dimS [9, 9, 9, 9] vs M+6 [9, 9, 9, 9]
+
+## test_nsolve.py q=5 (first run, then seed 11)
+case (10111, 5, 5, -1, False) D 5 M 12 groups [(5, 0, 1), (5, 1, 0)] unk 3325 eq 3900 dimS 25 dimB 25 dimN 0 dimU 5 a0inB True idem True trd1 True N(h)=G True 343.0s
+case (10111, 5, 5, -1, False) D 20 M 27 groups [(5, 1, 4)] unk 4075 eq 6150 dimS 25 dimB 25 dimN 0 dimU 5 a0inB True idem True trd1 True N(h)=G True 267.2s
+case (10111, 5, 5, -1, False) D 20 M 27 groups [(5, 1, 4)] unk 4075 eq 6150 dimS 25 dimB 25 dimN 0 dimU 5 a0inB True idem True trd1 True N(h)=G True 241.4s
+q5 batch {'ok': 2, 'fail': 0, 'dimS': [25, 25], 'groups': 0, 'a0_in_B': 2}
+
+## test_lambda_promise.py 37,43,61,67 3 (Prop 7.1 promise)
+p 37 {'curves': 3, 'points': 144, 'pred_div': 48, 'norm_ok_on_div': 48, 'norm_fail_on_div': 0, 'norm_ok_on_nondiv': 0, 'norm_fail_on_nondiv': 96}
+p 43 {'curves': 3, 'points': 150, 'pred_div': 50, 'norm_ok_on_div': 50, 'norm_fail_on_div': 0, 'norm_ok_on_nondiv': 0, 'norm_fail_on_nondiv': 100}
+p 61 {'curves': 3, 'points': 213, 'pred_div': 71, 'norm_ok_on_div': 71, 'norm_fail_on_div': 0, 'norm_ok_on_nondiv': 0, 'norm_fail_on_nondiv': 142}
+p 67 {'curves': 3, 'points': 198, 'pred_div': 66, 'norm_ok_on_div': 66, 'norm_fail_on_div': 0, 'norm_ok_on_nondiv': 0, 'norm_fail_on_nondiv': 132}
+
+## gauss_lemmas.py (Gaussian moat Lemmas 3.2, 3.3, 4.1, cube isoperimetry)
+Lemma differences (cnt, violations, min |E-E|/A): (3000, 0, 0.7222222222222222)
+cube edge isoperimetry (sets, violations): (77808, 0)
+short-list lemma (trials, violations): (20000, 0)
+continuity lemma (trials, violations): (20000, 0)
+
+## p3_local.py and p3_lifting.py (prime-argument paper, Lemmas 2.1, 2.3)
+(x-1)^2 (576, 0, {2: 2, 3: 2, 5: 2, 7: 2, 11: 2, 13: 2})
+x^2-1 (576, 0, {2: 1, 3: 1, 5: 1, 7: 1, 11: 1, 13: 1})
+x^3-x (576, 0, {2: 1, 3: 1, 5: 1, 7: 1, 11: 1, 13: 1})
+(x-1)(x-2) (576, 0, {2: 1, 3: 1, 5: 1, 7: 1, 11: 1, 13: 1})
+(x-1)^2(x+1) (576, 0, {2: 2, 3: 2, 5: 2, 7: 2, 11: 2, 13: 2})
+(x-1)^3 (576, 0, {2: 3, 3: 3, 5: 3, 7: 3, 11: 3, 13: 3})
+(x^2-2)(x^2-17)(x^2-34) (576, 0, {2: 1, 3: 1, 5: 1, 7: 1, 11: 1, 13: 1})
+lifting: (x-1)^2 {2:(2,5),3:(0,1),5:(0,1),7:(0,1)} 0 violations; x^2-1 {2:(1,3),...} 0; x^3-x {2:(1,3),...} 0; (x-1)^2(x+1) {2:(3,7),...} 0; (x-1)^3 {2:(2,5),3:(1,3),...} 0; h8 {2:(1,3),...} 0
+
+## p4_checks.py (totient paper: Type II determinant parametrization, block sieve)
+determinant bijection (fwd, img, conv, missing, extra, bad, noncoprime-failures): (3746, 3746, 3746, 0, 0, 0, 4258)
+block sieve z=13 h=2 (N, violations, level/log z, bound 4h+2): (60000, 0, 2.633, 10)
+block sieve z=30 h=2 (N, violations, level/log z, bound 4h+2): (60000, 0, 2.912, 10)
+block sieve z=30 h=4 (N, violations, level/log z, bound 4h+2): (60000, 0, 4.611, 18)
+
+## Lean scans
+GaussianMoat: 41 files, 598190 bytes, only 'import Mathlib'; rg -w sorry|admit|axiom|native_decide|implemented_by|extern|unsafe|opaque: no hits; Model.lean identical to ComparatorChallenges/GaussianMoat.lean
+Ostmann (GitHub code search, path lean/OAI/NumberTheory/Ostmann, 7720 files indexed): sorry 0, native_decide 0, implemented_by 0, unsafe 0, opaque 0, 'set_option debug' 0, ofReduceBool 0; 'axiom' 2 hits and 'admit' 2 hits, all in comments
