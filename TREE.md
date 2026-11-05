@@ -279,5 +279,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R261 OEIS contributor conjectures (Ordowski, Mathar, Kimberling), MathOverflow, pattern conjectures: hold; three scout claims were errors [R261.lean](Riemann/Tree/R261.lean)
 - R262 additive-combinatorics, zero-sum, finite-field and any-field conjectures hold or known; 1610.02539 restatement misprint [R262.lean](Riemann/Tree/R262.lean)
 - R263 point configurations, AI-search records, codes, small groups, dynamics, October papers: all correct; one scout misreading [R263.lean](Riemann/Tree/R263.lean)
-- R264 FRONTIER (next)
+- R264 Sun 2607.07638 Domb-number conjecture fails only at p = 3 (minor); Sun-related hunts hold or known [R264.lean](Riemann/Tree/R264.lean)
+- R265 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.

@@ -378,3 +378,4 @@
 - R261 hold: A270096, A195422, A275206, A309717, MO 316208, 2609.13764, 2608.21351; scout errors: A297741 (offset slip), A308620, A131393; known: Zenodo 23555113; timed out: Bala supercongruences [R261](Riemann/Tree/R261.lean)
 - R262 hold: 2402.01471, 2409.15075, 2610.21577, 1202.1816, A362676; known: 2410.23097, 2609.07113; misprint only: 1610.02539 (delta: n = 2 for k = 2); not testable: Zenodo 23968068 [R262](Riemann/Tree/R262.lean)
 - R263 verified others': 2609.09179, 2609.37056, 2611.03074, 2610.08480, 2611.06269, 2610.15115, 2610.41999, 2610.11574, 2611.01243, 2611.00817, 2611.00818; misread: 2611.01170 [R263](Riemann/Tree/R263.lean)
+- R264 minor: Sun 2607.07638 Sec. 4 conj. (i) fails at p = 3 only; known: 1309.1679 printed 3.2 in Z_3^2; hold: 2511.23223, 2603.20961 (Z_23), Zenodo 23858164, 2610.41971 [R264](Riemann/Tree/R264.lean)
