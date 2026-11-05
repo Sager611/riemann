@@ -29,3 +29,5 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - Theorem: the Fasi–Higham positivity conjecture holds for m = 3 and every k (all Taylor coefficients of 1/q_{k,3} are positive). [details](discoveries/fasi-higham-m3.md)
 - Gale's conjecture fails in R⁷ and R⁸ (the last open dimensions), hence in every dimension n ≥ 3; an explicit family with a hand proof for n ≥ 5. [details](discoveries/gale-r7-r8.md)
 - Theorem: the diagonal Fasi–Higham positivity holds for every odd m (all Taylor coefficients of 1/q_{m,m} positive; computer-assisted). [details](discoveries/fasi-higham-diagonal.md)
+- Record: ξ(K₆) ≥ 33 — a 3-colouring of K₃₃ in which every K₆ sees all three colours (was 25). [details](discoveries/xi-k6.md)
+- Record: the ambidextrous moving sofa constant is at most 19/10 (was 2.2195, from an unverified announcement). [details](discoveries/ambidextrous-sofa.md)
