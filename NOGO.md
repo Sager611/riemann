@@ -428,3 +428,4 @@
 - R306 N2: Liu's Hecke half-planes plus finite GRH heights do not give HB-type Lambda_chi bounds uniformly in q; newer half-planes move Lambda only in the 4th decimal (model) [R306](Riemann/Tree/R306.lean)
 - R307 N10: combining Chirre-Helfgott and Fiori-Jaskari gives no new bound (crossover 1.6e83); S-fractions of truncated zero power sums are automatically positive (no information); Lieb-Thirring counting fails at zeros [R307](Riemann/Tree/R307.lean)
 - R308 N13: Yakaboylu 2408.15135 v17 - similarity through unbounded omega(T)^{-1} is formal; it invalidates only the multiplicity-m theorem's proof (minor), not the main eigen-theorems; CCM finite operators' zero agreement is numerical only [R308](Riemann/Tree/R308.lean)
+- R309 N1: no analytic Weil-positivity window beyond log 2 is published; zeta-cycles give no positivity-to-height conversion; incidence-energy bounds do not apply to large-value sets [R309](Riemann/Tree/R309.lean)
