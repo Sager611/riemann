@@ -456,3 +456,4 @@
 - R326 N5: weighted Bergman/Hilbert Nyman-Beurling variants are RH-equivalent, not half-plane criteria; quantum prime states, persistent homology and ML of mu give no idea [R326](Riemann/Tree/R326.lean)
 - R327 N9: finite free convolution, super-resolution certificates and Delsarte/Cohn-Elkies LP give no RH-node mechanism (DH-blind or no xi structure) [R327](Riemann/Tree/R327.lean)
 - dbnaudit (Orca, N2): Raymond's Zenodo 23752103 (Λ ≤ 0.107964910079) and 23272725 (Λ ≤ 0.116397726408291) SOUND: every analytic step re-derived, author verifiers pass on new hardware, all 221,010 comparison steps rechecked exactly; the load-bearing prime-relation credits re-derived (without them about 0.10808). Our DBNOpt 0.1383621 is superseded. [DBNAudit](Riemann/Deep/DBNAudit/REPORT.md)
+- R328 N7: quantum modular forms, Habiro rings and dynamical zeta functions give no zero-location mechanism that fails for DH [R328](Riemann/Tree/R328.lean)
