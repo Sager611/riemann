@@ -1,0 +1,8 @@
+|f(s0)| at the DH zero: 6.795e-13  |L(s0,psi)|: 0.7022
+eps(psi) = (0.8506508084 + 0.5257311121j)  cross density = 0.3956745507
+T=  100.0  int|f|^2=   267.031 recipe=   270.227 rel=-0.0118 | int|L(psi)|^2=   408.160 formula=   426.871 rel=-0.0438
+T=  200.0  int|f|^2=   598.572 recipe=   600.381 rel=-0.0030 | int|L(psi)|^2=   955.119 formula=   964.645 rel=-0.0099
+T=  400.0  int|f|^2=  1321.358 recipe=  1320.616 rel=+0.0006 | int|L(psi)|^2=  2134.967 formula=  2151.096 rel=-0.0075
+T=  800.0  int|f|^2=  2890.167 recipe=  2880.938 rel=+0.0032 | int|L(psi)|^2=  4757.212 formula=  4745.807 rel=+0.0024
+T= 1200.0  int|f|^2=  4533.578 recipe=  4531.737 rel=+0.0004 | int|L(psi)|^2=  7541.746 formula=  7507.956 rel=+0.0045
+(run stopped by explore9 after T = 1200; T = 1600 would exceed the 1700 s alarm)
