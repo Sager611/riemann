@@ -1,0 +1,36 @@
+== gap.py: exit 0, 0s
+   PASS eps = [0.003523464644 +/- 4.35e-13] < 1/(tc0 log tc0) = [0.003679086850 +/- 4.89e-13]: D decreasing on [tN, tc0]
+   PASS c_73(1) = [0.0015116301 +/- 6.52e-12] > delta0; c_p(1) = (1+eps)log p - log(p+1) increases for p >= 67, and c_p(a) >= c_p(1) for a >= 1
+   PASS no violator among the 3 candidates in the gap (each has certified log-margin < 0)
+   ALL PASS
+== dfs_gap.py: exit 0, 1s
+   largest log-margin among them: [-0.00037812489 +/- 1.70e-12] at n = 831281402884796906843926125 (n/N = 3)
+   PASS: no odd n with N < n < c0 violates (OR)
+== oddca.py 5e8: exit 0, 133s
+   last odd CA violator: event (61, 1), N = 277093800961598968947975375 (= 3^4 5^3 7^2 11 ... 61, as in the paper)
+   PASS: every odd CA number N >= c0 = 67N with x_1 <= 5e+08 satisfies the odd Robin inequality (13236 numbers checked one by one, 26346275 more in 79866 blocks)
+== transfer.py 5e8 1.43e47 0.87338196661320752: exit 0, 207s
+   PASS: odd Robin at every odd CA number with x_1 in [5e8, 1.43e47] (b0 = [0.8733819666 +/- 1.33e-11]) => all odd N < n <= 10^(10^46.7931): 1209 boxes, min margin after odd correction 1.07e-05, k <= 40; 74s
+== transfer.py 5e8 1.42e47 7/8: exit 0, 277s
+   PASS: odd Robin at every odd CA number with x_1 in [5e8, 1.42e47] (b0 = 0.8750000000) => all odd N < n <= 10^(10^46.7900): 1235 boxes, min margin after odd correction 1.07e-05, k <= 40; 69s
+== transfer.py 5e8 6.46e46 1: exit 0, 339s
+   PASS: odd Robin at every odd CA number with x_1 in [5e8, 6.46e46] (b0 = 1.000000000) => all odd N < n <= 10^(10^46.4480): 1221 boxes, min margin after odd correction 1.07e-05, k <= 57; 62s
+ALL PASS total 339s
+      339.15 real       283.39 user         4.87 sys
+           417038336  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               50137  page reclaims
+                  21  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 187  voluntary context switches
+              401787  involuntary context switches
+           421127691  instructions retired
+           179218730  cycles elapsed
+            21332496  peak memory footprint

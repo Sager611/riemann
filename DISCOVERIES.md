@@ -12,6 +12,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N11) Least primes in every ideal class of almost all CM fields: below d_K^{1+ε} (known for every field: d_K^{694}). [details](discoveries/cm-least-primes.md)
 - (N10 (barrier)) Record: the integer Chebyshev constant of [0, 1] is at least 0.4222355 (was 0.4222286). [details](discoveries/integer-chebyshev.md)
 - (N4) Record: Robin's inequality verified for all n ≤ 10^(10^46.79), Nicolas' for primorials with p_k ≤ 1.78·10^48 (was ours 10^(10^38.71); Polak 10^(10^22.85)). [details](discoveries/robin-nicolas-ranges.md)
+- (N4) Sharp odd Robin criterion: RH ⟺ σ(n) < (e^γ/2) n log log n for every odd n > 277093800961598968947975375; Washington–Yang's gap closed. [details](discoveries/odd-robin.md)
 - (N5) Báez-Duarte's natural-number Nyman–Beurling criterion holds in L^p for all 1 < p < 2, also for every Dirichlet L-function; unconditionally true for p ≤ 1.14497. [details](discoveries/nyman-beurling-lp.md)
 - (N10) First explicit power-saving Mertens bound: |M(x)| ≤ 1.84·10^6 x^0.9382 for all x ≥ 1 (before: no explicit exponent below 1). [details](discoveries/mertens-power-saving.md)
 - (N11) First explicit Littlewood bound without GRH: |L(1, χ)| ≥ 0.11/max(3, log log q) for every primitive χ; h(−d) ≥ 0.035√d/max(3, log log d) (was 1/log q). [details](discoveries/littlewood-half-plane.md)
