@@ -240,3 +240,4 @@ import Riemann.Tree.R240
 import Riemann.Tree.R241
 import Riemann.Tree.R242
 import Riemann.Tree.R243
+import Riemann.Tree.R244
