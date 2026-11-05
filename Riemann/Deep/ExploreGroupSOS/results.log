@@ -1,0 +1,97 @@
+# explore8 results (2026-11-05), printed outputs of the scripts in this folder (one process at a time, single-threaded)
+
+## test_identity.py 5  (lattice identity vs galerkin_fast, cosine-basis f, ||x||^2 = 1.1429)
+c 5 Galerkin Q(f) = 0.031327234043802055
+  P=2.0L K=2000000: lattice Q = 0.0313266968  Parseval ||f||^2 = 1.14289996
+  P=3.0L K=2000000: lattice Q = 0.0313264509  Parseval ||f||^2 = 1.14289994
+  P=5.0L K=2000000: lattice Q = 0.0313259767  Parseval ||f||^2 = 1.14289991
+  (K = 2e4, 2e5 converge monotonically to the same value; tail ~ log K / K)
+
+## lam_small.py / lam_small2.py  (even-sector Galerkin lambda_min, galerkin_fast, inverse iteration)
+c=2: N=20 1.3423466e-3, N=40 1.3327295e-3, N=80 1.3303180e-3, N=160 1.3296366e-3
+c=3: N=60 5.6206825e-8, N=120 5.5520388e-8
+c=4: N=80 7.8416806e-13
+c=5: N=100 1.0050225e-17
+
+## lp_ext.py c s basis M B   (dual Krein extension LP; t* = best min weight)
+c=2 P=2L      pt  M=60 B=2: K=83 nodes, t* = -2.1887e-02
+c=2 P=1.25*2L pt  M=60 B=2: K=103, t* = -1.7243e-03 (B binding)
+c=2 P=1.5*2L  pt  M=60 B=2: K=124, t* = -2.8756e-03 (B binding)
+c=2 P=2*2L    pt  M=60 B=2: K=165, t* = -4.5618e-04 (B binding)
+c=2 P=1.5*2L  hat M=60 B=10: t* = -3.1018e-01 ; B=100: -5.7169e-02
+c=2 P=2*2L    hat M=60 B=10: t* = -2.6035e-01 ; B=100: -8.0137e-03
+c=2 P=3*2L    hat M=60 B=10: t* = -1.8060e-01 ; B=100: K=420 nodes (r_K=632.5), t* = +5.8842e-05, 18 active nodes, sum|e| = 100 (binding)
+(point-mass runs with B >= 10 exceeded array limits: the envelope pushed K too high; not repeated)
+
+## semi.py scan (even sector, N=40, float64 eigvalsh of the midpoint matrix; values ~1e-16 are noise)
+inf    0.3:7.59e-03 0.35:1.23e-03 0.4:6.29e-04 0.45:-7.41e-03 0.5:-3.23e-02 0.6:-1.28e-01 1.0:-5.84e-01
+inf2   0.4:1.82e-04 0.5:9.50e-07 0.55:5.57e-08 0.6:-1.34e-03 0.7:-1.02e-01 1.0:-4.48e-01
+inf23  0.6:1.70e-09 0.7:4.77e-13 0.8:1.23e-16 0.9:-1.17e-01 1.0:-3.49e-01
+inf235 0.8:1.23e-16 0.9:(noise) 1.0:-3.45e-03 1.2:-5.18e-01
+all    positive (to noise) through 1.2
+## semi_thr.py (N=50, mpmath eigsy at 80 digits, bisection)
+inf    lm(0.40)=6.285e-4  lm(0.45)=-7.412e-3  threshold in (0.41013, 0.41016)
+inf2   lm(0.55)=5.486e-8  lm(0.60)=-1.345e-3  threshold in (0.57195, 0.57197)
+inf23  lm(0.80)=1.91e-17  lm(0.90)=-0.1175    threshold in (0.81245, 0.8125)
+inf235 lm(0.90)=4.868e-23 lm(1.00)=-3.553e-3  threshold in (0.97705, 0.97710)
+
+## prec_test.py (Cholesky of Q_N - (lam/2) I at b bits, exact residual)
+c=5  N=60 lam_min(Q_N)=1.124e-17: 53 chol FAILED; 64 chol ok, ||E||_F = 1.41e-18 -> CERT
+c=10 N=60 lam_min(Q_N)=2.203e-43: 53..128 chol FAILED; 160 ok, ||E||_F = 1.64e-47 -> CERT
+c=16 N=80 lam_min(Q_N)=1.293e-74: 53..224 chol FAILED; 256 ok, ||E||_F = 1.6e-76 -> CERT
+
+## env.py (envelope constants; log10 nodes = log10(P e^{beta+1}))
+c | 2sigma | beta_sep extra=2,4,8 (P needed) | ||C_p||_window | log10 nodes P=2L no ext | sep ext(8) | norm-envelope
+10   | 7.075  | 4.465 (11.7), 4.209 (19.5), 3.951 (35.0)    | 2.510  | 4.2  | 3.7  | 2.2
+16   | 9.944  | 6.238 (15.4), 5.801 (25.6), 5.446 (46.2)    | 3.639  | 5.5  | 4.5  | 2.8
+24.5 | 14.323 | 9.031 (18.8), 8.335 (31.4), 7.834 (56.4)    | 4.901  | 7.5  | 5.6  | 3.4
+47   | 21.613 | 13.806 (22.6), 12.757 (37.6), 12.042 (67.7) | 7.302  | 10.7 | 7.5  | 4.5
+71   | 27.698 | 18.474 (25.2), 17.032 (42.0), 16.121 (75.7) | 9.214  | 13.4 | 9.3  | 5.4
+200  | 52.333 | 34.340 (31.8), 31.496 (52.9), 29.779 (95.3) | 15.884 | 24.2 | 15.3 | 8.4
+
+## scan_ext.py (non-wrapped prime-power atoms, P = 2 * largest atom)
+c=10 P=2L no ext: 5466 nodes, 50 negative (24 below r=188, 26 beyond; last 5548)
+c=10 P=11.68 sep ext: envelope 4.465, 1057 nodes, 98 negative (64 / 34; last 526)
+c=10 P=19.46 sep ext: envelope 4.209, 1362 nodes, 184 negative (last 390)
+c=16 P=2L no ext: 116211 nodes, 125 negative (last 77404); P=25.65 sep ext: 8571 nodes, 655 negative (last 1967)
+
+## scan_wrap.py c 4 40 (atoms k log p wrapped mod P into the gap, first 4 admissible powers per prime)
+c=10 P=2L: nodes 5466, negative 50, last 5548
+c=10 P=1.25*2L: no ext 6832/50/4650 | ext (16 atoms) envelope 5.456: 1375 nodes, 41 neg, last 1379
+c=10 P=1.5*2L:  no ext 8198/64/5548 | ext envelope 4.651: 748 nodes, 58 neg, last 543
+c=10 P=2*2L:    no ext 10930/85/5548 | ext envelope 4.315: 712 nodes, 79 neg, last 452
+c=16 P=2L: 116211/125/77404
+c=16 P=1.25*2L: no ext 145263/152/77404 | ext (24 atoms) envelope 7.488: 12468 nodes, 158 neg, last 8608
+c=16 P=1.5*2L:  no ext 174316/187/77404 | ext envelope 6.508: 5670 nodes, 164 neg, last 3907
+c=16 P=2*2L:    no ext 232421/245/77404 | ext envelope 5.978: 4430 nodes, 256 neg, last 2322
+c=24.5 P=2L: 10665084/516/3955354
+c=24.5 P=1.25*2L: no ext 13331354/680/3955354 | ext (36 atoms) envelope 11.001: 488255 nodes, 731 neg, last 302065
+c=24.5 P=1.5*2L:  no ext 15997625/791/3955354 | ext envelope 9.443: 122580 nodes, 823 neg, last 57552
+c=24.5 P=2*2L:    no ext 21330166/1021/3955354 | ext envelope 8.688: 77011 nodes, 1253 neg, last 34074
+
+## torus_sos2.py (group-ring SOS on Z^4 = <2,3,5,7>, c = 10, P = 1.5*2L, Gram support = exponent box; CLARABEL)
+box (1,1,1,1), |B| = 81: none 2*beta = 13.1698; sep (4 free atoms) 11.4648; mixed (206 free atoms) 6.3538  [~33 s, RSS 0.89 GB]
+(degree too low: 'none' should be 7.075 at sufficient degree; box (2,2,1,1) needed ~2 GB and was stopped)
+
+## torus_lp.py (sampled LP with cutting planes on T^4; envelope = max of the prime polynomial; then lattice scan), c = 10
+P=1.5*2L none:                         envelope 7.0750 (= 2 sigma), lattice 8198 nodes, 64 negative, last 5548, min w -2.489
+P=1.5*2L sep (7 atoms, box 6,4,3,3):    envelope 4.7200, sum|e| 2.32, lattice 794 nodes, 59 negative, last 543, min w -2.549
+P=1.5*2L mixed (53 atoms, box 3,2,1,1): envelope 3.3815 (sampled residual -4.6e-3), sum|e| 4.70, lattice 220 nodes, 31 negative, last 109, min w -2.465  [RSS 0.86 GB]
+(box 4,3,2,2: RSS 2.0 GB, stopped by its 500 s alarm, no result)
+P=1.25*2L mixed (33 atoms, box 3,2,1,1): envelope 3.7356 (sampled residual -8.0e-3), sum|e| 3.59, lattice 257 nodes, 33 negative, last 171, min w -3.282 [RSS 0.72 GB]
+c=16 P=1.25*2L none: envelope 9.9438 (= 2 sigma), lattice 145263 nodes, 152 negative, last 77404, min w -3.070
+c=16 P=1.25*2L sep (6 atoms, box 6,4,2,2,2,2): envelope 7.7166, sum|e| 1.79, lattice 15812 nodes, 155 negative, last 8608, min w -3.979
+c=16 P=1.25*2L mixed (122 atoms, box 2,1,1,1,1,1): envelope 5.4078 (sampled residual -1.0e-1; scan used 5.51), sum|e| 6.90, lattice 1757 nodes, 83 negative, last 1070, min w -4.671 [RSS 1.6 GB: over the 1 GB rule]
+(the printed "||C_p|| = 2.510" in torus_lp.py output is the c = 10 value; c = 16: 3.639)
+
+## bb.py tlp_c10_1.25_mixed.npz 0.05 (branch-and-bound on T^4, second-order Taylor bound, float64)
+level 0: boxes 331776, unresolved 75384, h = 1.31e-01, min centre value -3.7385
+level 1: boxes 1206144, unresolved 143852, h = 6.54e-02, min centre value -3.7433
+level 2: boxes 2301632, unresolved 47172, h = 3.27e-02, min centre value -3.7453
+level 3: boxes 754752, unresolved 0, h = 1.64e-02, min centre value -3.7463
+beta(LP) = 3.7356, verified envelope: Phi >= -3.7856 on the whole torus (boxes checked 4594304)  [13 s, RSS 0.57 GB]
+## rescan.py tlp_c10_1.25_mixed.npz 3.7856 10
+c=10 P=5.7565: certified envelope 3.7856: scan to r=290.7, nodes 268, negative 33, last neg r 171.4, weights < 1: 72
+## Chekmachev's certificates for comparison (ChekAudit evidence, our cert.py)
+c=10 even: K2=J=201 kscan=14797 kscan_e=5444 sel_odd=5 sel_even=16 |K-|=21 |J-|=12 order=33, 384 bits
+c=16 even: K2=J=427 kscan=313858 kscan_e=115462 sel_odd=59 sel_even=49 |K-|=105 |J-|=28 |G|=2960 order=133, 512 bits
