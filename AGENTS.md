@@ -1,31 +1,75 @@
 # riemann — rules
 
-Goal: Prove or disprove the Riemann Hypothesis by endless Lean proof-tree search (≥8 scouts/round, NOGO log, commit per round, never stop).
-Priority (user, 2026-10-20; scoped 2026-11-05): hunt NEW discoveries (new theorems, records, counterexamples, false steps) on the RH tree: each must advance a named `TREE.md` node (RH criterion/equivalent, quantitative zero or prime-error record, L-function analogue, barrier to an approach); exploration share: 3 of 8 scouts + 1 Orca agent on remote fields, no bridge needed upfront; judged by whether it yields a new idea for an RH node; formalizing known results is secondary. DISCOVERIES.md strict: new theorems, records, counterexamples to established statements only. Broken claimed proofs → REFUTATIONS.md; routine/conditional deductions → COROLLARIES.md; formalizations → FORMALIZATIONS.md.
-Disk (user, 2026-10-21): keep on disk only what is actively worked on; delete scratch, downloads, caches and `.lake` of finished work immediately (re-fetch Mathlib with `lake exe cache get` when a build is needed).
+> [!IMPORTANT]
+> Editing rules: ≤ 100 lines excluding the Changelog. Maximum deletion, minimum addition: each change leaves the fewest words with the densest information. Rules only; reasons, dates and anecdotes go to the Changelog. Every change appends one Changelog row.
 
-## Work loop (never stop)
-1. Pick one node of the RH approach tree at the top of `TREE.md` (seed it if missing); rank nodes by RH relevance × chance × size of gain.
-2. Branch: ≥8 parallel scouts on that node; directions = state of the art (current record, newest papers), computation (extend ranges/constants), adversarial (counterexamples to lemmas the approach needs), many wild/out-of-box/original.
-3. Write every branch in Lean (`Riemann/Tree/R###/`): claim, counterexample or reduction; `sorry` only for open obligations, marked.
-4. Dead ends → `NOGO.md`, few words each.
-5. Never ultraworker (user, 2026-10-21): all edit/build/research work beyond scouts → Orca agent: `taskpolicy -b nice -n 19 pi --no-lens --provider anthropic --model claude-opus-5-5 --thinking max` with OMP/OPENBLAS/MKL/VECLIB_MAXIMUM/NUMEXPR thread counts = 1 (user, 2026-10-20; harness is pi again: user uninstalled pig on 2026-10-22, never reinstall it; CPU limits after the user's CPU pause, 2026-10-23: low-power cores, one single-threaded job per agent; pi-lens off: its pyright/opengrep servers cost up to ~600 MB per agent), tight full brief; close its tab when done.
-5b. Before any formalization: check Mathlib, openai/math, facebookresearch/atlas-lean, zeta23 trees yourself (GitHub API); scouts' "none known" is unreliable (Hasse was in ATLAS).
-5c. Disk low: truncate `.lake/build/ir/**/*.setup.json` to 0 bytes (no rebuild; QRH port had 8.9 GB). Never delete `.c` files (triggers rebuild). Disk emergency (<1 GB): stop our heavy jobs; check `/var/folders/*/*/X/*code_sign_clone` (stale Chrome clones), other projects' `/tmp/wt-*`, swap; our QRH oleans (1.6 GB) are deletable (rebuild costs hours).
-5e2. Search down (Exa out of credits, keyless rate-limited, 2026-10-21): scouts may use only `web_search({approach:"arxiv"})` inside try/catch. pdftotext drops overlines/accents: confirm notation-level flaws in the TeX (`https://arxiv.org/e-print/<id>`). Under heavy load run scouts at concurrency 4. Doc-only Tree files: check with plain `lean <file>` (no lake, no Mathlib). Write `.lean` files via bash/python, never the write/edit tools: pi-lens then spawns `lake serve`, which clones Mathlib into `.lake` despite `.pi-lens.json`. `.lake` is a placeholder FILE that blocks stray lake/LSP Mathlib clones; delete it only for a real build.
-5d. Scout timeouts can orphan their python/bash (ppid 1, cwd = repo); check `ps -Ao pid,ppid,etime,args | awk '$2==1'` and kill ours (a 15 h mpmath loop was found).
-5e. Orca agents stall silently on "Response was truncated": if no Working line, read the terminal tail and nudge ("continue; write long derivations to files"); an idle agent may need --enter twice. Hung tool calls show "Elapsed Nh" in the terminal: kill the process; briefs must demand timeouts on scripts.
-6. `lake build` green → git commit, then `git push origin main` after EVERY commit (user, 2026-10-21; repo is public: never commit secrets).
+Goal: prove or disprove RH by endless Lean proof-tree search; never stop.
+
+## Priority
+- New discoveries (theorems, records, counterexamples, false steps) advancing a named node of the RH approach tree at the top of `TREE.md`: RH criteria/equivalents, quantitative zero or prime-error records, L-function analogues, barriers to approaches.
+- Exploration share: 3 of 8 scouts + 1 Orca agent on remote fields, no RH link needed upfront; judged by whether it yields a new idea for an RH node.
+- Formalizing known results is secondary.
+
+## Work loop
+1. Pick one tree node (seed the tree if missing); rank by RH relevance × chance × gain.
+2. ≥ 8 scouts on it: state of the art, computation (extend ranges/constants), adversarial (counterexamples to lemmas the approach needs), wild.
+3. Record the round in `Riemann/Tree/R###.lean` (claim, counterexample or reduction; `sorry` only for marked open obligations); dead ends → one line in `NOGO.md`.
+4. Work beyond scouts (edit, build, research) → Orca agent with a tight full brief; close its tab when done.
+5. Check green → commit → `git push origin main`, every commit. Public repo: no secrets.
 
 ## Discoveries
-`DISCOVERIES.md`: one short line per entry (≤ 25 words) linking to `discoveries/<name>.md` (statement, before, method, review, novelty, RH relevance: node advanced, files; user 2026-10-23); off-tree results go under a "Side results" heading; tell user; `reviewer` judges significance; scouts check online novelty; insignificant or known → remove. Records: also scan arXiv monthly listings (`https://arxiv.org/list/<cat>/<YYYY-MM>?show=2000`, math.NT/CV/GM, this and last month) and Zenodo; a missed 8 Oct paper (Λ ≤ 0.13963) voided our de Bruijn–Newman entry.
+- `DISCOVERIES.md`: one line (≤ 25 words) per entry → `discoveries/<name>.md` (statement, before, method, review, novelty, RH node advanced, files); off-tree results under "Side results"; tell the user.
+- Entry needs own verification, a `reviewer` verdict and an adversarial novelty check (arXiv monthly listings `https://arxiv.org/list/<cat>/<YYYY-MM>?show=2000`, this and last month; Zenodo; our NOVELTY.md files). Known or insignificant → remove.
+- Broken claimed proofs → `REFUTATIONS.md`; routine/conditional deductions → `COROLLARIES.md`; formalizations → `FORMALIZATIONS.md`.
 
-## Constraints
-- Never ask permission; decide, act, log.
-- Orca agents: no new worktrees (.lake ≈ 6 GB, disk tight); own subdir; orchestrator commits.
-- Few parallel Lean compiles; scratch in `.scratch/`. Lean LSP off (`.pi-lens.json`): each worker loads Mathlib (~3 GB).
+## Orca agents
+- `OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1 taskpolicy -b nice -n 19 pi --no-lens --provider anthropic --model claude-opus-5-5 --thinking max`; never ultraworker.
+- One single-threaded job each, with a hard time limit; no new worktrees; own subdirectory; orchestrator commits.
+- Stalled (no "Working" line): read the terminal tail, nudge "continue; write long derivations to files"; idle may need Enter twice; "Elapsed Nh" → kill the hung process.
+
+## Scouts
+- Web search only `web_search({approach:"arxiv"})` in try/catch; heavy load: concurrency ≤ 4.
+- Confirm notation-level flaws in the TeX (`https://arxiv.org/e-print/<id>`), not pdftotext.
+- Kill our orphans: `ps -Ao pid,ppid,etime,args | awk '$2==1'` with cwd = repo.
+- "None known" is unreliable: before formalizing, check Mathlib, openai/math, facebookresearch/atlas-lean, zeta23 yourself (GitHub API).
+
+## Lean and disk
+- Doc-only tree files: plain `lean <file>`; real: `lake env lean <file>`, all: `lake build`; few compiles in parallel.
+- Write `.lean` via bash/python, never the write/edit tools; Lean LSP off (`.pi-lens.json`).
+- `.lake` is a placeholder file; delete it only for a real build (`lake exe cache get`).
+- Keep only active work on disk; delete `.scratch/` leftovers, downloads, caches and finished `.lake` at once.
+- Disk low: truncate `.lake/build/ir/**/*.setup.json` to 0 bytes; never delete `.c` files. Below 1 GB: stop heavy jobs; check `/var/folders/*/*/X/*code_sign_clone`, other projects' `/tmp/wt-*`, swap; QRH oleans (1.6 GB) are deletable.
 - `rg`, never `grep`. No Docker. No vitest.
-- Compile: `lake env lean <file>`; all: `lake build`.
 
 ## Layout
-`Riemann/Fayed/` paper; `Riemann/Tree/` branches; `TREE.md` index; `NOGO.md`; `DISCOVERIES.md`.
+`Riemann/Fayed/` paper; `Riemann/Tree/` rounds; `TREE.md` tree + round index; `NOGO.md`; `DISCOVERIES.md`.
+
+## Changelog
+| Timestamp (UTC) | Who | What | Why |
+|---|---|---|---|
+| 2026/10/20 01:28 | orchestrator | Created: rules for checking Fayed's RH proof in Lean | Project start |
+| 2026/10/20 16:10 | orchestrator | Orca agents: `--thinking max` | Adrian |
+| 2026/10/20 17:15 | orchestrator | Check external Lean libraries before formalizing | Scouts' "none known" missed Hasse in ATLAS |
+| 2026/10/20 18:27 | orchestrator | Goal: prove or disprove RH; push each round | Adrian |
+| 2026/10/20 21:34 | orchestrator | Truncate `*.setup.json` when disk is low | QRH port used 8.9 GB |
+| 2026/10/20 23:47 | orchestrator | Priority: new discoveries over formalizations | Adrian |
+| 2026/10/21 01:28 | orchestrator | DISCOVERIES: new mathematics only; formalizations → FORMALIZATIONS.md | Adrian |
+| 2026/10/21 01:36 | orchestrator | Never ultraworker; use Orca agents | Adrian |
+| 2026/10/21 01:41 | orchestrator | Refutations and corollaries out of DISCOVERIES | Adrian |
+| 2026/10/21 05:48 | orchestrator | Kill orphaned scout processes | A 15 h mpmath loop was found |
+| 2026/10/21 09:32 | orchestrator | Nudge agents stalled on truncated responses | Silent stalls |
+| 2026/10/21 09:40 | orchestrator | Idle agents may need Enter twice | Nudges ignored |
+| 2026/10/21 17:50 | orchestrator | Push after every commit | Adrian |
+| 2026/10/21 18:27 | orchestrator | Kill hung tool calls ("Elapsed Nh") | Hung calls |
+| 2026/10/21 22:05 | orchestrator | Disk emergency playbook | Disk nearly full |
+| 2026/10/21 23:16 | orchestrator | Keep only active work on disk | Adrian |
+| 2026/10/21 23:45 | orchestrator | Write `.lean` via bash | pi-lens spawned `lake serve`, which cloned Mathlib |
+| 2026/10/22 00:47 | orchestrator | Scouts: arXiv-only web search; TeX for notation flaws | Exa out of credits, keyless search throttled |
+| 2026/10/22 01:03 | orchestrator | `.lake` placeholder file | Stray Mathlib clones |
+| 2026/10/22 01:30 | orchestrator | Novelty: scan arXiv monthly listings | A missed 8 Oct paper (Λ ≤ 0.13963) voided our de Bruijn–Newman entry |
+| 2026/10/23 01:30 | orchestrator | DISCOVERIES: one line per entry, details in `discoveries/` | Adrian |
+| 2026/10/23 03:35 | orchestrator | Orca harness: pig → pi | Adrian uninstalled pig |
+| 2026/10/23 05:47 | orchestrator | Orca: pi-lens off, low-power cores, single-threaded | Adrian's CPU pause; pi-lens cost ~600 MB per agent |
+| 2026/11/05 05:01 | orchestrator | Scope discoveries to the RH approach tree | Adrian: discoveries were not moving toward RH |
+| 2026/11/05 05:06 | orchestrator | Exploration share: 3 of 8 scouts + 1 Orca agent on remote fields | Adrian: RH may need ideas from remote fields |
+| 2026/11/05 05:16 | orchestrator | Terse rewrite; callout; Changelog; check own NOVELTY files | Adrian: file too fluffy; the sofa "record" had missed Tomar's better bound |
