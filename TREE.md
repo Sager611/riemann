@@ -397,5 +397,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R361 node N10 round 7: records stand; short-interval prime hand-overs and Hurst's Mertens oscillations rechecked; pi(x) < li(x) proved only to 1e19, RH to 3e12 could reach about 3.6e21 in principle (candidate) [R361.lean](Riemann/Tree/R361.lean)
 - R362 node N4 round 6: records stand; no GA2 number in [5041, 10^(10^46.79)] and no extraordinary number in (4, 10^(10^46.79)] (routine); the odd-Robin finite gap of 2008.04787 is a candidate [R362.lean](Riemann/Tree/R362.lean)
 - R363 node N7 round 7: B_2 + 2.2e-254 stands and Bebel's Lean proof uses only the standard axioms (tracker Comparator admission, our scan); the hybrid twelfth moment for family density is not in Nunes or Milicevic-White [R363.lean](Riemann/Tree/R363.lean)
-- R364 FRONTIER (next)
+- R364 node N6 round 7: records stand; RH height 3e12 is still the rigorous record; Chung's Rev. 3.1 keeps the false Lemma 4.0(2); the Laguerre range of 2611.02944 is tied to the height and the global L_1[Xi] >= 0 is open [R364.lean](Riemann/Tree/R364.lean)
+- R365 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
