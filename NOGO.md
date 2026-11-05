@@ -356,3 +356,4 @@
 - R242 verified others': 2608.15281, 2608.23652, 2608.22936, 2606.05439, 2608.17517; not testable: 2608.15992, 2608.15666; unverified: Zenodo 23895875. [R242](Riemann/Tree/R242.lean)
 - R243 verified others': 2610.41716, 2605.15500, 2607.23662, 2608.00323, 2607.27246, 2609.39008; not testable: 2606.28157. [R243](Riemann/Tree/R243.lean)
 - R244 verified others': 2604.27140, 2608.27494, 2604.28072; four scouts timed out; unverified: Zenodo 23609323. [R244](Riemann/Tree/R244.lean)
+- R245 verified others': 2606.00843, 2606.00290, 2606.00246; minor typo: 2606.00420 example; timed out: 2606.00802, 2606.00646; not testable: A398768. [R245](Riemann/Tree/R245.lean)
