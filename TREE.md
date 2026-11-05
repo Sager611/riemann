@@ -368,5 +368,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R332 node N6 round 5: all-n range d <= 1.6e25 and PF_{k*} stand; 2608.19160's Csordas-Dimitrov proof is interval-certified [R332.lean](Riemann/Tree/R332.lean)
 - R333 node N3 round 4: Fabbian's inputs rechecked; Li certificate moved to the HSW zero count (Trudgian 2014 error; numbers unchanged); 106.25 T^2 with the Lean-checked half-plane (routine) [R333.lean](Riemann/Tree/R333.lean)
 - R334 node N4 round 4: Robin to 10^(10^38.6) stands (Polak v1.0.0 only); Lagarias' form verified on the same range; Nicolas rechecked to 10^6 [R334.lean](Riemann/Tree/R334.lean)
-- R335 FRONTIER (next)
+- R335 node N1 round 5: no window beyond Chekmachev's claim; R322's constant transcription corrected; Dirichlet-L Weil windows uncertified (candidate weilchi) [R335.lean](Riemann/Tree/R335.lean)
+- R336 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
