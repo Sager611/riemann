@@ -1,0 +1,53 @@
+# explore7 outputs (2026-11-05, macOS arm64, single-threaded, nice/alarm-limited, one process at a time)
+
+## t1_stam.py  (6.7 s wall, 40 MB RSS)
+n=100  Phi(He_n)=1.010101e-02 (theory 1/(n-1)=1.010101e-02)  chi(He_n)=2.096641
+(a) truncated Xi, N=50: Phi_n(p0)=7.0535e-05, chi_n(p0)=4.9599, min gap 1.6902 at x=-223.749
+    true first backward collision: t_c = -0.383093 (collision) at x = -222.781; isolated-pair estimate -g^2/8 = -0.357117
+    Stam lower bound Lambda_p >= -7.1603e+01 ; EPI lower bound Lambda_p >= -1.5343e+02
+(b) t=0.020: Phi=6.995255e-05 (monotone dec: True); Stam rel. slack 7.980e-03; EPI rel. slack 1.478e-04
+(b) t=0.050: Phi=6.914312e-05 (monotone dec: True); Stam rel. slack 1.905e-02; EPI rel. slack 3.653e-04
+(b) t=0.108: Phi=6.775705e-05 (monotone dec: True); Stam rel. slack 3.793e-02; EPI rel. slack 7.732e-04
+(b) t=0.200: Phi=6.591981e-05 (monotone dec: True); Stam rel. slack 6.282e-02; EPI rel. slack 1.390e-03
+(c) planted pair at m=181.30, Y=0.3: V,S monotone=True; landing t*=0.04467 (de Bruijn Y^2/2=0.04500); at t1=0.108: Phi=9.788e-05 vs Stam threshold 4.676e-02 (ratio 2.09e-03); N=2.034e+04 vs EPI threshold 1.431e+01 (ratio 1.42e+03)
+(c) planted pair at m=181.30, Y=0.75: V,S monotone=True; landing t*=0.26899 (de Bruijn Y^2/2=0.28125); at t1=0.289: Phi=1.645e-04 vs Stam threshold 1.748e-02 (ratio 9.42e-03); N=2.038e+04 vs EPI threshold 3.829e+01 (ratio 5.32e+02)
+(c) planted pair at m=109.42, Y=0.75: V,S monotone=True; landing t*=0.27350 (de Bruijn Y^2/2=0.28125); at t1=0.294: Phi=1.658e-04 vs Stam threshold 1.721e-02 (ratio 9.63e-03); N=2.037e+04 vs EPI threshold 3.888e+01 (ratio 5.24e+02)
+
+## t2_harnack.py  (108 s wall, 40 MB RSS)
+kappa = 0.284079043840412  a(1..10) = ['1.0', '0.284079', '-0.284079', '-1.0', '0.0', '1.0', '0.284079', '-0.284079', '-1.0', '0.0']
+DH kernel evenness Phi(v)/Phi(-v): ['1.0', '1.0', '1.0']
+zeta kernel evenness: ['1.0', '1.0', '1.0']
+(b) zeta: min kernel on u in (0,2] = 0 (nonpositive at [1.475, 1.5, ...]); max d2/dw2 log K(sqrt w) = -174.49; log-concavity fails at w = []
+(b) DH: min kernel on u in (0,2] = 0.0 (nonpositive at [2.4, 2.425, ...]); max d2/dw2 log K(sqrt w) = -40.712; log-concavity fails at w = []
+    NOTE: the "0" values are the code's underflow cutoff (exponent > 400 resp. 300), i.e. u > 1.21 (zeta) and u > 1.54 (DH);
+    there the n = 1 term alone remains and is positive and log-concave in w = u^2 analytically. Tested range: zeta u <= 1.21, DH u <= 1.54.
+(a) zeta t=   -3: min_m Turan ratio (>1 means holds) = 1.0152575 at m=25; m=1..4: ['1.06771', '1.05749', '1.05022', '1.04476']
+(a) zeta t=   -1: min_m Turan ratio (>1 means holds) = 1.015553 at m=25; m=1..4: ['1.07236', '1.06093', '1.0529', '1.04692']
+(a) zeta t= -0.3: min_m Turan ratio (>1 means holds) = 1.0156572 at m=25; m=1..4: ['1.07409', '1.06219', '1.05388', '1.04771']
+(a) zeta t=    0: min_m Turan ratio (>1 means holds) = 1.015702 at m=25; m=1..4: ['1.07484', '1.06274', '1.0543', '1.04805']
+(a) zeta t=  0.3: min_m Turan ratio (>1 means holds) = 1.0157469 at m=25; m=1..4: ['1.07561', '1.0633', '1.05473', '1.0484']
+(a) DH t=   -3: min_m Turan ratio (>1 means holds) = 1.0205608 at m=25; m=1..4: ['1.16789', '1.12254', '1.09726', '1.08115']
+(a) DH t=   -1: min_m Turan ratio (>1 means holds) = 1.0212371 at m=25; m=1..4: ['1.20196', '1.14135', '1.10955', '1.08997']
+(a) DH t= -0.3: min_m Turan ratio (>1 means holds) = 1.0214729 at m=25; m=1..4: ['1.21588', '1.14866', '1.11419', '1.09325']
+(a) DH t=    0: min_m Turan ratio (>1 means holds) = 1.0215738 at m=25; m=1..4: ['1.2222', '1.15191', '1.11623', '1.09468']
+(a) DH t=  0.3: min_m Turan ratio (>1 means holds) = 1.0216745 at m=25; m=1..4: ['1.22874', '1.15523', '1.11831', '1.09613']
+(c) k=0: dL_k/dt = 1219179.70881, (k+1)(2k+1)L_(k+1) - L_k''/2 = 1219179.70881
+(c) k=1: dL_k/dt = 76731456.2324, (k+1)(2k+1)L_(k+1) - L_k''/2 = 76731456.2324
+(c) k=2: dL_k/dt = 1552032367.31, (k+1)(2k+1)L_(k+1) - L_k''/2 = 1552032367.31
+
+## t3_complexside.py  (886 s wall, 45 MB RSS)
+(A) planted polynomial n=100: S true = 0.600000; Littlewood S = nY/2 - I/2pi = 0.60000896  (n*Y/2 = 50.0, I/2pi = 49.39999104)
+(B) DH off-line zero at t=0: z = (171.39869697076 + 0.61703436491327j)  (s = (0.80851718245664 + 85.699348485378j)), |H0DH(z0)|/|H0DH(z0+1)| = 3.3e-22
+    GH check t=0.1: rel diff 28 vs 40 nodes = 3.36e-16
+    DH actual off-line pair: y(0)=0.617034, de Bruijn y0^2/2 = 0.190366, landing t* = 0.24917 (gain -30.9%), x drift -0.0833; y(t): 0.00:0.6170, 0.03:0.5585, 0.06:0.4949, 0.09:0.4237, 0.12:0.3402, 0.15:0.2315, 0.18:-0.0000
+    zeta planted pair: y(0)=0.617034, de Bruijn y0^2/2 = 0.190366, landing t* = 0.21140 (gain -11.1%), x drift -0.0148; y(t): 0.00:0.6170, 0.03:0.5627, 0.06:0.5033, 0.09:0.4367, 0.12:0.3590, 0.15:0.2602, 0.18:0.0853
+    DH: S(t)=y(t) monotone decreasing: True -> Lambda_DH >= 0.2492 > 0
+    CORRECTION: the two "landing t*" values above came from a quadratic fit that included a post-landing point (y = 0).
+    The script now fits y^2 linearly on the last 3 pre-landing points. Re-run (17:06-17:27 UTC, 1258 s wall, 45 MB RSS, nice 19):
+(A) planted polynomial n=100: S true = 0.600000; Littlewood S = nY/2 - I/2pi = 0.60000896  (n*Y/2 = 50.0, I/2pi = 49.39999104)
+(B) DH off-line zero at t=0: z = (171.39869697076 + 0.61703436491327j)  (s = (0.80851718245664 + 85.699348485378j)), |H0DH(z0)|/|H0DH(z0+1)| = 3.3e-22
+    GH check t=0.1: rel diff 28 vs 40 nodes = 3.36e-16
+    DH actual off-line pair: y(0)=0.617034, de Bruijn y0^2/2 = 0.190366, landing t* = 0.17642 (gain 7.3%), x drift -0.0833; y(t): 0.00:0.6170, 0.03:0.5585, 0.06:0.4949, 0.09:0.4237, 0.12:0.3402, 0.15:0.2315, 0.18:-0.0000
+    zeta planted pair: y(0)=0.617034, de Bruijn y0^2/2 = 0.190366, landing t* = 0.18361 (gain 3.5%), x drift -0.0148; y(t): 0.00:0.6170, 0.03:0.5627, 0.06:0.5033, 0.09:0.4367, 0.12:0.3590, 0.15:0.2602, 0.18:0.0853
+    DH: S(t)=y(t) monotone decreasing: True -> Lambda_DH >= 0.1764 > 0
+    (numerical extrapolation, not certified; the pair is still clearly non-real at t = 0.17, so Lambda_DH > 0.17)
