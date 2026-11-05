@@ -286,5 +286,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R268 Fasi-Higham failure thresholds k0(m) = 66, 44, 42, 43 (m = 5, 7, 9, 11); AI-found counterexamples and Lean repos check out [R268.lean](Riemann/Tree/R268.lean)
 - R269 explicit prime inequalities, polyhedral sums, labellings, finite OEIS lists: all hold [R269.lean](Riemann/Tree/R269.lean)
 - R270 fresh analysis papers: special-function identities and sharp constants hold [R270.lean](Riemann/Tree/R270.lean)
-- R271 FRONTIER (next)
+- R271 explicit objects in fresh math.CO papers: all correct; 2611.06275 appendix figure uses a non-edge (lemma true) [R271.lean](Riemann/Tree/R271.lean)
+- R272 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.

@@ -385,3 +385,4 @@
 - R268 known: Fasi-Higham off-diagonal failures (Scardino; thresholds 66/44/42/43 for m = 5/7/9/11); verified others': 2411.00566, 2610.18636, 2511.13691, 2002.08022, Zenodo 23421625; minor: erdos710-lean hard-coded constant [R268](Riemann/Tree/R268.lean)
 - R269 verified others': 2608.01498, 2610.13365, 2608.08019, 2511.11331, 2509.05280; OEIS A146029, A085152, A141273 complete in range; not pursued: MO 516491, 513565, Zenodo 23308381 [R269](Riemann/Tree/R269.lean)
 - R270 verified others': 2611.06376, 2611.01422, 2611.04067, 2611.02298, 2611.02159, 2611.05930, 2611.05576, 2611.06917, 2611.06301 [R270](Riemann/Tree/R270.lean)
+- R271 verified others': 2611.06747, 2611.06362, 2611.06599, 2611.06581, 2611.06003, 2611.06107; figure slip: 2611.06275 (lemma true) [R271](Riemann/Tree/R271.lean)
