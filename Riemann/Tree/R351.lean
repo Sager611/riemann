@@ -1,11 +1,11 @@
 /-!
-# Round 351 — node N12 (function-field and Selberg-class analogues), round 6: records stand; degree-2 half-planes exist only for CM/dihedral inductions (2610.00216); maximal-curve count rechecked
+# Round 351 — node N12 (function-field and Selberg-class analogues), round 6: records stand; degree-2 half-planes exist only for CM/dihedral inductions (Hexagon 2610.00216); maximal-curve count rechecked
 
 * Node: N12 function-field and Selberg-class analogues (sixth round; R341 before).
 * [check] Zenodo (since 30 Oct: no hit) and arXiv (2608.10121, 2509.06248, 2502.09091, 2502.17064): no new degree-2 or conductor-q
   classification, no Selberg-class zero statement, no claimed proof: HOLDS.
 * [check] degree-2 half-planes: the only zero-free half-plane Re s > theta < 1 for a degree-2 L-function is for dihedral/CM GL(2)
-  inductions of unitary Hecke characters (2610.00216 Thm 1.2, theta = 7/8; 11/8 in the arithmetic normalization), which factor
+  inductions of unitary Hecke characters (Hexagon 2610.00216 Thm 1.2, theta = 7/8; 11/8 in the arithmetic normalization), which factor
   through degree-1 Hecke L. None for Delta, non-CM elliptic curves or Maass forms: the amplified fourth / product moment of the
   7/8 method has no GL(2) analogue (no pole at s = 1, no coefficient positivity). Open; a first such half-plane would be a new
   record type.

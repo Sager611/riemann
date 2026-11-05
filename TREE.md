@@ -384,7 +384,7 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R348 node N7 round 6: B_2 + 2.2e-254 stands; the half-plane mu line gives no large-value gain at s0 = 1/2, but moment interpolation with Lindelof on Re s = B may lower A(sigma) below B (candidate densityB) [R348.lean](Riemann/Tree/R348.lean)
 - R349 node N13 round 6: no spectral realization; 2402.13082's statements need RH, not the half-plane; no new Zenodo operator claims [R349.lean](Riemann/Tree/R349.lean)
 - R350 node N5 round 7: the Moebius series of 2611.03924 converges in H^2(C_alpha) for every alpha > B (routine; the paper had alpha > 1); s_n(alpha) law n^{1-2alpha} rechecked; number-field L^p criterion open [R350.lean](Riemann/Tree/R350.lean)
-- R351 node N12 round 6: classification and density records stand; degree-2 half-planes only for CM/dihedral inductions (2610.00216), generic GL(2) open; maximal-curve count rechecked [R351.lean](Riemann/Tree/R351.lean)
+- R351 node N12 round 6: classification and density records stand; degree-2 half-planes only for CM/dihedral inductions (Hexagon 2610.00216), generic GL(2) open; maximal-curve count rechecked [R351.lean](Riemann/Tree/R351.lean)
 - R352 node N10 round 6: first explicit power-saving Mertens bound (mertens78, DISCOVERIES) stands as new; explicit Liouville and Moebius-mean power savings (routine) [R352.lean](Riemann/Tree/R352.lean)
 - R353 node N4 round 5: the 10^(10^46.79) Robin record stands; its inputs (Chirre-Helfgott hypotheses, C_T = 113.66888, exact MAD_k) rechecked adversarially, no flaw [R353.lean](Riemann/Tree/R353.lean)
 - R354 node N9 round 6: records stand; conductor-aspect Lindelof beyond B and mu line (B - sigma)/(6(B - 1/2)) from Petrow-Young (routine, COROLLARIES); Bluteau's Zenodo AFE false (REFUTATIONS) [R354.lean](Riemann/Tree/R354.lean)
@@ -393,5 +393,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R357 node N2 round 7: Lambda <= 0.107559925318 stands and its chain rechecked; Lambda_K <= 225/512 for every number field from the Lean-checked 31/32 (routine); Polymath15-style Dirichlet bounds cannot beat the strip bound at Platt's heights [R357.lean](Riemann/Tree/R357.lean)
 - R358 node N11 round 6: the explicit Littlewood record stands; its Dusart inputs and Lemma 6 rechecked, no flaw; observed minima 0.709 (real) and 0.738 (prime moduli) against the proved 0.11 [R358.lean](Riemann/Tree/R358.lean)
 - R359 node N13 round 7: no spectral realization or new Zenodo operator claim; Suzuki's Psi > 0 window is not RH-equivalent; the simple-even condition for the Weil form (2511.22755) is open and checkable (candidate) [R359.lean](Riemann/Tree/R359.lean)
-- R360 FRONTIER (next)
+- R360 node N12 round 7: records stand; Cossaboom's 5/2 inputs rechecked; linear-twist results do not close the conductor 2, 3, 4 classification; R351's half-plane citation is Hexagon 2610.00216 (corrected) [R360.lean](Riemann/Tree/R360.lean)
+- R361 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
