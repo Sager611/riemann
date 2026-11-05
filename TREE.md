@@ -402,5 +402,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R366 node N9 round 7: records stand; 2602.05614 and 2610.01035 leave marginal refinements undone (harvested); chip-firing, Coxeter growth series and the Gamma conjectures give no positivity mechanism [R366.lean](Riemann/Tree/R366.lean)
 - R367 node N5 round 8: records stand; d_N numerics unchanged (N = 5120); 2611.03924 asks whether its critical-line obstruction is intrinsic to the subspaces (harvested); a Zenodo 'proof' is a finite truncation [R367.lean](Riemann/Tree/R367.lean)
 - R368 node N3 round 7: Li records stand; a sharper explicit zero count (2606.31441) leaves the ranges unchanged (rerun); 2509.06390's averaged-Li question answered in our ranges (routine); generalized Li criteria give no larger range [R368.lean](Riemann/Tree/R368.lean)
-- R369 FRONTIER (next)
+- R369 node N2 round 8: Lambda <= 0.107559925318 stands; the chain uses no zero-count constant (the sharper count of 2606.31441 cannot move it); no new Zenodo claim; function-field Newman results give no zeta bound [R369.lean](Riemann/Tree/R369.lean)
+- R370 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
