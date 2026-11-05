@@ -324,5 +324,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R288 node N2: 0.13963 still best; Lambda(theta) table: 0.13958 / 0.13941 / 0.13924 for the newer (unrefereed) half-planes, pending re-run [R288.lean](Riemann/Tree/R288.lean)
 - R289 node N5: Burnol's bound (sum over critical-line zeros) made precise; d_N^2 log N computed to N = 200 (near C = 0.04619) [R289.lean](Riemann/Tree/R289.lean)
 - R290 node N12: degree-2 conductor-1 Selberg classification (2503.02492) added to the record; nothing transferable to zeta [R290.lean](Riemann/Tree/R290.lean)
-- R291 FRONTIER (next)
+- R291 node N7 round 2: Hexagon endpoints (B_tw = 0.874058504) and twist step check out; method limit 13/15; Lean coverage mapped [R291.lean](Riemann/Tree/R291.lean)
+- R292 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.

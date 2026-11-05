@@ -407,3 +407,4 @@
 - Jensen9 (Orca): N6 record was misrecorded (d ≤ 8); the all-n range is d ≤ T² ≈ 9.0·10^24 (Chasse method, Kim–Lee, GORTTW); with the 7/8 half-plane it rises to (16T² − 4)/9 ≈ 1.6·10^25 (routine, COROLLARIES); no explicit N(d) known beyond the range. [report](Riemann/Deep/Jensen9/REPORT.md)
 - R289 N5: no faster decay known; 7/8 half-plane too weak for power decay of d_N [R289](Riemann/Tree/R289.lean)
 - R290 N12: F_1 / prismatic / Deninger papers give no RH step; graph zeta toys do not force critical-line spectra [R290](Riemann/Tree/R290.lean)
+- R291 N7: the cubic-theta product-moment method cannot pass 13/15 (Liu's own limit); Liu's general-field inputs are not formalised [R291](Riemann/Tree/R291.lean)
