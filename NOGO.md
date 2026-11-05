@@ -485,3 +485,4 @@
 - R352 N10/exploration: information geometry (real s > 1 only) and Brunn-Minkowski (log-concavity only) give no mechanism; derivative zero-variance contraction (2610.12499) overlaps the R34 real-rootedness toolbox [R352](Riemann/Tree/R352.lean)
 - R353 N4/exploration: billiard traces = primon gas; Rankin-Swinnerton-Dyer sign counting (2506.17178) needs a uniformly small remainder that xi lacks; large deviations give only conditional Gaussian tails [R353](Riemann/Tree/R353.lean)
 - R354 N9/exploration: Diophantine approximation and the Littlewood conjecture, Khovanov homology and minimal surfaces give no zeta mechanism; no Lindelof-conditional result left for the half-plane to unlock [R354](Riemann/Tree/R354.lean)
+- R355 N8/exploration: GL(2) twisted second moments stop at theta < 1/2, so 2610.08965's theta = 17/20 scheme does not transfer; Schur positivity, inverse-problem sampling and RG semicircle theorems give no zeta mechanism [R355](Riemann/Tree/R355.lean)
