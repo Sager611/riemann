@@ -415,3 +415,4 @@
 - R296 N3: the height-tied Li range (77 T^2) is Fabbian's; 7/8 adds only a constant (~105 T^2); Omar-Ouni-Mazhouda's Dirichlet version dismisses the tail [R296](Riemann/Tree/R296.lean)
 - R297 N6: Chasse's sector bound only scales as T^2/(4a^2); conditional zero-free improvements move the constant only; Thouless/Avila needs a cocycle zeta lacks [R297](Riemann/Tree/R297.lean)
 - R298 N1: Weil positivity is not height-tied in a useful way: explicit S(t) bounds allow gaps up to 3.11 and 13-zero clusters near 3e12, so sampling arguments give windows below the numeric 1.55 [R298](Riemann/Tree/R298.lean)
+- R299 N9: the 7/8 half-plane does not improve sixth/twelfth moments or large-value bounds (density targets sigma = 3/4); log zeta exponent 8(1-sigma) above 7/8 is classical [R299](Riemann/Tree/R299.lean)
