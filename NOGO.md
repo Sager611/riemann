@@ -424,3 +424,4 @@
 - R303 N12: the 7/8 method does not transfer to GL(2) without an amplified fourth-moment estimate for the family; amoeba/Ronkin convexity gives nothing beyond Re s > 1 [R303](Riemann/Tree/R303.lean)
 - R304 N7: no mechanism turns the 7/8 half-plane into better density just below 7/8 (Jutila-type only in shrinking strips); classical and VK regions are now weaker than 7/8 for zeta at every height [R304](Riemann/Tree/R304.lean)
 - explore2 (Orca exploration: quantitative unique continuation, Carleman/doubling index) NO IDEA: it bounds how small a solution can be and how often it vanishes, which for Xi and the de Bruijn-Newman flow reproduces only Jensen-scale zero counts [ExploreUC](Riemann/Deep/ExploreUC/REPORT.md)
+- R305 N11: the explicit Siegel gap (5811e-7) is far below Xylouris' lambda_1 >= 0.348, so Linnik's constant stays 5; complete positivity of Weil's form is automatic (scalar kernel) [R305](Riemann/Tree/R305.lean)
