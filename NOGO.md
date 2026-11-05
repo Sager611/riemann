@@ -399,3 +399,4 @@
 - R282 N3: no extension of the 10^5 range found; Zenodo 23884485 is not a proof; Lorentzian Hessians cannot certify Weil PSD alone [R282](Riemann/Tree/R282.lean)
 - R283 N4: no extension of the Morrill-Platt range; no all-n proof claim found to refute [R283](Riemann/Tree/R283.lean)
 - R284 N1: no newer certified window; cos^k test families useless; beyond 1.55 blocked by memory (REPORT4) [R284](Riemann/Tree/R284.lean)
+- R285 N13: 2610.41115 is function-field only; 2609.04908 assumes RH; CCM zeros not direct eigenvalues of the prolate discretisation [R285](Riemann/Tree/R285.lean)
