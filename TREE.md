@@ -363,5 +363,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R327 node N9 round 4: 13/84 and de Faveri-Pandey moments stand; Tao-Trudgian-Yang exponent pairs noted; mu(sigma) half-plane interpolation routine [R327.lean](Riemann/Tree/R327.lean)
 - R328 node N7 round 4: Bebel's B_2 + 2.2e-254 stands (no newer tracker submission); its source has no extra axioms; no newer density record [R328.lean](Riemann/Tree/R328.lean)
 - R329 node N12 round 4: classification (2503.02492) and density (2408.00617) records hold; DH off-line zero rechecked; open: degree-2 classification for q = 2, 3, 4 [R329.lean](Riemann/Tree/R329.lean)
-- R330 FRONTIER (next)
+- R330 node N11 round 4: Siegel-zero exclusion records and Linnik L = 5 stand; 2610.31402's c(k) effective but not numeric (candidate) [R330.lean](Riemann/Tree/R330.lean)
+- R331 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
