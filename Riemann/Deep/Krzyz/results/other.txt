@@ -1,0 +1,19 @@
+# Outputs not in summary.json (copied from the audit session, 2026-11-05)
+kz_constants.py:
+T_lo = [0.665446634102027266783073002 +/- 4.15e-28]  literal <= T_lo: True  gap 7.28e-15
+2/e = [0.7357588823428846431910475403 +/- 4.77e-29]  threshold literal < 2/e: True  gap 8.62e-17
+Poisson (M=20000): n=3 0.734906, n=4 0.734869, n=5 0.735169, n=6 0.735511, n=7 0.735356 (all < 2/e)
+Poisson (M=100000): n=6 t=6.989 r=0.9161 -> 0.7354863965 (claim 0.735487 OK); n=7 t=8.149 r=0.928 -> 0.7353315138 (claim 0.735332 OK)
+q caps: T_5(1.4)=38.17>33.2, T_6(1.31)=50.26>46.94, T_7(1.3)=99.67>63.05
+kz_chain.py METADATA.json:
+{"batches": 29, "total_nodes": 1435479089, "total_leaves": 717739545, "final_frontier": 0, "totals_match": true, "problems": []}
+kz_cover.py n=5 N=4 log:
+{"n": 5, "nodes": 927969, "leaves": 463985, "nodes_eq_2leaves_minus_1": true, "pending_left": 0, "orphans_left": 0, "split_kinds": {"parameter": 463984}, "maxdepth": 38, "problems": []}
+kz_vtest.py (evalbox built from deposited source):
+{"n": 6, "boxes": 800, "finite_v": 549, "v_closed": 549, "violations": [], "max_value_in_vclosed": 0.6618758159191166}
+{"n": 7, "boxes": 1000, "finite_v": 646, "v_closed": 646, "violations": [], "max_value_in_vclosed": 0.6324792394338827}
+kz_atoms.py root: n=6 N=1 proved (115 nodes), n=7 N=1 proved (223 nodes); N=2 not finished (my bound too weak)
+Provided checks: shasum -c SHA256SUMS all OK; verify_release.py RELEASE_EVIDENCE_PASS; smoke_checks PASS;
+replay.py leaves 9331 passed (records identical); replay.py splits 3326 certified + 618 inconclusive (identical);
+cover_contractions 0/1: 309+309 covered (identical); summarize.py SUMMARY identical; legacy audit_log n6 N1..N5 PASS.
+logs zip sha256 59f05064602d5dc752677ea1ffadd2f8385234103674906274c8f282135aca84 (matches UPLOAD_SHA256SUMS)
