@@ -1,0 +1,11 @@
+# uniform Simpson step 0.025 on [0,100] (first run):
+Q(i) p=1.14286 eps=0.1 sigma'=0.825: J_num=3.25092993 J_formula=3.2509308 diff=-8.76e-7 | wrong-sign=-5.035355 no-pole-term=4.143143 | B/eps~0.39272 | c_K/(eps zeta_K(1+eps))=0.923
+Q(i) p=1.03226 eps=0.03 sigma'=0.95375: J_num=3.14612353 J_formula=3.14592362 diff=0.0002 | wrong-sign=-3.551292 no-pole-term=3.348608 | B/eps~0.34812 | c_K/(eps zeta_K(1+eps))=0.975811
+Q(sqrt5) p=1.14286 eps=0.1 sigma'=0.825: J_num=3.19141856 J_formula=3.19142129 diff=-2.74e-6 | wrong-sign=-4.881401 no-pole-term=4.036411 | B/eps~0.41673 | c_K/(eps zeta_K(1+eps))=0.874148
+Q(sqrt5) p=1.03226 eps=0.03 sigma'=0.95375: J_num=3.12832296 J_formula=3.12812653 diff=0.000196 | wrong-sign=-3.526622 no-pole-term=3.327374 | B/eps~0.35224 | c_K/(eps zeta_K(1+eps))=0.959266
+# uniform step 0.025 on [0,400] (Q(i), p = 32/31):
+Q(i) p=1.03226 eps=0.03 sigma'=0.95375: J_num=3.14612418 J_formula=3.14592362 diff=0.000201 | wrong-sign=-3.551292 no-pole-term=3.348608 | B/eps~0.34822 | c_K/(eps zeta_K(1+eps))=0.975811
+# step 0.0005 on [0,2], 0.025 on [2,100] (current jcheckK.py):
+Q(i) p=1.03226 eps=0.03 sigma'=0.95375: J_num=3.14592323 J_formula=3.14592362 diff=-3.94e-7 | wrong-sign=-3.551292 no-pole-term=3.348608 | B/eps~0.34885 | c_K/(eps zeta_K(1+eps))=0.975811
+Q(sqrt5) p=1.03226 eps=0.03 sigma'=0.95375: J_num=3.12812606 J_formula=3.12812653 diff=-4.73e-7 | wrong-sign=-3.526622 no-pole-term=3.327374 | B/eps~0.35298 | c_K/(eps zeta_K(1+eps))=0.959266
+Q(i) p=1.14286 eps=0.1 sigma'=0.825: J_num=3.25092993 J_formula=3.2509308 diff=-8.74e-7 | wrong-sign=-5.035355 no-pole-term=4.143143 | B/eps~0.39272 | c_K/(eps zeta_K(1+eps))=0.923
