@@ -365,3 +365,4 @@
 - R251 small cases hold: Sun 2606.18234, 1811.10503, 1405.0290, 1402.6641 (most), 2405.03626; leads under audit: 1809.07766 Conj 6.1, 6.6(ii); 1402.6641 Conj 3.5(i). [R251](Riemann/Tree/R251.lean)
 - R252 small cases hold: 2601.07950, 2602.19989, 2603.20961, 2604.10864, 2605.03170, 2607.11313; not testable: 2606.27208, 2608.19090. [R252](Riemann/Tree/R252.lean)
 - Kissing2 (Orca): no new kissing record from Leech-based components in 25–48D (and P48p in 49–60D): all at proven ceilings, already lattice-coset shells, or locally saturated. [report](Riemann/Deep/Kissing2/REPORT.md)
+- R253 known: TxGraffiti mu* <= H (2606.15761), 2209.00787, 2509.12294 self-refuting; misread: Zenodo 23934882 (11); verified others': 2611.02299, 2611.02295, 2611.04674, 2608.14159, 2610.08015, Sun 1710.08763, 2405.08552 [R253](Riemann/Tree/R253.lean)

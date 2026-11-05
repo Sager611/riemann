@@ -268,5 +268,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R250 Sun 1309.1679: Conj. 3.3, 3.4(ii), 3.5(i) also fail in tiny cases (with 3.10); 20 others hold in small cases; novelty check running. [R250.lean](Riemann/Tree/R250.lean)
 - R251 Sun's other conjecture papers: small cases mostly hold; leads in 1809.07766 and 1402.6641 sent to an Orca audit. [R251.lean](Riemann/Tree/R251.lean)
 - R252 small-group conjectures in other 2026 papers hold. [R252.lean](Riemann/Tree/R252.lean)
-- R253 FRONTIER (next)
+- R253 hunts: TxGraffiti mu* <= H counterexample already published (2606.15761); mailing claims hold; Zenodo 23934882 flaw was a misreading [R253.lean](Riemann/Tree/R253.lean)
+- R254 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
