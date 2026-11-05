@@ -394,3 +394,4 @@
 - R277 hold: Z.-H. Sun 1012.3833 Conj 2.8 (scout error), 1103.5384 Conj 3.8, Mao 2304.04548, Liu 1606.08432, C. Wang 1909.08983, Pan 2012.05121 [R277](Riemann/Tree/R277.lean)
 - R278 N6 first round: no new handle from finite free probability / Lorentzian polynomials found; 5 scouts timed out (search throttled, computations heavy) [R278](Riemann/Tree/R278.lean)
 - R279 N7: our recorded R_0 = 5.558691 was outdated (4.896, 2603.21490); a_1/a_0 of cosine polynomials alone does not improve R_0; Liu 2610.26835 arithmetic reproduced [R279](Riemann/Tree/R279.lean)
+- R280 N9: no 2026 improvement of 13/84; convexity from the 7/8 half-plane is routine (COROLLARIES), not a discovery [R280](Riemann/Tree/R280.lean)
