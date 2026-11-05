@@ -1,0 +1,3 @@
+c=16 sector=even eps=0 prec=512 K2=J=427 kscan=313858 kscan_e=115462 sel_odd=59 sel_even=49 |K+|=279 |K-|=105 |J-|=28 |G|=2960 order=133
+   margin 1-lmax(W) = 7.293623148e-76  next = 1.6622e-67  rigorous(Lemma 5.5, nu=0.999*margin): True
+   times: scan 20.5s assembly 85.8s total 107.8s

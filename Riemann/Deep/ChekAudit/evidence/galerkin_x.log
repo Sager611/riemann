@@ -1,0 +1,14 @@
+c=5 N=100 (N+1 funcs) prec=320 panels=40x60 lam_min=1.00502253020e-17 next=5.1394e-12 t=6.7s
+   (first N funcs) lam_min=1.00604448024e-17
+c=5 N=100 (N+1 funcs) prec=320 panels=50x70 lam_min=1.00502253020e-17 next=5.1394e-12 t=10.0s
+   (first N funcs) lam_min=1.00604448024e-17
+c=6 N=50 (N+1 funcs) prec=320 panels=40x60 lam_min=8.65168990015e-23 next=1.5774e-16 t=2.2s
+   (first N funcs) lam_min=8.67531404417e-23
+c=7 N=100 (N+1 funcs) prec=320 panels=40x60 lam_min=7.73054116631e-28 next=1.9248e-21 t=6.7s
+   (first N funcs) lam_min=7.73120379295e-28
+c=8 N=100 (N+1 funcs) prec=320 panels=40x60 lam_min=4.58127166921e-33 next=2.4210e-26 t=9.1s
+   (first N funcs) lam_min=4.58866239627e-33
+c=14 N=50 (N+1 funcs) prec=448 panels=40x60 lam_min=5.13736842847e-61 next=8.1322e-54 t=4.2s
+   (first N funcs) lam_min=1.05357378874e-60
+c=14 N=100 (N+1 funcs) prec=448 panels=50x70 lam_min=1.64209986084e-64 next=1.0428e-56 t=11.0s
+   (first N funcs) lam_min=1.66238796873e-64

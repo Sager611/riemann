@@ -1,0 +1,15 @@
+c=5 sector=even eps=7.447489666e-18 prec=256 K2=J=201 kscan=201 kscan_e=402 sel_odd=0 sel_even=0 |K+|=93 |K-|=8 |J-|=1 |G|=201 order=9
+   margin 1-lmax(W) = 4.002803183e-19  next = 4.2717e-12  rigorous(Lemma 5.5, nu=0.999*margin): True
+   times: scan 0.0s assembly 0.3s total 0.5s
+c=5 sector=odd eps=0 prec=256 K2=J=201 kscan=201 kscan_e=402 sel_odd=0 sel_even=0 |K+|=93 |K-|=8 |J-|=0 |G|=201 order=9
+   margin 1-lmax(W) = 8.282127495e-15  next = 1.6228e-9  rigorous(Lemma 5.5, nu=0.999*margin): True
+   times: scan 0.0s assembly 0.3s total 0.5s
+c=5 sector=odd eps=5.693186289e-15 prec=256 K2=J=201 kscan=201 kscan_e=402 sel_odd=0 sel_even=0 |K+|=93 |K-|=8 |J-|=0 |G|=201 order=9
+   margin 1-lmax(W) = 8.282127497e-16  next = 1.6228e-9  rigorous(Lemma 5.5, nu=0.999*margin): True
+   times: scan 0.0s assembly 0.4s total 0.5s
+c=10 sector=even eps=0 prec=384 K2=J=201 kscan=14797 kscan_e=5444 sel_odd=5 sel_even=16 |K+|=131 |K-|=21 |J-|=12 |G|=386 order=33
+   margin 1-lmax(W) = 5.026355931e-44  next = 1.6249e-36  rigorous(Lemma 5.5, nu=0.999*margin): True
+   times: scan 0.6s assembly 2.0s total 2.7s
+c=10 sector=even eps=9.133835606e-44 prec=384 K2=J=201 kscan=14797 kscan_e=5444 sel_odd=5 sel_even=16 |K+|=131 |K-|=21 |J-|=12 |G|=386 order=33
+   margin 1-lmax(W) = 5.026355102e-45  next = 1.6249e-36  rigorous(Lemma 5.5, nu=0.999*margin): True
+   times: scan 0.6s assembly 1.8s total 2.5s

@@ -6,7 +6,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 ## On the RH tree (node in parentheses; node list at the top of TREE.md)
 
 - (N7, N11) Zero-density estimate for ring class L-functions, sharper in the discriminant than any published bound. [details](discoveries/ring-class-zero-density.md)
-- (N1) Record: Weil's quadratic form certified positive on test functions supported in [−1.55, 1.55] (previous best 1.5). [details](discoveries/weil-positivity.md)
+- (N1) Superseded record: Weil's quadratic form certified positive on test functions supported in [−1.55, 1.55] (was 1.5; superseded by Chekmachev's 1.925, Zenodo 23848597, audited sound). [details](discoveries/weil-positivity.md)
 - (N11) Every primitive binary quadratic form of discriminant Δ represents a prime ≤ |Δ|^{1+ε}, for almost all Δ (was |Δ|^{20/3+ε}, definite forms only). [details](discoveries/least-primes-forms.md)
 - (N11) Sato–Tate in every ideal class of Q(√D), for almost all D: e.g. every class has primes with a_f(p) > 0 and with a_f(p) < 0 below |D|^{2.04}. [details](discoveries/sato-tate-classes.md)
 - (N11) Least primes in every ideal class of almost all CM fields: below d_K^{1+ε} (known for every field: d_K^{694}). [details](discoveries/cm-least-primes.md)

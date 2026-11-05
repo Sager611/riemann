@@ -1,0 +1,45 @@
+c=5 N=100 prec=320 lam_min(Q_c,N)=1.005022530e-17 build=0.2s eig=0.1s
+    iter lam=1.005023526e-17 resid=7.35e-17
+    iter lam=1.005022530e-17 resid=1.40e-23
+    iter lam=1.005022530e-17 resid=2.74e-29
+c=14 N=100 prec=448 lam_min(Q_c,N)=1.642099861e-64 build=0.2s eig=0.1s
+    iter lam=1.642099917e-64 resid=1.74e-63
+    iter lam=1.642099861e-64 resid=3.80e-72
+    iter lam=1.642099861e-64 resid=5.99e-80
+c=31 N=512 prec=760 lam_min(Q_c,N)=1.000672907e-155 build=5.3s eig=17.8s
+    iter lam=1.000672908e-155 resid=3.28e-154
+    iter lam=1.000672907e-155 resid=9.90e-165
+    iter lam=1.000672907e-155 resid=6.53e-174
+c=45 N=300 prec=1100 lam_min(Q_c,N)=2.403779694e-229 build=3.8s eig=10.0s
+    iter lam=2.403779695e-229 resid=6.45e-228
+    iter lam=2.403779694e-229 resid=7.03e-239
+    iter lam=2.403779694e-229 resid=1.41e-248
+c=45 N=400 prec=1100 lam_min(Q_c,N)=3.066554641e-231 build=9.4s eig=23.3s
+    iter lam=3.066554642e-231 resid=9.63e-230
+    iter lam=3.066554641e-231 resid=5.97e-241
+    iter lam=3.066554641e-231 resid=7.95e-251
+c=45 N=600 prec=1100 lam_min(Q_c,N)=2.240785115e-231 build=14.3s eig=61.8s
+    iter lam=2.240785115e-231 resid=8.75e-230
+    iter lam=2.240785115e-231 resid=4.53e-241
+    iter lam=2.240785115e-231 resid=6.28e-251
+c=45 N=800 prec=1100 lam_min(Q_c,N)=1.974788805e-231 build=18.9s eig=110.4s
+    iter lam=1.974788806e-231 resid=8.80e-230
+    iter lam=1.974788805e-231 resid=3.89e-241
+    iter lam=1.974788805e-231 resid=5.25e-251
+c=45 N=1000 prec=1100 lam_min(Q_c,N)=1.867648225e-231 build=33.3s eig=213.3s
+    iter lam=1.867648226e-231 resid=9.29e-230
+    iter lam=1.867648225e-231 resid=3.69e-241
+    iter lam=1.867648225e-231 resid=4.98e-251
+c=45 N=1200 prec=1100 lam_min(Q_c,N)=1.788533896e-231 build=43.0s eig=410.8s
+    iter lam=1.788533897e-231 resid=9.79e-230
+    iter lam=1.788533896e-231 resid=3.52e-241
+    iter lam=1.788533896e-231 resid=4.75e-251
+c=5 N=200 prec=320 lam_min(Q_c,N)=9.344959262e-18 build=0.9s eig=0.7s
+c=5 N=400 prec=320 lam_min(Q_c,N)=9.198900798e-18 build=3.3s eig=5.2s
+c=5 N=800 prec=320 lam_min(Q_c,N)=9.170039306e-18 build=12.7s eig=30.2s
+c=5 N=1200 prec=320 lam_min(Q_c,N)=9.165231918e-18 build=25.4s eig=82.7s
+c=5 N=1600 prec=320 lam_min(Q_c,N)=9.163543189e-18 build=53.9s eig=179.2s
+c=16 N=400 prec=448 lam_min(Q_c,N)=2.619524082e-75 build=3.3s eig=7.4s
+c=16 N=800 prec=448 lam_min(Q_c,N)=2.440169370e-75 build=12.7s eig=49.7s
+c=16 N=1200 prec=448 lam_min(Q_c,N)=2.412929257e-75 build=38.0s eig=124.9s
+c=16 N=1600 prec=448 lam_min(Q_c,N)=2.374605994e-75 build=50.6s eig=272.8s

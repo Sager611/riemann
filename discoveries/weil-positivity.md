@@ -2,6 +2,10 @@
 
 [Back to DISCOVERIES](../DISCOVERIES.md)
 
+**Superseded (5 Nov 2026).** V. Chekmachev (Zenodo 23848597, 1 Nov 2026) certifies half-width (ln 47)/2 = 1.925 for all f and (ln 71)/2 = 2.131 for even f; audited sound here ([ChekAudit](../Riemann/Deep/ChekAudit/REPORT.md)). This page was a record when made (R128).
+
+RH relevance: N1 (Weil positivity on a window; every window is RH).
+
 **Claim.** Q(f) ≥ 10^{−112}‖f‖² for every complex C² test function f supported in [−1.55, 1.55], where Q is Weil's explicit-formula quadratic form (window length 3.1, x = e^{3.1}; both parities).
 
 **Before.** 1.5 (ours, earlier); 1.495 (Elston, Zenodo 23174403, audited rigorous).

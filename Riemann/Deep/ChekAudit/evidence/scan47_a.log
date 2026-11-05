@@ -1,0 +1,5 @@
+c=47 scan k in [0,200000000]: odd nodes 99998158, even nodes 99996317; 146.2s
+  odd flagged (mu<1+1e-7): 5719; their retained with mu<1 in range: 5719; flagged-but-not-retained: 0 []; theirs-not-flagged: 0 []
+  even flagged (mu<0+1e-7): 2134; their retained with mu<0 in range: 2134; flagged-but-not-retained: 0 []; theirs-not-flagged: 0 []
+  max |mu_float - mu_theirs| on 10118 retained odd nodes: 1.43e-10
+  max |mu_float - mu_theirs| on 346599 retained even nodes: 2.20e-10

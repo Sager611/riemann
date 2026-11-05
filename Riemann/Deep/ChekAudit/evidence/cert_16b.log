@@ -1,0 +1,6 @@
+c=16 sector=even eps=1.512800554e-75 prec=512 K2=J=427 kscan=313858 kscan_e=115462 sel_odd=59 sel_even=49 |K+|=279 |K-|=105 |J-|=28 |G|=2960 order=133
+   margin 1-lmax(W) = 7.293623042e-77  next = 1.6622e-67  rigorous(Lemma 5.5, nu=0.999*margin): True
+   times: scan 20.3s assembly 79.5s total 93.0s
+c=16 sector=odd eps=2.105612047e-71 prec=512 K2=J=427 kscan=313858 kscan_e=115462 sel_odd=59 sel_even=49 |K+|=279 |K-|=105 |J-|=27 |G|=2960 order=133
+   margin 1-lmax(W) = 2.993185938e-72  next = 1.1553e-63  rigorous(Lemma 5.5, nu=0.999*margin): True
+   times: scan 12.8s assembly 59.5s total 78.1s
