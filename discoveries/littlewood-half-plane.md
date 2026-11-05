@@ -1,0 +1,19 @@
+# Explicit Littlewood-type lower bound for L(1, χ) from the zero-free half-plane (node N11)
+
+**Claim.** Assume, as proved here (Lean-checked, TREE.md N7), that no Dirichlet L-function vanishes in Re s > B = 0.87338196661320752. Then for every primitive character χ mod q ≥ 3: |L(1, χ)| ≥ 0.11/max(3, log log q); |L(1, χ)| ≥ 0.115/log log q once log log q ≥ 3.13 and ≥ 0.116/log log q once log log q ≥ 4; liminf |L(1, χ)| log log q ≥ (π²/6)e^{−γ}(1 − B) = 0.11694. Hence h(−d) ≥ 0.0350·√d/max(3, log log d) for every fundamental discriminant −d < −4, h(−d) > 2000 for d ≥ 2.957·10^10 and h(−d) > 10^5 for d ≥ 7.976·10^13. Side result: |L(1, χ)| ≤ 15 log log q for log log q ≥ 3. With 7/8 instead of B: 0.105/max(3, log log q) (limit 0.11545).
+
+**Before.** Explicit unconditional lower bounds had order 1/log q: L(1, χ) ≥ 0.0005744/log q for real χ (2610.21511 with the explicit Siegel-zero gap; R305, R320) and |L(1, χ)| ≥ 1/(9.69 log(q/π)) for complex χ (Mossinghoff–Starichkova–Trudgian, arXiv 2107.09230). Explicit 1/log log q bounds existed only under GRH (Lamzouri–Li–Soundararajan 2015, arXiv 1309.3595; Languasco–Trudgian 2011.08348; Lumley 1804.09850; Chirre–Molero 2602.06199). 2610.21511 notes the half-plane shape but says "We have not made it explicit under the half-plane" (TeX l.486–499) and has the thresholds h(−d) > 2000 for log d ≥ 27.2 (now 24.11) and h(−d) > 10^5 for log d ≥ 35.4 (now 32.01). The new bound beats 0.0001828·√d/log d at every d > 4 (factor > 120).
+
+**Method.** Littlewood's argument with a smoothed explicit formula and no zero counting. Integrating −L′/L(σ, χ) over σ ∈ [1, ∞) gives log L(1, χ) as a smoothed prime sum plus Σ_ρ G(ρ), with |G(ρ)| ≤ g(β)/|1 − ρ|². Hadamard's identity Σ_ρ (1 − β)/|1 − ρ|² = Re L′/L(1, χ) + ½ log(q/π) + ½ψ((1 + a)/2), with each zero paired with 1 − ρ̄, bounds the zero sum by κ times this sum, and a second, shorter explicit formula at s = 1 closes the loop (κ_1 < 1). The prime sums are bounded at the worst case χ(p) = −1 with Dusart's explicit Mertens theorems (arXiv 1002.0442, Thms 6.11, 6.12). Length x ≈ (log q)^{1/(1−B)} gives the constant (π²/6)e^{−γ}(1 − B); B = 1/2 returns Littlewood's GRH constant π²/(12e^γ).
+
+**Certificate.** cert.py (python-flint arb, 256 bits): 7400–9600 cells in log log q up to 40 or 100, plus the monotone tail Lemma T (κ_1(Λ_N) ≤ 9.6·10^−18 certified). The orchestrator reran it on a copy after the repair (5 Nov 2026): output byte-identical to cert_output.txt, 20 PASS. An independent mpmath re-implementation (xcheck.py) agrees on the tightest cell (margin 0.00047119972).
+
+**Review.** Reviewer, pass 1: the pairing lemma (also for complex χ), the Hadamard identity, the loop closing and the Euler-factor bounds correct; GAP in the tail lemma (κ_1 < 1 not assumed; τ(x) is not monotone); SIGNIFICANT. The agent repaired Lemma T (κ_1 decreases in L; the decreasing majorant τ̄ of Lemma 9(d)). Pass 2: CORRECT.
+
+**Novelty.** The agent: arXiv math.NT listings Sep–Nov 2026, all 102 works citing Lamzouri–Li–Soundararajan (Semantic Scholar), arXiv API searches, Zenodo (7 queries). The orchestrator repeated (5 Nov 2026): math.NT, math.CA, math.CV listings Oct–Nov 2026 (titles: L(1, class number, Littlewood, quasi-RH, half-plane, Siegel; nearest 2610.21511, 2610.18491, 2610.26835, all SEEN, none explicit) and Zenodo (nothing relevant).
+
+**Caveat.** Uses the half-plane for every Dirichlet L-function (fallback 7/8 loses about 1.3%) and Dusart's theorems; not formalized in Lean.
+
+**RH relevance:** N11 (GRH families, Siegel zeros, class numbers): the first explicit Littlewood-type bound without GRH; GRH gives the same shape with constant π²/(12e^γ) = 0.4618, so the remaining gap in the constant is the factor 2(1 − B) = 0.253.
+
+**Files.** [Riemann/Deep/Littlewood78/](../Riemann/Deep/Littlewood78/) (REPORT.md, PROOF.md, cert.py, cert_output.txt, cert_output_7_8.txt, xcheck.py, sanity.py, dusart_check.py and their outputs).

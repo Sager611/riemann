@@ -1,0 +1,2 @@
+Thm 6.11 ratio max over primes in [10372, 1e8]: 0.9412 at p = 10463  (must be <= 1)
+Thm 6.12 ratio max over primes in [2974, 1e8]:  0.9235 at p = 3947  (must be <= 1)

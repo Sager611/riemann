@@ -1,0 +1,85 @@
+B = [0.8733819666132075200000000000000000000000000000000000000000000000000000000000 +/- 4.27e-78]  b = 1-B = [0.1266180333867924800000000000000000000000000000000000000000000000000000000000 +/- 4.27e-78]
+limit constant (pi^2/6) e^-gamma (1-B) = [0.1169398360737554884065829688685821535451439747758894089425036997185529316548 +/- 2.03e-77]
+
+(0) side conditions of the tail lemma (PROOF.md, Lemma T (ii)): brackets at L = 8, h = 2 (non-increasing in L >= 8, increasing in h)
+  lower bound: E + 0.2/L + 0.2/L^2 + L tau_bar + (1+h)L/(2(e^L-1)) - log(pi)/2 - gamma/2 + T_1 <= -1.723724 < 0: PASS
+  upper bound: -gamma + 0.2/L + 0.2/L^2 - log(pi)/2 - gamma/2 + T_1 <= -1.409728 < 0: PASS
+  monotonicity spot check (not needed for the proof): kappa_1 and Err at Lam = 40*{1, 1.25, 1.5, 2, 3, 5, 10}, h = 0.015
+    Lam =   40.0: kappa_1 = 9.578e-18, Err = 3.550590e-03, Err_up = 3.550590e-03
+    Lam =   50.0: kappa_1 = 3.307e-22, Err = 2.161326e-03, Err_up = 2.161326e-03
+    Lam =   60.0: kappa_1 = 1.195e-26, Err = 1.434544e-03, Err_up = 1.434544e-03
+    Lam =   80.0: kappa_1 = 1.709e-35, Err = 7.471344e-04, Err_up = 7.471344e-04
+    Lam =  120.0: kappa_1 = 4.335e-53, Err = 2.977864e-04, Err_up = 2.977864e-04
+    Lam =  200.0: kappa_1 = 4.229e-88, Err = 9.671539e-05, Err_up = 9.671539e-05
+    Lam =  400.0: kappa_1 = 2.795e-175, Err = 2.310502e-05, Err_up = 2.310502e-05
+    strictly decreasing on the sample: True
+
+(A) |L(1,chi)| >= 0.11/max(3, loglog q), every primitive chi mod q >= 3
+  small q (loglog q <= 3): F(e^3; P=(12.854, 1.016, 8.0, 1.832)) = -3.287948 > log(cA/3) = -3.305887: PASS  (|L(1,chi)| >= 0.03733)
+  grid loglog q in [3, 40], 7400 cells: PASS; tightest cell (0.017384416090759146, (3.0, 3.005, 12.863, 1.016, 8.0, 1.834))
+  tail Lam>=40.0, h=0.015: kappa_1(Lam_N) <= 9.578e-18 < 1: PASS; E_h=0.007463 Err=3.551e-03  => |L(1,chi)| >= 0.115659/loglog q
+  tail loglog q >= 40: PASS
+
+(B) |L(1,chi)| >= 0.115/loglog q for loglog q >= LamB
+  LamB = 3.13: grid [LamB, 40], 7374 cells: PASS; tightest cell (0.0004711997227102243, (3.13, 3.135, 13.133, 1.003, 8.0, 1.879))
+  tail loglog q >= 40 (constant above): PASS
+
+(B2) |L(1,chi)| >= 0.116/loglog q for loglog q >= LamB2
+  tail Lam>=100.0, h=0.006: kappa_1(Lam_N) <= 8.387e-44 < 1: PASS; E_h=0.002994 Err=1.424e-03  => |L(1,chi)| >= 0.116424/loglog q
+  LamB2 = 4.0: grid [LamB2, 100], 9600 cells: PASS; tightest cell (0.022785041674911927, (99.99, 100.0, 760.908, 0.025, 274.644, 0.088)); tail >= 100: PASS
+
+(C) tail lemma constants (approach (pi^2/6)e^-gamma(1-B) = 0.1169398)
+  tail Lam>=40.0, h=0.015: kappa_1(Lam_N) <= 9.578e-18 < 1: PASS; E_h=0.007463 Err=3.551e-03  => |L(1,chi)| >= 0.115659/loglog q
+  tail Lam>=100.0, h=0.006: kappa_1(Lam_N) <= 8.387e-44 < 1: PASS; E_h=0.002994 Err=1.424e-03  => |L(1,chi)| >= 0.116424/loglog q
+  tail Lam>=1000.0, h=0.001: kappa_1(Lam_N) <= 6.064e-435 < 1: PASS; E_h=0.000500 Err=7.562e-05  => |L(1,chi)| >= 0.116873/loglog q
+  tail Lam>=10000.0, h=0.0001: kappa_1(Lam_N) <= 1.357e-4343 < 1: PASS; E_h=0.000050 Err=7.563e-06  => |L(1,chi)| >= 0.116933/loglog q
+
+(D) pointwise table: certified lower bound for |L(1,chi)| at q = exp(exp(Lam)) (optimised L, h)
+  loglog q=    1: L=  10.832 h=1.105 L1=   8.000 h1=1.496 F=-3.160200239 |L(1,chi)| >= 0.042417  (x loglog q = 0.04242)  logL=2.383 E_h=0.4179 kappa'W=0.2738
+  loglog q=    2: L=  11.449 h=1.079 L1=   8.000 h1=1.599 F=-3.202692886 |L(1,chi)| >= 0.040653  (x loglog q = 0.08131)  logL=2.438 E_h=0.4102 kappa'W=0.2703
+  loglog q=  2.5: L=  12.016 h=1.054 L1=   8.000 h1=1.694 F=-3.239020432 |L(1,chi)| >= 0.039202  (x loglog q = 0.09801)  logL=2.486 E_h=0.4027 kappa'W=0.2669
+  loglog q=    3: L=  12.854 h=1.016 L1=   8.000 h1=1.832 F=-3.287947688 |L(1,chi)| >= 0.037330  (x loglog q = 0.11199)  logL=2.554 E_h=0.3912 kappa'W=0.2611
+  loglog q=  3.2: L=  13.283 h=0.996 L1=   8.000 h1=1.903 F=-3.311147351 |L(1,chi)| >= 0.036474  (x loglog q = 0.11672)  logL=2.586 E_h=0.3851 kappa'W=0.2580
+  loglog q=  3.5: L=  14.023 h=0.963 L1=   8.408 h1=1.886 F=-3.349534422 |L(1,chi)| >= 0.035101  (x loglog q = 0.12285)  logL=2.641 E_h=0.3749 kappa'W=0.2529
+  loglog q=    4: L=  15.570 h=0.897 L1=   9.404 h1=1.806 F=-3.421588310 |L(1,chi)| >= 0.032661  (x loglog q = 0.13064)  logL=2.745 E_h=0.3541 kappa'W=0.2418
+  loglog q=    5: L=  19.746 h=0.753 L1=  13.297 h1=1.399 F=-3.584157302 |L(1,chi)| >= 0.027760  (x loglog q = 0.13880)  logL=2.983 E_h=0.3068 kappa'W=0.2146
+  loglog q=    6: L=  25.139 h=0.621 L1=  19.582 h1=0.966 F=-3.752033551 |L(1,chi)| >= 0.023470  (x loglog q = 0.14082)  logL=3.224 E_h=0.2609 kappa'W=0.1870
+  loglog q=    7: L=  31.412 h=0.515 L1=  26.783 h1=0.707 F=-3.911760084 |L(1,chi)| >= 0.020005  (x loglog q = 0.14004)  logL=3.447 E_h=0.2220 kappa'W=0.1629
+  loglog q=    8: L=  38.262 h=0.434 L1=  34.355 h1=0.551 F=-4.057874678 |L(1,chi)| >= 0.017286  (x loglog q = 0.13829)  logL=3.644 E_h=0.1910 kappa'W=0.1428
+  loglog q=   10: L=  52.875 h=0.325 L1=  49.938 h1=0.379 F=-4.307741000 |L(1,chi)| >= 0.013464  (x loglog q = 0.13464)  logL=3.968 E_h=0.1473 kappa'W=0.1130
+  loglog q=   12: L=  68.031 h=0.258 L1=  65.693 h1=0.288 F=-4.511438805 |L(1,chi)| >= 0.010983  (x loglog q = 0.13179)  logL=4.220 E_h=0.1191 kappa'W=0.0928
+  loglog q=   15: L=  91.160 h=0.196 L1=  89.375 h1=0.212 F=-4.757360630 |L(1,chi)| >= 0.008588  (x loglog q = 0.12882)  logL=4.513 E_h=0.0922 kappa'W=0.0731
+  loglog q=   20: L= 130.141 h=0.140 L1= 128.859 h1=0.147 F=-5.068612946 |L(1,chi)| >= 0.006291  (x loglog q = 0.12582)  logL=4.869 E_h=0.0669 kappa'W=0.0535
+  loglog q=   25: L= 169.348 h=0.108 L1= 168.375 h1=0.112 F=-5.306164454 |L(1,chi)| >= 0.004961  (x loglog q = 0.12402)  logL=5.132 E_h=0.0522 kappa'W=0.0425
+  loglog q=   30: L= 208.654 h=0.089 L1= 209.500 h1=0.080 F=-5.498176361 |L(1,chi)| >= 0.004094  (x loglog q = 0.12283)  logL=5.341 E_h=0.0432 kappa'W=0.0347
+  loglog q=   40: L= 287.412 h=0.065 L1= 286.000 h1=0.080 F=-5.798049278 |L(1,chi)| >= 0.003033  (x loglog q = 0.12134)  logL=5.661 E_h=0.0318 kappa'W=0.0258
+
+(E) class numbers: h(-d) = sqrt(d) L(1,chi_-d)/pi for fundamental -d < -4
+  h(-d) > 100 for every d >= e^18.06 (so for d >= 6.973e7)  (cells of 0.01 in log d up to 20.09, claim (A) beyond)
+  h(-d) > 1000 for every d >= e^22.71 (so for d >= 7.292e9)  (cells of 0.01 in log d up to 22.8, claim (A) beyond)
+  h(-d) > 2000 for every d >= e^24.11 (so for d >= 2.957e10)  (cells of 0.01 in log d up to 24.23, claim (A) beyond)
+  h(-d) > 10000 for every d >= e^27.36 (so for d >= 7.627e11)  (cells of 0.01 in log d up to 27.53, claim (A) beyond)
+  h(-d) > 100000 for every d >= e^32.01 (so for d >= 7.976e13)  (cells of 0.01 in log d up to 32.22, claim (A) beyond)
+  (2610.21511 remark, same half-plane, via its Prop. L1: h(-d) > 2000 for log d >= 27.2, h(-d) > 10^5 for log d >= 35.4)
+
+(F) comparison with h(-d) >= 0.0001828446364 sqrt(d)/log d (2610.21511 Prop. L1): ratio of our bound (A)
+  log d = 2: ours/sqrt(d) >= 0.01167, theirs = 9.142e-05, ratio 128
+  log d = 5: ours/sqrt(d) >= 0.01167, theirs = 3.657e-05, ratio 319
+  log d = 10: ours/sqrt(d) >= 0.01167, theirs = 1.828e-05, ratio 638
+  log d = 20: ours/sqrt(d) >= 0.01167, theirs = 9.142e-06, ratio 1277
+  log d = 35: ours/sqrt(d) >= 0.00985, theirs = 5.224e-06, ratio 1885
+  log d = 100: ours/sqrt(d) >= 0.00760, theirs = 1.828e-06, ratio 4158
+
+(G) side result, upper bound: |L(1,chi)| <= Cup * loglog q
+  limit constant e^gamma/(1-B) = [14.06649882603516688177641598405665332982018297790192078944392334384366992748 +/- 3.88e-75]
+  tail Lam>=40.0, h=0.015: kappa_1(Lam_N) <= 9.578e-18 < 1: PASS; |L(1,chi)| <= 14.2223 loglog q
+  |L(1,chi)| <= 16 loglog q for loglog q >= 3.0: grid [3.0, 40] 7400 cells PASS (tightest (0.08330965266948401, (3.0, 3.005, 12.764, 1.038, 8.0, 1.845))); tail >= 40: PASS
+  tail Lam>=40.0, h=0.015: kappa_1(Lam_N) <= 9.578e-18 < 1: PASS; |L(1,chi)| <= 14.2223 loglog q
+  |L(1,chi)| <= 15 loglog q for loglog q >= 3.0: grid [3.0, 40] 7400 cells PASS (tightest (0.018771131531912837, (3.0, 3.005, 12.764, 1.038, 8.0, 1.845))); tail >= 40: PASS
+  tail Lam>=100.0, h=0.006: kappa_1(Lam_N) <= 8.387e-44 < 1: PASS; |L(1,chi)| <= 14.1288 loglog q
+  tail Lam>=1000.0, h=0.001: kappa_1(Lam_N) <= 6.064e-435 < 1: PASS; |L(1,chi)| <= 14.0746 loglog q
+  loglog q=3: |L(1,chi)| <= 44.139  (= 14.713 loglog q; (1/2)log q = 10.0)
+  loglog q=4: |L(1,chi)| <= 50.478  (= 12.619 loglog q; (1/2)log q = 27.3)
+  loglog q=5: |L(1,chi)| <= 59.349  (= 11.870 loglog q; (1/2)log q = 74.2)
+  loglog q=10: |L(1,chi)| <= 122.174  (= 12.217 loglog q; (1/2)log q = 11013.2)
+  loglog q=20: |L(1,chi)| <= 261.468  (= 13.073 loglog q; (1/2)log q = 242582597.7)

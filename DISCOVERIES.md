@@ -14,6 +14,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N4) Record: Robin's inequality verified for all n ≤ 10^(10^46.79), Nicolas' for primorials with p_k ≤ 1.78·10^48 (was ours 10^(10^38.71); Polak 10^(10^22.85)). [details](discoveries/robin-nicolas-ranges.md)
 - (N5) Báez-Duarte's natural-number Nyman–Beurling criterion holds in L^p for all 1 < p < 2, also for every Dirichlet L-function; unconditionally true for p ≤ 1.14497. [details](discoveries/nyman-beurling-lp.md)
 - (N10) First explicit power-saving Mertens bound: |M(x)| ≤ 1.84·10^6 x^0.9382 for all x ≥ 1 (before: no explicit exponent below 1). [details](discoveries/mertens-power-saving.md)
+- (N11) First explicit Littlewood bound without GRH: |L(1, χ)| ≥ 0.11/max(3, log log q) for every primitive χ; h(−d) ≥ 0.035√d/max(3, log log d) (was 1/log q). [details](discoveries/littlewood-half-plane.md)
 
 ## Side results (off the RH tree)
 
