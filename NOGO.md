@@ -420,3 +420,4 @@
 - R300 N8: 7/8 and the RH height do not improve explicit near-line zero proportions (Selberg density valid only to sigma <= 0.831); no newer record [R300](Riemann/Tree/R300.lean)
 - R301 N5: the RH height and the 7/8 half-plane give only routine N5 corollaries (explicit liminf constant, L^{8/7} density); d_N -> 0 itself is untouched [R301](Riemann/Tree/R301.lean)
 - R302 N13: 2024-2026 operator candidates (Yakaboylu, CCM prolate, BBM) all reduce the missing step to RH; geometric trace formulas have the wrong prime sign; Lapidus-Maier gives only reformulations [R302](Riemann/Tree/R302.lean)
+- buthe78 (Orca, N10) NO RECORD: Büthe's partial-RH range is superseded by Chirre–Helfgott (2512.15709: |ψ(x) − x| ≤ πx/(3·10¹²) + 113.67√x, Büthe-type bounds to 1.6·10^27, no zeros above T used); 7/8 helps Büthe–Johnston only 1.30× (certified ψ to 5.19·10^26); R295's baseline 2.169·10^25 was outdated (Johnston 1.101·10^26) [Buthe78](Riemann/Deep/Buthe78/REPORT.md)
