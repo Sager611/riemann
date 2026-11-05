@@ -262,3 +262,4 @@ import Riemann.Tree.R262
 import Riemann.Tree.R263
 import Riemann.Tree.R264
 import Riemann.Tree.R265
+import Riemann.Tree.R266

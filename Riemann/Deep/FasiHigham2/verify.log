@@ -1,0 +1,48 @@
+PASS A  identities (sympy / exact / mpmath)                   20s
+       | ok   saddle formula r*(a,t) (a >= 3); a = 1: r* = t(t+2)/(2(t+1))
+       | ok   Lemma 1 (LG error bounds) holds at 21 sample points, nu = 5.5, 21.5, 203.5 (max |h|/bound = 0.495)
+       | IDENTITIES ALL OK
+PASS B  c_n > 0 for n <= 12 and all real m >= 203              3s
+       | n=11  c_n = (deg num 10, den 10)  positive for m>=203: True
+       | n=12  c_n = (deg num 14, den 14)  positive for m>=203: True
+       | ALL small-n positive: True
+PASS C  Good-lemma tables at nu0 = 203.5                     429s
+       | 3 boxes 107 max e 0.0708 bad [] 303s
+       | 4 boxes 102 max e 0.0579 bad [] 361s
+       | >=5 boxes 95 max e 1.1340 bad [[0.1, 0.10300000000000001], [0.10300000000000001, 0.10609], [0.10609, 0.1092727], [0.1092727, 0.112550881], [0.11255088
+PASS D  LG error-bound grid                                   58s
+       | lg grid built 2448 58s
+       | tau in [0,0]: boxes 0 fails 0 worst ratio 0.000e+00 min delta 1000000000.0000  0s
+PASS E  tau-sweep [0, 12], n >= 8                              4s
+       | tau in [0,12]: boxes 600 fails 0 worst ratio 5.455e-18 min delta 0.1834  4s
+PASS E  tau-sweep [12, 24], n >= 8                            10s
+       | tau in [12,24]: boxes 600 fails 0 worst ratio 1.339e-124 min delta 1.4202  10s
+PASS E  tau-sweep [24, 36], n >= 8                            16s
+       | tau in [24,36]: boxes 600 fails 0 worst ratio 6.531e-222 min delta 2.5241  16s
+PASS E  tau-sweep [36, 48], n >= 8                            23s
+       | tau in [36,48]: boxes 600 fails 0 worst ratio 1.338e-317 min delta 3.6088  23s
+PASS E  tau-sweep [48, 60], n >= 8                            29s
+       | tau in [48,60]: boxes 600 fails 0 worst ratio 0.000e+00 min delta 4.6881  28s
+PASS F  tau >= 60                                              0s
+       | ok   all classes: positive gap, gap slope > 0, exponent decreasing in tau (so worst case is tau = TAU0)
+       | ok   sum of all bad contributions / main term <= [8.90e-435 +/- 4.13e-438] < 1/2 at tau = TAU0 (all tau >= TAU0 by monotonicity)
+       | LARGE-TAU ALL OK
+PASS G  odd 3 <= m <= 201, all n (Arb)                       424s
+       | 197 ('POS', 28782) 387s
+       | 199 ('POS', 29373) 405s
+       | 201 ('POS', 29970) 424s
+PASS S1 lower bound <= exact c_n, m = 203, n <= 4000           7s
+       | m=203 n<=4000: violations 0 ; min log(true/LB) = 0.0437 at n=53 (l=0)
+PASS S2 Good bound <= exact J_l (quadrature), m = 203        219s
+       | n=1300 l=3 r*=0.2203: log(kappa^l J) = 615.3595  log(LB) = 615.3032  margin 0.0563  seg/arc=7.4e-37 OK
+       | n=2400 l=4 r*=0.8692: log(kappa^l J) = 1162.1891  log(LB) = 1162.0228  margin 0.1663  seg/arc=0.0e+00 OK
+       | n=2400 l=5 r*=0.4992: log(kappa^l J) = 1173.4342  log(LB) = 1173.3355  margin 0.0987  seg/arc=2.5e-168 OK
+PASS S3 I_L and Neg bounds >= numeric, m = 203               224s
+       | n=20 tau=0.098: I_L numeric 17.437 bound 23.568 OK | Neg numeric -5.778 bound 15.826 OK
+       | n=407 tau=2.000: I_L numeric 80.331 bound 86.463 OK | Neg numeric 37.442 bound 68.558 OK
+       | n=2000 tau=9.828: I_L numeric 339.224 bound 345.356 OK | Neg numeric 606.323 bound 615.481 OK
+PASS S4 crude bounds >= numeric, m = 203                       6s
+       | n=2000 l=2 t=5.8280 r*=1.5606 rc=1.5606 : log numeric (1/2pi)int|g| = 604.456 ; log(crude bound, max piece) = 607.390  OK
+       | n=2400 l=9: N < 0, not crude-bounded in the proof (Neg sum, see check_neg_IL.py)
+       | n=3000 l=1 t=12.7420 r*=3.8394 rc=1.6000 : log numeric (1/2pi)int|g| = 487.641 ; log(crude bound, max piece) = 516.084  OK
+ALL STEPS PASSED (1471 s)

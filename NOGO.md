@@ -380,3 +380,4 @@
 - R263 verified others': 2609.09179, 2609.37056, 2611.03074, 2610.08480, 2611.06269, 2610.15115, 2610.41999, 2610.11574, 2611.01243, 2611.00817, 2611.00818; misread: 2611.01170 [R263](Riemann/Tree/R263.lean)
 - R264 minor: Sun 2607.07638 Sec. 4 conj. (i) fails at p = 3 only; known: 1309.1679 printed 3.2 in Z_3^2; hold: 2511.23223, 2603.20961 (Z_23), Zenodo 23858164, 2610.41971 [R264](Riemann/Tree/R264.lean)
 - R265 hold: 2606.30506 (DKSS), 2606.18234, 1809.07766 Conj 6.1, A392667; unchecked: 2607.14646 (quoted Broadhurst formula), Zenodo 23845091 (typo); 2607.07638 p = 3 not noted in v1-v3 [R265](Riemann/Tree/R265.lean)
+- R266 hold: Sun OEIS A154257 ... A260929 (smallest primes), Guo 1909.10294, 2310.15207; known: A154364, 2610.36620; misread: 2207.13039 Conj 4.3, Zenodo 23922416 [R266](Riemann/Tree/R266.lean)
