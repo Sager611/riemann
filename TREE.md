@@ -335,5 +335,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R299 node N9 round 2: records unchanged; 7/8 gives only sigma > 7/8 statements (classical Titchmarsh 14.5); moments unaffected [R299.lean](Riemann/Tree/R299.lean)
 - R300 node N8 round 2: 67.354% re-verified from exact TeX constants; Levinson 0.3428 reproduced; nothing newer; 7/8 gives no near-line gain [R300.lean](Riemann/Tree/R300.lean)
 - R301 node N5 round 2: Burnol bound confirmed; routine corollaries liminf d_N^2 log N >= 0.046191417926 unconditionally and L^{8/7} density (Beurling + 7/8) [R301.lean](Riemann/Tree/R301.lean)
-- R302 FRONTIER (next)
+- R302 node N13 round 2: no candidate operator gained a property; missing steps equivalent to RH; sign obstruction known; Yakaboylu similarity gap unverified [R302.lean](Riemann/Tree/R302.lean)
+- R303 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
