@@ -328,5 +328,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R292 node N11 round 2: explicit Siegel gap 5811e-7 and h <= 2000 classification already in 2610.21511; effective Brauer-Siegel (2610.31402) [R292.lean](Riemann/Tree/R292.lean)
 - R293 node N2 round 2: newer half-plane alone leaves 0.13963 (barrier must be re-optimised); R288 table corrected; certificates spot-checked [R293.lean](Riemann/Tree/R293.lean)
 - R294 node N4 round 2: range is Briggs-computational (Morrill-Platt 1809.10813), 21-free is Axler 2110.13478; 7/8 extends neither [R294.lean](Riemann/Tree/R294.lean)
-- R295 FRONTIER (next)
+- R295 node N10 round 2: Buthe's psi/theta range 2.169e25 is height-tied with a Re rho < 1 tail; 7/8 should give ~1.78x (Orca certifying) [R295.lean](Riemann/Tree/R295.lean)
+- R296 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
