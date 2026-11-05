@@ -1,0 +1,26 @@
+CHECKED 20000 row 3 elapsed 20.36
+CHECKED 40000 row 7 elapsed 39.82
+CHECKED 60000 row 11 elapsed 58.57
+CHECKED 80000 row 15 elapsed 77.84
+CHECKED 100000 row 19 elapsed 97.92
+CHECKED 120000 row 26 elapsed 117.44
+CHECKED 140000 row 34 elapsed 157.34
+CHECKED 160000 row 42 elapsed 196.84
+CHECKED 180000 row 50 elapsed 238.77
+CHECKED 200000 row 58 elapsed 263.45
+CHECKED 220000 row 65 elapsed 292.27
+{
+  "PASS": true,
+  "arcs_checked": 220211,
+  "exact_checks": 5780535,
+  "terminal_t": "220211/2048000",
+  "terminal_q": "7854192859820348154813855/79228162514264337593543950336",
+  "exact_full_cleanup_endpoint": "2130731883412734385049125516963/19807040628566084398385987584000",
+  "all_arc_witnesses": {
+    "path": "ALL_221010_ARC_INEQUALITY_WITNESSES.jsonl.gz",
+    "bytes": 423186295,
+    "sha256": "26077a78028c84908f8963bb24641cd88c61648286afff0231cfbafddd977127",
+    "uncompressed_canonical_transcript_sha256": "f5efd9f7c4181f86d8d5abdf7170e368e0969a8b925e7f9a4bfdcd68c06be2bf"
+  },
+  "seconds": 293.08354716654867
+}

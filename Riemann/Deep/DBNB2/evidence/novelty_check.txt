@@ -1,0 +1,8 @@
+dbnb2 novelty scan, 2026-11-05 14:26 UTC
+- arXiv listing math.NT 2026-11 (141 entries): only de Bruijn-Newman item is 2611.06245 (Planat-Raymond, Lambda < 0.156821, classical strip).
+- arXiv listing math.NT 2026-10 (862 entries): 2610.12803 (Hakimoglu-Brown, 0.13963, conditional on 7/8), 2610.18214 (Planat, classical-strip comparison), 2610.27343 (Dirichlet L-functions).
+- arXiv listing math.CV 2026-11 (44 entries): none.
+- arXiv search (approach arxiv) "de Bruijn-Newman constant upper bound 2026": nothing newer.
+- Zenodo API, q="de Bruijn-Newman", newest 25 records (to 2026-11-05): no bound for zeta below 0.107964910079; newest DBN items are 23964801 (Davenport-Heilbronn flow, 4 Nov), 23931764 (Dirichlet Lambda_chi <= 9/32, Lean, 3 Nov), 23889610 (derivative DBN constants), 23863923 (heat-flow essay), 23842668 (Rodgers-Tao propagation, 31 Oct).
+- Raymond's own items: 23752103 (0.107964910079, 29 Oct) is the newest bound; 23781981 (30 Oct) is v1.1 of the 0.149396 paper (from DBNAudit).
+Conclusion: no prior use of the Lean-checked half-plane Re s > 0.87338196661320752 in Raymond's chain; no published bound below 0.107964910079 for zeta.

@@ -1,0 +1,44 @@
+34c34
+<  'flow':('lambda_round16/ordinary_7_8_flow/full_flow/FLOW.json.gz','a664e829a3681d96e474bcf875d80cba7b16fe8f65e050c69f01b5ea07de4737'),
+---
+>  'flow':('dbnb2/FLOW_B2.json.gz','f8996d5e7af7807fbb1b8362d192fdf3a24f7d28e2a0709805d660026235cd02'),  # dbnb2: new flow
+37a38
+> CHECK_RETAINED_ROW55_TUBE=False  # dbnb2 mode A
+166c167
+<  require(plan['initial_sigma']==flow['initial_sigma']=='7/8','ordinary7/8 initialization')
+---
+>  require(plan['initial_sigma']=='7/8' and flow['initial_sigma']=='5458637291332547/6250000000000000','dbnb2: unchanged 7/8-era plan rows; flow initialised at Lean-checked b0=0.87338196661320752')
+170c171
+<  require(len(arcs)==flow['steps']==221010,'every expected actual arc supplied')
+---
+>  require(len(arcs)==flow['steps']==220181,'every expected actual arc supplied')
+172c173
+<  initial=Q(9,16)+Q(1,10**12)
+---
+>  initial=(2*Q(87338196661320752,10**17)-1)**2+Q(1,10**12)  # dbnb2: (2b0-1)^2+1e-12
+210c211
+<    if i==55:
+---
+>    if CHECK_RETAINED_ROW55_TUBE and i==55:  # dbnb2 mode A: vestigial, see REPORT.md
+233,234c234,235
+<  require(t==Q(flow['terminal_t'])==Q(22101,204800),'actual full history reaches statedterminaltime')
+<  require(q==Q(flow['terminal_q'])==Q(7902377963830536747158643,2**96),'actual full history reaches statedterminalsquare')
+---
+>  require(t==Q(flow['terminal_t'])==Q(220181,2048000),'actual full history reaches statedterminaltime')
+>  require(q==Q(flow['terminal_q'])==Q(7870749227741121606689559,79228162514264337593543950336),'actual full history reaches statedterminalsquare')
+241,242c242,243
+<  require(endpoint==Q(flow['endpoint'])==Q(427693072077942473661578098491,3961408125713216879677197516800),'entire q/2 cleanup exact identity')
+<  require(endpoint<Q(flow['headline'])==Q(107964910079,10**12)<endpoint+eta,'upward decimal ceiling')
+---
+>  require(endpoint==Q(flow['endpoint'])==Q(2130443810762016970728680497723,19807040628566084398385987584000),'entire q/2 cleanup exact identity')
+>  require(endpoint<Q(flow['headline'])==Q(53779962659,500000000000)<endpoint+eta,'upward decimal ceiling')
+244,245c245,246
+<  require([r['arcs']for r in rowstats]==[5120]*20+[2560]*46+[850],'all actual timecells completelyowned')
+<  require(minimums['cap_clearance'][0]==Q(21059999,10**12),'minimum actual capclearance')
+---
+>  require([r['arcs']for r in rowstats]==[5120]*20+[2560]*46+[21],'all actual timecells completelyowned')
+>  require(minimums['cap_clearance'][0]==Q(16223771715828176332085890384947,15474250491067253436239052800000000),'minimum actual capclearance')
+254c255
+<    'headline':'107964910079/1000000000000',
+---
+>    'headline':'53779962659/500000000000',
