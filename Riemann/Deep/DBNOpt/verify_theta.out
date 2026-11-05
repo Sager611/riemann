@@ -1,0 +1,16 @@
+row 0 ok so far (0 fails)  1s
+row 50 ok so far (0 fails)  17s
+row 100 ok so far (0 fails)  32s
+row 150 ok so far (0 fails)  43s
+row 200 ok so far (0 fails)  55s
+row 250 ok so far (0 fails)  67s
+row 300 ok so far (0 fails)  78s
+row 350 ok so far (0 fails)  91s
+row 400 ok so far (0 fails)  104s
+row 450 ok so far (0 fails)  117s
+rows: 474   Bernstein coefficients checked: 189600
+max eps0 = 0.017852   min(C^cert-C) = 2.778e-11   min(G-G^cert) = 5.243e-13   min gate = 5.787e-13   min Bernstein = 2.182e-09   k in [8.73885, 10.39438]
+theta = 5458637291332547/6250000000000000  q0 = 5576563720/10^10  t_n = 1183621/10000000  = 0.1183621000
+peak RSS 37 MB, runtime 124.0 s
+RESULT: ALL CHECKS PASS.  Lambda <= t_n + q_n/2 = 1383621/10000000 = 0.13836210
+      125.15 real       111.43 user         1.85 sys
