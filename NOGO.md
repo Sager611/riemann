@@ -401,3 +401,4 @@
 - R284 N1: no newer certified window; cos^k test families useless; beyond 1.55 blocked by memory (REPORT4) [R284](Riemann/Tree/R284.lean)
 - R285 N13: 2610.41115 is function-field only; 2609.04908 assumes RH; CCM zeros not direct eigenvalues of the prolate discretisation [R285](Riemann/Tree/R285.lean)
 - R286 N10: explicit psi bound from the 7/8 half-plane already published (2609.23222); no newer RH-verification height [R286](Riemann/Tree/R286.lean)
+- R287 N8: no result beyond 67.354%; 2610.08965 constant reproduced; mollifier extrapolation not applicable (energy certificate) [R287](Riemann/Tree/R287.lean)
