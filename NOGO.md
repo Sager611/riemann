@@ -491,3 +491,4 @@
 - densityb (Orca, N7): Lindelöf on Re s = B, the convexity line and moment interpolation give nothing below B (Prop. 2: they add information only above B); the gain needs the reflected line Re s = 1 − B [DensityB](Riemann/Deep/DensityB/REPORT.md)
 - R357 N2: Polymath15-style barrier bounds for real chi mod 3, 4 at Platt's heights give about 0.31 > 2(B - 1/2)^2; potential theory, Teichmuller/Loewner energy and isomonodromic tau functions give no zero-forcing mechanism [R357](Riemann/Tree/R357.lean)
 - R358 N11: monomer-dimer matching polynomials, CMV/OPUC Verblunsky coefficients of the Hermite-Biehler normalization of Xi, and Witten/Mordell-Tornheim zeta functions give no zero-forcing or positivity mechanism [R358](Riemann/Tree/R358.lean)
+- R359 N13: Pade/Hermite-Pade pole interlacing, SYK spectral form factors and six-vertex/Bethe-ansatz reality give no zero-forcing mechanism; Suzuki's Psi(t) > 0 on [0, t_0) is not RH-equivalent [R359](Riemann/Tree/R359.lean)

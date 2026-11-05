@@ -392,5 +392,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R356 node N3 round 6: Li records stand; Platt heights behind the Dirichlet ranges rechecked; explicit zero density would lift the range only to about 114 T^2 [R356.lean](Riemann/Tree/R356.lean)
 - R357 node N2 round 7: Lambda <= 0.107559925318 stands and its chain rechecked; Lambda_K <= 225/512 for every number field from the Lean-checked 31/32 (routine); Polymath15-style Dirichlet bounds cannot beat the strip bound at Platt's heights [R357.lean](Riemann/Tree/R357.lean)
 - R358 node N11 round 6: the explicit Littlewood record stands; its Dusart inputs and Lemma 6 rechecked, no flaw; observed minima 0.709 (real) and 0.738 (prime moduli) against the proved 0.11 [R358.lean](Riemann/Tree/R358.lean)
-- R359 FRONTIER (next)
+- R359 node N13 round 7: no spectral realization or new Zenodo operator claim; Suzuki's Psi > 0 window is not RH-equivalent; the simple-even condition for the Weil form (2511.22755) is open and checkable (candidate) [R359.lean](Riemann/Tree/R359.lean)
+- R360 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
