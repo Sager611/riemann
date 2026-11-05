@@ -397,3 +397,4 @@
 - R280 N9: no 2026 improvement of 13/84; convexity from the 7/8 half-plane is routine (COROLLARIES), not a discovery [R280](Riemann/Tree/R280.lean)
 - R281 N11: no Oct-Nov 2026 claim beyond the record; explicit L(1,chi) bounds hold for D <= 2*10^5; family averaging needs uniform conductor errors [R281](Riemann/Tree/R281.lean)
 - R282 N3: no extension of the 10^5 range found; Zenodo 23884485 is not a proof; Lorentzian Hessians cannot certify Weil PSD alone [R282](Riemann/Tree/R282.lean)
+- R283 N4: no extension of the Morrill-Platt range; no all-n proof claim found to refute [R283](Riemann/Tree/R283.lean)
