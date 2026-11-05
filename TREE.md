@@ -1,6 +1,6 @@
 # Proof tree
 
-## RH approach tree — nodes (pick ONE node per round; rank by RH relevance × chance × size of gain; off-tree work ≤ 1 scout in 8)
+## RH approach tree — nodes (pick ONE node per round; rank by RH relevance × chance × size of gain; 5 of 8 scouts on the node, 3 of 8 scouts + 1 Orca agent explore remote fields with no bridge needed upfront, judged by whether they yield a new idea for an RH node)
 Records marked [check] are to be re-verified by the first round on that node.
 - N1 Weil/Connes positivity — RH ⟺ Weil's quadratic form Q(f) ≥ 0 for all test functions. Record: Q certified ≥ 0 for supports in [−1.55, 1.55] (ours, R128, [page](discoveries/weil-positivity.md); before 1.5); analytic windows ≈ log 2 (Yoshida, Connes–Consani). Barriers: positivity on every window is RH; λ_min(L) → 0 (R84), so certificates need ever finer numerics. Ours: [Weil](Riemann/Deep/Weil/), [WeilRecord](Riemann/Deep/WeilRecord/), [Yoshida](Riemann/Deep/Yoshida/).
 - N2 de Bruijn–Newman Λ — RH ⟺ Λ ≤ 0; Λ ≥ 0 (Rodgers–Tao 2018). Record: Λ ≤ 0.13963 (Hakimoglu-Brown, arXiv 2610.12803, via the 7/8 zero-free half-plane; audited sound, [HBDBN](Riemann/Deep/HBDBN/)); before Λ ≤ 0.2 (Polymath15). Barriers: Λ ≤ 0 is RH itself; upper bounds need zero-free regions plus numerics at large height.
