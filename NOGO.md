@@ -404,3 +404,4 @@
 - R287 N8: no result beyond 67.354%; 2610.08965 constant reproduced; mollifier extrapolation not applicable (energy certificate) [R287](Riemann/Tree/R287.lean)
 - ChangWang (Orca): Chang–Wang 2611.00924 (zero-free Re s > 0.87446205769353 for finite-order Hecke L, hence ζ) is sound given Liu's unrefereed inputs (Hexagon 2610.00655v1, 2610.26835v2); 77 finite checks pass; no false step; already beaten by Liu's own Hexagon v2/v3 claims (0.874072848, 0.874058504). [report](Riemann/Deep/ChangWang/REPORT.md)
 - R288 N2: no newer Lambda bound; pure de Bruijn strip bound 0.281; moving-strip splice with RH height gives nothing [R288](Riemann/Tree/R288.lean)
+- Jensen9 (Orca): N6 record was misrecorded (d ≤ 8); the all-n range is d ≤ T² ≈ 9.0·10^24 (Chasse method, Kim–Lee, GORTTW); with the 7/8 half-plane it rises to (16T² − 4)/9 ≈ 1.6·10^25 (routine, COROLLARIES); no explicit N(d) known beyond the range. [report](Riemann/Deep/Jensen9/REPORT.md)
