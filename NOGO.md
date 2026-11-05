@@ -408,3 +408,4 @@
 - R289 N5: no faster decay known; 7/8 half-plane too weak for power decay of d_N [R289](Riemann/Tree/R289.lean)
 - R290 N12: F_1 / prismatic / Deninger papers give no RH step; graph zeta toys do not force critical-line spectra [R290](Riemann/Tree/R290.lean)
 - R291 N7: the cubic-theta product-moment method cannot pass 13/15 (Liu's own limit); Liu's general-field inputs are not formalised [R291](Riemann/Tree/R291.lean)
+- R292 N11: effective class-number corollary already published (2610.21511 classifies h <= 2000) [R292](Riemann/Tree/R292.lean)

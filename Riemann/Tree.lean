@@ -288,3 +288,4 @@ import Riemann.Tree.R288
 import Riemann.Tree.R289
 import Riemann.Tree.R290
 import Riemann.Tree.R291
+import Riemann.Tree.R292
