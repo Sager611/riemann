@@ -409,3 +409,4 @@
 - R290 N12: F_1 / prismatic / Deninger papers give no RH step; graph zeta toys do not force critical-line spectra [R290](Riemann/Tree/R290.lean)
 - R291 N7: the cubic-theta product-moment method cannot pass 13/15 (Liu's own limit); Liu's general-field inputs are not formalised [R291](Riemann/Tree/R291.lean)
 - R292 N11: effective class-number corollary already published (2610.21511 classifies h <= 2000) [R292](Riemann/Tree/R292.lean)
+- R293 N2: plugging a better theta into HB's fixed Table 2 gives no gain; height-local strips do not shrink faster [R293](Riemann/Tree/R293.lean)
