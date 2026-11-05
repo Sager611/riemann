@@ -359,3 +359,4 @@
 - R245 verified others': 2606.00843, 2606.00290, 2606.00246; minor typo: 2606.00420 example; timed out: 2606.00802, 2606.00646; not testable: A398768. [R245](Riemann/Tree/R245.lean)
 - R246 audit, no flaw: Krzyż n = 6, 7 (Zenodo 23964169 / 2610.15206). Minor: 2611.04165 anc x* interval printed from a double. Verified others': 2611.04523, 2611.03695; not testable: 2611.03778, 2611.01980, 2611.03835, Zenodo 23728890. [R246](Riemann/Tree/R246.lean)
 - R247 rejected scout claim: 2611.04178 (witness outside x ≤ 10¹¹). Verified others': 2611.03688, 2611.05068, 2611.04023, 2611.03797, 2611.00820. [R247](Riemann/Tree/R247.lean)
+- R248 verified others': 2611.04730, 2611.04020, 2611.03906, 2611.04551, 2611.04165, 2611.05076, 2611.03719; not testable: Zenodo 23962463. [R248](Riemann/Tree/R248.lean)
