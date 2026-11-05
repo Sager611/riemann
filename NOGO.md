@@ -364,3 +364,4 @@
 - R250 counterexample candidates: Sun 1309.1679 Conj. 3.3 (Z/6), 3.4(ii) (Z/5, 3-AP), 3.5(i) (Z/7, n = 5). Small cases hold: Sun 3.1, 3.7–3.9, 3.11–3.18 (3.14 scout error), 4.1–4.13 (4.3, 4.11 untested). [R250](Riemann/Tree/R250.lean)
 - R251 small cases hold: Sun 2606.18234, 1811.10503, 1405.0290, 1402.6641 (most), 2405.03626; leads under audit: 1809.07766 Conj 6.1, 6.6(ii); 1402.6641 Conj 3.5(i). [R251](Riemann/Tree/R251.lean)
 - R252 small cases hold: 2601.07950, 2602.19989, 2603.20961, 2604.10864, 2605.03170, 2607.11313; not testable: 2606.27208, 2608.19090. [R252](Riemann/Tree/R252.lean)
+- Kissing2 (Orca): no new kissing record from Leech-based components in 25–48D (and P48p in 49–60D): all at proven ceilings, already lattice-coset shells, or locally saturated. [report](Riemann/Deep/Kissing2/REPORT.md)
