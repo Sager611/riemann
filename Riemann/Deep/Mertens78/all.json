@@ -1,0 +1,11 @@
+[
+ {"name":"H093","harnack":true,"sigma1":"0.93","sigma0":"1.02","eta":"0.1","T1":"1000"},
+ {"name":"ML093g5_e10","cert":"c_ml093_g5.json","eta":"0.1"},
+ {"name":"ML092g8_e10","cert":"c_ml092_g8.json","eta":"0.1"},
+ {"name":"ML092g8_e05","cert":"c_ml092_g8.json","eta":"0.05"},
+ {"name":"ML091g12_e03","cert":"c_ml091_g12.json","eta":"0.03"},
+ {"name":"S090g20_e01","cert":"c_s090_g20.json","eta":"0.01"},
+ {"name":"S090g40_e005","cert":"c_s090_g40.json","eta":"0.005"},
+ {"name":"S089g400_e005","cert":"c_s089_g400.json","eta":"0.005"},
+ {"name":"S089g3000_e005","cert":"c_s089_g3000.json","eta":"0.005"}
+]
