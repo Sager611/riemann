@@ -398,3 +398,4 @@
 - R281 N11: no Oct-Nov 2026 claim beyond the record; explicit L(1,chi) bounds hold for D <= 2*10^5; family averaging needs uniform conductor errors [R281](Riemann/Tree/R281.lean)
 - R282 N3: no extension of the 10^5 range found; Zenodo 23884485 is not a proof; Lorentzian Hessians cannot certify Weil PSD alone [R282](Riemann/Tree/R282.lean)
 - R283 N4: no extension of the Morrill-Platt range; no all-n proof claim found to refute [R283](Riemann/Tree/R283.lean)
+- R284 N1: no newer certified window; cos^k test families useless; beyond 1.55 blocked by memory (REPORT4) [R284](Riemann/Tree/R284.lean)

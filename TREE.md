@@ -317,5 +317,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R281 node N11: explicit Siegel constants hold for 60,802 class numbers; 11/12 Hecke result is finite-order only; no new record [R281.lean](Riemann/Tree/R281.lean)
 - R282 node N3: Johansson's lambda_n > 0 for n <= 10^5 re-checked (no extension); exploration ideas for N1, N6 [R282.lean](Riemann/Tree/R282.lean)
 - R283 node N4: Robin verified to 10^{10^{13.11485}}, 21-free unconditional (Morrill-Platt) re-checked; margins computed [R283.lean](Riemann/Tree/R283.lean)
-- R284 FRONTIER (next)
+- R284 node N1: certified 1.55 still the record; constants re-checked; extension needs an out-of-core rewrite [R284.lean](Riemann/Tree/R284.lean)
+- R285 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
