@@ -22,25 +22,6 @@ Goal: prove or disprove RH by endless Lean proof-tree search; never stop.
 - Entry needs own verification, a `reviewer` verdict and an adversarial novelty check (arXiv monthly listings `https://arxiv.org/list/<cat>/<YYYY-MM>?show=2000`, this and last month; Zenodo; our NOVELTY.md files). Known or insignificant → remove.
 - Broken claimed proofs → `REFUTATIONS.md`; routine/conditional deductions → `COROLLARIES.md`; formalizations → `FORMALIZATIONS.md`.
 
-## Orca agents
-- `OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1 taskpolicy -b nice -n 19 pi --no-lens --provider anthropic --model claude-opus-5-5 --thinking max`; never ultraworker.
-- One single-threaded job each, with a hard time limit; no new worktrees; own subdirectory; orchestrator commits.
-- Stalled (no "Working" line): read the terminal tail, nudge "continue; write long derivations to files"; idle may need Enter twice; "Elapsed Nh" → kill the hung process.
-
-## Scouts
-- Web search only `web_search({approach:"arxiv"})` in try/catch; heavy load: concurrency ≤ 4.
-- Confirm notation-level flaws in the TeX (`https://arxiv.org/e-print/<id>`), not pdftotext.
-- Kill our orphans: `ps -Ao pid,ppid,etime,args | awk '$2==1'` with cwd = repo.
-- "None known" is unreliable: before formalizing, check Mathlib, openai/math, facebookresearch/atlas-lean, zeta23 yourself (GitHub API).
-
-## Lean and disk
-- Doc-only tree files: plain `lean <file>`; real: `lake env lean <file>`, all: `lake build`; few compiles in parallel.
-- Write `.lean` via bash/python, never the write/edit tools; Lean LSP off (`.pi-lens.json`).
-- `.lake` is a placeholder file; delete it only for a real build (`lake exe cache get`).
-- Keep only active work on disk; delete `.scratch/` leftovers, downloads, caches and finished `.lake` at once.
-- Disk low: truncate `.lake/build/ir/**/*.setup.json` to 0 bytes; never delete `.c` files. Below 1 GB: stop heavy jobs; check `/var/folders/*/*/X/*code_sign_clone`, other projects' `/tmp/wt-*`, swap; QRH oleans (1.6 GB) are deletable.
-- `rg`, never `grep`. No Docker. No vitest.
-
 ## Layout
 `Riemann/Fayed/` paper; `Riemann/Tree/` rounds; `TREE.md` tree + round index; `NOGO.md`; `DISCOVERIES.md`.
 
@@ -73,3 +54,4 @@ Goal: prove or disprove RH by endless Lean proof-tree search; never stop.
 | 2026/11/05 05:01 | orchestrator | Scope discoveries to the RH approach tree | Adrian: discoveries were not moving toward RH |
 | 2026/11/05 05:06 | orchestrator | Exploration share: 3 of 8 scouts + 1 Orca agent on remote fields | Adrian: RH may need ideas from remote fields |
 | 2026/11/05 05:16 | orchestrator | Terse rewrite; callout; Changelog; check own NOVELTY files | Adrian: file too fluffy; the sofa "record" had missed Tomar's better bound |
+| 2026/11/05 05:19 | orchestrator | Moved the Orca agents, Scouts, Lean and disk sections to the workspace daydreaming topic `2026-11-05 - riemann-orca-scouts-lean-disk.md` | Adrian: operating notes belong in daydreaming |
