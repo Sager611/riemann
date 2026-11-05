@@ -375,5 +375,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R339 node N7 round 5: B_2 and density records stand; hexagonmath 2611.00092 is about real zeros of L'; Liu's routes below B_2 harvested; Dirichlet Li ranges (N3, routine) [R339.lean](Riemann/Tree/R339.lean)
 - R340 node N5 round 6: records stand; Zenodo RH-conditional refinements of the d_N asymptotic noted; 2611.03924 open questions harvested [R340.lean](Riemann/Tree/R340.lean)
 - R341 node N12 round 5: classification and density records stand (Cossaboom GL_2 density added); conductors 2, 3, 4 need a linear-twist argument; RV map not LP-preserving [R341.lean](Riemann/Tree/R341.lean)
-- R342 FRONTIER (next)
+- R342 node N11 round 5: records stand; explicit Littlewood bound h(-d) >> sqrt(d)/log log d under the half-plane open (2610.21511 remark; candidate littlewood78) [R342.lean](Riemann/Tree/R342.lean)
+- R343 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
