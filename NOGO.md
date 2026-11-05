@@ -362,3 +362,4 @@
 - R248 verified others': 2611.04730, 2611.04020, 2611.03906, 2611.04551, 2611.04165, 2611.05076, 2611.03719; not testable: Zenodo 23962463. [R248](Riemann/Tree/R248.lean)
 - R249 counterexample candidate: Sun 1309.1679 Conj. 3.10 at (q, a₀) = (11, 2). Verified others': 2610.22622, 2610.03730, 2610.24502; not testable: 2610.05568, 2610.33322, 2610.02009, Zenodo 23765626. [R249](Riemann/Tree/R249.lean)
 - R250 counterexample candidates: Sun 1309.1679 Conj. 3.3 (Z/6), 3.4(ii) (Z/5, 3-AP), 3.5(i) (Z/7, n = 5). Small cases hold: Sun 3.1, 3.7–3.9, 3.11–3.18 (3.14 scout error), 4.1–4.13 (4.3, 4.11 untested). [R250](Riemann/Tree/R250.lean)
+- R251 small cases hold: Sun 2606.18234, 1811.10503, 1405.0290, 1402.6641 (most), 2405.03626; leads under audit: 1809.07766 Conj 6.1, 6.6(ii); 1402.6641 Conj 3.5(i). [R251](Riemann/Tree/R251.lean)
