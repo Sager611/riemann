@@ -436,3 +436,4 @@
 - R312 N5: our L^p theorem does not transfer to Noor's H^p(D) model (no L^p identification) or to weighted alpha != -2 without new weighted Mellin bounds; zero-freeness alone does not give cyclicity in Dirichlet-series H^p [R312](Riemann/Tree/R312.lean)
 - R313 N6: no effective large-n Jensen threshold exists in print; Chasse's lemma does not apply to signed Dirichlet characters; finite-height reality does not propagate to H_t for 0 < t < Lambda [R313](Riemann/Tree/R313.lean)
 - R314 N9: the zero-free half-plane gives no new moment, large-value or density-hypothesis range below B; Bagchi recurrence above B is routine [R314](Riemann/Tree/R314.lean)
+- R315 N3: Li positivity for Dirichlet L-functions from Platt's GRH heights needs explicit tail constants (Omar-Ouni-Mazhouda dismiss the tail); degree-2 L-functions lack verified GRH heights [R315](Riemann/Tree/R315.lean)

@@ -348,5 +348,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R312 node N5 round 4: Dimitrov-Oliveira's P1 (Dirichlet L^p endpoint) looks like a routine extension of our theorem (next Orca); Noor H^p converse and weighted alpha hard; p > 2 fails (known) [R312.lean](Riemann/Tree/R312.lean)
 - R313 node N6 round 3: large-n thresholds ineffective (explicit region d <= 1.6141e25, all n); Dirichlet analogue blocked by positivity; Laguerre to height T (2611.02944) added [R313.lean](Riemann/Tree/R313.lean)
 - R314 node N9 round 3: half-plane consequences classical (moments for sigma > B new only for k >= 59); DH threshold 25/32 unchanged; 2611.01452 exponents rechecked [R314.lean](Riemann/Tree/R314.lean)
-- R315 FRONTIER (next)
+- R315 node N3 round 3: Fabbian's 77.03 T^2 rechecked exactly; Dirichlet-L Li ranges estimated (n ~ 6e16 at q = 3), not certified [R315.lean](Riemann/Tree/R315.lean)
+- R316 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
