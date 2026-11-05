@@ -1,12 +1,12 @@
 # riemann — rules
 
 Goal: Prove or disprove the Riemann Hypothesis by endless Lean proof-tree search (≥8 scouts/round, NOGO log, commit per round, never stop).
-Priority (user, 2026-10-20): hunt NEW discoveries (new theorems, records, counterexamples, false steps); formalizing known results is secondary. DISCOVERIES.md strict: new theorems, records, counterexamples to established statements only. Broken claimed proofs → REFUTATIONS.md; routine/conditional deductions → COROLLARIES.md; formalizations → FORMALIZATIONS.md.
+Priority (user, 2026-10-20; scoped 2026-11-05): hunt NEW discoveries (new theorems, records, counterexamples, false steps) on the RH tree: each must advance a named `TREE.md` node (RH criterion/equivalent, quantitative zero or prime-error record, L-function analogue, barrier to an approach); off-tree work ≤ 1 scout in 8 and no Orca agent unless it names a bridge to a node; formalizing known results is secondary. DISCOVERIES.md strict: new theorems, records, counterexamples to established statements only. Broken claimed proofs → REFUTATIONS.md; routine/conditional deductions → COROLLARIES.md; formalizations → FORMALIZATIONS.md.
 Disk (user, 2026-10-21): keep on disk only what is actively worked on; delete scratch, downloads, caches and `.lake` of finished work immediately (re-fetch Mathlib with `lake exe cache get` when a build is needed).
 
 ## Work loop (never stop)
-1. Pick frontier node in `TREE.md`.
-2. Branch: ≥8 parallel scouts; directions = some straightforward + many wild/out-of-box/original.
+1. Pick one node of the RH approach tree at the top of `TREE.md` (seed it if missing); rank nodes by RH relevance × chance × size of gain.
+2. Branch: ≥8 parallel scouts on that node; directions = state of the art (current record, newest papers), computation (extend ranges/constants), adversarial (counterexamples to lemmas the approach needs), many wild/out-of-box/original.
 3. Write every branch in Lean (`Riemann/Tree/R###/`): claim, counterexample or reduction; `sorry` only for open obligations, marked.
 4. Dead ends → `NOGO.md`, few words each.
 5. Never ultraworker (user, 2026-10-21): all edit/build/research work beyond scouts → Orca agent: `taskpolicy -b nice -n 19 pi --no-lens --provider anthropic --model claude-opus-5-5 --thinking max` with OMP/OPENBLAS/MKL/VECLIB_MAXIMUM/NUMEXPR thread counts = 1 (user, 2026-10-20; harness is pi again: user uninstalled pig on 2026-10-22, never reinstall it; CPU limits after the user's CPU pause, 2026-10-23: low-power cores, one single-threaded job per agent; pi-lens off: its pyright/opengrep servers cost up to ~600 MB per agent), tight full brief; close its tab when done.
@@ -18,7 +18,7 @@ Disk (user, 2026-10-21): keep on disk only what is actively worked on; delete sc
 6. `lake build` green → git commit, then `git push origin main` after EVERY commit (user, 2026-10-21; repo is public: never commit secrets).
 
 ## Discoveries
-`DISCOVERIES.md`: one short line per entry (≤ 25 words) linking to `discoveries/<name>.md` (statement, before, method, review, novelty, files; user 2026-10-23); tell user; `reviewer` judges significance; scouts check online novelty; insignificant or known → remove. Records: also scan arXiv monthly listings (`https://arxiv.org/list/<cat>/<YYYY-MM>?show=2000`, math.NT/CV/GM, this and last month) and Zenodo; a missed 8 Oct paper (Λ ≤ 0.13963) voided our de Bruijn–Newman entry.
+`DISCOVERIES.md`: one short line per entry (≤ 25 words) linking to `discoveries/<name>.md` (statement, before, method, review, novelty, RH relevance: node advanced, files; user 2026-10-23); off-tree results go under a "Side results" heading; tell user; `reviewer` judges significance; scouts check online novelty; insignificant or known → remove. Records: also scan arXiv monthly listings (`https://arxiv.org/list/<cat>/<YYYY-MM>?show=2000`, math.NT/CV/GM, this and last month) and Zenodo; a missed 8 Oct paper (Λ ≤ 0.13963) voided our de Bruijn–Newman entry.
 
 ## Constraints
 - Never ask permission; decide, act, log.
