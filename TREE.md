@@ -380,5 +380,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R344 node N8 round 5: 67.353% stands; Johns's thmMain hypothesis-free; 2610.08965 not a mollifier scheme (theta = 17/20, ceiling 0.67383); N4 record now 10^(10^38.71) with the Lean-checked half-plane [R344.lean](Riemann/Tree/R344.lean)
 - R345 node N6 round 6: records stand (restated with the Lean-checked half-plane); Dirichlet all-n Jensen ranges d <= 1.79e16/q^2 (routine); Zenodo 23977400 (Chung) RH claim: flaw not yet located [R345.lean](Riemann/Tree/R345.lean)
 - R346 node N3 round 5: Li records stand; Dedekind zeta of abelian fields lambda_n > 0 for n <= 26.12 (10^8/f)^2 (routine); Chung's claimed RH proof: Section 6 step valid in form, flaw open [R346.lean](Riemann/Tree/R346.lean)
-- R347 FRONTIER (next)
+- R347 node N2 round 6: Lambda <= 0.107559925318 stands; HB's 11/12 table obsolete; zero density cannot beat the strip bound 2a^2 without RH to a height [R347.lean](Riemann/Tree/R347.lean)
+- R348 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
