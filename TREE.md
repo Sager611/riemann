@@ -407,5 +407,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R371 node N12 round 8: records stand; the conductor 2, 3, 4 classification stays open (converse theorems need all twists, 2207.00451); Guth-Maynard for GL_d undone; a Zenodo RH proof refuted (unproved amplitude inequality) [R371.lean](Riemann/Tree/R371.lean)
 - R372 node N4 round 7: records stand; no other open progression gap in Washington-Yang; Ramanujan's c_1 is an asymptotic RH constant; a superabundant monotonicity conjecture of 2601.22413 harvested [R372.lean](Riemann/Tree/R372.lean)
 - R373 node N7 round 8: B_2 + 2.2e-254 stands (tracker, Zenodo, HAL); the scope remarks of 2610.26835 name the inputs that would move its comparison boundary (harvested, low); bootstrap, branching processes and phylogenetics give no route [R373.lean](Riemann/Tree/R373.lean)
-- R374 FRONTIER (next)
+- R374 node N6 round 8: records stand; Holland's wedge n^3 log^2(n+2) >= K d^5 (2608.08682) has a non-explicit K although its localization constants are explicit (candidate hollandk); Chasse's sector lemma is sharp; concentration, communication complexity and Bernoulli convolutions give no route [R374.lean](Riemann/Tree/R374.lean)
+- R375 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
