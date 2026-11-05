@@ -37,7 +37,7 @@ Conditional half-planes (verify.py --conditional): Liu 0.874957… → 105.787 T
 
 Notation: λ_n = Σ_ρ [1 − (1 − 1/ρ)^n] (symmetric summation; Li 1997, Bombieri–Lagarias 1999), g(x) = 2 − 2cos x,
 θ(t) = 2 arctan(1/(2t)), N(t) = #{ρ: 0 < γ < t} with multiplicity, Ñ(t) = (t/2π) log(t/2πe) + 7/8,
-|N − Ñ| ≤ E(t) = 0.111 log t + 0.275 log log t + 2.450 + 0.2/t for t ≥ e (Trudgian 2014, Thm 1 and (3.11)).
+|N − Ñ| ≤ E(t) = 0.1038 log t + 0.2573 log log t + 9.3675 + 7/8 for t ≥ e (Hasanalizade–Shen–Wong 2022, Cor. 1.2; Ñ includes +7/8). R333: this replaced Trudgian 2014 (0.111 log t + 0.275 log log t + 2.450 + 0.2/t), whose bound has a reported error (HSW 2022 fn. 2, following BMOR 2021); all certified N are unchanged. New variant F (a = 0.37338196661320752, Lean-checked half-plane, 31 Oct 2026): λ_n > 0 for all n ≤ 956,318,469,361,119,813,265,522,688 = 106.245188 T0² (verify.py, 80 s).
 
 1. **Per zero.** An on-line zero 1/2 + iγ and its conjugate contribute g(nθ(γ)) ≥ 0. An off-line zero ρ = 1/2 + δ + iγ
    comes with ρ* = 1 − ρ̄ = 1/2 − δ + iγ; z_ρ = re^{iφ}, z_{ρ*} = r^{−1}e^{iφ}. The quartet ρ, ρ*, ρ̄, ρ̄* contributes
@@ -66,7 +66,7 @@ bound 3a (omitted from the description), the second round: "CORRECT as a certifi
 | input | used for | status |
 |---|---|---|
 | Platt–Trudgian, Bull. LMS 53 (2021) | RH for 0 < γ ≤ 3,000,175,332,800 | refereed |
-| Trudgian, JNT 134 (2014), arXiv 1208.5846 | E(t) | refereed |
+| Hasanalizade–Shen–Wong, JNT 235 (2022), arXiv 2107.06506, Cor. 1.2 | E(t) (since R333; Trudgian 2014 dropped: reported error) | refereed |
 | OpenAI, "The Quasi-Riemann Hypothesis: a zero-free half-plane Re s > 7/8" (30 Sep 2026) | a = 3/8 | unrefereed; Lean proof builds here |
 | Mossinghoff–Trudgian–Yang, arXiv 2212.06867 | a(t) of the side line | refereed |
 

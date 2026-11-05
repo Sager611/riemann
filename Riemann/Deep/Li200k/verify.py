@@ -10,8 +10,8 @@ T0 = 3,000,175,332,800 (Platt-Trudgian: RH holds for 0 < gamma <= T0):
 Proof: REPORT.md.  Key inequality  lambda_n >= M_n - Q_n  with
   M_n = sum_{gamma>0} 2(1 - cos(n theta(gamma))),   theta(t) = 2 arctan(1/(2t))   (ordinates only)
   Q_n = sum_{gamma>=T0} q_n(gamma),  q_n(t) = 4 sinh^2(n a(t)/(2t^2)) + 4 n a(t)^2/t^3.
-Inputs used numerically: Trudgian 2014 |N(t) - t/(2pi) log(t/(2pi e)) - 7/8| <= E(t),
-  E(t) = 0.111 log t + 0.275 log log t + 2.450 + 0.2/t  (t >= e).
+Inputs used numerically: Hasanalizade-Shen-Wong 2022 Cor 1.2, |N(t) - t/(2pi) log(t/(2pi e)) - 7/8| <= E(t),
+  E(t) = 0.1038 log t + 0.2573 log log t + 9.3675 + 7/8  (t >= e)  [Trudgian 2014 replaced in R333: reported error].
 All arithmetic is ball arithmetic (python-flint / Arb); every comparison is a certified sign.
 Needs: pip install python-flint (tested 0.9.0, FLINT 3.6).  Runtime about 1 min, peak memory about 40 MB, one thread.
 Option --conditional adds two conditional half-plane variants (D, E).
@@ -28,10 +28,12 @@ LOG2PI = (2 * PI).log()
 def r(p, q=1):
     return arb(p) / q
 
-C111, C275, C245, C02 = r(111, 1000), r(275, 1000), r(245, 100), r(2, 10)
+# Hasanalizade-Shen-Wong 2022 (JNT 235, arXiv 2107.06506) Cor. 1.2: |N(t) - t/(2pi) log(t/(2pi e))| <= 0.1038 log t + 0.2573 log log t + 9.3675 (t >= e).
+# Ntilde below includes +7/8, so |N - Ntilde| <= that + 7/8. (Trudgian 2014's bound, used before R333, has a reported error: HSW 2022 fn. 2, BMOR 2021.)
+C111, C275, C245 = r(1038, 10000), r(2573, 10000), r(93675, 10000) + r(7, 8)
 
-def E(t):            # Trudgian 2014 bound on |N(t) - Ntilde(t)|, t >= e
-    return C111 * t.log() + C275 * t.log().log() + C245 + C02 / t
+def E(t):            # HSW 2022 bound on |N(t) - Ntilde(t)|, t >= e (E'(t) <= 0.13/t for t >= T0, as W needs)
+    return C111 * t.log() + C275 * t.log().log() + C245
 
 def Ntilde(t):
     return t / (2 * PI) * (t / (2 * PI)).log() - t / (2 * PI) + r(7, 8)
@@ -111,6 +113,7 @@ VARIANTS = {
     'A (a=1/2)': a_const(A_HALF),
     'B (a=1/2-1/(5.558691 log t))': a_classical(),
     'C (a=3/8, 7/8 half-plane)': a_const(A_38),
+    'F (a=0.37338196661320752, Lean-checked half-plane 31 Oct 2026)': a_const(r(37338196661320752, 10 ** 17)),
 }
 if '--conditional' in sys.argv:      # side results: conditional zero-free half-planes (see REPORT.md)
     VARIANTS['D (a=0.374957, Liu, conditional)'] = a_const(r(374957, 10 ** 6))

@@ -461,3 +461,4 @@
 - R330 N11: primon-gas thermodynamics, K-theory regulator positivity and tridiagonal beta-ensembles give no DH-failing mechanism [R330](Riemann/Tree/R330.lean)
 - R331 N8: reflection positivity, inverse spectral reconstruction and Calogero-Moser zero flows give no DH-failing mechanism [R331](Riemann/Tree/R331.lean)
 - R332 N6: fractal strings, lattice reduction and p-adic L-functions give no cheap RH-node gain (DH-blind or compute-heavy) [R332](Riemann/Tree/R332.lean)
+- R333 N3: OPUC/Caratheodory positivity, matrix models and Connes-Kreimer renormalization give no DH-failing Li-coefficient mechanism [R333](Riemann/Tree/R333.lean)
