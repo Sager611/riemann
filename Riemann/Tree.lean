@@ -243,3 +243,4 @@ import Riemann.Tree.R243
 import Riemann.Tree.R244
 import Riemann.Tree.R245
 import Riemann.Tree.R246
+import Riemann.Tree.R247
