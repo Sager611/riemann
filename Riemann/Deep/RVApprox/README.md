@@ -10,3 +10,9 @@ its concluding section leaves open whether the zeros of U_E lie on the unit circ
   (H_lambda has non-real zeros for lambda < 0), so small-E real-rootedness is generic; the smallest zero (7.9-9.3 for E <= 6) is far
   from 14.1347 (Bernstein convergence O(1/E)), so 'Z_E real-rooted for all E' (sufficient for RH by Hurwitz) cannot be probed numerically.
   Above E = 24 at 50 digits the leading coefficients lose precision (spurious off-line roots); use dps >= 3E there.
+
+- lp.py <riemann|gauss> <dps> <param> <Emax> (trapezoid quadrature, Z_E(1/2 + it) as a polynomial in u = t^2; R341): the map
+  kernel -> Z_E does NOT preserve the Laguerre-Polya class: the Gaussian kernel (transform e^{-t^2/4}, no zeros) gives non-real
+  zeros from E = 16 on (u = 11.68 +- 0.52i), the Gaussian-cos kernel b = 1 (transform cos(t) e^{-t^2/4}, real zeros) from E = 40;
+  Riemann's kernel stays real-rooted to E = 90 for lambda = 0 and 0.5 (smallest zero 13.01 at E = 90, slowly -> 14.1347).
+  So RH does not imply 'Z_E real-rooted for all E' by any LP-preservation argument, and the Hurwitz criterion is unproductive.
