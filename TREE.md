@@ -365,5 +365,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R329 node N12 round 4: classification (2503.02492) and density (2408.00617) records hold; DH off-line zero rechecked; open: degree-2 classification for q = 2, 3, 4 [R329.lean](Riemann/Tree/R329.lean)
 - R330 node N11 round 4: Siegel-zero exclusion records and Linnik L = 5 stand; 2610.31402's c(k) effective but not numeric (candidate) [R330.lean](Riemann/Tree/R330.lean)
 - R331 node N8 round 4: 67.353% (1669159/2478195) stands; Johns's Lean archive clean; simple-or-on-line 8/9 added [R331.lean](Riemann/Tree/R331.lean)
-- R332 FRONTIER (next)
+- R332 node N6 round 5: all-n range d <= 1.6e25 and PF_{k*} stand; 2608.19160's Csordas-Dimitrov proof is interval-certified [R332.lean](Riemann/Tree/R332.lean)
+- R333 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.

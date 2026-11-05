@@ -460,3 +460,4 @@
 - R329 N12: determinantal (PSD pencil) certificates, Toeplitz/PF-infinity minors and Teichmueller asymptotics give no DH-failing mechanism [R329](Riemann/Tree/R329.lean)
 - R330 N11: primon-gas thermodynamics, K-theory regulator positivity and tridiagonal beta-ensembles give no DH-failing mechanism [R330](Riemann/Tree/R330.lean)
 - R331 N8: reflection positivity, inverse spectral reconstruction and Calogero-Moser zero flows give no DH-failing mechanism [R331](Riemann/Tree/R331.lean)
+- R332 N6: fractal strings, lattice reduction and p-adic L-functions give no cheap RH-node gain (DH-blind or compute-heavy) [R332](Riemann/Tree/R332.lean)
