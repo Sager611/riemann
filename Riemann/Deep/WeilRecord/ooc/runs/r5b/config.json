@@ -1,0 +1,17 @@
+{
+ "tag": "5",
+ "N": 140,
+ "F": 320,
+ "T": 352,
+ "FV": 384,
+ "Omega": "48",
+ "gamma": "7/4",
+ "s": "79903/65536",
+ "tau": "2^-67",
+ "u0": 33,
+ "u1": 10,
+ "wfile": "/Users/adriansager/playground/riemann/.scratch/weilooc/w_5_8000.txt",
+ "block": 48,
+ "budget": 2000,
+ "keep": false
+}

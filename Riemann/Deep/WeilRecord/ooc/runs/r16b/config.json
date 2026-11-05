@@ -1,0 +1,16 @@
+{
+ "tag": "16",
+ "N": 1400,
+ "F": 384,
+ "T": 416,
+ "FV": 448,
+ "Omega": "640",
+ "gamma": "9/2",
+ "s": "238689/65536",
+ "tau": "2^-253",
+ "u0": 343,
+ "u1": 114,
+ "wfile": "/Users/adriansager/playground/riemann/Riemann/Deep/WeilRecord/w_16_32000.txt",
+ "block": 256,
+ "budget": 2100
+}

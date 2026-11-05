@@ -1,0 +1,18 @@
+{
+ "tag": "L8o5",
+ "N": 4700,
+ "F": 480,
+ "T": 512,
+ "FV": 544,
+ "Omega": "2242",
+ "gamma": "1475/256",
+ "s": "5141673/1048576",
+ "tau": "2^-430",
+ "u0": 1300,
+ "u1": 432,
+ "wfile": "/Users/adriansager/playground/riemann/.scratch/weilooc/w_L8o5_32000.txt",
+ "block": 480,
+ "budget": 2100,
+ "band_target_bits": 480,
+ "X_tolbits": 240
+}

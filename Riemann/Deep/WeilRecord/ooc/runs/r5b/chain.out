@@ -1,0 +1,322 @@
+[09:11:37 +0s 45 MB] stage consts
+schur: mu=5 cells=8000 (all 8000 cells checked; weight exactly even: True) sup R_w <= 1.219137998 (cell 1154)
+[09:11:37 +0s 47 MB] H1 ||C_p|| <= 1.219137998 <= s = 1.219223022 (all 8000 cells, weight even: True);  H2 m_t = 0.530776977539;  H3 C = a(Omega) - gamma = 0.28330586;  H4 u0 E0 = 0.27898378, u1 E1 = 0.26013238
+[09:11:37 +0s 47 MB] H5 rho=6.0 r_N=2.95e-60 e=4.61e-58 n=9.49e-118 h=6.68e-117 alpha=4.61e-58 beta=1.64e-57 corr=1.49e-56;  N/c=3.624
+[09:11:37 +0s 48 MB] stage consts done
+[09:11:37 +0s 48 MB] stage gvals
+[09:11:37 +1s 48 MB]   piece 0 [0.000000,0.138647] shifts 2 nodes 86 (rho 24.00, eA 2.30e-125, eB 7.19e-101)  0.5s (total 1s)
+[09:11:38 +1s 48 MB]   piece 1 [0.138647,0.365212] shifts 1 nodes 88 (rho 12.00, eA 3.33e-107, eB 6.16e-100)  0.6s (total 1s)
+[09:11:39 +2s 48 MB]   piece 2 [0.365212,0.722706] shifts 2 nodes 112 (rho 24.00, eA 1.21e-107, eB 1.60e-101)  0.7s (total 1s)
+[09:11:40 +3s 48 MB]   piece 3 [0.722706,1.000000] shifts 3 nodes 104 (rho 24.00, eA 1.60e-100, eB 5.55e-101)  0.8s (total 1s)
+[09:11:40 +3s 48 MB] gram budget parity 0: nodes 390, quad 1.56e-96 / 7.39e-96, value eta_P 1.18e-111 eta_C 1.93e-111; E_A 8.99e-93, E_B 1.07e-92
+[09:11:40 +3s 48 MB] gram budget parity 1: nodes 390, quad 1.58e-96 / 7.50e-96, value eta_P 1.18e-111 eta_C 1.93e-111; E_A 9.05e-93, E_B 1.08e-92
+[09:11:40 +3s 48 MB] stage gvals done
+[09:11:40 +3s 48 MB] stage band
+[09:11:58 +22s 48 MB] band plan: 824 nodes (8 panels), split 769, errK 5.82e-86, errB 1.14e-86
+[09:11:59 +22s 48 MB] bvals done 0s  maxerr 2.34e-97 2.34e-97  max Bessel radius 9.77e-131
+[09:11:59 +22s 48 MB] stage band done
+[09:11:59 +22s 48 MB] stage gram0
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/.scratch/weilooc/../../Riemann/Deep/WeilRecord/ooc/oocert.py", line 553, in <module>
+    sys.exit(R.run())
+             ~~~~~^^
+  File "/Users/adriansager/playground/riemann/.scratch/weilooc/../../Riemann/Deep/WeilRecord/ooc/oocert.py", line 527, in run
+    self.stage(f'gram{p}', lambda: self.gram(p))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/.scratch/weilooc/../../Riemann/Deep/WeilRecord/ooc/oocert.py", line 83, in stage
+    fn()
+    ~~^^
+  File "/Users/adriansager/playground/riemann/.scratch/weilooc/../../Riemann/Deep/WeilRecord/ooc/oocert.py", line 527, in <lambda>
+    self.stage(f'gram{p}', lambda: self.gram(p))
+                                   ~~~~~~~~~^^^
+  File "/Users/adriansager/playground/riemann/.scratch/weilooc/../../Riemann/Deep/WeilRecord/ooc/oocert.py", line 240, in gram
+    oocla.run_blocks(fx, self.path(f'A0_{p}.npy'), d, d, b, lambda r0, r1, c0, c1: [('prod', PT, Cst, 1)], deadline=self.deadline, log=self.log, tag=f'A0 p{p}')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/WeilRecord/ooc/oocla.py", line 206, in run_blocks
+    out = FileMat(part, 'w') if os.path.exists(part) else FileMat.create(part, rows, cols, fx.ND)
+                                                          ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/WeilRecord/ooc/oocla.py", line 46, in create
+    return cls(path, 'w')
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/WeilRecord/ooc/oocla.py", line 29, in __init__
+    shape, fortran, dtype = np.lib.format._read_array_header(f, version)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'numpy.lib.format' has no attribute '_read_array_header'. Did you mean: 'read_array_header_1_0'?
+       22.38 real        17.95 user         0.45 sys
+            50692096  maximum resident set size
+            31326664  peak memory footprint
+09:11:59 oocert exit 1
+09:11:59 chain done rc=1
+[09:13:38 +0s 45 MB] stage gram0
+[09:13:38 +0s 50 MB]     A0 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 50 MB]     A0 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 50 MB]     A0 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 50 MB]     A0 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 50 MB]     B0 p0 block (0,0) of 2x2 sym: 0.0s (stage 0s)
+[09:13:38 +0s 50 MB]     B0 p0 block (0,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:38 +0s 50 MB]     B0 p0 block (1,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:38 +0s 50 MB] stage gram0 done
+[09:13:38 +0s 50 MB] stage G0
+[09:13:38 +0s 50 MB]     G1 p0 block (0,0) of 2x2 sym: 0.0s (stage 0s)
+[09:13:38 +0s 50 MB]     G1 p0 block (0,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:38 +0s 50 MB]     G1 p0 block (1,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:38 +0s 50 MB]     G2 p0 block (0,0) of 2x2 sym: 0.0s (stage 0s)
+[09:13:38 +0s 50 MB]     G2 p0 block (0,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:38 +0s 50 MB]     G2 p0 block (1,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB] parity 0: ||G1 - G1~|| <= 9.01e-93, ||G2 - G2~|| <= 3.74e-92
+[09:13:38 +0s 51 MB] stage G0 done
+[09:13:38 +0s 51 MB] stage X0
+[09:13:38 +0s 51 MB] parity 0: G2 eigenvalues (double) [4.518e-05, 6.239e+00], cond 1.38e+05
+[09:13:38 +0s 51 MB]     R0 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R0 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R0 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R0 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB] parity 0: refinement 0: max|R| 2.329e-12, max|dX| 1.774e-10
+[09:13:38 +0s 51 MB]     X1 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     X1 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     X1 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     X1 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R1 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R1 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R1 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R1 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB] parity 0: refinement 1: max|R| 4.942e-24, max|dX| 6.730e-22
+[09:13:38 +0s 51 MB]     X2 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     X2 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     X2 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     X2 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R2 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R2 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R2 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R2 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB] parity 0: refinement 2: max|R| 1.432e-35, max|dX| 8.269e-34
+[09:13:38 +0s 51 MB]     X3 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     X3 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     X3 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     X3 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R3 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R3 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R3 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R3 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB] parity 0: refinement 3: max|R| 3.587e-47, max|dX| 2.216e-45
+[09:13:38 +0s 51 MB]     X4 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     X4 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     X4 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     X4 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R4 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R4 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R4 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R4 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB] parity 0: refinement 4: max|R| 8.076e-59, max|dX| 4.498e-57
+[09:13:38 +0s 51 MB]     X5 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     X5 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     X5 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     X5 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R5 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:38 +0s 51 MB]     R5 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +0s 51 MB]     R5 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +0s 51 MB]     R5 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +0s 51 MB] parity 0: refinement 5: max|R| 1.864e-70, max|dX| 8.960e-69
+[09:13:39 +0s 51 MB]     X6 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     X6 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     X6 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     X6 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     R6 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     R6 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     R6 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     R6 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB] parity 0: refinement 6: max|R| 4.775e-82, max|dX| 3.168e-80
+[09:13:39 +1s 51 MB]     X7 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     X7 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     X7 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     X7 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     R7 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     R7 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     R7 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     R7 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB] parity 0: refinement 7: max|R| 1.270e-93, max|dX| 8.616e-92
+[09:13:39 +1s 51 MB] parity 0: X done (7 refinements), ||X||_F <= 12.96
+[09:13:39 +1s 51 MB] stage X0 done
+[09:13:39 +1s 51 MB] stage W0
+[09:13:39 +1s 51 MB]     Y1 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     Y1 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     Y1 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     Y1 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     Y2 p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     Y2 p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     Y2 p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     Y2 p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     W p0 block (0,0) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     W p0 block (0,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB]     W p0 block (1,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 51 MB] parity 0: W' = m W(X) assembled: ||W'~||_2 <= 2.345 (inf 2.345, F 4.017), ||W'_true - W'~||_2 <= 9.12e-90
+[09:13:39 +1s 51 MB] stage W0 done
+[09:13:39 +1s 51 MB] stage Z0
+[09:13:39 +1s 51 MB] parity 0: epsJ = d errK 4.07e-84 + values 1.47e-91 + w,g 6.85e-90 + poles 1.02e-95 + U 6.32e-84 = 1.04e-83;  shift = epsJ + corr 1.49e-56 + rounding
+[09:13:39 +1s 66 MB]     Z p0 block (0,0) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 67 MB]     Z p0 block (0,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 69 MB]     Z p0 block (1,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 69 MB] parity 0: Z = J~ - shift I stored exactly (it is the Z of the proof); ||Z||_2 <= 2.965
+[09:13:39 +1s 69 MB] stage Z0 done
+[09:13:39 +1s 69 MB] stage H0
+[09:13:39 +1s 69 MB]     ZW p0 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 69 MB]     ZW p0 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 69 MB]     ZW p0 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 69 MB]     ZW p0 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 69 MB]     H p0 block (0,0) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 69 MB]     H p0 block (0,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 69 MB]     H p0 block (1,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 69 MB] parity 0: H' = m W' + W' Z W' assembled; ||H'_true - H'~||_2 <= 1.84e-88
+[09:13:39 +1s 69 MB] stage H0 done
+[09:13:39 +1s 69 MB] stage cert0
+[09:13:39 +1s 70 MB]     L0_0.npy diag block 0/2: 0.0s
+[09:13:39 +1s 70 MB]     L0_0.npy block (1,0): 0.0s
+[09:13:39 +1s 71 MB]     L0_0.npy diag block 1/2: 0.0s
+[09:13:39 +1s 71 MB]     smallest Cholesky pivot^2 2.154e-05 (>= lambda_min)
+[09:13:39 +1s 74 MB]     inverse iteration 0: lambda_min(H~') ~ 6.190511e-19
+[09:13:39 +1s 74 MB]     inverse iteration 1: lambda_min(H~') ~ 1.889072e-20
+[09:13:39 +1s 74 MB]     inverse iteration 2: lambda_min(H~') ~ 1.889072e-20
+[09:13:39 +1s 74 MB]     L_0_67.npy diag block 0/2: 0.0s
+[09:13:39 +1s 74 MB]     L_0_67.npy block (1,0): 0.0s
+[09:13:39 +1s 74 MB]     L_0_67.npy diag block 1/2: 0.0s
+[09:13:39 +1s 74 MB] parity 0: H7 H~' - 2^-67 I = L L^T + Res;  ||Res||_F <= 1.133e-95, e_H' <= 1.84e-88:  lambda_min(H'_true) >= 6.776e-21 -> CERTIFIED;  lambda_min(W^-1 + Z) >= 1.232e-21 > 0
+[09:13:39 +1s 74 MB] stage cert0 done
+[09:13:39 +1s 74 MB] stage gram1
+[09:13:39 +1s 74 MB]     A0 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     A0 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     A0 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     A0 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     B0 p1 block (0,0) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     B0 p1 block (0,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     B0 p1 block (1,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB] stage gram1 done
+[09:13:39 +1s 74 MB] stage G1
+[09:13:39 +1s 74 MB]     G1 p1 block (0,0) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     G1 p1 block (0,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     G1 p1 block (1,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     G2 p1 block (0,0) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     G2 p1 block (0,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     G2 p1 block (1,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB] parity 1: ||G1 - G1~|| <= 9.07e-93, ||G2 - G2~|| <= 3.77e-92
+[09:13:39 +1s 74 MB] stage G1 done
+[09:13:39 +1s 74 MB] stage X1
+[09:13:39 +1s 74 MB] parity 1: G2 eigenvalues (double) [4.747e-05, 6.239e+00], cond 1.31e+05
+[09:13:39 +1s 74 MB]     R0 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     R0 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     R0 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     R0 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB] parity 1: refinement 0: max|R| 3.801e-12, max|dX| 1.256e-11
+[09:13:39 +1s 74 MB]     X1 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     X1 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     X1 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     X1 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     R1 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     R1 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     R1 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     R1 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB] parity 1: refinement 1: max|R| 1.651e-23, max|dX| 3.494e-23
+[09:13:39 +1s 74 MB]     X2 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     X2 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     X2 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     X2 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     R2 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     R2 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     R2 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB]     R2 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:39 +1s 74 MB] parity 1: refinement 2: max|R| 7.317e-35, max|dX| 2.216e-34
+[09:13:40 +1s 74 MB]     X3 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +1s 74 MB]     X3 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +1s 74 MB]     X3 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +1s 74 MB]     X3 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R3 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R3 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R3 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R3 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB] parity 1: refinement 3: max|R| 1.997e-46, max|dX| 7.614e-46
+[09:13:40 +2s 74 MB]     X4 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     X4 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     X4 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     X4 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R4 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R4 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R4 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R4 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB] parity 1: refinement 4: max|R| 6.106e-58, max|dX| 3.575e-57
+[09:13:40 +2s 74 MB]     X5 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     X5 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     X5 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     X5 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R5 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R5 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R5 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R5 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB] parity 1: refinement 5: max|R| 2.576e-69, max|dX| 8.586e-69
+[09:13:40 +2s 74 MB]     X6 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     X6 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     X6 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     X6 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R6 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R6 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R6 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R6 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB] parity 1: refinement 6: max|R| 9.949e-81, max|dX| 1.993e-80
+[09:13:40 +2s 74 MB]     X7 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     X7 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     X7 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     X7 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R7 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R7 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R7 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     R7 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB] parity 1: refinement 7: max|R| 4.656e-92, max|dX| 8.156e-92
+[09:13:40 +2s 74 MB] parity 1: X done (7 refinements), ||X||_F <= 10.04
+[09:13:40 +2s 74 MB] stage X1 done
+[09:13:40 +2s 74 MB] stage W1
+[09:13:40 +2s 74 MB]     Y1 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     Y1 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     Y1 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     Y1 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     Y2 p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     Y2 p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     Y2 p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     Y2 p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     W p1 block (0,0) of 2x2 sym: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     W p1 block (0,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     W p1 block (1,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB] parity 1: W' = m W(X) assembled: ||W'~||_2 <= 2.277 (inf 2.277, F 3.940), ||W'_true - W'~||_2 <= 5.56e-90
+[09:13:40 +2s 74 MB] stage W1 done
+[09:13:40 +2s 74 MB] stage Z1
+[09:13:40 +2s 74 MB] parity 1: epsJ = d errK 4.07e-84 + values 1.48e-91 + w,g 6.95e-90 + poles 2.35e-96 + U 1.92e-84 = 5.99e-84;  shift = epsJ + corr 1.49e-56 + rounding
+[09:13:40 +2s 74 MB]     Z p1 block (0,0) of 2x2 sym: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     Z p1 block (0,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     Z p1 block (1,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB] parity 1: Z = J~ - shift I stored exactly (it is the Z of the proof); ||Z||_2 <= 3.240
+[09:13:40 +2s 74 MB] stage Z1 done
+[09:13:40 +2s 74 MB] stage H1
+[09:13:40 +2s 74 MB]     ZW p1 block (0,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     ZW p1 block (0,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     ZW p1 block (1,0) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     ZW p1 block (1,1) of 2x2: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     H p1 block (0,0) of 2x2 sym: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     H p1 block (0,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB]     H p1 block (1,1) of 2x2 sym: 0.0s (stage 0s)
+[09:13:40 +2s 74 MB] parity 1: H' = m W' + W' Z W' assembled; ||H'_true - H'~||_2 <= 1.19e-88
+[09:13:40 +2s 74 MB] stage H1 done
+[09:13:40 +2s 74 MB] stage cert1
+[09:13:40 +2s 74 MB]     L0_1.npy diag block 0/2: 0.0s
+[09:13:40 +2s 74 MB]     L0_1.npy block (1,0): 0.0s
+[09:13:40 +2s 74 MB]     L0_1.npy diag block 1/2: 0.0s
+[09:13:40 +2s 74 MB]     smallest Cholesky pivot^2 8.072e-05 (>= lambda_min)
+[09:13:40 +2s 74 MB]     inverse iteration 0: lambda_min(H~') ~ 6.576669e-15
+[09:13:40 +2s 74 MB]     inverse iteration 1: lambda_min(H~') ~ 1.359361e-16
+[09:13:40 +2s 74 MB]     inverse iteration 2: lambda_min(H~') ~ 1.359361e-16
+[09:13:40 +2s 74 MB]     L_1_54.npy diag block 0/2: 0.0s
+[09:13:40 +2s 74 MB]     L_1_54.npy block (1,0): 0.0s
+[09:13:40 +2s 74 MB]     L_1_54.npy diag block 1/2: 0.0s
+[09:13:40 +2s 74 MB] parity 1: H7 H~' - 2^-54 I = L L^T + Res;  ||Res||_F <= 1.016e-95, e_H' <= 1.19e-88:  lambda_min(H'_true) >= 5.551e-17 -> CERTIFIED;  lambda_min(W^-1 + Z) >= 1.070e-17 > 0
+[09:13:40 +2s 74 MB] stage cert1 done
+[09:13:40 +2s 74 MB] RESULT 5: CERTIFIED  Q(f) >= 6.77626e-21 ||f||^2 for every f supported in [-L, L], L = 0.8047189562
+        2.55 real         1.69 user         0.51 sys
+            77103104  maximum resident set size
+            56377848  peak memory footprint
+09:13:40 oocert exit 0
+09:13:40 chain done rc=0

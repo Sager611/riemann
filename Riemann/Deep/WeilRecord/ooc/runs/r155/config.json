@@ -1,0 +1,17 @@
+{
+ "tag": "L31o20",
+ "N": 3400,
+ "F": 448,
+ "T": 480,
+ "FV": 512,
+ "Omega": "1640",
+ "gamma": "1395/256",
+ "s": "4814309/1048576",
+ "tau": "2^-372",
+ "u0": 913,
+ "u1": 303,
+ "wfile": "/Users/adriansager/playground/riemann/.scratch/weilooc/w_L31o20_32000.txt",
+ "block": 480,
+ "budget": 2100,
+ "band_target_bits": 408
+}
