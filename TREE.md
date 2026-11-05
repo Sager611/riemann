@@ -341,5 +341,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R305 node N11 round 3: no new claims; gap too small for Linnik; effective Siegel-Walfisz corollary; 5811e-7 not recomputable from the e-print [R305.lean](Riemann/Tree/R305.lean)
 - R306 node N2 round 3: HB gates rechecked; model estimates 0.13925/0.13897 with Liu's half-planes; Dirichlet Lambda_chi <= 953/3200 (2610.27343) added [R306.lean](Riemann/Tree/R306.lean)
 - R307 node N10 round 3: best-bound table (CH to 1.6e83, then FJ); 113.67 rechecked; Mertens and pi-li records added to the node [R307.lean](Riemann/Tree/R307.lean)
-- R308 FRONTIER (next)
+- R308 node N13 round 3: Yakaboylu's similarity lemma fails as an operator identity; main eigen-theorems independent; multiplicity-m proof invalid as written (minor); BBM obstruction 2607.19067 noted [R308.lean](Riemann/Tree/R308.lean)
+- R309 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
