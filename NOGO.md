@@ -425,3 +425,4 @@
 - R304 N7: no mechanism turns the 7/8 half-plane into better density just below 7/8 (Jutila-type only in shrinking strips); classical and VK regions are now weaker than 7/8 for zeta at every height [R304](Riemann/Tree/R304.lean)
 - explore2 (Orca exploration: quantitative unique continuation, Carleman/doubling index) NO IDEA: it bounds how small a solution can be and how often it vanishes, which for Xi and the de Bruijn-Newman flow reproduces only Jensen-scale zero counts [ExploreUC](Riemann/Deep/ExploreUC/REPORT.md)
 - R305 N11: the explicit Siegel gap (5811e-7) is far below Xylouris' lambda_1 >= 0.348, so Linnik's constant stays 5; complete positivity of Weil's form is automatic (scalar kernel) [R305](Riemann/Tree/R305.lean)
+- R306 N2: Liu's Hecke half-planes plus finite GRH heights do not give HB-type Lambda_chi bounds uniformly in q; newer half-planes move Lambda only in the 4th decimal (model) [R306](Riemann/Tree/R306.lean)

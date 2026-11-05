@@ -302,3 +302,4 @@ import Riemann.Tree.R302
 import Riemann.Tree.R303
 import Riemann.Tree.R304
 import Riemann.Tree.R305
+import Riemann.Tree.R306
