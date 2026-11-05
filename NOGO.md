@@ -382,3 +382,4 @@
 - R265 hold: 2606.30506 (DKSS), 2606.18234, 1809.07766 Conj 6.1, A392667; unchecked: 2607.14646 (quoted Broadhurst formula), Zenodo 23845091 (typo); 2607.07638 p = 3 not noted in v1-v3 [R265](Riemann/Tree/R265.lean)
 - R266 hold: Sun OEIS A154257 ... A260929 (smallest primes), Guo 1909.10294, 2310.15207; known: A154364, 2610.36620; misread: 2207.13039 Conj 4.3, Zenodo 23922416 [R266](Riemann/Tree/R266.lean)
 - R267 hold: 1012.3141, 2009.04379, 2507.18589, 2010.05775, A246065, A245769, A295112, A246512, A246567, A246875, A180364, A262439, Zenodo 23934934; scout errors: 1407.0967 Conj 4.3(ii), 1408.5381 Conj 5.1, 5.3; typo: 2603.29973 Conj 3 [R267](Riemann/Tree/R267.lean)
+- R268 known: Fasi-Higham off-diagonal failures (Scardino; thresholds 66/44/42/43 for m = 5/7/9/11); verified others': 2411.00566, 2610.18636, 2511.13691, 2002.08022, Zenodo 23421625; minor: erdos710-lean hard-coded constant [R268](Riemann/Tree/R268.lean)
