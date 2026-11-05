@@ -453,3 +453,4 @@
 - R323 N10: [check] records refreshed (Skewes, Mertens counterexample bound, pi < li range); Nevanlinna a-point theory and the AlphaEvolve problem list give no RH-node mechanism [R323](Riemann/Tree/R323.lean)
 - R324 N2: HB-type Lambda_chi bounds per character need zeros to height ~3e10 (Platt's GRH data reach 10^8/q); Selberg-eigenvalue methods and random-polynomial hyperbolicity give no RH-node mechanism [R324](Riemann/Tree/R324.lean)
 - R325 N13: spectral claims 2606.17494 / 2609.23353 leave the spectrum unproved; a uniform det H_h lower bound for the de Branges ladder is RH-equivalent; Lehmer, Pontryagin and transport fields give no idea [R325](Riemann/Tree/R325.lean)
+- R326 N5: weighted Bergman/Hilbert Nyman-Beurling variants are RH-equivalent, not half-plane criteria; quantum prime states, persistent homology and ML of mu give no idea [R326](Riemann/Tree/R326.lean)
