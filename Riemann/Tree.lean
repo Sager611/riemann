@@ -255,3 +255,4 @@ import Riemann.Tree.R255
 import Riemann.Tree.R256
 import Riemann.Tree.R257
 import Riemann.Tree.R258
+import Riemann.Tree.R259

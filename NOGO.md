@@ -372,3 +372,4 @@
 - R256 candidate: Sun A229827 (ii) fails ({0,1,2}, 2x); hold: Sun A228772, 0810.0467, 1901.04837, 2610.36179, 2610.38864; known: Zenodo 23960915, 2610.19193, 2610.08424; cosmetic: 2610.40725 Fig. 1(c) [R256](Riemann/Tree/R256.lean)
 - R257 candidate: Sun A229827(i) fails, F_8 x^2/x^4, F_9 x^3; withdrawn: A229827(ii) (Sun Remark 1.3); already logged: A228766, A227399; hold: A356714, A229878, A229232, A273287, A273488, A276270, A232891/4/8 [R257](Riemann/Tree/R257.lean)
 - R258 known: A229910 q = 25/121, A229827(i) (R257); false step: Zenodo 23909592 Thm 8.17 (minor); rejected: 2602.17148 (bijective f only); verified others': 2611.05962, 2611.05961, 2611.04688; not testable: 2611.05433 [R258](Riemann/Tree/R258.lean)
+- R259 hold: Sun 1601.04988 Conj 1.2, 1309.1679 Conj 3.12, MO 501545, 423652, 2611.05531, 2610.36127; known: A228728, A185645, A357130, MO 402692; misread: Zenodo 23895875 [R259](Riemann/Tree/R259.lean)
