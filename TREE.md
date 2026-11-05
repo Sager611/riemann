@@ -358,5 +358,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R322 node N1: Chekmachev's Zenodo claim (all c <= 47, half-width 1.925; even f to 2.131) would supersede our 1.55 and the new 1.6; audit next [R322.lean](Riemann/Tree/R322.lean)
 - R323 node N10 round 4: Skewes (Saouter-Trudgian-Demichel 2015) and Mertens (Kim-Nguyen) records updated; a prime in (x, x + x^{7/8}] for all x >= 1 and differenced xi real-rooted for h > 0.37338 (both routine) [R323.lean](Riemann/Tree/R323.lean)
 - R324 node N2 round 4 (Dirichlet): Lambda_chi <= 0.278828 for every primitive real chi from the Lean-checked half-plane (routine); per-character HB chain infeasible (height 3e10 vs 10^8/q) [R324.lean](Riemann/Tree/R324.lean)
-- R325 FRONTIER (next)
+- R325 node N13 round 4: no new operator claim survives; CCM prolate match observational (2402.13082 open terms); de Branges ladder bound is RH-equivalent [R325.lean](Riemann/Tree/R325.lean)
+- R326 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
