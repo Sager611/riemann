@@ -373,5 +373,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R337 node N2 round 5: Raymond's 0.107964910079 stands; Planat-Raymond 0.156821 classical-strip; HB's 11/12 table uncertified (open) [R337.lean](Riemann/Tree/R337.lean)
 - R338 node N13 round 5: no new proved spectral realization; Aksman 23839754 breaks at (79) (REFUTATIONS); 2609.25564's U_E zeros leave the unit circle for E >= 4 [R338.lean](Riemann/Tree/R338.lean)
 - R339 node N7 round 5: B_2 and density records stand; hexagonmath 2611.00092 is about real zeros of L'; Liu's routes below B_2 harvested; Dirichlet Li ranges (N3, routine) [R339.lean](Riemann/Tree/R339.lean)
-- R340 FRONTIER (next)
+- R340 node N5 round 6: records stand; Zenodo RH-conditional refinements of the d_N asymptotic noted; 2611.03924 open questions harvested [R340.lean](Riemann/Tree/R340.lean)
+- R341 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
