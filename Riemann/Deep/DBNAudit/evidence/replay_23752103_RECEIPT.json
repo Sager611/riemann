@@ -1,0 +1,103 @@
+{
+  "schema": "PORTABLE_FRESH_REPLAY_RECONSTRUCTION_V1",
+  "all_requested_pass": true,
+  "all_required_steps": true,
+  "discovery_mode": false,
+  "historical_filesystem_fallback": false,
+  "python": "3.12.12 (main, Dec  5 2025, 21:10:47) [Clang 21.1.4 ]",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "runtime_strategy": "vendored python-flint0.8.0 linuxCPython3.12; system Python and libc",
+  "steps": [
+    {
+      "step": "native",
+      "exit_code": 0,
+      "seconds": 715.5873590828851,
+      "log": "logs/native.log"
+    },
+    {
+      "step": "activation",
+      "exit_code": 0,
+      "seconds": 4.850884875282645,
+      "log": "logs/activation.log"
+    },
+    {
+      "step": "spectral",
+      "exit_code": 0,
+      "seconds": 10.938213500194252,
+      "log": "logs/spectral.log"
+    },
+    {
+      "step": "heads28",
+      "exit_code": 0,
+      "seconds": 68.4709317497909,
+      "log": "logs/heads28.log"
+    },
+    {
+      "step": "heads39",
+      "exit_code": 0,
+      "seconds": 42.979526792652905,
+      "log": "logs/heads39.log"
+    },
+    {
+      "step": "wall",
+      "exit_code": 0,
+      "seconds": 29.014488291926682,
+      "log": "logs/wall.log"
+    },
+    {
+      "step": "kernel",
+      "exit_code": 0,
+      "seconds": 792.8097631670535,
+      "log": "logs/kernel.log"
+    },
+    {
+      "step": "arcs",
+      "exit_code": 0,
+      "seconds": 333.90638391673565,
+      "log": "logs/arcs.log"
+    },
+    {
+      "step": "affine",
+      "exit_code": 0,
+      "seconds": 2.405990124680102,
+      "log": "logs/affine.log"
+    },
+    {
+      "step": "overlays",
+      "exit_code": 0,
+      "seconds": 27.18574916664511,
+      "log": "logs/overlays.log"
+    },
+    {
+      "step": "compact-arcs",
+      "exit_code": 0,
+      "seconds": 73.43143950030208,
+      "log": "logs/compact-arcs.log"
+    },
+    {
+      "step": "interfaces",
+      "exit_code": 0,
+      "seconds": 0.9944160412997007,
+      "log": "logs/interfaces.log"
+    },
+    {
+      "step": "physical-debit-map",
+      "exit_code": 0,
+      "seconds": 0.6399981249123812,
+      "log": "logs/physical-debit-map.log"
+    },
+    {
+      "step": "arithmetic-credit-map",
+      "exit_code": 0,
+      "seconds": 0.8981331652030349,
+      "log": "logs/arithmetic-credit-map.log"
+    },
+    {
+      "step": "direct-source",
+      "exit_code": 0,
+      "seconds": 4.450961582362652,
+      "log": "logs/direct-source.log"
+    }
+  ],
+  "seconds": 2108.6727867498994
+}

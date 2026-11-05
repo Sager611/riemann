@@ -1,0 +1,220 @@
+== activation.log
+ts/source_tree/unconditional_20261020/physical_check/ACTIVATION.json",
+  "activation_sha256": "69b752997abc07cbba200f858472f1de2c7f76cc5d17a80f26a667aaf2b59ef4",
+  "plan_sha256": "96dd4e21e2a7781242800976c0f282f800089e9f38f00cf3fd89645bfe8c1e4b",
+  "checker_sha256": "2c2bea0b92d268d61924d71405fa3cfa9fdc422a163c827e0972ec010de09279",
+  "bits": 384,
+  "seconds": 4.390046540647745,
+  "scope": "All actual C_upper, Aact_upper, Dact_upper are freshly proved for all s>=0. Single maximum follows from explicit positive/decreasing factored derivative terms, not a sampled grid or saved root interval."
+}
+
+== affine.log
+al(L)<=N0+beta*M*(L-L0)/4 on the full L>=L0 half-line, conditional only on separately verified raw native/activation moments and their analytic identification.",
+  "scope": "Original67 scalar-parent native-affine and spectral certificate; current39 retained rows directly consume these bounds; later shared/conic replacements and physical refunds are separate fresh source gates.",
+  "checker_sha256": "2d26522920fa373eaf2955aeb170a77b541c6a97455ff01911f3b964ac7871d9",
+  "spectral_checker_sha256": "6afeecc92f7e45465d8d1d4fa68ffd2c65e407ebc1a83799a32344d037e6e2e5",
+  "seconds": 1.991698708385229
+}
+
+== arcs.log
+rcs_checked": 221010,
+  "exact_checks": 5797314,
+  "terminal_t": "22101/204800",
+  "terminal_q": "7902377963830536747158643/79228162514264337593543950336",
+  "exact_full_cleanup_endpoint": "427693072077942473661578098491/3961408125713216879677197516800",
+  "all_arc_witnesses": {
+    "path": "ALL_221010_ARC_INEQUALITY_WITNESSES.jsonl.gz",
+    "bytes": 424650544,
+    "sha256": "13627f4522f6ae39b424465c3b54ed863607701833f3501dad14a78068dfb7e7",
+    "uncompressed_canonical_transcript_sha256": "e7951651ea66bc7bd97d38db6916c507a66cf2e65bd6b1fcb52c2f4d8ed1d4ba"
+  },
+  "seconds": 333.34639624971896
+}
+
+== arithmetic-credit-map.log
+{"rows": 67, "exact_checks": 650, "all_shared_use_fixed": true}
+
+== compact-arcs.log
+COMPACTED 50000 elapsed 11.81
+COMPACTED 100000 elapsed 24.45
+COMPACTED 150000 elapsed 41.24
+COMPACTED 200000 elapsed 65.88
+{
+  "PASS": true,
+  "arcs": 221010,
+  "exact_lower_bound_checks": 3978180,
+  "compact_bytes": 12790787,
+  "seconds": 73.1480258749798
+}
+
+== direct-source.log
+s; continuous analytic source implications remain written mathematics.",
+  "required_prerequisite_stages": [
+    "native",
+    "activation",
+    "spectral",
+    "affine",
+    "heads28",
+    "heads39",
+    "wall",
+    "overlays"
+  ],
+  "does_not_establish": [
+    "a new Lean build",
+    "end-to-end formalisation"
+  ],
+  "main_logarithm_method": "128-term exact positive atanh series after 690988=2^19*(172747/131072)",
+  "pi_enclosure_method": "128-term exact alternating arctangent series in Machin formula",
+  "checker_sha256": "a0e8cca86919957d82b714413adc4cc967a32aee94c8b521554d6d2a8a01ce19"
+}
+
+== heads28.log
+
+FRESH_HEAD_AND_PHASE_PASS 38
+FRESH_HEAD_AND_PHASE_PASS 39
+FRESH_HEAD_AND_PHASE_PASS 40
+FRESH_HEAD_AND_PHASE_PASS 41
+FRESH_HEAD_AND_PHASE_PASS 42
+FRESH_HEAD_AND_PHASE_PASS 43
+FRESH_HEAD_AND_PHASE_PASS 44
+FRESH_HEAD_AND_PHASE_PASS 45
+FRESH_HEAD_AND_PHASE_PASS 46
+FRESH_HEAD_AND_PHASE_PASS 47
+FRESH_HEAD_AND_PHASE_PASS 48
+FRESH_HEAD_AND_PHASE_PASS 49
+FRESH_HEAD_AND_PHASE_PASS 50
+FRESH_HEAD_AND_PHASE_PASS 51
+FRESH_HEAD_AND_PHASE_PASS 62
+FRESH_HEAD_AND_PHASE_PASS 63
+FRESH_HEAD_AND_PHASE_PASS 64
+{
+  "PASS": true,
+  "bits": 512,
+  "checks": 1513158,
+  "row_count": 28,
+  "seconds": 68.04986033402383
+}
+
+== heads39.log
+ allocated 75 patterns 64
+RETAINED_HEAD_PASS 61 terms4095 allocated 76 patterns 64
+RETAINED_HEAD_PASS 65 terms4095 allocated 57 patterns 64
+RETAINED_HEAD_PASS 66 terms4095 allocated 46 patterns 64
+{
+  "PASS": true,
+  "bits": 512,
+  "rows_checked": 39,
+  "counts": {
+    "contracts": 33,
+    "relations": 896,
+    "row_identity": 117,
+    "raw_head": 117,
+    "thermal_coefficients": 167895,
+    "capacities": 2457,
+    "composite_allocation": 32601,
+    "global_join": 117,
+    "dual": 162279,
+    "operational": 117
+  },
+  "thermal_endpoint_arrays_regenerated": 42,
+  "seconds": 42.57889850065112
+}
+
+== interfaces.log
+ue,
+  "all39_retained_anchor_debits_recomputed": true,
+  "saved_historical_PASS_fields_consumed": false,
+  "script_sha256": "d7276f505fbef6d8553ad3b65453206f227be31f1900989d6e6690f5dbcb63b1",
+  "source_sha256": "b59905d7b994d3424ba14f9347be75a2429ae4d4b0de2c2404971ffda1d4d536",
+  "plan_sha256": "ec346b7c1136eda38021eb6323033b3b48ed21e6f7458eeeac7cc9579db2497a",
+  "seconds": 0.5261158747598529,
+  "scope": "Mathematical field and functional joins across fresh components, including direct scalar debit reconstruction. Report counts do not replace the separately executed inequality evaluations."
+}
+
+== kernel.log
+e45c5761efb6",
+  "historical_checkers_imported": false,
+  "saved_PASS_fields_imported": false,
+  "independent_algebra": "quadratic-extension conjugation and symbolic rational derivatives",
+  "independent_positivity": "closed-binomial Bernstein coefficients, fully verified candidate partition, closed midpoint restriction",
+  "scope": "Complete real spacing d and actual full closed contact caps for every row, including full signed own derivative and all three derivative overlays. Physical sources, heat-flow and external initial theorem are separate obligations.",
+  "seconds": 792.376277834177
+}
+
+== native.log
+ecks 743834 seconds 634.844
+NATIVE_PRIMITIVES_PASS 59 heights 7 checks 756233 seconds 645.543
+NATIVE_PRIMITIVES_PASS 60 heights 7 checks 768632 seconds 656.068
+NATIVE_PRIMITIVES_PASS 61 heights 7 checks 781031 seconds 665.168
+NATIVE_PRIMITIVES_PASS 62 heights 7 checks 793430 seconds 675.466
+NATIVE_PRIMITIVES_PASS 63 heights 7 checks 805829 seconds 684.698
+NATIVE_PRIMITIVES_PASS 64 heights 7 checks 818228 seconds 694.729
+NATIVE_PRIMITIVES_PASS 65 heights 7 checks 830627 seconds 704.736
+NATIVE_PRIMITIVES_PASS 66 heights 7 checks 843026 seconds 714.987
+COMPLETE_NATIVE_PRIMITIVES_PASS 0 67 843026
+
+== overlays.log
+{
+  "PASS": true,
+  "precision_bits": 512,
+  "checks_by_actual_mathematical_component": {
+    "all67_refunds_and469_native_caps": 5267,
+    "conic_row_0_order_4": 4175,
+    "conic_row_16_order_4": 4108,
+    "conic_row_44_order_4": 4173,
+    "conic_row_44_order_8": 4257,
+    "global_common_clock_39_rows": 32403,
+    "direct67_current_source_reconstruction": 268
+  },
+  "all67_operational_fields_reconstructed": true,
+  "saved_acceptance_PASS_fields_used": false,
+  "row55_local_native_credit_used": false,
+  "seconds": 26.844395332969725
+}
+
+== physical-debit-map.log
+{
+  "checks": 4784,
+  "actual_rows": 67,
+  "actual_heights": 469,
+  "seconds": 0.4417254589498043,
+  "source_sha256": "b59905d7b994d3424ba14f9347be75a2429ae4d4b0de2c2404971ffda1d4d536"
+}
+
+== spectral.log
+: 320,
+  "total_leaf_intervals": 14727,
+  "total_interval_evaluations": 19416,
+  "saved_PASS_fields_consumed": false,
+  "producers_or_consumers_imported": false,
+  "claim": "For each actual scalar-parent row, |sum w*exp(-h*lambda/2)*cos(v*lambda/2)|<=sum c*exp(-H*lambda/2) for every lambda>=log4096, including semi-infinite tail.",
+  "scope": "Continuous spectral envelope only; native moment bounds, physical model, conic jets, geometric kernels and flow are separate gates.",
+  "checker_sha256": "6afeecc92f7e45465d8d1d4fa68ffd2c65e407ebc1a83799a32344d037e6e2e5",
+  "seconds": 10.40061887446791
+}
+
+== wall.log
+DIRECT_WALL_PREFIX 100000 / 690988
+DIRECT_WALL_PREFIX 200000 / 690988
+DIRECT_WALL_PREFIX 300000 / 690988
+DIRECT_WALL_PREFIX 400000 / 690988
+DIRECT_WALL_PREFIX 500000 / 690988
+DIRECT_WALL_PREFIX 600000 / 690988
+{
+  "PASS": true,
+  "bits": 512,
+  "counts": {
+    "configuration": 1,
+    "wall_guards": 4,
+    "wall_rates": 690988,
+    "wall_prefixes": 2763952,
+    "wall_transfer": 12,
+    "physical_gaussian": 11,
+    "common_model": 7,
+    "published_interface": 1,
+    "probe_domains": 5307
+  },
+  "wall_prefixes": 2763952,
+  "seconds": 28.57717579137534
+}
+

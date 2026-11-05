@@ -1,0 +1,3 @@
+records 221010 load_s 1.3
+{"counts": {"arcs": 221010, "exact_own": 6048, "exact_pade": 6048}, "min_margins": {"rate": 5.130196596327993e-30, "src": 1.5191986944000178e-30, "own": 2.059495398415019e-29, "cap": 2.1059999e-05, "ell": 9.974202712615035e-05, "pade": 9.786594191149277e-34}, "max_float_rounding_excess": 2.220446049250313e-16, "worst_float_arc": 81, "terminal": {"T": "22101/204800", "qT": 9.974203254313493e-05, "endpoint": "427693072077942473661578098491/3961408125713216879677197516800", "endpoint_float": 0.10796491007877157}, "own_rate_float_reintegration_qT": 9.974203254083103e-05, "own_rate_endpoint": 0.1079649100787704, "startup_margin": 9.303569579041015e-13, "seconds": 183.1}
+ARCS_CHECK_PASS

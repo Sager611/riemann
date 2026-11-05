@@ -1,0 +1,18 @@
+  "immutable_original_core_files": 330,
+  "recorded_fresh_replay_stages": 15,
+  "actual_distinct_raw_inputs_opened": 163,
+  "frozen_raw_dependency_files": 170,
+  "kernel_rows": 67,
+  "source_rows": 67,
+  "source_fields_reconstructed": 268,
+  "comparison_arcs": 221010,
+  "exact_endpoint": "427693072077942473661578098491/3961408125713216879677197516800",
+  "historical_pdfs_preserved": true,
+  "mathematical_consumers_executed_by_this_verifier": false,
+  "scope": "Exhaustive public/inner/support byte integrity, preserved original numerical core, recorded fresh replay source bindings, direct source/body bindings and exact terminal arithmetic. Mathematical replay is a separate command."
+}
+Deposit integrity and replay bindings PASS. Full mathematical replay is the separate fifteen-stage command.
+
+Inventory verified: 3388 files, 254252090 bytes.
+Exact endpoint including full cleanup: 427693072077942473661578098491/3961408125713216879677197516800
+This endpoint check is not a source, kernel, or full-arc verification.

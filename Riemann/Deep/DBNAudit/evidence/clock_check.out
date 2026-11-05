@@ -1,0 +1,2 @@
+{"row": 0, "t": 0.0, "relations": 7, "sup_free": 0.833582834888277, "raw_H": 0.8388529591240809, "cc": 0.000914701, "d_old": 0.006385966095, "d_total": 0.007078036095, "bound_old": 0.8315522920290809, "bound_total": 0.8308602220290808, "constrained_max": 0.8260489382284684, "min_constraint_slack": -4.440892098500626e-16, "margin_old": 0.005503353800612509, "margin_total": 0.004811283800612465}
+CLOCK_FALSIFIED_ROWS []
