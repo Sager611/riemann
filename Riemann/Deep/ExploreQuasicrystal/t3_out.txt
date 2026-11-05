@@ -1,0 +1,25 @@
+check f_DH((0.3+10j)): rel err 1.9e-15
+check f_DH((0.81+85.7j)): rel err 4.6e-12
+check f_DH((1.2+91j)): rel err 2.0e-15
+check |f_DH(rho0)| = 5.1929257724674575e-12
+check zeta(0.6+88i): rel err 3.5e-14
+
+DH: zeros of A_h in [1/2+0.003, 1.25] x [80, 92]  (rho0 - 1/2 = 0.30852)
+  h=0.0500  zeros of A_h with Re s > 1/2:  1.000   (max phase step 0.643, min scaled|A_h| 1.13e-01)   [Phi(s+h) vanishes at Re 0.7585]
+  h=0.1500  zeros of A_h with Re s > 1/2:  1.000   (max phase step 0.643, min scaled|A_h| 4.00e-02)   [Phi(s+h) vanishes at Re 0.6585]
+  h=0.2500  zeros of A_h with Re s > 1/2:  1.000   (max phase step 0.640, min scaled|A_h| 2.49e-02)   [Phi(s+h) vanishes at Re 0.5585]
+  h=0.2800  zeros of A_h with Re s > 1/2:  1.000   (max phase step 0.642, min scaled|A_h| 2.22e-02)   [Phi(s+h) vanishes at Re 0.5285]
+  h=0.2900  zeros of A_h with Re s > 1/2:  1.000   (max phase step 0.640, min scaled|A_h| 2.20e-02)   [Phi(s+h) vanishes at Re 0.5185]
+  h=0.3000  zeros of A_h with Re s > 1/2:  0.000   (max phase step 0.643, min scaled|A_h| 6.86e-03)   [Phi(s+h) vanishes at Re 0.5085]
+  h=0.3050  zeros of A_h with Re s > 1/2: -0.000   (max phase step 0.642, min scaled|A_h| 9.93e-03)   [Phi(s+h) vanishes at Re 0.5035]
+  h=0.3085  zeros of A_h with Re s > 1/2:  0.000   (max phase step 0.642, min scaled|A_h| 1.07e-02)   [Phi(s+h) vanishes at Re 0.5000]
+  h=0.3100  zeros of A_h with Re s > 1/2:  0.000   (max phase step 0.641, min scaled|A_h| 1.09e-02)   [Phi(s+h) vanishes at Re 0.4985]
+  h=0.3200  zeros of A_h with Re s > 1/2:  0.000   (max phase step 0.643, min scaled|A_h| 1.24e-02)   [Phi(s+h) vanishes at Re 0.4885]
+  h=0.3500  zeros of A_h with Re s > 1/2: -0.000   (max phase step 0.643, min scaled|A_h| 1.32e-02)   [Phi(s+h) vanishes at Re 0.4585]
+  h=0.4500  zeros of A_h with Re s > 1/2:  0.000   (max phase step 0.642, min scaled|A_h| 1.19e-02)   [Phi(s+h) vanishes at Re 0.3585]
+
+control xi: zeros of A_h in [1/2+0.003, 1.25] x [80, 92]
+  h=0.0500  zeros of A_h with Re s > 1/2:  0.000   (max phase step 0.641, min scaled|A_h| 1.13e-01)
+  h=0.1500  zeros of A_h with Re s > 1/2: -0.000   (max phase step 0.640, min scaled|A_h| 3.92e-02)
+  h=0.2500  zeros of A_h with Re s > 1/2:  0.000   (max phase step 0.640, min scaled|A_h| 2.28e-02)
+elapsed 79 s

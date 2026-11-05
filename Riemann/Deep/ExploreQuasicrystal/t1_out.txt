@@ -1,0 +1,43 @@
+primes up to e^17: 1516233
+
+(a) density match: theta(P) = sum_{p<=P} log p must equal log(T/2pi)
+  T=1e+03  log(T/2pi)=5.07  smallest P with theta(P)>=: P=7 (pi(P)=4 variables, theta=5.35)
+  T=1e+06  log(T/2pi)=11.98  smallest P with theta(P)>=: P=17 (pi(P)=7 variables, theta=13.14)
+  T=1e+12  log(T/2pi)=25.79  smallest P with theta(P)>=: P=31 (pi(P)=11 variables, theta=26.02)
+  T=1e+24  log(T/2pi)=53.42  smallest P with theta(P)>=: P=67 (pi(P)=19 variables, theta=57.32)
+  T=1e+100  log(T/2pi)=228.42  smallest P with theta(P)>=: P=251 (pi(P)=54 variables, theta=232.12)
+
+(b) atomic Fourier mass of the zero measure in (X, X+1]  (FQ needs this translation-bounded)
+   X   mass        pole 2(e^((X+1)/2)-e^(X/2))  ratio   log(mass)/X
+   0       0.490       1.297  0.3778  -
+   1       2.436       2.139  1.1388  0.890
+   2       3.582       3.527  1.0155  0.638
+   3       5.684       5.815  0.9775  0.579
+   4       9.084       9.587  0.9476  0.552
+   5      16.319      15.806  1.0325  0.558
+   6      26.156      26.060  1.0037  0.544
+   7      43.022      42.965  1.0013  0.537
+   8      70.510      70.838  0.9954  0.532
+   9     116.729     116.792  0.9995  0.529
+  10     193.224     192.558  1.0035  0.526
+  11     317.040     317.474  0.9986  0.524
+  12     523.408     523.426  1.0000  0.522
+  13     863.309     862.983  1.0004  0.520
+  14    1422.892    1422.819  1.0001  0.519
+  15    2345.455    2345.831  0.9998  0.517
+
+(c) residual R(X) = sum_{log n<=X} Lambda(n)n^-1/2 - 2e^{X/2}  (RH <=> |R(X)| = O(X^2); unconditional only O(e^{(B-1/2+eps)X}), B = 0.87338...)
+  max_{log n<= 5} |R| =   3.2660 at log n=4.575 ;  X^2/8 =    3.12 ; e^{0.3734 X} =        6.5
+  max_{log n<= 8} |R| =   3.4429 at log n=7.261 ;  X^2/8 =    8.00 ; e^{0.3734 X} =       19.8
+  max_{log n<=10} |R| =   3.4429 at log n=7.261 ;  X^2/8 =   12.50 ; e^{0.3734 X} =       41.8
+  max_{log n<=12} |R| =   3.4429 at log n=7.261 ;  X^2/8 =   18.00 ; e^{0.3734 X} =       88.3
+  max_{log n<=14} |R| =   3.4429 at log n=7.261 ;  X^2/8 =   24.50 ; e^{0.3734 X} =      186.3
+  max_{log n<=16} |R| =   3.4429 at log n=7.261 ;  X^2/8 =   32.00 ; e^{0.3734 X} =      393.1
+  max_{log n<=17} |R| =   3.4429 at log n=7.261 ;  X^2/8 =   36.12 ; e^{0.3734 X} =      571.1
+
+(d) spectral counting #{frequencies <= X}: zeta (all n) e^X vs P-smooth (rank pi(P) torus)
+  P=31 (rank 11) X=10: #P-smooth n<=e^X =      2759 ; leading X^r/(r! prod log p) =         0.6 ; all n: e^X = 2.203e+04
+  P=31 (rank 11) X=20: #P-smooth n<=e^X =    210327 ; leading X^r/(r! prod log p) =      1156.5 ; all n: e^X = 4.852e+08
+  P=31 (rank 11) X=30: #P-smooth n<=e^X =   4403492 ; leading X^r/(r! prod log p) =    100030.9 ; all n: e^X = 1.069e+13
+  P= 7 (rank  4) X=20: #P-smooth n<=e^X =      4583 ; leading X^r/(r! prod log p) =      2795.4 ; all n: e^X = 4.852e+08
+  P= 7 (rank  4) X=30: #P-smooth n<=e^X =     19839 ; leading X^r/(r! prod log p) =     14151.6 ; all n: e^X = 1.069e+13

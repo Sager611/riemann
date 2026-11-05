@@ -1,0 +1,8 @@
+h=0.295000 zeros right of line: 1.000 (max step 1.569)
+h=0.297500 zeros right of line: 1.000 (max step 1.571)
+h=0.298750 zeros right of line: 0.000 (max step 1.549)
+h=0.298125 zeros right of line: -0.000 (max step 1.579)
+h=0.297812 zeros right of line: 1.000 (max step 1.557)
+h=0.297969 zeros right of line: 1.000 (max step 1.538)
+h=0.298047 zeros right of line: 1.000 (max step 1.524)
+DH local threshold h_A in (0.29805, 0.29812); rho0 - 1/2 = 0.30852
