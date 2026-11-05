@@ -388,3 +388,4 @@
 - R271 verified others': 2611.06747, 2611.06362, 2611.06599, 2611.06581, 2611.06003, 2611.06107; figure slip: 2611.06275 (lemma true) [R271](Riemann/Tree/R271.lean)
 - R272 verified others': 2611.06245, 2611.06580, 2611.06193, 2611.03368 [R272](Riemann/Tree/R272.lean)
 - R273 known: Zenodo 23960915 (further inconsistencies); conditional: Zenodo 22929637; arXiv API throttled (6 scouts without result) [R273](Riemann/Tree/R273.lean)
+- R274 hold: A227609, A228626, A228917, A228886, A228860, A262813, A229038, A229141, A319311, A319882, A319903, A309012, A320060, A261583, MO 498447, 479729, 507228; known: A321611; misprint: A372409 Conj 2 (det T = -2 det S) [R274](Riemann/Tree/R274.lean)
