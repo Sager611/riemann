@@ -418,3 +418,4 @@
 - R299 N9: the 7/8 half-plane does not improve sixth/twelfth moments or large-value bounds (density targets sigma = 3/4); log zeta exponent 8(1-sigma) above 7/8 is classical [R299](Riemann/Tree/R299.lean)
 - explore1 (Orca exploration: zero-free regions in statistical mechanics) NO IDEA: cluster expansions stop at Re s = 1; Lee-Yang lifts, Basu-Midha flows and the prime-factor gas are RH-equivalents with no new handle; the approximate-functional-equation main term has off-line zeros (1.2% in [10^3, 3*10^4], first near Lehmer's pair 7005.084) [ExploreStatMech](Riemann/Deep/ExploreStatMech/REPORT.md)\n
 - R300 N8: 7/8 and the RH height do not improve explicit near-line zero proportions (Selberg density valid only to sigma <= 0.831); no newer record [R300](Riemann/Tree/R300.lean)
+- R301 N5: the RH height and the 7/8 half-plane give only routine N5 corollaries (explicit liminf constant, L^{8/7} density); d_N -> 0 itself is untouched [R301](Riemann/Tree/R301.lean)
