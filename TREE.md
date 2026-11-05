@@ -399,5 +399,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R363 node N7 round 7: B_2 + 2.2e-254 stands and Bebel's Lean proof uses only the standard axioms (tracker Comparator admission, our scan); the hybrid twelfth moment for family density is not in Nunes or Milicevic-White [R363.lean](Riemann/Tree/R363.lean)
 - R364 node N6 round 7: records stand; RH height 3e12 is still the rigorous record; Chung's Rev. 3.1 keeps the false Lemma 4.0(2); the Laguerre range of 2611.02944 is tied to the height and the global L_1[Xi] >= 0 is open [R364.lean](Riemann/Tree/R364.lean)
 - R365 node N8 round 7: 67.353% stands and its inputs are unrevised; 2610.08965 leaves the optimality of its local certificates open; a 99.993% Zenodo claim assumes Lindelof (REFUTATIONS) [R365.lean](Riemann/Tree/R365.lean)
-- R366 FRONTIER (next)
+- R366 node N9 round 7: records stand; 2602.05614 and 2610.01035 leave marginal refinements undone (harvested); chip-firing, Coxeter growth series and the Gamma conjectures give no positivity mechanism [R366.lean](Riemann/Tree/R366.lean)
+- R367 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
