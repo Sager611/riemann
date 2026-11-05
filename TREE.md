@@ -354,5 +354,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R318 node N8 round 3: 67.354% stands; the paper's ground-state question is n8opt's (LP-saturated); transfer to the Dirichlet family (CIS 56%) untried [R318.lean](Riemann/Tree/R318.lean)
 - R319 node N7 round 3: Lean-checked record now at the contact B_2 (Bebel, 1 Nov 2026: B_2 + 2.2e-254); nothing newer on hexagonmath.org or arXiv [R319.lean](Riemann/Tree/R319.lean)
 - R320 node N11 round 3: Siegel records stand; h <= 2000 already in 2610.21511; effective Duke equidistribution (routine corollary) [R320.lean](Riemann/Tree/R320.lean)
-- R321 FRONTIER (next)
+- R321 node N6 round: explicit n_0(d) plan (GORTTW Thm 1 + explicit Plancherel-Rotach or finite free Berry-Esseen); Dirichlet Jensen corollary fails; no vertex test for interval hyperbolicity [R321.lean](Riemann/Tree/R321.lean)
+- R322 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
