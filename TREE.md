@@ -345,5 +345,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R309 node N1 round 3: our 1.55 tail step rechecked; other certificate 2608.24827 reaches 0.8; analytic windows stop at log 2 (n = 2 term is next) [R309.lean](Riemann/Tree/R309.lean)
 - R310 node N7 round 4: record 0.87338196661320752 (Lean) is the exact KKT contact; 11/3 most sensitive; below needs cross-row cancellation, not stronger moments [R310.lean](Riemann/Tree/R310.lean)
 - R311 node N5 round 3: DISCOVERY - Baez-Duarte criterion extended to L^p (1 < p < 2, endpoint included), unconditional for p <= 1.14497; reviewed CORRECT [R311.lean](Riemann/Tree/R311.lean)
-- R312 FRONTIER (next)
+- R312 node N5 round 4: Dimitrov-Oliveira's P1 (Dirichlet L^p endpoint) looks like a routine extension of our theorem (next Orca); Noor H^p converse and weighted alpha hard; p > 2 fails (known) [R312.lean](Riemann/Tree/R312.lean)
+- R313 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
