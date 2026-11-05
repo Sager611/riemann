@@ -331,5 +331,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R295 node N10 round 2: Buthe's psi/theta range 2.169e25 is height-tied with a Re rho < 1 tail; 7/8 should give ~1.78x (Orca certifying) [R295.lean](Riemann/Tree/R295.lean)
 - R296 node N3 round 2: lambda_n > 0 for n <= 77.03 T^2 already in Fabbian (Zenodo 22839423); 7/8 version routine; scout counterexample was a multiplicity slip [R296.lean](Riemann/Tree/R296.lean)
 - R297 node N6 round 2: our d <= (16T^2-4)/9 re-verified, still the record; Liu's conditional region gives 1.6081e25 [R297.lean](Riemann/Tree/R297.lean)
-- R298 FRONTIER (next)
+- R298 node N1 round 2: partial RH + 7/8 strip + S(t) bounds give heuristic windows 0.72-1.26 only (zero gaps up to 3.11 near T); no height-tied record [R298.lean](Riemann/Tree/R298.lean)
+- R299 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
