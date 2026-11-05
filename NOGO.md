@@ -448,3 +448,4 @@
 - R320 N11: the half-plane gives class-group generators only of norm >> |D|^3.95, no polylog bound; Hurwitz-space Cohen-Lenstra methods carry no zero information [R320](Riemann/Tree/R320.lean)
 - nblp2 (Orca, N5): the L^p natural-number criterion extends to every Dirichlet L-function (routine; reviewer CORRECT, ROUTINE; logged on the NBLp discovery page); Dimitrov-Oliveira's Problem 1 (1608.07887) is a fixed-n weighted-L^2 extremal problem, not this endpoint (R312 misread it) [NBLp2](Riemann/Deep/NBLp2/REPORT.md)
 - R321 N6: Chasse's sector lemma needs positive Taylor coefficients, so real Dirichlet L-functions get no Jensen range this way; interval-polynomial hyperbolicity is not vertex-determined (cubic counterexample) [R321](Riemann/Tree/R321.lean)
+- R322 N1: Lehmann-Goerisch and Landau-Widom give no cheaper Weil certificate (no spectral gap near 1e-124; no lambda_min law) [R322](Riemann/Tree/R322.lean)
