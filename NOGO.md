@@ -384,3 +384,4 @@
 - R267 hold: 1012.3141, 2009.04379, 2507.18589, 2010.05775, A246065, A245769, A295112, A246512, A246567, A246875, A180364, A262439, Zenodo 23934934; scout errors: 1407.0967 Conj 4.3(ii), 1408.5381 Conj 5.1, 5.3; typo: 2603.29973 Conj 3 [R267](Riemann/Tree/R267.lean)
 - R268 known: Fasi-Higham off-diagonal failures (Scardino; thresholds 66/44/42/43 for m = 5/7/9/11); verified others': 2411.00566, 2610.18636, 2511.13691, 2002.08022, Zenodo 23421625; minor: erdos710-lean hard-coded constant [R268](Riemann/Tree/R268.lean)
 - R269 verified others': 2608.01498, 2610.13365, 2608.08019, 2511.11331, 2509.05280; OEIS A146029, A085152, A141273 complete in range; not pursued: MO 516491, 513565, Zenodo 23308381 [R269](Riemann/Tree/R269.lean)
+- R270 verified others': 2611.06376, 2611.01422, 2611.04067, 2611.02298, 2611.02159, 2611.05930, 2611.05576, 2611.06917, 2611.06301 [R270](Riemann/Tree/R270.lean)
