@@ -14,5 +14,7 @@
 
 **Novelty.** No earlier proof found (5 Nov 2026): Goodchild's Zenodo record and GitHub repository (diagonal "still open"), Scardino 2610.39051 v1 ("remains an open problem"), arXiv math.CA, math.NA, math.CV listings for Oct–Nov 2026, citations of Fasi–Higham 2019.
 
+**RH relevance.** None directly (side result in Padé approximation of the matrix exponential). The method, uniform Bessel-type asymptotics with certified constants proving positivity in every degree, is the kind of uniformity node N6 (Jensen polynomials) needs.
+
 **Files.** [report](../Riemann/Deep/FasiHigham2/REPORT.md), [proof](../Riemann/Deep/FasiHigham2/PROOF.md), [review](../Riemann/Deep/FasiHigham2/REVIEW.md), [verify.py](../Riemann/Deep/FasiHigham2/verify.py)
 
