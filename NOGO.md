@@ -390,3 +390,4 @@
 - R273 known: Zenodo 23960915 (further inconsistencies); conditional: Zenodo 22929637; arXiv API throttled (6 scouts without result) [R273](Riemann/Tree/R273.lean)
 - R274 hold: A227609, A228626, A228917, A228886, A228860, A262813, A229038, A229141, A319311, A319882, A319903, A309012, A320060, A261583, MO 498447, 479729, 507228; known: A321611; misprint: A372409 Conj 2 (det T = -2 det S) [R274](Riemann/Tree/R274.lean)
 - R275 verified others': Erdős #502, #1140, #1141, 2605.20579, 2609.01766, OpenAI square-difference-free / paired states / Egyptian fractions; hold: Sun A277860, A242210, A242193, A242194, A242222, A242241, A242223, A279859, A245089, A371652 [R275](Riemann/Tree/R275.lean)
+- R276 known in kind: Fasi-Higham off-diagonal failures (Scardino); data: k0(m) = 2m + 13..15 for m = 23..49, k0 > 2m for m <= 49 [R276](Riemann/Tree/R276.lean)
