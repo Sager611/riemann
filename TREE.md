@@ -288,5 +288,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R270 fresh analysis papers: special-function identities and sharp constants hold [R270.lean](Riemann/Tree/R270.lean)
 - R271 explicit objects in fresh math.CO papers: all correct; 2611.06275 appendix figure uses a non-edge (lemma true) [R271.lean](Riemann/Tree/R271.lean)
 - R272 fresh math.NT papers: tables and examples recomputed, all correct [R272.lean](Riemann/Tree/R272.lean)
-- R273 FRONTIER (next)
+- R273 RH-adjacent numerics: arXiv API throttled; Zenodo RH proofs known or conditional [R273.lean](Riemann/Tree/R273.lean)
+- R274 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.

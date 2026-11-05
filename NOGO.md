@@ -387,3 +387,4 @@
 - R270 verified others': 2611.06376, 2611.01422, 2611.04067, 2611.02298, 2611.02159, 2611.05930, 2611.05576, 2611.06917, 2611.06301 [R270](Riemann/Tree/R270.lean)
 - R271 verified others': 2611.06747, 2611.06362, 2611.06599, 2611.06581, 2611.06003, 2611.06107; figure slip: 2611.06275 (lemma true) [R271](Riemann/Tree/R271.lean)
 - R272 verified others': 2611.06245, 2611.06580, 2611.06193, 2611.03368 [R272](Riemann/Tree/R272.lean)
+- R273 known: Zenodo 23960915 (further inconsistencies); conditional: Zenodo 22929637; arXiv API throttled (6 scouts without result) [R273](Riemann/Tree/R273.lean)
