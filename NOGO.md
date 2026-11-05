@@ -459,3 +459,4 @@
 - R328 N7: quantum modular forms, Habiro rings and dynamical zeta functions give no zero-location mechanism that fails for DH [R328](Riemann/Tree/R328.lean)
 - R329 N12: determinantal (PSD pencil) certificates, Toeplitz/PF-infinity minors and Teichmueller asymptotics give no DH-failing mechanism [R329](Riemann/Tree/R329.lean)
 - R330 N11: primon-gas thermodynamics, K-theory regulator positivity and tridiagonal beta-ensembles give no DH-failing mechanism [R330](Riemann/Tree/R330.lean)
+- R331 N8: reflection positivity, inverse spectral reconstruction and Calogero-Moser zero flows give no DH-failing mechanism [R331](Riemann/Tree/R331.lean)
