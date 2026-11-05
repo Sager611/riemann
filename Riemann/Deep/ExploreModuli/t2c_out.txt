@@ -1,0 +1,12 @@
+R=   5: H(0)=3.6146 (2pi=6.2832)  half-width in x = 0.730  (sech(pi x) half-width 0.419)
+R=  10: H(0)=4.8284 (2pi=6.2832)  half-width in x = 0.540  (sech(pi x) half-width 0.419)
+R=  40: H(0)=5.9168 (2pi=6.2832)  half-width in x = 0.450  (sech(pi x) half-width 0.419)
+R= 160: H(0)=6.1916 (2pi=6.2832)  half-width in x = 0.430  (sech(pi x) half-width 0.419)
+q=1e+04 a=0.1: Markov bound >= log q/(4 pi C) = 0.533
+q=1e+04 a=0.25: Markov bound >= log q/(4 pi C) = 0.304
+q=1e+06 a=0.1: Markov bound >= log q/(4 pi C) = 0.799
+q=1e+06 a=0.25: Markov bound >= log q/(4 pi C) = 0.455
+q=1e+12 a=0.1: Markov bound >= log q/(4 pi C) = 1.598
+q=1e+12 a=0.25: Markov bound >= log q/(4 pi C) = 0.911
+q=1e+30 a=0.1: Markov bound >= log q/(4 pi C) = 3.994
+q=1e+30 a=0.25: Markov bound >= log q/(4 pi C) = 2.277

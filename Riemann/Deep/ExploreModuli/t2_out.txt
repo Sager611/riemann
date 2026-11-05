@@ -1,0 +1,30 @@
+(a) line-positive kernel: amplification h(i a)/h(0) and worst paired weight min_x 2Re h(x - i a) / h(0)
+  R=  5 a=0.1000: h(ia)/h(0)=       1.021  min_x pair/h(0)=    -0.01339 at x=1.234
+  R=  5 a=0.2500: h(ia)/h(0)=       1.137  min_x pair/h(0)=     -0.1049 at x=1.146
+  R=  5 a=0.3085: h(ia)/h(0)=       1.215  min_x pair/h(0)=     -0.1772 at x=1.108
+  R= 10 a=0.1000: h(ia)/h(0)=       1.086  min_x pair/h(0)=    -0.06165 at x=0.589
+  R= 10 a=0.2500: h(ia)/h(0)=       1.642  min_x pair/h(0)=      -0.651 at x=0.502
+  R= 10 a=0.3085: h(ia)/h(0)=       2.092  min_x pair/h(0)=      -1.213 at x=0.479
+  R= 20 a=0.1000: h(ia)/h(0)=       1.381  min_x pair/h(0)=     -0.3504 at x=0.263
+  R= 20 a=0.2500: h(ia)/h(0)=       5.857  min_x pair/h(0)=      -6.606 at x=0.216
+  R= 20 a=0.3085: h(ia)/h(0)=       12.51  min_x pair/h(0)=      -17.06 at x=0.207
+  R= 40 a=0.1000: h(ia)/h(0)=       3.289  min_x pair/h(0)=      -2.836 at x=0.113
+  R= 40 a=0.2500: h(ia)/h(0)=       220.2  min_x pair/h(0)=      -384.1 at x=0.095
+  R= 40 a=0.3085: h(ia)/h(0)=        1502  min_x pair/h(0)=       -2756 at x=0.092
+(b) full-strip kernel: min Re H over strip grid, amplification Re H(-ia)/Re H(0), max_x ReH(x-ia)/ReH(x), Harnack cap tan(pi/4+pi a/2)
+  R=  5 a=0.1000: ReH(-ia)/ReH(0)=  1.0131  max_x ratio=  1.0177  cap= 1.3764   (min ReH on strip grid 2.775e-09)
+  R=  5 a=0.2500: ReH(-ia)/ReH(0)=  1.0849  max_x ratio=  1.1231  cap= 2.4142   (min ReH on strip grid 2.775e-09)
+  R=  5 a=0.3085: ReH(-ia)/ReH(0)=  1.1320  max_x ratio=  1.2004  cap= 3.2235   (min ReH on strip grid 2.775e-09)
+  R=  5 a=0.4500: ReH(-ia)/ReH(0)=  1.3010  max_x ratio=  1.5270  cap=12.7062   (min ReH on strip grid 2.775e-09)
+  R= 10 a=0.1000: ReH(-ia)/ReH(0)=  1.0276  max_x ratio=  1.0276  cap= 1.3764   (min ReH on strip grid 5.550e-09)
+  R= 10 a=0.2500: ReH(-ia)/ReH(0)=  1.1891  max_x ratio=  1.1891  cap= 2.4142   (min ReH on strip grid 5.550e-09)
+  R= 10 a=0.3085: ReH(-ia)/ReH(0)=  1.3051  max_x ratio=  1.3051  cap= 3.2235   (min ReH on strip grid 5.550e-09)
+  R= 10 a=0.4500: ReH(-ia)/ReH(0)=  1.7917  max_x ratio=  1.7917  cap=12.7062   (min ReH on strip grid 5.550e-09)
+  R= 20 a=0.1000: ReH(-ia)/ReH(0)=  1.0400  max_x ratio=  1.0400  cap= 1.3764   (min ReH on strip grid 1.110e-08)
+  R= 20 a=0.2500: ReH(-ia)/ReH(0)=  1.2959  max_x ratio=  1.2959  cap= 2.4142   (min ReH on strip grid 1.110e-08)
+  R= 20 a=0.3085: ReH(-ia)/ReH(0)=  1.5060  max_x ratio=  1.5060  cap= 3.2235   (min ReH on strip grid 1.110e-08)
+  R= 20 a=0.4500: ReH(-ia)/ReH(0)=  2.6776  max_x ratio=  2.6776  cap=12.7062   (min ReH on strip grid 1.110e-08)
+  R= 40 a=0.1000: ReH(-ia)/ReH(0)=  1.0461  max_x ratio=  1.0461  cap= 1.3764   (min ReH on strip grid 2.220e-08)
+  R= 40 a=0.2500: ReH(-ia)/ReH(0)=  1.3578  max_x ratio=  1.3578  cap= 2.4142   (min ReH on strip grid 2.220e-08)
+  R= 40 a=0.3085: ReH(-ia)/ReH(0)=  1.6396  max_x ratio=  1.6396  cap= 3.2235   (min ReH on strip grid 2.220e-08)
+  R= 40 a=0.4500: ReH(-ia)/ReH(0)=  3.8640  max_x ratio=  3.8640  cap=12.7062   (min ReH on strip grid 2.220e-08)
