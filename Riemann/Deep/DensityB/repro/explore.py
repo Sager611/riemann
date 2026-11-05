@@ -80,7 +80,7 @@ def Lstar_factory(s,new):
 def Z(s,t,Ls,new):  # zeta LV bound, t>=2
     if s > t*beta_low(1/t): return -math.inf
     if new and s > B: return -math.inf
-    return min(Ls(t), 2*t-12*s+6, min(t-6*(s-0.5), 5*t-32*(s-0.5)))
+    return min(Ls(t), 2*t-12*s+6, max(t-6*(s-0.5), 5*t-32*(s-0.5)))
 def A_bound(s,new):
     Ls, tM = Lstar_factory(s,new)
     ts = [1.0+0.004*i for i in range(0,1500)]
