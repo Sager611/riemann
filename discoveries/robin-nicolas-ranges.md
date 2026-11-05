@@ -1,6 +1,6 @@
 # Robin's and Nicolas' inequalities verified far beyond earlier ranges (node N4)
 
-**Claim.** Robin's inequality σ(n) < e^γ n log log n holds for every 5041 ≤ n ≤ 10^(10^38.60), i.e. for every colossally abundant number whose largest prime is at most 9.37·10^38. Nicolas' inequality N_k/φ(N_k) > e^γ log log N_k holds for every primorial N_k with p_k ≤ 1.04·10^40. Without the half-plane the same method gives 10^(10^32.98) and p_k ≤ 1.42·10^34.
+**Claim.** Robin's inequality σ(n) < e^γ n log log n holds for every 5041 ≤ n ≤ 10^(10^38.71), i.e. for every colossally abundant number whose largest prime is at most 1.19·10^39. Nicolas' inequality N_k/φ(N_k) > e^γ log log N_k holds for every primorial N_k with p_k ≤ 1.31·10^40. These use the Lean-checked zero-free half-plane Re s > 0.87338196661320752 (Bebel, QuasiRiemannTracker; check_all.py Level 2 variant, rerun 5 Nov 2026, R344); with OpenAI's 7/8 they are 10^(10^38.60), 9.37·10^38 and 1.04·10^40. Without the half-plane the same method gives 10^(10^32.98) and p_k ≤ 1.42·10^34.
 
 **Before.** Robin: Polak (Zenodo 21808589, Aug 2026, unrefereed) n ≤ 10^(10^22.85) (largest prime 1.65·10^23); refereed: Morrill–Platt (arXiv 1809.10813) n ≤ 10^(10^13.11485). Nicolas: no verified height-tied range; floating-point computations to p_k ≤ 10^9 (Nicolas 2012, arXiv 1202.0729).
 
