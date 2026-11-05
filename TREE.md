@@ -351,5 +351,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R315 node N3 round 3: Fabbian's 77.03 T^2 rechecked exactly; Dirichlet-L Li ranges estimated (n ~ 6e16 at q = 3), not certified [R315.lean](Riemann/Tree/R315.lean)
 - R316 node N4 round 3: Morrill-Platt's range stands; Nicolas' height-tied range needs a tail bound; explicit Jensen threshold from GORTTW Thm 1 (both Orca candidates) [R316.lean](Riemann/Tree/R316.lean)
 - R317 node N12 round 3: classification record stands; Artin L-functions holomorphic and zero-free on Re s > B_2 (routine corollary of Liu's Hecke half-plane) [R317.lean](Riemann/Tree/R317.lean)
-- R318 FRONTIER (next)
+- R318 node N8 round 3: 67.354% stands; the paper's ground-state question is n8opt's (LP-saturated); transfer to the Dirichlet family (CIS 56%) untried [R318.lean](Riemann/Tree/R318.lean)
+- R319 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
