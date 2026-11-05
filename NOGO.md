@@ -392,3 +392,4 @@
 - R275 verified others': Erdős #502, #1140, #1141, 2605.20579, 2609.01766, OpenAI square-difference-free / paired states / Egyptian fractions; hold: Sun A277860, A242210, A242193, A242194, A242222, A242241, A242223, A279859, A245089, A371652 [R275](Riemann/Tree/R275.lean)
 - R276 known in kind: Fasi-Higham off-diagonal failures (Scardino); data: k0(m) = 2m + 13..15 for m = 23..49, k0 > 2m for m <= 49 [R276](Riemann/Tree/R276.lean)
 - R277 hold: Z.-H. Sun 1012.3833 Conj 2.8 (scout error), 1103.5384 Conj 3.8, Mao 2304.04548, Liu 1606.08432, C. Wang 1909.08983, Pan 2012.05121 [R277](Riemann/Tree/R277.lean)
+- R278 N6 first round: no new handle from finite free probability / Lorentzian polynomials found; 5 scouts timed out (search throttled, computations heavy) [R278](Riemann/Tree/R278.lean)
