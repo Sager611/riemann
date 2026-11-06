@@ -1,0 +1,20 @@
+lincomb3 reviewer log (verdict-only reviewer runs on pasted summaries, 2026-11-06)
+
+Run 1 (full chain, Steps 1-7): timed out at 170 s, no verdict.
+Run 2a (Steps 1-4: N-function extension, capacity, stage-1 numbers, barrier):
+  Step 1 SOUND; Step 2 GAP ("at fixed delta the capacity bound is 1/[N(1 - sqrt delta)] plus block-count errors; supply the parameter hierarchy");
+  Step 3 SOUND (3p - 2 = 0.017473882 with p = 0.672491294; printed 0.017473881 is the safe rounding); Step 4 SOUND (sharp under the abstract constraints only; not a statement about the zeros).
+  Repair: DERIVATION 4.6 now shows that the factors 1 - sqrt(delta) cancel (#blocks x k_l) and states the order eps -> M(eps, N), delta = M^(-1/3) -> T.
+Run 2b (Steps A-C: on-line isolation, Lemma M, transfer): timed out; recap: A SOUND; B GAP (the energy must be the complex-parameter energy, not ordinate pair correlation);
+  C GAP (quantifiers: for every eta there is kappa). Repairs: DERIVATION 9.3 (Lem:GaPa's left side is sum r^(i(rho - rho') log T/2pi) w over all zeros: the complex energy),
+  9.4 (quantifier order written out).
+Run 3 (rerun of B): timed out.
+Run 4 (narrow: centroid cancellation, ||A' - A||_HS^2 = Q, tr A'^2 <= (sqrt(tr A^2) + sqrt Q)^2): SOUND.
+Run 5 (narrow: applying 2610.08965's abstract chain to the merged multiset): FLAW as stated ("needs b, omega >= 0 and merged points must not coincide with unmerged simple points").
+  Both hold: b >= 0 by the definition of a certificate (TeX l.1084), omega >= 0 w.l.o.g.; a merged point lies in [min C, max C], at distance >= kappa from every other real point.
+  Added to DERIVATION 9.1(ii), 9.2.
+Run 6 (narrow: (a) energy for fixed chi via Lem:GaPa with R = f*f, R''; (b) pair counts from Selberg's mean square):
+  (a) GAP ("f = eta^2 need not be even") - in 2610.08965 eta_eps is real and even (TeX l.759), so R is even; added to DERIVATION 9.3.
+  (b) SOUND (use sliding windows / an averaged offset; uniform for 1 <= R <= log T); added to DERIVATION 9.1(iv).
+Run 7 (compressed whole chain, Steps 1-4 of the final argument): GAP - "merging estimate: interactions with off-line zeros in the HS norm".
+Run 8 (narrow: off-line terms identical in A and A', ||A'||_HS <= ||A||_HS + ||A' - A||_HS, real-real kernel only): SOUND (finite-dimensional operators, so Hilbert-Schmidt).

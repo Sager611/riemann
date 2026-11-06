@@ -1,0 +1,32 @@
+== lincomb3 cert (python-flint, prec 160)
+C_MT in [1.327499296321, 1.327499296321]; isolated-zero ceiling of the method 2 - C_MT <= 0.672500704
+c = 0.001   : lambda_C = 1.224e-05, rho = 1.2036, alpha_rho <= 0.670124, B(rho) <= 1.4038e-05 -> delta >= p = 0.672487288
+c = 0.0001  : lambda_C = 1.224e-07, rho = 1.2036, alpha_rho <= 0.670274, B(rho) <= 1.4038e-05 -> delta >= p = 0.672491254
+c = 0.00001 : lambda_C = 1.224e-09, rho = 1.2036, alpha_rho <= 0.670276, B(rho) <= 1.4038e-05 -> delta >= p = 0.672491294
+using c = 0.00001, p >= 0.672491294
+N | threshold (N-1)/N | naive N p - (N-1) >= | capacity 1 - N min(1-p, 1/N) >= | ceiling N(2-C_MT)-(N-1) <=
+2 | 0.500000 | +0.344982588 | 0.344982588 | +0.345001407
+3 | 0.666667 | +0.017473881 | 0.017473881 | +0.017502111
+4 | 0.750000 | -0.310034825 | 0.000000000 | -0.309997185
+5 | 0.800000 | -0.637543531 | 0.000000000 | -0.637496482
+6 | 0.833333 | -0.965052237 | 0.000000000 | -0.964995778
+HEADLINE N = 3: proportion >= 3p - 2 >= 0.017473881  (> 0.0174737)
+N = 2 (reproduces IsoZero cert8 at the same c): 2p - 1 >= 0.344982588
+N = 4: naive and ceiling negative; capacity bound = 0 (1 - p >= 1/4): no positive proportion from this method
+paper's inputs: p_A in [0.655202908, 0.655202908]; 3 p_A - 2 <= -0.034391 < 0 (so N = 3 needs p > 2/3: our isolated-zero bound)
+margin over the N = 3 threshold: p - 2/3 >= 0.005824627
+gap to the method ceiling (N = 3): (4 - 3 C_MT) - (3p - 2) <= 2.823e-05
+stage 2: C'_0 = 6639737/5000000, (x, b) = (4361/500000, 4389/1000000); s0 = (2 - C'_0 - b)/(1 - x) = 1669159/2478195 = 0.673538200 (exact; equals 2610.08965 thm:line)
+N | 1 - N min(1 - s0, 1/N) (exact) | value
+2 | 860123/2478195 | 0.347076400
+3 | 17029/826065 | 0.020614601
+4 | 0 | 0.000000000
+5 | 0 | 0.000000000
+6 | 0 | 0.000000000
+HEADLINE (stage 2) N = 3: >= 3 s0 - 2 = 51087/2478195 = 0.020614601; N = 2: >= 2 s0 - 1 = 860123/2478195 = 0.347076400
+stage 2 margin over the N = 3 threshold: s0 - 2/3 = 17029/2478195 = 0.006872; 1 - s0 = 0.326462 > 1/4, so N = 4 gives 0
+GRH benchmark (Bombieri-Hejhal Thm C): 34.5%; stage 2 N = 2 exceeds it by 0.002076
+missing-lemma thresholds theta < 1/(N(1-delta)): N=4: 0.7658 (delta=s0), 0.7633 (delta=p); N=5: 0.6126 (delta=s0), 0.6107 (delta=p); N=10: 0.3063 (delta=s0), 0.3053 (delta=p)
+separation constant 2/sqrt(2 pi) = 0.7979 (DERIVATION 3.2)
+before (Dousselin, quoted): N=3 kappa_F >= 4.91e-09; ratio stage 1/old = 3.559e+06, stage 2/old = 4.198e+06
+Dousselin (quoted): N=2 7.38e-09, N=4 3.68e-09, N=5 2.94e-09, N=10 1.46e-09; large N: 2.161e-06/(N log N)

@@ -1,3 +1,5 @@
+**Superseded** (6 Nov 2026) by [linear-combinations-three](linear-combinations-three.md): 34.707% for two functions and 2.061% for three.
+
 # At least 34.49% of the zeros of a linear combination of two Dirichlet L-functions lie on the critical line (nodes N8, N12)
 
 **Claim.** Let χ_1 ≠ χ_2 be primitive characters mod q ≥ 3 of the same parity, b_1, b_2 nonzero reals and e^{2iθ_j} = i^a τ̄(χ_j)/√q. At least 0.3449 (certified 2p − 1 ≥ 0.344982508) of the nontrivial zeros of F(s) = b_1e^{iθ_1}L(s, χ_1) + b_2e^{iθ_2}L(s, χ_2) lie on the critical line and have odd multiplicity, unconditionally (liminf, fixed q and χ_j). F has a functional equation but no Euler product; for suitable choices it is of Davenport–Heilbronn type and has zeros off the line.

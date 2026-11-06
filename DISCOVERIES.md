@@ -27,7 +27,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N11) First numeric polylogarithmic least prime in every Chebotarev class: N𝔭 ≤ (0.49 log 3Δ_L)^32 from a Lean-checked half-plane (was Δ_L^{310}). [details](discoveries/chebotarev-numeric.md)
 - (N11) Every modulus q ≤ Q is covered by 2.1067 log Q + 58 primes ≤ (820 log Q)^{7.90}: their subset products give all of (ℤ/qℤ)^× (was: almost all q). [details](discoveries/unit-group-cover.md)
 - (N10) A prime between n^7 and (n+1)^7 for every n ≥ 1 (was eighth powers), and between consecutive cubes beyond e^{627} (was exp(e^{32.5})). [details](discoveries/primes-between-powers.md)
-- (N8, N12) At least 34.49% of the zeros of a linear combination of two Dirichlet L-functions lie on the critical line, unconditionally (was 31%; GRH gave 34.5%). [details](discoveries/linear-combinations-line.md)
+- (N8, N12) At least 2.06% of the zeros of a combination of three Dirichlet L-functions lie on the critical line (was 4.91·10⁻⁹); 34.71% for two (was ours 34.49%). [details](discoveries/linear-combinations-three.md)
 
 ## Side results (off the RH tree)
 

@@ -1,0 +1,52 @@
+grid: t in [5.0, 2400.0], step 0.030, 79834 points
+L(s,chi_3): sign changes in (    5,  600]:   526   main term    525.1   ratio 1.0017
+L(s,chi_3): sign changes in (  600, 1200]:   657   main term    658.1   ratio 0.9984
+L(s,chi_3): sign changes in ( 1200, 2400]:  1449   main term   1448.5   ratio 1.0003
+L(s,chi_5): sign changes in (    5,  600]:   525   main term    525.1   ratio 0.9998
+L(s,chi_5): sign changes in (  600, 1200]:   658   main term    658.1   ratio 0.9999
+L(s,chi_5): sign changes in ( 1200, 2400]:  1448   main term   1448.5   ratio 0.9996
+L(s,chi_6): sign changes in (    5,  600]:   524   main term    525.1   ratio 0.9979
+L(s,chi_6): sign changes in (  600, 1200]:   659   main term    658.1   ratio 1.0014
+L(s,chi_6): sign changes in ( 1200, 2400]:  1448   main term   1448.5   ratio 0.9996
+kappa = 0.05: fraction of on-line zeros of L_j isolated from other on-line zeros, t in (1200,2400]: 1.0000, 1.0000, 0.9986
+kappa = 0.20: fraction of on-line zeros of L_j isolated from other on-line zeros, t in (1200,2400]: 0.9917, 0.9903, 0.9917
+kappa = 0.35: fraction of on-line zeros of L_j isolated from other on-line zeros, t in (1200,2400]: 0.9476, 0.9351, 0.9406
+
+== b = (1.0, 1.0, 1.0)
+F: sign changes of G in (    5,  600]:   481   main term    525.1   proportion on line ~ 0.9160
+F: sign changes of G in (  600, 1200]:   588   main term    658.1   proportion on line ~ 0.8935
+F: sign changes of G in ( 1200, 2400]:  1302   main term   1448.5   proportion on line ~ 0.8989
+F: sign changes of G in (    5, 2400]:  2371   main term   2631.7   proportion on line ~ 0.9009
+blocks (u-length 10) in (1200,2400]: 897; dominant index shares [0.329, 0.33, 0.341]; median top-two gap 0.73; gap > 1 in 0.36 of blocks
+zeros of F in (1200,2400] in blocks with top-two gap > 0:  1302, of which within 0.15 mean spacings of a zero of the dominant L_j: 0.508
+zeros of F in (1200,2400] in blocks with top-two gap > 1:   400, of which within 0.15 mean spacings of a zero of the dominant L_j: 0.583
+zeros of F in (1200,2400] in blocks with top-two gap > 2:    55, of which within 0.15 mean spacings of a zero of the dominant L_j: 0.618
+blocks in (1200,2400] with top-two gap > 2: 63; per-block count < (0.35-isolated zeros of dominant L_j) - 2 in 0
+missing-lemma test, kappa = 0.35: j=3: |H_j|=76, share in own dominance blocks 0.184 (share of all its zeros 0.254); j=5: |H_j|=94, share in own dominance blocks 0.160 (share of all its zeros 0.251); j=6: |H_j|=86, share in own dominance blocks 0.174 (share of all its zeros 0.265)
+missing-lemma test, kappa = 0.50: j=3: |H_j|=256, share in own dominance blocks 0.090 (share of all its zeros 0.254); j=5: |H_j|=264, share in own dominance blocks 0.117 (share of all its zeros 0.251); j=6: |H_j|=232, share in own dominance blocks 0.142 (share of all its zeros 0.265)
+
+== b = (1.0, -2.0, 0.5)
+F: sign changes of G in (    5,  600]:   359   main term    525.1   proportion on line ~ 0.6837
+F: sign changes of G in (  600, 1200]:   460   main term    658.1   proportion on line ~ 0.6990
+F: sign changes of G in ( 1200, 2400]:  1033   main term   1448.5   proportion on line ~ 0.7131
+F: sign changes of G in (    5, 2400]:  1852   main term   2631.7   proportion on line ~ 0.7037
+blocks (u-length 10) in (1200,2400]: 897; dominant index shares [0.247, 0.64, 0.113]; median top-two gap 0.87; gap > 1 in 0.45 of blocks
+zeros of F in (1200,2400] in blocks with top-two gap > 0:  1033, of which within 0.15 mean spacings of a zero of the dominant L_j: 0.648
+zeros of F in (1200,2400] in blocks with top-two gap > 1:   427, of which within 0.15 mean spacings of a zero of the dominant L_j: 0.836
+zeros of F in (1200,2400] in blocks with top-two gap > 2:    98, of which within 0.15 mean spacings of a zero of the dominant L_j: 0.908
+blocks in (1200,2400] with top-two gap > 2: 114; per-block count < (0.35-isolated zeros of dominant L_j) - 2 in 0
+missing-lemma test, kappa = 0.35: j=3: |H_j|=76, share in own dominance blocks 0.053 (share of all its zeros 0.184); j=5: |H_j|=94, share in own dominance blocks 0.500 (share of all its zeros 0.567); j=6: |H_j|=86, share in own dominance blocks 0.035 (share of all its zeros 0.068)
+missing-lemma test, kappa = 0.50: j=3: |H_j|=256, share in own dominance blocks 0.059 (share of all its zeros 0.184); j=5: |H_j|=264, share in own dominance blocks 0.424 (share of all its zeros 0.567); j=6: |H_j|=232, share in own dominance blocks 0.022 (share of all its zeros 0.068)
+
+== b = (3.0, 1.0, -1.0)
+F: sign changes of G in (    5,  600]:   355   main term    525.1   proportion on line ~ 0.6760
+F: sign changes of G in (  600, 1200]:   474   main term    658.1   proportion on line ~ 0.7203
+F: sign changes of G in ( 1200, 2400]:  1010   main term   1448.5   proportion on line ~ 0.6973
+F: sign changes of G in (    5, 2400]:  1839   main term   2631.7   proportion on line ~ 0.6988
+blocks (u-length 10) in (1200,2400]: 897; dominant index shares [0.654, 0.172, 0.174]; median top-two gap 0.88; gap > 1 in 0.44 of blocks
+zeros of F in (1200,2400] in blocks with top-two gap > 0:  1010, of which within 0.15 mean spacings of a zero of the dominant L_j: 0.648
+zeros of F in (1200,2400] in blocks with top-two gap > 1:   402, of which within 0.15 mean spacings of a zero of the dominant L_j: 0.871
+zeros of F in (1200,2400] in blocks with top-two gap > 2:   118, of which within 0.15 mean spacings of a zero of the dominant L_j: 0.992
+blocks in (1200,2400] with top-two gap > 2: 127; per-block count < (0.35-isolated zeros of dominant L_j) - 2 in 0
+missing-lemma test, kappa = 0.35: j=3: |H_j|=76, share in own dominance blocks 0.474 (share of all its zeros 0.584); j=5: |H_j|=94, share in own dominance blocks 0.053 (share of all its zeros 0.115); j=6: |H_j|=86, share in own dominance blocks 0.081 (share of all its zeros 0.118)
+missing-lemma test, kappa = 0.50: j=3: |H_j|=256, share in own dominance blocks 0.398 (share of all its zeros 0.584); j=5: |H_j|=264, share in own dominance blocks 0.061 (share of all its zeros 0.115); j=6: |H_j|=232, share in own dominance blocks 0.056 (share of all its zeros 0.118)

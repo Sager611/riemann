@@ -1,0 +1,34 @@
+lincomb3 novelty log (2026-11-06, 08:00-08:50 UTC)
+
+1. arXiv monthly listings (python3 .scratch/lst.py 'linear combination|Davenport.Heilbronn|critical line|Epstein|Selberg class|Bombieri.Hejhal' math.NT math.CA math.CV, 2026-10 and 2026-11):
+   11 title hits; only 2610.26841 (Lamzouri, isolated zeros + linear combinations of TWO Dirichlet L-functions) treats linear combinations.
+   Others: 2611.01905, 2610.02709, 2610.08965, 2610.22821, 2610.23467, 2610.27591, 2610.32242, 2610.36885, 2610.14901, 2611.02768 (unrelated to linear combinations).
+   Zenodo '"linear combinations" AND "L-functions"': 7 hits, none relevant.
+2. arXiv API (axq.py), all dates:
+   abs:"linear combination" AND abs:"critical line" AND abs:"L-functions" -> 2610.26841; 2508.11108 (Levinson mollifiers, not about F); 2311.10285 (Dousselin, explicit Selberg method);
+     2010.10490 (Lamzouri-Lee, zeros NEAR the line); 1602.06328; 1311.4862 (Hejhal, Part A, entire functions); 1301.5144 (random matrix model); 0704.3448.
+   ti:"linear combinations" AND ti:"L-functions" -> + 2501.00551 (Rezvyakova, degree two, Selberg's approach: positive proportion, not explicit), 2504.08322 / 2109.09097 (CLT for
+     linear combinations of logarithms), 2511.14563 (function fields).
+   abs:"Davenport-Heilbronn" AND abs:"critical line" -> nothing on proportions. abs:"Bombieri-Hejhal" -> 2610.26841, 1301.5144.
+   au:Dousselin -> 2311.10285 (+ class number papers). au:Rezvyakova -> 2411.18492 (Epstein zeta: positive proportion), 2501.00551, 1212.2948. au:Hejhal -> 1311.4862 only.
+   au:Kaczorowski AND abs:"critical line" -> nothing.
+   2609.15329 (Selberg's method optimised, 6.78% for zeta only) - not applied to linear combinations.
+   Lamzouri 2610.26841: abs page lists [v1], [v2]; v2 (26 Oct 2026) is current; it states only N = 2 (Thm 1.4, Rem 1.5: needs delta_1 + delta_2 > 1).
+3. BEFORE for N >= 3 (correction to the brief and to R401): Dousselin, arXiv 2311.10285 = Forum Math. 37 (2025) 1871-1912, Theorem "application" (TeX l.616-640):
+   explicit kappa_F >= 5.45e-8 (N=1), 7.38e-9 (N=2), 4.91e-9 (N=3), 3.68e-9 (N=4), 2.94e-9 (N=5), 1.46e-9 (N=10), 1.45e-10 (N=100), 1.43e-11 (N=1000);
+   for large N: 2.161e-6/(N log N)(1 - o(1)). Selberg (1998, IAS publications) proved c/N^2, non-explicit. So N >= 3 is NOT only non-explicit.
+4. HAL API: '"linear combinations" AND "L-functions" AND zeros' -> hal-05441218 (DH zeros, no proportion), hal-04302034 (= Dousselin 2311.10285);
+   'Dousselin' -> his thesis tel-05317244 (Univ. Lorraine 2025, 'Corps cubiques, methode de ramollissement et nombre de classes'); nothing newer on linear combinations.
+5. GXL evidence API (2 claims, limit 15, top_n 200, include_neutral):
+   'An explicit positive proportion of the zeros of a linear combination of three Dirichlet L-functions lies on the critical line': 6 supports / 0 refutes / 312 neutral;
+     supports only from 2610.26841 (N = 2), 2010.10490 (Selberg's theorem quoted), 2211.06264 (single L), 2311.10285 (Dousselin).
+   'The proportion of zeros on the critical line of a linear combination of N Dirichlet L-functions ... is at least an explicit positive constant': 15 / 0 / 304;
+     supports from 2610.26841, 2311.10285 (Dousselin, the N log N bound), 2010.10490, 1206.1679, 2401.02813, 1802.09704 - nothing beyond Dousselin for N >= 3.
+6. Our files: DISCOVERIES.md l.29 (N = 2 side result, 34.49%); TREE.md N8 line and R401 ("N >= 3 only Selberg's non-explicit proportion (candidate)" - to be corrected);
+   no NOVELTY file mentions linear combinations.
+Verdict: no earlier explicit proportion above Dousselin's 4.91e-9 for N = 3; no earlier statement of the N-function Bombieri-Hejhal/Lamzouri count with isolated-zero inputs;
+no earlier unconditional N = 2 bound above 0.3449825 (ours) / 31% (Lamzouri); Bombieri-Hejhal's 34.5% needs GRH.
+Risk: Selberg's method with the 2609.15329 optimisation has not been carried out for linear combinations; it might give much more than Dousselin's 4.91e-9 for N = 3 (unknown).
+7. Kaczorowski-Kulas (Monatsh. Math. 2007, extended Selberg class: zeros OFF the critical line of linear combinations) and Hejhal (IMRN 2000, on Selberg's result): not on arXiv
+   (axq 'au:Kaczorowski AND abs:"critical line"': no hits; 'au:Hejhal': only 1311.4862); by their stated subjects (off-line zeros; Selberg's c/N^2-type bound) and Dousselin's survey
+   (2311.10285, Rem. after Thm 1.2: only c/N^2 by Selberg, c/(N log N) announced) neither gives an explicit on-line proportion for N = 3 above Dousselin's.

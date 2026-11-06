@@ -1,0 +1,20 @@
+phases e^{i theta_j}: ['0.832620-0.553844i', '0.832620+0.553844i', '1.000000+0.000000i']
+Dirichlet series check at 3+10i: |diff| = 2.07e-14
+
+== b = (1.0, 1.0, 1.0): |a_F(1)| = 2.6652, sigma1 = 3; bottom edge: darg -0.9145 (max step 0.006)
+T =  600.01: N_F(t0,T) = 525.0000  (top edge max step 0.016, min |F| 1.53e+00)
+T = 1200.01: N_F(t0,T) = 1183.0000  (top edge max step 0.006, min |F| 2.46e+00)
+T = 2400.01: N_F(t0,T) = 2631.0000  (top edge max step 0.021, min |F| 2.68e+00)
+on-line zeros (odd multiplicity) / all zeros: (5, 2400]: 2371/2631 = 0.9012; (1200, 2400]: 1302/1448 = 0.8992
+
+== b = (1.0, -2.0, 0.5): |a_F(1)| = 1.6945, sigma1 = 3; bottom edge: darg 0.3360 (max step 0.003)
+T =  600.01: N_F(t0,T) = 525.0000  (top edge max step 0.014, min |F| 7.14e-01)
+T = 1200.01: N_F(t0,T) = 1183.0000  (top edge max step 0.009, min |F| 1.97e+00)
+T = 2400.01: N_F(t0,T) = 2632.0000  (top edge max step 0.022, min |F| 1.78e+00)
+on-line zeros (odd multiplicity) / all zeros: (5, 2400]: 1852/2632 = 0.7036; (1200, 2400]: 1033/1449 = 0.7129
+
+== b = (3.0, 1.0, -1.0): |a_F(1)| = 2.5803, sigma1 = 3; bottom edge: darg -1.4197 (max step 0.013)
+T =  600.01: N_F(t0,T) = 525.0000  (top edge max step 0.010, min |F| 2.79e+00)
+T = 1200.01: N_F(t0,T) = 1183.0000  (top edge max step 0.089, min |F| 6.29e-01)
+T = 2400.01: N_F(t0,T) = 2631.0000  (top edge max step 0.019, min |F| 1.06e+00)
+on-line zeros (odd multiplicity) / all zeros: (5, 2400]: 1839/2631 = 0.6990; (1200, 2400]: 1010/1448 = 0.6975
