@@ -144,7 +144,7 @@ shrinks 30-fold, from 2.4·10¹⁵ to d < 7.98·10¹³ (still beyond the tables;
   (2310.06723, ζ only); the unconditional ones are of size 1/log q.
 - arXiv API full-archive searches (quasi-Riemann hypothesis; zero-free half-plane + class number; Littlewood + L(1;
   half-plane + log log q; quasi-GRH; 7/8 + class number): nothing relevant beyond the papers above.
-- Zenodo API (7 queries): nothing relevant. Our repo: only the e^{−101}/log q Lean bound (QRHCor) and the 1/log q
+- Zenodo API (7 queries): nothing relevant then; harvest2 (6 Nov 2026) later found B. W. Daugherty, Zenodo 23400116 (15 Oct) and 23459046 (18 Oct, Lean 4): L(1, χ) ≥ 0.0617 and 0.0621/log log q for real primitive χ with q ≥ 10^100, from Re s > 7/8 (weaker than ours: real χ only, q ≥ 10^100, smaller constant). Our repo: only the e^{−101}/log q Lean bound (QRHCor) and the 1/log q
   constants of R305/R320.
 - Verdict: new as far as we can see. The shape is the expected consequence of the half-plane; the new part is the
   explicit certified constants, the class-number thresholds and the side upper bound.
