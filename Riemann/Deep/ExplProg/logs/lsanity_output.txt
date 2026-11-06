@@ -1,0 +1,1 @@
+prime q in [3,200], 4135 nonprincipal chi: max |L'/L(1,chi)| = 2.1683 at (q, j) = (163, 81); max ratio to the bound = 0.0927 at (163, 81, 23.388) (146 s)

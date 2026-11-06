@@ -23,6 +23,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N9) Record: |ζ(1/2+it)| ≤ 54.6 t^{27/164} for all t ≥ 3 (was 66.7, Patel–Yang 2024, whose proof drops a factor ≈ 1.10 and gives 68.54 as computed). [details](discoveries/sub-weyl-constant.md)
 - (N6) Largest explicit hyperbolic region: Riemann's Jensen polynomials J^{d,n} are hyperbolic whenever n² log(n+2) ≥ 24 d³ (Savva's two-thirds wedge had no number); supersedes our n³ log²(n+2) ≥ 7000 d⁵. [details](discoveries/jensen-two-thirds-wedge.md)
 - (N8) At least 0.6724 of the zeta zeros are simple, on the line and isolated from both neighbours (every c ≤ 0.00476; was 0.6552, c unspecified). [details](discoveries/isolated-zeros.md)
+- (N10, N11) From the Lean-checked half-plane: the least prime ≡ a (mod q) is ≤ (q log q)^{7.90} for every q, with an explicit power-saving prime number theorem in progressions. [details](discoveries/linnik-numeric.md)
 
 ## Side results (off the RH tree)
 

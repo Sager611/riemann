@@ -1,0 +1,11 @@
+Linnik kernel, L=2.20            closed form      8.32562   Stieltjes      6.56704   (closed - sum)/sum = +0.26779  ok
+Linnik kernel, L=9.21            closed form     31.91241   Stieltjes     31.41385   (closed - sum)/sum = +0.01587  ok
+Linnik kernel, L=50.00           closed form    133.15811   Stieltjes    133.07593   (closed - sum)/sum = +0.00062  ok
+trapezoid delta=1/2, L=12        closed form     29.70363   Stieltjes     29.63867   (closed - sum)/sum = +0.00219  ok
+trapezoid delta=1/2, zeta        closed form      0.51940   Stieltjes      0.51867   (closed - sum)/sum = +0.00141  ok
+trapezoid delta=1/10, L=12       closed form     32.35154   Stieltjes     32.28851   (closed - sum)/sum = +0.00195  ok
+trapezoid delta=1/10, zeta       closed form      1.55932   Stieltjes      1.55806   (closed - sum)/sum = +0.00081  ok
+trapezoid delta=1/1000, L=12     closed form     58.30329   Stieltjes     58.24677   (closed - sum)/sum = +0.00097  ok
+trapezoid delta=1/1000, zeta     closed form      9.05521   Stieltjes      9.05161   (closed - sum)/sum = +0.00040  ok
+L'/L kernel h=0.7, L=100         closed form    506.60504   Stieltjes    506.51160   (closed - sum)/sum = +0.00018  ok
+ALL OK

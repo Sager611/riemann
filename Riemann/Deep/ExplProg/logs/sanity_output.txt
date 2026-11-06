@@ -1,0 +1,5 @@
+sieve: 5761455 primes <= 1e8 (1.7 s)
+least primes 2 <= q <= 1e4: max log P/log q = 1.8295 at (q, P) = (5, 19); max log P / log((q log q)^(1/(1-B))) = 0.4259 at (2, 3); failures 0 (124.0 s)
+  phi-version 3 <= q <= 1e4: max log P / log((phi(q) log q)^(1/(1-B))) = 0.3130 at (3, 7); failures 0
+psi(x;q,a), q <= 100, 597 points in [2,1e8]: max |E|/(x^B log^2 qx) = 1.4848 at (1, 0, 2.0) (bound 1.5); x >= 64: 0.0093 at (2, 1, 66.89404610876541) (bound 0.174); max |E|/(sqrt(x) log^2 qx), x >= 100: 0.0360 at (2, 1, 100.0) (298.0 s)
+non-residues 3 <= q <= 1e4: max_chi n_chi <= 43 (at q = 2706); (log q)^(1/(1-B)) >= (log 3)^7.898 = 2.10 for every q >= 3 (319.7 s)
