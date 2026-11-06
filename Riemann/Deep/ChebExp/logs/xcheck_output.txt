@@ -1,0 +1,6 @@
+CTu: max R interior grid = 4.10306; max on beta=1-delta: 4.25827; on beta=delta: 0.00215384  -> interior <= boundary: True
+   Phi(1): quadrature 6.97981705889 vs closed form 6.97981705889;  Phi(0): 64839.1944837 vs 64839.1944837
+   independent: A1=4.25829 kn=10188.3 P_k(x)=1.29623e+06 at log x=18.3281: LHS(x; Lb, 2)/Phi(1) = 0.00415 (cert: see logs/cert_output.txt)
+Lu: max R interior grid = 0.92309; max on beta=1-delta: 0.942117; on beta=delta: 0.00648698  -> interior <= boundary: True
+   Phi(1): quadrature 0.752887842136 vs closed form 0.752887842136;  Phi(0): 32.9047685188 vs 32.9047685188
+   independent: A1=0.942117 kn=6.71689 P_k(x)=587.058 at log x=11.1896: LHS(x; Lb, 2)/Phi(1) = 0.00438 (cert: see logs/cert_output.txt)

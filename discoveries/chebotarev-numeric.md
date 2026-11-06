@@ -1,0 +1,25 @@
+# Numeric polylogarithmic least prime in every Chebotarev class (node N11)
+
+**Claim.** For every Galois extension L/K of number fields with L ≠ ℚ and every conjugacy class C of Gal(L/K) there is a prime 𝔭 of K, unramified in L and of degree one, with Frob_𝔭 = C and
+- (A) N𝔭 ≤ (0.49·log 3Δ_L)^32, unconditionally, from Cureton–Thorner's Lean-checked half-plane ζ_L(s) ≠ 0 for Re s > 31/32 (constant 0.29 / 0.151 / 0.108 / 0.094 once log Δ_L ≥ 10 / 100 / 1000 / 10⁴);
+- (B) N𝔭 ≤ (0.73·log 3Δ_L)^{7.8978}, conditional on Liu's half-plane Re s > B_2 = (777 − √1081)/852 for Hecke L-functions (Hexagon 2611.00082, unrefereed; our audit: sound given 2610.26835v2) (0.595 / 0.426 / 0.366 / 0.344 on the same ranges).
+
+Δ_L = |disc L|. The constant 0.49 is within 1.3 % of the best possible for this shape: for ℚ(√−3)/ℚ and C = {1} the least split prime is 7, which forces c ≥ 7^{1/32}/log 9 = 0.48365.
+
+**Before.** Fully numeric unconditional bounds were powers of Δ_L: N𝔭 ≤ Δ_L^{310} (Kadiri–Wong, arXiv 2105.14181, Thm 1.1) and Δ_L^{12577} (Ahn–Kwon); with an explicit exponent only, ≪ Δ_L^{40} (Zaman, 1508.00287) and ≪ Δ_L^{16} (Kadiri–Ng–Wong, 1902.08640). After the 2026 half-planes the polylogarithmic shape was known without constants: Frei–Sofos–Widmer (arXiv 2610.18491, Cor. 1.2: c(δ)(log Δ_L)^{1/δ}(log log Δ_L)^{2/δ}, c(δ) effectively computable, never computed), Hu (Hexagon 2610.00216, (9.10): ≪ (log eΔ_L + n_L)^8), our ArtinHalfPlane NOTE §3.3. Under GRH: Bach–Sorenson, (4 log Δ_L + 2.5 n_L + 5)².
+
+**Method.** Deuring reduction to H = ⟨g⟩ and E = L^H with the weight θ = |H|^{−1}Σ_χ χ̄(g)χ ∈ [0, 1]; ζ_L is the product of the Hecke L(s, χ) of E, so only the half-plane for ζ_L is used. Kernel k(t) = t^{−s*}B_3(log 1/t) (quadratic B-spline). Explicit formula with the contour moved to −∞ (trivial zeros summed). The zero sum needs no zero counting: the Hadamard identity at one real point σ_0 > 1 and a maximum principle for the subharmonic ratio |x^{s−1+δ}Φ(s)|/Re(1/(σ_0 − s)), whose sup lies on the boundary lines (branch and bound). Ramified primes via v_𝔭(d_{L/K}) ≥ |G|/2; prime powers and higher-degree primes by exact sums up to 2·10¹² and θ(y) < 1.01624y beyond; n_L ≤ log Δ_L/log(π/2) (Minkowski), the inequality being affine in n_L. Ten chains of intervals of log Δ_L (405 kernels) plus monotone tails; small fields directly (A: Δ_L ≤ 12, 8 quadratic fields; B: Δ_L ≤ 257, PARI nflist, 563 cases).
+
+**Certificate.** `cd Riemann/Deep/ChebExp && uv run --no-project --with python-flint python3 cert.py chains.json`: ALL CERTIFIED (104 s, one core, 38 MB); smallest margin LHS/Φ(1) ≥ 0.0030; every constant an Arb enclosure used in the safe direction (B_2, log(π/2) and 1/32 exact in Arb). The orchestrator reran it and `gp -q direct.gp` on a copy in /tmp (6 Nov 2026): outputs identical (109 s).
+
+**Checks.** Least primes for every class of ℚ(ζ_q)/ℚ, 3 ≤ q ≤ 2000 (1,013,926 classes; largest empirical constant 0.4837, at ℚ(√−3)), and for the S_3 closures of all 508 cubic fields with |d| ≤ 3000 (1524 classes; 0.108): all below both bounds. Normalisation and Hadamard-identity checks; xcheck.py reproduces the first-interval margins in mpmath.
+
+**Review.** Two quick passes by the agent's reviewer found presentation gaps only (fixed). The orchestrator's reviewer (verdict only, on DERIVATION.md): CORRECT analytically (no gap in the Deuring weights, the Hadamard and maximum-principle argument, the arithmetic error terms, Minkowski's bound or the interval and tail logic); SIGNIFICANT if first. It asked for the certificate and novelty evidence: supplied by the rerun above and by R399.
+
+**Novelty.** The agent: arXiv listings math.NT Oct–Nov 2026, the arXiv API, all 716 Hexagon works, Zenodo ("Chebotarev": 145 records), HAL, our files. The orchestrator: lst.py 'Chebotarev|prime ideal|least prime|Frobenius|Linnik' (on Chebotarev only 2610.36464 and 2610.42022, both conditional). R399 checked in the sources that Kadiri–Wong's Δ_L^{310} is their statement and nothing better is fully numeric, that Frei–Sofos–Widmer give no numeric c(δ), and that Cureton–Thorner's Lean theorem covers every number field and every s ≠ 1 with Re s > 31/32 (no sorry). New as far as we can see.
+
+**Caveat.** A rests on Cureton–Thorner's 31/32 (Lean-checked, paper unrefereed); B on Liu's unrefereed B_2. Classical facts are cited, not re-proved (qualitative contour estimates, the Hadamard identity, Artin reciprocity, Minkowski, Rosser–Schoenfeld). B's direct range trusts PARI nflist (degree ≤ 4, |disc| ≤ 257). Exponent 32 makes A huge (Δ_L = 10⁶: about 10^{27.5}); B gives about 10^{7.6} there.
+
+**RH relevance:** N11 (GRH families: the Chebotarev form of Linnik's problem; a Lean-checked zero-free half-plane for Dedekind zeta functions turned into numbers, the number-field counterpart of [linnik-numeric](linnik-numeric.md)).
+
+**Files.** [Riemann/Deep/ChebExp/](../Riemann/Deep/ChebExp/) (REPORT.md, DERIVATION.md, cert.py, chains.json, direct.gp, design.py, sanity.py, xcheck.py, s3_least.gp, logs/).

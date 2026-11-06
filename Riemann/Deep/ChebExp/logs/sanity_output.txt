@@ -1,0 +1,17 @@
+1. Q(zeta_q)/Q, 3 <= q <= 2000, every class a mod q
+   1013926 classes; all least primes below both bounds.
+   max p^(1/32)/log(3 Delta) = 0.4837 at (q, p) = (3, 7)  (theorem: 0.484)
+   max p^(1-B2)/log(3 Delta) = 0.5823 at (q, p) = (3, 7)  (theorem: 0.62)
+
+2. S_3 closures of cubic fields, |d| <= 3000 (PARI nflist; classes id, transposition, 3-cycle)
+   508 fields, 1524 classes; all least primes below both bounds.
+   max p^(1/32)/log(3 Delta_L) = 0.1081 at (d, p) = (-23, 59);  max p^(1-B2)/log(3 Delta_L) = 0.1595 at (-23, 59)
+
+3. explicit formula normalisation, L = Q(zeta_q), K = Q, C = {g}, g a generator, E = Q, |H| = q-1
+   q= 5 g=2: |H|S(x)/(x Phi(1)) = 1.000010;  |error| = 62.81  <= bound(1/32) = 5.956e+06: True;  <= GRH-shape bound(1/2) = 1.041e+04: True;  |H| Good/(x Phi(1)) = 0.999967
+   q= 7 g=3: |H|S(x)/(x Phi(1)) = 1.000017;  |error| = 111.5  <= bound(1/32) = 1.165e+07: True;  <= GRH-shape bound(1/2) = 2.035e+04: True;  |H| Good/(x Phi(1)) = 1.000012
+   q=11 g=2: |H|S(x)/(x Phi(1)) = 0.999042;  |error| = 6192  <= bound(1/32) = 2.866e+07: True;  <= GRH-shape bound(1/2) = 5.006e+04: True;  |H| Good/(x Phi(1)) = 0.999014
+   q=13 g=2: |H|S(x)/(x Phi(1)) = 1.001343;  |error| = 8685  <= bound(1/32) = 3.91e+07: True;  <= GRH-shape bound(1/2) = 6.83e+04: True;  |H| Good/(x Phi(1)) = 1.001337
+
+4. Hadamard identity for zeta at sigma = 2: sum_rho Re 1/(2-rho) = 1/2 + 1 + (psi(1) - log pi)/2 + zeta'/zeta(2)
+   RHS = 0.06906623153;  sum over first 2000 zeros = 0.06773921734;  + tail estimate 0.00133 = 0.069066526
