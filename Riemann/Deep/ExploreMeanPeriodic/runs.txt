@@ -1,0 +1,67 @@
+# explore14 run logs (verbatim stdout; one process at a time, single-threaded)
+# command pattern: OMP_NUM_THREADS=1 perl -e 'alarm N; exec @ARGV' uv run --no-project --with mpmath python3 <script>
+# machine: Apple Silicon laptop, mpmath 1.4.1; times as printed
+
+## frs_zeta.py  (FRS Z(s) = Λ(2s)Λ(2s-1)/Λ(s), K = Q; 259 s)
+Lambda(1/2) = -3.97696622550651
+a_{-2} contour = (0.0628619872093984 - 1.06653386113007e-33j)  formula -1/(4Λ(1/2)) = 0.0628619872093984
+a_{-1} contour = (5.6494e-33 + 1.6788e-32j)
+n= 1 gamma=14.13472514 c_rho=(-2.36724e-44 + 2.8498e-14j)  (Re/|c|=-8.31e-31)
+n= 2 gamma=21.02203964 c_rho=(5.27876e-52 - 3.57759e-22j)  (Re/|c|=1.48e-30)
+n= 3 gamma=25.01085758 c_rho=(-2.99218e-56 + 1.06029e-26j)  (Re/|c|=-2.82e-30)
+n= 4 gamma=30.42487613 c_rho=(1.03254e-61 - 3.13681e-32j)  (Re/|c|=3.29e-30)
+n= 5 gamma=32.93506159 c_rho=(-7.86035e-64 + 2.03288e-34j)  (Re/|c|=-3.87e-30)
+n= 6 gamma=37.58617816 c_rho=(5.76217e-69 - 3.47618e-39j)  (Re/|c|=1.66e-30)
+n= 7 gamma=40.91871901 c_rho=(-3.18407e-71 + 7.5284e-42j)  (Re/|c|=-4.23e-30)
+n= 8 gamma=43.32707328 c_rho=(3.43237e-74 - 5.51476e-45j)  (Re/|c|=6.22e-30)
+n= 9 gamma=48.00515088 c_rho=(-2.01848e-79 + 3.3272e-50j)  (Re/|c|=-6.07e-30)
+n=10 gamma=49.77383248 c_rho=(2.29116e-80 - 3.98195e-51j)  (Re/|c|=5.75e-30)
+sum|b|*gamma (10 zeros) = 4.02812e-13  sum|b| = 2.8498e-14  ratio 2*sum|b|gamma/a_{-2} = 1.28157e-11
+x= 0.02 h_def=1.73889960238744494  main=1.73889960238706206  def-main=3.8288e-13  def-(main+10 zeros)=(-3.9443e-31 - 8.9204e-32j)
+x= 0.05 h_def=0.842182284965921453  main=0.842182284965667142  def-main=2.5431e-13  def-(main+10 zeros)=(-1.9722e-31 - 6.0788e-32j)
+x=  0.1 h_def=0.457724116030293579  main=0.457724116030456625  def-main=-1.6305e-13  def-(main+10 zeros)=(-1.4791e-31 - 4.5321e-32j)
+x=  0.3 h_def=0.138179671421222728  main=0.138179671421122191  def-main=1.0054e-13  def-(main+10 zeros)=(-4.9304e-32 - 2.8306e-32j)
+x=  0.6 h_def=0.0414557860916309584  main=0.0414557860916902578  def-main=-5.9299e-14  def-(main+10 zeros)=(-1.8489e-32 - 2.0969e-32j)
+x=  0.9 h_def=0.00698143563949244889  main=0.00698143563955232829  def-main=-5.9879e-14  def-(main+10 zeros)=(-6.9333e-33 - 1.7577e-32j)
+x=  1.5 h_def=-0.020811144455597609  main=-0.0208111444555732035  def-main=-2.4406e-14  def-(main+10 zeros)=(-9.2445e-33 - 1.406e-32j)
+x=  4.0 h_def=-0.0435726091985705444  main=-0.0435726091985898723  def-main=1.9328e-14  def-(main+10 zeros)=(1.2326e-32 - 9.1331e-33j)
+time 259.2 s
+
+## dh.py  (Davenport-Heilbronn, template Z_f = s(1-s)Λ(2s)Λ(2s-1)/Λ_f(s); 166 s)
+kappa = 0.284079043840412  FE check Lf(s)/Lf(1-s) = (1.0 - 2.63567096616e-41j)
+Lf on (0,1): min 1.1360419 max 1.1614078  nonpositive samples: 0
+Lf(1/2) = 1.13604192904   a_{-2}^DH = -1/(16 Lf(1/2)) = -0.0550155750436
+off-line zero rho* = (0.808517182456637 + 85.6993484853776j)  |f(rho*)| = 5.18e-41
+residue c* = (1.967203e-84 + 4.4207755e-85j)  |c*| = 2.0162639e-84  log10|c*| = -83.695453
+t_flip = 633.9178038   x_flip = e^{-t} = 10^ -275.307
+zeta-type zero beta=0.6 T=100: log10|c|=-101.0228  t_flip=2369.2395  (x=10^-1028.9476)
+zeta-type zero beta=0.6 T=1000: log10|c|=-1023.1788  t_flip=23625.665  (x=10^-10260.496)
+zeta-type zero beta=0.87 T=3000000000000.0: log10|c|=-3.0698468e+12  t_flip=1.910428e+13  (x=10^-8.2968832e+12)
+zeta-type zero beta=0.51 T=3000000000000.0: log10|c|=-3.0698468e+12  t_flip=7.0685835e+14  (x=10^-3.0698468e+14)
+time 165.7 s
+(note: the zeta-type rows put |zeta'(rho)| = 1; they size a hypothetical off-line zeta zero, not a real one)
+
+## dh2.py  (DH on-line zeros < 86, residues, definition vs expansion; 384 s)
+on-line DH zeros found in (0,86): 43  first: ['5.0941598', '8.9399144', '12.133545', '14.404003', '17.130239', '19.3088']  last: ['80.327947', '81.925402', '83.108841']
+max |Im Lf| on the line (should be 0): 2.17e-32
+residues (first 6): [('5.09416', '(1.548e-35 - 0.0001332j)'), ('8.939914', '(4.779e-39 + 4.581e-8j)'), ('12.13355', '(4.548e-42 - 7.32e-12j)'), ('14.404', '(-1.183e-43 + 1.938e-13j)'), ('17.13024', '(-2.924e-46 - 2.99e-16j)'), ('19.3088', '(-4.899e-49 + 1.168e-18j)')]
+max Re(c)/|c| = 2.34e-8
+sign pattern of b_gamma = Im c along the zeros: -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+a_{-2}^DH = -0.05501557504  2*sum|b|gamma/|a| (all on-line zeros < 86) = 0.0246869
+x=0.1 h_def=-0.4012169663033215 main=-0.4005911453427695 def-main=-0.0006258 def-expansion=(1.479e-31 + 0.0j)
+x=0.5 h_def=-0.05407251092957012 main=-0.05392946545408614 def-main=-0.000143 def-expansion=(1.233e-32 + 0.0j)
+x=3.0 h_def=0.03499301176002697 main=0.03489550453538261 def-main=9.751e-5 def-expansion=(-6.163e-33 + 0.0j)
+time 384.1 s
+
+## fq.py  (F_q sanity test, q = 5, signs of [u^n] for n = 40..90; < 2 s)
+fake2 coeffs ['1.0', '-5.04282', '17.6163', '-25.2141', '25.0']
+good2 coeffs ['1.0', '-0.55524', '5.5031', '-2.7762', '25.0']
+honest G, E/F_5 (RH true)                    n=40..90: ---------------------------------------------------
+honest G, genus-2 on-circle (RH true)        n=40..90: ---------------------------------------------------
+honest G, fake1 real off-circle (RH false)   n=40..90: +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+honest G, fake2 complex off-circle (RH false) n=40..90: +---+++---+++---+++----+++---+++---+++---++++---+++
+literal FRS, E/F_5 (RH true)                 n=40..90: +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+literal FRS, genus-2 on-circle (RH true)     n=40..90: +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+Fesenko analog, split surface rho=10, m=0    n=40..90: +++++++++++++++++++++++++++++++++++++++++++++++++++
+Fesenko analog, twisted surface rho=2, m=8   n=40..90: +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+Fesenko analog, rho=5, m=5                   n=40..90: +++++++++++++++++++++++++++++++++++++++++++++++++++
