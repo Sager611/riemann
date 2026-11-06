@@ -1,0 +1,2 @@
+# python3 hk_compare.py final_perh.txt class_group_orders.txt 4999   (class_group_orders.txt sha256 8b9551b8a344c56d9dced5d79013265044c6210798dff49cb09005e6d198ecb3, downloaded 2026-11-06)
+odd h <= 4999 compared: 2500, differences: 0, total fields ours 9681947, HK 9681947

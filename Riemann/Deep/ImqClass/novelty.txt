@@ -1,0 +1,66 @@
+# Novelty pass outputs, 2026-11-06 (see REPORT.md)
+## python3 .scratch/lst.py 'class number|imaginary quadratic' math.NT --zenodo '"class number" "imaginary quadratic"'
+2611.06002  [math.NT 2026-11]  The enhanced polylogarithm conjecture in weight two for imaginary quadratic fields
+2610.03976  [math.NT 2026-10]  Nonvanishing of special $L$-values of cusp forms on $\mathrm{GL}(2)$ with totally split prime power twists: without the class number hypothesis
+2610.07180  [math.NT 2026-10]  On the class number of real multiquadratic fields
+2610.10452  [math.NT 2026-10]  $p$-class groups in the cyclotomic $\mathbb{Z}_p$-extension of imaginary quadratic fields
+2610.11210  [math.NT 2026-10]  Automorphic symbols and automorphic \emph{L}-values of GL(2) over imaginary quadratic fields
+2610.16953  [math.NT 2026-10]  CM fibers of Shimura parametrizations and thirteen proofs of the class number one theorem
+2610.21511  [math.NT 2026-10]  Imaginary quadratic fields of class number at most 2000
+2610.23690  [math.NT 2026-10]  Cuspidal Class Number Formulae for Intermediate Modular Curves of Prime Level
+2610.24900  [math.NT 2026-10]  All totally real abelian number fields of class number one are Euclidean
+2610.28001  [math.NT 2026-10]  On the average of class numbers of indefinite binary quadratic forms
+2610.34556  [math.NT 2026-10]  Admissible sets of integers in imaginary quadratic fields of class number 1
+2610.37377  [math.NT 2026-10]  Class numbers and finiteness of norm Euclidean quadratic lattices over algebraic number fields
+2610.37490  [math.NT 2026-10]  Rank functions, $\mathbb{Z}_p$-extensions and class numbers
+-- 13 title hits in 1 cats x (2026-11, 2026-10)
+zenodo 23965800  2026-11-05  Topological and Arithmetic Rigidity of the 861-Node Vorton Lattice on the Two-Torus
+zenodo 23957926  2026-11-04  Accelerated Nonlinear Root-Finding via Arithmetic Modular Rigidities and Ramanujan Spectral Preconditioning
+zenodo 23932486  2026-11-03  The Heegner Spectral Compactification of Spacetime Dimensions
+zenodo 23839754  2026-10-31  Bianchi Orbifolds, Toroidal Cusp Surgery, Enstrophy Duality, and the Unconditional Resolution of the Generalized Riemann
+zenodo 23718320  2026-10-28  From Primordial Turbulence to the Structured Vacuum
+zenodo 23671946  2026-10-26  Heegner Points, Fricke Involution Crossing Duality, and O(1) Topological Relaxation in Solenoidal Vorton Manifolds
+zenodo 23668319  2026-10-26  Higher-Categorical Lattice Gauge Theory
+zenodo 23654508  2026-10-26  Discrete Geometric Architecture on the Heegner Substrate
+zenodo 23646708  2026-10-25  Non-Hermitian Cusp Dissipation, Automorphic Scattering, and an Unconditional Geometric Proof of the Riemann Hypothesis o
+zenodo 23555717  2026-07-05  PARAMETRLI ALGEBRAGA ASOSLANGAN EKSPONENSIAL  EL-GAMAL SHIFRLASH ALGORITMI
+zenodo 23540694  2026-10-21  THE HODGE HYPOTHESIS IN SOLENOIDAL HYDRODYNAMICS: ALGEBRAIC CYCLES, HEEGNER VORTON LATTICES, AND PHYSICAL REALIZATION
+zenodo 23537419  2026-10-21  First-Principles Derivation of the Electron Rest Mass, Spin-1/2, and Lepton-Hadron Mass Hierarchy from Discrete Heegner 
+zenodo 23523797  2026-10-21  Arithmetic Poisson summation formulas: three statements and some consequences
+zenodo 23460369  2026-10-19  Topological Metric Phase Slip and Cosmological Tensions from the Spectral Geometry of the Heegner–Johnson Manifold J(42,
+zenodo 23456877  2026-10-18  The Bianchi–Heegner Dissipative Cusp Operators and Native Three-Dimensional Vorton Dynamics
+-- zenodo total 341
+
+## HAL, GitHub (novelty_web.py)
+HAL (20 newest for "class number" imaginary quadratic):
+  2026-06-13 hal-05654643 Ideal class groups of some quadratic number fields and factorization of values of some quadratic polynomials
+  2026-05-31 hal-05414852 Imaginary biquadratic number fields with small even class numbers and some unit index
+  2024-07-31 hal-04665517 Kalani Thalagoda - Bianchi modular forms
+  2024-02-28 hal-04292835 CLASS NUMBER FORMULAS FOR CERTAIN BIQUADRATIC FIELDS
+  2023-09-15 hal-02938467 The number of imaginary quadratic fields with prime discriminant and class number up to H
+  2023-09-15 hal-02938468 On the average of the number of imaginary quadratic fields with a given class number
+  2023-09-15 hal-02938461 Zeros of the Epstein zeta function to the right of the critical Line
+  2021-10-05 hal-02938224 The distribution of class numbers in a special family of real quadratic fields
+  2021-10-05 hal-02938465 Large moments and extreme values of class numbers of indefinite binary quadratic forms
+  2020-05-14 tel-02573006 Cohomology of PGL_2 over imaginary quadratic integers
+  2019-11-28 hal-02384974 Successive maxima of the non-genus part of class numbers
+  2017-03-27 tel-01383309 The CM class number one problem for curves
+  2016-09-23 tel-01359692 Universal Adelic Groups for Imaginary Quadratic Number Fields and Elliptic Curves
+  2016-05-02 tel-01310561 Le théorème de Gauss sur les sommes de 3 carrés, de faisceaux, et composition de Gauss
+  2016-03-10 hal-01286320 Some quartic number fields containing an imaginary quadratic subfield
+  2015-02-02 hal-01112054 The number of imaginary quadratic fields with a given class number
+  2014-04-27 hal-00984171 Perfect Lattices over Imaginary Quadratic Number Fields
+  2014-04-14 hal-00978908 On the weights of binary irreducible cyclic codes
+  2011-03-22 hal-00578750 An algorithm to compute relative cubic fields
+  2010-10-11 tel-00525320 Comptage asymptotique et algorithmique d'extensions cubiques relatives
+GitHub tags: ['v1.4', 'v1.3', 'v1.2', 'v1.1', 'v1']
+  commit 2026-10-23T06:55:46Z ebe69535 comparator: landrun was commit 811cfff (v0.1.17 + 4), not a tag v0.1.18, which does not exist upstream
+  commit 2026-10-22T07:08:49Z e66ab86f computations: compare_gglm2000 (the published Garcia-Grenie-Lee-Molteni list for h <= 2000 equals ours); PAPER
+  commit 2026-10-20T06:53:21Z 1ebe61a8 computations: qrh_cert (Proposition 9 under a zero-free half-plane Re s > 31/32), cited in the Remark after Th
+  commit 2026-10-16T08:01:20Z 7133a32c README: cite arXiv:2610.21511
+  commit 2026-10-15T02:48:56Z e451afc7 TESTING.md: the range bound comes from the Lean theorem; the D(N), D_A(N) sections are historical. compare_cs1
+  commit 2026-10-15T02:23:53Z 107f4e4d computations: check (b) of Section 4 for 1000 < h <= 2000 (random_check_h2000*); README: Remark after Proposit
+  commit 2026-10-13T14:00:36Z ec0a5c03 Code, formal proofs and data for "Imaginary quadratic fields of class number at most 2000"
+GGLM FAIL HTTP Error 403: Forbidden
+
+## arXiv 2610.14257 (Garcia-Grenie-Lee-Molteni): Bounds for the residue of Dedekind zeta functions under GRH and applications; abstract: the lower bound enables all imaginary quadratic fields with class number <= 2000 to be detected (assuming GRH).

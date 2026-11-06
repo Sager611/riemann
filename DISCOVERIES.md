@@ -19,6 +19,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N13, N1) The Weil form of Connes–Consani–Moscovici has a simple even ground state for every λ ∈ [√2, √20] (was one window); eight new certified terms of OEIS A401172. [details](discoveries/weil-simple-ground-state.md)
 - (N10) Conditional record: lim sup M(x)/√x > 2.07390 and lim inf < −2.07641, given Weisz's published zero data, as his 2.06175 / −2.06471 is. [details](discoveries/mertens-limsup.md)
 - (N11) First explicit Littlewood bound without GRH: |L(1, χ)| ≥ 0.11/max(3, log log q) for every primitive χ; h(−d) ≥ 0.035√d/max(3, log log d) (was 1/log q). [details](discoveries/littlewood-half-plane.md)
+- (N11) Record: all imaginary quadratic fields with class number h ≤ 5000 determined without RH or GRH: 102,746,940 fields, largest |d| 6,912,348,787 (was h ≤ 2000, Oct 2026). [details](discoveries/class-number-5000.md)
 
 ## Side results (off the RH tree)
 

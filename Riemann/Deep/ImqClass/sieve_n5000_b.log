@@ -1,0 +1,6 @@
+isieve N=5000 LO=50000000000 HI=99999999999 medium primes 14523 (<= 158113), T tables 136.7 MB, setup 19.7 s (tables 19.6, patterns 19.6)
+seg 8 [63776322560,65744368639] X=126269 lanes 5904138240 certF 332857344 cert1 5571280896 t3 0 t3pass 0 nonfund 0 t4 0 primework/lane 437.3 elapsed 395.4 s (sieve 375.7 s)
+seg 16 [79520691200,81488737279] X=140997 lanes 11808276480 certF 667877376 cert1 11140399104 t3 0 t3pass 0 nonfund 0 t4 0 primework/lane 426.7 elapsed 749.8 s (sieve 730.1 s)
+seg 24 [95265059840,97233105919] X=154325 lanes 17712414720 certF 1007321088 cert1 16705093632 t3 0 t3pass 0 nonfund 0 t4 0 primework/lane 419.5 elapsed 1071.5 s (sieve 1051.8 s)
+seg 26 [99201152000,99999999999] X=157481 lanes 18750000000 certF 1068270171 cert1 17681729829 t3 0 t3pass 0 nonfund 0 t4 0 primework/lane 418.4 elapsed 1126.7 s (sieve 1107.0 s)
+DONE N=5000 [50000000000,99999999999]: lanes 18750000000 = certF 1068270171 + cert1 17681729829 + t3 0 (t3pass 0, nonfund 0, t4 0); tested 0 bad 0; 1126.7 s

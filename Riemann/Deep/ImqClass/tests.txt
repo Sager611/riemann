@@ -1,0 +1,38 @@
+# Sieve tests (isieve.c), 2026-11-06. Commands as run from .scratch/imqclass.
+
+## (a) positive cases, N = 2000 on [2^28, 2^28 + 2^24): ./isieve 2000 268435456 285212671 runs/reg2000
+DONE N=2000 [268435456,285212671]: lanes 6291456 = certF 271095 + cert1 5115203 + t3 905158 (t3pass 765051, nonfund 14037, t4 126070); tested 0 bad 0; 136.9 s
+their list in the range: xz -dc lists/imq_h2000.txt.xz | awk range > runs/reg2000.list; python3 regcheck.py; gp regx.gp (qfbclassno of the extra t4 entries)
+list fields 95845 in t4 95845 MISSING 0 []
+M>h violations 0 []
+t4 not in list (need h>2000): 30225
+extra entries 30225, with h<=2000: 0
+
+## (b) positive cases at production size, N = 10000 on [15300820992, 15302820991] (all table entries of the window dumped by mjx, dump.cfg)
+DONE N=10000 [15300820992,15302820991]: lanes 750000 = certF 5094 + cert1 692321 + t3 52585 (t3pass 52209, nonfund 9, t4 367); tested 0 bad 0; 75.7 s
+window fields 607950 (range 15300820995..15302820991), with h <= 10000: 169; t4 entries 367
+fields with h <= N certified by the sieve (must be 0): 0 []
+M(d) > h (must be 0): 0
+t4 entries absent from the table (must be 0): 0 []
+t4 entries with h > N (correctly kept for exact check): 198
+PASS
+
+## (c) soundness, -T: certified lanes re-checked by tier 3 (exact M(d), Jacobi symbols)
+./isieve 20000 20000000000 20001000000 runs/sound20k -T 20
+DONE N=20000 [20000000000,20001000000]: lanes 375000 = certF 0 + cert1 241445 + t3 133555 (t3pass 113995, nonfund 2623, t4 16937); tested 11500 bad 0; 197.8 s
+./isieve 5000 5000000000 5002000000 runs/sound5k -T 5
+DONE N=5000 [5000000000,5002000000]: lanes 750000 = certF 19300 + cert1 713526 + t3 17174 (t3pass 17147, nonfund 1, t4 26); tested 145946 bad 0; 97.0 s
+
+## (d) performance probes (full segments, before the production run)
+DONE N=4000 [20000000000,21967800000]: lanes 737925000 = certF 41872269 + cert1 696052731 + t3 0 (t3pass 0, nonfund 0, t4 0); tested 0 bad 0; 42.1 s
+DONE N=5000 [25000000000,26967800000]: lanes 737925000 = certF 32387117 + cert1 705537883 + t3 0 (t3pass 0, nonfund 0, t4 0); tested 0 bad 0; 61.0 s
+DONE N=6000 [30000000000,31967800000]: lanes 737925000 = certF 24785895 + cert1 713139105 + t3 0 (t3pass 0, nonfund 0, t4 0); tested 0 bad 0; 126.1 s
+
+## (e) tier-4 tool (t4.gp = classno_upto of 2610.21511, unconditional) on the 26 tier-4 d of (c), N = 5000
+FOUND 5000479243 4992
+FOUND 5000250907 4552
+FOUND 5001216907 4909
+FOUND 5001475627 4791
+FOUND 5000053963 4928
+T4 DONE runs/sound5k.t4d: entries 26, fields with h <= 5000: 5
+tier-4 tool check: 26 entries, classno_upto = min(qfbclassno, N+1) for all but 0
