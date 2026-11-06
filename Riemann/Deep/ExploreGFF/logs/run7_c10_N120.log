@@ -1,0 +1,5 @@
+derivs done 216.8
+c=10 N=120 even: lambda_min on complement of V_K: 0:-3.25e-15 2:-2.81e-15 4:-3.88e-16 6:4.04e-10 8:2.60e-03 10:4.02e-01 12:5.99e-01
+  time 236.0
+c=10 N=120 odd: lambda_min on complement of V_K: 0:-1.70e-15 2:-1.07e-15 4:-7.51e-16 6:3.70e-08 8:5.64e-02 10:5.66e-01 12:6.17e-01
+  time 254.0
