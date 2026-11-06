@@ -1,5 +1,7 @@
 # Explicit constant in Holland's Jensen hyperbolicity wedge (node N6)
 
+**Superseded** (6 Nov 2026) by the explicit two-thirds wedge n² log(n+2) ≥ 24 d³ ([page](jensen-two-thirds-wedge.md)); the complex saddle bound below is an input there.
+
 **Claim.** Let J^{d,n} be the degree-d Jensen polynomial of Riemann's Xi shifted by n. J^{d,n} has d distinct real (negative) zeros whenever n^3 log^2(n+2) >= 7000 d^5, for every d >= 1 (degrees d <= D_all = 9.0·10^24 are covered by the known all-n range from Chasse's sector lemma and RH to height 3·10^12; our d0 = 1.6141·10^25 also works). Without that range, K = 2.43·10^114 works for every d >= 1 (self-contained form of Holland's Theorem 1.1). With the all-n range this is the first explicit hyperbolic region unbounded in d.
 
 **Before.** Holland (arXiv 2608.08682, 9 Aug 2026, TeX l. 81-89) proves the wedge n^3 log^2(n+2) >= K d^5 with an absolute K that is never computed (l. 1814-1823, 2042-2043); Griffin-Ono-Rolen-Zagier, Griffin-Ono-Rolen-Thorner-Tripp-Wagner (c e^{d/2}, compactness) and Kim-Lee are ineffective; the only explicit region was the all-n range, bounded in d. Savva (Zenodo 22293642, unrefereed) claims a two-thirds wedge with constants left symbolic; Planat (HAL hal-05675741) fits C0 ≈ 0.020 numerically.

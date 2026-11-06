@@ -1,0 +1,9 @@
+(a) model p_F: roots within Cloc sqrt(Bd) of B (certified Cloc <= 4.0006) and critical radius max_k |T_k|^(1/k) / sqrt(Bd) (certified <= 2.3)
+   n=1.0e+8 d=12 eps=0.0125: max|root-B|/sqrt(Bd) = 2.2298, max_k |T_k|^(1/k)/sqrt(Bd) = 0.8153, simple positive roots: True
+   n=1.0e+9 d=20 eps=0.0125: max|root-B|/sqrt(Bd) = 2.3919, max_k |T_k|^(1/k)/sqrt(Bd) = 0.8420, simple positive roots: True
+   n=1.0e+10 d=30 eps=0.005: max|root-B|/sqrt(Bd) = 2.4996, max_k |T_k|^(1/k)/sqrt(Bd) = 0.8524, simple positive roots: True
+(b) n = 1e40 (L = 87.183802), d = 7.26699e+26 on the wedge boundary n^2 log(n+2) = 24 d^3; branch (a,t,w,delta) = (0.32461215, 1.9598015, 5.1962473, 0.34106698)
+   node check E_F(0..5) = ['0.0', '0.0', '1.41e-378', '2.03e-377', '2.72e-377', '4.43e-377']
+   max |E_F| on the boundary of Omega (sampled) = 0.79978; |E_F(d + lambda r)| = 0.799776
+   certified bound Cfin d^3/(n^2 L) = 0.825422; requirement thetaE = 0.86329
+   n^5 L E_F(6) = n^5 L E_F^(6)(xi) = -1.9387754  (certified sup over the disk: <= 2.0504; leading value -2)
