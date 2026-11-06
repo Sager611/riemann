@@ -1,0 +1,9 @@
+l.997 log t in [60,65]: printed A 37.10 | ours, printed mu_2: 37.1004 | ours, corrected mu_2: 38.0033
+l.1093 log t in [300,305]: printed A 62.10 | ours, printed mu_2: 62.1230 | ours, corrected mu_2: 63.9140
+l.1189 log t in [540,545]: printed A 66.70 | ours, printed mu_2: 66.6989 | ours, corrected mu_2: 68.5411
+l.1197 log t in [560,565]: printed A 66.70 | ours, printed mu_2: 66.7069 | ours, corrected mu_2: 68.5192
+l.1321 log t in [870,875]: printed A 64.10 | ours, printed mu_2: 64.1139 | ours, corrected mu_2: 65.6364
+ours minus printed A over all 163 rows: min -0.0051 max +0.1146
+corrected mu_2: max 68.5414 on [530,535] (l.1185); rows above 66.7: 82, log t0 from 380 to 785
+tail t >= e^875 with the paper parameters (l. 950-953): 66.6299
+A_4(0.85, h) for h = 1.01, 1.04, 1.1: [2.259199, 2.247173, 2.22445]

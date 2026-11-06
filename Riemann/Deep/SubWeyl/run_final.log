@@ -1,0 +1,43 @@
+target A = 54.6
+part H: t in [3, e^75]: 0.618 e^{L/492} L <= 53.98252
+  intervals up to L=100 ok (1 evaluated), worst so far 35.57854 on (75.0, 100.0), 0 s
+  intervals up to L=200 ok (5 evaluated), worst so far 45.08360 on (175.0, 200.0), 1 s
+  intervals up to L=300 ok (9 evaluated), worst so far 50.42312 on (275.0, 300.0), 2 s
+  intervals up to L=404 ok (22 evaluated), worst so far 52.64001 on (396.0, 404.0), 7 s
+  intervals up to L=500 ok (34 evaluated), worst so far 54.15650 on (492.0, 500.0), 12 s
+  intervals up to L=600 ok (84 evaluated), worst so far 54.52064 on (598.0, 600.0), 39 s
+  intervals up to L=700 ok (142 evaluated), worst so far 54.59967 on (648.0, 650.0), 75 s
+  intervals up to L=800 ok (192 evaluated), worst so far 54.59967 on (648.0, 650.0), 111 s
+  intervals up to L=900 ok (242 evaluated), worst so far 54.59967 on (648.0, 650.0), 151 s
+  intervals up to L=1006 ok (274 evaluated), worst so far 54.59967 on (648.0, 650.0), 179 s
+  intervals up to L=1102 ok (286 evaluated), worst so far 54.59967 on (648.0, 650.0), 191 s
+  intervals up to L=1206 ok (299 evaluated), worst so far 54.59967 on (648.0, 650.0), 205 s
+  intervals up to L=1302 ok (311 evaluated), worst so far 54.59967 on (648.0, 650.0), 219 s
+  intervals up to L=1402 ok (313 evaluated), worst so far 54.59967 on (648.0, 650.0), 222 s
+  intervals up to L=1502 ok (315 evaluated), worst so far 54.59967 on (648.0, 650.0), 224 s
+  intervals up to L=1602 ok (317 evaluated), worst so far 54.59967 on (648.0, 650.0), 227 s
+  intervals up to L=1702 ok (319 evaluated), worst so far 54.59967 on (648.0, 650.0), 230 s
+  intervals up to L=1802 ok (321 evaluated), worst so far 54.59967 on (648.0, 650.0), 233 s
+  intervals up to L=1902 ok (323 evaluated), worst so far 54.59967 on (648.0, 650.0), 237 s
+part C: all intervals in [75, 2000] certified (325 evaluations); max bound 54.59967 on L in (648.0, 650.0)
+  tail t >= e^2000: {'S1': 0.0, 'S2a': 1.47968, 'S2b': 0.00021, 'C1': 44.7585, 'C2': 6.11987, 'E1': 0.0, 'E2': 0.0, 'E3': 0.0, 'E7a': 0.0, 'E7b': 0.0} -> 52.358268734350695
+part T: t >= e^2000: 52.35827
+ALL PARTS OK: |zeta(1/2+it)| <= 54.6 t^(27/164) for t >= 3   (240 s)
+      240.88 real       216.42 user         3.23 sys
+            60899328  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7934  page reclaims
+                 574  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 204  voluntary context switches
+              288111  involuntary context switches
+           421338472  instructions retired
+           175171521  cycles elapsed
+            23233016  peak memory footprint
