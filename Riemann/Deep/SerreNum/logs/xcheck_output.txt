@@ -1,0 +1,8 @@
+U36   first interval [0.6931, 0.8558]: LHS/P1 = 0.00318772;  tail from 8.521: LHS/P1 = 0.00410481
+U48   first interval [0.6931, 0.8646]: LHS/P1 = 0.00331081;  tail from 13.304: LHS/P1 = 0.00647323
+U128  first interval [0.6931, 1.0716]: LHS/P1 = 0.00362683;  tail from 13.561: LHS/P1 = 0.00512452
+U192  first interval [0.6931, 0.7742]: LHS/P1 = 0.00300953;  tail from 14.237: LHS/P1 = 0.00440325
+L48   first interval [0.6931, 0.8278]: LHS/P1 = 0.00312013;  tail from 37.187: LHS/P1 = 0.0523988
+L128  first interval [0.6931, 0.7871]: LHS/P1 = 0.0030695;  tail from 33.990: LHS/P1 = 0.0463581
+L192  first interval [0.6931, 0.8197]: LHS/P1 = 0.00308;  tail from 22.716: LHS/P1 = 0.0373522
+all positive: True  smallest: 0.00300953

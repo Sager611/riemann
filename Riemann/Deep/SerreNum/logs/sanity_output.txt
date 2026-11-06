@@ -1,0 +1,17 @@
+  ***   Warning: new stack size = 120000000 (114.441 Mbytes).
+1. curves with conductor <= 300 from small Weierstrass coefficients: 318
+   classes with distinct a_p (good p <= 281) among them: 262 (distinct a_p => not isogenous)
+   non-isogenous pairs: 34191; largest least separating good prime: 31 (conductors 130, 138)
+   max over pairs of log10(p / (17 log R + 100)^32) = -64.84911676433907387  (must be < 0)
+   pairs separated mod 2 below 10^5: 16916, largest least prime with a_p(E) != a_p(E') mod 2: 23
+2. twists E_D, D | 2N_E squarefree, D != 1: least p not dividing 2DN_E with chi_D(p) = -1 and a_p(E) != 0
+   11a1               N = 11     rad(2N) = 22    max over D of least p = 7     C_E bound 2(11.5 log rad(2N)+68)^16 = 10^32.54
+   37a1               N = 37     rad(2N) = 74    max over D of least p = 7     C_E bound 2(11.5 log rad(2N)+68)^16 = 10^33.42
+   j=-17*373^3/2^17   N = 14450  rad(2N) = 170   max over D of least p = 19    C_E bound 2(11.5 log rad(2N)+68)^16 = 10^33.97
+   j=-7*11^3          N = 1225   rad(2N) = 70    max over D of least p = 19    C_E bound 2(11.5 log rad(2N)+68)^16 = 10^33.38
+3. known non-surjective primes (rational isogenies, Zywina 1508.07660 examples) against the C_E bound
+   N = 11     isogeny degrees [1, 5, 25]; non-surjective at 5; bound 2(11.5 log 22 + 68)^16 = 10^32.54 > 5
+   N = 14450  isogeny degrees [1, 17]; non-surjective at 17; bound 2(11.5 log 170 + 68)^16 = 10^33.97 > 17
+   N = 1225   isogeny degrees [1, 37]; non-surjective at 37; bound 2(11.5 log 70 + 68)^16 = 10^33.38 > 37
+4. Hensel-Serre: log Delta_L <= (n-1) log rad(d_L) + n log n, rad(d_L) | 2N, for L = Q(E[2], E'[2])
+   fields checked: 765; all OK: 1; max log Delta / bound = 1.0000000000000000000
