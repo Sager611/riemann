@@ -32,3 +32,22 @@ Which inputs need RH or Montgomery's conjecture: none. The pair-correlation inpu
 ## Remarks on the paper's Remark 1.2 (l.222–227)
 
 Both suggested improvements exist, and the second is large. (a) Kernel: within cos(wx) kernels the gain is only +1e-4 at small c with the paper's inputs (DERIVATION §5). (b) Off-line term: the bottleneck is how Lem:Conrey is used, not the mollifier length. Littlewood's lemma at σ = ½ + 2πρ/log T (Conrey's published mean value moved there by the functional equation) bounds Σ_{β>1/2}((β − ½)log T/2π − ρ)^+ by B(ρ)N with B(1.2) ≤ 1.441e-5; since the deficiency 1 − 4K(iy)²/(1+K(2iy)) is negative for y < 1.22, the whole off-line term drops below 1e-5 and the proportion rises from 0.6552 to 0.672487 at c = 0.001, within 1.4e-5 of the method's simple-and-on-line constant 2 − C_MT (DERIVATION §3.7).
+
+## Pro:BombieriHejhal and Theorem 1.4 (follow-up audit, l.824–964 and l.966–1027)
+
+Verdict: correct as a reduction; it rests on Bombieri–Hejhal's Theorem B and Lemmas 7/9 (Duke 1995), cited, not re-derived; they need only Selberg's zero-density estimate N(σ,T,χ) ≪ T^{1−c(σ−½)} log T (l.878–880), classical for fixed χ.
+| step (lines) | check |
+|---|---|
+| F, θ_j, Λ_F(s) = conj Λ_F(1 − s̄) (l.840–855) | e^{iθ_j}Λ(s,χ_j) = e^{−iθ_j}Λ(1−s,χ̄_j) as |ε_χ| = 1; b_j real; so G(t) = e^{iϑ(t)}F(½+it) is real (l.940–945) ✓ |
+| H_j(T): gap ≤ 2π/((log T)(log log T)^{1/4}) (l.862–865) | o(average gap): for any fixed c, H_j ⊂ non-c-isolated zeros ∪ O(1) for large T ✓ |
+| Lem:SelbergCLT, Lem:Separation (l.873–896) | joint CLT, independent limits for χ_1 ≠ χ_2; exceptional set E of measure ≪ δT ✓ (CLT taken from BH Thm B) |
+| Lem:BHLem9 (l.898–910) | taken from BH Lemma 9 (via their Lemma 7) ✓ as cited |
+| good ℓ, count of bad ℓ (l.913–927) | meas((y_ℓ, y_ℓ+√δM/log T) ∩ A_ℓ) ≥ (√δ − δ)M/log T ≥ √δM/(2 log T) for δ ≤ 1/4; bad ℓ ≪ √δ T log T/M ✓ |
+| B_ℓ by Markov (l.929–935) | exceptional u-measure ≪ M√(log M)/(δ²(log log T)^{1/3}) ✓ |
+| dominance (l.937–949) | δ√(log log T) − 2·O((log log T)^{1/3}) ≥ (δ/2)√(log log T) ✓ |
+| zeros in I_ℓ, k_ℓ (l.950–953) | all zeros of L_1 (on and off the line, multiplicity) ✓ |
+| τ-isolated zeros, τ = (log log T)^{−1/4} (l.953–956) | interior zeros only; simple, on the line; each neighbouring gap has u-length > 2π(log log T)^{−1/4}, larger than the exceptional measure, so it contains a point of B_ℓ ✓ (one point per gap keeps the intervals disjoint) |
+| sign change (l.957–961) | G ≈ b_1 e^{i(ϑ+θ_1)}L_1 on B_ℓ; the Hardy-type function of L_1 changes sign at a simple on-line zero and is of constant sign between consecutive ordinates ✓ |
+| count (l.961–964) | ≥ k_ℓ − 2 − #(H_{j_ℓ} ∩ I_ℓ); summing, δ = M^{−1/3}, M large ✓ |
+| Thm 1.4 (l.1018–1027) | dyadic summation; |H_j| ≤ (1 − δ_j + o(1))(T/2π) log T; result δ_1 + δ_2 − 1 ✓ |
+Inputs for δ_j: Lem:GaPa (Glasnik Mat., refereed), Lem:ConstructionKernelDirichlet (from La's preprint), and for the off-line term our hinge lemma for L(s,χ) from Wu's Proposition 3.1 (DERIVATION §8.2) instead of Lem:AnalogueConreyL.

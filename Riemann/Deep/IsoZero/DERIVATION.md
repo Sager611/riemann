@@ -165,15 +165,37 @@ Since B_0 decreases in c and N(T^{1−δ}) = o(N(T)), the table value at c holds
 7.2 Multiplicity. N(T), Lem:ConstructionKernel and Σ(β−½) count with multiplicity; the counted isolated zeros are simple; a non-real or multiple witness is charged by its multiplicity through M_R, M_S ≥ 2r, 2q.
 7.3 What is not used: RH, GRH, Montgomery's conjecture, the well-spacing hypothesis. Inputs: BGST (Acta Arith. 2024, refereed), La 2609.02882 Lemma 3.2 = Lem:ConstructionKernel (2026 preprint, also used by the paper), Conrey 1989 Theorem 2 (refereed), classical Littlewood lemma and the functional equation.
 
-## 8. Side result: Dirichlet L-functions and Theorem 1.4 (same footing as the paper's Theorem 1.4)
+## 8. Side result: Lamzouri's Theorem 1.4 (zeros of b_1e^{iθ_1}L(s,χ_1) + b_2e^{iθ_2}L(s,χ_2) on the line)
 
-The paper extends (1.5) to a fixed primitive χ (l.966–1032) with Lem:GaPa (dyadic pair correlation; same constant C(f)) and Lem:AnalogueConreyL (0.0806, via Wu's mean value on the line).
-The hinge lemma transfers: Wu, Math. Z. 293 (2019), arXiv 1802.09704, Theorem 1.1(B), gives I_R(Q,χ) = ∫_T^{2T} |V(½ + it + R/L_χ, χ) B(½+it, χ)|² dt asymptotically for θ < 4/7,
-fixed shifts a = b = −R (a, b ∈ ℂ, a, b ≪ 1), mollifier coefficients μ(n)F_0(n) with F_0(x) = P(log(y/x)/log y) admissible; with Q = 1 its main term has the structure of §3.1
-(L(1+α+β, χ_0) and (qT/2π)^{−α−β}-weighted L(1−α−β, χ_0) terms, the q/φ(q) factors cancel against the Euler products), so c_1 is unchanged.
-(Wu's displayed (1.10) shows (h,k)^{α+β} where (1.12) and the α = β = 0 case need (h,k)^{1+α+β}; we read it as a typo; this is the only check made.)
-The functional equation |L(½+a+it, χ)| = (qt/2π)^{−a} |L(½−a+it, χ)| (1 + O(1/t)) moves it to the right of the line; on dyadic blocks t ∈ [T, 2T] the factor is ≤ e^{−2R}(1+o(1)) directly.
-Hence Σ_{T<γ≤2T, β>1/2} (y − ρ)^+ ≤ (B(ρ) + o(1)) (T/2π) log T for L(s,χ), and §2 applies verbatim to the dyadic multisets Z_T^{(j)} (l.1018–1025).
-So each L(s,χ_j) has ≥ 0.672487 of its zeros in [T,2T] 0.001-isolated, and Remark 1.5 / Pro:BombieriHejhal (l.251–252, 868–870, not re-audited here) give
- ≥ 2·0.672487 − 1 = 0.344974 of the zeros of b_1e^{iθ_1}L(s,χ_1) + b_2e^{iθ_2}L(s,χ_2) on the line with odd multiplicity (paper: 31%; Bombieri–Hejhal under GRH: 34.5%).
-Status: derived, not separately certified or reviewed; depends on Wu's theorem as stated and on the paper's Pro:BombieriHejhal.
+8.1 The reduction (2610.26841v2, audited here, AUDIT.md "Pro:BombieriHejhal"). F(s) = b_1e^{iθ_1}L(s,χ_1) + b_2e^{iθ_2}L(s,χ_2), χ_1 ≠ χ_2 primitive mod q ≥ 3, same parity, b_j ≠ 0 real, θ_j = −(arg ε_{χ_j})/2 (l.840–848; the same as e^{2iθ_j} = i^a τ̄(χ_j)/√q of l.248).
+H_j(T) := ordinates T < γ ≤ 2T of zeros of L(s,χ_j) (with multiplicity) with a neighbouring gap ≤ 2π/((log T)(log log T)^{1/4}) (l.862–865).
+Pro:BombieriHejhal (l.868–870): #(zeros of F(½+it) of odd multiplicity, t ∈ [T,2T]) ≥ (1−ε)(T/2π) log T − |H_1(T)| − |H_2(T)|.
+If δ_j ≤ liminf_T #{c-isolated zeros of L(s,χ_j) in (T,2T]} / ((T/2π) log T) for one fixed c > 0 (isolation measured inside the block multiset), then, since (log log T)^{−1/4} < c for large T, a zero in H_j(T) has a gap < 2πc/log T and is not c-isolated, except possibly the first and last zero of the block (whose outside neighbour the block does not see); so |H_j(T)| ≤ (1 − δ_j + o(1))(T/2π) log T
+(N(2T,χ) − N(T,χ) = (T/2π) log T + O(T), l.859–861). Hence F has ≥ (δ_1 + δ_2 − 1 − ε)(T/2π) log T zeros of odd multiplicity on the line in [T,2T]; N_F(T) ~ (T/2π) log T (l.856–858) and dyadic summation give the proportion δ_1 + δ_2 − 1 (Remark 1.5, l.251–252; proof of Thm 1.4, l.1018–1027).
+
+8.2 δ_j from the hinge bound. Apply §2 to the dyadic multiset Z_T^{(j)} = {−i(ρ − ½) log T/2π : T < γ ≤ 2T} (l.1020–1024).
+Pair correlation: Lem:ConstructionKernelDirichlet (l.977–997, from Garunkštis–Paliulionytė Lemma 3.1 and La Lemma 3.2): ΣK_ε² over the block = (C_{η_ε} + o(1))(T/2π) log T, the same constant as for ζ.
+Off-line hinge moment for L(s,χ), fixed χ (replaces Lem:AnalogueConreyL, l.1010–1016): for every fixed ρ > 0,
+ Σ_{T<γ≤2T, β>1/2} ((β − ½) log T/2π − ρ)^+ ≤ (B(ρ) + o(1)) (T/2π) log T,   B as in §3.7.
+Proof. Wu, Math. Z. 293 (2019) 825–865, arXiv 1802.09704, Proposition 3.1 (TeX l.388–416; "uniformly in a, b and w"): for primitive χ mod q with log q = o(log T), α = a/L_χ, β = b/L_χ,
+a, b ∈ ℂ, a, b ≪ 1, L_χ = log(qT/2π), B(s,χ) = Σ_{n≤y} χ(n)a(n)n^{−s}, y = T^θ, the Gaussian-smoothed g(α,β,w) of L(s+α,χ)L(1−s+β,χ̄)B(s,χ)B_1(1−s,χ̄) on Re s = ½ equals
+ Σ_{h,k≤y} χ_0(hk)(h,k)^{1+α+β} a(h)ā(k) h^{−1−β} k^{−1−α} [L(1+α+β,χ_0) + (2πhk/(qw(h,k)²))^{α+β} L(1−α−β,χ_0)] + O(T^{−ε_θ}),
+with ε_θ > 0 for θ < 4/7 when a(n) = μ(n)F_0(n), F_0 separable in 𝔽 = {F(x) ≪ x^ε, F'(x) ≪ 1/x} (case (B1), l.411–413; Theorem 1.1(B), l.211–218).
+(Wu prints (h,k)^{α+β}; his own α = β = 0 case (x3.4), l.405–407, and BCHB's (1.6), l.152–155, need (h,k)^{1+α+β}: a typo. His (1.6) defines I_R at ½ + it + R/L_χ while (1.10) evaluates at a = b = −R and his Levinson application, l.261–263, uses the left shift: a sign typo. Neither matters here: we use Proposition 3.1 directly.)
+Our mollifier: a(n) = μ(n)P(log(y/n)/log y) with P a polynomial, P(0) = 0, P(1) = 1: F_0(x) = P(log(y/x)/log y) is a polynomial in log x/log y, so separable in 𝔽 (each (log x/log y)^i ≪ x^ε, derivative ≪ 1/x). B(½+it,χ) = A_χ(t) = Σ_{n≤y} μ(n)χ(n)P[n] n^{−1/2−it}, i.e. ψ⁺(σ⁺+it) with ψ⁺(s) = Σ μ(n)χ(n)P[n] n^{R_T/L_χ} n^{−s}.
+Take a = b = R_T := 2πρ L_χ/log T → 2πρ (real, bounded; Proposition 3.1 is uniform). Then σ⁺ = ½ + R_T/L_χ = ½ + 2πρ/log T and g is the smoothed mean of |L(σ⁺+it,χ)|²|A_χ(t)|².
+The arithmetic sums are those of the ζ case with p ∤ q: L(1 ± 2α, χ_0) = (φ(q)/q)(±1/(2α) + O(1)) and the q/φ(q) from the Euler products over p ∤ q cancel (the α = β = 0, P(x) = x value is 1 + 1/θ, quoted by Lamzouri as LemmaWu, 2610.26841 l.999–1006),
+and (qw/2π)^{−2α} = e^{−2R_T}(1 + O(1/log T)) for w ∈ [T,2T]. So (1/T)∫_T^{2T} |L(σ⁺+it,χ)A_χ(t)|² dt → c_+(P, 2πρ, θ) = e^{−2R}c_1 of §3.1–3.2 (unsmoothing as in BCHB §3, Wu l.425–428), with inf_P = c*(2πρ).
+Littlewood on [σ⁺, 2] × [T, 2T] for f = L(s,χ)ψ⁺(s) = Σ χ(m) b_m m^{−s}, b_m = Σ_{d|m, d≤y} μ(d)P[d] d^{R_T/L_χ} → [m = 1] for fixed m (so ∫ log|f(2+it)| = o(T)), horizontal edges O(log T), Jensen:
+Σ_{T<γ≤2T, β>σ⁺}(β − σ⁺) ≤ (T/4π) log c*(2πρ) + o(T); with β − σ⁺ = (2π/log T)((β − ½) log T/2π − ρ) this is the claim.
+Then §2.5 and §3.7 apply verbatim to Z_T^{(j)}: δ_j = p(c) for every fixed c > 0 (all constants are χ-free).
+
+8.4 Transfer details (added after review 4, which asked for them).
+(i) §2 is Lamzouri's Section 2 inequality for an arbitrary finite conjugation-invariant multiset (l.261–273) plus our explicit error terms; nothing in §2 uses ζ. Z_T^{(j)} is conjugation-invariant: if Λ(ρ,χ) = 0 then Λ(1−ρ,χ̄) = 0 by (Eq:FunctionEquation) and, conjugating, Λ(1−ρ̄,χ) = 0, a zero with the same ordinate and multiplicity; its real elements are the zeros on the line.
+(ii) The quantities in p(c) are: C_MT (the pair-correlation constant, Lem:ConstructionKernelDirichlet: the same C_{η_ε} → C_MT as for ζ); λ = λ_C(c) = max(2(1 − K(2c)), β_T(c)) and θ̄ = π²c²/2 (kernel and c only); ρ_max, α_ρ (from H_τ, kernel and c only); B(ρ) (hinge lemma, the same function for L(s,χ) by §8.2). So p(c) is literally the number computed by cert.py's hinge_p(c), for every χ; cert8.py calls that function.
+(iii) The same c serves both characters; the inequality for each χ_j holds for T ≥ T_j(ε), take T ≥ max T_j. Isolation inside a block differs from isolation in the full ordered list only for the first and last zero of the block, so at most two isolated candidates per block are lost (any o(N) loss would suffice).
+(iv) Order of limits, as in §4: for fixed q, χ_j, kernel smoothing ε, θ < 4/7, polynomial P and ρ, let T → ∞ (Wu's error O(T^{−ε_θ}), the unsmoothing of BCHB §3 / Wu l.425–428, the Littlewood edges: right edge o(T) because |f(2+it) − 1| → 0 uniformly, horizontal edges O(log T)); only then let P → sinh(bx)/sinh b, θ → 4/7, ε → 0, which is legitimate because the liminf bound holds for each admissible choice and the limit of the bounds is the certified number.
+(v) The Euler-factor statement is about the leading term only: for p | q the factors χ_0(p) = 0 remove p from both the d-sum density (Σ_{d≤y, (d,q)=1} μ²(d)/φ(d) ~ (φ(q)/q) log y) and the inner Möbius sums (1/L(1+δ+s, χ_0) ≈ (q/φ(q))(δ + s)), and L(1 ± 2α, χ_0) = (φ(q)/q)(±1/(2α) + O(1)); the products of these factors are 1 at leading order, which is all that enters c_+ (lower-order terms are O(1/log T)).
+
+8.3 Value (cert8.py, logs/cert8.log). c = 10^{−4}: p ≥ 0.672491254, so δ_1 + δ_2 − 1 ≥ 2p − 1 ≥ 0.344982508. At c = 0.001: 0.344974576. With the paper's inputs: 2·0.655202908 − 1 = 0.310405815 (the paper's 31%).
+Benchmark: Bombieri–Hejhal Theorem C (GRH alone): 34.5%; 2(2 − C_MT) − 1 = 0.345001407 is the same number to the quoted precision.

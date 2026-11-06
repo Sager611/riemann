@@ -1,0 +1,5 @@
+== cert8: Lamzouri Thm 1.4 with the hinge bound (python-flint, prec 160)
+paper's inputs (c -> 0): p >= 0.655202908, 2p - 1 >= 0.310405815 (paper: delta_0 = 2(0.6552 - 1/2) = 0.3104)
+c = 0.001  : lambda_C = 1.224e-05, rho = 1.2036 (rho_max 1.2236), alpha_rho <= 0.670124, B(rho) <= 1.4038e-05 -> p >= 0.672487288, 2p - 1 >= 0.344974576
+c = 0.0001 : lambda_C = 1.224e-07, rho = 1.2036 (rho_max 1.2236), alpha_rho <= 0.670274, B(rho) <= 1.4038e-05 -> p >= 0.672491254, 2p - 1 >= 0.344982508
+GRH-conditional benchmark (Bombieri-Hejhal Thm C): 2(2 - C_MT) - 1 = 0.345001407

@@ -1,0 +1,19 @@
+# At least 34.49% of the zeros of a linear combination of two Dirichlet L-functions lie on the critical line (nodes N8, N12)
+
+**Claim.** Let χ_1 ≠ χ_2 be primitive characters mod q ≥ 3 of the same parity, b_1, b_2 nonzero reals and e^{2iθ_j} = i^a τ̄(χ_j)/√q. At least 0.3449 (certified 2p − 1 ≥ 0.344982508) of the nontrivial zeros of F(s) = b_1e^{iθ_1}L(s, χ_1) + b_2e^{iθ_2}L(s, χ_2) lie on the critical line and have odd multiplicity, unconditionally (liminf, fixed q and χ_j). F has a functional equation but no Euler product; for suitable choices it is of Davenport–Heilbronn type and has zeros off the line.
+
+**Before.** Unconditional: Selberg (1998), a positive proportion; Dousselin (thesis), 7.38·10⁻⁹; Lamzouri (arXiv 2610.26841v2, Thm 1.4), 31% = 2(0.6552 − ½). Under GRH alone: Bombieri–Hejhal (Duke 1995, Theorem C), 34.5%; under GRH plus a well-spacing hypothesis, 100%. The new unconditional bound matches Bombieri–Hejhal's GRH value to within 2·10⁻⁵ (the method's ceiling is 2(2 − C_MT) − 1 = 0.345001).
+
+**Method.** Lamzouri's Pro:BombieriHejhal (audited, IsoZero/AUDIT.md) gives the proportion δ_1 + δ_2 − 1, where δ_j is the proportion of c-isolated zeros of L(s, χ_j) in dyadic blocks, for any fixed c > 0. Our isolated-zero theorem for ζ ([page](isolated-zeros.md)) transfers to each fixed L(s, χ_j) with the same constants: the pair-correlation input as in Lamzouri's paper, and the hinge bound for off-line zeros from Wu's mollified mean value for L(s, χ) (Math. Z. 293 (2019), arXiv 1802.09704, Prop. 3.1: complex shifts ≪ 1/log T, mollifier length θ < 4/7), applied directly at the shift +2πρ/log T. So δ_j ≥ p(10⁻⁴) = 0.672491254 and 2p − 1 ≥ 0.344982508.
+
+**Certificate.** `cd Riemann/Deep/IsoZero && uv run --no-project --with python-flint python3 cert8.py` (Arb, about 5 s; logs/cert8.log); rerun by the orchestrator on a copy in /tmp: output identical. With the paper's own inputs the same code reproduces Lamzouri's 0.310405815.
+
+**Review.** The agent's verdict-only reviewer: first GAP (the per-character transfer and the order of limits were not stated), repaired as DERIVATION §8.4, then SOUND. Orchestrator's reviewer on the pasted chain (the use of Pro:BombieriHejhal with dyadic-block isolated-zero proportions, Wu's Proposition 3.1 at a positive bounded shift with θ < 4/7, the per-character pair-correlation input, the order of limits): CORRECT, SIGNIFICANT; it notes that the Euler factors at p | q cancel at leading order rather than each tending to 1, which leaves B(ρ) unchanged. It did not authenticate Wu's typo corrections or rerun the certificate.
+
+**Novelty.** arXiv listings math.NT, math.CA, math.CV, Oct–Nov 2026 (lst.py 'linear combination|Epstein|Davenport.Heilbronn|Bombieri.Hejhal|Selberg class|Euler products'): only 2610.26841 treats linear combinations. Zenodo '"linear combinations" AND "L-functions"': nothing relevant. HAL: nothing on the proportion (one note on Davenport–Heilbronn zeros, hal-05441218, makes no such claim). Our files: no earlier result on linear combinations.
+
+**Caveat.** Rests on Bombieri–Hejhal's Theorem B and Lemmas 7, 9 as cited by Lamzouri (not re-derived; they need only Selberg's zero density for fixed χ), on Lamzouri's 2609.02882 (a 2026 preprint, as in his paper) and on Wu's Proposition 3.1 as stated (two harmless typos noted in DERIVATION §8.2). Wu's main term at the shift was checked structurally and at zero shift against his 1 + 1/θ, not symbolically term by term. Fixed q and χ only; liminf only; unrefereed.
+
+**RH relevance:** N8 (critical-line proportion, for functions without an Euler product) and N12 (Selberg-class analogues and the Davenport–Heilbronn barrier): unconditionally, a GRH-strength proportion of on-line zeros for the classical counterexample family.
+
+**Files.** [Riemann/Deep/IsoZero/](../Riemann/Deep/IsoZero/) (REPORT.md "Side result", DERIVATION.md §8, AUDIT.md, cert8.py, logs/cert8.log).

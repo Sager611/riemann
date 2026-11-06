@@ -24,6 +24,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N6) Largest explicit hyperbolic region: Riemann's Jensen polynomials J^{d,n} are hyperbolic whenever n² log(n+2) ≥ 24 d³ (Savva's two-thirds wedge had no number); supersedes our n³ log²(n+2) ≥ 7000 d⁵. [details](discoveries/jensen-two-thirds-wedge.md)
 - (N8) At least 0.6724 of the zeta zeros are simple, on the line and isolated from both neighbours (every c ≤ 0.00476; was 0.6552, c unspecified). [details](discoveries/isolated-zeros.md)
 - (N10, N11) From the Lean-checked half-plane: the least prime ≡ a (mod q) is ≤ (q log q)^{7.90} for every q, with an explicit power-saving prime number theorem in progressions. [details](discoveries/linnik-numeric.md)
+- (N8, N12) At least 34.49% of the zeros of a linear combination of two Dirichlet L-functions lie on the critical line, unconditionally (was 31%; GRH gave 34.5%). [details](discoveries/linear-combinations-line.md)
 
 ## Side results (off the RH tree)
 

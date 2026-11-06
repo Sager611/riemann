@@ -37,3 +37,47 @@ so a safe rounded upper bound is \(1.441\times10^{-5}\).
 **Step 2:** Correct provided the stated pairs supply distinct positive-\(y\), right-of-line representatives within \(0<\gamma\le T\), respecting multiplicity. Their nonnegative excess-height sum is then a sub-sum of the full right-of-line sum. No factor of two is needed. Discarding negative contributions and subtracting the resulting upper bound have the correct inequality directions.
 
 **INCOMPLETE only numerically. TODO @worker:** correct the quoted bound. Alternatively, at the actual cutoff \(1.2036\), \(B(1.2036)<1.44\times10^{-5}\), so that bound remains usable there.Resolution: only a downward rounding in the prose (B(1.2) = 1.440588e-5 had been quoted as <= 1.44e-5); fixed to 1.441e-5 in DERIVATION/AUDIT. cert.py uses the Arb upper endpoints (B(1.2036) <= 1.404e-5 at c = 0.001), so the certified numbers are unaffected. Mathematical steps: SOUND (normalisation, fixed R, distinct pairs as a sub-sum).
+
+## Review 4: side result chain (Thm 1.4 via Pro:BombieriHejhal, Wu Prop 3.1, hinge bound for L(s,chi))
+Reply (verbatim, truncated to 3500 chars):
+VERDICT: GAP at step 3: the Dirichlet-L isolated-zero inequality and its numerical certification are asserted, not established by the supplied inputs.
+
+The chain is **conditionally consistent**; I see no normalization contradiction. But only Step 1 was designated audited. To certify the conclusion, Step 3 needs the definitions of \(I_1,\lambda,\alpha_\rho,C_{\rm MT}\), justification that the inequality applies to each character, and the parameters/error bounds producing \(p=0.672491254\).
+
+The specific suspected issues are not intrinsic obstructions:
+
+- **Block edges:** working with the ordered multiset changes isolation status only at its endpoints. Boundary-height multiplicities likewise contribute negligibly.
+- **Dyadic normalization:** correct. Let \(\varepsilon\downarrow0\); dyadic summation preserves the limiting lower proportion.
+- **Same \(c\):** legitimate for two fixed characters; take the larger threshold beyond which both estimates hold.
+- **Positive shift:** \(a=b\) real makes the two \(L\)-factors conjugates on \(\Re s=1/2\).
+- **Hinge scaling:** Littlewood’s bound multiplied by \(\log T/(2\pi)\) gives exactly \(B(\rho)=\log c^*(2\pi\rho)/(4\pi)\).
+
+Step 4 also needs its standard limiting details stated: fixed \(q\); cancellation of conductor Euler factors **in the leading asymptotic**, not an exact identity; justified unsmoothing; negligible Littlewood boundary terms; and taking polynomial approximation and \(\theta\uparrow4/7\) **after** the \(T\)-limit.
+
+**To close:** supply the Step 3 transfer and numerical certificate, and those Step 4 justifications. If they hold, the arithmetic is correct:
+\[
+2p-1=0.344982508>0.3449.
+\]
+
+Fix: DERIVATION §8.4 (transfer details (i)-(v)) added; second pass:
+## Review 4b (second pass on the completed chain)
+VERDICT: SOUND
+
+**The previous logical gap is closed, conditional on the analytic statements and numerical certification supplied in (i)–(v).**
+
+For each character separately, (i) and (iii) give, with \(1-\lambda>0\),
+\[
+\liminf_{T\to\infty}\frac{|I_1|}{N}
+\ge
+\frac{2-\lambda-C_{\rm MT}-\alpha_\rho B(\rho)}
+     {1-\lambda}.
+\]
+Thus the same certified inputs give the same lower bound \(0.672491254\). The symmetry calculation in (ii) correctly supplies the conjugation invariance required by (i).
+
+The limit argument in (iv) is valid: for any \(\delta>0\), first fix admissible parameters giving a bound within \(\delta\) of the limiting value; only then take \(T\) sufficiently large. No uniform error estimate across the subsequent parameter limits is necessary. For two fixed characters, take the larger of their thresholds.
+
+The lower-order terms in (v) vanish in this order of limits.
+
+One precision: the \(O(1)\) boundary count should concern discarded **isolated candidates**, where spacing supplies it—not arbitrary zeros near an endpoint. An \(o(N)\) boundary loss already suffices.
+
+This establishes logical closure from the supplied premises; it does **not** independently verify that the cited papers establish those premises or that the unseen interval-arithmetic certificate is correct.
