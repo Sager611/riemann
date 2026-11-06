@@ -1,0 +1,9 @@
+Table-1.txt sha256 272bf444d3a93a95
+Table-2.txt sha256 2ef62dcb0c726509
+Table-4.txt sha256 7f89b1d971ae6ae0
+Table-8.txt sha256 9ac6d519b997f704
+E=1: scan 13, ARSX(<=X) 13, equal=True; only scan: []; only ARSX: []; fundamental in scan: 9, largest |D| 163; largest |D| overall 163
+E=2: scan 88, ARSX(<=X) 88, equal=True; only scan: []; only ARSX: []; fundamental in scan: 56, largest |D| 5460; largest |D| overall 7392
+E=4: scan 485, ARSX(<=X) 485, equal=True; only scan: []; only ARSX: []; fundamental in scan: 203, largest |D| 435435; largest |D| overall 887040
+E=8: scan 2329, ARSX(<=X) 2329, equal=True; only scan: []; only ARSX: []; fundamental in scan: 778, largest |D| 430950520; largest |D| overall 1723802080
+ALL EQUAL

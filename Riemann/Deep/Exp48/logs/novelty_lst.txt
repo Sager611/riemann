@@ -1,0 +1,18 @@
+2611.06002  [math.NT 2026-11]  The enhanced polylogarithm conjecture in weight two for imaginary quadratic fields
+2610.10452  [math.NT 2026-10]  $p$-class groups in the cyclotomic $\mathbb{Z}_p$-extension of imaginary quadratic fields
+2610.11210  [math.NT 2026-10]  Automorphic symbols and automorphic \emph{L}-values of GL(2) over imaginary quadratic fields
+2610.15483  [math.NT 2026-10]  On the OpenAI proof that Landau-Siegel zeros do not exist
+2610.21099  [math.NT 2026-10]  A simpler proof that there are no Landau--Siegel zeros
+2610.21511  [math.NT 2026-10]  Imaginary quadratic fields of class number at most 2000
+2610.30476  [math.NT 2026-10]  An explicit elementary proof of no Landau--Siegel zeros
+2610.31402  [math.NT 2026-10]  Landau-Siegel zeros over a base field and effective Brauer-Siegel
+2610.34556  [math.NT 2026-10]  Admissible sets of integers in imaginary quadratic fields of class number 1
+-- 9 title hits in 2 cats x (2026-11, 2026-10)
+zenodo 23607492  2026-10-24  A QRH-Conditional Lower Bound for Imaginary Quadratic Class-Group Exponents
+zenodo 23547020  2026-10-21  Imaginary quadratic fields of class number at most 3000
+zenodo 22883179  2026-09-21  Localized Bost-Connes systems
+zenodo 22152101  2026-08-29  KMS state uniqueness and phase transitions in localized Bost-Connes systems: from Chebotarev density to the Hardy-Little
+zenodo 21712451  2026-07-31  Prime-Coordinate Arithmetic and Geodesic Number-Theoretic Geometry: An Arithmetic-Internal Framework for Topology, Analy
+zenodo 21456694  2026-07-20  Wieferich phenomena of algebraic units
+zenodo 21339556  2026-07-13  Boundary Compensation Mathematics Demonstration IV BC-M-D4: Fermat Proof-Dependency Mini-Atlas Exponent-Local Channels, 
+-- zenodo total 7

@@ -1,0 +1,1 @@
+non-fundamental D with E(D) | 8, |D| <= 1e10: 1869; violations of L(f) | 12 u E(D): 0

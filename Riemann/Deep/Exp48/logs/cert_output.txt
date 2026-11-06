@@ -1,0 +1,44 @@
+== (0) constants
+  C78 = 0.0350; 0.11/pi = [0.0350140874802 +/- 1.70e-14] ; 1/(7.732 pi) = [0.0411678590512 +/- 1.14e-14] ; 0.655/(pi e) = [0.0767002792969 +/- 4.20e-14]
+PASS (0a) 0.11/pi >= 0.0350 (Littlewood78 Thm 1(1) -> Cor 2 constant)
+PASS (0b) 1/(7.732 pi) < 0.0412 (brief's rounded Chen constant is an upper rounding)
+PASS (0c) 0.0767 < 0.655/(pi e) < 0.0768 (the brief's 0.0767 is EKN's constant rounded down; comparisons below use the exact ball)
+== (1) L78(d) > Chen1(d) for every d >= 35  [so (b_ch) holds for every D with |D| >= 10^6]
+PASS (1a) 0.0350 log 35 > 3/(7.732 pi)
+     3/(7.732 pi) = [0.123504 +/- 4.23e-7] ; 0.0350 log 35 = [0.124437 +/- 1.83e-7] ; 0.0350 e^3/3 = [0.2343 +/- 3.13e-5]
+     margin at d=35: [0.000933605 +/- 1.46e-12] ; at d = 34: [-8.09588e-5 +/- 8.02e-12] (negative: 35 is the first integer)
+PASS (1b) 0.0350 e^3/3 > 1/(7.732 pi)
+PASS (1c) 0.0350 log 35 > 3*0.0412 and 0.0350 e^3/3 > 0.0412
+PASS (1d) L78/Chen1 >= 3.9 for every d >= 10^6 (min at d = 10^6: [3.9152 +/- 1.35e-5]; on log log d >= 3 the ratio is 0.0350 u/(log u * CCHEN) >= [5.6921 +/- 7.45e-6])
+== (2) L78(d) > Sieg(d) for every d >= e^6.6  [so EKN's faster 'no Siegel zero' run is also complete]
+PASS (2a) 0.0350 * 6.6 > 3 * 0.655/(pi e)
+PASS (2b) 0.0350 e^3/3 > 0.655/(pi e)
+PASS (2c) e^6.6 < 10^6 and e^11.2 < 10^6 (EKN's ranges start above both)
+     0.0350*6.6 = [0.2310 +/- 3e-9] ; 3*0.655/(pi e) = [0.230101 +/- 1.63e-7]
+PASS (2d) half-plane gives Lemma Siegel's hypothesis: 1 - 1/(4 log|D|) > B iff log|D| > 1/(4(1-B)) = [1.9744 +/- 4.23e-5] < 11.2 (7/8: 2)
+== (3) number of prime factors: L78(d_k) > c^(k-1) for all k >= K_c, so E(D) | c forces omega(D) <= K_c - 1
+PASS (3) c=2: K_c = 10; L78(d_k) > c^(k-1) for 10 <= k <= 399 (exact d_k), fails at k = 9
+PASS (3) c=2: induction step sqrt(p_{k+1})/(1 + log2/3) > c for all k >= 10 (p_{k+1} >= 31)
+PASS (3) c=4: K_c = 21; L78(d_k) > c^(k-1) for 21 <= k <= 399 (exact d_k), fails at k = 20
+PASS (3) c=4: induction step sqrt(p_{k+1})/(1 + log2/3) > c for all k >= 21 (p_{k+1} >= 79)
+PASS (3) c=8: K_c = 53; L78(d_k) > c^(k-1) for 53 <= k <= 399 (exact d_k), fails at k = 52
+PASS (3) c=8: induction step sqrt(p_{k+1})/(1 + log2/3) > c for all k >= 53 (p_{k+1} >= 251)
+  K_2, K_4, K_8 = 10 21 53  (EKN's N_2, N_4, N_8 = 11, 24, 58)
+PASS (3) K_8 <= 58 and K_4 <= 24 and K_2 <= 11: every omega left open by L78 lies inside EKN's search range (k <= N_c)
+== (3') side facts used in (3)
+PASS (3') p_{k+1} < d_k for 2 <= k <= 398 (Euclid: d_k - 1 >= 2 has a prime factor > p_k, so p_{k+1} <= d_k - 1 for all k >= 2)
+PASS (3') 1/2 - 1/(u log u) > 0 at u = e^3 (and u log u increases), so L78 is increasing on [e^(e^3), oo)
+== (4) EKN Theorem upp_bound recomputed (three conditions; constant 0.655/(pi e)) and with Chen's constant
+PASS (4) c=2: N = 11 (EKN: 11), d_N = 2.0056e+11 <= 2.01e11
+PASS (4) c=4: N = 24 (EKN: 24), d_N = 2.3769e+34 <= 2.38e34
+PASS (4) c=8: N = 58 (EKN: 58), d_N = 3.1666e+110 <= 3.17e110
+     with Chen's constant 1/(7.732 pi) instead: N_2 = 12
+     with Chen's constant 1/(7.732 pi) instead: N_4 = 24
+     with Chen's constant 1/(7.732 pi) instead: N_8 = 59
+== (5) fallback: OpenAI's 7/8 half-plane instead of B (Littlewood78 cert_output_7_8: |L(1,chi)| >= 0.105/max(3, log log q))
+PASS (5a) 0.105/pi >= 0.0334
+PASS (5b) 0.0334 log 41 > 3/(7.732 pi) and 0.0334 e^3/3 > 1/(7.732 pi): L78-fallback > Chen1 for d >= 41
+PASS (5c) c=2: fallback K_c = 10 <= EKN's N_c, induction holds (sqrt(p_{K+1})/(1+log2/3) > c)
+PASS (5c) c=4: fallback K_c = 21 <= EKN's N_c, induction holds (sqrt(p_{K+1})/(1+log2/3) > c)
+PASS (5c) c=8: fallback K_c = 53 <= EKN's N_c, induction holds (sqrt(p_{K+1})/(1+log2/3) > c)
+ALL PASS

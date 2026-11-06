@@ -1,0 +1,182 @@
+### imaginary quadratic fields class group exponent 4 unconditional classification
+Search provider: arxiv (forced, no fallback) (reuse: approach="arxiv")
+**Search results for "imaginary quadratic fields class group exponent 4 unconditional classification":**
+
+1. **A deformation problem for Galois representations over imaginary quadratic fields**
+   https://arxiv.org/abs/0801.0091v2
+   We prove the modularity of minimally ramified ordinary residually reducible p-adic Galois representations of an imaginary quadratic field F under certain assumptions. We first exhibit conditions under which the residual representation is unique up to isomorphism. Then we prove the existence of deformations arising from cuspforms on GL_2(A_F) via the Galois representations constructed by Taylor et al. We establish a sufficient condition (in terms of the non-existence of certain field extensions w
+
+2. **Improvements in the computation of ideal class groups of imaginary quadratic number fields**
+   https://arxiv.org/abs/1204.1300v1
+   We investigate improvements to the algorithm for the computation of ideal class groups described by Jacobson in the imaginary quadratic case. These improvements rely on the large prime strategy and a new method for performing the linear algebra phase. We achieve a significant speed-up and are able to compute ideal class groups with discriminants of 110 decimal digits in less than a week.
+
+3. **p-Tower Groups over Quadratic Imaginary Number Fields**
+   https://arxiv.org/abs/1008.3003v1
+   The modern theory of class field towers has its origins in the study of the p-class field tower over a quadratic imaginary number field, so it is fitting that this problem be the first in the discipline to be nearing a solution. We survey the state of the subject and present a new cohomological condition for a quadratic imaginary number field to have an infinite p-class field tower (for p odd). Under an additional hypothesis, we refine this to a necessary and sufficient condition and describe an
+
+4. **Heuristics for $p$-class towers of imaginary quadratic fields, with an Appendix by Jonathan Blackhurst**
+   https://arxiv.org/abs/1111.4679v2
+   Cohen and Lenstra have given a heuristic which, for a fixed odd prime $p$, leads to many interesting predictions about the distribution of $p$-class groups of imaginary quadratic fields. We extend the Cohen-Lenstra heuristic to a non-abelian setting by considering, for each imaginary quadratic field $K$, the Galois group of the $p$-class tower of $K$, i.e. $G_K:=\mathrm{Gal}(K_\infty/K)$ where $K_\infty$ is the maximal unramified $p$-extension of $K$. By class field theory, the maximal abelian q
+
+5. **Two-dimensional magnetic interactions in LaFeAsO**
+   https://arxiv.org/abs/1303.4033v1
+   Inelastic neutron scattering measurements demonstrate that the magnetic interactions in antiferromagnetic LaFeAsO are two-dimensional. Spin wave velocities within the Fe layer and the magnitude of the spin gap are similar to the \textit{A}Fe$_2$As$_2$ based materials. However, the ratio of interlayer and intralayer exchange is found to be less than $\sim 10^{-4}$ in LaFeAsO, very similar to the cuprates, and $\sim$ 100 times smaller than that found in \textit{A}Fe$_2$As$_2$ compounds. The result
+
+6. **On the exponents of class groups of some families of imaginary quadratic fields**
+   https://arxiv.org/abs/2005.12512v2
+   Let $a\geq 1$ and $n>1$ be odd integers. For a given prime $p$, we prove under certain conditions that the class groups of imaginary quadratic fields $\mathbb{Q}(\sqrt{a^2-4p^n})$ have a subgroup isomorphic to $\mathbb{Z}/n\mathbb{Z}$. We also show that this family of fields has infinitely many members with the property that their class groups have a subgroup isomorphic to $\mathbb{Z}/n\mathbb{Z}$. In addition, we deduce some unconditional results concerning the divisibility of the class numbers
+
+7. **Missing class groups and class number statistics for imaginary quadratic fields**
+   https://arxiv.org/abs/1510.04387v1
+   The number F(h) of imaginary quadratic fields with a given class number h is of classical interest: Gauss' class number problem asks for a determination of those fields counted by F(h). The unconditional computation of F(h) for h up to 100 was completed by M. Watkins, using ideas of Goldfeld and Gross-Zagier; Soundararajan has more recently made conjectures about the order of magnitude of F(h) as h increases without bound, and determined its average order. In the present paper, we refine Soundar
+
+8. **Tevatron-for-LHC Report of the QCD Working Group**
+   https://arxiv.org/abs/hep-ph/0610012v1
+   The experiments at Run 2 of the Tevatron have each accumulated over 1 inverse femtobarn of high-transverse momentum data. Such a dataset allows for the first precision (i.e. comparisons between theory and experiment at the few percent level) tests of QCD at a hadron collider. While the Large Hadron Collider has been designed as a discovery machine, basic QCD analyses will still need to be performed to understand the working environment. The Tevatron-for-LHC workshop was conceived as a communicat
+
+### Elsenhans Klüners Nicolae class groups small exponent Siegel zero
+Search provider: arxiv (forced, no fallback) (reuse: approach="arxiv")
+**Search results for "Elsenhans Klüners Nicolae class groups small exponent Siegel zero":**
+
+1. **Imaginary quadratic number fields with class groups of small exponent**
+   https://arxiv.org/abs/1803.02056v1
+   Let $D<0$ be a fundamental discriminant and denote by $E(D)$ the exponent of the ideal class group $\text{Cl}(D)$ of $K={\mathbb Q}(\sqrt{D})$. Under the assumption that no Siegel zeros exist we compute all such $D$ with $E(D)$ is a divisor of $8$. We compute all $D$ with $|D|\leq 3.1\cdot 10^{20}$ such that $E(D)\leq 8$.
+
+2. **Computing subfields of number fields and applications to Galois group computations**
+   https://arxiv.org/abs/1610.06837v2
+   A polynomial time algorithm to give a complete description of all subfields of a given number field was given in an article by van Hoeij et al. This article reports on a massive speedup of this algorithm. This is primary achieved by our new concept of Galois-generating subfields. In general this is a very small set of subfields that determine all other subfields in a group-theoretic way. We compute them by targeted calls to the method from van Hoeij et al. For an early termination of these calls
+
+3. **Negative curvature in graphical small cancellation groups**
+   https://arxiv.org/abs/1602.03767v3
+   We use the interplay between combinatorial and coarse geometric versions of negative curvature to investigate the geometry of infinitely presented graphical $Gr'(1/6)$ small cancellation groups. In particular, we characterize their 'contracting geodesics', which should be thought of as the geodesics that behave hyperbolically. We show that every degree of contraction can be achieved by a geodesic in a finitely generated group. We construct the first example of a finitely generated group $G$ cont
+
+4. **Torsion subgroups of small cancellation groups**
+   https://arxiv.org/abs/2112.01912v3
+   We prove that torsion subgroups of groups defined by C(6), C(4)-T(4) or C(3)-T(6) small cancellation presentations are finite cyclic groups. This follows from a more general result on the existence of fixed points for locally elliptic (every element fixes a point) actions of groups on simply connected small cancellation complexes. We present an application concerning automatic continuity. We observe that simply connected C(3)-T(6) complexes may be equipped with a CAT(0) metric. This allows us to
+
+5. **On the smallest non-trivial quotients of mapping class groups**
+   https://arxiv.org/abs/1705.10223v3
+   We prove that the smallest non-trivial quotient of the mapping class group of a connected orientable surface of genus at least 3 without punctures is $\mathrm{Sp}_{2g}(2)$, thus confirming a conjecture of Zimmermann. In the process, we generalise Korkmaz's results on $\mathbb{C}$-linear representations of mapping class groups to projective representations over any field.
+
+6. **Computing quadratic subfields of number fields**
+   https://arxiv.org/abs/1907.13383v1
+   Given a number field, it is an important question in algorithmic number theory to determine all its subfields. If the search is restricted to abelian subfields, one can try to determine them by using class field theory. For this, it is necessary to know the ramified primes. We show that the ramified primes of the subfield can be computed efficiently. Using this information we give algorithms to determine all the quadratic and the cyclic cubic subfields of the initial field. The approach generali
+
+7. **Quadratic Equations in Graph Products of Groups and the Exponent of Periodicity**
+   https://arxiv.org/abs/2602.22123v2
+   In 1977, Makanin established the decidability of equations in free monoids. A key ingredient in his proof is the exponent of periodicity: for a word $w$, it is the largest exponent $e$ such that $w$ contains a nonempty factor of the form $p^e$. Makanin showed the following for a system of equations in free monoids: if the system has a solution with a sufficiently large exponent of periodicity, then it has infinitely many solutions. However, the converse -- whether the existence of infinitely man
+
+8. **Computing class groups and unit groups in Magma**
+   https://arxiv.org/abs/2510.05501v1
+   We describe the computation of class groups and unit groups of number fields as implemented in Magma (V2.29). After quickly reviewing the main algorithms based on factor bases, relation collection, and analytic class number evaluation, we distinguish their behavior across formalizable, rigorous, GRH-conditional, and heuristic regimes.
+
+### class group exponent dividing 8 imaginary quadratic complete list
+Search provider: arxiv (forced, no fallback) (reuse: approach="arxiv")
+**Search results for "class group exponent dividing 8 imaginary quadratic complete list":**
+
+1. **Improvements in the computation of ideal class groups of imaginary quadratic number fields**
+   https://arxiv.org/abs/1204.1300v1
+   We investigate improvements to the algorithm for the computation of ideal class groups described by Jacobson in the imaginary quadratic case. These improvements rely on the large prime strategy and a new method for performing the linear algebra phase. We achieve a significant speed-up and are able to compute ideal class groups with discriminants of 110 decimal digits in less than a week.
+
+2. **A deformation problem for Galois representations over imaginary quadratic fields**
+   https://arxiv.org/abs/0801.0091v2
+   We prove the modularity of minimally ramified ordinary residually reducible p-adic Galois representations of an imaginary quadratic field F under certain assumptions. We first exhibit conditions under which the residual representation is unique up to isomorphism. Then we prove the existence of deformations arising from cuspforms on GL_2(A_F) via the Galois representations constructed by Taylor et al. We establish a sufficient condition (in terms of the non-existence of certain field extensions w
+
+3. **Unit-generated orders of real quadratic fields I. Class number bounds**
+   https://arxiv.org/abs/2512.11311v3
+   Unit-generated orders of a quadratic field are orders of the form $\mathcal{O} = \mathbb{Z}[\varepsilon]$, where $\varepsilon$ is a unit in the quadratic field. If the order $\mathcal{O}$ is a maximal order of a real quadratic field, then the quadratic number field is necessarily of a restricted form, being of narrow Richaud--Degert type. However, every real quadratic field contains infinitely many distinct unit-generated orders. They are parametrized as $\mathcal{O} = \mathcal{O}_{n}^{\pm}$ hav
+
+4. **p-Tower Groups over Quadratic Imaginary Number Fields**
+   https://arxiv.org/abs/1008.3003v1
+   The modern theory of class field towers has its origins in the study of the p-class field tower over a quadratic imaginary number field, so it is fitting that this problem be the first in the discipline to be nearing a solution. We survey the state of the subject and present a new cohomological condition for a quadratic imaginary number field to have an infinite p-class field tower (for p odd). Under an additional hypothesis, we refine this to a necessary and sufficient condition and describe an
+
+5. **Heuristics for $p$-class towers of imaginary quadratic fields, with an Appendix by Jonathan Blackhurst**
+   https://arxiv.org/abs/1111.4679v2
+   Cohen and Lenstra have given a heuristic which, for a fixed odd prime $p$, leads to many interesting predictions about the distribution of $p$-class groups of imaginary quadratic fields. We extend the Cohen-Lenstra heuristic to a non-abelian setting by considering, for each imaginary quadratic field $K$, the Galois group of the $p$-class tower of $K$, i.e. $G_K:=\mathrm{Gal}(K_\infty/K)$ where $K_\infty$ is the maximal unramified $p$-extension of $K$. By class field theory, the maximal abelian q
+
+6. **Tevatron-for-LHC Report of the QCD Working Group**
+   https://arxiv.org/abs/hep-ph/0610012v1
+   The experiments at Run 2 of the Tevatron have each accumulated over 1 inverse femtobarn of high-transverse momentum data. Such a dataset allows for the first precision (i.e. comparisons between theory and experiment at the few percent level) tests of QCD at a hadron collider. While the Large Hadron Collider has been designed as a discovery machine, basic QCD analyses will still need to be performed to understand the working environment. The Tevatron-for-LHC workshop was conceived as a communicat
+
+7. **Imaginary Multiquadratic Fields of Class Number Dividing $2^m$**
+   https://arxiv.org/abs/1712.06769v1
+   This paper gives a method to find all imaginary multiquadratic fields of class number dividing $2^{m},$ provided the list of all imaginary quadratic fields of class number dividing $2^{m+1}$ is known. We give a bound on the degree of such fields. As an application of this algorithm, we compute a complete list of imaginary multiquadratic fields with class number dividing $32.$
+
+8. **The class three groups of order $p^9$ with exponent $p$**
+   https://arxiv.org/abs/1702.04898v1
+   We give a complete list of the class two groups with exponent $p$ and order dividing $p^8$. For each group in the list we compute the number of immediate descendants of order $p^9$ with exponent $p$. In each case the number of descendants is PORC, and so the total number of class three groups of order $p^9$ with exponent $p$ is PORC. Nevertheless, there are groups of order $p^8$ with exponent $p$ which have a non-PORC number of class three descendants of order $p^9$ with exponent $p$.
+
+### quasi-Riemann hypothesis consequences class groups exponent
+Search provider: arxiv (forced, no fallback) (reuse: approach="arxiv")
+**Search results for "quasi-Riemann hypothesis consequences class groups exponent":**
+
+1. **Some applications of the quasi-Riemann hypothesis to class groups and small generators of number fields**
+   https://arxiv.org/abs/2610.18491v2
+   We prove an effective version of the Chebotarev density theorem, conditional on the quasi-Riemann hypothesis for the Dedekind zeta function. Drawing on recent breakthroughs of OpenAI and Cureton--Thorner, we make unconditional the Ellenberg--Venkatesh bounds on $\ell$-torsion in class groups of number fields and extend an averaged result of Lemke Oliver--Smith to arbitrary families of degree-$d$-fields. Further applications are given to the least prime splitting and to small generators in number
+
+2. **On the smallest non-trivial quotients of mapping class groups**
+   https://arxiv.org/abs/1705.10223v3
+   We prove that the smallest non-trivial quotient of the mapping class group of a connected orientable surface of genus at least 3 without punctures is $\mathrm{Sp}_{2g}(2)$, thus confirming a conjecture of Zimmermann. In the process, we generalise Korkmaz's results on $\mathbb{C}$-linear representations of mapping class groups to projective representations over any field.
+
+3. **Quadratic Equations in Graph Products of Groups and the Exponent of Periodicity**
+   https://arxiv.org/abs/2602.22123v2
+   In 1977, Makanin established the decidability of equations in free monoids. A key ingredient in his proof is the exponent of periodicity: for a word $w$, it is the largest exponent $e$ such that $w$ contains a nonempty factor of the form $p^e$. Makanin showed the following for a system of equations in free monoids: if the system has a solution with a sufficiently large exponent of periodicity, then it has infinitely many solutions. However, the converse -- whether the existence of infinitely man
+
+4. **On Jordan classes for Vinberg's theta-groups**
+   https://arxiv.org/abs/2007.02173v2
+   Popov has recently introduced an analogue of Jordan classes (packets, or decomposition classes) for the action of a theta-group (G_0,V), showing that they are finitely-many, locally-closed, irreducible unions of G_0-orbits of constant dimension partitioning V. We carry out a local study of their closures showing that Jordan classes are smooth and that their closure is a union of Jordan classes. We parametrize Jordan classes and G_0-orbits in a given class in terms of the action of subgroups of V
+
+5. **The Hubble Constant from (CLASS) Gravitational Lenses**
+   https://arxiv.org/abs/astro-ph/0101352v1
+   One of the main objectives of the Cosmic Lens All-Sky Survey (CLASS) collaboration has been to find gravitational lens (GL) systems at radio wavelengths that are suitable for the determination of time delays between image pairs. The survey is now near completion and at least 18 GL systems have been found. Here, I will discuss our efforts to measure time delays from several of these systems with the ultimate aim of constraining the Hubble Constant (H0). Thus far three CLASS GL systems (i.e. B0218
+
+6. **Conjugacy Class Growth in Virtually Abelian Groups**
+   https://arxiv.org/abs/2309.06144v3
+   We study the conjugacy class growth function in finitely generated virtually abelian groups. That is, the number of elements in the ball of radius $n$ in the Cayley graph which intersect a fixed conjugacy class. In the class of virtually abelian groups, we prove that this function is always asymptotically equivalent to a polynomial. Furthermore, we show that in any affine Coxeter group, the degree of polynomial growth of a conjugacy class is equivalent to the reflection length of any element of 
+
+7. **Equations in virtually class 2 nilpotent groups**
+   https://arxiv.org/abs/2009.10651v7
+   We give an algorithm that decides whether a single equation in a group that is virtually a class $2$ nilpotent group with a virtually cyclic commutator subgroup, such as the Heisenberg group, admits a solution. This generalises the work of Duchin, Liang and Shapiro to finite extensions.
+
+8. **Generalized quasi-dihedral group as automorphism group of Riemann surfaces**
+   https://arxiv.org/abs/2210.01577v1
+   In this paper, we discuss certain types of conformal/anticonformal actions of the generalized quasi-dihedral group $G_{n}$ of order $8n$, for $n\geq 2$, on closed Riemann surfaces, pseudo-real Riemann surfaces and compact Klein surfaces, and in each of these actions we study the uniqueness (up to homeomorphisms) action problem.
+
+### idoneal numbers complete unconditional zero-free half-plane
+Search provider: arxiv (forced, no fallback) (reuse: approach="arxiv")
+**Search results for "idoneal numbers complete unconditional zero-free half-plane":**
+
+1. **An illustration of a paradox about the idoneal, or suitable, numbers**
+   https://arxiv.org/abs/math/0507352v1
+   In this paper Euler shows that there are no additional square idoneal numbers aside from 1, 4, 9, 16, and 25.
+
+2. **Unconditional Priors Matter! Improving Conditional Generation of Fine-Tuned Diffusion Models**
+   https://arxiv.org/abs/2503.20240v3
+   Classifier-Free Guidance (CFG) is a fundamental technique in training conditional diffusion models. The common practice for CFG-based training is to use a single network to learn both conditional and unconditional noise prediction, with a small dropout rate for conditioning. However, we observe that the joint learning of unconditional noise with limited bandwidth in training results in poor priors for the unconditional case. More importantly, these poor unconditional noise predictions become a s
+
+3. **Idoneal genera and K3 surfaces covering an Enriques surface**
+   https://arxiv.org/abs/2003.08914v7
+   Idoneal genera are a generalization of Euler's idoneal numbers. We enumerate all idoneal genera by means of the Smith--Minkowski--Siegel mass formula. As an application, we classify transcendental lattices of K3 surfaces covering an Enriques surface.
+
+4. **Zero-free half-planes of the ζ-function via spaces of analytic functions**
+   https://arxiv.org/abs/2206.00434v4
+   In this article, we introduce a general approach for deriving zero-free half-planes for the Riemann zeta function $ζ$ by identifying topological vector spaces of analytic functions with specific properties. This approach is applied to weighted $\ell^2$ spaces and classical Hardy spaces $ H^p $ ($ 0<p\leq2 $). As a consequence precise conditions are obtained for the existence of zero-free half planes for the $ζ$-function.
+
+5. **Zero-free half-planes for Hecke $L$-functions over number fields and Quasi-Riemann Hypothesis**
+   https://arxiv.org/abs/2610.26835v2
+   In [Liu26a], varying the length and moment parameters in the cubic-theta argument of [Ope26a] gave the zero-free half-plane $Re(s)>B_{\mathrm{new}}=0.874957019420098946\ldots$ for finite-order Hecke $L$-functions over $\mathbb Q(\sqrt{-3})$ and for Dirichlet $L$-functions, and its optimality in the specified exponent comparison system. In this paper, we extend the argument to finite-order Hecke $L$-functions over cyclotomic fields containing $μ_{12}$ and, by class-field descent, to every pair $(
+
+6. **Unconditional convergence and invertibility of multipliers**
+   https://arxiv.org/abs/0911.2783v3
+   In the present paper the unconditional convergence and the invertibility of multipliers is investigated. Multipliers are operators created by (frame-like) analysis, multiplication by a fixed symbol, and resynthesis. Sufficient and/or necessary conditions for unconditional convergence and invertibility are determined depending on the properties of the analysis and synthesis sequences, as well as the symbol. Examples which show that the given assertions cover different classes of multipliers are g
+
+7. **Cycles and 1-unconditional matrices**
+   https://arxiv.org/abs/math/0102146v2
+   We characterize the 1-unconditional subsequences of the canonical basis (e_rc) of elementary matrices in the Schatten-von-Neumann class S^p . The set I of couples (r,c) must be the set of edges of a bipartite graph without cycles of even length 4<=l<=p if p is an even integer, and without cycles at all if p is a positive real number that is not an even integer. In the latter case, I is even a Varopoulos set of V-interpolation of constant 1. We also study the metric unconditional approximation pr
+
+8. **Improved zero-free half-planes for the quasi-Riemann hypothesis**
+   https://arxiv.org/abs/2610.12234v2
+   Recently, a uniform $\frac{7}{8}$ zero-free half-plane for finite-order Hecke $L$-functions over $\mathbb Q(\sqrt{-3})$ and its transfer to Dirichlet $L$-functions was given by OpenAI in [Ope26a]. In its proof, there are several parameters $b=\frac{1}{8}, \ell=\frac{1}{6}$, and $κ$. In this paper, via varying $b$, $\ell$, and $κ$, following the same strategy, we slightly improve the bound $\frac{7}{8}=0.875$ to \[ B_{\mathrm{new}}=\frac{18ξ_{\mathrm{new}}+7}{18ξ_{\mathrm{new}}+9} =0.874957019420
+
+### Weinberger exponent class group Siegel zero removed
+ERR Error: arxiv: results rejected as irrelevant

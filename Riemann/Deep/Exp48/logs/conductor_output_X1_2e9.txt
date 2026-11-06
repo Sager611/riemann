@@ -1,0 +1,9 @@
+E=2: 65 fundamental D0 with E(D0) | E; 101 conductor candidates (f=1 included); 0 with |D0 f^2| > X1; unresolved so far 0; discriminants with exponent exactly E and |D| <= X1: 88
+E=4: 268 fundamental D0 with E(D0) | E; 588 conductor candidates (f=1 included); 2 with |D0 f^2| > X1; unresolved so far 2; discriminants with exponent exactly E and |D| <= X1: 485
+E=8: 1046 fundamental D0 with E(D0) | E; 6938 conductor candidates (f=1 included); 4023 with |D0 f^2| > X1; unresolved so far 1934; discriminants with exponent exactly E and |D| <= X1: 2329
+all conductor candidates without cuts, D0 = -3, E = 8: 786432
+self-test: excl() on 3602 known (D, Et) with E(D) | Et: false exclusions = 0
+self-test: excl(D, 4) finds an exclusion for 2329 of the 2329 exponent-8 discriminants
+stage 2 exclusions by kind: {'pow': 1118, 'L1': 818}
+UNRESOLVED after stage 2: [] 0
+CONDUCTOR STEP COMPLETE: no discriminant beyond X1
