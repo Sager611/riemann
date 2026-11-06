@@ -33,6 +33,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N11) Kopp–Lagarias Problem 1.7 solved: the unit-generated real quadratic orders with 2-torsion class group are exactly their 89 tabulated ones (84 with one class per genus). [details](discoveries/unit-generated-orders.md)
 - (N12, N8) At least 6.8·10⁻⁴ of the zeros of a combination of four Dirichlet L-functions lie on the critical line (was 3.7·10⁻⁹), and c/N for N summands. [details](discoveries/selberg-linear-combinations.md)
 - (N12, N7) Unconditional root-discriminant bounds beyond Odlyzko–Poitou (1977): rd_K ≥ 23.3878 − o(1), totally real 65.6439 − o(1) (were 22.3816, 60.8395). [details](discoveries/discriminant-bounds-strip.md)
+- (N8, N12) At least 7.005% of the zeros of every GL(2) newform L-function lie on the critical line (was 6.96%); arXiv 2508.11108's Question 5 settled. [details](discoveries/gl2-critical-line.md)
 
 ## Side results (off the RH tree)
 

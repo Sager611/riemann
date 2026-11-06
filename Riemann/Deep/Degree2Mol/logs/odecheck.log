@@ -1,0 +1,4 @@
+theta=0.5: R=1.5491933 S'(0)=-0.4415648493 kappa(simplcPRQ)=0.3584369085 kappa(direct I)=0.3584369085
+theta=0.25: R=3.0983867 S'(0)=-0.3919336928 kappa(simplcPRQ)=0.1763812303 kappa(direct I)=0.1763812303
+theta=0.125: R=6.1967734 S'(0)=-0.3900553907 kappa(simplcPRQ)=0.08545011417 kappa(direct I)=0.08545011417
+theta=0.6666666666666666: R=1.161895 S'(0)=-0.5100420683 kappa(simplcPRQ)=0.44636677 kappa(direct I)=0.44636677

@@ -1,0 +1,5 @@
+Wronskian check: 0.890743783295 0.890743783295
+theta=1/2 R=1.5491933: closed-form C1=0.7090990859, S(R)=3.9443e-31, S'(0)=-0.4415648493 vs shooting S'(0)=-0.4415648493; S(R/2): 0.191015319 vs 0.191015319
+   kappa from closed form + (simplcPRQ): 0.3584369085
+theta=1/8 R=6.1967734: closed-form C1=0.6741245443, S(R)=2.01948e-28, S'(0)=-0.3900553907 vs shooting S'(0)=-0.3900553907; S(R/2): 0.008620843811 vs 0.008620843811
+   kappa from closed form + (simplcPRQ): 0.08545011417

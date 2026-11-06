@@ -1,0 +1,4 @@
+xi=0.097656 R=9.8678 M=10 K=8 complex=False: kappa=0.068206814 c=9845.293435 ImB=0.000e+00
+seed 1: xi=0.097656 R=9.8678 M=10 K=8 complex=True: kappa=0.068206814 c=9845.293435 ImB=-5.712e-09
+seed 2: xi=0.097656 R=9.8678 M=10 K=8 complex=True: kappa=0.068206814 c=9845.293435 ImB=-1.764e-09
+seed 3: xi=0.097656 R=9.8678 M=10 K=8 complex=True: kappa=0.068206814 c=9845.293435 ImB=-9.789e-09

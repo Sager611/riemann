@@ -1,0 +1,4 @@
+mode=joint th=0.166667 M=30 R*=5.685468 kappa=0.11991881 lam=0.7643039647460883 time=0.5s
+mode=Px th=0.166667 M=30 R*=5.628441 kappa=0.11888885 lam=None time=0.5s
+mode=joint th=0.500000 M=1 R*=1.241958 kappa=0.35626857 lam=0.9941904878729739 time=0.0s
+mode=Px th=0.500000 M=1 R*=1.246176 kappa=0.34743924 lam=None time=0.0s

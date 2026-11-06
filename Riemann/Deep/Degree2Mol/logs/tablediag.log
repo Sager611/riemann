@@ -1,0 +1,5 @@
+theta=2/3: Levinson Q=1-y, P=x, R=sqrt(3/5)/theta=1.1619: kappa=0.43658362
+theta=1/2: Levinson Q=1-y, P=x, R=sqrt(3/5)/theta=1.54919: kappa=0.33374877
+theta=1/4: Levinson Q=1-y, P=x, R=sqrt(3/5)/theta=3.09839: kappa=0.044068597
+theta=1/6: Levinson Q=1-y, P=x, R=sqrt(3/5)/theta=4.64758: kappa=-0.13431861
+theta=1/8: Levinson Q=1-y, P=x, R=sqrt(3/5)/theta=6.19677: kappa=-0.25819964

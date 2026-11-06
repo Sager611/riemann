@@ -1,0 +1,36 @@
+AT21_uncond     xi=0.0976561 Px_beta1    R*=9.774958 kappa=0.069441064 lam=None
+AT21_uncond     xi=0.0976561 Px_free     R*=9.772330 kappa=0.069443574 lam=None
+AT21_uncond     xi=0.0976561 Popt_beta1  R*=9.870309 kappa=0.070053913 lam=0.77070942084328
+AT21_uncond     xi=0.0976561 joint       R*=9.867797 kappa=0.070056239 lam=0.7705898745323214
+AT21_uncond     paper c0=c1 (P=x, beta=1, R=sqrt(3/5)/xi=7.93188): kappa=0.066660
+   rounded R=986779701/100000000 lam=77058987/100000000: kappa_float=0.0700562390 Q(1)=-2.375e-05
+RSC             xi=0.1249999 Px_beta1    R*=7.626157 kappa=0.088904524 lam=None
+RSC             xi=0.1249999 Px_free     R*=7.612800 kappa=0.088928965 lam=None
+RSC             xi=0.1249999 Popt_beta1  R*=7.701284 kappa=0.089686545 lam=0.7698612198504667
+RSC             xi=0.1249999 joint       R*=7.688071 kappa=0.089710179 lam=0.7692515590585323
+RSC             paper c0=c1 (P=x, beta=1, R=sqrt(3/5)/xi=6.19678): kappa=0.085450
+   rounded R=153761411/20000000 lam=19231289/25000000: kappa_float=0.0897101789 Q(1)=-1.996e-04
+Bernard_uncond  xi=0.0925925 Px_beta1    R*=10.310397 kappa=0.065839584 lam=None
+Bernard_uncond  xi=0.0925925 Px_free     R*=10.308731 kappa=0.065841001 lam=None
+Bernard_uncond  xi=0.0925925 Popt_beta1  R*=10.410940 kappa=0.066420768 lam=0.7707634061663977
+Bernard_uncond  xi=0.0925925 joint       R*=10.409313 kappa=0.066422069 lam=0.7706873427363629
+Bernard_uncond  paper c0=c1 (P=x, beta=1, R=sqrt(3/5)/xi=8.36565): kappa=0.063196
+   rounded R=1040931323/100000000 lam=38534367/50000000: kappa_float=0.0664220693 Q(1)=-1.391e-05
+family_PGL3     xi=0.1666666 Px_beta1    R*=5.677498 kappa=0.118708713 lam=None
+family_PGL3     xi=0.1666666 Px_free     R*=5.628439 kappa=0.118888774 lam=None
+family_PGL3     xi=0.1666666 Popt_beta1  R*=5.735471 kappa=0.119735293 lam=0.7655617079409558
+family_PGL3     xi=0.1666666 joint       R*=5.685466 kappa=0.119918739 lam=0.7643033562242035
+family_PGL3     paper c0=c1 (P=x, beta=1, R=sqrt(3/5)/xi=4.64758): kappa=0.114666
+   rounded R=142136643/25000000 lam=298556/390625: kappa_float=0.1199187386 Q(1)=-1.325e-03
+family_PGL2     xi=0.4999999 Px_beta1    R*=1.544243 kappa=0.358438366 lam=None
+family_PGL2     xi=0.4999999 Px_free     R*=1.496942 kappa=0.359410259 lam=None
+family_PGL2     xi=0.4999999 Popt_beta1  R*=1.553193 kappa=0.363500914 lam=0.873464427250315
+family_PGL2     xi=0.4999999 joint       R*=1.476094 kappa=0.365815812 lam=0.9401177022680461
+family_PGL2     paper c0=c1 (P=x, beta=1, R=sqrt(3/5)/xi=1.54919): kappa=0.358437
+   rounded R=147609389/100000000 lam=9401177/10000000: kappa_float=0.3658158115 Q(1)=-2.298e-02
+family_PGL2_simple xi=0.4999999 Px_beta1    R*=1.286910 kappa=0.342761554 lam=None
+family_PGL2_simple xi=0.4999999 Px_free     R*=1.246176 kappa=0.347439176 lam=None
+family_PGL2_simple xi=0.4999999 Popt_beta1  R*=1.292842 kappa=0.348567044 lam=0.8709150215945781
+family_PGL2_simple xi=0.4999999 joint       R*=1.241959 kappa=0.356268506 lam=0.9941903988458145
+family_PGL2_simple paper c0=c1 (P=x, beta=1, R=sqrt(3/5)/xi=1.54919): kappa=0.333749
+   rounded R=62097929/50000000 lam=621369/625000: kappa_float=0.3562685058 Q(1)=-4.276e-02
