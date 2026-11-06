@@ -434,5 +434,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R398 node N2 round 10: records stand (Zenodo, HAL, harvest: nothing new); our record's arithmetic re-audited; Lambda_K <= 0.278828186 for every abelian field unconditionally (routine); radar ambiguity functions, queueing theory and quantum walks: no route [R398.lean](Riemann/Tree/R398.lean)
 - R399 node N11 round 8: inputs of today's two N11 discoveries authenticated (Cureton-Thorner Lean theorem, Kadiri-Wong Delta_L^310, Frei-Sofos-Widmer no constant, Mosunov-Jacobson unconditional, Kimura's classno_upto unconditional); seismic inversion, photonic crystals, polar codes: no route [R399.lean](Riemann/Tree/R399.lean)
 - R400 node N3 round 9: records stand; the 106.25 T^2 limit is a per-zero worst case (density cannot raise it); newest Zenodo Li item claims no proof (known); sandpile groups and n-body central configurations: no route [R400.lean](Riemann/Tree/R400.lean)
-- R401 FRONTIER (next)
+- R401 node N12 round 10: records stand; N >= 3 linear combinations have only Selberg's non-explicit proportion (candidate); a Zenodo spectral-confinement RH proof refuted; Kac-Moody, protein landscapes, room acoustics: no route [R401.lean](Riemann/Tree/R401.lean)
+- R402 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
