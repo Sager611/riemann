@@ -1,0 +1,3 @@
+Q=100 (log2 Q = 6.64): least N over 40 random draws from (1e6, 2e6]: min 10, median 10, max 13
+Q=300 (log2 Q = 8.23): least N over 30 random draws from (1e6, 2e6]: min 12, median 12, max 15
+Q=1000 (log2 Q = 9.97): least N over 12 random draws from (1e6, 2e6]: min 14, median 14, max 15

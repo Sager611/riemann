@@ -1,0 +1,4 @@
+enumcheck k=2: brute force over all symmetric subsets finds 4 closed sets, enumeration 4: identical
+enumcheck k=3: brute force over all symmetric subsets finds 48 closed sets, enumeration 48: identical
+enumcheck k=4: 32403 tuples in 12 groups; 691 distinct relation sets met, all among the 2340 enumerated: ok
+enumcheck: ALL OK in 56 s

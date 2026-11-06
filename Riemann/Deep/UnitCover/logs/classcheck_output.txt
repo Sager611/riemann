@@ -1,0 +1,4 @@
+classcheck k=2: 4 closed sets; 118 moduli checked exhaustively (all tuples), ok
+classcheck k=3: 48 closed sets; 66 moduli checked exhaustively (all tuples), ok
+classcheck k=4: 2340 closed sets; 29 moduli checked exhaustively (all tuples), ok
+classcheck: ALL OK in 610 s

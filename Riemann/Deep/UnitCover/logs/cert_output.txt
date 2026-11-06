@@ -1,0 +1,78 @@
+[core] B_2 = [0.87338196661320751993 +/- 9.74e-22], B = [0.87338196661320760 +/- 3e-22] (> B_2 + 1e-17), 1/(1-B) = [7.89776916646 +/- 9.39e-14]
+[core] ZETA: sum_rho 1/gamma^2 <= [0.046371186 +/- 4.61e-10]
+[core] BMOR at conductor 9: R(5/7;9) = [1.5520999 +/- 2.54e-8] > 0
+[core] b = 1 - B = [0.1266180333867924 +/- 1e-21]; zeta coefficient z1/k2 = (sum 1/gamma^2)/2 = [0.0231856 +/- 6.78e-9]; BMOR constant CB = [0.22737 +/- 3e-10] (explprog)
+[core] kernel: W(1) = [2.424245725 +/- 4.06e-10], W(0) = [115.9708945 +/- 4.84e-8], ||w||_inf <= [38.854381 +/- 3.56e-7]; c_inf = za/(2W(1)) = [0.453311 +/- 5.11e-8]; c_inf/delta0 = [453.31 +/- 9.50e-4] (delta0 = 1/1000)
+[core] limits of the method: k = 4 slope as delta -> 0: 5/(4 log 2) = [1.8034 +/- 3.13e-5]; 1/log 2 = [1.442695 +/- 4.09e-8]; log2(phi(1999)) = [10.964 +/- 3.41e-4]
+[core] y = (820 log Q)^E < Q from log Q = 88.4 on (Q > 10^38.4)
+[delta] Lemma D: for every Q >= 3, y = (820 max(log Q, log 9))^(1/(1-B)), N <= 4 log Q + 200 draws: delta <= 1/1000
+[delta]   664 cells on [log 9, [60.275 +/- 3.11e-4]] (worst delta [0.00098366 +/- 3.94e-9]), tail L >= [60.275 +/- 3.11e-4] margin [0.3443 +/- 3.93e-5]
+[delta]   direct at log Q = 2.197, N = 30: delta <= [0.00095371 +/- 4.02e-9], log10 y <= 25.713
+[delta]   direct at log Q = 6.908, N = 40: delta <= [0.00091254 +/- 3.66e-9], log10 y <= 29.642
+[delta]   direct at log Q = 27.631, N = 100: delta <= [0.00072634 +/- 4.03e-10], log10 y <= 34.397
+[delta]   direct at log Q = 230.258, N = 600: delta <= [0.00059122 +/- 3.15e-9], log10 y <= 41.669
+[delta]   direct at log Q = 2302.585, N = 6000: delta <= [0.00055979 +/- 4.14e-9], log10 y <= 49.567
+[delta] Lemma D: for every Q >= 3, y = (820000 max(log Q, log 9))^(1/(1-B)), N <= 4 log Q + 200 draws: delta <= 1/1000000
+[delta]   664 cells on [log 9, [60.275 +/- 3.11e-4]] (worst delta [9.8258e-7 +/- 1.70e-12]), tail L >= [60.275 +/- 3.11e-4] margin [0.3452 +/- 1.16e-5]
+[delta]   direct at log Q = 2.197, N = 30: delta <= [9.5276e-7 +/- 3.06e-12], log10 y <= 49.406
+[delta]   direct at log Q = 6.908, N = 40: delta <= [9.1141e-7 +/- 1.78e-13], log10 y <= 53.335
+[delta]   direct at log Q = 27.631, N = 100: delta <= [7.2536e-7 +/- 4.44e-12], log10 y <= 58.090
+[delta]   direct at log Q = 230.258, N = 600: delta <= [5.9050e-7 +/- 1.62e-12], log10 y <= 65.363
+[delta]   direct at log Q = 2302.585, N = 6000: delta <= [5.5926e-7 +/- 3.78e-12], log10 y <= 73.260
+[cover] k=1: 1 closed relation sets in 1 classes (pi, k-rank, #d_i>1, prod d_i): max pi = 1/2
+[cover] k=2: 4 closed relation sets in 3 classes (pi, k-rank, #d_i>1, prod d_i): max pi = 1/2
+[cover]   generic-dominance slack (bits, delta = 0): least [0.08170 +/- 4.17e-6] at pi = 3/8, k - rho = 1
+[cover] k=3: 48 closed relation sets in 11 classes (pi, k-rank, #d_i>1, prod d_i): max pi = 1/2
+[cover]   generic-dominance slack (bits, delta = 0): least [0.1650 +/- 3.76e-5] at pi = 3/16, k - rho = 2
+[cover] k=4: 2340 closed relation sets in 57 classes (pi, k-rank, #d_i>1, prod d_i): max pi = 1/2
+[cover]   generic-dominance slack (bits, delta = 0): least [0.2000 +/- 1e-9] at pi = 1/2, k - rho = 0
+[cover] delta = 1/1000:
+[cover] k=1, alpha=1/10000, all Q >= 3: r = ceil([2.88956 +/- 3.26e-6] log Q + 13), s = ceil([0.293576 +/- 4.30e-7] log Q + 0); sup union bound <= [0.6183 +/- 2.21e-5] < 1
+[cover]   => |P| <= 3.1832 log Q + 15.00 = (1/log 2 + 1.7405) log Q + 15.00  (rounded up; slope 2.2064 log2 Q; hole share b1 <= 0.293577)
+[cover]   upper ends: a1 <= 2.889557, b1 <= 0.293577, C = a1 + b1 <= 3.183134
+[cover] k=2, alpha=1/10000, all Q >= 3: r = ceil([2.16873 +/- 1.25e-6] log Q + 29), s = ceil([0.293576 +/- 4.30e-7] log Q + 0); sup union bound <= [0.4641 +/- 9.87e-6] < 1
+[cover]   => |P| <= 2.4624 log Q + 31.00 = (1/log 2 + 1.0197) log Q + 31.00  (rounded up; slope 1.7068 log2 Q; hole share b1 <= 0.293577)
+[cover]   upper ends: a1 <= 2.168729, b1 <= 0.293577, C = a1 + b1 <= 2.462306
+[cover] k=3, alpha=1/10000, all Q >= 3: r = ceil([1.93007 +/- 2.09e-6] log Q + 42), s = ceil([0.293576 +/- 4.30e-7] log Q + 0); sup union bound <= [0.7266 +/- 2.06e-5] < 1
+[cover]   => |P| <= 2.2237 log Q + 44.00 = (1/log 2 + 0.7810) log Q + 44.00  (rounded up; slope 1.5414 log2 Q; hole share b1 <= 0.293577)
+[cover]   upper ends: a1 <= 1.930068, b1 <= 0.293577, C = a1 + b1 <= 2.223645
+[cover] k=4, alpha=1/10000, all Q >= 3: r = ceil([1.81311 +/- 4.95e-6] log Q + 56), s = ceil([0.293576 +/- 4.30e-7] log Q + 0); sup union bound <= [0.5464 +/- 6.26e-6] < 1
+[cover]   => |P| <= 2.1067 log Q + 58.00 = (1/log 2 + 0.6640) log Q + 58.00  (rounded up; slope 1.4603 log2 Q; hole share b1 <= 0.293577)
+[cover]   upper ends: a1 <= 1.813106, b1 <= 0.293577, C = a1 + b1 <= 2.106682
+[cover] k=4, alpha=1/10000, all Q >= 10^100: r = ceil([1.81311 +/- 4.95e-6] log Q + 13), s = ceil([0.293576 +/- 4.30e-7] log Q + 0); sup union bound <= [0.5388 +/- 4.00e-5] < 1
+[cover]   => |P| <= 2.1067 log Q + 15.00 = (1/log 2 + 0.6640) log Q + 15.00  (rounded up; slope 1.4603 log2 Q; hole share b1 <= 0.293577)
+[cover]   upper ends: a1 <= 1.813106, b1 <= 0.293577, C = a1 + b1 <= 2.106682
+[table] Q = 10^3 (log2 Q = 10.0, delta = 1/1000): N = 27;  k=1: 28 (r=25, s=3, alpha=3/100); k=2: 27 (r=21, s=6, alpha=1/10); k=3: 30 (r=24, s=6, alpha=1/10); k=4: 33 (r=27, s=6, alpha=1/10);  c' = 750, max P <= (c' log Q)^(1/(1-B)) <= 10^29.34
+[table] Q = 10^6 (log2 Q = 19.9, delta = 1/1000): N = 44;  k=1: 52 (r=46, s=6, alpha=1/100); k=2: 44 (r=37, s=7, alpha=3/100); k=3: 47 (r=35, s=12, alpha=1/10); k=4: 50 (r=38, s=12, alpha=1/10);  c' = 670, max P <= (c' log Q)^(1/(1-B)) <= 10^31.33
+[table] Q = 10^12 (log2 Q = 39.9, delta = 1/1000): N = 77;  k=1: 97 (r=88, s=9, alpha=3/1000); k=2: 79 (r=67, s=12, alpha=1/100); k=3: 77 (r=62, s=15, alpha=3/100); k=4: 82 (r=67, s=15, alpha=3/100);  c' = 600, max P <= (c' log Q)^(1/(1-B)) <= 10^33.33
+[table] Q = 10^30 (log2 Q = 99.7, delta = 1/1000): N = 164;  k=1: 231 (r=209, s=22, alpha=1/1000); k=2: 181 (r=161, s=20, alpha=3/10000); k=3: 165 (r=143, s=22, alpha=1/1000); k=4: 164 (r=134, s=30, alpha=1/100);  c' = 530, max P <= (c' log Q)^(1/(1-B)) <= 10^36.05
+[table] Q = 10^100 (log2 Q = 332.2, delta = 1/1000): N = 498;  k=1: 745 (r=678, s=67, alpha=1/10000); k=2: 579 (r=512, s=67, alpha=1/10000); k=3: 525 (r=458, s=67, alpha=1/10000); k=4: 498 (r=431, s=67, alpha=1/10000);  c' = 490, max P <= (c' log Q)^(1/(1-B)) <= 10^39.91
+[table] Q = 10^1000 (log2 Q = 3321.9, delta = 1/1000): N = 4858;  k=1: 7336 (r=6670, s=666, alpha=1/100000); k=2: 5676 (r=5010, s=666, alpha=1/100000); k=3: 5127 (r=4461, s=666, alpha=1/100000); k=4: 4858 (r=4192, s=666, alpha=1/100000);  c' = 460, max P <= (c' log Q)^(1/(1-B)) <= 10^47.59
+[cover] k=1: 1 closed relation sets in 1 classes (pi, k-rank, #d_i>1, prod d_i): max pi = 1/2
+[cover] k=2: 4 closed relation sets in 3 classes (pi, k-rank, #d_i>1, prod d_i): max pi = 1/2
+[cover]   generic-dominance slack (bits, delta = 0): least [0.08170 +/- 4.17e-6] at pi = 3/8, k - rho = 1
+[cover] k=3: 48 closed relation sets in 11 classes (pi, k-rank, #d_i>1, prod d_i): max pi = 1/2
+[cover]   generic-dominance slack (bits, delta = 0): least [0.1650 +/- 3.76e-5] at pi = 3/16, k - rho = 2
+[cover] k=4: 2340 closed relation sets in 57 classes (pi, k-rank, #d_i>1, prod d_i): max pi = 1/2
+[cover]   generic-dominance slack (bits, delta = 0): least [0.2000 +/- 1e-9] at pi = 1/2, k - rho = 0
+[cover] delta = 1/1000000:
+[cover] k=3, alpha=1/10000000, all Q >= 3: r = ceil([1.92360 +/- 1.37e-7] log Q + 72), s = ceil([0.145770 +/- 4.65e-7] log Q + 0); sup union bound <= [0.6524 +/- 3.48e-5] < 1
+[cover]   => |P| <= 2.0694 log Q + 74.00 = (1/log 2 + 0.6267) log Q + 74.00  (rounded up; slope 1.4344 log2 Q; hole share b1 <= 0.145771)
+[cover]   upper ends: a1 <= 1.923600, b1 <= 0.145771, C = a1 + b1 <= 2.069371
+[cover] k=4, alpha=1/10000000, all Q >= 3: r = ceil([1.80338 +/- 1.45e-6] log Q + 96), s = ceil([0.145770 +/- 4.65e-7] log Q + 0); sup union bound <= [0.4770 +/- 6.89e-6] < 1
+[cover]   => |P| <= 1.9492 log Q + 98.00 = (1/log 2 + 0.5065) log Q + 98.00  (rounded up; slope 1.3511 log2 Q; hole share b1 <= 0.145771)
+[cover]   upper ends: a1 <= 1.803379, b1 <= 0.145771, C = a1 + b1 <= 1.949150
+[table] Q = 10^12 (log2 Q = 39.9, delta = 1/1000000): N = 77;  k=3: 77 (r=62, s=15, alpha=3/100); k=4: 82 (r=67, s=15, alpha=3/100);  c' = 600000, max P <= (c' log Q)^(1/(1-B)) <= 10^57.02
+[table] Q = 10^100 (log2 Q = 332.2, delta = 1/1000000): N = 470;  k=3: 497 (r=464, s=33, alpha=3/10000000); k=4: 470 (r=435, s=35, alpha=1/1000000);  c' = 490000, max P <= (c' log Q)^(1/(1-B)) <= 10^63.60
+[table] Q = 10^1000 (log2 Q = 3321.9, delta = 1/1000000): N = 4510;  k=3: 4787 (r=4452, s=335, alpha=1/10000000); k=4: 4510 (r=4177, s=333, alpha=3/100000000);  c' = 460000, max P <= (c' log Q)^(1/(1-B)) <= 10^71.28
+[small] first primes: the 17 primes [2, 3, 5, 7, 11, 13] ... [47, 53, 59] cover every 2 <= q <= 2000 (p | q excluded); hardest q: 1995(m=17), 1955(m=17), 1885(m=17), 1785(m=17), 1705(m=17), 1547(m=17)
+[small]   P = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59]
+[small] primes > 2000: the 16 primes [2003, 2011, 2017, 2027, 2029, 2039] ... [2099, 2111, 2113] cover every 2 <= q <= 2000 (p | q excluded); hardest q: 1999(m=16), 1883(m=15), 1847(m=15), 1843(m=15), 1831(m=15), 1829(m=15)
+[small]   P = [2003, 2011, 2017, 2027, 2029, 2039, 2053, 2063, 2069, 2081, 2083, 2087, 2089, 2099, 2111, 2113]
+[small]   first primes adversarial check: 3:ok 4:ok 6:ok 8:ok 30:ok 210:ok 1024:ok 1155:ok 1365:ok 1001:ok 1980:ok 1999:ok 1997:ok 1993:ok 2000:ok
+[small]   primes > 2000 adversarial check: 3:ok 4:ok 6:ok 8:ok 30:ok 210:ok 1024:ok 1155:ok 1365:ok 1001:ok 1980:ok 1999:ok 1997:ok 1993:ok 2000:ok
+[small] Q = 100: the first 11 primes (up to 31) cover every 2 <= q <= Q; so do the 9 least primes > Q (up to 139)
+[small] Q = 300: the first 13 primes (up to 41) cover every 2 <= q <= Q; so do the 12 least primes > Q (up to 373)
+[small] Q = 1000: the first 15 primes (up to 47) cover every 2 <= q <= Q; so do the 14 least primes > Q (up to 1091)
+[small] done in 3.6 s
+[cert] ALL CERTIFIED (all) in 53.2 s
