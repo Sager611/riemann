@@ -1,0 +1,35 @@
+A: Kirchhoff flower petals log 2, log 3, log 5; S orthogonal: True
+A: weights W_G(log N) [graph]  vs  W_zeta(log N) = -Lambda(N)/sqrt(N)
+   N=  2  W_G=+0.462098  W_zeta=-0.490129  
+   N=  3  W_G=+0.732408  W_zeta=-0.634284  
+   N=  4  W_G=+0.770164  W_zeta=-0.346574  
+   N=  5  W_G=+1.072959  W_zeta=-0.719763  
+   N=  6  W_G=+0.796338  W_zeta=-0.000000  composite
+   N=  8  W_G=+0.667475  W_zeta=-0.245065  
+   N=  9  W_G=+1.220680  W_zeta=-0.366204  
+   N= 10  W_G=+1.023371  W_zeta=-0.000000  composite
+   N= 12  W_G=-0.368134  W_zeta=-0.000000  composite
+   N= 15  W_G=+1.203578  W_zeta=-0.000000  composite
+   N= 16  W_G=+0.701705  W_zeta=-0.173287  
+   N= 18  W_G=-0.428203  W_zeta=-0.000000  composite
+   N= 20  W_G=-0.443812  W_zeta=-0.000000  composite
+   N= 24  W_G=+0.156941  W_zeta=-0.000000  composite
+   N= 25  W_G=+1.788264  W_zeta=-0.321888  
+   N= 27  W_G=+1.057923  W_zeta=-0.211428  
+   N= 30  W_G=+2.015524  W_zeta=-0.000000  composite
+   N= 32  W_G=+0.690295  W_zeta=-0.122532  
+   N= 36  W_G=+0.530892  W_zeta=-0.000000  composite
+   N= 40  W_G=+0.182167  W_zeta=-0.000000  composite
+   N= 45  W_G=-0.563950  W_zeta=-0.000000  composite
+   N= 48  W_G=-0.063723  W_zeta=-0.000000  composite
+   N= 50  W_G=-0.579559  W_zeta=-0.000000  composite
+   N= 54  W_G=+0.196987  W_zeta=-0.000000  composite
+   N= 60  W_G=-0.000000  W_zeta=-0.000000  composite
+A: eigenvalues in (0,400]: 431, m0=4, Weyl TrL*K/2pi=433.05
+A: first eigenvalues [ 2.261566  3.547397  3.903963  5.46923   5.719202  7.283142  7.807925
+  9.06472   9.273157 11.042891 11.438403 11.711888]
+A: trace formula t=  0.000  spectral=2.2894374295  orbits=2.2894374431  diff=-1.36e-08
+A: trace formula t=  3.000  spectral=1.5894965271  orbits=1.5894965406  diff=-1.35e-08
+A: trace formula t= 14.135  spectral=1.5670796355  orbits=1.5670796491  diff=-1.36e-08
+A: trace formula t= 30.000  spectral=1.6703262326  orbits=1.6703262467  diff=-1.41e-08
+time 14.4

@@ -1,0 +1,16 @@
+DH window realisation, X=log 16.5, kappa=0.284079
+   class log  2: M=4 targets -0.2009 +1.0404 -0.0081 -0.4984  got -0.2009 +1.0404 -0.0081 -0.4984  bonds=4 copies=1 max|lam|=0.767
+   class log  3: M=2 targets +0.1640 +0.6936  got +0.1640 +0.6936  bonds=2 copies=1 max|lam|=0.665
+   class log  6: M=1 targets -0.4412  got -0.4412  bonds=1 copies=1 max|lam|=0.441
+   class log  7: M=1 targets -0.1074  got -0.1074  bonds=1 copies=1 max|lam|=0.107
+   class log 11: M=1 targets -0.3015  got -0.3015  bonds=1 copies=1 max|lam|=0.302
+   class log 12: M=1 targets +0.0886  got +0.0886  bonds=1 copies=1 max|lam|=0.089
+   class log 13: M=1 targets +0.0788  got +0.0788  bonds=1 copies=1 max|lam|=0.079
+   class log 14: M=1 targets +0.2888  got +0.2888  bonds=1 copies=1 max|lam|=0.289
+   short bonds 12 (length 18.7943 vs zeta psi(16)=13.4880), aux 12, max|SS^T-I|=2.2e-16, TrL=53.594
+   eigenvalues (0,400]: 3411 (Weyl 3411.9) m0=4 time 162.5
+   t=  0.0 spectral 15.9952310132  Weyl+DH-weights 15.9952311000  diff -8.7e-08
+   t=  5.0 spectral 16.1644671602  Weyl+DH-weights 16.1644672468  diff -8.7e-08
+   t= 20.0 spectral 15.8050382289  Weyl+DH-weights 15.8050383167  diff -8.8e-08
+   t= 50.0 spectral 16.1056851962  Weyl+DH-weights 16.1056852909  diff -9.5e-08
+time 162.5
