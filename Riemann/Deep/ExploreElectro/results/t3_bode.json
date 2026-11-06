@@ -1,0 +1,47 @@
+{
+"rows": [
+{
+"zero": "dh",
+"beta": 0.808517,
+"gamma": 85.699348,
+"bsy_term_pair": "8.40105e-5",
+"approx_(2b-1)/|rho|^2": "8.4007e-5"
+},
+{
+"zero": "dh",
+"beta": 0.65083,
+"gamma": 114.163343,
+"bsy_term_pair": "2.31449e-5",
+"approx_(2b-1)/|rho|^2": "2.31446e-5"
+},
+{
+"zero": "dh",
+"beta": 0.574356,
+"gamma": 166.479306,
+"bsy_term_pair": "5.36564e-6",
+"approx_(2b-1)/|rho|^2": "5.36563e-6"
+},
+{
+"zero": "dh",
+"beta": 0.724258,
+"gamma": 176.702461,
+"bsy_term_pair": "1.43644e-5",
+"approx_(2b-1)/|rho|^2": "1.43643e-5"
+},
+{
+"zero": "mv",
+"beta": 0.65,
+"gamma": 39.25244858548658,
+"bsy_term_pair": "0.000194675",
+"approx_(2b-1)/|rho|^2": "0.000194656"
+},
+{
+"zero": "hyp T=3e12, beta-1/2=1e-3",
+"beta": 0.501,
+"gamma": 3000000000000.0,
+"bsy_term_pair": "2.22459e-28",
+"approx_(2b-1)/|rho|^2": "2.22222e-28"
+}
+],
+"dh_known_four_total": "0.000126885"
+}

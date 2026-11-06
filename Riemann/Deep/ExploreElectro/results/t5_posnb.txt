@@ -1,0 +1,19 @@
+elementary lower bound (1 - ln^2 2)/2 = 0.259773
+zeta N 1 d+^2 = 0.858212  free d^2 = 0.858212  support [1] sweeps 2
+zeta N 2 d+^2 = 0.506091  free d^2 = 0.289965  support [2] sweeps 4
+zeta N 5 d+^2 = 0.294681  free d^2 = 0.036102  support [3, 4, 5] sweeps 151
+zeta N 10 d+^2 = 0.273289  free d^2 = 0.023772  support [3, 4, 5, 6, 7, 8, 9, 10] sweeps 431
+zeta N 20 d+^2 = 0.271045  free d^2 = 0.016504  support [3, 4, 5, 6, 7, 8, 9, 11, 13, 17, 19] sweeps 615
+zeta N 40 d+^2 = 0.271034  free d^2 = 0.012715  support [3, 4, 5, 6, 7, 8, 9, 11, 13, 17, 19, 23, 31] sweeps 2168
+zeta N 80 d+^2 = 0.271034  free d^2 = 0.010983  support [3, 4, 5, 6, 7, 8, 9, 11, 13, 17, 19, 23, 31] sweeps 1026
+zeta N 160 d+^2 = 0.271034  free d^2 = 0.009346  support [3, 4, 5, 6, 7, 8, 9, 11, 13, 17, 19, 23, 31] sweeps 1338
+dh N 1 d+^2 = 0.146108  free d^2 = 0.146108  support [1] sweeps 2
+dh N 2 d+^2 = 0.116117  free d^2 = 0.116117  support [1, 2] sweeps 29
+dh N 5 d+^2 = 0.068407  free d^2 = 0.065911  support [1, 2, 3, 4] sweeps 61
+dh N 10 d+^2 = 0.067591  free d^2 = 0.052861  support [1, 2, 3, 4, 9] sweeps 66
+dh N 20 d+^2 = 0.066872  free d^2 = 0.046131  support [1, 2, 3, 4, 9, 14] sweeps 72
+dh N 40 d+^2 = 0.066872  free d^2 = 0.037245  support [1, 2, 3, 4, 9, 14, 39] sweeps 73
+dh N 80 d+^2 = 0.066867  free d^2 = 0.034669  support [1, 2, 3, 4, 9, 14, 54] sweeps 72
+zeta N 10  (i) c1 free, rest >= 0: 0.028132  (ii) signs of -mu(k): 0.025883  (iii) c1 <= 0 only: 0.023772  free: 0.023772
+zeta N 40  (i) c1 free, rest >= 0: 0.027225  (ii) signs of -mu(k): 0.013511  (iii) c1 <= 0 only: 0.012715  free: 0.012715
+zeta N 160  (i) c1 free, rest >= 0: 0.027225  (ii) signs of -mu(k): 0.009659  (iii) c1 <= 0 only: 0.009346  free: 0.009346
