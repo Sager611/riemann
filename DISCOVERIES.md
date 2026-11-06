@@ -21,6 +21,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N11) First explicit Littlewood bound without GRH: |L(1, χ)| ≥ 0.11/max(3, log log q) for every primitive χ; h(−d) ≥ 0.035√d/max(3, log log d) (was 1/log q). [details](discoveries/littlewood-half-plane.md)
 - (N11) Record: all imaginary quadratic fields with class number h ≤ 5000 determined without RH or GRH: 102,746,940 fields, largest |d| 6,912,348,787 (was h ≤ 2000, Oct 2026). [details](discoveries/class-number-5000.md)
 - (N9) Record: |ζ(1/2+it)| ≤ 54.6 t^{27/164} for all t ≥ 3 (was 66.7, Patel–Yang 2024, whose proof drops a factor ≈ 1.10 and gives 68.54 as computed). [details](discoveries/sub-weyl-constant.md)
+- (N6) First explicit hyperbolic region unbounded in degree: Riemann's Jensen polynomials J^{d,n} are hyperbolic whenever n³ log²(n+2) ≥ 7000 d⁵ (Holland's constant was never computed). [details](discoveries/jensen-wedge-constant.md)
 
 ## Side results (off the RH tree)
 
