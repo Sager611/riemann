@@ -1,0 +1,5 @@
+t=3.8e7 K=350 n1=2459 R=7 last block 10 terms
+paper bound (CorputSum1, region 1): 195.517  ratio 0.61096
+per-block formula, paper's mu0, c, full last block: 190.777  ratio 0.59615
+per-block mu_r + short last block (same K, c): 181.509  ratio 0.56719
+short last block only (paper's mu0, c): 182.008  ratio 0.56875

@@ -1,0 +1,41 @@
+/Users/adriansager/playground/riemann/.scratch/lst.py:13: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2611.05267  [math.NT 2026-11]  On the van der Corput property for cubes
+2610.07765  [math.NT 2026-10]  The optimal van der Corput property for squares
+-- 2 title hits in 2 cats x (2026-11, 2026-10)
+zenodo 23990920  2026-11-05  The Transient-Loss Functional Compounding Theory (TLFCT)
+zenodo 23990911  2026-11-06  Adaptive surface-integral T-matrix programs for irregular and internally inhomogeneous dielectric particles
+zenodo 23990878  2026-11-05  The Institutionalization-Conditioned Response Attenuation Theory (ICRAT): A Comprehensive Theoretical Architecture, Form
+zenodo 23990705  2026-11-05  Clustering-induced softening through non-affine relaxation in heterogeneous spherical networks
+zenodo 23990701  2026-11-05  THE CONSTRAINT-CONFLICT AND DISCOVERY PRINCIPLE (CCDP)
+zenodo 23990643  2026-11-05  The Cross-System Outcome-Response Framework (CSORF): A Valence-Neutral, N-System Framework for Outcome-Conditioned State
+zenodo 23990605  2026-11-05  The Epistemic Representation-Existence Distinction Framework (EREDF)
+zenodo 23989357  2026-11-05  Dataset for "Engineering Capabilities Relevant to Open Science: A Documentary Multiple-Case Study of Mature FOSS Project
+zenodo 23989841  2026-11-05  Block-Wise Construction of Tetramagic Squares of Orders 48(2304), 52(2704), 56(3136), 60(3600) and 64(4096)
+zenodo 23989772  2026-11-05  Neutrosophic Free Topological Groups: Basic Properties and Examples
+zenodo 23989632  2026-11-05  robimonti/PHASE: PHASE v7.1.13
+zenodo 23988648  2026-11-05  OpenScientist: Supplementary Case Study Data
+zenodo 23988892  2026-11-05  leafgon/ghostos: ghostos v0.2.38
+zenodo 23988550  2026-11-05  Rocq development, mtl2tba tool, and validation artifact for "A Mechanically Checked Translation of MTL_{0,inf} into Time
+zenodo 23988506  2026-11-05  When is 4D-Yang-Mills-Theorie possible; The Mass Gap of Four-Dimensional SU(N) Yang-Mills Theory: A Construction, Its Re
+-- zenodo total 65737
+2026-11-03 hal-05016866 The Spear and the Ring: Emergent Structures in Magnetic Colloidal Suspensions
+2026-11-02 hal-05848048 Moulds, Bimoulds, and some Lie algebras
+2026-10-28 hal-05841540 Direct Reductions and Symmetry-generated Exact Solutions of a Generalized Potential Kadomtsev–Petviashvili Equ
+2026-10-26 hal-05838582 AN IMPROVED UPPER BOUND FOR THE SMALLEST COUNTEREXAMPLE TO THE MERTENS CONJECTURE
+2026-10-07 tel-05784210 Shuffle algebras over trees and dendriform and tridendriform arborified zeta values
+2026-09-20 hal-05756263 The Hodge conjecture for Fermat fourfolds of degree at most 100, and the semi-standard obstruction at degree 7
+2026-09-10 hal-05604679 The threshold for linear independence of multiple zeta values in positive characteristic
+2026-08-31 tel-05732242 Sur le topos Weil-étale d'un corps de nombres
+2026-07-16 hal-05695331 Adelic Dark Siegel Theory on Compact Complex Tori: Hidden Arithmetic Carriers, Local Levels, and Exceptional S
+2026-07-02 tel-05677029 Relations linéaires entre valeurs modulaires multiples associées à des séries d'Eisenstein
+2026-06-07 hal-05647483 Proof of the Hilbert-Pólya Conjecture: Integrating Integer Partitions, the Riemann Zeta Function, and the Gene
+2026-05-29 hal-05638240 Multi–Euler Branches, Selberg Remainder and Zeta Zeros: A Conditional Windowed-Observable Bridge
+2026-05-20 hal-05628529 On the vertical distribution of values of $L$-functions in the Selberg class
+2026-05-19 hal-05625881 The General Transform: Operational Calculus, Abelian Symmetries, and Supersymmetric Duality
+2026-04-27 hal-05595772 A Geometric Zeta Function from Inscribed Polygons and an Obstruction Criterion for the Riemann Hypothesis
+2026-03-13 hal-05551032 On Lerch's manuscript "Sur une analogie réelle de la multiplication complexe
+2026-03-12 hal-05550132 Angular Homothety and a Zeta Function for Twin Primes: A Geometric Classification
+2026-02-23 hal-05522446 Generating functions for compositions with constrained even parts
+2026-02-19 hal-05518706 Prime-Composites →RH (GL1): A Conditional Operator Criterion
+2026-02-19 hal-05518694 CDRH–Theorem II

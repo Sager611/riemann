@@ -1,0 +1,12 @@
+T=1e10     t=1e+10 K=2155 R=18  direct ratio 0.53656 <= formula ratio 0.55971  ok
+T=1e10     t=3e+10 K=3108 R=22  direct ratio 0.53269 <= formula ratio 0.55515  ok
+T=1e10     t=1e+11 K=4642 R=27  direct ratio 0.52696 <= formula ratio 0.55052  ok
+T=1e10     t=1e+12 K=10000 R=39  direct ratio 0.51474 <= formula ratio 0.54264  ok
+T=1e13     t=1e+13 K=21545 R=58  direct ratio 0.50745 <= formula ratio 0.51743  ok
+T=1e13     t=1e+14 K=46416 R=85  direct ratio 0.49982 <= formula ratio 0.51094  ok
+T=1e13     t=1e+15 K=100000 R=126  direct ratio 0.49425 <= formula ratio 0.50526  ok
+T=8.97e17  t=8.97e+17 K=964416 R=391  direct ratio 0.47925 <= formula ratio 0.48205  ok
+T=8.97e17  t=2e+18 K=1259922 R=447  direct ratio 0.47782 <= formula ratio 0.48067  ok
+T=8.97e17  t=1e+19 K=2154435 R=585  direct ratio 0.47514 <= formula ratio 0.47805  ok
+T=8.97e17  t=1e+20 K=4641589 R=859  direct ratio 0.47158 <= formula ratio 0.47462  ok
+max direct/formula = 0.99420 (must be <= 1)

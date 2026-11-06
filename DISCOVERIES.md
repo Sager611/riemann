@@ -15,6 +15,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N4) Sharp odd Robin criterion: RH ⟺ σ(n) < (e^γ/2) n log log n for every odd n > 277093800961598968947975375; Washington–Yang's gap closed. [details](discoveries/odd-robin.md)
 - (N5) Báez-Duarte's natural-number Nyman–Beurling criterion holds in L^p for all 1 < p < 2, also for every Dirichlet L-function; unconditionally true for p ≤ 1.14497. [details](discoveries/nyman-beurling-lp.md)
 - (N10) First explicit power-saving Mertens bound: |M(x)| ≤ 1.84·10^6 x^0.9382 for all x ≥ 1 (before: no explicit exponent below 1). [details](discoveries/mertens-power-saving.md)
+- (N9) Record: |ζ(1/2+it)| ≤ 0.568 t^{1/6} log t for all t ≥ 3, and ≤ 0.4821 t^{1/6} log t for t ≥ 8.97·10^17 (was 0.611, 0.566). [details](discoveries/zeta-critical-line-constant.md)
 - (N11) First explicit Littlewood bound without GRH: |L(1, χ)| ≥ 0.11/max(3, log log q) for every primitive χ; h(−d) ≥ 0.035√d/max(3, log log d) (was 1/log q). [details](discoveries/littlewood-half-plane.md)
 
 ## Side results (off the RH tree)
