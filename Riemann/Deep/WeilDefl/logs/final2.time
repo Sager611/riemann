@@ -1,0 +1,144 @@
+       11.54 real        10.62 user         0.27 sys
+            59883520  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8330  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   3  voluntary context switches
+               14506  involuntary context switches
+           432206368  instructions retired
+           192424991  cycles elapsed
+            21938680  peak memory footprint
+        7.93 real         7.23 user         0.24 sys
+            72400896  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                9107  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   1  voluntary context switches
+               10459  involuntary context switches
+           426644133  instructions retired
+           177435322  cycles elapsed
+            21987832  peak memory footprint
+       77.62 real        73.34 user         1.07 sys
+           100679680  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11244  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   2  voluntary context switches
+               80723  involuntary context switches
+           427541507  instructions retired
+           197331051  cycles elapsed
+            21955064  peak memory footprint
+        7.92 real         7.34 user         0.23 sys
+            72220672  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                9168  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   1  voluntary context switches
+                9418  involuntary context switches
+           426358801  instructions retired
+           203954783  cycles elapsed
+            23331296  peak memory footprint
+        1.29 real         0.98 user         0.16 sys
+            53821440  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8333  page reclaims
+                   3  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  21  messages received
+                   1  signals received
+                  10  voluntary context switches
+                1546  involuntary context switches
+           436625343  instructions retired
+           201350388  cycles elapsed
+            24461840  peak memory footprint
+        7.97 real         7.36 user         0.25 sys
+            72613888  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                9112  page reclaims
+                   2  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  19  voluntary context switches
+                9514  involuntary context switches
+           420333778  instructions retired
+           199152066  cycles elapsed
+            21856784  peak memory footprint
+       11.18 real         9.50 user         0.40 sys
+            88129536  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14089  page reclaims
+                  35  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  83  voluntary context switches
+               15457  involuntary context switches
+           424009849  instructions retired
+           184189632  cycles elapsed
+            22774288  peak memory footprint
+       14.99 real        12.09 user         0.38 sys
+            61816832  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8527  page reclaims
+                  20  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  55  voluntary context switches
+               22730  involuntary context switches
+           433860459  instructions retired
+           188679173  cycles elapsed
+            23626256  peak memory footprint

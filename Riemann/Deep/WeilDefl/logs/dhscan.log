@@ -1,0 +1,8 @@
+c=5  even N=40 5.992e-03  even N=80 5.978e-03  odd N=40 4.424e-01  odd N=80 4.349e-01
+c=7  even N=40 8.694e-05  even N=80 8.611e-05  odd N=40 2.560e-02  odd N=80 2.441e-02
+c=10  even N=40 8.582e-08  even N=80 8.235e-08  odd N=40 6.251e-05  odd N=80 5.861e-05
+c=13  even N=40 9.459e-11  even N=80 8.378e-11  odd N=40 1.168e-07  odd N=80 1.117e-07
+c=16  even N=40 7.871e-14  even N=80 7.175e-14  odd N=40 9.620e-11  odd N=80 9.236e-11
+c=20  even N=40 3.023e-14  even N=80 2.917e-14  odd N=40 8.140e-14  odd N=80 7.887e-14
+c=25  even N=40 2.318e-14  even N=80 2.303e-14  odd N=40 6.321e-14  odd N=80 6.300e-14
+c=30  even N=40 1.806e-14  even N=80 1.843e-14  odd N=40 5.852e-14  odd N=80 5.868e-14

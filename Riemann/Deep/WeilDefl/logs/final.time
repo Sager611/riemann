@@ -1,0 +1,282 @@
+        0.99 real         0.64 user         0.21 sys
+            49479680  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7152  page reclaims
+                 673  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 315  voluntary context switches
+                1291  involuntary context switches
+           420933257  instructions retired
+           195911460  cycles elapsed
+            23364112  peak memory footprint
+        0.76 real         0.58 user         0.15 sys
+            49233920  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7696  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   2  voluntary context switches
+                 805  involuntary context switches
+           419654039  instructions retired
+           175912841  cycles elapsed
+            22102520  peak memory footprint
+        2.09 real         1.76 user         0.16 sys
+            52166656  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7821  page reclaims
+                  33  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  23  voluntary context switches
+                2937  involuntary context switches
+           427291911  instructions retired
+           188605679  cycles elapsed
+            21299704  peak memory footprint
+        1.84 real         1.58 user         0.16 sys
+            52248576  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7869  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   4  voluntary context switches
+                2171  involuntary context switches
+           422885550  instructions retired
+           169059663  cycles elapsed
+            21873168  peak memory footprint
+        9.46 real         8.12 user         0.39 sys
+            64815104  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                9058  page reclaims
+                 550  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 345  voluntary context switches
+               16269  involuntary context switches
+           445382315  instructions retired
+           206804385  cycles elapsed
+            20759056  peak memory footprint
+        8.99 real         8.12 user         0.38 sys
+            72122368  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7499  page reclaims
+                1523  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  14  voluntary context switches
+               10800  involuntary context switches
+           486568120  instructions retired
+           248939628  cycles elapsed
+            20529656  peak memory footprint
+       10.13 real         9.21 user         0.30 sys
+            84164608  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                9742  page reclaims
+                   5  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   4  voluntary context switches
+               11397  involuntary context switches
+           418295231  instructions retired
+           181887977  cycles elapsed
+            20742672  peak memory footprint
+       15.13 real        13.52 user         0.33 sys
+            57704448  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8255  page reclaims
+                 118  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  22  messages received
+                   1  signals received
+                   4  voluntary context switches
+               20680  involuntary context switches
+           445610110  instructions retired
+           221640189  cycles elapsed
+            21266960  peak memory footprint
+       14.37 real        13.43 user         0.34 sys
+            57114624  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8125  page reclaims
+                  14  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 230  voluntary context switches
+               13162  involuntary context switches
+           423184714  instructions retired
+           201391716  cycles elapsed
+            21627408  peak memory footprint
+      135.73 real       114.94 user         2.55 sys
+            75513856  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20904  page reclaims
+                1432  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 252  voluntary context switches
+              221982  involuntary context switches
+           440782326  instructions retired
+           209984817  cycles elapsed
+            22036960  peak memory footprint
+      116.17 real        89.96 user         2.02 sys
+            82477056  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               10926  page reclaims
+                2010  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 363  voluntary context switches
+              216519  involuntary context switches
+           499126819  instructions retired
+           275934607  cycles elapsed
+            22446608  peak memory footprint
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/WeilDefl/cert.py", line 462, in <module>
+    main()
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/WeilDefl/cert.py", line 312, in main
+    X, Y, Sm, maxMd, meta = build(cq, sector, eps, K2arg, perturb, lean=lean)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/WeilDefl/cert.py", line 198, in build
+    assert ck['key'] == [str(cq), sector, str(eps), ctx.prec, len(allc), len(G)], 'checkpoint mismatch'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: checkpoint mismatch
+        0.90 real         0.66 user         0.14 sys
+            50724864  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7764  page reclaims
+                  43  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  97  voluntary context switches
+                1711  involuntary context switches
+           421058593  instructions retired
+           206891877  cycles elapsed
+            22364640  peak memory footprint
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/WeilDefl/cert.py", line 462, in <module>
+    main()
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/WeilDefl/cert.py", line 312, in main
+    X, Y, Sm, maxMd, meta = build(cq, sector, eps, K2arg, perturb, lean=lean)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/WeilDefl/cert.py", line 198, in build
+    assert ck['key'] == [str(cq), sector, str(eps), ctx.prec, len(allc), len(G)], 'checkpoint mismatch'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: checkpoint mismatch
+        0.65 real         0.40 user         0.14 sys
+            48955392  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7688  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   2  voluntary context switches
+                1111  involuntary context switches
+           419252798  instructions retired
+           195560825  cycles elapsed
+            22512120  peak memory footprint
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/WeilDefl/cert.py", line 462, in <module>
+    main()
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/WeilDefl/cert.py", line 312, in main
+    X, Y, Sm, maxMd, meta = build(cq, sector, eps, K2arg, perturb, lean=lean)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/WeilDefl/cert.py", line 198, in build
+    assert ck['key'] == [str(cq), sector, str(eps), ctx.prec, len(allc), len(G)], 'checkpoint mismatch'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: checkpoint mismatch
+        0.67 real         0.45 user         0.15 sys
+            49053696  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7668  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   1  voluntary context switches
+                1198  involuntary context switches
+           427360912  instructions retired
+           211055597  cycles elapsed
+            21840400  peak memory footprint

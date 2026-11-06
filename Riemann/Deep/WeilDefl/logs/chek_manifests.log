@@ -1,0 +1,17 @@
+Chekmachev Zenodo 23847003 v1.1, truncated-weil-form-certificates-en-v1.1.zip (sha256 below), certificates/c<c>_<sector>_eps/manifest.json: eps, margin_lower (7 digits, rigorous bound = this minus one unit of the 7th digit)
+f779dedd59f894e93e849f94dea26c864522122061a1edc323c1a4ffdfef1a99  chek_certs.zip
+c=16 even eps 1.5128005542733381078e-75 margin_lower 7.293616e-77 passed True
+c=16 odd eps 2.1056120472299836589e-71 margin_lower 2.993183e-72 passed True
+c=20 even eps 7.1436780298872377792e-97 margin_lower 3.120086e-98 passed True
+c=20 odd eps 1.5824967260345900129e-92 margin_lower 6.704221e-93 passed True
+c=25 even eps 1.1713385941268074474e-123 margin_lower 5.234191e-125 passed True
+c=25 odd eps 4.0546561810437569560e-119 margin_lower 8.078775e-120 passed True
+c=29 even eps 3.3887641037680338350e-145 margin_lower 1.426111e-146 passed True
+c=29 odd eps 1.5329466444386175069e-140 margin_lower 2.257925e-141 passed True
+eps_choice.csv rows c = 29:
+29,even,0.9*delta/slope,1.4261129130E-145,1.4261130E-146,1.3720985820E-145,0.3787521000,3.3887643704E-145,3.3887641037680338350e-145,7.87E-8
+29,odd,0.9*delta/slope,2.2579275630E-140,2.2579280E-141,1.9586077390E-140,1.3256400000,1.5329462046E-140,1.5329466444386175069e-140,-2.87E-7
+eps_choice.csv rows c = 31 (columns c,sector,rule,delta,probe_eps,probe_margin,slope,eps_rule,eps_record,rel_diff; copied from the same zip before deletion):
+31,even,0.9*delta/slope,2.2861492840E-156,2.2861490E-157,2.2049727960E-156,0.3550796000,5.7945721342E-156,5.7945727624820630486e-156,-1.08E-7
+31,odd,0.9*delta/slope,6.3821806760E-151,6.3821810E-152,5.2091375940E-151,1.8379970000,3.1251207746E-151,3.1251202725938626635e-151,1.61E-7
+=> margin at eps_record = delta - slope*eps_record ~ 0.1 delta = 2.2861492840e-157 (even), 6.3821806760e-152 (odd); ours (logs/c31_*.log): 2.28614928017e-157, 6.38218067472e-152.

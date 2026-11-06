@@ -1,0 +1,21 @@
+== e1_adapted.py 10 even 10 0 60 400 200
+span: max |g^(p)(L/2)| over unit g in V = 3.256e+00, max |g(L/2)| = 3.256e+00, cond(Gram) = 2.21e+07
+sv of projected ladder 2.2e+00 1.7e+00 1.1e+00 ... 2.5e-02 6.3e-03 4.8e-04
+c=10 even kp=10 p=0 N=60: lambda_min complement: 0:-1.81e-15 1:-1.18e-15 2:-9.94e-16 3:-8.32e-16 4:-9.04e-16 5:3.76e-14 6:4.54e-10 7:3.14e-06 8:3.01e-03 9:2.89e-01 10:4.07e-01  all(r=10): 4.067e-01
+K2=427  r=583  span R_est=1.74e-01  (|g^(p)(L/2)| max 6.08e-02, |g(L/2)| max 6.08e-02, max ||g - P_N g||^2 4.4e-07)
+K2=2000  r=2729  span R_est=3.71e-02  (|g^(p)(L/2)| max 6.08e-02, |g(L/2)| max 6.08e-02, max ||g - P_N g||^2 4.4e-07)
+time 0.8
+== e1_adapted.py 10 even 10 4 60 600 200
+span: max |g^(p)(L/2)| over unit g in V = 1.896e+06, max |g(L/2)| = 0.000e+00, cond(Gram) = 6.11e+17
+sv of projected ladder 3.2e+00 2.6e-02 2.0e-05 ... 5.4e-14 1.2e-14 7.9e-16
+c=10 even kp=10 p=4 N=60: lambda_min complement: 0:-1.81e-15 1:-1.49e-15 2:-1.74e-15 3:1.73e-16 4:-6.02e-16 5:4.29e-14 6:6.08e-10 7:6.09e-10 8:4.23e-06 9:4.23e-06 10:4.22e-06  all(r=7): 4.225e-06
+K2=427  r=583  span R_est=4.93e-13  (|g^(p)(L/2)| max 2.26e-04, |g(L/2)| max 7.91e-189, max ||g - P_N g||^2 1.5e-14)
+K2=2000  r=2729  span R_est=4.55e-19  (|g^(p)(L/2)| max 2.26e-04, |g(L/2)| max 7.91e-189, max ||g - P_N g||^2 1.5e-14)
+time 1.3
+== e1_adapted.py 10 even 10 8 60 800 200
+span: max |g^(p)(L/2)| over unit g in V = 3.528e+12, max |g(L/2)| = 0.000e+00, cond(Gram) = 2.22e+18
+sv of projected ladder 3.2e+00 4.8e-03 5.5e-06 ... 3.1e-16 5.5e-17 2.6e-17
+c=10 even kp=10 p=8 N=60: lambda_min complement: 0:-1.81e-15 1:-1.53e-15 2:1.31e-17 3:-1.89e-15 4:1.46e-15 5:4.03e-14 6:4.15e-14 7:4.15e-14 8:4.15e-14 9:4.15e-14 10:4.15e-14  all(r=5): 4.147e-14
+K2=427  r=583  span R_est=6.82e-23  (|g^(p)(L/2)| max 1.32e+01, |g(L/2)| max 2.50e-248, max ||g - P_N g||^2 1.5e-14)
+K2=2000  r=2729  span R_est=2.71e-34  (|g^(p)(L/2)| max 1.32e+01, |g(L/2)| max 2.50e-248, max ||g - P_N g||^2 1.5e-14)
+time 1.9
