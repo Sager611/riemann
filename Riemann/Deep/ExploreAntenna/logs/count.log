@@ -1,0 +1,3 @@
+{"c": 5.0, "N": 30, "landau_per_parity": 4.125, "even_lt_1e-2": 4, "even_lt_1e-6": 3, "even_first": ["1.22e-17", "6.89e-12", "5.76e-7"], "odd_lt_1e-2": 3, "odd_lt_1e-6": 2, "odd_first": ["1.3e-14", "2.04e-9", "6.26e-5"]}
+{"c": 10.0, "N": 71, "landau_per_parity": 9.125, "even_lt_1e-2": 9, "even_lt_1e-6": 7, "even_first": ["1.96e-43", "3.07e-36", "7.02e-30"], "odd_lt_1e-2": 8, "odd_lt_1e-6": 7, "odd_first": ["9.98e-40", "5.59e-33", "6.84e-27"]}
+{"c": 16.0, "N": 128, "landau_per_parity": 15.125, "even_lt_1e-2": 15, "even_lt_1e-6": 13, "even_first": ["3.63e-75", "4.23e-67", "8.15e-60"], "odd_lt_1e-2": 14, "odd_lt_1e-6": 13, "odd_first": ["5.48e-71", "2.14e-63", "2.37e-56"]}
