@@ -388,3 +388,4 @@ import Riemann.Tree.R388
 import Riemann.Tree.R389
 import Riemann.Tree.R390
 import Riemann.Tree.R391
+import Riemann.Tree.R392
