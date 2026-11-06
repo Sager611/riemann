@@ -1,0 +1,20 @@
+check f (0.5+20j) 2.094764613337708e-15 1.9580422324563835
+check f (0.5+150.3j) 7.933209694480418e-14 2.1178062757882654
+check f (0.8+300.1j) 2.920123997752918e-14 0.6357030598905853
+check f (0.5+419j) 2.058246893903435e-13 3.431501717538518
+grid 20950 3.2
+on-line 304 dev first/last [-0.04967022 -0.00537012  0.07330064] [18.1105786  17.78355651 18.17260624] 5.3
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreHelio/results/../code/dh.py:27: RuntimeWarning: invalid value encountered in power
+  return 5.0**(-s)*sum(A[r]*hurwitz(s, r/5.0, M) for r in A)
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreHelio/results/../code/dh.py:17: RuntimeWarning: invalid value encountered in power
+  out += N**(1 - s)/(s - 1) + 0.5*N**(-s)
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreHelio/results/../code/dh.py:17: RuntimeWarning: invalid value encountered in divide
+  out += N**(1 - s)/(s - 1) + 0.5*N**(-s)
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreHelio/results/../code/dh.py:18: RuntimeWarning: invalid value encountered in power
+  fac = s.copy(); term = N**(-s - 1)
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreHelio/results/../code/dh.py:62: RuntimeWarning: invalid value encountered in divide
+  step = fs/d
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreHelio/results/../code/dh.py:63: RuntimeWarning: invalid value encountered in divide
+  step = np.where(np.abs(step) > 0.5, 0.5*step/np.abs(step), step)
+off-line (Re>1/2): [(0.808517, 85.699348), (0.65083, 114.163343), (0.574356, 166.479306), (0.724258, 176.702461), (0.869531, 240.404672), (0.81955, 320.87649), (0.768223, 331.050259), (0.628508, 366.640908), (0.815874, 411.796738)] 52.2
+done 52.2
