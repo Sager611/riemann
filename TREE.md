@@ -438,5 +438,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R402 node N4 round 10: records stand; Chirre-Helfgott's psi bound authenticated as quoted; Robin ratio <= 0.99748 e^gamma on the first 400 CA numbers; ecology, Hopfield networks, sorting networks: no route [R402.lean](Riemann/Tree/R402.lean)
 - R403 node N7 round 11: records stand; Chen-Gupta-Li's family bound authenticated as quoted; Heath-Brown 1979's family result in no public source; metamaterials, cartography, tomography: no route [R403.lean](Riemann/Tree/R403.lean)
 - R404 node N11 round 9: inputs of today's covering discovery authenticated (KST, Hughes, FSW); Prop. 3 rechecked independently; plasma physics, rogue waves, jamming: no route [R404.lean](Riemann/Tree/R404.lean)
-- R405 FRONTIER (next)
+- R405 node N10 round: inputs of today's prime-between-powers discovery authenticated (KLN, HSW, Platt-Trudgian); Diouf's HAL proof for all cubes refuted (circular); 2507.15184 a candidate refinement; cellular automata, motion planning, nuclear structure: no route [R405.lean](Riemann/Tree/R405.lean)
+- R406 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
