@@ -1,0 +1,9 @@
+$ uv run --no-project --with numpy --with python-flint python3 Riemann/Deep/MLimsup/spotcheck.py .scratch/mlimsup/data --high 1
+(a) 40 zeros (incl. 1-10, 14399, 14400, 28 random): all agree  (41 s)
+(b) zero 1: interval Newton at 33010 bits: N(B) inside B: True (|zeta(s0)| ~ 1.39e-9852; 27 s)
+$ ... spotcheck.py .scratch/mlimsup/data --high 2,3,7213,14400
+(a) 40 zeros (incl. 1-10, 14399, 14400, 28 random): all agree  (41 s)
+(b) zero 2: interval Newton at 33010 bits: N(B) inside B: True (|zeta(s0)| ~ 2.21e-9853; 27 s)
+(b) zero 3: interval Newton at 33010 bits: N(B) inside B: True (|zeta(s0)| ~ 3.46e-9853; 24 s)
+(b) zero 7213: interval Newton at 33010 bits: N(B) inside B: True (|zeta(s0)| ~ 8.42e-9849; 43 s)
+(b) zero 14400: interval Newton at 33010 bits: N(B) inside B: True (|zeta(s0)| ~ 3.37e-9845; 50 s)

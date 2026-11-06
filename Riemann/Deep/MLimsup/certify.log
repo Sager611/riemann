@@ -1,0 +1,45 @@
+Weisz data sha256 ok (zeros npz, y+, y-)
+  2000 zeros, 8 s
+  4000 zeros, 13 s
+  6000 zeros, 19 s
+  8000 zeros, 24 s
+  10000 zeros, 29 s
+  12000 zeros, 34 s
+  14000 zeros, 40 s
+  ext zeros up to 14900, 60 s
+  ext zeros up to 15400, 79 s
+  ext zeros up to 15900, 98 s
+  ext zeros up to 16400, 116 s
+  ext zeros up to 16900, 135 s
+  ext zeros up to 17400, 154 s
+  ext zeros up to 17900, 172 s
+  ext zeros up to 18400, 193 s
+  ext zeros up to 18900, 215 s
+  ext zeros up to 19400, 237 s
+  ext zeros up to 19900, 261 s
+  ext zeros up to 20311, 281 s
+{
+ "jp_plus": "[2.061753651458528215783067915815088721408 +/- 8.98e-41]",
+ "jp_minus": "[-2.064715543529172651492003826890736071836 +/- 1.38e-40]",
+ "k_plus": "[2.076673679915428162560750819475867744023 +/- 3.47e-40]",
+ "k_minus": "[-2.078984365763753533159312118606853917553 +/- 4.18e-40]",
+ "ext_plus": {
+  "T1": "18292.5000000",
+  "N(T1)": 20311,
+  "last_zero_used": 20311,
+  "penalty": "[0.0027735381556268123930 +/- 2.39e-24]"
+ },
+ "ext_minus": {
+  "T1": "18292.5000000",
+  "N(T1)": 20311,
+  "last_zero_used": 20311,
+  "penalty": "[0.0025665191528370111123 +/- 2.55e-23]"
+ },
+ "bound_plus (h_k(y+) >=)": "[2.07390014175980135016775 +/- 3.20e-24]",
+ "bound_minus (h_k(y-) <=)": "[-2.07641784661091652204704 +/- 4.46e-24]"
+}
+cross-check: Weisz JP values reproduced to 1e-40: True
+claim: limsup M(x)/sqrt(x) >= h_k+(y+) > 2.0739001417: True
+claim: liminf M(x)/sqrt(x) <= h_k-(y-) < -2.0764178466: True
+ALL CLAIMS VERIFIED
+time 281 s

@@ -16,6 +16,8 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N5) Báez-Duarte's natural-number Nyman–Beurling criterion holds in L^p for all 1 < p < 2, also for every Dirichlet L-function; unconditionally true for p ≤ 1.14497. [details](discoveries/nyman-beurling-lp.md)
 - (N10) First explicit power-saving Mertens bound: |M(x)| ≤ 1.84·10^6 x^0.9382 for all x ≥ 1 (before: no explicit exponent below 1). [details](discoveries/mertens-power-saving.md)
 - (N9) Record: |ζ(1/2+it)| ≤ 0.568 t^{1/6} log t for all t ≥ 3, and ≤ 0.4821 t^{1/6} log t for t ≥ 8.97·10^17 (was 0.611, 0.566). [details](discoveries/zeta-critical-line-constant.md)
+- (N13, N1) The Weil form of Connes–Consani–Moscovici has a simple even ground state for every λ ∈ [√2, √20] (was one window); eight new certified terms of OEIS A401172. [details](discoveries/weil-simple-ground-state.md)
+- (N10) Conditional record: lim sup M(x)/√x > 2.07390 and lim inf < −2.07641, given Weisz's published zero data, as his 2.06175 / −2.06471 is. [details](discoveries/mertens-limsup.md)
 - (N11) First explicit Littlewood bound without GRH: |L(1, χ)| ≥ 0.11/max(3, log log q) for every primitive χ; h(−d) ≥ 0.035√d/max(3, log log d) (was 1/log q). [details](discoveries/littlewood-half-plane.md)
 
 ## Side results (off the RH tree)
