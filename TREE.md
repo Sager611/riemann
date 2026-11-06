@@ -440,5 +440,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R404 node N11 round 9: inputs of today's covering discovery authenticated (KST, Hughes, FSW); Prop. 3 rechecked independently; plasma physics, rogue waves, jamming: no route [R404.lean](Riemann/Tree/R404.lean)
 - R405 node N10 round: inputs of today's prime-between-powers discovery authenticated (KLN, HSW, Platt-Trudgian); Diouf's HAL proof for all cubes refuted (circular); 2507.15184 a candidate refinement; cellular automata, motion planning, nuclear structure: no route [R405.lean](Riemann/Tree/R405.lean)
 - R406 node N12 round 11: inputs of today's three-function discovery authenticated (Dousselin, Lamzouri, 2610.08965); no pre-emption; candidate: optimised Selberg method for N >= 4; phyllotaxis, immunology, climate: no route [R406.lean](Riemann/Tree/R406.lean)
-- R407 FRONTIER (next)
+- R407 node N11 round 10: five routine harvest4 corollaries checked (Elkies primes, CARMICHAELS in P, Shusterman's problem, Borromean triples, Louboutin-Gica), two scout verdicts corrected; fracture mechanics, optical design, hydrology: no route [R407.lean](Riemann/Tree/R407.lean)
+- R408 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
