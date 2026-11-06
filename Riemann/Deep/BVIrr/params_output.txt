@@ -1,0 +1,48 @@
+== Prop 19' margin and BV's window (condiX), part (1): m = 1, X1 = tau (c0 d/100)^(1/2) / log d
+log10d           X1        d^0.1   condiX       margin  delta_min
+    12         1810        15.85       no       -58.95     0.0404
+    15    4.578e+04        31.62      yes        195.6    0.00205
+    20    1.086e+07          100      yes    6.773e+04   1.19e-05
+    26    8.352e+09        398.1      yes     5.22e+07   2.05e-08
+    30    7.238e+11         1000      yes    4.524e+09   2.76e-10
+    40    5.429e+16        1e+04      yes    3.393e+14   4.98e-15
+    50    4.343e+21        1e+05      yes    2.714e+19   7.86e-20
+    60    3.619e+26        1e+06      yes    2.262e+24   1.14e-24
+    80    2.714e+36        1e+08      yes    1.696e+34   2.04e-34
+   100    2.171e+46        1e+10      yes    1.357e+44   3.21e-44
+
+== part (2): m = ceil(30 (log d)^2) as BV l.2463 (>= Wielandt 6 log d), X2^2 = c0 tau^2 d / (100 m (log md)^2)
+log10d        m           X2   100m^2d^.1   condiX    margin19'     margin_w  delta_min
+    30   143152    1.633e+09    2.049e+15       no   -9.574e+06    4.932e+07     0.0121
+    40   254492     9.48e+13    6.477e+16       no    5.925e+11    2.962e+12   4.95e-07
+    50   397643    6.194e+18    1.581e+18      yes    3.871e+16    1.935e+17   1.48e-11
+    60   572605    4.364e+23    3.279e+19      yes    2.727e+21    1.364e+22   3.63e-16
+    70   779380    3.241e+28    6.074e+20      yes    2.026e+26    1.013e+27   7.75e-21
+    80  1017965    2.502e+33    1.036e+22      yes    1.564e+31     7.82e+31    1.5e-25
+   100  1590570    1.621e+43     2.53e+24      yes    1.013e+41    5.066e+41   4.52e-35
+   150  3578782    7.332e+67    1.281e+30      yes    4.583e+65    2.291e+66   3.37e-59
+   200  6362278    4.163e+92    4.048e+35      yes    2.602e+90    1.301e+91   1.41e-83
+
+== smallest d with d^(1/10) >= a log d (a = 640: Prop 19' with only X >= m d^(1/10); a = 6.4: with condiX)
+a =  640.0 : d >= 10^48.55
+a =    6.4 : d >= 10^25.81
+
+== Varju-Xu with the strip: X = A log d, error d^2 X^2 log d e^{-X/32} = d^{2 - A/32} (log d)^3 * A^2
+A =   5 : exponent 2 - A/32 = +1.84375  (RH: 2 - A/2 = -0.50)  l > A/eps
+A =  64 : exponent 2 - A/32 = +0.00000  (RH: 2 - A/2 = -30.00)  l > A/eps
+A =  80 : exponent 2 - A/32 = -0.50000  (RH: 2 - A/2 = -38.00)  l > A/eps
+A =  81 : exponent 2 - A/32 = -0.53125  (RH: 2 - A/2 = -38.50)  l > A/eps
+A =  96 : exponent 2 - A/32 = -1.00000  (RH: 2 - A/2 = -46.00)  l > A/eps
+
+== Varju-Xu Cor 1.3 range f(d) >= 2^{a pi(d)}: a = 1/(1-T) for a half-plane Re s > T for Dirichlet L-functions
+RH (VX's range, a = 2)                           T = 0.50000000000000000  a = 2.000000
+Cureton-Thorner 31/32 (via quadratic fields)     T = 0.96875000000000000  a = 32.000000
+7/8 (OpenAI zeta; Hu Hecke, unrefereed)          T = 0.87500000000000000  a = 8.000000
+Bebel Lean T* = B_2 + 2.2e-254                   T = 0.87338196661320755  a = 7.897769
+
+== BGS 2502.17218 exponential step: x = e^{c'n}; need eps < c' delta / 2 (delta = strip width)
+RH : eps < c'/4
+CT : eps < c'/64
+== Eberhard m = 1: X = theta*c*n; errors e^{-delta X} and e^{X - cn}; best theta = 1/(1+delta)
+RH : X = 0.6667 c n, both errors e^{-0.3333 c n}
+CT : X = 0.9697 c n, both errors e^{-0.0303 c n}
