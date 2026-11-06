@@ -1,0 +1,6 @@
+== mv window [10.0, 60.0]  N_0 = 11  zeros of F right of line = 1.0  N_total = 13  L = 1.7175  (77 s)
+   F+0.05F'       W =   10.9952  kappa(right) =       1.0  N_total - 2 kappa - W = 0.00476  index bound N_0 >= W - 1: True  refinements 0
+   F+0.2F'        W =   10.9811  kappa(right) =       1.0  N_total - 2 kappa - W =  0.0189  index bound N_0 >= W - 1: True  refinements 0
+   F+1F'          W =   10.9205  kappa(right) =       1.0  N_total - 2 kappa - W = 0.07953  index bound N_0 >= W - 1: True  refinements 0
+   F+5F'          W =   10.9126  kappa(right) =       1.0  N_total - 2 kappa - W = 0.08735  index bound N_0 >= W - 1: True  refinements 1
+   Levinson E_L   W =   10.7918  kappa(right) =       1.0  N_total - 2 kappa - W =  0.2082  index bound N_0 >= W - 1: True  refinements 1

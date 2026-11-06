@@ -1,0 +1,4 @@
+dheuler     7: N_0 =  157  N_total =   177.0  off-line =  20  W =  148.779  kappa_B (zeros of B, Re>1/2) =   11.0  osc arg B/pi =  22.28  mean motion of arg B =    -0.28  [N_total - W = 28.22]  (58 s)
+dheuler    13: N_0 =  155  N_total =   199.0  off-line =  44  W =  150.712  kappa_B (zeros of B, Re>1/2) =   10.0  osc arg B/pi =  20.42  mean motion of arg B =   -0.256  [N_total - W = 48.29]  (88 s)
+dheuler    29: N_0 =  157  N_total =   271.0  off-line = 114  W =  142.751  kappa_B (zeros of B, Re>1/2) =   14.0  osc arg B/pi =  26.51  mean motion of arg B =   -0.331  [N_total - W = 128.2]  (161 s)
+dheuler    59: N_0 =  161  N_total =   511.0  off-line = 350  W =  122.798  kappa_B (zeros of B, Re>1/2) =   24.0  osc arg B/pi =  48.59  mean motion of arg B =   -0.608  [N_total - W = 388.2]  (389 s)

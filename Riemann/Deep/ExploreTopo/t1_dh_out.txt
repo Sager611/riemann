@@ -1,0 +1,8 @@
+DH on [1, 120]: N_0 (sign changes, step 0.05) = 64  (54 s)
+   zeros with 0.505 < Re s < 1.6: 2.0  ->  N_total = N_0 + 2 * that = 68  (161 s)
+   Gram intervals: 68 windows, odd parity 64 -> certified fraction 0.9412
+   equal windows 0.25 x mean spacing: 272 windows, odd parity 64 -> certified fraction 0.9412
+   equal windows 0.50 x mean spacing: 135 windows, odd parity 62 -> certified fraction 0.9118
+   equal windows 1.00 x mean spacing: 67 windows, odd parity 44 -> certified fraction 0.6471
+   equal windows 2.00 x mean spacing: 32 windows, odd parity 11 -> certified fraction 0.1618
+   (163 s)

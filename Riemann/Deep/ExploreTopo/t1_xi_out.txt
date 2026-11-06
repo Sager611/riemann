@@ -1,0 +1,8 @@
+RS check (t, mpmath siegelz, numpy RS): [(20.5, 0.599329, 0.598435), (101.3, 0.056399, 0.056434), (555.5, -1.362044, -1.362063), (1999.1, -1.423571, -1.423573)]
+zeta on [10, 2000]: N_0 (sign changes, step 0.002) = 1517; N(T) (mpmath nzeros, argument principle) = 1517  (1 s)
+   Gram intervals: 1515 windows, odd parity 1357 -> certified fraction 0.8945
+   equal windows 0.25 x mean spacing: 6066 windows, odd parity 1513 -> certified fraction 0.9974
+   equal windows 0.50 x mean spacing: 3032 windows, odd parity 1455 -> certified fraction 0.9591
+   equal windows 1.00 x mean spacing: 1515 windows, odd parity 1033 -> certified fraction 0.6809
+   equal windows 2.00 x mean spacing: 756 windows, odd parity 379 -> certified fraction 0.2498
+   moved pair: gamma_6 = 37.5862 in Gram interval [35.4672, 38.9992], gamma_7 = 40.9187 in [38.9992, 42.3636]: different intervals; for mv both lose their odd parity (2 certified zeros fewer), while N(T) is unchanged

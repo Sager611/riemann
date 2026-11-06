@@ -1,0 +1,6 @@
+== xi window [10.0, 60.0]  N_0 = 13  zeros of F right of line = -8.62781e-21  N_total = 13  L = 1.7175  (60 s)
+   F+0.05F'       W =   12.9952  kappa(right) = -6.90225e-20  N_total - 2 kappa - W = 0.004773  index bound N_0 >= W - 1: True  refinements 0
+   F+0.2F'        W =   12.9811  kappa(right) = 2.58834e-20  N_total - 2 kappa - W = 0.01895  index bound N_0 >= W - 1: True  refinements 0
+   F+1F'          W =   12.9202  kappa(right) = 3.45112e-20  N_total - 2 kappa - W = 0.07976  index bound N_0 >= W - 1: True  refinements 0
+   F+5F'          W =   12.9123  kappa(right) = 4.3139e-20  N_total - 2 kappa - W = 0.08771  index bound N_0 >= W - 1: True  refinements 0
+   Levinson E_L   W =   12.7916  kappa(right) = -5.17668e-20  N_total - 2 kappa - W =  0.2084  index bound N_0 >= W - 1: True  refinements 0

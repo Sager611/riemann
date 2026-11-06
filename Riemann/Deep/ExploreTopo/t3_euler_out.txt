@@ -1,0 +1,6 @@
+euler       3: N_0 =  108  N_total =   116.0  off-line =   8  W =  107.868  kappa_B (zeros of B, Re>1/2) = 2.8272e-16  osc arg B/pi =  0.891  mean motion of arg B =  0.00825  [N_total - W = 8.132]  (36 s)
+euler       7: N_0 =  108  N_total =   110.0  off-line =   2  W =  107.997  kappa_B (zeros of B, Re>1/2) =    0.0  osc arg B/pi =  1.345  mean motion of arg B =  0.00987  [N_total - W = 2.003]  (73 s)
+euler      13: N_0 =  108  N_total =   132.0  off-line =  24  W =  108.006  kappa_B (zeros of B, Re>1/2) = -7.0679e-17  osc arg B/pi =  1.419  mean motion of arg B =  0.00999  [N_total - W = 23.99]  (57 s)
+euler      29: N_0 =  108  N_total =   208.0  off-line = 100  W =  108.105  kappa_B (zeros of B, Re>1/2) =    0.0  osc arg B/pi =  1.483  mean motion of arg B =   0.0112  [N_total - W = 99.89]  (86 s)
+euler      59: N_0 =  108  N_total =   344.0  off-line = 236  W =  108.023  kappa_B (zeros of B, Re>1/2) = 4.9475e-16  osc arg B/pi =  1.502  mean motion of arg B =   0.0102  [N_total - W = 236.0]  (150 s)
+euler     101: N_0 =  108  N_total =   504.0  off-line = 396  W =   107.87  kappa_B (zeros of B, Re>1/2) = 3.5339e-16  osc arg B/pi =  1.542  mean motion of arg B =  0.00827  [N_total - W = 396.1]  (251 s)

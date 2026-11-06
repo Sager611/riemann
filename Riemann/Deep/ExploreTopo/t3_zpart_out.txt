@@ -1,0 +1,4 @@
+zpart       2: N_0 =  108  N_total =   110.0  off-line =   2  W =  107.537  kappa_B (zeros of B, Re>1/2) = 1.0602e-16  osc arg B/pi =    0.5  mean motion of arg B =  0.00407  [N_total - W = 2.463]  (18 s)
+zpart       5: N_0 =   92  N_total =   112.0  off-line =  20  W =  63.5858  kappa_B (zeros of B, Re>1/2) =   22.0  osc arg B/pi =  43.63  mean motion of arg B =    -0.55  [N_total - W = 48.41]  (27 s)
+zpart      10: N_0 =   78  N_total =   118.0  off-line =  40  W =  42.1898  kappa_B (zeros of B, Re>1/2) =   33.0  osc arg B/pi =  65.02  mean motion of arg B =    -0.82  [N_total - W = 75.81]  (40 s)
+zpart      30: N_0 =  102  N_total =   136.0  off-line =  34  W =  9.88059  kappa_B (zeros of B, Re>1/2) =   49.0  osc arg B/pi =  95.33  mean motion of arg B =     -1.2  [N_total - W = 126.1]  (95 s)

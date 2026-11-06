@@ -1,0 +1,5 @@
+euler      3: zeros of F with 0.505 < Re s < 0.8, 1 < t < 250: 1.538e-13;  0.8 < Re s < 0.97:    6.0
+euler     29: zeros of F with 0.505 < Re s < 0.8, 1 < t < 250: 1.538e-13;  0.8 < Re s < 0.97:   78.0
+zpart     10: zeros of F with 0.505 < Re s < 0.8, 1 < t < 250:    1.0;  0.8 < Re s < 2.0:   19.0
+dhpart    10: zeros of F with 0.505 < Re s < 0.8, 1 < t < 250:    3.0;  0.8 < Re s < 2.0:    6.0
+dheuler   29: zeros of F with 0.505 < Re s < 0.8, 1 < t < 250:    7.0;  0.8 < Re s < 0.97:   97.0

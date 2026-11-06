@@ -1,0 +1,3 @@
+dhpart      5: N_0 =  171  N_total =   171.0  off-line =   0  W =  171.031  kappa_B (zeros of B, Re>1/2) = -2.8492e-16  osc arg B/pi = 0.6556  mean motion of arg B = 0.000271  [N_total - W = -0.03062]  (27 s)
+dhpart     10: N_0 =  155  N_total =   173.0  off-line =  18  W =  138.891  kappa_B (zeros of B, Re>1/2) =   16.0  osc arg B/pi =  32.27  mean motion of arg B =   -0.405  [N_total - W = 34.11]  (41 s)
+dhpart     30: N_0 =  132  N_total =   174.0  off-line =  42  W =  118.474  kappa_B (zeros of B, Re>1/2) =   26.0  osc arg B/pi =  52.54  mean motion of arg B =   -0.663  [N_total - W = 55.53]  (100 s)

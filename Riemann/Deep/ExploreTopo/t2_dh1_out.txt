@@ -1,0 +1,6 @@
+== dh window [83.0, 88.0]  N_0 = 2  zeros of F right of line = 1.0  N_total = 4  L = 4.2201  (100 s)
+   F+0.05F'       W =   1.83356  kappa(right) =       1.0  N_total - 2 kappa - W =  0.1664  index bound N_0 >= W - 1: True  refinements 0
+   F+0.2F'        W =   1.54871  kappa(right) =       1.0  N_total - 2 kappa - W =  0.4513  index bound N_0 >= W - 1: True  refinements 0
+   F+1F'          W =   1.19741  kappa(right) =       1.0  N_total - 2 kappa - W =  0.8026  index bound N_0 >= W - 1: True  refinements 0
+   F+5F'          W =   1.04255  kappa(right) =       1.0  N_total - 2 kappa - W =  0.9574  index bound N_0 >= W - 1: True  refinements 1
+   Levinson E_L   W =   1.29646  kappa(right) =       1.0  N_total - 2 kappa - W =  0.7035  index bound N_0 >= W - 1: True  refinements 0
