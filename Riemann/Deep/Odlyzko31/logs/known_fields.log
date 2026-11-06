@@ -1,0 +1,43 @@
+2.2.5.1                n= 2 r1= 2 min      rd=   2.2361  31/32 bound   2.224 (margin 1.0054)  classical   2.223  OK
+2.2.5.1                n= 2 r1= 2 abelian  rd=   2.2361  31/32 bound   2.224 (margin 1.0054)  B bound   2.225 (margin 1.0050)  classical   2.223  OK
+2.0.3.1                n= 2 r1= 0 min      rd=   1.7321  31/32 bound   1.721 (margin 1.0064)  classical   1.721  OK
+2.0.3.1                n= 2 r1= 0 abelian  rd=   1.7321  31/32 bound   1.721 (margin 1.0064)  B bound   1.722 (margin 1.0058)  classical   1.721  OK
+3.3.49.1               n= 3 r1= 3 min      rd=   3.6593  31/32 bound   3.614 (margin 1.0125)  classical   3.611  OK
+3.3.49.1               n= 3 r1= 3 abelian  rd=   3.6593  31/32 bound   3.614 (margin 1.0125)  B bound   3.621 (margin 1.0106)  classical   3.611  OK
+3.1.23.1               n= 3 r1= 1 min      rd=   2.8439  31/32 bound   2.813 (margin 1.0110)  classical   2.812  OK
+4.4.725.1              n= 4 r1= 4 min      rd=   5.1890  31/32 bound   5.074 (margin 1.0227)  classical   5.066  OK
+4.4.1125.1             n= 4 r1= 4 abelian  rd=   5.7915  31/32 bound   5.074 (margin 1.1414)  B bound   5.094 (margin 1.1369)  classical   5.066  OK
+4.2.275.1              n= 4 r1= 2 min      rd=   4.0722  31/32 bound   4.012 (margin 1.0150)  classical   4.009  OK
+4.0.117.1              n= 4 r1= 0 min      rd=   3.2889  31/32 bound   3.254 (margin 1.0107)  classical   3.252  OK
+4.0.125.1              n= 4 r1= 0 abelian  rd=   3.3437  31/32 bound   3.254 (margin 1.0276)  B bound   3.258 (margin 1.0263)  classical   3.252  OK
+5.5.14641.1            n= 5 r1= 5 abelian  rd=   6.8095  31/32 bound   6.535 (margin 1.0420)  B bound   6.577 (margin 1.0353)  classical   6.519  OK
+5.3.4511.1             n= 5 r1= 3 min      rd=   5.3809  31/32 bound   5.265 (margin 1.0220)  classical   5.257  OK
+5.1.1609.1             n= 5 r1= 1 min      rd=   4.3784  31/32 bound   4.315 (margin 1.0147)  classical   4.311  OK
+6.6.300125.1           n= 6 r1= 6 min      rd=   8.1825  31/32 bound   7.959 (margin 1.0281)  classical   7.931  OK
+6.6.300125.1           n= 6 r1= 6 abelian  rd=   8.1825  31/32 bound   7.959 (margin 1.0281)  B bound   8.031 (margin 1.0189)  classical   7.931  OK
+6.4.92779.1            n= 6 r1= 4 min      rd=   6.7283  31/32 bound   6.530 (margin 1.0304)  classical   6.514  OK
+6.2.28037.1            n= 6 r1= 2 min      rd=   5.5117  31/32 bound   5.421 (margin 1.0167)  classical   5.412  OK
+6.0.9747.1             n= 6 r1= 0 min      rd=   4.6218  31/32 bound   4.557 (margin 1.0142)  classical   4.552  OK
+6.0.16807.1            n= 6 r1= 0 abelian  rd=   5.0611  31/32 bound   4.557 (margin 1.1106)  B bound   4.570 (margin 1.1075)  classical   4.552  OK
+7.7.20134393.1         n= 7 r1= 7 min      rd=  11.0515  31/32 bound   9.326 (margin 1.1850)  classical   9.285  OK
+7.5.2306599.1          n= 7 r1= 5 min      rd=   8.1095  31/32 bound   7.779 (margin 1.0425)  classical   7.753  OK
+7.3.612233.1           n= 7 r1= 3 min      rd=   6.7097  31/32 bound   6.541 (margin 1.0258)  classical   6.525  OK
+7.1.184607.1           n= 7 r1= 1 min      rd=   5.6535  31/32 bound   5.550 (margin 1.0187)  classical   5.541  OK
+8.8.282300416.1        n= 8 r1= 8 min      rd=  11.3852  31/32 bound  10.630 (margin 1.0710)  classical  10.573  OK
+8.8.324000000.1        n= 8 r1= 8 abelian  rd=  11.5829  31/32 bound  10.630 (margin 1.0896)  B bound  10.787 (margin 1.0738)  classical  10.573  OK
+8.2.4286875.1          n= 8 r1= 2 min      rd=   6.7456  31/32 bound   6.560 (margin 1.0283)  classical   6.543  OK
+8.0.1257728.1          n= 8 r1= 0 min      rd=   5.7869  31/32 bound   5.661 (margin 1.0222)  classical   5.651  OK
+8.0.1265625.1          n= 8 r1= 0 abelian  rd=   5.7915  31/32 bound   5.661 (margin 1.0230)  B bound   5.689 (margin 1.0180)  classical   5.651  OK
+9.9.9685993193.1       n= 9 r1= 9 min      rd=  12.8698  31/32 bound  11.868 (margin 1.0844)  classical  11.794  OK
+9.9.16983563041.1      n= 9 r1= 9 abelian  rd=  13.6984  31/32 bound  11.868 (margin 1.1542)  B bound  12.076 (margin 1.1343)  classical  11.794  OK
+9.7.1904081383.1       n= 9 r1= 7 min      rd=  10.7418  31/32 bound  10.170 (margin 1.0562)  classical  10.117  OK
+9.5.453771377.1        n= 9 r1= 5 min      rd=   9.1595  31/32 bound   8.752 (margin 1.0466)  classical   8.716  OK
+9.3.109880167.1        n= 9 r1= 3 min      rd=   7.8241  31/32 bound   7.569 (margin 1.0337)  classical   7.544  OK
+9.1.29510281.1         n= 9 r1= 1 min      rd=   6.7608  31/32 bound   6.582 (margin 1.0272)  classical   6.565  OK
+10.10.443952558373.1   n=10 r1=10 min      rd=  14.6128  31/32 bound  13.044 (margin 1.1203)  classical  12.950  OK
+10.10.572981288913.1   n=10 r1=10 abelian  rd=  14.9904  31/32 bound  13.044 (margin 1.1492)  B bound  13.306 (margin 1.1266)  classical  12.950  OK
+10.4.3120654523.1      n=10 r1= 4 min      rd=   8.9007  31/32 bound   8.568 (margin 1.0388)  classical   8.533  OK
+10.2.799905449.1       n=10 r1= 2 min      rd=   7.7679  31/32 bound   7.506 (margin 1.0349)  classical   7.481  OK
+10.0.209352647.1       n=10 r1= 0 min      rd=   6.7934  31/32 bound   6.606 (margin 1.0284)  classical   6.588  OK
+10.0.2357947691.1      n=10 r1= 0 abelian  rd=   8.6547  31/32 bound   6.606 (margin 1.3101)  B bound   6.651 (margin 1.3013)  classical   6.588  OK
+known-field check: ALL OK

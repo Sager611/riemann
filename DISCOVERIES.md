@@ -31,6 +31,8 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N11) Random ±1 polynomials, and characteristic polynomials of random integer and symmetric ±1 matrices, are irreducible with probability → 1 without RH (was: under RH/ERH). [details](discoveries/random-polynomials-without-rh.md)
 - (N10) A prime in (x, x + x^{0.856}] for every real x ≥ 1 (was x^{7/8}); x^{0.842} and sixth powers conditionally on an unrefereed density. [details](discoveries/primes-short-intervals.md)
 - (N11) Kopp–Lagarias Problem 1.7 solved: the unit-generated real quadratic orders with 2-torsion class group are exactly their 89 tabulated ones (84 with one class per genus). [details](discoveries/unit-generated-orders.md)
+- (N12, N8) At least 6.8·10⁻⁴ of the zeros of a combination of four Dirichlet L-functions lie on the critical line (was 3.7·10⁻⁹), and c/N for N summands. [details](discoveries/selberg-linear-combinations.md)
+- (N12, N7) Unconditional root-discriminant bounds beyond Odlyzko–Poitou (1977): rd_K ≥ 23.3878 − o(1), totally real 65.6439 − o(1) (were 22.3816, 60.8395). [details](discoveries/discriminant-bounds-strip.md)
 
 ## Side results (off the RH tree)
 

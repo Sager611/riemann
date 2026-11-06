@@ -1,0 +1,14 @@
+Fri Nov  6 13:46:16 UTC 2026
+CROSSOVER ct cross_tc n=2732 r1=0 kernel H b=20.412: rd > 22.38169602 > 22.38161610: PASS
+CROSSOVER ct cross_tr n=1618 r1=1618 kernel H b=20.742: rd > 60.84021986 > 60.83954032: PASS
+CROSSOVER ab cross_tc n=482 r1=0 kernel H b=9.826: rd > 22.38250968 > 22.38161610: PASS
+CROSSOVER ab cross_tr n=285 r1=285 kernel H b=9.9794: rd > 60.86733479 > 60.83954032: PASS
+THRESHOLD ct thr_tc n=1581 r1=0 kernel H b=17.398: rd > 22.00022742 > 22.0: PASS
+THRESHOLD ct thr_tr n=1223 r1=1223 kernel H b=19.129: rd > 60.00039912 > 60.0: PASS
+THRESHOLD ab thr_tr n=35448 r1=35448 kernel H b=25.938: rd > 81.00010131 > 81.0: PASS
+kernels 699  entries 700  bad 0  time 34.8s
+limit classical {'A_r': '60.839540', 'A_c': '22.381616', 'A_r_lo': 60.83954, 'A_c_lo': 22.38161, 'A_r_hi': 60.83955, 'A_c_hi': 22.38162, 'Ic': '[0.6931471806 +/- 4.01e-11]', 'Ir': '[0.5707963268 +/- 5.11e-12]'}
+limit ct {'A_r': '65.643966', 'A_c': '23.387894', 'A_r_lo': 65.64396, 'A_c_lo': 23.38789, 'A_r_hi': 65.64397, 'A_c_hi': 23.3879, 'Ic': '[0.6491685445 +/- 5.34e-12]', 'Ir': '[0.5387691951 +/- 1.71e-11]'}
+limit ab {'A_r': '84.299917', 'A_c': '26.966253', 'A_r_lo': 84.29991, 'A_c_lo': 26.96625, 'A_r_hi': 84.29992, 'A_c_hi': 26.96626, 'Ic': '[0.5068009132 +/- 4.61e-11]', 'Ir': '[0.4310016305 +/- 3.67e-11]'}
+limit liu_arxiv {'A_r': '83.949939', 'A_c': '26.903236', 'A_r_lo': 83.94993, 'A_c_lo': 26.90323, 'A_r_hi': 83.94994, 'A_c_hi': 26.90324, 'Ic': '[0.5091405236 +/- 3.30e-11]', 'Ir': '[0.4328222342 +/- 2.25e-12]'}
+ALL CERTIFIED

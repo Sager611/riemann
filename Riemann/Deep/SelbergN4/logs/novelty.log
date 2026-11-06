@@ -1,0 +1,11 @@
+2026-11-06 13:10-13:30 UTC novelty searches (raw hit lists; see NOVELTY.md)
+lst.py 'linear combination|Selberg class|critical line|Dirichlet L-functions|Selberg.s method|mollif' math.NT math.CV math.CA (2026-10, 2026-11):
+2611.01451 2611.01905 2610.02709 2610.08965 2610.13565 2610.22821 2610.23467 2610.26841 2610.27591 2610.31744 2610.32242 2610.36885 2610.14901 2611.02768 (14 hits)
+zenodo '"linear combinations" "critical line"': 23990121 23984845 23942863 23922416 23891946 23895875 23855923 23845306 23765626 23797298 23788542 23769727 23680718 23644019 23621438 (none relevant)
+axq au:Dousselin: 2408.01401 2311.10285 2303.05890
+axq abs:"linear combination" AND abs:"critical line" AND abs:"zeros": 2610.26841 2508.11108 2311.10285 2010.10490 2007.04317 1602.06328 1311.4862 1301.5144 0704.3448 0102007
+axq abs:"Selberg" AND abs:"linear combination" AND abs:"proportion": 2610.26841 2311.10285
+axq abs:"Selberg's method" AND abs:"critical line": 2609.15329
+axq abs:"Davenport-Heilbronn" AND abs:"critical line": 2503.24275 2010.03521 1703.02844 1407.4358 0311162
+HAL q=Dousselin: tel-05317244v1 (thesis 2025, Thm I.1.2 table 7.41e-9 4.93e-9 3.70e-9 2.95e-9 1.47e-9 1.46e-10 1.44e-11), hal-04302034v1 (paper), hal-04667983v1, hal-04043148v1
+GXL (1 call): supports 2501.00551; refutes 1505.00623, 2401.02813; neutral 2504.08322 2610.26841 2311.10285 1206.1679 1609.03738 ...; nothing explicit for N >= 3 beyond Dousselin

@@ -1,0 +1,12 @@
+Fri Nov  6 13:45:16 UTC 2026
+classical done
+ct done
+ab done
+ct tc crossover n0 = 2732 rd> 22.38169601544287
+ct tr crossover n0 = 1618 rd> 60.84021986453462
+ab tc crossover n0 = 482 rd> 22.382509679657293
+ab tr crossover n0 = 285 rd> 60.86733478988916
+ct tc rd > 22.0 for n >= 1581
+ct tr rd > 60.0 for n >= 1223
+ab tr rd > 81.0 for n >= 35448
+entries 700

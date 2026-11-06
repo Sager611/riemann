@@ -1,0 +1,25 @@
+# Reviewer runs (verdict-only, pasted claims, 2026-11-06 ~13:20 UTC, 5 parallel builtin reviewers, no tools)
+
+R1 counting + per-j combination (DERIVATION §1-2): Claim 1 (m >= meas(G)/H) SOUND; Claim 2 (|I_j|+|M_j| >= H(1-o(1)) on S'_j, meas(S'_j) <~ (sqrtC1+sqrtC2)^2 T/A^2) SOUND;
+  Claim 3 (kappa_F >= 2pi(1/A - N(sqrtC1+sqrtC2)^2/A^3)) SOUND (restrict to t < 2T-H; added to §1).
+R2 integration by parts (§8): inequality for |J| SOUND; d'(x;u) = [psi(x l1)-psi(x l2)]/x^2 SOUND; "O(A) uniformly" GAP: needs uniform bounds on S1, Dm, Dp and on the O(1) in Lambda.
+  Answer: S1, Dm, Dp depend only on u in [0,1] and are bounded by certified box sups (cert.log); the O(1) is (1/2)log(q/2pi). Added to §8.
+R3 local factors, small v (§7): identity FLAW: prefactor is (q/phi(q))^2 d^2/phi(d), not (q/phi(q)) d^2/phi(d) -> text typo fixed (the final Im(K/v) bound and the code, which carry the
+  correct power, are unchanged: Lemma W returns phi(q)/q). |Im(eps e^{ia} w^2)| bound SOUND. Lemma W "FLAW as stated": additive error, not relative; needs (d,q)=1 -> added to §5
+  (error O(1) per use, divided by log xi; A_d = 0 unless (d,q)=1). "Separate bounds on |Im z| and |A'_d|": GAP for Dousselin's route; ours bounds both residual terms (Phi6, Phi4), as stated in §7.
+R4 C3 (§6): Claim on Dousselin's Sigma2' GAP: valid only as an absolute bound -> rephrased: his displayed steps give 16 kappa^2, the printed 8 kappa^2 is unsupported (not necessarily false).
+  Lemma Phi SOUND. Lemma W + C3 formula "GAP as stated; the constants survive repair" with |Atilde_d| <= sum Lambda(k)|A_[d,k]| and Phi non-increasing -> this is what §6 does; made explicit.
+R5 main terms (§4): C5' from Lemma 12 at v->0 SOUND (cutoff y < 2 handled as in Dousselin, l.1113). Derivative route for Im/v GAP as written (sign/normalisation of the Hankel identity;
+  needs explicit derivative error and |Pi'/Pi| = O(loglogT)) -> §4.4 now states iH_2' = LH_2 - 2H_3, the main term of the derivative equals the derivative of the main term, the explicit error
+  O(prod(1+p^{-3/4}) log T sqrt(loglogT)) (l.1148) and |Pi'/Pi| <= (1/2)(loglog d + O(1)). "Substituting an upper bound for a subtracted quantity": no such substitution occurs (all bounds absolute;
+  the only signed factors are (A kappa - 1) > 0 and (A - X/kappa) >= 0 multiplying upper bounds).
+R6 small primes (§10, one reviewer, timed out at 240 s after writing its verdicts): Claim 1 (prime-by-prime split) SOUND; Claim 2 (uniform continuity, truncation K, tails) SOUND;
+  Claim 3 FLAW "in the absolute-factor equality only": the absolute local sum is 7/2 - 2 sqrt 2 at p = 2, k = 1, not 1/phi(p) = 1; 1/phi(p^k) (Dousselin's tau_{1/2} majorant) remains a valid
+  upper bound -> wording fixed (it is used only as an upper bound); signed identities SOUND. Claim 4 FLAW "in the exact constant only": the residual product is over p not dividing qP, and
+  reinserting the excluded factors gives the stated upper bound -> wording fixed; iterated limits and tails SOUND. Claim 5 FLAW as stated (counterexample Im I1 = 0 to "Re I1 is one factor
+  1/log xi smaller") -> the comparison is between the scales of the two upper bounds, and in §7 Im(Atilde'_d)/v = sum b(delta') Im(delta^{-iv} s(delta,v))/(v delta delta') is taken per delta,
+  whose main term tau(delta) h_X(u_delta) has no phase, so its local sums are sigma(d0, 0) and no Im(sigma)/v term occurs; stated so in §10. Claim 6 (comparison with 2609.15329) GAP:
+  plausibility only (normalisations differ) -> labelled "plausibility (not a proof)" in §10.
+R7 first moment and t-dependent log(xi)/Lambda (§3, §8; added after R1-R6): Claim 1 (int (L eta^2 - 1) = o(T) by the rectangle, right side O(1), horizontal sides O(T^{1/6+kappa+eps})) SOUND;
+  Claim 2 (||L eta^2 - 1||^2 <= (C3 - 1 + o(1))T) "GAP unless <~ means <= (C3+o(1))T" -> it does (Dousselin's convention, TeX l.649: f <~ g iff f <= g(1+o(1))), so SOUND;
+  Claim 3 (log xi/Lambda <= kappa/(1/2+(t_d-2)kappa)(1+o(1)) inside the d-average; (A kappa - 1) > 0 multiplies the upper bound) SOUND.
