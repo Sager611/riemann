@@ -1,0 +1,52 @@
+#### results_dd
+V_h 2.84229066258476 E_h 645.807901341307 H 12.9612460926624
+== even N 919552 M 3678208 K 1088 precision dd pivots 918464 completed True
+  r_bound          ours 0.5910641388863115782  theirs 0.5910641388863115782  rel.diff 2.63e-61
+  pole             ours 0  theirs 0.0  rel.diff 0.0
+  tN               ours 1.04338121895214781  theirs 1.04338121895214781  rel.diff 2.98e-61
+  tM               ours 2.6396298610636744457  theirs 2.6396298610636744457  rel.diff 0.0
+  J2M              ours 7.7278582725573114968e-7  theirs 7.7278582725573114968e-7  rel.diff 0.0
+  J4M              ours 6.6983871581667498189e-21  theirs 6.6983871581667498189e-21  rel.diff 0.0
+  omitted          ours 0.28267302886364772826  theirs 0.28267302886364772826  rel.diff 3.56e-58
+  assembly_error   ours 7.1902228373200308361e-10  theirs 7.1902228373200308361e-10  rel.diff 5.72e-58
+  residual(dd)     ours 6.3908986705582921867e-12
+  margin           ours 0.017326970410939089339
+  p0 0.313 C 7.0 D 22.0 G [mpf('177616391.0'), mpf('91.0'), mpf('17.0'), mpf('29923174.0')] u 2^-95
+== odd N 919552 M 3678208 K 1088 precision dd pivots 918464 completed True
+  r_bound          ours 0.59106413888665304369  theirs 0.59106413888665304369  rel.diff 3.95e-61
+  pole             ours 3.7453178566126631479e-19  theirs 3.7453178566126631479e-19  rel.diff 5.4e-61
+  tN               ours 1.0433818450449011038  theirs 1.0433818450449011038  rel.diff 5.96e-61
+  tM               ours 2.6396300175868946848  theirs 2.6396300175868946848  rel.diff 0.0
+  J2M              ours 7.7278572219999930907e-7  theirs 7.7278572219999930907e-7  rel.diff 9.6e-62
+  J4M              ours 6.6983844265157020124e-21  theirs 6.6983844265157020124e-21  rel.diff 0.0
+  omitted          ours 0.28298018494475686523  theirs 0.28298018494475686523  rel.diff 1.39e-57
+  assembly_error   ours 7.4604576340232729578e-10  theirs 7.4604576340232729578e-10  rel.diff 6.27e-58
+  residual(dd)     ours 7.7422780186080099934e-12
+  margin           ours 0.017019814301455093352
+  p0 0.334 C 7.0 D 22.0 G [mpf('237283182.0'), mpf('73.0'), mpf('27.0'), mpf('16921528.0')] u 2^-95
+#### results_f128
+V_h 2.84229066258476 E_h 645.807901341307 H 12.9612460926624
+== even N 919552 M 3678208 K 1088 precision f128 pivots 918464 completed True
+  r_bound          ours 0.5910641388863115782  theirs 0.5910641388863115782  rel.diff 2.63e-61
+  pole             ours 0  theirs 0.0  rel.diff 0.0
+  tN               ours 1.04338121895214781  theirs 1.04338121895214781  rel.diff 2.98e-61
+  tM               ours 2.6396298610636744457  theirs 2.6396298610636744457  rel.diff 0.0
+  J2M              ours 7.7278582725573114968e-7  theirs 7.7278582725573114968e-7  rel.diff 0.0
+  J4M              ours 6.6983871581667498189e-21  theirs 6.6983871581667498189e-21  rel.diff 0.0
+  omitted          ours 0.28267302886364772826  theirs 0.28267302886364772826  rel.diff 3.56e-58
+  assembly_error   ours 7.1902228373200308361e-10  theirs 7.1902228373200308361e-10  rel.diff 5.72e-58
+  residual(f128)   ours 1.0000411292928356803e-12
+  margin           ours 0.017326970416329946881
+  p0 0.313 C 7.0 D 22.0 G [mpf('177616391.0'), mpf('91.0'), mpf('17.0'), mpf('29923174.0')] u 2^-112
+== odd N 919552 M 3678208 K 1088 precision f128 pivots 918464 completed True
+  r_bound          ours 0.59106413888665304369  theirs 0.59106413888665304369  rel.diff 3.95e-61
+  pole             ours 3.7453178566126631479e-19  theirs 3.7453178566126631479e-19  rel.diff 5.4e-61
+  tN               ours 1.0433818450449011038  theirs 1.0433818450449011038  rel.diff 5.96e-61
+  tM               ours 2.6396300175868946848  theirs 2.6396300175868946848  rel.diff 0.0
+  J2M              ours 7.7278572219999930907e-7  theirs 7.7278572219999930907e-7  rel.diff 9.6e-62
+  J4M              ours 6.6983844265157020124e-21  theirs 6.6983844265157020124e-21  rel.diff 0.0
+  omitted          ours 0.28298018494475686523  theirs 0.28298018494475686523  rel.diff 1.39e-57
+  assembly_error   ours 7.4604576340232729578e-10  theirs 7.4604576340232729578e-10  rel.diff 6.27e-58
+  residual(f128)   ours 1.000051439499043335e-12
+  margin           ours 0.017019814308197319931
+  p0 0.334 C 7.0 D 22.0 G [mpf('237283182.0'), mpf('73.0'), mpf('27.0'), mpf('16921528.0')] u 2^-112

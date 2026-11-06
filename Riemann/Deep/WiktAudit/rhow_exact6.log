@@ -1,0 +1,8 @@
+level 1: cells 43  h_k min 7.075005628532498 max 16.896201344213683  maxterms 35  ambiguous 0 flags 0
+level 2: cells 793  h_k min 83.220826913971095 max 184.88602500456741  maxterms 35  ambiguous 0 flags 0
+level 3: cells 11964  h_k min 913.43164420107939 max 2094.5474412609656  maxterms 35  ambiguous 0 flags 0
+level 4: cells 148367  h_k min 10125.83550530848 max 23238.768142609257  maxterms 35  ambiguous 0 flags 0
+level 5: cells 1607080  h_k min 112230.99671535657 max 258359.98467787984  maxterms 35  ambiguous 0 flags 0
+level 6: cells 14951282, max terms 35; test function h = h_5 min 112230.99671535657 max 258359.98467787984
+  computed max ratio (B h)/h = 11.101037276776603 at cell 3753238; ambiguous 0 flags 0
+RESULT maxr_hex 0x1.633bb286edd65p+3 minh_hex 0x1.b666ff28bcd3ep+16 maxterms 35 flags 0

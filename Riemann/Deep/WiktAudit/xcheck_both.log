@@ -1,0 +1,4 @@
+indices [0, 1, 2, 3, 4, 5] parity 0, 6x6 block: max relative difference 8.802e-73 at (0, 0, '0.0290515984659502', '0.0290515984659502')  (8.5 s)
+indices [0, 1, 2, 3, 4, 5] parity 1, 6x6 block: max relative difference 8.793e-73 at (5, 5, '0.0392544462758212', '0.0392544462758212')  (9.0 s)
+indices [0, 1, 7, 30, 63, 100] parity 0, 6x6 block: max relative difference 8.411e-72 at (0, 0, '0.0290515984659502', '0.0290515984659502')  (43.7 s)
+indices [0, 1, 7, 30, 63, 100] parity 1, 6x6 block: max relative difference 8.244e-72 at (7, 7, '0.0497448373599653', '0.0497448373599653')  (32.8 s)

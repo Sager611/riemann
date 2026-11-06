@@ -1,0 +1,5 @@
+computed max ratio  11.101037276776603
+proved bound ||B|| <= 11.101037276776648  (inflation 3.997e-15, T = 35 terms)
+used in the certificate rho_W^up = 11.101037276778 ; slack 1.352e-12
+min h_5 = 112230.99671535657 > 0
+VERDICT rho_W^up VALID

@@ -1,0 +1,51 @@
+core K=24 gap [3.744023019941965161812277762 eta [3.352851789165090208358751924 (0.1s)
+transfer prefix 24 1024 moment tail 1024 4096
+transfer convolution 1
+transfer convolution 2
+transfer convolution 3
+transfer convolution 4
+moment degree 32 from 1024
+moment degree 27 from 2048
+source 24 / 4096
+postcore done (3.6s)
+q=   24 U 3.18685994184e-13 V -1.13057957370e-16 Sqq 3.82623432927e-34  rel 3.30e+08  (theirs contains direct: True)
+q=   25 U 5.56602144659e-12 V -1.97567378289e-15 Sqq 1.18415410937e-31  rel 2.33e+01  (theirs contains direct: True)
+q=  100 U -2010.40830567 V 0.761262660490 Sqq 0.733128726428  rel 2.73e-55  (theirs contains direct: True)
+q=  511 U 2299.00914918 V -0.531750129736 Sqq 0.795335083919  rel 5.93e-55  (theirs contains direct: True)
+q=  512 U 2532.78335294 V -0.867965097362 Sqq 6.07368599969  rel 6.73e-55  (theirs contains direct: True)
+q= 1023 U 4783.74454349 V -0.732241514347 Sqq 4.92931632011  rel 1.55e-54  (theirs contains direct: True)
+q= 1024 U 4148.69596590 V -0.535432637032 Sqq 5.63907860241  rel 1.19e-54  (theirs contains direct: True)
+q= 1025 U 2144.00373824 V 0.0807773774669 Sqq 6.74090442904  rel 4.69e-54  (theirs contains direct: True)
+q= 2047 U 3872.18877392 V 0.443684056138 Sqq 6.16200002205  rel 3.80e-54  (theirs contains direct: True)
+q= 3000 U 7862.33216247 V 0.481475287033 Sqq 8.99310620909  rel 1.28e-54  (theirs contains direct: True)
+q= 4095 U 13866.0619840 V 0.514165198253 Sqq 7.18904314647  rel 2.90e-54  (theirs contains direct: True)
+post-core generators/diagonal: worst rel 3.30e+08
+assembly convolution 1
+assembly convolution 2
+assembly convolution 3
+S_M(24,24): direct 3.76363166841668e-34  binary-reconstructed 1.26307649143765e-25  rel 3.36e+08
+S_M(24,25): direct 6.62156567837011e-33  binary-reconstructed 6.62156567837079e-33  rel 1.02e-13
+S_M(29,300): direct -5.85681251754190e-12  binary-reconstructed -5.8568125175419e-12  rel 2.76e-16
+S_M(200,201): direct 1.30213880010144  binary-reconstructed 1.30213880010144  rel 3.41e-16
+S_M(511,511): direct 0.748646619585787  binary-reconstructed 0.748646619585787  rel 0.00e+00
+S_M(24,511): direct -4.26880028511885e-19  binary-reconstructed -4.26880028511885e-19  rel 1.13e-16
+S_M(300,300): direct 3.97831467642539  binary-reconstructed 3.97831467642539  rel 0.00e+00
+assembled matrix vs dense: worst rel 3.36e+08 (binary64 storage); total 113.8s
+      114.60 real        98.58 user         1.73 sys
+            62865408  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                9144  page reclaims
+                   4  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   1  voluntary context switches
+              154665  involuntary context switches
+           458522499  instructions retired
+           210906666  cycles elapsed
+            27116024  peak memory footprint
