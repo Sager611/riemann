@@ -1,0 +1,5 @@
+check s=3: direct 0.612977389996  L-formula 0.612977389996
+Q2 T=60  total zeros (arg principle) 37.000   on-line sign changes 35   max|Im Lam| on line 1.21e-19   smooth main term (T/pi)log(sqrt|D| T/(2 pi e n0)) = 36.62   13s
+candidates 4
+off-line zero  sigma = 0.7580708934  t = 24.4828213943
+done 50s

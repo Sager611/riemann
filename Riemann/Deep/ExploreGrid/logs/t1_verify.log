@@ -1,0 +1,6 @@
+coefficient identity n <= 3000: Q1 mismatches 0, Q2 mismatches 0
+Q2 zero (mpmath, 30 digits): (0.75807089343824137875 + 24.482821394256568894j)   |Z| = 2.47e-32
+Q1 zero (mpmath, 30 digits): (0.69558634278944813414 + 20.345967881546695455j)   |Z| = 1.1e-31
+Q1 zero (mpmath, 30 digits): (0.80001098817211395993 + 12.038598628718714943j)   |Z| = 7.4e-32
+Q1 zero (mpmath, 30 digits): (1.0259726162187534587 + 61.422798308789397106j)   |Z| = 1.02e-31
+   Euler-product ratio R(s) over primes < 2e6: (-1.0006217408720195+0.0003779914714957571j)  (zero of Z_Q1 = zeta_K (1 + R) needs R = -1)

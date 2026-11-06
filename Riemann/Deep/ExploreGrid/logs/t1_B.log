@@ -1,0 +1,32 @@
+hex T=60  total zeros (arg principle) 35.000   on-line sign changes 35   max|Im Lam| on line 7.59e-20   smooth main term (T/pi)log(sqrt|D| T/(2 pi e n0)) = 34.49   2s
+candidates 1
+done 8s
+check s=3: direct 0.612977390024  L-formula 0.612977389996
+Q2 T=200  total zeros (arg principle) 199.000   on-line sign changes 179   max|Im Lam| on line 1.21e-19   smooth main term (T/pi)log(sqrt|D| T/(2 pi e n0)) = 198.71   61s
+candidates 15
+off-line zero  sigma = 0.7580708934  t = 24.4828213943
+off-line zero  sigma = 0.5359374472  t = 75.6119031724
+off-line zero  sigma = 0.7784114004  t = 98.8287703732
+off-line zero  sigma = 0.5980839054  t = 114.3030197028
+off-line zero  sigma = 0.7645871247  t = 133.1661534348
+off-line zero  sigma = 0.6931755799  t = 147.8953906555
+off-line zero  sigma = 0.5595026041  t = 150.6596670257
+off-line zero  sigma = 0.6397690313  t = 165.7783002115
+off-line zero  sigma = 0.5474727833  t = 184.4682438883
+done 229s
+Q1 T=100  total zeros (arg principle) 100.000   on-line sign changes 70   max|Im Lam| on line 1.24e-19   smooth main term (T/pi)log(sqrt|D| T/(2 pi e n0)) = 99.35   23s
+candidates 22
+off-line zero  sigma = 0.8000109882  t = 12.0385986287
+off-line zero  sigma = 0.9274608808  t = 15.4966340679
+off-line zero  sigma = 0.6955863428  t = 20.3459678815
+off-line zero  sigma = 0.7402570450  t = 33.7568501315
+off-line zero  sigma = 0.9129364012  t = 47.5331626119
+off-line zero  sigma = 1.0259726162  t = 61.4227983088
+off-line zero  sigma = 0.7294031709  t = 64.8097167381
+off-line zero  sigma = 0.7268416151  t = 75.3366588696
+off-line zero  sigma = 0.6334832484  t = 78.0812801997
+off-line zero  sigma = 0.7780393801  t = 79.3253340885
+off-line zero  sigma = 0.8253217431  t = 82.8219450498
+off-line zero  sigma = 0.6593965584  t = 93.3207809542
+off-line zero  sigma = 0.7305918377  t = 96.8375890034
+done 86s
