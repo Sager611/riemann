@@ -1,0 +1,37 @@
+p = 7 (p mod 3 = 1)
+   q=2: l_2=73, c = v^2 = 3 is a non-square mod p (c == l_2 mod p: True)
+   q=3: l_3=37 (control l=73 splits U_3), K_3=F_p^1, s=v_3(Q-1)=1, omega_3=(4, 0) has order 3^1, in K_3: yes
+p = 11 (p mod 3 = 2)
+   q=2: l_2=73, c = v^2 = 7 is a non-square mod p (c == l_2 mod p: True)
+   q=3: l_3=73 (control l=37 splits U_3), K_3=F_p^2, s=v_3(Q-1)=1, omega_3=(0, 1) has order 3^1, in K_3: yes
+        least cubic non-residue a + b*zeta_3 in F_{p^2} by height a+b: (0, 1)
+        least non-square of the form a + zeta_3 in F_{p^2}: a = 3 (norm test agrees)
+p = 13 (p mod 3 = 1)
+   q=2: l_2=73, c = v^2 = 8 is a non-square mod p (c == l_2 mod p: True)
+   q=3: l_3=37 (control l=1009 splits U_3), K_3=F_p^1, s=v_3(Q-1)=1, omega_3=(9, 0) has order 3^1, in K_3: yes
+p = 1000003 (p mod 3 = 1)
+   q=2: l_2=97, c = v^2 = 97 is a non-square mod p (c == l_2 mod p: True)
+   q=3: l_3=37 (control l=73 splits U_3), K_3=F_p^1, s=v_3(Q-1)=1, omega_3=(500501, 0) has order 3^1, in K_3: yes
+p = 1000033 (p mod 3 = 1)
+   q=2: l_2=97, c = v^2 = 97 is a non-square mod p (c == l_2 mod p: True)
+   q=3: l_3=37 (control l=181 splits U_3), K_3=F_p^1, s=v_3(Q-1)=1, omega_3=(837343, 0) has order 3^1, in K_3: yes
+p = 1000000007 (p mod 3 = 2)
+   q=2: l_2=73, c = v^2 = 73 is a non-square mod p (c == l_2 mod p: True)
+   q=3: l_3=181 (control l=37 splits U_3), K_3=F_p^2, s=v_3(Q-1)=2, omega_3=(346553589, 277702003) has order 3^2, in K_3: yes
+        least cubic non-residue a + b*zeta_3 in F_{p^2} by height a+b: (1, 4)
+        least non-square of the form a + zeta_3 in F_{p^2}: a = 4 (norm test agrees)
+p = 1000000009 (p mod 3 = 1)
+   q=2: l_2=193, c = v^2 = 193 is a non-square mod p (c == l_2 mod p: True)
+   q=3: l_3=73 (control l=37 splits U_3), K_3=F_p^1, s=v_3(Q-1)=2, omega_3=(995861416, 0) has order 3^2, in K_3: yes
+p = 998244353 (p mod 3 = 2)
+   q=2: l_2=73, c = v^2 = 73 is a non-square mod p (c == l_2 mod p: True)
+   q=3: l_3=37 (control l=109 splits U_3), K_3=F_p^2, s=v_3(Q-1)=1, omega_3=(0, 1) has order 3^1, in K_3: yes
+        least cubic non-residue a + b*zeta_3 in F_{p^2} by height a+b: (0, 1)
+        least non-square of the form a + zeta_3 in F_{p^2}: a = 2 (norm test agrees)
+p = 2305843009213693951 (p mod 3 = 1)
+   q=2: l_2=193, c = v^2 = 193 is a non-square mod p (c == l_2 mod p: True)
+   q=3: l_3=37 (control l=181 splits U_3), K_3=F_p^1, s=v_3(Q-1)=2, omega_3=(633067237080992132, 0) has order 3^2, in K_3: yes
+p = 1000000000000000009 (p mod 3 = 1)
+   q=2: l_2=193, c = v^2 = 193 is a non-square mod p (c == l_2 mod p: True)
+   q=3: l_3=73 (control l=37 splits U_3), K_3=F_p^1, s=v_3(Q-1)=2, omega_3=(947092165484025403, 0) has order 3^2, in K_3: yes
+ALL TABLE CHECKS PASSED (10 primes)

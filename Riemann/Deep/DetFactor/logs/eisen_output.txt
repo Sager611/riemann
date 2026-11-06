@@ -1,0 +1,11 @@
+== F_p[w], p = 2 mod 3
+r=2:  1633 primes (0 with a unit non-residue); max least norm 73 (p=28019); min log10(bound/norm) = 15.7
+r=3:  1633 primes (1090 with a unit non-residue); max least norm 43 (p=5669); min log10(bound/norm) = 27.5
+r=5:   813 primes (0 with a unit non-residue); max least norm 19 (p=3329); min log10(bound/norm) = 34.8
+r=7:   531 primes (0 with a unit non-residue); max least norm 19 (p=5081); min log10(bound/norm) = 43.8
+== F_p[i], p = 3 mod 4
+r=2:  1632 primes (0 with a unit non-residue); max least norm 61 (p=14551); min log10(bound/norm) = 17.9
+r=3:  1632 primes (0 with a unit non-residue); max least norm 53 (p=11411); min log10(bound/norm) = 25.5
+r=5:   811 primes (0 with a unit non-residue); max least norm 29 (p=6599); min log10(bound/norm) = 35.7
+r=7:   541 primes (0 with a unit non-residue); max least norm 17 (p=1567); min log10(bound/norm) = 45.7
+ALL THEOREM E CHECKS PASSED

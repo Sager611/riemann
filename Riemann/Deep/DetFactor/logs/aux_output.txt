@@ -1,0 +1,25 @@
+Part 1: all primes 5 <= p <= 200000, p not dividing 6q
+q= 2:  17982 primes; max l_q(p) = 937 at p = 121951; ratio l/(q^2 log p) = 20.00; min log10(bound/l) = 48.4
+q= 3:  17982 primes; max l_q(p) = 757 at p = 75629; ratio l/(q^2 log p) = 7.49; min log10(bound/l) = 62.7
+q= 5:  17981 primes; max l_q(p) = 661 at p = 96671; ratio l/(q^2 log p) = 2.30; min log10(bound/l) = 76.8
+q= 7:  17981 primes; max l_q(p) = 1429 at p = 164191; ratio l/(q^2 log p) = 2.43; min log10(bound/l) = 87.2
+q=11:  17981 primes; max l_q(p) = 2113 at p = 21517; ratio l/(q^2 log p) = 1.75; min log10(bound/l) = 102.2
+q=13:  17981 primes; max l_q(p) = 1093 at p = 41947; ratio l/(q^2 log p) = 0.61; min log10(bound/l) = 108.0
+Part 2: adversarial p = 1 + m*prod(first k primes l = 1 mod 12q) (p prime), so p is a q-th power mod each
+q=2 k= 2: p ~ 10^4.6, l_q(p) = 241 (> l_k = 97), q^2 log p = 43, log10 bound = 59.6, log10 simple = 65.8
+q=2 k= 4: p ~ 10^10.2, l_q(p) = 313 (> l_k = 241), q^2 log p = 94, log10 bound = 66.9, log10 simple = 74.6
+q=2 k= 8: p ~ 10^20.0, l_q(p) = 457 (> l_k = 433), q^2 log p = 185, log10 bound = 74.4, log10 simple = 83.0
+q=2 k=12: p ~ 10^31.6, l_q(p) = 769 (> l_k = 673), q^2 log p = 291, log10 bound = 80.0, log10 simple = 88.9
+q=3 k= 2: p ~ 10^4.4, l_q(p) = 109 (> l_k = 73), q^2 log p = 92, log10 bound = 73.8, log10 simple = 77.4
+q=3 k= 4: p ~ 10^9.1, l_q(p) = 397 (> l_k = 181), q^2 log p = 188, log10 bound = 80.5, log10 simple = 84.9
+q=3 k= 8: p ~ 10^19.9, l_q(p) = 613 (> l_k = 577), q^2 log p = 413, log10 bound = 89.4, log10 simple = 94.4
+q=3 k=12: p ~ 10^31.6, l_q(p) = 1117 (> l_k = 937), q^2 log p = 656, log10 bound = 95.1, log10 simple = 100.4
+q=5 k= 2: p ~ 10^5.5, l_q(p) = 241 (> l_k = 181), q^2 log p = 318, log10 bound = 89.4, log10 simple = 94.6
+q=5 k= 4: p ~ 10^10.1, l_q(p) = 541 (> l_k = 421), q^2 log p = 583, log10 bound = 95.4, log10 simple = 100.9
+q=5 k= 8: p ~ 10^21.5, l_q(p) = 1201 (> l_k = 1021), q^2 log p = 1236, log10 bound = 104.0, log10 simple = 109.8
+q=5 k=12: p ~ 10^35.0, l_q(p) = 1801 (> l_k = 1621), q^2 log p = 2017, log10 bound = 110.1, log10 simple = 116.1
+q=7 k= 2: p ~ 10^6.2, l_q(p) = 673 (> l_k = 421), q^2 log p = 694, log10 bound = 101.9, log10 simple = 105.4
+q=7 k= 4: p ~ 10^12.4, l_q(p) = 1009 (> l_k = 757), q^2 log p = 1401, log10 bound = 109.0, log10 simple = 112.8
+q=7 k= 8: p ~ 10^24.7, l_q(p) = 1933 (> l_k = 1597), q^2 log p = 2791, log10 bound = 117.0, log10 simple = 121.1
+q=7 k=12: p ~ 10^37.8, l_q(p) = 2521 (> l_k = 2437), q^2 log p = 4270, log10 bound = 122.4, log10 simple = 126.5
+ALL CHECKS PASSED
