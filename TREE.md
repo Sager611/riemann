@@ -436,5 +436,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R400 node N3 round 9: records stand; the 106.25 T^2 limit is a per-zero worst case (density cannot raise it); newest Zenodo Li item claims no proof (known); sandpile groups and n-body central configurations: no route [R400.lean](Riemann/Tree/R400.lean)
 - R401 node N12 round 10: records stand; N >= 3 linear combinations have only Selberg's non-explicit proportion (candidate); a Zenodo spectral-confinement RH proof refuted; Kac-Moody, protein landscapes, room acoustics: no route [R401.lean](Riemann/Tree/R401.lean)
 - R402 node N4 round 10: records stand; Chirre-Helfgott's psi bound authenticated as quoted; Robin ratio <= 0.99748 e^gamma on the first 400 CA numbers; ecology, Hopfield networks, sorting networks: no route [R402.lean](Riemann/Tree/R402.lean)
-- R403 FRONTIER (next)
+- R403 node N7 round 11: records stand; Chen-Gupta-Li's family bound authenticated as quoted; Heath-Brown 1979's family result in no public source; metamaterials, cartography, tomography: no route [R403.lean](Riemann/Tree/R403.lean)
+- R404 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
