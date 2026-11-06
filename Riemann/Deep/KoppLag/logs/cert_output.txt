@@ -1,0 +1,130 @@
+== Part 1: D0 ==
+k=  0  2^k P_k=1  D_k+=9.829600e+04  primorial=1.000000e+00  possible: Delta < D_k+
+k=  1  2^k P_k=4  D_k+=2.596022e+06  primorial=2.000000e+00  possible: Delta < D_k+
+k=  2  2^k P_k=12  D_k+=3.198499e+07  primorial=6.000000e+00  possible: Delta < D_k+
+k=  3  2^k P_k=30  D_k+=2.503447e+08  primorial=3.000000e+01  possible: Delta < D_k+
+k=  4  2^k P_k=70  D_k+=1.710314e+09  primorial=2.100000e+02  possible: Delta < D_k+
+k=  5  2^k P_k=154  D_k+=1.025305e+10  primorial=2.310000e+03  possible: Delta < D_k+
+k=  6  2^k P_k=333.667  D_k+=5.827028e+10  primorial=3.003000e+04  possible: Delta < D_k+
+k=  7  2^k P_k=709.042  D_k+=3.123530e+11  primorial=5.105100e+05  possible: Delta < D_k+
+k=  8  2^k P_k=1496.87  D_k+=1.629937e+12  primorial=9.699690e+06  possible: Delta < D_k+
+k=  9  2^k P_k=3129.81  D_k+=8.240916e+12  primorial=2.230929e+08  possible: Delta < D_k+
+k= 10  2^k P_k=6483.18  D_k+=4.046049e+13  primorial=6.469693e+09  possible: Delta < D_k+
+k= 11  2^k P_k=13398.6  D_k+=1.961430e+14  primorial=2.005605e+11  possible: Delta < D_k+
+k= 12  2^k P_k=27541.5  D_k+=9.334659e+14  primorial=7.420738e+12  possible: Delta < D_k+
+k= 13  2^k P_k=56460.1  D_k+=4.390175e+15  primorial=3.042503e+14  possible: Delta < D_k+
+k= 14  2^k P_k=115609  D_k+=2.048536e+16  primorial=1.308276e+16  possible: Delta < D_k+
+k= 15  2^k P_k=236244  D_k+=9.471312e+16  primorial=6.148898e+17  excluded (primorial >= D_k+)
+k= 16  2^k P_k=481574  D_k+=4.336931e+17  primorial=3.258916e+19  excluded (primorial >= D_k+)
+k= 20  2^k P_k=8.20497e+06  D_k+=1.786118e+20  primorial=5.579408e+26  excluded (primorial >= D_k+)
+k= 30  2^k P_k=9.35559e+09  D_k+=4.622863e+26  primorial=3.161005e+46  excluded (primorial >= D_k+)
+k= 40  2^k P_k=1.02526e+13  D_k+=9.387181e+32  primorial=1.665899e+68  excluded (primorial >= D_k+)
+k= 50  2^k P_k=1.10342e+16  D_k+=1.664255e+39  primorial=1.907827e+91  excluded (primorial >= D_k+)
+k= 60  2^k P_k=1.17478e+19  D_k+=2.699103e+45  primorial=2.464791e+115  excluded (primorial >= D_k+)
+induction step constant at k=15 (p=53): [3.0221 +/- 4.16e-5]  needs > 2p/(p-1) = [2.0385 +/- 3.85e-5]
+induction base k=15: every k in [15, 60] excluded; k > 60 by induction
+D0 = 20485358601780401 = 2.048536e+16 (every 2-torsion unit-generated order has Delta < D0)
+robustness: any bound |L(1,chi)| >= c/max(3, log log q) with c >= 0.037 gives D0(c) <= 1e+18 = sieve range (Littlewood78 has c = 0.11)
+== Part 2: split-prime sieve, n > 1000, Delta_n < D_SIEVE = 1.000e+18 ==
+N=+1: n in [1001, 1000000001] (999999001 values): chunk survivors 304832, full survivors 58, largest 5182
+N=-1: n in [1001, 1000000000] (999999000 values): chunk survivors 126675, full survivors 24, largest 5968
+sieve time 134.8 s
+== Part 3: exact class groups ==
+exact class groups computed: 2080 orders; time 140.7 s
+survivors with n > NEX that are 2-torsion: []
+== Part 4: wide 2-torsion list (Cl = Cl[2]) ==
+Delta = n^2 - 4: 53 orders
+   n=   3 Delta=     5 f=  1 Delta0=     5 h=  1 h+=  1 Cl=1 Cl+=1 one-class-per-genus=True
+   n=   4 Delta=    12 f=  1 Delta0=    12 h=  1 h+=  2 Cl=1 Cl+=Z/2 one-class-per-genus=True
+   n=   5 Delta=    21 f=  1 Delta0=    21 h=  1 h+=  2 Cl=1 Cl+=Z/2 one-class-per-genus=True
+   n=   6 Delta=    32 f=  2 Delta0=     8 h=  1 h+=  2 Cl=1 Cl+=Z/2 one-class-per-genus=True
+   n=   7 Delta=    45 f=  3 Delta0=     5 h=  1 h+=  2 Cl=1 Cl+=Z/2 one-class-per-genus=True
+   n=   8 Delta=    60 f=  1 Delta0=    60 h=  2 h+=  4 Cl=Z/2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=   9 Delta=    77 f=  1 Delta0=    77 h=  1 h+=  2 Cl=1 Cl+=Z/2 one-class-per-genus=True
+   n=  10 Delta=    96 f=  2 Delta0=    24 h=  2 h+=  4 Cl=Z/2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  11 Delta=   117 f=  3 Delta0=    13 h=  1 h+=  2 Cl=1 Cl+=Z/2 one-class-per-genus=True
+   n=  12 Delta=   140 f=  1 Delta0=   140 h=  2 h+=  4 Cl=Z/2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  13 Delta=   165 f=  1 Delta0=   165 h=  2 h+=  4 Cl=Z/2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  14 Delta=   192 f=  4 Delta0=    12 h=  2 h+=  4 Cl=Z/2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  15 Delta=   221 f=  1 Delta0=   221 h=  2 h+=  4 Cl=Z/2 Cl+=Z/4 one-class-per-genus=False
+   n=  16 Delta=   252 f=  3 Delta0=    28 h=  2 h+=  4 Cl=Z/2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  17 Delta=   285 f=  1 Delta0=   285 h=  2 h+=  4 Cl=Z/2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  18 Delta=   320 f=  8 Delta0=     5 h=  2 h+=  4 Cl=Z/2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  19 Delta=   357 f=  1 Delta0=   357 h=  2 h+=  4 Cl=Z/2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  21 Delta=   437 f=  1 Delta0=   437 h=  1 h+=  2 Cl=1 Cl+=Z/2 one-class-per-genus=True
+   n=  22 Delta=   480 f=  2 Delta0=   120 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=(Z/2)^3 one-class-per-genus=True
+   n=  23 Delta=   525 f=  5 Delta0=    21 h=  2 h+=  4 Cl=Z/2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  24 Delta=   572 f=  1 Delta0=   572 h=  2 h+=  4 Cl=Z/2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  26 Delta=   672 f=  2 Delta0=   168 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=(Z/2)^3 one-class-per-genus=True
+   n=  27 Delta=   725 f=  5 Delta0=    29 h=  2 h+=  4 Cl=Z/2 Cl+=Z/4 one-class-per-genus=False
+   n=  28 Delta=   780 f=  1 Delta0=   780 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=(Z/2)^3 one-class-per-genus=True
+   n=  31 Delta=   957 f=  1 Delta0=   957 h=  2 h+=  4 Cl=Z/2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  32 Delta=  1020 f=  1 Delta0=  1020 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=(Z/2)^3 one-class-per-genus=True
+   n=  33 Delta=  1085 f=  1 Delta0=  1085 h=  2 h+=  4 Cl=Z/2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  37 Delta=  1365 f=  1 Delta0=  1365 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=(Z/2)^3 one-class-per-genus=True
+   n=  38 Delta=  1440 f=  6 Delta0=    40 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=(Z/2)^3 one-class-per-genus=True
+   n=  39 Delta=  1517 f=  1 Delta0=  1517 h=  2 h+=  4 Cl=Z/2 Cl+=Z/4 one-class-per-genus=False
+   n=  42 Delta=  1760 f=  2 Delta0=   440 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=(Z/2)^3 one-class-per-genus=True
+   n=  44 Delta=  1932 f=  1 Delta0=  1932 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=(Z/2)^3 one-class-per-genus=True
+   n=  46 Delta=  2112 f=  8 Delta0=    33 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=(Z/2)^3 one-class-per-genus=True
+   n=  49 Delta=  2397 f=  1 Delta0=  2397 h=  2 h+=  4 Cl=Z/2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  53 Delta=  2805 f=  1 Delta0=  2805 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=(Z/2)^3 one-class-per-genus=True
+   n=  54 Delta=  2912 f=  2 Delta0=   728 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=(Z/2)^3 one-class-per-genus=True
+   n=  58 Delta=  3360 f=  2 Delta0=   840 h=  8 h+= 16 Cl=(Z/2)^3 Cl+=(Z/2)^4 one-class-per-genus=True
+   n=  63 Delta=  3965 f=  1 Delta0=  3965 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=Z/2 x Z/4 one-class-per-genus=False
+   n=  67 Delta=  4485 f=  1 Delta0=  4485 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=(Z/2)^3 one-class-per-genus=True
+   n=  68 Delta=  4620 f=  1 Delta0=  4620 h=  8 h+= 16 Cl=(Z/2)^3 Cl+=(Z/2)^4 one-class-per-genus=True
+   n=  72 Delta=  5180 f=  1 Delta0=  5180 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=(Z/2)^3 one-class-per-genus=True
+   n=  82 Delta=  6720 f=  8 Delta0=   105 h=  8 h+= 16 Cl=(Z/2)^3 Cl+=(Z/2)^4 one-class-per-genus=True
+   n=  86 Delta=  7392 f=  2 Delta0=  1848 h=  8 h+= 16 Cl=(Z/2)^3 Cl+=(Z/2)^4 one-class-per-genus=True
+   n=  87 Delta=  7565 f=  1 Delta0=  7565 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=Z/2 x Z/4 one-class-per-genus=False
+   n=  89 Delta=  7917 f=  1 Delta0=  7917 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=(Z/2)^3 one-class-per-genus=True
+   n=  93 Delta=  8645 f=  1 Delta0=  8645 h=  4 h+=  8 Cl=(Z/2)^2 Cl+=(Z/2)^3 one-class-per-genus=True
+   n= 112 Delta= 12540 f=  1 Delta0= 12540 h=  8 h+= 16 Cl=(Z/2)^3 Cl+=(Z/2)^4 one-class-per-genus=True
+   n= 122 Delta= 14880 f=  2 Delta0=  3720 h=  8 h+= 16 Cl=(Z/2)^3 Cl+=(Z/2)^4 one-class-per-genus=True
+   n= 138 Delta= 19040 f=  2 Delta0=  4760 h=  8 h+= 16 Cl=(Z/2)^3 Cl+=(Z/2)^4 one-class-per-genus=True
+   n= 154 Delta= 23712 f=  2 Delta0=  5928 h=  8 h+= 16 Cl=(Z/2)^3 Cl+=(Z/2)^4 one-class-per-genus=True
+   n= 163 Delta= 26565 f=  1 Delta0= 26565 h=  8 h+= 16 Cl=(Z/2)^3 Cl+=(Z/2)^4 one-class-per-genus=True
+   n= 166 Delta= 27552 f=  2 Delta0=  6888 h=  8 h+= 16 Cl=(Z/2)^3 Cl+=(Z/2)^4 one-class-per-genus=True
+   n= 262 Delta= 68640 f=  2 Delta0= 17160 h= 16 h+= 32 Cl=(Z/2)^4 Cl+=(Z/2)^5 one-class-per-genus=True
+Delta = n^2 + 4: 37 orders
+   n=   1 Delta=     5 f=  1 Delta0=     5 h=  1 h+=  1 Cl=1 Cl+=1 one-class-per-genus=True
+   n=   2 Delta=     8 f=  1 Delta0=     8 h=  1 h+=  1 Cl=1 Cl+=1 one-class-per-genus=True
+   n=   3 Delta=    13 f=  1 Delta0=    13 h=  1 h+=  1 Cl=1 Cl+=1 one-class-per-genus=True
+   n=   4 Delta=    20 f=  2 Delta0=     5 h=  1 h+=  1 Cl=1 Cl+=1 one-class-per-genus=True
+   n=   5 Delta=    29 f=  1 Delta0=    29 h=  1 h+=  1 Cl=1 Cl+=1 one-class-per-genus=True
+   n=   6 Delta=    40 f=  1 Delta0=    40 h=  2 h+=  2 Cl=Z/2 Cl+=Z/2 one-class-per-genus=True
+   n=   7 Delta=    53 f=  1 Delta0=    53 h=  1 h+=  1 Cl=1 Cl+=1 one-class-per-genus=True
+   n=   8 Delta=    68 f=  2 Delta0=    17 h=  1 h+=  1 Cl=1 Cl+=1 one-class-per-genus=True
+   n=   9 Delta=    85 f=  1 Delta0=    85 h=  2 h+=  2 Cl=Z/2 Cl+=Z/2 one-class-per-genus=True
+   n=  10 Delta=   104 f=  1 Delta0=   104 h=  2 h+=  2 Cl=Z/2 Cl+=Z/2 one-class-per-genus=True
+   n=  11 Delta=   125 f=  5 Delta0=     5 h=  1 h+=  1 Cl=1 Cl+=1 one-class-per-genus=True
+   n=  13 Delta=   173 f=  1 Delta0=   173 h=  1 h+=  1 Cl=1 Cl+=1 one-class-per-genus=True
+   n=  14 Delta=   200 f=  5 Delta0=     8 h=  2 h+=  2 Cl=Z/2 Cl+=Z/2 one-class-per-genus=True
+   n=  16 Delta=   260 f=  2 Delta0=    65 h=  2 h+=  2 Cl=Z/2 Cl+=Z/2 one-class-per-genus=True
+   n=  17 Delta=   293 f=  1 Delta0=   293 h=  1 h+=  1 Cl=1 Cl+=1 one-class-per-genus=True
+   n=  19 Delta=   365 f=  1 Delta0=   365 h=  2 h+=  2 Cl=Z/2 Cl+=Z/2 one-class-per-genus=True
+   n=  22 Delta=   488 f=  1 Delta0=   488 h=  2 h+=  2 Cl=Z/2 Cl+=Z/2 one-class-per-genus=True
+   n=  23 Delta=   533 f=  1 Delta0=   533 h=  2 h+=  2 Cl=Z/2 Cl+=Z/2 one-class-per-genus=True
+   n=  25 Delta=   629 f=  1 Delta0=   629 h=  2 h+=  2 Cl=Z/2 Cl+=Z/2 one-class-per-genus=True
+   n=  26 Delta=   680 f=  1 Delta0=   680 h=  4 h+=  4 Cl=(Z/2)^2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  29 Delta=   845 f= 13 Delta0=     5 h=  2 h+=  2 Cl=Z/2 Cl+=Z/2 one-class-per-genus=True
+   n=  31 Delta=   965 f=  1 Delta0=   965 h=  2 h+=  2 Cl=Z/2 Cl+=Z/2 one-class-per-genus=True
+   n=  34 Delta=  1160 f=  1 Delta0=  1160 h=  4 h+=  4 Cl=(Z/2)^2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  38 Delta=  1448 f=  1 Delta0=  1448 h=  2 h+=  2 Cl=Z/2 Cl+=Z/2 one-class-per-genus=True
+   n=  41 Delta=  1685 f=  1 Delta0=  1685 h=  2 h+=  2 Cl=Z/2 Cl+=Z/2 one-class-per-genus=True
+   n=  43 Delta=  1853 f=  1 Delta0=  1853 h=  2 h+=  2 Cl=Z/2 Cl+=Z/2 one-class-per-genus=True
+   n=  46 Delta=  2120 f=  1 Delta0=  2120 h=  4 h+=  4 Cl=(Z/2)^2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  49 Delta=  2405 f=  1 Delta0=  2405 h=  4 h+=  4 Cl=(Z/2)^2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  53 Delta=  2813 f=  1 Delta0=  2813 h=  2 h+=  2 Cl=Z/2 Cl+=Z/2 one-class-per-genus=True
+   n=  59 Delta=  3485 f=  1 Delta0=  3485 h=  4 h+=  4 Cl=(Z/2)^2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  62 Delta=  3848 f=  1 Delta0=  3848 h=  4 h+=  4 Cl=(Z/2)^2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  74 Delta=  5480 f=  1 Delta0=  5480 h=  4 h+=  4 Cl=(Z/2)^2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n=  94 Delta=  8840 f=  1 Delta0=  8840 h=  8 h+=  8 Cl=(Z/2)^3 Cl+=(Z/2)^3 one-class-per-genus=True
+   n= 101 Delta= 10205 f=  1 Delta0= 10205 h=  4 h+=  4 Cl=(Z/2)^2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n= 127 Delta= 16133 f=  1 Delta0= 16133 h=  4 h+=  4 Cl=(Z/2)^2 Cl+=(Z/2)^2 one-class-per-genus=True
+   n= 146 Delta= 21320 f=  1 Delta0= 21320 h=  8 h+=  8 Cl=(Z/2)^3 Cl+=(Z/2)^3 one-class-per-genus=True
+   n= 179 Delta= 32045 f=  1 Delta0= 32045 h=  8 h+=  8 Cl=(Z/2)^3 Cl+=(Z/2)^3 one-class-per-genus=True
+distinct orders with Cl = Cl[2]: 89; with Cl+ = Cl+[2] (one class per genus): 84; max Delta 68640
+comparison with Kopp-Lagarias Table 2A (53 real entries): IDENTICAL; Table 2B (37 entries): IDENTICAL
+total time 140.7 s

@@ -31,6 +31,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N11) Least prime primitive root without GRH: g*(p) ≤ (1.956 log p)^{26.86} for every prime p, (0.814 log p)^{23.70} if ω(p−1) ≤ 10⁴ (was: no bound below p). [details](discoveries/prime-primitive-root.md)
 - (N11) Random ±1 polynomials, and characteristic polynomials of random integer and symmetric ±1 matrices, are irreducible with probability → 1 without RH (was: under RH/ERH). [details](discoveries/random-polynomials-without-rh.md)
 - (N10) A prime in (x, x + x^{0.856}] for every real x ≥ 1 (was x^{7/8}); x^{0.842} and sixth powers conditionally on an unrefereed density. [details](discoveries/primes-short-intervals.md)
+- (N11) Kopp–Lagarias Problem 1.7 solved: the unit-generated real quadratic orders with 2-torsion class group are exactly their 89 tabulated ones (84 with one class per genus). [details](discoveries/unit-generated-orders.md)
 
 ## Side results (off the RH tree)
 

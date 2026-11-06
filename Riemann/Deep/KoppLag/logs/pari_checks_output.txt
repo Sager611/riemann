@@ -1,0 +1,2 @@
+  ***   Warning: new maximum stack size = 200015872 (190.750 Mbytes).
+PARI checks: 2080 orders; mismatches 0; max |Q-1| = 1.1754943508222875080 E-38; min L(1,chi_D0) / (0.11/max(3,loglog D0)) = 6.5775278396711695221299045662810387677

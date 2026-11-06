@@ -1,0 +1,11 @@
+C1 Lemma A brute force: 6061 orders, counterexamples: []  [7.6s]
+C2 principal cycles: n <= 20000 both families, mismatches: []  [7.7s]
+C3 Cor. B mechanism: 58836 (n, p) pairs with p split, 4p^4 < Delta; p^2 wide-principal in: []  [9.8s]
+C3b sharpness: split p with sqrt(Delta)/2 <= p^2 < sqrt(Delta) and p^2 principal, n <= 400: 6 cases, e.g. [(25, -1, 5), (49, -1, 7), (121, -1, 11), (169, -1, 13), (289, -1, 17), (361, -1, 19)]
+C4 genus count |Cl+[2]| = 2^(mu-1): 1998 orders, mismatches []; 2-torsion orders satisfy h <= 2^(mu-1): 90  [18.1s]
+C5 N=+1: brute-force survivors in [1001, 3000000]: 58; cert.py survivors there: 58; equal: True  [28.8s]
+C5 N=-1: brute-force survivors in [1001, 3000000]: 24; cert.py survivors there: 24; equal: True  [36.9s]
+C6 the 90 listed entries with Delta >= 100 all pass the split-prime test: True
+C7 wrote pari_checks.gp with 2080 orders  [47.1s]
+C8 Lemma A endpoint bounds on Delta in [100, 1e40]: min phi(1) lower bound [1.5639 +/- 3.21e-5], min phi(Y) bound [3.1440 +/- 5.87e-6] (both must be > 0)
+all checks passed  [47.1s]
