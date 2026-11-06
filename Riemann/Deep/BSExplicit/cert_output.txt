@@ -1,0 +1,49 @@
+== §1 constants
+6 - 4 sqrt2 in [ 0.343145750508 , 0.343145750508 ]
+(3 - 2 sqrt2)/2 in [ 0.0857864376269 , 0.0857864376269 ]
+B_2 = 0.873381966613208 ; 1 - T* >= 0.126618033387
+(1 - T*) log 9 >= 0.27820825 ; (1 - T*) log 3 >= 0.13910413
+PASS (1-T*) log 9 > (3-2sqrt2)/2  [case (a) never binds for n >= 2]
+PASS (1-7/8) log 9 > (3-2sqrt2)/2 [same with the 7/8 Lean port]
+== §2 Lemma D: b <= 6-4sqrt2 => contradiction at a = (1+sqrt2) b
+PASS b=0.001: 2/(a+b)-1/a = (3-2sqrt2)/b
+PASS b=0.001: (3-2sqrt2)/b >= 1/2 (contradiction with 2/(s-beta) < 1/(s-1) + L/2)
+PASS b=0.1: 2/(a+b)-1/a = (3-2sqrt2)/b
+PASS b=0.1: (3-2sqrt2)/b >= 1/2 (contradiction with 2/(s-beta) < 1/(s-1) + L/2)
+PASS b=0.3: 2/(a+b)-1/a = (3-2sqrt2)/b
+PASS b=0.3: (3-2sqrt2)/b >= 1/2 (contradiction with 2/(s-beta) < 1/(s-1) + L/2)
+PASS b=0.343: 2/(a+b)-1/a = (3-2sqrt2)/b
+PASS b=0.343: (3-2sqrt2)/b >= 1/2 (contradiction with 2/(s-beta) < 1/(s-1) + L/2)
+PASS a_max = (1+sqrt2)(6-4sqrt2) = 2sqrt2-2 < log 3 <= log d_M  (sigma < 2)
+== §3 Stark Lemma 4: c4 = 2 exp(21/8 + (gamma + 2 log 2)/(4 log 3))
+psi(1/2) = -1.96351002602 ; c3 in [ 21.58105749 , 21.58105749 ]; c4 <= 43.16211498
+PASS c4 < 43.166
+PASS q = pi e^2/(4 sqrt3) > 3.35
+PASS q^3 >= 3 e^2 (n = 3), and q > (n+1)/n for n >= 1 so q^n/n increases
+== §4 Theorem A: c(k) = (6 - 4 sqrt2)/(2^{n-1} n!), n = [k:Q]; quadratic k: (3 - 2sqrt2)/2
+n=2: lambda <=        4, c(k) >= 0.0857864   (with Guo's c_Q = 1/100 instead of the half-plane: >= 0.02)
+n=3: lambda <=       24, c(k) >= 0.0142977   (with Guo's c_Q = 1/100 instead of the half-plane: >= 0.0142977)
+n=4: lambda <=      192, c(k) >= 0.00178722   (with Guo's c_Q = 1/100 instead of the half-plane: >= 0.00178722)
+n=5: lambda <=     1920, c(k) >= 0.000178722   (with Guo's c_Q = 1/100 instead of the half-plane: >= 0.000178722)
+n=6: lambda <=    23040, c(k) >= 1.48935e-05   (with Guo's c_Q = 1/100 instead of the half-plane: >= 1.48935e-05)
+n=7: lambda <=   322560, c(k) >= 1.06382e-06   (with Guo's c_Q = 1/100 instead of the half-plane: >= 1.06382e-06)
+n=8: lambda <=  5160960, c(k) >= 6.64887e-08   (with Guo's c_Q = 1/100 instead of the half-plane: >= 6.64887e-08)
+PASS quadratic k: c(k) = (3-2sqrt2)/2 >= 0.085786
+== §5 Theorem B: h_K R_K > c_BS d_K^{1/2} / ((2 pi)^{[K:Q]/2} log d_K), c_BS = 2 min(1/4, c_1)/c4
+n=2: c(k) >= 0.0857864, eta_k >= 0.139104, c_1 >= 0.0857864, c_BS >= 0.00397508
+n=3: c(k) >= 0.0142977, eta_k >= 0.057191, c_1 >= 0.0142977, c_BS >= 0.000662513
+n=4: c(k) >= 0.00178722, eta_k >= 0.0142977, c_1 >= 0.00178722, c_BS >= 8.28142e-05
+n=5: c(k) >= 0.000178722, eta_k >= 0.00285955, c_1 >= 0.000178722, c_BS >= 8.28142e-06
+n=6: c(k) >= 1.48935e-05, eta_k >= 0.000476591, c_1 >= 1.48935e-05, c_BS >= 6.90118e-07
+quadratic k (Q(i), Q(sqrt-3), ...): c_BS >= 0.0039750804
+PASS quadratic k: c_BS >= 3.97e-3
+k = Q (Galois K/Q, rem:almost): c_1 = min(6-4sqrt2, (1-T*) log 3) >= 0.13910413 ; c_BS >= 0.0064456585
+== §6 comparison: general-field half-planes (not used in Thms A, B)
+Cureton-Thorner 31/32 (Lean): (1-beta) log d_F >= 0.03125 log d_F; Q(i) (d_F >= 144): 0.155307; Q(sqrt-3) (d_F >= 117): 0.148818
+Liu 2610.26835 B=0.874886647040: (1-beta) log d_F >= 0.125113 log d_F; Q(i) (d_F >= 144): 0.62179; Q(sqrt-3) (d_F >= 117): 0.595812
+CT for every K != Q: c_BS = 2 min(1/4, log3/32)/c4 >= 0.00159082
+== §7 k = Q specialization: Theorem A with M = F gives min(c_Q, 6-4sqrt2) <= c_Q (no gain over the input)
+PASS Guo 2610.30476: min(c_Q, 6-4sqrt2) = c_Q
+PASS 2610.21511: min(c_Q, 6-4sqrt2) = c_Q
+PASS Lean half-plane (1-T*) log 3: min(c_Q, 6-4sqrt2) = c_Q
+ALL PASS

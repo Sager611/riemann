@@ -1,0 +1,7 @@
+triangle kernel: b* = 0.4740975740322817
+plain 1/z: b* = 0.34314487632508683  (6-4sqrt2 = 0.3431457505076194 )
+(1-u)^2 b* ~ 0.4288697365456695
+cos^2(pi u/2) b* ~ 0.5288569452815093
+(1-u)cos(pi u)+sin(pi u)/pi b* ~ 0.5128504964697038
+# run: OMP_NUM_THREADS=1 python3 lp_estimate.py (numpy only, about 580 s). Asymptotic LP for a double real zero; floats, uncertified.
+# cos^2(pi u/2) (Hann) is not positive definite, so its value is not admissible; triangle and Bohman ((1-u)cos(pi u)+sin(pi u)/pi) are.
