@@ -1,0 +1,61 @@
+explore13 numeric results (Riemann/Deep/ExploreHankel), 6 Nov 2026. Single-threaded runs under perl alarm.
+
+== nbgram.py: Baez-Duarte d_N (unconstrained, L^2(0,inf)) ==
+Gram checks (Vasyunin / digamma vs direct piecewise integration, 60 periods + moment tail):
+  zeta (1,1) 1.260661401508 vs 1.260661414614; (1,2) .772209255991 vs .772209261478; (2,3) .441103509279 vs .441103510695;
+       (3,5) .273556436963 vs .273556437438; (4,7) .199426980485 vs .199426980718; (2,4) .386104628 vs .386104631; (4,6) .220551755 vs .220551755
+  DH   (1,1) .997272818447 vs .997272820323; (1,2) .388322207745 vs .388322208443; (2,3) .268034983430 vs .268034983726; (3,5) .159338226736 vs .159338226851
+  float64 Cholesky = mpmath 40-digit LU at N = 10, 30 (both functions).
+zeta: N  d_N^2  d_N^2 log N   (C = 2 + gamma - log 4 pi = 0.0461914179)
+   1 0.85821205  -
+   2 0.28996457 0.20099
+   5 0.03610160 0.05810
+  10 0.02377187 0.05474
+  20 0.01650358 0.04944
+  30 0.01453011 0.04942
+  40 0.01271520 0.04690      (2611.03924 Table, constrained variant: 1.274e-2)
+  50 0.01186905 0.04643
+  80 0.01098348 0.04813
+ 100 0.01018876 0.04692
+ 160 0.00934559 0.04743      (2611.03924: 9.357e-3)
+ 200 0.00892073 0.04726
+ 320 0.00795374 0.04588
+ 640 0.00701706 0.04534      (2611.03924: 7.023e-3)
+1280 0.00636110 0.04551      (2611.03924: 6.366e-3; BBLS fit 1/(21.99 log N) gives 0.04548)
+  R289 / TREE N5 "ours" (0.05252, 0.04558, 0.04670 at N = 10, 50, 200) is 4.1%, 1.8%, 1.2% BELOW these unconstrained values.
+DH (f = Davenport-Heilbronn, dilates of A(1/t), A(x) = sum_{n<=x} a_n): N  d_N^2  d_N^2 log N  ratio to C_f = 0.19527
+  10 0.05286051 0.12172 0.623
+  20 0.04613117 0.13820 0.708
+  40 0.03724461 0.13739 0.704
+  80 0.03466894 0.15192 0.778
+ 100 0.03372313 0.15530 0.795
+ 160 0.03098791 0.15727 0.805
+ 200 0.02973338 0.15754 0.807
+ 300 0.02849235 0.16251 0.832
+ 400 0.02834776 0.16984 0.870
+
+== dhconst.py ==
+kappa = 0.284079043840412, f(1) = 0.922801873802891
+C_f = sum_rho 1/(rho(1-rho)) = 2 xi_f'/xi_f(1) = 0.1952726082   (C_zeta = 0.0461914179322)
+first on-line zeros of f: 5.094159845 8.939914408 12.13354543 14.40400311 17.1302394 19.30880017 22.15970777 23.34537011 ...
+1/|rho_1| (DH) = 0.19536443
+off-line zeros (|f| < 1e-29): 0.80851718245664+85.699348485378i, 0.65083008060974+114.16334273076i,
+                               0.57435605045081+166.47930591317i, 0.72425769462681+176.70246124286i (and conjugates)
+Blaschke floor from these 8 zeros: lim d_N^2 >= 2.5373887e-4 (sum (2 sigma - 1)/|rho|^2 = 2.5376324e-4); first pair alone 1.6801407e-4
+C_f / floor = 769.6 = log N at which C_f/log N meets the floor (N ~ 10^334)
+off-line part of C_f from these quadruples: 0.00112392
+
+== hinf.py: sup-norm (AAK/Nehari-type) problem e_N = min_c sup_tau |1 + F C|/|s| ==
+LP with 32-gon (LP <= e_N(grid) <= sup at LP solution); grid tau in [0,250] step 0.02 (zeta), [0,150] step 0.025 (DH)
+zeta: N=1 LP 1.27656 sup 1.28226 | N=2 0.28946 0.29010 | N=5 0.07054 0.07088 | N=10 0.07060 0.07090 | N=20 0.07067 0.07088 | N=40 0.07066 0.07100
+      exact lower bound 1/|rho_1| = 1/|1/2 + 14.134725i| = 0.0707101 for every N
+DH:   N=1 0.21325 0.21355 | N=2 0.19715 0.19757 | N=5 0.19530 0.19555 | N=10 0.19526 0.19597 | N=20 0.19522 0.19617 | N=40 0.19519 0.19596
+      exact lower bound 1/|rho_1^DH| = 0.1953644; off-line zeros give 1/|rho| <= 0.0117 (never binding)
+
+== farey.py: half-space relaxation (dilations a/b in [1/N,1], b <= B; contains 1/k for k <= min(N,B)) vs Baez-Duarte ==
+N=10 B=10 (32 atoms):  d^2 log N = 0.0382465  (BD 0.0547367) ratio d^2 0.699   [dps 30 = dps 50]
+N=10 B=20 (118 atoms): d^2 log N = 0.0289602  ratio 0.529
+N=10 B=30 (253 atoms): d^2 log N = 0.0280251  ratio 0.512
+N=20 B=20 (128 atoms): d^2 log N = 0.0319730  (BD 0.0494403) ratio 0.647
+(N=40 B=12 is not a superset of the BD dictionary: 0.0500679 vs BD 0.0469048; not used.)
+Burnol/BBLS (math/0103058 l.175-195): liminf D(lambda)^2 log(1/lambda) >= sum 1/|rho|^2 for this continuous problem, so the relaxation must climb from ~0.028 to >= 0.0462.
