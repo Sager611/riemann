@@ -1,0 +1,156 @@
+# explore15 raw outputs (all runs single-threaded, nice 19, under perl alarm; peak RSS < 300 MB)
+
+## a_pascal.py
+1. Pascal identity J^{d+1,n} = J^{d,n} + X J^{d,n+1}: 200/200 random checks
+2a. g = (1,1,1,1/100): Turan True | J^{2,0}, J^{2,1} real-rooted True True | J^{2,0} << J^{2,1} False | J^{3,0} real-rooted False
+2b. d=1: I(1) holds on the whole window (all J^{1,n} real-rooted, consecutive ones interlacing), H(2) holds as the lemma says, but I(2) fails: J^{2,0} << J^{2,1} is false  [perturbed index 1; 4 tries, 4 samples with I(1)]
+2b. d=2: I(2) holds on the whole window (all J^{2,n} real-rooted, consecutive ones interlacing), H(3) holds as the lemma says, but I(3) fails: J^{3,0} << J^{3,1} is false  [perturbed index 3; 2 tries, 2 samples with I(2)]
+2b. d=3: I(3) holds on the whole window (all J^{3,n} real-rooted, consecutive ones interlacing), H(4) holds as the lemma says, but I(4) fails: J^{4,0} << J^{4,1} is false  [perturbed index 3; 10 tries, 4 samples with I(3)]
+2b. d=4: I(4) holds on the whole window (all J^{4,n} real-rooted, consecutive ones interlacing), H(5) holds as the lemma says, but I(5) fails: J^{5,0} << J^{5,1} is false  [perturbed index 4; 38 tries, 20 samples with I(4)]
+2b. d=5: I(5) holds on the whole window (all J^{5,n} real-rooted, consecutive ones interlacing), H(6) holds as the lemma says, but I(6) fails: J^{6,0} << J^{6,1} is false  [perturbed index 5; 997 tries, 466 samples with I(5)]
+3. Lemma (Hermite-Kakeya-Obreschkoff): I(d) [J^{d,n} << J^{d,n+1} for all n] => H(d+1) [all J^{d+1,n} real-rooted], checked on every sample above; but I(d) does not imply I(d+1): the ratio map r -> r(1+X r')/(1+X r) has no invariant region, every level is a new inequality (Polya-Schur: all levels <=> LP).
+(198 s, single thread)
+
+## b_fragility.py (27 s)
+gamma(0..160) computed (2.6 s); gamma(0) = [3.97696622550651 +/- 2.88e-15]
+(1) fragility log10 eps(d):  d | Xi J^{d,0} | Xi J^{d,40} | Hermite He_d | Laguerre L_d(-X) [gamma_j = 1/j!]
+      4 |     -3.27 |     -4.69 |     -0.70 |     -1.84   (all real: True,True,True,True)  [3 s]
+      8 |     -6.23 |     -8.42 |     -1.73 |     -3.74   (all real: True,True,True,True)  [3 s]
+     12 |     -8.97 |    -11.82 |     -2.69 |     -5.67   (all real: True,True,True,True)  [3 s]
+     16 |    -11.66 |    -15.00 |     -3.62 |     -7.58   (all real: True,True,True,True)  [3 s]
+     24 |    -16.89 |    -20.98 |     -5.55 |    -11.39   (all real: True,True,True,True)  [3 s]
+     32 |    -22.02 |    -26.64 |     -7.47 |    -15.22   (all real: True,True,True,True)  [3 s]
+     48 |    -32.05 |    -37.42 |    -11.28 |    -22.85   (all real: True,True,True,True)  [3 s]
+     64 |    -41.92 |    -47.78 |    -15.10 |    -30.49   (all real: True,True,True,True)  [5 s]
+     80 |    -51.67 |    -57.89 |    -18.91 |    -38.12   (all real: True,True,True,True)  [8 s]
+    100 |    -63.74 |    -70.29 |    -23.68 |    -47.66   (all real: True,True,True,True)  [15 s]
+    120 |    -75.71 |    -82.51 |    -28.45 |    -57.20   (all real: True,True,True,True)  [27 s]
+   slope d log10 eps / dd on [64,120]: Xi n=0: -0.6034  (eps ~ 10^(-0.603 d))
+   slope d log10 eps / dd on [64,120]: Xi n=40: -0.6202  (eps ~ 10^(-0.620 d))
+   slope d log10 eps / dd on [64,120]: Hermite: -0.2385  (eps ~ 10^(-0.238 d))
+   slope d log10 eps / dd on [64,120]: Laguerre L_d(-X): -0.4771  (eps ~ 10^(-0.477 d))
+(2) Favard three-term test: J^{d+1} - (A X + B) J^d + C J^{d-1}, A,B,C fitted on X^{d+1}, X^0, X^1; max relative residual of the other coefficients
+   Xi: d=2: 2.16e-03 (C=0.125); d=4: 5.32e-03 (C=0.208); d=8: 1.17e-02 (C=0.318); d=16: 2.06e-02 (C=0.444); d=30: 3.00e-02 (C=0.559)
+   (1+X)^d [gamma_j = 1]: d=2: 0.00e+00 (C=0); d=4: 0.00e+00 (C=0); d=8: 0.00e+00 (C=0); d=16: 0.00e+00 (C=0); d=30: 0.00e+00 (C=0)
+   Laguerre L_d(-X) [gamma_j = 1/j!]: d=2: 0.00e+00 (C=0.667); d=4: 0.00e+00 (C=0.8); d=8: 0.00e+00 (C=0.889); d=16: 0.00e+00 (C=0.941); d=30: 0.00e+00 (C=0.968)
+done (27 s)
+
+## c_reach.py 1100 (330 s; table stage, the shift stage of this run crashed on a division by zero and was rerun at K = 600)
+K = 1100, 806 digits (2683 bits), M = 27, U = 2.0, h = 5.326e-04 (3755 nodes)
+  moments, step h: 12 s
+  second step 0.85h: max log10 rel diff -9999.0  (27 s)
+  vs Arb power series, n <= 160: max log10 rel diff -804.3; gamma(0) = [3.9769662255065128793 +/- 2.20e-21]
+  gamma_1..3 = [14.13472514173469379045725 +/- 1.99e-24], [21.02203963877155499262848 +/- 4.07e-25], [25.01085758014568876321379 +/- 9.93e-25]
+toy: zero #k moved to 1/2 + delta + i gamma_k.  D_sec = floor(1/sin^2(2 arctan(delta/gamma_k))) (Chasse)
+  k  delta  |  D_sec  |  d*(n=0)  d*/D_sec | certified: J^{d*-1,0} real zeros / degree | Im X at d*
+  1  0.45  |    247  |     249    1.008  |      248/248 | 2.642e-03   (57 s)
+  1  0.35  |    408  |     410    1.005  |      409/409 | 9.243e-04   (311 s)
+  1  0.25  |    799  |     801    1.003  |              | 1.368e-04   (319 s)
+  2  0.45  |    546  |     558    1.022  |              | 1.377e-03   (322 s)
+  2  0.35  |    902  |  skipped (needs K >= 1129)
+  3  0.45  |    772  |     795    1.030  |              | 8.537e-04   (327 s)
+shift dependence (k=1, delta=0.45): first failing d for n = 0, 2, 5, 10, 20, 40, 80; off-line zero of Theta~^(n)
+  n =   0: zero of Theta~^(n) at -199.5880 + 12.7213i, 1/sin^2(angle) = 247; d*(n) = 249   (328 s)
+
+## c_reach.py 600 shift (261 s)
+K = 600 run (c_reach.py 600 shift), toy k=1, delta=0.45:
+  n =   0: zero of Theta~^(n) at -199.5880 + 12.7213i, 1/sin^2(angle) = 247; d*(n) = 249   (10 s)
+  n =   1: Newton from w~ lands on the REAL zero -201.3873 of Theta~^(n) (Polya-Wiman: derivatives lose the off-line pair); certified J^(300,1): 300/300 real   (58 s)
+  n =   2: Newton from w~ lands on the REAL zero -226.3508 of Theta~^(n); certified J^(300,2): 300/300 real   (107 s)
+  n =   3: Newton from w~ lands on the REAL zero -256.9891 of Theta~^(n); certified J^(300,3): 300/300 real   (160 s)
+  n =   5: Newton from w~ lands on the REAL zero -327.5855 of Theta~^(n); certified J^(300,5): 300/300 real   (211 s)
+  n =  10: Newton from w~ lands on the REAL zero -536.6395 of Theta~^(n); certified J^(300,10): 300/300 real   (261 s)
+Debug run (K = 400, 1350 bits): certified real zeros of J^{d,0}(toy k=1, delta=0.45): d=100: 100, 200: 200, 247: 247, 248: 248, 249: 247, 250: 248, 260: 258.
+
+## d_chaingas.py (197 s)
+664579 primes <= 1e+07 (0.1 s)
+B1  x | sigma_cl(x) (clique of primes in (sqrt x, x]) | sigma_s(x) (Shearer, full graph G_x)
+   1e2 | 0.85899 | 1.05196
+   1e3 | 0.91010 | 1.06026
+   1e4 | 0.94248 | 1.05513
+   1e5 | 0.95450 | 1.04894
+   1e6 | 0.96296 | 1.04373
+   1e7 | 0.96859 | 1.03948
+B2  sieve to 1e+07 (2.7 s)
+    n | M(n) | Z_{H_n}(-1) | #vertices V | lam_s (first zero of Z(-lam)) | lam_s*V | zeros of Z_{H_n}(lam)
+   1e2 | 1 | 1 | 60 | 1.710e-02 | 1.026 | -2.0163, -0.9666, -0.0171
+   1e3 | 2 | 2 | 607 | 1.655e-03 | 1.004 | -1.6398, -1.0757, -0.8922, -0.0017
+   1e4 | -23 | -23 | 6082 | 1.645e-04 | 1.001 | -2.7454, -1.2203, -0.9365, -0.6727, -0.0002
+   1e5 | -48 | -48 | 60793 | 1.645e-05 | 1.000 | -6.3025, -0.9459, -0.5341, -0.0000; 2 complex: -1.150+0.048j, -1.150-0.048j
+   1e6 | 212 | 212 | 607925 | 1.645e-06 | 1.000 | -19.8763, -1.7391, -1.1246, -0.4425, -0.0000; 2 complex: -0.935+0.036j, -0.935-0.036j
+   1e7 | 1037 | 1037 | 6079290 | 1.645e-07 | 1.000 | -126.4614, -3.1174, -0.9545, -0.8271, -0.3781, -0.0000; 2 complex: -1.131+0.052j, -1.131-0.052j
+done (197 s)
+
+## e_li_reach.py (1 s)
+ k delta | Li: first n with lambda_n(toy) < 0 | (T^2/delta) log(main/2) | Jensen D_sec = 1/sin^2(2 atan(delta/T)) (c_reach: d* = D_sec + 2..23)
+ 1 0.45  |     4079 |       3875 | 247
+ 1 0.35  |     5412 |       5170 | 408
+ 1 0.25  |     7724 |       7568 | 799
+ 1 0.10  |    21672 |      21278 | 4995
+ 2 0.45  |     9640 |       9546 | 546
+ 3 0.45  |    14449 |      14155 | 772
+ worst case Re rho = 7/8 just above T = 3000175332800: Li reach n* = 1.56819e+27 = 174.22 T^2  (N3 record: 77.03 T^2 from RH to T; with the 7/8 half-plane ours 105.77 T^2)
+   same with K = (T/2pi) log(T/2pi) = 1.28e+13 such zeros in phase: n* = 92.003 T^2
+   Jensen reach (Chasse, sharp up to O(1) by c_reach.py): (16T^2 - 4)/9 = 1.60019e+25 = 1.7778 T^2 (N6 record)
+
+## f_dh.py (21 s)
+kappa = [0.284079043840412 +/- 2.97e-16]; xi_DH(1/2) = [1.43319216877501 +/- 1.56e-15]; max |odd coeff|/c0 = [+/- 7.85e-1203] (7 s)
+signs of gamma_DH(0..110): +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+J^(d,0)_DH, d = 2..60: certified hyperbolic for 59/59 degrees; failures: []
+J^(9,n)_DH, n = 0..40: hyperbolic for 41/41 shifts
+first off-line DH zero 1/2 + 0.308517 + 85.699348 i: 1/sin^2(2 atan(x/y)) = 19290 (toy: d* = D_sec + 2..23)
+done (21 s)
+
+## c_reach.py 1700 nocheck cfg=1:0.45+2:0.45 cfg=1:0.45+2:0.45+3:0.45 cfg=5:0.45 (stopped by us after the configurations; its shift stage repeated the K = 600 run)
+K = 1700, 1202 digits (4002 bits), M = 32, U = 2.15, h = 3.822e-04 (5625 nodes)
+  moments, step h: 36 s
+  second step 0.85h: max log10 rel diff -9999.0  (36 s)
+  vs Arb power series, n <= 160: max log10 rel diff -1201.2; gamma(0) = [3.9769662255065128793 +/- 2.20e-21]
+  gamma_1..3 = [14.13472514173469379045725 +/- 1.99e-24], [21.02203963877155499262848 +/- 4.07e-25], [25.01085758014568876321379 +/- 9.93e-25]
+toy: zero #k moved to 1/2 + delta + i gamma_k.  D_sec = floor(1/sin^2(2 arctan(delta/gamma_k))) (Chasse)
+  k  delta  |  D_sec  |  d*(n=0)  d*/D_sec | certified: J^{d*-1,0} real zeros / degree | Im X at d*
+  cfg 1:0.45+2:0.45: D_sec = [247, 546]; first failing d = 249 (tracked pair of the steepest zero), excess 2 = 0.81%; Im X = 7.713e-04   (43 s)
+  cfg 1:0.45+2:0.45+3:0.45: D_sec = [247, 546, 772]; first failing d = 250 (tracked pair of the steepest zero), excess 3 = 1.21%; Im X = 2.831e-03   (46 s)
+  cfg 5:0.45: D_sec = [1339]; first failing d = 1412 (tracked pair of the steepest zero), excess 73 = 5.45%; Im X = 3.632e-04   (69 s)
+shift dependence (k=1, delta=0.45): first failing d for n = 0, 2, 5, 10, 20, 40, 80; off-line zero of Theta~^(n)
+  n =   0: zero of Theta~^(n) at -199.5880 + 12.7213i, 1/sin^2(angle) = 247; d*(n) = 249   (72 s)
+  n =   1: Newton from w~ lands on the REAL zero -201.3873 of Theta~^(n) (Polya-Wiman: derivatives lose the off-line pair); certified J^(300,1): 300/300 real   (130 s)
+  n =   2: Newton from w~ lands on the REAL zero -226.3508 of Theta~^(n) (Polya-Wiman: derivatives lose the off-line pair); certified J^(300,2): 300/300 real   (190 s)
+
+## c_reach.py 1700 nocheck cfg=5..12 wall, cfg=4, cfg=5+6 (90 s)
+K = 1700, 1202 digits (4002 bits), M = 32, U = 2.15, h = 3.822e-04 (5625 nodes)
+  moments, step h: 34 s
+  second step 0.85h: max log10 rel diff -9999.0  (34 s)
+  vs Arb power series, n <= 160: max log10 rel diff -1201.2; gamma(0) = [3.9769662255065128793 +/- 2.20e-21]
+  gamma_1..3 = [14.13472514173469379045725 +/- 1.99e-24], [21.02203963877155499262848 +/- 4.07e-25], [25.01085758014568876321379 +/- 9.93e-25]
+toy: zero #k moved to 1/2 + delta + i gamma_k.  D_sec = floor(1/sin^2(2 arctan(delta/gamma_k))) (Chasse)
+  k  delta  |  D_sec  |  d*(n=0)  d*/D_sec | certified: J^{d*-1,0} real zeros / degree | Im X at d*
+  cfg 5:0.45+6:0.45+7:0.45+8:0.45+9:0.45+10:0.45+11:0.45+12:0.45: D_sec = [1339, 1744, 2067, 2318, 2845, 3059, 3464, 3934]; first failing d = 1429 (tracked pair of the steepest zero), excess 90 = 6.72%; Im X = 2.703e-04   (52 s)
+  cfg 4:0.45: D_sec = [1143]; first failing d = 1197 (tracked pair of the steepest zero), excess 54 = 4.72%; Im X = 1.570e-04   (73 s)
+  cfg 5:0.45+6:0.45: D_sec = [1339, 1744]; first failing d = 1422 (tracked pair of the steepest zero), excess 83 = 6.20%; Im X = 3.475e-04   (90 s)
+done (90 s)
+
+## c_reach.py 3830 nocheck cfg=7:0.45 cfg=10:0.45 (1414 s, 77 MB)
+K = 3830, 2607 digits (8681 bits), M = 46, U = 2.15, h = 1.909e-04 (11263 nodes)
+  moments, step h: 305 s
+  second step 0.85h: max log10 rel diff -9999.0  (305 s)
+  vs Arb power series, n <= 160: max log10 rel diff -1249.7; gamma(0) = [3.9769662255065128793 +/- 2.20e-21]
+  gamma_1..3 = [14.13472514173469379045725 +/- 1.99e-24], [21.02203963877155499262848 +/- 4.07e-25], [25.01085758014568876321379 +/- 9.93e-25]
+toy: zero #k moved to 1/2 + delta + i gamma_k.  D_sec = floor(1/sin^2(2 arctan(delta/gamma_k))) (Chasse)
+  k  delta  |  D_sec  |  d*(n=0)  d*/D_sec | certified: J^{d*-1,0} real zeros / degree | Im X at d*
+  cfg 7:0.45: D_sec = [2067]; first failing d = 2207 (tracked pair of the steepest zero), excess 140 = 6.77%; Im X = 3.263e-04   (375 s)
+  cfg 10:0.45: D_sec = [3059]; first failing d = 3362 (tracked pair of the steepest zero), excess 303 = 9.91%; Im X = 1.822e-04   (1414 s)
+done (1414 s)
+
+## g_screen.py 3362 (3 s)
+ k  gamma_k   S       D_sec   predicted d*   measured d*   (delta = 0.45)
+  1   14.135  0.0676    247         250 (+1.4%)   249 (+0.8%)
+  2   21.022  0.1382    546         561 (+2.8%)   558 (+2.2%)
+  3   25.011  0.1641    772         797 (+3.3%)   795 (+3.0%)
+  4   30.425  0.2769   1143        1206 (+5.5%)   1197 (+4.7%)
+  5   32.935  0.2941   1339        1417 (+5.8%)   1412 (+5.5%)
+  7   40.919  0.3715   2067        2219 (+7.3%)   2207 (+6.8%)
+ 10   49.774  0.5504   3059        3389 (+10.8%)   3362 (+9.9%)
+GUE: I = int (1 - (sin pi u/pi u)^2)/u^2 du = 6.5797368  (= 2 pi^2/3 = 6.5797363?)
+N6 record height T = 3.000175e+12, rho = 4.280, zeros on both sides: S = 120.5, 2 S delta^2 = 33.90, heuristic reach = 9.54 x (16T^2-4)/9 = 1.527e+26
+N6 record height T = 3.000175e+12, rho = 4.280, zeros below only: S = 60.3, 2 S delta^2 = 16.95, heuristic reach = 5.87 x (16T^2-4)/9 = 9.393e+25
