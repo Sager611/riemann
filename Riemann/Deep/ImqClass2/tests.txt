@@ -1,0 +1,96 @@
+# Sieve tests (isieve2.c), 2026-11-06. Commands as run from .scratch/imqclass2 (build: cc -O3 -mcpu=apple-m4).
+
+## T1 soundness at production size, N = 10^4 near the bottom of the range (-T 3000: every 3000th certified lane by hash)
+./isieve2 10000 60000000000 60199999999 runs/T1 -T 3000
+DONE N=10000 [60000000000,60199999999]: lanes 75000000 = certF 1268731 + cert1 73731269 + t3 0 (t3pass 0, nonfund 0, t4 0); tested 33334, tier3 rechecked 0, bad 0; 83.6 s
+(tested lanes: exact M(d) by the independent Jacobi-symbol enumeration is >= N+1 and >= the lane's tier-1 sum)
+
+## T2 soundness with many tier-3/tier-4 lanes: N = 20000 at 2*10^10 (the window of ImqClass test (c))
+./isieve2 20000 20000000000 20001000000 runs/T2 -T 20
+DONE N=20000 [20000000000,20001000000]: lanes 375000 = certF 0 + cert1 349114 + t3 25886 (t3pass 6326, nonfund 2623, t4 16937); tested 24144, tier3 rechecked 25886, bad 0; 82.3 s
+isieve.c (ImqClass) on the same window: t3 133555 (t3pass 113995, nonfund 2623, t4 16937): the same nonfund and t4 counts (t4 = the fundamental d
+with exact M(d) <= N, independent of tier 1 when tier 1 is sound); the new bound sends 5.2 times fewer lanes to tier 3.
+
+## T3 soundness, N = 5000 at 5*10^9 (ImqClass test (c), second window)
+./isieve2 5000 5000000000 5002000000 runs/T3 -T 5
+DONE N=5000 [5000000000,5002000000]: lanes 750000 = certF 19300 + cert1 730655 + t3 45 (t3pass 18, nonfund 1, t4 26); tested 148252, tier3 rechecked 45, bad 0; 91.7 s
+(isieve.c: nonfund 1, t4 26: the same)
+
+## T4 positive cases, N = 2000 on [2^28, 2^28 + 2^24) (2610.21511's dry-run slab; ImqClass test (a))
+./isieve2 2000 268435456 285212671 runs/T4
+DONE N=2000 [268435456,285212671]: lanes 6291456 = certF 271095 + cert1 5833858 + t3 186503 (t3pass 46396, nonfund 14037, t4 126070); tested 0, tier3 rechecked 0, bad 0; 9.2 s
+python3 wincheck2.py dumps/r2000.txt runs/T4.t4 2000 268435456 285212671 3000   (dump: all table fields with h <= 3000 there, mjx dump.cfg)
+window [268435456, 285212671]: dump fields 598702 (h <= 3000), with h <= N=2000: 95845; t4 entries 126070
+fields with h <= N certified by the sieve (must be 0): 0 []
+M(d) > h (must be 0): 0 []
+t4 entries outside the window (must be 0): 0
+t4 entries that are fields with h <= N: 95845; with N < h <= HMAX: 30225; absent from the dump (h > HMAX): 0
+PASS
+(ImqClass: 95845 fields found, 30225 other t4 entries with h > 2000: the same; isieve.c needed 136.9 s)
+
+## T8 soundness at production size near the top, N = 10^4 at 7*10^11
+./isieve2 10000 700000000000 700049999999 runs/T8 -T 9000
+DONE N=10000 [700000000000,700049999999]: lanes 18750000 = certF 629779 + cert1 18120221 + t3 0 (t3pass 0, nonfund 0, t4 0); tested 2778, tier3 rechecked 0, bad 0; 37.2 s
+
+## Table self-check (every run): T_p against Kronecker symbols (Jacobi) at 400,000 random (d, p), and the table-based
+## Kronecker symbol of tier 3 against the Jacobi one: passed in every run (a failure stops the run with exit 4).
+
+## T5/T6 positive cases at production size, N = 10^4 on the window W1 = [15,300,820,992, 15,302,820,991] (ImqClass test (b)),
+## new and old sieve; all 607,950 table entries of the window dumped by mjx (dump.cfg)
+./isieve2 10000 15300820992 15302820991 runs/T5 -T 50
+DONE N=10000 [15300820992,15302820991]: lanes 750000 = certF 5094 + cert1 744320 + t3 586 (t3pass 210, nonfund 9, t4 367); tested 10000, tier3 rechecked 586, bad 0; 17.8 s
+./isieve_old 10000 15300820992 15302820991 runs/T6        (isieve.c of ImqClass, unchanged)
+DONE N=10000 [15300820992,15302820991]: lanes 750000 = certF 5094 + cert1 692321 + t3 52585 (t3pass 52209, nonfund 9, t4 367); tested 0 bad 0; 65.4 s
+sorted t4 lists of both: identical (367 entries, sha256 0983afbf84f73a7bb62e79faf10db9864a0351b7acfd6855858d6c7d663d7612)
+python3 wincheck2.py dumps/w1.txt runs/T5.t4 10000 15300820992 15302820991 100000000
+window [15300820992, 15302820991]: dump fields 607950 (h <= 100000000), with h <= N=10000: 169; t4 entries 367
+fields with h <= N certified by the sieve (must be 0): 0 []
+M(d) > h (must be 0): 0 []
+t4 entries outside the window (must be 0): 0
+t4 entries that are fields with h <= N: 169; with N < h <= HMAX: 198; absent from the dump (h > HMAX): 0
+PASS
+python3 ImqClass/wincheck.py dumps/w1.txt runs/T5.t4 10000      (the old check, unchanged)
+window fields 607950 (range 15300820995..15302820991), with h <= 10000: 169; t4 entries 367
+fields with h <= N certified by the sieve (must be 0): 0 []
+M(d) > h (must be 0): 0
+t4 entries absent from the table (must be 0): 0 []
+t4 entries with h > N (correctly kept for exact check): 198
+PASS
+(ImqClass test (b): 169 fields, 198 others: the same.) The new bound leaves 586 lanes for tier 3 where isieve.c left 52,585 (90 times fewer).
+
+## T7 (option -1, singles only, at 4*10^10 with -T 2000): stopped by hand after 160 s (tier-3 rechecks with Jacobi symbols
+## are slow there); not used in production.
+
+## Odd sampling moduli. The test hash selects lane d iff K divides d*2654435761, i.e. iff K | d. For even K (T1: 3000, T2: 20,
+## T5: 50, T8: 9000) only d = 4, 8 mod 16 (even d) were tested; repeated with odd K (every residue class mod 16):
+./isieve2 10000 60000000000 60099999999 runs/T1c -T 1499
+DONE N=10000 [60000000000,60099999999]: lanes 37500000 = certF 634367 + cert1 36865633 + t3 0 (t3pass 0, nonfund 0, t4 0); tested 24592, tier3 rechecked 0, bad 0; 58.6 s
+./isieve2 20000 20000000000 20001000000 runs/T2c -T 19
+DONE N=20000 [20000000000,20001000000]: lanes 375000 = certF 0 + cert1 349114 + t3 25886 (t3pass 6326, nonfund 2623, t4 16937); tested 18646, tier3 rechecked 25886, bad 0; 77.9 s
+./isieve2 10000 15300820992 15302820991 runs/T5c -T 49
+DONE N=10000 [15300820992,15302820991]: lanes 750000 = certF 5094 + cert1 744320 + t3 586 (t3pass 210, nonfund 9, t4 367); tested 15114, tier3 rechecked 586, bad 0; 22.4 s
+./isieve2 10000 700000000000 700049999999 runs/T8c -T 4499
+DONE N=10000 [700000000000,700049999999]: lanes 18750000 = certF 629779 + cert1 18120221 + t3 0 (t3pass 0, nonfund 0, t4 0); tested 3924, tier3 rechecked 0, bad 0; 46.6 s
+(Remaining bias: the tested d are multiples of K, so K's prime factors are ramified in every tested lane.)
+
+## isieve3.c (A1, P1, A2, P2 order; same items and weights) was tried and dropped: on the full segment
+## [2*10^11, 2*10^11 + 1.968*10^9) it took 51.8 ns per lane against 43.3 for isieve2 (more pair items per group);
+## its tests T5b (t4 list = T5's), T4b (t4 list = T4's), T8b, T1b passed. Production used isieve2 only.
+
+## T9 positive cases near the largest fields, N = 10^4 on W2 = [24,000,000,000, 24,001,999,999] (all 607,898 table entries dumped)
+./isieve2 10000 24000000000 24001999999 runs/T9 -T 49
+DONE N=10000 [24000000000,24001999999]: lanes 750000 = certF 5091 + cert1 744903 + t3 6 (t3pass 3, nonfund 0, t4 3); tested 15306, tier3 rechecked 6, bad 0; 24.7 s
+python3 wincheck2.py dumps/w2.txt runs/T9.t4 10000 24000000000 24001999999 100000000
+window [24000000000, 24001999999]: dump fields 607898 (h <= 100000000), with h <= N=10000: 0; t4 entries 3
+fields with h <= N certified by the sieve (must be 0): 0 []
+M(d) > h (must be 0): 0 []
+t4 entries outside the window (must be 0): 0
+t4 entries that are fields with h <= N: 0; with N < h <= HMAX: 3; absent from the dump (h > HMAX): 0
+PASS
+t4.gp on the 3 tier-4 entries: FOUND 0 (all h > 10^4), as in the tables.
+
+## T10 tier-4 tool on W1: t4.gp (classno_upto) on the 367 tier-4 entries of T5 returns exactly the 169 table fields with
+## h <= 10^4, with the table class numbers (identical (d, h) sets); 89 s.
+
+## Production chunk x5 [28e9, 31e9): 33 tier-4 entries (x5_t4.txt); t4.gp: one field, d = 28,154,696,707, h = 9819;
+## t4check.py against the tables on the overlap [2.8e10, 111*2^28): the table has exactly this field with h <= 10^4 there. PASS.

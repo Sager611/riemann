@@ -1,0 +1,47 @@
+# tablechecks 2026-11-06 05:33, tables k < 111
+== rows N <= 5000 against ImqClass/lists_sha256.txt
+N=1000 ours (4115897, 227932027, '075a201c8e7cce6c0b6013423a5d96c6308452afab2fa79882388fc46d8b0c45') ImqClass (4115897, 227932027, '075a201c8e7cce6c0b6013423a5d96c6308452afab2fa79882388fc46d8b0c45') EQUAL
+N=2000 ours (16453493, 1062350083, '07100ea3589ab2b490122fa69b438cd5393bdcd2e547dfc29bb3b5c86f9f24c0') ImqClass (16453493, 1062350083, '07100ea3589ab2b490122fa69b438cd5393bdcd2e547dfc29bb3b5c86f9f24c0') EQUAL
+N=2500 ours (25708497, 1595778787, '0b0386313ddd41a8715dfe667568c357450e1664184357e056ac630117526e9c') ImqClass (25708497, 1595778787, '0b0386313ddd41a8715dfe667568c357450e1664184357e056ac630117526e9c') EQUAL
+N=3000 ours (36993853, 2562211723, '54cea699cdc11ecaa794445cf52ee1a6ad7a8306ab2e0a6d5aa55c2c1fb29ea7') ImqClass (36993853, 2562211723, '54cea699cdc11ecaa794445cf52ee1a6ad7a8306ab2e0a6d5aa55c2c1fb29ea7') EQUAL
+N=3500 ours (50299869, 3495584467, 'cedfb7c440bc0814beaff0e3882649e5cd188dcc71daa7adf9bdb5e7a502057b') ImqClass (50299869, 3495584467, 'cedfb7c440bc0814beaff0e3882649e5cd188dcc71daa7adf9bdb5e7a502057b') EQUAL
+N=4000 ours (65772833, 4522161403, '5f173de5e077ebf0183c9f86876d8a000964db2bc5a22202579edbb40dd487d3') ImqClass (65772833, 4522161403, '5f173de5e077ebf0183c9f86876d8a000964db2bc5a22202579edbb40dd487d3') EQUAL
+N=4500 ours (83205069, 5683027267, '755c513eb6e15dc08b68c8ab96f534f6c5966a0a66d6cddd005b2fa866fe49f7') ImqClass (83205069, 5683027267, '755c513eb6e15dc08b68c8ab96f534f6c5966a0a66d6cddd005b2fa866fe49f7') EQUAL
+N=5000 ours (102746940, 6912348787, '7bc67e064addc52f724682806b42894e8267556a4a949b7918edfd106ae6b421') ImqClass (102746940, 6912348787, '7bc67e064addc52f724682806b42894e8267556a4a949b7918edfd106ae6b421') EQUAL
+rows N <= 5000 compared: 8, different: 0
+wrote rowcheck.gp (18 rows)
+== PARI: largest d of every row (rowcheck.gp)
+N=1000 d=227932027 h=996 fundamental 1 qfbclassno 996 quadclassunit 996 OK
+N=2000 d=1062350083 h=1978 fundamental 1 qfbclassno 1978 quadclassunit 1978 OK
+N=2500 d=1595778787 h=2496 fundamental 1 qfbclassno 2496 quadclassunit 2496 OK
+N=3000 d=2562211723 h=2976 fundamental 1 qfbclassno 2976 quadclassunit 2976 OK
+N=3500 d=3495584467 h=3477 fundamental 1 qfbclassno 3477 quadclassunit 3477 OK
+N=4000 d=4522161403 h=3996 fundamental 1 qfbclassno 3996 quadclassunit 3996 OK
+N=4500 d=5683027267 h=4465 fundamental 1 qfbclassno 4465 quadclassunit 4465 OK
+N=5000 d=6912348787 h=4967 fundamental 1 qfbclassno 4967 quadclassunit 4967 OK
+N=5500 d=8864190043 h=5391 fundamental 1 qfbclassno 5391 quadclassunit 5391 OK
+N=6000 d=10255087627 h=5896 fundamental 1 qfbclassno 5896 quadclassunit 5896 OK
+N=6500 d=11814923803 h=6496 fundamental 1 qfbclassno 6496 quadclassunit 6496 OK
+N=7000 d=14378569363 h=6860 fundamental 1 qfbclassno 6860 quadclassunit 6860 OK
+N=7500 d=16494940603 h=7312 fundamental 1 qfbclassno 7312 quadclassunit 7312 OK
+N=8000 d=18936628027 h=7940 fundamental 1 qfbclassno 7940 quadclassunit 7940 OK
+N=8500 d=21538327507 h=8226 fundamental 1 qfbclassno 8226 quadclassunit 8226 OK
+N=9000 d=24609209683 h=8912 fundamental 1 qfbclassno 8912 quadclassunit 8912 OK
+N=9500 d=25919990947 h=9487 fundamental 1 qfbclassno 9487 quadclassunit 9487 OK
+N=10000 d=28154696707 h=9819 fundamental 1 qfbclassno 9819 quadclassunit 9819 OK
+== PARI: largest d of 200 random h (perhcheck.gp)
+wrote perhcheck.gp
+perhcheck: 200 random h, bad 0
+== Holmin-Jones-Kurlberg-McLeman-Petersen (GRH), odd h <= 9999
+odd h <= 9999 compared: 5000, differences: 0, total fields ours 36132505, HK 36132505
+== tier 4 of chunk x5 against the tables (overlap [2.8e10, K*2^28))
+chunks [28000000000, 30999999999], tables to 29796335616 (k < 111); overlap [28000000000, 29796335615]
+t4 entries 33; FOUND (h <= 10000) 1, of them in the overlap 1, above the tables 0
+table fields with h <= N in the overlap: 1; not in t4 (must be 0): 0; M > h (must be 0): 0
+overlap: table fields vs FOUND, symmetric difference (must be empty): 0 []
+FOUND not in t4 (must be 0): 0
+wrote runs/append.txt (0 fields above the tables)
+PASS
+== overlap: largest table d with h <= 10^4 and minimum h of the table files inside [2.8e10, K*2^28)
+28154696707 9819
+files k=105.. 110 : min h 10052 in cl3mod8.107:
