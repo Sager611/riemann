@@ -441,5 +441,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R405 node N10 round: inputs of today's prime-between-powers discovery authenticated (KLN, HSW, Platt-Trudgian); Diouf's HAL proof for all cubes refuted (circular); 2507.15184 a candidate refinement; cellular automata, motion planning, nuclear structure: no route [R405.lean](Riemann/Tree/R405.lean)
 - R406 node N12 round 11: inputs of today's three-function discovery authenticated (Dousselin, Lamzouri, 2610.08965); no pre-emption; candidate: optimised Selberg method for N >= 4; phyllotaxis, immunology, climate: no route [R406.lean](Riemann/Tree/R406.lean)
 - R407 node N11 round 10: five routine harvest4 corollaries checked (Elkies primes, CARMICHAELS in P, Shusterman's problem, Borromean triples, Louboutin-Gica), two scout verdicts corrected; fracture mechanics, optical design, hydrology: no route [R407.lean](Riemann/Tree/R407.lean)
-- R408 FRONTIER (next)
+- R408 node N11 round 11: four more routine harvest4 corollaries (Kim's missing-digit Goldbach numbers, Mangerel's Littlewood type, Bahnson et al.'s saving, Akbary-Maarefparvar's 161 fields of Polya index 2 by exact recount); Fuselier et al. still need GRH; flocking, ranking, tides: no route [R408.lean](Riemann/Tree/R408.lean)
+- R409 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
