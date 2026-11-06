@@ -1,0 +1,62 @@
+Ingham3 certificate, python-flint 0.9.0 prec 128 full
+half-plane: B2 = [0.87338196661320751993 +/- 9.74e-22] ; T* = B2 + 2.2e-254 < B = 0.87338196661320760
+kernel: sup_{y>=pi} |sin y|/y <= 0.2173 checked on 8000 subintervals of [pi, 2pi]
+KLN row 0.60: admissible=True  A_mine=2.17604 (table 2.1770)  B_mine=5.66258 (table 5.663)  reproduces=True
+KLN row 0.65: admissible=True  A_mine=2.96258 (table 2.9630)  B_mine=5.24835 (table 5.249)  reproduces=True
+KLN row 0.70: admissible=True  A_mine=3.98228 (table 3.9830)  B_mine=4.82384 (table 4.824)  reproduces=True
+KLN row 0.75: admissible=True  A_mine=5.27638 (table 5.2770)  B_mine=4.40298 (table 4.403)  reproduces=True
+KLN row 0.80: admissible=True  A_mine=6.91735 (table 6.9180)  B_mine=3.99666 (table 3.997)  reproduces=True
+KLN row 0.85: admissible=True  A_mine=8.97402 (table 8.9750)  B_mine=3.58792 (table 3.588)  reproduces=True
+KLN row 0.86: admissible=True  A_mine=9.44029 (table 9.4410)  B_mine=3.51397 (table 3.514)  reproduces=True
+KLN row 0.87: admissible=True  A_mine=9.92554 (table 9.9260)  B_mine=3.42967 (table 3.430)  reproduces=True
+KLN row 0.88: admissible=True  A_mine=10.4303 (table 10.431)  B_mine=3.34536 (table 3.346)  reproduces=True
+KLN row 0.89: admissible=True  A_mine=10.9546 (table 10.955)  B_mine=3.26105 (table 3.262)  reproduces=True
+KLN row 0.90: admissible=True  A_mine=11.4988 (table 11.499)  B_mine=3.18590 (table 3.186)  reproduces=True
+KLN row 0.91: admissible=True  A_mine=12.0625 (table 12.063)  B_mine=3.10134 (table 3.102)  reproduces=True
+KLN row 0.92: admissible=True  A_mine=12.6460 (table 12.646)  B_mine=3.01678 (table 3.017)  reproduces=True
+KLN row 0.93: admissible=True  A_mine=13.2494 (table 13.250)  B_mine=2.94067 (table 2.941)  reproduces=True
+KLN row 0.94: admissible=True  A_mine=13.8718 (table 13.872)  B_mine=2.85586 (table 2.856)  reproduces=True
+KLN row 0.95: admissible=True  A_mine=14.5131 (table 14.513)  B_mine=2.77105 (table 2.772)  reproduces=True
+KLN row 0.96: admissible=True  A_mine=15.1727 (table 15.173)  B_mine=2.69397 (table 2.694)  reproduces=True
+KLN row 0.97: admissible=True  A_mine=15.8500 (table 15.850)  B_mine=2.60890 (table 2.609)  reproduces=True
+KLN row 0.98: admissible=True  A_mine=16.5441 (table 16.544)  B_mine=2.53110 (table 2.532)  reproduces=True
+KLN row 0.99: admissible=True  A_mine=17.2530 (table 17.253)  B_mine=2.44578 (table 2.446)  reproduces=True
+kernel m=2 dmax=1.00e-9: 5305 lambda-points, 4.4s
+kernel m=2 dmax=0.0250: 5305 lambda-points, 4.0s
+kernel m=2 dmax=0.150: 5305 lambda-points, 4.0s
+sigma cells: 144  Amax 10.0942  Bmax 6.36659
+k=7: every n >= 100 certified: 592 + 3000 cells on [32.236, 240] (max R 0.1546 at L=205.52), tail from L*=240: R <= 0.244; n <= 100 checked directly (largest prime found 100000000000031); CERTIFIED  32s
+k=6: x0 = e^217.45 (n0 = e^36.2417 = 5.4898e+15); 1651 cells on [217.45, 300] all R < 1 (max 0.9997 at L=217.45); tail from L*=300: R <= 0.0876; CERTIFIED  12s
+k=5: x0 = e^288.73 (n0 = e^57.7460 = 1.1989e+25); 2226 cells on [288.73, 400] all R < 1 (max 0.9996 at L=288.73); tail from L*=400: R <= 0.0368; CERTIFIED  19s
+k=4: x0 = e^468.84 (n0 = e^117.2100 = 8.0104e+50); 1712 cells on [468.84, 640] all R < 1 (max 0.9997 at L=468.84); tail from L*=640: R <= 0.0169; CERTIFIED  11s
+k=3: x0 = e^1881.03 (n0 = e^627.0100 = 2.0276e+272); 2076 cells on [1881.03, 2400] all R < 1 (max 0.9999 at L=1881.03); tail from L*=2400: R <= 0.0117; CERTIFIED  22s
+--- robustness: KLN parameter sets with delta = 1 (Theorem 1.1 as printed) ---
+KLN row 0.60 with delta=1: admissible=True  A=2.69667  B=5.66258
+KLN row 0.65 with delta=1: admissible=True  A=4.10170  B=5.24835
+KLN row 0.70 with delta=1: admissible=True  A=6.17731  B=4.82384
+KLN row 0.75 with delta=1: admissible=True  A=9.17719  B=4.40298
+KLN row 0.80 with delta=1: admissible=True  A=13.4533  B=3.99666
+KLN row 0.85 with delta=1: admissible=True  A=19.5208  B=3.58792
+KLN row 0.86 with delta=1: admissible=True  A=21.0011  B=3.51397
+KLN row 0.87 with delta=1: admissible=True  A=22.5810  B=3.42967
+KLN row 0.88 with delta=1: admissible=True  A=24.2684  B=3.34536
+KLN row 0.89 with delta=1: admissible=True  A=26.0660  B=3.26105
+KLN row 0.90 with delta=1: admissible=True  A=27.9823  B=3.18590
+KLN row 0.91 with delta=1: admissible=True  A=30.0195  B=3.10134
+KLN row 0.92 with delta=1: admissible=True  A=32.1848  B=3.01678
+KLN row 0.93 with delta=1: admissible=True  A=34.4853  B=2.94067
+KLN row 0.94 with delta=1: admissible=True  A=36.9221  B=2.85586
+KLN row 0.95 with delta=1: admissible=True  A=39.5019  B=2.77105
+KLN row 0.96 with delta=1: admissible=True  A=42.2289  B=2.69397
+KLN row 0.97 with delta=1: admissible=True  A=45.1067  B=2.60890
+KLN row 0.98 with delta=1: admissible=True  A=48.1381  B=2.53110
+KLN row 0.99 with delta=1: admissible=True  A=51.3242  B=2.44578
+variant delta=1: sigma cells 144, Amax 23.1379
+k=7: every n >= 100 certified: 592 + 3000 cells on [32.236, 240] (max R 0.3482 at L=205.52), tail from L*=240: R <= 0.559; n <= 100 checked directly (largest prime found 100000000000031); CERTIFIED  29s
+k=6: x0 = e^231.99 (n0 = e^38.6650 = 6.1944e+16); 1361 cells on [231.99, 300] all R < 1 (max 0.9995 at L=231.99); tail from L*=300: R <= 0.201; CERTIFIED  10s
+k=5: x0 = e^305.60 (n0 = e^61.1200 = 3.5001e+26); 1888 cells on [305.60, 400] all R < 1 (max 0.9999 at L=305.60); tail from L*=400: R <= 0.0844; CERTIFIED  13s
+k=4: x0 = e^491.86 (n0 = e^122.9650 = 2.5294e+53); 1482 cells on [491.86, 640] all R < 1 (max 0.9996 at L=491.86); tail from L*=640: R <= 0.0388; CERTIFIED  10s
+k=3: x0 = e^1947.12 (n0 = e^649.0400 = 7.4902e+281); 2612 cells on [1947.12, 2600] all R < 1 (max 1.0000 at L=1947.12); tail from L*=2600: R <= 0.00208; CERTIFIED  16s
+--- sanity check (floats): Ford zero-free region (c = 57.54) in place of B, k = 3 ---
+VK: the bound first drops below 1 at log x = e^33.99, i.e. n0 = exp(e^32.90)  (Dudek 2016: exp(e^33.217); Cully-Hugill 2023: exp(e^32.892), thesis exp(e^32.537))
+total 192s

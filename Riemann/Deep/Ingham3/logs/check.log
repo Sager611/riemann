@@ -1,0 +1,33 @@
+kernel: max over 60000 random z of (|Phi~(z)|/int Phi)/G(Im z) = 0.999999999496 (must be <= 1)
+Ramare b1: max_{1700<=X<=1e7} sum mu^2(n)/X = 0.609833 <= 0.62;  b2: max_{1002<=X<=1e7} sum mu^2(n)/n - (6/pi^2)log X = 1.047074 <= 1.048
+KLN (our evaluation, best admissible row) vs trivial count (N(T)-N(T0))/2:
+  sigma 0.7500: T=1e+13 KLN 3.594e+14 trivial 1.538e+13  T=1e+14 KLN 2.162e+15 trivial 2.278e+14
+  sigma 0.7800: T=1e+13 KLN 3.151e+13 trivial 1.538e+13  T=1e+14 KLN 1.570e+14 trivial 2.278e+14
+  sigma 0.8000: T=1e+13 KLN 6.197e+12 trivial 1.538e+13  T=1e+14 KLN 2.723e+13 trivial 2.278e+14
+  sigma 0.8300: T=1e+13 KLN 5.402e+11 trivial 1.538e+13  T=1e+14 KLN 1.965e+12 trivial 2.278e+14
+  sigma 0.8500: T=1e+13 KLN 1.058e+11 trivial 1.538e+13  T=1e+14 KLN 3.393e+11 trivial 2.278e+14
+  sigma 0.8600: T=1e+13 KLN 4.679e+10 trivial 1.538e+13  T=1e+14 KLN 1.409e+11 trivial 2.278e+14
+  sigma 0.8700: T=1e+13 KLN 2.069e+10 trivial 1.538e+13  T=1e+14 KLN 5.852e+10 trivial 2.278e+14
+  sigma 0.8734: T=1e+13 KLN 1.567e+10 trivial 1.538e+13  T=1e+14 KLN 4.340e+10 trivial 2.278e+14
+k=7 L=201.87 n=3.3453e+12 lambda0=delta*T0=6.278
+  sigma [0.515,0.8000]: T in [3e12,1e13] 1.203e-05  [1e13,1e15] 3.344e-06  [1e15,oo) 7.312e-09
+  sigma [0.800,0.8300]: T in [3e12,1e13] 4.675e-04  [1e13,1e15] 1.132e-04  [1e15,oo) 1.662e-07
+  sigma [0.830,0.8600]: T in [3e12,1e13] 1.867e-02  [1e13,1e15] 3.963e-03  [1e15,oo) 3.962e-06
+  sigma [0.860,0.8700]: T in [3e12,1e13] 4.626e-02  [1e13,1e15] 9.262e-03  [1e15,oo) 7.766e-06
+  sigma [0.870,0.8734]: T in [3e12,1e13] 3.368e-02  [1e13,1e15] 6.576e-03  [1e15,oo) 5.114e-06
+k=7 L=205.50 n=5.6188e+12 lambda0=delta*T0=3.737
+  sigma [0.515,0.8000]: T in [3e12,1e13] 1.304e-05  [1e13,1e15] 2.675e-06  [1e15,oo) 9.826e-09
+  sigma [0.800,0.8300]: T in [3e12,1e13] 5.529e-04  [1e13,1e15] 9.805e-05  [1e15,oo) 2.501e-07
+  sigma [0.830,0.8600]: T in [3e12,1e13] 2.405e-02  [1e13,1e15] 3.707e-03  [1e15,oo) 6.647e-06
+  sigma [0.860,0.8700]: T in [3e12,1e13] 6.190e-02  [1e13,1e15] 8.970e-03  [1e15,oo) 1.371e-05
+  sigma [0.870,0.8734]: T in [3e12,1e13] 4.582e-02  [1e13,1e15] 6.465e-03  [1e15,oo) 9.222e-06
+k=7 L=40.00  cert R=1.8507e-05   direct Z=1.509e-05   ratio cert/direct=1.2265
+k=7 L=100.00  cert R=3.9684e-08   direct Z=3.5681e-08   ratio cert/direct=1.1122
+k=7 L=180.00  cert R=0.0043753   direct Z=0.0042179   ratio cert/direct=1.0373
+k=7 L=201.80  cert R=0.1198   direct Z=0.11763   ratio cert/direct=1.0184
+k=7 L=205.50  cert R=0.15419   direct Z=0.15165   ratio cert/direct=1.0167
+k=7 L=230.00  cert R=0.039353   direct Z=0.038587   ratio cert/direct=1.0198
+k=6 L=217.45  cert R=0.9959   direct Z=0.97841   ratio cert/direct=1.0179
+k=5 L=288.73  cert R=0.99628   direct Z=0.98236   ratio cert/direct=1.0142
+k=4 L=468.84  cert R=0.99013   direct Z=0.97911   ratio cert/direct=1.0113
+k=3 L=1881.03  cert R=0.97064   direct Z=0.9585   ratio cert/direct=1.0127
