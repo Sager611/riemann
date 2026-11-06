@@ -1,0 +1,39 @@
+# Reviewer verdicts (pi subagent "reviewer", verdict-only, inline summaries, 2026-11-06 ~04:16 UTC)
+
+## Review 1: DERIVATION §3 (off-line first moment)
+Brief: Conrey Theorem 2 (Q = 1) as quoted by BCY; functional-equation transfer to σ⁺ with the δ-split; Littlewood + Jensen; layer cake with (R/L)ν(½,T); optimal P; c*(R); numbers 0.0805 (R → 0) and 0.0527 (κ = 0.6725, R = 1.164).
+Verdict: SOUND. "All four steps are correct conditional on the stated critical-line proportion." Littlewood 1/(2π) times Jensen 1/2 gives 1/(4π); mollifier zeros only increase the count; thin strip ∫_{1/2}^{σ+} ν ≤ (R/L)ν(½,T); ν(½,T) = (N − N_0)/2; minimiser P'' = b²P gives b(1 + coth b); equivalent form c*(R) = 1 + (1 − e^{−2R})/(e^{2θR} − 1).
+Note raised: κ = 0.6725 must be a proportion of zeros ON THE LINE (a distinct-zero proportion cannot substitute). Resolution: κ = 2 − C_MT is the proportion of simple zeros on the line, from inequality (E) (DERIVATION §3.5); the joint bound (§3.6) uses the off-line multiplicity bound M_S ≤ ΣK² − N − Σ(1 − H) directly.
+
+## Review 2: DERIVATION §2.5 and §3.6 (budgets)
+Brief: (E) → (E'); cluster loss λ; witness accounting 2S_0 − d ≥ −|I_1| − Σ_{I_2S} H; |C| ≤ N − |I_1| − 3|I_2S|; off-line budget M_S ≤ ΣK² − N − Σ(1 − H) (λ ≤ 1); joint α̂.
+Verdict: SOUND. "Reusing (E) is legitimate: you combine two consequences that hold simultaneously, not spend a consumable budget twice." Conditions: λ ≤ 1 (asserted in cert.py), λ < 1 when dividing, α̂ finite.
+
+## Review 3: DERIVATION §3.7 (hinge bound)
+Brief: layer cake above sigma+ = 1/2 + 2 pi rho/log T; normalisation (y - rho)/L; B(rho) = (1/4pi) log c*(2 pi rho); fixed R ~ 7.56 in Conrey's theorem; termwise h(y) <= alpha_rho (y - rho)^+; distinct pairs vs all zeros with beta > 1/2.
+Reply (verbatim, truncated to 3000 chars):
+VERDICT: FLAW at step 1: the numerical bound \(B(1.2)\le1.44\times10^{-5}\) is slightly too small.
+
+The mathematical argument otherwise works under the stated premises.
+
+**Step 1:** Layer cake and scaling are correct:
+\[
+\sum_{\beta>1/2}(y-\rho)^+
+=L\int_{\sigma_+}^1\nu(\sigma,T)\,d\sigma.
+\]
+Since \(N(T)\sim TL\),
+\[
+\frac{LT}{4\pi N(T)}\longrightarrow\frac1{4\pi},
+\qquad o(TL)=o(N(T)).
+\]
+Thus the coefficient \(B(\rho)\) is correct. However,
+\[
+B(1.2)\approx1.44059\times10^{-5},
+\]
+so a safe rounded upper bound is \(1.441\times10^{-5}\).
+
+**Fixed parameter:** Yes. Given the supplied theorem for every fixed \(R>0\), choosing \(R=2\pi(1.2036)\approx7.56244\) is legitimate. The error may depend on that fixed \(R\); uniformity in \(R\) is unnecessary.
+
+**Step 2:** Correct provided the stated pairs supply distinct positive-\(y\), right-of-line representatives within \(0<\gamma\le T\), respecting multiplicity. Their nonnegative excess-height sum is then a sub-sum of the full right-of-line sum. No factor of two is needed. Discarding negative contributions and subtracting the resulting upper bound have the correct inequality directions.
+
+**INCOMPLETE only numerically. TODO @worker:** correct the quoted bound. Alternatively, at the actual cutoff \(1.2036\), \(B(1.2036)<1.44\times10^{-5}\), so that bound remains usable there.Resolution: only a downward rounding in the prose (B(1.2) = 1.440588e-5 had been quoted as <= 1.44e-5); fixed to 1.441e-5 in DERIVATION/AUDIT. cert.py uses the Arb upper endpoints (B(1.2036) <= 1.404e-5 at c = 0.001), so the certified numbers are unaffected. Mathematical steps: SOUND (normalisation, fixed R, distinct pairs as a sub-sum).
