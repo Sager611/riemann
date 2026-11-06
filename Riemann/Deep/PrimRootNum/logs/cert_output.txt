@@ -1,0 +1,33 @@
+[core] B_2 = [0.87338196661320751993 +/- 9.74e-22], B = [0.87338196661320760 +/- 3e-22] (> B_2 + 1e-17), 1/(1-B) = [7.89776916646 +/- 9.39e-14]
+[core] ZETA: sum_rho 1/gamma^2 <= [0.046371186 +/- 4.61e-10]
+[core] BMOR at conductor 9: R(5/7;9) = [1.5520999 +/- 2.54e-8] > 0
+[sieve] 62 levels recomputed for w <= 10000 in 68 s
+[omega] w=    1 p_w=     2 L>=1.099 kappa=3.53 c_w=1.4301  (0 s)
+[omega] w=    2 p_w=     3 L>=1.946 kappa=11.1 c_w=1.4312  (0 s)
+[omega] w=    3 p_w=     5 L>=3.434 kappa=17.3 c_w=1.1363  (0 s)
+[omega] w=    5 p_w=    11 L>=7.745 kappa=54.1 c_w=0.9661  (0 s)
+[omega] w=   10 p_w=    29 L>=22.59 kappa=216 c_w=0.7508  (0 s)
+[omega] w=   20 p_w=    71 L>=61.59 kappa=868 c_w=0.6117  (0 s)
+[omega] w=   50 p_w=   229 L>=210.2 kappa=6130 c_w=0.5177  (0 s)
+[omega] w=  100 p_w=   541 L>=505.8 kappa=2.72e+04 c_w=0.4737  (0 s)
+[omega] w=  200 p_w=  1223 L>=1181 kappa=1.24e+05 c_w=0.4464  (0 s)
+[omega] w=  500 p_w=  3571 L>=3499 kappa=9.44e+05 c_w=0.4256  (1 s)
+[omega] w= 1000 p_w=  7919 L>=7812 kappa=4.32e+06 c_w=0.4137  (1 s)
+[omega] w= 2000 p_w= 17389 L>=1.723e+04 kappa=2.01e+07 c_w=0.4076  (3 s)
+[omega] w= 5000 p_w= 48611 L>=4.829e+04 kappa=1.51e+08 c_w=0.4015  (7 s)
+[omega] w=10000 p_w=104729 L>=1.044e+05 kappa=6.85e+08 c_w=0.3976  (13 s)
+[omega] Theorem B (all p, omega(p-1) <= 10000): g*(p) <= (1.4312 log p)^(3/(1-B)), worst w = 2
+[omega] Theorem B' (p > 1e7, omega(p-1) <= 10000): g*(p) <= (407/500 log p)^(3/(1-B)), worst w = 8
+[small] proof: max g*(p) = 211 < (407/500 log 5)^(3/(1-B)) = [601.440 +/- 3.58e-4], increasing in p: bound holds for 5 <= p <= 10000000
+[small] 664578 primes 3 <= p <= 10000000: max g*(p) = 211; records 3:2, 7:3, 23:5, 41:7, 109:11, 191:19, 271:43, 2791:53, 11971:79, 31771:107, 190321:149, 2080597:151, 3545281:163, 4022911:211
+[small] g*(p) <= (407/500 log p)^23.693307 for 5 <= p <= 10000000; worst log g*/log bound = 0.1083 at p = 5 (g* = 2)
+[tail] s = 23/10, delta = 1/10, w0 = 50, Q2 = 100000, W1 = 10000: Z1 = p_{W1+1} = 104743, u1 = log Z1 = [11.559265 +/- 9.79e-9], L1 = [104403.76 +/- 1.29e-3]
+[tail] integrals: I = [0.882775 +/- 3.93e-7], J = [3.27487 +/- 1.74e-6], K3 = [4.72882 +/- 1.42e-6], Psi(1) = [1.75049 +/- 3.11e-6], acap = 2609/1000, c_sigma <= [3.2795974 +/- 5.82e-10]
+[tail] 205 cells u in [[11.5593 +/- 3.50e-5], 60]: min tau = [0.111196 +/- 2.67e-8] (at u = [59.559 +/- 2.66e-4]); u >= 60: A_rel <= [0.009356 +/- 2.96e-7], B_rel <= [0.889211 +/- 3.93e-7], tau >= [0.101433 +/- 9.69e-8]
+[tail] cost: C - 1 <= 2^15 + c_sigma^2 (K_A + K_B) z^s, K_A <= [0.0160554 +/- 3.45e-8], K_B <= [0.00906308 +/- 3.88e-9]
+[tail] m_delta = [0.272694 +/- 2.71e-7] (lower bound of L^delta/log(L/(1-1/u1)) on L >= L1)
+[tail] every prime p with omega(p-1) > 10000: g*(p) <= (391/200 log p)^((1+s+delta)/(1-B)) = (1.955 log p)^[26.8524 +/- 1.52e-5]  (margin [0.0004080 +/- 4.87e-8]; 120 s)
+[final] every prime p >= 3: g*(p) <= (489/250 log p)^[26.852415 +/- 1.66e-7]   (binding: tail)
+[cor] g*(p) < p for every prime p with log p >= [94.4782 +/- 4.00e-5] (binding w = 27); sufficient: p >= 10^41.032
+[cor] g*(p) < sqrt(p) - 2 for every prime p with log p >= [224.609 +/- 2.90e-4] (binding w = 52); sufficient: p >= 10^97.547
+runtime 252.2 s

@@ -1,0 +1,19 @@
+75 adversarial primes (log10 p up to 81): all g*(p) <= (kappa_w log p)^(1/(1-B)); max log g*/log bound = 0.0829
+  primorial m=1    log10 p =    0.48  omega =  1  g* =    2  bound = 10^4.6
+  primorial m=6    log10 p =    5.08  omega =  6  g* =   29  bound = 10^23.4
+  primorial m=11   log10 p =   11.30  omega = 11  g* =   79  bound = 10^30.3
+  primorial m=16   log10 p =   19.99  omega = 16  g* =    7  bound = 10^34.8
+  primorial m=21   log10 p =   29.39  omega = 21  g* =  163  bound = 10^38.0
+  primorial m=26   log10 p =   38.67  omega = 26  g* =  229  bound = 10^40.5
+  primorial m=31   log10 p =   49.68  omega = 31  g* =  137  bound = 10^42.7
+  primorial m=36   log10 p =   60.68  omega = 36  g* =   31  bound = 10^44.4
+  primorial m=41   log10 p =   71.80  omega = 41  g* =   23  bound = 10^46.0
+  Sophie Germain   log10 p =    1.04  omega =  2  g* =    2  bound = 10^11.3
+  Sophie Germain   log10 p =    2.03  omega =  2  g* =    2  bound = 10^13.5
+  Sophie Germain   log10 p =    2.54  omega =  2  g* =    2  bound = 10^14.3
+  Sophie Germain   log10 p =    2.70  omega =  2  g* =    5  bound = 10^14.5
+  Fermat           log10 p =    1.23  omega =  1  g* =    3  bound = 10^7.9
+  2^a3^b+1         log10 p =    6.70  omega =  2  g* =   29  bound = 10^17.6
+R1/R2 at primes 286 <= x <= 1e7: max |E| log^2 x = 0.4639 (< 1/2 required)
+R3/R4: max |V e^g log x - 1| log^2 x = 0.4527 (< 1/2 required)
+R5: min theta(x)/(x(1 - 1/log x)) at primes 41 <= x <= 1e7 = 1.06562 (> 1 required)

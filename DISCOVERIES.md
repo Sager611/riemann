@@ -28,6 +28,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N11) Every modulus q ≤ Q is covered by 2.1067 log Q + 58 primes ≤ (820 log Q)^{7.90}: their subset products give all of (ℤ/qℤ)^× (was: almost all q). [details](discoveries/unit-group-cover.md)
 - (N10) A prime between n^7 and (n+1)^7 for every n ≥ 1 (was eighth powers), and between consecutive cubes beyond e^{627} (was exp(e^{32.5})). [details](discoveries/primes-between-powers.md)
 - (N8, N12) At least 2.06% of the zeros of a combination of three Dirichlet L-functions lie on the critical line (was 4.91·10⁻⁹); 34.71% for two (was ours 34.49%). [details](discoveries/linear-combinations-three.md)
+- (N11) Least prime primitive root without GRH: g*(p) ≤ (1.956 log p)^{26.86} for every prime p, (0.814 log p)^{23.70} if ω(p−1) ≤ 10⁴ (was: no bound below p). [details](discoveries/prime-primitive-root.md)
 
 ## Side results (off the RH tree)
 
