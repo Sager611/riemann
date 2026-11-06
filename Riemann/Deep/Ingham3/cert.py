@@ -16,6 +16,13 @@ def up(x):   # an exact arb >= every point of the ball x
     return arb(x.upper())
 def lo(x):
     return arb(x.lower())
+def exact_max(vals):
+    """the maximum of exact numbers (radius-0 balls), computed exactly (no float keys; fix of 6 Nov 2026, see REPORT Checks)."""
+    m = vals[0]
+    for v in vals[1:]:
+        assert v.rad() == 0 and m.rad() == 0
+        m = m.max(v)
+    return m
 def certain_lt(a, b):
     return bool(a < b)
 PI = arb.pi()
@@ -201,8 +208,10 @@ class Kernel:
         T = self.T[str(p)]
         if l0.upper() <= 1:
             return self.G0 + T[0]
+        assert l0.lower() >= 1
         i = int(math.floor(float((l0.log()/self.logr).lower())))
-        assert 0 <= i <= self.istore
+        while i > 0 and not (self.lam[i].upper() <= l0.lower()): i -= 1     # exact: lam_i <= l0 (fix of 6 Nov 2026: float rounding cannot pick a point above l0)
+        assert 0 <= i <= self.istore and self.lam[i].upper() <= l0.lower()
         return up(l0**p*self.Gv[i] + T[i])
 def p_up(p, pgrid):
     for q in pgrid:
@@ -230,9 +239,8 @@ class Setup:
             if t is B: break
             s = t
         self.cells = cells
-        self.Amax = max((c[2].logA(c[1]).exp().upper() for c in cells), key=lambda z: float(arb(z).mid()))
-        self.Bmax = max((c[2].Bc(c[0]).upper() for c in cells), key=lambda z: float(arb(z).mid()))
-        self.Amax, self.Bmax = arb(self.Amax), arb(self.Bmax)
+        self.Amax = exact_max([arb(c[2].logA(c[1]).exp().upper()) for c in cells])     # exact maxima (fix of 6 Nov 2026)
+        self.Bmax = exact_max([arb(c[2].Bc(c[0]).upper()) for c in cells])
 NT0 = up(Nplus(T0))
 def cell_bound(S, k, La, Lb, m, detail=False):
     """Upper bound R for 1 - (main term)^{-1} * (prime sum) over all x = n^k in [e^La, e^Lb] (DERIVATION sec. 4)."""

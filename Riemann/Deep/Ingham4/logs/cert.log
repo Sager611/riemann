@@ -1,0 +1,108 @@
+Ingham4 certificate, python-flint 0.9.0 prec 128
+half-plane: B2 = [0.87338196661320751993 +/- 9.74e-22] ; T* = B2 + 2.2e-254 < B = 0.87338196661320760
+kernel: sup_{y>=pi} |sin y|/y <= 0.2173 checked on 8000 subintervals of [pi, 2pi]
+trapezoid kernel a=0.1 dmax=1.00e-9: 6684 lambda-points, stored to 63.9, 4.8s
+trapezoid kernel a=0.1 dmax=0.0250: 6684 lambda-points, stored to 63.9, 4.7s
+KLN row 0.60: admissible=True  A_mine=2.17604 (table 2.1770)  B_mine=5.66258 (table 5.663)  reproduces=True
+KLN row 0.65: admissible=True  A_mine=2.96258 (table 2.9630)  B_mine=5.24835 (table 5.249)  reproduces=True
+KLN row 0.70: admissible=True  A_mine=3.98228 (table 3.9830)  B_mine=4.82384 (table 4.824)  reproduces=True
+KLN row 0.75: admissible=True  A_mine=5.27638 (table 5.2770)  B_mine=4.40298 (table 4.403)  reproduces=True
+KLN row 0.80: admissible=True  A_mine=6.91735 (table 6.9180)  B_mine=3.99666 (table 3.997)  reproduces=True
+KLN row 0.85: admissible=True  A_mine=8.97402 (table 8.9750)  B_mine=3.58792 (table 3.588)  reproduces=True
+KLN row 0.86: admissible=True  A_mine=9.44029 (table 9.4410)  B_mine=3.51397 (table 3.514)  reproduces=True
+KLN row 0.87: admissible=True  A_mine=9.92554 (table 9.9260)  B_mine=3.42967 (table 3.430)  reproduces=True
+KLN row 0.88: admissible=True  A_mine=10.4303 (table 10.431)  B_mine=3.34536 (table 3.346)  reproduces=True
+KLN row 0.89: admissible=True  A_mine=10.9546 (table 10.955)  B_mine=3.26105 (table 3.262)  reproduces=True
+KLN row 0.90: admissible=True  A_mine=11.4988 (table 11.499)  B_mine=3.18590 (table 3.186)  reproduces=True
+KLN row 0.91: admissible=True  A_mine=12.0625 (table 12.063)  B_mine=3.10134 (table 3.102)  reproduces=True
+KLN row 0.92: admissible=True  A_mine=12.6460 (table 12.646)  B_mine=3.01678 (table 3.017)  reproduces=True
+KLN row 0.93: admissible=True  A_mine=13.2494 (table 13.250)  B_mine=2.94067 (table 2.941)  reproduces=True
+KLN row 0.94: admissible=True  A_mine=13.8718 (table 13.872)  B_mine=2.85586 (table 2.856)  reproduces=True
+KLN row 0.95: admissible=True  A_mine=14.5131 (table 14.513)  B_mine=2.77105 (table 2.772)  reproduces=True
+KLN row 0.96: admissible=True  A_mine=15.1727 (table 15.173)  B_mine=2.69397 (table 2.694)  reproduces=True
+KLN row 0.97: admissible=True  A_mine=15.8500 (table 15.850)  B_mine=2.60890 (table 2.609)  reproduces=True
+KLN row 0.98: admissible=True  A_mine=16.5441 (table 16.544)  B_mine=2.53110 (table 2.532)  reproduces=True
+KLN row 0.99: admissible=True  A_mine=17.2530 (table 17.253)  B_mine=2.44578 (table 2.446)  reproduces=True
+=== MAIN CLAIM (pipeline A1: trapezoid weight a = 1/10, KLN Lemma 4.14 with RH(3e12); refereed zero counts only) ===
+KLN rows at H0 = 3e12: not admissible (dropped): ['0.60']
+KLN rows at H0 = 3e12: A(sigma0) = 0.65:2.7922 0.70:3.7563 0.75:4.9832 0.80:6.5478 0.85:8.5122 0.86:8.9580 0.87:9.4220 0.88:9.9044 0.89:10.406 0.90:10.926 0.91:11.466 0.92:12.024 0.93:12.601 0.94:13.196 0.95:13.810 0.96:14.441 0.97:15.089 0.98:15.753 0.99:16.431
+sigma cells: 144  Amax 9.58339  Bmax 6.10455
+small x (theta = 856/1000): 22 gap records below 10000000 (largest (154, 4652353)), all g <= p^theta (worst log g/log p = 0.7124 at p = 7); 1476 <= 9999991^theta; e^42 < 4e18
+theta=0.856: 4932 cells on [42, 300] all R < 1 (max 0.9711 at log x = 191.82); tail from L*=300: R <= 0.0142; small x below e^42: gap records + OeS-H-P; CERTIFIED  42s
+theta=0.855: FAILS at the cell starting at log x = 187.70 (R = 1.0005)  16s
+theta=0.855, cells of width 0.004 on [184, 198]: max R 1.1520 at log x = 190.608 (exceeds 1)  33s
+part main: peak memory 104 MB, 101s
+Ingham4 certificate, python-flint 0.9.0 prec 128
+half-plane: B2 = [0.87338196661320751993 +/- 9.74e-22] ; T* = B2 + 2.2e-254 < B = 0.87338196661320760
+kernel: sup_{y>=pi} |sin y|/y <= 0.2173 checked on 8000 subintervals of [pi, 2pi]
+kernel m=2 dmax=1.00e-9: 5305 lambda-points, 3.8s
+kernel m=2 dmax=0.0250: 5305 lambda-points, 3.6s
+=== Ingham3 pipeline unchanged (A0: triangle, KLN at H0 = 3.0610046e10) ===
+KLN row 0.60: admissible=True  A_mine=2.17604 (table 2.1770)  B_mine=5.66258 (table 5.663)  reproduces=True
+KLN row 0.65: admissible=True  A_mine=2.96258 (table 2.9630)  B_mine=5.24835 (table 5.249)  reproduces=True
+KLN row 0.70: admissible=True  A_mine=3.98228 (table 3.9830)  B_mine=4.82384 (table 4.824)  reproduces=True
+KLN row 0.75: admissible=True  A_mine=5.27638 (table 5.2770)  B_mine=4.40298 (table 4.403)  reproduces=True
+KLN row 0.80: admissible=True  A_mine=6.91735 (table 6.9180)  B_mine=3.99666 (table 3.997)  reproduces=True
+KLN row 0.85: admissible=True  A_mine=8.97402 (table 8.9750)  B_mine=3.58792 (table 3.588)  reproduces=True
+KLN row 0.86: admissible=True  A_mine=9.44029 (table 9.4410)  B_mine=3.51397 (table 3.514)  reproduces=True
+KLN row 0.87: admissible=True  A_mine=9.92554 (table 9.9260)  B_mine=3.42967 (table 3.430)  reproduces=True
+KLN row 0.88: admissible=True  A_mine=10.4303 (table 10.431)  B_mine=3.34536 (table 3.346)  reproduces=True
+KLN row 0.89: admissible=True  A_mine=10.9546 (table 10.955)  B_mine=3.26105 (table 3.262)  reproduces=True
+KLN row 0.90: admissible=True  A_mine=11.4988 (table 11.499)  B_mine=3.18590 (table 3.186)  reproduces=True
+KLN row 0.91: admissible=True  A_mine=12.0625 (table 12.063)  B_mine=3.10134 (table 3.102)  reproduces=True
+KLN row 0.92: admissible=True  A_mine=12.6460 (table 12.646)  B_mine=3.01678 (table 3.017)  reproduces=True
+KLN row 0.93: admissible=True  A_mine=13.2494 (table 13.250)  B_mine=2.94067 (table 2.941)  reproduces=True
+KLN row 0.94: admissible=True  A_mine=13.8718 (table 13.872)  B_mine=2.85586 (table 2.856)  reproduces=True
+KLN row 0.95: admissible=True  A_mine=14.5131 (table 14.513)  B_mine=2.77105 (table 2.772)  reproduces=True
+KLN row 0.96: admissible=True  A_mine=15.1727 (table 15.173)  B_mine=2.69397 (table 2.694)  reproduces=True
+KLN row 0.97: admissible=True  A_mine=15.8500 (table 15.850)  B_mine=2.60890 (table 2.609)  reproduces=True
+KLN row 0.98: admissible=True  A_mine=16.5441 (table 16.544)  B_mine=2.53110 (table 2.532)  reproduces=True
+KLN row 0.99: admissible=True  A_mine=17.2530 (table 17.253)  B_mine=2.44578 (table 2.446)  reproduces=True
+small x (theta = 857/1000): 22 gap records below 10000000 (largest (154, 4652353)), all g <= p^theta (worst log g/log p = 0.7124 at p = 7); 1476 <= 9999991^theta; e^42 < 4e18
+theta=0.857: 4932 cells on [42, 300] all R < 1 (max 0.9319 at log x = 191.68); tail from L*=300: R <= 0.0084; small x below e^42: gap records + OeS-H-P; CERTIFIED  42s
+theta=0.856: FAILS at the cell starting at log x = 187.84 (R = 1.0027)  16s
+theta=0.856, cells of width 0.004 on [183, 197]: max R 1.1064 at log x = 190.392 (exceeds 1)  33s
+part a0: peak memory 92 MB, 99s
+Ingham4 certificate, python-flint 0.9.0 prec 128
+half-plane: B2 = [0.87338196661320751993 +/- 9.74e-22] ; T* = B2 + 2.2e-254 < B = 0.87338196661320760
+kernel: sup_{y>=pi} |sin y|/y <= 0.2173 checked on 8000 subintervals of [pi, 2pi]
+trapezoid kernel a=0.1 dmax=1.00e-9: 6684 lambda-points, stored to 63.9, 4.9s
+trapezoid kernel a=0.1 dmax=0.0250: 6684 lambda-points, stored to 63.9, 4.8s
+=== robustness: every KLN row with delta = 1 (KLN Thm 1.1 as printed), pipeline A1 ===
+KLN rows at H0 = 3e12: not admissible (dropped): ['0.60']
+KLN rows at H0 = 3e12: A(sigma0) = 0.65:3.7970 0.70:5.6890 0.75:8.4115 0.80:12.279 0.85:17.734 0.86:19.060 0.87:20.473 0.88:21.979 0.89:23.582 0.90:25.287 0.91:27.097 0.92:29.017 0.93:31.052 0.94:33.204 0.95:35.478 0.96:37.877 0.97:40.400 0.98:43.053 0.99:45.838
+theta=0.860 (delta=1): FAILS at the cell starting at log x = 195.96 (R = 1.0008)  20s
+small x (theta = 861/1000): 22 gap records below 10000000 (largest (154, 4652353)), all g <= p^theta (worst log g/log p = 0.7124 at p = 7); 1476 <= 9999991^theta; e^42 < 4e18
+theta=0.861 (delta=1): 4932 cells on [42, 300] all R < 1 (max 0.8497 at log x = 198.62); tail from L*=300: R <= 0.0163; small x below e^42: gap records + OeS-H-P; CERTIFIED  43s
+part delta1: peak memory 104 MB, 72s
+Ingham4 certificate, python-flint 0.9.0 prec 128
+half-plane: B2 = [0.87338196661320751993 +/- 9.74e-22] ; T* = B2 + 2.2e-254 < B = 0.87338196661320760
+kernel: sup_{y>=pi} |sin y|/y <= 0.2173 checked on 8000 subintervals of [pi, 2pi]
+trapezoid kernel a=0.1 dmax=1.00e-9: 6684 lambda-points, stored to 63.9, 4.7s
+trapezoid kernel a=0.1 dmax=0.0250: 6684 lambda-points, stored to 63.9, 4.6s
+trapezoid kernel a=0.1 dmax=0.150: 6684 lambda-points, stored to 63.9, 4.9s
+=== CONDITIONAL: A1 + Chourasiya-Simonic 2507.15184 Cor. 1.1 (unrefereed), B1 raised for b4 = 0.5501 (RZA 2603.25961) ===
+KLN rows at H0 = 3e12: not admissible (dropped): ['0.60']
+KLN rows at H0 = 3e12: A(sigma0) = 0.65:2.7922 0.70:3.7563 0.75:4.9832 0.80:6.5478 0.85:8.5122 0.86:8.9580 0.87:9.4220 0.88:9.9044 0.89:10.406 0.90:10.926 0.91:11.466 0.92:12.024 0.93:12.601 0.94:13.196 0.95:13.810 0.96:14.441 0.97:15.089 0.98:15.753 0.99:16.431
+  sigma-cell [0.5150, 0.5175]: KLN row 0.65, CS rows ['0.50000-0.53125'], B1 5.07307, B2 15.3017
+  sigma-cell [0.5450, 0.5475]: KLN row 0.65, CS rows ['0.53125-0.56250'], B1 6.05614, B2 14.8277
+  sigma-cell [0.5750, 0.5775]: KLN row 0.65, CS rows ['0.56250-0.59375'], B1 7.09556, B2 14.3537
+  sigma-cell [0.6050, 0.6075]: KLN row 0.65, CS rows ['0.59375-0.62500'], B1 8.21491, B2 13.8797
+  sigma-cell [0.6350, 0.6375]: KLN row 0.65, CS rows ['0.62500-0.65625'], B1 9.43180, B2 13.4067
+  sigma-cell [0.6650, 0.6675]: KLN row 0.65, CS rows ['0.65625-0.68750'], B1 10.7641, B2 12.9362
+  sigma-cell [0.6950, 0.6975]: KLN row 0.70, CS rows ['0.68750-0.71875'], B1 12.1987, B2 12.4622
+  sigma-cell [0.7250, 0.7275]: KLN row 0.75, CS rows ['0.71875-0.75000'], B1 13.7801, B2 11.9882
+  sigma-cell [0.7550, 0.7575]: KLN row 0.75, CS rows ['0.75000-0.78125'], B1 15.5096, B2 11.5142
+  sigma-cell [0.7850, 0.7875]: KLN row 0.80, CS rows ['0.78125-0.81250'], B1 17.4190, B2 11.0412
+  sigma-cell [0.8150, 0.8175]: KLN row 0.80, CS rows ['0.81250-0.84375'], B1 19.5820, B2 10.5672
+  sigma-cell [0.8450, 0.8475]: KLN row 0.85, CS rows ['0.84375-0.87500'], B1 22.1236, B2 10.0932
+  sigma-cell [0.8725, 0.8734]: KLN row 0.88, CS rows ['0.84375-0.87500'], B1 22.1236, B2 10.0932
+small x (theta = 842/1000): 22 gap records below 10000000 (largest (154, 4652353)), all g <= p^theta (worst log g/log p = 0.7124 at p = 7); 1476 <= 9999991^theta; e^42 < 4e18
+theta=0.842 (A1+CS): 4932 cells on [42, 300] all R < 1 (max 0.8666 at log x = 175.20); tail from L*=300: R <= 0.0815; small x below e^42: gap records + OeS-H-P; CERTIFIED  79s
+theta=0.841 (A1+CS): FAILS at the cell starting at log x = 173.96 (R = 1.0005)  20s
+k=6 (A1+CS): every n >= 100: 5448 cells on [27.631, 300] (max R 0.7032 at L=177.18), tail from L*=300: R <= 0.129; 1 <= n <= 100 checked directly (largest prime 1000000000039); CERTIFIED  87s
+k=5 (A1+CS): x0 = e^227.92 (n0 = e^45.5840 = 6.2644e+19); 3442 cells on [227.92, 400] all R < 1 (max 0.9997 at L=227.92); tail from L*=400: R <= 0.0528; CERTIFIED  53s
+k=4 (A1+CS): x0 = e^364.71 (n0 = e^91.1775 = 3.9617e+39); 2753 cells on [364.71, 640] all R < 1 (max 0.9997 at L=364.71); tail from L*=640: R <= 0.0238; CERTIFIED  42s
+k=3 (A1+CS): x0 = e^1405.27 (n0 = e^468.4233 = 2.7144e+203); 3979 cells on [1405.27, 2400] all R < 1 (max 0.9999 at L=1405.27); tail from L*=2400: R <= 0.0162; CERTIFIED  60s
+part cs: peak memory 164 MB, 357s
+all parts done: peak memory per part (MB) main 104, a0 92, delta1 104, cs 164; total 631s

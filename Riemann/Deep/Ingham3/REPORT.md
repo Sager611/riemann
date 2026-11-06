@@ -34,6 +34,7 @@ uv run --no-project --with python-flint --with mpmath --with sympy python3 Riema
 - σ ≈ 0.85 band at T ≈ 10^{13}: KLN gives N(0.85, 10^{13}) ≤ 1.06·10^{11} against the trivial 1.54·10^{13}; crossover only at σ ≈ 0.78; the certificate never uses the trivial count; σ < 0.83 contributes < 7·10^{−4} at the k = 7 worst point.
 - Kernel bound tested on 6·10⁴ random points (max ratio 0.9999999995 < 1). Ramaré's b₁, b₂ (inside KLN) rechecked to 10⁷.
 - Truncation: none. ψ versus θ: prime powers inside the interval only. Trivial zeros: ≤ W(1)/(x(x²−1)).
+- Rounding fixes (6 Nov 2026, found in the Ingham4 code audit): the moment-table index for λ₀ is now checked exactly (λ_i ≤ λ₀ in Arb, instead of the floor of a float), and A_max, B_max are exact maxima instead of float-keyed ones; rerun (212 s, 212 MB): logs/cert_result.json byte-identical, cert.log identical apart from timings — results unchanged.
 
 ## Novelty
 NOVELTY.md: arXiv listings Oct–Nov 2026, arXiv API, web search, Zenodo, HAL, GXL evidence API, our files. Nothing on k = 7 for all n or on a single-exponential cube threshold. One unaccepted HAL claim (Diouf 2020, elementary "primes between all consecutive cubes") is not audited; 2601.15564 (2026) treats the problem as open.

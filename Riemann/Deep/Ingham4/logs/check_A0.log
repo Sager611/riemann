@@ -1,0 +1,16 @@
+kernel a=0.500: max over 60000 random z of (|Phi~(z)|/int Phi)/G(Im z) = 0.999999999496 (must be <= 1)
+band breakdown theta=0.857:
+  L=191.68 delta*T0=3.741 (KLN)
+    sigma [0.515,0.8000]: T in [3e12,1e13] 2.167e-04  [1e13,1e15] 4.470e-05  [1e15,oo) 1.662e-07
+    sigma [0.800,0.8300]: T in [3e12,1e13] 5.991e-03  [1e13,1e15] 1.066e-03  [1e15,oo) 2.737e-06
+    sigma [0.830,0.8600]: T in [3e12,1e13] 1.722e-01  [1e13,1e15] 2.663e-02  [1e15,oo) 4.805e-05
+    sigma [0.860,0.8700]: T in [3e12,1e13] 3.677e-01  [1e13,1e15] 5.334e-02  [1e15,oo) 8.148e-05
+    sigma [0.870,0.8734]: T in [3e12,1e13] 2.511e-01  [1e13,1e15] 3.545e-02  [1e15,oo) 5.050e-05
+theta=0.857 KLN L=42.00  cert R=0.00011524   direct R=0.00010233   ratio cert/direct=1.1261
+theta=0.857 KLN L=100.00  cert R=1.9771e-06   direct R=1.7991e-06   ratio cert/direct=1.0989
+theta=0.857 KLN L=150.00  cert R=0.002285   direct R=0.0021722   ratio cert/direct=1.0519
+theta=0.857 KLN L=185.00  cert R=0.23847   direct R=0.23176   ratio cert/direct=1.0290
+theta=0.857 KLN L=191.68  cert R=0.92863   direct R=0.91419   ratio cert/direct=1.0158
+theta=0.857 KLN L=200.00  cert R=0.65676   direct R=0.64415   ratio cert/direct=1.0196
+theta=0.857 KLN L=230.00  cert R=0.096491   direct R=0.09474   ratio cert/direct=1.0185
+theta=0.857 KLN L=280.00  cert R=0.0034965   direct R=0.0034436   ratio cert/direct=1.0153

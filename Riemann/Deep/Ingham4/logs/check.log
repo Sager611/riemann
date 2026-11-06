@@ -1,0 +1,35 @@
+kernel a=0.100: max over 60000 random z of (|Phi~(z)|/int Phi)/G(Im z) = 0.999999999395 (must be <= 1)
+kernel a=0.500: max over 60000 random z of (|Phi~(z)|/int Phi)/G(Im z) = 0.999999999496 (must be <= 1)
+band breakdown theta=0.856:
+  L=191.82 delta*T0=3.027 (KLN)
+    sigma [0.515,0.8000]: T in [3e12,1e13] 1.297e-04  [1e13,1e15] 1.651e-04  [1e15,oo) 6.483e-07
+    sigma [0.800,0.8300]: T in [3e12,1e13] 3.663e-03  [1e13,1e15] 3.998e-03  [1e15,oo) 1.074e-05
+    sigma [0.830,0.8600]: T in [3e12,1e13] 1.074e-01  [1e13,1e15] 1.014e-01  [1e15,oo) 1.895e-04
+    sigma [0.860,0.8700]: T in [3e12,1e13] 2.315e-01  [1e13,1e15] 2.046e-01  [1e15,oo) 3.223e-04
+    sigma [0.870,0.8734]: T in [3e12,1e13] 1.587e-01  [1e13,1e15] 1.364e-01  [1e15,oo) 1.999e-04
+band breakdown theta=0.842:
+  L=175.20 delta*T0=2.852 (KLN+CS)
+    sigma [0.515,0.8000]: T in [3e12,1e13] 1.765e-04  [1e13,1e15] 1.907e-04  [1e15,oo) 6.025e-07
+    sigma [0.800,0.8300]: T in [3e12,1e13] 4.652e-03  [1e13,1e15] 4.455e-03  [1e15,oo) 1.049e-05
+    sigma [0.830,0.8600]: T in [3e12,1e13] 1.153e-01  [1e13,1e15] 9.787e-02  [1e15,oo) 1.710e-04
+    sigma [0.860,0.8700]: T in [3e12,1e13] 2.138e-01  [1e13,1e15] 1.711e-01  [1e15,oo) 2.579e-04
+    sigma [0.870,0.8734]: T in [3e12,1e13] 1.353e-01  [1e13,1e15] 1.056e-01  [1e15,oo) 1.494e-04
+theta=0.856 KLN L=42.00  cert R=0.00022006   direct R=0.00018917   ratio cert/direct=1.1633
+theta=0.856 KLN L=100.00  cert R=6.3515e-06   direct R=5.7839e-06   ratio cert/direct=1.0981
+theta=0.856 KLN L=150.00  cert R=0.0081221   direct R=0.0077284   ratio cert/direct=1.0509
+theta=0.856 KLN L=185.00  cert R=0.71117   direct R=0.69412   ratio cert/direct=1.0246
+theta=0.856 KLN L=191.82  cert R=0.96775   direct R=0.94892   ratio cert/direct=1.0198
+theta=0.856 KLN L=200.00  cert R=0.69759   direct R=0.67439   ratio cert/direct=1.0344
+theta=0.856 KLN L=230.00  cert R=0.10233   direct R=0.10001   ratio cert/direct=1.0232
+theta=0.856 KLN L=280.00  cert R=0.0037585   direct R=0.0036894   ratio cert/direct=1.0187
+theta=0.842 KLN+CS L=100.00  cert R=7.3387e-06   direct R=6.787e-06   ratio cert/direct=1.0813
+theta=0.842 KLN+CS L=175.20  cert R=0.86385   direct R=0.84931   ratio cert/direct=1.0171
+theta=0.842 KLN+CS L=200.00  cert R=0.21943   direct R=0.21514   ratio cert/direct=1.0199
+theta=0.842 KLN+CS L=250.00  cert R=0.0090331   direct R=0.0088849   ratio cert/direct=1.0167
+k=6 KLN+CS L=40.00  cert R=7.8659e-05   direct R=6.5175e-05   ratio cert/direct=1.2069
+k=6 KLN+CS L=120.00  cert R=5.2393e-05   direct R=4.9152e-05   ratio cert/direct=1.0659
+k=6 KLN+CS L=177.18  cert R=0.69786   direct R=0.68658   ratio cert/direct=1.0164
+k=6 KLN+CS L=250.00  cert R=0.010521   direct R=0.01036   ratio cert/direct=1.0156
+k=5 KLN+CS L=227.92  cert R=0.99563   direct R=0.97954   ratio cert/direct=1.0164
+k=4 KLN+CS L=364.71  cert R=0.99023   direct R=0.97595   ratio cert/direct=1.0146
+k=3 KLN+CS L=1405.27  cert R=0.97118   direct R=0.95983   ratio cert/direct=1.0118

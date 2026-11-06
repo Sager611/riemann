@@ -1,0 +1,81 @@
+code_audit.py: python-flint 0.9.0 ; tables built at 128 bits as in cert.py and tested at 256 bits; KLN rows re-evaluated at 256 bits; cells recomputed without tables
+  moment tri dmax=1e-9 p=25/200 i=180 (lambda=1.4328): definition 0.189145311590 <= stored 0.1892940515  (stored/definition = 1.000786)
+  moment tri dmax=1e-9 p=121/200 i=15 (lambda=1.0304): definition 1.95524969174 <= stored 1.957033816  (stored/definition = 1.000912)
+  moment tri dmax=1e-9 p=167/200 i=831 (lambda=5.2611): definition 1.36069873213 <= stored 1.363641113  (stored/definition = 1.002162)
+  moment tri dmax=1e-9 p=6/200 i=1328 (lambda=14.2015): definition 0.00118423201788 <= stored 0.001185800161  (stored/definition = 1.001324)
+  moment tri dmax=1e-9 p=58/200 i=440 (lambda=2.4088): definition 0.372639073860 <= stored 0.3730778517  (stored/definition = 1.001177)
+  moment tri dmax=1e-9 p=71/200 i=350 (lambda=2.0123): definition 0.582596985536 <= stored 0.5832211705  (stored/definition = 1.001071)
+  kernel tri dmax=1e-9 done; rss 51 MB
+  moment tri dmax=0.025 p=297/200 i=273 (lambda=1.7254): definition 24.9227007533 <= stored 24.96260223  (stored/definition = 1.001601)
+  moment tri dmax=0.025 p=2/200 i=495 (lambda=2.6886): definition 0.00759787659991 <= stored 0.007606961972  (stored/definition = 1.001196)
+  moment tri dmax=0.025 p=3/200 i=158 (lambda=1.3712): definition 0.0213391589655 <= stored 0.02135470054  (stored/definition = 1.000728)
+  moment tri dmax=0.025 p=258/200 i=1495 (lambda=19.8264): definition 3.57436080109 <= stored 3.581478077  (stored/definition = 1.001991)
+  moment tri dmax=0.025 p=265/200 i=475 (lambda=2.5833): definition 12.9850380323 <= stored 13.00640387  (stored/definition = 1.001645)
+  moment tri dmax=0.025 p=37/200 i=745 (lambda=4.4305): definition 0.0937793916018 <= stored 0.09396002449  (stored/definition = 1.001926)
+  kernel tri dmax=0.025 done; rss 51 MB
+  moment tri dmax=0.15 p=280/200 i=882 (lambda=5.8255): definition 12.9418310498 <= stored 12.96868178  (stored/definition = 1.002075)
+  moment tri dmax=0.15 p=82/200 i=1604 (lambda=24.6505): definition 0.0291958658301 <= stored 0.02925424562  (stored/definition = 1.002000)
+  moment tri dmax=0.15 p=46/200 i=1160 (lambda=10.1521): definition 0.0281919141831 <= stored 0.02822351123  (stored/definition = 1.001121)
+  moment tri dmax=0.15 p=90/200 i=1432 (lambda=17.4814): definition 0.0634231117689 <= stored 0.06354122676  (stored/definition = 1.001862)
+  moment tri dmax=0.15 p=223/200 i=428 (lambda=2.3517): definition 7.81795536317 <= stored 7.829982024  (stored/definition = 1.001538)
+  moment tri dmax=0.15 p=119/200 i=649 (lambda=3.6572): definition 1.02927193993 <= stored 1.031040902  (stored/definition = 1.001719)
+  kernel tri dmax=0.15 done; rss 51 MB
+  moment trap dmax=1e-9 p=109/200 i=130 (lambda=1.2966): definition 1.55238141965 <= stored 1.553818912  (stored/definition = 1.000926)
+  moment trap dmax=1e-9 p=284/200 i=225 (lambda=1.5676): definition 32.3097234182 <= stored 32.35797545  (stored/definition = 1.001493)
+  moment trap dmax=1e-9 p=72/200 i=794 (lambda=4.8862): definition 0.276328351887 <= stored 0.2766599389  (stored/definition = 1.001200)
+  moment trap dmax=1e-9 p=219/200 i=446 (lambda=2.4378): definition 8.51373195601 <= stored 8.52540156  (stored/definition = 1.001371)
+  moment trap dmax=1e-9 p=148/200 i=942 (lambda=6.5674): definition 1.37158095989 <= stored 1.373230897  (stored/definition = 1.001203)
+  moment trap dmax=1e-9 p=11/200 i=1641 (lambda=26.5418): definition 0.00191616702614 <= stored 0.001920303943  (stored/definition = 1.002159)
+  kernel trap dmax=1e-9 done; rss 62 MB
+  moment trap dmax=0.025 p=43/200 i=1535 (lambda=21.4760): definition 0.0208076929620 <= stored 0.0208482613  (stored/definition = 1.001950)
+  moment trap dmax=0.025 p=13/200 i=857 (lambda=5.5416): definition 0.0218828943122 <= stored 0.0219024137  (stored/definition = 1.000892)
+  moment trap dmax=0.025 p=243/200 i=838 (lambda=5.3352): definition 11.1289565035 <= stored 11.14515437  (stored/definition = 1.001455)
+  moment trap dmax=0.025 p=7/200 i=1957 (lambda=49.9035): definition 0.000296922608656 <= stored 0.0002973765647  (stored/definition = 1.001529)
+  moment trap dmax=0.025 p=144/200 i=1410 (lambda=16.7297): definition 0.609575787363 <= stored 0.61067635  (stored/definition = 1.001805)
+  moment trap dmax=0.025 p=184/200 i=1412 (lambda=16.7967): definition 1.62442738550 <= stored 1.627405273  (stored/definition = 1.001833)
+  kernel trap dmax=0.025 done; rss 62 MB
+  moment trap dmax=0.15 p=277/200 i=100 (lambda=1.2212): definition 33.2913651493 <= stored 33.33965685  (stored/definition = 1.001451)
+  moment trap dmax=0.15 p=208/200 i=1822 (lambda=38.1056): definition 1.45740854013 <= stored 1.460452991  (stored/definition = 1.002089)
+  moment trap dmax=0.15 p=50/200 i=2058 (lambda=61.0620): definition 0.00493142301270 <= stored 0.004939065614  (stored/definition = 1.001550)
+  moment trap dmax=0.15 p=132/200 i=1181 (lambda=10.5872): definition 0.807001786124 <= stored 0.8082670955  (stored/definition = 1.001568)
+  moment trap dmax=0.15 p=244/200 i=1460 (lambda=18.4873): definition 7.43691949126 <= stored 7.451131508  (stored/definition = 1.001911)
+  moment trap dmax=0.15 p=242/200 i=1478 (lambda=19.1643): definition 6.89189623643 <= stored 6.905165493  (stored/definition = 1.001925)
+  kernel trap dmax=0.15 done; rss 62 MB
+TABLES: 36 moment entries and 36 lambda-grid G values: every 256-bit value from the definition <= the stored upper value; all 300 p-grid balls contain j/200
+  KLN A0 row 0.96 sigma=0.5715: log A (128-bit affine row) 1.01531471218 overlaps KLN formula at 256 bits 1.015314712175961; B overlaps
+  KLN A0 row 0.96 sigma=0.8285: log A (128-bit affine row) 2.14247426094 overlaps KLN formula at 256 bits 2.142474260942499; B overlaps
+  KLN A0 row 0.94 sigma=0.6349: log A (128-bit affine row) 1.24582408926 overlaps KLN formula at 256 bits 1.245824089264530; B overlaps
+  KLN A0 row 0.94 sigma=0.5588: log A (128-bit affine row) 0.900506327129 overlaps KLN formula at 256 bits 0.9005063271287507; B overlaps
+  KLN A0 row 0.92 sigma=0.8243: log A (128-bit affine row) 2.08909763172 overlaps KLN formula at 256 bits 2.089097631718255; B overlaps
+  KLN A0 row 0.92 sigma=0.6583: log A (128-bit affine row) 1.31156450763 overlaps KLN formula at 256 bits 1.311564507625796; B overlaps
+  KLN A0 row 0.99 sigma=0.7087: log A (128-bit affine row) 1.68337949595 overlaps KLN formula at 256 bits 1.683379495949119; B overlaps
+  KLN A0 row 0.99 sigma=0.7420: log A (128-bit affine row) 1.82122837753 overlaps KLN formula at 256 bits 1.821228377531927; B overlaps
+  KLN A0 row 0.91 sigma=0.7856: log A (128-bit affine row) 1.90006582558 overlaps KLN formula at 256 bits 1.900065825581907; B overlaps
+  KLN A0 row 0.91 sigma=0.8454: log A (128-bit affine row) 2.18372792151 overlaps KLN formula at 256 bits 2.183727921511904; B overlaps
+  KLN A1 row 0.93 sigma=0.6168: log A (128-bit affine row) 1.07399805749 overlaps KLN formula at 256 bits 1.073998057494435; B overlaps
+  KLN A1 row 0.93 sigma=0.7863: log A (128-bit affine row) 1.86398778418 overlaps KLN formula at 256 bits 1.863987784179411; B overlaps
+  KLN A1 row 0.94 sigma=0.8670: log A (128-bit affine row) 2.24462932850 overlaps KLN formula at 256 bits 2.244629328504921; B overlaps
+  KLN A1 row 0.94 sigma=0.7798: log A (128-bit affine row) 1.84428597063 overlaps KLN formula at 256 bits 1.844285970625679; B overlaps
+  KLN A1 row 0.85 sigma=0.7179: log A (128-bit affine row) 1.46240848240 overlaps KLN formula at 256 bits 1.462408482395832; B overlaps
+  KLN A1 row 0.85 sigma=0.5991: log A (128-bit affine row) 0.851361134422 overlaps KLN formula at 256 bits 0.8513611344218860; B overlaps
+  KLN A1 row 0.88 sigma=0.6685: log A (128-bit affine row) 1.24008396703 overlaps KLN formula at 256 bits 1.240083967029776; B overlaps
+  KLN A1 row 0.88 sigma=0.8284: log A (128-bit affine row) 2.03591271894 overlaps KLN formula at 256 bits 2.035912718942988; B overlaps
+  KLN A1 row 0.90 sigma=0.8837: log A (128-bit affine row) 2.31214376999 overlaps KLN formula at 256 bits 2.312143769988191; B overlaps
+  KLN A1 row 0.90 sigma=0.8812: log A (128-bit affine row) 2.30004267272 overlaps KLN formula at 256 bits 2.300042672716896; B overlaps
+KLN: 20 random (row, sigma) pairs in both pipelines: the 128-bit affine rows overlap the 256-bit formula values; c1 > 0 and q1 >= 0 in all 39 rows
+  cell A1 theta=0.856 [165.90, 165.92]: direct (no tables) 0.091139279 <= certified 0.094472175 : True  (certified/direct = 1.0366, 1s, rss 94 MB)
+  cell A1 theta=0.856 [172.36, 172.38]: direct (no tables) 0.16498229 <= certified 0.17101211 : True  (certified/direct = 1.0365, 1s, rss 94 MB)
+  cell A1 theta=0.856 [183.26, 183.28]: direct (no tables) 0.75945241 <= certified 0.77878981 : True  (certified/direct = 1.0255, 2s, rss 94 MB)
+  cell A1 theta=0.856 [183.66, 183.68]: direct (no tables) 0.74945145 <= certified 0.76783276 : True  (certified/direct = 1.0245, 2s, rss 94 MB)
+  cell A1 theta=0.856 [185.72, 185.74]: direct (no tables) 0.66616142 <= certified 0.68297001 : True  (certified/direct = 1.0252, 2s, rss 94 MB)
+  cell A1 theta=0.856 [191.82, 191.84]: direct (no tables) 0.95093944 <= certified 0.97110813 : True  (certified/direct = 1.0212, 2s, rss 94 MB)
+  cell A1 theta=0.856 [212.42, 212.44]: direct (no tables) 0.31005169 <= certified 0.31786319 : True  (certified/direct = 1.0252, 3s, rss 94 MB)
+  cell A1 theta=0.856 [243.50, 243.55]: direct (no tables) 0.041587932 <= certified 0.042475759 : True  (certified/direct = 1.0213, 4s, rss 94 MB)
+  cell A1 theta=0.856 [282.20, 282.25]: direct (no tables) 0.0031893238 <= certified 0.0032560983 : True  (certified/direct = 1.0209, 5s, rss 94 MB)
+  cell A1 theta=0.856 [288.10, 288.15]: direct (no tables) 0.0021450048 <= certified 0.0021897488 : True  (certified/direct = 1.0209, 5s, rss 94 MB)
+  cell A1 theta=0.856 [295.40, 295.45]: direct (no tables) 0.0013108458 <= certified 0.0013375161 : True  (certified/direct = 1.0203, 5s, rss 94 MB)
+  cell A0 theta=0.857 [175.22, 175.24]: direct (no tables) 0.10440604 <= certified 0.10745029 : True  (certified/direct = 1.0292, 1s, rss 94 MB)
+  cell A0 theta=0.857 [178.92, 178.94]: direct (no tables) 0.18507116 <= certified 0.19006187 : True  (certified/direct = 1.0270, 1s, rss 94 MB)
+  cell A0 theta=0.857 [191.68, 191.70]: direct (no tables) 0.91611204 <= certified 0.93190415 : True  (certified/direct = 1.0172, 1s, rss 94 MB)
+CELLS: 14 cells (10 + 2 random, plus the worst cell of each pipeline): every table-free direct value <= the certified cell bound
+ALL TESTS PASSED; peak rss 94 MB; 84s
