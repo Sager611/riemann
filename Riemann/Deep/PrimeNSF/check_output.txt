@@ -1,0 +1,5 @@
+q<=200 all reduced classes hit: True  max least prime 6734249 at q 197
+q in (200,3000]: min theta(q-1) - 7.8978 log(0.72 q^2 log q^2) = 87.9
+q=3001: RS lower bound 2625.3 vs 145.8 (lhs grows like 15.8 log q, rhs like q)
+n in [25,1e7] without p: 0 []
+time 11.2
