@@ -1,0 +1,3 @@
+{"nu": "5.026355096783645e-45", "n": 165, "nU": 132, "U": [132, 0, 0], "B": [0, 33, 0], "inertia_ok": true, "top_B_pivot": "[-1.00984361031891e-54 +/- 2.09e-69]", "top_B_index": 164, "max_rel_rad": 2.459e-54, "first_undetermined": -1, "prec": 384, "pivot": 1, "norm": 1, "time": 0.0}
+{"nu": "5.026355106836355e-45", "n": 165, "nU": 132, "U": [132, 0, 0], "B": [1, 32, 0], "inertia_ok": false, "top_B_pivot": "[1.01137464528337e-54 +/- 2.32e-69]", "top_B_index": 164, "max_rel_rad": 2.455e-54, "first_undetermined": -1, "prec": 384, "pivot": 1, "norm": 1, "time": 0.0}
+{"lambda_min_bracket": ["[5.02635510180509e-45 +/- 1.45e-60]", "[5.02635510180755e-45 +/- 4.28e-60]"], "meaning": "inertia ok at lo (lambda_min(Id-W) > lo), fails at hi (lambda_min < hi)"}

@@ -1,0 +1,13 @@
+start Wed Nov 11 18:01:14 UTC 2026
+prep done Wed Nov 11 18:05:48 UTC 2026
+{"c": "47", "sector": "odd", "eps": "2^-803", "prec": 1152, "K2": 3683, "kscan": 50977469937, "kscan_e": 18753563152, "sel_odd": 6047, "sel_even": 2172, "Kp": 6063, "Km": 6301, "Jm": 868, "G": 371000, "order": 7170, "nU": 6063, "n": 13233, "adv": false, "tscan": 0, "tprep": 273}
+sums 0 4411 done Wed Nov 11 18:15:09 UTC 2026
+       1037679453367  cycles elapsed
+sums 4411 8822 done Wed Nov 11 18:23:15 UTC 2026
+        835406172682  cycles elapsed
+sums 8822 13233 done Wed Nov 11 18:33:42 UTC 2026
+       1049531169813  cycles elapsed
+ldl done Wed Nov 11 18:40:31 UTC 2026
+{"nu": "1e-250", "n": 13233, "nU": 6063, "U": [6063, 0, 0], "B": [0, 7170, 0], "inertia_ok": true, "top_B_pivot": "[-8.96388304598099e-237 +/- 4.31e-252]", "top_B_index": 13232, "max_rel_rad": 0.000e+00, "first_undetermined": -1, "prec": 1152, "pivot": 1, "norm": 1, "point": 1, "eta": 1.072e-291, "kappa": 2.506e+21, "kappa_eta": 2.686e-270, "sigma": 6.465e-05, "time": 403.6}
+      409.12 real       357.68 user         6.21 sys
+           105807872  maximum resident set size
