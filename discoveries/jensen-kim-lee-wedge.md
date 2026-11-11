@@ -23,3 +23,5 @@ With the classical strip only (a = 1/2): d ≤ 3.59 n²/log² n.
 **RH relevance:** N6: RH holds iff every J^{d,n} is hyperbolic; the explicit hyperbolic region grows from n ≳ d^{3/2} to n ≳ 0.394 √d log n, Kim–Lee's ineffective shape with numbers, and just beyond the all-n range (d = D_all + 1) the needed n drops from 3.4·10^37 to 4.7·10^13.
 
 **Files.** [Riemann/Deep/KimEff/](../Riemann/Deep/KimEff/): REPORT.md, DERIVATION.md, NOVELTY.md, certify.py (certificate), norm.py, sanity1.py, sanity2.py, sanity3.py, logs/.
+
+**Lean (11 Nov 2026).** Partial formalization (kimefflean): the geometry, the sector bound, the Obreschkoff limit step, the §10 arithmetic, n_* and the two-thirds wedge are proved in Lean 4 + Mathlib (sorry-free, standard axioms); the zero-free region (i), Obreschkoff–Kim–Lee Thm 3, Hadamard products, Gauss–Lucas for genus 0, γ > 0 and the half-plane enter as named hypotheses. [LEAN.md](../Riemann/Deep/KimEff/LEAN.md)
