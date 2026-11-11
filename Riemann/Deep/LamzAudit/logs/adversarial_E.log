@@ -1,0 +1,4 @@
+T=201090.1 N=300000: S(Z)/N=0.87238; local mass c_i: mean=1.166 max=2.325
+  delta=0.001: adversarial (S(Z-E)-S(Z))/N=-0.00261 (/delta=-2.607);  random: -0.00096 (/delta=-0.957)
+  delta=0.01: adversarial (S(Z-E)-S(Z))/N=-0.01835 (/delta=-1.835);  random: -0.00949 (/delta=-0.949)
+  delta=0.1: adversarial (S(Z-E)-S(Z))/N=-0.13869 (/delta=-1.387);  random: -0.09402 (/delta=-0.940)

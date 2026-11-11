@@ -1,0 +1,11 @@
+ T          logT    obs      deficit  deficit*logT  obs-model  (obs-model)*log^2T
+    1419.4   7.258 0.812060 0.18804  1.3648       -0.03510   -1.849
+    9877.8   9.198 0.839027 0.16107  1.4816       -0.02707   -2.290
+   74920.8  11.224 0.862767 0.13733  1.5415       -0.01994   -2.512
+  201090.1  12.212 0.872382 0.12772  1.5596       -0.01728   -2.578
+  600269.7  13.305 0.881749 0.11835  1.5747       -0.01485   -2.630
+ 1132490.7  13.940 0.886656 0.11344  1.5814       -0.01364   -2.650
+fit (obs-model) = b/log^2T + c over last 6 points: b=-1.550, c=-0.00679
+fit deficit = a/logT + b/log^2T + c over last 6 points: a=+2.247, b=-5.321, c=-0.02046  (predicted a=(1+log 2pi)(2f(0)-J)=1.641)
+fit (obs-model) = b/log^2T + c over last 4 points: b=-2.254, c=-0.00209
+fit deficit = a/logT + b/log^2T + c over last 4 points: a=+2.035, b=-4.097, c=-0.01147  (predicted a=(1+log 2pi)(2f(0)-J)=1.641)

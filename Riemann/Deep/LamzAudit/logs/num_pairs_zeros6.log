@@ -1,0 +1,20 @@
+loaded 2001052 zeros, last 1132490.658714
+selftest: max|g0hat-quad|=1.47e-14  max|fhat-quad|=2.02e-14  J_closed=1.000100147643  J_quad=1.000100147643
+T=201090.1 N=300000 logT=12.212  D(lam)_T=0.1745  delta=#E/N=0.3391
+  J_theta(f)=1.000100  S_g0(Z)/N=0.872382 (tail est +1.6e-07, offsets 167)  diff=-0.12772  1/sqrt(logT)=0.286 1/logT=0.082
+  S_f(Z)/N=1.054692  S_g0(Z0)/N=0.495248  S_f(Z0)/N=0.638319  #Z0/N=0.660863  checks: S_f(Z0)<=#Z0: True, S_g0(Z0)<=S_f(Z0): True
+  GUE+local-density model S_g0(Z)/N=0.889667 (obs-model=-0.01728); predicted deficit (1+log2pi)(f(0)-2int a f)/logT=0.1344
+  S_g0(E)/N=0.398019  cross/sqrt(S(Z)S(E))=0.6577 (Cauchy-Schwarz needs <=1)
+  A_q/N q=1..6: 1.0792 1.1687 1.2712 1.3907 1.5332 1.7080   [14s]
+T=600269.7 N=1000000 logT=13.305  D(lam)_T=0.1873  delta=#E/N=0.3620
+  J_theta(f)=1.000100  S_g0(Z)/N=0.881749 (tail est +1.6e-07, offsets 184)  diff=-0.11835  1/sqrt(logT)=0.274 1/logT=0.075
+  S_f(Z)/N=1.061361  S_g0(Z0)/N=0.478531  S_f(Z0)/N=0.615517  #Z0/N=0.637980  checks: S_f(Z0)<=#Z0: True, S_g0(Z0)<=S_f(Z0): True
+  GUE+local-density model S_g0(Z)/N=0.896604 (obs-model=-0.01486); predicted deficit (1+log2pi)(f(0)-2int a f)/logT=0.1233
+  S_g0(E)/N=0.426517  cross/sqrt(S(Z)S(E))=0.6765 (Cauchy-Schwarz needs <=1)
+  A_q/N q=1..6: 1.0833 1.1780 1.2873 1.4158 1.5707 1.7630   [43s]
+T=1132490.7 N=2001052 logT=13.940  D(lam)_T=0.1938  delta=#E/N=0.3735
+  J_theta(f)=1.000100  S_g0(Z)/N=0.886656 (tail est +2.3e-08, offsets 195)  diff=-0.11344  1/sqrt(logT)=0.268 1/logT=0.072
+  S_f(Z)/N=1.064853  S_g0(Z0)/N=0.470245  S_f(Z0)/N=0.604112  #Z0/N=0.626489  checks: S_f(Z0)<=#Z0: True, S_g0(Z0)<=S_f(Z0): True
+  GUE+local-density model S_g0(Z)/N=0.900294 (obs-model=-0.01364); predicted deficit (1+log2pi)(f(0)-2int a f)/logT=0.1177
+  S_g0(E)/N=0.440941  cross/sqrt(S(Z)S(E))=0.6856 (Cauchy-Schwarz needs <=1)
+  A_q/N q=1..6: 1.0854 1.1827 1.2953 1.4281 1.5886 1.7887   [97s]

@@ -1,0 +1,10 @@
+Selberg minorant: theta=0.125000 lambda*=0.984688
+Selberg minorant: theta=0.500000 lambda*=0.823899
+Selberg minorant: theta=0.571419 lambda*=0.789111
+/Users/adriansager/playground/riemann/Riemann/Deep/LamzAudit/../SmallGap/sdp.py:76: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  prob.solve(solver=solver, verbose=verbose, tol_gap_abs=1e-11, tol_gap_rel=1e-11, tol_feas=1e-11, tol_ktratio=1e-9, max_iter=400)
+SDP d=31 s=1.0 theta=0.5: lambda* <= 0.82090  [8s]
+SDP d=31 s=1.1 theta=0.5: lambda* <= 0.82094  [8s]
+SDP d=31 s=1.2 theta=0.5: lambda* <= 0.82088  [7s]
+SDP d=31 s=1.3 theta=0.5: lambda* <= 0.82096  [6s]
+SDP best d=31: (0.8208789062500002, 1.2)
