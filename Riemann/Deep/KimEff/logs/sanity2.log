@@ -1,0 +1,4 @@
+n=50 u*=1.28601 R_n=421.986: F>0 on 60-point grid of (0,R_n]: True, decreasing: True, F(R_n)=0.029898
+   first sign change on the 3% grid beyond R_n: ['3243.897', '3341.214'] (ratio 7.687)
+n=200 u*=1.79444 R_n=4587.1: F>0 on 60-point grid of (0,R_n]: True, decreasing: True, F(R_n)=6.031e-9
+   first sign change on the 3% grid beyond R_n: ['20109.43', '20712.72'] (ratio 4.384)

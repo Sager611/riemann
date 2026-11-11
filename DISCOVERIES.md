@@ -20,7 +20,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N11) First explicit Littlewood bound without GRH for every primitive χ: |L(1, χ)| ≥ 0.11/max(3, log log q); h(−d) ≥ 0.035√d/max(3, log log d) (was 1/log q; real χ, q ≥ 10^100: 0.0621/log log q, Zenodo 23459046). [details](discoveries/littlewood-half-plane.md)
 - (N11) Record: all imaginary quadratic fields with class number h ≤ 10,000 determined without RH or GRH: 410,810,155 fields, largest |d| 28,154,696,707 (was h ≤ 5000, ours; 2000, Oct 2026). [details](discoveries/class-number-10000.md)
 - (N9) Record: |ζ(1/2+it)| ≤ 54.6 t^{27/164} for all t ≥ 3 (was 66.7, Patel–Yang 2024, whose proof drops a factor ≈ 1.10 and gives 68.54 as computed). [details](discoveries/sub-weyl-constant.md)
-- (N6) Largest explicit hyperbolic region: Riemann's Jensen polynomials J^{d,n} are hyperbolic whenever n² log(n+2) ≥ 24 d³ (Savva's two-thirds wedge had no number); supersedes our n³ log²(n+2) ≥ 7000 d⁵. [details](discoveries/jensen-two-thirds-wedge.md)
+- (N6) Superseded record (by the explicit Kim–Lee wedge below): Riemann's Jensen polynomials J^{d,n} are hyperbolic whenever n² log(n+2) ≥ 24 d³ (Savva's two-thirds wedge had no number); supersedes our n³ log²(n+2) ≥ 7000 d⁵. [details](discoveries/jensen-two-thirds-wedge.md)
 - (N8) At least 0.6724 of the zeta zeros are simple, on the line and isolated from both neighbours (every c ≤ 0.00476; was 0.6552, c unspecified). [details](discoveries/isolated-zeros.md)
 - (N10, N11) From the Lean-checked half-plane: the least prime ≡ a (mod q) is ≤ (q log q)^{7.90} for every q, with an explicit power-saving prime number theorem in progressions. [details](discoveries/linnik-numeric.md)
 - (N11) First numeric polylogarithmic least prime in every Chebotarev class: N𝔭 ≤ (0.49 log 3Δ_L)^32 from a Lean-checked half-plane (was Δ_L^{310}). [details](discoveries/chebotarev-numeric.md)
@@ -34,6 +34,7 @@ See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](C
 - (N12, N8) At least 6.8·10⁻⁴ of the zeros of a combination of four Dirichlet L-functions lie on the critical line (was 3.7·10⁻⁹), and c/N for N summands. [details](discoveries/selberg-linear-combinations.md)
 - (N12, N7) Unconditional root-discriminant bounds beyond Odlyzko–Poitou (1977): rd_K ≥ 23.3878 − o(1), totally real 65.6439 − o(1) (were 22.3816, 60.8395). [details](discoveries/discriminant-bounds-strip.md)
 - (N8, N12) At least 7.005% of the zeros of every GL(2) newform L-function lie on the critical line (was 6.96%); arXiv 2508.11108's Question 5 settled. [details](discoveries/gl2-critical-line.md)
+- (N6) Explicit Kim–Lee wedge: Riemann's Jensen polynomials J^{d,n} are hyperbolic for every n ≥ 9.99·10^11 and d ≤ 6.45 n²/log² n (was n² log(n+2) ≥ 24 d³). [details](discoveries/jensen-kim-lee-wedge.md)
 
 ## Side results (off the RH tree)
 

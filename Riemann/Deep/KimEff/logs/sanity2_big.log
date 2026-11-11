@@ -1,0 +1,1 @@
+n=2000 u*=2.72786 R_n=258920.0: F>0 on 60-point grid of (0,R_n]: True, decreasing: True, F(R_n)=2.8979e-110
