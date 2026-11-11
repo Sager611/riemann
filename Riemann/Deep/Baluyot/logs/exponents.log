@@ -1,0 +1,48 @@
+monomials of X^4 (a,n,u,v): [(-2, 2, 4, 4), (-1, 4, 3, 4), (0, 3, 3, 4), (0, 4, 4, 2), (1, 2, 3, 4), (1, 3, 4, 2), (1, 4, 3, 3), (2, 3, 3, 3), (3, 2, 3, 3)]
+in thesis E but not in X^4: [(1, 2, 3, 3)]
+in X^4 but not in thesis E: [(0, 3, 3, 4), (1, 2, 3, 4), (2, 3, 3, 3)]
+monomials of X^4 outside corrected E (need AM-GM domination): [(0, 3, 3, 4), (2, 3, 3, 3)]
+thesis E
+    (-2, 2, 4, 4)  T^-2 y^7/2
+    (-1, 4, 3, 4)  T^-4 y^27/4
+    (0, 4, 4, 2)  T^-4 y^6
+    (1, 2, 3, 3)  T^-2 y^5/2
+    (1, 3, 4, 2)  T^-3 y^9/2
+    (1, 4, 3, 3)  T^-4 y^13/2
+    (3, 2, 3, 3)  T^-2 y^7/2
+    exponent minus (-2 + 7phi/2): (-2, 2, 4, 4) 0  zero at phi = []
+    exponent minus (-2 + 7phi/2): (-1, 4, 3, 4) 13*phi/4 - 2  zero at phi = [8/13]
+    exponent minus (-2 + 7phi/2): (0, 4, 4, 2) 5*phi/2 - 2  zero at phi = [4/5]
+    exponent minus (-2 + 7phi/2): (1, 2, 3, 3) -phi  zero at phi = []
+    exponent minus (-2 + 7phi/2): (1, 3, 4, 2) phi - 1  zero at phi = [1]
+    exponent minus (-2 + 7phi/2): (1, 4, 3, 3) 3*phi - 2  zero at phi = [2/3]
+    exponent minus (-2 + 7phi/2): (3, 2, 3, 3) 0  zero at phi = []
+    max is T^-2 y^(7/2) on 0<=phi<=8/13: True
+corrected E
+    (-2, 2, 4, 4)  T^-2 y^7/2
+    (-1, 4, 3, 4)  T^-4 y^27/4
+    (0, 4, 4, 2)  T^-4 y^6
+    (1, 2, 3, 4)  T^-2 y^7/2
+    (1, 3, 4, 2)  T^-3 y^9/2
+    (1, 4, 3, 3)  T^-4 y^13/2
+    (3, 2, 3, 3)  T^-2 y^7/2
+    exponent minus (-2 + 7phi/2): (-2, 2, 4, 4) 0  zero at phi = []
+    exponent minus (-2 + 7phi/2): (-1, 4, 3, 4) 13*phi/4 - 2  zero at phi = [8/13]
+    exponent minus (-2 + 7phi/2): (0, 4, 4, 2) 5*phi/2 - 2  zero at phi = [4/5]
+    exponent minus (-2 + 7phi/2): (1, 2, 3, 4) 0  zero at phi = []
+    exponent minus (-2 + 7phi/2): (1, 3, 4, 2) phi - 1  zero at phi = [1]
+    exponent minus (-2 + 7phi/2): (1, 4, 3, 3) 3*phi - 2  zero at phi = [2/3]
+    exponent minus (-2 + 7phi/2): (3, 2, 3, 3) 0  zero at phi = []
+    max is T^-2 y^(7/2) on 0<=phi<=8/13: True
+Lemma 3.1.4 first assertion T-exponent: delta*eta + 7*delta/2 - 1  at eta=0: 7*delta/2 - 1
+Lemma 3.1.4 second assertion T-exponent: delta*eta + 5*delta/2 - eta - 2*sigma + 1  at eta=0: 5*delta/2 - 2*sigma + 1
+E11 T-exponent: 7*delta/2 + 7*theta/8 - 1/2 ; at delta=0, sigma=1/2 negative iff theta < [4/7]
+E12 T-exponent: 5*delta/2 - 2*sigma + 7*theta/8 + 1/2 ; at delta=0, sigma=1/2 negative iff theta < [4/7]
+E2 T-exponent: 7*delta/2 + 5*theta/4 - 1 ; at delta=0, sigma=1/2 negative iff theta < [4/5]
+E32 T-exponent: 7*delta/2 + 7*theta/4 - 1 ; at delta=0, sigma=1/2 negative iff theta < [4/7]
+section 3.6 parameter choice: violations in 20000 random theta < 4/7: 0
+(3.6.6) lhs = (3.6.5 lhs)/2 : True
+(3.6.7) lhs - (3.6.5 lhs) = -7*delta/2 - 2*epsilon0*theta (<= 0 since delta, eps0, theta > 0)
+Ingham gap g(1/2) = 0 ; g'(1/2) = 2*theta - 4/3 ; g'' = 6/(s - 2)**3 ; g(1) = theta - 1
+Lemma 3.4.3: max exponent of q A V^{3/2} = 7/4 ; of A B V^{1/2} = 3/2 (thesis: 7/4 and 3/2)
+E_2: y-exponent 1/4 + 1 = 5/4
