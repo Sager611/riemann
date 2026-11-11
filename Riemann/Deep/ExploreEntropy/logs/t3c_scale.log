@@ -1,0 +1,22 @@
+{"c": 5, "D": -5.372183419225666, "killing": -2.5764, "D_c = D - 2 sum w_n": -8.3142, "sum w_n": 1.471, "even": {"arch": -2.323, "arch_pole": -0.3727, "primes_min": -1.2191, "primes_max": 1.0273}, "odd": {"arch": -0.778, "arch_pole": -0.9322, "primes_min": -1.2191, "primes_max": 1.0273}}
+{"c": 10, "D": -5.372183419225666, "killing": -3.0751, "D_c = D - 2 sum w_n": -12.4472, "sum w_n": 3.5375, "even": {"arch": -2.8057, "arch_pole": -0.7311, "primes_min": -2.5079, "primes_max": 1.8357}, "odd": {"arch": -1.1719, "arch_pole": -1.6536, "primes_min": -2.2454, "primes_max": 1.8516}}
+{"c": 20, "D": -5.372183419225666, "killing": -3.4612, "D_c = D - 2 sum w_n": -18.3878, "sum w_n": 6.5078, "even": {"arch": -3.172, "arch_pole": -1.0268, "primes_min": -4.2758, "primes_max": 2.89}, "odd": {"arch": -1.4865, "arch_pole": -2.6317, "primes_min": -2.7342, "primes_max": 2.8991}}
+{"c": 47, "D": -5.372183419225666, "killing": -3.8379, "D_c = D - 2 sum w_n": -26.9856, "sum w_n": 10.8067, "even": {"arch": -3.5224, "arch_pole": -1.3506, "primes_min": -7.299, "primes_max": 3.6}, "odd": {"arch": -1.8173, "arch_pole": -4.5069, "primes_min": -2.9769, "primes_max": 4.6199}}
+        2.74 real         1.94 user         0.16 sys
+            48627712  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7330  page reclaims
+                 513  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 192  voluntary context switches
+                8869  involuntary context switches
+           473484801  instructions retired
+           232728636  cycles elapsed
+            28344824  peak memory footprint

@@ -1,0 +1,36 @@
+killing bound zero: even a=0.085628 (c=1.18679); odd a=0.085611 (c=1.18675); e^{-gamma}/(2 pi) = 0.089359
+even arch: zero at c=1.239043 a=0.107170 (N=80)
+odd arch: zero at c=2.129005 a=0.377827 (N=80)
+even arch_pole: zero at c=2.271071 a=0.410126 (N=80)
+odd arch_pole: zero at c=2.106026 a=0.372401 (N=80)
+c=2 margins (N=80): even arch+pole 0.00133032, odd arch+pole 0.0753483; n=2 weight ln2/sqrt2 = 0.490129
+Hirschman-Beckner Gibbs bound a=0.0010: Arch/||f||^2 >= 2.2767   (killing bound 4.4922)
+Hirschman-Beckner Gibbs bound a=0.0050: Arch/||f||^2 >= 0.8136   (killing bound 2.8807)
+Hirschman-Beckner Gibbs bound a=0.0100: Arch/||f||^2 >= 0.1835   (killing bound 2.1851)
+Hirschman-Beckner Gibbs bound a=0.0200: Arch/||f||^2 >= -0.4467   (killing bound 1.4869)
+Hirschman-Beckner Gibbs bound a=0.0500: Arch/||f||^2 >= -1.2797   (killing bound 0.5557)
+Hirschman-Beckner Gibbs bound a=0.0894: Arch/||f||^2 >= -1.7874   (killing bound -0.0450)
+Hirschman-Beckner Gibbs bound a=0.1733: Arch/||f||^2 >= -2.3390   (killing bound -0.7483)
+Hirschman-Beckner Gibbs bound a=0.3466: Arch/||f||^2 >= -2.9166   (killing bound -1.5254)
+Hirschman-Beckner bound zero: a=0.012236 (c=1.024774)
+lattice entropic bound c=1.20: sum mu q >= -0.5026 (mu(0) = -0.8035, min mu = -0.8035)
+lattice entropic bound c=1.50: sum mu q >= -1.4010 (mu(0) = -1.7103, min mu = -1.7103)
+lattice entropic bound c=2.00: sum mu q >= -2.0610 (mu(0) = -2.3785, min mu = -2.3785)
+       47.56 real        30.76 user         1.05 sys
+            88850432  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               23035  page reclaims
+                 987  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 581  voluntary context switches
+              139597  involuntary context switches
+           465982050  instructions retired
+           205090990  cycles elapsed
+            26706448  peak memory footprint

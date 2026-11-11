@@ -1,0 +1,29 @@
+D = psi(1/4) - ln pi = -5.37218341922566558223295749745
+2 theta'(0)          = -5.37218341922566558223295749745
+phi(0)               = -5.37218341922566558223295749745
+closed form -gamma - pi/2 - 3 ln2 - ln pi = -5.37218341922566558223295749745
+odd constant psi(3/4) - ln pi = -2.23059076563587234377031411417
+t=0.5       phi(t)-phi(0)=2.04017882454477  LK=2.04017882454477
+t=1         phi(t)-phi(0)=3.3470372261222  LK=3.3470372261222
+t=5         phi(t)-phi(0)=5.14206520098007  LK=5.14206520098007
+t=14.134725 phi(t)-phi(0)=6.18273215351811  LK=6.18273215351811
+-ln pi - gamma + I0 = -5.37218341922566558223295749745
+Gaussian: LHS/||f||^2 = -3.80138709243076896300163580581  (closed form ln(1/2pi) - gamma - 2ln2 = -3.80138709243076896300163580581 ) vs D -5.37218341922566558223295749745
+        4.51 real         3.10 user         0.25 sys
+            52035584  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                5688  page reclaims
+                1678  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  23  messages received
+                   1  signals received
+                 442  voluntary context switches
+               14632  involuntary context switches
+           587062810  instructions retired
+           373988520  cycles elapsed
+            29147640  peak memory footprint

@@ -1,0 +1,23 @@
+{"kind": "zeta", "c": 2, "N": 21, "bits": 164, "even": ["0.0013411", "0.66119", "1.1925"], "even_gs_min_over_max": 0.05345, "even_gs_sign_changes": 0, "overlap_with_Q0_perron": 0.952937, "odd": ["0.080975", "0.93325", "1.3849"], "odd_gs_min_over_max": 0.05432, "odd_gs_sign_changes": 0, "sec": 1.2}
+{"kind": "zeta", "c": 3, "N": 22, "bits": 182, "even": ["6.4091e-8", "0.0015231", "0.68885"], "even_gs_min_over_max": 0.00103, "even_gs_sign_changes": 0, "overlap_with_Q0_perron": 0.78466, "odd": ["1.8008e-5", "0.097482", "0.84046"], "odd_gs_min_over_max": 0.01245, "odd_gs_sign_changes": 0, "sec": 1.0}
+{"kind": "zeta", "c": 5, "N": 25, "bits": 218, "even": ["1.3616e-17", "6.956e-12", "6.3575e-7"], "even_gs_min_over_max": 0.0, "even_gs_sign_changes": 0, "overlap_with_Q0_perron": 0.656896, "odd": ["1.4463e-14", "2.2149e-9", "6.2879e-5"], "odd_gs_min_over_max": 0.0, "odd_gs_sign_changes": 0, "sec": 1.4}
+{"kind": "zeta", "c": 10, "N": 34, "bits": 309, "even": ["5.7307e-42", "3.2739e-35", "4.0339e-29"], "even_gs_min_over_max": -0.0, "even_gs_sign_changes": 0, "overlap_with_Q0_perron": 0.542031, "odd": ["1.9548e-38", "4.0158e-32", "2.8999e-26"], "odd_gs_min_over_max": 0.0, "odd_gs_sign_changes": 0, "sec": 2.7}
+{"kind": "zeta", "c": 20, "N": 56, "bits": 490, "even": ["1.7543e-79", "2.9429e-72", "1.2382e-65"], "even_gs_min_over_max": -0.0, "even_gs_sign_changes": 0, "overlap_with_Q0_perron": 0.463229, "odd": ["9.9417e-76", "6.4445e-69", "1.8571e-62"], "odd_gs_min_over_max": -0.0, "odd_gs_sign_changes": 0, "sec": 16.8}
+       40.90 real        18.51 user         0.79 sys
+            94109696  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14287  page reclaims
+                2152  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 584  voluntary context switches
+               56290  involuntary context switches
+           541205535  instructions retired
+           384098399  cycles elapsed
+            28688888  peak memory footprint

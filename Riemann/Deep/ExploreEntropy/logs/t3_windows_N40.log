@@ -1,0 +1,32 @@
+c=1.200 a=0.0912 | kill e -0.0654 o -0.0656 | arch e 0.1695 o 1.4277 | arch+pole e 0.52015 o 1.42749 | primes e 0.0000 o 0.0000 | Q e 5.201e-01 o 1.427e+00
+c=1.300 a=0.1312 | kill e -0.4491 o -0.4499 | arch e -0.2136 o 1.0636 | arch+pole e 0.28971 o 1.06292 | primes e 0.0000 o 0.0000 | Q e 2.897e-01 o 1.063e+00
+c=1.380 a=0.1610 | kill e -0.6689 o -0.6703 | arch e -0.4328 o 0.8583 | arch+pole e 0.18361 o 0.85711 | primes e 0.0000 o 0.0000 | Q e 1.836e-01 o 8.571e-01
+c=1.450 a=0.1858 | kill e -0.8239 o -0.8261 | arch e -0.5874 o 0.7152 | arch+pole e 0.12217 o 0.71337 | primes e 0.0000 o 0.0000 | Q e 1.222e-01 o 7.134e-01
+c=1.600 a=0.2350 | kill e -1.0830 o -1.0874 | arch e -0.8456 o 0.4796 | arch+pole e 0.04721 o 0.47596 | primes e 0.0000 o 0.0000 | Q e 4.721e-02 o 4.760e-01
+c=1.800 a=0.2939 | kill e -1.3352 o -1.3437 | arch e -1.0966 o 0.2551 | arch+pole e 0.00941 o 0.24796 | primes e 0.0000 o 0.0000 | Q e 9.411e-03 o 2.480e-01
+c=2.000 a=0.3466 | kill e -1.5254 o -1.5393 | arch e -1.2856 o 0.0891 | arch+pole e 0.00133 o 0.07744 | primes e 0.0000 o 0.0000 | Q e 1.333e-03 o 7.744e-02
+c=2.001 a=0.3468 | kill e -1.5262 o -1.5402 | arch e -1.2865 o 0.0884 | arch+pole e 0.00132 o 0.07668 | primes e -0.0570 o -0.0000 | Q e 1.322e-03 o 7.669e-02
+c=2.100 a=0.3710 | kill e -1.6050 o -1.6222 | arch e -1.3648 o 0.0205 | arch+pole e 0.00106 o 0.00617 | primes e -0.4901 o -0.4901 | Q e 5.746e-04 o 3.689e-02
+c=2.200 a=0.3942 | kill e -1.6769 o -1.6975 | arch e -1.4361 o -0.0409 | arch+pole e 0.00084 o -0.05815 | primes e -0.4901 o -0.4901 | Q e 2.320e-04 o 1.851e-02
+c=2.500 a=0.4581 | kill e -1.8573 o -1.8897 | arch e -1.6149 o -0.1931 | arch+pole e -0.01018 o -0.22032 | primes e -0.4901 o -0.4901 | Q e 1.039e-05 o 1.827e-03
+c=3.000 a=0.5493 | kill e -2.0810 o -2.1371 | arch e -1.8362 o -0.3782 | arch+pole e -0.07390 o -0.42544 | primes e -0.4901 o -0.4901 | Q e 5.757e-08 o 1.708e-05
+c=4.000 a=0.6931 | kill e -2.3785 o -2.4922 | arch e -2.1291 o -0.6186 | arch+pole e -0.23965 o -0.71502 | primes e -0.9009 o -0.9009 | Q e 8.884e-13 o 5.420e-10
+c=5.000 a=0.8047 | kill e -2.5764 o -2.7558 | arch e -2.3229 o -0.7758 | arch+pole e -0.37254 o -0.92907 | primes e -1.2191 o -1.2191 | Q e 9.143e-17 o 1.155e-14
+        2.92 real         1.78 user         0.14 sys
+            42172416  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7381  page reclaims
+                   8  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   5  voluntary context switches
+                7289  involuntary context switches
+           457008419  instructions retired
+           241546555  cycles elapsed
+            21873144  peak memory footprint

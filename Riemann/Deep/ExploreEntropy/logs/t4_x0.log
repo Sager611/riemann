@@ -1,0 +1,19 @@
+full-Q kernel 2cosh(x/2) - k(x) changes sign at |x - y| = x0 = 0.281200: PF window L < x0, i.e. c < 1.324718, half-width < 0.140600
+        3.85 real         1.43 user         0.45 sys
+            85196800  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               15491  page reclaims
+                1132  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 632  voluntary context switches
+                4136  involuntary context switches
+           459386310  instructions retired
+           213870054  cycles elapsed
+            22184440  peak memory footprint

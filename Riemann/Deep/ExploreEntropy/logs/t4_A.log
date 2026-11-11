@@ -1,0 +1,23 @@
+{"c": 2, "N": 80, "even": [-1.285712, 0.582289, 1.175433], "perron_min_over_max": 0.48555, "perron_sign_changes": 0, "<perron,cosh>": 0.823868, "odd": [0.087104, 0.929474, 1.380638]}
+{"c": 5, "N": 80, "even": [-3.334353, 0.0, 0.0], "perron_min_over_max": 0.776637, "perron_sign_changes": 0, "<perron,cosh>": 1.299838, "odd": [0.0, 3.6e-05, 0.056556]}
+{"c": 10, "N": 80, "even": [-5.119237, -0.0, -0.0], "perron_min_over_max": 0.84326, "perron_sign_changes": 0, "<perron,cosh>": 1.603229, "odd": [-0.0, 0.0, 0.0]}
+{"c": 20, "N": 80, "even": [-7.215904, -0.0, -0.0], "perron_min_over_max": 0.730799, "perron_sign_changes": 0, "<perron,cosh>": 1.902344, "odd": [-0.0, -0.0, -0.0]}
+{"c": 47, "N": 80, "even": [-10.524964, -0.0, -0.0], "perron_min_over_max": 0.619152, "perron_sign_changes": 0, "<perron,cosh>": 2.296957, "odd": [-0.0, -0.0, -0.0]}
+        4.08 real         2.73 user         0.32 sys
+            92585984  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               17070  page reclaims
+                 164  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  51  voluntary context switches
+                6426  involuntary context switches
+           458161148  instructions retired
+           179968282  cycles elapsed
+            23609848  peak memory footprint

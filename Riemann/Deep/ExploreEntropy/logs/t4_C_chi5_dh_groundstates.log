@@ -1,0 +1,26 @@
+{"kind": "chi5", "c": 5, "N": 25, "bits": 146, "even": ["0.06427", "1.4492", "2.0488"], "even_gs_min_over_max": 0.24966, "even_gs_sign_changes": 0, "odd": ["0.75427", "1.5716", "2.0879"], "odd_gs_min_over_max": 0.04508, "odd_gs_sign_changes": 0, "sec": 1.4}
+{"kind": "chi5", "c": 10, "N": 34, "bits": 164, "even": ["0.0018287", "1.0106", "1.4636"], "even_gs_min_over_max": 0.0838, "even_gs_sign_changes": 0, "odd": ["0.16928", "1.4435", "1.6136"], "odd_gs_min_over_max": 0.03491, "odd_gs_sign_changes": 0, "sec": 3.4}
+{"kind": "chi5", "c": 20, "N": 56, "bits": 200, "even": ["8.5484e-6", "0.1036", "1.1774"], "even_gs_min_over_max": 0.01015, "even_gs_sign_changes": 0, "odd": ["0.0018848", "1.068", "1.3551"], "odd_gs_min_over_max": 0.06977, "odd_gs_sign_changes": 0, "sec": 13.7}
+{"kind": "chi5", "c": 31, "N": 84, "bits": 240, "even": ["4.3976e-8", "0.0037247", "0.68444"], "even_gs_min_over_max": 0.00137, "even_gs_sign_changes": 0, "odd": ["2.3004e-5", "0.22628", "0.79394"], "odd_gs_min_over_max": 0.0213, "odd_gs_sign_changes": 0, "sec": 49.8}
+{"kind": "dh", "c": 5, "N": 25, "bits": 146, "even": ["0.0060164", "1.6475", "1.9816"], "even_gs_min_over_max": 0.14545, "even_gs_sign_changes": 0, "odd": ["0.45135", "1.6", "1.96"], "odd_gs_min_over_max": 0.02453, "odd_gs_sign_changes": 0, "sec": 1.2}
+{"kind": "dh", "c": 10, "N": 34, "bits": 164, "even": ["8.7593e-8", "0.013537", "1.5015"], "even_gs_min_over_max": 0.00183, "even_gs_sign_changes": 0, "odd": ["6.4213e-5", "0.46835", "1.575"], "odd_gs_min_over_max": 0.03456, "odd_gs_sign_changes": 0, "sec": 3.3}
+{"kind": "dh", "c": 20, "N": 56, "bits": 200, "even": ["4.5167e-18", "2.1905e-11", "1.8028e-6"], "even_gs_min_over_max": 0.0, "even_gs_sign_changes": 0, "odd": ["1.419e-14", "1.0316e-8", "0.00028867"], "odd_gs_min_over_max": 1e-05, "odd_gs_sign_changes": 0, "sec": 13.9}
+{"kind": "dh", "c": 31, "N": 84, "bits": 240, "even": ["-6.0777e-30", "3.3454e-22", "1.3502e-16"], "even_gs_min_over_max": 0.0, "even_gs_sign_changes": 0, "odd": ["7.4555e-26", "2.1693e-19", "1.6489e-13"], "odd_gs_min_over_max": 0.0, "odd_gs_sign_changes": 0, "sec": 52.4}
+      141.70 real       115.41 user         2.36 sys
+            95617024  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               25500  page reclaims
+                1520  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 605  voluntary context switches
+              331896  involuntary context switches
+           463625227  instructions retired
+           187684878  cycles elapsed
+            28115424  peak memory footprint
