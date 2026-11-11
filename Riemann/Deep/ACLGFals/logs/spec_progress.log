@@ -1,0 +1,21 @@
+c=2 N=120 done 15:44:15 rss=35602432  maximum resident
+c=2 N=240 done 15:44:52 rss=49250304  maximum resident
+c=3 N=120 done 15:45:08 rss=34537472  maximum resident
+c=3 N=240 done 15:45:42 rss=52609024  maximum resident
+c=4 N=120 done 15:45:47 rss=35618816  maximum resident
+c=4 N=240 done 15:46:21 rss=52510720  maximum resident
+c=5 N=120 done 15:46:26 rss=35667968  maximum resident
+c=5 N=240 done 15:47:00 rss=52527104  maximum resident
+c=6 N=120 done 15:47:05 rss=35569664  maximum resident
+c=6 N=240 done 15:47:40 rss=52330496  maximum resident
+c=8 N=120 done 15:47:47 rss=36438016  maximum resident
+c=8 N=240 done 15:48:29 rss=52379648  maximum resident
+c=10 N=120 done 15:48:36 rss=36503552  maximum resident
+c=10 N=240 done 15:49:20 rss=55410688  maximum resident
+c=12 N=120 done 15:49:28 rss=36470784  maximum resident
+c=12 N=240 done 15:50:20 rss=55574528  maximum resident
+c=16 N=120 done 15:50:29 rss=37175296  maximum resident
+c=16 N=240 done 15:51:27 rss=58277888  maximum resident
+c=20 N=120 done 15:51:38 rss=37224448  maximum resident
+c=20 N=240 done 15:52:55 rss=58425344  maximum resident
+ALLDONE
