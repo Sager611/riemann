@@ -7,28 +7,30 @@ Goal: prove or disprove RH by endless Lean proof-tree search; never stop.
 
 ## Priority
 
-- New discoveries (theorems, records, counterexamples, false steps) advancing a named node of the RH approach tree at the top of `TREE.md`: RH criteria/equivalents, quantitative zero or prime-error records, L-function analogues, barriers to approaches.
-- Exploration share: 3 of 8 scouts + 1 Orca agent on remote fields, no RH link needed upfront; judged by whether it yields a new idea for an RH node.
-- Formalizing known results is secondary.
-- Formalizing a new discovery is mandatory.
+- Results that move a node of the RH approach tree at the top of `TREE.md` (criterion, equivalent form, zero, gap, rate, threshold): theorems, tools, barriers, counterexamples, false steps; larger ranges and constants are records only.
+- Falsify before improving: the smallest case where a node's key lemma fails → barrier in `NOGO.md`.
+- Audit load-bearing inputs (Lean axioms and sorries, statement vs literature) before building on them; Orca agents go to audit and falsification first.
+- Exploration share: 3 of 8 scouts + 1 Orca agent on remote fields, each transferring one concrete tool to a named node and testing it for a new bound.
+- Formalizing known results is secondary; formalizing a new discovery is mandatory.
 
 ## Work loop
 
-1. Pick one tree node (seed the tree if missing); rank by RH relevance × chance × gain.
-2. ≥ 8 scouts on it: state of the art, computation (extend ranges/constants), adversarial (counterexamples to lemmas the approach needs), wild.
+1. Pick one tree node (seed the tree if missing); rank by RH relevance × chance × gain; stay on it until it yields a theorem, barrier or clean negative.
+2. ≥ 8 scouts on it: falsification (counterexamples to lemmas the approach needs), state of the art, computation, wild.
 3. Record the round in `Riemann/Tree/R###.lean` (claim, counterexample or reduction; `sorry` only for marked open obligations); dead ends → one line in `NOGO.md`.
 4. Work beyond scouts (edit, build, research) → Orca agent with a tight full brief; close its tab when done.
 5. Check green → commit → `git push origin main`, every commit. Public repo: no secrets.
 
 ## Discoveries
 
+- Gate: someone gets a new theorem, tool or barrier from it; dependents of one input count once; constant, range and exponent records → `RECORDS.md`.
 - `DISCOVERIES.md`: one line (≤ 25 words) per entry → `discoveries/<name>.md` (statement, before, method, review, novelty, RH node advanced, files); off-tree results under "Side results"; tell the user.
 - Entry needs own verification, a `reviewer` verdict and an adversarial novelty check (arXiv monthly listings `https://arxiv.org/list/<cat>/<YYYY-MM>?show=2000`, this and last month; Zenodo; our NOVELTY.md files). Known or insignificant → remove.
 - Broken claimed proofs → `REFUTATIONS.md`; routine/conditional deductions → `COROLLARIES.md`; formalizations → `FORMALIZATIONS.md`.
 
 ## Layout
 
-`Riemann/Fayed/` paper; `Riemann/Tree/` rounds; `TREE.md` tree + round index; `NOGO.md`; `DISCOVERIES.md`.
+`Riemann/Fayed/` paper; `Riemann/Tree/` rounds; `TREE.md` tree + round index; `NOGO.md`; `DISCOVERIES.md`; `RECORDS.md`.
 
 ## Changelog
 
@@ -63,3 +65,4 @@ Goal: prove or disprove RH by endless Lean proof-tree search; never stop.
 | 2026/11/05 05:16 | orchestrator | Terse rewrite; callout; Changelog; check own NOVELTY files                                                                               | Adrian: file too fluffy; the sofa "record" had missed Tomar's better bound |
 | 2026/11/05 05:19 | orchestrator | Moved the Orca agents, Scouts, Lean and disk sections to the workspace daydreaming topic `2026-11-05 - riemann-orca-scouts-lean-disk.md` | Adrian: operating notes belong in daydreaming                              |
 | 2026/11/11 12:50 | Adrian       | Priority: formalizing a new discovery is mandatory; markdown reformatted                                                                 | Adrian                                                                     |
+| 2026/11/11 13:40 | orchestrator | Priority: falsify and audit inputs first, Orca on audit/falsification, tool-transfer exploration, deeper rounds; discovery gate, `RECORDS.md` | Adrian's discovery-quality review                                          |

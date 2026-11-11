@@ -8,7 +8,7 @@ This is a personal project. **I am not accepting issues or pull requests.**
 
 - `TREE.md`: the proof-search tree
 - `NOGO.md`: dead ends
-- `DISCOVERIES.md`: findings that survived review
+- `DISCOVERIES.md`: findings that survived review (`RECORDS.md`: improved constants and ranges)
 - `Riemann/`: the Lean code
 
 Everything here is machine-generated and unreviewed by mathematicians. Treat it accordingly.

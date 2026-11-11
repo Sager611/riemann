@@ -1,57 +1,22 @@
 # Discoveries
 
-Strict: genuinely new theorems, records, or counterexamples to established statements only. One line each; the linked page has the full statement, what was known before, the review and the novelty checks.
-See [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](COROLLARIES.md) (routine conditional deductions), [FORMALIZATIONS.md](FORMALIZATIONS.md) (machine-checked known mathematics).
+Gate (AGENTS.md): someone gets a new theorem, tool or barrier from it; dependents of one input count once. One line each; the linked page has the statement, what was known before, the review and the novelty checks.
+See [RECORDS.md](RECORDS.md) (constants, ranges, exponents, proportions), [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](COROLLARIES.md) (routine conditional deductions), [FORMALIZATIONS.md](FORMALIZATIONS.md) (machine-checked known mathematics).
 
 ## On the RH tree (node in parentheses; node list at the top of TREE.md)
 
-- (N7, N11) Zero-density estimate for ring class L-functions, sharper in the discriminant than any published bound. [details](discoveries/ring-class-zero-density.md)
-- (N1) Superseded record: Weil's quadratic form certified positive on test functions supported in [−1.55, 1.55] (was 1.5; superseded by Chekmachev's 1.925, Zenodo 23848597, audited sound). [details](discoveries/weil-positivity.md)
-- (N11) Every primitive binary quadratic form of discriminant Δ represents a prime ≤ |Δ|^{1+ε}, for almost all Δ (was |Δ|^{20/3+ε}, definite forms only). [details](discoveries/least-primes-forms.md)
-- (N11) Sato–Tate in every ideal class of Q(√D), for almost all D: e.g. every class has primes with a_f(p) > 0 and with a_f(p) < 0 below |D|^{2.04}. [details](discoveries/sato-tate-classes.md)
-- (N11) Least primes in every ideal class of almost all CM fields: below d_K^{1+ε} (known for every field: d_K^{694}). [details](discoveries/cm-least-primes.md)
-- (N10 (barrier)) Record: the integer Chebyshev constant of [0, 1] is at least 0.4222355 (was 0.4222286). [details](discoveries/integer-chebyshev.md)
-- (N4) Record: Robin's inequality verified for all n ≤ 10^(10^46.79), Nicolas' for primorials with p_k ≤ 1.78·10^48 (was ours 10^(10^38.71); Polak 10^(10^22.85)). [details](discoveries/robin-nicolas-ranges.md)
 - (N4) Sharp odd Robin criterion: RH ⟺ σ(n) < (e^γ/2) n log log n for every odd n > 277093800961598968947975375; Washington–Yang's gap closed. [details](discoveries/odd-robin.md)
 - (N5) Báez-Duarte's natural-number Nyman–Beurling criterion holds in L^p for all 1 < p < 2, also for every Dirichlet L-function; unconditionally true for p ≤ 1.14497. [details](discoveries/nyman-beurling-lp.md)
-- (N10) First explicit power-saving Mertens bound: |M(x)| ≤ 1.84·10^6 x^0.9382 for all x ≥ 1 (before: no explicit exponent below 1). [details](discoveries/mertens-power-saving.md)
-- (N9) Record: |ζ(1/2+it)| ≤ 0.568 t^{1/6} log t for all t ≥ 3, and ≤ 0.4821 t^{1/6} log t for t ≥ 8.97·10^17 (was 0.611, 0.566). [details](discoveries/zeta-critical-line-constant.md)
-- (N10) Conditional record: lim sup M(x)/√x > 2.07390 and lim inf < −2.07641, given Weisz's published zero data, as his 2.06175 / −2.06471 is. [details](discoveries/mertens-limsup.md)
-- (N11) First explicit Littlewood bound without GRH for every primitive χ: |L(1, χ)| ≥ 0.11/max(3, log log q); h(−d) ≥ 0.035√d/max(3, log log d) (was 1/log q; real χ, q ≥ 10^100: 0.0621/log log q, Zenodo 23459046). [details](discoveries/littlewood-half-plane.md)
-- (N11) Record: all imaginary quadratic fields with class number h ≤ 10,000 determined without RH or GRH: 410,810,155 fields, largest |d| 28,154,696,707 (was h ≤ 5000, ours; 2000, Oct 2026). [details](discoveries/class-number-10000.md)
-- (N9) Record: |ζ(1/2+it)| ≤ 54.6 t^{27/164} for all t ≥ 3 (was 66.7, Patel–Yang 2024, whose proof drops a factor ≈ 1.10 and gives 68.54 as computed). [details](discoveries/sub-weyl-constant.md)
-- (N6) Superseded record (by the explicit Kim–Lee wedge below): Riemann's Jensen polynomials J^{d,n} are hyperbolic whenever n² log(n+2) ≥ 24 d³ (Savva's two-thirds wedge had no number); supersedes our n³ log²(n+2) ≥ 7000 d⁵. [details](discoveries/jensen-two-thirds-wedge.md)
-- (N8) At least 0.6724 of the zeta zeros are simple, on the line and isolated from both neighbours (every c ≤ 0.00476; was 0.6552, c unspecified). [details](discoveries/isolated-zeros.md)
-- (N10, N11) From the Lean-checked half-plane: the least prime ≡ a (mod q) is ≤ (q log q)^{7.90} for every q, with an explicit power-saving prime number theorem in progressions. [details](discoveries/linnik-numeric.md)
-- (N11) First numeric polylogarithmic least prime in every Chebotarev class: N𝔭 ≤ (0.49 log 3Δ_L)^32 from a Lean-checked half-plane (was Δ_L^{310}). [details](discoveries/chebotarev-numeric.md)
-- (N11) Every modulus q ≤ Q is covered by 2.1067 log Q + 58 primes ≤ (820 log Q)^{7.90}: their subset products give all of (ℤ/qℤ)^× (was: almost all q). [details](discoveries/unit-group-cover.md)
-- (N10) A prime between n^7 and (n+1)^7 for every n ≥ 1 (was eighth powers), and between consecutive cubes beyond e^{627} (was exp(e^{32.5})). [details](discoveries/primes-between-powers.md)
-- (N8, N12) At least 2.06% of the zeros of a combination of three Dirichlet L-functions lie on the critical line (was 4.91·10⁻⁹); 34.71% for two (was ours 34.49%). [details](discoveries/linear-combinations-three.md)
-- (N11) Least prime primitive root without GRH: g*(p) ≤ (1.956 log p)^{26.86} for every prime p, (0.814 log p)^{23.70} if ω(p−1) ≤ 10⁴ (was: no bound below p). [details](discoveries/prime-primitive-root.md)
-- (N11) Random ±1 polynomials, and characteristic polynomials of random integer and symmetric ±1 matrices, are irreducible with probability → 1 without RH (was: under RH/ERH). [details](discoveries/random-polynomials-without-rh.md)
-- (N10) A prime in (x, x + x^{0.856}] for every real x ≥ 1 (was x^{7/8}); x^{0.842} and sixth powers conditionally on an unrefereed density. [details](discoveries/primes-short-intervals.md)
-- (N11) Kopp–Lagarias Problem 1.7 solved: the unit-generated real quadratic orders with 2-torsion class group are exactly their 89 tabulated ones (84 with one class per genus). [details](discoveries/unit-generated-orders.md)
-- (N12, N8) At least 6.8·10⁻⁴ of the zeros of a combination of four Dirichlet L-functions lie on the critical line (was 3.7·10⁻⁹), and c/N for N summands. [details](discoveries/selberg-linear-combinations.md)
-- (N12, N7) Unconditional root-discriminant bounds beyond Odlyzko–Poitou (1977): rd_K ≥ 23.3878 − o(1), totally real 65.6439 − o(1) (were 22.3816, 60.8395). [details](discoveries/discriminant-bounds-strip.md)
-- (N8, N12) At least 7.005% of the zeros of every GL(2) newform L-function lie on the critical line (was 6.96%); arXiv 2508.11108's Question 5 settled. [details](discoveries/gl2-critical-line.md)
-- (N6) Explicit Kim–Lee wedge: Riemann's Jensen polynomials J^{d,n} are hyperbolic for every n ≥ 9.99·10^11 and d ≤ 6.45 n²/log² n (was n² log(n+2) ≥ 24 d³). [details](discoveries/jensen-kim-lee-wedge.md)
+- (N7, N11) Zero-density estimate for ring class L-functions, sharper in the discriminant than any published bound; the same method gives, for almost all discriminants, [least primes represented by forms ≤ |Δ|^{1+ε}](discoveries/least-primes-forms.md), [Sato–Tate in every ideal class](discoveries/sato-tate-classes.md) and [least primes in CM classes](discoveries/cm-least-primes.md). [details](discoveries/ring-class-zero-density.md)
+- (N7 → N10, N11, N12) Consequences of the Lean-checked zero-free half-planes (one external input, counted once; audit pending): [explicit Littlewood bound for every χ](discoveries/littlewood-half-plane.md), least primes [in progressions](discoveries/linnik-numeric.md) and [Chebotarev classes](discoveries/chebotarev-numeric.md), [unit-group covers](discoveries/unit-group-cover.md), [least prime primitive roots](discoveries/prime-primitive-root.md), primes [between seventh powers](discoveries/primes-between-powers.md) and [in (x, x + x^0.856]](discoveries/primes-short-intervals.md), [random polynomials irreducible without RH](discoveries/random-polynomials-without-rh.md), [root-discriminant bounds](discoveries/discriminant-bounds-strip.md), [Kopp–Lagarias Problem 1.7](discoveries/unit-generated-orders.md).
 
 ## Side results (off the RH tree)
 
 - Thirteen published conjectures of Z.-W. Sun fail in small cases, each certified by exhaustive search or exact arithmetic. [details](discoveries/sun-counterexamples.md)
 - The Sun–Hou conjecture holds for every finite field F_q with q > 7 (prime powers up to 18,888,871 were open). [details](discoveries/sun-hou.md)
-- Record: counterexample to Gale's conjecture in R³ with ratio 0.8906211 (previous 0.8892812). [details](discoveries/gale-r3.md)
 - A graph's evolution algebra is isomorphic to its random-walk version iff the graph is regular, or bipartite biregular with degree ratio a cube (open problem of arXiv 2610.22248). [details](discoveries/evolution-algebras.md)
-- Record: non-separable homothetic triangles with covering factor 1.0633023 (was 1.0631883), and a proof that λ_simplex ≥ 1.0633083. [details](discoveries/tricover.md)
-- Records: quaternary covering codes K₄(10,3) ≤ 768 (was 832) and K₄(11,3) ≤ 1920 (was 2048). [details](discoveries/covering-code-k4-10-3.md)
 - The open question of arXiv 2610.10095 answered: exactly 11 of the 24 cyclic orders of +, ×, −, ÷ make every number 1..N for all large N. [details](discoveries/operation-orders.md)
-- Record: a body of volume 1.8755015 moves through the 3D snaky corridor K₄ (was 1.8558404). [details](discoveries/sofa3d.md)
-- Records: stronger counterexamples to Gale's conjecture in R⁴ (0.9164674, was 0.9131485), R⁵ (0.9283700, was 0.9257636) and R⁶ (0.9373384, was 0.9369672). [details](discoveries/gale-r4-r5.md)
 - Exactly which triples of prefix reversals generate S_n below the diagonal (m + k < n): a complete classification, refuting the conjecture of Blanco et al. [details](discoveries/prefix-reversals.md)
-- Record: a convex cover of area 0.2453479 contains a copy of every planar arc of length 1 (Moser's worm problem; was 0.2463322). [details](discoveries/moser-worm.md)
-- Record: kissing number in dimension 38 is at least 624020 (was 611522): a known 3-modular lattice gives a far larger equator. [details](discoveries/kissing-38.md)
 - Theorem: the Fasi–Higham positivity conjecture holds for m = 3 and every k (all Taylor coefficients of 1/q_{k,3} are positive). [details](discoveries/fasi-higham-m3.md)
 - Gale's conjecture fails in R⁷ and R⁸ (the last open dimensions), hence in every dimension n ≥ 3; an explicit family with a hand proof for n ≥ 5. [details](discoveries/gale-r7-r8.md)
 - Theorem: the diagonal Fasi–Higham positivity holds for every odd m (all Taylor coefficients of 1/q_{m,m} positive; computer-assisted). [details](discoveries/fasi-higham-diagonal.md)
-- Record: ξ(K₆) ≥ 33 — a 3-colouring of K₃₃ in which every K₆ sees all three colours (was 25). [details](discoveries/xi-k6.md)
-- Record: the ambidextrous moving sofa constant is at most 19/10 (was 2.2195, from an unverified announcement). [details](discoveries/ambidextrous-sofa.md)
