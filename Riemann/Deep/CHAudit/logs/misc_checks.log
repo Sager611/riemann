@@ -1,0 +1,4 @@
+lem:oldie check on zeros<=1132491: max Q/(log t/5+2)=0.3894, min Q/(log t/5+2)=-0.3971 ; max|Q| for t<=280: 0.998
+cor:brut check: max N(t)/((t/2pi)log(t/2pi)) at zeros = 0.917370
+chamlu T=1000000: max 1/|zeta(s+iT)| on grid = 0.894198296 at s=1.00000 (paper for T=1e6+1: 0.894198297)
+chamlu T=1000001: max 1/|zeta(s+iT)| on grid = 0.835322470 at s=0.78376 (paper for T=1e6+1: 0.894198297)

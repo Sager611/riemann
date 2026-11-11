@@ -1,0 +1,2 @@
+max sqrt(x)*[sum Lambda(n)/n-(log x-gamma)] on [1,N]: 0.7878013324 at 110102617   (paper: 0.787.. at 110102617)
+min sqrt(x)*[sum Lambda(n)/n-(log x-gamma)] on [1,N]: -0.7585825520 at 1423^-   (paper: -0.7585825520 at 1423^-)

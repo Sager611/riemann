@@ -1,0 +1,8 @@
+progress t=1182491 zeros 96478 pairs 22 cand 22 maxrss 44 MB 43s
+progress t=1232491 zeros 193293 pairs 37 cand 37 maxrss 46 MB 85s
+progress t=1282491 zeros 290431 pairs 57 cand 57 maxrss 47 MB 131s
+progress t=1332491 zeros 387878 pairs 74 cand 74 maxrss 47 MB 176s
+progress t=1382491 zeros 485625 pairs 92 cand 92 maxrss 47 MB 224s
+progress t=1432491 zeros 583659 pairs 110 cand 110 maxrss 47 MB 275s
+progress t=1482491 zeros 681972 pairs 127 cand 127 maxrss 47 MB 335s
+done (1132490.6588,1500000.0000]: zeros 716464, close pairs recovered 135, candidates 135, 354s

@@ -1,0 +1,6 @@
+T=10000000.0 sigma=0: tritura LHS=131.8962313 RHS=134.0361036 (ok=True) | assembled bound=31.66884856  vihuela claim=31.69044991  margin=0.021601
+T=10000000.0 sigma=1: tritura LHS=131.8962313 RHS=134.0361036 (ok=True) | assembled bound=31.66884856  vihuela claim=31.69044991  margin=0.021601
+T=1.0e+9 sigma=0: tritura LHS=282.3763931 RHS=285.2133884 (ok=True) | assembled bound=55.71348747  vihuela claim=55.75194921  margin=0.038462
+T=1.0e+9 sigma=1: tritura LHS=282.3763931 RHS=285.2133884 (ok=True) | assembled bound=55.71348747  vihuela claim=55.75194921  margin=0.038462
+T=3.0e+12 sigma=0: tritura LHS=644.9677984 RHS=649.0168704 (ok=True) | assembled bound=113.6144486  vihuela claim=113.654614  margin=0.040165
+T=3.0e+12 sigma=1: tritura LHS=644.9677984 RHS=649.0168704 (ok=True) | assembled bound=113.6144486  vihuela claim=113.654614  margin=0.040165

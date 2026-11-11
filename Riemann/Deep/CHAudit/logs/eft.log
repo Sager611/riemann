@@ -1,0 +1,20 @@
+zeta-prime check (rel err RS-complex vs flint): 1.4e-05 1.7e-08 1.5e-07 2.0e-08 5.3e-08 7.5e-09 1.0e-08
+samples 23843
+T=1000 zeros=649  min|zeta(r+iT)|,r in[-1/64,1]=0.8607 (cond 1/that=1.16 <= log^2 x=79)  x-range 7.4e+03..1e+09 (45948 pts)
+  MOEBIUS s=0: max|M-P0|/bound=0.3911 ; max|M-P0|/(delta x)=0.4519 ; rms(M-P0)/rms(M) on delta x<sqrt x: 0.0957
+  MOEBIUS s=1: max|m-P1|/bound=0.3910 ; max|m-P1|/delta=0.4518
+  PSI s=0: min width W*T/pi=0.5318 ; max |psi/x-main|/W=0.5855 ; max|psi/x-main|*T/pi=0.5787 ; max|psi/x-1|*T/pi=2.09
+  CONTROL (zero sums with wrong sign): max|M-P0bad|/bound=4.609  max|psi/x-mainbad|/W=4.104
+T near zero!
+T=10000 zeros=10142  min|zeta(r+iT)|,r in[-1/64,1]=0.3316 (cond 1/that=3.02 <= log^2 x=126)  x-range 7.4e+04..1e+09 (38224 pts)
+  MOEBIUS s=0: max|M-P0|/bound=0.3191 ; max|M-P0|/(delta x)=0.3693 ; rms(M-P0)/rms(M) on delta x<sqrt x: 0.0278
+  MOEBIUS s=1: max|m-P1|/bound=0.3190 ; max|m-P1|/delta=0.3693
+  PSI s=0: min width W*T/pi=0.3294 ; max |psi/x-main|/W=0.6858 ; max|psi/x-main|*T/pi=0.8209 ; max|psi/x-1|*T/pi=5.26
+  CONTROL (zero sums with wrong sign): max|M-P0bad|/bound=14.414  max|psi/x-mainbad|/W=20.412
+T near zero!
+T=100000 zeros=138069  min|zeta(r+iT)|,r in[-1/64,1]=1.9401 (cond 1/that=0.52 <= log^2 x=183)  x-range 7.4e+05..1e+09 (30256 pts)
+  MOEBIUS s=0: max|M-P0|/bound=0.3277 ; max|M-P0|/(delta x)=0.3798 ; rms(M-P0)/rms(M) on delta x<sqrt x: 0.0184
+  MOEBIUS s=1: max|m-P1|/bound=0.3277 ; max|m-P1|/delta=0.3798
+  PSI s=0: min width W*T/pi=0.2375 ; max |psi/x-main|/W=0.7364 ; max|psi/x-main|*T/pi=0.9685 ; max|psi/x-1|*T/pi=16.61
+  CONTROL (zero sums with wrong sign): max|M-P0bad|/bound=44.869  max|psi/x-mainbad|/W=74.805
+total s 310.3

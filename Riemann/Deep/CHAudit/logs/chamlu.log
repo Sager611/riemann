@@ -1,0 +1,6 @@
+T=1e+06        max 1/|zeta| on grid = 0.835322471 at sigma=0.78372 ; paper 0.894198297 ; ratio 0.934158 ; max over sample sigma<-1/64: 0.0016 ; 2.4s
+T=1.89319e+06  max 1/|zeta| on grid = 0.591342108 at sigma=1.00000 ; paper 0.591342108 ; ratio 1.000000 ; max over sample sigma<-1/64: 0.0008 ; 2.4s
+T=1e+07        max 1/|zeta| on grid = 0.551087905 at sigma=1.00000 ; paper 0.551087906 ; ratio 1.000000 ; max over sample sigma<-1/64: 0.0003 ; 2.8s
+T=1e+08        max 1/|zeta| on grid = 0.579764045 at sigma=1.00000 ; paper 0.579764046 ; ratio 1.000000 ; max over sample sigma<-1/64: 0.0001 ; 6.4s
+T=1e+09        max 1/|zeta| on grid = 0.669256578 at sigma=1.00000 ; paper 0.669256578 ; ratio 1.000000 ; max over sample sigma<-1/64: 0.0000 ; 17.8s
+T=1e+10        max 1/|zeta| on grid = 0.536165862 at sigma=0.52029 ; paper 0.536165863 ; ratio 1.000000 ; max over sample sigma<-1/64: 0.0000 ; 57.4s

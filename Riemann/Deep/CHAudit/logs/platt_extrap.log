@@ -1,0 +1,30 @@
+J(10000)=2515.68  J/((t/2pi)L^(1/4))=0.95925
+J(100000)=27581.17  J/((t/2pi)L^(1/4))=0.98261
+J(300000)=85752.94  J/((t/2pi)L^(1/4))=0.99133
+J(1e+06)=295489.07  J/((t/2pi)L^(1/4))=0.99800
+J(1.13e+06)=334902.17  J/((t/2pi)L^(1/4))=0.99845
+HKO constant G(3/2)^2 a(1/2) ~ 1.1299288
+fit on [10000,200000]: K1=1.05442 K2=-0.68909
+   T=1e+06        predicted 2.66100  paper 2.66161  diff -0.00061 (-0.023%)
+   T=1.89319e+06  predicted 2.85359  paper 2.85418  diff -0.00058 (-0.020%)
+   T=1e+07        predicted 3.36881  paper 3.36905  diff -0.00023 (-0.007%)
+   T=1e+08        predicted 4.10995  paper 4.10964  diff +0.00031 (0.008%)
+   T=1e+09        predicted 4.88052  paper 4.87937  diff +0.00115 (0.024%)
+   T=1e+10        predicted 5.67754  paper 5.67526  diff +0.00229 (0.040%)
+   1-term: T=1e+06        predicted 2.65770  paper 2.66161  diff -0.00391
+   1-term: T=1.89319e+06  predicted 2.84780  paper 2.85418  diff -0.00638
+   1-term: T=1e+07        predicted 3.35413  paper 3.36905  diff -0.01492
+   1-term: T=1e+08        predicted 4.07812  paper 4.10964  diff -0.03152
+   1-term: T=1e+09        predicted 4.82685  paper 4.87937  diff -0.05251
+   1-term: T=1e+10        predicted 5.59811  paper 5.67526  diff -0.07715
+fit on [200000,1.13e+06]: K1=1.05567 K2=-0.69045
+   T=1.89319e+06  predicted 2.85438  paper 2.85418  diff +0.00021 (0.007%)
+   T=1e+07        predicted 3.37019  paper 3.36905  diff +0.00114 (0.034%)
+   T=1e+08        predicted 4.11218  paper 4.10964  diff +0.00254 (0.062%)
+   T=1e+09        predicted 4.88364  paper 4.87937  diff +0.00428 (0.088%)
+   T=1e+10        predicted 5.68160  paper 5.67526  diff +0.00634 (0.112%)
+   1-term: T=1.89319e+06  predicted 2.85403  paper 2.85418  diff -0.00015
+   1-term: T=1e+07        predicted 3.36592  paper 3.36905  diff -0.00313
+   1-term: T=1e+08        predicted 4.09772  paper 4.10964  diff -0.01192
+   1-term: T=1e+09        predicted 4.85453  paper 4.87937  diff -0.02484
+   1-term: T=1e+10        predicted 5.63411  paper 5.67526  diff -0.04115

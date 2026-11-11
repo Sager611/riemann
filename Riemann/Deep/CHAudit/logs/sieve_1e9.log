@@ -1,0 +1,8 @@
+RANGE N=1000000000
+M: max|M(x)|/sqrt(x) for 33<=x<=N: 0.567105 at 199
+M: max |M(x)|/(3x/(pi 1e10)+11.39 sqrt x): 0.087796 at 1
+m: max|m(x)|sqrt(x) 3<=x<=N: 0.461713 at 30919092
+m: max |m(x)|/(3/(pi 1e10)+11.39/sqrt x): 0.124163 at 1
+psi: max (psi(x)-x)/sqrt x: 0.790593 at 110102617 ; min: -1.331862 at 3^-
+psi: max |psi(x)-x|/(pi x/3e12+113.67 sqrt x): 0.012441 at 1
+final M=-222 m=3.181325289805368e-07 psi=1000001595.990701

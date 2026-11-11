@@ -1,0 +1,5 @@
+N=1000000000
+max (psi(x)-x)/sqrt x on [1,N]: 0.7905927544 at 110102617   (paper: 0.79059275 at 110102617)
+min (psi(x)-x)/sqrt x on [1e4,N]: -0.7509024437 at 36917099^-   (paper on [1e4,1e13]: -0.7509024438 at 36917099^-)
+max sum_{n<=x}Lambda(n)/n-(log x-gamma) on [1,N]: 0.5772156649 at 1   (paper: 0.787.. at 110102617)
+min sum_{n<=x}Lambda(n)/n-(log x-gamma) on [1,N]: -0.1748230335 at 3^-   (paper: -0.7585825520 at 1423^-)
