@@ -17,7 +17,7 @@
 
 **Caveat.** The analytic step is our reviewed paper proof (Littlewood78), not Lean-checked; the tables are trusted as published; the full list is not stored (rerun.md recomputes it: about 3 h of download, 53 GB streamed, and 3.7 h of sieving).
 
-**Later.** Bhattacharjee (Zenodo 24124876, 11 Nov 2026): d < 2^40 for h ≤ 10,798 under 7/8, exact counts only to h ≤ 1000: later and weaker (harvest6).
+**Later.** Bhattacharjee (Zenodo 24124876, 11 Nov 2026): d < 2^40 for h ≤ 10,798 under 7/8, exact counts only to h ≤ 1000: later and weaker (harvest6); its counts and largest d for h ≤ 1000 agree with ours row by row (R435).
 
 **RH relevance:** N11 (the class number problem is the effective shadow of Landau–Siegel zeros; here made effective by the Lean-checked zero-free half-plane).
 
