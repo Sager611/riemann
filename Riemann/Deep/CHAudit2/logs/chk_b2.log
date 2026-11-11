@@ -1,0 +1,18 @@
+sieve done; M(1e7) = 1037  Q(1e7) = 6079291 (known: M(1e7) = 1928, Q(1e7) = 6079291)
+(0) Q(x) == sum_{k<=x} M(sqrt(x/k)) at 200 random x <= 1e6: failures = 0
+(i) sup_{1<=x<1e7+1} |R(x)|/sqrt(x) <= (0.6790901798596033, 3) ; sup |R(x)|/x^(1/4) <= (1.1165225284069873, 43) (upper estimates: max of |R| at n and (n+1)^-, divided by the value at n)
+    x with |R|/sqrt x > 1 (upper estimate): []
+ramando: max over 2<=N<=1e6 of (2 sqrt(N+1/2) + sum n^-1/2) - 4 sqrt(N-1/2) = -0.029595044211428778 (<= 0 needed)
+ramando: max over 3<=N<=1e6 of LHS2 - RHS2 = 0.7107759891004184 (<= 5/7 = 0.714286 needed); max over 37<=N<=1e6: -0.002235547904021473 (<= 0 needed)
+ramando at N = 36 (not claimed): 0.0033424805337745056
+    120 random x in [1e7, 5e13]: max |R(x)|/x^(1/4) (x and x^-) = (0.6411569217619114, 20043252)
+(iii) per-k tests on 72000 (x, k) pairs, x in [1e8, 1e13], k <= 4000:
+    sugr: max |int (M(sqrt(x/u)) - M(sqrt(x/k))) du| / (#sqfree/2) = (0.9999462875211975, 139006801826, 3050, 1)
+    trapeze pair (1, 1) : max LHS/RHS = (0.5875785584460668, 10000000000, 238)
+    trapeze pair (0.75, 1.5) : max LHS/RHS = (0.6769074912855466, 10000000000000, 1682)
+    trapeze pair (0.6666666666666666, 2.6666666666666665) : max LHS/RHS = (0.6049939052724687, 10000000000000, 1682)
+    trapeze pair (0.64, 4.56) : max LHS/RHS = (0.47843222845776023, 1000000000000, 588)
+    trapeze pair (0.626938775510204, 7.7208163265306125) : max LHS/RHS = (0.3681619907770473, 1000000000000, 588)
+    trapeze pair (0.6217574633159049, 12.18390959689661) : max LHS/RHS = (0.3025347691855086, 109024373, 15)
+    trapeze pair (0.6180784250714321, 20.019566447538477) : max LHS/RHS = (0.23337607283558565, 109024373, 15)
+(iv) andalas end to end on 156 (x, K, K', pair) cases: max |D|/bound = (0.030277355494551874, 109024373, 53, 67, (0.64, 4.56), 14.409033151718564, 475.90131028158436)

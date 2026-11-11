@@ -1,0 +1,27 @@
+== nopgik (qmediano: kappa_-=0.570591, v0=33, v1=1e16, eps=pi/2e7, kappa=6.738093, c1=16/25, c2=114/25) ==
+coefficients x^1/2, x^2/5, x^1/3, x^1/4, x^1/6: 3.141592654e-7 0.7721020448 0.8608442282 8.984124 0.9982984244
+paper: pi/1e7 = 3.141592654e-7 0.772103 0.860845 8.98413 0.999
+lower conditions (must be < 1e18): ['4.04352e+6', '121.094', '1043.06', '2178.0']  x <= v1^2 = 1.0e+32
+paper's endpoint bound for |R|/x^(2/5) = 0.8449042249 (<= 0.84491 claimed); true max over [1e18,1e32] = 0.8444261382
+0.845 x^(2/5) <= 0.0134 x^(1/2) iff x >= (0.845/0.0134)^10 = 9.9430382e+17
+sup over [1e18,1e32] of the nopgik bound / sqrt(x) (exact coefficients) = 0.01338325238 (this is the c that nopgik really gives)
+== gopnik (gould: eps=pi/2e10, kappa=11.350514, c1=768/1225, c2=9458/1225) ==
+(a) coeffs x^3/5, x^2/5, x^1/3, x^1/6: 6.507523069e-11 2.522191406 1.041480057 1.085808866  paper 6.51e-11 2.5222 1.042 1.086
+(a) conditions: 6.87609e+11 2.14802e-5  omit-5k/7 condition: 4.56148e+17 (all < 1e32)
+(a) at 1e32: 2.5222 + 1.042 x^(-1/15) + 1.086 x^(-7/30) = 2.529853011 (<= 2.53 claimed)
+(a) |R|/sqrt x on [1e32,1e50] <= 0.001602829605 (<= 0.00161 claimed); exact-coefficient sup: 0.001596332475
+(b) coeffs x^1/2, x^1/3, x^1/4, x^1/6: 1.98473487e-5 1.041480057 60079071.85 1.085808866  paper 1.99e-5 1.042 6.01e7 1.1
+(b) eps < c1/584: True  condition x >= 1.70748e+29 (< 1e50)
+(b) at 1e50: |R|/sqrt x <= 3.891012527e-5 (<= 3.9e-5 claimed)
+== bataclar: jbond 1.12543 x^(1/4) <= 0.0134 sqrt(x) iff x >= 49757065.0 (<= 1e8 needed)
+== mertosimp ==
+2.9*0.0134 = 0.03886 ; 11.350514 + 0.0389 = 11.389414
+absorb 1/|zeta(0)| = 2: 11.389414 sqrt(x) + 2 <= 11.39 sqrt(x) iff x >= 1.16484e+7
+e^3 (cT)^2 with c = 0.0134: 3.606559e+17 (< 3.61e17 needed); largest c with e^3(cT)^2 <= 3.61e17: 0.01340639089
+largest c keeping 11.39: (11.39 - 11.350514)/2.9 = 0.01361586207
+garadiol branch below 11.39 bound up to x = 1.2225081e+18
+metamert: 3/(pi T) + (pi/4)(10/9)/T^2 + 39/(64T^3) < 3/(pi(T-1)) at T=50: True ; trivial-zero constant (1/(2-1) + 2*pi/(12 pi))(2pi)^2/zeta(3) = 38.31611777 < 39
+== Part 2: proof-as-computation (sum form of Prop. andalas + Lemma oldtrivial with the proof's K, K'; exact sums, no Lemma ramando) vs closed forms ==
+case a : cases 10012  structural failures (K<3/37, K'<K or v0 check): 0  max (proof bound)/(closed form) = 0.9999181760512089 at (9.634122769955096e+30, 1.7998191688402726e-05, 0.0016005130193211664, 0.6180784250714321, 20.019566447538477, 20086023, 511995917)
+case b : cases 9991  structural failures (K<3/37, K'<K or v0 check): 0  max (proof bound)/(closed form) = 0.9999394998729053 at (2991161.5203755763, 5.5110482792953943e-05, 42.704151049875705, 0.03218455413563924, 0.0025113301710508362, 37, 2182)
+case q : cases 9997  structural failures (K<3/37, K'<K or v0 check): 0  max (proof bound)/(closed form) = 0.9999940462010616 at (4.251552773989388e+24, 0.04554676524924782, 57.93456726596562, 0.9350588157070732, 9.726320658946612, 102074, 3811391)

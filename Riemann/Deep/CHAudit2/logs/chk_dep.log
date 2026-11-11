@@ -1,0 +1,9 @@
+c = 1 fallback: hand-over e^3 T^2 = 2.00855e+21 ; C below = 14.110637 ; C above = 14.250514 => |M(x)| <= 3x/(pi 1e10) + 14.2505 sqrt x for all x >= 1
+MOST-free: smallest self-consistent c = 0.0191722 ; sqrt-constant = 11.406113 ; hand-over e^3(cT)^2 = 7.38288e+17
+   garadiol branch (T = 1e9) stays below 3x/(pi 1e10) + C sqrt x up to x = 1.24678e+18 (must exceed the hand-over)
+MOST range actually used by bataclar's role in mertosimp: omega in [ 1.7956e+16 , 1e18 ]; there 1.12543 omega^(-1/4) <= 9.72223e-5
+qmediano alone gives |R|/sqrt(x) <= 0.0136 from x = 8.51872e+17
+metamert T = 50.0 : allowed coefficient of 1/T^2: 0.96223052 vs used (pi/4)(10/9) = 0.87266463  slack factor 1.10263
+metamert T = 1.0e+10 : allowed coefficient of 1/T^2: 0.95492966 vs used (pi/4)(10/9) = 0.87266463  slack factor 1.09427
+MertensCH tolerance: any sqrt-constant C <= 1.54e4 leaves c_CH = max(CH(1), CH(X0)/X0^theta) unchanged; Platt's one-sided sum may be as large as 7698.55 (claimed 5.675256)
+if the square-free gain were lost entirely: linear coefficient pi/(2 1e10) instead of 3/(pi 1e10): factor 1.6449341 = pi^2/6

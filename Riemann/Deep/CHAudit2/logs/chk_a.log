@@ -1,0 +1,13 @@
+== barbar: beta = 6.4 constant ==
+Ei(6.4) - e^6.4*5.4/(6.4*4.4) = 2.52424054005 <= 2.525: True
+beta/(beta-2) = 1.45454545455 = 16/11: 1.45454545455
+min_{0<x<=50} g(x) - g(6.4) = 0.0 (>= 0 expected)
+barbar: max LHS/RHS over 364 cases = 0.99602827 at alpha, u0 = ['3.0', '-2.0']
+== artanor constants ==
+alpha = 0.5  c0 = 0.7546033721  c1 = 3.396085806  c2 = 0.2128157386
+alpha = 1/6  c0 = 0.637721389  c1 = 2.835678079  c2 = 0.2031699845
+claims: c0(1/2)<16/21=0.7619048 c1(1/2)<17/5 c2(1/2)<2/9=0.2222222; c0(1/6)<=2/3=0.6666667 c1(1/6)<=2.85
+c0,c1,c2 increasing on (0,1/2] (step 0.001): True ; inf near 0: c0 -> 0.57957747 c1 -> 2.5454545
+== zetinvbound: Stirling remainder after 1/(12z), Re z >= 0 ==
+sup |R2(z)| |z|^3 over grid = 0.0039322803 at (arg in degrees, |z|) = (90.0, 0.7806151483375215) ; sqrt2/180 = 0.007856742 ; 1/90 = 0.011111111 ; 1/360 = 0.0027777778
+min over Re z >= 1/2 of (Re z/(12|z|^2) + Re R2)/(Re z/(12|z|^2)) = 0.9305850726503193 (> 0 needed)
