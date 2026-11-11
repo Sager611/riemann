@@ -1,0 +1,42 @@
+loaded first 100000 zeros, last 74920.827499 [0.0s]
+smallest case: first 8 zeros and gaps
+  zeros: 14.134725 21.022040 25.010858 30.424876 32.935062 37.586178 40.918719 43.327073
+  gaps : 6.887314 3.988818 5.414019 2.510185 4.651117 3.332541 2.408354
+  strict peak at gap gamma_4-gamma_3 = 5.414019 (> 3.988818, > 2.510185): zeros 2..5 need a valley of p in V_3 u V_4
+  strict peak at gap gamma_6-gamma_5 = 4.651117 (> 2.510185, > 3.332541): zeros 4..7 need a valley of p in V_5 u V_6
+zeros 1..1000: N=1000 zeros, mean normalised gap=0.999968
+  Zador/Fejes Toth inefficiency kappa_r=<d^(r+1)>/<d>^(r+1): r=1 1.14436  r=2 1.45872 (1.640 dB)  r=3 2.02918
+  var=0.14436  corr(d_n,d_n+1)=-0.4040  max d=2.2025  min d=0.13763  <log d>=-0.07916
+  strict gap peaks: raw 356 (0.3571 per interior gap), normalised 357 (0.3581)
+  Lloyd residual for the zero density: rms 0.1592 mean gaps; tilt |beta| median 1.4605, mean 1.8982 per mean gap; sign changes of tilt 0.7161; TV(log p) per cell 1.8019
+zeros 1001..10000: N=9000 zeros, mean normalised gap=1.000045
+  Zador/Fejes Toth inefficiency kappa_r=<d^(r+1)>/<d>^(r+1): r=1 1.15523  r=2 1.49601 (1.749 dB)  r=3 2.12736
+  var=0.15523  corr(d_n,d_n+1)=-0.3660  max d=2.4834  min d=0.04210  <log d>=-0.08657
+  strict gap peaks: raw 3192 (0.3548 per interior gap), normalised 3192 (0.3548)
+  Lloyd residual for the zero density: rms 0.1628 mean gaps; tilt |beta| median 1.4506, mean 2.0039 per mean gap; sign changes of tilt 0.7097; TV(log p) per cell 1.8798
+zeros 10001..100000: N=90000 zeros, mean normalised gap=0.999997
+  Zador/Fejes Toth inefficiency kappa_r=<d^(r+1)>/<d>^(r+1): r=1 1.16148  r=2 1.51554 (1.806 dB)  r=3 2.17527
+  var=0.16148  corr(d_n,d_n+1)=-0.3558  max d=2.8052  min d=0.02186  <log d>=-0.09181
+  strict gap peaks: raw 31954 (0.3551 per interior gap), normalised 31954 (0.3551)
+  Lloyd residual for the zero density: rms 0.1654 mean gaps; tilt |beta| median 1.4583, mean 2.0769 per mean gap; sign changes of tilt 0.7092; TV(log p) per cell 1.9308
+zeros 1..100000: N=100000 zeros, mean normalised gap=1.000000
+  Zador/Fejes Toth inefficiency kappa_r=<d^(r+1)>/<d>^(r+1): r=1 1.16075  r=2 1.51321 (1.799 dB)  r=3 2.16948
+  var=0.16075  corr(d_n,d_n+1)=-0.3571  max d=2.8052  min d=0.02186  <log d>=-0.09121
+  strict gap peaks: raw 35504 (0.3551 per interior gap), normalised 35505 (0.3551)
+  Lloyd residual for the zero density: rms 0.1651 mean gaps; tilt |beta| median 1.4575, mean 2.0274 per mean gap; sign changes of tilt 0.7095; TV(log p) per cell 1.8948
+zeros3 (height 2.677e+11): N=10000 zeros, mean normalised gap=1.000109
+  Zador/Fejes Toth inefficiency kappa_r=<d^(r+1)>/<d>^(r+1): r=1 1.17665  r=2 1.56506 (1.945 dB)  r=3 2.29535
+  var=0.17665  corr(d_n,d_n+1)=-0.3315  max d=3.0004  min d=0.02164  <log d>=-0.10172
+  strict gap peaks: raw 3541 (0.3542 per interior gap), normalised 3541 (0.3542)
+  Lloyd residual for the zero density: rms 0.1715 mean gaps; tilt |beta| median 1.5433, mean 2.2331 per mean gap; sign changes of tilt 0.7084; TV(log p) per cell 2.0545
+zeros4 (height 1.442e+20): N=10000 zeros, mean normalised gap=0.999970
+  Zador/Fejes Toth inefficiency kappa_r=<d^(r+1)>/<d>^(r+1): r=1 1.17954  r=2 1.57437 (1.971 dB)  r=3 2.31730
+  var=0.17954  corr(d_n,d_n+1)=-0.3169  max d=2.8667  min d=0.03761  <log d>=-0.10323
+  strict gap peaks: raw 3510 (0.3511 per interior gap), normalised 3510 (0.3511)
+  Lloyd residual for the zero density: rms 0.1719 mean gaps; tilt |beta| median 1.5793, mean 2.2383 per mean gap; sign changes of tilt 0.7022; TV(log p) per cell 2.0557
+zeros5 (height 1.371e+21): N=10000 zeros, mean normalised gap=1.000106
+  Zador/Fejes Toth inefficiency kappa_r=<d^(r+1)>/<d>^(r+1): r=1 1.17583  r=2 1.56415 (1.943 dB)  r=3 2.30087
+  var=0.17583  corr(d_n,d_n+1)=-0.3048  max d=3.1859  min d=0.06567  <log d>=-0.10081
+  strict gap peaks: raw 3509 (0.3510 per interior gap), normalised 3509 (0.3510)
+  Lloyd residual for the zero density: rms 0.1694 mean gaps; tilt |beta| median 1.5463, mean 2.1953 per mean gap; sign changes of tilt 0.7020; TV(log p) per cell 2.0084
+done [3.7s]

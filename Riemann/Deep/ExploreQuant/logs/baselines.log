@@ -1,0 +1,11 @@
+sine kernel (GUE, exact): E s^2 = 1.179994 (var 0.179994)  E s^3 = 1.577939 (1.981 dB)  E s^4 = 2.333092  [E0(8)=1.76e-35] [0.1s]
+  check int p = 1.000000, int s p = 1.000000, E log s = -0.103463 [0.5s]
+  oscillation table: o=0.1 -> eps 0.4013, 0.3 -> 1.2381, 0.5 -> 2.1972, 0.8 -> 4.3945
+CUE N=200 x 1000 (per-matrix sequences concatenated): n=200000  E d^2=1.18062  E d^3=1.57984  E d^4=2.33699  corr1=-0.3074  peakfrac=0.3515  E log d=-0.10392  osc bound: mean eps=1.2210, median 0.9998 per cell
+  [140.2s]
+Poisson (iid exponential): n=200000  E d^2=1.99290  E d^3=5.93035  E d^4=23.45855  corr1=+0.0019  peakfrac=0.3331  E log d=-0.57763  osc bound: mean eps=inf, median 2.2028 per cell
+crystal + 0.1 jitter: n=200000  E d^2=1.02000  E d^3=1.06001  E d^4=1.12125  corr1=+0.0016  peakfrac=0.3334  E log d=-0.01032  osc bound: mean eps=0.3243, median 0.2708 per cell
+zeta zeros 10001..100000: n=89999  E d^2=1.16148  E d^3=1.51554  E d^4=2.17527  corr1=-0.3558  peakfrac=0.3551  E log d=-0.09181  osc bound: mean eps=1.1680, median 0.9586 per cell
+zeta zeros3: n=9999  E d^2=1.17665  E d^3=1.56506  E d^4=2.29535  corr1=-0.3315  peakfrac=0.3542  E log d=-0.10172  osc bound: mean eps=1.2184, median 1.0039 per cell
+zeta zeros5: n=9999  E d^2=1.17583  E d^3=1.56415  E d^4=2.30087  corr1=-0.3048  peakfrac=0.3510  E log d=-0.10081  osc bound: mean eps=1.2043, median 1.0002 per cell
+done [140.5s]

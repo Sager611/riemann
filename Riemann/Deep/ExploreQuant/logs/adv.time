@@ -1,0 +1,34 @@
+/Users/adriansager/.cache/uv/archive-v0/z2lXRtDIRdBTxh1jyrJOs/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2423: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Users/adriansager/.cache/uv/archive-v0/z2lXRtDIRdBTxh1jyrJOs/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2423: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Users/adriansager/.cache/uv/archive-v0/z2lXRtDIRdBTxh1jyrJOs/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2423: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreQuant/adv.py:52: RuntimeWarning: divide by zero encountered in log
+  lh = np.log(h)
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreQuant/adv.py:53: RuntimeWarning: invalid value encountered in subtract
+  d2 = (lh[2:] - 2*lh[1:-1] + lh[:-2])/(tg[1] - tg[0])**2*gbar**2
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreQuant/adv.py:46: RuntimeWarning: invalid value encountered in divide
+  cL = cxp[i]/cp[i]; cR = (Txp - cxp[i])/(Tp - cp[i])
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreQuant/adv.py:75: RuntimeWarning: invalid value encountered in divide
+  S = h**2; S = S/np.mean(want_rd**2)
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreQuant/adv.py:117: RuntimeWarning: invalid value encountered in divide
+  S0 = htrue**2/np.mean(htrue**2)
+      545.94 real       357.42 user         8.92 sys
+            49135616  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               31648  page reclaims
+                 855  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 326  voluntary context switches
+             1106123  involuntary context switches
+           457159357  instructions retired
+           221337095  cycles elapsed
+            19825144  peak memory footprint

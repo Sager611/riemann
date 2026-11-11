@@ -1,0 +1,24 @@
+/Users/adriansager/.cache/uv/archive-v0/Ec53Tuu8uJSqLn-wm8pje/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2423: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Users/adriansager/.cache/uv/archive-v0/Ec53Tuu8uJSqLn-wm8pje/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2423: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Users/adriansager/.cache/uv/archive-v0/Ec53Tuu8uJSqLn-wm8pje/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2423: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+      140.88 real       119.47 user         2.28 sys
+            52412416  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11137  page reclaims
+                 390  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 184  voluntary context switches
+              256596  involuntary context switches
+           456946361  instructions retired
+           233220972  cycles elapsed
+            26870264  peak memory footprint
