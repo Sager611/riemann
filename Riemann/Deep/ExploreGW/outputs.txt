@@ -1,0 +1,47 @@
+# explore25 outputs (verbatim from the runs, 11 Nov 2026; every run < 15 min, < 100 MB, single-threaded)
+
+## t1_maass.py (mpmath, 30 digits)
+I_k(s) numeric vs closed form (-1)^{k/2} sqrt(pi) G(s-1/2) G(s) / (G(s+k/2) G(s-k/2)), k = 0,2,4,6 at s = 1.3+0.7i, 0.9+5i, 2.1-3i: rel. err <= 4.0e-27
+C_k(s) = I_{k+2}/I_k equals (1-s+k/2)/(s+k/2) to 12 digits (k = 0,2,4); |C_k(1/2+it)| = 1 (t = 0.3, 7)
+|phi_k| near rho_1/2 (s = rho_1/2 + 1e-8): 5.15e7, 5.17e7, 5.25e7 for k = 0, 2, 4 (common pole)
+
+## t2_grid.py 800 0.025 (Arb Hardy Z, even primitive chars mod 13; 32000 points, 799 s)
+conj check: Z_9(t) = Z_3(-t), Z_10(t) = Z_4(-t) to 12 digits (t = 17.3, 123.4)
+
+## t2_analyze.py
+chi_12 (quad)    sign changes to 800: 817 ; theta(800)/pi = 816.236 ; mean D = N - theta/pi over t = 50..750: 0.11
+block A (3,9)    sign changes: 704 (deficit ~112 = ~56 off-line pairs)
+block B (4,10)   sign changes: 782 (deficit ~34)
+r = Z_12/Z_A: 444 critical points; 63 negative minima (EP births for c > 0), 7 negative maxima (re-entries)
+record births (t*, tan c*, c*): (13.714, 11.575, 1.4846) (31.789, 1.8727, 1.0803) (48.849, 1.1846, 0.8697) (77.313, 0.5356, 0.4917)
+  (94.173, 0.3358, 0.3239) (151.398, 0.1801, 0.1782) (203.175, 0.1672, 0.1657) (277.408, 0.0922, 0.0920) (604.003, 0.01295, 0.01295)
+deficits (N_line(0,T) - N_line(c,T))/2 at T = 200, 400, 600, 800 and wrong-sign extrema:
+  c=0.02: 0,0,0,1 (1)   c=0.05: 0,0,0,1 (1)   c=0.1: 0,1,1,2.5 (2)   c=0.2: 1,3,4,6.5 (6)   c=0.3: 1,4,7,12.5 (12)
+  c=0.5: 4,10,16,24.5 (24)   c=0.8: 5,15,25,34.5 (34)   c=1.2: 7,19,32,45.5 (40)   c=pi/2: 10,23,40,56.5 (44)
+## t2_neg.py (c < 0 births at positive local maxima of r) records (t*, r*, |c*|):
+  (8.044, 0.1907, 0.1884) (15.774, 0.1586, 0.1573) (19.169, 0.0959, 0.0956) (47.36, 0.0770, 0.0768) (89.565, 0.0259, 0.0259)
+  (254.246, 0.0189, 0.0189) (573.772, 0.0120, 0.0120) (597.597, 0.00238, 0.00238) (710.136, 0.00223, 0.00223)
+## t2_look.py
+zeros of Z_12 near 604: 603.9226, 604.1029 (gap 0.180 = 0.205 mean spacings), max |Z_12| between = 0.105, Z_A(604) = 8.10
+smallest normalized gaps of L(s, chi_13) below 800: 597.597 (0.0683), 710.136 (0.0857), 762.275 (0.164), 442.098 (0.197), 604.013 (0.205)
+## t2_newton.py / t2_newton2.py (Arb, 96 bits; residual |f| < 1e-25)
+c=+0.0128: only on-line zero at 603.992493 ; c=+0.0131: 0.5096283 + 604.001733i ; c=+0.02: 0.564894 + 603.996151i
+c=-0.0022: on-line zeros 597.605362, 710.132013 ; c=-0.003: 0.5161727 + 597.596360i, 0.5220071 + 710.136117i
+c=0.1: 0.566007 + 277.40394i, 0.706853 + 603.940276i
+c=0.2: 0.563159 + 151.382702i, 0.623051 + 203.188148i, 0.721395 + 277.363129i, 0.684465 + 574.528334i, 0.775181 + 603.885839i
+c=0.5: 0.565485 + 77.311941i, 0.599776 + 94.230673i, 0.658482 + 151.254188i, 0.670635 + 157.617989i, 0.827837 + 203.268623i
+c=pi/2 (block A): 0.776646 + 13.708061i, 0.928222 + 31.809943i, 0.974079 + 48.981498i, 1.182959 + 77.19157i, 0.857122 + 140.149403i
+## t2_branch.py (all off-line zeros reached from wrong-sign extrema, t < 800)
+c=0.5: 24 zeros; mean (beta-1/2) in mean spacings ((beta-1/2) log(13t/2pi)/2pi): 0.110, 0.213, 0.191, 0.216 on [0,200), [200,400), [400,600), [600,800)
+c=pi/2: 44 zeros; 0.341, 0.357, 0.317, 0.355; beta > 1 for 6 of them
+## t2_cscan.py (c grid step 0.0005 on [-1.570, 1.570], T = 790)
+deficit 0 and no wrong-sign extremum only for c in [-0.0020, 0.0125] (30 values); every other c has a wrong-sign extremum below 790
+c=-0.0025: deficit 2, lowest 597.6 ; c=-0.05: 25, lowest 89.575 ; c=-0.1: 59, lowest 19.175 ; c=-0.5: deficit 191.5 (54 wrong-sign) ; c=-1: 136.5 (63)
+c=+0.0135: 1, lowest 604.0 ; c=+0.1: 2, lowest 277.4 ; c=+0.5: 24, lowest 77.3 ; c=+1: 39, lowest 48.875
+## t3_box.py, t3_dhcal.py, t3_boxA.py, t3_boxA2.py
+DH (mod 5) zeros reproduced: 0.8085171825+85.69934849i, 0.6508300806+114.1633427i, 0.5743560505+166.4793059i, 0.7242576946+176.7024612i
+min_u Re(xi'/xi)(1+iu), u in (0,200]: zeta 0.0231, moved pair (14.13, 21.02 -> 0.5 +- 0.3 + 17.578i) 0.0223, DH 0.0976
+box (a = 1, 7.0555, 20) sign changes on (0,100] vs phase increase/pi:
+  zeta 79/79.19, 141/141.35, 175/174.50 ; moved pair 79/79.19, 141/141.35, 175/174.50 ; DH 130/129.75, 192/191.92, 225/225.07 ; min dphase/dt > 0 in all
+block A (mod 13): min Re(xi'/xi)(1+iu) = -4.057 at u = 77.20 (negative only on (76.9, 77.5), around its zero 1.183+77.19i);
+  box a=1 phase dips (dphase/dt = -8.05 at t = 38.58); box off-line zero 0.67836243 + 38.547714i (Newton, |B| = 3.5e-52)
