@@ -10,8 +10,8 @@
 * [check] Inputs: asymptotic N(T), Conrey's density (1989), Fujii's moments of S(t+h) - S(t), the BGST pair-correlation mean
   O_f((log T)^{-1/2})N(T); no 2025-2026 unrefereed input; the final inequality at lambda = 0.7892, theta = 4/7 - 1e-5 recomputed by
   quadrature: 1.00010014764 > 1: HOLDS.
-* [check] Large gaps: best unconditional Lambda > 2.64 (Bui-Hall-Subira-Jorge 2511.14415, Thm gapthm, P = 1), 3.18 under RH (1410.3635);
-  no 2025-2026 paper or Zenodo item beats them (our gaplambda agent's target is not pre-empted): HOLDS.
+* [check] Large gaps: best unconditional Lambda > 3.18 (1410.3635v3 l.53, l.70, consecutive critical zeros; R423
+  corrects "under RH"), L^4-Wirtinger Lambda > 2.64 (Bui-Hall-Subira-Jorge 2511.14415, Thm gapthm, P = 1); no 2025-2026 paper or Zenodo item beats them (our gaplambda agent's target is not pre-empted): HOLDS.
 * Harvest: 2611.14486's remark (l.199) 'no serious attempt to obtain the best constant': the Selberg minorant of [-1, 1] was chosen for
   easy verification, a degree-162 Gaussian polynomial already gives below 0.7864; mu <= 1/2 and lambda below 0.7892 stay open:
   candidate (Orca): optimise the minorant and substitute the 2026 inputs (simple zeros on the line).
