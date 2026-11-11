@@ -1,0 +1,27 @@
+N Q M | natural | E_LC | Gaussian sketch mean (sd) | random subset mean | sketch/E_LC
+   3  599  1199 | 0.093837 | 0.371436 | 0.403088 (0.163342) | 0.317432 | 1.085  t=1s
+   5  299  1197 | 0.036102 | 0.164007 | 0.206212 (0.116845) | 0.128179 | 1.257  t=2s
+  10  133  1198 | 0.023772 | 0.085683 | 0.089223 (0.034614) | 0.099065 | 1.041  t=3s
+  20   63  1198 | 0.016504 | 0.057794 | 0.059566 (0.011070) | 0.109250 | 1.031  t=4s
+  40   30  1171 | 0.012715 | 0.038570 | 0.037699 (0.003696) | 0.102758 | 0.977  t=5s
+  80   15  1186 | 0.010983 | 0.025118 | 0.025094 (0.001989) | 0.107815 | 0.999  t=7s
+ 160    7  1114 | 0.009346 | 0.015108 | 0.015112 (0.000789) | 0.104091 | 1.000  t=9s
+footprint/resident MB (99.697192, 157.253632)
+        9.66 real         8.20 user         0.33 sys
+           157270016  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               10980  page reclaims
+                2975  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 435  voluntary context switches
+               18833  involuntary context switches
+           455220730  instructions retired
+           184599885  cycles elapsed
+            22217232  peak memory footprint

@@ -1,0 +1,35 @@
+row 0/252 t=3s
+row 16/252 t=37s
+row 32/252 t=73s
+row 48/252 t=107s
+row 64/252 t=145s
+row 80/252 t=186s
+row 96/252 t=222s
+row 112/252 t=262s
+row 128/252 t=303s
+row 144/252 t=338s
+row 160/252 t=372s
+row 176/252 t=406s
+row 192/252 t=439s
+row 208/252 t=470s
+row 224/252 t=501s
+row 240/252 t=536s
+N=2880 Q=64: natural d2L=0.045558 C2=-0.00504; +head[1/5,1]: d2L=0.037951 C2=-0.06564; gain L^2(d2_nat-d2)=0.06060  t=562s footprint/resident (336.87212, 311.427072)
+      562.78 real       449.88 user        12.07 sys
+           337215488  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              111596  page reclaims
+                1191  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  85  voluntary context switches
+             1424910  involuntary context switches
+           459697661  instructions retired
+           203369165  cycles elapsed
+            24330768  peak memory footprint

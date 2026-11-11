@@ -1,0 +1,45 @@
+DH N=  2 Q=   1 M=   2 d2=0.11611742 d2L=0.080486 L(d2L-Cf)=-0.07956  t=0s
+DH N=  2 Q=   2 M=   3 d2=0.10350279 d2L=0.071743 L(d2L-Cf)=-0.08562  t=0s
+DH N=  2 Q=   4 M=   5 d2=0.10072029 d2L=0.069814 L(d2L-Cf)=-0.08696  t=0s
+DH N=  2 Q=   8 M=   9 d2=0.09941182 d2L=0.068907 L(d2L-Cf)=-0.08759  t=0s
+DH N=  2 Q=  16 M=  17 d2=0.09877307 d2L=0.068464 L(d2L-Cf)=-0.08790  t=0s
+DH N=  2 Q=  32 M=  33 d2=0.09849021 d2L=0.068268 L(d2L-Cf)=-0.08803  t=0s
+DH N=  2 Q=  64 M=  65 d2=0.09837148 d2L=0.068186 L(d2L-Cf)=-0.08809  t=0s
+DH N=  2 Q= 128 M= 129 d2=0.09831483 d2L=0.068147 L(d2L-Cf)=-0.08812  t=3s
+DH N=  5 Q=   1 M=   5 d2=0.06591099 d2L=0.106080 L(d2L-Cf)=-0.14355  t=3s
+DH N=  5 Q=   2 M=   9 d2=0.05718882 d2L=0.092042 L(d2L-Cf)=-0.16614  t=3s
+DH N=  5 Q=   4 M=  17 d2=0.05581785 d2L=0.089835 L(d2L-Cf)=-0.16969  t=3s
+DH N=  5 Q=   8 M=  33 d2=0.05483668 d2L=0.088256 L(d2L-Cf)=-0.17223  t=3s
+DH N=  5 Q=  16 M=  65 d2=0.05433124 d2L=0.087443 L(d2L-Cf)=-0.17354  t=4s
+DH N=  5 Q=  32 M= 129 d2=0.05407794 d2L=0.087035 L(d2L-Cf)=-0.17420  t=5s
+DH N=  5 Q=  64 M= 257 d2=0.05398182 d2L=0.086880 L(d2L-Cf)=-0.17445 | random+rho1 0.076210 (sd 0.006678) E_LC 0.077406  t=13s
+DH N= 10 Q=   1 M=  10 d2=0.05286051 d2L=0.121716 L(d2L-Cf)=-0.16936  t=13s
+DH N= 10 Q=   2 M=  19 d2=0.04991191 d2L=0.114926 L(d2L-Cf)=-0.18500  t=13s
+DH N= 10 Q=   4 M=  37 d2=0.04722988 d2L=0.108751 L(d2L-Cf)=-0.19922  t=13s
+DH N= 10 Q=   8 M=  73 d2=0.04621871 d2L=0.106423 L(d2L-Cf)=-0.20458  t=13s
+DH N= 10 Q=  16 M= 145 d2=0.04570304 d2L=0.105235 L(d2L-Cf)=-0.20731  t=13s
+DH N= 10 Q=  32 M= 289 d2=0.04536814 d2L=0.104464 L(d2L-Cf)=-0.20909 | random+rho1 0.071396 (sd 0.009800) E_LC 0.067214  t=15s
+DH N= 20 Q=   1 M=  20 d2=0.04613117 d2L=0.138197 L(d2L-Cf)=-0.17098  t=15s
+DH N= 20 Q=   2 M=  39 d2=0.04308950 d2L=0.129085 L(d2L-Cf)=-0.19827  t=15s
+DH N= 20 Q=   4 M=  77 d2=0.04154189 d2L=0.124448 L(d2L-Cf)=-0.21216  t=15s
+DH N= 20 Q=   8 M= 153 d2=0.04063260 d2L=0.121724 L(d2L-Cf)=-0.22032  t=15s
+DH N= 20 Q=  16 M= 305 d2=0.04021158 d2L=0.120463 L(d2L-Cf)=-0.22410 | random+rho1 0.070129 (sd 0.011167) E_LC 0.057620  t=15s
+footprint/resident MB (50.266592, 68.07552)
+       16.08 real        12.87 user         0.41 sys
+            68075520  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8733  page reclaims
+                 744  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 700  voluntary context switches
+               32261  involuntary context switches
+           461845693  instructions retired
+           179975367  cycles elapsed
+            24379920  peak memory footprint

@@ -1,0 +1,38 @@
+N Q M | natural | E_LC(N) | random mean (sd, min) | pool(Q) | ratios natural/E_LC, random/E_LC
+   2 1440  1441 | 0.289965 | 0.599436 (eps=1.09e+02) | 0.573866 (0.077275, 0.373274) | 0.230150 | 0.484 0.957  t=1s
+      x logN: natural 0.20099  E_LC 0.41550  random 0.39777  pool 0.15953   (C = 0.04619)
+   3  799  1599 | 0.093837 | 0.405279 (eps=5.57e+01) | 0.394801 (0.076713, 0.192833) | 0.058554 | 0.232 0.974  t=3s
+      x logN: natural 0.10309  E_LC 0.44524  random 0.43373  pool 0.06433   (C = 0.04619)
+   5  399  1597 | 0.036102 | 0.244274 (eps=2.08e+01) | 0.274322 (0.055588, 0.116641) | 0.017549 | 0.148 1.123  t=4s
+      x logN: natural 0.05810  E_LC 0.39314  random 0.44150  pool 0.02824   (C = 0.04619)
+  10  177  1594 | 0.023772 | 0.163322 (eps=5.16e+00) | 0.239086 (0.047431, 0.082284) | 0.011897 | 0.146 1.464  t=6s
+      x logN: natural 0.05474  E_LC 0.37606  random 0.55052  pool 0.02739   (C = 0.04619)
+  20   84  1597 | 0.016504 | 0.117350 (eps=1.18e+00) | 0.240888 (0.047465, 0.071173) | 0.009867 | 0.141 2.053  t=8s
+      x logN: natural 0.04944  E_LC 0.35155  random 0.72164  pool 0.02956   (C = 0.04619)
+  40   41  1600 | 0.012715 | 0.075214 (eps=2.43e-01) | 0.241523 (0.046617, 0.079394) | 0.008388 | 0.169 3.211  t=9s
+      x logN: natural 0.04690  E_LC 0.27746  random 0.89095  pool 0.03094   (C = 0.04619)
+  80   20  1581 | 0.010983 | 0.040788 (eps=4.12e-02) | 0.242057 (0.049627, 0.078889) | 0.007705 | 0.269 5.934  t=11s
+      x logN: natural 0.04813  E_LC 0.17874  random 1.06070  pool 0.03376   (C = 0.04619)
+ 160   10  1591 | 0.009346 | 0.019528 (eps=5.38e-03) | 0.237737 (0.058088, 0.040676) | 0.007098 | 0.479 12.174  t=13s
+      x logN: natural 0.04743  E_LC 0.09911  random 1.20656  pool 0.03603   (C = 0.04619)
+ 320    5  1596 | 0.007954 | 0.010356 (eps=5.35e-04) | 0.216090 (0.074847, 0.019430) | 0.006560 | 0.768 20.867  t=15s
+      x logN: natural 0.04588  E_LC 0.05973  random 1.24648  pool 0.03784   (C = 0.04619)
+footprint/resident MB (209.240664, 291.733504)
+       15.39 real        13.32 user         0.47 sys
+           291733504  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               17845  page reclaims
+                4660  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 630  voluntary context switches
+               25041  involuntary context switches
+           461546185  instructions retired
+           202750987  cycles elapsed
+            27116048  peak memory footprint

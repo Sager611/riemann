@@ -1,0 +1,44 @@
+N=10 Q=64: natural d2L=0.054737 C2=+0.01968 (n=10)
+   head theta in [1/2,1]: d2L=0.047617 C2=+0.00328 gain L^2(d2_nat-d2)=0.01639 (n=73)  t=0s
+   head theta in [1/3,1]: d2L=0.034731 C2=-0.02639 gain L^2(d2_nat-d2)=0.04606 (n=136)  t=0s
+   head theta in [1/5,1]: d2L=0.030248 C2=-0.03671 gain L^2(d2_nat-d2)=0.05639 (n=262)  t=1s
+   head theta in [1/10,1]: d2L=0.027617 C2=-0.04277 gain L^2(d2_nat-d2)=0.06245 (n=577)  t=4s
+N=40 Q=32: natural d2L=0.046905 C2=+0.00263 (n=40)
+   head theta in [1/2,1]: d2L=0.043301 C2=-0.01066 gain L^2(d2_nat-d2)=0.01330 (n=71)  t=4s
+   head theta in [1/3,1]: d2L=0.035358 C2=-0.03996 gain L^2(d2_nat-d2)=0.04260 (n=102)  t=4s
+   head theta in [1/5,1]: d2L=0.032623 C2=-0.05005 gain L^2(d2_nat-d2)=0.05268 (n=164)  t=4s
+   head theta in [1/10,1]: d2L=0.031822 C2=-0.05301 gain L^2(d2_nat-d2)=0.05564 (n=319)  t=4s
+   head theta in [1/40,1]: d2L=0.031057 C2=-0.05583 gain L^2(d2_nat-d2)=0.05846 (n=1249)  t=19s
+N=160 Q=16: natural d2L=0.047430 C2=+0.00629 (n=160)
+   head theta in [1/2,1]: d2L=0.044864 C2=-0.00674 gain L^2(d2_nat-d2)=0.01303 (n=175)  t=19s
+   head theta in [1/3,1]: d2L=0.038620 C2=-0.03842 gain L^2(d2_nat-d2)=0.04471 (n=190)  t=19s
+   head theta in [1/5,1]: d2L=0.036703 C2=-0.04815 gain L^2(d2_nat-d2)=0.05444 (n=220)  t=19s
+   head theta in [1/10,1]: d2L=0.036139 C2=-0.05102 gain L^2(d2_nat-d2)=0.05731 (n=295)  t=19s
+   head theta in [1/20,1]: d2L=0.035950 C2=-0.05198 gain L^2(d2_nat-d2)=0.05827 (n=445)  t=20s
+N=640 Q=8: natural d2L=0.045341 C2=-0.00550 (n=640)
+   head theta in [1/2,1]: d2L=0.043749 C2=-0.01578 gain L^2(d2_nat-d2)=0.01029 (n=647)  t=21s
+   head theta in [1/3,1]: d2L=0.039595 C2=-0.04262 gain L^2(d2_nat-d2)=0.03712 (n=654)  t=21s
+   head theta in [1/5,1]: d2L=0.038075 C2=-0.05244 gain L^2(d2_nat-d2)=0.04694 (n=668)  t=22s
+   head theta in [1/10,1]: d2L=0.037646 C2=-0.05521 gain L^2(d2_nat-d2)=0.04972 (n=703)  t=23s
+N=640 Q=32: natural d2L=0.045341 C2=-0.00550 (n=640)
+   head theta in [1/2,1]: d2L=0.043312 C2=-0.01861 gain L^2(d2_nat-d2)=0.01311 (n=671)  t=25s
+   head theta in [1/3,1]: d2L=0.038308 C2=-0.05094 gain L^2(d2_nat-d2)=0.04544 (n=702)  t=28s
+footprint/resident MB (242.860632, 155.779072) cache 524378
+       29.78 real        23.80 user         1.00 sys
+           212107264  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               39113  page reclaims
+                 792  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  22  messages received
+                   1  signals received
+                 511  voluntary context switches
+               75851  involuntary context switches
+           481471158  instructions retired
+           247713739  cycles elapsed
+            30343696  peak memory footprint

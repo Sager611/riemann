@@ -1,0 +1,32 @@
+l(1) = -1.7545539385 (nb2nd: Sigma_1 = l1^2/G11 = 2.441940, quoted 2.4419)
+K=  40 Q=  8: Sigma_nat=3.518869  +[1/2,1]: 3.533879 (gain 0.01501)  +[1/5,1]: 3.582184 (gain 0.06332)  t=0s
+K=  40 Q= 16: Sigma_nat=3.518869  +[1/2,1]: 3.536733 (gain 0.01786)  +[1/5,1]: 3.590128 (gain 0.07126)  t=0s
+K=  40 Q= 32: Sigma_nat=3.518869  +[1/2,1]: 3.538094 (gain 0.01922)  +[1/5,1]: 3.594076 (gain 0.07521)  t=0s
+K=  40 Q= 64: Sigma_nat=3.518869  +[1/2,1]: 3.538797 (gain 0.01993)  +[1/5,1]: 3.595808 (gain 0.07694)  t=2s
+K=  80 Q=  8: Sigma_nat=3.520144  +[1/2,1]: 3.534714 (gain 0.01457)  +[1/5,1]: 3.582673 (gain 0.06253)  t=2s
+K=  80 Q= 16: Sigma_nat=3.520144  +[1/2,1]: 3.537489 (gain 0.01734)  +[1/5,1]: 3.590723 (gain 0.07058)  t=2s
+K=  80 Q= 32: Sigma_nat=3.520144  +[1/2,1]: 3.538797 (gain 0.01865)  +[1/5,1]: 3.594777 (gain 0.07463)  t=2s
+K=  80 Q= 64: Sigma_nat=3.520144  +[1/2,1]: 3.539459 (gain 0.01931)  +[1/5,1]: 3.596566 (gain 0.07642)  t=3s
+K= 160 Q=  8: Sigma_nat=3.521488  +[1/2,1]: 3.535571 (gain 0.01408)  +[1/5,1]: 3.583027 (gain 0.06154)  t=3s
+K= 160 Q= 16: Sigma_nat=3.521488  +[1/2,1]: 3.538230 (gain 0.01674)  +[1/5,1]: 3.591265 (gain 0.06978)  t=4s
+K= 160 Q= 32: Sigma_nat=3.521488  +[1/2,1]: 3.539493 (gain 0.01800)  +[1/5,1]: 3.595485 (gain 0.07400)  t=5s
+K= 160 Q= 64: Sigma_nat=3.521488  +[1/2,1]: 3.540129 (gain 0.01864)  +[1/5,1]: 3.597368 (gain 0.07588)  t=8s
+J = 3.5626634565; footprint/resident MB (50.676192, 66.404352)
+        9.75 real         6.57 user         0.40 sys
+            66404352  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8521  page reclaims
+                 531  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  34  messages sent
+                  35  messages received
+                   1  signals received
+                 816  voluntary context switches
+               17937  involuntary context switches
+           493997878  instructions retired
+           241703651  cycles elapsed
+            29016592  peak memory footprint

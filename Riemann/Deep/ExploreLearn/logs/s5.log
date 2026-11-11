@@ -1,0 +1,52 @@
+M=1440: lambda_max 5.6242, lambda_min 7.183e-07, cond 7.830e+06; 1 - sum theta^2 = 0.00625806 (d_M^2)
+  j=    1 lambda_j=5.6242e+00  j^2 lambda_j=5.6242  theta_j^2=4.896e-01  E_spec(j)=0.510433
+  j=    2 lambda_j=2.1093e+00  j^2 lambda_j=8.4371  theta_j^2=7.500e-02  E_spec(j)=0.435436
+  j=    3 lambda_j=7.1323e-01  j^2 lambda_j=6.4191  theta_j^2=6.321e-02  E_spec(j)=0.372230
+  j=    5 lambda_j=1.3561e-01  j^2 lambda_j=3.3903  theta_j^2=1.177e-01  E_spec(j)=0.088348
+  j=   10 lambda_j=3.6114e-02  j^2 lambda_j=3.6114  theta_j^2=2.834e-03  E_spec(j)=0.043769
+  j=   20 lambda_j=2.3305e-02  j^2 lambda_j=9.3220  theta_j^2=3.867e-04  E_spec(j)=0.039743
+  j=   50 lambda_j=4.0370e-03  j^2 lambda_j=10.0926  theta_j^2=2.659e-04  E_spec(j)=0.019801
+  j=  100 lambda_j=8.1788e-04  j^2 lambda_j=8.1788  theta_j^2=1.405e-04  E_spec(j)=0.013286
+  j=  200 lambda_j=1.8050e-04  j^2 lambda_j=7.2201  theta_j^2=1.607e-06  E_spec(j)=0.008050
+  j=  500 lambda_j=1.9753e-05  j^2 lambda_j=4.9383  theta_j^2=3.120e-07  E_spec(j)=0.006573
+  j= 1000 lambda_j=2.8743e-06  j^2 lambda_j=2.8743  theta_j^2=1.860e-07  E_spec(j)=0.006302
+  j= 1440 lambda_j=7.1834e-07  j^2 lambda_j=1.4895  theta_j^2=1.825e-08  E_spec(j)=0.006258
+compare first-N dilations d_N^2 with top-N eigenmodes E_spec(N):
+  N=    2  d_N^2=0.289965  E_spec(N)=0.435436  ratio 1.50
+  N=    5  d_N^2=0.036102  E_spec(N)=0.088348  ratio 2.45
+  N=   10  d_N^2=0.023772  E_spec(N)=0.043769  ratio 1.84
+  N=   20  d_N^2=0.016504  E_spec(N)=0.039743  ratio 2.41
+  N=   50  d_N^2=0.011869  E_spec(N)=0.019801  ratio 1.67
+  N=  100  d_N^2=0.010189  E_spec(N)=0.013286  ratio 1.30
+  N=  200  d_N^2=0.008921  E_spec(N)=0.008050  ratio 0.90
+  N=  500  d_N^2=0.007420  E_spec(N)=0.006573  ratio 0.89
+  N= 1000  d_N^2=0.006556  E_spec(N)=0.006302  ratio 0.96
+  N= 1440  d_N^2=0.006258  E_spec(N)=0.006258  ratio 1.00
+theta^2 mass by eigenvalue decade:
+  (1e+00,1e+01]:     2 modes, theta^2 mass 0.564564
+  (1e-01,1e+00]:     3 modes, theta^2 mass 0.347088
+  (1e-02,1e-01]:    29 modes, theta^2 mass 0.062221
+  (1e-03,1e-02]:    57 modes, theta^2 mass 0.012107
+  (1e-04,1e-03]:   167 modes, theta^2 mass 0.006564
+  (1e-05,1e-04]:   392 modes, theta^2 mass 0.001030
+  (1e-06,1e-05]:   716 modes, theta^2 mass 0.000163
+  (1e-07,1e-06]:    74 modes, theta^2 mass 0.000004
+footprint/resident MB (109.887992, 125.698048)
+        2.73 real         1.61 user         0.28 sys
+           125730816  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12149  page reclaims
+                2617  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  22  messages received
+                   1  signals received
+                 719  voluntary context switches
+                8573  involuntary context switches
+           482357866  instructions retired
+           222275975  cycles elapsed
+            29671952  peak memory footprint

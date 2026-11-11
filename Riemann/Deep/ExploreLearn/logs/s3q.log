@@ -1,0 +1,43 @@
+N=40 Q=8: natural d2L=0.046905 C2=+0.00263 (n=40)
+   head theta in [1/5,1]: d2L=0.034993 C2=-0.04131 gain L^2(d2_nat-d2)=0.04394 (n=68)  t=0s
+N=40 Q=16: natural d2L=0.046905 C2=+0.00263 (n=40)
+   head theta in [1/5,1]: d2L=0.033405 C2=-0.04717 gain L^2(d2_nat-d2)=0.04980 (n=100)  t=0s
+N=40 Q=32: natural d2L=0.046905 C2=+0.00263 (n=40)
+   head theta in [1/5,1]: d2L=0.032623 C2=-0.05005 gain L^2(d2_nat-d2)=0.05268 (n=164)  t=0s
+N=40 Q=64: natural d2L=0.046905 C2=+0.00263 (n=40)
+   head theta in [1/5,1]: d2L=0.032255 C2=-0.05141 gain L^2(d2_nat-d2)=0.05404 (n=292)  t=1s
+N=160 Q=8: natural d2L=0.047430 C2=+0.00629 (n=160)
+   head theta in [1/5,1]: d2L=0.037966 C2=-0.04175 gain L^2(d2_nat-d2)=0.04803 (n=188)  t=1s
+N=160 Q=16: natural d2L=0.047430 C2=+0.00629 (n=160)
+   head theta in [1/5,1]: d2L=0.036703 C2=-0.04815 gain L^2(d2_nat-d2)=0.05444 (n=220)  t=2s
+N=160 Q=32: natural d2L=0.047430 C2=+0.00629 (n=160)
+   head theta in [1/5,1]: d2L=0.036073 C2=-0.05135 gain L^2(d2_nat-d2)=0.05764 (n=284)  t=2s
+N=160 Q=64: natural d2L=0.047430 C2=+0.00629 (n=160)
+   head theta in [1/5,1]: d2L=0.035779 C2=-0.05285 gain L^2(d2_nat-d2)=0.05913 (n=412)  t=4s
+N=640 Q=8: natural d2L=0.045341 C2=-0.00550 (n=640)
+   head theta in [1/5,1]: d2L=0.038075 C2=-0.05244 gain L^2(d2_nat-d2)=0.04694 (n=668)  t=9s
+N=640 Q=16: natural d2L=0.045341 C2=-0.00550 (n=640)
+   head theta in [1/5,1]: d2L=0.037059 C2=-0.05901 gain L^2(d2_nat-d2)=0.05351 (n=700)  t=12s
+N=640 Q=32: natural d2L=0.045341 C2=-0.00550 (n=640)
+   head theta in [1/5,1]: d2L=0.036538 C2=-0.06238 gain L^2(d2_nat-d2)=0.05688 (n=764)  t=20s
+N=640 Q=64: natural d2L=0.045341 C2=-0.00550 (n=640)
+   head theta in [1/5,1]: d2L=0.036299 C2=-0.06392 gain L^2(d2_nat-d2)=0.05842 (n=892)  t=47s
+footprint/resident MB (136.806976, 59.932672) cache 129949
+       47.86 real        40.34 user         1.18 sys
+           119734272  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               25420  page reclaims
+                 798  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 451  voluntary context switches
+              101985  involuntary context switches
+           466581393  instructions retired
+           186818311  cycles elapsed
+            27329016  peak memory footprint

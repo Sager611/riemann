@@ -1,0 +1,38 @@
+N Q M | natural | E_LC(N-1 | rho_1) | random+rho_1 mean (sd) | pool | natural/E_LC random/E_LC | dof-eps
+   2 1440  1441 | 0.289965 | 0.635429 | 0.574061 (0.143532) | 0.230150 | 0.456 0.903 | eps=2.09e+02  t=1s
+      x logN: natural 0.20099  E_LC 0.44045  random 0.39791  pool 0.15953   (C = 0.04619); rho_1 alone 0.85821
+   3  799  1599 | 0.093837 | 0.371459 | 0.307245 (0.117178) | 0.058554 | 0.253 0.827 | eps=8.45e+01  t=3s
+      x logN: natural 0.10309  E_LC 0.40809  random 0.33754  pool 0.06433   (C = 0.04619); rho_1 alone 0.85821
+   5  399  1597 | 0.036102 | 0.164018 | 0.138814 (0.039216) | 0.017549 | 0.220 0.846 | eps=2.62e+01  t=4s
+      x logN: natural 0.05810  E_LC 0.26398  random 0.22341  pool 0.02824   (C = 0.04619); rho_1 alone 0.85821
+  10  177  1594 | 0.023772 | 0.085699 | 0.115067 (0.032659) | 0.011897 | 0.277 1.343 | eps=5.75e+00  t=6s
+      x logN: natural 0.05474  E_LC 0.19733  random 0.26495  pool 0.02739   (C = 0.04619); rho_1 alone 0.85821
+  20   84  1597 | 0.016504 | 0.057850 | 0.107698 (0.038872) | 0.009867 | 0.285 1.862 | eps=1.25e+00  t=7s
+      x logN: natural 0.04944  E_LC 0.17330  random 0.32263  pool 0.02956   (C = 0.04619); rho_1 alone 0.85821
+  40   41  1600 | 0.012715 | 0.039145 | 0.109145 (0.041099) | 0.008388 | 0.325 2.788 | eps=2.48e-01  t=9s
+      x logN: natural 0.04690  E_LC 0.14440  random 0.40262  pool 0.03094   (C = 0.04619); rho_1 alone 0.85821
+  80   20  1581 | 0.010983 | 0.025733 | 0.109480 (0.039754) | 0.007705 | 0.427 4.254 | eps=4.14e-02  t=10s
+      x logN: natural 0.04813  E_LC 0.11276  random 0.47975  pool 0.03376   (C = 0.04619); rho_1 alone 0.85821
+ 160   10  1591 | 0.009346 | 0.015993 | 0.102621 (0.042481) | 0.007098 | 0.584 6.417 | eps=5.38e-03  t=12s
+      x logN: natural 0.04743  E_LC 0.08117  random 0.52082  pool 0.03603   (C = 0.04619); rho_1 alone 0.85821
+ 320    5  1596 | 0.007954 | 0.009898 | 0.093926 (0.045727) | 0.006560 | 0.804 9.489 | eps=5.35e-04  t=13s
+      x logN: natural 0.04588  E_LC 0.05710  random 0.54180  pool 0.03784   (C = 0.04619); rho_1 alone 0.85821
+footprint/resident MB (246.203016, 328.679424)
+       14.08 real        12.46 user         0.34 sys
+           328695808  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               24698  page reclaims
+                   6  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   4  voluntary context switches
+               22704  involuntary context switches
+           463169923  instructions retired
+           191481068  cycles elapsed
+            27263480  peak memory footprint

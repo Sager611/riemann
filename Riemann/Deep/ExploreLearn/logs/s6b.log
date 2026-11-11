@@ -1,0 +1,25 @@
+N=640 Q=16 rep 0: d2=0.159737  t=31s
+N=640 Q=16 rep 1: d2=0.032970  t=59s
+N=640 Q=16 rep 2: d2=0.131029  t=87s
+N=640 Q=16 rep 3: d2=0.127111  t=117s
+N=640 Q=16 rep 4: d2=0.085458  t=143s
+N=640 Q=16 rep 5: d2=0.117436  t=174s
+N=640 Q=16: random+rho1 mean 0.108957 sd 0.040401 min 0.032970 max 0.159737; footprint/resident MB (115.98284, 79.839232)
+      175.01 real       139.64 user         4.10 sys
+           111263744  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               63138  page reclaims
+                1377  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 559  voluntary context switches
+              423325  involuntary context switches
+           464358778  instructions retired
+           203132689  cycles elapsed
+            22643216  peak memory footprint
