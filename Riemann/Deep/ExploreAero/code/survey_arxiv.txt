@@ -1,0 +1,63 @@
+### abs:"finite Hilbert transform"
+NEW  2610.35217 2026-10-26 At last, an explicit singular value decomposition for electrical impedance tomography
+NEW  2607.17155 2026-07-19 Moving Collinear Cracks in a Prestressed Dry Sandy Medium Fracture Response under Travelin
+NEW  2605.11740 2026-05-12 A self-adjoint Fourier-type model for the iQuad wavefront sensor
+NEW  2602.04844 2026-02-04 The finite Hilbert transform acting on $L^\infty$
+NEW  2406.16233 2024-06-23 Measure theoretic aspects of the finite Hilbert transform
+NEW  2310.10228 2023-10-16 The finite Hilbert transform on $(-1,1)$
+NEW  2310.08926 2023-10-13 Singular integrals in uniformly convex spaces
+NEW  2303.17848 2023-03-31 Extension and Integral Representation of the finite Hilbert Transform In Rearrangement Inv
+NEW  2302.13159 2023-02-25 Stability Analysis of a Simple Discretization Method for a Class of Strongly Singular Inte
+NEW  2212.08835 2022-12-17 The finite Hilbert transform acting in the Zygmund space LlogL
+NEW  2210.10002 2022-10-18 Singular limits of certain Hilbert-Schmidt integral operators
+NEW  2109.10634 2021-09-22 Filtered integration rules for finite Hilbert transforms
+### abs:"airfoil equation"
+NEW  2303.17848 2023-03-31 Extension and Integral Representation of the finite Hilbert Transform In Rearrangement Inv
+NEW  2212.08835 2022-12-17 The finite Hilbert transform acting in the Zygmund space LlogL
+NEW  1901.06334 2019-01-18 Inversion and extension of the finite Hilbert transform on (-1,1)
+### abs:"Hilbert transform" AND abs:"Riemann hypothesis"
+### abs:"lifting line"
+NEW  2608.28280 2026-08-28 Unsteady airfoil aerodynamics in attached flow: From unsteady thin airfoil theory to wind 
+NEW  2605.14127 2026-05-13 Localized inhomogeneity and position-dependent stability of migratory bird formations
+NEW  2603.29051 2026-03-30 Data-informed lifting line theory
+NEW  2603.19120 2026-03-19 A Spherical Multipole Expansion of Acoustic Analogy for Propeller Noise
+NEW  2210.01849 2022-10-04 Link Partitioning on Simplicial Complexes Using Higher-Order Laplacians
+NEW  2209.00096 2022-08-31 Simulating Airplane Aerodynamics with Body Forces: Actuator Line Method for Non-planar Win
+NEW  2207.12353 2022-07-25 Unsteady aerodynamic modeling of Aerobat using lifting line theory and Wagner's function
+NEW  2206.05448 2022-06-11 Non-iterative vortex-based smearing correction for the actuator line method
+NEW  2105.05679 2021-05-12 Applying frequency-domain unsteady lifting-line theory to time-domain problems
+NEW  2104.09991 2021-04-20 Unsteady lifting-line theory and the influence of wake vorticity on aerodynamic loads
+NEW  2104.06091 2021-04-13 Applying inviscid linear unsteady lifting-line theory to viscous large-amplitude problems
+NEW  2001.06734 2020-01-18 On Elliptical Wings in Subsonic Flow: Indicial Lift Generation via CFD Simulations -- with
+### abs:Theodorsen
+NEW  2609.14546 2026-09-13 Conformal Parametrisation of Star-Shaped Domains and Persistence of Semilinear Elliptic So
+NEW  2609.05839 2026-09-05 Unsteady Thin-Airfoil Theory Revisited: An Approximate Analytical Solution and the Self-Si
+NEW  2605.21596 2026-05-20 Study of flutter instability using the actuator line method for wind energy harvesting dev
+NEW  2603.21650 2026-03-23 A coupled Aeroelastic-Flight Dynamic Framework for Free-Flying Flexible Aircraft with Gust
+NEW  2509.00666 2025-08-31 Unsteady aerodynamic theory and experiments of hovering membrane wings
+NEW  2501.17395 2025-01-29 On the applicability of the actuator line method for unsteady aerodynamics
+NEW  2205.08647 2022-05-17 On Satisfying the Kutta Condition in Unsteady Thin Aerofoil Theory
+NEW  2204.01204 2022-04-04 Unsteady aerodynamic theory for membrane wings
+NEW  2106.09167 2021-06-16 Generalization of waving-plate theory to multiple interacting swimmers
+NEW  2104.15122 2021-04-30 Improved approximations to the Wagner function using sparse identification of nonlinear dy
+NEW  1911.07382 2019-11-18 Unsteady aerodynamics of porous aerofoils
+NEW  1905.06375 2019-05-15 Sinusoidal-gust generation with a pitching and plunging airfoil
+### abs:"truncated Hilbert transform"
+NEW  2607.22277 2026-07-24 Characterization of the boundedness of the segment multiplier on rearrangement-invariant s
+NEW  2007.14360 2020-07-28 On Inverses of Discrete Rough Hilbert Transforms
+NEW  2002.02073 2020-02-06 Truncated Hilbert Transform: Uniqueness and a Chebyshev series Expansion Approach
+NEW  1910.14188 2019-10-31 Sparse bounds on variational norms along monomial curves
+NEW  1711.04799 2017-11-13 Exponential instability in the fractional Calderón problem
+NEW  1704.02918 2017-04-10 A sharp estimate for the Hilbert transform along finite order lacunary sets of directions
+NEW  1605.03866 2016-05-12 Stability Estimates for Truncated Fourier and Laplace Transforms
+NEW  1312.4727 2013-12-17 Asymptotic analysis of the SVD for the truncated Hilbert transform with overlap
+### abs:"logarithmic Laplacian" AND abs:zeta
+NEW  2606.04225 2026-06-02 On the fundamental solutions of two nonlocal parabolic equations related to logarithmic La
+### abs:"Berry-Keating" AND abs:dilation
+NEW  2606.24405 2026-06-23 On the Berry-Keating Operator
+SEEN 2211.01899 2022-11-03 Formally Self-Adjoint Hamiltonian for the Hilbert-Pólya Conjecture
+NEW  0702034 2007-02-10 H = x p with interaction and the Riemann zeros
+### abs:"induced drag" AND abs:minimum
+NEW  2610.01321 2026-10-01 Control Allocation with Adaptive Augmentation for Aerodynamic Optimization of Trailing Edg
+### abs:"Hilbert transform" AND abs:"zeta function" AND abs:zeros
+NEW  2608.09737 2026-08-10 The determinant of the Dirichlet-to-Neumann map for a surface with boundary and periods of

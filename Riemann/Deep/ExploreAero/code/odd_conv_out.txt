@@ -1,0 +1,4 @@
+WeilSimple eigs_quick.py (CCM Fourier basis, odd block = sin(2 pi j x/L), vanishes at the window edges), c = 2, 200 bits:
+N=40 odd 0.0774369 | N=80 odd 0.0753483 | N=160 odd 0.0742544 | N=320 odd 0.0736897   (even 0.00133273, 0.00133032, 0.00132964, 0.00132942)
+odd_conv.py (odd Legendre, free edges), c = 2:
+K=10 0.07313432 | K=20 0.07310916 | K=40 0.07310471 | K=80 0.0731039

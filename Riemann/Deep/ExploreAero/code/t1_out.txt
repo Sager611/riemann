@@ -1,0 +1,20 @@
+(a) generalized eigenfunctions
+  tau=   0 x= -0.6: T g / g = 0.000000000000+0.000000000000j  i tanh(pi tau) = 0.000000000000+0.000000000000j
+  tau=   0 x=  0.3: T g / g = -0.000000000000+0.000000000000j  i tanh(pi tau) = 0.000000000000+0.000000000000j
+  tau=0.35 x= -0.6: T g / g = -0.000000000000+0.800339993258j  i tanh(pi tau) = 0.000000000000+0.800339993258j
+  tau=0.35 x=  0.3: T g / g = 0.000000000000+0.800339993258j  i tanh(pi tau) = 0.000000000000+0.800339993258j
+  tau= 0.7 x= -0.6: T g / g = 0.000000000000+0.975700672615j  i tanh(pi tau) = 0.000000000000+0.975700672615j
+  tau= 0.7 x=  0.3: T g / g = -0.000000000000+0.975700672615j  i tanh(pi tau) = 0.000000000000+0.975700672615j
+  tau= 1.5 x= -0.6: T g / g = 0.000000000000+0.999838613989j  i tanh(pi tau) = 0.000000000000+0.999838613989j
+  tau= 1.5 x=  0.3: T g / g = -0.000000000000+0.999838613989j  i tanh(pi tau) = 0.000000000000+0.999838613989j
+(b) spectrum of K x K Legendre-Galerkin truncation, tau_k = artanh(mu_k)/pi (mu_k>0)
+  K=  41: max mu=1.000000, #tau<1:   4, slope dN/dtau=  4.352, (4/pi)log K=  4.728, first spacings [0.2037 0.2289 0.2551 0.2792 0.3015]
+  K=  81: max mu=1.000000, #tau<1:   5, slope dN/dtau=  4.938, (4/pi)log K=  5.595, first spacings [0.177  0.1934 0.2108 0.2267 0.2409]
+  K= 161: max mu=1.000000, #tau<1:   5, slope dN/dtau=  5.731, (4/pi)log K=  6.470, first spacings [0.1569 0.1681 0.1803 0.1916 0.2015]
+  K= 321: max mu=1.000000, #tau<1:   6, slope dN/dtau=  6.333, (4/pi)log K=  7.348, first spacings [0.1411 0.1491 0.1579 0.1663 0.1737]
+  K= 641: max mu=1.000000, #tau<1:   7, slope dN/dtau=  6.950, (4/pi)log K=  8.229, first spacings [0.1284 0.1342 0.1408 0.1472 0.153 ]
+  K=641 counts N(tau) at tau=0.25,0.5,1,2,4: [np.int64(1), np.int64(3), np.int64(7), np.int64(12), np.int64(23)]  (linear => ratios 1:2:4:8:16 until saturation at tau~(1/pi)artanh(1-eps))
+(c) discrete Kutta mode (zero eigenvector, K odd) vs projection of 1/sqrt(1-x^2)
+  K=  41: |mu_0|=1.73e-18, overlap |<v,c>|=0.915206768915, ||proj||=3.3732 (grows like sqrt(log K): 1.9271)
+  K= 161: |mu_0|=4.17e-33, overlap |<v,c>|=0.896633972996, ||proj||=3.7545 (grows like sqrt(log K): 2.2542)
+  K= 641: |mu_0|=4.68e-34, overlap |<v,c>|=0.883618767177, ||proj||=4.1054 (grows like sqrt(log K): 2.5422)
