@@ -14,6 +14,8 @@
 
 **Caveat.** liminf only; the o(1) terms are not explicit. Same footing as Lamzouri's paper: his 2609.02882 Lemma 3.2 (2026 preprint) on top of Baluyot–Goldston–Suriajaya–Turnage-Butterbaugh (Acta Arith. 2024). Conrey's Theorem 2 is used as quoted by Bui–Conrey–Young (arXiv 1002.4127) and agrees with our own derivation of the shifted main term (DERIVATION §3.1). The method cannot pass 2 − C_MT = 0.672501. Unrefereed.
 
+**Later.** Kim (Zenodo 24126375, 11 Nov 2026): at least 67.2468% c-isolated for c ≤ 10⁻⁵ (below ours); Duclos (Zenodo 24101910): 0.672569945 for simple critical zeros by "ordered pairing", past the Hilbert-space ceiling 0.672501 but not for c-isolated zeros. Neither pre-empts this page (harvest6).
+
 **RH relevance:** N8 (critical-line proportion): almost all of the Hilbert-space proportion of simple zeros on the line (0.672501) is now also separated from both neighbours; the main N8 record (67.353% simple and on the line, 2610.08965) is unchanged and uses another method.
 
 **Files.** [Riemann/Deep/IsoZero/](../Riemann/Deep/IsoZero/) (REPORT.md, DERIVATION.md, AUDIT.md, cert.py, sanity_mp.py, logs/).
