@@ -1,0 +1,12 @@
+N=64 matrices=24000 lattice points=1466114 isolated bad=120698 (0.0823 per point) confined=116368 zero-free=2151 (1.78e-02) secs=125
+confined s*mu quantiles 1e-4,1e-3,1e-2,0.1,0.5: 0.639 1.102 1.785 3.167 8.044  min 0.285
+  P(confined and s*mu < 2.5) per isolated bad = 4.283e-02  (count 5170)
+  P(confined and s*mu < 2.2) per isolated bad = 2.563e-02  (count 3094)
+  P(confined and s*mu < 2.0) per isolated bad = 1.674e-02  (count 2021)
+  P(confined and s*mu < 1.948) per isolated bad = 1.484e-02  (count 1791)
+  P(confined and s*mu < 1.8) per isolated bad = 1.008e-02  (count 1217)
+  P(confined and s*mu < 1.7) per isolated bad = 7.597e-03  (count 917)
+  P(confined and s*mu < 1.5) per isolated bad = 4.109e-03  (count 496)
+  P(confined and s*mu < 1.2) per isolated bad = 1.408e-03  (count 170)
+  P(confined and s*mu < 1.0) per isolated bad = 5.717e-04  (count 69)
+zero-free s*mu min 0.000 median 0.385

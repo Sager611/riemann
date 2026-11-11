@@ -1,0 +1,7 @@
+sample 200 confined along diagonal 195 ; with some r where the real sign changes vanish (pair non-real): 5
+Counter({('2', '2'): 195, ('1', '2'): 5})
+not confined along diagonal: [25463, 53004, 58077, 145287, 147786]
+mu in [0,6): 4 points, collide along the diagonal: 0, not confined: 0
+mu in [6,10): 46 points, collide along the diagonal: 1, not confined: 1
+mu in [10,20): 70 points, collide along the diagonal: 1, not confined: 0
+mu in [20,1000000000.0): 80 points, collide along the diagonal: 3, not confined: 4
