@@ -1,0 +1,28 @@
+== t2_ep.py + t2_csv.py
+Lehmer pair z = 14010.125732, 14010.201129; gap d0 = 0.075397; mean gap 1.7910; S0 = 0.6073
+EP (full ODE, 81 zeros): t_c = -7.112025e-04 ; -d0^2/8 = -7.105884e-04 ; pair+bath closed form -7.112023e-04
+slope d(delta^2)/dt: at t=0 7.9863 (pred 8-4*S0*d0^2 = 7.9862), near EP 8.00000 (EP normal form: 8)
+min other gap at t_c: 0.6117 (others still real, so this is the first EP in the window)
+pairs 70: real EP 34, complex EP 36; nearest real EPs: 6709:-7.11e-04 6686:-5.07e-02 6694:-6.13e-02 6706:-6.52e-02
+complex EPs (Re t, |Im t|) e.g. 6678:(-0.108,1.403) 6681:(-0.257,1.524) 6682:(-0.422,1.134)
+moved pair eta=0.05: forward EP at t_e = 0.001248 ; de Bruijn eta^2/2 = 0.001250 ; bath formula 0.001248
+moved pair eta=0.20: forward EP at t_e = 0.019542 ; de Bruijn eta^2/2 = 0.020000 ; bath formula 0.019529
+moved pair eta=0.60: forward EP at t_e = 0.150703 ; de Bruijn eta^2/2 = 0.180000 ; bath formula 0.149324
+CSV (z-units): Delta=0.075397 g=1.21971 Delta^2 g=0.006934 lambda_CSV=-7.112064e-04
+== t3_afe.py
+N=33; extremum t_m=7005.0818551  Z(t_m)=0.00396736  Z''(t_m)=-22.3462
+EP distance |Z(t_m)| = 0.0039674 vs |Z''|delta^2/8 = 0.0039697 ; RS remainder R(t_m) = 0.069971
+Z_main extremum t*=7005.08186254 value -0.066004, Z_main''=-22.3466
+complex zero of Z_main: (7005.08414101 + 0.0764841256147j) ; Puiseux prediction t* +- i*0.076859
+isolated zero 6712: gamma=7008.11474206, Z_main zero 7008.1061823, shift -0.0085598, linear prediction -R/Z' = -0.0086796
+== t1_phase.py
+phase velocity of E on [7004.90, 7005.30]: min -7.4138 at t=7004.91; negative on 7004.9..7005.09 (20 of 41 grid points)
+theta'(t) = 3.50826
+phidot(7008.11474206) = 2.7641
+phidot(7005.06286617) = -0.71176
+phidot(7005.10056467) = 0.090503
+== t1_phase2.py
+negative phase-velocity windows in [7003,7009]: [7004.74,7005.08]
+min -7.3684
+zeros 6706..6713: 7002.35284 7002.69151 7004.04372 7005.06287 7005.10056 7006.73966 7008.11474 7008.81747
+phidot at zeros: -1.46 1.38 2.5 -0.712 0.0905 2.1 2.76 8.13
