@@ -1,0 +1,25 @@
+k=16384 t=5.9s
+k=32768 t=12.4s
+k=49152 t=18.7s
+Im f at last interior point 1.385e-10; Re jump 3.318e-12
+unwrapped points 64997; max |d arg zeta| there 4.410e-02; Im f(-r) = 0.000e+00 (must be 0)
+dft done t=26.9s
+wrote logs/lam_r999.txt; worst error bound 5.513e-51; total 28.0s
+       28.55 real        22.35 user         0.60 sys
+           117276672  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11306  page reclaims
+                 517  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  22  messages received
+                   1  signals received
+                  45  voluntary context switches
+               68405  involuntary context switches
+           449355870  instructions retired
+           194588829  cycles elapsed
+            15172112  peak memory footprint

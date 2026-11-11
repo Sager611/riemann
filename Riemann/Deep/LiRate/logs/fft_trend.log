@@ -1,0 +1,22 @@
+Im f at last interior point -8.221e-06; Re jump 2.159e-11
+unwrapped points 0; max |d arg zeta| there 0.000e+00; Im f(-r) = 0.000e+00 (must be 0)
+dft done t=9.0s
+wrote logs/trend_r999.txt; worst error bound 5.513e-51; total 11.0s
+       12.41 real         6.00 user         0.53 sys
+            99926016  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               28971  page reclaims
+                1035  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  49  voluntary context switches
+               24410  involuntary context switches
+           451983674  instructions retired
+           283337561  cycles elapsed
+            14844432  peak memory footprint

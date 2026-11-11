@@ -1,0 +1,18 @@
+lambda_bar_n - t(n) - 3/4 at n=10: -4.083e-03   (-1/(24n) = -4.167e-03)
+lambda_bar_n - t(n) - 3/4 at n=100: -4.167e-04   (-1/(24n) = -4.167e-04)
+lambda_bar_n - t(n) - 3/4 at n=1000: -4.167e-05   (-1/(24n) = -4.167e-05)
+lambda_bar_n - t(n) - 3/4 at n=100000: -4.167e-07   (-1/(24n) = -4.167e-07)
+
+smoothed mean of R(n), weight phi(n/N), phi = bump on (1/2,1):  [Theorem 4: 7/4 + O(log N/N)]
+  N=  1000: mean R = 1.887439  (7/4 = 1.75)   mean lambda_tiny = 1.137496  (pred 1)
+  N=  3000: mean R = 1.770370  (7/4 = 1.75)   mean lambda_tiny = 1.020389  (pred 1)
+  N= 10000: mean R = 1.744327  (7/4 = 1.75)   mean lambda_tiny = 0.994332  (pred 1)
+  N= 30000: mean R = 1.751150  (7/4 = 1.75)   mean lambda_tiny = 1.001152  (pred 1)
+  N=100000: mean R = 1.749898  (7/4 = 1.75)   mean lambda_tiny = 0.999898  (pred 1)
+sharp means: mean R n<=1e5 = 1.6886  mean lambda_tiny = 0.9386
+
+|lambda_tiny(n)| > 2 log n: first n = 1 (lambda_tiny = 0.577216, 2 log n = 0.000000); count n<=1e5: 7585
+max_{30<=n<=1e5} |lambda_tiny(n)|/log n = 4.1814 at n = 79302 (lambda_tiny = 47.170651)
+  a=2: first violation n = 5083, count 7584
+  a=3: first violation n = 46992, count 861
+  a=4: first violation n = 79286, count 63
