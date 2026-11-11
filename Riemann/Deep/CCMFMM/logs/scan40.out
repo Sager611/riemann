@@ -1,0 +1,15 @@
+c=40 K2=2667 kscan=4862315206 kscan_e=1788745800 atoms=19 sig2=[19.30631062 +/- 2.57e-10]
+blocks odd 14121 even 12565; E = 1.585e-08; emax = 0.4908; setup 2s
+chunk o0: k 2669..608283047, 304140190 nodes, flagged 1394, atoms/node 2.84, 11s
+chunk o1: k 608283049..1217182911, 304449932 nodes, flagged 0, atoms/node 1.88, 7s
+chunk o2: k 1217182913..1826381189, 304599139 nodes, flagged 0, atoms/node 1.63, 4s
+chunk o3: k 1826381191..2435599049, 304608930 nodes, flagged 0, atoms/node 1.48, 4s
+chunk o4: k 2435599051..3043722897, 304061924 nodes, flagged 0, atoms/node 1.37, 3s
+chunk o5: k 3043722899..3654612337, 305444720 nodes, flagged 0, atoms/node 1.28, 4s
+chunk o6: k 3654612339..4262744121, 304065892 nodes, flagged 0, atoms/node 1.20, 3s
+chunk o7: k 4262744123..4862315205, 299785542 nodes, flagged 0, atoms/node 1.10, 3s
+chunk e0: k 5336..447404928, 223699797 nodes, flagged 2254, atoms/node 2.36, 5s
+chunk e1: k 447404930..895263866, 223929469 nodes, flagged 0, atoms/node 1.56, 3s
+chunk e2: k 895263868..1343342254, 224039194 nodes, flagged 0, atoms/node 1.33, 2s
+chunk e3: k 1343342256..1788745800, 222701773 nodes, flagged 0, atoms/node 1.15, 2s
+{"c": "40", "K2": 2667, "kscan": 4862315206, "kscan_e": 1788745800, "flagged": [1394, 2254], "selected": [1393, 2254], "nodes": 3325526502, "atoms_per_node": 1.597, "E": 1.5853055616729818e-08, "scan_secs": 49, "total_secs": 51, "first_odd": [2673, 2713, 2741, 2767, 2787], "last_odd": [21025673, 28614143, 29432987, 35590405, 72549441], "last_even": [122207190, 128595542, 143931210, 162350829, 222192350]}

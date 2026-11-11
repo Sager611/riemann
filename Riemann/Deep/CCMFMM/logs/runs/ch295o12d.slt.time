@@ -1,0 +1,21 @@
+  1000 targets, 9s
+read 0.3s, Cauchy sums 1487 x 31219 in 13.8s
+total 31.6s
+       31.60 real        27.08 user         0.48 sys
+            10420224  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                1026  page reclaims
+                 109  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   3  voluntary context switches
+               55358  involuntary context switches
+        140978402292  instructions retired
+         51961911168  cycles elapsed
+             8536400  peak memory footprint
