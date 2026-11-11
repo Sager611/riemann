@@ -1,0 +1,6 @@
+optimal SDP 61 11/10 0.7851 -> 1.0000320380973995 optimal_inaccurate {'minf': np.float64(4.983717003302667e-157), 'maxfh': np.float64(4.850945198699511e-10), 'fh0': np.float64(1.0000000000000615), 'J': np.float64(1.0000320380973997)}
+interior SDP 41 margin 1e-06 -> 0.9995252301088159 optimal_inaccurate {'minf': np.float64(3.222918228094466e-184), 'maxfh': np.float64(0.0), 'fh0': np.float64(0.9999999999999986), 'J': np.float64(0.999525230108816)}
+combined (eta=0.02) {'minf': np.float64(4.8840426632366126e-157), 'maxfh': np.float64(0.0), 'fh0': np.float64(1.00000000000006), 'J': np.float64(1.0000219019376277)}
+wrote /tmp/sg_regen2.json
+       15.48 real        13.33 user         3.16 sys
+peak RSS 287 MB (/usr/bin/time -l, maximum resident set size 301,... bytes) -- regenerated cert.json identical (B lists equal)

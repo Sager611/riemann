@@ -1,0 +1,6 @@
+d=21: lambda* <= 0.785901 (s=1.0)  [11s]
+d=31: lambda* <= 0.785433 (s=1.0)  [28s]
+d=41: lambda* <= 0.785301 (s=1.3)  [77s]
+d=51: lambda* <= 0.785172 (s=1.0)  [156s]
+d=61: lambda* <= 0.785072 (s=1.1)  [305s]
+           259473408  maximum resident set size

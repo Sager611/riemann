@@ -1,0 +1,19 @@
+PASS theta = 4/7 - 10^-5 and 1/2 < theta < 4/7
+PASS 0 < lambda <= 1
+PASS P, Q even
+deg p = 61  deg q = 61
+PASS p(0) > 0
+  p: degree 61, roots counted 61, real roots 1: [-0.44085625546408785]
+PASS f > 0 on R: p has no real root w >= 0 (Arb root isolation)
+PASS f > 0 on R: Sturm count of roots of p in (0, oo) = 0
+PASS w0 <= 2 pi s^2 lambda^2 (rational lower bound)
+PASS q(w0) < 0
+  q: degree 61, roots counted 61, real roots 1: [4.686138239775195]
+PASS fhat < 0 on |xi| >= lambda: q has no real root >= w0 (Arb root isolation)
+PASS fhat < 0 on |xi| >= lambda: Sturm count of roots of q in (w0, oo) = 0
+PASS fhat(0) = s q(0) > 0
+f(0)/fhat(0) = [0.783114289032335 +/- 1.38e-17]
+J(f)/fhat(0) = [1.0000219019375662111 +/- 6.74e-21]
+PASS normalised functional f(0) + 2 int_0^theta f(a) a da > 1
+lambda = 0.7851  s = 11/10  d = 61
+ALL CHECKS PASS
