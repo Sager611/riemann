@@ -20,3 +20,4 @@ See [RECORDS.md](RECORDS.md) (constants, ranges, exponents, proportions), [REFUT
 - Theorem: the Fasi–Higham positivity conjecture holds for m = 3 and every k (all Taylor coefficients of 1/q_{k,3} are positive). [details](discoveries/fasi-higham-m3.md)
 - Gale's conjecture fails in R⁷ and R⁸ (the last open dimensions), hence in every dimension n ≥ 3; an explicit family with a hand proof for n ≥ 5. [details](discoveries/gale-r7-r8.md)
 - Theorem: the diagonal Fasi–Higham positivity holds for every odd m (all Taylor coefficients of 1/q_{m,m} positive; computer-assisted). [details](discoveries/fasi-higham-diagonal.md)
+- Johnston–Leong–Tudzi's conjecture holds: the normalised limsup s_a of Σ_{n≤x}(−a)^{Ω(n)} tends to 1 as a → ∞ (arXiv 2408.04143). [details](discoveries/omega-power-sums.md)

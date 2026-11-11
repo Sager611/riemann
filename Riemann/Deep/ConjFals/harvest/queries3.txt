@@ -1,0 +1,20 @@
+abs:conjectures AND abs:"Riemann zeta"
+abs:conjectured AND abs:"Riemann zeta"
+abs:conjectures AND abs:"Riemann hypothesis"
+abs:conjectured AND abs:"Riemann hypothesis"
+(abs:conjecture OR abs:conjectures OR abs:conjectured) AND abs:"Li coefficients"
+(abs:conjecture OR abs:conjectures OR abs:conjectured) AND abs:"Stieltjes constants"
+(abs:conjecture OR abs:conjectures OR abs:conjectured) AND abs:"xi function"
+(abs:conjecture OR abs:conjectures OR abs:conjectured) AND abs:"de Bruijn"
+(abs:conjecture OR abs:conjectures OR abs:conjectured) AND abs:"Mertens function"
+(abs:conjecture OR abs:conjectures OR abs:conjectured) AND abs:"Liouville function" AND abs:sign
+(abs:conjecture OR abs:conjectures OR abs:conjectured) AND abs:"Robin"
+(abs:conjecture OR abs:conjectures OR abs:conjectured) AND abs:"Dirichlet L-function" AND abs:zeros
+(abs:conjecture OR abs:conjectures OR abs:conjectured) AND abs:"Hardy" AND abs:"Z-function"
+(abs:conjecture OR abs:conjectures OR abs:conjectured) AND abs:"Turan"
+(abs:conjecture OR abs:conjectures OR abs:conjectured) AND abs:"Laguerre"
+(abs:conjecture OR abs:conjectures OR abs:conjectured) AND abs:"Weil" AND abs:"explicit formula"
+(abs:conjecture OR abs:conjectures OR abs:conjectured) AND abs:"argument of the Riemann"
+(abs:conjecture OR abs:conjectures OR abs:conjectured) AND abs:"zeros" AND abs:"partial sums"
+abs:"numerical experiments" AND abs:"Riemann zeta" AND abs:conjecture
+abs:"we propose" AND abs:conjecture AND abs:zeta

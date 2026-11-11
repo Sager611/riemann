@@ -1,0 +1,42 @@
+ti:"Stieltjes constants"
+ti:"Li coefficients" OR ti:"Keiper-Li" OR ti:"Li's criterion" OR ti:"Li criterion"
+ti:"Robin's inequality" OR ti:"Robin inequality" OR ti:"Robin's criterion" OR ti:"Robin's theorem"
+ti:Nicolas AND ti:inequality
+ti:superabundant OR ti:"colossally abundant" OR ti:"extremely abundant"
+ti:"Jensen polynomials" OR ti:"Jensen polynomial"
+ti:"Turan inequalities" OR ti:"Turan inequality" OR ti:"Turan-type inequalities"
+ti:"Laguerre inequalities" OR ti:"Laguerre-Polya"
+ti:"de Bruijn-Newman" OR ti:"de Bruijn--Newman" OR ti:"Bruijn-Newman"
+ti:"Riemann xi" OR ti:"Riemann Xi" OR ti:"xi-function"
+ti:"Mertens function" OR ti:"Mertens conjecture" OR ti:"Mertens' conjecture"
+ti:"Liouville function" AND (ti:sum OR ti:sums OR ti:summatory OR ti:Polya)
+ti:Polya AND ti:conjecture
+ti:"partial sums" AND ti:zeta
+ti:"Gram points" OR ti:"Gram's law" OR ti:"Gram point"
+ti:"argument of the Riemann zeta"
+ti:"Hardy Z-function" OR ti:"Hardy's Z-function" OR ti:"Z-function"
+ti:"Euler-Kronecker"
+ti:Weil AND (ti:positivity OR ti:"explicit formula" OR ti:"quadratic form")
+ti:zeros AND ti:derivative AND ti:"Riemann zeta"
+ti:"Riemann hypothesis" AND (ti:criterion OR ti:equivalent OR ti:equivalence OR ti:reformulation)
+ti:"sum of divisors" OR ti:"sum-of-divisors"
+ti:"Dedekind psi" OR ti:"Dedekind's psi"
+ti:Lehmer AND ti:zeta
+ti:Nyman OR ti:"Baez-Duarte"
+ti:Redheffer
+ti:Farey AND ti:Riemann
+ti:"Mobius function" AND (ti:sum OR ti:sums OR ti:sign OR ti:oscillation)
+ti:Ramanujan AND ti:inequality AND ti:prime
+ti:"zeros of the Riemann zeta" AND (ti:computation OR ti:numerical OR ti:verification OR ti:computing)
+ti:"Euler product" AND (ti:truncated OR ti:partial)
+ti:"Dirichlet polynomial" AND ti:zeros
+ti:"Selberg class"
+ti:"Davenport-Heilbronn"
+ti:"Riemann zeta" AND (ti:inequality OR ti:inequalities OR ti:monotonicity OR ti:convexity)
+ti:"Hurwitz zeta" AND ti:zeros
+ti:"Taylor coefficients" AND (ti:zeta OR ti:xi)
+ti:"Lagarias" OR ti:"harmonic numbers" AND ti:"Riemann"
+ti:"Riemann zeta" AND ti:"sign"
+ti:"Chebyshev's bias" OR ti:"Chebyshev bias"
+ti:"prime counting function" AND (ti:inequality OR ti:inequalities OR ti:bounds)
+ti:"Riemann hypothesis" AND ti:conjecture

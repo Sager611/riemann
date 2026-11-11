@@ -1,0 +1,36 @@
+abs:conjecture AND abs:"Riemann zeta"
+abs:conjecture AND abs:"Li coefficients"
+abs:conjecture AND abs:"Keiper"
+abs:conjecture AND abs:"Stieltjes constants"
+abs:conjecture AND abs:"Robin" AND abs:"divisor"
+abs:conjecture AND abs:"Mertens"
+abs:conjecture AND abs:"Jensen polynomials"
+abs:conjecture AND abs:"Turan inequalities"
+abs:conjecture AND abs:"de Bruijn-Newman"
+abs:conjecture AND abs:"partial sums" AND abs:zeta
+abs:conjecture AND abs:"Gram"  AND abs:zeta
+abs:conjecture AND abs:"Liouville function"
+abs:conjecture AND abs:"Riemann hypothesis" AND abs:inequality
+abs:conjecture AND abs:"xi function"
+abs:conjecture AND abs:"Laguerre-Polya"
+abs:conjecture AND (abs:superabundant OR abs:"colossally abundant")
+abs:conjecture AND abs:"Euler-Kronecker"
+abs:conjecture AND abs:"Mobius function" AND abs:sum
+abs:conjecture AND abs:"Hardy Z-function"
+abs:conjecture AND abs:"zeros" AND abs:"derivative" AND abs:zeta
+abs:conjecture AND abs:"Dirichlet L-functions" AND abs:"numerical"
+abs:conjecture AND abs:"Selberg class"
+abs:conjecture AND abs:"log-concave" AND abs:zeta
+abs:conjecture AND abs:"Riemann hypothesis" AND abs:"numerical evidence"
+abs:"we conjecture" AND abs:zeta
+abs:conjecture AND abs:"Nicolas" AND abs:primorial
+abs:conjecture AND abs:"Dedekind" AND abs:"Riemann hypothesis"
+abs:conjecture AND abs:"Hurwitz zeta" AND abs:zeros
+abs:conjecture AND abs:"prime counting" AND abs:inequality
+abs:conjecture AND abs:"Chebyshev" AND abs:bias AND abs:"Riemann hypothesis"
+abs:conjecture AND abs:"Lehmer" AND abs:zeta
+abs:conjecture AND abs:"Farey" AND abs:"Riemann"
+abs:conjecture AND abs:"Weil" AND abs:"positivity" AND abs:zeta
+abs:conjecture AND abs:"Gamma function" AND abs:"Riemann hypothesis"
+abs:conjecture AND abs:"sign changes" AND abs:zeta
+abs:conjecture AND abs:"Hermite" AND abs:"Riemann xi"
