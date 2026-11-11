@@ -1,0 +1,11 @@
+files 238 files differing from original (incl. header/imports): 238 added/changed lines: 1116
+files whose diff is NOT pure (header + import rewrite + beta->betaEff): 1
+== Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.PrimeGlobal
+    --- 
+    +++ 
+    @@ -24 +24 @@
+    -    exact zero_re_le_beta (χ i) (by linarith [hz.1]) (Or.inr (hχ i)) hz.2.2.2
+    +    exact (zero_re_le_beta (χ i) (by linarith [hz.1]) (Or.inr (hχ i)) hz.2.2.2).trans beta_le_betaEff
+    @@ -54 +54 @@
+    -  have hb := hbound Z d hZ hd hdmax hU hT χ hn beta i hbeta beta_le_one
+    +  have hb := hbound Z d hZ hd hdmax hU hT χ hn beta i hbeta betaEff_le_one

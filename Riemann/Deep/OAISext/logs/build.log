@@ -1,0 +1,18 @@
+2026-11-11T22:48:47Z driver start pid 10378 built=0
+2026-11-11T22:48:47Z chunk 001 start built=0 targets=25 df=55G
+2026-11-11T22:58:33Z STOP file during chunk: killing group 10412
+2026-11-11T22:58:50Z driver start pid 35253 built=74
+2026-11-11T22:58:50Z chunk 002 start built=74 targets=29 df=55G
+2026-11-11T23:01:06Z WARN lean 40873 529M > 450M on Riemann/Deep/QRH/OAI/NumberTheory/DirichletL/Fourier/TupleWeights.lean
+2026-11-11T23:02:36Z WARN lean 43276 558M > 450M on Riemann/Deep/QRH/OAI/NumberTheory/DirichletL/QuadraticSieve/AnnularRecursion.lean
+2026-11-11T23:03:21Z WARN lean 44603 498M > 450M on Riemann/Deep/QRH/OAI/NumberTheory/DirichletL/CubicSieve/FixedProfiles.lean
+2026-11-11T23:04:50Z WARN lean 47069 527M > 450M on Riemann/Deep/QRH/OAI/NumberTheory/DirichletL/QuadraticSieve/UnrestrictedCharacters.lean
+2026-11-11T23:08:01Z WARN lean 51518 526M > 450M on Riemann/Deep/QRH/OAI/NumberTheory/DirichletL/Fourier/LogDensity.lean
+2026-11-11T23:14:11Z WARN lean 59252 516M > 450M on Riemann/Deep/QRH/OAI/NumberTheory/DirichletL/Eisenstein/SeedDefects.lean
+2026-11-11T23:15:45Z WARN lean 60803 549M > 450M on Riemann/Deep/QRH/OAI/NumberTheory/DirichletL/CubicSieve/SquarefreeTransfer.lean
+2026-11-11T23:18:56Z WARN lean 65484 523M > 450M on Riemann/Deep/QRH/OAI/NumberTheory/DirichletL/QuadraticSieve/HighKernelGeometry.lean
+2026-11-11T23:20:30Z WARN lean 67299 595M > 450M on Riemann/Deep/QRH/OAI/NumberTheory/DirichletL/CubicSieve/ScaleCaps.lean
+2026-11-11T23:21:12Z WARN lean 68805 562M > 450M on Riemann/Deep/QRH/OAI/NumberTheory/DirichletL/QuadraticSieve/PoissonComparison.lean
+2026-11-11T23:22:00Z WARN lean 70832 534M > 450M on Riemann/Deep/QRH/OAI/NumberTheory/DirichletL/CubicSieve/UniformTransfer.lean
+2026-11-11T23:22:49Z WARN lean 71713 528M > 450M on Riemann/Deep/QRH/OAI/NumberTheory/DirichletL/QuadraticSieve/GlobalBinLoss.lean
+2026-11-11T23:24:25Z MEMORY STOP: lean 73669 632M > 600M on Riemann/Deep/QRH/OAI/NumberTheory/DirichletL/Eisenstein/FundamentalDomain.lean; killing group 35301

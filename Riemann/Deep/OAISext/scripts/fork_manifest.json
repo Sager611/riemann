@@ -1,0 +1,1906 @@
+[
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ActiveChildRestoration",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ActiveChildRestoration",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.AllocatedBound",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.AllocatedBound",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.AllocatedChildren",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.AllocatedChildren",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.AllocatedClipped",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.AllocatedClipped",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.AllocatedHomogeneous",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.AllocatedHomogeneous",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.AllocatedPaid",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.AllocatedPaid",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.AllocatedZero",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.AllocatedZero",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.AmplifiedChildWidth",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.AmplifiedChildWidth",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 3
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.AmplifiedRayDictionary",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.AmplifiedRayDictionary",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.AmplifierFamilyAdmission",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.AmplifierFamilyAdmission",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 5
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.BackwardSourceRanges",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.BackwardSourceRanges",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.BandMonotonicity",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.BandMonotonicity",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.BandSubtypeTransport",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.BandSubtypeTransport",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.Bands",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.Bands",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalAmplifiedColumn",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalAmplifiedColumn",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalAmplifiedUniform",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalAmplifiedUniform",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 17
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalAnnularLower",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalAnnularLower",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalAnnularPower",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalAnnularPower",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 22
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalChildBound",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalChildBound",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalCommonPaid",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalCommonPaid",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalErrorAdmitted",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalErrorAdmitted",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 10
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalErrorGaussian",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalErrorGaussian",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 8
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalErrorHomogeneous",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalErrorHomogeneous",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 15
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalErrorPaid",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalErrorPaid",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 5
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalErrorPower",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalErrorPower",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 13
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalErrorSubsets",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalErrorSubsets",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 16
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalErrorUniform",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalErrorUniform",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 8
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalHighColumn",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalHighColumn",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 28
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalHighPhysical",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalHighPhysical",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 31
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalHighSource",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalHighSource",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 28
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalLiveBound",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalLiveBound",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalLiveCapacity",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalLiveCapacity",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalLowColumn",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalLowColumn",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 25
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalLowPhysical",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalLowPhysical",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 31
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalLowSource",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalLowSource",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 27
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalMainGaussian",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalMainGaussian",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 8
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalMainHomogeneous",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalMainHomogeneous",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 14
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalMainPaid",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalMainPaid",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 3
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalMainSeparated",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalMainSeparated",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 10
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalMainSeparatedPower",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalMainSeparatedPower",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 12
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalMainSubsets",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalMainSubsets",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 15
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalMainUniform",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalMainUniform",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 6
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalNestedReference",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalNestedReference",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalPaidSource",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalPaidSource",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalReferencePaid",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalReferencePaid",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalRightSourceColumn",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalRightSourceColumn",
+"qualified": 4,
+"hyp_pattern": 4,
+"bare": 0,
+"fork_imports": 29
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CanonicalUniformReference",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CanonicalUniformReference",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CapacityRemoval",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CapacityRemoval",
+"qualified": 4,
+"hyp_pattern": 4,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CappedAnalyticSuccessor",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CappedAnalyticSuccessor",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 6
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CappedBandTransport",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CappedBandTransport",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CappedLowStage",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CappedLowStage",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CappedRadialTransport",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CappedRadialTransport",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CappedRequests",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CappedRequests",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CappedSuccessorPacking",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CappedSuccessorPacking",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CappedWidthInduction",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CappedWidthInduction",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 4
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.CertifiedExistence",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.CertifiedExistence",
+"qualified": 4,
+"hyp_pattern": 4,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ChildEnvelopeFitting",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ChildEnvelopeFitting",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.DeletedChildCapacity",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.DeletedChildCapacity",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 3
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.DeletedRobustGeometry",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.DeletedRobustGeometry",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstActualFrequencyBudget",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstActualFrequencyBudget",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstAnnularAdmission",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstAnnularAdmission",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstColumnPairing",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstColumnPairing",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstDeclaredCapacityLossBudget",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstDeclaredCapacityLossBudget",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstGaussianCoefficients",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstGaussianCoefficients",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstGaussianProfileWeights",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstGaussianProfileWeights",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstHighExceptionalPowers",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstHighExceptionalPowers",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 3
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstHighFourCoefficients",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstHighFourCoefficients",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 6
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstHighGaussianUniformPowers",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstHighGaussianUniformPowers",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstHighNormalizedGaussianPowers",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstHighNormalizedGaussianPowers",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstLiveAdmission",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstLiveAdmission",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 3
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstLowHomogeneousPowers",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstLowHomogeneousPowers",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstNormalizedGaussianPowers",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstNormalizedGaussianPowers",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstPhysicalNormalization",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstPhysicalNormalization",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstRawScaleAdmission",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstRawScaleAdmission",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstRightAdmission",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstRightAdmission",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstSourceParameters",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstSourceParameters",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 4
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstStageLossBudget",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstStageLossBudget",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 3
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.FirstTwoSeedAdmission",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.FirstTwoSeedAdmission",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.InputParentCapacity",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.InputParentCapacity",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.LiveClippingDefect",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.LiveClippingDefect",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.LowBandEmpty",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.LowBandEmpty",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.LowBandSubtype",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.LowBandSubtype",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.NaturalHighStage",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.NaturalHighStage",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 4
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.NaturalInputMatches",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.NaturalInputMatches",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.NaturalLowPhysical",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.NaturalLowPhysical",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 4
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.NaturalLowSourceBound",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.NaturalLowSourceBound",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.NaturalLowStage",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.NaturalLowStage",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 7
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.NaturalSourceAdmission",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.NaturalSourceAdmission",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.NaturalZeroStage",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.NaturalZeroStage",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 4
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.OriginalHighReflectionBounded",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.OriginalHighReflectionBounded",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.OriginalHighReflectionDeleted",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.OriginalHighReflectionDeleted",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 3
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.OriginalHighReflectionGeometry",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.OriginalHighReflectionGeometry",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.OriginalHighReflectionOriginal",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.OriginalHighReflectionOriginal",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.OriginalHighReflectionPower",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.OriginalHighReflectionPower",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.OriginalHighReflectionSymmetric",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.OriginalHighReflectionSymmetric",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.OriginalHighReflectionSymmetricBounded",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.OriginalHighReflectionSymmetricBounded",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.OriginalProfileControl",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.OriginalProfileControl",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.PaidBands",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.PaidBands",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.PaidRemoval",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.PaidRemoval",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.PositiveBalancedAdmission",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.PositiveBalancedAdmission",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 3
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.PositiveHighAssembly",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.PositiveHighAssembly",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.PositiveHighAssemblyBounded",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.PositiveHighAssemblyBounded",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 3
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.PositiveHighBound",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.PositiveHighBound",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 6
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.PositiveHighParameters",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.PositiveHighParameters",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.PositiveHighPhysical",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.PositiveHighPhysical",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 4
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.PositiveHighSource",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.PositiveHighSource",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 3
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.PositiveHighSourceBound",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.PositiveHighSourceBound",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 4
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.PositiveHighSourceBounded",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.PositiveHighSourceBounded",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 4
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.PositiveLowBandSource",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.PositiveLowBandSource",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 3
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.PositiveLowSourceControlled",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.PositiveLowSourceControlled",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 4
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceChild",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceChild",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceChildProfiles",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceChildProfiles",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceDeletionBudget",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceDeletionBudget",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceDeletionCapacity",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceDeletionCapacity",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceDeletionClipped",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceDeletionClipped",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceDeletionEnergy",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceDeletionEnergy",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceLiveBounded",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceLiveBounded",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceLivePower",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceLivePower",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceLowBands",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceLowBands",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceLowBranchGeometry",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceLowBranchGeometry",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceLowChild",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceLowChild",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceLowControl",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceLowControl",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceLowDeletedGeometry",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceLowDeletedGeometry",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceLowDirect",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceLowDirect",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceLowEmpty",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceLowEmpty",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceLowError",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceLowError",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceLowMoments",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceLowMoments",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceLowReflection",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceLowReflection",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceLowReflectionError",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceLowReflectionError",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceLowWindow",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceLowWindow",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceProfileBudget",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceProfileBudget",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceRobustBounded",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceRobustBounded",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceRobustDeletedEnergy",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceRobustDeletedEnergy",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 3
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceRobustOriginal",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceRobustOriginal",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ReferenceRobustPower",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ReferenceRobustPower",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.Reindex",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.Reindex",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.SlotHeight",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.SlotHeight",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.SourceCapSchedule",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.SourceCapSchedule",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.SourceInputReindexGates",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.SourceInputReindexGates",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.StageMargins",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.StageMargins",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.StageMonotonicity",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.StageMonotonicity",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 4
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.StageReserveSchedule",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.StageReserveSchedule",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.WidthFloor",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.WidthFloor",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.WidthInduction",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.WidthInduction",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 4
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.WidthRanges",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.WidthRanges",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.WidthSchedule",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.WidthSchedule",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroBalancedAdmission",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroBalancedAdmission",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroBalancedDictionary",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroBalancedDictionary",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroGrowth",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroGrowth",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthBounded",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthBounded",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthBounds",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthBounds",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthChild",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthChild",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthConclusion",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthConclusion",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthContourBounded",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthContourBounded",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthHighBound",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthHighBound",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 6
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthMoments",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthMoments",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 3
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthOriginal",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthOriginal",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 5
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthPhysical",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthPhysical",
+"qualified": 2,
+"hyp_pattern": 2,
+"bare": 0,
+"fork_imports": 4
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthPhysicalReindex",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthPhysicalReindex",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthReflection",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthReflection",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthSource",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthSource",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthSourceControlled",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthSourceControlled",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthWindow",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroGrowthWindow",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceBounded",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceBounded",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceChild",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceChild",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceDeleted",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceDeleted",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceGeometry",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceGeometry",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceLive",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceLive",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceLiveBounded",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceLiveBounded",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceMoments",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceMoments",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceOriginal",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceOriginal",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroReferencePhysical",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroReferencePhysical",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroReferencePhysicalBounded",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroReferencePhysicalBounded",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroReferencePower",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroReferencePower",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceReflection",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroReferenceReflection",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroReflectionSupport",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroReflectionSupport",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroRetainedError",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroRetainedError",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroUnbalancedDeletedGeometry",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroUnbalancedDeletedGeometry",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroUnbalancedOriginal",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroUnbalancedOriginal",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroUnbalancedOriginalDeleted",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroUnbalancedOriginalDeleted",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroUnbalancedOriginalGates",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroUnbalancedOriginalGates",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroUnbalancedOriginalPower",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroUnbalancedOriginalPower",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Energy.ZeroUnbalancedOriginalSource",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Energy.ZeroUnbalancedOriginalSource",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.ActualLiveSlotRemoval",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.ActualLiveSlotRemoval",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 2,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.AllocatedChildCapacity",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.AllocatedChildCapacity",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.AllocatedRayDictionary",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.AllocatedRayDictionary",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstAmplifiedActiveAffine",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstAmplifiedActiveAffine",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstAmplifiedActiveCapacitySource",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstAmplifiedActiveCapacitySource",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstAmplifiedCapacityCommon",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstAmplifiedCapacityCommon",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstAmplifiedCapacityRadius",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstAmplifiedCapacityRadius",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstAmplifiedCapacitySource",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstAmplifiedCapacitySource",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstAmplifiedFourCoefficients",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstAmplifiedFourCoefficients",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 4
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstAmplifiedPaidAdmission",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstAmplifiedPaidAdmission",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 3
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstAmplifiedPaidReserve",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstAmplifiedPaidReserve",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstCommonReferencePower",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstCommonReferencePower",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstExceptionalChildPaid",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstExceptionalChildPaid",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstExceptionalPaidScales",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstExceptionalPaidScales",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstMixedAllowance",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstMixedAllowance",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstMixedChild",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstMixedChild",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstMixedCommonRadius",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstMixedCommonRadius",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstMixedDiagonal",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstMixedDiagonal",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstMixedExceptionalCap",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstMixedExceptionalCap",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstMixedExceptionalDeclared",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstMixedExceptionalDeclared",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstMixedExceptionalLow",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstMixedExceptionalLow",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 3
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstMixedMainError",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstMixedMainError",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstMixedNormalization",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstMixedNormalization",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstMixedNormalizationActual",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstMixedNormalizationActual",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstMixedRightTransport",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstMixedRightTransport",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstMixedRoot",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstMixedRoot",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstMixedWindow",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstMixedWindow",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstReferenceBlock",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstReferenceBlock",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstReferenceEnergy",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstReferenceEnergy",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstReferenceSource",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstReferenceSource",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstSecondCapacityDefect",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstSecondCapacityDefect",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstSecondCapacityLedger",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstSecondCapacityLedger",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstSecondCapacityShift",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstSecondCapacityShift",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstSecondLossParameters",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstSecondLossParameters",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.FirstSecondPaidLedger",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.FirstSecondPaidLedger",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.LiveCapacity",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.LiveCapacity",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.NaturalFixedRaySourceNaturalPrime",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.NaturalFixedRaySourceNaturalPrime",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 4,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.NaturalFixedRaySourcePrimeBound",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.NaturalFixedRaySourcePrimeBound",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 2,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.NaturalFixedRaySourcePrimeGate",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.NaturalFixedRaySourcePrimeGate",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.NaturalFixedRaySourceRayPrime",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.NaturalFixedRaySourceRayPrime",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 2,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.PrimeGlobal",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.PrimeGlobal",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 9,
+"fork_imports": 0
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.PrimeHeight",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.PrimeHeight",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 4,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.PrimeSlotBound",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.PrimeSlotBound",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 2,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.PrimeSlotExternal",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.PrimeSlotExternal",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 2,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.PrimeSlotUniform",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.PrimeSlotUniform",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 2,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.RayMaskedFloor",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.RayMaskedFloor",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 2,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.RayMaskedFloorCoefficients",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.RayMaskedFloorCoefficients",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.RayMaskedFloorNatural",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.RayMaskedFloorNatural",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 2,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.RayMaskedFloorShared",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.RayMaskedFloorShared",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 2,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.RayMaskedFloorSlots",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.RayMaskedFloorSlots",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 2,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.RayMaskedFloorSource",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.RayMaskedFloorSource",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 2,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.RayMaskedFloorState",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.RayMaskedFloorState",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 2,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.RelativeCapacityRemoval",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.RelativeCapacityRemoval",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 4,
+"fork_imports": 2
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.SecondInputCapacitySource",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.SecondInputCapacitySource",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 1
+},
+{
+"orig": "Riemann.Deep.QRH.OAI.NumberTheory.DirichletL.Moments.SuccessorPaidParameters",
+"fork": "Riemann.Deep.OAISext.OAI.NumberTheory.DirichletL.Moments.SuccessorPaidParameters",
+"qualified": 0,
+"hyp_pattern": 0,
+"bare": 0,
+"fork_imports": 2
+}
+]
