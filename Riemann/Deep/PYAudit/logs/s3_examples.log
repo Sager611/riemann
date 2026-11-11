@@ -1,0 +1,7 @@
+alpha=0.4 beta=3.6 nus=[1, 2, 3]: sum 1/(nu-alpha)=2.6762821 | printed n-sum=2.6666667 | psi(b-a)-psi(1/2)=2.9623489 | |S3|=1.7037741 <= (2/pi)log(b-a)+2=2.7404848
+alpha=0.495 beta=3.505 nus=[1, 2, 3]: sum 1/(nu-alpha)=3.0438514 | printed n-sum=2.6666667 | psi(b-a)-psi(1/2)=2.890236 | |S3|=1.937776 <= (2/pi)log(b-a)+2=2.7015168
+alpha=0.4999999 beta=1.5000001 nus=[1]: sum 1/(nu-alpha)=1.9999996 | printed n-sum=0 | psi(b-a)-psi(1/2)=1.3862947 | |S3|=1.2732393 <= (2/pi)log(b-a)+2=2.0000001
+2609.00537 (S3-bound): f'(b)=0.99, f'(a)=5.5: S_3 = 32.911473 vs (2/pi)log(f'(a)-f'(b)) + 1.251 = 2.2099386
+2609.00537-type constant at beta-alpha -> 1+ (PY range): |S3| -> 4/pi = 1.2732395 > 1.251
+sup_D [true - printed] = -0.72676046 (approached at D -> 1+); limit M -> inf: -0.74999069
+printed (2/pi)log D + 2 < 0 for D < e^{-pi} = 0.0432139, where S_3 is empty (= 0)

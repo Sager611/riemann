@@ -1,0 +1,2 @@
+phi5 closed form check: |phi^(5)| num 8.48639993872968e-12 vs closed 8.48639993872968e-12
+phi5: 36 cases (k=5 on phi_r, min over 30 etas in [0.01, 6.5]), max |S|/bound = 0.01597 at {'N': 3000, 'A': 34239, 'logtr': 62.275630677386566, 'r': 19, 'lam': 2.3521754716253067e-07, 'h': 1.4591137278462323, 'S': 115.40587571094272, 'bound': 7224.578303227461, 'main': [False, True]}  (45 s)

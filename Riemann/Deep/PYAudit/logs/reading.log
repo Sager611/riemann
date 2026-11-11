@@ -1,0 +1,13 @@
+/Users/adriansager/playground/riemann/Riemann/Deep/PYAudit/../SubWeyl/certify.py:94: RuntimeWarning: invalid value encountered in sqrt
+  + rf['c4']/np.sqrt(th)*np.sqrt(g)*np.exp(87/82*la - 57/82*L) \
+/Users/adriansager/playground/riemann/Riemann/Deep/PYAudit/../SubWeyl/certify.py:96: RuntimeWarning: invalid value encountered in power
+  + d['c7a']*th**(-19/30)*g**(19/30)*np.exp(51/41*la - 65/82*L) + d['c7b']*th**(-11/30)*g**(11/30)*np.exp(36/41*la - 49/82*L)
+proof L in [648, 650]: bound 54.59967
+proof L in [638, 640]: bound 54.59484
+proof L in [540, 542]: bound 54.23160
+proof tail t >= e^2000: 52.35827
+alt   L in [648, 650]: bound 55.11965
+alt   L in [638, 640]: bound 55.11758
+alt   L in [540, 542]: bound 54.78187
+alt   tail t >= e^2000: 52.86231
+EXIT 0

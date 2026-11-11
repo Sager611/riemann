@@ -1,0 +1,1 @@
+poissoncorner: 2992 quadratic cases at the S_3-failure configuration, max LHS/RHS = 0.1948 at {'lam': 0.006055342526209274, 'M': 1, 'alpha': -15.999999994600389, 'beta': -14.00000425646769, 'L': 330.28614475170286, 'lhs': np.float64(13.326897220341284), 'rhs': 68.42526940679184}

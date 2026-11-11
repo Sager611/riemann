@@ -14,7 +14,7 @@
 
 **Novelty.** lst.py (math.NT, math.CA, Oct–Nov 2026 titles: no explicit sub-Weyl paper), Zenodo "sub-Weyl" (3 unrelated hits), arXiv API ("27/164", "sub-Weyl": only 2302.13444 is explicit; 2609.00537 improves the B-process and says it could refine Patel–Yang but gives no constant), OpenAlex (6 citing papers all use 66.7, none notes the slip), HAL (nothing), our files (R376 candidate only).
 
-**Caveat.** Conditional on the cited lemmas of the refereed paper (checked against arXiv v1; the journal host blocks scripts) and on python-flint/arb.
+**Caveat.** Conditional on the cited lemmas of the refereed paper (checked against arXiv v1; the journal host blocks scripts) and on python-flint/arb. The lemmas were refereed line by line by pyaudit (11 Nov 2026, [PYAudit](../Riemann/Deep/PYAudit/REPORT.md)): sound, 5 proof gaps closed without changing a constant; the certificate uses the reading of Yang's δ₃ that his proof gives (the other printed reading would give 55.12); Hiary–Patel–Yang's Thm 1.1 (used on [3, e^75]) was not audited.
 
 **RH relevance:** N9 (explicit sub-Weyl/subconvexity constants on the critical line; inputs to explicit zero-density and S(T) bounds that cite 66.7).
 

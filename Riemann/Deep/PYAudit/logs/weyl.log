@@ -1,0 +1,2 @@
+weyl: 2788 (f,N,q) cases, max |S|^2/RHS = 1.000000000000 (must be <= 1)
+r-sum inequality: 15 exponents, q<=1e5: max LHS/RHS = 0.999999999900 (must be <= 1)

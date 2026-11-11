@@ -1,0 +1,7 @@
+k=3 eta=1.12054 h=1.0488709: A=1.74087377677 B=2.57758693381 | rel.diff vs certify 1.1e-38 6.0e-39 | delta3-alt reading A x1.0 B x1.0 | K-misread A x1.0 B x1.0
+k=4 eta=0.87152 h=1.0488709: A=2.24373011402 B=1.89099391462 | rel.diff vs certify 1.9e-38 1.1e-38 | delta3-alt reading A x1.05008 B x1.05008 | K-misread A x1.03358 B x0.917919
+k=4 eta=0.5 h=1.2215371: A=2.20498540228 B=1.99487225427 | rel.diff vs certify 2.0e-38 5.8e-39 | delta3-alt reading A x1.02024 B x1.02024 | K-misread A x1.04347 B x0.91876
+k=5 eta=1.12054 h=1.1236292: A=2.49028974919 B=1.44124610846 | rel.diff vs certify 1.6e-38 1.9e-38 | delta3-alt reading A x1.02129 B x1.03527 | K-misread A x1.03001 B x0.928716
+k=5 eta=0.75 h=1.5831345: A=2.40078197859 B=1.46570355803 | rel.diff vs certify 2.4e-38 2.4e-38 | delta3-alt reading A x1.01196 B x1.01973 | K-misread A x1.04494 B x0.929117
+k=5 eta=2.0 h=1.123576: A=2.51251202429 B=1.41623492556 | rel.diff vs certify 2.0e-38 2.9e-38 | delta3-alt reading A x1.04387 B x1.07228 | K-misread A x1.02985 B x0.928064
+max relative difference mpmath vs certify.py: 2.87e-38
