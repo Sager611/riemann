@@ -1,0 +1,1096 @@
+=== PART 1: reproduction of de Faveri-Pandey's printed exponents ===
+PASS k=2: range [7/60, 5/38] nonempty
+PASS k=2 s=7/60: T4 == E_k
+PASS k=2 s=7/60: T2 == T3 == 11/8-29s/4
+PASS k=2 s=7/60: T2 <= E_k
+PASS k=2 s=7/60: T1 < E_k
+PASS k=2 s=7/60: rho=tau/(1-4s)=1.15625 in [1,4/3] (terms increase in N)
+PASS k=2 s=7/60: C1 N<=T^(3/5) slack 1/15 (0.06667)
+PASS k=2 s=7/60: C2 W>=N slack 1/12 (0.08333)
+PASS k=2 s=7/60: C3 W<=N^(4/3) slack 17/180 (0.09444)
+PASS k=2 s=7/60: C4 N^(1/2)W^2<=T^(3/2) slack 0 (0.00000)
+PASS k=2 s=7/60: C5 W<=sqrt(TN) slack 3/20 (0.15000)
+PASS k=2 s=7/60: C6 N^3/(TW)=o(1) [strict] slack 1/60 (0.01667)
+PASS k=2 s=7/60: C7a sqrt(T/N)<=V^4 slack 7/30 (0.23333)
+PASS k=2 s=7/60: C7b W sqrt(N/T)<=V^4 slack 1/12 (0.08333)
+PASS k=2 s=7/60: C0 N>=T^(1/3) slack 1/5 (0.20000)
+PASS k=2 s=7/60 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=2 s=7/60 N=T^(1/3): C2 W>=N slack 0.05208
+PASS k=2 s=7/60 N=T^(1/3): C3 W<=N^(4/3) slack 0.05903
+PASS k=2 s=7/60 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.56250
+PASS k=2 s=7/60 N=T^(1/3): C5 W<=sqrt(TN) slack 0.28125
+PASS k=2 s=7/60 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.38542
+PASS k=2 s=7/60 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.13333
+PASS k=2 s=7/60 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.41458
+PASS k=2 s=7/60 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=2 s=5/38: T4 == E_k
+PASS k=2 s=5/38: T2 == T3 == 11/8-29s/4
+PASS k=2 s=5/38: T2 <= E_k
+PASS k=2 s=5/38: T1 < E_k
+PASS k=2 s=5/38: rho=tau/(1-4s)=1.33333 in [1,4/3] (terms increase in N)
+PASS k=2 s=5/38: C1 N<=T^(3/5) slack 12/95 (0.12632)
+PASS k=2 s=5/38: C2 W>=N slack 3/19 (0.15789)
+PASS k=2 s=5/38: C3 W<=N^(4/3) slack 0 (0.00000)
+PASS k=2 s=5/38: C4 N^(1/2)W^2<=T^(3/2) slack 0 (0.00000)
+PASS k=2 s=5/38: C5 W<=sqrt(TN) slack 2/19 (0.10526)
+PASS k=2 s=5/38: C6 N^3/(TW)=o(1) [strict] slack 4/19 (0.21053)
+PASS k=2 s=5/38: C7a sqrt(T/N)<=V^4 slack 5/19 (0.26316)
+PASS k=2 s=5/38: C7b W sqrt(N/T)<=V^4 slack 3/19 (0.15789)
+PASS k=2 s=5/38: C0 N>=T^(1/3) slack 8/57 (0.14035)
+PASS k=2 s=5/38 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=2 s=5/38 N=T^(1/3): C2 W>=N slack 0.11111
+PASS k=2 s=5/38 N=T^(1/3): C3 W<=N^(4/3) slack 0.00000
+PASS k=2 s=5/38 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.44444
+PASS k=2 s=5/38 N=T^(1/3): C5 W<=sqrt(TN) slack 0.22222
+PASS k=2 s=5/38 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.44444
+PASS k=2 s=5/38 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.19298
+PASS k=2 s=5/38 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.41520
+PASS k=2 s=5/38 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=2 s=283/2280: T4 == E_k
+PASS k=2 s=283/2280: T2 == T3 == 11/8-29s/4
+PASS k=2 s=283/2280: T2 <= E_k
+PASS k=2 s=283/2280: T1 < E_k
+PASS k=2 s=283/2280: rho=tau/(1-4s)=1.23955 in [1,4/3] (terms increase in N)
+PASS k=2 s=283/2280: C1 N<=T^(3/5) slack 11/114 (0.09649)
+PASS k=2 s=283/2280: C2 W>=N slack 55/456 (0.12061)
+PASS k=2 s=283/2280: C3 W<=N^(4/3) slack 17/360 (0.04722)
+PASS k=2 s=283/2280: C4 N^(1/2)W^2<=T^(3/2) slack 0 (0.00000)
+PASS k=2 s=283/2280: C5 W<=sqrt(TN) slack 97/760 (0.12763)
+PASS k=2 s=283/2280: C6 N^3/(TW)=o(1) [strict] slack 259/2280 (0.11360)
+PASS k=2 s=283/2280: C7a sqrt(T/N)<=V^4 slack 283/1140 (0.24825)
+PASS k=2 s=283/2280: C7b W sqrt(N/T)<=V^4 slack 55/456 (0.12061)
+PASS k=2 s=283/2280: C0 N>=T^(1/3) slack 97/570 (0.17018)
+PASS k=2 s=283/2280 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=2 s=283/2280 N=T^(1/3): C2 W>=N slack 0.07985
+PASS k=2 s=283/2280 N=T^(1/3): C3 W<=N^(4/3) slack 0.03126
+PASS k=2 s=283/2280 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.50697
+PASS k=2 s=283/2280 N=T^(1/3): C5 W<=sqrt(TN) slack 0.25348
+PASS k=2 s=283/2280 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.41318
+PASS k=2 s=283/2280 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.16316
+PASS k=2 s=283/2280 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.41664
+PASS k=2 s=283/2280 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=2: E_k(sigma_-) = 1-4sigma_- (meets 4th moment)
+PASS k=3: range [85/712, 9/68] nonempty
+PASS k=3 s=85/712: T4 == E_k
+PASS k=3 s=85/712: T3 == E_k (tau balances T3=T4)
+PASS k=3 s=85/712: T2 <= E_k
+PASS k=3 s=85/712: T1 < E_k
+PASS k=3 s=85/712: rho=tau/(1-4s)=1.09677 in [1,4/3] (terms increase in N)
+PASS k=3 s=85/712: C1 N<=T^(3/5) slack 69/890 (0.07753)
+PASS k=3 s=85/712: C2 W>=N slack 9/178 (0.05056)
+PASS k=3 s=85/712: C3 W<=N^(4/3) slack 11/89 (0.12360)
+PASS k=3 s=85/712: C4 N^(1/2)W^2<=T^(3/2) slack 33/356 (0.09270)
+PASS k=3 s=85/712: C5 W<=sqrt(TN) slack 67/356 (0.18820)
+PASS k=3 s=85/712: C6 N^3/(TW)=o(1) [strict] slack 1/178 (0.00562)
+PASS k=3 s=85/712: C7a sqrt(T/N)<=V^4 slack 85/356 (0.23876)
+PASS k=3 s=85/712: C7b W sqrt(N/T)<=V^4 slack 51/356 (0.14326)
+PASS k=3 s=85/712: C0 N>=T^(1/3) slack 101/534 (0.18914)
+PASS k=3 s=85/712 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=3 s=85/712 N=T^(1/3): C2 W>=N slack 0.03226
+PASS k=3 s=85/712 N=T^(1/3): C3 W<=N^(4/3) slack 0.07885
+PASS k=3 s=85/712 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.60215
+PASS k=3 s=85/712 N=T^(1/3): C5 W<=sqrt(TN) slack 0.30108
+PASS k=3 s=85/712 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.36559
+PASS k=3 s=85/712 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.14419
+PASS k=3 s=85/712 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.44527
+PASS k=3 s=85/712 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=3 s=9/68: T4 == E_k
+PASS k=3 s=9/68: T3 == E_k (tau balances T3=T4)
+PASS k=3 s=9/68: T2 <= E_k
+PASS k=3 s=9/68: T1 < E_k
+PASS k=3 s=9/68: rho=tau/(1-4s)=1.25000 in [1,4/3] (terms increase in N)
+PASS k=3 s=9/68: C1 N<=T^(3/5) slack 11/85 (0.12941)
+PASS k=3 s=9/68: C2 W>=N slack 2/17 (0.11765)
+PASS k=3 s=9/68: C3 W<=N^(4/3) slack 2/51 (0.03922)
+PASS k=3 s=9/68: C4 N^(1/2)W^2<=T^(3/2) slack 3/34 (0.08824)
+PASS k=3 s=9/68: C5 W<=sqrt(TN) slack 5/34 (0.14706)
+PASS k=3 s=9/68: C6 N^3/(TW)=o(1) [strict] slack 3/17 (0.17647)
+PASS k=3 s=9/68: C7a sqrt(T/N)<=V^4 slack 9/34 (0.26471)
+PASS k=3 s=9/68: C7b W sqrt(N/T)<=V^4 slack 7/34 (0.20588)
+PASS k=3 s=9/68: C0 N>=T^(1/3) slack 7/51 (0.13725)
+PASS k=3 s=9/68 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=3 s=9/68 N=T^(1/3): C2 W>=N slack 0.08333
+PASS k=3 s=9/68 N=T^(1/3): C3 W<=N^(4/3) slack 0.02778
+PASS k=3 s=9/68 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.50000
+PASS k=3 s=9/68 N=T^(1/3): C5 W<=sqrt(TN) slack 0.25000
+PASS k=3 s=9/68 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.41667
+PASS k=3 s=9/68 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.19608
+PASS k=3 s=9/68 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.44608
+PASS k=3 s=9/68 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=3 s=3047/24208: T4 == E_k
+PASS k=3 s=3047/24208: T3 == E_k (tau balances T3=T4)
+PASS k=3 s=3047/24208: T2 <= E_k
+PASS k=3 s=3047/24208: T1 < E_k
+PASS k=3 s=3047/24208: rho=tau/(1-4s)=1.16938 in [1,4/3] (terms increase in N)
+PASS k=3 s=3047/24208: C1 N<=T^(3/5) slack 3131/30260 (0.10347)
+PASS k=3 s=3047/24208: C2 W>=N slack 509/6052 (0.08410)
+PASS k=3 s=3047/24208: C3 W<=N^(4/3) slack 739/9078 (0.08141)
+PASS k=3 s=3047/24208: C4 N^(1/2)W^2<=T^(3/2) slack 1095/12104 (0.09047)
+PASS k=3 s=3047/24208: C5 W<=sqrt(TN) slack 2029/12104 (0.16763)
+PASS k=3 s=3047/24208: C6 N^3/(TW)=o(1) [strict] slack 551/6052 (0.09104)
+PASS k=3 s=3047/24208: C7a sqrt(T/N)<=V^4 slack 3047/12104 (0.25173)
+PASS k=3 s=3047/24208: C7b W sqrt(N/T)<=V^4 slack 2113/12104 (0.17457)
+PASS k=3 s=3047/24208: C0 N>=T^(1/3) slack 2963/18156 (0.16320)
+PASS k=3 s=3047/24208 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=3 s=3047/24208 N=T^(1/3): C2 W>=N slack 0.05646
+PASS k=3 s=3047/24208 N=T^(1/3): C3 W<=N^(4/3) slack 0.05465
+PASS k=3 s=3047/24208 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.55374
+PASS k=3 s=3047/24208 N=T^(1/3): C5 W<=sqrt(TN) slack 0.27687
+PASS k=3 s=3047/24208 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.38979
+PASS k=3 s=3047/24208 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.17014
+PASS k=3 s=3047/24208 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.44701
+PASS k=3 s=3047/24208 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=3: E_k(sigma_-) = 1-4sigma_- (meets 4th moment)
+PASS k=3: E_k(sigma_+) = 2-12sigma_+ (meets 12th moment)
+PASS k=3: T2 = E_k exactly at sigma_+
+PASS k=4: range [175/1448, 13/98] nonempty
+PASS k=4 s=175/1448: T4 == E_k
+PASS k=4 s=175/1448: T3 == E_k (tau balances T3=T4)
+PASS k=4 s=175/1448: T2 <= E_k
+PASS k=4 s=175/1448: T1 < E_k
+PASS k=4 s=175/1448: rho=tau/(1-4s)=1.06952 in [1,4/3] (terms increase in N)
+PASS k=4 s=175/1448: C1 N<=T^(3/5) slack 151/1810 (0.08343)
+PASS k=4 s=175/1448: C2 W>=N slack 13/362 (0.03591)
+PASS k=4 s=175/1448: C3 W<=N^(4/3) slack 74/543 (0.13628)
+PASS k=4 s=175/1448: C4 N^(1/2)W^2<=T^(3/2) slack 99/724 (0.13674)
+PASS k=4 s=175/1448: C5 W<=sqrt(TN) slack 149/724 (0.20580)
+PASS k=4 s=175/1448: C6 N^3/(TW)=o(1) [strict] slack 1/362 (0.00276)
+PASS k=4 s=175/1448: C7a sqrt(T/N)<=V^4 slack 175/724 (0.24171)
+PASS k=4 s=175/1448: C7b W sqrt(N/T)<=V^4 slack 125/724 (0.17265)
+PASS k=4 s=175/1448: C0 N>=T^(1/3) slack 199/1086 (0.18324)
+PASS k=4 s=175/1448 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=4 s=175/1448 N=T^(1/3): C2 W>=N slack 0.02317
+PASS k=4 s=175/1448 N=T^(1/3): C3 W<=N^(4/3) slack 0.08794
+PASS k=4 s=175/1448 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.62032
+PASS k=4 s=175/1448 N=T^(1/3): C5 W<=sqrt(TN) slack 0.31016
+PASS k=4 s=175/1448 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.35651
+PASS k=4 s=175/1448 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.15009
+PASS k=4 s=175/1448 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.46025
+PASS k=4 s=175/1448 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=4 s=13/98: T4 == E_k
+PASS k=4 s=13/98: T3 == E_k (tau balances T3=T4)
+PASS k=4 s=13/98: T2 <= E_k
+PASS k=4 s=13/98: T1 < E_k
+PASS k=4 s=13/98: rho=tau/(1-4s)=1.21739 in [1,4/3] (terms increase in N)
+PASS k=4 s=13/98: C1 N<=T^(3/5) slack 32/245 (0.13061)
+PASS k=4 s=13/98: C2 W>=N slack 5/49 (0.10204)
+PASS k=4 s=13/98: C3 W<=N^(4/3) slack 8/147 (0.05442)
+PASS k=4 s=13/98: C4 N^(1/2)W^2<=T^(3/2) slack 6/49 (0.12245)
+PASS k=4 s=13/98: C5 W<=sqrt(TN) slack 8/49 (0.16327)
+PASS k=4 s=13/98: C6 N^3/(TW)=o(1) [strict] slack 8/49 (0.16327)
+PASS k=4 s=13/98: C7a sqrt(T/N)<=V^4 slack 13/49 (0.26531)
+PASS k=4 s=13/98: C7b W sqrt(N/T)<=V^4 slack 11/49 (0.22449)
+PASS k=4 s=13/98: C0 N>=T^(1/3) slack 20/147 (0.13605)
+PASS k=4 s=13/98 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=4 s=13/98 N=T^(1/3): C2 W>=N slack 0.07246
+PASS k=4 s=13/98 N=T^(1/3): C3 W<=N^(4/3) slack 0.03865
+PASS k=4 s=13/98 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.52174
+PASS k=4 s=13/98 N=T^(1/3): C5 W<=sqrt(TN) slack 0.26087
+PASS k=4 s=13/98 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.40580
+PASS k=4 s=13/98 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.19728
+PASS k=4 s=13/98 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.45815
+PASS k=4 s=13/98 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=4 s=17987/141904: T4 == E_k
+PASS k=4 s=17987/141904: T3 == E_k (tau balances T3=T4)
+PASS k=4 s=17987/141904: T2 <= E_k
+PASS k=4 s=17987/141904: T1 < E_k
+PASS k=4 s=17987/141904: rho=tau/(1-4s)=1.13992 in [1,4/3] (terms increase in N)
+PASS k=4 s=17987/141904: C1 N<=T^(3/5) slack 18983/177380 (0.10702)
+PASS k=4 s=17987/141904: C2 W>=N slack 2447/35476 (0.06898)
+PASS k=4 s=17987/141904: C3 W<=N^(4/3) slack 2537/26607 (0.09535)
+PASS k=4 s=17987/141904: C4 N^(1/2)W^2<=T^(3/2) slack 9195/70952 (0.12959)
+PASS k=4 s=17987/141904: C5 W<=sqrt(TN) slack 13093/70952 (0.18453)
+PASS k=4 s=17987/141904: C6 N^3/(TW)=o(1) [strict] slack 2945/35476 (0.08301)
+PASS k=4 s=17987/141904: C7a sqrt(T/N)<=V^4 slack 17987/70952 (0.25351)
+PASS k=4 s=17987/141904: C7b W sqrt(N/T)<=V^4 slack 14089/70952 (0.19857)
+PASS k=4 s=17987/141904: C0 N>=T^(1/3) slack 16991/106428 (0.15965)
+PASS k=4 s=17987/141904 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=4 s=17987/141904 N=T^(1/3): C2 W>=N slack 0.04664
+PASS k=4 s=17987/141904 N=T^(1/3): C3 W<=N^(4/3) slack 0.06447
+PASS k=4 s=17987/141904 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.57339
+PASS k=4 s=17987/141904 N=T^(1/3): C5 W<=sqrt(TN) slack 0.28669
+PASS k=4 s=17987/141904 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.37997
+PASS k=4 s=17987/141904 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.17369
+PASS k=4 s=17987/141904 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.46038
+PASS k=4 s=17987/141904 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=4: E_k(sigma_-) = 1-4sigma_- (meets 4th moment)
+PASS k=4: E_k(sigma_+) = 2-12sigma_+ (meets 12th moment)
+PASS k=4: T2 = E_k exactly at sigma_+
+PASS k=5: range [297/2440, 17/128] nonempty
+PASS k=5 s=297/2440: T4 == E_k
+PASS k=5 s=297/2440: T3 == E_k (tau balances T3=T4)
+PASS k=5 s=297/2440: T2 <= E_k
+PASS k=5 s=297/2440: T1 < E_k
+PASS k=5 s=297/2440: rho=tau/(1-4s)=1.05431 in [1,4/3] (terms increase in N)
+PASS k=5 s=297/2440: C1 N<=T^(3/5) slack 53/610 (0.08689)
+PASS k=5 s=297/2440: C2 W>=N slack 17/610 (0.02787)
+PASS k=5 s=297/2440: C3 W<=N^(4/3) slack 131/915 (0.14317)
+PASS k=5 s=297/2440: C4 N^(1/2)W^2<=T^(3/2) slack 197/1220 (0.16148)
+PASS k=5 s=297/2440: C5 W<=sqrt(TN) slack 263/1220 (0.21557)
+PASS k=5 s=297/2440: C6 N^3/(TW)=o(1) [strict] slack 1/610 (0.00164)
+PASS k=5 s=297/2440: C7a sqrt(T/N)<=V^4 slack 297/1220 (0.24344)
+PASS k=5 s=297/2440: C7b W sqrt(N/T)<=V^4 slack 231/1220 (0.18934)
+PASS k=5 s=297/2440: C0 N>=T^(1/3) slack 329/1830 (0.17978)
+PASS k=5 s=297/2440 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=5 s=297/2440 N=T^(1/3): C2 W>=N slack 0.01810
+PASS k=5 s=297/2440 N=T^(1/3): C3 W<=N^(4/3) slack 0.09301
+PASS k=5 s=297/2440 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.63046
+PASS k=5 s=297/2440 N=T^(1/3): C5 W<=sqrt(TN) slack 0.31523
+PASS k=5 s=297/2440 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.35144
+PASS k=5 s=297/2440 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.15355
+PASS k=5 s=297/2440 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.46878
+PASS k=5 s=297/2440 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=5 s=17/128: T4 == E_k
+PASS k=5 s=17/128: T3 == E_k (tau balances T3=T4)
+PASS k=5 s=17/128: T2 <= E_k
+PASS k=5 s=17/128: T1 < E_k
+PASS k=5 s=17/128: rho=tau/(1-4s)=1.20000 in [1,4/3] (terms increase in N)
+PASS k=5 s=17/128: C1 N<=T^(3/5) slack 21/160 (0.13125)
+PASS k=5 s=17/128: C2 W>=N slack 3/32 (0.09375)
+PASS k=5 s=17/128: C3 W<=N^(4/3) slack 1/16 (0.06250)
+PASS k=5 s=17/128: C4 N^(1/2)W^2<=T^(3/2) slack 9/64 (0.14062)
+PASS k=5 s=17/128: C5 W<=sqrt(TN) slack 11/64 (0.17188)
+PASS k=5 s=17/128: C6 N^3/(TW)=o(1) [strict] slack 5/32 (0.15625)
+PASS k=5 s=17/128: C7a sqrt(T/N)<=V^4 slack 17/64 (0.26562)
+PASS k=5 s=17/128: C7b W sqrt(N/T)<=V^4 slack 15/64 (0.23438)
+PASS k=5 s=17/128: C0 N>=T^(1/3) slack 13/96 (0.13542)
+PASS k=5 s=17/128 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=5 s=17/128 N=T^(1/3): C2 W>=N slack 0.06667
+PASS k=5 s=17/128 N=T^(1/3): C3 W<=N^(4/3) slack 0.04444
+PASS k=5 s=17/128 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.53333
+PASS k=5 s=17/128 N=T^(1/3): C5 W<=sqrt(TN) slack 0.26667
+PASS k=5 s=17/128 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.40000
+PASS k=5 s=17/128 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.19792
+PASS k=5 s=17/128 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.46458
+PASS k=5 s=17/128 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=5 s=9937/78080: T4 == E_k
+PASS k=5 s=9937/78080: T3 == E_k (tau balances T3=T4)
+PASS k=5 s=9937/78080: T2 <= E_k
+PASS k=5 s=9937/78080: T1 < E_k
+PASS k=5 s=9937/78080: rho=tau/(1-4s)=1.12387 in [1,4/3] (terms increase in N)
+PASS k=5 s=9937/78080: C1 N<=T^(3/5) slack 2129/19520 (0.10907)
+PASS k=5 s=9937/78080: C2 W>=N slack 1187/19520 (0.06081)
+PASS k=5 s=9937/78080: C3 W<=N^(4/3) slack 3011/29280 (0.10283)
+PASS k=5 s=9937/78080: C4 N^(1/2)W^2<=T^(3/2) slack 5897/39040 (0.15105)
+PASS k=5 s=9937/78080: C5 W<=sqrt(TN) slack 7563/39040 (0.19372)
+PASS k=5 s=9937/78080: C6 N^3/(TW)=o(1) [strict] slack 1541/19520 (0.07894)
+PASS k=5 s=9937/78080: C7a sqrt(T/N)<=V^4 slack 9937/39040 (0.25453)
+PASS k=5 s=9937/78080: C7b W sqrt(N/T)<=V^4 slack 8271/39040 (0.21186)
+PASS k=5 s=9937/78080: C0 N>=T^(1/3) slack 9229/58560 (0.15760)
+PASS k=5 s=9937/78080 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=5 s=9937/78080 N=T^(1/3): C2 W>=N slack 0.04129
+PASS k=5 s=9937/78080 N=T^(1/3): C3 W<=N^(4/3) slack 0.06982
+PASS k=5 s=9937/78080 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.58409
+PASS k=5 s=9937/78080 N=T^(1/3): C5 W<=sqrt(TN) slack 0.29204
+PASS k=5 s=9937/78080 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.37462
+PASS k=5 s=9937/78080 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.17573
+PASS k=5 s=9937/78080 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.46778
+PASS k=5 s=9937/78080 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=5: E_k(sigma_-) = 1-4sigma_- (meets 4th moment)
+PASS k=5: E_k(sigma_+) = 2-12sigma_+ (meets 12th moment)
+PASS k=5: T2 = E_k exactly at sigma_+
+PASS k=6: range [451/3688, 21/158] nonempty
+PASS k=6 s=451/3688: T4 == E_k
+PASS k=6 s=451/3688: T3 == E_k (tau balances T3=T4)
+PASS k=6 s=451/3688: T2 <= E_k
+PASS k=6 s=451/3688: T1 < E_k
+PASS k=6 s=451/3688: rho=tau/(1-4s)=1.04459 in [1,4/3] (terms increase in N)
+PASS k=6 s=451/3688: C1 N<=T^(3/5) slack 411/4610 (0.08915)
+PASS k=6 s=451/3688: C2 W>=N slack 21/922 (0.02278)
+PASS k=6 s=451/3688: C3 W<=N^(4/3) slack 68/461 (0.14751)
+PASS k=6 s=451/3688: C4 N^(1/2)W^2<=T^(3/2) slack 327/1844 (0.17733)
+PASS k=6 s=451/3688: C5 W<=sqrt(TN) slack 409/1844 (0.22180)
+PASS k=6 s=451/3688: C6 N^3/(TW)=o(1) [strict] slack 1/922 (0.00108)
+PASS k=6 s=451/3688: C7a sqrt(T/N)<=V^4 slack 451/1844 (0.24458)
+PASS k=6 s=451/3688: C7b W sqrt(N/T)<=V^4 slack 369/1844 (0.20011)
+PASS k=6 s=451/3688: C0 N>=T^(1/3) slack 491/2766 (0.17751)
+PASS k=6 s=451/3688 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=6 s=451/3688 N=T^(1/3): C2 W>=N slack 0.01486
+PASS k=6 s=451/3688 N=T^(1/3): C3 W<=N^(4/3) slack 0.09625
+PASS k=6 s=451/3688 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.63694
+PASS k=6 s=451/3688 N=T^(1/3): C5 W<=sqrt(TN) slack 0.31847
+PASS k=6 s=451/3688 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.34820
+PASS k=6 s=451/3688 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.15582
+PASS k=6 s=451/3688 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.47429
+PASS k=6 s=451/3688 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=6 s=21/158: T4 == E_k
+PASS k=6 s=21/158: T3 == E_k (tau balances T3=T4)
+PASS k=6 s=21/158: T2 <= E_k
+PASS k=6 s=21/158: T1 < E_k
+PASS k=6 s=21/158: rho=tau/(1-4s)=1.18919 in [1,4/3] (terms increase in N)
+PASS k=6 s=21/158: C1 N<=T^(3/5) slack 52/395 (0.13165)
+PASS k=6 s=21/158: C2 W>=N slack 7/79 (0.08861)
+PASS k=6 s=21/158: C3 W<=N^(4/3) slack 16/237 (0.06751)
+PASS k=6 s=21/158: C4 N^(1/2)W^2<=T^(3/2) slack 12/79 (0.15190)
+PASS k=6 s=21/158: C5 W<=sqrt(TN) slack 14/79 (0.17722)
+PASS k=6 s=21/158: C6 N^3/(TW)=o(1) [strict] slack 12/79 (0.15190)
+PASS k=6 s=21/158: C7a sqrt(T/N)<=V^4 slack 21/79 (0.26582)
+PASS k=6 s=21/158: C7b W sqrt(N/T)<=V^4 slack 19/79 (0.24051)
+PASS k=6 s=21/158: C0 N>=T^(1/3) slack 32/237 (0.13502)
+PASS k=6 s=21/158 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=6 s=21/158 N=T^(1/3): C2 W>=N slack 0.06306
+PASS k=6 s=21/158 N=T^(1/3): C3 W<=N^(4/3) slack 0.04805
+PASS k=6 s=21/158 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.54054
+PASS k=6 s=21/158 N=T^(1/3): C5 W<=sqrt(TN) slack 0.27027
+PASS k=6 s=21/158 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.39640
+PASS k=6 s=21/158 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.19831
+PASS k=6 s=21/158 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.46858
+PASS k=6 s=21/158 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=6 s=74353/582704: T4 == E_k
+PASS k=6 s=74353/582704: T3 == E_k (tau balances T3=T4)
+PASS k=6 s=74353/582704: T2 <= E_k
+PASS k=6 s=74353/582704: T1 < E_k
+PASS k=6 s=74353/582704: rho=tau/(1-4s)=1.11375 in [1,4/3] (terms increase in N)
+PASS k=6 s=74353/582704: C1 N<=T^(3/5) slack 80413/728380 (0.11040)
+PASS k=6 s=74353/582704: C2 W>=N slack 8113/145676 (0.05569)
+PASS k=6 s=74353/582704: C3 W<=N^(4/3) slack 11746/109257 (0.10751)
+PASS k=6 s=74353/582704: C4 N^(1/2)W^2<=T^(3/2) slack 47961/291352 (0.16462)
+PASS k=6 s=74353/582704: C5 W<=sqrt(TN) slack 58127/291352 (0.19951)
+PASS k=6 s=74353/582704: C6 N^3/(TW)=o(1) [strict] slack 11143/145676 (0.07649)
+PASS k=6 s=74353/582704: C7a sqrt(T/N)<=V^4 slack 74353/291352 (0.25520)
+PASS k=6 s=74353/582704: C7b W sqrt(N/T)<=V^4 slack 64187/291352 (0.22031)
+PASS k=6 s=74353/582704: C0 N>=T^(1/3) slack 68293/437028 (0.15627)
+PASS k=6 s=74353/582704 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=6 s=74353/582704 N=T^(1/3): C2 W>=N slack 0.03792
+PASS k=6 s=74353/582704 N=T^(1/3): C3 W<=N^(4/3) slack 0.07319
+PASS k=6 s=74353/582704 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.59083
+PASS k=6 s=74353/582704 N=T^(1/3): C5 W<=sqrt(TN) slack 0.29542
+PASS k=6 s=74353/582704 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.37125
+PASS k=6 s=74353/582704 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.17707
+PASS k=6 s=74353/582704 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.47248
+PASS k=6 s=74353/582704 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=6: E_k(sigma_-) = 1-4sigma_- (meets 4th moment)
+PASS k=6: E_k(sigma_+) = 2-12sigma_+ (meets 12th moment)
+PASS k=6: T2 = E_k exactly at sigma_+
+PASS k=7: range [637/5192, 25/188] nonempty
+PASS k=7 s=637/5192: T4 == E_k
+PASS k=7 s=637/5192: T3 == E_k (tau balances T3=T4)
+PASS k=7 s=637/5192: T2 <= E_k
+PASS k=7 s=637/5192: T1 < E_k
+PASS k=7 s=637/5192: rho=tau/(1-4s)=1.03782 in [1,4/3] (terms increase in N)
+PASS k=7 s=637/5192: C1 N<=T^(3/5) slack 589/6490 (0.09076)
+PASS k=7 s=637/5192: C2 W>=N slack 25/1298 (0.01926)
+PASS k=7 s=637/5192: C3 W<=N^(4/3) slack 293/1947 (0.15049)
+PASS k=7 s=637/5192: C4 N^(1/2)W^2<=T^(3/2) slack 489/2596 (0.18837)
+PASS k=7 s=637/5192: C5 W<=sqrt(TN) slack 587/2596 (0.22612)
+PASS k=7 s=637/5192: C6 N^3/(TW)=o(1) [strict] slack 1/1298 (0.00077)
+PASS k=7 s=637/5192: C7a sqrt(T/N)<=V^4 slack 637/2596 (0.24538)
+PASS k=7 s=637/5192: C7b W sqrt(N/T)<=V^4 slack 49/236 (0.20763)
+PASS k=7 s=637/5192: C0 N>=T^(1/3) slack 685/3894 (0.17591)
+PASS k=7 s=637/5192 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=7 s=637/5192 N=T^(1/3): C2 W>=N slack 0.01261
+PASS k=7 s=637/5192 N=T^(1/3): C3 W<=N^(4/3) slack 0.09850
+PASS k=7 s=637/5192 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.64145
+PASS k=7 s=637/5192 N=T^(1/3): C5 W<=sqrt(TN) slack 0.32073
+PASS k=7 s=637/5192 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.34594
+PASS k=7 s=637/5192 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.15742
+PASS k=7 s=637/5192 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.47815
+PASS k=7 s=637/5192 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=7 s=25/188: T4 == E_k
+PASS k=7 s=25/188: T3 == E_k (tau balances T3=T4)
+PASS k=7 s=25/188: T2 <= E_k
+PASS k=7 s=25/188: T1 < E_k
+PASS k=7 s=25/188: rho=tau/(1-4s)=1.18182 in [1,4/3] (terms increase in N)
+PASS k=7 s=25/188: C1 N<=T^(3/5) slack 31/235 (0.13191)
+PASS k=7 s=25/188: C2 W>=N slack 4/47 (0.08511)
+PASS k=7 s=25/188: C3 W<=N^(4/3) slack 10/141 (0.07092)
+PASS k=7 s=25/188: C4 N^(1/2)W^2<=T^(3/2) slack 15/94 (0.15957)
+PASS k=7 s=25/188: C5 W<=sqrt(TN) slack 17/94 (0.18085)
+PASS k=7 s=25/188: C6 N^3/(TW)=o(1) [strict] slack 7/47 (0.14894)
+PASS k=7 s=25/188: C7a sqrt(T/N)<=V^4 slack 25/94 (0.26596)
+PASS k=7 s=25/188: C7b W sqrt(N/T)<=V^4 slack 23/94 (0.24468)
+PASS k=7 s=25/188: C0 N>=T^(1/3) slack 19/141 (0.13475)
+PASS k=7 s=25/188 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=7 s=25/188 N=T^(1/3): C2 W>=N slack 0.06061
+PASS k=7 s=25/188 N=T^(1/3): C3 W<=N^(4/3) slack 0.05051
+PASS k=7 s=25/188 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.54545
+PASS k=7 s=25/188 N=T^(1/3): C5 W<=sqrt(TN) slack 0.27273
+PASS k=7 s=25/188 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.39394
+PASS k=7 s=25/188 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.19858
+PASS k=7 s=25/188 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.47131
+PASS k=7 s=25/188 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=7 s=62389/488048: T4 == E_k
+PASS k=7 s=62389/488048: T3 == E_k (tau balances T3=T4)
+PASS k=7 s=62389/488048: T2 <= E_k
+PASS k=7 s=62389/488048: T1 < E_k
+PASS k=7 s=62389/488048: rho=tau/(1-4s)=1.10679 in [1,4/3] (terms increase in N)
+PASS k=7 s=62389/488048: C1 N<=T^(3/5) slack 67921/610060 (0.11133)
+PASS k=7 s=62389/488048: C2 W>=N slack 6367/122012 (0.05218)
+PASS k=7 s=62389/488048: C3 W<=N^(4/3) slack 20261/183018 (0.11070)
+PASS k=7 s=62389/488048: C4 N^(1/2)W^2<=T^(3/2) slack 42453/244024 (0.17397)
+PASS k=7 s=62389/488048: C5 W<=sqrt(TN) slack 49655/244024 (0.20348)
+PASS k=7 s=62389/488048: C6 N^3/(TW)=o(1) [strict] slack 9133/122012 (0.07485)
+PASS k=7 s=62389/488048: C7a sqrt(T/N)<=V^4 slack 62389/244024 (0.25567)
+PASS k=7 s=62389/488048: C7b W sqrt(N/T)<=V^4 slack 5017/22184 (0.22615)
+PASS k=7 s=62389/488048: C0 N>=T^(1/3) slack 56857/366036 (0.15533)
+PASS k=7 s=62389/488048 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=7 s=62389/488048 N=T^(1/3): C2 W>=N slack 0.03560
+PASS k=7 s=62389/488048 N=T^(1/3): C3 W<=N^(4/3) slack 0.07552
+PASS k=7 s=62389/488048 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.59547
+PASS k=7 s=62389/488048 N=T^(1/3): C5 W<=sqrt(TN) slack 0.29774
+PASS k=7 s=62389/488048 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.36893
+PASS k=7 s=62389/488048 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.17800
+PASS k=7 s=62389/488048 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.47574
+PASS k=7 s=62389/488048 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=7: E_k(sigma_-) = 1-4sigma_- (meets 4th moment)
+PASS k=7: E_k(sigma_+) = 2-12sigma_+ (meets 12th moment)
+PASS k=7: T2 = E_k exactly at sigma_+
+PASS k=8: range [855/6952, 29/218] nonempty
+PASS k=8 s=855/6952: T4 == E_k
+PASS k=8 s=855/6952: T3 == E_k (tau balances T3=T4)
+PASS k=8 s=855/6952: T2 <= E_k
+PASS k=8 s=855/6952: T1 < E_k
+PASS k=8 s=855/6952: rho=tau/(1-4s)=1.03284 in [1,4/3] (terms increase in N)
+PASS k=8 s=855/6952: C1 N<=T^(3/5) slack 799/8690 (0.09194)
+PASS k=8 s=855/6952: C2 W>=N slack 29/1738 (0.01669)
+PASS k=8 s=855/6952: C3 W<=N^(4/3) slack 398/2607 (0.15267)
+PASS k=8 s=855/6952: C4 N^(1/2)W^2<=T^(3/2) slack 683/3476 (0.19649)
+PASS k=8 s=855/6952: C5 W<=sqrt(TN) slack 797/3476 (0.22929)
+PASS k=8 s=855/6952: C6 N^3/(TW)=o(1) [strict] slack 1/1738 (0.00058)
+PASS k=8 s=855/6952: C7a sqrt(T/N)<=V^4 slack 855/3476 (0.24597)
+PASS k=8 s=855/6952: C7b W sqrt(N/T)<=V^4 slack 741/3476 (0.21318)
+PASS k=8 s=855/6952: C0 N>=T^(1/3) slack 911/5214 (0.17472)
+PASS k=8 s=855/6952 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=8 s=855/6952 N=T^(1/3): C2 W>=N slack 0.01095
+PASS k=8 s=855/6952 N=T^(1/3): C3 W<=N^(4/3) slack 0.10016
+PASS k=8 s=855/6952 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.64477
+PASS k=8 s=855/6952 N=T^(1/3): C5 W<=sqrt(TN) slack 0.32239
+PASS k=8 s=855/6952 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.34428
+PASS k=8 s=855/6952 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.15861
+PASS k=8 s=855/6952 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.48100
+PASS k=8 s=855/6952 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=8 s=29/218: T4 == E_k
+PASS k=8 s=29/218: T3 == E_k (tau balances T3=T4)
+PASS k=8 s=29/218: T2 <= E_k
+PASS k=8 s=29/218: T1 < E_k
+PASS k=8 s=29/218: rho=tau/(1-4s)=1.17647 in [1,4/3] (terms increase in N)
+PASS k=8 s=29/218: C1 N<=T^(3/5) slack 72/545 (0.13211)
+PASS k=8 s=29/218: C2 W>=N slack 9/109 (0.08257)
+PASS k=8 s=29/218: C3 W<=N^(4/3) slack 8/109 (0.07339)
+PASS k=8 s=29/218: C4 N^(1/2)W^2<=T^(3/2) slack 18/109 (0.16514)
+PASS k=8 s=29/218: C5 W<=sqrt(TN) slack 20/109 (0.18349)
+PASS k=8 s=29/218: C6 N^3/(TW)=o(1) [strict] slack 16/109 (0.14679)
+PASS k=8 s=29/218: C7a sqrt(T/N)<=V^4 slack 29/109 (0.26606)
+PASS k=8 s=29/218: C7b W sqrt(N/T)<=V^4 slack 27/109 (0.24771)
+PASS k=8 s=29/218: C0 N>=T^(1/3) slack 44/327 (0.13456)
+PASS k=8 s=29/218 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=8 s=29/218 N=T^(1/3): C2 W>=N slack 0.05882
+PASS k=8 s=29/218 N=T^(1/3): C3 W<=N^(4/3) slack 0.05229
+PASS k=8 s=29/218 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.54902
+PASS k=8 s=29/218 N=T^(1/3): C5 W<=sqrt(TN) slack 0.27451
+PASS k=8 s=29/218 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.39216
+PASS k=8 s=29/218 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.19878
+PASS k=8 s=29/218 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.47329
+PASS k=8 s=29/218 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=8 s=193999/1515536: T4 == E_k
+PASS k=8 s=193999/1515536: T3 == E_k (tau balances T3=T4)
+PASS k=8 s=193999/1515536: T2 <= E_k
+PASS k=8 s=193999/1515536: T1 < E_k
+PASS k=8 s=193999/1515536: rho=tau/(1-4s)=1.10170 in [1,4/3] (terms increase in N)
+PASS k=8 s=193999/1515536: C1 N<=T^(3/5) slack 212227/1894420 (0.11203)
+PASS k=8 s=193999/1515536: C2 W>=N slack 18803/378884 (0.04963)
+PASS k=8 s=193999/1515536: C3 W<=N^(4/3) slack 32119/284163 (0.11303)
+PASS k=8 s=193999/1515536: C4 N^(1/2)W^2<=T^(3/2) slack 137015/757768 (0.18081)
+PASS k=8 s=193999/1515536: C5 W<=sqrt(TN) slack 156393/757768 (0.20639)
+PASS k=8 s=193999/1515536: C6 N^3/(TW)=o(1) [strict] slack 27917/378884 (0.07368)
+PASS k=8 s=193999/1515536: C7a sqrt(T/N)<=V^4 slack 193999/757768 (0.25601)
+PASS k=8 s=193999/1515536: C7b W sqrt(N/T)<=V^4 slack 174621/757768 (0.23044)
+PASS k=8 s=193999/1515536: C0 N>=T^(1/3) slack 175771/1136652 (0.15464)
+PASS k=8 s=193999/1515536 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=8 s=193999/1515536 N=T^(1/3): C2 W>=N slack 0.03390
+PASS k=8 s=193999/1515536 N=T^(1/3): C3 W<=N^(4/3) slack 0.07721
+PASS k=8 s=193999/1515536 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.59887
+PASS k=8 s=193999/1515536 N=T^(1/3): C5 W<=sqrt(TN) slack 0.29943
+PASS k=8 s=193999/1515536 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.36723
+PASS k=8 s=193999/1515536 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.17869
+PASS k=8 s=193999/1515536 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.47813
+PASS k=8 s=193999/1515536 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=8: E_k(sigma_-) = 1-4sigma_- (meets 4th moment)
+PASS k=8: E_k(sigma_+) = 2-12sigma_+ (meets 12th moment)
+PASS k=8: T2 = E_k exactly at sigma_+
+PASS k=9: range [1105/8968, 33/248] nonempty
+PASS k=9 s=1105/8968: T4 == E_k
+PASS k=9 s=1105/8968: T3 == E_k (tau balances T3=T4)
+PASS k=9 s=1105/8968: T2 <= E_k
+PASS k=9 s=1105/8968: T1 < E_k
+PASS k=9 s=1105/8968: rho=tau/(1-4s)=1.02902 in [1,4/3] (terms increase in N)
+PASS k=9 s=1105/8968: C1 N<=T^(3/5) slack 1041/11210 (0.09286)
+PASS k=9 s=1105/8968: C2 W>=N slack 33/2242 (0.01472)
+PASS k=9 s=1105/8968: C3 W<=N^(4/3) slack 173/1121 (0.15433)
+PASS k=9 s=1105/8968: C4 N^(1/2)W^2<=T^(3/2) slack 909/4484 (0.20272)
+PASS k=9 s=1105/8968: C5 W<=sqrt(TN) slack 1039/4484 (0.23171)
+PASS k=9 s=1105/8968: C6 N^3/(TW)=o(1) [strict] slack 1/2242 (0.00045)
+PASS k=9 s=1105/8968: C7a sqrt(T/N)<=V^4 slack 1105/4484 (0.24643)
+PASS k=9 s=1105/8968: C7b W sqrt(N/T)<=V^4 slack 975/4484 (0.21744)
+PASS k=9 s=1105/8968: C0 N>=T^(1/3) slack 1169/6726 (0.17380)
+PASS k=9 s=1105/8968 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=9 s=1105/8968 N=T^(1/3): C2 W>=N slack 0.00967
+PASS k=9 s=1105/8968 N=T^(1/3): C3 W<=N^(4/3) slack 0.10144
+PASS k=9 s=1105/8968 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.64732
+PASS k=9 s=1105/8968 N=T^(1/3): C5 W<=sqrt(TN) slack 0.32366
+PASS k=9 s=1105/8968 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.34301
+PASS k=9 s=1105/8968 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.15953
+PASS k=9 s=1105/8968 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.48319
+PASS k=9 s=1105/8968 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=9 s=33/248: T4 == E_k
+PASS k=9 s=33/248: T3 == E_k (tau balances T3=T4)
+PASS k=9 s=33/248: T2 <= E_k
+PASS k=9 s=33/248: T1 < E_k
+PASS k=9 s=33/248: rho=tau/(1-4s)=1.17241 in [1,4/3] (terms increase in N)
+PASS k=9 s=33/248: C1 N<=T^(3/5) slack 41/310 (0.13226)
+PASS k=9 s=33/248: C2 W>=N slack 5/62 (0.08065)
+PASS k=9 s=33/248: C3 W<=N^(4/3) slack 7/93 (0.07527)
+PASS k=9 s=33/248: C4 N^(1/2)W^2<=T^(3/2) slack 21/124 (0.16935)
+PASS k=9 s=33/248: C5 W<=sqrt(TN) slack 23/124 (0.18548)
+PASS k=9 s=33/248: C6 N^3/(TW)=o(1) [strict] slack 9/62 (0.14516)
+PASS k=9 s=33/248: C7a sqrt(T/N)<=V^4 slack 33/124 (0.26613)
+PASS k=9 s=33/248: C7b W sqrt(N/T)<=V^4 slack 1/4 (0.25000)
+PASS k=9 s=33/248: C0 N>=T^(1/3) slack 25/186 (0.13441)
+PASS k=9 s=33/248 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=9 s=33/248 N=T^(1/3): C2 W>=N slack 0.05747
+PASS k=9 s=33/248 N=T^(1/3): C3 W<=N^(4/3) slack 0.05364
+PASS k=9 s=33/248 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.55172
+PASS k=9 s=33/248 N=T^(1/3): C5 W<=sqrt(TN) slack 0.27586
+PASS k=9 s=33/248 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.39080
+PASS k=9 s=33/248 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.19892
+PASS k=9 s=33/248 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.47479
+PASS k=9 s=33/248 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=9 s=4453/34751: T4 == E_k
+PASS k=9 s=4453/34751: T3 == E_k (tau balances T3=T4)
+PASS k=9 s=4453/34751: T2 <= E_k
+PASS k=9 s=4453/34751: T1 < E_k
+PASS k=9 s=4453/34751: rho=tau/(1-4s)=1.09782 in [1,4/3] (terms increase in N)
+PASS k=9 s=4453/34751: C1 N<=T^(3/5) slack 19558/173755 (0.11256)
+PASS k=9 s=4453/34751: C2 W>=N slack 1657/34751 (0.04768)
+PASS k=9 s=4453/34751: C3 W<=N^(4/3) slack 11968/104253 (0.11480)
+PASS k=9 s=4453/34751: C4 N^(1/2)W^2<=T^(3/2) slack 6465/34751 (0.18604)
+PASS k=9 s=4453/34751: C5 W<=sqrt(TN) slack 7249/34751 (0.20860)
+PASS k=9 s=4453/34751: C6 N^3/(TW)=o(1) [strict] slack 2530/34751 (0.07280)
+PASS k=9 s=4453/34751: C7a sqrt(T/N)<=V^4 slack 8906/34751 (0.25628)
+PASS k=9 s=4453/34751: C7b W sqrt(N/T)<=V^4 slack 262/1121 (0.23372)
+PASS k=9 s=4453/34751: C0 N>=T^(1/3) slack 16066/104253 (0.15411)
+PASS k=9 s=4453/34751 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=9 s=4453/34751 N=T^(1/3): C2 W>=N slack 0.03261
+PASS k=9 s=4453/34751 N=T^(1/3): C3 W<=N^(4/3) slack 0.07850
+PASS k=9 s=4453/34751 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.60145
+PASS k=9 s=4453/34751 N=T^(1/3): C5 W<=sqrt(TN) slack 0.30073
+PASS k=9 s=4453/34751 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.36594
+PASS k=9 s=4453/34751 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.17923
+PASS k=9 s=4453/34751 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.47995
+PASS k=9 s=4453/34751 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=9: E_k(sigma_-) = 1-4sigma_- (meets 4th moment)
+PASS k=9: E_k(sigma_+) = 2-12sigma_+ (meets 12th moment)
+PASS k=9: T2 = E_k exactly at sigma_+
+PASS k=10: range [1387/11240, 37/278] nonempty
+PASS k=10 s=1387/11240: T4 == E_k
+PASS k=10 s=1387/11240: T3 == E_k (tau balances T3=T4)
+PASS k=10 s=1387/11240: T2 <= E_k
+PASS k=10 s=1387/11240: T1 < E_k
+PASS k=10 s=1387/11240: rho=tau/(1-4s)=1.02600 in [1,4/3] (terms increase in N)
+PASS k=10 s=1387/11240: C1 N<=T^(3/5) slack 263/2810 (0.09359)
+PASS k=10 s=1387/11240: C2 W>=N slack 37/2810 (0.01317)
+PASS k=10 s=1387/11240: C3 W<=N^(4/3) slack 656/4215 (0.15563)
+PASS k=10 s=1387/11240: C4 N^(1/2)W^2<=T^(3/2) slack 1167/5620 (0.20765)
+PASS k=10 s=1387/11240: C5 W<=sqrt(TN) slack 1313/5620 (0.23363)
+PASS k=10 s=1387/11240: C6 N^3/(TW)=o(1) [strict] slack 1/2810 (0.00036)
+PASS k=10 s=1387/11240: C7a sqrt(T/N)<=V^4 slack 1387/5620 (0.24680)
+PASS k=10 s=1387/11240: C7b W sqrt(N/T)<=V^4 slack 1241/5620 (0.22082)
+PASS k=10 s=1387/11240: C0 N>=T^(1/3) slack 1459/8430 (0.17307)
+PASS k=10 s=1387/11240 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=10 s=1387/11240 N=T^(1/3): C2 W>=N slack 0.00867
+PASS k=10 s=1387/11240 N=T^(1/3): C3 W<=N^(4/3) slack 0.10244
+PASS k=10 s=1387/11240 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.64933
+PASS k=10 s=1387/11240 N=T^(1/3): C5 W<=sqrt(TN) slack 0.32467
+PASS k=10 s=1387/11240 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.34200
+PASS k=10 s=1387/11240 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.16026
+PASS k=10 s=1387/11240 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.48493
+PASS k=10 s=1387/11240 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=10 s=37/278: T4 == E_k
+PASS k=10 s=37/278: T3 == E_k (tau balances T3=T4)
+PASS k=10 s=37/278: T2 <= E_k
+PASS k=10 s=37/278: T1 < E_k
+PASS k=10 s=37/278: rho=tau/(1-4s)=1.16923 in [1,4/3] (terms increase in N)
+PASS k=10 s=37/278: C1 N<=T^(3/5) slack 92/695 (0.13237)
+PASS k=10 s=37/278: C2 W>=N slack 11/139 (0.07914)
+PASS k=10 s=37/278: C3 W<=N^(4/3) slack 32/417 (0.07674)
+PASS k=10 s=37/278: C4 N^(1/2)W^2<=T^(3/2) slack 24/139 (0.17266)
+PASS k=10 s=37/278: C5 W<=sqrt(TN) slack 26/139 (0.18705)
+PASS k=10 s=37/278: C6 N^3/(TW)=o(1) [strict] slack 20/139 (0.14388)
+PASS k=10 s=37/278: C7a sqrt(T/N)<=V^4 slack 37/139 (0.26619)
+PASS k=10 s=37/278: C7b W sqrt(N/T)<=V^4 slack 35/139 (0.25180)
+PASS k=10 s=37/278: C0 N>=T^(1/3) slack 56/417 (0.13429)
+PASS k=10 s=37/278 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=10 s=37/278 N=T^(1/3): C2 W>=N slack 0.05641
+PASS k=10 s=37/278 N=T^(1/3): C3 W<=N^(4/3) slack 0.05470
+PASS k=10 s=37/278 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.55385
+PASS k=10 s=37/278 N=T^(1/3): C5 W<=sqrt(TN) slack 0.27692
+PASS k=10 s=37/278 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.38974
+PASS k=10 s=37/278 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.19904
+PASS k=10 s=37/278 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.47596
+PASS k=10 s=37/278 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=10 s=400733/3124720: T4 == E_k
+PASS k=10 s=400733/3124720: T3 == E_k (tau balances T3=T4)
+PASS k=10 s=400733/3124720: T2 <= E_k
+PASS k=10 s=400733/3124720: T1 < E_k
+PASS k=10 s=400733/3124720: rho=tau/(1-4s)=1.09476 in [1,4/3] (terms increase in N)
+PASS k=10 s=400733/3124720: C1 N<=T^(3/5) slack 88261/781180 (0.11298)
+PASS k=10 s=400733/3124720: C2 W>=N slack 36053/781180 (0.04615)
+PASS k=10 s=400733/3124720: C3 W<=N^(4/3) slack 68072/585885 (0.11619)
+PASS k=10 s=400733/3124720: C4 N^(1/2)W^2<=T^(3/2) slack 297093/1562360 (0.19016)
+PASS k=10 s=400733/3124720: C5 W<=sqrt(TN) slack 328627/1562360 (0.21034)
+PASS k=10 s=400733/3124720: C6 N^3/(TW)=o(1) [strict] slack 56339/781180 (0.07212)
+PASS k=10 s=400733/3124720: C7a sqrt(T/N)<=V^4 slack 400733/1562360 (0.25649)
+PASS k=10 s=400733/3124720: C7b W sqrt(N/T)<=V^4 slack 369199/1562360 (0.23631)
+PASS k=10 s=400733/3124720: C0 N>=T^(1/3) slack 360161/2343540 (0.15368)
+PASS k=10 s=400733/3124720 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=10 s=400733/3124720 N=T^(1/3): C2 W>=N slack 0.03159
+PASS k=10 s=400733/3124720 N=T^(1/3): C3 W<=N^(4/3) slack 0.07952
+PASS k=10 s=400733/3124720 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.60349
+PASS k=10 s=400733/3124720 N=T^(1/3): C5 W<=sqrt(TN) slack 0.30175
+PASS k=10 s=400733/3124720 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.36492
+PASS k=10 s=400733/3124720 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.17965
+PASS k=10 s=400733/3124720 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.48140
+PASS k=10 s=400733/3124720 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=10: E_k(sigma_-) = 1-4sigma_- (meets 4th moment)
+PASS k=10: E_k(sigma_+) = 2-12sigma_+ (meets 12th moment)
+PASS k=10: T2 = E_k exactly at sigma_+
+PASS k=11: range [1701/13768, 41/308] nonempty
+PASS k=11 s=1701/13768: T4 == E_k
+PASS k=11 s=1701/13768: T3 == E_k (tau balances T3=T4)
+PASS k=11 s=1701/13768: T2 <= E_k
+PASS k=11 s=1701/13768: T1 < E_k
+PASS k=11 s=1701/13768: rho=tau/(1-4s)=1.02355 in [1,4/3] (terms increase in N)
+PASS k=11 s=1701/13768: C1 N<=T^(3/5) slack 1621/17210 (0.09419)
+PASS k=11 s=1701/13768: C2 W>=N slack 41/3442 (0.01191)
+PASS k=11 s=1701/13768: C3 W<=N^(4/3) slack 809/5163 (0.15669)
+PASS k=11 s=1701/13768: C4 N^(1/2)W^2<=T^(3/2) slack 1457/6884 (0.21165)
+PASS k=11 s=1701/13768: C5 W<=sqrt(TN) slack 1619/6884 (0.23518)
+PASS k=11 s=1701/13768: C6 N^3/(TW)=o(1) [strict] slack 1/3442 (0.00029)
+PASS k=11 s=1701/13768: C7a sqrt(T/N)<=V^4 slack 1701/6884 (0.24709)
+PASS k=11 s=1701/13768: C7b W sqrt(N/T)<=V^4 slack 1539/6884 (0.22356)
+PASS k=11 s=1701/13768: C0 N>=T^(1/3) slack 1781/10326 (0.17248)
+PASS k=11 s=1701/13768 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=11 s=1701/13768 N=T^(1/3): C2 W>=N slack 0.00785
+PASS k=11 s=1701/13768 N=T^(1/3): C3 W<=N^(4/3) slack 0.10326
+PASS k=11 s=1701/13768 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.65097
+PASS k=11 s=1701/13768 N=T^(1/3): C5 W<=sqrt(TN) slack 0.32548
+PASS k=11 s=1701/13768 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.34118
+PASS k=11 s=1701/13768 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.16086
+PASS k=11 s=1701/13768 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.48634
+PASS k=11 s=1701/13768 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=11 s=41/308: T4 == E_k
+PASS k=11 s=41/308: T3 == E_k (tau balances T3=T4)
+PASS k=11 s=41/308: T2 <= E_k
+PASS k=11 s=41/308: T1 < E_k
+PASS k=11 s=41/308: rho=tau/(1-4s)=1.16667 in [1,4/3] (terms increase in N)
+PASS k=11 s=41/308: C1 N<=T^(3/5) slack 51/385 (0.13247)
+PASS k=11 s=41/308: C2 W>=N slack 6/77 (0.07792)
+PASS k=11 s=41/308: C3 W<=N^(4/3) slack 6/77 (0.07792)
+PASS k=11 s=41/308: C4 N^(1/2)W^2<=T^(3/2) slack 27/154 (0.17532)
+PASS k=11 s=41/308: C5 W<=sqrt(TN) slack 29/154 (0.18831)
+PASS k=11 s=41/308: C6 N^3/(TW)=o(1) [strict] slack 1/7 (0.14286)
+PASS k=11 s=41/308: C7a sqrt(T/N)<=V^4 slack 41/154 (0.26623)
+PASS k=11 s=41/308: C7b W sqrt(N/T)<=V^4 slack 39/154 (0.25325)
+PASS k=11 s=41/308: C0 N>=T^(1/3) slack 31/231 (0.13420)
+PASS k=11 s=41/308 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=11 s=41/308 N=T^(1/3): C2 W>=N slack 0.05556
+PASS k=11 s=41/308 N=T^(1/3): C3 W<=N^(4/3) slack 0.05556
+PASS k=11 s=41/308 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.55556
+PASS k=11 s=41/308 N=T^(1/3): C5 W<=sqrt(TN) slack 0.27778
+PASS k=11 s=41/308 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.38889
+PASS k=11 s=41/308 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.19913
+PASS k=11 s=41/308 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.47691
+PASS k=11 s=41/308 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=11 s=272099/2120272: T4 == E_k
+PASS k=11 s=272099/2120272: T3 == E_k (tau balances T3=T4)
+PASS k=11 s=272099/2120272: T2 <= E_k
+PASS k=11 s=272099/2120272: T1 < E_k
+PASS k=11 s=272099/2120272: rho=tau/(1-4s)=1.09229 in [1,4/3] (terms increase in N)
+PASS k=11 s=272099/2120272: C1 N<=T^(3/5) slack 300359/2650340 (0.11333)
+PASS k=11 s=272099/2120272: C2 W>=N slack 23809/530068 (0.04492)
+PASS k=11 s=272099/2120272: C3 W<=N^(4/3) slack 93271/795102 (0.11731)
+PASS k=11 s=272099/2120272: C4 N^(1/2)W^2<=T^(3/2) slack 205123/1060136 (0.19349)
+PASS k=11 s=272099/2120272: C5 W<=sqrt(TN) slack 224481/1060136 (0.21175)
+PASS k=11 s=272099/2120272: C6 N^3/(TW)=o(1) [strict] slack 3449/48188 (0.07157)
+PASS k=11 s=272099/2120272: C7a sqrt(T/N)<=V^4 slack 272099/1060136 (0.25666)
+PASS k=11 s=272099/2120272: C7b W sqrt(N/T)<=V^4 slack 252741/1060136 (0.23840)
+PASS k=11 s=272099/2120272: C0 N>=T^(1/3) slack 243839/1590204 (0.15334)
+PASS k=11 s=272099/2120272 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=11 s=272099/2120272 N=T^(1/3): C2 W>=N slack 0.03076
+PASS k=11 s=272099/2120272 N=T^(1/3): C3 W<=N^(4/3) slack 0.08035
+PASS k=11 s=272099/2120272 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.60514
+PASS k=11 s=272099/2120272 N=T^(1/3): C5 W<=sqrt(TN) slack 0.30257
+PASS k=11 s=272099/2120272 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.36410
+PASS k=11 s=272099/2120272 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.18000
+PASS k=11 s=272099/2120272 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.48256
+PASS k=11 s=272099/2120272 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=11: E_k(sigma_-) = 1-4sigma_- (meets 4th moment)
+PASS k=11: E_k(sigma_+) = 2-12sigma_+ (meets 12th moment)
+PASS k=11: T2 = E_k exactly at sigma_+
+PASS k=12: range [2047/16552, 45/338] nonempty
+PASS k=12 s=2047/16552: T4 == E_k
+PASS k=12 s=2047/16552: T3 == E_k (tau balances T3=T4)
+PASS k=12 s=2047/16552: T2 <= E_k
+PASS k=12 s=2047/16552: T1 < E_k
+PASS k=12 s=2047/16552: rho=tau/(1-4s)=1.02152 in [1,4/3] (terms increase in N)
+PASS k=12 s=2047/16552: C1 N<=T^(3/5) slack 1959/20690 (0.09468)
+PASS k=12 s=2047/16552: C2 W>=N slack 45/4138 (0.01087)
+PASS k=12 s=2047/16552: C3 W<=N^(4/3) slack 326/2069 (0.15756)
+PASS k=12 s=2047/16552: C4 N^(1/2)W^2<=T^(3/2) slack 1779/8276 (0.21496)
+PASS k=12 s=2047/16552: C5 W<=sqrt(TN) slack 1957/8276 (0.23647)
+PASS k=12 s=2047/16552: C6 N^3/(TW)=o(1) [strict] slack 1/4138 (0.00024)
+PASS k=12 s=2047/16552: C7a sqrt(T/N)<=V^4 slack 2047/8276 (0.24734)
+PASS k=12 s=2047/16552: C7b W sqrt(N/T)<=V^4 slack 1869/8276 (0.22583)
+PASS k=12 s=2047/16552: C0 N>=T^(1/3) slack 2135/12414 (0.17198)
+PASS k=12 s=2047/16552 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=12 s=2047/16552 N=T^(1/3): C2 W>=N slack 0.00717
+PASS k=12 s=2047/16552 N=T^(1/3): C3 W<=N^(4/3) slack 0.10394
+PASS k=12 s=2047/16552 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.65232
+PASS k=12 s=2047/16552 N=T^(1/3): C5 W<=sqrt(TN) slack 0.32616
+PASS k=12 s=2047/16552 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.34051
+PASS k=12 s=2047/16552 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.16135
+PASS k=12 s=2047/16552 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.48751
+PASS k=12 s=2047/16552 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=12 s=45/338: T4 == E_k
+PASS k=12 s=45/338: T3 == E_k (tau balances T3=T4)
+PASS k=12 s=45/338: T2 <= E_k
+PASS k=12 s=45/338: T1 < E_k
+PASS k=12 s=45/338: rho=tau/(1-4s)=1.16456 in [1,4/3] (terms increase in N)
+PASS k=12 s=45/338: C1 N<=T^(3/5) slack 112/845 (0.13254)
+PASS k=12 s=45/338: C2 W>=N slack 1/13 (0.07692)
+PASS k=12 s=45/338: C3 W<=N^(4/3) slack 40/507 (0.07890)
+PASS k=12 s=45/338: C4 N^(1/2)W^2<=T^(3/2) slack 30/169 (0.17751)
+PASS k=12 s=45/338: C5 W<=sqrt(TN) slack 32/169 (0.18935)
+PASS k=12 s=45/338: C6 N^3/(TW)=o(1) [strict] slack 24/169 (0.14201)
+PASS k=12 s=45/338: C7a sqrt(T/N)<=V^4 slack 45/169 (0.26627)
+PASS k=12 s=45/338: C7b W sqrt(N/T)<=V^4 slack 43/169 (0.25444)
+PASS k=12 s=45/338: C0 N>=T^(1/3) slack 68/507 (0.13412)
+PASS k=12 s=45/338 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=12 s=45/338 N=T^(1/3): C2 W>=N slack 0.05485
+PASS k=12 s=45/338 N=T^(1/3): C3 W<=N^(4/3) slack 0.05626
+PASS k=12 s=45/338 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.55696
+PASS k=12 s=45/338 N=T^(1/3): C5 W<=sqrt(TN) slack 0.27848
+PASS k=12 s=45/338 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.38819
+PASS k=12 s=45/338 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.19921
+PASS k=12 s=45/338 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.47769
+PASS k=12 s=45/338 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=12 s=718363/5594576: T4 == E_k
+PASS k=12 s=718363/5594576: T3 == E_k (tau balances T3=T4)
+PASS k=12 s=718363/5594576: T2 <= E_k
+PASS k=12 s=718363/5594576: T1 < E_k
+PASS k=12 s=718363/5594576: rho=tau/(1-4s)=1.09026 in [1,4/3] (terms increase in N)
+PASS k=12 s=718363/5594576: C1 N<=T^(3/5) slack 794527/6993220 (0.11361)
+PASS k=12 s=718363/5594576: C2 W>=N slack 4723/107588 (0.04390)
+PASS k=12 s=718363/5594576: C3 W<=N^(4/3) slack 124021/1048983 (0.11823)
+PASS k=12 s=718363/5594576: C4 N^(1/2)W^2<=T^(3/2) slack 548931/2797288 (0.19624)
+PASS k=12 s=718363/5594576: C5 W<=sqrt(TN) slack 595565/2797288 (0.21291)
+PASS k=12 s=718363/5594576: C6 N^3/(TW)=o(1) [strict] slack 99481/1398644 (0.07113)
+PASS k=12 s=718363/5594576: C7a sqrt(T/N)<=V^4 slack 718363/2797288 (0.25681)
+PASS k=12 s=718363/5594576: C7b W sqrt(N/T)<=V^4 slack 671729/2797288 (0.24014)
+PASS k=12 s=718363/5594576: C0 N>=T^(1/3) slack 642199/4195932 (0.15305)
+PASS k=12 s=718363/5594576 N=T^(1/3): C1 N<=T^(3/5) slack 0.26667
+PASS k=12 s=718363/5594576 N=T^(1/3): C2 W>=N slack 0.03009
+PASS k=12 s=718363/5594576 N=T^(1/3): C3 W<=N^(4/3) slack 0.08103
+PASS k=12 s=718363/5594576 N=T^(1/3): C4 N^(1/2)W^2<=T^(3/2) slack 0.60650
+PASS k=12 s=718363/5594576 N=T^(1/3): C5 W<=sqrt(TN) slack 0.30325
+PASS k=12 s=718363/5594576 N=T^(1/3): C6 N^3/(TW)=o(1) [strict] slack 0.36342
+PASS k=12 s=718363/5594576 N=T^(1/3): C7a sqrt(T/N)<=V^4 slack 0.18028
+PASS k=12 s=718363/5594576 N=T^(1/3): C7b W sqrt(N/T)<=V^4 slack 0.48353
+PASS k=12 s=718363/5594576 N=T^(1/3): C0 N>=T^(1/3) slack 0.00000
+PASS k=12: E_k(sigma_-) = 1-4sigma_- (meets 4th moment)
+PASS k=12: E_k(sigma_+) = 2-12sigma_+ (meets 12th moment)
+PASS k=12: T2 = E_k exactly at sigma_+
+PASS Thm 1.3: N(T,V) << T^(24/17) V^(-128/17) on [T^(7/60),T^(5/38)]
+PASS Thm 1.1: sixth moment exponent 37/30 = 5/4 - 1/60
+PASS k=6: E_6 = (1070-6164s)/619
+PASS k=6 range [451/3688, 21/158]
+PASS TY m=10 pair B(p_10,q_10) = (64/135,122/243)
+PASS Ivic/TY bound T^593/288 V^-3587/288
+PASS sigma_2 = 58907/445121
+PASS twelfth moment exponent 889722/445121 = 2 - 520/445121
+PASS sigma_1 <= sigma_2 <= sigma_+(6)
+PASS other ranges below the max
+exponent pairs 13761, bounds 13823, kept 23 (classical kept 174), t=3.9s
+   kept: 4th moment (Hardy-Littlewood/Ingham): T V^-4
+   kept: 12th moment (Heath-Brown 1978): T^2 V^-12
+   kept: Heath-Brown auxiliary (ANTEDB hb-12-aux): T V^-6 + T^5 V^-32
+   kept: Ivic Thm 8.2 with Bourgain (13/84,55/84) = (13/84,55/84)
+   kept: Ivic Thm 8.2 with B.TY24 Lemma 1.1 #1 = (10089/51284,47947/76926)
+   kept: Ivic Thm 8.2 with B.TY24 Lemma 1.1 #2 = (195/796,235/398)
+   kept: Ivic Thm 8.2 with B.TY24 Lemma 1.1 #3 = (10333/38033,43591/76066)
+   kept: Ivic Thm 8.2 with B.TTY25 new-exp-pair #1 = (178/641,365/641)
+   kept: Ivic Thm 8.2 with B.TTY25 new-exp-pair #2 = (1371394/4856993,2754695/4856993)
+   kept: Ivic Thm 8.2 with B.TTY25 new-exp-pair #3 = (258221/702192,186317/351096)
+   kept: Ivic Thm 8.2 with B.TTY25 new-exp-pair #4 = (3316/8695,914/1739)
+   kept: Ivic Thm 8.2 with B.HB17 (p_6,q_6) = (13/30,51/100)
+   kept: Ivic Thm 8.2 with B.HB17 (p_7,q_7) = (85/189,41/81)
+   kept: Ivic Thm 8.2 with B.HB17 (p_8,q_8) = (129/280,247/490)
+   kept: Ivic Thm 8.2 with B.HB17 (p_9,q_9) = (371/792,177/352)
+   kept: Ivic Thm 8.2 with B.HB17 (p_10,q_10) = (64/135,122/243)
+   kept: Ivic Thm 8.2 with B.A.TY24 Lemma 1.1 #1 = (107193/345640,47947/86410)
+   kept: Ivic Thm 8.2 with B.A.TY24 Lemma 1.1 #2 = (593/1736,235/434)
+   kept: DFP Thm 8.1 k=2: T^(24/17) V^(-128/17)
+   kept: DFP Thm 8.1 k=3: T^(242/157) V^(-1340/157)
+   kept: DFP Thm 8.1 k=4: T^(454/279) V^(-2564/279)
+   kept: DFP Thm 8.1 k=5: T^(730/433) V^(-4172/433)
+   kept: DFP Thm 8.1 k=6: T^(1070/619) V^(-6164/619)
+envelope candidate vertices: 258 (classical 14818), t=29.7s
+=== TABLE: mu*(A) = max(1, sup_s A s + E*(s)); before = DFP printed (4th, 37/30, 2-520/445121) + Hoelder ===
+A=9/2: mu*=127/120 = 1.0583333 (s*=7/60, 4th moment (Hardy-Littlewood/Ingham): T V^-4); before=1.0583333; classical=1.0625000; delta*=0.0041667 vs 0.0041667
+A=5: mu*=67/60 = 1.1166667 (s*=7/60, 4th moment (Hardy-Littlewood/Ingham): T V^-4); before=1.1166667; classical=1.1250000; delta*=0.0083333 vs 0.0083333
+A=11/2: mu*=47/40 = 1.1750000 (s*=7/60, 4th moment (Hardy-Littlewood/Ingham): T V^-4); before=1.1750000; classical=1.1875000; delta*=0.0125000 vs 0.0125000
+A=6: mu*=37/30 = 1.2333333 (s*=7/60, 4th moment (Hardy-Littlewood/Ingham): T V^-4); before=1.2333333; classical=1.2500000; delta*=0.0166667 vs 0.0166667
+A=13/2: mu*=31/24 = 1.2916667 (s*=7/60, 4th moment (Hardy-Littlewood/Ingham): T V^-4); before=1.2971249; classical=1.3125000; delta*=0.0208333 vs 0.0153751
+A=7: mu*=27/20 = 1.3500000 (s*=7/60, 4th moment (Hardy-Littlewood/Ingham): T V^-4); before=1.3609164; classical=1.3750000; delta*=0.0250000 vs 0.0140836
+A=15/2: mu*=169/120 = 1.4083333 (s*=7/60, 4th moment (Hardy-Littlewood/Ingham): T V^-4); before=1.4247079; classical=1.4375000; delta*=0.0291667 vs 0.0127921
+A=8: mu*=988/671 = 1.4724292 (s*=173/1342, DFP Thm 8.1 k=2: T^(24/17) V^(-128/17)); before=1.4884995; classical=1.5000000; delta*=0.0275708 vs 0.0115005
+A=17/2: mu*=375/244 = 1.5368852 (s*=173/1342, DFP Thm 8.1 k=2: T^(24/17) V^(-128/17)); before=1.5522910; classical=1.5625000; delta*=0.0256148 vs 0.0102090
+A=9: mu*=2873/1793 = 1.6023424 (s*=235/1793, DFP Thm 8.1 k=3: T^(242/157) V^(-1340/157)); before=1.6160826; classical=1.6250000; delta*=0.0226576 vs 0.0089174
+A=19/2: mu*=11213/6722 = 1.6681047 (s*=443/3361, DFP Thm 8.1 k=4: T^(454/279) V^(-2564/279)); before=1.6798741; classical=1.6875000; delta*=0.0193953 vs 0.0076259
+A=10: mu*=771908/445121 = 1.7341532 (s*=58907/445121, Ivic Thm 8.2 with B.HB17 (p_10,q_10) = (64/135,122/243)); before=1.7436656; classical=1.7500000; delta*=0.0158468 vs 0.0063344
+A=21/2: mu*=1602723/890242 = 1.8003228 (s*=58907/445121, Ivic Thm 8.2 with B.HB17 (p_10,q_10) = (64/135,122/243)); before=1.8074572; classical=1.8125000; delta*=0.0121772 vs 0.0050428
+A=11: mu*=830815/445121 = 1.8664925 (s*=58907/445121, Ivic Thm 8.2 with B.HB17 (p_10,q_10) = (64/135,122/243)); before=1.8712487; classical=1.8750000; delta*=0.0085075 vs 0.0037513
+A=23/2: mu*=1720537/890242 = 1.9326621 (s*=58907/445121, Ivic Thm 8.2 with B.HB17 (p_10,q_10) = (64/135,122/243)); before=1.9350402; classical=1.9375000; delta*=0.0048379 vs 0.0024598
+A=12: mu*=889722/445121 = 1.9988318 (s*=58907/445121, Ivic Thm 8.2 with B.HB17 (p_10,q_10) = (64/135,122/243)); before=1.9988318; classical=2.0000000; delta*=0.0011682 vs 0.0011682
+=== CURVE on [4,12]: mu*(A) = A s_j + e_j on the A-intervals below ===
+  A in [4, 128/17]: mu*(A) = 7/60 A + 8/15  [4th moment (Hardy-Littlewood/Ingham): T V^-4]
+  A in [128/17, 1340/157]: mu*(A) = 173/1342 A + 296/671  [DFP Thm 8.1 k=2: T^(24/17) V^(-128/17)]
+  A in [1340/157, 2564/279]: mu*(A) = 235/1793 A + 758/1793  [DFP Thm 8.1 k=3: T^(242/157) V^(-1340/157)]
+  A in [2564/279, 4172/433]: mu*(A) = 443/3361 A + 1398/3361  [DFP Thm 8.1 k=4: T^(454/279) V^(-2564/279)]
+  A in [4172/433, 6164/619]: mu*(A) = 715/5409 A + 2230/5409  [DFP Thm 8.1 k=5: T^(730/433) V^(-4172/433)]
+  A in [6164/619, 12]: mu*(A) = 58907/445121 A + 182838/445121  [Ivic Thm 8.2 with B.HB17 (p_10,q_10) = (64/135,122/243)]
+breakpoint A=128/17: mu*=24/17 (1.4117647), before=1.4284604, gap=0.0166957
+breakpoint A=1340/157: mu*=242/157 (1.5414013), before=1.5567605, gap=0.0153592
+breakpoint A=2564/279: mu*=454/279 (1.6272401), before=1.6403188, gap=0.0130786
+breakpoint A=4172/433: mu*=730/433 (1.6859122), before=1.6971111, gap=0.0111988
+breakpoint A=6164/619: mu*=1070/619 (1.7285945), before=1.7383067, gap=0.0097122
+PASS largest gain 0.0166957 at A=128/17, where mu*=24/17
+PASS A=9/2: mu* equals Hoelder(4, 6) (no gain for A <= 6)
+PASS A=5: mu* equals Hoelder(4, 6) (no gain for A <= 6)
+PASS A=11/2: mu* equals Hoelder(4, 6) (no gain for A <= 6)
+PASS A=6: mu* equals Hoelder(4, 6) (no gain for A <= 6)
+PASS A=13/2: mu* < before by 0.0054582
+PASS A=7: mu* < before by 0.0109164
+PASS A=15/2: mu* < before by 0.0163746
+PASS A=8: mu* < before by 0.0160703
+PASS A=17/2: mu* < before by 0.0154058
+PASS A=9: mu* < before by 0.0137401
+PASS A=19/2: mu* < before by 0.0117694
+PASS A=10: mu* < before by 0.0095124
+PASS A=21/2: mu* < before by 0.0071343
+PASS A=11: mu* < before by 0.0047562
+PASS A=23/2: mu* < before by 0.0023781
+PASS A=12: mu* = printed twelfth moment
+=== PART 5: the curve mu*(A), 4 < A <= 12, and the range above 12 ===
+mu*(A) = max_j (A s_j + e_j); maximising vertices for A in [4,14]:
+  A in [4, 128/17] ~ [4.00000,7.52941]: s_j=7/60 (0.116667), e_j=E*(s_j)=8/15 (0.533333) [4th moment (Hardy-Littlewood/Ingham): T V^-4]
+  A in [128/17, 1340/157] ~ [7.52941,8.53503]: s_j=173/1342 (0.128912), e_j=E*(s_j)=296/671 (0.441133) [DFP Thm 8.1 k=2: T^(24/17) V^(-128/17)]
+  A in [1340/157, 2564/279] ~ [8.53503,9.18996]: s_j=235/1793 (0.131065), e_j=E*(s_j)=758/1793 (0.422755) [DFP Thm 8.1 k=3: T^(242/157) V^(-1340/157)]
+  A in [2564/279, 4172/433] ~ [9.18996,9.63510]: s_j=443/3361 (0.131806), e_j=E*(s_j)=1398/3361 (0.415948) [DFP Thm 8.1 k=4: T^(454/279) V^(-2564/279)]
+  A in [4172/433, 6164/619] ~ [9.63510,9.95800]: s_j=715/5409 (0.132187), e_j=E*(s_j)=2230/5409 (0.412276) [DFP Thm 8.1 k=5: T^(730/433) V^(-4172/433)]
+  A in [6164/619, 3587/288] ~ [9.95800,12.45486]: s_j=58907/445121 (0.132339), e_j=E*(s_j)=182838/445121 (0.410760) [Ivic Thm 8.2 with B.HB17 (p_10,q_10) = (64/135,122/243)]
+  A in [3587/288, 4661/371] ~ [12.45486,12.56334]: s_j=23/173 (0.132948), e_j=E*(s_j)=279/692 (0.403179) [Ivic Thm 8.2 with B.HB17 (p_9,q_9) = (371/792,177/352)]
+  A in [4661/371, 3828/301] ~ [12.56334,12.71761]: s_j=37/276 (0.134058), e_j=E*(s_j)=188/483 (0.389234) [Ivic Thm 8.2 with B.HB17 (p_8,q_8) = (129/280,247/490)]
+  A in [3828/301, 3302/255] ~ [12.71761,12.94902]: s_j=29/214 (0.135514), e_j=E*(s_j)=119/321 (0.370717) [Ivic Thm 8.2 with B.HB17 (p_7,q_7) = (85/189,41/81)]
+  A in [3302/255, 866/65] ~ [12.94902,13.32308]: s_j=11/80 (0.137500), e_j=E*(s_j)=69/200 (0.345000) [Ivic Thm 8.2 with B.HB17 (p_6,q_6) = (13/30,51/100)]
+  A in [866/65, 14] ~ [13.32308,14.00000]: s_j=8/57 (0.140351), e_j=E*(s_j)=35/114 (0.307018) [Ivic Thm 8.2 with B.TTY25 new-exp-pair #4 = (3316/8695,914/1739)]
+classical mu_cl(A) for A in [12,14]:
+  A in [12.00000,12.00332]: s=0.125329 e=0.496053 [12th moment (Heath-Brown 1978): T^2 V^-12]
+  A in [12.00332,12.00740]: s=0.125641 e=0.492303 [Ivic Thm 8.2 with B.HB17 (p_97,q_97) = (460655/921888,228097/456192)]
+  A in [12.00740,12.01261]: s=0.125954 e=0.488549 [Ivic Thm 8.2 with B.HB17 (p_66,q_66) = (18208/36465,35913/71825)]
+  A in [12.01261,12.01759]: s=0.126156 e=0.486118 [Ivic Thm 8.2 with B.HB17 (p_55,q_55) = (42241/84645,20777/41553)]
+  A in [12.01759,12.02274]: s=0.126357 e=0.483707 [Ivic Thm 8.2 with B.HB17 (p_47,q_47) = (26415/52969,12961/25921)]
+  A in [12.02274,12.02768]: s=0.126522 e=0.481724 [Ivic Thm 8.2 with B.HB17 (p_42,q_42) = (4720/9471,9246/18491)]
+  A in [12.02768,12.03239]: s=0.126662 e=0.480035 [Ivic Thm 8.2 with B.HB17 (p_39,q_39) = (15133/30381,7401/14801)]
+  A in [12.03239,12.03698]: s=0.126806 e=0.478305 [Ivic Thm 8.2 with B.HB17 (p_36,q_36) = (11917/23940,23277/46550)]
+  A in [12.03698,12.04148]: s=0.126917 e=0.476976 [Ivic Thm 8.2 with B.HB17 (p_34,q_34) = (2512/5049,4901/9801)]
+  A in [12.04148,12.04685]: s=0.127041 e=0.475473 [Ivic Thm 8.2 with B.HB17 (p_32,q_32) = (8385/16864,16339/32674)]
+  A in [12.04685,12.05149]: s=0.127183 e=0.473761 [Ivic Thm 8.2 with B.HB17 (p_30,q_30) = (1729/3480,6729/13456)]
+  A in [12.05149,12.05711]: s=0.127262 e=0.472813 [Ivic Thm 8.2 with B.HB17 (p_29,q_29) = (12501/25172,6077/12152)]
+  A in [12.05711,12.06340]: s=0.127438 e=0.470695 [Ivic Thm 8.2 with B.HB17 (p_27,q_27) = (5050/10179,2451/4901)]
+  A in [12.06340,12.06830]: s=0.127536 e=0.469507 [Ivic Thm 8.2 with B.HB17 (p_26,q_26) = (1128/2275,2188/4375)]
+  A in [12.06830,12.07379]: s=0.127643 e=0.468220 [Ivic Thm 8.2 with B.HB17 (p_25,q_25) = (8027/16200,3889/7776)]
+  A in [12.07379,12.07998]: s=0.127759 e=0.466819 [Ivic Thm 8.2 with B.HB17 (p_24,q_24) = (3553/7176,6879/13754)]
+  A in [12.07998,12.08699]: s=0.127886 e=0.465290 [Ivic Thm 8.2 with B.HB17 (p_23,q_23) = (3129/6325,1513/3025)]
+  A in [12.08699,12.09496]: s=0.128024 e=0.463614 [Ivic Thm 8.2 with B.HB17 (p_22,q_22) = (685/1386,2647/5292)]
+  A in [12.09496,12.10409]: s=0.128177 e=0.461768 [Ivic Thm 8.2 with B.HB17 (p_21,q_21) = (4769/9660,2301/4600)]
+  A in [12.10409,12.11461]: s=0.128345 e=0.459726 [Ivic Thm 8.2 with B.HB17 (p_20,q_20) = (2061/4180,3973/7942)]
+  A in [12.11461,12.12682]: s=0.128533 e=0.457455 [Ivic Thm 8.2 with B.HB17 (p_19,q_19) = (1768/3591,851/1701)]
+  A in [12.12682,12.14111]: s=0.128743 e=0.454914 [Ivic Thm 8.2 with B.HB17 (p_18,q_18) = (376/765,723/1445)]
+  A in [12.14111,12.15799]: s=0.128978 e=0.452052 [Ivic Thm 8.2 with B.HB17 (p_17,q_17) = (2535/5168,1217/2432)]
+  A in [12.15799,12.17811]: s=0.129245 e=0.448805 [Ivic Thm 8.2 with B.HB17 (p_16,q_16) = (1057/2160,2027/4050)]
+  A in [12.17811,12.20239]: s=0.129550 e=0.445090 [Ivic Thm 8.2 with B.HB17 (p_15,q_15) = (871/1785,417/833)]
+  A in [12.20239,12.23207]: s=0.129902 e=0.440799 [Ivic Thm 8.2 with B.HB17 (p_14,q_14) = (177/364,677/1352)]
+  A in [12.23207,12.26890]: s=0.130312 e=0.435788 [Ivic Thm 8.2 with B.HB17 (p_13,q_13) = (1133/2340,541/1080)]
+  A in [12.26890,12.31542]: s=0.130795 e=0.429862 [Ivic Thm 8.2 with B.HB17 (p_12,q_12) = (445/924,849/1694)]
+  A in [12.31542,12.37544]: s=0.131373 e=0.422745 [Ivic Thm 8.2 with B.HB17 (p_11,q_11) = (342/715,163/325)]
+  A in [12.37544,12.45486]: s=0.132075 e=0.414046 [Ivic Thm 8.2 with B.HB17 (p_10,q_10) = (64/135,122/243)]
+  A in [12.45486,12.56334]: s=0.132948 e=0.403179 [Ivic Thm 8.2 with B.HB17 (p_9,q_9) = (371/792,177/352)]
+  A in [12.56334,12.71761]: s=0.134058 e=0.389234 [Ivic Thm 8.2 with B.HB17 (p_8,q_8) = (129/280,247/490)]
+  A in [12.71761,12.94902]: s=0.135514 e=0.370717 [Ivic Thm 8.2 with B.HB17 (p_7,q_7) = (85/189,41/81)]
+  A in [12.94902,13.32308]: s=0.137500 e=0.345000 [Ivic Thm 8.2 with B.HB17 (p_6,q_6) = (13/30,51/100)]
+  A in [13.32308,14.00000]: s=0.140351 e=0.307018 [Ivic Thm 8.2 with B.TTY25 new-exp-pair #4 = (3316/8695,914/1739)]
+range: DFP-based bound beats every classical bound for 12 <= A < 3587/288 = 12 + 131/288 (12.454861); exact check True
+   DFP side vertex s=58907/445121 [Ivic Thm 8.2 with B.HB17 (p_10,q_10) = (64/135,122/243)]; classical side vertex s=7/53 [Ivic Thm 8.2 with B.HB17 (p_10,q_10) = (64/135,122/243)]
+PASS for 12 <= A <= 3587/288 the bound (58907 A + 182838)/445121 is Hoelder between M_12 (printed) and M_{3587/288} <= 593/288 (Ivic, B(p_10,q_10))
+=== vertex certificate: optimality over the full input set ===
+PASS s=7/60: all 13823 bounds >= E*(s)=8/15 [4th moment (Hardy-Littlewood/Ingham): T V^-4]
+PASS s=7/60: DFP k=61..61 none below; k>61: 2-12s-E_k <= (4-30s)/(2k) < gap 0.066667
+PASS s=7/60 <= 1/8: every pair (lambda >= 1/2) gives Ivic line >= 1-4s >= E*(s)
+PASS s=173/1342: all 13823 bounds >= E*(s)=296/671 [DFP Thm 8.1 k=2: T^(24/17) V^(-128/17)]
+PASS s=173/1342: DFP k=61..61 none below; k>61: 2-12s-E_k <= (4-30s)/(2k) < gap 0.011923
+PASS s=173/1342: Ivic with B(p_m,q_m), m>120: v_m >= 2-12s-6(8s-1)/(m^2-6), deficit 1.28e-05 <= gap
+PASS s=235/1793: all 13823 bounds >= E*(s)=758/1793 [DFP Thm 8.1 k=3: T^(242/157) V^(-1340/157)]
+PASS s=235/1793: DFP k=61..61 none below; k>61: 2-12s-E_k <= (4-30s)/(2k) < gap 0.004462
+PASS s=235/1793: Ivic with B(p_m,q_m), m>120: v_m >= 2-12s-6(8s-1)/(m^2-6), deficit 1.99e-05 <= gap
+PASS s=443/3361: all 13823 bounds >= E*(s)=1398/3361 [DFP Thm 8.1 k=4: T^(454/279) V^(-2564/279)]
+PASS s=443/3361: DFP k=61..61 none below; k>61: 2-12s-E_k <= (4-30s)/(2k) < gap 0.002380
+PASS s=443/3361: Ivic with B(p_m,q_m), m>120: v_m >= 2-12s-6(8s-1)/(m^2-6), deficit 2.23e-05 <= gap
+PASS s=715/5409: all 13823 bounds >= E*(s)=2230/5409 [DFP Thm 8.1 k=5: T^(730/433) V^(-4172/433)]
+PASS s=715/5409: DFP k=61..61 none below; k>61: 2-12s-E_k <= (4-30s)/(2k) < gap 0.001479
+PASS s=715/5409: Ivic with B(p_m,q_m), m>120: v_m >= 2-12s-6(8s-1)/(m^2-6), deficit 2.36e-05 <= gap
+PASS s=58907/445121: all 13823 bounds >= E*(s)=182838/445121 [Ivic Thm 8.2 with B.HB17 (p_10,q_10) = (64/135,122/243)]
+PASS s=58907/445121: DFP k=61..61 none below; k>61: 2-12s-E_k <= (4-30s)/(2k) < gap 0.001168
+PASS s=58907/445121: Ivic with B(p_m,q_m), m>120: v_m >= 2-12s-6(8s-1)/(m^2-6), deficit 2.41e-05 <= gap
+PASS s=58907/445121: all 13823 bounds >= E*(s)=182838/445121 [range end]
+PASS s=58907/445121: DFP k=61..61 none below; k>61: 2-12s-E_k <= (4-30s)/(2k) < gap 0.001168
+PASS s=58907/445121: Ivic with B(p_m,q_m), m>120: v_m >= 2-12s-6(8s-1)/(m^2-6), deficit 2.41e-05 <= gap
+=== PART 6: refinements, sensitivity, other inputs ===
+PASS (a) s=7/60 k=2: min_W bound at N=T^(1-4s) = E_k = 8/15 (W=T^37/60); at N=T^(1/3): 0.338562 <= it
+PASS (b) s=7/60 k=2: Upsilon-capped middle term gives 8/15 = E_k (no gain)
+PASS (a) s=173/1342 k=2: min_W bound at N=T^(1-4s) = E_k = 296/671 (W=T^422/671); at N=T^(1/3): 0.306868 <= it
+PASS (b) s=173/1342 k=2: Upsilon-capped middle term gives 296/671 = E_k (no gain)
+PASS (a) s=173/1342 k=3: min_W bound at N=T^(1-4s) = E_k = 296/671 (W=T^392/671); at N=T^(1/3): 0.297731 <= it
+PASS (b) s=173/1342 k=3: Upsilon-capped middle term gives 296/671 = E_k (no gain)
+PASS (a) s=173/1342 k=4: min_W bound at N=T^(1-4s) = E_k = 27616/62403 (W=T^35284/62403); at N=T^(1/3): 0.297731 <= it
+PASS (b) s=173/1342 k=4: Upsilon-capped middle term gives 27616/62403 = E_k (no gain)
+PASS (a) s=173/1342 k=5: min_W bound at N=T^(1-4s) = E_k = 128952/290543 (W=T^161232/290543); at N=T^(1/3): 0.297731 <= it
+PASS (b) s=173/1342 k=5: Upsilon-capped middle term gives 128952/290543 = E_k (no gain)
+PASS (a) s=173/1342 k=6: min_W bound at N=T^(1-4s) = E_k = 184784/415349 (W=T^227684/415349); at N=T^(1/3): 0.297731 <= it
+PASS (b) s=173/1342 k=6: Upsilon-capped middle term gives 184784/415349 = E_k (no gain)
+PASS (a) s=173/1342 k=7: min_W bound at N=T^(1-4s) = E_k = 152/341 (W=T^11304/20801); at N=T^(1/3): 0.297731 <= it
+PASS (b) s=173/1342 k=7: Upsilon-capped middle term gives 152/341 = E_k (no gain)
+PASS (a) s=173/1342 k=8: min_W bound at N=T^(1-4s) = E_k = 325632/729377 (W=T^393804/729377); at N=T^(1/3): 0.297731 <= it
+PASS (b) s=173/1342 k=8: Upsilon-capped middle term gives 325632/729377 = E_k (no gain)
+PASS (a) s=173/1342 k=9: min_W bound at N=T^(1-4s) = E_k = 410648/918599 (W=T^493472/918599); at N=T^(1/3): 0.297731 <= it
+PASS (b) s=173/1342 k=9: Upsilon-capped middle term gives 410648/918599 = E_k (no gain)
+PASS (a) s=173/1342 k=10: min_W bound at N=T^(1-4s) = E_k = 168464/376431 (W=T^201404/376431); at N=T^(1/3): 0.297731 <= it
+PASS (b) s=173/1342 k=10: Upsilon-capped middle term gives 168464/376431 = E_k (no gain)
+PASS (a) s=173/1342 k=11: min_W bound at N=T^(1-4s) = E_k = 609864/1361459 (W=T^726024/1361459); at N=T^(1/3): 0.297731 <= it
+PASS (b) s=173/1342 k=11: Upsilon-capped middle term gives 609864/1361459 = E_k (no gain)
+PASS (a) s=173/1342 k=12: min_W bound at N=T^(1-4s) = E_k = 65824/146827 (W=T^858908/1615097); at N=T^(1/3): 0.297731 <= it
+PASS (b) s=173/1342 k=12: Upsilon-capped middle term gives 65824/146827 = E_k (no gain)
+PASS (a) s=235/1793 k=2: min_W bound at N=T^(1-4s) = E_k = 12952/30481 (W=T^2263/3586); at N=T^(1/3): 0.301295 <= it
+PASS (b) s=235/1793 k=2: Upsilon-capped middle term gives 12952/30481 = E_k (no gain)
+PASS (a) s=235/1793 k=3: min_W bound at N=T^(1-4s) = E_k = 758/1793 (W=T^1052/1793); at N=T^(1/3): 0.293425 <= it
+PASS (b) s=235/1793 k=3: Upsilon-capped middle term gives 758/1793 = E_k (no gain)
+PASS (a) s=235/1793 k=4: min_W bound at N=T^(1-4s) = E_k = 758/1793 (W=T^1020/1793); at N=T^(1/3): 0.293425 <= it
+PASS (b) s=235/1793 k=4: Upsilon-capped middle term gives 758/1793 = E_k (no gain)
+PASS (a) s=235/1793 k=5: min_W bound at N=T^(1-4s) = E_k = 328470/776369 (W=T^434076/776369); at N=T^(1/3): 0.293425 <= it
+PASS (b) s=235/1793 k=5: Upsilon-capped middle term gives 328470/776369 = E_k (no gain)
+PASS (a) s=235/1793 k=6: min_W bound at N=T^(1-4s) = E_k = 469970/1109867 (W=T^613652/1109867); at N=T^(1/3): 0.293425 <= it
+PASS (b) s=235/1793 k=6: Upsilon-capped middle term gives 469970/1109867 = E_k (no gain)
+PASS (a) s=235/1793 k=7: min_W bound at N=T^(1-4s) = E_k = 211994/500247 (W=T^274436/500247); at N=T^(1/3): 0.293425 <= it
+PASS (b) s=235/1793 k=7: Upsilon-capped middle term gives 211994/500247 = E_k (no gain)
+PASS (a) s=235/1793 k=8: min_W bound at N=T^(1-4s) = E_k = 826506/1948991 (W=T^1063044/1948991); at N=T^(1/3): 0.293425 <= it
+PASS (b) s=235/1793 k=8: Upsilon-capped middle term gives 826506/1948991 = E_k (no gain)
+PASS (a) s=235/1793 k=9: min_W bound at N=T^(1-4s) = E_k = 1041542/2454617 (W=T^1332860/2454617); at N=T^(1/3): 0.293425 <= it
+PASS (b) s=235/1793 k=9: Upsilon-capped middle term gives 1041542/2454617 = E_k (no gain)
+PASS (a) s=235/1793 k=10: min_W bound at N=T^(1-4s) = E_k = 427030/1005873 (W=T^544252/1005873); at N=T^(1/3): 0.293425 <= it
+PASS (b) s=235/1793 k=10: Upsilon-capped middle term gives 427030/1005873 = E_k (no gain)
+PASS (a) s=235/1793 k=11: min_W bound at N=T^(1-4s) = E_k = 1545150/3637997 (W=T^1962732/3637997); at N=T^(1/3): 0.293425 <= it
+PASS (b) s=235/1793 k=11: Upsilon-capped middle term gives 1545150/3637997 = E_k (no gain)
+PASS (a) s=235/1793 k=12: min_W bound at N=T^(1-4s) = E_k = 166702/392341 (W=T^2322788/4315751); at N=T^(1/3): 0.293425 <= it
+PASS (b) s=235/1793 k=12: Upsilon-capped middle term gives 166702/392341 = E_k (no gain)
+PASS (a) s=443/3361 k=3: min_W bound at N=T^(1-4s) = E_k = 219742/527677 (W=T^310060/527677); at N=T^(1/3): 0.291944 <= it
+PASS (b) s=443/3361 k=3: Upsilon-capped middle term gives 219742/527677 = E_k (no gain)
+PASS (a) s=443/3361 k=4: min_W bound at N=T^(1-4s) = E_k = 1398/3361 (W=T^1916/3361); at N=T^(1/3): 0.291944 <= it
+PASS (b) s=443/3361 k=4: Upsilon-capped middle term gives 1398/3361 = E_k (no gain)
+PASS (a) s=443/3361 k=5: min_W bound at N=T^(1-4s) = E_k = 1398/3361 (W=T^1884/3361); at N=T^(1/3): 0.291944 <= it
+PASS (b) s=443/3361 k=5: Upsilon-capped middle term gives 1398/3361 = E_k (no gain)
+PASS (a) s=443/3361 k=6: min_W bound at N=T^(1-4s) = E_k = 865618/2080459 (W=T^1153684/2080459); at N=T^(1/3): 0.291944 <= it
+PASS (b) s=443/3361 k=6: Upsilon-capped middle term gives 865618/2080459 = E_k (no gain)
+PASS (a) s=443/3361 k=7: min_W bound at N=T^(1-4s) = E_k = 390298/937719 (W=T^516100/937719); at N=T^(1/3): 0.291944 <= it
+PASS (b) s=443/3361 k=7: Upsilon-capped middle term gives 390298/937719 = E_k (no gain)
+PASS (a) s=443/3361 k=8: min_W bound at N=T^(1-4s) = E_k = 1521162/3653407 (W=T^1999620/3653407); at N=T^(1/3): 0.291944 <= it
+PASS (b) s=443/3361 k=8: Upsilon-capped middle term gives 1521162/3653407 = E_k (no gain)
+PASS (a) s=443/3361 k=9: min_W bound at N=T^(1-4s) = E_k = 1916422/4601209 (W=T^2507644/4601209); at N=T^(1/3): 0.291944 <= it
+PASS (b) s=443/3361 k=9: Upsilon-capped middle term gives 1916422/4601209 = E_k (no gain)
+PASS (a) s=443/3361 k=10: min_W bound at N=T^(1-4s) = E_k = 785558/1885521 (W=T^1024124/1885521); at N=T^(1/3): 0.291944 <= it
+PASS (b) s=443/3361 k=10: Upsilon-capped middle term gives 785558/1885521 = E_k (no gain)
+PASS (a) s=443/3361 k=11: min_W bound at N=T^(1-4s) = E_k = 2841918/6819469 (W=T^3693804/6819469); at N=T^(1/3): 0.291944 <= it
+PASS (b) s=443/3361 k=11: Upsilon-capped middle term gives 2841918/6819469 = E_k (no gain)
+PASS (a) s=443/3361 k=12: min_W bound at N=T^(1-4s) = E_k = 3372154/8089927 (W=T^4371940/8089927); at N=T^(1/3): 0.291944 <= it
+PASS (b) s=443/3361 k=12: Upsilon-capped middle term gives 3372154/8089927 = E_k (no gain)
+PASS (a) s=715/5409 k=3: min_W bound at N=T^(1-4s) = E_k = 350878/849213 (W=T^499372/849213); at N=T^(1/3): 0.291181 <= it
+PASS (b) s=715/5409 k=3: Upsilon-capped middle term gives 350878/849213 = E_k (no gain)
+PASS (a) s=715/5409 k=4: min_W bound at N=T^(1-4s) = E_k = 622426/1509111 (W=T^861220/1509111); at N=T^(1/3): 0.291181 <= it
+PASS (b) s=715/5409 k=4: Upsilon-capped middle term gives 622426/1509111 = E_k (no gain)
+PASS (a) s=715/5409 k=5: min_W bound at N=T^(1-4s) = E_k = 2230/5409 (W=T^1012/1803); at N=T^(1/3): 0.291181 <= it
+PASS (b) s=715/5409 k=5: Upsilon-capped middle term gives 2230/5409 = E_k (no gain)
+PASS (a) s=715/5409 k=6: min_W bound at N=T^(1-4s) = E_k = 2230/5409 (W=T^3004/5409); at N=T^(1/3): 0.291181 <= it
+PASS (b) s=715/5409 k=6: Upsilon-capped middle term gives 2230/5409 = E_k (no gain)
+PASS (a) s=715/5409 k=7: min_W bound at N=T^(1-4s) = E_k = 1866766/4527333 (W=T^2495884/4527333); at N=T^(1/3): 0.291181 <= it
+PASS (b) s=715/5409 k=7: Upsilon-capped middle term gives 1866766/4527333 = E_k (no gain)
+PASS (a) s=715/5409 k=8: min_W bound at N=T^(1-4s) = E_k = 2424778/5879583 (W=T^1074604/1959861); at N=T^(1/3): 0.291181 <= it
+PASS (b) s=715/5409 k=8: Upsilon-capped middle term gives 2424778/5879583 = E_k (no gain)
+PASS (a) s=715/5409 k=9: min_W bound at N=T^(1-4s) = E_k = 3054406/7404921 (W=T^4043260/7404921); at N=T^(1/3): 0.291181 <= it
+PASS (b) s=715/5409 k=9: Upsilon-capped middle term gives 3054406/7404921 = E_k (no gain)
+PASS (a) s=715/5409 k=10: min_W bound at N=T^(1-4s) = E_k = 3755650/9103347 (W=T^4954228/9103347); at N=T^(1/3): 0.291181 <= it
+PASS (b) s=715/5409 k=10: Upsilon-capped middle term gives 3755650/9103347 = E_k (no gain)
+PASS (a) s=715/5409 k=11: min_W bound at N=T^(1-4s) = E_k = 4528510/10974861 (W=T^1985572/3658287); at N=T^(1/3): 0.291181 <= it
+PASS (b) s=715/5409 k=11: Upsilon-capped middle term gives 4528510/10974861 = E_k (no gain)
+PASS (a) s=715/5409 k=12: min_W bound at N=T^(1-4s) = E_k = 5372986/13019463 (W=T^7050724/13019463); at N=T^(1/3): 0.291181 <= it
+PASS (b) s=715/5409 k=12: Upsilon-capped middle term gives 5372986/13019463 = E_k (no gain)
+PASS (a) s=58907/445121 k=3: min_W bound at N=T^(1-4s) = E_k = 28783902/69883997 (W=T^41107116/69883997); at N=T^(1/3): 0.290877 <= it
+PASS (b) s=58907/445121 k=3: Upsilon-capped middle term gives 28783902/69883997 = E_k (no gain)
+PASS (a) s=58907/445121 k=4: min_W bound at N=T^(1-4s) = E_k = 51047386/124188759 (W=T^70902436/124188759); at N=T^(1/3): 0.290877 <= it
+PASS (b) s=58907/445121 k=4: Upsilon-capped middle term gives 51047386/124188759 = E_k (no gain)
+PASS (a) s=58907/445121 k=5: min_W bound at N=T^(1-4s) = E_k = 79178326/192737393 (W=T^108237852/192737393); at N=T^(1/3): 0.290877 <= it
+PASS (b) s=58907/445121 k=5: Upsilon-capped middle term gives 79178326/192737393 = E_k (no gain)
+PASS (a) s=58907/445121 k=6: min_W bound at N=T^(1-4s) = E_k = 182838/445121 (W=T^247356/445121); at N=T^(1/3): 0.290877 <= it
+PASS (b) s=58907/445121 k=6: Upsilon-capped middle term gives 182838/445121 = E_k (no gain)
+PASS (a) s=58907/445121 k=7: min_W bound at N=T^(1-4s) = E_k = 153042574/372566277 (W=T^205528972/372566277); at N=T^(1/3): 0.290877 <= it
+PASS (b) s=58907/445121 k=7: Upsilon-capped middle term gives 153042574/372566277 = E_k (no gain)
+PASS (a) s=58907/445121 k=8: min_W bound at N=T^(1-4s) = E_k = 198775882/483846527 (W=T^9154644/16684363); at N=T^(1/3): 0.290877 <= it
+PASS (b) s=58907/445121 k=8: Upsilon-capped middle term gives 198775882/483846527 = E_k (no gain)
+PASS (a) s=58907/445121 k=9: min_W bound at N=T^(1-4s) = E_k = 250376646/609370649 (W=T^332980476/609370649); at N=T^(1/3): 0.290877 <= it
+PASS (b) s=58907/445121 k=9: Upsilon-capped middle term gives 250376646/609370649 = E_k (no gain)
+PASS (a) s=58907/445121 k=10: min_W bound at N=T^(1-4s) = E_k = 307844866/749138643 (W=T^408016372/749138643); at N=T^(1/3): 0.290877 <= it
+PASS (b) s=58907/445121 k=10: Upsilon-capped middle term gives 307844866/749138643 = E_k (no gain)
+PASS (a) s=58907/445121 k=11: min_W bound at N=T^(1-4s) = E_k = 371180542/903150509 (W=T^490592364/903150509); at N=T^(1/3): 0.290877 <= it
+PASS (b) s=58907/445121 k=11: Upsilon-capped middle term gives 371180542/903150509 = E_k (no gain)
+PASS (a) s=58907/445121 k=12: min_W bound at N=T^(1-4s) = E_k = 440383674/1071406247 (W=T^580708452/1071406247); at N=T^(1/3): 0.290877 <= it
+PASS (b) s=58907/445121 k=12: Upsilon-capped middle term gives 440383674/1071406247 = E_k (no gain)
+PASS (b') Upsilon cap, 11 x 25 exact grid points: max gain 0
+PASS (c) chain outside its stated ranges: max gain over the envelope 0 None
+PASS (d) eta=1/100: k=2 bound at s*=(7-2eta)/60=349/3000 equals 1-4s* -> sixth moment 1+2s* = 1849/1500 = 37/30 - eta/15
+PASS (d) eta=1/50: k=2 bound at s*=(7-2eta)/60=29/250 equals 1-4s* -> sixth moment 1+2s* = 154/125 = 37/30 - eta/15
+PASS (d) eta=1/30: k=2 bound at s*=(7-2eta)/60=26/225 equals 1-4s* -> sixth moment 1+2s* = 277/225 = 37/30 - eta/15
+(d) eta=0: twelfth moment exponent 1.9988318 (crossing s=0.1323393, k=[6], terms T1..T4 at top N: [0.385581, 0.410736, 0.41076, 0.41076])
+PASS (d) eta=0 reproduces 2 - 520/445121
+(d) eta=1/100: twelfth moment exponent 1.9988280 (crossing s=0.1323476, k=[6], terms T1..T4 at top N: [0.385503, 0.410656, 0.410656, 0.410272])
+(d) eta=1/26: twelfth moment exponent 1.9988280 (crossing s=0.1323476, k=[6], terms T1..T4 at top N: [0.385503, 0.410656, 0.410656, 0.40911])
+(d) eta=1: twelfth moment exponent 1.9988280 (crossing s=0.1323476, k=[6], terms T1..T4 at top N: [0.385503, 0.410656, 0.410656, 0.369864])
+PASS (d) algebra eta=0 s=1/9: E_2^eta - (11/8 - 29s/4) = (5 - 38s - 16eta)/136
+PASS (d) algebra eta=0 s=3/26: E_2^eta - (11/8 - 29s/4) = (5 - 38s - 16eta)/136
+PASS (d) algebra eta=0 s=1/8: E_2^eta - (11/8 - 29s/4) = (5 - 38s - 16eta)/136
+PASS (d) algebra eta=0 s=5/38: E_2^eta - (11/8 - 29s/4) = (5 - 38s - 16eta)/136
+PASS (d) algebra eta=1/100 s=1/9: E_2^eta - (11/8 - 29s/4) = (5 - 38s - 16eta)/136
+PASS (d) algebra eta=1/100 s=3/26: E_2^eta - (11/8 - 29s/4) = (5 - 38s - 16eta)/136
+PASS (d) algebra eta=1/100 s=1/8: E_2^eta - (11/8 - 29s/4) = (5 - 38s - 16eta)/136
+PASS (d) algebra eta=1/100 s=5/38: E_2^eta - (11/8 - 29s/4) = (5 - 38s - 16eta)/136
+PASS (d) algebra eta=1/26 s=1/9: E_2^eta - (11/8 - 29s/4) = (5 - 38s - 16eta)/136
+PASS (d) algebra eta=1/26 s=3/26: E_2^eta - (11/8 - 29s/4) = (5 - 38s - 16eta)/136
+PASS (d) algebra eta=1/26 s=1/8: E_2^eta - (11/8 - 29s/4) = (5 - 38s - 16eta)/136
+PASS (d) algebra eta=1/26 s=5/38: E_2^eta - (11/8 - 29s/4) = (5 - 38s - 16eta)/136
+PASS (d) algebra eta=1/7 s=1/9: E_2^eta - (11/8 - 29s/4) = (5 - 38s - 16eta)/136
+PASS (d) algebra eta=1/7 s=3/26: E_2^eta - (11/8 - 29s/4) = (5 - 38s - 16eta)/136
+PASS (d) algebra eta=1/7 s=1/8: E_2^eta - (11/8 - 29s/4) = (5 - 38s - 16eta)/136
+PASS (d) algebra eta=1/7 s=5/38: E_2^eta - (11/8 - 29s/4) = (5 - 38s - 16eta)/136
+PASS (d) s*=(7-2eta)/60 <= (5-16eta)/38 iff eta <= 1/26 (equal at 1/26: 3/26)
+PASS (d) floor: at s=3/26, C4 cap tau=1/2+s equals C6 limit tau=2-12s (=8/13): chain empty for s<=3/26 at N=T^(1-4s)
+PASS (d) floor: there T2=T3=1-4s=7/13; sixth moment floor 1+2s = 16/13 (eta = 1/26)
+PASS (e) Guth-Maynard third term T N^(12/5-4s') -> T^(1+2nu/5-4s) = T^7/10, Huxley T N^(4-6s') -> T^(1+nu-6s) = T^3/4; both > T^(1-4s) = T^1/2
+total time 81.7s
+ALL PASS

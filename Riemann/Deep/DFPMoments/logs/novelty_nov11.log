@@ -1,0 +1,33 @@
+2610.01035  [math.NT 2026-10]  The sixth moment of the Riemann zeta function
+2610.18923  [math.NT 2026-10]  Large value estimates for Dirichlet polynomials and trilinear sums over short intervals
+2610.22107  [math.NT 2026-10]  The discrete second moment of the Riemann zeta-function along powers of Gram points
+2610.24958  [math.NT 2026-10]  Large values of derivatives of quadratic Dirichlet $L$-functions
+2610.36885  [math.NT 2026-10]  Large values of Hardy's Function from the Selberg class
+-- 5 title hits in 3 cats x (2026-11, 2026-10)
+-- zenodo total 10059
+== id:2610.01035
+SEEN 2610.01035 2026-10-01 The sixth moment of the Riemann zeta function
+== au:Faveri
+SEEN 2610.04045 2026-10-02 Optimal large sieve for fixed order characters
+SEEN 2610.01035 2026-10-01 The sixth moment of the Riemann zeta function
+NEW  2608.11006 2026-08-11 Policy Convergence and Divergence Across National and Within Regional AI Strategies: A Pol
+NEW  2607.20088 2026-07-22 What is a Model of the Linear Lambda Calculus?
+SEEN 2607.07911 2026-07-08 Non-orthogonality of the cubic and quartic large sieves via Rankin-Selberg
+NEW  2604.01316 2026-04-01 Non-vanishing for quartic Hecke $L$-functions and ranks of elliptic curves
+== all:"de Faveri" AND all:Pandey
+SEEN 2610.01035 2026-10-01 The sixth moment of the Riemann zeta function
+== abs:"sixth moment" AND abs:zeta
+SEEN 2606.27323 2026-06-25 Amplified moments of the Riemann zeta function
+NEW  2304.07581 2023-04-15 Sharp upper bound for the sixth moment of the Riemann zeta function on the critical line
+NEW  2204.13891 2022-04-29 The eighth moment of the Riemann zeta function
+NEW  1902.07042 2019-02-19 Motohashi's fourth moment identity for non-archimedean test functions and applications
+NEW  1610.04977 2016-10-17 The sixth moment of the Riemann zeta function and ternary additive divisor sums
+NEW  1609.01411 2016-09-06 Bounds and Conjectures for additive divisor sums
+== abs:"twelfth moment" AND abs:zeta
+SEEN 1802.05180 2018-02-14 The twelfth moment of Dirichlet $L$-functions with smooth moduli
+== id:2610.18923
+SEEN 2610.18923 2026-10-12 Large value estimates for Dirichlet polynomials and trilinear sums over short intervals
+   Recently, Matomäki, Pandey, Pliego, Teräväinen and Wang improved the Baker--Harman--Pintz estimate of trilinear sums over short intervals of length $x^θ$, which naturally reduces to estimating mean values of products of three Dirichlet polynomials. Based on recent works of Guth and Maynard and Chen, Gupta and Li on new large value estimates for Dirichlet polynomials, they improved the Baker--Harman--Pintz estimate for $θ> \frac{3}{5}$. In this paper, we use their method to improve the Baker--Harman--Pintz estimate for $\frac{1}{2} < θ< \frac{4}{7}$ and get new results for all $\frac{1}{2} < θ< 1$. Our result yields improvements on many problems, including the work of Li on primes in short intervals of length $x^{0.52}$.
+OpenAlex works citing 2610.01035: 2
+   2025-06-20 The error term of the fourth moment of the Riemann zeta-function
+   2025-06-20 The error term of the fourth moment of the Riemann zeta-function

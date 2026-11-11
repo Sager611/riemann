@@ -1,0 +1,25 @@
+/Users/adriansager/playground/riemann/.scratch/lst.py:13: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2610.01035  [math.NT 2026-10]  The sixth moment of the Riemann zeta function
+2610.18923  [math.NT 2026-10]  Large value estimates for Dirichlet polynomials and trilinear sums over short intervals
+2610.22107  [math.NT 2026-10]  The discrete second moment of the Riemann zeta-function along powers of Gram points
+2610.24958  [math.NT 2026-10]  Large values of derivatives of quadratic Dirichlet $L$-functions
+2610.36885  [math.NT 2026-10]  Large values of Hardy's Function from the Selberg class
+-- 5 title hits in 2 cats x (2026-11, 2026-10)
+zenodo 23984845  2026-11-05  Origin-Centered Möbius Circles and Dyadic Pairings of the Riemann Zeta Function on the Critical Line
+zenodo 23982700  2026-11-05  Theory of Everything from Structured Vacuum Turbulence
+zenodo 23934915  2026-11-04  Exact Derivation of Topological Casimir Tension in a Discrete Hydrodynamic Superfluid via Enstrophy-Bounded Euler-Maclau
+zenodo 23895875  2026-11-02  A sharp three-point kernel bound and conditional proportions of zeta zeros
+zenodo 23845306  2023-11-03  An Exploratory Journey Through the Riemann Hypothesis: Prime Numbers, the Zeta Function and Its Zeros
+zenodo 23842668  2026-10-31  Weighted force propagation in the de Bruijn–Newman zero dynamics
+zenodo 23840411  2026-10-31  The 10^9-th Bernoulli number
+zenodo 23765626  2026-10-29  Understanding the Riemann Hypothesis: From the Primes and the Zeta Zeros to Suzuki's Screw Function: Prime-Power Checkpo
+zenodo 23797298  2026-10-30  AI and Mathematics Research: Monthly Report, August 2026
+zenodo 23788542  2026-10-30  The Kaleidoscopic Partition Structure, Part II: Resolving the Riemann Hypothesis via the Palindromic Partition Diamond a
+zenodo 23775116  2026-10-29  A Heegner-Scattering Program for the Riemann Hypothesis
+zenodo 23654508  2026-10-26  Discrete Geometric Architecture on the Heegner Substrate
+zenodo 23603376  2026-10-25  Compact Weil Event Cells from Suzuki's Screw Function: Parity Polarization, Exact Enclosures, and Uniform Gram Certifica
+zenodo 23646708  2026-10-25  Non-Hermitian Cusp Dissipation, Automorphic Scattering, and an Unconditional Geometric Proof of the Riemann Hypothesis o
+zenodo 23644019  2025-07-01  There Should Exist The Tetrad Nontrivial Zeroes Outside the Critical Line
+-- zenodo total 4185
+exit 0
