@@ -17,7 +17,7 @@ def Zfun(t):
     return z.real, z.imag
 
 def main():
-    c = float(sys.argv[1]); k = int(sys.argv[2])
+    c = float(sys.argv[1]); k = int(sys.argv[2]); nmul = float(sys.argv[3]) if len(sys.argv) > 3 else 1.0
     bits = int(4*math.pi*c*1.4427) + 260
     ctx.prec = bits; mp.mp.prec = bits; dps = int(bits*0.302) + 10
     mp.mp.dps = dps
@@ -30,7 +30,7 @@ def main():
     gball = arb(gs).union(arb(gs) - r).union(arb(gs) + r)
     mp.mp.prec = bits
     F = wmat.Form(fmpq(int(round(c*64)), 64), 'zeta')
-    N = max(24, int(math.ceil(2.7*c*math.log(c))) + 8)
+    N = max(24, int(math.ceil(nmul*2.7*c*math.log(c))) + 8)
     T, idx = F.block(N, 'even'); n = len(idx)
     b = [F.ft_even(j, acb(gball)).real for j in idx]
     M = wmat.to_mp(T, mp.mp)

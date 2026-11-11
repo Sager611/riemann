@@ -26,3 +26,9 @@ rate8m_c6 peak_rss_bytes=38699008 wall_s=4.22
 rate8m_c8 peak_rss_bytes=38469632 wall_s=10.06
 tv_mu5 peak_rss_bytes=58523648 wall_s=576.54
 tv_mu7 peak_rss_bytes=60620800 wall_s=771.00
+certlow_c5 peak_rss_bytes=58392576 wall_s=5.71
+certlow_c10 peak_rss_bytes=118439936 wall_s=30.04
+ubfull_c5 peak_rss_bytes=43810816 wall_s=41.01
+ubfull_c10 peak_rss_bytes=53608448 wall_s=121.07
+certdel_c5_n4 peak_rss_bytes=47710208 wall_s=35.75
+certdel_c10_n2 peak_rss_bytes=60604416 wall_s=116.48

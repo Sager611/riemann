@@ -1,4 +1,4 @@
-AUDIT PASSED + BARRIER (model-based): no flaw in the checked parts of Mori's unconditional e^{−4πμ} bound (inputs, constants, Tables 1 and 3 rebuilt); RH with zero counting and every known multiplicity or pair statistic cannot give lim (−log λ_min)/μ = 4π — in RH-consistent models each zero lost below 4πμ (a multiple zero, or a pair closer than δ* ≈ e^{−3.2μ}) multiplies λ_min by (y/(2+√(4−y²)))⁴, y = γ/2πμ (conjectured lost-sample law from Mori's own dual certificate; numerics μ = 6–20, certified at μ = 5, 10), so a proof needs o(μ) such zeros for ζ, which no known result gives.
+AUDIT PASSED + BARRIER (model-based) + PARTIAL (ii′): no flaw in the checked parts of Mori's unconditional e^{−4πμ} bound; RH with zero counting and known multiplicity or pair statistics cannot give lim (−log λ_min)/μ = 4π — in RH-consistent models each zero lost below 4πμ (a multiple zero, or a pair closer than δ* ≈ e^{−3.2μ}) multiplies λ_min by (y/(2+√(4−y²)))⁴, y = γ/2πμ; this lost-sample law is now proved two-sided for Mori's extremal proxy (explicit balayage measure, error O(1/log μ)) and certified two-sided for λ_min at μ = 5, 10 (|log(λ/λ′) − 4g₂| ≤ 0.34, 0.68), but its transfer to λ_min as μ → ∞ is open.
 
 # MoriRate — Mori's e^{−4πμ} law for windowed Weil forms: audit, rate, constant (morirate, Orca, 11 Nov 2026)
 
@@ -128,6 +128,17 @@ upper bound, and no proof that the multiplier value fixes the spectral shift to 
 not zeta zero sets, so this is an obstruction for proofs using positivity, counting and pair statistics, not non-implication from RH;
 many deletions need uniform nonlinear control (T3–T5 are evidence only). Significance: NEW candidate quantitative conjecture. Weakest
 point: the transfer from multiplier cost to the spectral minimum. Labels above follow this verdict.
+Follow-up (ii′), DERIVATION.md: (A) exact facts for λ_min itself — 0 ≤ λ′ ≤ λ, λ′ ≥ (1 − θ)λ with θ = 2⟨e₀, A⁻¹e₀⟩, secular equation,
+so the upper half of the law follows from a scale-free extremal estimate; (B) the proxy law proved two-sided: 2π + 2g₂(y₀)/μ ≤
+P(c₀ + Δ) ≤ 2π + 2g₂(y₀)/μ + O(μ^{−3/2} log μ) (Mori's certificate below; above, σ* + μ⁻¹Σ_±(δ_{±y₀} − harmonic measure of the slit
+plane at ±y₀) plus a zero-mass tip correction), additive over finitely many lost samples; (C) λ_min certified two-sided at μ = 5, 10
+for the first zero: log(λ/λ′) ∈ [8.354, 8.895] ∋ 4g₂ = 8.688 and [10.822, 12.047] ∋ 11.500 (Chekmachev's certificate with the deleted
+zero as one more negative rank-one column, certlow.py; Arb Rayleigh quotients, certdel.py, ubfull.py). Reviewer (argument pasted
+inline): Lemma A GAP (fixed: λ′ = λ when the secular equation has no root below λ); Lemma B lower bound and no-constant balayage
+identity CORRECT, repairable gaps fixed (zero-mass tip correction, slack 0.55 for b = log 2, location-dependent constants, O(g₂/s)
+from 2R_ϑ); Proposition C CORRECT as a technique; significance ROUTINE as progress toward the spectral law; 'what remains open'
+accurate. Open: an e^{o(1)}-sharp, deletion-stable bridge from the multiplier optimum to λ_min (no O(1) asymptotic of λ_min is known
+even without deletion), and zero-adaptive test vectors for the lower half.
 
 ## Novelty
 Lost-sample law, crossover δ* ≈ e^{−πμ}, exterior collapse: not in 24116425/24047156 (Thm 4 gives the extremal problem and certificate,
@@ -146,5 +157,7 @@ RH relevance: N1 (rate of Weil positivity; quantifies why window records are fin
 ## Files
 lostsample.py (T1), certdel.py (certified instance), pairtest.py (T2, T3), kstar.py (δ*), exttest.py (T4, T5), prolate.py (inputs),
 testvec.py (Table 3), normk.py ([5, Thm D]), mr_numbers.py (Table 1, constants, ∫g₂), stats_ls.py, table_ls.py, DERIVATION.md; logs/.
+(ii′): certlow.py (certificate for the deleted form; self-contained copy of ChekAudit's cert.py plus the extra column), ubfull.py (Arb upper bound for λ),
+certdel.py N-multiplier, balayage_check.py (U_{β_y} = log|· − y| on the slits); peaks ≤ 118 MB.
 Rerun: uv run --no-project --with mpmath --with python-flint python3 lostsample.py 10 3 (≈ 1 min); prolate.py/testvec.py/normk.py need
 --with numpy --with scipy.

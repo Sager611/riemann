@@ -38,3 +38,67 @@ proportion, raises the rate to ≈ 4π(1 + ε).
 Status: steps 2–3 are Mori's theorems; the lower bound P ≥ 2π + μ⁻¹Σ2g₂(y_i) in step 5 is rigorous for the multiplier problem;
 steps 4–6 for the spectral minimum are a conjecture (reviewer: no two-sided comparison between multiplier cost and λ_min), supported
 by the numerics and the certified instances in REPORT.md.
+
+## (ii') Two-sided first-order law: what is proved (follow-up, 11 Nov 2026)
+
+Setting. Even sector (odd: sin in place of cos). Z ⊂ ℝ a symmetric locally finite multiset (zeros of ζ under RH, or a model),
+Q(u) = Σ_{γ∈Z} m_γ|û(γ)|² on L²(−a, a), a = ½ ln μ, û(t) = ∫u e^{itx}; A = its Friedrichs operator, λ = λ_min(A) > 0.
+For γ₀ ∈ Z, e₀ = cos(γ₀x)·1_{(−a,a)}, so û(γ₀) = ⟨u, e₀⟩ for real even u; deleted form Q′ = Q − 2⟨·, e₀⟩², λ′ = λ_min(Q′).
+y₀ = γ₀/2πμ, g₂(y) = log((2 + √(4 − y²))/|y|) (|y| < 2), 0 (|y| ≥ 2). Conjectured law: log(λ/λ′) = 4g₂(y₀) + o(1).
+
+Lemma A (exact, every Z, every μ).
+(a) 0 ≤ λ′ ≤ λ, since Q′ = Σ_{Z∖{±γ₀}} m|û|² ≥ 0 and Q′ ≤ Q.
+(b) Let θ = sup_u 2⟨u, e₀⟩²/Q(u) = 2⟨e₀, A⁻¹e₀⟩ ∈ (0, 1]. Then λ′ ≥ (1 − θ)λ. Proof: Q′(u) = Q(u) − 2⟨u, e₀⟩² ≥ (1 − θ)Q(u) ≥ (1 − θ)λ‖u‖².
+(c) λ′ is the least x ∈ [0, λ) with 2⟨e₀, (A − x)⁻¹e₀⟩ = 1 if such x exists, and λ′ = λ otherwise (Weinstein–Aronszajn for a
+    rank-one decrement; the resolvent exists only below λ).
+(d) 1 − θ = inf_u Q′(u)/Q(u) = 1/(1 + 2C), C = sup_u ⟨u, e₀⟩²/Q′(u): the share of zero-side energy that must stay off ±γ₀.
+So the upper half of the law, log(λ/λ′) ≤ 4g₂(y₀) + o(1), follows from the scale-free estimate 1 − θ ≥ e^{−4g₂(y₀) − o(1)}; the lower
+half, log(λ/λ′) ≥ 4g₂(y₀) − o(1), needs test vectors u with Q′(u) ≤ e^{−4g₂(y₀) + o(1)} λ‖u‖².
+
+Lemma B (the multiplier proxy, two-sided; rigorous). Mori's Theorem 4 problem: P(c) = inf{p(σ) : σ ≥ c, ∫dσ ≤ 0,
+∫(1 + |log|y||)d|σ| < ∞}, p(σ) = sup_x U_σ(x) − U_σ(0), c₀ = max(−log|y|, −b)dy, b ∈ [log 2, ∞], P(c₀) = 2π (Mori). A lost sample
+at ±y₀ is the constraint c₀ + Δ, Δ = μ⁻¹(δ_{y₀} + δ_{−y₀}). For 0 < y₀ < 2 fixed:
+    2π + 2g₂(y₀)/μ ≤ P(c₀ + Δ) ≤ 2π + 2g₂(y₀)/μ + K(y₀) μ^{−3/2} log μ   (μ ≥ μ₀(y₀)).
+Lower (all μ): Mori's certificate. ω₂ = harmonic measure of Ω = ℂ ∖ ((−∞, −2] ∪ [2, ∞)) at 0, g₂ = U_{ω₂} − log|y| (Mori Lemma 3.2).
+For admissible σ: p(σ) ≥ ∫(U_σ − U_σ(0))dω₂ = ∫g₂ dσ ≥ ∫g₂ dc₀ + ∫g₂ dΔ = 2π + 2g₂(y₀)/μ (g₂ ≥ 0, σ − c₀ − Δ ≥ 0, and
+∫g₂(−log|y|)dy = 2π; on |y| < 2, max(−log|y|, −b) = −log|y| because b ≥ log 2).
+Upper: β_y = harmonic measure of Ω at y (a probability measure on K = ℝ∖(−2, 2) with finite log-moment, density ≍ (|t| − 2)^{−1/2} at
+the tips); as in Mori's Lemma 3.2, g_Ω(x, y) = U_{β_y}(x) − log|x − y| (both sides harmonic on Ω∖{y}, same logarithmic pole, 0 on K,
+→ 0 at ∞). Put σ_Δ = σ* + μ⁻¹Σ_± (δ_{±y₀} − β_{±y₀}). Then U_{σ_Δ}(x) − U_{σ_Δ}(0) = [U_{σ*}(x) − U_{σ*}(0)] − μ⁻¹Σ_±[g_Ω(x, ±y₀) −
+g_Ω(0, ±y₀)] ≤ 2π + 2g₂(y₀)/μ, with equality on K (Mori Thm 4(ii): U_{σ*} − U_{σ*}(0) ≤ 2π, = 2π on K; g_Ω ≥ 0, = 0 on K;
+g_Ω(0, ±y₀) = g₂(y₀) by symmetry). The balayage identity U_{β_y} = log|· − y| on K (no constant) was also checked numerically by
+the disc map w = (z/2)/(1 + √(1 − z²/4)) and the Poisson kernel (balayage_check.py: equal to 15 digits at y = 0.5, 1.3). ∫dσ_Δ = ∫dσ* ≤ 0. The constraint holds on (−2, 2) (σ_Δ = −log|y| + the atoms) and on K except where
+σ*'s slack arccosh(|y|/2) ≈ √(|y| − 2) is below μ⁻¹ dβ/dy ≍ μ⁻¹(|y| − 2)^{−1/2}, i.e. on |y| − 2 ≤ c(y₀)/μ, of mass O(μ^{−3/2});
+add that mass back there and remove the same mass from 3 ≤ |y| ≤ 4 (slack ≥ 0.55 for every b ≥ log 2). The combined correction has
+mass zero, so its potential is O(μ^{−3/2} log μ) uniformly on ℝ (each piece alone grows like m·log|x|), and p rises by at most
+K μ^{−3/2} log μ. For finitely many fixed interior points y₁, …, y_m the construction is linear: P = 2π + (2/μ)Σ g₂(y_i) +
+O_{y₁..y_m}(μ^{−3/2} log μ) — additive, not only super-additive (constants depend on the locations). Times Mori's scale
+2R_ϑ = 2μe^{2/s}: the proxy cost of one lost sample is 4g₂(y₀)(1 + O(1/log μ)) + O(μ^{−1/2} log μ). This closes the reviewer's gap (1) for the proxy (envelope theorem replaced by an explicit
+balayage measure), not for λ_min.
+
+Proposition C (λ_min itself: certified two-sided brackets; first zero γ₁ = 14.1347…, enclosed by a certified sign change of Hardy's Z).
+Lower bounds are Chekmachev's certificate (Thm 5.10; ChekAudit's re-implementation) with the deleted zero as one more negative rank-one
+column √2·e₀ (Q′ − ε ≥ D + UMU* − BB* − 2e₀e₀* and the Woodbury test λ_max(B′*P⁻¹B′) ≤ 1, Lemma 5.5 Cholesky in Arb: certlow.py);
+upper bounds are Arb Rayleigh quotients of explicit vectors (wmat.py Galerkin ground states: certdel.py, ubfull.py).
+| μ | y₁ | λ (even) | λ′ = λ_min(Q − 2|û(γ₁)|²) | log(λ/λ′) | 4g₂(y₁) |
+|---|---|---|---|---|---|
+| 5 | 0.4499 | [7.4475e−18, 1.0128e−17] | [1.3883e−21, 1.7545e−21] | [8.354, 8.895] | 8.688 |
+| 10 | 0.2250 | [9.1338e−44, 1.7279e−43] | [1.0130e−48, 1.8225e−48] | [10.822, 12.047] | 11.500 |
+(λ lower bounds ε₅, ε₁₀ certified by Chekmachev and re-certified in ChekAudit, even sector.) Both brackets contain 4g₂(y₁): at these two
+windows |log(λ/λ′) − 4g₂(y₁)| ≤ 0.34 (μ = 5) and ≤ 0.68 (μ = 10), rigorously. Finite μ only.
+
+What remains open. (1) No O(1)-precise asymptotic of λ_min is known even without deletion (log λ_min = −4πμ + o(μ) only under Mori's
+hypotheses), and the law is an O(1) statement. (2) Certificate half: Mori's chain λ_min ≥ s·A(Λ) ≥ exp(−2R_ϑP − E), E = O((A_μ + s³)log s).
+With Lemma B, an extra virtual node at ±y₀ raises 2R_ϑP by 4g₂(y₀) + o(1), but a node's placement and elimination and the Voss–Hall
+factor are controlled only up to O(1)–O(log s), and the bound is relative to Mori's lower bound for Z, not to λ_min(Z). Needed: a
+sampling constant sharp to e^{o(1)}, i.e. log λ_min(Z) = −2R_ϑ P(c_Z) + κ(μ) + o(1) with κ insensitive to one point. (3) Test-vector
+half: needs u with Q′(u) ≤ e^{−4g₂ + o(1)}λ_min(Z)‖u‖² for all large μ; the CCM/Mori prolate vector is zero-blind (its zero-side energy
+sits at y ≈ 2.5–3, so deleting a central zero changes its Rayleigh quotient by a negligible amount), and no zero-adaptive test vector
+with controlled Rayleigh quotient is known. Sufficient (not equivalent) target for the upper half via Lemma A(b), (d): the scale-free extremal value 1 − θ(γ₀) ≥ e^{−4g₂ − o(1)}.
+
+Review of (ii′) (reviewer subagent, argument pasted inline): Lemma A GAP, fixed above ((c): λ′ = λ when the secular equation has no root
+below λ). Lemma B: lower bound and no-constant balayage identity CORRECT; repairable gaps fixed above (zero-mass tip correction, slack
+0.55 for b = log 2, location-dependent constants, O(g₂/s) from 2R_ϑ). Proposition C: CORRECT as a technique (implementation details:
+Arb balls throughout, zero ball radius 10⁻⁵⁶ (μ = 5), 10⁻¹⁰⁴ (μ = 10), ChekAudit's Lemma 5.5 Cholesky check). Significance: ROUTINE as
+progress toward the spectral law; the explicit proxy sensitivity is useful. 'What remains open': accurate. Weakest point: no
+deletion-stable, e^{o(1)}-sharp bridge from the multiplier optimum to the spectral bottom.
