@@ -1,0 +1,17 @@
+/tmp/e27_m3.log 7651 clusters
+[3e+03,1e+04) 2L-forced   273  P-forced   561  P-forced patched   329  clusters   119 skipped 1
+[1e+04,1e+05) 2L-forced  1306  P-forced  1519  P-forced patched  1287  clusters   957 skipped 1
+[1e+05,1e+06) 2L-forced  2178  P-forced  1476  P-forced patched  1441  clusters  2114 skipped 0
+[1e+06,1e+07) 2L-forced  2378  P-forced  1147  P-forced patched  1147  clusters  2377 skipped 0
+[1e+07,1e+08) 2L-forced  1536  P-forced   495  P-forced patched   495  clusters  1536 skipped 0
+[1e+08,1e+09) 2L-forced   507  P-forced    86  P-forced patched    86  clusters   507 skipped 0
+[1e+09,1e+10) 2L-forced    41  P-forced     1  P-forced patched     1  clusters    41 skipped 0
+2L-forced total 8219 P-forced total 5285 patched 4786
+highest unpatched cluster t0: 716490.6635735506  #unpatched clusters 153
+P-forced above it: 1920
+ t>=1e+04: P-forced 4724, unpatched 267
+ t>=2e+04: P-forced 4296, unpatched 166
+ t>=5e+04: P-forced 3661, unpatched 85
+ t>=1e+05: P-forced 3205, unpatched 35
+ t>=3e+05: P-forced 2473, unpatched 11
+ t>=1e+06: P-forced 1729, unpatched 0

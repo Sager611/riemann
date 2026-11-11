@@ -1,0 +1,18 @@
+c=2 delta=0.3 even: lambda_min zeta 1.331e-03   merged off-line pair 1.879e-05
+c=2 delta=0.3 odd: lambda_min zeta 7.744e-02   merged off-line pair 7.206e-03
+c=2 delta=0.05 even: lambda_min zeta 1.331e-03   merged off-line pair 6.378e-05
+c=2 delta=0.05 odd: lambda_min zeta 7.744e-02   merged off-line pair 8.009e-03
+c=3 delta=0.3 even: lambda_min zeta 5.739e-08   merged off-line pair -2.104e-03
+c=3 delta=0.3 odd: lambda_min zeta 1.708e-05   merged off-line pair -4.408e-03
+c=3 delta=0.05 even: lambda_min zeta 5.739e-08   merged off-line pair -1.457e-05
+c=3 delta=0.05 odd: lambda_min zeta 1.708e-05   merged off-line pair -2.996e-06
+c=5 delta=0.3 even: lambda_min zeta -8.720e-16   merged off-line pair -4.188e-02
+c=5 delta=0.3 odd: lambda_min zeta 1.206e-14   merged off-line pair -4.909e-02
+c=5 delta=0.05 even: lambda_min zeta -8.720e-16   merged off-line pair -1.091e-03
+c=5 delta=0.05 odd: lambda_min zeta 1.206e-14   merged off-line pair -1.172e-03
+c=10 delta=0.3 even: lambda_min zeta -1.940e-15   merged off-line pair -1.622e-01
+c=10 delta=0.3 odd: lambda_min zeta -2.049e-15   merged off-line pair -1.831e-01
+c=10 delta=0.05 even: lambda_min zeta -1.940e-15   merged off-line pair -4.096e-03
+c=10 delta=0.05 odd: lambda_min zeta -2.049e-15   merged off-line pair -4.828e-03
+c=47: max |Delta mu| on t in [3000, 3100] = 0.000350305068501693
+EXIT 0 PEAK_RSS_KB 41344

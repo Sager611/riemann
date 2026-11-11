@@ -1,0 +1,3 @@
+# CG_SCAN_ONLY=1 cert_guard.py 16 m 1.512800554e-75 512 427 (console output, 11 Nov 2026; the m = 4 and c = 20 m = 3 runs hit the 600 s alarm)
+{'c': 16, 'm': 3, 'forced_high_before': 179, 'patch_accepted': 38, 'patch_rejected': 138, 'forced_high_after_arb': 128, 'Kh': 92, 'Eh': 36, 'time_s': 133.0}  peak RSS 164 MB
+{'c': 16, 'm': 2, 'forced_high_before': 110, 'patch_accepted': 0, 'patch_rejected': 110, 'forced_high_after_arb': 108, 'Kh': 59, 'Eh': 49, 'time_s': 6.5}  peak RSS 119 MB
