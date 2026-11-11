@@ -1,3 +1,5 @@
+Correction (aclgh2, 11 Nov 2026): the S = {inf, 2} rate 0.006 R^0.8/n0 below is an artefact of the cut model (a low-frequency direction at kappa = 0.023, index about 1.4e3, sets the onset); see ../ACLGH2/REPORT.md sec. 3.1.
+
 HOLDS: nothing fails on the computable range: Galerkin spectra lambda^2 = 2...20 (eps(j)/delta_4j 1.67-11.96, odd 1.67-8.39, interlacing, counts lambda^2-1 / lambda^2-2), certified eps(1) >= 3.63 delta_4 and positivity for lambda^2 = 3...31, 45, 47, Gram constant >= 0.151, (H2ii) for S = {inf, 2}: Tr(M_chiR N^(n0)) ~ 0.006 R^0.8/n0 (for S = {inf, 2, 3} the decay starts only past n0 ~ 50); smallest certified margin eps(2) >= 4.9e-4 delta_8 (lambda^2 = 20).
 
 # ACLGFals: falsification of the hypotheses of Andrews-Connes-La Gatta (arXiv 2611.13129) at small lambda (aclgfals, 2026-11-11)

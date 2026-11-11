@@ -1,0 +1,17 @@
+== L_p23 100 18:53:50
+real_s=2.00 maxrss_MB=87 polled_peak_rss_KB=84480
+== L_p23 200 18:53:53
+real_s=6.63 maxrss_MB=144 polled_peak_rss_KB=147008
+== L_p235 100 18:54:00
+real_s=1.75 maxrss_MB=87 polled_peak_rss_KB=72032
+== L_p235 200 18:54:02
+real_s=6.46 maxrss_MB=143 polled_peak_rss_KB=146112
+== L_p2357 100 18:54:09
+real_s=1.82 maxrss_MB=87 polled_peak_rss_KB=88848
+== L_p2357 200 18:54:11
+real_s=6.41 maxrss_MB=144 polled_peak_rss_KB=146976
+== L_p235711 100 18:54:17
+real_s=1.74 maxrss_MB=87 polled_peak_rss_KB=88944
+== L_p235711 200 18:54:19
+real_s=6.68 maxrss_MB=144 polled_peak_rss_KB=147344
+BATCH_DONE 18:54:26

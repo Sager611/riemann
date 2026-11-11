@@ -1,0 +1,21 @@
+{"x": 3, "S": 3, "logF": 1.722, "F": 5.593, "sum_log2p_over_p": 0.643, "half_log2x": 0.603, "logF_over_logx": 1.567}
+{"x": 5, "S": 4, "logF": 2.524, "F": 12.48, "sum_log2p_over_p": 1.161, "half_log2x": 1.295, "logF_over_logx": 1.568}
+{"x": 7, "S": 5, "logF": 3.255, "F": 25.91, "sum_log2p_over_p": 1.702, "half_log2x": 1.893, "logF_over_logx": 1.673}
+{"x": 11, "S": 6, "logF": 3.88, "F": 48.44, "sum_log2p_over_p": 2.224, "half_log2x": 2.875, "logF_over_logx": 1.618}
+{"x": 13, "S": 7, "logF": 4.467, "F": 87.08, "sum_log2p_over_p": 2.73, "half_log2x": 3.289, "logF_over_logx": 1.741}
+{"x": 23, "S": 10, "logF": 5.951, "F": 384.3, "sum_log2p_over_p": 4.086, "half_log2x": 4.916, "logF_over_logx": 1.898}
+{"x": 47, "S": 16, "logF": 8.136, "F": 3414.0, "sum_log2p_over_p": 6.191, "half_log2x": 7.412, "logF_over_logx": 2.113}
+{"x": 97, "S": 26, "logF": 10.711, "F": 44830.0, "sum_log2p_over_p": 8.738, "half_log2x": 10.464, "logF_over_logx": 2.341}
+{"x": 199, "S": 47, "logF": 14.287, "F": 1602000.0, "sum_log2p_over_p": 12.317, "half_log2x": 14.01, "logF_over_logx": 2.699}
+{"x": 499, "S": 96, "logF": 19.194, "F": 216700000.0, "sum_log2p_over_p": 17.246, "half_log2x": 19.298, "logF_over_logx": 3.09}
+{"x": 997, "S": 169, "logF": 23.542, "F": 16750000000.0, "sum_log2p_over_p": 21.613, "half_log2x": 23.838, "logF_over_logx": 3.409}
+{"x": 1999, "S": 304, "logF": 28.483, "F": 2344000000000.0, "sum_log2p_over_p": 26.571, "half_log2x": 28.883, "logF_over_logx": 3.748}
+{"x": 4999, "S": 670, "logF": 35.781, "F": 3462000000000000.0, "sum_log2p_over_p": 33.886, "half_log2x": 36.27, "logF_over_logx": 4.201}
+{"x": 9973, "S": 1230, "logF": 41.889, "F": 1.557e+18, "sum_log2p_over_p": 40.003, "half_log2x": 42.39, "logF_over_logx": 4.549}
+{"x": 19997, "S": 2263, "logF": 48.446, "F": 1.096e+21, "sum_log2p_over_p": 46.565, "half_log2x": 49.038, "logF_over_logx": 4.892}
+{"x": 49999, "S": 5134, "logF": 57.916, "F": 1.421e+25, "sum_log2p_over_p": 56.04, "half_log2x": 58.534, "logF_over_logx": 5.353}
+{"x": 99991, "S": 9593, "logF": 65.645, "F": 3.23e+28, "sum_log2p_over_p": 63.771, "half_log2x": 66.273, "logF_over_logx": 5.702}
+{"x": 199999, "S": 17985, "logF": 73.847, "F": 1.179e+32, "sum_log2p_over_p": 71.975, "half_log2x": 74.494, "logF_over_logx": 6.05}
+{"x": 499979, "S": 41539, "logF": 85.44, "F": 1.277e+37, "sum_log2p_over_p": 83.569, "half_log2x": 86.098, "logF_over_logx": 6.511}
+{"x": 999983, "S": 78499, "logF": 94.762, "F": 1.427e+41, "sum_log2p_over_p": 92.89, "half_log2x": 95.434, "logF_over_logx": 6.859}
+check p=9973: quadrature 1.0085278286288795 second-order series 1 + (log p)^2/(p-1): 1.008501862612805
