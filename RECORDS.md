@@ -20,6 +20,7 @@ Constants, ranges, exponents and proportions (AGENTS.md: records, not discoverie
 - (N8, N12) At least 2.06% of the zeros of a combination of three Dirichlet L-functions lie on the critical line (was 4.91·10⁻⁹); 34.71% for two (was ours 34.49%). [details](discoveries/linear-combinations-three.md)
 - (N12, N8) At least 6.8·10⁻⁴ of the zeros of a combination of four Dirichlet L-functions lie on the critical line (was 3.7·10⁻⁹), and c/N for N summands. [details](discoveries/selberg-linear-combinations.md)
 - (N8, N12) At least 7.005% of the zeros of every GL(2) newform L-function lie on the critical line (was 6.96%); arXiv 2508.11108's Question 5 settled. [details](discoveries/gl2-critical-line.md)
+- (N5) Báez-Duarte distance certified: d_N² for every N ≤ 1280 (Vasyunin's Gram summed exactly, ball width < 10⁻²³); d_N² log N − C (C = 2 + γ − log 4π) changes sign 15 times on [2, 1280], first below C at N = 41, below on [584, 1280] (was N ≤ 128 rigorous, Zenodo 24088197; d_300² interval, Zenodo 21898513; 2611.03924 in double precision). [NBRate](Riemann/Deep/NBRate/REPORT.md)
 
 ## Side records
 
