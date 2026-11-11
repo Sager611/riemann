@@ -1,0 +1,26 @@
+PASS l.9229 crossing r_* = [(2-cu)t+(c/2-1)u]/[3-(1+c)u]
+PASS l.9232-9234 (6-c)/(10-2c) <= r_* <= 1, 1/3 <= m_* <= 1/2, r_* >= 8/13 on c in [2/3,12/13], u in [0,1/2], t in [1,3/2] (min r_* = 8/13)
+PASS l.9238-9249 z_M <= (4-c)/(20-4c) <= 5/26 < 1/5, 2r-1 >= 1/(5-c), z_S <= c/12 <= 1/13
+PASS l.9248 c = 2/(3 kappa) in [2/3, 12/13] for kappa in [13/18, 1]
+PASS l.10018 h = 1-l_x+ell = l_y+2 ell
+PASS l.10019 C(B(ell)) = l_x/2 + b/12
+PASS l.10050 2D-3P = 2x(2+c_k-3c_k x)
+PASS l.10044 (v:cmp:10) with c = 2c_kappa equals (eq:v-refined-count)
+PASS l.10052 1/6 <= 1-delta <= R_kappa <= 1-2delta/3 on the grid (kappa, delta in (0,5/6], x in [0,1/2])
+PASS l.10063 theta chain: (5/6)/(12*13/18) = 15/156 <= 1/10 and delta/(12 kappa) <= delta/2
+PASS l.10091 endpoint E_{b,ell,kappa}(delta,x) at d=h (theta = c_k g/2 = g/(6kappa))
+PASS l.10091 theta = g/(6 kappa) equals c_kappa g/2
+PASS l.10100 small endpoint E_small at d=h (theta = g ell/h)
+PASS l.10076 full exponent = (v:cmp:12) with Y^{-a} -> Y^{-1/2-theta}, U^{R+delta/2} -> U^{K+theta/2}
+PASS Thm 13.15 B_inf = 0.8749570194200989461286 (printed 0.874957019420098946; one sign change on the interval: True)
+PASS l.10419 supply-limited: (3R+1)/4 - theta m - g v (1-2m)/2 = (3R+1)/4 - theta/2 (theta = g v)
+PASS l.10433 maximal-length: z_p(m0) = (1-2m0)/(6 kappa) = L
+PASS l.10433 maximal-length: -theta m - theta(1-2m)/2 = -theta/2 for theta = g/(6kappa), z_p = (1-2m)/(6kappa)
+PASS l.10441 R + (1/2-theta) m0 - ((3R+1)/4 - theta/2) = (R - (6kappa-2g)L)/4
+PASS l.10335 Hoelder: (3/4)R + (1-2g z_p)/4 = (3R+1)/4 - g z_p/2
+PASS l.10329 omega = 2 g Delta + delta eta_M2 <= eps/60 (g <= 5/12, delta <= 5/6, Delta, eta_M2 <= eps/100)
+PASS l.10404 sixth-power-free u: prod_{p|u} q_p >= q_u^(1/5) (exponents <= 5)
+PASS l.10313 2m + 6 kappa v(1-2m) <= 1 when v <= 1/(6 kappa)
+PASS l.10675 (21/100)(6 kappa - delta) - (1 - 2delta/3) at kappa = 7497/10000, delta = 1/8 equals 1279/750000 = 1279/750000, increasing in delta and kappa
+PASS l.10688 E_small <= C0 + A_sm delta (x <= 1/2, 1-R >= 2delta/3)
+SUMMARY_CMP 25 pass of 25

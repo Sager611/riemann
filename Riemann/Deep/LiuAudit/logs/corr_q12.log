@@ -1,0 +1,167 @@
+PASS N(u)=13 N(v)=13 j=(0, 0, 0, 0): F=12+5.25935e-17j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=13 j=(1, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=13 j=(2, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=13 j=(0, 1, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=13 j=(1, 1, 1, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=13 j=(-3, -3, 3, -2): F=12+5.25935e-17j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=13 j=(11, -12, 8, -4): F=12+5.25935e-17j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=13 j=(4, -4, 1, 0): F=12+5.25935e-17j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=13 j=(-3, 1, 25, 45): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=169 j=(0, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=169 j=(1, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=169 j=(2, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=169 j=(0, 1, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=169 j=(1, 1, 1, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=169 j=(-3, -3, 3, -2): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=169 j=(11, -12, 8, -4): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=169 j=(-8, 12, -6, 1): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=169 j=(-47, -36, 32, 44): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=13 j=(0, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=13 j=(1, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=13 j=(2, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=13 j=(0, 1, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=13 j=(1, 1, 1, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=13 j=(-3, -3, 3, -2): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=13 j=(11, -12, 8, -4): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=13 j=(-8, 12, -6, 1): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=13 j=(-26, -19, 36, -8): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=169 j=(0, 0, 0, 0): F=156-4.62586e-16j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=169 j=(1, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=169 j=(2, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=169 j=(0, 1, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=169 j=(1, 1, 1, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=169 j=(-3, -3, 3, -2): F=-13-1.11022e-16j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=169 j=(11, -12, 8, -4): F=-13+1.33907e-16j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=169 j=(15, -32, 25, -8): F=156-4.62586e-16j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=169 N(v)=169 j=(-23, 32, -25, -10): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=13 j=(0, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=13 j=(1, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=13 j=(2, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=13 j=(0, 1, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=13 j=(1, 1, 1, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=13 j=(-3, -3, 3, -2): F=-12-5.25935e-17j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=13 j=(-1, -4, -4, -5): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=13 j=(11, -12, 8, -4): F=-6+10.3923j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=13 j=(3, 10, 27, 12): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=13 j=(-7, 4, -3, 3): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=13 j=(14, 4, -42, -48): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=481 j=(0, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=481 j=(1, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=481 j=(2, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=481 j=(0, 1, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=481 j=(1, 1, 1, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=481 j=(-3, -3, 3, -2): F=-12-5.25935e-17j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=481 j=(-1, -4, -4, -5): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=481 j=(11, -12, 8, -4): F=-6-10.3923j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=481 j=(3, 10, 27, 12): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=481 j=(-7, 4, -3, 3): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=13 N(v)=481 j=(36, 25, 33, 3): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=793 j=(0, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=481 N(v)=793 j=(1, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=793 j=(2, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=793 j=(0, 1, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=793 j=(1, 1, 1, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=793 j=(-3, -3, 3, -2): F=-6-10.3923j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=0.5+0.866j
+PASS N(u)=481 N(v)=793 j=(-1, -4, -4, -5): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=481 N(v)=793 j=(6, -3, -7, -3): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=481 N(v)=793 j=(11, -12, 8, -4): F=6-10.3923j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=0.5+0.866j
+PASS N(u)=481 N(v)=793 j=(3, 10, 27, 12): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=793 j=(-26, 2, 13, 18): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=793 j=(24, -3, -12, 20): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=481 N(v)=793 j=(31, -18, -5, 28): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=37 N(v)=61 j=(0, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=37 N(v)=61 j=(1, 0, 0, 0): F=0.5+0.866025j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=0.5+0.866j
+PASS N(u)=37 N(v)=61 j=(2, 0, 0, 0): F=-1-3.18193e-16j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=0.5+0.866j
+PASS N(u)=37 N(v)=61 j=(0, 1, 0, 0): F=0.5-0.866025j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=0.5+0.866j
+PASS N(u)=37 N(v)=61 j=(1, 1, 1, 0): F=-1+3.84593e-16j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=0.5+0.866j
+PASS N(u)=37 N(v)=61 j=(-1, -4, -4, -5): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=37 N(v)=61 j=(6, -3, -7, -3): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=37 N(v)=61 j=(3, 10, 27, 12): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=37 N(v)=61 j=(-26, 2, 13, 18): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=37 N(v)=61 j=(0, 1, 4, 7): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=37 N(v)=61 j=(-38, -20, -38, -5): F=0.5+0.866025j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=0.5+0.866j
+PASS N(u)=37 N(v)=793 j=(0, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=37 N(v)=793 j=(1, 0, 0, 0): F=0.5+0.866025j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=0.5+0.866j
+PASS N(u)=37 N(v)=793 j=(2, 0, 0, 0): F=-0.5+0.866025j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=0.5+0.866j
+PASS N(u)=37 N(v)=793 j=(0, 1, 0, 0): F=-0.5-0.866025j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=0.5+0.866j
+PASS N(u)=37 N(v)=793 j=(1, 1, 1, 0): F=-0.5-0.866025j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=0.5+0.866j
+PASS N(u)=37 N(v)=793 j=(-1, -4, -4, -5): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=37 N(v)=793 j=(-3, -3, 3, -2): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=37 N(v)=793 j=(6, -3, -7, -3): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=37 N(v)=793 j=(3, 10, 27, 12): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=37 N(v)=793 j=(11, -12, 8, -4): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=37 N(v)=793 j=(-26, 2, 13, 18): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=37 N(v)=793 j=(-7, -2, 0, -10): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=0.5+0.866j
+PASS N(u)=37 N(v)=793 j=(47, -37, -12, -10): F=-0.5-0.866025j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=0.5+0.866j
+PASS N(u)=6253 N(v)=793 j=(0, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1-6.306e-17j
+PASS N(u)=6253 N(v)=793 j=(1, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=6253 N(v)=793 j=(2, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=6253 N(v)=793 j=(0, 1, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=6253 N(v)=793 j=(1, 1, 1, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=6253 N(v)=793 j=(-3, -3, 3, -2): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1-6.306e-17j
+PASS N(u)=6253 N(v)=793 j=(-1, -4, -4, -5): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1-6.306e-17j
+PASS N(u)=6253 N(v)=793 j=(6, -3, -7, -3): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1-6.306e-17j
+PASS N(u)=6253 N(v)=793 j=(11, -12, 8, -4): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1-6.306e-17j
+PASS N(u)=6253 N(v)=793 j=(3, 10, 27, 12): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=6253 N(v)=793 j=(-26, 2, 13, 18): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=6253 N(v)=793 j=(-68, 30, 41, -52): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1-6.306e-17j
+PASS N(u)=6253 N(v)=793 j=(40, -30, 0, -24): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=2197 N(v)=13 j=(0, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=2197 N(v)=13 j=(1, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=2197 N(v)=13 j=(2, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=2197 N(v)=13 j=(0, 1, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=2197 N(v)=13 j=(1, 1, 1, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=2197 N(v)=13 j=(-3, -3, 3, -2): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=2197 N(v)=13 j=(11, -12, 8, -4): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=2197 N(v)=13 j=(15, -32, 25, -8): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=2197 N(v)=13 j=(-49, 25, -44, -22): F=-3.33067e-16-8.88178e-16j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=481 j=(0, 0, 0, 0): F=432+4.43251e-16j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=481 j=(1, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=481 j=(2, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=481 j=(0, 1, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=481 j=(1, 1, 1, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=481 j=(-3, -3, 3, -2): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=481 j=(-1, -4, -4, -5): F=1+1.11022e-15j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=481 j=(11, -12, 8, -4): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=481 j=(3, 10, 27, 12): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=481 j=(14, 2, 9, -10): F=432+4.43251e-16j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=481 N(v)=481 j=(-1, -2, -39, 48): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=1+0j
+PASS N(u)=2257 N(v)=73 j=(0, 0, 0, 0): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=-0.5+0.866j
+PASS N(u)=2257 N(v)=73 j=(1, 0, 0, 0): F=-0.5+0.866025j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=-0.5+0.866j
+PASS N(u)=2257 N(v)=73 j=(2, 0, 0, 0): F=1+2.23113e-17j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=-0.5+0.866j
+PASS N(u)=2257 N(v)=73 j=(0, 1, 0, 0): F=-0.5-0.866025j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=-0.5+0.866j
+PASS N(u)=2257 N(v)=73 j=(1, 1, 1, 0): F=0.5+0.866025j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=-0.5+0.866j
+PASS N(u)=2257 N(v)=73 j=(-1, -4, -4, -5): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=-0.5+0.866j
+PASS N(u)=2257 N(v)=73 j=(6, -3, -7, -3): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=-0.5+0.866j
+PASS N(u)=2257 N(v)=73 j=(-4, -5, 3, -3): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=-0.5+0.866j
+PASS N(u)=2257 N(v)=73 j=(3, 10, 27, 12): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=-0.5+0.866j
+PASS N(u)=2257 N(v)=73 j=(-26, 2, 13, 18): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=-0.5+0.866j
+PASS N(u)=2257 N(v)=73 j=(26, -18, 13, -6): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=-0.5+0.866j
+PASS N(u)=2257 N(v)=73 j=(-7, -3, -4, -17): F=0+0j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=True rho=-0.5+0.866j
+PASS N(u)=2257 N(v)=73 j=(24, 46, -41, 22): F=0.5+0.866025j fourier_ok=True j0_ok=True closed(with rho)_ok=True closed(rho=1)_ok=False rho=-0.5+0.866j
+PASS support N(D)=13 N(E)=13 N(a)=37 N(b)=61 j=(1, 0, 0, 0): lhs=0+0j plain=True times_unit=True over_unit=True unit=1-5.363e-16j
+PASS support N(D)=13 N(E)=13 N(a)=37 N(b)=61 j=(0, 1, 0, 0): lhs=0+0j plain=True times_unit=True over_unit=True unit=1-5.363e-16j
+PASS support N(D)=13 N(E)=13 N(a)=37 N(b)=61 j=(-2, -1, 1, 0): lhs=-0.5-0.866025j plain=True times_unit=True over_unit=True unit=1-5.363e-16j
+PASS support N(D)=13 N(E)=13 N(a)=37 N(b)=61 j=(-4, 2, -2, 1): lhs=-1+1.22125e-15j plain=True times_unit=True over_unit=True unit=1-5.363e-16j
+PASS support N(D)=13 N(E)=13 N(a)=37 N(b)=61 j=(4, -4, 1, 0): lhs=-6-10.3923j plain=True times_unit=True over_unit=True unit=1-5.363e-16j
+PASS support N(D)=13 N(E)=13 N(a)=37 N(b)=61 j=(4, 0, 1, -1): lhs=0+0j plain=True times_unit=True over_unit=True unit=1-5.363e-16j
+PASS support N(D)=13 N(E)=13 N(a)=37 N(b)=61 j=(5, 3, 0, 2): lhs=0+0j plain=True times_unit=True over_unit=True unit=1-5.363e-16j
+PASS support N(D)=13 N(E)=169 N(a)=37 N(b)=61 j=(1, 0, 0, 0): lhs=0+0j plain=True times_unit=True over_unit=True unit=1-7.841e-16j
+PASS support N(D)=13 N(E)=169 N(a)=37 N(b)=61 j=(0, 1, 0, 0): lhs=0+0j plain=True times_unit=True over_unit=True unit=1-7.841e-16j
+PASS support N(D)=13 N(E)=169 N(a)=37 N(b)=61 j=(-2, -1, 1, 0): lhs=9.4369e-16-2.22045e-16j plain=True times_unit=True over_unit=True unit=1-7.841e-16j
+PASS support N(D)=13 N(E)=169 N(a)=37 N(b)=61 j=(-4, 2, -2, 1): lhs=-8.88178e-16+4.44089e-16j plain=True times_unit=True over_unit=True unit=1-7.841e-16j
+PASS support N(D)=13 N(E)=169 N(a)=37 N(b)=61 j=(4, -4, 1, 0): lhs=0+0j plain=True times_unit=True over_unit=True unit=1-7.841e-16j
+PASS support N(D)=13 N(E)=169 N(a)=37 N(b)=61 j=(4, 0, 1, -1): lhs=0+0j plain=True times_unit=True over_unit=True unit=1-7.841e-16j
+PASS support N(D)=13 N(E)=169 N(a)=37 N(b)=61 j=(5, 3, 0, 2): lhs=0+0j plain=True times_unit=True over_unit=True unit=1-7.841e-16j
+PASS support N(D)=169 N(E)=13 N(a)=37 N(b)=73 j=(1, 0, 0, 0): lhs=0+0j plain=True times_unit=True over_unit=True unit=1-2.021e-17j
+PASS support N(D)=169 N(E)=13 N(a)=37 N(b)=73 j=(0, 1, 0, 0): lhs=0+0j plain=True times_unit=True over_unit=True unit=1-2.021e-17j
+PASS support N(D)=169 N(E)=13 N(a)=37 N(b)=73 j=(-2, -1, 1, 0): lhs=8.32667e-16+2.22045e-16j plain=True times_unit=True over_unit=True unit=1-2.021e-17j
+PASS support N(D)=169 N(E)=13 N(a)=37 N(b)=73 j=(-4, 2, -2, 1): lhs=0-1.11022e-15j plain=True times_unit=True over_unit=True unit=1-2.021e-17j
+PASS support N(D)=169 N(E)=13 N(a)=37 N(b)=73 j=(4, -4, 1, 0): lhs=0+0j plain=True times_unit=True over_unit=True unit=1-2.021e-17j
+PASS support N(D)=169 N(E)=13 N(a)=37 N(b)=73 j=(4, 0, 1, -1): lhs=0+0j plain=True times_unit=True over_unit=True unit=1-2.021e-17j
+PASS support N(D)=169 N(E)=13 N(a)=37 N(b)=73 j=(5, 3, 0, 2): lhs=0+0j plain=True times_unit=True over_unit=True unit=1-2.021e-17j
+PASS c=6 u=v=pi13^6 k=(1, 0, 0, 0): F=4084223-1.504762e-25j closed=4084223+0j (P^5(P-2)=4084223, P^5(P-1)=4455516)
+PASS c=6 u=v=pi13^6 k=(2, 1, 0, 0): F=4084223-2.1974509e-26j closed=4084223+0j (P^5(P-2)=4084223, P^5(P-1)=4455516)
+PASS c=6 u=v=pi13^6 k=(-2, 1, 0, 0): F=4455516-8.4959176e-27j closed=4455516+0j (P^5(P-2)=4084223, P^5(P-1)=4455516)
+reciprocity factors != 1 for our generators: [(481, 793, (0.4999999999999999+0.8660254037844386j)), (481, 793, (0.4999999999999999+0.8660254037844386j)), (481, 793, (0.4999999999999999+0.8660254037844386j)), (481, 793, (0.4999999999999999+0.8660254037844386j)), (481, 793, (0.4999999999999999+0.8660254037844386j)), (481, 793, (0.4999999999999999+0.8660254037844386j))]
+SUMMARY_CORR 165 pass 0 fail

@@ -1,0 +1,15 @@
+PASS l.8622-8631/8681-8690 Gauss phase identities at q=13  gamma3=+1
+PASS l.8622-8631/8681-8690 Gauss phase identities at q=37  gamma3=+1
+PASS l.8622-8631/8681-8690 Gauss phase identities at q=61  gamma3=+1
+PASS l.8622-8631/8681-8690 Gauss phase identities at q=73  gamma3=+1
+PASS l.8558-8636 series of C_(t,k)(J) terms = closed P_j^* with J_0..J_5, q=13 (rel err 3.66e-15)
+PASS l.8558-8636 series of C_(t,k)(J) terms = closed P_j^* with J_0..J_5, q=37 (rel err 1.39e-14)
+PASS Lemma 13.10 (l.9314): |H_p-1| q^(1+10e) <= C1 = 56 and not growing, a in [1/2,11/12] (max ratio 1.0931)
+PASS l.9287 G_p + chibar_p(u) H_p = O(q^(-a-4e)) at good primes (max ratio 1.2230)
+PASS l.9289-9298 sigma_j table: ratios bounded (max ratio per j: [(1, 1.0), (2, 1.0), (3, 1.6164), (4, 1.0), (5, 1.0)])
+PASS l.8810 principal box: |H_p-1| q^(907/500) bounded (max ratio 2.1730)
+PASS l.8838 principal box: |G_p+1| q^(437/500) bounded (max ratio 1.2676)
+PASS Lemma 13.10 exact: every numerator monomial exponent <= -1-10e on a in [1/2,11/12] (max -1.0100, bound -1.0100; equality from eta T Y0)
+PASS sigma_j exact: max monomial exponent minus (1/2 - sigma_j) per j = [(1, 0.0), (2, 0.0), (3, 0.0), (4, 0.0), (5, 0.0)] (0 = tight at a = 1/2)
+PASS principal box exact: max numerator monomial exponent = -1.8140 <= -907/500
+SUMMARY_LOCAL 14 pass of 14

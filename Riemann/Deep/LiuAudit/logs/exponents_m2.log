@@ -1,0 +1,31 @@
+PASS l.6296 sup = (5/6+1/(3q))M: (5*q_k + 2)/(6*q_k)
+PASS l.6298 (5/6+1/(3q)) <= 14/15 for q >= 10/3
+PASS l.6284 A_comp <= 23M/30: 3M/2-A+2z < 2M/3+M/10 at A>5M/6, z<M/20
+PASS l.6282 6kappa-1 >= 10/3 <=> kappa >= 13/18
+PASS l.6736 complete outer exponent = M + (B_c+B_d-(c+d-2p-R))/2
+PASS l.6744 (3i-5j-r)_+/6 + (3j-5i-r)_+/6 <= i+j-2-r for 1<=j<=i<=120
+PASS l.6909 diagonal excess = A-M-d-(K0-K)-w_o-B_c+g-ell
+PASS l.6913 -D0-w_o+J_+ <= delta1 (20000 random rational instances)
+PASS l.6915 largest increment 2sigma - sigma/3 = 5sigma/3
+PASS l.6993 M' = m'+q' = M+J-g-g2+t2
+PASS l.7022 allowance - outside exponent = M' + Delta'
+PASS l.6995 M' <= M - sigma (g = J_+ + sigma or + 2 sigma, t2 <= g2)
+PASS l.6968 local |F| bounds P^{i-1}, P^i, P^i, P^{j0} implied by Lemma 12.10 (i,j<=24)
+PASS l.7110 amplifier error: w >= sigma/4 => w + sigma <= 5w
+PASS l.7104 main term g - J_+ = 2 sigma = 6 ell (ell = sigma/3)
+PASS l.7121 kappa d_z <= Delta' + delta1/6 + theta_N/3 + eta (kappa<=1, Delta'>=w+ell)
+PASS l.7713 C*(xi+eps0) < eps/(256 D#)
+PASS l.7714 2D# C*(eta+xi+eps0) < 3eps/256
+PASS l.7711 eps/8 + eps/256 + 3eps/256 < eps
+PASS l.7656 tau + rho/6 = 7rho/6 + delta + 14sigma/3 + C*(..): 3+5/3 = 14/3
+PASS l.7609-7643 rank r <= D = 4N+3; t-change target <= 4N+3 < 4N+4 <= source
+PASS l.7641 M' <= M - sigma/2 => b(M') <= b(M) - 2 (and R drops: 8 - 3 > 0)
+PASS l.7629 z=0 centered call: M/4 + 5M/12 + xi = 2M/3 + xi < 5M/6 iff xi < M/6 (xi < rho/60 < M/60)
+PASS l.7655 base: A >= z, A+(6k-1)z <= M => 6 kappa z <= A+(6kappa-1)z <= M
+PASS l.7206 exceptional excess = A-5M/6-F_1-F_2 (+2theta+delta2/6+2eps0)
+PASS l.7220 F_1(g=J) = c+2w+q~/6+w_o/6+B_c+ell
+PASS l.7236 F_1 >= 2(c+w)/3 - 3 sigma - 5 delta1/6 (40000 random admissible rational instances)
+PASS l.7240-7254 local F_2 >= 2 b_2/3 for every row of the table, i < 200 (equality only i=1 nonunit)
+PASS l.7240 local F_2 values follow from F_2 = 2b2-5g2/6-p2+t2+V/6+f/6 (V=1 nonunit, f=2 at i=1)
+PASS l.7322 sup_v {-2v/3-(L-v)_+} = -2L/3 (L=1 grid)
+SUMMARY_EXP 30 pass of 30
