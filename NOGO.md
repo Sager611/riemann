@@ -591,3 +591,4 @@
 - R433 N1/N13: Chebyshev alternation fails on zero ordinates (cos γt is not a Haar system), Schoenberg CND holds for any real ordinates, Perron–Frobenius/Leslie controls only the principal root: no tool transfers [R433](Riemann/Tree/R433.lean)
 - R434 N1/N7/N8: Wald's SPRT needs independent indicators, the epidemic final-size map needs a positive renewal kernel, and the Welch bound on zero-phase vectors is tautological: no tool transfers [R434](Riemann/Tree/R434.lean)
 - R435 N8/N13: Hill's stability gap fails at the first zero pair, Abbe's sine condition has no ray invariant for ζ, Gale–Shapley needs preferences zeros do not supply: no tool transfers [R435](Riemann/Tree/R435.lean)
+- R436 N1/N7/N8: Horn–Jackson balancing needs positive concentrations, May's stability sees only β > 0, the four-point condition on ordinates is trivial: no tool transfers [R436](Riemann/Tree/R436.lean)
