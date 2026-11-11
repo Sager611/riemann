@@ -1,0 +1,95 @@
+JerbyLean.not_jerbyConj : JerbyLean.ThetaDerivPos →
+  JerbyLean.certAL → JerbyLean.certAM → JerbyLean.certAR → ¬JerbyLean.JerbyConj
+JerbyLean.not_jerbyConjEx : JerbyLean.certAL → JerbyLean.certAM → JerbyLean.certAR → ¬JerbyLean.JerbyConjEx
+JerbyLean.jerbyConjEx_imp_jerbyConj : JerbyLean.JerbyConjEx → JerbyLean.JerbyConj
+JerbyLean.jerbyConj_imp_ex : JerbyLean.ThetaDerivPos → JerbyLean.JerbyConj → JerbyLean.JerbyConjEx
+JerbyLean.counterexampleA_full : JerbyLean.ThetaDerivPos →
+  JerbyLean.certAL →
+    JerbyLean.certAM →
+      JerbyLean.certAR →
+        ∃ gl g gr,
+          JerbyLean.IsGram (1565734083 - 1) gl ∧
+            JerbyLean.IsGram 1565734083 g ∧
+              JerbyLean.IsGram (1565734083 + 1) gr ∧
+                gl < g ∧
+                  g < gr ∧
+                    (∀ (m : ℤ) (t : ℝ), JerbyLean.IsGram m t → gl < t → t < gr → m = 1565734083 ∧ t = g) ∧
+                      (∀ (t : ℝ), JerbyLean.IsGram (1565734083 - 1) t → t = gl) ∧
+                        (∀ (t : ℝ), JerbyLean.IsGram (1565734083 + 1) t → t = gr) ∧
+                          JerbyLean.Good (1565734083 - 1) gl ∧
+                            JerbyLean.Bad 1565734083 g ∧
+                              JerbyLean.Good (1565734083 + 1) gr ∧ |deriv JerbyLean.hardyZ g| < 4 * |JerbyLean.hardyZ g|
+JerbyLean.gamma_phase : ∀ (t : ℝ),
+  Complex.Gamma (1 / 4 + ↑t / 2 * Complex.I) =
+    ↑‖Complex.Gamma (1 / 4 + ↑t / 2 * Complex.I)‖ *
+      Complex.exp (Complex.I * ↑(JerbyLean.theta t + t / 2 * Real.log Real.pi))
+JerbyLean.theta_unique : ∀ (φ : ℝ → ℝ),
+  Continuous φ →
+    φ 0 = 0 →
+      (∀ (t : ℝ),
+          Complex.Gamma (1 / 4 + ↑t / 2 * Complex.I) =
+            ↑‖Complex.Gamma (1 / 4 + ↑t / 2 * Complex.I)‖ *
+              Complex.exp (Complex.I * ↑(φ t + t / 2 * Real.log Real.pi))) →
+        φ = JerbyLean.theta
+JerbyLean.hardyZ_eq : ∀ (t : ℝ),
+  ↑(JerbyLean.hardyZ t) = Complex.exp (Complex.I * ↑(JerbyLean.theta t)) * riemannZeta (1 / 2 + ↑t * Complex.I)
+JerbyLean.hasDerivAt_hardyZ : ∀ (t : ℝ), HasDerivAt JerbyLean.hardyZ (JerbyLean.hardyZ' t) t
+def JerbyLean.JerbyConj : Prop :=
+∀ (n : ℤ) (g : ℝ),
+  JerbyLean.IsGram n g →
+    JerbyLean.Bad n g →
+      ((∃ g', JerbyLean.IsGram (n - 1) g') ∧ ∀ (g' : ℝ), JerbyLean.IsGram (n - 1) g' → JerbyLean.Good (n - 1) g') →
+        ((∃ g', JerbyLean.IsGram (n + 1) g') ∧ ∀ (g' : ℝ), JerbyLean.IsGram (n + 1) g' → JerbyLean.Good (n + 1) g') →
+          4 * |JerbyLean.hardyZ g| < |deriv JerbyLean.hardyZ g|
+def JerbyLean.JerbyConjEx : Prop :=
+∀ (n : ℤ) (g gl gr : ℝ),
+  JerbyLean.IsGram n g →
+    JerbyLean.IsGram (n - 1) gl →
+      JerbyLean.IsGram (n + 1) gr →
+        JerbyLean.Bad n g →
+          JerbyLean.Good (n - 1) gl → JerbyLean.Good (n + 1) gr → 4 * |JerbyLean.hardyZ g| < |deriv JerbyLean.hardyZ g|
+def JerbyLean.IsGram : ℤ → ℝ → Prop :=
+fun n t => 7 ≤ t ∧ JerbyLean.theta t = ↑n * Real.pi
+def JerbyLean.Good : ℤ → ℝ → Prop :=
+fun n t => 0 < (-1) ^ n * JerbyLean.hardyZ t
+def JerbyLean.Bad : ℤ → ℝ → Prop :=
+fun n t => ¬JerbyLean.Good n t
+def JerbyLean.ThetaDerivPos : Prop :=
+∀ (t : ℝ), 7 ≤ t → 0 < JerbyLean.thetaDeriv t
+def JerbyLean.thetaDeriv : ℝ → ℝ :=
+fun t => (1 / 4 + ↑t / 2 * Complex.I).digamma.re / 2 - Real.log Real.pi / 2
+def JerbyLean.theta : ℝ → ℝ :=
+fun t => ∫ (u : ℝ) in 0..t, JerbyLean.thetaDeriv u
+def JerbyLean.hardyZ : ℝ → ℝ :=
+fun t => (Complex.exp (Complex.I * ↑(JerbyLean.theta t)) * riemannZeta (1 / 2 + ↑t * Complex.I)).re
+def JerbyLean.hardyZ' : ℝ → ℝ :=
+fun t =>
+  (Complex.exp (Complex.I * ↑(JerbyLean.theta t)) *
+      (Complex.I * ↑(JerbyLean.thetaDeriv t) * riemannZeta (1 / 2 + ↑t * Complex.I) +
+        Complex.I * deriv riemannZeta (1 / 2 + ↑t * Complex.I))).re
+def JerbyLean.GramCert : ℤ → ℝ → ℝ → ℝ → ℝ → Prop :=
+fun k a b zl zu => ∃ t ∈ Set.Icc a b, JerbyLean.theta t = ↑k * Real.pi ∧ JerbyLean.hardyZ t ∈ Set.Icc zl zu
+def JerbyLean.GramCertD : ℤ → ℝ → ℝ → ℝ → ℝ → ℝ → ℝ → Prop :=
+fun k a b zl zu dl du =>
+  ∃ t ∈ Set.Icc a b,
+    JerbyLean.theta t = ↑k * Real.pi ∧ JerbyLean.hardyZ t ∈ Set.Icc zl zu ∧ JerbyLean.hardyZ' t ∈ Set.Icc dl du
+def JerbyLean.certAL : Prop :=
+JerbyLean.GramCert 1565734082 568009639.356005286611718227430573 568009639.356005286611718227431427
+  0.27634005895678409472 0.27634005895678410528
+def JerbyLean.certAM : Prop :=
+JerbyLean.GramCertD 1565734083 568009639.698978187581685032968666 568009639.698978187581685032969334
+  18.39714778558963574 18.39714778558964426 73.00385040031973562 73.00385040031974438
+def JerbyLean.certAR : Prop :=
+JerbyLean.GramCert 1565734084 568009640.041951088540347534043632 568009640.041951088540347534044368 4.076959407739047812
+  4.076959407739048188
+'JerbyLean.not_jerbyConj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JerbyLean.not_jerbyConjEx' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JerbyLean.jerbyConjEx_imp_jerbyConj' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JerbyLean.counterexampleA_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JerbyLean.not_jerbyConj_B' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JerbyLean.not_jerbyConj_C' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JerbyLean.hasDerivAt_hardyZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JerbyLean.gamma_phase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JerbyLean.theta_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+'JerbyLean.hardyZ_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+EXIT(Axioms)=0

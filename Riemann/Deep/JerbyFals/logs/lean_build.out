@@ -1,0 +1,10 @@
+✔ [3219/3220] Built Riemann.Deep.JerbyFals.Lean.Defs (58s)
+✔ [3220/3220] Built Riemann.Deep.JerbyFals.Lean.Main (109s)
+Build completed successfully (3220 jobs).
+EXIT(Main)=0
+✔ [3220/3220] Built Riemann.Deep.JerbyFals.Lean.Phase (98s)
+Build completed successfully (3220 jobs).
+EXIT(Phase)=0
+✔ [3261/3261] Built Riemann.Deep.JerbyFals.Lean.RealZ (100s)
+Build completed successfully (3261 jobs).
+EXIT(RealZ)=0

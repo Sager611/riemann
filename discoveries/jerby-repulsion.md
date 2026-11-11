@@ -24,8 +24,8 @@
 - Our files: only ConjFals (the bound holds below 2.54·10^8).
 - No earlier counterexample found.
 
-**Caveat.** All three counterexamples sit in zero-free Gram blocks (Rosser-rule violations), not in the "confined pairs" of Jerby's proposed mechanism. A refined bound, μ > 4 when the block holds two zeros, survives the data (minimum 4.81) but was not tested beyond it. RH is untouched. Lean formalization: pending (jerbylean, mandatory).
+**Caveat.** All three counterexamples sit in zero-free Gram blocks (Rosser-rule violations), not in the "confined pairs" of Jerby's proposed mechanism. A refined bound, μ > 4 when the block holds two zeros, survives the data (minimum 4.81) but was not tested beyond it. RH is untouched. Lean: refuted in Lean 4 + Mathlib (JerbyLean.not_jerbyConj; named hypotheses: the Arb records and θ′ > 0 on [7, ∞); sorry-free, standard axioms; [LEAN.md](../Riemann/Deep/JerbyFals/LEAN.md)).
 
 **RH relevance.** N8: Gram and Rosser counting; the extremes of μ are Rosser-rule violations. N13: Jerby's proposed repulsion mechanism fails as a universal bound.
 
-**Files.** [JerbyFals report](../Riemann/Deep/JerbyFals/REPORT.md); in Riemann/Deep/JerbyFals/: certify_cx.py, certify_zerofree.py, gram_win.c, logs/certify_cx*.log, certify_zerofree*.log.
+**Files.** [JerbyFals report](../Riemann/Deep/JerbyFals/REPORT.md); in Riemann/Deep/JerbyFals/: certify_cx.py, certify_zerofree.py, gram_win.c, logs/certify_cx*.log, certify_zerofree*.log; Lean/ and [LEAN.md](../Riemann/Deep/JerbyFals/LEAN.md) (Lean refutation).
