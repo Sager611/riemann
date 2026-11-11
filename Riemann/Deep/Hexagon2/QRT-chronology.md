@@ -14,4 +14,4 @@ All records below are merged submissions; repo README says admission CI requires
 2026-10-30: 0.87341198 — ArviFoxy; 0.8733821435 — Joseph Bebel; 0.873381966613 — Joseph Bebel (all kernel-checked).
 2026-10-31: 0.87338196661320752 — Joseph Bebel, positive-gap-contact-return (kernel-checked).
 2026-11-01: B_2 + 2.2e-254 — Joseph Bebel, closest-fraction-contact (kernel-checked).
-2026-11-11: (777 − √1081)/852 = B_2 exactly — Joseph Bebel, exact-contact-point, PR 129 (kernel-checked; current record; exact algebraic bounds allowed since PR 130).
+2026-11-11: (777 − √1081)/852 = B_2 exactly — Joe Richey (GitHub josephlr; builds on Bebel's closest-fraction-contact), exact-contact-point, PR 129 (kernel-checked; current record; exact algebraic bounds allowed since PR 130).
