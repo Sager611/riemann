@@ -22,7 +22,7 @@
 
 **Novelty.** The agent searched arXiv listings Oct–Nov 2026 (math.NT, math.CA), the arXiv API (Revers, sub-Weyl, explicit van der Corput), HAL and Zenodo. The orchestrator repeated the listing scan and ran Zenodo phrase queries and an OpenAlex search: the only related item is a verification note for Hiary–Patel–Yang (Zenodo 22952308, constant 0.618). Revers is still v1.
 
-**Caveat.** Rests on Lemmas 2.5–2.9 of 2602.05614 (unrefereed, v1); an error there would also void 0.611. Python certificate, not formalized.
+**Caveat.** Uses Lemmas 2.5–2.9 of 2602.05614 (unrefereed, v1), audited correct by revaudit (11 Nov 2026); the same certificate also passes with Hiary–Patel–Yang's refereed Lemmas 2.5/2.6 in their place (max ratio 0.56797, t ≥ 8.97·10^17: 0.482061; [RevAudit](../Riemann/Deep/RevAudit/REPORT.md)), so no unrefereed constant is needed. Python certificate, not formalized.
 
 **RH relevance:** N9 (moments, Lindelöf, subconvexity): the explicit Weyl-type bound on the critical line feeds explicit zero-density and zero-counting estimates; this lowers its constant by 7% for all t ≥ 3 and by 15% for t ≥ 8.97·10^17.
 
