@@ -1,0 +1,3 @@
+N in [100,250]: tail gain S-Sh mean 0.0259 sd 0.0056; tilt only Sht-Sh 0.0154 (0.0055); end[Ne^-.5,N] She-Sh 0.0148; tilt+end Shte-Sh 0.0227; fraction tilt 0.60, tilt+end 0.88
+N in [250,450]: tail gain S-Sh mean 0.0302 sd 0.0015; tilt only Sht-Sh 0.0178 (0.0045); end[Ne^-.5,N] She-Sh 0.0095; tilt+end Shte-Sh 0.0248; fraction tilt 0.59, tilt+end 0.82
+N in [450,640]: tail gain S-Sh mean 0.0315 sd 0.0027; tilt only Sht-Sh 0.0137 (0.0058); end[Ne^-.5,N] She-Sh 0.0070; tilt+end Shte-Sh 0.0235; fraction tilt 0.43, tilt+end 0.75

@@ -1,0 +1,58 @@
+alpha1 = 0.634920800583748;  l_1..l_6 (theory) = [-1.754554, -1.369816, -1.151332, -0.993129, -0.875599, -0.785098]
+partial sums sum_{n<=K} mu(n) log n l_n  (formal -> J = 3.562663): [(10, np.float64(2.3047)), (100, np.float64(2.1662)), (300, np.float64(4.2652)), (640, np.float64(3.3875))]
+Sigma_K = l_K^T G_K^{-1} l_K (theory l, N-free):
+  K=   1  Sigma_K = 2.441940
+  K=   2  Sigma_K = 2.995401
+  K=   3  Sigma_K = 3.310807
+  K=   5  Sigma_K = 3.475287
+  K=  10  Sigma_K = 3.507303
+  K=  20  Sigma_K = 3.516146
+  K=  40  Sigma_K = 3.518869
+  K=  80  Sigma_K = 3.520144
+  K= 160  Sigma_K = 3.521488
+  K= 320  Sigma_K = 3.522442
+  K= 640  Sigma_K = 3.523012
+N=40: L^2 I_N - C L = 3.55720 (J = 3.56266); L^2 d^2 - C L = +0.00263; S_N = L^2(I-d^2) = 3.55457; check L^2 r^T G^-1 r = 3.55457
+   L r_n vs l_n (n=1..6): [(np.float64(-1.7557), np.float64(-1.7546)), (np.float64(-1.371), np.float64(-1.3698)), (np.float64(-1.1525), np.float64(-1.1513)), (np.float64(-0.9941), np.float64(-0.9931)), (np.float64(-0.8767), np.float64(-0.8756)), (np.float64(-0.785), np.float64(-0.7851))]
+   small-n gain S(K) (support 1..K): [(1, 2.4452), (2, 3.0005), (5, 3.4824), (10, 3.5149), (20, 3.5264)]
+   endpoint gain (support [N e^-kap, N]): (kap, size, gain): [(0.1, 4, 1.4236), (0.25, 9, 1.5429), (0.5, 16, 1.7694), (1.0, 26, 2.2912), (1.5, 32, 2.8001), (2.0, 35, 3.1354), (3.0, 39, 3.5496)]
+   small+end gain (K, kap, gain): []
+N=80: L^2 I_N - C L = 3.54571 (J = 3.56266); L^2 d^2 - C L = +0.00849; S_N = L^2(I-d^2) = 3.53721; check L^2 r^T G^-1 r = 3.53721
+   L r_n vs l_n (n=1..6): [(np.float64(-1.7539), np.float64(-1.7546)), (np.float64(-1.3693), np.float64(-1.3698)), (np.float64(-1.1508), np.float64(-1.1513)), (np.float64(-0.9926), np.float64(-0.9931)), (np.float64(-0.8751), np.float64(-0.8756)), (np.float64(-0.7843), np.float64(-0.7851))]
+   small-n gain S(K) (support 1..K): [(1, 2.4402), (2, 2.993), (5, 3.472), (10, 3.5038), (20, 3.5131), (50, 3.5266)]
+   endpoint gain (support [N e^-kap, N]): (kap, size, gain): [(0.1, 8, 0.9637), (0.25, 18, 1.0551), (0.5, 32, 1.2212), (1.0, 51, 1.664), (1.5, 63, 2.1372), (2.0, 70, 2.6174), (3.0, 77, 3.3783)]
+   small+end gain (K, kap, gain): [(20, 1.0, 3.5308)]
+N=160: L^2 I_N - C L = 3.55724 (J = 3.56266); L^2 d^2 - C L = +0.00629; S_N = L^2(I-d^2) = 3.55095; check L^2 r^T G^-1 r = 3.55095
+   L r_n vs l_n (n=1..6): [(np.float64(-1.7557), np.float64(-1.7546)), (np.float64(-1.3709), np.float64(-1.3698)), (np.float64(-1.1523), np.float64(-1.1513)), (np.float64(-0.9941), np.float64(-0.9931)), (np.float64(-0.8765), np.float64(-0.8756)), (np.float64(-0.7859), np.float64(-0.7851))]
+   small-n gain S(K) (support 1..K): [(1, 2.4451), (2, 2.9999), (5, 3.4815), (10, 3.5139), (20, 3.5232), (50, 3.5288), (100, 3.5378)]
+   endpoint gain (support [N e^-kap, N]): (kap, size, gain): [(0.1, 16, 0.6234), (0.25, 36, 0.6923), (0.5, 63, 0.8261), (1.0, 102, 1.1688), (1.5, 125, 1.545), (2.0, 139, 1.9703), (3.0, 153, 2.914)]
+   small+end gain (K, kap, gain): [(20, 1.0, 3.5352), (50, 1.0, 3.5481)]
+N=320: L^2 I_N - C L = 3.53343 (J = 3.56266); L^2 d^2 - C L = -0.00180; S_N = L^2(I-d^2) = 3.53523; check L^2 r^T G^-1 r = 3.53523
+   L r_n vs l_n (n=1..6): [(np.float64(-1.7518), np.float64(-1.7546)), (np.float64(-1.3673), np.float64(-1.3698)), (np.float64(-1.149), np.float64(-1.1513)), (np.float64(-0.9909), np.float64(-0.9931)), (np.float64(-0.8734), np.float64(-0.8756)), (np.float64(-0.783), np.float64(-0.7851))]
+   small-n gain S(K) (support 1..K): [(1, 2.4344), (2, 2.9848), (5, 3.4605), (10, 3.4914), (20, 3.5), (50, 3.5036), (100, 3.5069), (200, 3.5165)]
+   endpoint gain (support [N e^-kap, N]): (kap, size, gain): [(0.1, 31, 0.3715), (0.25, 71, 0.4249), (0.5, 126, 0.5081), (1.0, 203, 0.7473), (1.5, 249, 1.0381), (2.0, 277, 1.3761), (3.0, 305, 2.2566)]
+   small+end gain (K, kap, gain): [(20, 1.0, 3.5121), (50, 1.0, 3.5196), (100, 1.0, 3.5315)]
+N=640: L^2 I_N - C L = 3.56866 (J = 3.56266); L^2 d^2 - C L = -0.00550; S_N = L^2(I-d^2) = 3.57416; check L^2 r^T G^-1 r = 3.57416
+   L r_n vs l_n (n=1..6): [(np.float64(-1.7575), np.float64(-1.7546)), (np.float64(-1.3726), np.float64(-1.3698)), (np.float64(-1.1539), np.float64(-1.1513)), (np.float64(-0.9956), np.float64(-0.9931)), (np.float64(-0.878), np.float64(-0.8756)), (np.float64(-0.7875), np.float64(-0.7851))]
+   small-n gain S(K) (support 1..K): [(1, 2.4503), (2, 3.0072), (5, 3.4919), (10, 3.5252), (20, 3.5344), (50, 3.5379), (100, 3.5398), (200, 3.5433)]
+   endpoint gain (support [N e^-kap, N]): (kap, size, gain): [(0.1, 61, 0.268), (0.25, 142, 0.2871), (0.5, 252, 0.3435), (1.0, 405, 0.5103), (1.5, 498, 0.7087), (2.0, 554, 0.9618), (3.0, 609, 1.6691)]
+   small+end gain (K, kap, gain): [(20, 1.0, 3.5473), (50, 1.0, 3.5518), (50, 2.0, 3.5658), (100, 1.0, 3.5577)]
+done 0.2s
+        0.61 real         0.40 user         0.10 sys
+            55607296  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6990  page reclaims
+                  16  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  43  voluntary context switches
+                1076  involuntary context switches
+           453357560  instructions retired
+           215427968  cycles elapsed
+            19644920  peak memory footprint

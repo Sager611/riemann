@@ -1,0 +1,5 @@
+(a) N in [100,250]: S_N mean 3.5495; Sigma_N mean 3.5216; coupling S_N - Sigma_N mean +0.0279 sd 0.0167
+(a) N in [250,450]: S_N mean 3.5538; Sigma_N mean 3.5225; coupling S_N - Sigma_N mean +0.0313 sd 0.0109
+(a) N in [450,640]: S_N mean 3.5505; Sigma_N mean 3.5229; coupling S_N - Sigma_N mean +0.0277 sd 0.0154
+(b) optimum C2(N)=L^2d^2-CL: sd 0.00324; const+1/L fit: C2 = -0.0213 + +0.1211/L (R2 0.35); +pair freqs R2 0.75 (amps [(6.887, 0.00261), (3.989, 0.00076), (10.876, 0.00191)]); +N^-1/2 zero terms R2 0.41 (amps x N^-1/2: [(14.13, 0.0063), (21.02, 0.0116), (25.01, 0.0121)]); both R2 0.78
+(b) ramp R(N)=L^2I-CL-J: sd 0.01379; const+1/L fit: C2 = -0.0233 + +0.0659/L (R2 0.01); +pair freqs R2 0.07 (amps [(6.887, 0.00373), (3.989, 0.00295), (10.876, 0.00443)]); +N^-1/2 zero terms R2 0.95 (amps x N^-1/2: [(14.13, 0.2918), (21.02, 0.0962), (25.01, 0.0514)]); both R2 0.96

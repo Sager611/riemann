@@ -1,0 +1,10 @@
+(a) N in [100,250]: kappa mean 0.0275 (sd 0.0168, s.e. ~0.0061); J-Sigma_N 0.0411; R(N) -0.0111; C2 +0.0025
+(a) N in [250,450]: kappa mean 0.0311 (sd 0.0109, s.e. ~0.0034); J-Sigma_N 0.0402; R(N) -0.0101; C2 -0.0011
+(a) N in [450,640]: kappa mean 0.0273 (sd 0.0153, s.e. ~0.0049); J-Sigma_N 0.0398; R(N) -0.0142; C2 -0.0017
+(a) kappa(N) ~ k_inf - a/L fit on [100,640]: k_inf = 0.0322, a = 0.0197
+(b) k=1: gamma=14.135 a=-0.4053-0.0822j Re a + log(gamma/2pi)/2 = +1.04e-04; partial A_th = 0.00171 (Re-part only 0.00164)
+(b) k=2: gamma=21.022 a=-0.6038+0.0528j Re a + log(gamma/2pi)/2 = +4.72e-05; partial A_th = 0.00337 (Re-part only 0.00329)
+(b) k=3: gamma=25.011 a=-0.6907-0.1296j Re a + log(gamma/2pi)/2 = +3.33e-05; partial A_th = 0.00495 (Re-part only 0.00482)
+(b) k=10: gamma=49.774 a=-1.0348-0.3250j Re a + log(gamma/2pi)/2 = +8.41e-06; partial A_th = 0.01312 (Re-part only 0.01236)
+(b) k=30: gamma=101.318 a=-1.3902+0.0905j Re a + log(gamma/2pi)/2 = +2.03e-06; partial A_th = 0.02493 (Re-part only 0.02321)
+(b) k=100: gamma=236.524 a=-1.8141+0.6883j Re a + log(gamma/2pi)/2 = +3.72e-07; partial A_th = 0.04082 (Re-part only 0.03729)

@@ -1,0 +1,25 @@
+N in [100,200]: R=L2I-CL-J -0.00722(0.0154); X(N) +0.07235(0.0454); L<R,Rsh> -0.00798(0.1419); L2*2I1 -1.53540(0.2838); L2*I2 +0.22800(0.0876); j_opt +3.56341(0.5736); tilt:L2I-CL +0.87308(0.3813); tilt+head:L2I-CL +0.01673(0.0053); opt:L2d2-CL +0.00498(0.0018)
+N in [200,400]: R=L2I-CL-J -0.01465(0.0132); X(N) +0.07101(0.0494); L<R,Rsh> +0.03793(0.1165); L2*2I1 -1.26638(0.2376); L2*I2 +0.17600(0.0636); j_opt +3.79929(0.7582); tilt:L2I-CL +1.14083(0.5707); tilt+head:L2I-CL +0.01294(0.0066); opt:L2d2-CL -0.00149(0.0018)
+N in [400,640]: R=L2I-CL-J -0.01150(0.0129); X(N) +0.07569(0.0437); L<R,Rsh> +0.04192(0.1030); L2*2I1 -1.14641(0.2176); L2*I2 +0.16116(0.0401); j_opt +3.71696(0.8949); tilt:L2I-CL +1.38110(0.6774); tilt+head:L2I-CL +0.01752(0.0057); opt:L2d2-CL -0.00150(0.0023)
+C = 0.046191, C/2 = 0.023096; head K=60: Sigma_K = 3.519848, J - Sigma_K = 0.04282
+N=160: R=L2I-CL-J -0.00542; X(N) +0.06947; L<R,Rsh> +0.16366; L2*2I1 -1.16689; L2*I2 +0.15219; j_opt +3.83378; tilt:L2I-CL +1.32044; tilt+head:L2I-CL +0.01989; opt:L2d2-CL +0.00629
+N=320: R=L2I-CL-J -0.02924; X(N) +0.05389; L<R,Rsh> -0.05912; L2*2I1 -1.43574; L2*I2 +0.18859; j_opt +3.80659; tilt:L2I-CL +0.80079; tilt+head:L2I-CL +0.01439; opt:L2d2-CL -0.00180
+N=640: R=L2I-CL-J +0.00600; X(N) +0.03663; L<R,Rsh> +0.05284; L2*2I1 -1.09129; L2*I2 +0.11289; j_opt +4.83330; tilt:L2I-CL +0.93139; tilt+head:L2I-CL +0.01118; opt:L2d2-CL -0.00550
+        0.91 real         0.51 user         0.13 sys
+            49676288  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6563  page reclaims
+                 182  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 270  voluntary context switches
+                2546  involuntary context switches
+           455780879  instructions retired
+           220099775  cycles elapsed
+            20529656  peak memory footprint

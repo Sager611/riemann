@@ -1,0 +1,27 @@
+K=5 (J-Sigma_K=0.0874) N in [100,250]: construction L^2I-CL mean +0.0759 sd 0.0014; residual vs J(B)+R(N): mean -0.0004 sd 0.0157; optimum mean +0.0025
+K=5 (J-Sigma_K=0.0874) N in [250,450]: construction L^2I-CL mean +0.0745 sd 0.0012; residual vs J(B)+R(N): mean -0.0028 sd 0.0102; optimum mean -0.0011
+K=5 (J-Sigma_K=0.0874) N in [450,640]: construction L^2I-CL mean +0.0744 sd 0.0015; residual vs J(B)+R(N): mean +0.0013 sd 0.0118; optimum mean -0.0017
+K=20 (J-Sigma_K=0.0465) N in [100,250]: construction L^2I-CL mean +0.0348 sd 0.0008; residual vs J(B)+R(N): mean -0.0006 sd 0.0171; optimum mean +0.0025
+K=20 (J-Sigma_K=0.0465) N in [250,450]: construction L^2I-CL mean +0.0333 sd 0.0006; residual vs J(B)+R(N): mean -0.0031 sd 0.0111; optimum mean -0.0011
+K=20 (J-Sigma_K=0.0465) N in [450,640]: construction L^2I-CL mean +0.0337 sd 0.0005; residual vs J(B)+R(N): mean +0.0014 sd 0.0129; optimum mean -0.0017
+K=60 (J-Sigma_K=0.0428) N in [100,250]: construction L^2I-CL mean +0.0299 sd 0.0015; residual vs J(B)+R(N): mean +0.0010 sd 0.0154; optimum mean +0.0023
+K=60 (J-Sigma_K=0.0428) N in [250,450]: construction L^2I-CL mean +0.0293 sd 0.0006; residual vs J(B)+R(N): mean -0.0034 sd 0.0112; optimum mean -0.0011
+K=60 (J-Sigma_K=0.0428) N in [450,640]: construction L^2I-CL mean +0.0298 sd 0.0005; residual vs J(B)+R(N): mean +0.0012 sd 0.0129; optimum mean -0.0017
+        0.78 real         0.31 user         0.15 sys
+            40665088  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                4481  page reclaims
+                1582  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 241  voluntary context switches
+                2642  involuntary context switches
+           552608307  instructions retired
+           286429830  cycles elapsed
+            20431352  peak memory footprint
