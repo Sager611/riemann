@@ -1,0 +1,10 @@
+{"c": 8.0, "N": 53, "wmax": 160.1433916778942, "sector": "even", "E1": "5.5488418e-33", "t": 7.2}
+{"k": 1, "y": 0.2812, "single_logratio": 10.3984, "pred4g2": 10.6, "b": null}
+{"k": 5, "y": 0.6552, "single_logratio": 6.7956, "pred4g2": 7.1244, "b": null}
+{"k": 9, "y": 0.955, "single_logratio": 5.1394, "pred4g2": 5.4788, "b": null}
+{"k": 13, "y": 1.1807, "single_logratio": 4.1381, "pred4g2": 4.4753, "b": null}
+{"k": 17, "y": 1.3836, "single_logratio": 3.3242, "pred4g2": 3.6481, "b": null}
+{"k": 21, "y": 1.5784, "single_logratio": 2.5743, "pred4g2": 2.8623, "b": null}
+{"k": 25, "y": 1.7668, "single_logratio": 1.8394, "pred4g2": 2.0332, "b": null}
+{"k": 29, "y": 1.9662, "single_logratio": 0.9886, "pred4g2": 0.7408, "b": null}
+{"set_size": 8, "band_y": [0.001, 2.0], "stride": 4, "lmin_set": "1.5762021e-51", "logratio_set": 42.7051, "sum_single": 35.1979, "t": 9.0}

@@ -1,0 +1,14 @@
+{"c": 6.0, "N": 61, "wmax": 213.90946180018298, "sector": "even", "E1": "8.5338902e-23", "t": 11.9}
+{"k": 21, "y": 2.1045, "single_logratio": 0.2166, "pred4g2": 0.0, "b": null}
+{"k": 23, "y": 2.2477, "single_logratio": 0.0529, "pred4g2": 0.0, "b": null}
+{"k": 25, "y": 2.3557, "single_logratio": 0.1468, "pred4g2": 0.0, "b": null}
+{"k": 27, "y": 2.5107, "single_logratio": 0.029, "pred4g2": 0.0, "b": null}
+{"k": 29, "y": 2.6216, "single_logratio": 0.0073, "pred4g2": 0.0, "b": null}
+{"k": 31, "y": 2.7514, "single_logratio": 0.0414, "pred4g2": 0.0, "b": null}
+{"k": 33, "y": 2.8427, "single_logratio": 0.0022, "pred4g2": 0.0, "b": null}
+{"k": 35, "y": 2.9676, "single_logratio": 0.0088, "pred4g2": 0.0, "b": null}
+{"k": 37, "y": 3.083, "single_logratio": 0.0719, "pred4g2": 0.0, "b": null}
+{"k": 39, "y": 3.2194, "single_logratio": 0.0071, "pred4g2": 0.0, "b": null}
+{"k": 41, "y": 3.296, "single_logratio": 0.0002, "pred4g2": 0.0, "b": null}
+{"k": 43, "y": 3.4372, "single_logratio": 0.0226, "pred4g2": 0.0, "b": null}
+{"merge": false, "set_size": 12, "band_y": [2.05, 3.45], "stride": 2, "lmin_set": "3.2196847e-28", "logratio_set": 12.4877, "sum_single": 0.6067, "t": 14.6}

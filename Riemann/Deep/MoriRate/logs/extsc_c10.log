@@ -1,0 +1,26 @@
+{"c": 10.0, "N": 120, "wmax": 327.45032492204183, "sector": "even", "E1": "1.7444588e-43", "t": 90.7}
+{"k": 43, "y": 2.0623, "single_logratio": 0.3943, "pred4g2": 0.0, "b": null}
+{"k": 45, "y": 2.1247, "single_logratio": 0.0739, "pred4g2": 0.0, "b": null}
+{"k": 47, "y": 2.1982, "single_logratio": 0.0613, "pred4g2": 0.0, "b": null}
+{"k": 49, "y": 2.2461, "single_logratio": 0.1592, "pred4g2": 0.0, "b": null}
+{"k": 51, "y": 2.3237, "single_logratio": 0.024, "pred4g2": 0.0, "b": null}
+{"k": 53, "y": 2.3882, "single_logratio": 0.0453, "pred4g2": 0.0, "b": null}
+{"k": 55, "y": 2.4355, "single_logratio": 0.0434, "pred4g2": 0.0, "b": null}
+{"k": 57, "y": 2.5082, "single_logratio": 0.0205, "pred4g2": 0.0, "b": null}
+{"k": 59, "y": 2.5654, "single_logratio": 0.0229, "pred4g2": 0.0, "b": null}
+{"k": 61, "y": 2.6346, "single_logratio": 0.0123, "pred4g2": 0.0, "b": null}
+{"k": 63, "y": 2.6912, "single_logratio": 0.011, "pred4g2": 0.0, "b": null}
+{"k": 65, "y": 2.7599, "single_logratio": 0.0549, "pred4g2": 0.0, "b": null}
+{"k": 67, "y": 2.8082, "single_logratio": 0.0129, "pred4g2": 0.0, "b": null}
+{"k": 69, "y": 2.8635, "single_logratio": 0.0555, "pred4g2": 0.0, "b": null}
+{"k": 71, "y": 2.9424, "single_logratio": 0.0103, "pred4g2": 0.0, "b": null}
+{"k": 73, "y": 2.9798, "single_logratio": 0.0671, "pred4g2": 0.0, "b": null}
+{"k": 75, "y": 3.0562, "single_logratio": 0.0005, "pred4g2": 0.0, "b": null}
+{"k": 77, "y": 3.1077, "single_logratio": 0.0232, "pred4g2": 0.0, "b": null}
+{"k": 79, "y": 3.1515, "single_logratio": 0.005, "pred4g2": 0.0, "b": null}
+{"k": 81, "y": 3.2228, "single_logratio": 0.0167, "pred4g2": 0.0, "b": null}
+{"k": 83, "y": 3.269, "single_logratio": 0.0274, "pred4g2": 0.0, "b": null}
+{"k": 85, "y": 3.3355, "single_logratio": 0.0001, "pred4g2": 0.0, "b": null}
+{"k": 87, "y": 3.3955, "single_logratio": 0.0093, "pred4g2": 0.0, "b": null}
+{"k": 89, "y": 3.4404, "single_logratio": 0.0364, "pred4g2": 0.0, "b": null}
+{"merge": false, "set_size": 24, "band_y": [2.05, 3.45], "stride": 2, "lmin_set": "2.5688266e-59", "logratio_set": 36.4544, "sum_single": 1.1875, "t": 109.0}

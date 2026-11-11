@@ -1,0 +1,5 @@
+{"c": 10.0, "N": 71, "wmax": 193.74144224554146, "sector": "even", "E1": "1.9606787e-43", "t": 15.8}
+{"k": 1, "y": 0.225, "single_logratio": 11.3679, "pred4g2": 11.4998, "b": null}
+{"k": 17, "y": 1.1069, "single_logratio": 4.5155, "pred4g2": 4.79, "b": null}
+{"k": 33, "y": 1.7056, "single_logratio": 2.0952, "pred4g2": 2.3175, "b": null}
+{"merge": true, "set_size": 3, "band_y": [0.001, 2.0], "stride": 16, "lmin_set": "1.1849154e-51", "logratio_set": 18.9243, "sum_single": 17.9786, "t": 18.1}

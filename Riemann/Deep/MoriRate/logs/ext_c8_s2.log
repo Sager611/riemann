@@ -1,0 +1,27 @@
+{"c": 8.0, "N": 85, "wmax": 256.8337413702077, "sector": "even", "E1": "4.8144671e-33", "t": 31.4}
+{"k": 31, "y": 2.0636, "single_logratio": 0.5644, "pred4g2": 0.0, "b": null}
+{"k": 33, "y": 2.1321, "single_logratio": 0.1764, "pred4g2": 0.0, "b": null}
+{"k": 35, "y": 2.2257, "single_logratio": 0.0711, "pred4g2": 0.0, "b": null}
+{"k": 37, "y": 2.3123, "single_logratio": 0.1491, "pred4g2": 0.0, "b": null}
+{"k": 39, "y": 2.4146, "single_logratio": 0.0041, "pred4g2": 0.0, "b": null}
+{"k": 41, "y": 2.472, "single_logratio": 0.0577, "pred4g2": 0.0, "b": null}
+{"k": 43, "y": 2.5779, "single_logratio": 0.0077, "pred4g2": 0.0, "b": null}
+{"k": 45, "y": 2.6559, "single_logratio": 0.0255, "pred4g2": 0.0, "b": null}
+{"k": 47, "y": 2.7477, "single_logratio": 0.0257, "pred4g2": 0.0, "b": null}
+{"k": 49, "y": 2.8076, "single_logratio": 0.0052, "pred4g2": 0.0, "b": null}
+{"k": 51, "y": 2.9046, "single_logratio": 0.0793, "pred4g2": 0.0, "b": null}
+{"k": 53, "y": 2.9852, "single_logratio": 0.0001, "pred4g2": 0.0, "b": null}
+{"k": 55, "y": 3.0443, "single_logratio": 0.0538, "pred4g2": 0.0, "b": null}
+{"k": 57, "y": 3.1353, "single_logratio": 0.005, "pred4g2": 0.0, "b": null}
+{"k": 59, "y": 3.2068, "single_logratio": 0.0001, "pred4g2": 0.0, "b": null}
+{"k": 61, "y": 3.2933, "single_logratio": 0.0335, "pred4g2": 0.0, "b": null}
+{"k": 63, "y": 3.364, "single_logratio": 0.0061, "pred4g2": 0.0, "b": null}
+{"k": 65, "y": 3.4499, "single_logratio": 0.0012, "pred4g2": 0.0, "b": null}
+{"k": 67, "y": 3.5102, "single_logratio": 0.0081, "pred4g2": 0.0, "b": null}
+{"k": 69, "y": 3.5793, "single_logratio": 0.0182, "pred4g2": 0.0, "b": null}
+{"k": 71, "y": 3.678, "single_logratio": 0.0001, "pred4g2": 0.0, "b": null}
+{"k": 73, "y": 3.7248, "single_logratio": 0.0, "pred4g2": 0.0, "b": null}
+{"k": 75, "y": 3.8202, "single_logratio": 0.0079, "pred4g2": 0.0, "b": null}
+{"k": 77, "y": 3.8847, "single_logratio": 0.0131, "pred4g2": 0.0, "b": null}
+{"k": 79, "y": 3.9394, "single_logratio": 0.0022, "pred4g2": 0.0, "b": null}
+{"set_size": 25, "band_y": [2.05, 4.0], "stride": 2, "lmin_set": "6.1772842e-48", "logratio_set": 34.2895, "sum_single": 1.3156, "t": 39.5}

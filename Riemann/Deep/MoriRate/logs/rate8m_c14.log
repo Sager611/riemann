@@ -1,0 +1,11 @@
+{"c": 14.0, "N": 108, "wmax": 257.13121331635654, "sector": "even", "E1": "1.6097682e-64", "t": 65.7}
+{"k": 1, "y": 0.1607, "single_logratio": 12.8874, "pred4g2": 12.8519, "b": null}
+{"k": 9, "y": 0.5457, "single_logratio": 7.7972, "pred4g2": 7.8911, "b": null}
+{"k": 17, "y": 0.7906, "single_logratio": 6.2203, "pred4g2": 6.3186, "b": null}
+{"k": 25, "y": 1.0096, "single_logratio": 5.1253, "pred4g2": 5.2236, "b": null}
+{"k": 33, "y": 1.2183, "single_logratio": 4.2234, "pred4g2": 4.3184, "b": null}
+{"k": 41, "y": 1.4126, "single_logratio": 3.4458, "pred4g2": 3.532, "b": null}
+{"k": 49, "y": 1.6043, "single_logratio": 2.6896, "pred4g2": 2.7546, "b": null}
+{"k": 57, "y": 1.7916, "single_logratio": 1.9039, "pred4g2": 1.9111, "b": null}
+{"k": 65, "y": 1.9714, "single_logratio": 0.9717, "pred4g2": 0.6808, "b": null}
+{"merge": true, "set_size": 9, "band_y": [0.001, 2.0], "stride": 8, "lmin_set": "1.7829296e-86", "logratio_set": 50.5547, "sum_single": 45.2647, "t": 76.6}

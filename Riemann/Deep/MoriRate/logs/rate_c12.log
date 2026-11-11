@@ -1,0 +1,16 @@
+{"c": 12.0, "N": 89, "wmax": 225.04004019092292, "sector": "even", "E1": "5.8838365e-54", "t": 38.7}
+{"k": 1, "y": 0.1875, "single_logratio": 12.2733, "pred4g2": 12.233, "b": null}
+{"k": 5, "y": 0.4368, "single_logratio": 8.7275, "pred4g2": 8.8096, "b": null}
+{"k": 9, "y": 0.6367, "single_logratio": 7.1487, "pred4g2": 7.2457, "b": null}
+{"k": 13, "y": 0.7871, "single_logratio": 6.2339, "pred4g2": 6.338, "b": null}
+{"k": 17, "y": 0.9224, "single_logratio": 5.5262, "pred4g2": 5.6363, "b": null}
+{"k": 21, "y": 1.0522, "single_logratio": 4.9143, "pred4g2": 5.0305, "b": null}
+{"k": 25, "y": 1.1779, "single_logratio": 4.3643, "pred4g2": 4.4871, "b": null}
+{"k": 29, "y": 1.3108, "single_logratio": 3.81, "pred4g2": 3.9406, "b": null}
+{"k": 33, "y": 1.4214, "single_logratio": 3.3591, "pred4g2": 3.4969, "b": null}
+{"k": 37, "y": 1.5415, "single_logratio": 2.8676, "pred4g2": 3.0133, "b": null}
+{"k": 41, "y": 1.648, "single_logratio": 2.4183, "pred4g2": 2.5699, "b": null}
+{"k": 45, "y": 1.7706, "single_logratio": 1.8645, "pred4g2": 2.0149, "b": null}
+{"k": 49, "y": 1.8717, "single_logratio": 1.3528, "pred4g2": 1.4727, "b": null}
+{"k": 53, "y": 1.9901, "single_logratio": 0.6506, "pred4g2": 0.3979, "b": null}
+{"set_size": 14, "band_y": [0.001, 2.0], "stride": 4, "lmin_set": "2.7039463e-88", "logratio_set": 79.0654, "sum_single": 65.5111, "t": 46.2}
