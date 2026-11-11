@@ -1,0 +1,9 @@
+prin U=10000 m=0.5 X=100.000 sixth_powers=1 P4_6=5.017602e+01 cubes=7 P4_3=2.505835e+02 time=0.0
+prin U=30000 m=0.5 X=173.205 sixth_powers=1 P4_6=1.389924e+02 cubes=10 P4_3=1.060918e+03 time=0.0
+prin U=100000 m=0.5 X=316.228 sixth_powers=1 P4_6=4.728331e+02 cubes=14 P4_3=5.326399e+03 time=0.0
+prin U=300000 m=0.5 X=547.723 sixth_powers=3 P4_6=2.994806e+03 cubes=19 P4_3=2.090792e+04 time=0.0
+prin U=1000000 m=0.5 X=1000.000 sixth_powers=3 P4_6=9.890860e+03 cubes=31 P4_3=1.132160e+05 time=0.0
+prin U=3000000 m=0.5 X=1732.051 sixth_powers=3 P4_6=2.969153e+04 cubes=44 P4_3=4.884515e+05 time=0.0
+prin U=10000000 m=0.5 X=3162.278 sixth_powers=5 P4_6=1.680750e+05 cubes=63 P4_3=2.416835e+06 time=0.0
+prin U=30000000 m=0.5 X=5477.226 sixth_powers=5 P4_6=5.040814e+05 cubes=94 P4_3=1.051879e+07 time=0.1
+prin U=100000000 m=0.5 X=10000.000 sixth_powers=7 P4_6=2.446378e+06 cubes=139 P4_3=5.286764e+07 time=0.2

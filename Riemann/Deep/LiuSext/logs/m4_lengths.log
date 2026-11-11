@@ -1,0 +1,19 @@
+run U=100000 m=0.35 X=56.234 ideals=35 primeideals=27 rows=30235 principal6=1 principal3=14 M2_6=5.884617e+03 M4_6=2.268060e+03 M2_3=5.829454e+03 M4_3=2.284946e+03 max6=1.6603@(265,0) max3=1.9382@(52,291) time=0.0
+ 0.02 real 0.01 user 0.00 sys
+ 1425408 maximum resident set size
+run U=1000000 m=0.35 X=125.893 ideals=77 primeideals=52 rows=302299 principal6=3 principal3=31 M2_6=5.968809e+04 M4_6=2.406796e+04 M2_3=5.952415e+04 M4_3=2.398073e+04 max6=2.3840@(-575,462) max3=2.6694@(52,753) time=0.1
+ 0.15 real 0.13 user 0.00 sys
+ 1425408 maximum resident set size
+run U=10000000 m=0.35 X=281.838 ideals=172 primeideals=100 rows=3022972 principal6=5 principal3=63 M2_6=5.961824e+05 M4_6=2.474325e+05 M2_3=6.086184e+05 M4_3=2.601853e+05 max6=3.2686@(-2360,699) max3=3.3138@(1009,267) time=2.5
+ 2.78 real 2.50 user 0.03 sys
+ 1458176 maximum resident set size
+run U=100000 m=0.65 X=1778.279 ideals=1072 primeideals=497 rows=30235 principal6=1 principal3=14 M2_6=5.888221e+03 M4_6=2.345814e+03 M2_3=5.878359e+03 M4_3=2.247524e+03 max6=2.1579@(247,246) max3=1.9186@(265,252) time=0.2
+ 0.24 real 0.17 user 0.00 sys
+ 1998848 maximum resident set size
+run U=1000000 m=0.65 X=7943.282 ideals=4804 primeideals=1841 rows=302299 principal6=3 principal3=31 M2_6=5.939540e+04 M4_6=2.396279e+04 M2_3=5.818395e+04 M4_3=2.228262e+04 max6=3.3715@(616,183) max3=2.5401@(1000,927) time=8.5
+ 9.90 real 8.36 user 0.13 sys
+ 8798208 maximum resident set size
+run U=3000000 m=0.65 X=16222.912 ideals=9808 primeideals=3479 rows=906907 principal6=3 principal3=44 M2_6=1.778397e+05 M4_6=7.241219e+04 M2_3=1.740100e+05 M4_3=6.671749e+04 max6=4.0753@(973,1653) max3=2.7855@(853,1392) time=51.4
+ 60.56 real 50.67 user 0.77 sys
+ 28852224 maximum resident set size
+DONE

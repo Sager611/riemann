@@ -1,0 +1,27 @@
+rm X=100 ideals=61 primeideals=44 draws=400000 E2=0.198240 E4_6=0.080069 E4_3=0.079793 E8_6=0.040745 time=0.2
+ 0.25 real 0.22 user 0.00 sys
+ 1441792 maximum resident set size
+rm X=173.205 ideals=106 primeideals=67 draws=400000 E2=0.198426 E4_6=0.081048 E4_3=0.081879 E8_6=0.043955 time=0.3
+ 0.37 real 0.33 user 0.00 sys
+ 1441792 maximum resident set size
+rm X=316.228 ideals=191 primeideals=114 draws=400000 E2=0.197780 E4_6=0.082410 E4_3=0.087909 E8_6=0.049530 time=0.5
+ 0.58 real 0.52 user 0.00 sys
+ 1474560 maximum resident set size
+rm X=547.723 ideals=331 primeideals=183 draws=400000 E2=0.197414 E4_6=0.083923 E4_3=0.085580 E8_6=0.057058 time=1.0
+ 1.19 real 0.97 user 0.01 sys
+ 1540096 maximum resident set size
+rm X=1000 ideals=607 primeideals=302 draws=400000 E2=0.198162 E4_6=0.085344 E4_3=0.086269 E8_6=0.061477 time=1.7
+ 2.28 real 1.71 user 0.02 sys
+ 1687552 maximum resident set size
+rm X=1732.05 ideals=1047 primeideals=482 draws=400000 E2=0.197476 E4_6=0.085935 E4_3=0.089566 E8_6=0.067796 time=3.0
+ 3.41 real 2.98 user 0.04 sys
+ 1966080 maximum resident set size
+rm X=3162.28 ideals=1911 primeideals=816 draws=400000 E2=0.197155 E4_6=0.087041 E4_3=0.089825 E8_6=0.077656 time=5.2
+ 6.27 real 5.15 user 0.07 sys
+ 2834432 maximum resident set size
+rm X=5477.23 ideals=3307 primeideals=1329 draws=400000 E2=0.197037 E4_6=0.088680 E4_3=0.091246 E8_6=0.092130 time=8.6
+ 10.03 real 8.49 user 0.12 sys
+ 5160960 maximum resident set size
+rm X=10000 ideals=6045 primeideals=2265 draws=400000 E2=0.197790 E4_6=0.090083 E4_3=0.092843 E8_6=0.099956 time=16.5
+ 19.23 real 16.31 user 0.24 sys
+ 12615680 maximum resident set size

@@ -1,0 +1,16 @@
+# novelty scan 11 Nov 2026 (scout sc2: python3 .scratch/lst.py 'large sieve|sextic|cubic Gauss|Gauss sum|cubic character|power residue|fourth moment' --zenodo '"large sieve"'); arXiv title hits:
+2611.01452  [math.NT 2026-11]  Improved first moments of primitive quartic and sextic Dirichlet $L$-functions
+2611.03933  [math.NT 2026-11]  Classification of torsion of elliptic curves over sextic fields
+2610.04045  [math.NT 2026-10]  Optimal large sieve for fixed order characters
+2610.11075  [math.NT 2026-10]  A combinatorial proof of the quadratic Gauss sum
+2610.15316  [math.NT 2026-10]  Non-vanishing of primitive cubic, quartic and sextic L-functions
+2610.17675  [math.NT 2026-10]  A matching lower bound for the sextic large sieve and structured prime moments
+2610.20554  [math.NT 2026-10]  The large sieve inequality and additive decompositions of sums of squares
+2610.26398  [math.NT 2026-10]  On Special Arithmetic Gamma Values and Thakur's Gauss Sums: From $\infty$-adic to $v$-adic
+2610.26756  [math.NT 2026-10]  Fourth moments of prime exponential sums and exceptional sets for sums and differences of primes
+2610.34973  [math.NT 2026-10]  Counting Integral Matrices with Given Cubic Characteristic Polynomial
+2610.27299  [math.PR 2026-10]  Chaotic CLT using Poisson Fourth Moment Theorem and Graph Theory
+2610.29215  [math.PR 2026-10]  Third and Fourth Moment Phenomena for Monochromatic Edges and Applications to Graph-Based Two-Sample Tests
+2610.12490  [math.CO 2026-10]  Homogeneous symmetric trace-positive sextics with vanishing abelianization are sums of Hermitian squares and commutators
+# zenodo: 15 hits, none on large sieve / residue symbols / fourth moments
+# abstracts checked: 2610.04045 (de Faveri, Thm 1.1 large sieve (AB)^eps(A+B+A^{1-1/n}B^{2/n}+A^{2/n}B^{1-1/n})), 2610.17675 (Xu-Sang, matching sextic lower bound, uses OpenAI unmarked moments)

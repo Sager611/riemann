@@ -1,0 +1,11 @@
+(1) Ex - [A-(1-1/n)M-F1-F2] = 0
+    n=6 matches printed F1,F2 (l. 7203-7207): True
+(2) n=6: min F2/b2 = 2/3 at nonunit i=1 (F2=2/3)
+(2) n=3: min F2/b2 = 1 at nonunit i=1 (F2=1)
+    n=6: F1/c lower bound (J<0, w=0, sextic B_c) = 2/3
+    n=3: F1/c lower bound (J<0, w=0, sextic B_c) = 11/15
+(3) n=6, kappa=2/3: need 1/6M, best saving 5/18M (L<5/12M) -> slack 1/9M; paper L=M/4 gives 0M
+(3) n=3, kappa=11/15: need 1/3M, best saving 11/45M (L<1/3M) -> slack -4/45M
+(3) n=3, kappa=1: need 1/3M, best saving 1/3M (L<1/3M) -> slack 0M
+ 4.04 real 2.84 user 0.26 sys
+ 61390848 maximum resident set size
