@@ -1,0 +1,2 @@
+E=3 X=12: mpmath raw = 0.521601630997612  prolate.c raw = 0.521601630997599  diff = 1.34e-14
+E=10 X=12: mpmath raw = 5.39397384840013  prolate.c raw = 5.393973848400110  diff = 1.95e-14

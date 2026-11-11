@@ -1,0 +1,4 @@
+E <= 200.0: even #eig(Theta) = 201, #sign changes [u,s](X) = 200; odd #eig(Theta) = 201, #sign changes [u,c](X) = 201
+even: max |signchange - eigenvalue| over the first 200 = 0.3611 (finite-X shift ~ (E^2+kappa^2)/(2 omega X) / Theta'(E))
+odd: max |signchange - eigenvalue| over the first 201 = 0.3623 (finite-X shift ~ (E^2+kappa^2)/(2 omega X) / Theta'(E))
+even/odd strictly interlace: True  first labels: oeoeoeoeoe

@@ -1,0 +1,12 @@
+compareplots1.pdf: 30 red, 30 blue; scale 1.8836 pt/unit, red-fit max resid 0.459 pt (0.244 units)
+   blue (CM plotted) - ours t_n: max |diff| = 0.346 units, rms = 0.167; rounding unit = 0.531; best index shift (0, 0.16728196581854693)
+   first 8 CM-blue: [12.45, 19.36, 24.66, 28.91, 33.69, 36.88, 40.59, 44.31]
+   first 8 ours   : [12.55, 19.42, 24.7, 29.26, 33.37, 37.18, 40.77, 44.18]
+compareplots2.pdf: 60 red, 60 blue; scale 1.1682 pt/unit, red-fit max resid 0.482 pt (0.413 units)
+   blue (CM plotted) - ours t_n: max |diff| = 0.434 units, rms = 0.244; rounding unit = 0.856; best index shift (0, 0.24384654726412855)
+   first 8 CM-blue: [12.18, 19.02, 25.02, 29.3, 33.58, 37.0, 40.42, 43.85]
+   first 8 ours   : [12.55, 19.42, 24.7, 29.26, 33.37, 37.18, 40.77, 44.18]
+compareplots3.pdf: 100 red, 100 blue; scale 0.8079 pt/unit, red-fit max resid 0.581 pt (0.720 units)
+   blue (CM plotted) - ours t_n: max |diff| = 0.720 units, rms = 0.365; rounding unit = 1.238; best index shift (0, 0.36534509637096496)
+   first 8 CM-blue: [12.83, 19.02, 25.2, 28.92, 33.87, 37.58, 41.29, 43.77]
+   first 8 ours   : [12.55, 19.42, 24.7, 29.26, 33.37, 37.18, 40.77, 44.18]

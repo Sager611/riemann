@@ -1,0 +1,8 @@
+lambda=sqrt2 E in [1e3,1e5] (11 pts): free fit b =  2.22e-07 +- 6.1e-08 (CM22: -0.159155), c = -0.250003; b=0 fit: c = -0.250000 rms 8.1e-08; CM22-forced fit rms 4.7e-02
+      R_s(1e3) = -0.177877, R_s(1e4) = -0.239903, R_s(1e5) = -0.248702   (B26 limit -1/4)
+lambda=1     E in [1e3,1e5] (11 pts): free fit b =  1.68e-08 +- 4.7e-09 (CM22: -0.159155), c = -0.250000; b=0 fit: c = -0.250000 rms 6.1e-09; CM22-forced fit rms 4.7e-02
+      R_s(1e3) = -0.230041, R_s(1e4) = -0.247290, R_s(1e5) = -0.249658   (B26 limit -1/4)
+lambda=0.5   E in [1e3,1e5] (11 pts): free fit b =  5.46e-10 +- 1.1e-09 (CM22: -0.159155), c = -0.250000; b=0 fit: c = -0.250000 rms 8.6e-10; CM22-forced fit rms 4.7e-02
+      R_s(1e3) = -0.248838, R_s(1e4) = -0.249848, R_s(1e5) = -0.249981   (B26 limit -1/4)
+lambda=2     E in [1e3,1e5] (11 pts): free fit b =  3.02e-06 +- 8.1e-07 (CM22: -0.159155), c = -0.250036; b=0 fit: c = -0.250002 rms 1.1e-06; CM22-forced fit rms 4.7e-02
+      R_s(1e3) =  0.004547, R_s(1e4) = -0.212978, R_s(1e5) = -0.245141   (B26 limit -1/4)
