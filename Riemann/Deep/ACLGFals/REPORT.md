@@ -51,8 +51,8 @@ constants give eps_odd(1) >= 2.81 delta_6 (c = 5) and 3.89 delta_6 (c = 16). L_o
 loses accuracy, not the form (Galerkin eps_odd(1)/delta_6 = 2.3-8.4, eps(2)/delta_8 = 1.5-6.8). So at every certified window the lower
 half of LA (j = 1) and the gap hypothesis hold with explicit constants. LA itself (lambda -> infinity) is not touched.
 Side remark (logs/theta_vs_aclg.md): Chekmachev's empirical scale is Theta_c = (1.03 + o(1)) lambda delta_4(lambda) (leading terms of
-Phi(log lambda) and Fuchs). So eps_c >= 0.97 Theta_c cannot hold for all large c: it contradicts eps_lambda <= C delta_4 (log lambda)^3
-(Kastoris, Connes-Kastoris). ACLG's min-max upper bound at lambda^2 = 250 (16.08 delta_4, N = 5000, still falling) is only 1.2% above
+Phi(log lambda) and Fuchs). Extended to all c, eps_c >= 0.97 Theta_c contradicts nothing proved (Kastoris, Zenodo 22864295, Thm 6.2:
+|QW_lambda(k_lambda,k_lambda)|/||k_lambda||^2 <= C lambda^A delta_4, C, A, lambda_0 not explicit), only LA's conjectured upper half C delta_4 log lambda. ACLG's min-max upper bound at lambda^2 = 250 (16.08 delta_4, N = 5000, still falling) is only 1.2% above
 0.97 Theta_c = 15.90 delta_4. His theorem claims the bound only for c <= 47, so nothing he proved is affected.
 
 ### 2.3 Gram constant, input of (R2) (code/gram_herm.py, gram_lambda.py; logs/gram_*.jsonl)
