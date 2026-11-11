@@ -18,7 +18,7 @@ W_a(x) = (1/(1+a)) Σ_{m odd ≤ x} g(m) + (a/(1+a)) x^α Σ_{m odd ≤ x} g(m) 
 
 **Novelty.** arXiv: title search "summatory function" (only 2408.04143 itself on (−a)^{Ω(n)}), monthly listings 2026-10/11 (lst.py); OpenAlex: one citing work (2025, unrelated); Zenodo quoted queries ("summatory function" AND "Omega(n)", Johnston AND Leong AND Tudzi): 0; HAL: only Azzouza's Σ′2^{Ω(n)}/n (different sum); our files: nothing. The authors' own method (after Tenenbaum's Exercise 58) gives only s_a ≥ 1/2.
 
-**Caveat.** Off the RH tree: the main term comes from the Euler factor at 2, not from zeros. Lean formalization pending (mandatory; Orca agent omegalean).
+**Caveat.** Off the RH tree: the main term comes from the Euler factor at 2, not from zeros. Lean 4 + Mathlib: OmegaLean.tendsto_s : Tendsto s atTop (𝓝 1) with the literal limsup, plus the explicit bounds L(a) ≤ s_a ≤ U(a) for a ≥ 64, sorry-free, standard axioms only ([LEAN.md](../Riemann/Deep/ConjFals/LEAN.md); omegalean, 11 Nov 2026; a simpler finite-sum route than the paper proof above).
 
 **RH relevance.** None directly (side result); context N10 (Pólya/Mertens-type size conjectures for Σ λ-like sums).
 
