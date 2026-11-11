@@ -43,7 +43,7 @@
 - Pointwise only (0.202 + o(1))·√n log n/√(log log n) is proved, under RH.
 - The constant of the mean square (2√2/(3π) under GUE pair correlation) is a heuristic prediction.
 - Positivity of λ_n is not advanced.
-- Lean: pending (lilean, mandatory).
+- Lean: Theorem 1 and Corollaries 1–4 in Lean 4 + Mathlib (LiRate.thm1_of_lemmas, li_cor1–4, li_rh_iff; inputs as named hypotheses: Li's formula, Riemann–von Mangoldt, Theorem 2's bound, ¬RH ⇒ radius < 1, the Fourier estimates of the weights; sorry-free, standard axioms; reviewer: faithful with caveats; [LEAN.md](../Riemann/Deep/LiRate/LEAN.md)).
 
 **RH relevance.** N3, the rate of Li's criterion: the sharp mean-square exponent of the remainder, an unconditional Ω-bound, and the sharp weighted form of Arias de Reyna's equivalence.
 
