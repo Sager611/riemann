@@ -1,0 +1,9 @@
+# T = 3e12: D = 4.2800, |S| allowed 5.661 (Trudgian 6.661 - 1), Trudgian |S_1| <= 3.762; d = 0.37
+  a = 1.2, w = 0.06a, q = 0.8: W/(D2pi||f||^2) = -0.2530, max|S| 6.381, max|int S| 5.167, needed gap 2.4008, pairs 2379 -> check
+  a = 1.4, w = 0.06a, q = 0.8: W/(D2pi||f||^2) = -0.3385, max|S| 5.487, max|int S| 4.106, needed gap 2.0077, pairs 2039 -> check
+  a = 1.85, w = 0.03a, q = 0.8: W/(D2pi||f||^2) = -0.6085, max|S| 4.437, max|int S| 2.643, needed gap 1.4040, pairs 3085 -> ADMISSIBLE
+  a = 1.925, w = 0.03a, q = 0.8: W/(D2pi||f||^2) = -0.6545, max|S| 4.315, max|int S| 2.455, needed gap 1.3443, pairs 2965 -> ADMISSIBLE
+  a = 1.925, w = 0.06a, q = 0.8: W/(D2pi||f||^2) = -0.6243, max|S| 4.355, max|int S| 2.507, needed gap 1.3924, pairs 1483 -> ADMISSIBLE
+  a = 2.131, w = 0.03a, q = 0.8: W/(D2pi||f||^2) = -0.7879, max|S| 3.689, max|int S| 1.864, needed gap 1.1961, pairs 2679 -> ADMISSIBLE
+  a = 2.303, w = 0.03a, q = 0.8: W/(D2pi||f||^2) = -0.9082, max|S| 3.640, max|int S| 1.622, needed gap 1.0899, pairs 2479 -> ADMISSIBLE
+# maxrss 54 MB, 21s

@@ -1,0 +1,58 @@
+# (1) exactness: int h_d du = 2 pi ||f||^2 (a = 1.925, w = 0.2)
+  d = 0.0000: int h = 1.0883866777, 2 pi ||f||^2 = 1.0883866777, rel. err 4.5e-13
+  d = 0.1000: int h = 1.0883866777, 2 pi ||f||^2 = 1.0883866777, rel. err 4.5e-13
+  d = 0.3734: int h = 1.0883866777, 2 pi ||f||^2 = 1.0883866777, rel. err 4.5e-13
+# (2) regular lattice of off-line pairs (d = 0.3734): W / (D 2pi||f||^2), exact iff pair step 2/D < pi/a
+  D = 4.2799: step 0.4673 (pi/a = 1.6320): 1.000000000000
+  D = 1.3: step 1.5385 (pi/a = 1.6320): 1.000000000000
+  D = 1.0: step 2.0000 (pi/a = 1.6320): 1.000000276024
+  D = 0.55: step 3.6364 (pi/a = 1.6320): 2.774257923592
+  maxrss 46 MB
+# (3) T = 3e12: D = 4.2800, min(Trudgian, HSW) |S| <= 6.661; adversary allowed |S| <= 5.661, allowed gap ~ 2|S|/D = 2.645 (limit 4 pi 0.1038 = 1.304)
+  a = 0.600 (c =     3.32): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.0571 (on 5.36e-15, off -0.0571), max|S| 11.42, max gap 4.874, pairs 4759 -> not admissible
+  a = 0.700 (c =     4.06): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.0762 (on 5.36e-15, off -0.0762), max|S| 9.72, max gap 4.082, pairs 4079 -> not admissible
+  a = 0.800 (c =     4.95): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.0977 (on 5.36e-15, off -0.0977), max|S| 8.44, max gap 3.488, pairs 3569 -> not admissible
+  a = 0.900 (c =     6.05): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.1220 (on 5.36e-15, off -0.1220), max|S| 7.47, max gap 3.045, pairs 3172 -> not admissible
+  a = 1.000 (c =     7.39): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.1489 (on 5.36e-15, off -0.1489), max|S| 6.69, max gap 2.674, pairs 2855 -> not admissible
+  a = 1.100 (c =     9.03): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.1752 (on 5.36e-15, off -0.1752), max|S| 6.05, max gap 2.385, pairs 2595 -> not admissible
+  a = 1.200 (c =    11.02): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.2049 (on 5.36e-15, off -0.2049), max|S| 5.56, max gap 2.131, pairs 2379 -> ADMISSIBLE, W<0
+  a = 1.400 (c =    16.44): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.2694 (on 5.36e-15, off -0.2694), max|S| 4.74, max gap 1.755, pairs 2039 -> ADMISSIBLE, W<0
+  a = 1.600 (c =    24.53): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.3397 (on 5.36e-15, off -0.3397), max|S| 4.14, max gap 1.483, pairs 1784 -> ADMISSIBLE, W<0
+  a = 1.800 (c =    36.60): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.4131 (on 5.36e-15, off -0.4131), max|S| 3.69, max gap 1.272, pairs 1586 -> ADMISSIBLE, W<0
+  a = 1.925 (c =    46.99): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.4570 (on 5.36e-15, off -0.4570), max|S| 3.43, max gap 1.163, pairs 1483 -> ADMISSIBLE, W<0
+  a = 2.131 (c =    70.95): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.5291 (on 5.36e-15, off -0.5291), max|S| 3.16, max gap 1.019, pairs 1339 -> ADMISSIBLE, W<0
+  a = 2.303 (c =   100.08): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.5870 (on 5.36e-15, off -0.5870), max|S| 2.93, max gap 0.914, pairs 1239 -> ADMISSIBLE, W<0
+  a = 2.600 (c =   181.27): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.6300 (on 5.36e-15, off -0.6300), max|S| 2.65, max gap 0.784, pairs 1097 -> ADMISSIBLE, W<0
+  maxrss 60 MB, 155s
+# (3) t = 1e30: D = 10.7015, min(Trudgian, HSW) |S| <= 11.424; adversary allowed |S| <= 10.424, allowed gap ~ 2|S|/D = 1.948 (limit 4 pi 0.1038 = 1.304)
+  a = 0.600 (c =     3.32): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.0602 (on 5.36e-15, off -0.0602), max|S| 27.04, max gap 4.874, pairs 11898 -> not admissible
+  a = 0.700 (c =     4.06): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.0814 (on 5.36e-15, off -0.0814), max|S| 22.80, max gap 4.082, pairs 10198 -> not admissible
+  a = 0.800 (c =     4.95): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.1057 (on 5.36e-15, off -0.1057), max|S| 19.64, max gap 3.488, pairs 8923 -> not admissible
+  a = 0.900 (c =     6.05): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.1337 (on 5.36e-15, off -0.1337), max|S| 17.24, max gap 3.045, pairs 7932 -> not admissible
+  a = 1.000 (c =     7.39): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.1654 (on 5.36e-15, off -0.1654), max|S| 15.29, max gap 2.674, pairs 7139 -> not admissible
+  a = 1.100 (c =     9.03): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.1983 (on 5.36e-15, off -0.1983), max|S| 13.68, max gap 2.385, pairs 6490 -> not admissible
+  a = 1.200 (c =    11.02): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.2358 (on 5.36e-15, off -0.2358), max|S| 12.38, max gap 2.131, pairs 5949 -> not admissible
+  a = 1.400 (c =    16.44): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.3218 (on 5.36e-15, off -0.3218), max|S| 10.31, max gap 1.755, pairs 5099 -> ADMISSIBLE, W<0
+  a = 1.600 (c =    24.53): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.4236 (on 5.36e-15, off -0.4236), max|S| 8.85, max gap 1.483, pairs 4462 -> ADMISSIBLE, W<0
+  a = 1.800 (c =    36.60): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.5406 (on 5.36e-15, off -0.5406), max|S| 7.72, max gap 1.272, pairs 3966 -> ADMISSIBLE, W<0
+  a = 1.925 (c =    46.99): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.6229 (on 5.36e-15, off -0.6229), max|S| 7.16, max gap 1.163, pairs 3708 -> ADMISSIBLE, W<0
+  a = 2.131 (c =    70.95): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.7737 (on 5.36e-15, off -0.7737), max|S| 6.40, max gap 1.019, pairs 3347 -> ADMISSIBLE, W<0
+  a = 2.303 (c =   100.08): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.9158 (on 5.36e-15, off -0.9158), max|S| 5.88, max gap 0.914, pairs 3097 -> ADMISSIBLE, W<0
+  a = 2.600 (c =   181.27): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -1.2010 (on 5.36e-15, off -1.2010), max|S| 5.16, max gap 0.784, pairs 2743 -> ADMISSIBLE, W<0
+  maxrss 66 MB, 304s
+# (3) t = 1e100: D = 36.3543, min(Trudgian, HSW) |S| <= 29.811; adversary allowed |S| <= 28.811, allowed gap ~ 2|S|/D = 1.585 (limit 4 pi 0.1038 = 1.304)
+  a = 0.600 (c =     3.32): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.0616 (on 5.36e-15, off -0.0616), max|S| 89.38, max gap 4.874, pairs 40419 -> not admissible
+  a = 0.700 (c =     4.06): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.0836 (on 5.36e-15, off -0.0836), max|S| 75.10, max gap 4.082, pairs 34645 -> not admissible
+  a = 0.800 (c =     4.95): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.1091 (on 5.36e-15, off -0.1091), max|S| 64.35, max gap 3.488, pairs 30314 -> not admissible
+  a = 0.900 (c =     6.05): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.1386 (on 5.36e-15, off -0.1386), max|S| 55.97, max gap 3.045, pairs 26945 -> not admissible
+  a = 1.000 (c =     7.39): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.1722 (on 5.36e-15, off -0.1722), max|S| 49.54, max gap 2.674, pairs 24251 -> not admissible
+  a = 1.100 (c =     9.03): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.2076 (on 5.36e-15, off -0.2076), max|S| 44.01, max gap 2.385, pairs 22046 -> not admissible
+  a = 1.200 (c =    11.02): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.2482 (on 5.36e-15, off -0.2482), max|S| 39.69, max gap 2.131, pairs 20209 -> not admissible
+  a = 1.400 (c =    16.44): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.3422 (on 5.36e-15, off -0.3422), max|S| 32.82, max gap 1.755, pairs 17322 -> not admissible
+  a = 1.600 (c =    24.53): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.4551 (on 5.36e-15, off -0.4551), max|S| 27.69, max gap 1.483, pairs 15157 -> ADMISSIBLE, W<0
+  a = 1.800 (c =    36.60): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.5874 (on 5.36e-15, off -0.5874), max|S| 23.96, max gap 1.272, pairs 13473 -> ADMISSIBLE, W<0
+  a = 1.925 (c =    46.99): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.6816 (on 5.36e-15, off -0.6816), max|S| 22.13, max gap 1.163, pairs 12598 -> ADMISSIBLE, W<0
+  a = 2.131 (c =    70.95): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -0.8572 (on 5.36e-15, off -0.8572), max|S| 19.35, max gap 1.019, pairs 11370 -> ADMISSIBLE, W<0
+  a = 2.303 (c =   100.08): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -1.0258 (on 5.36e-15, off -1.0258), max|S| 17.55, max gap 0.914, pairs 10520 -> ADMISSIBLE, W<0
+  a = 2.600 (c =   181.27): best w = 0.06a, q = 1.0: W/(D2pi||f||^2) = -1.3714 (on 5.36e-15, off -1.3714), max|S| 15.13, max gap 0.784, pairs 9318 -> ADMISSIBLE, W<0
+  maxrss 78 MB, 493s

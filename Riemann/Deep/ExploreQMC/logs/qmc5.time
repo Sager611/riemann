@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/ExploreQMC/qmc5_thresh.py", line 28, in <module>
+    run('t = 1e1000', 1e300**3.3333, (1.925, 2.131, 2.303), wfs=(0.03,), qs=(0.95,))
+                      ~~~~~^^~~~~~~
+OverflowError: (34, 'Result too large')
+      121.76 real        98.95 user         1.97 sys
+            64094208  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8681  page reclaims
+                  12  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  10  voluntary context switches
+              273891  involuntary context switches
+           455424194  instructions retired
+           196936016  cycles elapsed
+            18989584  peak memory footprint

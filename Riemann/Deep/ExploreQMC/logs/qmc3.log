@@ -1,0 +1,26 @@
+# asymptotic allowed gaps 4 pi A: {0.0946: 1.1888, 0.1038: 1.3044, 0.112: 1.4074}
+  w = 0.03a, a = 1.7: needed gap 1.3146, W/(D2pi||f||^2) = -0.3909, pairs 3358  [A=0.0946:no A=0.1038:no A=0.112:ok]
+  w = 0.03a, a = 1.75: needed gap 1.2677, W/(D2pi||f||^2) = -0.4042, pairs 3262  [A=0.0946:no A=0.1038:ok A=0.112:ok]
+  w = 0.03a, a = 1.8: needed gap 1.2235, W/(D2pi||f||^2) = -0.4253, pairs 3171  [A=0.0946:no A=0.1038:ok A=0.112:ok]
+  w = 0.03a, a = 1.85: needed gap 1.1730, W/(D2pi||f||^2) = -0.4423, pairs 3086  [A=0.0946:ok A=0.1038:ok A=0.112:ok]
+  w = 0.03a, a = 1.925: needed gap 1.1188, W/(D2pi||f||^2) = -0.4660, pairs 2966  [A=0.0946:ok A=0.1038:ok A=0.112:ok]
+  w = 0.03a, a = 2.131: needed gap 0.9803, W/(D2pi||f||^2) = -0.5389, pairs 2679  [A=0.0946:ok A=0.1038:ok A=0.112:ok]
+  w = 0.03a, a = 2.303: needed gap 0.8860, W/(D2pi||f||^2) = -0.5995, pairs 2479  [A=0.0946:ok A=0.1038:ok A=0.112:ok]
+  w = 0.06a, a = 1.7: needed gap 1.3663, W/(D2pi||f||^2) = -0.3682, pairs 1679  [A=0.0946:no A=0.1038:no A=0.112:ok]
+  w = 0.06a, a = 1.75: needed gap 1.3178, W/(D2pi||f||^2) = -0.3869, pairs 1631  [A=0.0946:no A=0.1038:no A=0.112:ok]
+  w = 0.06a, a = 1.8: needed gap 1.2719, W/(D2pi||f||^2) = -0.4044, pairs 1586  [A=0.0946:no A=0.1038:ok A=0.112:ok]
+  w = 0.06a, a = 1.85: needed gap 1.2285, W/(D2pi||f||^2) = -0.4222, pairs 1543  [A=0.0946:no A=0.1038:ok A=0.112:ok]
+  w = 0.06a, a = 1.925: needed gap 1.1632, W/(D2pi||f||^2) = -0.4477, pairs 1483  [A=0.0946:ok A=0.1038:ok A=0.112:ok]
+  w = 0.06a, a = 2.131: needed gap 1.0194, W/(D2pi||f||^2) = -0.5177, pairs 1339  [A=0.0946:ok A=0.1038:ok A=0.112:ok]
+  w = 0.06a, a = 2.303: needed gap 0.9215, W/(D2pi||f||^2) = -0.5739, pairs 1239  [A=0.0946:ok A=0.1038:ok A=0.112:ok]
+  w -> 0: a = 1.65: p = 0.3174, gap = 1.2996
+  w -> 0: a = 1.7: p = 0.3237, gap = 1.2498
+  w -> 0: a = 1.75: p = 0.3298, gap = 1.2031
+  w -> 0: a = 1.77: p = 0.3322, gap = 1.1853
+  w -> 0: a = 1.78: p = 0.3334, gap = 1.1766
+  w -> 0: a = 1.8: p = 0.3357, gap = 1.1594
+  w -> 0: a = 1.925: p = 0.3497, gap = 1.0613
+  w -> 0: a = 2.131: p = 0.3703, gap = 0.9283
+  w -> 0: a = 2.303: p = 0.3854, gap = 0.8383
+# a = 1.925 block at T = 3e12: max|S| 3.465, swing 6.921, max|int(S - mean)| 7.124; Trudgian S_1 bound at 3e12: 3.762
+# maxrss 54 MB, 32s

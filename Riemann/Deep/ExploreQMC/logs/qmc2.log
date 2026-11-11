@@ -1,0 +1,9 @@
+# (a) needed gap vs delta, w = 0.06a, q = 1 (T = 3e12: D = 4.2800, allowed |S| 5.661, allowed gap 2.645; t -> inf: 1.304)
+  d = 0.37: a=1.2: gap 2.145 W -0.202*; a=1.4: gap 1.755 W -0.265*; a=1.6: gap 1.483 W -0.334*; a=1.8: gap 1.272 W -0.404*+; a=1.925: gap 1.163 W -0.448*+; a=2.131: gap 1.019 W -0.518*+; a=2.303: gap 0.922 W -0.574*+
+  d = 0.3: a=1.2: gap 2.242 W -0.131; a=1.4: gap 1.862 W -0.172*; a=1.6: gap 1.577 W -0.213*; a=1.8: gap 1.355 W -0.258*; a=1.925: gap 1.241 W -0.281*+; a=2.131: gap 1.090 W -0.322*+; a=2.303: gap 0.980 W -0.354*+
+  d = 0.2: a=1.2: gap 2.423 W -0.058; a=1.4: gap 2.017 W -0.076*; a=1.6: gap 1.723 W -0.093*; a=1.8: gap 1.495 W -0.111*; a=1.925: gap 1.380 W -0.120*; a=2.131: gap 1.215 W -0.136*+; a=2.303: gap 1.146 W -0.150*+
+  d = 0.1: a=1.2: gap 2.604 W -0.016; a=1.4: gap 2.208 W -0.019; a=1.6: gap 1.911 W -0.024*; a=1.8: gap 1.671 W -0.029*; a=1.925: gap 1.554 W -0.030*; a=2.131: gap 1.388 W -0.034*; a=2.303: gap 1.306 W -0.036*
+  d = 0.05: a=1.2: gap 2.702 W -0.004; a=1.4: gap 2.304 W -0.005; a=1.6: gap 2.005 W -0.007*; a=1.8: gap 1.764 W -0.007*; a=1.925: gap 1.649 W -0.009*; a=2.131: gap 1.482 W -0.009*; a=2.303: gap 1.364 W -0.011*
+  (* admissible at T = 3e12 with |S| <= allowed; + needed gap <= 1.304, admissible at every height)
+# (b) of this first run was INVALID (zeros with |u w| up to ~1700 aliased the 160-point Gauss-Legendre transform);
+#     fixed (|u w| <= 60) and rerun as 'qmc2_real.py b' -> logs/qmc2b.log

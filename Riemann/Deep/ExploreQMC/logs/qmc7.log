@@ -1,0 +1,11 @@
+# T = 3e12: |S| allowed 5.661, |S_1| allowed 2.762
+  delta = 0.2, a = 1.925: w = 0.03a, q = 0.6: W -0.2052, max|S| 4.76, max|int S| 2.36 -> ADMISSIBLE, W < 0
+  delta = 0.2, a = 2.131: w = 0.03a, q = 0.6: W -0.2412, max|S| 4.10, max|int S| 1.98 -> ADMISSIBLE, W < 0
+  delta = 0.2, a = 2.303: w = 0.06a, q = 0.6: W -0.2715, max|S| 4.03, max|int S| 1.75 -> ADMISSIBLE, W < 0
+  delta = 0.1, a = 1.925: w = 0.03a, q = 0.8: W -0.0440, max|S| 5.10, max|int S| 3.02 -> not admissible
+  delta = 0.1, a = 2.131: w = 0.06a, q = 0.6: W -0.0552, max|S| 4.85, max|int S| 2.62 -> ADMISSIBLE, W < 0
+  delta = 0.1, a = 2.303: w = 0.03a, q = 0.6: W -0.0677, max|S| 4.34, max|int S| 2.00 -> ADMISSIBLE, W < 0
+  delta = 0.05, a = 1.925: w = 0.06a, q = 0.95: W -0.0098, max|S| 5.52, max|int S| 3.04 -> not admissible
+  delta = 0.05, a = 2.131: w = 0.03a, q = 0.8: W -0.0133, max|S| 5.07, max|int S| 2.66 -> ADMISSIBLE, W < 0
+  delta = 0.05, a = 2.303: w = 0.06a, q = 0.6: W -0.0158, max|S| 4.93, max|int S| 2.54 -> ADMISSIBLE, W < 0
+# maxrss 47 MB, 151s

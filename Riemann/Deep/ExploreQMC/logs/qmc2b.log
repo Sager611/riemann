@@ -1,0 +1,15 @@
+# (b) zeros loaded: 22491; kept 1286 with |gamma - t0| <= 519.5, range 14480.842 .. 15518.970
+  t0 = 15000.0, D = 1.2379, a = 1.925, w = 0.1155: true zeros W/(D 2pi||f||^2) = 1.0709
+  one merged pair (delta = 0.3): min over 72 phases W = 0.8983 at theta = 3.840 (true 1.0709): invisible
+  adversarial blocks (delta = 0.3; K = off-line zeros; dev = max |N_mod - N_true| inside the block):
+    R =   10: block length   20.83, K =   27: W/(D 2pi||f||^2) = +0.5780, dev 3.0
+    R =   20: block length   41.23, K =   51: W/(D 2pi||f||^2) = +0.2075, dev 3.0
+    R =   40: block length   79.85, K =   99: W/(D 2pi||f||^2) = -0.2846, dev 3.0
+    R =   60: block length  121.23, K =  150: W/(D 2pi||f||^2) = -0.4644, dev 3.0
+    R =   80: block length  159.71, K =  197: W/(D 2pi||f||^2) = -0.4738, dev 3.0
+    R =  100: block length  201.23, K =  250: W/(D 2pi||f||^2) = -0.4905, dev 3.0
+    R =  130: block length  260.40, K =  322: W/(D 2pi||f||^2) = -0.4904, dev 3.0
+    R =  170: block length  340.22, K =  421: W/(D 2pi||f||^2) = -0.4770, dev 3.0
+    R =  220: block length  440.97, K =  546: W/(D 2pi||f||^2) = -0.4900, dev 3.0
+    R =  300: block length  600.71, K =  743: W/(D 2pi||f||^2) = -0.4653, dev 3.0
+# maxrss 56 MB, 5s

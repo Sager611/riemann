@@ -1,0 +1,12 @@
+# T = 3e12: D = 4.2800, |S| allowed 5.661, |S_1| allowed 2.762; d = 0.37
+  a = 1.4 (c = 16.44): w = 0.06a, q = 0.6: W -0.3930, max|S| 5.32, max|int S| 3.53, gap 2.197 -> not admissible
+  a = 1.5 (c = 20.09): w = 0.06a, q = 0.6: W -0.4450, max|S| 5.25, max|int S| 3.43, gap 2.006 -> not admissible
+  a = 1.6 (c = 24.53): w = 0.03a, q = 0.6: W -0.5539, max|S| 4.58, max|int S| 2.94, gap 1.854 -> not admissible
+  a = 1.7 (c = 29.96): w = 0.03a, q = 0.8: W -0.5264, max|S| 4.67, max|int S| 2.61, gap 1.551 -> ADMISSIBLE, W < 0
+  a = 1.8 (c = 36.60): w = 0.06a, q = 0.6: W -0.6550, max|S| 4.54, max|int S| 2.25, gap 1.655 -> ADMISSIBLE, W < 0
+# t = 1e100: D = 36.3543, |S| allowed 26.528, |S_1| allowed 14.652; d = 0.37
+  a = 1.85 (c = 40.45): w = 0.03a, q = 0.95: W -0.6881, max|S| 23.35, max|int S| 10.29, gap 1.222 -> ADMISSIBLE, W < 0
+  a = 1.925 (c = 46.99): w = 0.03a, q = 0.95: W -0.7505, max|S| 22.02, max|int S| 8.86, gap 1.171 -> ADMISSIBLE, W < 0
+  a = 2.131 (c = 70.95): w = 0.03a, q = 0.95: W -0.9466, max|S| 19.52, max|int S| 7.03, gap 1.029 -> ADMISSIBLE, W < 0
+  a = 2.303 (c = 100.08): w = 0.03a, q = 0.95: W -1.1363, max|S| 18.07, max|int S| 6.36, gap 0.935 -> ADMISSIBLE, W < 0
+# note: a third case t = 1e1000 overflowed a float (removed from the script); t -> infinity is covered analytically in DERIVATION section 7
