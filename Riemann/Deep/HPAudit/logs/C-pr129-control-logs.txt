@@ -1,0 +1,32 @@
+=== control-PalomarPreflightIllTyped.log
+Running con-ron kernel on solution
+con-ron kernel rejected the solution
+Running nanoda kernel on solution
+nanoda kernel rejected the solution
+Running Lean default kernel on solution
+Lean default kernel rejected the solution
+
+con-ron: 1 inductive blocks modelled in-process: Lean.Syntax (30 generated records, checked by the fold as declarations and not counted as records of the file)
+con-ron: rejected: type mismatch in declaration [at thm palomar_preflight, fold position 10] (--verified) t=5.986s
+
+thread 'thread_1' (4) panicked at src/tc.rs:955:71:
+assertion failed: self.def_eq(u, v)
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread 'main' (2) panicked at src/tc.rs:173:26:
+A thread in `check_all_declars` panicked while being joined: Any { .. }
+error: con-ron exited with 1
+=== control-PalomarPreflightSolution.log
+Running con-ron kernel on solution
+con-ron: accepted 466 declarations (--verified)
+con-ron kernel accepts the solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
+
+con-ron: 1 inductive blocks modelled in-process: Lean.Syntax (30 generated records, checked by the fold as declarations and not counted as records of the file)
+=== control-PalomarPreflightWrong.log
+
+error: Challenge and solution theorem statement do not match: 'palomar_preflight'

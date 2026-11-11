@@ -1,0 +1,114 @@
+{
+ "status": "pass",
+ "stage": "complete",
+ "phase": "verification",
+ "checked_at": "2026-10-13T13:35:33Z",
+ "existing_id": "PALOMAR-2026-10-13-000010",
+ "workflow_url": "https://github.com/PalomarRegistry/PalomarSubmission/actions/runs/38381813019",
+ "source": {
+  "bytes": 59118499,
+  "commit": "09afbb4ce6570c1615d58509dc197fc9f0956b7d",
+  "repository": "AxiomMath/DedekindZetaZeroFree",
+  "repository_url": "https://github.com/AxiomMath/DedekindZetaZeroFree",
+  "tree_url": "https://github.com/AxiomMath/DedekindZetaZeroFree/tree/09afbb4ce6570c1615d58509dc197fc9f0956b7d"
+ },
+ "challenge": {
+  "bytes": 1875,
+  "canonical_olean_sha256": "99a94428072d0b49571263c7c9a2a5fa232c2d1f9ffa71529a44417bca88d10c",
+  "dependencies": [
+   {
+    "provenance": "allowlisted",
+    "repository": "leanprover-community/mathlib4"
+   }
+  ],
+  "direct_imports": [
+   "Mathlib",
+   "Mathlib.Analysis.CStarAlgebra.Classes",
+   "Mathlib.NumberTheory.NumberField.DedekindZeta"
+  ],
+  "lines": 45,
+  "module": "DedekindZetaChallenge",
+  "path": "Challenge/DedekindZetaChallenge.lean",
+  "sha256": "dd2562c814caa29860c48c78532e452e8f086c1e80eebfe2b03efbc1c7d762be",
+  "transitive_source_count": 4,
+  "trust_level": "high",
+  "untrusted_sources": []
+ },
+ "solution": {
+  "module": "DedekindZetaSolution",
+  "path": "Solution/DedekindZetaSolution.lean",
+  "sha256": "cea97922704d55edc4bcf75bad181dfe9f200bd274437115a23730eb2820c5d1"
+ },
+ "comparator": {
+  "challenge_module": "DedekindZetaChallenge",
+  "definition_names": [],
+  "path": "comparator.json",
+  "permitted_axioms": [
+   "propext",
+   "Quot.sound",
+   "Classical.choice"
+  ],
+  "sha256": "9810aca52283ea51b6fb4591dffefb2138120a341669b037b4b436234f13381f",
+  "solution_module": "DedekindZetaSolution",
+  "theorem_names": [
+   "DedekindZetaZeroFree.main",
+   "DedekindZetaZeroFree.heckeCorollary"
+  ]
+ },
+ "comparator_log_tail": "Running con-ron kernel on solution\ncon-ron: accepted 206506 declarations (--verified)\ncon-ron kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n\ncon-ron: 1 inductive blocks modelled in-process: Lean.Syntax (30 generated records, checked by the fold as declarations and not counted as records of the file)",
+ "protected_config": "{\n  \"challenge_module\": \"PalomarCanonical506b73db59541e226d4d4347.Challenge\",\n  \"definition_names\": [],\n  \"external_kernels\": {\n    \"con-ron\": [\n      \"/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/con-ron\",\n      \"--jobs=2\"\n    ],\n    \"nanoda\": [\n      \"/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/nanoda_bin\"\n    ]\n  },\n  \"permitted_axioms\": [\n    \"propext\",\n    \"Quot.sound\",\n    \"Classical.choice\"\n  ],\n  \"solution_module\": \"DedekindZetaSolution\",\n  \"theorem_names\": [\n    \"DedekindZetaZeroFree.main\",\n    \"DedekindZetaZeroFree.heckeCorollary\"\n  ]\n}\n",
+ "protected_config_sha256": "f47c5bcfa1b3743f87f64bef68d0e505c7ca1746180779f18ea8d0eb4a81b504",
+ "kernels": [
+  {
+   "argv": [
+    "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/nanoda_bin"
+   ],
+   "name": "nanoda"
+  },
+  {
+   "argv": [
+    "/home/runner/.elan/toolchains/leanprover--lean4---v4.35.0-rc3/bin/con-ron",
+    "--jobs=2"
+   ],
+   "name": "con-ron"
+  }
+ ],
+ "tool_digests": {
+  "bwrap": "11afff9d822c030062acc59dbe0a79d4228ff4567c80435d15e4e884ebca735d",
+  "con-ron": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+  "lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+  "lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+  "leanchecker": "9e36e955a251b1313c8eb5b7fa101282d51df109d34d8bb7c1cfdf51985aba29",
+  "leanexport": "c5bc1a10a21e22cbb3671d65987cdef2076833b14182d823ccb2153adf2fa954",
+  "nanoda_bin": "8241c5e6baa29490aa118d382f97961b208ae730fdb96545c2abed74c9ece5a8"
+ },
+ "toolchain_commit": "470d5ce1400764999581fd26d5d72b00d990b0f4",
+ "lean_toolchain": "leanprover/lean4:v4.35.0-rc3",
+ "mathlib_toolchain": [
+  {
+   "revision": "0493595ecd5da8ef14742febab99728f98e948e8",
+   "toolchain": "leanprover/lean4:v4.35.0-rc3"
+  }
+ ],
+ "source_requirements": {
+  "files_checked": 5528,
+  "header_parser": "lean --deps-json",
+  "maximum_lines": 10000,
+  "module_required": true,
+  "schema_version": 1
+ },
+ "errors": [],
+ "warnings": [],
+ "submission": {
+  "authorization": {
+   "relationship": "maintainer"
+  },
+  "requested_paths": {
+   "comparator_config_path": "comparator.json",
+   "formalization_metadata_path": "",
+   "project_path": ""
+  },
+  "submission_id": "ikz6pd89w5zq"
+ },
+ "build_log_tail_last_800_chars": "onvanishing (3.6s)\n✔ [14456/14465] Built DedekindZetaZeroFree.Nonvanishing.Mellin.Quantitative.TwelfthRootNonvanishing (3.7s)\n✔ [14457/14465] Built DedekindZetaZeroFree.Nonvanishing.Mellin.Quantitative.DedekindZetaNonvanishing (3.6s)\n✔ [14458/14465] Built DedekindZetaZeroFree.Main (3.5s)\n✔ [14459/14465] Built DedekindZetaZeroFree.Nonvanishing.Descent.HolomorphicFactors (3.6s)\n✔ [14460/14465] Built DedekindZetaZeroFree.Nonvanishing.Hecke.PrincipalCharacter (3.9s)\n✔ [14461/14465] Built DedekindZetaZeroFree.Nonvanishing.Hecke.GaloisCharacter (4.1s)\n✔ [14462/14465] Built DedekindZetaZeroFree.Nonvanishing.Hecke.NonprincipalCharacter (4.4s)\n✔ [14463/14465] Built DedekindZetaZeroFree.HeckeCorollary (3.9s)\n✔ [14464/14465] Built DedekindZetaSolution (3.8s)\nBuild completed successfully (14465 jobs)."
+}

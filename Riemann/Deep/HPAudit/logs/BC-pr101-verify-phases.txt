@@ -1,0 +1,26 @@
+676:2026-10-31T21:22:32.6284286Z Authenticated server build: 2923/4573 compatible modules; checking archive during replay
+723:2026-10-31T21:24:54.6532218Z sandbox controls
+724:2026-10-31T21:25:11.4741974Z positive, mismatched statement and ill-typed proof controls
+725:2026-10-31T21:26:20.0670279Z compile and freeze canonical challenge
+726:2026-10-31T21:26:53.1876767Z candidate mount controls
+727:2026-10-31T21:27:38.7934567Z Reused 2923 authenticated compiled modules
+728:2026-10-31T21:27:38.7936029Z compile standard candidate
+4033:2026-10-31T22:21:06.6514325Z compile and export standard solution wrapper
+4034:2026-10-31T22:23:24.9223395Z Comparator and Lean, NanoDa, con-ron
+4035:2026-10-31T22:23:24.9223790Z Kernel verification: 1 simultaneous checks
+4037:2026-10-31T22:45:29.8458607Z Accepted positive-gap-contact-return at 20a4c9a5afb5e6c63f9320ccdf765912fb1f29f1
+{
+  "schema_version": 1,
+  "result_id": "positive-gap-contact-return",
+  "theta_exact": "5458637291332547/6250000000000000",
+  "verified_at": "2026-10-31T22:45:23.819191+00:00",
+  "source_repository": "GTimG/QuasiRiemannTracker",
+  "source_commit": "20a4c9a5afb5e6c63f9320ccdf765912fb1f29f1",
+  "kernels": [
+    "Lean default",
+    "nanoda",
+    "con-ron"
+  ],
+  "report_url": "https://github.com/GTimG/QuasiRiemannTracker/actions/runs/41175022316/attempts/1",
+  "report_sha256": "4b1f22517c6d0502ca83831cce5e8666fb0d84a69e317aa1526df28f091080bd"
+}

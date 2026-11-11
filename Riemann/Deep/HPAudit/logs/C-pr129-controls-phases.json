@@ -1,0 +1,59 @@
+[
+  {
+    "expected": "accepted",
+    "exit_code": 0,
+    "log": "logs/control-PalomarPreflightSolution.log"
+  },
+  {
+    "expected": "statement-mismatch",
+    "exit_code": 1,
+    "log": "logs/control-PalomarPreflightWrong.log"
+  },
+  {
+    "expected": "ill-typed-proof",
+    "exit_code": 1,
+    "log": "logs/control-PalomarPreflightIllTyped.log"
+  }
+]
+[
+  {
+    "phase": "sandbox controls",
+    "at": "2026-11-11T09:36:12.897870+00:00"
+  },
+  {
+    "phase": "positive, mismatched statement and ill-typed proof controls",
+    "at": "2026-11-11T09:36:23.033479+00:00"
+  },
+  {
+    "phase": "compile and freeze canonical challenge",
+    "at": "2026-11-11T09:37:03.345417+00:00"
+  },
+  {
+    "phase": "candidate mount controls",
+    "at": "2026-11-11T09:37:28.433588+00:00"
+  },
+  {
+    "phase": "compile standard candidate",
+    "at": "2026-11-11T09:38:17.811241+00:00"
+  },
+  {
+    "phase": "compile and export standard solution wrapper",
+    "at": "2026-11-11T10:22:34.094785+00:00"
+  },
+  {
+    "phase": "Comparator and Lean, NanoDa, con-ron",
+    "at": "2026-11-11T10:24:51.657475+00:00"
+  },
+  {
+    "phase": "accepted",
+    "at": "2026-11-11T10:45:09.351861+00:00"
+  }
+]
+{
+  "status": "hit",
+  "cache_environment": "aea7ad38ebebc547968c7ea50dafc45430ee6a802ee39d7e160f99bd4bf6d045",
+  "worker_environment": "aea7ad38ebebc547968c7ea50dafc45430ee6a802ee39d7e160f99bd4bf6d045",
+  "matching_modules": 2923,
+  "required_modules": 4552,
+  "archive_sha256": "5a36a0a56a4425d6f7cbf1e6e303ef2dfbd318f638addd20dc949df787578361"
+}

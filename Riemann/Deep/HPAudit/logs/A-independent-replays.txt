@@ -1,0 +1,24 @@
+# (A) independent replays of OpenAI's 7/8 Lean proof found (read 11 Nov 2026; no contact made)
+
+1. QuasiRiemannTracker receipt pr69-ac76d5ef-20261023 (verifier/standard/receipts/, commit 375bf5f): "The actual OpenAI
+   seven-eighths baseline passed Comparator and all three kernels" (baseline-judge.log: con-ron accepted 122039
+   declarations, nanoda accepts, Lean default accepts, "Your solution is okay!"); challenge = QRH.canonical_bound at 7/8
+   (all q, all chi, Mathlib-only); permitted axioms propext, Classical.choice, Quot.sound; Lean 4.34.1 source,
+   comparator runtime 4.35.0-rc2, nanoda 0.4.26 (998e0a84). Files: A-tracker-pr69-baseline-judge.log, A-tracker-pr69-BaselineUpstream.lean.txt.
+2. Zenodo 23505836 (J. M. Reilly, 20 Oct 2026): comparator (d03acab) + nanoda over 189 openai/math configurations;
+   QuasiRiemannHypothesis at adc7f12 (import closure unchanged); 178 accepted by both kernels, 9 Lean-only after a nanoda
+   16 MiB stack overflow (all 9 accepted by nanoda f67473b); statement check: QuasiRiemannHypothesis, DirichletSevenEighths
+   and HeckeSevenEighths challenges match Thm 1.1 of the 30 Sep manuscript; zeta statement also covers s = 1 via Mathlib's
+   nonzero riemannZeta 1; all 34 #print axioms = propext, Classical.choice, Quot.sound. Cites nealmcb/openai-math-lean-tooling
+   (comparator on all 416 configurations at fd4aeeb, all accepted) and davegoldblatt/openai-zeta-proof-check (QRH, both kernels).
+   Caveat stated there: Lean PR 14807 (merged 18 Aug 2026, "make the kernel is_prop check require a sort") fixed a proof of
+   False that nanoda also accepted; toolchains used here (4.34.1, 4.35.0-rc2/rc3) postdate it.
+3. Zenodo 23461828 (Daugherty, Ryan, Ward, 19 Oct 2026, v1.0.0): separate-tree rebuild of all 2926 OAI modules at 1581d4cb,
+   fresh-environment Lean 4.34.1 kernel replays of the 7/8 closure, standard axioms only, reference statements against
+   Mathlib definitions identify the Dirichlet and zeta conclusions with the standard analytic continuations.
+4. Tracker issue 124 (darkhipo, AI, 5 Nov): local rebuild of openai-baseline (2927 modules, Lean 4.34.1), #print axioms of
+   8 declarations = standard three; default kernel only.
+5. Ours: Riemann/Deep/QRH port (1581d4cb = fd4aeeb2 + one workflow file): 2901 of 2924 files identical to the tracker's
+   openai-baseline after normalising headers and imports; the 23 others are the documented edits (19 set-literal
+   parentheses, 3 congr->all_goals, 1 ULift.ext) (A-port-vs-tracker-baseline.txt); REPORT.md there records #print axioms
+   = standard three (its check file .scratch/qrh2/ax.lean no longer exists).

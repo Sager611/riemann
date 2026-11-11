@@ -1,0 +1,26 @@
+667:2026-11-11T09:35:06.9722714Z Authenticated server build: 2923/4552 compatible modules; checking archive during replay
+714:2026-11-11T09:36:12.8980645Z sandbox controls
+715:2026-11-11T09:36:23.0339114Z positive, mismatched statement and ill-typed proof controls
+716:2026-11-11T09:37:03.3457454Z compile and freeze canonical challenge
+717:2026-11-11T09:37:28.4339190Z candidate mount controls
+718:2026-11-11T09:38:17.8115481Z Reused 2923 authenticated compiled modules
+719:2026-11-11T09:38:17.8132891Z compile standard candidate
+3979:2026-11-11T10:22:34.0951200Z compile and export standard solution wrapper
+3980:2026-11-11T10:24:51.6578895Z Comparator and Lean, NanoDa, con-ron
+3981:2026-11-11T10:24:51.6579529Z Kernel verification: 1 simultaneous checks
+3983:2026-11-11T10:45:15.2604658Z Accepted exact-contact-point at 515dbe0c2029752b3f793909aed1cdc29d2eb9ee
+{
+  "schema_version": 1,
+  "result_id": "exact-contact-point",
+  "theta_exact": "(777 − √1081) / 852 ≤ 2804966284017490358030969257914123810640482798488248385236764587735806455694206308975383836842958115341512355256943573632654341/3211614609922119834694179379888743028634953588197852962423516288191911449231164741438582626063161096341458934143644085157872271",
+  "verified_at": "2026-11-11T10:45:09.352034+00:00",
+  "source_repository": "GTimG/QuasiRiemannTracker",
+  "source_commit": "515dbe0c2029752b3f793909aed1cdc29d2eb9ee",
+  "kernels": [
+    "Lean default",
+    "nanoda",
+    "con-ron"
+  ],
+  "report_url": "https://github.com/GTimG/QuasiRiemannTracker/actions/runs/42995393841/attempts/1",
+  "report_sha256": "34c32c4c041b6c49f83e43a8d966635cd04c490608ddd82f0653547a4023b34e"
+}

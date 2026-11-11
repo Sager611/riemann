@@ -1,0 +1,26 @@
+597:2026-11-01T09:48:27.5217541Z Authenticated server build: 2923/4574 compatible modules; checking archive during replay
+644:2026-11-01T09:49:30.6753684Z sandbox controls
+645:2026-11-01T09:49:40.3022698Z positive, mismatched statement and ill-typed proof controls
+646:2026-11-01T09:50:17.9821571Z compile and freeze canonical challenge
+647:2026-11-01T09:50:39.2593764Z candidate mount controls
+648:2026-11-01T09:51:15.9967173Z Reused 2923 authenticated compiled modules
+649:2026-11-01T09:51:15.9967539Z compile standard candidate
+3953:2026-11-01T10:29:19.7051569Z compile and export standard solution wrapper
+3954:2026-11-01T10:31:44.7393574Z Comparator and Lean, NanoDa, con-ron
+3955:2026-11-01T10:31:44.7396749Z Kernel verification: 1 simultaneous checks
+3957:2026-11-01T11:03:06.9216424Z Accepted closest-fraction-contact at cae2e523d4ec22c05ea91ff44d68efb8fd02293f
+{
+  "schema_version": 1,
+  "result_id": "closest-fraction-contact",
+  "theta_exact": "2804966284017490358030969257914123810640482798488248385236764587735806455694206308975383836842958115341512355256943573632654341/3211614609922119834694179379888743028634953588197852962423516288191911449231164741438582626063161096341458934143644085157872271",
+  "verified_at": "2026-11-01T11:03:00.776281+00:00",
+  "source_repository": "GTimG/QuasiRiemannTracker",
+  "source_commit": "cae2e523d4ec22c05ea91ff44d68efb8fd02293f",
+  "kernels": [
+    "Lean default",
+    "nanoda",
+    "con-ron"
+  ],
+  "report_url": "https://github.com/GTimG/QuasiRiemannTracker/actions/runs/41294260719/attempts/1",
+  "report_sha256": "bacc77eda530dc11c4f6ff0c07dc7fd32fe8d18a53913cf5975ce7a827d7f748"
+}

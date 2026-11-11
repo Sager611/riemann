@@ -1,0 +1,16 @@
+# Mathlib definitions behind the statements (fetched raw from github.com/leanprover-community/mathlib4)
+
+## DirichletCharacter.LFunction (Mathlib/NumberTheory/LSeries/DirichletContinuation.lean @ d13f23b7, tracker pin)
+l.61  noncomputable def LFunction (chi : DirichletCharacter C N) (s : C) : C := ZMod.LFunction chi s
+l.67  lemma LFunction_modOne_eq {chi : DirichletCharacter C 1} : LFunction chi = riemannZeta
+l.75  lemma LFunction_eq_LSeries (chi) {s} (hs : 1 < re s) : LFunction chi s = LSeries (chi .) s
+l.92  lemma differentiableAt_LFunction (chi) (s) (hs : s != 1 or chi != 1) : DifferentiableAt C (LFunction chi) s
+docstring l.57-58: "this is not the same as LSeries chi: they agree in the convergence range, but LSeries chi s is defined to be 0 if re s <= 1"
+=> LFunction is the analytic continuation (identity theorem on C \ {1}); imprimitive chi gives the imprimitive L-function,
+   whose zeros in Re s > 0 are those of the primitive one; q = 1 gives riemannZeta. Statements (A)-(C) are the classical ones.
+
+## NumberField.dedekindZeta (Mathlib/NumberTheory/NumberField/DedekindZeta.lean @ 0493595e, AxiomMath pin)
+l.49  def dedekindZeta (s : C) := LSeries (fun n => Nat.card {I : Ideal (O K) // absNorm I = n}) s
+=> junk value 0 where the series diverges (Re s <= 1): "dedekindZeta K s != 0 for Re s > 31/32" would be FALSE in Lean.
+   AxiomMath's statement avoids this: exists f, DifferentiableOn C f {1}^c, f = dedekindZeta K on Re s > 1, f s != 0 for
+   Re s > 31/32, s != 1. C \ {1} is connected, so f is the continuation of zeta_K: the statement is exactly Thm 1.1.

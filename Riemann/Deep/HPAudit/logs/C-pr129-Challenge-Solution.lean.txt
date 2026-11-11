@@ -1,0 +1,36 @@
+# Challenge.lean regenerated from the tracker's generator (core/standard-challenge.mjs @375bf5f) and the run's contract manifest; sha256 matches contract.generated_files: c89bb4d3fd64bdfdbd40ae17831cd09b9d6e61392f08822052ca0346b0bef849
+import Mathlib
+
+namespace QRH
+open scoped _root_.DirichletCharacter
+
+theorem canonical_bound
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) {s : ℂ}
+    (hs : ((777 - Real.sqrt 1081) / 852 : ℝ) < s.re) (hpole : ¬ (χ = 1 ∧ s = 1)) :
+    _root_.DirichletCharacter.LFunction χ s ≠ 0 := by
+  sorry
+
+theorem canonical_bound_le :
+    (((777 - Real.sqrt 1081) / 852) : ℝ) ≤ (2804966284017490358030969257914123810640482798488248385236764587735806455694206308975383836842958115341512355256943573632654341 / 3211614609922119834694179379888743028634953588197852962423516288191911449231164741438582626063161096341458934143644085157872271 : ℝ) := by
+  sorry
+
+end QRH
+
+# Solution.lean (sha256 7fc4ffd78289d456166a7b0f46ffdb5d2c9c5305952db620f3864bf9dc99f737, matches)
+import Candidate.Main
+
+
+namespace QRH
+open scoped _root_.DirichletCharacter
+
+theorem canonical_bound
+    {q : ℕ} [NeZero q] (χ : DirichletCharacter ℂ q) {s : ℂ}
+    (hs : ((777 - Real.sqrt 1081) / 852 : ℝ) < s.re) (hpole : ¬ (χ = 1 ∧ s = 1)) :
+    _root_.DirichletCharacter.LFunction χ s ≠ 0 := by
+  exact Candidate.bound χ hs hpole
+
+theorem canonical_bound_le :
+    (((777 - Real.sqrt 1081) / 852) : ℝ) ≤ (2804966284017490358030969257914123810640482798488248385236764587735806455694206308975383836842958115341512355256943573632654341 / 3211614609922119834694179379888743028634953588197852962423516288191911449231164741438582626063161096341458934143644085157872271 : ℝ) := by
+  exact Candidate.bound_le
+
+end QRH

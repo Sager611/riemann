@@ -1,0 +1,19 @@
+2026-10-13T13:35:37.3847258Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.10/x64
+2026-10-13T13:35:37.3847507Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.10/x64
+2026-10-13T13:35:37.3847752Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.10/x64
+2026-10-13T13:35:37.3848053Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.10/x64/lib
+2026-10-13T13:35:37.3848318Z   PALOMAR_BWRAP: /home/runner/work/_temp/bwrap-bin/bwrap
+2026-10-13T13:35:37.3849143Z   PALOMAR_INPUTS: {
+  "repository": "AxiomMath/DedekindZetaZeroFree",
+  "commit": "09afbb4ce6570c1615d58509dc197fc9f0956b7d",
+  "request_id": "ikz6pd89w5zq",
+  "mode": "full",
+  "options": "{\"authorization_relationship\":\"I am a responsible author or maintainer\",\"comparator_config_path\":\"comparator.json\",\"existing_id\":\"PALOMAR-2026-10-13-000010\"}"
+}
+2026-10-13T13:35:37.3853111Z   PALOMAR_STEPS: {
+991:2026-10-13T13:35:37.3822152Z ##[group]Run python3 pipeline/scripts/workflow_report.py gate --report "$RUNNER_TEMP/mechanical-report.json"
+992:2026-10-13T13:35:37.3823158Z [36;1mpython3 pipeline/scripts/workflow_report.py gate --report "$RUNNER_TEMP/mechanical-report.json"[0m
+# gh api repos/PalomarRegistry/PalomarSubmission/actions/runs/38381813019/jobs (read 11 Nov 2026):
+#   job 115243838623 profile success 2026-10-13T10:12:56Z..10:13:03Z
+#   job 115243902581 verify  success 2026-10-13T10:13:18Z..13:35:49Z (steps prepare, toolchain, bwrap, execute: success; then the report gate above)
+#   artifact 11817004036 mechanical-report-ikz6pd89w5zq (12043 bytes, digest 031f1d13...), expires 2027-01-11

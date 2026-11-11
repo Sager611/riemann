@@ -1,0 +1,19 @@
+19 parens/whitespace only (set-literal {X}->{(X)})
+3 congr -> all_goals
+1 ULift.ext
+NumberTheory/DirichletL/Descent/CanonicalReopeningHeight.lean congr -> all_goals +1 -2
+    + ['  all_goals (ext x; simp only [sourceLogProfile_apply,frequencyTwist_apply,normTwistedSource,Real.log_exp])']
+    - ['  ext x', '  simp only [sourceLogProfile_apply,frequencyTwist_apply,normTwistedSource,Real.log_exp]']
+NumberTheory/DirichletL/Moments/CommonAllocationSum.lean congr -> all_goals +1 -2
+    + ['  all_goals (ext v; simp only [sourceFiber,Finset.mem_filter,funext_iff])']
+    - ['  ext v', '  simp only [sourceFiber,Finset.mem_filter,funext_iff]']
+NumberTheory/DirichletL/Moments/FirstSectors.lean congr -> all_goals +1 -2
+    + ['    all_goals (ext q; simp only [pairSector,Finset.mem_filter,Prod.mk.injEq])']
+    - ['    ext q', '    simp only [pairSector,Finset.mem_filter,Prod.mk.injEq]']
+NumberTheory/DirichletL/Reflection/SectorData.lean ULift.ext +1 -1
+    + ['      (fun x y hxy => hF (fun h => hxy (ULift.ext h))) (fun x => hNF x.down)']
+    - ['      (fun x y hxy => hF (fun h => hxy (ULift.ext x y h))) (fun x => hNF x.down)']
+ours 2924 tracker 2926 common 2924
+only tracker: ['NumberTheory/DirichletL/Hecke/ConditionalNonvanishing.lean', 'NumberTheory/DirichletL/Hecke/Nonvanishing.lean']
+content differs after normalizing headers/imports: 23
+   NumberTheory/DirichletL/CubicSieve/FrequencyBlocks.lean

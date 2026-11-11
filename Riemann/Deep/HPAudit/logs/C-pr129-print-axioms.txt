@@ -1,0 +1,10 @@
+# PR 129 (run 42995393841) artifact run/logs: 1629 per-module compile logs
+compile-Candidate.Main.log:
+'Candidate.bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Candidate.bound_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+
+logs mentioning sorry:        0
+logs with #print axioms output:      323
+distinct #print axioms results (count):
+ 485 depends on axioms: [propext, Classical.choice, Quot.sound]
+   1 does not depend on any axioms

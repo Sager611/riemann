@@ -1,0 +1,20 @@
+# Red-flag scan (comments and strings stripped; scanner tools/scan.py, regexes in its PATTERNS table)
+
+A: Riemann/Deep/QRH (our port): files 2944 lines 501906; nonzero: decide_kernel_cfg 4, import_Lean 1, instance_prio 2, local_riemannZeta_def 1
+B: positive-gap-contact-return + closest-fraction-contact (own dirs): files 473 lines 56359; nonzero: decide_kernel_cfg 46, instance_prio 24
+C: exact-contact-point + 4 direct deps (openai-baseline, hailey-collet, arvi-repeated-marks, arvi-selected-leaf): files 7570 lines 1113279; nonzero: decide_kernel_cfg 682, implemented_by 5, unsafe 5, opaque 5, partial 6, addDecl 1, run_cmd 5, elab 36, import_Lean 4, instance_prio 28, local_riemannZeta_def 1
+B/C: 3 transitive deps (sil-density-split, density-split-fine-chain, arvi-density): files 961 lines 260868; nonzero: decide_kernel_cfg 774, instance_prio 35
+D: AxiomMath/DedekindZetaZeroFree @09afbb4 (all 5528 files incl. vendor): files 5528 lines 1294970; nonzero: sorry 2, opaque 7, run_cmd 6, instance_prio 10
+
+Verdicts on nonzero hits:
+- sorry 2 (D): both in Challenge/DedekindZetaChallenge.lean (the statement template), as intended; none in the library or Solution.
+- decide_kernel_cfg (A 4, B 46, C 682, deps 774): "decide +kernel", a kernel-evaluated decision; no extra axiom (unlike native_decide, absent everywhere); replayed by nanoda/con-ron in CI.
+- implemented_by/unsafe/opaque/partial (C, hailey-collet Cycle63/Certificate/*.lean): MetaM tactic helpers (evalExpr) that build certificate proof terms; the proof terms are kernel-checked; cannot affect the kernel.
+- addDecl 1 (C, hailey-collet GeometryErrorJointNormalizedTransport.lean:140): custom theorem command; Lean.addDecl runs the kernel; benign.
+- run_cmd (C 5: dependency audits that walk the constant graph rejecting sorryAx; D 6: realize equation/congr lemmas via getEqnsFor?/mkCongrSimpForConst?/executeReservedNameAction): benign.
+- opaque 7 (D, vendor LocalGlobalArtinCompatibility): Prop-valued opaque declarations with ":= by" proofs; the kernel type-checks the value; sound.
+- import_Lean (A 1 Lean.Elab.Tactic.Omega; C 4): metaprogramming imports only.
+- instance_prio: all "local instance (priority := ...)" DecidableEq/Fintype helpers, or prio-100 instances on structured types; none on R, C or a bare type variable (insts scan).
+- local_riemannZeta_def 1 (A and C, same file Hecke/IdealBridge.lean): "def LFunction (chi : Character)" in the OAI Hecke namespace (Q(sqrt -3) Hecke L); not riemannZeta, in no statement we use.
+- No "def riemannZeta" anywhere in Riemann/ or the tracker sources: R007 and the OAI port resolve riemannZeta to Mathlib.
+- D shadowing scan (namespace-aware collector tools/decls.py, 57131 declarations): only DedekindZetaZeroFree.re (a RingEquiv helper); s.re is field notation on Complex, unaffected. No global instance on C/R or on a bare type variable among 1415 global instances (tools/insts.py, insts2.py).
