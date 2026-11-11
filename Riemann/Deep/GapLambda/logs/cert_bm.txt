@@ -1,0 +1,26 @@
+Bui-Milinovich criterion (1410.3635v3): Lambda > kappa if h1 = c0/(kappa^2 c1) > 1 (l.327-330); r = 1.
+BM P (monomial, l.333) = 1 -5.8 6.4
+[BM l.333 numerics, theta=1/4] theta=1/4 kappa=159/50 v=63/50 deg P=2 N=30 nt=20 rho=15.5
+   ||P||_inf <= 8/5 ; Taylor eps = [2.56e-22 +/- 1.39e-25] ; t-Gauss remainder (c0, c1 before /(k pi)^2) <= [2.95e-31 +/- 1.69e-34], [1.51e-29 +/- 2.28e-32]
+   c0 = [1.29667198837e-5 +/- 1.56e-17] + [+/- 6.70e-24]j
+   c1 = [1.27947293830e-6 +/- 7.11e-19] + [+/- 9.59e-24]j
+   h1 = c0/(kappa^2 c1) in [1.00217781433 +/- 3.18e-12] ; H = c0 - kappa^2 c1 in [2.8177742e-8 +/- 4.44e-16]
+   checks: Im c0, Im c1 contain 0: True ; c0, c1 > 0: True ; H > 0: True   (109s, peak RSS 31 MB)
+   reproduces BM l.337 (h1 > 1.0002): True
+[BM P, theta=2499/10000] theta=2499/10000 kappa=159/50 v=63/50 deg P=2 N=30 nt=20 rho=15.5
+   ||P||_inf <= 8/5 ; Taylor eps = [2.53e-22 +/- 2.93e-25] ; t-Gauss remainder (c0, c1 before /(k pi)^2) <= [2.95e-31 +/- 1.69e-34], [1.51e-29 +/- 2.36e-32]
+   c0 = [1.29708925185e-5 +/- 4.81e-17] + [+/- 6.62e-24]j
+   c1 = [1.28009164547e-6 +/- 4.96e-19] + [+/- 9.47e-24]j
+   h1 = c0/(kappa^2 c1) in [1.00201577199 +/- 3.73e-12] ; H = c0 - kappa^2 c1 in [2.6093763e-8 +/- 2.04e-16]
+   checks: Im c0, Im c1 contain 0: True ; c0, c1 > 0: True ; H > 0: True   (68s, peak RSS 31 MB)
+record P: Legendre coefficients p_m (exact decimals) = 1 2.295083 5.711135 2.475600 13.800476 -2.126714 25.669320 -11.008222 38.228923 -19.964301 45.417070 -22.792755 40.630752 -14.895337 21.791921
+record P: monomial coefficients (exact) = ['258266243/1000000', '-14106897609/500000', '472554120747/500000', '-779448323911/50000', '15184924500669/100000', '-47954487569877/50000', '259088203012947/62500', '-1581882509211147/125000', '2773915399789677/100000', '-17532141582527/400', '1237174041706889/25000', '-4866584139757977/125000', '2533587473751789/125000', '-7843056109903/1250', '4371088889943/5000']
+[RECORD] theta=2499/10000 kappa=4081/1250 v=131063/100000 deg P=14 N=30 nt=20 rho=[15.1 +/- 3e-6]
+   ||P||_inf <= 258266243/1000000 ; Taylor eps = [5.71e-22 +/- 3.90e-25] ; t-Gauss remainder (c0, c1 before /(k pi)^2) <= [2.19e-26 +/- 4.37e-29], [1.10e-24 +/- 2.40e-27]
+   c0 = [4.31834948711e-5 +/- 4.62e-17] + [+/- 3.69e-19]j
+   c1 = [4.05116472346e-6 +/- 5.42e-18] + [+/- 5.64e-19]j
+   h1 = c0/(kappa^2 c1) in [1.00005692466 +/- 2.46e-12] ; H = c0 - kappa^2 c1 in [2.4580659e-9 +/- 4.48e-17]
+   checks: Im c0, Im c1 contain 0: True ; c0, c1 > 0: True ; H > 0: True   (86s, peak RSS 31 MB)
+theta = 2499/10000 < 1/4 (BBLR range, l.246, l.259): True
+ALL CHECKS PASS: Lambda > 3.2648 unconditionally (critical zeros).
+exit=0

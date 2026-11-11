@@ -1,0 +1,6 @@
+[try] theta=2499/10000 kappa=13/4 v=326321/250000 deg P=8 N=30 nt=14 rho=[10.6 +/- 3e-6]
+   ||P||_inf <= 6987763001/7000000 ; Taylor eps = [4.96e-22 +/- 3.21e-25] ; t-Gauss remainder (c0, c1 before /(k pi)^2) <= [7.62e-12 +/- 3.45e-15], [2.72e-10 +/- 4.97e-13]
+   c0 = [8.71076772e-5 +/- 9.12e-14] + [+/- 7.32e-14]j
+   c1 = [8.21239e-6 +/- 4.54e-12] + [+/- 2.62e-12]j
+   h1 = c0/(kappa^2 c1) in [1.004200 +/- 7.21e-7] ; H = c0 - kappa^2 c1 in [3.643e-7 +/- 4.02e-11]
+   checks: Im c0, Im c1 contain 0: True ; c0, c1 > 0: True ; H > 0: True   (23s, peak RSS 31 MB)

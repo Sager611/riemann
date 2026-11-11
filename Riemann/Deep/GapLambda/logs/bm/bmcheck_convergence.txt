@@ -1,0 +1,7 @@
+n= 8 kappa=3.25 deg8: max_P h1 = 1.00579982 (v=1.30617) | fixed P: h1 = 1.00579908 (v=1.30608) imag 5e-17 (1s)
+n=10 kappa=3.25 deg8: max_P h1 = 1.00726899 (v=1.30725) | fixed P: h1 = 0.89577751 (v=1.28356) imag 4e-17 (6s)
+n=12 kappa=3.25 deg8: max_P h1 = 1.00437312 (v=1.30539) | fixed P: h1 = 0.85899988 (v=1.27249) imag 5e-17 (29s)
+n=14 kappa=3.25 deg8: max_P h1 = 1.00437319 (v=1.30539) | fixed P: h1 = 0.85900160 (v=1.27249) imag 5e-17 (100s)
+theta=0.2499 n=10 kappa=3.25: max_P h1 = 1.00709437 (v=1.30714)
+theta=0.2490 n=10 kappa=3.25: max_P h1 = 1.00552243 (v=1.30621)
+peak 54 MB

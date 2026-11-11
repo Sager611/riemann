@@ -1,0 +1,6 @@
+[BM P quick] theta=1/4 kappa=159/50 v=63/50 deg P=2 N=30 nt=14 rho=[10.8 +/- 3e-6]
+   ||P||_inf <= 19/10 ; Taylor eps = [2.56e-22 +/- 1.39e-25] ; t-Gauss remainder (c0, c1 before /(k pi)^2) <= [1.52e-17 +/- 2.84e-20], [5.43e-16 +/- 1.15e-19]
+   c0 = [1.29667198837e-5 +/- 1.57e-17] + [+/- 1.53e-19]j
+   c1 = [1.27947293830e-6 +/- 6.16e-18] + [+/- 5.45e-18]j
+   h1 = c0/(kappa^2 c1) in [1.00217781433 +/- 7.46e-12] ; H = c0 - kappa^2 c1 in [2.8177742e-8 +/- 4.99e-16]
+   checks: Im c0, Im c1 contain 0: True ; c0, c1 > 0: True ; H > 0: True   (21s, peak RSS 30 MB)
