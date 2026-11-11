@@ -1,0 +1,13 @@
+RH strip: Lam_L [1.9714 +/- 2.86e-5] a_L [0.29143 +/- 1.43e-6] log C_L [10.048 +/- 3.73e-4] J_L0 [19.596 +/- 2.42e-4] log RHP [13.988 +/- 3.87e-4] secs 0.1
+theta 0.9409  log10 c = 5.0899  (float plan 5.0879)  X0 1e255.60  X1 1e258.25  ranges 53  final ML092g8_e10_Bp  [30s]
+theta 0.9382  log10 c = 5.7782  (float plan 5.7780)  X0 1e255.60  X1 1e258.95  ranges 67  final ML092g8_e10_Bp  [68s]
+theta 0.9350  log10 c = 6.5966  (float plan 6.5959)  X0 1e255.60  X1 1e260.50  ranges 98  final ML092g8_e10_Bp  [104s]
+theta 0.9300  log10 c = 7.8745  (float plan 7.8740)  X0 1e255.60  X1 1e273.90  ranges 366  final ML092g8_e10_Bp  [138s]
+theta 0.9277  log10 c = 8.5145  (float plan 8.5136)  X0 1e256.30  X1 1e326.15  ranges 1397  final ML092g8_e05_Bp  [169s]
+theta 0.9250  log10 c = 9.5366  (float plan 9.5364)  X0 1e260.75  X1 1e443.05  ranges 3646  final ML091g12_e03_Bp  [196s]
+theta 0.9200  log10 c = 11.7513  (float plan 11.7509)  X0 1e272.10  X1 1e443.35  ranges 3425  final ML091g12_e03_Bp  [220s]
+theta 0.9150  log10 c = 16.0170  (float plan 16.0147)  X0 1e306.25  X1 1e1175.70  ranges 17389  final S090g20_e01_Bp  [243s]
+theta 0.9100  log10 c = 22.4728  (float plan 22.4714)  X0 1e361.00  X1 1e1964.30  ranges 32066  final S090g40_e005_Bp  [269s]
+theta 0.9050  log10 c = 63.3579  (float plan 63.3565)  X0 1e772.35  X1 1e13162.00  ranges 54715  final S089g400_e005_Bp  [324s]
+theta 0.9000  log10 c = 207.3139  (float plan 207.3119)  X0 1e2173.30  X1 1e84725.00  ranges 98259  final S089g3000_e005_Bp  [372s]
+theta 0.8992  log10 c = 275.0934  (float plan 275.0914)  X0 1e2828.45  X1 1e84725.00  ranges 85156  final S089g3000_e005_Bp  [424s]

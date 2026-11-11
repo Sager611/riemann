@@ -17,3 +17,5 @@
 **RH relevance:** N10 (explicit prime-error bounds): RH ⟺ M(x) = O(x^{1/2+ε}); this is the first explicit exponent below 1 for M, from the proved half-plane alone.
 
 **Files.** [Riemann/Deep/Mertens78/](../Riemann/Deep/Mertens78/) (REPORT.md, PROOF.md, cert.py, run.py, batch.py, chk.py, all.json, c_*.json, results.json, verify.log).
+
+**Later (11 Nov 2026).** |M(x)| ≤ 9.77·10^4 x^0.9382 and 1.54·10^4 x^0.9409 for all x ≥ 1 (mertensch: Chirre–Helfgott 2511.14736 below 10^242.85, a hybrid contour with RH to 3·10^12, these certificates moved to the Lean-checked B′); reviewer: correct, routine (a record, RECORDS.md); certificate rerun by the orchestrator identical; [MertensCH](../Riemann/Deep/MertensCH/REPORT.md).

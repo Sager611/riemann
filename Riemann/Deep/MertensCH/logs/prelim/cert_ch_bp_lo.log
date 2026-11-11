@@ -1,0 +1,5 @@
+RH strip: Lam_L [1.9714 +/- 2.86e-5] a_L [0.29143 +/- 1.43e-6] log C_L [10.048 +/- 3.73e-4] J_L0 [19.596 +/- 2.42e-4] log RHP [20.347 +/- 1.17e-4] secs 0.3
+theta 0.9050  log10 c = 63.3201  (float plan 63.3183)  X0 1e771.95  X1 1e13155.00  ranges 54716  final S089g400_e005_Bp  [111s]
+theta 0.9024  log10 c = 97.5198  (float plan 97.5189)  X0 1e1101.80  X1 1e13155.00  ranges 48119  final S089g400_e005_Bp  [188s]
+theta 0.9000  log10 c = 207.1875  (float plan 207.1870)  X0 1e2172.05  X1 1e84673.00  ranges 98232  final S089g3000_e005_Bp  [258s]
+theta 0.8992  log10 c = 274.9258  (float plan 274.9254)  X0 1e2826.80  X1 1e84673.00  ranges 85137  final S089g3000_e005_Bp  [313s]

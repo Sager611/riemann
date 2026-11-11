@@ -1,0 +1,31 @@
+RH strip: Lam_L [1.9714 +/- 2.86e-5] a_L [0.29143 +/- 1.43e-6] log C_L [10.048 +/- 3.73e-4] J_L0 [19.596 +/- 2.42e-4] log RHP [20.347 +/- 1.17e-4] secs 0.2
+/Users/adriansager/playground/riemann/.scratch/mertensch/cert_ch.py:114: RuntimeWarning: divide by zero encountered in log
+  lq = (s + a*(1 - th) - th)*lx + s*lr + a*np.log(2*np.exp(-lch) + np.exp((th - 1)*lx))
+theta 0.9409  log10 c = 4.1875  (float plan 4.1849)  X0 1e240.35  X1 1e327.20  ranges 1737  final ML092g8_e05_Bp  [34s]
+theta 0.9400  log10 c = 4.4533  (float plan 4.4519)  X0 1e241.15  X1 1e329.20  ranges 1761  final ML092g8_e05_Bp  [66s]
+theta 0.9382  log10 c = 4.9899  (float plan 4.9895)  X0 1e242.85  X1 1e333.80  ranges 1819  final ML092g8_e05_Bp  [97s]
+theta 0.9370  log10 c = 5.3522  (float plan 5.3512)  X0 1e243.95  X1 1e337.40  ranges 1869  final ML092g8_e05_Bp  [129s]
+theta 0.9350  log10 c = 5.9614  (float plan 5.9612)  X0 1e245.85  X1 1e344.80  ranges 1979  final ML092g8_e05_Bp  [163s]
+theta 0.9325  log10 c = 6.7419  (float plan 6.7413)  X0 1e248.30  X1 1e357.85  ranges 2191  final ML092g8_e05_Bp  [195s]
+theta 0.9300  log10 c = 7.5539  (float plan 7.5536)  X0 1e251.05  X1 1e379.70  ranges 2573  final ML092g8_e05_Bp  [228s]
+theta 0.9296  log10 c = 7.6884  (float plan 7.6883)  X0 1e251.50  X1 1e384.80  ranges 2666  final ML092g8_e05_Bp  [268s]
+theta 0.9277  log10 c = 8.3617  (float plan 8.3603)  X0 1e254.20  X1 1e425.05  ranges 3417  final ML092g8_e05_Bp  [306s]
+theta 0.9250  log10 c = 9.5105  (float plan 9.5101)  X0 1e260.40  X1 1e445.20  ranges 3696  final ML091g12_e03_Bp  [335s]
+theta 0.9200  log10 c = 11.7259  (float plan 11.7251)  X0 1e271.80  X1 1e450.15  ranges 3567  final ML091g12_e03_Bp  [363s]
+theta 0.9192  log10 c = 12.0828  (float plan 12.0795)  X0 1e273.50  X1 1e454.20  ranges 3614  final ML091g12_e03_Bp  [392s]
+theta 0.9150  log10 c = 16.0043  (float plan 16.0031)  X0 1e306.15  X1 1e1175.40  ranges 17385  final S090g20_e01_Bp  [418s]
+theta 0.9121  log10 c = 19.4133  (float plan 19.4117)  X0 1e334.80  X1 1e1175.40  ranges 16812  final S090g20_e01_Bp  [444s]
+theta 0.9100  log10 c = 22.4579  (float plan 22.4578)  X0 1e360.85  X1 1e1963.20  ranges 32047  final S090g40_e005_Bp  [468s]
+theta 0.9092  log10 c = 24.0294  (float plan 24.0284)  X0 1e374.95  X1 1e1963.20  ranges 31765  final S090g40_e005_Bp  [492s]
+theta 0.9050  log10 c = 102.8344  (float plan 102.8339)  X0 1e1187.90  X1 1e3000.00  ranges 36242  final S089g400_e005  [518s]
+theta 0.9024  log10 c = 110.6345  (float plan 110.6339)  X0 1e1236.20  X1 1e3000.00  ranges 35276  final S089g400_e005  [544s]
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/.scratch/mertensch/cert_ch.py", line 235, in <module>
+    main()
+  File "/Users/adriansager/playground/riemann/.scratch/mertensch/cert_ch.py", line 75, in main
+    res = certify(th, plan, certs, RHP)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/.scratch/mertensch/cert_ch.py", line 230, in certify
+    for q in [cCH, cCH1, rmax, cfin]: assert C >= q.upper(), "rounding check"
+                                             ^^^^^^^^^^^^^^
+AssertionError: rounding check

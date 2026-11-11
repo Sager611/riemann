@@ -1,0 +1,23 @@
+RH strip: Lam_L [1.9714 +/- 2.86e-5] a_L [0.29143 +/- 1.43e-6] log C_L [10.048 +/- 3.73e-4] J_L0 [19.596 +/- 2.42e-4] log RHP [20.347 +/- 1.17e-4] secs 0.0
+/Users/adriansager/playground/riemann/.scratch/mertensch/cert_ch.py:116: RuntimeWarning: divide by zero encountered in log
+  lq = (s + a*(1 - th) - th)*lx + s*lr + a*np.log(2*np.exp(-lch) + np.exp((th - 1)*lx))
+theta 0.9409  log10 c = 4.3522  (float plan 4.3519)  X0 1e243.15  X1 1e333.50  ranges 1807  final ML092g8_e05  [19s]
+theta 0.9400  log10 c = 4.6232  (float plan 4.6230)  X0 1e244.05  X1 1e335.85  ranges 1836  final ML092g8_e05  [34s]
+theta 0.9382  log10 c = 5.1703  (float plan 5.1697)  X0 1e245.75  X1 1e341.30  ranges 1911  final ML092g8_e05  [50s]
+theta 0.9370  log10 c = 5.5391  (float plan 5.5382)  X0 1e246.95  X1 1e345.65  ranges 1974  final ML092g8_e05  [63s]
+theta 0.9350  log10 c = 6.1644  (float plan 6.1614)  X0 1e248.90  X1 1e354.90  ranges 2120  final ML092g8_e05  [79s]
+theta 0.9325  log10 c = 6.9643  (float plan 6.9641)  X0 1e251.60  X1 1e372.30  ranges 2414  final ML092g8_e05  [96s]
+theta 0.9300  log10 c = 7.8149  (float plan 7.8147)  X0 1e254.75  X1 1e406.05  ranges 3026  final ML092g8_e05  [111s]
+theta 0.9296  log10 c = 7.9590  (float plan 7.9589)  X0 1e255.35  X1 1e415.30  ranges 3199  final ML092g8_e05  [126s]
+theta 0.9277  log10 c = 8.7202  (float plan 8.7194)  X0 1e259.15  X1 1e436.00  ranges 3537  final ML091g12_e03  [145s]
+theta 0.9250  log10 c = 9.8899  (float plan 9.8895)  X0 1e265.45  X1 1e437.20  ranges 3435  final ML091g12_e03  [160s]
+theta 0.9200  log10 c = 12.0569  (float plan 12.0564)  X0 1e275.95  X1 1e459.60  ranges 3673  final ML091g12_e03  [175s]
+theta 0.9192  log10 c = 12.4200  (float plan 12.4191)  X0 1e277.70  X1 1e587.20  ranges 6190  final ML091g12_e03  [190s]
+theta 0.9150  log10 c = 17.0969  (float plan 17.0958)  X0 1e319.00  X1 1e1118.40  ranges 15988  final S090g20_e01  [205s]
+theta 0.9121  log10 c = 20.3404  (float plan 20.3391)  X0 1e345.35  X1 1e1118.40  ranges 15461  final S090g20_e01  [220s]
+theta 0.9100  log10 c = 24.3324  (float plan 24.3320)  X0 1e381.65  X1 1e1929.15  ranges 30950  final S090g40_e005  [234s]
+theta 0.9092  log10 c = 25.8756  (float plan 25.8754)  X0 1e395.30  X1 1e1929.15  ranges 30677  final S090g40_e005  [249s]
+theta 0.9050  log10 c = 102.8344  (float plan 102.8339)  X0 1e1187.90  X1 1e3000.00  ranges 36242  final S089g400_e005  [263s]
+theta 0.9024  log10 c = 110.6345  (float plan 110.6339)  X0 1e1236.20  X1 1e3000.00  ranges 35276  final S089g400_e005  [277s]
+theta 0.9000  log10 c = 383.9768  (float plan 322.7890)  X0 1e3327.14  X1 1e3327.14  ranges 0  final S089g3000_e005  [287s]
+theta 0.8992  log10 c = 386.8814  (float plan 323.0160)  X0 1e3303.93  X1 1e3303.93  ranges 0  final S089g3000_e005  [299s]
