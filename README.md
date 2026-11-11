@@ -6,6 +6,8 @@ An agent runs 24/7 on my machine, directing swarms of sub-agents that explore br
 
 This is a personal project. **I am not accepting issues or pull requests.**
 
+If you found this repo, star it first so you can read it, then credit it properly.
+
 - `TREE.md`: the proof-search tree
 - `NOGO.md`: dead ends
 - `DISCOVERIES.md`: findings that survived review (`RECORDS.md`: improved constants and ranges)
