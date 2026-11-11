@@ -1,0 +1,18 @@
+# lamz2audit reviewer verdicts (verdict-only, inline evidence, 11 Nov 2026 ~18:12 UTC)
+
+== R1: F1 (2610.26841 quote of Lemma 3.2) ==
+(a) SOUND — On the interval's interior, Phi''=0; evenness makes Phi constant, and normalization gives C(f_a)=a+cot(sqrt2 a)/sqrt2.
+(b) SOUND — The displayed derivative is strictly positive throughout 0<d<1/2; hence D(d)>d, with the stated limiting ratio.
+(c) SOUND — Shrinking smooth transitions outside the fixed core gives the required normalized L1,L2 convergence; continuity preserves the strict gap. This refutes the universal cutoff claim, not the existential lemma.
+(d) FLAW as written; harmlessness survives — 2 max f_0^2 = csc^2(1/sqrt2) ≈ 2.3695, not 1.37. The sharper coefficient 2 f_0(1/2)^2 = cot^2(1/sqrt2) ≈ 1.3695 follows using the boundary-layer supremum instead. Also ||g||_1 = O(eps) bounds the kernel term below by -O(eps^2), completing the two-sided O(eps) estimate.
+Overall: INCOMPLETE as written — correct (d)'s maximum/coefficient and supply that lower bound; the cutoff counterexample is valid, and the stated downstream O(eps) use remains valid.
+-> Applied in REPORT F1: bound stated as ≤ 2ε f_0(1/2-ε)^2 = cot^2(1/√2) ε + O(ε^2) (boundary layer, |g| ≤ f_0 there; core g = O(ε)) and ≥ -(∫|g|)^2 = -O(ε^2).
+
+== R2: Prop 2.1 / Lemma 3.2 / Thm 1.1 chain (summary) ==
+(1) SOUND — conjugation reindexing and tensor Bessel give the identities; reality applies to f_x, g_z, h_z, psi_j, not generally to nonreal f_z.
+(2) SOUND — orthogonal projections give the three range bounds; summing over the full basis gives trace |Z|.
+(3) SOUND — writing the range sums as A,B,C, the claimed bound follows from A>=2(r+k), C<=0, and A+B+C=|Z|.
+(4) FLAW literally — the quoted double sum needs 0<gamma,gamma'<=T; an unrestricted all-zero sum diverges. With that cutoff, weight cancellation and separate treatment of Q'' are valid.
+(5) SOUND conditional on corrected (4) — conjugation and multiplicities match; normalized smooth-square approximations to f_0, taking T->inf first, yield the stated constant.
+Overall: INCOMPLETE literally; after correcting the cutoff and reality assertion, the argument is sound conditional on the quoted BGST lemma.
+-> Both literal flags are slips of the auditor's inline summary, not of the paper: TeX l.384 restricts property (2.x) to f_{x_l}, g_{z_l}, h_{z_l}; Lemma 3.1/3.2 (l.529-535, l.583-626) sum over 0<γ,γ'≤T.

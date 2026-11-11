@@ -51,3 +51,5 @@ Verdict: correct as a reduction; it rests on Bombieri–Hejhal's Theorem B and L
 | count (l.961–964) | ≥ k_ℓ − 2 − #(H_{j_ℓ} ∩ I_ℓ); summing, δ = M^{−1/3}, M large ✓ |
 | Thm 1.4 (l.1018–1027) | dyadic summation; |H_j| ≤ (1 − δ_j + o(1))(T/2π) log T; result δ_1 + δ_2 − 1 ✓ |
 Inputs for δ_j: Lem:GaPa (Glasnik Mat., refereed), Lem:ConstructionKernelDirichlet (from La's preprint), and for the off-line term our hinge lemma for L(s,χ) from Wu's Proposition 3.1 (DERIVATION §8.2) instead of Lem:AnalogueConreyL.
+
+F1 (added by the orchestrator from LamzAudit2, 11 Nov 2026): 2610.26841 l.622–701 quotes Lamzouri's Lemma 3.2 as |C_{η_ε} − C_MT| < ε for any admissible cutoff ψ_ε; this is false for steep cutoffs, but only an O(ε) bound is used there and here, so nothing breaks ([LamzAudit2](../LamzAudit2/REPORT.md) §3, cutoff.py).

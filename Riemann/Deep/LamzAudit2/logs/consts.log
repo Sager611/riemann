@@ -1,0 +1,28 @@
+== 1. Closed forms (Arb, 256 bits)
+C_MT = [1.32749929632058835426562020920 +/- 3.30e-30]
+C_0 = 2 - C_MT = [0.672500703679411645734379790803 +/- 2.96e-31]  check 2-C_MT-C_0 contains 0: True
+C_1 = (C_0+1)/2 = [0.836250351839705822867189895402 +/- 3.53e-31]
+C_2 = (1+2sqrt2+2C_0)/(3+2sqrt2) = [0.887620008173354339866075859448 +/- 4.92e-33]
+C_2 via (5+2sqrt2-2C_MT)/(3+2sqrt2) = [0.887620008173354339866075859448 +/- 4.92e-33]
+(2+C_0)/3 (BGST25 Thm3(iii) b->0) = [0.89083356789313721524 +/- 4.80e-21]
+paper digits v2 1.3274992963205 : C_MT in [digits, digits+1e-13) ? True
+paper digits v1 1.3274992963206 : C_MT in [digits, digits+1e-13) ? False
+abstract/thm: 67.25%, 83.62%, 88.76%: C_0>0.6725 True  C_1>0.8362 True  C_2>0.8876 True
+== 2. C(f_0) = int f0^2 + iint |u-v| f0 f0, three routes
+int f_0 = 1 (closed form): [1.000000000000000000000000 +/- 1e-29]
+f_0 > 0 on I: cos(sqrt2/2) = [0.760244597075630 +/- 1.52e-16] > 0; sqrt2/2 < pi/2: True
+(a) 1/2 + f_0(1/2) = [1.32749929632058835426562020920 +/- 3.30e-30]  equals C_MT: True
+(b) int f0^2 = [1.0061271908658286226 +/- 4.48e-20]  iint|u-v|f0f0 = [0.32137210545475973162 +/- 8.23e-22]  sum = [1.327499296320588354265620 +/- 2.10e-25]  - C_MT contains 0: True
+(c) Q_0(0) + 2 int alpha Q_0 = 1.327499296320588354266  diff to C_MT: 0.0
+Q_0(0) = int f0^2 check: 1.0061271908658286226  vs [1.0061271908658286226 +/- 4.48e-20]
+== 3. The quote of Lemma 3.2 in 2610.26841 (l.622-700): delta = eps, any admissible psi_eps, |C - C_MT| < eps ?
+Indicator cutoff f = 1_{|x|<=a} cos(sqrt2 x)/norm, a = 1/2 - d (L^2-limit of admissible smooth psi_d):
+  E-L gives C = a + cot(sqrt2 a)/sqrt2;  D(d) := C - C_MT;  D(d) - d has derivative -2 + csc^2(sqrt2(1/2-d)) >= -2 + csc^2(1/sqrt2) > 0, value 0 at d=0.
+  csc^2(1/sqrt2) - 2 = [0.36951017082213778205 +/- 2.05e-21]  > 0: True
+  d = 0.1  D(d) = [0.186233371393 +/- 3.46e-14]  D/d = [1.8623337 +/- 1.40e-8]  D > d: True
+  d = 0.05  D(d) = [0.0793990039408 +/- 2.17e-14]  D/d = [1.5879801 +/- 2.12e-8]  D > d: True
+  d = 0.01  D(d) = [0.0140954880842 +/- 4.27e-15]  D/d = [1.4095488 +/- 8.43e-9]  D > d: True
+  d = 0.001  D(d) = [0.00137343979263 +/- 2.07e-15]  D/d = [1.3734398 +/- 7.37e-9]  D > d: True
+  d = 0.000001  D(d) = [1.36951409237e-6 +/- 3.80e-18]  D/d = [1.3695141 +/- 7.64e-9]  D > d: True
+  limit D/d -> csc^2(1/sqrt2) - 1 = [1.369510171 +/- 1.78e-10]
+t = 1.7 s

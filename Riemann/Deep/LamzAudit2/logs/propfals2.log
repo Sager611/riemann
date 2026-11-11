@@ -1,0 +1,11 @@
+Kernel: Montgomery-Taylor f_0. Minimise slack (LHS - RHS, unnormalised) by random local search.
+ (2.1) y0=0.02  min slack float 1.289565e-02 | Arb [0.012895647 +/- 4.25e-10] | n_real=3 (mult [np.int64(1), np.int64(1), np.int64(1)]) pairs=1 (mult [np.int64(1)], Im [0.02]) | OK
+ (2.1) y0=0.1   min slack float 2.238460e-01 | Arb [0.22384601 +/- 2.92e-9] | n_real=5 (mult [np.int64(1), np.int64(1), np.int64(1), np.int64(2), np.int64(2)]) pairs=1 (mult [np.int64(1)], Im [0.1]) | OK
+ (2.1) y0=0.3   min slack float 2.498632e+00 | Arb [2.4986317 +/- 3.40e-8] | n_real=2 (mult [np.int64(1), np.int64(1)]) pairs=1 (mult [np.int64(1)], Im [0.3]) | OK
+ (2.2) y0=0.02  min slack float 1.004763e+00 | Arb [1.0047632 +/- 1.34e-8] | n_real=1 (mult [np.int64(1)]) pairs=1 (mult [np.int64(1)], Im [0.02]) | OK
+ (2.2) y0=0.1   min slack float 1.093195e+00 | Arb [1.0931950 +/- 3.87e-8] | n_real=2 (mult [np.int64(1), np.int64(2)]) pairs=1 (mult [np.int64(1)], Im [0.1]) | OK
+ (2.2) y0=0.3   min slack float 2.237742e+00 | Arb [2.2377419 +/- 4.01e-8] | n_real=1 (mult [np.int64(2)]) pairs=1 (mult [np.int64(1)], Im [0.3]) | OK
+ (2.3) y0=0.02  min slack float 9.595973e-03 | Arb [0.0095959727 +/- 4.83e-12] | n_real=3 (mult [np.int64(1), np.int64(1), np.int64(1)]) pairs=1 (mult [np.int64(1)], Im [0.02]) | OK
+ (2.3) y0=0.1   min slack float 1.666108e-01 | Arb [0.16661084 +/- 3.02e-9] | n_real=8 (mult [np.int64(1), np.int64(1), np.int64(1), np.int64(1), np.int64(1), np.int64(1), np.int64(1), np.int64(2)]) pairs=1 (mult [np.int64(1)], Im [0.1]) | OK
+ (2.3) y0=0.3   min slack float 2.539752e+00 | Arb [2.5397516 +/- 3.68e-8] | n_real=2 (mult [np.int64(1), np.int64(1)]) pairs=2 (mult [np.int64(1), np.int64(1)], Im [0.3 0.3]) | OK
+t = 27.8 s

@@ -1,0 +1,20 @@
+sanity C(f0) = 1.327499296320588  C_MT = 1.327499296320588  diff 2.22e-16
+indicator d=0.1: quad C-C_MT = 0.186233371393 closed 0.186233371393
+indicator d=0.01: quad C-C_MT = 0.014095488084 closed 0.014095488084
+smooth admissible psi_d (=1 on |x|<=1/2-d, 0 for |x|>=1/2-d+kap*d, C^inf step S):
+  d=0.09   kap=0.9   A_d=0.902170  C-C_MT=0.08116621  (C-C_MT)/d=0.90185  ok <d
+  d=0.09   kap=0.5   A_d=0.876294  C-C_MT=0.11481550  (C-C_MT)/d=1.27573  VIOLATES <d
+  d=0.09   kap=0.1   A_d=0.850000  C-C_MT=0.15219811  (C-C_MT)/d=1.69109  VIOLATES <d
+  d=0.09   kap=0.02  A_d=0.844692  C-C_MT=0.16016347  (C-C_MT)/d=1.77959  VIOLATES <d
+  d=0.05   kap=0.9   A_d=0.946441  C-C_MT=0.04211012  (C-C_MT)/d=0.84220  ok <d
+  d=0.05   kap=0.5   A_d=0.932472  C-C_MT=0.05809417  (C-C_MT)/d=1.16188  VIOLATES <d
+  d=0.05   kap=0.1   A_d=0.918367  C-C_MT=0.07501532  (C-C_MT)/d=1.50031  VIOLATES <d
+  d=0.05   kap=0.02  A_d=0.915530  C-C_MT=0.07851724  (C-C_MT)/d=1.57034  VIOLATES <d
+  d=0.01   kap=0.9   A_d=0.989451  C-C_MT=0.00787976  (C-C_MT)/d=0.78798  ok <d
+  d=0.01   kap=0.5   A_d=0.986744  C-C_MT=0.01062298  (C-C_MT)/d=1.06230  VIOLATES <d
+  d=0.01   kap=0.1   A_d=0.984030  C-C_MT=0.01339709  (C-C_MT)/d=1.33971  VIOLATES <d
+  d=0.01   kap=0.02  A_d=0.983486  C-C_MT=0.01395565  (C-C_MT)/d=1.39557  VIOLATES <d
+  d=0.003  kap=0.9   A_d=0.996844  C-C_MT=0.00233698  (C-C_MT)/d=0.77899  ok <d
+  d=0.003  kap=0.5   A_d=0.996036  C-C_MT=0.00313843  (C-C_MT)/d=1.04614  VIOLATES <d
+  d=0.003  kap=0.1   A_d=0.995228  C-C_MT=0.00394258  (C-C_MT)/d=1.31419  VIOLATES <d
+  d=0.003  kap=0.02  A_d=0.995066  C-C_MT=0.00410374  (C-C_MT)/d=1.36791  VIOLATES <d
