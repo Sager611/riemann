@@ -1,0 +1,7 @@
+{"c": 16, "N": 520, "prec": 512, "nzeros": 0, "t_build": 5.2, "rss": 67338240}
+{"E1": "2.513813105e-75", "E2": "2.8333459e-67", "E3": "5.8319874e-60", "t_solves": 15.1, "rss": 189644800}
+{"set": "d1_30_69", "del": [1, 30, 69], "add": [], "lam1": "2.051464852e-84", "logratio": 20.92651, "sum4g2_del": 20.54013, "rig_upper": "2.0514649e-84", "zero_balls_certified": true}
+{"set": "d1_10_30_50_69", "del": [1, 10, 30, 50, 69], "add": [], "lam1": "8.166694196e-90", "logratio": 33.36051, "sum4g2_del": 32.32258, "rig_upper": "8.1666942e-90", "zero_balls_certified": true}
+{"set": "d10_30_50", "del": [10, 30, 50], "add": [], "lam1": "9.278121895e-83", "logratio": 17.11482, "sum4g2_del": 17.01422, "rig_upper": "9.2781219e-83", "zero_balls_certified": true}
+{"full_rig_upper": "2.513813105e-75"}
+{"t_singles": 0.0, "t_sets": 1.8, "rss": 191135744, "wall": 22.2}
