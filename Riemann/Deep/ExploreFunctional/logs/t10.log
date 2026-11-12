@@ -1,0 +1,33 @@
+/Users/adriansager/playground/riemann/.scratch/explore39/xform.py:44: RuntimeWarning: divide by zero encountered in divide
+  z = np.asarray(z, float); return np.exp(s.sg*z/2)/(np.exp(z) - np.exp(-z))
+{"sec": "even", "n": 14, "galerkin_crossing": 1.92376, "t": 8.8}
+{"sec": "even", "n": 20, "galerkin_crossing": 1.92375, "t": 18.5}
+{"sec": "even", "n": 28, "galerkin_crossing": 1.92375, "t": 32.4}
+{"sec": "odd", "n": 14, "galerkin_crossing": 2.06032, "t": 36.7}
+{"sec": "odd", "n": 20, "galerkin_crossing": 2.06027, "t": 44.0}
+{"sec": "odd", "n": 28, "galerkin_crossing": 2.06024, "t": 56.4}
+{"c": 1.9, "sec": "even", "npts": 400, "galerkin": 0.0014966445163783417, "barta_lp": 0.0014477352246395386, "t": 67.6}
+/Users/adriansager/playground/riemann/.scratch/explore39/xform.py:44: RuntimeWarning: divide by zero encountered in divide
+  z = np.asarray(z, float); return np.exp(s.sg*z/2)/(np.exp(z) - np.exp(-z))
+{"c": 1.9, "sec": "even", "npts": 800, "galerkin": 0.0014966445163783417, "barta_lp": 0.001447631710706137, "t": 71.7}
+{"c": 2.05, "sec": "odd", "npts": 400, "galerkin": 0.014336660445545886, "barta_lp": 0.007331301560050624, "t": 73.8}
+{"c": 2.05, "sec": "odd", "npts": 800, "galerkin": 0.014336660445545886, "barta_lp": 0.007325873934011828, "t": 80.7}
+memcap: peak 85 MB rc=0
+       89.82 real        33.61 user        27.00 sys
+            89833472  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               92145  page reclaims
+                1852  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  53  signals received
+                1074  voluntary context switches
+              259834  involuntary context switches
+           115292698  instructions retired
+           139786811  cycles elapsed
+             2277712  peak memory footprint

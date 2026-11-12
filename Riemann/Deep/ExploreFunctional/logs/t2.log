@@ -1,0 +1,33 @@
+{"c": 1.2, "sec": "even", "n": 12, "galerkin": 0.5200745, "barta_lp": 0.5195528, "t": 1.3}
+{"c": 1.2, "sec": "even", "n": 20, "galerkin": 0.5200663, "barta_lp": 0.5199014, "t": 2.6}
+{"c": 1.2, "sec": "odd", "n": 12, "galerkin": 1.4233614, "barta_lp": 1.4225829, "t": 3.3}
+{"c": 1.2, "sec": "odd", "n": 20, "galerkin": 1.423348, "barta_lp": 1.4230938, "t": 4.6}
+{"c": 1.324718, "sec": "even", "n": 12, "galerkin": 0.2516037, "barta_lp": 0.251188, "t": 5.3}
+{"c": 1.324718, "sec": "even", "n": 20, "galerkin": 0.2515971, "barta_lp": 0.2514669, "t": 6.5}
+{"c": 1.5, "sec": "even", "n": 12, "galerkin": 0.090286, "barta_lp": 0.0900082, "t": 7.2}
+{"c": 1.5, "sec": "even", "n": 20, "galerkin": 0.0902816, "barta_lp": 0.0901948, "t": 8.4}
+{"c": 1.754878, "sec": "even", "n": 12, "galerkin": 0.0142138, "barta_lp": 0.0141029, "t": 9.1}
+{"c": 1.754878, "sec": "even", "n": 20, "galerkin": 0.0142121, "barta_lp": 0.0141777, "t": 10.2}
+{"c": 1.5, "sec": "odd", "n": 12, "galerkin": 0.6211786, "barta_lp": 0.6203945, "t": 11.0}
+{"c": 1.5, "sec": "odd", "n": 20, "galerkin": 0.6211651, "barta_lp": 0.6209093, "t": 12.2}
+{"c": 2.0, "sec": "odd", "n": 12, "galerkin": 0.0731231, "barta_lp": 0.072315, "t": 13.0}
+{"c": 2.0, "sec": "odd", "n": 20, "galerkin": 0.0731092, "barta_lp": 0.0728451, "t": 14.2}
+memcap: peak 55 MB rc=0
+       19.67 real        14.25 user        11.49 sys
+            81625088  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               32299  page reclaims
+                 961  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  22  messages received
+                  18  signals received
+                1011  voluntary context switches
+               53214  involuntary context switches
+            77488671  instructions retired
+            58404220  cycles elapsed
+             2261328  peak memory footprint

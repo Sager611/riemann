@@ -1,0 +1,63 @@
+/Users/adriansager/playground/riemann/.scratch/explore39/xform.py:44: RuntimeWarning: divide by zero encountered in divide
+  z = np.asarray(z, float); return np.exp(s.sg*z/2)/(np.exp(z) - np.exp(-z))
+ln rho = 0.281200
+{"kind": "zeta", "c": 1.2, "min_jev": 7.46128, "frac_jev<0": 0.0, "min_jodd": 0.03661, "atoms": [], "even_antiMarkov_atoms": [], "odd_antiMarkov_direct": [], "odd_antiMarkov_reflected": []}
+{"kind": "zeta", "c": 1.324718, "min_jev": 3.59549, "frac_jev<0": 0.0, "min_jodd": 0.0238, "atoms": [], "even_antiMarkov_atoms": [], "odd_antiMarkov_direct": [], "odd_antiMarkov_reflected": []}
+{"kind": "zeta", "c": 1.4, "min_jev": 2.42116, "frac_jev<0": 0.0, "min_jodd": 0.01994, "atoms": [], "even_antiMarkov_atoms": [], "odd_antiMarkov_direct": [], "odd_antiMarkov_reflected": []}
+{"kind": "zeta", "c": 1.755, "min_jev": -0.00041, "frac_jev<0": 0.0001, "min_jodd": 0.01219, "atoms": [], "even_antiMarkov_atoms": [], "odd_antiMarkov_direct": [], "odd_antiMarkov_reflected": []}
+{"kind": "zeta", "c": 2.0, "min_jev": -0.69659, "frac_jev<0": 0.1086, "min_jodd": 0.01012, "atoms": [], "even_antiMarkov_atoms": [], "odd_antiMarkov_direct": [], "odd_antiMarkov_reflected": []}
+{"kind": "zeta", "c": 2.5, "min_jev": -1.45448, "frac_jev<0": 0.3029, "min_jodd": 0.00813, "atoms": [[2, 0.4901]], "even_antiMarkov_atoms": [], "odd_antiMarkov_direct": [], "odd_antiMarkov_reflected": [2]}
+{"kind": "zeta", "c": 3.0, "min_jev": -1.87229, "frac_jev<0": 0.4197, "min_jodd": 0.00728, "atoms": [[2, 0.4901]], "even_antiMarkov_atoms": [], "odd_antiMarkov_direct": [], "odd_antiMarkov_reflected": [2]}
+{"kind": "zeta", "c": 5.0, "min_jev": -2.65632, "frac_jev<0": 0.6196, "min_jodd": 0.0067, "atoms": [[2, 0.4901], [3, 0.6343], [4, 0.3466]], "even_antiMarkov_atoms": [], "odd_antiMarkov_direct": [], "odd_antiMarkov_reflected": [2, 3, 4]}
+{"kind": "zeta", "c": 10.0, "min_jev": -3.43159, "frac_jev<0": 0.7543, "min_jodd": 0.00813, "atoms": [[2, 0.4901], [3, 0.6343], [4, 0.3466], [5, 0.7198], [7, 0.7355], [8, 0.2451], [9, 0.3662]], "even_antiMarkov_atoms": [], "odd_antiMarkov_direct": [], "odd_antiMarkov_reflected": [2, 3, 4, 5, 7, 8, 9]}
+{"kind": "dh", "c": 1.2, "min_jev": 10.46647, "frac_jev<0": 0.0, "min_jodd": 0.03658, "atoms": [], "even_antiMarkov_atoms": [], "odd_antiMarkov_direct": [], "odd_antiMarkov_reflected": []}
+{"kind": "dh", "c": 1.324718, "min_jev": 6.60784, "frac_jev<0": 0.0, "min_jodd": 0.02372, "atoms": [], "even_antiMarkov_atoms": [], "odd_antiMarkov_direct": [], "odd_antiMarkov_reflected": []}
+{"kind": "dh", "c": 1.4, "min_jev": 5.43885, "frac_jev<0": 0.0, "min_jodd": 0.01983, "atoms": [], "even_antiMarkov_atoms": [], "odd_antiMarkov_direct": [], "odd_antiMarkov_reflected": []}
+{"kind": "dh", "c": 1.755, "min_jev": 3.049, "frac_jev<0": 0.0, "min_jodd": 0.01186, "atoms": [], "even_antiMarkov_atoms": [], "odd_antiMarkov_direct": [], "odd_antiMarkov_reflected": []}
+{"kind": "dh", "c": 2.0, "min_jev": 2.37845, "frac_jev<0": 0.0, "min_jodd": 0.00962, "atoms": [], "even_antiMarkov_atoms": [], "odd_antiMarkov_direct": [], "odd_antiMarkov_reflected": []}
+{"kind": "dh", "c": 2.5, "min_jev": 1.6766, "frac_jev<0": 0.0, "min_jodd": 0.00725, "atoms": [[2, 0.1392]], "even_antiMarkov_atoms": [], "odd_antiMarkov_direct": [], "odd_antiMarkov_reflected": [2]}
+{"kind": "dh", "c": 3.0, "min_jev": 1.31609, "frac_jev<0": 0.0, "min_jodd": 0.00602, "atoms": [[2, 0.1392]], "even_antiMarkov_atoms": [], "odd_antiMarkov_direct": [], "odd_antiMarkov_reflected": [2]}
+{"kind": "dh", "c": 5.0, "min_jev": 0.74769, "frac_jev<0": 0.0, "min_jodd": 0.00401, "atoms": [[2, 0.1392], [3, -0.1802], [4, -0.7211]], "even_antiMarkov_atoms": [3, 4], "odd_antiMarkov_direct": [3, 4], "odd_antiMarkov_reflected": [2]}
+{"kind": "dh", "c": 10.0, "min_jev": 0.39518, "frac_jev<0": 0.0, "min_jodd": 0.00261, "atoms": [[2, 0.1392], [3, -0.1802], [4, -0.7211], [6, 0.7905], [7, 0.2089], [8, 0.0056], [9, -0.762]], "even_antiMarkov_atoms": [3, 4, 9], "odd_antiMarkov_direct": [3, 4, 9], "odd_antiMarkov_reflected": [2, 6, 7, 8]}
+{"gal": 1.0226817270703579, "gal1": 2.5733342939755515, "barta": 0.8934434785821438, "argmin_x/a": 0.9975, "phi>0": true, "phi_min/max": 0.2892, "r_median": 1.0226832029682564, "c": 1.1, "sec": "even", "n": 16}
+{"gal": 1.022677657579633, "gal1": 2.5733270648775126, "barta": 0.8901911552288699, "argmin_x/a": 0.9988, "phi>0": true, "phi_min/max": 0.2742, "r_median": 1.022677848915605, "c": 1.1, "sec": "even", "n": 24}
+{"gal": 2.0722880260772314, "gal1": 2.9119396600753475, "barta": 1.9484615401220116, "argmin_x/a": 0.9977, "phi>0": true, "phi_min/max": 0.0039, "r_median": 2.072415938104955, "c": 1.1, "sec": "odd", "n": 16}
+{"gal": 2.0722822594891728, "gal1": 2.911932410699569, "barta": 1.944155021294615, "argmin_x/a": 0.999, "phi>0": true, "phi_min/max": 0.0039, "r_median": 2.072325731293609, "c": 1.1, "sec": "odd", "n": 24}
+{"gal": 0.5200686183432143, "gal1": 1.928852859954152, "barta": 0.39155537815980695, "argmin_x/a": 0.9975, "phi>0": true, "phi_min/max": 0.2616, "r_median": 0.5200759804351235, "c": 1.2, "sec": "even", "n": 16}
+{"gal": 0.5200651291754053, "gal1": 1.928845664270444, "barta": 0.3881646876744841, "argmin_x/a": 0.9988, "phi>0": true, "phi_min/max": 0.2478, "r_median": 0.5200645456815902, "c": 1.2, "sec": "even", "n": 24}
+{"gal": 1.423351863857324, "gal1": 2.263268750437205, "barta": 1.2995229583550474, "argmin_x/a": 0.9977, "phi>0": true, "phi_min/max": 0.0039, "r_median": 1.423479847835805, "c": 1.2, "sec": "odd", "n": 16}
+{"gal": 1.423346093045816, "gal1": 2.2632615004450933, "barta": 1.2952171992900134, "argmin_x/a": 0.999, "phi>0": true, "phi_min/max": 0.0039, "r_median": 1.4233895722899015, "c": 1.2, "sec": "odd", "n": 24}
+{"gal": 0.28964183527285475, "gal1": 1.569582650267956, "barta": 0.16185116349183354, "argmin_x/a": 0.9975, "phi>0": true, "phi_min/max": 0.2338, "r_median": 0.28964964714810554, "c": 1.3, "sec": "even", "n": 16}
+{"gal": 0.2896389108397858, "gal1": 1.5695755011183203, "barta": 0.15831179238373969, "argmin_x/a": 0.9988, "phi>0": true, "phi_min/max": 0.2213, "r_median": 0.28963481412732944, "c": 1.3, "sec": "even", "n": 24}
+{"gal": 1.0587742107307514, "gal1": 1.8992367414602604, "barta": 0.9349402989779888, "argmin_x/a": 0.9977, "phi>0": true, "phi_min/max": 0.0039, "r_median": 1.0589023469473542, "c": 1.3, "sec": "odd", "n": 16}
+{"gal": 1.0587684309603995, "gal1": 1.8992294902011901, "barta": 0.930636123563045, "argmin_x/a": 0.999, "phi>0": true, "phi_min/max": 0.0039, "r_median": 1.0588119263994646, "c": 1.3, "sec": "odd", "n": 24}
+{"gal": 0.25159895640571467, "gal1": 1.501508958502626, "barta": 0.12398761745489764, "argmin_x/a": 0.9975, "phi>0": true, "phi_min/max": 0.2269, "r_median": 0.2516064778315712, "c": 1.324718, "sec": "even", "n": 16}
+{"gal": 0.2515961687564953, "gal1": 1.501501823378192, "barta": 0.12040948142426215, "argmin_x/a": 0.9988, "phi>0": true, "phi_min/max": 0.2147, "r_median": 0.25159250723999727, "c": 1.324718, "sec": "even", "n": 24}
+{"gal": 0.9892375698752093, "gal1": 1.8298828745502704, "barta": 0.8654019783164731, "argmin_x/a": 0.9977, "phi>0": true, "phi_min/max": 0.0039, "r_median": 0.9893657575866666, "c": 1.324718, "sec": "odd", "n": 16}
+{"gal": 0.9892317870717856, "gal1": 1.8298756228672965, "barta": 0.8610983355836943, "argmin_x/a": 0.999, "phi>0": true, "phi_min/max": 0.0039, "r_median": 0.9892752880370675, "c": 1.324718, "sec": "odd", "n": 24}
+{"gal": 0.6211689544490421, "gal1": 1.4636816693009578, "barta": 0.49731618514422704, "argmin_x/a": 0.9977, "phi>0": true, "phi_min/max": 0.0039, "r_median": 0.6212976738367151, "c": 1.5, "sec": "odd", "n": 16}
+{"gal": 0.6211631402958279, "gal1": 1.4636744133042303, "barta": 0.493018002125516, "argmin_x/a": 0.999, "phi>0": true, "phi_min/max": 0.0039, "r_median": 0.6212066987350744, "c": 1.5, "sec": "odd", "n": 24}
+{"gal": 0.2437032694502345, "gal1": 1.091695577199005, "barta": 0.11980024503994666, "argmin_x/a": 0.9977, "phi>0": true, "phi_min/max": 0.0039, "r_median": 0.24383356691433594, "c": 1.8, "sec": "odd", "n": 16}
+{"gal": 0.2436973620945483, "gal1": 1.0916883087441618, "barta": 0.11551805269357485, "argmin_x/a": 0.999, "phi>0": true, "phi_min/max": 0.0039, "r_median": 0.2437411514512315, "c": 1.8, "sec": "odd", "n": 24}
+{"gal": 0.07311318650220111, "gal1": 0.9262195732019066, "barta": -0.050836405950322475, "argmin_x/a": 0.9977, "phi>0": true, "phi_min/max": 0.0039, "r_median": 0.07324496298847821, "c": 2.0, "sec": "odd", "n": 16}
+{"gal": 0.07310719168097732, "gal1": 0.9262122933965751, "barta": -0.05510380641942029, "argmin_x/a": 0.999, "phi>0": true, "phi_min/max": 0.0039, "r_median": 0.07315124887408853, "c": 2.0, "sec": "odd", "n": 24}
+sec 20.5
+memcap: peak 44 MB rc=0
+       23.70 real        17.49 user        12.29 sys
+            63832064  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               32326  page reclaims
+                 561  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  21  signals received
+                 459  voluntary context switches
+               91043  involuntary context switches
+            81146025  instructions retired
+            70644992  cycles elapsed
+             2244944  peak memory footprint

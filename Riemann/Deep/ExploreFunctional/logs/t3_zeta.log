@@ -1,0 +1,46 @@
+/Users/adriansager/playground/riemann/.scratch/explore39/xform.py:44: RuntimeWarning: divide by zero encountered in divide
+  z = np.asarray(z, float); return np.exp(s.sg*z/2)/(np.exp(z) - np.exp(-z))
+{"kind": "zeta", "sec": "even", "c": 1.8, "n": 20, "lam0_Q": 0.00939338, "lam0_Qflip": 0.00928118, "normF": 0.003483, "jev_min": -0.1582, "barta_Qflip": 0.00925437, "t": 2.7}
+/Users/adriansager/playground/riemann/.scratch/explore39/xform.py:44: RuntimeWarning: divide by zero encountered in divide
+  z = np.asarray(z, float); return np.exp(s.sg*z/2)/(np.exp(z) - np.exp(-z))
+{"kind": "zeta", "sec": "even", "c": 1.9, "n": 20, "lam0_Q": 0.00335637, "lam0_Qflip": 0.00149665, "normF": 0.02466, "jev_min": -0.45531, "barta_Qflip": 0.00144787, "t": 4.3}
+{"kind": "zeta", "sec": "even", "c": 2.0, "n": 20, "lam0_Q": 0.00132936, "lam0_Qflip": -0.00439461, "normF": 0.05694, "jev_min": -0.69659, "barta_Qflip": -0.00446774, "t": 5.9}
+{"kind": "zeta", "sec": "even", "c": 2.1, "n": 20, "lam0_Q": 0.0005726, "lam0_Qflip": -0.0150844, "normF": 0.09615, "jev_min": -0.89721, "barta_Qflip": -0.0164044, "t": 7.5}
+{"kind": "zeta", "sec": "even", "c": 2.2, "n": 20, "lam0_Q": 0.000231071, "lam0_Qflip": -0.0348464, "normF": 0.14, "jev_min": -1.0672, "barta_Qflip": -0.0385969, "t": 9.0}
+{"kind": "zeta", "sec": "even", "c": 2.3, "n": 20, "lam0_Q": 8.7736e-05, "lam0_Qflip": -0.0656164, "normF": 0.1869, "jev_min": -1.2137, "t": 9.3}
+{"kind": "zeta", "sec": "even", "c": 2.5, "n": 20, "lam0_Q": 1.02973e-05, "lam0_Qflip": -0.146227, "normF": 0.2863, "jev_min": -1.4545, "t": 9.7}
+{"kind": "zeta", "sec": "even", "c": 3.0, "n": 20, "lam0_Q": 5.5785e-08, "lam0_Qflip": -0.356006, "normF": 0.5507, "jev_min": -1.8723, "t": 10.0}
+{"kind": "zeta", "sec": "even", "c": 5.0, "n": 20, "lam0_Q": -2.6624e-14, "lam0_Qflip": -1.55197, "normF": 1.665, "jev_min": -2.6563, "t": 10.3}
+{"kind": "zeta", "sec": "even", "c": 10.0, "n": 28, "lam0_Q": 7.27246e-15, "lam0_Qflip": -3.91735, "normF": 3.972, "jev_min": -3.4316, "t": 10.9}
+{"kind": "zeta", "sec": "even", "c": 20.0, "n": 28, "lam0_Q": 2.4871e-15, "lam0_Qflip": -7.17953, "normF": 7.225, "jev_min": -4.3422, "t": 11.5}
+{"kind": "zeta", "sec": "even", "c": 47.0, "n": 28, "lam0_Q": -4.68722e-15, "lam0_Qflip": -12.8546, "normF": 12.91, "jev_min": -6.1793, "t": 12.3}
+{"kind": "zeta", "sec": "odd", "c": 2.02, "n": 20, "lam0_Q": 0.0624529, "lam0_Qflip": 0.0522656, "normF": 0.9557, "barta_Qflip": 0.048663, "t": 13.8}
+{"kind": "zeta", "sec": "odd", "c": 2.05, "n": 20, "lam0_Q": 0.0501969, "lam0_Qflip": 0.0143367, "normF": 0.9782, "barta_Qflip": 0.0073313, "t": 15.3}
+{"kind": "zeta", "sec": "odd", "c": 2.1, "n": 20, "lam0_Q": 0.0353502, "lam0_Qflip": -0.0601769, "normF": 0.9801, "t": 15.7}
+{"kind": "zeta", "sec": "odd", "c": 2.2, "n": 20, "lam0_Q": 0.0176348, "lam0_Qflip": -0.221767, "normF": 0.9803, "t": 16.0}
+{"kind": "zeta", "sec": "odd", "c": 2.5, "n": 20, "lam0_Q": 0.00169412, "lam0_Qflip": -0.587302, "normF": 0.9803, "t": 16.2}
+{"kind": "zeta", "sec": "odd", "c": 3.0, "n": 20, "lam0_Q": 1.50181e-05, "lam0_Qflip": -0.899846, "normF": 0.9803, "t": 16.5}
+{"kind": "zeta", "sec": "odd", "c": 4.0, "n": 20, "lam0_Q": 5.03236e-10, "lam0_Qflip": -1.50932, "normF": 1.802, "t": 16.8}
+{"kind": "zeta", "sec": "odd", "c": 5.0, "n": 20, "lam0_Q": -2.05923e-14, "lam0_Qflip": -1.97859, "normF": 2.103, "t": 17.0}
+{"kind": "zeta", "sec": "odd", "c": 10.0, "n": 28, "lam0_Q": 5.48982e-15, "lam0_Qflip": -3.9861, "normF": 4.15, "t": 17.4}
+{"kind": "zeta", "sec": "odd", "c": 20.0, "n": 28, "lam0_Q": 3.36619e-16, "lam0_Qflip": -6.69522, "normF": 6.812, "t": 17.9}
+{"kind": "zeta", "sec": "odd", "c": 47.0, "n": 28, "lam0_Q": -6.86762e-15, "lam0_Qflip": -11.5173, "normF": 11.61, "t": 18.6}
+memcap: peak 70 MB rc=0
+       22.13 real        15.78 user        11.37 sys
+            97304576  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               33991  page reclaims
+                  57  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  18  signals received
+                  97  voluntary context switches
+               80988  involuntary context switches
+            78281461  instructions retired
+            63809194  cycles elapsed
+             2244944  peak memory footprint

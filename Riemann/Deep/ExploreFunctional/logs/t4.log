@@ -1,0 +1,20 @@
+/Users/adriansager/playground/riemann/.scratch/explore39/xform.py:44: RuntimeWarning: divide by zero encountered in divide
+  z = np.asarray(z, float); return np.exp(s.sg*z/2)/(np.exp(z) - np.exp(-z))
+{"kind": "zeta", "sec": "even", "which": "galerkin", "c_flip": [1.92375, 1.92375]}
+/Users/adriansager/playground/riemann/.scratch/explore39/xform.py:44: RuntimeWarning: divide by zero encountered in divide
+  z = np.asarray(z, float); return np.exp(s.sg*z/2)/(np.exp(z) - np.exp(-z))
+{"kind": "zeta", "sec": "even", "which": "barta", "c_flip": [1.92281, 1.92282]}
+memcap: peak 70 MB rc=0
+{"kind": "zeta", "sec": "odd", "which": "galerkin", "c_flip": [2.06027, 2.06027]}
+{"kind": "zeta", "sec": "odd", "which": "barta", "c_flip": [2.05483, 2.05484]}
+memcap: peak 59 MB rc=0
+/Users/adriansager/playground/riemann/.scratch/explore39/xform.py:44: RuntimeWarning: divide by zero encountered in divide
+  z = np.asarray(z, float); return np.exp(s.sg*z/2)/(np.exp(z) - np.exp(-z))
+{"kind": "dh", "sec": "even", "which": "galerkin", "c_flip": [3.76511, 3.76514]}
+/Users/adriansager/playground/riemann/.scratch/explore39/xform.py:44: RuntimeWarning: divide by zero encountered in divide
+  z = np.asarray(z, float); return np.exp(s.sg*z/2)/(np.exp(z) - np.exp(-z))
+{"kind": "dh", "sec": "even", "which": "barta", "c_flip": [3.73373, 3.73376]}
+memcap: peak 71 MB rc=0
+{"kind": "dh", "sec": "odd", "which": "galerkin", "c_flip": [6.04706, 6.04736]}
+{"kind": "dh", "sec": "odd", "which": "barta", "c_flip": [5.62042, 5.62073]}
+memcap: peak 59 MB rc=0

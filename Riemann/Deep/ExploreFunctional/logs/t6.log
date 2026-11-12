@@ -1,0 +1,4 @@
+{"c": 1.2, "N": 50, "lam0_cell": 0.521195, "min_killing": 0.2997, "shift_t": 0.0, "max_degree_d": 4.2053, "h_sweep(>=h_Cheeger)": 0.6065, "cheeger_lower<=": 0.0437, "buser-type_upper h-t": 0.6065, "lam0_nn_minorant": 0.3233}
+{"c": 1.2, "N": 200, "lam0_cell": 0.520198, "min_killing": 0.2994, "shift_t": 0.0, "max_degree_d": 5.5868, "h_sweep(>=h_Cheeger)": 0.6065, "cheeger_lower<=": 0.0329, "buser-type_upper h-t": 0.6065, "lam0_nn_minorant": 0.3053}
+{"c": 1.2, "N": 800, "lam0_cell": 0.520081, "min_killing": 0.2994, "shift_t": 0.0, "max_degree_d": 6.9719, "h_sweep(>=h_Cheeger)": 0.6065, "cheeger_lower<=": 0.0264, "buser-type_upper h-t": 0.6065, "lam0_nn_minorant": 0.3009}
+memcap: peak 0 MB rc=0

@@ -1,0 +1,7 @@
+{"c": 1.2, "lam_odd": 1.423348, "lam_even": 0.5200663, "I(c)": 0.285363, "bound lam_odd-2I": 0.8526212, "g>0 on (0,a]": true}
+{"c": 1.324718, "lam_odd": 0.9892337, "lam_even": 0.2515971, "I(c)": 0.209692, "bound lam_odd-2I": 0.56985, "g>0 on (0,a]": true}
+{"c": 1.5, "lam_odd": 0.6211651, "lam_even": 0.0902816, "I(c)": 0.113319, "bound lam_odd-2I": 0.3945276, "g>0 on (0,a]": true}
+{"c": 1.754878, "lam_odd": 0.2889693, "lam_even": 0.0142121, "I(c)": -0.011193, "bound lam_odd-2I": 0.311356, "g>0 on (0,a]": true}
+{"c": 1.9, "lam_odd": 0.1529967, "lam_even": 0.0033564, "I(c)": -0.075741, "bound lam_odd-2I": 0.3044793, "g>0 on (0,a]": true}
+{"c": 2.0, "lam_odd": 0.0731092, "lam_even": 0.0013294, "I(c)": -0.11804, "bound lam_odd-2I": 0.3091896, "g>0 on (0,a]": true}
+memcap: peak 26 MB rc=0
