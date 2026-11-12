@@ -1,0 +1,8 @@
+VERDICT: CORRECT
+Fubini holds: the absolute zero sums grow at most logarithmically in ξ, dominated by the uniformly Schwartz Fourier factor.
+Smoothness and the stated support conditions give infinite-order boundary vanishing; integration by parts creates no boundary terms.
+Derivative bounds are uniform in 𝔞; terms with 𝔞 ≥ X vanish before estimation.
+Mixed pole/trivial-zero terms remain negligible after summation when A is sufficiently large.
+Both h = 2 packet sums are uniformly bounded by Mertens; h ≥ 3 is absolutely summable.
+For m ≥ 1, the maximum-weight inequality gives mW_{−y}On^{m−1}, respectively mX^yWOn^{m−1}; m = 0 contributes O(1), respectively O(X^y).
+Notation correction only: C(𝔞) excludes the factor 𝔞^{−s}; stripping that factor multiplies its modulus by 𝔞^{Re s}, not 𝔞^{h Re s}.

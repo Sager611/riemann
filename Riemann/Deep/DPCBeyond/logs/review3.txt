@@ -1,0 +1,23 @@
+2/2 succeeded
+
+=== Task 1: reviewer ===
+VERDICT: CORRECT
+Conditional on Lemmas Z/M and the quoted old estimates.
+(c) genuinely extends: 6b depends on the cut centre’s location, not membership in S_a; nonempty bins have Y_a<1.
+The all-zero near/far argument gives ‖Σρ Y_a⁻¹k_{Y_a}(·−xρ)‖q ≪ (a+2)^C L T^{1/q}; retain the logarithmic near-kernel, rather than asserting a pointwise count bound.
+Hölder with the boundary moments therefore proves the required averaged V̂ moments.
+The logarithmic integral bound holds on any vertical segment; replacing dρ by Y_a is valid. The Ñ and Ψ moments already sum over all zeros.
+Thus the claimed Yρ moments follow; the Off moments are precisely assumed M4.
+(d) choose 1<u<κ/(2θ), then w sufficiently large that 1/u+1/w<1; this also ensures κ(1−1/w)>2θ.
+(e) the split and dominated-convergence arguments work; absorb o(1) by taking T→∞ first.
+For exterior cuts, explicitly invoke the existing polynomial integrated V-factor majorant alongside the Gaussian and R bounds.
+
+=== Task 2: reviewer ===
+VERDICT: NO OTHER θ<1/2 USE
+Step 0: θ<4/7<1 preserves 0<φθ<1<φ(1+θ)<2 and the stated DPC admissibility condition.
+Step 3: slit geometry, merged jumps, branch-tip limits and the bottom Euler expansion impose no θ<1/2 restriction.
+The slit bound |R_T R*|≪T^{2θ} remains valid; it does not require T^{2θ}=o(T).
+Gaussian suppression e^{−c(log T)²} beats that bound, the zero count and other fixed polynomial factors; discarded slits and sides remain negligible.
+Mean-square normalization needs θ<1; the quoted DPC main-term calculation supplies no additional half-length restriction.
+Step 7′ requires the asserted moment bound, κ>2θ and sufficiently large s; subsequent pair counting is θ-independent.
+Scope: quoted statements and their stated DPC range—not independent verification of the cited source, M3 or Step 6e′.

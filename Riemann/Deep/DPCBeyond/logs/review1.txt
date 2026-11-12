@@ -1,0 +1,24 @@
+2/2 succeeded
+
+=== Task 1: reviewer ===
+VERDICT: GAP
+(ii)–(iv) conflate a block’s base prime \(q\) with its packet \(q^h\), \(h=|B|\).
+(iv)’s displayed cancellation is false: \(q^{-h/2+hy}(X/q)^{y+D}=X^{y+D}q^{-h/2+(h-1)y-D}\).
+For \(h=2,\ D=0,\ y>0\), this exceeds the asserted bound.
+Repairable: retain the actual shift \(h\log q/L\); define the total packet product \(a=\prod q^h\), including prime-power packets.
+Then \(a^{-1/2+y}(X/a)^{y+D}=X^{y+D}a^{-1/2-D}\le X^{y+D}a^{-1/2}\).
+Prime-power corrections carry \(h^{-1}\rho_\eta(h\log q/L)q^{-hs}\); their remaining absolute mass is uniformly bounded: \(h=2\) by Mertens, \(h\ge3\) by absolute convergence.
+(i) is valid with absolutely convergent zero sums; Fourier/Fubini works using a frequency-dependent bound, not the stated uniform \(T^b\log T\) bound.
+(iii)’s support estimate and complex-parameter integration by parts are valid; the free-zero summation indeed gives \(mW\,\mathrm{On}^{m-1}\).
+Thus the stated Lemma Z inequalities follow after this repair, but the displayed bookkeeping does not prove them as written.
+
+=== Task 2: reviewer ===
+VERDICT: CORRECT
+No substantive gap under the stated assumptions.
+M2’s Hölder loss is correct; M3 absorbs the On factor by choosing q < p < κ/θ.
+6e′(a) holds termwise; (b) follows from (E+Off)(1+Off) ≪ E²+Off² for E ≥ 1.
+Choose 1 < u < κ/(2θ), then w > u/(u−1), and define 1/v = 1−1/u−1/w.
+These choices also ensure κ(1−1/w) > 2θ. This summable-majorant argument works iff 2θ < κ.
+Handle o(1) by taking T → ∞ at fixed ε, then ε → 0; fix all exponents beforehand.
+Step 7′ uses Hölder exponents q/2, s, and (1−2/q−1/s)⁻¹; its constants are ε-independent.
+Minor bookkeeping: use |m|+2 in M4; apply Fujii on comparable heights and handle distant heights by kernel tails, not a uniform-in-m Fujii bound.

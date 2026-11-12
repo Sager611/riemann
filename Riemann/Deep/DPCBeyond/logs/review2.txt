@@ -1,0 +1,25 @@
+2/2 succeeded
+
+=== Task 1: reviewer ===
+VERDICT: GAP
+The repaired packet cancellation and the support/IBP argument (iii) are sound.
+But prime-power packets in (ii) have coefficient \(\rho_\eta(h\log q/L)/h\), not a power of \(\rho_\eta(\log q/L)\).
+Their support permits \(q<T^\eta\); thus the displayed coefficient bound and the packet-support assertion used in (iv) are false.
+Use the exact prime-power weights and prove
+\[
+\sum_{q,h\ge2}\frac{|\rho_\eta(h\log q/L)|}{h}q^{-h/2}
+\ll \sum_{T^{\eta/2}<q<T^{b/2}}\frac1q+\sum_q\sum_{h\ge3}q^{-h/2}\ll_{\eta,b,\rho_\eta}1.
+\]
+Together with the existing collision-block estimate, this closes the remaining bookkeeping gap. No further obstruction found in (i)–(iv).
+
+=== Task 2: reviewer ===
+VERDICT: NO FLAW FOUND
+No known contradiction identified; this is not verification of Theorem U′.
+Density ⇒ these special rough-polynomial moments is nontrivial, but neither reverses density nor contradicts a known barrier.
+The cutoff mechanism is sound: exp(LΣuᵢdᵢ) ≤ X^{maxᵢ dᵢ⁺} when Σuᵢ ≤ θ; repeating one zero does not produce X^{jd}.
+Lemma Z is plausible via multivariable explicit formulas, but requires uniform treatment of prime-power diagonals, pole terms and Fourier tails.
+Integrating against the full complex exponential avoids spurious (dL)^A losses in those tails.
+Fujii moments plus Hölder incur a density-exponent loss; strict qθ < κ leaves room to absorb it.
+For hairpins, 2θ < κ is plausible only after controlling mixed zero tuples by their maximum depth—not merely the hairpin’s own zero.
+The heuristic X^{d−y} needs y ≤ d; beyond that, Lemma Z supplies the positive-part exponent instead.
+No evidence supplied establishes that the fourth moment was the earlier proof’s *only* θ < ½ restriction: unchanged Steps 1–7 still need auditing.

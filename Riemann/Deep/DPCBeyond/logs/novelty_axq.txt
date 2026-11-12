@@ -1,0 +1,49 @@
+### abs:mollifier AND abs:moments AND abs:unconditional AND abs:zeros
+
+
+### abs:"explicit formula" AND abs:mollifier AND abs:"zero density"
+
+
+### abs:"small gaps" AND abs:zeros AND abs:zeta
+SEEN 2604.05733 2026-04-07 Small gaps between consecutive zeros of the Riemann zeta-function
+NEW  2211.08571 2022-11-15 Mean values of the logarithmic derivative of the Riemann zeta-function near the critical l
+NEW  2010.10675 2020-10-20 Some explicit and unconditional results on gaps between zeroes of the Riemann zeta-functio
+NEW  1904.06001 2019-04-12 A note on small gaps between zeros of the Riemann zeta-function
+SEEN 1810.08843 2018-10-20 Pair Correlation Estimates for the Zeros of the Zeta Function via Semidefinite Programming
+NEW  1301.3232 2013-01-15 Gaps between zeros of $ζ(s)$ and the distribution of zeros of $ζ'(s)$
+
+### abs:"Dirichlet polynomial" AND abs:"uniform integrability"
+
+
+### abs:"Dirichlet polynomials" AND abs:moments AND abs:"zero density"
+NEW  2310.14797 2023-10-10 On the density hypothesis for $L$-functions associated with holomorphic cusp forms
+
+### abs:"positive proportion" AND abs:gaps AND abs:zeta
+SEEN 2610.26841 2026-10-19 Isolated zeros of the Riemann zeta function and zeros of linear combinations of Dirichlet 
+SEEN 2610.22927 2026-10-16 Unconditional Bounds for Two, Three and Four Consecutive Moderate Gaps between Zeros of th
+SEEN 2603.17334 2026-03-18 Density results for $r$-gaps between zeros of the Riemann zeta-function
+NEW  2010.10675 2020-10-20 Some explicit and unconditional results on gaps between zeroes of the Riemann zeta-functio
+NEW  1904.06001 2019-04-12 A note on small gaps between zeros of the Riemann zeta-function
+NEW  1301.3232 2013-01-15 Gaps between zeros of $ζ(s)$ and the distribution of zeros of $ζ'(s)$
+
+### all:Durkan AND all:Pearce-Crump
+SEEN 2610.28527 2026-10-20 Small and large gaps between zeros of Dirichlet $L$-functions
+NEW  2609.06167 2026-09-05 Central non-vanishing of Dirichlet $L$-functions
+NEW  2607.29429 2026-07-31 A sharp almost sure upper bound for partial sums of random multiplicative functions
+NEW  2601.18025 2026-01-25 Generalisations of the Landau--Gonek Theorem and applications to mean values of zeta
+NEW  2601.06292 2026-01-09 The discrete second moment of mixed derivatives of the Riemann zeta function
+
+### abs:"large values" AND abs:mollifier AND abs:zeros
+
+
+### abstracts
+SEEN 2610.24612 2026-10-17 Human Exposition of Claude's 2/3 Theorem on the zeros of zeta
+   We expose Claude's proof that $N_0(T)\ge 0.6725 N(T)$ where $N(T)$ is the number of zeros of zeta satisfying $0<\mathop{\mathrm{Re}}ρ\le T$, and $N_0(T)$ the number of those zeros that are simple and on the critical line. Unconditionally it was only known that $N_0(T)\ge 0.4166 N(T)$. This proof is simpler than the previous ones and takes a different approach.
+SEEN 2610.15989 2026-10-11 Zero density in short strips and short-interval bounds toward Hypothesis S
+   We deduce zero-density estimates in short vertical strips from short-interval moments of globally tempered automorphic $L$-functions, by adapting the large-value estimate of Guth and Maynard and the Type II zero argument of Maynard and Pratt to the framework of Ye and Zhang. For the Riemann zeta function, we obtain $N_ζ(σ;T,T+T^a)\ll T^{15a(1-σ)/(3+5σ)+\varepsilon}$ for $2/3\le a\le1$ and $7/10\leσ\le4/5$, improving Ye--Zhang's exponent in the interior of this range. Combining the localized density bound with the recent quasi-Riemann theorems, we estimate smoothed prime-power sums with phase $\exp(2πiαn^β)$ on intervals of length $K^δ$. For $0<β<13/20$, we obtain a power saving whenever $\max\{17/30,1-β\}<δ<1$; in particular the square-root phase admits every $δ>17/30$. A revised transform estimate retains both the stationary spread and the Fourier width $K/L$. For example, the bound
+SEEN 2610.18923 2026-10-12 Large value estimates for Dirichlet polynomials and trilinear sums over short intervals
+   Recently, Matomäki, Pandey, Pliego, Teräväinen and Wang improved the Baker--Harman--Pintz estimate of trilinear sums over short intervals of length $x^θ$, which naturally reduces to estimating mean values of products of three Dirichlet polynomials. Based on recent works of Guth and Maynard and Chen, Gupta and Li on new large value estimates for Dirichlet polynomials, they improved the Baker--Harman--Pintz estimate for $θ> \frac{3}{5}$. In this paper, we use their method to improve the Baker--Harman--Pintz estimate for $\frac{1}{2} < θ< \frac{4}{7}$ and get new results for all $\frac{1}{2} < θ< 1$. Our result yields improvements on many problems, including the work of Li on primes in short intervals of length $x^{0.52}$.
+SEEN 2611.05000 2026-11-03 Almost primes in short intervals and averages of long Dirichlet polynomial approximations 
+   We study the asymptotic behaviour of the mean square of long truncations of the Dirichlet series for $\bigl(ζ'/ζ\bigr)^{k}$ on the critical line; we establish the connection between this problem and the short-interval variance of the convoluted von Mangoldt function $Λ^{*k}$ in short intervals and in arithmetic progressions. Under a shifted moments conjecture and the Riemann Hypothesis (RH), we prove that the short-interval variance leading coefficient is the derivative of the mean-square leading coefficient. A unitary trace-sum average governs the variance of sums of $Λ^{*k}$ over monic polynomials in $\mathbb F_q[T]$; we denote its leading coefficient by $δ_k(c)$, where the total trace degree and matrix size grow with a fixed ratio $c$. Under a weaker shifted moments conjecture and RH, we recover this $δ_k(c)$ as the leading coefficient of the variance of short-interval sums of $Λ^{
+SEEN 2611.12438 2026-11-09 Nontrivial Zeros of the Riemann Zeta Function and Its Derivative
+   The nontrivial zeros of the Riemann zeta function lie at the heart of analytic number theory. Through the explicit formulas, they govern the distribution of prime numbers: the closer all nontrivial zeros lie to the critical line $\Re(s)=\frac12$, the more uniformly the primes are distributed. The Riemann Hypothesis-asserting that all nontrivial zeros satisfy $\Re(s)=\frac12$-is equivalent to the optimal error bound $O(\sqrt{x}\log x)$ in the Prime Number Theorem. Beyond number theory, the zeros of $ζ(s)$ and its derivative $ζ'(s)$ are deeply intertwined: the horizontal distribution of $ζ'$-zeros near the critical line encodes information about the spacing of consecutive $ζ$-zeros. This paper establishes some results concerning the nontrivial zeros of the Riemann zeta function.
