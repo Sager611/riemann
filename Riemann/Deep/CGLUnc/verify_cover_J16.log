@@ -1,0 +1,4 @@
+J = 16  nu0 = 153/227 = [0.6740088106 +/- 2.74e-11]  configs used: 12
+min pivot: [0.0003846792603 +/- 2.37e-14]
+M positive definite (certified): True
+memcap: peak 0 MB rc=0

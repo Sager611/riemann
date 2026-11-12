@@ -1,0 +1,3 @@
+single-window double-adversary ceiling nu_double = 0.6776619532191692
+mixture: [('.1121', np.float64(0.6117), 0.6, np.float64(0.3960998311823577)), ('.111111121', np.float64(0.3883), 0.8, np.float64(0.198074885394642))]
+memcap: peak 0 MB rc=0
