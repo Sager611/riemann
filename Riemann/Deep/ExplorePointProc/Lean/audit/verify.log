@@ -1,0 +1,10 @@
+FinSum rc=0 8s footprint=254 MiB, memcap: peak 242 MB, warnings=0 errors=0 lines=     152
+Model rc=0 8s footprint=264 MiB, memcap: peak 245 MB, warnings=0 errors=0 lines=     260
+NoGood rc=0 17s footprint=274 MiB, memcap: peak 242 MB, warnings=0 errors=0 lines=     186
+Theorem1 rc=0 16s footprint=258 MiB, memcap: peak 237 MB, warnings=0 errors=0 lines=     114
+PL rc=0 17s footprint=268 MiB, memcap: peak 235 MB, warnings=0 errors=0 lines=     187
+Herm rc=0 8s footprint=245 MiB, memcap: peak 0 MB, warnings=0 errors=0 lines=     120
+Cert rc=0 8s footprint=255 MiB, memcap: peak 239 MB, warnings=0 errors=0 lines=     143
+Liminf rc=0 9s footprint=250 MiB, memcap: peak 0 MB, warnings=0 errors=0 lines=      85
+Final rc=0 8s footprint=247 MiB, memcap: peak 0 MB, warnings=0 errors=0 lines=      32
+Check rc=0 8s footprint=245 MiB, memcap: peak 0 MB, warnings=0 errors=0 lines=      25

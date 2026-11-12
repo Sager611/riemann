@@ -1,0 +1,174 @@
+    def HH (lam β c : ℝ) (F A : ℝ → ℝ) : Prop
+    def pairSum (F : ℝ → ℝ) (x : ℕ → ℝ) (n : ℕ) : ℝ
+    theorem pairSum_le {lam U β c : ℝ} {F A : ℝ → ℝ} (hlam : 0 ≤ lam) (hU : U ≤ 3 * lam)
+        (heven : ∀ u, F (-u) = F u) (hneg : ∀ u, U ≤ u → F u ≤ 0) (hH : HH lam β c F A)
+        {n : ℕ} (hn : 2 ≤ n) (x : ℕ → ℝ) (hgap : ∀ i, i + 1 < n → lam ≤ x (i + 1) - x i) :
+        pairSum F x n ≤ (n : ℝ) * F 0 + 2 * ((n : ℝ) - 2) * c
+          + 2 * β * ((x (n - 2) - x 0) - ((n : ℝ) - 2))
+          + 2 * (A (x (n - 1) - x (n - 2)) - A (x 1 - x 0)) + 2 * F (x (n - 1) - x (n - 2))
+    theorem pairSum_weighted_le {lam U β c η : ℝ} {F A w : ℝ → ℝ} (hlam : 0 ≤ lam) (hU : U ≤ 3 * lam)
+        (heven : ∀ u, F (-u) = F u) (hneg : ∀ u, U ≤ u → F u ≤ 0) (hH : HH lam β c F A)
+        (hweven : ∀ u, w (-u) = w u) (hwnn : ∀ u, 0 ≤ w u) (hw0 : w 0 = 1)
+        (hη : ∀ u, F u * w u ≤ F u + η)
+        {n : ℕ} (hn : 2 ≤ n) (x : ℕ → ℝ) (hgap : ∀ i, i + 1 < n → lam ≤ x (i + 1) - x i) :
+        pairSum (fun u => F u * w u) x n ≤ (n : ℝ) * F 0 + 2 * ((n : ℝ) - 2) * (c + 2 * η)
+          + 2 * β * ((x (n - 2) - x 0) - ((n : ℝ) - 2))
+          + 2 * (A (x (n - 1) - x (n - 2)) - A (x 1 - x 0))
+          + 2 * (F (x (n - 1) - x (n - 2)) * w (x (n - 1) - x (n - 2)))
+
+    structure Zeros where
+      γ : ℕ → ℝ
+      N : ℝ → ℕ
+      sc : ℝ → ℝ
+    structure Zeros.Ordered (Z : Zeros) : Prop where
+      mono : ∀ k : ℕ, 1 ≤ k → Z.γ k ≤ Z.γ (k + 1)
+      pos : 0 < Z.γ 1
+      count : ∀ (T : ℝ) (k : ℕ), 1 ≤ k → (Z.γ k ≤ T ↔ k ≤ Z.N T)
+    noncomputable def smallGaps (Z : Zeros) (lam T : ℝ) : Finset ℕ
+    def DPos (Z : Zeros) (lam : ℝ) : Prop
+    noncomputable def Elam (Z : Zeros) (lam T : ℝ) : Finset ℕ
+    noncomputable def Z0 (Z : Zeros) (lam T : ℝ) : Finset ℕ := Icc 1 (Z.N T) \ Elam Z lam T
+    lemma card_Elam_le (Z : Zeros) (lam T : ℝ) :
+        (Elam Z lam T).card ≤ 2 * (smallGaps Z lam T).card
+    theorem DPos.mono {Z : Zeros} {lam lam' : ℝ} (h : lam ≤ lam') (hD : DPos Z lam) : DPos Z lam'
+    lemma card_Z0 (Z : Zeros) (lam T : ℝ) :
+        (Z0 Z lam T).card + (Elam Z lam T).card = Z.N T
+    lemma Z0_sep {Z : Zeros} (hZ : Z.Ordered) {lam T : ℝ} (hsc : 0 ≤ Z.sc T) {a b : ℕ}
+        (ha : a ∈ Z0 Z lam T) (hb : b ∈ Z0 Z lam T) (hab : a < b) :
+        lam < (Z.γ b - Z.γ a) * Z.sc T
+    noncomputable def xs (Z : Zeros) (lam T : ℝ) (i : ℕ) : ℝ
+    lemma pairSum_Z0 (Z : Zeros) (lam T : ℝ) (Φ : ℝ → ℝ) :
+        ∑ a ∈ Z0 Z lam T, ∑ b ∈ Z0 Z lam T, Φ ((Z.γ a - Z.γ b) * Z.sc T)
+          = pairSum Φ (xs Z lam T) (Z0 Z lam T).card
+    lemma xs_gap {Z : Zeros} (hZ : Z.Ordered) {lam T : ℝ} (hsc : 0 ≤ Z.sc T) {i : ℕ}
+        (hi : i + 1 < (Z0 Z lam T).card) : lam < xs Z lam T (i + 1) - xs Z lam T i
+    lemma xs_bounds {Z : Zeros} (hZ : Z.Ordered) {lam T : ℝ} (hsc : 0 ≤ Z.sc T) {i : ℕ}
+        (hi : i < (Z0 Z lam T).card) : 0 ≤ xs Z lam T i ∧ xs Z lam T i ≤ T * Z.sc T
+    structure TestCalc where
+      hat : (ℝ → ℝ) → ℝ → ℝ
+      J : ℝ → (ℝ → ℝ) → ℝ
+      Cc2 : (ℝ → ℝ) → Prop
+      Sch : (ℝ → ℝ) → Prop
+    def Steps12 (Z : Zeros) (C : TestCalc) : Prop
+    def FourierCc2 (C : TestCalc) : Prop
+    def LemmaT' (C : TestCalc) : Prop
+    def ScaleToInf (Z : Zeros) : Prop := ∀ K : ℝ, ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → K ≤ Z.sc T
+    def RvM (Z : Zeros) : Prop
+
+    lemma no_good_height {Z : Zeros} {C : TestCalc} (hZ : Z.Ordered)
+        {θ lam U β c μ δ M KA K₀ ε₂ T : ℝ} {F A : ℝ → ℝ}
+        (hlam0 : 0 < lam) (hU3 : U ≤ 3 * lam) (hFhe : ∀ u, C.hat F (-u) = C.hat F u)
+        (hFneg : ∀ u, U ≤ u → C.hat F u ≤ 0) (hM : ∀ u, |C.hat F u| * u ^ 2 ≤ M)
+        (hKA : ∀ y, lam ≤ y → |A y| ≤ KA) (hβ : 0 ≤ β) (hH : HH lam β c (C.hat F) A)
+        (hμ : 0 < μ) (hμdef : μ = C.J θ F - (C.hat F 0 + 2 * c))
+        (hδpos : 0 < δ) (hδ2 : δ ≤ 1 / 2) (hδ3 : δ * (|C.hat F 0 + 2 * c| + 2 * β) ≤ μ / 6)
+        (hs1 : 6 * |M| / μ + 1 ≤ Z.sc T) (hε₂ : 2 * β * ε₂ ≤ μ / 6)
+        (hRvT : T * Z.sc T ≤ (1 + ε₂) * (Z.N T : ℝ))
+        (hK₀ : K₀ = 4 * |c| + 4 * β + 4 * |KA| + 2 * (|M| / lam ^ 2))
+        (hKN : K₀ ≤ μ * (Z.N T : ℝ) / 6) (hN4 : 4 ≤ (Z.N T : ℝ))
+        (hcon : ((Elam Z lam T).card : ℝ) < δ * (Z.N T : ℝ))
+        (hlow : (C.J θ F - μ / 6) * (Z.N T : ℝ) ≤ ∑ a ∈ Z0 Z lam T, ∑ b ∈ Z0 Z lam T,
+          C.hat F ((Z.γ a - Z.γ b) * Z.sc T) * (4 / (4 + (Z.γ a - Z.γ b) ^ 2))) : False
+
+    theorem theorem1_Cc2 {Z : Zeros} {C : TestCalc} (hZ : Z.Ordered) (hsc : ScaleToInf Z) (hRvM : RvM Z)
+        (h12 : Steps12 Z C) (hFC : FourierCc2 C)
+        {θ lam U β c : ℝ} {F A : ℝ → ℝ}
+        (hθ1 : 1 / 2 < θ) (hθ2 : θ < 4 / 7) (hlam0 : 0 < lam) (hlam1 : lam ≤ 1) (hU3 : U ≤ 3 * lam)
+        (hFc : C.Cc2 F) (hFe : ∀ x, F (-x) = F x) (hFn : ∀ x, 0 ≤ F x)
+        (hFneg : ∀ u, U ≤ u → C.hat F u ≤ 0)
+        (hA : ∃ K : ℝ, ∀ y, lam ≤ y → |A y| ≤ K) (hβ : 0 ≤ β) (hH : HH lam β c (C.hat F) A)
+        (hJ : C.hat F 0 + 2 * c < C.J θ F) : DPos Z lam
+    theorem theorem1 {Z : Zeros} {C : TestCalc} (hZ : Z.Ordered) (hsc : ScaleToInf Z) (hRvM : RvM Z)
+        (h12 : Steps12 Z C) (hFC : FourierCc2 C) (hT : LemmaT' C)
+        {θ lam U β c : ℝ} {f A : ℝ → ℝ}
+        (hθ1 : 1 / 2 < θ) (hθ2 : θ < 4 / 7) (hlam0 : 0 < lam) (hlam1 : lam ≤ 1)
+        (hU1 : lam < U) (hU3 : U ≤ 3 * lam)
+        (hfS : C.Sch f) (hfe : ∀ x, f (-x) = f x) (hfn : ∀ x, 0 ≤ f x)
+        (hfneg : ∀ u, U ≤ u → C.hat f u ≤ 0)
+        (hA : ∃ K : ℝ, ∀ y, lam ≤ y → |A y| ≤ K) (hβ : 0 ≤ β) (hH : HH lam β c (C.hat f) A)
+        (hJ : C.hat f 0 + 2 * c < C.J θ f) : DPos Z lam
+    theorem thmMain2 {Z : Zeros} {C : TestCalc} (hZ : Z.Ordered) (hsc : ScaleToInf Z) (hRvM : RvM Z)
+        (h12 : Steps12 Z C) (hFC : FourierCc2 C) {θ lam : ℝ} {f : ℝ → ℝ}
+        (hθ1 : 1 / 2 < θ) (hθ2 : θ < 4 / 7) (hlam0 : 0 < lam) (hlam1 : lam ≤ 1)
+        (hfc : C.Cc2 f) (hfe : ∀ x, f (-x) = f x) (hfn : ∀ x, 0 ≤ f x)
+        (hfneg : ∀ u, lam ≤ u → C.hat f u ≤ 0) (hJ : C.hat f 0 < C.J θ f) : DPos Z lam
+    lemma HH_div {lam β c t : ℝ} {F A : ℝ → ℝ} (ht : 0 < t) (h : HH lam β c F A) :
+        HH lam (β / t) (c / t) (fun u => F u / t) (fun u => A u / t)
+    lemma margin_div {F0 c J t : ℝ} (ht : 0 < t) (h : F0 + 2 * c < J) :
+        F0 / t + 2 * (c / t) < J / t
+
+    noncomputable def plin (h : ℝ) : List ℚ → ℝ → ℝ → ℝ
+      | [], _, _ => 0
+      | [a], _, _ => (a : ℝ)
+      | a :: b :: rest, y₀, y =>
+          if y ≤ y₀ + h then (a : ℝ) + ((b : ℝ) - a) * ((y - y₀) / h) else plin h (b :: rest) (y₀ + h) y
+    noncomputable def Acert (y : ℝ) : ℝ := plin (192 / 9625) nodesA (96 / 125) y
+    lemma Acert_tail (y : ℝ) (hy : 288 / 125 ≤ y) : Acert y = 0
+    lemma Acert_range (y : ℝ) (hy : 96 / 125 ≤ y) :
+        (-378347742845 / 758342134484 : ℝ) ≤ Acert y ∧ Acert y ≤ 0
+
+    noncomputable def horner : List ℚ → ℝ → ℝ
+      | [], _ => 0
+      | a :: L, w => (a : ℝ) + w * horner L w
+    def CertP : Prop := ∀ w : ℝ, 0 ≤ w → 0 < horner pcoef w
+    def CertQ : Prop
+    def HermRep (f fh : ℝ → ℝ) : Prop
+    lemma pos_of_rep {f fh : ℝ → ℝ} (hrep : HermRep f fh) (hP : CertP) (α : ℝ) : 0 < f α
+    lemma neg_of_rep {f fh : ℝ → ℝ} (hrep : HermRep f fh) (hQ : CertQ) (u : ℝ) (hu : 288 / 125 ≤ u) :
+        fh u < 0
+    lemma fh0_of_rep {f fh : ℝ → ℝ} (hrep : HermRep f fh) : fh 0 ≤ 10011 / 10000
+
+    def CertPos (f : ℝ → ℝ) : Prop := ∀ α : ℝ, 0 ≤ α → 0 < f α
+    def CertNeg (C : TestCalc) (f : ℝ → ℝ) : Prop := ∀ u : ℝ, 288 / 125 ≤ u → C.hat f u < 0
+    def CertJ (C : TestCalc) (f : ℝ → ℝ) : Prop
+    def CertF0 (C : TestCalc) (f : ℝ → ℝ) : Prop := C.hat f 0 ≤ 10011 / 10000
+    def CertA (A : ℝ → ℝ) : Prop
+    noncomputable def Phi (C : TestCalc) (f A : ℝ → ℝ) (x y : ℝ) : ℝ
+    def CertR1 (C : TestCalc) (f A : ℝ → ℝ) : Prop
+    def CertR2 (C : TestCalc) (f A : ℝ → ℝ) : Prop
+    lemma certHH {C : TestCalc} {f A : ℝ → ℝ} (hneg : CertNeg C f) (hA : CertA A)
+        (hR1 : CertR1 C f A) (hR2 : CertR2 C f A) :
+        HH (96 / 125) (416188506333 / 640725853462) (-347861653223 / 1000000000000) (C.hat f) A
+    lemma cert_margin {C : TestCalc} {f : ℝ → ℝ} (hJ : CertJ C f) (hF0 : CertF0 C f) :
+        C.hat f 0 + 2 * (-347861653223 / 1000000000000) < C.J (399993 / 700000) f
+    theorem dpos_768 {Z : Zeros} {C : TestCalc} (hZ : Z.Ordered) (hsc : ScaleToInf Z) (hRvM : RvM Z)
+        (h12 : Steps12 Z C) (hFC : FourierCc2 C) (hT : LemmaT' C) {f A : ℝ → ℝ}
+        (hS : C.Sch f) (he : ∀ x, f (-x) = f x) (hpos : CertPos f) (hneg : CertNeg C f)
+        (hJ : CertJ C f) (hF0 : CertF0 C f) (hA : CertA A) (hR1 : CertR1 C f A) (hR2 : CertR2 C f A) :
+        DPos Z (96 / 125)
+    theorem dpos_ge_768 {Z : Zeros} {C : TestCalc} (hZ : Z.Ordered) (hsc : ScaleToInf Z) (hRvM : RvM Z)
+        (h12 : Steps12 Z C) (hFC : FourierCc2 C) (hT : LemmaT' C) {f A : ℝ → ℝ}
+        (hS : C.Sch f) (he : ∀ x, f (-x) = f x) (hpos : CertPos f) (hneg : CertNeg C f)
+        (hJ : CertJ C f) (hF0 : CertF0 C f) (hA : CertA A) (hR1 : CertR1 C f A) (hR2 : CertR2 C f A) :
+        ∀ lam : ℝ, 96 / 125 ≤ lam → DPos Z lam := fun _ hlam =>
+      (dpos_768 hZ hsc hRvM h12 hFC hT hS he hpos hneg hJ hF0 hA hR1 hR2).mono hlam
+    theorem dpos_ge_768_exact {Z : Zeros} {C : TestCalc} (hZ : Z.Ordered) (hsc : ScaleToInf Z)
+        (hRvM : RvM Z) (h12 : Steps12 Z C) (hFC : FourierCc2 C) (hT : LemmaT' C) {f : ℝ → ℝ}
+        (hS : C.Sch f) (he : ∀ x, f (-x) = f x) (hrep : HermRep f (C.hat f)) (hP : CertP) (hQ : CertQ)
+        (hJ : CertJ C f) (hR1 : CertR1 C f Acert) (hR2 : CertR2 C f Acert) :
+        ∀ lam : ℝ, 96 / 125 ≤ lam → DPos Z lam
+
+    noncomputable def Dlam (Z : Zeros) (lam : ℝ) : ℝ
+    theorem dpos_iff {Z : Zeros} (hN : ∀ K : ℝ, ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → K ≤ (Z.N T : ℝ))
+        (lam : ℝ) : DPos Z lam ↔ 0 < Dlam Z lam
+    lemma nToInf {Z : Zeros} (hsc : ScaleToInf Z) (hRvM : RvM Z) :
+        ∀ K : ℝ, ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → K ≤ (Z.N T : ℝ)
+
+    theorem theorem1_D {Z : Zeros} {C : TestCalc} (hZ : Z.Ordered) (hsc : ScaleToInf Z) (hRvM : RvM Z)
+        (h12 : Steps12 Z C) (hFC : FourierCc2 C) (hT : LemmaT' C)
+        {θ lam U β c : ℝ} {f A : ℝ → ℝ}
+        (hθ1 : 1 / 2 < θ) (hθ2 : θ < 4 / 7) (hlam0 : 0 < lam) (hlam1 : lam ≤ 1)
+        (hU1 : lam < U) (hU3 : U ≤ 3 * lam)
+        (hfS : C.Sch f) (hfe : ∀ x, f (-x) = f x) (hfn : ∀ x, 0 ≤ f x)
+        (hfneg : ∀ u, U ≤ u → C.hat f u ≤ 0)
+        (hA : ∃ K : ℝ, ∀ y, lam ≤ y → |A y| ≤ K) (hβ : 0 ≤ β) (hH : HH lam β c (C.hat f) A)
+        (hJ : C.hat f 0 + 2 * c < C.J θ f) : 0 < Dlam Z lam
+    theorem D_pos_ge_768 {Z : Zeros} {C : TestCalc} (hZ : Z.Ordered) (hsc : ScaleToInf Z) (hRvM : RvM Z)
+        (h12 : Steps12 Z C) (hFC : FourierCc2 C) (hT : LemmaT' C) {f : ℝ → ℝ}
+        (hS : C.Sch f) (he : ∀ x, f (-x) = f x) (hrep : HermRep f (C.hat f)) (hP : CertP) (hQ : CertQ)
+        (hJ : CertJ C f) (hR1 : CertR1 C f Acert) (hR2 : CertR2 C f Acert) :
+        ∀ lam : ℝ, 96 / 125 ≤ lam → 0 < Dlam Z lam := fun lam hlam =>
+      (dpos_iff (nToInf hsc hRvM) lam).1
+        (dpos_ge_768_exact hZ hsc hRvM h12 hFC hT hS he hrep hP hQ hJ hR1 hR2 lam hlam)
+    
+    end PPLean
