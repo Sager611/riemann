@@ -1,0 +1,21 @@
+c=2.500 a=0.4581 | Arch even -1.6150 | Arch mass-zero 0.2696 | Arch+pole -0.01019 | Q 1.029e-05 | (Q-pole) on cosh-perp 5.239e-02
+c=3.000 a=0.5493 | Arch even -1.8363 | Arch mass-zero 0.0877 | Arch+pole -0.07396 | Q 5.569e-08 | (Q-pole) on cosh-perp 9.471e-04
+mass-zero Arch threshold: c = 3.31647, a = 0.59945 (N = 90)
+        3.77 real         3.04 user         0.29 sys
+            81821696  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               15229  page reclaims
+                 186  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 251  voluntary context switches
+                5854  involuntary context switches
+           460110850  instructions retired
+           204053184  cycles elapsed
+            28590584  peak memory footprint
