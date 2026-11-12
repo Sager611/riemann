@@ -1,5 +1,9 @@
-import Riemann.Deep.Combos.Lean.Thm1pI
-import Riemann.Deep.Combos.Lean.Thm1pL
+module
+
+public import Riemann.Deep.Combos.Lean.Thm1pI
+public import Riemann.Deep.Combos.Lean.Thm1pL
+
+@[expose] public section
 
 /-! # Theorem 1′(a): the window bound (RCApps2 l.33, 57) and the last line -/
 

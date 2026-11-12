@@ -1,4 +1,8 @@
-import Riemann.Deep.Combos.Lean.LatticeC
+module
+
+public import Riemann.Deep.Combos.Lean.LatticeC
+
+@[expose] public section
 
 /-! # Lemma 1 (primitive lattice points), NOTE l.67–75: the statement -/
 

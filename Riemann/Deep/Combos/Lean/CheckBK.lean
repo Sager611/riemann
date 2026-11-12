@@ -1,8 +1,8 @@
-import Riemann.Deep.Combos.Lean.Count
-import Riemann.Deep.Combos.Lean.Expo1pB
-import Riemann.Deep.Combos.Lean.Expo1pC
-import Riemann.Deep.Combos.Lean.Expo1pD
-import Riemann.Deep.Combos.Lean.Thm1pL
+module
+
+public import Riemann.Deep.Combos.Lean.Thm1pMain
+
+/-! # axioms of the Theorem 1′(a) chain -/
 
 #print axioms RingClass.ZeroData.N_le
 #print axioms RingClass.ZeroData.Xs_card_le
@@ -14,4 +14,10 @@ import Riemann.Deep.Combos.Lean.Thm1pL
 #print axioms RingClass.final_exp
 #print axioms RingClass.large_arith
 #print axioms RingClass.small_arith
-
+#print axioms RingClass.RCZeros.window
+#print axioms RingClass.fin_step
+#print axioms RingClass.large_case
+#print axioms RingClass.small_case
+#print axioms RingClass.case_combine
+#print axioms RingClass.per_D
+#print axioms RingClass.thm1'a

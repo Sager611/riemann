@@ -1,5 +1,9 @@
-import Riemann.Deep.Combos.Lean.SieveC
-import Riemann.Deep.Combos.Lean.ZetaB
+module
+
+public import Riemann.Deep.Combos.Lean.SieveC
+public import Riemann.Deep.Combos.Lean.ZetaB
+
+@[expose] public section
 
 /-!
 # Combos NOTE §1, Lemma 2 (weighted large sieve for ring class characters), NOTE l.76–89

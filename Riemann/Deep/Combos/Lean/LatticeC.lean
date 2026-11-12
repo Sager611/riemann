@@ -1,4 +1,8 @@
-import Riemann.Deep.Combos.Lean.LatticeB
+module
+
+public import Riemann.Deep.Combos.Lean.LatticeB
+
+@[expose] public section
 
 /-! # Lemma 1, the final arithmetic and statement (NOTE l.67–75) -/
 

@@ -1,4 +1,8 @@
-import Riemann.Deep.Combos.Lean.Thm1pW
+module
+
+public import Riemann.Deep.Combos.Lean.Thm1pW
+
+@[expose] public section
 
 /-! # Theorem 1′(a), large 𝔔 (𝔔 ≥ 𝔔₀(ε₀)): RCApps2 l.35–61 -/
 
@@ -34,8 +38,8 @@ lemma large_case {X : Type*} [Fintype X] [DecidableEq X] (d : RCZeros X) {c₀ c
       d.detII ((9 * d.absD) ^ (1 / 2 : ℝ)) χ ρ.im)
     (fun χ hχ ρ hρ hσ => h.L5 σ h0 h1 _ _ hV2 hVY χ hχ t ρ hρ hσ)
     _ _
-    (fun S ρ hS => h.classI ε₀ he he1 hQ σ h0 h1 t _ hVY S ρ hS)
-    (fun S ρ hS => h.classII ε₀ he he1 σ h0 h1 t _ hVY S ρ hS)
+    (fun S ρ hS => h.classI ε₀ he he1 hQ σ h0 h1 t S ρ hS)
+    (fun S ρ hS => h.classII ε₀ he he1 σ h0 h1 t S ρ hS)
   have e2 := classII_exp (9 * d.absD) T σ ε₀ (by linarith only [hD3]) hT h1
   have hBII : CII ε₀ * (W ^ (1 / (3 - 2 * σ))) ^ (1 / 2 - σ) * (9 * d.absD) ^ (1 / 2 + ε₀) *
       T ^ (1 / 2 + ε₀) = CII ε₀ * W ^ (ee σ + ε₀) := by

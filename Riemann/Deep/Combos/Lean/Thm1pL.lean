@@ -1,6 +1,10 @@
-import Mathlib.Basic.Real.Basic
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Ring
+module
+
+public import Mathlib.Basic.Real.Basic
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Ring
+
+@[expose] public section
 
 /-! # Theorem 1′(a): final arithmetic of the large-𝔔 case (RCApps2 l.57), power-free:
 E = W^{ε₀}, U₁ = W^{e+4ε₀}, U₂ = W^{e+ε₀}, P = W^{e+5ε₀} enter only through EU₁ = P, EU₂ ≤ P, E ≤ P. -/

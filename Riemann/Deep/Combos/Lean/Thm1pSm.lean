@@ -1,4 +1,8 @@
-import Riemann.Deep.Combos.Lean.Thm1pW
+module
+
+public import Riemann.Deep.Combos.Lean.Thm1pW
+
+@[expose] public section
 
 /-! # Theorem 1′(a), small 𝔔 (𝔔 < 𝔔₀(ε₀)): RCApps2 l.33 ("we may assume 𝔔 ≥ 𝔔₀(ε)") -/
 

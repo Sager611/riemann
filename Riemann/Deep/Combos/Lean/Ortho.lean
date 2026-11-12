@@ -1,7 +1,11 @@
-import Mathlib.Algebra.Group.AddChar
-import Mathlib.Basic.Complex.BigOperators
-import Mathlib.GroupTheory.OrderOfElement
-import Mathlib.Tactic.Linarith
+module
+
+public import Mathlib.Algebra.Group.AddChar
+public import Mathlib.Basic.Complex.BigOperators
+public import Mathlib.GroupTheory.OrderOfElement
+public import Mathlib.Tactic.Linarith
+
+@[expose] public section
 
 /-!
 # Character orthogonality in Bessel form (for Lemma 2, NOTE l.82–83)

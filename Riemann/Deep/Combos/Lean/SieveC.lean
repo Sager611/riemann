@@ -1,4 +1,8 @@
-import Riemann.Deep.Combos.Lean.SieveB
+module
+
+public import Riemann.Deep.Combos.Lean.SieveB
+
+@[expose] public section
 
 /-! # Lemma 2 (NOTE l.76–89), core form: weight W and ζ-type constant Z₀ abstract, L = log(3|D|)
 abstract, |D|^{1/2} = √|D|; Lemma2.lean specialises W(m) = m^{1+2ε}, Z₀ = 1/ε, L = log(3|D|). -/

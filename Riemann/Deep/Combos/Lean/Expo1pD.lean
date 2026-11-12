@@ -1,4 +1,8 @@
-import Riemann.Deep.Combos.Lean.Expo1pA
+module
+
+public import Riemann.Deep.Combos.Lean.Expo1pA
+
+@[expose] public section
 
 /-! # Theorem 1′(a): window count and last step (RCApps2 l.57–61) -/
 

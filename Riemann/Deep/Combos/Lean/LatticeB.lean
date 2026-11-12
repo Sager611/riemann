@@ -1,4 +1,8 @@
-import Riemann.Deep.Combos.Lean.LatticeA
+module
+
+public import Riemann.Deep.Combos.Lean.LatticeA
+
+@[expose] public section
 
 /-! # Lemma 1, the row decomposition (NOTE l.71–74) -/
 

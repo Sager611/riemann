@@ -1,4 +1,8 @@
-import Riemann.Deep.Combos.Lean.Expo1pA
+module
+
+public import Riemann.Deep.Combos.Lean.Expo1pA
+
+@[expose] public section
 
 /-! # Theorem 1′(a): class II exponent (RCApps2 l.47–48, 59) -/
 

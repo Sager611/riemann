@@ -1,4 +1,8 @@
-import Riemann.Deep.Combos.Lean.Expo1pA
+module
+
+public import Riemann.Deep.Combos.Lean.Expo1pA
+
+@[expose] public section
 
 /-! # Theorem 1′(a): class I exponent, the exponent inequality (RCApps2 l.55, 59) -/
 

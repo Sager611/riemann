@@ -1,4 +1,8 @@
-import Riemann.Deep.Combos.Lean.Thm1pD
+module
+
+public import Riemann.Deep.Combos.Lean.Thm1pD
+
+@[expose] public section
 
 /-!
 # Theorem 1′(a) (RCApps2 NOTE Thm 1′(a) via Prop 1, l.28–68)
@@ -19,5 +23,4 @@ theorem thm1'a (c₀ c₁ : ℝ) (CI CII Q0 : ℝ → ℝ) (ε : ℝ) (hε : 0 <
 
 end RingClass
 
-#print axioms RingClass.thm1'a
 

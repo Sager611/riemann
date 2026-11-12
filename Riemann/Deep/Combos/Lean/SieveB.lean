@@ -1,4 +1,8 @@
-import Riemann.Deep.Combos.Lean.SieveA
+module
+
+public import Riemann.Deep.Combos.Lean.SieveA
+
+@[expose] public section
 
 /-! # Lemma 2, steps: decomposition 𝔞 = m𝔟 (l.80–81), π_C ≤ P_Q(N) and the constant (l.85–88),
 |B_𝔟|² ≤ ζ-bound · Σ_m weight·|c_{m𝔟}|² (l.88–89) -/

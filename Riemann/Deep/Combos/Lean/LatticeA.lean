@@ -1,7 +1,11 @@
-import Mathlib.Data.Int.Interval
-import Mathlib.Data.Int.GCD
-import Mathlib.Data.Set.Card
-import Mathlib.Analysis.Real.Sqrt
+module
+
+public import Mathlib.Data.Int.Interval
+public import Mathlib.Data.Int.GCD
+public import Mathlib.Data.Set.Card
+public import Mathlib.Analysis.Real.Sqrt
+
+@[expose] public section
 
 /-!
 # Combos NOTE §1, Lemma 1 (primitive lattice points), NOTE l.67–75

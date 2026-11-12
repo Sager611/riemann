@@ -1,6 +1,10 @@
-import Riemann.Deep.Combos.Lean.Lemma1
-import Riemann.Deep.Combos.Lean.Ortho
-import Mathlib.Algebra.Order.BigOperators.Ring.Finset
+module
+
+public import Riemann.Deep.Combos.Lean.Lemma1
+public import Riemann.Deep.Combos.Lean.Ortho
+public import Mathlib.Algebra.Order.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-!
 # Combos NOTE §1, Lemma 2: the interface and the elementary inequalities

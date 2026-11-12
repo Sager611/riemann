@@ -1,0 +1,56 @@
+10:45:52 Count rc=0 15s exact=250MB memcap: peak 175 MB rc=0
+10:46:38 Expo1pA rc=137 46s exact=MB memcap: peak 318 MB KILLED MEM>290MB rc=137
+FAIL Expo1pA
+10:48:03 P1 rc=0 57s exact=318MB memcap: peak 282 MB rc=0
+10:48:20 P2 rc=0 17s exact=293MB memcap: peak 198 MB rc=0
+10:51:57 Expo1pA rc=137 96s exact=MB memcap: peak 317 MB KILLED MEM>290MB rc=137
+10:53:04 Expo1pA rc=0 46s exact=311MB memcap: peak 247 MB rc=0
+10:53:55 Count rc=0 16s exact=236MB memcap: peak 226 MB rc=0
+10:54:49 Expo1pB rc=0 54s exact=303MB memcap: peak 250 MB rc=0
+10:55:06 Expo1pC1 rc=0 17s exact=308MB memcap: peak 196 MB rc=0
+10:55:14 Expo1pC2 rc=0 8s exact=305MB memcap: peak 0 MB rc=0
+10:55:22 Expo1pC3 rc=0 8s exact=302MB memcap: peak 0 MB rc=0
+10:55:28 Expo1pC rc=137 6s exact=MB memcap: peak 294 MB KILLED MEM>290MB rc=137
+FAIL Expo1pC
+10:56:47 Expo1pC rc=0 30s exact=309MB memcap: peak 248 MB rc=0
+10:57:14 Expo1pD rc=0 16s exact=308MB memcap: peak 246 MB rc=0
+10:57:22 Thm1pL rc=0 8s exact=231MB memcap: peak 224 MB rc=0
+10:57:45 Thm1pI rc=0 22s exact=307MB memcap: peak 251 MB rc=0
+10:59:42 Thm1pW rc=137 117s exact=MB memcap: peak 295 MB KILLED MEM>290MB rc=137
+RETRY Thm1pW (watchdog kill)
+11:01:22 Thm1pW rc=0 100s exact=307MB memcap: peak 252 MB rc=0
+11:01:35 Thm1pLg rc=0 13s exact=310MB memcap: peak 0 MB rc=0
+11:01:48 Thm1pSm rc=0 13s exact=312MB memcap: peak 218 MB rc=0
+11:01:53 Thm1pD rc=137 5s exact=MB memcap: peak 297 MB KILLED MEM>290MB rc=137
+RETRY Thm1pD (watchdog kill)
+11:01:58 Thm1pD rc=137 5s exact=MB memcap: peak 298 MB KILLED MEM>290MB rc=137
+FAIL Thm1pD rc=137
+11:03:37 PD rc=0 14s exact=294MB memcap: peak 189 MB rc=0
+11:05:10 Thm1pD rc=137 51s exact=MB memcap: peak 300 MB KILLED MEM>290MB rc=137
+11:07:09 Thm1pK rc=0 16s exact=228MB memcap: peak 147 MB rc=0
+11:08:03 Thm1pD rc=0 38s exact=305MB memcap: peak 251 MB rc=0
+11:08:36 Thm1pMain rc=0 26s exact=302MB memcap: peak 280 MB rc=0
+11:09:49 CheckBK rc=137 48s exact=MB memcap: peak 295 MB KILLED MEM>290MB rc=137
+11:10:37 CheckBK rc=137 37s exact=MB memcap: peak 293 MB KILLED MEM>290MB rc=137
+11:11:10 CkMain rc=137 18s exact=MB memcap: peak 295 MB KILLED MEM>290MB rc=137
+11:12:32 CkMainNM rc=137 59s exact=MB memcap: peak 313 MB KILLED MEM>290MB rc=137
+11:13:41 CheckK rc=0 30s exact=220MB memcap: peak 175 MB rc=0
+11:13:58 LatticeA rc=0 17s exact=269MB memcap: peak 179 MB rc=0
+11:14:49 LatticeB rc=0 51s exact=286MB memcap: peak 263 MB rc=0
+11:15:07 LatticeC rc=0 18s exact=276MB memcap: peak 181 MB rc=0
+11:15:16 Lemma1 rc=0 9s exact=275MB memcap: peak 261 MB rc=0
+11:15:25 Ortho rc=0 9s exact=256MB memcap: peak 247 MB rc=0
+11:15:52 SieveA rc=0 27s exact=286MB memcap: peak 265 MB rc=0
+11:16:11 SieveB rc=0 19s exact=279MB memcap: peak 211 MB rc=0
+11:17:37 SieveC rc=0 86s exact=273MB memcap: peak 259 MB rc=0
+11:18:56 ZetaA rc=137 79s exact=MB memcap: peak 295 MB KILLED MEM>290MB rc=137
+RETRY ZetaA (watchdog kill)
+11:19:32 ZetaA rc=0 36s exact=309MB memcap: peak 253 MB rc=0
+11:19:51 ZetaB rc=0 19s exact=308MB memcap: peak 174 MB rc=0
+11:19:57 Lemma2 rc=137 6s exact=MB memcap: peak 297 MB KILLED MEM>290MB rc=137
+RETRY Lemma2 (watchdog kill)
+11:20:04 Lemma2 rc=137 7s exact=MB memcap: peak 297 MB KILLED MEM>290MB rc=137
+FAIL Lemma2 rc=137
+11:21:55 CkAx rc=0 16s exact=298MB memcap: peak 232 MB rc=0
+11:22:50 CkAx2 rc=0 9s exact=288MB memcap: peak 241 MB rc=0
+11:23:25 CkAx2 rc=0 18s exact=291MB memcap: peak 244 MB rc=0

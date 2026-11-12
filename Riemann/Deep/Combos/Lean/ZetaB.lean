@@ -1,4 +1,8 @@
-import Riemann.Deep.Combos.Lean.ZetaA
+module
+
+public import Riemann.Deep.Combos.Lean.ZetaA
+
+@[expose] public section
 
 /-! # ζ(1 + r) ≤ 1 + 1/r: the telescoped sum (NOTE l.89) -/
 

@@ -1,7 +1,11 @@
-import Riemann.Deep.Combos.Lean.Count
-import Riemann.Deep.Combos.Lean.Expo1pB
-import Riemann.Deep.Combos.Lean.Expo1pC
-import Riemann.Deep.Combos.Lean.Expo1pD
+module
+
+public import Riemann.Deep.Combos.Lean.Count
+public import Riemann.Deep.Combos.Lean.Expo1pB
+public import Riemann.Deep.Combos.Lean.Expo1pC
+public import Riemann.Deep.Combos.Lean.Expo1pD
+
+@[expose] public section
 
 /-!
 # Theorem 1′(a) (RCApps2 NOTE Prop 1 + Thm 1′(a), l.28–68): interface and named inputs
@@ -42,22 +46,23 @@ structure RCZeros.Hyp {X : Type*} [Fintype X] (d : RCZeros X) (c₀ c₁ : ℝ)
   L5 : ∀ σ, 0.6 ≤ σ → σ ≤ 1 → ∀ V Y, 2 ≤ V → V ≤ Y → ∀ χ, χ ≠ d.one → ∀ t, ∀ ρ ∈ d.win χ t,
     σ ≤ ρ.re → 1 / 4 ≤ d.detI V Y χ ρ ∨ c₁ * Y ^ (σ - 1 / 2) ≤ d.detII V χ ρ.im
   /-- class II, first moment (RCApps2 l.40–48: Cauchy–Schwarz, [D2] (2.1) = Lemma 4 at mollifier
-  length 1, Lemma 2, Lemma 3), for every Y ≥ V: |𝒳_II| ≤ C(ε₀) Y^{1/2−σ} 𝔔^{1/2+ε₀} T^{1/2+ε₀} -/
-  classII : ∀ ε₀, 0 < ε₀ → ε₀ ≤ 1 / 10 → ∀ σ, 0.6 ≤ σ → σ ≤ 1 → ∀ t Y,
-    (9 * d.absD) ^ (1 / 2 : ℝ) ≤ Y →
+  length 1, Lemma 2, Lemma 3), at Y = (𝔔T)^{1/(3−2σ)}: |𝒳_II| ≤ C(ε₀) Y^{1/2−σ} 𝔔^{1/2+ε₀} T^{1/2+ε₀} -/
+  classII : ∀ ε₀, 0 < ε₀ → ε₀ ≤ 1 / 10 → ∀ σ, 0.6 ≤ σ → σ ≤ 1 → ∀ t,
     ∀ (S : Finset X) (ρ : X → ℂ), (∀ χ ∈ S, χ ≠ d.one ∧ ρ χ ∈ d.win χ t ∧ σ ≤ (ρ χ).re ∧
-      c₁ * Y ^ (σ - 1 / 2) ≤ d.detII ((9 * d.absD) ^ (1 / 2 : ℝ)) χ (ρ χ).im) →
-    (S.card : ℝ) ≤ CII ε₀ * Y ^ (1 / 2 - σ) * (9 * d.absD) ^ (1 / 2 + ε₀) * (|t| + 3) ^ (1 / 2 + ε₀)
+      c₁ * ((9 * d.absD * (|t| + 3)) ^ (1 / (3 - 2 * σ))) ^ (σ - 1 / 2) ≤
+        d.detII ((9 * d.absD) ^ (1 / 2 : ℝ)) χ (ρ χ).im) →
+    (S.card : ℝ) ≤ CII ε₀ * ((9 * d.absD * (|t| + 3)) ^ (1 / (3 - 2 * σ))) ^ (1 / 2 - σ) *
+      (9 * d.absD) ^ (1 / 2 + ε₀) * (|t| + 3) ^ (1 / 2 + ε₀)
   /-- class I, no k-th powers (RCApps2 l.50–55: tail beyond Z, dyadic blocks, removal of β, (LS) =
-  Lemma 2, Sobolev, Lemma 3), for 𝔔 ≥ 𝔔₀(ε₀) and every Y ≥ V (stronger than the NOTE for
-  Y ≫ (𝔔T)^{O(1)}; only Y = (𝔔T)^{1/(3−2σ)} is used, see LEAN.md):
+  Lemma 2, Sobolev, Lemma 3), for 𝔔 ≥ 𝔔₀(ε₀), at Y = (𝔔T)^{1/(3−2σ)}:
   |𝒳_I| ≤ C(ε₀) (𝔔T)^{ε₀} Z^{2−2σ+2ε₀}, Z = 2Y log²Y -/
-  classI : ∀ ε₀, 0 < ε₀ → ε₀ ≤ 1 / 10 → Q0 ε₀ ≤ 9 * d.absD → ∀ σ, 0.6 ≤ σ → σ ≤ 1 → ∀ t Y,
-    (9 * d.absD) ^ (1 / 2 : ℝ) ≤ Y →
+  classI : ∀ ε₀, 0 < ε₀ → ε₀ ≤ 1 / 10 → Q0 ε₀ ≤ 9 * d.absD → ∀ σ, 0.6 ≤ σ → σ ≤ 1 → ∀ t,
     ∀ (S : Finset X) (ρ : X → ℂ), (∀ χ ∈ S, χ ≠ d.one ∧ ρ χ ∈ d.win χ t ∧ σ ≤ (ρ χ).re ∧
-      1 / 4 ≤ d.detI ((9 * d.absD) ^ (1 / 2 : ℝ)) Y χ (ρ χ)) →
+      1 / 4 ≤ d.detI ((9 * d.absD) ^ (1 / 2 : ℝ)) ((9 * d.absD * (|t| + 3)) ^ (1 / (3 - 2 * σ)))
+        χ (ρ χ)) →
     (S.card : ℝ) ≤ CI ε₀ * (9 * d.absD * (|t| + 3)) ^ ε₀ *
-      (2 * Y * Real.log Y ^ 2) ^ (2 - 2 * σ + 2 * ε₀)
+      (2 * (9 * d.absD * (|t| + 3)) ^ (1 / (3 - 2 * σ)) *
+        Real.log ((9 * d.absD * (|t| + 3)) ^ (1 / (3 - 2 * σ))) ^ 2) ^ (2 - 2 * σ + 2 * ε₀)
   CI_nonneg : ∀ ε₀, 0 ≤ CI ε₀
   CII_nonneg : ∀ ε₀, 0 ≤ CII ε₀
 
