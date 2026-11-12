@@ -1,0 +1,6 @@
+/Users/adriansager/playground/riemann/Riemann/Deep/LiuAudit2/code/theta_smooth_q12.py:68: RuntimeWarning: divide by zero encountered in divide
+  num = (S*(w[:, None]/V)).sum(0); den = ((w[:, None]**2)/V).sum(0)
+/Users/adriansager/playground/riemann/Riemann/Deep/LiuAudit2/code/theta_smooth_q12.py:68: RuntimeWarning: invalid value encountered in multiply
+  num = (S*(w[:, None]/V)).sum(0); den = ((w[:, None]**2)/V).sum(0)
+/Users/adriansager/playground/riemann/Riemann/Deep/LiuAudit2/code/theta_smooth_q12.py:80: RuntimeWarning: invalid value encountered in scalar divide
+  print("    k=%+d b=%d: " % (k, b) + "  ".join("%d:%.2f/%.2f" % (D, abs(S[j, b])/math.sqrt(V[j, b]), np.angle(S[j, b])/(2*math.pi)) for j, D in enumerate(Ds)))

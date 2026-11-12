@@ -1,0 +1,14 @@
+prime ideals coprime to 6 with norm <= 10000: 1236 (3.8s)
+3-allowed generators built (4.2s)
+gamma_2, Lambda for all primes (5.3s); max | |gamma2|-1 | = 1.2e-15; max |gamma2^3 + Lambda| = 3.9e-15
+cubic reciprocity on 3-allowed generators: 276 pairs, 0 failures
+squarefree exterior ideals with norm <= 10000: 2329 (5.3s)
+        X  n/class |       rms g2  rms Lbar g2     rms L g2 |    b=0: g2    Lbar g2       L g2
+     1000      3.0 |         2.28         1.90         1.64 |       1.00       1.00       1.00
+     3000      8.6 |         3.85         3.01         3.11 |       2.65       2.65       2.65
+    10000     28.8 |         9.60         6.23         5.77 |       7.78       8.30       5.88
+growth exponent of rms_b |sum g2| between X=1000 and 10000: 0.625
+growth exponent of rms_b |sum Lbg2| between X=1000 and 10000: 0.517
+growth exponent of rms_b |sum Lg2| between X=1000 and 10000: 0.547
+random-walk reference sqrt(n/class): exponent 0.493
+elapsed 5.3s

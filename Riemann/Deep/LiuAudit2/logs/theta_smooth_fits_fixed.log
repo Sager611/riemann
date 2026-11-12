@@ -1,0 +1,37 @@
+replayed 69796 squarefree ideals; norms match: True; Lambda match err 0.0e+00; classes match: True; with a degree-2 prime factor: 10586
+(A) all coefficients (Liu's full sum: c squarefree, n any; 81 classes; 8 dyadic windows 2343..299977)
+   k   R(Dmax) | theta=5/6: max z2 (class)  #z2>9  mean z2  p_fw     | theta=1/2: max z2 (class)  #z2>9  mean z2  p_fw
+  -3    1.050 |     5.59 ( 5)      0     1.08  0.26 |     4.77 ( 5)      0     1.09  0.5
+  -2    1.277 |     6.46 ( 5)      0     1.06  0.12 |     5.52 ( 5)      0     1.02  0.28
+  -1    1.180 |     5.45 (16)      0     0.66  0.29 |     4.46 (16)      0     0.62  0.61
+  +0   27.431 |   214.62 ( 7)     77    60.46  0 |   172.94 (27)     69    42.86  0
+  +1    1.341 |     5.78 (23)      0     0.86  0.22 |     4.53 (23)      0     0.70  0.59
+  +2    0.868 |    10.98 ( 7)      1     0.95  0.0014 |     9.90 ( 7)      1     1.28  0.0041
+  +3    0.917 |     4.98 (32)      0     1.46  0.43 |     7.06 (61)      0     1.51  0.067
+(B) without degree-2 primes (c with a degree-2 factor and cube parts n of degree 2 removed)
+   k   R(Dmax) | theta=5/6: max z2 (class)  #z2>9  mean z2  p_fw     | theta=1/2: max z2 (class)  #z2>9  mean z2  p_fw
+  -3    0.978 |     4.96 (79)      0     0.98  0.43 |     5.81 (36)      0     1.04  0.22
+  -2    1.124 |     3.53 (45)      0     0.98  0.91 |     4.52 (40)      0     1.06  0.59
+  -1    1.235 |     5.77 ( 5)      0     0.80  0.22 |     4.08 ( 5)      0     0.77  0.75
+  +0   23.589 |   178.70 ( 0)     75    50.36  0 |   149.01 (54)     63    35.44  0
+  +1    1.464 |     8.01 (23)      0     1.17  0.026 |     6.74 (23)      0     1.03  0.091
+  +2    0.875 |     4.99 ( 7)      0     1.01  0.42 |     6.70 (42)      0     1.38  0.095
+  +3    1.132 |     6.09 (41)      0     1.58  0.17 |     8.59 (61)      0     1.41  0.015
+
+(C) class 0, k = -1, per window (all coefficients): |S|/sigma, arg/2pi; same with degree-2 terms removed
+   all       2343:0.99/-0.50  4687:1.85/-0.50  9374:1.45/-0.00  18748:1.20/-0.50  37497:1.50/0.50  74994:0.27/0.00  149988:0.98/0.50  299977:1.46/-0.00
+   no deg-2  2343:0.99/-0.50  4687:1.29/-0.50  9374:1.66/-0.00  18748:0.07/-0.50  37497:2.15/0.50  74994:0.16/0.00  149988:0.04/0.00  299977:1.77/-0.00
+   only c with a degree-2 factor: 2343:nan/0.00  4687:1.41/-0.50  9374:1.41/0.50  18748:0.48/-0.00  37497:0.82/-0.00  74994:0.63/-0.00  149988:1.83/0.50  299977:1.38/0.50
+
+(D) growth and phase per (k, b): slope of log(|S|/sigma) against log D (pole 5/6: +1/3; random walk or O(sqrt D) bias: 0),
+    phase concentration Rbar = |mean_j S_j/|S_j|| (fixed phase: 1; random phases: about 1/sqrt(n_windows)); empirical null = the 5 other nonzero twists
+  k=-3: mean slope -0.040 (sd 0.141); class 0 slope -0.078, Rbar 0.00, z2 0.06; max Rbar 0.54 (class 77); classes with Rbar > 0.8: 0
+  k=-2: mean slope -0.050 (sd 0.138); class 0 slope -0.108, Rbar 0.00, z2 1.33; max Rbar 0.75 (class 1); classes with Rbar > 0.8: 0
+  k=-1: mean slope -0.029 (sd 0.141); class 0 slope -0.090, Rbar 0.25, z2 0.10; max Rbar 0.60 (class 45); classes with Rbar > 0.8: 0
+  k=+0: mean slope 0.270 (sd 0.065); class 0 slope 0.331, Rbar 1.00, z2 172.09; max Rbar 1.00 (class 0); classes with Rbar > 0.8: 55
+  k=+1: mean slope -0.012 (sd 0.111); class 0 slope 0.131, Rbar 0.25, z2 0.10; max Rbar 0.45 (class 32); classes with Rbar > 0.8: 0
+  k=+2: mean slope -0.061 (sd 0.147); class 0 slope 0.134, Rbar 0.25, z2 1.95; max Rbar 0.78 (class 78); classes with Rbar > 0.8: 0
+  k=+3: mean slope -0.049 (sd 0.163); class 0 slope -0.208, Rbar 0.25, z2 0.22; max Rbar 0.74 (class 61); classes with Rbar > 0.8: 0
+  empirical null for z2(5/6), class 0, k=-1: value 0.104; fraction of null class statistics >= value: 0.9012 (n = 405)
+  empirical null for Rbar, class 0, k=-1: value 0.250; fraction of null class statistics >= value: 0.6123 (n = 405)
+  empirical null for max_b z2(5/6), k=-1: value 5.449; fraction of null class statistics >= value: 0.8000 (n = 5)

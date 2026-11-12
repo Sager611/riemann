@@ -1,0 +1,40 @@
+cube cofactors n with q_n^3 <= 299977: 17 (norms [1, 13, 25, 37, 49, 61])
+W^(5/6) = 0.116653; scales D = [1171, 2343, 4687, 9374, 18748, 37497, 74994, 149988, 299977]
+
+(1) energy ratio R_k(D) = sum_b |S_{k,b}(D)|^2 / sum_b sigma_{k,b}(D)^2  (random walk ~ 1; Liu k=-1: << 1; pole: grows like D^{2/3})
+        D      k=-3      k=-2      k=-1      k=+0      k=+1      k=+2      k=+3
+     1171     1.589     1.390     1.259     1.677     1.453     1.222     1.241
+     2343     1.295     0.866     1.449     2.373     1.499     1.041     0.960
+     4687     0.995     1.220     1.233     2.335     1.000     1.244     1.300
+     9374     1.401     1.241     0.846     3.983     0.629     1.280     1.316
+    18748     1.465     1.306     0.866     5.025     1.129     1.237     1.399
+    37497     1.000     1.050     1.451     9.070     0.961     1.143     1.139
+    74994     1.137     1.376     1.005    10.252     0.686     1.190     1.135
+   149988     1.030     1.327     1.115    17.214     1.135     1.144     1.334
+   299977     1.050     1.277     1.180    27.431     1.341     0.868     0.917
+
+(2) k = 0 (positive control): fit S_{0,b}(D) = C_b W^(5/6) D^(5/6) over the scales; relative residual energy
+    fraction of energy explained by C_b D^(5/6): 0.9628 ; residual energy / random-walk energy: 0.749
+    theta = 0.5000: explained 0.9032
+    theta = 0.6667: explained 0.9495
+    theta = 0.8333: explained 0.9628
+    theta = 1.0000: explained 0.9584
+    |C_b|: rms 0.0066, max 0.0178 (class 0); total sum over classes: |sum_b C_b| = 0.0057
+
+(3) Patterson-type coherent fit for every k: C_{k,b} from S_{k,b}(D) ~ C W^ D^(5/6), z_{k,b}^2 = |C_hat|^2 / Var(C_hat) under the
+    random-walk null (Var from sigma^2; complex Gaussian: P(z^2 > t) = e^{-t}); look-elsewhere over 81 classes: p_fw = 1-(1-e^{-zmax^2})^81
+    k=-3: max z^2 =     nan (class  0), classes with z^2 > 9:  0, mean z^2 =    nan, family-wise p = nan
+    k=-2: max z^2 =     nan (class  0), classes with z^2 > 9:  0, mean z^2 =    nan, family-wise p = nan
+    k=-1: max z^2 =     nan (class  0), classes with z^2 > 9:  0, mean z^2 =    nan, family-wise p = nan
+    k=+0: max z^2 =     nan (class  0), classes with z^2 > 9: 61, mean z^2 =    nan, family-wise p = nan
+    k=+1: max z^2 =     nan (class  0), classes with z^2 > 9:  0, mean z^2 =    nan, family-wise p = nan
+    k=+2: max z^2 =     nan (class  0), classes with z^2 > 9:  0, mean z^2 =    nan, family-wise p = nan
+    k=+3: max z^2 =     nan (class  0), classes with z^2 > 9:  0, mean z^2 =    nan, family-wise p = nan
+
+(4) class 0 and class 9 trajectories, k = -1 (Liu's a_0) and k = 0:  |S|/sigma and arg(S)/2pi per scale
+    k=-1 b=0: 1171:nan/0.00  2343:0.99/-0.50  4687:1.85/-0.50  9374:1.45/-0.00  18748:1.20/-0.50  37497:1.50/0.50  74994:0.27/0.00  149988:0.98/0.50  299977:1.46/-0.00
+    k=-1 b=9: 1171:1.43/0.39  2343:1.41/0.35  4687:1.75/-0.27  9374:0.57/0.29  18748:0.80/-0.07  37497:0.31/0.07  74994:2.04/0.00  149988:1.58/0.31  299977:0.71/-0.17
+    k=+0 b=0: 1171:nan/0.00  2343:2.34/-0.00  4687:2.29/0.00  9374:2.41/-0.00  18748:3.12/-0.00  37497:6.55/-0.00  74994:5.07/-0.00  149988:8.03/-0.00  299977:9.80/-0.00
+    k=+0 b=9: 1171:1.43/-0.45  2343:1.41/-0.42  4687:2.26/-0.36  9374:3.26/0.46  18748:3.63/-0.42  37497:2.55/-0.49  74994:4.38/-0.43  149988:7.76/-0.40  299977:7.55/-0.45
+    k=+1 b=0: 1171:nan/0.00  2343:0.99/-0.50  4687:0.48/-0.50  9374:0.13/-0.50  18748:0.83/-0.50  37497:0.88/0.50  74994:0.87/0.00  149988:0.56/-0.00  299977:1.16/-0.00
+    k=+1 b=9: 1171:1.42/-0.29  2343:1.41/-0.20  4687:0.41/0.41  9374:0.84/-0.21  18748:0.78/0.10  37497:0.75/-0.37  74994:0.91/0.49  149988:0.57/0.36  299977:1.48/0.04

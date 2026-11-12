@@ -1,0 +1,37 @@
+squarefree exterior ideals: 69796, X_max = 299977
+class sizes at X_max: mean 861.7, min 841, max 892, class 0: 841
+
+(1) normalized class energy E(X) = mean_b |S_b|^2 / mean_b n_b  (random walk ~ 1)
+        X               g2    Lbar g2 (a_0)             L g2
+     1000             1.75             1.21             0.90
+     1680             2.01             1.31             0.90
+     2821             1.73             0.99             1.11
+     4738             2.14             1.00             0.89
+     7957             2.64             1.12             0.90
+    13364             3.58             1.41             0.86
+    22446             4.07             1.32             0.81
+    37699             5.39             1.28             0.81
+    63317             6.22             1.39             0.92
+   106343             7.67             1.55             0.89
+   178607             9.78             1.57             1.05
+   299977            12.17             1.63             1.25
+
+(2) coherence between X1 = X_max/10 and X_max (random walk ~ sqrt(n(X1)/n(X2)))
+  g2               C = 0.899   random-walk value 0.316
+  Lbar g2 (a_0)    C = 0.545   random-walk value 0.316
+  L g2             C = 0.218   random-walk value 0.316
+
+(3) main-term fit S_b(X) = c_b X^(5/6) over the 12 checkpoints, fraction of sum_b sum_X |S_b(X)|^2 explained
+  g2               explained fraction 0.964; |c_b| rms 0.0029; top classes [(0, 0.0053), (38, 0.005), (27, 0.0048), (14, 0.0048)]
+  Lbar g2 (a_0)    explained fraction 0.802; |c_b| rms 0.0011; top classes [(0, 0.0039), (27, 0.003), (9, 0.0025), (4, 0.0021)]
+  L g2             explained fraction 0.699; |c_b| rms 0.0008; top classes [(17, 0.002), (26, 0.0018), (70, 0.0017), (14, 0.0016)]
+
+(4) class 0 trajectory |S_0(X)| / sqrt(n_0(X)) and arg S_0(X)/(2 pi)
+  g2               1000:1.00/0.00  2821:1.18/0.11  7957:2.07/0.08  22446:2.04/0.12  63317:4.71/0.02  178607:5.87/0.01
+  Lbar g2 (a_0)    1000:1.00/0.00  2821:1.18/0.39  7957:2.31/0.43  22446:1.88/0.46  63317:3.35/0.43  178607:4.46/0.44
+  L g2             1000:1.00/0.00  2821:1.18/0.39  7957:1.54/0.39  22446:0.83/0.45  63317:0.63/-0.07  178607:0.40/0.42
+
+(5) at X_max: classes with |S_b|^2/n_b > 9 (3-sigma for a random walk):
+  g2               42 classes; max 40.9 at class 0; expected count under random walk 0.01
+  Lbar g2 (a_0)    2 classes; max 20.6 at class 0; expected count under random walk 0.01
+  L g2             0 classes; max 7.5 at class 17; expected count under random walk 0.01

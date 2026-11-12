@@ -1,0 +1,5 @@
+identity (l.8355-8359): True
+E(e) <= E(0) - e/6 on 400000 samples: max excess 1.110e-16 ok
+E(0) <= M' + (d+5l-1)_+/4 on 400000 samples: max excess -2.114e-02 ok
+(13.7) nonprincipal True, principal True, zero-frequency True, sum_dyadic C0^(-1/6) = 1/(1 - 2**(5/6)/2)
+RESULT: PASS

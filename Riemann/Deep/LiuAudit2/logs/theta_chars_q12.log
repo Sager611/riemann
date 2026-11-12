@@ -1,0 +1,21 @@
+local tables: |(O/8)^x|=3072 |sq|=96 |cu|=1024 dim2=5 dim3=1; |(O/9)^x|=5832 |sq|=2916 |cu|=24 dim2=1 dim3=5
+prime ideals with norm <= 3000: 420, generators found for 418
+residue fields built 3.2s
+T1 gamma2^3 = -Lambda: 418 primes, max err 1.73e-14; T2 duplication: 418 primes, max err 1.35e-14  (5.8s)
+T3 unit image ranks: V2 4, V3 4 (Lemma 3.4: 4 = |S_f| + [F:Q]/2)
+basis primes V2: [('lin', 13), ('lin', 13), ('lin', 13), ('quad', 5)]  V3: [('lin', 13), ('lin', 13), ('lin', 13), ('lin', 37)]
+T3 Gram ranks: h2 8/8, h3 8/8; antisymmetric True True
+T3/T5 H_S(class,class) = tame-reciprocity value: 2070 pairs, 0 mismatches
+allowed generators computed for 418 primes (7.0s)
+T3b unit projection orthogonality over 1296 unit classes: 576 (b,c) pairs of realized B_S classes (374 distinct classes realized by 418 primes), 0 failures
+T4 chi_a(b) = chi_b(a), allowed: 11175 pairs, 0 failures; control with O_F generators: 1441 of 1770 pairs fail
+T5 chi_a(eps) = H_S(eps,a)^-1 (eps in U_S gens and 4): 2090 checks, 0 failures
+T6 gamma_3(a) = lambda([a]) quadratic character of B_S: L = [1, 0, 0, 1], 0 failures of 418 primes
+T6 G_0 = conj(chi(4)) gamma_3 character of B_S: 2-part L=[1, 0, 0, 1] fails 0; 3-part L=[0, 0, 1, 0] fails 0 (of 418)
+T7 a0*gamma1 = mu*G0 and mu*gamma_-1 = a0*conj(G0) on squarefree allowed n (2 and 3 primes): 2262 n, 0 failures, max err 4.3e-15
+T7b CRT factor chi_c1(c2)^j chi_c2(c1)^j: 84 checks, 0 failures
+T8 G(U, eps h) = conj(xi_eps(U)) G(U, h): 352 checks, 0 failures
+controls: C1 gamma2^3 = -conj(Lambda) fails at 404 of 418 primes; C2 gamma_3(O_F generator) vs its V_2 class: rank(keys)=6, rank(keys|value)=7 (not a character iff larger)
+elapsed 28.8s
+FAILURES: 0
+RESULT: PASS

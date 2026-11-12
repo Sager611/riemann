@@ -1,0 +1,3 @@
+single-prime/unit ideals unchanged: max |diff| = 3.5e-16
+Galois check after correction: class-0 per-norm sums real for 212 of 212 norms (max |Im| 1.0e-14)
+saved /Users/adriansager/playground/riemann/.scratch/liuaudit2/data/bias3e5_fixed.npz

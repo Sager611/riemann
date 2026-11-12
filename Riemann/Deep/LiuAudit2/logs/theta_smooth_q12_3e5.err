@@ -1,0 +1,24 @@
+/Users/adriansager/playground/riemann/Riemann/Deep/LiuAudit2/code/theta_smooth_q12.py:68: RuntimeWarning: divide by zero encountered in divide
+  num = (S*(w[:, None]/V)).sum(0); den = ((w[:, None]**2)/V).sum(0)
+/Users/adriansager/playground/riemann/Riemann/Deep/LiuAudit2/code/theta_smooth_q12.py:68: RuntimeWarning: invalid value encountered in multiply
+  num = (S*(w[:, None]/V)).sum(0); den = ((w[:, None]**2)/V).sum(0)
+/Users/adriansager/playground/riemann/Riemann/Deep/LiuAudit2/code/theta_smooth_q12.py:80: RuntimeWarning: invalid value encountered in scalar divide
+  print("    k=%+d b=%d: " % (k, b) + "  ".join("%d:%.2f/%.2f" % (D, abs(S[j, b])/math.sqrt(V[j, b]), np.angle(S[j, b])/(2*math.pi)) for j, D in enumerate(Ds)))
+        1.22 real         0.81 user         0.11 sys
+            46530560  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6307  page reclaims
+                  77  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   4  voluntary context switches
+                 833  involuntary context switches
+           453279808  instructions retired
+           160883369  cycles elapsed
+            18776568  peak memory footprint
