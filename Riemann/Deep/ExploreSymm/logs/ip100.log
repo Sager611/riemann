@@ -1,0 +1,17 @@
+start 0 kind 0: max violation (log S - log C) = +0.00922  smooth +0.03858  it 1841  168s
+start 1 kind 1: max violation (log S - log C) = +0.00948  smooth +0.03938  it 3276  502s
+start 2 kind 2: max violation (log S - log C) = +0.00948  smooth +0.03776  it 1691  667s
+Pz=100.0 K=161 M=22 LP bound M<=24.075 (nu<=0.2407); best max violation +0.00922; roots in closed disc 22
+inside roots x: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+outside roots x quantiles: [-54.416 -10.962  -7.3    -3.868  -2.828  -2.808  -2.373]
+memcap: peak 77 MB rc=0
+start 0 kind 0: max violation (log S - log C) = +0.02348  smooth +0.05093  it 1629  194s
+start 1 kind 1: max violation (log S - log C) = +0.02378  smooth +0.05193  it 2074  406s
+start 2 kind 2: max violation (log S - log C) = +0.02438  smooth +0.05027  it 2120  656s
+Pz=100.0 K=161 M=23 LP bound M<=24.075 (nu<=0.2407); best max violation +0.02348; roots in closed disc 23
+inside roots x: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+outside roots x quantiles: [-31.519 -11.478  -6.778  -3.863  -2.85   -2.835  -2.688]
+memcap: peak 77 MB rc=0
+start 0 kind 0: max violation (log S - log C) = +0.00110  smooth +0.02993  it 2970  325s
+start 1 kind 1: max violation (log S - log C) = +0.00218  smooth +0.03043  it 4000  1014s
+memcap: peak 77 MB KILLED TIME>1500s rc=137
