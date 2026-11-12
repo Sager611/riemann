@@ -14,4 +14,6 @@
 
 **Novelty.** In no source found: Fasi–Higham (2018/2019) and Fasi's thesis (no case proved), Scardino 2610.39051 (no m = 3 statement), Goodchild's Zenodo record (m = 3 numerical only), MathWorld and MathDB status pages (open); checked 4 Nov 2026 ([novelty report](../Riemann/Deep/FasiHigham/NOVELTY.md)). Our computer-assisted diagonal and first-failure data (odd m ≤ 201) are not new: Goodchild's record goes to m = 361.
 
+**Lean.** Machine-checked in Lean 4 + Mathlib from no hypotheses (fasilean, 12 Nov 2026): FasiLean.fasi_higham_m3 : 0 < PowerSeries.coeff n (qPS k 3)⁻¹ for all k, n, with q_{k,3} taken from the general q_{k,m} formula and the real root d built from sSup (no IVT); the quantitative form c_n ≥ (R₀ − 2|R₊|) z₀^{−n} also proved; sorry-free, standard axioms, every compile under the 290 MB watchdog; reviewer FAITHFUL ([LEAN.md](../Riemann/Deep/FasiHigham/LEAN.md), [FORMALIZATIONS](../FORMALIZATIONS.md)).
+
 **Files.** [report](../Riemann/Deep/FasiHigham/REPORT.md), [note with the proof](../Riemann/Deep/FasiHigham/NOTE.md), [verify.py](../Riemann/Deep/FasiHigham/verify.py)
