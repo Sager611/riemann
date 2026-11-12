@@ -20,15 +20,15 @@ Hence A(J) ≤ max{11/3, 25.2/L + 1.7}, where L is the length of the θ-interval
 - One-sided: a_f(p) > −α p^{(k−1)/2} (α > 0) needs only A > 1, the GRH value of the method.
 - Discrepancy: for A > 11/3, the smooth-weight Sato–Tate discrepancy of cos θ_p over all degree-one primes of each class in that interval is at most 10/(3A − 3).
 
-**Before.** No bound with any power of |D| was known, per D or on average.
+**Before.** No unconditional bound with any power of |D| was known, per D or on average (under GRH the method gives every A > 1 for every D).
 
-**Inputs.** The Pascadi–Thorner 2025 preprint (for M = 3 and M ≥ 4); with published inputs only, 11/3 becomes 5. Input (J5) is pinned to Thorner, IMRN 2025.
+**Inputs.** The Pascadi–Thorner 2025 preprint (for M = 3 and M ≥ 4); with published inputs only (no Pascadi–Thorner): 𝒜(3) = 10/3, 𝒜(4) = 11/3 (route F), 𝒜(M) = (M + 7)/3 for 5 ≤ M ≤ 8, 5 for 8 ≤ M ≤ 12, (M + 3)/3 above (STAudit). Input (J5) is pinned to Thorner, IMRN 2025.
 
 **New tools behind the lower thresholds ([STLemP](../Riemann/Deep/STLemP/REPORT.md)).**
 - A lift of class group characters to ring class groups (Lemma P positivity over all orders: the family sieve beyond the conductor).
 - A mean square for the double family: Σ_{|D|~X} Σ_{χ ∈ Ĝ(D)} |L(½ + δ + it, f ⊗ θ_χ)|² ≪ X^{3/2+O(δ)}, i.e. Lindelöf on average (X^{9/4} for Sym² f), plus the density hypothesis on average for f ⊗ θ_χ.
 
-**Status.** Paper proofs; not refereed; not in Lean.
+**Status.** Paper proofs; refereed by staudit, 12 Nov 2026: AUDIT PASSED (STLemP Theorem 1′, Lemmas L, W, Theorem MS, Theorem 2₁, Proposition F₂ and the thresholds 1, 2.0365, 3; ChebST’s 11/3 and (M+3)/3; RSFam’s signs; one routine omission in Theorem MS repaired, nothing changes); numerics for E = 11a1 (1259 L-functions, |D| ≤ 600; sieve sums; signs in every class) consistent; the A(J) bound is loose (M*(J) ≲ 20/L + 2 measured); X₀ is astronomical, so no numerical bound follows ([STAudit](../Riemann/Deep/STAudit/REPORT.md)); not in Lean.
 
 **Review.**
 - Sign proof: flawed as first written; all five repairs checked correct.

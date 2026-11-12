@@ -1,0 +1,14 @@
+# X=2000
+N=8000 N/X=4.0000 nD=306 sum_h=5444 | m0 R1=F/G=1.0998 F/(sum_h*|b|^2)=1.1012 maxD(F_D/G_D)=3.75 | m1 R1=F/G=1.1184 F/(sum_h*|b|^2)=1.1193 maxD(F_D/G_D)=4.37 | m2 R1=F/G=60.9012 F/(sum_h*|b|^2)=61.1402 maxD(F_D/G_D)=272.49 | m3 R1=F/G=1.0996 F/(sum_h*|b|^2)=1.1010 maxD(F_D/G_D)=3.77 | m4 R1=F/G=1.1124 F/(sum_h*|b|^2)=1.1122 maxD(F_D/G_D)=4.91
+N=16000 N/X=8.0000 nD=306 sum_h=5444 | m0 R1=F/G=1.0724 F/(sum_h*|b|^2)=1.0698 maxD(F_D/G_D)=3.96 | m1 R1=F/G=1.1218 F/(sum_h*|b|^2)=1.1118 maxD(F_D/G_D)=4.95 | m2 R1=F/G=120.6031 F/(sum_h*|b|^2)=119.8490 maxD(F_D/G_D)=540.54 | m3 R1=F/G=1.0725 F/(sum_h*|b|^2)=1.0700 maxD(F_D/G_D)=3.97 | m4 R1=F/G=1.1274 F/(sum_h*|b|^2)=1.1177 maxD(F_D/G_D)=4.86
+N=32000 N/X=16.0000 nD=306 sum_h=5444 | m0 R1=F/G=1.0679 F/(sum_h*|b|^2)=1.0524 maxD(F_D/G_D)=4.35 | m1 R1=F/G=1.1131 F/(sum_h*|b|^2)=1.1066 maxD(F_D/G_D)=5.29 | m2 R1=F/G=239.6110 F/(sum_h*|b|^2)=238.1052 maxD(F_D/G_D)=1115.09 | m3 R1=F/G=1.0676 F/(sum_h*|b|^2)=1.0521 maxD(F_D/G_D)=4.37 | m4 R1=F/G=1.1098 F/(sum_h*|b|^2)=1.1002 maxD(F_D/G_D)=5.15
+memcap: peak 0 MB rc=0
+# X=4000
+N=16000 N/X=4.0000 nD=606 sum_h=15217 | m0 R1=F/G=1.0414 F/(sum_h*|b|^2)=1.0475 maxD(F_D/G_D)=3.43 | m1 R1=F/G=1.1065 F/(sum_h*|b|^2)=1.1160 maxD(F_D/G_D)=4.15 | m2 R1=F/G=85.5418 F/(sum_h*|b|^2)=86.0543 maxD(F_D/G_D)=407.51 | m3 R1=F/G=1.0469 F/(sum_h*|b|^2)=1.0507 maxD(F_D/G_D)=3.37 | m4 R1=F/G=1.0873 F/(sum_h*|b|^2)=1.0952 maxD(F_D/G_D)=3.90
+N=32000 N/X=8.0000 nD=606 sum_h=15217 | m0 R1=F/G=1.0314 F/(sum_h*|b|^2)=1.0329 maxD(F_D/G_D)=3.18 | m1 R1=F/G=1.1073 F/(sum_h*|b|^2)=1.1047 maxD(F_D/G_D)=4.85 | m2 R1=F/G=169.9734 F/(sum_h*|b|^2)=169.9515 maxD(F_D/G_D)=813.00 | m3 R1=F/G=1.0342 F/(sum_h*|b|^2)=1.0353 maxD(F_D/G_D)=3.20 | m4 R1=F/G=1.0929 F/(sum_h*|b|^2)=1.0921 maxD(F_D/G_D)=4.84
+N=64000 N/X=16.0000 nD=606 sum_h=15217 | m0 R1=F/G=1.0811 F/(sum_h*|b|^2)=1.0753 maxD(F_D/G_D)=4.37 | m1 R1=F/G=1.0187 F/(sum_h*|b|^2)=1.0191 maxD(F_D/G_D)=2.85 | m2 R1=F/G=338.8856 F/(sum_h*|b|^2)=338.9526 maxD(F_D/G_D)=1641.52 | m3 R1=F/G=1.0861 F/(sum_h*|b|^2)=1.0792 maxD(F_D/G_D)=4.25 | m4 R1=F/G=1.0048 F/(sum_h*|b|^2)=1.0029 maxD(F_D/G_D)=3.67
+memcap: peak 0 MB rc=0
+# X=1000
+N=16000 N/X=16.0000 nD=152 sum_h=1915 | m0 R1=F/G=1.0318 F/(sum_h*|b|^2)=1.0268 maxD(F_D/G_D)=5.30 | m1 R1=F/G=1.2018 F/(sum_h*|b|^2)=1.2084 maxD(F_D/G_D)=5.57 | m2 R1=F/G=171.3344 F/(sum_h*|b|^2)=169.8662 maxD(F_D/G_D)=703.04 | m3 R1=F/G=1.0316 F/(sum_h*|b|^2)=1.0265 maxD(F_D/G_D)=5.28 | m4 R1=F/G=1.1961 F/(sum_h*|b|^2)=1.2028 maxD(F_D/G_D)=5.54
+N=32000 N/X=32.0000 nD=152 sum_h=1915 | m0 R1=F/G=1.0009 F/(sum_h*|b|^2)=0.9912 maxD(F_D/G_D)=5.29 | m1 R1=F/G=1.1514 F/(sum_h*|b|^2)=1.1420 maxD(F_D/G_D)=3.99 | m2 R1=F/G=340.4849 F/(sum_h*|b|^2)=337.6137 maxD(F_D/G_D)=1364.30 | m3 R1=F/G=1.0014 F/(sum_h*|b|^2)=0.9917 maxD(F_D/G_D)=5.29 | m4 R1=F/G=1.1542 F/(sum_h*|b|^2)=1.1446 maxD(F_D/G_D)=3.82
+memcap: peak 0 MB rc=0

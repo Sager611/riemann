@@ -1,0 +1,12 @@
+|D| in [3,200]: nD=60 incomplete(ap table too short)=0 | max_D log(p+max)/log|D| = 1.961 (D=-8), log(p-max)/log|D| = 1.632 (D=-23), a_p>-sqrt(p)/2: 1.611 (D=-7) | fails of p+-max <= 2|D|^2.0365: 0; tightest ratio 2|D|^A/max(p+,p-) = 2.34 at D=-8 | fails of p_(>-sqrt p/2) max <= 2|D|: 12
+memcap: peak 0 MB rc=0
+|D| in [201,1000]: nD=243 incomplete(ap table too short)=0 | max_D log(p+max)/log|D| = 1.393 (D=-431), log(p-max)/log|D| = 1.369 (D=-335), a_p>-sqrt(p)/2: 1.364 (D=-479) | fails of p+-max <= 2|D|^2.0365: 0; tightest ratio 2|D|^A/max(p+,p-) = 97.00 at D=-335 | fails of p_(>-sqrt p/2) max <= 2|D|: 14
+memcap: peak 0 MB rc=0
+|D| in [1001,5000]: nD=1219 incomplete(ap table too short)=0 | max_D log(p+max)/log|D| = 1.293 (D=-1055), log(p-max)/log|D| = 1.320 (D=-1079), a_p>-sqrt(p)/2: 1.182 (D=-2351) | fails of p+-max <= 2|D|^2.0365: 0; tightest ratio 2|D|^A/max(p+,p-) = 297.16 at D=-1079 | fails of p_(>-sqrt p/2) max <= 2|D|: 30
+memcap: peak 0 MB rc=0
+|D| in [5001,20000]: nD=4555 incomplete(ap table too short)=0 | max_D log(p+max)/log|D| = 1.218 (D=-8399), log(p-max)/log|D| = 1.201 (D=-10871), a_p>-sqrt(p)/2: 1.158 (D=-10391) | fails of p+-max <= 2|D|^2.0365: 0; tightest ratio 2|D|^A/max(p+,p-) = 2848.07 at D=-5879 | fails of p_(>-sqrt p/2) max <= 2|D|: 19
+memcap: peak 0 MB rc=0
+|D| in [20001,60000]: nD=12159 incomplete(ap table too short)=0 | max_D log(p+max)/log|D| = 1.129 (D=-35279), log(p-max)/log|D| = 1.132 (D=-35759), a_p>-sqrt(p)/2: 1.105 (D=-43391) | fails of p+-max <= 2|D|^2.0365: 0; tightest ratio 2|D|^A/max(p+,p-) = 17430.49 at D=-20135 | fails of p_(>-sqrt p/2) max <= 2|D|: 3
+memcap: peak 3 MB rc=0
+|D| in [60001,150000]: nD=27360 incomplete(ap table too short)=0 | max_D log(p+max)/log|D| = 1.106 (D=-73079), log(p-max)/log|D| = 1.123 (D=-76079), a_p>-sqrt(p)/2: 1.104 (D=-73079) | fails of p+-max <= 2|D|^2.0365: 0; tightest ratio 2|D|^A/max(p+,p-) = 57249.55 at D=-76079 | fails of p_(>-sqrt p/2) max <= 2|D|: 3
+memcap: peak 3 MB rc=0
