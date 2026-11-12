@@ -1,0 +1,92 @@
+## Build
+
+Clean rebuild 2026-11-12 18:18-18:57 UTC (.scratch/prefixlean/verify.sh; Main's 1650 s wall time is a host stall, 4.5 s user). One module at a time, no lake process, oleans to .scratch/prefixlean/olean (build output, deleted at the end):
+
+    cp Riemann/Deep/DPCUncond/Lean/audit/leanpath.txt .scratch/prefixlean/leanpath.txt   # lake's LEAN_PATH
+    # for m in Defs CycleA CycleB CycleC Parity IsCycleP Small BlocksA BlocksB Main PrimA PrimB1 PrimB2 Jones Orbits CheckA CheckB:
+    LEAN_PATH=.scratch/prefixlean/olean:$(cat .scratch/prefixlean/leanpath.txt) bash .scratch/memcap.sh 290 1800 \
+      /usr/bin/time -l ~/.elan/toolchains/leanprover--lean4---v4.35.0-rc2/bin/lean -j1 \
+      -o .scratch/prefixlean/olean/Riemann/Deep/PrefixRev/Lean/$m.olean Riemann/Deep/PrefixRev/Lean/$m.lean
+
+| Module | rc | peak footprint (time -l) | memcap peak | wall |
+|---|---|---|---|---|
+| Defs | 0 | 246 MB | 217 MB | 27.58 s |
+| CycleA | 0 | 275 MB | 230 MB | 60.16 s |
+| CycleB | 0 | 263 MB | 180 MB | 47.67 s |
+| CycleC | 0 | 253 MB | 232 MB | 8.92 s |
+| Parity | 0 | 279 MB | 231 MB | 177.34 s |
+| IsCycleP | 0 | 267 MB | 243 MB | 7.85 s |
+| Small | 0 | 281 MB | 252 MB | 62.03 s |
+| BlocksA | 0 | 261 MB | 181 MB | 18.54 s |
+| BlocksB | 0 | 272 MB | 235 MB | 9.79 s |
+| Main | 0 | 269 MB | 244 MB | 1650.64 s |
+| PrimA | 0 | 252 MB | 199 MB | 34.49 s |
+| PrimB1 | 0 | 253 MB | 222 MB | 24.28 s |
+| PrimB2 | 0 | 270 MB | 199 MB | 33.83 s |
+| Jones | 0 | 274 MB | 253 MB | 28.26 s |
+| Orbits | 0 | 256 MB | 230 MB | 28.37 s |
+| CheckA | 0 | 241 MB | 183 MB | 25.76 s |
+| CheckB | 0 | 264 MB | 231 MB | 28.47 s |
+
+All 17 modules rc = 0; maximum footprint 281 MB (Small). Kernel checks: decide +kernel on Bool evaluations (Small.lean).
+
+## Static scan
+
+    rg -n -w 'sorry|admit|native_decide|skipKernelTC' Riemann/Deep/PrefixRev/Lean   # no matches
+    rg -n '^\s*axiom\s' Riemann/Deep/PrefixRev/Lean                              # no matches
+
+## #print axioms
+
+CheckA.lean (40) and CheckB.lean (9), clean rebuild:
+
+~~~
+'PrefixRev.rev_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.rev_rev' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.P_val' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.P_firstReturn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.phi_ne_zero' depends on axioms: [propext, Quot.sound]
+'PrefixRev.phi_inj' depends on axioms: [propext, Quot.sound]
+'PrefixRev.phi_P' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.phi_rn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.phi_rk' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.P_transitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.exists_theta' depends on axioms: [propext, Quot.sound]
+'PrefixRev.P_cycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.sign_rev' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.G_le_alt_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.eq_top_of_alt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.parity_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.G_intransitive' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.G_ne_top_of_gcd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.G_le_intervals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.G_ne_top_of_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.rm_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.G_ne_top_of_even' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.G_le_alt_of_mod4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.G_ne_top_of_mod4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.line_necessary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.theoremA_necessary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.fix_rk_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.line_alt_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.line_B4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.theoremA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.block_classes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.star_of_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.prop5_of_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.theoremA_core' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.line_alt_le_jones' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.theoremA_jones' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.line_B4_jones' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.cls_rev' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.G_le_cls' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.cls_surj' depends on axioms: [propext, Quot.sound]
+'PrefixRev.P_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.P_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.P_isCycle' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.G_eq_top_of_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.codePerm_eq_swap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.G_7_4_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.G_11_6_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.G_13_10_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PrefixRev.not_conjecture4Literal' depends on axioms: [propext, Classical.choice, Quot.sound]
+~~~

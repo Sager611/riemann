@@ -1,0 +1,17 @@
+18:18 Defs rc=0  27.58 real 3.30 user 5.34 sys  246166704 peak memory footprint memcap: peak 217 MB rc=0 
+18:19 CycleA rc=0  60.16 real 6.10 user 9.75 sys  274773216 peak memory footprint memcap: peak 230 MB rc=0 
+18:20 CycleB rc=0  47.67 real 4.72 user 6.11 sys  263255384 peak memory footprint memcap: peak 180 MB rc=0 
+18:21 CycleC rc=0  8.92 real 3.28 user 2.13 sys  252671272 peak memory footprint memcap: peak 232 MB rc=0 
+18:24 Parity rc=0  177.34 real 5.99 user 1.97 sys  279082328 peak memory footprint memcap: peak 231 MB rc=0 
+18:24 IsCycleP rc=0  7.85 real 2.97 user 2.32 sys  267252320 peak memory footprint memcap: peak 243 MB rc=0 
+18:25 Small rc=0  62.03 real 3.75 user 2.13 sys  281228064 peak memory footprint memcap: peak 252 MB rc=0 
+18:25 BlocksA rc=0  18.54 real 4.33 user 2.29 sys  261109056 peak memory footprint memcap: peak 181 MB rc=0 
+18:26 BlocksB rc=0  9.79 real 5.49 user 2.02 sys  271889872 peak memory footprint memcap: peak 235 MB rc=0 
+18:53 Main rc=0  1650.64 real 4.52 user 4.91 sys  268563896 peak memory footprint memcap: peak 244 MB rc=0 
+18:54 PrimA rc=0  34.49 real 3.37 user 7.48 sys  252179896 peak memory footprint memcap: peak 199 MB rc=0 
+18:54 PrimB1 rc=0  24.28 real 3.64 user 6.07 sys  252818992 peak memory footprint memcap: peak 222 MB rc=0 
+18:55 PrimB2 rc=0  33.83 real 5.18 user 7.68 sys  269661696 peak memory footprint memcap: peak 199 MB rc=0 
+18:55 Jones rc=0  28.26 real 4.64 user 6.64 sys  274167464 peak memory footprint memcap: peak 253 MB rc=0 
+18:56 Orbits rc=0  28.37 real 3.86 user 6.56 sys  255522184 peak memory footprint memcap: peak 230 MB rc=0 
+18:56 CheckA rc=0  25.76 real 2.55 user 6.30 sys  241202880 peak memory footprint memcap: peak 183 MB rc=0 
+18:57 CheckB rc=0  28.47 real 2.62 user 6.66 sys  263893720 peak memory footprint memcap: peak 231 MB rc=0 

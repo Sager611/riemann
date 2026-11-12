@@ -1,0 +1,76 @@
+## Named hypotheses (Props passed as arguments; no axiom declarations)
+
+### OffLineLZZW
+
+Source: Lei, Zhao, Zhu, Wu, arXiv 2610.30892v1, Theorem 3.1, first sentence (TeX l. 221-223: "If m+k<n-1, then <r_n,r_m,r_k> < S_n"), standing assumption 2 <= k < m < n (TeX l. 109-111). Published, not formalized here (its graph/edge-count proof is NOTE section 1). Lean's natural n - 1 is exact (n >= 4).
+
+~~~lean
+/-- Named hypothesis: 2610.30892, Theorem 3.1, first sentence. -/
+def OffLineLZZW : Prop :=
+  ∀ n m k : ℕ, 2 ≤ k → k < m → m < n → m + k < n - 1 → G n m k ≠ ⊤
+~~~
+
+### Prop5Core
+
+Source: OUR Proposition 5, Steps 1-4 (NOTE section 4), restricted to the odd coprime line. OPEN OBLIGATION (new mathematics, not formalized; verify.py checks it for n <= 101). StarD is the NOTE's (★_d) in psi = phi - 1 coordinates.
+
+~~~lean
+def Prop5Core : Prop :=
+  ∀ n m k θ d : ℕ, 2 ≤ k → k < m → n = m + k + 1 → n % 2 = 1 → Nat.Coprime (m + 1) (k + 1) →
+    (k + 1) * θ % (n + 1) = 1 → 1 < d → d < n → d ∣ n → StarD n k θ d → (k + 1) ∣ m
+~~~
+
+### JonesK0
+
+Source: G. A. Jones, Primitive permutation groups containing a cycle, Bull. Aust. Math. Soc. 89 (2014) 159-165, Theorem 1.2, case k = 0 (arXiv 1209.5169, TeX l. 54-72; rests on Jones, J. Group Theory 5 (2002) and CFSG). Stated with weakenings that Jones implies: (a) C_p <= G <= AGL_1(p) replaced by its consequence nfix <= 1 for nonidentity elements; (b) through the abstract predicate Coll q d H, intended meaning PGL_d(q) <= H <= PΓL_d(q) on the points of PG(d-1,q) (Mathlib: Projectivization; not instantiated: too heavy for the 290 MB cap); (c) G = L_2(11), M_11, M_23 replaced by the fixed-point bounds 3 (degree 11, M_11 sharply 4-transitive) and 7 (M_23 on 23 points).
+
+~~~lean
+/-- Named hypothesis: Jones 2014, Theorem 1.2, case k = 0 (see the module doc). -/
+def JonesK0 (Coll : ∀ {n : ℕ}, ℕ → ℕ → Subgroup (Perm (Fin n)) → Prop) : Prop :=
+  ∀ (n : ℕ) (H : Subgroup (Perm (Fin n))), IsPrimitive H →
+    ¬ (∀ σ : Perm (Fin n), Perm.sign σ = 1 → σ ∈ H) →
+    (∃ c ∈ H, ∀ x y : Fin n, ∃ t : ℕ, (c ^ t) x = y) →
+    (n.Prime ∧ ∀ h ∈ H, h ≠ 1 → nfix h ≤ 1) ∨
+    (∃ q d : ℕ, (∃ p e : ℕ, p.Prime ∧ 0 < e ∧ q = p ^ e) ∧ 2 ≤ d ∧ n * (q - 1) = q ^ d - 1 ∧
+      Coll q d H) ∨
+    (n = 11 ∧ ∀ h ∈ H, h ≠ 1 → nfix h ≤ 3) ∨ (n = 23 ∧ ∀ h ∈ H, h ≠ 1 → nfix h ≤ 7)
+~~~
+
+### Lemma7
+
+Source: NOTE Lemma 7 (fixed points of collineations; proof in NOTE section 5, brute-force check in verify.py). Named, not proved here.
+
+~~~lean
+/-- Named hypothesis: the NOTE's Lemma 7 (a nonidentity collineation of PG(d-1, q),
+(d, q) ≠ (2, 4), fixes at most n/2 points). -/
+def Lemma7 (Coll : ∀ {n : ℕ}, ℕ → ℕ → Subgroup (Perm (Fin n)) → Prop) : Prop :=
+  ∀ (n q d : ℕ) (H : Subgroup (Perm (Fin n))), Coll q d H → 2 ≤ d → n * (q - 1) = q ^ d - 1 →
+    ¬ (d = 2 ∧ q = 4) → ∀ h ∈ H, h ≠ 1 → 2 * nfix h ≤ n
+~~~
+
+### Prop5Primitive
+
+Used by Main.theoremA (older interface): primitivity on the odd line. Proved from Prop5Core by PrimB2.prop5_of_core (Lemma 3 + (★_d)).
+
+~~~lean
+/-- Named hypothesis (OPEN OBLIGATION, our Proposition 5): primitivity on the odd line. -/
+def Prop5Primitive : Prop :=
+  ∀ n m k : ℕ, 2 ≤ k → k < m → n = m + k + 1 → n % 2 = 1 → Nat.Coprime (m + 1) (k + 1) →
+    ¬ (k + 1) ∣ m → IsPrimitive (G n m k)
+~~~
+
+### JonesLemma7
+
+Used by Main.theoremA (older interface): the merged consequence of JonesK0 + Lemma7. theoremA_jones (Jones.lean) uses JonesK0 and Lemma7 separately instead; prefer it.
+
+~~~lean
+/-- Named hypothesis: Jones 2014 Thm 1.2 (k = 0) + Lemma 7 (+ fixed points in the
+sporadic and affine cases). -/
+def JonesLemma7 : Prop :=
+  ∀ (n : ℕ) (H : Subgroup (Perm (Fin n))), IsPrimitive H →
+    (∃ c ∈ H, ∀ x y : Fin n, ∃ t : ℕ, (c ^ t) x = y) →
+    (∃ h ∈ H, h ≠ 1 ∧ n < 2 * (Finset.univ.filter (fun x => h x = x)).card) →
+    ∀ σ : Perm (Fin n), Perm.sign σ = 1 → σ ∈ H
+~~~
+
+Main entry point: theoremA_jones (hOff : OffLineLZZW) (hC : Prop5Core) (hJ : JonesK0 Coll) (hL : Lemma7 Coll). theoremA_necessary needs only OffLineLZZW; line_necessary needs nothing.

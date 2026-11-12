@@ -14,4 +14,6 @@
 
 **Novelty.** No source states the classification of the boundary line ([novelty](../Riemann/Deep/PrefixRev/NOVELTY.md)).
 
+**Lean.** PARTIAL (prefixlean, 12 Nov 2026; Lean 4 + Mathlib, sorry-free, standard axioms, reviewer FAITHFUL): Lemmas 1–3, the n-cycle B.1, B.2, the blocks of B.3, the parity criterion, every necessity direction of Theorem A on the line, and kernel-checked G = S_n for (7, 4, 2), (11, 6, 4), (13, 10, 2) (the literal Conjecture 4 is false); Theorem A and B.4 from four named hypotheses: 2610.30892 Thm 3.1 (off the line), Jones 2014 Thm 1.2 (k = 0), our Lemma 7 (collineation fixed-point bound) and Prop5Core (Steps 1–4 of Proposition 5, pure arithmetic, open in Lean); not formalized: the exact orbit count, the wreath-product isomorphism ([LEAN.md](../Riemann/Deep/PrefixRev/LEAN.md)).
+
 **Files.** [report](../Riemann/Deep/PrefixRev/REPORT.md), [note](../Riemann/Deep/PrefixRev/NOTE.md), [verify.py](../Riemann/Deep/PrefixRev/verify.py)

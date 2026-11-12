@@ -1,0 +1,93 @@
+Round 2 of a statement-fidelity review of a Lean 4 formalization. Do NOT run tools; answer from the text below in at most 25 lines within 60 seconds.
+
+Your round-1 verdict was ISSUES with one blocking item: "phi_P, phi_rn, phi_rk (and block_classes, star_of_block) lack the necessary hypotheses in the excerpt (section variables not shown); supply elaborated signatures", plus minor item 11 "supply fibreFix and fibreStab (fibreStab must stabilize the partition, not fix each interval)", and minor item 10 "line_B4_jones docstring said 'exactly when' but proves only the alternating branch" (now fixed: docstring reads "B.4, the alternating branch ... if n ≡ 1 (mod 4) and 4 | k then G = A_n (the S_n branch is theoremA_jones)").
+
+Below is Lean's own #check/#print output (elaborated, compiled oleans) for those declarations and definitions. Recall the NOTE: Lemma 2 (g = 1, θ = α^{-1} mod N, φ(x) = θx mod N, 1-based x): P is j ↦ j+1 (j<n), n ↦ 1; r_n is j ↦ n+1−j; r_k is j ↦ n+2−j on E = φ([1,k]) and the identity off E. Lean x : Fin n is 0-based, so phi n θ x = θ(x+1) mod (n+1) is the NOTE's φ(x+1); "↑x < k" is x+1 ∈ [1,k]. Lemma 3: nontrivial blocks are residue classes mod d (d | n, 1<d<n) of the cyclic coordinate; (★_d): classes C_c, c ≢ 1, lie in E or miss E (0-based psi = phi − 1: exempt class psi ≡ 0).
+
+Questions: (1) Do these signatures carry the necessary hypotheses and faithfully state Lemma 2, Lemma 3, (★_d) derivation, and the B.1 class invariance? (2) Is fibreStab a partition stabilizer (block system preserved) and fibreFix a setwise fixer of every fibre? Give "VERDICT: FAITHFUL" or "VERDICT: ISSUES" first, then findings.
+
+@PrefixRev.phi_P : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        ∀ (x : Fin n),
+          PrefixRev.phi n θ ((PrefixRev.P n m k) x) = if PrefixRev.phi n θ x < n then PrefixRev.phi n θ x + 1 else 1
+@PrefixRev.phi_rn : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 → ∀ (x : Fin n), PrefixRev.phi n θ ((PrefixRev.rev n n) x) = n + 1 - PrefixRev.phi n θ x
+@PrefixRev.phi_rk : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        ∀ (x : Fin n),
+          PrefixRev.phi n θ ((PrefixRev.rev n k) x) =
+            if ↑x < k then n + 2 - PrefixRev.phi n θ x else PrefixRev.phi n θ x
+@PrefixRev.psi_P_pow : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        ∀ (x : Fin n) (t : ℕ), PrefixRev.phi n θ ((PrefixRev.P n m k ^ t) x) - 1 = (PrefixRev.phi n θ x - 1 + t) % n
+@PrefixRev.P_transitive : ∀ {n m k θ : ℕ},
+  n = m + k + 1 → k < m → (k + 1) * θ % (n + 1) = 1 → ∀ (x y : Fin n), ∃ t, (PrefixRev.P n m k ^ t) x = y
+@PrefixRev.P_pow_eq_iff : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        ∀ (x y : Fin n) (t : ℕ),
+          (PrefixRev.P n m k ^ t) x = y ↔ (PrefixRev.phi n θ x - 1 + t) % n = PrefixRev.phi n θ y - 1
+@PrefixRev.block_classes : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        ∀ {B : Set (Fin n)},
+          PrefixRev.IsBlockOf (PrefixRev.G n m k) B →
+            ∀ {x0 : Fin n},
+              x0 ∈ B →
+                B.Subsingleton ∨
+                  B = Set.univ ∨
+                    ∃ d,
+                      1 < d ∧
+                        d < n ∧
+                          d ∣ n ∧ ∀ (y : Fin n), y ∈ B ↔ (PrefixRev.phi n θ y - 1) % d = (PrefixRev.phi n θ x0 - 1) % d
+@PrefixRev.star_key : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        ∀ {B : Set (Fin n)},
+          PrefixRev.IsBlockOf (PrefixRev.G n m k) B →
+            ∀ {x0 : Fin n} {d : ℕ},
+              1 < d →
+                d < n →
+                  d ∣ n →
+                    d % 2 = 1 →
+                      n % 2 = 1 →
+                        (∀ (y : Fin n), y ∈ B ↔ (PrefixRev.phi n θ y - 1) % d = (PrefixRev.phi n θ x0 - 1) % d) →
+                          ∀ (x y : Fin n),
+                            (PrefixRev.phi n θ x - 1) % d = (PrefixRev.phi n θ y - 1) % d →
+                              (PrefixRev.phi n θ x - 1) % d ≠ 0 → ↑x < k → ¬↑y < k → False
+@PrefixRev.star_of_block : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        n % 2 = 1 →
+          ∀ {B : Set (Fin n)},
+            PrefixRev.IsBlockOf (PrefixRev.G n m k) B →
+              ∀ {x0 : Fin n} {d : ℕ},
+                1 < d →
+                  d < n →
+                    d ∣ n →
+                      (∀ (y : Fin n), y ∈ B ↔ (PrefixRev.phi n θ y - 1) % d = (PrefixRev.phi n θ x0 - 1) % d) →
+                        PrefixRev.StarD n k θ d
+@PrefixRev.G_le_cls : ∀ {n m k : ℕ},
+  n = m + k + 1 → k < m → PrefixRev.G n m k ≤ PrefixRev.fibreFix fun x => PrefixRev.cls ((k + 1).gcd (m + 1)) x
+def PrefixRev.fibreFix : {n : ℕ} → {β : Type} → (Fin n → β) → Subgroup (Equiv.Perm (Fin n)) :=
+fun {n} {β} b => { carrier := {g | ∀ (x : Fin n), b (g x) = b x}, mul_mem' := ⋯, one_mem' := ⋯, inv_mem' := ⋯ }
+def PrefixRev.fibreStab : {n : ℕ} → {β : Type} → (Fin n → β) → Subgroup (Equiv.Perm (Fin n)) :=
+fun {n} {β} b =>
+  { carrier := {g | ∀ (x y : Fin n), b x = b y ↔ b (g x) = b (g y)}, mul_mem' := ⋯, one_mem' := ⋯, inv_mem' := ⋯ }
+def PrefixRev.phi : (n : ℕ) → ℕ → Fin n → ℕ :=
+fun n θ x => θ * (↑x + 1) % (n + 1)
+def PrefixRev.P : (n : ℕ) → ℕ → ℕ → Equiv.Perm (Fin n) :=
+fun n m k => PrefixRev.rev n k * PrefixRev.rev n n * PrefixRev.rev n m
+memcap: peak 222 MB rc=0

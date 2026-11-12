@@ -1,0 +1,85 @@
+@PrefixRev.phi_P : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        ∀ (x : Fin n),
+          PrefixRev.phi n θ ((PrefixRev.P n m k) x) = if PrefixRev.phi n θ x < n then PrefixRev.phi n θ x + 1 else 1
+@PrefixRev.phi_rn : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 → ∀ (x : Fin n), PrefixRev.phi n θ ((PrefixRev.rev n n) x) = n + 1 - PrefixRev.phi n θ x
+@PrefixRev.phi_rk : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        ∀ (x : Fin n),
+          PrefixRev.phi n θ ((PrefixRev.rev n k) x) =
+            if ↑x < k then n + 2 - PrefixRev.phi n θ x else PrefixRev.phi n θ x
+@PrefixRev.psi_P_pow : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        ∀ (x : Fin n) (t : ℕ), PrefixRev.phi n θ ((PrefixRev.P n m k ^ t) x) - 1 = (PrefixRev.phi n θ x - 1 + t) % n
+@PrefixRev.P_transitive : ∀ {n m k θ : ℕ},
+  n = m + k + 1 → k < m → (k + 1) * θ % (n + 1) = 1 → ∀ (x y : Fin n), ∃ t, (PrefixRev.P n m k ^ t) x = y
+@PrefixRev.P_pow_eq_iff : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        ∀ (x y : Fin n) (t : ℕ),
+          (PrefixRev.P n m k ^ t) x = y ↔ (PrefixRev.phi n θ x - 1 + t) % n = PrefixRev.phi n θ y - 1
+@PrefixRev.block_classes : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        ∀ {B : Set (Fin n)},
+          PrefixRev.IsBlockOf (PrefixRev.G n m k) B →
+            ∀ {x0 : Fin n},
+              x0 ∈ B →
+                B.Subsingleton ∨
+                  B = Set.univ ∨
+                    ∃ d,
+                      1 < d ∧
+                        d < n ∧
+                          d ∣ n ∧ ∀ (y : Fin n), y ∈ B ↔ (PrefixRev.phi n θ y - 1) % d = (PrefixRev.phi n θ x0 - 1) % d
+@PrefixRev.star_key : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        ∀ {B : Set (Fin n)},
+          PrefixRev.IsBlockOf (PrefixRev.G n m k) B →
+            ∀ {x0 : Fin n} {d : ℕ},
+              1 < d →
+                d < n →
+                  d ∣ n →
+                    d % 2 = 1 →
+                      n % 2 = 1 →
+                        (∀ (y : Fin n), y ∈ B ↔ (PrefixRev.phi n θ y - 1) % d = (PrefixRev.phi n θ x0 - 1) % d) →
+                          ∀ (x y : Fin n),
+                            (PrefixRev.phi n θ x - 1) % d = (PrefixRev.phi n θ y - 1) % d →
+                              (PrefixRev.phi n θ x - 1) % d ≠ 0 → ↑x < k → ¬↑y < k → False
+@PrefixRev.star_of_block : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        n % 2 = 1 →
+          ∀ {B : Set (Fin n)},
+            PrefixRev.IsBlockOf (PrefixRev.G n m k) B →
+              ∀ {x0 : Fin n} {d : ℕ},
+                1 < d →
+                  d < n →
+                    d ∣ n →
+                      (∀ (y : Fin n), y ∈ B ↔ (PrefixRev.phi n θ y - 1) % d = (PrefixRev.phi n θ x0 - 1) % d) →
+                        PrefixRev.StarD n k θ d
+@PrefixRev.G_le_cls : ∀ {n m k : ℕ},
+  n = m + k + 1 → k < m → PrefixRev.G n m k ≤ PrefixRev.fibreFix fun x => PrefixRev.cls ((k + 1).gcd (m + 1)) x
+def PrefixRev.fibreFix : {n : ℕ} → {β : Type} → (Fin n → β) → Subgroup (Equiv.Perm (Fin n)) :=
+fun {n} {β} b => { carrier := {g | ∀ (x : Fin n), b (g x) = b x}, mul_mem' := ⋯, one_mem' := ⋯, inv_mem' := ⋯ }
+def PrefixRev.fibreStab : {n : ℕ} → {β : Type} → (Fin n → β) → Subgroup (Equiv.Perm (Fin n)) :=
+fun {n} {β} b =>
+  { carrier := {g | ∀ (x y : Fin n), b x = b y ↔ b (g x) = b (g y)}, mul_mem' := ⋯, one_mem' := ⋯, inv_mem' := ⋯ }
+def PrefixRev.phi : (n : ℕ) → ℕ → Fin n → ℕ :=
+fun n θ x => θ * (↑x + 1) % (n + 1)
+def PrefixRev.P : (n : ℕ) → ℕ → ℕ → Equiv.Perm (Fin n) :=
+fun n m k => PrefixRev.rev n k * PrefixRev.rev n n * PrefixRev.rev n m
+memcap: peak 222 MB rc=0

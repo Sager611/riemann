@@ -1,0 +1,265 @@
+## Main Lean statements (verbatim; @-entries are Lean's elaborated #check output, which shows section hypotheses)
+
+### Definitions (Defs, CycleA, Main, PrimB1, Jones, Small, Orbits)
+
+~~~lean
+/-- The underlying function of the prefix reversal r_i on Fin n. -/
+def revFun (n i : ℕ) (x : Fin n) : Fin n :=
+  if h : x.val < i ∧ i ≤ n then ⟨i - 1 - x.val, by omega⟩ else x
+
+/-- The prefix reversal r_i as a permutation of Fin n. -/
+def rev (n i : ℕ) : Perm (Fin n) where
+  toFun := revFun n i
+  invFun := revFun n i
+  left_inv := revFun_revFun n i
+  right_inv := revFun_revFun n i
+
+/-- G(n; m, k) = ⟨r_n, r_m, r_k⟩ ≤ S_n. -/
+def G (n m k : ℕ) : Subgroup (Perm (Fin n)) :=
+  Subgroup.closure {rev n n, rev n m, rev n k}
+
+/-- P = r_k r_n r_m (r_m acts first). -/
+def P (n m k : ℕ) : Perm (Fin n) := rev n k * rev n n * rev n m
+
+/-- Cyclic coordinate (1-based, as in the NOTE): phi x = θ (x+1) mod (n+1). -/
+def phi (n θ : ℕ) (x : Fin n) : ℕ := θ * (x.val + 1) % (n + 1)
+
+/-- B is a block of H: every h ∈ H maps B onto B or onto a set disjoint from B. -/
+def IsBlockOf {n : ℕ} (H : Subgroup (Perm (Fin n))) (B : Set (Fin n)) : Prop :=
+  ∀ h ∈ H, (⇑h '' B = B) ∨ Disjoint (⇑h '' B) B
+
+/-- H is primitive: transitive, and every block is trivial. -/
+def IsPrimitive {n : ℕ} (H : Subgroup (Perm (Fin n))) : Prop :=
+  (∀ x y : Fin n, ∃ h ∈ H, h x = y) ∧
+    ∀ B : Set (Fin n), IsBlockOf H B → B.Subsingleton ∨ B = Set.univ
+
+/-- (★_d) in the 0-based cyclic coordinate psi = phi - 1: each class psi ≡ c (mod d) with
+c ≠ 0 lies inside E = {x : x < k} or misses it. (NOTE: classes C_c, c ≢ 1, 1-based.) -/
+def StarD (n k θ d : ℕ) : Prop :=
+  ∀ x y : Fin n, (phi n θ x - 1) % d = (phi n θ y - 1) % d → (phi n θ x - 1) % d ≠ 0 →
+    (x.val < k ↔ y.val < k)
+
+/-- Number of fixed points. -/
+def nfix {n : ℕ} (h : Perm (Fin n)) : ℕ := (Finset.univ.filter (fun x => h x = x)).card
+
+/-- Conjecture 4 of Blanco et al. (arXiv 2511.16959v3), literal form:
+2 ≤ k < m < n and m + k < n imply that r_n, r_m, r_k do not generate S_n. -/
+def Conjecture4Literal : Prop :=
+  ∀ n m k : ℕ, 2 ≤ k → k < m → m < n → m + k < n → G n m k ≠ ⊤
+
+/-- The orbit label: c ∈ [0, g/2] with x + 1 ≡ ±c (mod g) (1-based position x + 1). -/
+def cls (g : ℕ) {n : ℕ} (x : Fin n) : ℕ :=
+  if 2 * ((x.val + 1) % g) ≤ g then (x.val + 1) % g else g - (x.val + 1) % g
+
+~~~
+
+### Lemma 1, Lemma 2, B.1 n-cycle
+
+~~~lean
+/-- Lemma 1 (0-based): P x = x + α (x < m), P m = k, P x = x - β (x > m). -/
+theorem P_val {n m k : ℕ} (hline : n = m + k + 1) (hkm : k < m) (x : Fin n) :
+    (P n m k x).val =
+      if x.val < m then x.val + (k + 1) else if x.val = m then k else x.val - (m + 1) := by
+
+/-- Lemma 1, first-return form. Identify x with y = x.val + 1 in Z/(n+1) minus 0 and let
+R y = y + α. Then P y = R y if R y ≠ 0, and P y = R (R y) if R y = 0. -/
+theorem P_firstReturn {n m k : ℕ} (hline : n = m + k + 1) (hkm : k < m) (x : Fin n) :
+    (P n m k x).val + 1 =
+      if (x.val + 1 + (k + 1)) % (n + 1) = 0 then (x.val + 1 + 2 * (k + 1)) % (n + 1)
+      else (x.val + 1 + (k + 1)) % (n + 1) := by
+
+@PrefixRev.phi_P : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        ∀ (x : Fin n),
+          PrefixRev.phi n θ ((PrefixRev.P n m k) x) = if PrefixRev.phi n θ x < n then PrefixRev.phi n θ x + 1 else 1
+
+@PrefixRev.phi_rn : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 → ∀ (x : Fin n), PrefixRev.phi n θ ((PrefixRev.rev n n) x) = n + 1 - PrefixRev.phi n θ x
+
+@PrefixRev.phi_rk : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        ∀ (x : Fin n),
+          PrefixRev.phi n θ ((PrefixRev.rev n k) x) =
+            if ↑x < k then n + 2 - PrefixRev.phi n θ x else PrefixRev.phi n θ x
+
+/-- Theorem B.1 (n-cycle): on the line n = m + k + 1 with gcd(m+1, k+1) = 1, the powers of
+P = r_k r_n r_m move every point to every point, so P is an n-cycle. -/
+theorem P_cycle {n m k : ℕ} (hline : n = m + k + 1) (hkm : k < m)
+    (hg : Nat.Coprime (k + 1) (m + 1)) (x y : Fin n) : ∃ t : ℕ, (P n m k ^ t) x = y := by
+
+/-- Theorem B.1 (n-cycle, Mathlib form). -/
+theorem P_isCycle {n m k : ℕ} (hline : n = m + k + 1) (hkm : k < m)
+    (hg : Nat.Coprime (k + 1) (m + 1)) : (P n m k).IsCycle := by
+
+theorem P_support {n m k : ℕ} (hline : n = m + k + 1) (hkm : k < m) :
+    (P n m k).support = Finset.univ :=
+
+/-- Criterion: if G contains the transposition (x, P x) for some x, then G = S_n. -/
+theorem G_eq_top_of_swap {n m k : ℕ} (hline : n = m + k + 1) (hkm : k < m)
+    (hg : Nat.Coprime (k + 1) (m + 1)) (x : Fin n) (hs : swap x (P n m k x) ∈ G n m k) :
+    G n m k = ⊤ := by
+
+~~~
+
+### Parity
+
+~~~lean
+/-- sign r_i = (-1)^(i/2) for i ≤ n. -/
+theorem sign_rev (n i : ℕ) (h : i ≤ n) : Perm.sign (rev n i) = (-1) ^ (i / 2) := by
+
+/-- Parity: G ≤ A_n iff r_n, r_m, r_k are all even iff n/2, m/2, k/2 are all even. -/
+theorem G_le_alt_iff {n m k : ℕ} (hm : m ≤ n) (hk : k ≤ n) :
+    (∀ g ∈ G n m k, Perm.sign g = 1) ↔ (n / 2 % 2 = 0 ∧ m / 2 % 2 = 0 ∧ k / 2 % 2 = 0) := by
+
+/-- A subgroup containing A_n and an odd permutation is S_n. -/
+theorem eq_top_of_alt {n : ℕ} {H : Subgroup (Perm (Fin n))}
+    (hA : ∀ σ : Perm (Fin n), Perm.sign σ = 1 → σ ∈ H) (g : Perm (Fin n)) (hg : g ∈ H)
+    (hodd : Perm.sign g = -1) : H = ⊤ := by
+
+~~~
+
+### Necessity on the line (B.1 intransitivity, B.2, B.3 blocks, parity)
+
+~~~lean
+/-- g = gcd(k+1, m+1) ≠ 1 ⇒ G ≠ S_n. -/
+theorem G_ne_top_of_gcd {n m k : ℕ} (hline : n = m + k + 1) (hkm : k < m)
+    (hg : Nat.gcd (k + 1) (m + 1) ≠ 1) : G n m k ≠ ⊤ := by
+
+/-- Lemma 6 / B.3: if α = k + 1 divides n (equivalently divides m) then the intervals of
+length α are blocks of G, and G ≠ S_n. -/
+theorem G_le_intervals {n m k : ℕ} (hline : n = m + k + 1) (hkm : k < m) (hdiv : (k + 1) ∣ n) :
+    G n m k ≤ fibreStab (fun x : Fin n => x.val / (k + 1)) := by
+
+theorem G_ne_top_of_dvd {n m k : ℕ} (hk : 2 ≤ k) (hline : n = m + k + 1) (hkm : k < m)
+    (hdiv : (k + 1) ∣ m) : G n m k ≠ ⊤ := by
+
+/-- B.2: n even on the line with gcd = 1 ⇒ G ≠ S_n. -/
+theorem G_ne_top_of_even {n m k θ : ℕ} (hk2 : 2 ≤ k) (hline : n = m + k + 1) (hkm : k < m)
+    (hθ : (k + 1) * θ % (n + 1) = 1) (hev : n % 2 = 0) : G n m k ≠ ⊤ := by
+
+/-- n ≡ 1 (mod 4), 4 | k on the line ⇒ G ≤ A_n, so G ≠ S_n. -/
+theorem G_le_alt_of_mod4 {n m k : ℕ} (hline : n = m + k + 1) (_hkm : k < m)
+    (h4 : n % 4 = 1 ∧ k % 4 = 0) : ∀ g ∈ G n m k, Perm.sign g = 1 :=
+
+/-- Theorem A, necessity on the line n = m + k + 1 (2 ≤ k < m):
+G = S_n ⇒ n odd, gcd(m+1, k+1) = 1, (k+1) ∤ m, and not (n ≡ 1 mod 4 and 4 | k). -/
+theorem line_necessary {n m k : ℕ} (hk : 2 ≤ k) (hkm : k < m) (hline : n = m + k + 1)
+    (htop : G n m k = ⊤) :
+    n % 2 = 1 ∧ Nat.Coprime (m + 1) (k + 1) ∧ ¬ (k + 1) ∣ m ∧ ¬ (n % 4 = 1 ∧ k % 4 = 0) := by
+
+/-- Theorem A, the direction that needs no Prop 5 and no Jones: G = S_n ⇒ the conditions
+(only the published off-line result is assumed). -/
+theorem theoremA_necessary (hOff : OffLineLZZW) {n m k : ℕ} (hk : 2 ≤ k) (hkm : k < m)
+    (hmn : m < n) (hsum : m + k < n) (htop : G n m k = ⊤) :
+    n % 2 = 1 ∧ m + k = n - 1 ∧ Nat.Coprime (m + 1) (k + 1) ∧ ¬ (k + 1) ∣ m ∧
+      ¬ (n % 4 = 1 ∧ k % 4 = 0) := by
+
+@PrefixRev.G_le_cls : ∀ {n m k : ℕ},
+  n = m + k + 1 → k < m → PrefixRev.G n m k ≤ PrefixRev.fibreFix fun x => PrefixRev.cls ((k + 1).gcd (m + 1)) x
+
+/-- Every label 0 ≤ c ≤ g/2 occurs. -/
+theorem cls_surj {n m k : ℕ} (hline : n = m + k + 1) (c : ℕ)
+    (hc : 2 * c ≤ Nat.gcd (k + 1) (m + 1)) :
+    ∃ x : Fin n, cls (Nat.gcd (k + 1) (m + 1)) x = c := by
+
+~~~
+
+### Counterexamples (kernel-checked)
+
+~~~lean
+/-- (7, 4, 2): r_7, r_4, r_2 generate S_7 although 4 + 2 < 7. -/
+theorem G_7_4_2 : G 7 4 2 = ⊤ := by
+
+/-- (11, 6, 4): r_11, r_6, r_4 generate S_11 although 6 + 4 < 11. -/
+theorem G_11_6_4 : G 11 6 4 = ⊤ := by
+
+/-- (13, 10, 2): r_13, r_10, r_2 generate S_13 although 10 + 2 < 13. -/
+theorem G_13_10_2 : G 13 10 2 = ⊤ := by
+
+/-- The literal Conjecture 4 is false: (7, 4, 2). -/
+theorem not_conjecture4Literal : ¬ Conjecture4Literal := fun h =>
+
+~~~
+
+### Lemma 3 and (★_d)
+
+~~~lean
+@PrefixRev.block_classes : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        ∀ {B : Set (Fin n)},
+          PrefixRev.IsBlockOf (PrefixRev.G n m k) B →
+            ∀ {x0 : Fin n},
+              x0 ∈ B →
+                B.Subsingleton ∨
+                  B = Set.univ ∨
+                    ∃ d,
+                      1 < d ∧
+                        d < n ∧
+                          d ∣ n ∧ ∀ (y : Fin n), y ∈ B ↔ (PrefixRev.phi n θ y - 1) % d = (PrefixRev.phi n θ x0 - 1) % d
+
+@PrefixRev.star_of_block : ∀ {n m k θ : ℕ},
+  n = m + k + 1 →
+    k < m →
+      (k + 1) * θ % (n + 1) = 1 →
+        n % 2 = 1 →
+          ∀ {B : Set (Fin n)},
+            PrefixRev.IsBlockOf (PrefixRev.G n m k) B →
+              ∀ {x0 : Fin n} {d : ℕ},
+                1 < d →
+                  d < n →
+                    d ∣ n →
+                      (∀ (y : Fin n), y ∈ B ↔ (PrefixRev.phi n θ y - 1) % d = (PrefixRev.phi n θ x0 - 1) % d) →
+                        PrefixRev.StarD n k θ d
+
+/-- Lemma 3 + (★_d): Prop5Core implies the primitivity statement Prop5Primitive. -/
+theorem prop5_of_core (hC : Prop5Core) : Prop5Primitive := by
+
+~~~
+
+### Theorem A and B.4
+
+~~~lean
+/-- Theorem A from: the published off-line result, the arithmetic core of Prop 5 (open),
+Jones's theorem (k = 0) and Lemma 7. -/
+theorem theoremA_jones {Coll : ∀ {n : ℕ}, ℕ → ℕ → Subgroup (Perm (Fin n)) → Prop}
+    (hOff : OffLineLZZW) (hC : Prop5Core) (hJ : JonesK0 Coll) (hL : Lemma7 Coll) {n m k : ℕ}
+    (hk : 2 ≤ k) (hkm : k < m) (hmn : m < n) (hsum : m + k < n) :
+    G n m k = ⊤ ↔ (n % 2 = 1 ∧ m + k = n - 1 ∧ Nat.Coprime (m + 1) (k + 1) ∧ ¬ (k + 1) ∣ m ∧
+      ¬ (n % 4 = 1 ∧ k % 4 = 0)) := by
+
+/-- B.4, the alternating branch, from the same hypotheses: if n ≡ 1 (mod 4) and 4 | k then
+G = A_n (the S_n branch is theoremA_jones). -/
+theorem line_B4_jones {Coll : ∀ {n : ℕ}, ℕ → ℕ → Subgroup (Perm (Fin n)) → Prop}
+    (hC : Prop5Core) (hJ : JonesK0 Coll) (hL : Lemma7 Coll) {n m k : ℕ} (hk : 2 ≤ k)
+    (hkm : k < m) (hline : n = m + k + 1) (hodd : n % 2 = 1) (hg : Nat.Coprime (m + 1) (k + 1))
+    (hdiv : ¬ (k + 1) ∣ m) (h4 : n % 4 = 1 ∧ k % 4 = 0) :
+    ∀ σ : Perm (Fin n), σ ∈ G n m k ↔ Perm.sign σ = 1 := fun σ =>
+
+theorem theoremA (hOff : OffLineLZZW) (hP5 : Prop5Primitive) (hJ : JonesLemma7) {n m k : ℕ}
+    (hk : 2 ≤ k) (hkm : k < m) (hmn : m < n) (hsum : m + k < n) :
+    G n m k = ⊤ ↔ (n % 2 = 1 ∧ m + k = n - 1 ∧ Nat.Coprime (m + 1) (k + 1) ∧ ¬ (k + 1) ∣ m ∧
+      ¬ (n % 4 = 1 ∧ k % 4 = 0)) := by
+
+/-- B.4: on the odd line with gcd = 1 and (k+1) ∤ m: G = A_n if n ≡ 1 (mod 4) and 4 | k,
+and G = S_n otherwise. -/
+theorem line_B4 (hP5 : Prop5Primitive) (hJ : JonesLemma7) {n m k : ℕ} (hk : 2 ≤ k)
+    (hkm : k < m) (hline : n = m + k + 1) (hodd : n % 2 = 1) (hg : Nat.Coprime (m + 1) (k + 1))
+    (hdiv : ¬ (k + 1) ∣ m) :
+    ((n % 4 = 1 ∧ k % 4 = 0) → ∀ σ : Perm (Fin n), σ ∈ G n m k ↔ Perm.sign σ = 1) ∧
+    (¬ (n % 4 = 1 ∧ k % 4 = 0) → G n m k = ⊤) := by
+
+/-- Theorem A with Prop 5 reduced to its arithmetic core. -/
+theorem theoremA_core (hOff : OffLineLZZW) (hC : Prop5Core) (hJ : JonesLemma7) {n m k : ℕ}
+    (hk : 2 ≤ k) (hkm : k < m) (hmn : m < n) (hsum : m + k < n) :
+    G n m k = ⊤ ↔ (n % 2 = 1 ∧ m + k = n - 1 ∧ Nat.Coprime (m + 1) (k + 1) ∧ ¬ (k + 1) ∣ m ∧
+      ¬ (n % 4 = 1 ∧ k % 4 = 0)) :=
+
+~~~
