@@ -1,0 +1,8 @@
+sigma 0.6 W1 zeta: T-vs-lift 0.1984  floors lift-lift 0.1786 T-T 0.1118 | DH: T-vs-lift 0.1504 floors 0.1186 0.0796 27.8
+   TL bound for zeta (W1 raw 0.1984): min_R e^R W1 + A_Herbst(R) = 1.6366 at R = 1.31 ; actual zero sum (RH) = 0
+   TL bound for zeta (W1 floor 0.1786): min_R e^R W1 + A_Herbst(R) = 1.5609 at R = 1.38 ; actual zero sum (RH) = 0
+sigma 0.7 W1 zeta: T-vs-lift 0.1124  floors lift-lift 0.1111 T-T 0.0883 | DH: T-vs-lift 0.0685 floors 0.0676 0.0595 52.0
+   TL bound for zeta (W1 raw 0.1124): min_R e^R W1 + A_Herbst(R) = 0.9388 at R = 1.53 ; actual zero sum (RH) = 0
+   TL bound for zeta (W1 floor 0.1111): min_R e^R W1 + A_Herbst(R) = 0.9331 at R = 1.53 ; actual zero sum (RH) = 0
+done 52.0
+memcap: peak 129 MB rc=0

@@ -1,0 +1,29 @@
+c1: one prime, f = -log|1 - a e^{i th}|, a = 2^-sigma
+ sigma 0.6 mean f -1.2732925824820994e-16 max|f'| num 1.1682753274863245 a/(1-a^2) 1.1682753276885725 var num 0.24747672683523983 exact 0.2474767268352399
+  lam  0.5  E e^{lam f}: hyp2f1 1.033443 num 1.033443 | Herbst bound 1.186026 | Gaussian(var) 1.031418 | Herbst ok True
+  lam  1.0  E e^{lam f}: hyp2f1 1.147704 num 1.147704 | Herbst bound 1.978687 | Gaussian(var) 1.131720 | Herbst ok True
+  lam  2.0  E e^{lam f}: hyp2f1 1.770774 num 1.770774 | Herbst bound 15.328816 | Gaussian(var) 1.640422 | Herbst ok True
+  lam  4.0  E e^{lam f}: hyp2f1 7.969385 num 7.969385 | Herbst bound 55212.128663 | Gaussian(var) 7.241395 | Herbst ok True
+  lam  8.0  E e^{lam f}: hyp2f1 366.057648 num 366.057648 | Herbst bound 9292615451339628544.000000 | Gaussian(var) 2749.722451 | Herbst ok True
+  LSI lam 1 Ent(g^2) 0.169797 <= 2E|g'|^2 0.321470 : True
+  LSI lam 4 Ent(g^2) 11.341538 <= 2E|g'|^2 43.508611 : True
+  LSI lam 8 Ent(g^2) 769.577117 <= 2E|g'|^2 5759.457920 : True
+ sigma 0.75 mean f -1.2732925824820994e-16 max|f'| num 0.9198030414999575 a/(1-a^2) 0.9198030415026162 var num 0.19549252319893204 exact 0.1954925231989321
+  lam  0.5  E e^{lam f}: hyp2f1 1.025947 num 1.025947 | Herbst bound 1.111549 | Gaussian(var) 1.024738 | Herbst ok True
+  lam  1.0  E e^{lam f}: hyp2f1 1.111929 num 1.111929 | Herbst bound 1.526563 | Gaussian(var) 1.102683 | Herbst ok True
+  lam  2.0  E e^{lam f}: hyp2f1 1.546918 num 1.546918 | Herbst bound 5.430739 | Gaussian(var) 1.478436 | Herbst ok True
+  lam  4.0  E e^{lam f}: hyp2f1 5.010458 num 5.010458 | Herbst bound 869.832863 | Gaussian(var) 4.777609 | Herbst ok True
+  lam  8.0  E e^{lam f}: hyp2f1 113.428058 num 113.428058 | Herbst bound 572457494978.115723 | Gaussian(var) 521.005575 | Herbst ok True
+  LSI lam 1 Ent(g^2) 0.124576 <= 2E|g'|^2 0.201694 : True
+  LSI lam 4 Ent(g^2) 5.904057 <= 2E|g'|^2 16.956143 : True
+  LSI lam 8 Ent(g^2) 211.806990 <= 2E|g'|^2 1123.491705 : True
+primes 664579 0.3
+ sigma 0.55  L_re^2 3.73464  L_arg^2 8.17374  Var log|zeta_lift| 1.09909  ratio L^2/var 3.398  tail(p>1e7) 0.08252
+ sigma 0.60  L_re^2 2.77591  L_arg^2 6.21839  Var log|zeta_lift| 0.79749  ratio L^2/var 3.481  tail(p>1e7) 0.00982
+ sigma 0.70  L_re^2 1.77818  L_arg^2 3.95060  Var log|zeta_lift| 0.52553  ratio L^2/var 3.384  tail(p>1e7) 0.00022
+ sigma 0.75  L_re^2 1.47321  L_arg^2 3.23178  Var log|zeta_lift| 0.44663  ratio L^2/var 3.299  tail(p>1e7) 0.00004
+ sigma 0.80  L_re^2 1.23836  L_arg^2 2.67634  Var log|zeta_lift| 0.38584  ratio L^2/var 3.209  tail(p>1e7) 0.00001
+ sigma 0.90  L_re^2 0.90364  L_arg^2 1.88949  Var log|zeta_lift| 0.29740  ratio L^2/var 3.038  tail(p>1e7) 0.00000
+ sigma 1.00  L_re^2 0.68073  L_arg^2 1.37506  Var log|zeta_lift| 0.23575  ratio L^2/var 2.888  tail(p>1e7) 0.00000
+done 1.0
+memcap: peak 0 MB rc=0

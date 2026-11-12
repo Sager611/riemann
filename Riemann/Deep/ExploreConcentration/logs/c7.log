@@ -1,0 +1,9 @@
+T = 2000; columns: N, theta, Haar E|D|^4, [T,2T] E|D|^4 for t0 = 0 (arithmetic, ~ zeta partial sum), t0 = 1.5T (rotated)
+  N=   20 theta=0.39 Haar     43.49 | t0=0:     43.93 (ratio 1.01) | t0=1.5T:     42.94 (ratio 0.99)
+  N=   45 theta=0.50 Haar     84.39 | t0=0:     85.82 (ratio 1.02) | t0=1.5T:     83.86 (ratio 0.99)
+  N=  100 theta=0.61 Haar    147.75 | t0=0:    147.03 (ratio 1.00) | t0=1.5T:    165.33 (ratio 1.12)
+  N=  200 theta=0.70 Haar    226.86 | t0=0:    214.86 (ratio 0.95) | t0=1.5T:    372.88 (ratio 1.64)
+  N=  400 theta=0.79 Haar    334.58 | t0=0:    282.39 (ratio 0.84) | t0=1.5T:   1119.29 (ratio 3.35)
+  N= 1000 theta=0.91 Haar    530.47 | t0=0:    355.53 (ratio 0.67) | t0=1.5T:   6371.25 (ratio 12.01)
+done 50.6
+memcap: peak 148 MB rc=0

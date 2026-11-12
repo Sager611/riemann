@@ -1,0 +1,9 @@
+lift samples 60000 means zeta -0.0083 DH 0.0449 25.8
+floor (lift 20000 vs lift 40000): zeta 0.0113 DH 0.0107
+T=   250  W1 zeta 0.0629 (mean 0.0097)  DH 0.0672 (mean 0.0254) 27.6
+T=   500  W1 zeta 0.0379 (mean 0.0044)  DH 0.0547 (mean 0.0244) 30.5
+T=  1000  W1 zeta 0.0283 (mean 0.0032)  DH 0.0350 (mean 0.0372) 35.7
+T=  2000  W1 zeta 0.0304 (mean 0.0098)  DH 0.0373 (mean 0.0301) 45.2
+T=  4000  W1 zeta 0.0216 (mean -0.0062)  DH 0.0302 (mean 0.0357) 64.2
+done 64.2
+memcap: peak 107 MB rc=0

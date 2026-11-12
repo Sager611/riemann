@@ -1,0 +1,22 @@
+sigma 0.6
+  R=1: zeta lift 5.3e-02 T 5.2e-02 Herbst<=1.1e+00 | DH lift 3.0e-02 T 3.0e-02
+  R=2: zeta lift 1.6e-03 T 1.8e-03 Herbst<=4.8e-01 | DH lift 4.2e-03 T 4.8e-03
+  R=3: zeta lift 0.0e+00 T 2.7e-07 Herbst<=1.5e-01 | DH lift 6.0e-04 T 8.0e-04
+  R=4: zeta lift 0.0e+00 T 0.0e+00 Herbst<=3.4e-02 | DH lift 5.7e-05 T 1.3e-04
+  W1(log|zeta| on [T,2T], lift) ~ 0.0270 ; mean difference 0.0083
+  W1(log|DH| on [T,2T], lift) ~ 0.0380 ; mean difference -0.0151
+sigma 0.7
+  R=1: zeta lift 1.9e-02 T 1.9e-02 Herbst<=7.6e-01 | DH lift 2.0e-02 T 2.0e-02
+  R=2: zeta lift 1.4e-05 T 4.6e-05 Herbst<=2.2e-01 | DH lift 2.5e-03 T 2.4e-03
+  R=3: zeta lift 0.0e+00 T 0.0e+00 Herbst<=4.1e-02 | DH lift 2.1e-04 T 3.7e-04
+  R=4: zeta lift 0.0e+00 T 0.0e+00 Herbst<=4.5e-03 | DH lift 2.8e-07 T 5.6e-05
+  W1(log|zeta| on [T,2T], lift) ~ 0.0141 ; mean difference -0.0022
+  W1(log|DH| on [T,2T], lift) ~ 0.0190 ; mean difference -0.0004
+sigma 0.8
+  R=1: zeta lift 6.9e-03 T 6.7e-03 Herbst<=5.1e-01 | DH lift 1.1e-02 T 1.2e-02
+  R=2: zeta lift 0.0e+00 T 0.0e+00 Herbst<=1.0e-01 | DH lift 1.3e-03 T 8.9e-04
+  R=3: zeta lift 0.0e+00 T 0.0e+00 Herbst<=9.8e-03 | DH lift 1.0e-04 T 4.8e-05
+  R=4: zeta lift 0.0e+00 T 0.0e+00 Herbst<=4.5e-04 | DH lift 5.9e-06 T 3.0e-06
+  W1(log|zeta| on [T,2T], lift) ~ 0.0076 ; mean difference 0.0040
+  W1(log|DH| on [T,2T], lift) ~ 0.0121 ; mean difference -0.0023
+memcap: peak 0 MB rc=0

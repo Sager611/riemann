@@ -1,0 +1,8 @@
+sigma 0.6 int log|F(sig+it)| 8.65698  int log|F(3+it)| 0.02212  harg(T1) 0.23707 harg(T2) -0.32131
+   Littlewood LHS (+a1 - a2) 9.19325   (-a1 + a2) 8.07649   2 pi sum(beta - sigma) 8.07572  (8 zeros)
+   mean shift E log|F(sig+it)| over [10,420] = 0.02111 ; zero part 2pi sum/(T2-T1) = 0.01970
+sigma 0.7 int log|F(sig+it)| 4.33558  int log|F(3+it)| 0.02212  harg(T1) 0.19430 harg(T2) -0.31147
+   Littlewood LHS (+a1 - a2) 4.81924   (-a1 + a2) 3.80769   2 pi sum(beta - sigma) 3.80731  (6 zeros)
+   mean shift E log|F(sig+it)| over [10,420] = 0.01057 ; zero part 2pi sum/(T2-T1) = 0.00929
+done 184.9
+memcap: peak 79 MB rc=0
