@@ -1,0 +1,7 @@
+identity max error over 2000 random blocks: 2.942e-15
+N=   8: sd(block sum) 0.4532  sd(L*dS1) 0.4503  sd(boundary) 0.2206
+N=  64: sd(block sum) 0.4819  sd(L*dS1) 0.4816  sd(boundary) 0.2160
+N= 512: sd(block sum) 0.4599  sd(L*dS1) 1.5701  sd(boundary) 0.2446
+Var S_1 (random model, p < 1e5) = 0.0791, sd = 0.2812; sqrt(2 Var S1)*L(1e4) = 0.4667
+sd of S_1(gamma_n) - mean over n > 1000: 0.2474
+memcap: peak 0 MB rc=0

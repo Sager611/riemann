@@ -1,0 +1,8 @@
+height   2516.6 y=1.00 sigma=1/2+1.048: slope 1.0000  rms resid 0.0000  sd(log|zeta|) 0.2792  corr 1.00000
+height   8149.0 y=1.00 sigma=1/2+0.877: slope 1.0000  rms resid 0.0000  sd(log|zeta|) 0.3323  corr 1.00000
+height  16460.1 y=1.00 sigma=1/2+0.798: slope 1.0000  rms resid 0.0000  sd(log|zeta|) 0.3605  corr 1.00000
+height   8149.0 y=0.50 sigma=1/2+0.438: slope 1.0000  rms resid 0.0000  sd(log|zeta|) 0.5091  corr 1.00000
+height   8149.0 y=0.25 sigma=1/2+0.219: slope 1.0000  rms resid 0.0000  sd(log|zeta|) 0.6726  corr 1.00000
+height  16460.1 y=0.25 sigma=1/2+0.200: slope 1.0000  rms resid 0.0000  sd(log|zeta|) 0.7439  corr 1.00000
+height  16460.1 y=0.10 sigma=1/2+0.080: slope 1.0000  rms resid 0.0000  sd(log|zeta|) 0.9784  corr 1.00000
+memcap: peak 23 MB rc=0

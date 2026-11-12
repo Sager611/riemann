@@ -1,0 +1,26 @@
+b   lmin(off x+-ib)  lmin(on gap 2b)  ratio   series(2pi b)^2/6
+ 0.01 6.576707e-04 6.578438e-04  0.99974 6.579736e-04
+ 0.05 1.626189e-02 1.636836e-02  0.99350 1.644934e-02
+ 0.10 6.288810e-02 6.451072e-02  0.97485 6.579736e-02
+ 0.20 2.216498e-01 2.431733e-01  0.91149 2.631895e-01
+ 0.25 3.174305e-01 3.633802e-01  0.87355 4.112335e-01
+ 0.30 4.140848e-01 4.954488e-01  0.83578 5.921763e-01
+ 0.40 5.901473e-01 7.661277e-01  0.77030 1.052758e+00
+ 0.50 7.279709e-01 1.000000e+00  0.72797 1.644934e+00
+ 0.75 9.153276e-01 7.877934e-01  1.16189 3.701102e+00
+ 1.00 9.765329e-01 1.000000e+00  0.97653 6.579736e+00
+ 2.00 9.999124e-01 1.000000e+00  0.99991 2.631895e+01
+ 4.00 1.000000e+00 1.000000e+00  1.00000 1.052758e+02
+
+block K=41: lattice with points n0, n0+1 replaced by x+-ib (off) or x+-b (on), x = n0+1/2
+b= 0.05 off: lmin=1.6019e-02 lmax=2.2687 | on(gap 2b): lmin=1.6132e-02 lmax=2.2616 | b*lmin_off=0.0008
+b= 0.10 off: lmin=6.1849e-02 lmax=2.2356 | on(gap 2b): lmin=6.3584e-02 lmax=2.2062 | b*lmin_off=0.0062
+b= 0.20 off: lmin=2.1634e-01 lmax=2.1296 | on(gap 2b): lmin=2.3979e-01 lmax=1.9975 | b*lmin_off=0.0433
+b= 0.30 off: lmin=3.9712e-01 lmax=2.0173 | on(gap 2b): lmin=4.8922e-01 lmax=1.6927 | b*lmin_off=0.1191
+b= 0.40 off: lmin=4.7577e-01 lmax=1.9341 | on(gap 2b): lmin=7.5924e-01 lmax=1.3432 | b*lmin_off=0.1903
+b= 0.50 off: lmin=3.8599e-01 lmax=1.8860 | on(gap 2b): lmin=1.0000e+00 lmax=1.0000 | b*lmin_off=0.1930
+b= 1.00 off: lmin=1.4176e-01 lmax=1.8817 | on(gap 2b): lmin=nan lmax=nan | b*lmin_off=0.1418
+b= 2.00 off: lmin=8.2789e-02 lmax=1.9173 | on(gap 2b): lmin=nan lmax=nan | b*lmin_off=0.1656
+b= 4.00 off: lmin=1.3238e-01 lmax=1.8676 | on(gap 2b): lmin=nan lmax=nan | b*lmin_off=0.5295
+b= 8.00 off: lmin=9.4006e-02 lmax=1.9060 | on(gap 2b): lmin=nan lmax=nan | b*lmin_off=0.7520
+memcap: peak 0 MB rc=0

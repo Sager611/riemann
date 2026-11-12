@@ -1,0 +1,5 @@
+T~11000 y=1.0 sigma=1.3414: mean w = 1.2744 (zeta(2s) = 1.2793), mean 1/w = 1.2514 (zeta(2s)/zeta(4s) = 1.2446), predicted A2 limit 1.5923
+   [w]_A2 median/max over windows of K zeros: K=1: 1.014/1.26  K=4: 1.191/3.01  K=16: 1.579/1.78  K=64: 1.591/1.68  K=256: 1.593/1.61
+T~11000 y=0.5 sigma=0.9207: mean w = 1.8203 (zeta(2s) = 1.8234), mean 1/w = 1.6599 (zeta(2s)/zeta(4s) = 1.6459), predicted A2 limit 3.0011
+   [w]_A2 median/max over windows of K zeros: K=1: 1.063/2.92  K=4: 1.663/14.45  K=16: 2.913/4.45  K=64: 2.986/3.45  K=256: 2.997/3.10
+memcap: peak 24 MB KILLED TIME>1200s rc=137
