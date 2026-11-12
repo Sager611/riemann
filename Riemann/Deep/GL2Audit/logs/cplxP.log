@@ -1,0 +1,6 @@
+Q complex (Im B = 160.968607, A = 334.698985, C = 4124.138461), R = 3.0, xi = 25/256
+min over REAL P (direct c, deg 9):    4722.9017460952
+formula sqrt(AC) coth (real-P claim):       4722.9017460951
+min over COMPLEX P (direct c):              4720.4201831735
+formula sqrt(AC - ImB^2) (B l.796, AT l.996): 4720.4201831735
+memcap: peak 0 MB rc=0

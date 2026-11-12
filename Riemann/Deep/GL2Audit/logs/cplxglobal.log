@@ -1,0 +1,6 @@
+# uv run --no-project --with numpy --with scipy python3 cplxglobal.py 25 256 8 8 1 '4,7,8.6,10'   (under memcap 290 900)
+R=4.0000 K=8 KE=8: real -0.004943700626  complex -0.004943700626  diff -1.84e-14  |d|max 8.6e-09
+R=7.0000 K=8 KE=8: real 0.061258030911  complex 0.061258030910  diff -3.44e-13  |d|max 5.5e-08
+R=8.6000 K=8 KE=8: real 0.065817564502  complex 0.065817564501  diff -8.16e-13  |d|max 2.0e-07
+R=10.0000 K=8 KE=8: real 0.063118318296  complex 0.063118318291  diff -4.38e-12  |d|max 1.8e-07
+memcap: peak 46 MB rc=0

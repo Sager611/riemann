@@ -100,3 +100,6 @@ So 1 − log M(R,λ)/R ≤ κ_up for all R > 0, λ ≥ 0, hence κ*(ξ) ≤ κ_u
 replay.py re-derives every cell inequality, the tails and the strip with independent code (exact-rational integrals via the finite
 alternating formula of Degree2Mol §5, own bound assembly); the float proposer build() is the only shared part and is not trusted.
 
+
+## Audit note (gl2audit, 12 Nov 2026)
+- §1.1: the same complex-P infimum √(AC − (Im B)²) is displayed in Bernard 1404.6432 l.796–800 (as in AT l.993–996); for real P the infimum is √(AC)·coth(ξ√(C/A)). AUDIT PASSED: Riemann/Deep/GL2Audit/REPORT.md.

@@ -1,0 +1,28 @@
+tails: R_tail=[0.5367228742 +/- 3.69e-11] (core starts 0.5), R_tail(lam>=3.0)=[0.6045195930 +/- 4.32e-11], h(RMAX)=[0.06930766237 +/- 1.31e-12]: OK; strip from 0.59375: OK (147 intervals)
+  0/1276 replayed, 0 failures, 0s
+  200/1276 replayed, 0 failures, 40s
+  400/1276 replayed, 0 failures, 82s
+  600/1276 replayed, 0 failures, 117s
+  800/1276 replayed, 0 failures, 168s
+  1000/1276 replayed, 0 failures, 208s
+  1200/1276 replayed, 0 failures, 239s
+REPLAY 0.07005633 xi=25/256: 1257 dual + 19 crude cells, 0 failures; tails True, strip True -> REPLAY OK (250s)
+      253.64 real       183.40 user         4.43 sys
+            87851008  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               30490  page reclaims
+                5334  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                1160  voluntary context switches
+              447841  involuntary context switches
+           528366701  instructions retired
+           280197419  cycles elapsed
+            25772536  peak memory footprint
+memcap: peak 59 MB rc=0

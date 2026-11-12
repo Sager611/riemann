@@ -1,0 +1,20 @@
+real: R 9.867773 kappa 0.07005631656108 lam 0.770589037
+KE 36 test (>1 means complex helps locally): 0.232828921305
+q(e*) = 4693.28 (negative = descent)
+eps 1e-6 kappa_c 0.07005631656103
+eps 1e-4 kappa_c 0.07005631606908
+eps 1e-3 kappa_c 0.07005626736098
+eps 1e-2 kappa_c 0.07005139658233
+eps 0.1 kappa_c 0.06956463536456
+eps 1 kappa_c 0.0262425897698
+memcap: peak 18 MB rc=0
+real: R 7.688073 kappa 0.08971025099034 lam 0.769252223
+KE 36 test (>1 means complex helps locally): 0.232971151408
+q(e*) = 531.666 (negative = descent)
+eps 1e-6 kappa_c 0.08971025099028
+eps 1e-4 kappa_c 0.08971025035871
+eps 1e-3 kappa_c 0.0897101878268
+eps 1e-2 kappa_c 0.08970393467557
+eps 0.1 kappa_c 0.08907902413672
+eps 1 kappa_c 0.03345667032449
+memcap: peak 18 MB rc=0

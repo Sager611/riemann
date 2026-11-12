@@ -1,0 +1,9 @@
+ceil_25_256_0.07005633.json: 1276 cells, R in [0.5, 28.0], lam-index in [0, 3145728], area match True, overlapping pairs 0, certified flag True
+COVER OK
+memcap: peak 0 MB rc=0
+ceil_1_8_0.08971026.json: 1017 cells, R in [0.5, 22.0], lam-index in [0, 6291456], area match True, overlapping pairs 0, certified flag True
+COVER OK
+memcap: peak 0 MB rc=0
+ceil_4_7_0.40896.json: 526 cells, R in [0.125, 6.125], lam-index in [0, 393216], area match True, overlapping pairs 0, certified flag True
+COVER OK
+memcap: peak 0 MB rc=0
