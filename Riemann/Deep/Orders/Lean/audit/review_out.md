@@ -1,0 +1,19 @@
+FAITHFUL
+
+1. **Schedule:** `get (i % 4)` gives s1,s2,s3,s4 for moves m=i+1, including s4 when m≡0 mod 4. No indexing shift. **Fix:** none.
+
+2. **Permutation scope:** Six pairwise inequalities make four entries a permutation of the four constructors. Concrete classification orders satisfy this; `corollary` explicitly assumes it. `Perfect` also accepting nonpermutations does not weaken these statements. **Fix:** none.
+
+3. **Operands/reuse:** Both operands must belong to the prior collection; no inequality requires them to differ. Prepending results preserves all previous numbers. This faithfully allows “the same number twice” and unlimited reuse. **Fix:** none.
+
+4. **Subtraction/division:** `v+b=a` means ordered subtraction a−b, without truncated-subtraction artifacts. `0<b ∧ v*b=a` means exact ordered division a/b. `Valid` requires v≥1, excluding zero/negative differences and nonpositive/fractional quotients. **Fix:** none.
+
+5. **Number domain:** Naturals lose no perfect sequences: the start is 2 and every result must lie in [1,N]. These definitions model perfect play, not unrestricted play potentially allowing nonpositive subtraction results. **Fix:** none for the claimed scope.
+
+6. **Start/newness/coverage:** Validation starts at `[2]`; every result is absent from the entire prior collection and lies in [1,N]. `made` includes precisely the start and results; final coverage requires every target number. **Fix:** none.
+
+7. **Move count/edges:** `ms.length+1=N` expresses exactly N−1 moves without Nat-subtraction ambiguity. N=0 is impossible. N=1 forces no moves, but 1∉[2], so fails. N=2 succeeds precisely for division-first orders, via 2/2=1. **Fix:** none.
+
+8. **Classification:** All 24 concrete-order equivalences match NOTE.md exactly: thresholds, isolated exceptions, and impossible orders. Their right-hand sides also correctly exclude N=0 and N=1. **Fix:** none.
+
+9. **Corollary:** The quantified left side means “perfect sequences for every sufficiently large N”; the right side matches the stated criterion. There are 6+6−1=11 qualifying permutations. The remaining 13 have sets ∅ (10 orders), {2} (2), or {2,4,5} (1), by the classification. Counts and finite-set conclusions follow from the supplied statements but are not explicit conjuncts of `corollary`. **Fix:** none for fidelity; optional separate lemmas for those consequences.

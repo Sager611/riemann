@@ -132,7 +132,7 @@ q* ≤ q ≤ q* + 8. They were found by a depth-first search over pool assignmen
 symbolic witnesses (bounded constants 1..4, sometimes 1..6 or 1..12).
 
 **Example (the paper's order, c = 3).** P = 4q + 2, H = 6q + 3, T = 12q + 6,
-N = 12q + 9; rounds × − ÷ +. The paper found no patch for c = 3 and used c = 15
+N = 12q + 9; rounds × − ÷ +. The paper found no patch for c = 3 and used c = 15 (its v2, l. 640–660: no c = 3 patch within its shape, only the last d ∈ {1, 2} rounds rewritten, 2 ≤ q ≤ 40; ours also rewrites head rounds 0–2)
 (23 moves, two rounds deleted); this one has 15 moves, q* = 1, so it extends every
 perfect P ≡ 2 (mod 4) (P ≥ 10) to 3P + 3.
 

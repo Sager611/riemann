@@ -1,0 +1,16 @@
+Riemann/Deep/Orders/Lean/Search.lean:19:23: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+Riemann/Deep/Orders/Lean/Search.lean:25:23: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+Riemann/Deep/Orders/Lean/Search.lean:114:6: warning: This simp argument is unused:
+  List.mem_singleton
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_cons, List.reverse_cons, List.mem_append, List.mem_reverse, List.mem_cons,
+    List.not_mem_nil, or_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

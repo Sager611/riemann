@@ -14,4 +14,6 @@
 
 **Novelty.** Nothing found beyond the paper itself ([novelty](../Riemann/Deep/Orders/NOVELTY.md)).
 
+**Lean.** Machine-checked in core Lean 4 from no hypotheses (orderslean, 12 Nov 2026): Theorem 1 (the exact set of perfect N for each of the 24 orders) and the Corollary; the 132 patches, 381 base sequences, the small-N search and the 13 dead ends are Bool checkers proved sound and evaluated by the kernel (no native_decide); sorry-free, standard axioms, every module ≤ 258 MB; reviewer FAITHFUL; arXiv 2610.10095v2 (31 Oct) still states the question as open (v2 l. 702) ([LEAN.md](../Riemann/Deep/Orders/LEAN.md), [FORMALIZATIONS](../FORMALIZATIONS.md)).
+
 **Files.** [report](../Riemann/Deep/Orders/REPORT.md), [note](../Riemann/Deep/Orders/NOTE.md), [patches](../Riemann/Deep/Orders/PATCHES.md), [verify.py](../Riemann/Deep/Orders/verify.py)

@@ -1,0 +1,8 @@
+Riemann/Deep/Orders/Lean/Ext.lean:98:6: warning: This simp argument is unused:
+  List.mem_singleton
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [List.map_cons, List.reverse_cons, List.mem_append, List.mem_reverse, List.mem_cons,
+    List.not_mem_nil, or_false]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
