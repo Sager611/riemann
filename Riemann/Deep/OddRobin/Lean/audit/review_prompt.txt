@@ -1,0 +1,47 @@
+Verdict-only statement-fidelity review (no tool use needed; answer from the text below within 90 s). Reply with FAITHFUL or ISSUES, then a numbered list of concrete issues (each: what, why it matters, fix), max 15 lines.
+
+QUESTION: do the Lean definitions/theorems below faithfully state (i) Washington–Yang's theorem as a hypothesis WITHOUT strengthening it, and (ii) the gap theorem, sharpness and the RH equivalence of PROOF.md §1/§5(b)? Note the design: Mathlib's Real.log/exp/γ could not be imported under a 290 MB memory cap, so the light files use an abstract logarithm L, E (= e^γ), g (= γ) with a named hypothesis MathlibFacts whose every field is a Mathlib theorem for L = Real.log, E = Real.exp γ, g = γ; an (uncompiled) Instance.lean plugs these in: OR n := (σ 1 n : ℝ)/n < Real.exp γ / 2 * Real.log (Real.log n) and OR n = ORf Real.log (Real.exp γ) n by rfl.
+
+=== Washington–Yang, arXiv 2008.04787 TeX ===
+l.87–93 Theorem (MainThm1): "The Riemann hypothesis is equivalent to the statement that σ(n)/(n log log n) < e^γ/2 for all odd n ≥ c_0 = 18565284664427130919514350125 = 3^4·5^3·7^2·11·13···67."
+l.390–395 Prop (robinProp): "Assuming the Riemann hypothesis, we have σ(n)/(n log log n) < e^γ/2 for all odd n ≥ c_0."
+l.399–400: "The final odd colossally abundant number that violates this inequality for x_1 < 120409 is N = 3^4·5^3·7^2·11···61 = 277093800961598968947975375 ... We do not know whether the inequality is satisfied for N<n<c_0."
+
+=== PROOF.md §1 (target) ===
+(OR) σ(n)/n < (e^γ/2) log log n. ε* = log(68/67)/log 67; g_p(a) = σ(p^a)/p^{a(1+ε*)}; α_p = exponent of p in N; c_p(a) = log g_p(α_p) − log g_p(a) ≥ 0.
+(1b) log(σ(n)/n) = log(σ(N)/N) + ε*(t − t_N) − L(n), L(n) = Σ_p c_p(a_p), t = log n.
+(1c) n violates (OR) iff L(n) ≤ D(t), D(t) = δ0 + ε*(t − t_N) − (log log t − log log t_N), δ0 = log(σ(N)/N) − log(e^γ/2) − log log log N = 0.00121349 > 0.
+(1d) D decreasing on [t_N, t_c0] (ε* = 0.0035234646 < 1/(t_c0 log t_c0) = 0.0036790869), so a violator in the gap has L(n) < δ0.
+(1e) a_p = 0 for p ≥ 73 (c_73(1) = 0.00151163 > δ0, monotone in p).
+(1f) for p ≤ 71 only 3:4,5; 5:3,2; 11:1,2; 67:0,1; 71:0,1, all other p: α_p; 10 vectors with total cost ≤ δ0; three in the gap: 3N, 67N/5, 11N, which satisfy (OR) (log-margins −3.78e−4, −5.10e−4, −5.96e−4). So no odd n with N < n < c0 violates (OR).
+§5(b): RH ⟺ (OR) for every odd n > N; sharp: N violates (OR). Proof: (⇒) WY Prop 3.5 + §1; (⇐) WY Thm 1.1.
+
+=== Lean (Lean 4 + Mathlib; σ = ArithmeticFunction.sigma, all compiled sorry-free except Instance.lean) ===
+def NN : ℕ := 277093800961598968947975375
+def c0 : ℕ := 18565284664427130919514350125
+lemma NN_prod : NN = ∏ p ∈ P61, p ^ αN p   -- P61 = odd primes ≤ 61, αN 3 = 4, αN 5 = 3, αN 7 = 2, else 1
+def ORf (L : ℝ → ℝ) (E : ℝ) (n : ℕ) : Prop := (σ 1 n : ℝ) / n < E / 2 * L (L n)
+def WYIneqF (L : ℝ → ℝ) (E : ℝ) (n : ℕ) : Prop := (σ 1 n : ℝ) / (n * L (L n)) < E / 2
+def WYTheoremFor (RH : Prop) (L : ℝ → ℝ) (E : ℝ) : Prop := RH ↔ ∀ n : ℕ, Odd n → c0 ≤ n → WYIneqF L E n
+structure LogLike (L : ℝ → ℝ) : Prop where
+  map_mul : ∀ x y : ℝ, 0 < x → 0 < y → L (x * y) = L x + L y          -- Real.log_mul
+  mono : ∀ x y : ℝ, 0 < x → x ≤ y → L x ≤ L y                         -- Real.log_le_log
+  one_sub_inv_le : ∀ x : ℝ, 0 < x → 1 - x⁻¹ ≤ L x                    -- Real.one_sub_inv_le_log_of_pos
+  series_lo : ∀ a : ℝ, 0 ≤ a → ∀ m : ℕ, lsum a m ≤ L (1 + a)          -- from Real.hasSum_log_one_add
+  series_hi : ∀ a : ℝ, 0 ≤ a → ∀ m : ℕ, L (1 + a) ≤ lsum a m + ltail a m
+  -- lsum a m = Σ_{k<m} 2/(2k+1) y^(2k+1), ltail a m = 2 y^(2m+1)/((2m+1)(1−y²)), y = a/(a+2)
+structure MathlibFacts (L : ℝ → ℝ) (E g : ℝ) : Prop where
+  logLike : LogLike L
+  exp_pos : 0 < E                                                     -- Real.exp_pos
+  log_exp : L E = g                                                   -- Real.log_exp
+  seq_lt : ∀ n : ℕ, (harmonic n : ℝ) - L ((n : ℝ) + 1) < g           -- Real.eulerMascheroniSeq_lt_eulerMascheroniConstant
+  lt_seq' : ∀ n : ℕ, 0 < n → g < (harmonic n : ℝ) - L n              -- Real.eulerMascheroniConstant_lt_eulerMascheroniSeq'
+theorem gap_theorem {E g : ℝ} (h : MathlibFacts L E g) : ∀ n : ℕ, Odd n → NN < n → n < c0 → ORf L E n
+theorem sharp {E g : ℝ} (h : MathlibFacts L E g) : ¬ ORf L E NN
+theorem main {E g : ℝ} (h : MathlibFacts L E g) (RH : Prop) (hWY : WYTheoremFor RH L E) :
+    RH ↔ ∀ n : ℕ, Odd n → NN < n → ORf L E n
+-- Instance.lean (not compiled; imports exceed the cap):
+-- noncomputable def OR (n : ℕ) : Prop := (σ 1 n : ℝ) / n < Real.exp Real.eulerMascheroniConstant / 2 * Real.log (Real.log n)
+-- theorem gap_real : ∀ n, Odd n → NN < n → n < c0 → OR n ; theorem sharp_real : ¬ OR NN
+-- theorem main_real (hWY : WYTheoremFor RiemannHypothesis Real.log (Real.exp eulerMascheroniConstant)) : RiemannHypothesis ↔ ∀ n, Odd n → NN < n → OR n
+Internal route (for context): total cost < 13/10000 (δ0 < 0.0012147 proved), concavity via increments inc p a = L(1 + 1/(p σ(p^a))) − ε L p antitone in a, per-prime exclusions, pair exclusions, 32-case final enumeration, OR at 3N, 11N, 67N/5 numerically; γ ∈ [0.5772145, 0.5776] from H_10 and the two Mathlib bounds at n = 10^7.

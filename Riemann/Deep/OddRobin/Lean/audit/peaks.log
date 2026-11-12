@@ -1,0 +1,56 @@
+08:58 TImp rc=0 12s memcap: peak 245 MB rc=0
+08:58 TImp rc=137 4s memcap: peak 301 MB KILLED MEM>290MB rc=137
+08:58 TImp rc=137 5s memcap: peak 302 MB KILLED MEM>290MB rc=137
+08:59 TIa rc=0 6s memcap: peak 0 MB rc=0
+08:59 TIa rc=0 6s memcap: peak 0 MB rc=0
+08:59 TIb rc=0 6s memcap: peak 284 MB rc=0
+08:59 TIb rc=137 4s memcap: peak 306 MB KILLED MEM>290MB rc=137
+08:59 TIc rc=137 5s memcap: peak 297 MB KILLED MEM>290MB rc=137
+08:59 TIc rc=137 4s memcap: peak 296 MB KILLED MEM>290MB rc=137
+08:59 TId rc=137 6s memcap: peak 296 MB KILLED MEM>290MB rc=137
+08:59 TId rc=137 5s memcap: peak 300 MB KILLED MEM>290MB rc=137
+09:02 LogSeries rc=137 4s memcap: peak 299 MB KILLED MEM>290MB rc=137
+09:03 LogSeries rc=137 5s memcap: peak 301 MB KILLED MEM>290MB rc=137
+09:03 LogSeries rc=0 13s memcap: peak 275 MB rc=0
+09:04 Gamma rc=137 43s memcap: peak 366 MB KILLED MEM>290MB rc=137
+09:04 Gamma rc=137 10s memcap: peak 343 MB KILLED MEM>290MB rc=137
+09:05 Gamma rc=137 43s memcap: peak 354 MB KILLED MEM>290MB rc=137
+09:05 Gamma rc=137 20s memcap: peak 354 MB KILLED MEM>290MB rc=137
+09:07 Gamma rc=137 116s memcap: peak 361 MB KILLED MEM>290MB rc=137
+09:09 Gamma rc=137 117s memcap: peak 316 MB KILLED MEM>290MB rc=137
+09:10 TIl rc=0 7s memcap: peak 0 MB rc=0
+09:10 TIl rc=0 7s memcap: peak 0 MB rc=0
+09:10 TIl rc=0 7s memcap: peak 0 MB rc=0
+09:14 LogLike rc=1 25s memcap: peak 189 MB rc=1
+09:14 LogLike rc=0 8s memcap: peak 237 MB rc=0
+09:16 Defs rc=0 39s memcap: peak 214 MB rc=0
+09:16 Cost rc=1 17s memcap: peak 189 MB rc=1
+09:17 Cost rc=0 35s memcap: peak 253 MB rc=0
+09:19 NumA rc=137 33s memcap: peak 291 MB KILLED MEM>290MB rc=137
+09:20 NumA rc=137 32s memcap: peak 293 MB KILLED MEM>290MB rc=137
+09:20 NumA rc=0 24s memcap: peak 283 MB rc=0
+09:21 NumB rc=0 22s memcap: peak 267 MB rc=0
+09:22 NumC rc=0 32s memcap: peak 265 MB rc=0
+09:24 GammaL rc=1 30s memcap: peak 251 MB rc=1
+09:25 GammaL rc=0 16s memcap: peak 255 MB rc=0
+09:25 SigVals rc=0 20s memcap: peak 254 MB rc=0
+09:25 BigN rc=0 23s memcap: peak 270 MB rc=0
+09:26 Big3 rc=0 20s memcap: peak 272 MB rc=0
+09:26 Big11 rc=0 22s memcap: peak 270 MB rc=0
+09:26 Big67 rc=0 19s memcap: peak 270 MB rc=0
+09:27 Final rc=0 14s memcap: peak 250 MB rc=0
+09:31 Gap rc=137 159s memcap: peak 292 MB KILLED MEM>290MB rc=137
+09:35 Gap rc=137 239s memcap: peak 306 MB KILLED MEM>290MB rc=137
+09:38 Gap rc=137 152s memcap: peak 331 MB KILLED MEM>290MB rc=137
+09:39 Gap rc=137 81s memcap: peak 304 MB KILLED MEM>290MB rc=137
+09:43 GapP rc=1 79s memcap: peak 264 MB rc=1
+09:44 GapP rc=0 28s memcap: peak 272 MB rc=0
+09:45 GapF rc=0 7s memcap: peak 251 MB rc=0
+09:45 GapC rc=0 17s memcap: peak 270 MB rc=0
+09:45 GapD rc=1 15s memcap: peak 250 MB rc=1
+09:47 GapD rc=0 40s memcap: peak 255 MB rc=0
+09:49 Gap rc=1 117s memcap: peak 285 MB rc=1
+09:52 Gap rc=0 52s memcap: peak 284 MB rc=0
+09:53 Main rc=0 62s memcap: peak 240 MB rc=0
+09:54 Check rc=0 92s memcap: peak 245 MB rc=0
+09:58 Check rc=0 56s memcap: peak 247 MB rc=0

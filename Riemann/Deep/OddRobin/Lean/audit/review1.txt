@@ -1,0 +1,7 @@
+FAITHFUL
+
+No concrete statement-fidelity issues.
+- `WYTheoremFor` preserves WY’s quotient inequality and threshold **odd n ≥ c0**, without strengthening either.
+- `gap_theorem`, `sharp`, and `main` match the gap, violation at N, and equivalence for **odd n > N**.
+- For the real specialization, `log log n > 0` above c0 justifies conversion between WY’s quotient and OR.
+- `MathlibFacts` supplies explicit background hypotheses, not additional WY conclusions. The uncompiled real instance remains a **certification gap**, not a statement-fidelity defect.

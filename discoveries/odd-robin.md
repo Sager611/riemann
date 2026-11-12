@@ -12,7 +12,7 @@
 
 **Novelty.** arXiv math.NT listings 2026-10 and 2026-11 (lst.py): only 2610.12816 (Robin's criterion for reciprocal LCM powers, unrelated); Zenodo "odd Robin": nothing; HAL: nothing; GXL evidence API (agent): only Washington–Yang and Koya treat the odd inequality, Fan–Kobayashi–Molnar (arXiv 2511.02106) cite it for σ^[k] analogues, not the gap; our files: robin-nicolas-ranges.md covers Robin and Nicolas only. Citation databases were rate-limited; the IJNT version was not read (paywalled).
 
-**Caveat.** Unrefereed; the range above largest prime 5·10^8 inherits RobinCH's certificate and the unrefereed Chirre–Helfgott bound (the gap and everything up to e^(5.0·10^8) use neither). No Lean.
+**Caveat.** Unrefereed; the range above largest prime 5·10^8 inherits RobinCH's certificate and the unrefereed Chirre–Helfgott bound (the gap and everything up to e^(5.0·10^8) use neither). Lean (oddrlean, 12 Nov 2026): the gap theorem, the sharpness at N and the equivalence are machine-checked from Washington–Yang’s theorem (named) and Mathlib’s log/γ facts used through an abstract interface; all numerics by norm_num, sorry-free, standard axioms, reviewer FAITHFUL; the final instantiation with Mathlib’s Real.log is not compiled because its imports exceed the 300 MB cap ([LEAN.md](../Riemann/Deep/OddRobin/LEAN.md)).
 
 **RH relevance.** N4 (Robin-type RH criteria): an RH-equivalent with a sharp explicit threshold, the odd counterpart of Robin's n > 5040.
 

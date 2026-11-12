@@ -1,0 +1,6 @@
+'OddRobin.gap_theorem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddRobin.sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddRobin.main' depends on axioms: [propext, Classical.choice, Quot.sound]
+'OddRobin.c0_eq' depends on axioms: [propext]
+'OddRobin.candidates_eq' depends on axioms: [propext]
+memcap: peak 247 MB rc=0
