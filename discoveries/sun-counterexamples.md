@@ -33,6 +33,8 @@ Likely misprint, listed for completeness: arXiv 1809.07766, Conj. 6.8 fails at n
 
 **Novelty.** Adversarial checks (OEIS histories, MathOverflow, arXiv versions and citing papers, Zenodo, GitHub, Sun's homepage): [SunPrim](../Riemann/Deep/SunPrim/NOVELTY.md), [SunCx](../Riemann/Deep/SunCx/NOVELTY.md), [SunAudit](../Riemann/Deep/SunAudit/NOVELTY.md); novelty is provisional.
 
+**Lean.** sunlean (12 Nov 2026), PARTIAL: 11 of the 13 rows refuted in Lean 4 + Mathlib, each a Prop taken from the source and its negation (SunLean.not_conj_*), sorry-free, standard axioms, no native_decide, compiles ≤ 270 MB; the two ⁿ√ conjectures use an abstract root function (Mathlib's real powers exceed the memory cap); left: 1208.2683 Conj. 2.1 and 1402.6641 Conj. 2.25; reviewer FAITHFUL. [LEAN.md](../Riemann/Deep/SunPrim/LEAN.md)
+
 **RH relevance.** None (side result).
 
 **Files.** [SunPrim](../Riemann/Deep/SunPrim/), [SunCx](../Riemann/Deep/SunCx/), [SunAudit](../Riemann/Deep/SunAudit/) (REPORT.md, verify.py)

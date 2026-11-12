@@ -1,0 +1,53 @@
+Groups rc=0 footprint=260MB errors=0 warnings=0 'SunLean.not_conj_3_2' depends on axioms: [propext, Classical.choice, Quot.sound] 'SunLean.not_conj_3_4_i' depends on axioms: [propext, Classical.choice, Quot.sound] 'SunLean.not_conj_A228766' depends on axioms: [propext, Classical.choice, Quot.sound] 
+ListAux rc=0 footprint=221MB errors=0 warnings=0 
+Conj310 rc=0 footprint=233MB errors=0 warnings=0 'SunLean.not_conj_3_10_ii' depends on axioms: [propext, Classical.choice, Quot.sound] 
+A228728 rc=0 footprint=267MB errors=0 warnings=0 'SunLean.not_conj_A228728' depends on axioms: [propext, Classical.choice, Quot.sound] 
+FieldsBase rc=0 footprint=251MB errors=0 warnings=0 
+Conj49 rc=0 footprint=262MB errors=0 warnings=0 'SunLean.not_conj_4_9_n3' depends on axioms: [propext, Classical.choice, Quot.sound] 
+Conj49b rc=0 footprint=278MB errors=0 warnings=0 'SunLean.not_conj_4_9_n4_F11' depends on axioms: [propext, Classical.choice, Quot.sound] 
+Conj49c rc=0 footprint=284MB errors=0 warnings=0 'SunLean.not_conj_4_9_n4_F13' depends on axioms: [propext, Classical.choice, Quot.sound] 
+MO316143 rc=0 footprint=263MB errors=0 warnings=0 'SunLean.not_conj_MO316143' depends on axioms: [propext, Classical.choice, Quot.sound] 
+WangSun rc=0 footprint=256MB errors=0 warnings=0 'SunLean.not_conj_WS_C' depends on axioms: [propext, Classical.choice, Quot.sound] 'SunLean.not_conj_WS' depends on axioms: [propext, Classical.choice, Quot.sound] 
+Roots rc=0 footprint=251MB errors=0 warnings=0 'SunLean.not_conj_4_30_iii' depends on axioms: [propext, Classical.choice, Quot.sound] 'SunLean.not_conj_3_1' depends on axioms: [propext, Classical.choice, Quot.sound] 
+RealInst rc=0 footprint=240MB errors=0 warnings=0 'SunLean.not_conj_3_10_ii_real' depends on axioms: [propext, Classical.choice, Quot.sound] 'SunLean.not_conj_A228728_real' depends on axioms: [propext, Classical.choice, Quot.sound] 'SunLean.not_conj_4_30_iii_real' depends on axioms: [propext, Classical.choice, Quot.sound] 'SunLean.not_conj_3_1_real' depends on axioms: [propext, Classical.choice, Quot.sound] 
+CircAux rc=0 footprint=219MB errors=0 warnings=0 
+F8Defs rc=0 footprint=213MB errors=0 warnings=0 
+F8Add rc=0 footprint=227MB errors=0 warnings=0 
+F8Mul rc=0 footprint=233MB errors=0 warnings=0 
+F8DistL rc=0 footprint=227MB errors=0 warnings=0 
+F8DistR rc=0 footprint=227MB errors=0 warnings=0 
+F8 rc=0 footprint=214MB errors=0 warnings=0 'SunLean.F8.instField' depends on axioms: [propext, Classical.choice, Quot.sound] 
+F8Search rc=0 footprint=219MB errors=0 warnings=0 
+F8Leaf0 rc=0 footprint=241MB errors=0 warnings=0 
+F8Leaf1 rc=0 footprint=237MB errors=0 warnings=0 
+F8Leaf2 rc=0 footprint=254MB errors=0 warnings=0 
+F8Leaf3 rc=0 footprint=233MB errors=0 warnings=0 
+F8Top rc=0 footprint=218MB errors=0 warnings=0 'SunLean.F8.no_order_zero' depends on axioms: [propext, Classical.choice, Quot.sound] 
+F9Defs rc=0 footprint=213MB errors=0 warnings=0 
+F9Add rc=0 footprint=235MB errors=0 warnings=0 
+F9Mul rc=0 footprint=236MB errors=0 warnings=0 
+F9DistL rc=0 footprint=235MB errors=0 warnings=0 
+F9DistR rc=0 footprint=236MB errors=0 warnings=0 
+F9 rc=0 footprint=213MB errors=0 warnings=0 'SunLean.F9.instField' depends on axioms: [propext, Classical.choice, Quot.sound] 
+F9Search rc=0 footprint=217MB errors=0 warnings=0 
+F9Leaf0 rc=0 footprint=235MB errors=0 warnings=0 
+F9Leaf1 rc=0 footprint=269MB errors=0 warnings=0 
+F9Leaf2 rc=0 footprint=266MB errors=0 warnings=0 
+F9Leaf3 rc=0 footprint=253MB errors=0 warnings=0 
+F9Leaf4 rc=0 footprint=257MB errors=0 warnings=0 
+F9Leaf5 rc=0 footprint=253MB errors=0 warnings=0 
+F9Leaf6 rc=0 footprint=254MB errors=0 warnings=0 
+F9Leaf7 rc=0 footprint=253MB errors=0 warnings=0 
+F9Leaf8 rc=0 footprint=247MB errors=0 warnings=0 
+F9Leaf9 rc=0 footprint=247MB errors=0 warnings=0 
+F9Leaf10 rc=0 footprint=251MB errors=0 warnings=0 
+F9Leaf11 rc=0 footprint=257MB errors=0 warnings=0 
+F9Leaf12 rc=0 footprint=261MB errors=0 warnings=0 
+F9Leaf13 rc=0 footprint=250MB errors=0 warnings=0 
+F9Leaf14 rc=0 footprint=252MB errors=0 warnings=0 
+F9Leaf15 rc=0 footprint=251MB errors=0 warnings=0 
+F9Leaf16 rc=0 footprint=257MB errors=0 warnings=0 
+F9Leaf17 rc=0 footprint=249MB errors=0 warnings=0 
+F9Top rc=0 footprint=263MB errors=0 warnings=0 'SunLean.F9.no_order_zero' depends on axioms: [propext, Classical.choice, Quot.sound] 
+A229827 rc=0 footprint=270MB errors=0 warnings=0 'SunLean.not_conj_A229827_i_F8' depends on axioms: [propext, Classical.choice, Quot.sound] 'SunLean.not_conj_A229827_i_F9' depends on axioms: [propext, Classical.choice, Quot.sound] 
+DONE
