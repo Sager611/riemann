@@ -1,0 +1,13 @@
+   it0 rows=622 t=3.22421e-04 finemin=-3.00758e-01 rss=123
+   it1 rows=601 t=2.48531e-04 finemin=-1.50680e-01 rss=130
+   it2 rows=687 t=2.30905e-04 finemin=-8.62188e-02 rss=138
+   it3 rows=775 t=2.24871e-04 finemin=-6.72803e-02 rss=145
+   it4 rows=872 t=2.24064e-04 finemin=-1.80554e-02 rss=155
+   it5 rows=882 t=2.24008e-04 finemin=-8.86535e-03 rss=157
+   it6 rows=892 t=2.24005e-04 finemin=-7.17088e-02 rss=162
+   it7 rows=898 t=2.24004e-04 finemin=-1.62835e-02 rss=162
+   it8 rows=905 t=2.24004e-04 finemin=-6.92129e-04 rss=162
+   it9 rows=902 t=2.24001e-04 finemin=-6.14156e-04 rss=162
+   it10 rows=905 t=2.24002e-04 finemin=2.23913e-04 rss=162
+theta=0.5714286 k0=3 h=0.26000 X=70.0 K=269 lam=0.78000 ctail=0.00000 t*=0.00022400199096933484 finemin=0.0002239131859004262 iters=10 (60.9s) maxrss=162MB
+saved logs/cert_t47k3_X70_lam0.78.json

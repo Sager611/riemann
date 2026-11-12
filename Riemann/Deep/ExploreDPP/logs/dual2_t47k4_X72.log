@@ -1,0 +1,12 @@
+   it0 rows=622 t=1.40604e-03 finemin=-2.34774e+00 rss=144
+   it1 rows=688 t=1.24648e-03 finemin=-1.56402e+01 rss=156
+   it2 rows=801 t=1.20354e-03 finemin=-3.04952e+00 rss=178
+   it3 rows=928 t=1.19334e-03 finemin=-2.29850e+01 rss=205
+   it4 rows=998 t=1.18988e-03 finemin=-7.13742e-01 rss=227
+   it5 rows=920 t=1.18828e-03 finemin=-1.13927e+01 rss=227
+   it6 rows=883 t=1.18796e-03 finemin=-4.87395e+00 rss=227
+   it7 rows=876 t=1.18789e-03 finemin=-7.02883e-01 rss=227
+   it8 rows=865 t=1.18785e-03 finemin=-3.23366e+00 rss=227
+   it9 rows=863 t=1.18783e-03 finemin=-5.75378e-01 rss=227
+   it10 rows=867 t=1.18815e-03 finemin=-1.83868e+01 rss=227
+   it11 rows=881 t=1.18786e-03 finemin=-8.68570e+00 rss=227

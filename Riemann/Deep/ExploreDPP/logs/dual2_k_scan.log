@@ -1,0 +1,4 @@
+theta=0.5714286 k0=5 h=0.15500 X=26.0 K=168 lam=0.77500 t*=0.0008074809929656689 finemin=0.0008074127031339751 iters=5 (8.9s) maxrss=149MB
+saved logs/cert_t47k5_X26_lam0.775.json
+theta=0.5714286 k0=4 h=0.19375 X=26.0 K=134 lam=0.77500 t*=0.0004536126650182432 finemin=0.00045352215497523884 iters=6 (6.4s) maxrss=126MB
+saved logs/cert_t47k4_X26_lam0.775.json

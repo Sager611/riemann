@@ -1,0 +1,11 @@
+| configuration | D(0.5) | D(0.6364) | D(0.76) | D(0.7851) | D(1) | note |
+|---|---|---|---|---|---|---|
+| sine process (GUE limit), HKPV/Fredholm | 0.1131 | 0.2078 | 0.3125 | 0.3352 | 0.5339 |  |
+| 0.5000-discrete sine (DPP on aZ), Palm gap law | 0.2974 | 0.2974 | 0.2974 | 0.2974 | 0.7500 | sum P(gap)=1.000000; P(gap=a)=0.297358, P(gap=2a)=0.452642 |
+| 0.6364-discrete sine (DPP on aZ), Palm gap law | 0.0000 | 0.5046 | 0.5046 | 0.5046 | 0.5046 | sum P(gap)=1.000000; P(gap=a)=0.504621, P(gap=2a)=0.422503 |
+| zeta zeros 100<t<19999 (22461 gaps) | 0.0900 | 0.1819 | 0.2937 | 0.3190 | 0.5364 | mean gap 1.0000 |
+| zeta zeros t~1e+08 (gram_win -zeros, 2074 gaps) | 0.1148 | 0.2049 | 0.3105 | 0.3322 | 0.5154 | mean gap 0.9974 |
+| zeta zeros t~9.79e+10 (gram_win -zeros, 2073 gaps) | 0.1143 | 0.2113 | 0.3136 | 0.3353 | 0.5408 | mean gap 0.9976 |
+| DH zeros on the line 20<t<420 (297 gaps), density log(5t/2pi)/2pi | 0.0505 | 0.1178 | 0.1987 | 0.2189 | 0.4949 | mean gap 1.0590; offline zeros in file: 9 |
+HKPV: sine kernel on [0,0.76]: Bernoulli parameters [6.55384e-01 1.01612e-01 2.97200e-03 3.20000e-05] E(0;0.76)= 0.308669 P(N>=2)= 0.0684685
+maxrss MB 31.096832

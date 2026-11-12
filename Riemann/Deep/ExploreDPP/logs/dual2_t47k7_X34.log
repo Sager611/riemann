@@ -1,0 +1,19 @@
+   it0 rows=622 t=-2.10316e-03 finemin=-9.98720e-01 rss=125
+   it1 rows=828 t=-2.39200e-03 finemin=-9.99958e+00 rss=145
+   it2 rows=1077 t=-2.41426e-03 finemin=-8.77877e+00 rss=200
+   it3 rows=1328 t=-2.42131e-03 finemin=-4.53500e+00 rss=242
+   it4 rows=1239 t=-2.42412e-03 finemin=-4.80372e+00 rss=258
+   it5 rows=1167 t=-2.42532e-03 finemin=-8.25781e-01 rss=260
+   it6 rows=1123 t=-2.42558e-03 finemin=-6.11997e-01 rss=263
+   it7 rows=1088 t=-2.42561e-03 finemin=-1.35228e-01 rss=263
+   it8 rows=1088 t=-2.42563e-03 finemin=-2.90106e-02 rss=263
+   it9 rows=1080 t=-2.42563e-03 finemin=-2.43295e+00 rss=263
+   it10 rows=1080 t=-2.42563e-03 finemin=-4.77281e-01 rss=263
+   it11 rows=1066 t=-2.42564e-03 finemin=-1.05895e-01 rss=263
+   it12 rows=1054 t=-2.42561e-03 finemin=-9.34442e-01 rss=263
+   it13 rows=1064 t=-2.42562e-03 finemin=-2.08529e-01 rss=263
+   it14 rows=1056 t=-2.42563e-03 finemin=-4.87785e-02 rss=263
+   it15 rows=1051 t=-2.42564e-03 finemin=-8.16133e-03 rss=263
+   it16 rows=1040 t=-2.42564e-03 finemin=-3.46650e-03 rss=263
+   it17 rows=1034 t=-2.42564e-03 finemin=-2.42572e-03 rss=263
+theta=0.5714286 k0=7 h=0.11143 X=34.0 K=305 lam=0.78000 t*=-0.0024256401674075468 finemin=-0.0024257225749945155 iters=17 (208.8s) maxrss=263MB
