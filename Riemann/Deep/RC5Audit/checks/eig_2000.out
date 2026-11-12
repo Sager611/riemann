@@ -1,0 +1,20 @@
+X=2000 N=64 m=13 famsize=5444 validation_bad=0 meandiag/fam=1.066 maxdiag/fam=1.137 | full: 1.710 1.174 1.120 | notriv: 1.129 1.063 1.025 | nongenus: 0.911 0.891 0.858
+  projected out 8 quad-char dirs (q<=3): full: 1.050 1.030 1.008
+  projected out 8 quad-char dirs (q<=3): nongenus: 0.854 0.851 0.811
+#   mem(eigs) 53 MB 1.37 s
+X=2000 N=128 m=23 famsize=5444 validation_bad=0 meandiag/fam=1.101 maxdiag/fam=1.145 | full: 2.285 1.337 1.267 | notriv: 1.279 1.221 1.128 | nongenus: 0.932 0.924 0.923
+  projected out 8 quad-char dirs (q<=3): full: 1.184 1.108 1.089
+  projected out 8 quad-char dirs (q<=3): nongenus: 0.928 0.911 0.892
+#   mem(eigs) 53 MB 1.00 s
+X=2000 N=256 m=44 famsize=5444 validation_bad=0 meandiag/fam=1.142 maxdiag/fam=1.284 | full: 3.489 1.706 1.468 | notriv: 1.662 1.412 1.344 | nongenus: 1.035 1.019 1.002
+  projected out 12 quad-char dirs (q<=6): full: 1.308 1.217 1.188
+  projected out 12 quad-char dirs (q<=6): nongenus: 1.013 0.999 0.982
+#   mem(eigs) 53 MB 1.11 s
+X=2000 N=512 m=88 famsize=5444 validation_bad=0 meandiag/fam=1.069 maxdiag/fam=1.253 | full: 5.488 2.032 1.761 | notriv: 1.981 1.689 1.594 | nongenus: 1.095 1.059 1.055
+  projected out 20 quad-char dirs (q<=12): full: 1.369 1.310 1.275
+  projected out 20 quad-char dirs (q<=12): nongenus: 1.054 1.039 1.037
+#   mem(eigs) 54 MB 1.20 s
+X=2000 N=1024 m=181 famsize=5444 validation_bad=0 meandiag/fam=1.135 maxdiag/fam=1.494 | full: 10.624 3.345 2.778 | notriv: 3.303 2.708 2.598 | nongenus: 1.382 1.331 1.316
+  projected out 44 quad-char dirs (q<=25): full: 1.634 1.587 1.534
+  projected out 44 quad-char dirs (q<=25): nongenus: 1.312 1.266 1.257
+#   mem(eigs) 55 MB 1.26 s

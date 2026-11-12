@@ -24,7 +24,7 @@
 3. All orders ([AllDisc](../Riemann/Deep/AllDisc/NOTE.md)): no new analytic input. Induced ring class characters come from unique primitive pairs; genus characters and Siegel zeros are handled per order. Reviewed: one range restriction (Proposition 1°, σ ≥ 7/8, all that is used) and a wording fix, then correct. It contains the fundamental case, which passed adversarial novelty.
 4. D > 0 and sectors, at 1.1307 ([RCApps4](../Riemann/Deep/RCApps4/NOTE.md)): reviewed correct in substance (units unfolded via nonnegative Fourier weights, finite truncated counts, regulator via h⁺R⁺; Theorem 3⁺ must keep H ≤ x).
 
-**Status.** Paper proofs; not refereed; not in Lean.
+**Status.** Paper proofs; RCApps5 §2–5 (every A > 1 for D < 0, and the §6 reductions) refereed by rc5audit, 12 Nov 2026: AUDIT PASSED, no counterexample for X ≤ 64000 ([RC5Audit](../Riemann/Deep/RC5Audit/REPORT.md)); RCApps4 (D > 0, sectors) and the Humphries–Thorner density input not re-refereed; the threshold X₀ is astronomical, so no numerical bound follows; not in Lean.
 
 **Review.** Both versions of the main note correct; significant.
 

@@ -1,0 +1,3 @@
+NS=28 (odd squarefree <= 3000 from [3, 5, 7, 11, 13]); tests=231 nonmaximal=231 with nonzero e>1 block=231 with Delta_e in (-3,-4)=14; max rel dev=2.69e-15; negative blocks=0
+        4.24 real         4.10 user         0.05 sys
+            16482304  maximum resident set size
