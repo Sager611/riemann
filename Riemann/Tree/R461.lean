@@ -1,7 +1,7 @@
 /-!
-# Round 461 — node N5 (Nyman–Beurling / Báez-Duarte), round 13, the unseen Zenodo N5 records: none breaks a node record or our certified d_N²; a digamma closed form of the Báez-Duarte Gram (Zenodo 22831678) matches our Vasyunin entries to 10⁻¹⁶; a sum-zero 'scaling transition' note (22980911) works in L²(0,1) and is consistent with our certified L²(0,∞) values; the rest are conditional frameworks, off-node or cranks; Kesten's theorem, self-concordant barriers and percolation transfer no tool
+# Round 461 — node N5 (Nyman–Beurling / Báez-Duarte), round 14, the unseen Zenodo N5 records: none breaks a node record or our certified d_N²; a digamma closed form of the Báez-Duarte Gram (Zenodo 22831678) matches our Vasyunin entries to 10⁻¹⁶; a sum-zero 'scaling transition' note (22980911) works in L²(0,1) and is consistent with our certified L²(0,∞) values; the rest are conditional frameworks, off-node or cranks; Kesten's theorem, self-concordant barriers and percolation transfer no tool
 
-* Node: N5 (13th round; R429 before). Round type: [check]/[falsify] of the unseen Zenodo records next to the node (Zenodo without a date
+* Node: N5 (14th round; R429 before). Round type: [check]/[falsify] of the unseen Zenodo records next to the node (Zenodo without a date
   filter on "Nyman-Beurling", "Baez-Duarte", "Beurling criterion": 31 records, 15 unseen), plus three exploration scouts. All five node scouts
   timed out on PDF work; the decisive checks were rerun by the orchestrator.
 * [falsify] Zenodo 22980911 (26 Sep 2026), 'Scaling Law Transition in the Beurling-Nyman-Baez-Duarte Criterion under Sum-Zero Constraints':
