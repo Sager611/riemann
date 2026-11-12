@@ -1,0 +1,50 @@
+import Riemann.Deep.Combos.Lean.Thm1pLg
+import Riemann.Deep.Combos.Lean.Thm1pSm
+
+/-! # Theorem 1′(a): the bound for one D (both 𝔔 cases combined) -/
+
+open Real Finset
+
+namespace RingClass
+
+/-- the constant of Theorem 1′(a): depends only on ε, c₀, C_I, C_II, 𝔔₀ -/
+noncomputable def C1p (ε c₀ : ℝ) (CI CII Q0 : ℝ → ℝ) : ℝ :=
+  81 * (c₀ * (2 / (ε / 10)) * (CI (ε / 10) * (8 / (ε / 10) ^ 2) + CII (ε / 10) + 1 +
+    |3 * (Q0 (ε / 10) / 9) ^ (1 / 2 : ℝ) * Real.log (3 * (Q0 (ε / 10) / 9)) ^ 2 + 1|))
+
+lemma per_D {X : Type*} [Fintype X] [DecidableEq X] (d : RCZeros X) {c₀ c₁ : ℝ}
+    {CI CII Q0 : ℝ → ℝ} (h : d.Hyp c₀ c₁ CI CII Q0) (ε : ℝ) (hε : 0 < ε) (hε1 : ε ≤ 1)
+    (σ t : ℝ) (h0 : 0.6 ≤ σ) (h1 : σ ≤ 1) :
+    (d.N σ t : ℝ) ≤ C1p ε c₀ CI CII Q0 * (d.absD * (|t| + 3)) ^ (ee σ + ε) := by
+  have he : 0 < ε / 10 := by linarith only [hε]
+  have he1 : ε / 10 ≤ 1 / 10 := by linarith only [hε1]
+  have hT : 1 ≤ |t| + 3 := by have := abs_nonneg t; linarith only [this]
+  have hD3 := d.absD_ge
+  have hD : 1 ≤ d.absD := by linarith only [hD3]
+  have hW0 : 0 < 9 * d.absD * (|t| + 3) := by
+    have : (0 : ℝ) < 9 * d.absD := by linarith only [hD3]
+    exact mul_pos this (lt_of_lt_of_le one_pos hT)
+  have hP0 : 0 ≤ (9 * d.absD * (|t| + 3)) ^ (ee σ + 5 * (ε / 10)) :=
+    (Real.rpow_pos_of_pos hW0 _).le
+  have hfin := final_exp d.absD (|t| + 3) (ee σ) ε hD hT (ee_nonneg σ h1 h0) (ee_le σ h1 h0) hε hε1
+  have e5 : ee σ + 5 * (ε / 10) = ee σ + ε / 2 := by ring
+  have hP : (9 * d.absD * (|t| + 3)) ^ (ee σ + 5 * (ε / 10))
+      ≤ 81 * (d.absD * (|t| + 3)) ^ (ee σ + ε) := by rw [e5]; exact hfin
+  have hA0 : 0 ≤ c₀ * (2 / (ε / 10)) := mul_nonneg h.c₀_nonneg (div_nonneg zero_le_two he.le)
+  have hKI0 : 0 ≤ CI (ε / 10) * (8 / (ε / 10) ^ 2) :=
+    mul_nonneg (h.CI_nonneg _) (div_nonneg (by norm_num) (sq_nonneg _))
+  have hKII0 := h.CII_nonneg (ε / 10)
+  have hab := abs_nonneg (3 * (Q0 (ε / 10) / 9) ^ (1 / 2 : ℝ) *
+    Real.log (3 * (Q0 (ε / 10) / 9)) ^ 2 + 1)
+  have hKt : 0 ≤ CI (ε / 10) * (8 / (ε / 10) ^ 2) + CII (ε / 10) + 1 +
+      |3 * (Q0 (ε / 10) / 9) ^ (1 / 2 : ℝ) * Real.log (3 * (Q0 (ε / 10) / 9)) ^ 2 + 1| := by
+    linarith only [hab, hKI0, hKII0]
+  unfold C1p
+  by_cases hQ : Q0 (ε / 10) ≤ 9 * d.absD
+  · exact fin_step _ _ _ _ _ _ hA0 hP0 (by linarith only [hab]) hKt
+      (large_case d h σ t (ε / 10) h0 h1 he he1 hQ) hP
+  · exact fin_step _ _ _ _ _ _ hA0 hP0 (by linarith only [hKI0, hKII0]) hKt
+      (small_case d h σ t (ε / 10) h0 h1 he (lt_of_not_ge hQ)) hP
+
+end RingClass
+

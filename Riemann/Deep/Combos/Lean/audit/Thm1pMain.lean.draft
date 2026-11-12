@@ -1,0 +1,23 @@
+import Riemann.Deep.Combos.Lean.Thm1pD
+
+/-!
+# Theorem 1′(a) (RCApps2 NOTE Thm 1′(a) via Prop 1, l.28–68)
+
+For every ε ∈ (0, 1] there is C, depending only on ε and the constants c₀, c₁, C_I, C_II, 𝔔₀ of the
+named inputs, such that for every D < 0 with the named inputs (RCZeros.Hyp), every 0.6 ≤ σ ≤ 1 and
+every t: Σ_χ N(σ; t, χ*) ≤ C (|D| T)^{e(σ)+ε}, e(σ) = 2(1−σ)/(3−2σ), T = |t| + 3.
+-/
+
+namespace RingClass
+
+/-- **Theorem 1′(a)**. -/
+theorem thm1'a (c₀ c₁ : ℝ) (CI CII Q0 : ℝ → ℝ) (ε : ℝ) (hε : 0 < ε) (hε1 : ε ≤ 1) :
+    ∃ C : ℝ, ∀ (X : Type) [Fintype X] [DecidableEq X] (d : RCZeros X),
+      d.Hyp c₀ c₁ CI CII Q0 → ∀ σ t : ℝ, 0.6 ≤ σ → σ ≤ 1 →
+        (d.N σ t : ℝ) ≤ C * (d.absD * (|t| + 3)) ^ (ee σ + ε) :=
+  ⟨C1p ε c₀ CI CII Q0, fun _ _ _ d h σ t h0 h1 => per_D d h ε hε hε1 σ t h0 h1⟩
+
+end RingClass
+
+#print axioms RingClass.thm1'a
+
