@@ -1,0 +1,21 @@
+'SunLean.lemma6A_big2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.lemma6A_of_mid2' depends on axioms: [propext, Classical.choice, Quot.sound]
+       23.37 real         4.55 user         5.92 sys
+          1359314944  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               76439  page reclaims
+              106215  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                8295  voluntary context switches
+              105174  involuntary context switches
+         22270840266  instructions retired
+         16585260383  cycles elapsed
+           293062592  peak memory footprint
+memcap: peak 257 MB rc=0

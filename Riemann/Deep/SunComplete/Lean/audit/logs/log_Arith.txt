@@ -1,0 +1,31 @@
+Riemann/Deep/SunComplete/Lean/Arith.lean:107:46: warning: Variable name `hE` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hE
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Riemann/Deep/SunComplete/Lean/Arith.lean:110:49: warning: Variable name `ha1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+       41.32 real         8.60 user         5.52 sys
+          1530658816  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               66837  page reclaims
+               73998  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+               15660  voluntary context switches
+               87413  involuntary context switches
+         29737287425  instructions retired
+         26169521768  cycles elapsed
+           302285072  peak memory footprint
+memcap: peak 286 MB rc=0

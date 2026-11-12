@@ -1,0 +1,27 @@
+'SunLean.not_sunHou_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.not_sunHou_zmod7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.sunHou_F4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.sunHou_F9' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.sunHou_zmod11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.sunHou_zmod13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.sunHou_11_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.sunHou_of_ringEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+       35.03 real         3.01 user         8.21 sys
+          1192214528  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               81747  page reclaims
+              175560  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                4199  voluntary context switches
+              152072  involuntary context switches
+         20566043531  instructions retired
+         15444876252  cycles elapsed
+           262335680  peak memory footprint
+memcap: peak 213 MB rc=0

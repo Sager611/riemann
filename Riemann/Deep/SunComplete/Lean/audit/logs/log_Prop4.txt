@@ -1,0 +1,25 @@
+Riemann/Deep/SunComplete/Lean/Prop4.lean:46:0: warning: automatically included section variable(s) unused in theorem `SunLean.L3Data.indep_bound`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+        8.40 real         5.11 user         1.97 sys
+          1581006848  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              137903  page reclaims
+                 135  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+               17402  involuntary context switches
+         18288481810  instructions retired
+         12692168641  cycles elapsed
+           275367984  peak memory footprint
+memcap: peak 240 MB rc=0

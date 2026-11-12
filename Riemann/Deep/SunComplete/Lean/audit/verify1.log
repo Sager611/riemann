@@ -1,0 +1,49 @@
+19:17:20 Graph rc=0 21s footprint=222MiB memcap: peak 211 MB rc=0
+19:17:48 Arith rc=0 28s footprint=289MiB memcap: peak 261 MB rc=0
+Riemann/Deep/SunComplete/Lean/Arith.lean:107:46: warning: Variable name `hE` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hE
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Riemann/Deep/SunComplete/Lean/Arith.lean:110:49: warning: Variable name `ha1` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha1
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+19:18:19 Prop4 rc=0 31s footprint=263MiB memcap: peak 231 MB rc=0
+Riemann/Deep/SunComplete/Lean/Prop4.lean:46:0: warning: automatically included section variable(s) unused in theorem `SunLean.L3Data.indep_bound`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+19:19:10 Defs rc=0 51s footprint=252MiB memcap: peak 240 MB rc=0
+19:19:32 Sieve rc=0 22s footprint=266MiB memcap: peak 199 MB rc=0
+19:20:21 CaseA1 rc=0 49s footprint=269MiB memcap: peak 251 MB rc=0
+19:21:06 TheoremA rc=0 45s footprint=263MiB memcap: peak 251 MB rc=0
+19:21:58 Small rc=0 52s footprint=257MiB memcap: peak 197 MB rc=0
+19:22:45 Cycles rc=0 47s footprint=268MiB memcap: peak 254 MB rc=0
+19:23:35 Cycles9 rc=0 50s footprint=272MiB memcap: peak 243 MB rc=0
+19:24:26 CheckA rc=0 51s footprint=257MiB memcap: peak 215 MB rc=0
+'SunLean.theoremA_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.L3Data.prop4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.L3Data.lemma5' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.L3Data.ham_of_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.ham_of_critA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.ham_of_CSA' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.sunHou_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.deg_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.pairCount_diag' depends on axioms: [propext, Classical.choice, Quot.sound]
+19:25:16 CheckS rc=0 50s footprint=251MiB memcap: peak 204 MB rc=0
+'SunLean.not_sunHou_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.not_sunHou_zmod7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.sunHou_F4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.sunHou_F9' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.sunHou_zmod11' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.sunHou_zmod13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.sunHou_11_13' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SunLean.sunHou_of_ringEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+19:26:13 FFCoreC rc=0 57s footprint=293MiB memcap: peak 283 MB rc=0
+DONE

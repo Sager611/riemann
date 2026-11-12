@@ -1,0 +1,20 @@
+'SunLean.FFCore.card_prim' depends on axioms: [propext, Classical.choice, Quot.sound]
+       39.64 real         3.61 user         9.99 sys
+          1164099584  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               93477  page reclaims
+              207226  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                4660  voluntary context switches
+              188984  involuntary context switches
+         24649026330  instructions retired
+         18282045009  cycles elapsed
+           309624256  peak memory footprint
+memcap: peak 283 MB rc=0

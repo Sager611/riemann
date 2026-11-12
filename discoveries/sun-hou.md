@@ -20,4 +20,6 @@
 
 **Novelty.** She's paper and the Zenodo preprint leave it open (the latter announces a "separate release").
 
+**Lean.** Theorem A is machine-checked in Lean 4 + Mathlib (sunlean, 12 Nov 2026; 20 files, 1,998 lines, sorry-free, standard axioms, every compile under the 300 MB cap): `SunLean.theoremA_of_mid2` gives the conjecture for every finite field with q > 7 from Chvátal–Erdős, Lemma 3, Lemma 6 on the residual range 30,140 ≤ q < 1.2·10^11 with ω(q − 1) ≤ 11 and φ(q − 1) < 7·2^{ω(q−1)}(⌊√q⌋ + 1) (named hypotheses), the Prop 7 and certA certificate data and three Mathlib finite-field facts (proved in FFInst.lean, which exceeds the cap); Prop 4, Lemma 5 and the rest of Lemma 6 are proved; q = 3, 5, 7 fail and q = 4, 9, 11, 13 work (kernel-checked). [LEAN.md](../Riemann/Deep/SunComplete/LEAN.md)
+
 **Files.** [report](../Riemann/Deep/SunComplete/REPORT.md), [note](../Riemann/Deep/SunComplete/NOTE.md), [verify.py](../Riemann/Deep/SunComplete/verify.py)
