@@ -1,0 +1,13 @@
+Δ  TB(Δ): 2:0.529 3:0.879 4:1.251 5:1.687 6:2.227 7:2.924 8:3.848 9:5.099 10:6.826 11:9.244 12:12.671 13:17.580 14:24.675 15:35.015 16:50.189 17:72.599
+t=1e3: Δ_tri=2.80 (2loglog t=3.87) B_tri=1.713 CCM¼=0.894 B_tri/(log t/loglog t)=0.479 | Trudgian14=3.82 HSW22=10.58
+t=1e4: Δ_tri=3.20 (2loglog t=4.44) B_tri=2.101 CCM¼=1.037 B_tri/(log t/loglog t)=0.507 | Trudgian14=4.16 HSW22=10.89
+t=1e6: Δ_tri=3.85 (2loglog t=5.25) B_tri=2.746 CCM¼=1.315 B_tri/(log t/loglog t)=0.522 | Trudgian14=4.79 HSW22=11.48
+t=1e8: Δ_tri=4.40 (2loglog t=5.83) B_tri=3.300 CCM¼=1.581 B_tri/(log t/loglog t)=0.522 | Trudgian14=5.38 HSW22=12.03
+t=1e10: Δ_tri=4.80 (2loglog t=6.27) B_tri=3.800 CCM¼=1.835 B_tri/(log t/loglog t)=0.518 | Trudgian14=5.96 HSW22=12.56
+t=1e12: Δ_tri=5.10 (2loglog t=6.64) B_tri=4.264 CCM¼=2.081 B_tri/(log t/loglog t)=0.512 | Trudgian14=6.53 HSW22=13.09
+t=1e20: Δ_tri=6.00 (2loglog t=7.66) B_tri=5.912 CCM¼=3.006 B_tri/(log t/loglog t)=0.492 | Trudgian14=8.73 HSW22=15.13
+t=1e21: Δ_tri=6.10 (2loglog t=7.76) B_tri=6.102 CCM¼=3.117 B_tri/(log t/loglog t)=0.489 | Trudgian14=9.00 HSW22=15.38
+t=1e30: Δ_tri=6.75 (2loglog t=8.47) B_tri=7.712 CCM¼=4.078 B_tri/(log t/loglog t)=0.473 | Trudgian14=11.42 HSW22=17.63
+t=1e50: Δ_tri=7.65 (2loglog t=9.49) B_tri=10.897 CCM¼=6.064 B_tri/(log t/loglog t)=0.449 | Trudgian14=16.72 HSW22=22.54
+t=1e100: Δ_tri=8.95 (2loglog t=10.88) B_tri=17.788 CCM¼=10.583 B_tri/(log t/loglog t)=0.420 | Trudgian14=29.81 HSW22=34.67
+memcap: peak 18 MB rc=0

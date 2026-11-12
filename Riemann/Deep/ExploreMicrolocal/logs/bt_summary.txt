@@ -1,0 +1,6 @@
+zeros1[1000] t=2.503e+03 L=5.99 Δ_tri=3.00 B_tri=1.88 CCM¼=0.95 maxS=1.29 minS=-1.31 | ΔE=3: τ=1.00 TB=0.88 supOζ=0.69 rand=0.72 | Δ=14: TB=24.7 supOζ=1.21 rand=1.34 maxB+=1.42 | min marg=0.0037 n=2000 28.1s
+zeros1[20000] t=1.883e+04 L=8.01 Δ_tri=3.25 B_tri=2.20 CCM¼=1.08 maxS=1.40 minS=-1.46 | ΔE=3: τ=1.33 TB=0.88 supOζ=0.69 rand=0.72 | Δ=14: TB=24.7 supOζ=1.34 rand=1.34 maxB+=1.56 | min marg=0.0066 n=2000 45.3s
+zeros1[90000] t=7.156e+04 L=9.34 Δ_tri=3.50 B_tri=2.39 CCM¼=1.16 maxS=1.63 minS=-1.53 | ΔE=3: τ=1.56 TB=0.88 supOζ=0.70 rand=0.72 | Δ=14: TB=24.7 supOζ=1.32 rand=1.34 maxB+=1.65 | min marg=0.0088 n=2500 68.8s
+zeros3[0] t=2.677e+11 L=24.48 Δ_tri=5.00 B_tri=4.13 CCM¼=2.01 maxS=1.94 minS=-1.93 | ΔE=5: τ=2.45 TB=1.69 supOζ=0.98 rand=0.97 | Δ=14: TB=24.7 supOζ=1.38 rand=1.34 maxB+=2.12 | min marg=0.0829 n=2500 45.4s
+zeros4[0] t=1.442e+20 L=44.58 Δ_tri=6.00 B_tri=5.94 CCM¼=3.02 maxS=1.98 minS=-2.00 | ΔE=6: τ=3.71 TB=2.23 supOζ=1.09 rand=1.08 | Δ=14: TB=24.7 supOζ=1.27 rand=1.34 maxB+=2.86 | min marg=0.3682 n=2500 42.4s
+zeros5[0] t=1.371e+21 L=46.83 Δ_tri=6.00 B_tri=6.13 CCM¼=3.13 maxS=2.03 minS=-2.03 | ΔE=6: τ=3.90 TB=2.23 supOζ=1.08 rand=1.08 | Δ=14: TB=24.7 supOζ=1.32 rand=1.34 maxB+=2.99 | min marg=0.4101 n=2500 40.8s

@@ -1,0 +1,17 @@
+zeros4 K=10000 t≈1.44177e+20 log(t/2π)=44.5797 N_pp=93371 prep 3.1s
+t=1.442e+20 Δ_tri=6.0 B_tri=5.942 CCM¼=3.024 maxS=1.984 minS=-1.998
+Δ= 2 τ=11.145 TB=    0.529 sup|O|ζ=0.492 rand=0.489 rms ζ=0.208 rand=0.209 maxB+=11.624 minB-=-11.614 marg+=9.332 marg-=9.329
+Δ= 3 τ=7.430 TB=    0.879 sup|O|ζ=0.732 rand=0.723 rms ζ=0.248 rand=0.249 maxB+=8.125 minB-=-8.061 marg+=5.662 marg-=5.626
+Δ= 4 τ=5.572 TB=    1.251 sup|O|ζ=0.912 rand=0.872 rms ζ=0.273 rand=0.276 maxB+=6.485 minB-=-6.347 marg+=3.735 marg-=3.849
+Δ= 5 τ=4.458 TB=    1.687 sup|O|ζ=1.022 rand=0.970 rms ζ=0.292 rand=0.294 maxB+=5.480 minB-=-5.333 marg+=2.760 marg-=2.709
+Δ= 6 τ=3.715 TB=    2.227 sup|O|ζ=1.086 rand=1.079 rms ζ=0.307 rand=0.308 maxB+=4.801 minB-=-4.679 marg+=2.125 marg-=1.972
+Δ= 7 τ=3.184 TB=    2.924 sup|O|ζ=1.097 rand=1.158 rms ζ=0.318 rand=0.318 maxB+=4.281 minB-=-4.188 marg+=1.619 marg-=1.489
+Δ= 8 τ=2.786 TB=    3.848 sup|O|ζ=1.098 rand=1.171 rms ζ=0.328 rand=0.327 maxB+=3.879 minB-=-3.857 marg+=1.288 marg-=1.142
+Δ= 9 τ=2.477 TB=    5.099 sup|O|ζ=1.139 rand=1.190 rms ζ=0.336 rand=0.336 maxB+=3.615 minB-=-3.574 marg+=1.072 marg-=0.913
+Δ=10 τ=2.229 TB=    6.826 sup|O|ζ=1.173 rand=1.202 rms ζ=0.343 rand=0.344 maxB+=3.402 minB-=-3.360 marg+=0.871 marg-=0.758
+Δ=11 τ=2.026 TB=    9.244 sup|O|ζ=1.211 rand=1.249 rms ζ=0.351 rand=0.351 maxB+=3.237 minB-=-3.187 marg+=0.681 marg-=0.613
+Δ=12 τ=1.857 TB=   12.671 sup|O|ζ=1.252 rand=1.291 rms ζ=0.358 rand=0.356 maxB+=3.109 minB-=-3.047 marg+=0.546 marg-=0.512
+Δ=13 τ=1.715 TB=   17.580 sup|O|ζ=1.267 rand=1.321 rms ζ=0.364 rand=0.361 maxB+=2.982 minB-=-2.921 marg+=0.455 marg-=0.434
+Δ=14 τ=1.592 TB=   24.675 sup|O|ζ=1.268 rand=1.336 rms ζ=0.368 rand=0.366 maxB+=2.860 minB-=-2.827 marg+=0.375 marg-=0.368
+secs 42.4
+memcap: peak 228 MB rc=0
