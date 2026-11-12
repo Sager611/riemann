@@ -1,0 +1,22 @@
+tails: {"m0": "[1.15789473684 +/- 2.11e-12]", "R_tail": "[0.159186370471 +/- 3.78e-13]", "R_tail_lower": 0.15918637047062256, "m0_strip": "[1.51520079983 +/- 2.10e-12]", "R_tail_strip_lower": 0.605521543977649, "h_RMAX": "[0.362495645183 +/- 2.71e-13]", "h_ok": true, "mono_ok": true}
+strip lam >= 6.0: OK with 14 R-intervals (0.0s)
+CELL FAIL 1.292327880859375 3.0517578125e-05 1.00396728515625 1.0039749145507812
+RESULT xi=4/7 kappa_up=817919/2000000: NOT CERTIFIED; {'crude': 97, 'dual': 252, 'split': 124, 'builds': 376}; worst rel margin (3.39528852179277e-11, (1.2928466796875, 0.0001220703125, 1.0, 1.00390625)); time 35s; peak mem 84MB
+       37.12 real        34.02 user         0.62 sys
+            88244224  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               15863  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   1  voluntary context switches
+               37023  involuntary context switches
+           429204558  instructions retired
+           172139398  cycles elapsed
+            25641464  peak memory footprint

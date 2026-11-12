@@ -1,0 +1,20 @@
+logs/ceil_1_8_0.08971026.json: 1017 cells, R in [0.5, 22.0], lam-index in [0, 6291456], area match True, overlapping pairs 0, certified flag True
+COVER OK
+logs/ceil_1_8_0.0897103.json: 981 cells, R in [0.5, 22.0], lam-index in [0, 786432], area match True, overlapping pairs 0, certified flag True
+COVER OK
+logs/ceil_1_8_0.0897105.json: 933 cells, R in [0.5, 22.0], lam-index in [0, 393216], area match True, overlapping pairs 0, certified flag True
+COVER OK
+logs/ceil_1_8_0.089711.json: 908 cells, R in [0.5, 22.0], lam-index in [0, 196608], area match True, overlapping pairs 0, certified flag True
+COVER OK
+logs/ceil_25_256_0.07005633.json: 1276 cells, R in [0.5, 28.0], lam-index in [0, 3145728], area match True, overlapping pairs 0, certified flag True
+COVER OK
+logs/ceil_25_256_0.0700564.json: 1230 cells, R in [0.5, 28.0], lam-index in [0, 786432], area match True, overlapping pairs 0, certified flag True
+COVER OK
+logs/ceil_25_256_0.0700565.json: 1203 cells, R in [0.5, 28.0], lam-index in [0, 393216], area match True, overlapping pairs 0, certified flag True
+COVER OK
+logs/ceil_25_256_0.070057.json: 1160 cells, R in [0.5, 28.0], lam-index in [0, 196608], area match True, overlapping pairs 0, certified flag True
+COVER OK
+logs/ceil_4_7_0.4089595.json: 349 cells, R in [1.125, 6.125], lam-index in [0, 786432], area match False, overlapping pairs 0, certified flag False
+COVER FAIL
+logs/ceil_4_7_0.40896.json: 526 cells, R in [0.125, 6.125], lam-index in [0, 393216], area match True, overlapping pairs 0, certified flag True
+COVER OK

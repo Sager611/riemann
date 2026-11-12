@@ -1,0 +1,14 @@
+Rc=9.86841 lam=0.7706 d=2.44e-04: direct D >= Taylor lower at -d, +d: True, True; rel gaps 2.78e-11, 3.28e-11
+Rc=9.86841 lam=0.7706 d=9.77e-04: direct D >= Taylor lower at -d, +d: True, True; rel gaps 1.62e-09, 1.94e-09
+Rc=9.86841 lam=0.7706 d=3.91e-03: direct D >= Taylor lower at -d, +d: True, True; rel gaps 1.02e-07, 1.21e-07
+   quadrature D = 9672.71075186865  vs Arb D = [9672.71075186865 +/- 1.01e-13]  rel diff 4.9e-17
+Rc=20.00000 lam=1.0681 d=2.44e-04: direct D >= Taylor lower at -d, +d: True, True; rel gaps 4.23e-11, 5.07e-11
+Rc=20.00000 lam=1.0681 d=9.77e-04: direct D >= Taylor lower at -d, +d: True, True; rel gaps 2.71e-09, 3.24e-09
+Rc=20.00000 lam=1.0681 d=3.91e-03: direct D >= Taylor lower at -d, +d: True, True; rel gaps 1.75e-07, 2.07e-07
+   quadrature D = 165805143.769879  vs Arb D = [165805143.769879 +/- 3.39e-7]  rel diff -5.3e-17
+Rc=6.01880 lam=0.4578 d=2.44e-04: direct D >= Taylor lower at -d, +d: True, True; rel gaps 2.50e-10, 2.53e-10
+Rc=6.01880 lam=0.4578 d=9.77e-04: direct D >= Taylor lower at -d, +d: True, True; rel gaps 4.99e-09, 5.24e-09
+Rc=6.01880 lam=0.4578 d=3.91e-03: direct D >= Taylor lower at -d, +d: True, True; rel gaps 1.44e-07, 1.59e-07
+   quadrature D = 300.717404718324  vs Arb D = [300.717404718324 +/- 2.44e-13]  rel diff 6.7e-18
+       17.72 real        16.35 user         0.63 sys
+            94830592  maximum resident set size

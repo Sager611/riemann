@@ -1,0 +1,12 @@
+AT21_uncond: xi=1953123/20000000 R=9.86779701 lam=0.77058987
+  record c (cert.py exact)  = [9667.22197246763896 +/- 5.00e-15]  kappa = [0.070056239018818 +/- 3.84e-17]
+  dual lower bound D (Arb)  = [9667.22141012485852 +/- 1.67e-15]  kappa_D = [0.070056244913756 +/- 7.91e-17]  float primal J = 9.667221410125e+03
+  c_rec - D >= 0: True;  (c_rec - D)/c_rec = 5.817e-08
+        3.02 real         1.50 user         0.55 sys
+            92012544  maximum resident set size
+RSC: xi=1249999/10000000 R=7.68807055 lam=0.76925156
+  record c (cert.py exact)  = [1094.84969206207545 +/- 3.51e-15]  kappa = [0.089710178933603 +/- 3.45e-16]
+  dual lower bound D (Arb)  = [1094.84969181287378 +/- 1.85e-15]  kappa_D = [0.089710178963209 +/- 3.00e-16]  float primal J = 1.094849691813e+03
+  c_rec - D >= 0: True;  (c_rec - D)/c_rec = 2.276e-10
+        1.20 real         0.86 user         0.18 sys
+            91553792  maximum resident set size

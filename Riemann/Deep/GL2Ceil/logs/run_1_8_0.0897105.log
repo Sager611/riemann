@@ -1,0 +1,23 @@
+tails: {"m0": "[1.63636363636 +/- 3.64e-12]", "R_tail": "[0.501269614491 +/- 2.86e-13]", "R_tail_lower": 0.5012696144907142, "m0_strip": "[1.74056894043 +/- 1.02e-12]", "R_tail_strip_lower": 0.58293028437938, "h_RMAX": "[0.0884687531101 +/- 1.03e-14]", "h_ok": true, "mono_ok": true}
+strip lam >= 3.0: OK with 110 R-intervals (0.0s)
+  progress: {'crude': 0, 'dual': 540, 'split': 200, 'builds': 740} queue=176 worst=3.999e-10 t=76s mem=84MB
+  progress: {'crude': 0, 'dual': 780, 'split': 400, 'builds': 1180} queue=136 worst=1.452e-10 t=122s mem=85MB
+RESULT xi=1/8 kappa_up=179421/2000000: CERTIFIED; {'crude': 3, 'dual': 930, 'split': 417, 'builds': 1347}; worst rel margin (1.4522202107395578e-10, (7.6884765625, 0.0009765625, 0.75, 0.78125)); time 139s; peak mem 85MB
+      141.00 real       132.99 user         1.62 sys
+            88784896  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               15941  page reclaims
+                  30  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  22  messages received
+                   1  signals received
+                 550  voluntary context switches
+              112916  involuntary context switches
+           445872862  instructions retired
+           179191741  cycles elapsed
+            27542032  peak memory footprint

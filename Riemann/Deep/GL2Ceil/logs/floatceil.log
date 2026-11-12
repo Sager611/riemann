@@ -1,0 +1,42 @@
+GL2, nu < 25/128: xi = 25/256: kappa* = 0.0700563167 at R = 9.867773, lam = 0.770589, Q(1) = beta - 1 = -2.375e-05
+   Ritz deg Q =  1: max kappa = -0.1347780768 at R = 3.14382, lam = 0.53023
+   Ritz deg Q =  3: max kappa = -0.0423606614 at R = 4.55875, lam = 0.48052
+   Ritz deg Q =  5: max kappa = 0.0114646285 at R = 5.47328, lam = 0.54386
+   Ritz deg Q =  7: max kappa = 0.0365724021 at R = 6.29549, lam = 0.57114
+   Ritz deg Q = 11: max kappa = 0.0582421673 at R = 7.60760, lam = 0.63874
+   Ritz deg Q = 15: max kappa = 0.0658191257 at R = 8.56786, lam = 0.69370
+   Ritz deg Q = 19: max kappa = 0.0686013185 at R = 9.21184, lam = 0.73162
+   Ritz deg Q = 27: max kappa = 0.0699150003 at R = 9.76014, lam = 0.76416
+   Ritz deg Q = 39: max kappa = 0.0700529942 at R = 9.86396, lam = 0.77036
+   Ritz deg Q = 59: max kappa = 0.0700563108 at R = 9.86769, lam = 0.77058
+GL2, Ramanujan: xi = 1/8: kappa* = 0.0897102510 at R = 7.688073, lam = 0.769252, Q(1) = beta - 1 = -1.996e-04
+   Ritz deg Q =  1: max kappa = -0.0726004091 at R = 2.81259, lam = 0.58910
+   Ritz deg Q =  3: max kappa = 0.0057222544 at R = 4.09933, lam = 0.52321
+   Ritz deg Q =  5: max kappa = 0.0498885865 at R = 4.94191, lam = 0.58716
+   Ritz deg Q =  7: max kappa = 0.0693905958 at R = 5.65036, lam = 0.62449
+   Ritz deg Q = 11: max kappa = 0.0842932999 at R = 6.68053, lam = 0.69455
+   Ritz deg Q = 15: max kappa = 0.0883584065 at R = 7.28409, lam = 0.73886
+   Ritz deg Q = 19: max kappa = 0.0894063358 at R = 7.56044, lam = 0.75958
+   Ritz deg Q = 27: max kappa = 0.0896975167 at R = 7.68005, lam = 0.76864
+   Ritz deg Q = 39: max kappa = 0.0897101521 at R = 7.68798, lam = 0.76924
+   Ritz deg Q = 59: max kappa = 0.0897102510 at R = 7.68807, lam = 0.76925
+GL2 at the record length xi = 25/256 - 1e-7: kappa* = 0.0700562449 at R = 9.867784, lam = 0.770589, Q(1) = beta - 1 = -2.375e-05
+zeta, Conrey theta = 4/7: kappa* = 0.4089593260 at R = 1.291586, lam = 1.003074, Q(1) = beta - 1 = -1.466e-02
+       88.94 real        84.03 user         1.18 sys
+            91111424  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14946  page reclaims
+                1209  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  23  messages received
+                   1  signals received
+                 629  voluntary context switches
+               64432  involuntary context switches
+           465472040  instructions retired
+           208974241  cycles elapsed
+            29164072  peak memory footprint
