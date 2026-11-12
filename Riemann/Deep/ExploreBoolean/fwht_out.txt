@@ -1,0 +1,263 @@
+## system 0 (primes), all x <= 96
+sys=0 x=2 n=1 Q=2 N=2 M=0 symtop=0 rms=1.414 |M|/rms=0.000 frac_ge=1.0000 frac_gt=0.5000 maxabs(T!=0)=0@lev-1 betti=0
+  bounds on |M|: trivial=2 bjorner=0 levelk(k=n)=nan hypercontr=2 peres=1.73 | level-k worst ratio=0.000@k=0 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=nan
+sys=0 x=3 n=2 Q=3 N=3 M=-1 symtop=-1 rms=1.732 |M|/rms=0.577 frac_ge=1.0000 frac_gt=0.2500 maxabs(T!=0)=1@lev1 betti=1
+  bounds on |M|: trivial=3 bjorner=1 levelk(k=n)=nan hypercontr=3.46 peres=2.91 | level-k worst ratio=0.000@k=0 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.386
+sys=0 x=4 n=2 Q=3 N=3 M=-1 symtop=-1 rms=1.732 |M|/rms=0.577 frac_ge=1.0000 frac_gt=0.2500 maxabs(T!=0)=1@lev1 betti=1
+  bounds on |M|: trivial=3 bjorner=1 levelk(k=n)=nan hypercontr=3.46 peres=2.91 | level-k worst ratio=0.000@k=0 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.386
+sys=0 x=5 n=3 Q=4 N=4 M=-2 symtop=-2 rms=2.000 |M|/rms=1.000 frac_ge=0.6250 frac_gt=0.1250 maxabs(T!=0)=2@lev1 betti=2
+  bounds on |M|: trivial=4 bjorner=2 levelk(k=n)=nan hypercontr=5.66 peres=5.26 | level-k worst ratio=0.464@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.541
+sys=0 x=6 n=3 Q=5 N=5 M=-1 symtop=-1 rms=2.236 |M|/rms=0.447 frac_ge=1.0000 frac_gt=0.2500 maxabs(T!=0)=3@lev1 betti=1
+  bounds on |M|: trivial=5 bjorner=1 levelk(k=n)=nan hypercontr=6.32 peres=5.26 | level-k worst ratio=0.000@k=0 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.468
+sys=0 x=7 n=4 Q=6 N=6 M=-2 symtop=-2 rms=2.449 |M|/rms=0.816 frac_ge=0.6250 frac_gt=0.1875 maxabs(T!=0)=4@lev1 betti=2
+  bounds on |M|: trivial=6 bjorner=2 levelk(k=n)=nan hypercontr=9.8 peres=9.8 | level-k worst ratio=0.396@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.566
+sys=0 x=8 n=4 Q=6 N=6 M=-2 symtop=-2 rms=2.449 |M|/rms=0.816 frac_ge=0.6250 frac_gt=0.1875 maxabs(T!=0)=4@lev1 betti=2
+  bounds on |M|: trivial=6 bjorner=2 levelk(k=n)=nan hypercontr=9.8 peres=9.8 | level-k worst ratio=0.396@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.566
+sys=0 x=9 n=4 Q=6 N=6 M=-2 symtop=-2 rms=2.449 |M|/rms=0.816 frac_ge=0.6250 frac_gt=0.1875 maxabs(T!=0)=4@lev1 betti=2
+  bounds on |M|: trivial=6 bjorner=2 levelk(k=n)=nan hypercontr=9.8 peres=9.8 | level-k worst ratio=0.396@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.566
+sys=0 x=10 n=4 Q=7 N=7 M=-1 symtop=-1 rms=2.646 |M|/rms=0.378 frac_ge=1.0000 frac_gt=0.3125 maxabs(T!=0)=5@lev1 betti=1
+  bounds on |M|: trivial=7 bjorner=1 levelk(k=n)=nan hypercontr=10.6 peres=9.8 | level-k worst ratio=0.422@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.543
+sys=0 x=11 n=5 Q=8 N=8 M=-2 symtop=-2 rms=2.828 |M|/rms=0.707 frac_ge=0.6562 frac_gt=0.2188 maxabs(T!=0)=6@lev1 betti=2
+  bounds on |M|: trivial=8 bjorner=2 levelk(k=n)=nan hypercontr=16 peres=18.5 | level-k worst ratio=0.357@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.609
+sys=0 x=12 n=5 Q=8 N=8 M=-2 symtop=-2 rms=2.828 |M|/rms=0.707 frac_ge=0.6562 frac_gt=0.2188 maxabs(T!=0)=6@lev1 betti=2
+  bounds on |M|: trivial=8 bjorner=2 levelk(k=n)=nan hypercontr=16 peres=18.5 | level-k worst ratio=0.357@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.609
+sys=0 x=13 n=6 Q=9 N=9 M=-3 symtop=-3 rms=3.000 |M|/rms=1.000 frac_ge=0.4375 frac_gt=0.1562 maxabs(T!=0)=7@lev1 betti=3
+  bounds on |M|: trivial=9 bjorner=3 levelk(k=n)=nan hypercontr=24 peres=35.4 | level-k worst ratio=0.332@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.648
+sys=0 x=14 n=6 Q=10 N=10 M=-2 symtop=-2 rms=3.162 |M|/rms=0.632 frac_ge=0.6562 frac_gt=0.2500 maxabs(T!=0)=8@lev1 betti=2
+  bounds on |M|: trivial=10 bjorner=2 levelk(k=n)=nan hypercontr=25.3 peres=35.4 | level-k worst ratio=0.337@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.646
+sys=0 x=15 n=6 Q=11 N=11 M=-1 symtop=-1 rms=3.317 |M|/rms=0.302 frac_ge=1.0000 frac_gt=0.4375 maxabs(T!=0)=9@lev1 betti=3
+  bounds on |M|: trivial=11 bjorner=3 levelk(k=n)=nan hypercontr=26.5 peres=35.4 | level-k worst ratio=0.338@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.634
+sys=0 x=16 n=6 Q=11 N=11 M=-1 symtop=-1 rms=3.317 |M|/rms=0.302 frac_ge=1.0000 frac_gt=0.4375 maxabs(T!=0)=9@lev1 betti=3
+  bounds on |M|: trivial=11 bjorner=3 levelk(k=n)=nan hypercontr=26.5 peres=35.4 | level-k worst ratio=0.338@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.634
+sys=0 x=17 n=7 Q=12 N=12 M=-2 symtop=-2 rms=3.464 |M|/rms=0.577 frac_ge=0.7188 frac_gt=0.2969 maxabs(T!=0)=10@lev1 betti=4
+  bounds on |M|: trivial=12 bjorner=4 levelk(k=n)=nan hypercontr=39.2 peres=68.2 | level-k worst ratio=0.322@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.663
+sys=0 x=18 n=7 Q=12 N=12 M=-2 symtop=-2 rms=3.464 |M|/rms=0.577 frac_ge=0.7188 frac_gt=0.2969 maxabs(T!=0)=10@lev1 betti=4
+  bounds on |M|: trivial=12 bjorner=4 levelk(k=n)=nan hypercontr=39.2 peres=68.2 | level-k worst ratio=0.322@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.663
+sys=0 x=19 n=8 Q=13 N=13 M=-3 symtop=-3 rms=3.606 |M|/rms=0.832 frac_ge=0.5078 frac_gt=0.2070 maxabs(T!=0)=11@lev1 betti=5
+  bounds on |M|: trivial=13 bjorner=5 levelk(k=n)=nan hypercontr=57.7 peres=132 | level-k worst ratio=0.313@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.683
+sys=0 x=20 n=8 Q=13 N=13 M=-3 symtop=-3 rms=3.606 |M|/rms=0.832 frac_ge=0.5078 frac_gt=0.2070 maxabs(T!=0)=11@lev1 betti=5
+  bounds on |M|: trivial=13 bjorner=5 levelk(k=n)=nan hypercontr=57.7 peres=132 | level-k worst ratio=0.313@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.683
+sys=0 x=21 n=8 Q=14 N=14 M=-2 symtop=-2 rms=3.742 |M|/rms=0.535 frac_ge=0.7422 frac_gt=0.3320 maxabs(T!=0)=12@lev1 betti=6
+  bounds on |M|: trivial=14 bjorner=6 levelk(k=n)=nan hypercontr=59.9 peres=132 | level-k worst ratio=0.314@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.681
+sys=0 x=22 n=8 Q=15 N=15 M=-1 symtop=-1 rms=3.873 |M|/rms=0.258 frac_ge=1.0000 frac_gt=0.5117 maxabs(T!=0)=13@lev1 betti=5
+  bounds on |M|: trivial=15 bjorner=5 levelk(k=n)=nan hypercontr=62 peres=132 | level-k worst ratio=0.314@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.677
+sys=0 x=23 n=9 Q=16 N=16 M=-2 symtop=-2 rms=4.000 |M|/rms=0.500 frac_ge=0.7559 frac_gt=0.3652 maxabs(T!=0)=14@lev1 betti=6
+  bounds on |M|: trivial=16 bjorner=6 levelk(k=n)=nan hypercontr=90.5 peres=256 | level-k worst ratio=0.308@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.692
+sys=0 x=24 n=9 Q=16 N=16 M=-2 symtop=-2 rms=4.000 |M|/rms=0.500 frac_ge=0.7559 frac_gt=0.3652 maxabs(T!=0)=14@lev1 betti=6
+  bounds on |M|: trivial=16 bjorner=6 levelk(k=n)=nan hypercontr=90.5 peres=256 | level-k worst ratio=0.308@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.692
+sys=0 x=25 n=9 Q=16 N=16 M=-2 symtop=-2 rms=4.000 |M|/rms=0.500 frac_ge=0.7559 frac_gt=0.3652 maxabs(T!=0)=14@lev1 betti=6
+  bounds on |M|: trivial=16 bjorner=6 levelk(k=n)=nan hypercontr=90.5 peres=256 | level-k worst ratio=0.308@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.692
+sys=0 x=26 n=9 Q=17 N=17 M=-1 symtop=-1 rms=4.123 |M|/rms=0.243 frac_ge=1.0000 frac_gt=0.5312 maxabs(T!=0)=15@lev1 betti=5
+  bounds on |M|: trivial=17 bjorner=5 levelk(k=n)=nan hypercontr=93.3 peres=256 | level-k worst ratio=0.308@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.692
+sys=0 x=27 n=9 Q=17 N=17 M=-1 symtop=-1 rms=4.123 |M|/rms=0.243 frac_ge=1.0000 frac_gt=0.5312 maxabs(T!=0)=15@lev1 betti=5
+  bounds on |M|: trivial=17 bjorner=5 levelk(k=n)=nan hypercontr=93.3 peres=256 | level-k worst ratio=0.308@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.692
+sys=0 x=28 n=9 Q=17 N=17 M=-1 symtop=-1 rms=4.123 |M|/rms=0.243 frac_ge=1.0000 frac_gt=0.5312 maxabs(T!=0)=15@lev1 betti=5
+  bounds on |M|: trivial=17 bjorner=5 levelk(k=n)=nan hypercontr=93.3 peres=256 | level-k worst ratio=0.308@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.692
+sys=0 x=29 n=10 Q=18 N=18 M=-2 symtop=-2 rms=4.243 |M|/rms=0.471 frac_ge=0.7656 frac_gt=0.3877 maxabs(T!=0)=16@lev1 betti=6
+  bounds on |M|: trivial=18 bjorner=6 levelk(k=n)=nan hypercontr=136 peres=499 | level-k worst ratio=0.304@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.703
+sys=0 x=30 n=10 Q=19 N=19 M=-3 symtop=-3 rms=4.359 |M|/rms=0.688 frac_ge=0.5352 frac_gt=0.2520 maxabs(T!=0)=17@lev1 betti=5
+  bounds on |M|: trivial=19 bjorner=5 levelk(k=n)=nan hypercontr=139 peres=499 | level-k worst ratio=0.302@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.695
+sys=0 x=31 n=11 Q=20 N=20 M=-4 symtop=-4 rms=4.472 |M|/rms=0.894 frac_ge=0.3936 frac_gt=0.1914 maxabs(T!=0)=18@lev1 betti=6
+  bounds on |M|: trivial=20 bjorner=6 levelk(k=n)=nan hypercontr=202 peres=974 | level-k worst ratio=0.299@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.704
+sys=0 x=32 n=11 Q=20 N=20 M=-4 symtop=-4 rms=4.472 |M|/rms=0.894 frac_ge=0.3936 frac_gt=0.1914 maxabs(T!=0)=18@lev1 betti=6
+  bounds on |M|: trivial=20 bjorner=6 levelk(k=n)=nan hypercontr=202 peres=974 | level-k worst ratio=0.299@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.704
+sys=0 x=33 n=11 Q=21 N=21 M=-3 symtop=-3 rms=4.583 |M|/rms=0.655 frac_ge=0.5684 frac_gt=0.2754 maxabs(T!=0)=19@lev1 betti=7
+  bounds on |M|: trivial=21 bjorner=7 levelk(k=n)=nan hypercontr=207 peres=974 | level-k worst ratio=0.299@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.704
+sys=0 x=34 n=11 Q=22 N=22 M=-2 symtop=-2 rms=4.690 |M|/rms=0.426 frac_ge=0.7686 frac_gt=0.3975 maxabs(T!=0)=20@lev1 betti=6
+  bounds on |M|: trivial=22 bjorner=6 levelk(k=n)=nan hypercontr=212 peres=974 | level-k worst ratio=0.300@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.705
+sys=0 x=35 n=11 Q=23 N=23 M=-1 symtop=-1 rms=4.796 |M|/rms=0.209 frac_ge=1.0000 frac_gt=0.5781 maxabs(T!=0)=21@lev1 betti=7
+  bounds on |M|: trivial=23 bjorner=7 levelk(k=n)=nan hypercontr=217 peres=974 | level-k worst ratio=0.300@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.703
+sys=0 x=36 n=11 Q=23 N=23 M=-1 symtop=-1 rms=4.796 |M|/rms=0.209 frac_ge=1.0000 frac_gt=0.5781 maxabs(T!=0)=21@lev1 betti=7
+  bounds on |M|: trivial=23 bjorner=7 levelk(k=n)=nan hypercontr=217 peres=974 | level-k worst ratio=0.300@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.703
+sys=0 x=37 n=12 Q=24 N=24 M=-2 symtop=-2 rms=4.899 |M|/rms=0.408 frac_ge=0.7891 frac_gt=0.4341 maxabs(T!=0)=22@lev1 betti=8
+  bounds on |M|: trivial=24 bjorner=8 levelk(k=n)=nan hypercontr=314 peres=1.91e+03 | level-k worst ratio=0.297@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.710
+sys=0 x=38 n=12 Q=25 N=25 M=-1 symtop=-1 rms=5.000 |M|/rms=0.200 frac_ge=1.0000 frac_gt=0.5903 maxabs(T!=0)=23@lev1 betti=7
+  bounds on |M|: trivial=25 bjorner=7 levelk(k=n)=nan hypercontr=320 peres=1.91e+03 | level-k worst ratio=0.298@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.711
+sys=0 x=39 n=12 Q=26 N=26 M=0 symtop=0 rms=5.099 |M|/rms=0.000 frac_ge=1.0000 frac_gt=0.7915 maxabs(T!=0)=24@lev1 betti=8
+  bounds on |M|: trivial=26 bjorner=8 levelk(k=n)=nan hypercontr=326 peres=1.91e+03 | level-k worst ratio=0.298@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.710
+sys=0 x=40 n=12 Q=26 N=26 M=0 symtop=0 rms=5.099 |M|/rms=0.000 frac_ge=1.0000 frac_gt=0.7915 maxabs(T!=0)=24@lev1 betti=8
+  bounds on |M|: trivial=26 bjorner=8 levelk(k=n)=nan hypercontr=326 peres=1.91e+03 | level-k worst ratio=0.298@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.710
+sys=0 x=41 n=13 Q=27 N=27 M=-1 symtop=-1 rms=5.196 |M|/rms=0.192 frac_ge=1.0000 frac_gt=0.6157 maxabs(T!=0)=25@lev1 betti=9
+  bounds on |M|: trivial=27 bjorner=9 levelk(k=n)=nan hypercontr=470 peres=3.74e+03 | level-k worst ratio=0.296@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.716
+sys=0 x=42 n=13 Q=28 N=28 M=-2 symtop=-2 rms=5.292 |M|/rms=0.378 frac_ge=0.7925 frac_gt=0.4426 maxabs(T!=0)=26@lev1 betti=8
+  bounds on |M|: trivial=28 bjorner=8 levelk(k=n)=nan hypercontr=479 peres=3.74e+03 | level-k worst ratio=0.295@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.714
+sys=0 x=43 n=14 Q=29 N=29 M=-3 symtop=-3 rms=5.385 |M|/rms=0.557 frac_ge=0.6176 frac_gt=0.3364 maxabs(T!=0)=27@lev1 betti=9
+  bounds on |M|: trivial=29 bjorner=9 levelk(k=n)=nan hypercontr=689 peres=7.34e+03 | level-k worst ratio=0.293@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.718
+sys=0 x=44 n=14 Q=29 N=29 M=-3 symtop=-3 rms=5.385 |M|/rms=0.557 frac_ge=0.6176 frac_gt=0.3364 maxabs(T!=0)=27@lev1 betti=9
+  bounds on |M|: trivial=29 bjorner=9 levelk(k=n)=nan hypercontr=689 peres=7.34e+03 | level-k worst ratio=0.293@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.718
+sys=0 x=45 n=14 Q=29 N=29 M=-3 symtop=-3 rms=5.385 |M|/rms=0.557 frac_ge=0.6176 frac_gt=0.3364 maxabs(T!=0)=27@lev1 betti=9
+  bounds on |M|: trivial=29 bjorner=9 levelk(k=n)=nan hypercontr=689 peres=7.34e+03 | level-k worst ratio=0.293@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.718
+sys=0 x=46 n=14 Q=30 N=30 M=-2 symtop=-2 rms=5.477 |M|/rms=0.365 frac_ge=0.7977 frac_gt=0.4566 maxabs(T!=0)=28@lev1 betti=8
+  bounds on |M|: trivial=30 bjorner=8 levelk(k=n)=nan hypercontr=701 peres=7.34e+03 | level-k worst ratio=0.294@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.719
+sys=0 x=47 n=15 Q=31 N=31 M=-3 symtop=-3 rms=5.568 |M|/rms=0.539 frac_ge=0.6272 frac_gt=0.3517 maxabs(T!=0)=29@lev1 betti=9
+  bounds on |M|: trivial=31 bjorner=9 levelk(k=n)=nan hypercontr=1.01e+03 peres=1.44e+04 | level-k worst ratio=0.292@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.723
+sys=0 x=48 n=15 Q=31 N=31 M=-3 symtop=-3 rms=5.568 |M|/rms=0.539 frac_ge=0.6272 frac_gt=0.3517 maxabs(T!=0)=29@lev1 betti=9
+  bounds on |M|: trivial=31 bjorner=9 levelk(k=n)=nan hypercontr=1.01e+03 peres=1.44e+04 | level-k worst ratio=0.292@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.723
+sys=0 x=49 n=15 Q=31 N=31 M=-3 symtop=-3 rms=5.568 |M|/rms=0.539 frac_ge=0.6272 frac_gt=0.3517 maxabs(T!=0)=29@lev1 betti=9
+  bounds on |M|: trivial=31 bjorner=9 levelk(k=n)=nan hypercontr=1.01e+03 peres=1.44e+04 | level-k worst ratio=0.292@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.723
+sys=0 x=50 n=15 Q=31 N=31 M=-3 symtop=-3 rms=5.568 |M|/rms=0.539 frac_ge=0.6272 frac_gt=0.3517 maxabs(T!=0)=29@lev1 betti=9
+  bounds on |M|: trivial=31 bjorner=9 levelk(k=n)=nan hypercontr=1.01e+03 peres=1.44e+04 | level-k worst ratio=0.292@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.723
+sys=0 x=51 n=15 Q=32 N=32 M=-2 symtop=-2 rms=5.657 |M|/rms=0.354 frac_ge=0.8100 frac_gt=0.4807 maxabs(T!=0)=30@lev1 betti=10
+  bounds on |M|: trivial=32 bjorner=10 levelk(k=n)=nan hypercontr=1.02e+03 peres=1.44e+04 | level-k worst ratio=0.292@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.723
+sys=0 x=52 n=15 Q=32 N=32 M=-2 symtop=-2 rms=5.657 |M|/rms=0.354 frac_ge=0.8100 frac_gt=0.4807 maxabs(T!=0)=30@lev1 betti=10
+  bounds on |M|: trivial=32 bjorner=10 levelk(k=n)=nan hypercontr=1.02e+03 peres=1.44e+04 | level-k worst ratio=0.292@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.723
+sys=0 x=53 n=16 Q=33 N=33 M=-3 symtop=-3 rms=5.745 |M|/rms=0.522 frac_ge=0.6454 frac_gt=0.3722 maxabs(T!=0)=31@lev1 betti=11
+  bounds on |M|: trivial=33 bjorner=11 levelk(k=n)=nan hypercontr=1.47e+03 peres=2.84e+04 | level-k worst ratio=0.291@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.726
+sys=0 x=54 n=16 Q=33 N=33 M=-3 symtop=-3 rms=5.745 |M|/rms=0.522 frac_ge=0.6454 frac_gt=0.3722 maxabs(T!=0)=31@lev1 betti=11
+  bounds on |M|: trivial=33 bjorner=11 levelk(k=n)=nan hypercontr=1.47e+03 peres=2.84e+04 | level-k worst ratio=0.291@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.726
+sys=0 x=55 n=16 Q=34 N=34 M=-2 symtop=-2 rms=5.831 |M|/rms=0.343 frac_ge=0.8220 frac_gt=0.5069 maxabs(T!=0)=32@lev1 betti=12
+  bounds on |M|: trivial=34 bjorner=12 levelk(k=n)=nan hypercontr=1.49e+03 peres=2.84e+04 | level-k worst ratio=0.291@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.725
+sys=0 x=56 n=16 Q=34 N=34 M=-2 symtop=-2 rms=5.831 |M|/rms=0.343 frac_ge=0.8220 frac_gt=0.5069 maxabs(T!=0)=32@lev1 betti=12
+  bounds on |M|: trivial=34 bjorner=12 levelk(k=n)=nan hypercontr=1.49e+03 peres=2.84e+04 | level-k worst ratio=0.291@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.725
+sys=0 x=57 n=16 Q=35 N=35 M=-1 symtop=-1 rms=5.916 |M|/rms=0.169 frac_ge=1.0000 frac_gt=0.6569 maxabs(T!=0)=33@lev1 betti=13
+  bounds on |M|: trivial=35 bjorner=13 levelk(k=n)=nan hypercontr=1.51e+03 peres=2.84e+04 | level-k worst ratio=0.291@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.725
+sys=0 x=58 n=16 Q=36 N=36 M=0 symtop=0 rms=6.000 |M|/rms=0.000 frac_ge=1.0000 frac_gt=0.8233 maxabs(T!=0)=34@lev1 betti=12
+  bounds on |M|: trivial=36 bjorner=12 levelk(k=n)=nan hypercontr=1.54e+03 peres=2.84e+04 | level-k worst ratio=0.291@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.726
+sys=0 x=59 n=17 Q=37 N=37 M=-1 symtop=-1 rms=6.083 |M|/rms=0.164 frac_ge=1.0000 frac_gt=0.6667 maxabs(T!=0)=35@lev1 betti=13
+  bounds on |M|: trivial=37 bjorner=13 levelk(k=n)=nan hypercontr=2.2e+03 peres=5.59e+04 | level-k worst ratio=0.290@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.728
+sys=0 x=60 n=17 Q=37 N=37 M=-1 symtop=-1 rms=6.083 |M|/rms=0.164 frac_ge=1.0000 frac_gt=0.6667 maxabs(T!=0)=35@lev1 betti=13
+  bounds on |M|: trivial=37 bjorner=13 levelk(k=n)=nan hypercontr=2.2e+03 peres=5.59e+04 | level-k worst ratio=0.290@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.728
+sys=0 x=61 n=18 Q=38 N=38 M=-2 symtop=-2 rms=6.164 |M|/rms=0.324 frac_ge=0.8334 frac_gt=0.5337 maxabs(T!=0)=36@lev1 betti=14
+  bounds on |M|: trivial=38 bjorner=14 levelk(k=n)=nan hypercontr=3.16e+03 peres=1.1e+05 | level-k worst ratio=0.289@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.730
+sys=0 x=62 n=18 Q=39 N=39 M=-1 symtop=-1 rms=6.245 |M|/rms=0.160 frac_ge=1.0000 frac_gt=0.6742 maxabs(T!=0)=37@lev1 betti=13
+  bounds on |M|: trivial=39 bjorner=13 levelk(k=n)=nan hypercontr=3.2e+03 peres=1.1e+05 | level-k worst ratio=0.290@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.731
+sys=0 x=63 n=18 Q=39 N=39 M=-1 symtop=-1 rms=6.245 |M|/rms=0.160 frac_ge=1.0000 frac_gt=0.6742 maxabs(T!=0)=37@lev1 betti=13
+  bounds on |M|: trivial=39 bjorner=13 levelk(k=n)=nan hypercontr=3.2e+03 peres=1.1e+05 | level-k worst ratio=0.290@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.731
+sys=0 x=64 n=18 Q=39 N=39 M=-1 symtop=-1 rms=6.245 |M|/rms=0.160 frac_ge=1.0000 frac_gt=0.6742 maxabs(T!=0)=37@lev1 betti=13
+  bounds on |M|: trivial=39 bjorner=13 levelk(k=n)=nan hypercontr=3.2e+03 peres=1.1e+05 | level-k worst ratio=0.290@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.731
+sys=0 x=65 n=18 Q=40 N=40 M=0 symtop=0 rms=6.325 |M|/rms=0.000 frac_ge=1.0000 frac_gt=0.8342 maxabs(T!=0)=38@lev1 betti=14
+  bounds on |M|: trivial=40 bjorner=14 levelk(k=n)=nan hypercontr=3.24e+03 peres=1.1e+05 | level-k worst ratio=0.289@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.730
+sys=0 x=66 n=18 Q=41 N=41 M=-1 symtop=-1 rms=6.403 |M|/rms=0.156 frac_ge=1.0000 frac_gt=0.6747 maxabs(T!=0)=39@lev1 betti=13
+  bounds on |M|: trivial=41 bjorner=13 levelk(k=n)=nan hypercontr=3.28e+03 peres=1.1e+05 | level-k worst ratio=0.289@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.729
+sys=0 x=67 n=19 Q=42 N=42 M=-2 symtop=-2 rms=6.481 |M|/rms=0.309 frac_ge=0.8374 frac_gt=0.5443 maxabs(T!=0)=40@lev1 betti=14
+  bounds on |M|: trivial=42 bjorner=14 levelk(k=n)=nan hypercontr=4.69e+03 peres=2.17e+05 | level-k worst ratio=0.288@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.730
+sys=0 x=68 n=19 Q=42 N=42 M=-2 symtop=-2 rms=6.481 |M|/rms=0.309 frac_ge=0.8374 frac_gt=0.5443 maxabs(T!=0)=40@lev1 betti=14
+  bounds on |M|: trivial=42 bjorner=14 levelk(k=n)=nan hypercontr=4.69e+03 peres=2.17e+05 | level-k worst ratio=0.288@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.730
+sys=0 x=69 n=19 Q=43 N=43 M=-1 symtop=-1 rms=6.557 |M|/rms=0.152 frac_ge=1.0000 frac_gt=0.6859 maxabs(T!=0)=41@lev1 betti=15
+  bounds on |M|: trivial=43 bjorner=15 levelk(k=n)=nan hypercontr=4.75e+03 peres=2.17e+05 | level-k worst ratio=0.288@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.731
+sys=0 x=70 n=19 Q=44 N=44 M=-2 symtop=-2 rms=6.633 |M|/rms=0.302 frac_ge=0.8376 frac_gt=0.5450 maxabs(T!=0)=42@lev1 betti=14
+  bounds on |M|: trivial=44 bjorner=14 levelk(k=n)=nan hypercontr=4.8e+03 peres=2.17e+05 | level-k worst ratio=0.288@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.729
+sys=0 x=71 n=20 Q=45 N=45 M=-3 symtop=-3 rms=6.708 |M|/rms=0.447 frac_ge=0.6913 frac_gt=0.4373 maxabs(T!=0)=43@lev1 betti=15
+  bounds on |M|: trivial=45 bjorner=15 levelk(k=n)=1.05e+06 hypercontr=6.87e+03 peres=4.29e+05 | level-k worst ratio=0.287@k=1 ratio(k=n)=4.29e-05 | level1 W1/(2N^2 ln(1/a))=0.731
+sys=0 x=72 n=20 Q=45 N=45 M=-3 symtop=-3 rms=6.708 |M|/rms=0.447 frac_ge=0.6913 frac_gt=0.4373 maxabs(T!=0)=43@lev1 betti=15
+  bounds on |M|: trivial=45 bjorner=15 levelk(k=n)=1.05e+06 hypercontr=6.87e+03 peres=4.29e+05 | level-k worst ratio=0.287@k=1 ratio(k=n)=4.29e-05 | level1 W1/(2N^2 ln(1/a))=0.731
+sys=0 x=73 n=21 Q=46 N=46 M=-4 symtop=-4 rms=6.782 |M|/rms=0.590 frac_ge=0.5643 frac_gt=0.3501 maxabs(T!=0)=44@lev1 betti=16
+  bounds on |M|: trivial=46 bjorner=16 levelk(k=n)=2.09e+06 hypercontr=9.82e+03 peres=8.48e+05 | level-k worst ratio=0.286@k=1 ratio(k=n)=2.2e-05 | level1 W1/(2N^2 ln(1/a))=0.732
+sys=0 x=74 n=21 Q=47 N=47 M=-3 symtop=-3 rms=6.856 |M|/rms=0.438 frac_ge=0.6968 frac_gt=0.4466 maxabs(T!=0)=45@lev1 betti=15
+  bounds on |M|: trivial=47 bjorner=15 levelk(k=n)=2.09e+06 hypercontr=9.93e+03 peres=8.48e+05 | level-k worst ratio=0.287@k=1 ratio(k=n)=2.25e-05 | level1 W1/(2N^2 ln(1/a))=0.732
+sys=0 x=75 n=21 Q=47 N=47 M=-3 symtop=-3 rms=6.856 |M|/rms=0.438 frac_ge=0.6968 frac_gt=0.4466 maxabs(T!=0)=45@lev1 betti=15
+  bounds on |M|: trivial=47 bjorner=15 levelk(k=n)=2.09e+06 hypercontr=9.93e+03 peres=8.48e+05 | level-k worst ratio=0.287@k=1 ratio(k=n)=2.25e-05 | level1 W1/(2N^2 ln(1/a))=0.732
+sys=0 x=76 n=21 Q=47 N=47 M=-3 symtop=-3 rms=6.856 |M|/rms=0.438 frac_ge=0.6968 frac_gt=0.4466 maxabs(T!=0)=45@lev1 betti=15
+  bounds on |M|: trivial=47 bjorner=15 levelk(k=n)=2.09e+06 hypercontr=9.93e+03 peres=8.48e+05 | level-k worst ratio=0.287@k=1 ratio(k=n)=2.25e-05 | level1 W1/(2N^2 ln(1/a))=0.732
+sys=0 x=77 n=21 Q=48 N=48 M=-2 symtop=-2 rms=6.928 |M|/rms=0.289 frac_ge=0.8479 frac_gt=0.5704 maxabs(T!=0)=46@lev1 betti=16
+  bounds on |M|: trivial=48 bjorner=16 levelk(k=n)=2.09e+06 hypercontr=1e+04 peres=8.48e+05 | level-k worst ratio=0.287@k=1 ratio(k=n)=2.3e-05 | level1 W1/(2N^2 ln(1/a))=0.732
+sys=0 x=78 n=21 Q=49 N=49 M=-3 symtop=-3 rms=7.000 |M|/rms=0.429 frac_ge=0.6974 frac_gt=0.4477 maxabs(T!=0)=47@lev1 betti=15
+  bounds on |M|: trivial=49 bjorner=15 levelk(k=n)=2.09e+06 hypercontr=1.01e+04 peres=8.48e+05 | level-k worst ratio=0.286@k=1 ratio(k=n)=2.34e-05 | level1 W1/(2N^2 ln(1/a))=0.732
+sys=0 x=79 n=22 Q=50 N=50 M=-4 symtop=-4 rms=7.071 |M|/rms=0.566 frac_ge=0.5726 frac_gt=0.3613 maxabs(T!=0)=48@lev1 betti=16
+  bounds on |M|: trivial=50 bjorner=16 levelk(k=n)=4.17e+06 hypercontr=1.45e+04 peres=1.68e+06 | level-k worst ratio=0.286@k=1 ratio(k=n)=1.2e-05 | level1 W1/(2N^2 ln(1/a))=0.733
+sys=0 x=80 n=22 Q=50 N=50 M=-4 symtop=-4 rms=7.071 |M|/rms=0.566 frac_ge=0.5726 frac_gt=0.3613 maxabs(T!=0)=48@lev1 betti=16
+  bounds on |M|: trivial=50 bjorner=16 levelk(k=n)=4.17e+06 hypercontr=1.45e+04 peres=1.68e+06 | level-k worst ratio=0.286@k=1 ratio(k=n)=1.2e-05 | level1 W1/(2N^2 ln(1/a))=0.733
+sys=0 x=81 n=22 Q=50 N=50 M=-4 symtop=-4 rms=7.071 |M|/rms=0.566 frac_ge=0.5726 frac_gt=0.3613 maxabs(T!=0)=48@lev1 betti=16
+  bounds on |M|: trivial=50 bjorner=16 levelk(k=n)=4.17e+06 hypercontr=1.45e+04 peres=1.68e+06 | level-k worst ratio=0.286@k=1 ratio(k=n)=1.2e-05 | level1 W1/(2N^2 ln(1/a))=0.733
+sys=0 x=82 n=22 Q=51 N=51 M=-3 symtop=-3 rms=7.141 |M|/rms=0.420 frac_ge=0.7020 frac_gt=0.4556 maxabs(T!=0)=49@lev1 betti=15
+  bounds on |M|: trivial=51 bjorner=15 levelk(k=n)=4.18e+06 hypercontr=1.46e+04 peres=1.68e+06 | level-k worst ratio=0.286@k=1 ratio(k=n)=1.23e-05 | level1 W1/(2N^2 ln(1/a))=0.733
+sys=0 x=83 n=23 Q=52 N=52 M=-4 symtop=-4 rms=7.211 |M|/rms=0.555 frac_ge=0.5788 frac_gt=0.3699 maxabs(T!=0)=50@lev1 betti=16
+  bounds on |M|: trivial=52 bjorner=16 levelk(k=n)=8.3e+06 hypercontr=2.09e+04 peres=3.32e+06 | level-k worst ratio=0.285@k=1 ratio(k=n)=6.33e-06 | level1 W1/(2N^2 ln(1/a))=0.734
+sys=0 x=84 n=23 Q=52 N=52 M=-4 symtop=-4 rms=7.211 |M|/rms=0.555 frac_ge=0.5788 frac_gt=0.3699 maxabs(T!=0)=50@lev1 betti=16
+  bounds on |M|: trivial=52 bjorner=16 levelk(k=n)=8.3e+06 hypercontr=2.09e+04 peres=3.32e+06 | level-k worst ratio=0.285@k=1 ratio(k=n)=6.33e-06 | level1 W1/(2N^2 ln(1/a))=0.734
+sys=0 x=85 n=23 Q=53 N=53 M=-3 symtop=-3 rms=7.280 |M|/rms=0.412 frac_ge=0.7143 frac_gt=0.4731 maxabs(T!=0)=51@lev1 betti=17
+  bounds on |M|: trivial=53 bjorner=17 levelk(k=n)=8.31e+06 hypercontr=2.11e+04 peres=3.32e+06 | level-k worst ratio=0.285@k=1 ratio(k=n)=6.44e-06 | level1 W1/(2N^2 ln(1/a))=0.734
+sys=0 x=86 n=23 Q=54 N=54 M=-2 symtop=-2 rms=7.348 |M|/rms=0.272 frac_ge=0.8527 frac_gt=0.5834 maxabs(T!=0)=52@lev1 betti=16
+  bounds on |M|: trivial=54 bjorner=16 levelk(k=n)=8.32e+06 hypercontr=2.13e+04 peres=3.32e+06 | level-k worst ratio=0.286@k=1 ratio(k=n)=6.55e-06 | level1 W1/(2N^2 ln(1/a))=0.734
+sys=0 x=87 n=23 Q=55 N=55 M=-1 symtop=-1 rms=7.416 |M|/rms=0.135 frac_ge=1.0000 frac_gt=0.7157 maxabs(T!=0)=53@lev1 betti=17
+  bounds on |M|: trivial=55 bjorner=17 levelk(k=n)=8.32e+06 hypercontr=2.15e+04 peres=3.32e+06 | level-k worst ratio=0.286@k=1 ratio(k=n)=6.66e-06 | level1 W1/(2N^2 ln(1/a))=0.735
+sys=0 x=88 n=23 Q=55 N=55 M=-1 symtop=-1 rms=7.416 |M|/rms=0.135 frac_ge=1.0000 frac_gt=0.7157 maxabs(T!=0)=53@lev1 betti=17
+  bounds on |M|: trivial=55 bjorner=17 levelk(k=n)=8.32e+06 hypercontr=2.15e+04 peres=3.32e+06 | level-k worst ratio=0.286@k=1 ratio(k=n)=6.66e-06 | level1 W1/(2N^2 ln(1/a))=0.735
+sys=0 x=89 n=24 Q=56 N=56 M=-2 symtop=-2 rms=7.483 |M|/rms=0.267 frac_ge=0.8578 frac_gt=0.5958 maxabs(T!=0)=54@lev1 betti=18
+  bounds on |M|: trivial=56 bjorner=18 levelk(k=n)=1.65e+07 hypercontr=3.07e+04 peres=6.56e+06 | level-k worst ratio=0.285@k=1 ratio(k=n)=3.44e-06 | level1 W1/(2N^2 ln(1/a))=0.735
+sys=0 x=90 n=24 Q=56 N=56 M=-2 symtop=-2 rms=7.483 |M|/rms=0.267 frac_ge=0.8578 frac_gt=0.5958 maxabs(T!=0)=54@lev1 betti=18
+  bounds on |M|: trivial=56 bjorner=18 levelk(k=n)=1.65e+07 hypercontr=3.07e+04 peres=6.56e+06 | level-k worst ratio=0.285@k=1 ratio(k=n)=3.44e-06 | level1 W1/(2N^2 ln(1/a))=0.735
+sys=0 x=91 n=24 Q=57 N=57 M=-1 symtop=-1 rms=7.550 |M|/rms=0.132 frac_ge=1.0000 frac_gt=0.7244 maxabs(T!=0)=55@lev1 betti=19
+  bounds on |M|: trivial=57 bjorner=19 levelk(k=n)=1.65e+07 hypercontr=3.09e+04 peres=6.56e+06 | level-k worst ratio=0.285@k=1 ratio(k=n)=3.5e-06 | level1 W1/(2N^2 ln(1/a))=0.735
+sys=0 x=92 n=24 Q=57 N=57 M=-1 symtop=-1 rms=7.550 |M|/rms=0.132 frac_ge=1.0000 frac_gt=0.7244 maxabs(T!=0)=55@lev1 betti=19
+  bounds on |M|: trivial=57 bjorner=19 levelk(k=n)=1.65e+07 hypercontr=3.09e+04 peres=6.56e+06 | level-k worst ratio=0.285@k=1 ratio(k=n)=3.5e-06 | level1 W1/(2N^2 ln(1/a))=0.735
+sys=0 x=93 n=24 Q=58 N=58 M=0 symtop=0 rms=7.616 |M|/rms=0.000 frac_ge=1.0000 frac_gt=0.8609 maxabs(T!=0)=56@lev1 betti=20
+  bounds on |M|: trivial=58 bjorner=20 levelk(k=n)=1.66e+07 hypercontr=3.12e+04 peres=6.56e+06 | level-k worst ratio=0.285@k=1 ratio(k=n)=3.55e-06 | level1 W1/(2N^2 ln(1/a))=0.735
+sys=0 x=94 n=24 Q=59 N=59 M=1 symtop=1 rms=7.681 |M|/rms=0.130 frac_ge=1.0000 frac_gt=0.7257 maxabs(T!=0)=57@lev1 betti=19
+  bounds on |M|: trivial=59 bjorner=19 levelk(k=n)=1.66e+07 hypercontr=3.15e+04 peres=6.56e+06 | level-k worst ratio=0.285@k=1 ratio(k=n)=3.61e-06 | level1 W1/(2N^2 ln(1/a))=0.736
+sys=0 x=95 n=24 Q=60 N=60 M=2 symtop=2 rms=7.746 |M|/rms=0.258 frac_ge=0.8616 frac_gt=0.6060 maxabs(T!=0)=58@lev1 betti=20
+  bounds on |M|: trivial=60 bjorner=20 levelk(k=n)=1.66e+07 hypercontr=3.17e+04 peres=6.56e+06 | level-k worst ratio=0.285@k=1 ratio(k=n)=3.66e-06 | level1 W1/(2N^2 ln(1/a))=0.736
+sys=0 x=96 n=24 Q=60 N=60 M=2 symtop=2 rms=7.746 |M|/rms=0.258 frac_ge=0.8616 frac_gt=0.6060 maxabs(T!=0)=58@lev1 betti=20
+  bounds on |M|: trivial=60 bjorner=20 levelk(k=n)=1.66e+07 hypercontr=3.17e+04 peres=6.56e+06 | level-k worst ratio=0.285@k=1 ratio(k=n)=3.66e-06 | level1 W1/(2N^2 ln(1/a))=0.736
+## x=23 adversarial
+# equal-weights: full levels 0..1, 6 sets of level 2
+sys=1 x=23 n=9 Q=16 N=16 M=-2 symtop=-2 rms=4.000 |M|/rms=0.500 frac_ge=0.7559 frac_gt=0.3555 maxabs(T!=0)=14@lev1 betti=14
+  bounds on |M|: trivial=16 bjorner=14 levelk(k=n)=nan hypercontr=90.5 peres=256 | level-k worst ratio=0.309@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.697
+sys=2 x=23 n=9 Q=16 N=14 M=0 symtop=0 rms=3.742 |M|/rms=0.000 frac_ge=1.0000 frac_gt=0.7188 maxabs(T!=0)=14@lev1 betti=4
+  bounds on |M|: trivial=14 bjorner=4 levelk(k=n)=nan hypercontr=84.7 peres=256 | level-k worst ratio=0.301@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.680
+sys=2 x=23 n=9 Q=16 N=16 M=-2 symtop=-2 rms=4.000 |M|/rms=0.500 frac_ge=0.7305 frac_gt=0.3086 maxabs(T!=0)=16@lev1 betti=6
+  bounds on |M|: trivial=16 bjorner=6 levelk(k=n)=nan hypercontr=90.5 peres=256 | level-k worst ratio=0.304@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.683
+sys=2 x=23 n=9 Q=16 N=15 M=-3 symtop=-3 rms=3.873 |M|/rms=0.775 frac_ge=0.5254 frac_gt=0.2363 maxabs(T!=0)=13@lev1 betti=5
+  bounds on |M|: trivial=15 bjorner=5 levelk(k=n)=nan hypercontr=87.6 peres=256 | level-k worst ratio=0.308@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.696
+sys=2 x=23 n=9 Q=16 N=17 M=-1 symtop=-1 rms=4.123 |M|/rms=0.243 frac_ge=1.0000 frac_gt=0.4824 maxabs(T!=0)=15@lev1 betti=3
+  bounds on |M|: trivial=17 bjorner=3 levelk(k=n)=nan hypercontr=93.3 peres=256 | level-k worst ratio=0.311@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.700
+sys=2 x=23 n=9 Q=16 N=15 M=-3 symtop=-3 rms=3.873 |M|/rms=0.775 frac_ge=0.5371 frac_gt=0.2305 maxabs(T!=0)=13@lev1 betti=7
+  bounds on |M|: trivial=15 bjorner=7 levelk(k=n)=nan hypercontr=87.6 peres=256 | level-k worst ratio=0.308@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.696
+sys=3 x=23 n=9 Q=16 N=16 M=-4 symtop=-4 rms=4.000 |M|/rms=1.000 frac_ge=0.3398 frac_gt=0.1406 maxabs(T!=0)=14@lev1 betti=6
+  bounds on |M|: trivial=16 bjorner=6 levelk(k=n)=nan hypercontr=90.5 peres=256 | level-k worst ratio=0.305@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.685
+sys=3 x=23 n=9 Q=16 N=10 M=-8 symtop=-8 rms=3.162 |M|/rms=2.530 frac_ge=0.0215 frac_gt=0.0020 maxabs(T!=0)=8@lev1 betti=8
+  bounds on |M|: trivial=10 bjorner=8 levelk(k=n)=nan hypercontr=71.6 peres=256 | level-k worst ratio=0.316@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.732
+sys=3 x=23 n=9 Q=16 N=9 M=-7 symtop=-7 rms=3.000 |M|/rms=2.333 frac_ge=0.0391 frac_gt=0.0039 maxabs(T!=0)=9@lev1 betti=7
+  bounds on |M|: trivial=9 bjorner=7 levelk(k=n)=nan hypercontr=67.9 peres=256 | level-k worst ratio=0.311@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.723
+sys=3 x=23 n=9 Q=16 N=15 M=-3 symtop=-3 rms=3.873 |M|/rms=0.775 frac_ge=0.5254 frac_gt=0.2363 maxabs(T!=0)=13@lev1 betti=5
+  bounds on |M|: trivial=15 bjorner=5 levelk(k=n)=nan hypercontr=87.6 peres=256 | level-k worst ratio=0.308@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.696
+sys=3 x=23 n=9 Q=16 N=13 M=-5 symtop=-5 rms=3.606 |M|/rms=1.387 frac_ge=0.2207 frac_gt=0.0957 maxabs(T!=0)=11@lev1 betti=7
+  bounds on |M|: trivial=13 bjorner=7 levelk(k=n)=nan hypercontr=81.6 peres=256 | level-k worst ratio=0.309@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.703
+## x=47 adversarial
+# equal-weights: full levels 0..1, 15 sets of level 2
+sys=1 x=47 n=15 Q=31 N=31 M=1 symtop=1 rms=5.568 |M|/rms=0.180 frac_ge=1.0000 frac_gt=0.6490 maxabs(T!=0)=29@lev1 betti=27
+  bounds on |M|: trivial=31 bjorner=27 levelk(k=n)=nan hypercontr=1.01e+03 peres=1.44e+04 | level-k worst ratio=0.293@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.726
+sys=2 x=47 n=15 Q=31 N=33 M=-1 symtop=-1 rms=5.745 |M|/rms=0.174 frac_ge=1.0000 frac_gt=0.6068 maxabs(T!=0)=33@lev1 betti=7
+  bounds on |M|: trivial=33 bjorner=7 levelk(k=n)=nan hypercontr=1.04e+03 peres=1.44e+04 | level-k worst ratio=0.291@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.719
+sys=2 x=47 n=15 Q=31 N=28 M=-2 symtop=-2 rms=5.292 |M|/rms=0.378 frac_ge=0.7476 frac_gt=0.3760 maxabs(T!=0)=28@lev1 betti=4
+  bounds on |M|: trivial=28 bjorner=4 levelk(k=n)=nan hypercontr=958 peres=1.44e+04 | level-k worst ratio=0.288@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.712
+sys=2 x=47 n=15 Q=31 N=27 M=1 symtop=1 rms=5.196 |M|/rms=0.192 frac_ge=1.0000 frac_gt=0.5713 maxabs(T!=0)=27@lev1 betti=7
+  bounds on |M|: trivial=27 bjorner=7 levelk(k=n)=nan hypercontr=941 peres=1.44e+04 | level-k worst ratio=0.289@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.715
+sys=2 x=47 n=15 Q=31 N=34 M=2 symtop=2 rms=5.831 |M|/rms=0.343 frac_ge=0.7570 frac_gt=0.3965 maxabs(T!=0)=34@lev1 betti=4
+  bounds on |M|: trivial=34 bjorner=4 levelk(k=n)=nan hypercontr=1.06e+03 peres=1.44e+04 | level-k worst ratio=0.291@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.719
+sys=2 x=47 n=15 Q=31 N=32 M=2 symtop=2 rms=5.657 |M|/rms=0.354 frac_ge=0.7924 frac_gt=0.4467 maxabs(T!=0)=32@lev1 betti=10
+  bounds on |M|: trivial=32 bjorner=10 levelk(k=n)=nan hypercontr=1.02e+03 peres=1.44e+04 | level-k worst ratio=0.291@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.718
+sys=3 x=47 n=15 Q=31 N=31 M=-1 symtop=-1 rms=5.568 |M|/rms=0.180 frac_ge=1.0000 frac_gt=0.6438 maxabs(T!=0)=29@lev1 betti=11
+  bounds on |M|: trivial=31 bjorner=11 levelk(k=n)=nan hypercontr=1.01e+03 peres=1.44e+04 | level-k worst ratio=0.293@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.724
+sys=3 x=47 n=15 Q=31 N=26 M=-4 symtop=-4 rms=5.099 |M|/rms=0.784 frac_ge=0.4925 frac_gt=0.2641 maxabs(T!=0)=24@lev1 betti=14
+  bounds on |M|: trivial=26 bjorner=14 levelk(k=n)=nan hypercontr=923 peres=1.44e+04 | level-k worst ratio=0.293@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.728
+sys=3 x=47 n=15 Q=31 N=14 M=-12 symtop=-12 rms=3.742 |M|/rms=3.207 frac_ge=0.0018 frac_gt=0.0001 maxabs(T!=0)=14@lev1 betti=12
+  bounds on |M|: trivial=14 bjorner=12 levelk(k=n)=3.26e+04 hypercontr=677 peres=1.44e+04 | level-k worst ratio=0.298@k=1 ratio(k=n)=0.000431 | level1 W1/(2N^2 ln(1/a))=0.744
+sys=3 x=47 n=15 Q=31 N=30 M=0 symtop=0 rms=5.477 |M|/rms=0.000 frac_ge=1.0000 frac_gt=0.8210 maxabs(T!=0)=28@lev1 betti=16
+  bounds on |M|: trivial=30 bjorner=16 levelk(k=n)=nan hypercontr=991 peres=1.44e+04 | level-k worst ratio=0.293@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.725
+sys=3 x=47 n=15 Q=31 N=27 M=-3 symtop=-3 rms=5.196 |M|/rms=0.577 frac_ge=0.6475 frac_gt=0.3691 maxabs(T!=0)=25@lev1 betti=15
+  bounds on |M|: trivial=27 bjorner=15 levelk(k=n)=nan hypercontr=941 peres=1.44e+04 | level-k worst ratio=0.293@k=1 ratio(k=n)=nan | level1 W1/(2N^2 ln(1/a))=0.727
+## x=89 adversarial
+# equal-weights: full levels 0..1, 31 sets of level 2
+sys=1 x=89 n=24 Q=56 N=56 M=8 symtop=8 rms=7.483 |M|/rms=1.069 frac_ge=0.2705 frac_gt=0.1731 maxabs(T!=0)=54@lev1 betti=52
+  bounds on |M|: trivial=56 bjorner=52 levelk(k=n)=1.65e+07 hypercontr=3.07e+04 peres=6.56e+06 | level-k worst ratio=0.286@k=1 ratio(k=n)=3.44e-06 | level1 W1/(2N^2 ln(1/a))=0.737
+sys=2 x=89 n=24 Q=56 N=55 M=-3 symtop=-3 rms=7.416 |M|/rms=0.405 frac_ge=0.6822 frac_gt=0.4345 maxabs(T!=0)=55@lev1 betti=11
+  bounds on |M|: trivial=55 bjorner=11 levelk(k=n)=1.65e+07 hypercontr=3.04e+04 peres=6.56e+06 | level-k worst ratio=0.284@k=1 ratio(k=n)=3.38e-06 | level1 W1/(2N^2 ln(1/a))=0.732
+sys=2 x=89 n=24 Q=56 N=57 M=3 symtop=3 rms=7.550 |M|/rms=0.397 frac_ge=0.7235 frac_gt=0.4873 maxabs(T!=0)=57@lev1 betti=23
+  bounds on |M|: trivial=57 bjorner=23 levelk(k=n)=1.65e+07 hypercontr=3.09e+04 peres=6.56e+06 | level-k worst ratio=0.284@k=1 ratio(k=n)=3.5e-06 | level1 W1/(2N^2 ln(1/a))=0.731
+sys=2 x=89 n=24 Q=56 N=54 M=0 symtop=0 rms=7.348 |M|/rms=0.000 frac_ge=1.0000 frac_gt=0.8543 maxabs(T!=0)=54@lev1 betti=20
+  bounds on |M|: trivial=54 bjorner=20 levelk(k=n)=1.65e+07 hypercontr=3.01e+04 peres=6.56e+06 | level-k worst ratio=0.283@k=1 ratio(k=n)=3.33e-06 | level1 W1/(2N^2 ln(1/a))=0.731
+sys=2 x=89 n=24 Q=56 N=66 M=2 symtop=2 rms=8.124 |M|/rms=0.246 frac_ge=0.7722 frac_gt=0.4438 maxabs(T!=0)=66@lev1 betti=4
+  bounds on |M|: trivial=66 bjorner=4 levelk(k=n)=1.66e+07 hypercontr=3.33e+04 peres=6.56e+06 | level-k worst ratio=0.285@k=1 ratio(k=n)=4e-06 | level1 W1/(2N^2 ln(1/a))=0.736
+sys=2 x=89 n=24 Q=56 N=61 M=-1 symtop=-1 rms=7.810 |M|/rms=0.128 frac_ge=1.0000 frac_gt=0.7168 maxabs(T!=0)=61@lev1 betti=21
+  bounds on |M|: trivial=61 bjorner=21 levelk(k=n)=1.66e+07 hypercontr=3.2e+04 peres=6.56e+06 | level-k worst ratio=0.284@k=1 ratio(k=n)=3.72e-06 | level1 W1/(2N^2 ln(1/a))=0.732
+sys=3 x=89 n=24 Q=56 N=62 M=4 symtop=4 rms=7.874 |M|/rms=0.508 frac_ge=0.5968 frac_gt=0.3951 maxabs(T!=0)=60@lev1 betti=28
+  bounds on |M|: trivial=62 bjorner=28 levelk(k=n)=1.66e+07 hypercontr=3.23e+04 peres=6.56e+06 | level-k worst ratio=0.285@k=1 ratio(k=n)=3.77e-06 | level1 W1/(2N^2 ln(1/a))=0.736
+sys=3 x=89 n=24 Q=56 N=51 M=3 symtop=3 rms=7.141 |M|/rms=0.420 frac_ge=0.7338 frac_gt=0.5012 maxabs(T!=0)=49@lev1 betti=31
+  bounds on |M|: trivial=51 bjorner=31 levelk(k=n)=1.64e+07 hypercontr=2.93e+04 peres=6.56e+06 | level-k worst ratio=0.286@k=1 ratio(k=n)=3.16e-06 | level1 W1/(2N^2 ln(1/a))=0.738
+sys=3 x=89 n=24 Q=56 N=30 M=-18 symtop=-18 rms=5.477 |M|/rms=3.286 frac_ge=0.0035 frac_gt=0.0012 maxabs(T!=0)=28@lev1 betti=20
+  bounds on |M|: trivial=30 bjorner=20 levelk(k=n)=1.58e+07 hypercontr=2.24e+04 peres=6.56e+06 | level-k worst ratio=0.289@k=1 ratio(k=n)=2.01e-06 | level1 W1/(2N^2 ln(1/a))=0.747
+sys=3 x=89 n=24 Q=56 N=54 M=-4 symtop=-4 rms=7.348 |M|/rms=0.544 frac_ge=0.6064 frac_gt=0.3986 maxabs(T!=0)=52@lev1 betti=26
+  bounds on |M|: trivial=54 bjorner=26 levelk(k=n)=1.65e+07 hypercontr=3.01e+04 peres=6.56e+06 | level-k worst ratio=0.284@k=1 ratio(k=n)=3.33e-06 | level1 W1/(2N^2 ln(1/a))=0.732
+sys=3 x=89 n=24 Q=56 N=44 M=6 symtop=6 rms=6.633 |M|/rms=0.905 frac_ge=0.3519 frac_gt=0.2130 maxabs(T!=0)=44@lev1 betti=26
+  bounds on |M|: trivial=44 bjorner=26 levelk(k=n)=1.63e+07 hypercontr=2.72e+04 peres=6.56e+06 | level-k worst ratio=0.283@k=1 ratio(k=n)=2.78e-06 | level1 W1/(2N^2 ln(1/a))=0.730

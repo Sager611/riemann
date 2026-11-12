@@ -1,0 +1,18 @@
+HAMMING sys=1 X=10000000 n_sys=664579 n_primes=664579 max_i|log q_i-log p_i|=0.4055 (p_i>1000: 0.0010) |D_p|=6079291 |D_q|=4717065 |D_p minus D_q|=1362226 |D_q minus D_p|=0 rel=2.241e-01
+            12763136  maximum resident set size
+HAMMING sys=2 X=10000000 n_sys=664915 n_primes=664579 max_i|log q_i-log p_i|=0.0788 (p_i>1000: 0.0517) |D_p|=6079291 |D_q|=6238040 |D_p minus D_q|=10626 |D_q minus D_p|=169375 rel=2.961e-02
+            12763136  maximum resident set size
+HAMMING sys=3 X=10000000 n_sys=665555 n_primes=664579 max_i|log q_i-log p_i|=0.4165 (p_i>1000: 0.0694) |D_p|=6079291 |D_q|=5254094 |D_p minus D_q|=1059909 |D_q minus D_p|=234712 rel=2.130e-01
+            12763136  maximum resident set size
+HAMMING sys=4 X=10000000 n_sys=689546 n_primes=664579 max_i|log q_i-log p_i|=0.3806 (p_i>1000: 0.0895) |D_p|=6079291 |D_q|=7595795 |D_p minus D_q|=198435 |D_q minus D_p|=1714939 rel=3.147e-01
+            13369344  maximum resident set size
+HAMMING sys=5 X=10000000 n_sys=839564 n_primes=664579 max_i|log q_i-log p_i|=0.2500 (p_i>1000: 0.2500) |D_p|=6079291 |D_q|=12935228 |D_p minus D_q|=0 |D_q minus D_p|=6855937 rel=1.128e+00
+            14336000  maximum resident set size
+HAMMING sys=6 X=10000000 n_sys=669144 n_primes=664579 max_i|log q_i-log p_i|=0.2924 (p_i>1000: 0.0647) |D_p|=6079291 |D_q|=5893240 |D_p minus D_q|=252676 |D_q minus D_p|=66625 rel=5.252e-02
+            12795904  maximum resident set size
+HAMMING sys=6 X=100000000 n_sys=5738311 n_primes=5761455 max_i|log q_i-log p_i|=0.2924 (p_i>1000: 0.0647) |D_p|=60792694 |D_q|=58932219 |D_p minus D_q|=2558592 |D_q minus D_p|=698117 rel=5.357e-02
+            99778560  maximum resident set size
+HAMMING sys=2 X=100000000 n_sys=5762206 n_primes=5761455 max_i|log q_i-log p_i|=0.0788 (p_i>1000: 0.0517) |D_p|=60792694 |D_q|=62380495 |D_p minus D_q|=118379 |D_q minus D_p|=1706180 rel=3.001e-02
+            99991552  maximum resident set size
+HAMMING sys=1 X=100000000 n_sys=5761455 n_primes=5761455 max_i|log q_i-log p_i|=0.4055 (p_i>1000: 0.0010) |D_p|=60792694 |D_q|=47168388 |D_p minus D_q|=13624306 |D_q minus D_p|=0 rel=2.241e-01
+            99991552  maximum resident set size

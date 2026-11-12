@@ -1,0 +1,38 @@
+$ ./scale 0 1e6 7 0 0 1 2000 0.5
+SAMPLE sys=0 X=1000000 n=78498 N=607926 alpha=0.500 K=2000 M=212 E|F|=508.97 rms=760.80 sqrtN=779.70 frac(|F|>=|M|)=0.6910 median=4 q05=-1036 q95=1128 min=-4690 max=5592
+       11.45 real        11.07 user         0.10 sys
+             2211840  maximum resident set size
+
+$ ./scale 6 1e6 7 0.8 10 1 2000 0.5
+SAMPLE sys=6 X=1000000 n=78623 N=589075 alpha=0.500 K=2000 M=171 E|F|=504.20 rms=756.37 sqrtN=767.51 frac(|F|>=|M|)=0.7410 median=-1 q05=-1041 q95=1083 min=-5213 max=9693
+       11.24 real        10.87 user         0.09 sys
+             2211840  maximum resident set size
+
+$ ./scale 0 1e7 7 0 0 1 200 0.5
+SAMPLE sys=0 X=10000000 n=664579 N=6079291 alpha=0.500 K=200 M=1037 E|F|=1601.50 rms=2078.03 sqrtN=2465.62 frac(|F|>=|M|)=0.5950 median=-345 q05=-3401 q95=3281 min=-7777 max=5817
+       11.44 real        11.08 user         0.09 sys
+             7471104  maximum resident set size
+
+$ ./scale 6 1e7 7 0.8 10 1 200 0.5
+SAMPLE sys=6 X=10000000 n=669144 N=5893240 alpha=0.500 K=200 M=-6772 E|F|=1633.51 rms=2344.96 sqrtN=2427.60 frac(|F|>=|M|)=0.0250 median=-28 q05=-3678 q95=4074 min=-5616 max=10388
+       10.55 real        10.08 user         0.09 sys
+             7503872  maximum resident set size
+
+$ ./scale 0 1e6 8 0 0 1 400 0.75
+SAMPLE sys=0 X=1000000 n=78498 N=607926 alpha=0.750 K=400 M=212 E|F|=8286.45 rms=12384.96 sqrtN=779.70 frac(|F|>=|M|)=1.0000 median=-4834 q05=-26510 q95=-1942 min=-72840 max=-1082
+        2.24 real         2.14 user         0.02 sys
+             2195456  maximum resident set size
+
+$ ./scale 0 1e6 9 0 0 1 400 0.9
+SAMPLE sys=0 X=1000000 n=78498 N=607926 alpha=0.900 K=400 M=212 E|F|=1999.90 rms=2534.17 sqrtN=779.70 frac(|F|>=|M|)=1.0000 median=-1468 q05=-5184 q95=-750 min=-12182 max=-450
+        2.28 real         2.19 user         0.02 sys
+             2195456  maximum resident set size
+
+$ ./scale 6 1e6 8 0.8 10 1 400 0.75
+SAMPLE sys=6 X=1000000 n=78623 N=589075 alpha=0.750 K=400 M=171 E|F|=7737.01 rms=10764.48 sqrtN=767.51 frac(|F|>=|M|)=1.0000 median=-4901 q05=-22871 q95=-1923 min=-50191 max=-855
+$ ./scale 6 1e6 9 0.8 10 1 400 0.9
+SAMPLE sys=6 X=1000000 n=78623 N=589075 alpha=0.900 K=400 M=171 E|F|=2348.28 rms=4499.46 sqrtN=767.51 frac(|F|>=|M|)=1.0000 median=-1449 q05=-6699 q95=-867 min=-65015 max=-337
+$ ./scale 2 1e6 8 0 0 1 400 0.75
+SAMPLE sys=2 X=1000000 n=78624 N=623800 alpha=0.750 K=400 M=74 E|F|=7090.94 rms=9824.17 sqrtN=789.81 frac(|F|>=|M|)=1.0000 median=-4722 q05=-21314 q95=-2012 min=-52362 max=-1112
+$ ./scale 2 1e6 9 0 0 1 400 0.9
+SAMPLE sys=2 X=1000000 n=78624 N=623800 alpha=0.900 K=400 M=74 E|F|=1977.79 rms=2673.77 sqrtN=789.81 frac(|F|>=|M|)=1.0000 median=-1416 q05=-5238 q95=-812 min=-15992 max=-456

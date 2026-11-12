@@ -1,0 +1,12 @@
+primes           max|M|/sqrt(x) on [1e4,1e8]=0.458  growth exponent (half-decade maxima, last 2 decades)=0.546 (all 4 decades 0.485)
+   same fit for primes: amp=0.00022
+p+1              max|M|/sqrt(x) on [1e4,1e8]=0.198  growth exponent (half-decade maxima, last 2 decades)=0.575 (all 4 decades 0.443)
+smooth           max|M|/sqrt(x) on [1e4,1e8]=0.248  growth exponent (half-decade maxima, last 2 decades)=0.306 (all 4 decades 0.316)
+Poisson          max|M|/sqrt(x) on [1e4,1e8]=1.765  growth exponent (half-decade maxima, last 2 decades)=0.564 (all 4 decades 0.600)
+iid eps=.5       max|M|/sqrt(x) on [1e4,1e8]=1.341  growth exponent (half-decade maxima, last 2 decades)=0.719 (all 4 decades 0.568)
+shift e^-.25     max|M|/sqrt(x) on [1e4,1e8]=3.640  growth exponent (half-decade maxima, last 2 decades)=0.819 (all 4 decades 0.777)
+planted .8+10i   max|M|/sqrt(x) on [1e4,1e8]=5.043  growth exponent (half-decade maxima, last 2 decades)=0.818 (all 4 decades 0.783)
+   fit M/x^0.8 = a cos(10 log x) + b sin(10 log x): amp=0.0201 phase=-1.456 R^2=0.9877
+   best (beta,gamma) by R^2 over grid: beta=0.79 gamma=10.00 R^2=0.9878
+   window [1.0e+05,3.2e+06]: amp=0.0200
+   window [3.2e+06,1.0e+08]: amp=0.0201
