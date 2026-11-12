@@ -1,0 +1,10 @@
+(eq:Gamma) lower: exp(-1/(2y0^2))/q, y0=2        max = 0.933125 at (1.0, 2.0)
+(eq:Gamma) upper: q/exp(1/(2y0^2)), y0=2         max = 0.933128 at (-1.0, 2.0)
+(eq:chiBound) lower U-(2)/c                      max = 0.929650 at (-1.0, 2.0)
+(eq:chiBound) upper c/U+(2)                      max = 0.933125 at (1.0, 2.0)
+Lemma 5.10 |Res|/(12 sqrt(T) e^{-pi T/2} log T)  max = 0.602900 at (5.0, 5.0)
+|(z-1)chi(z)| <= 6.31, |y| <= 2pi                max = 0.998898 at (0.5, 6.283185307179586)
+|chi| <= 0.4|y|^{1/2-x}+16, x in [-1/2,0]        max = 0.993382 at (0.0, 100000000.0)
+|chi| <= 1.1, |y| >= 2pi                         max = 0.909091 at (0.5, 1000.0)
+|chi| <= 6.31/(1-x), x in [1/2,1)                max = 0.309381 at (0.99, 0.0)
+memcap: peak 15 MB rc=0

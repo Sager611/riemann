@@ -1,0 +1,22 @@
+GL  6 nodes/0.5: M2(3000) = 703127.6333   M2(3000,6000) = 1249636.0019   [37 s]
+GL 10 nodes/0.5: M2(3000) = 703127.6333   M2(3000,6000) = 1249636.0016   [103 s]
+claims: 7.031e5 < M2(3000) < 7.032e5 -> True ; 1.249e6 < M2(3000,6000) < 1.25e6 -> True
+      107.35 real        90.92 user         1.88 sys
+            45187072  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                9299  page reclaims
+                1362  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  22  messages received
+                   1  signals received
+                 325  voluntary context switches
+              176548  involuntary context switches
+           455052327  instructions retired
+           220314917  cycles elapsed
+            22741520  peak memory footprint
+memcap: peak 22 MB rc=0

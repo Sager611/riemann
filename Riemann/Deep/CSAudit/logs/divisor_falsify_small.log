@@ -1,0 +1,12 @@
+N = 20000
+L5.2a sum_{n<=x} d/n^s               max LHS/RHS = 0.994423  at (10000.0, 0, 0, 10080.0)
+L5.2b sum_{n>x} d/n^s                max LHS/RHS = 1.160750  at (5, 4, 4, 'x->m-', 6.0)   <-- COUNTEREXAMPLE
+L5.3a                                max LHS/RHS = 0.735161  at (100, 1, 120.0)
+L5.3b                                max LHS/RHS = 0.904495  at (100, 0, 103.0)
+L5.4 |D0(x)|/(9.73x^{3/4}log x)      max LHS/RHS = 0.190022  at ('x=m', 2.0)
+L5.5a sum_{n<=x} d^2/n^s             max LHS/RHS = 0.944969  at (10000.0, 0, 10080.0)
+L5.5b sum_{n>x} d^2/n^s              max LHS/RHS = 1.000000  at (10000.0, 1.001, 'x=m', 10000.0)
+L5.6 d^2/n sum                       max LHS/RHS = 0.702476  at (10000.0, 'x=m', 10080.0)
+L5.7                                 max LHS/RHS = 0.435281  at (100, -1, 103.0)
+L5.8                                 max LHS/RHS = 0.401190  at (100, 2, 100.0)
+memcap: peak 18 MB rc=0

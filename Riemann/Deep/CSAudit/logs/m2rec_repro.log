@@ -1,0 +1,12 @@
+C1(3000) = 20.722460 (printed 20.7225); conditions ok: True; J1=5.4494 J3..J6=[0.3874, 1.1417, 0.0634, 4.7548] J0=0.00465
+n=4   M2(10^n,2 10^n) <= 9.98569e+08 (printed 9.9857e8)  M2(10^n) <= 3.80948e+08 (printed 3.8095e8)  frak M2 >= 1.37952e+09 (printed 1.3796e9)  OK
+n=5   M2(10^n,2 10^n) <= 1.92750e+10 (printed 1.9276e10)  M2(10^n) <= 8.77470e+09 (printed 8.7748e9)  frak M2 >= 2.80497e+10 (printed 2.8051e10)  OK
+n=6   M2(10^n,2 10^n) <= 2.80337e+11 (printed 2.8034e11)  M2(10^n) <= 1.36877e+11 (printed 1.3688e11)  frak M2 >= 4.17215e+11 (printed 4.1722e11)  OK
+n=7   M2(10^n,2 10^n) <= 3.96912e+12 (printed 3.9692e12)  M2(10^n) <= 1.84775e+12 (printed 1.8478e12)  frak M2 >= 5.81687e+12 (printed 5.8170e12)  OK
+n=8   M2(10^n,2 10^n) <= 5.47900e+13 (printed 5.4791e13)  M2(10^n) <= 2.50016e+13 (printed 2.5002e13)  frak M2 >= 7.97916e+13 (printed 7.9793e13)  OK
+n=9   M2(10^n,2 10^n) <= 7.29647e+14 (printed 7.2965e14)  M2(10^n) <= 3.33169e+14 (printed 3.3317e14)  frak M2 >= 1.06282e+15 (printed 1.0629e15)  OK
+n=10  M2(10^n,2 10^n) <= 9.50787e+15 (printed 9.5079e15)  M2(10^n) <= 4.38829e+15 (printed 4.3883e15)  frak M2 >= 1.38962e+16 (printed 1.3897e16)  OK
+n=15  M2(10^n,2 10^n) <= 3.01533e+21 (printed 3.0154e21)  M2(10^n) <= 1.41735e+21 (printed 1.4174e21)  frak M2 >= 4.43269e+21 (printed 4.4328e21)  OK
+n=20  M2(10^n,2 10^n) <= 6.54414e+26 (printed 6.5442e26)  M2(10^n) <= 3.12329e+26 (printed 3.1233e26)  frak M2 >= 9.66743e+26 (printed 9.6675e26)  OK
+a2(10^11.36) pieces: main 0.04550, M1 term 1.22890, M2 term 0.08866
+memcap: peak 0 MB rc=0

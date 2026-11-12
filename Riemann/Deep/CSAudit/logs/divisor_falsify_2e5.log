@@ -1,0 +1,30 @@
+N = 200000
+L5.2a sum_{n<=x} d/n^s               max LHS/RHS = 0.998224  at (100000.0, 0, 0, 100800.0)
+L5.2b sum_{n>x} d/n^s                max LHS/RHS = 1.160750  at (5, 4, 4, 'x->m-', 6.0)   <-- COUNTEREXAMPLE
+L5.3a                                max LHS/RHS = 0.768717  at (1000, 1, 1225.2220704978486)
+L5.3b                                max LHS/RHS = 0.947130  at (1000, 0, 1001.790465708609)
+L5.4 |D0(x)|/(9.73x^{3/4}log x)      max LHS/RHS = 0.190022  at ('x=m', 2.0)
+L5.5a sum_{n<=x} d^2/n^s             max LHS/RHS = 0.976744  at (100000.0, 0, 100000.0)
+L5.5b sum_{n>x} d^2/n^s              max LHS/RHS = 1.000000  at (100000.0, 1.001, 'x=m', 100000.0)
+L5.6 d^2/n sum                       max LHS/RHS = 0.814435  at (100000.0, 'x=m', 100000.0)
+L5.7                                 max LHS/RHS = 0.661218  at (1000, -1, 1001.790465708609)
+L5.8                                 max LHS/RHS = 0.517146  at (1000, 2, 1009.8907882190022)
+       44.19 real        33.81 user         0.81 sys
+            90554368  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8683  page reclaims
+                 233  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 325  voluntary context switches
+              101014  involuntary context switches
+           425759773  instructions retired
+           189560983  cycles elapsed
+            21070328  peak memory footprint
+memcap: peak 73 MB rc=0
