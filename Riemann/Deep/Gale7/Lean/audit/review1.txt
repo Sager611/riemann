@@ -1,0 +1,8 @@
+FAITHFUL
+
+- **Blocking: none.** `sqd` and `eucl` are squared Euclidean distance and Euclidean distance, not the function-space sup metric. `diam` is the actual finite maximum; its empty-set value creates no loophole. `sigma` matches both closed forms exactly.
+- **Partition fidelity:** ambient colourings represent every partition of the finite set. Allowing empty classes weakens `GaleSplit`, so its negation is at least as strong as excluding exactly `n+1` nonempty parts.
+- **Family fidelity:** `famPt` has the correct signs, coefficients and orthogonal blocks. `U3_simplex`/`U4_simplex` express the required unit-simplex Gram matrices. All sixteen parameters match the supplied exact decimals. Injectivity and cardinality statements establish 69 and 85 distinct points.
+- **Graph fidelity:** `Adj` matches §3 in both endpoint orders. `adjD` represents precisely the 17 canonical edge classes, with symmetric duplicates and irrelevant-index repetitions. The colouring lemma supplies the required 8- and 9-colour obstructions.
+- **Conclusion fidelity:** `not_galeSplit_X7` and `not_galeSplit_X8` are unconditional statements about the explicit real-coordinate sets. The exact-diameter statements and strict squared-threshold inequalities use their genuine diameters.
+- **Minor scope caveat:** standalone `β_k`, threshold-graph definitions and exact optimality of the quoted `β/D` values are not separately established here. The formal long-pair bounds suffice for both claimed counterexamples.

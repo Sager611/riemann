@@ -1,0 +1,62 @@
+12:03 ProbeSqrt rc=0 42s memcap: peak 222 MB rc=0
+12:17 Lemma rc=1 50s memcap: peak 262 MB rc=1
+12:19 Lemma rc=1 19s memcap: peak 249 MB rc=1
+12:19 Lemma rc=0 18s memcap: peak 233 MB rc=0
+12:25 Defs rc=1 63s memcap: peak 274 MB rc=1
+12:27 Defs rc=0 89s memcap: peak 277 MB rc=0
+12:31 Family rc=0 99s memcap: peak 239 MB rc=0
+12:33 Simplex rc=137 51s memcap: peak 297 MB KILLED MEM>290MB rc=137
+12:36 Simplex3 rc=0 81s memcap: peak 272 MB rc=0
+12:37 Simplex4 rc=137 53s memcap: peak 291 MB KILLED MEM>290MB rc=137
+12:41 Simplex4 rc=0 11s memcap: peak 273 MB rc=0
+12:43 Classes rc=1 22s memcap: peak 242 MB rc=1
+12:44 Classes rc=0 21s memcap: peak 274 MB rc=0
+12:46 N7 rc=0 21s memcap: peak 276 MB rc=0
+12:47 N8 rc=0 56s memcap: peak 251 MB rc=0
+12:48 Check rc=0 44s memcap: peak 243 MB rc=0
+12:49 Card rc=1 20s memcap: peak 219 MB rc=1
+12:50 Card rc=1 8s memcap: peak 280 MB rc=1
+12:51 Card rc=0 8s memcap: peak 279 MB rc=0
+12:51 CLEAN REBUILD
+12:52 Lemma rc=0 17s memcap: peak 252 MB rc=0
+12:52 Defs rc=0 8s memcap: peak 277 MB rc=0
+12:52 Family rc=0 8s memcap: peak 276 MB rc=0
+12:52 Simplex3 rc=0 8s memcap: peak 278 MB rc=0
+12:52 Simplex4 rc=0 9s memcap: peak 276 MB rc=0
+12:52 Classes rc=0 9s memcap: peak 274 MB rc=0
+12:53 N7 rc=0 51s memcap: peak 278 MB rc=0
+12:53 N8 rc=0 15s memcap: peak 179 MB rc=0
+12:54 Card rc=0 8s memcap: peak 277 MB rc=0
+12:54 Check rc=0 8s memcap: peak 0 MB rc=0
+12:55 Main rc=0 8s memcap: peak 275 MB rc=0
+12:55 Check rc=0 8s memcap: peak 0 MB rc=0
+12:56 ProbePiL2 rc=0 16s memcap: peak 239 MB rc=0
+12:57 Bridge rc=137 6s memcap: peak 310 MB KILLED MEM>290MB rc=137
+12:58 Bridge rc=137 7s memcap: peak 311 MB KILLED MEM>290MB rc=137
+12:58 CLEAN REBUILD
+12:58 Lemma rc=0 17s memcap: peak 245 MB rc=0
+12:58 Defs rc=0 8s memcap: peak 275 MB rc=0
+12:59 Family rc=0 8s memcap: peak 279 MB rc=0
+12:59 Simplex3 rc=0 8s memcap: peak 280 MB rc=0
+12:59 Simplex4 rc=0 8s memcap: peak 0 MB rc=0
+12:59 Classes rc=0 9s memcap: peak 283 MB rc=0
+12:59 N7 rc=0 8s memcap: peak 277 MB rc=0
+12:59 N8 rc=0 8s memcap: peak 281 MB rc=0
+12:59 Main rc=0 8s memcap: peak 277 MB rc=0
+13:00 Check rc=0 8s memcap: peak 0 MB rc=0
+13:06 CLEAN REBUILD
+13:06 Lemma rc=0 16s memcap: peak 252 MB rc=0
+13:06 Desc rc=0 8s memcap: peak 244 MB rc=0
+13:06 Fam rc=1 8s memcap: peak 0 MB rc=1
+13:07 Fam rc=1 8s memcap: peak 242 MB rc=1
+13:07 Fam rc=0 8s memcap: peak 243 MB rc=0
+13:08 Defs rc=0 8s memcap: peak 277 MB rc=0
+13:08 Crit rc=0 8s memcap: peak 276 MB rc=0
+13:08 Simplex3 rc=0 8s memcap: peak 0 MB rc=0
+13:08 Simplex4 rc=0 8s memcap: peak 0 MB rc=0
+13:08 Q7 rc=0 8s memcap: peak 0 MB rc=0
+13:08 Q8 rc=0 8s memcap: peak 0 MB rc=0
+13:08 N7 rc=0 8s memcap: peak 275 MB rc=0
+13:08 N8 rc=0 8s memcap: peak 275 MB rc=0
+13:09 Main rc=0 8s memcap: peak 276 MB rc=0
+13:09 Check rc=0 8s memcap: peak 0 MB rc=0

@@ -14,4 +14,6 @@
 
 **Novelty.** No Gale counterexample in R⁷ or R⁸ in any source checked (arXiv incl. all versions of 2610.28828 and the Oct–Nov 2026 lists, Zenodo, openai/math, GitHub, our own notes), 4 Nov 2026 ([novelty report](../Riemann/Deep/Gale7/NOVELTY.md)). Not new: existence for every n ≥ 9.
 
+**Lean (12 Nov 2026).** Formalized (galelean): Lean 4 + Mathlib proves that the family members V₇ (69 points, R³ ⊕ R⁴) and V₈ (85 points, R⁴ ⊕ R⁴) with the exact parameters admit no partition into n + 1 parts of diameter ≤ σₙ·D (β₈(V₇) > 0.9433983·D, β₉(V₈) > 0.949947·D) and the colouring lemma of NOTE §3 for all p, q; no hypotheses beyond the cited σₙ ≥ β_{n+1}(Bⁿ), sorry-free, standard axioms, no native_decide; the 84-point R⁷ set itself is not covered. [LEAN.md](../Riemann/Deep/Gale7/LEAN.md)
+
 **Files.** [report](../Riemann/Deep/Gale7/REPORT.md), [note with the proof](../Riemann/Deep/Gale7/NOTE.md), [R⁷ points](../Riemann/Deep/Gale7/points7.txt), [R⁸ points](../Riemann/Deep/Gale7/points8.txt), [family parameters](../Riemann/Deep/Gale7/family_params.txt)

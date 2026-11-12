@@ -1,0 +1,795 @@
+VERDICT-ONLY STATEMENT-FIDELITY REVIEW. Do not run any commands or tools; everything you need is below. Reply with FAITHFUL or ISSUES, then a short list (blocking / minor) with reasons.
+
+Task: a Lean 4 + Mathlib formalization claims "Gale's conjecture fails in R^7 and R^8": explicit finite sets X7 ⊂ R^7 (69 points) and X8 ⊂ R^8 (85 points), members V_7, V_8 of an explicit family, admit no partition into n+1 parts each of diameter ≤ σ_n · diam X. Gale (1953) conjectured that every set of diameter D in R^n splits into n + 1 parts of diameter ≤ σ_n·D (σ_n = the value for the ball, given by the regular-simplex partition). Judge whether the Lean DEFINITIONS and THEOREM STATEMENTS faithfully express (1) the NOTE's definitions (§1), the family (§2), the colouring lemma (§3), and (2) the claim ¬Gale(7, X7), ¬Gale(8, X8) over ℝ. Check in particular: Euclidean distance and diameter (no junk values that make the claim easier), σ_n's closed form, the partition notion (empty parts allowed: is ¬GaleSplit at least as strong as "no partition into exactly n+1 non-empty parts"?), the edge list of H(p,q) vs NOTE §3, the family points vs NOTE §2 (P_i = r_A u_i, Q_j = r_B v_j, A_ij = a u_i − b v_j, B_ij = −c u_i + d v_j, C_ij = e u_i + f v_j in R^{m1} ⊕ R^{m2}, u, v regular simplices of unit vectors), the parameters vs family_params.txt, the descriptor tables (adjD vs the 17 classes), and whether the main theorems are stated about the explicit sets (not about hypotheses). Proof correctness is machine-checked; only statement fidelity is in scope.
+
+===== NOTE.md §1–§3 (verbatim) =====
+## 1. Definitions
+For finite V ⊂ Rⁿ with diameter D, β_k(V) is the least possible largest part diameter over partitions of V into k parts. G(≥s) joins the pairs at squared distance ≥ s. If G(≥s) has no proper (n+1)-colouring, every partition into n+1 parts has a part with two points at distance ≥ √s, so β_{n+1}(V) ≥ √s. If dc² is the largest squared distance with G(≥dc²) not (n+1)-colourable, a proper (n+1)-colouring of G(>dc²) is a partition with parts of diameter ≤ dc, so β_{n+1}(V) = dc. The regular-simplex partition of the ball gives β_{n+1}(Bⁿ) ≤ σₙ with σₙ² = (n+1)/(n+2) (n even) and σₙ² = 1/2 + ½√((n−1)/(n+3)) (n odd): σ₇ = 0.9419651451, σ₈ = 0.9486832981. Any V with β_{n+1}(V)/D(V) > σₙ is a counterexample.
+
+## 2. The family
+Rⁿ = R^{m₁} ⊕ R^{m₂}, m₁ = ⌊n/2⌋, m₂ = ⌈n/2⌉; u₀…u_{m₁} and v₀…v_{m₂} are unit vectors of regular simplices (uᵢ·u_k = −1/m₁, v_j·v_l = −1/m₂ for different indices). With 8 parameters p = (r_A, r_B, a, b, c, d, e, f):
+
+  Pᵢ = r_A uᵢ (poles of the first simplex), Q_j = r_B v_j (poles of the second), A_ij = a uᵢ − b v_j (near Pᵢ, pushed away from Q_j), B_ij = −c uᵢ + d v_j (near Q_j, pushed away from Pᵢ), C_ij = e uᵢ + f v_j (between Pᵢ and Q_j),
+
+i = 0…m₁, j = 0…m₂: (m₁+1) + (m₂+1) + 3(m₁+1)(m₂+1) points (n = 7: 69, n = 8: 85). The five points Pᵢ, A_ij, C_ij, Q_j, B_ij of one cell lie in the plane of uᵢ and v_j, roughly on one circular arc. A squared distance depends only on the two orbits and on which indices agree, so all distances are 36 explicit quadratic forms in p ("classes"); for rational p they are exact rationals. At the optimum the poles are at distance D within each simplex (r_A, r_B = circumradii of unit-edge simplices), the binding short edges are P_i B_ij, Q_j A_ij, A_ij C_kl and B_ij C_kl (i ≠ k, j ≠ l), and the pairs at distance D are P–P, Q–Q, A_ij B_ij, A_ij C_kj (i ≠ k) and, depending on n, A_ij A_kl (i ≠ k, j ≠ l) or B_ij C_il (j ≠ l).
+
+  | n | split | points | β_{n+1}/D (this family, exact check) | σₙ | excess |
+  |---|---|---|---|---|---|
+  | 5 | 2+3 | 43 | 0.9246685234 | 0.9238795325 | +7.89e-04 |
+  | 6 | 3+3 | 56 | 0.9368472505 | 0.9354143466 | +1.43e-03 |
+  | 7 | 3+4 | 69 | 0.9433983553 | 0.9419651451 | +1.43e-03 |
+  | 8 | 4+4 | 85 | 0.9499470859 | 0.9486832980 | +1.26e-03 |
+  | 9 | 4+5 | 101 | 0.9542066051 | 0.9530206138 | +1.19e-03 |
+  | 10 | 5+5 | 120 | 0.9585019831 | 0.9574271077 | +1.07e-03 |
+  | 11 | 5+6 | 139 | 0.9614803843 | 0.9605087856 | +9.72e-04 |
+  | 12 | 6+6 | 161 | 0.9645018124 | 0.9636241116 | +8.78e-04 |
+  | 16 | 8+8 | 261 | 0.9724289336 | 0.9718253158 | +6.04e-04 |
+  | 20 | 10+10 | 385 | 0.9774452783 | 0.9770084209 | +4.37e-04 |
+  | 32 | 16+16 | 901 | 0.9853861827 | 0.9851843661 | +2.02e-04 |
+  | 63 | 31+32 | 3233 | 0.9923378425 | 0.9922760123 | +6.18e-05 |
+  | 64 | 32+32 | 3333 | 0.9924551619 | 0.9923953268 | +5.98e-05 |
+  | 100 | 50+50 | 7905 | 0.9951120711 | 0.9950859653 | +2.61e-05 |
+  | 1000 | 500+500 | 754005 | 0.9995011632 | 0.9995008734 | +2.90e-07 |
+
+The excess decays like ≈ 0.29/n² and stays positive at every n checked (min 2.9·10⁻⁷ at n = 1000). Parameters: family_params.txt (12 decimals, read as exact rationals).
+
+## 3. The colouring lemma (no computer needed)
+Let p, q ≥ 1, rows i ∈ I (|I| = p), columns j ∈ J (|J| = q). H(p, q) is the graph on Pᵢ, Q_j, A_ij, B_ij, C_ij with edges
+- PᵢP_k, A_ijA_kl, P_kA_ij, P_kC_ij, A_ijC_kl whenever i ≠ k;
+- Q_jQ_l, B_ijB_kl, Q_lB_ij, Q_lC_ij, B_ijC_kl whenever j ≠ l;
+- C_ijC_kl whenever i ≠ k and j ≠ l;
+- PᵢB_ij and Q_jA_ij for all i, j.
+
+**Lemma.** H(p, q) has no proper colouring with p + q − 1 colours.
+
+*Proof.* Suppose it has one. Let Xᵢ = {Pᵢ} ∪ {A_ij : j} (row blocks), Y_j = {Q_j} ∪ {B_ij : i} (column blocks).
+(a) Two different row blocks are completely joined, and so are two different column blocks; so a colour class meets at most one row block and at most one column block.
+(b) C_ij is adjacent to all of X_k (k ≠ i) and all of Y_l (l ≠ j); so the C-vertices of a class meeting Xᵢ lie in row i, those of a class meeting Y_j lie in column j.
+(c) The C-vertices of a class lie in one row or one column (two C's in different rows and columns are adjacent; if a class held C_ij, C_il with j ≠ l and some C_km with k ≠ i, then m = j and m = l).
+Call a class X(i) if it meets Xᵢ but no column block, Y(j) if it meets Y_j but no row block, XY(i,j) if it meets Xᵢ and Y_j (its only possible C-vertex is then C_ij), L if it meets no block (its C-vertices lie in a line). Let R₀ be the rows without an X(i) class, C₀ the columns without a Y(j) class, r₀ = |R₀|, c₀ = |C₀|, and z, ℓ the numbers of XY and L classes. There are at least p − r₀ X-classes and q − c₀ Y-classes, so
+  z + ℓ ≤ r₀ + c₀ − 1.  (1)
+For i ∈ R₀ every vertex of Xᵢ lies in an XY(i,·) class, so each row of R₀ and likewise each column of C₀ contains an XY class; hence z ≥ max(r₀, c₀), and (1) forces r₀, c₀ ≥ 1. For i ∈ R₀, j ∈ C₀ the vertex C_ij lies in the class XY(i,j) or in an L class, by (b). Let ℓ₁ L-classes lie in rows and ℓ₂ in columns. If ℓ₁ ≥ r₀ then z + ℓ ≥ c₀ + r₀, against (1); so ℓ₁ < r₀ and likewise ℓ₂ < c₀. At least (r₀ − ℓ₁)(c₀ − ℓ₂) cells of R₀ × C₀ meet no L class, each needs its own XY class, and
+  z + ℓ ≥ (r₀ − ℓ₁)(c₀ − ℓ₂) + ℓ₁ + ℓ₂ ≥ r₀ + c₀ − 1  (xy ≥ x + y − 1 for x, y ≥ 1).
+So everything is tight: all XY classes sit on the cells of R₀ × C₀ that no L class meets, one per cell. A row of R₀ met by an L class would have no XY class, so ℓ₁ = 0, likewise ℓ₂ = 0; then z = r₀c₀ = r₀ + c₀ − 1, i.e. (r₀ − 1)(c₀ − 1) = 0, with exactly one XY class S_ij for each cell of R₀ × C₀ and no other.
+If r₀ = 1, R₀ = {i*}: for j ∈ C₀ the only class meeting Y_j is S_{i*j}, so B_{i*j} ∈ S_{i*j}; but P_{i*} lies in some S_{i*j} as well, and P_{i*}B_{i*j} is an edge. If c₀ = 1, C₀ = {j*}: symmetrically Q_{j*} and A_{ij*} share a class S_{ij*}, and Q_{j*}A_{ij*} is an edge. Contradiction. ∎
+
+**Theorem.** Take p = m₁ + 1 rows and q = m₂ + 1 columns, so p + q − 1 = n + 1. If all pairs of Vₙ in the 17 classes of H (AA, BB, AC, BC split by whether the other index agrees) have squared distance ≥ t, then H ⊆ G(≥t) has no proper (n+1)-colouring and β_{n+1}(Vₙ)/D(Vₙ) ≥ √(t/D²). family.py checks t/D² > σₙ² exactly for every n = 5…1000. The class A_ijB_ij is not used (it sits at distance D anyway).
+Checks of the lemma itself: family.py --lemma (exhaustive search, standard library) for (p, q) up to (4, 5); CaDiCaL for the 17-class graph up to (5, 7) (n = 10), and for the full 18-class graph up to (6, 7) (n = 11).
+
+
+===== Inputs =====
+family_params.txt (header: n m1 m2 rA rB a b c d e f; decimals = exact rationals):
+7 3 4 0.612372435696 0.632455532034 0.606069108095 0.090511059877 0.105433773038 0.612172119187 0.381914257728 0.486126417449
+8 4 4 0.632455532034 0.632455532034 0.627253113456 0.080953886008 0.096579073850 0.609022174896 0.404230564733 0.481355888451
+family.py EDGES (17 classes; (orbit, orbit, first-index relation, second-index relation), 'n' = differ, 'e' = equal, '-' = absent):
+('P','P','n','-'), ('Q','Q','-','n'), ('P','A','n','-'), ('Q','B','-','n'), ('A','A','n','e'), ('A','A','n','n'),
+('B','B','e','n'), ('B','B','n','n'), ('P','C','n','-'), ('A','C','n','e'), ('A','C','n','n'), ('Q','C','-','n'),
+('B','C','e','n'), ('B','C','n','n'), ('C','C','n','n'), ('P','B','e','-'), ('Q','A','-','e')
+verify.py: above_ball(r, d): d even: r > (d+1)/(d+2); d odd: t = 2r − 1, t > 0 and t² > (d−1)/(d+3)  (r = (β/D)²).
+Exact values found by family.py (Python Fractions) and re-derived: n = 7: t = 356000182722431308912917/400000000000000000000000 (min over the 17 edge classes, class AC(n,n)), D² = 100000000000102500044289/100000000000000000000000 (max over the 36 classes, QQ), t/D² = 0.890000456805, √ = 0.9433983553 > σ₇ = 0.9419651451. n = 8: t = 90239946609080831680751/100000000000000000000000, D² = same, √(t/D²) = 0.9499470859 > σ₈ = 0.9486832981.
+Float cross-check: the explicit coordinates U3/U4 (c_ik √ρ_k) times the parameters reproduce points7_sym69.txt / points8.txt (the discovery's files, coordinates rounded to 1e-8) to 4.8e-9 per coordinate, sorted squared-distance multisets to 2.4e-8.
+Build: every module compiled with lean -j1 under a 290 MB watchdog; #print axioms of not_galeSplit_X7, not_galeSplit_X8, X7_long, X8_long, diam_X7, diam_X8, card_X7, card_X8, sigma7_lt, ratio7_gt, sigma8_lt, ratio8_gt, Vx.lemma_H, Vx.card_le, Vx.not_colourable, not_galeSplit_of_H, sqd_famPt, galeSplit_iff, U3_simplex, U4_simplex: [propext, Classical.choice, Quot.sound]. No sorry/admit/axiom/native_decide; numeric class checks by decide +kernel (kernel evaluation of rational arithmetic), σ comparisons by norm_num.
+
+===== Defs.lean (proofs elided as `:= by …`) =====
+import Mathlib.Analysis.Real.Sqrt
+
+/-!
+# Gale7: definitions (NOTE §1)
+
+Points of ℝⁿ are coordinate vectors `Fin n → ℝ` with the Euclidean distance
+`eucl x y = √(Σₖ (x k - y k)²)` (Mathlib's `dist` on `Fin n → ℝ` is the sup distance, so it is not used).
+`diam X` is the largest distance in the finite set `X`; `sigma n` is σₙ of NOTE §1; `GaleSplit n X` says that
+`X` splits into `n + 1` parts (colour classes, possibly empty) of diameter ≤ σₙ · diam X.
+-/
+
+namespace Gale7
+
+/-- Squared Euclidean distance in ℝⁿ. -/
+noncomputable def sqd {n : ℕ} (x y : Fin n → ℝ) : ℝ := ∑ k, (x k - y k) ^ 2
+
+/-- Euclidean distance in ℝⁿ. -/
+noncomputable def eucl {n : ℕ} (x y : Fin n → ℝ) : ℝ := Real.sqrt (sqd x y)
+
+/-- Diameter of a finite set: its largest distance (0 for the empty set). -/
+noncomputable def diam {n : ℕ} (X : Finset (Fin n → ℝ)) : ℝ :=
+  if h : X.Nonempty then (X ×ˢ X).sup' (h.product h) (fun z => eucl z.1 z.2) else 0
+
+/-- σₙ (NOTE §1; verify.py `above_ball`): the part diameter of the regular-simplex partition of a ball of
+diameter 1, σₙ² = (n+1)/(n+2) for even n and σₙ² = 1/2 + √((n−1)/(n+3))/2 for odd n. -/
+noncomputable def sigma (n : ℕ) : ℝ :=
+  if n % 2 = 0 then Real.sqrt (((n : ℝ) + 1) / ((n : ℝ) + 2))
+  else Real.sqrt (1 / 2 + Real.sqrt (((n : ℝ) - 1) / ((n : ℝ) + 3)) / 2)
+
+/-- Gale's property for a finite `X ⊂ ℝⁿ`: a partition into `n + 1` parts (the classes of `c`, empty parts
+allowed) such that every part has diameter at most σₙ · diam X. -/
+def GaleSplit (n : ℕ) (X : Finset (Fin n → ℝ)) : Prop :=
+  ∃ c : (Fin n → ℝ) → Fin (n + 1), ∀ k, diam (X.filter fun x => c x = k) ≤ sigma n * diam X
+
+theorem sqd_nonneg {n : ℕ} (x y : Fin n → ℝ) : 0 ≤ sqd x y :=
+  Finset.sum_nonneg fun k _ => sq_nonneg (x k - y k)
+
+theorem eucl_nonneg {n : ℕ} (x y : Fin n → ℝ) : 0 ≤ eucl x y := Real.sqrt_nonneg _
+
+theorem le_diam {n : ℕ} {X : Finset (Fin n → ℝ)} {x y : Fin n → ℝ} (hx : x ∈ X) (hy : y ∈ X) :
+    eucl x y ≤ diam X := by …
+
+theorem diam_le {n : ℕ} {X : Finset (Fin n → ℝ)} {M : ℝ} (hM : 0 ≤ M)
+    (h : ∀ x ∈ X, ∀ y ∈ X, eucl x y ≤ M) : diam X ≤ M := by …
+
+theorem diam_nonneg {n : ℕ} (X : Finset (Fin n → ℝ)) : 0 ≤ diam X := by …
+
+/-- The diameter is attained. -/
+theorem exists_eq_diam {n : ℕ} {X : Finset (Fin n → ℝ)} (hX : X.Nonempty) :
+    ∃ x ∈ X, ∃ y ∈ X, eucl x y = diam X := by …
+
+theorem sigma_nonneg (n : ℕ) : 0 ≤ sigma n := by …
+
+/-- `GaleSplit` in pair form: same-colour points are at distance ≤ σₙ · diam X. -/
+theorem galeSplit_iff (n : ℕ) (X : Finset (Fin n → ℝ)) :
+    GaleSplit n X ↔ ∃ c : (Fin n → ℝ) → Fin (n + 1),
+      ∀ x ∈ X, ∀ y ∈ X, c x = c y → eucl x y ≤ sigma n * diam X := by …
+
+theorem sigma_odd_sq {n : ℕ} (hn : n % 2 = 1) (h1 : 1 ≤ n) :
+    sigma n ^ 2 = 1 / 2 + Real.sqrt (((n : ℝ) - 1) / ((n : ℝ) + 3)) / 2 := by …
+
+theorem sigma_even_sq {n : ℕ} (hn : n % 2 = 0) :
+    sigma n ^ 2 = ((n : ℝ) + 1) / ((n : ℝ) + 2) := by …
+
+end Gale7
+
+===== Lemma.lean (proofs elided as `:= by …`) =====
+import Mathlib.Combinatorics.Enumerative.DoubleCounting
+import Mathlib.Data.Fintype.Prod
+import Mathlib.Data.Fintype.Sigma
+import Mathlib.Data.Fintype.Sum
+import Mathlib.Tactic.DeriveFintype
+import Mathlib.Tactic.Linarith
+
+/-!
+# Gale7: the colouring lemma (NOTE §3)
+
+`H(p, q)`: vertices `P i`, `Q j`, `A i j`, `B i j`, `C i j` (`i : Fin p` rows, `j : Fin q` columns), edges as
+in NOTE §3. `Vx.card_le`: every proper colouring of `H(p, q)` uses at least `p + q` colours; hence
+`Vx.lemma_H`: no proper colouring with `p + q - 1` colours. The proof follows NOTE §3 (classes `X(i)`,
+`Y(j)`, `XY(i,j)`, `L`; `R₀`, `C₀`; the line cover of the `L` classes; the final `r₀ = 1` / `c₀ = 1` cases).
+-/
+
+namespace Gale7
+
+/-- Vertices of `H(p, q)` (NOTE §3). -/
+inductive Vx (p q : ℕ) : Type where
+  | P : Fin p → Vx p q
+  | Q : Fin q → Vx p q
+  | A : Fin p → Fin q → Vx p q
+  | B : Fin p → Fin q → Vx p q
+  | C : Fin p → Fin q → Vx p q
+  deriving DecidableEq, Fintype
+
+namespace Vx
+
+variable {p q : ℕ}
+
+/-- Edges of `H(p, q)` (NOTE §3), for both orders of the end points:
+`PᵢP_k, A_ijA_kl, P_kA_ij, P_kC_ij, A_ijC_kl` (i ≠ k); `Q_jQ_l, B_ijB_kl, Q_lB_ij, Q_lC_ij, B_ijC_kl` (j ≠ l);
+`C_ijC_kl` (i ≠ k and j ≠ l); `PᵢB_ij`, `Q_jA_ij` (all i, j). -/
+def Adj : Vx p q → Vx p q → Prop
+  | P i, P k => i ≠ k
+  | P _, Q _ => False
+  | P k, A i _ => k ≠ i
+  | P k, B i _ => k = i
+  | P k, C i _ => k ≠ i
+  | Q _, P _ => False
+  | Q j, Q l => j ≠ l
+  | Q l, A _ j => l = j
+  | Q l, B _ j => l ≠ j
+  | Q l, C _ j => l ≠ j
+  | A i _, P k => k ≠ i
+  | A _ j, Q l => l = j
+  | A i _, A k _ => i ≠ k
+  | A _ _, B _ _ => False
+  | A i _, C k _ => i ≠ k
+  | B i _, P k => k = i
+  | B _ j, Q l => l ≠ j
+  | B _ _, A _ _ => False
+  | B _ j, B _ l => j ≠ l
+  | B _ j, C _ l => j ≠ l
+  | C i _, P k => k ≠ i
+  | C _ j, Q l => l ≠ j
+  | C k _, A i _ => i ≠ k
+  | C _ l, B _ j => j ≠ l
+  | C i j, C k l => i ≠ k ∧ j ≠ l
+
+theorem adj_symm {x y : Vx p q} (h : Adj x y) : Adj y x := by …
+
+theorem adj_irrefl (x : Vx p q) : ¬ Adj x x := by …
+
+section Defs
+
+variable {K : Type*} (col : Vx p q → K)
+
+/-- The colour `κ` meets the row block `X_i = {P_i} ∪ {A_ij : j}`. -/
+def InX (κ : K) (i : Fin p) : Prop := col (P i) = κ ∨ ∃ j, col (A i j) = κ
+
+/-- The colour `κ` meets the column block `Y_j = {Q_j} ∪ {B_ij : i}`. -/
+def InY (κ : K) (j : Fin q) : Prop := col (Q j) = κ ∨ ∃ i, col (B i j) = κ
+
+/-- All `C`-vertices of colour `κ` lie in one row. -/
+def RowT (κ : K) : Prop := ∀ i j i' j', col (C i j) = κ → col (C i' j') = κ → i = i'
+
+variable [Fintype K]
+open Classical
+
+/-- classes `X(i)`: meet a row block, no column block -/
+noncomputable def Kx : Finset K := Finset.univ.filter fun κ => (∃ i, InX col κ i) ∧ ¬ ∃ j, InY col κ j
+/-- classes `Y(j)` -/
+noncomputable def Ky : Finset K := Finset.univ.filter fun κ => (¬ ∃ i, InX col κ i) ∧ ∃ j, InY col κ j
+/-- classes `XY(i,j)` -/
+noncomputable def Kxy : Finset K := Finset.univ.filter fun κ => (∃ i, InX col κ i) ∧ ∃ j, InY col κ j
+/-- classes `L` (no block; also the unused colours) -/
+noncomputable def Kl : Finset K := Finset.univ.filter fun κ => (¬ ∃ i, InX col κ i) ∧ ¬ ∃ j, InY col κ j
+/-- `R₀`: rows without an `X(i)` class -/
+noncomputable def R0 : Finset (Fin p) := Finset.univ.filter fun i => ∀ κ ∈ Kx col, ¬ InX col κ i
+/-- `C₀`: columns without a `Y(j)` class -/
+noncomputable def C0 : Finset (Fin q) := Finset.univ.filter fun j => ∀ κ ∈ Ky col, ¬ InY col κ j
+/-- the row of an `L` class whose `C`-vertices lie in one row -/
+noncomputable def rowsL (κ : K) : Finset (Fin p) :=
+  if RowT col κ then Finset.univ.filter fun i => ∃ j, col (C i j) = κ else ∅
+/-- the column of any other `L` class -/
+noncomputable def colsL (κ : K) : Finset (Fin q) :=
+  if RowT col κ then ∅ else Finset.univ.filter fun j => ∃ i, col (C i j) = κ
+/-- rows met by row-type `L` classes -/
+noncomputable def R1 : Finset (Fin p) := (Kl col).biUnion (rowsL col)
+/-- columns met by column-type `L` classes -/
+noncomputable def C1 : Finset (Fin q) := (Kl col).biUnion (colsL col)
+
+theorem card_split :
+    (Kx col).card + (Ky col).card + (Kxy col).card + (Kl col).card ≤ Fintype.card K := by …
+
+theorem mem_Kxy_of_R0 {i : Fin p} (hi : i ∈ R0 col) {κ : K} (h : InX col κ i) : κ ∈ Kxy col := by …
+
+theorem mem_Kxy_of_C0 {j : Fin q} (hj : j ∈ C0 col) {κ : K} (h : InY col κ j) : κ ∈ Kxy col := by …
+
+theorem cover {i : Fin p} {j : Fin q} (h : col (C i j) ∈ Kl col) : i ∈ R1 col ∨ j ∈ C1 col := by …
+
+end Defs
+
+theorem nat_aux {a b z : ℕ} (h2a : 2 ≤ a) (h2b : 2 ≤ b) (hS : a * b ≤ z) (hz : z + 1 ≤ a + b) :
+    False := by …
+
+section Proof
+
+variable {K : Type*} {col : Vx p q → K} (hcol : ∀ x y, Adj x y → col x ≠ col y)
+include hcol
+
+/-- (a) a colour class meets at most one row block. -/
+theorem inX_unique {κ : K} {i k : Fin p} (hi : InX col κ i) (hk : InX col κ k) : i = k := by …
+
+/-- (a) a colour class meets at most one column block. -/
+theorem inY_unique {κ : K} {j l : Fin q} (hj : InY col κ j) (hl : InY col κ l) : j = l := by …
+
+/-- (b) `C_ij` is adjacent to all of `X_k`, `k ≠ i`. -/
+theorem inX_of_C {κ : K} {i k : Fin p} {j : Fin q} (hc : col (C i j) = κ) (hk : InX col κ k) :
+    k = i := by …
+
+/-- (b) `C_ij` is adjacent to all of `Y_l`, `l ≠ j`. -/
+theorem inY_of_C {κ : K} {i : Fin p} {j l : Fin q} (hc : col (C i j) = κ) (hl : InY col κ l) :
+    l = j := by …
+
+/-- (c) the `C`-vertices of a class lie in one row or in one column. -/
+theorem C_line (κ : K) :
+    RowT col κ ∨ ∀ i j i' j', col (C i j) = κ → col (C i' j') = κ → j = j' := by …
+
+variable [Fintype K]
+
+theorem p_le : p ≤ (Kx col).card + (R0 col).card := by …
+
+theorem q_le : q ≤ (Ky col).card + (C0 col).card := by …
+
+theorem R0_le : (R0 col).card ≤ (Kxy col).card := by …
+
+theorem C0_le : (C0 col).card ≤ (Kxy col).card := by …
+
+/-- For `i ∈ R₀`, `j ∈ C₀` the vertex `C_ij` lies in an `XY` class or an `L` class (NOTE, by (b)). -/
+theorem cell {i : Fin p} {j : Fin q} (hi : i ∈ R0 col) (hj : j ∈ C0 col) :
+    col (C i j) ∈ Kxy col ∨ col (C i j) ∈ Kl col := by …
+
+theorem R1C1_le : (R1 col).card + (C1 col).card ≤ (Kl col).card := by …
+
+theorem mem_S_Kxy {i : Fin p} {j : Fin q} (hi : i ∈ R0 col \ R1 col) (hj : j ∈ C0 col \ C1 col) :
+    col (C i j) ∈ Kxy col := by …
+
+/-- The cells of `(R₀ \ R₁) × (C₀ \ C₁)` need distinct `XY` classes. -/
+theorem S_le : ((R0 col \ R1 col) ×ˢ (C0 col \ C1 col)).card ≤ (Kxy col).card := by …
+
+/-- Case `|R₀ \ R₁| = 1` (NOTE: `r₀ = 1`): `P_{i*}` and `B_{i*j}` would share a class. -/
+theorem case_a (h1 : (R0 col \ R1 col).card = 1)
+    (hz : (Kxy col).card ≤ (C0 col \ C1 col).card) : False := by …
+
+/-- Case `|C₀ \ C₁| = 1` (NOTE: `c₀ = 1`): `Q_{j*}` and `A_{ij*}` would share a class. -/
+theorem case_b (h1 : (C0 col \ C1 col).card = 1)
+    (hz : (Kxy col).card ≤ (R0 col \ R1 col).card) : False := by …
+
+/-- **Colouring lemma** (NOTE §3): a proper colouring of `H(p, q)` uses at least `p + q` colours. -/
+theorem card_le : p + q ≤ Fintype.card K := by …
+
+end Proof
+
+/-- NOTE §3 Lemma, any colour set: fewer than `p + q` colours force a monochromatic edge. -/
+theorem not_colourable {K : Type*} [Fintype K] (hK : Fintype.card K < p + q) (col : Vx p q → K) :
+    ∃ x y, Adj x y ∧ col x = col y := by …
+
+/-- **NOTE §3 Lemma**: `H(p, q)` has no proper colouring with `p + q - 1` colours. -/
+theorem lemma_H (hpq : 1 ≤ p + q) (col : Vx p q → Fin (p + q - 1)) :
+    ∃ x y, Adj x y ∧ col x = col y :=
+  not_colourable (by rw [Fintype.card_fin]; omega) col
+
+end Vx
+
+end Gale7
+
+===== Family.lean (proofs elided as `:= by …`) =====
+import Riemann.Deep.Gale7.Lean.Lemma
+import Riemann.Deep.Gale7.Lean.Defs
+import Mathlib.Algebra.BigOperators.Fin
+
+/-!
+# Gale7: the family Vₙ (NOTE §2) and the reduction to the colouring lemma (NOTE §3, Theorem)
+
+`famPt U W rA rB a b c d e f`: the points `P_i = r_A u_i`, `Q_j = r_B v_j`, `A_ij = a u_i − b v_j`,
+`B_ij = −c u_i + d v_j`, `C_ij = e u_i + f v_j` of ℝ^{m₁} ⊕ ℝ^{m₂} (`Fin.append`), where `U`, `W` list the unit
+vertex vectors of regular simplices (`IsUnitSimplex`). `sqd_famPt`: every squared distance is the class
+formula. `not_galeSplit_of_H`: if all edges of `H(p, q)` have squared length ≥ t, all squared distances are
+≤ D², and σₙ²·D² < t, then the set is a counterexample to Gale's conjecture.
+-/
+
+namespace Gale7
+
+open Vx
+
+/-- `U i` (i = 0…m) are unit vectors with ⟨u_i, u_k⟩ = −1/m for i ≠ k: the vertices of a regular simplex
+centred at 0 with circumradius 1 (NOTE §2). -/
+def IsUnitSimplex {m : ℕ} (U : Fin (m + 1) → Fin m → ℝ) : Prop :=
+  ∀ i k, ∑ t, U i t * U k t = if i = k then 1 else -1 / (m : ℝ)
+
+variable {m₁ m₂ : ℕ}
+
+section
+variable (U : Fin (m₁ + 1) → Fin m₁ → ℝ) (W : Fin (m₂ + 1) → Fin m₂ → ℝ) (rA rB a b c d e f : ℝ)
+
+/-- The family Vₙ (NOTE §2), ℝⁿ = ℝ^{m₁} ⊕ ℝ^{m₂}. -/
+noncomputable def famPt : Vx (m₁ + 1) (m₂ + 1) → Fin (m₁ + m₂) → ℝ
+  | P i => Fin.append (rA • U i) 0
+  | Q j => Fin.append 0 (rB • W j)
+  | A i j => Fin.append (a • U i) ((-b) • W j)
+  | B i j => Fin.append ((-c) • U i) (d • W j)
+  | C i j => Fin.append (e • U i) (f • W j)
+
+end
+
+/-- coefficient of the first-block vector -/
+def cf1 (rA a c e : ℝ) : Vx (m₁ + 1) (m₂ + 1) → ℝ
+  | P _ => rA
+  | Q _ => 0
+  | A _ _ => a
+  | B _ _ => -c
+  | C _ _ => e
+
+/-- coefficient of the second-block vector -/
+def cf2 (rB b d f : ℝ) : Vx (m₁ + 1) (m₂ + 1) → ℝ
+  | P _ => 0
+  | Q _ => rB
+  | A _ _ => -b
+  | B _ _ => d
+  | C _ _ => f
+
+/-- first index (0 for `Q j`, whose first-block coefficient is 0) -/
+def ix1 : Vx (m₁ + 1) (m₂ + 1) → Fin (m₁ + 1)
+  | P i => i
+  | Q _ => 0
+  | A i _ => i
+  | B i _ => i
+  | C i _ => i
+
+/-- second index (0 for `P i`) -/
+def ix2 : Vx (m₁ + 1) (m₂ + 1) → Fin (m₂ + 1)
+  | P _ => 0
+  | Q j => j
+  | A _ j => j
+  | B _ j => j
+  | C _ j => j
+
+theorem famPt_eq (U : Fin (m₁ + 1) → Fin m₁ → ℝ) (W : Fin (m₂ + 1) → Fin m₂ → ℝ)
+    (rA rB a b c d e f : ℝ) (v : Vx (m₁ + 1) (m₂ + 1)) :
+    famPt U W rA rB a b c d e f v =
+      Fin.append (cf1 rA a c e v • U (ix1 v)) (cf2 rB b d f v • W (ix2 v)) := by …
+
+theorem sqd_append {k l : ℕ} (x x' : Fin k → ℝ) (y y' : Fin l → ℝ) :
+    sqd (Fin.append x y) (Fin.append x' y') = sqd x x' + sqd y y' := by …
+
+theorem sqd_smul {m : ℕ} (α α' : ℝ) (u u' : Fin m → ℝ) :
+    sqd (α • u) (α' • u') = α ^ 2 * (∑ t, u t * u t) + α' ^ 2 * (∑ t, u' t * u' t)
+      - 2 * α * α' * (∑ t, u t * u' t) := by …
+
+/-- Squared distances of Vₙ: the class formula (NOTE §2, family.py `class_d2`). -/
+theorem sqd_famPt {U : Fin (m₁ + 1) → Fin m₁ → ℝ} {W : Fin (m₂ + 1) → Fin m₂ → ℝ}
+    (hU : IsUnitSimplex U) (hW : IsUnitSimplex W) (rA rB a b c d e f : ℝ)
+    (v w : Vx (m₁ + 1) (m₂ + 1)) :
+    sqd (famPt U W rA rB a b c d e f v) (famPt U W rA rB a b c d e f w) =
+      cf1 rA a c e v ^ 2 + cf1 rA a c e w ^ 2
+        - 2 * cf1 rA a c e v * cf1 rA a c e w * (if ix1 v = ix1 w then 1 else -1 / (m₁ : ℝ))
+      + (cf2 rB b d f v ^ 2 + cf2 rB b d f w ^ 2
+        - 2 * cf2 rB b d f v * cf2 rB b d f w * (if ix2 v = ix2 w then 1 else -1 / (m₂ : ℝ))) := by …
+
+/-- Every partition of the point set into `n + 1` parts has a part with two points at squared distance
+≥ t (NOTE §3, Theorem; uses `Vx.not_colourable`). -/
+theorem long_pair {n p q : ℕ} (hpq : n + 2 ≤ p + q) (pt : Vx p q → Fin n → ℝ) {t : ℝ}
+    (hH : ∀ v w, Vx.Adj v w → t ≤ sqd (pt v) (pt w)) (c : (Fin n → ℝ) → Fin (n + 1)) :
+    ∃ x ∈ Finset.univ.image pt, ∃ y ∈ Finset.univ.image pt, c x = c y ∧ t ≤ sqd x y := by …
+
+theorem diam_image_le {n p q : ℕ} (pt : Vx p q → Fin n → ℝ) {D2 : ℝ}
+    (hD : ∀ v w, sqd (pt v) (pt w) ≤ D2) : diam (Finset.univ.image pt) ≤ Real.sqrt D2 := by …
+
+/-- **Reduction** (NOTE §3, Theorem): the colouring lemma plus three metric facts refute Gale's property. -/
+theorem not_galeSplit_of_H {n p q : ℕ} (hpq : n + 2 ≤ p + q) (pt : Vx p q → Fin n → ℝ)
+    {t D2 : ℝ} (hD0 : 0 ≤ D2) (hD : ∀ v w, sqd (pt v) (pt w) ≤ D2)
+    (hH : ∀ v w, Vx.Adj v w → t ≤ sqd (pt v) (pt w)) (hσ : sigma n ^ 2 * D2 < t) :
+    ¬ GaleSplit n (Finset.univ.image pt) := by …
+
+end Gale7
+
+===== Simplex3.lean (proofs elided as `:= by …`) =====
+import Riemann.Deep.Gale7.Lean.Family
+import Mathlib.Tactic.FinCases
+
+/-!
+# Gale7: explicit regular simplices of unit vectors in ℝ³ and ℝ⁴
+
+Coordinates `u_i(k) = c_ik √ρ_k` (k = 1…m): `c_ik = 1` (i < k), `−k` (i = k), `0` (i > k), `ρ_k = (m+1)/(m k (k+1))`:
+the standard unit-edge simplex (vertex 0 = (1/√(2·1·2), 1/√(2·2·3), …), the coordinates of points8.txt)
+scaled to circumradius 1. `U3_simplex`, `U4_simplex`: Gram matrix ⟨u_i, u_k⟩ = 1 (i = k), −1/m (i ≠ k).
+-/
+
+namespace Gale7
+
+theorem gram_aux {m p : ℕ} (cM : Fin p → Fin m → ℝ) (ρ : Fin m → ℝ) (hρ : ∀ t, 0 ≤ ρ t) (i k : Fin p) :
+    ∑ t, (cM i t * Real.sqrt (ρ t)) * (cM k t * Real.sqrt (ρ t)) = ∑ t, cM i t * cM k t * ρ t := by …
+
+/-- integer coefficients for m = 3 -/
+def cM3 : Fin 4 → Fin 3 → ℝ := ![![1, 1, 1], ![-1, 1, 1], ![0, -2, 1], ![0, 0, -3]]
+/-- ρ_k = 4/(3k(k+1)) -/
+noncomputable def ρ3 : Fin 3 → ℝ := ![2 / 3, 2 / 9, 1 / 9]
+/-- unit vertex vectors of a regular tetrahedron in ℝ³ -/
+noncomputable def U3 : Fin 4 → Fin 3 → ℝ := fun i t => cM3 i t * Real.sqrt (ρ3 t)
+
+theorem U3_simplex : IsUnitSimplex U3 := by …
+
+end Gale7
+
+===== Simplex4.lean (proofs elided as `:= by …`) =====
+import Riemann.Deep.Gale7.Lean.Family
+
+/-!
+# Gale7: the regular 4-simplex of unit vectors in ℝ⁴
+
+`u_i(k) = c_ik √ρ_k` with `c_ik = 1` (i < k), `−k` (i = k), `0` (i > k) and `ρ_k = 5/(4k(k+1)) = w_k/48`
+(k = 1…4), as in Simplex3 and points8.txt. The Gram identity is checked on the integers `c_ik`, `w_k` by
+kernel evaluation (`decide +kernel`).
+-/
+
+namespace Gale7
+
+/-- integer coefficients c_ik for m = 4 -/
+def c4 : Fin 5 → Fin 4 → ℤ :=
+  ![![1, 1, 1, 1], ![-1, 1, 1, 1], ![0, -2, 1, 1], ![0, 0, -3, 1], ![0, 0, 0, -4]]
+/-- w_k = 48 ρ_k -/
+def w4 : Fin 4 → ℤ := ![30, 10, 5, 3]
+/-- unit vertex vectors of a regular 4-simplex in ℝ⁴ -/
+noncomputable def U4 : Fin 5 → Fin 4 → ℝ := fun i t => (c4 i t : ℝ) * Real.sqrt ((w4 t : ℝ) / 48)
+
+theorem gram4Z : ∀ i k : Fin 5, ∑ t, c4 i t * c4 k t * w4 t = if i = k then 48 else -12 := by …
+
+theorem w4_nonneg : ∀ t : Fin 4, 0 ≤ w4 t := by …
+
+theorem U4_simplex : IsUnitSimplex U4 := by …
+
+end Gale7
+
+===== Classes.lean (proofs elided as `:= by …`) =====
+import Riemann.Deep.Gale7.Lean.Family
+
+/-!
+# Gale7: distance classes of Vₙ (NOTE §2) and the edge classes of H (NOTE §3) in descriptor form
+
+A squared distance of Vₙ depends only on the two orbits and on which indices agree (NOTE §2): `sqd_famPt_cls`
+writes it as `clsQ` of the descriptor `(orb v, orb w, [ix1 v = ix1 w], [ix2 v = ix2 w])`, a rational number
+for rational parameters. `adj_adjD`: every edge of `H` has a descriptor with `adjD = true` (the 17 classes).
+So the metric hypotheses of `not_galeSplit_of_H` reduce to finitely many rational inequalities.
+-/
+
+namespace Gale7
+
+open Vx
+
+/-- the five orbits of Vₙ -/
+inductive Orb : Type where
+  | P | Q | A | B | C
+  deriving DecidableEq
+
+instance : Fintype Orb := Fintype.ofList [.P, .Q, .A, .B, .C] (by intro x; cases x <;> simp)
+
+/-- orbit of a vertex -/
+def orb {p q : ℕ} : Vx p q → Orb
+  | P _ => .P
+  | Q _ => .Q
+  | A _ _ => .A
+  | B _ _ => .B
+  | C _ _ => .C
+
+/-- first-block coefficient of an orbit: (r_A, 0, a, −c, e) -/
+def k1Q (rA a c e : ℚ) : Orb → ℚ
+  | .P => rA
+  | .Q => 0
+  | .A => a
+  | .B => -c
+  | .C => e
+
+/-- second-block coefficient of an orbit: (0, r_B, −b, d, f) -/
+def k2Q (rB b d f : ℚ) : Orb → ℚ
+  | .P => 0
+  | .Q => rB
+  | .A => -b
+  | .B => d
+  | .C => f
+
+/-- class value: squared distance between points of orbits `o`, `o'` whose first indices agree iff `e₁`
+and second indices agree iff `e₂` (NOTE §2; family.py `class_d2`) -/
+def clsQ (m₁ m₂ : ℕ) (rA rB a b c d e f : ℚ) (o o' : Orb) (e₁ e₂ : Bool) : ℚ :=
+  (k1Q rA a c e o ^ 2 + k1Q rA a c e o' ^ 2
+      - 2 * k1Q rA a c e o * k1Q rA a c e o' * (if e₁ then 1 else -1 / (m₁ : ℚ)))
+    + (k2Q rB b d f o ^ 2 + k2Q rB b d f o' ^ 2
+      - 2 * k2Q rB b d f o * k2Q rB b d f o' * (if e₂ then 1 else -1 / (m₂ : ℚ)))
+
+/-- the 17 edge classes of `H` (NOTE §3; family.py `EDGES`), descriptor form -/
+def adjD : Orb → Orb → Bool → Bool → Bool
+  | .P, .P, e, _ => !e
+  | .P, .A, e, _ => !e
+  | .P, .B, e, _ => e
+  | .P, .C, e, _ => !e
+  | .Q, .Q, _, e => !e
+  | .Q, .A, _, e => e
+  | .Q, .B, _, e => !e
+  | .Q, .C, _, e => !e
+  | .A, .P, e, _ => !e
+  | .A, .Q, _, e => e
+  | .A, .A, e, _ => !e
+  | .A, .C, e, _ => !e
+  | .B, .P, e, _ => e
+  | .B, .Q, _, e => !e
+  | .B, .B, _, e => !e
+  | .B, .C, _, e => !e
+  | .C, .P, e, _ => !e
+  | .C, .Q, _, e => !e
+  | .C, .A, e, _ => !e
+  | .C, .B, _, e => !e
+  | .C, .C, e, e' => !e && !e'
+  | _, _, _, _ => false
+
+variable {m₁ m₂ : ℕ}
+
+theorem adj_adjD {v w : Vx (m₁ + 1) (m₂ + 1)} (h : Adj v w) :
+    adjD (orb v) (orb w) (decide (ix1 v = ix1 w)) (decide (ix2 v = ix2 w)) = true := by …
+
+theorem cf1_cast (rA a c e : ℚ) (v : Vx (m₁ + 1) (m₂ + 1)) :
+    cf1 (rA : ℝ) (a : ℝ) (c : ℝ) (e : ℝ) v = (k1Q rA a c e (orb v) : ℝ) := by …
+
+theorem cf2_cast (rB b d f : ℚ) (v : Vx (m₁ + 1) (m₂ + 1)) :
+    cf2 (rB : ℝ) (b : ℝ) (d : ℝ) (f : ℝ) v = (k2Q rB b d f (orb v) : ℝ) := by …
+
+theorem ite_cast (P : Prop) [Decidable P] (m : ℕ) :
+    (if P then (1 : ℝ) else -1 / (m : ℝ)) = ((if decide P then (1 : ℚ) else -1 / (m : ℚ) : ℚ) : ℝ) := by …
+
+/-- Squared distances of Vₙ with rational parameters are the rational class values. -/
+theorem sqd_famPt_cls {U : Fin (m₁ + 1) → Fin m₁ → ℝ} {W : Fin (m₂ + 1) → Fin m₂ → ℝ}
+    (hU : IsUnitSimplex U) (hW : IsUnitSimplex W) (rA rB a b c d e f : ℚ)
+    (v w : Vx (m₁ + 1) (m₂ + 1)) :
+    sqd (famPt U W rA rB a b c d e f v) (famPt U W rA rB a b c d e f w) =
+      (clsQ m₁ m₂ rA rB a b c d e f (orb v) (orb w) (decide (ix1 v = ix1 w))
+        (decide (ix2 v = ix2 w)) : ℝ) := by …
+
+end Gale7
+
+===== N7.lean (proofs elided as `:= by …`) =====
+import Riemann.Deep.Gale7.Lean.Classes
+import Riemann.Deep.Gale7.Lean.Simplex3
+import Riemann.Deep.Gale7.Lean.Simplex4
+
+/-!
+# Gale7: Gale's conjecture fails in ℝ⁷
+
+The member V7 of the family (NOTE §2), ℝ³ ⊕ ℝ⁴, parameters of family_params.txt row n = 7
+(decimals as exact rationals), 69 points. Squared distances: rational class values `clsQ`, checked
+by kernel evaluation (`decide +kernel`): all ≤ D², all edge classes of `H(4, 5)` ≥ t, and σ7² D² < t.
+-/
+
+namespace Gale7
+
+open Vx
+
+def rA7 : ℚ := 612372435696 / 1000000000000
+def rB7 : ℚ := 632455532034 / 1000000000000
+def a7 : ℚ := 606069108095 / 1000000000000
+def b7 : ℚ := 90511059877 / 1000000000000
+def c7 : ℚ := 105433773038 / 1000000000000
+def d7 : ℚ := 612172119187 / 1000000000000
+def e7 : ℚ := 381914257728 / 1000000000000
+def f7 : ℚ := 486126417449 / 1000000000000
+/-- the smallest edge class (`A_ij C_kl`, i ≠ k, j ≠ l) -/
+def t7 : ℚ := 356000182722431308912917 / 400000000000000000000000
+/-- the largest class: D² -/
+def D7 : ℚ := 100000000000102500044289 / 100000000000000000000000
+
+/-- V7 ⊂ ℝ⁷ -/
+noncomputable def pt7 : Vx 4 5 → Fin 7 → ℝ := famPt U3 U4 rA7 rB7 a7 b7 c7 d7 e7 f7
+/-- the point set V7 -/
+noncomputable def X7 : Finset (Fin 7 → ℝ) := Finset.univ.image pt7
+
+theorem cls7_le : ∀ o o' : Orb, ∀ e₁ e₂ : Bool,
+    clsQ 3 4 rA7 rB7 a7 b7 c7 d7 e7 f7 o o' e₁ e₂ ≤ D7 := by …
+
+theorem cls7_ge : ∀ o o' : Orb, ∀ e₁ e₂ : Bool, adjD o o' e₁ e₂ = true →
+    t7 ≤ clsQ 3 4 rA7 rB7 a7 b7 c7 d7 e7 f7 o o' e₁ e₂ := by …
+
+theorem sqd7 (v w : Vx 4 5) : sqd (pt7 v) (pt7 w) =
+    (clsQ 3 4 rA7 rB7 a7 b7 c7 d7 e7 f7 (orb v) (orb w) (decide (ix1 v = ix1 w))
+      (decide (ix2 v = ix2 w)) : ℝ) :=
+  sqd_famPt_cls (m₁ := 3) (m₂ := 4) U3_simplex U4_simplex _ _ _ _ _ _ _ _ v w
+
+theorem hD7 (v w : Vx 4 5) : sqd (pt7 v) (pt7 w) ≤ (D7 : ℝ) := by …
+
+theorem hH7 (v w : Vx 4 5) (h : Adj v w) : (t7 : ℝ) ≤ sqd (pt7 v) (pt7 w) := by …
+
+theorem hσ7 : sigma 7 ^ 2 * (D7 : ℝ) < (t7 : ℝ) := by …
+
+/-- σ₇ = 0.9419651451… < 0.9419652 -/
+theorem sigma7_lt : sigma 7 < 0.9419652 := by …
+
+/-- √(t₇/D₇) = 0.9433983553… > 0.9433983 -/
+theorem ratio7_gt : (0.9433983 : ℝ) < Real.sqrt ((t7 : ℝ) / (D7 : ℝ)) := by …
+
+/-- **Gale's conjecture fails in ℝ⁷**: V7 has no partition into 8 parts of diameter ≤ σ7 · diam V7. -/
+theorem not_galeSplit_X7 : ¬ GaleSplit 7 X7 :=
+  not_galeSplit_of_H (by norm_num) pt7 (by norm_num [D7]) hD7 hH7 hσ7
+
+/-- every partition of V7 into 8 parts has a part with two points at squared distance ≥ t7 -/
+theorem X7_long (c : (Fin 7 → ℝ) → Fin 8) :
+    ∃ x ∈ X7, ∃ y ∈ X7, c x = c y ∧ (t7 : ℝ) ≤ sqd x y :=
+  long_pair (by norm_num) pt7 hH7 c
+
+/-- diam V7 = √D7 (attained by Q₀, Q₁) -/
+theorem diam_X7 : diam X7 = Real.sqrt (D7 : ℝ) := by …
+
+end Gale7
+
+===== N8.lean (proofs elided as `:= by …`) =====
+import Riemann.Deep.Gale7.Lean.Classes
+import Riemann.Deep.Gale7.Lean.Simplex4
+
+/-!
+# Gale7: Gale's conjecture fails in ℝ⁸
+
+The member V8 of the family (NOTE §2), ℝ⁴ ⊕ ℝ⁴, parameters of family_params.txt row n = 8
+(decimals as exact rationals), 85 points. Squared distances: rational class values `clsQ`, checked
+by kernel evaluation (`decide +kernel`): all ≤ D², all edge classes of `H(5, 5)` ≥ t, and σ8² D² < t.
+-/
+
+namespace Gale7
+
+open Vx
+
+def rA8 : ℚ := 632455532034 / 1000000000000
+def rB8 : ℚ := 632455532034 / 1000000000000
+def a8 : ℚ := 627253113456 / 1000000000000
+def b8 : ℚ := 80953886008 / 1000000000000
+def c8 : ℚ := 96579073850 / 1000000000000
+def d8 : ℚ := 609022174896 / 1000000000000
+def e8 : ℚ := 404230564733 / 1000000000000
+def f8 : ℚ := 481355888451 / 1000000000000
+/-- the smallest edge class (`A_ij C_kl`, i ≠ k, j ≠ l) -/
+def t8 : ℚ := 90239946609080831680751 / 100000000000000000000000
+/-- the largest class: D² -/
+def D8 : ℚ := 100000000000102500044289 / 100000000000000000000000
+
+/-- V8 ⊂ ℝ⁸ -/
+noncomputable def pt8 : Vx 5 5 → Fin 8 → ℝ := famPt U4 U4 rA8 rB8 a8 b8 c8 d8 e8 f8
+/-- the point set V8 -/
+noncomputable def X8 : Finset (Fin 8 → ℝ) := Finset.univ.image pt8
+
+theorem cls8_le : ∀ o o' : Orb, ∀ e₁ e₂ : Bool,
+    clsQ 4 4 rA8 rB8 a8 b8 c8 d8 e8 f8 o o' e₁ e₂ ≤ D8 := by …
+
+theorem cls8_ge : ∀ o o' : Orb, ∀ e₁ e₂ : Bool, adjD o o' e₁ e₂ = true →
+    t8 ≤ clsQ 4 4 rA8 rB8 a8 b8 c8 d8 e8 f8 o o' e₁ e₂ := by …
+
+theorem sqd8 (v w : Vx 5 5) : sqd (pt8 v) (pt8 w) =
+    (clsQ 4 4 rA8 rB8 a8 b8 c8 d8 e8 f8 (orb v) (orb w) (decide (ix1 v = ix1 w))
+      (decide (ix2 v = ix2 w)) : ℝ) :=
+  sqd_famPt_cls (m₁ := 4) (m₂ := 4) U4_simplex U4_simplex _ _ _ _ _ _ _ _ v w
+
+theorem hD8 (v w : Vx 5 5) : sqd (pt8 v) (pt8 w) ≤ (D8 : ℝ) := by …
+
+theorem hH8 (v w : Vx 5 5) (h : Adj v w) : (t8 : ℝ) ≤ sqd (pt8 v) (pt8 w) := by …
+
+theorem hσ8 : sigma 8 ^ 2 * (D8 : ℝ) < (t8 : ℝ) := by …
+
+/-- σ₈ = √(9/10) = 0.9486832981… < 0.9486834 -/
+theorem sigma8_lt : sigma 8 < 0.9486834 := by …
+
+/-- √(t₈/D₈) = 0.9499470859… > 0.949947 -/
+theorem ratio8_gt : (0.949947 : ℝ) < Real.sqrt ((t8 : ℝ) / (D8 : ℝ)) := by …
+
+/-- **Gale's conjecture fails in ℝ⁸**: V8 has no partition into 9 parts of diameter ≤ σ8 · diam V8. -/
+theorem not_galeSplit_X8 : ¬ GaleSplit 8 X8 :=
+  not_galeSplit_of_H (by norm_num) pt8 (by norm_num [D8]) hD8 hH8 hσ8
+
+/-- every partition of V8 into 9 parts has a part with two points at squared distance ≥ t8 -/
+theorem X8_long (c : (Fin 8 → ℝ) → Fin 9) :
+    ∃ x ∈ X8, ∃ y ∈ X8, c x = c y ∧ (t8 : ℝ) ≤ sqd x y :=
+  long_pair (by norm_num) pt8 hH8 c
+
+/-- diam V8 = √D8 (attained by Q₀, Q₁) -/
+theorem diam_X8 : diam X8 = Real.sqrt (D8 : ℝ) := by …
+
+end Gale7
+
+===== Card.lean (proofs elided as `:= by …`) =====
+import Riemann.Deep.Gale7.Lean.N7
+import Riemann.Deep.Gale7.Lean.N8
+
+/-!
+# Gale7: V₇ has 69 points and V₈ has 85 points (the map `Vx → ℝⁿ` is injective)
+
+Distinct vertices have a descriptor with `neD = true`, and all those class values are positive
+(`decide +kernel`), so distinct vertices give distinct points.
+-/
+
+namespace Gale7
+
+open Vx
+
+/-- descriptors of pairs of distinct vertices -/
+def neD : Orb → Orb → Bool → Bool → Bool
+  | .P, .P, e, _ => !e
+  | .Q, .Q, _, e => !e
+  | .A, .A, e, e' => !(e && e')
+  | .B, .B, e, e' => !(e && e')
+  | .C, .C, e, e' => !(e && e')
+  | _, _, _, _ => true
+
+theorem eq_of_neD {m₁ m₂ : ℕ} {v w : Vx (m₁ + 1) (m₂ + 1)}
+    (h : neD (orb v) (orb w) (decide (ix1 v = ix1 w)) (decide (ix2 v = ix2 w)) = false) : v = w := by …
+
+theorem ne_neD {m₁ m₂ : ℕ} {v w : Vx (m₁ + 1) (m₂ + 1)} (h : v ≠ w) :
+    neD (orb v) (orb w) (decide (ix1 v = ix1 w)) (decide (ix2 v = ix2 w)) = true := by …
+
+theorem sqd_self {n : ℕ} (x : Fin n → ℝ) : sqd x x = 0 := by …
+
+theorem cls7_pos : ∀ o o' : Orb, ∀ e₁ e₂ : Bool, neD o o' e₁ e₂ = true →
+    0 < clsQ 3 4 rA7 rB7 a7 b7 c7 d7 e7 f7 o o' e₁ e₂ := by …
+
+theorem cls8_pos : ∀ o o' : Orb, ∀ e₁ e₂ : Bool, neD o o' e₁ e₂ = true →
+    0 < clsQ 4 4 rA8 rB8 a8 b8 c8 d8 e8 f8 o o' e₁ e₂ := by …
+
+theorem pt7_injective : Function.Injective pt7 := by …
+
+theorem pt8_injective : Function.Injective pt8 := by …
+
+theorem card_Vx (p q : ℕ) : Fintype.card (Vx p q) = p + q + 3 * (p * q) := by …
+
+/-- V₇ has 4 + 5 + 3·4·5 = 69 points -/
+theorem card_X7 : X7.card = 69 := by …
+
+/-- V₈ has 5 + 5 + 3·5·5 = 85 points -/
+theorem card_X8 : X8.card = 85 := by …
+
+end Gale7
+
