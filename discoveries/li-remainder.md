@@ -6,10 +6,10 @@
 1. Under RH, Σ_{n≤N} R(n)² ≥ (c₁ − o(1)) N^{3/2}(log N)^{1/2} with c₁ = (3/5)^{1/2}(4/5)²/(2π√2) = 0.0558 (RH only: no pair correlation, no simplicity), and Σ_{N<n≤2N} R(n)² ≪ N^{3/2}(log N)^{3/2}; with Montgomery's pair-correlation theorem the upper bound is N^{3/2}(log N)^{1/2} log log N.
 2. Unconditionally R(n) = Ω((n log n)^{1/4}). Under RH limsup |R(n)|/(n log n)^{1/4} ≥ 0.289; if RH fails, |R(n)| ≥ e^{cn} infinitely often.
 3. RH ⟺ Σ_m m^δ y_m² < ∞ for some (equivalently every) δ ∈ [0, 1/2), where Keiper's λ_m/m = ½(log m + γ − log 2π − 1) + y_m. Under RH the weight m^{1/2} is never summable.
-4. Under RH the smoothed mean of R(n) is exactly 7/4: Σ φ(n/N) R(n) = (7/4) Σ φ(n/N) + O(log N) for φ ∈ C_c^∞(0, ∞).
+4. Under RH the smoothed mean of R(n) is exactly 7/4 (Voros's heuristic constant 2Z(0), proved): Σ φ(n/N) R(n) = (7/4) Σ φ(n/N) + O(log N) for φ ∈ C_c^∞(0, ∞).
 5. Hence Merlini–Sala–Sala's heuristic conjecture |λ_tiny(n)| ≤ a·log n (arXiv 1903.06233, "better O(n^ε)") is false for every a, and O(n^ε) fails for every ε < 1/4. Numerically a = 2 first fails at n = 5083.
 
-**Before.** Under RH only the upper bound R(n) = O(√n log n) was known: Lagarias (math/0404394, Thm 1.1, automorphic L; he remarks that the arithmetic part may be smaller) and Mazhouda–Voros (1506.01755, Thm 4.1). Known equivalences: RH ⟺ R(n) = o(n) (Voros, math/0506326) and RH ⟺ (y_m) ∈ ℓ² (Arias de Reyna, Funct. Approx. 45, 2011). No lower bound, mean-square law or mean value was known. Our R436 read the residual as a mean-zero oscillation.
+**Before.** Under RH only the upper bound R(n) = O(√n log n) was known: Lagarias (math/0404394, Thm 1.1, automorphic L; he remarks that the arithmetic part may be smaller) and Mazhouda–Voros (1506.01755, Thm 4.1). Known equivalences: RH ⟺ R(n) = o(n) (Voros, math/0506326) and RH ⟺ (y_m) ∈ ℓ² (Arias de Reyna, Funct. Approx. 45, 2011). No lower bound or mean-square law was known. The mean 7/4 was known only heuristically: Voros (math/0404213 l.275–282, math/0506326 l.444–450, from his math/0104051 Eq. (41)) noted that the correction δλ_n = 2Z(0) = +7/4 from the next pole of his Mellin integral improves the fit to the data in the mean, but expected it not to count asymptotically; the trend's t(n) + 3/4 − Σ B_{2k}n^{1−2k}/(4k) is his Eq. (TS), unconditional. Our R436 read the residual as a mean-zero oscillation.
 
 **Method.**
 - Lemma A (RH): an explicit zero-sum formula for λ_n with the exact smooth constant 7/4: an endpoint term 2 plus −1/4 from the Fejér kernel and the −π/8 constant of θ.
@@ -26,6 +26,7 @@
 **Checks.**
 - The orchestrator reran fft_lambda.py (r = 0.999, 114 MB): all 1,991 sample values are identical, and λ_100000 is as above. From the table it recomputed R(n) at n = 10², …, 10⁵, the ratios, the smoothed mean and the maximum.
 - Checked in Merlini–Sala–Sala 1903.06233 (PDF, §2 and conclusion): "we may strength the conjecture to |λ tiny(n)| = o(n) = a·log(n) with a~2"; "a more strong but more gratuitous conjecture that the tiny oscillations may be bounded in absolute value by a·log(n) (better O(n^ε))".
+- R451 falsification: Lemma A's constant recomputed by independent quadrature (λ_n^{(0)} − t(n) + 1/4 + 1/(24n) = 8.4·10⁻⁵ at n = 10, 3.8·10⁻⁸ at n = 50; ∫r = −1/8); the trend equals t(n) + 3/4 − 1/(24n) + 1/(240n³) + … to n = 400 (closed form = derivative formula at n = 1, 2, 3); Theorem 4 holds for bumps on (0.1, 1) and (0.9, 1) and for x⁵·bump(0.3, 1) (worst deviation 0.018 at N = 10⁵, inside the O(log N) allowance), and λ_n − λ̄_n has smoothed mean 1.
 
 **Review.**
 - Agent's reviewers: Thm 1 CORRECT; a Lemma A gap was repaired (exact c₀ = −1/4); the Thm 3 constant was fixed; Thm 4 and Cor 4 CORRECT.
@@ -38,6 +39,7 @@
 - Zenodo "Li coefficients" (69 records): nothing. GXL evidence API (agent): no support.
 - Sources read by the agent: Lagarias, Mazhouda–Voros, Voros, Coffey (per-term Laguerre asymptotic, |S_γ(n) + n| = O(n^{1/4}), a conjecture |S_Λ| = O(n^{1/2+ε})), Maślanka, Johansson, 0912.2390 (conjectures O(n^{1/2+ε})), Sekatskii, Odžak–Smajlović and Merlini–Sala–Sala. None has an Ω-result, a mean-square bound or the mean 7/4.
 - Our files: TREE N3 (R430, R436) listed only O(√n log n).
+- R451 (adversarial, TeX): Voros math/0404213, math/0506326 and 1403.4558, Lagarias math/0404394, Maślanka math/0402168, Flajolet–Vepstas math/0611332 (Coffey's inequality only) and Coffey math-ph/0505052 (PDF) have no mean-square law, no Ω-result and no proof of the mean; Voros has the heuristic 7/4 (Before); Arias de Reyna's ℓ² equivalence is his Thm 1, Cor 2, Thm 6.
 
 **Caveat.**
 - Pointwise only (0.202 + o(1))·√n log n/√(log log n) is proved, under RH.
