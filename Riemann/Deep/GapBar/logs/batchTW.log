@@ -1,0 +1,24 @@
+09:15:53 r1_3.30: RESULT kappa=33/10: ALL_OK=True covered=True ; peak 192 MB, 153s
+09:18:24 r2_3.35: RESULT kappa=67/20: ALL_OK=True covered=True ; peak 157 MB, 148s
+09:20:54 r2_3.5: RESULT kappa=7/2: ALL_OK=True covered=True ; peak 165 MB, 147s
+09:22:47 r1_3.5: RESULT kappa=7/2: ALL_OK=True covered=True ; peak 170 MB, 111s
+09:25:16 r2_4: RESULT kappa=4: ALL_OK=True covered=True ; peak 245 MB, 144s
+09:26:53 r1_4: RESULT kappa=4: ALL_OK=True covered=True ; peak 200 MB, 95s
+09:28:59 r2_5: RESULT kappa=5: ALL_OK=True covered=True ; peak 209 MB, 122s
+09:30:48 r3_3.5: RESULT kappa=7/2: ALL_OK=True covered=True ; peak 166 MB, 105s
+09:30:48 DONE
+09:45:39 r4_3.335: RESULT kappa=667/200: ALL_OK=False covered=True ; peak 227 MB, 134s
+09:49:34 r5_3.335: RESULT kappa=667/200: ALL_OK=False covered=True ; peak 302 MB, 232s
+09:51:57 r2_3.34: RESULT kappa=167/50: ALL_OK=True covered=True ; peak 169 MB, 139s
+09:54:44 r2_3.36: RESULT kappa=84/25: ALL_OK=True covered=True ; peak 138 MB, 163s
+09:56:57 r2_3.38: RESULT kappa=169/50: ALL_OK=True covered=True ; peak 170 MB, 130s
+09:59:22 r2_3.42: RESULT kappa=171/50: ALL_OK=True covered=True ; peak 114 MB, 143s
+10:01:12 r2_3.45: RESULT kappa=69/20: ALL_OK=True covered=True ; peak 178 MB, 105s
+10:01:12 DONE2
+10:09:48 r1_3.35: RESULT kappa=67/20: ALL_OK=True covered=True ; peak 136 MB, 110s
+10:12:00 r1_5: RESULT kappa=5: ALL_OK=True covered=True ; peak 221 MB, 130s
+10:13:57 r3_3.35: RESULT kappa=67/20: ALL_OK=False covered=True ; peak 159 MB, 114s
+10:16:18 r3_4: RESULT kappa=4: ALL_OK=True covered=True ; peak 162 MB, 139s
+10:18:35 r3_5: RESULT kappa=5: ALL_OK=True covered=True ; peak 208 MB, 136s
+10:18:35 DONE3
+10:20:49 r3_3.35 (shrink 0.4): RESULT kappa=67/20: ALL_OK=True covered=True ; peak 178 MB, 91s

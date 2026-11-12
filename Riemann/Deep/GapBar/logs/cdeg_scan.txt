@@ -1,0 +1,29 @@
+r=2 theta=0.2499 deg=4: complex kappa_max = 3.216396 [16s]
+r=2 theta=0.2499 deg=8: complex kappa_max = 3.268823 [17s]
+r=2 theta=0.2499 deg=12: complex kappa_max = 3.291084 [17s]
+r=2 theta=0.2499 deg=16: complex kappa_max = 3.302541 [17s]
+r=2 theta=0.2499 deg=20: complex kappa_max = 3.309199 [18s]
+r=2 theta=0.2499 deg=24: complex kappa_max = 3.313404 [17s]
+r=2 theta=0.2499 deg=32: complex kappa_max = 3.318217 [19s]
+r=1 theta=0.2499 deg=4: complex kappa_max = 3.254406 [17s]
+r=1 theta=0.2499 deg=8: complex kappa_max = 3.280327 [16s]
+r=1 theta=0.2499 deg=12: complex kappa_max = 3.288268 [15s]
+r=1 theta=0.2499 deg=16: complex kappa_max = 3.291705 [15s]
+      196.04 real       170.27 user         4.87 sys
+           122650624  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              156243  page reclaims
+                  82  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  11  messages sent
+                  11  messages received
+                  11  signals received
+                  46  voluntary context switches
+              414298  involuntary context switches
+            30233761  instructions retired
+            30028950  cycles elapsed
+             1360184  peak memory footprint

@@ -1,0 +1,39 @@
+kappa=67/20 N=72 D=50 gam=25 Nw=176 prec=292 (Gamma 10s, setup 17s) TWISTED; Im parts contain 0: True
+  matrices assembled (96s)
+  float: max_v lam = 10.7240871 at v* = 1.327470 ; lam/k^2 = 0.9555881 ; spec(M0^-1 MS) in [1.0001, 1.3511]
+  M0 >= 0                                      True deltaD=[1.9475 +/- 8.82e-6] C=[0.031482 +/- 2.16e-7] deltaW=[1.9160 +/- 8.98e-6] chol=OK (98s)
+  MS - vlo M0 >= 0                             True deltaD=[0.38950 +/- 1.77e-6] C=[0.0083946 +/- 1.82e-8] deltaW=[0.38110 +/- 3.66e-6] chol=OK (98s)
+  vhi M0 - MS >= 0                             True deltaD=[0.87637 +/- 1.04e-6] C=[0.035910 +/- 4.71e-7] deltaW=[0.84046 +/- 5.64e-7] chol=OK (99s)
+  6 cells for [0.8, 1.7]
+  cell [0.80000,1.03082] +1                    True deltaD=[1.9477 +/- 3.99e-5] C=[0.021419 +/- 3.07e-7] deltaW=[1.9262 +/- 4.09e-5] chol=OK (106s)
+  cell [0.80000,1.03082] -1                    True deltaD=[1.0636 +/- 1.76e-5] C=[0.077967 +/- 1.11e-7] deltaW=[0.98562 +/- 4.70e-6] chol=OK (107s)
+  cell [1.03082,1.17358] +1                    True deltaD=[1.2433 +/- 3.19e-5] C=[0.080640 +/- 2.51e-7] deltaW=[1.1627 +/- 8.46e-6] chol=OK (107s)
+  cell [1.03082,1.17358] -1                    True deltaD=[1.2372 +/- 3.52e-5] C=[0.13425 +/- 2.48e-6] deltaW=[1.1030 +/- 1.25e-5] chol=OK (107s)
+  cell [1.17358,1.26714] +1                    True deltaD=[1.3008 +/- 3.61e-5] C=[0.13519 +/- 3.07e-6] deltaW=[1.1656 +/- 2.92e-5] chol=OK (108s)
+  cell [1.17358,1.26714] -1                    True deltaD=[1.3039 +/- 4.21e-5] C=[0.17841 +/- 2.58e-6] deltaW=[1.1255 +/- 3.47e-5] chol=OK (108s)
+  cell [1.26714,1.38354] +1                    True deltaD=[1.2777 +/- 3.99e-5] C=[0.17802 +/- 2.56e-6] deltaW=[1.0997 +/- 2.25e-5] chol=OK (108s)
+  cell [1.26714,1.38354] -1                    True deltaD=[1.6611 +/- 2.94e-5] C=[0.23985 +/- 4.56e-6] deltaW=[1.4212 +/- 2.52e-5] chol=OK (109s)
+  cell [1.38354,1.49888] +1                    True deltaD=[1.6624 +/- 1.29e-5] C=[0.23987 +/- 2.87e-6] deltaW=[1.4225 +/- 4.57e-5] chol=OK (109s)
+  cell [1.38354,1.49888] -1                    True deltaD=[2.6264 +/- 3.20e-5] C=[0.31174 +/- 2.67e-7] deltaW=[2.3147 +/- 8.30e-6] chol=OK (109s)
+  cell [1.49888,1.74178] +1                    True deltaD=[2.3767 +/- 4.63e-5] C=[0.30770 +/- 4.13e-6] deltaW=[2.0690 +/- 4.22e-5] chol=OK (110s)
+  cell [1.49888,1.74178] -1                    True deltaD=[6.3087 +/- 2.83e-5] C=[0.48981 +/- 1.59e-6] deltaW=[5.8189 +/- 1.99e-5] chol=OK (110s)
+RESULT kappa=67/20: ALL_OK=True covered=True ; peak 136 MB, 110s
+JSON logs/certTW_r1_3.35.json
+      111.33 real        81.91 user         2.43 sys
+           154894336  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               48398  page reclaims
+                4540  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 969  voluntary context switches
+              240934  involuntary context switches
+           546458805  instructions retired
+           313421941  cycles elapsed
+            28082680  peak memory footprint

@@ -1,0 +1,35 @@
+kappa=4 N=48 D=76 gam=29 Nw=204 prec=377 (Gamma 40s, setup 51s) TWISTED; Im parts contain 0: True
+  matrices assembled (131s)
+  float: max_v lam = 9.8033208 at v* = 1.365992 ; lam/k^2 = 0.6127076 ; spec(M0^-1 MS) in [1.0069, 1.3800]
+  M0 >= 0                                      True deltaD=[32.000 +/- 3e-8] C=[2.1250 +/- 4.24e-5] deltaW=[29.875 +/- 4.24e-5] chol=OK (132s)
+  MS - vlo M0 >= 0                             True deltaD=[6.4000 +/- 3e-9] C=[0.77660 +/- 4.92e-6] deltaW=[5.6234 +/- 4.92e-6] chol=OK (133s)
+  vhi M0 - MS >= 0                             True deltaD=[17.600 +/- 3e-8] C=[2.7549 +/- 3.24e-5] deltaW=[14.845 +/- 1.33e-4] chol=OK (133s)
+  4 cells for [0.8, 1.8]
+  cell [0.80000,1.11056] +1                    True deltaD=[54.183 +/- 2.52e-4] C=[4.2508 +/- 1.48e-5] deltaW=[49.932 +/- 4.67e-4] chol=OK (136s)
+  cell [0.80000,1.11056] -1                    True deltaD=[33.393 +/- 2.87e-4] C=[13.616 +/- 1.15e-4] deltaW=[19.777 +/- 4.01e-4] chol=OK (137s)
+  cell [1.11056,1.47250] +1                    True deltaD=[28.970 +/- 7.65e-5] C=[13.377 +/- 1.92e-4] deltaW=[15.593 +/- 2.68e-4] chol=OK (137s)
+  cell [1.11056,1.47250] -1                    True deltaD=[54.178 +/- 1.50e-4] C=[32.051 +/- 1.68e-4] deltaW=[22.127 +/- 3.17e-4] chol=OK (137s)
+  cell [1.47250,1.78460] +1                    True deltaD=[58.478 +/- 2.02e-4] C=[32.284 +/- 2.90e-4] deltaW=[26.194 +/- 8.87e-5] chol=OK (138s)
+  cell [1.47250,1.78460] -1                    True deltaD=[179.46 +/- 8.54e-4] C=[55.818 +/- 4.15e-4] deltaW=[123.64 +/- 1.57e-3] chol=OK (138s)
+  cell [1.78460,2.42054] +1                    True deltaD=[140.16 +/- 1.45e-3] C=[53.210 +/- 4.71e-4] deltaW=[86.951 +/- 2.26e-5] chol=OK (138s)
+  cell [1.78460,2.42054] -1                    True deltaD=[695.36 +/- 2.79e-3] C=[122.34 +/- 5.00e-3] deltaW=[573.01 +/- 2.22e-3] chol=OK (139s)
+RESULT kappa=4: ALL_OK=True covered=True ; peak 162 MB, 139s
+JSON logs/certTW_r3_4.json
+      140.65 real       117.71 user         4.21 sys
+           170377216  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              145121  page reclaims
+                5881  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  22  messages received
+                   1  signals received
+                 922  voluntary context switches
+              252029  involuntary context switches
+           551786659  instructions retired
+           291888561  cycles elapsed
+            25838120  peak memory footprint

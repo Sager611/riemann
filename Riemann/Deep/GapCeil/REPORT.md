@@ -1,3 +1,5 @@
+Correction (gapbar, 12 Nov 2026): every ceiling and grid certificate below holds only for real P with the unshifted mollifier (this report kept Re of the kernel); Bui–Milinovich's Lemma main admits mollifier shifts, and the midpoint amplifier (equivalently complex P) reaches 3.32658 (r = 2, float) and a certified Λ > 3.324; see ../GapBar/REPORT.md.
+
 PARTIAL: float ceiling 3.30279 (r = 2); certified in Arb: no amplifier works for r = 1 at 16 κ in [3.2725, 8] or for r = 2 at {3.305, 3.31, 3.35, 3.5, 4, 5}; certified record Λ > 3.30 (r = 2); κ between grid points, large κ and r ≥ 3 remain
 
 # gapceil: the ceiling of Bui–Milinovich's large-gap criterion (node N8)

@@ -1,0 +1,26 @@
+r=4 N=8 complex closure ceiling 3.147354 [20s]
+r=4 N=8 real closure ceiling 3.141892 [39s]
+r=4 N=10 complex closure ceiling 3.147354 [55s]
+r=4 N=10 real closure ceiling 3.141892 [71s]
+r=5 N=8 complex closure ceiling 3.073662 [91s]
+r=5 N=8 real closure ceiling 3.071102 [110s]
+r=5 N=10 complex failed: Matrix is not positive definite
+r=5 N=10 real failed: Matrix is not positive definite
+      121.98 real        98.69 user         3.41 sys
+           123305984  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               73494  page reclaims
+                6071  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                1547  voluntary context switches
+              295735  involuntary context switches
+           547511164  instructions retired
+           320316158  cycles elapsed
+            26788368  peak memory footprint

@@ -1,0 +1,43 @@
+  r=1 k=3.100000 ratio=1.1985110 v=1.3307 [2s]
+  r=1 k=3.600000 ratio=0.7826101 v=1.3226 [4s]
+  r=1 k=3.338652 ratio=0.9649225 v=1.3276 [7s]
+  r=1 k=3.302814 ratio=0.9953631 v=1.3282 [10s]
+  r=1 k=3.297480 ratio=1.0000221 v=1.3283 [15s]
+  r=1 k=3.297505 ratio=0.9999999 v=1.3283 [18s]
+  r=1 k=3.297504 ratio=1.0000008 v=1.3283 [21s]
+r=1 N=14: complex closure ceiling kappa = 3.297505 [21s]
+  r=2 k=3.100000 ratio=1.2155564 v=1.3689 [23s]
+  r=2 k=3.600000 ratio=0.8147449 v=1.3664 [28s]
+  r=2 k=3.368900 ratio=0.9666593 v=1.3679 [31s]
+  r=2 k=3.324974 ratio=1.0012989 v=1.3681 [33s]
+  r=2 k=3.326621 ratio=0.9999621 v=1.3681 [36s]
+  r=2 k=3.326575 ratio=1.0000000 v=1.3681 [38s]
+  r=2 k=3.326574 ratio=1.0000008 v=1.3681 [40s]
+r=2 N=14: complex closure ceiling kappa = 3.326575 [40s]
+  r=3 k=3.100000 ratio=1.1236670 v=1.3688 [43s]
+  r=3 k=3.600000 ratio=0.7697319 v=1.3678 [45s]
+  r=3 k=3.274703 ratio=0.9711911 v=1.3686 [48s]
+  r=3 k=3.241695 ratio=0.9971688 v=1.3687 [50s]
+  r=3 k=3.238178 ratio=1.0000089 v=1.3687 [53s]
+  r=3 k=3.238189 ratio=1.0000000 v=1.3687 [55s]
+  r=3 k=3.238188 ratio=1.0000008 v=1.3687 [58s]
+r=3 N=14: complex closure ceiling kappa = 3.238189 [58s]
+peak 116 MB
+       59.49 real        44.00 user         1.83 sys
+           121159680  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               48736  page reclaims
+                4773  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  34  messages sent
+                  35  messages received
+                   1  signals received
+                1349  voluntary context switches
+              128663  involuntary context switches
+           574042731  instructions retired
+           293497609  cycles elapsed
+            34079248  peak memory footprint

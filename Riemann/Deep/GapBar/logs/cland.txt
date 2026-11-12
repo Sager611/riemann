@@ -1,0 +1,70 @@
+r=1 kappa=3.300: complex 0.9978166 (v=1.3282) | real 0.9761375 (v=1.3141) [7s]
+r=1 kappa=3.335: complex 0.9679570 (v=1.3277) | real 0.9474674 (v=1.3137) [15s]
+r=1 kappa=3.350: complex 0.9555881 (v=1.3275) | real 0.9355951 (v=1.3135) [21s]
+r=1 kappa=3.400: complex 0.9161325 (v=1.3267) | real 0.8977374 (v=1.3129) [29s]
+r=1 kappa=3.500: complex 0.8448332 (v=1.3248) | real 0.8293683 (v=1.3114) [38s]
+r=1 kappa=4.000: complex 0.6026901 (v=1.3108) | real 0.5966355 (v=1.3005) [45s]
+r=1 kappa=5.000: complex 0.3728260 (v=1.2945) | real 0.3709250 (v=1.2886) [53s]
+r=1 kappa=6.000: complex 0.2338681 (v=1.2795) | real 0.2334784 (v=1.2767) [59s]
+r=1 kappa=8.000: complex 0.1211256 (v=1.2368) | real 0.1210863 (v=1.2422) [65s]
+r=2 kappa=3.300: complex 1.0219418 (v=1.3682) | real 1.0022885 (v=1.3552) [72s]
+r=2 kappa=3.335: complex 0.9932086 (v=1.3681) | real 0.9741944 (v=1.3549) [80s]
+r=2 kappa=3.350: complex 0.9813094 (v=1.3680) | real 0.9625653 (v=1.3548) [89s]
+r=2 kappa=3.400: complex 0.9433585 (v=1.3678) | real 0.9254975 (v=1.3544) [97s]
+r=2 kappa=3.500: complex 0.8747533 (v=1.3671) | real 0.8585740 (v=1.3536) [105s]
+r=2 kappa=4.000: complex 0.6383383 (v=1.3626) | real 0.6284830 (v=1.3483) [112s]
+r=2 kappa=5.000: complex 0.4019926 (v=1.3564) | real 0.3956651 (v=1.3414) [119s]
+r=2 kappa=6.000: complex 0.2610179 (v=1.3523) | real 0.2571297 (v=1.3366) [124s]
+r=2 kappa=8.000: complex 0.1390584 (v=1.3380) | real 0.1376884 (v=1.3245) [129s]
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/.scratch/gapbar/cland.py", line 25, in <module>
+    k = brentq(f, 2.8, 3.4, xtol=2e-6)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/Ec53Tuu8uJSqLn-wm8pje/lib/python3.12/site-packages/scipy/optimize/_zeros_py.py", line 858, in brentq
+    r = _zeros._brentq(f, a, b, xtol, rtol, maxiter, args, full_output, disp)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/Ec53Tuu8uJSqLn-wm8pje/lib/python3.12/site-packages/scipy/optimize/_zeros_py.py", line 107, in f_raise
+    fx = f(x, *args)
+         ^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/.scratch/gapbar/cland.py", line 24, in <lambda>
+    f = lambda k: best(*mats(k * np.pi, 0.25, r, N, 36, True)[:3])[0] / k ** 2 - 1
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/.scratch/gapbar/ctest.py", line 64, in best
+    rr = minimize_scalar(lambda v: -top(M0, MS, MSS, v), bounds=(0.6, 2.2), method='bounded', options={'xatol': 1e-9})
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/Ec53Tuu8uJSqLn-wm8pje/lib/python3.12/site-packages/scipy/optimize/_minimize.py", line 1027, in minimize_scalar
+    res = _minimize_scalar_bounded(fun, bounds, args, **options)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/Ec53Tuu8uJSqLn-wm8pje/lib/python3.12/site-packages/scipy/optimize/_optimize.py", line 2336, in _minimize_scalar_bounded
+    fx = func(x, *args)
+         ^^^^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/.scratch/gapbar/ctest.py", line 64, in <lambda>
+    rr = minimize_scalar(lambda v: -top(M0, MS, MSS, v), bounds=(0.6, 2.2), method='bounded', options={'xatol': 1e-9})
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/.scratch/gapbar/ctest.py", line 58, in top
+    L = np.linalg.cholesky(M1)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/Ec53Tuu8uJSqLn-wm8pje/lib/python3.12/site-packages/numpy/linalg/_linalg.py", line 887, in cholesky
+    r = gufunc(a, signature=signature)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/Ec53Tuu8uJSqLn-wm8pje/lib/python3.12/site-packages/numpy/linalg/_linalg.py", line 147, in _raise_linalgerror_nonposdef
+    raise LinAlgError("Matrix is not positive definite")
+numpy.linalg.LinAlgError: Matrix is not positive definite
+      134.41 real        78.17 user         3.36 sys
+           121225216  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               98270  page reclaims
+                7229  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                1878  voluntary context switches
+              265613  involuntary context switches
+           522353097  instructions retired
+           279138896  cycles elapsed
+            25707000  peak memory footprint

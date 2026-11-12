@@ -1,0 +1,44 @@
+BALL kappa in [17/5, 69/20] = [3.4 +/- 0.0501] ; c = [1.1e+1 +/- 0.319]
+kappa=69/20 N=72 D=50 gam=25 Nw=176 prec=292 (Gamma 7s, setup 14s) TWISTED; Im parts contain 0: True
+  matrices assembled (97s)
+  float: max_v lam = 10.8479651 at v* = 1.367670 ; lam/k^2 = 0.9384053 ; spec(M0^-1 MS) in [1.0011, 1.3839]
+  M0 >= 0                                      False deltaD=[1.9529 +/- 3.81e-5] C=[0.06 +/- 4.52e-3] deltaW=[1.89 +/- 1.84e-3] chol=FAIL at 0 ([+/- 2.62e+57]) (99s)
+  MS - vlo M0 >= 0                             False deltaD=[0.38171 +/- 1.28e-6] C=[0.02 +/- 7.14e-3] deltaW=[0.36 +/- 8.85e-3] chol=FAIL at 0 ([+/- 1.16e+60]) (100s)
+  vhi M0 - MS >= 0                             False deltaD=[0.86558 +/- 2.14e-6] C=[0.07 +/- 8.04e-3] deltaW=[0.8 +/- 0.0125] chol=FAIL at 0 ([+/- 6.39e+59]) (101s)
+  6 cells for [0.8, 1.7]
+  cell [0.80000,1.04764] +1                    False deltaD=[1.7734 +/- 3.13e-5] C=[+/- 0.188] deltaW=[2e+0 +/- 0.415] chol=FAIL at 0 ([+/- 2.86e+63]) (111s)
+  cell [0.80000,1.04764] -1                    False deltaD=[0.78407 +/- 4.40e-6] C=[+/- 0.349] deltaW=[+/- 0.768] chol=FAIL at 0 ([+/- 1.16e+64]) (112s)
+  cell [1.04764,1.20480] +1                    False deltaD=[0.99078 +/- 3.93e-6] C=[+/- 0.356] deltaW=[+/- 0.969] chol=FAIL at 0 ([+/- 7.94e+63]) (112s)
+  cell [1.04764,1.20480] -1                    False deltaD=[0.89663 +/- 1.40e-6] C=[+/- 0.501] deltaW=[+/- 0.766] chol=FAIL at 0 ([+/- 1.37e+64]) (114s)
+  cell [1.20480,1.31122] +1                    False deltaD=[0.97211 +/- 1.33e-6] C=[+/- 0.504] deltaW=[+/- 0.840] chol=FAIL at 0 ([+/- 1.16e+64]) (114s)
+  cell [1.20480,1.31122] -1                    False deltaD=[1.0103 +/- 6.46e-6] C=[+/- 0.625] deltaW=[+/- 0.783] chol=FAIL at 0 ([+/- 1.47e+64]) (115s)
+  cell [1.31122,1.43830] +1                    False deltaD=[0.98308 +/- 2.83e-7] C=[+/- 0.624] deltaW=[+/- 0.757] chol=FAIL at 0 ([+/- 1.57e+64]) (115s)
+  cell [1.31122,1.43830] -1                    False deltaD=[1.6601 +/- 1.41e-5] C=[+/- 0.789] deltaW=[1e+0 +/- 0.301] chol=FAIL at 0 ([+/- 6.84e+63]) (116s)
+  cell [1.43830,1.57892] +1                    False deltaD=[1.6397 +/- 4.28e-5] C=[+/- 0.789] deltaW=[1e+0 +/- 0.281] chol=FAIL at 0 ([+/- 6.99e+63]) (116s)
+  cell [1.43830,1.57892] -1                    False deltaD=[3.2386 +/- 4.29e-5] C=[+/- 0.997] deltaW=[2e+0 +/- 0.709] chol=FAIL at 0 ([+/- 2.82e+63]) (117s)
+  cell [1.57892,1.88188] +1                    False deltaD=[2.8322 +/- 3.06e-5] C=[+/- 0.985] deltaW=[2e+0 +/- 0.315] chol=FAIL at 0 ([+/- 3.42e+63]) (117s)
+  cell [1.57892,1.88188] -1                    False deltaD=[9.3110 +/- 2.33e-5] C=[1e+0 +/- 0.543] deltaW=[8e+0 +/- 0.322] chol=FAIL at 0 ([+/- 9.17e+62]) (118s)
+RESULT kappa=69/20: ALL_OK=False covered=True ; peak 130 MB, 118s
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/GapBar/runcerttwball.py", line 92, in <module>
+    json.dump(res, open('logs/certTWB_r%d_%s_%s.json' % (RR, klo, khi), 'w'), indent=1)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'logs/certTWB_r2_17/5_69/20.json'
+      120.61 real        93.23 user         3.74 sys
+           136445952  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               89315  page reclaims
+                3201  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  23  messages received
+                   1  signals received
+                1056  voluntary context switches
+              349251  involuntary context switches
+           461847392  instructions retired
+           251351423  cycles elapsed
+            28443152  peak memory footprint
