@@ -1,0 +1,14 @@
+single Q=1 j=1 I_real=-0.7324452404+3.870786329i hairpins=0.0523326-0.00408499i resid=3.15e-07 resid_without_hairpins=5.25e-02
+single Q=1 j=2 I_real=-2.776118275-0.9411818866i hairpins=-1.36197-0.477336i resid=3.53e-07 resid_without_hairpins=1.44e+00
+single Q=1 j=3 I_real=3.258816061-4.912274079i hairpins=3.0802-4.49344i resid=3.42e-06 resid_without_hairpins=5.45e+00
+single Q=12 j=1 I_real=-6.463926966+9.790417286i hairpins=0.0622334+0.16721i resid=9.64e-08 resid_without_hairpins=1.78e-01
+single Q=12 j=2 I_real=-1.081430678-5.097372744i hairpins=-0.894695-0.265124i resid=7.42e-07 resid_without_hairpins=9.33e-01
+single Q=12 j=3 I_real=3.233117885+1.623782659i hairpins=1.38191-1.93057i resid=2.20e-06 resid_without_hairpins=2.37e+00
+cluster Q=1 j=1 I_real=-0.7596001499+6.57726233i hairpins=-0.0295501-0.0122009i resid=3.40e-06 resid_without_hairpins=3.20e-02
+cluster Q=1 j=2 I_real=-8.918799335-2.224034926i hairpins=-4.80209-1.49573i resid=3.44e-06 resid_without_hairpins=5.03e+00
+cluster Q=1 j=3 I_real=13.65305888-26.65197947i hairpins=13.18-24.5642i resid=2.56e-05 resid_without_hairpins=2.79e+01
+cluster Q=12 j=1 I_real=-4.140006447+19.60068244i hairpins=-4.64763-0.0327325i resid=4.10e-05 resid_without_hairpins=4.65e+00
+cluster Q=12 j=2 I_real=-22.61860458-8.859073342i hairpins=-7.76476-8.13049i resid=3.90e-05 resid_without_hairpins=1.12e+01
+cluster Q=12 j=3 I_real=27.36614183-39.18311362i hairpins=21.8037-31.2256i resid=1.59e-04 resid_without_hairpins=3.81e+01
+time 782.6 s
+memcap: peak 22 MB rc=0

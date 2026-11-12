@@ -1,0 +1,6 @@
+theta=0.5000  1/(1+theta)=0.66667  phi=0.6467:min eig(ImC)=+1.3983e+02  phi=0.6617:min eig(ImC)=+3.7955e+01  phi=0.6717:min eig(ImC)=-3.2086e+01  phi=0.6867:min eig(ImC)=-1.4019e+02  <1,(I+aS)^-1 1>=0.845157 vs tan(a th)/a=0.845158
+theta=0.4500  1/(1+theta)=0.68966  phi=0.6697:min eig(ImC)=+1.5439e+02  phi=0.6847:min eig(ImC)=+4.1789e+01  phi=0.6947:min eig(ImC)=-3.5445e+01  phi=0.7097:min eig(ImC)=-1.5438e+02  <1,(I+aS)^-1 1>=0.691863 vs tan(a th)/a=0.691864
+theta=0.5714  1/(1+theta)=0.63636  phi=0.6164:min eig(ImC)=+1.2313e+02  phi=0.6314:min eig(ImC)=+3.3531e+01  phi=0.6414:min eig(ImC)=-2.8277e+01  phi=0.6564:min eig(ImC)=-1.2398e+02  <1,(I+aS)^-1 1>=1.131672 vs tan(a th)/a=1.131674
+theta=1.0000  1/(1+theta)=0.50000  phi=0.4800:min eig(ImC)=+7.0508e+01  phi=0.4950:min eig(ImC)=+1.9351e+01  phi=0.5050:min eig(ImC)=-1.6567e+01  phi=0.5200:min eig(ImC)=-7.3115e+01
+(sign of min eig is the point; the printed scale is eigenvalue/h, arbitrary)
+memcap: peak 18 MB rc=0
