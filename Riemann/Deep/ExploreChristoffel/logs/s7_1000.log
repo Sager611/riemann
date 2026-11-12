@@ -1,0 +1,14 @@
+DH Gram N<=1000 built 618.1s; d2(10)=0.05286051 d2(400)=0.02834776 (explore13: d2 logN 0.122 at 10, 0.170 at 400)
+DH zeros: 2406 on-line < 2500, 109 off-line right members (beta>1/2) < 2500
+V_f checks: |V_f(rho_1)| = 1.000000000000; residues R_0..2 = [-0.56198518  0.22186286 -0.01946399]
+DH N=    5 d2=6.591099e-02 d2L=0.10608  B_on+tail=5.228067e-02 B_all+tail=5.266211e-02 ratio=0.7990  L^2(d2-B_all)=+0.03432  eigmin=0.919
+DH N=   10 d2=5.286051e-02 d2L=0.12172  B_on+tail=4.433937e-02 B_all+tail=4.472950e-02 ratio=0.8462  L^2(d2-B_all)=+0.04311  eigmin=nan
+DH N=   20 d2=4.613117e-02 d2L=0.13820  B_on+tail=3.895694e-02 B_all+tail=3.934831e-02 ratio=0.8530  L^2(d2-B_all)=+0.06087  eigmin=nan
+DH N=   40 d2=3.724461e-02 d2L=0.13739  B_on+tail=3.143426e-02 B_all+tail=3.180911e-02 ratio=0.8541  L^2(d2-B_all)=+0.07397  eigmin=nan
+DH N=  100 d2=3.372313e-02 d2L=0.15530  B_on+tail=2.900474e-02 B_all+tail=2.938223e-02 ratio=0.8713  L^2(d2-B_all)=+0.09206  eigmin=1.181
+DH N=  200 d2=2.973338e-02 d2L=0.15754  B_on+tail=2.568341e-02 B_all+tail=2.607661e-02 ratio=0.8770  L^2(d2-B_all)=+0.10265  eigmin=nan
+DH N=  400 d2=2.834776e-02 d2L=0.16984  B_on+tail=2.459515e-02 B_all+tail=2.496726e-02 ratio=0.8807  L^2(d2-B_all)=+0.12135  eigmin=nan
+DH N=  600 d2=2.558435e-02 d2L=0.16366  B_on+tail=2.212897e-02 B_all+tail=2.249969e-02 ratio=0.8794  L^2(d2-B_all)=+0.12623  eigmin=nan
+DH N=  800 d2=2.444123e-02 d2L=0.16338  B_on+tail=2.123126e-02 B_all+tail=2.160285e-02 ratio=0.8839  L^2(d2-B_all)=+0.12683  eigmin=nan
+DH N= 1000 d2=2.416195e-02 d2L=0.16690  B_on+tail=2.095607e-02 B_all+tail=2.132462e-02 ratio=0.8826  L^2(d2-B_all)=+0.13539  eigmin=1.221
+DH on-line C share (zeros < 2500 + tail-free) = 0.192557; done 787.3s maxrss 93 MB

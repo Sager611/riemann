@@ -1,0 +1,14 @@
+DH deficit by window (L^2 (d2 - B_all)):
+  N in [5,20] L in [1.61,3.00]: deficit mean 0.0479, local slope d(deficit)/dL 0.0198, deficit/L 0.0196; B/d2 0.8424; d2 L 0.1251; B L 0.1055
+  N in [20,50] L in [3.00,3.89]: deficit mean 0.0713, local slope d(deficit)/dL 0.0150, deficit/L 0.0204; B/d2 0.8544; d2 L 0.1400; B L 0.1197
+  N in [50,100] L in [3.93,4.61]: deficit mean 0.0863, local slope d(deficit)/dL 0.0226, deficit/L 0.0200; B/d2 0.8665; d2 L 0.1501; B L 0.1300
+  N in [100,200] L in [4.61,5.30]: deficit mean 0.0976, local slope d(deficit)/dL 0.0199, deficit/L 0.0196; B/d2 0.8746; d2 L 0.1560; B L 0.1364
+  N in [200,400] L in [5.30,5.99]: deficit mean 0.1117, local slope d(deficit)/dL 0.0275, deficit/L 0.0196; B/d2 0.8791; d2 L 0.1625; B L 0.1429
+  N in [400,700] L in [5.99,6.55]: deficit mean 0.1265, local slope d(deficit)/dL 0.0066, deficit/L 0.0201; B/d2 0.8786; d2 L 0.1655; B L 0.1454
+  N in [700,1000] L in [6.55,6.91]: deficit mean 0.1305, local slope d(deficit)/dL 0.0297, deficit/L 0.0194; B/d2 0.8823; d2 L 0.1645; B L 0.1452
+fit deficit = 0.0040 + 0.0190 L: resid sd 0.00276;  fit = 0.2175 + -0.5850/L: resid sd 0.00304
+DH detrended corr(L^2 B, L^2 d2) on N>=50: 0.987; sd 0.01114 0.01269
+zeta: fit deficit = 0.0644 + 0.0003 L on N in [50,1280] (resid sd 0.00121)
+  zeta N in [5,20]: deficit mean 0.0593
+  zeta N in [20,50]: deficit mean 0.0618
+  zeta N in [50,100]: deficit mean 0.0655

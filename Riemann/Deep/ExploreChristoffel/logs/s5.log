@@ -1,0 +1,17 @@
+deficit on [100,1280]: mean 0.06641 sd 0.00116; fit a + b/L:  [ 0.06748 -0.00673]
+regression c2o = +0.07383 + 1.1053 c2B, residual sd 0.00109 (raw sd of c2o 0.00435)
+regression c2o = +0.12632 + 1.5856 c2B + -0.1177/L, residual sd 0.00046
+N=1500 L=7.313 B L=0.036300 c2B=-0.07234 pred C2 (flat deficit) -0.00593 (2-par regression) -0.00613 (3-par) -0.00447
+N=2000 L=7.601 B L=0.037160 c2B=-0.06865 pred C2 (flat deficit) -0.00223 (2-par regression) -0.00205 (3-par) +0.00199
+N=2560 L=7.848 B L=0.037511 c2B=-0.06812 pred C2 (flat deficit) -0.00171 (2-par regression) -0.00146 (3-par) +0.00332  2611.03924 V2: +0.0028 (V2-V1 ~ +0.0003)
+N=3000 L=8.006 B L=0.036583 c2B=-0.07693 pred C2 (flat deficit) -0.01051 (2-par regression) -0.01120 (3-par) -0.01035
+N=4000 L=8.294 B L=0.036807 c2B=-0.07783 pred C2 (flat deficit) -0.01142 (2-par regression) -0.01220 (3-par) -0.01128
+N=5120 L=8.541 B L=0.037245 c2B=-0.07641 pred C2 (flat deficit) -0.01000 (2-par regression) -0.01063 (3-par) -0.00862  2611.03924 V2: -0.0091
+N=1e+04 L=9.210 B L=0.037619 c2B=-0.07895 pred C2 (flat deficit) -0.01254 (2-par regression) -0.01344 (3-par) -0.01164
+N=1e+05 L=11.513 B L=0.038786 c2B=-0.08526 pred C2 (flat deficit) -0.01885 (2-par regression) -0.02041 (3-par) -0.01909
+N=1e+06 L=13.816 B L=0.039976 c2B=-0.08587 pred C2 (flat deficit) -0.01946 (2-par regression) -0.02108 (3-par) -0.01835
+N=1e+08 L=18.421 B L=0.041526 c2B=-0.08594 pred C2 (flat deficit) -0.01953 (2-par regression) -0.02117 (3-par) -0.01634
+N=1e+10 L=23.026 B L=0.042275 c2B=-0.09018 pred C2 (flat deficit) -0.02377 (2-par regression) -0.02585 (3-par) -0.02178
+N=1e+15 L=34.539 B L=0.043513 c2B=-0.09251 pred C2 (flat deficit) -0.02610 (2-par regression) -0.02843 (3-par) -0.02378
+N=1e+20 L=46.052 B L=0.044146 c2B=-0.09421 pred C2 (flat deficit) -0.02780 (2-par regression) -0.03031 (3-par) -0.02562
+N=1e+30 L=69.078 B L=0.044812 c2B=-0.09530 pred C2 (flat deficit) -0.02889 (2-par regression) -0.03151 (3-par) -0.02650

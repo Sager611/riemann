@@ -1,0 +1,15 @@
+chi_-4 Gram N<=600 91.7s: d2(10)=0.045527 d2(10)logN=0.10483 d2(N)logN=0.12901
+Z check t=10.0: EM -0.443930036140 mpmath -0.443930036140
+Z check t=300.0: EM -2.862694968561 mpmath -2.862694968561
+Z check t=850.0: EM 1.874747112272 mpmath 1.874747112272
+first zeros vs mpmath refine: [np.float64(-8.881784197001252e-16), np.float64(-3.552713678800501e-15), np.float64(3.552713678800501e-15)]
+zeros of L(s,chi_-4) in (0,900.0): 767 by sign changes (smooth count 766.3); first [ 6.0209489  10.2437703  12.98809801 16.3426071 ]; Im Z check -1.75e-21; 97.8s
+chi4 N=    5 d2=6.247421e-02 d2L=0.10055 B+tail=4.467667e-02 ratio=0.7151 L^2(d2-B)=+0.04610 eigmin=0.237
+chi4 N=   10 d2=4.552655e-02 d2L=0.10483 B+tail=3.601831e-02 ratio=0.7911 L^2(d2-B)=+0.05041 eigmin=nan
+chi4 N=   20 d2=3.562123e-02 d2L=0.10671 B+tail=2.933798e-02 ratio=0.8236 L^2(d2-B)=+0.05639 eigmin=nan
+chi4 N=   40 d2=3.134435e-02 d2L=0.11563 B+tail=2.640994e-02 ratio=0.8426 L^2(d2-B)=+0.06715 eigmin=nan
+chi4 N=  100 d2=2.606382e-02 d2L=0.12003 B+tail=2.260694e-02 ratio=0.8674 L^2(d2-B)=+0.07331 eigmin=0.640
+chi4 N=  200 d2=2.321915e-02 d2L=0.12302 B+tail=2.051921e-02 ratio=0.8837 L^2(d2-B)=+0.07579 eigmin=nan
+chi4 N=  400 d2=2.135904e-02 d2L=0.12797 B+tail=1.902759e-02 ratio=0.8908 L^2(d2-B)=+0.08369 eigmin=nan
+chi4 N=  600 d2=2.016802e-02 d2L=0.12901 B+tail=1.808526e-02 ratio=0.8967 L^2(d2-B)=+0.08523 eigmin=1.118
+sum_on 1/|rho|^2 (zeros < 900.0) = 0.152969; done 165.8s maxrss 120 MB

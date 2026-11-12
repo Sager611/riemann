@@ -1,0 +1,22 @@
+zeta N=10 Bd=20 dps=0: BD n=10 d2 logN=0.054737 | Farey n=118 d2 logN=0.028960 (cond^-1 2.5e-05) | 0.1s
+   peak RSS bytes: 60014592  maximum resident set size
+zeta N=10 Bd=30 dps=0: BD n=10 d2 logN=0.054737 | Farey n=253 d2 logN=0.028025 (cond^-1 5.4e-06) | 0.9s
+   peak RSS bytes: 64126976  maximum resident set size
+zeta N=20 Bd=40 dps=0: BD n=20 d2 logN=0.049440 | Farey n=470 d2 logN=0.030093 (cond^-1 1.5e-06) | 2.0s
+   peak RSS bytes: 75890688  maximum resident set size
+zeta N=40 Bd=40 dps=0: BD n=40 d2 logN=0.046905 | Farey n=490 d2 logN=0.031725 (cond^-1 7.8e-07) | 2.3s
+   peak RSS bytes: 76873728  maximum resident set size
+zeta N=50 Bd=60 dps=0: BD n=50 d2 logN=0.046432 | Farey n=1092 d2 logN=0.031510 (cond^-1 2.1e-07) | 20.1s
+   peak RSS bytes: 119635968  maximum resident set size
+dh N=10 Bd=20 dps=0: BD n=10 d2 logN=0.121716 | Farey n=118 d2 logN=0.104904 (cond^-1 6.2e-05) | 1.0s
+   peak RSS bytes: 61358080  maximum resident set size
+dh N=20 Bd=30 dps=0: BD n=20 d2 logN=0.138197 | Farey n=268 d2 logN=0.120022 (cond^-1 1.3e-05) | 12.7s
+   peak RSS bytes: 61440000  maximum resident set size
+dh N=40 Bd=40 dps=0: BD n=40 d2 logN=0.137391 | Farey n=490 d2 logN=0.119527 (cond^-1 2.1e-06) | 66.0s
+   peak RSS bytes: 63897600  maximum resident set size
+chi4 N=10 Bd=20 dps=0: BD n=10 d2 logN=0.104829 | Farey n=118 d2 logN=0.084657 (cond^-1 8.0e-05) | 1.2s
+   peak RSS bytes: 61063168  maximum resident set size
+chi4 N=20 Bd=30 dps=0: BD n=20 d2 logN=0.106712 | Farey n=268 d2 logN=0.089259 (cond^-1 1.7e-05) | 7.5s
+   peak RSS bytes: 59342848  maximum resident set size
+chi4 N=40 Bd=40 dps=0: BD n=40 d2 logN=0.115626 | Farey n=490 d2 logN=0.098764 (cond^-1 2.5e-06) | 39.5s
+   peak RSS bytes: 62914560  maximum resident set size
