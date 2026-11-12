@@ -58,7 +58,7 @@ Proof.
    bound = (∫φ)^{3/2} N^{3/2} L^{1/2} √u (1 − u/3)²/(2π) (1 + O(1/L)); u = 3/5 maximizes √u(1 − u/3)² = 0.49574;
    L = ½ log N + O(log log N); ∫φ → 1. ∎
    Uses RH only through λ_n = Σ_γ g_n(γ) with real θ_γ; no pair correlation, no simplicity. Data: logs/check_tau.txt
-   (Σφ R̃² is 4.5–5.1 times the bound at N = 2·10^4, 10^5); logs/analyze.txt (Σ_{n≤N}R² ≥ 1.7 c_1 N^{3/2}(log N)^{1/2}, N ≤ 10^5).
+   (Σφ R̃² is 4.5–5.1 times the bound at N = 2·10^4, 10^5); logs/analyze.txt (sampled N; over every 100 ≤ N ≤ 10^5 the ratio Σ_{n≤N}R²/(c_1 N^{3/2}(log N)^{1/2}) is 1.472–2.694, minimum at N = 660, liaudit's logs/minratio.txt).
 
 ## Theorem 2 (RH). Σ_{N<n≤2N} R(n)² ≪ N^{3/2}(log N)^{3/2}; using Montgomery's pair-correlation theorem (RH),
 ## Σ_{N<n≤2N} R(n)² ≪ N^{3/2}(log N)^{1/2} log log N.
@@ -96,7 +96,7 @@ Proof. Φ_+(x) := Σ_n φ(n/N)e^{inx}; G_N(t) := Σ_n φ(n/N) g_n(t) = 2Φ_+(0) 
 "the tiny oscillations may be bounded in absolute value by a·log(n)"; λ_tiny = λ̃_n. False for every a: λ̃_n = R(n) − 3/4 + O(1/n)
 = Ω((n log n)^{1/4}) by Corollary 1 (unconditional). Numerically (two DFT radii agree to 25 digits): first n with |λ̃_n| > 2 log n is
 n = 5083 (λ̃_5083 = 17.158913, 2 log 5083 = 17.067314); 7584 such n ≤ 10⁵; max |λ̃_n|/log n = 4.18 at n = 79302 (λ̃ = 47.170651);
-a = 3 fails from n = 46992, a = 4 from n = 79286. (Their evidence: n ≤ 30.)
+a = 3 fails from n = 46992, a = 4 from n = 79286. (Their evidence: computed values for n ≤ 31, Maślanka's values to n = 3000 and plots to n = 8000; liaudit.)
 
 ## Barrier (pointwise exponent). Theorems 1–3: 1/4 ≤ inf{c: R(n) = O(n^c)} ≤ 1/2 under RH. Lowering 1/2 needs cancellation
 in Z_T(n) = Σ_{γ≤T} e^{inθ_γ} at T ≍ √n, n θ_γ ≈ n/γ ≥ √n, which RH does not supply (Lemma A is exact; the trivial bound

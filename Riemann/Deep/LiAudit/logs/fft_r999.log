@@ -1,0 +1,8 @@
+k=16384 t=7.5s
+k=32768 t=14.9s
+k=49152 t=22.4s
+Im f at last interior point 1.385e-10; Re jump 3.318e-12
+unwrapped points 64997; max |d arg zeta| there 4.410e-02; Im f(-r) = 0.000e+00 (must be 0)
+dft done t=31.3s
+wrote .scratch/liaudit/lam_r999.txt; worst error bound 5.513e-51; total 32.4s
+memcap: peak 97 MB rc=0

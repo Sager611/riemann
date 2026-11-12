@@ -1,0 +1,31 @@
+N=1000 delta=0.10 T=21.27 N(T)=2 int(phi)=0.9193 Phi(0)/N=0.9193 u_eff=0.600
+  ||W||^2 - Pm/2 = 9.669e-03 (Pp/2 = 9.669e-03);  X + Pm = -7.0189e+02 (claim <= tiny; Pm = 1.8488e+03)
+  CS: <R,W>^2/||W||^2 = 1.4623e+03 <= ||R||^2 = 5.7869e+03;  <R,W> = -1.1627e+03, -(2||W||^2 - tau') = -4.6081e+02
+  trend: max_g |tau - log(2pi th)/th^2| = 554.243 (log N = 6.91) at th=0.0476 (N^-1/2=0.0316); tau'/tau_T = 1.99375; tau'/(Phi0 N(T)) = 0.7550
+  bound Phi0 N(T)(1-tau'/(Phi0 N(T)))^2 = 1.1038e+02;  sum_{n<=N} R^2 = 9.8454e+03 (ratio 89.197);  c1-asymptotic 4.6369e+03
+N=10000 delta=0.10 T=51.26 N(T)=10 int(phi)=0.9193 Phi(0)/N=0.9193 u_eff=0.600
+  ||W||^2 - Pm/2 = 3.139e-06 (Pp/2 = 3.139e-06);  X + Pm = -4.2428e+02 (claim <= tiny; Pm = 9.2328e+04)
+  CS: <R,W>^2/||W||^2 = 1.0233e+05 <= ||R||^2 = 2.2585e+05;  <R,W> = -6.8732e+04, -(2||W||^2 - tau') = -6.8308e+04
+  trend: max_g |tau - log(2pi th)/th^2| = 30.978 (log N = 9.21) at th=0.0201 (N^-1/2=0.0100); tau'/tau_T = 1.00408; tau'/(Phi0 N(T)) = 0.2613
+  bound Phi0 N(T)(1-tau'/(Phi0 N(T)))^2 = 5.0162e+04;  sum_{n<=N} R^2 = 3.3147e+05 (ratio 6.608);  c1-asymptotic 1.6931e+05
+N=100000 delta=0.10 T=134.22 N(T)=45 int(phi)=0.9193 Phi(0)/N=0.9193 u_eff=0.600
+  ||W||^2 - Pm/2 = 4.936e-08 (Pp/2 = 4.951e-08);  X + Pm = -1.4215e+03 (claim <= tiny; Pm = 4.1860e+06)
+  CS: <R,W>^2/||W||^2 = 4.9333e+06 <= ||R||^2 = 9.5477e+06;  <R,W> = -3.2133e+06, -(2||W||^2 - tau') = -3.2119e+06
+  trend: max_g |tau - log(2pi th)/th^2| = 13.507 (log N = 11.51) at th=0.0075 (N^-1/2=0.0032); tau'/tau_T = 1.00015; tau'/(Phi0 N(T)) = 0.2355
+  bound Phi0 N(T)(1-tau'/(Phi0 N(T)))^2 = 2.4179e+06;  sum_{n<=N} R^2 = 1.4719e+07 (ratio 6.087);  c1-asymptotic 5.9862e+06
+N=100000 delta=0.02 T=138.19 N(T)=47 int(phi)=0.9838 Phi(0)/N=0.9838 u_eff=0.600
+  ||W||^2 - Pm/2 = 4.602e-04 (Pp/2 = 4.602e-04);  X + Pm = -6.8382e+03 (claim <= tiny; Pm = 4.6867e+06)
+  CS: <R,W>^2/||W||^2 = 5.5502e+06 <= ||R||^2 = 1.0797e+07;  <R,W> = -3.6064e+06, -(2||W||^2 - tau') = -3.5995e+06
+  trend: max_g |tau - log(2pi th)/th^2| = 1384.440 (log N = 11.51) at th=0.0076 (N^-1/2=0.0032); tau'/tau_T = 0.99873; tau'/(Phi0 N(T)) = 0.2351
+  bound Phi0 N(T)(1-tau'/(Phi0 N(T)))^2 = 2.7051e+06;  sum_{n<=N} R^2 = 1.4719e+07 (ratio 5.441);  c1-asymptotic 5.9862e+06
+N=100000 delta=0.10 T=158.11 N(T)=57 int(phi)=0.9193 Phi(0)/N=0.9193 u_eff=0.877
+  ||W||^2 - Pm/2 = 5.914e-08 (Pp/2 = 5.848e-08);  X + Pm = -1.7033e+04 (claim <= tiny; Pm = 5.4057e+06)
+  CS: <R,W>^2/||W||^2 = 4.8877e+06 <= ||R||^2 = 9.5477e+06;  <R,W> = -3.6347e+06, -(2||W||^2 - tau') = -3.6177e+06
+  trend: max_g |tau - log(2pi th)/th^2| = 27.787 (log N = 11.51) at th=0.0063 (N^-1/2=0.0032); tau'/tau_T = 1.00022; tau'/(Phi0 N(T)) = 0.3413
+  bound Phi0 N(T)(1-tau'/(Phi0 N(T)))^2 = 2.2738e+06;  sum_{n<=N} R^2 = 1.4719e+07 (ratio 6.473);  c1-asymptotic 5.9862e+06
+N=10000 delta=0.10 T=50.00 N(T)=10 int(phi)=0.9193 Phi(0)/N=0.9193 u_eff=0.564
+  ||W||^2 - Pm/2 = 3.139e-06 (Pp/2 = 3.139e-06);  X + Pm = -4.2428e+02 (claim <= tiny; Pm = 9.2328e+04)
+  CS: <R,W>^2/||W||^2 = 1.0233e+05 <= ||R||^2 = 2.2585e+05;  <R,W> = -6.8732e+04, -(2||W||^2 - tau') = -6.8308e+04
+  trend: max_g |tau - log(2pi th)/th^2| = 30.978 (log N = 9.21) at th=0.0201 (N^-1/2=0.0100); tau'/tau_T = 1.00408; tau'/(Phi0 N(T)) = 0.2613
+  bound Phi0 N(T)(1-tau'/(Phi0 N(T)))^2 = 5.0162e+04;  sum_{n<=N} R^2 = 3.3147e+05 (ratio 6.608);  c1-asymptotic 1.6931e+05
+memcap: peak 0 MB rc=0

@@ -1,0 +1,5 @@
+Im f at last interior point -8.221e-06; Re jump 2.159e-11
+unwrapped points 0; max |d arg zeta| there 0.000e+00; Im f(-r) = 0.000e+00 (must be 0)
+dft done t=6.3s
+wrote .scratch/liaudit/trend_r999.txt; worst error bound 5.513e-51; total 7.6s
+memcap: peak 14 MB rc=0
