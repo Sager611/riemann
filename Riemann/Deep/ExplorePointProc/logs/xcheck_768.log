@@ -1,0 +1,12 @@
+J (quadrature) = 0.306839281978626  fhat(0)= 1.0011
+  u=0.0000  fhat Hermite 1.0011  numeric FT 1.0011
+  u=0.5000  fhat Hermite 0.290201945288  numeric FT 0.290201945288
+  u=0.7680  fhat Hermite -0.215804591783  numeric FT -0.215804591783
+  u=1.0000  fhat Hermite -0.45500090824  numeric FT -0.45500090824
+  u=1.5000  fhat Hermite -0.312864206399  numeric FT -0.312864206399
+  u=2.3040  fhat Hermite -5.35195317071e-7  numeric FT -5.35195317071e-7
+  u=3.0000  fhat Hermite -0.0015802293286  numeric FT -0.0015802293286
+random/edge max Phi = -0.3479745137 vs c_cert -0.3478616532 : OK
+max fhat on [U,12] = -1.025e-197
+min f on [0,12] = 5.906e-126
+memcap: peak 23 MB rc=0

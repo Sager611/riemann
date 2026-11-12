@@ -1,0 +1,36 @@
+dual_t47_k7X26.json lam 0.775 theta 0.57143 h 0.11071 k0 7 K 235
+  largest atoms (u, mu): [(np.float64(0.775), np.float64(0.757)), (np.float64(3.211), np.float64(0.436)), (np.float64(2.436), np.float64(0.433)), (np.float64(5.757), np.float64(0.42)), (np.float64(6.532), np.float64(0.387)), (np.float64(1.55), np.float64(0.367)), (np.float64(4.982), np.float64(0.293)), (np.float64(8.968), np.float64(0.289))]
+  max mu_p+mu_q-mu_{p+q}-1 = 0.1474 at (p,q)=(7, np.int64(7)) u=(0.775,0.775)
+  max mu_p+mu_q-mu_{q-p}-1 = -0.0229 at (p,q)=(7, np.int64(15)) u=(0.775,1.661)
+  max Palm mass in a window of length < lam: 0.8834 at u in [1.882,2.546]
+  # violated (p,q) sum-type triangles: 2
+dual_t47_k10X18.json lam 0.77 theta 0.57143 h 0.077 k0 10 K 234
+  largest atoms (u, mu): [(np.float64(0.77), np.float64(0.751)), (np.float64(3.234), np.float64(0.535)), (np.float64(4.004), np.float64(0.443)), (np.float64(2.464), np.float64(0.4)), (np.float64(1.54), np.float64(0.347)), (np.float64(5.698), np.float64(0.308)), (np.float64(6.468), np.float64(0.301)), (np.float64(8.316), np.float64(0.234))]
+  max mu_p+mu_q-mu_{p+q}-1 = 0.1557 at (p,q)=(10, np.int64(10)) u=(0.770,0.770)
+  max mu_p+mu_q-mu_{q-p}-1 = -0.0174 at (p,q)=(10, np.int64(32)) u=(0.770,2.464)
+  max Palm mass in a window of length < lam: 0.8829 at u in [1.848,2.541]
+  # violated (p,q) sum-type triangles: 3
+dual_t47_b.json lam 0.76 theta 0.57142 h 0.05067 k0 15 K 197
+  largest atoms (u, mu): [(np.float64(0.76), np.float64(0.737)), (np.float64(3.192), np.float64(0.415)), (np.float64(3.952), np.float64(0.403)), (np.float64(1.52), np.float64(0.31)), (np.float64(2.432), np.float64(0.292)), (np.float64(4.712), np.float64(0.254)), (np.float64(7.144), np.float64(0.208)), (np.float64(7.904), np.float64(0.189))]
+  max mu_p+mu_q-mu_{p+q}-1 = 0.1647 at (p,q)=(15, np.int64(15)) u=(0.760,0.760)
+  max mu_p+mu_q-mu_{q-p}-1 = -0.0959 at (p,q)=(15, np.int64(48)) u=(0.760,2.432)
+  max Palm mass in a window of length < lam: 0.8610 at u in [1.824,2.533]
+  # violated (p,q) sum-type triangles: 1
+cert_t47k3_X70_lam0.78.json lam 0.78 theta 0.57143 h 0.26 k0 3 K 269
+  largest atoms (u, mu): [(np.float64(4.16), np.float64(0.779)), (np.float64(0.78), np.float64(0.763)), (np.float64(3.38), np.float64(0.762)), (np.float64(7.54), np.float64(0.752)), (np.float64(10.92), np.float64(0.714)), (np.float64(11.7), np.float64(0.696)), (np.float64(6.76), np.float64(0.669)), (np.float64(15.08), np.float64(0.664))]
+  max mu_p+mu_q-mu_{p+q}-1 = 0.0338 at (p,q)=(3, np.int64(3)) u=(0.780,0.780)
+  max mu_p+mu_q-mu_{q-p}-1 = 0.0824 at (p,q)=(3, np.int64(7)) u=(0.780,1.820)
+  max Palm mass in a window of length < lam: 0.9024 at u in [2.080,2.600]
+  # violated (p,q) sum-type triangles: 2
+cert_t1k3_X40_lam0.595.json lam 0.595 theta 1 h 0.19833 k0 3 K 202
+  largest atoms (u, mu): [(np.float64(5.157), np.float64(0.6)), (np.float64(2.578), np.float64(0.566)), (np.float64(7.14), np.float64(0.542)), (np.float64(7.735), np.float64(0.54)), (np.float64(1.983), np.float64(0.535)), (np.float64(3.173), np.float64(0.513)), (np.float64(10.313), np.float64(0.506)), (np.float64(4.562), np.float64(0.502))]
+  max mu_p+mu_q-mu_{p+q}-1 = -0.2016 at (p,q)=(6, np.int64(6)) u=(1.190,1.190)
+  max mu_p+mu_q-mu_{q-p}-1 = -0.0441 at (p,q)=(6, np.int64(10)) u=(1.190,1.983)
+  max Palm mass in a window of length < lam: 0.7196 at u in [0.992,1.388]
+  # violated (p,q) sum-type triangles: 0
+dual_t1.json lam 0.55 theta 1.0 h 0.05 k0 11 K 200
+  largest atoms (u, mu): [(np.float64(1.2), np.float64(0.465)), (np.float64(0.55), np.float64(0.421)), (np.float64(1.75), np.float64(0.403)), (np.float64(2.95), np.float64(0.319)), (np.float64(2.35), np.float64(0.236)), (np.float64(5.3), np.float64(0.21)), (np.float64(4.1), np.float64(0.201)), (np.float64(8.8), np.float64(0.196))]
+  max mu_p+mu_q-mu_{p+q}-1 = -0.2170 at (p,q)=(11, np.int64(11)) u=(0.550,0.550)
+  max mu_p+mu_q-mu_{q-p}-1 = -0.1138 at (p,q)=(11, np.int64(24)) u=(0.550,1.200)
+  max Palm mass in a window of length < lam: 0.6840 at u in [1.950,2.450]
+  # violated (p,q) sum-type triangles: 0

@@ -1,0 +1,27 @@
+EPS added to B_0: 1/1000
+(1) p(0)=0.0010007511255442593 >0: True ; real roots of p in (0,inf): 0 ; lead>0: True
+(2) w0=40.358051 q(w0)=-2.823e+02 <0: True ; roots of q in (w0,inf): 0 ; lead<0: True
+(3) J=[0.306839281979 +/- 3.75e-13]  fhat(0)=[1.00110000000 +/- 6e-16]
+(4) max|fhat''| on grid 4.332, M3 <= 3536.5, M2 <= 4.553 (eta=1/8000, 30722 pts)
+(4) delta=192/48125 N=385: R1 = corners -0.3478888283 + rem 2.718e-05 = -0.3478616532 ; R2 (incl. rem 9.058e-06) = -0.5640124229 ; R3 = -0.3481091233 ; c_cert = max(R1,R2,R3) + 1e-12 = -0.3478616532
+(5) margin J - fhat(0) - 2 c_cert = [0.001462588425 +/- 3.53e-13]  -> PASS
+time 6.0s
+memcap: peak 0 MB rc=0
+        9.66 real         4.93 user         5.38 sys
+            41172992  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11632  page reclaims
+                2034  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   6  signals received
+                 365  voluntary context switches
+               31912  involuntary context switches
+            71616272  instructions retired
+            47070090  cycles elapsed
+             2228560  peak memory footprint

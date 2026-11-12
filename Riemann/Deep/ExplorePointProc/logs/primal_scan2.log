@@ -1,0 +1,9 @@
+aug theta=0.57142 D=30 s=1.1 lam=0.775 U=2.3173 J=0.308725 obj(J-2c or J)=1.013141  margin=+0.013141 c=-0.35221 beta=0.6546 rows=10583 (1.9s) rss=168MB
+aug theta=0.57142 D=30 s=1.1 lam=0.765 U=2.2873 J=0.307403 obj(J-2c or J)=0.994909  margin=-0.005091 c=-0.34375 beta=0.6627 rows=10441 (1.9s) rss=186MB
+aug theta=0.57142 D=30 s=1.1 lam=0.76 U=2.2724 J=0.306859 obj(J-2c or J)=0.985601  margin=-0.014399 c=-0.33937 beta=0.6669 rows=10293 (2.4s) rss=188MB
+aug theta=0.57142 D=30 s=1.1 lam=0.755 U=2.2574 J=0.462555 obj(J-2c or J)=0.976579  margin=-0.023421 c=-0.25701 beta=0.5220 rows=10301 (1.3s) rss=190MB
+memcap: peak 26 MB rc=0
+aug theta=0.57142 D=40 s=1.1 lam=0.775 U=2.3173 J=0.308341 obj(J-2c or J)=1.013363  margin=+0.013363 c=-0.35251 beta=0.6539 rows=10583 (2.9s) rss=204MB
+aug theta=0.57142 D=40 s=1.1 lam=0.76 U=2.2724 J=0.307199 obj(J-2c or J)=0.985815  margin=-0.014185 c=-0.33931 beta=0.6674 rows=10293 (2.2s) rss=227MB
+aug theta=0.57142 D=40 s=1.1 lam=0.755 U=2.2574 J=0.459496 obj(J-2c or J)=0.976693  margin=-0.023307 c=-0.25860 beta=0.5262 rows=10301 (3.0s) rss=239MB
+memcap: peak 26 MB rc=0

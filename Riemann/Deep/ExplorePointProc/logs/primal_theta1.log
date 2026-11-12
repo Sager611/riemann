@@ -1,0 +1,7 @@
+plain theta=1.00000 D=20 s=1.1 lam=0.6 U=0.6000 J=0.995953 obj(J-2c or J)=0.995953  margin=-0.004047 rows=5200 (0.2s) rss=98MB
+plain theta=1.00000 D=20 s=1.1 lam=0.61 U=0.6100 J=1.004816 obj(J-2c or J)=1.004816  margin=+0.004816 rows=5195 (0.3s) rss=105MB
+aug theta=1.00000 D=20 s=1.1 lam=0.55 U=1.6445 J=0.957554 obj(J-2c or J)=0.949222  margin=-0.050778 c=0.00417 beta=0.0000 rows=7814 (0.8s) rss=120MB
+aug theta=1.00000 D=20 s=1.1 lam=0.57 U=1.7043 J=0.974285 obj(J-2c or J)=0.968708  margin=-0.031292 c=0.00279 beta=0.0000 rows=8012 (1.1s) rss=131MB
+aug theta=1.00000 D=20 s=1.1 lam=0.58 U=1.7342 J=0.983932 obj(J-2c or J)=0.978117  margin=-0.021883 c=0.00291 beta=0.0000 rows=8114 (0.6s) rss=140MB
+aug theta=1.00000 D=20 s=1.1 lam=0.59 U=1.7641 J=0.994124 obj(J-2c or J)=0.987332  margin=-0.012668 c=0.00340 beta=0.0000 rows=8218 (0.6s) rss=146MB
+aug theta=1.00000 D=20 s=1.1 lam=0.6 U=1.7940 J=1.001450 obj(J-2c or J)=0.996351  margin=-0.003649 c=0.00255 beta=0.0000 rows=8324 (0.6s) rss=150MB
