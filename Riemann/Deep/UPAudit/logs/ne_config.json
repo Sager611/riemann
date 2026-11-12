@@ -1,0 +1,52 @@
+{
+ "n_bg": 716,
+ "n_planted": 357,
+ "deepest_random": [
+  5.88,
+  5.9,
+  5.92,
+  6.55,
+  7.3
+ ],
+ "max_ratio_to_majorant_A2": 1.7015618043468297,
+ "q=1.000": {
+  "moment_per_unit": 2.808663822804932,
+  "bg_per_unit": 1.1138755236052398,
+  "moment_over_majorant": 0.0035755410947034346,
+  "share_forced_a8": 0.014744835205651048,
+  "share_forced_a11": 0.027264738177046274,
+  "share_forced_a14": 0.10144100740886623
+ },
+ "q=2.000": {
+  "moment_per_unit": 59.80324239584169,
+  "bg_per_unit": 1.4407327964770251,
+  "moment_over_majorant": 1.6630495257871246e-07,
+  "share_forced_a8": 0.008654860691787307,
+  "share_forced_a11": 0.029520945382727783,
+  "share_forced_a14": 0.4079281068092438
+ },
+ "q=2.041": {
+  "moment_per_unit": 70.07898508665883,
+  "bg_per_unit": 1.4594878032075995,
+  "moment_over_majorant": 1.1211406947695768e-07,
+  "share_forced_a8": 0.008188772119270124,
+  "share_forced_a11": 0.028636591025593485,
+  "share_forced_a14": 0.4174628113013542
+ },
+ "q=2.500": {
+  "moment_per_unit": 447.9453490708966,
+  "bg_per_unit": 1.7070799242071688,
+  "moment_over_majorant": 1.3769750028105405e-09,
+  "share_forced_a8": 0.004093562120451055,
+  "share_forced_a11": 0.01894782122964213,
+  "share_forced_a14": 0.5042646057285407
+ },
+ "q=3.000": {
+  "moment_per_unit": 3666.193711630636,
+  "bg_per_unit": 2.0682259182307905,
+  "moment_over_majorant": 1.1786002288149353e-11,
+  "share_forced_a8": 0.001774344762009411,
+  "share_forced_a11": 0.011139212406316684,
+  "share_forced_a14": 0.5707215283300385
+ }
+}
