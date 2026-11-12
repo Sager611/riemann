@@ -1,0 +1,36 @@
+BCY zeta 4/7,1/2 [as printed]: Q(0)=1.002000 P1(1)=0.9999995 g-rep err 7.5e-17 asym 6.1e-16
+  c1=2.1358903452 c12=-4.736750e-03 c2=4.736755e-03 c=2.1311536002
+  kappa one-piece 0.4071222  two-piece (their P2) 0.4088567  (gain 1.734e-03);  best P2 (K=6) 0.4088567 (gain 1.735e-03)  [2.2s]
+BCY zeta (res up) [as printed]: Q(0)=1.002000 P1(1)=0.9999995 g-rep err 7.5e-17 asym 3.3e-16
+  c1=2.1358903452 c12=-4.736750e-03 c2=4.736755e-03 c=2.1311536002
+  kappa one-piece 0.4071222  two-piece (their P2) 0.4088567  (gain 1.734e-03);  best P2 (K=6) 0.4088567 (gain 1.735e-03)  [6.0s]
+KRZ GRC nu=1/4,1/4 [as printed]: Q(0)=0.999999 P1(1)=1.0000000 g-rep err 3.6e-18 asym 3.9e-14
+  c1=192.1071392440 c12=-8.390147e-06 c2=8.355840e-06 c=192.1071308196
+  kappa one-piece 0.0693876  two-piece (their P2) 0.0693876  (gain 7.761e-09);  best P2 (K=6) 0.0693876 (gain 8.345e-09)  [1.8s]
+KRZ uncond nu=5/27,25/149 [as printed]: Q(0)=1.000006 P1(1)=1.0000000 g-rep err 8.8e-19 asym 1.2e-13
+  c1=507.2218410042 c12=-5.360168e-05 c2=5.638073e-05 c=507.2217901816
+  kappa one-piece 0.0297588  two-piece (their P2) 0.0297588  (gain 1.561e-08);  best P2 (K=6) 0.0297588 (gain 1.617e-08)  [2.7s]
+BCY zeta 4/7,1/2 [Q(0)->1 by scale]: Q(0)=1.000000 P1(1)=0.9999995 g-rep err 7.5e-17 asym 4.4e-16
+  c1=2.1313603783 c12=-4.717859e-03 c2=4.717864e-03 c=2.1266425235
+  kappa one-piece 0.4087809  two-piece (their P2) 0.4105121  (gain 1.731e-03);  best P2 (K=6) 0.4105122 (gain 1.731e-03)  [2.1s]
+BCY zeta (res up) [Q(0)->1 by scale]: Q(0)=1.000000 P1(1)=0.9999995 g-rep err 7.5e-17 asym 6.7e-16
+  c1=2.1313603783 c12=-4.717859e-03 c2=4.717864e-03 c=2.1266425235
+  kappa one-piece 0.4087809  two-piece (their P2) 0.4105121  (gain 1.731e-03);  best P2 (K=6) 0.4105122 (gain 1.731e-03)  [6.0s]
+KRZ GRC nu=1/4,1/4 [Q(0)->1 by scale]: Q(0)=1.000000 P1(1)=1.0000000 g-rep err 3.6e-18 asym 4.3e-14
+  c1=192.1075214589 c12=-8.390164e-06 c2=8.355857e-06 c=192.1075130344
+  kappa one-piece 0.0693872  two-piece (their P2) 0.0693872  (gain 7.761e-09);  best P2 (K=6) 0.0693872 (gain 8.345e-09)  [2.1s]
+KRZ uncond nu=5/27,25/149 [Q(0)->1 by scale]: Q(0)=1.000000 P1(1)=1.0000000 g-rep err 8.8e-19 asym 5.7e-14
+  c1=507.2157663968 c12=-5.360103e-05 c2=5.638005e-05 c=507.2157155748
+  kappa one-piece 0.0297607  two-piece (their P2) 0.0297607  (gain 1.561e-08);  best P2 (K=6) 0.0297607 (gain 1.617e-08)  [2.0s]
+BCY zeta 4/7,1/2 [Q(0)->1 by shift]: Q(0)=1.000000 P1(1)=0.9999995 g-rep err 7.5e-17 asym 3.3e-16
+  c1=2.1315456911 c12=-4.756374e-03 c2=4.709725e-03 c=2.1267426674
+  kappa one-piece 0.4087130  two-piece (their P2) 0.4104754  (gain 1.762e-03);  best P2 (K=6) 0.4104755 (gain 1.763e-03)  [2.1s]
+BCY zeta (res up) [Q(0)->1 by shift]: Q(0)=1.000000 P1(1)=0.9999995 g-rep err 7.5e-17 asym 3.3e-16
+  c1=2.1315456911 c12=-4.756374e-03 c2=4.709725e-03 c=2.1267426674
+  kappa one-piece 0.4087130  two-piece (their P2) 0.4104754  (gain 1.762e-03);  best P2 (K=6) 0.4104755 (gain 1.763e-03)  [6.0s]
+KRZ GRC nu=1/4,1/4 [Q(0)->1 by shift]: Q(0)=1.000000 P1(1)=1.0000000 g-rep err 3.6e-18 asym 6.8e-14
+  c1=192.1075217757 c12=-8.389827e-06 c2=8.355871e-06 c=192.1075133519
+  kappa one-piece 0.0693872  two-piece (their P2) 0.0693872  (gain 7.761e-09);  best P2 (K=6) 0.0693872 (gain 8.345e-09)  [2.4s]
+KRZ uncond nu=5/27,25/149 [Q(0)->1 by shift]: Q(0)=1.000000 P1(1)=1.0000000 g-rep err 8.8e-19 asym 1.8e-13
+  c1=507.2158143601 c12=-5.360414e-05 c2=5.637981e-05 c=507.2157635316
+  kappa one-piece 0.0297607  two-piece (their P2) 0.0297607  (gain 1.561e-08);  best P2 (K=6) 0.0297607 (gain 1.617e-08)  [2.1s]

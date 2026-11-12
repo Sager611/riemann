@@ -1,0 +1,4 @@
+== uncond [control: one piece, same code]: R=10.40931323 th1=0.092592493 th2=0.083892517 MQ=30 J=12 K=8; start c1=1.6612407009e+04 kappa1=0.066422069290
+  it 0: after (p,g) c=1.661240700942e+04  after Q c=1.661240700877e+04  kappa2=0.0664220692935  c1-part=1.6612407009e+04 (kappa from c1 alone 0.0664220692898)  |g|=0.00e+00  chk c12 0.0e+00 c2 0.0e+00  [0s]
+  it 1: after (p,g) c=1.661240700941e+04  after Q c=1.661240700939e+04  kappa2=0.0664220692899  c1-part=1.6612407009e+04 (kappa from c1 alone 0.0664220692898)  |g|=0.00e+00  chk c12 0.0e+00 c2 0.0e+00  [0s]
+  it 2: after (p,g) c=1.661240700941e+04  after Q c=1.661240700939e+04  kappa2=0.0664220692899  c1-part=1.6612407009e+04 (kappa from c1 alone 0.0664220692896)  |g|=0.00e+00  chk c12 0.0e+00 c2 0.0e+00  [0s]

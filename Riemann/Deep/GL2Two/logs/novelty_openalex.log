@@ -1,0 +1,15 @@
+ZENODO 24101490: miosync-masa/xiprime-two-piece-mollifier: v0.2.0 — The PRZZ axiom is gone: 88.45% from explicit Weil and Deshouillers–Iwaniec hypotheses | 2026-11-10 | MASAMICHI IIZUMI
+  desc[:600]:  &lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body &lt;h2&gt;Headline&lt;/h2&gt; &lt;pre&gt;&lt;code class=&quot;language-lean&quot;&gt;theorem XiPrime8845.WuProportion.ratio_eventually_gt (hWeil : PRZZKloostermanInputs.WeilIncomplete) (hDI : PRZZKloostermanInputs.DeshouillersIwaniecLemma1) : ∀ᶠ X : ℝ in atTop, (0.8845:ℝ) &amp;lt; (N0 0 X:ℝ)/(Ncount 0 X:ℝ) &lt;/code&gt;&lt;/pre&gt; &lt;pre&gt;&lt;code class=&quot;language-text&quot;&gt;'XiPrime8845.WuProportion.ratio_eventually_gt' depends on axioms: [propext, Classical.choice, Quot.sound] &lt;/code&gt;&lt;/pre&gt; &lt;p&gt;For all sufficiently la
+WORK https://openalex.org/W2726356247 https://doi.org/10.1007/s00209-018-2099-9 2018 On mean values of mollifiers and L-functions associated to primitive cusp forms cited_by 7
+WORK https://openalex.org/W2009804837 https://doi.org/10.1007/s002220000086 2000 Mollification of the fourth moment of automorphic L-functions and arithmetic applications cited_by 80
+WORK https://openalex.org/W2979810286 https://doi.org/10.4064/aa170901-16-10 2019 Mollification of the fourth moment of Dirichlet $L$-functions cited_by 16
+WORK https://openalex.org/W4415337146 https://doi.org/10.48550/arxiv.2509.24690 2025 The mollified fourth moment of Dirichlet $L$-functions cited_by 2
+WORK https://openalex.org/W4405055848 https://doi.org/10.48550/arxiv.2412.02416 2024 A zero-density estimate for $L$-functions associated with $\rm GL(3)$ Hecke--Maass cusp forms cited_by 3
+CITERS of W2726356247: 7
+   2018 https://doi.org/10.1007/s00209-018-2209-8 | The twisted mean square and critical zeros of Dirichlet L-functions
+   2018 https://doi.org/10.1007/s40993-018-0103-4 | Perturbed moments and a longer mollifier for critical zeros of $$\zeta $$ ζ
+   2019 https://doi.org/10.1007/s40687-019-0199-8 | More than five-twelfths of the zeros of $$\zeta $$ are on the critical line
+   2018 https://doi.org/10.2206/kyushujm.72.35 | AN APPLICATION OF GENERALIZED MOLLIFIERS TO THE RIEMANN ZETA-FUNCTION
+   2024 https://doi.org/10.1007/s00208-024-02892-y | Simultaneous extreme values of zeta and L-functions
+   2021 https://doi.org/10.1515/forum-2020-0104 | Zeros of GL 2 𝐿-functions on the critical line
+   2025 https://doi.org/10.1016/j.jnt.2024.12.005 | Zeros of Dirichlet L-functions on the critical line

@@ -1,0 +1,4 @@
+== GRC [control: one piece, same code]: R=7.68807055 th1=0.124999900 th2=0.124999900 MQ=30 J=12 K=8; start c1=1.0948496921e+03 kappa1=0.089710178934
+  it 0: after (p,g) c=1.094849692059e+03  after Q c=1.094849692057e+03  kappa2=0.0897101789342  c1-part=1.0948496921e+03 (kappa from c1 alone 0.0897101789340)  |g|=0.00e+00  chk c12 0.0e+00 c2 0.0e+00  [0s]
+  it 1: after (p,g) c=1.094849692059e+03  after Q c=1.094849692058e+03  kappa2=0.0897101789341  c1-part=1.0948496921e+03 (kappa from c1 alone 0.0897101789340)  |g|=0.00e+00  chk c12 0.0e+00 c2 0.0e+00  [0s]
+  it 2: after (p,g) c=1.094849692059e+03  after Q c=1.094849692057e+03  kappa2=0.0897101789343  c1-part=1.0948496921e+03 (kappa from c1 alone 0.0897101789340)  |g|=0.00e+00  chk c12 0.0e+00 c2 0.0e+00  [0s]

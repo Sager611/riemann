@@ -1,0 +1,18 @@
+/Users/adriansager/playground/riemann/.scratch/lst.py:13: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2611.02748  [math.NT 2026-11]  When GL(2) cusp forms meet CM points in GSp(4)
+2611.01905  [math.NT 2026-11]  Convergence in law of the maximum of the Riemann zeta function on expanding intervals near the critical line
+2610.02709  [math.NT 2026-10]  Extreme values of Dirichlet $L$-functions on the critical line with a growing prime modulus
+2610.03976  [math.NT 2026-10]  Nonvanishing of special $L$-values of cusp forms on $\mathrm{GL}(2)$ with totally split prime power twists: without the class number hypothesis
+2610.08965  [math.NT 2026-10]  More than 83.9% of the zeros of the Riemann zeta function are distinct and more than 67.35% are simple and on the critical line
+2610.19309  [math.NT 2026-10]  Ternary polynomial relations and periods of cusp forms
+2610.22821  [math.NT 2026-10]  Poisson-Dirichlet statistics for the log-modulus of the Riemann zeta function on expanding intervals near the critical line
+2610.23467  [math.NT 2026-10]  More than 8/9 zeros of the Riemann zeta function are simple or on the critical line
+2610.27454  [math.NT 2026-10]  Quantum Variance for Hecke--Maass Cusp Forms on the Vertical Geodesic
+2610.27591  [math.NT 2026-10]  Small values of the Riemann zeta-function near the critical line
+2610.32242  [math.NT 2026-10]  Value-distribution of Euler--Zagier type multiple zeta-functions with identical arguments on the critical line
+2610.14901  [math.NT 2026-10]  Overlap distributions under the Gibbs measure of a Haar model of $\log|ζ|$ on and near the critical line
+2611.02768  [math.CA 2026-11]  The critical line for modulation invariant bilinear multipliers
+-- 13 title hits in 7 cats x (2026-11, 2026-10)
+zenodo 24101490  2026-11-10  miosync-masa/xiprime-two-piece-mollifier: v0.2.0 — The PRZZ axiom is gone: 88.45% from explicit Weil and Deshouillers–Iw
+-- zenodo total 1

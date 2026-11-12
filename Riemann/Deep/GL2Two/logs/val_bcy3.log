@@ -1,0 +1,2 @@
+kappa  (l.273-284): optimal P2 = 0.0245412 x^3 + -0.00635566 x^4 + 0.0060313 x^5 -> kappa 0.4105121;  printed P2 -> 0.4105121;  printed with x^5 coeff -> -0.00060313: 0.4104089;  one piece 0.4087809
+kappa* (l.285-294): optimal P2 = 0.0323061 x^3 + -0.00553783 x^4 + 0.0076959 x^5 -> kappa 0.4058028;  printed P2 -> 0.3934573;  printed with x^5 coeff -> -0.00769594: 0.4051891;  one piece 0.4021095

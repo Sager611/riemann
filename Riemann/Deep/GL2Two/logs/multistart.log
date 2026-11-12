@@ -1,0 +1,41 @@
+== multistart GRC krzQ: R=7.68807055 th1=0.124999900 th2=0.124999900 MQ=30 J=12 K=8; start c1=1.5200405100e+03 kappa1=0.047031083133
+  it 0: after (p,g) c=1.519023732198e+03  after Q c=1.095596990153e+03  kappa2=0.0896214278144  c1-part=1.0955969373e+03 (kappa from c1 alone 0.0896214340921)  |g|=7.84e-04  chk c12 -9.8e-17 c2 -5.0e-16  [21s]
+  it 1: after (p,g) c=1.094865942502e+03  after Q c=1.094850031785e+03  kappa2=0.0897101385734  c1-part=1.0948500320e+03 (kappa from c1 alone 0.0897101385521)  |g|=3.34e-05  chk c12 -3.7e-17 c2 -3.3e-20  [43s]
+  it 2: after (p,g) c=1.094849698947e+03  after Q c=1.094849692029e+03  kappa2=0.0897101789376  c1-part=1.0948496922e+03 (kappa from c1 alone 0.0897101789166)  |g|=3.31e-05  chk c12 1.4e-18 c2 -1.6e-19  [62s]
+  it 3: after (p,g) c=1.094849691884e+03  after Q c=1.094849691882e+03  kappa2=0.0897101789550  c1-part=1.0948496921e+03 (kappa from c1 alone 0.0897101789340)  |g|=3.31e-05  chk c12 -1.3e-17 c2 3.1e-19  [82s]
+== multistart GRC rand1: R=7.68807055 th1=0.124999900 th2=0.124999900 MQ=30 J=12 K=8; start c1=5.7179318090e+05 kappa1=-0.724299035358
+  it 0: after (p,g) c=5.643214012384e+05  after Q c=1.126567892402e+03  kappa2=0.0859955068310  c1-part=1.1265678512e+03 (kappa from c1 alone 0.0859955115871)  |g|=7.37e-04  chk c12 -6.9e-18 c2 1.1e-15  [22s]
+  it 1: after (p,g) c=1.095697748376e+03  after Q c=1.094868246146e+03  kappa2=0.0897079746678  c1-part=1.0948682463e+03 (kappa from c1 alone 0.0897079746441)  |g|=3.88e-05  chk c12 2.3e-17 c2 -2.8e-18  [43s]
+  it 2: after (p,g) c=1.094850080060e+03  after Q c=1.094849699951e+03  kappa2=0.0897101779963  c1-part=1.0948497001e+03 (kappa from c1 alone 0.0897101779752)  |g|=3.31e-05  chk c12 1.4e-17 c2 -2.6e-18  [64s]
+  it 3: after (p,g) c=1.094849692049e+03  after Q c=1.094849691883e+03  kappa2=0.0897101789549  c1-part=1.0948496921e+03 (kappa from c1 alone 0.0897101789336)  |g|=3.31e-05  chk c12 -1.3e-17 c2 2.1e-19  [86s]
+== multistart GRC rand2: R=7.68807055 th1=0.124999900 th2=0.124999900 MQ=30 J=12 K=8; start c1=4.3940690156e+04 kappa1=-0.390543437794
+  it 0: after (p,g) c=3.369138816244e+04  after Q c=1.595847198244e+03  kappa2=0.0407007863660  c1-part=1.5958446395e+03 (kappa from c1 alone 0.0407009949237)  |g|=6.57e-03  chk c12 5.7e-15 c2 -1.4e-14  [23s]
+  it 1: after (p,g) c=1.110886674948e+03  after Q c=1.095267893422e+03  kappa2=0.0896605047601  c1-part=1.0952678928e+03 (kappa from c1 alone 0.0896605048294)  |g|=1.35e-04  chk c12 1.9e-17 c2 -4.9e-18  [43s]
+  it 2: after (p,g) c=1.094858683759e+03  after Q c=1.094849879611e+03  kappa2=0.0897101566522  c1-part=1.0948498798e+03 (kappa from c1 alone 0.0897101566309)  |g|=3.33e-05  chk c12 4.1e-18 c2 1.7e-18  [61s]
+  it 3: after (p,g) c=1.094849695782e+03  after Q c=1.094849691962e+03  kappa2=0.0897101789454  c1-part=1.0948496921e+03 (kappa from c1 alone 0.0897101789244)  |g|=3.31e-05  chk c12 2.2e-17 c2 -1.8e-18  [83s]
+== multistart GRC Rq3: R=7.68807055 th1=0.124999900 th2=0.124999900 MQ=30 J=12 K=8; start c1=1.1645663001e+04 kappa1=-0.217820395138
+  it 0: after (p,g) c=1.107255851996e+04  after Q c=1.217465649861e+03  kappa2=0.0759025174539  c1-part=1.2174525480e+03 (kappa from c1 alone 0.0759039172414)  |g|=1.13e-02  chk c12 -9.5e-15 c2 1.4e-14  [19s]
+  it 1: after (p,g) c=1.098626824682e+03  after Q c=1.094937272381e+03  kappa2=0.0896997745276  c1-part=1.0949372726e+03 (kappa from c1 alone 0.0896997745035)  |g|=5.52e-05  chk c12 -9.3e-18 c2 1.0e-17  [37s]
+  it 2: after (p,g) c=1.094851540111e+03  after Q c=1.094849730355e+03  kappa2=0.0897101743843  c1-part=1.0948497305e+03 (kappa from c1 alone 0.0897101743631)  |g|=3.32e-05  chk c12 1.4e-17 c2 4.1e-18  [55s]
+  it 3: after (p,g) c=1.094849692680e+03  after Q c=1.094849691898e+03  kappa2=0.0897101789531  c1-part=1.0948496921e+03 (kappa from c1 alone 0.0897101789320)  |g|=3.31e-05  chk c12 2.6e-18 c2 -2.2e-18  [73s]
+== multistart uncond krzQ: R=10.40931323 th1=0.092592493 th2=0.083892517 MQ=30 J=12 K=8; start c1=5.4411243577e+04 kappa1=-0.047554805389
+  it 0: after (p,g) c=5.287727540542e+04  after Q c=1.719537283933e+04  kappa2=0.0631086422174  c1-part=1.7195372658e+04 (kappa from c1 alone 0.0631086432277)  |g|=4.40e-04  chk c12 -1.6e-16 c2 3.4e-14  [18s]
+  it 1: after (p,g) c=1.662843370874e+04  after Q c=1.661276329192e+04  kappa2=0.0664200089673  c1-part=1.6612763292e+04 (kappa from c1 alone 0.0664200089661)  |g|=1.38e-06  chk c12 -1.2e-17 c2 4.1e-19  [35s]
+  it 2: after (p,g) c=1.661241455044e+04  after Q c=1.661240716817e+04  kappa2=0.0664220683717  c1-part=1.6612407168e+04 (kappa from c1 alone 0.0664220683733)  |g|=7.91e-07  chk c12 -2.0e-18 c2 2.8e-19  [53s]
+  it 3: after (p,g) c=1.661240701273e+04  after Q c=1.661240700959e+04  kappa2=0.0664220692887  c1-part=1.6612407009e+04 (kappa from c1 alone 0.0664220692895)  |g|=7.82e-07  chk c12 4.0e-18 c2 -5.5e-20  [71s]
+== multistart uncond rand1: R=10.40931323 th1=0.092592493 th2=0.083892517 MQ=30 J=12 K=8; start c1=1.3279992178e+08 kappa1=-0.796886479706
+  it 0: after (p,g) c=1.316912604365e+08  after Q c=1.690568561301e+04  kappa2=0.0647408665655  c1-part=1.6905685611e+04 (kappa from c1 alone 0.0647408665742)  |g|=2.74e-05  chk c12 3.7e-16 c2 3.8e-16  [16s]
+  it 1: after (p,g) c=1.661996665851e+04  after Q c=1.661257206620e+04  kappa2=0.0664211147883  c1-part=1.6612572066e+04 (kappa from c1 alone 0.0664211147881)  |g|=1.15e-06  chk c12 -5.4e-19 c2 -1.3e-19  [34s]
+  it 2: after (p,g) c=1.661241049372e+04  after Q c=1.661240708270e+04  kappa2=0.0664220688660  c1-part=1.6612407083e+04 (kappa from c1 alone 0.0664220688664)  |g|=7.88e-07  chk c12 4.3e-18 c2 2.6e-19  [53s]
+  it 3: after (p,g) c=1.661240701095e+04  after Q c=1.661240700939e+04  kappa2=0.0664220692898  c1-part=1.6612407009e+04 (kappa from c1 alone 0.0664220692897)  |g|=7.82e-07  chk c12 -4.7e-18 c2 2.8e-19  [71s]
+== multistart uncond rand2: R=10.40931323 th1=0.092592493 th2=0.083892517 MQ=30 J=12 K=8; start c1=6.6925703066e+06 kappa1=-0.509850670486
+  it 0: after (p,g) c=5.561137809795e+06  after Q c=2.162770940374e+04  kappa2=0.0410769285403  c1-part=2.1627709284e+04 (kappa from c1 alone 0.0410769290712)  |g|=3.13e-04  chk c12 -1.4e-15 c2 -8.3e-15  [20s]
+  it 1: after (p,g) c=1.677660994400e+04  after Q c=1.661655246199e+04  kappa2=0.0663980995604  c1-part=1.6616552462e+04 (kappa from c1 alone 0.0663980995609)  |g|=4.46e-06  chk c12 2.5e-17 c2 6.0e-18  [38s]
+  it 2: after (p,g) c=1.661249650069e+04  after Q c=1.661240889523e+04  kappa2=0.0664220583843  c1-part=1.6612408896e+04 (kappa from c1 alone 0.0664220583803)  |g|=8.13e-07  chk c12 2.4e-19 c2 5.6e-19  [56s]
+  it 3: after (p,g) c=1.661240704903e+04  after Q c=1.661240701005e+04  kappa2=0.0664220692860  c1-part=1.6612407010e+04 (kappa from c1 alone 0.0664220692849)  |g|=7.82e-07  chk c12 2.5e-18 c2 1.3e-19  [75s]
+== multistart uncond Rq3: R=10.40931323 th1=0.092592493 th2=0.083892517 MQ=30 J=12 K=8; start c1=4.0640622785e+06 kappa1=-0.461930605441
+  it 0: after (p,g) c=3.725970587513e+06  after Q c=2.072533796683e+04  kappa2=0.0451711782069  c1-part=2.0725336455e+04 (kappa from c1 alone 0.0451711852137)  |g|=9.28e-04  chk c12 2.5e-15 c2 -1.7e-13  [21s]
+  it 1: after (p,g) c=1.674684894535e+04  after Q c=1.661574161783e+04  kappa2=0.0664027875322  c1-part=1.6615741619e+04 (kappa from c1 alone 0.0664027875264)  |g|=3.83e-06  chk c12 8.9e-18 c2 6.5e-18  [40s]
+  it 2: after (p,g) c=1.661247879156e+04  after Q c=1.661240852235e+04  kappa2=0.0664220605406  c1-part=1.6612408522e+04 (kappa from c1 alone 0.0664220605430)  |g|=8.10e-07  chk c12 5.3e-18 c2 -2.3e-19  [60s]
+  it 3: after (p,g) c=1.661240704118e+04  after Q c=1.661240701079e+04  kappa2=0.0664220692818  c1-part=1.6612407010e+04 (kappa from c1 alone 0.0664220692860)  |g|=7.82e-07  chk c12 8.4e-19 c2 2.3e-19  [78s]
+DONE
