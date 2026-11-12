@@ -1,0 +1,12 @@
+KLN rows at H0 = 3e12: not admissible (dropped): ['0.60']
+KLN rows at H0 = 3e12: A(sigma0) = 0.65:2.7922 0.70:3.7563 0.75:4.9832 0.80:6.5478 0.85:8.5122 0.86:8.9580 0.87:9.4220 0.88:9.9044 0.89:10.406 0.90:10.926 0.91:11.466 0.92:12.024 0.93:12.601 0.94:13.196 0.95:13.810 0.96:14.441 0.97:15.089 0.98:15.753 0.99:16.431
+(1) W(s): Arb closed form (cert) / quadrature; KLN quad uses the exact (log kt)^{2s}, so ratio >= 1:
+  s=0.7  KLN 2.59816e-9 ratio 1.01598062 | CS 1.63445e-11 ratio 1.0 | mpmath-cf/quad KLN 1.01598062 CS 1.0
+  s=0.8  KLN 8.83889e-13 ratio 1.0 | CS 4.19591e-14 ratio 1.0 | mpmath-cf/quad KLN 1.0 CS 1.0
+  s=0.85  KLN 1.61808e-14 ratio 1.0 | CS 1.50909e-15 ratio 1.0 | mpmath-cf/quad KLN 1.0 CS 1.0
+  s=0.86  KLN 7.27061e-15 ratio 1.0 | CS 7.13414e-16 ratio 1.0 | mpmath-cf/quad KLN 1.0 CS 1.0
+  s=0.87  KLN 3.26224e-15 ratio 1.0 | CS 3.32512e-16 ratio 0.999999996 | mpmath-cf/quad KLN 1.0 CS 0.999999996
+  s=0.873  KLN 2.56757e-15 ratio 1.0 | CS 2.64015e-16 ratio 0.999999996 | mpmath-cf/quad KLN 1.0 CS 0.999999996
+(2,3) CS_b4_corrected: continuous zero term 7.579965e-24; majorant 7.6584621e-24 = 2^-76.7892; cert 7.6717883e-24; cert/check 1.00174
+(2,3) KLN_RH3e12: continuous zero term 8.712718e-23; majorant 8.7205676e-23 = 2^-73.2799; cert 8.7461707e-23; cert/check 1.002936
+memcap: peak 19 MB rc=0

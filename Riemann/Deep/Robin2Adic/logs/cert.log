@@ -1,0 +1,44 @@
+Robin2Adic cert.py, prec 128 bits
+B2 = 0.87338196661320751993, T* = B2 + 2.2e-254, Bebel 0.87338196661320752, used B_UP = 0.87338196661329448034 (exact dyadic)
+tau (HSW) = 2.959407e-12; S_low = 2 + gamma - log 4pi = 0.04619142
+(1) GL (20) as printed at L = 106: 1.227034555e-23  (GL: < 1.227035e-23)
+    GL (20) at L1 = 108.57 with Re rho <= 7/8: 8.2671317e-24 = 2^-76.6789
+    GL (20) at L1 = 108.57 with Re rho <= B: 7.8073422e-24 = 2^-76.7614
+    elapsed 0 s
+threshold: log Lam = 108.57199; x <= e^100 excluded: True; x < e^108.570 excluded: True
+Lemma 3 slot condition (T+U)log(T+U) < xL/0.998 at x = e^L1: True (ratio 1.00000000000248)
+KLN rows at H0 = 3e12: not admissible (dropped): ['0.60']
+KLN rows at H0 = 3e12: A(sigma0) = 0.65:2.7922 0.70:3.7563 0.75:4.9832 0.80:6.5478 0.85:8.5122 0.86:8.9580 0.87:9.4220 0.88:9.9044 0.89:10.406 0.90:10.926 0.91:11.466 0.92:12.024 0.93:12.601 0.94:13.196 0.95:13.810 0.96:14.441 0.97:15.089 0.98:15.753 0.99:16.431
+KLN rows at H0 = 3e12: not admissible (dropped): ['0.60']
+KLN rows at H0 = 3e12: A(sigma0) = 0.65:3.7970 0.70:5.6890 0.75:8.4115 0.80:12.279 0.85:17.734 0.86:19.060 0.87:20.473 0.88:21.979 0.89:23.582 0.90:25.287 0.91:27.097 0.92:29.017 0.93:31.052 0.94:33.204 0.95:35.478 0.96:37.877 0.97:40.400 0.98:43.053 0.99:45.838
+(3) grid: 4964 points s_0 = 1/2 ... s_J = B_UP
+    slot form: a counterexample has p_j^{a_j+1} > 1/E*, so a_j >= (p:min a_j) 2:76 3:48 5:33 7:27 11:22 13:20; a_j >= 2 while p_j <= 3.638e+11
+(4) CS_b4_0.54: E* <= 7.5572811e-24 = 2^-76.8084 -> K = 75; 1/E* >= 1.32323e+23; terms: zeros>H0 7.47878e-24, low 5.053e-26, G 2.797e-26, 2pi 1.19e-49; share s>=0.85: 0.599; W(0.85) 1.4850e-15, W(B-) 2.5224e-16; decreasing at 8 L: True; 1 s
+    slot form: a counterexample has p_j^{a_j+1} > 1/E*, so a_j >= (p:min a_j) 2:76 3:48 5:33 7:27 11:22 13:20; a_j >= 2 while p_j <= 3.610e+11
+(4) CS_b4_corrected: E* <= 7.6717883e-24 = 2^-76.7867 -> K = 75; 1/E* >= 1.30348e+23; terms: zeros>H0 7.59329e-24, low 5.053e-26, G 2.797e-26, 2pi 1.19e-49; share s>=0.85: 0.599; W(0.85) 1.5091e-15, W(B-) 2.5634e-16; decreasing at 8 L: True; 0 s
+    slot form: a counterexample has p_j^{a_j+1} > 1/E*, so a_j >= (p:min a_j) 2:73 3:46 5:31 7:26 11:21 13:19; a_j >= 2 while p_j <= 1.069e+11
+(4) KLN_RH3e12: E* <= 8.7461707e-23 = 2^-73.2757 -> K = 72; 1/E* >= 1.14336e+22; terms: zeros>H0 8.73832e-23, low 5.053e-26, G 2.797e-26, 2pi 1.19e-49; share s>=0.85: 0.525; W(0.85) 1.6181e-14, W(B-) 2.4903e-15; decreasing at 8 L: True; 5 s
+    slot form: a counterexample has p_j^{a_j+1} > 1/E*, so a_j >= (p:min a_j) 2:72 3:45 5:31 7:25 11:20 13:19; a_j >= 2 while p_j <= 7.515e+10
+(4) KLN_RH3e12_delta1: E* <= 1.7706578e-22 = 2^-72.2581 -> K = 71; 1/E* >= 5.64762e+21; terms: zeros>H0 1.76987e-22, low 5.053e-26, G 2.797e-26, 2pi 1.19e-49; share s>=0.85: 0.555; W(0.85) 3.3711e-14, W(B-) 5.4499e-15; decreasing at 8 L: True; 6 s
+    slot form: a counterexample has p_j^{a_j+1} > 1/E*, so a_j >= (p:min a_j) 2:76 3:48 5:33 7:27 11:22 13:20; a_j >= 2 while p_j <= 3.610e+11
+(4) min(CScorr,KLN): E* <= 7.6717883e-24 = 2^-76.7867 -> K = 75; 1/E* >= 1.30348e+23; terms: zeros>H0 7.59329e-24, low 5.053e-26, G 2.797e-26, 2pi 1.19e-49; share s>=0.85: 0.599; W(0.85) 1.5091e-15, W(B-) 2.5634e-16; decreasing at 8 L: True; 7 s
+peak RSS 37.5 MB, 20 s
+memcap: peak 23 MB rc=0
+       22.04 real        18.32 user        12.85 sys
+            39337984  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               29834  page reclaims
+                2330  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  21  signals received
+                 178  voluntary context switches
+               65131  involuntary context switches
+            79252206  instructions retired
+            64578566  cycles elapsed
+             2261328  peak memory footprint
