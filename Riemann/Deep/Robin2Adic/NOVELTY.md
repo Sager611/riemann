@@ -22,4 +22,4 @@ Verdict: no unconditional v_2(n) result beyond Axler's v_2(n) ≤ 20 (published)
 ## What is new here
 1. Unconditional (no RH, no CS): Robin for every n > 5040 with v_2(n) ≤ 72 (δ from KLN Table 1; 71 with δ = 1), every 73-free n in particular.
 2. Conditional on CS 2507.15184 (b_4 corrected to 0.5501): v_2(n) ≤ 75.
-3. Slot form: a counterexample has p_j^{a_j+1} > 1.14·10^22 in every slot (KLN), e.g. 2^73 | n, and a_j ≥ 2 for every prime-factor slot with p_j ≤ 1.07·10^11 (CS: 2^76 | n).
+3. Slot form: a counterexample has p_j^{a_j+1} > 1.14·10^22 in every slot (KLN), e.g. 2^73 | n, and a_j ≥ 2 for every prime-factor slot with p_j ≤ 1.069·10^11 (CS: 2^76 | n).

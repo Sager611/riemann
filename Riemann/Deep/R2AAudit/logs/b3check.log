@@ -1,0 +1,28 @@
+mu sieve to 20000000: 5.2 s
+X =    10000: X * sum_{X<n<5X} lambda_X(n)^2/n^2 = 0.453215   (b3 = 0.605)
+X =    30000: X * sum_{X<n<5X} lambda_X(n)^2/n^2 = 0.453289   (b3 = 0.605)
+X =   100000: X * sum_{X<n<5X} lambda_X(n)^2/n^2 = 0.453408   (b3 = 0.605)
+X =   300000: X * sum_{X<n<5X} lambda_X(n)^2/n^2 = 0.453416   (b3 = 0.605)
+X =  1000000: X * sum_{X<n<5X} lambda_X(n)^2/n^2 = 0.453416   (b3 = 0.605)
+X =  2000000: X * sum_{X<n<5X} lambda_X(n)^2/n^2 = 0.453404   (b3 = 0.605)
+X =  4000000: X * sum_{X<n<5X} lambda_X(n)^2/n^2 = 0.453405   (b3 = 0.605)
+peak RSS 119 MB, 8 s
+        8.40 real         7.34 user         0.19 sys
+           125321216  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               10900  page reclaims
+                   9  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 151  voluntary context switches
+               12103  involuntary context switches
+           420081699  instructions retired
+           163107196  cycles elapsed
+            19235320  peak memory footprint
+memcap: peak 18 MB rc=0

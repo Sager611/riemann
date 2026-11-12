@@ -6,7 +6,7 @@ Agent robin2adic, 12 Nov 2026. Method: Gracia Llorente (Zenodo 24044336, unrefer
 
 ## Claim
 **Theorem A.** σ(n) < e^γ n log log n for every n > 5040 with v_2(n) ≤ 72; in particular for every 73-free n. (KLN rows with their Table-1 δ ≈ 0.30; with δ = 1 in every row: v_2(n) ≤ 71.)
-**Theorem A′ (slot form).** A counterexample n has n > 10^(10^46.79) and p_j^{a_j+1} > 1.14·10^22 for every j ≤ m (a_j = exponent of the j-th smallest prime factor, p_j = j-th prime): a_1 ≥ 73 (2^73 | n), a_2 ≥ 46, a_3 ≥ 31, a_4 ≥ 26, a_5 ≥ 21, a_6 ≥ 19, and a_j ≥ 2 whenever p_j ≤ 1.07·10^11.
+**Theorem A′ (slot form).** A counterexample n has n > 10^(10^46.79) and p_j^{a_j+1} > 1.14·10^22 for every j ≤ m (a_j = exponent of the j-th smallest prime factor, p_j = j-th prime): a_1 ≥ 73 (2^73 | n), a_2 ≥ 46, a_3 ≥ 31, a_4 ≥ 26, a_5 ≥ 21, a_6 ≥ 19, and a_j ≥ 2 whenever p_j ≤ 1.069·10^11 (√(1/E*) = 1.06928·10^11; was misprinted 1.07·10^11, corrected by [R2AAudit](../R2AAudit/REPORT.md)).
 **Theorem B (conditional).** If Chourasiya–Simonič's density (arXiv 2507.15184 v2, Cor. 1.1; unrefereed) holds with B_1 raised for b_4 = 0.5501: v_2(n) ≤ 75, and p_j^{a_j+1} > 1.30·10^23 in every slot (2^76 | n).
 Inputs of Theorem A: RobinCH (Robin for 5041 ≤ n ≤ 10^(10^46.79)); Bebel's Lean half-plane (β ≤ 0.87338196661320752); Platt–Trudgian RH(3·10^12); Kadiri–Lumley–Ng Lemma 4.14 with RH(3·10^12) (Ingham4's rows); Hasanalizade–Shen–Wong zero count; BKLNW's θ table; Rosser–Schoenfeld θ < 1.01624x; Bertrand; Choie–Lichiardopol–Moree–Solé (odd n). No CS, no RH above 3·10^12.
 

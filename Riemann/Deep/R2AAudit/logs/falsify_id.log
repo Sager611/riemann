@@ -1,0 +1,38 @@
+sieve to 301000: 26082 primes, prefix sums built, 0.2 s, 47 MB
+all n in [6,40000]: 39995 n; identity fails 0 (max |resid| 5.0e-95); sign fails 0; m<=k,q_j>=p_j fails 0; slot fails 0 (min rel margin 0.000e+00 at x=3, v2=1); Robin<=>B+D+H>E fails 0; Robin false at 23 n; GL chain (c=0.998/(xL)) tested 38723 fails 0; E<2^-v2-1 cases 2493, Robin fails among them 0; direct-sigma mismatches 0; 6 s, 48 MB
+  Robin false at n = [6, 8, 9, 10, 12, 16, 18, 20, 24, 30, 36, 48, 60, 72, 84, 120, 180, 240, 360, 720, 840, 2520, 5040]
+HR integers <= 1e20: 58780; superabundant among them: 122
+superabundant <= 1e20: 120 n; identity fails 0 (max |resid| 1.1e-94); sign fails 0; m<=k,q_j>=p_j fails 0; slot fails 0 (min rel margin 0.000e+00 at x=3, v2=1); Robin<=>B+D+H>E fails 0; Robin false at 14 n; GL chain (c=0.998/(xL)) tested 115 fails 0; E<2^-v2-1 cases 0, Robin fails among them 0; direct-sigma mismatches 0; 0 s, 71 MB
+HR integers <= 1e20: 58778 n; identity fails 0 (max |resid| 1.3e-94); sign fails 0; m<=k,q_j>=p_j fails 0; slot fails 0 (min rel margin 0.000e+00 at x=3, v2=1); Robin<=>B+D+H>E fails 0; Robin false at 18 n; GL chain (c=0.998/(xL)) tested 58713 fails 0; E<2^-v2-1 cases 59, Robin fails among them 0; direct-sigma mismatches 0; 13 s, 71 MB
+CA numbers: 685 (largest prime up to 10723)
+colossally abundant: 684 n; identity fails 0 (max |resid| 1.5e-92); sign fails 0; m<=k,q_j>=p_j fails 0; slot fails 0 (min rel margin 0.000e+00 at x=3, v2=1); Robin<=>B+D+H>E fails 0; Robin false at 7 n; GL chain (c=0.998/(xL)) tested 684 fails 0; E<2^-v2-1 cases 0, Robin fails among them 0; direct-sigma mismatches 0; 7 s, 103 MB
+2^v * oddpart(CA), v<=80: 1132 n; identity fails 0 (max |resid| 1.6e-92); sign fails 0; m<=k,q_j>=p_j fails 0; slot fails 0 (min rel margin 5.854e-03 at x=10799, v2=1); Robin<=>B+D+H>E fails 0; Robin false at 1 n; GL chain (c=0.998/(xL)) tested 1132 fails 0; E<2^-v2-1 cases 235, Robin fails among them 0; direct-sigma mismatches 0; 12 s, 126 MB
+random even, v2<=80: 3996 n; identity fails 0 (max |resid| 1.6e-93); sign fails 0; m<=k,q_j>=p_j fails 0; slot fails 0 (min rel margin 6.246e-01 at x=41, v2=1); Robin<=>B+D+H>E fails 0; Robin false at 3 n; GL chain (c=0.998/(xL)) tested 3994 fails 0; E<2^-v2-1 cases 205, Robin fails among them 0; direct-sigma mismatches 0; 2 s, 130 MB
+primorial multiples: 3000 n; identity fails 0 (max |resid| 3.0e-92); sign fails 0; m<=k,q_j>=p_j fails 0; slot fails 0 (min rel margin 0.000e+00 at x=20879, v2=1); Robin<=>B+D+H>E fails 0; Robin false at 0 n; GL chain (c=0.998/(xL)) tested 3000 fails 0; E<2^-v2-1 cases 261, Robin fails among them 0; direct-sigma mismatches 0; 88 s, 130 MB
+  all n in [6,40000]: largest x = p_k at a Robin failure: 11 (n <= 5040 has x <= 11)
+  superabundant <= 1e20: largest x = p_k at a Robin failure: 11 (n <= 5040 has x <= 11)
+  HR integers <= 1e20: largest x = p_k at a Robin failure: 11 (n <= 5040 has x <= 11)
+  colossally abundant: largest x = p_k at a Robin failure: 11 (n <= 5040 has x <= 11)
+  2^v * oddpart(CA), v<=80: largest x = p_k at a Robin failure: 3 (n <= 5040 has x <= 11)
+  random even, v2<=80: largest x = p_k at a Robin failure: 3 (n <= 5040 has x <= 11)
+  primorial multiples: largest x = p_k at a Robin failure: None (n <= 5040 has x <= 11)
+peak RSS 130 MB, 135 s
+      135.90 real       126.54 user         1.36 sys
+           136216576  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12915  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   1  voluntary context switches
+              139302  involuntary context switches
+           421313834  instructions retired
+           184624277  cycles elapsed
+            20939256  peak memory footprint
+memcap: peak 114 MB rc=0
