@@ -1,0 +1,4 @@
+N=10 Bd=70 n=1348 keys=225678 d2=0.0119134147 d2logN=0.02743165 cond^-1=1.86e-07 14.1s maxrss 147 MB
+N=10 Bd=80 n=1772 keys=398916 d2=0.0118977117 d2logN=0.02739549 cond^-1=nan 25.4s maxrss 248 MB
+N=10 Bd=100 n=2741 keys=890229 d2=0.0118801954 d2logN=0.02735516 cond^-1=nan 84.7s maxrss 369 MB
+memcap: peak 195 MB rc=0

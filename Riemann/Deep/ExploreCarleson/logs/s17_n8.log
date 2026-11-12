@@ -1,0 +1,19 @@
+identity check
+eps=0.4 n=1 gamma=14.1347: product=0.97862933 formula=0.97862933 rel.diff=-8.08e-10
+eps=0.4 n=2 gamma=21.0220: product=0.95697109 formula=0.95697109 rel.diff=-7.82e-10
+eps=0.4 n=5 gamma=32.9351: product=0.91235204 formula=0.91235204 rel.diff=-7.13e-10
+eps=0.4 n=100 gamma=236.5242: product=0.70563848 formula=0.70563848 rel.diff=+5.15e-09
+eps=0.1 n=1 gamma=14.1347: product=0.99864748 formula=0.99864748 rel.diff=-5.05e-11
+eps=0.1 n=2 gamma=21.0220: product=0.99722802 formula=0.99722802 rel.diff=-4.89e-11
+eps=0.1 n=5 gamma=32.9351: product=0.99412652 formula=0.99412652 rel.diff=-4.46e-11
+eps=0.1 n=100 gamma=236.5242: product=0.97635566 formula=0.97635565 rel.diff=+3.22e-10
+fixed eps=0.4: delta at T~100: 0.8693, T~1e4: 0.2445, T~2e4: 0.2324; inf over sample 5.29e-02; mean delta*(T/2pi)^eps: 5.015
+fixed eps=0.1: delta at T~100: 0.9902, T~1e4: 0.8640, T~2e4: 0.8653; inf over sample 3.97e-01; mean delta*(T/2pi)^eps: 1.820
+a=0.5 T0=5634: zeta median delta=0.9499 min=0.5966 | CUE median=0.9487 q0.5%=0.6076 | Poisson median=0.8513 q0.5%=3.94e-03 | e^-a=0.6065
+a=0.5 T0=14204: zeta median delta=0.9474 min=0.6547 | CUE median=0.9483 q0.5%=0.6965 | Poisson median=0.8301 q0.5%=2.15e-02 | e^-a=0.6065
+a=1.0 T0=5634: zeta median delta=0.8200 min=0.3238 | CUE median=0.8117 q0.5%=0.3962 | Poisson median=0.5784 q0.5%=3.73e-03 | e^-a=0.3679
+a=1.0 T0=14204: zeta median delta=0.8127 min=0.3706 | CUE median=0.8125 q0.5%=0.3447 | Poisson median=0.6050 q0.5%=1.95e-03 | e^-a=0.3679
+a=2.0 T0=5634: zeta median delta=0.4944 min=0.1245 | CUE median=0.4897 q0.5%=0.1052 | Poisson median=0.2138 q0.5%=2.32e-04 | e^-a=0.1353
+a=2.0 T0=14204: zeta median delta=0.4823 min=0.1446 | CUE median=0.4819 q0.5%=0.0968 | Poisson median=0.2297 q0.5%=7.90e-05 | e^-a=0.1353
+35.0s
+memcap: peak 49 MB rc=0

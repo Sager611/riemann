@@ -1,0 +1,4 @@
+N=10 Bd=40 n=443 keys=25568 d2=0.0120432797 d2logN=0.02773068 cond^-1=1.79e-06 0.8s maxrss 64 MB
+N=10 Bd=50 n=700 keys=65704 d2=0.0119667830 d2logN=0.02755454 cond^-1=6.96e-07 3.1s maxrss 153 MB
+N=10 Bd=60 n=994 keys=127106 d2=0.0119341923 d2logN=0.02747949 cond^-1=3.53e-07 5.6s maxrss 349 MB
+memcap: peak 475 MB KILLED MEM>290MB rc=137

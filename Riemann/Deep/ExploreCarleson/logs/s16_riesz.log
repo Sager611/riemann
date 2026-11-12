@@ -1,0 +1,32 @@
+(a) smallest case {rho1, conj(rho1)} and (b) head two-sided estimate
+N=1e+01 K=   1: lmin=0.9872 lmax=1.0128 | |c~|^2 L=0.007359  B L=0.007425  bounds [0.007266, 0.007455]  B/|c~|^2=1.00896
+N=1e+01 K=  50: lmin=0.5174 lmax=1.4558 | |c~|^2 L=0.022337  B L=0.022634  bounds [0.015343, 0.043167]  B/|c~|^2=1.01332
+N=1e+01 K= 400: lmin=0.1741 lmax=1.8790 | |c~|^2 L=0.024796  B L=0.025313  bounds [0.013196, 0.142383]  B/|c~|^2=1.02085
+N=1e+03 K=   1: lmin=0.9994 lmax=1.0006 | |c~|^2 L=0.008964  B L=0.008969  bounds [0.008958, 0.008969]  B/|c~|^2=1.00059
+N=1e+03 K=  50: lmin=0.7513 lmax=1.2590 | |c~|^2 L=0.030366  B L=0.030250  bounds [0.024119, 0.040421]  B/|c~|^2=0.99618
+N=1e+03 K= 400: lmin=0.4708 lmax=1.4977 | |c~|^2 L=0.034598  B L=0.034558  bounds [0.023101, 0.073483]  B/|c~|^2=0.99884
+N=1e+10 K=   1: lmin=0.9971 lmax=1.0029 | |c~|^2 L=0.009652  B L=0.009652  bounds [0.009624, 0.009680]  B/|c~|^2=1.00003
+N=1e+10 K=  50: lmin=0.8937 lmax=1.1093 | |c~|^2 L=0.034652  B L=0.034635  bounds [0.031239, 0.038772]  B/|c~|^2=0.99951
+N=1e+10 K= 400: lmin=0.7764 lmax=1.2364 | |c~|^2 L=0.040195  B L=0.040154  bounds [0.032509, 0.051774]  B/|c~|^2=0.99897
+(c) local blocks of 200 zeros: median over blocks/samples of lmin, lmax, sigma_min, nmax
+N=1e+01 T~    1420: zeta lmin=0.1342 lmax=1.977 sig=0.3130 nmax=2 | CUE lmin=0.0361 lmax=2.052 sig=0.1906 nmax=2 | Poisson lmin=7.87e-11 lmax=4.063 sig=9.46e-03 nmax=5
+N=1e+01 T~    5449: zeta lmin=0.0369 lmax=2.061 sig=0.1654 nmax=2 | CUE lmin=0.0231 lmax=2.110 sig=0.1795 nmax=2 | Poisson lmin=-2.59e-14 lmax=4.238 sig=4.83e-03 nmax=5
+N=1e+01 T~    9879: zeta lmin=0.1366 lmax=1.945 sig=0.3422 nmax=2 | CUE lmin=0.0222 lmax=2.117 sig=0.1977 nmax=2 | Poisson lmin=-1.02e-11 lmax=4.043 sig=5.43e-03 nmax=5
+N=1e+01 T~   18047: zeta lmin=0.0325 lmax=2.095 sig=0.1557 nmax=2 | CUE lmin=0.0346 lmax=2.080 sig=0.1886 nmax=2 | Poisson lmin=-8.80e-11 lmax=4.033 sig=3.22e-03 nmax=5
+N=1e+03 T~    1420: zeta lmin=0.3463 lmax=1.673 sig=0.5065 nmax=2 | CUE lmin=0.2203 lmax=1.808 sig=0.4063 nmax=2 | Poisson lmin=5.02e-07 lmax=3.055 sig=1.24e-02 nmax=4
+N=1e+03 T~    5449: zeta lmin=0.0980 lmax=1.962 sig=0.2537 nmax=2 | CUE lmin=0.1408 lmax=1.890 sig=0.3186 nmax=2 | Poisson lmin=2.06e-08 lmax=3.580 sig=6.26e-03 nmax=4
+N=1e+03 T~    9879: zeta lmin=0.3358 lmax=1.667 sig=0.5141 nmax=2 | CUE lmin=0.0896 lmax=1.943 sig=0.2658 nmax=2 | Poisson lmin=5.71e-08 lmax=3.490 sig=5.72e-03 nmax=4
+N=1e+03 T~   18047: zeta lmin=0.0785 lmax=1.964 sig=0.2293 nmax=2 | CUE lmin=0.1040 lmax=1.946 sig=0.2745 nmax=2 | Poisson lmin=7.45e-08 lmax=3.619 sig=3.26e-03 nmax=4
+N=1e+10 T~    1420: zeta lmin=0.7716 lmax=1.228 sig=1.1394 nmax=1 | CUE lmin=0.6615 lmax=1.307 sig=0.7506 nmax=2 | Poisson lmin=1.93e-04 lmax=2.722 sig=1.84e-02 nmax=3
+N=1e+10 T~    5449: zeta lmin=0.4109 lmax=1.592 sig=0.5426 nmax=2 | CUE lmin=0.6250 lmax=1.352 sig=0.7148 nmax=2 | Poisson lmin=7.67e-05 lmax=2.696 sig=1.47e-02 nmax=3
+N=1e+10 T~    9879: zeta lmin=0.7525 lmax=1.250 sig=1.0761 nmax=1 | CUE lmin=0.4390 lmax=1.547 sig=0.5726 nmax=2 | Poisson lmin=2.37e-05 lmax=2.918 sig=1.20e-02 nmax=3
+N=1e+10 T~   18047: zeta lmin=0.3176 lmax=1.684 sig=0.4700 nmax=2 | CUE lmin=0.3516 lmax=1.640 sig=0.5047 nmax=2 | Poisson lmin=2.23e-04 lmax=2.877 sig=2.01e-02 nmax=3
+all 112 zeta blocks (N=1280): lmin range [0.0102, 0.6918], sigma_min range [0.0847, 0.8917]; corr(log lmin, log sigma_min)=0.997; lmin ~ sigma^1.84 x 1.144; nmax max 2
+N=1e+01 DH on-line block [98,234] (100): lmin=0.2359 lmax=1.769 sig=0.4495 nmax=2 | zeta same window (71): lmin=0.4350 lmax=1.474 sig=0.6555
+N=1e+01 DH on-line block [235,356] (100): lmin=0.1695 lmax=1.901 sig=0.3694 nmax=2 | zeta same window (74): lmin=0.3712 lmax=1.602 sig=0.5653
+N=1e+03 DH on-line block [98,234] (100): lmin=0.6079 lmax=1.367 sig=0.7443 nmax=2 | zeta same window (71): lmin=0.7443 lmax=1.295 sig=1.2149
+N=1e+03 DH on-line block [235,356] (100): lmin=0.4229 lmax=1.532 sig=0.6013 nmax=2 | zeta same window (74): lmin=0.6933 lmax=1.295 sig=1.0024
+N=1e+10 DH on-line block [98,234] (100): lmin=0.8230 lmax=1.171 sig=1.7086 nmax=1 | zeta same window (71): lmin=0.8836 lmax=1.114 sig=3.0288
+N=1e+10 DH on-line block [235,356] (100): lmin=0.7706 lmax=1.255 sig=1.3597 nmax=1 | zeta same window (74): lmin=0.8597 lmax=1.146 sig=2.4320
+29.5s maxrss 95 MB
+memcap: peak 76 MB rc=0

@@ -1,0 +1,18 @@
+N=2 Bd=20 n=65 keys=873 d2=0.2307823819 d2logN=0.15996616 cond^-1=9.29e-05 0.0s maxrss 51 MB
+N=2 Bd=40 n=246 keys=10606 d2=0.2303594165 d2logN=0.15967298 cond^-1=6.53e-06 0.2s maxrss 56 MB
+N=2 Bd=60 n=552 keys=53841 d2=0.2302608262 d2logN=0.15960464 cond^-1=1.23e-06 1.9s maxrss 73 MB
+N=2 Bd=80 n=984 keys=169597 d2=0.2302214421 d2logN=0.15957734 cond^-1=4.43e-07 10.5s maxrss 111 MB
+N=2 Bd=100 n=1523 keys=381025 d2=0.2302009624 d2logN=0.15956315 cond^-1=nan 34.7s maxrss 183 MB
+memcap: peak 136 MB rc=0
+N=3 Bd=20 n=87 keys=1415 d2=0.0591109294 d2logN=0.06493999 cond^-1=3.94e-05 0.0s maxrss 51 MB
+N=3 Bd=40 n=327 keys=16342 d2=0.0587051030 d2logN=0.06449415 cond^-1=2.82e-06 0.4s maxrss 59 MB
+N=3 Bd=60 n=735 keys=82362 d2=0.0586031782 d2logN=0.06438217 cond^-1=5.57e-07 2.7s maxrss 85 MB
+N=3 Bd=80 n=1313 keys=260820 d2=0.0585675613 d2logN=0.06434304 cond^-1=1.74e-07 15.7s maxrss 136 MB
+N=3 Bd=100 n=2029 keys=581361 d2=0.0585506479 d2logN=0.06432446 cond^-1=nan 54.3s maxrss 218 MB
+memcap: peak 168 MB rc=0
+N=5 Bd=20 n=104 keys=1852 d2=0.0181519410 d2logN=0.02921442 cond^-1=3.65e-05 0.0s maxrss 51 MB
+N=5 Bd=40 n=393 keys=21364 d2=0.0177027210 d2logN=0.02849143 cond^-1=2.23e-06 0.4s maxrss 63 MB
+N=5 Bd=60 n=883 keys=107200 d2=0.0176101002 d2logN=0.02834236 cond^-1=4.42e-07 4.0s maxrss 94 MB
+N=5 Bd=80 n=1575 keys=337147 d2=0.0175763939 d2logN=0.02828811 cond^-1=nan 20.7s maxrss 177 MB
+N=5 Bd=100 n=2435 keys=751515 d2=0.0175596414 d2logN=0.02826115 cond^-1=nan 72.1s maxrss 259 MB
+memcap: peak 182 MB rc=0
