@@ -1,0 +1,12 @@
+T=1e+04 th=0.45 N=63 terms=19 G=1.000 kmax=6 M2=1.000 M3=1.001 M4=1.001 M6=1.002 MVfactor4=1.40 max|R|/sqrtG=1.03
+T=1e+04 th=0.55 N=158 terms=49 G=1.001 kmax=7 M2=1.000 M3=1.001 M4=1.002 M6=1.007 MVfactor4=3.51 max|R|/sqrtG=1.07
+T=1e+04 th=0.60 N=251 terms=77 G=1.002 kmax=8 M2=1.000 M3=1.002 M4=1.005 M6=1.013 MVfactor4=7.31 max|R|/sqrtG=1.09
+T=1e+06 th=0.45 N=501 terms=111 G=1.000 kmax=6 M2=1.000 M3=1.000 M4=1.000 M6=1.001 MVfactor4=1.25 max|R|/sqrtG=1.04
+T=1e+06 th=0.55 N=1995 terms=443 G=1.001 kmax=7 M2=1.002 M3=1.004 M4=1.007 M6=1.015 MVfactor4=4.98 max|R|/sqrtG=1.08
+T=1e+06 th=0.60 N=3981 terms=882 G=1.003 kmax=8 M2=0.999 M3=1.000 M4=1.003 M6=1.012 MVfactor4=16.85 max|R|/sqrtG=1.11
+T=1e+08 th=0.45 N=3981 terms=753 G=1.000 kmax=6 M2=0.999 M3=0.999 M4=0.999 M6=0.999 MVfactor4=1.16 max|R|/sqrtG=1.04
+T=1e+08 th=0.55 N=25118 terms=4739 G=1.002 kmax=7 M2=0.999 M3=0.999 M4=1.000 M6=1.005 MVfactor4=7.31 max|R|/sqrtG=1.09
+T=1e+08 th=0.60 N=63095 terms=11902 G=1.003 kmax=8 M2=1.000 M3=1.002 M4=1.005 M6=1.016 MVfactor4=40.81 max|R|/sqrtG=1.14
+T=1e+10 th=0.45 N=31622 terms=4808 G=1.000 kmax=6 M2=1.000 M3=1.000 M4=1.000 M6=1.001 MVfactor4=1.10 max|R|/sqrtG=1.04
+T=1e+10 th=0.55 N=316227 terms=48054 G=1.002 kmax=7 M2=0.999 M3=1.000 M4=1.002 M6=1.007 MVfactor4=11.00 max|R|/sqrtG=1.10
+memcap: peak 257 MB rc=0

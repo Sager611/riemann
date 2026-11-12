@@ -1,0 +1,3 @@
+T=1e4 supp rho=(0.05,0.60)xL: 67 prime powers; |S_L| mean 0.959 max 2.186; |S_L - zero side| max 4.13e-09 mean 1.12e-09
+T=1e4 supp rho=(0.05,1.00)xL: 1229 prime powers; |S_L| mean 1.026 max 2.041; |S_L - zero side| max 1.64e-09 mean 1.16e-09
+memcap: peak 21 MB rc=0

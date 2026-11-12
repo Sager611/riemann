@@ -1,0 +1,9 @@
+T=1e+04 th=0.45 N=63 terms=39 G=1.212 M2=1.000 M3=1.132 M4=1.367 (diag 1.364) M6=2.322 MVfactor=1.40 max|R|/sqrtG=1.92
+T=1e+04 th=0.60 N=251 terms=154 G=1.338 M2=1.004 M3=1.204 M4=1.580 (diag 1.572) M6=3.340 MVfactor=7.31 max|R|/sqrtG=2.29
+T=1e+06 th=0.45 N=501 terms=307 G=1.212 M2=1.004 M3=1.139 M4=1.384 (diag 1.374) M6=2.405 MVfactor=1.25 max|R|/sqrtG=2.07
+T=1e+06 th=0.55 N=1995 terms=1213 G=1.300 M2=1.001 M3=1.188 M4=1.543 (diag 1.531) M6=3.222 MVfactor=4.98 max|R|/sqrtG=2.53
+T=1e+06 th=0.60 N=3981 terms=2421 G=1.345 M2=0.997 M3=1.204 M4=1.607 (diag nan) M6=3.654 MVfactor=16.85 max|R|/sqrtG=2.55
+T=1e+08 th=0.45 N=3981 terms=1615 G=1.230 M2=0.996 M3=1.138 M4=1.401 (diag nan) M6=2.545 MVfactor=1.16 max|R|/sqrtG=2.21
+T=1e+08 th=0.55 N=25118 terms=10184 G=1.328 M2=0.996 M3=1.194 M4=1.578 (diag nan) M6=3.501 MVfactor=7.31 max|R|/sqrtG=2.57
+T=1e+08 th=0.60 N=63095 terms=25574 G=1.378 M2=1.014 M3=1.255 M4=1.738 (diag nan) M6=4.406 MVfactor=40.81 max|R|/sqrtG=3.15
+memcap: peak 207 MB rc=0

@@ -1,0 +1,8 @@
+theta 0.55 eta 0.10
+T=1e4 (t in [1e4,1.99e4], step 0.02) terms=56 k=5 A=2: points 495000  max 1.123  99.9% 0.908  99% 0.759  max|R_T| 2.147
+T=1e4 (t in [1e4,1.99e4], step 0.02) terms=56 k=5 A=4: points 495000  max 1.852  99.9% 1.656  99% 1.477  max|R_T| 2.147
+t~1e8 T=6.67e+07 windows=34 terms=3926 k=5 A=2: points 4080  max 0.950  99.9% 0.893  99% 0.683  max|R_T| 2.460
+t~1e8 T=6.67e+07 windows=34 terms=3926 k=5 A=4: points 4080  max 1.737  99.9% 1.658  99% 1.485  max|R_T| 2.460
+t~9.8e10 T=6.52e+10 windows=34 terms=125854 k=5 A=2: points 4080  max 0.873  99.9% 0.758  99% 0.651  max|R_T| 2.423
+t~9.8e10 T=6.52e+10 windows=34 terms=125854 k=5 A=4: points 4080  max 1.916  99.9% 1.753  99% 1.467  max|R_T| 2.423
+memcap: peak 167 MB rc=0

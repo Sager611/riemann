@@ -1,0 +1,1 @@
+previous run: killed by memcap at 379 MB (dict-based diagonal); replaced by capped numpy diagonal
