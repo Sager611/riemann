@@ -1,0 +1,5 @@
+ISSUES
+
+1. **Minor — ℝ/ℂ specializations remain conditional.** `corA_allCubes` requires `h3`; no listed statement supplies it for ℝ or ℂ or states their unconditional corollaries. The memory cap explains, but does not close, this omission. Add those specializations.
+
+2. **Minor — prime-cube-root hypothesis not explicitly covered.** Corollary A assumes cube roots of every prime; `corA_allCubes` assumes the strictly stronger condition that every field element is a cube. `corA_cubes` has the appropriate positive-rational condition, but no listed theorem derives it from prime cube roots. Add that bridge or the prime-root corollary directly.

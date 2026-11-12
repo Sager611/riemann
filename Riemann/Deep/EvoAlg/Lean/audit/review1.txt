@@ -1,0 +1,7 @@
+ISSUES
+
+1. **Blocking — `CorA.lean`: missing necessity in Corollary A.** `corA_cubes` proves sufficiency only. No supplied statement proves that the conjecture holding for **every finite connected graph with ≥2 vertices** forces every positive rational to be a cube in `𝕜`.
+
+2. **Minor — `CorA.lean`: missing stated field specializations.** `corA_cubes` assumes all positive rational ratios are cubes. No supplied statement discharges this hypothesis for `ℝ`, `ℂ`, or characteristic-zero fields containing a cube root of every prime. Thus these explicit parts of Corollary A remain unstated.
+
+3. **Minor — `Examples.lean`: missing `K_{2,16}` example.** The paper explicitly asserts `AIsoRW (completeBipartiteGraph (Fin 2) (Fin 16)) ℚ`; the supplied statements include `K18_iso` but not this second positive example.

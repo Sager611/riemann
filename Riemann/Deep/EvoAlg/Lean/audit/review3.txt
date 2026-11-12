@@ -1,0 +1,3 @@
+FAITHFUL
+
+1. **Minor certification gap only:** unconditional ℝ/ℂ specializations remain uncompiled. `corA_allCubes` states the correct abstract implication; `corA_primes` now covers the prime-root hypothesis. No remaining statement-fidelity defect found.

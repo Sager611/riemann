@@ -1,0 +1,17 @@
+11:29 CLEAN REBUILD
+11:30 Defs rc=0 16s memcap: peak 207 MB rc=0
+11:30 Basic rc=0 16s memcap: peak 172 MB rc=0
+11:30 Lemma2 rc=0 24s memcap: peak 249 MB rc=0
+11:31 Diag rc=0 34s memcap: peak 208 MB rc=0
+11:31 TwinI rc=0 33s memcap: peak 242 MB rc=0
+11:32 Cor41 rc=0 42s memcap: peak 256 MB rc=0
+11:33 TheoremA rc=0 34s memcap: peak 212 MB rc=0
+11:34 CorA rc=0 51s memcap: peak 214 MB rc=0
+11:34 Examples rc=0 17s memcap: peak 254 MB rc=0
+11:34 CorA2 rc=0 33s memcap: peak 254 MB rc=0
+11:35 TheoremN rc=0 25s memcap: peak 208 MB rc=0
+11:36 TheoremI2 rc=0 76s memcap: peak 226 MB rc=0
+11:36 Lemma2M rc=0 9s memcap: peak 218 MB rc=0
+11:36 Check rc=0 9s memcap: peak 261 MB rc=0
+11:40 CorA3 rc=0 36s memcap: peak 207 MB rc=0
+11:41 Check rc=0 52s memcap: peak 205 MB rc=0

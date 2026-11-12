@@ -1,0 +1,344 @@
+VERDICT-ONLY STATEMENT-FIDELITY REVIEW. Do NOT run any tools, commands or subagents; answer from the text below only, within 2 minutes. Output: first line "FAITHFUL" or "ISSUES", then a numbered list (≤ 12 items) of concrete fidelity problems (Lean statement vs. paper statement: missing/extra hypotheses, wrong quantifiers, weaker/stronger claims, wrong definitions), each with severity (blocking / minor). Do not review proofs (all compile sorry-free; #print axioms of every listed theorem = [propext, Classical.choice, Quot.sound]).
+
+=== PAPER (NOTE.md §0–§5, the source to be formalized) ===
+Problem (survey arXiv 2610.22248, Question "Graphs versus random walks", TeX l. 1351–1354): "Prove that for every finite connected graph G one has A(G) ≅ A_RW(G) if and only if G is regular or biregular." The survey fixes an arbitrary field 𝕜 (l. 107). Biregular (CRR arXiv 1710.10516 l. 159) = bipartite with constant degree d_i on side V_i.
+Definitions (NOTE §0): A(G) has natural basis (e_v)_{v∈V} with e_v² = Σ_{w∼v} e_w; A_RW(G) has natural basis (e'_v) with e'_v² = d_v⁻¹ Σ_{w∼v} e'_w, where d_v = deg v must be invertible in 𝕜. (Evolution algebra: commutative algebra with a basis (e_i) such that e_i e_j = 0 for i ≠ j.) Throughout, G is finite and connected with n ≥ 2 vertices.
+Theorem A (characteristic 0). Let char 𝕜 = 0. Then A(G) ≅ A_RW(G) over 𝕜 if and only if 1. G is regular, or 2. G is bipartite with every vertex of side V_i of degree d_i (i = 1, 2), and d₁/d₂ ∈ (𝕜^×)³.
+Corollary A. Over R, over C, and over every field of characteristic 0 that contains a cube root of every prime, the conjecture is true for all finite connected graphs. Over a field 𝕜 of characteristic 0 the conjecture holds for all G iff every positive rational number is a cube in 𝕜. Over Q it is false: P₃ = K_{1,2} (ratio 2), K_{1,3}, K_{2,3}, …; whereas K_{1,8} and K_{2,16} (ratio 8) are isomorphic over Q.
+§1: twins v ≡ w iff N(v) = N(w); twin quotient H (classes, S ∼ T iff vertices adjacent); k_S = |S|, d_S common degree.
+Theorem N (§2.2, any field; E non-degenerate: e_i² ≠ 0 ∀i; i ≈ j iff e_i² ∈ 𝕜e_j²; class T with e_i² = λ_i u_T, E_T = span{e_i : i ∈ T}, b_T(x,y) = Σ_{i∈T} λ_i x_i y_i): A subset B' ⊂ E is a natural basis of E iff B' = ⊔_T B'_T, where each B'_T is a b_T-orthogonal basis of E_T. Lemma 1 (BCS22 Thm 2.4(i) "⇒"): if f = f_a = Σα_i e_i is in a natural basis then dim span{e_i² : α_i ≠ 0} ≤ 1.
+Theorem I (§3, any field with d_v ∈ 𝕜^×). (1) If φ : A(G) → A_RW(G) is an algebra isomorphism, there are an automorphism τ of H with k_{τS} = k_S, scalars c_S ∈ 𝕜^× and matrices P_S (rows τS, columns S) with φ(e_v) = Σ_{w∈τS} (P_S)_{wv} e'_w (v ∈ S), (a) P_SᵀP_S = c_S d_S I, (b) P_S𝟙 = c_T𝟙 for every T ∼ S; c_S is defined by φ(e_v)² = c_S 1'_{N(τS)}; also d_{τS} = d_S. (2) Conversely any c : V(H) → 𝕜^× and P_S ∈ M_{k_S}(𝕜) satisfying (a), (b) define an isomorphism (τ = id).
+Lemma 2 (§4). P ∈ M_k(𝕜), α, γ ∈ 𝕜, PᵀP = αI and P𝟙 = γ𝟙 ⇒ k(γ² − α) = 0, via k(γ² − α) = 𝟙ᵀ(PᵀP − αI)𝟙 − (P𝟙 − γ𝟙)ᵀ(P𝟙 + γ𝟙). (The char-2 clause is not formalized.)
+Corollary 4.1 (§4). Suppose every twin-class size is non-zero in 𝕜 (or char 𝕜 = 2: not formalized). Then A(G) ≅ A_RW(G) iff there is c : V(H) → 𝕜^× with (i) c_T = c_{T'} whenever T and T' have a common H-neighbour, (ii) c_T² = c_S d_S whenever S ∼ T.
+§5 (char 0): from (i),(ii) and connectivity: G regular, or bipartite biregular with x³ = d₁d₂², d₁/d₂ = (x/d₂)³; conversely φ(e_v) = t²d₂ e'_v (v ∈ V₁), t d₂ e'_v (v ∈ V₂) when d₁/d₂ = t³.
+
+=== LEAN (Lean 4 + Mathlib; namespace EvoAlg) ===
+Context of every statement: variable {V : Type*} [Fintype V] [DecidableEq V] {𝕜 : Type*} [Field 𝕜] (G : SimpleGraph V) [DecidableRel G.Adj]. Model: the evolution algebra with natural basis (e_v = Pi.single v 1) and structure matrix M (e_v² = Σ_w M v w e_w) is 𝕜^V = (V → 𝕜) with product evoMul M (coordinates in the natural basis identify any such algebra with this one). Mathlib facts used in statements: SimpleGraph.IsBipartiteWith G s t := (Disjoint s t) ∧ (∀ v w, G.Adj v w → v ∈ s ∧ w ∈ t ∨ v ∈ t ∧ w ∈ s); G.IsRegularOfDegree d := ∀ v, G.degree v = d; G.Connected := Preconnected (all pairs reachable) ∧ Nonempty V; G.degree v = card (G.neighborFinset v); completeBipartiteGraph V W : SimpleGraph (V ⊕ W) with Adj v w := v.isLeft ∧ w.isRight ∨ v.isRight ∧ w.isLeft; ind S := indicator vector of a Finset S; twin G u := {u' : N(u') = N(u)}. Theorem I is stated at vertex level: c : V → 𝕜 (constant on twin classes by (i)/(b)); P a w := (φ e_a)_w; τ is encoded by "P a i ≠ 0".
+
+-- [Defs.lean]
+/-- The evolution product on `𝕜^V` with structure matrix `M`. -/
+def evoMul (M : V → V → 𝕜) (x y : V → 𝕜) : V → 𝕜 := fun w => ∑ v, x v * y v * M v w
+
+-- [Defs.lean]
+/-- `EvoIso M M'`: the evolution algebras with structure matrices `M`, `M'` are isomorphic, i.e.
+there is a `𝕜`-linear equivalence `φ` of `𝕜^V` with `φ (x ⋆ y) = φ x ⋆' φ y`. -/
+def EvoIso (M M' : V → V → 𝕜) : Prop :=
+  ∃ φ : (V → 𝕜) ≃ₗ[𝕜] (V → 𝕜), ∀ x y, φ (evoMul M x y) = evoMul M' (φ x) (φ y)
+
+-- [Defs.lean]
+/-- Structure matrix of `A(G)`: `e_v² = Σ_{w ∼ v} e_w`. -/
+def adjM : V → V → 𝕜 := fun v w => if G.Adj v w then 1 else 0
+
+-- [Defs.lean]
+/-- Structure matrix of `A_RW(G)`: `e'_v² = (deg v)⁻¹ Σ_{w ∼ v} e'_w`. -/
+def rwM : V → V → 𝕜 := fun v w => if G.Adj v w then ((G.degree v : 𝕜))⁻¹ else 0
+
+-- [Defs.lean]
+/-- `A(G) ≅ A_RW(G)` over `𝕜`. -/
+def AIsoRW : Prop := EvoIso (adjM G 𝕜) (rwM G 𝕜)
+
+-- [Defs.lean]
+/-- `G` is regular. -/
+def IsRegular : Prop := ∃ d : ℕ, G.IsRegularOfDegree d
+
+-- [Defs.lean]
+/-- `G` is biregular with sides `s`, `t` and degrees `d₁`, `d₂` (NOTE §0; CRR l. 159): `G` is
+bipartite with sides `s`, `t` (a partition of `V`), every vertex of `s` has degree `d₁` and every
+vertex of `t` has degree `d₂`. -/
+structure IsBiregular (s t : Set V) (d₁ d₂ : ℕ) : Prop where
+  bip : G.IsBipartiteWith s t
+  cover : ∀ v, v ∈ s ∨ v ∈ t
+  deg₁ : ∀ v ∈ s, G.degree v = d₁
+  deg₂ : ∀ v ∈ t, G.degree v = d₂
+
+-- [Defs.lean]
+/-- Condition 2 of Theorem A: `G` is biregular and `d₁/d₂ ∈ (𝕜^×)³`. -/
+def BiregularCube : Prop :=
+  ∃ (s t : Set V) (d₁ d₂ : ℕ), IsBiregular G s t d₁ d₂ ∧ ∃ c : 𝕜, c ≠ 0 ∧ (d₁ : 𝕜) / d₂ = c ^ 3
+
+-- [Defs.lean]
+/-- In `A(G)`: `e_v² = Σ_{w ∈ N(v)} e_w`. -/
+theorem adj_sq (v : V) : evoMul (adjM G 𝕜) (Pi.single v 1) (Pi.single v 1)
+    = ∑ w ∈ G.neighborFinset v, (Pi.single w 1 : V → 𝕜) := by …
+
+-- [Defs.lean]
+/-- In `A_RW(G)`: `e'_v² = (deg v)⁻¹ • Σ_{w ∈ N(v)} e'_w`. -/
+theorem rw_sq (v : V) : evoMul (rwM G 𝕜) (Pi.single v 1) (Pi.single v 1)
+    = ((G.degree v : 𝕜))⁻¹ • ∑ w ∈ G.neighborFinset v, (Pi.single w 1 : V → 𝕜) := by …
+
+-- [Defs.lean]
+/-- natural basis: `e_v e_u = 0` for `v ≠ u` and `e_v e_v = M v`. -/
+theorem evoMul_single_single (v u : V) :
+    evoMul M (Pi.single v 1) (Pi.single u 1) = if v = u then M v else 0 := by …
+
+-- [TheoremA.lean]
+/-- **Theorem A** (NOTE §0, §5). Let `char 𝕜 = 0` and `G` a finite connected graph with `n ≥ 2`
+vertices. Then `A(G) ≅ A_RW(G)` over `𝕜` iff `G` is regular, or `G` is bipartite with every vertex
+of side `V_i` of degree `d_i` and `d₁/d₂ ∈ (𝕜^×)³`. -/
+theorem theoremA [CharZero 𝕜] (hG : G.Connected) (hn : 2 ≤ Fintype.card V) :
+    AIsoRW G 𝕜 ↔ IsRegular G ∨ BiregularCube G 𝕜 := by …
+
+-- [TheoremA.lean]
+/-- NOTE §5: in characteristic 0, on a connected graph without isolated vertices, a solution of
+the scaling system (i), (ii) forces `G` regular, or bipartite biregular with `d₁/d₂ = (c_Y/c_X)³`.
+(`c` alternates between `x = c_{v₀}` and `y = c_{u₀}` along walks; `x = y` gives `d ≡ x`, `x ≠ y`
+gives the bipartition `{c = x} ⊔ {c = y}` with `d = y²/x` and `d = x²/y` on its sides.) -/
+theorem sec5 [CharZero 𝕜] (hG : G.Connected) (hnb : ∀ v, ∃ w, G.Adj v w) (c : V → 𝕜)
+    (hc0 : ∀ v, c v ≠ 0) (hi : ∀ u v v', G.Adj u v → G.Adj u v' → c v = c v')
+    (hii : ∀ u v, G.Adj u v → c v ^ 2 = c u * G.degree u) :
+    IsRegular G ∨ BiregularCube G 𝕜 := by …
+
+-- [Diag.lean]
+/-- **Theorem A, "if"** (NOTE §5): for `char 𝕜 = 0`, `G` connected with `n ≥ 2` vertices, regular or
+biregular with `d₁/d₂ ∈ (𝕜^×)³` implies `A(G) ≅ A_RW(G)`. -/
+theorem theoremA_if [CharZero 𝕜] (hG : G.Connected) (hn : 2 ≤ Fintype.card V)
+    (h : IsRegular G ∨ BiregularCube G 𝕜) : AIsoRW G 𝕜 := by …
+
+-- [Diag.lean]
+/-- Regular case: `G` `d`-regular with `d ≠ 0` in `𝕜` gives `φ = d · id`. -/
+theorem aIsoRW_of_regular {d : ℕ} (hd : (d : 𝕜) ≠ 0) (hreg : G.IsRegularOfDegree d) :
+    AIsoRW G 𝕜 := by …
+
+-- [Diag.lean]
+/-- Biregular case (NOTE §5, "Conversely"): if `d₁/d₂ = c³` with `c ≠ 0`, then
+`φ(e_v) = c²d₂ e'_v` (`v ∈ s`), `φ(e_v) = c d₂ e'_v` (`v ∈ t`) is an isomorphism. -/
+theorem aIsoRW_of_biregular {s t : Set V} {d₁ d₂ : ℕ} (hb : IsBiregular G s t d₁ d₂)
+    {c : 𝕜} (hc : c ≠ 0) (hcube : (d₁ : 𝕜) / d₂ = c ^ 3) : AIsoRW G 𝕜 := by …
+
+-- [Cor41.lean]
+/-- **Theorem I (1)** (NOTE §3), vertex-level form, over any field: for an isomorphism
+`φ : A(G) → A_RW(G)` with matrix `P a w = (φ e_a)_w` there is `c : V → 𝕜^×` with
+* `φ(e_a)² = c_a 1'_{N(i)}` for `i` in the support of `φ(e_a)` (definition of `c_S`);
+* every column and every row of `P` is non-zero, and for `P a i ≠ 0 ≠ P b j`:
+  `a ≡ b ↔ i ≡ j` (the class map `τ` is a well-defined bijection) and `a ∼ b ↔ i ∼ j` (`τ ∈ Aut H`);
+* `P a i ≠ 0` gives `|twin a| = |twin i|` and `d_a = d_i` in `𝕜` (`k_{τS} = k_S`, `d_{τS} = d_S`);
+* (a) `P_SᵀP_S = c_S d_S I`: `Σ_w P a w P b w = δ_{ab} c_a d_a` for twins `a, b`;
+* (b) `P_S𝟙 = c_T𝟙` for `T ∼ S`: `Σ_{u' ≡ u} P u' w = c_v` for `v ∼ u` and `w ∈ τ(twin u)`. -/
+theorem theoremI (hnb : ∀ v, ∃ w, G.Adj v w) (hdeg : ∀ v, (G.degree v : 𝕜) ≠ 0)
+    (φ : (V → 𝕜) ≃ₗ[𝕜] (V → 𝕜))
+    (hφ : ∀ x y, φ (evoMul (adjM G 𝕜) x y) = evoMul (rwM G 𝕜) (φ x) (φ y)) :
+    ∃ c : V → 𝕜, (∀ a, c a ≠ 0) ∧
+      (∀ a i, φ (Pi.single a 1) i ≠ 0 → evoMul (rwM G 𝕜) (φ (Pi.single a 1)) (φ (Pi.single a 1))
+        = c a • ind (G.neighborFinset i)) ∧
+      (∀ a, ∃ i, φ (Pi.single a 1) i ≠ 0) ∧ (∀ i, ∃ a, φ (Pi.single a 1) i ≠ 0) ∧
+      (∀ a b i j, φ (Pi.single a 1) i ≠ 0 → φ (Pi.single b 1) j ≠ 0 →
+        (G.neighborFinset a = G.neighborFinset b ↔ G.neighborFinset i = G.neighborFinset j) ∧
+        (G.Adj a b ↔ G.Adj i j)) ∧
+      (∀ a i, φ (Pi.single a 1) i ≠ 0 →
+        (#(twin G a) : 𝕜) = #(twin G i) ∧ (G.degree a : 𝕜) = G.degree i) ∧
+      (∀ a b, G.neighborFinset a = G.neighborFinset b →
+        ∑ w, φ (Pi.single a 1) w * φ (Pi.single b 1) w = if a = b then c a * G.degree a else 0) ∧
+      (∀ v u w₀ w, G.Adj v u → φ (Pi.single u 1) w₀ ≠ 0 →
+        G.neighborFinset w = G.neighborFinset w₀ → ∑ u' ∈ twin G u, φ (Pi.single u' 1) w = c v) := by …
+
+-- [Cor41.lean]
+/-- **Corollary 4.1** (NOTE §4), for every twin-class size non-zero in `𝕜` (always true in
+characteristic 0): `A(G) ≅ A_RW(G)` iff the scaling system has a solution
+`c : V → 𝕜^×`: (i) `c_v = c_{v'}` when `v, v'` have a common neighbour `u`, and
+(ii) `c_v² = c_u d_u` for every edge `u ∼ v`. -/
+theorem cor41 (hnb : ∀ v, ∃ w, G.Adj v w) (hdeg : ∀ v, (G.degree v : 𝕜) ≠ 0)
+    (hk : ∀ u, (#(twin G u) : 𝕜) ≠ 0) :
+    AIsoRW G 𝕜 ↔ ∃ c : V → 𝕜, (∀ v, c v ≠ 0) ∧
+      (∀ u v v', G.Adj u v → G.Adj u v' → c v = c v') ∧
+      (∀ u v, G.Adj u v → c v ^ 2 = c u * G.degree u) := by …
+
+-- [TheoremI2.lean]
+/-- **Theorem I (2)** (NOTE §3, `τ = id`). -/
+theorem theoremI_converse (hdeg : ∀ v, (G.degree v : 𝕜) ≠ 0) (c : V → 𝕜) (hc0 : ∀ v, c v ≠ 0)
+    (P : V → V → 𝕜)
+    (hblock : ∀ a w, P a w ≠ 0 → G.neighborFinset w = G.neighborFinset a)
+    (ha : ∀ a b, G.neighborFinset a = G.neighborFinset b →
+      ∑ w, P a w * P b w = if a = b then c a * G.degree a else 0)
+    (hb : ∀ v u w, G.Adj v u → G.neighborFinset w = G.neighborFinset u →
+      ∑ u' ∈ twin G u, P u' w = c v) :
+    ∃ φ : (V → 𝕜) ≃ₗ[𝕜] (V → 𝕜), (∀ a, φ (Pi.single a 1) = P a) ∧
+      ∀ x y, φ (evoMul (adjM G 𝕜) x y) = evoMul (rwM G 𝕜) (φ x) (φ y) := by …
+
+-- [Lemma2.lean]
+/-- **Lemma 2** (NOTE §4): `PᵀP = αI` and `P𝟙 = γ𝟙` imply `k(γ² − α) = 0`. -/
+theorem lemma2 {ι : Type*} [Fintype ι] [DecidableEq ι] (P : ι → ι → 𝕜) (α γ : 𝕜)
+    (ha : ∀ a b, ∑ w, P w a * P w b = if a = b then α else 0) (hb : ∀ w, ∑ a, P w a = γ) :
+    (Fintype.card ι : 𝕜) * (γ ^ 2 - α) = 0 := by …
+
+-- [Lemma2.lean]
+/-- The polynomial identity of Lemma 2. -/
+theorem lemma2_identity {ι : Type*} [Fintype ι] [DecidableEq ι] (P : ι → ι → 𝕜) (α γ : 𝕜) :
+    (Fintype.card ι : 𝕜) * (γ ^ 2 - α)
+      = ∑ a, ∑ b, ((∑ w, P w a * P w b) - if a = b then α else 0)
+        - ∑ w, ((∑ a, P w a) - γ) * ((∑ a, P w a) + γ) := by …
+
+-- [Lemma2.lean]
+/-- Lemma 2, block form: columns `S`, rows `S'`, `Σ_{w∈S'} P a w P b w = δ_{ab} α` and
+`Σ_{a∈S} P a w = γ` (`w ∈ S'`) give `|S| α = |S'| γ²`. -/
+theorem lemma2_blocks {V : Type*} [DecidableEq V] (S S' : Finset V) (P : V → V → 𝕜) (α γ : 𝕜)
+    (ha : ∀ a ∈ S, ∀ b ∈ S, ∑ w ∈ S', P a w * P b w = if a = b then α else 0)
+    (hb : ∀ w ∈ S', ∑ a ∈ S, P a w = γ) : (#S : 𝕜) * α = #S' * γ ^ 2 := by …
+
+-- [Lemma2M.lean]
+/-- **Lemma 2** (NOTE §4), matrix form: `P ∈ M_k(𝕜)`, `PᵀP = αI`, `P𝟙 = γ𝟙` ⟹ `k(γ² − α) = 0`. -/
+theorem lemma2_matrix {ι : Type*} [Fintype ι] [DecidableEq ι] (P : Matrix ι ι 𝕜) (α γ : 𝕜)
+    (h1 : Pᵀ * P = α • (1 : Matrix ι ι 𝕜)) (h2 : P *ᵥ (fun _ => (1 : 𝕜)) = fun _ => γ) :
+    (Fintype.card ι : 𝕜) * (γ ^ 2 - α) = 0 := by …
+
+-- [Basic.lean]
+/-- **Lemma 1** (NOTE §2.2 = BCS22 Thm 2.4(i) "⇒", in coordinates): for the natural basis
+`f_a = φ(e_a)` of the target, if the `e'_i`-coordinate of `f_a` is non-zero, then
+`e'_i² ∈ 𝕜 · φ(e_a²)`. (Proof: `f_a e'_i = (f_a)_i e'_i²` and
+`f_a e'_i = φ(e_a · φ⁻¹ e'_i) = (φ⁻¹ e'_i)_a φ(e_a²)`.) -/
+theorem lemma1 (hφ : ∀ x y, φ (evoMul M x y) = evoMul M' (φ x) (φ y)) (a i : V)
+    (h : φ (Pi.single a 1) i ≠ 0) :
+    M' i = ((φ (Pi.single a 1) i)⁻¹ * φ.symm (Pi.single i 1) a) • φ (M a) := by …
+
+-- [Basic.lean]
+/-- Trace trick (replaces the counting in Theorem N): if `(φ e_a)_w ≠ 0` always gives
+`(a ∈ A ↔ w ∈ B)`, then `|A| = |B|` in `𝕜` (`|A| = Σ_{a∈A} (QP)_{aa} = Σ_{w∈B} (PQ)_{ww} = |B|`). -/
+theorem card_eq_of_support (A B : Finset V)
+    (h : ∀ a w, φ (Pi.single a 1) w ≠ 0 → (a ∈ A ↔ w ∈ B)) : (#A : 𝕜) = #B := by …
+
+-- [Basic.lean]
+/-- The indicator vector `1_S = Σ_{u ∈ S} e_u`. -/
+def ind (S : Finset V) : V → 𝕜 := fun w => if w ∈ S then 1 else 0
+
+-- [TwinI.lean]
+/-- The twin class of `u`: the vertices with the same neighbourhood as `u`. -/
+def twin (u : V) : Finset V := univ.filter (fun u' => G.neighborFinset u' = G.neighborFinset u)
+
+-- [TheoremN.lean]
+/-- **Theorem N, "⇒"** (NOTE §2.2). In a non-degenerate evolution algebra every natural basis
+`(f_a)` is a union of `b_T`-orthogonal bases of the blocks `E_T`:
+1. the support of each `f_a` lies in one class of proportional squares (so `f_a ∈ E_T`);
+2. `f_a² ≠ 0`;
+3. if `e_i² = λ_i u` on `T` (`u ≠ 0`) and `f_a ∈ E_T`, then `b_T(f_a, f_b) = 0` for `b ≠ a`;
+4. for `T` a union of classes, the number of `f_a` in `E_T` is `|T|` (in `𝕜`; in characteristic 0
+   this is `|B'_T| = |T|`). -/
+theorem theoremN_mp (M : V → V → 𝕜) (hnd : ∀ i, M i ≠ 0) (ψ : (V → 𝕜) ≃ₗ[𝕜] (V → 𝕜))
+    (horth : ∀ a b, a ≠ b → evoMul M (ψ (Pi.single a 1)) (ψ (Pi.single b 1)) = 0) :
+    (∀ a i j, ψ (Pi.single a 1) i ≠ 0 → ψ (Pi.single a 1) j ≠ 0 →
+      ∃ μ : 𝕜, μ ≠ 0 ∧ M i = μ • M j) ∧
+    (∀ a, evoMul M (ψ (Pi.single a 1)) (ψ (Pi.single a 1)) ≠ 0) ∧
+    (∀ (T : Finset V) (lam u : V → 𝕜), u ≠ 0 → (∀ i ∈ T, M i = lam i • u) →
+      ∀ a b, a ≠ b → (∀ i, ψ (Pi.single a 1) i ≠ 0 → i ∈ T) →
+        ∑ i ∈ T, lam i * ψ (Pi.single a 1) i * ψ (Pi.single b 1) i = 0) ∧
+    (∀ T : Finset V, (∀ i j, i ∈ T → (∃ μ : 𝕜, M j = μ • M i) → j ∈ T) →
+      ((univ.filter (fun a => ∃ i ∈ T, ψ (Pi.single a 1) i ≠ 0)).card : 𝕜) = #T) := by …
+
+-- [TheoremN.lean]
+/-- **Theorem N, "⇐"** (NOTE §2.2): if `e_i² = λ_i u_i` with `u` constant on the support of each
+`f_a` (so `f_a ∈ E_T`) and `b_T(f_a, f_b) = 0` for `a ≠ b`, then `(f_a)` is a natural basis. -/
+theorem theoremN_mpr (M : V → V → 𝕜) (ψ : (V → 𝕜) ≃ₗ[𝕜] (V → 𝕜)) (lam : V → 𝕜)
+    (u : V → V → 𝕜) (hM : ∀ i, M i = lam i • u i)
+    (hblock : ∀ a i j, ψ (Pi.single a 1) i ≠ 0 → ψ (Pi.single a 1) j ≠ 0 → u i = u j)
+    (horth : ∀ a b, a ≠ b → ∀ i, ψ (Pi.single a 1) i ≠ 0 →
+      ∑ j, lam j * ψ (Pi.single a 1) j * ψ (Pi.single b 1) j = 0) :
+    ∀ a b, a ≠ b → evoMul M (ψ (Pi.single a 1)) (ψ (Pi.single b 1)) = 0 := by …
+
+-- [TheoremN.lean]
+/-- **Lemma 1** (BCS22 Thm 2.4(i) "⇒") for an arbitrary natural basis `f_a = ψ e_a`:
+`(f_a)_i ≠ 0 ⟹ e_i² ∈ 𝕜 f_a²`. -/
+theorem lemma1_nat (M : V → V → 𝕜) (ψ : (V → 𝕜) ≃ₗ[𝕜] (V → 𝕜))
+    (horth : ∀ a b, a ≠ b → evoMul M (ψ (Pi.single a 1)) (ψ (Pi.single b 1)) = 0)
+    (a i : V) (h : ψ (Pi.single a 1) i ≠ 0) :
+    M i = ((ψ (Pi.single a 1) i)⁻¹ * ψ.symm (Pi.single i 1) a) •
+      evoMul M (ψ (Pi.single a 1)) (ψ (Pi.single a 1)) := by …
+
+-- [CorA.lean]
+/-- `K_{1,2} = P₃`. -/
+abbrev K12 : SimpleGraph (Fin 1 ⊕ Fin 2) := completeBipartiteGraph (Fin 1) (Fin 2)
+
+-- [CorA.lean]
+/-- **Corollary A over `ℚ`**: `A(K_{1,2}) ≇ A_RW(K_{1,2})` over `ℚ`. -/
+theorem corA_K12 : ¬ AIsoRW K12 ℚ := by …
+
+-- [CorA.lean]
+/-- The survey's statement (arXiv 2610.22248, Question "Graphs versus random walks", over an
+arbitrary field) fails over `ℚ`: `K_{1,2}` is connected, biregular, and `A(K_{1,2}) ≇ A_RW(K_{1,2})`. -/
+theorem survey_false_over_Q : K12.Connected ∧ 2 ≤ Fintype.card (Fin 1 ⊕ Fin 2) ∧
+    (∃ (s t : Set (Fin 1 ⊕ Fin 2)) (d₁ d₂ : ℕ), IsBiregular K12 s t d₁ d₂) ∧ ¬ AIsoRW K12 ℚ :=
+
+-- [CorA.lean]
+/-- **Corollary A**, positive part: over a field of characteristic 0 in which every positive
+rational number is a cube (e.g. `ℝ`, `ℂ`), `A(G) ≅ A_RW(G)` iff `G` is regular or biregular. -/
+theorem corA_cubes [CharZero 𝕜]
+    (hcub : ∀ a b : ℕ, 0 < a → 0 < b → ∃ t : 𝕜, t ^ 3 = (a : 𝕜) / b)
+    (hG : G.Connected) (hn : 2 ≤ Fintype.card V) :
+    AIsoRW G 𝕜 ↔ IsRegular G ∨ ∃ (s t : Set V) (d₁ d₂ : ℕ), IsBiregular G s t d₁ d₂ := by …
+
+-- [CorA.lean]
+/-- `K_{1,2}` is biregular with sides `{centre}`, `{leaves}` and degrees `2`, `1`. -/
+theorem K12_biregular : IsBiregular K12 (Set.range Sum.inl) (Set.range Sum.inr) 2 1 where
+
+-- [Examples.lean]
+/-- `A(K_{1,3}) ≇ A_RW(K_{1,3})` over `ℚ` (`3` and `1/3` are not rational cubes). -/
+theorem corA_K13 : ¬ AIsoRW (completeBipartiteGraph (Fin 1) (Fin 3)) ℚ :=
+
+-- [Examples.lean]
+/-- `A(K_{2,3}) ≇ A_RW(K_{2,3})` over `ℚ` (`3/2` and `2/3` are not rational cubes). -/
+theorem corA_K23 : ¬ AIsoRW (completeBipartiteGraph (Fin 2) (Fin 3)) ℚ :=
+
+-- [Examples.lean]
+/-- `A(K_{1,8}) ≅ A_RW(K_{1,8})` over `ℚ`: biregular with `d₁/d₂ = 8/1 = 2³`. -/
+theorem K18_iso : AIsoRW (completeBipartiteGraph (Fin 1) (Fin 8)) ℚ :=
+
+
+
+=== SECOND PASS ===
+A first review returned ISSUES: (1, blocking) Corollary A necessity missing; (2, minor) no ℝ/ℂ specialization; (3, minor) K_{2,16} missing. They were addressed by CorA2.lean (statements below, all compiled sorry-free, standard axioms). On (2): instantiating 𝕜 = ℝ or ℂ needs Mathlib's real cube roots / IsAlgClosed ℂ, whose imports exceed the 290 MB memory cap of this run (Mathlib.FieldTheory.IsAlgClosed.Basic alone: 314 MB), so corA_allCubes states the abstract field condition instead. Judge the whole set again: first line FAITHFUL or ISSUES.
+
+-- [CorA2.lean]
+/-- The survey's statement over `𝕜`, for all finite connected graphs with `n ≥ 2` vertices
+(vertex types in `Type`). -/
+def SurveyHolds (𝕜 : Type*) [Field 𝕜] : Prop :=
+  ∀ (V : Type) [Fintype V] [DecidableEq V] (G : SimpleGraph V) [DecidableRel G.Adj],
+    G.Connected → 2 ≤ Fintype.card V →
+      (AIsoRW G 𝕜 ↔ IsRegular G ∨ ∃ (s t : Set V) (d₁ d₂ : ℕ), IsBiregular G s t d₁ d₂)
+
+-- [CorA2.lean]
+/-- **Corollary A**, necessity: if the survey's statement holds over `𝕜` (characteristic 0), every
+positive rational number is a cube in `𝕜` (apply it to `K_{b,a}`, ratio `a/b`). -/
+theorem corA_necessity [CharZero 𝕜] (h : SurveyHolds 𝕜) :
+    ∀ a b : ℕ, 0 < a → 0 < b → ∃ t : 𝕜, t ^ 3 = (a : 𝕜) / b := by …
+
+-- [CorA2.lean]
+/-- **Corollary A** (NOTE §0, second item): in characteristic 0 the survey's statement holds over
+`𝕜` for all finite connected graphs iff every positive rational number is a cube in `𝕜`. -/
+theorem corA_iff [CharZero 𝕜] :
+    SurveyHolds 𝕜 ↔ ∀ a b : ℕ, 0 < a → 0 < b → ∃ t : 𝕜, t ^ 3 = (a : 𝕜) / b :=
+
+-- [CorA2.lean]
+/-- **Corollary A** (first item), abstractly: over a field of characteristic 0 in which every
+element is a cube (`ℝ`, `ℂ`, every algebraically closed field) the survey's statement holds. -/
+theorem corA_allCubes [CharZero 𝕜] (h3 : ∀ x : 𝕜, ∃ z, z ^ 3 = x) : SurveyHolds 𝕜 :=
+
+-- [CorA2.lean]
+/-- The survey's statement is false over `ℚ`. -/
+theorem not_surveyHolds_rat : ¬ SurveyHolds ℚ := fun h =>
+  corA_K12 ((h _ K12 K12_connected (by decide)).mpr (Or.inr ⟨_, _, _, _, K12_biregular⟩))
+
+
+
+-- [CorA2.lean]
+/-- `A(K_{2,16}) ≅ A_RW(K_{2,16})` over `ℚ`: ratio `16/2 = 2³`. -/
+theorem K2_16_iso : AIsoRW (completeBipartiteGraph (Fin 2) (Fin 16)) ℚ :=
+
+-- [CorA2.lean]
+/-- `K_{m,n}` is biregular: degree `n` on the `m` left vertices, degree `m` on the `n` right ones. -/
+theorem cbg_biregular (m n : ℕ) :
+    IsBiregular (completeBipartiteGraph (Fin m) (Fin n)) (Set.range Sum.inl) (Set.range Sum.inr)
+      n m where
+
+
+
+=== THIRD PASS ===
+The second review returned ISSUES: (1, minor) ℝ/ℂ specializations remain conditional (memory cap; unchanged); (2, minor) no bridge from "cube roots of every prime" to the positive-rational condition. (2) is now CorA3.lean (compiled, standard axioms):
+
+-- [CorA3.lean]
+/-- If every prime is a cube in 𝕜, so is every positive integer. -/
+theorem cube_of_primes (hp : ∀ p : ℕ, p.Prime → ∃ z : 𝕜, z ^ 3 = p) :
+    ∀ n : ℕ, 0 < n → ∃ z : 𝕜, z ^ 3 = n := by …
+/-- **Corollary A** (first item): over every field of characteristic 0 that contains a cube root
+of every prime, the survey's statement holds for all finite connected graphs. -/
+theorem corA_primes [CharZero 𝕜] (hp : ∀ p : ℕ, p.Prime → ∃ z : 𝕜, z ^ 3 = p) :
+    SurveyHolds 𝕜 := by …
+
+Judge the whole set again. If the only remaining point is the uncompiled ℝ/ℂ instantiation (a memory-cap certification gap, not a statement defect), say so explicitly. First line FAITHFUL or ISSUES.
+

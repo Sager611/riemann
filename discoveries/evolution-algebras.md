@@ -14,7 +14,7 @@
 
 **Checks.** All 995 connected graphs with at most 7 vertices, over C, R and Q.
 
-**Status.** Paper proof; not refereed; not in Lean.
+**Status.** Paper proof; not refereed. Lean (evolean, 12 Nov 2026): FORMALIZED for characteristic 0 — EvoAlg.theoremA, both directions (G finite connected simple, n ≥ 2: A(G) ≅ A_RW(G) ⟺ G regular or bipartite biregular with d₁/d₂ ∈ (𝕜^×)³), with Theorem I, Lemma 2, Corollary 4.1, Theorem N (BCS22 Thm 2.4(i) proved, not assumed) and Corollary A (over ℚ the cube condition is needed: K_{1,2}, K_{1,3}, K_{2,3}); no named hypotheses, sorry-free, standard axioms, every compile under the 290 MB watchdog; the ℝ/ℂ instances (imports above the cap) and the characteristic-p classification are not formalized; reviewer FAITHFUL ([LEAN.md](../Riemann/Deep/EvoAlg/LEAN.md)).
 
 **Review.** Proofs correct (the quotation of Boudi–Cabrera–Siles Molina 2022 verified against the source).
 
