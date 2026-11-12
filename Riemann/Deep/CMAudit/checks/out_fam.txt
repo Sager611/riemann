@@ -1,0 +1,33 @@
+X=1000 fields=45 sum_h=157 N=32  killed: R1=4.954 RX=0.0246 R1diag=4.882 triv=0.89   pole: R1=5.508 RX=0.0273 R1diag=5.277 triv=0.86  ms=1495
+X=1000 fields=45 sum_h=157 N=64  killed: R1=2.200 RX=0.0109 R1diag=2.014 triv=0.70   pole: R1=8.662 RX=0.0430 R1diag=8.459 triv=0.95  ms=1495
+X=1000 fields=45 sum_h=157 N=128  killed: R1=1.158 RX=0.0057 R1diag=1.122 triv=0.20   pole: R1=15.559 RX=0.0772 R1diag=14.350 triv=0.99  ms=1495
+X=1000 fields=45 sum_h=157 N=256  killed: R1=1.077 RX=0.0053 R1diag=1.068 triv=0.55   pole: R1=25.074 RX=0.1245 R1diag=24.210 triv=0.99  ms=1495
+X=1000 fields=45 sum_h=157 N=512  killed: R1=0.847 RX=0.0042 R1diag=0.784 triv=0.65   pole: R1=38.560 RX=0.1914 R1diag=38.898 triv=0.99  ms=1495
+X=2000 fields=91 sum_h=455 N=32  killed: R1=4.166 RX=0.0212 R1diag=3.894 triv=0.74   pole: R1=4.164 RX=0.0212 R1diag=3.892 triv=0.74  ms=6531
+X=2000 fields=91 sum_h=455 N=64  killed: R1=4.656 RX=0.0237 R1diag=4.673 triv=0.90   pole: R1=6.335 RX=0.0322 R1diag=5.942 triv=0.86  ms=6531
+X=2000 fields=91 sum_h=455 N=128  killed: R1=1.086 RX=0.0055 R1diag=0.971 triv=0.25   pole: R1=10.475 RX=0.0533 R1diag=10.376 triv=0.96  ms=6531
+X=2000 fields=91 sum_h=455 N=256  killed: R1=1.384 RX=0.0070 R1diag=1.291 triv=0.25   pole: R1=18.965 RX=0.0965 R1diag=17.787 triv=0.99  ms=6531
+X=2000 fields=91 sum_h=455 N=512  killed: R1=0.896 RX=0.0046 R1diag=0.908 triv=0.41   pole: R1=30.875 RX=0.1571 R1diag=29.392 triv=0.99  ms=6531
+X=2000 fields=91 sum_h=455 N=1024  killed: R1=0.877 RX=0.0045 R1diag=0.823 triv=0.52   pole: R1=47.237 RX=0.2403 R1diag=47.841 triv=0.99  ms=6531
+X=4000 fields=186 sum_h=1295 N=64  killed: R1=4.928 RX=0.0252 R1diag=4.733 triv=0.77   pole: R1=4.769 RX=0.0244 R1diag=4.608 triv=0.78  ms=25364
+X=4000 fields=186 sum_h=1295 N=128  killed: R1=2.589 RX=0.0133 R1diag=2.584 triv=0.80   pole: R1=7.785 RX=0.0399 R1diag=7.517 triv=0.89  ms=25364
+X=4000 fields=186 sum_h=1295 N=256  killed: R1=1.130 RX=0.0058 R1diag=1.073 triv=0.13   pole: R1=11.874 RX=0.0608 R1diag=11.850 triv=0.97  ms=25364
+X=4000 fields=186 sum_h=1295 N=512  killed: R1=1.644 RX=0.0084 R1diag=1.577 triv=0.28   pole: R1=19.443 RX=0.0995 R1diag=18.869 triv=0.98  ms=25364
+X=4000 fields=186 sum_h=1295 N=1024  killed: R1=0.940 RX=0.0048 R1diag=0.951 triv=0.45   pole: R1=30.046 RX=0.1538 R1diag=29.235 triv=0.99  ms=25364
+X=4000 fields=186 sum_h=1295 N=2048  killed: R1=1.061 RX=0.0054 R1diag=1.034 triv=0.42   pole: R1=55.392 RX=0.2835 R1diag=55.624 triv=0.99  ms=25364
+DONE1
+X=8000 fields=367 sum_h=3680 N=64  killed: R1=3.345 RX=0.0172 R1diag=3.327 triv=0.77   pole: R1=3.297 RX=0.0170 R1diag=3.279 triv=0.77  ms=105699
+X=8000 fields=367 sum_h=3680 N=128  killed: R1=4.243 RX=0.0218 R1diag=4.155 triv=0.76   pole: R1=5.413 RX=0.0278 R1diag=5.404 triv=0.84  ms=105699
+X=8000 fields=367 sum_h=3680 N=256  killed: R1=0.889 RX=0.0046 R1diag=0.902 triv=0.19   pole: R1=8.648 RX=0.0445 R1diag=8.429 triv=0.91  ms=105699
+X=8000 fields=367 sum_h=3680 N=512  killed: R1=1.268 RX=0.0065 R1diag=1.258 triv=0.27   pole: R1=12.434 RX=0.0639 R1diag=12.337 triv=0.96  ms=105699
+X=8000 fields=367 sum_h=3680 N=1024  killed: R1=1.514 RX=0.0078 R1diag=1.474 triv=0.28   pole: R1=20.353 RX=0.1047 R1diag=19.723 triv=0.97  ms=105699
+X=8000 fields=367 sum_h=3680 N=2048  killed: R1=0.939 RX=0.0048 R1diag=0.941 triv=0.34   pole: R1=39.457 RX=0.2029 R1diag=38.596 triv=0.99  ms=105699
+X=8000 fields=367 sum_h=3680 N=4096  killed: R1=1.076 RX=0.0055 R1diag=1.045 triv=0.28   pole: R1=80.647 RX=0.4148 R1diag=81.084 triv=0.99  ms=105699
+X=16000 fields=740 sum_h=10318 N=128  killed: R1=3.938 RX=0.0201 R1diag=3.919 triv=0.77   pole: R1=4.062 RX=0.0207 R1diag=4.017 triv=0.80  ms=462782
+X=16000 fields=740 sum_h=10318 N=256  killed: R1=1.731 RX=0.0088 R1diag=1.694 triv=0.50   pole: R1=6.358 RX=0.0324 R1diag=6.327 triv=0.86  ms=462782
+X=16000 fields=740 sum_h=10318 N=512  killed: R1=1.014 RX=0.0052 R1diag=1.007 triv=0.17   pole: R1=8.532 RX=0.0435 R1diag=8.346 triv=0.92  ms=462782
+X=16000 fields=740 sum_h=10318 N=1024  killed: R1=1.573 RX=0.0080 R1diag=1.561 triv=0.35   pole: R1=11.765 RX=0.0600 R1diag=11.576 triv=0.95  ms=462782
+X=16000 fields=740 sum_h=10318 N=2048  killed: R1=1.400 RX=0.0071 R1diag=1.370 triv=0.29   pole: R1=21.902 RX=0.1117 R1diag=21.310 triv=0.97  ms=462782
+X=16000 fields=740 sum_h=10318 N=4096  killed: R1=0.959 RX=0.0049 R1diag=0.948 triv=0.30   pole: R1=49.497 RX=0.2523 R1diag=48.631 triv=0.99  ms=462782
+X=16000 fields=740 sum_h=10318 N=8192  killed: R1=1.287 RX=0.0066 R1diag=1.253 triv=0.39   pole: R1=100.216 RX=0.5109 R1diag=100.143 triv=0.99  ms=462783
+DONE2
