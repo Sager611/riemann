@@ -1,0 +1,72 @@
+You are a verdict-only reviewer. Do NOT call tools or run commands; answer within about 40 seconds, at most 15 lines. A previous fidelity review of a Lean 4 formalization raised this [blocking] note:
+
+VERDICT: ISSUES
+
+1. [blocking] `m3_first_of_lemmaZ` and `M3InputsW` require `It` to be real-valued and monotone on **all** functions, without integrability conditions. This is not a valid unrestricted fact about the interval integral used in M3. For T>0, take f=1 and g(t)=1+1/(t−T) for t>T, with g(T)=1. Then f≤g, but g is not integrable. Lean’s real-valued Bochner integral returns zero for nonintegrable functions, contradicting the required monotonicity. Restrict monotonicity to integrable functions and supply their integrability, or explicitly construct another functional preserving the required integrals. The conditional algebraic theorem is valid; its advertised integral realization is not established.
+
+2. [minor] Case 2’s exponent is faithful: on nonempty free-variable support, X/𝔞>1 and max(dᵢ+y)⁺≤y+max dᵢ⁺. Outside that support, the free integral vanishes. Thus no additional 𝔞≤X premise is needed in the free branch. The no-free branch correctly supplies it.
+
+3. [minor] `Wsum`, `Onsum`, `Offsum`, and `W_split` match the stated definitions and splitting inequality. Both `lemmaZ_point` conclusions have the correct factors and exponent k−1. Their finite-sum, named-input status should remain explicit; applying them to the actual polynomial requires a truncation/tail realization of `ZPoint1/2`.
+
+4. [minor] M3’s displayed exponents are correct: qr, qr′=qr/(r−1), and outer powers 1/r, 1−1/r. Its constant is correctly raised to q. `M3InputsW` 
+
+The formalizer replaced the unrestricted integral functional by two named facts at each height T, stated only for the two integrable functions used: (hcmp) for every c ≥ 0, if |R_T(t)|^q ≤ c·(1 + W(t))^q((1 + On(t))^{k−1})^q for all t ∈ [T, 2T], then Rq = ∫_T^{2T}|R_T|^q ≤ c·IA with IA = ∫_T^{2T}(1+W)^q((1+On)^{k−1})^q (both integrable on [T, 2T]: R_T is a Dirichlet polynomial, W and On are convergent sums of continuous bounded kernels κ_A(L|γ − t|) = min(1, (L|γ−t|)^{−A})); (hHol) Hölder IA ≤ IW^{1/r} IO^{1−1/r}. Here are the revised statements (rp x e = x^e for x > 0; ZPoint1 = Lemma Z's named inputs (i)–(iii) at the point, already reviewed):
+
+24-M3 inputs as in M3Inputs. -/
+25:def M3InputsW (ex lg : ℝ → ℝ) (κ θ : ℝ) (D : DataB) : Prop :=
+26-  ∀ q r w : ℝ, 2 < q → q < κ / θ → 1 < r → 1 < w → q * r * θ < κ * (1 - 1 / w) →
+27-    ∃ (CI Kpk K₀ K₁ T₀ : ℝ) (k NT : ℕ) (X : ℝ → ℝ) (S : ℝ → ℝ → Finset ℕ) (d : ℕ → ℝ)
+28-      (κk : ℝ → ℝ → ℕ → ℝ) (Rabs : ℝ → ℝ → ℝ) (IA IW IO NOn NOff : ℝ → ℝ) (NF : ℝ → ℕ → ℝ),
+29-      0 ≤ CI ∧ 0 ≤ Kpk ∧ 1 ≤ k ∧ 0 ≤ K₀ ∧ 0 ≤ K₁ ∧
+30-      ∀ T : ℝ, T₀ ≤ T → 0 < X T ∧ (∀ t x, 0 ≤ κk T t x) ∧
+31-        (∀ t, T ≤ t → t ≤ 2 * T →
+32-          ZPoint1 ex lg (X T) 0 CI Kpk k NT (S T t) d (κk T t) (Rabs T t)) ∧
+33-        (∀ c : ℝ, 0 ≤ c → (∀ t, T ≤ t → t ≤ 2 * T → rp ex lg (Rabs T t) q ≤
+34-          c * (rp ex lg (1 + Wsum ex lg (X T) 0 (S T t) d (κk T t)) q *
+35-            rp ex lg ((1 + Onsum (S T t) (κk T t)) ^ (k - 1)) q)) → D.Rq q T ≤ c * IA T) ∧
+36-        IA T ≤ rp ex lg (IW T) (1 / r) * rp ex lg (IO T) (1 - 1 / r) ∧
+37-        IO T ≤ K₀ * T ∧
+38-        rp ex lg (IW T) (1 / (q * r)) ≤ rp ex lg T (1 / (q * r)) + NOn T + NOff T ∧
+39-        NOn T ≤ K₀ * rp ex lg T (1 / (q * r)) ∧
+40-        (∃ M : ℕ, NOff T ≤ ∑ a ∈ range M, ex θ ^ (a + 1) * NF T a + rp ex lg T (1 / (q * r))) ∧
+41-        ∀ a : ℕ, NF T a ≤ K₁ * rp ex lg T (1 / (q * r)) * ex (-(κ * a * (1 - 1 / w) / (q * r)))
+42-
+43-/-- **M3's first inequality is a theorem from Lemma Z's named inputs**: M3InputsW ⇒ M3Inputs. -/
+44-theorem m3Inputs_of_wired (h : ExpLog ex lg) {κ θ : ℝ} {D : DataB} (hin : M3InputsW ex lg κ θ D) :
+45-    M3Inputs ex lg κ θ D := by
+46-  intro q r w hq hqκ hr hw hrw
+47-  obtain ⟨CI, Kpk, K₀, K₁, T₀, k, NT, X, S, d, κk, Rabs, IA, IW, IO, NOn, NOff, NF, hCI, hKpk, hk, hK₀,
+48-    hK₁, hT⟩ := hin q r w hq hqκ hr hw hrw
+49-  refine ⟨rp ex lg (NT * (Kpk * CI * k) + 1) q, K₀, K₁, T₀, IW, IO, NOn, NOff, NF, rp_nonneg h _ _, hK₀,
+50-    hK₁, ?_, ?_, ?_, ?_, ?_, ?_⟩
+51-  · intro T hT0
+52-    obtain ⟨hX, hκ, hz, hcmp, hHol, -⟩ := hT T hT0
+53-    exact le_of_le_of_eq (m3_first_of_lemmaZ h hX (by linarith only [hq]) hCI hKpk hk (S T) d (κk T)
+54-      hκ (Rabs T) hz hcmp hHol) (mul_assoc _ _ _).symm
+55-  · intro T hT0
+56-    obtain ⟨-, -, -, -, -, hIO, -⟩ := hT T hT0
+57-    exact hIO
+58-  · intro T hT0
+59-    obtain ⟨-, -, -, -, -, -, hIW, -⟩ := hT T hT0
+60-    exact hIW
+61-  · intro T hT0
+62-    obtain ⟨-, -, -, -, -, -, -, hOn, -⟩ := hT T hT0
+63-    exact hOn
+24:theorem m3_first_of_lemmaZ (h : ExpLog ex lg) {ι : Type*} [DecidableEq ι] {T X q CI Kpk Rq IA B : ℝ}
+25-    {k NT : ℕ} (hX : 0 < X) (hq : 0 ≤ q) (hCI : 0 ≤ CI) (hKpk : 0 ≤ Kpk) (hk : 1 ≤ k)
+26-    (S : ℝ → Finset ι) (d : ι → ℝ) (κ : ℝ → ι → ℝ) (hκ : ∀ t x, 0 ≤ κ t x) (Rabs : ℝ → ℝ)
+27-    (hz : ∀ t, T ≤ t → t ≤ 2 * T → ZPoint1 ex lg X 0 CI Kpk k NT (S t) d (κ t) (Rabs t))
+28-    (hcmp : ∀ c : ℝ, 0 ≤ c → (∀ t, T ≤ t → t ≤ 2 * T → rp ex lg (Rabs t) q ≤
+29-      c * (rp ex lg (1 + Wsum ex lg X 0 (S t) d (κ t)) q *
+30-        rp ex lg ((1 + Onsum (S t) (κ t)) ^ (k - 1)) q)) → Rq ≤ c * IA)
+31-    (hHol : IA ≤ B) : Rq ≤ rp ex lg (NT * (Kpk * CI * k) + 1) q * B := by
+32-  have hK : 0 < (NT : ℝ) * (Kpk * CI * k) + 1 := by
+33-    have h0 : 0 ≤ (NT : ℝ) * (Kpk * CI * k) :=
+34-      mul_nonneg (Nat.cast_nonneg _) (mul_nonneg (mul_nonneg hKpk hCI) (Nat.cast_nonneg _))
+35-    linarith only [h0]
+36-  have hpt : ∀ t, T ≤ t → t ≤ 2 * T → rp ex lg (Rabs t) q ≤ rp ex lg (NT * (Kpk * CI * k) + 1) q *
+37-      (rp ex lg (1 + Wsum ex lg X 0 (S t) d (κ t)) q *
+38-        rp ex lg ((1 + Onsum (S t) (κ t)) ^ (k - 1)) q) := by
+
+
+Question: is the [blocking] note resolved, and are hcmp and hHol now true consequences of standard integration facts for the actual integrals? First line "VERDICT: FAITHFUL" or "VERDICT: ISSUES", then numbered notes tagged [blocking]/[minor].

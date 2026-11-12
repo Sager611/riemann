@@ -1,0 +1,352 @@
+-- ===== ParamsB.lean
+lemma one_lt_of {φ θ : ℝ} (hφ0 : 0 < φ) (h : 1 / φ - 1 < θ) : 1 < (1 + θ) * φ
+theorem step0B_nonempty {κ φ : ℝ} (hκ : 0 < κ) (h1 : max (2 / (2 + κ)) (1 / 2) < φ) :
+    ∃ θ : ℝ, 1 / φ - 1 < θ ∧ θ < min (κ / 2) 1
+theorem step0B_signs {κ φ θ : ℝ} (h1 : max (2 / (2 + κ)) (1 / 2) < φ) (h2 : φ < 1)
+    (h3 : 1 / φ - 1 < θ) (h4 : θ < min (κ / 2) 1) :
+    0 < θ ∧ θ < κ / 2 ∧ θ < 1 ∧ 0 < φ * θ ∧ φ * θ < 1 ∧ 1 < φ * (1 + θ) ∧ φ * (1 + θ) < 2
+theorem step8B_empty {κ φ : ℝ} (hκ : 0 < κ) (h0 : 0 < φ) (h : φ ≤ max (2 / (2 + κ)) (1 / 2)) :
+    ¬ ∃ θ : ℝ, 1 / φ - 1 < θ ∧ θ < min (κ / 2) 1
+theorem step0B_iff {κ φ : ℝ} (hκ : 0 < κ) (h0 : 0 < φ) :
+    (∃ θ : ℝ, 1 / φ - 1 < θ ∧ θ < min (κ / 2) 1) ↔ max (2 / (2 + κ)) (1 / 2) < φ
+theorem exists_q_s {κ θ : ℝ} (hθ0 : 0 < θ) (hθ : θ < κ / 2) :
+    ∃ q s : ℝ, 2 < q ∧ q < κ / θ ∧ 1 < s ∧ 2 / q + 1 / s < 1
+theorem exists_u_w {κ θ : ℝ} (hθ0 : 0 < θ) (hθ : θ < κ / 2) :
+    ∃ u w : ℝ, 1 < u ∧ u < κ / (2 * θ) ∧ u / (u - 1) < w ∧ 1 < w ∧ 2 * u * θ < κ ∧
+      2 * θ < κ * (1 - 1 / w) ∧ 0 < 1 - 1 / u - 1 / w
+theorem order_of_choices {κ φ : ℝ} (hκ : 0 < κ) (h1 : max (2 / (2 + κ)) (1 / 2) < φ) (h2 : φ < 1) :
+    ∃ θ q s u w : ℝ, 1 / φ - 1 < θ ∧ θ < min (κ / 2) 1 ∧ 0 < φ * θ ∧ φ * θ < 1 ∧
+      1 < φ * (1 + θ) ∧ φ * (1 + θ) < 2 ∧ 2 < q ∧ q < κ / θ ∧ 1 < s ∧ 2 / q + 1 / s < 1 ∧
+      1 < u ∧ u < κ / (2 * θ) ∧ u / (u - 1) < w ∧ 2 * θ < κ * (1 - 1 / w) ∧ 0 < 1 - 1 / u - 1 / w
+theorem conrey_threshold {φ : ℝ} (h1 : 7 / 11 < φ) :
+    ∃ δ : ℝ, 0 < δ ∧ δ < 8 / 7 ∧ max (2 / (2 + (8 / 7 - δ))) (1 / 2) < φ
+theorem conrey_sharp {φ δ : ℝ} (h1 : φ ≤ 7 / 11) (hδ0 : 0 ≤ δ) (hδ1 : δ < 8 / 7) :
+    ¬ max (2 / (2 + (8 / 7 - δ))) (1 / 2) < φ
+-- ===== Rpow.lean
+noncomputable def rp (ex lg : ℝ → ℝ) (x e : ℝ) : ℝ := if 0 < x then ex (e * lg x) else 0
+
+lemma lgex (h : ExpLog ex lg) (x : ℝ) : lg (ex x) = x :=
+  h.mono.injective (h.ex_lg _ (h.pos x))
+lemma lg_lt (h : ExpLog ex lg) {x y : ℝ} (hx : 0 < x) (hxy : x < y) : lg x < lg y
+lemma lg_le (h : ExpLog ex lg) {x y : ℝ} (hx : 0 < x) (hxy : x ≤ y) : lg x ≤ lg y
+lemma lg_nonneg (h : ExpLog ex lg) {x : ℝ} (hx : 1 ≤ x) : 0 ≤ lg x
+lemma lg_nonpos (h : ExpLog ex lg) {x : ℝ} (hx0 : 0 < x) (hx : x ≤ 1) : lg x ≤ 0
+lemma rp_of_pos {x : ℝ} (hx : 0 < x) (e : ℝ) : rp ex lg x e = ex (e * lg x) := ite_eq_left hx
+
+lemma rp_of_nonpos {x : ℝ} (hx : x ≤ 0) (e : ℝ) : rp ex lg x e = 0 := ite_eq_right (not_lt.2 hx)
+
+lemma rp_pos (h : ExpLog ex lg) {x : ℝ} (hx : 0 < x) (e : ℝ) : 0 < rp ex lg x e
+lemma rp_nonneg (h : ExpLog ex lg) (x e : ℝ) : 0 ≤ rp ex lg x e
+lemma rp_one (h : ExpLog ex lg) {x : ℝ} (hx : 0 < x) : rp ex lg x 1 = x
+lemma rp_zero (h : ExpLog ex lg) {x : ℝ} (hx : 0 < x) : rp ex lg x 0 = 1
+lemma rp_add (h : ExpLog ex lg) {x : ℝ} (hx : 0 < x) (e f : ℝ) :
+    rp ex lg x (e + f) = rp ex lg x e * rp ex lg x f
+lemma rp_mul (h : ExpLog ex lg) {x y : ℝ} (hx : 0 < x) (hy : 0 < y) (e : ℝ) :
+    rp ex lg (x * y) e = rp ex lg x e * rp ex lg y e
+lemma rp_rp (h : ExpLog ex lg) {x : ℝ} (hx : 0 < x) (e f : ℝ) :
+    rp ex lg (rp ex lg x e) f = rp ex lg x (e * f)
+lemma rp_neg (h : ExpLog ex lg) {x : ℝ} (hx : 0 < x) (e : ℝ) :
+    rp ex lg x (-e) * rp ex lg x e = 1
+lemma rp_le_rp (h : ExpLog ex lg) {x y e : ℝ} (hxy : x ≤ y) (he : 0 ≤ e) :
+    rp ex lg x e ≤ rp ex lg y e
+lemma rp_lt_rp (h : ExpLog ex lg) {x y e : ℝ} (hx : 0 < x) (hxy : x < y) (he : 0 < e) :
+    rp ex lg x e < rp ex lg y e
+lemma rp_le_rp_exp (h : ExpLog ex lg) {x e f : ℝ} (hx : 1 ≤ x) (hef : e ≤ f) :
+    rp ex lg x e ≤ rp ex lg x f
+lemma rp_le_max (h : ExpLog ex lg) {x e : ℝ} (he0 : 0 ≤ e) (he1 : e ≤ 1) :
+    rp ex lg x e ≤ max 1 x
+-- ===== Step7B.lean
+lemma step7B_meas (h : ExpLog ex lg) {Bad mE T b KB α : ℝ} (hT0 : 0 < T) (hb : 0 < b) (hKB : 0 < KB)
+    (hα : 0 < α) (hBad : b * T ≤ Bad) (hHol : Bad ≤ KB * rp ex lg T (1 - α) * rp ex lg mE α) :
+    rp ex lg (b / KB) (1 / α) * T ≤ mE
+theorem step7B (hEL : ExpLog ex lg) {I M Hp S Rq Ps Bad mE L h Nc Off : ℝ → ℝ} {Φ : ℝ → ℕ → ℝ}
+    {H₀ q s : ℝ} (hH₀ : 0 < H₀) (hq : 2 < q) (hs : 0 < s) (hqs : 2 / q + 1 / s < 1)
+    (hL : ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → 1 ≤ L T)
+    (hNc : ∀ T : ℝ, 0 ≤ Nc T)
+    (h3 : ∀ η : ℝ, 0 < η → ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → |I T - (M T + Hp T)| ≤ η * T)
+    (hM : ∃ δ₀ S₀ : ℝ, 0 < δ₀ ∧ 0 < S₀ ∧ ∀ η : ℝ, 0 < η → ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T →
+      S₀ ≤ S T ∧ M T ≤ -3 * δ₀ * (T / 2) * S T * (1 - η))
+    (h6 : ∀ ε : ℝ, 0 < ε → ε < 1 → ∀ η : ℝ, 0 < η → ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T →
+      Off T ≤ 2 * ε * T * L T → ∃ m : ℕ, |Hp T| ≤ Φ ε m * T + η * T)
+    (hΦ : ∀ τ : ℝ, 0 < τ → ∃ ε₁ : ℝ, 0 < ε₁ ∧ ∀ ε : ℝ, 0 < ε → ε ≤ ε₁ → ∀ m : ℕ, Φ ε m ≤ τ)
+    (h2 : ∀ T : ℝ, Off T ≤ 2 * Nc T)
+    (h1 : ∀ η : ℝ, 0 < η → ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → -Bad T - η * T ≤ I T)
+    (hHol : ∃ KG T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → Bad T ≤ KG * rp ex lg (Rq T) (2 / q) *
+      rp ex lg (Ps T) (1 / s) * rp ex lg (mE T) (1 - 2 / q - 1 / s))
+    (h5 : ∃ K₁ K₂ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → Rq T ≤ K₁ * T ∧ Ps T ≤ K₂ * T)
+    (hcov : ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T →
+      0 ≤ mE T ∧ 0 ≤ h T ∧ h T * L T ≤ H₀ ∧ mE T ≤ h T * Nc T + h T) :
+    ∃ ε₀ : ℝ, 0 < ε₀ ∧ ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → ε₀ * T * L T < Nc T
+-- ===== HairpinB.lean
+def DensityK (Z : Zeros) (β : ℕ → ℝ) (ex lg : ℝ → ℝ) (κ : ℝ) : Prop :=
+  ∃ Cd T₀ : ℝ, 0 < Cd ∧ ∀ T : ℝ, T₀ ≤ T → ∀ a : ℕ,
+    ((deepSet Z β lg T a).card : ℝ) ≤ Cd * T * lg T * ex (-(κ * a))
+def Step6ClassesB (Z : Zeros) (β : ℕ → ℝ) (ex lg : ℝ → ℝ) (κ θ : ℝ) (Hp : ℝ → ℝ) : Prop :=
+  ∀ u w : ℝ, 1 < u → 1 < w → 0 < 1 - 1 / u - 1 / w → 2 * u * θ < κ → ∃ (C : ℕ) (K : ℝ), 0 ≤ K ∧
+    ∃ (Ha Y₁ Y₂ MY : ℝ → ℕ → ℝ) (MO : ℝ → ℝ) (Mt : ℝ → ℕ), ∀ η : ℝ, 0 < η → ∃ T₀ : ℝ, ∀ T : ℝ,
+      T₀ ≤ T → |Hp T| ≤ ∑ a ∈ range (Mt T + 1), Ha T a + η * T ∧ MO T ≤ K * (T * lg T) ∧
+      ∀ a : ℕ, Ha T a ≤ K * ((a : ℝ) + 2) ^ C / lg T * (ex (2 * θ) ^ (a + 1) * Y₁ T a + Y₂ T a) ∧
+        MY T a ≤ K * ((a : ℝ) + 2) ^ C * (T * lg T) ∧
+        Y₁ T a ≤ rp ex lg ((classSet Z β lg T a).card : ℝ) (1 - 1 / w) * rp ex lg (MY T a) (1 / w) ∧
+        Y₂ T a ≤ rp ex lg ((classSet Z β lg T a).card : ℝ) (1 - 1 / u - 1 / w) *
+          rp ex lg (MO T) (1 / u) * rp ex lg (MY T a) (1 / w)
+lemma class_count {Z : Zeros} {β : ℕ → ℝ} {κ Cd ε T : ℝ} (hε : 0 < ε) (hTL : 0 ≤ T * lg T)
+    (hoff : ((offSet Z β T).card : ℝ) ≤ 2 * ε * T * lg T)
+    (hd : ∀ a : ℕ, ((deepSet Z β lg T a).card : ℝ) ≤ Cd * T * lg T * ex (-(κ * a))) (a : ℕ) :
+    ((classSet Z β lg T a).card : ℝ) ≤ min (3 * ε) (Cd * ex (-(κ * a))) * (T * lg T)
+lemma class_bound (h : ExpLog ex lg) {Ha Y₁ Y₂ MY MO n σ T L K B G w u : ℝ} (hT : 0 < T)
+    (hL : 1 ≤ L) (hK : 0 ≤ K) (hB : 1 ≤ B) (hG : 0 ≤ G) (hσ : 0 < σ) (hw : 1 < w) (hu : 1 < u)
+    (hv : 0 < 1 - 1 / u - 1 / w) (hn : n ≤ σ * (T * L)) (hMO : MO ≤ K * (T * L))
+    (hMY : MY ≤ K * B * (T * L)) (hY₁ : Y₁ ≤ rp ex lg n (1 - 1 / w) * rp ex lg MY (1 / w))
+    (hY₂ : Y₂ ≤ rp ex lg n (1 - 1 / u - 1 / w) * rp ex lg MO (1 / u) * rp ex lg MY (1 / w))
+    (hHa : Ha ≤ K * B / L * (G * Y₁ + Y₂)) :
+    Ha ≤ K * (K + 1) ^ 2 * T * B ^ 2 * G * rp ex lg σ (1 - 1 / w) +
+      K * (K + 1) ^ 2 * T * B ^ 2 * rp ex lg σ (1 - 1 / u - 1 / w)
+-- ===== SumB.lean
+theorem step6B_of_classes (hEL : ExpLog ex lg) {Z : Zeros} {β : ℕ → ℝ} {κ θ : ℝ} {Hp : ℝ → ℝ}
+    (hθ : 0 ≤ θ) (hden : DensityK Z β ex lg κ) (h6c : Step6ClassesB Z β ex lg κ θ Hp)
+    {u w : ℝ} (hu : 1 < u) (hw : 1 < w) (hv : 0 < 1 - 1 / u - 1 / w) (huθ : 2 * u * θ < κ) :
+    ∃ (C : ℕ) (K₁ K₂ : ℝ), 0 ≤ K₁ ∧ 0 ≤ K₂ ∧ ∀ c ε : ℝ, 0 < ε → ε < 1 → ∀ η : ℝ, 0 < η →
+      ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → ((offSet Z β T).card : ℝ) ≤ 2 * ε * T * lg T →
+        ∃ m : ℕ, |Hp T| ≤ (K₁ * Phi ex lg C (2 * θ) κ (1 - 1 / w) c ε m +
+          K₂ * Phi ex lg C 0 κ (1 - 1 / u - 1 / w) c ε m) * T + η * T
+theorem PhiB_small (hEL : ExpLog ex lg) (C : ℕ) {κ θ w u c K₁ K₂ : ℝ} (hK₁ : 0 ≤ K₁) (hK₂ : 0 ≤ K₂)
+    (hκ : 0 < κ) (hw : 1 < w) (hv : 0 < 1 - 1 / u - 1 / w) (hθw : 2 * θ < κ * (1 - 1 / w))
+    (hc : 0 < c) (hcθ : c * (2 * θ) < 1 - 1 / w) :
+    ∀ τ : ℝ, 0 < τ → ∃ ε₁ : ℝ, 0 < ε₁ ∧ ∀ ε : ℝ, 0 < ε → ε ≤ ε₁ → ∀ m : ℕ,
+      K₁ * Phi ex lg C (2 * θ) κ (1 - 1 / w) c ε m + K₂ * Phi ex lg C 0 κ (1 - 1 / u - 1 / w) c ε m
+        ≤ τ
+-- ===== DLamB.lean
+def UFrom (Z : Zeros) (φ₀ : ℝ) : Prop :=
+  ∀ φ : ℝ, φ₀ < φ → φ < 1 → ∃ c : ℝ, 0 < c ∧ ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T →
+    c * T * Z.sc T ≤ ((gapSet Z φ T).card : ℝ)
+theorem dpos_of_from {Z : Zeros} (hZ : Z.Ordered) {φ₀ : ℝ} (hφ₀ : 0 ≤ φ₀) (hφ₀1 : φ₀ < 1)
+    (hU : UFrom Z φ₀) (hs1 : ScaleToInf Z) (hs2 : ScaleHalf Z) (hR : RvMUp Z) {lam : ℝ}
+    (hlam : φ₀ < lam) : DPos Z lam
+lemma nToInf_of_from {Z : Zeros} {φ₀ : ℝ} (hφ₀1 : φ₀ < 1) (hU : UFrom Z φ₀) (hs1 : ScaleToInf Z) :
+    ∀ K : ℝ, ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → K ≤ (Z.N T : ℝ)
+theorem dlam_pos_of_from {Z : Zeros} (hZ : Z.Ordered) {φ₀ : ℝ} (hφ₀ : 0 ≤ φ₀) (hφ₀1 : φ₀ < 1)
+    (hU : UFrom Z φ₀) (hs1 : ScaleToInf Z) (hs2 : ScaleHalf Z) (hR : RvMUp Z) {lam : ℝ}
+    (hlam : φ₀ < lam) : 0 < Dlam Z lam :=
+-- ===== TheoremUB.lean
+def TheoremUB (Z : Zeros) (κ : ℝ) : Prop := UFrom Z (max (2 / (2 + κ)) (1 / 2))
+
+/-- The analytic quantities at fixed Step-0 data (φ, θ, P, f, η; PROOF Step 0), as functions of T: Theorem U's
+Data with ∫|R_T|⁴, ∫|P(V)|⁴ replaced by the moment families Rq q T = ∫_T^{2T}|R_T|^q, Ps s T = ∫_T^{2T}|P(V_φ)|^s. -/
+structure DataB where
+  /-- Re ∫_T^{2T} G_T|R_T|² P(V_φ) -/
+  I : ℝ → ℝ
+  /-- Re M_T -/
+  M : ℝ → ℝ
+  /-- Re 𝓗_T, the hairpin total -/
+  Hp : ℝ → ℝ
+  /-- Σ_n |c_n|² -/
+  S : ℝ → ℝ
+  /-- Rq q T = ∫_T^{2T} |R_T|^q (Lemma M3) -/
+  Rq : ℝ → ℝ → ℝ
+  /-- Ps s T = ∫_T^{2T} |P(V_φ)|^s (5c) -/
+  Ps : ℝ → ℝ → ℝ
+  /-- ∫_{E_T} G_T |R_T|² |P(V_φ)| -/
+  Bad : ℝ → ℝ
+  /-- meas E_T -/
+  mE : ℝ → ℝ
+
+/-- Theorem U's Data of the same construction (R4 = Rq 4, P4 = Ps 4), for reusing Step3, MainTerm, Step1Pos,
+Covering verbatim. -/
+def DataB.base (D : DataB) : Data := ⟨D.I, D.M, D.Hp, D.S, D.Rq 4, D.Ps 4, D.Bad, D.mE⟩
+
+/-- Step 7′, Hölder with exponents (q/2, s, 1/α), α = 1 − 2/q − 1/s, G_T bounded:
+∫_{E_T} G_T|R_T|²|P(V)| ≤ K_G ‖R_T‖_q² ‖P(V)‖_s meas(E_T)^α. -/
+def HolderB (ex lg : ℝ → ℝ) (D : DataB) : Prop :=
+  ∀ q s : ℝ, 2 < q → 1 < s → 2 / q + 1 / s < 1 → ∃ KG T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T →
+    D.Bad T ≤ KG * rp ex lg (D.Rq q T) (2 / q) * rp ex lg (D.Ps s T) (1 / s) *
+      rp ex lg (D.mE T) (1 - 2 / q - 1 / s)
+def MomentM (κ θ : ℝ) (D : DataB) : Prop :=
+  ∀ q : ℝ, 2 < q → q < κ / θ → ∃ K₁ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → D.Rq q T ≤ K₁ * T
+def Step5cB (D : DataB) : Prop :=
+  ∀ s : ℝ, 1 < s → ∃ K₂ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → D.Ps s T ≤ K₂ * T
+structure InputsB (Z : Zeros) (β : ℕ → ℝ) (ex lg : ℝ → ℝ) (κ φ θ : ℝ) (D : DataB) : Prop where
+  step3 : Step3 D.base
+  main : MainTerm D.base
+  step6 : Step6ClassesB Z β ex lg κ θ D.Hp
+  step1 : Step1Pos D.base
+  holder : HolderB ex lg D
+  momM : MomentM κ θ D
+  step5c : Step5cB D
+  cover : Covering Z φ D.base
+def DPCInputsB (Z : Zeros) (β : ℕ → ℝ) (ex lg : ℝ → ℝ) (κ : ℝ) : Prop :=
+  ∀ φ θ : ℝ, 0 < φ → φ < 1 → 0 < θ → θ < min (κ / 2) 1 → 0 < φ * θ → φ * θ < 1 →
+    1 < φ * (1 + θ) → φ * (1 + θ) < 2 → ∃ D : DataB, InputsB Z β ex lg κ φ θ D
+lemma cover_of {Z : Zeros} (hEL : ExpLog ex lg) {tp φ : ℝ} (htp : 0 < tp) (hφ0 : 0 < φ)
+    (hsc : ∀ T : ℝ, 0 < T → Z.sc T * tp = lg T) {mE : ℝ → ℝ}
+    (hcov : ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → 0 ≤ mE T ∧
+      mE T ≤ φ / Z.sc T * ((gapSet Z φ T).card : ℝ) + φ / Z.sc T) :
+    ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → 0 ≤ mE T ∧ 0 ≤ φ / Z.sc T ∧ φ / Z.sc T * lg T ≤ tp * φ ∧
+      mE T ≤ φ / Z.sc T * ((gapSet Z φ T).card : ℝ) + φ / Z.sc T
+lemma moments_of {D : DataB} {κ θ q s : ℝ} (hM : MomentM κ θ D) (h5 : Step5cB D) (hq : 2 < q)
+    (hqκ : q < κ / θ) (hs : 1 < s) :
+    ∃ K₁ K₂ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → D.Rq q T ≤ K₁ * T ∧ D.Ps s T ≤ K₂ * T
+lemma split_c {θ w : ℝ} (hθ0 : 0 < θ) (hw : 1 < w) :
+    0 < (1 - 1 / w) / (4 * θ) ∧ (1 - 1 / w) / (4 * θ) * (2 * θ) < 1 - 1 / w
+theorem theoremUB {Z : Zeros} (hZ : Z.Ordered) {β : ℕ → ℝ} (hβ : Reflect Z β)
+    (hEL : ExpLog ex lg) {tp : ℝ} (htp : 0 < tp) (hsc : ∀ T : ℝ, 0 < T → Z.sc T * tp = lg T)
+    {κ : ℝ} (hκ : 0 < κ) (hden : DensityK Z β ex lg κ) (hin : DPCInputsB Z β ex lg κ) :
+    TheoremUB Z κ
+-- ===== FinalB.lean
+theorem D_pos_of_kappa {Z : Zeros} (hZ : Z.Ordered) {β : ℕ → ℝ} (hβ : Reflect Z β)
+    (hEL : ExpLog ex lg) {tp : ℝ} (htp : 0 < tp) (hsc : ∀ T : ℝ, 0 < T → Z.sc T * tp = lg T)
+    (hR : RvMUp Z) {κ : ℝ} (hκ : 0 < κ) (hden : DensityK Z β ex lg κ)
+    (hin : DPCInputsB Z β ex lg κ) :
+    ∀ lam : ℝ, max (2 / (2 + κ)) (1 / 2) < lam → 0 < Dlam Z lam
+theorem theoremUB_conrey {Z : Zeros} (hZ : Z.Ordered) {β : ℕ → ℝ} (hβ : Reflect Z β)
+    (hEL : ExpLog ex lg) {tp : ℝ} (htp : 0 < tp) (hsc : ∀ T : ℝ, 0 < T → Z.sc T * tp = lg T)
+    (hden : ∀ δ : ℝ, 0 < δ → δ < 8 / 7 → DensityK Z β ex lg (8 / 7 - δ))
+    (hin : ∀ δ : ℝ, 0 < δ → δ < 8 / 7 → DPCInputsB Z β ex lg (8 / 7 - δ)) : UFrom Z (7 / 11)
+theorem D_pos_seven_elevenths {Z : Zeros} (hZ : Z.Ordered) {β : ℕ → ℝ} (hβ : Reflect Z β)
+    (hEL : ExpLog ex lg) {tp : ℝ} (htp : 0 < tp) (hsc : ∀ T : ℝ, 0 < T → Z.sc T * tp = lg T)
+    (hR : RvMUp Z) (hden : ∀ δ : ℝ, 0 < δ → δ < 8 / 7 → DensityK Z β ex lg (8 / 7 - δ))
+    (hin : ∀ δ : ℝ, 0 < δ → δ < 8 / 7 → DPCInputsB Z β ex lg (8 / 7 - δ)) :
+    ∀ lam : ℝ, 7 / 11 < lam → 0 < Dlam Z lam
+-- ===== LemmaZ.lean
+lemma ex_sum (h : ExpLog ex lg) {ι : Type*} (s : Finset ι) (x : ι → ℝ) :
+    ex (∑ i ∈ s, x i) = ∏ i ∈ s, ex (x i)
+lemma sum_mul_le {ι : Type*} (s : Finset ι) (d u : ι → ℝ) {D ℓ : ℝ} (hD : 0 ≤ D)
+    (hu : ∀ i ∈ s, 0 ≤ u i) (hd : ∀ i ∈ s, d i ≤ D) (hl : ∑ i ∈ s, u i ≤ ℓ) :
+    ∑ i ∈ s, d i * u i ≤ D * ℓ
+theorem prod_ex_le (h : ExpLog ex lg) {ι : Type*} (s : Finset ι) (d u : ι → ℝ) {D Y : ℝ}
+    (hY : 0 < Y) (hD : 0 ≤ D) (hu : ∀ i ∈ s, 0 ≤ u i) (hd : ∀ i ∈ s, d i ≤ D)
+    (hl : ∑ i ∈ s, u i ≤ lg Y) : ∏ i ∈ s, ex (d i * u i) ≤ rp ex lg Y D
+theorem prod_ex_le_sup (h : ExpLog ex lg) {ι : Type*} (s : Finset ι) (hs : s.Nonempty)
+    (d u : ι → ℝ) {Y : ℝ} (hY : 0 < Y) (hu : ∀ i ∈ s, 0 ≤ u i) (hl : ∑ i ∈ s, u i ≤ lg Y) :
+    ∏ i ∈ s, ex (d i * u i) ≤ rp ex lg Y (s.sup' hs (fun i => max (d i) 0))
+lemma rp_sup_le_sum (h : ExpLog ex lg) {ι : Type*} (s : Finset ι) (hs : s.Nonempty) (c : ι → ℝ)
+    (X : ℝ) : rp ex lg X (s.sup' hs c) ≤ ∑ i ∈ s, rp ex lg X (c i)
+lemma mul_prod_eq {ι : Type*} (n : ℕ) (a k : ι → ℝ) (j : Fin (n + 1)) (ρ : Fin (n + 1) → ι) :
+    a (ρ j) * ∏ i, k (ρ i) = ∏ i, (if i = j then a (ρ i) * k (ρ i) else k (ρ i))
+lemma tuple_one {ι : Type*} [DecidableEq ι] (S : Finset ι) (a k : ι → ℝ) (n : ℕ) (j : Fin (n + 1)) :
+    ∑ ρ ∈ Fintype.piFinset (fun _ : Fin (n + 1) => S),
+        ∏ i, (if i = j then a (ρ i) * k (ρ i) else k (ρ i)) =
+      (∑ x ∈ S, a x * k x) * (∑ x ∈ S, k x) ^ n
+theorem tuple_sum {ι : Type*} [DecidableEq ι] (S : Finset ι) (a k : ι → ℝ) (n : ℕ) :
+    ∑ ρ ∈ Fintype.piFinset (fun _ : Fin (n + 1) => S), (∑ j, a (ρ j)) * ∏ i, k (ρ i) =
+      (n + 1) * (∑ x ∈ S, a x * k x) * (∑ x ∈ S, k x) ^ n
+theorem tuple_bound (h : ExpLog ex lg) {ι : Type*} [DecidableEq ι] (S : Finset ι) (c k : ι → ℝ)
+    (hk : ∀ x, 0 ≤ k x) (X : ℝ) (n : ℕ) :
+    ∑ ρ ∈ Fintype.piFinset (fun _ : Fin (n + 1) => S),
+        rp ex lg X (univ.sup' univ_nonempty (fun i => c (ρ i))) * ∏ i, k (ρ i) ≤
+      (n + 1) * (∑ x ∈ S, rp ex lg X (c x) * k x) * (∑ x ∈ S, k x) ^ n
+lemma packet_case1 (h : ExpLog ex lg) {a X y D : ℝ} (ha : 1 ≤ a) (hX : 0 < X) (hy : 0 ≤ y)
+    (hD : 0 ≤ D) : rp ex lg a (-(1 / 2) - y) * rp ex lg (X / a) D ≤
+      rp ex lg a (-(1 / 2)) * rp ex lg X D
+lemma packet_case2 (h : ExpLog ex lg) {a X y D : ℝ} (ha : 1 ≤ a) (hX : 0 < X) (hD : 0 ≤ D) :
+    rp ex lg a (-(1 / 2) + y) * rp ex lg (X / a) (y + D) ≤
+      rp ex lg X (y + D) * rp ex lg a (-(1 / 2))
+lemma packet_nofree (h : ExpLog ex lg) {a X y : ℝ} (ha : 1 ≤ a) (haX : a ≤ X) (hy : 0 ≤ y) :
+    rp ex lg a (-(1 / 2) + y) ≤ rp ex lg X y * rp ex lg a (-(1 / 2))
+lemma pos_part_shift (h : ExpLog ex lg) {X d y : ℝ} (hX : 1 ≤ X) (hy : 0 ≤ y) :
+    rp ex lg X (max (d + y) 0) ≤ rp ex lg X y * rp ex lg X (max d 0)
+lemma pos_part_split (h : ExpLog ex lg) {X d y : ℝ} (hX : 1 ≤ X) (hy : 0 ≤ y) :
+    rp ex lg X (max (d - y) 0) ≤ 1 + (if 0 < d then rp ex lg X (-y) * rp ex lg X d else 0)
+theorem term_bound (h : ExpLog ex lg) {ι α : Type*} [DecidableEq ι] (S : Finset ι) (c k : ι → ℝ)
+    (hc : ∀ x, 0 ≤ c x) (hk : ∀ x, 0 ≤ k x) {X y CI Kpk : ℝ} (hX : 0 < X) (hy : 0 ≤ y)
+    (hCI : 0 ≤ CI) (n : ℕ) (P : Finset α) (v C F : α → ℝ) (hv : ∀ p ∈ P, 1 ≤ v p)
+    (hC : ∀ p ∈ P, 0 ≤ C p)
+    (hF : ∀ p ∈ P, |F p| ≤ CI * ∑ ρ ∈ Fintype.piFinset (fun _ : Fin (n + 1) => S),
+      rp ex lg (X / v p) (univ.sup' univ_nonempty (fun i => c (ρ i))) * ∏ i, k (ρ i))
+    (hP : ∑ p ∈ P, C p * rp ex lg (v p) (-(1 / 2)) ≤ Kpk) :
+    ∑ p ∈ P, C p * rp ex lg (v p) (-(1 / 2) - y) * |F p| ≤
+      Kpk * CI * ((n + 1) * (∑ x ∈ S, rp ex lg X (c x) * k x) * (∑ x ∈ S, k x) ^ n)
+lemma mono_bound {W On : ℝ} (hW : 0 ≤ W) (hOn : 0 ≤ On) {n k : ℕ} (hnk : n + 1 ≤ k) :
+    ((n : ℝ) + 1) * W * On ^ n ≤ k * (1 + W) * (1 + On) ^ (k - 1)
+theorem lemmaZ_sum {γ : Type*} (𝒯 : Finset γ) (Bt : γ → ℝ) (nt : γ → ℕ) {Rabs E W On Kpk CI : ℝ}
+    {k : ℕ} (hk : 1 ≤ k) (hW : 0 ≤ W) (hOn : 0 ≤ On) (hK : 0 ≤ Kpk * CI)
+    (hR : Rabs ≤ ∑ τ ∈ 𝒯, Bt τ + E)
+    (hB : ∀ τ ∈ 𝒯, nt τ + 1 ≤ k ∧
+      (Bt τ ≤ Kpk * CI * (((nt τ : ℝ) + 1) * W * On ^ nt τ) ∨ Bt τ ≤ Kpk * CI)) :
+    Rabs ≤ 𝒯.card * (Kpk * CI * (k * (1 + W) * (1 + On) ^ (k - 1))) + E
+-- ===== LemmaM.lean
+lemma rp_ex (h : ExpLog ex lg) (x e : ℝ) : rp ex lg (ex x) e = ex (e * x)
+theorem M2_bound (h : ExpLog ex lg) {I μ B N L C T κ a w : ℝ} (hL : 0 < L) (hC : 0 < C)
+    (hT : 0 < T) (hw : 1 < w) (hI : I ≤ rp ex lg μ (1 - 1 / w) * rp ex lg N (1 / w))
+    (hμ : μ ≤ B / L) (hB : B ≤ C * T * L * ex (-(κ * a))) (hN : N ≤ C * T) :
+    I ≤ C * T * ex (-(κ * a * (1 - 1 / w)))
+lemma geom_mul (ρ : ℝ) (M : ℕ) : (∑ a ∈ range M, ρ ^ a) * (1 - ρ) = 1 - ρ ^ M
+lemma geom_le {ρ : ℝ} (h0 : 0 ≤ ρ) (h1 : ρ < 1) (M : ℕ) : ∑ a ∈ range M, ρ ^ a ≤ 1 / (1 - ρ)
+theorem M3_series (h : ExpLog ex lg) {θ κ w p : ℝ} (hp : 0 < p) (hpθ : p * θ < κ * (1 - 1 / w))
+    (M : ℕ) : ∑ a ∈ range M, ex (θ * (a + 1) - κ * a * (1 - 1 / w) / p) ≤
+      ex θ / (1 - ex (θ - κ * (1 - 1 / w) / p))
+theorem M3_exists_w {θ κ p : ℝ} (hκ : 0 < κ) (hpθ0 : 0 ≤ p * θ) (hpθ : p * θ < κ) :
+    ∃ w : ℝ, 1 < w ∧ p * θ < κ * (1 - 1 / w) ∧ p * θ < κ * (1 - 1 / w) ^ 2
+-- ===== LemmaM4.lean
+theorem M4_count (h : ExpLog ex lg) {Nc B Sw C T L κ a w mm : ℝ} (hC : 0 < C) (hT : 0 < T)
+    (hL : 0 < L) (hw : 1 < w) (hm : 0 ≤ mm) (hN : Nc ≤ rp ex lg B (1 - 1 / w) * rp ex lg Sw (1 / w))
+    (hB : B ≤ C * (T * L) * ex (-(κ * a))) (hS : Sw ≤ C * rp ex lg (mm + 2) w * (T * L)) :
+    Nc ≤ C * (mm + 2) * (T * L) * ex (-(κ * a * (1 - 1 / w)))
+theorem M4_moment (h : ExpLog ex lg) {I Nc Sp C C' T L κ a w mm : ℝ} (hC : 0 ≤ C) (hC' : 0 ≤ C')
+    (hT : 0 < T) (hL : 0 < L) (hw : 1 < w) (hm : 0 ≤ mm)
+    (hI : I ≤ rp ex lg Nc (1 - 1 / w) * rp ex lg Sp (1 / w))
+    (hN : Nc ≤ C * (mm + 2) * (T * L) * ex (-(κ * a * (1 - 1 / w)))) (hS : Sp ≤ C' * (T * L)) :
+    I ≤ (C + 1) * (C' + 1) * (mm + 2) * (T * L) * ex (-(κ * a * (1 - 1 / w) ^ 2))
+lemma key_ineq {x : ℝ} (hx : 1 ≤ x) : 1 / (x + 1) ^ 2 ≤ 1 / x - 1 / (x + 1)
+lemma inv_sq_sum (k : ℕ) : ∑ n ∈ range (k + 1), 1 / ((n : ℝ) + 1) ^ 2 ≤ 2 - 1 / ((k : ℝ) + 1)
+theorem kernel_sum (A : ℕ) (hA : 3 ≤ A) (M : ℕ) :
+    ∑ n ∈ range M, ((n : ℝ) + 2) / ((n : ℝ) + 1) ^ A ≤ 4
+-- ===== LemmaM3.lean
+lemma off_bound (h : ExpLog ex lg) {θ κ w p K₁ τ : ℝ} (hp : 0 < p) (hpθ : p * θ < κ * (1 - 1 / w))
+    (hK₁ : 0 ≤ K₁) (hτ : 0 ≤ τ) (NF : ℕ → ℝ)
+    (hF : ∀ a : ℕ, NF a ≤ K₁ * τ * ex (-(κ * a * (1 - 1 / w) / p))) (M : ℕ) :
+    ∑ a ∈ range M, ex θ ^ (a + 1) * NF a ≤
+      K₁ * τ * (ex θ / (1 - ex (θ - κ * (1 - 1 / w) / p)))
+theorem momentM_of (h : ExpLog ex lg) {θ κ w q r KZ K₀ K₁ T₀ : ℝ} (hq : 0 < q) (hr : 1 < r)
+    (hpθ : q * r * θ < κ * (1 - 1 / w)) (hKZ : 0 ≤ KZ) (hK₀ : 0 ≤ K₀) (hK₁ : 0 ≤ K₁)
+    {Rq IW IO NOn NOff : ℝ → ℝ} {NF : ℝ → ℕ → ℝ}
+    (hZ : ∀ T : ℝ, T₀ ≤ T → Rq T ≤ KZ * rp ex lg (IW T) (1 / r) * rp ex lg (IO T) (1 - 1 / r))
+    (hIO : ∀ T : ℝ, T₀ ≤ T → IO T ≤ K₀ * T)
+    (hIW : ∀ T : ℝ, T₀ ≤ T →
+      rp ex lg (IW T) (1 / (q * r)) ≤ rp ex lg T (1 / (q * r)) + NOn T + NOff T)
+    (hOn : ∀ T : ℝ, T₀ ≤ T → NOn T ≤ K₀ * rp ex lg T (1 / (q * r)))
+    (hOff : ∀ T : ℝ, T₀ ≤ T → ∃ M : ℕ,
+      NOff T ≤ ∑ a ∈ range M, ex θ ^ (a + 1) * NF T a + rp ex lg T (1 / (q * r)))
+    (hF : ∀ T : ℝ, T₀ ≤ T → ∀ a : ℕ,
+      NF T a ≤ K₁ * rp ex lg T (1 / (q * r)) * ex (-(κ * a * (1 - 1 / w) / (q * r)))) :
+    ∃ K T₁ : ℝ, ∀ T : ℝ, T₁ ≤ T → Rq T ≤ K * T
+theorem exists_r_w {θ κ q : ℝ} (hθ : 0 < θ) (hq : 0 < q) (hqκ : q < κ / θ) :
+    ∃ r w : ℝ, 1 < r ∧ 1 < w ∧ q * r * θ < κ * (1 - 1 / w)
+def M3Inputs (ex lg : ℝ → ℝ) (κ θ : ℝ) (D : DataB) : Prop :=
+  ∀ q r w : ℝ, 2 < q → q < κ / θ → 1 < r → 1 < w → q * r * θ < κ * (1 - 1 / w) →
+    ∃ (KZ K₀ K₁ T₀ : ℝ) (IW IO NOn NOff : ℝ → ℝ) (NF : ℝ → ℕ → ℝ), 0 ≤ KZ ∧ 0 ≤ K₀ ∧ 0 ≤ K₁ ∧
+      (∀ T : ℝ, T₀ ≤ T → D.Rq q T ≤ KZ * rp ex lg (IW T) (1 / r) * rp ex lg (IO T) (1 - 1 / r)) ∧
+      (∀ T : ℝ, T₀ ≤ T → IO T ≤ K₀ * T) ∧
+      (∀ T : ℝ, T₀ ≤ T →
+        rp ex lg (IW T) (1 / (q * r)) ≤ rp ex lg T (1 / (q * r)) + NOn T + NOff T) ∧
+      (∀ T : ℝ, T₀ ≤ T → NOn T ≤ K₀ * rp ex lg T (1 / (q * r))) ∧
+      (∀ T : ℝ, T₀ ≤ T → ∃ M : ℕ,
+        NOff T ≤ ∑ a ∈ range M, ex θ ^ (a + 1) * NF T a + rp ex lg T (1 / (q * r))) ∧
+      (∀ T : ℝ, T₀ ≤ T → ∀ a : ℕ,
+        NF T a ≤ K₁ * rp ex lg T (1 / (q * r)) * ex (-(κ * a * (1 - 1 / w) / (q * r))))
+theorem momentM_of_inputs (h : ExpLog ex lg) {κ θ : ℝ} (hθ : 0 < θ) {D : DataB}
+    (hin : M3Inputs ex lg κ θ D) : MomentM κ θ D
+-- ===== FineB.lean
+structure InputsFineB (Z : Zeros) (β : ℕ → ℝ) (ex lg : ℝ → ℝ) (κ φ θ : ℝ) (D : DataB) : Prop where
+  step3 : Step3 D.base
+  main : MainTerm D.base
+  step6 : Step6ClassesB Z β ex lg κ θ D.Hp
+  step1 : Step1Pos D.base
+  holder : HolderB ex lg D
+  m3 : M3Inputs ex lg κ θ D
+  step5c : Step5cB D
+  cover : Covering Z φ D.base
+def DPCInputsFineB (Z : Zeros) (β : ℕ → ℝ) (ex lg : ℝ → ℝ) (κ : ℝ) : Prop :=
+  ∀ φ θ : ℝ, 0 < φ → φ < 1 → 0 < θ → θ < min (κ / 2) 1 → 0 < φ * θ → φ * θ < 1 →
+    1 < φ * (1 + θ) → φ * (1 + θ) < 2 → ∃ D : DataB, InputsFineB Z β ex lg κ φ θ D
+theorem inputsB_of_fine (hEL : ExpLog ex lg) {Z : Zeros} {β : ℕ → ℝ} {κ : ℝ}
+    (hin : DPCInputsFineB Z β ex lg κ) : DPCInputsB Z β ex lg κ
+theorem theoremUB_fine {Z : Zeros} (hZ : Z.Ordered) {β : ℕ → ℝ} (hβ : Reflect Z β)
+    (hEL : ExpLog ex lg) {tp : ℝ} (htp : 0 < tp) (hsc : ∀ T : ℝ, 0 < T → Z.sc T * tp = lg T)
+    {κ : ℝ} (hκ : 0 < κ) (hden : DensityK Z β ex lg κ) (hin : DPCInputsFineB Z β ex lg κ) :
+    TheoremUB Z κ :=
+theorem D_pos_seven_elevenths_fine {Z : Zeros} (hZ : Z.Ordered) {β : ℕ → ℝ} (hβ : Reflect Z β)
+    (hEL : ExpLog ex lg) {tp : ℝ} (htp : 0 < tp) (hsc : ∀ T : ℝ, 0 < T → Z.sc T * tp = lg T)
+    (hR : RvMUp Z) (hden : ∀ δ : ℝ, 0 < δ → δ < 8 / 7 → DensityK Z β ex lg (8 / 7 - δ))
+    (hin : ∀ δ : ℝ, 0 < δ → δ < 8 / 7 → DPCInputsFineB Z β ex lg (8 / 7 - δ)) :
+    ∀ lam : ℝ, 7 / 11 < lam → 0 < Dlam Z lam :=

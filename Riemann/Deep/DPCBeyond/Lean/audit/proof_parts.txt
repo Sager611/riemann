@@ -1,0 +1,33 @@
+## Lemma Z (pointwise bound through the zeros)
+
+Let On(t) := Σ_ρ κ_A(L|γ − t|), W(t) := Σ_ρ X^{d_ρ⁺} κ_A(L|γ − t|) (all nontrivial zeros, multiplicity), W_{−y}(t) := Σ_ρ X^{(d_ρ − y)⁺} κ_A(L|γ − t|). For t ∈ [T/2, 3T] and 0 ≤ y ≤ ½,
+  |R_T(t − iy)| ≤ C (1 + W_{−y}(t)) (1 + On(t))^{k−1},   |R*(t − iy)| ≤ C X^{y} (1 + W(t)) (1 + On(t))^{k−1},
+with C = C(f, ψ, ω, η, θ, b, A). (R*(t − iy) = conj R_T(t + iy) with f̄; so both are the case s = ½ ± y + it.)
+
+*Proof.* (i) Explicit formula. φ(u) := ρ_η(u/L)/u ∈ C_c^∞((ηL, bL)), Φ(z) := ∫ φ(u) e^{zu} du. Perron and a shift to Re → −∞ (Φ decays like e^{ηL Re z} there) give, for all s,
+  Q(s) := Σ_{n≥2} Λ(n) φ(log n) n^{−s} = Φ(1 − s) − Σ_ρ Φ(ρ − s) − Σ_{m≥1} Φ(−2m − s).
+Λ(q)φ(log q) = ρ_η(log q/L), so Q = Σ_q ρ_η(log q/L) q^{−s} + Q_pp, Q_pp the prime powers.
+(ii) Products. Fix s = ½ + y + it (R_T(t − iy)) or s = ½ − y + it (R_T(t + iy), i.e. R*(t − iy)). With x_q := ρ_η(log q/L) q^{−s}, n = q_1⋯q_j squarefree has c_n n^{1/2−s} = (−1)^j f(Σ log q_i/L) ∏ x_{q_i}, so the polynomial at s is Σ_{j≤k} (−1)^j Σ_{q_1<…<q_j} f(Σ log q_i/L) ∏ x_{q_i}. Remove distinctness by Möbius inversion on set partitions: each partition π of {1..j} gives Σ over one prime per block, block B carrying x_q^{|B|}. Remove prime powers by the binomial expansion of (Q − Q_pp). Every resulting term is (a) an absolutely convergent sum over packets: a collision block B with prime q is the packet q^h, h = |B| ≥ 2, with coefficient ρ_η(log q/L)^h q^{−hs} (T^η < q < T^b); a prime-power term from Q_pp is the packet q^h, h ≥ 2, with coefficient ρ_η(h log q/L) h^{−1} q^{−hs} (T^{η/h} < q < T^{b/h}; repair after review 2); let 𝔞 := ∏ q^h be the total packet product (repair after review 1: the shift is h log q/L, not log q/L); times (b) a free sum Σ_{q'_1..q'_m} f_𝔞(Σ log q'_i/L) ∏ x_{q'_i}, f_𝔞(v) := f(v + log 𝔞/L), of the same kind with fewer variables (f_𝔞 = 0 on [θ − log 𝔞/L, ∞), so the free variables satisfy Σu_i ≤ log(X/𝔞)). By Fourier inversion f_𝔞(Σu_i/L) = ∫ f̂_𝔞(ξ) ∏ e^{2πiξu_i/L} dξ, the free sum equals ∫ f̂_𝔞(ξ) ∏_i Q_ξ dξ (Q at s − 2πiξ/L) minus prime-power terms of type (a), and inserting (i) and Fubini (absolute convergence: Σ_ρ |Φ(ρ − s + 2πiξ/L)| ≪ T^{b} log(2 + |t| + |ξ|), polynomial in ξ, and f̂_𝔞 is Schwartz uniformly in 𝔞) it is a sum over ρ_1, …, ρ_m of
+  I(ρ_1..ρ_m) := ∫_{R^m} f_𝔞(Σu_i/L) ∏ φ(u_i) e^{z_i u_i} du,  z_i := ρ_i − s,
+plus pole and trivial-zero terms (z_i = 1 − s or −2m' − s), which are O(T^{−10}) since |Im s| ≍ T and IBP (iii) applies.
+
+(iii) The decisive bound. On the support of the integrand u_i > ηL > 0 and Σu_i ≤ θL − log 𝔞 = log(X/𝔞) (f_𝔞 = 0 on [θ − log 𝔞/L, ∞)). With Re z_i = d_i − y (case s = ½ + y + it) or d_i + y (case s = ½ − y + it),
+  |e^{Σ z_i u_i}| = e^{Σ (Re z_i) u_i} ≤ e^{max_i (Re z_i)⁺ · Σ u_i} ≤ (X/𝔞)^{max_i (Re z_i)⁺}.
+The integrand vanishes to infinite order on the boundary of its support, and ∂_u^α of f_𝔞(Σu/L)∏φ(u_i) is ≪_α L^{−|α|−m} on a set of volume ≪ L^m; integrating by parts A times in each u_i with L|z_i| ≥ 1 gives
+  |I(ρ_1..ρ_m)| ≤ C_{A,m} (X/𝔞)^{max_i (Re z_i)⁺} ∏_i κ_A(L|z_i|),  |z_i| ≥ |γ_i − t|.
+This is where the length constraint is kept: an r-fold product of prime sums of length X costs X^{max d}, not X^{r·max d} as in the route |e_r| ≪ (1 + |S_1|)^r (DPC l.665–670), which is harmless under RH and fatal without it.
+(iv) Summation. X^{max_i c_i} ≤ Σ_i X^{c_i} for c_i ≥ 0, so Σ_{ρ_1..ρ_m} X^{max(Re z_i)⁺} ∏ κ_A ≤ m · W_± · On^{m−1}, where W_+ := W_{−y} in the first case, and in the second case (d + y)⁺ ≤ y + d⁺ gives W_− ≤ X^{y} W. Packets carry |𝔞^{−s}| = 𝔞^{−1/2 ∓ y}. In the first case (Re z_i = d_i − y) the free part carries (X/𝔞)^{max(d_i − y)⁺} ≤ X^{max(d_i−y)⁺}. In the second case it carries (X/𝔞)^{y + max d⁺} and the product is 𝔞^{−1/2+y}(X/𝔞)^{y + max d⁺} = X^{y + max d⁺} 𝔞^{−1/2 − max d⁺} ≤ X^{y + max d⁺} 𝔞^{−1/2}; with no free variable left, 𝔞 < X gives 𝔞^{−1/2+y} ≤ X^{y}𝔞^{−1/2}. Finally Σ_𝔞 C(𝔞)𝔞^{−1/2} ≤ ∏ over the ≤ k packets of (Σ_{T^η<q<T^b} ρ_η^h q^{−h/2} + Σ_{q, h≥2} |ρ_η(h log q/L)| h^{−1} q^{−h/2}) = O_η(1), C(𝔞) the product of the |packet coefficients| times 𝔞^{Re s} (so the packet factor 𝔞^{−s} is stripped): h = 2 by Mertens (Σ_{T^η<q<T^b} 1/q and Σ_{T^{η/2}<q<T^{b/2}} 1/q are O(log(b/η))), h ≥ 3 by Σ_q Σ_{h≥3} q^{−h/2} < ∞. The number of partitions and binomial terms is ≤ C(k). This proves Lemma Z. ∎
+
+## Lemma M (moments)
+
+Bins B_a := {ρ : γ ∈ [T/4, 3T], d_ρ L ∈ [a, a+1)}, a ≥ 0; |B_a| ≤ C TL e^{−κa} (density). Off(t) := Σ_{ρ: d_ρ > 0} X^{d_ρ} κ_A(L|γ − t|), so W ≤ On + Off and Off ≤ Σ_a e^{θ(a+1)} F_a, F_a := Σ_{ρ∈B_a} κ_A(L|γ − t|), plus O(T^{−5}) for t ∈ [T/2, 5T/2] (zeros with γ ∉ [T/4, 3T] have L|γ − t| ≥ TL/4, so their total weight is ≤ X^{1/2} Σ_ρ κ_A(L|γ − t|) ≪ T^{−5} for A large).
+(M1) ‖On‖_{L^p[T/2,5T/2]} ≪_p T^{1/p}: On ≤ Σ_m (1 + |m|)^{−A} n_m, n_m(t) := #{ρ : m ≤ L(γ − t) < m + 1}, Fujii ∫ n_m^p ≪ T (Step 5b) for |m| ≤ TL/4 (heights comparable to T), the kernel tail κ_A(|m|) ≤ |m|^{−A} times the trivial n_m ≪ log(T + |m|/L) beyond, Minkowski.
+(M2) ‖F_a‖_p ≪_{p,w} T^{1/p} e^{−κa(1−1/w)/p} for every w > 1: n^{(a)}_m := #{ρ ∈ B_a : m ≤ L(γ − t) < m + 1} ≤ n_m is an integer, so (n^{(a)}_m)^p ≤ 1_{n^{(a)}_m ≥ 1} n_m^p and Hölder gives ∫ ≤ meas{n^{(a)}_m ≥ 1}^{1−1/w} ‖n_m‖_{pw}^p ≤ (|B_a|/L)^{1−1/w}(CT)^{1/w}.
+(M3) Hence ‖Off‖_p ≪ T^{1/p} Σ_a e^{θ(a+1) − κa(1−1/w)/p} ≪ T^{1/p} whenever pθ < κ (choose w large), and by Lemma Z and Hölder
+  ∫_T^{2T} |R_T|^q ≪ T  for every q < κ/θ.  (With κ = 8/7 − δ and θ < 4/7 there is q > 2.)
+(M4) Discrete versions over the zeros (cut points x_ρ = γ_ρ ∓ h/2, γ_ρ ∈ [T, 2T]): Σ_ρ On(x_ρ)^p ≪ TL; Σ_ρ Off(x_ρ)^p ≪ TL whenever pθ < κ. Proof as M1–M3 with Lz Lemma DoubleSumZeros (Σ_j n_j^{p+1} ≪ L∫(N(t + c/L) − N(t))^{p+1}dt ≪ TL) in place of Fujii, and #{ρ : n^{(a)}_m(x_ρ) ≥ 1} ≤ Σ_{ρ'∈B_a} Ñ^{(m)}_{ρ'} ≤ |B_a|^{1−1/w}(Σ_{all ρ'} (Ñ^{(m)}_{ρ'})^w)^{1/w} ≪ (|m|+2) TL e^{−κa(1−1/w)}, Ñ^{(m)}_{ρ'} := #{ρ : |γ − γ'| ≤ (|m|+1)/L + h} (m ∈ ℤ; a B_a zero with m ≤ L(γ' − x_ρ) < m + 1 has |γ' − x_ρ| ≤ (|m|+1)/L and |x_ρ − γ_ρ| = h/2). The exponent becomes κ(1−1/w)², still → κ.
+
+
+...
+(a) Lemma Z with W_{−y} ≤ On + X^{−y}Off (a zero with d ≤ y contributes 1, one with d > y contributes X^{−y}X^{d}) and W ≤ On + Off:
+  |R_T R*|(x − iy) ≤ C [X^{y}(1 + On) + Off](1 + On + Off)(1 + On)^{2k−2} ≤ C [X^{y} + Off](1 + Off)(1 + On)^{2k}, all at x.

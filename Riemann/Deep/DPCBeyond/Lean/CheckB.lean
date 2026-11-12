@@ -1,0 +1,79 @@
+import Riemann.Deep.DPCBeyond.Lean.FineB
+import Riemann.Deep.DPCBeyond.Lean.LemmaZ
+import Riemann.Deep.DPCBeyond.Lean.LemmaM4
+import Riemann.Deep.DPCBeyond.Lean.LemmaZW
+
+/-! dpcblean: axioms of every theorem (expected: propext, Classical.choice, Quot.sound). -/
+
+#print axioms DPCBLean.step0B_nonempty
+#print axioms DPCBLean.step0B_signs
+#print axioms DPCBLean.step8B_empty
+#print axioms DPCBLean.step0B_iff
+#print axioms DPCBLean.exists_q_s
+#print axioms DPCBLean.exists_u_w
+#print axioms DPCBLean.order_of_choices
+#print axioms DPCBLean.conrey_threshold
+#print axioms DPCBLean.conrey_sharp
+#print axioms DPCBLean.rp_add
+#print axioms DPCBLean.rp_mul
+#print axioms DPCBLean.rp_rp
+#print axioms DPCBLean.rp_le_rp
+#print axioms DPCBLean.rp_lt_rp
+#print axioms DPCBLean.rp_le_rp_exp
+#print axioms DPCBLean.rp_le_max
+#print axioms DPCBLean.step7B_meas
+#print axioms DPCBLean.step7B
+#print axioms DPCBLean.class_count
+#print axioms DPCBLean.class_bound
+#print axioms DPCBLean.step6B_of_classes
+#print axioms DPCBLean.PhiB_small
+#print axioms DPCBLean.dpos_of_from
+#print axioms DPCBLean.nToInf_of_from
+#print axioms DPCBLean.dlam_pos_of_from
+#print axioms DPCBLean.cover_of
+#print axioms DPCBLean.moments_of
+#print axioms DPCBLean.split_c
+#print axioms DPCBLean.theoremUB
+#print axioms DPCBLean.D_pos_of_kappa
+#print axioms DPCBLean.theoremUB_conrey
+#print axioms DPCBLean.D_pos_seven_elevenths
+#print axioms DPCBLean.ex_sum
+#print axioms DPCBLean.sum_mul_le
+#print axioms DPCBLean.prod_ex_le
+#print axioms DPCBLean.prod_ex_le_sup
+#print axioms DPCBLean.rp_sup_le_sum
+#print axioms DPCBLean.tuple_sum
+#print axioms DPCBLean.tuple_bound
+#print axioms DPCBLean.packet_case1
+#print axioms DPCBLean.packet_case2
+#print axioms DPCBLean.packet_nofree
+#print axioms DPCBLean.pos_part_shift
+#print axioms DPCBLean.pos_part_split
+#print axioms DPCBLean.term_bound
+#print axioms DPCBLean.mono_bound
+#print axioms DPCBLean.lemmaZ_sum
+#print axioms DPCBLean.M2_bound
+#print axioms DPCBLean.geom_le
+#print axioms DPCBLean.M3_series
+#print axioms DPCBLean.M3_exists_w
+#print axioms DPCBLean.M4_count
+#print axioms DPCBLean.M4_moment
+#print axioms DPCBLean.inv_sq_sum
+#print axioms DPCBLean.kernel_sum
+#print axioms DPCBLean.off_bound
+#print axioms DPCBLean.momentM_of
+#print axioms DPCBLean.exists_r_w
+#print axioms DPCBLean.momentM_of_inputs
+#print axioms DPCBLean.inputsB_of_fine
+#print axioms DPCBLean.theoremUB_fine
+#print axioms DPCBLean.D_pos_seven_elevenths_fine
+#print axioms DPCBLean.W_split
+#print axioms DPCBLean.tuple_case2
+#print axioms DPCBLean.term_bound2
+#print axioms DPCBLean.term_nofree1
+#print axioms DPCBLean.term_nofree2
+#print axioms DPCBLean.final_shape
+#print axioms DPCBLean.lemmaZ_point1
+#print axioms DPCBLean.lemmaZ_point2
+#print axioms DPCBLean.m3_first_of_lemmaZ
+#print axioms DPCBLean.hairpin_pointwise

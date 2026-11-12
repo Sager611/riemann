@@ -1,0 +1,13 @@
+15:08:29 FinSum rc=0 18s footprint=254MiB memcap: peak 233 MB rc=0
+15:08:37 Model rc=0 8s footprint=264MiB memcap: peak 244 MB rc=0
+15:08:46 Liminf rc=0 9s footprint=249MiB memcap: peak 241 MB rc=0
+15:09:04 Params rc=0 18s footprint=267MiB memcap: peak 237 MB rc=0
+15:09:12 Gaps rc=0 8s footprint=255MiB memcap: peak 242 MB rc=0
+15:09:30 Tail rc=0 18s footprint=277MiB memcap: peak 248 MB rc=0
+15:09:47 Phi rc=0 17s footprint=265MiB memcap: peak 244 MB rc=0
+15:10:04 Step7 rc=0 17s footprint=273MiB memcap: peak 240 MB rc=0
+15:10:20 TheoremU rc=0 16s footprint=265MiB memcap: peak 246 MB rc=0
+15:10:37 DLam rc=0 17s footprint=279MiB memcap: peak 248 MB rc=0
+15:10:45 Hairpin rc=0 8s footprint=271MiB memcap: peak 247 MB rc=0
+15:10:54 Fine rc=0 9s footprint=270MiB memcap: peak 251 MB rc=0
+DEPS-DONE

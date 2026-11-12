@@ -1,0 +1,89 @@
+16:04:07 FinSum rc=0 8s footprint=255MiB memcap: peak 242 MB rc=0
+16:04:16 Model rc=0 9s footprint=265MiB memcap: peak 244 MB rc=0
+16:04:24 Liminf rc=0 8s footprint=250MiB memcap: peak 0 MB rc=0
+16:04:40 Params rc=0 16s footprint=268MiB memcap: peak 239 MB rc=0
+16:04:48 Gaps rc=0 8s footprint=255MiB memcap: peak 245 MB rc=0
+16:05:05 Tail rc=0 17s footprint=278MiB memcap: peak 247 MB rc=0
+16:05:22 Phi rc=0 17s footprint=267MiB memcap: peak 247 MB rc=0
+16:05:37 Step7 rc=0 15s footprint=273MiB memcap: peak 228 MB rc=0
+16:05:54 TheoremU rc=0 17s footprint=265MiB memcap: peak 223 MB rc=0
+16:06:11 DLam rc=0 17s footprint=279MiB memcap: peak 243 MB rc=0
+16:06:27 Hairpin rc=0 16s footprint=271MiB memcap: peak 211 MB rc=0
+16:06:54 Fine rc=0 27s footprint=269MiB memcap: peak 232 MB rc=0
+16:07:19 ParamsB rc=0 25s footprint=275MiB memcap: peak 246 MB rc=0
+16:07:36 Rpow rc=0 17s footprint=253MiB memcap: peak 197 MB rc=0
+16:08:01 Step7B rc=0 25s footprint=277MiB memcap: peak 241 MB rc=0
+16:08:18 HairpinB rc=0 16s footprint=282MiB memcap: peak 248 MB rc=0
+16:08:51 SumB rc=0 33s footprint=272MiB memcap: peak 240 MB rc=0
+16:09:08 DLamB rc=0 17s footprint=272MiB memcap: peak 265 MB rc=0
+16:09:33 TheoremUB rc=0 25s footprint=264MiB memcap: peak 251 MB rc=0
+16:10:37 FinalB rc=0 64s footprint=253MiB memcap: peak 241 MB rc=0
+16:11:19 LemmaZ rc=0 42s footprint=271MiB memcap: peak 240 MB rc=0
+16:12:08 LemmaM rc=0 49s footprint=264MiB memcap: peak 241 MB rc=0
+16:12:56 LemmaM4 rc=0 48s footprint=278MiB memcap: peak 239 MB rc=0
+16:14:37 LemmaM3 rc=0 101s footprint=274MiB memcap: peak 254 MB rc=0
+16:16:09 FineB rc=0 92s footprint=251MiB memcap: peak 205 MB rc=0
+16:16:49 CheckB rc=0 40s footprint=250MiB memcap: peak 197 MB rc=0
+'DPCBLean.step0B_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.step0B_signs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.step8B_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.step0B_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.exists_q_s' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.exists_u_w' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.order_of_choices' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.conrey_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.conrey_sharp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.rp_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.rp_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.rp_rp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.rp_le_rp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.rp_lt_rp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.rp_le_rp_exp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.rp_le_max' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.step7B_meas' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.step7B' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.class_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.class_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.step6B_of_classes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.PhiB_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.dpos_of_from' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.nToInf_of_from' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.dlam_pos_of_from' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.cover_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.moments_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.split_c' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.theoremUB' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.D_pos_of_kappa' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.theoremUB_conrey' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.D_pos_seven_elevenths' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.ex_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.sum_mul_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.prod_ex_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.prod_ex_le_sup' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.rp_sup_le_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.tuple_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.tuple_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.packet_case1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.packet_case2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.packet_nofree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.pos_part_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.pos_part_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.term_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.mono_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.lemmaZ_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.M2_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.geom_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.M3_series' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.M3_exists_w' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.M4_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.M4_moment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.inv_sq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.kernel_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.off_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.momentM_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.exists_r_w' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.momentM_of_inputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.inputsB_of_fine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.theoremUB_fine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.D_pos_seven_elevenths_fine' depends on axioms: [propext, Classical.choice, Quot.sound]
+VERIFY-DONE

@@ -1,0 +1,23 @@
+'DPCBLean.m3Inputs_of_wired' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.inputsFineB_of_wired' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.theoremUB_wired' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCBLean.D_pos_seven_elevenths_wired' depends on axioms: [propext, Classical.choice, Quot.sound]
+       42.07 real         4.03 user         6.90 sys
+          1462059008  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               97742  page reclaims
+              134124  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                3310  voluntary context switches
+              134338  involuntary context switches
+         20894268881  instructions retired
+         19310001997  cycles elapsed
+           275227608  peak memory footprint
+memcap: peak 240 MB rc=0
