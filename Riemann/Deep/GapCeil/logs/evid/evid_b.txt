@@ -1,0 +1,27 @@
+r=2 kappa=3.31: sup_v lam/k^2 = 0.994122 (v=1.3551) [3s]
+r=2 kappa=3.35: sup_v lam/k^2 = 0.962565 (v=1.3548) [6s]
+r=2 kappa=3.40: sup_v lam/k^2 = 0.925497 (v=1.3544) [9s]
+r=2 kappa=3.60: sup_v lam/k^2 = 0.800123 (v=1.3526) [11s]
+r=2 kappa=4.00: sup_v lam/k^2 = 0.628483 (v=1.3483) [14s]
+r=2 kappa=5.00: sup_v lam/k^2 = 0.395665 (v=1.3414) [17s]
+r=2 kappa=6.00: sup_v lam/k^2 = 0.257130 (v=1.3366) [20s]
+r=2 kappa=8.00: sup_v lam/k^2 = 0.137688 (v=1.3245) [23s]
+peak 119 MB
+       23.63 real        22.36 user         0.44 sys
+           125648896  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14252  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   1  voluntary context switches
+               17931  involuntary context switches
+           431835291  instructions retired
+           167219897  cycles elapsed
+            24773136  peak memory footprint

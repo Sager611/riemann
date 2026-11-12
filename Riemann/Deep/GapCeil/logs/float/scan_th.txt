@@ -1,0 +1,25 @@
+theta=0.1250: L2-closure ceiling kappa* = 2.973414 [16s]
+theta=0.1875: L2-closure ceiling kappa* = 3.133791 [36s]
+theta=0.2500: L2-closure ceiling kappa* = 3.272097 [59s]
+theta=0.3125: L2-closure ceiling kappa* = 3.378425 [83s]
+theta=0.3750: L2-closure ceiling kappa* = 3.446444 [104s]
+theta=0.4375: L2-closure ceiling kappa* = 3.478148 [126s]
+peak 102 MB
+      127.76 real       109.73 user         3.89 sys
+           107266048  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               60626  page reclaims
+                4369  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                1365  voluntary context switches
+              187746  involuntary context switches
+           439982586  instructions retired
+           209877746  cycles elapsed
+            26067448  peak memory footprint

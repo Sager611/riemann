@@ -1,0 +1,26 @@
+r=2 theta=0.2499 deg  4: kappa_max = 3.198259 [19s]
+r=2 theta=0.2499 deg  8: kappa_max = 3.248343 [32s]
+r=2 theta=0.2499 deg 12: kappa_max = 3.269497 [46s]
+r=2 theta=0.2499 deg 16: kappa_max = 3.280311 [60s]
+r=2 theta=0.2499 deg 20: kappa_max = 3.286566 [73s]
+r=2 theta=0.2499 deg 24: kappa_max = 3.290507 [87s]
+r=2 theta=0.2499 deg 28: kappa_max = 3.293148 [100s]
+peak 132 MB
+      101.47 real        93.75 user         1.20 sys
+           139083776  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               15071  page reclaims
+                  12  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  19  voluntary context switches
+               88511  involuntary context switches
+           428609698  instructions retired
+           168945201  cycles elapsed
+            24822264  peak memory footprint

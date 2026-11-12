@@ -1,0 +1,31 @@
+kappa=6 N=24 D=59 gam=41 Nw=146 prec=358 (Gamma 14s, setup 16s)
+  matrices assembled (34s)
+  float: max_v lam = 8.4052212 at v* = 1.276748 ; lam/k^2 = 0.2334784 ; spec(M0^-1 MS) in [1.0010, 1.3075]
+  M0 >= 0                                      True deltaD=[2.0000 +/- 3e-9] C=[0.059997 +/- 2.33e-7] deltaW=[1.9400 +/- 3.24e-6] chol=OK (35s)
+  MS - vlo M0 >= 0                             True deltaD=[0.40000 +/- 3e-10] C=[0.027548 +/- 3.00e-7] deltaW=[0.37245 +/- 1.71e-6] chol=OK (36s)
+  vhi M0 - MS >= 0                             True deltaD=[0.70000 +/- 3e-10] C=[0.051743 +/- 1.56e-7] deltaW=[0.64826 +/- 3.16e-6] chol=OK (36s)
+  2 cells for [0.8, 1.6]
+  cell [0.80000,1.38324] +1                    True deltaD=[6.2391 +/- 4.08e-5] C=[0.55333 +/- 4.02e-6] deltaW=[5.6858 +/- 1.48e-5] chol=OK (37s)
+  cell [0.80000,1.38324] -1                    True deltaD=[4.5741 +/- 3.69e-5] C=[1.0105 +/- 2.36e-5] deltaW=[3.5636 +/- 1.33e-5] chol=OK (37s)
+  cell [1.38324,1.82570] +1                    True deltaD=[7.1733 +/- 1.65e-6] C=[1.0885 +/- 5.72e-6] deltaW=[6.0848 +/- 7.37e-6] chol=OK (37s)
+  cell [1.38324,1.82570] -1                    True deltaD=[29.758 +/- 8.84e-5] C=[2.7454 +/- 2.58e-5] deltaW=[27.013 +/- 3.38e-4] chol=OK (37s)
+RESULT kappa=6: ALL_OK=True covered=True ; peak 152 MB, 37s
+JSON logs/cert_6.00.json
+       38.31 real        36.64 user         0.58 sys
+           158990336  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20352  page reclaims
+                  20  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 378  voluntary context switches
+               22480  involuntary context switches
+           434256186  instructions retired
+           174010146  cycles elapsed
+            28213728  peak memory footprint

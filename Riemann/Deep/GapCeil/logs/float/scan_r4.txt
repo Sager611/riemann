@@ -1,0 +1,56 @@
+r=4 N=8: L2-closure ceiling kappa = 3.141892  (v=1.3559) [21s]
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/.scratch/gapceil/scan_r.py", line 21, in <module>
+    k = brentq(lambda kk: ratio(kk) - 1, lo, hi, xtol=1e-6)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/Ec53Tuu8uJSqLn-wm8pje/lib/python3.12/site-packages/scipy/optimize/_zeros_py.py", line 858, in brentq
+    r = _zeros._brentq(f, a, b, xtol, rtol, maxiter, args, full_output, disp)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/Ec53Tuu8uJSqLn-wm8pje/lib/python3.12/site-packages/scipy/optimize/_zeros_py.py", line 107, in f_raise
+    fx = f(x, *args)
+         ^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/.scratch/gapceil/scan_r.py", line 21, in <lambda>
+    k = brentq(lambda kk: ratio(kk) - 1, lo, hi, xtol=1e-6)
+                          ^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/.scratch/gapceil/scan_r.py", line 17, in ratio
+    cache[k] = G.best_v(M0, MS, MSS, lo=0.6, hi=2.2)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/.scratch/gapceil/gcore.py", line 152, in best_v
+    r = minimize_scalar(lambda v: -top(M0, MS, MSS, v)[0], bounds=(lo, hi), method='bounded', options={'xatol': 1e-9})
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/Ec53Tuu8uJSqLn-wm8pje/lib/python3.12/site-packages/scipy/optimize/_minimize.py", line 1027, in minimize_scalar
+    res = _minimize_scalar_bounded(fun, bounds, args, **options)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/Ec53Tuu8uJSqLn-wm8pje/lib/python3.12/site-packages/scipy/optimize/_optimize.py", line 2336, in _minimize_scalar_bounded
+    fx = func(x, *args)
+         ^^^^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/.scratch/gapceil/gcore.py", line 152, in <lambda>
+    r = minimize_scalar(lambda v: -top(M0, MS, MSS, v)[0], bounds=(lo, hi), method='bounded', options={'xatol': 1e-9})
+                                   ^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/.scratch/gapceil/gcore.py", line 144, in top
+    L = np.linalg.cholesky(M1)
+        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/Ec53Tuu8uJSqLn-wm8pje/lib/python3.12/site-packages/numpy/linalg/_linalg.py", line 887, in cholesky
+    r = gufunc(a, signature=signature)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/Ec53Tuu8uJSqLn-wm8pje/lib/python3.12/site-packages/numpy/linalg/_linalg.py", line 147, in _raise_linalgerror_nonposdef
+    raise LinAlgError("Matrix is not positive definite")
+numpy.linalg.LinAlgError: Matrix is not positive definite
+       26.54 real        24.89 user         0.44 sys
+           121077760  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14071  page reclaims
+                 322  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  36  voluntary context switches
+               18780  involuntary context switches
+           424153263  instructions retired
+           172432899  cycles elapsed
+            24986104  peak memory footprint

@@ -1,0 +1,19 @@
+Nw=176: QT W_b QT^T contains I: True (max radius 2.08e-76)
+       16.18 real        15.01 user         0.35 sys
+           142475264  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12496  page reclaims
+                 502  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  81  voluntary context switches
+               15487  involuntary context switches
+           410327835  instructions retired
+           163029542  cycles elapsed
+            14713288  peak memory footprint

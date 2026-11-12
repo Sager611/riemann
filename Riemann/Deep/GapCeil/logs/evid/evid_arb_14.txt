@@ -1,0 +1,19 @@
+r=1 kappa=14 N=16 D=90: sup_v lam = 7.642971 at v=1.26170 ; lam/k^2 = 0.0389948 [119s, peak 315 MB]
+      121.02 real       110.83 user         1.80 sys
+           330694656  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               43193  page reclaims
+                 180  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 605  voluntary context switches
+              128643  involuntary context switches
+           432663685  instructions retired
+           179311382  cycles elapsed
+            25379320  peak memory footprint

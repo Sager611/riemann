@@ -1,0 +1,21 @@
+26:RESULT kappa=331/100: ALL_OK=True covered=True ; peak 166 MB, 168s
+29:           174374912  maximum resident set size
+28:RESULT kappa=661/200: ALL_OK=False covered=True ; peak 164 MB, 160s
+31:           172490752  maximum resident set size
+20:RESULT kappa=67/20: ALL_OK=True covered=True ; peak 159 MB, 145s
+23:           166658048  maximum resident set size
+18:RESULT kappa=7/2: ALL_OK=True covered=True ; peak 187 MB, 151s
+21:           196067328  maximum resident set size
+14:RESULT kappa=4: ALL_OK=False covered=True ; peak 186 MB, 146s
+17:           194985984  maximum resident set size
+14:RESULT kappa=5: ALL_OK=False covered=True ; peak 191 MB, 183s
+17:           200196096  maximum resident set size
+BATCHR DONE
+44:RESULT kappa=661/200: ALL_OK=True covered=True ; peak 179 MB, 206s
+47:           188039168  maximum resident set size
+BATCHR2 DONE
+14:RESULT kappa=4: ALL_OK=True covered=True ; peak 214 MB, 184s
+17:           224034816  maximum resident set size
+14:RESULT kappa=5: ALL_OK=True covered=True ; peak 284 MB, 147s
+17:           297320448  maximum resident set size
+BATCHR3 DONE

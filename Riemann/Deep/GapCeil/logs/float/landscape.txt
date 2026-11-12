@@ -1,0 +1,27 @@
+kappa=3.0000 D=36: N=8 lam/k^2=1.287531 (v=1.3170) | N=16 lam/k^2=1.287531 (v=1.3170) | lam=11.5878 ; ess ratio(v)=6.3899, 1/Var_w=6.5785 [7s]
+kappa=3.2721 D=36: N=8 lam/k^2=0.999998 (v=1.3145) | N=16 lam/k^2=0.999998 (v=1.3145) | lam=10.7066 ; ess ratio(v)=6.3577, 1/Var_w=6.5302 [13s]
+kappa=3.4000 D=36: N=8 lam/k^2=0.897737 (v=1.3129) | N=16 lam/k^2=0.897737 (v=1.3129) | lam=10.3778 ; ess ratio(v)=6.3692, 1/Var_w=6.5338 [20s]
+kappa=3.7000 D=36: N=8 lam/k^2=0.717622 (v=1.3077) | N=16 lam/k^2=0.717622 (v=1.3077) | lam=9.8242 ; ess ratio(v)=6.4014, 1/Var_w=6.5408 [26s]
+kappa=4.0000 D=36: N=8 lam/k^2=0.596635 (v=1.3005) | N=16 lam/k^2=0.596636 (v=1.3005) | lam=9.5462 ; ess ratio(v)=6.3876, 1/Var_w=6.4934 [32s]
+kappa=5.0000 D=38: N=8 lam/k^2=0.370925 (v=1.2886) | N=16 lam/k^2=0.370925 (v=1.2886) | lam=9.2731 ; ess ratio(v)=6.1426, 1/Var_w=6.1993 [38s]
+kappa=6.0000 D=40: N=8 lam/k^2=0.233478 (v=1.2767) | N=16 lam/k^2=0.233478 (v=1.2767) | lam=8.4052 ; ess ratio(v)=6.1823, 1/Var_w=6.2097 [44s]
+kappa=8.0000 D=43: N=8 lam/k^2=0.121086 (v=1.2421) | N=16 lam/k^2=0.121086 (v=1.2422) | lam=7.7495 ; ess ratio(v)=6.1162, 1/Var_w=6.1162 [50s]
+peak 104 MB
+       50.99 real        45.49 user         1.98 sys
+           108675072  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               37658  page reclaims
+                2603  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  21  messages received
+                   1  signals received
+                1091  voluntary context switches
+               63704  involuntary context switches
+           449505648  instructions retired
+           218552456  cycles elapsed
+            28099088  peak memory footprint
