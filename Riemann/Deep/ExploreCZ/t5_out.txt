@@ -1,0 +1,4 @@
+random           R=400 in [0,5655]: lambda_max/N=4.928  Schur/triangle (N+max row sum)/N=8.97  MV-type (|I|/1+N)/N... large sieve (Lint+N)/N=6.65
+AP spacing ~14   R=400 in [0,5655]: lambda_max/N=1.457  Schur/triangle (N+max row sum)/N=2.88  MV-type (|I|/1+N)/N... large sieve (Lint+N)/N=6.65
+random dense     R=900 in [0,5655]: lambda_max/N=6.267  Schur/triangle (N+max row sum)/N=13.75  MV-type (|I|/1+N)/N... large sieve (Lint+N)/N=6.65
+memcap: peak 0 MB rc=0

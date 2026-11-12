@@ -1,0 +1,28 @@
+=== N=1000 tau=1.2 T=3981
+ bounds (no constants, G=N): sigma: MVT  Huxley  GM  Montg N^(2-2s)
+  0.55:    2496.4  501688.4   32199.1   501.2
+  0.60:    1251.2   63346.9    8213.3   251.2
+  0.65:     627.1    8069.2    2125.9   125.9
+  0.70:     314.3    1063.1     565.5    63.1
+  0.75:     157.5     157.5     157.8    31.6
+ zeta      G=   693 G2/G^2= 3.28 mean|D|^2/G= 1.16 max/G=   990.1 max_far/G=   0.0 | s0.55:R=46,far=0,CZ#=1,maxI=1638.4/L*=18939 s0.6:R=32,far=0,CZ#=1,maxI=819.2/L*=6323 s0.65:R=23,far=0,CZ#=1,maxI=409.6/L*=2715 s0.7:R=17,far=0,CZ#=1,maxI=204.8/L*=1269 s0.75:R=12,far=0,CZ#=1,maxI=102.4/L*=616
+ mobius    G=   607 G2/G^2= 2.20 mean|D|^2/G= 0.99 max/G=    13.6 max_far/G=   5.4 | s0.55:R=630,far=285,CZ#=132,maxI=102.4/L*=18939 s0.6:R=96,far=37,CZ#=32,maxI=25.6/L*=6323 s0.65:R=12,far=0,CZ#=5,maxI=6.4/L*=2715 s0.7:R=0,far=0,CZ#=0,maxI=0.0/L*=1269 s0.75:R=0,far=0,CZ#=0,maxI=0.0/L*=616
+ random    G=  1000 G2/G^2= 2.00 mean|D|^2/G= 0.99 max/G=     7.1 max_far/G=   5.1 | s0.55:R=565,far=303,CZ#=139,maxI=25.6/L*=18939 s0.6:R=75,far=42,CZ#=34,maxI=6.4/L*=6323 s0.65:R=0,far=0,CZ#=0,maxI=0.0/L*=2715 s0.7:R=0,far=0,CZ#=0,maxI=0.0/L*=1269 s0.75:R=0,far=0,CZ#=0,maxI=0.0/L*=616
+ DH        G=   432 G2/G^2= 2.33 mean|D|^2/G= 1.14 max/G=     6.3 max_far/G=   6.3 | s0.55:R=1185,far=489,CZ#=2,maxI=1638.4/L*=18939 s0.6:R=260,far=260,CZ#=4,maxI=409.6/L*=6323 s0.65:R=0,far=0,CZ#=0,maxI=0.0/L*=2715 s0.7:R=0,far=0,CZ#=0,maxI=0.0/L*=1269 s0.75:R=0,far=0,CZ#=0,maxI=0.0/L*=616
+ chi4      G=   500 G2/G^2= 2.28 mean|D|^2/G= 1.18 max/G=     5.4 max_far/G=   5.4 | s0.55:R=1443,far=1106,CZ#=2,maxI=1638.4/L*=18939 s0.6:R=137,far=137,CZ#=7,maxI=204.8/L*=6323 s0.65:R=0,far=0,CZ#=0,maxI=0.0/L*=2715 s0.7:R=0,far=0,CZ#=0,maxI=0.0/L*=1269 s0.75:R=0,far=0,CZ#=0,maxI=0.0/L*=616
+ detector  G=   474 G2/G^2= 2.78 mean|D|^2/G= 1.01 max/G=     8.3 max_far/G=   8.3 | s0.55:R=613,far=294,CZ#=153,maxI=25.6/L*=18939 s0.6:R=110,far=53,CZ#=41,maxI=12.8/L*=6323 s0.65:R=4,far=3,CZ#=4,maxI=1.6/L*=2715 s0.7:R=0,far=0,CZ#=0,maxI=0.0/L*=1269 s0.75:R=0,far=0,CZ#=0,maxI=0.0/L*=616
+=== N=1000 tau=1.6 T=63096
+ bounds (no constants, G=N): sigma: MVT  Huxley  GM  Montg N^(2-2s)
+  0.55:   32124.0 7943783.5  267538.8   501.2
+  0.60:   16100.1 1000251.2   67328.0   251.2
+  0.65:    8069.2  126018.4   16974.8   125.9
+  0.70:    4044.2   15912.0    4295.4    63.1
+  0.75:    2026.9    2026.9    1094.7    31.6
+ zeta      G=   693 G2/G^2= 3.28 mean|D|^2/G= 1.00 max/G=   990.1 max_far/G=   5.4 | s0.55:R=7004,far=6958,CZ#=2491,maxI=1638.4/L*=18939 s0.6:R=180,far=148,CZ#=93,maxI=819.2/L*=6323 s0.65:R=23,far=0,CZ#=1,maxI=409.6/L*=2715 s0.7:R=17,far=0,CZ#=1,maxI=204.8/L*=1269 s0.75:R=12,far=0,CZ#=1,maxI=102.4/L*=616
+ mobius    G=   607 G2/G^2= 2.20 mean|D|^2/G= 1.00 max/G=    14.0 max_far/G=  14.0 | s0.55:R=9377,far=9032,CZ#=2230,maxI=102.4/L*=18939 s0.6:R=1613,far=1554,CZ#=599,maxI=25.6/L*=6323 s0.65:R=101,far=89,CZ#=42,maxI=12.8/L*=2715 s0.7:R=0,far=0,CZ#=0,maxI=0.0/L*=1269 s0.75:R=0,far=0,CZ#=0,maxI=0.0/L*=616
+ random    G=  1000 G2/G^2= 2.00 mean|D|^2/G= 1.00 max/G=    10.1 max_far/G=  10.1 | s0.55:R=9162,far=8900,CZ#=2262,maxI=102.4/L*=18939 s0.6:R=1318,far=1285,CZ#=507,maxI=12.8/L*=6323 s0.65:R=25,far=25,CZ#=13,maxI=3.2/L*=2715 s0.7:R=0,far=0,CZ#=0,maxI=0.0/L*=1269 s0.75:R=0,far=0,CZ#=0,maxI=0.0/L*=616
+ DH        G=   432 G2/G^2= 2.33 mean|D|^2/G= 1.00 max/G=     7.5 max_far/G=   7.5 | s0.55:R=9684,far=8988,CZ#=2574,maxI=1638.4/L*=18939 s0.6:R=974,far=974,CZ#=375,maxI=409.6/L*=6323 s0.65:R=0,far=0,CZ#=0,maxI=0.0/L*=2715 s0.7:R=0,far=0,CZ#=0,maxI=0.0/L*=1269 s0.75:R=0,far=0,CZ#=0,maxI=0.0/L*=616
+ chi4      G=   500 G2/G^2= 2.28 mean|D|^2/G= 1.00 max/G=     6.6 max_far/G=   6.6 | s0.55:R=9416,far=9079,CZ#=2507,maxI=1638.4/L*=18939 s0.6:R=693,far=693,CZ#=313,maxI=204.8/L*=6323 s0.65:R=0,far=0,CZ#=0,maxI=0.0/L*=2715 s0.7:R=0,far=0,CZ#=0,maxI=0.0/L*=1269 s0.75:R=0,far=0,CZ#=0,maxI=0.0/L*=616
+ detector  G=   474 G2/G^2= 2.78 mean|D|^2/G= 1.00 max/G=    29.8 max_far/G=  29.8 | s0.55:R=8675,far=8356,CZ#=2020,maxI=204.8/L*=18939 s0.6:R=2218,far=2161,CZ#=678,maxI=51.2/L*=6323 s0.65:R=328,far=327,CZ#=121,maxI=25.6/L*=2715 s0.7:R=17,far=17,CZ#=6,maxI=12.8/L*=1269 s0.75:R=0,far=0,CZ#=0,maxI=0.0/L*=616
+time 103.7
+memcap: peak 129 MB rc=0
