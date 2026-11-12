@@ -16,6 +16,7 @@ See [RECORDS.md](RECORDS.md) (constants, ranges, exponents, proportions), [REFUT
 - (N8) Durkan–Pearce-Crump's small-gap method works without RH: a positive proportion of zero gaps are below 2/3 of the average, unconditionally (was 0.768). [details](discoveries/small-gap-two-thirds.md)
 - (N8) Zeros bound Durkan–Pearce-Crump's mollifier pointwise past length T^{1/2}, without RH: a positive proportion of zero gaps lie below 7/11 of the average (was 2/3). [details](discoveries/small-gap-seven-elevenths.md)
 - (N8, N12) The one-piece Levinson–Conrey method can never show more than 7.005633% of any GL(2) L-function's zeros on the line; our record sits 10⁻⁷ below. [details](discoveries/gl2-levinson-ceiling.md)
+- (N8) A positive proportion of zeros in every window (T, T + T^θ], θ > 1/2, are simple and critical (was θ ≥ 0.527): the method's barrier reached. [details](discoveries/simple-zeros-short-windows.md)
 
 ## Side results (off the RH tree)
 

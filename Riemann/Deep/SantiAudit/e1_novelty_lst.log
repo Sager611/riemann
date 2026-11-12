@@ -1,0 +1,33 @@
+/Users/adriansager/playground/riemann/.scratch/santiaudit/../lst.py:13: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2611.05000  [math.NT 2026-11]  Almost primes in short intervals and averages of long Dirichlet polynomial approximations to $(ζ'/ζ)^{k}$
+2611.13767  [math.NT 2026-11]  Diophantine approximation with prime denominators in short intervals
+2611.01905  [math.NT 2026-11]  Convergence in law of the maximum of the Riemann zeta function on expanding intervals near the critical line
+2610.02709  [math.NT 2026-10]  Extreme values of Dirichlet $L$-functions on the critical line with a growing prime modulus
+2610.08965  [math.NT 2026-10]  More than 83.9% of the zeros of the Riemann zeta function are distinct and more than 67.35% are simple and on the critical line
+2610.11487  [math.NT 2026-10]  Discorrelation of the Möbius function with linear phases in short intervals
+2610.18923  [math.NT 2026-10]  Large value estimates for Dirichlet polynomials and trilinear sums over short intervals
+2610.22821  [math.NT 2026-10]  Poisson-Dirichlet statistics for the log-modulus of the Riemann zeta function on expanding intervals near the critical line
+2610.23467  [math.NT 2026-10]  More than 8/9 zeros of the Riemann zeta function are simple or on the critical line
+2610.27591  [math.NT 2026-10]  Small values of the Riemann zeta-function near the critical line
+2610.27830  [math.NT 2026-10]  Primes in short intervals assuming the Riemann hypothesis
+2610.32242  [math.NT 2026-10]  Value-distribution of Euler--Zagier type multiple zeta-functions with identical arguments on the critical line
+2610.14901  [math.NT 2026-10]  Overlap distributions under the Gibbs measure of a Haar model of $\log|ζ|$ on and near the critical line
+-- 13 title hits in 1 cats x (2026-11, 2026-10)
+zenodo 23895875  2026-11-02  A sharp three-point kernel bound and conditional proportions of zeta zeros
+zenodo 23489033  2026-10-20  More Than 67.32 Percent of the Zeta Zeros Are Simple and on the Critical Line
+zenodo 23462601  2026-10-19  Beta-Logistic Weil Kernels, Spectral Localization, and Signed Short-Interval Reductions
+zenodo 23290169  2026-10-11  A Modified Legendre Product for Primes in Consecutive Square Intervals
+zenodo 23288274  2026-10-10  Primes in Square Intervals: A Structural Audit of the Square-Centered Dispersion Route
+zenodo 23286636  2026-10-10  Rough and Smooth Numbers in Square-Centered Intervals: First-Order Structure and Second-Order Genericity
+zenodo 23284853  2026-10-10  On the irrationality of 2-adic zeta values in short intervals
+zenodo 23135354  2026-10-04  Reproducibility evidence for Levinson's method in short intervals and simple zeros of the zeta function
+zenodo 23134787  2026-10-04  Levinson's method in short intervals and simple zeros of the zeta function
+zenodo 23097368  2026-09-30  Prescribed burning and post-fire recovery time shape microhymenopteran communities in high-nature-value grasslands
+zenodo 23087974  2026-10-01  Factor Rays and the Self-Conjugate Parabola: Deterministic Coverage Geometry in Square Intervals
+zenodo 23074988  2026-10-01  Nonvanishing and Growth of Prime Quotients for Decimal Powers
+zenodo 23070760  2026-09-30  Simple zeros on the critical line for a weighted family of Dirichlet L-functions, from polylogarithmic to polynomial hei
+zenodo 23067094  2026-10-01  Nonvanishing and Growth of Least Prime Denominators for Decimal Powers
+zenodo 23056732  2026-09-30  Saturation and Growth of Reachable Prime Quotients
+-- zenodo total 299
+memcap: peak 22 MB rc=0
