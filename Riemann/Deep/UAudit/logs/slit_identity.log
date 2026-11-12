@@ -1,0 +1,17 @@
+single               resid=1.12e-11  noHairpin=5.35e+00  separateIncr=1.12e-11  quadErr=6.7e-11  |I|=4.91  slits=2  Jcheck=True
+coinc_opp_equal      resid=3.08e-13  noHairpin=3.46e+00  separateIncr=2.19e-01  quadErr=2.8e-11  |I|=1.52  slits=3  Jcheck=True
+coinc_opp_unequal    resid=7.91e-12  noHairpin=2.31e+00  separateIncr=1.59e-01  quadErr=3.4e-11  |I|=1.36  slits=3  Jcheck=True
+same_ordinate        resid=1.51e-11  noHairpin=3.70e+01  separateIncr=1.06e+01  quadErr=4.2e-10  |I|=29.1  slits=2  Jcheck=True
+double_offline       resid=5.70e-12  noHairpin=5.04e+01  separateIncr=5.69e-12  quadErr=1.4e-10  |I|=38  slits=2  Jcheck=True
+online_at_same_ord   resid=4.60e-12  noHairpin=6.89e+00  separateIncr=4.60e-12  quadErr=7.6e-11  |I|=11.7  slits=2  Jcheck=True
+/Users/adriansager/playground/riemann/Riemann/Deep/UAudit/slit_identity.py:78: IntegrationWarning: Extremely bad integrand behavior occurs at some points of the
+  integration interval.
+  re = quad(lambda x: f(x).real, a, b, **kw)
+/Users/adriansager/playground/riemann/Riemann/Deep/UAudit/slit_identity.py:79: IntegrationWarning: Extremely bad integrand behavior occurs at some points of the
+  integration interval.
+  im = quad(lambda x: f(x).imag, a, b, **kw)
+online_at_slit_top   resid=7.18e-03  noHairpin=5.17e-01  separateIncr=7.18e-03  quadErr=4.0e+01  |I|=5.53  slits=2  Jcheck=True
+cluster_mixed        resid=3.76e-12  noHairpin=9.25e+00  separateIncr=6.61e+00  quadErr=2.4e-10  |I|=17.1  slits=6  Jcheck=True
+deep_near_edge       resid=2.47e-13  noHairpin=3.36e-04  separateIncr=2.47e-13  quadErr=1.7e-11  |I|=1.84  slits=4  Jcheck=True
+time 16.9 s
+memcap: peak 50 MB rc=0

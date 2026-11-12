@@ -1,0 +1,4 @@
+online_at_slit_top   resid=5.58e-09  noHairpin=5.22e-01  separateIncr=5.59e-09  quadErr=6.7e-10  |I|=5.53  slits=2  Jcheck=True
+online_at_same_ord   resid=1.00e-09  noHairpin=6.89e+00  separateIncr=1.03e-09  quadErr=5.8e-10  |I|=11.7  slits=2  Jcheck=True
+time 26.7 s
+memcap: peak 138 MB rc=0

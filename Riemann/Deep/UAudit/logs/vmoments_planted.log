@@ -1,0 +1,8 @@
+p=0.00 d=1.000 n=0 m=2: |ReV|^m=0.3129 ImVhat^m=0.5661 ImV^m=0.5661  m=4: |ReV|^m=0.4146 ImVhat^m=0.7231 ImV^m=0.7231  m=6: |ReV|^m=1.2773 ImVhat^m=1.3511 ImV^m=1.3511  (97s)
+p=0.05 d=0.132 n=192 m=2: |ReV|^m=0.3210 ImVhat^m=0.5906 ImV^m=0.6229  m=4: |ReV|^m=0.4207 ImVhat^m=0.7819 ImV^m=1.0156  m=6: |ReV|^m=1.2794 ImVhat^m=1.4816 ImV^m=2.6616  (190s)
+p=0.05 d=0.395 n=186 m=2: |ReV|^m=0.3133 ImVhat^m=0.5955 ImV^m=0.6693  m=4: |ReV|^m=0.4121 ImVhat^m=0.7841 ImV^m=1.3070  m=6: |ReV|^m=1.2673 ImVhat^m=1.4598 ImV^m=4.4687  (280s)
+p=0.05 d=0.450 n=206 m=2: |ReV|^m=0.3098 ImVhat^m=0.5883 ImV^m=0.6500  m=4: |ReV|^m=0.4067 ImVhat^m=0.7763 ImV^m=1.1717  m=6: |ReV|^m=1.2519 ImVhat^m=1.4798 ImV^m=3.5204  (369s)
+p=0.30 d=0.132 n=1184 m=2: |ReV|^m=0.3837 ImVhat^m=0.8167 ImV^m=1.1011  m=4: |ReV|^m=0.4815 ImVhat^m=1.4569 ImV^m=3.9763  m=6: |ReV|^m=1.2763 ImVhat^m=3.7331 ImV^m=23.1984  (439s)
+p=0.30 d=0.450 n=1154 m=2: |ReV|^m=0.3009 ImVhat^m=0.7009 ImV^m=1.0268  m=4: |ReV|^m=0.3793 ImVhat^m=1.0113 ImV^m=3.3004  m=6: |ReV|^m=1.1517 ImVhat^m=1.9975 ImV^m=15.2749  (515s)
+time 514.7 s
+memcap: peak 50 MB rc=0

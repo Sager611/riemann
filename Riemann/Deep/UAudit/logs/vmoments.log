@@ -1,0 +1,5 @@
+Re V_exact - S: mean -0.1061 std 0.1143 max|.| 0.3146  (7s)
+m=2  int|S|^m/T=0.2947  int|ImV|^m/T=0.6014  ||F~||_m^m/T=1.1887  ratio=0.498 <= cot(pi/2m)=1.000  (177s)
+m=4  int|S|^m/T=0.3836  int|ImV|^m/T=0.8114  ||F~||_m^m/T=1.6010  ratio=0.700 <= cot(pi/2m)=2.414  (406s)
+m=6  int|S|^m/T=inf  int|ImV|^m/T=1.6517  ||F~||_m^m/T=3.2503  ratio=inf <= cot(pi/2m)=3.732  (890s)
+uaudit note 14:53 UTC: killed by uaudit after m=6 (planted part too slow here; moved to vmoments_planted.py, J=[T,T+400]). m=6 'inf' for Re V is a float overflow: a quad node landed exactly on a log singularity; the m=6 Re V moment on J is in vmoments_planted.log (p=0 row). No memcap line: the wrapper was killed with the job (all other runs peaked <= 138 MB).
