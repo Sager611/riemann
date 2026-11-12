@@ -1,0 +1,90 @@
+   endpoint merge: exact 1.2777e+01 <= first-order bound kp^2 sum m m sup|g''| = 2.2359e+02: True
+   x-space check (25 clusters): 7.7359963184e-03 vs Fourier 7.7359963185e-03 | diagonal max T_CC/bound=6.680e-04
+bump   kap=0.0625 planted=True N=1496 comps=796 merged=120 |Y*|=604 |L|=484 comb_ok=True
+   HS^2: exact(centroid)=4.8579e-02 exact(endpoint)=1.2777e+01 | termwise max |T|/bound=6.680e-04 | E2<=B2: True B2=1.7817e+02 B2'=1.9424e+02
+   ||A'-A||/(kap sqrt N)=9.1176e-02  bound sqrt(2 sum Psi1)/sqrt N=1.7675e+01 | endpoint ||A'-A||/(sqrt(kap) sqrt N)=3.6967e-01
+   trA^2/N=5.843114 trA'^2/N=5.846479 triangle_ok=True | |L|=484 <= 4 sqrt(kap) pairs(d<=1)=9902.0: True | pairs(d<=1)/N=6.619
+   endpoint merge: exact 1.7633e+01 <= first-order bound kp^2 sum m m sup|g''| = 1.4354e+02: True
+   x-space check (25 clusters): 3.3651858739e-03 vs Fourier 3.3651858740e-03 | diagonal max T_CC/bound=7.055e-04
+bump   kap=0.02 planted=True N=1976 comps=796 merged=119 |Y*|=605 |L|=820 comb_ok=True
+   HS^2: exact(centroid)=1.7866e-02 exact(endpoint)=1.7633e+01 | termwise max |T|/bound=7.055e-04 | E2<=B2: True B2=3.5523e+01 B2'=3.6499e+01
+   ||A'-A||/(kap sqrt N)=1.5034e-01  bound sqrt(2 sum Psi1)/sqrt N=2.2599e+01 | endpoint ||A'-A||/(sqrt(kap) sqrt N)=6.6796e-01
+   trA^2/N=10.827654 trA'^2/N=10.830618 triangle_ok=True | |L|=820 <= 4 sqrt(kap) pairs(d<=1)=13281.2: True | pairs(d<=1)/N=11.882
+   endpoint merge: exact 2.0755e+01 <= first-order bound kp^2 sum m m sup|g''| = 1.2510e+02: True
+   x-space check (25 clusters): 5.3992465229e-04 vs Fourier 5.3992465264e-04 | diagonal max T_CC/bound=7.298e-04
+bump   kap=0.005 planted=True N=3080 comps=800 merged=120 |Y*|=608 |L|=1584 comb_ok=True
+   HS^2: exact(centroid)=4.4413e-03 exact(endpoint)=2.0755e+01 | termwise max |T|/bound=7.298e-04 | E2<=B2: True B2=7.7504e+00 B2'=7.9238e+00
+   ||A'-A||/(kap sqrt N)=2.4016e-01  bound sqrt(2 sum Psi1)/sqrt N=3.0823e+01 | endpoint ||A'-A||/(sqrt(kap) sqrt N)=1.1609e+00
+   trA^2/N=24.296227 trA'^2/N=24.298525 triangle_ok=True | |L|=1584 <= 4 sqrt(kap) pairs(d<=1)=22746.2: True | pairs(d<=1)/N=26.110
+   endpoint merge: exact 2.1130e+01 <= first-order bound kp^2 sum m m sup|g''| = 1.1378e+02: True
+   x-space check (25 clusters): 1.7125291922e-04 vs Fourier 1.7125292188e-04 | diagonal max T_CC/bound=7.081e-04
+bump   kap=0.001 planted=True N=5768 comps=800 merged=120 |Y*|=608 |L|=3456 comb_ok=True
+   HS^2: exact(centroid)=8.6654e-04 exact(endpoint)=2.1130e+01 | termwise max |T|/bound=7.081e-04 | E2<=B2: True B2=1.3781e+00 B2'=1.3954e+00
+   ||A'-A||/(kap sqrt N)=3.8760e-01  bound sqrt(2 sum Psi1)/sqrt N=4.5336e+01 | endpoint ||A'-A||/(sqrt(kap) sqrt N)=1.9140e+00
+   trA^2/N=56.449997 trA'^2/N=56.451096 triangle_ok=True | |L|=3456 <= 4 sqrt(kap) pairs(d<=1)=42317.6: True | pairs(d<=1)/N=58.001
+bump   kap=0.0625 planted=False N=800 comps=800 merged=0 |Y*|=800 |L|=0 comb_ok=True
+   HS^2: exact(centroid)=0.0000e+00 exact(endpoint)=0.0000e+00 | termwise max |T|/bound=0.000e+00 | E2<=B2: True B2=0.0000e+00 B2'=0.0000e+00
+   ||A'-A||/(kap sqrt N)=0.0000e+00  bound sqrt(2 sum Psi1)/sqrt N=1.1119e+01 | endpoint ||A'-A||/(sqrt(kap) sqrt N)=0.0000e+00
+   trA^2/N=1.753530 trA'^2/N=1.753530 triangle_ok=True | |L|=0 <= 4 sqrt(kap) pairs(d<=1)=1660.0: True | pairs(d<=1)/N=2.075
+bump   kap=0.02 planted=False N=800 comps=800 merged=0 |Y*|=800 |L|=0 comb_ok=True
+   HS^2: exact(centroid)=0.0000e+00 exact(endpoint)=0.0000e+00 | termwise max |T|/bound=0.000e+00 | E2<=B2: True B2=0.0000e+00 B2'=0.0000e+00
+   ||A'-A||/(kap sqrt N)=0.0000e+00  bound sqrt(2 sum Psi1)/sqrt N=1.1119e+01 | endpoint ||A'-A||/(sqrt(kap) sqrt N)=0.0000e+00
+   trA^2/N=1.753530 trA'^2/N=1.753530 triangle_ok=True | |L|=0 <= 4 sqrt(kap) pairs(d<=1)=939.0: True | pairs(d<=1)/N=2.075
+   endpoint merge: exact 4.3963e-01 <= first-order bound kp^2 sum m m sup|g''| = 1.2704e+01: True
+   x-space check (25 clusters): 5.1690451563e-03 vs Fourier 5.1690451563e-03 | diagonal max T_CC/bound=2.993e-04
+bump   kap=0.2 planted=False N=800 comps=793 merged=7 |Y*|=786 |L|=0 comb_ok=True
+   HS^2: exact(centroid)=5.1690e-03 exact(endpoint)=4.3963e-01 | termwise max |T|/bound=2.993e-04 | E2<=B2: True B2=3.0320e+01 B2'=3.0320e+01
+   ||A'-A||/(kap sqrt N)=1.2710e-02  bound sqrt(2 sum Psi1)/sqrt N=1.1119e+01 | endpoint ||A'-A||/(sqrt(kap) sqrt N)=5.2418e-02
+   trA^2/N=1.753530 trA'^2/N=1.753894 triangle_ok=True | |L|=0 <= 4 sqrt(kap) pairs(d<=1)=2969.5: True | pairs(d<=1)/N=2.075
+   endpoint merge: exact 1.5927e+00 <= first-order bound kp^2 sum m m sup|g''| = 4.3778e+01: True
+   x-space check (25 clusters): 3.7059959690e-02 vs Fourier 3.7059959690e-02 | diagonal max T_CC/bound=6.633e-04
+bump   kap=0.3 planted=False N=800 comps=785 merged=15 |Y*|=770 |L|=0 comb_ok=True
+   HS^2: exact(centroid)=3.7060e-02 exact(endpoint)=1.5927e+00 | termwise max |T|/bound=6.633e-04 | E2<=B2: True B2=1.6086e+02 B2'=1.7272e+02
+   ||A'-A||/(kap sqrt N)=2.2687e-02  bound sqrt(2 sum Psi1)/sqrt N=1.1119e+01 | endpoint ||A'-A||/(sqrt(kap) sqrt N)=8.1462e-02
+   trA^2/N=1.753530 trA'^2/N=1.754873 triangle_ok=True | |L|=0 <= 4 sqrt(kap) pairs(d<=1)=3636.9: True | pairs(d<=1)/N=2.075
+   endpoint merge: exact 3.4259e+01 <= first-order bound kp^2 sum m m sup|g''| = 5.0032e+02: True
+   x-space check (25 clusters): 6.8915205511e-02 vs Fourier 6.8915205511e-02 | diagonal max T_CC/bound=6.916e-04
+second kap=0.0625 planted=True N=1496 comps=793 merged=118 |Y*|=603 |L|=485 comb_ok=True
+   HS^2: exact(centroid)=2.8391e-01 exact(endpoint)=3.4259e+01 | termwise max |T|/bound=6.916e-04 | E2<=B2: True B2=8.8678e+02 B2'=9.8427e+02
+   ||A'-A||/(kap sqrt N)=2.2042e-01  bound sqrt(2 sum Psi1)/sqrt N=4.0135e+01 | endpoint ||A'-A||/(sqrt(kap) sqrt N)=6.0531e-01
+   trA^2/N=4.769696 trA'^2/N=4.779739 triangle_ok=True | |L|=485 <= 4 sqrt(kap) pairs(d<=1)=9790.0: True | pairs(d<=1)/N=6.544
+   endpoint merge: exact 4.0504e+01 <= first-order bound kp^2 sum m m sup|g''| = 3.5467e+02: True
+   x-space check (25 clusters): 1.7565154530e-02 vs Fourier 1.7565154530e-02 | diagonal max T_CC/bound=7.027e-04
+second kap=0.02 planted=True N=1976 comps=799 merged=120 |Y*|=607 |L|=817 comb_ok=True
+   HS^2: exact(centroid)=8.9754e-02 exact(endpoint)=4.0504e+01 | termwise max |T|/bound=7.027e-04 | E2<=B2: True B2=2.0295e+02 B2'=2.1592e+02
+   ||A'-A||/(kap sqrt N)=3.3698e-01  bound sqrt(2 sum Psi1)/sqrt N=4.9220e+01 | endpoint ||A'-A||/(sqrt(kap) sqrt N)=1.0124e+00
+   trA^2/N=9.212018 trA'^2/N=9.219567 triangle_ok=True | |L|=817 <= 4 sqrt(kap) pairs(d<=1)=12493.7: True | pairs(d<=1)/N=11.177
+   endpoint merge: exact 4.9856e+01 <= first-order bound kp^2 sum m m sup|g''| = 2.8694e+02: True
+   x-space check (25 clusters): 4.5449009966e-03 vs Fourier 4.5449009964e-03 | diagonal max T_CC/bound=7.291e-04
+second kap=0.005 planted=True N=3080 comps=800 merged=120 |Y*|=608 |L|=1584 comb_ok=True
+   HS^2: exact(centroid)=2.4661e-02 exact(endpoint)=4.9856e+01 | termwise max |T|/bound=7.291e-04 | E2<=B2: True B2=3.9396e+01 B2'=4.0545e+01
+   ||A'-A||/(kap sqrt N)=5.6593e-01  bound sqrt(2 sum Psi1)/sqrt N=6.9631e+01 | endpoint ||A'-A||/(sqrt(kap) sqrt N)=1.7993e+00
+   trA^2/N=21.528893 trA'^2/N=21.534666 triangle_ok=True | |L|=1584 <= 4 sqrt(kap) pairs(d<=1)=21121.0: True | pairs(d<=1)/N=24.245
+   endpoint merge: exact 5.2364e+01 <= first-order bound kp^2 sum m m sup|g''| = 2.6572e+02: True
+   x-space check (25 clusters): 1.1689538317e-03 vs Fourier 1.1689538320e-03 | diagonal max T_CC/bound=7.079e-04
+second kap=0.001 planted=True N=5768 comps=800 merged=120 |Y*|=608 |L|=3456 comb_ok=True
+   HS^2: exact(centroid)=4.7772e-03 exact(endpoint)=5.2364e+01 | termwise max |T|/bound=7.079e-04 | E2<=B2: True B2=7.2845e+00 B2'=7.3772e+00
+   ||A'-A||/(kap sqrt N)=9.1007e-01  bound sqrt(2 sum Psi1)/sqrt N=9.8669e+01 | endpoint ||A'-A||/(sqrt(kap) sqrt N)=3.0130e+00
+   trA^2/N=52.987577 trA'^2/N=52.990332 triangle_ok=True | |L|=3456 <= 4 sqrt(kap) pairs(d<=1)=41955.8: True | pairs(d<=1)/N=57.505
+second kap=0.0625 planted=False N=800 comps=800 merged=0 |Y*|=800 |L|=0 comb_ok=True
+   HS^2: exact(centroid)=0.0000e+00 exact(endpoint)=0.0000e+00 | termwise max |T|/bound=0.000e+00 | E2<=B2: True B2=0.0000e+00 B2'=0.0000e+00
+   ||A'-A||/(kap sqrt N)=0.0000e+00  bound sqrt(2 sum Psi1)/sqrt N=2.5598e+01 | endpoint ||A'-A||/(sqrt(kap) sqrt N)=0.0000e+00
+   trA^2/N=1.338304 trA'^2/N=1.338304 triangle_ok=True | |L|=0 <= 4 sqrt(kap) pairs(d<=1)=1660.0: True | pairs(d<=1)/N=2.075
+second kap=0.02 planted=False N=800 comps=800 merged=0 |Y*|=800 |L|=0 comb_ok=True
+   HS^2: exact(centroid)=0.0000e+00 exact(endpoint)=0.0000e+00 | termwise max |T|/bound=0.000e+00 | E2<=B2: True B2=0.0000e+00 B2'=0.0000e+00
+   ||A'-A||/(kap sqrt N)=0.0000e+00  bound sqrt(2 sum Psi1)/sqrt N=2.5598e+01 | endpoint ||A'-A||/(sqrt(kap) sqrt N)=0.0000e+00
+   trA^2/N=1.338304 trA'^2/N=1.338304 triangle_ok=True | |L|=0 <= 4 sqrt(kap) pairs(d<=1)=939.0: True | pairs(d<=1)/N=2.075
+   endpoint merge: exact 1.0251e+00 <= first-order bound kp^2 sum m m sup|g''| = 3.0180e+01: True
+   x-space check (25 clusters): 2.6663459751e-02 vs Fourier 2.6663459751e-02 | diagonal max T_CC/bound=2.949e-04
+second kap=0.2 planted=False N=800 comps=793 merged=7 |Y*|=786 |L|=0 comb_ok=True
+   HS^2: exact(centroid)=2.6663e-02 exact(endpoint)=1.0251e+00 | termwise max |T|/bound=2.949e-04 | E2<=B2: True B2=1.5840e+02 B2'=1.5840e+02
+   ||A'-A||/(kap sqrt N)=2.8866e-02  bound sqrt(2 sum Psi1)/sqrt N=2.5598e+01 | endpoint ||A'-A||/(sqrt(kap) sqrt N)=8.0041e-02
+   trA^2/N=1.338304 trA'^2/N=1.339597 triangle_ok=True | |L|=0 <= 4 sqrt(kap) pairs(d<=1)=2969.5: True | pairs(d<=1)/N=2.075
+   endpoint merge: exact 3.7802e+00 <= first-order bound kp^2 sum m m sup|g''| = 1.0524e+02: True
+   x-space check (25 clusters): 1.9115439179e-01 vs Fourier 1.9115439179e-01 | diagonal max T_CC/bound=6.415e-04
+second kap=0.3 planted=False N=800 comps=785 merged=15 |Y*|=770 |L|=0 comb_ok=True
+   HS^2: exact(centroid)=1.9115e-01 exact(endpoint)=3.7802e+00 | termwise max |T|/bound=6.415e-04 | E2<=B2: True B2=8.5660e+02 B2'=9.0431e+02
+   ||A'-A||/(kap sqrt N)=5.1526e-02  bound sqrt(2 sum Psi1)/sqrt N=2.5598e+01 | endpoint ||A'-A||/(sqrt(kap) sqrt N)=1.2550e-01
+   trA^2/N=1.338304 trA'^2/N=1.342705 triangle_ok=True | |L|=0 <= 4 sqrt(kap) pairs(d<=1)=3636.9: True | pairs(d<=1)/N=2.075
+time 91.4s
+memcap: peak 189 MB rc=0
