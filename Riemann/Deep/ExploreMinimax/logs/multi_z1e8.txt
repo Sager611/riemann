@@ -1,0 +1,20 @@
+# z1e8 t=9.9997e+07 L*=8.2914 block B=160 cap=1.0 sp delta=0.0603
+K=  1 offline zeros 2/160 (0.01) L/L*=0.50 c=    63.16 rho_HS=6.13e-07 rho_op=2.97e-07 maxmove=0.03 sp rss=38MB
+K=  1 offline zeros 2/160 (0.01) L/L*=0.60 c=   144.72 rho_HS=3.60e-06 rho_op=2.73e-06 maxmove=0.03 sp rss=38MB
+K=  1 offline zeros 2/160 (0.01) L/L*=0.70 c=   331.61 rho_HS=4.67e-05 rho_op=3.30e-05 maxmove=0.04 sp rss=38MB
+K=  1 offline zeros 2/160 (0.01) L/L*=0.80 c=   759.84 rho_HS=1.43e-03 rho_op=1.06e-03 maxmove=0.26 sp rss=38MB
+K=  4 offline zeros 8/160 (0.05) L/L*=0.50 c=    63.16 rho_HS=4.57e-05 rho_op=3.72e-05 maxmove=0.35 sp rss=38MB
+K=  4 offline zeros 8/160 (0.05) L/L*=0.60 c=   144.72 rho_HS=1.34e-03 rho_op=1.35e-03 maxmove=0.84 sp rss=38MB
+K=  4 offline zeros 8/160 (0.05) L/L*=0.70 c=   331.61 rho_HS=5.42e-02 rho_op=4.31e-02 maxmove=0.64 sp rss=39MB
+K=  4 offline zeros 8/160 (0.05) L/L*=0.80 c=   759.84 rho_HS=2.16e-01 rho_op=3.54e-01 maxmove=0.55 sp rss=39MB
+K=  8 offline zeros 16/160 (0.10) L/L*=0.50 c=    63.16 rho_HS=1.68e-05 rho_op=2.03e-05 maxmove=0.35 sp rss=39MB
+K=  8 offline zeros 16/160 (0.10) L/L*=0.60 c=   144.72 rho_HS=1.41e-03 rho_op=1.84e-03 maxmove=0.92 sp rss=39MB
+K=  8 offline zeros 16/160 (0.10) L/L*=0.70 c=   331.61 rho_HS=4.68e-02 rho_op=5.61e-02 maxmove=0.68 sp rss=39MB
+K=  8 offline zeros 16/160 (0.10) L/L*=0.80 c=   759.84 rho_HS=2.16e-01 rho_op=3.00e-01 maxmove=0.68 sp rss=39MB
+K= 16 offline zeros 32/160 (0.20) L/L*=0.50 c=    63.16 rho_HS=1.29e-05 rho_op=1.16e-05 maxmove=0.55 sp rss=39MB
+K= 16 offline zeros 32/160 (0.20) L/L*=0.60 c=   144.72 rho_HS=1.39e-02 rho_op=1.21e-02 maxmove=0.78 sp rss=39MB
+K= 16 offline zeros 32/160 (0.20) L/L*=0.70 c=   331.61 rho_HS=2.38e-01 rho_op=3.22e-01 maxmove=0.83 sp rss=39MB
+K= 16 offline zeros 32/160 (0.20) L/L*=0.80 c=   759.84 rho_HS=5.33e-01 rho_op=6.60e-01 maxmove=0.63 sp rss=39MB
+       27.58 real        23.91 user         0.45 sys
+            39124992  maximum resident set size
+            18809336  peak memory footprint

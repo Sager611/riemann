@@ -1,0 +1,16 @@
+# set=z1e8 N=2108 range=[99996948.728,99997746.787] i0=1204 t=99997404.707447 density D=2.6392 L*=8.2914 X*=sqrt(t/2pi)=3989.371 gap=0.1813 (mean 0.3789)
+M= 100 L/L*= 0.90 L=  7.462 c=e^L=  1741.061 delta=0.0603 rho_HS=1.126e-02 maxmove/spacing=3.859e-01 rms=1.12e-01 op0=9.511e-01 op1=2.996e-03 rho_op=3.150e-03 nx=200 rss=36MB
+M= 100 L/L*= 1.00 L=  8.291 c=e^L=  3989.371 delta=0.0603 rho_HS=5.659e-01 maxmove/spacing=2.296e-01 rms=7.32e-02 op0=1.301e+00 op1=6.811e-01 rho_op=5.234e-01 nx=200 rss=36MB
+M= 100 L/L*= 1.10 L=  9.121 c=e^L=  9141.025 delta=0.0603 rho_HS=7.597e-01 maxmove/spacing=2.524e-01 rms=4.07e-02 op0=1.728e+00 op1=1.303e+00 rho_op=7.543e-01 nx=200 rss=36MB
+M= 200 L/L*= 0.90 L=  7.462 c=e^L=  1741.061 delta=0.0603 rho_HS=3.871e-03 maxmove/spacing=3.782e-01 rms=9.47e-02 op0=9.511e-01 op1=1.390e-03 rho_op=1.461e-03 nx=212 rss=49MB
+M= 200 L/L*= 1.00 L=  8.291 c=e^L=  3989.371 delta=0.0603 rho_HS=5.418e-01 maxmove/spacing=2.571e-01 rms=8.03e-02 op0=1.301e+00 op1=6.223e-01 rho_op=4.782e-01 nx=223 rss=55MB
+M= 200 L/L*= 1.10 L=  9.121 c=e^L=  9141.025 delta=0.0603 rho_HS=7.594e-01 maxmove/spacing=2.524e-01 rms=2.89e-02 op0=1.728e+00 op1=1.303e+00 rho_op=7.541e-01 nx=233 rss=63MB
+M= 400 L/L*= 0.90 L=  7.462 c=e^L=  1741.061 delta=0.0603 rho_HS=3.907e-05 maxmove/spacing=4.526e-01 rms=8.81e-02 op0=9.511e-01 op1=1.930e-05 rho_op=2.029e-05 nx=303 rss=89MB
+M= 400 L/L*= 1.00 L=  8.291 c=e^L=  3989.371 delta=0.0603 rho_HS=5.145e-01 maxmove/spacing=3.512e-01 rms=7.61e-02 op0=1.301e+00 op1=5.720e-01 rho_op=4.395e-01 nx=323 rss=100MB
+M= 400 L/L*= 1.10 L=  9.121 c=e^L=  9141.025 delta=0.0603 rho_HS=7.593e-01 maxmove/spacing=2.524e-01 rms=2.04e-02 op0=1.728e+00 op1=1.303e+00 rho_op=7.540e-01 nx=344 rss=113MB
+M= 800 L/L*= 0.90 L=  7.462 c=e^L=  1741.061 delta=0.0603 rho_HS=4.326e-05 maxmove/spacing=3.755e-01 rms=4.56e-02 op0=9.511e-01 op1=2.205e-05 rho_op=2.318e-05 nx=483 rss=180MB
+M= 800 L/L*= 1.00 L=  8.291 c=e^L=  3989.371 delta=0.0603 rho_HS=5.076e-01 maxmove/spacing=3.934e-01 rms=5.80e-02 op0=1.301e+00 op1=5.584e-01 rho_op=4.291e-01 nx=523 rss=180MB
+M= 800 L/L*= 1.10 L=  9.121 c=e^L=  9141.025 delta=0.0603 rho_HS=7.593e-01 maxmove/spacing=2.524e-01 rms=1.44e-02 op0=1.728e+00 op1=1.303e+00 rho_op=7.540e-01 nx=564 rss=186MB
+      259.00 real       207.08 user         3.47 sys
+           186368000  maximum resident set size
+            18792952  peak memory footprint

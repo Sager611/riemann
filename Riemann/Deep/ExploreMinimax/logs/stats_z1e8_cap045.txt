@@ -1,0 +1,14 @@
+# set=z1e8 t~9.9997e+07 L*=8.2914 X*=3989.370 M=100 pairs=15 cap=0.45 spacings dmode=rel
+L/L*= 0.60 c=e^L=    144.725 rho_op p10/p50/p90 = 1.15e-06 4.63e-06 3.43e-01 rho_HS p50 8.77e-06 maxmove p50 0.27 sp; frac(rho_op<1e-3)=0.67 rss=36MB
+L/L*= 0.70 c=e^L=    331.614 rho_op p10/p50/p90 = 2.16e-06 8.86e-06 5.16e-01 rho_HS p50 1.56e-05 maxmove p50 0.40 sp; frac(rho_op<1e-3)=0.60 rss=36MB
+L/L*= 0.75 c=e^L=    501.971 rho_op p10/p50/p90 = 3.81e-06 2.76e-05 5.94e-01 rho_HS p50 4.64e-05 maxmove p50 0.44 sp; frac(rho_op<1e-3)=0.53 rss=36MB
+L/L*= 0.80 c=e^L=    759.842 rho_op p10/p50/p90 = 1.49e-05 3.19e-03 6.51e-01 rho_HS p50 4.65e-03 maxmove p50 0.45 sp; frac(rho_op<1e-3)=0.27 rss=36MB
+L/L*= 0.85 c=e^L=   1150.188 rho_op p10/p50/p90 = 4.39e-05 2.50e-02 6.79e-01 rho_HS p50 5.50e-02 maxmove p50 0.45 sp; frac(rho_op<1e-3)=0.20 rss=36MB
+L/L*= 0.90 c=e^L=   1741.061 rho_op p10/p50/p90 = 2.39e-02 9.82e-02 7.08e-01 rho_HS p50 1.09e-01 maxmove p50 0.45 sp; frac(rho_op<1e-3)=0.00 rss=36MB
+L/L*= 0.95 c=e^L=   2635.476 rho_op p10/p50/p90 = 9.01e-02 3.92e-01 7.70e-01 rho_HS p50 3.28e-01 maxmove p50 0.45 sp; frac(rho_op<1e-3)=0.00 rss=36MB
+L/L*= 1.00 c=e^L=   3989.370 rho_op p10/p50/p90 = 2.39e-01 4.53e-01 7.88e-01 rho_HS p50 4.59e-01 maxmove p50 0.45 sp; frac(rho_op<1e-3)=0.00 rss=36MB
+L/L*= 1.10 c=e^L=   9141.022 rho_op p10/p50/p90 = 4.42e-01 6.58e-01 9.37e-01 rho_HS p50 6.49e-01 maxmove p50 0.44 sp; frac(rho_op<1e-3)=0.00 rss=36MB
+L/L*= 1.20 c=e^L=  20945.232 rho_op p10/p50/p90 = 4.93e-01 8.42e-01 9.37e-01 rho_HS p50 8.42e-01 maxmove p50 0.42 sp; frac(rho_op<1e-3)=0.00 rss=36MB
+      156.46 real       144.44 user         1.92 sys
+            44417024  maximum resident set size
+            21938704  peak memory footprint

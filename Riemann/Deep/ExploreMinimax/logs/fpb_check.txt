@@ -1,0 +1,19 @@
+p=7 b=5.0: |b| <= 2sqrt(p)=5.292; |w|=[1.0, 1.0]; Re(zeros of A) = [0.5]; Lambda_F(p^2) = -19.459
+   support 0.9 log p: zero side +3.891820+5.5e-18i  prime side +3.891820
+   support 1.5 log p: zero side +3.771686-2.7e-18i  prime side +3.771686
+   two-bump window c = p e^0.05: Q_A/||f||^2 = +0.2144 log-units (negative iff |b| > 2 sqrt p)
+p=7 b=7.0: |b| > 2sqrt(p)=5.292; |w|=[0.4569, 2.1889]; Re(zeros of A) = [0.097412, 0.902588]; Lambda_F(p^2) = -66.161
+   support 0.9 log p: zero side +3.891820-7.1e-17i  prime side +3.891820
+   support 1.5 log p: zero side +3.723633+2.1e-16i  prime side +3.723633
+   two-bump window c = p e^0.05: Q_A/||f||^2 = -1.2566 log-units (negative iff |b| > 2 sqrt p)
+p=11 b=8.0: |b| > 2sqrt(p)=6.633; |w|=[0.5318, 1.8802]; Re(zeros of A) = [0.236685, 0.763315]; Lambda_F(p^2) = -98.314
+   support 0.9 log p: zero side +4.795791-1.8e-16i  prime side +4.795791
+   support 1.5 log p: zero side +4.606841-1.0e-17i  prime side +4.606841
+   two-bump window c = p e^0.05: Q_A/||f||^2 = -0.9882 log-units (negative iff |b| > 2 sqrt p)
+p=11 b=11.5: |b| > 2sqrt(p)=6.633; |w|=[0.3175, 3.1499]; Re(zeros of A) = [0.021508, 0.978492]; Lambda_F(p^2) = -261.970
+   support 0.9 log p: zero side +4.795791-7.0e-17i  prime side +4.795791
+   support 1.5 log p: zero side +4.524175+4.3e-16i  prime side +4.524175
+   two-bump window c = p e^0.05: Q_A/||f||^2 = -3.5186 log-units (negative iff |b| > 2 sqrt p)
+        3.77 real         3.26 user         0.15 sys
+           127369216  maximum resident set size
+            18809336  peak memory footprint
