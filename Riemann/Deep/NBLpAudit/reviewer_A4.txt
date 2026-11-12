@@ -1,0 +1,13 @@
+Reviewer subagent (builtin `reviewer`, 12 Nov 2026 ~14:50 UTC), task: verdict on Lemma H + A4 of Riemann/Deep/NBLp/PROOF.md,
+text pasted verbatim (PROOF.md lines 9–26, 155–160, 172–181, 241–246, 263–294); no computation allowed.
+VERDICT: CORRECT
+1. Hadamard cancellation: B = −Σ Re(1/ρ) real; the real-part sum converges absolutely (Σ 1/ρ itself need not);
+   log|(ρ−s−ε)/(ρ−s)| = ½log(1 + ε(2σ+ε−2β)/|ρ−s|²), tail O(|ρ|^{−2}); splitting legitimate; term ≥ 0 iff β ≤ σ+ε/2.
+2. Contour: s(2σ'−s) = |s|², dt = ds/i; Re(s+ε) ≥ 1/p+ε/2 in the half-plane, so no zeros of the denominator;
+   s = 1−ε removable (R = 0); only poles 1 and 2σ'.
+3. Residues correct; T → ∞ first at fixed X (horizontals O_X(T^{ε/2−2})), then right side ≤ ζ(X)²π/(X−2σ') → 0;
+   J = −2π(Res_1 + Res_{2σ'}) gives the stated formula and signs.
+4. Inequality from |R|² ≤ |Γr_ε|² valid; substitution gives 2πB ≤ (2π/σ')(1−R(2σ')) + 4π/((2σ'−1)ζ(1+ε)) + C_Γε;
+   C_Γ finite (tail O(log|t|·|t|^{−3/2})).
+5. R(2σ') ≥ 1, ζ(1+ε) ≥ 1/ε, 2σ'−1 ≥ (2−p)/(2p): K_p as claimed.
+6. No exclusion of zeros on Re s = 1/p is used; such zeros give equality in their Hadamard factors on Re s = σ'.

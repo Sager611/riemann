@@ -59,7 +59,7 @@ with `A_p := K_p^{1/2} (2/r)^{1/r}`, `K_p := 4p/(2−p) + C_Γ/(2π)`,
   exactly the non-trivial zeros `ρ` of ζ (`0 < β < 1`), `Σ_ρ |ρ|^{−2} < ∞`,
   `ξ(s) = e^{A + Bs} Π_ρ (1 − s/ρ) e^{s/ρ}` (absolutely convergent), and `B = −Σ_ρ Re(1/ρ)`, the series being
   absolutely convergent (`Re(1/ρ) = β/|ρ|² ≤ |ρ|^{−2}`).
-* **[C3]** (Binet; DLMF 5.9.1.) For `Re z > 0`:
+* **[C3]** (Binet; DLMF §5.9(ii), Whittaker–Watson §12.31.) For `Re z > 0`:
   `log Γ(z) = (z − ½) log z − z + ½ log(2π) + ∫_0^∞ (½ − 1/t + 1/(e^t − 1)) e^{−tz} t^{−1} dt`.
   (DLMF 4.36.3.) `coth z = 1/z + Σ_{k≥1} 2z/(z² + k²π²)`.
 * **[C4]** (Borel–Carathéodory; Titchmarsh, *The Theory of Functions*, §5.5.) If `f` is analytic on

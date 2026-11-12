@@ -1,0 +1,12 @@
+p=1.3000 eps=0.20 sigma'=0.6692  J(T/4)=3.43224203 J(T/2)=3.43224800 J(T)=3.43224611  J_formula=3.43224623  diff=-1.2e-07
+   2piB num=0.664717 (tail est 2.3e-04)  <= pi/s'-2J+I_c = 0.736765  <= final RHS 1201.1349 ;  B=1.058e-01  K_p*eps=192.251  B/eps^2=2.645
+p=1.1000 eps=0.10 sigma'=0.8591  J(T/4)=3.15289707 J(T/2)=3.15289940 J(T)=3.15289868  J_formula=3.15289871  diff=-2.4e-08
+   2piB num=0.272558 (tail est 2.5e-05)  <= pi/s'-2J+I_c = 0.312772  <= final RHS 600.3133 ;  B=4.338e-02  K_p*eps=95.871  B/eps^2=4.338
+p=1.1429 eps=0.05 sigma'=0.8500  J(T/4)=3.43307896 J(T/2)=3.43308019 J(T)=3.43307981  J_formula=3.43307983  diff=-1.5e-08
+   2piB num=0.069299 (tail est 7.4e-06)  <= pi/s'-2J+I_c = 0.089035  <= final RHS 300.1785 ;  B=1.103e-02  K_p*eps=47.958  B/eps^2=4.412
+A4 time 59.4
+sigma=0.60 [6,60]: max log|z|=1.202 max -log|z|=2.573 max(log|z|^±)/log(2+t)=0.925 | [60,600]: max log|z|=1.901 max -log|z|=2.360 max(log|z|^±)/log(2+t)=0.455 | [600,6000]: max log|z|=2.309 max -log|z|=3.007 max(log|z|^±)/log(2+t)=0.418
+sigma=0.75 [6,60]: max log|z|=1.069 max -log|z|=1.717 max(log|z|^±)/log(2+t)=0.618 | [60,600]: max log|z|=1.622 max -log|z|=1.710 max(log|z|^±)/log(2+t)=0.296 | [600,6000]: max log|z|=1.893 max -log|z|=1.934 max(log|z|^±)/log(2+t)=0.269
+sigma=0.90 [6,60]: max log|z|=0.947 max -log|z|=1.306 max(log|z|^±)/log(2+t)=0.470 | [60,600]: max log|z|=1.382 max -log|z|=1.335 max(log|z|^±)/log(2+t)=0.245 | [600,6000]: max log|z|=1.553 max -log|z|=1.373 max(log|z|^±)/log(2+t)=0.221
+total time 74.4
+memcap: peak 23 MB rc=0

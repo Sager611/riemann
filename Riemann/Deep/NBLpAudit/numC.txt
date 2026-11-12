@@ -1,0 +1,13 @@
+sigma=0.80 t=   0.0000 |P_N-1/zeta| N=1e2..1e5: 3.15e-02 4.50e-03 3.69e-04 2.53e-04  local exps 0.85 1.09 0.16 (RH: -> sigma-1/2=0.30)
+sigma=0.80 t=   5.0000 |P_N-1/zeta| N=1e2..1e5: 1.72e-02 3.74e-03 7.20e-04 5.09e-04  local exps 0.66 0.72 0.15 (RH: -> sigma-1/2=0.30)
+sigma=0.80 t=  14.1347 |P_N-1/zeta| N=1e2..1e5: 1.50e+00 7.54e-01 3.79e-01 1.90e-01  local exps 0.30 0.30 0.30 (RH: -> sigma-1/2=0.30)
+sigma=0.80 t=  50.0000 |P_N-1/zeta| N=1e2..1e5: 6.67e-01 3.13e-01 1.56e-01 8.69e-02  local exps 0.33 0.30 0.25 (RH: -> sigma-1/2=0.30)
+sigma=0.80 t= 300.0000 |P_N-1/zeta| N=1e2..1e5: 1.65e-01 1.21e-01 5.26e-02 2.29e-02  local exps 0.14 0.36 0.36 (RH: -> sigma-1/2=0.30)
+sigma=0.95 t=   0.0000 |P_N-1/zeta| N=1e2..1e5: 2.33e-02 2.77e-03 2.45e-04 2.69e-05  local exps 0.93 1.05 0.96 (RH: -> sigma-1/2=0.45)
+sigma=0.95 t=   5.0000 |P_N-1/zeta| N=1e2..1e5: 1.54e-02 2.24e-03 8.98e-05 9.43e-05  local exps 0.84 1.40 -0.02 (RH: -> sigma-1/2=0.45)
+sigma=0.95 t=  14.1347 |P_N-1/zeta| N=1e2..1e5: 6.26e-01 2.26e-01 8.08e-02 2.86e-02  local exps 0.44 0.45 0.45 (RH: -> sigma-1/2=0.45)
+sigma=0.95 t=  50.0000 |P_N-1/zeta| N=1e2..1e5: 3.10e-01 1.03e-01 3.58e-02 1.43e-02  local exps 0.48 0.46 0.40 (RH: -> sigma-1/2=0.45)
+sigma=0.95 t= 300.0000 |P_N-1/zeta| N=1e2..1e5: 7.41e-02 4.00e-02 1.13e-02 3.78e-03  local exps 0.27 0.55 0.48 (RH: -> sigma-1/2=0.45)
+s=1+0.1: N=100 err=1.73e-02 bound=1.67e+01 N=1000 err=1.86e-03 bound=1.49e+01 N=10000 err=1.74e-04 bound=1.33e+01 N=100000 err=8.13e-06 bound=1.18e+01
+s=1+0.2: N=100 err=1.41e-02 bound=7.01e+00 N=1000 err=1.47e-03 bound=5.57e+00 N=10000 err=1.40e-04 bound=4.42e+00 N=100000 err=1.10e-05 bound=3.51e+00
+memcap: peak 0 MB rc=0
