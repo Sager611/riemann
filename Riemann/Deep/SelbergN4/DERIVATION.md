@@ -150,3 +150,7 @@ aS1r 21.27826, aXr 25.72968, D_B 4.0603, p_B 1.93901, i0 0.87381, i1 6.29385. θ
 Results κ_F ≥ (θ, A): N=4 6.8158e-04 (0.150, 5265.25); N=5 5.7578e-04 (0.150, 6196.71); N=6 5.0081e-04; N=7 4.4455e-04; N=8 4.0060e-04; N=9 3.6520e-04;
 N=10 3.3601e-04 (0.150, 10428.5); N=100 5.1386e-05; N=1000 6.8655e-06; N=1 1.9004e-03; N=2 1.1472e-03; N=3 8.4751e-04.
 Large N (c(N1), §9): all N ≥ 11: 3.4254e-03/N (θ = 0.150); N ≥ 100: 5.1183e-03/N (θ = 0.100); N ≥ 1000: 6.8429e-03/N (θ = 0.050); N ≥ 10⁶: 9.6960e-03/N (θ = 0.030).
+
+## Audit notes (selbaudit, 12 Nov 2026)
+- §10: the large-v sum of §8 is not of the one-factor form; J(δ1, δ2) = J(δ11, δ21) + o(1) uniformly for small-prime parts ≤ K, then the local sums separate. The uniform-continuity step needs a T-independent modulus for the normalised profiles, domination of the freezing errors by the absolute majorant and the normalised tail; all are written in Riemann/Deep/SelbAudit/FULLPROOF.md (viii) (order of limits: T → ∞, then K, then D_0 → ∞, P_0 fixed).
+- |b(δ)| = τ_{1/2}(δ) should read ≤ (|τ_{−1/2}(p^a)| = τ_{1/2}(p^a)/(2a − 1)). No constant changes.

@@ -1,0 +1,60 @@
+P1 = [11.5429 +/- 6.25e-5]  P2 = [79.886 +/- 5.21e-4]  P1 upper 11.5429624388
+== Part 1: Dousselin, Theorem 'application', reproduced in Arb (P1, P2 with rigorous tails) ==
+N=1   theta=0.011   A=29056699.107509706   kappa >= 5.452862e-08 (printed 5.45e-08); with Sigma_2' bound doubled: 5.427728e-08
+N=2   theta=0.0016  A=212583177.09901848   kappa >= 7.377163e-09 (printed 7.38e-09); with Sigma_2' bound doubled: 7.371187e-09
+N=3   theta=0.0014  A=319102776.4709714    kappa >= 4.913303e-09 (printed 4.91e-09); with Sigma_2' bound doubled: 4.909845e-09
+N=4   theta=0.0013  A=425715589.6389222    kappa >= 3.682008e-09 (printed 3.68e-09); with Sigma_2' bound doubled: 3.679757e-09
+N=5   theta=0.0012  A=532459869.61320543   kappa >= 2.943587e-09 (printed 2.94e-09); with Sigma_2' bound doubled: 2.941901e-09
+N=10  theta=0.001   A=1067086846.4520979   kappa >= 1.468218e-09 (printed 1.46e-09); with Sigma_2' bound doubled: 1.467615e-09
+selfcheck: series = closed form, Delta_2 = definition (quadrature), F4 representation: OK
+R0max 2.338139  DA 4.348005  Emax 4.334941  DAp 4.348005  Psimax 2.382235  Ipsi[0,1] 2.119367  (13s)
+== Part 2a: Dousselin's constants C1, C2 with the new counting (1/A) and per-j combination ((sqrtC1+sqrtC2)^2) ==
+N=2   theta=0.0016: kappa >= 8.8138e-08 at A=4.252e+07  (x11.9 over Dousselin)
+N=3   theta=0.0014: kappa >= 5.9363e-08 at A=6.382e+07  (x12.1 over Dousselin)
+N=4   theta=0.0013: kappa >= 4.5418e-08 at A=6.386e+07  (x12.3 over Dousselin)
+N=5   theta=0.0012: kappa >= 3.6640e-08 at A=7.987e+07  (x12.4 over Dousselin)
+N=10  theta=0.001: kappa >= 1.9041e-08 at A=1.601e+08  (x13.0 over Dousselin)
+== Part 2b: + exact main terms (C5', C6', C4' via Delta_2), local factors cancelled (P1), |sin|-average, integration by parts for v > 1/log xi; sup-norm weights ==
+theta=0.1: Ka=6442.16 Kb=-8450.33 La=17.3494 Sa=45.3930 C3=831.678 C2=2.2793e+07  D1=4.05770 Dmax=4.34800 Dpint=2.09681
+   N=4: kappa >= 4.1504e-05 (A=81696.7)
+   N=5: kappa >= 3.4273e-05 (A=98428.5)
+   N=10: kappa >= 1.8667e-05 (A=178083)
+== Part 2c: + weights restricted to u+u' >= log d/log xi (Lemma Phi), absolute local factors at every prime (Euler product P1) ==
+theta=0.100 kappa=0.1249999: Ka=2398.069 Kb=-4490.572 La=5.77308 Sa=17.58254 C3=282.0849 C2=7.195785e+06 pref=102.6763 (48s)
+   N=4: kappa >= 9.7320e-05 (A=35546.5)
+   N=5: kappa >= 8.1022e-05 (A=42458.5)
+   N=10: kappa >= 4.5203e-05 (A=74850.5)
+== Part 2d: certified chain (DERIVATION.md): + signed local factors at the primes p <= 10^6 (Euler product -> P1eff = 1.000003000) ==
+theta=0.030 kappa=0.1249999: C5'=3.240517 Ka=158.7670 Kb=-297.7422 La=5.54135 Sa=16.80432 C3=18.51780 C2=4.982848e+06 pref=7.10504 {"aS1r": 20.30901, "aXr": 24.02185, "DB": 4.3072, "pB": 1.98856, "i0": 0.71409, "i1": 5.03487} (70s)
+theta=0.050 kappa=0.1249999: C5'=3.274450 Ka=171.4446 Kb=-321.3380 La=5.61716 Sa=17.05082 C3=20.04441 C2=1.950151e+06 pref=7.56330 {"aS1r": 20.57444, "aXr": 24.36288, "DB": 4.26659, "pB": 1.96799, "i0": 0.74074, "i1": 5.23294} (98s)
+theta=0.075 kappa=0.1249999: C5'=3.318405 Ka=188.6948 Kb=-353.4741 La=5.70060 Sa=17.32989 C3=22.12827 C2=9.615726e+05 pref=8.19326 {"aS1r": 20.84632, "aXr": 24.75855, "DB": 4.21556, "pB": 1.95168, "i0": 0.77402, "i1": 5.48696} (123s)
+theta=0.100 kappa=0.1249999: C5'=3.364178 Ka=207.7522 Kb=-389.0323 La=5.77308 Sa=17.58254 C3=24.43790 C2=6.000112e+05 pref=8.89517 {"aS1r": 21.05784, "aXr": 25.12684, "DB": 4.16418, "pB": 1.94206, "i0": 0.80749, "i1": 5.75037} (144s)
+theta=0.125 kappa=0.1249999: C5'=3.411899 Ka=228.7084 Kb=-428.1945 La=5.83080 Sa=17.79706 C3=26.98227 C2=4.256941e+05 pref=9.67961 {"aS1r": 21.19732, "aXr": 25.44916, "DB": 4.11244, "pB": 1.93799, "i0": 0.84062, "i1": 6.01806} (167s)
+theta=0.150 kappa=0.1249999: C5'=3.461711 Ka=251.9215 Kb=-471.7217 La=5.87599 Sa=17.98234 C3=29.80734 C2=3.277641e+05 pref=10.55906 {"aS1r": 21.27826, "aXr": 25.72968, "DB": 4.0603, "pB": 1.93901, "i0": 0.87381, "i1": 6.29385} (191s)
+theta=0.175 kappa=0.1249999: C5'=3.513769 Ka=277.7050 Kb=-520.1639 La=5.90924 Sa=18.13792 C3=32.95208 C2=2.670938e+05 pref=11.54835 {"aS1r": 21.30372, "aXr": 25.9702, "DB": 4.00773, "pB": 1.94547, "i0": 0.9071, "i1": 6.5779} (214s)
+theta=0.200 kappa=0.1249999: C5'=3.568250 Ka=306.5224 Kb=-574.2186 La=5.93480 Sa=18.26715 C3=36.46921 C2=2.270033e+05 pref=12.66520 {"aS1r": 21.28007, "aXr": 26.19835, "DB": 3.95471, "pB": 1.95865, "i0": 0.94066, "i1": 6.87211} (239s)
+theta=0.250 kappa=0.1249999: C5'=3.685272 Ka=374.5627 Kb=-702.3142 La=5.94575 Sa=18.42262 C3=44.78786 C2=1.793553e+05 pref=15.37086 {"aS1r": 21.07018, "aXr": 26.49585, "DB": 3.84716, "pB": 2.00983, "i0": 1.0075, "i1": 7.48039} (262s)
+== RESULT: kappa_F >= (N, theta, A, bound, Dousselin's, ratio) ==
+N=1   theta=0.200 A=1918.63    kappa_F >= 1.9004e-03   Dousselin 5.45e-08, ratio 34870
+N=2   theta=0.175 A=3151.74    kappa_F >= 1.1472e-03   Dousselin 7.38e-09, ratio 155451
+N=3   theta=0.175 A=4222.03    kappa_F >= 8.4751e-04   Dousselin 4.91e-09, ratio 172609
+N=4   theta=0.150 A=5265.25    kappa_F >= 6.8158e-04   Dousselin 3.68e-09, ratio 185211
+N=5   theta=0.150 A=6196.71    kappa_F >= 5.7578e-04   Dousselin 2.94e-09, ratio 195845
+N=6   theta=0.150 A=7090.67    kappa_F >= 5.0081e-04   
+N=7   theta=0.150 A=7955.86    kappa_F >= 4.4455e-04   
+N=8   theta=0.150 A=8798.05    kappa_F >= 4.0060e-04   
+N=9   theta=0.150 A=9621.28    kappa_F >= 3.6520e-04   
+N=10  theta=0.150 A=10428.5    kappa_F >= 3.3601e-04   Dousselin 1.46e-09, ratio 230147
+N=100   kappa_F >= 5.1386e-05 (theta=0.100); Dousselin's table: 1.45e-10
+N=1000  kappa_F >= 6.8655e-06 (theta=0.050); Dousselin's table: 1.43e-11
+== Large N: N*kappa_F >= 2 pi [1/alpha - (sqrt(Ka alpha) + sqrt(C2/N1))^2/alpha^3] for all N >= N1 (increasing in N; Kb <= 0) ==
+theta=0.030: c(N1) = N1=11: 0.0000e+00, N1=100: 2.7203e-03, N1=1000: 6.2472e-03, N1=10000: 8.3218e-03, N1=1e+06: 9.6960e-03;  limit pi/(2 Ka) = 9.8937e-03
+theta=0.050: c(N1) = N1=11: 0.0000e+00, N1=100: 4.6259e-03, N1=1000: 6.8429e-03, N1=10000: 8.2319e-03, N1=1e+06: 9.0563e-03;  limit pi/(2 Ka) = 9.1621e-03
+theta=0.075: c(N1) = N1=11: 1.7052e-03, N1=100: 5.0214e-03, N1=1000: 6.8265e-03, N1=10000: 7.7652e-03, N1=1e+06: 8.2632e-03;  limit pi/(2 Ka) = 8.3245e-03
+theta=0.100: c(N1) = N1=11: 2.9485e-03, N1=100: 5.1183e-03, N1=1000: 6.5099e-03, N1=10000: 7.1803e-03, N1=1e+06: 7.5210e-03;  limit pi/(2 Ka) = 7.5609e-03
+theta=0.125: c(N1) = N1=11: 3.3566e-03, N1=100: 5.0167e-03, N1=1000: 6.0999e-03, N1=10000: 6.5909e-03, N1=1e+06: 6.8404e-03;  limit pi/(2 Ka) = 6.8681e-03
+theta=0.150: c(N1) = N1=11: 3.4254e-03, N1=100: 4.7675e-03, N1=1000: 5.6723e-03, N1=10000: 6.0333e-03, N1=1e+06: 6.2152e-03;  limit pi/(2 Ka) = 6.2353e-03
+theta=0.175: c(N1) = N1=11: 3.3375e-03, N1=100: 4.5278e-03, N1=1000: 5.2313e-03, N1=10000: 5.5065e-03, N1=1e+06: 5.6415e-03;  limit pi/(2 Ka) = 5.6563e-03
+theta=0.200: c(N1) = N1=11: 3.1727e-03, N1=100: 4.2431e-03, N1=1000: 4.7969e-03, N1=10000: 5.0113e-03, N1=1e+06: 5.1133e-03;  limit pi/(2 Ka) = 5.1246e-03
+theta=0.250: c(N1) = N1=11: 2.9218e-03, N1=100: 3.6284e-03, N1=1000: 3.9899e-03, N1=10000: 4.1264e-03, N1=1e+06: 4.1870e-03;  limit pi/(2 Ka) = 4.1937e-03
+all assertions passed; total 262s

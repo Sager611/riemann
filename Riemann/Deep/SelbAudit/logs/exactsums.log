@@ -1,0 +1,6 @@
+xi=1e4: X in [0.05, 3.03]: |d_exact - d_main|/|d_main| max 0.116, median 0.083; at X=3.03: exact -2.1806-1.6673i main -1.9927-1.9272i
+   rho=2, B=3.03: J_exact=-4.0133-6.9876i  J_main=-2.5078-7.0841i
+   rho=6, B=3.03: J_exact=-1.0618+2.3203i  J_main=-1.2673+1.9844i
+xi=1e6: X in [0.05, 3.72]: |d_exact - d_main|/|d_main| max 0.086, median 0.058; at X=3.72: exact -2.1521-1.8243i main -2.0029-2.0200i
+   rho=2, B=3.72: J_exact=-1.8889-7.9978i  J_main=-0.9172-7.6418i
+   rho=6, B=3.72: J_exact=-1.4208+3.3147i  J_main=-1.6524+3.0528i

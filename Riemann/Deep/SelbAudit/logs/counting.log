@@ -1,0 +1,14 @@
+== (a) counting: m (sign changes in (T,2T+H)) vs meas(G)/H vs pairing floor(T/2H) - n1 ==
+H=0.30: m=102  meas(G)/H=100.8  [m >= meas(G)/H: True]  pairing count floor(T/2H)-n1=98 (pairs with a change: 98)  T/H=667 meas(E)/H=565.8
+H=0.70: m=121  meas(G)/H=110.9  [m >= meas(G)/H: True]  pairing count floor(T/2H)-n1=92 (pairs with a change: 92)  T/H=286 meas(E)/H=174.9
+H=1.50: m=103  meas(G)/H=83.4  [m >= meas(G)/H: True]  pairing count floor(T/2H)-n1=59 (pairs with a change: 59)  T/H=133 meas(E)/H=49.9
+H=3.00: m=112  meas(G)/H=59.0  [m >= meas(G)/H: True]  pairing count floor(T/2H)-n1=33 (pairs with a change: 33)  T/H=67 meas(E)/H=7.7
+H=0.50: m=7  meas(G)/H=6.2  [m >= meas(G)/H: True]  pairing count floor(T/2H)-n1=6 (pairs with a change: 6)  T/H=400 meas(E)/H=393.8
+H=1.00: m=9  meas(G)/H=7.0  [m >= meas(G)/H: True]  pairing count floor(T/2H)-n1=6 (pairs with a change: 6)  T/H=200 meas(E)/H=193.0
+== (b) special functions (mpmath, 30 digits; cert.log: R0max 2.338139 DA 4.348005 Emax 4.334941 Psimax 2.382235 Ipsi[0,1] 2.119367) ==
+Emax ~ 4.334873 (sup |E| on [0,1]; |E(0)| = 4)
+R0max ~ 2.042051 (sup |Delta_2(Y) - c1 Y| on (0,50])
+DA ~ 4.334873 (sup |Delta_2(Y)|/max(1,Y) on (0,50])
+Psimax ~ 2.378930 (sup |psi| on (0,50])
+Ipsi[0,1] ~ 2.061438 (sup_l l*int_l^inf |psi|/Y^2, l in (0,1]; sampled)
+Phi_BB(t) = min(1,(1-t/2)/(1-theta)) exactly: i0 = 0.86667, i1 = 6.20167 at theta=0.15 (cert step-function upper values 0.87381, 6.29385)
