@@ -1,0 +1,20 @@
+M_f = sup u^2|f^(u)| ~ 0.77618 at u = 1.3519; 4 pi^2 M_f N0/L^2 = 5187.6
+        0.97 real         0.30 user         0.19 sys
+            77185024  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6678  page reclaims
+                1324  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 302  voluntary context switches
+                3479  involuntary context switches
+           501328710  instructions retired
+           295548305  cycles elapsed
+            19792376  peak memory footprint
+memcap: peak 0 MB rc=0

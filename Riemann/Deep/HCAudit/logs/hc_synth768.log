@@ -1,0 +1,42 @@
+float-vs-Arb f^ max abs err on 9 points in [0,8]: 2.22e-16
+(A) Tonks mean 1                40 seqs: max (S - bound) = -502.4717 (<= 0 required: True); S/n in [0.1251, 0.1403]
+(A) all gaps lambda              1 seqs: max (S - bound) = -0.7040 (<= 0 required: True); S/n in [0.0057, 0.0057]
+(A) runs r*lambda + long         8 seqs: max (S - bound) = -0.1581 (<= 0 required: True); S/n in [0.1774, 0.3068]
+(A) alt lambda, 2-lambda         1 seqs: max (S - bound) = -9.6217 (<= 0 required: True); S/n in [0.2905, 0.2905]
+(A) near A nodes                20 seqs: max (S - bound) = -962.8759 (<= 0 required: True); S/n in [0.4968, 0.5348]
+(A) argmax pair (lam,1.11709)    1 seqs: max (S - bound) = -18.9700 (<= 0 required: True); S/n in [0.2005, 0.2005]
+(A) uniform [lam, 2-lam]        20 seqs: max (S - bound) = -626.3065 (<= 0 required: True); S/n in [0.0911, 0.0943]
+(A) boundary cluster            20 seqs: max (S - bound) = -367.8400 (<= 0 required: True); S/n in [0.5272, 0.5769]
+(B) n =  1: max E_beta = -0.3479921 (c_cert -0.3478617, slack 1.30e-04); its mean gap 0.7680, gaps [0.768]
+(B) n =  2: max E_beta = -0.3479921 (c_cert -0.3478617, slack 1.30e-04); its mean gap 0.7680, gaps [0.768 0.768]
+(B) n =  3: max E_beta = -0.3479921 (c_cert -0.3478617, slack 1.30e-04); its mean gap 0.7680, gaps [0.768 0.768 0.768]
+(B) n =  4: max E_beta = -0.3479921 (c_cert -0.3478617, slack 1.30e-04); its mean gap 0.7680, gaps [0.768 0.768 0.768 0.768]
+(B) n =  5: max E_beta = -0.3479921 (c_cert -0.3478617, slack 1.30e-04); its mean gap 0.7680, gaps [0.768 0.768 0.768 0.768 0.768]
+(B) n =  6: max E_beta = -0.3479921 (c_cert -0.3478617, slack 1.30e-04); its mean gap 0.7680, gaps [0.768 0.768 0.768 0.768 0.768 0.768]
+(B) n =  7: max E_beta = -0.3479921 (c_cert -0.3478617, slack 1.30e-04); its mean gap 0.7680, gaps [0.768 0.768 0.768 0.768 0.768 0.768 0.768]
+(B) n =  8: max E_beta = -0.3479921 (c_cert -0.3478617, slack 1.30e-04); its mean gap 0.7680, gaps [0.768 0.768 0.768 0.768 0.768 0.768 0.768 0.768]
+(B) n = 10: max E_beta = -0.3479921 (c_cert -0.3478617, slack 1.30e-04); its mean gap 0.7680, gaps [0.768 0.768 0.768 0.768 0.768 0.768 0.768 0.768]
+(B) n = 12: max E_beta = -0.3479921 (c_cert -0.3478617, slack 1.30e-04); its mean gap 0.7680, gaps [0.768 0.768 0.768 0.768 0.768 0.768 0.768 0.768]
+(B) n = 16: max E_beta = -0.3479921 (c_cert -0.3478617, slack 1.30e-04); its mean gap 0.7680, gaps [0.768 0.768 0.768 0.768 0.768 0.768 0.768 0.768]
+(B) n = 20: max E_beta = -0.3479921 (c_cert -0.3478617, slack 1.30e-04); its mean gap 0.7680, gaps [0.768 0.768 0.768 0.768 0.768 0.768 0.768 0.768]
+(B) n = 30: max E_beta = -0.3479921 (c_cert -0.3478617, slack 1.30e-04); its mean gap 0.7680, gaps [0.768 0.768 0.768 0.768 0.768 0.768 0.768 0.768]
+(B) best cyclic E_beta overall -0.3479921 <= c_cert: True ; full pair energy per point of its periodic extension 0.00309 vs f^(0) + 2c + 2 beta (mean-1) = 0.00398
+       25.02 real        19.24 user         0.63 sys
+            53886976  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7603  page reclaims
+                1031  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 191  voluntary context switches
+               55503  involuntary context switches
+           445952630  instructions retired
+           231974896  cycles elapsed
+            19956216  peak memory footprint
+memcap: peak 32 MB rc=0

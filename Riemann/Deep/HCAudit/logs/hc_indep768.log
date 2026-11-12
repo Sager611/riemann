@@ -1,0 +1,36 @@
+(a) deg p = 21, real roots of p: ['[-0.00021784410 +/- 5.62e-13]']
+    deg q = 21, real roots of q: ['[3.1431718 +/- 2.56e-8]', '[30.709284 +/- 1.33e-7]', '[40.357846 +/- 4.71e-7]'] ; w0 = 40.358051267, 2 pi s^2 U^2 = [40.3580513129 +/- 2.76e-11]
+    p > 0 on [0,inf): True ; q < 0 on [2 pi s^2U^2, inf): True
+    Descartes sign variations of p (bound on #positive roots): 20
+(b) numerical max|fhat'''| on [0,8] (step 1e-3) = 30.214  (checker bound M3 = 3536.5)
+(c) fine lattice (delta = dg/40) max Phi = -0.3478845702 at (x,y) = (0.76800, 1.11709); checker corner max (dg/5) = -0.3478888283
+    local max near (0.7680, 1.1171): -0.3478845702 at (0.768000, 1.117091)
+    local max near (0.8079, 0.7680): -0.3480170207 at (0.807896, 0.768000)
+    local max near (0.8677, 0.7680): -0.3480462301 at (0.867740, 0.768000)
+    local max near (0.9276, 0.7680): -0.3480673262 at (0.927584, 0.768000)
+    local max near (2.2342, 0.7680): -0.3480794705 at (2.233982, 0.768000)
+    local max near (1.6557, 0.7680): -0.3480914735 at (1.655938, 0.768000)
+    best refined sup estimate -0.3478845702 ; c_cert = -0.3478616532 ; slack 2.292e-05
+    sampled sup on Q2 = -0.564021 (checker R2 = -0.5640124229), on Q3 = -0.348686 (checker R3 bound = -0.3481091233)
+(d) x = 0.3: FT of R^ = 0.809713988266, R(x) = 0.809713988266
+(d) x = 1.5: FT of R^ = -0.0360253097395, R(x) = -0.0360253097395
+(d) x = 2.7: FT of R^ = -0.001446230013, R(x) = -0.001446230013
+        2.52 real         1.57 user         0.30 sys
+            46923776  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                5769  page reclaims
+                1664  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 382  voluntary context switches
+                5835  involuntary context switches
+           503870448  instructions retired
+           293766325  cycles elapsed
+            20152848  peak memory footprint
+memcap: peak 0 MB rc=0

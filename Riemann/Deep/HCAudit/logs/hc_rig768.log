@@ -1,0 +1,23 @@
+(r1) rigorous M2 = sup_{[lam,2U]}|f^''| <= [4326.4697 +/- 1.87e-5] (76801 balls of radius 1/40000); checker used 4.553
+(r2) dg/40 lattice, all Arb: corner max [-0.347884570200 +/- 3.40e-13] + rem [0.000404 +/- 4.98e-7] = R1 [-0.347481067978 +/- 2.13e-13] ; R2 [-0.563886980478 +/- 1.05e-13] ; R3 [-0.348109123287 +/- 3.94e-13]
+(r3) J (acb.integral) = [0.306839281978626 +/- 1.82e-16] ; f^(0) = [1.00110000000 +/- 6e-16]
+(r4) second-route c = [-0.347481067978 +/- 2.13e-13] ; margin J - f^(0) - 2c = [0.0007014179351 +/- 4.80e-14] -> PASS
+       12.21 real         8.47 user         0.38 sys
+            34832384  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                4608  page reclaims
+                1454  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  72  voluntary context switches
+               28141  involuntary context switches
+           491231463  instructions retired
+           318764245  cycles elapsed
+            14909968  peak memory footprint
+memcap: peak 14 MB rc=0

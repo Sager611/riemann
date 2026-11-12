@@ -1,0 +1,19 @@
+GAP: step (4)’s explicit cutoff \(L\ge10\) is unsupported by the unspecified \(O(\log T)\) remainder.
+
+Replace it with **“for all sufficiently large \(T\)”**. Indeed,
+\[
+\frac{TL/(2\pi)-N(T)}{N(T)/L}\longrightarrow 1+\log(2\pi)<4.
+\]
+With that correction, the argument proves the claimed theorem.
+
+- **Multiplicity:** each positive separation contributes twice; diagonal contributes \(N_0\widehat f(0)\).
+- **Tail:** \(k\ge3\) gives distance \(>3\lambda\ge U\). Dropping these nonpositive terms is valid, including \(U=3\lambda\).
+- **Weights:** fewer than \(4N_0\) retained off-diagonal terms; the stated \(4\pi^2MN_0/L^2\) error is valid.
+- **Telescoping:** the \(A\)-terms have the stated orientation. Bounded \(A,\widehat f\) make boundary terms \(O(1)\).
+- **Beta:** rearrangement gives \(+\beta(g_i-1)\); \(\beta\ge0\) permits the span upper bound.
+- **Normalization:** fixed \(L=\log T\) is used consistently; no local-log substitution occurs.
+- **Step (5):** valid regardless of the sign of \(\widehat f(0)+2c\).
+- **Contradiction:** choose fixed sufficiently small \(\delta>0\), then sufficiently large \(T\).
+- **Charging:** each \(E_\lambda\) index maps to a counted small-gap index, with at most two preimages. A successor beyond \(T\) causes no problem: its gap’s starting ordinate is still \(\le T\).
+
+Displayed certificate values give margin **\(0.001462588379>0\)**, rather than \(0.001462588425\); positivity is unchanged.

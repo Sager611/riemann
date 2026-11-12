@@ -1,0 +1,30 @@
+zeros: 22491, gamma in [14.135, 19999.276], sorted, min diff 3.531e-02
+T = 19998.7626, L = 9.90343, N(T) = 22490 (RvM main term 22489.8), TL/2pi = 31521.6, #E = 5886 (0.2617 N), N0 = 16604
+min Z_0 gap (unfolded, fixed L) = 0.768032 > lambda = 0.768 : True
+K = 13 index distances cover |u| < 14; S_w = 9284.4492, S_w/N(T) = 0.41283, S_w/N0 = 0.55917
+(1) k>=3 terms: max f^ = -0.000e+00 (<= 0 required), their sum -1.1797 <= 0: True; min distance at k=3: 2.54949 vs U = 2.304
+(2) weight change on k=1,2: |S_w - S_1| = 1.130e+03 <= bound 4 pi^2 M_f N0/L^2 with max single term 6.617e-02
+(3) max_i Phi(g_i, g_{i+1}) = -0.347999 <= c_cert = -0.347862 : True ; argmax gaps (0.7681, 1.2335)
+    sum (H)-LHS = -4233.4794 <= sum RHS = 3898.3883 ; telescoped closed form 3898.3883 (identity error -9.09e-12)
+(4) chain: S_w = 9284.4492 <= S_drop = 9285.6289 + weight err <= bound = 24419.0615 : True
+    beta-term 2 beta (x_{N0-1} - x_1 - N0) = 19345.01 ; #E_lambda = 5886 ; TL/2pi - N(T) = 9031.6 ; 3N/L = 6812.8
+    N0 (f^(0) + 2c) = 5070.47 ; per N(T): S_w/N = 0.4128, hard-core ceiling f^(0)+2c = 0.3054, J = 0.30684
+        3.29 real         2.47 user         0.19 sys
+            42205184  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6512  page reclaims
+                 581  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 137  voluntary context switches
+                7336  involuntary context switches
+           423210877  instructions retired
+           206267735  cycles elapsed
+            19841552  peak memory footprint
+memcap: peak 0 MB rc=0
