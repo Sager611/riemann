@@ -1,0 +1,540 @@
+VERDICT-ONLY statement-fidelity review. Do NOT call any tools; everything you need is below. Answer within 90 seconds.
+
+Task: a Lean 4 + Mathlib formalization (namespace DPCLean) of 'Theorem U' (PROOF.md below): unconditionally, for every φ ∈ (2/3, 1), #{n : T ≤ γ_n ≤ γ_{n+1} ≤ 2T, γ_{n+1} − γ_n < 2πφ/log T} ≥ c(φ) T log T, hence D(λ) > 0 for every λ > 2/3. Design: the NEW steps are PROVED in Lean (Step 2 counting, Steps 0/8 interval arithmetic, 6e Hölder exponent bookkeeping and explicit δ,w,r, 6f class sum and Φ(ε) → 0, 5a's use of θ ≤ 1/2, Step 7 contradiction, Theorem U ⇒ D(λ) > 0); the ANALYTIC inputs are NAMED hypotheses (Props) about abstract real-valued functions of T (structure Data), the zero model (pplean's Zeros) and an abstract exp/log (ExpLog = the four Mathlib facts exp_add, exp_pos, exp_strictMono, exp_log; Mathlib's Real.log exceeds the 290 MB memory cap). All proofs compile sorry-free with axioms [propext, Classical.choice, Quot.sound]. sc T means log T/(2π) (hypothesis hsc: sc T · tp = lg T with tp = 2π abstract). T is real; o(T) is written ∀ η > 0 ∃ T₀ ∀ T ≥ T₀ ... ≤ η T.
+
+Question: for each named hypothesis (Step3, MainTerm, Step6, Step1Pos, Holder7, Step5, Covering, Density, Step6Classes, MV5a, Step5c, RvMUp, Reflect, ExpLog, hsc, DPCInputs/DPCInputsFine) — is it a faithful (implied-by-PROOF/literature, not stronger) rendering of the cited step? And do TheoremU / gapSet / D_pos_two_thirds(_fine) state Theorem U and D(λ) > 0 faithfully (pplean's Dlam is Lamzouri's liminf D, TeX l.183)? Flag anything that makes a hypothesis FALSE for the real objects or vacuous, or a conclusion weaker than claimed. Reply: first line 'FAITHFUL' or 'ISSUES', then at most 12 bullets, each tagged [blocking] or [minor].
+
+=== pplean zero model (imported, Riemann/Deep/ExplorePointProc/Lean/Model.lean, Liminf.lean) ===
+structure Zeros where
+  γ : ℕ → ℝ
+  N : ℝ → ℕ
+  sc : ℝ → ℝ
+
+/-- Structural facts of the model: γ_n nondecreasing for n ≥ 1, γ_1 > 0, N(T) = #{n ≥ 1 : γ_n ≤ T}. -/
+structure Zeros.Ordered (Z : Zeros) : Prop where
+  mono : ∀ k : ℕ, 1 ≤ k → Z.γ k ≤ Z.γ (k + 1)
+  pos : 0 < Z.γ 1
+  count : ∀ (T : ℝ) (k : ℕ), 1 ≤ k → (Z.γ k ≤ T ↔ k ≤ Z.N T)
+
+
+/-- Lamzouri l.183: {n : 0 < γ_n ≤ T, γ_{n+1} − γ_n ≤ 2πλ/log T}, unfolded: (γ_{n+1} − γ_n)·log T/(2π) ≤ λ. -/
+noncomputable def smallGaps (Z : Zeros) (lam T : ℝ) : Finset ℕ :=
+  (Icc 1 (Z.N T)).filter (fun k => (Z.γ (k + 1) - Z.γ k) * Z.sc T ≤ lam)
+
+/-- D(λ) > 0, where D(λ) = liminf_{T→∞} #smallGaps(λ, T)/N(T) (l.183): the ratio is eventually ≥ some δ > 0. -/
+def DPos (Z : Zeros) (lam : ℝ) : Prop :=
+  ∃ δ : ℝ, 0 < δ ∧ ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → δ * (Z.N T : ℝ) ≤ ((smallGaps Z lam T).card : ℝ)
+
+
+/-- log T/(2π) → ∞. -/
+def ScaleToInf (Z : Zeros) : Prop := ∀ K : ℝ, ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → K ≤ Z.sc T
+
+
+/-- Lamzouri's D(λ), TeX l.183. -/
+noncomputable def Dlam (Z : Zeros) (lam : ℝ) : ℝ :=
+  liminf (fun T : ℝ => ((smallGaps Z lam T).card : ℝ) / (Z.N T : ℝ)) atTop
+
+
+theorem dpos_iff {Z : Zeros} (hN : ∀ K : ℝ, ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → K ≤ (Z.N T : ℝ))
+    (lam : ℝ) : DPos Z lam ↔ 0 < Dlam Z lam 
+
+=== DPCLean Lean statements (proofs omitted) ===
+-- ===== Gaps.lean
+
+/-- Entries of the sorted list x 0 ≤ … ≤ x (n − 1) that share their value with another entry. -/
+noncomputable def shared (x : ℕ → ℝ) (n : ℕ) : Finset ℕ :=
+  (range n).filter (fun i => ∃ j ∈ range n, j ≠ i ∧ x j = x i)
+
+/-- Zero gaps: indices i with i + 1 < n and x (i + 1) = x i. -/
+noncomputable def zeroGaps (x : ℕ → ℝ) (n : ℕ) : Finset ℕ :=
+  (range n).filter (fun i => i + 1 < n ∧ x (i + 1) = x i)
+
+/-- **Step 2, list form**: #(entries sharing their value with another entry) ≤ 2·#(zero gaps). -/
+theorem card_shared_le (x : ℕ → ℝ) (n : ℕ) (hx : ∀ i, i + 1 < n → x i ≤ x (i + 1)) :
+    (shared x n).card ≤ 2 * (zeroGaps x n).card
+
+/-- Real parts β n of the zeros, in pplean's ordinate order (Zeros.γ, with multiplicity). The functional
+equation ρ ↦ 1 − ρ̄ permutes the zeros with multiplicity: an off-line zero (β ≠ 1/2) has a partner index with the
+same ordinate and real part 1 − β. -/
+def Reflect (Z : Zeros) (β : ℕ → ℝ) : Prop :=
+  ∀ n : ℕ, 1 ≤ n → β n ≠ 1 / 2 → ∃ m : ℕ, 1 ≤ m ∧ Z.γ m = Z.γ n ∧ β m = 1 - β n
+
+/-- The n-th zero is off-line or multiple. -/
+def Exc (Z : Zeros) (β : ℕ → ℝ) (n : ℕ) : Prop :=
+  β n ≠ 1 / 2 ∨ ∃ m : ℕ, 1 ≤ m ∧ m ≠ n ∧ Z.γ m = Z.γ n ∧ β m = β n
+
+/-- Off-line or multiple zeros with T ≤ γ ≤ 2T. -/
+noncomputable def excSet (Z : Zeros) (β : ℕ → ℝ) (T : ℝ) : Finset ℕ :=
+  (Icc 1 (Z.N (2 * T))).filter (fun n => T ≤ Z.γ n ∧ Z.γ n ≤ 2 * T ∧ Exc Z β n)
+
+/-- Z_off ∩ {T ≤ γ ≤ 2T} (zeros with β > 1/2): PROOF Step 6a's classes S_a are subsets. -/
+noncomputable def offSet (Z : Zeros) (β : ℕ → ℝ) (T : ℝ) : Finset ℕ :=
+  (Icc 1 (Z.N (2 * T))).filter (fun n => T ≤ Z.γ n ∧ Z.γ n ≤ 2 * T ∧ 1 / 2 < β n)
+
+/-- 𝒩(T) of Theorem U: n with T ≤ γ_n ≤ γ_{n+1} ≤ 2T and γ_{n+1} − γ_n < 2πφ/log T, unfolded with the zero
+model's sc T = log T/(2π): (γ_{n+1} − γ_n)·sc T < φ. (γ_n ≤ γ_{n+1} is Zeros.Ordered.mono; the ambient
+Icc 1 N(2T) cuts nothing, since γ_{n+1} ≤ 2T forces n + 1 ≤ N(2T).) -/
+noncomputable def gapSet (Z : Zeros) (φ T : ℝ) : Finset ℕ :=
+  (Icc 1 (Z.N (2 * T))).filter
+    (fun n => T ≤ Z.γ n ∧ Z.γ (n + 1) ≤ 2 * T ∧ (Z.γ (n + 1) - Z.γ n) * Z.sc T < φ)
+
+/-- **Step 2 (zero model)**: #(off-line or multiple zeros with T ≤ γ ≤ 2T) ≤ 2𝒩(T). -/
+theorem card_exc_le {Z : Zeros} (hZ : Z.Ordered) {β : ℕ → ℝ} (hβ : Reflect Z β) {φ : ℝ} (hφ : 0 < φ)
+    (T : ℝ) : (excSet Z β T).card ≤ 2 * (gapSet Z φ T).card
+
+/-- Step 2 as used in 6a: #(Z_off ∩ {T ≤ γ ≤ 2T}) ≤ 2𝒩(T). -/
+theorem card_off_le {Z : Zeros} (hZ : Z.Ordered) {β : ℕ → ℝ} (hβ : Reflect Z β) {φ : ℝ} (hφ : 0 < φ)
+    (T : ℝ) : (offSet Z β T).card ≤ 2 * (gapSet Z φ T).card
+
+-- ===== Params.lean
+
+/-- Step 0: for φ > 2/3 the interval (1/φ − 1, 1/2) is nonempty. -/
+theorem step0_nonempty {φ : ℝ} (h1 : 2 / 3 < φ) : ∃ θ : ℝ, 1 / φ - 1 < θ ∧ θ < 1 / 2
+
+/-- Step 0: every θ ∈ (1/φ − 1, 1/2), φ ∈ (2/3, 1), satisfies 0 < φθ < 1 < φ(1 + θ) < 2 (DPC l.753). -/
+theorem step0_signs {φ θ : ℝ} (h1 : 2 / 3 < φ) (h2 : φ < 1) (h3 : 1 / φ - 1 < θ) (h4 : θ < 1 / 2) :
+    0 < φ * θ ∧ φ * θ < 1 ∧ 1 < φ * (1 + θ) ∧ φ * (1 + θ) < 2
+
+/-- Step 8: the interval (1/φ − 1, 1/2) is empty for 0 < φ ≤ 2/3. -/
+theorem step8_empty {φ : ℝ} (h0 : 0 < φ) (h : φ ≤ 2 / 3) : ¬ ∃ θ : ℝ, 1 / φ - 1 < θ ∧ θ < 1 / 2
+
+theorem step0_iff {φ : ℝ} (h0 : 0 < φ) : (∃ θ : ℝ, 1 / φ - 1 < θ ∧ θ < 1 / 2) ↔ 2 / 3 < φ
+
+/-- Step 8: DPC's sign condition φ(1 + θ) > 1 is φ > 1/(1 + θ). -/
+theorem step8_threshold {φ θ : ℝ} (hθ : 0 < 1 + θ) : 1 < φ * (1 + θ) ↔ 1 / (1 + θ) < φ
+
+/-- Step 8: at length T^θ with 0 ≤ θ < 1/2 the threshold 1/(1 + θ) lies above 2/3. -/
+theorem step8_above {θ : ℝ} (h0 : 0 ≤ θ) (h1 : θ < 1 / 2) : 2 / 3 < 1 / (1 + θ)
+
+/-- E = (1 − 1/w)(1/2 − 1/(3r)) (PROOF 6e). -/
+noncomputable def Eexp (w r : ℝ) : ℝ := (1 - 1 / w) * (1 / 2 - 1 / (3 * r))
+
+/-- 6e: the σ-exponents of A₁, A₂, A₃ sum to 3E. -/
+theorem exp_mean (w r : ℝ) :
+    (1 - 1 / w) / 4 + (1 - 1 / w) / 4 + (1 - 1 / w) * (1 - 1 / r) = Eexp w r + Eexp w r + Eexp w r
+
+/-- 6e, Hölder with exponents (3, 3, 3), as exponent bookkeeping on abstract nonnegative reals. With s e = σ^e
+(any s with s(x + y) = s x · s y, s ≥ 0), B = (a + 2)^C, g = e^{θ(a+1)}:
+A₁ ≤ K T B σ^{(1−1/w)/4}, A₂ ≤ K T B g³ σ^{(1−1/w)/4}, A₃ ≤ K T B σ^{(1−1/w)(1−1/r)} and 𝓗³ ≤ A₁A₂A₃
+give 𝓗 ≤ K T B g σ^E. -/
+theorem holder_bookkeeping {s : ℝ → ℝ} (hs : ∀ x y, s (x + y) = s x * s y) (hs0 : ∀ x, 0 ≤ s x)
+    {w r K T B g A₁ A₂ A₃ H : ℝ} (hK : 0 ≤ K) (hT : 0 ≤ T) (hB : 0 ≤ B) (hg : 0 ≤ g)
+    (hA₂ : 0 ≤ A₂) (hA₃ : 0 ≤ A₃)
+    (h1 : A₁ ≤ K * T * B * s ((1 - 1 / w) / 4))
+    (h2 : A₂ ≤ K * T * B * g ^ 3 * s ((1 - 1 / w) / 4))
+    (h3 : A₃ ≤ K * T * B * s ((1 - 1 / w) * (1 - 1 / r)))
+    (hH : H ^ 3 ≤ A₁ * A₂ * A₃) :
+    H ≤ K * T * B * g * s (Eexp w r)
+
+/-- 6e–6f: for every θ < 1/2, δ = x, w = 1/x, r = 1/(3x) with x = (1/2 − max θ 0)/4 give 0 < δ < 1, w, r > 1 and
+θ < (1 − δ)E, i.e. κE > θ for Jutila's slope κ = 1 − δ. -/
+theorem exists_params {θ : ℝ} (hθ : θ < 1 / 2) :
+    ∃ δ w r : ℝ, 0 < δ ∧ δ < 1 ∧ 1 < w ∧ 1 < r ∧ θ < (1 - δ) * Eexp w r
+
+-- ===== Tail.lean
+
+/-- Abstract exp and log: the four facts of Mathlib's Real.exp, Real.log used here. -/
+structure ExpLog (ex lg : ℝ → ℝ) : Prop where
+  add : ∀ x y : ℝ, ex (x + y) = ex x * ex y
+  pos : ∀ x : ℝ, 0 < ex x
+  mono : StrictMono ex
+  ex_lg : ∀ x : ℝ, 0 < x → ex (lg x) = x
+
+lemma ExpLog.zero (h : ExpLog ex lg) : ex 0 = 1
+
+/-- **The tail of 6f**: for q ≥ 0 and 0 ≤ ρ < 1, Σ_{A<a≤M} (a + 2)^C q ρ^a ≤ τ for all A ≥ N, uniformly in M. -/
+theorem tail_small (C : ℕ) {q ρ : ℝ} (hq : 0 ≤ q) (hρ0 : 0 ≤ ρ) (hρ1 : ρ < 1) :
+    ∀ τ : ℝ, 0 < τ → ∃ N : ℕ, ∀ A M : ℕ, N ≤ A →
+      ∑ a ∈ Ioc A M, ((a : ℝ) + 2) ^ C * q * ρ ^ a ≤ τ
+
+-- ===== Phi.lean
+
+/-- A(ε) = ⌊c log(1/ε)⌋ (PROOF.md Repair 6). -/
+noncomputable def Aeps (lg : ℝ → ℝ) (c ε : ℝ) : ℕ := ⌊c * lg (1 / ε)⌋₊
+
+/-- Φ(ε) of PROOF 6f, a-sum truncated at M. -/
+noncomputable def Phi (ex lg : ℝ → ℝ) (C : ℕ) (θ κ E c ε : ℝ) (M : ℕ) : ℝ :=
+  ((Aeps lg c ε : ℝ) + 2) ^ C * ex θ ^ (Aeps lg c ε + 1) * ex (lg (3 * ε) * E)
+    + ∑ a ∈ Ioc (Aeps lg c ε) M, ((a : ℝ) + 2) ^ C * ex θ * ex (θ - κ * E) ^ a
+
+/-- **Φ(ε) → 0 as ε → 0** (PROOF 6f, Repair 6), uniformly in the truncation M. -/
+theorem Phi_small (h : ExpLog ex lg) (C : ℕ) {θ κ E c : ℝ} (hE : 0 ≤ E) (hκ : θ < κ * E) (hc : 0 < c)
+    (hcθ : c * θ < E) : ∀ τ : ℝ, 0 < τ → ∃ ε₁ : ℝ, 0 < ε₁ ∧ ∀ ε : ℝ, 0 < ε → ε ≤ ε₁ → ∀ M : ℕ,
+      Phi ex lg C θ κ E c ε M ≤ τ
+
+-- ===== Hairpin.lean
+
+/-- **6f summation**. -/
+theorem hairpin_sum (h : ExpLog ex lg) {C : ℕ} {θ κ E c ε K T Cd : ℝ} (M : ℕ) (H s : ℕ → ℝ)
+    (hθ : 0 ≤ θ) (hE : 0 ≤ E) (hK : 0 ≤ K) (hT : 0 ≤ T) (hCd : 0 < Cd)
+    (hs0 : ∀ a, 0 < s a) (hsε : ∀ a, s a ≤ 3 * ε) (hsd : ∀ a : ℕ, s a ≤ Cd * ex (-(κ * a)))
+    (hH : ∀ a : ℕ, H a ≤ K * T * ((a : ℝ) + 2) ^ C * ex θ ^ (a + 1) * ex (lg (s a) * E)) :
+    ∑ a ∈ range (M + 1), H a ≤ K * max 1 (ex (lg Cd * E)) * Phi ex lg (C + 1) θ κ E c ε M * T
+
+-- ===== Step7.lean
+
+/-- **Step 7** (PROOF.md, DPC l.766–787 with Steps 1–6), from abstract inequalities. -/
+theorem step7 {I M Hp S R4 P4 Bad mE L h Nc Off : ℝ → ℝ} {Φ : ℝ → ℕ → ℝ} {H₀ : ℝ}
+    (hH₀ : 0 < H₀)
+    (hL : ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → 1 ≤ L T)
+    (hNc : ∀ T : ℝ, 0 ≤ Nc T)
+    (h3 : ∀ η : ℝ, 0 < η → ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → |I T - (M T + Hp T)| ≤ η * T)
+    (hM : ∃ δ₀ S₀ : ℝ, 0 < δ₀ ∧ 0 < S₀ ∧ ∀ η : ℝ, 0 < η → ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T →
+      S₀ ≤ S T ∧ M T ≤ -3 * δ₀ * (T / 2) * S T * (1 - η))
+    (h6 : ∀ ε : ℝ, 0 < ε → ε < 1 → ∀ η : ℝ, 0 < η → ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T →
+      Off T ≤ 2 * ε * T * L T → ∃ m : ℕ, |Hp T| ≤ Φ ε m * T + η * T)
+    (hΦ : ∀ τ : ℝ, 0 < τ → ∃ ε₁ : ℝ, 0 < ε₁ ∧ ∀ ε : ℝ, 0 < ε → ε ≤ ε₁ → ∀ m : ℕ, Φ ε m ≤ τ)
+    (h2 : ∀ T : ℝ, Off T ≤ 2 * Nc T)
+    (h1 : ∀ η : ℝ, 0 < η → ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → -Bad T - η * T ≤ I T)
+    (hHol : ∃ KG T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → 0 ≤ Bad T ∧ Bad T ^ 4 ≤ KG * R4 T ^ 2 * P4 T * mE T)
+    (h5 : ∃ K₁ K₂ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T →
+      0 ≤ R4 T ∧ R4 T ≤ K₁ * T ∧ 0 ≤ P4 T ∧ P4 T ≤ K₂ * T)
+    (hcov : ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T →
+      0 ≤ mE T ∧ 0 ≤ h T ∧ h T * L T ≤ H₀ ∧ mE T ≤ h T * Nc T + h T) :
+    ∃ ε₀ : ℝ, 0 < ε₀ ∧ ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → ε₀ * T * L T < Nc T
+
+-- ===== TheoremU.lean
+
+/-- **Theorem U** (PROOF.md), in pplean's zero model, sc T = log T/(2π): 𝒩(T) ≥ c(φ) T log T, unfolded. -/
+def TheoremU (Z : Zeros) : Prop :=
+  ∀ φ : ℝ, 2 / 3 < φ → φ < 1 → ∃ c : ℝ, 0 < c ∧ ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T →
+    c * T * Z.sc T ≤ ((gapSet Z φ T).card : ℝ)
+
+/-- The analytic quantities at fixed Step-0 data (φ, θ, q, b₀, P, f, η; PROOF Step 0), as functions of T. -/
+structure Data where
+  /-- Re ∫_T^{2T} G_T(t)|R_T(t)|² P(V_φ(t)) dt (DPC l.690, 769; Step 3's ∫_ℝ differs by O(e^{−cL²}), l.698) -/
+  I : ℝ → ℝ
+  /-- Re M_T, the Im t = −1 term after the shift (Step 3; DPC Prop 1, l.341–388) -/
+  M : ℝ → ℝ
+  /-- Re 𝓗_T, the hairpin total, a sum over Z_off (Steps 3, 6) -/
+  Hp : ℝ → ℝ
+  /-- Σ_n |c_n|² -/
+  S : ℝ → ℝ
+  /-- ∫_T^{2T} |R_T|⁴ (Step 5a) -/
+  R4 : ℝ → ℝ
+  /-- ∫_T^{2T} |P(V_φ)|⁴ (Step 5c) -/
+  P4 : ℝ → ℝ
+  /-- ∫_{E_T} G_T |R_T|² |P(V_φ)| (Step 7) -/
+  Bad : ℝ → ℝ
+  /-- meas E_T, E_T = {t ∈ [T, 2T] : the window (t − h/2, t + h/2) holds ≥ 2 zeros} (Step 7) -/
+  mE : ℝ → ℝ
+
+/-- Step 3, the exact moment identity (H) (DPC l.335–388 after the shift): ∫ = M_T + 𝓗_T + o(T), real parts. -/
+def Step3 (D : Data) : Prop :=
+  ∀ η : ℝ, 0 < η → ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → |D.I T - (D.M T + D.Hp T)| ≤ η * T
+
+/-- Main term: DPC Prop 1 (l.262–388) and Lemma 6 (l.686–741: the limiting quotient l.689–693; l.695: the
+denominator divided by T tends to a positive constant; l.700: ∫G_T|R_T|² ~ (T/2)Σ|c_n|²) for Step 0's construction
+(l.743–771): Re M_T ≤ −3δ₀(T/2)Σ|c_n|²(1 + o(1)), and Σ|c_n|² ≥ S₀ > 0 (Step 7's δ₁ > 0). -/
+def MainTerm (D : Data) : Prop :=
+  ∃ δ₀ S₀ : ℝ, 0 < δ₀ ∧ 0 < S₀ ∧ ∀ η : ℝ, 0 < η → ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T →
+    S₀ ≤ D.S T ∧ D.M T ≤ -3 * δ₀ * (T / 2) * D.S T * (1 - η)
+
+/-- Step 6 (6a–6f; density N(σ, T) ≪ T^{1−κ(σ−1/2)} log T with Jutila's κ = 1 − δ, Lz l.223–225): for all
+admissible δ, w, r (θ < (1 − δ)E) there are C, K, independent of ε, such that for every c ∈ (0, E/θ): if
+#(Z_off ∩ [T, 2T]) ≤ 2εTL (Step 2's output), then |𝓗_T| ≤ K Φ(ε) T + o(T), L = log T. -/
+def Step6 (Z : Zeros) (β : ℕ → ℝ) (ex lg : ℝ → ℝ) (θ : ℝ) (D : Data) : Prop :=
+  ∀ δ w r : ℝ, 0 < δ → δ < 1 → 1 < w → 1 < r → θ < (1 - δ) * Eexp w r →
+  ∃ (C : ℕ) (K : ℝ), 0 ≤ K ∧ ∀ c : ℝ, 0 < c → c * θ < Eexp w r →
+  ∀ ε : ℝ, 0 < ε → ε < 1 → ∀ η : ℝ, 0 < η → ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T →
+    ((offSet Z β T).card : ℝ) ≤ 2 * ε * T * lg T →
+    ∃ m : ℕ, |D.Hp T| ≤ K * Phi ex lg C θ (1 - δ) (Eexp w r) c ε m * T + η * T
+
+/-- Step 1 (Im V counts all zeros, so Im V ∈ {0, 1} outside E_T, where Re P(V) ≥ 0 by the two-line signs
+l.760–765; DPC l.774): Re ∫_T^{2T} G_T|R_T|²P(V) ≥ −∫_{E_T} G_T|R_T|²|P(V)| − o(T). -/
+def Step1Pos (D : Data) : Prop :=
+  ∀ η : ℝ, 0 < η → ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → -D.Bad T - η * T ≤ D.I T
+
+/-- Step 7, Hölder with exponents (2, 4, 4), G_T bounded (DPC l.776–780):
+(∫_{E_T} G_T|R_T|²|P(V)|)⁴ ≤ KG (∫_T^{2T}|R_T|⁴)² ∫_T^{2T}|P(V)|⁴ meas E_T. -/
+def Holder7 (D : Data) : Prop :=
+  ∃ KG T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → 0 ≤ D.Bad T ∧ D.Bad T ^ 4 ≤ KG * D.R4 T ^ 2 * D.P4 T * D.mE T
+
+/-- Step 5 (5a Montgomery–Vaughan at length T^{2θ} < T; 5b Fujii; 5c M. Riesz + density): ∫|R_T|⁴ ≪ T and
+∫|P(V)|⁴ ≪ T, constants independent of ε. -/
+def Step5 (D : Data) : Prop :=
+  ∃ K₁ K₂ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → 0 ≤ D.R4 T ∧ D.R4 T ≤ K₁ * T ∧ 0 ≤ D.P4 T ∧ D.P4 T ≤ K₂ * T
+
+/-- Step 7, covering (DPC l.774, 782): meas E_T ≤ h𝒩(T) + h with h = 2πφ/log T = φ/sc T (a consecutive pair with
+gap < h covers centres of measure ≤ h; pairs not counted by 𝒩(T) cover only [T, T + h/2) ∪ (2T − h/2, 2T]). -/
+def Covering (Z : Zeros) (φ : ℝ) (D : Data) : Prop :=
+  ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → 0 ≤ D.mE T ∧
+    D.mE T ≤ φ / Z.sc T * ((gapSet Z φ T).card : ℝ) + φ / Z.sc T
+
+/-- The named analytic inputs for one Step-0 construction. -/
+structure Inputs (Z : Zeros) (β : ℕ → ℝ) (ex lg : ℝ → ℝ) (φ θ : ℝ) (D : Data) : Prop where
+  step3 : Step3 D
+  main : MainTerm D
+  step6 : Step6 Z β ex lg θ D
+  step1 : Step1Pos D
+  holder : Holder7 D
+  step5 : Step5 D
+  cover : Covering Z φ D
+
+/-- Step 0: for every (φ, θ) with DPC's sign condition 0 < φθ < 1 < φ(1 + θ) < 2 (l.753) and θ < 1/2 (Step 5),
+DPC's construction (l.743–771) has analytic quantities satisfying the named inputs. -/
+def DPCInputs (Z : Zeros) (β : ℕ → ℝ) (ex lg : ℝ → ℝ) : Prop :=
+  ∀ φ θ : ℝ, 0 < φ → φ < 1 → 0 < θ → θ < 1 / 2 → 0 < φ * θ → φ * θ < 1 → 1 < φ * (1 + θ) →
+    φ * (1 + θ) < 2 → ∃ D : Data, Inputs Z β ex lg φ θ D
+
+/-- **Theorem U** from the named inputs. -/
+theorem theoremU {Z : Zeros} (hZ : Z.Ordered) {β : ℕ → ℝ} (hβ : Reflect Z β) {ex lg : ℝ → ℝ}
+    (hEL : ExpLog ex lg) {tp : ℝ} (htp : 0 < tp) (hsc : ∀ T : ℝ, 0 < T → Z.sc T * tp = lg T)
+    (hin : DPCInputs Z β ex lg) : TheoremU Z
+
+-- ===== DLam.lean
+
+/-- sc T − sc(T/2) is bounded (= log 2/(2π)). -/
+def ScaleHalf (Z : Zeros) : Prop := ∃ k : ℝ, ∀ T : ℝ, 0 < T → Z.sc T ≤ Z.sc (T / 2) + k
+
+/-- Riemann–von Mangoldt, upper half: N(T) ≤ K T log T/(2π) for large T (Lz l.177). -/
+def RvMUp (Z : Zeros) : Prop := ∃ K T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → (Z.N T : ℝ) ≤ K * T * Z.sc T
+
+/-- **Theorem U ⇒ D(λ) > 0** (DPos form) for every λ > 2/3. -/
+theorem dpos_of_U {Z : Zeros} (hZ : Z.Ordered) (hU : TheoremU Z) (hs1 : ScaleToInf Z)
+    (hs2 : ScaleHalf Z) (hR : RvMUp Z) {lam : ℝ} (hlam : 2 / 3 < lam) : DPos Z lam
+
+/-- Theorem U ⇒ 0 < D(λ) (Lamzouri's liminf) for every λ > 2/3. -/
+theorem dlam_pos_of_U {Z : Zeros} (hZ : Z.Ordered) (hU : TheoremU Z) (hs1 : ScaleToInf Z)
+    (hs2 : ScaleHalf Z) (hR : RvMUp Z) {lam : ℝ} (hlam : 2 / 3 < lam) : 0 < Dlam Z lam
+
+/-- **D(λ) > 0 for every λ > 2/3** (Lamzouri's liminf D), from the zero model, ExpLog, Riemann–von Mangoldt's
+upper bound and the named analytic inputs of DPC's method (DPCInputs). -/
+theorem D_pos_two_thirds {Z : Zeros} (hZ : Z.Ordered) {β : ℕ → ℝ} (hβ : Reflect Z β) {ex lg : ℝ → ℝ}
+    (hEL : ExpLog ex lg) {tp : ℝ} (htp : 0 < tp) (hsc : ∀ T : ℝ, 0 < T → Z.sc T * tp = lg T)
+    (hR : RvMUp Z) (hin : DPCInputs Z β ex lg) : ∀ lam : ℝ, 2 / 3 < lam → 0 < Dlam Z lam
+
+-- ===== Fine.lean
+
+/-- Off-line zeros with T ≤ γ ≤ 2T and depth (β − 1/2) log T ≥ a. -/
+noncomputable def deepSet (Z : Zeros) (β : ℕ → ℝ) (lg : ℝ → ℝ) (T : ℝ) (a : ℕ) : Finset ℕ :=
+  (offSet Z β T).filter (fun n => (a : ℝ) ≤ (β n - 1 / 2) * lg T)
+
+/-- The depth class S_a of 6a: off-line zeros with T ≤ γ ≤ 2T and (β − 1/2) log T ∈ [a, a + 1). -/
+noncomputable def classSet (Z : Zeros) (β : ℕ → ℝ) (lg : ℝ → ℝ) (T : ℝ) (a : ℕ) : Finset ℕ :=
+  (offSet Z β T).filter (fun n => (a : ℝ) ≤ (β n - 1 / 2) * lg T ∧ (β n - 1 / 2) * lg T < a + 1)
+
+/-- The zero-density theorem, uniform for σ ≥ 1/2 (Jutila 1983, slope κ = 1 − δ for every δ > 0; Conrey 8/7 − δ;
+as quoted Lz 2611.14486 l.221–230): N(σ, 2T) ≪_δ T^{1−κ(σ−1/2)} log T at σ = 1/2 + a/log T gives
+#{T ≤ γ ≤ 2T, β ≥ 1/2 + a/log T} ≤ C_d T log T e^{−κa}. -/
+def Density (Z : Zeros) (β : ℕ → ℝ) (ex lg : ℝ → ℝ) : Prop :=
+  ∀ δ : ℝ, 0 < δ → δ < 1 → ∃ Cd T₀ : ℝ, 0 < Cd ∧ ∀ T : ℝ, T₀ ≤ T → ∀ a : ℕ,
+    ((deepSet Z β lg T a).card : ℝ) ≤ Cd * T * lg T * ex (-((1 - δ) * a))
+
+/-- Steps 6a–6e at the level of the depth classes S_a: for all w, r > 1 there are C, K and class totals
+Ha T a = ∫|R_T||R*|(1 + |V_L| + 2Ñ)^D dμ_a and A₁ = ∫|R_T|³dμ_a, A₂ = ∫|R*|³dμ_a, A₃ = ∫(1 + |V_L| + 2Ñ)^{3D}dμ_a
+such that, for large T, (6a) |𝓗_T| ≤ Σ_{a≤M(T)} Ha T a + o(T) (each merged cut belongs to the class of its deepest
+zero; zeros outside [T, 2T] give o(1), Step 3), (6e) Ha³ ≤ A₁A₂A₃ (Hölder) and, whenever |S_a| ≤ s T log T,
+A₁ ≤ K T (a+2)^C s^{(1−1/w)/4}, A₂ ≤ K T (a+2)^C e^{3θ(a+1)} s^{(1−1/w)/4}, A₃ ≤ K T (a+2)^C s^{(1−1/w)(1−1/r)}
+(6b–6d: Poisson representations, sparse kernels, Fujii's moments, Lz Lemma DoubleSumZeros l.251–283). -/
+def Step6Classes (Z : Zeros) (β : ℕ → ℝ) (ex lg : ℝ → ℝ) (θ : ℝ) (D : Data) : Prop :=
+  ∀ w r : ℝ, 1 < w → 1 < r → ∃ (C : ℕ) (K : ℝ), 0 ≤ K ∧
+    ∃ (Ha A₁ A₂ A₃ : ℝ → ℕ → ℝ) (Mt : ℝ → ℕ), ∀ η : ℝ, 0 < η → ∃ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T →
+      |D.Hp T| ≤ ∑ a ∈ range (Mt T + 1), Ha T a + η * T ∧
+      ∀ a : ℕ, 0 ≤ A₂ T a ∧ 0 ≤ A₃ T a ∧ Ha T a ^ 3 ≤ A₁ T a * A₂ T a * A₃ T a ∧
+        ∀ s : ℝ, 0 < s → ((classSet Z β lg T a).card : ℝ) ≤ s * T * lg T →
+          A₁ T a ≤ K * T * ((a : ℝ) + 2) ^ C * ex (lg s * ((1 - 1 / w) / 4)) ∧
+          A₂ T a ≤ K * T * ((a : ℝ) + 2) ^ C * (ex θ ^ (a + 1)) ^ 3 * ex (lg s * ((1 - 1 / w) / 4)) ∧
+          A₃ T a ≤ K * T * ((a : ℝ) + 2) ^ C * ex (lg s * ((1 - 1 / w) * (1 - 1 / r)))
+
+/-- **Step 6 from the density theorem and the class bounds** (6a counts, 6e bookkeeping and 6f sum proved). -/
+theorem step6_of_classes (hEL : ExpLog ex lg) {Z : Zeros} {β : ℕ → ℝ} {θ : ℝ} (hθ : 0 ≤ θ) {D : Data}
+    (hden : Density Z β ex lg) (h6c : Step6Classes Z β ex lg θ D) : Step6 Z β ex lg θ D
+
+/-- Step 5a, Montgomery–Vaughan's mean value theorem for R_T² = Σ b_n n^{−it} (length T^{2θ}) with Σ|b_n|² ≤ B
+(Mertens, the T^{η/2}-rough support): ∫|R_T|⁴ ≤ (2T + K T^{2θ}) B, T^{2θ} = e^{2θ log T}. -/
+def MV5a (ex lg : ℝ → ℝ) (θ : ℝ) (D : Data) : Prop :=
+  ∃ Kmv B T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → 0 ≤ D.R4 T ∧ D.R4 T ≤ (2 * T + Kmv * ex (lg T * (2 * θ))) * B
+
+/-- Step 5c: ∫|P(V)|⁴ ≪ T (M. Riesz DPC l.641, Fujii Lz l.242–249, density; 5b–5c). -/
+def Step5c (D : Data) : Prop :=
+  ∃ K₂ T₀ : ℝ, ∀ T : ℝ, T₀ ≤ T → 0 ≤ D.P4 T ∧ D.P4 T ≤ K₂ * T
+
+/-- **Step 5 from Montgomery–Vaughan**: T^{2θ} ≤ T for θ ≤ 1/2, so ∫|R_T|⁴ ≪ T. -/
+theorem step5_of (hEL : ExpLog ex lg) {θ : ℝ} (hθ : θ ≤ 1 / 2) {D : Data} (h5a : MV5a ex lg θ D)
+    (h5c : Step5c D) : Step5 D
+
+/-- The finer named inputs for one Step-0 construction. -/
+structure InputsFine (Z : Zeros) (β : ℕ → ℝ) (ex lg : ℝ → ℝ) (φ θ : ℝ) (D : Data) : Prop where
+  step3 : Step3 D
+  main : MainTerm D
+  step6c : Step6Classes Z β ex lg θ D
+  step1 : Step1Pos D
+  holder : Holder7 D
+  mv5a : MV5a ex lg θ D
+  step5c : Step5c D
+  cover : Covering Z φ D
+
+/-- DPCInputs with Step 6 replaced by the class-level inputs and Step 5a by Montgomery–Vaughan. -/
+def DPCInputsFine (Z : Zeros) (β : ℕ → ℝ) (ex lg : ℝ → ℝ) : Prop :=
+  ∀ φ θ : ℝ, 0 < φ → φ < 1 → 0 < θ → θ < 1 / 2 → 0 < φ * θ → φ * θ < 1 → 1 < φ * (1 + θ) →
+    φ * (1 + θ) < 2 → ∃ D : Data, InputsFine Z β ex lg φ θ D
+
+theorem inputs_of_fine (hEL : ExpLog ex lg) {Z : Zeros} {β : ℕ → ℝ} (hden : Density Z β ex lg)
+    (hin : DPCInputsFine Z β ex lg) : DPCInputs Z β ex lg
+
+/-- **Theorem U** from the finer inputs (density theorem, class bounds, Montgomery–Vaughan). -/
+theorem theoremU_fine {Z : Zeros} (hZ : Z.Ordered) {β : ℕ → ℝ} (hβ : Reflect Z β) (hEL : ExpLog ex lg)
+    {tp : ℝ} (htp : 0 < tp) (hsc : ∀ T : ℝ, 0 < T → Z.sc T * tp = lg T) (hden : Density Z β ex lg)
+    (hin : DPCInputsFine Z β ex lg) : TheoremU Z
+
+/-- **D(λ) > 0 for every λ > 2/3** from the finer inputs. -/
+theorem D_pos_two_thirds_fine {Z : Zeros} (hZ : Z.Ordered) {β : ℕ → ℝ} (hβ : Reflect Z β)
+    (hEL : ExpLog ex lg) {tp : ℝ} (htp : 0 < tp) (hsc : ∀ T : ℝ, 0 < T → Z.sc T * tp = lg T)
+    (hR : RvMUp Z) (hden : Density Z β ex lg) (hin : DPCInputsFine Z β ex lg) :
+    ∀ lam : ℝ, 2 / 3 < lam → 0 < Dlam Z lam
+
+/-- Theorem U along any sequence T_k → ∞ (T → ∞ indexed by ℕ). -/
+theorem theoremU_seq {Z : Zeros} (hU : TheoremU Z) (t : ℕ → ℝ)
+    (ht : ∀ M : ℝ, ∃ k₀ : ℕ, ∀ k : ℕ, k₀ ≤ k → M ≤ t k) {φ : ℝ} (h1 : 2 / 3 < φ) (h2 : φ < 1) :
+    ∃ c : ℝ, 0 < c ∧ ∃ k₀ : ℕ, ∀ k : ℕ, k₀ ≤ k → c * t k * Z.sc (t k) ≤ ((gapSet Z φ (t k)).card : ℝ)
+
+
+=== PROOF.md (excerpts; Steps 4, 6b–6d detail and Step 8 second bullet trimmed) ===
+**Theorem U.** Let 0 < γ₁ ≤ γ₂ ≤ … be the ordinates of the nontrivial zeros of ζ in the upper half-plane, counted with multiplicity (an off-line pair ρ, 1 − ρ̄ gives two equal ordinates), as in Lamzouri 2611.14486 l.177. For every φ ∈ (2/3, 1) there is c(φ) > 0 such that for all large T
+
+  𝒩(T) := #{n : T ≤ γ_n ≤ γ_{n+1} ≤ 2T, γ_{n+1} − γ_n < 2πφ/log T} ≥ c(φ) T log T.
+
+Hence D(λ) > 0 for every λ > 2/3 (D as in 2611.14486 l.183): choose 2/3 < φ < min(λ, 1) and apply Theorem U on [T/2, T]; for large T, 2πφ/log(T/2) < 2πλ/log T, so #{0 < γ_n ≤ T : γ_{n+1} − γ_n ≤ 2πλ/log T} ≥ 𝒩(T/2) ≥ c(φ)(T/2)log(T/2) ≫ N(T). Before: λ ≥ 0.768 (ours, explore40), 0.7851 (ours), 0.7892 (Lamzouri). Under RH: λ > 1/2 (DPC Thm B). The method's exact limit at polynomial length T^θ is 1/(1+θ) (Step 8); θ < 1/2 is forced by the unconditional fourth moment of R_T, not by off-line zeros.
+
+## Notation and fixed parameters
+
+L = log T, h = 2πφ/L. N(t) = #{ρ : 0 < γ ≤ t} (all zeros, multiplicity). Z_off = multiset of zeros with β > 1/2, γ ∈ [T/2, 5T/2]; d_ρ = β − 1/2 ∈ (0, 1/2).
+
+0. Fix φ ∈ (2/3, 1) and θ ∈ (1/φ − 1, 1/2) (nonempty iff φ > 2/3). Then 0 < φθ < 1 < φ(1+θ) < 2. DPC choose 1/φ − 1 < θ < 1 (l.744), and their construction (l.744–772) uses only this sign condition (l.753: p₀(0) = sin(aθ)sin(a(1+θ))/(a∫_0^θ|g|²) < 0, a = πφ, g = e^{−iax} − e^{ia}e^{iax}) and θ < 1 (Lemma 6, l.686–741), so every θ ∈ (1/φ − 1, 1/2) is admissible. It gives a real polynomial q with ∫q²p₀ < 0 (l.755) and a real polynomial b₀ with Im b₀(x + i) = Re(q(x + i)²) for all real x, solved from the highest degree down since Im(x + i)^{m+1} has leading term (m + 1)x^m (l.757–759); so deg b₀ = 2 deg q + 1. (b₀ cannot be a constant: if deg q = d ≥ 1 with leading coefficient c ≠ 0, Re q(x + i)² has leading term c²x^{2d} and does not vanish identically.) Then P = q² + i b₀ satisfies Re P(x) = q(x)² ≥ 0 (q, b₀ real on ℝ), Re P(x + i) = Re q(x + i)² − Im b₀(x + i) = 0 and Re⟨P(A_φ)g, g⟩ < 0 on L²[0, θ] (l.760–765); then smooth f with f = 0 on [θ, ∞) and η > 0 (via DPC Lemma 6, l.686–741) with limiting quotient ≤ −3δ₀ < 0. R_T(t) = Σ_n c_n n^{−it}, c_n = μ(n) n^{−1/2} f(log n/L) ∏_{p|n} ρ_η(log p/L) (DPC l.676–684): n < T^θ, prime factors > T^{η/2}, at most k = ⌊2θ/η⌋ of them. R*(t) := Σ c̄_n n^{it}. G_T as DPC l.686–689. D := deg P. All of this is operator theory, Mertens and Laplace transforms: no RH. These are fixed before ε and T.
+
+## Step 1. Convention: Im V counts all zeros (removes DPC's RH uses at l.164/194 and l.774–785)
+
+Define log ξ(σ+iτ) by horizontal continuation from σ = +∞ (τ not an ordinate) and V_φ(t) = π⁻¹(log ξ(½ + i(t + h/2)) − log ξ(½ + i(t − h/2))). ξ(½+iτ) is real (DPC l.156). As τ crosses an ordinate γ: an on-line zero of multiplicity m adds mπ to arg ξ; an off-line ρ adds 2π (Re(½ − ρ) < 0, the principal arg of ½+iτ−ρ jumps from −π to π) and 1 − ρ̄ adds 0. So arg ξ(½+iτ) = π N(τ) + const and
+
+  Im V_φ(t) = N(t + h/2) − N(t − h/2)  for every t with t ± h/2 not an ordinate.
+
+DPC's Lemma 1 majorant (l.177–194) holds unconditionally: |s − ρ'| ≥ |t − γ'| and |arg| ≤ π per linear factor under this convention, so |log ξ(½+ε+it)| ≤ C T log²T + C Σ_{|γ'−t|≤2}(|log|t−γ'|| + π), giving boundary values and dominated convergence. In the slit domain of Step 3 these boundary values from Re s > 1/2 are the horizontal ones.
+
+## Step 2. Contradiction hypothesis
+
+Suppose 𝒩(T) ≤ εTL. Every off-line or multiple zero with γ ∈ [T, 2T] lies in a run of r ≥ 2 equal ordinates, which contains r − 1 zero gaps; so #{off-line or multiple zeros with γ ∈ [T, 2T]} ≤ 2εTL + O(L). (Lz l.203 uses the same observation.)
+
+## Step 3. Exact moment identity: hairpins
+
+For ρ ∈ Z_off, s ↦ log(s − ρ) has its cut on Im s = γ, Re s < β. In t (s = ½ + i(t ± h/2)) the part in Re s > 1/2 is the vertical slit S^± = {x^± − iy : 0 ≤ y ≤ d_ρ}, x^± = γ ∓ h/2, hanging down from the real axis to the branch point x^± − i d_ρ. Cuts are merged geometrically. All shifted cuts at the same real point x are one cut, including oppositely signed ones: if γ₂ − γ₁ = h, the S⁻ of ρ₁ (at γ₁ + h/2) and the S⁺ of ρ₂ (at γ₂ − h/2) coincide. Across the merged cut at x − iy the jump of V (right minus left) is J_x(y) = 2i(m₊(x, y) − m₋(x, y)), with m_±(x, y) = #{off-line zeros with ordinate x ± h/2 and depth > y} (one zero: ±2i). P is applied to this total signed jump, never to separate increments: for P(w) = w² and equal depths the true jump is 0, while separate increments would give [(w + 2i)² − w²] + [(w − 2i)² − w²] = −8. The cut at x has depth max{d : contributing zeros}. Around each branch point (a zero's tip, where m_± changes), circles of radius r carry O(r|log r|^D) → 0 and contribute nothing. Choose a = T/2 + O(1) and b = 5T/2 + O(1) at distance ≥ c/L from every shifted ordinate γ ± h/2. This is possible because N(t + 1) − N(t) ≪ log t (unconditional), so each unit interval has a gap ≫ 1/L between shifted ordinates. On the sides Re t = a, b, then, |V| ≤ T^{O(1)}. V is analytic in the rectangle [a, b] × [−1, 0] minus the merged cuts (as DPC l.335–341). Cauchy's theorem on this simply connected domain (orientation checked numerically below), for F = G_T R_T R* P(V):
+
+  (H) ∫_a^b F(x)dx = ∫_{a−i}^{b−i} F dt + ∫_{b−i}^{b} F dt − ∫_{a−i}^{a} F dt − i Σ_{cut points x} ∫_0^{depth(x)} (F_R − F_L)(x − iy) dy,
+
+F_R − F_L = G_T R_T R* [P(V_L + J_x(y)) − P(V_L)] (the total signed jump). The sides are O(T^{O(1)} e^{−cL²}) (DPC l.335–341, Step 1 majorant). On Im t = −1 (Re s = 3/2) V = G + π⁻¹Σβ(k)k^{−it} whatever the zeros are, and everything in DPC l.341–388 (Prop 1) and l.698–741 (Lemma 6) after the first contour shift uses only the Euler series, the gamma factor (Stirling) and exponentials. Hence, unconditionally,
+
+  ∫_ℝ G_T|R_T|² P(V) dx = M_T + 𝓗_T + o(T),  lim_{η↓0} lim_T M_T / ∫G_T|R_T|² = ⟨P(A_φ)f, f⟩/‖f‖²,
+
+with ∫G_T|R_T|² ~ (T/2)Σ|c_n|² (DPC l.700–702), and 𝓗_T = −iΣ_slits∫(F_R − F_L)dy, a sum over Z_off. Zeros of Z_off with γ ∉ [T, 2T] have G_T ≤ e^{−L²/32} on their slits, and |R_T R*| ≤ T^{2θ}, |V| ≤ T^{O(1)} up to integrable log singularities, so they contribute o(1).
+
+## Step 5. Unconditional absolute moments (replace DPC Lemma 5, l.607–671)
+
+5a. ∫_{T/2}^{5T/2}|R_T(x + iη')|⁴ dx ≪_η T e^{4θ|η'|L} for |η'| ≤ 1, in particular ∫_T^{2T}|R_T|⁴ ≪ T and ∫|R*(x − iY)|⁴ ≪ T e^{4θYL}: R_T² = Σ b_n n^{−it} has length T^{2θ} < T, so by Montgomery–Vaughan ∫_{T/2}^{5T/2}|R_T²|² = (2T + O(T^{2θ}))Σ|b_n|²n^{±2η'}; n is T^{η/2}-rough with ≤ 2k prime factors, exponents ≤ 2, so |b_n| ≤ 3^{2k}‖f‖²_∞ n^{−1/2} and Σ|b_n|² ≤ 3^{4k}‖f‖⁴_∞ ∏_{T^{η/2}<p≤T^θ}(1 + 1/p + 1/p²) ≪_η 1 (Mertens). This is the only place θ < 1/2 is needed besides Step 6; DPC's prime-sum route (l.643–671) is not used.
+5b. ∫_{T/2}^{5T/2}(N(t+u) − N(t))^m dt ≪_m T for 0 ≤ u ≤ 100/L (Fujii, as quoted Lz l.242–249, all zeros), hence ∫|Im V|^m ≪ T. Longer windows (length ℓ ≤ 1) by Minkowski over ⌈ℓL⌉ pieces: ≪ T(1 + ℓL)^m.
+5c. ∫_T^{2T}|Re V|^m ≪ T for every m ≥ 2 (m = 1 by Cauchy–Schwarz; M. Riesz needs 1 < m < ∞). Pairing the Hadamard factors as DPC l.633–641 (far zeros O(1), unconditional), and using log|½ + iτ − ρ'| = (P_{d'} * log|·|)(τ − γ') (P_d the Poisson kernel, d' = |β' − ½|), πRe V(t) = π H[F̃_T](t) + O(1), H the Hilbert transform, F̃_T(u) = Σ_{γ'∈[T/2,5T/2]} (P_{d'} * 1_{[−h/2,h/2]})(u − γ'): the sharp count for on-line zeros, a Poisson-smeared count for off-line ones. M. Riesz (DPC l.641): ‖Re V‖_m ≪ ‖F̃_T‖_m + T^{1/m}. On-line part: 5b. Off-line part: P_d * 1_{[−h/2,h/2]}(x) ≤ C(h/D)D²/(x² + D²), D = max(d, h); split Z_off dyadically, D ∈ [D_j, 2D_j), D_j = 2^j h (bin j = 0 holds all d < 2h; there use the total zero count, no density). With K_j = Poisson kernel at scale D_j (‖K_j‖₁ = 1) and n_j(x) = #{bin-j zeros within D_j of x}, the bin's contribution is F_j ≤ C(h/D_j)(K_j * n_j), so by Young ‖F_j‖_m ≤ C2^{−j}‖n_j‖_m (this handles the Poisson tails). ‖n_j‖_m^m ≤ (∫n_j)^{1/2}(∫n_j^{2m−1})^{1/2} ≪ (2^j e^{−c2^j}T)^{1/2}(T 2^{j(2m−1)})^{1/2}, using 5b and the uniform density bound in the form N(½ + δ, 3T) ≪ TL·e^{−cδL} (any slope κ > 0, e.g. Selberg's; zeros left of the line by the symmetry ρ ↦ 1 − ρ̄); hence Σ_j ‖F_j‖_m ≪ T^{1/m}. So ∫|V|^m ≪ T and ∫|P(V)|⁴ ≪ T.
+
+## Step 6. The hairpins are small: |𝓗_T| ≤ Φ(ε)T + o(T), Φ(ε) → 0 as ε → 0
+
+Input (density, uniform in σ ≥ ½): N(σ, T) ≪ T^{1 − κ(σ−½)} log T with κ = 1 − δ for every δ > 0 (Jutila 1983, as quoted Lz l.223–225), or κ = 8/7 − δ (Conrey, proved in Baluyot's thesis; audited, Riemann/Deep/Baluyot). Needed: θ < κ/2.
+
+6a. S_a := {ρ ∈ Z_off : γ ∈ [T,2T], d_ρL ∈ [a, a+1)}, a = 0, 1, …; Y_a = (a+1)/L. By Step 2 and density, |S_a| ≤ σ_a TL with σ_a := min(2ε + o(1), C e^{−κa}). dμ_a := Σ_{ρ∈S_a} δ_ρ ⊗ 1_{(0,d_ρ)}(y)dy (each sign ± separately, at x_ρ^± = γ_ρ ∓ h/2). Every merged cut point x of Step 3 with depth in [a/L, (a+1)/L) is the x_ρ^± of its deepest contributing zero ρ ∈ S_a. On it |J_x(y)| ≤ 2Ñ_ρ (Ñ_ρ as in 6c), and |P(w + J) − P(w)| ≤ C_P|J|(1 + |w| + |J|)^{D−1}. |G_T(x − iy)| ≤ e^{1/(2H²)}G_T(x) ≤ 2. So, keeping Ñ_ρ inside the polynomial factor, 𝓗_{T,a} ≪ ∫ |R_T||R*|·Ñ_ρ(1 + |V_L| + 2Ñ_ρ)^{D−1} dμ_a ≤ ∫ |R_T||R*|(1 + |V_L| + 2Ñ_ρ)^{D} dμ_a. Cut points whose deepest zero lies outside [T, 2T] carry G_T ≤ e^{−L²/32} (Step 3).
+6b. Representations (exact): R_T(x − iy) = (P_y * R_T)(x) (frequencies −log n ≤ 0); R*(x − iy) = (P_{Y−y} * R*_Y)(x), R*_Y(u) := R*(u − iY), for 0 ≤ y ≤ Y = Y_a (frequencies log n ≥ 0); V_L = V̂ + Δ_L, where V̂ is the V-function of ξ̂ = ξ·∏_{ρ∈Z_off}(s − 1 + ρ̄)/(s − ρ): zero-free in Re s > ½ at heights [...]
+6c. Sparse kernels [...]
+6d. Δ moments: ∫_0^{d_ρ}log⁺(h/|x_ρ − iy − w|)^m dy ≤ C_m h for every w (one-dimensional) [...]
+6e. Hölder with exponents (3, 3, 3):
+  A₁ = ∫|R_T|³dμ_a ≤ ∫|R_T|³K_a ≤ ‖R_T‖₄³‖K_a‖₄ ≪ T (a+2) σ_a^{(1−1/w)/4};
+  A₂ = ∫|R*|³dμ_a ≤ ‖R*_{Y_a}‖₄³‖K'_a‖₄ ≪ T e^{3θ(a+1)}(a+2) σ_a^{(1−1/w)/4};
+  A₃ = ∫(1 + |V_L| + 2Ñ_ρ)^{3D}dμ_a ≤ C[μ_a(total) + ∫(P_y * v)^{3D}dμ_a + ∫|Δ_L|^{3D}dμ_a + ∫Ñ_ρ^{3D}dμ_a] ≪ (a+1)σ_aT + ‖v^{3D}‖_{L^r(I)}‖K_a‖_{r'} + (6d) ≪ T(a+2)^C σ_a^{(1−1/w)(1−1/r)}. Here μ_a(total) = Σ_{S_a}d_ρ ≤ Y_a|S_a|, and Jensen uses mass ≤ 1 of the box kernel;
+  𝓗_{T,a} ≤ (A₁A₂A₃)^{1/3} ≪ T (a+2)^C e^{θ(a+1)} σ_a^{E}, E = (1−1/w)(1/2 − 1/(3r)) ↑ 1/2.
+6f. Σ_a 𝓗_{T,a} ≪ T[(A+2)^C e^{θ(A+1)}(3ε)^E + Σ_{a>A}(a+2)^C e^{θ(a+1) − κEa}] =: Φ(ε)T. Order of choices. First κ: fix δ, κ = 1 − δ (Jutila). Then E: fix w, r so that κE > θ, possible since θ < 1/2 and E ↑ 1/2. Then A = c log(1/ε) with 0 < c < E/θ. The first term is ≪ (log(1/ε) + 2)^C e^{θ}ε^{E − cθ} → 0 because cθ < E. The tail is ≪ (A + 2)^C e^{−(κE − θ)A} → 0. So Φ(ε) → 0 as ε → 0; then fix ε; then T → ∞. All implied constants here and in Step 5 depend on φ, θ, f, P, η, δ, w, r only, not on ε.
+
+## Step 7. Conclusion (DPC l.766–787 with Steps 1–6)
+
+Re ∫G_T|R_T|²P(V) ≤ −3δ₀(T/2)Σ|c_n|²·(1 + o(1)) + Φ(ε)T + o(T) ≤ −δ₁T once ε ≤ ε₁ (δ₁ > 0 fixed). Outside E_T (windows with ≥ 2 zeros) Im V ∈ {0, 1} (Step 1), so Re P(V) ≥ 0; Hölder with 5a and 5c: δ₁T ≤ (∫|R_T|⁴)^{1/2}(∫|P(V)|⁴)^{1/4} meas(E_T)^{1/4}, so meas(E_T) ≥ c₂T with c₂ independent of ε. Each consecutive pair with gap < h covers centres of measure ≤ h: 𝒩(T) ≥ c₂T/h − O(L) = (c₂/2πφ)TL − O(L). With ε₀ = min(ε₁, c₂/(4πφ)), 𝒩(T) ≤ ε₀TL is impossible for large T. So 𝒩(T) > ε₀ T L. ∎
+
+## Step 8. Exactness and what blocks θ > 1/2
+
+- On L²[0, θ], Im e^{πA_φ} = sin a·I + a cos a|1⟩⟨1| + a sin a·S after F = e^{−iax}f (DPCAudit D7), S F(x) = i∫_0^θ sgn(x−y)F(y)dy with eigenvalues 2θ/((2k+1)π); I + aS > 0 for φθ < 1/2, and ⟨1, (I + aS)⁻¹1⟩ = tan(aθ)/a (Σ_{m odd}1/(b + mπ) = −½tan(b/2)). So Im e^{πA_φ} ⋡ 0 iff −cot a·tan(aθ) > 1 iff φ(1+θ) > 1. The method with length T^θ gives exactly λ > 1/(1+θ): DPC's g is optimal (threshold.py: sign change of λ_min at 1/(1+θ) for θ = 0.45, 0.5, 4/7, 1; the identity to 1e−6).
+
+## Inputs
+
+| Input | Source | Used in |
+|---|---|---|
+| DPC Prop 1 after the shift, Lemmas 2, 3, 6, proof of Thm B | 2610.28527 l.262–388, 198–229, 494–546, 686–741, 743–787 (audited correct, Riemann/Deep/DPCAudit) | Steps 0, 3, 7 |
+| Hadamard product, Stirling, N(t+1) − N(t) ≪ log t | DPC l.170–180 | Steps 1, 3, 5c, 6b |
+| Montgomery–Vaughan mean value theorem | standard | 5a |
+| Fujii: ∫(N(t+u) − N(t))^{2k} ≪ T, u ≤ 100/L, all zeros | Lz l.242–249 (Fujii TAMS 1974, 1981) | 5b, 5c, 6c |
+| Lz Lemma DoubleSumZeros argument | Lz l.251–283 | 6c, 6d |
+| M. Riesz L^m bound for H | DPC l.641 | 5c |
+| Density N(σ,T) ≪ T^{1−κ(σ−½)}log T uniformly, κ = 1 − δ (Jutila) or 8/7 − δ (Conrey/Baluyot) | Lz l.223–225 | 6a, 6f (5c needs only κ > 0) |
+| Poisson/strip representations, Jensen | standard | 6b, 6c |
+
+## Repairs (orchestrator 33 review)
+
+Three reviewers: A (Steps 0–3, 7) GAP, repairable; B (Step 5) CORRECT; C (Steps 4, 6) GAP, repairable. All three: SIGNIFICANT if the repairs close. No fatal error.
+
+1. Step 0: b₀ is a real polynomial of degree 2 deg q + 1 with Im b₀(x + i) = Re(q(x + i)²) (DPC l.757–759). It is not a constant, since Re q(x + i)² has leading term c²x^{2d}. P = q² + i b₀ has the two-line signs of DPC l.760–765. DPC take θ < 1 (l.744), and the construction uses only 0 < φθ < 1 < φ(1+θ) < 2 (l.753).
+2. Step 3: all coincident shifted cuts are merged, including oppositely signed ones (γ₂ − γ₁ = h). P is applied to the total jump J_x(y) = 2i(m₊ − m₋). Tip circles contribute 0. The sides a, b are placed ≥ c/L from all shifted ordinates.
+3. Step 5a: the Montgomery–Vaughan main term on [T/2, 5T/2] is 2T.
+4. Step 6b: box sides moved to points ≥ c/L from all shifted ordinates, so V̂ is uniformly T^{O(1)} on them, with side kernel ≪ e^{−πT/8}. v is truncated to I = [7T/8 − 1, 17T/8 + 1]; A₃ is rewritten accordingly.
+5. Steps 6a and 6d: Ñ_ρ (now counting zeros within 4Y_a + h) is kept inside the polynomial factor, |P(w + J) − P(w)| ≤ C|J|(1 + |w| + |J|)^{D−1} with |J| ≤ 2Ñ_ρ. The depth bins B_{a'} cover all of Z_off. The Ψ moments are proved via h-cells, Hölder, Young (Σ_j n_j(J * b_{a'})_j^p ≪ TL e^{−κa'/4}) and Minkowski in a', followed by Hölder on S_a.
+6. Step 6f: order of choices made explicit: κ, then E with κE > θ, then A = c log(1/ε) with 0 < c < E/θ, then ε, then T.
+7. Theorem U ⇒ D(λ) > 0: take 2/3 < φ < min(λ, 1) and apply U on [T/2, T].
+8. Step 4: marked as a continuous-mean heuristic. The rigorous aggregate factor e^{θ(a+1)} comes from 6c–6e, with no independence assumption.
+
+RH relevance: N8 (zero spacing).
+
+=== DPC 2610.28527v2 TeX, lines 686–702, 743–756, 766–787 (line-numbered) ===
+686 \begin{lemma}\label{lem:proportion-rough-limit}
+687 For each fixed polynomial $P$ and $f$ as in \eqref{eq:proportion-R-moments} with $\int_0^\theta|f(x)|^2dx>0$,
+688 \begin{equation}\label{eq:proportion-rough-limit}
+689 \lim_{\eta\downarrow0}\lim_{T\to\infty}
+690 \frac{\int_T^{2T}G_T(t)|R_T(t)|^2P(V_\phi(t))dt}
+691 {\int_T^{2T}G_T(t)|R_T(t)|^2dt}
+692 =\frac{\int_0^\theta(P(A_\phi)f)(x)\overline{f(x)}dx}
+693 {\int_0^\theta|f(x)|^2dx}.
+694 \end{equation}
+695 For every sufficiently small fixed $\eta$, the denominator divided by $T$ tends to a positive constant.
+696 \end{lemma}
+697 \begin{proof}
+698 Average the weight in Proposition~\ref{prop:finite-moments} over centres $u\in[5T/4,7T/4]$, as in \eqref{eq:proportion-averaged-Gaussian}. The estimates there are uniform in $u$. The integrals outside $[T,2T]$ are $O(e^{-cL^2})$, since $u$ is at least $T/4$ from either endpoint. The lower bound for $|\log(kn/n')|$, when $kn\ne n'$, is unchanged, and the completion factor contributes $i\phi+O(L^{-1
+699 $$
+700 \int_T^{2T}G_T(t)|R_T(t)|^2dt\sim\frac T2\sum_n|c_n|^2.
+701 $$
+702 The length $T^\theta<T/L^{20}$ is allowed for large $T$.
+743 \begin{proof}[Proof of Theorem~\ref{thm:positive-proportion}]
+744 Choose $1/2<\phi<\min(1,1/2+\varepsilon)$ and $1/\phi-1<\theta<1$. We shall find a polynomial whose mean has negative real part, but whose real part is nonnegative whenever the interval contains at most one zero.
+745 
+746 Formula \eqref{eq:half-exponential} holds on $[0,\theta]$, since its integrals use only points between zero and $x$. Set $a=\pi\phi$ and $g(x)=e^{-iax}-e^{ia}e^{iax}$. The same factorial bound gives spectrum $\{i\phi\}$. By Lemma~\ref{lem:two-lines}, the moments
+747 $\int_0^\theta(A_\phi^jg)(x)\overline{g(x)}dx/\int_0^\theta|g(x)|^2dx$
+748 have continuous real densities $p_0,p_1$ on the two lines, whose absolute values have finite exponential moments at every rate less than $\pi$. The calculation in \eqref{eq:small-density} gives
+749 $$
+750 p_0(0)=\frac{\sin(a\theta)\sin(a(1+\theta))}
+751 {a\int_0^\theta|g(x)|^2dx}<0.
+752 $$
+753 The sign follows from $0<\phi\theta<1<\phi(1+\theta)<2$.
+754 
+755 There is a real polynomial $q$ such that $\int q(x)^2p_0(x)dx<0$. To see this, polynomials are dense in $L^2(|p_0(x)|dx)$. A function orthogonal to every polynomial, multiplied by $|p_0|dx$, has an exponential moment by Cauchy's inequality. Its Fourier transform is analytic in a strip and all its derivatives vanish at zero, so uniqueness of Fourier transforms implies that the function is zero. App
+756 
+766 
+767 Approximate $g$ in $L^2([0,\theta])$ by a smooth, compactly supported $f$ vanishing for $x\ge\theta$. Boundedness of $P(A_\phi)$ preserves the last inequality in \eqref{eq:proportion-polynomial-signs} for sufficiently close $f$. By Lemma~\ref{lem:proportion-rough-limit}, choose $\eta>0$ small enough that the limiting quotient is negative. Its denominator is asymptotic to a positive multiple of $T$
+768 $$
+769 \operatorname{Re}\int_T^{2T}G_T(t)|R_T(t)|^2P(V_\phi(t))dt
+770 \le-\delta T.
+771 $$
+772 We fix $\phi,\theta,P,f,\eta$ in this order before letting $T\to\infty$.
+773 
+774 Let $E_T$ be the set of $t\in[T,2T]$ whose interval $(t-h/2,t+h/2)$ contains at least two ordinates, counted with multiplicity. Outside $E_T$, the imaginary part of $V_\phi$ is zero or one, so by \eqref{eq:proportion-polynomial-signs}, we have $\operatorname{Re}P(V_\phi(t))\ge0$. By H\"older's inequality, Lemma~\ref{lem:proportion-absolute-moments}, and $G_T\le1$,
+775 $$
+776 \delta T\le\int_{E_T}G_T|R_T|^2|P(V_\phi)|dt
+777 \le\left(\int_T^{2T}|R_T|^4dt\right)^{1/2}
+778 \left(\int_T^{2T}|P(V_\phi)|^4dt\right)^{1/4}
+779 \operatorname{meas}(E_T)^{1/4}
+780 \ll T^{3/4}\operatorname{meas}(E_T)^{1/4}.
+781 $$
+782 Thus $\operatorname{meas}(E_T)\gg T$. Each such interval contains a consecutive pair, and the centres of intervals containing a fixed pair form a set of measure at most $h$. Hence there are $\gg T/h\gg T\log T$ spacings shorter than $h$. By the unit-interval zero count, requiring both ordinates in $[T,2T]$ removes only $O(\log T)$ pairs. For the remaining pairs,
+783 $$
+784 \frac{(\gamma_{n+1}-\gamma_n)\log\gamma_n}{2\pi}
+785 <\phi\frac{\log(2T)}{\log T}<\frac12+\varepsilon
+786 $$
+787 for large $T$. This proves the theorem.

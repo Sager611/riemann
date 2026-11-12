@@ -1,0 +1,11 @@
+FAITHFUL
+
+- [minor] **Scope:** faithful as a conditional formalization of the supplied argument. `DPCInputs`/`DPCInputsFine` remain assumptions; no unconditional instantiation for ζ is supplied. This matches the stated design.
+- [minor] **`Step3`, `MainTerm`:** faithful real-part consequences. The positive lower bound on `S` follows from the positive denominator limit and its asymptotic `(T/2)S`. The `1 − η` formulation correctly handles the negative main term.
+- [minor] **`Step6`, `Step6Classes`:** match the stated class estimates, exponent bookkeeping, and order of choices. Constants precede ε; their independence from the cutoff coefficient `c` is compatible with the displayed summation argument. The omitted analytic details remain unverified here.
+- [minor] **`Step1Pos`, `Holder7`, `Step5`, `MV5a`, `Step5c`:** faithful inequalities. Restricting the Montgomery–Vaughan bound from the length-`2T` interval to `[T,2T]` is valid. Missing positivity requirements on existential constants weaken assumptions, not strengthen them.
+- [minor] **`Covering`:** the sharper additive `h` is valid: centres involving a pair not wholly inside `[T,2T]` occupy boundary strips of total length at most `h`. **`Reflect`** is faithful; its partner is automatically distinct when `β n ≠ 1/2`.
+- [minor] **`Density`, `RvMUp`:** faithful consequences of the quoted uniform density estimate and Riemann–von Mangoldt. The substitution `σ = 1/2 + a/log T` gives the stated exponential decay, with fixed factors absorbed into `Cd`.
+- [minor] **`ExpLog`, `hsc`:** satisfied by `Real.exp`, `Real.log`, and `tp = 2π`. They deliberately do not uniquely specify that normalization; the intended specialization must supply it.
+- [minor] **`TheoremU`, `gapSet`:** faithful under `Zeros.Ordered` and the intended scale. Eventual scale positivity makes the multiplied strict gap inequality equivalent to the original one; the factor `2π` in the lower bound is absorbed into the existential constant.
+- [minor] **`D_pos_two_thirds(_fine)`:** genuinely conclude positivity of the supplied **liminf** `Dlam`, not merely a subsequential proportion. The `[T/2,T]` transfer and margin `φ < λ` preserve the claimed threshold. No additional statement-level obstruction or vacuity is apparent.

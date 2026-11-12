@@ -1,0 +1,41 @@
+14:01:56 FinSum rc=0 52s footprint=255MiB memcap: peak 195 MB rc=0
+14:02:22 Model rc=0 26s footprint=264MiB memcap: peak 170 MB rc=0
+14:02:40 Liminf rc=0 18s footprint=251MiB memcap: peak 236 MB rc=0
+14:03:07 Params rc=0 27s footprint=266MiB memcap: peak 248 MB rc=0
+14:03:24 Gaps rc=0 17s footprint=254MiB memcap: peak 245 MB rc=0
+14:03:50 Tail rc=0 26s footprint=279MiB memcap: peak 268 MB rc=0
+14:04:15 Phi rc=0 25s footprint=265MiB memcap: peak 251 MB rc=0
+14:04:32 Step7 rc=0 17s footprint=272MiB memcap: peak 241 MB rc=0
+14:04:49 TheoremU rc=0 17s footprint=265MiB memcap: peak 244 MB rc=0
+14:05:16 DLam rc=0 27s footprint=279MiB memcap: peak 257 MB rc=0
+14:05:33 Hairpin rc=0 17s footprint=271MiB memcap: peak 0 MB rc=0
+14:05:59 Fine rc=0 26s footprint=270MiB memcap: peak 208 MB rc=0
+14:06:08 Check rc=0 9s footprint=248MiB memcap: peak 204 MB rc=0
+'DPCLean.card_shared_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.card_exc_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.card_off_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.step0_nonempty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.step0_signs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.step8_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.step0_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.step8_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.step8_above' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.exp_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.holder_bookkeeping' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.exists_params' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.polygeom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.tail_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.first_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.Phi_small' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.step7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.theoremU' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.dpos_of_U' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.dlam_pos_of_U' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.D_pos_two_thirds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.hairpin_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.step6_of_classes' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.step5_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.inputs_of_fine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.theoremU_fine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.D_pos_two_thirds_fine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DPCLean.theoremU_seq' depends on axioms: [propext, Classical.choice, Quot.sound]
