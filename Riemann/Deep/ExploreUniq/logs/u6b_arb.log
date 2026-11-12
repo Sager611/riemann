@@ -1,0 +1,5 @@
+{1}+primes   M=1000  eta^2 in [0.0282590219210 +/- 2.56e-14]   (2.7s, rss 191 MB)
+done 2.7s
+        3.39 real         2.68 user         0.29 sys
+           200572928  maximum resident set size
+            14696928  peak memory footprint

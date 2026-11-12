@@ -1,0 +1,11 @@
+N\{1}        M=   1  eta^2 in [0.259773493041 +/- 1.01e-13]   (0.0s, rss 27 MB)
+N\{1}        M=  60  eta^2 in [0.264468456754 +/- 2.88e-13]   (0.1s, rss 33 MB)
+N\{2}        M= 120  eta^2 in [0.0708870663979 +/- 3.12e-14]   (0.4s, rss 46 MB)
+odd          M= 240  eta^2 in [0.0979309483594 +/- 9.60e-15]   (0.5s, rss 59 MB)
+{1}+primes   M= 300  eta^2 in [0.0279182892913 +/- 4.39e-14]   (0.2s, rss 60 MB)
+{1}+primes   M= 600  eta^2 in [0.0281619701129 +/- 3.35e-15]   (0.9s, rss 97 MB)
+N\{101}      M= 101  eta^2 in [4.90096660383e-5 +/- 3.64e-17]   (0.2s, rss 97 MB)
+done 2.3s
+        3.19 real         2.35 user         0.31 sys
+           101744640  maximum resident set size
+            15450616  peak memory footprint
