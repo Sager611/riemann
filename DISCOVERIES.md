@@ -12,6 +12,7 @@ See [RECORDS.md](RECORDS.md) (constants, ranges, exponents, proportions), [REFUT
 - (N8, N13) Jerby's Gram-point repulsion conjecture (|Z′(g_n)| > 4|Z(g_n)| at isolated bad Gram points) is false: certified counterexamples at n = 1,565,734,083 (μ = 3.968), 2,565,007,238, 3,315,629,581. [details](discoveries/jerby-repulsion.md)
 - (N3) The Li-coefficient remainder: mean square N^{3/2}√log N under RH, Ω((n log n)^{1/4}) unconditionally, mean 7/4; RH ⟺ Σ m^δ y_m² < ∞ for some δ < 1/2. [details](discoveries/li-remainder.md)
 - (N8) Lamzouri's small-gap criterion has a floor: it can never prove a positive proportion of gaps ≤ λ for λ ≤ 0.775 (certified LP dual); our record 0.7851 sits 0.0101 above. [details](discoveries/small-gap-floor.md)
+- (N8) A hard-core inequality on consecutive gaps crosses that floor: summed along the gap-free zero set, it proves a positive proportion of gaps ≤ 0.768, unconditionally. [details](discoveries/small-gap-hardcore.md)
 - (N8, N12) The one-piece Levinson–Conrey method can never show more than 7.005633% of any GL(2) L-function's zeros on the line; our record sits 10⁻⁷ below. [details](discoveries/gl2-levinson-ceiling.md)
 
 ## Side results (off the RH tree)
