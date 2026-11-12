@@ -1,0 +1,8 @@
+indicator min slack/N^2 (37): 0.0  min slack/N Lamzouri: 0.0  min slack/N (33-weak): 0.0  max |Im Q|: 1.0174971976084635e-10
+cosine min slack/N^2 (37): -4.440892098500626e-16  min slack/N Lamzouri: -4.440892098500626e-16  min slack/N (33-weak): -4.440892098500626e-16  max |Im Q|: 1.7462298274040222e-10
+indicator targeted {x0, z, zbar}: min slack (37) = 1.6041421400103673e-05 at (a, y, Q) = (np.float64(5.69), 0.001, np.float64(5.0000080207107))
+cosine targeted {x0, z, zbar}: min slack (37) = 1.4329195378692816e-05 at (a, y, Q) = (np.float64(3.81), 0.001, np.float64(5.000007164597689))
+       34.45 real        26.82 user         0.65 sys
+            39190528  maximum resident set size
+            19300880  peak memory footprint
+memcap: peak 18 MB rc=0

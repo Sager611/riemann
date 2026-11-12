@@ -1,0 +1,12 @@
+nu 3/25 best R 177/20 kappa [0.08447790796974840320324474 +/- 2.97e-27] c [3302.28692320443 +/- 2.44e-12]
+k*(1/2) ~ 0.0766235550685757017; kappa > k*(1/2): True
+nu < (3*theta-1)/4 for theta>1/2 needs nu <= 1/8: True
+memcap: peak 14 MB rc=0
+nu 1249/10000 best R 173/20 kappa [0.08716133097499533713385541 +/- 2.30e-27] c [2686.66113276698 +/- 3.41e-12]
+k*(1/2) ~ 0.0766235550685757017; kappa > k*(1/2): True
+nu < (3*theta-1)/4 for theta>1/2 needs nu <= 1/8: True
+memcap: peak 14 MB rc=0
+nu 11/100 best R 46/5 kappa [0.07848810342256984397213318 +/- 2.71e-28] c [4807.38928959488 +/- 3.55e-12]
+k*(1/2) ~ 0.0766235550685757017; kappa > k*(1/2): True
+nu < (3*theta-1)/4 for theta>1/2 needs nu <= 1/8: True
+memcap: peak 14 MB rc=0
