@@ -1,0 +1,27 @@
+primes 5761455 time 4.6
+psi(1e8) = 99998242.796627  (theta-check: psi/N0 = 0.99998243)
+L5    small(p<=1000, phase max)=0.67772256  med=0.02186261  tail=0.00332140 (int 0.00316267, g nonincr from N0: True)  Cz_est=0.70290657  Table2 Cz<0.70360002  diff=6.93e-04
+L20   small(p<=1000, phase max)=1.33859078  med=0.12789597  tail=0.00021807 (int 0.00020528, g nonincr from N0: True)  Cz_est=1.46670482  Table2 Cz<1.46807534  diff=1.37e-03
+L60   small(p<=1000, phase max)=1.65306409  med=0.44267771  tail=0.00680765 (int 0.00645465, g nonincr from N0: True)  Cz_est=2.10254945  Table2 Cz<2.10426949  diff=1.72e-03
+L150  small(p<=1000, phase max)=1.73003310  med=0.48276806  tail=0.04106824 (int 0.03938224, g nonincr from N0: True)  Cz_est=2.25386939  Table2 Cz<2.25578346  diff=1.91e-03
+C400  small(p<=1000, phase max)=2.01403435  med=1.99514088  tail=0.45090022 (int 0.43100777, g nonincr from N0: True)  Cz_est=4.46007545  Table2 Cz<4.46374163  diff=3.67e-03
+D6000 small(p<=1000, phase max)=2.02649352  med=2.07226961  tail=0.48693797 (int 0.46548256, g nonincr from N0: True)  Cz_est=4.58570109  Table2 Cz<4.58951035  diff=3.81e-03
+memcap: peak 214 MB rc=0
+       47.07 real        18.82 user        18.56 sys
+           226770944  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               65242  page reclaims
+                1842  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  27  signals received
+                 284  voluntary context switches
+              129180  involuntary context switches
+            86168519  instructions retired
+            83440750  cycles elapsed
+             2244944  peak memory footprint

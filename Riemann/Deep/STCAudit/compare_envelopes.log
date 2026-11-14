@@ -1,0 +1,10 @@
+Ismail_min - CG_env over L in [1, 460.5]: min 0.4723 at L=1.000 (T=e^L), max 9.9555 at L=460.517
+T=2.72  CG |S| <= 1.0458   Ismail |S| <= 1.5180
+T=1e+03  CG |S| <= 2.0336   Ismail |S| <= 2.6413
+T=3.06e+10  CG |S| <= 3.8992   Ismail |S| <= 5.2563
+T=3e+12  CG |S| <= 4.3954   Ismail |S| <= 5.9143
+T=1e+20  CG |S| <= 6.2702   Ismail |S| <= 8.2075
+T=1e+40  CG |S| <= 10.6710   Ismail |S| <= 13.6774
+T=1e+100  CG |S| <= 23.6259   Ismail |S| <= 28.5727
+T=1e+200  CG |S| <= 42.9968   Ismail |S| <= 52.9523
+memcap: peak 0 MB rc=0

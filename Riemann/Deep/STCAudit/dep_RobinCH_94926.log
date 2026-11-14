@@ -1,0 +1,22 @@
+certify.C3 = [9.49260000000000000000000000000000000000000000000000000000 +/- 1.10e-57]
+(3) Level 3, b0 = 0.87338196661320752: Nicolas on [1e7, 1.78e48]: PASS (404 boxes, min 0.00147, k <= 40); Robin on CA with largest prime in [1e10, 1.43e47]: PASS (1161 boxes, min 1.63e-06, k <= 40) => Robin for 5041 <= n <= 10^(10^46.7931); 115s
+(2) Level 2-CH, b0 = 0.87338196661320752: Nicolas on [1e7, 7.17e41]: PASS (373 boxes, min 5.04e-06, k <= 0); Robin on CA with largest prime in [1e10, 8.47e40]: PASS (1212 boxes, min 8.53e-06, k <= 0) => Robin for 5041 <= n <= 10^(10^40.5656); 173s
+memcap: peak 21 MB rc=0
+      181.76 real        84.36 user        65.10 sys
+            45400064  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              131690  page reclaims
+                1833  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  21  messages received
+                 105  signals received
+                 749  voluntary context switches
+              537692  involuntary context switches
+           182836659  instructions retired
+           207074145  cycles elapsed
+             2310480  peak memory footprint

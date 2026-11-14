@@ -1,0 +1,7 @@
+L5    fine active-region min 1.8736e-04 at b=0.5000 t=1.98440 | edge b=1/2 min 1.8736e-04 at t=1.9845 | edge b=0 min 4.1593e-04
+L20   fine active-region min 1.0137e-04 at b=0.5000 t=1.00580 | edge b=1/2 min 1.0137e-04 at t=1.0057 | edge b=0 min 5.5925e-04
+L60   fine active-region min 1.0690e-04 at b=0.5000 t=-0.93400 | edge b=1/2 min 1.0690e-04 at t=-0.9339 | edge b=0 min 2.5283e-04
+L150  fine active-region min 1.4340e-04 at b=0.5000 t=-0.74420 | edge b=1/2 min 1.4338e-04 at t=-0.7441 | edge b=0 min 2.3740e-04
+C400  fine active-region min 1.3016e-04 at b=0.5000 t=-0.73300 | edge b=1/2 min 1.3016e-04 at t=-0.7330 | edge b=0 min 2.3453e-04
+D6000 fine active-region min 1.2169e-04 at b=0.5000 t=0.80260 | edge b=1/2 min 1.2169e-04 at t=0.8025 | edge b=0 min 2.1015e-04
+memcap: peak 75 MB rc=0

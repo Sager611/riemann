@@ -1,0 +1,7 @@
+L5    sampled sup max(Fu,Fl)=0.66536271 (Fu at T=1, Fl at T=1)  Table2 <= 0.66536440 | sampled sup S-mode=0.13948928 (at T=1/1) Table2 <= 0.13949090 | A3N=ceil(Cz+T2)=1.369 (paper 1.369)  A3S=0.844 (paper 0.844)
+L20   sampled sup max(Fu,Fl)=0.70206889 (Fu at T=1, Fl at T=5870)  Table2 <= 0.70207071 | sampled sup S-mode=-0.18278804 (at T=1.559/5048) Table2 <= -0.18278649 | A3N=ceil(Cz+T2)=2.171 (paper 2.171)  A3S=1.286 (paper 1.286)
+L60   sampled sup max(Fu,Fl)=0.72893981 (Fu at T=1, Fl at T=4415)  Table2 <= 0.72894156 | sampled sup S-mode=-0.15847731 (at T=1.226/3630) Table2 <= -0.15847575 | A3N=ceil(Cz+T2)=2.834 (paper 2.834)  A3S=1.946 (paper 1.946)
+L150  sampled sup max(Fu,Fl)=0.73031522 (Fu at T=1, Fl at T=3991)  Table2 <= 0.73031685 | sampled sup S-mode=-0.15757773 (at T=1.227/3281) Table2 <= -0.15757634 | A3N=ceil(Cz+T2)=2.987 (paper 2.987)  A3S=2.099 (paper 2.099)
+C400  sampled sup max(Fu,Fl)=0.73756357 (Fu at T=1, Fl at T=7380)  Table2 <= 0.73756551 | sampled sup S-mode=-0.14582792 (at T=1.658/5720) Table2 <= -0.14582673 | A3N=ceil(Cz+T2)=5.202 (paper 5.202)  A3S=4.318 (paper 4.318)
+D6000 sampled sup max(Fu,Fl)=0.73573555 (Fu at T=1, Fl at T=4938)  Table2 <= 0.73573753 | sampled sup S-mode=-0.14641153 (at T=1.784/3797) Table2 <= -0.14641036 | A3N=ceil(Cz+T2)=5.326 (paper 5.326)  A3S=4.444 (paper 4.444)
+memcap: peak 15 MB rc=0

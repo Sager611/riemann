@@ -1,0 +1,6 @@
+L20 region A s=+1 (t > 0, |t|<=100): certified, 102060 boxes, min lower bound [1.1357645363680393137285e-9 +/- 1.62e-32], max depth 16, 14 s
+L20 region A s=-1 (t < 0, |t|<=100): certified, 62966 boxes, min lower bound [1.2768619274564102884908e-8 +/- 3.09e-31], max depth 14, 21 s
+L20 region B u > 0 (|t|>=100): certified, 1023 boxes, min lower bound [0.0074037251192285331370383 +/- 3.84e-26], 21 s
+L20 region B u < 0 (|t|>=100): certified, 1023 boxes, min lower bound [0.0088003014877134551438275 +/- 3.51e-27], 21 s
+L20: (K) CERTIFIED on 0<=b<=1/2, t != 0
+memcap: peak 14 MB rc=0

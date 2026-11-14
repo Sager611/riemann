@@ -1,0 +1,26 @@
+== L5 T1=100 17:31:14
+L5 region A s=+1 (t > 0, |t|<=100): certified, 3440 boxes, min lower bound [3.5037696183757049745806e-7 +/- 4.87e-30], max depth 14, 0 s
+L5 region A s=-1 (t < 0, |t|<=100): certified, 1140 boxes, min lower bound [3.7412854767378615230066e-7 +/- 4.71e-30], max depth 5, 1 s
+L5 region B u > 0 (|t|>=100): certified, 1 boxes, min lower bound [0.43696235691773232019882 +/- 4.93e-24], 1 s
+L5 region B u < 0 (|t|>=100): certified, 1 boxes, min lower bound [0.49479190053421892941624 +/- 1.30e-24], 1 s
+L5: (K) CERTIFIED on 0<=b<=1/2, t != 0
+memcap: peak 0 MB rc=0
+rc=0
+== L20 T1=100 17:31:22
+L20 region A s=+1 (t > 0, |t|<=100): certified, 102060 boxes, min lower bound [1.1357645363680393137285e-9 +/- 1.62e-32], max depth 16, 14 s
+L20 region A s=-1 (t < 0, |t|<=100): certified, 62966 boxes, min lower bound [1.2768619274564102884908e-8 +/- 3.09e-31], max depth 14, 22 s
+L20 region B u > 0 (|t|>=100): certified, 1023 boxes, min lower bound [0.0074037251192285331370383 +/- 3.84e-26], 22 s
+L20 region B u < 0 (|t|>=100): certified, 1023 boxes, min lower bound [0.0088003014877134551438275 +/- 3.51e-27], 23 s
+L20: (K) CERTIFIED on 0<=b<=1/2, t != 0
+memcap: peak 14 MB rc=0
+rc=0
+== L60 T1=100 17:31:48
+L60 region A s=+1 (t > 0, |t|<=100): certified, 404636 boxes, min lower bound [3.3737013626478386952795e-11 +/- 2.86e-35], max depth 16, 52 s
+L60 region A s=-1 (t < 0, |t|<=100): certified, 147290 boxes, min lower bound [2.4038355478777018479963e-7 +/- 3.64e-30], max depth 17, 68 s
+L60 region B u > 0 (|t|>=100): certified, 4095 boxes, min lower bound [0.0010886124029527430613520 +/- 4.83e-26], 69 s
+L60 region B u < 0 (|t|>=100): certified, 4095 boxes, min lower bound [0.0021672084799245356593559 +/- 2.70e-26], 69 s
+L60: (K) CERTIFIED on 0<=b<=1/2, t != 0
+memcap: peak 14 MB rc=0
+rc=0
+== L150 T1=100 17:32:59
+L150 region A s=+1 (t > 0, |t|<=100): certified, 498248 boxes, min lower bound [7.1487055411700062538231e-11 +/- 1.08e-35], max depth 18, 61 s

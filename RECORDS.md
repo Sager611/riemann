@@ -35,3 +35,4 @@ Constants, ranges, exponents and proportions (AGENTS.md: records, not discoverie
 - Record: kissing number in dimension 38 is at least 624020 (was 611522): a known 3-modular lattice gives a far larger equator. [details](discoveries/kissing-38.md)
 - Record: ξ(K₆) ≥ 33 — a 3-colouring of K₃₃ in which every K₆ sees all three colours (was 25). [details](discoveries/xi-k6.md)
 - Record: the ambidextrous moving sofa constant is at most 19/10 (was 2.2195, from an unverified announcement). [details](discoveries/ambidextrous-sofa.md)
+- Audit note (14 Nov 2026): every record of ours that used Hasanalizade–Shen–Wong's printed C3 = 9.3675 (a misprint for 9.4925, Bellotti–Wong's footnote; their log ζ(1+η) slip adds 1.5·10⁻⁵, REFUTATIONS) was rerun with 9.4926: Robin2Adic, Ingham3, Ingham4, Li200k, RobinHeight and RobinCH certify the same values (orchestrator: Robin2Adic, Ingham4; stcaudit: the rest). [details](Riemann/Deep/STCAudit/REPORT.md)
