@@ -1,0 +1,168 @@
+=== chain.py (18:03:54 UTC)
+stage   0 R=0.777500 gain=0.0000000000 k=0.499450 thr=0.49924925 wb=0.777500 a0=0.000000 a1=0.000000 Y(left)=0.0000001180
+stage   1 R=0.777250 gain=0.0000000780 k=0.498774 thr=0.49857315 wb=0.777250 a0=0.000367 a1=0.000472 Y(left)=0.0000003415
+stage   2 R=0.777000 gain=0.0000003015 k=0.498096 thr=0.49789537 wb=0.777000 a0=0.000819 a1=0.001054 Y(left)=0.0000007114
+stage  50 R=0.765000 gain=0.0001961486 k=0.464381 thr=0.46418095 wb=0.765000 a0=0.025006 a1=0.032432 Y(left)=0.0002044398
+stage 100 R=0.752500 gain=0.0008541813 k=0.426561 thr=0.42636096 wb=0.752500 a0=0.056669 a1=0.074172 Y(left)=0.0008729634
+stage 150 R=0.740000 gain=0.0021150975 k=0.385542 thr=0.38534194 wb=0.740001 a0=0.098001 a1=0.129575 Y(left)=0.0021478149
+stage 174 R=0.734000 gain=0.0029937314 k=0.364550 thr=0.36434979 wb=0.734001 a0=0.122734 a1=0.163134 Y(left)=0.0030348954
+stage 175 R=0.733750 gain=0.0030348554 k=0.363656 thr=0.36345506 wb=0.733751 a0=0.123851 a1=0.164656 Y(left)=0.0030764024
+left 175 = 1467/2000 True
+line g0-g1 r minorant margin min (Y-DELTA-line): 1.6041e-07 stage 98 r 0.753
+gate 1 min 1.624e-05 at stage 174 r=0.73375
+gate 2 min 6.736e-04 at stage 175 r=0.73350
+gate 3 min 3.627e-03 at stage 175 r=0.73350
+gate 4 min 1.116e-02 at stage 0 r=0.77725
+gate 5 min 2.116e-02 at stage 0 r=0.77725
+gate 6 min 1.855e-02 at stage 0 r=0.77725
+gate 7 min 2.418e-01 at stage 175 r=0.73350
+gate 8 min 3.048e-02 at stage 175 r=0.73350
+gate 9 min 1.296e-01 at stage 175 r=0.73350
+gate10 min 4.219e-02 at stage 0 r=0.77725
+gate11 min 6.708e-02 at stage 175 r=0.73350
+gate12 min 1.243e-02 at stage 0 r=0.77725
+gate13 min 1.667e-01 at stage 0 r=0.77725
+gate14 min 1.250e-02 at stage 0 r=0.77750
+        0.61 real         0.19 user         0.01 sys
+            16777216  maximum resident set size
+             8438144  peak memory footprint
+memcap: peak 0 MB rc=0
+=== system.py (18:04:07 UTC)
+B2 = 0.87338196661320751993  delta2 = 0.426082356885649  R2 = 0.626569281703164  b2 = 0.0999562982254378
+native Rd(d2,1/2) = 0.6265692817031636
+improved line value at contact = 0.6262976996447319 crossing 0.7524124099709955 dR -0.00027158205843169636
+curve solver check: 0.626297699644732 0.7524124099709955
+        0.92 real         0.30 user         0.13 sys
+            40665088  maximum resident set size
+            20398608  peak memory footprint
+memcap: peak 0 MB rc=0
+=== infimum.py (18:04:21 UTC)
+native (PR103 system)              B*=0.873381967151  b=0.099862 h=0.809639  contact delta=0.42619 x=0.5000
+PR137 line, PR137 window           B*=0.873346679074  b=0.110219 h=0.815029  contact delta=0.42586 x=0.5000
+PR137 line, window = all DOM       B*=0.873346679074  b=0.110219 h=0.815029  contact delta=0.42586 x=0.5000
+PR137 point: b(h=0.81447)=0.1091016  B*(b)=0.873346768231 (theta=0.8733468)
+        3.52 real         1.18 user         0.14 sys
+            79724544  maximum resident set size
+            21594640  peak memory footprint
+memcap: peak 0 MB rc=0
+=== chain_limit.py (18:04:36 UTC)
+PR137 exact params (float)             z(.7335)=0.0030764 z(.74)=0.0021151 z(.7524)=0.0008617 z(.7528)=0.0008321 z(.76)=0.0003973  leftmost=0.7325 k_end=0.3601 gates {'S<137/1000': 0.0, 'S/H<0.14': 0.00296}
+STEP 1/40000                           z(.7335)=0.0030353 z(.74)=0.0020783 z(.7524)=0.0008350 z(.7528)=0.0008058 z(.76)=0.0003780  leftmost=0.7327 k_end=0.3601 gates {'S<137/1000': 0.00021, 'S/H<0.14': 0.00321}
+STEP 1/40000, all pads 0               z(.7335)=0.0031105 z(.74)=0.0021427 z(.7524)=0.0008786 z(.7528)=0.0008487 z(.76)=0.0004086  leftmost=0.7327 k_end=0.3600 gates {'S<137/1000': 0.00014, 'S/H<0.14': 0.00313}
+STEP 1/400000, all pads 0              z(.7335)=0.0031122 z(.74)=0.0021441 z(.7524)=0.0008794 z(.7528)=0.0008495 z(.76)=0.0004091  leftmost=0.7328 k_end=0.3600 gates {'S<137/1000': 0.00015, 'S/H<0.14': 0.00315}
+TOP=7/9, STEP 1/400000, pads 0         z(.7335)=0.0031123 z(.74)=0.0021441 z(.7524)=0.0008795 z(.7528)=0.0008495 z(.76)=0.0004092  leftmost=0.7328 k_end=0.3600 gates {'S<137/1000': 0.00015, 'S/H<0.14': 0.00315}
+pads 0 but gate1 3e-5, STEP 1/400000   z(.7335)=0.0031063 z(.74)=0.0021394 z(.7524)=0.0008766 z(.7528)=0.0008467 z(.76)=0.0004073  leftmost=0.7327 k_end=0.3600 gates {'S<137/1000': 0.00013, 'S/H<0.14': 0.00313}
+one big step (STEP=0.0775, pads 0)     z(.7335)=0.0000284 z(.74)=0.0000242 z(.7524)=0.0000162 z(.7528)=0.0000159 z(.76)=0.0000113  leftmost=0.7000 k_end=0.4992 gates {'S<137/1000': -0.01305, 'S/H<0.14': -0.02666}
+STEP 1/1000, pads 0                    z(.7335)=0.0030342 z(.74)=0.0020833 z(.7524)=0.0008436 z(.7528)=0.0008145 z(.76)=0.0003861  leftmost=0.7325 k_end=0.3625 gates {'S<137/1000': 5e-05, 'S/H<0.14': 0.00286}
+        1.63 real         0.41 user         0.05 sys
+            24068096  maximum resident set size
+            15745432  peak memory footprint
+memcap: peak 0 MB rc=0
+=== ceiling.py (18:04:52 UTC)
+PR137 chain curve (pads as PR137)        PR137 window  B*=0.8733466253  b=0.11087 h=0.81536 contact (0.4255, 0.500)  G(0.7524)=0.0008617  curve left end 0.7335
+PR137 chain curve (pads as PR137)        window = all  B*=0.8733466253  b=0.11087 h=0.81536 contact (0.4255, 0.500)  G(0.7524)=0.0008617  curve left end 0.7335
+continuum, zero pads (STEP 1/400000)     PR137 window  B*=0.8733459793  b=0.11099 h=0.81542 contact (0.3691, 0.500)  G(0.7524)=0.0008794  curve left end 0.7328
+continuum, zero pads (STEP 1/400000)     window = all  B*=0.8733458652  b=0.11099 h=0.81542 contact (0.4257, 0.500)  G(0.7524)=0.0008794  curve left end 0.7328
+continuum, zero pads, TOP=7/9            PR137 window  B*=0.8733459789  b=0.11099 h=0.81542 contact (0.3691, 0.500)  G(0.7524)=0.0008795  curve left end 0.7328
+continuum, zero pads, TOP=7/9            window = all  B*=0.8733458617  b=0.11099 h=0.81542 contact (0.4257, 0.500)  G(0.7524)=0.0008795  curve left end 0.7328
+PR137 line (reference)                   B*=0.8733466805  b=0.11039 h=0.81511
+       75.69 real        29.13 user         0.88 sys
+            63520768  maximum resident set size
+            23577104  peak memory footprint
+memcap: peak 50 MB rc=0
+=== levers.py (18:06:13 UTC)
+PR137 theta            B=0.8733468000  B_2-B (=lambda) = 3.5167e-05  sigma_eq = 3.258884e-04  (BeyondB2: 0.873 needs sigma 0.003518, lambda 0.000382)
+PR137 line infimum     B=0.8733466805  B_2-B (=lambda) = 3.5286e-05  sigma_eq = 3.269951e-04  (BeyondB2: 0.873 needs sigma 0.003518, lambda 0.000382)
+ceiling (continuum)    B=0.8733458652  B_2-B (=lambda) = 3.6101e-05  sigma_eq = 3.345455e-04  (BeyondB2: 0.873 needs sigma 0.003518, lambda 0.000382)
+entries at PR137 (theta, h=0.81447): {'G_N-E (active)': '1.55e-07', 'G_L-E': '1.13e-03', 'G_R-E': '2.14e-03', 'S(R_d)-1/5': '3.40e-02', '1/250-E': '2.68e-04', '(p1-2dx)L-R_d': '8.58e-02', '-E-hDsh': '1.14e-03'}
+entries at ceiling (B=0.8733458652, b=0.11099): {'G_N-E (active)': '3.72e-08', 'G_L-E': '1.12e-03', 'G_R-E': '2.18e-03', 'S(R_d)-1/5': '3.40e-02', '1/250-E': '2.83e-04', '(p1-2dx)L-R_d': '8.58e-02', '-E-hDsh': '9.66e-04'}
+mu=2   B*=0.8733173 b=0.1072 contact (0.4415,0.500) min other entry 2.39e-04 (1/250-E)
+mu=5   B*=0.8733070 b=0.0951 contact (0.3814,0.500) min other entry 2.50e-04 (1/250-E)
+mu=10  B*=0.8733534 b=0.0811 contact (0.4122,0.500) min other entry 3.62e-04 (1/250-E)
+mu=12  B*=0.8733819 b=0.0754 contact (0.4260,0.500) min other entry 4.23e-04 (1/250-E)
+       99.27 real        33.30 user         1.06 sys
+            56754176  maximum resident set size
+            19972600  peak memory footprint
+memcap: peak 50 MB rc=0
+=== perturb.py (18:07:54 UTC)
+ceiling: continuum, zero pads              G(0.7524)=0.0008794  B*=0.8733458652  (b=0.11099, contact 0.4257)
+gate-1 margin 3e-5 kept                    G(0.7524)=0.0008766  B*=0.8733459858  (b=0.11097, contact 0.4257)
+k pad 1/5000 kept                          G(0.7524)=0.0008745  B*=0.8733460769  (b=0.11096, contact 0.4257)
+STEP 1/4000, zero pads                     G(0.7524)=0.0008705  B*=0.8733462487  (b=0.11093, contact 0.4255)
+TOP 0.7750 (later start)                   G(0.7524)=0.0008711  B*=0.8733462229  (b=0.11100, contact 0.4257)
+[lemma] Poisson radius 1-5u (u=(1-H)/5)    G(0.7524)=0.0010521  B*=0.8733383642  (b=0.11325, contact 0.4257)
+[lemma] F0 constant 5/6 -> 5/6+0.001       G(0.7524)=0.0009767  B*=0.8733416818  (b=0.11166, contact 0.4257)
+[lemma] F0 constant 5/4 -> 5/4-0.001       G(0.7524)=0.0009533  B*=0.8733426899  (b=0.11149, contact 0.4257)
+      128.60 real        47.53 user         1.39 sys
+            64208896  maximum resident set size
+            19743224  peak memory footprint
+memcap: peak 51 MB rc=0
+=== ode.py (18:10:04 UTC)
+z(0.7524) = 0.0008796015  z(0.7335) = 0.0031124987
+ODE continuum contact: B* = 0.8733458561067  b = 0.11079928  delta = 0.42582999  crossing = 0.75232203  count = 0.6265272858
+PR143 exact root  = 0.8733458561067185768012 ; difference ODE - root = 1.110e-16
+        5.80 real         2.34 user         0.20 sys
+            54296576  maximum resident set size
+            20431376  peak memory footprint
+memcap: peak 0 MB rc=0
+=== check_identity.py (18:10:20 UTC)
+max rel err of both identities: 1.4793738635535037e-15  w(7/9)= 0.24305555555555558 0.24305555555555555
+        0.21 real         0.03 user         0.01 sys
+            15859712  maximum resident set size
+             7455104  peak memory footprint
+memcap: peak 0 MB rc=0
+=== poly143.py (18:10:39 UTC)
+ODE residual of closed form: 0  z(7/9) = 0
+balance: delta = 5*(3*c - 2)/(6*(2*c - 2*zc - 1))   (= thr(c, z) = (5c/4-5/6)/(c-1/2-z))
+b-coefficient zero: delta = (45*c - 14)/(6*(9*c + 1))
+=> z(c) = -(45*c**2 - 2*c - 24)/(2*(45*c - 14))
+theta(c) = (99*c - 14)/(12*(9*c - 1))
+c(theta) = [2*(6*t - 7)/(9*(12*t - 11))]
+eliminated polynomial in theta: -48600000*(15*t - 13)*(487371101862528*t**9 - 4126408710053184*t**8 + 15517896164111592*t**7 - 34020380857037616*t**6 + 47916748658170215*t**5 - 44964545308854309*t**4 + 28111661257098222*t**3 - 11291220876239226*t**2 + 2643837682856883*t - 274959111914881)
+ratio to PR143 polynomial: 729000000*t - 631800000
+root: 0.8733458561067185543791425  c* = 0.752322053813543  delta* = 0.425830047444893
+       12.21 real         3.50 user         0.32 sys
+            66437120  maximum resident set size
+            20595216  peak memory footprint
+memcap: peak 0 MB rc=0
+=== theta_inf.py (18:10:55 UTC)
+theta_inf = 0.873345856106718576801184796065
+B_2 - theta_inf (lambda_eq) = 3.61105064889e-5
+sigma_eq = 0.000334629740146
+contact width w* = 0.752322053813543  delta* = 0.425830047444893  count 5/9+delta/6 = 0.626527230129704
+theta check (14+25d)/(18+24d) = 0.873345856106718576801184796065
+        0.52 real         0.16 user         0.07 sys
+            42008576  maximum resident set size
+            21742072  peak memory footprint
+memcap: peak 0 MB rc=0
+=== obstruction.py (18:11:09 UTC)
+PASS S1 b-coefficient of g vanishes at x=1/2, R=5/9+delta/6
+PASS S2 dg/dell = -3/4 - delta there (so dg/dtheta = 3 + 4 delta)
+PASS S3 dg/dR = -3h/4
+PASS S4 g == theta - Ebase(d=h, C=T/2) - (3/4) h R (Lean rowMargin per J, PositiveGap/Return/Formulas.lean Ebase/rowMargin)
+PASS S5 q0''/q0 = A^2 + A' = -(16/225)/(r^2 (r-2/3)^2) < 0 (so z_inf = P - K q0, K>0, is convex on (2/3,inf))
+PASS S6 along r z' = z - T: w' = (3r-8/5) w/(r(3r-2)), w = (33r-14)/48 - z
+PASS S7 dT/dr along the ODE = -16 w/(25 r (3r-2)^2)
+PASS E1 P(lo) < 0 < P(hi) (exact)  [width 1.0e-24]
+PASS E2 at w*: KKT gain -(45w^2-2w-24)/(2(45w-14)) overlaps the closed form z_inf(w*)  [w* in [[0.752322053813543, 0.752322053813543]], z = [0.000885513400196, 0.000885513400196]]
+     delta* = [0.4258300474448933, 0.4258300474448933]  R* = [0.6265272301297044, 0.6265272301297044]  F* = [0.87704654030697, 0.87704654030697]
+PASS P1 F_env(363/500) < F* (convexity of z_inf then gives F_env <= F* on [363/500, w*])  [F_env(0.726) = [0.8675599084, 0.8675599084]]
+PASS P2 native widths: 1/2 + w*/2 < F* (z_inf(w*) > 0)
+PASS P3 long piece strictly increasing: V = 5/6 - delta* > 0
+PASS N-C value at witness > R*  [value [0.6268068944, 0.6268068944]]
+PASS N-weakC7 value at witness > R*  [value [0.6268990091, 0.6268990091]]
+PASS N-capP value at witness > R*  [value [0.6270237337, 0.6270237337]]
+PASS N-capC: its admission guard 9 (upperM*DJ - MN) < 0 at the witness, so no admitted capC window contains it  [value would be [0.6252219, 0.6252219], guard [-0.0543743, -0.0543743]]
+PASS N-old value at witness > R* for all kappa in [9/25, 2theta_inf-1] (theta in [17/25, theta_inf)), 400 interval cells  [min lower end [0.62661197, 0.62661197]]
+     w_c (F_env(w_c) = F*) in [[0.676973817149, 0.676973817149], [0.676973817149, 0.676973817149]]
+PASS W1 F_env(w) <= F* on [w_c, w*] needs only anchors at widths >= w_c; PR137 gate 2 gives >= 363/500 > w_c
+PASS I1 threshold denominator 3wb/2-(1+R)/2-z >= R-1/2-z >= 363/500-1/2-z_inf(363/500) > 0
+PASS I2 (1-R)/2 - z >= 1/9 - z_inf(363/500) > 0 (thr increasing in wb)
+PASS I3 order preservation dE/dz >= 47/50 - (3/50)(2/5)/(3*363/500-2) > 0 for every parent R >= 363/500 (exact)  [3583/4450]
+PASS I4 stage endpoints r >= (47/50)(363/500) > 2/3: inside the comparison domain (2/3, 7/9]
+PASS I5 T(rho, z_inf) >= 0 on (2/3, 7/9] <=> 9rho/7 >= 3(3rho-2) <=> rho <= 7/9 (so z_inf >= 0 = start gain)  [algebra: (7-9r)/6 - z_inf = w - 35(3r-2)/48 >= 0]
+ALL PASS 23 / 23
+        5.50 real         1.53 user         0.25 sys
+            62963712  maximum resident set size
+            20201976  peak memory footprint
+memcap: peak 0 MB rc=0
