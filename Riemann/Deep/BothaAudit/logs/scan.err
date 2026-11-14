@@ -1,0 +1,1 @@
+./one.sh: line 10: 12333 Terminated: 15          /usr/bin/time -l $MC $X/deig $tag.odd $prec $ko $its > $tag.odd.out 2> $tag.odd.err
