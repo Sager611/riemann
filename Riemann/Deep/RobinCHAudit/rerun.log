@@ -1,0 +1,29 @@
+(0) PASS: C_T = [113.6688806 +/- 4.72e-8] < 113.67: True; pi^2/(3T^2) + pi/(T-1) <= pi/3e12: True; T = 3e12 + 1 + pi/3 <= 3000175332800 (Platt-Trudgian): True
+(1) PASS: Nicolas holds for all 664579 primorials with p_k <= 9999991 (min of margin*sqrt(p)log p = 1.9517 at p = 5); 15s
+    eta_1 = eta_CH(1e19) = [3.62631e-8 +/- 4.61e-14]; eta_CH(1e40) = [1.04720e-12 +/- 1.31e-18]
+(2) Level 2-CH, b0 = 0.87338196661320752: Nicolas on [1e7, 7.17e41]: PASS (373 boxes, min 5.04e-06, k <= 0); Robin on CA with largest prime in [1e10, 8.47e40]: PASS (1212 boxes, min 8.53e-06, k <= 0) => Robin for 5041 <= n <= 10^(10^40.5656); 63s
+(2) Level 2-CH, b0 = 7/8: Nicolas on [1e7, 5.99e41]: PASS (354 boxes, min 0.000528, k <= 0); Robin on CA with largest prime in [1e10, 7.11e40]: PASS (1177 boxes, min 4.57e-06, k <= 0) => Robin for 5041 <= n <= 10^(10^40.4896); 100s
+(2) Level 2-CH, b0 = 1: Nicolas on [1e7, 3.57e36]: PASS (301 boxes, min 0.000671, k <= 0); Robin on CA with largest prime in [1e10, 5.51e35]: PASS (1125 boxes, min 3.3e-06, k <= 0) => Robin for 5041 <= n <= 10^(10^35.3789); 141s
+(3) Level 3, b0 = 0.87338196661320752: Nicolas on [1e7, 1.78e48]: PASS (404 boxes, min 0.00147, k <= 40); Robin on CA with largest prime in [1e10, 1.43e47]: PASS (1161 boxes, min 1.63e-06, k <= 40) => Robin for 5041 <= n <= 10^(10^46.7931); 219s
+(3) Level 3, b0 = 7/8: Nicolas on [1e7, 1.76e48]: PASS (404 boxes, min 0.00109, k <= 40); Robin on CA with largest prime in [1e10, 1.42e47]: PASS (1189 boxes, min 8.78e-06, k <= 40) => Robin for 5041 <= n <= 10^(10^46.7900); 295s
+(3) Level 3, b0 = 1: Nicolas on [1e7, 6.30e47]: PASS (419 boxes, min 9.35e-06, k <= 57); Robin on CA with largest prime in [1e10, 6.46e46]: PASS (1171 boxes, min 2.03e-06, k <= 57) => Robin for 5041 <= n <= 10^(10^46.4480); 368s
+ALL PASS total 368s
+      369.59 real       248.08 user         5.76 sys
+            87556096  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               15827  page reclaims
+                 354  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 551  voluntary context switches
+              691588  involuntary context switches
+           436340273  instructions retired
+           206039613  cycles elapsed
+            20414968  peak memory footprint
+memcap: peak 67 MB rc=0

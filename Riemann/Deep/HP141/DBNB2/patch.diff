@@ -1,0 +1,32 @@
+--- /Users/adriansager/playground/riemann/Riemann/Deep/DBNB2/evidence/make_flow_b2.py	2026-11-05 17:38:07
++++ /Users/adriansager/playground/riemann/Riemann/Deep/HP141/DBNB2/make_flow_b2.py	2026-11-14 20:30:25
+@@ -14,7 +14,7 @@
+ sys.dont_write_bytecode = True
+ from flint import fmpq as Q
+ 
+-B0 = Q(87338196661320752, 10**17)
++B0 = Q(9908119238306612133369374975000622988619121777878229799765263366946606045502455625911569003364955967645745531862430068266267717, 11345012023616779600791582323373494582287250283647959965785871011074347975117040113347744503437234376916434871293982689424818700)  # hp141: PR 141 exact theta141
+ PLAN = ('lambda_round14/material/m8_late/M8_LATE_PLAN.json', 'ec346b7c1136eda38021eb6323033b3b48ed21e6f7458eeeac7cc9579db2497a')
+ SOURCE = ('lambda_round15/flow_main_v2/MAIN_CLOCK_SOURCE.json', 'b59905d7b994d3424ba14f9347be75a2429ae4d4b0de2c2404971ffda1d4d536')
+ D = 2**96
+--- /Users/adriansager/playground/riemann/Riemann/Deep/DBNB2/evidence/float_check.py	2026-11-05 17:38:07
++++ /Users/adriansager/playground/riemann/Riemann/Deep/HP141/DBNB2/float_check.py	2026-11-14 20:30:25
+@@ -49,14 +49,14 @@
+         k += 1
+         if q <= stop: return k, k*dt, q, k*dt + q/2
+ 
+-for name, b0 in (('7/8', 7/8), ('b0', 0.87338196661320752)):
++for name, b0 in (('b0', 0.87338196661320752), ('theta141_up', 0.8733458561067187)):  # hp141: + PR 141 theta141 (smallest double above)
+     for sc in (1, 2):
+         k, T, q, e = run(b0, sc)
+         print(name, 'scheme', sc, 'arcs', k, 'T', T, 'qT', q, 'endpoint', repr(e))
+ # local slope dLambda/db0 (certificate model)
+-e1 = run(0.87338196661320752, 1)[3]; e2 = run(0.87338196661320752 + 1e-4, 1)[3]
++e1 = run(0.8733458561067187, 1)[3]; e2 = run(0.8733458561067187 + 1e-4, 1)[3]  # hp141: slope at theta141
+ print('dLambda/db0 near b0 (model):', (e2 - e1)/1e-4)
+ # author's research number at 0.8748867 (TeX l.210: 0.107936602217)
+-print('model at 0.8748867:', repr(run(0.8748867, 1)[3]))
++
+ # stop-threshold option
+-print('stop 2e-6 (model):', repr(run(0.87338196661320752, 1, stop=2e-6)[3]))
++

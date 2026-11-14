@@ -1,0 +1,78 @@
+== start 19:34:09 cwd=/Users/adriansager/playground/riemann/Riemann/Deep/HP141/ExplProg cmd: uv run --no-project --with python-flint --with mpmath python3 cert.py all
+[core] B_2 = [0.87338196661320751993 +/- 9.74e-22], B = [0.87334585610671858 +/- 3.20e-18] (= theta141, PR 141), 1/(1-B) = [7.89551742454 +/- 3.16e-12]
+[core] ZETA: sum_rho 1/gamma^2 <= [0.046371172 +/- 4.05e-10]
+[core] BMOR at conductor 9: R(5/7;9) = [1.5520999 +/- 2.54e-8] > 0
+[linnik] limit constant (Y = oo): c_inf = [0.453356 +/- 3.08e-7]
+[linnik] kernel ell=7, rise 4.9: W(1) = [2.424003177 +/- 2.93e-10], W(0) = [115.9503419 +/- 4.45e-8], ||w||_inf <= [38.846167 +/- 3.56e-7], n2 = [1.3605442 +/- 1.77e-8]
+[linnik] all q >= 10^2: p(a,q) <= (1 q log q)^(1/(1-B)); margin [0.2121 +/- 3.34e-5] (direct at q = 10^2: [0.2121 +/- 3.34e-5])
+[linnik]   and p(a,q) <= (1 phi(q) log q)^(1/(1-B)) for q >= 10^2; margin [0.2109 +/- 4.59e-5]
+[linnik] all q >= 10^2: p(a,q) <= (79/100 q log q)^(1/(1-B)); margin [0.002537 +/- 7.74e-9] (direct at q = 10^2: [0.002537 +/- 7.74e-9])
+[linnik]   and p(a,q) <= (79/100 phi(q) log q)^(1/(1-B)) for q >= 10^2; margin [0.0008572 +/- 1.20e-8]
+[linnik] all q >= 10^3: p(a,q) <= (3/4 q log q)^(1/(1-B)); margin [0.002157 +/- 2.18e-7] (direct at q = 10^3: [0.002157 +/- 2.18e-7])
+[linnik]   and p(a,q) <= (3/4 phi(q) log q)^(1/(1-B)) for q >= 10^3; margin [0.001464 +/- 3.71e-7]
+[linnik] all q >= 10^4: p(a,q) <= (18/25 q log q)^(1/(1-B)); margin [0.007355 +/- 8.92e-9] (direct at q = 10^4: [0.007355 +/- 8.92e-9])
+[linnik]   and p(a,q) <= (18/25 phi(q) log q)^(1/(1-B)) for q >= 10^4; margin [0.006946 +/- 3.47e-7]
+[linnik] all q >= 10^6: p(a,q) <= (67/100 q log q)^(1/(1-B)); margin [0.005200 +/- 1.66e-7] (direct at q = 10^6: [0.005200 +/- 1.66e-7])
+[linnik]   and p(a,q) <= (67/100 phi(q) log q)^(1/(1-B)) for q >= 10^6; margin [0.004994 +/- 2.46e-7]
+[linnik] all q >= 10^10: p(a,q) <= (31/50 q log q)^(1/(1-B)); margin [0.01357 +/- 4.33e-6] (direct at q = 10^10: [0.01357 +/- 4.33e-6])
+[linnik]   and p(a,q) <= (31/50 phi(q) log q)^(1/(1-B)) for q >= 10^10; margin [0.01349 +/- 3.05e-6]
+[linnik] all q >= 10^20: p(a,q) <= (14/25 q log q)^(1/(1-B)); margin [0.01151 +/- 2.73e-6] (direct at q = 10^20: [0.01151 +/- 2.73e-6])
+[linnik]   and p(a,q) <= (14/25 phi(q) log q)^(1/(1-B)) for q >= 10^20; margin [0.01149 +/- 4.27e-6]
+[linnik] all q >= 10^30: p(a,q) <= (53/100 q log q)^(1/(1-B)); margin [0.002861 +/- 1.72e-7] (direct at q = 10^30: [0.002861 +/- 1.72e-7])
+[linnik]   and p(a,q) <= (53/100 phi(q) log q)^(1/(1-B)) for q >= 10^30; margin [0.002848 +/- 2.40e-7]
+[linnik] all q >= 10^50: p(a,q) <= (51/100 q log q)^(1/(1-B)); margin [0.01026 +/- 3.37e-6] (direct at q = 10^50: [0.01026 +/- 3.37e-6])
+[linnik]   and p(a,q) <= (51/100 phi(q) log q)^(1/(1-B)) for q >= 10^50; margin [0.01025 +/- 1.31e-6]
+[linnik] all q >= 10^100: p(a,q) <= (49/100 q log q)^(1/(1-B)); margin [0.01350 +/- 4.03e-6] (direct at q = 10^100: [0.01350 +/- 4.03e-6])
+[linnik]   and p(a,q) <= (49/100 phi(q) log q)^(1/(1-B)) for q >= 10^100; margin [0.01350 +/- 2.54e-6]
+[linnik] all q >= 10^1000: p(a,q) <= (23/50 q log q)^(1/(1-B)); margin [0.004781 +/- 4.50e-7] (direct at q = 10^1000: [0.004781 +/- 4.50e-7])
+[linnik]   and p(a,q) <= (23/50 phi(q) log q)^(1/(1-B)) for q >= 10^1000; margin [0.004781 +/- 4.32e-7]
+[nonres] 3 <= q <= e^25.6: n_chi <= q - 1 <= (log q)^(1/(1-B)) (7483 cells, worst log-margin [0.001213 +/- 4.56e-7])
+[nonres] all q >= e^25.0: n_chi <= (1 log q)^(1/(1-B)); margin [0.3886 +/- 4.95e-5] (direct at q = e^25.0: [0.3886 +/- 4.95e-5])
+[nonres] all q >= e^25.0: n_chi <= (31/50 log q)^(1/(1-B)); margin [0.009473 +/- 9.76e-8] (direct at q = e^25.0: [0.009473 +/- 9.76e-8])
+[nonres] all q >= e^30.0: n_chi <= (3/5 log q)^(1/(1-B)); margin [0.005818 +/- 2.76e-7] (direct at q = e^30.0: [0.005818 +/- 2.76e-7])
+[nonres] all q >= e^50.0: n_chi <= (14/25 log q)^(1/(1-B)); margin [0.008233 +/- 3.99e-7] (direct at q = e^50.0: [0.008233 +/- 3.99e-7])
+[nonres] all q >= e^100.0: n_chi <= (13/25 log q)^(1/(1-B)); margin [0.007012 +/- 4.41e-7] (direct at q = e^100.0: [0.007012 +/- 4.41e-7])
+[nonres] all q >= e^1000.0: n_chi <= (47/100 log q)^(1/(1-B)); margin [0.009079 +/- 2.63e-7] (direct at q = e^1000.0: [0.009079 +/- 2.63e-7])
+[nonres] all q >= e^10000.0: n_chi <= (23/50 log q)^(1/(1-B)); margin [0.006717 +/- 4.19e-7] (direct at q = e^10000.0: [0.006717 +/- 4.19e-7])
+[pnt] exact, 2 <= q <= x <= 66 (x < 66): max ratio [1.48538 +/- 3.47e-6] at (q,a,n,piece) = (1, 1, 2, 0); on 64 <= x < 66: [0.008491 +/- 4.91e-7]
+[pnt] x < q (any x >= 2): ratio <= [0.5681 +/- 1.18e-5]
+[pnt] x >= 64, q <= x: 7307 cells to log x = 60.0, max ratio [0.1731 +/- 7.75e-7]; tail log x >= 60.0: ratio <= [0.01421 +/- 2.56e-6]
+[pnt]   on 64 <= x < 66 also the exact range applies: [0.008491 +/- 4.91e-7]
+[pnt]   sup ratio over log x >= 4.16: q <= x (cells and tail) 0.1731; q > x [0.00432 +/- 2.73e-6]
+[pnt]   sup ratio over log x >= 10.00: q <= x (cells and tail) 0.0323; q > x [8.45e-5 +/- 3.47e-8]
+[pnt]   sup ratio over log x >= 20.00: q <= x (cells and tail) 0.0146; q > x [5.05e-7 +/- 3.06e-10]
+[pnt]   sup ratio over log x >= 30.00: q <= x (cells and tail) 0.0142; q > x [5.37e-9 +/- 2.87e-13]
+[pnt]   sup ratio over log x >= 40.00: q <= x (cells and tail) 0.0142; q > x [7.22e-11 +/- 1.94e-14]
+[pnt]   sup ratio over log x >= 50.00: q <= x (cells and tail) 0.0142; q > x [1.11e-12 +/- 4.88e-15]
+[pnt]   tail log x >= 100.0 (all q; q > x part negligible): ratio <= [0.01113 +/- 1.59e-7]
+[pnt]   tail log x >= 300.0 (all q; q > x part negligible): ratio <= [0.008611 +/- 7.15e-8]
+[pnt]   tail log x >= 1000.0 (all q; q > x part negligible): ratio <= [0.007878 +/- 1.77e-7]
+[pnt]   tail log x >= 10000.0 (all q; q > x part negligible): ratio <= [0.007620 +/- 1.12e-7]
+[pnt]   tail log x >= 1000000.0 (all q; q > x part negligible): ratio <= [0.007593 +/- 2.69e-7]
+[lprime] log q >= 25.0: |L'/L(1,chi)| <= (1/(1-B)) log log q + [0.35148 +/- 1.39e-7]  (kappa = 2/5, h = 1/2)
+[lprime] log q >= 100.0: |L'/L(1,chi)| <= (1/(1-B)) log log q + [-1.1033 +/- 1.10e-5]  (kappa = 3/10, h = 7/10)
+[lprime] log q >= 1000.0: |L'/L(1,chi)| <= (1/(1-B)) log log q + [-1.9953 +/- 1.95e-5]  (kappa = 3/10, h = 7/10)
+[lprime] log q >= 10000.0: |L'/L(1,chi)| <= (1/(1-B)) log log q + [-2.1398 +/- 2.41e-5]  (kappa = 3/10, h = 7/10)
+[lprime] log q >= 1000000.0: |L'/L(1,chi)| <= (1/(1-B)) log log q + [-2.1633 +/- 4.81e-5]  (kappa = 3/10, h = 7/10)
+[lprime] all q >= 3 (240 cells to log q = 25, then the tail): |L'/L(1,chi)| <= (1/(1-B)) log log q + [10.525 +/- 3.95e-4]
+runtime 19.4 s
+memcap: peak 14 MB rc=0
+       22.89 real        11.50 user         9.28 sys
+            35012608  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               19036  page reclaims
+                 462  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  14  signals received
+                  64  voluntary context switches
+               51091  involuntary context switches
+            68210300  instructions retired
+            56402190  cycles elapsed
+             2261328  peak memory footprint
+== end 19:34:32 rc=0

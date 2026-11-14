@@ -1,0 +1,20 @@
+--- /Users/adriansager/playground/riemann/Riemann/Deep/ExplProg/cert.py	2026-11-06 05:50:55
++++ /Users/adriansager/playground/riemann/Riemann/Deep/HP141/ExplProg/cert.py	2026-11-14 20:22:53
+@@ -39,14 +39,14 @@
+ 
+ # ---------------------------------------------------------------- sec 0: the half-plane constant
+ B2 = (777 - arb(1081).sqrt()) / 852
+-B = A(Fr(8733819666132076, 10 ** 16))
++B = A(Fr(9908119238306612133369374975000622988619121777878229799765263366946606045502455625911569003364955967645745531862430068266267717, 11345012023616779600791582323373494582287250283647959965785871011074347975117040113347744503437234376916434871293982689424818700))  # hp141: PR 141 exact theta141
+ b = 1 - B
+ INV_b = 1 / b
+ 
+ def core():
+-    pos(B - B2 - arb(10) ** -17, "B > B_2 + 1e-17 > T_* = B_2 + 2.2e-254")
++    pos(A(Fr(87338196661320752, 10 ** 17)) - B, "hp141: B = theta141 (PR 141, exact ball) < old 0.87338196661320752")
+     pos(B2 - A(Fr(87338196661320752, 10 ** 17)) + arb(10) ** -17, "B_2 = 0.87338196661320752 (to 1e-17)")
+-    print("[core] B_2 = %s, B = %s (> B_2 + 1e-17), 1/(1-B) = %s" % (B2.str(20), B.str(17), INV_b.str(12)))
++    print("[core] B_2 = %s, B = %s (= theta141, PR 141), 1/(1-B) = %s" % (B2.str(20), B.str(17), INV_b.str(12)))
+     print("[core] ZETA: sum_rho 1/gamma^2 <= %s" % SUM_INV_G2.str(8))
+     # sec 2.1: BMOR right-hand side at conductor 9 is positive for t >= 5/7 (each term non-decreasing there)
+     R9 = (S0 / PI) * (9 * S0 / (2 * PI * E1)).log() + A(Fr(1, 4)) + CB * (9 * (S0 + 2) / (2 * PI)).log() \

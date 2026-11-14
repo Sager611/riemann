@@ -1,0 +1,85 @@
+== start 19:36:29 cwd=/Users/adriansager/playground/riemann/Riemann/Deep/HP141/DensityQ cmd: uv run --no-project python3 verify.py
+B = 0.8733458561067186  s* = 0.8560686918741528
+PASS A1 gB(tauB(s)) = 2s - 1 (HM threshold), exact at 3 points of an affine identity
+PASS A2 tauB(3/4) = 1 and tauB((1+B)/2) = 2
+PASS A3 tauB(s*) = 3s* - 1 (crossing with Jutila k=2 family range)
+PASS A4 slope of tauB = 2/(B-1/2) > 3, so tauB > 3s-1 exactly for s > s*
+PASS A5 tauB > 4s-2 (Huxley family range) on [0.84, B]
+PASS A6 tauB(sPY) = 12 sPY - 9 (Petrow-Young line crossing)
+PASS A7 slope tauB < 12, so tauB > 12s-9 exactly for s < sPY
+   sPY = 0.9005335624735652  (Theorem A beats every known family range on (s*, sPY))
+PASS A8 hull: gB(t) <= 1/2 + t/6 iff t <= (B-1/2)/(B-2/3) = 1.8064; tauB(sPY) <= that
+PASS A9 hull: gB(t) <= t/2 for t >= 1 (gB(1) = 1/2, slope B-1/2 < 1/2)
+PASS A10 Petrow-Young point (1/2,1/6) lies below the (H) chord from (1-B,B-1/2) to (B,0)
+PASS B1 on [2, 6(B-1/2)] the hull minimum is the Weyl vertex 1/2 + t/6 (endpoints; pieces affine)
+PASS B2 cut 6s-3 <= 6(B-1/2) for s <= B, so exclusion holds exactly for tau < 6s-3
+PASS B3 (s-u)/mu*(u) is maximal at u = 1/2 (decreasing in u for s < B; 50 grid points)
+PASS B4 at u = 1/2 that cut equals 6s-3
+PASS C1 unconditional: sup_{[6s-3,12s-6]} F_Jutila <= (4-4s)/(6s-3) on 22 points of (5/6, 7/8]
+PASS C1a 9s-9/2 >= 2(3s-1) iff s >= 5/6
+PASS C1b 2 + (8-16s)/(9s-9/2) = 2/9 identically
+PASS C1c 2/9 <= (4-4s)/(6s-3) iff s <= 7/8
+PASS C1d (19.5-23s)/(9s-4.5) <= 2/9 for s >= 0.82
+PASS C1e Jutila k=2 Montgomery range is 3s-1 (14s-10 >= 3s-1 for s >= 9/11)
+PASS C2a tauB <= 8s-5 on [0.84, B] (affine)
+PASS C2b 3s-1 <= 8s-5 for s >= 4/5
+PASS C2c s=0.840000: min_a G with tauM = tauB equals (4-4s)/(6s-3) = 0.313725 (got 0.313725)
+PASS C2c s=0.850000: min_a G with tauM = tauB equals (4-4s)/(6s-3) = 0.285714 (got 0.285714)
+PASS C2c s=0.860000: min_a G with tauM = tauB equals (4-4s)/(6s-3) = 0.259259 (got 0.259259)
+PASS C2c s=0.870000: min_a G with tauM = tauB equals (4-4s)/(6s-3) = 0.234234 (got 0.234234)
+PASS C2c s=0.873345: min_a G with tauM = tauB equals (4-4s)/(6s-3) = 0.226163 (got 0.226163)
+PASS C3a tauB >= (11/2)s - 13/4 on [0.84, B] (affine)
+PASS C3b tauB < (9/2)s - 9/4 at 0.84 and B (no-subdivision variant is weaker: 3/tauB)
+PASS C3c Huxley+PY gives only 3/(3s-1): (4s-2) < (11/2)s - 13/4 for s > 5/6
+
+ sigma     lam_a    lam_b    T from Q^a to Q^b      old 3/(2s)  new 3/tau0   uniform 4/(6s-3)  DH
+  0.860000  0.6279   0.9368   Q^0.688 .. Q^13.83     1.74419     1.73484      1.85185        2
+  0.865000  0.6329   0.9380   Q^0.724 .. Q^14.13     1.73410     1.71326      1.82648        2
+  0.870000  0.6379   0.9392   Q^0.762 .. Q^14.44     1.72414     1.69220      1.80180        2
+  0.872500  0.6404   0.9397   Q^0.781 .. Q^14.60     1.71920     1.68187      1.78971        2
+  0.873346  0.6412   0.9399   Q^0.787 .. Q^14.65     1.71753     1.67840      1.78565        2
+PASS D1 lam_a < lam_b on {0.86, 0.87, B-} (nonempty regime)
+PASS D2 s=0.86000 lam=0.6279: new <= (3-3s)/tau0 = 0.242878 < old(subdiv) = 0.244186 <= old(Jutila form) = 0.244186
+PASS D2 s=0.86000 lam=0.7824: new <= (3-3s)/tau0 = 0.242878 < old(subdiv) = 0.244186 <= old(Jutila form) = 0.254545
+PASS D2 s=0.86000 lam=0.9368: new <= (3-3s)/tau0 = 0.242878 < old(subdiv) = 0.244186 <= old(Jutila form) = 0.254545
+PASS D2 s=0.87000 lam=0.6379: new <= (3-3s)/tau0 = 0.219987 < old(subdiv) = 0.224138 <= old(Jutila form) = 0.224138
+PASS D2 s=0.87000 lam=0.7886: new <= (3-3s)/tau0 = 0.219987 < old(subdiv) = 0.224138 <= old(Jutila form) = 0.232836
+PASS D2 s=0.87000 lam=0.9392: new <= (3-3s)/tau0 = 0.219987 < old(subdiv) = 0.224138 <= old(Jutila form) = 0.232836
+PASS D2 s=0.87335 lam=0.6412: new <= (3-3s)/tau0 = 0.212577 < old(subdiv) = 0.217533 <= old(Jutila form) = 0.217533
+PASS D2 s=0.87335 lam=0.7906: new <= (3-3s)/tau0 = 0.212577 < old(subdiv) = 0.217533 <= old(Jutila form) = 0.225716
+PASS D2 s=0.87335 lam=0.9399: new <= (3-3s)/tau0 = 0.212577 < old(subdiv) = 0.217533 <= old(Jutila form) = 0.225716
+PASS D3 at s*: tau0 = 2s* (no gain at the left end)
+
+ sigma     DH   Huxley+PY 3/(3s-1)   uniform 4/(6s-3)   tauB      3s-1   4s-2
+  0.840000  2.0   1.97368              1.96078            1.4821   1.5200  1.3600
+  0.850000  2.0   1.93548              1.90476            1.5357   1.5500  1.4000
+  0.860000  2.0   1.89873              1.85185            1.5893   1.5800  1.4400
+  0.870000  2.0   1.86335              1.80180            1.6428   1.6100  1.4800
+  0.873346  2.0   1.85181              1.78565            1.6608   1.6200  1.4934
+PASS E1 4/(6s-3) = 2 at s = 5/6 and is decreasing, so < 2 exactly for s > 5/6
+PASS E2 4/(6s-3) < 3/(3s-1) iff 12s-4 < 18s-9 iff s > 5/6 (equality at 5/6)
+PASS F1 3/(2s) <= 4/(6s-3) iff 9 - 10s >= 0: equality at 9/10, holds on (5/6, 7/8]
+PASS F2 Ivic 3831/4791 and Bourgain 3734/4694 lie below 5/6
+
+runtime 28.07 s
+ALL PASS
+memcap: peak 13 MB rc=0
+       31.61 real        22.70 user        16.65 sys
+            28672000  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               32943  page reclaims
+                  50  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  26  signals received
+                  99  voluntary context switches
+               80933  involuntary context switches
+            85014391  instructions retired
+            68192703  cycles elapsed
+             2163024  peak memory footprint
+== end 19:37:01 rc=0

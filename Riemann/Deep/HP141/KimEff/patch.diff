@@ -1,0 +1,11 @@
+--- /Users/adriansager/playground/riemann/Riemann/Deep/KimEff/certify.py	2026-11-11 12:32:50
++++ /Users/adriansager/playground/riemann/Riemann/Deep/HP141/KimEff/certify.py	2026-11-14 20:25:44
+@@ -7,7 +7,7 @@
+ # python-flint is supplied at run time by uv (--with python-flint); it is not installed system-wide (no pip).
+ from flint import arb, ctx  # pyright: ignore[reportMissingImports]
+ ctx.prec = 256
+-A_STR = sys.argv[1] if len(sys.argv) > 1 else '0.37338196661320752'
++A_STR = sys.argv[1] if len(sys.argv) > 1 else '0.3733458561067185768011848'  # hp141: theta141 - 1/2 rounded UP at 1e-25
+ a = arb(A_STR)
+ pi = arb.pi()
+ def ex(x): return arb(x).exp()

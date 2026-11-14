@@ -1,0 +1,25 @@
+(B2_k): 612 cases, worst |F_phi|/bound = 1.0 (1 - ratio = 6.67719e-18) at (k, gamma, L, beta, lam*gamma/k, centred) = (1, 1e+16, 111.1, 0.999, 3.142, False)
+   60 cases with 1 - ratio < 1e-6 (all k <= 40, lam*gamma/k = pi); tightest 3:
+   near-tight: 1 - ratio = 6.67719e-18 at (1, 1e+16, 111.1, 0.999, 3.142, False), truncation 1.36e-183
+   near-tight: 1 - ratio = 6.67719e-18 at (1, 1e+16, 111.1, 0.999, 3.142, True), truncation 1.36e-183
+   near-tight: 1 - ratio = 1.46878e-17 at (2, 1e+16, 111.1, 0.999, 3.142, False), truncation 6.29e-181
+(B1'): worst |F_phi - F|/bound = 0.99999536 at (120, 14.134725, 111.1, 0.999, 0.0, False);  max last Taylor term / |F_phi| = 1.68e-22 at (2, 14.134725, 16.11809565, 0.999, 4.0, True); 37s
+       37.05 real        32.99 user         0.48 sys
+            34619392  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                4433  page reclaims
+                   7  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 115  voluntary context switches
+               54043  involuntary context switches
+           410318246  instructions retired
+           172146211  cycles elapsed
+            14582264  peak memory footprint
+memcap: peak 15 MB rc=0

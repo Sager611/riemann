@@ -1,0 +1,47 @@
+== start 20:05:18 cwd=/Users/adriansager/playground/riemann/.scratch/hp141/dbnb2/verifyA141 cmd: uv run --no-project --python 3.12 --with python-flint==0.8.0 python3 verify_arcs_141.py --workspace /Users/adriansager/playground/riemann/.scratch/hp141/dbnb2/Proof_and_Replay/Lambda_Peer_Review/inputs/workspace
+CHECKED 20000 row 3 elapsed 24.84
+CHECKED 40000 row 7 elapsed 47.3
+CHECKED 60000 row 11 elapsed 74.81
+CHECKED 80000 row 15 elapsed 99.74
+CHECKED 100000 row 19 elapsed 125.03
+CHECKED 120000 row 26 elapsed 150.23
+CHECKED 140000 row 34 elapsed 197.4
+CHECKED 160000 row 42 elapsed 242.51
+CHECKED 180000 row 50 elapsed 291.27
+CHECKED 200000 row 58 elapsed 315.12
+CHECKED 220000 row 65 elapsed 341.6
+{
+  "PASS": true,
+  "arcs_checked": 220162,
+  "exact_checks": 5776946,
+  "terminal_t": "110081/1024000",
+  "terminal_q": "7905864869759814112092869/79228162514264337593543950336",
+  "exact_full_cleanup_endpoint": "2130264443492687883657300572721/19807040628566084398385987584000",
+  "all_arc_witnesses": {
+    "path": "ALL_221010_ARC_INEQUALITY_WITNESSES.jsonl.gz",
+    "bytes": 423171012,
+    "sha256": "88ca31c07630f70a6f125f4472332cded4af3b456d02ad4017b2f8b2c3a0557f",
+    "uncompressed_canonical_transcript_sha256": "927b96d7afa0ec7c196de2fb4843f853be7f724a1cda81cbe318d38a5b2cdf13"
+  },
+  "seconds": 342.4848454166204
+}
+memcap: peak 44 MB rc=0
+      347.14 real       262.46 user       175.85 sys
+            62799872  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              306311  page reclaims
+                1023  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 265  signals received
+                1898  voluntary context switches
+             1024699  involuntary context switches
+           379032691  instructions retired
+           485926059  cycles elapsed
+             2277712  peak memory footprint
+== end 20:11:05 rc=0

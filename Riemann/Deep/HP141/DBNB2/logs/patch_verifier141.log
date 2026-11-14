@@ -1,0 +1,22 @@
+== start 20:05:09 cwd=/Users/adriansager/playground/riemann/Riemann/Deep/HP141/DBNB2 cmd: uv run --no-project --python 3.12 --with python-flint==0.8.0 python3 patch_verifier141.py /Users/adriansager/playground/riemann/.scratch/hp141/dbnb2/Proof_and_Replay/Lambda_Peer_Review/verification/arcs /Users/adriansager/playground/riemann/.scratch/hp141/dbnb2/out/FLOW_THETA141.json.gz /Users/adriansager/playground/riemann/.scratch/hp141/dbnb2/verifyA141
+{"mode": "A", "flow": "/Users/adriansager/playground/riemann/.scratch/hp141/dbnb2/out/FLOW_THETA141.json.gz", "sha256": "ea2ab380b81b16251e6096039bc0807c2d80491167399c8a4e875744f54bf32f", "steps": 220162, "last_row_arcs": 2}
+memcap: peak 0 MB rc=0
+        8.28 real         2.25 user         4.04 sys
+            47841280  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12356  page reclaims
+                  16  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   5  signals received
+                  51  voluntary context switches
+               25179  involuntary context switches
+            61950148  instructions retired
+            39446934  cycles elapsed
+             2228560  peak memory footprint
+== end 20:05:17 rc=0

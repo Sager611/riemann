@@ -1,0 +1,43 @@
+== start 19:46:09 cwd=/Users/adriansager/playground/riemann/Riemann/Deep/HP141/DBNB2 cmd: uv run --no-project --python 3.12 --with python-flint==0.8.0 python3 make_flow_b2.py --workspace /Users/adriansager/playground/riemann/.scratch/hp141/dbnb2/Proof_and_Replay/Lambda_Peer_Review/inputs/workspace --out /Users/adriansager/playground/riemann/.scratch/hp141/dbnb2/out/FLOW_THETA141.json.gz
+ARCS 20000 row 3 t 0.009765625 q 0.4744188306570766 el 8.2
+ARCS 40000 row 7 t 0.01953125 q 0.3983317483196855 el 15.8
+ARCS 60000 row 11 t 0.029296875 q 0.3291507951205104 el 25.4
+ARCS 80000 row 15 t 0.0390625 q 0.2667204284656438 el 34.9
+ARCS 100000 row 19 t 0.048828125 q 0.2108990666111426 el 45.8
+ARCS 120000 row 26 t 0.05859375 q 0.16140902716656458 el 55.3
+ARCS 140000 row 34 t 0.068359375 q 0.11802657545640928 el 73.2
+ARCS 160000 row 42 t 0.078125 q 0.08056850538795075 el 91.6
+ARCS 180000 row 50 t 0.087890625 q 0.04871317635782767 el 112.1
+ARCS 200000 row 58 t 0.09765625 q 0.022090033509125633 el 123.0
+ARCS 220000 row 65 t 0.107421875 q 0.0002583093741558514 el 133.4
+{
+  "steps": 220162,
+  "terminal_t": "110081/1024000",
+  "terminal_t_decimal": 0.1075009765625,
+  "terminal_q_decimal": 9.978604348341958e-05,
+  "endpoint_decimal": 0.1075508695842417,
+  "headline": "21510173917/200000000000",
+  "startup_gap_decimal": 9.309562791979319e-13,
+  "first_rate_decimal": 12.38344631564245,
+  "seconds": 141.7632414996624
+}
+memcap: peak 23 MB rc=0
+      143.30 real        88.91 user        59.39 sys
+            41271296  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              108615  page reclaims
+                 190  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  99  signals received
+                 397  voluntary context switches
+              363401  involuntary context switches
+           166538237  instructions retired
+           172162112  cycles elapsed
+             2294096  peak memory footprint
+== end 19:48:32 rc=0

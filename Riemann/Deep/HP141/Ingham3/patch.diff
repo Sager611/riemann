@@ -1,0 +1,31 @@
+--- /Users/adriansager/playground/riemann/Riemann/Deep/Ingham3/cert.py	2026-11-06 13:09:30
++++ /Users/adriansager/playground/riemann/Riemann/Deep/HP141/Ingham3/cert.py	2026-11-14 20:23:36
+@@ -30,10 +30,11 @@
+ # ------------------------------------------------------------------ inputs (DERIVATION.md sec. 1)
+ B2 = (arb(777) - arb(1081).sqrt())/852                 # Liu's contact B_2
+ TSTAR = B2 + arb('2.2e-254')                            # Bebel (Lean): zeta(s) != 0 for Re s > T*
+-B = arb('0.8733819666132076')                           # B >= T*  (checked below)
++B = arb('0.87334585610671858')  # hp141: PR 141 theta141 rounded UP at 1e-17 (B >= theta141 checked below)
++THB = arb(9908119238306612133369374975000622988619121777878229799765263366946606045502455625911569003364955967645745531862430068266267717)/11345012023616779600791582323373494582287250283647959965785871011074347975117040113347744503437234376916434871293982689424818700  # hp141: ball containing PR 141's exact theta141
+ T0 = arb('3e12')                                        # Platt-Trudgian: RH up to height 3*10^12
+-def Nplus(T):   # Hasanalizade-Shen-Wong Cor. 1.2: N(T) <= T/(2pi) log(T/(2 pi e)) + 0.1038 log T + 0.2573 loglog T + 9.3675, T >= e
+-    L = T.log(); return T/(2*PI)*(T/(2*PI*arb(1).exp())).log() + arb('0.1038')*L + arb('0.2573')*L.log() + arb('9.3675')
++def Nplus(T):   # Hasanalizade-Shen-Wong Cor. 1.2: N(T) <= T/(2pi) log(T/(2 pi e)) + 0.1038 log T + 0.2573 loglog T + 9.4926, T >= e
++    L = T.log(); return T/(2*PI)*(T/(2*PI*arb(1).exp())).log() + arb('0.1038')*L + arb('0.2573')*L.log() + arb('9.4926')
+ # ------------------------------------------------------------------ Kadiri-Lumley-Ng (arXiv 2101.12263, JMAA 465 (2018)), Lemma 4.14
+ H0 = arb('3.0610046e10'); HH = H0 - 1
+ b1, b2, b3, b4 = arb('0.62'), arb('1.048'), arb('0.605'), arb('0.529')
+@@ -391,11 +392,11 @@
+     return dict(k=7, nsmall=nsmall, cells=n1 + n2, worstR=max(w1[0], w2[0]), Lstar=Lstar, tailR=float(Rt.mid()))
+ def main():
+     say('Ingham3 certificate, python-flint', __import__('flint').__version__, 'prec', ctx.prec, 'quick' if QUICK else 'full')
+-    assert B > TSTAR
++    assert B > THB  # hp141: B >= theta141 (PR 141) replaces B > T*
+     say('half-plane: B2 =', B2.str(20), '; T* = B2 + 2.2e-254 < B =', B.str(17, radius=False))
+     check_S1()
+     # N(t) <= t log t for t >= 14 (used in sec. 4.2): T/(2pi) log(T/(2 pi e)) <= T log T/(2 pi) and the rest <= (1 - 1/(2 pi)) T log T at T = 14, growing slower
+-    t14 = arb(14); assert arb('0.1038')*t14.log() + arb('0.2573')*t14.log().log() + arb('9.3675') < (1 - 1/(2*PI))*t14*t14.log()
++    t14 = arb(14); assert arb('0.1038')*t14.log() + arb('0.2573')*t14.log().log() + arb('9.4926') < (1 - 1/(2*PI))*t14*t14.log()
+     P = build_kln()
+     pgrid = [arb(i)/200 for i in range(1, 301)]          # 0.005 .. 1.5
+     kernels = {}

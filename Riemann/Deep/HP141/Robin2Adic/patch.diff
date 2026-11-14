@@ -1,0 +1,45 @@
+--- /Users/adriansager/playground/riemann/Riemann/Deep/Robin2Adic/cert.py	2026-11-12 20:17:11
++++ /Users/adriansager/playground/riemann/Riemann/Deep/HP141/Robin2Adic/cert.py	2026-11-14 20:20:00
+@@ -22,18 +22,19 @@
+ PI = arb.pi(); EG = arb.const_euler(); LN2 = arb(2).log(); LN10 = arb(10).log()
+ B2 = (arb(777) - arb(1081).sqrt())/852                        # Richey (QuasiRiemannTracker PR 129): no zero with Re s > B2
+ TSTAR = B2 + arb('2.2e-254')                                  # Bebel (Lean): no zero with Re s > T*
+-B_BEBEL = arb('0.87338196661320752')                          # Bebel's decimal statement
++B_BEBEL = arb('0.87334585610671858')  # hp141: PR 141 theta141 rounded UP at 1e-17
++THB = arb(9908119238306612133369374975000622988619121777878229799765263366946606045502455625911569003364955967645745531862430068266267717)/11345012023616779600791582323373494582287250283647959965785871011074347975117040113347744503437234376916434871293982689424818700  # hp141: ball containing PR 141's exact theta141
+ NB = 2**44
+ _bu = int(float(up(B_BEBEL*NB).mid())) + 2
+ B_UP = arb(_bu)/NB                                            # exact dyadic, >= every threshold above
+-assert B_UP.rad() == 0 and B_UP > B_BEBEL and B_BEBEL > TSTAR and B_UP - B_BEBEL < arb('1e-12')
++assert B_UP.rad() == 0 and B_UP > B_BEBEL and B_BEBEL > THB and B_UP - B_BEBEL < arb('1e-12')
+ H0 = arb(3*10**12); h = H0.log()                              # Platt-Trudgian: RH for 0 < Im rho <= 3e12
+ GAMMA1 = arb('14.13')                                         # first zero ordinate 14.1347... > 14.13
+ S_LOW = 2 + EG - (4*PI).log()                                 # sum_rho 1/(rho(1-rho)) = 2 + gamma - log 4 pi; all terms have Re > 0
+ M0_100 = arb('2.4530e-12')                                    # BKLNW (Math. Comp. 2021) Table ThetaEpsilon, log X0 = 100: |theta(x)-x| < M0 x
+ M0_50 = arb('1.1199e-9')                                      # same table, log X0 = 50 (upper constant M0)
+ RS = arb('1.01624')                                           # Rosser-Schoenfeld 1962 Thm 9: theta(x) < 1.01624 x (x > 0)
+-HSW = (arb('0.1038'), arb('0.2573'), arb('9.3675'))           # Hasanalizade-Shen-Wong: |N(T) - T/2pi log(T/2pi e) - 7/8| <= a log T + b loglog T + c
++HSW = (arb('0.1038'), arb('0.2573'), arb('9.4926'))           # Hasanalizade-Shen-Wong: |N(T) - T/2pi log(T/2pi e) - 7/8| <= a log T + b loglog T + c
+ Y_R = arb('46.79')                                            # RobinCH: Robin for 5041 <= n <= 10^(10^46.79)
+ L1 = arb(10857)/100                                           # claimed: every n > 10^(10^46.79) has x = p_k >= e^{L1}
+ I2 = (h*h/2 + h/2 + arb(1)/4)/H0**2                           # int_{H0}^oo t^-3 log^2 t dt
+@@ -140,7 +141,7 @@
+ if __name__ == '__main__':
+     res = {}
+     say('Robin2Adic cert.py, prec %d bits%s' % (ctx.prec, ' (QUICK grid)' if QUICK else ''))
+-    say('B2 = %s, T* = B2 + 2.2e-254, Bebel 0.87338196661320752, used B_UP = %s (exact dyadic)' % (s6(B2, 20), s6(B_UP, 20)))
++    say('B2 = %s, T* = B2 + 2.2e-254, hp141 theta141 rounded up 0.87334585610671858, used B_UP = %s (exact dyadic)' % (s6(B2, 20), s6(B_UP, 20)))
+     say('tau (HSW) = %s; S_low = 2 + gamma - log 4pi = %s' % (s6(TAU), s6(S_LOW)))
+     # (1) reproduction of GL's terminal bound at L = 106
+     v = gl_terminal(arb(106)); res['GL_L106'] = s6(v, 10)
+--- /Users/adriansager/playground/riemann/Riemann/Deep/Robin2Adic/check.py	2026-11-12 20:17:11
++++ /Users/adriansager/playground/riemann/Riemann/Deep/HP141/Robin2Adic/check.py	2026-11-14 20:20:00
+@@ -13,7 +13,7 @@
+ C = importlib.util.module_from_spec(spec); spec.loader.exec_module(C)          # library import (main guarded)
+ from flint import arb
+ def P(*a): print(*a, flush=True)
+-H0 = mp.mpf(3e12); h = mp.log(H0); B = mp.mpf('0.87338196661320752'); tau = mp.mpf(C.TAU.str(20, radius=False))
++H0 = mp.mpf(3e12); h = mp.log(H0); B = mp.mpf('0.8733458561067187'); tau = mp.mpf(C.TAU.str(20, radius=False))
+ I2 = (h*h/2 + h/2 + mp.mpf(1)/4)/H0**2; I1 = (h/2 + mp.mpf(1)/4)/H0**2
+ def af(x): return mp.mpf(x.str(22, radius=False))
+ KP = C.I4.build_kln_H0('3e12')

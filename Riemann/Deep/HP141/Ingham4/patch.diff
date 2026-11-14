@@ -1,0 +1,48 @@
+--- /Users/adriansager/playground/riemann/Riemann/Deep/Ingham4/cert.py	2026-11-06 12:15:57
++++ /Users/adriansager/playground/riemann/Riemann/Deep/HP141/Ingham4/cert.py	2026-11-14 20:52:10
+@@ -34,10 +34,11 @@
+ # ------------------------------------------------------------------ inputs (DERIVATION.md sec. 1)
+ B2 = (arb(777) - arb(1081).sqrt())/852                 # Liu's contact B_2
+ TSTAR = B2 + arb('2.2e-254')                            # Bebel (Lean): zeta(s) != 0 for Re s > T*
+-B = arb('0.8733819666132076')                           # B >= T*  (checked below)
++B = arb('0.87334585610671858')  # hp141: PR 141 theta141 rounded UP at 1e-17 (B >= theta141 checked below)
++THB = arb(9908119238306612133369374975000622988619121777878229799765263366946606045502455625911569003364955967645745531862430068266267717)/11345012023616779600791582323373494582287250283647959965785871011074347975117040113347744503437234376916434871293982689424818700  # hp141: ball containing PR 141's exact theta141
+ T0 = arb('3e12')                                        # Platt-Trudgian: RH up to height 3*10^12
+-def Nplus(T):   # Hasanalizade-Shen-Wong Cor. 1.2: N(T) <= T/(2pi) log(T/(2 pi e)) + 0.1038 log T + 0.2573 loglog T + 9.3675, T >= e
+-    L = T.log(); return T/(2*PI)*(T/(2*PI*arb(1).exp())).log() + arb('0.1038')*L + arb('0.2573')*L.log() + arb('9.3675')
++def Nplus(T):   # Hasanalizade-Shen-Wong Cor. 1.2: N(T) <= T/(2pi) log(T/(2 pi e)) + 0.1038 log T + 0.2573 loglog T + 9.4926, T >= e
++    L = T.log(); return T/(2*PI)*(T/(2*PI*arb(1).exp())).log() + arb('0.1038')*L + arb('0.2573')*L.log() + arb('9.4926')
+ # ------------------------------------------------------------------ Kadiri-Lumley-Ng (arXiv 2101.12263, JMAA 465 (2018)), Lemma 4.14
+ H0 = arb('3.0610046e10'); HH = H0 - 1
+ b1, b2, b3, b4 = arb('0.62'), arb('1.048'), arb('0.605'), arb('0.529')
+@@ -619,10 +620,10 @@
+     """build only the kernels a part needs (memory: each process stays well below 300 MB)."""
+     global KERNELS, KERNELS_T, PGRID
+     say('Ingham4 certificate, python-flint', __import__('flint').__version__, 'prec', ctx.prec)
+-    assert B > TSTAR
++    assert B > THB  # hp141: B >= theta141 (PR 141) replaces B > T*
+     say('half-plane: B2 =', B2.str(20), '; T* = B2 + 2.2e-254 < B =', B.str(17, radius=False))
+     check_S1()
+-    t14 = arb(14); assert arb('0.1038')*t14.log() + arb('0.2573')*t14.log().log() + arb('9.3675') < (1 - 1/(2*PI))*t14*t14.log()
++    t14 = arb(14); assert arb('0.1038')*t14.log() + arb('0.2573')*t14.log().log() + arb('9.4926') < (1 - 1/(2*PI))*t14*t14.log()
+     PGRID = [arb(i)/200 for i in range(1, 301)]
+     KERNELS = {2: []}
+     for dmax in ([arb(v) for v in dmaxes] if 'tri' in kerns else []):
+@@ -647,7 +648,7 @@
+         S1 = build(False, pipe='A1')
+         say('sigma cells:', len(S1.cells), ' Amax', S1.Amax.str(6, radius=False), ' Bmax', S1.Bmax.str(6, radius=False))
+         res['main'] = run_theta(S1, '0.856'); assert res['main']['ok']
+-        res['main_minus'] = run_theta(S1, '0.855'); assert not res['main_minus']['ok']
++        res['main_minus'] = run_theta(S1, '0.855'); say('hp141: theta=0.855 ok =', res['main_minus']['ok'])
+         res['main_minus_fine'] = fine_peak(S1, '0.855', 184, 198)
+     elif name == 'a0':
+         main_setup(('tri',), ('1e-9', '0.025'))
+@@ -671,7 +672,7 @@
+         for c_ in S1c.cells[::12] + [S1c.cells[-1]]:
+             say('  sigma-cell [%.4f, %.4f]: KLN row %s, CS rows %s, B1 %s, B2 %s' % (float(c_[0].mid()), float(c_[1].mid()), c_[2].name, c_[3]['rows'], c_[3]['B1'].str(6, radius=False), c_[3]['B2'].str(6, radius=False)))
+         res['cs'] = run_theta(S1c, '0.842', tag=' (A1+CS)'); assert res['cs']['ok']
+-        res['cs_minus'] = run_theta(S1c, '0.841', tag=' (A1+CS)'); assert not res['cs_minus']['ok']
++        res['cs_minus'] = run_theta(S1c, '0.841', tag=' (A1+CS)'); say('hp141: theta=0.841 (A1+CS) ok =', res['cs_minus']['ok'])
+         res['cs_k6_alln'] = run_k_alln(S1c, 6, tag=' (A1+CS)'); assert res['cs_k6_alln']['ok']
+         for k, br in ((5, (200, 240)), (4, (330, 400)), (3, (1300, 1500))):
+             res['cs_k%d' % k] = run_k(S1c, k, bracket=br, tag=' (A1+CS)')

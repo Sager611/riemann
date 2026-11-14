@@ -1,0 +1,23 @@
+N b0=[0.873381966613207520000000000000000000000000000000000000000 +/- 3.98e-59] box at 10^48.252447 (width 1.9e-06): RobinCH m -1.34e-06 (k=29); own fine grid (4 best k, lam x 0.5..2.0 in 31 steps): best m -1.34e-06 at k=29, lam=3.086e-11
+R b0=[0.873381966613207520000000000000000000000000000000000000000 +/- 3.98e-59] box at 10^47.156207 (width 1.9e-06): RobinCH m -6.58e-07 (k=30); own fine grid (4 best k, lam x 0.5..2.0 in 31 steps): best m -6.55e-07 at k=30, lam=3.175e-11
+N b0=1.00000000000000000000000000000000000000000000000000000000 box at 10^47.799393 (width 1.9e-06): RobinCH m -9.21e-07 (k=56); own fine grid (4 best k, lam x 0.5..2.0 in 31 steps): best m 0.00271 at k=55, lam=6.023e-11
+R b0=1.00000000000000000000000000000000000000000000000000000000 box at 10^46.810759 (width 1.9e-06): RobinCH m -3.18e-08 (k=56); own fine grid (4 best k, lam x 0.5..2.0 in 31 steps): best m 0.00089 at k=55, lam=6.023e-11
+        7.24 real         2.49 user         0.23 sys
+            41402368  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                5824  page reclaims
+                 871  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 158  voluntary context switches
+               10062  involuntary context switches
+           422773312  instructions retired
+           202450467  cycles elapsed
+            15319568  peak memory footprint
+memcap: peak 0 MB rc=0

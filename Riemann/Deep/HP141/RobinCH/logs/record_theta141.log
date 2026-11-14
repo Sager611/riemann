@@ -1,0 +1,25 @@
+== start 19:20:58 cwd=/Users/adriansager/playground/riemann/Riemann/Deep/HP141/RobinCH cmd: uv run --no-project --with python-flint --with mpmath python3 record_theta141.py
+certify.C3 = [9.49260000000000000000000000000000000000000000000000000000 +/- 1.10e-57]
+Level 3 (code 4), b0 = theta141, 4-digit: Nicolas on [1e7, 1.788e48]: PASS (417 boxes, min 0.000151, k <= 40); Robin on CA with largest prime in [1e10, 1.433e47]: PASS (1242 boxes, min 2.46e-06, k <= 40) => Robin for 5041 <= n <= 10^(10^46.7940); 79s
+Level 3 (code 4), b0 = old 0.87338196661320752, 4-digit: Nicolas on [1e7, 1.788e48]: PASS (425 boxes, min 2.43e-05, k <= 40); Robin on CA with largest prime in [1e10, 1.432e47]: PASS (1193 boxes, min 1.63e-06, k <= 40) => Robin for 5041 <= n <= 10^(10^46.7937); 144s
+Level 3 (code 4), b0 = theta141, 3-digit (printed record): Nicolas on [1e7, 1.78e48]: PASS (404 boxes, min 0.00172, k <= 40); Robin on CA with largest prime in [1e10, 1.43e47]: PASS (1161 boxes, min 8.78e-06, k <= 40) => Robin for 5041 <= n <= 10^(10^46.7931); 209s
+memcap: peak 19 MB rc=0
+      212.13 real       167.79 user       104.83 sys
+            35569664  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              200780  page reclaims
+                 800  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 164  signals received
+                 838  voluntary context switches
+              522307  involuntary context switches
+           269639691  instructions retired
+           267248779  cycles elapsed
+             2277712  peak memory footprint
+== end 19:24:30 rc=0

@@ -1,0 +1,16 @@
+--- /Users/adriansager/playground/riemann/Riemann/Deep/MertensCH/bprime.py	2026-11-11 13:43:48
++++ /Users/adriansager/playground/riemann/Riemann/Deep/HP141/MertensCH/bprime.py	2026-11-14 20:22:01
+@@ -1,3 +1,4 @@
++# hp141 copy: B' = theta141 (PR 141) rounded up, 0.87334585610671858.
+ # bprime.py -- routine rerun of the Mertens78 pipeline with the Lean-checked half-plane B' = 0.87338196661320752.
+ # Each Mertens78 certificate is translated by -(7/8 - B'): all lines sigma_j and sigma_1 move left by D, so the
+ # heights sigma_j - B' are identical to the old sigma_j - 7/8 and (C1), (C2) are unchanged (DERIVATION.md section 4).
+@@ -10,7 +11,7 @@
+ sys.path.insert(0, M78)
+ import cert as C78
+ ctx.prec = 120
+-BPs = "0.87338196661320752"; BP = arb(BPs); DD = Decimal("0.875") - Decimal(BPs)
++BPs = "0.87334585610671858"; BP = arb(BPs); DD = Decimal("0.875") - Decimal(BPs)  # hp141: PR 141 theta141 rounded UP at 1e-17
+ C78.B = BP                                    # heights in Cert (Harnack mass, x1, F) now relative to B'
+ def sh(v): return str(Decimal(v) - DD)
+ def translate(cf):

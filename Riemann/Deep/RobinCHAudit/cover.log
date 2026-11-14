@@ -1,0 +1,23 @@
+N b0=0.87338196661320752 to 1.78e48: 389 passing / 404 boxes; first La <= log 10^7: True; frontier gaps: 0; last Lb >= log X: True (log10 end = 48.250420002); min width 0.00213; max k 40; min m 0.001469
+R b0=0.87338196661320752 to 1.43e47: 638 passing / 1161 boxes; first La <= log 10^10: True; frontier gaps: 0; last Lb >= log X: True (log10 end = 47.155336037); min width 0.0001; max k 40; min m 1.632e-06
+N b0=1 to 6.30e47: 392 passing / 419 boxes; first La <= log 10^7: True; frontier gaps: 0; last Lb >= log X: True (log10 end = 47.799340549); min width 0.000106; max k 57; min m 9.349e-06
+R b0=1 to 6.46e46: 641 passing / 1171 boxes; first La <= log 10^10: True; frontier gaps: 0; last Lb >= log X: True (log10 end = 46.810232518); min width 0.000122; max k 57; min m 2.031e-06
+        0.84 real         0.30 user         0.15 sys
+            35045376  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                5543  page reclaims
+                 692  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 184  voluntary context switches
+                1567  involuntary context switches
+           411872372  instructions retired
+           191004531  cycles elapsed
+            14926352  peak memory footprint
+memcap: peak 0 MB rc=0

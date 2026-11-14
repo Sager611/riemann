@@ -1,0 +1,47 @@
+== start 19:38:54 cwd=/Users/adriansager/playground/riemann/Riemann/Deep/HP141/PrimRootNum cmd: uv run --no-project --with python-flint --with mpmath --with numpy python3 cert.py all
+[core] B_2 = [0.87338196661320751993 +/- 9.74e-22], B = [0.87334585610671858 +/- 3.20e-18] (= theta141, PR 141), 1/(1-B) = [7.89551742454 +/- 3.16e-12]
+[core] ZETA: sum_rho 1/gamma^2 <= [0.046371172 +/- 4.05e-10]
+[core] BMOR at conductor 9: R(5/7;9) = [1.5520999 +/- 2.54e-8] > 0
+[sieve] 62 levels recomputed for w <= 10000 in 60 s
+[omega] w=    1 p_w=     2 L>=1.099 kappa=3.53 c_w=1.4301  (0 s)
+[omega] w=    2 p_w=     3 L>=1.946 kappa=11.1 c_w=1.4312  (0 s)
+[omega] w=    3 p_w=     5 L>=3.434 kappa=17.3 c_w=1.1363  (0 s)
+[omega] w=    5 p_w=    11 L>=7.745 kappa=54.1 c_w=0.9661  (0 s)
+[omega] w=   10 p_w=    29 L>=22.59 kappa=216 c_w=0.7508  (0 s)
+[omega] w=   20 p_w=    71 L>=61.59 kappa=868 c_w=0.6117  (0 s)
+[omega] w=   50 p_w=   229 L>=210.2 kappa=6130 c_w=0.5177  (0 s)
+[omega] w=  100 p_w=   541 L>=505.8 kappa=2.72e+04 c_w=0.4737  (0 s)
+[omega] w=  200 p_w=  1223 L>=1181 kappa=1.24e+05 c_w=0.4464  (0 s)
+[omega] w=  500 p_w=  3571 L>=3499 kappa=9.44e+05 c_w=0.4256  (1 s)
+[omega] w= 1000 p_w=  7919 L>=7812 kappa=4.32e+06 c_w=0.4137  (1 s)
+[omega] w= 2000 p_w= 17389 L>=1.723e+04 kappa=2.01e+07 c_w=0.4076  (2 s)
+[omega] w= 5000 p_w= 48611 L>=4.829e+04 kappa=1.51e+08 c_w=0.4015  (5 s)
+[omega] w=10000 p_w=104729 L>=1.044e+05 kappa=6.85e+08 c_w=0.3976  (11 s)
+[omega] Theorem B (all p, omega(p-1) <= 10000): g*(p) <= (1.4312 log p)^(3/(1-B)), worst w = 2
+[omega] Theorem B' (p > 1e7, omega(p-1) <= 10000): g*(p) <= (407/500 log p)^(3/(1-B)), worst w = 8
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/HP141/PrimRootNum/cert.py", line 392, in <module>
+    small_section(10 ** 7, cBr, float((3 * INV_b).lower()))
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/HP141/PrimRootNum/cert.py", line 323, in small_section
+    import numpy as np, small as SM
+ModuleNotFoundError: No module named 'small'
+memcap: peak 84 MB rc=1
+       87.87 real        74.05 user        47.94 sys
+           123650048  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              105048  page reclaims
+                 135  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  76  signals received
+                 543  voluntary context switches
+              241601  involuntary context switches
+           155758109  instructions retired
+           138329580  cycles elapsed
+             2277712  peak memory footprint
+== end 19:40:22 rc=1

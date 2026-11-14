@@ -1,0 +1,14 @@
+PASS roundings up: TH_UP17, TH_UP25, TH_UP40, TH_FLOAT_UP >= theta141
+PASS theta141 < old 0.87338196661320752 by 3.611e-5
+PASS theta141 < Liu's contact B2 = (777 - sqrt 1081)/852:  (777 - 852 theta)^2 > 1081
+PASS ExplProg exponent 1/(1-theta141) = 7.8955174245 in (7.8955, 7.8956]; old 1/(1-0.8733819666132076) = 7.8977691665 -> 7.8978
+PASS PrimRootNum exponents: 3.4/(1-theta) = 26.844759 <= 26.85, 3/(1-theta) = 23.686552 <= 23.69, 1/(1-theta) <= 7.896
+PASS Exp48 side condition 1/(4(1-theta)) = 1.9739 < 11.2
+PASS Littlewood78 limit (pi^2/6) e^-gamma (1-theta) = 0.1169732 >= 0.11697 (float, 1e-15 safe)
+PASS KimEff 3.6/(4a^2), a = theta - 1/2: 6.4568372 >= 6.456
+PASS Ingham3 k=3: stated e^626.82 >= certified n0 = e^626.8167
+PASS Ingham3 k=4: stated e^117.17 >= certified n0 = e^117.17
+PASS Ingham3 k=5: stated e^57.73 >= certified n0 = e^57.73
+PASS Ingham3 k=6: stated e^36.23 >= certified n0 = e^36.2283
+PASS BVIrr row a = 1/(1-theta141) = 7.895517 (was 7.897769)
+ALL PASS

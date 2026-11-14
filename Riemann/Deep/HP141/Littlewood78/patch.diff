@@ -1,0 +1,22 @@
+--- /Users/adriansager/playground/riemann/Riemann/Deep/Littlewood78/cert.py	2026-11-05 20:52:56
++++ /Users/adriansager/playground/riemann/Riemann/Deep/HP141/Littlewood78/cert.py	2026-11-14 20:22:53
+@@ -7,7 +7,7 @@
+ ctx.prec = 256
+ 
+ import os
+-B_STR = os.environ.get('LW78_B', '0.87338196661320752')   # default: Lean-checked half-plane (Bebel, 31 Oct 2026)
++B_STR = os.environ.get('LW78_B', '0.8733458561067185768011848')   # hp141: PR 141 theta141 rounded UP at 1e-25
+ B = arb(7)/8 if B_STR == '7/8' else arb(B_STR)              # ball contains the exact value
+ b = 1 - B
+ CA = arb(os.environ.get('LW78_CA', '0.11')); CB = arb(os.environ.get('LW78_CB', '0.115'))
+--- /Users/adriansager/playground/riemann/Riemann/Deep/Littlewood78/xcheck.py	2026-11-05 20:12:09
++++ /Users/adriansager/playground/riemann/Riemann/Deep/HP141/Littlewood78/xcheck.py	2026-11-14 20:22:53
+@@ -3,7 +3,7 @@
+ # Independent re-implementation of Proposition 10 (PROOF.md) in mpmath, to cross-check cert.py values.
+ import mpmath as mp
+ mp.mp.dps = 50
+-B = mp.mpf('0.87338196661320752'); b = 1 - B
++B = mp.mpf('0.8733458561067185768011848'); b = 1 - B
+ g = mp.euler; E = mp.mpf('-1.33258227573')
+ def F(ell, L, h, L1, h1):
+     L, h, L1, h1, ell = map(mp.mpf, (L, h, L1, h1, ell))

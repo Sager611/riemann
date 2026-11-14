@@ -1,0 +1,22 @@
+== start 19:28:22 cwd=/Users/adriansager/playground/riemann/Riemann/Deep/HP141/OddRobin cmd: uv run --no-project --with python-flint --with mpmath --with numpy python3 transfer.py 5e8 1.433e47
+PASS: odd Robin at every odd CA number with x_1 in [5e8, 1.433e47] (b0 = [0.8733458561 +/- 6.72e-12]) => all odd N < n <= 10^(10^46.7940): 1288 boxes, min margin after odd correction 2.6e-07, k <= 40; 126s
+memcap: peak 21 MB rc=0
+      131.61 real        63.71 user        47.17 sys
+            42188800  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               85161  page reclaims
+                 216  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  70  signals received
+                 253  voluntary context switches
+              335864  involuntary context switches
+           136678041  instructions retired
+           139330766  cycles elapsed
+             2212176  peak memory footprint
+== end 19:30:33 rc=0

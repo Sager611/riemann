@@ -1,0 +1,113 @@
+{
+ "res": {
+  "cs": {
+   "theta": "0.842",
+   "ok": true,
+   "cells": 4932,
+   "worstR": 0.863561325799447,
+   "worstL": 175.20000000000863,
+   "Lstar": 300,
+   "tailR": 0.08099835411991119,
+   "small": {
+    "records": 22,
+    "last": [
+     154,
+     4652353
+    ],
+    "worst_ratio": 0.7124143742160444
+   }
+  },
+  "cs_minus": {
+   "theta": "0.841",
+   "ok": true,
+   "cells": 4932,
+   "worstR": 0.9975029248965654,
+   "worstL": 174.20000000000812,
+   "Lstar": 300,
+   "tailR": 0.0919448197537804,
+   "small": {
+    "records": 22,
+    "last": [
+     154,
+     4652353
+    ],
+    "worst_ratio": 0.7124143742160444
+   }
+  },
+  "cs_k6_alln": {
+   "k": 6,
+   "nsmall": 100,
+   "ok": true,
+   "cells": 5448,
+   "worstR": 0.7006231479978489,
+   "worstL": 177.18102111593433,
+   "Lstar": 300,
+   "tailR": 0.12836366361412593
+  },
+  "cs_k5": {
+   "k": 5,
+   "L0": 227.84,
+   "logn0": 45.568,
+   "cells": 3444,
+   "worstR": 0.999573004000006,
+   "worstL": 227.84,
+   "Lstar": 400,
+   "tailR": 0.052447100396765464
+  },
+  "cs_k4": {
+   "k": 4,
+   "L0": 364.56,
+   "logn0": 91.14,
+   "cells": 2755,
+   "worstR": 0.999994526379802,
+   "worstL": 364.56,
+   "Lstar": 640,
+   "tailR": 0.023650122280980814
+  },
+  "cs_k3": {
+   "k": 3,
+   "L0": 1404.45,
+   "logn0": 468.15000000000003,
+   "cells": 3983,
+   "worstR": 0.9999180316847339,
+   "worstL": 1404.45,
+   "Lstar": 2400,
+   "tailR": 0.016071481790086564
+  },
+  "_rss_MB_cs": 151.640625
+ },
+ "log": [
+  "Ingham4 certificate, python-flint 0.9.0 prec 128",
+  "half-plane: B2 = [0.87338196661320751993 +/- 9.74e-22] ; T* = B2 + 2.2e-254 < B = 0.87334585610671858",
+  "kernel: sup_{y>=pi} |sin y|/y <= 0.2173 checked on 8000 subintervals of [pi, 2pi]",
+  "trapezoid kernel a=0.1 dmax=1.00e-9: 6684 lambda-points, stored to 63.9, 5.5s",
+  "trapezoid kernel a=0.1 dmax=0.0250: 6684 lambda-points, stored to 63.9, 5.0s",
+  "trapezoid kernel a=0.1 dmax=0.150: 6684 lambda-points, stored to 63.9, 6.3s",
+  "=== CONDITIONAL: A1 + Chourasiya-Simonic 2507.15184 Cor. 1.1 (unrefereed), B1 raised for b4 = 0.5501 (RZA 2603.25961) ===",
+  "KLN rows at H0 = 3e12: not admissible (dropped): ['0.60']",
+  "KLN rows at H0 = 3e12: A(sigma0) = 0.65:2.7922 0.70:3.7563 0.75:4.9832 0.80:6.5478 0.85:8.5122 0.86:8.9580 0.87:9.4220 0.88:9.9044 0.89:10.406 0.90:10.926 0.91:11.466 0.92:12.024 0.93:12.601 0.94:13.196 0.95:13.810 0.96:14.441 0.97:15.089 0.98:15.753 0.99:16.431",
+  "  sigma-cell [0.5150, 0.5175]: KLN row 0.65, CS rows ['0.50000-0.53125'], B1 5.07307, B2 15.3017",
+  "  sigma-cell [0.5450, 0.5475]: KLN row 0.65, CS rows ['0.53125-0.56250'], B1 6.05614, B2 14.8277",
+  "  sigma-cell [0.5750, 0.5775]: KLN row 0.65, CS rows ['0.56250-0.59375'], B1 7.09556, B2 14.3537",
+  "  sigma-cell [0.6050, 0.6075]: KLN row 0.65, CS rows ['0.59375-0.62500'], B1 8.21491, B2 13.8797",
+  "  sigma-cell [0.6350, 0.6375]: KLN row 0.65, CS rows ['0.62500-0.65625'], B1 9.43180, B2 13.4067",
+  "  sigma-cell [0.6650, 0.6675]: KLN row 0.65, CS rows ['0.65625-0.68750'], B1 10.7641, B2 12.9362",
+  "  sigma-cell [0.6950, 0.6975]: KLN row 0.70, CS rows ['0.68750-0.71875'], B1 12.1987, B2 12.4622",
+  "  sigma-cell [0.7250, 0.7275]: KLN row 0.75, CS rows ['0.71875-0.75000'], B1 13.7801, B2 11.9882",
+  "  sigma-cell [0.7550, 0.7575]: KLN row 0.75, CS rows ['0.75000-0.78125'], B1 15.5096, B2 11.5142",
+  "  sigma-cell [0.7850, 0.7875]: KLN row 0.80, CS rows ['0.78125-0.81250'], B1 17.4190, B2 11.0412",
+  "  sigma-cell [0.8150, 0.8175]: KLN row 0.80, CS rows ['0.81250-0.84375'], B1 19.5820, B2 10.5672",
+  "  sigma-cell [0.8450, 0.8475]: KLN row 0.85, CS rows ['0.84375-0.87500'], B1 22.1236, B2 10.0932",
+  "  sigma-cell [0.8725, 0.8733]: KLN row 0.88, CS rows ['0.84375-0.87500'], B1 22.1236, B2 10.0932",
+  "small x (theta = 842/1000): 22 gap records below 10000000 (largest (154, 4652353)), all g <= p^theta (worst log g/log p = 0.7124 at p = 7); 1476 <= 9999991^theta; e^42 < 4e18",
+  "theta=0.842 (A1+CS): 4932 cells on [42, 300] all R < 1 (max 0.8636 at log x = 175.20); tail from L*=300: R <= 0.081; small x below e^42: gap records + OeS-H-P; CERTIFIED  84s",
+  "small x (theta = 841/1000): 22 gap records below 10000000 (largest (154, 4652353)), all g <= p^theta (worst log g/log p = 0.7124 at p = 7); 1476 <= 9999991^theta; e^42 < 4e18",
+  "theta=0.841 (A1+CS): 4932 cells on [42, 300] all R < 1 (max 0.9975 at log x = 174.20); tail from L*=300: R <= 0.0919; small x below e^42: gap records + OeS-H-P; CERTIFIED  77s",
+  "hp141: theta=0.841 (A1+CS) ok = True",
+  "k=6 (A1+CS): every n >= 100: 5448 cells on [27.631, 300] (max R 0.7006 at L=177.18), tail from L*=300: R <= 0.128; 1 <= n <= 100 checked directly (largest prime 1000000000039); CERTIFIED  91s",
+  "k=5 (A1+CS): x0 = e^227.84 (n0 = e^45.5680 = 6.1650e+19); 3444 cells on [227.84, 400] all R < 1 (max 0.9996 at L=227.84); tail from L*=400: R <= 0.0524; CERTIFIED  54s",
+  "k=4 (A1+CS): x0 = e^364.56 (n0 = e^91.1400 = 3.8159e+39); 2755 cells on [364.56, 640] all R < 1 (max 1.0000 at L=364.56); tail from L*=640: R <= 0.0237; CERTIFIED  68s",
+  "k=3 (A1+CS): x0 = e^1404.45 (n0 = e^468.1500 = 2.0652e+203); 3983 cells on [1404.45, 2400] all R < 1 (max 0.9999 at L=1404.45); tail from L*=2400: R <= 0.0161; CERTIFIED  106s",
+  "part cs: peak memory 152 MB, 495s"
+ ]
+}

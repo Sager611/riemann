@@ -1,0 +1,26 @@
+== start 19:48:32 cwd=/Users/adriansager/playground/riemann/Riemann/Deep/HP141/DBNB2 cmd: python3 float_check.py /Users/adriansager/playground/riemann/.scratch/hp141/dbnb2/Proof_and_Replay/Lambda_Peer_Review/verification/arcs/ACTUAL_67_ROW_ARC_INPUTS.json
+b0 scheme 1 arcs 220181 T 0.10751025390625 qT 9.934282176710107e-05 endpoint 0.10755992531713356
+b0 scheme 2 arcs 220181 T 0.10751025390625 qT 9.927353311190824e-05 endpoint 0.10755989067280596
+theta141_up scheme 1 arcs 220162 T 0.1075009765625 qT 9.978604348907794e-05 endpoint 0.10755086958424454
+theta141_up scheme 2 arcs 220162 T 0.1075009765625 qT 9.971676862735026e-05 endpoint 0.10755083494681368
+dLambda/db0 near b0 (model): 0.2507627045282568
+memcap: peak 9 MB rc=0
+       24.38 real        20.16 user        12.87 sys
+            18104320  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22171  page reclaims
+                  68  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                  17  signals received
+                  57  voluntary context switches
+               68881  involuntary context switches
+            76596852  instructions retired
+            52653195  cycles elapsed
+             2261328  peak memory footprint
+== end 19:48:57 rc=0

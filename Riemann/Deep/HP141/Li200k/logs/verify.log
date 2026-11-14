@@ -1,0 +1,36 @@
+== start 19:55:19 cwd=/Users/adriansager/playground/riemann/Riemann/Deep/HP141/Li200k cmd: uv run --no-project --with python-flint python3 verify.py
+inputs: T0 = 3000175332800, E(T0) = [14.213738 +/- 3.03e-7], K0 = 1.21531727961488, K1 = -0.0516076261294054
+part 0: per-zero inequality holds in 3000 random cases (min slack 0.00372)
+part 1: zero gamma* in (14.13,14.14) on the line (Z sign change [-0.0037463 +/- 3.84e-8], [0.0041856 +/- 1.90e-8]);
+        for 1 <= n <= 88: lambda_n >= [0.00335134 +/- 1.63e-9] - [2.13e-23 +/- 1.09e-26] > 0
+part 3: lambda_1 = [0.0230957089661 +/- 2.11e-14]; for 89 <= n <= 600 our lower bound <= 0.786 lambda_n; min lambda_n (n<=600) = lambda_1
+check : at n = 1e5 our lower bound [450675.70 +/- 4.29e-3] <= lambda_n = 462580.78 (Johansson)
+part 2: A (a=1/2)                      lambda_n > 0 for all n <= N = 708505587700793981366435840  (N/T0^2 = 78.713642, 97 steps, 25.7 s)
+        at N: M_lo = [2.11009e+28 +/- 4.28e+21], Q_hi = [2.11009e+28 +/- 5.47e+20], asymptotic (n/2)(log n-1-log 2pi+gamma) = [2.11009e+28 +/- 4.28e+21]
+part 2: B (a=1/2-1/(5.558691 log t))   lambda_n > 0 for all n <= N = 717734280405823147676270592  (N/T0^2 = 79.738933, 92 steps, 20.7 s)
+        at N: M_lo = [2.13804e+28 +/- 4.5e+19], Q_hi = [2.13804e+28 +/- 8.37e+21], asymptotic (n/2)(log n-1-log 2pi+gamma) = [2.13804e+28 +/- 4.5e+19]
+part 2: C (a=3/8, 7/8 half-plane)      lambda_n > 0 for all n <= N = 952080909647480761027133440  (N/T0^2 = 105.774404, 91 steps, 14.2 s)
+        at N: M_lo = [2.84958e+28 +/- 3.70e+21], Q_hi = [2.84958e+28 +/- 4.70e+22], asymptotic (n/2)(log n-1-log 2pi+gamma) = [2.84958e+28 +/- 3.70e+21]
+part 2: G (a=theta141-1/2, PR 141 exact, 13 Nov 2026) lambda_n > 0 for all n <= N = 956413498941653124095410176  (N/T0^2 = 106.255746, 94 steps, 16.2 s)
+        at N: M_lo = [2.86276e+28 +/- 4.20e+22], Q_hi = [2.86276e+28 +/- 1.07e+22], asymptotic (n/2)(log n-1-log 2pi+gamma) = [2.86276e+28 +/- 4.20e+22]
+total runtime 78.6 s
+memcap: peak 22 MB rc=0
+       83.80 real        61.21 user        41.54 sys
+            38993920  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               74504  page reclaims
+                 634  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  23  messages received
+                  61  signals received
+                 272  voluntary context switches
+              235405  involuntary context switches
+           130186055  instructions retired
+           136543510  cycles elapsed
+             2310480  peak memory footprint
+== end 19:56:43 rc=0

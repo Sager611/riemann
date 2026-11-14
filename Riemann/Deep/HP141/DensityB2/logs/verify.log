@@ -1,0 +1,117 @@
+== start 19:36:22 cwd=/Users/adriansager/playground/riemann/Riemann/Deep/HP141/DensityB2 cmd: uv run --no-project python3 verify.py
+PASS sigma* = (5-4B)/(7-6B) solves tauB = 3 sigma - 1
+   sigma* = 0.8560686918741528
+PASS A1 m=2: 3/tau0_m equals the table formula (two points)
+PASS A2 m=2: m(tau_m + 2 - 4s) = 2 - 2s
+PASS A1 m=3: 3/tau0_m equals the table formula (two points)
+PASS A2 m=3: m(tau_m + 2 - 4s) = 2 - 2s
+PASS A1 m=4: 3/tau0_m equals the table formula (two points)
+PASS A2 m=4: m(tau_m + 2 - 4s) = 2 - 2s
+PASS A1 m=5: 3/tau0_m equals the table formula (two points)
+PASS A2 m=5: m(tau_m + 2 - 4s) = 2 - 2s
+PASS A1 m=6: 3/tau0_m equals the table formula (two points)
+PASS A2 m=6: m(tau_m + 2 - 4s) = 2 - 2s
+PASS A3 m=2: c_m = 4/5 (table/Ivic start) and X(tau_m) = 2 - 2s there
+PASS A3 m=3: c_m = 41/53 (table/Ivic start) and X(tau_m) = 2 - 2s there
+PASS A3 m=4: c_m = 13/17 (table/Ivic start) and X(tau_m) = 2 - 2s there
+PASS A3 m=5: c_m = 127/167 (table/Ivic start) and X(tau_m) = 2 - 2s there
+PASS A3 m=6: c_m = 47/62 (table/Ivic start) and X(tau_m) = 2 - 2s there
+PASS A3 sanity: Ivic pair (97/251,132/251) gives 3831/4791
+PASS A3 sanity: Lindelof pair (0,1/2) gives 23/29 (Kerr's unpublished start)
+   m=2 with zeta pair: 3/(2 sigma) from sigma >= 0.798638625515122
+PASS A4 m=2: zeta pair start > Bourgain 1867/2347 (no record) and < Ivic 3831/4791
+PASS A4 m=3: zeta pair leaves the range start c_m unchanged (c_m <= max(a_m, g_m))
+PASS A4 m=4: zeta pair leaves the range start c_m unchanged (c_m <= max(a_m, g_m))
+PASS A4 m=5: zeta pair leaves the range start c_m unchanged (c_m <= max(a_m, g_m))
+PASS A4 m=6: zeta pair leaves the range start c_m unchanged (c_m <= max(a_m, g_m))
+PASS A5 15/(3+5s) Guth-Maynard on [0.7500,0.7600]: tau_B + 1 - s <= tau0_record (half-plane HM channel gives nothing)
+PASS A5 9/(8s-2) on [0.7600,0.7605]: tau_B + 1 - s <= tau0_record (half-plane HM channel gives nothing)
+PASS A5 15/(13s-3) on [0.7605,0.7647]: tau_B + 1 - s <= tau0_record (half-plane HM channel gives nothing)
+PASS A5 6/(5s-1) on [0.7647,0.7727]: tau_B + 1 - s <= tau0_record (half-plane HM channel gives nothing)
+PASS A5 2/(9s-6) TTY-Bourgain on [0.7727,0.7736]: tau_B + 1 - s <= tau0_record (half-plane HM channel gives nothing)
+PASS A5 9/(7s-1) on [0.7736,0.7778]: tau_B + 1 - s <= tau0_record (half-plane HM channel gives nothing)
+PASS A5 9/(8(2s-1)) TTY-Bourgain on [0.7778,0.7955]: tau_B + 1 - s <= tau0_record (half-plane HM channel gives nothing)
+PASS A5 3/(2s) Bourgain/Ivic on [0.7955,0.8561]: tau_B + 1 - s <= tau0_record (half-plane HM channel gives nothing)
+PASS B1 mu-lv at s=0.7510: best endpoint th=1-B gives tau_B (1.0054 >= 0.0129)
+PASS B1 mu-lv at s=0.8000: best endpoint th=1-B gives tau_B (1.2678 >= 0.6462)
+PASS B1 mu-lv at s=0.8500: best endpoint th=1-B gives tau_B (1.5357 >= 1.2923)
+PASS B1 mu-lv at s=0.8561: best endpoint th=1-B gives tau_B (1.5682 >= 1.3707)
+PASS B2 k=1 reflect + (0,B): threshold 1 + (4s-3)/(2B-1) = tau_B (s=0.8)
+PASS B2 k=1 reflect + (0,B): threshold 1 + (4s-3)/(2B-1) = tau_B (s=0.85)
+PASS B3 k=1 reflect + HB: rho = 2-2s at tau = 5s-3 (s=0.8)
+PASS B3 k=1 reflect + HB: rho = 2-2s at tau = 5s-3 (s=0.85)
+PASS B4 max(rho+1, 2rho, 5rho/4+tau/2) = rho+1 on tau<=3/2, 0<=rho<=1
+PASS B4 at the binding points (tau = 3s-1 <= 3sigma*-1, rho = 2-2s): 5rho/4 + tau/2 <= rho + 1
+PASS B5 s=0.800000: max(tau_B, 5s-3) < 3s-1
+PASS B5 s=0.850000: max(tau_B, 5s-3) < 3s-1
+PASS B5 s=0.856068: max(tau_B, 5s-3) < 3s-1
+PASS B6 s=0.8: (H) pointwise off-diagonal too weak at tau = 3s-1
+PASS B6 s=0.85: (H) pointwise off-diagonal too weak at tau = 3s-1
+PASS B6 equality exactly at sigma*
+PASS B7 k=1: corrected reflect, diagonal case gives k(tau+2-4s)
+PASS B7 k=1: corrected reflect, HB term gives X
+PASS B7 k=1: printed form is vacuous in the diagonal case (RHS - rho independent of rho)
+PASS B7 k=2: corrected reflect, diagonal case gives k(tau+2-4s)
+PASS B7 k=2: corrected reflect, HB term gives X
+PASS B7 k=2: printed form is vacuous in the diagonal case (RHS - rho independent of rho)
+PASS B7 k=3: corrected reflect, diagonal case gives k(tau+2-4s)
+PASS B7 k=3: corrected reflect, HB term gives X
+PASS B7 k=3: printed form is vacuous in the diagonal case (RHS - rho independent of rho)
+PASS C1 s=0.7955: twelfth-moment margin at tau=8s/3 is 0.1213 > 0
+PASS C1 s=0.8000: twelfth-moment margin at tau=8s/3 is 0.1333 > 0
+PASS C1 s=0.8561: twelfth-moment margin at tau=8s/3 is 0.2828 > 0
+PASS C2 15/(3+5s) Guth-Maynard at s=0.7500: twelfth moment covers (lvoz)
+PASS C2 15/(3+5s) Guth-Maynard at s=0.7600: twelfth moment covers (lvoz)
+PASS C2 9/(8s-2) at s=0.7600: twelfth moment covers (lvoz)
+PASS C2 9/(8s-2) at s=0.7605: twelfth moment covers (lvoz)
+PASS C2 15/(13s-3) at s=0.7605: twelfth moment covers (lvoz)
+PASS C2 15/(13s-3) at s=0.7647: twelfth moment covers (lvoz)
+PASS C2 6/(5s-1) at s=0.7647: twelfth moment covers (lvoz)
+PASS C2 6/(5s-1) at s=0.7727: twelfth moment covers (lvoz)
+PASS C2 2/(9s-6) TTY-Bourgain at s=0.7727: twelfth moment covers (lvoz)
+PASS C2 2/(9s-6) TTY-Bourgain at s=0.7736: twelfth moment covers (lvoz)
+PASS C2 9/(7s-1) at s=0.7736: twelfth moment covers (lvoz)
+PASS C2 9/(7s-1) at s=0.7778: twelfth moment covers (lvoz)
+PASS C2 9/(8(2s-1)) TTY-Bourgain at s=0.7778: twelfth moment covers (lvoz)
+PASS C2 9/(8(2s-1)) TTY-Bourgain at s=0.7955: twelfth moment covers (lvoz)
+
+sigma     record     DensityB-channel 3/(tauB+1-s)   tauB     3s-1    5s-3
+0.7500   2.22222    2.40000                    1.0000   1.2500  0.7500
+0.7550   2.21402    2.35889                    1.0268   1.2650  0.7750
+0.7600   2.20588    2.31916                    1.0536   1.2800  0.8000
+0.7602   2.20485    2.31729                    1.0549   1.2807  0.8012
+0.7605   2.17826    2.31543                    1.0561   1.2814  0.8024
+0.7626   2.16960    2.29909                    1.0675   1.2878  0.8130
+0.7647   2.12500    2.28298                    1.0788   1.2941  0.8235
+0.7687   2.11001    2.25302                    1.1003   1.3061  0.8436
+0.7727   2.09524    2.22383                    1.1217   1.3182  0.8636
+0.7732   2.08680    2.22076                    1.1240   1.3195  0.8658
+0.7736   2.03846    2.21769                    1.1263   1.3208  0.8679
+0.7757   2.03171    2.20282                    1.1376   1.3270  0.8784
+0.7778   2.02500    2.18814                    1.1488   1.3333  0.8889
+0.7866   1.96246    2.12827                    1.1962   1.3599  0.9332
+0.7955   1.88565    2.07158                    1.2437   1.3865  0.9774
+0.8258   1.81647    1.89855                    1.4059   1.4773  1.1289
+
+runtime 0.006 s
+ALL PASS
+memcap: peak 0 MB rc=0
+        7.53 real         0.54 user         4.45 sys
+            28868608  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               10127  page reclaims
+                   9  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   7  signals received
+                  20  voluntary context switches
+                7068  involuntary context switches
+            60426752  instructions retired
+            38850816  cycles elapsed
+             2244944  peak memory footprint
+== end 19:36:29 rc=0

@@ -1,0 +1,23 @@
+== start 19:49:15 cwd=/Users/adriansager/playground/riemann/Riemann/Deep/HP141/MertensCH cmd: uv run --no-project --with python-flint --with numpy python3 cert_ch_p200.py --bp 0.9382
+RH strip: Lam_L [1.9714 +/- 2.86e-5] a_L [0.29143 +/- 1.43e-6] log C_L [10.048 +/- 3.73e-4] J_L0 [19.596 +/- 2.42e-4] log RHP [20.347 +/- 1.17e-4] secs 0.2
+theta 0.9382  c = 969e2 (log10 4.9863; float plan 4.9860)  record row log10 6.264  X0 1e242.80  X1 1e333.65  ranges 1817  final ML092g8_e05_Bp  [40s]
+memcap: peak 51 MB rc=0
+       44.10 real        32.38 user        22.24 sys
+            72056832  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               45398  page reclaims
+                 672  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  32  signals received
+                 271  voluntary context switches
+              114023  involuntary context switches
+            93571403  instructions retired
+            76390437  cycles elapsed
+             2244944  peak memory footprint
+== end 19:49:59 rc=0
