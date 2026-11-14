@@ -1,0 +1,29 @@
+  (log B6 <= -exp(2.0909828e+18); B6 reported as 0)
+== Bi-Hou Sec.7
+  conditions True {}
+  A = 82.49351  sqrt(A/k) = 741590.68  (k/2)T1^2 - A logT1 = 126.73378  kT0^2 = 253.5
+  log B1..B6 = ['-8.71243e+17', '-45.3921', '-23.3121', '-1495.48', '-1360.71', '-1.0e+30']
+  log tail = -1.74249e+18
+  E = 2.39079e-11   K2low - 1 - E = 0.00030525035
+  u - 2sqrt(ku) = 3484971332733086669.272949   u + 2sqrt(ku) = 3484971332733178123.80372   ceil = 3484971332733178124
+  slack in M (B3 alone, other terms negligible): 16.3624
+== Bi-Hou Rem.7.2 (StR M=23.05, T1=1e7)
+  conditions True {}
+  A = 82.49351  sqrt(A/k) = 741590.68  (k/2)T1^2 - A logT1 = 6170.3617  kT0^2 = 253.5
+  log B1..B6 = ['-8.71243e+17', '-45.3921', '-23.0292', '-13652.4', '-7474.8', '-1.0e+30']
+  log tail = -1.74249e+18
+  E = 3.17252e-11   K2low - 1 - E = 0.00030525035
+  u - 2sqrt(ku) = 3484971332733086669.272949   u + 2sqrt(ku) = 3484971332733178123.80372   ceil = 3484971332733178124
+  slack in M (B3 alone, other terms negligible): 16.0795
+Table2 k=1.5e-10 T0=1272608: E(T0)=9.99939e-7 E(T0-1)=1.00031e-6
+Table2 k=3.0e-9 T0=273596: E(T0)=9.99459e-7 E(T0-1)=1.00106e-6
+Table2 k=1.0e-10 T0=1566567: E(T0)=9.99899e-7 E(T0-1)=1.00021e-6
+== Gallego params in Bi-Hou form (delta=0.1 nominal)
+  conditions True {}
+  A = 82.49351  sqrt(A/k) = 3804279.9  (k/2)T1^2 - A logT1 = 45.642194  kT0^2 = 364.71201
+  log B1..B6 = ['-8.71243e+17', '-116.869', '-111.608', '-1469.8', '-1414.5', '-1.0e+30']
+  log tail = -1.74249e+18
+  E = 1.08283e-49   K2low - 1 - E = 0.0020694979
+  u - 2sqrt(ku) = 3484971332733123482.653315   u + 2sqrt(ku) = 3484971332733141310.423382   ceil = 3484971332733141311
+  slack in M (B3 alone, other terms negligible): 106.572
+memcap: peak 0 MB rc=0

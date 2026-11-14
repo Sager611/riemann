@@ -1,0 +1,11 @@
+y=0.250 x in [10000,10004] n=80  min=-0.9954  sign changes=4 first=[10000.1, 10000.2, 10000.65, 10001.0]
+y=0.400 x in [10000,10004] n=80  min=-0.9999  sign changes=4 first=[10000.3, 10000.6, 10001.05, 10003.95]
+y=0.490 x in [2000,2004] n=80  min=-0.9986  sign changes=2 first=[2000.45, 2001.05]
+y=0.490 x in [5000,5004] n=80  min=-0.9982  sign changes=4 first=[5000.2, 5000.65, 5003.0, 5003.45]
+y=0.490 x in [100,110] n=200  min=0.3210  sign changes=0 first=[]  Jensen J/|xi|^2 min=1.236
+y=0.490 x in [300,306] n=120  min=-0.5055  sign changes=2 first=[304.7, 305.3]  Jensen J/|xi|^2 min=4.17
+y=0.490 x in [600,606] n=120  min=-0.3942  sign changes=2 first=[601.25, 602.0]  Jensen J/|xi|^2 min=4.931
+y=0.490 x in [1000,1006] n=120  min=0.1044  sign changes=0 first=[]  Jensen J/|xi|^2 min=7.92
+y=0.499 x in [14,304] n=2900  min=-1.0000  sign changes=30 first=[110.5, 111.5, 149.8, 150.6]  Jensen J/|xi|^2 min=0.2451
+y=0.050 x in [10000,10004] n=80  min=0.9415  sign changes=0 first=[]  Jensen J/|xi|^2 min=7.659
+y=0.100 x in [10000,10004] n=80  min=0.7286  sign changes=0 first=[]  Jensen J/|xi|^2 min=8.218

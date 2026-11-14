@@ -1,0 +1,56 @@
+1. Arb N(1.3e6) = 2325572.00000000000  (0.0s)
+2. min_j lower|zeta(1/4+it)| over 8192 balls = [0.45560319 +/- 2.33e-10] at t ~ 2.1484375  (0.4s)
+3. zeros 5042989 .. 5043001 computed (0.8s)
+   gamma_5042994 = [2650983.94701514 +/- 1.94e-9]
+   gamma_5042995 = [2650984.61066527 +/- 4.90e-9]
+   gamma_5042996 = [2650984.61363538 +/- 3.67e-9]
+   cell 5042993: [[2650983.26282 +/- 8.46e-7], [2650983.80224 +/- 5.00e-6]]  N_nu = [-3.861022031 +/- 4.02e-10]
+   cell 5042994: [[2650983.80224 +/- 5.00e-6], [2650984.27884 +/- 2.07e-7]]  N_nu = [-4.370060648 +/- 3.75e-10]
+   cell 5042995: [[2650984.27884 +/- 2.07e-7], [2650984.61215 +/- 3.30e-7]]  N_nu = [-8.767064959 +/- 4.00e-10]
+   cell 5042996: [[2650984.61215 +/- 3.30e-7], [2650984.86726 +/- 4.99e-6]]  N_nu = [-8.338312077 +/- 1.57e-10]
+   cell 5042997: [[2650984.86726 +/- 4.99e-6], [2650985.51650 +/- 2.40e-6]]  N_nu = [-3.935638722 +/- 4.88e-10]
+   (Bi-Hou: N_nu >= -8.76707 overall, extremal at nu=5042995; theta_{nu-1}~2650984.27884, theta_nu~2650984.61215)
+   t=500000.123 sigma=0.5001 zeros=5  |log|z|-sum| = 3.728  vs 11log t+14 = 158.3
+   t=500000.123 sigma=0.5100 zeros=5  |log|z|-sum| = 3.672  vs 11log t+14 = 158.3
+   t=500000.123 sigma=0.7500 zeros=5  |log|z|-sum| = 2.390  vs 11log t+14 = 158.3
+   t=500000.123 sigma=1.0000 zeros=5  |log|z|-sum| = 1.192  vs 11log t+14 = 158.3
+   t=500000.123 sigma=1.5000 zeros=5  |log|z|-sum| = 0.819  vs 11log t+14 = 158.3
+   t=500000.123 sigma=2.0000 zeros=5  |log|z|-sum| = 2.407  vs 11log t+14 = 158.3
+   t=550000.000 sigma=0.5001 zeros=7  |log|z|-sum| = 2.676  vs 11log t+14 = 159.4
+   t=550000.000 sigma=0.5100 zeros=7  |log|z|-sum| = 2.620  vs 11log t+14 = 159.4
+   t=550000.000 sigma=0.7500 zeros=7  |log|z|-sum| = 1.309  vs 11log t+14 = 159.4
+   t=550000.000 sigma=1.0000 zeros=7  |log|z|-sum| = 0.050  vs 11log t+14 = 159.4
+   t=550000.000 sigma=1.5000 zeros=7  |log|z|-sum| = 2.162  vs 11log t+14 = 159.4
+   t=550000.000 sigma=2.0000 zeros=7  |log|z|-sum| = 4.012  vs 11log t+14 = 159.4
+   t=600000.777 sigma=0.5001 zeros=6  |log|z|-sum| = 3.017  vs 11log t+14 = 160.4
+   t=600000.777 sigma=0.5100 zeros=6  |log|z|-sum| = 2.960  vs 11log t+14 = 160.4
+   t=600000.777 sigma=0.7500 zeros=6  |log|z|-sum| = 1.652  vs 11log t+14 = 160.4
+   t=600000.777 sigma=1.0000 zeros=6  |log|z|-sum| = 0.421  vs 11log t+14 = 160.4
+   t=600000.777 sigma=1.5000 zeros=6  |log|z|-sum| = 1.675  vs 11log t+14 = 160.4
+   t=600000.777 sigma=2.0000 zeros=6  |log|z|-sum| = 3.364  vs 11log t+14 = 160.4
+   t=650000.310 sigma=0.5001 zeros=7  |log|z|-sum| = 2.351  vs 11log t+14 = 161.2
+   t=650000.310 sigma=0.5100 zeros=7  |log|z|-sum| = 2.294  vs 11log t+14 = 161.2
+   t=650000.310 sigma=0.7500 zeros=7  |log|z|-sum| = 0.971  vs 11log t+14 = 161.2
+   t=650000.310 sigma=1.0000 zeros=7  |log|z|-sum| = 0.286  vs 11log t+14 = 161.2
+   t=650000.310 sigma=1.5000 zeros=7  |log|z|-sum| = 2.462  vs 11log t+14 = 161.2
+   t=650000.310 sigma=2.0000 zeros=7  |log|z|-sum| = 4.256  vs 11log t+14 = 161.2
+4. worst ratio to Pintz bound: 0.0264  total 4.5s
+        5.23 real         3.47 user         0.26 sys
+            98353152  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               10049  page reclaims
+                 647  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 204  voluntary context switches
+               10154  involuntary context switches
+           419494262  instructions retired
+           165028634  cycles elapsed
+            20791824  peak memory footprint
+memcap: peak 0 MB rc=0

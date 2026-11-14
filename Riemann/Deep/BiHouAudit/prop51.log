@@ -1,0 +1,35 @@
+cc_02228959.crho 2228959 371493 1s
+cc_02600452.crho 2600452 371493 3s
+cc_02971945.crho 2971945 371493 5s
+cc_03343438.crho 3343438 371489 6s
+cc_03714927.crho 3714927 1085423 11s
+cc_04800350.crho 4800350 1085423 15s
+cc_05885773.crho 5885773 1085423 20s
+cc_06971196.crho 6971196 1085423 25s
+cc_08056619.crho 8056619 1085423 28s
+cells 6185378  nu range 2325573 8510950  min N_nu = -8.767065 at nu = 5042995 (gamma_nu = 2650984.61067, cell [2650984.27884, 2650984.61215])
+  N = -8.767065  nu = 5042995  gamma = 2650984.61067
+  N = -8.397565  nu = 4156678  gamma = 2218149.33320
+  N = -8.361073  nu = 8449826  gamma = 4271409.43148
+  N = -8.338312  nu = 5042996  gamma = 2650984.61364
+  N = -8.249719  nu = 8449825  gamma = 4271409.41989
+M = 14 - min N_nu = 22.767065   (Bi-Hou: N_nu >= -8.76707, M = 22.7671; 6 185 380 cells; nu = 5 042 995)  33s
+       33.95 real        26.00 user         0.70 sys
+           246710272  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               19472  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   2  voluntary context switches
+               76190  involuntary context switches
+           414747604  instructions retired
+           179324581  cycles elapsed
+            18792952  peak memory footprint
+memcap: peak 215 MB rc=0
