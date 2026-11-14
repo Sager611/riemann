@@ -44,7 +44,7 @@
   (2×2 CF determinant −|a₁|² ≈ −0.0021), so interpolation positivity carries no Weil positivity; Hoffman's ratio bound controls independent
   sets, not positive semidefiniteness (KG(4,2) bound 3 against a 2×2 form with eigenvalue −1), no canonical graph encodes Weil truncations;
   Alexandrov–Fenchel: Weil's signed form is no mixed volume (2-D test 0 ≥ 1 fails; Brunn–Minkowski was R352): no transfer.
-* Scouts: 8 (listing, contact, rate, de Faveri timed out or partial; the listing, rate and de Faveri checks were redone by the orchestrator).
+* Scouts: 8 (the listing, rate and de Faveri scouts timed out; the orchestrator redid those three checks).
 -/
 
 namespace Fayed.R466
