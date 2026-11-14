@@ -1,0 +1,31 @@
+F0 certified kappa(0.51) = [0.095078551493787711267 +/- 2.56e-22]
+F1 CP: quad 1.006981225006424464634349 arb [1.006981225006424464634349 +/- 2.37e-26] rel.diff 7.16e-36
+F1 BP: quad 0.3090854580354515122680565 arb [0.3090854580354515122680565 +/- 2.40e-26] rel.diff 4.13e-36
+F1 W2: quad 79.366428025670213030321 arb [79.36642802567021303032100 +/- 4.73e-24] rel.diff 3.87e-36
+F1 W2p: quad 2676.116016821668215106276 arb [2676.116016821668215106276 +/- 2.60e-22] rel.diff 1.31e-35
+F2 cross term: e^{2R}-part 0  constant part -1/2  int P P' = 1/2
+F2 Conrey form c = [713.2745142533194860676434 +/- 3.01e-23]  cert c = [713.2745142533194860676434 +/- 3.01e-23]
+F3 24 perturbations (R, r +-1e-3 rel; x_j +-1e-4 rel): max kappa - kappa_cert = [-5.1406e-12 +/- 4.62e-17]
+F3 same detector at nu = 1324/10000 : kappa = [0.0950072885622813 +/- 2.26e-17]
+F3 same detector at nu = 13249/100000 : kappa = [0.0950720768998983 +/- 1.51e-17]
+F3 same detector at nu = 132499/1000000 : kappa = [0.0950785514937877 +/- 1.13e-17]
+F4 cancellation in W2 = e^{2R}G1 + G0: |G0| ~ [-2.1596e+87 +/- 3.75e+82]  W2 ~ [79.366 +/- 4.29e-4]  max |monomial coef of Q| ~ 5.64e+29
+F4 prec 128: kappa = nan  finite: False  contains-compatible with 512-bit ball: False
+F4 prec 256: kappa = nan  finite: False  contains-compatible with 512-bit ball: False
+F4 prec 384: kappa = [0.095078551493787711267 +/- 2.56e-22]  finite: True  contains-compatible with 512-bit ball: True
+F4 prec 1024: kappa = [0.095078551493787711267 +/- 2.56e-22]  finite: True  contains-compatible with 512-bit ball: True
+F5 nu = 53/400: {'nu<(3theta-1)/4': False}
+F5 Q + y^2/10^6: {'Q(1)=0': False, 'Q(y)+Q(1-y)=1': False}
+F5 P(1) != 1 (r-Taylor P scaled by 1+1e-9): {'P(1)=1': False}
+F6 theta 51/100: float kappa 0.0950785515 arb [0.0950785514938 +/- 1.24e-14] diff -1.3e-15; F7 dh/dkappa = [0.70209832 +/- 2.74e-9]
+F6 theta 13/25: float kappa 0.1004766732 arb [0.100476673186 +/- 3.79e-13] diff 2.0e-15; F7 dh/dkappa = [0.69786073 +/- 3.69e-9]
+F6 theta 11/20: float kappa 0.1167173933 arb [0.116717393294 +/- 4.62e-13] diff 3.2e-15; F7 dh/dkappa = [0.68592096 +/- 3.34e-9]
+F6 theta 3/5: float kappa 0.1440186685 arb [0.144018668505 +/- 3.88e-13] diff 3.4e-15; F7 dh/dkappa = [0.66830170 +/- 2.41e-9]
+F8 c(poly P) - c(sinh P) = [8.9675e-16 +/- 4.78e-21]  (>= 0: inf over P), lam = [0.769390202789 +/- 2.83e-13]  r = 769390197/1000000000
+F9 052: theta 13/25 quad-vs-arb max rel.diff (W2, W2') 2.37e-40; R +-1e-3 rel: max kappa - kappa_cert [-1.2408e-7 +/- 1.35e-12]; checks True
+F9 055: theta 11/20 quad-vs-arb max rel.diff (W2, W2') 1.21e-40; R +-1e-3 rel: max kappa - kappa_cert [-1.4222e-7 +/- 3.57e-13]; checks True
+F9 060: theta 3/5 quad-vs-arb max rel.diff (W2, W2') 6.13e-41; R +-1e-3 rel: max kappa - kappa_cert [-1.6968e-7 +/- 1.22e-12]; checks True
+F9 uniform: theta 1/2 quad-vs-arb max rel.diff (W2, W2') 2.81e-40; R +-1e-3 rel: max kappa - kappa_cert [-1.1139e-7 +/- 2.93e-12]; checks True
+       16.54 real        10.90 user         0.34 sys
+            15270392  peak memory footprint
+memcap: peak 23 MB rc=0
