@@ -1,0 +1,23 @@
+# runs: euler_check.py (clean, planted tau1->tau5), euler_factor.py (clean, planted vartheta->-vartheta); peaks from memcap
+## euler_check.py 
+C_{t,k}(J): 136 cases, max rel diff 1.57e-12
+p=13 chi(-1)=(1+0j) tau1tau5-Q=6.4e-15 tau0+1=4.8e-16 L3.4a=1.6e-15 L3.4b=1.8e-16 gamma3=1.000000-0.000000i
+p=37 chi(-1)=(1+0j) tau1tau5-Q=4.0e-14 tau0+1=2.3e-15 L3.4a=1.2e-15 L3.4b=1.8e-16 gamma3=1.000000-0.000000i
+p=61 chi(-1)=(1+0j) tau1tau5-Q=5.0e-14 tau0+1=5.1e-15 L3.4a=2.4e-15 L3.4b=8.4e-17 gamma3=1.000000-0.000000i
+p=73 chi(-1)=(1+0j) tau1tau5-Q=7.6e-14 tau0+1=3.0e-15 L3.4a=2.5e-16 L3.4b=8.9e-17 gamma3=1.000000-0.000000i
+p=97 chi(-1)=(1+0j) tau1tau5-Q=1.2e-13 tau0+1=5.8e-15 L3.4a=1.3e-15 L3.4b=1.2e-16 gamma3=1.000000-0.000000i
+memcap: peak 0 MB rc=0
+## euler_check.py plant
+C_{t,k}(J): 136 cases, max rel diff 1.95e+00
+p=13 chi(-1)=(1+0j) tau1tau5-Q=6.4e-15 tau0+1=4.8e-16 L3.4a=1.6e-15 L3.4b=1.8e-16 gamma3=1.000000-0.000000i
+p=37 chi(-1)=(1+0j) tau1tau5-Q=4.0e-14 tau0+1=2.3e-15 L3.4a=1.2e-15 L3.4b=1.8e-16 gamma3=1.000000-0.000000i
+p=61 chi(-1)=(1+0j) tau1tau5-Q=5.0e-14 tau0+1=5.1e-15 L3.4a=2.4e-15 L3.4b=8.4e-17 gamma3=1.000000-0.000000i
+p=73 chi(-1)=(1+0j) tau1tau5-Q=7.6e-14 tau0+1=3.0e-15 L3.4a=2.5e-16 L3.4b=8.9e-17 gamma3=1.000000-0.000000i
+p=97 chi(-1)=(1+0j) tau1tau5-Q=1.2e-13 tau0+1=5.8e-15 L3.4a=1.3e-15 L3.4b=1.2e-16 gamma3=1.000000-0.000000i
+memcap: peak 0 MB rc=0
+## euler_factor.py 
+Euler closed form vs series: max rel diff 4.44e-16 ; H(E1=0)-1 formula: max rel diff 4.00e-10
+memcap: peak 0 MB rc=0
+## euler_factor.py plant
+Euler closed form vs series: max rel diff 7.04e-02 ; H(E1=0)-1 formula: max rel diff 4.00e-10
+memcap: peak 0 MB rc=0
