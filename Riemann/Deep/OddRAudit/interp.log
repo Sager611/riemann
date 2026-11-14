@@ -1,0 +1,12 @@
+== interp.py 2e6 S.txt (19:37:15)
+332 events with F >= F(2000,1); min relative gap between consecutive events 0.00010165 (no ties)
+N is odd CA #22 (event (61, 1)), next: True = c0 (event (67, 1))
+odd CA numbers <= c0 satisfying (OR): [(18565284664427130919514350125, (67, 1))]
+odd CA numbers after N (x_1 <= 2000) violating (OR): 0
+tie identity g(N_k) = g(N_k+1) at the event eps: 331 of 331 pairs exact to 1e-50
+odd 3 <= n <= 2000000: line violations 0; (OR) violators 273; Lemma 3.4 failures 0; 13.3s
+S (1099 odd n < c0, sigma/n >= T0): line violations 0; (OR) violators 1; Lemma 3.4 failures 0
+done 13.6s
+       14.27 real         9.78 user         0.30 sys
+            50626560  maximum resident set size
+memcap: peak 19 MB rc=0

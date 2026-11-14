@@ -1,0 +1,130 @@
+== gap.py  (19:25:31)
+   n = N/5^1          n = 5.5419e+25 < N    L = [0.000760093 +/- 2.52e-10] log-margin = [0.0013235454 +/- 4.27e-11]
+   n = N/5^1*67^1     n = 3.7131e+27 in gap L = [0.000760093 +/- 2.52e-10] log-margin = [-0.00050950437 +/- 8.38e-13]
+   n = N              n = 2.7709e+26 = N    L =         [+/- 6.95e-75] log-margin = [0.0012134902 +/- 4.15e-11]
+   n = N*71^1         n = 1.9674e+28 > c0   L = [0.00103316 +/- 1.38e-10] log-margin = [-0.0011344224 +/- 3.38e-12]
+   n = N*67^1         n = 1.8565e+28 = c0   L =         [+/- 7.32e-75] log-margin = [-9.2356141e-5 +/- 4.28e-13]
+   n = N*67^1*71^1    n = 1.3181e+30 > c0   L = [0.00103316 +/- 1.38e-10] log-margin = [-0.0011825184 +/- 2.20e-11]
+   n = N*11^1         n = 3.0480e+27 in gap L = [0.000901694 +/- 4.21e-10] log-margin = [-0.00059604394 +/- 1.51e-12]
+   n = N*11^1*67^1    n = 2.0422e+29 > c0   L = [0.000901694 +/- 4.21e-10] log-margin = [-0.0011712885 +/- 4.55e-11]
+   n = N*3^1          n = 8.3128e+26 in gap L = [0.00111989 +/- 1.82e-9] log-margin = [-0.00037812489 +/- 1.70e-12]
+   n = N*3^1*67^1     n = 5.5696e+28 > c0   L = [0.00111989 +/- 1.82e-9] log-margin = [-0.0013414709 +/- 2.72e-11]
+PASS no violator among the 3 candidates in the gap (each has certified log-margin < 0)
+ALL PASS
+        0.42 real         0.18 user         0.08 sys
+            40173568  maximum resident set size
+            19972600  peak memory footprint
+memcap: peak 0 MB rc=0
+rc=0
+== dfs_gap.py  (19:25:40)
+   n = 692264851893893017337823225  n/N = 2.49831  sigma/n = 3.66045821
+   n = 709541831314782933601209075  n/N = 2.56066  sigma/n = 3.65942520
+   n = 720443882500157319264735975  n/N = 2.6  sigma/n = 3.66018110
+   n = 831281402884796906843926125  n/N = 3  sigma/n = 3.67375788
+   n = 913046786775104799320377875  n/N = 3.29508  sigma/n = 3.66845154
+   n = 943997525309854114551577125  n/N = 3.40678  sigma/n = 3.66644692
+   n = 967557042701976727638012375  n/N = 3.4918  sigma/n = 3.66541222
+   n = 994812170665412691796829625  n/N = 3.59016  sigma/n = 3.66401747
+   n = 1000355586522382718405402625  n/N = 3.61017  sigma/n = 3.66340927
+   n = 1016010603525862886142576375  n/N = 3.66667  sigma/n = 3.66091257
+largest log-margin among them: [-0.00037812489 +/- 1.70e-12] at n = 831281402884796906843926125 (n/N = 3)
+PASS: no odd n with N < n < c0 violates (OR)
+        3.10 real         0.41 user         0.11 sys
+            41287680  maximum resident set size
+            21070328  peak memory footprint
+memcap: peak 0 MB rc=0
+rc=0
+== oddca.py 1e6  (19:25:50)
+78497 odd primes <= 1e+06; 0.0s
+291 events with exponent >= 2 merged at certified positions; 0.1s
+last odd CA violator: event (61, 1), N = 277093800961598968947975375 (= 3^4 5^3 7^2 11 ... 61, as in the paper)
+PASS: every odd CA number N >= c0 = 67N with x_1 <= 1e+06 satisfies the odd Robin inequality (9882 numbers checked one by one, 68906 more in 2541 blocks)
+   closest normalised margin among exact checks (P = largest prime > 100): m*sqrt(P)*log(P) = -0.1125 at event (113, 1), P = 113
+   log N at the last odd CA number checked: [1000018.74452552 +/- 1.92e-9]; 0.3s
+        1.03 real         0.54 user         0.11 sys
+            42123264  maximum resident set size
+            21922320  peak memory footprint
+memcap: peak 0 MB rc=0
+rc=0
+== oddca_seg.py 1e6  (19:25:59)
+78497 odd primes <= 1e+06; 0.0s
+291 events with exponent >= 2 merged at certified positions; 0.0s
+last odd CA violator: event (61, 1), N = 277093800961598968947975375 (= 3^4 5^3 7^2 11 ... 61, as in the paper)
+PASS: every odd CA number N >= c0 = 67N with x_1 <= 1e+06 satisfies the odd Robin inequality (9882 numbers checked one by one, 68906 more in 2541 blocks)
+   closest normalised margin among exact checks (P = largest prime > 100): m*sqrt(P)*log(P) = -0.1125 at event (113, 1), P = 113
+   log N at the last odd CA number checked: [1000018.74452552 +/- 1.92e-9]; 0.2s
+        1.01 real         0.40 user         0.08 sys
+            43188224  maximum resident set size
+            23003664  peak memory footprint
+memcap: peak 0 MB rc=0
+rc=0
+== oddca.py 5e7  (19:26:08)
+3001133 odd primes <= 5e+07; 0.9s
+1381 events with exponent >= 2 merged at certified positions; 1.1s
+last odd CA violator: event (61, 1), N = 277093800961598968947975375 (= 3^4 5^3 7^2 11 ... 61, as in the paper)
+PASS: every odd CA number N >= c0 = 67N with x_1 <= 5e+07 satisfies the odd Robin inequality (10972 numbers checked one by one, 2991542 more in 24671 blocks)
+   closest normalised margin among exact checks (P = largest prime > 100): m*sqrt(P)*log(P) = -0.1125 at event (113, 1), P = 113
+   log N at the last odd CA number checked: [50004132.4910662 +/- 4.49e-8]; 9.5s
+       10.07 real         4.88 user         0.27 sys
+           109871104  maximum resident set size
+            20185592  peak memory footprint
+memcap: peak 89 MB rc=0
+rc=0
+== oddca_seg.py 5e7  (19:26:20)
+3001133 odd primes <= 5e+07; 0.7s
+1381 events with exponent >= 2 merged at certified positions; 0.9s
+last odd CA violator: event (61, 1), N = 277093800961598968947975375 (= 3^4 5^3 7^2 11 ... 61, as in the paper)
+PASS: every odd CA number N >= c0 = 67N with x_1 <= 5e+07 satisfies the odd Robin inequality (10972 numbers checked one by one, 2991542 more in 24671 blocks)
+   closest normalised margin among exact checks (P = largest prime > 100): m*sqrt(P)*log(P) = -0.1125 at event (113, 1), P = 113
+   log N at the last odd CA number checked: [50004132.4910662 +/- 4.49e-8]; 6.8s
+        7.43 real         5.21 user         0.22 sys
+            73744384  maximum resident set size
+            21479928  peak memory footprint
+memcap: peak 20 MB rc=0
+rc=0
+== transfer.py 5e8 1.43e47 0.87338196661320752  (19:26:29)
+PASS: odd Robin at every odd CA number with x_1 in [5e8, 1.43e47] (b0 = [0.8733819666 +/- 1.33e-11]) => all odd N < n <= 10^(10^46.7931): 1209 boxes, min margin after odd correction 1.07e-05, k <= 40; 87s
+       87.62 real        54.17 user         1.04 sys
+            43384832  maximum resident set size
+            23429648  peak memory footprint
+memcap: peak 22 MB rc=0
+rc=0
+== transfer.py 5e8 1.42e47 7/8  (19:27:59)
+PASS: odd Robin at every odd CA number with x_1 in [5e8, 1.42e47] (b0 = 0.8750000000) => all odd N < n <= 10^(10^46.7900): 1235 boxes, min margin after odd correction 1.07e-05, k <= 40; 93s
+       94.23 real        56.30 user         1.30 sys
+            44335104  maximum resident set size
+            21774888  peak memory footprint
+memcap: peak 21 MB rc=0
+rc=0
+== transfer.py 5e8 6.46e46 1  (19:29:37)
+PASS: odd Robin at every odd CA number with x_1 in [5e8, 6.46e46] (b0 = 1.000000000) => all odd N < n <= 10^(10^46.4480): 1221 boxes, min margin after odd correction 1.07e-05, k <= 57; 206s
+      207.04 real        61.32 user         1.71 sys
+            43319296  maximum resident set size
+            20759080  peak memory footprint
+memcap: peak 19 MB rc=0
+rc=0
+== oddca_seg.py 2e8  (19:33:09)
+11078936 odd primes <= 2e+08; 3.7s
+2462 events with exponent >= 2 merged at certified positions; 4.0s
+last odd CA violator: event (61, 1), N = 277093800961598968947975375 (= 3^4 5^3 7^2 11 ... 61, as in the paper)
+PASS: every odd CA number N >= c0 = 67N with x_1 <= 2e+08 satisfies the odd Robin inequality (12053 numbers checked one by one, 11069345 more in 50201 blocks)
+   closest normalised margin among exact checks (P = largest prime > 100): m*sqrt(P)*log(P) = -0.1125 at event (113, 1), P = 113
+   log N at the last odd CA number checked: [200002814.974188 +/- 4.43e-7]; 39.3s
+       40.10 real        27.36 user         0.59 sys
+           106283008  maximum resident set size
+            24740392  peak memory footprint
+memcap: peak 85 MB rc=0
+rc=0
+== oddca_seg.py 5e8  (19:33:50)
+26355866 odd primes <= 5e+08; 10.2s
+3645 events with exponent >= 2 merged at certified positions; 10.9s
+last odd CA violator: event (61, 1), N = 277093800961598968947975375 (= 3^4 5^3 7^2 11 ... 61, as in the paper)
+PASS: every odd CA number N >= c0 = 67N with x_1 <= 5e+08 satisfies the odd Robin inequality (13236 numbers checked one by one, 26346275 more in 79866 blocks)
+   closest normalised margin among exact checks (P = largest prime > 100): m*sqrt(P)*log(P) = -0.1125 at event (113, 1), P = 113
+   log N at the last odd CA number checked: [500016054.516501 +/- 1.12e-7]; 128.8s
+      129.59 real        88.61 user         1.58 sys
+           167542784  maximum resident set size
+            23740920  peak memory footprint
+memcap: peak 144 MB rc=0
+rc=0
+CHAIN DONE 19:36:06

@@ -1,4 +1,4 @@
-FORMALIZED: the gap theorem (every odd n with N < n < c0 satisfies (OR)), sharpness (N violates (OR)) and RH ⟺ (OR) for every odd n > N, from two named hypotheses: WYTheoremFor (Washington–Yang's Theorem 1.1, verbatim) and MathlibFacts (Mathlib's own theorems about Real.log, Real.exp and γ, taken as fields because Mathlib's Real.log cannot be imported under the 290 MB cap); zero numeric hypotheses; sorry-free; standard axioms only. The 40-line instantiation with Mathlib's Real.log, γ and RiemannHypothesis (Instance.lean) is written but not compiled: its imports alone exceed the cap.
+FORMALIZED: the gap theorem (every odd n with N < n < c0 satisfies (OR)), sharpness (N violates (OR)) and RH ⟺ (OR) for every odd n > N, from two named hypotheses: WYTheoremFor (Washington–Yang's Theorem 1.2 (arXiv v1 numbering), verbatim) and MathlibFacts (Mathlib's own theorems about Real.log, Real.exp and γ, taken as fields because Mathlib's Real.log cannot be imported under the 290 MB cap); zero numeric hypotheses; sorry-free; standard axioms only. The 40-line instantiation with Mathlib's Real.log, γ and RiemannHypothesis (Instance.lean) is written but not compiled: its imports alone exceed the cap.
 
 # OddRobin in Lean 4 + Mathlib (oddrlean, 2026-11-12)
 
@@ -63,7 +63,7 @@ No sorry, admit, axiom, native_decide, skipKernelTC (rg). decide only on small f
 
 | hypothesis | statement | source |
 |---|---|---|
-| WYTheoremFor RH L E | RH ⟺ σ(n)/(n L(L n)) < E/2 for all odd n ≥ c0 | Washington–Yang, arXiv 2008.04787 Theorem 1.1 (label MainThm1), TeX l. 87–93 (restated l. 440–446, proof l. 448–460); IJNT 17 (2021) 843–870. Taken verbatim (their strict inequality, their threshold), not strengthened. |
+| WYTheoremFor RH L E | RH ⟺ σ(n)/(n L(L n)) < E/2 for all odd n ≥ c0 | Washington–Yang, arXiv 2008.04787 Theorem 1.2 (arXiv v1 numbering) (label MainThm1), TeX l. 87–93 (restated l. 440–446, proof l. 448–460); IJNT 17 (2021) 843–870. Taken verbatim (their strict inequality, their threshold), not strengthened. |
 | LogLike.map_mul | L(xy) = L x + L y | Real.log_mul (x, y ≠ 0) |
 | LogLike.mono | 0 < x ≤ y → L x ≤ L y | Real.log_le_log |
 | LogLike.one_sub_inv_le | 1 − x⁻¹ ≤ L x | Real.one_sub_inv_le_log_of_pos |
@@ -92,7 +92,7 @@ Watchdog kills along the way (all in peaks.log): an early Cost.lean with decide 
 ## Proof route (PROOF.md §1) and fidelity
 
 - (0) OR: Instance.OR is the brief's definition verbatim; OR n = ORf Real.log (Real.exp γ) n by rfl. ORf/WYIneqF are the brief's OR and WY's (RobinOdd) (TeX l. 89–91) with log, e^γ as parameters; WYIneqF_iff: equal when L(L n) > 0 (true for n ≥ N).
-- (1) WYTheoremFor RiemannHypothesis Real.log (Real.exp γ) is WY Theorem 1.1, TeX l. 87–93: "The Riemann hypothesis is equivalent to the statement that σ(n)/(n log log n) < e^γ/2 for all odd n ≥ c0 = 18565284664427130919514350125 = 3^4·5^3·7^2·11·13···67"; its ⇒ half is Prop. 3.5 (robinProp, l. 390–395). c0 and N are WY's numerals (l. 92, l. 399); NN_prod checks N = 3^4·5^3·7^2·11···61; Check.c0_eq: c0 = 67·NN; Check.candidates_eq: m3 = 3N, m11 = 11N, 5·m67 = 67N. (Defs.lean's docstring cites l. 401 for N; the line is 399.)
+- (1) WYTheoremFor RiemannHypothesis Real.log (Real.exp γ) is WY Theorem 1.2 (arXiv v1 numbering), TeX l. 87–93: "The Riemann hypothesis is equivalent to the statement that σ(n)/(n log log n) < e^γ/2 for all odd n ≥ c0 = 18565284664427130919514350125 = 3^4·5^3·7^2·11·13···67"; its ⇒ half is Prop. 3.5 (robinProp, l. 390–395). c0 and N are WY's numerals (l. 92, l. 399); NN_prod checks N = 3^4·5^3·7^2·11···61; Check.c0_eq: c0 = 67·NN; Check.candidates_eq: m3 = 3N, m11 = 11N, 5·m67 = 67N. (Defs.lean's docstring cites l. 401 for N; the line is 399.)
 - (1a) N maximises g_p at ε*: cost_prop gives 0 ≤ G p α_p − G p a for every odd prime p and every a (concavity: inc antitone, G_le_up/G_le_down; p = 67 tie: inc 67 0 = 0 exactly).
 - (1b) decomp: Σ_{p∈S} G p (fact p) = L σ(m) − (1+ε) L m for S ⊇ primeFactors m.
 - (1c)–(1d) total_cost: a violator in the gap has Σ_p c_p(a_p) < 13/10000; uses δ0 < 0.0012147 (Final.delta0_lt; PROOF.md: 0.00121349) and Dstep (L L L n − L L L N ≥ ε(L n − L N) from ε·65.156·4.176785 ≤ 1, i.e. ε < 1/(t_c0 log t_c0) with rounded t_c0). The threshold 13/10000 > δ0 only enlarges the candidate set; the same 10 vectors survive.

@@ -1,0 +1,21 @@
+== rtest.py 5.06e8 (19:45:29)
+26654828 odd primes <= 5.06e+08; 17.5s
+3669 events with exponent >= 2 merged at certified positions; 18.2s
+last odd CA violator: event (61, 1), N = 277093800961598968947975375 (= 3^4 5^3 7^2 11 ... 61, as in the paper)
+PASS: every odd CA number N >= c0 = 67N with x_1 <= 5.06e+08 satisfies the odd Robin inequality (13260 numbers checked one by one, 26645237 more in 80366 blocks)
+   closest normalised margin among exact checks (P = largest prime > 100): m*sqrt(P)*log(P) = -0.1125 at event (113, 1), P = 113
+   log N at the last odd CA number checked: [506006330.788381 +/- 1.24e-7]; 164.1s
+b0=1 x_1 = 500950897: alpha_2 = 32, true (sqrt x log x) R(M) = [0.75599977 +/- 5.20e-10], RobinCH m on log x +- 0.001 = [0.50 +/- 5.81e-3], m < true: True
+b0=1 x_1 = 501962507: alpha_2 = 32, true (sqrt x log x) R(M) = [0.75557171 +/- 2.87e-9], RobinCH m on log x +- 0.001 = [0.50 +/- 5.71e-3], m < true: True
+b0=1 x_1 = 502965721: alpha_2 = 32, true (sqrt x log x) R(M) = [0.75541409 +/- 2.94e-10], RobinCH m on log x +- 0.001 = [0.50 +/- 5.61e-3], m < true: True
+b0=1 x_1 = 503976953: alpha_2 = 32, true (sqrt x log x) R(M) = [0.75541342 +/- 2.75e-9], RobinCH m on log x +- 0.001 = [0.50 +/- 5.52e-3], m < true: True
+b0=1 x_1 = 504995089: alpha_2 = 32, true (sqrt x log x) R(M) = [0.75545576 +/- 1.24e-9], RobinCH m on log x +- 0.001 = [0.50 +/- 5.42e-3], m < true: True
+b0=7/8 x_1 = 500950897: alpha_2 = 32, true (sqrt x log x) R(M) = [0.75599977 +/- 5.20e-10], RobinCH m on log x +- 0.001 = [0.50 +/- 5.81e-3], m < true: True
+b0=7/8 x_1 = 501962507: alpha_2 = 32, true (sqrt x log x) R(M) = [0.75557171 +/- 2.87e-9], RobinCH m on log x +- 0.001 = [0.50 +/- 5.71e-3], m < true: True
+b0=7/8 x_1 = 502965721: alpha_2 = 32, true (sqrt x log x) R(M) = [0.75541409 +/- 2.94e-10], RobinCH m on log x +- 0.001 = [0.50 +/- 5.61e-3], m < true: True
+b0=7/8 x_1 = 503976953: alpha_2 = 32, true (sqrt x log x) R(M) = [0.75541342 +/- 2.75e-9], RobinCH m on log x +- 0.001 = [0.50 +/- 5.52e-3], m < true: True
+b0=7/8 x_1 = 504995089: alpha_2 = 32, true (sqrt x log x) R(M) = [0.75545576 +/- 1.24e-9], RobinCH m on log x +- 0.001 = [0.50 +/- 5.42e-3], m < true: True
+      165.98 real        93.73 user         1.76 sys
+           179339264  maximum resident set size
+memcap: peak 150 MB rc=0
+end 19:48:22

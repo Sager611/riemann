@@ -1,0 +1,18 @@
+== dfs_dump.py (19:36:45)
+   n = 994812170665412691796829625  n/N = 3.59016  sigma/n = 3.66401747
+   n = 1000355586522382718405402625  n/N = 3.61017  sigma/n = 3.66340927
+   n = 1016010603525862886142576375  n/N = 3.66667  sigma/n = 3.66091257
+largest log-margin among them: [-0.00037812489 +/- 1.70e-12] at n = 831281402884796906843926125 (n/N = 3)
+PASS: no odd n with N < n < c0 violates (OR)
+            41975808  maximum resident set size
+memcap: peak 0 MB rc=0
+== enum_s.py (19:36:53)
+best-first: 5539 nodes popped, 5538 pushes, max heap 826; |S| = 1099; 0.4s
+S in (N, c0): 1098;  S with m <= N: 1; N in S: True
+violators in (N, c0): 0; undecided: 0; violators <= N in S: 1 (largest 277093800961598968947975375)
+largest margin in gap: -0.0003781248917 at n = 831281402884796906843926125 = N*3
+PASS 0.7s
+        1.23 real         0.58 user         0.09 sys
+            40370176  maximum resident set size
+memcap: peak 0 MB rc=0
+end 19:37:01

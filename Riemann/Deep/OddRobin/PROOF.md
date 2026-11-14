@@ -67,7 +67,7 @@ RobinCH's Level 3 certificate (Riemann/Deep/RobinCH, certify3.margins4, "R") giv
  | none (RH to 3·10^12 + Chirre–Helfgott + Büthe only) | 1221 | 1.07·10^−5 | 6.46·10^46 | 10^(10^46.44) |
  | + half-plane Re ρ ≤ 7/8 above 3·10^12 (conditional on it) | 1235 | 1.07·10^−5 | 1.42·10^47 | 10^(10^46.79) |
  | + half-plane Re ρ ≤ 0.87338196661320752 (conditional on it) | 1209 | 1.07·10^−5 | 1.43·10^47 | 10^(10^46.79) |
- The odd correction is ≤ 0.0029 (normalised) at x = 5·10^8 against Robin margins ≥ 0.49 there, and negligible above (≈ 2 log x/√x).
+ The odd correction is ≤ 0.0029 (normalised) at x = 5·10^8 against Robin margins ≈ 0.47–0.50 there (box-dependent; true value 0.756, OddRAudit rtest.log), and negligible above (≈ 2 log x/√x).
  "all odd n ≤": the last odd CA number checked, N*, has log N* ≥ θ(X_R) − log 2 ≥ X_R(1 − η) − log 2 (η: RobinCH Lemma 12 at X_R).
 
 ## 5. Theorem

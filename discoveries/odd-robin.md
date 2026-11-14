@@ -16,4 +16,6 @@
 
 **RH relevance.** N4 (Robin-type RH criteria): an RH-equivalent with a sharp explicit threshold, the odd counterpart of Robin's n > 5040.
 
+**Audit.** Line-by-line audit (oddraudit, Orca, 14 Nov 2026): AUDIT PASSED. Every step of PROOF.md checks against Washington–Yang's TeX (arXiv v1; the journal version was not compared); every certificate reruns under the 300 MB cap with identical output (oddca.py to x₁ = 5·10⁸ with a preallocated prime buffer, 168 MB); the gap was recounted by a third method (best-first search over complete odd exponent vectors with exact rationals: the same 1,098 n, none violates; the orchestrator's rerun is identical); falsification hunts (19,333 neighbours of N, 2.8 million neighbours of odd CA numbers, the odd superabundant records in the gap) found nothing; six harmless remarks (Washington–Yang's numbering and two misprints; RobinCH's certified margin near x = 5·10⁸ is 0.47–0.50 depending on the box, true value 0.756); RobinCH's analytic lemmas are inherited, not re-derived ([OddRAudit](../Riemann/Deep/OddRAudit/REPORT.md)).
+
 **Files.** [OddRobin](../Riemann/Deep/OddRobin/REPORT.md) (REPORT.md, PROOF.md, check_all.py and its parts, check_all.log).

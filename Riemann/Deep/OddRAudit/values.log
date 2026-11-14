@@ -1,0 +1,23 @@
+== values.py (19:38:30)
+sigma(N) = 1015178899037727378898944000  sigma(N)/N = 3.66366513980014
+delta0 = log-margin(N) = [0.00121349015854, 0.00121349015854]  N violates: True
+f21(N) = sigma(N)/(N loglog N) = [0.8916175219, 0.8916175219]  e^g/2 = [0.890536209, 0.890536209]  f(N)/2 = [0.445809, 0.445809]
+log-margin(c0) = [-9.23561414276e-5, -9.23561414276e-5]  c0 satisfies: True
+eps* = [0.00352346464443, 0.00352346464443]  1/(tc0 log tc0) = [0.00367908685049, 0.00367908685049]  eps* < bound: True
+c_73(1) = [0.00151163009349, 0.00151163009349]  > delta0: True
+N maximises g_p at eps* for odd p < 1000 (tie only at 67): True
+exponents within delta0: {3: [(4, '-3.3735e-80'), (5, '0.00111989')], 5: [(2, '0.000760093'), (3, '-4.21688e-80')], 11: [(1, '-2.10844e-80'), (2, '0.000901694')], 67: [(0, '0.0'), (1, '-1.68675e-80')], 71: [(0, '0.0'), (1, '0.00103316')]}
+10 vectors with total cost <= delta0
+   n/N =        0.2 <N   cost  0.000760093  log-margin [0.0013235454, 0.0013235454]  (OR) holds: False
+   n/N =        1.0 =N   cost -9.69882e-80  log-margin [0.0012134902, 0.0012134902]  (OR) holds: False
+   n/N =        3.0 gap  cost   0.00111989  log-margin [-0.00037812489, -0.00037812489]  (OR) holds: True
+   n/N =       11.0 gap  cost  0.000901694  log-margin [-0.00059604394, -0.00059604394]  (OR) holds: True
+   n/N =       13.4 gap  cost  0.000760093  log-margin [-0.00050950437, -0.00050950437]  (OR) holds: True
+   n/N =       67.0 =c0  cost -1.13856e-79  log-margin [-9.2356141e-5, -9.2356141e-5]  (OR) holds: True
+   n/N =       71.0 >c0  cost   0.00103316  log-margin [-0.0011344224, -0.0011344224]  (OR) holds: True
+   n/N =      201.0 >c0  cost   0.00111989  log-margin [-0.0013414709, -0.0013414709]  (OR) holds: True
+   n/N =      737.0 >c0  cost  0.000901694  log-margin [-0.0011712885, -0.0011712885]  (OR) holds: True
+   n/N =     4757.0 >c0  cost   0.00103316  log-margin [-0.0011825184, -0.0011825184]  (OR) holds: True
+        0.52 real         0.37 user         0.07 sys
+            34668544  maximum resident set size
+memcap: peak 0 MB rc=0

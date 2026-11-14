@@ -1,0 +1,20 @@
+== corr_check.py (19:39:06)
+x=      41: alpha_2 = 6, floor(log2 x) = 5, a >= k: True, 2^-a < 2/x: True, a log2 <= A: True (A/log2 = 6.82666), normalised corr = 2.299
+x=     1e3: alpha_2 = 12, floor(log2 x) = 9, a >= k: True, 2^-a < 2/x: True, a log2 <= A: True (A/log2 = 12.2845), normalised corr = 0.7593
+x=     5e8: alpha_2 = 32, floor(log2 x) = 28, a >= k: True, 2^-a < 2/x: True, a log2 <= A: True (A/log2 = 32.7502), normalised corr = 0.002863
+x=     1e9: alpha_2 = 33, floor(log2 x) = 29, a >= k: True, 2^-a < 2/x: True, a log2 <= A: True (A/log2 = 33.7993), normalised corr = 0.002091
+x=    1e12: alpha_2 = 44, floor(log2 x) = 39, a >= k: True, 2^-a < 2/x: True, a log2 <= A: True (A/log2 = 44.1801), normalised corr = 8.708e-5
+x=    1e20: alpha_2 = 71, floor(log2 x) = 66, a >= k: True, 2^-a < 2/x: True, a log2 <= A: True (A/log2 = 71.4925), normalised corr = 1.428e-8
+x=    1e30: alpha_2 = 105, floor(log2 x) = 99, a >= k: True, 2^-a < 2/x: True, a log2 <= A: True (A/log2 = 105.297), normalised corr = 2.122e-13
+x=    1e40: alpha_2 = 138, floor(log2 x) = 132, a >= k: True, 2^-a < 2/x: True, a log2 <= A: True (A/log2 = 138.931), normalised corr = 2.816e-18
+x= 6.46e46: alpha_2 = 161, floor(log2 x) = 155, a >= k: True, 2^-a < 2/x: True, a log2 <= A: True (A/log2 = 161.781), normalised corr = 1.294e-21
+x= 1.43e47: alpha_2 = 162, floor(log2 x) = 156, a >= k: True, 2^-a < 2/x: True, a log2 <= A: True (A/log2 = 162.938), normalised corr = 8.757e-22
+box log x in [20.03, +0.01]: RobinCH m >= 0.46816, odd corr <= 0.002879
+box log x in [20.5, +0.01]: RobinCH m >= 0.49019, odd corr <= 0.002327
+box log x in [30, +0.01]: RobinCH m >= 0.67079, odd corr <= 2.899e-05
+box log x in [60, +0.01]: RobinCH m >= 0.71833, odd corr <= 1.739e-11
+box log x in [100, +0.01]: RobinCH m >= 0.71392, odd corr <= 5.92e-20
+box log x in [107.5, +0.01]: RobinCH m >= 0.066509, odd corr <= 1.495e-21
+        0.74 real         0.56 user         0.08 sys
+            43859968  maximum resident set size
+memcap: peak 0 MB rc=0

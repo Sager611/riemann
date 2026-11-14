@@ -1,0 +1,5 @@
+c = 0.046191418  alpha(120409) = 2.6615995  alpha(1.43e47) = -1.88183
+first-order 2 + c - sqrt2 - 0.99154 sqrt2 = -0.77027146  second-order 2.6616 + 4 + 0.486 = 7.1476
+exp(7.1476/0.7702) = 10723.437
+alpha decreasing on [120409, 120409*1.0001^2000]: True
+memcap: peak 0 MB rc=0

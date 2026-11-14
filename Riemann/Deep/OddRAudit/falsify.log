@@ -1,0 +1,16 @@
+== falsify.py S.txt 2000 (19:37:50)
+(1) neighbours of N above N: 19333 tested, max float margin -9.23561e-05 at change {67: 1}; flagged 0
+(2) 309 odd CA numbers from c0 (events up to x_1 = 2000): 2820131 neighbours > N tested, max float margin -9.23561e-05 (({71: -1}, 71, 1)); flagged total 0
+   exact violators among flagged with n > N: 0
+(3) odd SA records among S: 8 (N is one: True); in (N, c0): 7, their max margin -0.000378125; all satisfy (OR): True
+   record n = 609606362115517731685545825 = N*2.2, margin -0.000796596
+   record n = 831281402884796906843926125 = N*3, margin -0.000378125
+   record n = 1828819086346553195056637475 = N*6.6, margin -0.00231994
+   record n = 3048031810577588658427729125 = N*11, margin -0.000596044
+   record n = 3713056932885426183902870025 = N*13.4, margin -0.000509504
+   record n = 9144095431732765975283187375 = N*33, margin -0.00198601
+   record n = 11139170798656278551708610075 = N*40.2, margin -0.00188365
+done 16.3s
+       16.49 real        12.38 user         0.22 sys
+            39780352  maximum resident set size
+memcap: peak 19 MB rc=0
