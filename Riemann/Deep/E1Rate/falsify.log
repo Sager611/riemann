@@ -1,0 +1,33 @@
+F1: Phi(x)=exp(i*X0*sqrt(x))*bump(x) on x in (1,2); L1 norm of Mellin transform over t vs sup|Phi|; predicted ratio ~ sqrt(X0)
+  X0=     0  int|Mellin|dt/2pi = 0.46076  sup|Phi| = 0.36788  ratio/sqrt(1+X0) = 1.2525
+  X0=    10  int|Mellin|dt/2pi = 0.46130  sup|Phi| = 0.36788  ratio/sqrt(1+X0) = 0.3781
+  X0=    40  int|Mellin|dt/2pi = 0.47053  sup|Phi| = 0.36788  ratio/sqrt(1+X0) = 0.1998
+  X0=   160  int|Mellin|dt/2pi = 0.56039  sup|Phi| = 0.36788  ratio/sqrt(1+X0) = 0.1201
+  X0=   640  int|Mellin|dt/2pi = 0.90728  sup|Phi| = 0.36788  ratio/sqrt(1+X0) = 0.0974
+  X0=  2560  int|Mellin|dt/2pi = 1.70281  sup|Phi| = 0.36788  ratio/sqrt(1+X0) = 0.0915
+F2: S = sum_k e(c*kbar/p) w(k/D) exp(i*X0*sqrt(D/k)); Lemma I bound B = D/p + sqrt(p*(1+X0)); trivial = D
+  p=1009 D=179 X0=    0  mean|S|=     2.67 max|S|=     5.55  B=    31.94  max/B=0.174  trivial=     39.7
+  p=1009 D=179 X0=   30  mean|S|=     3.15 max|S|=     5.00  B=   177.04  max/B=0.028  trivial=     39.7
+  p=1009 D=179 X0=  300  mean|S|=     3.94 max|S|=     8.88  B=   551.28  max/B=0.016  trivial=     39.7
+  p=1009 D=179 X0= 3000  mean|S|=     2.54 max|S|=     4.85  B=  1740.29  max/B=0.003  trivial=     39.7
+  p=1009 D=1009 X0=    0  mean|S|=     3.21 max|S|=     6.26  B=    32.76  max/B=0.191  trivial=    224.0
+  p=1009 D=1009 X0=   30  mean|S|=     6.28 max|S|=    13.06  B=   177.86  max/B=0.073  trivial=    224.0
+  p=1009 D=1009 X0=  300  mean|S|=     8.48 max|S|=    14.12  B=   552.10  max/B=0.026  trivial=    224.0
+  p=1009 D=1009 X0= 3000  mean|S|=     7.04 max|S|=    18.15  B=  1741.12  max/B=0.010  trivial=    224.0
+  p=1009 D=4036 X0=    0  mean|S|=     0.89 max|S|=     1.08  B=    35.76  max/B=0.030  trivial=    895.1
+  p=1009 D=4036 X0=   30  mean|S|=     0.91 max|S|=     2.06  B=   180.86  max/B=0.011  trivial=    895.1
+  p=1009 D=4036 X0=  300  mean|S|=    15.07 max|S|=    24.94  B=   555.10  max/B=0.045  trivial=    895.1
+  p=1009 D=4036 X0= 3000  mean|S|=    15.25 max|S|=    34.79  B=  1744.12  max/B=0.020  trivial=    895.1
+  p=4001 D=503 X0=    0  mean|S|=     4.64 max|S|=     6.92  B=    63.38  max/B=0.109  trivial=    111.7
+  p=4001 D=503 X0=   30  mean|S|=     5.64 max|S|=    11.42  B=   352.31  max/B=0.032  trivial=    111.7
+  p=4001 D=503 X0=  300  mean|S|=     5.32 max|S|=    10.52  B=  1097.53  max/B=0.010  trivial=    111.7
+  p=4001 D=503 X0= 3000  mean|S|=     4.76 max|S|=    10.47  B=  3465.24  max/B=0.003  trivial=    111.7
+  p=4001 D=4001 X0=    0  mean|S|=     6.38 max|S|=    12.10  B=    64.25  max/B=0.188  trivial=    888.2
+  p=4001 D=4001 X0=   30  mean|S|=    11.44 max|S|=    28.15  B=   353.18  max/B=0.080  trivial=    888.2
+  p=4001 D=4001 X0=  300  mean|S|=    12.21 max|S|=    21.56  B=  1098.41  max/B=0.020  trivial=    888.2
+  p=4001 D=4001 X0= 3000  mean|S|=    15.23 max|S|=    33.08  B=  3466.11  max/B=0.010  trivial=    888.2
+  p=4001 D=16004 X0=    0  mean|S|=     0.91 max|S|=     1.23  B=    67.25  max/B=0.018  trivial=   3551.9
+  p=4001 D=16004 X0=   30  mean|S|=     2.09 max|S|=     4.79  B=   356.18  max/B=0.013  trivial=   3551.9
+  p=4001 D=16004 X0=  300  mean|S|=    32.71 max|S|=    56.37  B=  1101.41  max/B=0.051  trivial=   3551.9
+  p=4001 D=16004 X0= 3000  mean|S|=    30.15 max|S|=    69.81  B=  3469.11  max/B=0.020  trivial=   3551.9
+memcap: peak 0 MB rc=0
