@@ -1,0 +1,8 @@
+ISSUES
+1. INCOMPLETE — conditional reduction, not a proof of E1/E1-M. `H1` assumes E1-M’s enlarged moment range; `H3` assumes the simplicity-transfer conclusion. Discharge these for the actual analytic objects.
+2. No concrete specialization is supplied: `N/S/O`, `Moment`, and `cdet` have semantics only in comments; `F.rpow` is unconstrained. Instantiate actual zero counts, moments, detector integral, and real functions. `inputs_consistent` proves only compatibility with synthetic inputs.
+3. `H2` extends SL Thm 1.3 beyond its stated ν-range: it allows any `0 < ν < 1/2` given `MomentRange`. E1.md §3 asserts this extension, but the Lean theorem assumes it. Verify the proof-transfer claim, including auxiliary Q choices.
+4. `SL51Inputs` requires parity for **every real T**. The supplied asymptotic/window statements do not establish that global quantifier. Supply a global extension argument or require parity only eventually.
+5. Frozen-detector identity is unauditable: `xs₁` is not supplied. Verify its 100 coefficients against EXP-010 and connect the numerical certificate to precisely this `P₁,Q₁`.
+6. Numerical conclusion is weaker than E1’s advertised values: Lean proves only `h(1/2;κ₁) > 0.0055`, coarse κ bounds, and a positive threshold gap—not the displayed κ, h, or `0.00785` gap. Provide certified enclosing intervals; write rounded decimals as approximations, not exact equalities.
+7. `H4` correctly encloses the pasted Arb interval; its decimal scaling is not an issue. However, it remains a hypothesis rather than a verified evaluation of the defined detector integral.

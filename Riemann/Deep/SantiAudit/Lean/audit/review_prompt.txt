@@ -1,0 +1,182 @@
+VERDICT-ONLY statement-fidelity review of a Lean 4 formalization. Do NOT run tools, do NOT read files, do NOT spawn subagents: everything needed is pasted below. Answer in <= 25 lines: first line "FAITHFUL" or "ISSUES", then numbered concrete issues (statement vs source mismatches, hypotheses stronger than their sources, vacuity, wrong constants), most serious first.
+
+## Target: Theorem E1 (E1.md §1)
+For every fixed θ ∈ (1/2, 1), liminf_{T→∞} S(T,T^θ)/N(T,T^θ) ≥ h(θ; κ1) ≥ h(1/2; κ1) = 0.0055353042386 > 0, with h(θ;k) = (3 + k − √((1−k)(9 − k − 8c(θ))))/4, c(θ) = 2 − θ/2 − cot(θ/√2)/√2 (Wang), κ1 = 1 − R⁻¹ log c(P,Q,R,ν) = 0.0844779079697 at ν = 3/25, R = 177/20 with the frozen detector (P,Q) (Q in SL's Chebyshev family of degree 201 with the 100 x_j of the EXP-010 set ν = 999/10000, P(x) = S(r x)/S(r), r = 7707/10000, S = degree-13 Taylor polynomial of sinh). N(T,H) = zeros with T < γ ≤ T+H with multiplicity; S(T,H) = simple zeros with β = 1/2; O(T,H) = distinct sign changes of Z(t) in (T,T+H]. k*(θ) = 1 − 2/(2 − c(θ)); E1.md claims κ1 − k*(1/2) = 0.00785 > 0, c(1/2) = −0.16596385, h increasing in θ and κ.
+Theorem E1-M (E1.md §1): SL Thm 1.2 (below) holds for 0 < ν < (3θ − 1)/4 (θ ∈ (1/2,1)). E1.md §3: SL's Lemma 4.1, 4.2, Thm 1.3 and Thm 5.1 need no range condition beyond Thm 1.2's conclusion (Thm 1.3's proof uses Thm 1.2 for Q and for Q = 1, 1 + x^j); Thm 5.1 needs κ < 1, c < 1; Wang's pair sum holds for 0 < λ < θ < 1.
+Certificate (e1_constants.log, Arb 4000 bits): c(P,Q,177/20,3/25) = [3302.286923204427565639012 ± 4.36e-22].
+
+## Sources (Santibáñez-Leal, Zenodo 23134787 v0.03 = SL)
+- SL Thm 1.2: Let ν satisfy (5) [0 < ν < ν*(θ)], R > 0, P real polynomial with P(0) = 0, P(1) = 1, Q real polynomial with Q(0) = 1; σ0 = 1/2 − R/L, y = T^ν, Δ = H/L, V(s) = Q(−(1/L) d/ds)ζ(s), ψ(s) = Σ_{h≤y} μ(h) P(log(y/h)/log y) h^{−s−1/2+σ0}. For smooth w, 0 ≤ w ≤ 1, w = 1 on [T,T+H], supp in [T−Δ,T+H+Δ], w^(j) ≪ Δ^{−j}: ∫ w(t)|Vψ(σ0+it)|² dt = c(P,Q,R,ν) ŵ(0) + O(H/L), c(P,Q,R,ν) = 1 + (1/ν)∫0^1∫0^1 (w_R(v)P′(u) + ν w_R′(v)P(u))² du dv, w_R(v) = e^{Rv}Q(v).
+- SL Thm 1.3: In the setting of Theorem 1.2, suppose that Q(x) + Q(1 − x) is a nonzero constant. Then liminf O(T,T^θ)/N(T,T^θ) ≥ κ(P,Q,R,ν) := 1 − (1/R) log c(P,Q,R,ν).
+- SL Thm 5.1: If liminf O(T,T^θ)/N(T,T^θ) ≥ k ≥ 0, then liminf S(T,T^θ)/N(T,T^θ) ≥ h(θ;k). Proof: for real even η ∈ C_c((−λ/2,λ/2)), 0 < λ < θ, ∫η² = 1, Q_T = pair sum of f = η² over the scaled zeros of the window; with q_T, s_T, o_T the ratios of Q_T, S, O to N, the parity inequality [SL ref 4, Prop 2.5] reads (q_T − s_T)(1 − o_T) ≥ 2(1 − s_T)², Wang's theorem gives q_T → C(f). If O = N then s_T = 1; otherwise ... 2(1 − s_T)² ≤ (C(f)+ε−s_T)(1−k+ε), hence liminf s_T ≥ R(C(f), 1 − k), R(A,b) = (4 − b − √(b(b + 8(A − 1))))/4, the smaller root. Letting f tend to the cosine density at fixed λ, so that C(f) → 2 − c(λ), and then λ → θ, gives R(2 − c(θ), 1 − k) = h(θ;k).
+- Prop 2.5 last step (our audit): Q ≥ 2tN − (2t−1)S − t²d for t ≥ 1, t = (N−S)/d ≥ 2, N − O ≥ 2d.
+
+## Lean: abstract elementary functions (each field = the Mathlib theorem of the same name in namespace Real; intended instance Real.sqrt/sin/cos/exp/log, rpow T θ = T^θ)
+```lean
+structure Fns where
+  sqrt : ℝ → ℝ
+  sin : ℝ → ℝ
+  cos : ℝ → ℝ
+  exp : ℝ → ℝ
+  log : ℝ → ℝ
+  /-- `rpow T θ = T ^ θ` (Real.rpow); only a symbol for the window H = T^θ. -/
+  rpow : ℝ → ℝ → ℝ
+  sqrt_nonneg : ∀ x, 0 ≤ sqrt x
+  mul_self_sqrt : ∀ x, 0 ≤ x → sqrt x * sqrt x = x
+  sin_bound : ∀ x, |x| ≤ 1 → |sin x - (x - x ^ 3 / 6)| ≤ |x| ^ 5 / 100
+  cos_bound : ∀ x, |x| ≤ 1 → |cos x - (1 - x ^ 2 / 2)| ≤ |x| ^ 4 * (5 / 96)
+  sin_two_mul : ∀ x, sin (2 * x) = 2 * sin x * cos x
+  cos_two_mul : ∀ x, cos (2 * x) = 2 * cos x ^ 2 - 1
+  sin_sq_add_cos_sq : ∀ x, sin x ^ 2 + cos x ^ 2 = 1
+  sin_sub : ∀ x y, sin (x - y) = sin x * cos y - cos x * sin y
+  sin_lt : ∀ x, 0 < x → sin x < x
+  sin_gt_sub_cube : ∀ x, 0 < x → x - x ^ 3 / 6 < sin x
+  exp_pos : ∀ x, 0 < exp x
+  exp_zero : exp 0 = 1
+  exp_add : ∀ x y, exp (x + y) = exp x * exp y
+  exp_one_gt_d9 : 2.7182818283 < exp 1
+  quadratic_le_exp_of_nonneg : ∀ x, 0 ≤ x → 1 + x + x ^ 2 / 2 ≤ exp x
+  log_le_iff_le_exp : ∀ x y, 0 < x → (log x ≤ y ↔ x ≤ exp y)
+inductive IsPoly : (ℝ → ℝ) → Prop
+  | const (a : ℝ) : IsPoly (fun _ => a)
+  | id : IsPoly (fun x => x)
+  | add {f g : ℝ → ℝ} : IsPoly f → IsPoly g → IsPoly (fun x => f x + g x)
+  | mul {f g : ℝ → ℝ} : IsPoly f → IsPoly g → IsPoly (fun x => f x * g x)
+noncomputable def cheb : ℕ → ℝ → ℝ
+  | 0, _ => 1
+  | 1, x => x
+  | n + 2, x => 2 * x * cheb (n + 1) x - cheb n x
+structure Inputs where
+  /-- N(T, H): zeros β + iγ of ζ with T < γ ≤ T + H, counted with multiplicity. -/
+  N : ℝ → ℝ → ℝ
+  /-- S(T, H): simple zeros with β = 1/2 and T < γ ≤ T + H. -/
+  S : ℝ → ℝ → ℝ
+  /-- O(T, H): distinct sign changes of Hardy's Z(t) in (T, T + H]. -/
+  O : ℝ → ℝ → ℝ
+  /-- `Moment θ ν R P Q`: SL Thm 1.2's conclusion at H = T^θ, y = T^ν, σ₀ = 1/2 − R/L:
+    ∫ w |Vψ(σ₀ + it)|² dt = c(P, Q, R, ν) ŵ(0) + O(H/L) for every admissible weight w. -/
+  Moment : ℝ → ℝ → ℝ → (ℝ → ℝ) → (ℝ → ℝ) → Prop
+  /-- `cdet P Q R ν` = c(P, Q, R, ν) = 1 + ν⁻¹ ∫₀¹∫₀¹ (w_R(v)P′(u) + ν w_R′(v)P(u))² du dv, w_R(v) = e^{Rv}Q(v). -/
+  cdet : (ℝ → ℝ) → (ℝ → ℝ) → ℝ → ℝ → ℝ
+```
+## Lean definitions (variable (F : Fns) (I : Inputs))
+```lean
+noncomputable def cot (x : ℝ) : ℝ := F.cos x / F.sin x
+noncomputable def cW (θ : ℝ) : ℝ := 2 - θ / 2 - cot F (θ / F.sqrt 2) / F.sqrt 2
+noncomputable def hc (c k : ℝ) : ℝ := (3 + k - F.sqrt ((1 - k) * (9 - k - 8 * c))) / 4
+noncomputable def h (θ k : ℝ) : ℝ := hc F (cW F θ) k
+noncomputable def kstar (θ : ℝ) : ℝ := 1 - 2 / (2 - cW F θ)
+noncomputable def kappa (c R : ℝ) : ℝ := 1 - R⁻¹ * F.log c
+def LiminfGe (f : ℝ → ℝ) (a : ℝ) : Prop := ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, a - ε ≤ f T
+noncomputable def ratio (A N : ℝ → ℝ → ℝ) (θ : ℝ) : ℝ → ℝ := fun T => A T (F.rpow T θ) / N T (F.rpow T θ)
+noncomputable def qsum : List ℝ → ℕ → ℝ → ℝ
+  | [], _, _ => 0
+  | a :: as, j, y => a * (cheb (2 * j + 1) (1 - 2 * y) - (1 - 2 * y)) + qsum as (j + 1) y
+noncomputable def Qfam (xs : List ℝ) (y : ℝ) : ℝ := 1 - y + qsum xs 1 y
+noncomputable def Sfun (u : ℝ) : ℝ :=
+  u + u ^ 3 / 6 + u ^ 5 / 120 + u ^ 7 / 5040 + u ^ 9 / 362880 + u ^ 11 / 39916800 + u ^ 13 / 6227020800
+noncomputable def Pfam (r x : ℝ) : ℝ := Sfun (r * x) / Sfun r
+noncomputable def Q₁ : ℝ → ℝ := Qfam xs₁
+noncomputable def P₁ : ℝ → ℝ := Pfam (7707 / 10000)
+def Adm (R : ℝ) (P Q : ℝ → ℝ) : Prop := 0 < R ∧ IsPoly P ∧ IsPoly Q ∧ P 0 = 0 ∧ P 1 = 1 ∧ Q 0 = 1
+def MomentRange (θ ν : ℝ) : Prop := ∀ R P Q, Adm R P Q → I.Moment θ ν R P Q
+def H1 : Prop := ∀ θ ν : ℝ, 1 / 2 < θ → θ < 1 → 0 < ν → ν < (3 * θ - 1) / 4 → MomentRange I θ ν
+def H2 : Prop := ∀ (θ ν R : ℝ) (P Q : ℝ → ℝ), 1 / 2 < θ → θ < 1 → 0 < ν → ν < 1 / 2 → Adm R P Q →
+  (∃ C : ℝ, C ≠ 0 ∧ ∀ x, Q x + Q (1 - x) = C) → MomentRange I θ ν →
+  LiminfGe (ratio F I.O I.N θ) (kappa F (I.cdet P Q R ν) R)
+def H3 : Prop := ∀ θ k : ℝ, 1 / 2 < θ → θ < 1 → 0 ≤ k → k < 1 →
+  LiminfGe (ratio F I.O I.N θ) k → LiminfGe (ratio F I.S I.N θ) (h F θ k)
+def H4 : Prop := (3302286923204427565638 / 1000000000000000000 : ℝ) ≤ I.cdet P₁ Q₁ (177 / 20) (3 / 25) ∧
+  I.cdet P₁ Q₁ (177 / 20) (3 / 25) ≤ 3302286923204427565640 / 1000000000000000000
+noncomputable def κ₁ : ℝ := kappa F (I.cdet P₁ Q₁ (177 / 20) (3 / 25)) (177 / 20)
+noncomputable def Rroot (A b : ℝ) : ℝ := (4 - b - F.sqrt (b * (b + 8 * (A - 1)))) / 4
+def SL51Inputs (I : Inputs) (θ : ℝ) : Prop :=
+  ∃ (ι : Type) (Qf : ι → ℝ → ℝ → ℝ) (C : ι → ℝ),
+    (∃ T₀ : ℝ, ∀ T ≥ T₀, 0 < I.N T (F.rpow T θ) ∧ 0 ≤ I.S T (F.rpow T θ) ∧
+      I.O T (F.rpow T θ) ≤ I.N T (F.rpow T θ)) ∧
+    (∀ f T, 2 * (I.N T (F.rpow T θ) - I.S T (F.rpow T θ)) ^ 2 ≤
+      (Qf f T (F.rpow T θ) - I.S T (F.rpow T θ)) * (I.N T (F.rpow T θ) - I.O T (F.rpow T θ))) ∧
+    (∀ f, ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, ratio F (Qf f) I.N θ T ≤ C f + ε) ∧
+    (∀ δ > 0, ∃ f, C f ≤ 2 - cW F θ + δ)
+```
+## Lean main statements (all proved, sorry-free, axioms propext/Classical.choice/Quot.sound)
+```lean
+theorem theoremE1 (h1 : H1 I) (h2 : H2 F I) (h3 : H3 F I) (h4 : H4 I) (θ : ℝ) (hθ1 : 1 / 2 < θ) (hθ2 : θ < 1) :
+    LiminfGe (ratio F I.S I.N θ) (h F θ (κ₁ F I)) ∧ h F (1 / 2) (κ₁ F I) ≤ h F θ (κ₁ F I) ∧
+      (0.0055 : ℝ) < h F (1 / 2) (κ₁ F I)
+
+theorem theoremE1_parity (I : Inputs) (h1 : H1 I) (h2 : H2 F I) (hin : ∀ θ : ℝ, 1 / 2 < θ → θ < 1 → SL51Inputs F I θ)
+    (h4 : H4 I) (θ : ℝ) (hθ1 : 1 / 2 < θ) (hθ2 : θ < 1) :
+    LiminfGe (ratio F I.S I.N θ) (h F θ (κ₁ F I)) ∧ h F (1 / 2) (κ₁ F I) ≤ h F θ (κ₁ F I) ∧
+      (0.0055 : ℝ) < h F (1 / 2) (κ₁ F I)
+
+theorem kappa1_gt_kstar (h4 : H4 I) {θ : ℝ} (hθ1 : 1 / 2 ≤ θ) (hθ2 : θ ≤ 1) :
+    0 < κ₁ F I - kstar F (1 / 2) ∧ kstar F θ < κ₁ F I
+
+theorem inputs_consistent : H1 trivialInputs ∧ H2 F trivialInputs ∧ H3 F trivialInputs ∧ H4 trivialInputs
+
+theorem h_half_gt {κ : ℝ} (hk : (37379 / 442500 : ℝ) ≤ κ) (hk1 : κ < 1) : (0.0055 : ℝ) < h F (1 / 2) κ
+
+theorem kstar_half_lt {κ : ℝ} (hk : (37379 / 442500 : ℝ) ≤ κ) (hk1 : κ < 1) : kstar F (1 / 2) < κ
+
+theorem kappa_bounds {c : ℝ} (hlo : (3302286923204427565638 / 1000000000000000000 : ℝ) ≤ c)
+    (hhi : c ≤ 3302286923204427565640 / 1000000000000000000) :
+    (37379 / 442500 : ℝ) ≤ kappa F c (177 / 20) ∧ kappa F c (177 / 20) < 1
+
+theorem exp_810242 : (3302286923204427565640 / 1000000000000000000 : ℝ) ≤ F.exp (810242 / 100000)
+
+theorem cW_half_ge : (-16596708521464472031 / 100000000000000000000 : ℝ) ≤ cW F (1 / 2)
+
+theorem trig_xlo : (34623307866193455119 / 100000000000000000000 : ℝ) ≤ F.sin (353553 / 1000000) ∧ F.cos (353553 / 1000000) ≤ (46907426160882655471 / 50000000000000000000 : ℝ)
+
+theorem sqrt2_bounds : (141421356237 / 100000000000 : ℝ) ≤ F.sqrt 2 ∧ F.sqrt 2 ≤ 141421356238 / 100000000000
+
+theorem hc_pos_iff {c k : ℝ} (hk : k < 1) (hc1 : c < 1) : 0 < hc F c k ↔ 1 - 2 / (2 - c) < k
+
+theorem h_pos_iff {θ k : ℝ} (h0 : 0 < θ) (h1 : θ ≤ 1) (hk : k < 1) : 0 < h F θ k ↔ kstar F θ < k
+
+theorem hc_mono_k {c k₁ k₂ : ℝ} (hc1 : c < 1) (hk : k₁ ≤ k₂) (hk2 : k₂ < 1) : hc F c k₁ ≤ hc F c k₂
+
+theorem hc_mono_c {c₁ c₂ k : ℝ} (hk : k < 1) (hcc : c₁ ≤ c₂) (hc2 : c₂ < 1) : hc F c₁ k ≤ hc F c₂ k
+
+theorem cot_sub_gt {x y : ℝ} (hx : 0 < x) (hxy : x < y) (hy : y ≤ 1) : y - x < cot F x - cot F y
+
+theorem cW_lt {θ₁ θ₂ : ℝ} (h1 : 0 < θ₁) (h12 : θ₁ < θ₂) (h2 : θ₂ ≤ 1) : cW F θ₁ < cW F θ₂
+
+theorem cW_lt_one {θ : ℝ} (h0 : 0 < θ) (h1 : θ ≤ 1) : cW F θ < 1
+
+theorem h_mono_theta {θ₁ θ₂ k : ℝ} (h1 : 0 < θ₁) (h12 : θ₁ ≤ θ₂) (h2 : θ₂ ≤ 1) (hk : k < 1) :
+    h F θ₁ k ≤ h F θ₂ k
+
+theorem nu_range_iff (θ : ℝ) : (3 / 25 : ℝ) < (3 * θ - 1) / 4 ↔ 37 / 75 < θ
+
+theorem nu2_range_iff (θ : ℝ) : (1249 / 10000 : ℝ) < (3 * θ - 1) / 4 ↔ 3749 / 7500 < θ
+
+theorem exponent_iff (θ ν : ℝ) : 1 / 2 + 2 * ν - 3 * θ / 2 < 0 ↔ ν < (3 * θ - 1) / 4
+
+theorem range_lt_half {θ : ℝ} (h : θ < 1) : (3 * θ - 1) / 4 < 1 / 2
+
+theorem sqrt_eq_of {a s : ℝ} (hs : 0 ≤ s) (h : s * s = a) : F.sqrt a = s
+
+theorem detector_admissible : IsPoly P₁ ∧ IsPoly Q₁ ∧ P₁ 0 = 0 ∧ P₁ 1 = 1 ∧ Q₁ 0 = 1 ∧ Q₁ 1 = 0 ∧
+    ∀ y, Q₁ y + Q₁ (1 - y) = 1
+
+theorem Rroot_eq (c k : ℝ) : Rroot F (2 - c) (1 - k) = hc F c k
+
+theorem sl51 (I : Inputs) {ι : Type} (Qf : ι → ℝ → ℝ → ℝ) (C : ι → ℝ) {θ k : ℝ}
+    (hθ0 : 0 < θ) (hθ1 : θ ≤ 1) (hk1 : k < 1)
+    (hcount : ∃ T₀ : ℝ, ∀ T ≥ T₀, 0 < I.N T (F.rpow T θ) ∧ 0 ≤ I.S T (F.rpow T θ) ∧
+      I.O T (F.rpow T θ) ≤ I.N T (F.rpow T θ))
+    (hpar : ∀ f T, 2 * (I.N T (F.rpow T θ) - I.S T (F.rpow T θ)) ^ 2 ≤
+      (Qf f T (F.rpow T θ) - I.S T (F.rpow T θ)) * (I.N T (F.rpow T θ) - I.O T (F.rpow T θ)))
+    (hwang : ∀ f, ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, ratio F (Qf f) I.N θ T ≤ C f + ε)
+    (hopt : ∀ δ > 0, ∃ f, C f ≤ 2 - cW F θ + δ)
+    (hO : LiminfGe (ratio F I.O I.N θ) k) : LiminfGe (ratio F I.S I.N θ) (h F θ k)
+
+theorem H3_of_inputs (I : Inputs) (hin : ∀ θ : ℝ, 1 / 2 < θ → θ < 1 → SL51Inputs F I θ) : H3 F I
+
+theorem parity_of_lamzouri {Q N S O d : ℝ} (hd : 0 ≤ d) (hNS : d ≤ N - S) (hNO : 2 * d ≤ N - O)
+    (hL : ∀ t : ℝ, 1 ≤ t → 2 * t * N - (2 * t - 1) * S - t ^ 2 * d ≤ Q) :
+    2 * (N - S) ^ 2 ≤ (Q - S) * (N - O)
+```
+Also proved: inputs_consistent: for every F, a trivial Inputs (N = S = O = 1, Moment ≡ True, cdet ≡ 3302.286923204427565639) satisfies H1 ∧ H2 ∧ H3 ∧ H4.

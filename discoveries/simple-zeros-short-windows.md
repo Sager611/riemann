@@ -18,4 +18,6 @@
 
 **RH relevance:** N8 (simple zeros and the critical-line proportion in short windows: the method's own threshold θ = 1/2 reached).
 
+**Lean.** e1lean (Orca, 12–14 Nov 2026): `E1Lean.theoremE1` — liminf S/N ≥ h(θ; κ₁) ≥ h(1/2; κ₁) > 0.0055 for every θ ∈ (1/2, 1) — sorry-free in Lean 4 + Mathlib with standard axioms (propext, Classical.choice, Quot.sound), from named inputs: H1 (the E1-M moment, i.e. Steps 1–5, the new analytic part), H2 (SL Thm 1.3), H3 (SL Thm 5.1, itself derived from the parity product, Wang's pair sum and the optimal density, `theoremE1_parity`) and H4 (the Arb certificate for c); the algebra, detector admissibility, SL Thm 5.1's deduction and the §4 enclosures are proved; Mathlib's real functions enter as named fields (uncompiled 54-line instance); every compile ≤ 274 MB top MEM (footprint ≤ 294 MiB); statement-fidelity reviewer FAITHFUL after one repair round. [LEAN.md](../Riemann/Deep/SantiAudit/LEAN.md)
+
 **Files.** [Riemann/Deep/SantiAudit/](../Riemann/Deep/SantiAudit/): E1.md, e1_constants.py/.log, e1_dual_test.py, e1_dual_identity.log, e1_dual_size.log, params_exp010.json, onsets.py/.log, nu12.py/.log; rounds [R464](../Riemann/Tree/R464.lean).

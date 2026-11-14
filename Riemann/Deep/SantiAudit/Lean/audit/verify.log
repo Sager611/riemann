@@ -1,0 +1,12 @@
+18:09:13 Defs rc=0 29s footprint=243MiB memcap: peak 173 MB rc=0
+18:09:58 Detector rc=0 45s footprint=253MiB memcap: peak 244 MB rc=0
+18:11:01 AlgebraH rc=0 63s footprint=252MiB memcap: peak 235 MB rc=0
+18:12:48 AlgebraC rc=0 106s footprint=281MiB memcap: peak 272 MB rc=0
+18:13:41 Numeric rc=0 53s footprint=262MiB memcap: peak 240 MB rc=0
+18:14:34 Kappa rc=0 53s footprint=248MiB memcap: peak 229 MB rc=0
+18:15:36 Arch rc=0 62s footprint=250MiB memcap: peak 231 MB rc=0
+18:17:21 Parity rc=0 105s footprint=284MiB memcap: peak 257 MB rc=0
+18:18:33 Bounds2 rc=0 72s footprint=274MiB memcap: peak 249 MB rc=0
+18:19:10 Check rc=0 37s footprint=239MiB memcap: peak 207 MB rc=0
+'E1Lean.theoremE1' depends on axioms: [propext, Classical.choice, Quot.sound]
+ALL OK

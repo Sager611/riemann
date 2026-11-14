@@ -1,0 +1,58 @@
+'E1Lean.theoremE1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.kappa1_gt_kstar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.inputs_consistent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.detector_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.hc_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.h_pos_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.hc_mono_k' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.hc_mono_c' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.cot_sub_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.cW_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.cW_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.h_mono_theta' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.nu_range_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.nu2_range_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.exponent_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.range_lt_half' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.sqrt_eq_of' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.sqrt2_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.trig_xlo' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.cW_half_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.exp_810242' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.kappa_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.h_half_gt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.kstar_half_lt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.Rroot_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.root_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.per_T' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.ratio_parity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.sl51' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.H3_of_inputs' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.theoremE1_parity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.parity_of_lamzouri' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.trig_xhi' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.cW_half_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.le_log_of_exp_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.exp_Llo_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.kappa_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.h_half_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'E1Lean.e1_enclosures' depends on axioms: [propext, Classical.choice, Quot.sound]
+       27.89 real         2.61 user         4.88 sys
+          1493843968  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               71838  page reclaims
+               78402  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                3723  voluntary context switches
+               70062  involuntary context switches
+         14991349352  instructions retired
+         11514615031  cycles elapsed
+           251365520  peak memory footprint
+memcap: peak 207 MB rc=0

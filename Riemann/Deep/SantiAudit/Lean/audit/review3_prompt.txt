@@ -1,0 +1,13 @@
+VERDICT-ONLY review, no tools, no files, no subagents. <= 10 lines: first line FAITHFUL or ISSUES, then issues.
+Question: does this Lean theorem state two-sided enclosures CONSISTENT with E1.md §4's Arb values, with correct directions and meanings?
+E1.md §4 (Arb, 4000 bits): c(1/2) = −0.1659638503649857; k*(1/2) = 1 − 2/(2 − c(1/2)) = 0.0766235550685757; κ1 = 1 − R⁻¹ log c(P,Q,R,ν) = 0.0844779079697484 (R = 177/20, ν = 3/25); κ1 − k*(1/2) = 0.0078543529011727; h(1/2; κ1) = 0.0055353042386405.
+Lean definitions: cW θ = 2 − θ/2 − cot(θ/√2)/√2; h θ k = (3 + k − √((1 − k)(9 − k − 8 cW θ)))/4; kstar θ = 1 − 2/(2 − cW θ); κ₁ F I = kappa F (I.cdet P₁ Q₁ (177/20) (3/25)) (177/20), kappa c R = 1 − R⁻¹ log c; H4 I := 3302.286923204427565638 ≤ I.cdet P₁ Q₁ (177/20) (3/25) ≤ 3302.286923204427565640 (Arb ball [3302.286923204427565639012 ± 4.36e−22]).
+Lean (proved, sorry-free, standard axioms):
+```lean
+theorem e1_enclosures (I : Inputs) (h4 : H4 I) :
+    (-16596708521464472031 / 100000000000000000000 : ℝ) ≤ cW F (1 / 2) ∧ cW F (1 / 2) ≤ (-16596366764648141727 / 100000000000000000000 : ℝ) ∧
+    (37379 / 442500 : ℝ) ≤ κ₁ F I ∧ κ₁ F I ≤ 6231 / 73750 ∧
+    (0.0055 : ℝ) < h F (1 / 2) (κ₁ F I) ∧ h F (1 / 2) (κ₁ F I) ≤ 0.005543 ∧
+    (0.0078 : ℝ) < κ₁ F I - kstar F (1 / 2) ∧ κ₁ F I - kstar F (1 / 2) ≤ 0.00787
+```
+(−16596708521464472031/10^20 = −0.16596708521; −16596366764648141727/10^20 = −0.16596366765; 37379/442500 = 0.0844723164; 6231/73750 = 0.0844881356.)
