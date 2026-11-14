@@ -1,0 +1,57 @@
+row0:22: SyntaxWarning: invalid escape sequence '\c'
+row1:22: SyntaxWarning: invalid escape sequence '\c'
+row2:22: SyntaxWarning: invalid escape sequence '\c'
+row3:22: SyntaxWarning: invalid escape sequence '\c'
+row4:22: SyntaxWarning: invalid escape sequence '\c'
+row5:22: SyntaxWarning: invalid escape sequence '\c'
+row6:22: SyntaxWarning: invalid escape sequence '\c'
+row7:22: SyntaxWarning: invalid escape sequence '\c'
+row8:22: SyntaxWarning: invalid escape sequence '\c'
+row9:22: SyntaxWarning: invalid escape sequence '\c'
+row10:22: SyntaxWarning: invalid escape sequence '\c'
+row11:22: SyntaxWarning: invalid escape sequence '\c'
+row12:22: SyntaxWarning: invalid escape sequence '\c'
+row13:22: SyntaxWarning: invalid escape sequence '\c'
+row14:22: SyntaxWarning: invalid escape sequence '\c'
+row15:22: SyntaxWarning: invalid escape sequence '\c'
+row16:22: SyntaxWarning: invalid escape sequence '\c'
+row17:22: SyntaxWarning: invalid escape sequence '\c'
+row18:22: SyntaxWarning: invalid escape sequence '\c'
+row19:22: SyntaxWarning: invalid escape sequence '\c'
+row20:22: SyntaxWarning: invalid escape sequence '\c'
+row21:22: SyntaxWarning: invalid escape sequence '\c'
+row22:22: SyntaxWarning: invalid escape sequence '\c'
+row23:22: SyntaxWarning: invalid escape sequence '\c'
+row24:22: SyntaxWarning: invalid escape sequence '\c'
+row25:22: SyntaxWarning: invalid escape sequence '\c'
+row26:22: SyntaxWarning: invalid escape sequence '\c'
+row27:22: SyntaxWarning: invalid escape sequence '\c'
+row28:22: SyntaxWarning: invalid escape sequence '\c'
+row29:22: SyntaxWarning: invalid escape sequence '\c'
+row30:22: SyntaxWarning: invalid escape sequence '\c'
+row31:22: SyntaxWarning: invalid escape sequence '\c'
+row32:22: SyntaxWarning: invalid escape sequence '\c'
+row33:22: SyntaxWarning: invalid escape sequence '\c'
+row34:22: SyntaxWarning: invalid escape sequence '\c'
+row35:22: SyntaxWarning: invalid escape sequence '\c'
+row36:22: SyntaxWarning: invalid escape sequence '\c'
+row37:22: SyntaxWarning: invalid escape sequence '\c'
+memcap: peak 111 MB rc=0
+       37.79 real         9.73 user        19.15 sys
+           140935168  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               45403  page reclaims
+                 309  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  34  messages sent
+                  36  messages received
+                  26  signals received
+                1912  voluntary context switches
+               67145  involuntary context switches
+            87843530  instructions retired
+            81241969  cycles elapsed
+             2261328  peak memory footprint

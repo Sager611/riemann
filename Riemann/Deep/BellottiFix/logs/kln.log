@@ -1,0 +1,8 @@
+sigma 0.9930 T 10^{13} row 2 alpha0 0.9927 printed impr 13.4% -> both flaws -54.1%, all fixes -73.7%
+sigma 0.9930 T exp(46.2) row 18 alpha0 0.9900 printed impr 58.4% -> both flaws 25.2%, all fixes 24.1%
+sigma 0.9930 T exp(170.2) row 31 alpha0 0.9850 printed impr 97.4% -> both flaws 95.2%, all fixes 95.1%
+sigma 0.9900 T exp(46.2) row 18 alpha0 0.9900 printed impr 4.1% -> both flaws -72.4%, all fixes -75.1%
+sigma 0.9900 T exp(170.2) row 31 alpha0 0.9850 printed impr 96.2% -> both flaws 93.0%, all fixes 92.9%
+sigma 0.9850 T exp(90) row 23 alpha0 0.9850 printed impr 16.2% -> both flaws -53.8%, all fixes -56.8%
+sigma 0.9900 T exp(90) row 23 alpha0 0.9850 printed impr 72.6% -> both flaws 49.7%, all fixes 48.7%
+sigma 0.9930 T exp(90) row 23 alpha0 0.9850 printed impr 86.0% -> both flaws 74.3%, all fixes 73.8%
