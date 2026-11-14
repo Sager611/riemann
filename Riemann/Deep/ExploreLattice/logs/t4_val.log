@@ -1,0 +1,4 @@
+SUM D-20 x2+5y2        x= 0.00 y=  2.2361 Ts=  14.050 T1/Ts=1.0621  Toff=0.932970+15.668250i  Toff/Ts=1.1152  max|beta|<Toff=2.534  scanned 3.72 Ts  [1s]
+SUM D-15 x2+xy+4y2     x=-0.50 y=  1.9365 Ts=  12.167 T1/Ts=0.9936  Toff=0.800011+12.038599i  Toff/Ts=0.9894  max|beta|<Toff=0.828  scanned 3.83 Ts  [2s]
+SUM D-20 2x2+2xy+3y2   x=-0.50 y=  1.1180 Ts=   7.025 T1/Ts=0.9230  Toff=2.079414+7.628868i  Toff/Ts=1.0860  max|beta|<Toff=2.983  scanned 4.42 Ts  [2s]
+memcap: peak 0 MB rc=0

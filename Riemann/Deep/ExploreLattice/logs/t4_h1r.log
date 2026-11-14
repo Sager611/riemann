@@ -1,0 +1,7 @@
+SUM D-163 h1           x=-0.50 y=  6.3836 Ts=  40.109 T1/Ts=1.0328  Toff=none  Toff/Ts=-  max|beta|<Toff=2.696  scanned 3.25 Ts  [8s]
+REFINE D-67 h1 y=4.0927 [60.38,61.95] +2 sign changes; offline now 0.000
+SUM D-67 h1            x=-0.50 y=  4.0927 Ts=  25.715 T1/Ts=0.9623  Toff=none  Toff/Ts=-  max|beta|<Toff=3.492  scanned 3.39 Ts  [7s]
+REFINE D-43 h1 y=3.2787 [24.91,27.01] +2 sign changes; offline now 0.000
+REFINE D-43 h1 y=3.2787 [41.85,43.76] +2 sign changes; offline now -0.000
+SUM D-43 h1            x=-0.50 y=  3.2787 Ts=  20.601 T1/Ts=0.9866  Toff=none  Toff/Ts=-  max|beta|<Toff=3.153  scanned 3.49 Ts  [7s]
+memcap: peak 14 MB rc=0

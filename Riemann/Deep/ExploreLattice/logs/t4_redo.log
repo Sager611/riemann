@@ -1,0 +1,7 @@
+REFINE D-403 y=10.0374 [63.44,65.24] +2 sign changes; offline now -0.000
+SUM D-403              x=-0.50 y= 10.0374 Ts=  63.067 T1/Ts=1.0270  Toff=0.575046+129.867571i  Toff/Ts=2.0592  max|beta|<Toff=1.294  scanned 3.16 Ts  [36s]
+REFINE rect y=15.0000 [114.90,115.86] +2 sign changes; offline now -0.000
+SUM rect               x= 0.00 y= 15.0000 Ts=  94.248 T1/Ts=1.0233  Toff=0.563138+210.039284i  Toff/Ts=2.2286  max|beta|<Toff=1.215  scanned 3.11 Ts  [52s]
+REFINE rect y=30.0000 [191.61,192.42] +2 sign changes; offline now 0.000
+SUM rect               x= 0.00 y= 30.0000 Ts= 188.496 T1/Ts=1.0209  Toff=0.606436+381.778450i  Toff/Ts=2.0254  max|beta|<Toff=1.551  scanned 3.05 Ts  [155s]
+memcap: peak 17 MB rc=0

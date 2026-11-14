@@ -1,0 +1,13 @@
+JUMP D-427 y=10.332  T/Ts in (0.999, 1.053]  offline 0 -> 2
+JUMP D-427 y=10.332  T/Ts in (1.305, 1.349]  offline 2 -> 4
+JUMP D-427 y=10.332  T/Ts in (1.400, 1.449]  offline 4 -> 6
+JUMP D-427 y=10.332  T/Ts in (2.050, 2.103]  offline 6 -> 8
+JUMP D-427 y=10.332  T/Ts in (2.150, 2.198]  offline 8 -> 10
+JUMP D-427 y=10.332  T/Ts in (3.047, 3.091]  offline 10 -> 14
+JUMP D-427 y=10.332  T/Ts in (3.091, 3.152]  offline 14 -> 18
+JUMP D-427 y=10.332  T/Ts in (3.804, 3.848]  offline 18 -> 20
+JUMP D-427 y=10.332  T/Ts in (3.903, 3.949]  offline 20 -> 22
+JUMP D-427 y=10.332  T/Ts in (3.999, 4.040]  offline 22 -> 24
+JUMP D-427 y=10.332  T/Ts in (4.254, 4.303]  offline 24 -> 26
+DIST D-427 y=10.3320: final offline count 26 up to 324.5 (5.00 T_s); total zeros 617  [75s]
+memcap: peak 14 MB rc=0

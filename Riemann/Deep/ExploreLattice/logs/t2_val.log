@@ -1,0 +1,7 @@
+RES D-20 x2+5y2 x=0.0000 y=2.236068 offline 0.9329696975+15.6682495313i  t/(2pi y)=1.1152  resid=3.3e-15
+SUM D-20 x2+5y2 y=2.2361  2piy=14.050  T1=14.799 (1.0533)  max|beta|=2.505  scanned to 16.11 (1.147 x 2piy)  first offline: 0.9330+15.6682i ratio 1.1152  [1s]
+RES D-15 x2+xy+4y2 x=-0.5000 y=1.936492 offline 0.8000109882+12.0385986287i  t/(2pi y)=0.9894  resid=2.5e-16
+SUM D-15 x2+xy+4y2 y=1.9365  2piy=12.167  T1=12.141 (0.9978)  max|beta|=1.965  scanned to 12.53 (1.030 x 2piy)  first offline: 0.8000+12.0386i ratio 0.9894  [0s]
+RES D-20 2x2+2xy+3y2 x=-0.5000 y=1.118034 offline 2.0794141048+7.6288675878i  t/(2pi y)=1.0860  resid=4.5e-14
+SUM D-20 2x2+2xy+3y2 y=1.1180  2piy=7.025  T1=6.577 (0.9362)  max|beta|=2.738  scanned to 9.40 (1.339 x 2piy)  first offline: 2.0794+7.6289i ratio 1.0860  [0s]
+memcap: peak 0 MB rc=0

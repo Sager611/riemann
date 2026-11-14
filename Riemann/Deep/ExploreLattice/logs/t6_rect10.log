@@ -1,0 +1,13 @@
+JUMP rect y=10.000  T/Ts in (0.999, 1.064]  offline 0 -> 2
+JUMP rect y=10.000  T/Ts in (1.064, 1.096]  offline 2 -> 4
+JUMP rect y=10.000  T/Ts in (1.952, 2.002]  offline 4 -> 6
+JUMP rect y=10.000  T/Ts in (2.053, 2.095]  offline 6 -> 8
+JUMP rect y=10.000  T/Ts in (2.095, 2.152]  offline 8 -> 10
+JUMP rect y=10.000  T/Ts in (2.251, 2.292]  offline 10 -> 12
+JUMP rect y=10.000  T/Ts in (2.599, 2.646]  offline 12 -> 14
+JUMP rect y=10.000  T/Ts in (3.049, 3.103]  offline 14 -> 16
+JUMP rect y=10.000  T/Ts in (4.055, 4.113]  offline 16 -> 18
+JUMP rect y=10.000  T/Ts in (4.113, 4.151]  offline 18 -> 20
+JUMP rect y=10.000  T/Ts in (4.298, 4.351]  offline 20 -> 22
+DIST rect y=10.0000: final offline count 22 up to 314.2 (5.00 T_s); total zeros 591  [68s]
+memcap: peak 15 MB rc=0

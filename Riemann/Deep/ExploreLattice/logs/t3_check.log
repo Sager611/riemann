@@ -1,0 +1,15 @@
+D-20 principal Etilde(3)-1 <= 0.0392
+  T=10.00  N(T)=4.0000  N0=4  offline=0.0000  argEt=-0.005  [0.0s]
+  T=15.00  N(T)=7.0000  N0=7  offline=0.0000  argEt=-0.022  [0.1s]
+  T=16.50  N(T)=9.0000  N0=7  offline=2.0000  argEt=0.017  [0.1s]
+  T=20.00  N(T)=12.0000  N0=10  offline=2.0000  argEt=-0.005  [0.2s]
+D-15 principal Etilde(3)-1 <= 0.0622
+  T=11.00  N(T)=4.0000  N0=4  offline=-0.0000  argEt=-0.027  [0.1s]
+  T=12.50  N(T)=6.0000  N0=4  offline=2.0000  argEt=0.051  [0.1s]
+  T=20.00  N(T)=10.0000  N0=6  offline=4.0000  argEt=-0.017  [0.2s]
+D-163 h1 Etilde(3)-1 <= 0.0175
+  T=30.00  N(T)=31.0000  N0=31  offline=0.0000  argEt=0.010  [0.2s]
+  T=62.20  N(T)=77.0000  N0=77  offline=0.0000  argEt=0.017  [0.6s]
+  T=84.60  N(T)=112.0000  N0=112  offline=0.0000  argEt=0.014  [1.6s]
+  T=97.20  N(T)=133.0000  N0=133  offline=0.0000  argEt=-0.005  [2.1s]
+memcap: peak 0 MB rc=0

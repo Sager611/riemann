@@ -1,0 +1,7 @@
+SUM rect               x= 0.00 y= 12.0000 Ts=  75.398 T1/Ts=0.9961  Toff=0.615889+79.270055i  Toff/Ts=1.0514  max|beta|<Toff=1.539  scanned 3.13 Ts  [35s]
+SUM rect               x= 0.00 y= 15.0000 Ts=  94.248 T1/Ts=1.0233  Toff=bracket 114.90-115.86  Toff/Ts=1.2294  max|beta|<Toff=1.170  scanned 3.11 Ts  [56s]
+SUM rect               x= 0.00 y= 20.0000 Ts= 125.664 T1/Ts=1.0298  Toff=0.580975+130.112583i  Toff/Ts=1.0354  max|beta|<Toff=1.336  scanned 3.08 Ts  [27s]
+SUM rect               x= 0.00 y= 25.0000 Ts= 157.080 T1/Ts=1.0234  Toff=0.541119+160.834485i  Toff/Ts=1.0239  max|beta|<Toff=1.040  scanned 3.06 Ts  [44s]
+SUM rect               x= 0.00 y= 30.0000 Ts= 188.496 T1/Ts=1.0209  Toff=bracket 191.61-192.42  Toff/Ts=1.0208  max|beta|<Toff=0.922  scanned 3.05 Ts  [62s]
+SUM rect               x= 0.00 y= 40.0000 Ts= 251.327 T1/Ts=2.0311  Toff=0.535378+522.271900i  Toff/Ts=2.0781  max|beta|<Toff=1.100  scanned 3.04 Ts  [125s]
+memcap: peak 18 MB rc=0

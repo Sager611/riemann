@@ -1,0 +1,4 @@
+SUM D-163 h1           x=-0.50 y=  6.3836 Ts=  40.109 T1/Ts=1.0328  Toff=none  Toff/Ts=-  max|beta|<Toff=2.696  scanned 3.25 Ts  [3s]
+SUM D-67 h1            x=-0.50 y=  4.0927 Ts=  25.715 T1/Ts=0.9623  Toff=bracket 60.38-61.95  Toff/Ts=2.4093  max|beta|<Toff=3.492  scanned 3.39 Ts  [7s]
+SUM D-43 h1            x=-0.50 y=  3.2787 Ts=  20.601 T1/Ts=0.9866  Toff=bracket 24.91-27.01  Toff/Ts=1.3110  max|beta|<Toff=1.770  scanned 3.49 Ts  [4s]
+memcap: peak 15 MB rc=0

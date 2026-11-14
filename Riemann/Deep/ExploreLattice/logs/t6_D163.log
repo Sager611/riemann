@@ -1,0 +1,3 @@
+JUMP D-163 h1 y=6.384  T/Ts in (3.456, 3.492]  offline 0 -> 2
+DIST D-163 h1 y=6.3836: final offline count 2 up to 160.2 (4.00 T_s); total zeros 245  [16s]
+memcap: peak 14 MB rc=0

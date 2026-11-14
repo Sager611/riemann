@@ -1,0 +1,12 @@
+rect  (62.742, 66.831] T/Ts (0.9986, 1.0636]: zeros 6, on-line 4, off-line 2, located 0.531256+64.679342i (1.0294 T_s)
+rect  (66.831, 68.842] T/Ts (1.0636, 1.0957]: zeros 4, on-line 2, off-line 2, located 0.572005+66.951543i (1.0656 T_s)
+rect  (122.663, 125.815] T/Ts (1.9522, 2.0024]: zeros 6, on-line 4, off-line 2, located 0.584792+123.832112i (1.9708 T_s)
+rect  (128.987, 131.625] T/Ts (2.0529, 2.0949]: zeros 5, on-line 3, off-line 2, located 0.568920+129.974563i (2.0686 T_s)
+rect  (131.625, 135.195] T/Ts (2.0949, 2.1517]: zeros 7, on-line 5, off-line 2, located 0.577210+133.193686i (2.1198 T_s)
+rect  (141.453, 144.020] T/Ts (2.2513, 2.2921]: zeros 6, on-line 4, off-line 2, located 0.574265+143.911531i (2.2904 T_s)
+rect  (163.301, 166.248] T/Ts (2.5990, 2.6459]: zeros 6, on-line 4, off-line 2, located 0.537901+164.352708i (2.6158 T_s)
+rect  (191.567, 194.991] T/Ts (3.0489, 3.1034]: zeros 7, on-line 5, off-line 2, located 0.621342+192.574910i (3.0649 T_s)
+rect  (254.789, 258.420] T/Ts (4.0551, 4.1129]: zeros 8, on-line 6, off-line 2, located 0.521503+257.988874i (4.1060 T_s)
+rect  (258.420, 260.817] T/Ts (4.1129, 4.1510]: zeros 5, on-line 3, off-line 2, located 0.670645+259.001643i (4.1221 T_s)
+rect  (270.082, 273.392] T/Ts (4.2985, 4.3512]: zeros 8, on-line 6, off-line 2, located 0.609402+270.139638i (4.2994 T_s)
+memcap: peak 14 MB rc=0

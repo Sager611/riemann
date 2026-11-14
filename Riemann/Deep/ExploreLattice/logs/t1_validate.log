@@ -1,0 +1,32 @@
+ctx pretty = True      # pretty-print repr() output
+unicode = False    # use unicode characters in output
+prec = 53          # real/complex precision (in bits)
+dps = 15           # real/complex precision (in digits)
+cap = 10           # power series precision
+threads = 1        # max number of threads used internally
+-20 cond 20 t 100.0 L 1.2822739076780 + 0.2825228069437j time 0.0168 s charsearch 0.01 s
+-20 cond 20 t 300.0 L 2.8840441285334 + 0.021694791393j time 0.0040 s charsearch 0.01 s
+5 cond 5 t 100.0 L 0.2105941794314 + 0.5448112445936j time 0.0014 s charsearch 0.00 s
+5 cond 5 t 300.0 L 0.188795949211 + 1.044409116657j time 0.0011 s charsearch 0.00 s
+-4 cond 4 t 100.0 L 0.3365757789497 - 0.5158059319468j time 0.0004 s charsearch 0.00 s
+-4 cond 4 t 300.0 L 2.539955260824 - 1.320473307581j time 0.0013 s charsearch 0.00 s
+-427 cond 427 t 100.0 L 0.0638166942399 + 0.1261066121464j time 0.1146 s charsearch 0.00 s
+-427 cond 427 t 300.0 L 4.284055882110 - 2.217878457156j time 0.2245 s charsearch 0.00 s
+-1435 cond 1435 t 100.0 L 2.3570346609142 + 0.4429794820180j time 0.1646 s charsearch 0.00 s
+-1435 cond 1435 t 300.0 L 4.017434379065 - 0.345360691904j time 0.3578 s charsearch 0.00 s
+-5460 cond 5460 t 100.0 L 0.7271631638880 - 0.5585272750925j time 0.2344 s charsearch 0.01 s
+-5460 cond 5460 t 300.0 L 0.2085897124041 + 0.1232226356308j time 0.3873 s charsearch 0.01 s
+-3 cond 3 t 100.0 L 0.8671403617444 + 0.9388507069020j time 0.0005 s charsearch 0.00 s
+-3 cond 3 t 300.0 L 0.0386342765317 - 0.1444245677120j time 0.0016 s charsearch 0.00 s
+D=-20 s=(0.7+10j)  CS=-2.71755337262+2.25642327697i  L=-2.71755337262+2.25642327697i  rel=1.28e-15  (CS 0.006s)
+D=-20 s=(0.5+20j)  CS=-1.47620009419+1.47620009419i  L=-1.47620009419+1.47620009419i  rel=3.76e-15  (CS 0.005s)
+D=-20 s=(1.3+33j)  CS=8.58786979493+15.160796151i  L=8.58786979493+15.160796151i  rel=7.86e-15  (CS 0.011s)
+D=-15 s=(0.7+10j)  CS=1.55266134601+0.866037352188i  L=1.55266134601+0.866037352188i  rel=2.79e-16  (CS 0.006s)
+D=-15 s=(0.5+20j)  CS=-0.822902622778+0.822902622778i  L=-0.822902622778+0.822902622778i  rel=3.24e-15  (CS 0.008s)
+D=-15 s=(1.3+33j)  CS=-8.84507613766+14.8319875096i  L=-8.84507613766+14.8319875096i  rel=1.35e-15  (CS 0.014s)
+x^2+5y^2 PT zero root (0.9329696974854141+15.668249531278471j) resid 3.2646449821726717e-15  t/(2 pi y) = 1.1152
+x^2+xy+4y^2 explore21 root (0.8000109881721137+12.038598628718715j) resid 2.491657522474523e-16  t/(2 pi y) = 0.9894
+F_line t=5 F=0.290176 cos=0.289889 beta=0.000288
+F_line t=14 F=1.055642 cos=0.657801 beta=0.397841
+F_line t=30 F=-1.088675 cos=0.713777 beta=-1.802452
+memcap: peak 0 MB rc=0
