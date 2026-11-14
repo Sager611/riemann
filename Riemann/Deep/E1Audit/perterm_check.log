@@ -1,0 +1,56 @@
+validate Hankel-Laguerre B vs mpmath (d in {0.02+0.17i,0,-0.2,0.1-0.2i}, X in {20,100,1000}): max rel err 2.15e-02
+/Users/adriansager/playground/riemann/Riemann/Deep/E1Audit/perterm_check.py:36: RuntimeWarning: divide by zero encountered in power
+  A = xi ** (-beta) * (-2j * np.pi * xi) ** j * Phi(w, j, beta, H) * xi ** (-z / 2)
+/Users/adriansager/playground/riemann/Riemann/Deep/E1Audit/perterm_check.py:36: RuntimeWarning: invalid value encountered in multiply
+  A = xi ** (-beta) * (-2j * np.pi * xi) ** j * Phi(w, j, beta, H) * xi ** (-z / 2)
+/Users/adriansager/playground/riemann/Riemann/Deep/E1Audit/perterm_check.py:11: RuntimeWarning: divide by zero encountered in divide
+  tt = t[None, :] / (2 * X[:, None])
+/Users/adriansager/playground/riemann/Riemann/Deep/E1Audit/perterm_check.py:12: RuntimeWarning: invalid value encountered in multiply
+  ap = ((1 + 1j * tt) ** (d - 0.5)) @ base; am = ((1 - 1j * tt) ** (d - 0.5)) @ base
+/Users/adriansager/playground/riemann/Riemann/Deep/E1Audit/perterm_check.py:12: RuntimeWarning: invalid value encountered in power
+  ap = ((1 + 1j * tt) ** (d - 0.5)) @ base; am = ((1 - 1j * tt) ** (d - 0.5)) @ base
+/Users/adriansager/playground/riemann/Riemann/Deep/E1Audit/perterm_check.py:16: RuntimeWarning: divide by zero encountered in divide
+  return np.sqrt(2 / (np.pi * X)) * (-0.5j) * (np.exp(1j * (X - np.pi / 4)) * ap - np.exp(-1j * (X - np.pi / 4)) * am)
+/Users/adriansager/playground/riemann/Riemann/Deep/E1Audit/perterm_check.py:16: RuntimeWarning: invalid value encountered in multiply
+  return np.sqrt(2 / (np.pi * X)) * (-0.5j) * (np.exp(1j * (X - np.pi / 4)) * ap - np.exp(-1j * (X - np.pi / 4)) * am)
+cross-check vs E1 e1_dual_size.log (real shifts a=0.01, b=0.02, j=0): expected 0.107 (T=400,pq=4) and 0.545 (T=25600,H=320,pq=256)
+T=4e+02 th=0 H=40.0 pq=4 N0=1 j=0: max_(n<=N0) |T|/bound=nan; decay rel. max: >=2N0 nan, >=4N0 nan, >=8N0 nan; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=nan
+T=3e+04 th=0 H=320.0 pq=256 N0=64 j=0: max_(n<=N0) |T|/bound=0.545; decay rel. max: >=2N0 4.4e-02, >=4N0 2.0e-03, >=8N0 3.6e-06; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=0.612
+complex shifts alpha=(0.05+0.1j), beta=(-0.03+0.07j) (d=(0.020000000000000004+0.17j), z=(0.08+0.03j))
+T=1e+05 th=0.505 H=335.0 pq=6 N0=5.35 j=0: max_(n<=N0) |T|/bound=0.331; decay rel. max: >=2N0 5.5e-02, >=4N0 1.6e-03, >=8N0 5.4e-06; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=0.265
+T=1e+05 th=0.505 H=335.0 pq=6 N0=5.35 j=1: max_(n<=N0) |T|/bound=0.464; decay rel. max: >=2N0 2.8e-01, >=4N0 1.5e-02, >=8N0 9.7e-05; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=0.742
+T=1e+05 th=0.505 H=335.0 pq=6 N0=5.35 j=2: max_(n<=N0) |T|/bound=0.622; decay rel. max: >=2N0 7.3e-01, >=4N0 7.6e-02, >=8N0 9.1e-04; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=1.566
+T=1e+05 th=0.505 H=335.0 pq=210 N0=187 j=0: max_(n<=N0) |T|/bound=0.631; decay rel. max: >=2N0 4.2e-02, >=4N0 1.8e-03, >=8N0 3.6e-06; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=0.783
+T=1e+05 th=0.505 H=335.0 pq=210 N0=187 j=1: max_(n<=N0) |T|/bound=0.480; decay rel. max: >=2N0 3.5e-01, >=4N0 3.0e-02, >=8N0 1.2e-04; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=1.496
+T=1e+05 th=0.505 H=335.0 pq=210 N0=187 j=2: max_(n<=N0) |T|/bound=0.659; decay rel. max: >=2N0 8.2e-01, >=4N0 1.4e-01, >=8N0 1.1e-03; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=2.875
+T=1e+05 th=0.55 H=562.3 pq=6 N0=1.9 j=0: max_(n<=N0) |T|/bound=0.194; decay rel. max: >=2N0 7.9e-02, >=4N0 4.4e-03, >=8N0 2.9e-06; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=0.110
+T=1e+05 th=0.55 H=562.3 pq=6 N0=1.9 j=1: max_(n<=N0) |T|/bound=0.322; decay rel. max: >=2N0 3.1e-01, >=4N0 3.5e-02, >=8N0 4.6e-05; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=0.391
+T=1e+05 th=0.55 H=562.3 pq=6 N0=1.9 j=2: max_(n<=N0) |T|/bound=0.269; decay rel. max: >=2N0 1.3e+00, >=4N0 2.8e-01, >=8N0 7.3e-04; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=1.017
+T=1e+05 th=0.55 H=562.3 pq=210 N0=66.4 j=0: max_(n<=N0) |T|/bound=0.622; decay rel. max: >=2N0 4.0e-02, >=4N0 1.6e-03, >=8N0 3.4e-06; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=0.617
+T=1e+05 th=0.55 H=562.3 pq=210 N0=66.4 j=1: max_(n<=N0) |T|/bound=0.477; decay rel. max: >=2N0 3.3e-01, >=4N0 2.6e-02, >=8N0 1.1e-04; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=1.249
+T=1e+05 th=0.55 H=562.3 pq=210 N0=66.4 j=2: max_(n<=N0) |T|/bound=0.664; decay rel. max: >=2N0 7.4e-01, >=4N0 1.2e-01, >=8N0 1.0e-03; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=2.406
+T=1e+06 th=0.505 H=1071.5 pq=6 N0=5.23 j=0: max_(n<=N0) |T|/bound=0.301; decay rel. max: >=2N0 7.6e-02, >=4N0 2.8e-03, >=8N0 4.7e-06; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=0.233
+T=1e+06 th=0.505 H=1071.5 pq=6 N0=5.23 j=1: max_(n<=N0) |T|/bound=0.426; decay rel. max: >=2N0 3.5e-01, >=4N0 2.6e-02, >=8N0 8.4e-05; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=0.708
+T=1e+06 th=0.505 H=1071.5 pq=6 N0=5.23 j=2: max_(n<=N0) |T|/bound=0.641; decay rel. max: >=2N0 7.8e-01, >=4N0 1.1e-01, >=8N0 7.0e-04; S=sum d(n)|T|/[(T/H^2)^j H (pq/T)^1/4 N0^3/4]=1.586
+memcap: peak 62 MB KILLED TIME>1200s rc=137
+     1202.89 real        42.51 user       455.82 sys
+            49184768  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              884624  page reclaims
+                1514  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  20  messages sent
+                  20  messages received
+                 767  signals received
+                3213  voluntary context switches
+             1351071  involuntary context switches
+           977102737  instructions retired
+          1352729817  cycles elapsed
+             2277712  peak memory footprint
+# NOTE (e1audit): run killed by memcap at its 1200 s cap (42 s CPU; background QoS) during the T = 1e7 rows; remaining rows in perterm_check2.log.
+# The first cross-check row (T=400, H=40) is nan: the w-grid [-10,10] reaches xi = 0 when T/H = 10 (grid artefact, not a test result).
+# Validation max rel err 2.15e-02 is the Gauss-Laguerre a_pm at the worst (d, X) pair; real-d rows reproduce E1 exactly (0.545, S 0.612).
