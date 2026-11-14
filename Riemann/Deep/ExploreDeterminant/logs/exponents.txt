@@ -1,0 +1,16 @@
+theta(sigma) at a = 1/2 (V-free route); closed form (26+5s)/(12(14+3s)):
+  s=   0  n*=    3/14  theta=   13/84 = 0.154762  closed=13/84
+  s= 1/2  n*=   13/62  theta=  19/124 = 0.153226  closed=19/124
+  s= 2/3  n*=    5/24  theta=   11/72 = 0.152778  closed=11/72
+  s= 3/4  n*=  27/130  theta= 119/780 = 0.152564  closed=119/780
+  s=   1  n*=    7/34  theta=  31/204 = 0.151961  closed=31/204
+  s= 3/2  n*=   15/74  theta=  67/444 = 0.150901  closed=67/444
+  s=   2  n*=     1/5  theta=    3/20 = 0.150000  closed=3/20
+alpha-independence check (s = 1):  ['31/204', '31/204', '31/204']
+V-route at a = 1/2 (Huxley resonance curves, V = N/Q): theta_V(s); 13/84 = 0.15476190476190477
+  s=   0  n*=    7/34  theta_V=    8/51 = 0.156863
+  s= 2/3  n*=  23/114  theta_V=  53/342 = 0.154971
+  s= 3/4  n*=  31/154  theta_V=   13/84 = 0.154762
+  s=   1  n*=     1/5  theta_V=  37/240 = 0.154167
+  s=   2  n*=    9/46  theta_V=    7/46 = 0.152174
+memcap: peak 0 MB rc=0

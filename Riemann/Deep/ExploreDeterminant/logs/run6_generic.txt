@@ -1,0 +1,12 @@
+alpha=0.420 log10t=20.00 nu=0.3000 K=3.183099e+19 M=100209770 N=100 R=26 Q=26 H=3.846 intervals=501048 q<Q:323005 Q<=q<2Q:141682 q>=2Q:36361 kept(odd)=90717 m0_outside=0
+CONIC x2x3-pairs/2=1000000 identity_fail=0 distinct_delta=998437 max_pairs_per_delta=2 distinct_(delta,n)=1000000 max_per_conic=1
+DEGEN x2x3-pairs on square-disc (line-pair) conics=367 (of 1000000, all4 among them=2) disc<=0(translation a'=a+jq)=884715 (all4 among them=2760) [keys/CONIC stats: generic conics only] | n=aq-a'q': max|n|=681462 distinct n=163434 max pairs per n=30, P-range=[5.78e+05,8.23e+06] => admissible-P density per n ~ 7.99e-07
+memcap: peak 0 MB rc=0
+alpha=0.450 log10t=20.00 nu=0.3000 K=3.183099e+19 M=398942280 N=399 R=100 Q=100 H=3.990 intervals=499927 q<Q:313631 Q<=q<2Q:147230 q>=2Q:39066 kept(odd)=98087 m0_outside=0
+CONIC x2x3-pairs/2=1000000 identity_fail=0 distinct_delta=990415 max_pairs_per_delta=7 distinct_(delta,n)=999997 max_per_conic=2
+DEGEN x2x3-pairs on square-disc (line-pair) conics=1866 (of 1000000, all4 among them=10) disc<=0(translation a'=a+jq)=36645 (all4 among them=168) [keys/CONIC stats: generic conics only] | n=aq-a'q': max|n|=570738 distinct n=127507 max pairs per n=39, P-range=[5.1e+05,7.91e+06] => admissible-P density per n ~ 1.06e-06
+memcap: peak 0 MB rc=0
+alpha=0.500 log10t=20.00 nu=0.3000 K=3.183099e+19 M=3989422804 N=3989 R=1001 Q=1001 H=3.985 intervals=500052 q<Q:315504 Q<=q<2Q:145410 q>=2Q:39138 kept(odd)=97028 m0_outside=0
+CONIC x2x3-pairs/2=1000000 identity_fail=0 distinct_delta=995808 max_pairs_per_delta=12 distinct_(delta,n)=999999 max_per_conic=2
+DEGEN x2x3-pairs on square-disc (line-pair) conics=7324 (of 1000000, all4 among them=28) disc<=0(translation a'=a+jq)=0 (all4 among them=0) [keys/CONIC stats: generic conics only] | n=aq-a'q': max|n|=595345 distinct n=130621 max pairs per n=42, P-range=[5.02e+05,7.88e+06] => admissible-P density per n ~ 1.04e-06
+memcap: peak 0 MB rc=0
