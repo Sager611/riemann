@@ -20,4 +20,6 @@
 
 **RH relevance:** N10 (explicit prime-error bounds: the first explicit power-saving PNT in progressions uniform in q) and N11 (GRH families: the half-plane for every Dirichlet L-function turned into numeric Linnik and non-residue bounds).
 
+**Audit.** explaudit (Orca, 14 Nov 2026), AUDIT PASSED: every step of DERIVATION.md and cert.py checks out and independent 256-bit code reproduces every constant (1.5, 0.174, 0.0324, 0.0076; 0.72, 0.45331; 7.8978; 10.53): max over pieces 1.48535 (q = 1, x ≈ 2), cells 0.17309 (q = 3, x ≈ 64–70), 0.03229 (log x ≥ 10), tail 0.0075898; least-prime tail margins 21.22% (q ≥ 100), 0.7455% (0.72, q ≥ 10⁴); non-residue margin 38.87%; worst L′/L cell 10.5263 (q = 3); HP141's θ₁₄₁ rows change only B. Items (1)–(4) hold as written, conditional on H and the cited refereed inputs. Orchestrator rerun of indep.py const on a copy: identical. [ExplProgAudit](../Riemann/Deep/ExplProgAudit/REPORT.md)
+
 **Files.** [Riemann/Deep/ExplProg/](../Riemann/Deep/ExplProg/) (REPORT.md, DERIVATION.md, NOVELTY.md, cert.py, sanity.py, lsanity.py, xcheck.py, ksanity.py, logs/).
