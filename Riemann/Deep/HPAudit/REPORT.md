@@ -146,7 +146,7 @@ Scenarios:
 | Linnik L ≤ 7/3, NB in L^{8/7}, family density 5/6 < σ ≤ 7/8, Gauss mean values, Dirichlet Li (COR) | H7/8 | holds | unaffected |
 | NB L^p for Dirichlet L, p ≤ 1.14497 (DISC N5) | HB | p ≤ 8/7 | unaffected |
 | Chebotarev least prime (0.49 log 3Δ_L)^32 (chebotarev-numeric A) | HCT | n/a | falls; part (B), exponent 7.8978, rests on Liu's human Hecke B_2 |
-| Random polynomials irreducible without RH (random-polynomials-without-rh) | HCT (BV Prop. 9) | n/a | falls; the Legendre corollary survives with HB (2^{7.9π(d)}) |
+| Random polynomials irreducible without RH (random-polynomials-without-rh) | HCT (BV Prop. 9) | n/a | falls; the Legendre corollary survives with HB (2^{7.9π(d)}) — corrected by bvirraudit (14 Nov 2026): it uses VX Thm 1.1, which needs CT, so it falls too |
 | Root-discriminant limits 23.3878 / 65.6439 (discriminant-bounds-strip) | HCT (w = 15/32) | n/a | general K falls; abelian K keeps 26.9662 / 84.2999 via HB |
 | Λ_K ≤ 225/512; NB L^p for ζ_K, p ≤ 32/31; koiran; serrenum; detfactor (b); BS-explicit Hecke part; harvest4 items (COR) | HCT | n/a | general K falls; abelian K keeps Λ_K ≤ 0.278828186 and p ≤ 1/B via HB |
 | Artin L half-plane; least prime represented by forms, exponent 1.7498; chebotarev (B) (COR, page) | Liu human, not Lean | — | unaffected (not Lean inputs) |
