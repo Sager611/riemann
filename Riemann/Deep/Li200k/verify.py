@@ -11,7 +11,7 @@ Proof: REPORT.md.  Key inequality  lambda_n >= M_n - Q_n  with
   M_n = sum_{gamma>0} 2(1 - cos(n theta(gamma))),   theta(t) = 2 arctan(1/(2t))   (ordinates only)
   Q_n = sum_{gamma>=T0} q_n(gamma),  q_n(t) = 4 sinh^2(n a(t)/(2t^2)) + 4 n a(t)^2/t^3.
 Inputs used numerically: Hasanalizade-Shen-Wong 2022 Cor 1.2, |N(t) - t/(2pi) log(t/(2pi e)) - 7/8| <= E(t),
-  E(t) = 0.1038 log t + 0.2573 log log t + 9.3675 + 7/8  (t >= e)  [Trudgian 2014 replaced in R333: reported error].
+  E(t) = 0.1038 log t + 0.2573 log log t + 9.4926 + 7/8  (t >= e; HSW print 9.3675, a misprint for 9.4925, Bellotti-Wong fn.)  [Trudgian 2014 replaced in R333: reported error].
 All arithmetic is ball arithmetic (python-flint / Arb); every comparison is a certified sign.
 Needs: pip install python-flint (tested 0.9.0, FLINT 3.6).  Runtime about 1 min, peak memory about 40 MB, one thread.
 Option --conditional adds two conditional half-plane variants (D, E).
@@ -28,9 +28,9 @@ LOG2PI = (2 * PI).log()
 def r(p, q=1):
     return arb(p) / q
 
-# Hasanalizade-Shen-Wong 2022 (JNT 235, arXiv 2107.06506) Cor. 1.2: |N(t) - t/(2pi) log(t/(2pi e))| <= 0.1038 log t + 0.2573 log log t + 9.3675 (t >= e).
+# Hasanalizade-Shen-Wong 2022 (JNT 235, arXiv 2107.06506) Cor. 1.2: |N(t) - t/(2pi) log(t/(2pi e))| <= 0.1038 log t + 0.2573 log log t + 9.3675 (t >= e), where 9.3675 is a misprint for 9.4925 (Bellotti-Wong footnote; lirangeaudit, 19 Nov 2026): we use 9.4926.
 # Ntilde below includes +7/8, so |N - Ntilde| <= that + 7/8. (Trudgian 2014's bound, used before R333, has a reported error: HSW 2022 fn. 2, BMOR 2021.)
-C111, C275, C245 = r(1038, 10000), r(2573, 10000), r(93675, 10000) + r(7, 8)
+C111, C275, C245 = r(1038, 10000), r(2573, 10000), r(94926, 10000) + r(7, 8)
 
 def E(t):            # HSW 2022 bound on |N(t) - Ntilde(t)|, t >= e (E'(t) <= 0.13/t for t >= T0, as W needs)
     return C111 * t.log() + C275 * t.log().log() + C245

@@ -1,0 +1,27 @@
+T1 corner zeros: 18756 certified cases, all lhs > rhs; min slack/q_n = 5.21e-06 at a=0.125 T=1000 gamma=1001 delta=0.125 n=122172936
+  (1 s)
+T2 lambda_n n<=200: Cauchy (|z|=0.85, 512 pts, 45 dig) vs Taylor (Arb): max rel diff 0.00e+00; lambda_1 = [0.0230957089661210 +/- 3.39e-17], lambda_100 = 118.6037753768, lambda_200 = 306.6557648513; min_n lambda_n = 0.0230957
+T3 T=100 a=0.500: chain N_T = 212836 = 21.284 T^2; L_n <= lambda_n fails for n in 89..200: none; on 112 grid n in [89, 3N_T]: M_lo>M_true 0, Q_hi<Q_true 0, lambda^hyp<L_n 0; min_{n<=N_T} (lambda^hyp-err)/M_n = -0.939 at n=89; first grid n with lambda^hyp+err<0: 306760 (97 s)
+T3 T=100 a=0.375: chain N_T = 293369 = 29.337 T^2; L_n <= lambda_n fails for n in 89..200: none; on 112 grid n in [89, 3N_T]: M_lo>M_true 0, Q_hi<Q_true 0, lambda^hyp<L_n 0; min_{n<=N_T} (lambda^hyp-err)/M_n = -0.939 at n=89; first grid n with lambda^hyp+err<0: 448036 (102 s)
+T3 T=1000 a=0.500: chain N_T = 30549382 = 30.549 T^2; L_n <= lambda_n fails for n in 89..200: none; on 112 grid n in [89, 3N_T]: M_lo>M_true 0, Q_hi<Q_true 0, lambda^hyp<L_n 0; min_{n<=N_T} (lambda^hyp-err)/M_n = -0.943 at n=89; first grid n with lambda^hyp+err<0: 42770814 (180 s)
+T3 T=1000 a=0.375: chain N_T = 41652696 = 41.653 T^2; L_n <= lambda_n fails for n in 89..200: none; on 112 grid n in [89, 3N_T]: M_lo>M_true 0, Q_hi<Q_true 0, lambda^hyp<L_n 0; min_{n<=N_T} (lambda^hyp-err)/M_n = -0.943 at n=89; first grid n with lambda^hyp+err<0: 50347610 (136 s)
+total 531 s
+      534.00 real       179.49 user         6.39 sys
+           204259328  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              110609  page reclaims
+                2956  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 381  voluntary context switches
+              793288  involuntary context switches
+           431731915  instructions retired
+           218082108  cycles elapsed
+            20513296  peak memory footprint
+memcap: peak 218 MB rc=0

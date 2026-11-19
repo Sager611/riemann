@@ -1,0 +1,24 @@
+K0 = [1.21531727961488 +/- 4.83e-15], K1 = [-0.0516076261294054 +/- 1.71e-17], K1INF = [0.664108080599095 +/- 1.31e-16]
+block odd 301949 307985 t0min 20000000/61597 N_half 2865676 N_38 3919034  N_half/t0(q1)^2 26.1273 N_38/t0(q1)^2 35.7311
+block even 301952 307984 t0min 8537300/19249 N_half 5519381 N_38 7541747  N_half/t0(q1)^2 27.4530 N_38/t0(q1)^2 37.5122
+total runtime 1.3 s
+        2.19 real         1.08 user         0.13 sys
+            41533440  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7148  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   1  voluntary context switches
+                3307  involuntary context switches
+           417259114  instructions retired
+           187244457  cycles elapsed
+            21250552  peak memory footprint
+memcap: peak 0 MB rc=0
+DONE

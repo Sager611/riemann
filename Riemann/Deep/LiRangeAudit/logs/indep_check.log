@@ -1,0 +1,36 @@
+I zeta A a=1/2    certified N = 7.085055877008e+26, independent frontier n* = 7.085815294562e+26, N/n* - 1 = -1.072e-04 (must be <= 0)
+I zeta B MTY      certified N = 7.177342804058e+26, independent frontier n* = 7.178102081618e+26, N/n* - 1 = -1.058e-04 (must be <= 0)
+I zeta C a=3/8    certified N = 9.520809096475e+26, independent frontier n* = 9.521821532057e+26, N/n* - 1 = -1.063e-04 (must be <= 0)
+I zeta G theta141 certified N = 9.564134989417e+26, independent frontier n* = 2.901883724203e+27, N/n* - 1 = -6.704e-01 (must be <= 0)
+I dirli q=3     a=1/2 certified N = 6.046935746182e+16, independent frontier n* = 6.047929189780e+16, N/n* - 1 = -1.643e-04 (must be <= 0)
+I dirli q=3     a=3/8 certified N = 8.157324340417e+16, independent frontier n* = 8.158648029627e+16, N/n* - 1 = -1.622e-04 (must be <= 0)
+I dirli q=1000  a=1/2 certified N = 4.130102836430e+11, independent frontier n* = 4.131014662000e+11, N/n* - 1 = -2.207e-04 (must be <= 0)
+I dirli q=1000  a=3/8 certified N = 5.594928598360e+11, independent frontier n* = 5.596142568533e+11, N/n* - 1 = -2.169e-04 (must be <= 0)
+II verify141 A a=1/2    60 random n in [89, N]: failures none; certified at N(1+e): [(1.000001, False), (1.0001, False), (1.01, False)]
+II verify141 B MTY      60 random n in [89, N]: failures none; certified at N(1+e): [(1.000001, False), (1.0001, False), (1.01, False)]
+II verify141 C a=3/8    60 random n in [89, N]: failures none; certified at N(1+e): [(1.000001, False), (1.0001, False), (1.01, False)]
+II verify141 G theta141 60 random n in [89, N]: failures none; certified at N(1+e): [(1.000001, False), (1.0001, False), (1.01, False)]
+II certify q=3     a=1/2 64 random n in [1, N]: failures none; certified at N(1+e): [(1.000001, False), (1.0001, False), (1.01, False)]
+II certify q=3     a=3/8 58 random n in [1, N]: failures none; certified at N(1+e): [(1.000001, False), (1.0001, False), (1.01, False)]
+II certify q=1000  a=1/2 64 random n in [1, N]: failures none; certified at N(1+e): [(1.000001, False), (1.0001, False), (1.01, False)]
+II certify q=1000  a=3/8 60 random n in [1, N]: failures none; certified at N(1+e): [(1.000001, False), (1.0001, False), (1.01, False)]
+total 558 s
+      557.96 real       399.48 user         8.50 sys
+            49725440  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14700  page reclaims
+                 639  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 443  voluntary context switches
+             1118902  involuntary context switches
+           433128176  instructions retired
+           186434065  cycles elapsed
+            22512120  peak memory footprint
+memcap: peak 32 MB rc=0

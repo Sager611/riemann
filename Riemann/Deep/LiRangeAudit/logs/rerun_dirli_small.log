@@ -1,0 +1,31 @@
+K0 = [1.21531727961488 +/- 4.83e-15], K1 = [-0.0516076261294054 +/- 1.71e-17], K1INF = [0.664108080599095 +/- 1.31e-16]
+q=3      a=1/2  t0=33333333.333333332 N=60469357461824346  N/t0^2=54.4224  (regime C n<=25, 12 steps, 0.4s)
+q=3      a=3/8  t0=33333333.333333332 N=81573243404167256  N/t0^2=73.4159  (regime C n<=25, 12 steps, 0.4s)
+q=4      a=1/2  t0=25000000.0     N=33613820289736842  N/t0^2=53.7821  (regime C n<=17, 12 steps, 0.3s)
+q=4      a=3/8  t0=25000000.0     N=45352014948651417  N/t0^2=72.5632  (regime C n<=17, 12 steps, 0.4s)
+q=5      a=1/2  t0=20000000.0     N=21313957270270402  N/t0^2=53.2849  (regime C n<=12, 13 steps, 0.4s)
+q=5      a=3/8  t0=20000000.0     N=28760439636336494  N/t0^2=71.9011  (regime C n<=12, 13 steps, 0.4s)
+q=7      a=1/2  t0=14285714.285714285 N=10721266235936412  N/t0^2=52.5342  (regime C n<=10, 14 steps, 0.5s)
+q=7      a=3/8  t0=14285714.285714285 N=14469688200660378  N/t0^2=70.9015  (regime C n<=10, 13 steps, 0.3s)
+q=8      a=1/2  t0=12500000.0     N=8161869755212833  N/t0^2=52.2360  (regime C n<=10, 13 steps, 0.4s)
+q=8      a=3/8  t0=12500000.0     N=11016303953316466  N/t0^2=70.5043  (regime C n<=10, 13 steps, 0.3s)
+total runtime 3.8 s
+        4.73 real         2.92 user         0.20 sys
+            41271296  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6430  page reclaims
+                 580  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 138  voluntary context switches
+                8123  involuntary context switches
+           412477934  instructions retired
+           197807509  cycles elapsed
+            19317264  peak memory footprint
+memcap: peak 0 MB rc=0

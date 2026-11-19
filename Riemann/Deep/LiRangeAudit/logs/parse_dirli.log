@@ -1,0 +1,7 @@
+q1000: rows 749 needed 749 missing [] t0 mismatches 0
+  min r_half 41.30103 at q=1000, min r_38 55.94929 at q=1000
+  N_half increases between consecutive q: 0 cases []; r_half increases: 0 cases []
+  every q<=1000: N_half >= 41.30e16/q^2: True ; N_38 >= 55.94e16/q^2: True ; q=3: 60469357461824346 81573243404167256
+blocks: 604 covered 299250 needed 299250 missing 0 extra 0
+  min N_half/t0(q1)^2 = 26.12728 block ('odd', 301949, 307985); min N_38/t0(q1)^2 = 35.73109 block ('odd', 301949, 307985)
+  N_block >= 26 t0(q)^2 and >= 35 t0(q)^2 at both ends of every block: True True ; t0 nonincreasing in q within parity (q<=4e5): True

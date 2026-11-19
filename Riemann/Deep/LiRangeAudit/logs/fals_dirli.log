@@ -1,0 +1,36 @@
+D1 corner pairs (both signs of gamma): 12240 certified cases; min slack/q_n = 1.34e-05 at a=0.5 gamma=33366667 delta=0.5 n=246964156835549
+D2 chi_-3 (real odd): Re lambda_1 = 0.056614984929, Re lambda_100 = 171.091479, Re lambda_200 = 409.533159, min = 0.056615; (n/2)(log n + log(q/2pi) - 1 + gamma) at 200: 413.6268
+   t0=50 a=1/2: lower bound <= Re lambda_n for all n<=200: yes (max ratio 0.833); chain N(t0) = 54877 = 21.95 t0^2 (regime C n<=25)
+   t0=50 a=3/8: lower bound <= Re lambda_n for all n<=200: yes (max ratio 0.833); chain N(t0) = 75620 = 30.25 t0^2 (regime C n<=25)
+   t0=100 a=1/2: lower bound <= Re lambda_n for all n<=200: yes (max ratio 0.833); chain N(t0) = 245065 = 24.51 t0^2 (regime C n<=25)
+   t0=100 a=3/8: lower bound <= Re lambda_n for all n<=200: yes (max ratio 0.833); chain N(t0) = 336384 = 33.64 t0^2 (regime C n<=25)
+D2 chi mod 5, chi(2)=i (complex odd): Re lambda_1 = 0.101610716290, Re lambda_100 = 197.886284, Re lambda_200 = 465.587387, min = 0.101611; (n/2)(log n + log(q/2pi) - 1 + gamma) at 200: 464.7094
+   t0=50 a=1/2: lower bound <= Re lambda_n for all n<=200: yes (max ratio 0.817); chain N(t0) = 54491 = 21.80 t0^2 (regime C n<=12)
+   t0=50 a=3/8: lower bound <= Re lambda_n for all n<=200: yes (max ratio 0.817); chain N(t0) = 75100 = 30.04 t0^2 (regime C n<=12)
+   t0=100 a=1/2: lower bound <= Re lambda_n for all n<=200: yes (max ratio 0.817); chain N(t0) = 243739 = 24.37 t0^2 (regime C n<=12)
+   t0=100 a=3/8: lower bound <= Re lambda_n for all n<=200: yes (max ratio 0.817); chain N(t0) = 334599 = 33.46 t0^2 (regime C n<=12)
+D2 chi mod 5 Legendre (real even): Re lambda_1 = 0.078278476997, Re lambda_100 = 200.320354, Re lambda_200 = 463.103433, min = 0.0782785; (n/2)(log n + log(q/2pi) - 1 + gamma) at 200: 464.7094
+   t0=50 a=1/2: lower bound <= Re lambda_n for all n<=200: yes (max ratio 0.819); chain N(t0) = 54491 = 21.80 t0^2 (regime C n<=12)
+   t0=50 a=3/8: lower bound <= Re lambda_n for all n<=200: yes (max ratio 0.820); chain N(t0) = 75100 = 30.04 t0^2 (regime C n<=12)
+   t0=100 a=1/2: lower bound <= Re lambda_n for all n<=200: yes (max ratio 0.820); chain N(t0) = 243739 = 24.37 t0^2 (regime C n<=12)
+   t0=100 a=3/8: lower bound <= Re lambda_n for all n<=200: yes (max ratio 0.820); chain N(t0) = 334599 = 33.46 t0^2 (regime C n<=12)
+total 86 s
+       87.18 real        37.03 user         1.58 sys
+            47267840  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7279  page reclaims
+                 472  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  23  messages received
+                   1  signals received
+                 415  voluntary context switches
+              181129  involuntary context switches
+           443619387  instructions retired
+           223029388  cycles elapsed
+            21660200  peak memory footprint
+memcap: peak 29 MB rc=0
