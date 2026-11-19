@@ -1,0 +1,5 @@
+R_0 = 15491/10000 < 2 sqrt(3/5) = [1.54919333848 +/- 2.97e-12] : True  (so theta <= 1/2 is covered)
+node R_a = 15491/10000 (theta = 0.50003): I_a in [1.01189685074580 +/- 2.09e-16]; covers R in [1.5491, 2.0386]: lhs [0.5964888840 +/- 1.60e-11] < rhs [0.5966660040 +/- 3.81e-11]: True; kappa(theta_a) >= 0.35845583 vs 2theta/3 = [0.33335342 +/- 2.22e-9]
+node R_a = 10193/5000 (theta = 0.37997): I_a in [1.04289774882066 +/- 3.86e-15]; covers R in [2.0386, 3.3906]: lhs [0.5965399520 +/- 7.06e-12] < rhs [0.5966660040 +/- 3.81e-11]: True; kappa(theta_a) >= 0.27570742 vs 2theta/3 = [0.25331001 +/- 3.39e-9]
+node R_a = 16953/5000 (theta = 0.22845): I_a in [1.10979677434201 +/- 9.02e-16]; covers R in [3.3906, infinity): lhs [0.5904932347 +/- 4.20e-11] < rhs [0.5966660040 +/- 3.81e-11]: True; kappa(theta_a) >= 0.16002691 vs 2theta/3 = [0.15230277 +/- 2.23e-9]
+Question 5 (kappa(theta) > 2 theta/3 for all theta in (0, 1/2]): PROVED
