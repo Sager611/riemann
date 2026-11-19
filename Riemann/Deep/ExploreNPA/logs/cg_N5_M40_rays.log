@@ -1,0 +1,6 @@
+rays: 7201 asymptotic directions (infinitely deep pairs)
+RESULT N=5 M=40 sets=P3 world=off  minSimpleOn=0.797131 supp=10 offline-zero share=0.00e+00 dual_obj=0.797131 maxrss=158MB
+memcap: peak 24 MB rc=0
+rays: 7201 asymptotic directions (infinitely deep pairs)
+RESULT N=5 M=40 sets=L4 world=off  minSimpleOn=0.824016 supp=21 offline-zero share=0.00e+00 dual_obj=0.824016 maxrss=191MB
+memcap: peak 22 MB rc=0

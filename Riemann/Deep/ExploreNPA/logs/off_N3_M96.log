@@ -1,0 +1,7 @@
+N=3 M=96 depths=[0.03, 0.1, 0.2, 0.35] online=817 mixed=384 t=0.1s
+  P   on  ncons=3: minSimpleOn=0.848059 supp=4 offline-zero share=0.0000  maxM2=1.151941
+  P   off ncons=3: minSimpleOn=0.848059 supp=4 offline-zero share=0.0000
+  P3  on  ncons=5: minSimpleOn=0.868199 supp=6 offline-zero share=0.0000  maxM2=1.131801
+  P3  off ncons=5: minSimpleOn=0.868199 supp=6 offline-zero share=0.0000
+done t=0.3s
+memcap: peak 0 MB rc=0

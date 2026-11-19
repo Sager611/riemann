@@ -1,0 +1,16 @@
+RESULT N=5 M=40 sets=P world=on depths=[0.01, 0.03, 0.1, 0.2, 0.35, 0.6, 1.0, 1.5, 2.2, 3.0, 4.0, 5.0]: minSimpleOn=0.795205 supp=6 offline-zero share=0.00e+00 dual_obj=0.795205 maxrss=109MB
+memcap: peak 0 MB rc=0
+RESULT N=5 M=40 sets=P world=off depths=[0.01, 0.03, 0.1, 0.2, 0.35, 0.6, 1.0, 1.5, 2.2, 3.0, 4.0, 5.0]: minSimpleOn=0.795205 supp=6 offline-zero share=0.00e+00 dual_obj=0.795205 maxrss=122MB
+memcap: peak 25 MB rc=0
+RESULT N=5 M=40 sets=P3 world=on depths=[0.01, 0.03, 0.1, 0.2, 0.35, 0.6, 1.0, 1.5, 2.2, 3.0, 4.0, 5.0]: minSimpleOn=0.819693 supp=12 offline-zero share=0.00e+00 dual_obj=0.819693 maxrss=132MB
+memcap: peak 0 MB rc=0
+RESULT N=5 M=40 sets=P3 world=off depths=[0.01, 0.03, 0.1, 0.2, 0.35, 0.6, 1.0, 1.5, 2.2, 3.0, 4.0, 5.0]: minSimpleOn=0.802105 supp=12 offline-zero share=2.21e-10 dual_obj=0.802105 maxrss=151MB
+memcap: peak 26 MB rc=0
+RESULT N=5 M=40 sets=Q4 world=on depths=[0.01, 0.03, 0.1, 0.2, 0.35, 0.6, 1.0, 1.5, 2.2, 3.0, 4.0, 5.0]: minSimpleOn=0.799171 supp=14 offline-zero share=0.00e+00 dual_obj=0.799171 maxrss=138MB
+memcap: peak 20 MB rc=0
+RESULT N=5 M=40 sets=Q4 world=off depths=[0.01, 0.03, 0.1, 0.2, 0.35, 0.6, 1.0, 1.5, 2.2, 3.0, 4.0, 5.0]: minSimpleOn=0.799171 supp=14 offline-zero share=0.00e+00 dual_obj=0.799171 maxrss=142MB
+memcap: peak 20 MB rc=0
+RESULT N=5 M=40 sets=L4 world=on depths=[0.01, 0.03, 0.1, 0.2, 0.35, 0.6, 1.0, 1.5, 2.2, 3.0, 4.0, 5.0]: minSimpleOn=0.826144 supp=24 offline-zero share=0.00e+00 dual_obj=0.826144 maxrss=158MB
+memcap: peak 20 MB rc=0
+RESULT N=5 M=40 sets=L4 world=off depths=[0.01, 0.03, 0.1, 0.2, 0.35, 0.6, 1.0, 1.5, 2.2, 3.0, 4.0, 5.0]: minSimpleOn=0.824675 supp=22 offline-zero share=1.53e-08 dual_obj=0.824675 maxrss=213MB
+memcap: peak 190 MB rc=0

@@ -1,0 +1,11 @@
+N=4 M=48 depths=[0.01, 0.03, 0.1, 0.2, 0.35, 0.6, 1.0, 1.5, 2.2, 3.0, 4.0, 5.0] online=2769 mixed=21024 t=1.9s
+  Q4e on  ncons=8: minSimpleOn=0.817216 supp=9 offline-zero share=0.00e+00 resid=3.2e-15 minw=0.0e+00  maxM2=1.182799
+  Q4e off ncons=8: minSimpleOn=0.817216 supp=9 offline-zero share=0.00e+00 resid=4.4e-16 minw=0.0e+00
+  Q4  on  ncons=9: minSimpleOn=0.825142 supp=10 offline-zero share=0.00e+00 resid=6.7e-16 minw=0.0e+00  maxM2=1.174858
+  Q4  off ncons=9: minSimpleOn=0.825142 supp=10 offline-zero share=0.00e+00 resid=4.4e-16 minw=0.0e+00
+  L4  on  ncons=15: minSimpleOn=0.844041 supp=16 offline-zero share=0.00e+00 resid=1.8e-15 minw=0.0e+00  maxM2=1.155959
+  L4  off ncons=15: minSimpleOn=0.842991 supp=15 offline-zero share=1.32e-19 resid=1.9e-11 minw=0.0e+00
+  DS  on  ncons=25: minSimpleOn=0.844041 supp=16 offline-zero share=0.00e+00 resid=2.1e-15 minw=0.0e+00  maxM2=1.155959
+  DS  off ncons=25: minSimpleOn=0.842991 supp=15 offline-zero share=1.32e-19 resid=2.0e-10 minw=0.0e+00
+done t=7.8s
+memcap: peak 26 MB rc=0

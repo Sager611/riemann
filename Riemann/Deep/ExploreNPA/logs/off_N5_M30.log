@@ -1,0 +1,6 @@
+N=5 M=30 depths=[0.03, 0.1, 0.3, 0.6, 1.0, 2.0, 3.0, 5.0] online=4706 mixed=97280 t=7.6s
+  P   on  ncons=5: minSimpleOn=0.802151 supp=6 offline-zero share=0.00e+00 resid=2.2e-16 minw=0.0e+00  maxM2=1.197849
+  P   off ncons=5: minSimpleOn=0.802151 supp=6 offline-zero share=0.00e+00 resid=4.4e-16 minw=0.0e+00
+  P3  on  ncons=11: minSimpleOn=0.823755 supp=12 offline-zero share=0.00e+00 resid=6.7e-16 minw=0.0e+00  maxM2=1.176245
+../../../.scratch/memcap.sh: line 22: 29472 Killed: 9                  "$@"
+memcap: peak 353 MB KILLED MEM>290MB rc=137

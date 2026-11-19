@@ -1,0 +1,8 @@
+RESULT N=4 M=48 sets=L4c world=on  minSimpleOn=0.841363 supp=14 offline-zero share=0.00e+00 dual_obj=0.841363 maxrss=82MB
+memcap: peak 0 MB rc=0
+RESULT N=4 M=48 sets=L4c world=off  minSimpleOn=0.840035 supp=13 offline-zero share=0.00e+00 dual_obj=0.840035 maxrss=100MB
+memcap: peak 0 MB rc=0
+RESULT N=5 M=40 sets=L4c world=on  minSimpleOn=0.822794 supp=20 offline-zero share=0.00e+00 dual_obj=0.822794 maxrss=144MB
+memcap: peak 0 MB rc=0
+RESULT N=5 M=40 sets=L4c world=off  minSimpleOn=0.819318 supp=18 offline-zero share=0.00e+00 dual_obj=0.819318 maxrss=166MB
+memcap: peak 23 MB rc=0

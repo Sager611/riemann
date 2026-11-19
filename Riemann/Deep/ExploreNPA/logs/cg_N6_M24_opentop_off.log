@@ -1,0 +1,4 @@
+RESULT N=6 M=24 sets=P3o world=off  minSimpleOn=0.807541 supp=13 offline-zero share=0.00e+00 dual_obj=0.807541 maxrss=144MB
+memcap: peak 0 MB rc=0
+RESULT N=6 M=24 sets=L4o world=off  minSimpleOn=0.814086 supp=25 offline-zero share=0.00e+00 dual_obj=0.814086 maxrss=209MB
+memcap: peak 26 MB rc=0

@@ -1,0 +1,5 @@
+[dual L4] float dual objective=0.842991 mp=0.8429909815; on-line min slack=-1.1e-15 t=1s
+  one pair + 2 on-line, all depths: min certified lower bound of g = -5.705e-07 (292417 boxes) t=14s
+  two pairs, depths in [0,15]^2 (float scan): min g/(1+|p_N|^2) = -2.310e-06 at angle,s1,s2,g = (9, np.float64(15.0), np.float64(15.0), np.float64(-6.024935386869362e+46)) t=18s
+BOUND (lattice Z_48; on-line + one-pair parts arb-certified for every depth, two-pair part float-scanned): min E[#simple on-line]/N >= 0.842990411 (two-pair float min g = -6.02e+46)
+memcap: peak 73 MB rc=0

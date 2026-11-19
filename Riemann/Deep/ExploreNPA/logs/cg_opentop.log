@@ -1,0 +1,16 @@
+RESULT N=4 M=48 sets=P3o world=on  minSimpleOn=0.817275 supp=7 offline-zero share=0.00e+00 dual_obj=0.817275 maxrss=59MB
+memcap: peak 20 MB rc=0
+RESULT N=4 M=48 sets=P3o world=off  minSimpleOn=0.817275 supp=7 offline-zero share=0.00e+00 dual_obj=0.817275 maxrss=78MB
+memcap: peak 0 MB rc=0
+RESULT N=4 M=48 sets=L4o world=on  minSimpleOn=0.817885 supp=10 offline-zero share=0.00e+00 dual_obj=0.817885 maxrss=67MB
+memcap: peak 0 MB rc=0
+RESULT N=4 M=48 sets=L4o world=off  minSimpleOn=0.817885 supp=10 offline-zero share=0.00e+00 dual_obj=0.817885 maxrss=73MB
+memcap: peak 20 MB rc=0
+RESULT N=5 M=40 sets=P3o world=on  minSimpleOn=0.796848 supp=10 offline-zero share=0.00e+00 dual_obj=0.796848 maxrss=124MB
+memcap: peak 0 MB rc=0
+RESULT N=5 M=40 sets=P3o world=off  minSimpleOn=0.796848 supp=10 offline-zero share=0.00e+00 dual_obj=0.796848 maxrss=143MB
+memcap: peak 0 MB rc=0
+RESULT N=5 M=40 sets=L4o world=on  minSimpleOn=0.800269 supp=17 offline-zero share=0.00e+00 dual_obj=0.800269 maxrss=139MB
+memcap: peak 0 MB rc=0
+RESULT N=5 M=40 sets=L4o world=off  minSimpleOn=0.800269 supp=17 offline-zero share=0.00e+00 dual_obj=0.800269 maxrss=158MB
+memcap: peak 22 MB rc=0

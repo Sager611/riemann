@@ -1,0 +1,27 @@
+RESULT N=6 M=24 sets=P world=on  minSimpleOn=0.806701 supp=7 offline-zero share=0.00e+00 dual_obj=0.806701 maxrss=112MB
+memcap: peak 0 MB rc=0
+RESULT N=6 M=24 sets=P3o world=on  minSimpleOn=0.807541 supp=13 offline-zero share=0.00e+00 dual_obj=0.807541 maxrss=123MB
+memcap: peak 0 MB rc=0
+RESULT N=6 M=24 sets=P3 world=on  minSimpleOn=0.825733 supp=16 offline-zero share=0.00e+00 dual_obj=0.825733 maxrss=128MB
+memcap: peak 0 MB rc=0
+RESULT N=6 M=24 sets=L4o world=on  minSimpleOn=0.814086 supp=25 offline-zero share=0.00e+00 dual_obj=0.814086 maxrss=137MB
+memcap: peak 0 MB rc=0
+RESULT N=6 M=24 sets=L4 world=on  minSimpleOn=0.838170 supp=37 offline-zero share=0.00e+00 dual_obj=0.838170 maxrss=157MB
+memcap: peak 0 MB rc=0
+memcap: peak 293 MB KILLED MEM>290MB rc=137
+memcap: peak 356 MB KILLED MEM>290MB rc=137
+memcap: peak 297 MB KILLED MEM>290MB rc=137
+memcap: peak 457 MB KILLED MEM>290MB rc=137
+memcap: peak 432 MB KILLED MEM>290MB rc=137
+RESULT N=7 M=21 sets=P world=on  minSimpleOn=0.824515 supp=8 offline-zero share=0.00e+00 dual_obj=0.824515 maxrss=72MB
+memcap: peak 20 MB rc=0
+RESULT N=7 M=21 sets=P3o world=on  minSimpleOn=0.825753 supp=17 offline-zero share=0.00e+00 dual_obj=0.825753 maxrss=124MB
+memcap: peak 20 MB rc=0
+RESULT N=7 M=21 sets=P3 world=on  minSimpleOn=0.849848 supp=20 offline-zero share=0.00e+00 dual_obj=0.849848 maxrss=114MB
+memcap: peak 162 MB rc=0
+RESULT N=7 M=21 sets=L4o world=on  minSimpleOn=0.835332 supp=38 offline-zero share=0.00e+00 dual_obj=0.835332 maxrss=170MB
+memcap: peak 245 MB rc=0
+memcap: peak 291 MB KILLED MEM>290MB rc=137
+memcap: peak 496 MB KILLED MEM>290MB rc=137
+memcap: peak 612 MB KILLED MEM>290MB rc=137
+memcap: peak 510 MB KILLED MEM>290MB rc=137

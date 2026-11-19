@@ -1,0 +1,13 @@
+N=4 M=48 depths=[0.01, 0.03, 0.1, 0.2, 0.35, 0.6] online=2769 mixed=8784 t=0.8s
+  P   on  ncons=4: minSimpleOn=0.817137 supp=5 offline-zero share=0.0000  maxM2=1.182863
+  P   off ncons=4: minSimpleOn=0.817137 supp=5 offline-zero share=0.0000
+  P3  on  ncons=8: minSimpleOn=0.837171 supp=9 offline-zero share=0.0000  maxM2=1.162829
+  P3  off ncons=8: minSimpleOn=0.831990 supp=9 offline-zero share=0.0038
+done t=1.6s
+        3.93 real         2.31 user         0.49 sys
+           109953024  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            26903008  peak memory footprint
+memcap: peak 0 MB rc=0

@@ -1,0 +1,13 @@
+RESULT N=4 M=24 sets=P world=off  minSimpleOn=0.819055 supp=5 offline-zero share=0.00e+00 dual_obj=0.819055 maxrss=72MB
+memcap: peak 0 MB rc=0
+iteration cap
+RESULT N=4 M=24 sets=P3 world=off  minSimpleOn=0.824783 supp=8 offline-zero share=0.00e+00 dual_obj=0.824783 maxrss=73MB
+memcap: peak 51 MB rc=0
+RESULT N=4 M=24 sets=L4 world=off  minSimpleOn=0.853095 supp=15 offline-zero share=0.00e+00 dual_obj=0.853095 maxrss=72MB
+memcap: peak 0 MB rc=0
+RESULT N=4 M=96 sets=P world=off  minSimpleOn=0.816262 supp=5 offline-zero share=0.00e+00 dual_obj=0.816262 maxrss=133MB
+memcap: peak 25 MB rc=0
+RESULT N=4 M=96 sets=P3 world=off  minSimpleOn=0.817407 supp=8 offline-zero share=0.00e+00 dual_obj=0.817407 maxrss=154MB
+memcap: peak 131 MB rc=0
+RESULT N=4 M=96 sets=L4 world=off  minSimpleOn=0.841740 supp=15 offline-zero share=0.00e+00 dual_obj=0.841740 maxrss=196MB
+memcap: peak 170 MB rc=0

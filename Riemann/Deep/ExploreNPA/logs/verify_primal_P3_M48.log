@@ -1,0 +1,6 @@
+[primal P3] M=48 float=0.818792 support=9 mp-value=0.818792412597 resid=1.16e-53 min w=1.94e-18 off-line pair cols=1
+     w=1.944e-18 ((), ((0, 5.0), (7, 5.0)))
+       18.58 real         5.37 user         0.68 sys
+            99844096  maximum resident set size
+            29278760  peak memory footprint
+memcap: peak 24 MB rc=0

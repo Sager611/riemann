@@ -1,0 +1,28 @@
+N=8 S=P features=8 patterns=8 B=384
+it=  0 val=1.040269 slack=4.01e-01 maxred=8.721e+01 ub~88.245692 cols=1600 t=7s
+it=  1 val=1.052070 slack=1.57e-01 maxred=5.299e+01 ub~54.045692 cols=1660 t=13s
+it=  2 val=1.153681 slack=0.00e+00 maxred=2.216e-01 ub~1.375242 cols=1696 t=24s
+it=  3 val=1.221062 slack=0.00e+00 maxred=9.200e-02 ub~1.313064 cols=1792 t=32s
+it=  4 val=1.225257 slack=0.00e+00 maxred=3.450e-02 ub~1.259756 cols=1888 t=46s
+it=  5 val=1.240214 slack=0.00e+00 maxred=1.415e-02 ub~1.254367 cols=1984 t=65s
+it=  6 val=1.241512 slack=0.00e+00 maxred=7.300e-03 ub~1.248811 cols=2080 t=82s
+it=  7 val=1.242276 slack=0.00e+00 maxred=4.194e-03 ub~1.246469 cols=2176 t=93s
+it=  8 val=1.242584 slack=0.00e+00 maxred=3.135e-03 ub~1.245719 cols=2236 t=104s
+it=  9 val=1.242664 slack=0.00e+00 maxred=8.616e-04 ub~1.243525 cols=2296 t=115s
+it= 10 val=1.242776 slack=0.00e+00 maxred=2.924e-04 ub~1.243069 cols=2343 t=127s
+it= 11 val=1.242854 slack=0.00e+00 maxred=2.270e-04 ub~1.243082 cols=2379 t=142s
+it= 12 val=1.242890 slack=0.00e+00 maxred=2.653e-04 ub~1.243155 cols=2415 t=158s
+it= 13 val=1.242900 slack=0.00e+00 maxred=2.173e-04 ub~1.243117 cols=2451 t=173s
+it= 14 val=1.242926 slack=0.00e+00 maxred=4.920e-05 ub~1.242975 cols=2485 t=197s
+it= 15 val=1.242935 slack=0.00e+00 maxred=2.823e-05 ub~1.242963 cols=2510 t=222s
+it= 16 val=1.242939 slack=0.00e+00 maxred=1.567e-05 ub~1.242955 cols=2522 t=246s
+it= 17 val=1.242939 slack=0.00e+00 maxred=9.227e-06 ub~1.242949 cols=2535 t=266s
+it= 18 val=1.242942 slack=0.00e+00 maxred=3.248e-06 ub~1.242946 cols=2549 t=285s
+it= 19 val=1.242943 slack=0.00e+00 maxred=8.317e-07 ub~1.242944 cols=2564 t=307s
+it= 20 val=1.242943 slack=0.00e+00 maxred=7.940e-07 ub~1.242944 cols=2578 t=327s
+it= 21 val=1.242943 slack=0.00e+00 maxred=2.322e-07 ub~1.242943 cols=2591 t=346s
+it= 22 val=1.242943 slack=0.00e+00 maxred=1.856e-07 ub~1.242943 cols=2608 t=361s
+it= 23 val=1.242943 slack=0.00e+00 maxred=9.915e-08 ub~1.242943 cols=2620 t=376s
+FINAL N=8 S=P val=1.242943 slack=0.0e+00 support=9
+  P(config has a multiple point)=0.9461; mass by #doubles: d=0:0.0539, d=1:0.9205, d=2:0.0256, d=3:0.0000, d=4:0.0000
+memcap: peak 64 MB rc=0

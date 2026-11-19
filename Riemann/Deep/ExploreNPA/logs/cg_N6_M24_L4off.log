@@ -1,0 +1,6 @@
+rays: 12385 asymptotic directions (infinitely deep pairs)
+it=1 val=0.834597 cols=10133 resid=1.3e-15 priced=759557 minrc=-7.14e-05 t=13s
+it=2 val=0.834591 cols=10142 resid=3.4e-12 priced=759557 minrc=0.00e+00 t=19s
+RESULT N=6 M=24 sets=L4 world=off  minSimpleOn=0.834591 supp=36 offline-zero share=3.37e-12 dual_obj=0.834591 maxrss=256MB
+           268271616  maximum resident set size
+memcap: peak 230 MB rc=0
