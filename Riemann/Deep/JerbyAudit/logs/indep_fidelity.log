@@ -1,0 +1,9 @@
+bad Gram points with 0 <= n <= 140 (standard theta, theta(g_n) = n pi): [126, 134]   g_0 = 17.8455995404
+theta'(7) = 0.053589836 > 0; theta' = 0 at t* = 6.28983598884, theta(t*) = -3.5309728
+n=126: pattern g_(n-2..n+2) = GGBGG; mu(g_n) = 97.6434117   [first bad (2406 l.214, 743)]
+n=134: pattern g_(n-2..n+2) = GGBGG; mu(g_n) = 95.6012517   [second bad (2406 l.743)]
+n=6708: pattern g_(n-2..n+2) = GGBGG; mu(g_n) = 6.40774782   [isolated bad (2310 l.1265)]
+n=730119: pattern g_(n-2..n+2) = GGBGG; mu(g_n) = 4.45773355   [isolated bad, mu=4.46023 (2310 l.1270)]
+n=9807962: pattern g_(n-2..n+2) = GBBGG; mu(g_n) = 0.0425003184   [corrupt, mu=0.0750883, block {9807960..9807963} (2406 l.757, 771)]
+n=69784845: pattern g_(n-2..n+2) = GGBGG; mu(g_n) = 4.2155318   [conjfals min isolated mu=4.21553 (RECORDS)]
+[5.5 s]

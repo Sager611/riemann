@@ -1,0 +1,6 @@
+n=1565734083: grid 20580 pts, step 0.0001, max |Z_grid - siegelz| at 8 spot points = 2.1e-08; zeros per Gram interval [g_j, g_j+1), j = n-3..n+2: [1, 3, 0, 0, 1, 0] (total 5 vs 6 expected on average)
+   block [g_(n-1), g_(n+1)]: sign changes 0; grid min |Z| = 0.276915 (siegelz there 0.27691515) at g_n-0.34292, the first grid point inside the block (|Z| rises inward from g_(n-1)); |Z| at the block ends >= 0.27634; sign +  [6.3 s]
+n=2565007238: grid 20068 pts, step 0.0001, max |Z_grid - siegelz| at 8 spot points = 7.0e-09; zeros per Gram interval [g_j, g_j+1), j = n-3..n+2: [1, 1, 0, 0, 2, 2] (total 6 vs 6 expected on average)
+   block [g_(n-1), g_(n+1)]: sign changes 0; grid min |Z| = 0.322318 (siegelz there 0.32231846) at g_n+0.33436, the last grid point inside the block (|Z| rises inward from g_(n+1)); |Z| at the block ends >= 0.321539; sign -  [7.0 s]
+n=3315629581: grid 19812 pts, step 0.0001, max |Z_grid - siegelz| at 8 spot points = 5.0e-09; zeros per Gram interval [g_j, g_j+1), j = n-3..n+2: [1, 1, 0, 0, 3, 1] (total 6 vs 6 expected on average)
+   block [g_(n-1), g_(n+1)]: sign changes 0; grid min |Z| = 0.282542 (siegelz there 0.28254206) at g_n+0.33008, the last grid point inside the block (|Z| rises inward from g_(n+1)); |Z| at the block ends >= 0.281734; sign +  [8.1 s]

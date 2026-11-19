@@ -114,7 +114,7 @@ No warnings. `rg 'sorry|native_decide|admit'` over `Lean/*.lean` finds nothing.
 | l. 212, 523: good iff (−1)^n Z(g_n) > 0; "Otherwise, it is considered bad" | `Good`; `Bad := ¬ Good` | The witnesses are strictly bad: (−1)^n Z(g_n) < 0 is proved. |
 | l. 313–315: conj:rep, "good consecutive neighbours g_{n±1}" | `JerbyConj`: neighbours exist and every Gram point of index n ± 1 is good. `JerbyConjEx`: given neighbours are good. | `JerbyConjEx ⇒ JerbyConj` is proved, so `JerbyConj` is the weakest reading and `¬ JerbyConj` refutes every reading. `¬ JerbyConjEx` needs no θ′ hypothesis. |
 | Z′(g_n) | `deriv hardyZ` | Proved equal to `hardyZ'`. |
-| l. 769, 777: isolated bad Gram point, Conjecture 8.1 | `counterexampleA_full` | g_n is the middle point of the Gram block {g_{n−1}, g_n, g_{n+1}} with N = 2. |
+| l. 769, 777: isolated bad Gram point, Conjecture 7.1 (label con:8.1) | `counterexampleA_full` | g_n is the middle point of the Gram block {g_{n−1}, g_n, g_{n+1}} with N = 2. |
 
 How the Arb computation matches the Lean definitions:
 - θ: certify_cx.py computes θ as Im acb_lgamma(1/4 + it/2) − (t/2) log π. acb_lgamma is the analytic log Γ: real on (0, ∞) and continuous on Re z > 0. It is not the pointwise principal log of Γ(z). So Arb's θ is continuous, is 0 at t = 0 and satisfies the phase identity, and `theta_unique` makes it Lean's θ.
