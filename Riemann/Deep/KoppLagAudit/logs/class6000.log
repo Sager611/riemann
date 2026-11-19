@@ -1,0 +1,173 @@
+TORS N=+1 n=3 D=5 f=1 D0=5 h=1 h+=1 mu=1 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=+1 n=4 D=12 f=1 D0=12 h=1 h+=2 mu=2 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=5 D=21 f=1 D0=21 h=1 h+=2 mu=2 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=6 D=32 f=2 D0=8 h=1 h+=2 mu=2 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=7 D=45 f=3 D0=5 h=1 h+=2 mu=2 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=8 D=60 f=1 D0=60 h=2 h+=4 mu=3 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=9 D=77 f=1 D0=77 h=1 h+=2 mu=2 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=10 D=96 f=2 D0=24 h=2 h+=4 mu=3 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=11 D=117 f=3 D0=13 h=1 h+=2 mu=2 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=12 D=140 f=1 D0=140 h=2 h+=4 mu=3 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=13 D=165 f=1 D0=165 h=2 h+=4 mu=3 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=14 D=192 f=4 D0=12 h=2 h+=4 mu=3 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=15 D=221 f=1 D0=221 h=2 h+=4 mu=2 JinSq=1 wide2=1 narrow2=0 split=0
+TORS N=+1 n=16 D=252 f=3 D0=28 h=2 h+=4 mu=3 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=17 D=285 f=1 D0=285 h=2 h+=4 mu=3 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=18 D=320 f=8 D0=5 h=2 h+=4 mu=3 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=19 D=357 f=1 D0=357 h=2 h+=4 mu=3 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=21 D=437 f=1 D0=437 h=1 h+=2 mu=2 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=22 D=480 f=2 D0=120 h=4 h+=8 mu=4 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=23 D=525 f=5 D0=21 h=2 h+=4 mu=3 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=24 D=572 f=1 D0=572 h=2 h+=4 mu=3 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=26 D=672 f=2 D0=168 h=4 h+=8 mu=4 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=27 D=725 f=5 D0=29 h=2 h+=4 mu=2 JinSq=1 wide2=1 narrow2=0 split=0
+TORS N=+1 n=28 D=780 f=1 D0=780 h=4 h+=8 mu=4 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=31 D=957 f=1 D0=957 h=2 h+=4 mu=3 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=32 D=1020 f=1 D0=1020 h=4 h+=8 mu=4 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=33 D=1085 f=1 D0=1085 h=2 h+=4 mu=3 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=37 D=1365 f=1 D0=1365 h=4 h+=8 mu=4 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=38 D=1440 f=6 D0=40 h=4 h+=8 mu=4 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=39 D=1517 f=1 D0=1517 h=2 h+=4 mu=2 JinSq=1 wide2=1 narrow2=0 split=0
+TORS N=+1 n=42 D=1760 f=2 D0=440 h=4 h+=8 mu=4 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=44 D=1932 f=1 D0=1932 h=4 h+=8 mu=4 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=46 D=2112 f=8 D0=33 h=4 h+=8 mu=4 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=49 D=2397 f=1 D0=2397 h=2 h+=4 mu=3 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=53 D=2805 f=1 D0=2805 h=4 h+=8 mu=4 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=54 D=2912 f=2 D0=728 h=4 h+=8 mu=4 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=58 D=3360 f=2 D0=840 h=8 h+=16 mu=5 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=63 D=3965 f=1 D0=3965 h=4 h+=8 mu=3 JinSq=1 wide2=1 narrow2=0 split=0
+TORS N=+1 n=67 D=4485 f=1 D0=4485 h=4 h+=8 mu=4 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=68 D=4620 f=1 D0=4620 h=8 h+=16 mu=5 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=72 D=5180 f=1 D0=5180 h=4 h+=8 mu=4 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=82 D=6720 f=8 D0=105 h=8 h+=16 mu=5 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=86 D=7392 f=2 D0=1848 h=8 h+=16 mu=5 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=87 D=7565 f=1 D0=7565 h=4 h+=8 mu=3 JinSq=1 wide2=1 narrow2=0 split=0
+TORS N=+1 n=89 D=7917 f=1 D0=7917 h=4 h+=8 mu=4 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=93 D=8645 f=1 D0=8645 h=4 h+=8 mu=4 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=112 D=12540 f=1 D0=12540 h=8 h+=16 mu=5 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=122 D=14880 f=2 D0=3720 h=8 h+=16 mu=5 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=138 D=19040 f=2 D0=4760 h=8 h+=16 mu=5 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=154 D=23712 f=2 D0=5928 h=8 h+=16 mu=5 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=163 D=26565 f=1 D0=26565 h=8 h+=16 mu=5 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=166 D=27552 f=2 D0=6888 h=8 h+=16 mu=5 JinSq=0 wide2=1 narrow2=1 split=0
+TORS N=+1 n=262 D=68640 f=2 D0=17160 h=16 h+=32 mu=6 JinSq=0 wide2=1 narrow2=1 split=0
+SURVCLASS N=+1 n=1022 D=1044480 h=64 h+=128 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1024 D=1048572 h=48 h+=96 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1034 D=1069152 h=48 h+=96 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1047 D=1096205 h=32 h+=64 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1089 D=1185917 h=21 h+=42 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1102 D=1214400 h=64 h+=128 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1172 D=1373580 h=56 h+=112 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1176 D=1382972 h=36 h+=72 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1193 D=1423245 h=36 h+=72 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1211 D=1466517 h=32 h+=64 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1227 D=1505525 h=36 h+=72 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1237 D=1530165 h=48 h+=96 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1243 D=1545045 h=40 h+=80 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1311 D=1718717 h=32 h+=64 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1319 D=1739757 h=28 h+=56 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1341 D=1798277 h=32 h+=64 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1362 D=1855040 h=48 h+=96 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1381 D=1907157 h=36 h+=72 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1398 D=1954400 h=48 h+=96 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1446 D=2090912 h=36 h+=72 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1516 D=2298252 h=64 h+=128 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1563 D=2442965 h=40 h+=80 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1571 D=2468037 h=40 h+=80 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1579 D=2493237 h=48 h+=96 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1594 D=2540832 h=64 h+=128 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1617 D=2614685 h=40 h+=80 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1628 D=2650380 h=72 h+=144 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1648 D=2715900 h=64 h+=128 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1659 D=2752277 h=30 h+=60 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1748 D=3055500 h=80 h+=160 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1771 D=3136437 h=40 h+=80 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1792 D=3211260 h=80 h+=160 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1799 D=3236397 h=48 h+=96 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1883 D=3545685 h=64 h+=128 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1908 D=3640460 h=60 h+=120 wide2=0 narrow2=0
+SURVCLASS N=+1 n=1957 D=3829845 h=56 h+=112 wide2=0 narrow2=0
+SURVCLASS N=+1 n=2044 D=4177932 h=80 h+=160 wide2=0 narrow2=0
+SURVCLASS N=+1 n=2161 D=4669917 h=56 h+=112 wide2=0 narrow2=0
+SURVCLASS N=+1 n=2228 D=4963980 h=96 h+=192 wide2=0 narrow2=0
+SURVCLASS N=+1 n=2299 D=5285397 h=60 h+=120 wide2=0 narrow2=0
+SURVCLASS N=+1 n=2348 D=5513100 h=96 h+=192 wide2=0 narrow2=0
+SURVCLASS N=+1 n=2364 D=5588492 h=72 h+=144 wide2=0 narrow2=0
+SURVCLASS N=+1 n=2377 D=5650125 h=80 h+=160 wide2=0 narrow2=0
+SURVCLASS N=+1 n=2502 D=6260000 h=80 h+=160 wide2=0 narrow2=0
+SURVCLASS N=+1 n=2532 D=6411020 h=96 h+=192 wide2=0 narrow2=0
+SURVCLASS N=+1 n=2546 D=6482112 h=96 h+=192 wide2=0 narrow2=0
+SURVCLASS N=+1 n=2551 D=6507597 h=60 h+=120 wide2=0 narrow2=0
+SURVCLASS N=+1 n=2683 D=7198485 h=80 h+=160 wide2=0 narrow2=0
+SURVCLASS N=+1 n=2693 D=7252245 h=96 h+=192 wide2=0 narrow2=0
+SURVCLASS N=+1 n=2706 D=7322432 h=72 h+=144 wide2=0 narrow2=0
+SURVCLASS N=+1 n=2972 D=8832780 h=120 h+=240 wide2=0 narrow2=0
+SURVCLASS N=+1 n=3036 D=9217292 h=96 h+=192 wide2=0 narrow2=0
+SURVCLASS N=+1 n=3152 D=9935100 h=128 h+=256 wide2=0 narrow2=0
+SURVCLASS N=+1 n=3244 D=10523532 h=96 h+=192 wide2=0 narrow2=0
+SURVCLASS N=+1 n=3481 D=12117357 h=72 h+=144 wide2=0 narrow2=0
+SURVCLASS N=+1 n=4438 D=19695840 h=144 h+=288 wide2=0 narrow2=0
+SURVCLASS N=+1 n=5124 D=26255372 h=120 h+=240 wide2=0 narrow2=0
+SURVCLASS N=+1 n=5182 D=26853120 h=192 h+=384 wide2=0 narrow2=0
+TORS N=-1 n=1 D=5 f=1 D0=5 h=1 h+=1 mu=1 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=2 D=8 f=1 D0=8 h=1 h+=1 mu=1 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=3 D=13 f=1 D0=13 h=1 h+=1 mu=1 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=4 D=20 f=2 D0=5 h=1 h+=1 mu=1 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=5 D=29 f=1 D0=29 h=1 h+=1 mu=1 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=6 D=40 f=1 D0=40 h=2 h+=2 mu=2 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=7 D=53 f=1 D0=53 h=1 h+=1 mu=1 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=8 D=68 f=2 D0=17 h=1 h+=1 mu=1 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=9 D=85 f=1 D0=85 h=2 h+=2 mu=2 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=10 D=104 f=1 D0=104 h=2 h+=2 mu=2 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=11 D=125 f=5 D0=5 h=1 h+=1 mu=1 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=13 D=173 f=1 D0=173 h=1 h+=1 mu=1 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=14 D=200 f=5 D0=8 h=2 h+=2 mu=2 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=16 D=260 f=2 D0=65 h=2 h+=2 mu=2 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=17 D=293 f=1 D0=293 h=1 h+=1 mu=1 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=19 D=365 f=1 D0=365 h=2 h+=2 mu=2 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=22 D=488 f=1 D0=488 h=2 h+=2 mu=2 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=23 D=533 f=1 D0=533 h=2 h+=2 mu=2 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=25 D=629 f=1 D0=629 h=2 h+=2 mu=2 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=26 D=680 f=1 D0=680 h=4 h+=4 mu=3 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=29 D=845 f=13 D0=5 h=2 h+=2 mu=2 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=31 D=965 f=1 D0=965 h=2 h+=2 mu=2 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=34 D=1160 f=1 D0=1160 h=4 h+=4 mu=3 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=38 D=1448 f=1 D0=1448 h=2 h+=2 mu=2 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=41 D=1685 f=1 D0=1685 h=2 h+=2 mu=2 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=43 D=1853 f=1 D0=1853 h=2 h+=2 mu=2 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=46 D=2120 f=1 D0=2120 h=4 h+=4 mu=3 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=49 D=2405 f=1 D0=2405 h=4 h+=4 mu=3 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=53 D=2813 f=1 D0=2813 h=2 h+=2 mu=2 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=59 D=3485 f=1 D0=3485 h=4 h+=4 mu=3 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=62 D=3848 f=1 D0=3848 h=4 h+=4 mu=3 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=74 D=5480 f=1 D0=5480 h=4 h+=4 mu=3 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=94 D=8840 f=1 D0=8840 h=8 h+=8 mu=4 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=101 D=10205 f=1 D0=10205 h=4 h+=4 mu=3 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=127 D=16133 f=1 D0=16133 h=4 h+=4 mu=3 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=146 D=21320 f=1 D0=21320 h=8 h+=8 mu=4 JinSq=1 wide2=1 narrow2=1 split=0
+TORS N=-1 n=179 D=32045 f=1 D0=32045 h=8 h+=8 mu=4 JinSq=1 wide2=1 narrow2=1 split=0
+SURVCLASS N=-1 n=1004 D=1008020 h=36 h+=36 wide2=0 narrow2=0
+SURVCLASS N=-1 n=1028 D=1056788 h=30 h+=30 wide2=0 narrow2=0
+SURVCLASS N=-1 n=1042 D=1085768 h=28 h+=28 wide2=0 narrow2=0
+SURVCLASS N=-1 n=1172 D=1373588 h=30 h+=30 wide2=0 narrow2=0
+SURVCLASS N=-1 n=1249 D=1560005 h=28 h+=28 wide2=0 narrow2=0
+SURVCLASS N=-1 n=1259 D=1585085 h=24 h+=24 wide2=0 narrow2=0
+SURVCLASS N=-1 n=1271 D=1615445 h=32 h+=32 wide2=0 narrow2=0
+SURVCLASS N=-1 n=1361 D=1852325 h=30 h+=30 wide2=0 narrow2=0
+SURVCLASS N=-1 n=1427 D=2036333 h=28 h+=28 wide2=0 narrow2=0
+SURVCLASS N=-1 n=1432 D=2050628 h=45 h+=45 wide2=0 narrow2=0
+SURVCLASS N=-1 n=1457 D=2122853 h=29 h+=29 wide2=0 narrow2=0
+SURVCLASS N=-1 n=1466 D=2149160 h=48 h+=48 wide2=0 narrow2=0
+SURVCLASS N=-1 n=1609 D=2588885 h=32 h+=32 wide2=0 narrow2=0
+SURVCLASS N=-1 n=1637 D=2679773 h=31 h+=31 wide2=0 narrow2=0
+SURVCLASS N=-1 n=1648 D=2715908 h=52 h+=52 wide2=0 narrow2=0
+SURVCLASS N=-1 n=1667 D=2778893 h=28 h+=28 wide2=0 narrow2=0
+SURVCLASS N=-1 n=2131 D=4541165 h=46 h+=46 wide2=0 narrow2=0
+SURVCLASS N=-1 n=2209 D=4879685 h=40 h+=40 wide2=0 narrow2=0
+SURVCLASS N=-1 n=2239 D=5013125 h=40 h+=40 wide2=0 narrow2=0
+SURVCLASS N=-1 n=2692 D=7246868 h=72 h+=72 wide2=0 narrow2=0
+SURVCLASS N=-1 n=2731 D=7458365 h=56 h+=56 wide2=0 narrow2=0
+SURVCLASS N=-1 n=3214 D=10329800 h=96 h+=96 wide2=0 narrow2=0
+SURVCLASS N=-1 n=3779 D=14280845 h=60 h+=60 wide2=0 narrow2=0
+SURVCLASS N=-1 n=5968 D=35617028 h=120 h+=120 wide2=0 narrow2=0
+CLASS NMAX=6000 orders=11998 wide2=90 narrow2=85 lemmaA_fail=0 analytic_checked=889 max|h_an-h|=1.69e-10

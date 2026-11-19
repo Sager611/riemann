@@ -1,0 +1,20 @@
+class6000:        33.16 real        26.63 user         0.36 sys
+class6000:             39501824  maximum resident set size
+class6000:             39108992  peak memory footprint
+class6000: memcap: peak 37 MB rc=0
+sieve:       190.11 real        97.86 user         1.65 sys
+sieve:             33652736  maximum resident set size
+sieve:             33816936  peak memory footprint
+sieve: memcap: peak 32 MB rc=0
+pcyc:         0.02 real         0.00 user         0.00 sys
+pcyc:              1409024  maximum resident set size
+pcyc:               999736  peak memory footprint
+pcyc: memcap: peak 0 MB rc=0
+cert.py rerun:       136.68 real       106.04 user         1.70 sys
+cert.py rerun:            175538176  maximum resident set size
+cert.py rerun:             20988432  peak memory footprint
+cert.py rerun: memcap: peak 149 MB rc=0
+class6000 (with analytic sample n%47==0, final run):       213.97 real       141.47 user         2.11 sys
+class6000 (with analytic sample n%47==0, final run):             39501824  maximum resident set size
+class6000 (with analytic sample n%47==0, final run):             39108992  peak memory footprint
+class6000 (with analytic sample n%47==0, final run): memcap: peak 37 MB rc=0

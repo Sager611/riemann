@@ -1,0 +1,5 @@
+entries KL 90 mine 90 all match (Cl, Cl+, f): True
+max n in list: 262 max D 68640
+cert.py KL_A transcription == TeX parse: True  KL_B: True
+survivors: theirs 82 mine (n in (1000,6000], split test passed) 82 same set: True same h,h+,wide2: True
+survivor h range 21 192 max n 5968
