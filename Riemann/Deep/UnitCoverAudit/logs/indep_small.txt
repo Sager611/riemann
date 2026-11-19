@@ -1,0 +1,7 @@
+Q=100: first primes need m=11 (last prime 31; hardest [91]); primes > Q need m=9 (last 139; hardest [53, 65, 73, 79, 89, 91])
+Q=300: first primes need m=13 (last prime 41; hardest [285]); primes > Q need m=12 (last 373; hardest [227, 241])
+Q=1000: first primes need m=15 (last prime 47; hardest [731, 805, 851, 861, 868, 897]); primes > Q need m=14 (last 1091; hardest [509, 869, 887, 979, 983])
+Q=2000: first primes need m=17 (last prime 59; hardest [1547, 1705, 1785, 1885, 1955, 1995]); primes > Q need m=16 (last 2113; hardest [1999])
+log2 phi(1999) = 10.9643; log2 phi(q) max over q<=2000 = 10.9643
+done 13.1 s
+memcap: peak 0 MB rc=0

@@ -1,0 +1,4 @@
+Q=100 (log2 Q = 6.64): least N over 40 draws: min 9, median 10, max 17
+Q=300 (log2 Q = 8.23): least N over 30 draws: min 12, median 12, max 16
+Q=1000 (log2 Q = 9.97): least N over 12 draws: min 14, median 15, max 16
+memcap: peak 0 MB rc=0

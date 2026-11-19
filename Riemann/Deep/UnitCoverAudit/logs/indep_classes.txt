@@ -1,0 +1,40 @@
+k=1: own 1 lattices/closed sets in 1 classes; cert.py 1 in 1 classes; class tables identical: True; max D = 1; max pi = 1/2
+   closed sets as sets identical to cert.py: True
+k=2: own 4 lattices/closed sets in 3 classes; cert.py 4 in 3 classes; class tables identical: True; max D = 2; max pi = 1/2
+   closed sets as sets identical to cert.py: True
+k=3: own 48 lattices/closed sets in 11 classes; cert.py 48 in 11 classes; class tables identical: True; max D = 4; max pi = 1/2
+   closed sets as sets identical to cert.py: True
+k=4: own 2340 lattices/closed sets in 57 classes; cert.py 2340 in 57 classes; class tables identical: True; max D = 16; max pi = 1/2
+   closed sets as sets identical to cert.py: True
+enumeration done 105.8 s
+group Z/2xZ/8, k=4: ok (50625 tuples, 1221 distinct R, max count/bound 0.750)
+group Z/12, k=4: ok (14641 tuples, 1599 distinct R, max count/bound 0.667)
+group Z/2xZ/2xZ/2, k=4: ok (2401 tuples, 25 distinct R, max count/bound 0.875)
+group Z/3xZ/3, k=4: ok (4096 tuples, 92 distinct R, max count/bound 0.889)
+group Z/5, k=4: ok (256 tuples, 64 distinct R, max count/bound 0.800)
+group Z/2xZ/4xZ/8, k=4: ok (20000 tuples, 574 distinct R, max count/bound 0.016)
+group Z/6xZ/6, k=4: ok (20000 tuples, 709 distinct R, max count/bound 0.083)
+group Z/840, k=4: ok (20000 tuples, 46 distinct R, max count/bound 0.000)
+group Z/2xZ/2xZ/4xZ/3, k=4: ok (20000 tuples, 763 distinct R, max count/bound 0.062)
+group Z/7xZ/7, k=3: ok (110592 tuples, 27 distinct R, max count/bound 0.980)
+|G_q[d]| <= 2 d^omega(q) for 3 <= q <= 1200, d in {2,3,4,6,8,12,16}: violations 0, max ratio 1.000
+done 158.6 s
+      159.28 real       124.03 user         1.89 sys
+            40337408  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                4940  page reclaims
+                1933  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  21  messages received
+                   1  signals received
+                 152  voluntary context switches
+              242247  involuntary context switches
+           517916852  instructions retired
+           322351442  cycles elapsed
+            15811088  peak memory footprint
+memcap: peak 24 MB rc=0

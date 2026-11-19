@@ -1,0 +1,46 @@
+[cells] prec 256; 664 cells, last L1 = 60.27531; W1 = 2.424245725, W0 = 115.9708945, winf = 38.8543814, SIG = 0.0463711865
+cells 0..331
+c'=820000: worst cell delta 9.825817e-7 at L0 = 3.1308685 (claim 0.00098366 / 9.8258e-7); <= d0: True  [46 s]
+[cells] 46.0 s
+       47.57 real        36.72 user         0.74 sys
+           160989184  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11492  page reclaims
+                1287  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 241  voluntary context switches
+               75778  involuntary context switches
+           497800913  instructions retired
+           280929675  cycles elapsed
+            14549472  peak memory footprint
+memcap: peak 134 MB rc=0
+[cells] prec 256; 664 cells, last L1 = 60.27531; W1 = 2.424245725, W0 = 115.9708945, winf = 38.8543814, SIG = 0.0463711865
+cells 332..663
+c'=820000: worst cell delta 8.42163e-7 at L0 = 11.508188 (claim 0.00098366 / 9.8258e-7); <= d0: True  [38 s]
+[cells] 37.5 s
+       38.84 real        36.41 user         0.46 sys
+           160907264  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12769  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   1  voluntary context switches
+               37518  involuntary context switches
+           406034968  instructions retired
+           155316026  cycles elapsed
+            14483936  peak memory footprint
+memcap: peak 136 MB rc=0

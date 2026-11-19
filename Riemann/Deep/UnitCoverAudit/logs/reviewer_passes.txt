@@ -1,0 +1,29 @@
+== reviewer pass 1
+Step 1: CORRECT
+Step 2: GAP
+Step 3: CORRECT
+Step 4: CORRECT
+Step 5: GAP
+Step 6: GAP
+
+OVERALL: GAP (Step 2: no requirement \(r\le N\). Take \(q=3,\ N=1,\ \delta=0\), \(g_1\) uniform, and \(g_j=1\) thereafter. Then \(\mathbb E[C_2^k]=1/2>1/4=\sum_a\pi(a)^2\). Steps 5–6 likewise lack \(r+s\le N\); Step 6 additionally lacks a common prime-valued construction.)
+== reviewer pass 2
+Step 0: CORRECT
+Step 1: GAP
+Step 2: GAP
+Step 3: CORRECT
+Step 4: CORRECT
+Step 5: GAP
+Step 6: GAP
+
+OVERALL: GAP (Step 2, missing hypothesis \(0<\alpha<1\). Take \(Q=3,r=1,s=0,k=4,\nu\) concentrated on prime \(2\), \(\delta=0,\alpha=-1\). Lemma D holds; \(T_r=\varnothing\), \(C_r=0\), \(t=-1/2\). The claimed inequality becomes \(1=\Pr(|T_r|\ge-2)\le \mathbb E[C_r^4]/t^4=0\).)
+== reviewer pass 3
+Step 0: CORRECT
+Step 1: CORRECT
+Step 2: CORRECT
+Step 3: CORRECT
+Step 4: CORRECT
+Step 5: CORRECT
+Step 6: CORRECT
+
+OVERALL: CORRECT

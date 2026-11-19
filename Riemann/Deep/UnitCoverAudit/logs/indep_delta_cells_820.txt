@@ -1,0 +1,3 @@
+[cells] prec 256; 664 cells, last L1 = 60.27531; W1 = 2.424245725, W0 = 115.9708945, winf = 38.8543814, SIG = 0.0463711865
+c'=820: worst cell delta 0.00098366393 at L0 = 3.1308685 (claim 0.00098366 / 9.8258e-7); <= d0: True  [176 s]
+memcap: peak 295 MB KILLED MEM>290MB rc=137

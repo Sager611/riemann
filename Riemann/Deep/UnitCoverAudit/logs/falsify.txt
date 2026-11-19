@@ -1,0 +1,11 @@
+A: CRT formula for |G_q[d]| = brute force, q <= 400, d <= 16: ok
+A: 24 (k - rho, d-tuple) types; sec 3.4 bound holds at all checkpoints Q <= 4000; max ratio 0.6400 at (1, (), 5)
+B: q=5 (H=4) k=2 delta=1/10 r=10 s=4: E[C_r^k] = 0.003613 <= (3.1) 0.007332: True; exact Pr(S_N != G) = 0.00026 <= Lemma C bound 0.0411: True
+B: q=7 (H=6) k=2 delta=1/20 r=12 s=4: E[C_r^k] = 0.0006052 <= (3.1) 0.001131: True; exact Pr(S_N != G) = 3.66e-05 <= Lemma C bound 0.0134: True
+B: q=8 (H=4) k=4 delta=1/10 r=14 s=4: E[C_r^k] = 0.0007068 <= (3.1) 0.001044: True; exact Pr(S_N != G) = 6.36e-05 <= Lemma C bound 0.0429: True
+B: q=9 (H=6) k=3 delta=1/10 r=14 s=4: E[C_r^k] = 0.0002759 <= (3.1) 0.000555: True; exact Pr(S_N != G) = 2.33e-05 <= Lemma C bound 0.0226: True
+B: q=12 (H=4) k=4 delta=1/20 r=14 s=5: E[C_r^k] = 0.0003646 <= (3.1) 0.0005062: True; exact Pr(S_N != G) = 1.45e-05 <= Lemma C bound 0.0146: True
+B: q=15 (H=8) k=2 delta=1/10 r=16 s=5: E[C_r^k] = 0.0002253 <= (3.1) 0.0003103: True; exact Pr(S_N != G) = 1.06e-05 <= Lemma C bound 0.00632: True
+B: q=16 (H=8) k=3 delta=1/10 r=14 s=5: E[C_r^k] = 0.0007311 <= (3.1) 0.00102: True; exact Pr(S_N != G) = 3.54e-05 <= Lemma C bound 0.0245: True
+B: q=5 (H=4) k=4 delta=0 r=12 s=3: E[C_r^k] = 0.0002519 <= (3.1) 0.0005311: True; exact Pr(S_N != G) = 3.09e-05 <= Lemma C bound 0.0347: True
+memcap: peak 15 MB rc=0

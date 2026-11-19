@@ -1,0 +1,42 @@
+[select] prec 256; 664 cells, last L1 = 60.27531; W1 = 2.424245725, W0 = 115.9708945, winf = 38.8543814, SIG = 0.0463711865
+c'=820 cell 0 L0=2.19722: cell bound 0.00095923591; interior 0.00095409019; exp 7.8978 0.00095406224; ok True
+c'=820 cell 1 L0=2.20821: cell bound 0.00095997466; interior 0.00095483176; exp 7.8978 0.00095480378; ok True
+c'=820 cell 2 L0=2.21925: cell bound 0.00096070036; interior 0.00095556032; exp 7.8978 0.0009555323; ok True
+c'=820 cell 663 L0=59.9754: cell bound 0.00065894003; interior 0.00065584058; exp 7.8978 0.0006558129; ok True
+c'=820 cell 334 L0=11.6236: cell bound 0.00084181225; interior 0.00083798083; exp 7.8978 0.00083795084; ok True
+c'=820 cell 157 L0=4.8078: cell bound 0.00095997013; interior 0.00095543699; exp 7.8978 0.00095540609; ok True
+c'=820 cell 407 L0=16.7287: cell bound 0.00079088413; interior 0.00078727976; exp 7.8978 0.00078725046; ok True
+c'=820 cell 52 L0=2.8478: cell bound 0.00098208592; interior 0.00097711419; exp 7.8978 0.00097708459; ok True
+c'=820 cell 77 L0=3.22598: cell bound 0.00098353828; interior 0.00097866456; exp 7.8978 0.00097863443; ok True
+c'=820 cell 551 L0=34.3063: cell bound 0.00070675203; interior 0.00070348082; exp 7.8978 0.00070345266; ok True
+c'=820 tail from L = 60.27531: margin 0.344339 (claim 0.3443 / 0.3452)
+   direct at L = 61.0: delta 0.000654801
+   direct at L = 100.0: delta 0.00062435
+   direct at L = 1000.0: delta 0.000565468
+   direct at L = 10000.0: delta 0.000555727
+c'=820000 cell 0 L0=2.19722: cell bound 9.5827662e-7; interior 9.53138e-7; exp 7.8978 9.5308439e-7; ok True
+c'=820000 cell 1 L0=2.20821: cell bound 9.5901293e-7; interior 9.5387715e-7; exp 7.8978 9.5382348e-7; ok True
+c'=820000 cell 2 L0=2.21925: cell bound 9.5973622e-7; interior 9.546033e-7; exp 7.8978 9.5454957e-7; ok True
+c'=820000 cell 663 L0=59.9754: cell bound 6.5806277e-7; interior 6.5496808e-7; exp 7.8978 6.5492278e-7; ok True
+c'=820000 cell 334 L0=11.6236: cell bound 8.4072194e-7; interior 8.368967e-7; exp 7.8978 8.3684418e-7; ok True
+c'=820000 cell 157 L0=4.8078: cell bound 9.5883466e-7; interior 9.5430846e-7; exp 7.8978 9.5425186e-7; ok True
+c'=820000 cell 407 L0=16.7287: cell bound 7.8983732e-7; interior 7.8623879e-7; exp 7.8978 7.8618833e-7; ok True
+c'=820000 cell 52 L0=2.8478: cell bound 9.8102782e-7; interior 9.7606324e-7; exp 7.8978 9.7600735e-7; ok True
+c'=820000 cell 77 L0=3.22598: cell bound 9.8244953e-7; interior 9.7758295e-7; exp 7.8978 9.775265e-7; ok True
+c'=820000 cell 551 L0=34.3063: cell bound 7.0580106e-7; interior 7.0253505e-7; exp 7.8978 7.02488e-7; ok True
+c'=820000 tail from L = 60.27531: margin 0.345212 (claim 0.3443 / 0.3452)
+   direct at L = 61.0: delta 6.5393e-7
+   direct at L = 100.0: delta 6.2354e-7
+   direct at L = 1000.0: delta 5.64879e-7
+   direct at L = 10000.0: delta 5.55281e-7
+table Q=10^3 c'=750 N=33: delta 0.000997743 <= 0.001: True; log10 y = 29.3355
+table Q=10^6 c'=670 N=52: delta 0.000996054 <= 0.001: True; log10 y = 31.326
+table Q=10^12 c'=600 N=97: delta 0.000992775 <= 0.001: True; log10 y = 33.325
+table Q=10^30 c'=530 N=231: delta 0.000999961 <= 0.001: True; log10 y = 36.0424
+table Q=10^100 c'=490 N=745: delta 0.000989536 <= 0.001: True; log10 y = 39.9028
+table Q=10^1000 c'=460 N=7336: delta 0.000998004 <= 0.001: True; log10 y = 47.5839
+table Q=10^12 c'=600000 N=82: delta 9.91366e-7 <= 1e-06: True; log10 y = 57.0183
+table Q=10^100 c'=490000 N=497: delta 9.88238e-7 <= 1e-06: True; log10 y = 63.5961
+table Q=10^1000 c'=460000 N=4787: delta 9.96989e-7 <= 1e-06: True; log10 y = 71.2772
+[select] 12.1 s
+memcap: peak 14 MB rc=0
