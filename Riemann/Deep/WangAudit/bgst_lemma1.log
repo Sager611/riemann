@@ -1,0 +1,26 @@
+zeros 1250 Zmax 1704.2914
+x=1.5 t=300: |A - (xR(3/2+it) - R(-1/2+it)/x)| = 1.34e-6 (omitted-zero bound 0.00216); x|E_x| zeros-side = 1.869, primes-side = 1.869; |A| = 2.529
+x=1.5 t=800: |A - (xR(3/2+it) - R(-1/2+it)/x)| = 5.3e-6 (omitted-zero bound 0.00268); x|E_x| zeros-side = 2.001, primes-side = 2.001; |A| = 2.906
+x=6.5 t=300: |A - (xR(3/2+it) - R(-1/2+it)/x)| = 2.08e-6 (omitted-zero bound 0.00216); x|E_x| zeros-side = 1.869, primes-side = 1.869; |A| = 1.12
+x=6.5 t=800: |A - (xR(3/2+it) - R(-1/2+it)/x)| = 4.78e-6 (omitted-zero bound 0.00268); x|E_x| zeros-side = 2.001, primes-side = 2.001; |A| = 1.731
+x=30.5 t=300: |A - (xR(3/2+it) - R(-1/2+it)/x)| = 4.02e-6 (omitted-zero bound 0.00216); x|E_x| zeros-side = 1.871, primes-side = 1.871; |A| = 2.529
+x=30.5 t=800: |A - (xR(3/2+it) - R(-1/2+it)/x)| = 1.01e-5 (omitted-zero bound 0.00268); x|E_x| zeros-side = 2.005, primes-side = 2.005; |A| = 1.417
+       19.85 real        10.10 user         0.30 sys
+            37879808  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                4958  page reclaims
+                 108  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  63  voluntary context switches
+               27434  involuntary context switches
+         46798939495  instructions retired
+         17636759468  cycles elapsed
+            28950960  peak memory footprint
+memcap: peak 14 MB rc=0

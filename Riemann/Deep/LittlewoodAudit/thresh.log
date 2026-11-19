@@ -1,0 +1,34 @@
+  ***   Warning: new stack size = 100000000 (95.367 Mbytes).
+d0=6.973 e7 H=100 consecutive: 200 discs, min h = 751 (d=69730147), min h*max(3,loglog d)/sqrt(d) = 0.26981 (d=69730147, h=751) vs 0.0350
+d0=6.973 e7 H=100 worst-like: 25 discs, min h = 550 (d=69758203), min h*max(3,loglog d)/sqrt(d) = 0.19755 (d=69758203, h=550) vs 0.0350
+d0=7.292 e9 H=1000 consecutive: 200 discs, min h = 8536 (d=7292000587), min h*max(3,loglog d)/sqrt(d) = 0.31216 (d=7292000587, h=8536) vs 0.0350
+d0=7.292 e9 H=1000 worst-like: 25 discs, min h = 5940 (d=7292051083), min h*max(3,loglog d)/sqrt(d) = 0.21722 (d=7292051083, h=5940) vs 0.0350
+d0=2.957 e10 H=2000 consecutive: 200 discs, min h = 18836 (d=29570000083), min h*max(3,loglog d)/sqrt(d) = 0.34862 (d=29570000083, h=18836) vs 0.0350
+d0=2.957 e10 H=2000 worst-like: 25 discs, min h = 11768 (d=29570149123), min h*max(3,loglog d)/sqrt(d) = 0.21780 (d=29570149123, h=11768) vs 0.0350
+d0=7.627 e11 H=10000 consecutive: 200 discs, min h = 80640 (d=762700000507), min h*max(3,loglog d)/sqrt(d) = 0.30555 (d=762700000507, h=80640) vs 0.0350
+d0=7.627 e11 H=10000 worst-like: 25 discs, min h = 58404 (d=762700570963), min h*max(3,loglog d)/sqrt(d) = 0.22130 (d=762700570963, h=58404) vs 0.0350
+d0=7.976 e13 H=100000 consecutive: 200 discs, min h = 1026500 (d=79760000000587), min h*max(3,loglog d)/sqrt(d) = 0.39838 (d=79760000000587, h=1026500) vs 0.0350
+d0=7.976 e13 H=100000 worst-like: 25 discs, min h = 635177 (d=79760000446963), min h*max(3,loglog d)/sqrt(d) = 0.24651 (d=79760000446963, h=635177) vs 0.0350
+d0=3.047 e10 H=2000 consecutive: 200 discs, min h = 21098 (d=30470000467), min h*max(3,loglog d)/sqrt(d) = 0.38482 (d=30470000467, h=21098) vs 0.0350
+d0=3.047 e10 H=2000 worst-like: 25 discs, min h = 12767 (d=30470059027), min h*max(3,loglog d)/sqrt(d) = 0.23287 (d=30470059027, h=12767) vs 0.0350
+d0=8.137 e13 H=100000 consecutive: 200 discs, min h = 1032576 (d=81370000000408), min h*max(3,loglog d)/sqrt(d) = 0.39683 (d=81370000000408, h=1032576) vs 0.0350
+d0=8.137 e13 H=100000 worst-like: 25 discs, min h = 612813 (d=81370000362883), min h*max(3,loglog d)/sqrt(d) = 0.23551 (d=81370000362883, h=612813) vs 0.0350
+       34.97 real        10.23 user         0.26 sys
+            13238272  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                 981  page reclaims
+                 197  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+               40239  involuntary context switches
+         53553923239  instructions retired
+         17173277447  cycles elapsed
+             9748888  peak memory footprint
+memcap: peak 5 MB rc=0

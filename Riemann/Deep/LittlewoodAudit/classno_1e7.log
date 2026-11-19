@@ -1,0 +1,28 @@
+N 10000000 fundamental d: 3039630 known-value check mismatches: [] t=216.2s
+min h*max(3,loglog d)/sqrt(d) = 0.18985 at d = 991027 (h = 63); claim 0.0350: OK
+min L(1,chi_-d)*max(3,loglog d) = 0.59644 at d = 991027; claim 0.11: OK
+  d in (5,1000]: min L(1) = 0.2461 at d = 163, min h = 1, max d with h <= 100: 996
+  d in (1000,10000]: min L(1) = 0.2857 at d = 5923, min h = 4, max d with h <= 100: 9995
+  d in (10000,100000]: min L(1) = 0.2364 at d = 85507, min h = 9, max d with h <= 100: 99988
+  d in (100000,1000000]: min L(1) = 0.1988 at d = 991027, min h = 24, max d with h <= 100: 999667
+  d in (1000000,10000000]: min L(1) = 0.1994 at d = 2383747, min h = 76, max d with h <= 100: 2383747
+largest d <= N with h(-d) <= 100: 2383747  (Watkins: 2383747) t=216.5s
+      217.15 real       120.61 user         2.25 sys
+           384647168  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               32823  page reclaims
+                1368  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 221  voluntary context switches
+              266846  involuntary context switches
+           505439791  instructions retired
+           279413331  cycles elapsed
+            18874872  peak memory footprint
+memcap: peak 55 MB rc=0

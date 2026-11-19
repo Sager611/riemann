@@ -14,7 +14,7 @@
 
 **Novelty.** No source gives a positive proportion of simple critical zeros in windows T^θ for θ ≤ 0.527 (searched 12 Nov 2026: GXL evidence API, arXiv abstracts 'short intervals' with 'simple zeros', 'Levinson', 'critical line … proportion', Zenodo without a date filter, HAL, our files; E1.md §6 lists the classical sources). The ingredients are known (Steuding's line, Santibáñez-Leal's transformation, detector and parity transfer, Wang's pair sum); their combination reaching the method's barrier θ = 1/2 is new.
 
-**Caveat.** Rests on two unrefereed preprints: Santibáñez-Leal's Zenodo 23134787 v0.03 (audited PASSED by us except Wang's lemma, attributed) and Wang's arXiv 2609.07918 (statement and range checked in its TeX, not refereed line by line); Estermann's functional equation and Young's main term are classical. The liminf is for each fixed θ (no rate, no θ = θ(T) ↓ 1/2). A line-by-line audit and a Lean formalization of the finite parts are running.
+**Caveat.** Rests on two unrefereed preprints: Santibáñez-Leal's Zenodo 23134787 v0.03 (audited PASSED by us except Wang's lemma, attributed) and Wang's arXiv 2609.07918 v2 (refereed line by line by wangaudit, 19 Nov 2026: AUDIT PASSED, the local pair theorem, its weight removal and c(θ) re-derived and falsification-tested, [WangAudit](../Riemann/Deep/WangAudit/REPORT.md)); Estermann's functional equation and Young's main term are classical. The liminf is for each fixed θ (no rate, no θ = θ(T) ↓ 1/2). E1's own steps: AUDIT PASSED ([E1Audit](../Riemann/Deep/E1Audit/REPORT.md)); Lean below.
 
 **RH relevance:** N8 (simple zeros and the critical-line proportion in short windows: the method's own threshold θ = 1/2 reached).
 

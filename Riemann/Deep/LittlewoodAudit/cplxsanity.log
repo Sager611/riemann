@@ -1,0 +1,29 @@
+kappa_0 = 0.05280, kappa_1 = 1.00880, T_0 = 4.54e-06, T_1 = 3.35e-04; 235220 prime powers <= e^15
+q=5 k=1 (complex, a=1): |L(1)|=0.888577 Z=0.10161 r1=-1.79e-04 (<= k1 Z = 1.03e-01) r0=-7.23e-06 (<= k0 Z = 5.36e-03) OK
+q=5 k=2 (real, a=0): |L(1)|=0.430409 Z=0.07828 r1=+3.67e-04 (<= k1 Z = 7.90e-02) r0=-6.39e-06 (<= k0 Z = 4.13e-03) OK
+q=7 k=1 (complex, a=1): |L(1)|=0.897598 Z=0.16938 r1=-1.52e-04 (<= k1 Z = 1.71e-01) r0=+1.84e-05 (<= k0 Z = 8.94e-03) OK
+q=7 k=3 (real, a=1): |L(1)|=1.187410 Z=0.12762 r1=+1.69e-04 (<= k1 Z = 1.29e-01) r0=+1.89e-05 (<= k0 Z = 6.74e-03) OK
+q=11 k=1 (complex, a=1): |L(1)|=1.426404 Z=0.18598 r1=+4.46e-04 (<= k1 Z = 1.88e-01) r0=-2.83e-05 (<= k0 Z = 9.82e-03) OK
+q=11 k=5 (real, a=1): |L(1)|=0.947226 Z=0.25376 r1=-9.84e-04 (<= k1 Z = 2.56e-01) r0=+3.34e-05 (<= k0 Z = 1.34e-02) OK
+q=13 k=1 (complex, a=1): |L(1)|=1.406135 Z=0.23115 r1=-7.61e-04 (<= k1 Z = 2.33e-01) r0=-1.68e-05 (<= k0 Z = 1.22e-02) OK
+q=13 k=6 (real, a=0): |L(1)|=0.662735 Z=0.19833 r1=-9.21e-04 (<= k1 Z = 2.00e-01) r0=+1.83e-05 (<= k0 Z = 1.05e-02) OK
+28 characters, 0 failures; max |r1|/(kappa_1 Z) = 0.008, max |r0|/(kappa_0 Z) = 0.003 (GRH zeros: small)
+       12.56 real         7.40 user         0.26 sys
+            80035840  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8311  page reclaims
+                 154  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 183  voluntary context switches
+               17615  involuntary context switches
+           430252917  instructions retired
+           192974121  cycles elapsed
+            19153400  peak memory footprint
+memcap: peak 18 MB rc=0

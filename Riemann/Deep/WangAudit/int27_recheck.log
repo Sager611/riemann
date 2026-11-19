@@ -1,0 +1,32 @@
+a=(-3.65636 + 0.687919j): rel err 3.46e-32
+a=(2.63775 - 0.484963j): rel err 8.65e-32
+a=(-0.0456491 - 0.100008j): rel err 2.45e-34
+a=(1.51593 + 0.571672j): rel err 0.0
+a=(-4.0614 - 0.933872j): rel err 0.0
+a=(3.35765 - 0.133121j): rel err 7.49e-33
+a=(2.6228 - 0.98583j): rel err 8.77e-32
+a=(-0.546128 + 0.438649j): rel err 1.62e-32
+a=(-2.71238 + 0.881636j): rel err 1.02e-31
+a=(4.01427 - 0.929432j): rel err 4.05e-32
+a=(-4.74554 + 0.0819967j): rel err 1.04e-31
+a=(4.39149 - 0.235216j): rel err 1.14e-32
+max rel err 1.04e-31
+memcap: peak 0 MB rc=0
+        7.03 real         1.41 user         4.07 sys
+            34832384  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11376  page reclaims
+                  10  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   6  signals received
+                  20  voluntary context switches
+                8669  involuntary context switches
+            62085241  instructions retired
+            47415721  cycles elapsed
+             2228560  peak memory footprint

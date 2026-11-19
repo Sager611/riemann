@@ -1,0 +1,6 @@
+weak: small q F(e^3) - log(0.11/3) = +0.015265
+weak: omega(8)|h=2 <= -1.6893 < 0: True
+weak: cover A 0.11 [3.0,40.0]: PASS 152 cells worst 0.015167082941278014
+weak: cover B2 0.116 [4.0,100.0]: PASS 383 cells worst 0.020321102554425464
+weak: 0.115 holds from loglog q >= 3.14 (stated 3.13 needs Dusart)
+memcap: peak 0 MB rc=0

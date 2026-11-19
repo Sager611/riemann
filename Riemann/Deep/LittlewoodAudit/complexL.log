@@ -1,0 +1,23 @@
+Q = 20000: 2261 prime conductors, 21166667 nonprincipal (primitive) characters, t = 19.9s
+sanity: L(1,(./5)) = 0.430408940964 (2 log((1+sqrt5)/2)/sqrt5 = 0.430408940964); L(1,chi_-23) = 1.965202054108 (3 pi/sqrt23 = 1.965202054108); L(1,chi_-163) = 0.246068527553 (pi/sqrt163 = 0.246068527553)
+min |L(1,chi)| complex chi: 0.251667 at (q, k) = (19543, 9615);  real chi: 0.246069 at (163, 81);  bound 0.11/3 = 0.036667: OK
+max |L(1,chi)|: 4.9614 at (18191, 9095) (side result (e) needs loglog q >= 3: not testable here)
+       21.24 real        14.13 user         0.36 sys
+            61259776  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8801  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   1  voluntary context switches
+               32870  involuntary context switches
+           434957674  instructions retired
+           196418846  cycles elapsed
+            27066896  peak memory footprint
+memcap: peak 41 MB rc=0

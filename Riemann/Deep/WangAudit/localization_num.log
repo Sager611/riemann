@@ -1,0 +1,24 @@
+T=600.0 theta=0.95 H=435.8 N(I)=336 Zmax=1704.3 grid 43576
+x=  1.0: 2piF_I=  10217.30 int_I|A|^2=  10407.22 diff=  -189.92 diff/(x L^3)=-0.7255 | (2pi/H)F_I= 23.447 vs L^2/x^2+log x= 40.921 (with log(T/2pi):  20.785)
+x=  3.0: 2piF_I=   1589.46 int_I|A|^2=   1587.25 diff=     2.21 diff/(x L^3)= 0.0028 | (2pi/H)F_I=  3.648 vs L^2/x^2+log x=  5.645 (with log(T/2pi):   3.408)
+x= 10.0: 2piF_I=    971.56 int_I|A|^2=    971.83 diff=    -0.27 diff/(x L^3)=-0.0001 | (2pi/H)F_I=  2.230 vs L^2/x^2+log x=  2.712 (with log(T/2pi):   2.510)
+x= 40.0: 2piF_I=   1492.25 int_I|A|^2=   1499.87 diff=    -7.62 diff/(x L^3)=-0.0007 | (2pi/H)F_I=  3.425 vs L^2/x^2+log x=  3.714 (with log(T/2pi):   3.702)
+       61.05 real        24.45 user         0.58 sys
+            74088448  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7382  page reclaims
+                 483  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 205  voluntary context switches
+               54538  involuntary context switches
+        112013954423  instructions retired
+         43347519425  cycles elapsed
+            61997512  peak memory footprint
+memcap: peak 59 MB rc=0
