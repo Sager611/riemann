@@ -1,0 +1,8 @@
+c=0.00100 w^2=2.00 lam=1.224e-05 rho_max~1.225: min margin over non-trivial multisets 2.064e+00 (N=9.0)
+c=0.00476 w^2=2.00 lam=2.773e-04 rho_max~1.225: min margin over non-trivial multisets 2.108e+00 (N=23.0)
+c=0.05000 w^2=2.00 lam=3.045e-02 rho_max~1.311: min margin over non-trivial multisets 2.194e+00 (N=20.0)
+c=0.10000 w^2=2.00 lam=1.201e-01 rho_max~1.693: min margin over non-trivial multisets 2.311e+00 (N=16.0)
+c=0.16667 w^2=2.00 lam=3.224e-01 rho_max~8.000: min margin over non-trivial multisets 2.498e+00 (N=12.0)
+c=0.16667 w^2=3.75 lam=2.996e-01 rho_max~6.838: min margin over non-trivial multisets 2.533e+00 (N=7.0)
+c=0.25000 w^2=2.00 lam=7.780e-01 rho_max~8.000: min margin over non-trivial multisets 2.751e+00 (N=5.0)
+violations: none ; elapsed 13.9 s

@@ -1,0 +1,7 @@
+Reviewer (verdict-only, 19 Nov 2026 ~22:07Z), task: hinge lemma steps (1)-(6) pasted inline (Conrey Thm 2 via BCY, chi transfer, Littlewood on [sigma+,2]x[1,T], optimal P, normalisation, use with h <= alpha_r (y-r)^+).
+Verdict: GAP
+- (6) endpoint: continuity does not imply finite alpha_r when r = rho_max (counterexample h = min(eps, sqrt((y-rho_max)^+))); require r < rho_max or h = O(y - rho_max).
+- (6) counting: the positive-height pairing is rho <-> 1 - conj(rho), not rho <-> conj(rho); distinct pairs only decrease the nonnegative sum.
+- (3) Jensen: use (T-1)/2 and 1/(T-1); O(1) correction, harmless. Horizontal edges: standard argument extends (polynomial growth, f(2+it) = 1 + o(1)); boundary zeros by limits. Right edge: valid.
+- Otherwise (1)-(5) follow from the quoted theorem: chi factor, inequality directions, optimisation and normalisation correct; successive fixed-parameter limits, no uniformity in R, degree or theta needed; fixed R ~ 7.6 no restriction. 2 pi (1.2036) = 7.56244.
+Auditor's resolution: (a) presentation gap only: the certificate uses rho <= rho_max - 0.02 (finite alpha certified), and H is real-analytic with a simple crossing at rho_max; (b) DERIVATION uses Z_T-conjugation = rho <-> 1 - conj(rho) (its section 0; La l.588-598); (c) o(T) details. No number changes.

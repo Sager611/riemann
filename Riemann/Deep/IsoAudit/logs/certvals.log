@@ -1,0 +1,7 @@
+c = 0.00476: certified p >= 0.6724005185 (target 0.6724, margin 5.18e-07); rho 1.2043 rho_max 1.2243 alpha <= 0.669372334 B <= 1.396783e-05 lam 2.772762e-04  [1 s]
+c = 0.01106: certified p >= 0.6720007083 (target 0.672, margin 7.08e-07); rho 1.2075 rho_max 1.2275 alpha <= 0.665795503 B <= 1.365050e-05 lam 1.496671e-03  [2 s]
+c = 0.02485: certified p >= 0.6700018526 (target 0.67, margin 1.85e-06); rho 1.2236 rho_max 1.2436 alpha <= 0.647739311 B <= 1.216005e-05 lam 7.548450e-03  [4 s]
+c = 0.05495: certified p >= 0.6600054000 (target 0.66, margin 5.40e-06); rho 1.3098 rho_max 1.3298 alpha <= 0.562581700 B <= 6.547855e-06 lam 3.674064e-02  [6 s]
+c = 0.06427: certified p >= 0.6552053893 (target 0.6552, margin 5.39e-06); rho 1.3548 rho_max 1.3748 alpha <= 0.524117378 B <= 4.739781e-06 lam 5.015400e-02  [8 s]
+c = 0.001: certified p >= 0.6724872882 (target 0.672487, margin 2.88e-07); rho 1.2036 rho_max 1.2236 alpha <= 0.670123884 B <= 1.403822e-05 lam 1.223817e-05  [9 s]
+c = 1/6, w^2 = 3.75: certified p >= 0.5247019978; rho 2.9799 alpha <= 5.063108e-03 B <= 4.053e-11 lam 0.299610  [11 s]

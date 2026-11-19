@@ -16,6 +16,8 @@
 
 **Later.** Kim (Zenodo 24126375, 11 Nov 2026): at least 67.2468% c-isolated for c ≤ 10⁻⁵ (below ours); Duclos (Zenodo 24101910): 0.672569945 for simple critical zeros by "ordered pairing", past the Hilbert-space ceiling 0.672501 but not for c-isolated zeros. Neither pre-empts this page (harvest6).
 
+**Audit.** AUDIT PASSED (isoaudit, 19 Nov 2026, [IsoAudit](../Riemann/Deep/IsoAudit/REPORT.md)): every item holds as written; the chain (Lamzouri's Hilbert-space inequality with explicit errors, the hinge lemma from Conrey's mollified mean value) re-derived against the TeX (Lamzouri 2610.26841, BCY 1002.4127); every certified value and threshold reproduced by independent mpmath code to ≤ 10⁻⁹ (c = 0.00476: 0.6724005185, margin 5.2·10⁻⁷); Lamzouri's 0.655202908 and 0.508751056 reproduced; 138,500 random and adversarial multisets at corner parameters violate no step; the first 10⁵ zeros give B_0/N ≥ 0.9967 for every stated c. Presentation points, no number changes: α_ρ is certified only for ρ < ρ_max (cert.py uses ρ ≤ ρ_max − 0.02); logs/cert.log prints p rounded to nearest (exact values in IsoAudit/logs/certvals.log); the c = 1/6 value uses a non-f₀ kernel and needs Lamzouri's pair-correlation lemma in its general form (LamzAudit2 S3′). The orchestrator's rerun of certvals.py on a copy is identical.
+
 **RH relevance:** N8 (critical-line proportion): almost all of the Hilbert-space proportion of simple zeros on the line (0.672501) is now also separated from both neighbours; the main N8 record (67.353% simple and on the line, 2610.08965) is unchanged and uses another method.
 
 **Files.** [Riemann/Deep/IsoZero/](../Riemann/Deep/IsoZero/) (REPORT.md, DERIVATION.md, AUDIT.md, cert.py, sanity_mp.py, logs/).
