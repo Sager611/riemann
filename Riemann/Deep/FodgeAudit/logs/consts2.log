@@ -1,0 +1,16 @@
+C.6 (2nd diff.): h <= 1.054451691
+   8/sqrt(pi)+(sqrt h-1)/2 = 4.52694915920  <= printed 4.52695: True (gap 8.41e-7),  <= used 4.527: True
+   1+eps3/8+h^2.5 Xi L^2/(4pi) = 1.00050066670  <= printed 1.00051: True (gap 9.33e-6),  <= used 1.0006: True
+   7z3h^1.5/pi^2+21z3h/(2pi^2) = 2.27160097136  <= printed 2.27161: True (gap 9.03e-6),  <= used 2.272: True
+   at 2N: ['4.5269440', '1.0004956', '2.2715463']
+C.8 (3rd diff.): h <= 1.068601875
+   8/sqrt(pi)+(sqrt h-1)/2 = 4.53038267499  <= printed 4.53039: True (gap 7.33e-6),  <= used 4.531: True
+   1+eps3/8+h^2.5 Xi L^2/(4pi) = 1.00084139137  <= printed 1.00085: True (gap 8.61e-6),  <= used 1.001: True
+   7z3h^1.5/pi^2+21z3h/(2pi^2) = 2.30834082282  <= printed 2.30835: True (gap 9.18e-6),  <= used 2.31: True
+   at 2N: ['4.5303665', '1.0008255', '2.3081671']
+C.3 (1st diff.): h <= 1.040691800
+   8/sqrt(pi)+(sqrt h-1)/2 = 4.52358818289  <= printed 4.52359: True (gap 1.82e-6),  <= used 4.524: True
+   1+eps3/8+h^2.5 Xi L^2/(4pi) = 1.00030111080  <= printed 1.00031: True (gap 8.89e-6),  <= used 1.0004: True
+   7z3h^1.5/pi^2+21z3h/(2pi^2) = 2.23599404983  <= printed 2.23600: True (gap 5.95e-6),  <= used 2.24: True
+   at 2N: ['4.5235691', '1.0002822', '2.2357924']
+parab_forms: W1, r(m), group sums sum_(m=a..b) r(m) exact for M < 60 (all m) and 40 random M in [60, 400]: 0 mismatches (2570 r(m) checks)

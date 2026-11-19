@@ -1,0 +1,2 @@
+log t in [87.0, 87.25]: 1542 blocks from 0.0040 t^(1/3) to n1 (term by term 0, single 547, double 779, triple 216); parts: head 0.25298, triple 0.25989, double 5.82389, single 12.45697, term by term blocks 0.00000, remainder 0.00000  [270s]
+PROP C.7 (v6): |zeta(1/2+it)| <= 18.79375 t^(1/6) for log t in [87.0, 87.25]

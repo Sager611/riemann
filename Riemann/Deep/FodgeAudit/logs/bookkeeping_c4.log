@@ -1,0 +1,1 @@
+Lemma C.4 on exact block sums: 32374 blocks (all blocks of 1..n1 cut, every L' <= L), max |sum|^2/RHS = 0.048818 at (t, N, L) = ('3245396409979.36', 45308, 567)

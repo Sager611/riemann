@@ -1,0 +1,13 @@
+300 distinct cases, 0 errors; stationary j tested ~3299, nonstationary ~12300, exceptional ~600
+lambda range 9.61e-05 .. 2.000; max nstat 269
+E1: max ratio 0.557674 over 300 cases; at case [10000, 133, 133, 131, 0.5, 'eps_half'] lam=0.5 info=-2567
+N1: max ratio 0.999992 over 300 cases; at case [10000, 133, 133, 132, 0.001, 'beta'] lam=0.001071 info=[6, 11.499998999999999]
+N2: max ratio 0.659333 over 300 cases; at case [10000, 133, 2, 1, 0.01, 'beta'] lam=0.01009 info=[-54, 1.489500475173756]
+S1: max ratio 0.499773 over 155 cases; at case [10000, 133, 40, 7, 1.1, 'alpha'] lam=1.1 info=[-5687, 6.044891, 31.500001]
+S2: max ratio 0.489268 over 155 cases; at case [13548, 170, 170, 3, 1.0727461989020395, 'eps_half'] lam=1.073 info=[-7539, 178.499999]
+S3: max ratio 0.999913 over 155 cases; at case [10000, 133, 2, 1, 2.0, 'alpha'] lam=2 info=-10404
+B1: max ratio 0.575586 over 300 cases; at case [10000, 133, 2, 1, 1.1, 'eps_half'] lam=1.1 info=None
+M1: max ratio 0.991503 over 155 cases; at case [10000, 133, 133, 1, 1.1, 'alpha'] lam=1.1 info=None
+D1: max ratio 0.030366 over 246 cases; at case [10000, 133, 3, 1, 0.2, None] lam=0.2 info=[1.1219343089071492e-06, 3.69465292856263e-05]
+C3: max ratio 0.269117 over 300 cases; at case [10000, 133, 133, 1, 0.01, None] lam=0.01 info=[16.065252652813466, 59.69617574893432]
+ratios > 1: none

@@ -1,0 +1,2 @@
+order 2, N = 50000, L = 666: 199 exact sums, max |S|/bound = 0.37459 at (L', shifts, lam, |S|, bound) = (666, (4, 34), 0.02492, 51.0443, 136.268)
+order 3, N = 20000, L = 266: 198 exact sums, max |S|/bound = 0.34858 at (L', shifts, lam, |S|, bound) = (266, (4, 9, 3), 0.03303, 26.2, 75.162)

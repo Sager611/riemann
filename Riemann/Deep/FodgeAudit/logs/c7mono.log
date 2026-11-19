@@ -1,0 +1,1 @@
+C.7 monotonicity: 360 (y, l, integers) samples x 8 values of s in [s_k, 50 s_k]; max relative increase of B/s^2 between consecutive s: C.2+C.3 -1.503e-06, C.6 -1.321e-06, C.8 -1.311e-06 (all must be <= 0)

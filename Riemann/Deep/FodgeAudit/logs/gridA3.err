@@ -1,0 +1,19 @@
+memcap: peak 81 MB rc=0
+      369.97 real        66.04 user        58.58 sys
+            81887232  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              216942  page reclaims
+                2988  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 109  signals received
+                 912  voluntary context switches
+              427855  involuntary context switches
+           173356126  instructions retired
+           243580525  cycles elapsed
+             2310480  peak memory footprint
