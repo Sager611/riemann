@@ -1,0 +1,24 @@
+T1  Z(12) = 998616377770.908836691234021824  n_* = ceil = 998616377771
+    u(n_*) = 12.000000000000043819 (>= 12 needed)
+T2  n = 1.0e+13: R_n = 4.52190963624107e+23  D_n = 8.1087742623378355967e+23  D_n - D_all = -1.533e+25
+T2  n = 4.6974172e+13: R_n = 9.00105185497445e+24  D_n = 1.6140857179149056374e+25  D_n - D_all = -3.09451e+17
+T2  n = 4.6974173e+13: R_n = 9.00105222575759e+24  D_n = 1.6140857844044432135e+25  D_n - D_all = 3.55445e+17
+    real crossover D_n = D_all at n = 46974172465412.6  integer threshold 46974172465413
+    smallest n with D_n >= D_all+1: 46974172465413
+    two-thirds wedge at d = D_all+1 needs n >= 3.4172529e+37
+    n = 1e30: D_n = 1.4615582e+57  two-thirds d <= 1.422466e+20
+    d0 = (n_*^2 log(n_*+2)/24)^(1/3) = 104709744.4
+T3  a = 0.37338196661320752  3.6/(4a^2) = 6.45558838913  stated 6.45
+    min_{n in [n_*, 1e297]} D_n/(kap n^2/log^2 n) = 1.01554303  max (u+1 - log(n)/2) = -0.81481827
+    c = 0.51: sup f (grid) = 7.6889273, closed form f(max(L*, 2c/(2c-1))) = 7.6889273
+    c = 0.55: sup f (grid) = 0.8715955, closed form f(max(L*, 2c/(2c-1))) = 0.8715955
+    c = 0.6: sup f (grid) = 0.06982881, closed form f(max(L*, 2c/(2c-1))) = 0.06982881
+    c = 1.0: sup f (grid) = 1.1852008e-10, closed form f(max(L*, 2c/(2c-1))) = 1.1852008e-10
+    item-3 sampling (2404 (c,d) points, 1 <= d <= 1e60): failures 0  min D_n/d = 1.0967631
+T3  a = 0.5  3.6/(4a^2) = 3.6  stated 3.59
+    min_{n in [n_*, 1e297]} D_n/(kap n^2/log^2 n) = 1.017490269  max (u+1 - log(n)/2) = -0.81481827
+    c = 0.51: sup f (grid) = 10.36676, closed form f(max(L*, 2c/(2c-1))) = 10.36676
+    c = 0.55: sup f (grid) = 1.2030145, closed form f(max(L*, 2c/(2c-1))) = 1.2030145
+    c = 0.6: sup f (grid) = 0.09924618, closed form f(max(L*, 2c/(2c-1))) = 0.09924618
+    c = 1.0: sup f (grid) = 2.1293998e-10, closed form f(max(L*, 2c/(2c-1))) = 2.1293998e-10
+    item-3 sampling (2404 (c,d) points, 1 <= d <= 1e60): failures 0  min D_n/d = 1.0988959

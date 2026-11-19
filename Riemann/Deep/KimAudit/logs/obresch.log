@@ -1,0 +1,3 @@
+deg Q <= delta^-2 (theorem): 800 trials, 0 non-hyperbolic
+deg Q = floor(delta^-2)+1 (control, outside): 800 trials, 173 non-hyperbolic
+sharpness P = z^2 - 2z cos 1 + 1, Q = z^d: d = 1 hyperbolic True, d = 2 hyperbolic False

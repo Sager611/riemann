@@ -1,0 +1,10 @@
+n = 1000, dps = 300, M = 950, t-range [1.4, 3.3], GL deg 7 vs 6 max rel diff of moments: 6.38e-148 (159.3 s)
+u(n) = 2.438547314, R_n = 76042.79954, D_n = 136361.14
+W_{1 R_n}: log10|Theta^(n)/gamma(n)| at w = -Rr: -51.128;
+W_{1 R_n}: vmax = 205.927, tail/max term at |w|max: 1.11e-612 (log10 max term 46.01); winding (zeros inside) = 9.92738e-302, max arg step 0.001, refinements 0 (228.3 s)
+W_{2 R_n}: log10|Theta^(n)/gamma(n)| at w = -Rr: -107.87;
+W_{2 R_n}: vmax = 291.224, tail/max term at |w|max: 2.06e-372 (log10 max term 90.51); winding (zeros inside) = -9.23693e-302, max arg step 0.00222, refinements 0 (294.6 s)
+W_{3 R_n}: log10|Theta^(n)/gamma(n)| at w = -Rr: -117.89;
+W_{3 R_n}: vmax = 356.675, tail/max term at |w|max: 3.38e-248 (log10 max term 132.9); winding (zeros inside) = -1.90309e-301, max arg step 0.267, refinements 12 (355.9 s)
+min of Theta^{(n)}/gamma(n) on [-R_n, 0] (sampled 201 pts) = 7.4486e-52
+no sign change of Theta^{(n)}(-s) for s in [R_n, 3 R_n] (step R_n/200)

@@ -1,0 +1,51 @@
+a = 0.5 | theta = 9/10, thetaU = 49/50, delta_R = 1, Delta = 17/25, K = 4, eps_eta = 1/1000, u_* = 12
+eps0 <= 0.0021760612
+PASS Q2 left bracket (n-independent): 1-e^{-2Delta} - theta/4 - theta^2/(16(1-theta)): >= 0.012089223
+PASS rho - 1 >= 1/(2 u_*) (F increasing on u >= u_*): rho >= 1.043498389
+n_* = ceil(Z(12)) = 998616377771  (Z(12) in [998616377770.90883669 +/- 1.24e-9] )
+PASS M1 right bracket Q1*u at u_*: >= 3.9999999
+PASS M3a eta_up <= eps_eta: eta_up <= 0.0000068561470
+PASS M3b 1/n + 2 eta_up <= delta_R: ok
+PASS M4 phase Phi_up < pi/2: Phi_up <= 0.00016748604
+PASS M5 E_up < 1: E_up <= 1.4108723E-8
+PASS M6 c6 = F(u_*) - G_up(u_*) > 0: F >= 1.5637456, G_up <= 0.77791741, c6 >= 0.78582827
+PASS M6 Hcp_low >= 1: Hcp_low >= 1.13607E+12
+PASS M6 c6 > 1/(2 n_*) (logratio decreasing in n): ok
+     logratio(u_*) <= -7.84740E+11
+PASS Hc concave on [U,oo): 4n/u - Wmax/(2b) bound > 0 at u_* (then increasing): >= 3.30213E+11
+PASS Phi_up <= pi/2 (cos decreasing on [0, pi/2], so cos(Phi_up) increases with u): ok
+PASS FINAL 2cos(Phi_up) - (1+eps0)e^{E_up}/(2K) - e^{logratio} > 0: >= 1.8747279
+cross-check grid (majorants are monotone by Sec. 9; values shown, not needed for the proof):
+   u=12  n=9.986e+11  M1=4.0000 eta_up=6.86e-6 Phi_up=0.000167 E_up=1.41e-8 c6=0.7858 final=1.8747
+   u=13  n=7.994e+12  M1=4.0000 eta_up=2.52e-6 Phi_up=6.16e-5 E_up=2.04e-9 c6=0.8234 final=1.8747
+   u=14  n=6.361e+13  M1=4.0000 eta_up=9.28e-7 Phi_up=2.27e-5 E_up=2.95e-10 c6=0.8691 final=1.8747
+   u=16  n=3.969e+15  M1=4.0000 eta_up=1.26e-7 Phi_up=3.07e-6 E_up=6.07e-12 c6=0.9831 final=1.8747
+   u=20  n=1.479e+19  M1=4.0000 eta_up=2.30e-9 Phi_up=5.62e-8 E_up=2.49e-15 c6=1.300 final=1.8747
+   u=30  n=1.076e+28  M1=4.0000 eta_up=1.04e-13 Phi_up=2.55e-12 E_up=7.44e-24 c6=2.719 final=1.8747
+   u=50  n=4.222e+45  M1=4.0000 eta_up=2.15e-22 Phi_up=5.26e-21 E_up=5.14e-41 c6=11.60 final=1.8747
+   u=100  n=2.270e+89  M1=4.0000 eta_up=4.15e-44 Phi_up=1.01e-42 E_up=3.75e-84 c6=482.9 final=1.8747
+   u=300  n=3.556e+263  M1=4.0000 eta_up=5.74e-131 Phi_up=1.40e-129 E_up=2.12e-257 c6=5.807e+9 final=1.8747
+4a^2 in 1.0000000000000000000  3.6/(4a^2) >= 3.5999999  stated constant 3.590
+PASS H3 constant: 3.6/(4a^2) > stated: ok
+PASS H2 (log n/2 - 1)(pi/e^2 - 9/(4n)) >= 1 at n_* (increasing in n): >= 4.4484549
+PASS H3 slack (kappa-c)n^2 - kappa n - log^2(n)/4 > 0 at n_* (increasing): ok
+   n = 1e12: R_n >= 5.3248E+21, D_n >= 5.3248E+21, c n^2/log^2 n >= 4.7021E+21, two-thirds wedge d <= 1.0481E+8
+   n = 1e13: R_n >= 4.5219E+23, D_n >= 4.5219E+23, c n^2/log^2 n >= 4.0066E+23, two-thirds wedge d <= 4.9964E+8
+   n = 1e14: R_n >= 3.8859E+25, D_n >= 3.8859E+25, c n^2/log^2 n >= 3.4546E+25, two-thirds wedge d <= 2.3771E+9
+   n = 1e15: R_n >= 3.3741E+27, D_n >= 3.3741E+27, c n^2/log^2 n >= 3.0094E+27, two-thirds wedge d <= 1.1291E+10
+   n = 1e20: R_n >= 1.8709E+37, D_n >= 1.8709E+37, c n^2/log^2 n >= 1.6927E+37, two-thirds wedge d <= 2.6772E+13
+   n = 1e30: R_n >= 8.1504E+56, D_n >= 8.1504E+56, c n^2/log^2 n >= 7.5235E+56, two-thirds wedge d <= 1.4225E+20
+   n = 1e40: R_n >= 4.5261E+76, D_n >= 4.5261E+76, c n^2/log^2 n >= 4.2319E+76, two-thirds wedge d <= 7.2670E+26
+crossover: D_n > D_all for all n >= 6.3520467E+13 (D_n increasing in n)
+two-thirds wedge at d = D_all+1 needs n >= 3.41725E+37
+ours at d = D_all+1: n >= 6.35205E+13
+containment of the two-thirds region for d > D_all: needs log(n+2) log^6(n) <= 24*kap^3 n^4, 24*kap^3 in [1110.43869600 +/- 3e-13]
+PASS ratio n^4/(log(n+2)log^6 n) increasing for n >= 8: ok
+PASS containment at n = 8 (hence all n >= 8): ok
+self-contained: for every d > 1.04710E+8 the two-thirds region at d lies inside ours (no all-n range used)
+   c = 0.51: J^{d,n} hyperbolic for every d >= 1 and every n >= max(n_*, C d^c) with C = 10.367 (sup of f at log n = 51.000)
+   c = 0.55: J^{d,n} hyperbolic for every d >= 1 and every n >= max(n_*, C d^c) with C = 1.2031 (sup of f at log n = 27.630)
+   c = 0.6: J^{d,n} hyperbolic for every d >= 1 and every n >= max(n_*, C d^c) with C = 0.099247 (sup of f at log n = 27.630)
+   c = 1: J^{d,n} hyperbolic for every d >= 1 and every n >= max(n_*, C d^c) with C = 2.1294E-10 (sup of f at log n = 27.630)
+
+ALL CHECKS PASS

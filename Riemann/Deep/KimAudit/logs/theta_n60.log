@@ -1,0 +1,7 @@
+n = 60, dps = 60, M = 200, t-range [0.2, 2.5], GL deg 7 vs 6 max rel diff of moments: 9.33e-61 (23.7 s)
+u(n) = 1.349591636, R_n = 577.1539416, D_n = 1034.7135
+W_{R_n}: vmax = 17.9424, tail/max term at |w|max: 9.31e-282 (log10 max term 1.151); winding (zeros inside) = -3.02253e-63, max arg step 0.000377, refinements 0 (27.4 s)
+min of Theta^{(n)}/gamma(n) on [-R_n, 0] (sampled 201 pts) = 0.0120501
+first sign change at s1 = 4090.648261 = 7.08762 R_n  (j_{nu,1}^2/u^2 = 2465.274); tail at |w|=s1: 4.92e-125
+W_{0.999 s1}: winding = -3.29625e-61, max arg step 0.287, refinements 1 (32.7 s)
+W_{1.001 s1} (contains the real zero s1): winding = 1.0, refinements 2 (38.1 s)

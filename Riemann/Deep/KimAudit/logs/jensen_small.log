@@ -1,0 +1,19 @@
+(a) gamma(m) = 32 m! Mt(m)/(2m)! vs 8 m! xi^(2m)(1/2)/(2m)!  [29 s]
+    m = 0: moments 3.97696622550651, xi 3.97696622550651, ratio-1 = -1.15e-41
+    m = 1: moments 0.0918877772605818, xi 0.0918877772605818, ratio-1 = 0.0
+    m = 2: moments 0.00197523228912509, xi 0.00197523228912509, ratio-1 = 0.0
+    Theta(w) = 8 xi(1/2 + sqrt w) at w = (-50.0 + 10.0j): Taylor (1.15231775481 + 0.299431448362j), xi (1.15231775481 + 0.299431448362j)
+    Theta(w) = 8 xi(1/2 + sqrt w) at w = -199.79045: Taylor 2.00761681902e-108, xi (6.56846106746e-113 + 7.92620768722e-119j)
+(b) hyperbolicity of J^{d,n} (all roots real iff d+1 sign alternations)
+    n =  3, D_n =  4.30609, d =   4: max |Im r|/|r| = 0.0, sign alternations 4 of 4 -> HYPERBOLIC  [30 s]
+    n =  3, D_n =  4.30609, d =   5: max |Im r|/|r| = 0.0, sign alternations 5 of 5 -> HYPERBOLIC  [30 s]
+    n =  3, D_n =  4.30609, d =   8: max |Im r|/|r| = 0.0, sign alternations 8 of 8 -> HYPERBOLIC  [30 s]
+    n =  5, D_n =  12.4511, d =  12: max |Im r|/|r| = 0.0, sign alternations 12 of 12 -> HYPERBOLIC  [30 s]
+    n =  5, D_n =  12.4511, d =  13: max |Im r|/|r| = 0.0, sign alternations 13 of 13 -> HYPERBOLIC  [31 s]
+    n =  5, D_n =  12.4511, d =  24: max |Im r|/|r| = 0.0, sign alternations 24 of 24 -> HYPERBOLIC  [36 s]
+    n =  8, D_n =  30.3521, d =  30: max |Im r|/|r| = 0.0, sign alternations 30 of 30 -> HYPERBOLIC  [45 s]
+    n =  8, D_n =  30.3521, d =  31: max |Im r|/|r| = 0.0, sign alternations 31 of 31 -> HYPERBOLIC  [53 s]
+    n =  8, D_n =  30.3521, d =  60: max |Im r|/|r| = 0.0, sign alternations 60 of 60 -> HYPERBOLIC  [120 s]
+    n = 10, D_n =  45.5886, d =  45: max |Im r|/|r| = 0.0, sign alternations 45 of 45 -> HYPERBOLIC  [148 s]
+    n = 10, D_n =  45.5886, d =  46: max |Im r|/|r| = 0.0, sign alternations 46 of 46 -> HYPERBOLIC  [177 s]
+    n = 10, D_n =  45.5886, d =  90: max |Im r|/|r| = 0.0, sign alternations 90 of 90 -> HYPERBOLIC  [403 s]
