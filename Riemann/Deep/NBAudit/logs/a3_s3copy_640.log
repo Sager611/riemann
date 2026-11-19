@@ -1,0 +1,28 @@
+[    1.8s] cot sums done
+[    7.9s] Gram done, epsG = 7.523e-37
+[    8.6s] lambda_min(G_640) >= 1.907349e-06 (mu 1.9073e-06, ||E||_F <= 4.173e-14, est 3.357586e-06, lmax est 5.3273e+00)
+[    8.6s] V2 n=40: d^2 in [0.01273583539133112 +/- 4.50e-18] (width 2.3e-26); d^2 log n = [0.04698096151 +/- 3.95e-12]; minus C = [0.00078954 +/- 3.58e-9]; double 0.012735835391; sum|c| 14.1
+[    8.6s] V2 n=80: d^2 in [0.01099879595104947 +/- 5.74e-19] (width 3.3e-25); d^2 log n = [0.04819701681 +/- 3.16e-12]; minus C = [0.0020056 +/- 1.13e-9]; double 0.010998795951; sum|c| 22.8
+[    8.7s] V2 n=160: d^2 in [0.009356604331758195 +/- 4.59e-19] (width 1.1e-25); d^2 log n = [0.04748639330 +/- 4.05e-12]; minus C = [0.0012950 +/- 2.47e-8]; double 0.009356604332; sum|c| 40.4
+[    8.7s] V2 n=320: d^2 in [0.007961688783869451 +/- 1.82e-19] (width 3.7e-25); d^2 log n = [0.04592557657 +/- 3.98e-12]; minus C = [-0.00026584 +/- 1.36e-9]; double 0.007961688784; sum|c| 74.8
+[    8.8s] V2 n=640: d^2 in [0.007023264380134277 +/- 3.28e-19] (width 6.1e-25); d^2 log n = [0.04538059929 +/- 3.65e-12]; minus C = [-0.00081082 +/- 1.36e-9]; double 0.007023264380; sum|c| 142
+[    8.8s] done
+       10.62 real         7.42 user         0.43 sys
+           105660416  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12126  page reclaims
+                 828  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  32  messages sent
+                  34  messages received
+                   1  signals received
+                 461  voluntary context switches
+               15885  involuntary context switches
+           452796368  instructions retired
+           224512534  cycles elapsed
+            26903080  peak memory footprint
+memcap: peak 25 MB rc=0

@@ -1,0 +1,45 @@
+[   38.6s] cot sums done; max evk 2.292300079883401e-40
+[   38.6s] part1 maxrss MB 131.8
+[   78.7s] Gram done: 498352 coprime pairs, epsG = 7.523e-37
+[   78.7s] part2 maxrss MB 188.4
+[   78.7s] max |Gf - G_double(stage1)| on the leading 640 block = 1.0547118733938987e-15
+[   82.0s] part3 maxrss MB 237.9
+[   82.0s] lambda_min est nan, lambda_max est nan, mu = 4.7684e-07, ||E||_F <= 5.487e-14, CERTIFIED lambda_min(G_N) >= 4.768371e-07 for all N <= 1280
+[   82.3s] N=10: d^2 in [0.023771865556040 +/- 4.27e-16]  d^2 logN - C = [0.0085453 +/- 2.54e-8]  width 4.16e-26 |c|max 0.939 sum|c| 4.9 resid-corr 4.16e-26
+[   82.3s] N=20: d^2 in [0.016503583071030 +/- 1.89e-16]  d^2 logN - C = [0.0032489 +/- 1.50e-9]  width 7.68e-26 |c|max 0.953 sum|c| 7.76 resid-corr 7.68e-26
+[   82.3s] N=40: d^2 in [0.012715197195337 +/- 3.89e-16]  d^2 logN - C = [0.00071341 +/- 1.76e-9]  width 1.18e-25 |c|max 0.963 sum|c| 14.1 resid-corr 1.18e-25
+[   82.3s] N=41: d^2 in [0.012326491948694 +/- 8.63e-17]  d^2 logN - C = [-0.00041610 +/- 1.76e-9]  width 9.56e-26 |c|max 0.964 sum|c| 14.3 resid-corr 9.56e-26
+[   82.3s] N=48: d^2 in [0.011873207147379 +/- 1.05e-17]  d^2 logN - C = [-0.00022785 +/- 3.58e-9]  width 8.99e-26 |c|max 0.966 sum|c| 16.1 resid-corr 8.99e-26
+[   82.3s] N=49: d^2 in [0.011872614669304 +/- 3.05e-16]  d^2 logN - C = [1.4665e-5 +/- 1.71e-10]  width 1.23e-25 |c|max 0.966 sum|c| 16 resid-corr 1.23e-25
+[   82.4s] N=80: d^2 in [0.010983481552538 +/- 4.76e-16]  d^2 logN - C = [0.0019385 +/- 9.23e-9]  width 7.33e-25 |c|max 0.968 sum|c| 22.7 resid-corr 7.33e-25
+[   82.7s] N=160: d^2 in [0.0093455910085642 +/- 4.21e-17]  d^2 logN - C = [0.0012391 +/- 1.92e-8]  width 1.69e-24 |c|max 0.973 sum|c| 40.4 resid-corr 1.69e-24
+[   83.0s] N=205: d^2 in [0.0086793734308363 +/- 1.49e-17]  d^2 logN - C = [8.9735e-6 +/- 4.73e-11]  width 2.10e-25 |c|max 0.975 sum|c| 52.3 resid-corr 2.10e-25
+[   83.0s] N=206: d^2 in [0.0086522007981348 +/- 2.51e-17]  d^2 logN - C = [-9.3563e-5 +/- 4.93e-10]  width 4.08e-25 |c|max 0.975 sum|c| 52.6 resid-corr 4.08e-25
+[   83.5s] N=256 maxrss MB 241.0
+[   84.4s] N=320: d^2 in [0.0079537374311735 +/- 4.07e-17]  d^2 logN - C = [-0.00031171 +/- 2.69e-9]  width 2.09e-25 |c|max 0.977 sum|c| 74.7 resid-corr 2.09e-25
+[   86.3s] N=411: d^2 in [0.0076744466976446 +/- 8.32e-18]  d^2 logN - C = [-2.0451e-6 +/- 1.28e-11]  width 1.38e-24 |c|max 0.977 sum|c| 95.5 resid-corr 1.38e-24
+[   88.9s] N=512 maxrss MB 242.8
+[   89.3s] N=524: d^2 in [0.0073767301615984 +/- 2.23e-17]  d^2 logN - C = [-2.0834e-6 +/- 3.21e-11]  width 3.26e-25 |c|max 0.978 sum|c| 118 resid-corr 3.26e-25
+[   91.3s] N=583: d^2 in [0.0072572423228183 +/- 2.05e-17]  d^2 logN - C = [2.4060e-5 +/- 3.64e-10]  width 4.54e-25 |c|max 0.979 sum|c| 130 resid-corr 4.54e-25
+[   91.3s] N=584: d^2 in [0.0072490880608171 +/- 2.17e-17]  d^2 logN - C = [-1.5445e-5 +/- 2.31e-10]  width 5.86e-25 |c|max 0.979 sum|c| 130 resid-corr 5.86e-25
+[   93.1s] N=640: d^2 in [0.0070170593529348 +/- 3.14e-17]  d^2 logN - C = [-0.00085091 +/- 2.24e-9]  width 4.56e-24 |c|max 0.979 sum|c| 142 resid-corr 4.56e-24
+WATCHDOG: maxrss > 280 MB, abort
+       99.51 real        34.80 user         1.39 sys
+           323551232  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               33490  page reclaims
+                1006  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 400  voluntary context switches
+              114309  involuntary context switches
+           438902019  instructions retired
+           228375617  cycles elapsed
+            26427896  peak memory footprint
+memcap: peak 241 MB rc=3

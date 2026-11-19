@@ -1,0 +1,42 @@
+Gram built 2.1s; G11=1.260661401507813 G12=0.772209255990873 G23=0.441103509279402
+series check skipped No module named 'mpmath'
+C = 0.046191417932
+N  d1=dN^2(unconstr)  d1*logN  d2(constr,2611)  d2*logN  BCF  BCF*logN
+   10 0.0237718656 0.054737  0.0238525533 0.054923  1.97257200 4.542015
+   20 0.0165035831 0.049440  0.0165382521 0.049544  2.30650651 6.909676
+   40 0.0127151972 0.046905  0.0127358354 0.046981  2.56182246 9.450254
+   50 0.0118690489 0.046432  0.0118869704 0.046502  2.63248111 10.298327
+   80 0.0109834816 0.048130  0.0109987960 0.048197  2.75637486 12.078508
+  100 0.0101887625 0.046921  0.0102019193 0.046982  2.80382906 12.912110
+  160 0.0093455910 0.047430  0.0093566043 0.047486  2.90276139 14.732019
+  200 0.0089207254 0.047265  0.0089307778 0.047318  2.94708619 15.614598
+  320 0.0079537374 0.045880  0.0079616888 0.045926  3.02340292 17.439959
+  640 0.0070170594 0.045341  0.0070232644 0.045381  3.11331820 20.116606
+V1 first N with d^2 log N < C: [ 41  42  43  44  45  46  47  48 206 207 208 209]  count below: 341 of 639
+V2 first N with d^2 log N < C: [ 41  42  43  44  45  46  47  48 206 207 208 209]  count below: 312 of 639
+eigen:
+  N=40: G lmin=6.9954e-04 lmax=3.9571e+00 cond=5.657e+03 | A lmin=6.9955e-04 cond=2.726e+03
+  N=80: G lmin=1.7827e-04 lmax=4.3592e+00 cond=2.445e+04 | A lmin=1.7827e-04 cond=1.363e+04
+  N=160: G lmin=4.7868e-05 lmax=4.7191e+00 cond=9.859e+04 | A lmin=4.7868e-05 cond=6.126e+04
+  N=320: G lmin=1.2805e-05 lmax=5.0405e+00 cond=3.936e+05 | A lmin=1.2805e-05 cond=2.658e+05
+  N=640: G lmin=3.3576e-06 lmax=5.3273e+00 cond=1.587e+06 | A lmin=3.3576e-06 cond=1.143e+06
+done 2.7s
+        3.58 real         1.40 user         0.15 sys
+            60899328  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6954  page reclaims
+                   8  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 118  voluntary context switches
+                3855  involuntary context switches
+           416634843  instructions retired
+           194005183  cycles elapsed
+            18858464  peak memory footprint
+memcap: peak 0 MB rc=0

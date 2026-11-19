@@ -120,3 +120,5 @@ s1 → s2 → s3 → s4 → s5 → s6 → s6b; they read/write .scratch/nbrate/,
 s1_double.py (double Gram, all-N d², V2, eigenvalues, ramp), s2_rig.py (rigorous V1 for all N ≤ 1280, λ_min certificate, ramp bounds), s3_v2.py (rigorous V2 at 6 n),
 s4_rate.py (J to 20 digits, optimal profile, profile families), s5_direct.py (critical-line quadrature of I_N), s6_pairs.py (pair term, 6 zeros), s6b_D0.py (D₀, 40 zeros).
 Working copies, rig_V1.npz (certified lo/hi for every N ≤ 1280, signs, ramp bounds) and STATE.md in .scratch/nbrate/ (gitignored).
+
+Erratum (nbaudit, 19 Nov 2026, [NBAudit](../NBAudit/REPORT.md)): the V1 ball widths are < 3.2·10⁻²³ (max 3.14·10⁻²³ at N = 1068; 62 N above 10⁻²³), not ≤ 6.4·10⁻²⁴ for every N (that extrapolated the 18 logged N); every sign and value stands.

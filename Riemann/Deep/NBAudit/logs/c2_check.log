@@ -1,0 +1,30 @@
+N covered: 1..1280, no gaps; max width 3.138e-23 at N=1068; #N with width >= 1e-23: 62 (first [225, 461, 530, 553, 555, 575, 587, 590], last [1272, 1273, 1276])
+width quantiles (50/90/99%): ['1.14e-24', '6.64e-24', '1.80e-23']
+sign changes (count, at N): 15 [41, 49, 206, 213, 220, 283, 287, 372, 381, 383, 400, 412, 418, 525, 584]
+tightest margins: [(2.0451127852923037e-06, 411), (2.0833679133292017e-06, 524), (2.273651971369671e-06, 372), (3.5670442008746485e-06, 523)]
+below C on [2,640]: 341 of 639; min |margin| 2.045e-06
+below C on [641,1280]: 640 of 640; min |margin| 6.802e-04
+all N in [584, NM] below C: True ; first below C: 41
+REPORT table d_N^2 rows agree with certified intervals to the printed digits: True []
+NMAX=1280 intervals intersect the NMAX=640 rerun intervals for every N <= 640: True
+max |b3 double - certified mid| over N <= 1280: 5.919e-14
+interval consistency with monotonicity (lo_{N+1} <= hi_N) for all N: True
+        1.34 real         0.63 user         0.17 sys
+            49758208  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6542  page reclaims
+                 137  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  21  messages received
+                   1  signals received
+                 202  voluntary context switches
+                1686  involuntary context switches
+           434376621  instructions retired
+           224257848  cycles elapsed
+            21824016  peak memory footprint
+memcap: peak 0 MB rc=0

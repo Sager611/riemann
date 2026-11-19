@@ -1,0 +1,28 @@
+[0.1s] V1 done; min pivot 0.011111
+[0.1s] V2 done
+V1 mpmath value inside certified [lo,hi]: 12 of 12; max |v - mid|/halfwidth = 1.0
+max |G_mp - G_double(s1 copy)| over N <= NM: 1.657574106331892e-16
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/NBAudit/code/b1_vas_mp.py", line 62, in <module>
+    print('V1 sign changes of d^2 logN - C on [2,NM]:', ch, ' first below:', next(N for N in range(2, NM + 1) if sg[N] < 0),
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+        1.59 real         0.40 user         0.18 sys
+            44040192  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                5764  page reclaims
+                 148  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  21  messages received
+                   1  signals received
+                 278  voluntary context switches
+                1598  involuntary context switches
+           436185033  instructions retired
+           236722942  cycles elapsed
+            21266984  peak memory footprint
+memcap: peak 0 MB rc=1

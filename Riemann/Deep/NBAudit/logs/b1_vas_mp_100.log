@@ -1,0 +1,34 @@
+[7.6s] V1 done; min pivot 0.00029041
+[9.2s] V2 done
+V1 mpmath value inside certified [lo,hi]: 100 of 100; max |v - mid|/halfwidth = 1.0
+min (hi - v)/(hi - lo): 1.513e-6  min (v - lo)/(hi - lo): 0.99908  max (hi - lo): 8.6274e-25
+max |G_mp - G_double(s1 copy)| over N <= NM: 6.322818572536361e-16
+V1 sign changes of d^2 logN - C on [2,NM]: 2  first below: 41  min |margin|: 1.4665e-5
+N=10: V1 0.02377186555603957374966975  V2 0.023852553318882999416  V1 logN - C 0.0085453253
+N=20: V1 0.01650358307103018838973257  V2 0.016538252109392515609  V1 logN - C 0.0032488985
+N=40: V1 0.01271519719533661200025797  V2 0.012735835391331124493  V1 logN - C 0.00071341176
+N=41: V1 0.0123264919486939137869701  V2 0.012345768324610605738  V1 logN - C -0.00041610175
+N=48: V1 0.01187320714737898961455481  V2 0.011891136462864598911  V1 logN - C -0.00022784642
+N=49: V1 0.01187261466930430438833033  V2 0.01189054411434089345  V1 logN - C 1.4664829e-5
+N=80: V1 0.01098348155253752501530264  V2 0.010998795951049470574  V1 logN - C 0.0019384908
+N=100: V1 0.01018876250147799024868286  V2 0.010201919284469588012  V1 logN - C 0.00072956737
+[9.3s] done
+       10.58 real         5.71 user         0.21 sys
+            46399488  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6122  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   2  voluntary context switches
+               12871  involuntary context switches
+           420840098  instructions retired
+           184546115  cycles elapsed
+            19743224  peak memory footprint
+memcap: peak 19 MB rc=0

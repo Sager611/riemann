@@ -1,0 +1,33 @@
+[0.2s] Gram built
+V1 double sign runs on [2,NM]: [(1, 2, 40), (-1, 41, 48), (1, 49, 205), (-1, 206, 212), (1, 213, 219), (-1, 220, 282), (1, 283, 286), (-1, 287, 300)]  sign changes: 7
+min |d^2 logN - C| on [2,640] = 3.596e-06 at N = 282
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/NBAudit/code/b3_dbl.py", line 37, in <module>
+    sl = slice(lo_ - 2, hi_ - 1); k0 = int(np.argmin(marg[sl])) + lo_
+                                           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/4zNHopV6VlZAdWvT6_ZU9/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 1452, in argmin
+    return _wrapfunc(a, 'argmin', axis=axis, out=out, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/4zNHopV6VlZAdWvT6_ZU9/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 54, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+ValueError: attempt to get argmin of an empty sequence
+        8.39 real         1.61 user         0.42 sys
+            67928064  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8719  page reclaims
+                  49  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  21  messages received
+                   1  signals received
+                 368  voluntary context switches
+                3549  involuntary context switches
+           449159084  instructions retired
+           218689868  cycles elapsed
+            28246544  peak memory footprint
+memcap: peak 27 MB rc=1
