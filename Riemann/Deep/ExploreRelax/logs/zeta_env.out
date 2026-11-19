@@ -1,0 +1,20 @@
+gamma range 1420.4165263237512 1871.416043098407 unfolded span 399.4511342792298 min gap 0.22116938371436845 max gap 2.1767903780096276
+memcap: peak 15 MB rc=0
+      279.66 real       221.35 user       143.55 sys
+            34537472  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              263827  page reclaims
+                 576  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 227  signals received
+                1022  voluntary context switches
+              745537  involuntary context switches
+           329099582  instructions retired
+           414362426  cycles elapsed
+             2326864  peak memory footprint

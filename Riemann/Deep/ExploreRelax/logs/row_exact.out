@@ -1,0 +1,66 @@
+rho=2.139978 s=0.467295 L=26.891756 y0=0.746691712213
+formula t_row=0.095731403  de Bruijn y0^2/2=0.278774257
+(A) N=2 row, trig flow: 0.095731403
+(B) N=4 hit (trig) 0.073177731; max Im at t=0.02: ODE 0.5481656508 trig 0.5481656508
+(C) lattice  k=  1: hit 0.074832
+(C) lattice  k=  2: hit 0.081686
+(C) lattice  k=  4: hit 0.091564
+(C) lattice  k=  8: hit 0.094956
+(C) lattice  k= 16: hit 0.095622
+(C) lattice  k= 32: hit 0.095717
+(C) lattice  k= 64: hit 0.095730
+(C) lattice  k=100: hit 0.095731
+(C) lattice  k=150: hit 0.095732
+(C) lattice  k=200: hit 0.095732
+(C) cue1     k=  1: hit 0.076551
+(C) cue1     k=  2: hit 0.085075
+(C) cue1     k=  4: hit 0.095111
+(C) cue1     k=  8: hit 0.101237
+(C) cue1     k= 16: hit 0.104068
+(C) cue1     k= 32: hit 0.104226
+(C) cue1     k= 64: hit 0.104243
+(C) cue1     k=100: hit 0.104245
+(C) cue1     k=150: hit 0.104986
+(C) cue1     k=200: hit 0.104988
+(C) cue2     k=  1: hit 0.070818
+(C) cue2     k=  2: hit 0.077436
+(C) cue2     k=  4: hit 0.086584
+(C) cue2     k=  8: hit 0.091131
+(C) cue2     k= 16: hit 0.097067
+(C) cue2     k= 32: hit 0.099672
+(C) cue2     k= 64: hit 0.101181
+(C) cue2     k=100: hit 0.101346
+(C) cue2     k=150: hit 0.101373
+(C) cue2     k=200: hit 0.104933
+(C) zeta     k=  1: hit 0.077444
+(C) zeta     k=  2: hit 0.083811
+(C) zeta     k=  4: hit 0.092421
+(C) zeta     k=  8: hit 0.095823
+(C) zeta     k= 16: hit 0.096580
+(C) zeta     k= 32: hit 0.097018
+(C) zeta     k= 64: hit 0.097206
+(C) zeta     k=100: hit 0.097342
+(C) zeta     k=150: hit 0.097392
+(C) zeta     k=200: hit 0.097508
+(D) cue1 k=1: y_max(t) at [0, 0.0125, 0.025, 0.05, 0.075, 0.1]: 0.74669 0.62781 0.51236 0.29540 0.05649 0.00000
+(D) cue1 k=200: y_max(t) at [0, 0.0125, 0.025, 0.05, 0.075, 0.1]: 0.74669 0.67150 0.59629 0.44540 0.29088 0.10294
+done 31.2s
+memcap: peak 44 MB rc=0
+       35.89 real        27.76 user        21.28 sys
+            60751872  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               43658  page reclaims
+                 312  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  30  signals received
+                 311  voluntary context switches
+               79531  involuntary context switches
+            94981021  instructions retired
+            88815837  cycles elapsed
+             2261328  peak memory footprint

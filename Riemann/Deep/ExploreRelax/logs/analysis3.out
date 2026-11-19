@@ -1,0 +1,30 @@
+seed None lc None: hit 0.095732; min over (t,h) of pen/deficit = 3.35 at t=0.0838, h=0.477
+seed 1 lc 8: hit 0.099287; min over (t,h) of pen/deficit = 1.56 at t=0.0869, h=0.456
+seed 2 lc 8: hit 0.100225; min over (t,h) of pen/deficit = 1.75 at t=0.0877, h=0.450
+seed 3 lc 8: hit 0.099886; min over (t,h) of pen/deficit = 1.57 at t=0.0874, h=0.452
+seed 1 lc 12: hit 0.101807; min over (t,h) of pen/deficit = 1.56 at t=0.0891, h=0.441
+seed 2 lc 12: hit 0.099493; min over (t,h) of pen/deficit = 1.66 at t=0.0871, h=0.455
+seed 3 lc 12: hit 0.100594; min over (t,h) of pen/deficit = 1.36 at t=0.0880, h=0.548
+seed 1 lc 16: hit 0.101419; min over (t,h) of pen/deficit = 1.28 at t=0.0380, h=3.284
+seed 2 lc 16: hit 0.102754; min over (t,h) of pen/deficit = 1.02 at t=0.0899, h=2.936
+seed 1 lc 24: hit 0.101554; min over (t,h) of pen/deficit = 0.80 at t=0.0889, h=6.000
+done
+memcap: peak 44 MB rc=0
+      177.93 real       118.06 user        81.54 sys
+            61620224  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              150810  page reclaims
+                1039  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 134  signals received
+                 799  voluntary context switches
+              483861  involuntary context switches
+           206258074  instructions retired
+           255542711  cycles elapsed
+             2277712  peak memory footprint

@@ -1,0 +1,16 @@
+explore51 novelty scan, 2026-11-19 ~19:10-19:20 UTC (python3 .scratch/axq.py, .scratch/lst.py; Zenodo API)
+arXiv API (sorted by date, SEEN = already in our files):
+ abs:"de Bruijn-Newman" AND abs:upper -> SEEN 2610.27343, 2609.37164, 1904.12438
+ abs:"de Bruijn-Newman" AND (limit|barrier|heuristic) -> SEEN 2611.06245, 2610.32694, 2609.37164
+ abs:"de Bruijn-Newman" AND (dynamics|Dyson|Calogero) -> SEEN 2609.37164; NEW 1801.05914 (Rodgers-Tao, Lambda >= 0; classic)
+ abs:"heat flow" AND zeros AND ("Riemann xi"|"de Bruijn") -> SEEN 2610.27343, 1904.12438
+ abs:"Dyson Brownian motion" AND abs:zeta -> SEEN 2511.18275
+ abs:"de Bruijn-Newman" AND abs:trigonometric -> none
+ abs:"heat flow" AND abs:"trigonometric polynomial" AND abs:zeros -> NEW 2203.05533 (Kabluchko: unitary Hermite polynomials, backward heat flow from (sin th/2)^n; global zero law; no zeta, no ceiling)
+ abs:"de Bruijn-Newman" AND "Riemann hypothesis" AND verification -> SEEN 2610.27343, 1904.12438
+ abs:"de Bruijn-Newman" AND abs:local -> SEEN 2610.32694, 2602.20313; NEW 1801.05914
+ id:2005.13434 -> "Quantum Computation of Eigenvalues within Target Intervals" (the brief's Dobner ID is wrong)
+Monthly listings 2026-10/11, cats NT CA CV SP PR FA CO, titles ~ Bruijn|Newman|heat flow|heat equation: dBN hits 2611.06245, 2610.12803, 2610.18214, 2610.27343 (all seen); others are stochastic heat equations.
+Zenodo "de Bruijn-Newman" (167): newest read: 23842668 Kastoris (force propagation, re-proves Rodgers-Tao's local-equilibrium input; Lambda >= 0), 24318337 Moki & Julio (degree-2 L-functions, Lambda <= 0.449938), 24326288 (Calogero-Moser 'detection ontology'), 24301270, 24344604 (expositions). None states a configuration ceiling or the log cosh formula.
+Polymath 15 TeX (1904.12438, debruijn.tex): Theorem Zero (x >= exp(C/t) => real; C 'sufficiently large absolute'), Remark on gas/liquid/solid states; no worst-case configuration, no explicit C.
+Repo: rg 'periodic row|row of pairs|log cosh|ceiling' over Riemann/ NOGO.md TREE.md: only DBNAudit's main-mass ceiling 1/y and DBN6/HP141 'headline ceiling' (rounding), no configuration ceiling.

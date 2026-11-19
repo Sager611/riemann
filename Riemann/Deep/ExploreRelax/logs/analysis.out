@@ -1,0 +1,63 @@
+rho=2.139977977 pi*rho=L/4=6.722939092 L=26.891756369
+(a) t_row(L, y0) = (16/L^2) log cosh(L y0/4) at T0 = X/2:
+   classical beta<1   y0=1.000000000000  t_row=0.133408677  4y0/L-16log2/L^2=0.133408644
+   7/8                y0=0.750000000000  t_row=0.096223451  4y0/L-16log2/L^2=0.096222527
+   b0=0.87338196661   y0=0.746763933226  t_row=0.095742145  4y0/L-16log2/L^2=0.095741180
+   theta141           y0=0.746691712213  t_row=0.095731403  4y0/L-16log2/L^2=0.095730438
+   theta141 ceiling = 0.09: needs L = log(T0/2pi) = 28.926, T0 = 10^13.36
+   theta141 ceiling = 0.08: needs L = log(T0/2pi) = 33.153, T0 = 10^15.20
+   theta141 ceiling = 0.05: needs L = log(T0/2pi) = 55.757, T0 = 10^25.01
+   theta141 ceiling = 0.02: needs L = log(T0/2pi) = 145.528, T0 = 10^64.00
+   theta141 ceiling = 0.01: needs L = log(T0/2pi) = 294.916, T0 = 10^128.88
+(b) q(t): Raymond (DBNB2 path, b0) | periodic row | irregular rows | single pair
+   t        q_chain     q_row      cue1row    cue2row    zetarow    cue1pair   latpair
+   0.00000  0.5576564  0.5576564  0.5576564  0.5576564  0.5576564  0.5576564  0.5576564
+   0.01250  0.4525084  0.4391893  0.4510121  0.4508266  0.4413065  0.3942280  0.3900521
+   0.02500  0.3588361  0.3348182  0.3556486  0.3553681  0.3386276  0.2625779  0.2562007
+   0.05000  0.2046953  0.1681203  0.1984431  0.1981631  0.1738597  0.0872923  0.0809047
+   0.07500  0.0919651  0.0559267  0.0846570  0.0844707  0.0613453  0.0032053  0.0000000
+   0.10000  0.0164520  0.0000000  0.0106225  0.0105002  0.0000000  0.0000000  0.0000000
+   0.10750  0.0001199  0.0000000  0.0000000  0.0000000  0.0000000  0.0000000  0.0000000
+   hit times: periodic row 0.095742, cue1 row 0.104999, cue2 row 0.104944, zeta row 0.097519, cue1 one pair 0.076558, lattice one pair 0.074838
+   chain endpoint (DBNB2): 0.107559925317
+(c) band: chain rate (max in band, 7/8 run) vs periodic-row rate at the band's upper q (its minimum)
+   q 0.5625-0.5: chain 12.56  row 14.37  ratio 0.874
+   q 0.5-0.4: chain 13.22  row 15.02  ratio 0.880
+   q 0.4-0.3: chain 14.16  row 16.27  ratio 0.870
+   q 0.3-0.2: chain 15.42  row 17.91  ratio 0.861
+   q 0.2-0.1: chain 17.38  row 20.21  ratio 0.860
+   q 0.1-0.05: chain 19.40  row 23.75  ratio 0.817
+   q 0.05-0.01: chain 21.81  row 26.39  ratio 0.826
+   q 0.01-0.0001: chain 22.68  row 29.26  ratio 0.775
+(d) single probe at height h (t=0, rows at y0): relative deficit of min_x J vs zeta's penalty/mean
+   h      sigma   pen/mean   periodic row   cue1 row   zeta row   cue1 real
+   1.05  1.025  2.932e+00   1.152e-01      2.883e-01  2.351e-01  1.522e-01
+   1.10  1.050  1.445e+00   8.512e-02      2.586e-01  2.031e-01  1.458e-01
+   1.20  1.100  7.022e-01   4.535e-02      2.107e-01  1.512e-01  1.361e-01
+   1.36  1.180  3.726e-01   1.594e-02      1.595e-01  9.509e-02  1.237e-01
+   1.50  1.250  2.578e-01   6.281e-03      1.318e-01  6.475e-02  1.151e-01
+   2.00  1.500  1.119e-01   2.192e-04      9.296e-02  1.972e-02  9.290e-02
+   2.50  1.750  6.491e-02   7.604e-06      7.785e-02  7.637e-03  7.731e-02
+   3.00  2.000  4.239e-02   2.637e-07      6.605e-02  3.507e-03  6.537e-02
+   4.00  2.500  2.147e-02   3.173e-10      4.897e-02  1.057e-03  4.841e-02
+   6.00  3.500  7.467e-03   4.441e-16      2.951e-02  2.506e-04  2.919e-02
+done
+memcap: peak 44 MB rc=0
+       80.48 real        51.34 user        35.36 sys
+            63930368  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               69920  page reclaims
+                 264  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  57  signals received
+                 293  voluntary context switches
+              210851  involuntary context switches
+           122757666  instructions retired
+           136480304  cycles elapsed
+             2228560  peak memory footprint

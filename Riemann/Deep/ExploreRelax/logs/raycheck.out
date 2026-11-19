@@ -1,0 +1,27 @@
+validation h=1.36 v=0.0: max |G - closed form| = 9.46e-11 (mean 6.7229)
+validation h=2.5 v=0.7: max |G - closed form| = 1.70e-11 (mean 6.7229)
+validation h=6.0 v=1.95: max |G - closed form| = 1.92e-12 (mean 6.7229)
+validation jets m=0: max |2G/p - jets| = 1.13e-03
+periodic row                 hit 0.095732  min_(x,t) J-S = +0.8122 (t, sign, x, S = (0.0025, 1, 180.35, 7.6661))  at top zero: +0.8123
+cue1 row lc=8                hit 0.099287  min_(x,t) J-S = +0.3714 (t, sign, x, S = (0.0025, -1, 166.11, 7.6661))  at top zero: +0.4533
+cue1 row lc=12               hit 0.101807  min_(x,t) J-S = +0.2487 (t, sign, x, S = (0.0025, -1, 160.63, 7.6661))  at top zero: +0.3025
+cue2 row lc=16               hit 0.102754  min_(x,t) J-S = -0.0505 (t, sign, x, S = (0.0975, 1, 28.84, 16.6832))  at top zero: +0.1851
+memcap: peak 45 MB KILLED TIME>1700s rc=137
+     1710.63 real        83.90 user       892.79 sys
+            45219840  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1619755  page reclaims
+                3963  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  20  messages sent
+                  21  messages received
+                1374  signals received
+                6113  voluntary context switches
+             1735559  involuntary context switches
+          1759233157  instructions retired
+          2393556030  cycles elapsed
+             2359632  peak memory footprint

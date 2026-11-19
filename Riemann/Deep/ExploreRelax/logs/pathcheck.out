@@ -1,0 +1,23 @@
+cue1 lc=8: hit 0.099297; q(t) 0.55766 0.44361 0.34268 0.17976 0.06685 0.00000 0.00000; min (q_chain - q) = +0.00000
+cue1 lc=12: hit 0.101818; q(t) 0.55766 0.44688 0.34844 0.18809 0.07472 0.00372 0.00000; min (q_chain - q) = +0.00000
+cue2 lc=16: hit 0.102765; q(t) 0.55766 0.44819 0.35071 0.19128 0.07770 0.00573 0.00000; min (q_chain - q) = +0.00000
+chain q(t) 0.55766 0.45251 0.35884 0.20470 0.09197 0.01645 0.00012 at t = 0 0.0125 0.025 0.05 0.075 0.1 0.1075
+memcap: peak 40 MB rc=0
+       41.48 real        31.86 user        22.72 sys
+            57507840  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               43614  page reclaims
+                 606  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  34  signals received
+                 363  voluntary context switches
+              125229  involuntary context switches
+            94581189  instructions retired
+            85865184  cycles elapsed
+             2261328  peak memory footprint
