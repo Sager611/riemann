@@ -1,0 +1,3 @@
+K=L rows with PARI least < own witness: 25, of which the PARI prime divides poldisc(f): 25
+K=quad rows with PARI least < own witness: 2, of which the PARI prime divides poldisc(f): 2
+memcap: peak 0 MB rc=0

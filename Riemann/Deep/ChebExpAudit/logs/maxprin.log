@@ -1,0 +1,7 @@
+CTu        0  h=6.080 s*=0.502 s0=1.4803 log x=18.33  boundary max 4.25828  interior max 3.24535 (beta=0.9453)  ratio 0.762127 OK
+CTu        1  h=7.833 s*=0.643 s0=1.3427 log x=28.15  boundary max 8.66519  interior max 5.5345 (beta=0.9453)  ratio 0.638705 OK
+Lu         0  h=3.693 s*=-0.079 s0=1.7184 log x=11.19  boundary max 0.942036  interior max 0.809719 (beta=0.8547)  ratio 0.859542 OK
+Lu        19  h=7.896 s*=0.391 s0=1.2613 log x=26.56  boundary max 3.54355  interior max 2.40461 (beta=0.8547)  ratio 0.678587 OK
+CT10000    0  h=41.393 s*=0.872 s0=1.0390 log x=219.07  boundary max 87.545  interior max 1.22718 (beta=0.9453)  ratio 0.014018 OK
+L10000     0  h=16.050 s*=0.544 s0=1.1024 log x=64.31  boundary max 7.17246  interior max 2.51198 (beta=0.8547)  ratio 0.350226 OK
+memcap: peak 0 MB rc=0

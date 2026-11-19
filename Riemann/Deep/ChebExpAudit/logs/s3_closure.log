@@ -1,0 +1,2 @@
+S3 cubic fields |d| <= 3000: 508; classes: 1524; violations of A(0.484) or B(0.62): 0; max N^(1/32)/log 3D_L = 0.1081; max N^(d2)/log 3D_L = 0.1595
+memcap: peak 0 MB rc=0

@@ -1,0 +1,4 @@
+kernels 405 ; g(s0) range [0.8074, 1.1774] (at s0 = 1.7184 and 1.0376)
+max |closed-form Phi(1) / cert printed P1 - 1| = 4.63e-05 (cert prints 5 digits)
+max |quadrature Phi(1) / closed form - 1| = 0.00e+00
+memcap: peak 14 MB rc=0

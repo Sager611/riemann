@@ -1,0 +1,11 @@
+(1) quadratic fields 3<=|d|<=1e5: 60786 fields, 182358 cases; violations: []
+    max N^(1/32)/log 3D = 0.4836540909 at quad d=-3 split (D=3, N=7)
+    max N^(d2)/log 3D   = 0.5822777613 at quad d=-3 split (D=3, N=7)
+    exact sharpness constants: 7^(1/32)/log 9 = 0.483654090891  7^d2/log 9 = 0.58227776133  3^d2/log 9 = 0.523043  11^d2/log 15 = 0.500268
+    (0.484 log 9)^32 = 7.1619934  (0.49 log 9)^32 = 10.623238  (0.62 log 9)^(1/d2) = 11.492194  (0.73 log 9)^7.8978 = 41.745273
+    top-5 A constants: [('0.483654', -3, 'split', 7), ('0.471016', -3, 'K=L', 3), ('0.465085', -3, 'inert', 2), ('0.423187', -4, 'split', 5), ('0.416486', -4, 'inert', 3)]
+(2) Q(zeta_q)/Q, 3<=q<=600, q != 2 mod 4: 91266 classes; violations: []; max A const 0.483654 at Q(zeta_3) worst class; max B const 0.582278 at Q(zeta_3) worst class
+(3) sum phi(q), 3<=q<=2000: 1216586; excluding q = 2 mod 4: 1013926   (page: 1,013,926)
+(4) max theta(p)/p over p <= 3e6: 0.9996307971 at p = 2840281  (RS62 Thm 9: theta(x) < 1.01624 x)
+(5) C2 rows of direct_range.txt: 471 rows, 144 discriminants; my recomputation equal as multisets: False
+    first diffs: [(3, [('K=L', 3), ('K=Q elt[1,', 7), ('K=Q elt[2,', 2)], [('K=L', 3), ('K=Q elt[1, 2]', 7), ('K=Q elt[2, 1]', 2)]), (4, [('K=L', 2), ('K=Q elt[1,', 5), ('K=Q elt[2,', 3)], [('K=L', 2), ('K=Q elt[1, 2]', 5), ('K=Q elt[2, 1]', 3)]), (5, [('K=L', 5), ('K=Q elt[1,', 11), ('K=Q elt[2,', 2)], [('K=L', 5), ('K=Q elt[1, 2]', 11), ('K=Q elt[2, 1]', 2)]), (7, [('K=L', 2), ('K=Q elt[1,', 2), ('K=Q elt[2,', 3)], [('K=L', 2), ('K=Q elt[1, 2]', 2), ('K=Q elt[2, 1]', 3)])]

@@ -1,0 +1,13 @@
+CTu c= 0.484 L0= 2.5649 first a= 2.5649 n= 3 last= tail tailstart= 6.652255690962201 strict overlaps= 0 issues= [] h range 6.08 7.833 s0 range 1.3423 1.4803
+Lu c= 0.62 L0= 5.5529 first a= 5.5529 n= 21 last= tail tailstart= 64.89382021475213 strict overlaps= 0 issues= [] h range 3.693 7.917 s0 range 1.2613 1.7184
+CT10 c= 0.29 L0= 10.0 first a= 10.0 n= 2 last= tail tailstart= 10.356647506114022 strict overlaps= 0 issues= [] h range 8.422 9.173 s0 range 1.3072 1.3308
+CT100 c= 0.151 L0= 100.0 first a= 100.0 n= 6 last= tail tailstart= 115.53038144895089 strict overlaps= 0 issues= [] h range 17.149 18.72 s0 range 1.1118 1.1208
+CT1000 c= 0.108 L0= 1000.0 first a= 1000.0 n= 13 last= tail tailstart= 1261.6024066231262 strict overlaps= 0 issues= [] h range 28.191 30.621 s0 range 1.0573 1.0623
+CT10000 c= 0.094 L0= 10000.0 first a= 10000.0 n= 20 last= tail tailstart= 13122.08984094392 strict overlaps= 0 issues= [] h range 40.084 42.79 s0 range 1.0376 1.0403
+L10 c= 0.595 L0= 10.0 first a= 10.0 n= 11 last= tail tailstart= 61.41741573389687 strict overlaps= 0 issues= [] h range 4.932 8.663 s0 range 1.2408 1.5099
+L100 c= 0.426 L0= 100.0 first a= 100.0 n= 20 last= tail tailstart= 243.24736494840556 strict overlaps= 0 issues= [] h range 8.493 10.901 s0 range 1.1901 1.2567
+L1000 c= 0.366 L0= 1000.0 first a= 1000.0 n= 59 last= tail tailstart= 5072.999786996686 strict overlaps= 0 issues= [] h range 12.135 15.093 s0 range 1.1107 1.1476
+L10000 c= 0.344 L0= 10000.0 first a= 10000.0 n= 250 last= tail tailstart= 118876.65488861265 strict overlaps= 0 issues= [] h range 16.033 19.463 s0 range 1.0779 1.1024
+total kernels 405
+log13=2.564949357462 log258=5.552959584922
+memcap: peak 0 MB rc=0

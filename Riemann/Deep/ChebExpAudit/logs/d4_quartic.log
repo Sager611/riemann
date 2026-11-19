@@ -1,0 +1,2 @@
+D4 quartic fields |d| <= 10^4: 413; (L, K, C) cases: 1239; violations of A(0.484) or B(0.62): 0; max N^(1/32)/log 3D = 0.1813; max N^(d2)/log 3D = 0.2183
+memcap: peak 0 MB rc=0
