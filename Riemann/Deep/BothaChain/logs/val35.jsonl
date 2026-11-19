@@ -1,0 +1,3 @@
+{"scan35_equal_ccmfmm": true, "selo": 664, "sele": 1531}
+{"c": "35", "bits": 832, "U": "[3.35474138011541e-177 +/- 1.10e-192]", "U_ccmfmm": "[3.35474138011541e-177 +/- 1.10e-192]", "g_sec": 81.2, "g_rss": 92, "odd": {"rigorous": true, "nu_cert": "8.972773e-176", "kappa_eta": 2.235e-211, "n": 5499, "nU": 4059, "rss_mb": [78, 17], "sec": [34.3, 330.5]}, "sec": 446.0}
+memcap: peak 90 MB rc=0
