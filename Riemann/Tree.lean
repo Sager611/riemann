@@ -478,3 +478,4 @@ import Riemann.Tree.R478
 import Riemann.Tree.R479
 import Riemann.Tree.R480
 import Riemann.Tree.R481
+import Riemann.Tree.R482
