@@ -1,0 +1,9 @@
+identity: max |e^{ic(r2-r1)/2} U_L conj U_R - 4 sin sin| over 2000 random points = 1.8719e-50
+gam = 24  2c+2 = 22.885307961064946  D = 80  IMCHECK = True
+array a : max |Gam_ij|/majorant by band i+j in [20k,20k+20): 0:1.16e-07 1:2.15e-23 2:2.21e-37 3:4.24e-51 4:1.08e-64 5:2.30e-78 6:5.74e-92 7:1.75e-105
+array b : max |Gam_ij|/majorant by band i+j in [20k,20k+20): 0:1.16e-07 1:5.57e-23 2:1.14e-36 3:3.51e-50 4:1.23e-63 5:3.31e-77 6:1.01e-90 7:3.61e-104
+array c : max |Gam_ij|/majorant by band i+j in [20k,20k+20): 0:1.34e-07 1:1.89e-22 2:6.09e-36 3:2.34e-49 4:9.94e-63 5:3.06e-76 6:1.04e-89 7:4.17e-103
+       43.41 real        39.03 user         0.62 sys
+           221986816  maximum resident set size
+            15598096  peak memory footprint
+memcap: peak 178 MB rc=0

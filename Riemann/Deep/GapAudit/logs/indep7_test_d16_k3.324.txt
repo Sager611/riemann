@@ -1,0 +1,10 @@
+r=2 theta=0.2499 v=1.367258 kappa=3.324 mu/c=0.5 n=24: c0 = 4.645033520729e-13 +4.89e-25i, c1 = 9.323447997583e-14 +3.44e-26i, h1 = c0/(k^2 c1) = 0.4509104178
+      166.62 real       135.20 user         1.90 sys
+           174718976  maximum resident set size
+memcap: peak 155 MB rc=0
+r=2 theta=0.2499 v=1.367258 kappa=3.324 mu/c=0.5 n=28: c0 = 4.645033520972e-13 -2.68e-25i, c1 = 9.323447991485e-14 -8.30e-27i, h1 = c0/(k^2 c1) = 0.4509104181
+      314.40 real       284.22 user         3.25 sys
+           297680896  maximum resident set size
+memcap: peak 272 MB rc=0
+(n=28 run: /usr/bin/time max RSS 297.7 MB, memcap top-mem peak 272 MB < 300; no larger runs made)
+certmid Arb on the same JSON (logs/certmid_test_d16_k3.324.txt): h1 = 0.450910418099 +/- 1.91e-13

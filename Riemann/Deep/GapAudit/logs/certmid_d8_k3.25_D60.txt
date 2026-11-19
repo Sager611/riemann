@@ -1,0 +1,13 @@
+r=2 theta=2499/10000 deg P=8 kappa=13/4 v=167653/125000 D=60 prec=315
+  Q0 = [6.45255614028e-21 +/- 3.68e-33]
+  Q1 = [6.01507766919e-22 +/- 3.67e-34]
+  h1 = [1.01560266154 +/- 4.50e-13]
+  H = Q0 - k^2 Q1 = [9.9130352e-23 +/- 1.94e-31]
+  tail eps = [2.82e-17 +/- 9.90e-21] ; float h1 = 1.01560266
+  CERTIFIED Lambda > 13/4: True   (21s, peak 86 MB)
+  P(w) = sum_n (-1)^n A_n psi_n(w), A_n (exact decimals) = ['1', '-2799073051769629/1000000000000000', '1012335313032559/250000000000000', '-4546208005226769/10
+  midpoint mollifier (twisted kernel); Arb Im parts of the twisted arrays contain 0: True
+       21.44 real        16.20 user         0.36 sys
+            89899008  maximum resident set size
+            14762488  peak memory footprint
+memcap: peak 71 MB rc=0

@@ -1,0 +1,6 @@
+r=2 theta=0.2499 v=1.341224 kappa=3.25 mu/c=0.5 n=20: c0 = 1.087769101322e-13 +1.28e-28i, c1 = 1.014019171373e-14 +1.47e-30i, h1 = c0/(k^2 c1) = 1.0156026615
+       82.98 real        49.72 user         0.92 sys
+           101695488  maximum resident set size
+memcap: peak 85 MB rc=0
+(earlier, same args) n=12: h1 = 1.0177219310 ; n=16: h1 = 1.0156026606 (peak 45 MB) ; GapBar optmid h1_float = 1.015602661541144
+BM check: indep7.py 1 1/4 1.26 3.18 0 mono:1,-5.8,6.4 12 -> c0 = 1.294148503189e-03 (Im -2e-20), c1 = 1.276982924612e-04, h1 = 1.0021778143 (BM: > 1.0002; GapCeil 1.00217781433)

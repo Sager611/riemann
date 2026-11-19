@@ -1,0 +1,12 @@
+r=2 theta=2499/10000 deg P=16 kappa=831/250 v=683629/500000 D=80 prec=366
+  Q0 = [2.75539538042e-20 +/- 3.86e-32]
+  Q1 = [5.53059206379e-21 +/- 8.70e-34]
+  h1 = [0.450910418099 +/- 1.91e-13]
+  H = Q0 - k^2 Q1 = [-3.3553425e-20 +/- 1.75e-28]
+  tail eps = [5.45e-38 +/- 6.80e-42] ; float h1 = 0.00000000
+  CERTIFIED Lambda > 831/250: False   (54s, peak 209 MB)
+  midpoint mollifier (twisted kernel); Arb Im parts of the twisted arrays contain 0: True
+       54.12 real        43.37 user         0.74 sys
+           218759168  maximum resident set size
+            14828048  peak memory footprint
+memcap: peak 174 MB rc=0
