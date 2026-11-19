@@ -1,0 +1,8 @@
+pbpaudit footprints (memcap = top MEM sampled every ~2-3 s; time -l = max RSS), 14 Nov 2026, one process at a time, single-threaded
+checks1.py   16.6 s  memcap 14 MB  max RSS 34.7 MB
+checks2.py    0.3 s  (too short to sample)
+cert.py copy 369 s   memcap 186 MB max RSS 200.6 MB
+cellcheck 128 bits  129.5 s  memcap 76 MB
+cellcheck 256 bits   95.4 s  memcap 96 MB
+indep.py (17 + 3 cells)  ~170 s + 29.5 s  memcap 31 MB / 28 MB
+rows.py, tails at 256 bits  < 15 s  (too short to sample)

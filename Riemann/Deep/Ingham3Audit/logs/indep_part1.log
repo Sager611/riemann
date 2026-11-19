@@ -1,0 +1,17 @@
+k7first    k=7 [32.236191, 32.486191]  R_dir(cell)=0.000208572  R_dir(point La)=0.000199798  Spart=0.000203 PP=1.85e-06  8.7s
+k7end1     k=7 [179.986191, 180.000000]  R_dir(cell)=0.00422426  R_dir(point La)=0.00420763  Spart=9.28e-26 PP=7.43e-38  7.6s
+k7start2   k=7 [180.000000, 180.020000]  R_dir(cell)=0.00424079  R_dir(point La)=0.00421663  Spart=9.25e-26 PP=7.38e-38  8.4s
+k7last     k=7 [239.980000, 240.000000]  R_dir(cell)=0.0202872  R_dir(point La)=0.020261  Spart=1.5e-34 PP=9.29e-51  7.9s
+k7worst    k=7 [205.520000, 205.540000]  R_dir(cell)=0.151977  R_dir(point La)=0.151581  Spart=1.7e-29 PP=2.42e-43  7.8s
+k7rand1    k=7 [48.486191, 48.736191]  R_dir(cell)=1.24935e-06  R_dir(point La)=1.19149e-06  Spart=9.7e-07 PP=7.31e-10  8.2s
+k7rand1    k=7 [93.736191, 93.986191]  R_dir(cell)=1.9232e-08  R_dir(point La)=1.79062e-08  Spart=3.44e-13 PP=2.08e-19  8.4s
+k7rand1    k=7 [173.736191, 173.986191]  R_dir(cell)=0.00172158  R_dir(point La)=0.0016029  Spart=7.88e-25 PP=1.63e-36  8.2s
+k7rand2    k=7 [228.080000, 228.100000]  R_dir(cell)=0.0436738  R_dir(point La)=0.0436167  Spart=8.38e-33 PP=3.39e-48  8.6s
+k7rand2    k=7 [219.660000, 219.680000]  R_dir(cell)=0.0746456  R_dir(point La)=0.0745464  Spart=1.44e-31 PP=2.2e-46  9.7s
+k7rand2    k=7 [221.400000, 221.420000]  R_dir(cell)=0.0668671  R_dir(point La)=0.0667788  Spart=8e-32 PP=9.29e-47  9.7s
+k6first    k=6 [217.450000, 217.500000]  R_dir(cell)=0.981676  R_dir(point La)=0.977999  Spart=7.38e-29 PP=6.57e-46  10.2s
+k6rand     k=6 [295.700000, 295.750000]  R_dir(cell)=0.0108228  R_dir(point La)=0.0107849  Spart=1.52e-39 PP=9.11e-63  10.2s
+k5first    k=5 [288.730000, 288.780000]  R_dir(cell)=0.98593  R_dir(point La)=0.981853  Spart=2.98e-34 PP=2.9e-61  9.9s
+k5rand     k=5 [315.130000, 315.180000]  R_dir(cell)=0.27477  R_dir(point La)=0.273651  Spart=1.76e-37 PP=5.86e-67  11.2s
+k4first    k=4 [468.840000, 468.940000]  R_dir(cell)=0.987859  R_dir(point La)=0.978442  Spart=5.91e-46 PP=3.65e-100  12.0s
+k4rand     k=4 [570.640000, 570.740000]  R_dir(cell)=0.0253094  R_dir(point La)=0.0250733  Spart=2.93e-56 PP=3.49e-122  10.9s

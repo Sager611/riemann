@@ -1,0 +1,27 @@
+KLN row 0.60: admissible=True  A_mine=2.17604 (table 2.1770)  B_mine=5.66258 (table 5.663)  reproduces=True
+KLN row 0.65: admissible=True  A_mine=2.96258 (table 2.9630)  B_mine=5.24835 (table 5.249)  reproduces=True
+KLN row 0.70: admissible=True  A_mine=3.98228 (table 3.9830)  B_mine=4.82384 (table 4.824)  reproduces=True
+KLN row 0.75: admissible=True  A_mine=5.27638 (table 5.2770)  B_mine=4.40298 (table 4.403)  reproduces=True
+KLN row 0.80: admissible=True  A_mine=6.91735 (table 6.9180)  B_mine=3.99666 (table 3.997)  reproduces=True
+KLN row 0.85: admissible=True  A_mine=8.97402 (table 8.9750)  B_mine=3.58792 (table 3.588)  reproduces=True
+KLN row 0.86: admissible=True  A_mine=9.44029 (table 9.4410)  B_mine=3.51397 (table 3.514)  reproduces=True
+KLN row 0.87: admissible=True  A_mine=9.92554 (table 9.9260)  B_mine=3.42967 (table 3.430)  reproduces=True
+KLN row 0.88: admissible=True  A_mine=10.4303 (table 10.431)  B_mine=3.34536 (table 3.346)  reproduces=True
+KLN row 0.89: admissible=True  A_mine=10.9546 (table 10.955)  B_mine=3.26105 (table 3.262)  reproduces=True
+KLN row 0.90: admissible=True  A_mine=11.4988 (table 11.499)  B_mine=3.18590 (table 3.186)  reproduces=True
+KLN row 0.91: admissible=True  A_mine=12.0625 (table 12.063)  B_mine=3.10134 (table 3.102)  reproduces=True
+KLN row 0.92: admissible=True  A_mine=12.6460 (table 12.646)  B_mine=3.01678 (table 3.017)  reproduces=True
+KLN row 0.93: admissible=True  A_mine=13.2494 (table 13.250)  B_mine=2.94067 (table 2.941)  reproduces=True
+KLN row 0.94: admissible=True  A_mine=13.8718 (table 13.872)  B_mine=2.85586 (table 2.856)  reproduces=True
+KLN row 0.95: admissible=True  A_mine=14.5131 (table 14.513)  B_mine=2.77105 (table 2.772)  reproduces=True
+KLN row 0.96: admissible=True  A_mine=15.1727 (table 15.173)  B_mine=2.69397 (table 2.694)  reproduces=True
+KLN row 0.97: admissible=True  A_mine=15.8500 (table 15.850)  B_mine=2.60890 (table 2.609)  reproduces=True
+KLN row 0.98: admissible=True  A_mine=16.5441 (table 16.544)  B_mine=2.53110 (table 2.532)  reproduces=True
+KLN row 0.99: admissible=True  A_mine=17.2530 (table 17.253)  B_mine=2.44578 (table 2.446)  reproduces=True
+tail7      k=7 [240.000000, 240.000000] prec=256  R=0.2437033915  (6 p-points, dmax 1e-9, 0.2s)
+tail6      k=6 [300.000000, 300.000000] prec=256  R=0.08764530197  (6 p-points, dmax 1e-9, 0.2s)
+tail5      k=5 [400.000000, 400.000000] prec=256  R=0.03683389667  (6 p-points, dmax 1e-9, 0.2s)
+tail4      k=4 [640.000000, 640.000000] prec=256  R=0.01694656804  (6 p-points, dmax 1e-9, 0.2s)
+tail3      k=3 [2400.000000, 2400.000000] prec=256  R=0.01171179346  (6 p-points, dmax 1e-9, 0.2s)
+total 1.2s
+memcap: peak 0 MB rc=0

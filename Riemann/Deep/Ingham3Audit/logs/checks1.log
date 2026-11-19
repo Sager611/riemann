@@ -1,0 +1,8 @@
+header: $\s_0$ & $k$ & $\mu$ &$\alpha$ &  ${\del} $ & $d$ &  $A=\frac{\mathcal{C}_1}{2\pi d}$ & $B=\frac{\mathcal{C}_2}{2\pi d}$ \\
+TeX rows 20 cert rows 20
+mismatches: []
+a2 - a1*6/e = [1.460415712 +/- 3.72e-10]
+max |zeta(1/2+it)|, t in [0,3], upper bound over 3000 balls: [1.467053285 +/- 1.32e-10]  < need: False
+zeta(1/2) = [-1.46035450881 +/- 4.14e-13]
+k=7: n = 1..10^4 all have a proven prime in (n^7,(n+1)^7): 10000  largest gap p - n^7 = (549, 3164)
+time 16.6s

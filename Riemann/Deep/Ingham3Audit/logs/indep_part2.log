@@ -1,0 +1,4 @@
+k3first    k=3 [1881.030000, 1881.280000]  R_dir(cell)=0.986152  R_dir(point La)=0.957307  Spart=0 PP=0  10.8s
+k3rand     k=3 [1906.030000, 1906.280000]  R_dir(cell)=0.723761  R_dir(point La)=0.702605  Spart=0 PP=0  9.2s
+k5sliver   k=5 [288.730000, 288.730000]  R_dir(cell)=0.981853  R_dir(point La)=0.981853  Spart=2.95e-34 PP=2.9e-61  9.1s
+total 29.5s

@@ -1,0 +1,47 @@
+# FULLPROOF — the chain behind "a prime in (n^k, (n+1)^k)" (Ingham3), with source lines (audit pbpaudit, 14 Nov 2026)
+
+Sources (arXiv TeX, downloaded 14 Nov 2026 to .scratch/pbpaudit/, deleted afterwards): KLN = Kadiri–Lumley–Ng 2101.12263 (main.tex, 1867 lines); HSW = Hasanalizade–Shen–Wong 2107.06506; PT = Platt–Trudgian 2004.09765; HPY = Hiary–Patel–Yang 2207.02366. "D §n" = Riemann/Deep/Ingham3/DERIVATION.md section n.
+
+## 1. Inputs, as stated in the sources
+- (I1) ζ(s) ≠ 0 for Re s > B₂ + 2.2·10⁻²⁵⁴ (Bebel, Lean; Riemann/Deep/HPAudit/REPORT.md line 1: AUDIT PASSED, item (B)). Not re-audited here.
+- (I4) KLN Lemma 4.14 (TeX l. 1548–1585, label defNsigTlem): α > 0, d > 0, δ > 0, η₀ = 0.23622…, η ∈ [η₀, 1/2), μ ∈ [1+η₀, 1+η], H₀ = 3.0610046·10¹⁰, 1002 ≤ H ≤ H₀, 10⁹/H₀ ≤ k ≤ 1, T ≥ H₀, X = kT, σ > 1/2 + d/log H₀, U(α,k,H₀) > 1, U(α,k,T) decreasing in T ⇒ (4.71) N(σ,T) ≤ C₁/(2πd)·(log kT)^{2σ}(log T)^{5−4σ}T^{8(1−σ)/3} + C₂/(2πd)·log²T.
+  - C₁ (l. 1569–1574) = b₁₂(H)·exp[(8/3)δ(2σ−1)M(k,δ) + 4δ(2σ−1)log log H₀/(log kH₀ + 2δ)]·U(α,k,H₀)^{2(1−σ)+2d/log H₀+2δ(2σ−1)/(log kH₀+2δ)}·V(α,k,δ,H₀)^{2σ−1}·exp[2d(2 log log H₀ − log log kH₀)/log H₀ + 8d/3 + 2α]. U, V, M, b₁₂ do not depend on σ ⇒ log C₁ is affine in σ (D §1 claim CONFIRMED).
+  - C₂ (l. 1576) = C₇(η,H)(μ − σ + d/log H₀) + C₈(k,μ): affine, decreasing in σ when C₇ > 0 (CONFIRMED).
+  - δ: Theorem 1.1 (l. 193–195) prints "δ ≥ 1"; the parameter conventions (l. 626: δ > 0), Lemma 3.4 (l. 453: δ > 0), Lemma 4.10 (l. 1099: 0 < δ < 26.36…), Lemma 4.14 (l. 1549: δ > 0) and Table 1 (δ = 0.303–0.314) all allow δ < 1. The proof never uses δ ≥ 1 (rg of every δ-inequality in the TeX: l. 194, 453, 626, 936, 1063–1077, 1099, 1549). Reading: "δ ≥ 1" in Thm 1.1 is a misprint; Lemma 4.14 is the operative statement. The δ = 1 rerun (D §9) is the hedge.
+  - Intermediate σ-range: Lemma 4.10 (l. 1095–1099) is for σ ∈ [1/2, 1]; we use σ ∈ [0.515, B] ⊂ (1/2, 1).
+  - a₁ = 0.63, a₂ = 2.851 (Lemma 3.2, l. 406–424): (3.4) |ζ(1/2+it)| ≤ a₁t^{1/6}log t for t ≥ 3 now holds by HPY Theorem 1.1 (HPY l. 128–132: 0.618 t^{1/6}log t, t ≥ 3) since 0.618 < 0.63.
+  - a₂ = 2.851 (KLN l. 421–424): KLN justify it by "a₁t^{1/6}log t + a₂ ≥ 1.461"; at t = e⁻⁶ this is 2.851 − 0.63·6/e = 1.460416 < 1.461 (slip of 6·10⁻⁴). The statement (3.5) max_{|t|≤T}|ζ(1/2+it)| ≤ a₁T^{1/6}log T + a₂ (T > 0) still holds: checks2.py verifies |ζ(1/2+it)| ≤ min_{T≥t}(0.63T^{1/6}log T + 2.851) on [0, 3] in Arb (91 balls, smallest margin 6.6·10⁻⁷; |ζ(1/2)| = 1.4603545); for t ≥ 3 by HPY. So Lemma 3.2 stands as printed, by a hair.
+  - Table 1 (KLN l. 1692–1717): the 20 rows (σ₀, k, μ, α, δ, d, A, B) in cert.py l. 99–108 equal the TeX digit for digit (checks1.py).
+- (I2) PT abstract (l. 46): every zero with 0 < γ ≤ 3·10¹² has β = 1/2.
+- (I3) HSW Corollary 1.2 (l. 252–260): |N(T) − (T/2π)log(T/2πe)| ≤ 0.1038 log T + 0.2573 log log T + 9.3675 for T ≥ e. The printed 9.3675 is a misprint for 9.4925 (Bellotti–Wong; RECORDS.md audit note of 14 Nov, Ingham3 rerun with 9.4926: identical thresholds). Used only as N(t) ≤ t log t (t ≥ 14): at t = 14 the error terms are 10.02 < (1 − 1/2π)·14 log 14 = 31.07 even with 9.4926, and the gap grows; any classical bound (Rosser, Trudgian) also gives it.
+
+## 2. The chain (D §2–§6), each step checked
+1. Weight (D §2). Φ = 1_{[0,1/2]} * 1_{[0,1/2]} = min(v, 1−v)₊; ∫Φ = 1/4, ‖Φ‖_∞ = 1/2; w(u) = Φ(log(u/x)/δ) supported on [n^k, (n+1)^k], zero at both ends (neither end is prime). Mellin: u = xe^{δv}, u^{s−1}du = δx^s e^{δsv}dv ⇒ W(s) = δx^sΦ̃(δs), Φ̃(z) = ((e^{z/2} − 1)/z)². W(1) ≥ δx∫Φ = M₀. ✔
+2. Explicit formula. S_w = −∫ψ w′ (w Lipschitz, compact support in (1, ∞) for n ≥ 2); insert Davenport ch. 17's truncated formula, remainder bounded on the support uniformly in T and → 0 off prime powers; −∫u w′ = W(1), ∫(u^ρ/ρ)w′ = −W(ρ), ∫w′ = 0, ½∫log(1 − u⁻²)w′ = −∫w/(u³ − u). Absolute convergence (|Φ̃(δρ)| ≪ (δ|γ|)⁻²) turns the symmetric limit into the plain sum. ✔
+3. Trivial zeros: 0 ≤ ∫w/(u³−u) ≤ W(1)/(x³ − x) (u³ − u increasing, u ≥ x). Criterion: no prime ⇒ S_w = PP ⇒ PP ≥ M₀(1 − 1/(x³−x) − Z) (W(1) ≥ M₀, Σ|W(ρ)| = M₀Z) ⇒ R ≥ 1. ✔ (reviewer: CORRECT)
+4. Prime powers: p^j ∈ (x, xe^δ), j ≤ J = ⌊log(xe^δ)/log 2⌋, #p ≤ x^{1/j}(δ/j)e^{δ/j} + 1, log p ≤ log(xe^δ)/j, w ≤ 1/2, M₀ = δx/4 ⇒ PP/M₀ ≤ 2log(xe^δ)[e^{δ/2}x^{−1/2}/4 + Je^δx^{−2/3}/9 + log J/(δx)] (Σ_{j=2}^J 1/j ≤ log J). ✔
+5. Kernel (D §3): |∫₀^{1/2}e^{zv}dv| ≤ ½|sinc(λ/4)| + (e^{δ/2} − 1)min(1/2, 1/|λ|), e^y − 1 ≤ 2y (0 ≤ y ≤ 1) ⇒ |Φ̃|/∫Φ ≤ G(|λ|). sup_{y≥π}|sin y|/y = 1/√(1 + y*²) = 0.217234 (tan y* = y*, y* = 4.4934; later maxima smaller) < s₁ = 0.2173; cert.py checks it on 8000 balls of [π, 2π]. G continuous, non-increasing; G ≤ ((4 + 2δ_max)/λ)² for λ ≥ 4π. ✔
+6. Moments: Mom(p; λ₀) = max(1,λ₀)^pG(λ₀) + p∫_{max(1,λ₀)}^∞Gλ^{p−1} (G continuous, p < 2); increasing in p, decreasing in λ₀; grid majorant G(λ_i)(λ_{i+1}^p − λ_i^p), tail p(4 + 2δ_max)²Λ^{p−2}/(2−p), far branch (4+2δ_max)²λ₀^{p−2}·2/(2−p). ✔ (also Ingham4 CODE-AUDIT item 1: 36 entries at 256 bits)
+7. Pairing and σ₀ split (D §4.1): Z ≤ 2[x^{σ₀−1}S + log x∫_{σ₀}^B x^{σ−1}F(σ)dσ]; uses x^{−β} ≤ x^{−1/2} (β ≥ 1/2), F(σ) ≤ F(1/2) ≤ S/2 on [1/2, σ₀], (x^{−1/2} + x^{σ₀−1})/2 ≤ x^{σ₀−1}. ✔ (reviewer: CORRECT)
+8. S (D §4.2): S ≤ ∫_{14}^∞ t log t d(−G(δt)); t log t ≤ t₁log t₁·max(1, t/t₁)^{1+1/log t₁} (t₁ = 1/δ ≥ 14; 1 + y ≤ e^y) ⇒ S ≤ δ⁻¹D·Mom(1 + 1/D; 0). ✔
+9. F (D §4.3): F(σ) = ∫_{T₀}^∞N_σ d(−G(δt)) (N_σ(T₀) = 0, N_σG → 0), N_σ ≤ N(σ, t) ≤ KLN (4.71) with log kt ≤ log t (k ≤ 1, kt > 1). Case λ₀ < 1: (D + log λ)^e λ^a ≤ D^e max(1,λ)^{a+e/D}. Case λ₀ ≥ 1: (ℓ₀ + log u)^e ≤ ℓ₀^e u^{e/ℓ₀}, u = λ/λ₀ ≥ 1. Exponent identity log[δ^{−a}(…)] = aD + eΛ (log T₀ − log λ₀ = D). ✔
+10. σ-cells (D §4.4): exponent frozen at the left end (a, e decrease; Mom increases in p), B_P(σ) ≤ B_P(s_j) (q₁ > 0, checked in indep.py for all 20 rows), exact exponential integral; row used only if s_j > s_min in Arb (cert.py Setup). Rows used: 0.60 on [0.515, 0.6275] (s_min = 0.514123 < 0.515: margin 8.8·10⁻⁴) … 0.87 on [0.8675, B]. ✔
+
+11. x-cells (D §5.1): for x ∈ [e^{L_a}, e^{L_b}], δ ∈ [δ_b, δ_a]; log x·x^{σ−1} decreases for log x > 1/(1−σ) (≤ 7.9); x^{t−1} − x^{s−1} decreases (u ↦ ue^{−uL} decreases for uL > 1), so x-powers at L_a; S and F are evaluated at δ' = lo(δ_b) ≤ δ (any δ' ≤ δ is allowed: G(δγ) ≤ G(δ'γ); 1/δ' ≥ 14 asserted); δ_a < δ_max; PP with log(xe^δ) ≤ L_b + δ_a and δx ≥ δ_b e^{L_a}. ✔ Ingham3's cell_bound does not assert L_a(1 − B) > 1 (Ingham4's does); true here since L_a ≥ 32.236.
+12. Coverage (cert.py scan/run_k7): each scan is a contiguous float list (next L_a = previous L_b, the same double); k = 7: [L₁, 180] (592 cells of 0.25), [180, 240] (3000 of 0.02), tail from 240; k = 3–6: [L₀, L*] then the tail. mkcells.py rebuilds the exact lists; the counts equal cert_result.json (592, 3000, 1651, 2226, 1712, 2076). L₁ = float(7 log 100) = 32.236191301916641 > 7 ln 100 = 32.236191301916640: n = 100 is not in the first cell but is in the direct search (n ≤ 100); n = 101 (7 ln 101 = 32.3058) is. No integer gap. ✔
+13. Threshold starts (cert_result.json): L₀ = 217.45 → double 217.449999999999989 ≤ 217.45 ✔; 288.73 → 288.730000000000018 > 288.73 ✘; 468.84 → 468.839999999999975 ✔; 1881.03 → 1881.029999999999973 ✔. For k = 5 the stated range log x ≥ 288.73 starts 1.8·10⁻¹⁴ below the first checked cell (≈ 4·10¹⁰ integers n ≥ e^{57.746} have log n⁵ in that sliver). Closed in this audit by the cell [nextafter(288.73, 0), 288.73] (REPORT, Recomputations).
+14. Tail (D §5.2): 1/δ ≤ c*n/k (log(1+y) ≥ y − y²/2), D ≤ L/k (c* ≤ k), D ≥ L/k − log k, λ₀ ≤ kT₀/n* < 1 (case ii), e^{(σ−1)L}δ^{−a}D^{5−2σ} ≤ (L/k)³e^{−(1−σ)Ξ(L)}, ∫e^{−(1−σ)Ξ} ≤ e^{−(1−B)Ξ}/Ξ; Mom(p; λ₀) ≤ Mom(p_max; 0) = G(0) + T[0] for every λ₀ ≤ 1 and p ≤ p_max; each of the nine L-dependent factors is non-increasing for L ≥ L* under the three asserted conditions (main term: d log/dL ≤ 4/L − (1−B)Ξ′ < 0). ✔
+15. Small n (D §6): sympy.nextprime(n⁷) < (n+1)⁷ for n ≤ 100 (deterministic below 2⁶⁴). Independently (checks1.py): a FLINT-proven prime in (n⁷, (n+1)⁷) for every n ≤ 10⁴; largest p − n⁷ = 549 (n = 3164). ✔
+
+## 3. Dependence on the inputs (what survives)
+- KLN Theorem 1.1's "δ ≥ 1" taken literally: δ = 1 in all rows (cert.py's second run): (a) holds (max R 0.348, tail 0.559); thresholds log x₀ = 1947.12, 491.86, 305.60, 231.99 (k = 3, 4, 5, 6).
+- (I1) is the load-bearing input for k = 7: with KLN and RH(T₀) but no half-plane, the pipeline gives back double-exponential thresholds (Ford region: exp(e^{32.90}) for cubes, D §9); without (I1) neither (a) nor (b) survives.
+- (I3) is very weak (N(t) ≤ t log t); any classical N(T) bound gives it.
+
+
+## 4. Recomputation summary (details in REPORT.md)
+- cert.py rerun on a copy (.scratch, 369 s at background QoS, memcap peak 186 MB, max RSS 200.6 MB): logs/rerun_cert_result.json byte-identical to Riemann/Deep/Ingham3/logs/cert_result.json; cert.log identical apart from timings.
+- cellcheck.py (cert.py's own cell_bound/tail_bound, module re-executed at 128 and 256 bits, sparse p-grid): 20 cells + 5 tails; 128- and 256-bit values agree to 12 digits.
+- indep.py (own kernel, own λ-quadrature of S and F(σ) from the Stieltjes definitions, no moment tables, no p-grid, no exponent freezing, Gauss–Legendre in σ, best admissible row at each σ; floats): every certified cell value ≥ the direct value; ratio 1.012–1.018 at the binding cells, ≤ 1.42 elsewhere.
+- rows.py (256 bits): the eight rows used per σ-range, admissibility margins, q₁ > 0, B_P(B) > 0, for both δ runs.
+
