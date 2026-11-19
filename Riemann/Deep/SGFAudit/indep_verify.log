@@ -1,0 +1,31 @@
+B1 (certB1): h=119/600 theta=1 lam=119/200 k0=3 K=202 1/(2h)=300/119 M2=[480796.880281 +/- 3.98e-7] M3=[79070356.7437 +/- 4.97e-6]
+  cells=3154 evals=5047 covered=[0,300/119] exactly; min cell lower bound=[4.618465021355557758522203770317728416126535963846058523422768562229019423426e-6 +/- 2.90e-82] on [1.1948730,1.1958723]
+  smallest centre value of g = [0.000686437512089096 +/- 4.34e-19] at alpha=1.9539406  (35.3s, maxrss 30 MB)
+  PASS
+  B1: 28 points (0, theta, 1/(2h), 25 random): Horner (acb) and direct sin_cos_pi agree, max |diff of midpoints| = [2.9708e-74 +/- 4.20e-79]
+  B1 extreme cell [1.953875, 1.9539]: their-formula bound = [0.0002389285688655441066636111365577363044530 +/- 6.96e-45]
+B (certB): h=31/280 theta=4/7 lam=31/40 k0=7 K=235 1/(2h)=140/31 M2=[217389.234985 +/- 2.75e-7] M3=[25720396.0198 +/- 3.48e-5]
+  cells=3430 evals=4601 covered=[0,140/31] exactly; min cell lower bound=[1.883818049948746073007774387428094713748177548903899206305376487381032461283e-6 +/- 3.56e-82] on [0.9173146,0.9193140]
+  smallest centre value of g = [0.000575748049758065 +/- 6.74e-20] at alpha=1.2550784  (24.2s, maxrss 30 MB)
+  PASS
+  B: 28 points (0, theta, 1/(2h), 25 random): Horner (acb) and direct sin_cos_pi agree, max |diff of midpoints| = [3.4959e-74 +/- 2.11e-79]
+  B extreme cell [1.25505, 1.2551]: their-formula bound = [0.0002044506065889845466820194828566599740374 +/- 5.22e-45]
+       61.43 real        27.82 user         0.81 sys
+            34734080  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7386  page reclaims
+                2735  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  68  voluntary context switches
+               60720  involuntary context switches
+           512691945  instructions retired
+           328100389  cycles elapsed
+            14811640  peak memory footprint
+memcap: peak 15 MB rc=0

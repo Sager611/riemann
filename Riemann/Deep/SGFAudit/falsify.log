@@ -1,0 +1,30 @@
+F1 B: sum f^ dsigma = 0.000014508556; f(0)+sum_(m!=0) f(m/h)+int f(P-1) = 0.000014508556; diff 6.6e-15; m/h inside supp: [9.032]
+F1 B1: sum f^ dsigma = 0.000000371211; f(0)+sum_(m!=0) f(m/h)+int f(P-1) = 0.000000371211; diff 1.2e-14; m/h inside supp: [5.042]
+F2 J_theta(f) at theta=0.57141857: quadrature 1.000100147643, closed form l.468 1.000100147643
+F2 J_theta(f) at theta=0.57142857: quadrature 1.000105534838, closed form l.468 1.000105534838
+F2 CertB identity: sum f^ dsigma = 0.011781287806; (J-1) + int f(P-|a|1_th) = 0.000105534838 + 0.011675752968 = 0.011781287806; diff 9.9e-17
+F2 atom at u = 7h = 0.775000 (weight 0.757323, f^ = 0.009404): contributes 0.014243; rest of sigma -0.002462
+F3 a=0.636364: max |series - triangle form| over 9 points = 8.0e-07 (tail bound 2/(pi^2 a N) = 1.6e-06); S_a = |alpha| on [0, 0.571429]
+F3 a=0.500000: max |series - triangle form| over 9 points = 1.0e-06 (tail bound 2/(pi^2 a N) = 2.0e-06); S_a = |alpha| on [0, 1.000000]
+F6 B: P(0) = [0.00810199766851 +/- 4.29e-15]; P(theta) - theta = [0.000895448050711 +/- 4.23e-16]; P(1/(2h)) = [0.0130700355837 +/- 2.86e-14]
+F6 B1: P(0) = [0.00606197466179 +/- 3.34e-15]; P(theta) - theta = [0.00115556707811 +/- 4.03e-15]; P(1/(2h)) = [3.37238585152 +/- 2.07e-13]
+maxrss 53 MB
+        1.17 real         0.90 user         0.13 sys
+            52592640  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7839  page reclaims
+                  10  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 170  voluntary context switches
+                1872  involuntary context switches
+           422941450  instructions retired
+           187934296  cycles elapsed
+            21348856  peak memory footprint
+memcap: peak 0 MB rc=0

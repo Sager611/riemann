@@ -1,0 +1,2 @@
+certB keys ['X', 'eta', 'finemin', 'h', 'k0', 'lam', 't', 'theta'] theta 0.5714285714285714 lam 31/40 k0 7 h 31/280 len lean 235 len json 235 equal True min -1000000000000 max 5840340069254 n(-1) 29 last k*h 26.017857142857142
+certB1 keys ['X', 'ctail', 'eta', 'finemin', 'h', 'k0', 'lam', 't', 'theta'] theta 1 lam 119/200 k0 3 h 119/600 len lean 202 len json 202 equal True min -1000000000000 max 2026932654641 n(-1) 18 last k*h 40.06333333333333

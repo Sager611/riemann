@@ -1,0 +1,6 @@
+fhat(0) = 1.00000000000006  J_theta(f) = 1.00002190193763  J/fhat(0) = 1.00002190193757 (cert.json sdp_value 1.0000320380973995 )
+min f on [0,10] (step 0.005): 7.61491e-40 at 10.0
+max f^ on [0.7851, 9.79] (step 0.0025): -1.22188e-74 at 9.7851
+f^ just below lam: 0.000725648  at 0.775: 0.00759474
+maxrss 26 MB
+memcap: peak 14 MB rc=0
