@@ -1,0 +1,5 @@
+backend gmpy K 1832 J 206 active 17 V -0.862192066
+100 pts in 4.7s
+rand N=10000: min A = -0.862191199466653 at x=0.594097389751 ; points with A < V: 0 ; (476s)
+max |A(x)-A(1-x)| over 50 pts = 0
+memcap: peak 21 MB rc=0

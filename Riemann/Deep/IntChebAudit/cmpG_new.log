@@ -1,0 +1,6 @@
+compared 206 of 206 ; mine - gcert: min 4.626e-20 max 1.136e-16 ; negative (gcert above mine): 0
+max gcert radius 1.200e-24 ; max root residual 1.390e-41
+lowest G: i=0 mine -0.86219116325012267 gcert -0.8621911632501227
+lowest G: i=1 mine -0.86219116325012267 gcert -0.8621911632501227
+lowest G: i=2 mine -0.86219116324984528 gcert -0.8621911632498453
+lowest G: i=3 mine -0.86219116324982639 gcert -0.8621911632498265

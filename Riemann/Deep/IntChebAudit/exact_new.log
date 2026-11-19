@@ -1,0 +1,12 @@
+backend gmpy K 1832 J 206 active 17 V -0.862192066
+edges strictly increasing True e0 0 eK 1
+min mass True min c True
+M-1 = 6.78248342988268e-17  B = 0.999999998920136  B-M = -1.079864083740256e-09  B<M True
+symmetry: edges True masses True library+multipliers True
+sympy irreducible+primitive+lc>=1: bad = 0 (4s)
+distinct True
+-sum c log a = -0.689682247798  /M = -0.689682247798
+V as exact double = -0.8621920659999999791978098
+exp(V/M) = 0.4222354990414901375061062  exp(V) = 0.4222354990414901128146044
+largest active root count (sum deg active) = 127
+memcap: peak 78 MB rc=0

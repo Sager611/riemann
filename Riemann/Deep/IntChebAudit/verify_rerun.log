@@ -1,0 +1,12 @@
+[new lower] exact checks OK: K=1832 J=206  M-1=6.782e-17  B-M=-1.080e-09  symmetric=True (1s)
+[new lower] min_i G_i >= -0.862191163250123 (arb)
+[new lower] lowcert on [0,0.5]: OK intervals=20328 minleaf=-0.86219206534873 failed=0 (50s)
+[new lower] PROVED t_Z([0,1]) >= 4.2223549904149e-1
+[published lower] exact checks OK: K=947 J=206  M-1=-2.049e-17  B-M=-1.000e-09  symmetric=False (0s)
+[published lower] min_i G_i >= -0.862208282174688 (arb)
+[published lower] lowcert on [0,1]: OK intervals=27522 minleaf=-0.862208405397684 failed=0 (32s)
+[published lower] PROVED t_Z([0,1]) >= 4.22228600019153e-1
+[upper] upcert: OK intervals=5752 maxleaf=-1.7222575479659532 failed=0
+[upper] PROVED t_Z([0,1]) <= 0.422684697504807
+exit=0
+memcap peak 21 MB (tree); /usr/bin/time -l: 105 s real, max RSS 59.8 MB (uv parent)
