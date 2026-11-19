@@ -1,0 +1,31 @@
+## limits (mpmath 256-bit, [0,inf) split at powers of 2)
+limit classical w=1/2: Ic=0.693147180559945 Ir=0.570796326794897 A_c=22.3816160955 A_r=60.8395403239
+limit ct w=15/32: Ic=0.649168544494663 Ir=0.538769195117049 A_c=23.3878942309 A_r=65.6439656548
+limit ab w=3733819666132076/10000000000000000: Ic=0.506800913153911 Ir=0.431001630463382 A_c=26.9662525665 A_r=84.2999165937
+limit liu w=374886647040/1000000000000: Ic=0.509140523632914 Ir=0.432822234202248 A_c=26.9032357855 A_r=83.949939377
+limit grh w=0: Ic=0.0 Ir=0.0 A_c=44.763232191 A_r=215.332515953
+closed forms w=1/2: log2 = 0.693147180559945  pi/2-1 = 0.570796326794897  4pi e^g = 22.3816160955  4pi e^(1+g) = 60.8395403239  GRH 8pi e^g = 44.763232191  8pi e^(g+pi/2) = 215.332515953
+## Lemma A: 2 int_0^inf cosh(ax)cos(tx)/cosh(wx) dx vs (2pi/w)cos(pi a/2w)cosh(pi t/2w)/(cosh(pi t/w)+cos(pi a/w))
+  a=0.3 w=0.46875 t=0.0: quad 12.5078932044093 closed 12.5078932044093 diff -1.38e-76
+  a=0.3 w=0.46875 t=2.5: quad 0.00165168077607489 closed 0.00165168077607489 diff -4.89e-79
+  a=0.46 w=0.46875 t=0.7: quad 0.0386887961038061 closed 0.0386887961038061 diff -1.13e-77
+  a=-0.2 w=0.373382 t=1.3: quad 0.0472739751626169 closed 0.0472739751626169 diff -3.78e-78
+  a=0.0 w=0.25 t=4.0: quad 3.05653257715968e-10 closed 3.05653257715968e-10 diff -4.37e-80
+## Lemma B: int_{-2}^{2} S(x) cos(tx) dx vs |hhat(t)|^2/||h||^2
+  G t=0.0: FT 1.6211389382774 |hhat|^2/|h|^2 1.6211389382774 diff -1.73e-77
+  G t=1.7: FT 0.917433833013451 |hhat|^2/|h|^2 0.917433833013451 diff 0.0
+  G t=5.3: FT 0.00462018774082544 |hhat|^2/|h|^2 0.00462018774082544 diff 6.75e-80
+  G t=12.0: FT 0.000350849907712675 |hhat|^2/|h|^2 0.000350849907712675 diff -4.22e-81
+  H t=0.0: FT 1.33333333333333 |hhat|^2/|h|^2 1.33333333333333 diff 0.0
+  H t=1.7: FT 0.907211556487081 |hhat|^2/|h|^2 0.907211556487081 diff 0.0
+  H t=5.3: FT 0.00964709811030681 |hhat|^2/|h|^2 0.00964709811030681 diff 1.35e-79
+  H t=12.0: FT 1.44337381588702e-5 |hhat|^2/|h|^2 1.44337381588702e-5 diff -6.72e-81
+## entries: 7 special + 0 random table entries (seed 20261119)
+ct        cross_tc n=   2732 r1=      0 H b=20.412  : rd>=22.3816960154 cert 22.381 limit 22.3816160955 rel(logA,logB,E)=1.2e-16 OK
+ct        cross_tr n=   1618 r1=   1618 H b=20.742  : rd>=60.8402198645 cert 60.84 limit 60.8395403239 rel(logA,logB,E)=8.9e-17 OK
+ab        cross_tc n=    482 r1=      0 H b=9.826   : rd>=22.3825096797 cert 22.382 limit 22.3816160955 rel(logA,logB,E)=1.2e-16 OK
+ab        cross_tr n=    285 r1=    285 H b=9.9794  : rd>=60.8673347899 cert 60.867 limit 60.8395403239 rel(logA,logB,E)=9.2e-17 OK
+ct        thr_tc   n=   1581 r1=      0 H b=17.398  : rd>=22.0002274248 cert 22.0 target 22.0 rel(logA,logB,E)=8.2e-17 OK
+ct        thr_tr   n=   1223 r1=   1223 H b=19.129  : rd>=60.0003991246 cert 60.0 target 60.0 rel(logA,logB,E)=1.5e-16 OK
+ab        thr_tr   n=  35448 r1=  35448 H b=25.938  : rd>=81.0001013076 cert 81.0 target 81.0 rel(logA,logB,E)=4.6e-17 OK
+entries 7 fails 0 worst rel diff vs certified.json floats 1.46e-16 time 64s

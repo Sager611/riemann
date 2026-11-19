@@ -1,0 +1,27 @@
+table sizes {'classical': 231, 'ct': 231, 'ab': 231}
+ct entries vs Prop D limit A_r^(r1/n) A_c^(2r2/n): min (limit/ct - 1) = 2.05e-03
+ct vs own classical recomputation: min (ct/classical - 1) = 0.00e+00
+ct vs Odlyzko 1976 GRH Table 1 (166 common rows): min (GRH/ct - 1) = 0.000e+00
+ct/classical - 1 at selected (n, r1): (6, 0):0.1098%, (6, 6):0.3530%, (7, 0):0.1561%, (7, 7):0.4416%, (8, 0):0.1770%, (8, 8):0.5391%, (9, 0):0.2444%, (9, 9):0.6274%, (10, 0):0.2732%, (10, 10):0.7259%, (12, 0):0.3514%, (12, 12):0.9087%, (20, 0):0.6235%, (20, 20):1.5379%, (50, 0):1.2868%, (50, 50):2.8129%, (100, 0):1.8288%, (100, 100):3.7445%, (1000, 0):3.2204%, (1000, 1000):5.9546%
+  n=6: ct tc 4.557 vs Odlyzko unc tc 4.549 (+0.176%); ct tr 7.959 vs unc tr 7.926 (+0.416%)
+  n=7: ct tc 5.132 vs Odlyzko unc tc 5.121 (+0.215%); ct tr 9.326 vs unc tr 9.279 (+0.507%)
+  n=8: ct tc 5.661 vs Odlyzko unc tc 5.646 (+0.266%); ct tr 10.63 vs unc tr 10.568 (+0.587%)
+  n=9: ct tc 6.152 vs Odlyzko unc tc 6.134 (+0.293%); ct tr 11.868 vs unc tr 11.787 (+0.687%)
+  n=10: ct tc 6.606 vs Odlyzko unc tc 6.585 (+0.319%); ct tr 13.044 vs unc tr 12.941 (+0.796%)
+  n=12: ct tc 7.424 vs Odlyzko unc tc 7.395 (+0.392%); ct tr 15.213 vs unc tr 15.068 (+0.962%)
+  n=20: ct tc 9.844 vs Odlyzko unc tc 9.779 (+0.665%); ct tr 21.986 vs unc tr 21.642 (+1.590%)
+  n=100: ct tc 16.76 vs Odlyzko unc tc 16.454 (+1.860%); ct tr 43.304 vs unc tr 41.728 (+3.777%)
+  n=1000: ct tc 21.571 vs Odlyzko unc tc 20.895 (+3.235%); ct tr 59.307 vs unc tr 55.966 (+5.970%)
+memory list vs data/lmfdb_min.json (non-Galois minima): disagreements []
+minimal fields n<=8 [ct]: 23 fields, tightest margin rd/bound - 1 = 0.543% at ('|d|=5', 2, 2, 2.23607, 2.224)
+lmfdb_min.json [ct]: 42 fields, tightest margin rd/bound - 1 = 0.543% at ('2.2.5.1', 2, 2, 2.23607, 2.224)
+imag. quadratic Hilbert class fields [ct]: 60800 fields, tightest margin rd/bound - 1 = 0.642% at ('D=-3,h=1', 2, 0, 1.73205, 1.721)
+real quadratic Hilbert class fields [ct]: 60788 fields, tightest margin rd/bound - 1 = 0.543% at ('D=5,h=1', 2, 2, 2.23607, 2.224)
+quadratic fields [ct]: 121588 fields, tightest margin rd/bound - 1 = 0.543% at ('D=5', 2, 2, 2.23607, 2.224)
+quadratic fields [ab]: 121588 fields, tightest margin rd/bound - 1 = 0.497% at ('D=5', 2, 2, 2.23607, 2.225)
+cyclotomic conductor-discriminant self-check failures: 0
+cyclotomic Q(zeta_m), m<=2e5 [ct]: 149999 fields, tightest margin rd/bound - 1 = 0.642% at ('Q(zeta_3)', 2, 0, 1.73205, 1.721)
+cyclotomic Q(zeta_m), m<=2e5 [ab]: 149999 fields, tightest margin rd/bound - 1 = 0.584% at ('Q(zeta_3)', 2, 0, 1.73205, 1.722)
+real cyclotomic Q(zeta_m)+, m<=2e5 [ct]: 149997 fields, tightest margin rd/bound - 1 = 0.543% at ('Q(zeta_5)+', 2, 2, 2.23607, 2.224)
+real cyclotomic Q(zeta_m)+, m<=2e5 [ab]: 149997 fields, tightest margin rd/bound - 1 = 0.497% at ('Q(zeta_5)+', 2, 2, 2.23607, 2.225)
+VIOLATIONS: 0 []

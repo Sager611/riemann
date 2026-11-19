@@ -1,0 +1,20 @@
+  ***   Warning: new maximum stack size = 120012800 (114.453 Mbytes).
+memcap: peak 9 MB rc=0
+       65.68 real        46.32 user        31.66 sys
+            14876672  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               46060  page reclaims
+                 202  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                  38  signals received
+                 140  voluntary context switches
+              161427  involuntary context switches
+           104309167  instructions retired
+           107104395  cycles elapsed
+             2261328  peak memory footprint

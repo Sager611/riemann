@@ -1,0 +1,4 @@
+GRH w=0, kernel G: n=100 r1=0: rd > 19.278601 at b=4.040; Odlyzko 1976 Table 1 (data file): 19.268
+GRH w=0, kernel G: n=100 r1=100: rd > 59.17451 at b=4.620; Odlyzko 1976 Table 1 (data file): 59.141
+GRH w=0, kernel G: n=1000 r1=0: rd > 29.103034 at b=6.320; Odlyzko 1976 Table 1 (data file): 29.094
+GRH w=0, kernel G: n=8 r1=0: rd > 5.737805 at b=1.620; Odlyzko 1976 Table 1 (data file): 5.734
