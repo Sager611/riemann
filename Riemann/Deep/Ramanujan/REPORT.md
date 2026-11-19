@@ -1,3 +1,5 @@
+CORRECTION (padhi2, 19 Nov 2026): the REFUTATION below is withdrawn. The 2.4 in Lemma 6.2(v) already covers both sides of each representative (as in Bellotti's (4.13)); doubling it double-counted, so q > 1 near log x = 875 is void and §5's repair numbers are conservative. See [Padhi2](../Padhi2/REPORT.md).
+
 REFUTATION: Lemma 6.4 with Lemma 6.2(v) (Sec. 6.2, far off-diagonal term of the new zero-density bound Thm 6.1) counts the far representatives (|gamma_r - gamma_s| > 1) on one side of each representative only, losing a factor 2 (copied from Bellotti arXiv 2405.12545 (4.13)); corrected, the paper's own certified pipeline gives q > 1 near log x = 875 (best 1.033 on [874.5, 875] after re-optimising the kernel), so Thm 1.1 (e^58 <= x <= e^3159) and N_R = 38,358,837,683 are not proved as published.
 
 Record: Zenodo 10.5281/zenodo.23440770 v2 (Padhi, 2026-10-17), code github.com/jaideepsaipadhi/ramanujans-inequality.
