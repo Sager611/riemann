@@ -1,0 +1,11 @@
+kernel: W1 = 2.424245725 W0 = 115.9708945 winf = 38.85438136 m0 = 12.70765942 m1 = 12.5260612 m2 = 12.33420029 SIG = 0.04637118646
+w = 1: kappa(L >= log 1e7) = 1.32, margin 0.0078137, c = 0.171916
+w = 2: kappa(L >= log 1e7) = 5.88, margin 0.0045712, c = 0.282868
+w = 3: kappa(L >= log 1e7) = 14.0, margin 0.019324, c = 0.377717
+w = 4: kappa(L >= log 1e7) = 28.2, margin 0.01752, c = 0.477024
+w = 5: kappa(L >= log 1e7) = 47.9, margin 0.035575, c = 0.569162
+w = 6: kappa(L >= log 1e7) = 72.3, margin 0.022868, c = 0.652885
+w = 7: kappa(L >= log 1e7) = 103.0, margin 0.2633, c = 0.734632
+w = 8: kappa(L >= log 1e7) = 140.0, margin 0.17597, c = 0.813767
+max c over w <= 8 at L_m = log 1e7: 0.813767 (w = 8); claimed 0.814
+memcap: peak 84 MB rc=0

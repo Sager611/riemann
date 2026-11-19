@@ -1,0 +1,26 @@
+N = 10000000: 664578 primes 3 <= p <= N, max g* = 211, 9.5 s
+records: 3:2, 7:3, 23:5, 41:7, 109:11, 191:19, 271:43, 2791:53, 11971:79, 31771:107, 190321:149, 2080597:151, 3545281:163, 4022911:211
+per omega(p-1): count, max g*, at p: {1: (5, 3, 17), 2: (65222, 41, 701399), 3: (219024, 89, 1756663), 4: (250942, 211, 4022911), 5: (112028, 181, 9633751), 6: (16860, 179, 5109721), 7: (497, 137, 2831011)}
+worst log g*/log (kappa_w log p)^(1/b) [Thm A] = 0.10866 at (p, g*, w) = (4022911, 211, 4)
+worst log g*/log (0.814 log p)^(3/b) [Thm B', p >= 5] = 0.10832 at (5, 2)
+worst log g*/log (1.956 log p)^(3.4/b) [Thm D] = 0.05881 at (190321, 149)
+g* histogram (top 12 values): [(113, 9), (127, 7), (131, 4), (137, 2), (139, 5), (149, 2), (151, 1), (157, 1), (163, 1), (179, 1), (181, 1), (211, 1)]
+memcap: peak 18 MB rc=0
+       14.58 real         9.58 user         8.73 sys
+            86032384  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21827  page reclaims
+                  31  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  10  signals received
+                  44  voluntary context switches
+               24622  involuntary context switches
+            68891268  instructions retired
+            60144085  cycles elapsed
+             2261328  peak memory footprint

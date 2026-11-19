@@ -1,7 +1,7 @@
 # Least prime primitive root of every prime without GRH, with numbers (node N11)
 
 **Claim.** Assume H: ζ(s) and every Dirichlet L(s, χ) are zero-free on Re s > B = 0.8733819666132076 (a theorem: Bebel's Lean-kernel-checked Re s > B₂ + 2.2·10⁻²⁵⁴, B₂ = (777 − √1081)/852 < B; TREE.md N7). Let g*(p) be the least prime that is a primitive root mod p, ω = ω(p − 1), 1/(1 − B) = 7.8978.
-- Theorem A: for every ω ≤ 10⁴ and every prime p with ω(p − 1) = ω, g*(p) ≤ (κ_ω log p)^{1/(1−B)}, with κ₁ = 3.53 (p − 1 a power of 2), κ₂ = 11.1, κ₅ = 54.1, κ₁₀ = 216, κ₁₀₀ = 2.72·10⁴, κ₁₀₀₀ = 4.32·10⁶, κ₁₀⁴ = 6.85·10⁸ (all values in the certificate's kappa table).
+- Theorem A: for every 1 ≤ ω ≤ 10⁴ and every prime p with ω(p − 1) = ω, g*(p) ≤ (κ_ω log p)^{1/(1−B)}, with κ₁ = 3.53 (p − 1 a power of 2), κ₂ = 11.1, κ₅ = 54.1, κ₁₀ = 216, κ₁₀₀ = 2.72·10⁴, κ₁₀₀₀ = 4.32·10⁶, κ₁₀⁴ = 6.85·10⁸ (all values in the certificate's kappa table).
 - Theorem B′: every prime p ≥ 5 with ω(p − 1) ≤ 10⁴ (in particular every p ≥ 5 below e^{104403}) has **g*(p) ≤ (0.814 log p)^{3/(1−B)} ≤ (0.814 log p)^{23.70}**.
 - Theorem C: if ω(p − 1) > 10⁴, g*(p) ≤ (1.955 log p)^{3.4/(1−B)}.
 - Theorem D: every prime p ≥ 3 has **g*(p) ≤ (1.956 log p)^{26.86}**.
@@ -22,6 +22,8 @@ Sizes: at p ≈ 10^{100} the bounds are 10^{49.0} (worst ω, Theorem A), 10^{53.
 **Novelty.** arXiv math.NT listings 2026-10 and 2026-11 (titles: primitive root, Artin): only Johnston–Naik 2610.08569 (least prime with a given primitive root, a different question) and 2610.05914 (near-primitive roots); Zenodo "least prime primitive root" and "least primitive root": the seven QRH notes above (no constant) and 23653561 (special primes 2^kℓ + 1 in Lean); HAL "primitive root" 2025–2026: two unrelated items; our files: no earlier primitive-root record. The agent also searched Zenodo "prime primitive root", Martin 1997's TeX, Hexagon, the GXL evidence API and OpenAI's primitive-roots preprint (our audit).
 
 **Caveat.** Rests on H (Lean-kernel-checked on the tracker, not refereed); not refereed itself. The exponent 3/(1−B) = 23.69 is proved only for ω(p − 1) ≤ 10⁴; beyond, 3.4/(1−B) = 26.85 (blocking lemma: an explicit lower bound for Rosser's weights at level ≍ p_ω² valid for every ω). Constants far from optimal. Rosser–Schoenfeld 1962 is used as published. Every bound also holds for the least primitive root g(p).
+
+**Audit.** AUDIT PASSED (ppraudit, 19 Nov 2026, [PrimRootAudit](../Riemann/Deep/PrimRootAudit/REPORT.md)): DERIVATION.md, cert.py, tail.py and sieve.py refereed line by line against their sources (Rosser–Schoenfeld ranges checked in the TeX quoted by 2608.01498; reviewer CORRECT on the sieve lemmas); independent 256-bit code reproduces the sieve constants C_ω exactly and T_ω, κ_ω, the tail margin (4.05·10⁻⁴ at 1.955, negative at 1.954) and every size; exact g*(p) for all 5,761,454 primes 3 ≤ p ≤ 10⁸ stays below every bound (worst log-ratio 0.109; max g* = 223 at p = 73,189,117), and targeted p = 1 + kP_m up to 10^{166.5} give at most 0.077. Cosmetic findings only (κ₂ = 11.1 valid but not minimal; the printed c_w column of kappa_table.txt is rounded to nearest, unused by any theorem; ω ≥ 1 made explicit above). The orchestrator’s rerun of gstar.py 1e7 is identical.
 
 **RH relevance.** N11: a uniform zero-free half-plane for all Dirichlet L-functions replaces GRH in the least prime primitive root problem.
 

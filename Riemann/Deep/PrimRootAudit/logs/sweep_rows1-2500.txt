@@ -1,0 +1,21 @@
+kernel: W1 = 2.424245725 W0 = 115.9708945 winf = 38.85438136 m0 = 12.70765942 m1 = 12.5260612 m2 = 12.33420029 SIG = 0.04637118646
+  w = 250 done (32 s): min rel margin so far 2.1701e-5 at w = 44; failures 0/132/0/0
+  w = 500 done (54 s): min rel margin so far 5.8485e-6 at w = 403; failures 0/259/0/0
+  w = 750 done (76 s): min rel margin so far 5.8485e-6 at w = 403; failures 0/381/0/0
+  w = 1000 done (100 s): min rel margin so far 2.8658e-6 at w = 783; failures 0/504/0/0
+  w = 1250 done (130 s): min rel margin so far 2.8658e-6 at w = 783; failures 0/628/0/0
+  w = 1500 done (162 s): min rel margin so far 2.8658e-6 at w = 783; failures 0/747/0/0
+  w = 1750 done (197 s): min rel margin so far 2.8658e-6 at w = 783; failures 0/882/0/0
+  w = 2000 done (231 s): min rel margin so far 2.8658e-6 at w = 783; failures 0/1007/0/0
+  w = 2250 done (272 s): min rel margin so far 2.8658e-6 at w = 783; failures 0/1131/0/0
+  w = 2500 done (322 s): min rel margin so far 2.8658e-6 at w = 783; failures 0/1253/0/0
+chunk w = 1..2500: printed-c_w shortfall rows 1253, max relative shortfall (kappa - c_w^3 L^2)/kappa = 3.67e-06
+rows 1..10000 consecutive; Lm/margin failures: none
+min relative margin (4.4)/(T W1 kappa) = 2.86577e-6 at w = 783
+c_w^3 L_w^2 >= kappa failures: [1, 2, 4, 5, 7, 8, 10, 13, 14, 15]; max c_w = 1.431174 at w = 2; Theorem D (1.956) failures: none; Corollary E (w > 120) failures: none
+c_w <= 0.474 for w > 100: True; c_10000 = 0.397605
+RSS-limited chunk done
+done 322 s
+memcap: peak 20 MB rc=0
+kernel: W1 = 2.424245725 W0 = 115.9708945 winf = 38.85438136 m0 = 12.70765942 m1 = 12.5260612 m2 = 12.33420029 SIG = 0.04637118646
+  w = 2750 done (140 s): min rel margin so far 4.448e-7 at w = 2727; failures 0/122/0/0

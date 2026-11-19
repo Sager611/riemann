@@ -1,0 +1,16 @@
+[i] G_lo vs true G at u = u1, u1 + 0.1 for primes q in [50, 1e5]
+   u = 11.5593: 9577 primes (0 skipped, xi > NMAX); max G_lo/G_true = 0.962086 at (q, xi, G_lo, G) = (53, 81472, 6.912054857423776, 7.184442944540654) (must be <= 1); true Part A = 0.0221886
+   u = 11.6593: 9577 primes (0 skipped, xi > NMAX); max G_lo/G_true = 0.964122 at (q, xi, G_lo, G) = (53, 91401, 6.9286807040751786, 7.186515493329039) (must be <= 1); true Part A = 0.0215428
+   tail.py partA(u1, u1 + 0.1) upper bound = 0.0390061 (true value above must be smaller)
+[ii] true Phi_q - 1 vs psi(a_q) for the first 300 primes q > 1e5
+   u = 11.559: max (Phi_q - 1)/psi(a_q) = 0.7591 at (q, xi, true, psi) = (101161, 1865, 1.317698031105599, 1.7358720555244211) (must be <= 1)
+   u = 12.559: max (Phi_q - 1)/psi(a_q) = 0.7654 at (q, xi, true, psi) = (103099, 5834, 1.0562424524398213, 1.379948375047559) (must be <= 1)
+[iii] constants
+   c_sigma: prod_{p < 2e6} = 3.27957693879, + tail exp(2/(2e6-1)) = 3.27958021837 (cert <= 3.2795975)
+   h_Q'(2.609) = 0.00018649976 (> 0 needed), argmax h_Q = 2.609503382
+   p_10001 = 104743, u1 = 11.55926501, L1 = log(P_10001 + 1) ~ theta(p_10001) = 104403.7613 (cert 104403.76)
+   delta*ell(L1) = 1.16465 (>= 1), m_delta = 0.27269427 (cert 0.272694)
+   K_B = 0.0090630839 (cert 0.00906308)
+   acap used = 2609/1000; Psi(1) = psi(0.65) = 1.7504869 (cert 1.75049)
+done 8 s
+memcap: peak 23 MB rc=0

@@ -1,0 +1,8 @@
+kernel: W1 = 2.424245725 W0 = 115.9708945 winf = 38.85438136 m0 = 12.70765942 m1 = 12.5260612 m2 = 12.33420029 SIG = 0.04637118646
+(a) tail (5.6) at c_T = 1.955: margin 0.00040526714 (lhs 0.36645505, rhs 0.36604978; certificate margin 0.0004080)
+    at c_T = 1.954: margin -0.00023167
+(b) own midpoint integrals: I = 0.882183 (cert upper 0.882775), J = 3.27051 (cert 3.27487), K3 = 4.72091 (cert 4.72882), Psi(1) = 1.75049 (cert 1.75049)
+    B_rel(u = 60) with own integrals = 0.888613 (cert 0.889211)
+(c) w = 27 at L = 94.4782: own least kappa 1644.95; (1/b) log(kappa L) + slack = 94.408616 vs 1*L = 94.4782 -> holds
+(c) w = 52 at L = 224.609: own least kappa 6623.68; (1/b) log(kappa L) + slack = 112.25016 vs 0.5*L = 112.3045 -> holds
+memcap: peak 129 MB rc=0

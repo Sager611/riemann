@@ -1,0 +1,13 @@
+kernel: W1 = 2.424245725 W0 = 115.9708945 winf = 38.85438136 m0 = 12.70765942 m1 = 12.5260612 m2 = 12.33420029 SIG = 0.04637118646
+w=3 y=42: C 6 (table 6) OK; T 0.2333333333 (table 0.23333333) exact 0.233333333333; Lm 3.433987 (table 3.433987); kappa_table 173/10 margin 0.038873381; own least kappa 173/10 (<= table OK); c_w 1.136274 (table 1.136274) [7 s]
+w=8 y=422: C 24 (table 24) OK; T 0.1073760089 (table 0.10737601) exact 0.107376008924; Lm 16.087605 (table 16.087605); kappa_table 140 margin 0.16428988; own least kappa 140 (<= table OK); c_w 0.814795 (table 0.814795) [7 s]
+w=10 y=750: C 34 (table 34) OK; T 0.09421772738 (table 0.094217727) exact 0.0942177273837; Lm 22.590395 (table 22.590395); kappa_table 216 margin 0.14169882; own least kappa 216 (<= table OK); c_w 0.750819 (table 0.750819) [7 s]
+w=27 y=7499: C 184 (table 184) OK; T 0.0572203947 (table 0.057220395); Lm 92.978240 (table 92.978240); kappa_table 1650 margin 0.38346804; own least kappa 1650 (<= table OK); c_w 0.575759 (table 0.575759) [9 s]
+w=37 y=13335: C 292 (table 292) OK; T 0.04523397661 (table 0.045233977); Lm 141.721116 (table 141.721116); kappa_table 3210 margin 0.35058285; own least kappa 3210 (<= table OK); c_w 0.542682 (table 0.542682) [7 s]
+w=52 y=31623: C 574 (table 574) OK; T 0.04196934193 (table 0.041969342); Lm 221.108710 (table 221.108710); kappa_table 6630 margin 0.11093409; own least kappa 6630 (<= table OK); c_w 0.513768 (table 0.513768) [7 s]
+w=100 y=133352: C 1704 (table 1704) OK; T 0.02947840528 (table 0.029478405); Lm 505.816233 (table 505.816233); kappa_table 27200 margin 2.1812877; own least kappa 27200 (<= table OK); c_w 0.473727 (table 0.473727) [7 s]
+w=613 y=7498942: C 48300 (table 48300) OK; T 0.0150148805 (table 0.015014881); Lm 4437.432018 (table 4437.432018); kappa_table 1470000 margin 42.532783; own least kappa 1470000 (<= table OK); c_w 0.421067 (table 0.421067) [7 s]
+w=1000 y=23713737: C 126236 (table 126236) OK; T 0.01332004811 (table 0.013320048); Lm 7812.283541 (table 7812.283541); kappa_table 4320000 margin 77.948224; own least kappa 4320000 (<= table OK); c_w 0.413659 (table 0.413659) [7 s]
+w=4321 y=562341325: C 2004728 (table 2004728) OK; T 0.008343811701 (table 0.0083438117); Lm 41022.068772 (table 41022.068772); kappa_table 110000000 margin 17284.941; own least kappa 110000000 (<= table OK); c_w 0.402828 (table 0.402828) [11 s]
+w=10000 y=4216965034: C 11887948 (table 11887948) OK; T 0.007882472108 (table 0.0078824721); Lm 104392.202016 (table 104392.202016); kappa_table 685000000 margin 5255.8652; own least kappa 685000000 (<= table OK); c_w 0.397605 (table 0.397605) [22 s]
+memcap: peak 71 MB rc=0

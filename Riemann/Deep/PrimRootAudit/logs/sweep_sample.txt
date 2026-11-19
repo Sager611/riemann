@@ -1,0 +1,10 @@
+kernel: W1 = 2.424245725 W0 = 115.9708945 winf = 38.85438136 m0 = 12.70765942 m1 = 12.5260612 m2 = 12.33420029 SIG = 0.04637118646
+  w = 10000 done (188 s): min rel margin so far 1.677e-6 at w = 9995; failures 0/134/0/0
+chunk w = 2501..10000: printed-c_w shortfall rows 134, max relative shortfall (kappa - c_w^3 L^2)/kappa = 3.73e-06
+rows 1..10000 consecutive; Lm/margin failures: none
+min relative margin (4.4)/(T W1 kappa) = 1.67696e-6 at w = 9995
+c_w^3 L_w^2 >= kappa failures: [2601, 2676, 2726, 2776, 2901, 2951, 2976, 3101, 3126, 3151]; max c_w = 0.405361 at w = 2626; Theorem D (1.956) failures: none; Corollary E (w > 120) failures: none
+c_w <= 0.474 for w > 100: True; c_10000 = 0.397605
+RSS-limited chunk done
+done 188 s
+memcap: peak 20 MB rc=0
