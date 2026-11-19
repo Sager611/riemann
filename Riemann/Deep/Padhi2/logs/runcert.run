@@ -1,0 +1,12 @@
+rc=0
+memcap: peak 33 MB rc=0
+            52314112  maximum resident set size
+             2294096  peak memory footprint
+rc=137
+memcap: peak 33 MB KILLED TIME>420s rc=137
+            47054848  maximum resident set size
+             2212176  peak memory footprint
+rc=0
+memcap: peak 33 MB rc=0
+            52166656  maximum resident set size
+             2294096  peak memory footprint

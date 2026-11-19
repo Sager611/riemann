@@ -1,0 +1,8 @@
+rc=0
+memcap: peak 0 MB rc=0
+            86327296  maximum resident set size
+             2228560  peak memory footprint
+rc=0
+memcap: peak 63 MB rc=0
+            91176960  maximum resident set size
+             2326864  peak memory footprint

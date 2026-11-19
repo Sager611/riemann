@@ -1,0 +1,22 @@
+20 cells 25s, max increase of log N+ so far 0.1393 at 73,32
+40 cells 47s, max increase of log N+ so far 0.1444 at 76,32
+60 cells 69s, max increase of log N+ so far 0.1518 at 79,32
+80 cells 90s, max increase of log N+ so far 0.1563 at 83,32
+100 cells 111s, max increase of log N+ so far 0.1589 at 86,32
+120 cells 130s, max increase of log N+ so far 0.1610 at 89,32
+140 cells 152s, max increase of log N+ so far 0.1610 at 89,32
+160 cells 176s, max increase of log N+ so far 0.1620 at 96,32
+180 cells 198s, max increase of log N+ so far 0.1645 at 99,32
+200 cells 219s, max increase of log N+ so far 0.1669 at 103,32
+220 cells 240s, max increase of log N+ so far 0.1712 at 106,32
+240 cells 260s, max increase of log N+ so far 0.1812 at 109,32
+260 cells 280s, max increase of log N+ so far 0.1881 at 113,32
+280 cells 303s, max increase of log N+ so far 0.1905 at 116,32
+300 cells 326s, max increase of log N+ so far 0.1928 at 119,32
+320 cells 346s, max increase of log N+ so far 0.1936 at 120,32
+340 cells 366s, max increase of log N+ so far 0.1936 at 120,32
+360 cells 385s, max increase of log N+ so far 0.1936 at 120,32
+380 cells 405s, max increase of log N+ so far 0.1936 at 120,32
+400 cells 424s, max increase of log N+ so far 0.1936 at 120,32
+420 cells 443s, max increase of log N+ so far 0.1936 at 120,32
+done 421 cells 444s; max increase of log N+ vs published 0.1936 at 120,32

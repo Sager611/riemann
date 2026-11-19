@@ -1,0 +1,31 @@
+S series: s4..s7 = ['-1', '-14', '-145', '-1412']
+cell/row pairs compared: 418  missing N4 cells where N3 applies: ['1,29', '1,29.5', '1,30', '1,30.5', '1,31', '1,32', '1,33', '1,34', '1,35', '1,36', '1,37', '1,38', '1,39', '1,40', '10,29', '10,29.5', '10,30', '10,30.5', '10,31', '10,32'] 1833
+min over pairs of (N3 lower - N4 upper) in log N: (7.536508641824845, '56,38', 9, 13.264346011230934, 5.727837369406089)
+max log T1 over the published scan: 36.2152 at (3120.0, 3130.0)
+log T 28.73: edge delta = lambda/l = 0.007447
+log T 29.00: edge delta = lambda/l = 0.007374
+log T 29.50: edge delta = lambda/l = 0.007242
+log T 30.00: edge delta = lambda/l = 0.007115
+log T 31.00: edge delta = lambda/l = 0.006874
+log T 32.00: edge delta = lambda/l = 0.006648
+log T 34.00: edge delta = lambda/l = 0.006237
+log T 36.00: edge delta = lambda/l = 0.005874
+log T 38.00: edge delta = lambda/l = 0.005548
+log T 40.00: edge delta = lambda/l = 0.005258
+log T 41.00: edge delta = lambda/l = 0.005111
+missing cells (with an N3 row) NOT inside the zero-free region: 0 []
+row1 (e^log3e12, e^29]       inside the zero-free region (delta <= 0.0073 <= edge delta 0.007374 at log T 29.0000)
+row2 (e^29, e^30]            evaluated for log T in (29.0000, 30.0000], delta in (edge, 0.0073]; min log(N3/N4) = 7.9011 at cell 73,29.5
+row3 (e^30, e^31]            evaluated for log T in (30.0000, 31.0000], delta in (edge, 0.0075]; min log(N3/N4) = 7.8933 at cell 71,30.5
+row4 (e^31, e^32]            evaluated for log T in (31.0000, 32.0000], delta in (edge, 0.0077]; min log(N3/N4) = 7.8653 at cell 68,32
+row5 (e^32, e^33]            evaluated for log T in (32.0000, 33.0000], delta in (edge, 0.0079]; min log(N3/N4) = 7.8629 at cell 66,33
+row6 (e^33, e^34]            evaluated for log T in (33.0000, 34.0000], delta in (edge, 0.0081]; min log(N3/N4) = 7.8655 at cell 64,34
+row7 (e^34, e^35]            evaluated for log T in (34.0000, 35.0000], delta in (edge, 0.0082]; min log(N3/N4) = 7.8677 at cell 62,35
+row8 (e^35, e^36]            evaluated for log T in (35.0000, 36.0000], delta in (edge, 0.0084]; min log(N3/N4) = 7.8753 at cell 60,36
+row9 (e^36, e^37]            evaluated for log T in (36.0000, 36.2152], delta in (edge, 0.0086]; min log(N3/N4) = 7.8666 at cell 59,37
+row10 (e^37, e^38]           never evaluated (log T > 36.2152)
+row11 (e^38, e^39]           never evaluated (log T > 36.2152)
+row12 (e^39, e^40]           never evaluated (log T > 36.2152)
+row13 (e^40, e^41]           never evaluated (log T > 36.2152)
+uniform 1.62e11              evaluated for log T in (28.7296, 36.2152], delta in (edge, 0.0073]; min log(N3/N4) = 20.2862 at cell 74,37
+T<=e^29 (=row1)              inside the zero-free region (delta <= 0.0073 <= edge delta 0.007374 at log T 29.0000)

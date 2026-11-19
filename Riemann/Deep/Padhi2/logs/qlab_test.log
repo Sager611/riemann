@@ -1,0 +1,5 @@
+S series: s4..s7 = ['-1', '-14', '-145', '-1412']
+872 877 c=110 f=0.50 q_pub=0.991367809 q=0.991367809 diff=0.0e+00 {"N1": 2754, "N2": 2187, "N4": 55743} 5s
+variant published: 1 intervals [872, 877), max q 0.9913678095 on (872.0, 877.0); 0 differ from published (max |diff| 0.00e+00); 5s
+argmin counts: {"N1": 2754, "N2": 2187, "N4": 55743}
+N3 wins (first 50): []

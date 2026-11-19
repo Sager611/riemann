@@ -1,0 +1,12 @@
+BTY TeX: c_k = [4, -8, 2, 20, -9, -34, 27, 91, -27, -201, 32, 895, 1949, 2389, 1896, 949, 239]  sum c^2 = 14912370  a0 = 1.0 a1 = 1.74124032598 a = 3.52441805025
+   a1 vs 865534/497079: 0.0 ; a vs 2919857/828465: 6.78e-21 ; w0 = 5.67278759886
+   kappa_m (his) = ['1.0', '-0.99068685', '0.9080326', '-0.61117579', '0.19906868', '0.032596042', '-0.033760186']  sum = 0.5040745052 = 433/859: True
+   W check at (0.5-3j) : GL400 (1.3877979331444126+1.2369779179591398j)  mp.quad (1.3877979331444557+1.2369779179591072j)
+   W check at (70-8j) : GL400 (0.07986446769342886+0.009096513349738456j)  mp.quad (0.07986446769350272+0.00909651334973827j)
+table check: 507 entries; entries above min_l(certified, inherited) or kmin mismatches: none
+grid (29,76): 2695 points, min over grid of max(M2 both orderings) = 1.2472e-02 at log t 29.000, eta0 0.007600, eta1 0.007600, d 0.06101
+grid (31,69): 2695 points, min over grid of max(M2 both orderings) = 1.3703e-03 at log t 31.000, eta0 0.006900, eta1 0.006900, d 0.12999
+grid (30,72): 2695 points, min over grid of max(M2 both orderings) = 5.6053e-03 at log t 30.000, eta0 0.007200, eta1 0.007200, d 0.09215
+grid (32,68): 2695 points, min over grid of max(M2 both orderings) = 1.1608e-02 at log t 32.000, eta0 0.006800, eta1 0.006800, d 0.05537
+grid (31,71): 2695 points, min over grid of max(M2 both orderings) = 1.4959e-02 at log t 31.000, eta0 0.007100, eta1 0.007100, d 0.05628
+grid (29,74): 2695 points, min over grid of max(M2 both orderings) = 1.0691e-03 at log t 29.000, eta0 0.007400, eta1 0.007400, d 0.14230
