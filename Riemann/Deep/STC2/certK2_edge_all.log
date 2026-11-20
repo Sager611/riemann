@@ -1,0 +1,42 @@
+L5 (a) tau=0: U(b,0)-pi, b in [0,1/2]: certified, 932 intervals, certified min (scaled) >= 1.987338e-04, smallest centre value (scaled) 2.006998e-04, 0.1 s
+L5 (b) b=1/2, s=+1: max(1,tau^2) H_s, tau in [0,100]: certified, 2229 intervals, certified min (scaled) >= 1.859442e-04, smallest centre value (scaled) 1.873618e-04, 0.3 s
+L5 (c) b=1/2, s=+1: Q (Lemma 4.10 tail), |t|>=100: certified, 7 intervals, certified min (scaled) >= 1.075637e+00, smallest centre value (scaled) 1.083177e+00, 0.3 s
+L5 (b) b=1/2, s=-1: max(1,tau^2) H_s, tau in [0,100]: certified, 1557 intervals, certified min (scaled) >= 1.184977e+00, smallest centre value (scaled) 1.191775e+00, 0.5 s
+L5 (c) b=1/2, s=-1: Q (Lemma 4.10 tail), |t|>=100: certified, 7 intervals, certified min (scaled) >= 1.133434e+00, smallest centre value (scaled) 1.140724e+00, 0.5 s
+L5: (K) CERTIFIED on 0<=b<=1/2, t != 0 (harmonic reduction to the boundary) {"a": 0.00019873375790788856, "b+1": 0.00018594416750950486, "c+1": 1.0756366510144886, "b-1": 1.1849766609972443, "c-1": 1.1334341117585396}
+memcap: peak 0 MB rc=0
+L20 (a) tau=0: U(b,0)-pi, b in [0,1/2]: certified, 1002 intervals, certified min (scaled) >= 1.992175e-04, smallest centre value (scaled) 2.004350e-04, 0.1 s
+L20 (b) b=1/2, s=+1: max(1,tau^2) H_s, tau in [0,100]: certified, 2033 intervals, certified min (scaled) >= 1.006214e-04, smallest centre value (scaled) 1.013748e-04, 0.3 s
+L20 (c) b=1/2, s=+1: Q (Lemma 4.10 tail), |t|>=100: certified, 1023 intervals, certified min (scaled) >= 2.264644e-02, smallest centre value (scaled) 2.278428e-02, 0.5 s
+L20 (b) b=1/2, s=-1: max(1,tau^2) H_s, tau in [0,100]: certified, 1963 intervals, certified min (scaled) >= 1.954653e-04, smallest centre value (scaled) 1.964890e-04, 0.7 s
+L20 (c) b=1/2, s=-1: Q (Lemma 4.10 tail), |t|>=100: certified, 1023 intervals, certified min (scaled) >= 2.359350e-02, smallest centre value (scaled) 2.372778e-02, 0.9 s
+L20: (K) CERTIFIED on 0<=b<=1/2, t != 0 (harmonic reduction to the boundary) {"a": 0.0001992175078332546, "b+1": 0.00010062139630750821, "c+1": 0.0226464357250926, "b-1": 0.00019546533306982687, "c-1": 0.02359350265367053}
+memcap: peak 0 MB rc=0
+L60 (a) tau=0: U(b,0)-pi, b in [0,1/2]: certified, 1030 intervals, certified min (scaled) >= 1.988493e-04, smallest centre value (scaled) 2.005161e-04, 0.1 s
+L60 (b) b=1/2, s=+1: max(1,tau^2) H_s, tau in [0,100]: certified, 2093 intervals, certified min (scaled) >= 1.418467e-04, smallest centre value (scaled) 1.423980e-04, 0.3 s
+L60 (c) b=1/2, s=+1: Q (Lemma 4.10 tail), |t|>=100: certified, 1741 intervals, certified min (scaled) >= 7.078744e-03, smallest centre value (scaled) 7.118283e-03, 0.7 s
+L60 (b) b=1/2, s=-1: max(1,tau^2) H_s, tau in [0,100]: certified, 1809 intervals, certified min (scaled) >= 1.066557e-04, smallest centre value (scaled) 1.069168e-04, 0.9 s
+L60 (c) b=1/2, s=-1: Q (Lemma 4.10 tail), |t|>=100: certified, 1023 intervals, certified min (scaled) >= 7.967501e-03, smallest centre value (scaled) 8.044768e-03, 1.1 s
+L60: (K) CERTIFIED on 0<=b<=1/2, t != 0 (harmonic reduction to the boundary) {"a": 0.00019884930129810037, "b+1": 0.00014184668299654105, "c+1": 0.0070787439017648245, "b-1": 0.00010665565297027274, "c-1": 0.007967501448595317}
+memcap: peak 0 MB rc=0
+L150 (a) tau=0: U(b,0)-pi, b in [0,1/2]: certified, 1032 intervals, certified min (scaled) >= 1.988275e-04, smallest centre value (scaled) 2.005969e-04, 0.1 s
+L150 (b) b=1/2, s=+1: max(1,tau^2) H_s, tau in [0,100]: certified, 2021 intervals, certified min (scaled) >= 1.506131e-04, smallest centre value (scaled) 1.514414e-04, 0.3 s
+L150 (c) b=1/2, s=+1: Q (Lemma 4.10 tail), |t|>=100: certified, 1023 intervals, certified min (scaled) >= 6.251453e-03, smallest centre value (scaled) 6.299371e-03, 0.5 s
+L150 (b) b=1/2, s=-1: max(1,tau^2) H_s, tau in [0,100]: certified, 1345 intervals, certified min (scaled) >= 1.424354e-04, smallest centre value (scaled) 1.433866e-04, 0.6 s
+L150 (c) b=1/2, s=-1: Q (Lemma 4.10 tail), |t|>=100: certified, 1023 intervals, certified min (scaled) >= 7.404984e-03, smallest centre value (scaled) 7.451818e-03, 0.8 s
+L150: (K) CERTIFIED on 0<=b<=1/2, t != 0 (harmonic reduction to the boundary) {"a": 0.0001988275098272073, "b+1": 0.00015061306008077257, "c+1": 0.006251453428201061, "b-1": 0.00014243540897590078, "c-1": 0.007404983979217789}
+memcap: peak 0 MB rc=0
+C400 (a) tau=0: U(b,0)-pi, b in [0,1/2]: certified, 1088 intervals, certified min (scaled) >= 1.995939e-04, smallest centre value (scaled) 2.001940e-04, 0.1 s
+C400 (b) b=1/2, s=+1: max(1,tau^2) H_s, tau in [0,100]: certified, 2311 intervals, certified min (scaled) >= 1.298394e-04, smallest centre value (scaled) 1.305550e-04, 0.5 s
+C400 (c) b=1/2, s=+1: Q (Lemma 4.10 tail), |t|>=100: certified, 32767 intervals, certified min (scaled) >= 1.866756e-04, smallest centre value (scaled) 1.882074e-04, 13.8 s
+C400 (b) b=1/2, s=-1: max(1,tau^2) H_s, tau in [0,100]: certified, 2149 intervals, certified min (scaled) >= 1.299232e-04, smallest centre value (scaled) 1.301593e-04, 14.1 s
+C400 (c) b=1/2, s=-1: Q (Lemma 4.10 tail), |t|>=100: certified, 32767 intervals, certified min (scaled) >= 1.987747e-04, smallest centre value (scaled) 2.002740e-04, 26.8 s
+C400: (K) CERTIFIED on 0<=b<=1/2, t != 0 (harmonic reduction to the boundary) {"a": 0.00019959387574222372, "b+1": 0.0001298394276684277, "c+1": 0.00018667557153348774, "b-1": 0.00012992324861304472, "c-1": 0.00019877473334306572}
+memcap: peak 15 MB rc=0
+D6000 (a) tau=0: U(b,0)-pi, b in [0,1/2]: certified, 1096 intervals, certified min (scaled) >= 1.995840e-04, smallest centre value (scaled) 2.001864e-04, 0.1 s
+D6000 (b) b=1/2, s=+1: max(1,tau^2) H_s, tau in [0,100]: certified, 2689 intervals, certified min (scaled) >= 1.210967e-04, smallest centre value (scaled) 1.216966e-04, 0.6 s
+D6000 (c) b=1/2, s=+1: Q (Lemma 4.10 tail), |t|>=100: certified, 32767 intervals, certified min (scaled) >= 1.867553e-04, smallest centre value (scaled) 1.882878e-04, 13.7 s
+D6000 (b) b=1/2, s=-1: max(1,tau^2) H_s, tau in [0,100]: certified, 2537 intervals, certified min (scaled) >= 1.217883e-04, smallest centre value (scaled) 1.221088e-04, 14.1 s
+D6000 (c) b=1/2, s=-1: Q (Lemma 4.10 tail), |t|>=100: certified, 32767 intervals, certified min (scaled) >= 1.955725e-04, smallest centre value (scaled) 1.971050e-04, 26.8 s
+D6000: (K) CERTIFIED on 0<=b<=1/2, t != 0 (harmonic reduction to the boundary) {"a": 0.00019958401338748735, "b+1": 0.00012109666235078828, "c+1": 0.00018675533325323087, "b-1": 0.0001217883102873064, "c-1": 0.00019557253750332156}
+memcap: peak 15 MB rc=0

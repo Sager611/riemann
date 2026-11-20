@@ -1,0 +1,30 @@
+L5 box region A s=+1 (|t|<=100): certified, 868 boxes, min lower bound [1.8622253433502191098804e-5 +/- 3.66e-28], 0 s
+L5 box region A s=-1 (|t|<=100): certified, 454 boxes, min lower bound [5.0366262595778768486613e-6 +/- 4.73e-29], 0 s
+L5 box region B u > 0 (|t|>=100): certified, 1 boxes, min lower bound [1.0726011171842290687052 +/- 1.52e-23], 0 s
+L5 box region B u < 0 (|t|>=100): certified, 1 boxes, min lower bound [1.1304301593970461072211 +/- 3.68e-23], 0 s
+L5: (K) CERTIFIED on 0<=b<=1/2, t != 0 (2-D boxes, no harmonicity)
+memcap: peak 0 MB rc=0
+L60 box region A s=+1 (|t|<=100): certified, 3942 boxes, min lower bound [2.4361464638649256577578e-8 +/- 2.46e-31], 0 s
+L60 box region A s=-1 (|t|<=100): certified, 2248 boxes, min lower bound [2.9411621250842263533300e-7 +/- 4.83e-30], 1 s
+L60 box region B u > 0 (|t|>=100): certified, 15 boxes, min lower bound [0.0015822221447336566372956 +/- 7.09e-27], 1 s
+L60 box region B u < 0 (|t|>=100): certified, 15 boxes, min lower bound [0.0026357123078977724519094 +/- 1.27e-26], 1 s
+L60: (K) CERTIFIED on 0<=b<=1/2, t != 0 (2-D boxes, no harmonicity)
+memcap: peak 0 MB rc=0
+L150 box region A s=+1 (|t|<=100): certified, 4278 boxes, min lower bound [2.0682551142968881761970e-8 +/- 6.78e-32], 1 s
+L150 box region A s=-1 (|t|<=100): certified, 2126 boxes, min lower bound [1.2654352050313269784036e-7 +/- 3.81e-30], 1 s
+L150 box region B u > 0 (|t|>=100): certified, 11 boxes, min lower bound [0.00028219486262145719090489 +/- 1.60e-27], 1 s
+L150 box region B u < 0 (|t|>=100): certified, 7 boxes, min lower bound [0.00090947927809291148912789 +/- 3.52e-27], 1 s
+L150: (K) CERTIFIED on 0<=b<=1/2, t != 0 (2-D boxes, no harmonicity)
+memcap: peak 0 MB rc=0
+C400 box region A s=+1 (|t|<=100): certified, 9022 boxes, min lower bound [2.2320215365498551453358e-11 +/- 3.11e-34], 1 s
+C400 box region A s=-1 (|t|<=100): certified, 7382 boxes, min lower bound [3.0171313021960278601825e-10 +/- 9.23e-34], 3 s
+C400 box region B u > 0 (|t|>=100): certified, 511 boxes, min lower bound [7.3199454842043135666390e-5 +/- 2.61e-28], 3 s
+C400 box region B u < 0 (|t|>=100): certified, 511 boxes, min lower bound [8.8513734767500401256164e-5 +/- 2.07e-28], 3 s
+C400: (K) CERTIFIED on 0<=b<=1/2, t != 0 (2-D boxes, no harmonicity)
+memcap: peak 0 MB rc=0
+D6000 box region A s=+1 (|t|<=100): certified, 9470 boxes, min lower bound [6.1166657714413884672735e-11 +/- 1.67e-34], 1 s
+D6000 box region A s=-1 (|t|<=100): certified, 9106 boxes, min lower bound [2.9759208396134815739496e-10 +/- 3.95e-33], 3 s
+D6000 box region B u > 0 (|t|>=100): certified, 511 boxes, min lower bound [7.3187135337220044830244e-5 +/- 2.19e-28], 3 s
+D6000 box region B u < 0 (|t|>=100): certified, 511 boxes, min lower bound [7.6448465766005803157919e-5 +/- 2.78e-28], 4 s
+D6000: (K) CERTIFIED on 0<=b<=1/2, t != 0 (2-D boxes, no harmonicity)
+memcap: peak 0 MB rc=0

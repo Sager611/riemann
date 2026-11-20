@@ -1,0 +1,24 @@
+L20 box region A s=+1 (|t|<=100): certified, 2716 boxes, min lower bound [1.6219972547214562796016e-8 +/- 4.42e-31], 0 s
+L20 box region A s=-1 (|t|<=100): certified, 1960 boxes, min lower bound [3.6010236904284986475914e-7 +/- 4.54e-30], 1 s
+L20 box region B u > 0 (|t|>=100): certified, 7 boxes, min lower bound [0.0037231233645886015385142 +/- 2.58e-26], 1 s
+L20 box region B u < 0 (|t|>=100): certified, 7 boxes, min lower bound [0.0050465764859665938440879 +/- 1.40e-27], 1 s
+L20: (K) CERTIFIED on 0<=b<=1/2, t != 0 (2-D boxes, no harmonicity)
+memcap: peak 0 MB rc=0
+        7.90 real         1.14 user         4.80 sys
+            34947072  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12418  page reclaims
+                  39  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   5  signals received
+                 112  voluntary context switches
+                8138  involuntary context switches
+            62372181  instructions retired
+            39809469  cycles elapsed
+             2261328  peak memory footprint

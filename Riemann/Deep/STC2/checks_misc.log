@@ -1,0 +1,15 @@
+L5 kernels.json == fresh Appendix D extraction: True  (n = 9, d = 1.0)
+L20 kernels.json == fresh Appendix D extraction: True  (n = 9, d = 1.2)
+L60 kernels.json == fresh Appendix D extraction: True  (n = 9, d = 1.0)
+L150 kernels.json == fresh Appendix D extraction: True  (n = 9, d = 0.85)
+C400 kernels.json == fresh Appendix D extraction: True  (n = 19, d = 0.85)
+D6000 kernels.json == fresh Appendix D extraction: True  (n = 19, d = 0.85)
+L5 g(1e8) = [9.2466e-12 +/- 4.21e-17], gt(400) = [1.69e-255 +/- 4.81e-258], g(1e8) > gt(400): True
+L20 g(1e8) = [1.2411e-12 +/- 2.81e-17], gt(400) = [4.85e-291 +/- 2.70e-294], g(1e8) > gt(400): True
+L60 g(1e8) = [2.6349e-11 +/- 3.47e-16], gt(400) = [1.47e-256 +/- 2.52e-259], g(1e8) > gt(400): True
+L150 g(1e8) = [4.0358e-11 +/- 4.78e-16], gt(400) = [1.42e-229 +/- 4.84e-232], g(1e8) > gt(400): True
+C400 g(1e8) = [8.1251e-10 +/- 1.88e-15], gt(400) = [1.21e-226 +/- 1.53e-229], g(1e8) > gt(400): True
+D6000 g(1e8) = [8.7025e-10 +/- 1.97e-15], gt(400) = [1.24e-226 +/- 2.60e-229], g(1e8) > gt(400): True
+l150: nu < 0 at 7 of 300 grid points in [640, 670]; first/last: (mpf('652.89999999999999999999999999999999999999999999999973'), mpf('653.5'))
+l150: |pi a(L)| smallest at L = 652.9: pi a = 7.108e+01, pi b = 7.584e+02, d log g/dL = 1.718
+memcap: peak 0 MB rc=0

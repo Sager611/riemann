@@ -1,0 +1,42 @@
+L5 mode N A1=0.20176: [1,1e+08] 2938 intervals; F_u <= 0.6653627107 (point max 0.6653627107 at T=1), F_l <= -0.7495448905 (point max -0.7495448905 at T=1); T>=1e+08 (Lemma 4.7, K=3.9517): F_u <= 0.504196, F_l <= -1.245804; SUP <= 0.6653627107  9 s
+memcap: peak 14 MB rc=0
+L5 mode S A1=0.20176: [1,1e+08] 2262 intervals; F_u <= 0.1350840275 (point max -0.2236714646 at T=1), F_l <= 0.1394892848 (point max 0.1394892848 at T=1); T>=1e+08 (Lemma 4.7, K=4.1175): F_u <= -0.370804, F_l <= -0.370804; SUP <= 0.1394892848  7 s
+memcap: peak 14 MB rc=0
+L20 mode N A1=0.10823: [1,1e+08] 5482 intervals; F_u <= 0.7020688898 (point max 0.7020688898 at T=1), F_l <= -1.0479941559 (point max -1.0739766556 at T=5864.59); T>=1e+08 (Lemma 4.7, K=5.2169): F_u <= 0.676101, F_l <= -1.073899; SUP <= 0.7020688898  17 s
+memcap: peak 17 MB rc=0
+L20 mode S A1=0.10823: [1,1e+08] 7748 intervals; F_u <= -0.1827880429 (point max -0.1827880439 at T=1.55843), F_l <= -0.1828125064 (point max -0.1989754381 at T=5045.21); T>=1e+08 (Lemma 4.7, K=5.3826): F_u <= -0.198899, F_l <= -0.198899; SUP <= -0.1827880429  25 s
+memcap: peak 17 MB rc=0
+L60 mode N A1=0.09473: [1,1e+08] 5278 intervals; F_u <= 0.7289398112 (point max 0.7289398112 at T=1), F_l <= -1.0211105243 (point max -1.0491657506 at T=4416.56); T>=1e+08 (Lemma 4.7, K=4.0026): F_u <= 0.700913, F_l <= -1.049087; SUP <= 0.7289398112  17 s
+memcap: peak 17 MB rc=0
+L60 mode S A1=0.09473: [1,1e+08] 7336 intervals; F_u <= -0.1584773085 (point max -0.1584773093 at T=1.22587), F_l <= -0.1584835711 (point max -0.1741640966 at T=3628.57); T>=1e+08 (Lemma 4.7, K=4.1684): F_u <= -0.174087, F_l <= -0.174087; SUP <= -0.1584773085  22 s
+memcap: peak 17 MB rc=0
+L150 mode N A1=0.09349: [1,1e+08] 5378 intervals; F_u <= 0.7303152209 (point max 0.7303152209 at T=1), F_l <= -1.0197347877 (point max -1.0468929778 at T=3988.31); T>=1e+08 (Lemma 4.7, K=3.1946): F_u <= 0.703194, F_l <= -1.046806; SUP <= 0.7303152209  17 s
+memcap: peak 17 MB rc=0
+L150 mode S A1=0.09349: [1,1e+08] 7760 intervals; F_u <= -0.1575777250 (point max -0.1575777259 at T=1.22748), F_l <= -0.1575954422 (point max -0.1718911482 at T=3284.9); T>=1e+08 (Lemma 4.7, K=3.3604): F_u <= -0.171806, F_l <= -0.171806; SUP <= -0.1575777250  48 s
+memcap: peak 17 MB rc=0
+C400 mode N A1=0.08399: [1,1e+08] 6468 intervals; F_u <= 0.7375635721 (point max 0.7375635721 at T=1), F_l <= -1.0124572427 (point max -1.0293954221 at T=7381.97); T>=1e+08 (Lemma 4.7, K=3.1951): F_u <= 0.720644, F_l <= -1.029356; SUP <= 0.7375635721  95 s
+memcap: peak 17 MB rc=0
+C400 mode S A1=0.08399: [1,1e+08] 9844 intervals; F_u <= -0.1458279165 (point max -0.1458279175 at T=1.65898), F_l <= -0.1458397453 (point max -0.1543944041 at T=5720.58); T>=1e+08 (Lemma 4.7, K=3.3609): F_u <= -0.154356, F_l <= -0.154356; SUP <= -0.1458279165  79 s
+memcap: peak 18 MB rc=0
+D6000 mode N A1=0.08382: [1,1e+08] 6784 intervals; F_u <= 0.7357355513 (point max 0.7357355513 at T=1), F_l <= -1.0142935311 (point max -1.0290955455 at T=4933.55); T>=1e+08 (Lemma 4.7, K=3.1956): F_u <= 0.720960, F_l <= -1.029040; SUP <= 0.7357355513  46 s
+memcap: peak 17 MB rc=0
+D6000 mode S A1=0.08382: [1,1e+08] 10564 intervals; F_u <= -0.1464115303 (point max -0.1464115313 at T=1.78347), F_l <= -0.1464135352 (point max -0.1540940183 at T=3799.47); T>=1e+08 (Lemma 4.7, K=3.3614): F_u <= -0.154040, F_l <= -0.154040; SUP <= -0.1464115303  64 s
+memcap: peak 18 MB rc=0
+      497.90 real       293.51 user       220.10 sys
+            37781504  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              434339  page reclaims
+                2744  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  32  messages sent
+                  33  messages received
+                 329  signals received
+                1427  voluntary context switches
+             1163786  involuntary context switches
+            68396389  instructions retired
+            55881360  cycles elapsed
+             2031952  peak memory footprint

@@ -1,0 +1,25 @@
+L20 (a) tau=0: U(b,0)-pi, b in [0,1/2]: certified, 1002 intervals, certified min (scaled) >= 1.992175e-04, smallest centre value (scaled) 2.004350e-04, 0.1 s
+L20 (b) b=1/2, s=+1: max(1,tau^2) H_s, tau in [0,100]: certified, 739 intervals, certified min (scaled) >= 1.006214e-04, smallest centre value (scaled) 1.005135e-04, 0.2 s
+L20 (c) b=1/2, s=+1: Q (Lemma 4.10 tail), |t|>=100: certified, 1023 intervals, certified min (scaled) >= 2.264644e-02, smallest centre value (scaled) 2.278428e-02, 0.3 s
+L20 (b) b=1/2, s=-1: max(1,tau^2) H_s, tau in [0,100]: certified, 525 intervals, certified min (scaled) >= 1.938543e-04, smallest centre value (scaled) 1.906285e-04, 0.4 s
+L20 (c) b=1/2, s=-1: Q (Lemma 4.10 tail), |t|>=100: certified, 1023 intervals, certified min (scaled) >= 2.359350e-02, smallest centre value (scaled) 2.372778e-02, 0.5 s
+L20: (K) CERTIFIED on 0<=b<=1/2, t != 0 (harmonic reduction to the boundary) {"a": 0.0001992175078332546, "b+1": 0.00010062139630750821, "c+1": 0.0226464357250926, "b-1": 0.00019385429385216857, "c-1": 0.02359350265367053}
+memcap: peak 0 MB rc=0
+        7.96 real         1.10 user         4.79 sys
+            34930688  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               10619  page reclaims
+                1818  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   7  signals received
+                  46  voluntary context switches
+                9447  involuntary context switches
+            60632135  instructions retired
+            38840083  cycles elapsed
+             2244944  peak memory footprint
