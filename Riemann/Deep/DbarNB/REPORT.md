@@ -65,7 +65,7 @@ THEOREM: Under RH alone, lim_{λ→0} D(λ)² log(1/λ) = Σ_ρ m_ρ²/|ρ|² fo
   RH-only sharp continuous asymptotic; contour repairs routine.
 - Second pass on the fixes (O1–O6 incl. block 1 wording): all CLOSED, no new error; verdict CORRECT for revised §3, Lemma D, §6.
 
-## Novelty (adversarial; scouts' reports in .scratch/dbarnb/*_scout.md)
+## Novelty (adversarial; scouts' reports in novelty/*_scout.md)
 - arXiv listings this and last month (lst.py 'Nyman|Beurling|B.ez-Duarte|Burnol|Balazard', math.NT, math.CA) and Zenodo
   "Nyman-Beurling": no RH-alone upper bound for D(λ) or d_N of order 1/log. GXL (2 calls): 0 supports; hits are Burnol's lower
   bound (math/0103058), BCF 1211.5191 (RH + moment condition on 1/ζ′(ρ), discrete d_N), Dimitrov–Oliveira 1608.07887
