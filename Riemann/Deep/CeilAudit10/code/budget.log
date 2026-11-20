@@ -1,0 +1,12 @@
+m=2: bound mu_m/mu_{m-1} <= 0.5352 * mu1/mu0 (prod rho = 0.5223)
+m=3: bound mu_m/mu_{m-1} <= 0.3842 * mu1/mu0 (prod rho = 0.3733)
+m=4: bound mu_m/mu_{m-1} <= 0.3081 * mu1/mu0 (prod rho = 0.2989)
+m=5: bound mu_m/mu_{m-1} <= 0.2618 * mu1/mu0 (prod rho = 0.2538)
+m=6: bound mu_m/mu_{m-1} <= 0.2304 * mu1/mu0 (prod rho = 0.2232)
+m=8: bound mu_m/mu_{m-1} <= 0.1902 * mu1/mu0 (prod rho = 0.1842)
+m=10: bound mu_m/mu_{m-1} <= 0.1653 * mu1/mu0 (prod rho = 0.1601)
+m=20: bound mu_m/mu_{m-1} <= 0.1119 * mu1/mu0 (prod rho = 0.1084)
+m=50: bound mu_m/mu_{m-1} <= 0.07391 * mu1/mu0 (prod rho = 0.07157)
+m=99: bound mu_m/mu_{m-1} <= 0.05787 * mu1/mu0 (prod rho = 0.05603)
+MP lam=3/4, mu0=mu1=1: mu_m <= 2:0.714, 3:0.375, 4:0.154, 5:0.0522, 6:0.015, 7:0.00373, 8:0.00082, 9:0.000162, 10:2.88e-5
+memcap: peak 0 MB rc=0

@@ -1,0 +1,13 @@
+monic                roots any:   3/150 images with non-real zeros (max|Im| 0.664, e.g. deg,scale (4, 10))
+monic                roots neg:  28/150 images with non-real zeros (max|Im| 1.77, e.g. deg,scale (9, 10))
+monic/(3/2)_k        roots any:   0/150 images with non-real zeros (max|Im| 0, e.g. deg,scale None)
+monic/(3/2)_k        roots neg:   0/150 images with non-real zeros (max|Im| 0, e.g. deg,scale None)
+monic/k!             roots any:   0/150 images with non-real zeros (max|Im| 0, e.g. deg,scale None)
+monic/k!             roots neg:   0/150 images with non-real zeros (max|Im| 0, e.g. deg,scale None)
+monic/(3/2)_k^2      roots any:   0/150 images with non-real zeros (max|Im| 0, e.g. deg,scale None)
+monic/(3/2)_k^2      roots neg:   0/150 images with non-real zeros (max|Im| 0, e.g. deg,scale None)
+monic*k!/(3/2)_k^2   roots any:   0/150 images with non-real zeros (max|Im| 0, e.g. deg,scale None)
+monic*k!/(3/2)_k^2   roots neg:   0/150 images with non-real zeros (max|Im| 0, e.g. deg,scale None)
+MP-like k!/(3/2)_k   roots any:   0/150 images with non-real zeros (max|Im| 0, e.g. deg,scale None)
+MP-like k!/(3/2)_k   roots neg:   0/150 images with non-real zeros (max|Im| 0, e.g. deg,scale None)
+memcap: peak 14 MB rc=0

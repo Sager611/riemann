@@ -1,0 +1,5 @@
+xi=0.09765625 deg=6 kappa=0.0629425344 R=8.13495 (certified cap 0.07005633; below: True)
+xi=0.09765625 deg=10 kappa=0.0692206891 R=9.43029 (certified cap 0.07005633; below: True)
+xi=0.12500000 deg=6 kappa=0.0869141138 R=7.04615 (certified cap 0.08971026; below: True)
+xi=0.12500000 deg=10 kappa=0.0895448503 R=7.63448 (certified cap 0.08971026; below: True)
+memcap: peak 46 MB rc=0

@@ -1,0 +1,10 @@
+check theta=0.75 delta=0.2: nu_K=0.33123 predicted 0.32857 (E1 0.31250)
+theta=0.510 c=-0.13004 | E1 nu=0.1325 kappa=0.092979 LB=0.022310 | kept nu=0.1514 kappa=0.107712 LB=0.032670
+theta=0.550 c=-0.00058 | E1 nu=0.1625 kappa=0.116081 LB=0.078273 | kept nu=0.1857 kappa=0.133344 LB=0.090139
+theta=0.580 c=0.08363 | E1 nu=0.1850 kappa=0.132816 LB=0.116622 | kept nu=0.2114 kappa=0.152342 LB=0.129837
+theta=0.600 c=0.13455 | E1 nu=0.2000 kappa=0.143897 LB=0.140790 | kept nu=0.2286 kappa=0.165046 LB=0.154964
+theta=0.610 c=0.15861 | E1 nu=0.2075 kappa=0.149438 LB=0.158606 | kept nu=0.2371 kappa=0.171421 LB=0.167164
+theta=0.620 c=0.18178 | E1 nu=0.2150 kappa=0.154985 LB=0.181779 | kept nu=0.2457 kappa=0.177814 LB=0.181779
+theta=0.630 c=0.20411 | E1 nu=0.2225 kappa=0.160541 LB=0.204114 | kept nu=0.2543 kappa=0.184223 LB=0.204114
+kappa((2/7)(3t-1)) = c(t) at theta = 0.6176
+memcap: peak 46 MB rc=0

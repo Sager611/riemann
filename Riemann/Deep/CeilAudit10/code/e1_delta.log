@@ -1,0 +1,7 @@
+theta=0.600 delta=0.125 nu_K=0.20000  (E1 0.20000, route(a) 0.22857)
+theta=0.600 delta=0.250 nu_K=0.20000  (E1 0.20000, route(a) 0.22857)
+theta=0.600 delta=0.375 nu_K=0.20000  (E1 0.20000, route(a) 0.22857)
+memcap: peak 13 MB rc=0
+theta=0.600 delta=0.062 nu_K=0.21428  (E1 0.20000, route(a) 0.22857)
+theta=0.600 delta=0.100 nu_K=0.20571  (E1 0.20000, route(a) 0.22857)
+memcap: peak 13 MB rc=0
