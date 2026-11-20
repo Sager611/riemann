@@ -1,0 +1,27 @@
+T=3e12: D=4.2800 Smax=5.661 S1max=2.762
+  single harmonic, LP placement, w = 0.03a: a=1.00(c=7.4):-0.255 a=1.10(c=9.0):-0.326 a=1.20(c=11.0):-0.394 a=1.30(c=13.5):-0.468 a=1.40(c=16.4):-0.549 a=1.50(c=20.1):-0.638 a=1.60(c=24.5):-0.735 a=1.70(c=30.0):-0.842
+  single harmonic, LP placement, w = 0.0a: a=1.00(c=7.4):-0.278 a=1.10(c=9.0):-0.349 a=1.20(c=11.0):-0.421 a=1.30(c=13.5):-0.500 a=1.40(c=16.4):-0.586 a=1.50(c=20.1):-0.682 a=1.60(c=24.5):-0.787 a=1.70(c=30.0):-0.901
+t->inf: Smax/D=0.5944 S1max/D=0.3707
+  single harmonic, LP placement, w = 0.03a: a=1.30(c=13.5):-0.160 a=1.40(c=16.4):-0.282 a=1.50(c=20.1):-0.411 a=1.60(c=24.5):-0.545 a=1.70(c=30.0):-0.687 a=1.78(c=35.2):-0.804 a=1.93(c=47.0):-1.029
+  single harmonic, LP placement, w = 0.0a: a=1.30(c=13.5):-0.208 a=1.40(c=16.4):-0.337 a=1.50(c=20.1):-0.472 a=1.60(c=24.5):-0.614 a=1.70(c=30.0):-0.763 a=1.78(c=35.2):-0.888 a=1.93(c=47.0):-1.125
+  t=1e+20 (D=7.04, Smax=7.73, S1max=3.78), w=0.03a: a=1.30:-0.464 a=1.40:-0.548 a=1.50:-0.638 a=1.60:-0.735 a=1.70:-0.842 a=1.80:-0.957
+  t=1e+100 (D=36.35, Smax=26.53, S1max=14.65), w=0.03a: a=1.30:-0.306 a=1.40:-0.425 a=1.50:-0.548 a=1.60:-0.673 a=1.70:-0.802 a=1.80:-0.935
+memcap: peak 23 MB rc=0
+       15.46 real        11.29 user         9.01 sys
+           126255104  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               27611  page reclaims
+                 438  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  12  signals received
+                 403  voluntary context switches
+               31485  involuntary context switches
+            71383295  instructions retired
+            51602727  cycles elapsed
+             2163024  peak memory footprint

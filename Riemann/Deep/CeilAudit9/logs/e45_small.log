@@ -1,0 +1,29 @@
+T0=1e+04 H=400.0 dt=0.02 L=7.392 a=0.3314 y=100: U(Psi_y)=0.30763, m=0.13496, concavity loss J=0.17267; plain Levinson mollifier length yK, K=2,3,4: U=0.29796,0.29423,0.29371 (gains +0.00967,+0.01340,+0.01392)
+  twist K=2: min U_B=0.30631, gain +0.00132 = 0.764% of J; |beta|=[0.065]; vs plain length-2y mollifier gain +0.00967
+  twist K=3: min U_B=0.30472, gain +0.00292 = 1.690% of J; |beta|=[0.063 0.081]; vs plain length-3y mollifier gain +0.01340
+  twist K=4: min U_B=0.30353, gain +0.00410 = 2.373% of J; |beta|=[0.06  0.079 0.077]; vs plain length-4y mollifier gain +0.01392
+  twist K=6: min U_B=0.30059, gain +0.00704 = 4.078% of J; |beta|=[0.06  0.077 0.076 0.102 0.084]; vs plain length-6y mollifier gain +0.01392 (K=6: compared with length 4y)
+  split cos(t log 2 + phi0) > 0: best U_split=0.30661, gain +0.00102 = 0.591% of J
+  split cos(t log 3 + phi0) > 0: best U_split=0.30636, gain +0.00128 = 0.739% of J
+  split cos(t log 5 + phi0) > 0: best U_split=0.30492, gain +0.00272 = 1.574% of J
+  split two halves in t: gain +0.000055 = 0.032% of J
+  coefficient of 2^-s in V*Psi: c2 = 0.1474 (-> 0 as T -> infinity at fixed theta: twisted first-order gain -> 0)
+memcap: peak 68 MB rc=0
+      112.70 real       105.02 user        66.01 sys
+            93667328  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              136510  page reclaims
+                3207  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 114  signals received
+                1082  voluntary context switches
+              196122  involuntary context switches
+           198238406  instructions retired
+           221089630  cycles elapsed
+             2212176  peak memory footprint

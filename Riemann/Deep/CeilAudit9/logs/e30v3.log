@@ -1,0 +1,21 @@
+a=1.300 (c=13.46) T=3e+12: anchored LP (psi=3.93) W_norm -0.170; integer block: 8786 zeros (7148 off-line), M=824 periods; W_norm -0.1014; max|S| 5.38 (allowed 5.66); S_1 range [-1.56, 2.58] (allowed |S_1| <= 2.76); ADMISSIBLE; max zeros at one ordinate 3
+a=1.500 (c=20.09) T=3e+12: anchored LP (psi=3.73) W_norm -0.486; integer block: 7614 zeros (6456 off-line), M=824 periods; W_norm -0.3944; max|S| 5.00 (allowed 5.66); S_1 range [-1.11, 2.63] (allowed |S_1| <= 2.76); ADMISSIBLE; max zeros at one ordinate 3
+memcap: peak 107 MB rc=0
+       94.95 real        72.36 user        48.25 sys
+           144097280  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              102662  page reclaims
+                 840  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  22  messages received
+                  82  signals received
+                1155  voluntary context switches
+              185908  involuntary context switches
+           160669655  instructions retired
+           146960679  cycles elapsed
+             2294096  peak memory footprint

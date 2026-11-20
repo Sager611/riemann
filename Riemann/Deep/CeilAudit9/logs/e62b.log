@@ -1,0 +1,31 @@
+t0=1e+04 L=7.37 b=0.825: humps 3002, large 0.317; witness zeros/unit 0.2037 (zeta 1.0003); Omega_kinks/<F''^2> 0.0737 (all 3001 zeros rearranged: 0.1555); kinks 0.796 of zeros; cost at delta=0.1: 0.868 of <F''^2>
+t0=1e+04 L=7.37 b=0.500: humps 3002, large 0.516; witness zeros/unit 0.3770 (zeta 1.0003); Omega_kinks/<F''^2> 0.0392 (all 3001 zeros rearranged: 0.1555); kinks 0.623 of zeros; cost at delta=0.1: 0.462 of <F''^2>
+t0=1e+04 L=7.37 b=0.300: humps 3002, large 0.716; witness zeros/unit 0.5663 (zeta 1.0003); Omega_kinks/<F''^2> 0.0174 (all 3001 zeros rearranged: 0.1555); kinks 0.434 of zeros; cost at delta=0.1: 0.205 of <F''^2>
+t0=1e+06 L=11.98 b=0.749: humps 3000, large 0.293; witness zeros/unit 0.1963 (zeta 0.9997); Omega_kinks/<F''^2> 0.0585 (all 2999 zeros rearranged: 0.1575); kinks 0.804 of zeros; cost at delta=0.1: 0.689 of <F''^2>
+t0=1e+06 L=11.98 b=0.500: humps 3000, large 0.424; witness zeros/unit 0.2970 (zeta 0.9997); Omega_kinks/<F''^2> 0.0378 (all 2999 zeros rearranged: 0.1575); kinks 0.703 of zeros; cost at delta=0.1: 0.445 of <F''^2>
+t0=1e+06 L=11.98 b=0.300: humps 3000, large 0.610; witness zeros/unit 0.4673 (zeta 0.9997); Omega_kinks/<F''^2> 0.0183 (all 2999 zeros rearranged: 0.1575); kinks 0.533 of zeros; cost at delta=0.1: 0.216 of <F''^2>
+t0=1e+08 L=16.58 b=0.719: humps 3000, large 0.274; witness zeros/unit 0.1830 (zeta 0.9997); Omega_kinks/<F''^2> 0.0516 (all 2999 zeros rearranged: 0.1632); kinks 0.817 of zeros; cost at delta=0.1: 0.608 of <F''^2>
+t0=1e+08 L=16.58 b=0.500: humps 3000, large 0.388; witness zeros/unit 0.2710 (zeta 0.9997); Omega_kinks/<F''^2> 0.0336 (all 2999 zeros rearranged: 0.1632); kinks 0.729 of zeros; cost at delta=0.1: 0.396 of <F''^2>
+t0=1e+08 L=16.58 b=0.300: humps 3000, large 0.562; witness zeros/unit 0.4340 (zeta 0.9997); Omega_kinks/<F''^2> 0.0162 (all 2999 zeros rearranged: 0.1632); kinks 0.566 of zeros; cost at delta=0.1: 0.191 of <F''^2>
+t0=1e+10 L=21.19 b=0.703: humps 3001, large 0.250; witness zeros/unit 0.1627 (zeta 1.0000); Omega_kinks/<F''^2> 0.0497 (all 3000 zeros rearranged: 0.1587); kinks 0.837 of zeros; cost at delta=0.1: 0.586 of <F''^2>
+t0=1e+10 L=21.19 b=0.500: humps 3001, large 0.343; witness zeros/unit 0.2453 (zeta 1.0000); Omega_kinks/<F''^2> 0.0324 (all 3000 zeros rearranged: 0.1587); kinks 0.755 of zeros; cost at delta=0.1: 0.382 of <F''^2>
+t0=1e+10 L=21.19 b=0.300: humps 3001, large 0.505; witness zeros/unit 0.3840 (zeta 1.0000); Omega_kinks/<F''^2> 0.0165 (all 3000 zeros rearranged: 0.1587); kinks 0.616 of zeros; cost at delta=0.1: 0.194 of <F''^2>
+memcap: peak 109 MB rc=0
+      194.09 real       180.07 user       109.89 sys
+           131268608  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              225363  page reclaims
+                 286  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 195  signals received
+                 786  voluntary context switches
+              354895  involuntary context switches
+           308494001  instructions retired
+           338854263  cycles elapsed
+             2228560  peak memory footprint

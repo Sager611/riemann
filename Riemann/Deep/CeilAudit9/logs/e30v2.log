@@ -1,0 +1,24 @@
+a=0.990 (c=7.24) T=3e+12: anchored LP (psi=4.71) W_norm +0.160; integer block: 11537 zeros (8800 off-line), M=824 periods; W_norm +0.2584; max|S| 5.64 (allowed 5.66); S_1 range [-1.94, 4.93] (allowed |S_1| <= 2.76); not admissible; max zeros at one ordinate 2
+a=1.000 (c=7.39) T=3e+12: anchored LP (psi=4.71) W_norm +0.151; integer block: 11422 zeros (7612 off-line), M=824 periods; W_norm +0.2356; max|S| 5.65 (allowed 5.66); S_1 range [-2.47, 7.26] (allowed |S_1| <= 2.76); not admissible; max zeros at one ordinate 2
+a=1.050 (c=8.17) T=3e+12: anchored LP (psi=4.71) W_norm +0.117; integer block: 10878 zeros (9538 off-line), M=824 periods; W_norm +0.1559; max|S| 5.60 (allowed 5.66); S_1 range [-2.51, 5.31] (allowed |S_1| <= 2.76); not admissible; max zeros at one ordinate 2
+a=1.100 (c=9.03) T=3e+12: anchored LP (psi=4.71) W_norm +0.094; integer block: 10383 zeros (9332 off-line), M=824 periods; W_norm +0.1222; max|S| 5.56 (allowed 5.66); S_1 range [-2.32, 4.45] (allowed |S_1| <= 2.76); not admissible; max zeros at one ordinate 2
+a=1.200 (c=11.02) T=3e+12: anchored LP (psi=3.93) W_norm -0.008; integer block: 9518 zeros (7636 off-line), M=824 periods; W_norm +0.0673; max|S| 5.36 (allowed 5.66); S_1 range [-1.20, 5.51] (allowed |S_1| <= 2.76); not admissible; max zeros at one ordinate 2
+memcap: peak 115 MB rc=0
+       61.55 real        49.31 user        34.38 sys
+           144965632  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               78903  page reclaims
+                 436  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  59  signals received
+                 568  voluntary context switches
+              119474  involuntary context switches
+           131867798  instructions retired
+           145307794  cycles elapsed
+             2277712  peak memory footprint

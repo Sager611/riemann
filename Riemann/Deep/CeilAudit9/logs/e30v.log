@@ -1,0 +1,26 @@
+a=1.00 (c=7.4) T=3e12: anchored LP (psi=3.93) W_norm +0.034; integer block: 11422 zeros (9762 off-line), M=824 periods; W_norm +0.0907; max|S| 6.13 (allowed 5.66); S_1 range [-1.63, 7.12] -> half-width 4.38 (allowed 2.76); max zeros at one ordinate 2
+a=1.10 (c=9.0) T=3e12: anchored LP (psi=3.93) W_norm -0.119; integer block: 10383 zeros (8920 off-line), M=824 periods; W_norm -0.0823; max|S| 6.23 (allowed 5.66); S_1 range [-1.72, 8.72] -> half-width 5.22 (allowed 2.76); max zeros at one ordinate 2
+a=1.20 (c=11.0) T=3e12: anchored LP (psi=3.14) W_norm -0.251; integer block: 9518 zeros (8136 off-line), M=824 periods; W_norm -0.1975; max|S| 5.91 (allowed 5.66); S_1 range [-1.08, 6.23] -> half-width 3.65 (allowed 2.76); max zeros at one ordinate 2
+a=1.30 (c=13.5) T=3e12: anchored LP (psi=3.14) W_norm -0.417; integer block: 8786 zeros (7580 off-line), M=824 periods; W_norm -0.3554; max|S| 5.77 (allowed 5.66); S_1 range [-1.07, 5.74] -> half-width 3.41 (allowed 2.76); max zeros at one ordinate 2
+a=1.40 (c=16.4) T=3e12: anchored LP (psi=3.14) W_norm -0.546; integer block: 8158 zeros (7178 off-line), M=824 periods; W_norm -0.4798; max|S| 5.76 (allowed 5.66); S_1 range [-1.06, 4.82] -> half-width 2.94 (allowed 2.76); max zeros at one ordinate 2
+a=1.50 (c=20.1) T=3e12: anchored LP (psi=0.00) W_norm -0.638; integer block: 7614 zeros (7186 off-line), M=824 periods; W_norm -0.6069; max|S| 5.59 (allowed 5.66); S_1 range [-3.48, 2.39] -> half-width 2.93 (allowed 2.76); max zeros at one ordinate 2
+a=1.70 (c=30.0) T=3e12: anchored LP (psi=0.00) W_norm -0.842; integer block: 6718 zeros (6308 off-line), M=824 periods; W_norm -0.7917; max|S| 5.03 (allowed 5.66); S_1 range [-2.84, 2.02] -> half-width 2.43 (allowed 2.76); max zeros at one ordinate 2
+memcap: peak 110 MB rc=0
+      100.59 real        61.12 user        43.86 sys
+           147488768  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               96886  page reclaims
+                 110  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  83  signals received
+                 263  voluntary context switches
+              192334  involuntary context switches
+           150016300  instructions retired
+           153906130  cycles elapsed
+             2277712  peak memory footprint

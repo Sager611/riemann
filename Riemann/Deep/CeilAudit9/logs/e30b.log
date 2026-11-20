@@ -1,0 +1,32 @@
+T=3e12, w=0.03a, extra rounding margin 0.0: a* = 0.8198, c* = 5.15
+T=3e12, w=0.03a, extra rounding margin 1.0: a* = 0.9793, c* = 7.09
+t->inf, w=0.03a: a* = 1.1582, c* = 10.14
+T=3e12, w=0.0a, extra rounding margin 0.0: a* = 0.7952, c* = 4.91
+T=3e12, w=0.0a, extra rounding margin 1.0: a* = 0.9499, c* = 6.68
+t->inf, w=0.0a: a* = 1.1234, c* = 9.46
+t=1e+13, w=0.03a, margin 1+1: a* = 0.9812, c* = 7.12
+t=1e+15, w=0.03a, margin 1+1: a* = 0.9876, c* = 7.21
+t=1e+20, w=0.03a, margin 1+1: a* = 0.9992, c* = 7.38
+t=1e+30, w=0.03a, margin 1+1: a* = 1.0132, c* = 7.59
+t=1e+50, w=0.03a, margin 1+1: a* = 1.0287, c* = 7.82
+t=1e+100, w=0.03a, margin 1+1: a* = 1.0650, c* = 8.41
+t=1e+300, w=0.03a, margin 1+1: a* = 1.1215, c* = 9.42
+memcap: peak 98 MB rc=0
+      219.73 real       100.85 user        77.86 sys
+           125157376  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              165165  page reclaims
+                1445  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  34  messages sent
+                  36  messages received
+                 142  signals received
+                1138  voluntary context switches
+              398434  involuntary context switches
+           217770595  instructions retired
+           239265399  cycles elapsed
+             2244944  peak memory footprint

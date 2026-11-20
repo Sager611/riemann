@@ -1,0 +1,20 @@
+T=3e12, w=0.03a, anchored, rounding margin 0.0: a* = 1.0128, c* = 7.58
+memcap: peak 96 MB KILLED TIME>1200s rc=137
+     1201.50 real        57.15 user       577.69 sys
+            43794432  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1122570  page reclaims
+                1685  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                1081  signals received
+                4160  voluntary context switches
+              951990  involuntary context switches
+          1397560937  instructions retired
+          1634604013  cycles elapsed
+             2343248  peak memory footprint
