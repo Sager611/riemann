@@ -1,0 +1,18 @@
+# N = 100 (even: N+1 modes, odd: N modes), prec 400; c_link, theta, (#neg, #pos) even, odd, total lower bound on N_c(theta)
+ 47.0000 theta=  5616/10000 even (40, 61) odd (40, 60)  N_c(theta) >= 80
+ 47.0000 theta=  1023/10000 even (40, 61) odd (39, 61)  N_c(theta) >= 79
+ 47.0000 theta=      1/1000 even (38, 63) odd (38, 62)  N_c(theta) >= 76
+ 47.0000 theta=        1e-6 even None odd None  N_c(theta) >= 0
+ 37.8333 theta=  5755/10000 even (36, 65) odd (36, 64)  N_c(theta) >= 72
+ 37.8333 theta=  2017/10000 even (35, 66) odd (35, 65)  N_c(theta) >= 70
+ 37.8333 theta=      1/1000 even (34, 67) odd (33, 67)  N_c(theta) >= 67
+ 71.0000 theta=  5026/10000 even (48, 53) odd (48, 52)  N_c(theta) >= 96
+  3.1623 theta= 16245/10000 even (7, 94) odd (6, 94)  N_c(theta) >= 13
+  3.1623 theta=      1/1000 even (2, 99) odd (1, 99)  N_c(theta) >= 3
+  5.6234 theta= 10579/10000 even (8, 93) odd (7, 93)  N_c(theta) >= 15
+  7.9433 theta=  5104/10000 even (8, 93) odd (7, 93)  N_c(theta) >= 15
+  6.8557 theta= 51538/10000 even (99, 2) odd (98, 2)  N_c(theta) >= 197
+  6.8557 theta=      1/1000 even (5, 96) odd (5, 95)  N_c(theta) >= 10
+ 17.9500 theta= 31687/10000 even (60, 41) odd (59, 41)  N_c(theta) >= 119
+ 31.9800 theta= 13715/10000 even (37, 64) odd (36, 64)  N_c(theta) >= 73
+memcap: peak 17 MB rc=0

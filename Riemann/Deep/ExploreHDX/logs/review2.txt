@@ -1,0 +1,17 @@
+(2) FIXED — bounded \(u\) is now explicit; exclude \(u=0\) from Rayleigh quotients.
+(4) FIXED — positive \(\alpha_i\), distinct positions and strict span ensure usable disjoint packets.
+(5) FIXED — the replacement two-packet test works for every \(c>47\).
+(6) FIXED — \(\Lambda^*\) is explicitly the infimum over admissible localizations.
+(7) FIXED — the unjustified conditioning inference is explicitly withdrawn.
+(8) STILL GAP — the uniform-rank/equal-length conclusion is repaired, but the mixed-length per-link \(\Lambda^*(c,c_b)\) comparison remains unjustified.
+(9) FIXED — the obstruction is explicitly scoped to certificates relying on \(G\le Q_c\), within the stated compact-correction class.
+NEW / REMAINING:
+• **Mixed lengths:** \(\Lambda^*(c,c_b)\) applies when **all** links have diameter at most \(\ln c_b\), not merely one link. Consequently, §3.5’s mixed-length dichotomy does not follow.
+• **Hitting:** (a) yields a weighted packet-average bound, hence a high-floor point/set somewhere in the union; it does not put an entire packet above the bound. Pointwise cycle formulations require “almost every start.”
+• **Ranks/floors:** (a)–(b) correctly constrain \(\bar\mu\) and a uniform rank cap. They do not force every heterogeneous floor or every link’s actual rank above the threshold; qualify N1’s “per link.”
+• **N13:** \(e_2>e_1\) is not the positivity target \(e_2>0\). A comparison certificate needs \(e_2(G)>e_1(Q)\), hence \(\bar\mu>\Lambda^*+e_1(Q)\); justify the normalization/threshold.
+• **C and mixed §3.5:** \(R_M\) retains atom coefficients \(w_n(1-M)\), not automatically every full atom. Full retention follows for atom-free links, not general mixed families.
+• **C:** operator order guarantees at least 76-dimensional spectral mass below the threshold, not 76 point eigenvalues of \(G\); essential spectrum is possible.
+• **Analytic hypothesis:** admissibility must guarantee the asserted \(L^1\) cancellation at the diagonal; normalization and bounded \(u\) alone do not.
+• **Monotonicity/grid:** both monotonicities and the displayed inequality chain are correct, assuming the stated endpoint certificates and admissible restrictions.
+OVERALL: GAPS.

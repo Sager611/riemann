@@ -1,0 +1,10 @@
+# n=24, zeta: lmin of R_pole, R_arch, R_atoms, R_pole+R_arch, R; then lmin R on span of modes k>=4 and k>=8 (high freq)
+ 10   3.162 even pole -0.759 arch -1.204 atoms -2.250 p+a -0.709 R -1.493 | hf4 -1.492 hf8 -1.390
+ 10   3.162 odd  pole -1.828 arch -0.033 atoms -1.507 p+a -1.819 R -1.512 | hf4 -1.468 hf8 -1.380
+ 10   7.943 even pole -0.321 arch -0.716 atoms -1.648 p+a -0.335 R -1.123 | hf4 -1.122 hf8 -1.064
+ 10   7.943 odd  pole -1.485 arch  0.000 atoms -1.122 p+a -1.416 R -1.125 | hf4 -1.111 hf8 -1.013
+ 47   6.856 even pole -1.366 arch -1.265 atoms -6.333 p+a -1.350 R -1.392 | hf4 -1.324 hf8 -1.284
+ 47   6.856 odd  pole -4.970 arch -0.069 atoms -1.406 p+a -5.013 R -1.409 | hf4 -1.385 hf8 -1.306
+ 47  31.981 even pole -0.538 arch -0.744 atoms -4.738 p+a -0.587 R -1.255 | hf4 -1.159 hf8 -1.051
+ 47  31.981 odd  pole -4.153 arch -0.000 atoms -1.288 p+a -4.119 R -1.289 | hf4 -1.237 hf8 -1.072
+memcap: peak 26 MB rc=0

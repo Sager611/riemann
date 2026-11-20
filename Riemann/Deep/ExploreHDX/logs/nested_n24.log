@@ -1,0 +1,10 @@
+# n=24/sector: c, c_link, sector, lambda_min R (hard), lambda_min R (cosine), lambda_min R on modes >= 8 (hard)
+ 40.0  37.8333 even  Rh -1.1125  Rs -1.2833  hf8 -0.9462
+ 40.0  37.8333 odd   Rh -1.1201  Rs -1.3606  hf8 -1.0464
+ 41.5  37.8333 even  Rh -1.1398  Rs -1.3157  hf8 -0.9614
+ 41.5  37.8333 odd   Rh -1.1078  Rs -1.3066  hf8 -0.9838
+ 49.0  47.0000 even  Rh -1.1528  Rs -1.3880  hf8 -0.9582
+ 49.0  47.0000 odd   Rh -1.1966  Rs -1.4314  hf8 -0.9769
+ 50.0  47.0000 even  Rh -1.1780  Rs -1.3995  hf8 -0.9616
+ 50.0  47.0000 odd   Rh -1.1986  Rs -1.4378  hf8 -0.9826
+memcap: peak 35 MB rc=0

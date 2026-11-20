@@ -1,0 +1,6 @@
+# c, c_link, T (best alignment in [50,400]), R_smooth/|f|^2, R_atoms/|f|^2, predicted atoms (Kronecker formula at this T), fully aligned value
+ 10   3.162 T= 108.7950  smooth -0.0002  atoms -0.7077  pred -0.7077  aligned -0.7259
+ 10   7.943 T= 108.8220  smooth -0.0001  atoms -0.4055  pred -0.4055  aligned -0.4192
+ 47   6.856 T= 280.8330  smooth -0.0000  atoms -1.5969  pred -1.5970  aligned -2.0113
+ 47  31.981 T= 280.8320  smooth -0.0000  atoms -0.8885  pred -0.8886  aligned -1.1665
+memcap: peak 0 MB rc=0

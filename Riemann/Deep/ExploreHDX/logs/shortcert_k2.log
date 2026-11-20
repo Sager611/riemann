@@ -1,0 +1,10 @@
+# k = 2: certify e_2(g_j) < L_(j+1) = arb lower bound of Lam*(10, g_(j+1)); N = 16 modes per sector
+[1.1000, 1.2000]  Lam*(10, right end) >= 2.5098;  #Galerkin eigenvalues of Q_left below it: 2  -> e_2 < Lam* on the interval: True
+[1.2000, 1.3500]  Lam*(10, right end) >= 2.5098;  #Galerkin eigenvalues of Q_left below it: 4  -> e_2 < Lam* on the interval: True
+[1.3500, 1.5000]  Lam*(10, right end) >= 2.5098;  #Galerkin eigenvalues of Q_left below it: 7  -> e_2 < Lam* on the interval: True
+[1.5000, 1.7500]  Lam*(10, right end) >= 2.5098;  #Galerkin eigenvalues of Q_left below it: 10  -> e_2 < Lam* on the interval: True
+[1.7500, 2.0000]  Lam*(10, right end) >= 2.5098;  #Galerkin eigenvalues of Q_left below it: 14  -> e_2 < Lam* on the interval: True
+[2.0000, 2.5000]  Lam*(10, right end) >= 2.0321;  #Galerkin eigenvalues of Q_left below it: 11  -> e_2 < Lam* on the interval: True
+[2.5000, 3.1623]  Lam*(10, right end) >= 1.6245;  #Galerkin eigenvalues of Q_left below it: 10  -> e_2 < Lam* on the interval: True
+ALL OK
+memcap: peak 0 MB rc=0

@@ -1,0 +1,8 @@
+# five weakest N' <= 100 (arb lower bound of the best cycle, factorization):
+  N'= 96 = 3*32: 0.0795
+  N'= 64 = 64: 0.0866
+  N'= 90 = 2*5*9: 0.0884
+  N'= 60 = 3*4*5: 0.0944
+  N'= 84 = 3*4*7: 0.0950
+beta0 >= 0.0795
+memcap: peak 27 MB rc=0

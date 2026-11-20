@@ -1,0 +1,12 @@
+reviewer (builtin), 20 Nov 2026 ~16:05 UTC, verdict-only review of REPORT §2 (first version); run timed out at 170 s, this is its recap.
+1. A: CORRECT for real cutoffs; complex cutoffs need Hermitian M and real parts.  [fixed: real cutoffs, Hermitian/Re M noted]
+2. B limits: GAP for arbitrary u in L^2 (u⊗u times an L^1 kernel need not be L^1); repair: bounded u, density.  [fixed: sup over bounded u >= 0]
+   With the repair the floor limsup, compact term, smooth term, atom limit, norm limit, k-dim min-max are CORRECT; homogeneous recurrence suffices.
+3. (i): CORRECT (essential max chain length ceil(l/s); endpoint chains null).
+4. (ii): CORRECT inequality and optimisation; GAP: require span < ln c strictly and alpha_i > 0.  [fixed in text; code already strict]
+5. Corollary Lambda*(c,47) >= w47: CORRECT (Fubini null set); GAP: corner function only for 47 < c <= 47^2; use two short packets.  [fixed]
+6. Monotonicities CORRECT if Lambda* := inf over admissible M.  [fixed: definition]
+7. C: e_k(G) <= e_k(Q) CORRECT; 'conditioning' conclusion not implied (G = eps I).  [fixed: rephrased as inherited smallness]
+8. Rank conclusion GAP: needs rank F_b <= r; shorter links have larger e_{r+1}; mu_bar controls no individual link.  [fixed: equal-length families; compact case via eigenvalue counts; mixed lengths = hitting condition]
+9. Scope GAP: positivity of G is necessary only for certification from G <= Q alone; methods keeping parts of Q - G, non-compact link bounds, cross-link couplings, preconditioning are not excluded.  [stated as scope]
+D: CORRECT. OVERALL: GAPS (all addressed in the revised REPORT).

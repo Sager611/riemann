@@ -1,0 +1,6 @@
+# N = 180 (even: N+1 modes, odd: N modes), prec 1400; c_link, theta, (#neg, #pos) even, odd, total lower bound on N_c(theta)
+ 47.0000 theta=  5616/10000 even (48, 133) odd (48, 132)  N_c(theta) >= 96
+ 47.0000 theta=  1023/10000 even (46, 135) odd (45, 135)  N_c(theta) >= 91
+ 47.0000 theta=      1/1000 even (45, 136) odd (44, 136)  N_c(theta) >= 89
+ 47.0000 theta=        1e-6 even (43, 138) odd (43, 137)  N_c(theta) >= 86
+memcap: peak 32 MB rc=0

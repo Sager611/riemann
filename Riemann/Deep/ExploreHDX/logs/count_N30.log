@@ -1,0 +1,15 @@
+# N = 30 (even: N+1 modes, odd: N modes), prec 200; c_link, theta, (#neg, #pos) even, odd, total lower bound on N_c(theta)
+ 47.0000 theta=  5616/10000 even (21, 10) odd (20, 10)  N_c(theta) >= 41
+ 47.0000 theta=      1/1000 even (19, 12) odd (19, 11)  N_c(theta) >= 38
+ 47.0000 theta=        1e-6 even (18, 13) odd (17, 13)  N_c(theta) >= 35
+ 37.8333 theta=  5755/10000 even (20, 11) odd (19, 11)  N_c(theta) >= 39
+ 37.8333 theta=      1/1000 even (18, 13) odd (18, 12)  N_c(theta) >= 36
+ 71.0000 theta=  5026/10000 even (22, 9) odd (22, 8)  N_c(theta) >= 44
+  3.1623 theta= 16245/10000 even (7, 24) odd (6, 24)  N_c(theta) >= 13
+  3.1623 theta=      1/1000 even (2, 29) odd (1, 29)  N_c(theta) >= 3
+  5.6234 theta= 10579/10000 even (8, 23) odd (7, 23)  N_c(theta) >= 15
+  7.9433 theta=  5104/10000 even (7, 24) odd (7, 23)  N_c(theta) >= 14
+  6.8557 theta= 51538/10000 even (31, 0) odd (30, 0)  N_c(theta) >= 61
+  6.8557 theta=      1/1000 even (5, 26) odd (5, 25)  N_c(theta) >= 10
+ 17.9500 theta= 31687/10000 even (25, 6) odd (24, 6)  N_c(theta) >= 49
+ 31.9800 theta= 13715/10000 even (20, 11) odd (19, 11)  N_c(theta) >= 39
