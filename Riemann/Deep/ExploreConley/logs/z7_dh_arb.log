@@ -1,0 +1,12 @@
+Mrho = [6.9825e-27 +/- 4.54e-32]  max |Im A_k| <= 8.626979055510499e-36  max rad a_k: 8.626979066720886e-36  time 7.4
+functional equation check |Lambda(s)| vs |Lambda(1-s)| at s = 0.3+50i: [7.596421318e-18 +/- 3.95e-28] [7.596421318e-18 +/- 3.95e-28]
+m=0: tail <= [1.024e-17 +/- 2.15e-23] (explicit to k=179, remainder <= [2.44e-132 +/- 1.58e-135]; successive ratios at k, 2k, 4k, 8k: ['[0.0896 +/- 1.61e-5]', '[0.0689 +/- 6.3e-7]', '[0.0554 +/- 3.89e-5]', '[0.0431 +/- 1.93e-5]'])
+m=1: tail <= [6.979e-17 +/- 9.23e-22] (explicit to k=180, remainder <= [2.63e-132 +/- 2.15e-135]; successive ratios at k, 2k, 4k, 8k: ['[0.0901 +/- 1.40e-5]', '[0.0692 +/- 1.65e-5]', '[0.0535 +/- 1.17e-5]', '[0.0416 +/- 4.88e-5]'])
+m=2: tail <= [4.715e-16 +/- 1.69e-20] (explicit to k=181, remainder <= [2.84e-132 +/- 2.19e-135]; successive ratios at k, 2k, 4k, 8k: ['[0.0904 +/- 3.34e-5]', '[0.0695 +/- 3.43e-5]', '[0.0537 +/- 3.05e-5]', '[0.0417 +/- 2.18e-5]'])
+m=3: tail <= [3.158e-15 +/- 3.40e-19] (explicit to k=182, remainder <= [2.96e-132 +/- 1.52e-135]; successive ratios at k, 2k, 4k, 8k: ['[0.0876 +/- 5.44e-6]', '[0.0697 +/- 4.74e-5]', '[0.0539 +/- 4.98e-5]', '[0.0418 +/- 4.91e-6]'])
+CERT (Arb) on |w| = 1.2 for all t in [-[0.00250 +/- 3e-10], 0.2+[0.00250 +/- 3e-10]]: no zero of H_t, H_t', exit set empty: True  mins [2.2507656514644623, 1.235405869781971, 2.7740810811519623]  time 19.1
+winding validity (arg change per arc <= arc*max|f'|/min|f|): H: [0.03031 +/- 1.71e-6], H': [0.07442 +/- 9.06e-7] rad
+Arb winding on |w| = 1.2 at t = 0: H -> [2.0000 +/- 3e-9]   H' -> [1.0000 +/- 3e-10]
+t* + 1e-12: H(w*) = [-6.5795e-12 +/- 3.07e-17]  H(w*-0.05) = [0.0084137 +/- 3.62e-8]  H(w*+0.05) = [0.0080350 +/- 4.52e-8]  => real pair: True
+t* - 1e-12: H > 0 on [-1.2, 1.2]: True ( 105 intervals) => conjugate pair; CERT t* in ( [0.176505378207507 +/- 4.80e-16] , [0.176505378209507 +/- 4.80e-16] )  => Lambda_DH > [0.176505378208 +/- 4.94e-13]  time 19.4
+memcap: peak 15 MB rc=0

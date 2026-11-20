@@ -1,0 +1,17 @@
+N = 20000  max gamma = 18046.464296239203
+pairs analysed: 18798 (zeros 601..19399); frozen-model collisions (2Su < 1): 9578 = 50.95%
+largest exit times t_c(k) (closest to 0):
+  zeros 18859-18860  gamma=17143.7865  normalised gap=0.04446  u=1.247e-03  S=1.1012  t_c=-6.241607e-04
+  zeros 6709-6710  gamma=7005.0629  normalised gap=0.04210  u=1.421e-03  S=0.6095  t_c=-7.112046e-04
+  zeros 4765-4766  gamma=5229.1986  normalised gap=0.04629  u=1.871e-03  S=0.5785  t_c=-9.364709e-04
+  zeros 19140-19141  gamma=17366.5172  normalised gap=0.07644  u=3.673e-03  S=0.9414  t_c=-1.842860e-03
+  zeros 16767-16768  gamma=15471.5508  normalised gap=0.08428  u=4.599e-03  S=0.6374  t_c=-2.306290e-03
+  zeros 12166-12167  gamma=11705.6352  normalised gap=0.08876  u=5.485e-03  S=1.0722  t_c=-2.758766e-03
+  zeros 11204-11205  gamma=10898.8746  normalised gap=0.09092  u=5.867e-03  S=0.8078  t_c=-2.947387e-03
+  zeros 18385-18386  gamma=16766.3962  normalised gap=0.09742  u=6.020e-03  S=1.0532  t_c=-3.029287e-03
+first    25% of pairs (gamma <= 5724): max t_c = -9.3647e-04; min normalised gap = 0.04629
+first    50% of pairs (gamma <= 9876): max t_c = -7.1120e-04; min normalised gap = 0.04210
+first   100% of pairs (gamma <= 17571): max t_c = -6.2416e-04; min normalised gap = 0.04210
+minimal z-gap pair: zeros 18859-18860, g=0.07061, gdot=56.4899 (P4: >= 0 expected only for a global minimum)
+#gdot<0: 10006 of 18798; time 2.8 s
+memcap: peak 0 MB rc=0

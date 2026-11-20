@@ -1,0 +1,10 @@
+reality check H0(x0+0.1)/|.| : (-1.0 + 1.07313e-40j)
+off-line zero of H0 (z units): (171.3986969707552 + 0.6170343649132748j)  s = (0.1914828175433626 + 85.69934848537759j)
+max |Im a_k| / max|a_k|: 1.76e-40  tail |a_k|R^k: ['2.25e-39', '2.65e-39']  time 124.3
+zeros of H0^DH with |w| < 2.6 (w = z - c): ['(6.3492436e-40 - 0.61703436j)', '(6.3492436e-40 + 0.61703436j)']
+zeros of H0^DH' with |w| < 2.6: ['0.095704682', '1.8601667']
+EXACT landing (double real zero) t* = 0.176505378208507  at w* = (-0.163668182664 + 0.0j)  de Bruijn bound y0^2/2 = 0.1903657037
+du/dt at t* (delta=1.0e-6): (2.0 + 0.0j)
+du/dt at t* (delta=0.0001): (2.00000000209 + 0.0j)
+time 166.8
+memcap: peak 15 MB rc=0

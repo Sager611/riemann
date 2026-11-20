@@ -1,0 +1,8 @@
+zeta zeros 160.4 s
+zeta, first 100 gaps: min gap (z units) at k=91: g=1.4315734, S=0.17263637, gdot=2.2998451, S g^2/2=0.176901 (lattice = 1)
+zeta: #gdot<0 among 100: 55 ; max S g^2/2 = 4.52646 ; min S g^2/2 = 0.139439
+DH real zeros with gamma < 140: 79  time 479.8
+DH, first 77 gaps: min gap at k=16: g=1.0407486, S=0.13885218, gdot=3.5543668, S g^2/2=0.0751994
+DH: #gdot<0: 42 ; max S g^2/2 = 3.86386 ; min = -2.26948
+time 480.0
+memcap: peak 20 MB rc=0

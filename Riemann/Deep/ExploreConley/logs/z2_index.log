@@ -1,0 +1,27 @@
+majorants on the slab |w|<=0.6, |t|<=2.1e-3:  B1 = 1.51303  B2 = 3.62216  B3 = 6.0709
+t=0.0                    zeros(H)=2 zeros(H')=1  real pair      z=(-0.037698498 + 0.0j), (0.037698498 + 0.0j)  saddle=5.23107e-7  min|H|=0.31797 min|H'|=0.93049  min cos(rad)=0.9925  sign H(-r0),H(r0) = 1,1
+t=-0.0001                zeros(H)=2 zeros(H')=1  real pair      z=(-0.034950128 + 0.0j), (0.034949771 + 0.0j)  saddle=3.06387e-7  min|H|=0.31803 min|H'|=0.93007  min cos(rad)=0.9925  sign H(-r0),H(r0) = 1,1
+t=-0.0002                zeros(H)=2 zeros(H')=1  real pair      z=(-0.03196554 + 0.0j), (0.031964811 + 0.0j)  saddle=7.04324e-8  min|H|=0.3181 min|H'|=0.92965  min cos(rad)=0.9926  sign H(-r0),H(r0) = 1,1
+t=-0.0003                zeros(H)=2 zeros(H')=1  real pair      z=(-0.028671053 + 0.0j), (0.028669936 + 0.0j)  saddle=-1.84765e-7  min|H|=0.31817 min|H'|=0.92923  min cos(rad)=0.9926  sign H(-r0),H(r0) = 1,1
+t=-0.0004                zeros(H)=2 zeros(H')=1  real pair      z=(-0.024944163 + 0.0j), (0.024942643 + 0.0j)  saddle=-4.59213e-7  min|H|=0.31823 min|H'|=0.92881  min cos(rad)=0.9927  sign H(-r0),H(r0) = 1,1
+t=-0.0005                zeros(H)=2 zeros(H')=1  real pair      z=(-0.020550926 + 0.0j), (0.020548987 + 0.0j)  saddle=-7.52922e-7  min|H|=0.3183 min|H'|=0.92838  min cos(rad)=0.9928  sign H(-r0),H(r0) = 1,1
+t=-0.0006                zeros(H)=2 zeros(H')=1  real pair      z=(-0.014913574 + 0.0j), (0.014911202 + 0.0j)  saddle=-1.0659e-6  min|H|=0.31837 min|H'|=0.92796  min cos(rad)=0.9928  sign H(-r0),H(r0) = 1,1
+t=-0.0007                zeros(H)=2 zeros(H')=1  real pair      z=(-0.0047352425 + 0.0j), (0.0047324207 + 0.0j)  saddle=-1.39815e-6  min|H|=0.31843 min|H'|=0.92754  min cos(rad)=0.9929  sign H(-r0),H(r0) = 1,1
+t=-0.0007112047339       zeros(H)=2 zeros(H')=1  double         z=(-1.4365817e-6 + 0.0j), (-1.4365817e-6 + 0.0j)  saddle=-1.43658e-6  min|H|=0.31844 min|H'|=0.92749  min cos(rad)=0.9929  sign H(-r0),H(r0) = 1,1
+t=-0.0008                zeros(H)=2 zeros(H')=1  conjugate pair z=(-1.6432867e-6 - 0.013327031j), (-1.6432867e-6 + 0.013327031j)  saddle=-1.74969e-6  min|H|=0.3185 min|H'|=0.92712  min cos(rad)=0.9929  sign H(-r0),H(r0) = 1,1
+t=-0.0009                zeros(H)=2 zeros(H')=1  conjugate pair z=(-1.8833413e-6 - 0.019433926j), (-1.8833413e-6 + 0.019433926j)  saddle=-2.12053e-6  min|H|=0.31857 min|H'|=0.9267  min cos(rad)=0.993  sign H(-r0),H(r0) = 1,1
+t=-0.001                 zeros(H)=2 zeros(H')=1  conjugate pair z=(-2.1310927e-6 - 0.024037345j), (-2.1310927e-6 + 0.024037345j)  saddle=-2.51066e-6  min|H|=0.31863 min|H'|=0.92628  min cos(rad)=0.9931  sign H(-r0),H(r0) = 1,1
+t=-0.0011                zeros(H)=2 zeros(H')=1  conjugate pair z=(-2.3865405e-6 - 0.027891922j), (-2.3865405e-6 + 0.027891922j)  saddle=-2.92011e-6  min|H|=0.3187 min|H'|=0.92586  min cos(rad)=0.9931  sign H(-r0),H(r0) = 1,1
+t=-0.0012                zeros(H)=2 zeros(H')=1  conjugate pair z=(-2.6496843e-6 - 0.031275764j), (-2.6496843e-6 + 0.031275764j)  saddle=-3.34888e-6  min|H|=0.31877 min|H'|=0.92544  min cos(rad)=0.9932  sign H(-r0),H(r0) = 1,1
+t=-0.0013                zeros(H)=2 zeros(H')=1  conjugate pair z=(-2.9205233e-6 - 0.034328362j), (-2.9205233e-6 + 0.034328362j)  saddle=-3.79698e-6  min|H|=0.31883 min|H'|=0.92502  min cos(rad)=0.9932  sign H(-r0),H(r0) = 1,1
+t=-0.0014                zeros(H)=2 zeros(H')=1  conjugate pair z=(-3.1990572e-6 - 0.037131499j), (-3.1990572e-6 + 0.037131499j)  saddle=-4.26441e-6  min|H|=0.3189 min|H'|=0.9246  min cos(rad)=0.9933  sign H(-r0),H(r0) = 1,1
+t=-0.0015                zeros(H)=2 zeros(H')=1  conjugate pair z=(-3.4852855e-6 - 0.039738004j), (-3.4852855e-6 + 0.039738004j)  saddle=-4.75119e-6  min|H|=0.31897 min|H'|=0.92418  min cos(rad)=0.9933  sign H(-r0),H(r0) = 1,1
+t=-0.0016                zeros(H)=2 zeros(H')=1  conjugate pair z=(-3.7792076e-6 - 0.04218434j), (-3.7792076e-6 + 0.04218434j)  saddle=-5.25733e-6  min|H|=0.31903 min|H'|=0.92376  min cos(rad)=0.9934  sign H(-r0),H(r0) = 1,1
+t=-0.0017                zeros(H)=2 zeros(H')=1  conjugate pair z=(-4.0808229e-6 - 0.044496932j), (-4.0808229e-6 + 0.044496932j)  saddle=-5.78282e-6  min|H|=0.3191 min|H'|=0.92334  min cos(rad)=0.9935  sign H(-r0),H(r0) = 1,1
+t=-0.0018                zeros(H)=2 zeros(H')=1  conjugate pair z=(-4.3901311e-6 - 0.046695656j), (-4.3901311e-6 + 0.046695656j)  saddle=-6.32769e-6  min|H|=0.31917 min|H'|=0.92292  min cos(rad)=0.9935  sign H(-r0),H(r0) = 1,1
+t=-0.0019                zeros(H)=2 zeros(H')=1  conjugate pair z=(-4.7071315e-6 - 0.048795908j), (-4.7071315e-6 + 0.048795908j)  saddle=-6.89195e-6  min|H|=0.31923 min|H'|=0.9225  min cos(rad)=0.9936  sign H(-r0),H(r0) = 1,1
+t=-0.002                 zeros(H)=2 zeros(H')=1  conjugate pair z=(-5.0318236e-6 - 0.050809899j), (-5.0318236e-6 + 0.050809899j)  saddle=-7.47559e-6  min|H|=0.3193 min|H'|=0.92208  min cos(rad)=0.9936  sign H(-r0),H(r0) = 1,1
+CERT no zero of H_t on dD for all t in [-2e-3,0]: True  (min 0.31797 > slack 0.0021617)
+CERT no zero of H_t' on dD for all t in [-2e-3,0]: True  (min 0.92208 > slack 0.0050449)
+CERT exit set empty (Re conj(H) H_r > 0 on dD), all t in [-2e-3,0]: True 0.29442 > 0.0053524  (min normalised cos 0.99245)
+memcap: peak 18 MB rc=0

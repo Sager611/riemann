@@ -1,0 +1,3 @@
+pair 18859 18860 gamma 17143.7865361839 17143.8218435052  tail |a_k|R^k: 8.78e-33  time 24.3
+u0 = 0.001246606939  S_far = 1.1011704  frozen-model t_c = -0.0006241606641  EXACT t_c = -0.000624161094661  time 24.5
+memcap: peak 23 MB rc=0
