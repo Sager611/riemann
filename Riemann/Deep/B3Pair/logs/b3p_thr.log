@@ -1,0 +1,26 @@
+kappa(0.121) = [0.0850387603917658 +/- 3.98e-17]  dkappa/dnu ~ [0.551822 +/- 1.67e-7]  dk*/dtheta ~ [-1.57286 +/- 7.92e-7]
+control A^3BA^2BA^2B(0,1) = (13/502,445/502): theta1 in [0.493970073, 0.493970073], nu1(theta1) = 0.122916, kappa = [0.08608751001 +/- 1.65e-12]
+A^2(Bourgain) exact = (13/414,359/414): theta1 in [0.493908737, 0.493908737], nu1(theta1) = 0.123095, kappa = [0.08618405705 +/- 1.10e-12]
+A^2(Bourgain + 1e-6): theta1 in [0.493908745, 0.493908745], nu1(theta1) = 0.123095, kappa = [0.08618404382 +/- 3.19e-12]
+A(TTY 89/1282,997/1282) = (89/2742,1184/1371): theta1 in [0.493899866, 0.493899866], nu1(theta1) = 0.123121, kappa = [0.08619802036 +/- 3.88e-12]
+A(TTY 89/1282 + 1e-6, 997/1282 + 1e-6): theta1 in [0.493899893, 0.493899893], nu1(theta1) = 0.123121, kappa = [0.08619797800 +/- 4.63e-12]
+A(TTY 652397/9713986,7599781/9713986): theta1 in [0.493901114, 0.493901114], nu1(theta1) = 0.123118, kappa = [0.08619605728 +/- 4.60e-12]
+memcap: peak 18 MB rc=0
+       42.64 real        26.56 user        21.91 sys
+            34766848  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               44095  page reclaims
+                2370  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  39  signals received
+                 229  voluntary context switches
+               72525  involuntary context switches
+           102013534  instructions retired
+           105220847  cycles elapsed
+             2244944  peak memory footprint

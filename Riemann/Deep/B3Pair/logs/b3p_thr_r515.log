@@ -1,0 +1,4 @@
+kappa(0.121) = [0.0850387603917658 +/- 3.98e-17]  dkappa/dnu ~ [0.551822 +/- 1.67e-7]  dk*/dtheta ~ [-1.57286 +/- 7.92e-7]
+R515 check: outer A^2(Bourgain) + 1e-6 = 6500207/207000000 179500207/207000000
+R515 check: outer A^2(Bourgain) + 1e-6: theta1 in [0.493908812, 0.493908812], nu1(theta1) = 0.123095, kappa = [0.08618393904 +/- 3.89e-12]
+memcap: peak 14 MB rc=0

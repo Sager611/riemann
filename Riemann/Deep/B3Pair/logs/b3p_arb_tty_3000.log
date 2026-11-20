@@ -1,0 +1,8 @@
+detector: P(0) = 0  P(1) = 1  Qp(0) = 1  Qp(y)+Qp(1-y)-1 == 0: True  deg Qp = 201  prec = 3000
+check E1 kappa1 (nu=3/25, R=177/20) = [0.0844779079697484032032447429603 +/- 4.05e-32]
+pair (k,l) = 89/2742 1184/1371 ; gain factor 1-l-3k = 107/2742
+theta_c = 4939/10000 = 0.4939 ; nu0 = nu1(theta_c) = 6181921/50210000 = 0.12312131049591715 ; (3 theta_c - 1)/4 = 4817/40000 ; nu0 - (3theta_c-1)/4 = 0.002696310495917148 == (1-theta_c)(1-l-3k)/(4(1+l-k)): True ; nu0 < theta_c/2: True
+kappa(nu0, 44/5) = [0.0861980736963448913832780779143 +/- 2.23e-32] ; k*(theta_c) = [0.0861978101870029267395493771800 +/- 1.01e-32] ; kappa - k* = [2.6350934196464372870e-7 +/- 7.35e-28] (>0: True ); h(theta_c; kappa) = [1.868745132350716288047534e-7 +/- 3.46e-32] (>0: True )
+Cor B' range alone at theta_c: kappa((3theta_c-1)/4) - k*(theta_c) = [-0.00148070030246827 +/- 5.96e-19] (<0: True ) -> theta_c is beyond B3Cert's moment edge
+theta_c < 371/750: True ; 371/750 - theta_c = 0.0007666666666666667
+memcap: peak 0 MB rc=0

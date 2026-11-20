@@ -1,0 +1,15 @@
+# source: .scratch/b3pair/rangecheck2.py (verbatim below), run 2026-11-20T13:14Z
+#> # b3pair range check, row R16b (E1 l.67: Thm 5.1 needs kappa < 1 and c(theta) < 1): c(theta) = 2 - theta/2 - cot(theta/sqrt2)/sqrt2 (b3c_arb_copy/b3nu_thr 'cth'), Arb.
+#> from flint import arb, fmpq, ctx
+#> ctx.prec = 200
+#> s2 = arb(2).sqrt(); c = lambda th: 2 - th/2 - (th/s2).cot()/s2
+#> for th in (fmpq(4939, 10000), fmpq(1, 2), fmpq(9, 10), fmpq(1)):
+#>     print('theta =', th, ': c(theta) =', c(arb(th)).str(12), '; 1 - c =', (1 - c(arb(th))).str(12), '(>0:', (1 - c(arb(th))) > 0, ')')
+#> print("c' = cot^2(theta/sqrt2)/2 > 0 on (0,1) (B3F l.177), so c(theta) < c(1) < 1 on (theta_c, 1); kappa(nu0, 44/5) = 0.0861980736963448913832780779143 +/- 2.23e-32 < 1 (logs/b3p_arb_tty_4000.log)")
+# output:
+theta = 4939/10000 : c(theta) = [-0.188657482216 +/- 4.58e-13] ; 1 - c = [1.18865748222 +/- 3.55e-12] (>0: True )
+theta = 1/2 : c(theta) = [-0.165963850365 +/- 1.43e-14] ; 1 - c = [1.16596385036 +/- 4.99e-12] (>0: True )
+theta = 9/10 : c(theta) = [0.593101699739 +/- 4.10e-13] ; 1 - c = [0.406898300261 +/- 4.10e-13] (>0: True )
+theta = 1 : c(theta) = [0.672500703679 +/- 4.12e-13] ; 1 - c = [0.327499296321 +/- 4.12e-13] (>0: True )
+c' = cot^2(theta/sqrt2)/2 > 0 on (0,1) (B3F l.177), so c(theta) < c(1) < 1 on (theta_c, 1); kappa(nu0, 44/5) = 0.0861980736963448913832780779143 +/- 2.23e-32 < 1 (logs/b3p_arb_tty_4000.log)
+memcap: peak 0 MB rc=0

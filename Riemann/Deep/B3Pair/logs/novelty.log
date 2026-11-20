@@ -1,0 +1,44 @@
+/Users/adriansager/playground/riemann/.scratch/lst.py:13: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2611.03589  [math.NT 2026-11]  On the lower bound for the $L^1$ norm of Liouville exponential sums. I
+2611.05000  [math.NT 2026-11]  Almost primes in short intervals and averages of long Dirichlet polynomial approximations to $(ζ'/ζ)^{k}$
+2611.05267  [math.NT 2026-11]  On the van der Corput property for cubes
+2611.10790  [math.NT 2026-11]  On the lower bound for the $L^1$ norm of Liouville exponential sums. II
+2611.13767  [math.NT 2026-11]  The distribution of $αp$ modulo one in short intervals
+2611.16828  [math.NT 2026-11]  Estimates of short exponential sums with primes in major arcs
+2611.18260  [math.NT 2026-11]  Short quadratic exponential sums with primes in major arcs
+2611.24050  [math.NT 2026-11]  On p-adic asymptotic formulas for slope factors of L-functions of toric exponential sums
+2610.07765  [math.NT 2026-10]  The optimal van der Corput property for squares
+2610.08886  [math.NT 2026-10]  Mean Estimates for Short Polynomial Exponential Sums over Primes
+2610.11487  [math.NT 2026-10]  Discorrelation of the Möbius function with linear phases in short intervals
+2610.18923  [math.NT 2026-10]  Large value estimates for Dirichlet polynomials and trilinear sums over short intervals
+2610.19464  [math.NT 2026-10]  A folklore conjecture on multiplicative exponential sums
+2610.22081  [math.NT 2026-10]  Logarithmic exponential sums with multiplicative coefficients
+2610.22345  [math.NT 2026-10]  On exponential sums with multiplicative coefficients
+2610.25789  [math.NT 2026-10]  Asymptotic low slopes of toric exponential sums
+2610.26756  [math.NT 2026-10]  Fourth moments of prime exponential sums and exceptional sets for sums and differences of primes
+2610.27830  [math.NT 2026-10]  Primes in short intervals assuming the Riemann hypothesis
+2611.03549  [math.CA 2026-11]  Lecture note on Fourier decoupling theory and its applications
+2611.11700  [math.CA 2026-11]  Random Configurations and Fourier Decoupling
+2610.01567  [math.CA 2026-10]  Strip Decoupling Inequalities for the Paraboloid in $\mathbb{R}^3$
+2610.32655  [math.CA 2026-10]  Weighted decoupling inequalities via fractal bilinear Kakeya estimates
+2610.01958  [math.CA 2026-10]  Decoupling and Tail Laws for Small-Order Metric-Valued Nonlocal Energies: A Structural View of the Maz'ya--Shaposhnikova Formula
+2610.41219  [math.CA 2026-10]  Local Smoothing Estimates of a Class of Schrödinger Operators on Waveguides Using Refined Decoupling
+-- 24 title hits in 2 cats x (2026-11, 2026-10)
+zenodo 24385703  2026-11-20  The Fractal Ladder of Prime Density: Quadratic Scale and Linear Error
+zenodo 24377757  2026-11-19  Computing the Riemann Hypothesis, Volume III: Is There a Path? Routes to RH from the Thorin Programme
+zenodo 24377753  2026-11-19  Computing the Riemann Hypothesis, Volume II: Cauchy Deconvolution and Certified Computation
+zenodo 24377750  2026-11-19  Computing the Riemann Hypothesis, Volume I: Representations of Xi, Thorin Measures and the Reciprocal Xi Function
+zenodo 23018394  2026-09-28  Biochemical and behavioural effects of MgAl-NO3 LDH exposure in zebrafish embryos: evidence of oxidative stress without 
+zenodo 24359794  2026-11-19  Fourier Epicycles and Antisymmetric Signed-Area Conservation in Normalized Riemann Zeta Terms
+zenodo 24354547  2026-11-18  Decoupling Liveness Obligations from Threads in the Lantana Concurrent Separation Logic (Artifact)
+zenodo 24349817  2026-11-18  PRH | Aux | 4.7 • Prime Number Theorem: Near-One Blur
+zenodo 24335307  2026-11-16  Assessing diatom (Bacillariophyta) biodiversity in freshwater with metabarcoding – a systematic review
+zenodo 24332600  2026-11-18  Plane Algebraic Curve Families from Normalized Zeta Series: Prime-Base Extensions and Composite Breakdown
+zenodo 24326185  2026-10-01  Green Synthesis, Central Composite Design Based Optimization and Evaluation of Cerium  Oxide Nanoparticle-Loaded Gel Usi
+zenodo 24325291  2026-11-17  Origin-Centered Möbius Circles and Dyadic Pairings of the Riemann Zeta Function on the Critical Line
+zenodo 24300937  2026-11-17  The Number Arrow and the Line 1/2: The Riemann Hypothesis in the Light of the Birth of Dimensions Model
+zenodo 24291648  2026-11-16  A Unified Adelic Quantum Gauge Architecture: A Non-Perturbative Proof of Riemann Hypothesis and Complete Resolution of t
+zenodo 24287629  2026-11-16  The zeros of ζ and of the Dirichlet L-functions seen through the gap classes of consecutive primes: a spectral test of t
+-- zenodo total 10153
+memcap: peak 0 MB rc=0

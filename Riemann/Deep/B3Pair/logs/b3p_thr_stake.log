@@ -1,0 +1,6 @@
+kappa(0.121) = [0.0850387603917658 +/- 3.98e-17]  dkappa/dnu ~ [0.551822 +/- 1.67e-7]  dk*/dtheta ~ [-1.57286 +/- 7.92e-7]
+stake: EPC A(0,1/2) = (0,3/4) = 0 3/4
+stake: EPC (0,1/2) on F_u directly = 0 1/2
+stake: EPC A(0,1/2) = (0,3/4): theta1 in [0.490046479, 0.490046479], nu1(theta1) = 0.135747, kappa = [0.09227489900 +/- 1.60e-12]
+stake: EPC (0,1/2) on F_u directly: theta1 in [0.485302031, 0.485302031], nu1(theta1) = 0.156868, kappa = [0.09978748315 +/- 1.83e-12]
+memcap: peak 14 MB rc=0
