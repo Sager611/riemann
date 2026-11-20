@@ -750,3 +750,4 @@
 - R521 N3: Gottschalk–Hedlund bounds each zero's centered orbit sum, not λ_n; Hadamard–Hankel (R468) and Fano/Le Cam (explore36) transfer nothing [R521](Riemann/Tree/R521.lean)
 - R522 N11: 2609.16048's GRH step needs exponent < 2/3; 2607.06433, 2607.27282, 2608.19525 gain nothing from θ₁₄₁ or Kerr; Dulac, transversality and degree theory transfer nothing [R522](Riemann/Tree/R522.lean)
 - R523 N12: Mantel/regularity (R442), Pólya simplex positivity and Stieltjes electrostatics transfer nothing (a log-gas predicts γ₁/γ₂ = 0.318; ζ has 0.672) [R523](Riemann/Tree/R523.lean)
+- R524 N9/N6: Goemans–Williamson, Lyubich–Murasugi interlacing and Guerra interpolation transfer nothing (no canonical graph; local Jensen tests only; no Gaussian comparison) [R524](Riemann/Tree/R524.lean)
