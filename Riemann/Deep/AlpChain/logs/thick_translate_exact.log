@@ -1,0 +1,22 @@
+full average H=Z/1 seed=0 |T2|=1 t=0: identity exact: True
+full average H=Z/1 seed=1 |T2|=1 t=0: identity exact: True
+full average H=Z/1 seed=2 |T2|=1 t=0: identity exact: True
+full average H=Z/1 seed=3 |T2|=1 t=0: identity exact: True
+full average H=Z/1 seed=4 |T2|=1 t=0: identity exact: True
+full average H=Z/2 seed=0 |T2|=2 t=1: identity exact: True
+full average H=Z/2 seed=1 |T2|=1 t=1: identity exact: True
+full average H=Z/2 seed=2 |T2|=1 t=0: identity exact: True
+full average H=Z/2 seed=3 |T2|=1 t=1: identity exact: True
+full average H=Z/2 seed=4 |T2|=1 t=0: identity exact: True
+full average H=Z/4 seed=0 |T2|=3 t=3: identity exact: True
+full average H=Z/4 seed=1 |T2|=2 t=0: identity exact: True
+full average H=Z/4 seed=2 |T2|=1 t=0: identity exact: True
+full average H=Z/4 seed=3 |T2|=2 t=3: identity exact: True
+full average H=Z/4 seed=4 |T2|=2 t=3: identity exact: True
+subgroup A0={0,2} in Z/4 seed=0 |T2|=2 t=2: coefficient = (|T2|b/2n) conj psi(sgc0) psi(0,t) [psi|A0=1]: True
+subgroup A0={0,2} in Z/4 seed=1 |T2|=1 t=2: coefficient = (|T2|b/2n) conj psi(sgc0) psi(0,t) [psi|A0=1]: True
+subgroup A0={0,2} in Z/4 seed=2 |T2|=1 t=0: coefficient = (|T2|b/2n) conj psi(sgc0) psi(0,t) [psi|A0=1]: True
+subgroup A0={0,2} in Z/4 seed=3 |T2|=1 t=2: coefficient = (|T2|b/2n) conj psi(sgc0) psi(0,t) [psi|A0=1]: True
+subgroup A0={0,2} in Z/4 seed=4 |T2|=1 t=0: coefficient = (|T2|b/2n) conj psi(sgc0) psi(0,t) [psi|A0=1]: True
+PASS 20/20
+memcap: peak 0 MB rc=0

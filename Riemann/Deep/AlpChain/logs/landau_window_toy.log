@@ -1,0 +1,30 @@
+zeta alone: theta=0.6 C=0.5: windows 43 (Y=2^4..23170); first failing Y = None; all later fail: False; first violating y = None; max G/y^theta over all = 0.348
+zeta alone: theta=0.55 C=0.5: windows 43 (Y=2^4..23170); first failing Y = None; all later fail: False; first violating y = None; max G/y^theta over all = 0.400
+zeta alone: max |Gz(y)|/sqrt(y) for 1e3<=y<=4e6 = 0.06458158980497133
+
+Toy A c=0.8: kappa=-0.597667; leading zero pair rho0=0.8000+2.2662j, explicit-formula amplitude 2/|rho0(rho0-1)| = 0.3658; empirical max T/y^c (y>=1e5) = 0.4447
+Toy A c=0.8: theta=0.6 C=0.5: windows 43 (Y=2^4..23170); first failing Y = 16; all later fail: False; first violating y = 16; max G/y^theta over all = 7.118
+   predicted first violating y: (C/A0)^(1/(c-theta)) = 4.77 (leading pair only); (C/envelope)^(1/(c-theta)) = 1.8 (all zeros of P); first failing window then Y ~ y^(2/3) = 1.48
+Toy A c=0.8: theta=0.6 C=1: windows 43 (Y=2^4..23170); first failing Y = 38; all later fail: True; first violating y = 201; max G/y^theta over all = 7.118
+   predicted first violating y: (C/A0)^(1/(c-theta)) = 153 (leading pair only); (C/envelope)^(1/(c-theta)) = 57.5 (all zeros of P); first failing window then Y ~ y^(2/3) = 14.9
+Toy A c=0.8: theta=0.6 C=2: windows 43 (Y=2^4..23170); first failing Y = 256; all later fail: True; first violating y = 3613; max G/y^theta over all = 7.118
+   predicted first violating y: (C/A0)^(1/(c-theta)) = 4.89e+03 (leading pair only); (C/envelope)^(1/(c-theta)) = 1.84e+03 (all zeros of P); first failing window then Y ~ y^(2/3) = 150
+Toy A c=0.8: theta=0.6 C=4: windows 43 (Y=2^4..23170); first failing Y = 1722; all later fail: True; first violating y = 64273; max G/y^theta over all = 7.118
+   predicted first violating y: (C/A0)^(1/(c-theta)) = 1.56e+05 (leading pair only); (C/envelope)^(1/(c-theta)) = 5.89e+04 (all zeros of P); first failing window then Y ~ y^(2/3) = 1.51e+03
+Toy B c=0.8 (real zero at c): min T/y^c (y>=1e5) = 6.2300 > 0 (real-zero term y^c/(c(1-c)) = 6.250 y^c)
+Toy B c=0.8: theta=0.6 C=1: windows 43 (Y=2^4..23170); first failing Y = 16; all later fail: True; first violating y = 16; max G/y^theta over all = 127.389
+Toy B c=0.8: theta=0.6 C=4: windows 43 (Y=2^4..23170); first failing Y = 16; all later fail: True; first violating y = 16; max G/y^theta over all = 127.389
+
+Toy A c=0.9: kappa=-0.645179; leading zero pair rho0=0.9000+2.2662j, explicit-formula amplitude 2/|rho0(rho0-1)| = 0.3616; empirical max T/y^c (y>=1e5) = 0.4318
+Toy A c=0.9: theta=0.6 C=0.5: windows 43 (Y=2^4..23170); first failing Y = 16; all later fail: False; first violating y = 16; max G/y^theta over all = 27.638
+   predicted first violating y: (C/A0)^(1/(c-theta)) = 2.95 (leading pair only); (C/envelope)^(1/(c-theta)) = 1.63 (all zeros of P); first failing window then Y ~ y^(2/3) = 1.39
+Toy A c=0.9: theta=0.6 C=1: windows 43 (Y=2^4..23170); first failing Y = 16; all later fail: False; first violating y = 16; max G/y^theta over all = 27.638
+   predicted first violating y: (C/A0)^(1/(c-theta)) = 29.7 (leading pair only); (C/envelope)^(1/(c-theta)) = 16.4 (all zeros of P); first failing window then Y ~ y^(2/3) = 6.46
+Toy A c=0.9: theta=0.6 C=2: windows 43 (Y=2^4..23170); first failing Y = 38; all later fail: True; first violating y = 227; max G/y^theta over all = 27.638
+   predicted first violating y: (C/A0)^(1/(c-theta)) = 299 (leading pair only); (C/envelope)^(1/(c-theta)) = 166 (all zeros of P); first failing window then Y ~ y^(2/3) = 30.2
+Toy A c=0.9: theta=0.6 C=4: windows 43 (Y=2^4..23170); first failing Y = 256; all later fail: True; first violating y = 3312; max G/y^theta over all = 27.638
+   predicted first violating y: (C/A0)^(1/(c-theta)) = 3.02e+03 (leading pair only); (C/envelope)^(1/(c-theta)) = 1.67e+03 (all zeros of P); first failing window then Y ~ y^(2/3) = 141
+Toy B c=0.9 (real zero at c): min T/y^c (y>=1e5) = 11.0911 > 0 (real-zero term y^c/(c(1-c)) = 11.111 y^c)
+Toy B c=0.9: theta=0.6 C=1: windows 43 (Y=2^4..23170); first failing Y = 16; all later fail: True; first violating y = 16; max G/y^theta over all = 1022.971
+Toy B c=0.9: theta=0.6 C=4: windows 43 (Y=2^4..23170); first failing Y = 16; all later fail: True; first violating y = 16; max G/y^theta over all = 1022.971
+memcap: peak 18 MB rc=0

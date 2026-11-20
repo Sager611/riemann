@@ -1,0 +1,14 @@
+T1 = 2n nT aE(1+m^2/k)/(m nT b nT2)  [aE<=2xb, n/nT2<=x^eps, m>=x^(1/2-eps)]: <= 4 x^(1/2 + 2 eps)
+T2 = 4 n^2 m x^eps/(nT nT2)        [nT>=x^(-eps/8)n/2, nT2>=x^(-eps)n, m<=x^(1/2+eps/2)]: <= 8 x^(1/2 + 21/8 eps)
+T3 = 2 k x^(2eps)/(n nT)           [k<=n^2 x^(1/2-eps), nT>=x^(-eps/8)n/2]: <= 4 x^(1/2 + 9/8 eps)
+worst exponent 1/2 + 21/8 eps = 1/2 + 2.625 eps; total <= 20 x^(1/2+(C+21/8)eps) (T1 <= 4x^(1/2+2eps) + 4x^(5eps/2)) <= x^(1/2+(C+3)eps) once x^(3eps/8) >= 20 (Lean ch_core asks x^(3eps/8) >= 26)
+eps=0.04 log x=3000.0: RestSize+ch_core size hyps hold: True; EB/N0 = x^(1/2 + 2.080 eps); parts x^(1/2 + [1.068, 2.080, -3.863] eps)
+eps=0.02 log x=5000.0: RestSize+ch_core size hyps hold: True; EB/N0 = x^(1/2 + 2.083 eps); parts x^(1/2 + [1.069, 2.083, -3.861] eps)
+eps=0.01 log x=12000.0: RestSize+ch_core size hyps hold: True; EB/N0 = x^(1/2 + 2.080 eps); parts x^(1/2 + [1.068, 2.080, -3.863] eps)
+Lean: B0 ~ m: log x=200.0: optimal m = x^0.4983, min relative-error x * (2/m + cost) = x^0.5087
+Lean: B0 ~ m: log x=2000.0: optimal m = x^0.4998, min relative-error x * (2/m + cost) = x^0.5009
+Lean: B0 ~ m: log x=20000.0: optimal m = x^0.5000, min relative-error x * (2/m + cost) = x^0.5001
+alt: B0 ~ m^2: log x=200.0: optimal m = x^0.3310, min relative-error x * (2/m + cost) = x^0.6745
+alt: B0 ~ m^2: log x=2000.0: optimal m = x^0.3331, min relative-error x * (2/m + cost) = x^0.6674
+alt: B0 ~ m^2: log x=20000.0: optimal m = x^0.3333, min relative-error x * (2/m + cost) = x^0.6667
+memcap: peak 0 MB rc=0

@@ -1,0 +1,24 @@
+H=Z/1 seed=0 a=32 N=30 t=0: nonzero keys in ASK-MAIN-De = 0 (ASK keys 3, De keys 9)
+H=Z/1 seed=1 a=16 N=14 t=0: nonzero keys in ASK-MAIN-De = 0 (ASK keys 3, De keys 9)
+H=Z/1 seed=2 a=43 N=36 t=0: nonzero keys in ASK-MAIN-De = 0 (ASK keys 5, De keys 11)
+H=Z/1 seed=3 a=55/3 N=14 t=0: nonzero keys in ASK-MAIN-De = 0 (ASK keys 1, De keys 7)
+H=Z/1 seed=4 a=55/2 N=22 t=0: nonzero keys in ASK-MAIN-De = 0 (ASK keys 2, De keys 8)
+H=Z/1 seed=5 a=79/2 N=19 t=0: nonzero keys in ASK-MAIN-De = 0 (ASK keys 3, De keys 9)
+H=Z/2 seed=0 a=32 N=30 t=1: nonzero keys in ASK-MAIN-De = 0 (ASK keys 2, De keys 10)
+H=Z/2 seed=1 a=16 N=14 t=1: nonzero keys in ASK-MAIN-De = 0 (ASK keys 1, De keys 9)
+H=Z/2 seed=2 a=43 N=36 t=1: nonzero keys in ASK-MAIN-De = 0 (ASK keys 6, De keys 14)
+H=Z/2 seed=3 a=55/3 N=14 t=0: nonzero keys in ASK-MAIN-De = 0 (ASK keys 3, De keys 11)
+H=Z/2 seed=4 a=55/2 N=22 t=0: nonzero keys in ASK-MAIN-De = 0 (ASK keys 1, De keys 9)
+H=Z/2 seed=5 a=79/2 N=40 t=0: nonzero keys in ASK-MAIN-De = 0 (ASK keys 3, De keys 11)
+H=Z/4 seed=0 a=32 N=30 t=1: nonzero keys in ASK-MAIN-De = 0 (ASK keys 4, De keys 15)
+H=Z/4 seed=1 a=16 N=14 t=0: nonzero keys in ASK-MAIN-De = 0 (ASK keys 1, De keys 12)
+H=Z/4 seed=2 a=43 N=36 t=0: nonzero keys in ASK-MAIN-De = 0 (ASK keys 5, De keys 16)
+H=Z/4 seed=3 a=55/3 N=16 t=1: nonzero keys in ASK-MAIN-De = 0 (ASK keys 1, De keys 13)
+H=Z/4 seed=4 a=55/2 N=28 t=2: nonzero keys in ASK-MAIN-De = 0 (ASK keys 4, De keys 14)
+H=Z/4 seed=5 a=79/2 N=40 t=0: nonzero keys in ASK-MAIN-De = 0 (ASK keys 3, De keys 14)
+PASS: 18 exact instances, ASK - MAIN = De identically in all formal symbols
+control H=Z/2: HostFacts.unram violated at p=5 -> nonzero keys 1
+control H=Z/2: MAIN with +gamma instead of -gamma -> nonzero keys 1
+control H=Z/4: HostFacts.unram violated at p=5 -> nonzero keys 1
+control H=Z/4: MAIN with +gamma instead of -gamma -> nonzero keys 1
+memcap: peak 0 MB rc=0
