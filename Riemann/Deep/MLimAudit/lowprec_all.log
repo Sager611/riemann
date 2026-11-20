@@ -1,0 +1,39 @@
+  2000 zeros, 23 s
+  4000 zeros, 59 s
+  6000 zeros, 99 s
+  8000 zeros, 146 s
+  10000 zeros, 199 s
+  12000 zeros, 255 s
+  14000 zeros, 314 s
+  14400 zeros, 326 s
+{
+ "zeros": 14400,
+ "max_|gamma_W - gamma_arb|": 5.171899960969821e-25,
+ "index_mismatches(>1e-15)": 0,
+ "max_delta_c": 6.780628773589573e-25,
+ "c_ball_disagreements": 0,
+ "E_plus": "[7.8666e-23 +/- 2.47e-28]",
+ "E_minus": "[7.7430e-23 +/- 2.89e-28]",
+ "W_plus": "[2.7408219 +/- 7.81e-9]",
+ "W_minus": "[2.7363307 +/- 1.13e-9]"
+}
+time 326 s
+      327.06 real       284.62 user         3.79 sys
+            43155456  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7141  page reclaims
+                  12  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  84  voluntary context switches
+              423757  involuntary context switches
+           420972935  instructions retired
+           151615311  cycles elapsed
+            19628536  peak memory footprint
+memcap: peak 24 MB rc=0

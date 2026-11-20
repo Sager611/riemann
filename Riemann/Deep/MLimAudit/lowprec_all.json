@@ -1,0 +1,11 @@
+{
+ "zeros": 14400,
+ "max_|gamma_W - gamma_arb|": 5.171899960969821e-25,
+ "index_mismatches(>1e-15)": 0,
+ "max_delta_c": 6.780628773589573e-25,
+ "c_ball_disagreements": 0,
+ "E_plus": "[7.8666e-23 +/- 2.47e-28]",
+ "E_minus": "[7.7430e-23 +/- 2.89e-28]",
+ "W_plus": "[2.7408219 +/- 7.81e-9]",
+ "W_minus": "[2.7363307 +/- 1.13e-9]"
+}

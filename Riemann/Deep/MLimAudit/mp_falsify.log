@@ -1,0 +1,32 @@
+(a) done 268 s
+(b) done 277 s
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/MLimAudit/mp_falsify.py", line 69, in <module>
+    worst_phase = max(worst_phase, abs(a - mp.mpf(dump[str(n)][w]['theta_over_pi_mod2'])))
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/iagI1wBi1aqDkjBxtHG1E/lib/python3.12/site-packages/mpmath/ctx_mp_python.py", line 69, in __new__
+    val = from_str(val, prec, rounding, base)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/iagI1wBi1aqDkjBxtHG1E/lib/python3.12/site-packages/mpmath/libmp/libmpf.py", line 1362, in from_str
+    return from_rational(int(p, base), int(q, base), prec, rnd)
+                         ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '[0.53825183114263899753908408145990310694537330726065 +'
+      281.42 real       185.34 user         3.42 sys
+            41762816  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                5960  page reclaims
+                   3  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  91  voluntary context switches
+              412793  involuntary context switches
+           423616268  instructions retired
+           208927520  cycles elapsed
+            21742048  peak memory footprint
+memcap: peak 28 MB rc=1

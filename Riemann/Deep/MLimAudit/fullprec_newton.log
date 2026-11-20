@@ -1,0 +1,22 @@
+zero 7338 (gamma 7564.9602): N(B) in B: True; Im N(B) in Weisz gamma ball: True; c in Weisz c balls: True; |zeta(s0)| ~ [1.33e-9848 +/- 4.96e-9851]; 63 s
+zero 8578 (gamma 8652.8615): N(B) in B: True; Im N(B) in Weisz gamma ball: True; c in Weisz c balls: True; |zeta(s0)| ~ [6.22e-9848 +/- 8.95e-9852]; 65 s
+zero 9656 (gamma 9583.4884): N(B) in B: True; Im N(B) in Weisz gamma ball: True; c in Weisz c balls: True; |zeta(s0)| ~ [7.80e-9847 +/- 7.60e-9851]; 63 s
+      193.11 real       178.34 user         2.10 sys
+           216662016  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               17713  page reclaims
+                 500  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  34  messages sent
+                  35  messages received
+                   1  signals received
+                 250  voluntary context switches
+              196571  involuntary context switches
+           443269789  instructions retired
+           216870529  cycles elapsed
+            23609872  peak memory footprint
+memcap: peak 189 MB rc=0

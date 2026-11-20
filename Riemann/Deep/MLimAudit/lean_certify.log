@@ -1,0 +1,81 @@
+sha256 ok
+pre-pass: 14400 ordinates strictly increasing; gamma_14400 = 13550.64167435772537...
+  2000 zeros, 8 s
+  4000 zeros, 14 s
+  6000 zeros, 19 s
+  8000 zeros, 25 s
+  10000 zeros, 30 s
+  12000 zeros, 35 s
+  14000 zeros, 40 s
+known part done: 41 s; max radii {'phase2f': 9.363352726825e-97, 'c': 1.0000000019139266e-61, 'term_k': 2.7617775157534946e-61}
+  ext zeros up to 14650, 54 s
+  ext zeros up to 14900, 66 s
+  ext zeros up to 15150, 78 s
+  ext zeros up to 15400, 91 s
+  ext zeros up to 15650, 104 s
+  ext zeros up to 15900, 122 s
+  ext zeros up to 16150, 135 s
+  ext zeros up to 16400, 146 s
+  ext zeros up to 16650, 157 s
+  ext zeros up to 16900, 168 s
+  ext zeros up to 17150, 180 s
+  ext zeros up to 17400, 191 s
+  ext zeros up to 17650, 203 s
+  ext zeros up to 17900, 215 s
+  ext zeros up to 18150, 229 s
+  ext zeros up to 18400, 245 s
+  ext zeros up to 18650, 262 s
+  ext zeros up to 18900, 277 s
+  ext zeros up to 19150, 297 s
+  ext zeros up to 19400, 317 s
+  ext zeros up to 19650, 333 s
+  ext zeros up to 19900, 348 s
+  ext zeros up to 20150, 362 s
+  ext zeros up to 20312, 370 s
+{
+ "k_plus": "[2.07667367991542816256075081947586774402265320 +/- 4.40e-45]",
+ "k_minus": "[-2.07898436576375353315931211860685391755341710 +/- 1.77e-45]",
+ "jp_plus": "[2.06175365145852821578306791581508872140808973 +/- 4.37e-45]",
+ "jp_minus": "[-2.06471554352917265149200382689073607183613725 +/- 6.83e-46]",
+ "rad_k_plus": 9.897957952014111e-60,
+ "rad_k_minus": 9.906183830675444e-60,
+ "rad_jp_plus": 9.399868112824557e-60,
+ "rad_jp_minus": 9.422381881397385e-60,
+ "ext": {
+  "T1": "18292.50000",
+  "N(T1)": 20311,
+  "used": 5911,
+  "pen_plus": "[0.0027735381556268123930 +/- 1.32e-24]",
+  "pen_minus": "[0.0025665191528370111123 +/- 2.45e-23]"
+ },
+ "h_plus_lower": "[2.07390014175980135016775212842 +/- 2.62e-30]",
+ "h_minus_upper": "[-2.07641784661091652204703653310 +/- 4.75e-30]",
+ "h_plus_lower_endpoint": "[2.073900141759801350167752 +/- 1.29e-25]",
+ "h_minus_upper_endpoint": "[-2.076417846610916522047037 +/- 4.67e-25]",
+ "rad_h_plus": 2.525469027093806e-34,
+ "rad_h_minus": 2.331572134344011e-34
+}
+JP plus vs Weisz certificate: overlap=True, |diff mid|=[3.5568e-60 +/- 4.43e-66]
+JP minus vs Weisz certificate: overlap=True, |diff mid|=[4.6431e-59 +/- 4.03e-64]
+h_K+(y+) > 2.0739001417: True ; h_K-(y-) < -2.0764178466: True
+LEAN RECOMPUTATION: BOTH CLAIMED INEQUALITIES HOLD
+time 370 s
+      371.20 real       270.78 user         4.78 sys
+            49561600  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7478  page reclaims
+                  63  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   2  voluntary context switches
+              551171  involuntary context switches
+           421013310  instructions retired
+           209345796  cycles elapsed
+            19644944  peak memory footprint
+memcap: peak 28 MB rc=0

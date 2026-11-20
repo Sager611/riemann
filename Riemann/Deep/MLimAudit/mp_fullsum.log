@@ -1,0 +1,33 @@
+  2000 zeros, 29 s
+  4000 zeros, 57 s
+  6000 zeros, 84 s
+  8000 zeros, 111 s
+  10000 zeros, 139 s
+  12000 zeros, 165 s
+  14000 zeros, 191 s
+{
+ "k_plus": "2.0766736799154281625607508194758677440226532043945",
+ "k_minus": "-2.0789843657637535331593121186068539175534171017616",
+ "jp_plus": "2.0617536514585282157830679158150887214080897256322",
+ "jp_minus": "-2.0647155435291726514920038268907360718361372493174"
+}
+time 197 s
+      197.13 real       183.26 user         2.42 sys
+            40583168  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                5657  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  51  voluntary context switches
+              196747  involuntary context switches
+           415231005  instructions retired
+           162258678  cycles elapsed
+            20578808  peak memory footprint
+memcap: peak 25 MB rc=0

@@ -1,0 +1,13 @@
+{
+ "a_ext_zeros_checked": 50,
+ "a_max_|gamma_mp - gamma_arb|": "4.71e-21",
+ "a_max_(cup/|c|_mp - 1)": "5.67e-15",
+ "b_gamma_20311": "18291.6523622233",
+ "b_gamma_20312": "18292.8864718309",
+ "b_bracket_ok": true,
+ "c_phase_points": 18,
+ "c_max_|theta/pi_mp - theta/pi_arb|": "4.93e-50",
+ "d_max_|k_sweep - k_arb|": "3.65e-31",
+ "d_max_|term_mp - term_arb|": "3.4e-31",
+ "e_max_|c_mp - c_weisz|": "4.82e-62"
+}
