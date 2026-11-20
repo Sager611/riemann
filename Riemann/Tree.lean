@@ -524,3 +524,4 @@ import Riemann.Tree.R524
 import Riemann.Tree.R525
 import Riemann.Tree.R526
 import Riemann.Tree.R527
+import Riemann.Tree.R528
