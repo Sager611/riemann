@@ -1,0 +1,38 @@
+c=  2 order=     3 W_BJ=       1.4 ratio= 2.164
+c=  3 order=     6 W_BJ=       2.8 ratio= 2.176
+c=  4 order=     7 W_BJ=       5.0 ratio= 1.392
+c=  5 order=     9 W_BJ=       7.0 ratio= 1.285
+c=  6 order=    14 W_BJ=      12.4 ratio= 1.130
+c=  7 order=    17 W_BJ=      13.5 ratio= 1.263
+c=  8 order=    25 W_BJ=      23.3 ratio= 1.074
+c=  9 order=    30 W_BJ=      28.3 ratio= 1.061
+c= 10 order=    33 W_BJ=      37.4 ratio= 0.882
+c= 11 order=    55 W_BJ=      39.0 ratio= 1.411
+c= 12 order=    70 W_BJ=      64.4 ratio= 1.086
+c= 13 order=    86 W_BJ=      66.5 ratio= 1.293
+c= 14 order=   101 W_BJ=     107.7 ratio= 0.938
+c= 15 order=    96 W_BJ=     110.5 ratio= 0.869
+c= 16 order=   133 W_BJ=     113.2 ratio= 1.175
+c= 17 order=   187 W_BJ=     127.9 ratio= 1.463
+c= 18 order=   212 W_BJ=     199.7 ratio= 1.062
+c= 19 order=   299 W_BJ=     203.4 ratio= 1.470
+c= 20 order=   311 W_BJ=     312.8 ratio= 0.994
+c= 21 order=   304 W_BJ=     317.8 ratio= 0.956
+c= 22 order=   340 W_BJ=     322.7 ratio= 1.054
+c= 23 order=   457 W_BJ=     327.3 ratio= 1.396
+c= 24 order=   525 W_BJ=     489.5 ratio= 1.073
+c= 25 order=   558 W_BJ=     495.8 ratio= 1.125
+c= 26 order=   595 W_BJ=     621.3 ratio= 0.958
+c= 27 order=   673 W_BJ=     628.5 ratio= 1.071
+c= 28 order=   710 W_BJ=     726.3 ratio= 0.978
+c= 29 order=  1084 W_BJ=     733.9 ratio= 1.477
+c= 30 order=  1265 W_BJ=    1060.8 ratio= 1.193
+c= 31 order=  1663 W_BJ=    1071.0 ratio= 1.553
+c= 45 order=  4424 W_BJ=    4632.8 ratio= 0.955
+c= 47 order=  7170 W_BJ=    4685.7 ratio= 1.530
+c= 71 order= 38377 W_BJ=   24894.5 ratio= 1.542
+c >= 10: ratio min 0.869 max 1.553 geometric mean 1.159; log-log slope of order vs W over c = 10..71: 1.036
+prediction c=100: W_BJ = 1.11e+05
+prediction c=150: W_BJ = 9.56e+05
+prediction c=200: W_BJ = 5.64e+06
+memcap: peak 0 MB rc=0

@@ -1,0 +1,11 @@
+c=2 ell=0.6931 atoms=0 maxX=0.000 E[expX]=1 BJ: W~B~2 ell E = 1.386 | grid (|t| < 10.4): |sigma<0| = 12.58, W = 1.388, B = 1.558
+c=5 ell=1.6094 atoms=3 maxX=2.942 E[expX]=2.176 BJ: W~B~2 ell E = 7.005 | grid (|t| < 196): |sigma<0| = 27.51, W = 7.047, B = 7.043
+c=10 ell=2.3026 atoms=7 maxX=7.075 E[expX]=8.129 BJ: W~B~2 ell E = 37.44 | grid (|t| < 1.22e+04): |sigma<0| = 107.3, W = 39.31, B = 36.84
+c=20 ell=2.9957 atoms=12 maxX=13.016 E[expX]=52.2 BJ: W~B~2 ell E = 312.8
+c=47 ell=3.8501 atoms=21 maxX=21.613 E[expX]=608.5 BJ: W~B~2 ell E = 4686
+c=100 ell=4.6052 atoms=35 maxX=33.792 E[expX]=1.209e+04 BJ: W~B~2 ell E = 1.113e+05
+memcap: peak 0 MB rc=0
+
+real	0m7.648s
+user	0m1.939s
+sys	0m4.833s

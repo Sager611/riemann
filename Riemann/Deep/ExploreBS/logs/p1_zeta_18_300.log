@@ -1,0 +1,4 @@
+zeta: [18.0,300.0] step 0.02: sign changes of Z = 137, net k*pi crossings of phi = 137, (phi_end - phi_0)/pi = 136.5838, int phi'/pi = 136.5838
+zeta: min phi' = 0.444549 at t = 18.000; grid points with phi' < 0: 0; (1/2)log2 = 0.346574
+zeta N(b) - N(a) via mp.nzeros: 137  elapsed 1145.6
+memcap: peak 16 MB rc=0
