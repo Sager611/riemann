@@ -1,0 +1,22 @@
+k=1 lam=1.9200 d=1: h1 = 0.981828 (v = 0.23703)  [forms 7s, herm 7.8e-17 imag 1.7e-18]
+   J=4 it 0: SDP 0.0179183 (cut rounds 8, minvalid 0) -> h_J = 0.982346 (v = 0.23660)
+   J=4 it 1: SDP 0.0179164 (cut rounds 10, minvalid -1.2e-09) -> h_J = 0.982346 (v = 0.23660)
+memcap: peak 132 MB rc=0
+       83.77 real        60.26 user        44.82 sys
+           168263680  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               87740  page reclaims
+                1890  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  32  messages sent
+                  31  messages received
+                  62  signals received
+                1744  voluntary context switches
+              197377  involuntary context switches
+           129706588  instructions retired
+           140303039  cycles elapsed
+             2310480  peak memory footprint

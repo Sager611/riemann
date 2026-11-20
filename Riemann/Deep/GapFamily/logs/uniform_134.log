@@ -1,0 +1,25 @@
+J=1 Lam=1.950000 SDP 0.2675 rounds 0 minvalid 0 -> no
+J=1 Lam=1.825000 SDP 0.1102 rounds 0 minvalid 0 -> no
+J=1 Lam=1.762500 SDP 0.03547 rounds 0 minvalid 0 -> no
+J=1 Lam=1.731250 SDP -0.0009245 rounds 0 minvalid 0 -> OK
+J=1 Lam=1.746875 SDP 0.01719 rounds 0 minvalid 0 -> no
+J=1 Lam=1.739063 SDP 0.008113 rounds 0 minvalid 0 -> no
+J=1 Lam=1.735156 SDP 0.003589 rounds 0 minvalid 0 -> no
+J=1: crossing in [1.731250, 1.735156]
+J=3 Lam=1.950000 SDP 0.2007 rounds 1 minvalid 0 -> no
+J=3 Lam=1.825000 SDP 0.099 rounds 1 minvalid 0 -> no
+J=3 Lam=1.762500 SDP 0.03282 rounds 1 minvalid 0 -> no
+J=3 Lam=1.731250 SDP -0.001961 rounds 1 minvalid 0 -> OK
+J=3 Lam=1.746875 SDP 0.01551 rounds 1 minvalid 0 -> no
+J=3 Lam=1.739063 SDP 0.006786 rounds 1 minvalid 0 -> no
+J=3 Lam=1.735156 SDP 0.002415 rounds 1 minvalid 0 -> no
+J=3: crossing in [1.731250, 1.735156]
+J=4 Lam=1.950000 SDP 0.2007 rounds 4 minvalid 0 -> no
+J=4 Lam=1.825000 SDP 0.08954 rounds 7 minvalid 0 -> no
+J=4 Lam=1.762500 SDP 0.02368 rounds 11 minvalid 0 -> no
+J=4 Lam=1.731250 SDP -0.009794 rounds 12 minvalid -3e-09 -> OK
+J=4 Lam=1.746875 SDP 0.00698 rounds 10 minvalid 0 -> no
+J=4 Lam=1.739063 SDP -0.001398 rounds 10 minvalid 0 -> OK
+J=4 Lam=1.742969 SDP 0.002794 rounds 9 minvalid 0 -> no
+J=4: crossing in [1.739063, 1.742969]
+memcap: peak 138 MB rc=0

@@ -1,0 +1,12 @@
+k=2 lam=1.6060 eta=0.0000 d=1: max h = 0.994732 at V=1.22453 (v=0.22453), P coeffs (w^i) [1.0, -2.0519]; at BH v=0.2: h=0.993242
+memcap: peak 23 MB rc=0
+k=2 lam=1.6060 eta=0.1500 d=1: max h = 0.995412 at V=1.22577 (v=0.22577), P coeffs (w^i) [1.0, -2.0623]; at BH v=0.2: h=0.993771
+memcap: peak 24 MB rc=0
+k=2 lam=1.6060 eta=0.3000 d=1: max h = 0.995800 at V=1.22648 (v=0.22648), P coeffs (w^i) [1.0, -2.0681]; at BH v=0.2: h=0.994068
+memcap: peak 26 MB rc=0
+k=2 lam=1.6060 eta=0.4015 d=1: max h = 0.995878 at V=1.22662 (v=0.22662), P coeffs (w^i) [1.0, -2.0693]; at BH v=0.2: h=0.994127
+memcap: peak 26 MB rc=0
+k=2 lam=1.6060 eta=0.5500 d=1: max h = 0.995713 at V=1.22632 (v=0.22632), P coeffs (w^i) [1.0, -2.0668]; at BH v=0.2: h=0.994001
+memcap: peak 26 MB rc=0
+k=2 lam=1.6060 eta=0.8000 d=1: max h = 0.994749 at V=1.22456 (v=0.22456), P coeffs (w^i) [1.0, -2.0522]; at BH v=0.2: h=0.993255
+memcap: peak 26 MB rc=0

@@ -1,0 +1,27 @@
+(1) p(1) = 0.0147554, real roots >= 1: 0
+(2) C11 = 1.273e-07, det C = 1.364e-15
+(3) N11: degree 5, leading 6.942e-07, real roots ['[-5310.1908 +/- 3.63e-5]', '[-8.2657228e-6 +/- 2.85e-14]', '[1.0088941 +/- 3.64e-8]', '[3.6813894 +/- 4.90e-8]', '[4.3286668 +/- 2.22e-8]']
+(3) N22: degree 5, leading 1.014e-07, real roots ['[-44.123949 +/- 3.29e-7]', '[-2.2303923e-5 +/- 4.62e-13]', '[0.98690522 +/- 1.36e-9]']
+(3) DET: degree 10, leading 2.001e-16, real roots ['[-1686331.0 +/- 0.0245]', '[-2.7979436 +/- 3.12e-8]', '[-0.00046804949 +/- 1.33e-12]', '[-8.1480020e-6 +/- 4.51e-14]', '[0.98440562 +/- 2.70e-9]', '[14.775960 +/- 2.87e-7]']
+  FAIL at g = [3.141592654 +/- 4.97e-10] [[0.006954866 +/- 5.17e-10], [0.0026492648 +/- 2.20e-11], [0.00100907071 +/- 7.93e-12]] [[0.00445793274 +/- 9.27e-12], [-0.00012398228 +/- 5.06e-12], [0.003474687423 +/- 8.50e-13]]
+(4) X* = 14.775960, g* = 0.817282, K = 61, cells 0; min det lower bounds: S_odd None, S_even+C/2 None
+CERTIFIED per-gap validity (J=6): False
+memcap: peak 0 MB rc=0
+        7.27 real         0.74 user         4.51 sys
+            45826048  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               13300  page reclaims
+                 621  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  22  messages received
+                   5  signals received
+                 187  voluntary context switches
+                5504  involuntary context switches
+            61790234  instructions retired
+            45299318  cycles elapsed
+             2228560  peak memory footprint

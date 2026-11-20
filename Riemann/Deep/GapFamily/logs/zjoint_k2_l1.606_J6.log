@@ -1,0 +1,7 @@
+   moments about V (Wirtinger P): mu1 -2.4e-08, mu2 0.389317, kurtosis 1.14516, m6/m2^3 1.4355, m8/m2^4 1.9677
+k=2 lam=1.6060 d=1: h1 = 0.995878 (v = 0.22662)  [forms 8s, herm 4.5e-17 imag 1.6e-18]
+/Users/adriansager/playground/riemann/Riemann/Deep/GapFamily/sdpcut.py:51: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  pr.solve(solver=cp.CLARABEL)
+   J=6 it 0: SDP 0.00371941 (cut rounds 0, minvalid 0) -> h_J = 0.996278 (v = 0.22668)
+   J=6 it 1: SDP 0.00371877 (cut rounds 0, minvalid 0) -> h_J = 0.996278 (v = 0.22668)
+memcap: peak 158 MB rc=0
