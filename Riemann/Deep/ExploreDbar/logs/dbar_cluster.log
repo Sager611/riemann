@@ -1,0 +1,8 @@
+time 0.0 s
+C_K=0.043532  predicted with m=3 at g1, m=2 at g5: 0.129046
+h=0.01 L= 20.0  L*U=0.129116  ratio to prediction 1.00054  cond 1.8e+09
+h=0.01 L= 40.0  L*U=0.128468  ratio to prediction 0.99552  cond 1.1e+08
+h=0.01 L= 80.0  L*U=0.127870  ratio to prediction 0.99088  cond 6.2e+06
+h=0.001 L= 20.0  L*U=0.129188  ratio to prediction 1.00110  cond 1.8e+13
+h=0.001 L= 40.0  L*U=0.128758  ratio to prediction 0.99777  cond 1.1e+12
+h=0.001 L= 80.0  L*U=0.129033  ratio to prediction 0.99989  cond 6.3e+10

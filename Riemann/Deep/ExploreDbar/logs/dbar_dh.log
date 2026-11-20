@@ -1,0 +1,13 @@
+time 0.0 s
+max |Im Lambda|/|Lambda| = 1.206662303170273e-17
+on-line zeros found: 106  first: [ 5.09415984  8.93991441 12.13354543 14.40400311]  off-line (refined): ['0.808517+85.699348i', '0.650830+114.163343i', '0.574356+166.479306i', '0.724258+176.702461i']
+smooth N(180.0) ~ 114.5; on-line 106 + 2*off-line 8 = 114
+DH on-line sum 1/|rho|^2 (|gamma|<180.0) = 0.183619
+L=  7.155  L*U_on=0.185905  L*U_all=0.188794  U_all=2.639e-02
+L= 10.000  L*U_on=0.184892  L*U_all=0.188140  U_all=1.881e-02
+L= 20.000  L*U_on=0.181989  L*U_all=0.187237  U_all=9.362e-03
+L= 40.000  L*U_on=0.183201  L*U_all=0.193342  U_all=4.834e-03
+L= 80.000  L*U_on=0.183630  L*U_all=0.203891  U_all=2.549e-03
+L=160.000  L*U_on=0.183466  L*U_all=0.224019  U_all=1.400e-03
+floor (sum over right zeros of 1/K_inf) ~ 2.538e-04
+time 152.4 s
