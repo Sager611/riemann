@@ -10,11 +10,13 @@
 
 **Certificate.** certify.py (python-flint arb, 4 s): "K = max(Kres, KN(9e24)) = 6416.58.. <= 7000: PASS" (L* = 90) and KSELF = 2.429·10^114 (L* = 80). Rerun by the orchestrator on a copy: both logs byte-identical.
 
-**Review.** Orchestrator's verdict-only reviewer: first GAP (DERIVATION.md printed c3 <= 7.63 and beta <= 0.0533, rounded the wrong way; the certificate itself always used Arb ball endpoints); after the outward rounding of every quoted constant and recertification: CORRECT (C3 s1 < kappa0/4, deltaA and etaG bounds, a + b + theta = 0.97084 < 1, Kres < 6416.68 even from rounded displays), SIGNIFICANT (first explicit wedge constant valid for unbounded degree).
+**Review.** Orchestrator's verdict-only reviewer: first GAP (DERIVATION.md printed c3 <= 7.63 and beta <= 0.0533, rounded the wrong way; the certificate itself always used Arb ball endpoints); after the outward rounding of every quoted constant and recertification: CORRECT (C3 s1 < kappa0/4, deltaA and etaG bounds, a + b + theta = 0.97084 < 1, Kres = 6416.59 certified, 6416.74 from the rounded displays), SIGNIFICANT (first explicit wedge constant valid for unbounded degree).
 
 **Novelty.** lst.py 'Jensen|hyperbolic|Turan|Laguerre' (math.NT, CA, CV; Oct-Nov 2026): no explicit Jensen region (2610.38870 is a GRH criterion); Zenodo "Jensen polynomials" (60 hits): Savva 22293642 symbolic, Chen 22951677 and Chung 23987495 RH claims, Schieber 22936342 conditional, Dumas 22897068 transfers published bounds; HAL: Planat fitted, not rigorous; our files: R374 candidate only. Recheck 6 Nov 2026: unchanged.
 
 **Caveat.** Holland's preprint is unrefereed; its chain is used as written, with the analytic input replaced by our own bound. Item 1 needs the all-n range d <= 9.0·10^24 (Chasse's lemma with Platt-Trudgian's RH height). Not formalized in Lean.
+
+**Audit.** jwaudit (Orca, 20 Nov 2026), the shared saddle bound and every constant where it enters Holland's chain: AUDIT PASSED. C3 s1 = 2.2901 ≤ 3.1237 (the κ0/4 bound); δA = 5.3214·10⁻²⁰ and N* = 1.72530·10^41 by hand; ηG tested by quadrature (holds, 2% margin); a + b + ϑ = 0.97084 < 1 suffices (Holland l. 1797–1807); a_m, b_m, ϑ and an explicit C_V re-derived; K_res = 6416.59 ≤ 7000, K_N(9e24) = 784.13, K_SELF = 2.4291·10^114; certify.py reruns byte-identical. Not re-audited: Holland's Laguerre-defect, Jacobi-model and four-coefficient-matching blocks (reviewer CORRECT earlier). [JWAudit](../Riemann/Deep/JWAudit/REPORT.md)
 
 **RH relevance:** N6 (RH iff J^{d,n} is hyperbolic for all d, n; this is the first explicit hyperbolic region unbounded in d).
 

@@ -1,0 +1,16 @@
+Q_2: u-derivation vs (t,s) code: max rel diff 2.67e-51; Q_2(t,0) = t**2/2 - t + 2 + O(t^3)
+Q_3: u-derivation vs (t,s) code: max rel diff 6.68e-51; Q_3(t,0) = t**2 - 2 + O(t^3)
+Q_4: u-derivation vs (t,s) code: max rel diff 8.02e-51; Q_4(t,0) = -5*t**2/2 + t + 4 + O(t^3)
+Q_5: u-derivation vs (t,s) code: max rel diff 1.6e-50; Q_5(t,0) = 15*t**2/2 - 5*t - 12 + O(t^3)
+Q_6: u-derivation vs (t,s) code: max rel diff 2.41e-50; Q_6(t,0) = -28*t**2 + 26*t + 48 + O(t^3)
+Psi'(x0) numeric 4.0621899175257510672 vs 2 log u0 4.0621899175257510672
+Psi^(2)(1e8): numeric/formula - 1 = 2.34e-116
+Psi^(3)(1e8): numeric/formula - 1 = 1.72e-111
+Psi^(4)(1e8): numeric/formula - 1 = -6.64e-107
+Psi^(5)(1e8): numeric/formula - 1 = -1.08e-102
+Psi^(6)(1e8): numeric/formula - 1 = -5.91e-98
+recurrence with (m-d+1): residuals m=0..4: [0, 0, 0, 0, 0]
+recurrence with (m-d) [App l. 688 misprint]: residuals m=0..4: [-804634753323191713830575782617204/9423893615682718240805925733001135, 40014097193097514983198368425500/1884778723136543648161185146600227, -6386593236167214929236494993552/1884778723136543648161185146600227, 15112595188582588368580444848/43832063328756829027004305734889, -902818637510001378064498080/43832063328756829027004305734889]
+Jacobi diagonal identity: lhs - rhs = 0
+ALL CHECKS: PASS
+memcap: peak 15 MB rc=0

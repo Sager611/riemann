@@ -1,0 +1,13 @@
+# Reruns from copies (.scratch/jwaudit/runs, deleted after the audit), 2026-11-20 07:57-08:00 UTC, under memcap 290 MB
+HollandK: certify.py 90 2.6 1000 1.4 -> byte-identical to certify.log; certify.py 80 2.6 1000 1.4 -> byte-identical to certify_self.log
+SavvaK: certify6.py 80 2.3 1000 1.33 -> byte-identical to certify.log, cells_main.csv identical
+SavvaK: certify6.py 24 4 400 1.33 -self -> byte-identical to certify_self.log, cells_self.csv identical
+HollandK/rerun_90.err: memcap: peak 0 MB rc=0 |  7.37 real 3.12 user 0.40 sys; 73121792 maximum resident set size; 15745552 peak memory footprint;
+HollandK/rerun_80.err: memcap: peak 0 MB rc=0 |  5.84 real 3.04 user 0.25 sys; 73203712 maximum resident set size; 15106528 peak memory footprint;
+SavvaK/rerun_main.err: memcap: peak 65 MB rc=0 |  36.73 real 29.89 user 0.58 sys; 85295104 maximum resident set size; 15172088 peak memory footprint;
+SavvaK/rerun_self.err: memcap: peak 65 MB rc=0 |  133.65 real 112.99 user 1.59 sys; 85295104 maximum resident set size; 15680016 peak memory footprint;
+## final lines
+  final: thetaE >= 0.863290, 1+lamL <= 1.06043, Kres <= 23.0332, KN(9e24) <= 5.6413, KN(d0) <= 0.97797, K <= 23.0332, KSELF <= 4.113E+75, N* >= 6.9625E+36
+  final: thetaE >= 0.863290, 1+lamL <= 1.15124, Kres <= 830.045, KN(9e24) <= 3.7796E-50, KN(d0) <= 6.5523E-51, K <= 830.045, KSELF <= 2.756E+25, N* >= 9.9861E+11
+  final: thetaE >= 0.929840 (log(1+lam^4(lam-1)) - 0.001), 1+lamL <= 1.05502, Kres <= 6416.59, KN(d0) <= 42.27, KN(9e24) <= 784.13, K <= 6416.59, KSELF <= 4.631E+127, N* >= 1.7253E+41
+  final: thetaE >= 0.929840 (log(1+lam^4(lam-1)) - 0.001), 1+lamL <= 1.06043, Kres <= 6764.23, KN(d0) <= 2.218E-12, KN(9e24) <= 4.1137E-11, K <= 6764.23, KSELF <= 2.430E+114, N* >= 6.9625E+36

@@ -1,0 +1,4 @@
+cells_main.csv: 1000 rows (0 bisected), covers [0, 1/80]: True, gaps: 0; max C6_up 2.05033, Bn_up 2.02192, Cfin_up 18.7514, radius_budget_up 0.97277, Cloc_up 4.0006; max-Cfin cell 999 eps [0.012487499, 0.012500001] C6 1.99342 B/n 2.02192
+   all radius budgets < 1: True; all Cfin <= 18.7514
+cells_self.csv: 2210 rows (2210 bisected), covers [0, 1/24]: True, gaps: 0; max C6_up 2.45116, Bn_up 2.07477, Cfin_up 622.436, radius_budget_up 0.545894, Cloc_up 4.00495; max-Cfin cell -1 eps [0.00015624999, 0.00020833334] C6 2.45116 B/n 2.00538
+   all radius budgets < 1: True; all Cfin <= 622.436

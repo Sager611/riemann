@@ -1,0 +1,21 @@
+# Reviewer (verdict-only, no tools), 2026-11-20 08:21-08:23 UTC, run a6c64639, model gpt-6-astra (thinking xhigh)
+Task: the explicit complex saddle bound, steps S1-S6 + the G-oscillation bound, pasted inline with all formulas (FULLPROOF.md §1 / §8):
+S1 saddle fixed point and beta; S2 contour [0, al/2] + vertical + horizontal ray through u0(z); S3 ray concavity (Re(z/u^2) > 0);
+S4 core: C3 <= c3 e^{2al}, C3 s1 <= kappa0/4, error <= 16 C3/kappa0^2, relative c3 sqrt(2 phi2) e^{-al}/(pi^2 cos^2 2beta);
+S5 Gaussian tails, tangent-line ray tails, amplitude; S6 pieces near 0 with exponent b x0; conclusion delta <= 5.33e-20,
+|G - G(x0)| <= etaG; uniformity in x0 >= N*.
+
+Verdict:
+CORRECT
+S2-S3: the horizontal deformation is legitimate; the angular estimate ensures Re(z/(u0+s)^2) > 0 throughout the ray.
+S4: absorption is valid, and int_R |s|^3 e^{-kappa0 s^2/4} ds = 16/kappa0^2.
+S5: concavity supplies both tangent-line tail bounds, including the finite left tail.
+The amplitude correction covers the entire ray, so no amplitude contribution is omitted.
+Explicitly, rel_amp <= (3/2pi) e^{-alpha+s1} sqrt(phi2/cos(2beta)) + negligible tails.
+For uniform numerical evaluation use alpha >= 45 - 0.05335 = 44.94665, not alpha = 45; core plus amplitude is approximately 5.322e-20.
+S6 covers both remaining contour pieces; their normalized contributions and the tails fit comfortably within the remaining margin.
+The logarithmic estimate holds for a consistent holomorphic logarithm; interpret its 4 delta as 4 sup|delta|.
+No additional integral term or uniformity loss is missing.
+
+Auditor's note: HollandK certify.py already evaluates at alo = a* - beta (= 44.94665) and uses 4 deltaA (the sup); by hand
+rel_core + rel_am = 3.3590e-20 + 1.9624e-20 = 5.3214e-20 = certified deltaA.

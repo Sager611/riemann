@@ -1,0 +1,25 @@
+(2) p_F = Q_{A,B}^{(1)} box Q_{C,D}^{(D)} coefficientwise: OK
+(3) F(y*) = [0, 0, 0, 0]  DF = [[-1/9, -4/3, 1/4, 1], [0, -1, 1/8, 1], [0, -2, 3/16, 3], [0, -5/3, 1/8, 4]]  det = -1/144  inverse row sums = [87, 15, 304/3, 10/3]
+    (11.2) with 0-based components: 3F_1 - F_2 - (3w(t-1)/t^4 - 1) = 0 ;  (4/3)F_2 - F_3 - (4w(t-1)/t^5 - 2/3) = 0
+    with 1-based components 3F_1 - F_2 would be 2*delta - 5 + 3*w/t**2 - w/t**3 + 3/alpha (not the printed identity)
+(4) leading n^5 L E6 at y* = -2
+    d=5 V=160 U=165: max|root-V|/sqrt(Vd) = 0.2548  (2 sqrt((U-V)/U) = 0.3482)  max|Im| = 0.0e+00
+    d=5 V=160 U=320: max|root-V|/sqrt(Vd) = 0.9676  (2 sqrt((U-V)/U) = 1.4142)  max|Im| = 0.0e+00
+    d=10 V=320 U=640: max|root-V|/sqrt(Vd) = 1.1543  (2 sqrt((U-V)/U) = 1.4142)  max|Im| = 0.0e+00
+    d=10 V=320 U=330: max|root-V|/sqrt(Vd) = 0.3297  (2 sqrt((U-V)/U) = 0.3482)  max|Im| = 0.0e+00
+    d=20 V=640 U=1280: max|root-V|/sqrt(Vd) = 1.2724  (2 sqrt((U-V)/U) = 1.4142)  max|Im| = 0.0e+00
+    d=20 V=2000 U=4000: max|root-V|/sqrt(Vd) = 1.2474  (2 sqrt((U-V)/U) = 1.4142)  max|Im| = 0.0e+00
+    d=8 V=256 U=1000000: max|root-V|/sqrt(Vd) = 1.7134  (2 sqrt((U-V)/U) = 1.9997)  max|Im| = 0.0e+00
+    d=30 V=960 U=1920: max|root-V|/sqrt(Vd) = 1.3202  (2 sqrt((U-V)/U) = 1.4142)  max|Im| = 0.0e+00
+    d=12 V=5000 U=10000: max|root-V|/sqrt(Vd) = 1.1444  (2 sqrt((U-V)/U) = 1.4142)  max|Im| = 0.0e+00
+(5) Jacobi localization: worst ratio 1.7134 <= 8: True; worst / (2 sqrt((U-V)/U)) = 0.9471
+recurrence satisfied (out of 44 (d,m,y) cases): {'expanded(Savva app)': 0, 'decomposed(Savva 13.6)': 44, 'corrected': 44}
+P1c - P1e = -D*y*(A + C + 2*m + 1)/(A*C)
+P1c - P1d = 0
+P2 - P2d = 0    P0 - P0d = 0
+d=6 V=300 U=600: max rel |eig - root| = 2.2e-55, Gershgorin radius/sqrt(Vd) = 1.2740, true max|root-V|/sqrt(Vd) = 1.0136
+d=9 V=500 U=2000: max rel |eig - root| = 3.0e-51, Gershgorin radius/sqrt(Vd) = 1.7140, true max|root-V|/sqrt(Vd) = 1.4239
+d=12 V=1000 U=1013: max rel |eig - root| = 3.4e-35, Gershgorin radius/sqrt(Vd) = 0.2753, true max|root-V|/sqrt(Vd) = 0.2300
+d=7 V=400 U=10000000: max rel |eig - root| = 2.6e-54, Gershgorin radius/sqrt(Vd) = 1.9699, true max|root-V|/sqrt(Vd) = 1.5916
+d=10 V=800 U=1600: max rel |eig - root| = 5.1e-49, Gershgorin radius/sqrt(Vd) = 1.3469, true max|root-V|/sqrt(Vd) = 1.1325
+closed forms for diag - V and off^2: max abs error 1.9e-55

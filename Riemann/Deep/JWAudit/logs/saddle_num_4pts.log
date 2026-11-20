@@ -1,0 +1,17 @@
+validate real x=2000.0: real-axis(k<=3) 0.042410129116371670348  ray(k=1) 0.042410129116371670348  rel diff 0.0
+validate real x=1.0e+6: real-axis(k<=3) 0.002809794256105492599  ray(k=1) 0.002809794256105492599  rel diff 0.0
+validate complex z=2000(1+0.1e^{i1.571}): real-axis (0.0422923222255507 - 0.00172111754351254j)  ray (0.0422923222255507 - 0.00172111754351254j)  rel diff 1.71e-48
+validate complex z=2000(1+0.1e^{i2.356}): real-axis (0.0436262755943285 - 0.00134861998881455j)  ray (0.0436262755943285 - 0.00134861998881455j)  rel diff 2.05e-48
+L*=24 x0=9.98616e+11 a0=12.0: delta(x0)=(-1.721e-11 + 0.0j) (1st-order Laplace (-1.721e-11 + 0.0j)); max|delta| on edge 1.904e-11 <= deltaA 1.164e-5: True
+   max|G(z)-G(x0)| on edge (4 pts) 0.050484143 at theta=2pi*2/4 <= etaG 0.0552241: True (margin 0.00474); max|u0(z)-a0| 0.0505688 <= beta 0.0551866: True; ray tail exponent <= -796.3
+L*=80 x0=6.96255e+36 a0=40.0: delta(x0)=(-8.166e-36 + 0.0j) (1st-order Laplace (-8.166e-36 + 0.0j)); max|delta| on edge 9.061e-36 <= deltaA 7.904e-18: True
+   max|G(z)-G(x0)| on edge (4 pts) 0.052021427 at theta=2pi*2/4 <= etaG 0.0533654: True (margin 0.00134); max|u0(z)-a0| 0.0520295 <= beta 0.0534309: True; ray tail exponent <= -796.1
+L*=90 x0=1.7253e+41 a0=45.0: delta(x0)=(-3.706e-40 + 0.0j) (1st-order Laplace (-3.706e-40 + 0.0j)); max|delta| on edge 4.113e-40 <= deltaA 5.321e-20: True
+   max|G(z)-G(x0)| on edge (4 pts) 0.052094653 at theta=2pi*2/4 <= etaG 0.0532866: True (margin 0.00119); max|u0(z)-a0| 0.052101 <= beta 0.0533475: True; ray tail exponent <= -796.1
+L*=90 x0=1.0e+45 a0=49.28697: delta(x0)=(-7.001e-44 + 0.0j) (1st-order Laplace (-7.001e-44 + 0.0j)); max|delta| on edge 7.771e-44 <= deltaA 5.321e-20: True
+   max|G(z)-G(x0)| on edge (4 pts) 0.052145605 at theta=2pi*2/4 <= etaG 0.0532866: True (margin 0.00114); max|u0(z)-a0| 0.0521509 <= beta 0.0533475: True; ray tail exponent <= -796.1
+L*=90 x0=1.0e+50 a0=54.988699: delta(x0)=(-7.809e-49 + 0.0j) (1st-order Laplace (-7.809e-49 + 0.0j)); max|delta| on edge 8.668e-49 <= deltaA 5.321e-20: True
+   max|G(z)-G(x0)| on edge (4 pts) 0.052201059 at theta=2pi*2/4 <= etaG 0.0532866: True (margin 0.00109); max|u0(z)-a0| 0.0522053 <= beta 0.0533475: True; ray tail exponent <= -796.1
+L*=90 x0=1.0e+60 a0=66.407284: delta(x0)=(-9.426e-59 + 0.0j) (1st-order Laplace (-9.426e-59 + 0.0j)); max|delta| on edge 1.047e-58 <= deltaA 5.321e-20: True
+   max|G(z)-G(x0)| on edge (4 pts) 0.052283479 at theta=2pi*2/4 <= etaG 0.0532866: True (margin 0.001); max|u0(z)-a0| 0.0522864 <= beta 0.0533475: True; ray tail exponent <= -796.1
+time 148.0 s

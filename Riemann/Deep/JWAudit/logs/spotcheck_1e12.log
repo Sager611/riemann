@@ -1,0 +1,27 @@
+quadrature: max relative error estimate 7.98e-169, time 17.8 s
+n0 = 1e12, L = 24.0013291986, eps = 0.041664359158, cell index (L*=24, 400 cells) = 399
+Newton: 40 iterations, residual 8.09e-125
+exact matching (a, t, w, delta) = (0.303346571317, 1.86979139459, 4.88336995562, 0.362326161721), B/n = 2.07325387432, t - D/n = 0.854695307253
+X_j = n^{j+1} L Delta^{j+2} h(n0): 1.92000425316903, -1.99372865999663, 4.06672552623058, -12.3648729477959
+n0^5 L E_F^(6) (at z ~ 3, via Delta^6 h) = -1.77762042038
+n0^5 L h^(6) part = 49.9666072145 (leading Q6 = 48 + 26t - 28t^2.., t = 2 eps: 49.9721237679)
+time 18.2 s
+       18.78 real        17.26 user         0.32 sys
+            34603008  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                3541  page reclaims
+                1406  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 149  voluntary context switches
+               21654  involuntary context switches
+           492993189  instructions retired
+           251582363  cycles elapsed
+            14549472  peak memory footprint
+memcap: peak 23 MB rc=0
