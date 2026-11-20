@@ -1,0 +1,22 @@
+mode=disc N=24 delta=4/5 candidates=400
+LP infeasibility 0.000e+00
+Arb: 14x14 system solved; all weights > 0 certified: True; min weight lower bound 3.856e-03; max radius 4.9e-62
+memcap: peak 61 MB rc=0
+       14.55 real         3.87 user         9.07 sys
+            93503488  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               32123  page reclaims
+                 857  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  34  messages sent
+                  35  messages received
+                  13  signals received
+                 803  voluntary context switches
+               12590  involuntary context switches
+            71134035  instructions retired
+            52009885  cycles elapsed
+             2261328  peak memory footprint

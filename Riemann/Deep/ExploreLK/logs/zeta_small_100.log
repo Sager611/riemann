@@ -1,0 +1,7 @@
+(a) zeta zeros 1..100 (t in [14.13,236.52]): Gonek ratio sum Z'(g)^2 / int Z'^2 rho = 1.3308  (asymptotically 1)
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreLK/lk_cue.py:22: RuntimeWarning: divide by zero encountered in log
+  lf = np.sum(np.log(np.abs(np.sin(PI * (t[:, None] - xs[None, :]) / P))), axis=1)
+(b) windows of 24 zeta zeros: 7 windows, mean d/m1 = 1.4088, median min gap = 0.394; CUE(N=24): mean d/m1 = 1.1290
+    mean folded spectrum (zeta windows) / flat: [0.314, 0.627, 0.807, 0.766, 0.943, 0.436, 0.635, 1.244, 0.278, 0.211, 0.247, 0.532, 5.617]
+    mean folded spectrum (CUE)          / flat: [0.896, 0.858, 0.861, 0.794, 0.841, 0.801, 0.857, 0.852, 0.923, 0.96, 1.061, 1.279, 1.965]
+memcap: peak 59 MB rc=0

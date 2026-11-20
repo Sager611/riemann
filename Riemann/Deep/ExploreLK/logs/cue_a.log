@@ -1,0 +1,5 @@
+N=24 S=200 target m1=3.5640 (pi^2/3=3.2899); per-sample mean d/m1=1.0921; median min gap=0.3148
+delta=0.000: min gap after hard-core 0.0000; LP mean|resid|=0.000e+00 cols used=14; d-row resid=0.0; mean d/m1 of columns=1.0921
+delta=0.300: min gap after hard-core 0.3000; LP mean|resid|=0.000e+00 cols used=14; d-row resid=0.0; mean d/m1 of columns=1.0934
+delta=0.500: min gap after hard-core 0.5000; LP mean|resid|=0.000e+00 cols used=14; d-row resid=0.0; mean d/m1 of columns=1.1114
+memcap: peak 0 MB rc=0

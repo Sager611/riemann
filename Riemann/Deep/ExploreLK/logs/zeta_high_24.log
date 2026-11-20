@@ -1,0 +1,4 @@
+height 1e8: 136 windows of 24 zeros; mean d/m1 = 1.1432; median min gap 0.298; spectrum/flat = [0.83, 0.82, 0.79, 0.76, 0.9, 0.83, 0.85, 0.86, 0.96, 0.95, 1.16, 1.28, 1.92]
+height 1e11: 136 windows of 24 zeros; mean d/m1 = 1.1395; median min gap 0.317; spectrum/flat = [0.82, 0.77, 0.86, 0.82, 0.78, 0.83, 0.9, 0.91, 0.89, 1.02, 1.13, 1.34, 1.83]
+CUE N=24: mean d/m1 = 1.1341; spectrum/flat = [0.82, 0.84, 0.82, 0.8, 0.84, 0.87, 0.87, 0.92, 0.9, 0.96, 1.03, 1.27, 1.96]
+memcap: peak 0 MB rc=0

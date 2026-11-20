@@ -1,0 +1,49 @@
+mode=disc N=48 delta=4/5 candidates=600
+LP infeasibility 0.000e+00
+Arb: 26x26 system solved; all weights > 0 certified: True; min weight lower bound 3.438e-03; max radius 4.2e-59
+memcap: peak 26 MB rc=0
+mode=disc N=96 delta=4/5 candidates=1000
+LP infeasibility 0.000e+00
+Arb: 50x50 system solved; all weights > 0 certified: True; min weight lower bound 5.312e-04; max radius 2.3e-42
+memcap: peak 63 MB rc=0
+mode=cont N=48 delta=4/5 candidates=300
+LP infeasibility 0.000e+00
+Arb: 8x8 system solved; all weights > 0 certified: True; min weight lower bound 5.705e-03; max radius 7.2e-52
+memcap: peak 0 MB rc=0
+mode=cont N=48 delta=4/5 candidates=300
+LP infeasibility 1.270e-07
+memcap: peak 0 MB rc=1
+mode=cont N=48 delta=4/5 candidates=600
+LP infeasibility 0.000e+00
+Arb: 10x10 system solved; all weights > 0 certified: True; min weight lower bound 6.239e-03; max radius 5.5e-49
+memcap: peak 27 MB rc=0
+mode=cont N=96 delta=4/5 candidates=400
+LP infeasibility 0.000e+00
+Arb: 12x12 system solved; all weights > 0 certified: True; min weight lower bound 2.959e-03; max radius 6.9e-30
+memcap: peak 56 MB rc=0
+mode=cont N=48 delta=4/5 candidates=300
+LP infeasibility 0.000e+00
+Arb: 12x12 system solved; all weights > 0 certified: True; min weight lower bound 2.672e-03; max radius 3.4e-49
+memcap: peak 30 MB rc=0
+mode=cont N=48 delta=9/10 candidates=600
+LP infeasibility 0.000e+00
+Arb: 14x14 system solved; all weights > 0 certified: True; min weight lower bound 9.758e-04; max radius 9.4e-48
+memcap: peak 57 MB rc=0
+mode=cont N=96 delta=9/10 candidates=500
+LP infeasibility 0.000e+00
+Arb: 18x18 system solved; all weights > 0 certified: True; min weight lower bound 4.201e-05; max radius 5.1e-24
+memcap: peak 84 MB rc=0
+mode=cont1 N=96 delta=9/10 candidates=599
+LP infeasibility 0.000e+00
+Arb: 14x14 system solved; all weights > 0 certified: True; min weight lower bound 1.069e-03; max radius 1.8e-31
+memcap: peak 61 MB rc=0
+mode=cont1 N=96 delta=9/10 candidates=599
+LP infeasibility 3.955e-09
+memcap: peak 59 MB rc=1
+mode=cont1 N=192 delta=9/10 candidates=499
+LP infeasibility 1.834e-04
+memcap: peak 70 MB rc=1
+mode=cont1 N=96 delta=4/5 candidates=600
+LP infeasibility 0.000e+00
+Arb: 18x18 system solved; all weights > 0 certified: False; min weight lower bound -2.147e-01; max radius 4.9e-25
+memcap: peak 62 MB rc=0

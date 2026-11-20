@@ -1,0 +1,24 @@
+N=24 S=300 target m1=3.5640 (pi^2/3=3.2899); per-sample mean d/m1=1.1217; median min gap=0.3157
+delta=0.500: min gap after hard-core 0.5000; LP mean|resid|=0.000e+00 cols used=14; d-row resid=0.0; mean d/m1 of columns=1.1405
+delta=0.600: min gap after hard-core 0.6000; LP mean|resid|=0.000e+00 cols used=14; d-row resid=0.0; mean d/m1 of columns=1.1675
+delta=0.700: min gap after hard-core 0.7000; LP mean|resid|=0.000e+00 cols used=14; d-row resid=0.0; mean d/m1 of columns=1.2182
+delta=0.800: min gap after hard-core 0.8000; LP mean|resid|=0.000e+00 cols used=14; d-row resid=0.0; mean d/m1 of columns=1.3074
+delta=0.900: min gap after hard-core 0.9000; LP mean|resid|=2.963e-03 cols used=13; d-row resid=-0.04149; mean d/m1 of columns=1.4729
+delta=0.950: min gap after hard-core 0.9500; LP mean|resid|=4.321e-03 cols used=13; d-row resid=-0.06049; mean d/m1 of columns=1.6592
+memcap: peak 23 MB rc=0
+N=48 S=300 target m1=3.4269 (pi^2/3=3.2899); per-sample mean d/m1=1.1076; median min gap=0.2458
+delta=0.500: min gap after hard-core 0.5000; LP mean|resid|=0.000e+00 cols used=26; d-row resid=0.0; mean d/m1 of columns=1.1247
+delta=0.600: min gap after hard-core 0.6000; LP mean|resid|=0.000e+00 cols used=26; d-row resid=0.0; mean d/m1 of columns=1.1476
+delta=0.700: min gap after hard-core 0.7000; LP mean|resid|=0.000e+00 cols used=26; d-row resid=0.0; mean d/m1 of columns=1.1898
+delta=0.800: min gap after hard-core 0.8000; LP mean|resid|=0.000e+00 cols used=26; d-row resid=0.0; mean d/m1 of columns=1.2633
+delta=0.900: min gap after hard-core 0.9000; LP mean|resid|=1.091e-03 cols used=25; d-row resid=-0.02836; mean d/m1 of columns=1.4089
+delta=0.950: min gap after hard-core 0.9496; LP mean|resid|=1.968e-03 cols used=25; d-row resid=-0.05117; mean d/m1 of columns=1.5613
+memcap: peak 51 MB rc=0
+N=96 S=300 target m1=3.3584 (pi^2/3=3.2899); per-sample mean d/m1=1.0968; median min gap=0.1823
+delta=0.500: min gap after hard-core 0.5000; LP mean|resid|=0.000e+00 cols used=50; d-row resid=0.0; mean d/m1 of columns=1.1140
+delta=0.600: min gap after hard-core 0.6000; LP mean|resid|=0.000e+00 cols used=50; d-row resid=0.0; mean d/m1 of columns=1.1341
+delta=0.700: min gap after hard-core 0.7000; LP mean|resid|=0.000e+00 cols used=50; d-row resid=0.0; mean d/m1 of columns=1.1716
+delta=0.800: min gap after hard-core 0.8000; LP mean|resid|=3.017e-04 cols used=49; d-row resid=-0.01509; mean d/m1 of columns=1.2418
+delta=0.900: min gap after hard-core 0.8998; LP mean|resid|=1.400e-03 cols used=49; d-row resid=-0.07002; mean d/m1 of columns=1.3754
+delta=0.950: min gap after hard-core 0.9337; LP mean|resid|=1.952e-03 cols used=49; d-row resid=-0.09759; mean d/m1 of columns=1.4998
+memcap: peak 52 MB rc=0

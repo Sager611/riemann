@@ -1,0 +1,10 @@
+J=1 delta=0.5000 infeas=0.000e+00 used=3 dual=[-0.0, -0.0, -0.0]
+J=1 delta=0.7000 infeas=0.000e+00 used=3 dual=[-0.0, -0.0, -0.0]
+J=1 delta=0.9000 infeas=0.000e+00 used=3 dual=[-0.0, -0.0, -0.0]
+J=1 delta=0.9900 infeas=1.071e-03 used=2 dual=[-0.153, 1.0, -0.5378]
+memcap: peak 49 MB KILLED TIME>900s rc=137
+J=2 delta=0.5000 infeas=0.000e+00 used=4 dual=[-0.0, -0.0, -0.0, -0.0]
+J=2 delta=0.7000 infeas=0.000e+00 used=4 dual=[-0.0, -0.0, -0.0, -0.0]
+J=2 delta=0.9000 infeas=0.000e+00 used=4 dual=[-0.0, -0.0, -0.0, -0.0]
+J=2 delta=0.9900 infeas=4.109e-03 used=2 dual=[-0.1896, 0.9813, 1.0, -1.0]
+memcap: peak 50 MB KILLED TIME>900s rc=137
