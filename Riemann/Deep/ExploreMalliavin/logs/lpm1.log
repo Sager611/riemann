@@ -1,0 +1,16 @@
+M1   beta     floor(S+M1)  background kurtosis  (Gaussian M1=sqrt(2/pi)=0.7979 -> 1/sqrt3=0.5774)
+0.7978 60.73173  0.49159           3.00
+0.7000 0.62555  0.22957           7.19
+0.6000 0.22894  0.13739          15.79
+0.4500 0.06388  0.06090          51.20
+0.3000 0.01572  0.02166         201.91
+0.2000 0.00464  0.00816         679.57
+0.1000 0.00070  0.00165        4509.73
+0.0500 0.00012  0.00035       26397.99
+L=26.9: M1~0.450 floor~0.0609; background kurtosis 51.2 vs zeta M4~L^2/(2pi^2)=36.6
+L=100: M1~0.324 floor~0.0262; background kurtosis 158.0 vs zeta M4~L^2/(2pi^2)=506.6
+L=1e+03: M1~0.182 floor~0.0066; background kurtosis 885.6 vs zeta M4~L^2/(2pi^2)=50660.6
+L=1e+04: M1~0.102 floor~0.0017; background kurtosis 4229.5 vs zeta M4~L^2/(2pi^2)=5066059.2
+L=1e+06: M1~0.032 floor~0.0001; background kurtosis 76697.9 vs zeta M4~L^2/(2pi^2)=50660591821.2
+discrete LP J=32 M1=0.45: min zero density 0.06447, live length 1.0000; continuum 0.06090
+memcap: peak 0 MB rc=0

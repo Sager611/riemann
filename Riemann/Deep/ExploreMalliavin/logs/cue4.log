@@ -1,0 +1,23 @@
+/Users/adriansager/.cache/uv/archive-v0/qeYRZesdl1pjKwt3xfGkW/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2366: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/adriansager/.cache/uv/archive-v0/qeYRZesdl1pjKwt3xfGkW/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2366: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/adriansager/.cache/uv/archive-v0/qeYRZesdl1pjKwt3xfGkW/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2366: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+N=1: D_N(pi) exact=2 = (ceil(N/2)+1)(floor(N/2)+1)? True; float=None; K_N(pi)=1/2 = 0.500000
+N=2: D_N(pi) exact=4 = (ceil(N/2)+1)(floor(N/2)+1)? True; float=4.0; K_N(pi)=4/9 = 0.444444
+N=3: D_N(pi) exact=6 = (ceil(N/2)+1)(floor(N/2)+1)? True; float=6.0; K_N(pi)=3/8 = 0.375000
+N=10: D_N(pi) exact=36 = (ceil(N/2)+1)(floor(N/2)+1)? True; float=35.999999999999964; K_N(pi)=36/121 = 0.297521
+N=51: D_N(pi) exact=702 = (ceil(N/2)+1)(floor(N/2)+1)? True; float=702.0000000000035; K_N(pi)=27/104 = 0.259615
+N=100: D_N(pi) exact=2601 = (ceil(N/2)+1)(floor(N/2)+1)? True; float=2601.00000000003; K_N(pi)=2601/10201 = 0.254975
+N=100 M4=884.2 G(0.5)=0.7139 G(1)=0.2922 G(2)=0.0731 G(4)=0.0184 G(8)=0.0047 G(16)=0.0012  x^2 G(x): 0.2936 0.2983 0.3180  (3/pi^2=0.3040)
+   K_N(phi) < 1 from phi = 1.081 (FH limit pi/3 = 1.047); K_N(pi) = 0.25498; FH 1/(4 sin^2(phi/2)) at pi/2: 0.5000 vs [np.float64(0.5096158428669779)]
+N=200 M4=3434.2 G(0.5)=0.7185 G(1)=0.2980 G(2)=0.0745 G(4)=0.0186 G(8)=0.0047 G(16)=0.0012  x^2 G(x): 0.2983 0.2995 0.3043  (3/pi^2=0.3040)
+   K_N(phi) < 1 from phi = 1.081 (FH limit pi/3 = 1.047); K_N(pi) = 0.25249; FH 1/(4 sin^2(phi/2)) at pi/2: 0.5000 vs [np.float64(0.5047288468710146)]
+N=400 M4=13534.2 G(0.5)=0.7208 G(1)=0.3009 G(2)=0.0752 G(4)=0.0188 G(8)=0.0047 G(16)=0.0012  x^2 G(x): 0.3010 0.3013 0.3025  (3/pi^2=0.3040)
+   K_N(phi) < 1 from phi = 1.081 (FH limit pi/3 = 1.047); K_N(pi) = 0.25125; FH 1/(4 sin^2(phi/2)) at pi/2: 0.5000 vs [np.float64(0.5022578910170596)]
+q=1: fixed-chaos bound G>=0.33333; zeta/CUE G(x)~3/(pi^2 x^2) falls below it for x > 0.95
+q=2: fixed-chaos bound G>=0.06667; zeta/CUE G(x)~3/(pi^2 x^2) falls below it for x > 2.14
+q=3: fixed-chaos bound G>=0.00137; zeta/CUE G(x)~3/(pi^2 x^2) falls below it for x > 14.89
+q=4: fixed-chaos bound G>=0.00015; zeta/CUE G(x)~3/(pi^2 x^2) falls below it for x > 44.66
+memcap: peak 0 MB rc=0

@@ -1,0 +1,32 @@
+/Users/adriansager/.cache/uv/archive-v0/qeYRZesdl1pjKwt3xfGkW/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2366: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/adriansager/.cache/uv/archive-v0/qeYRZesdl1pjKwt3xfGkW/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2366: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Users/adriansager/.cache/uv/archive-v0/qeYRZesdl1pjKwt3xfGkW/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2366: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+windows: empirical <W^4> = 62.7 (ensemble M4_CUE(N) = 154.2); median per window 1.8, max 8408: heavy tail (moments of moments)
+N=40 K=295 eta=0.3000447557761175 p=0.0900 lambda=1.826: length 131072 units, zeros per unit 0.6158 (predicted (1-p)/sqrt3 + p = 0.6154); <f^2> = 0.9585; M4 = 67.62 (M4_CUE(N) = 154.17)
+  C(u)/<f^2> vs sinc: u=0.25: +0.8970/+0.9003 u=0.5: +0.6261/+0.6366 u=1: -0.0159/+0.0000 u=1.5: -0.2116/-0.2122 u=2.5: +0.1280/+0.1273
+  G_f(0.5) = 0.6503; exact CUE G_N = 0.7005; formula (windows + Wick background) = 0.6995
+  G_f(1) = 0.2161; exact CUE G_N = 0.2758; formula (windows + Wick background) = 0.2764
+  G_f(2) = 0.0814; exact CUE G_N = 0.0694; formula (windows + Wick background) = 0.0721
+  G_f(4) = 0.0438; exact CUE G_N = 0.0178; formula (windows + Wick background) = 0.0211
+memcap: peak 0 MB rc=0
+       11.01 real         1.89 user         4.54 sys
+           139427840  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               18598  page reclaims
+                  17  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   8  signals received
+                  28  voluntary context switches
+               11441  involuntary context switches
+            63814984  instructions retired
+            50317601  cycles elapsed
+             2163024  peak memory footprint

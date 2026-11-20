@@ -1,0 +1,59 @@
+zeta t0=1e+04 L=7.37: points=48000 zeros=3001 (per unit 1.0003) <F^2>=1.1531 M4=8.247 M1=0.6500 G(.5,1,2,4)=0.5815,0.1716,0.0618,0.0430 K(4)=0.354
+  tau=0.1rms: zeros kept 0.8687; |E| 0.8458; E carries 0.9995 of <F^2>, 1.0000 of <F^4>; L2 err 0.0006; max|C_f-C_F|/<F^2> 0.0065; M4 -0.0005 rel; max|G_f-G_F| 0.0001; M1 0.6520
+  tau=0.2rms: zeros kept 0.6964; |E| 0.7079; E carries 0.9963 of <F^2>, 1.0000 of <F^4>; L2 err 0.0068; max|C_f-C_F|/<F^2> 0.0334; M4 -0.0064 rel; max|G_f-G_F| 0.0012; M1 0.6611
+  tau=0.3rms: zeros kept 0.5658; |E| 0.5916; E carries 0.9891 of <F^2>, 0.9999 of <F^4>; L2 err 0.0240; max|C_f-C_F|/<F^2> 0.0816; M4 -0.0237 rel; max|G_f-G_F| 0.0044; M1 0.6770
+  tau=0.5rms: zeros kept 0.3752; |E| 0.4151; E carries 0.9612 of <F^2>, 0.9994 of <F^4>; L2 err 0.1059; max|C_f-C_F|/<F^2> 0.2399; M4 -0.0997 rel; max|G_f-G_F| 0.0168; M1 0.7174
+  tau=0.7rms: zeros kept 0.2559; |E| 0.3021; E carries 0.9210 of <F^2>, 0.9976 of <F^4>; L2 err 0.2649; max|C_f-C_F|/<F^2> 0.4757; M4 -0.2397 rel; max|G_f-G_F| 0.0465; M1 0.7695
+  tau=1.0rms: zeros kept 0.1566; |E| 0.1983; E carries 0.8477 of <F^2>, 0.9910 of <F^4>; L2 err 0.6189; max|C_f-C_F|/<F^2> 0.9383; M4 -0.4600 rel; max|G_f-G_F| 0.1363; M1 0.8296
+  tau=1.5rms: zeros kept 0.0813; |E| 0.1050; E carries 0.7070 of <F^2>, 0.9639 of <F^4>; L2 err 1.5221; max|C_f-C_F|/<F^2> 1.9002; M4 -0.6970 rel; max|G_f-G_F| 0.3810; M1 0.8844
+zeta t0=1e+05 L=9.68: points=48000 zeros=2999 (per unit 0.9997) <F^2>=1.1229 M4=11.539 M1=0.6157 G(.5,1,2,4)=0.6070,0.1847,0.0560,0.0296 K(4)=0.342
+  tau=0.1rms: zeros kept 0.8346; |E| 0.8203; E carries 0.9994 of <F^2>, 1.0000 of <F^4>; L2 err 0.0008; max|C_f-C_F|/<F^2> 0.0077; M4 -0.0007 rel; max|G_f-G_F| 0.0001; M1 0.6184
+  tau=0.2rms: zeros kept 0.6379; |E| 0.6678; E carries 0.9960 of <F^2>, 1.0000 of <F^4>; L2 err 0.0084; max|C_f-C_F|/<F^2> 0.0353; M4 -0.0083 rel; max|G_f-G_F| 0.0011; M1 0.6303
+  tau=0.3rms: zeros kept 0.5145; |E| 0.5494; E carries 0.9886 of <F^2>, 0.9999 of <F^4>; L2 err 0.0270; max|C_f-C_F|/<F^2> 0.0835; M4 -0.0275 rel; max|G_f-G_F| 0.0035; M1 0.6479
+  tau=0.5rms: zeros kept 0.3311; |E| 0.3835; E carries 0.9626 of <F^2>, 0.9996 of <F^4>; L2 err 0.1153; max|C_f-C_F|/<F^2> 0.2442; M4 -0.1199 rel; max|G_f-G_F| 0.0158; M1 0.6999
+  tau=0.7rms: zeros kept 0.2344; |E| 0.2766; E carries 0.9246 of <F^2>, 0.9984 of <F^4>; L2 err 0.2625; max|C_f-C_F|/<F^2> 0.4566; M4 -0.2507 rel; max|G_f-G_F| 0.0360; M1 0.7468
+  tau=1.0rms: zeros kept 0.1420; |E| 0.1801; E carries 0.8566 of <F^2>, 0.9940 of <F^4>; L2 err 0.6449; max|C_f-C_F|/<F^2> 0.9054; M4 -0.4925 rel; max|G_f-G_F| 0.1038; M1 0.8202
+  tau=1.5rms: zeros kept 0.0754; |E| 0.0964; E carries 0.7308 of <F^2>, 0.9767 of <F^4>; L2 err 1.5452; max|C_f-C_F|/<F^2> 1.8836; M4 -0.7310 rel; max|G_f-G_F| 0.3105; M1 0.8787
+zeta t0=1e+06 L=11.98: points=48000 zeros=2999 (per unit 0.9997) <F^2>=1.1110 M4=16.435 M1=0.5860 G(.5,1,2,4)=0.6339,0.2045,0.0534,0.0207 K(4)=0.341
+  tau=0.1rms: zeros kept 0.8059; |E| 0.7939; E carries 0.9993 of <F^2>, 1.0000 of <F^4>; L2 err 0.0010; max|C_f-C_F|/<F^2> 0.0074; M4 -0.0009 rel; max|G_f-G_F| 0.0001; M1 0.5893
+  tau=0.2rms: zeros kept 0.5939; |E| 0.6330; E carries 0.9957 of <F^2>, 1.0000 of <F^4>; L2 err 0.0099; max|C_f-C_F|/<F^2> 0.0374; M4 -0.0097 rel; max|G_f-G_F| 0.0007; M1 0.6034
+  tau=0.3rms: zeros kept 0.4668; |E| 0.5139; E carries 0.9883 of <F^2>, 1.0000 of <F^4>; L2 err 0.0307; max|C_f-C_F|/<F^2> 0.0859; M4 -0.0324 rel; max|G_f-G_F| 0.0023; M1 0.6245
+  tau=0.5rms: zeros kept 0.2964; |E| 0.3523; E carries 0.9631 of <F^2>, 0.9997 of <F^4>; L2 err 0.1225; max|C_f-C_F|/<F^2> 0.2433; M4 -0.1294 rel; max|G_f-G_F| 0.0103; M1 0.6798
+  tau=0.7rms: zeros kept 0.2077; |E| 0.2552; E carries 0.9287 of <F^2>, 0.9989 of <F^4>; L2 err 0.2757; max|C_f-C_F|/<F^2> 0.4553; M4 -0.2759 rel; max|G_f-G_F| 0.0268; M1 0.7363
+  tau=1.0rms: zeros kept 0.1304; |E| 0.1673; E carries 0.8664 of <F^2>, 0.9961 of <F^4>; L2 err 0.6440; max|C_f-C_F|/<F^2> 0.8967; M4 -0.5099 rel; max|G_f-G_F| 0.0763; M1 0.8079
+  tau=1.5rms: zeros kept 0.0654; |E| 0.0905; E carries 0.7519 of <F^2>, 0.9852 of <F^4>; L2 err 1.5845; max|C_f-C_F|/<F^2> 1.8997; M4 -0.7603 rel; max|G_f-G_F| 0.2426; M1 0.8769
+zeta t0=1e+07 L=14.28: points=48000 zeros=3000 (per unit 1.0000) <F^2>=1.0797 M4=17.871 M1=0.5659 G(.5,1,2,4)=0.6219,0.1926,0.0622,0.0217 K(4)=0.388
+  tau=0.1rms: zeros kept 0.7793; |E| 0.7769; E carries 0.9993 of <F^2>, 1.0000 of <F^4>; L2 err 0.0011; max|C_f-C_F|/<F^2> 0.0079; M4 -0.0011 rel; max|G_f-G_F| 0.0001; M1 0.5698
+  tau=0.2rms: zeros kept 0.5707; |E| 0.6094; E carries 0.9955 of <F^2>, 1.0000 of <F^4>; L2 err 0.0105; max|C_f-C_F|/<F^2> 0.0372; M4 -0.0105 rel; max|G_f-G_F| 0.0007; M1 0.5849
+  tau=0.3rms: zeros kept 0.4470; |E| 0.4910; E carries 0.9882 of <F^2>, 1.0000 of <F^4>; L2 err 0.0322; max|C_f-C_F|/<F^2> 0.0847; M4 -0.0349 rel; max|G_f-G_F| 0.0025; M1 0.6083
+  tau=0.5rms: zeros kept 0.2817; |E| 0.3336; E carries 0.9637 of <F^2>, 0.9997 of <F^4>; L2 err 0.1251; max|C_f-C_F|/<F^2> 0.2383; M4 -0.1334 rel; max|G_f-G_F| 0.0104; M1 0.6650
+  tau=0.7rms: zeros kept 0.1960; |E| 0.2377; E carries 0.9300 of <F^2>, 0.9990 of <F^4>; L2 err 0.2792; max|C_f-C_F|/<F^2> 0.4407; M4 -0.2742 rel; max|G_f-G_F| 0.0254; M1 0.7192
+  tau=1.0rms: zeros kept 0.1247; |E| 0.1550; E carries 0.8713 of <F^2>, 0.9966 of <F^4>; L2 err 0.6336; max|C_f-C_F|/<F^2> 0.8478; M4 -0.5037 rel; max|G_f-G_F| 0.0710; M1 0.7912
+  tau=1.5rms: zeros kept 0.0667; |E| 0.0861; E carries 0.7680 of <F^2>, 0.9875 of <F^4>; L2 err 1.5449; max|C_f-C_F|/<F^2> 1.8117; M4 -0.7588 rel; max|G_f-G_F| 0.2160; M1 0.8657
+zeta t0=1e+08 L=16.58: points=48000 zeros=2999 (per unit 0.9997) <F^2>=1.0384 M4=24.142 M1=0.5533 G(.5,1,2,4)=0.6408,0.2118,0.0535,0.0189 K(4)=0.455
+  tau=0.1rms: zeros kept 0.7339; |E| 0.7595; E carries 0.9993 of <F^2>, 1.0000 of <F^4>; L2 err 0.0014; max|C_f-C_F|/<F^2> 0.0082; M4 -0.0014 rel; max|G_f-G_F| 0.0001; M1 0.5583
+  tau=0.2rms: zeros kept 0.5495; |E| 0.5940; E carries 0.9956 of <F^2>, 1.0000 of <F^4>; L2 err 0.0107; max|C_f-C_F|/<F^2> 0.0362; M4 -0.0111 rel; max|G_f-G_F| 0.0006; M1 0.5737
+  tau=0.3rms: zeros kept 0.4341; |E| 0.4768; E carries 0.9883 of <F^2>, 1.0000 of <F^4>; L2 err 0.0321; max|C_f-C_F|/<F^2> 0.0807; M4 -0.0359 rel; max|G_f-G_F| 0.0017; M1 0.5976
+  tau=0.5rms: zeros kept 0.2704; |E| 0.3214; E carries 0.9641 of <F^2>, 0.9998 of <F^4>; L2 err 0.1303; max|C_f-C_F|/<F^2> 0.2292; M4 -0.1445 rel; max|G_f-G_F| 0.0077; M1 0.6621
+  tau=0.7rms: zeros kept 0.1864; |E| 0.2305; E carries 0.9318 of <F^2>, 0.9993 of <F^4>; L2 err 0.2937; max|C_f-C_F|/<F^2> 0.4425; M4 -0.2956 rel; max|G_f-G_F| 0.0194; M1 0.7220
+  tau=1.0rms: zeros kept 0.1244; |E| 0.1502; E carries 0.8748 of <F^2>, 0.9976 of <F^4>; L2 err 0.6296; max|C_f-C_F|/<F^2> 0.8284; M4 -0.5059 rel; max|G_f-G_F| 0.0523; M1 0.7834
+  tau=1.5rms: zeros kept 0.0637; |E| 0.0847; E carries 0.7767 of <F^2>, 0.9911 of <F^4>; L2 err 1.6043; max|C_f-C_F|/<F^2> 1.8619; M4 -0.7793 rel; max|G_f-G_F| 0.1794; M1 0.8707
+memcap: peak 74 MB rc=0
+       15.83 real        12.93 user         8.52 sys
+            94945280  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               27289  page reclaims
+                  58  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  17  signals received
+                 433  voluntary context switches
+               35356  involuntary context switches
+            73825005  instructions retired
+            62746931  cycles elapsed
+             2244944  peak memory footprint
