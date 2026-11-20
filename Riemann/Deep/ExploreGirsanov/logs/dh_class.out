@@ -1,0 +1,7 @@
+kappa = 0.284079043840412
+theta_DH > 0 on the grid 0.01..100: True  min theta/first-term = 5.19042e-25 at x = 0.01
+self-dual check theta(1/x) / (x^{3/2} theta(x)) at x = 2, 3: ['1.0', '1.0']
+FE check Lambda(0.3+2i) - Lambda(0.7-2i): 2.27e-17
+DH Esscher cumulants kt1..3 = ['(0.09763614681 + 2.723933726e-41j)', '(0.1935532205 + 3.191457507e-42j)', '(-0.01019834382 - 4.22913375e-39j)']
+DH lambda_1, lambda_2, lambda_3 = (0.09763614681 + 2.723933726e-41j) (0.3888255141 + 5.767013202e-41j) (0.86846893 - 2.023274491e-39j)
+S3 lower bound 3k1 - k1^3/2 + 1.5 k2 (2 - k1) = (0.8447560422 + 8.252708826e-41j)

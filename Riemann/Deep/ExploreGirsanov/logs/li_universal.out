@@ -1,0 +1,12 @@
+zeta: lambda_1..5 = ['(0.02309570897 - 6.445169954e-42j)', '(0.09234573523 - 3.442223121e-40j)', '(0.2076389206 + 5.457324372e-40j)', '(0.3687904795 - 6.156794994e-40j)', '(0.5755427145 + 5.859599151e-38j)']
+zeta: Esscher cumulants kt_1..5 = ['(0.023095709 - 6.44517e-42j)', '(0.046154317 - 3.3133197e-40j)', '(-0.00022231646 + 3.1181277e-39j)', '(-0.00044176333 - 2.9028975e-38j)', '(1.7162241e-5 + 1.6930011e-36j)']
+n=1 min lambda_n over grid = 0.12350126 at p=0.999 a=0.5 b=1.5
+n=2 min lambda_n over grid = 0.48425981 at p=0.999 a=0.5 b=1.5
+n=3 min lambda_n over grid = -77.304788 at p=0.999 a=0.5 b=18
+n=4 min lambda_n over grid = -888.27963 at p=0.999 a=2 b=18
+n=5 min lambda_n over grid = -3115.5794 at p=0.999 a=4 b=18
+n=6 min lambda_n over grid = -8970.6498 at p=0.999 a=6 b=24
+n=7 min lambda_n over grid = -136385.32 at p=0.999 a=0.5 b=18
+n=8 min lambda_n over grid = -365674.44 at p=0.999 a=2 b=18
+n=9 min lambda_n over grid = -1691864.2 at p=0.999 a=4 b=18
+n=10 min lambda_n over grid = -10036523.0 at p=0.999 a=0.5 b=18
