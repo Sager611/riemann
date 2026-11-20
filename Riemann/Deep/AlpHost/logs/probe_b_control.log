@@ -1,0 +1,4 @@
+D=-4 conductor=4 parity=1 T=10 s0=0.4000: zeros in (s0, 3] x [-T, T] = 2 (winding 2.000000) evals=1284 bisections=380 0.4s
+D=5 conductor=5 parity=0 T=10 s0=0.4000: zeros in (s0, 3] x [-T, T] = 4 (winding 4.000000) evals=3260 bisections=1368 1.9s
+D=-3 conductor=3 parity=1 T=10 s0=0.4000: zeros in (s0, 3] x [-T, T] = 2 (winding 2.000000) evals=1520 bisections=498 0.5s
+memcap: peak 0 MB rc=0

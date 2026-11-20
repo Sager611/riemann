@@ -1,0 +1,17 @@
+D=-3 conductor=3 parity=1 T=24 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding -0.000000) evals=4522 bisections=1716 2.5s
+D=-4 conductor=4 parity=1 T=32 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding 0.000000) evals=3566 bisections=1070 1.9s
+D=5 conductor=5 parity=0 T=40 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding 0.000000) evals=7926 bisections=3082 11.4s
+D=-7 conductor=7 parity=1 T=56 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding -0.000000) evals=5762 bisections=1664 16.2s
+D=8 conductor=8 parity=0 T=64 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding -0.000000) evals=6662 bisections=1946 17.8s
+D=-8 conductor=8 parity=1 T=64 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding -0.000000) evals=5534 bisections=1382 29.8s
+D=12 conductor=12 parity=0 T=96 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding 0.000000) evals=8006 bisections=1946 44.4s
+D=13 conductor=13 parity=0 T=104 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding -0.000000) evals=11618 bisections=3584 119.4s
+D=-15 conductor=15 parity=1 T=120 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding 0.000000) evals=9406 bisections=2142 17.9s
+D=17 conductor=17 parity=0 T=136 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding 0.000000) evals=13754 bisections=3980 54.0s
+D=-19 conductor=19 parity=1 T=152 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding 0.000000) evals=16114 bisections=4824 72.7s
+D=-20 conductor=20 parity=1 T=160 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding -0.000000) evals=12110 bisections=2654 24.7s
+D=21 conductor=21 parity=0 T=168 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding -0.000000) evals=14618 bisections=3740 47.6s
+D=-23 conductor=23 parity=1 T=184 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding -0.000000) evals=17410 bisections=4800 222.9s
+D=-24 conductor=24 parity=1 T=192 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding -0.000000) evals=14310 bisections=3082 38.8s
+D=24 conductor=24 parity=0 T=192 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding 0.000000) evals=14606 bisections=3230 34.7s
+killed by alphost at 21:52 UTC during D=-163 (T=200) after ~9 min; rerun with T=40 in probe_b2.log

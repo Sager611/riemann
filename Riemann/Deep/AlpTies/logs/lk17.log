@@ -1,0 +1,22 @@
+## second_theorem_closed_form$ 1 hits; 1 on cone
+12 T ./Formalism/SharpRestriction/GrowthBounds/PlaneCountTheoremWithConstants.lean:1740 Formalism.MainNotions.G.second_theorem_closed_form
+## second_theorem_absolute_constant$ 1 hits; 1 on cone
+12 T ./Formalism/SharpRestriction/GrowthBounds/PlaneCountTheoremWithConstants.lean:1137 Formalism.MainNotions.G.second_theorem_absolute_constant
+## second_theorem_closed_everywhere$ 1 hits; 1 on cone
+13 T ./Formalism/SharpRestriction/GrowthBounds/PlaneCountTheoremWithConstants.lean:1121 Formalism.MainNotions.G.second_theorem_closed_everywhere
+## tableLineDegreeFive\.aux₃$ 1 hits; 1 on cone
+13 D ./Formalism/SharpRestriction/GrowthBounds/TableLineDegreeFive.lean:30 Formalism.MainNotions.tableLineDegreeFive.aux₃
+## G\.local_model_results$ 1 hits; 1 on cone
+12 T ./Formalism/LocalToGlobal/GroupLattices/AdmissibleFamilyNoKernel.lean:43 Formalism.L2.G.local_model_results
+## family_second_bound_of_theorem$ 1 hits; 1 on cone
+13 T ./Formalism/SharpRestriction/GrowthBounds/PlaneCountTheoremWithConstants.lean:941 Formalism.MainNotions.G.family_second_bound_of_theorem
+## (thAt|Kmap|kAt|xiAt|thOf|thC|XiEntry|XiCpl1|xiLast)[A-Za-z_]*(ne_zero|nonzero|ne\b)|(ne_zero|nonzero)[A-Za-z_]*(thAt|Kmap|kAt|xiAt|thOf|XiEntry) 22 hits; 15 on cone
+6 T ./Development/AbelianVarietyTheory/PublishedTheorems/TwistedTraceFormula/ExistsCellOfIsSubquotient.lean:139 GlobalTheory.SmGL.isSmoothChar_one
+11 D ./Development/ResolutionOfSingularities/EmbeddedResolution/StrictTransformIsolation/StrictTransformAvoidance.lean:438 FunctorialResolution.EmbeddedResolution.OpenImmersionRestriction.AgreesWithComponentsOrderOne
+11 T ./Development/ResolutionOfSingularities/EmbeddedResolution/StrictTransformIsolation/StrictTransformAvoidance.lean:760 FunctorialResolution.EmbeddedResolution.OpenImmersionRestriction.forall_agreesWithComponentsOrderOne
+12 T ./Development/ResolutionOfSingularities/EmbeddedResolution/StrictTransformIsolation/StrictTransformAvoidance.lean:537 FunctorialResolution.EmbeddedResolution.OpenImmersionRestriction.agreesWithComponentsOrderOne_zero
+13 T ./Development/AutomorphicSpectrum/Proofs/GlobalProofs/ConormalRankOneOfLocallyPrincipal.lean:60 GlobalTheory.CompanionTheory.Hypotheses₂.CentreOver.rankAtStalk_cotangent_eq_one
+13 T ./Development/AutomorphicSpectrum/Proofs/GlobalProofs/LocallyPrincipalOfConormalRankOne.lean:44 GlobalTheory.CompanionTheory.Hypotheses₂.CentreOver.locPrincipal_of_rankAtStalk_eq_one
+## [Ff]initeSumNonzeroLargeDepth 1 hits; 1 on cone
+11 D ./Formalism/LocalToGlobal/Columns/FiniteSumNonzeroLargeDepth.lean:988 Formalism.L2.Col.FiniteSumNonzeroLargeDepth
+memcap: peak 17 MB rc=0

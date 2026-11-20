@@ -1,0 +1,13 @@
+n=2 d=1: fixed weight chi = 0 ; free weight chi = 2
+n=2 d=2: fixed weight chi = 0 ; free weight chi = 4
+n=2 d=3: fixed weight chi = 0 ; free weight chi = 6
+n=2 d=4: fixed weight chi = 0 ; free weight chi = 8
+n=3 d=1: fixed weight chi = 0 ; free weight chi = 3
+n=3 d=2: fixed weight chi = 0 ; free weight chi = 6
+n=3 d=3: fixed weight chi = 0 ; free weight chi = 9
+n=3 d=4: fixed weight chi = 0 ; free weight chi = 12
+n=4 d=1: fixed weight chi = 0 ; free weight chi = 4
+n=4 d=2: fixed weight chi = 0 ; free weight chi = 8
+n=4 d=3: fixed weight chi = 0 ; free weight chi = 12
+n=4 d=4: fixed weight chi = 0 ; free weight chi = 16
+memcap: peak 0 MB rc=0

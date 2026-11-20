@@ -1,0 +1,4 @@
+Q(sqrt -6) l = 5 splitting: 2 primes; h = 2 v_l(h) = 0 ; v_l #Cl(L, l^k), k = 1..6: [0, 2, 4, 6, 8, 10] increments [2, 2, 2, 2, 2]
+Q(sqrt -14) l = 3 splitting: 2 primes; h = 4 v_l(h) = 0 ; v_l #Cl(L, l^k), k = 1..6: [0, 2, 4, 6, 8, 10] increments [2, 2, 2, 2, 2]
+Q(zeta_8) l = 17 splitting: 4 primes; h = 1 v_l(h) = 0 ; v_l #Cl(L, l^k), k = 1..3: [0, 3, 6] increments [3, 3]
+memcap: peak 0 MB rc=0

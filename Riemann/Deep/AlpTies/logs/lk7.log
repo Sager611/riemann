@@ -1,0 +1,17 @@
+## divisionRows_pairing_vanishes_of_rational_pairing_law$ 1 hits; 1 on cone
+12 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/BkLawEntries.lean:40 GlobalTheory.Fc.DivLinked.divisionRows_pairing_vanishes_of_rational_pairing_law
+## pairing_definite_base_vanish_of_miStar2$ 1 hits; 1 on cone
+12 T ./Development/AbelianVarietyTheory/Proofs/DivisorProofs/PairingDefiniteBaseVanishOfMiStar2.lean:10 GlobalTheory.Div.pairing_definite_base_vanish_of_miStar2
+## realPackageOfRealInput$ 1 hits; 1 on cone
+10 D ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TwistedBundle.lean:40 GlobalTheory.Mem.Top.Bl.realPackageOfRealInput
+## Bl\.BundleWitness$ 1 hits; 1 on cone
+8 S ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TwistedBundle.lean:57 GlobalTheory.Mem.Top.Bl.BundleWitness
+## linkedAt_hPA_prmR$ 1 hits; 1 on cone
+8 T ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HermWCellLastMulMulVecEqOfInWbStatement.lean:15 GlobalTheory.T.linkedAt_hPA_prmR
+## linkedAt_hDcPtG_prmR$ 1 hits; 1 on cone
+8 T ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowEDcPtLinkedStatement.lean:15 GlobalTheory.T.linkedAt_hDcPtG_prmR
+## (^|\.)MIstar2$ 1 hits; 1 on cone
+11 D ./Formalism/LocalToGlobal/IndefiniteReal/IsometricPeriodsOfUnitHypotheses.lean:27 Formalism.IndefR.Cx.CxData.MIstar2
+## bk_law_entries_alt$ 1 hits; 1 on cone
+8 T ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/AtHDivGOfMiStatement.lean:20 GlobalTheory.T.bk_law_entries_alt
+memcap: peak 18 MB rc=0

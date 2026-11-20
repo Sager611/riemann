@@ -1,0 +1,23 @@
+## HasBare 3 hits; 1 on cone
+14 D ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NonzeroPlacesOverPrimesLifts.lean:122 GlobalTheory.Mem.R3.Rw.HasBare
+-1 D ./Development/AutomorphicSpectrum/Definitions/GlobalGeometry/HasBareNormDisc.lean:75 GlobalTheory.CompanionTheory.Ar.Br.HasBareNormDisc
+-1 D ./Development/AutomorphicSpectrum/Definitions/GlobalGeometry/HasBareNormDisc.lean:80 GlobalTheory.CompanionTheory.Ar.Br.HasBareNorm
+## (^|\.)RationalMapValues$ 1 hits; 1 on cone
+9 D ./Formalism/SharpRestriction/Divisibility/WeightDegreeSizes.lean:1264 Formalism.MainNotions.WeightDegreeSizes.RationalMapValues
+## (^|\.)BuRational$ 1 hits; 1 on cone
+9 D ./Formalism/LocalRingCardinality/RhoDetPrimeEqMuTildeMulChiPow.lean:364 Formalism.BasicNotions.D7.BuRational
+## R1\.Slot(Divisor|Primitivity|LambdaPrime|DecompositionPoint|SelectionJump)Condition$ 5 hits; 5 on cone
+7 D ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CountsIrreducibilityConstants.lean:75 GlobalTheory.Fc.R1.SlotPrimitivityCondition
+7 D ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CountsIrreducibilityConstants.lean:78 GlobalTheory.Fc.R1.SlotLambdaPrimeCondition
+7 D ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CountsIrreducibilityConstants.lean:81 GlobalTheory.Fc.R1.SlotDivisorCondition
+7 D ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CountsIrreducibilityConstants.lean:84 GlobalTheory.Fc.R1.SlotDecompositionPointCondition
+7 D ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CountsIrreducibilityConstants.lean:87 GlobalTheory.Fc.R1.SlotSelectionJumpCondition
+## RL\.LinkedAt$ 1 hits; 1 on cone
+6 D ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowGood.lean:38 GlobalTheory.Fc.RL.LinkedAt
+## Bl\.Parameters$ 1 hits; 1 on cone
+6 S ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CoreAltAltBis.lean:19 GlobalTheory.Mem.Top.Bl.Parameters
+## (^|\.)DivRows3G$ 2 hits; 2 on cone
+7 S ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/CountsIrreducibilityConstants.lean:91 GlobalTheory.Cp.DivRows3G
+8 S ./Formalism/LocalToGlobal/Divisibility/TupUsed.lean:112 Formalism.L2.DIV.DivRows3G
+## Bl\.St$|Bl\.Pre2$ 0 hits; 0 on cone
+memcap: peak 18 MB rc=0

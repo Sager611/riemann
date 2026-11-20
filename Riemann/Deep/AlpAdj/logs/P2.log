@@ -1,0 +1,11 @@
+l = 3 (Hessian y^2 + a1 xy + a3 y = x^3, 3-torsion point (0,0)), v_3(N) = 1, a_3 = +1 (split):
+  [a1, a3] = (-11, 3) N = 2118 j = -3675793187737/38124 #isogeny class = 2
+  [a1, a3] = (-11, 6) N = 8958 j = -4271241390625/322488 #isogeny class = 2
+  [a1, a3] = (-11, 9) N = 4722 j = -4927753743913/1147446 #isogeny class = 2
+l = 5 (Tate normal form E(t), 5-torsion point), v_5(N) = 1, a_5 = +1 (split):
+  t = -30 N = 36870 j = -1506009863164475521/29864700000
+  t = -25 N = 4495 j = -201824027741310976/8779296875
+  t = -20 N = 6190 j = -17853458131388881/1980800000
+check first l = 3 curve: CM? 0  v_3(j) = -3 (< 0: multiplicative)
+  Tate curve at 3: rho|G_3 = (chi * ; 0 1) with unramified parts a_1 = a_2 = 1 (a_3 = +1) => psi_1/psi_2 = chi_cyc exactly => FreeRatios fails on G_3 cap G'
+memcap: peak 0 MB rc=0

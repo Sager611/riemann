@@ -1,0 +1,7 @@
+p=5 split: 150 jets a<= 600; min over a of (v_p(a! c_(a/2)) - main)/log_p a = -1.114 at a=18; main = 0
+p=13 split: 150 jets a<= 600; min over a of (v_p(a! c_(a/2)) - main)/log_p a = -1.018 at a=154; main = 0
+p=17 split: 150 jets a<= 600; min over a of (v_p(a! c_(a/2)) - main)/log_p a = -1.012 at a=270; main = 0
+p=3 inert: 150 jets a<= 600; min over a of (v_p(a! c_(a/2)) - main)/log_p a = -0.757 at a=70; main = sum a/p^odd
+p=7 inert: 150 jets a<= 600; min over a of (v_p(a! c_(a/2)) - main)/log_p a = -0.799 at a=46; main = sum a/p^odd
+p=11 inert: 150 jets a<= 600; min over a of (v_p(a! c_(a/2)) - main)/log_p a = -0.868 at a=118; main = sum a/p^odd
+memcap: peak 0 MB rc=0

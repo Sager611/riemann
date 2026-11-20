@@ -1,0 +1,29 @@
+## trueChainKernel_eq_pointKernel_at_representatives$ 1 hits; 1 on cone
+18 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TrueChainKernelEqPointKernelAtRepresentativesStatement.lean:7 GlobalTheory.T.trueChainKernel_eq_pointKernel_at_representatives
+## weylModule_simple_closedLowestAlcove$ 1 hits; 1 on cone
+18 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/WeylModuleSimpleClosedLowestAlcoveStatement.lean:7 GlobalTheory.T.weylModule_simple_closedLowestAlcove
+## linkedAt_tie_of_nonempty_extensionWithLaw$ 1 hits; 1 on cone
+8 T ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/AtTieStatement.lean:15 GlobalTheory.T.linkedAt_tie_of_nonempty_extensionWithLaw
+## entries_combined_real_alt$ 1 hits; 1 on cone
+8 T ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/JoinLinkedRealizationStatement.lean:15 GlobalTheory.T.entries_combined_real_alt
+## main_theorem_published_inputs_third_alt_alt$ 1 hits; 1 on cone
+8 T ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MainTheoremPublishedInputsThird.lean:34 GlobalTheory.T.main_theorem_published_inputs_third_alt_alt
+## real_group_inputs_combined_alt_alt$ 1 hits; 1 on cone
+8 T ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RealGroupInputsCombined.lean:39 GlobalTheory.T.real_group_inputs_combined_alt_alt
+## compatibleSystem_weilBlock_ne_alt$ 1 hits; 1 on cone
+9 T ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsWeilBlockNeAtMember.lean:41 GlobalTheory.T.compatibleSystem_weilBlock_ne_alt
+## jetMoments_of_unitPeriod$ 1 hits; 1 on cone
+20 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/JetMomentsOfUnitPeriod.lean:19 GlobalTheory.MomT.jetMoments_of_unitPeriod
+## InEx\.lg_colIn$ 1 hits; 1 on cone
+16 T ./Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsColumnInputAssembled.lean:328 GlobalTheory.Mem.Col2.InEx.lg_colIn
+## Model\.step_colW$ 1 hits; 0 on cone
+-1 T ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotConditionOfFalse.lean:25 GlobalTheory.Mem.Top.Bl.Model.step_colW
+## eventually_sizes_admitted$ 1 hits; 1 on cone
+13 T ./Formalism/SharpRestriction/GrowthBounds/PlaneCountTheoremWithConstants.lean:883 Formalism.MainNotions.G.eventually_sizes_admitted
+## colView_of_built$ 1 hits; 1 on cone
+13 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ColViewOfBuilt.lean:13 GlobalTheory.Fc.Cv.colView_of_built
+## TraceSpectra\.stmtE$ 1 hits; 1 on cone
+11 T ./Formalism/SharpRestriction/GrowthBounds/AevalValuation.lean:13 Formalism.MainNotions.TraceSpectra.stmtE
+## system_of_local_data$ 1 hits; 0 on cone
+-1 T ./Formalism/LocalToGlobal/GroupLattices/AdmissibleFamilyNoKernel.lean:92 Formalism.L2.G.system_of_local_data
+memcap: peak 18 MB rc=0

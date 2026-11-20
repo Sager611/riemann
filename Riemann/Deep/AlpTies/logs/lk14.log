@@ -1,0 +1,12 @@
+## (^|\.)ExBL$ 1 hits; 1 on cone
+8 D ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/EventuallyAllScaleContextsAndOfBoth.lean:71 GlobalTheory.Fc.ExBL
+## [bB]kLaw 5 hits; 1 on cone
+8 D ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NonzeroPlacesOverPrimesLifts.lean:107 GlobalTheory.Mem.R3.Rw.BkLaw
+-1 T ./Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ChoiceSide.lean:364 GlobalTheory.LayerMove.Mv.bkLaw
+-1 T ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NonzeroPlacesOverPrimesOfLifts.lean:31 GlobalTheory.Mem.R3.Rw.StateChecks.bkLaw_of_bkDef
+-1 T ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NonzeroPlacesOverPrimesOfLifts.lean:104 GlobalTheory.Mem.R3.Rw.StateChecks.exists_bkLaw
+-1 T ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NonzeroPlacesOverPrimesOfLifts.lean:110 GlobalTheory.Mem.R3.Rw.StateChecks.exists_not_bkLaw
+## divisionPairing_rational_on_rationalPoints 2 hits; 2 on cone
+13 T ./Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DivisionPairingRationalOnRationalPointsStatement.lean:15 GlobalTheory.T.divisionPairing_rational_on_rationalPoints'
+14 T ./Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DivisionPairingRationalOnRationalPoints.lean:24 GlobalTheory.Mem.R3.divisionPairing_rational_on_rationalPoints
+memcap: peak 21 MB rc=0

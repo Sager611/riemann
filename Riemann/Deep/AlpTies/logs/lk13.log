@@ -1,0 +1,5 @@
+## (LvT|Built|L2\.Forms|Col2)[A-Za-z.]*\.forms$ 1 hits; 1 on cone
+9 D ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/PredMemGamRanks.lean:747 GlobalTheory.Mem.Col2.forms
+## (^|\.)Built\.Ch$|LvT\.Ch$ 1 hits; 1 on cone
+16 S ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/LevelChainSharpColumnValuationOwnChainIff.lean:13 GlobalTheory.LvT.Ch
+memcap: peak 18 MB rc=0

@@ -1,0 +1,12 @@
+#d 70435 d in 1000003 1999993 #prime powers <= Z 193
+M=1 y: 10 20 50 100 200 500 1000
+M=1 mean |S|^2/(y log y): 2.551 2.453 2.310 2.146 1.921 1.478 0.913
+M=1 square-pairing diagonal/(y log y): 2.610 2.525 2.397 2.245 2.030 1.574 0.977
+M=1 ratio empirical/diagonal: 0.9775 0.9718 0.9638 0.9557 0.9464 0.9392 0.9345
+M=1 max_y |S|/sqrt(y log y) quantiles 0/.5/.9/.99/1: 0.100 1.736 2.906 3.566 4.661  time 14.1s
+M=4 y: 10 20 50 100 200 500 1000
+M=4 mean |S|^2/(y log y): 2.095 2.150 2.167 2.098 1.939 1.530 0.960
+M=4 square-pairing diagonal/(y log y): 2.093 2.146 2.158 2.086 1.927 1.522 0.950
+M=4 ratio empirical/diagonal: 1.0013 1.0020 1.0040 1.0055 1.0066 1.0048 1.0107
+M=4 max_y |S|/sqrt(y log y) quantiles 0/.5/.9/.99/1: 0.098 1.592 2.849 3.644 5.030  time 26.9s
+memcap: peak 27 MB rc=0

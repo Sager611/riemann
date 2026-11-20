@@ -1,0 +1,37 @@
+## (^|\.)Built\.Dat$ 1 hits; 1 on cone
+17 S ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/KerIsTerm.lean:42 GlobalTheory.LvT.Built.Dat
+## Col2\.TC$ 1 hits; 1 on cone
+8 A ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/LatAtLattice.lean:39 GlobalTheory.Mem.Col2.TC
+## Col2\.TC\.Ok$ 0 hits; 0 on cone
+## JetsIn$ 5 hits; 5 on cone
+9 D ./Development/AbelianVarietyTheory/Definitions/TwistedInnerProducts/MemHalfCosetSelf.lean:183 GlobalTheory.RowTest.JetsIn
+9 D ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/JetsInIffStepField.lean:109 GlobalTheory.Mem.Col2.ColIn.JetsIn
+20 D ./Formalism/LocalToGlobal/TorsionIntegrality/RamifiedCurveKernels/StatementH.lean:12 Formalism.L2.Th1.G.JetsIn
+21 D ./Development/AbelianVarietyTheory/BlockTheory/GlobalSignature/IndexExponentDegree.lean:37 GlobalTheory.IndefiniteRowSideFullHecke.IndexExponentDegree.JetsIn
+22 D ./Development/AbelianVarietyTheory/BlockTheory/GlobalSignature/MovementLaw.lean:29 GlobalTheory.IndefiniteRowSideFullHecke.MovementLaw.JetsIn
+## Built\.Dat\.(KerEq|KerDil|KerUK|KerBar|KerP|Sees|Ker)$ 7 hits; 7 on cone
+17 D ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/KerIsTerm.lean:82 GlobalTheory.LvT.Built.Dat.Sees
+17 A ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/KerIsTerm.lean:86 GlobalTheory.LvT.Built.Dat.Ker
+17 S ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/KerIsTerm.lean:91 GlobalTheory.LvT.Built.Dat.KerEq
+17 D ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/KerIsTerm.lean:98 GlobalTheory.LvT.Built.Dat.KerDil
+17 D ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/KerIsTerm.lean:101 GlobalTheory.LvT.Built.Dat.KerUK
+## (LvT|Built|Mem)\.[A-Za-z.]*Split$ 1 hits; 1 on cone
+17 S ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/KerIsTerm.lean:23 GlobalTheory.LvT.Built.Split
+## (KerT|LvT|UpLaw)[A-Za-z.]*\.kAt$ 1 hits; 1 on cone
+19 D ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/KerIsTerm.lean:170 GlobalTheory.LvT.Built.kAt
+## Mem\.Base$ 1 hits; 1 on cone
+7 S ./Development/AbelianVarietyTheory/Definitions/Foundations/RootOfUnityEightQMemCoeffGaloisSubfield.lean:261 GlobalTheory.Mem.Base
+## TC\.rec7$ 1 hits; 1 on cone
+8 A ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/LatAtLattice.lean:225 GlobalTheory.Mem.Col2.TC.rec7
+## exists_trueCols_rowInt$ 1 hits; 0 on cone
+-1 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsTrueColsRowInt.lean:159 GlobalTheory.PerQ.RowIntModel.exists_trueCols_rowInt
+## Col2\.TC\.(Laws|Law0|Later|cols|tw|A|Ch|ι)$ 5 hits; 5 on cone
+8 S ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/LatAtLattice.lean:112 GlobalTheory.Mem.Col2.TC.Laws
+8 D ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/LatAtLattice.lean:214 GlobalTheory.Mem.Col2.TC.Law0
+8 S ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/LatAtLattice.lean:218 GlobalTheory.Mem.Col2.TC.Later
+9 D ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/LatAtLattice.lean:178 GlobalTheory.Mem.Col2.TC.cols
+9 D ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/LatAtLattice.lean:227 GlobalTheory.Mem.Col2.TC.tw
+## Mem\.(Pre|PreX)$ 2 hits; 2 on cone
+8 S ./Development/AbelianVarietyTheory/Definitions/Foundations/RootOfUnityEightQMemCoeffGaloisSubfield.lean:73 GlobalTheory.Mem.Pre
+8 S ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/SpreadLe.lean:12 GlobalTheory.Mem.PreX
+memcap: peak 18 MB rc=0

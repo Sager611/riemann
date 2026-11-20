@@ -1,0 +1,14 @@
+## (^|\.)thAt$ 7 hits; 4 on cone
+11 D ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/XiAtPenultimateEqXiCpl1.lean:274 GlobalTheory.Mem.Col2.thAt
+14 D ./Development/AbelianVarietyTheory/Proofs/DivisorProofs/MemKUConjOfComp.lean:18 GlobalTheory.EulerTw.IntRead.thAt
+15 D ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/IsHalfPtIff.lean:47 GlobalTheory.Mem.Per.thAt
+22 D ./Development/AbelianVarietyTheory/BlockTheory/HeightDefect/FockOrthogonalDecomposition.lean:28 GlobalTheory.IndefiniteRowSideFullHecke.FockOrthogonalDecomposition.thAt
+-1 D ./Development/AbelianVarietyTheory/Definitions/Foundations/EnvOfMat.lean:71 GlobalTheory.SOrb.thAt
+-1 D ./Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ExistsConjOfNotMem.lean:86 GlobalTheory.CompanionTheory.LFixDPf.thAt
+## (^|\.)ThZeroMem$ 2 hits; 2 on cone
+18 D ./Formalism/LocalToGlobal/KernelLattices/LateralTheory.lean:191 Formalism.L2.Ker.Base.ThZeroMem
+26 D ./Formalism/LocalToGlobal/KernelLattices/ColumnData.lean:714 Formalism.L2.Ker.Cd.Base.ThZeroMem
+## Ker\.Base\.VecP$|(^|\.)VecP$ 2 hits; 1 on cone
+18 D ./Formalism/LocalToGlobal/KernelLattices/LateralTheory.lean:215 Formalism.L2.Ker.Base.VecP
+-1 D ./Formalism/LocalToGlobal/KernelLattices/ColumnData.lean:735 Formalism.L2.Ker.Cd.Base.VecP
+memcap: peak 18 MB rc=0

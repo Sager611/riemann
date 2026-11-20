@@ -1,0 +1,17 @@
+## Col2\.assemble$|Mem\.assemble$|(^|\.)assemble$ 49 hits; 43 on cone
+6 T ./Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DefiniteUnitaryClassSetFinite.lean:237 GlobalTheory.DefU.ClassFin.assemble
+6 T ./Development/AutomorphicArithmetic/CommutativeAlgebra/ExistsTwoChartAdjoinRootLaurent.lean:153 assemble
+6 T ./Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/UnivLift.lean:248 assemble
+## (^|\.)DivStage$ 1 hits; 1 on cone
+7 S ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NuInRange.lean:10 GlobalTheory.Mem.DivStage
+## (^|\.)RowsRest$ 1 hits; 1 on cone
+7 S ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/RowsRestWordColumnUnitBaseTuple.lean:10 GlobalTheory.Mem.RowsRest
+## (^|\.)SStage$ 1 hits; 1 on cone
+7 S ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/SCuIsom.lean:10 GlobalTheory.Mem.SStage
+## (^|\.)NStage$ 1 hits; 1 on cone
+7 S ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NStageTrivialCharacterCoeffEq.lean:15 GlobalTheory.Mem.NStage
+## (^|\.)GJStage$ 1 hits; 1 on cone
+7 S ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/ResCharThetaJetPlaceDegOne.lean:10 GlobalTheory.Mem.GJStage
+## Cv\.overCols_goodE$ 1 hits; 1 on cone
+11 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/GoodTwistCoresOverTrueColumns.lean:15 GlobalTheory.Fc.Cv.overCols_goodE
+memcap: peak 21 MB rc=0

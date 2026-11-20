@@ -1,0 +1,19 @@
+## goodTwistCores_over_trueColumns$ 1 hits; 1 on cone
+10 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/GoodTwistCoresOverTrueColumnsStatement.lean:9 GlobalTheory.T.goodTwistCores_over_trueColumns
+## Cv\.view_at_built$ 1 hits; 1 on cone
+13 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/PropertyAtConstructedPointsOfTrueColumnsView.lean:11 GlobalTheory.Fc.Cv.view_at_built
+## (^|\.)positionOf$ 2 hits; 2 on cone
+8 D ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/PositionOfIntro.lean:61 GlobalTheory.Mem.Top.Bl.positionOf
+15 T ./Development/AutomorphicArithmetic/Foundations/Convolution/IntegrableConvolution/PositionOf.lean:328 UpperTheory.ConvolutionTheory.L1.positionOf
+## (^|\.)ColW$ 2 hits; 1 on cone
+7 S ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/PositionOfIntro.lean:23 GlobalTheory.Mem.Top.Bl.ColW
+-1 D ./Formalism/PeriodIntegrals/UnitaryGroupMassFormula/LatticeIndices/ParUniIffFlags.lean:14 MassDataIdxStIm.ColW
+## (^|\.)IsGoodE$ 1 hits; 1 on cone
+7 D ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/ThetaChr.lean:91 GlobalTheory.Mem.Top.Bl.IsGoodE
+## (^|\.)IsBuiltE$ 1 hits; 1 on cone
+7 D ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/ThetaChr.lean:89 GlobalTheory.Mem.Top.Bl.IsBuiltE
+## (^|\.)Lg1$ 1 hits; 1 on cone
+7 D ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/AllRows.lean:15 GlobalTheory.Fc.Lg1
+## Col\.Ch$|Built\.Ch$|(^|\.)Ch\.Kmap$|\.Kmap$ 1 hits; 1 on cone
+13 D ./Formalism/LocalRingCardinality/DataKernels.lean:63 Formalism.BasicNotions.ColumnChain.Kmap
+memcap: peak 18 MB rc=0

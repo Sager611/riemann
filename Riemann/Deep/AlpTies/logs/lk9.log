@@ -1,0 +1,18 @@
+## tableLineDegreeFive\.(admitted|ConclusionE|ClosedFormOfAdmitted)$ 3 hits; 3 on cone
+12 D ./Formalism/SharpRestriction/GrowthBounds/TableLineDegreeFive.lean:244 Formalism.MainNotions.tableLineDegreeFive.ClosedFormOfAdmitted
+13 D ./Formalism/SharpRestriction/GrowthBounds/TableLineDegreeFive.lean:234 Formalism.MainNotions.tableLineDegreeFive.admitted
+13 D ./Formalism/SharpRestriction/GrowthBounds/TableLineDegreeFive.lean:242 Formalism.MainNotions.tableLineDegreeFive.ConclusionE
+## linkG_fam_noKer$ 1 hits; 1 on cone
+12 T ./Formalism/LocalToGlobal/GroupLattices/AdmissibleFamilyNoKernel.lean:241 Formalism.L2.G.linkG_fam_noKer
+## (^|\.)loc_proved$ 1 hits; 1 on cone
+10 T ./Formalism/LocalToGlobal/GroupLattices/AdmissibleFamilyNoKernel.lean:284 Formalism.L2.G.loc_proved
+## (^|\.)NuDef$ 1 hits; 1 on cone
+8 D ./Formalism/LocalRingCardinality/DataDIVDefs.lean:48 Formalism.BasicNotions.DV.NuDef
+## (^|\.)MramL$ 2 hits; 2 on cone
+8 D ./Formalism/LocalRingCardinality/DataDIVDefs.lean:12 Formalism.BasicNotions.DV.MramL
+12 D ./Formalism/LocalToGlobal/Columns/ScaledRamifiedLattice.lean:173 Formalism.L2.Col.MramL
+## (^|\.)InertK$ 7 hits; 4 on cone
+9 D ./Development/AutomorphicArithmetic/ResidueCharacters/TwistedPlaces.lean:48 Formalism.MainNotions.TwistedPlaces.InertK
+9 D ./Formalism/LocalRingCardinality/DataDIVDefs.lean:45 Formalism.BasicNotions.DV.InertK
+10 D ./Formalism/SharpRestriction/GlobalTheoremInputs.lean:97 Formalism.MainNotions.InertK
+memcap: peak 18 MB rc=0

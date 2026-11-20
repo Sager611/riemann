@@ -1,0 +1,13 @@
+## (^|\.)XiEntry$ 1 hits; 1 on cone
+12 D ./Formalism/LocalToGlobal/Columns/FiniteSumNonzeroLargeDepth.lean:1116 Formalism.L2.Col.XiEntry
+## (^|\.)thC$ 5 hits; 3 on cone
+12 D ./Formalism/LocalToGlobal/KernelLattices/XiIndCClass.lean:239 Formalism.L2.Ker.thC
+16 A ./Development/WeilBound/RepresentationTheoryGL/ArchimedeanBaseChange/ArchimedeanBaseChangeProof/QuotientVanishing/LocalQuotientIntegrals/OneVanish.lean:59 PositivityTheory.Rg.BcB.CV.thC
+16 A ./Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ContinuousConjNilSymm.lean:12 GlobalTheory.CompanionTheory.LocVan.thC
+## (^|\.)phiT$ 13 hits; 5 on cone
+12 D ./Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/LocalMaximality/MemUniInr.lean:7 phiT
+13 D ./Formalism/LocalToGlobal/Columns/FiniteSumNonzeroLargeDepth.lean:646 Formalism.L2.Col.phiT
+17 D ./Development/EtaleCohomology/TateTwists/CupflipHomotopyPf.lean:8 LateralTheory.EtaleFoundations.phiT
+## thC_zero$ 1 hits; 1 on cone
+25 T ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/XiAtPenultimateEqXiCpl1.lean:26 GlobalTheory.Mem.Col2.thC_zero
+memcap: peak 18 MB rc=0

@@ -1,0 +1,146 @@
+targets {'UpperTheory.V.Th.ordinary_vanishing_two_of_printed_hida': 645492}
+reached 145657 nodes; processed 145657 unprocessed leaves 0
+literature Props reached: 81
+   AbelianDeRham GlobalTheory.Published.AbelianDeRham D
+   AbelianDualCrystal GlobalTheory.Published.AbelianDualCrystal D
+   AdmissibleReal UpperTheory.V.Published.AdmissibleReal D
+   AlgebraicCharacterWD GlobalTheory.Published.AlgebraicCharacterWD D
+   AutomorphicFormsFiniteGL GlobalTheory.Published.AutomorphicFormsFiniteGL D
+   BaseChangeIsobaric GlobalTheory.Published.BaseChangeIsobaric D
+   BernsteinUnitaryProductIrreducible GlobalTheory.Published.BernsteinUnitaryProductIrreducible D
+   BernsteinZelevinskyFiniteness GlobalTheory.Published.BernsteinZelevinskyFiniteness D
+   BlochKatoLocal GlobalTheory.Published.BlochKatoLocal D
+   BorelInjC UpperTheory.V.Published.BorelInjC D
+   BrauerDegreeZero GlobalTheory.Published.BrauerDegreeZero D
+   CaraianiLocalGlobalDual GlobalTheory.Published.CaraianiLocalGlobalDual D
+   CaraianiTempered GlobalTheory.Published.CaraianiTempered D
+   ChevalleyUnits GlobalTheory.Published.ChevalleyUnits D
+   ClozelCohC UpperTheory.V.Published.ClozelCohC D
+   ClozelCohomological GlobalTheory.Published.ClozelCohomological D
+   ClozelConjC UpperTheory.V.Published.ClozelConjC D
+   ClozelPurity GlobalTheory.Published.ClozelPurity D
+   CohP UpperTheory.V.Pa.CohP S
+   CuspRapidDecay GlobalTheory.Published.CuspRapidDecay D
+   CuspSemisimpleReal UpperTheory.V.Published.CuspSemisimpleReal D
+   CuspidalSpectrumGL GlobalTheory.Published.CuspidalSpectrumGL D
+   CycC UpperTheory.V.Z.Bc.CycC D
+   DeRhamPotSemistable GlobalTheory.Published.DeRhamPotSemistable D
+   DefQuatExists UpperTheory.V.Published.DefQuatExists D
+   DepthZeroCuspidalLL GlobalTheory.Published.DepthZeroCuspidalLL D
+   DepthZeroInduction GlobalTheory.Published.DepthZeroInduction D
+   DepthZeroTypeInertia GlobalTheory.Published.DepthZeroTypeInertia D
+   Desc2 UpperTheory.V.Z.Bc.Desc2 D
+   DescWeak UpperTheory.V.Z.Desc.DescWeak D
+   DiscreteSpectrumResidual GlobalTheory.Published.DiscreteSpectrumResidual D
+   EllipticMainTheoremCM GlobalTheory.Published.EllipticMainTheoremCM D
+   EssSquareIntegrableSegments GlobalTheory.Published.EssSquareIntegrableSegments D
+   GaloisRepExistsTotallyRealGL2 UpperTheory.Gal.SV.GaloisRepExistsTotallyRealGL2 D
+   GaloisRepOfPolarizedPair GlobalTheory.Published.GaloisRepOfPolarizedPair D
+   GaussManinPeriods GlobalTheory.Published.GaussManinPeriods D
+   GelfandKazhdanDual GlobalTheory.Published.GelfandKazhdanDual D
+   GelfandKazhdanReal UpperTheory.V.Published.GelfandKazhdanReal D
+   GenericUnlinkedGL GlobalTheory.Published.GenericUnlinkedGL D
+   GeometricLemma GlobalTheory.Published.GeometricLemma D
+   GlobalArtinReciprocity GlobalTheory.Published.GlobalArtinReciprocity D
+   GlobalEulerChar ReciprocityTheory.Gal.GlobalEulerChar D
+   GlobalFiniteness ReciprocityTheory.Gal.GlobalFiniteness D
+   GreenRegularCharacters GlobalTheory.Published.GreenRegularCharacters D
+   GreenbergWiles ReciprocityTheory.Gal.GreenbergWiles D
+   GrothendieckDeformation GlobalTheory.Published.GrothendieckDeformation D
+   HarishChandraFinite GlobalTheory.Published.HarishChandraFinite D
+   HeckeLAdicCharacterAbove GlobalTheory.Published.HeckeLAdicCharacterAbove D
+   HeckeTateFunctionalEquation GlobalTheory.Published.HeckeTateFunctionalEquation D
+   HilbertBlumenthal GlobalTheory.Published.HilbertBlumenthal D
+   HilbertClassFieldJ GlobalTheory.Published.HilbertClassFieldJ D
+   JacquetShalika GlobalTheory.Published.JacquetShalika D
+   LanglandsExhaustionGL GlobalTheory.Published.LanglandsExhaustionGL D
+   LanglandsMultisegments GlobalTheory.Published.LanglandsMultisegments D
+   LiteratureRankNHypothesis GlobalTheory.Mem.LiteralAutomorphy.LiteratureRankNHypothesis S
+   LocalConverseGL GlobalTheory.Published.LocalConverseGL D
+   LocalEulerChar ReciprocityTheory.Gal.LocalEulerChar D
+   LocalEulerCharK Formalism.GaloisCohomology.LocalEulerCharK D
+   LocalFiniteness ReciprocityTheory.Gal.LocalFiniteness D
+   LocalFinitenessK Formalism.GaloisCohomology.LocalFinitenessK D
+   LocalLanglandsExists GlobalTheory.Published.LocalLanglandsExists D
+   LocalTateDuality ReciprocityTheory.Gal.LocalTateDuality D
+   LocalTateDualityK Formalism.GaloisCohomology.LocalTateDualityK D
+   MinguezThetaGL GlobalTheory.Published.MinguezThetaGL D
+   MoyPrasadJacquetIso GlobalTheory.Published.MoyPrasadJacquetIso D
+   NewformRep UpperTheory.V.Published.NewformRep D
+   PartialZetaFunctionalEquation GlobalTheory.Published.PartialZetaFunctionalEquation D
+   PeriodComparison GlobalTheory.Published.PeriodComparison D
+   PoitouTateNormalised GlobalTheory.Published.PoitouTateNormalised D
+   QuadBC0 UpperTheory.V.Br.QuadBC0 D
+   RayClassFieldSt GlobalTheory.Published.RayClassFieldSt D
+   SerreTateGoodReductionSt GlobalTheory.Published.SerreTateGoodReductionSt D
+   SiegelKlingenDeligneRibet GlobalTheory.Published.SiegelKlingenDeligneRibet D
+   SquareIntegrableSegment GlobalTheory.Published.SquareIntegrableSegment D
+   StandardCosocleGL GlobalTheory.Published.StandardCosocleGL D
+   StrongMultOneReal UpperTheory.V.Published.StrongMultOneReal D
+   TemperedProductOfSquareIntegrable GlobalTheory.Published.TemperedProductOfSquareIntegrable D
+   TotallyDisjointProductIrreducible GlobalTheory.Published.TotallyDisjointProductIrreducible D
+   UnitaryDualGL GlobalTheory.Published.UnitaryDualGL D
+   UnramifiedOrthogonality ReciprocityTheory.Gal.UnramifiedOrthogonality D
+   ZelevinskyPolynomialRing GlobalTheory.Published.ZelevinskyPolynomialRing D
+Hida/patching-named defs reached: 141
+   Formalism.L2.Ker.Cd.TaylorLogMetric.embT
+   Formalism.L2.Ker.Cd.TaylorLogMetric.lamOf
+   Formalism.L2.NG.ParaRT
+   Formalism.L2.NG.UniRT
+   Formalism.L2.SG.HidaSetting.HidaSetting
+   Formalism.L2.SG.HidaSetting.HidaSetting.K2
+   Formalism.L2.SG.HidaSetting.HidaSetting.LevelSubgroupCharacter
+   Formalism.L2.SG.HidaSetting.HidaSetting.MeasTie
+   Formalism.L2.SG.HidaSetting.HidaSetting.NfinU
+   Formalism.L2.SG.HidaSetting.HidaSetting.NinfU
+   Formalism.L2.SG.HidaSetting.HidaSetting.SinfU
+   Formalism.L2.SG.HidaSetting.HidaSetting.chi2
+   Formalism.L2.SG.HidaSetting.HidaSetting.crd
+   Formalism.L2.SG.HidaSetting.HidaSetting.eR
+   Formalism.L2.SG.HidaSetting.HidaSetting.fR
+   Formalism.L2.SG.HidaSetting.HidaSetting.psiFinU
+   Formalism.L2.SG.HidaSetting.HidaSetting.toFin
+   Formalism.L2.SG.HidaSetting.HidaSetting.toInf
+   Formalism.L2.SG.HidaSetting.HidaSetting.volK2
+   Formalism.L2.SG.HidaSetting.HidaSetting.zR
+   Formalism.L2.SG.HidaSetting.Hset
+   Formalism.L2.SG.HidaSetting.InAt
+   Formalism.L2.SG.HidaSetting.InMod
+   Formalism.L2.SG.HidaSetting.InN
+   Formalism.L2.SG.HidaSetting.InS
+   Formalism.L2.SG.HidaSetting.IsHaarOnSet
+   Formalism.L2.SG.HidaSetting.IsQuotMeasS
+   Formalism.L2.SG.HidaSetting.IsRepS
+   Formalism.L2.SG.HidaSetting.IsSFund
+   Formalism.L2.SG.HidaSetting.IsWu
+   Formalism.L2.SG.HidaSetting.K2cong
+   Formalism.L2.SG.HidaSetting.K2set
+   Formalism.L2.SG.HidaSetting.Nfin
+   Formalism.L2.SG.HidaSetting.Ninf
+   Formalism.L2.SG.HidaSetting.OneOff
+   Formalism.L2.SG.HidaSetting.Sinf
+   Formalism.L2.SG.HidaSetting.ZMod'
+   Formalism.L2.SG.HidaSetting.aaD
+   Formalism.L2.SG.HidaSetting.chi2f
+   Formalism.L2.SG.HidaSetting.crdOf
+   Formalism.L2.SG.HidaSetting.divN
+   Formalism.L2.SG.HidaSetting.hA
+   Formalism.L2.SG.HidaSetting.hJ
+   Formalism.L2.SG.HidaSetting.incl
+   Formalism.L2.SG.HidaSetting.latSpanS
+   Formalism.L2.SG.HidaSetting.mL
+   Formalism.L2.SG.HidaSetting.matW
+   Formalism.L2.SG.HidaSetting.nxt
+   Formalism.L2.SG.HidaSetting.psiEinf
+   Formalism.L2.SG.HidaSetting.psiFin
+   Formalism.L2.SG.HidaSetting.psiInf
+   Formalism.L2.SG.HidaSetting.psiR
+   Formalism.L2.SG.HidaSetting.rootCoord
+   Formalism.L2.SG.HidaSetting.rv
+   Formalism.L2.SG.HidaSetting.spanLt
+   Formalism.MainNotions.G.HidaSetting
+   Formalism.MainNotions.TaylorLogMetric.Hf
+   Formalism.MainNotions.TaylorLogMetric.Iop
+   Formalism.MainNotions.TaylorLogMetric.IsChi
+   Formalism.MainNotions.TaylorLogMetric.IsCurveIdeal
+memcap: peak 31 MB rc=0

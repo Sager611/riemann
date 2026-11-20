@@ -1,0 +1,19 @@
+## (^|\.)LargeBaseCondition$ 1 hits; 1 on cone
+8 D ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/EventuallyAllScaleContextsAndOfBoth.lean:42 GlobalTheory.Fc.LargeBaseCondition
+## largeBaseProperty_true$ 1 hits; 1 on cone
+8 T ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/EventuallyAllScaleContextsAndOfBoth.lean:91 GlobalTheory.Fc.largeBaseProperty_true
+## [cC]olW[A-Za-z_]*(exists|nonempty|_of)|(exists|nonempty)[A-Za-z_]*[cC]olW 2 hits; 1 on cone
+23 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/RenameMemDualWeyl.lean:133 GlobalTheory.SubstMem.isWeightedHomogeneous_colW_rowAct_of_isWeightedHomogeneous
+-1 T ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotConditionOfFalse.lean:78 GlobalTheory.Mem.Top.Bl.Model.exists_colW
+## Bl\.Built$ 1 hits; 1 on cone
+9 S ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NonzeroPlacesOverPrimes.lean:147 GlobalTheory.Mem.Top.Bl.Built
+## (^|\.)GoodO$ 2 hits; 2 on cone
+9 S ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/DsigEq.lean:14 GlobalTheory.Mem.Top.Bl.GoodO
+10 D ./Formalism/SharpRestriction/LevelLetterCocycles/LocCoh.lean:28 Formalism.MainNotions.N.GoodO
+## goodTwistCores 1 hits; 1 on cone
+10 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/GoodTwistCoresOverTrueColumnsStatement.lean:9 GlobalTheory.T.goodTwistCores_over_trueColumns
+## (^|\.)ColIn\.JetsIn$ 1 hits; 1 on cone
+9 D ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/JetsInIffStepField.lean:109 GlobalTheory.Mem.Col2.ColIn.JetsIn
+## KerT\.ker$ 1 hits; 1 on cone
+20 D ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/BelowFiniteNonempty.lean:20 GlobalTheory.KerT.ker
+memcap: peak 18 MB rc=0

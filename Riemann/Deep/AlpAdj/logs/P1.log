@@ -1,0 +1,22 @@
+dihedral weight-one newforms with a real-quadratic D (a_p = 0 at all p <= 400 inert in Q(sqrt D)), N <= 150:
+  N = 39 char orbit 12 form 1 galoistype D_4 real D = [13]
+  N = 55 char orbit 12 form 1 galoistype D_4 real D = [5]
+  N = 56 char orbit 15 form 1 galoistype D_4 real D = [8]
+  N = 63 char orbit 4 form 1 galoistype D_4 real D = [21]
+  N = 68 char orbit 10 form 1 galoistype D_4 real D = [17]
+  N = 80 char orbit 6 form 1 galoistype D_4 real D = [5]
+  N = 95 char orbit 18 form 1 galoistype D_4 real D = [5]
+  N = 111 char orbit 18 form 1 galoistype D_4 real D = [37]
+  N = 120 char orbit 23 form 1 galoistype D_4 real D = [40]
+  N = 128 char orbit 12 form 1 galoistype D_4 real D = [8]
+  N = 136 char orbit 20 form 1 galoistype D_4 real D = [17]
+  N = 144 char orbit 2 form 1 galoistype D_4 real D = [12]
+  N = 145 char orbit 16 form 1 galoistype D_8 real D = [5]
+  N = 145 char orbit 19 form 1 galoistype D_8 real D = [29]
+first example: N = 39 D = 13
+  field of coefficients: [y]
+  l = 17 split in Q(sqrt 13): a_l = 0  chi(l) = e(2 pi i * 1/2 )
+  l = 23 split in Q(sqrt 13): a_l = 0  chi(l) = e(2 pi i * 1/2 )
+  l = 29 split in Q(sqrt 13): a_l = 0  chi(l) = e(2 pi i * 1/2 )
+  l = 43 split in Q(sqrt 13): a_l = 2  chi(l) = e(2 pi i * 0 )
+memcap: peak 0 MB rc=0

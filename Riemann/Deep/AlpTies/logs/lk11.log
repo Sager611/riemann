@@ -1,0 +1,10 @@
+## indefinite_scale_theta_bound_right_alt$ 1 hits; 1 on cone
+9 T ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowsBOfDecayStatement.lean:15 GlobalTheory.T.indefinite_scale_theta_bound_right_alt
+## indefinite_scale_theta_equality_alt$ 1 hits; 1 on cone
+9 T ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/FireStatement.lean:15 GlobalTheory.T.indefinite_scale_theta_equality_alt
+## (^|\.)BundleCondition$ 2 hits; 2 on cone
+7 S ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ColumnChoiceWithTies.lean:47 GlobalTheory.Fc.BundleCondition
+8 D ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LeafInfinitePlaceBound.lean:50 GlobalTheory.BigTop.Fun.BundleCondition
+## IndefR\.FWT\.OneMapRowR$ 1 hits; 1 on cone
+8 D ./Formalism/LocalToGlobal/IndefiniteReal/OneMapT.lean:151 Formalism.IndefR.FWT.OneMapRowR
+memcap: peak 18 MB rc=0

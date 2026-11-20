@@ -1,0 +1,14 @@
+mode win #d 194 d range 839 998759 setup 0.2s
+M=1: max_y|psi(y)|/sqrt(y log y), y in [1e2,1e5], quantiles 0/.1/.5/.9/1: 1.090 1.462 1.908 2.453 3.045
+M=1: max_y|S(1e6,y)|/sqrt(y log y), y in [1e2,1e4]: 0.354 0.702 1.472 2.174 2.526
+M=1: L'/L(1) (Riesz Z=1e6): -2.648 -2.391 -2.048 -1.511 -0.856 ; max|.|/log(1e2) = 0.575
+M=1: share with |psi(y)| <= y^(1/2+1/104) on whole grid: 0/194 ; share with |S| <= y^(1/2+1/104)/2 (archive box_of_S test): 0/194
+M=1: mean over d of |S(1e6,y)|^2/(y log y) at y=100 178 316 562 1000 1778 3162 5623 10000: 1.471 1.202 1.149 1.162 1.085 0.869 0.644 0.560 0.587
+time 5.0s
+M=4: max_y|psi(y)|/sqrt(y log y), y in [1e2,1e5], quantiles 0/.1/.5/.9/1: 1.150 1.546 2.015 2.524 3.645
+M=4: max_y|S(1e6,y)|/sqrt(y log y), y in [1e2,1e4]: 0.375 1.164 1.969 2.689 3.808
+M=4: L'/L(1) (Riesz Z=1e6): -1.267 -0.788 -0.041 0.799 1.509 ; max|.|/log(1e2) = 0.328
+M=4: share with |psi(y)| <= y^(1/2+1/104) on whole grid: 0/194 ; share with |S| <= y^(1/2+1/104)/2 (archive box_of_S test): 0/194
+M=4: mean over d of |S(1e6,y)|^2/(y log y) at y=100 178 316 562 1000 1778 3162 5623 10000: 2.482 2.384 2.155 1.947 1.729 1.491 1.401 1.395 1.493
+time 9.4s
+memcap: peak 21 MB rc=0

@@ -1,0 +1,17 @@
+## property_at_constructedPoints_of_trueColumnsView$ 1 hits; 1 on cone
+12 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/PropertyAtConstructedPointsOfTrueColumnsViewStatement.lean:8 GlobalTheory.T.property_at_constructedPoints_of_trueColumnsView
+## validForConstructedPointClasses_eventuallyWorkingClass$ 1 hits; 1 on cone
+12 T ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ValidForConstructedPointClassesEventuallyWorking.lean:388 GlobalTheory.Fc.validForConstructedPointClasses_eventuallyWorkingClass
+## (^|\.)ColIn$ 1 hits; 1 on cone
+8 S ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/TrueColumnChoicesHeckeCharReferenceEqOne.lean:165 GlobalTheory.Mem.Col2.ColIn
+## ColIn\.(Ok|ok)$ 1 hits; 1 on cone
+8 S ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/TrueColumnChoicesHeckeCharReferenceEqOne.lean:219 GlobalTheory.Mem.Col2.ColIn.Ok
+## (^|\.)TrueColumnsView$|trueColumnsView$ 1 hits; 1 on cone
+12 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/PropertyAtConstructedPointsOfTrueColumnsViewStatement.lean:8 GlobalTheory.T.property_at_constructedPoints_of_trueColumnsView
+## closing_true_cols$ 1 hits; 1 on cone
+12 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ClosingTrueCols.lean:12 GlobalTheory.LvT.Built.TrueCols.closing_true_cols
+## (^|\.)OverCols$ 1 hits; 1 on cone
+10 D ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/AndLeft.lean:24 GlobalTheory.Fc.Cv.OverCols
+## EvP\.of_all$ 1 hits; 1 on cone
+9 T ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ValidForConstructedPointClassesEventuallyWorking.lean:173 GlobalTheory.Fc.EvP.of_all
+memcap: peak 21 MB rc=0

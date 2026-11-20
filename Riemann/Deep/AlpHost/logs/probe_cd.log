@@ -1,0 +1,36 @@
+(c) ThinH: classical saving c*log y/(lam + sqrt(log y)) at y = e^{x^{eps/3}}/3, lam = 2 x^{eps/5} log^2 x, vs required x^{eps/8} (archive c = 1)
+  eps=1/52 c_dlVP=0.10: holds from log x ~ 1.69e+05 (x ~ 10^7.34e+04); exponent margin 2eps/15 - eps/8 = eps/120 = 1.60e-04
+  eps=1/52 c_dlVP=0.02: holds from log x ~ 1.8e+05 (x ~ 10^7.81e+04); exponent margin 2eps/15 - eps/8 = eps/120 = 1.60e-04
+  eps=1/104 c_dlVP=0.10: holds from log x ~ 3.56e+05 (x ~ 10^1.55e+05); exponent margin 2eps/15 - eps/8 = eps/120 = 8.01e-05
+  eps=1/104 c_dlVP=0.02: holds from log x ~ 3.78e+05 (x ~ 10^1.64e+05); exponent margin 2eps/15 - eps/8 = eps/120 = 8.01e-05
+  eps=1/520 c_dlVP=0.10: holds from log x ~ 2e+06 (x ~ 10^8.67e+05); exponent margin 2eps/15 - eps/8 = eps/120 = 1.60e-05
+  eps=1/520 c_dlVP=0.02: holds from log x ~ 2.1e+06 (x ~ 10^9.14e+05); exponent margin 2eps/15 - eps/8 = eps/120 = 1.60e-05
+  Siegel zero instead of RealBox: 1-beta >= c(d) N^{-d}: (1-beta) log y <= c * exp(-2d x^{eps/5} log^2 x) * x^{eps/3} -> 0: no saving; RealBox is necessary for chars with q|N or d|N.
+
+(c2) j=1 box height vs classical zero density (Montgomery 1971, (Q^2 T)^{2(1-s)/s} (log QT)^14, s = 1-1/400) and the archive count C Q^{1/4}, family |P_d| >= e^{0.9 z'}
+  Y=10^600: z=203.1, log d ~ z log^2 Y=3.876e+08; log height_j=1 = 3.876e+08; log Montgomery count = 5.829e+06 (=0.0150 log Q); log(C Q^{1/4}) = 9.691e+07 + log C; log|P_d| >= 3.489e+08
+  Y=10^1000: z=7017, log d ~ z log^2 Y=3.72e+10; log height_j=1 = 3.72e+10; log Montgomery count = 5.595e+08 (=0.0150 log Q); log(C Q^{1/4}) = 9.301e+09 + log C; log|P_d| >= 3.348e+10
+  Y=10^3000: z=3.455e+11, log d ~ z log^2 Y=1.649e+19; log height_j=1 = 1.649e+19; log Montgomery count = 2.479e+17 (=0.0150 log Q); log(C Q^{1/4}) = 4.122e+18 + log C; log|P_d| >= 1.484e+19
+
+(d) Scale of Y1 (PairEx) from the Markov step alone: (32 C/tau) Y^{-tau} <= eta/(2R), tau = eps/2, eta = 1/2, R = #chars mod 8M (x2 for a in {0,1})
+  eps=1/52 M=1 R=8 C=1.5: Y1 >= e^1246 = 10^541.2
+  eps=1/52 M=1 R=8 C=2.5: Y1 >= e^1299 = 10^564.2
+  eps=1/52 M=4 R=32 C=1.5: Y1 >= e^1390 = 10^603.8
+  eps=1/52 M=4 R=32 C=2.5: Y1 >= e^1443 = 10^626.8
+  eps=1/52 M=100 R=640 C=1.5: Y1 >= e^1702 = 10^739.1
+  eps=1/52 M=100 R=640 C=2.5: Y1 >= e^1755 = 10^762.1
+  eps=1/104 M=1 R=8 C=1.5: Y1 >= e^2636 = 10^1145
+  eps=1/104 M=1 R=8 C=2.5: Y1 >= e^2743 = 10^1191
+  eps=1/104 M=4 R=32 C=1.5: Y1 >= e^2925 = 10^1270
+  eps=1/104 M=4 R=32 C=2.5: Y1 >= e^3031 = 10^1316
+  eps=1/104 M=100 R=640 C=1.5: Y1 >= e^3548 = 10^1541
+  eps=1/104 M=100 R=640 C=2.5: Y1 >= e^3654 = 10^1587
+  pointwise margin: y^{tau} >= r sqrt(log y) (r = 3, typical max ratio from probe (a)): log y >= 429.5
+
+(e) principal case of gChi: G(y) = sum_{n<=y} Lambda(n)(y/n - 1) - y(log y - 1 - gamma) = -y int_y^inf (psi(u)-u)u^{-2} du; check G(y)/y -> 0 and |G(y)| vs sqrt(y) (numpy sieve to 1e7)
+  y=1e+03: G(y)=1.531  G/y=1.53e-03  G/sqrt(y)=0.048
+  y=1e+04: G(y)=1.749  G/y=1.75e-04  G/sqrt(y)=0.017
+  y=1e+05: G(y)=3.671  G/y=3.67e-05  G/sqrt(y)=0.012
+  y=1e+06: G(y)=11.040  G/y=1.10e-05  G/sqrt(y)=0.011
+  y=1e+07: G(y)=27.864  G/y=2.79e-06  G/sqrt(y)=0.009
+memcap: peak 0 MB rc=0

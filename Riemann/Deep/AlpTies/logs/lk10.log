@@ -1,0 +1,8 @@
+## (^|\.)OverT$ 4 hits; 3 on cone
+8 D ./Formalism/SharpRestriction/GlobalSchurBounds/ProductFirstZerothParts.lean:23 Formalism.MainNotions.product_first_zeroth_parts.OverT
+11 A ./Development/AutomorphicArithmetic/AutomorphicVarieties/WeakShimuraTheory/NearSplit.lean:264 UpperTheory.V.Ws.Tower.OverT
+16 D ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/LevelChainSharpColumnValuationOwnChainIff.lean:79 GlobalTheory.LvT.OverT
+## (^|\.)seenP$ 0 hits; 0 on cone
+## Built\.Inh\.ofOk$|Inh\.ofOk$ 1 hits; 1 on cone
+18 D ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ExistsRecordDat.lean:41 GlobalTheory.LvT.Built.Inh.ofOk
+memcap: peak 18 MB rc=0

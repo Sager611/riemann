@@ -1,0 +1,48 @@
+## (^|\.)laws_true_fam$ 1 hits; 1 on cone
+17 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/FivePointLawsTrueChains.lean:46 GlobalTheory.LvT.Built.TrueLaws.laws_true_fam
+## (^|\.)OpenParameterStatements$ 1 hits; 1 on cone
+6 S ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/GeometricWeakTies.lean:39 GlobalTheory.Fc.S0.OpenParameterStatements
+## (^|\.)open_orbit_of_unramified_exponents_alt$ 1 hits; 1 on cone
+7 T ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean:39 GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt
+## (^|\.)at_hDivG_main_alt$ 1 hits; 1 on cone
+9 T ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/AtHDivGOfMi.lean:66 GlobalTheory.Fc.DivLinked.at_hDivG_main_alt
+## hDivG_linked_of_mIstar2$ 1 hits; 1 on cone
+10 T ./Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/AtHDivGOfMi.lean:60 GlobalTheory.Fc.DivLinked.hDivG_linked_of_mIstar2
+## (^|\.)BkLaw$ 1 hits; 1 on cone
+8 D ./Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NonzeroPlacesOverPrimesLifts.lean:107 GlobalTheory.Mem.R3.Rw.BkLaw
+## (^|\.)DivRows3G$ 2 hits; 2 on cone
+7 S ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/CountsIrreducibilityConstants.lean:91 GlobalTheory.Cp.DivRows3G
+8 S ./Formalism/LocalToGlobal/Divisibility/TupUsed.lean:112 Formalism.L2.DIV.DivRows3G
+## (^|\.)hyp_of_colIn$ 1 hits; 1 on cone
+18 T ./Development/AbelianVarietyTheory/Definitions/GlobalTwisting/JetsAllOfColIn.lean:96 GlobalTheory.KerT.hyp_of_colIn
+## normalisedThetaFamily_vectors_lattices_thetaZero$ 1 hits; 1 on cone
+18 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NormalisedThetaFamilyVectorsLatticesThetaZeroStatement.lean:7 GlobalTheory.T.normalisedThetaFamily_vectors_lattices_thetaZero
+## chTh_ok_of_colIn'?$ 2 hits; 2 on cone
+18 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ChThOkOfColIn.lean:148 GlobalTheory.ChainTheta.chTh_ok_of_colIn'
+19 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ChThOkOfColIn.lean:131 GlobalTheory.ChainTheta.chTh_ok_of_colIn
+## trueChainKernels_bound_conjugatePrimePlaces$ 1 hits; 1 on cone
+18 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TrueChainKernelsBoundConjugatePrimePlacesStatement.lean:7 GlobalTheory.T.trueChainKernels_bound_conjugatePrimePlaces
+## trueChainKernels_bound_levelPrimePlaces$ 1 hits; 1 on cone
+18 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TrueChainKernelsBoundLevelPrimePlacesStatement.lean:7 GlobalTheory.T.trueChainKernels_bound_levelPrimePlaces
+## (^|\.)(jetMoments|JetMoments|MomAt)$ 6 hits; 3 on cone
+19 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/KernelJetsLevelPlaceIntegralMoments.lean:13 GlobalTheory.MomTop.jetMoments
+19 D ./Development/AbelianVarietyTheory/BlockTheory/GlobalSignature/JetSumTable.lean:123 GlobalTheory.IndefiniteRowSideFullHecke.JetSumTable.JetMoments
+20 D ./Development/AbelianVarietyTheory/BlockTheory/GlobalSignature/JetSumTable.lean:99 GlobalTheory.IndefiniteRowSideFullHecke.JetSumTable.MomAt
+-1 D ./Development/AbelianVarietyTheory/BlockTheory/GlobalSignature/StandardKernelAtTorus.lean:80 GlobalTheory.IndefiniteRowSideFullHecke.StandardKernelAtTorus.MomAt
+-1 D ./Development/AbelianVarietyTheory/BlockTheory/JetGauges/ParabolicPointMembership.lean:245 GlobalTheory.IndefiniteRowSideFullHecke.ParabolicPointMembership.MomAt
+-1 D ./Formalism/SharpRestriction/GlobalSchurBounds/StandardLatticesGL3.lean:586 Formalism.MainNotions.StandardLatticesGL3.MomAt
+## (^|\.)[iI]nducedSimpleLowestAlcove$ 2 hits; 2 on cone
+6 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/WeylModuleSimpleClosedLowestAlcove.lean:33 GlobalTheory.Alc.inducedSimpleLowestAlcove
+6 D ./Development/AbelianVarietyTheory/PublishedTheorems/GlobalTheta/WeylDualWeylLatticesAgreeOfLowestAlcove.lean:19 GlobalTheory.Published.InducedSimpleLowestAlcove
+## fivePointLaws_trueChains$ 1 hits; 1 on cone
+16 T ./Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/FivePointLawsTrueChainsStatement.lean:8 GlobalTheory.T.fivePointLaws_trueChains
+## normalisedFamily_satisfies_equivarianceLaws$ 1 hits; 1 on cone
+18 T ./Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NormalisedFamilySatisfiesEquivarianceLawsStatement.lean:7 GlobalTheory.T.normalisedFamily_satisfies_equivarianceLaws
+## (^|\.)(KerEq|KerDil|KerUK|KerBar|KerP|Split|Sees)$ 36 hits; 30 on cone
+8 S ./Development/AutomorphicArithmetic/Foundations/Convolution/IntegrableConvolution/ClosedProperAlt.lean:32 UpperTheory.ConvolutionTheory.L1.Split
+9 D ./Development/AutomorphicArithmetic/Foundations/Convolution/RealGroupAnalysis/Smooth.lean:107 UpperTheory.ConvolutionTheory.R2.St.Split
+10 D ./Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/SphericalCoordinates/IsCoordA.lean:121 UpperTheory.Gal.W2.Sees
+11 D ./Development/AbelianVarietyTheory/Proofs/DivisorProofs/GenModelEqGenericFibre.lean:73 GlobalTheory.UPel.HT.GenCmp.KerP
+11 D ./Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/AnnihilatorBaseChange/SpecializationMapCompUniversalSection.lean:156 UpperTheory.V.Pa.Core.Sees
+11 S ./Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ScalarCommutation/TypeSlice.lean:34 UpperTheory.Gal.Spc.Split
+memcap: peak 18 MB rc=0

@@ -1,0 +1,2 @@
+D=-163 conductor=163 parity=1 T=40 s0=0.9975: zeros in (s0, 3] x [-T, T] = 0 (winding 0.000000) evals=19582 bisections=8910 546.9s
+memcap: peak 15 MB KILLED TIME>600s rc=137
