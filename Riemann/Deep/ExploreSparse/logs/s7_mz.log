@@ -1,0 +1,25 @@
+T<=    50: S_z=7.4576e-04 S_I=6.1422e-04 S_z/S_I=1.214 | share of |g|^2 below T: 0.650
+T<=   100: S_z=9.6057e-04 S_I=9.6691e-04 S_z/S_I=0.993 | share of |g|^2 below T: 0.811
+T<=   200: S_z=1.0909e-03 S_I=1.1916e-03 S_z/S_I=0.915 | share of |g|^2 below T: 0.891
+T<=   500: S_z=1.1868e-03 S_I=1.4025e-03 S_z/S_I=0.846 | share of |g|^2 below T: 0.949
+T<=  1000: S_z=1.2272e-03 S_I=1.5011e-03 S_z/S_I=0.817 | share of |g|^2 below T: 0.972
+R=9.2631e-04  Plancherel |g|^2 (t<1000.0) = 9.0050e-04  Z = S_z/R = 1.325  MZ-average Z_I = S_I/R = 1.621  t=147s mem (42.009032, 63.619072)
+memcap: peak 44 MB rc=0
+      155.54 real       132.61 user        85.30 sys
+            63963136  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              167346  page reclaims
+                 247  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 148  signals received
+                 575  voluntary context switches
+              311491  involuntary context switches
+           249379321  instructions retired
+           270241052  cycles elapsed
+             2326864  peak memory footprint

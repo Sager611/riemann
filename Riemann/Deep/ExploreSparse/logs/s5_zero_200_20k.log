@@ -1,0 +1,36 @@
+check: 2 sum_{n<=200} 1/|rho|^2 = 0.042070 (C = 0.046191)
+D(s) done t=2s
+2/3: om^2=0.132586 beta=-0.06445  K0 partial: n<=10 0.00237, 100 0.00314, 200 0.00326, +tail 0.00024 -> 0.00351  |G(rho1)| 0.0250  t=2s
+3/4: om^2=0.175510 beta=-0.08195  K0 partial: n<=10 0.00186, 100 0.00252, 200 0.00263, +tail 0.00021 -> 0.00284  |G(rho1)| 0.0212  t=3s
+3/5: om^2=0.113420 beta=-0.05731  K0 partial: n<=10 0.01355, 100 0.01782, 200 0.01854, +tail 0.00145 -> 0.01999  |G(rho1)| 0.0629  t=3s
+4/5: om^2=0.189339 beta=-0.08631  K0 partial: n<=10 0.00135, 100 0.00189, 200 0.00198, +tail 0.00017 -> 0.00215  |G(rho1)| 0.0158  t=4s
+5/6: om^2=0.191707 beta=-0.08602  K0 partial: n<=10 0.00103, 100 0.00145, 200 0.00152, +tail 0.00013 -> 0.00165  |G(rho1)| 0.0139  t=5s
+4/7: om^2=0.097986 beta=-0.05018  K0 partial: n<=10 0.01487, 100 0.02150, 200 0.02250, +tail 0.00207 -> 0.02458  |G(rho1)| 0.0506  t=5s
+5/7: om^2=0.168557 beta=-0.08042  K0 partial: n<=10 0.00530, 100 0.00740, 200 0.00773, +tail 0.00067 -> 0.00840  |G(rho1)| 0.0327  t=6s
+5/8: om^2=0.129878 beta=-0.06469  K0 partial: n<=10 0.01220, 100 0.01644, 200 0.01714, +tail 0.00135 -> 0.01849  |G(rho1)| 0.0594  t=7s
+2/5: om^2=0.048776 beta=-0.02297  K0 partial: n<=10 0.01774, 100 0.02380, 200 0.02483, +tail 0.00211 -> 0.02694  |G(rho1)| 0.0738  t=7s
+3/7: om^2=0.058889 beta=-0.02701  K0 partial: n<=10 0.01842, 100 0.02649, 200 0.02778, +tail 0.00266 -> 0.03043  |G(rho1)| 0.0609  t=7s
+3/8: om^2=0.045176 beta=-0.02182  K0 partial: n<=10 0.01786, 100 0.02520, 200 0.02648, +tail 0.00248 -> 0.02896  |G(rho1)| 0.0643  t=7s
+2/7: om^2=0.025028 beta=-0.01168  K0 partial: n<=10 0.01322, 100 0.01921, 200 0.02018, +tail 0.00200 -> 0.02218  |G(rho1)| 0.0485  t=7s
+2/9: om^2=0.015176 beta=-0.00706  K0 partial: n<=10 0.01014, 100 0.01468, 200 0.01551, +tail 0.00160 -> 0.01712  |G(rho1)| 0.0301  t=8s
+3/10: om^2=0.029050 beta=-0.01331  K0 partial: n<=10 0.01408, 100 0.02131, 200 0.02249, +tail 0.00238 -> 0.02487  |G(rho1)| 0.0396  t=8s
+done 8s mem (202.506816, 218.595328)
+memcap: peak 24 MB rc=0
+       14.18 real         8.08 user         8.37 sys
+           218644480  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               31429  page reclaims
+                  81  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  14  signals received
+                 427  voluntary context switches
+               20537  involuntary context switches
+            71174641  instructions retired
+            54650743  cycles elapsed
+             2244944  peak memory footprint

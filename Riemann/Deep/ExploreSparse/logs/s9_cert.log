@@ -1,0 +1,24 @@
+theta=2/3: certified dist(rho_theta, V_N)^2 >= 0.1325636952 for every N (M=3000 intervals; ball [0.132563695194 +/- 4.69e-13])
+theta=3/4: certified dist(rho_theta, V_N)^2 >= 0.1754808298 for every N (M=3000 intervals; ball [0.175480829833 +/- 2.05e-13])
+theta=2/5: certified dist(rho_theta, V_N)^2 >= 0.04876188692 for every N (M=3000 intervals; ball [0.0487618869229 +/- 3.13e-14])
+theta=3/5: certified dist(rho_theta, V_N)^2 >= 0.1133960225 for every N (M=3000 intervals; ball [0.113396022459 +/- 2.63e-14])
+theta=2/9: certified dist(rho_theta, V_N)^2 >= 0.01516780108 for every N (M=3000 intervals; ball [0.0151678010828 +/- 2.10e-14])
+memcap: peak 0 MB rc=0
+        6.12 real         0.64 user         3.38 sys
+            34930688  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12062  page reclaims
+                 430  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   7  signals received
+                  40  voluntary context switches
+                5945  involuntary context switches
+            62947358  instructions retired
+            36897076  cycles elapsed
+             2228560  peak memory footprint

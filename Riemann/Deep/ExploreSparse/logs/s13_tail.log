@@ -1,0 +1,8 @@
+N=640 Q=8 K0=5 K1=4 nh=28: L^2P=0.04694 L^2R=0.03868 R/P=0.8241 L^3Q=0.0534 c_e=LQ/R=1.379 cos=0.9349 P/D2=0.1908<=Q/R=0.2135 | eig(S-Om) min +2.1e-06 | tail share of L|e|_1 0.000 | t=2s mem (69.435848, 85.786624)
+memcap: peak 0 MB rc=0
+N=640 Q=8 K0=5 K1=100 nh=124: L^2P=0.04862 L^2R=0.03940 R/P=0.8103 L^3Q=0.0596 c_e=LQ/R=1.513 cos=0.9061 P/D2=0.1990<=Q/R=0.2341 | eig(S-Om) min +9.1e-07 | tail share of L|e|_1 0.807 | t=3s mem (83.706336, 100.040704)
+memcap: peak 0 MB rc=0
+N=640 Q=8 K0=5 K1=300 nh=324: L^2P=0.04898 L^2R=0.03944 R/P=0.8052 L^3Q=0.0617 c_e=LQ/R=1.563 cos=0.8928 P/D2=0.2008<=Q/R=0.2419 | eig(S-Om) min +9.0e-07 | tail share of L|e|_1 0.948 | t=8s mem (119.603704, 135.938048)
+memcap: peak 22 MB rc=0
+N=2000 Q=8 K0=5 K1=300 nh=324: L^2P=0.05229 L^2R=0.04337 R/P=0.8295 L^3Q=0.0678 c_e=LQ/R=1.563 cos=0.9050 P/D2=0.1737<=Q/R=0.2056 | eig(S-Om) min +7.3e-07 | tail share of L|e|_1 0.944 | t=35s mem (186.696232, 202.99776)
+memcap: peak 118 MB rc=0

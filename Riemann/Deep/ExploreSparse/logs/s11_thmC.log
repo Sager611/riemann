@@ -1,0 +1,8 @@
+N=   40 Q= 8: L^2P=0.0439 | in-W1: Q_pw/Q=4.17 L^3 Q_pw=0.187 => L^2 P_C=0.2125 (P_C/P=4.84) | full space: F/P=12.2 L^2 P_full=1.063 (P_full/P=24.2) | L^1.5 sqrt(Q_pw)=0.433  L sqrt(F)=0.732
+N=  160 Q= 8: L^2P=0.0480 | in-W1: Q_pw/Q=3.91 L^3 Q_pw=0.206 => L^2 P_C=0.2175 (P_C/P=4.53) | full space: F/P=12.1 L^2 P_full=1.253 (P_full/P=26.1) | L^1.5 sqrt(Q_pw)=0.454  L sqrt(F)=0.763
+N=  160 Q=32: L^2P=0.0576 | in-W1: Q_pw/Q=5.24 L^3 Q_pw=0.385 => L^2 P_C=0.3113 (P_C/P=5.40) | full space: F/P=19.6 L^2 P_full=2.036 (P_full/P=35.3) | L^1.5 sqrt(Q_pw)=0.620  L sqrt(F)=1.062
+N=  640 Q= 8: L^2P=0.0469 | in-W1: Q_pw/Q=3.94 L^3 Q_pw=0.210 => L^2 P_C=0.2115 (P_C/P=4.51) | full space: F/P=12.6 L^2 P_full=1.351 (P_full/P=28.8) | L^1.5 sqrt(Q_pw)=0.459  L sqrt(F)=0.768
+N=  640 Q=16: L^2P=0.0535 | in-W1: Q_pw/Q=4.36 L^3 Q_pw=0.294 => L^2 P_C=0.2544 (P_C/P=4.75) | full space: F/P=16.2 L^2 P_full=1.775 (P_full/P=33.2) | L^1.5 sqrt(Q_pw)=0.543  L sqrt(F)=0.930
+N=  640 Q=32: L^2P=0.0569 | in-W1: Q_pw/Q=5.30 L^3 Q_pw=0.404 => L^2 P_C=0.3054 (P_C/P=5.37) | full space: F/P=21.5 L^2 P_full=2.295 (P_full/P=40.3) | L^1.5 sqrt(Q_pw)=0.635  L sqrt(F)=1.105
+N= 2000 Q= 8: L^2P=0.0501 | in-W1: Q_pw/Q=3.84 L^3 Q_pw=0.226 => L^2 P_C=0.2198 (P_C/P=4.39) | full space: F/P=12.5 L^2 P_full=1.499 (P_full/P=29.9) | L^1.5 sqrt(Q_pw)=0.476  L sqrt(F)=0.792
+N= 2000 Q=16: L^2P=0.0573 | in-W1: Q_pw/Q=4.27 L^3 Q_pw=0.320 => L^2 P_C=0.2655 (P_C/P=4.64) | full space: F/P=16.3 L^2 P_full=1.987 (P_full/P=34.7) | L^1.5 sqrt(Q_pw)=0.566  L sqrt(F)=0.967

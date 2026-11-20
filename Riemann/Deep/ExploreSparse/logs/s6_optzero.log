@@ -1,0 +1,8 @@
+N=640 Q=8: R(s1)=9.2657e-04 R(here, M=20000)=9.2651e-04 | measured L^3 Q=0.0534  predicted L^2 sum|G_e|^2=0.0534 (partial 10/100/300: 0.0311 0.0464 0.0498) ratio 0.999 | Z = sum|G|^2/R = 1.381, c_e = LQ/R = 1.379 | t=14s mem (83.706336, 99.893248)
+memcap: peak 80 MB rc=0
+N=2000 Q=8: R(s1)=7.3337e-04 R(here, M=20000)=7.3332e-04 | measured L^3 Q=0.0589  predicted L^2 sum|G_e|^2=0.0582 (partial 10/100/300: 0.0340 0.0506 0.0543) ratio 1.013 | Z = sum|G|^2/R = 1.373, c_e = LQ/R = 1.390 | t=14s mem (83.788256, 99.975168)
+memcap: peak 80 MB rc=0
+N=160 Q=8: R(s1)=1.4619e-03 R(here, M=20000)=1.4618e-03 | measured L^3 Q=0.0527  predicted L^2 sum|G_e|^2=0.0513 (partial 10/100/300: 0.0302 0.0447 0.0479) ratio 1.026 | Z = sum|G|^2/R = 1.363, c_e = LQ/R = 1.399 | t=26s mem (83.837432, 30.326784)
+memcap: peak 80 MB rc=0
+N=2000 Q=16: R(s1)=8.2057e-04 R(here, M=20000)=8.2052e-04 | measured L^3 Q=0.0750  predicted L^2 sum|G_e|^2=0.0739 (partial 10/100/300: 0.0424 0.0638 0.0687) ratio 1.016 | Z = sum|G|^2/R = 1.559, c_e = LQ/R = 1.583 | t=64s mem (111.9524, 22.675456)
+memcap: peak 107 MB rc=0
