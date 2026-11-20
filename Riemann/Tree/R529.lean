@@ -1,0 +1,16 @@
+/-!
+# Round 529 — node N1 (Weil/Connes positivity), round 18, [check] of Chekmachev's second version (Zenodo 24377501, 20 Nov 2026 11:08 UTC) and his data v1.2 (24378296): proofs, certificates and every ε_c unchanged; ε_c ≥ 3.4 d_c holds; bracket and data checks hold; three explorations, no transfer
+
+* Node: N1 (18th round; R528 before). Round type: [check] of a new version of the record paper on the node line. Found by a Zenodo creator query (creators.name:Chekmachev, sort=mostrecent): neither o44_zsweep.py nor the date-sorted 'Riemann hypothesis' query listed 24377501.
+* Orchestrator (orch_check.py, stmts.py, wdiff.py): 39 statement headers in v1 (23848597) and 38 in v2, 17 changed texts; the author's notes: scale Θ_c replaced by the Fuchs scale d_c = (2¹⁴/3)√2π⁵c^{9/2}e^{−4πc}, proofs, certificates and ε_c unchanged. All 33 rows of Table A.1: ε_c identical in v1 and v2; d_c recomputed at 60 digits matches; ε_c/d_c ≥ 3.40036 for c ≥ 3 (minimum at c = 3; c = 2: 1.816; c = 71, even: 3.663); d_c is exactly ½ of Slepian's n = 4 asymptotic at bandwidth 2πc (the paper's 1 − χ = (1 − χ₂)(1/2 + o(1))); κ_d = 2πc − 9/4. GitHub coelto/weil-certs (created 19 Nov) holds only the PDF, notes and checksums: the c = 45, 47, 71 certificate code is still unpublished.
+* (1) stmta (no final answer; orchestrator word diff): Thm 3.1's footnote (defect normalisation; ACL's ratio 0.762 at c = 5, 0.975 at c = 50), Prop. 2.5 (citation; no real zeros on (0, 1)), Thm 5.1 (adds 'self-adjoint'), Thm 5.10 (layout), Prop. 8.1 (log₂(1/d_c) = (4π/ln 2)c + O(ln c)): cosmetic or refinements; Lemma 5.6: v1's m(w) = |Im w²| is vacuous for real w, where v1's option |w|² applies: refinement.
+* (2) stmtb: Lemma 5.3 adds D⁺ ⪰ γ·Id with γ = min(d_eff, min_G δ_j) > 0, which every certificate satisfies (v2 l. 897–907, 1143–1145); the identity W_up = W + (Y − SZ)ᵀS⁻¹(Y − SZ) holds to 7·10⁻¹⁵ on a random 6×6 instance; Def. 2.7, Thm 1.1, Prop. 1.3, Prop. 5.x (j ≥ 1), Cor. 6.x: refinements. HOLDS.
+* (3) acl: Andrews–Connes–La Gatta 2611.13129 Thm 3.1 (TeX l. 565–571, from Kastoris and Connes–Kastoris): ε_λ ≤ C_s δ₄(λ)(log λ)³ with δ₄ = (2¹⁴√2π⁵/3)λ⁹e^{−4πλ²} (l. 476); λ² = c gives δ₄ = d_c and (log λ)³ = (ln c)³/8, so v2's 'order d_c (ln c)³' HOLDS.
+* (4) bracket (falsification): Prop. 7.1's rigorous upper bounds over ε_c are 1.6330, 1.7931, 1.8646, 1.8001 at c = 5, 6, 7, 8; every bound of Table A.5 (other papers) and our ChekAudit numbers at c = 5, 10, 16 lie inside the brackets. HOLDS.
+* (5) data: 24378296 (data of the companion paper 23978194): all 996 d_c rows match the formula (relative error ≤ 4.6·10⁻¹⁶); ⟨r⟩_{[5,71]} ≤ 1.00082 ≤ 1.0009 from λ⁺_5 and λ⁻_71; 12 of 12 Hadamard checks β_N² = −½ dλ_N/da agree to the printed digits. HOLDS.
+* Explorations: Markov–Krein principal representations (moment spaces, N1): {1, cos γ₁t} is not a T-system on the window (determinant signs −, −, + at t = 0, 0.1, 0.5), no transfer; Nevanlinna value distribution (N8): explore54's barrier; copositivity (Motzkin–Straus, N4): needs a finite graph, any graph built from zeros is a re-encoding, no transfer.
+* Verdict: v2 holds as checked; the N1 record is unchanged; the exact order of λ_min(Q_c), between the certified 3.4 d_c (c ≤ 47) and Kastoris/ACL's C d_c (ln c)³ (C not explicit), stays open.
+-/
+
+namespace Fayed.R529
+end Fayed.R529
