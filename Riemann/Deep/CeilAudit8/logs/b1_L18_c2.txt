@@ -1,0 +1,10 @@
+EXAMPLE a/q=1933/988 a'/q'=1879/940 delta=[[-41241,80689],[-20632,40367]] Aq-A'q'=143544 B_delta(A,q)=-143544 disc=6659101792 x4ok=0 x1ok=0
+EXAMPLE a/q=1933/988 a'/q'=1795/964 delta=[[12067,-23607],[6480,-12677]] Aq-A'q'=179424 B_delta(A,q)=-179424 disc=611893440 x4ok=0 x1ok=0
+EXAMPLE a/q=1865/992 a'/q'=1879/940 delta=[[48959,-92043],[24492,-46045]] Aq-A'q'=83820 B_delta(A,q)=-83820 disc=9017268624 x4ok=1 x1ok=0
+cls=2 Hc=1.582 classes(odd,2mod4,0mod4)=24310,6077,6114 records=6114 alpha=0.500 log10t=18.00 nu=0.3000 K=3.183099e+17 M=398942280 N=1588 R=502 Q=502 H=3.163 intervals=125611 q<Q:79307 Q<=q<2Q:36501 q>=2Q:9803 kept(odd)=6114 m0_outside=0
+TRUE  diag=6114 off: x3=1606508 x2x3=141334 x2x3x4=8672 x1x2x3=14796 all4=882 x3x4=90586
+CONIC x2x3-pairs/2=70077 identity_fail=0 distinct_delta=69774 max_pairs_per_delta=4 distinct_(delta,n)=70077 max_per_conic=1
+DEGEN x2x3-pairs on square-disc (line-pair) conics=590 (of 70077, all4 among them=5) disc<=0=0 (of which g=0 translations a'=a+jq, q'=q: 0; all4 among disc<=0=0) [keys/CONIC stats: generic conics only] | n=aq-a'q': max|n|=187504 distinct n=9384 max pairs per n=43, P-range=[1.28e+05,1.91e+06] => admissible-P density per n ~ 4.19e-06
+RAND  off(mean of 4 shuffles): x2x3=115569.0 x2x3x4=9147.5 x1x2x3=12197.5 all4=956.0 x3x4=126882.5
+SHAPE V=1.000 x2x3/HWshape=0.00404 all4/(HWshape*H^-2)=0.00025 all4/(HWshape*Delta4^(2/3))=0.00018
+RATIO off_all4/diag=0.1443  true/rand: x2x3=1.223 x2x3x4=0.948 all4=0.923  saving(all4/x2x3)=0.006241  H^2=10.01

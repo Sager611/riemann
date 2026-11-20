@@ -1,0 +1,31 @@
+== Lehmer #6709/#6710: pair 7005.0629,7005.1006 g0=7005.0817 gbar=0.8955
+delta/gbar= 0.20 L1max(log)''gbar2=  +48.045 failing orders=[1] n*=1 pred pi*d/(2gbar)=0.31 argmin|x-g0|/d=0.0 check sum c_n d^2n / sum|.| = 3.51e-13
+delta/gbar= 0.50 L1max(log)''gbar2=   +6.048 failing orders=[1] n*=1 pred pi*d/(2gbar)=0.79 argmin|x-g0|/d=0.011 check sum c_n d^2n / sum|.| = 1.06e-13
+delta/gbar= 0.75 L1max(log)''gbar2=   +1.615 failing orders=[1, 2] n*=1 pred pi*d/(2gbar)=1.18 argmin|x-g0|/d=0.036 check sum c_n d^2n / sum|.| = 7.59e-14
+delta/gbar= 1.00 L1max(log)''gbar2=   +0.083 failing orders=[1, 2, 3] n*=1 pred pi*d/(2gbar)=1.57 argmin|x-g0|/d=0.07 check sum c_n d^2n / sum|.| = 7.45e-14
+delta/gbar= 1.10 L1max(log)''gbar2=   -0.251 failing orders=[2, 3] n*=2 pred pi*d/(2gbar)=1.73 argmin|x-g0|/d=0.041 check sum c_n d^2n / sum|.| = 6.43e-14
+delta/gbar= 1.25 L1max(log)''gbar2=   -0.604 failing orders=[2, 3, 4] n*=2 pred pi*d/(2gbar)=1.96 argmin|x-g0|/d=0.015 check sum c_n d^2n / sum|.| = 5.64e-14
+delta/gbar= 1.50 L1max(log)''gbar2=   -0.964 failing orders=[3, 4, 5] n*=3 pred pi*d/(2gbar)=2.36 argmin|x-g0|/d=0.061 check sum c_n d^2n / sum|.| = 5.35e-14
+delta/gbar= 2.00 L1max(log)''gbar2=   -1.310 failing orders=[4, 5, 6] n*=4 pred pi*d/(2gbar)=3.14 argmin|x-g0|/d=0.049 check sum c_n d^2n / sum|.| = 4.07e-14
+delta/gbar= 3.00 L1max(log)''gbar2=   -1.560 failing orders=[6, 7, 8, 9, 10] n*=6 pred pi*d/(2gbar)=4.71 argmin|x-g0|/d=0.006 check sum c_n d^2n / sum|.| = 2.63e-14
+delta/gbar= 4.00 L1max(log)''gbar2=   -1.652 failing orders=[9, 10, 11, 12, 13] n*=9 pred pi*d/(2gbar)=6.28 argmin|x-g0|/d=0.015 check sum c_n d^2n / sum|.| = 2.31e-14
+delta/gbar= 6.00 L1max(log)''gbar2=   -1.719 failing orders=[15, 16, 17, 18, 19, 20] n*=15 pred pi*d/(2gbar)=9.42 argmin|x-g0|/d=0.04 check sum c_n d^2n / sum|.| = -2.51e-09
+== generic #6607/#6608: pair 6913.3036,6914.1875 g0=6913.7455 gbar=0.8972
+delta/gbar= 0.50 L1max(log)''gbar2=   +6.309 failing orders=[1] n*=1 pred pi*d/(2gbar)=0.79 argmin|x-g0|/d=0.0 check sum c_n d^2n / sum|.| = 9.52e-14
+delta/gbar= 1.00 L1max(log)''gbar2=   +0.311 failing orders=[1, 2, 3] n*=1 pred pi*d/(2gbar)=1.57 argmin|x-g0|/d=0.013 check sum c_n d^2n / sum|.| = 6.97e-14
+delta/gbar= 1.25 L1max(log)''gbar2=   -0.408 failing orders=[2, 3, 4] n*=2 pred pi*d/(2gbar)=1.96 argmin|x-g0|/d=0.003 check sum c_n d^2n / sum|.| = 5.92e-14
+delta/gbar= 1.50 L1max(log)''gbar2=   -0.797 failing orders=[2, 3, 4, 5] n*=2 pred pi*d/(2gbar)=2.36 argmin|x-g0|/d=0.016 check sum c_n d^2n / sum|.| = 5.56e-14
+delta/gbar= 2.00 L1max(log)''gbar2=   -1.183 failing orders=[4, 5, 6] n*=4 pred pi*d/(2gbar)=3.14 argmin|x-g0|/d=0.007 check sum c_n d^2n / sum|.| = 4.29e-14
+delta/gbar= 3.00 L1max(log)''gbar2=   -1.458 failing orders=[7, 8, 9, 10] n*=7 pred pi*d/(2gbar)=4.71 argmin|x-g0|/d=0.034 check sum c_n d^2n / sum|.| = 2.82e-14
+delta/gbar= 4.00 L1max(log)''gbar2=   -1.555 failing orders=[9, 10, 11, 12, 13] n*=9 pred pi*d/(2gbar)=6.28 argmin|x-g0|/d=0.0 check sum c_n d^2n / sum|.| = 2.28e-14
+delta/gbar= 6.00 L1max(log)''gbar2=   -1.624 failing orders=[15, 16, 17, 18, 19, 20] n*=15 pred pi*d/(2gbar)=9.42 argmin|x-g0|/d=0.02 check sum c_n d^2n / sum|.| = -2.56e-09
+== DH: 9 off-line pairs below 420
+DH pair g=85.699 delta=0.3085 delta/gbar=0.207 failing orders=[1] min c1*gbar^2=-44.639
+DH pair g=114.163 delta=0.1508 delta/gbar=0.108 failing orders=[1] min c1*gbar^2=-168.794
+DH pair g=166.479 delta=0.0744 delta/gbar=0.058 failing orders=[1] min c1*gbar^2=-596.293
+DH pair g=176.702 delta=0.2243 delta/gbar=0.177 failing orders=[1] min c1*gbar^2=-62.104
+DH pair g=240.405 delta=0.3695 delta/gbar=0.309 failing orders=[1] min c1*gbar^2=-18.831
+DH pair g=320.876 delta=0.3195 delta/gbar=0.282 failing orders=[1] min c1*gbar^2=-23.268
+DH pair g=331.050 delta=0.2682 delta/gbar=0.238 failing orders=[1] min c1*gbar^2=-33.099
+DH pair g=366.641 delta=0.1285 delta/gbar=0.116 failing orders=[1] min c1*gbar^2=-146.281
+DH pair g=411.797 delta=0.3159 delta/gbar=0.291 failing orders=[1] min c1*gbar^2=-21.386

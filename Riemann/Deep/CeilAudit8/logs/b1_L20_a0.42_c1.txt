@@ -1,0 +1,7 @@
+cls=1 Hc=1.923 classes(odd,2mod4,0mod4)=90717,27297,23668 records=27297 alpha=0.420 log10t=20.00 nu=0.3000 K=3.183099e+19 M=100209770 N=100 R=26 Q=26 H=3.846 intervals=501048 q<Q:323005 Q<=q<2Q:141682 q>=2Q:36361 kept(odd)=27297 m0_outside=0
+TRUE  diag=27297 off: x3=19696860 x2x3=1428136 x2x3x4=69732 x1x2x3=112102 all4=5426 x3x4=891296
+CONIC x2x3-pairs/2=439000 identity_fail=0 distinct_delta=438384 max_pairs_per_delta=3 distinct_(delta,n)=439000 max_per_conic=1
+DEGEN x2x3-pairs on square-disc (line-pair) conics=115 (of 439000, all4 among them=1) disc<=0=274953 (of which g=0 translations a'=a+jq, q'=q: 274953; all4 among disc<=0=788) [keys/CONIC stats: generic conics only] | n=aq-a'q': max|n|=622500 distinct n=35806 max pairs per n=76, P-range=[5.36e+05,7.9e+06] => admissible-P density per n ~ 1.66e-06
+RAND  off(mean of 2 shuffles): x2x3=1170491.0 x2x3x4=74554.0 x1x2x3=97448.0 all4=6165.0 x3x4=1254446.0
+SHAPE V=1.000 x2x3/HWshape=0.00560 all4/(HWshape*H^-2)=0.00031 all4/(HWshape*Delta4^(2/3))=0.00017
+RATIO off_all4/diag=0.1988  true/rand: x2x3=1.220 x2x3x4=0.935 all4=0.880  saving(all4/x2x3)=0.003799  H^2=14.79

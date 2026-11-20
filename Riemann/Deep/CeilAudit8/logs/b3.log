@@ -1,0 +1,27 @@
+{"c": 2.5, "lam0": 1.03e-05, "lam1": 0.07658, "mu0(M)": -1.8128, "mu1(M)": 0.05313, "M-Perron margin mu1/|mu0|": 0.02931}
+    {"psi": "psi0(Q)", "infV": 1.03e-05, "supV": 1.03e-05, "Barta ok (0<=infV<=lam0)": true, "(P-R)/R": 0.006722, "cap/R": 0.007611, "PR<=cap": true}
+    {"psi": "Perron(M)", "infV": -0.1081, "supV": 1.948, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": -0.002616, "cap/R": 1.787e-05, "PR<=cap": true}
+    {"psi": "pole C=cosh(x/2)", "infV": -0.334, "supV": 3.076, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": -0.02018, "cap/R": 1.641e-05, "PR<=cap": true}
+    {"psi": "psi0+1e-06phi1", "infV": 5.542e-06, "supV": 1.033e-05, "Barta ok (0<=infV<=lam0)": true, "(P-R)/R": 0.006722, "cap/R": 0.007611, "PR<=cap": true}
+    {"psi": "psi0+0.0001phi1", "infV": -0.0004682, "supV": 1.334e-05, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": 0.00671, "cap/R": 0.007595, "PR<=cap": true}
+    {"psi": "psi0+0.01phi1", "infV": -0.1255, "supV": 0.000313, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": 0.004996, "cap/R": 0.005703, "PR<=cap": true}
+    {"psi": "psi0+0.001phi2", "infV": -0.02542, "supV": 0.006281, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": 0.006564, "cap/R": 0.00761, "PR<=cap": true}
+    {"psi": "psi0+0.1phi2", "psi>0": false}
+{"c": 3.0, "lam0": 5.578e-08, "lam1": 0.001464, "mu0(M)": -2.1704, "mu1(M)": 0.0009488, "M-Perron margin mu1/|mu0|": 0.0004372}
+    {"psi": "psi0(Q)", "infV": 5.578e-08, "supV": 5.579e-08, "Barta ok (0<=infV<=lam0)": true, "(P-R)/R": 0.000118, "cap/R": 0.0001195, "PR<=cap": true}
+    {"psi": "Perron(M)", "infV": -0.1504, "supV": 2.655, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": -0.04078, "cap/R": 6.227e-08, "PR<=cap": true}
+    {"psi": "pole C=cosh(x/2)", "infV": -0.3354, "supV": 3.364, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": -0.0655, "cap/R": 5.878e-08, "PR<=cap": true}
+    {"psi": "psi0+1e-06phi1", "infV": -1.355e-07, "supV": 5.645e-08, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": 0.000118, "cap/R": 0.0001195, "PR<=cap": true}
+    {"psi": "psi0+0.0001phi1", "infV": -1.932e-05, "supV": 1.225e-07, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": 0.0001177, "cap/R": 0.0001192, "PR<=cap": true}
+    {"psi": "psi0+0.01phi1", "psi>0": false}
+    {"psi": "psi0+0.001phi2", "infV": -0.003605, "supV": 0.3524, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": -7.789e-05, "cap/R": 0.0001284, "PR<=cap": true}
+    {"psi": "psi0+0.1phi2", "infV": -0.7493, "supV": 0.6812, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": -0.0001143, "cap/R": 7.721e-07, "PR<=cap": true}
+{"c": 3.5, "lam0": 2.514e-10, "lam1": 1.879e-05, "mu0(M)": -2.5435, "mu1(M)": 1.205e-05, "M-Perron margin mu1/|mu0|": 4.738e-06}
+    {"psi": "psi0(Q)", "infV": 2.194e-10, "supV": 2.938e-10, "Barta ok (0<=infV<=lam0)": true, "(P-R)/R": 1.562e-06, "cap/R": 1.569e-06, "PR<=cap": true}
+    {"psi": "Perron(M)", "infV": -0.1329, "supV": 1.999, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": -0.03562, "cap/R": 2.059e-10, "PR<=cap": true}
+    {"psi": "pole C=cosh(x/2)", "infV": -0.2829, "supV": 2.866, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": -0.04701, "cap/R": 2.025e-10, "PR<=cap": true}
+    {"psi": "psi0+1e-06phi1", "infV": 2.42e-10, "supV": 5.26e-09, "Barta ok (0<=infV<=lam0)": true, "(P-R)/R": 1.562e-06, "cap/R": 1.569e-06, "PR<=cap": true}
+    {"psi": "psi0+0.0001phi1", "infV": -6.891e-10, "supV": 4.841e-07, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": 1.566e-06, "cap/R": 1.573e-06, "PR<=cap": true}
+    {"psi": "psi0+0.01phi1", "infV": -9.426e-08, "supV": 1.363e-05, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": 1.842e-06, "cap/R": 2.614e-07, "PR<=cap": false}
+    {"psi": "psi0+0.001phi2", "infV": -0.0001776, "supV": 0.08295, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": -3.707e-05, "cap/R": 9.361e-07, "PR<=cap": true}
+    {"psi": "psi0+0.1phi2", "infV": -0.02214, "supV": 0.08897, "Barta ok (0<=infV<=lam0)": false, "(P-R)/R": -0.001168, "cap/R": 2.884e-09, "PR<=cap": true}

@@ -1,0 +1,12 @@
+Lehmer delta/gbar=1.0 m=0: dip interval [-1.038,+1.658] (x-g0), min q=-1.000; alpha=1: whole 1 fixed pts, non-unique on 0/66 sub-intervals; alpha=2: whole 1 fixed pts, non-unique on 0/66 sub-intervals
+Lehmer delta/gbar=1.25 m=0: dip interval [+1.656,+3.034] (x-g0), min q=+0.451; alpha=1: whole 1 fixed pts, non-unique on 0/66 sub-intervals; alpha=2: whole 1 fixed pts, non-unique on 0/66 sub-intervals
+Lehmer delta/gbar=1.25 m=2: dip interval [-1.104,+1.162] (x-g0), min q=-1.000; alpha=1: whole 1 fixed pts, non-unique on 0/66 sub-intervals; alpha=2: whole 1 fixed pts, non-unique on 0/66 sub-intervals
+Lehmer delta/gbar=1.5 m=2: dip interval [-1.048,+1.052] (x-g0), min q=-0.780; alpha=1: whole 1 fixed pts, non-unique on 0/66 sub-intervals; alpha=2: whole 1 fixed pts, non-unique on 0/66 sub-intervals
+Lehmer delta/gbar=1.5 m=3: dip interval [-0.568,+1.696] (x-g0), min q=-1.000; alpha=1: whole 1 fixed pts, non-unique on 0/66 sub-intervals; alpha=2: whole 1 fixed pts, non-unique on 0/66 sub-intervals
+Lehmer delta/gbar=2.0 m=4: dip interval [-1.112,+0.786] (x-g0), min q=-1.000; alpha=1: whole 1 fixed pts, non-unique on 0/66 sub-intervals; alpha=2: whole 1 fixed pts, non-unique on 0/66 sub-intervals
+Lehmer delta/gbar=2.5 m=6: dip interval [-0.118,+1.870] (x-g0), min q=-1.000; alpha=1: whole 1 fixed pts, non-unique on 0/66 sub-intervals; alpha=2: whole 1 fixed pts, non-unique on 0/66 sub-intervals
+Lehmer delta/gbar=3.0 m=7: dip interval [-0.692,+1.060] (x-g0), min q=-0.573; alpha=1: whole 1 fixed pts, non-unique on 0/66 sub-intervals; alpha=2: whole 1 fixed pts, non-unique on 0/66 sub-intervals
+generic delta/gbar=1.25 m=1: dip interval [-0.434,+1.942] (x-g0), min q=-0.415; alpha=1: whole 1 fixed pts, non-unique on 0/66 sub-intervals; alpha=2: whole 1 fixed pts, non-unique on 0/66 sub-intervals
+generic delta/gbar=1.25 m=2: dip interval [-1.200,+0.992] (x-g0), min q=-1.000; alpha=1: whole 1 fixed pts, non-unique on 0/66 sub-intervals; alpha=2: whole 1 fixed pts, non-unique on 0/66 sub-intervals
+generic delta/gbar=2.0 m=4: dip interval [-1.176,+0.518] (x-g0), min q=-0.970; alpha=1: whole 1 fixed pts, non-unique on 0/66 sub-intervals; alpha=2: whole 1 fixed pts, non-unique on 0/66 sub-intervals
+generic delta/gbar=3.0 m=7: dip interval [-0.772,+0.882] (x-g0), min q=-0.249; alpha=1: whole 1 fixed pts, non-unique on 0/66 sub-intervals; alpha=2: whole 1 fixed pts, non-unique on 0/66 sub-intervals
