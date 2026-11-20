@@ -1,0 +1,25 @@
+|W| = 1.0  W = (0.8506508084 + 0.5257311121j)
+FE: |L(1-s,chibar)/L(s,chi) - W^-1 gamma_a(s)| = 2.28e-21  without W: 0.469
+(D_1 a, Y_s) with W, A_chibar: (0.1513812265 - 0.6266632212j)
+   without W               : (-0.2006837895 - 0.6126573963j)
+   with W, A_chi (no bar)  : (0.1975403433 - 0.1961458592j)
+   target L(s,chi)/s       : (0.1513812284 - 0.6266632234j)
+memcap: peak 19 MB rc=0
+       15.82 real         9.84 user         9.49 sys
+            40271872  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               19240  page reclaims
+                  78  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  13  signals received
+                 274  voluntary context switches
+               21382  involuntary context switches
+            71102907  instructions retired
+            50292231  cycles elapsed
+             2261328  peak memory footprint

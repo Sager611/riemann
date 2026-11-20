@@ -1,0 +1,24 @@
+A: |gamma_pm closed forms| 1.89e-21  |L(1-s)/L(s) - gamma_a(s)| 9.47e-22  |gamma_a - q^(s-1/2) gamma_pm| 2.4e-21
+B: x=0.3 phi closed (-1.49749380752 - 0.898193222882j) direct (-1.49749380752 - 0.898193222882j) |U x^-w| 1.64977
+B: x=1.2 phi closed (-0.169998657024 + 0.219143356224j) direct (-0.169998657024 + 0.219143356224j) |U x^-w| 0.947543
+B: x=3.0 phi closed (-0.111329006185 + 0.0183753150928j) direct (-0.111329006185 + 0.0183753150928j) |U x^-w| 0.656785
+B: x=7.5 phi closed (0.0439371576121 + 0.00849012226494j) direct (0.0439371576121 + 0.00849012226494j) |U x^-w| 0.455247
+memcap: peak 20 MB rc=0
+        7.35 real         5.89 user         4.28 sys
+            51904512  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14214  page reclaims
+                  11  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   8  signals received
+                  27  voluntary context switches
+               10580  involuntary context switches
+            63020088  instructions retired
+            36294479  cycles elapsed
+             2244944  peak memory footprint

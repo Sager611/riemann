@@ -1,0 +1,32 @@
+C: s=(0.5+3j) int=(0.1411851589 - 0.4657395385j) +tail~0.0008683 -> (0.1420534127 - 0.4657395385j) ; L(s)/s=(0.1415515731 - 0.465911599j)
+D: 25 zeros in (0,60.0); first [6.020948904697597, 10.243770304166555, 12.988098012312422, 16.342607104587223]; sum_(|g|<60.0) 1/|rho|^2 = 0.13073942367842578; +N(T) tail ~0.0246306 = 0.15537004; C_chi = 0.155567979901
+E: delta on [1,40.0] sampled (1560 nodes x 50) in 290s
+E: r-series vs mpmath at x=0.7 (interp): 1.23e-05
+E: L=      4 L*||P_R 1||^2 = 0.091407  (R: 50 zeros, |g|<60.0; limit sum_R 1/|rho|^2 = 0.130739); L*|b0|^2=0.027333 vs 1/|rho0|^2=0.027396
+E: L=      8 L*||P_R 1||^2 = 0.103715  (R: 50 zeros, |g|<60.0; limit sum_R 1/|rho|^2 = 0.130739); L*|b0|^2=0.027333 vs 1/|rho0|^2=0.027396
+E: L=     12 L*||P_R 1||^2 = 0.110493  (R: 50 zeros, |g|<60.0; limit sum_R 1/|rho|^2 = 0.130739); L*|b0|^2=0.027333 vs 1/|rho0|^2=0.027396
+E: L=     16 L*||P_R 1||^2 = 0.118503  (R: 50 zeros, |g|<60.0; limit sum_R 1/|rho|^2 = 0.130739); L*|b0|^2=0.027333 vs 1/|rho0|^2=0.027396
+E: L=     24 L*||P_R 1||^2 = 0.119343  (R: 50 zeros, |g|<60.0; limit sum_R 1/|rho|^2 = 0.130739); L*|b0|^2=0.027333 vs 1/|rho0|^2=0.027396
+E: L=     40 L*||P_R 1||^2 = 0.123979  (R: 50 zeros, |g|<60.0; limit sum_R 1/|rho|^2 = 0.130739); L*|b0|^2=0.027333 vs 1/|rho0|^2=0.027396
+E: L=    100 L*||P_R 1||^2 = 0.127950  (R: 50 zeros, |g|<60.0; limit sum_R 1/|rho|^2 = 0.130739); L*|b0|^2=0.027333 vs 1/|rho0|^2=0.027396
+E: L=   1000 L*||P_R 1||^2 = 0.130481  (R: 50 zeros, |g|<60.0; limit sum_R 1/|rho|^2 = 0.130739); L*|b0|^2=0.027333 vs 1/|rho0|^2=0.027396
+E: L= 100000 L*||P_R 1||^2 = 0.130719  (R: 50 zeros, |g|<60.0; limit sum_R 1/|rho|^2 = 0.130739); L*|b0|^2=0.027333 vs 1/|rho0|^2=0.027396
+memcap: peak 27 MB rc=0
+      309.59 real       241.73 user       154.65 sys
+            89341952  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              301530  page reclaims
+                 659  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 293  signals received
+                1107  voluntary context switches
+              618794  involuntary context switches
+           406775736  instructions retired
+           484539429  cycles elapsed
+             2326864  peak memory footprint

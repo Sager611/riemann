@@ -1,0 +1,37 @@
+A: |gamma_pm closed forms| 3.79e-21  |L(1-s)/L(s) - gamma_a(s)| 2.12e-22  |gamma_a - q^(s-1/2) gamma_pm| 4.24e-21
+B: x=0.3 phi closed (-0.859961908155 + 1.76792265727j) direct (-0.859961908155 + 1.76792265727j) |U x^-w| 1.64977
+B: x=1.2 phi closed (0.326147693093 + 0.143760601453j) direct (0.326147693093 + 0.143760601453j) |U x^-w| 0.947544
+B: x=3.0 phi closed (0.000511156456551 + 0.0297670905613j) direct (0.000511156456551 + 0.0297670905613j) |U x^-w| 0.656785
+B: x=7.5 phi closed (-0.000320077864 - 0.00454825748328j) direct (-0.000320077864 - 0.00454825748328j) |U x^-w| 0.455247
+C: s=(0.5+3j) int=(0.4149719171 - 0.4498865585j) +tail~0.0004222 -> (0.4153940887 - 0.4498865585j) ; L(s)/s=(0.4153940899 - 0.4498865587j)
+D: 18 zeros in (0,45.0); first [6.648453344727715, 9.83144443288667, 11.958845626083514, 16.033821128384236]; sum_(|g|<45.0) 1/|rho|^2 = 0.12382305107041361; +N(T) tail ~0.0323843 = 0.15620736; C_chi = 0.156556953615
+E: delta on [1,40.0] sampled (1560 nodes x 36) in 171s
+E: r-series vs mpmath at x=0.7 (interp): 6.87e-06
+E: L=      4 L*||P_R 1||^2 = 0.082818  (R: 36 zeros, |g|<45.0; limit sum_R 1/|rho|^2 = 0.123823); |b0|^2=0.024206 vs 1/|rho0|^2=0.022496
+E: L=      8 L*||P_R 1||^2 = 0.098929  (R: 36 zeros, |g|<45.0; limit sum_R 1/|rho|^2 = 0.123823); |b0|^2=0.023231 vs 1/|rho0|^2=0.022496
+E: L=     12 L*||P_R 1||^2 = 0.105738  (R: 36 zeros, |g|<45.0; limit sum_R 1/|rho|^2 = 0.123823); |b0|^2=0.022493 vs 1/|rho0|^2=0.022496
+E: L=     16 L*||P_R 1||^2 = 0.107731  (R: 36 zeros, |g|<45.0; limit sum_R 1/|rho|^2 = 0.123823); |b0|^2=0.022483 vs 1/|rho0|^2=0.022496
+E: L=     24 L*||P_R 1||^2 = 0.112749  (R: 36 zeros, |g|<45.0; limit sum_R 1/|rho|^2 = 0.123823); |b0|^2=0.022496 vs 1/|rho0|^2=0.022496
+E: L=     40 L*||P_R 1||^2 = 0.116323  (R: 36 zeros, |g|<45.0; limit sum_R 1/|rho|^2 = 0.123823); |b0|^2=0.022496 vs 1/|rho0|^2=0.022496
+E: L=    100 L*||P_R 1||^2 = 0.121111  (R: 36 zeros, |g|<45.0; limit sum_R 1/|rho|^2 = 0.123823); |b0|^2=0.022496 vs 1/|rho0|^2=0.022496
+E: L=   1000 L*||P_R 1||^2 = 0.123561  (R: 36 zeros, |g|<45.0; limit sum_R 1/|rho|^2 = 0.123823); |b0|^2=0.022496 vs 1/|rho0|^2=0.022496
+E: L= 100000 L*||P_R 1||^2 = 0.123819  (R: 36 zeros, |g|<45.0; limit sum_R 1/|rho|^2 = 0.123823); |b0|^2=0.022496 vs 1/|rho0|^2=0.022496
+memcap: peak 42 MB rc=0
+      201.57 real       169.33 user       106.19 sys
+            94863360  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              201623  page reclaims
+                 331  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  21  messages received
+                 189  signals received
+                 942  voluntary context switches
+              407501  involuntary context switches
+           286381467  instructions retired
+           300859737  cycles elapsed
+             2244944  peak memory footprint
