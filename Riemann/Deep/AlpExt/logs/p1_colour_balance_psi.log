@@ -1,0 +1,12 @@
+A. classes of G = S3 x C2: 6 sizes [1, 2, 3, 1, 2, 3]
+   centre of G: [((0, 1, 2), 0), ((0, 1, 2), 1)] ; cconj central: False
+   class weights w: g -> w(cconj*g) non-constant on 100/300 (class, trial) pairs => ASK depends on the Frobenius representative
+   abelian control (C6 x C2, every element its own class): non-constant 0
+B. class functions: dim 6 ; rank(linear chars) = 4 ; rank(Irr incl. rho) = 6
+   real primes 3 <= p <= 3000 (p != 7, 23): identity with Irr(G) exact in 9 / 9 (y, class) cases
+   with linear characters only, nonzero log-p symbols per (y, |C|, tr rho(C)): [(997.0, 1, 2, 41), (997.0, 2, -1, 41), (997.0, 3, 0, 0), (1499.5, 1, 2, 58), (1499.5, 2, -1, 58), (1499.5, 3, 0, 0), (3000.0, 1, 2, 113), (3000.0, 2, -1, 113), (3000.0, 3, 0, 0)]
+C. mean of tr rho on the fibres over Gal(F/Q): +1 -> 0 ; -1 -> 0 ; whole S3 -> 0
+   mean tr rho(Frob_p) by p mod 23, p <= 1e6 (n = count):
+   1:-0.0062(n=3577); 2:-0.0008(n=3564); 3:+0.0093(n=3555); 4:+0.0106(n=3571); 5:+0.0000(n=3563); 6:-0.0008(n=3573); 7:+0.0000(n=3553); 8:-0.0084(n=3573); 9:-0.0065(n=3548); 10:+0.0000(n=3566); 11:+0.0000(n=3570); 12:+0.0040(n=3514); 13:-0.0128(n=3589); 14:+0.0000(n=3586); 15:+0.0000(n=3573); 16:-0.0064(n=3569); 17:+0.0000(n=3583); 18:-0.0068(n=3552); 19:+0.0000(n=3573); 20:+0.0000(n=3589); 21:+0.0000(n=3582); 22:+0.0000(n=3572)
+   max over classes |mean| * sqrt(n) = 0.768 (O(1) = no correlation; a Dirichlet-type target would give |mean| ~ 1)
+memcap: peak 14 MB rc=0

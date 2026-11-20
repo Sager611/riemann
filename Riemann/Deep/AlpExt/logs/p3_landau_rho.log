@@ -1,0 +1,16 @@
+(1) b(p^k) = tr rho(Frob_p^k) from eta(z)eta(23z): 1813 checks, 0 mismatches; a(n) multiplicative n<=2000: 0 mismatches
+    first a(n): [1, -1, -1, 0, 0, 1, 0, 1, 0, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, 0, 0, 0, 1, -1, 1, 1, 1, 0, -1]
+(2) |Lambda(s;t=1) - Lambda(s;t=1.3)| at s=0.7: 9.8608e-32 (0 <=> functional equation, root number +1)
+(2) |Lambda(s;t=1) - Lambda(s;t=1.3)| at s=(0.3+1.7j): 2.9071e-32 (0 <=> functional equation, root number +1)
+    L(1,rho) = 0.368409320715827; class number formula 2 pi log(alpha)/sqrt23 = 0.368409320715827
+    Lambda'/Lambda(1) = 0.16971910231; L'/L(1,rho) = 1.01706472566; GRH envelope sum 1/|rho|^2 = 0.3394382046
+(3) prime powers n <= 1e6 with 1 + w tr rho(n) < 0: {1.0: 0, 0.2: 0, 1.01: 26231} (w <= 1 keeps Gz + w G_rho a nonnegative combination)
+    G_rho(y)/sqrt(y), y in [1e2,1e6] (4001 points): max +0.6758, min -0.0941; envelope 0.3394
+      [1e+02,1e+03]: max |G_rho|/sqrt y = 0.6758
+      [1e+03,1e+04]: max |G_rho|/sqrt y = 0.3501
+      [1e+04,1e+05]: max |G_rho|/sqrt y = 0.2247
+      [1e+05,1e+06]: max |G_rho|/sqrt y = 0.1845
+    window [1e+02, Y^1.5]: max (Gz + G_rho/5)/sqrt(y) = +0.3034
+    window [1e+03, Y^1.5]: max (Gz + G_rho/5)/sqrt(y) = +0.1320
+    window [1e+04, Y^1.5]: max (Gz + G_rho/5)/sqrt(y) = +0.0746
+memcap: peak 14 MB rc=0

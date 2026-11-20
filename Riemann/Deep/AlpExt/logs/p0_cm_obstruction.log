@@ -1,0 +1,22 @@
+disc(x^3-x-1) = -23 ; real roots: 1 ; all roots: 3
+complex conjugation on roots (index map): [0, 2, 1] -> fixed points: 1
+c central in S3: False ; centre of S3: [(0, 1, 2)]
+D=-3: h=1, class group exponent <= 2: True
+D=-4: h=1, class group exponent <= 2: True
+D=-7: h=1, class group exponent <= 2: True
+D=-8: h=1, class group exponent <= 2: True
+D=-11: h=1, class group exponent <= 2: True
+D=-15: h=2, class group exponent <= 2: True
+D=-19: h=1, class group exponent <= 2: True
+D=-20: h=2, class group exponent <= 2: True
+D=-23: h=3, class group exponent <= 2: False
+D=-31: h=3, class group exponent <= 2: False
+D=-39: h=4, class group exponent <= 2: False
+D=-47: h=5, class group exponent <= 2: False
+D=-55: h=4, class group exponent <= 2: False
+D=-56: h=4, class group exponent <= 2: False
+D=-59: h=3, class group exponent <= 2: False
+first fundamental -D with a class-group character of order >= 3: -23 h = 3 forms [(1, 1, 6), (2, -1, 3), (2, 1, 3)]
+Frobenius types for 5 <= p <= 200000, p != 23: {'id': 2959, 'tr': 9019, '3c': 6003}; mismatches = 0
+shares id/tr/3c = 0.1646 0.5016 0.3339 (Chebotarev 1/6, 1/2, 1/3)
+memcap: peak 14 MB rc=0
