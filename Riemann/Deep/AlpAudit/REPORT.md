@@ -91,7 +91,7 @@ Title search `soundness` (25 hits) plus label:bug `kernel False` since 2025-06 (
 | shosonoda/lean-rh-alpoge | independent build-report repo; README describes the method (Mathlib from cache; comparator sandbox, axiom check, kernel replay); no result in the README | last commit 17:18:04 |
 | TomasOrtega/RH, PyJudge/…, 1337isnot1337/…, ShashiQubit/…, Reen-Ai-H/…, adamrsophie/RiemannHypothesis, harttraveller/riemann, realRoc/… | mirrors, guides, explainers; no checks | 17:19–18:16 |
 
-Replay caveat from #15908: Lean's own default and paranoid kernels and nanoda accepted a crafted export proving False; for an export-based replay to be independent evidence, at least one of lean4lean / con-leche / con-ron (which reject it) should accept the export, or the Lean kernels should include the 24 Oct fix (4.35.0-rc2 should; not verified here).
+Replay caveat from #15908: Lean's own default and paranoid kernels and nanoda accepted a crafted export proving False; for an export-based replay to be independent evidence, at least one of lean4lean / con-leche / con-ron (which reject it) should accept the export, or the Lean kernels should include the 24 Oct fix (4.35.0-rc2 should; not verified here). Correction (R538): no such fix exists: #15908 was closed as not a kernel bug, and Comparator's exact comparison of Nat.add and the other primitives rejects such exports.
 
 ## Sorry-producing tactics and elaboration entry points
 
