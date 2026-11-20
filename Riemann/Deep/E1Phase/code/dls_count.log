@@ -1,0 +1,10 @@
+theta=0.600 nu=0.2286 y=40 R=986 N=63 X0=636  mean x2-neighbours=263.2  B_a/R: arithmetic 16.639  random-alpha 17.191  (heuristic 1+nb*2/Y1 = 17.600)  X2Y2=5.24
+theta=0.600 nu=0.2286 y=80 R=3874 N=138 X0=2140  mean x2-neighbours=318.8  B_a/R: arithmetic 9.727  random-alpha 10.148  (heuristic 1+nb*2/Y1 = 10.216)  X2Y2=17.63
+theta=0.600 nu=0.2286 y=160 R=15620 N=302 X0=7198  mean x2-neighbours=382.5  B_a/R: arithmetic 5.854  random-alpha 6.043  (heuristic 1+nb*2/Y1 = 6.071)  X2Y2=59.32
+theta=0.600 nu=0.2286 y=320 R=62074 N=658 X0=24211  mean x2-neighbours=454.0  B_a/R: arithmetic 3.681  random-alpha 3.745  (heuristic 1+nb*2/Y1 = 3.759)  X2Y2=199.51
+memcap: peak 0 MB rc=0
+theta=0.700 nu=0.3500 y=40 R=986 N=24 X0=24  mean x2-neighbours=986.0  B_a/R: arithmetic 159.203  random-alpha 162.454  (heuristic 1+nb*2/Y1 = 168.010)  X2Y2=0.19
+theta=0.700 nu=0.3500 y=80 R=3874 N=43 X0=43  mean x2-neighbours=3874.0  B_a/R: arithmetic 352.690  random-alpha 354.764  (heuristic 1+nb*2/Y1 = 363.243)  X2Y2=0.35
+theta=0.700 nu=0.3500 y=160 R=15620 N=77 X0=77  mean x2-neighbours=15576.4  B_a/R: arithmetic 792.869  random-alpha 795.218  (heuristic 1+nb*2/Y1 = 805.048)  X2Y2=0.64
+theta=0.700 nu=0.3500 y=320 R=62074 N=140 X0=140  mean x2-neighbours=54690.4  B_a/R: arithmetic 1547.119  random-alpha 1548.661  (heuristic 1+nb*2/Y1 = 1559.475)  X2Y2=1.16
+memcap: peak 30 MB rc=0

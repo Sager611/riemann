@@ -1,0 +1,8 @@
+all    theta=0.600 nu=0.2286 y=640 R=249276 N=1435 X0=81437  mean x2-neighbours=541.0  B_a/R: arithmetic 2.464  random-alpha 2.505  (heuristic 1+nb*2/Y1 = 2.508)  X2Y2=671.09
+memcap: peak 0 MB rc=0
+       10.02 real         4.17 user         4.42 sys
+            64258048  maximum resident set size
+primes theta=0.600 nu=0.2286 y=320 R=2352 N=658 X0=24211  mean x2-neighbours=18.7  B_a/R: arithmetic 1.107  random-alpha 1.116  (heuristic 1+nb*2/Y1 = 1.114)  X2Y2=199.51
+primes theta=0.600 nu=0.2286 y=640 R=8372 N=1435 X0=81437  mean x2-neighbours=18.8  B_a/R: arithmetic 1.049  random-alpha 1.051  (heuristic 1+nb*2/Y1 = 1.052)  X2Y2=671.09
+primes theta=0.600 nu=0.2286 y=1280 R=28056 N=3130 X0=273922  mean x2-neighbours=19.3  B_a/R: arithmetic 1.021  random-alpha 1.023  (heuristic 1+nb*2/Y1 = 1.025)  X2Y2=2257.26
+memcap: peak 0 MB rc=0

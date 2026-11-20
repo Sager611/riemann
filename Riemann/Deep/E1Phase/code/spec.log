@@ -1,0 +1,10 @@
+Z=    0  int|phi~(2it)|dt=3.3442 (x sqrt(1+Z): 3.3442)  sup|phi~|=0.3384  mean|t|=3.4  Weyl mass M=0.9299  M/(1+Z)=0.9299
+Z=   10  int|phi~(2it)|dt=3.3468 (x sqrt(1+Z): 1.0091)  sup|phi~|=0.3382  mean|t|=4.4  Weyl mass M=1.0605  M/(1+Z)=0.0964
+Z=   30  int|phi~(2it)|dt=3.3635 (x sqrt(1+Z): 0.6041)  sup|phi~|=0.3372  mean|t|=9.6  Weyl mass M=1.6918  M/(1+Z)=0.0546
+Z=  100  int|phi~(2it)|dt=3.5983 (x sqrt(1+Z): 0.3580)  sup|phi~|=0.3259  mean|t|=31.0  Weyl mass M=3.3264  M/(1+Z)=0.0329
+Z=  300  int|phi~(2it)|dt=4.6428 (x sqrt(1+Z): 0.2676)  sup|phi~|=0.2560  mean|t|=91.8  Weyl mass M=7.4063  M/(1+Z)=0.0246
+Z= 1000  int|phi~(2it)|dt=7.6065 (x sqrt(1+Z): 0.2404)  sup|phi~|=0.1430  mean|t|=304.4  Weyl mass M=22.1064  M/(1+Z)=0.0221
+memcap: peak 19 MB rc=0
+       61.61 real        29.80 user        22.80 sys
+            38715392  maximum resident set size
+             2261328  peak memory footprint

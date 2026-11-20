@@ -1,0 +1,9 @@
+theta=0.600 c=0.13455 | E1 nu=0.2000 kappa=0.143897 LB=0.140790 | DLS nu=0.2000 kappa=0.143897 LB=0.140790
+theta=0.602 c=0.13944 | E1 nu=0.2015 kappa=0.145005 LB=0.143152 | DLS nu=0.2040 kappa=0.146852 LB=0.144385
+theta=0.604 c=0.14428 | E1 nu=0.2030 kappa=0.146113 LB=0.145503 | DLS nu=0.2080 kappa=0.149807 LB=0.147969
+theta=0.606 c=0.14909 | E1 nu=0.2045 kappa=0.147221 LB=0.149093 | DLS nu=0.2120 kappa=0.152765 LB=0.151542
+theta=0.608 c=0.15387 | E1 nu=0.2060 kappa=0.148329 LB=0.153868 | DLS nu=0.2160 kappa=0.155725 LB=0.155106
+theta=0.610 c=0.15861 | E1 nu=0.2075 kappa=0.149438 LB=0.158606 | DLS nu=0.2200 kappa=0.158688 LB=0.158660
+theta=0.615 c=0.17030 | E1 nu=0.2112 kappa=0.152210 LB=0.170300 | DLS nu=0.2300 kappa=0.166108 LB=0.170300
+kappa(2t-1) = c(t) at theta = 0.6101
+memcap: peak 46 MB rc=0
