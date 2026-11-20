@@ -1,0 +1,8 @@
+(i) d_a d_b D|0 = ell*(ell**2 + 6*ell*lambda + 6*lambda**2)/6  expected l^3/6+l^2 lam+l lam^2: True
+(ii) Phi - [1/b^2 + g1/b + g2 - g(b)/b^2] = 0
+     Phi regular at 0: 0 (finite)
+(iii) f(kappa) = -kappa**3/3 + kappa**2*mu + kappa**2 - 2*kappa*mu - kappa + mu**2 + 2*mu + 1/2
+     f - [1/6+mu+mu^2+mu(1-k)^2+(1-k)^3/3] = 0
+     f(1) = (6*mu**2 + 6*mu + 1)/6 ; u^2-1/12 with u=1/2+mu: mu**2 + mu + 1/6
+     f(0) = mu**2 + 2*mu + 1/2
+(iv) S1/(T/2pi) = ell**2/2 + ell*lambda  = L^2(1/2 + mu) with lam = mu L

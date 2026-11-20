@@ -1,0 +1,4 @@
+contact: delta=0.426082 a=0.713041 h=0.809686 R=0.626569
+absolute 1.220366  LS1 1.253662 (loss 0.0332965)  TypeII 1.309686 (loss 0.089321)  subset-LS TypeII 1.412168 (loss 0.191802)
+class domain [1/8,5/6]x[0,1/2], native count: min LS1 loss 0.00718; min TypeII loss 0.00853 at (delta, x) = (0.125, 0.000), R = 0.9123
+TypeII beats absolute on 0.00% of the grid (classes with h(1-R) < delta/2)

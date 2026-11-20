@@ -1,0 +1,6 @@
+REVIEWER (subagent 'reviewer', 20 Nov 2026 ~03:55 UTC) on the B1 bookkeeping claim (A-D as in REPORT.md B1 section):
+**CORRECT — scalar bookkeeping.** The quoted numerical θ roots are not independently certified by the supplied equations.
+A — OK. g(k) = H·wb = r, and G(k) = H[5/6 − 5R/4 + k(R − 1/2 − z)], so u cancels and a1 disappears. Your thr is the zero-pad boundary; the actual positive gate additionally requires F0 > 3·10⁻⁵/H.
+B — OK. Substitution gives Hc' = 1 − (6−ρ)u' − κ + κP; payment remains N'+V+κP (sic: N + V − u' + κP). The child-bound denominator changes accordingly, assuming its usual positivity conditions. From S_r = H S_R + u/k + u, Y = Hz + (1/k+1)u − (1−H)/2 = Hz + (1/k − 2 + ρ/2)u. The budget also balances: [K − F + (5−ρ)u] + [H + u] = F. No contradictory extra role for 6 appears in the excerpts; u/k and the price allowance u remain selected-width bookkeeping inputs.
+C — OK. First-order expansion gives r z' = z − T_ρ. The zero-gain start is r0 = (28 − 10ρ)/(36 − 15ρ); at ρ = 0 this yields 7/9 and exactly the stated published ODE.
+D — OK for the correction and scalar sensitivity. At ρ = 1 the coefficient is 1/k − 3/2, not 1/k − 2: the omitted gain is u/2 = (1−H)/10. At fixed r, z the omitted contribution to ∂_ρ T at ρ = 0 is 1/12. Reproducing the θ floats requires the count-window/return equation, absent here.
