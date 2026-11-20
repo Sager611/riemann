@@ -1,0 +1,23 @@
+10:18:20 row 1 shells done
+10:18:39 cert row 1 rc=0 A 0.7980704540471295 B 0.7741127239176994 dA 0.04362964277893402 dB 0.04148372558089649
+10:18:39 mkrec source A: {"source": ".scratch/dbnrec/ws/dbnrec/MAIN_CLOCK_SOURCE_REC.json", "sha256": "b31a069a34a0fa1132338de2b8fd5e08077b113fd9605d0e5059306e4eb2101a", "rows": [{"row": 1, "dA": "421960013248130330601273025655960251/9671406556917033397649408000000000000", "dB": "200602987794214576039517398448097313/4835703
+10:19:59 make_flow A rc=0 "endpoint_decimal": 0.10754105468637595
+10:20:00 mkrec verifier A: {"flow_sha256": "03dfc7fab6922af965fe8a642b2769e5f4f057dfd37c2d4cee82bc9adee4d70c", "source_sha256": "b31a069a34a0fa1132338de2b8fd5e08077b113fd9605d0e5059306e4eb2101a", "steps": 220142, "endpoint": "2
+10:24:15 verify A rc=0 "PASS": true
+10:24:21 row 2 T0 0.788556
+10:27:02 row 2 T 0.790748 shells 0.01 0.02 0.035 0.05 0.07 0.09 0.11 0.13 0.15 0.1623
+10:52:21 cert row 2 rc=1 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+10:52:28 row 3 T0 0.811148
+10:54:53 row 3 T 0.813139 shells 0.01 0.02 0.035 0.05 0.07 0.09 0.11 0.13 0.15 0.1676
+10:56:14 cert row 2 rerun by hand after certify.py exact-max fix (bb of row 3 paused with SIGSTOP during it)
+11:18:45 correction to the 10:56:14 line: SIGSTOP hit the /usr/bin/time wrapper, not bb_rec; row 3's bb kept running, so certify (13 s, 19 MB) overlapped it
+11:23:08 cert row 3 rc=0 A 0.8387996316975652 B 0.8131390000000001 dA 0.04752965453344792 dB 0.045308492926746866
+11:23:14 row 4 T0 0.832387
+11:27:18 row 4 T 0.834173 shells 0.01 0.02 0.035 0.05 0.07 0.09 0.11 0.13 0.15 0.17 0.1714
+11:46:45 cert row 4 rc=0 A 0.886993448568029 B 0.8605541541630769 dA 0.023059034909892234 dB 0.020697336405538575
+11:46:45 new-row deadline: stop before row 5
+11:46:45 mkrec source B: {"source": ".scratch/dbnrec/ws/dbnrec/MAIN_CLOCK_SOURCE_REC.json", "sha256": "04f16da4449d3d8a1cacacb1395a0b0f37ae73ec51f858aabb9b50922782e000", "rows": [{"row": 1, "dA": "421960013248130330601273025655960251/9671406556917033397649408000000000000", "dB": "200602987794214576039517398448097313/4835703
+11:48:19 make_flow B rc=0 "endpoint_decimal": 0.10751558473669763
+11:48:19 mkrec verifier B: {"flow_sha256": "f767fdf26effabe8a20e1cb0259a2f75ec328c65d9c95b8987fca3bb2d6ed022", "source_sha256": "04f16da4449d3d8a1cacacb1395a0b0f37ae73ec51f858aabb9b50922782e000", "steps": 220090, "endpoint": "2
+11:52:59 verify B rc=0 "PASS": true
+11:52:59 master done rows: 1 2 3 4

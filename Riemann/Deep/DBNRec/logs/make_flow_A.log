@@ -1,0 +1,41 @@
+ARCS 20000 row 3 t 0.009765625 q 0.47431524760149174 el 4.6
+ARCS 40000 row 7 t 0.01953125 q 0.39824050882049267 el 8.8
+ARCS 60000 row 11 t 0.029296875 q 0.3290709691706757 el 12.9
+ARCS 80000 row 15 t 0.0390625 q 0.26665110092275374 el 17.1
+ARCS 100000 row 19 t 0.048828125 q 0.2108393291904018 el 21.5
+ARCS 120000 row 26 t 0.05859375 q 0.16135801442144956 el 25.6
+ARCS 140000 row 34 t 0.068359375 q 0.1179834625681372 el 34.7
+ARCS 160000 row 42 t 0.078125 q 0.08053244398651917 el 44.6
+ARCS 180000 row 50 t 0.087890625 q 0.0486833461401701 el 55.0
+ARCS 200000 row 58 t 0.09765625 q 0.022065643434067042 el 60.5
+ARCS 220000 row 65 t 0.107421875 q 0.00023862454135217177 el 66.8
+{
+  "steps": 220142,
+  "terminal_t": "110071/1024000",
+  "terminal_t_decimal": 0.1074912109375,
+  "terminal_q_decimal": 9.968749775189703e-05,
+  "endpoint_decimal": 0.10754105468637595,
+  "headline": "107541054687/1000000000000",
+  "startup_gap_decimal": 9.309562791979319e-13,
+  "first_rate_decimal": 12.38344631564245,
+  "seconds": 73.39062141720206
+}
+memcap: peak 24 MB rc=0
+       80.15 real        69.89 user        44.41 sys
+            41533440  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              105897  page reclaims
+                 565  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  80  signals received
+                 593  voluntary context switches
+              183106  involuntary context switches
+           164702563  instructions retired
+           177694721  cycles elapsed
+             2310480  peak memory footprint

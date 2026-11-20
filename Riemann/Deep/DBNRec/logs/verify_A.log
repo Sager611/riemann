@@ -1,0 +1,45 @@
+CHECKED 20000 row 3 elapsed 15.65
+CHECKED 40000 row 7 elapsed 31.26
+CHECKED 60000 row 11 elapsed 47.84
+CHECKED 80000 row 15 elapsed 64.01
+CHECKED 100000 row 19 elapsed 79.28
+CHECKED 120000 row 26 elapsed 95.76
+CHECKED 140000 row 34 elapsed 129.51
+CHECKED 160000 row 42 elapsed 163.25
+CHECKED 180000 row 50 elapsed 202.38
+CHECKED 200000 row 58 elapsed 225.01
+CHECKED 220000 row 65 elapsed 250.75
+{
+  "PASS": true,
+  "arcs_checked": 220142,
+  "exact_checks": 5776508,
+  "terminal_t": "110071/1024000",
+  "terminal_q": "7898057272527658140155771/79228162514264337593543950336",
+  "exact_full_cleanup_endpoint": "2130070039411895523492855447311/19807040628566084398385987584000",
+  "all_arc_witnesses": {
+    "path": "ALL_221010_ARC_INEQUALITY_WITNESSES.jsonl.gz",
+    "bytes": 423118087,
+    "sha256": "5727d148422588e7d6d45ffeecd46f68167c138fbd6c5a58df6008c6336c0797",
+    "uncompressed_canonical_transcript_sha256": "8d3a717214490b13a5d8abb55afa323cf6b27492a0d8c42cbd20ea217ae4d15a"
+  },
+  "seconds": 251.27468158397824
+}
+memcap: peak 44 MB rc=0
+      254.77 real       241.56 user       146.99 sys
+            62652416  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              312266  page reclaims
+                 426  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 248  signals received
+                2017  voluntary context switches
+              455502  involuntary context switches
+           386117300  instructions retired
+           464428613  cycles elapsed
+             2261328  peak memory footprint

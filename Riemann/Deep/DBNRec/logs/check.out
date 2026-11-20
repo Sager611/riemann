@@ -1,0 +1,9 @@
+I6: X-4 - 4 pi N0^2 = [5377388.879 +/- 9.72e-5] OK
+row 1: mode retained jet False | M = sum w = AFFINE mass: True | (1-beta)M = retained_main_mass: True | beta 1/512 | M c0 - main_lo = [6.3464033e-30 +/- 2.33e-38] OK
+row 2: mode retained jet False | M = sum w = AFFINE mass: True | (1-beta)M = retained_main_mass: True | beta 1/512 | M c0 - main_lo = [1.1342948e-29 +/- 2.97e-38] OK
+row 3: mode retained jet False | M = sum w = AFFINE mass: True | (1-beta)M = retained_main_mass: True | beta 1/512 | M c0 - main_lo = [2.1157791e-30 +/- 3.29e-38] OK
+row 4: mode retained jet False | M = sum w = AFFINE mass: True | (1-beta)M = retained_main_mass: True | beta 1/512 | M c0 - main_lo = [6.0893449e-30 +/- 1.60e-38] OK
+row 5: mode retained jet False | M = sum w = AFFINE mass: True | (1-beta)M = retained_main_mass: True | beta 1/512 | M c0 - main_lo = [9.5284497e-30 +/- 2.22e-38] OK
+row 6: mode retained jet False | M = sum w = AFFINE mass: True | (1-beta)M = retained_main_mass: True | beta 1/512 | M c0 - main_lo = [3.3057832e-31 +/- 3.96e-39] OK
+row 7: mode retained jet False | M = sum w = AFFINE mass: True | (1-beta)M = retained_main_mass: True | beta 1/512 | M c0 - main_lo = [7.3759038e-30 +/- 4.57e-38] OK
+memcap: peak 0 MB rc=0
