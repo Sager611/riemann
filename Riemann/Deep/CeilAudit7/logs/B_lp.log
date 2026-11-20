@@ -1,0 +1,70 @@
+M4=30.0 R=0.6579736267392905 M1=0.45 J=8: status=0 min zero density=0.1074219530678585 (1/sqrt3=0.5774)
+  live length=0.4525; components used:
+   band 0 A=0.3981 p=0.2252 rho=0.072
+   band 0 A=0.5012 p=0.06038 rho=0.072
+   band 0 A=1000 p=5.092e-06 rho=0.072
+   band 1 A=3.162 p=0.03953 rho=0.191
+   band 2 A=5.012 p=0.02494 rho=0.315
+   band 3 A=6.31 p=0.01981 rho=0.439
+   band 4 A=6.31 p=0.01981 rho=0.564
+   band 5 A=6.31 p=0.01981 rho=0.688
+   band 6 A=6.31 p=0.01981 rho=0.813
+   band 7 A=5.012 p=0.01668 rho=0.938
+   band 7 A=6.31 p=0.006564 rho=0.938
+  check: energy per band=[np.float64(0.125), np.float64(0.125), np.float64(0.125), np.float64(0.125), np.float64(0.125), np.float64(0.125), np.float64(0.125), np.float64(0.125)]; M4=30.0000; M22/M4=1.9739
+memcap: peak 0 MB rc=0
+M4=30.0 R=0.6579736267392905 M1=0.45 J=16: status=0 min zero density=0.10084849040066027 (1/sqrt3=0.5774)
+  live length=0.5565; components used:
+   band 0 A=0.1585 p=0.3064 rho=0.036
+   band 0 A=0.1995 p=0.04592 rho=0.036
+   band 0 A=1000 p=4.776e-06 rho=0.036
+   band 1 A=1.259 p=0.04965 rho=0.095
+   band 2 A=3.162 p=0.01976 rho=0.157
+   band 3 A=5.012 p=0.01247 rho=0.219
+   band 4 A=6.31 p=0.009906 rho=0.282
+   band 5 A=6.31 p=0.009906 rho=0.344
+   band 6 A=6.31 p=0.009906 rho=0.407
+   band 7 A=6.31 p=0.009906 rho=0.469
+   band 8 A=6.31 p=0.009906 rho=0.532
+   band 9 A=6.31 p=0.009906 rho=0.594
+   band 10 A=6.31 p=0.009906 rho=0.656
+   band 11 A=6.31 p=0.009906 rho=0.719
+   band 12 A=6.31 p=0.009906 rho=0.781
+   band 13 A=6.31 p=0.009906 rho=0.844
+   band 14 A=5.012 p=0.003951 rho=0.906
+   band 14 A=6.31 p=0.006767 rho=0.906
+   band 15 A=5.012 p=0.01247 rho=0.969
+  check: energy per band=[np.float64(0.0625), np.float64(0.0625), np.float64(0.0625), np.float64(0.0625), np.float64(0.0625), np.float64(0.0625), np.float64(0.0625), np.float64(0.0625), np.float64(0.0625), np.float64(0.0625), np.float64(0.0625), np.float64(0.0625), np.float64(0.0625), np.float64(0.0625), np.float64(0.0625), np.float64(0.0625)]; M4=30.0000; M22/M4=1.9739
+memcap: peak 0 MB rc=0
+M4=10.0 R=0.6579736267392905 M1=0.6 J=8: status=0 min zero density=0.25790701305426794 (1/sqrt3=0.5774)
+  live length=0.6040; components used:
+   band 0 A=0.631 p=0.1906 rho=0.072
+   band 0 A=0.7943 p=0.004236 rho=0.072
+   band 0 A=1000 p=1.344e-06 rho=0.072
+   band 1 A=2.512 p=0.04976 rho=0.191
+   band 2 A=2.512 p=0.04976 rho=0.315
+   band 3 A=2.512 p=0.04976 rho=0.439
+   band 4 A=1.995 p=0.06265 rho=0.564
+   band 5 A=1.995 p=0.06265 rho=0.688
+   band 6 A=1.995 p=0.06265 rho=0.813
+   band 7 A=1.585 p=0.04493 rho=0.938
+   band 7 A=1.995 p=0.02696 rho=0.938
+  check: energy per band=[np.float64(0.125), np.float64(0.125), np.float64(0.125), np.float64(0.125), np.float64(0.125), np.float64(0.125), np.float64(0.125), np.float64(0.125)]; M4=10.0000; M22/M4=1.9739
+memcap: peak 0 MB rc=0
+M4=100.0 R=0.6579736267392905 M1=0.3 J=8: status=0 min zero density=0.04323630763411259 (1/sqrt3=0.5774)
+  live length=0.2480; components used:
+   band 0 A=0.631 p=0.1816 rho=0.072
+   band 0 A=1000 p=1.041e-05 rho=0.072
+   band 1 A=5.012 p=0.02318 rho=0.191
+   band 1 A=1000 p=8.843e-06 rho=0.191
+   band 2 A=12.59 p=0.009929 rho=0.315
+   band 3 A=15.85 p=0.007887 rho=0.439
+   band 4 A=19.95 p=0.006265 rho=0.564
+   band 5 A=19.95 p=0.006265 rho=0.688
+   band 6 A=19.95 p=0.006265 rho=0.813
+   band 7 A=15.85 p=0.001547 rho=0.938
+   band 7 A=19.95 p=0.005036 rho=0.938
+  check: energy per band=[np.float64(0.125), np.float64(0.125), np.float64(0.125), np.float64(0.125), np.float64(0.125), np.float64(0.125), np.float64(0.125), np.float64(0.125)]; M4=100.0000; M22/M4=1.9739
+memcap: peak 0 MB rc=0
+M4=3.2 R=0.6579736267392905 M1=0.78 J=8: status=2 min zero density=None (1/sqrt3=0.5774)
+memcap: peak 0 MB rc=0

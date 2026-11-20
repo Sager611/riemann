@@ -1,0 +1,10 @@
+N=48 S=400 delta=0.9 J=6 alphas=[0.25, 0.5, 0.75, 1.0, 1.5, 2.0] pairs=[] scales=[1.0, 0.95, 0.9, 0.85, 0.8, 0.7, 0.6, 0.5] min gap=0.9000
+  target=[1.0, 3.2899, 19.4818, 137.3413, 1054.2812, 8513.4589, 71097.6293, 3.2899, 0.1894, 0.5947, 0.9099, 1.0, 0.955, 1.0]
+  mean|rel resid|=0.000e+00 cols used=14; resid per row=[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+       10.82 real         9.71 user         0.34 sys
+            86392832  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            27656696  peak memory footprint
+memcap: peak 48 MB rc=0

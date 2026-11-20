@@ -1,0 +1,18 @@
+250 zeros in [15000.0, 15200.9]
+shift -1.2
+shift -0.9
+shift -0.5
+shift -0.25
+shift 0.25
+shift 0.5
+shift 0.9
+shift 1.0
+shift 1.2
+mean Z^2 = 8.9391 (L + 2*gammaE = 8.9390); zero density check: n/(range*L/2pi) = 1.0044
+D(+0.50,+0.50) zeta=+0.8190 CUE-limit=+0.5947 ratio=1.377
+D(+1.00,+1.00) zeta=+1.2494 CUE-limit=+1.0000 ratio=1.249
+D(+0.25,-0.25) zeta=-0.2461 CUE-limit=-0.1739 ratio=1.415
+D(+0.50,-0.50) zeta=-0.4918 CUE-limit=-0.4053 ratio=1.214
+D(+0.90,-0.90) zeta=+0.0417 CUE-limit=-0.1159 ratio=-0.360
+D(+1.20,-1.20) zeta=+0.0790 CUE-limit=+0.1018 ratio=0.776
+memcap: peak 22 MB rc=0

@@ -1,0 +1,5 @@
+N=100 logF(0)-exact=-9.61e-12 R(h=.02)=0.684092 R(h=.01)=0.684242 Richardson R=0.684292 (Gaussian pi^2/9=1.096623); M4_CUE=884.17
+N=200 logF(0)-exact=-2.85e-11 R(h=.02)=0.670938 R(h=.01)=0.671081 Richardson R=0.671128 (Gaussian pi^2/9=1.096623); M4_CUE=3434.17
+N=400 logF(0)-exact=-3.97e-10 R(h=.02)=0.664345 R(h=.01)=0.664433 Richardson R=0.664462 (Gaussian pi^2/9=1.096623); M4_CUE=13534.17
+N=800 logF(0)-exact=-1.62e-08 R(h=.02)=0.660771 R(h=.01)=0.660151 Richardson R=0.659944 (Gaussian pi^2/9=1.096623); M4_CUE=53734.17
+memcap: peak 0 MB rc=0
