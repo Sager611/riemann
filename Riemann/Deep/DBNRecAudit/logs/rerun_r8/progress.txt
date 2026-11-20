@@ -1,0 +1,8 @@
+16:36:00 r8_00 done CERT sup <= 0.917224317
+16:38:32 r8_01 done CERT sup <= 0.917314957
+16:42:53 r8_02 done CERT sup <= 0.920934914
+16:45:38 r8_03 done CERT sup <= 0.926364849
+16:48:50 r8_04 done CERT sup <= 0.931794785
+16:52:16 r8_05 done CERT sup <= 0.939034699
+16:52:31 certify rc=0
+16:52:32 ALL DONE

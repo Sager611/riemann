@@ -1,0 +1,8 @@
+r8_00 prep.json:same bb.out:same unres.txt:same memcap: peak 39 MB 41058304  maximum resident
+r8_01 prep.json:same bb.out:same unres.txt:same memcap: peak 39 MB 40894464  maximum resident
+r8_02 prep.json:same bb.out:same unres.txt:same memcap: peak 39 MB 40894464  maximum resident
+r8_03 prep.json:same bb.out:same unres.txt:same memcap: peak 39 MB 40894464  maximum resident
+r8_04 prep.json:same bb.out:same unres.txt:same memcap: peak 39 MB 40894464  maximum resident
+r8_05 prep.json:same bb.out:same unres.txt:same memcap: peak 39 MB 40894464  maximum resident
+Riemann/Deep/DBNRecAudit/code/compare_rerun.sh: line 13: warning: here-document at line 10 delimited by end-of-file (wanted `EOF')
+cert identical: True | A_new True | B_new True | A 0.9770236505457374 B 0.9472749251614312

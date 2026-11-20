@@ -1,0 +1,47 @@
+16:53:17 start dcoef
+16:53:25 end dcoef rc=0 memcap: peak 0 MB rc=0 98549760  maximum resident
+16:53:25 start cmpdat_r8_00
+16:53:34 end cmpdat_r8_00 rc=0 memcap: peak 0 MB rc=0 43827200  maximum resident
+16:53:34 start dense_r1
+16:53:41 end dense_r1 rc=1 memcap: peak 0 MB rc=1 40140800  maximum resident
+16:53:41 start dense_r8
+16:53:49 end dense_r8 rc=1 memcap: peak 0 MB rc=1 41353216  maximum resident
+16:53:49 start scan_r8
+17:03:09 end scan_r8 rc=0 memcap: peak 30 MB rc=0 40435712  maximum resident
+17:03:09 start dense_r2
+17:09:51 end dense_r2 (queue.sh stopped at 17:08 for time) memcap: peak 35 MB rc=0 45481984  maximum resident
+17:09:51 start dense_r1
+17:16:08 end dense_r1 rc=0 memcap: peak 35 MB rc=0 47677440  maximum resident
+17:16:08 start dense_r8
+17:22:32 end dense_r8 rc=0 memcap: peak 35 MB rc=0 45039616  maximum resident
+17:22:39 regen DBNRec/r1_00 (1 0.000000000 0.010000000 0.771500000) prep.json identical
+17:22:46 regen DBNRec/r2_00 (2 0.000000000 0.010000000 0.788556000) prep.json identical
+17:22:54 regen DBNRec/r3_00 (3 0.000000000 0.010000000 0.811148000) prep.json identical
+17:23:01 regen DBNRec/r4_00 (4 0.000000000 0.010000000 0.832387000) prep.json identical
+17:23:08 regen DBNRec2/r5_00 (5 0.000000000 0.010000000 0.851119000) prep.json identical
+17:23:16 regen DBNRec2/r6_00 (6 0.000000000 0.010000000 0.871284000) prep.json identical
+17:23:24 regen DBNRec2/r7_00 (7 0.000000000 0.010000000 0.895373000) prep.json identical
+17:23:31 regen DBNRec2/r4_09 (4 0.150000000 0.170000000 0.834173000) prep.json identical
+17:23:31 start phase_arb
+17:23:38 end phase_arb rc=0 memcap: peak 0 MB rc=0 42450944  maximum resident
+17:23:38 start dense_r4
+17:27:41 end dense_r4 (queue5.sh stopped at 17:25) memcap: peak 35 MB rc=0 45547520  maximum resident
+17:27:51 regen2 DBNRec/r1_00 prep.json identical
+17:28:01 regen2 DBNRec/r2_00 prep.json identical
+17:28:10 regen2 DBNRec/r3_00 prep.json identical
+17:28:20 regen2 DBNRec/r4_00 prep.json identical
+17:28:30 regen2 DBNRec2/r5_00 prep.json identical
+17:28:41 regen2 DBNRec2/r6_00 prep.json identical
+17:28:54 regen2 DBNRec2/r7_00 prep.json identical
+17:29:07 regen2 DBNRec2/r4_09 prep.json identical
+17:29:07 start phase_arb
+17:29:20 end phase_arb rc=0 memcap: peak 0 MB rc=0 42942464  maximum resident
+17:29:20 start scan_r8_32off
+17:33:01 end scan_r8_32off rc=143  
+17:33:01 queue6 done
+17:33:02 start edges
+17:48:08 end edges rc=0 memcap: peak 28 MB KILLED TIME>900s rc=137 46546944  maximum resident
+17:48:11 start regen_all
+18:02:50 end regen_all: 86 identical, 0 differ
+18:03:22 end phase_arb_all rc=0 memcap: peak 20 MB rc=0 40894464  maximum resident
+18:03:22 queue9 done

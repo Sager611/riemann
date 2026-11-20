@@ -1,0 +1,1 @@
+{"row": 1, "minmargin": 0.07092458958469938, "runs": [["band edge u=0", 0, 0.71923, 0.0788], ["band edge u=0", 1, 0.703188, 0.0709], ["shell boundary u=1/100", 0, 0.092581, 0.7087], ["shell boundary u=1/100", 1, 0.089155, 0.6882], ["far-chord start u=uF", 0, 0.03087, 0.8204], ["far-chord start u=uF", 1, 0.032118, 0.7952]]}

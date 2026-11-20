@@ -1,0 +1,21 @@
+/Users/adriansager/playground/riemann/Riemann/Deep/DBNRecAudit/code/falsify_dcoef.py:7: RuntimeWarning: divide by zero encountered in log
+  ln = np.log(np.arange(K + 1, dtype=float)); ln[0] = ln[1] = 0.0
+memcap: peak 0 MB rc=0
+        8.19 real         2.47 user         4.14 sys
+            98549760  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               15976  page reclaims
+                 145  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   6  signals received
+                 187  voluntary context switches
+               16553  involuntary context switches
+            63483153  instructions retired
+            49136135  cycles elapsed
+             2228560  peak memory footprint
