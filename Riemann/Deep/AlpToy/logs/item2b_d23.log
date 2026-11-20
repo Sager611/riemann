@@ -1,0 +1,9 @@
+5 {'p': 5, 'skip': 'assert (5, [0])'} 0.0s
+7 {'p': 7, 'skip': 'assert (7, [6])'} 0.0s
+11 {'p': 11, 'skip': 'double root j0=1 is 0 or 1728 mod p'} 0.0s
+17 {'K': 'Q(sqrt-23)', 'p': 17, 'kind': 'inert', 'f': 't', 'prec': 142, 'Dp_zero': False, 'note': 'j1=0 j0=8 mod p (double)'} 41.9s
+19 {'K': 'Q(sqrt-23)', 'p': 19, 'kind': 'inert', 'f': 't', 'prec': 135, 'Dp_zero': False, 'note': 'j1=18 j0=7 mod p (double)'} 50.8s
+memcap: peak 33 MB rc=0
+17 {'K': 'Q(sqrt-23)', 'p': 17, 'kind': 'inert', 'f': 't', 'prec': 142, 'Dp_zero': True, 'Dp_componentwise': False, 'note': 'j1=0 j0=8 mod p (double)'} 54.6s
+19 {'K': 'Q(sqrt-23)', 'p': 19, 'kind': 'inert', 'f': 't', 'prec': 135, 'Dp_zero': True, 'Dp_componentwise': False, 'note': 'j1=18 j0=7 mod p (double)'} 58.3s
+memcap: peak 33 MB rc=0

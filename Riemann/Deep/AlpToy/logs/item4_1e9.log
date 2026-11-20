@@ -1,0 +1,23 @@
+XMAX 1000000000 secs 31.8 psi(XMAX)-XMAX=1595.990 sign changes of Gz-log2pi: 114
+X>=16: max (Gz-log2pi)/sqrtX = 0.024694, min = -0.022681, bound C = 0.0461914
+bin 2^3: max 0.01492 @14.69  min -0.01695 @11  max|Gz|/sqrtX 0.64681  frac>0 0.417
+bin 2^6: max 0.01371 @91.44  min -0.01935 @103  max|Gz|/sqrtX 0.22930  frac>0 0.409
+bin 2^9: max 0.01596 @532.7  min -0.01698 @617  max|Gz|/sqrtX 0.09559  frac>0 0.400
+bin 2^12: max 0.01240 @7288  min -0.00948 @5657  max|Gz|/sqrtX 0.03789  frac>0 0.694
+bin 2^15: max 0.01568 @6.436e+04  min -0.01743 @5.652e+04  max|Gz|/sqrtX 0.02331  frac>0 0.460
+bin 2^18: max 0.01566 @3.703e+05  min -0.02268 @3.194e+05  max|Gz|/sqrtX 0.01943  frac>0 0.460
+bin 2^21: max 0.01741 @3.488e+06  min -0.01195 @3.189e+06  max|Gz|/sqrtX 0.01840  frac>0 0.629
+bin 2^24: max 0.01836 @3.355e+07  min -0.01599 @1.696e+07  max|Gz|/sqrtX 0.01868  frac>0 0.553
+bin 2^27: max 0.01713 @1.975e+08  min -0.01706 @1.694e+08  max|Gz|/sqrtX 0.01726  frac>0 0.428
+bin 2^28: max 0.02174 @5.029e+08  min -0.01503 @3.778e+08  max|Gz|/sqrtX 0.02182  frac>0 0.624
+bin 2^29: max 0.01349 @7.303e+08  min -0.01702 @5.91e+08  max|Gz|/sqrtX 0.01695  frac>0 0.400
+Gz(10) = 1.860798   (Gz-log2pi)/sqrtX = 0.007248
+Gz(100) = 1.721687   (Gz-log2pi)/sqrtX = -0.011619
+Gz(1000) = 1.530913   (Gz-log2pi)/sqrtX = -0.009707
+Gz(10000) = 1.749315   (Gz-log2pi)/sqrtX = -0.000886
+Gz(100000) = 3.671462   (Gz-log2pi)/sqrtX = 0.005798
+Gz(1e+06) = 11.040436   (Gz-log2pi)/sqrtX = 0.009203
+Gz(1e+07) = 27.863771   (Gz-log2pi)/sqrtX = 0.008230
+Gz(1e+08) = -109.729763   (Gz-log2pi)/sqrtX = -0.011157
+Gz(1e+09) = -403.472697   (Gz-log2pi)/sqrtX = -0.012817
+memcap: peak 176 MB rc=0

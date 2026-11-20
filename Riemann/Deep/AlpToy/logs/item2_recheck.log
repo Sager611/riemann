@@ -1,0 +1,5 @@
+p=3: sigma mismatches 0 (a<=161), exp mismatches 0; e.g. a=161: v(sigma)=18 v(exp)=60, a p/(p^2-1)=60.38 a/(p^2-1)=20.12
+p=7: sigma mismatches 0 (a<=161), exp mismatches 0; e.g. a=161: v(sigma)=4 v(exp)=23, a p/(p^2-1)=23.48 a/(p^2-1)=3.35
+p=11: sigma mismatches 0 (a<=161), exp mismatches 0; e.g. a=161: v(sigma)=1 v(exp)=14, a p/(p^2-1)=14.76 a/(p^2-1)=1.34
+RECHECK PASS total mismatches 0
+memcap: peak 9 MB rc=0

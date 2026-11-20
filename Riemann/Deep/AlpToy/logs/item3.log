@@ -1,0 +1,17 @@
+zeros 100000 T0=74920.827 tail bound sum_{|g|>T0} 1/|rho|^2 <= 4.413e-05
+H(1): closed form 2+g-log4pi = 0.0461914179 ; zeros 2*sum 1/(1/4+g^2) = 0.0461472907 ; diff 4.413e-05 (<= tail 4.413e-05)
+identity H_P=H_Z on 1507 points y in [1,1e7]: max |H_P-H_Z|/sqrt(y) = 4.413e-05  (tail bound 4.413e-05)
+W(1_(0,1]) = H(1) = 0.0461914179 > 0 ; W(1_(0,1/X]) = H(1)/X ; cross = H(X)/X ; max |H(X)|/(H(1) sqrt X) on grid = 0.4905
+item6 min_X Q/H(1) over X in [2,1e7]: {'0.1,0.1': 0.946, '0.1,1.0': 0.8103, '0.1,10.0': 0.8864, '0.25,0.1': 0.9372, '0.25,1.0': 0.8369, '0.25,10.0': 0.7643, '0.4,0.1': 0.9272, '0.4,1.0': 0.803, '0.4,10.0': 3.7308, '0.5,0.1': 0.9119, '0.5,1.0': 1.019, '0.5,10.0': 91.1895, '0.6,0.1': 0.7777, '0.6,1.0': 1.2392, '0.6,10.0': 107.8267, '0.75,0.1': 0.8359, '0.75,1.0': 1.5218, '0.75,10.0': 133.497}
+2x2 Gram det (normalised: 1 - H(X)^2/(H1^2 X)) min over grid = 0.7594
+Gram PSD tests (normalised, Weyl-certified lambda_min > ||E||_F): 220 matrices (k<=8, points in [1e-7,1]); lambda_min < -err: 0 ; uncertified: 0 ; min lambda_min = 6.220e-03 ; min lambda_min/err = 1.370e+07
+  k=2 X=1e+02 lmin=3.4574e-02 lmax=5.7809e-02 err=6.5e-13
+  k=2 X=1e+07 lmin=3.7961e-02 lmax=5.4422e-02 err=7.2e-10
+  k=3 X=1e+06 lmin=3.6314e-02 lmax=6.5271e-02 err=2.0e-10
+  k=4 X=1e+04 lmin=2.4419e-02 lmax=6.1396e-02 err=1.3e-11
+  k=6 X=1e+02 lmin=2.8907e-02 lmax=7.6785e-02 err=8.7e-13
+  k=6 X=1e+07 lmin=3.0258e-02 lmax=7.7774e-02 err=7.4e-10
+  k=8 X=1e+06 lmin=2.0155e-02 lmax=9.4961e-02 err=2.2e-10
+X=1e+08: sieve Gz=-109.729763 ; zeros log2pi - r + H_Z = -109.730131 ; diff 0.0004 (tail bound 0.4413)
+X=1e+09: sieve Gz=-403.472697 ; zeros log2pi - r + H_Z = -403.472989 ; diff 0.0003 (tail bound 1.3955)
+memcap: peak 184 MB rc=0

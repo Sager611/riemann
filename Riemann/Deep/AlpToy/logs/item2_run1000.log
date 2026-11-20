@@ -1,0 +1,30 @@
+H_{-23} from kleinj (low->high): [12771880859375, -5151296875, 3491750, 1] max imag 2.0e-49
+sigma a_{m,n} integral: 21000 entries, 0.1s
+Q(i)       p= 3 inert D^p t==0 mod p: True   prec=580  8.7s 
+Q(i)       p= 7 inert D^p t==0 mod p: True   prec=246  8.2s 
+Q(i)       p=11 inert D^p t==0 mod p: True   prec=180  6.3s 
+Q(i)       p=19 inert D^p t==0 mod p: True   prec=135  5.8s 
+Q(i)       p=23 inert D^p t==0 mod p: True   prec=125  5.8s 
+Q(i)       p= 5 split D^p t==0 mod p: False  prec=330  7.8s 
+Q(i)       p=13 split D^p t==0 mod p: False  prec=163  6.0s 
+Q(sqrt-3)  p= 2 inert D^p t==0 mod p: True   prec=1080  10.7s 
+Q(sqrt-3)  p= 5 inert D^p t==0 mod p: True   prec=330  8.0s 
+Q(sqrt-3)  p=11 inert D^p t==0 mod p: True   prec=180  6.2s 
+Q(sqrt-3)  p=17 inert D^p t==0 mod p: True   prec=142  7.6s 
+Q(sqrt-3)  p=23 inert D^p t==0 mod p: True   prec=125  6.9s 
+Q(sqrt-3)  p=29 inert D^p t==0 mod p: True   prec=115  7.2s 
+Q(sqrt-3)  p= 7 split D^p t==0 mod p: False  prec=246  8.0s 
+Q(sqrt-3)  p=13 split D^p t==0 mod p: False  prec=163  7.6s 
+Q(sqrt-7)  p= 3 inert D^p t==0 mod p: True   prec=580  18.3s 
+Q(sqrt-7)  p= 5 inert D^p t==0 mod p: True   prec=330  45.9s 
+Q(sqrt-7)  p=13 inert D^p t==0 mod p: True   prec=163  67.5s 
+Q(sqrt-7)  p=17 inert D^p t==0 mod p: True   prec=142  84.7s 
+Q(sqrt-7)  p=19 inert D^p t==0 mod p: True   prec=135  44.7s 
+Q(sqrt-7)  p=11 split D^p t==0 mod p: False  prec=180  25.7s 
+Q(sqrt-7)  p= 2 split D^p t==0 mod p: False  prec=1080  26.7s 
+Q(sqrt-23) 5 no usable root (roots mod p: [0] )
+Q(sqrt-23) 7 no usable root (roots mod p: [6] )
+Q(sqrt-23) 11 no usable root (roots mod p: [8606961937475646986606562660238584284956483324332806968967015042362980627464667639947007965500910210836485794168672060449349731538205400520682231596410345593811832481368627814116899690074, 1] )
+Q(sqrt-23) 17 no usable root (roots mod p: [2048244650132395470415657581827342645701025315589755453811282581449969072690361204046078586997825529763308173632884516298397851114867680615240438303565946214149353588270036509, 8] )
+Q(sqrt-23) 19 no usable root (roots mod p: [7, 3622352738290346456198011981478842570039096281611722541522012765878173334017064161707686403566143354281477482545824307290134434169080691530289381522486431718547515301983815] )
+memcap: peak 45 MB rc=0

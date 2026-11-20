@@ -1,0 +1,10 @@
+Z[i] e=0      p= 3 n= 60 slope=0.1226  gam=0.3750 rho=0.1250  max(gam a - v)=62.00  max(v - gam a)=-1.50  max(rho a - v)=2.00
+Z[i] e=0      p= 7 n= 60 slope=0.0201  gam=0.1458 rho=0.0208  max(gam a - v)=31.00  max(v - gam a)=-0.58  max(rho a - v)=1.00
+Z[i] e=0      p=11 n= 60 slope=0.0075  gam=0.0917 rho=0.0083  max(gam a - v)=21.00  max(v - gam a)=-0.37  max(rho a - v)=1.00
+Z[i] e=1      p= 3 n=120 slope=0.1229  gam=0.3750 rho=0.1250  max(gam a - v)=62.00  max(v - gam a)=-0.75  max(rho a - v)=2.00
+Z[i] e=1      p= 7 n=120 slope=0.0201  gam=0.1458 rho=0.0208  max(gam a - v)=31.00  max(v - gam a)=-0.29  max(rho a - v)=1.04
+Z[i] e=1      p=11 n=120 slope=0.0076  gam=0.0917 rho=0.0083  max(gam a - v)=21.00  max(v - gam a)=-0.18  max(rho a - v)=1.00
+Z[omega] e=1  p= 5 n=120 slope=0.0406  gam=0.2083 rho=0.0417  max(gam a - v)=41.00  max(v - gam a)=-0.42  max(rho a - v)=1.33
+Z[omega] e=1  p=11 n=120 slope=0.0076  gam=0.0917 rho=0.0083  max(gam a - v)=21.00  max(v - gam a)=-0.18  max(rho a - v)=1.00
+Z[omega] e=1  p=17 n=120 slope=0.0032  gam=0.0590 rho=0.0035  max(gam a - v)=13.93  max(v - gam a)=-0.12  max(rho a - v)=0.82
+memcap: peak 0 MB rc=0
