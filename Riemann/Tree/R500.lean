@@ -1,0 +1,15 @@
+/-!
+# Round 500 — node N3 (Li/Keiper), round 14, [check] of ceilaudit3's zero-density lead with Kadiri–Lumley–Ng's actual constants at RH height 3·10^12 (A(0.87) = 9.4220, admissible): Li range ≈ 109.5 T² in the worst-case model (records-level, +3% over 106.26 T²); the Davenport–Heilbronn pair first breaks Li positivity near n ≈ 3.3·10^5; Kac, Schwarz reflection and Borg–Marchenko transfer nothing
+
+* Node: N3 (14th round; R471 before). Round type: [check] of a lead's unchecked input (TREE N3: 'KLN's actual constants unchecked', ceilaudit3 B2) and a falsification test of the criterion on a function without RH, plus three exploration scouts. arXiv API HTTP 429 (since R498).
+* KLN constants (orchestrator, Riemann/Deep/Ingham4/cert.py build_kln_H0('3e12') on a /tmp copy, python-flint, peak < 1 MB): N(σ, T) ≤ A(σ)(log kT)^{2σ}(log T)^{5−4σ}T^{8(1−σ)/3} + B(σ)(log T)², k = 1, rows (σ0, A, B) = (0.85, 8.5122, 3.3774), (0.86, 8.9580, 3.3044), (0.87, 9.4220, 3.2216), (0.88, 9.9044, 3.1388) (row 0.60 not admissible at this H0).
+* (1) klnok: the rows used are admissible for every T ≥ 3·10^12 and σ ≥ σ0 (KLN Lemma 4.14 hypotheses U > 1, N₁, N₄ > 0, V∞ > 1, α, d, δ > 0, 10⁹/H₀ ≤ k ≤ 1, b₆ < 1, η < 1/2, μ ≤ 1 + η checked in cert.py l.121–136, 274–292; R2AAudit passed them): HOLDS.
+* (2) lidens (CeilAudit3/b2_li.py with the B(σ)(log T)² term as endpoint mass at β = B): c = 109.625 (row 0.86), 109.473 (0.87), 109.322 (0.88) T²; placing every allowed zero at height T is the worst case (q(n, t) decreases in t). R356's different model gave 113.6 T². A records-level lead (+3% over the certified 106.2557 T²), not a node move.
+* (3) lisum: the certificate step to change is Li200k's λ_n ≥ M_n − Q_n with Q_n = Σ_{γ ≥ T} q_n(γ) (REPORT l.25–26, 42–50; verify.py l.10–12, 135–143): replace it by the Stieltjes integral ∫_T^∞ q_n(t) dN(σ, t) over σ ∈ [σ0, B] with KLN's rows.
+* (4) linov: no paper combines an explicit zero density with Li-positivity ranges (lst.py: 0 title hits; our R356 only); KNOWN only here.
+* (5) lidh (falsification of positivity for a function without RH): the Davenport–Heilbronn off-line pair 0.808517182457 + 85.6993484854i and its reflection make 2 Re[1 − (1 − 1/ρ)^n] beat ζ's main term (n/2)(log n − 1 − log 2π + γ) first at n = 325,229 (n = 325,228 still positive); with DH's conductor-5 main term the crossover moves by ≈ 3·10³ (orchestrator estimate: a = log|1 − 1/ρ′| ≈ (2β − 1)/(2γ²) = 4.2·10⁻⁵). Detection law for one quartet: a·n* ≈ log n* + log log n* − log 4. Consistent with the N3 barrier 'computable n are where the first zeros force positivity' (n ~ γ²/(2β − 1) up to logs); a model estimate (other DH zeros ignored), not a record.
+* Explorations: Kac's return-time lemma (needs stationary ergodic gaps: an unproved hypothesis, the identity is then tautological), Schwarz reflection (only conjugate symmetry of ξ's zeros), Borg–Marchenko/Gelfand–Levitan (its Herglotz hypothesis on ξ′/ξ is Lagarias's RH-equivalent condition): no transfer.
+-/
+
+namespace Fayed.R500
+end Fayed.R500
