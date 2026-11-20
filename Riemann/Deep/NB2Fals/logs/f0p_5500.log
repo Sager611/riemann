@@ -1,0 +1,13 @@
+  V built 112s rss 123 MB
+  G built 3s rss 242 MB
+  dpptrf 19s rss 242 MB
+  perN 21s rss 243 MB
+NMAX=5500 (packed): G11=1.260661401507813 G12=0.772209255990873 G23=0.441103509279402; total 158s; maxrss 243 MB
+  lambda_min ~ 5.4644e-08, lambda_max ~ 6.0381, cond ~ 1.105e+08; identity check max 5.50e-13
+  d2[640] = 0.0070170593529382  C2 = -0.005498  Sigma = 3.523012  kappa = 0.051148
+  d2[1280] = 0.0063611026375611  C2 = -0.004866  Sigma = 3.523489  kappa = 0.020627
+  d2[2560] = 0.0059375519574044  C2 = +0.003179  Sigma = 3.523827  kappa = 0.027441
+  d2[4000] = 0.0054156989791899  C2 = -0.010561  Sigma = 3.524195  kappa = 0.039810
+  d2[5000] = 0.0053034944951074  C2 = -0.008692  Sigma = 3.524255  kappa = 0.032007
+  d2[5500] = 0.0052817723237844  C2 = -0.006047  Sigma = 3.524271  kappa = 0.031543
+memcap peak 227 MB rc=0 (watchdog stderr, recorded before cleanup)

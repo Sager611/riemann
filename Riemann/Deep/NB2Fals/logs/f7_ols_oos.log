@@ -1,0 +1,11 @@
+OLS C2 + C3/L K=0 [100,640]: c = -0.02246, C3 = +0.1274; block-bootstrap s.e. 0.0043 (20-N blocks), 0.0073 (b = 0.6); cond 5.8e+01
+OLS C2 + C3/L K=5 [100,640]: c = -38965145.53639, C3 = +212877701.7551; block-bootstrap s.e. 80736405.6154 (20-N blocks), 151770348.5504 (b = 0.6); cond 8.0e+12
+OLS C2 + C3/L K=0 [100,5500]: c = -0.02062, C3 = +0.1159; block-bootstrap s.e. 0.0010 (20-N blocks), 0.0059 (b = 0.6); cond 3.6e+01
+OLS C2 + C3/L K=5 [100,5500]: c = -0.01778, C3 = +0.0962; block-bootstrap s.e. 0.0003 (20-N blocks), 0.0005 (b = 0.6); cond 5.3e+01
+OOS OLS K=0: fit [100,400] -> (400,640]: weighted mean error +0.0016, rms error 0.0026 vs sd(y) 0.0022; c(fit) = -0.0276
+OOS OLS K=5: fit [100,400] -> (400,640]: weighted mean error +4307759.7424, rms error 9729898.7202 vs sd(y) 0.0022; c(fit) = +141867016842.1400
+OOS OLS K=0: fit [100,1280] -> (1280,5500]: weighted mean error +0.0050, rms error 0.0068 vs sd(y) 0.0052; c(fit) = -0.0317
+OOS OLS K=5: fit [100,1280] -> (1280,5500]: weighted mean error -377.7696, rms error 1034.6282 vs sd(y) 0.0052; c(fit) = +1252.3487
+OOS OLS K=0: fit [100,4000] -> (4000,5500]: weighted mean error -0.0021, rms error 0.0025 vs sd(y) 0.0013; c(fit) = -0.0193
+OOS OLS K=5: fit [100,4000] -> (4000,5500]: weighted mean error +0.0156, rms error 0.0175 vs sd(y) 0.0013; c(fit) = -0.0269
+memcap: peak 0 MB rc=0

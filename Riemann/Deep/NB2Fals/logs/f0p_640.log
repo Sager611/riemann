@@ -1,0 +1,8 @@
+  V built 0s rss 56 MB
+  G built 0s rss 58 MB
+  dpptrf 0s rss 58 MB
+  perN 0s rss 58 MB
+NMAX=640 (packed): G11=1.260661401507813 G12=0.772209255990873 G23=0.441103509279402; total 0s; maxrss 58 MB
+  lambda_min ~ 3.3614e-06, lambda_max ~ 5.3273, cond ~ 1.585e+06; identity check max 1.34e-13
+  d2[640] = 0.0070170593529382  C2 = -0.005498  Sigma = 3.523012  kappa = 0.051148
+memcap: peak 0 MB rc=0

@@ -1,0 +1,5 @@
+(a) C2+C3/L K=50 fitted shape: c = -0.01988 +- 0.00359, C3 = +0.1103 +- 0.0226; REML 5639.3; tau_p 0.518 tau_s 7.75 s0 1.62e-04 alpha 1.05 beta 0.80
+(a) C2+C3/L K=50 shape B:      c = -0.02033 +- 0.00693, C3 = +0.1132 +- 0.0435; REML 5635.8
+(a) C2+C3/L K=100 fitted shape: c = -0.02003 +- 0.00361, C3 = +0.1115 +- 0.0226; REML 5887.3; tau_p 0.497 tau_s 0.126 s0 8.64e-05 alpha 1.04 beta 0.82
+(a) C2+C3/L K=100 shape B:      c = -0.02037 +- 0.00716, C3 = +0.1135 +- 0.0447; REML 5882.3
+memcap: peak 135 MB rc=0

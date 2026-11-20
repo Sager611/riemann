@@ -1,0 +1,7 @@
+(c) Q K=50 shape B, ML fit, trend=False: c = -0.04215 +- 0.00058; logL_ML 5657.38
+(c) Q K=50 shape B, ML fit, trend=True: c = -0.05464 +- 0.00678, C3 = +0.0786 +- 0.0425; logL_ML 5659.07
+(c) Q: 2 Delta logL (trend vs none) = 3.37 (chi2_1: 3.84 at 5%, 9.0 at 3sigma)
+(c) C2 K=50 shape B, ML fit, trend=False: c = -0.00233 +- 0.00060; logL_ML 5643.02
+(c) C2 K=50 shape B, ML fit, trend=True: c = -0.02033 +- 0.00688, C3 = +0.1132 +- 0.0431; logL_ML 5646.37
+(c) C2: 2 Delta logL (trend vs none) = 6.70 (chi2_1: 3.84 at 5%, 9.0 at 3sigma)
+memcap: peak 20 MB rc=0

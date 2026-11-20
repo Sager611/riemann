@@ -1,0 +1,4 @@
+(b) C2+C3/L K=50 shape B + 1/u-modulated pair lines: c = -0.02033 +- 0.00693, C3 = +0.1132 +- 0.0435; REML 5635.8; tau_p 0.707 tau_m 1.41e-05 s0 1.63e-04
+(b) Q K=50 shape B + 1/u-modulated pair lines: c = -0.04215 +- 0.00058; REML 5649.9; tau_p 0.704 tau_m 2.58e-05 s0 1.60e-04
+(b) Q+C3/L K=50 shape B + 1/u-modulated pair lines: c = -0.05464 +- 0.00683, C3 = +0.0786 +- 0.0428; REML 5648.5; tau_p 0.697 tau_m 1.4e-05 s0 1.60e-04
+memcap: peak 79 MB rc=0

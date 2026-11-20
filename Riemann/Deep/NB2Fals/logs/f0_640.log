@@ -1,0 +1,6 @@
+NMAX=640: G11=1.260661401507813 G12=0.772209255990873 G23=0.441103509279402; times V 0.2s G 0.1s chol 0.0s perN 0.1s; maxrss 61 MB
+  lambda_min(G_NMAX) ~ 3.3614e-06, lambda_max ~ 5.3273, cond ~ 1.585e+06; dpocon 1-norm rcond 7.402e-08; identity check |C2-(J-Sig+R-kappa)| max 1.16e-13
+  d2[640] = 0.0070170593529379  C2 = -0.005498  Sigma = 3.523012
+  N in [100,250]: C2 +0.00249 sd 0.00410 | kappa 0.0275 sd 0.0168 | J-Sig 0.0411 | R -0.0111 sd 0.0169
+  N in [250,450]: C2 -0.00108 sd 0.00114 | kappa 0.0311 sd 0.0109 | J-Sig 0.0402 | R -0.0101 sd 0.0112
+  N in [450,640]: C2 -0.00172 sd 0.00254 | kappa 0.0273 sd 0.0153 | J-Sig 0.0398 | R -0.0142 sd 0.0132

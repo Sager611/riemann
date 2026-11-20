@@ -1,0 +1,9 @@
+(e) C2+C3/L K=50 alpha=1 beta=0.5: c = -0.01891 +- 0.00139; REML 6135.5
+(e) C2+C3/L K=50 alpha=1 beta=0.65: c = -0.01902 +- 0.00203; REML 6147.6
+(e) C2+C3/L K=50 alpha=1 beta=0.8: c = -0.01914 +- 0.00317; REML 6151.1
+(e) C2+C3/L K=50 alpha=1 beta=0.9: c = -0.01923 +- 0.00436; REML 6150.0
+(e) C2+C3/L K=50 alpha=1 beta=1.0: c = -0.01936 +- 0.00608; REML 6146.8
+(e) C2+C3/L K=50 alpha=1 beta=1.2: c = -0.01981 +- 0.01225; REML 6136.1
+(e) C2+C3/L K=50 alpha=1 beta=1.5: c = -0.02148 +- 0.03612; REML 6113.7
+(e) REML-weighted mixture over beta: c = -0.01916 +- 0.00349; weights [0.0, 0.022, 0.74, 0.229, 0.009, 0.0, 0.0]
+memcap: peak 78 MB rc=0

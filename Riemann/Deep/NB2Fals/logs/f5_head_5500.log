@@ -1,0 +1,10 @@
+(i) Sigma_K, K in [40,5500]: Sigma_5500 = 3.524271, J - Sigma_5500 = 0.03839; Sigma_1280 3.523489 Sigma_2560 3.523827
+    S_inf - A/log K: S_inf 3.52831 (J - S_inf 0.03435), A 0.0345, rms 6.1e-05
+    S_inf - A/log K - B/log^2 K: S_inf 3.52799 (J - S_inf 0.03467), rms 6.0e-05
+    S_inf - A K^-th: th 0.350, S_inf 3.52543 (J - S_inf 0.03724), rms 6.5e-05
+    a + b log log K (divergent): b 0.0053, rms 1.1e-04
+(ii) Q K=50 shape B: Qbar = -0.04229 +- 0.00048 => C2 <= -0.00390 +- 0.00048 (-8.1 sigma); with J - S_inf from 1/log K fit: -0.00794
+(ii) Q K=50 shape fitted: Qbar = -0.04229 +- 0.00039 (alpha 0.87 beta 0.90) => C2 <= -0.00390 +- 0.00039 (-10.1 sigma); with J - S_inf from 1/log K fit: -0.00794
+(ii) Q + C3/L K=50 shape B: Qbar = -0.05373 +- 0.00599 => C2 <= -0.01534 +- 0.00599 (-2.6 sigma); with J - S_inf from 1/log K fit: -0.01938
+(ii) Q + C3/L K=50 shape fitted: Qbar = -0.05342 +- 0.00280 (alpha 1.07 beta 0.78) => C2 <= -0.01503 +- 0.00280 (-5.4 sigma); with J - S_inf from 1/log K fit: -0.01907
+memcap: peak 26 MB rc=0

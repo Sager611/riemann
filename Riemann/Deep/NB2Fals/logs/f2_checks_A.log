@@ -1,0 +1,19 @@
+window stability, out-of-sample, projection; K = 50 lines (zeros <= 50), both shapes
+C2 C3/L A K=50 window [100,640]: c = -0.02513 +- 0.00239, C3 = +0.1416 +- 0.0131; hp 0.138 5.92 1.74e-04
+C2 C3/L A K=50 window [100,1280]: c = -0.03442 +- 0.00126, C3 = +0.1916 +- 0.0073; hp 0.143 6.28 1.62e-04
+C2 C3/L A K=50 window [100,2000]: c = -0.02465 +- 0.00131, C3 = +0.1368 +- 0.0079; hp 0.205 9 1.53e-04
+C2 C3/L A K=50 window [100,4000]: c = -0.01853 +- 0.00092, C3 = +0.1017 +- 0.0058; hp 0.253 10.8 1.59e-04
+C2 C3/L A K=50 window [300,4000]: c = -0.00596 +- 0.00242, C3 = +0.0138 +- 0.0168; hp 0.238 8.61 1.43e-04
+C2 C3/L A K=50 window [640,4000]: c = +0.00980 +- 0.00606, C3 = -0.1036 +- 0.0445; hp 0.257 15.2 1.38e-04
+C2 C3/L A K=50 window [1000,4000]: c = -0.02449 +- 0.00969, C3 = +0.1623 +- 0.0735; hp 0.238 19.9 1.39e-04
+   OOS fit [100,400] -> (400,640]: z(window mean) +1.54, rms pointwise z 1.49, rms error 0.00286 vs sd(y) 0.00220
+   OOS fit [100,1280] -> (1280,4000]: z(window mean) +13.08, rms pointwise z 4.66, rms error 0.00788 vs sd(y) 0.00529
+   OOS fit [100,2000] -> (2000,4000]: z(window mean) +5.02, rms pointwise z 12.63, rms error 0.00701 vs sd(y) 0.00642
+   projection (hp of [100,4000]): window [log 100, 8.29] (N <= 4.00e+03): sd(c) = 0.00093
+   projection (hp of [100,4000]): window [log 100, 10.00] (N <= 2.20e+04): sd(c) = 0.00036
+   projection (hp of [100,4000]): window [log 100, 12.00] (N <= 1.63e+05): sd(c) = 0.00012
+   projection (hp of [100,4000]): window [log 100, 15.00] (N <= 3.27e+06): sd(c) = 0.00005
+   projection (hp of [100,4000]): window [log 100, 20.00] (N <= 4.85e+08): sd(c) = 0.00002
+   projection (hp of [100,4000]): window [log 100, 25.00] (N <= 7.20e+10): sd(c) = 0.00001
+C2 C3/L B K=50 window [100,640]: c = -0.02883 +- 0.02088, C3 = +0.1619 +- 0.1140; hp 0.695 6.68 1.75e-04
+memcap: peak 355 MB KILLED MEM>290MB rc=137
