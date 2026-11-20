@@ -1,0 +1,6 @@
+d_a d_b D at 0 = ell**3*p**2/6 + ell**2*lam*p + ell*lam**2
+first moment = ell**2*p/2 + ell*lam
+B - u^2 = -p**2/12 ;  A expanded = I**2*theta**2 + I*p*theta + Jp/(12*theta) + p**2/3
+Var Re Y = (A+B)/2 - u^2 = Jp/(24*theta) ; Var Im Y = (A-B)/2 = Jp/(24*theta) + p**2/12
+theta=1/2, P=(4x-x^2)/3: u = 7/9  int P'^2 = 28/27  kappa2 = 7/8
+memcap: peak 0 MB rc=0

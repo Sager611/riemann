@@ -1,0 +1,4 @@
+- 02:38 NOTE: fit.py on zeros6 hit 436 MB max RSS (memcap sampled 18 MB): rs.zprime chunk 4000 x 424 temporaries; fixed chunk=500 (35 MB). Earlier zeros1 runs had Nm<=109.
+- 02:36 mncontrol.py theta=0.9 on zeros[50000:100000] (y=24000, feats chunk 1000 x 14600 complex) reached 1056 MB and was KILLED by memcap at the cap; that row is omitted (rows printed before the kill are valid).
+- 02:46 falsH.py theta=1.0 (y=74921, chunk 100): getrusage max 297 MiB (= 311 MB decimal), memcap top-peak 285 MB < 290: borderline, not killed.
+- 02:33-02:35 dh_test.py at TMAX = 1500 was KILLED twice by memcap (511 MB, then 375-380 MB): explore23's dhlib.Zdh grows ~0.27 MB per unit height per 512-point call; rerun at TMAX = 640 peaked 148 MB.
