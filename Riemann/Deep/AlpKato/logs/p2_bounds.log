@@ -1,0 +1,21 @@
+BEH => LemmaK(C=16): min RHS/LHS on grid = 1.48e+04 at (e,n,logD) = (1, 2, 1.0986122886681098)
+  C =  8 holds on grid: False
+  C =  9 holds on grid: False
+  C = 10 holds on grid: True
+  C = 11 holds on grid: True
+  C = 12 holds on grid: True
+  C = 13 holds on grid: True
+  C = 14 holds on grid: True
+  C = 15 holds on grid: True
+  C = 16 holds on grid: True
+Analytic: u = 2en >= 4, m = 2e, d = n: m^4 d^3 <= u^4, m^5 d^5 = u^5, m^5 d^4 <= u^5, log(2m+1) <= u, log d <= u, log D <= log 2D, log 2D > 1:
+  F <= 71 u^5 + 293 u^6 + 528 u^5 log 2D <= 892 u^6 log 2D;  log(1+X) <= u log 2D;  so F + log(1+X) <= 893 u^6 log 2D <= u^11 log 2D (4^5 = 1024 > 893).
+  grid check of F <= 892 u^6 log 2D: True ; of log(1+X) <= u log 2D: True
+Soule Prop.4(i) vs kBound(24), e = 1 (K_2): smallest log D where Soule's loglog bound exceeds kBound(24)'s loglog
+  n =  2: Soule's bound is weaker than kBound(24) for log D > 23.0
+  n =  4: Soule's bound is weaker than kBound(24) for log D > 12.850000000000001
+  n =  6: Soule's bound is weaker than kBound(24) for log D > 1.1
+  n =  8: Soule's bound is weaker than kBound(24) for log D > 0.1
+  n = 12: Soule's bound is weaker than kBound(24) for log D > 0.05
+  (n = 2: Soule Prop.4(iii) instead has the kBound shape: loglog k(m) <= 1120 m^4 log(m) log D.)
+memcap: peak 0 MB rc=0

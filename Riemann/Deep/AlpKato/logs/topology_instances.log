@@ -1,0 +1,8 @@
+# rg over .scratch/alp/lean/src (*.lean): instance declarations of TopologicalSpace/DiscreteTopology on the coefficient or Galois types
+## pattern 1: coefficients Qbar / PadicAlgCl / (Fin n → Qbar|PadicAlgCl)
+(end pattern 1)
+## pattern 2: Galois groups G / GQ / GK / _ ≃ₐ[_] _
+./CompanionTheory/ThickeningEstimates/LieGroupReduction/MetaplecticRepresentation/ContinuousOm.lean:106:instance : TopologicalSpace (G l) :=
+./Development/WeilBound/ThetaLifts/Reductions/MetaplecticDerivatives/ContinuousPair.lean:106:instance : TopologicalSpace (G l) :=
+./Development/AbelianVarietyTheory/Definitions/Foundations/AestronglyMeasurableQuotMeasureIffLift.lean:646:instance discreteTopology_GQ : DiscreteTopology (GQ V) := GlobalTheory.RationalDiscrete.discreteTopology_GQ D V
+(end pattern 2: the 3 hits are G l of the metaplectic files and GQ V = rational points of a unitary group, unrelated)

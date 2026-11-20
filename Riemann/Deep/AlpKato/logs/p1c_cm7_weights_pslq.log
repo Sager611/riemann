@@ -1,0 +1,91 @@
+e=1 k=3 eps=1 (1.0) a_2..a_11=[-3, 0, 5, 0, 0, -7, -3, 9, 0, -6]
+   L(f,2) * pi^0 * sqrt7^0 / Omega^2 = 1/8   numerator factors {}  denominator factors {2: 3}
+e=2 k=5 eps=1 (1.0) a_2..a_11=[1, 0, -15, 0, 0, 49, -31, 81, 0, -206]
+   L(f,3) * pi^1 * sqrt7^1 / Omega^4 = 7/12   numerator factors {7: 1}  denominator factors {2: 2, 3: 1}
+   L(f,4) * pi^0 * sqrt7^0 / Omega^4 = 7/96   numerator factors {7: 1}  denominator factors {2: 5, 3: 1}
+e=3 k=7 eps=1 (1.0) a_2..a_11=[9, 0, 17, 0, 0, -343, -423, 729, 0, 1962]
+   L(f,4) * pi^2 * sqrt7^0 / Omega^6 = 7/24   numerator factors {7: 1}  denominator factors {2: 3, 3: 1}
+   L(f,5) * pi^1 * sqrt7^1 / Omega^6 = 49/240   numerator factors {7: 2}  denominator factors {2: 4, 3: 1, 5: 1}
+   L(f,6) * pi^0 * sqrt7^0 / Omega^6 = 7/320   numerator factors {7: 1}  denominator factors {2: 6, 5: 1}
+e=4 k=9 eps=1 (1.0) a_2..a_11=[-31, 0, 705, 0, 0, 2401, -13919, 6561, 0, 13154]
+   L(f,5) * pi^3 * sqrt7^1 / Omega^8 = 49/192   numerator factors {7: 2}  denominator factors {2: 6, 3: 1}
+   L(f,6) * pi^2 * sqrt7^0 / Omega^8 = 49/1440   numerator factors {7: 2}  denominator factors {2: 5, 3: 2, 5: 1}
+   L(f,7) * pi^1 * sqrt7^1 / Omega^8 = 49/1440   numerator factors {7: 2}  denominator factors {2: 5, 3: 2, 5: 1}
+   L(f,8) * pi^0 * sqrt7^0 / Omega^8 = 7/1536   numerator factors {7: 1}  denominator factors {2: 9, 3: 1}
+e=5 k=11 eps=1 (1.0) a_2..a_11=[57, 0, 2225, 0, 0, -16807, 68457, 59049, 0, -316326]
+   L(f,6) * pi^4 * sqrt7^0 / Omega^10 = 637/1920   numerator factors {7: 2, 13: 1}  denominator factors {2: 7, 3: 1, 5: 1}
+   L(f,7) * pi^3 * sqrt7^1 / Omega^10 = 343/1920   numerator factors {7: 3}  denominator factors {2: 7, 3: 1, 5: 1}
+   L(f,8) * pi^2 * sqrt7^0 / Omega^10 = 49/2880   numerator factors {7: 2}  denominator factors {2: 6, 3: 2, 5: 1}
+   L(f,9) * pi^1 * sqrt7^1 / Omega^10 = 49/3840   numerator factors {7: 2}  denominator factors {2: 8, 3: 1, 5: 1}
+   L(f,10) * pi^0 * sqrt7^0 / Omega^10 = 49/33792   numerator factors {7: 2}  denominator factors {2: 10, 3: 1, 11: 1}
+e=6 k=13 eps=1 (1.0) a_2..a_11=[-47, 0, -1887, 0, 0, 117649, 281201, 531441, 0, 306322]
+   L(f,7) * pi^5 * sqrt7^1 / Omega^12 = 5831/23040   numerator factors {7: 3, 17: 1}  denominator factors {2: 9, 3: 2, 5: 1}
+   L(f,8) * pi^4 * sqrt7^0 / Omega^12 = 343/11520   numerator factors {7: 3}  denominator factors {2: 8, 3: 2, 5: 1}
+   L(f,9) * pi^3 * sqrt7^1 / Omega^12 = 3773/138240   numerator factors {7: 3, 11: 1}  denominator factors {2: 10, 3: 3, 5: 1}
+   L(f,10) * pi^2 * sqrt7^0 / Omega^12 = 3577/1036800   numerator factors {7: 2, 73: 1}  denominator factors {2: 9, 3: 4, 5: 2}
+   L(f,11) * pi^1 * sqrt7^1 / Omega^12 = 343/115200   numerator factors {7: 3}  denominator factors {2: 9, 3: 2, 5: 2}
+   L(f,12) * pi^0 * sqrt7^0 / Omega^12 = 49/135168   numerator factors {7: 2}  denominator factors {2: 12, 3: 1, 11: 1}
+e=7 k=15 eps=1 (1.0) a_2..a_11=[-87, 0, -8815, 0, 0, -823543, 2192313, 4782969, 0, 36437514]
+   L(f,8) * pi^6 * sqrt7^0 / Omega^14 = 1127/15360   numerator factors {7: 2, 23: 1}  denominator factors {2: 10, 3: 1, 5: 1}
+   L(f,9) * pi^5 * sqrt7^1 / Omega^14 = 2401/36864   numerator factors {7: 4}  denominator factors {2: 12, 3: 2}
+   L(f,10) * pi^4 * sqrt7^0 / Omega^14 = 2401/276480   numerator factors {7: 4}  denominator factors {2: 11, 3: 3, 5: 1}
+   L(f,11) * pi^3 * sqrt7^1 / Omega^14 = 10633/1382400   numerator factors {7: 3, 31: 1}  denominator factors {2: 11, 3: 3, 5: 2}
+   L(f,12) * pi^2 * sqrt7^0 / Omega^14 = 2401/2534400   numerator factors {7: 4}  denominator factors {2: 10, 3: 2, 5: 2, 11: 1}
+   L(f,13) * pi^1 * sqrt7^1 / Omega^14 = 10633/13178880   numerator factors {7: 3, 31: 1}  denominator factors {2: 11, 3: 2, 5: 1, 11: 1, 13: 1}
+   L(f,14) * pi^0 * sqrt7^0 / Omega^14 = 343/3514368   numerator factors {7: 3}  denominator factors {2: 13, 3: 1, 11: 1, 13: 1}
+e=8 k=17 eps=1 (1.0) a_2..a_11=[449, 0, 136065, 0, 0, 5764801, 31667521, 43046721, 0, -255690046]
+   L(f,9) * pi^7 * sqrt7^1 / Omega^16 = 458591/737280   numerator factors {7: 4, 191: 1}  denominator factors {2: 14, 3: 2, 5: 1}
+   L(f,10) * pi^6 * sqrt7^0 / Omega^16 = 45619/1105920   numerator factors {7: 4, 19: 1}  denominator factors {2: 13, 3: 3, 5: 1}
+   L(f,11) * pi^5 * sqrt7^1 / Omega^16 = 88837/3317760   numerator factors {7: 4, 37: 1}  denominator factors {2: 13, 3: 4, 5: 1}
+   L(f,12) * pi^4 * sqrt7^0 / Omega^16 = 261023/91238400   numerator factors {7: 3, 761: 1}  denominator factors {2: 12, 3: 4, 5: 2, 11: 1}
+   L(f,13) * pi^3 * sqrt7^1 / Omega^16 = 415373/182476800   numerator factors {7: 4, 173: 1}  denominator factors {2: 13, 3: 4, 5: 2, 11: 1}
+   L(f,14) * pi^2 * sqrt7^0 / Omega^16 = 105301/395366400   numerator factors {7: 3, 307: 1}  denominator factors {2: 12, 3: 3, 5: 2, 11: 1, 13: 1}
+   L(f,15) * pi^1 * sqrt7^1 / Omega^16 = 5831/26357760   numerator factors {7: 3, 17: 1}  denominator factors {2: 12, 3: 2, 5: 1, 11: 1, 13: 1}
+   L(f,16) * pi^0 * sqrt7^0 / Omega^16 = 343/12976128   numerator factors {7: 3}  denominator factors {2: 17, 3: 2, 11: 1}
+e=9 k=19 eps=1 (1.0) a_2..a_11=[-999, 0, 735857, 0, 0, -40353607, -473239287, 387420489, 0, -2874798918]
+   L(f,10) * pi^8 * sqrt7^0 / Omega^18 = 45619/1474560   numerator factors {7: 4, 19: 1}  denominator factors {2: 15, 3: 2, 5: 1}
+   L(f,11) * pi^7 * sqrt7^1 / Omega^18 = 789929/22118400   numerator factors {7: 5, 47: 1}  denominator factors {2: 15, 3: 3, 5: 2}
+   L(f,12) * pi^6 * sqrt7^0 / Omega^18 = 650671/121651200   numerator factors {7: 4, 271: 1}  denominator factors {2: 14, 3: 3, 5: 2, 11: 1}
+   L(f,13) * pi^5 * sqrt7^1 / Omega^18 = 737107/145981440   numerator factors {7: 4, 307: 1}  denominator factors {2: 15, 3: 4, 5: 1, 11: 1}
+   L(f,14) * pi^4 * sqrt7^0 / Omega^18 = 3056473/4744396800   numerator factors {7: 4, 19: 1, 67: 1}  denominator factors {2: 14, 3: 4, 5: 2, 11: 1, 13: 1}
+   L(f,15) * pi^3 * sqrt7^1 / Omega^18 = 4420241/7907328000   numerator factors {7: 5, 263: 1}  denominator factors {2: 14, 3: 3, 5: 3, 11: 1, 13: 1}
+   L(f,16) * pi^2 * sqrt7^0 / Omega^18 = 269941/3953664000   numerator factors {7: 3, 787: 1}  denominator factors {2: 13, 3: 3, 5: 3, 11: 1, 13: 1}
+   L(f,17) * pi^1 * sqrt7^1 / Omega^18 = 415373/7169310720   numerator factors {7: 4, 173: 1}  denominator factors {2: 16, 3: 2, 5: 1, 11: 1, 13: 1, 17: 1}
+   L(f,18) * pi^0 * sqrt7^0 / Omega^18 = 343/49020928   numerator factors {7: 3}  denominator factors {2: 18, 11: 1, 17: 1}
+e=10 k=21 eps=1 (1.0) a_2..a_11=[1201, 0, 393825, 0, 0, 282475249, -786355951, 3486784401, 0, 48187289074]
+   L(f,11) * pi^9 * sqrt7^1 / Omega^20 = 386561/1179648   numerator factors {7: 5, 23: 1}  denominator factors {2: 17, 3: 2}
+   L(f,12) * pi^8 * sqrt7^0 / Omega^20 = 35513191/1459814400   numerator factors {7: 5, 2113: 1}  denominator factors {2: 16, 3: 4, 5: 2, 11: 1}
+   L(f,13) * pi^7 * sqrt7^1 / Omega^20 = 50740333/2919628800   numerator factors {7: 5, 3019: 1}  denominator factors {2: 17, 3: 4, 5: 2, 11: 1}
+   L(f,14) * pi^6 * sqrt7^0 / Omega^20 = 7373471/3795517440   numerator factors {7: 4, 37: 1, 83: 1}  denominator factors {2: 16, 3: 4, 5: 1, 11: 1, 13: 1}
+   L(f,15) * pi^5 * sqrt7^1 / Omega^20 = 17966683/11386552320   numerator factors {7: 5, 1069: 1}  denominator factors {2: 16, 3: 5, 5: 1, 11: 1, 13: 1}
+   L(f,16) * pi^4 * sqrt7^0 / Omega^20 = 26533451/142331904000   numerator factors {7: 4, 43: 1, 257: 1}  denominator factors {2: 15, 3: 5, 5: 3, 11: 1, 13: 1}
+   L(f,17) * pi^3 * sqrt7^1 / Omega^20 = 59047793/379551744000   numerator factors {7: 4, 24593: 1}  denominator factors {2: 18, 3: 4, 5: 3, 11: 1, 13: 1}
+   L(f,18) * pi^2 * sqrt7^0 / Omega^20 = 4007269/215079321600   numerator factors {7: 4, 1669: 1}  denominator factors {2: 17, 3: 3, 5: 2, 11: 1, 13: 1, 17: 1}
+   L(f,19) * pi^1 * sqrt7^1 / Omega^20 = 12794929/817301422080   numerator factors {7: 4, 73: 2}  denominator factors {2: 17, 3: 3, 5: 1, 11: 1, 13: 1, 17: 1, 19: 1}
+   L(f,20) * pi^0 * sqrt7^0 / Omega^20 = 40817/21696086016   numerator factors {7: 4, 17: 1}  denominator factors {2: 20, 3: 2, 11: 2, 19: 1}
+e=11 k=23 eps=1 (1.0) a_2..a_11=[393, 0, -4039855, 0, 0, -1977326743, -3236024487, 31381059609, 0, 58726934634]
+   L(f,12) * pi^10 * sqrt7^0 / Omega^22 = 6168169/129761280   numerator factors {7: 5, 367: 1}  denominator factors {2: 18, 3: 2, 5: 1, 11: 1}
+   L(f,13) * pi^9 * sqrt7^1 / Omega^22 = 50706719/1297612800   numerator factors {7: 6, 431: 1}  denominator factors {2: 19, 3: 2, 5: 2, 11: 1}
+   L(f,14) * pi^8 * sqrt7^0 / Omega^22 = 33160211/6900940800   numerator factors {7: 5, 1973: 1}  denominator factors {2: 18, 3: 4, 5: 2, 13: 1}
+   L(f,15) = 1.0079115327886696131  (no rational identification at pi^7)
+   L(f,16) * pi^6 * sqrt7^0 / Omega^22 = 18437279/37955174400   numerator factors {7: 5, 1097: 1}  denominator factors {2: 17, 3: 4, 5: 2, 11: 1, 13: 1}
+   L(f,17) = 1.0027553166499224593  (no rational identification at pi^5)
+   L(f,18) = 1.0014392168181932919  (no rational identification at pi^4)
+   L(f,19) * pi^3 * sqrt7^1 / Omega^22 = 48420967/1173159936000   numerator factors {7: 5, 43: 1, 67: 1}  denominator factors {2: 19, 3: 4, 5: 3, 13: 1, 17: 1}
+   L(f,20) * pi^2 * sqrt7^0 / Omega^22 = 40569697/8173014220800   numerator factors {7: 4, 61: 1, 277: 1}  denominator factors {2: 18, 3: 3, 5: 2, 11: 1, 13: 1, 17: 1, 19: 1}
+   L(f,21) * pi^1 * sqrt7^1 / Omega^22 = 4554697/1089735229440   numerator factors {7: 5, 271: 1}  denominator factors {2: 19, 3: 2, 5: 1, 11: 1, 13: 1, 17: 1, 19: 1}
+   L(f,22) * pi^0 * sqrt7^0 / Omega^22 = 2401/4775215104   numerator factors {7: 4}  denominator factors {2: 21, 3: 2, 11: 1, 23: 1}
+e=12 k=25 eps=1 (1.0) a_2..a_11=[-5983, 0, 19019073, 0, 0, 13841287201, -13413030431, 282429536481, 0, -6183023585758]
+   L(f,13) = 0.62898923866386562249  (no rational identification at pi^11)
+   L(f,14) = 0.71468775789141635237  (no rational identification at pi^10)
+   L(f,15) = 0.83701315488476993585  (no rational identification at pi^9)
+   L(f,16) = 0.91347564747115182892  (no rational identification at pi^8)
+   L(f,17) = 0.95551514054550941722  (no rational identification at pi^7)
+   L(f,18) = 0.97746170222278657168  (no rational identification at pi^6)
+   L(f,19) = 0.98865873538754957223  (no rational identification at pi^5)
+   L(f,20) = 0.99431163892957409322  (no rational identification at pi^4)
+   L(f,21) = 0.99715143270384666515  (no rational identification at pi^3)
+   L(f,22) = 0.99857462631346032904  (no rational identification at pi^2)
+   L(f,23) = 0.99928704160544698844  (no rational identification at pi^1)
+   L(f,24) * pi^0 * sqrt7^0 / Omega^24 = 847553/6303283937280   numerator factors {7: 4, 353: 1}  denominator factors {2: 24, 3: 3, 5: 1, 11: 2, 23: 1}
+memcap: peak 49 MB rc=0

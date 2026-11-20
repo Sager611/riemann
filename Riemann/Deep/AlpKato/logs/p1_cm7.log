@@ -1,0 +1,15 @@
+a_1..a_12: [1, -3, 0, 5, 0, 0, -7, -3, 9, 0, -6, 0]
+CM theta-series cross-check (n<=400): True
+a_p = 0 for all inert p<=400: True
+t=1.1  theta(1/t)/(t^3 theta(t)) = 1.0
+t=1.37  theta(1/t)/(t^3 theta(t)) = 1.0
+L(f,1) = 0.196735587068895855048990397539
+L(f,2) = 0.467211768884373123942110051413
+check L(f,1) - sqrt7/(2pi) L(f,2) = 0.0
+check Euler product proxy at s=3 vs series: 0.6875636561025306425
+Omega(49a1) (real period, Cremona 1.9333117...): 1.933311705616811546733077
+L(f,2)/(pi*Om^2) = 0.03978873577297383394222094  identify: None
+L(f,2)*sqrt7/(pi*Om^2) = 0.1052710998369480974602165  identify: None
+L(f,1)/Om^2 = 0.05263554991847404873010825  identify: None
+L(f,1)*sqrt7/Om^2 = 0.1392605752054084187977733  identify: None
+memcap: peak 0 MB rc=0

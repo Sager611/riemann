@@ -1,0 +1,21 @@
+e=1 k=3 eps=1 (1.0) a_2..a_11=[-3, 0, 5, 0, 0, -7, -3, 9, 0, -6]
+   L(f,2) * pi^0 * sqrt7^0 / Omega^2 = 1/8   numerator factors {}  denominator factors {2: 3}
+e=2 k=5 eps=1 (1.0) a_2..a_11=[1, 0, -15, 0, 0, 49, -31, 81, 0, -206]
+   L(f,3) * pi^1 * sqrt7^1 / Omega^4 = 7/12   numerator factors {7: 1}  denominator factors {2: 2, 3: 1}
+   L(f,4) * pi^0 * sqrt7^0 / Omega^4 = 7/96   numerator factors {7: 1}  denominator factors {2: 5, 3: 1}
+e=3 k=7 eps=1 (1.0) a_2..a_11=[9, 0, 17, 0, 0, -343, -423, 729, 0, 1962]
+   L(f,4) * pi^2 * sqrt7^0 / Omega^6 = 7/24   numerator factors {7: 1}  denominator factors {2: 3, 3: 1}
+   L(f,5) * pi^1 * sqrt7^1 / Omega^6 = 49/240   numerator factors {7: 2}  denominator factors {2: 4, 3: 1, 5: 1}
+   L(f,6) * pi^0 * sqrt7^0 / Omega^6 = 7/320   numerator factors {7: 1}  denominator factors {2: 6, 5: 1}
+e=4 k=9 eps=1 (1.0) a_2..a_11=[-31, 0, 705, 0, 0, 2401, -13919, 6561, 0, 13154]
+   L(f,5) * pi^3 * sqrt7^1 / Omega^8 = 49/192   numerator factors {7: 2}  denominator factors {2: 6, 3: 1}
+   L(f,6) * pi^2 * sqrt7^0 / Omega^8 = 49/1440   numerator factors {7: 2}  denominator factors {2: 5, 3: 2, 5: 1}
+   L(f,7) * pi^1 * sqrt7^1 / Omega^8 = 49/1440   numerator factors {7: 2}  denominator factors {2: 5, 3: 2, 5: 1}
+   L(f,8) * pi^0 * sqrt7^0 / Omega^8 = 7/1536   numerator factors {7: 1}  denominator factors {2: 9, 3: 1}
+e=5 k=11 eps=1 (1.0) a_2..a_11=[57, 0, 2225, 0, 0, -16807, 68457, 59049, 0, -316326]
+   L(f,6) * pi^4 * sqrt7^0 / Omega^10 = 2**(239/642)*3**(437/642)*5**(65/214)*7**(188/321)/42   numerator factors {2: 0, 3: 0, 5: 0, 7: 0}  denominator factors {2: 1, 3: 1, 7: 1}
+   L(f,7) * pi^3 * sqrt7^1 / Omega^10 = 343/1920   numerator factors {7: 3}  denominator factors {2: 7, 3: 1, 5: 1}
+   L(f,8) * pi^2 * sqrt7^0 / Omega^10 = 49/2880   numerator factors {7: 2}  denominator factors {2: 6, 3: 2, 5: 1}
+   L(f,9) * pi^1 * sqrt7^1 / Omega^10 = 49/3840   numerator factors {7: 2}  denominator factors {2: 8, 3: 1, 5: 1}
+   L(f,10) * pi^0 * sqrt7^0 / Omega^10 = 49/33792   numerator factors {7: 2}  denominator factors {2: 10, 3: 1, 11: 1}
+memcap: peak 14 MB rc=0

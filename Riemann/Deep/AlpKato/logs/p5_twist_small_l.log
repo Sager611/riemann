@@ -1,0 +1,20 @@
+J W J^-1 = det(W) W^(-T) on 200 random integer matrices: True
+Hence with det W = theta, theta^2 = 1: W (x) theta = W (x) det(W) ~ J^-1 (W^vee) J ... i.e. tw W theta is isomorphic to W^vee (theta = theta^-1).
+e = 1: primes l < 60 excluded by l_odd / gen ((l-1) | 2e): [2, 3]
+e = 2: primes l < 60 excluded by l_odd / gen ((l-1) | 2e): [2, 3, 5]
+e = 3: primes l < 60 excluded by l_odd / gen ((l-1) | 2e): [2, 3, 7]
+e = 4: primes l < 60 excluded by l_odd / gen ((l-1) | 2e): [2, 3, 5]
+e = 5: primes l < 60 excluded by l_odd / gen ((l-1) | 2e): [2, 3, 11]
+e = 6: primes l < 60 excluded by l_odd / gen ((l-1) | 2e): [2, 3, 5, 7, 13]
+e = 7: primes l < 60 excluded by l_odd / gen ((l-1) | 2e): [2, 3]
+e = 8: primes l < 60 excluded by l_odd / gen ((l-1) | 2e): [2, 3, 5, 17]
+n =  2: primes l with HasMuQ possible: [2, 3]
+n =  4: primes l with HasMuQ possible: [2, 3, 5]
+n =  6: primes l with HasMuQ possible: [2, 3, 7]
+n =  8: primes l with HasMuQ possible: [2, 3, 5]
+n = 10: primes l with HasMuQ possible: [2, 3, 11]
+n = 12: primes l with HasMuQ possible: [2, 3, 5, 7, 13]
+n = 16: primes l with HasMuQ possible: [2, 3, 5, 17]
+n = 18: primes l with HasMuQ possible: [2, 3, 7, 19]
+n = 22: primes l with HasMuQ possible: [2, 3, 23]
+memcap: peak 0 MB rc=0
