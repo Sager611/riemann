@@ -1,0 +1,6 @@
+PARI stack size set to 200000000 bytes, maximum size set to 200015872
+P6b lfuncheckfeq (bits of agreement, very negative = OK): L(rho3) A4: -98  L(rho) S3: -105
+P6b |L(rho3, 1/2+i*1.81487947273257758)| = 4.63251067207769200987871261795 E-30  |L'| = 3.77790306756364570250792063782
+P6b conductor of L(rho3): 5184  disc F4: 5184  Galois group: A4
+P6b K12 = x^12 - 2*x^9 + 18*x^8 - 18*x^7 + 14*x^6 - 30*x^5 + 45*x^4 - 52*x^3 + 42*x^2 - 18*x + 3  degree 12  disc K12 = [2, 18; 3, 16]
+memcap: peak 0 MB rc=0

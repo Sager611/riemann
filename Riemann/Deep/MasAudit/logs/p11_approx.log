@@ -1,0 +1,5 @@
+PARI stack size set to 100000000 bytes, maximum size set to 100007936
+T=  100  #zeros=   29  sum_abs=1.1829  sum_sym=0.05108090
+T=  300  #zeros=  138  sum_abs=2.3446  sum_sym=0.06133158
+T= 1000  #zeros=  649  sum_abs=4.0557  sum_sym=0.06616923
+memcap: peak 21 MB rc=0

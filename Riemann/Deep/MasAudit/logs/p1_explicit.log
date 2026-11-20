@@ -1,0 +1,8 @@
+PARI stack size set to 200000000 bytes, maximum size set to 200015872
+Q              zeros<260: 114 (product lfunzeros: 114)  LHS=1.112861987530  RHS=1.112861978532  diff=9.00e-09
+Q(i)           zeros<260: 284 (product lfunzeros: 278)  LHS=1.086628444864  RHS=1.086628429411  diff=1.55e-08
+Q(sqrt-3)      zeros<260: 272 (product lfunzeros: 264)  LHS=1.102987814575  RHS=1.102987799629  diff=1.49e-08
+Q(x^3-x-1)     zeros<260: 469 (product lfunzeros: 465)  LHS=1.057709678770  RHS=1.057709654536  diff=2.42e-08
+Q(sqrt5)       zeros<260: 293 (product lfunzeros: 291)  LHS=1.036022767994  RHS=1.036022751118  diff=1.69e-08
+Q with real-place factor 1 instead of 1/2: diff = 0.27020677317351577
+memcap: peak 24 MB rc=0

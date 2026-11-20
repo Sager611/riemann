@@ -1,0 +1,93 @@
+# Editorial footnotes (footnote-shaped lines with editorial words) and ?? in music.txt
+p9 l233 fn1: Include comment that N includes 0.
+p27 l1255 fn5: Finish!
+p27 l1256 fn6: Finish!
+p144 l8055 fn3: Why do such identities hold? Must say more about how this follows.
+p199 l11070 fn1: Return here.
+p200 l11123 fn2: Return here.
+p230 l12916 fn1: Include version with I-exponentially decaying target.
+p234 l13168 fn5: Return here.
+p236 l13295 fn7: Return here.
+p250 l14159 fn8: Return here.
+p294 l17119 fn1: Return here.
+p295 l17187 fn2: Return here.
+p295 l17188 fn3: Return here.
+p414 l24872 fn1: Return here.
+p414 l24873 fn2: Return here.
+p415 l24925 fn3: Return here.
+p416 l24984 fn4: Return here.
+p417 l25053 fn5: Return here.
+p426 l25593 fn6: Return here.
+p435 l26048 fn1: Return here.
+p435 l26049 fn2: Return here.
+p436 l26137 fn3: Return here.
+p437 l26215 fn4: Return here.
+p438 l26278 fn5: Return here.
+p446 l26800 fn6: Return here.
+p462 l27928 fn7: Return here.
+p464 l28049 fn8: Return here and complete proof.
+p475 l28727 fn1: Return here.
+p475 l28728 fn2: Return here.
+p480 l29024 fn3: Return here.
+p482 l29146 fn4: Return here.
+p482 l29147 fn5: Return here.
+p483 l29215 fn6: Return here.
+p514 l31173 fn1: Include section.
+p514 l31174 fn2: Extend Definition 9.3.3.1 so as to allow cutoffs whose support is over (0, λ] and not only over [1/λ, λ]. Return here and change
+p515 l31248 fn3: See previous footnote.
+p515 l31249 fn4: Return here after the Proposition is updated.
+p522 l31641 fn1: Correct statement.
+p522 l31642 fn2: Insert statement.
+p522 l31643 fn3: State and prove the Main Theorems, also explaining how to deduce them by approximation φ → e−s|log(t)| as Re(s) > 1.
+p528 l31930 fn1: Correct this subsection.
+p536 l32340 fn2: Say a few words on GL . Add that the version for GL is the subject of ongoing work with Brian Conrad.
+p556 l33528 fn1: Double-check for the S-local case.
+p559 l33712 fn2: Brian suggested the rest of the original exposition of the argument from here onward should be rewritten, so at least reread the
+p571 l34402 fn7: Need to record meaning, criteria, and relevant examples of “completely metrizable”
+p579 l34914 fn16: Must address M ν being measurable. warn reader that ν(xU ) may be infinite.
+p580 l34968 fn17: Why? Must say more.
+p584 l35193 fn22: Be more careful: first should choose V , then x ∈ V , then K ⊂ V containing x, etc.
+p603 l36245 fn11: This latter theorem seems to involve a different type of upper bound, so must either rewrite for accuracy or remove it; if not
+p616 l37092 fn14: Brian still needs to check proof of this by reading [Bar, pp. 150-1], make sure formulas are correct.
+p616 l37093 fn15: Brian should double-check this.
+p619 l37269 fn16: Brian needs to recheck the proof, both for factors of 2 and 2π in the integrals and for the coefficient of f (0) in both parts
+p619 l37270 fn17: For part (1), should we tell the reader that Weil defines the right side to be the meaning of R 1/2
+p619 l37279 fn20: In a clear way, should emphasize that the notation µ on the left side is just notation, and that the choice of α is baked into
+p619 l37282 fn21: This should go similarly for all α ∈ F
+p624 l37694 fn26: Must explain clearly how we are bringing in that Z doesn’t accumulate too much at a given height.
+p625 l37766 fn27: Must explain to the reader how to obtain this identity from Theorem B.4.2.2.
+p633 l38244 fn28: Brian needs to check the next two lemmas and how they are used in the subsequent proof of the preceding Proposition.
+p643 l38849 fn29: This should be spelled out in some more precision/detail.
+p677 l40726 fn7: This and the next Remark should ideally be removed, much too heavy on a reader. The purpose, if retained, must be much
+p683 l41063 fn13: Inserted hypothesis here that E and F are Hausdorff, which should be harmless in practice, right?
+p683 l41064 fn14: Must say more about an actual proof; not clear how it follows from “the definitions”, and the reference to [Gro-b] merely says
+p717 l42966 fn20: Completeness of measures has been added in to ensure µ ⊗ ν is complete, as may be implicit in the proof; for uses elsewhere
+p718 l43027 fn21: Does this result require Haar measures to be complete?
+p753 l44819 fn1: Must expand proof to also yield S(R) b
+p775 l46102 fn7: Really? Need to say something about the calculation to make clear it isn’t hiding some real work with the measures to check it
+p802 l47706 fn12: There should really be a lemma after that earlier Definition which explains such consequences (4), (5), (6) using terminology
+p806 l47923 fn15: Somewhere perhaps the continuity of G-action on S (G) for the inductive topology should be addressed.
+p807 l47977 fn16: Somewhere should continuity of G-action on S (G) for the projective topology be addressed?
+p809 l48086 fn18: Why are the members of the direct limit construction actually complete? And why is the colimit process “countable” as required
+p850 l50194 fn5: This proof needs correction; either make a simple fix or give a literature reference for a correct proof.
+p862 l50858 fn11: Check this definition is correct.
+p864 l50972 fn13: Why for (11) – just usual epimorphism – is this the case? Can you use (4) somehow? Must clarify.
+p868 l51190 fn15: Must show Y is not Kelley compactly generated.
+p905 l53045 fn20: This is not a sentence; what is it meant to be saying? Rewrite as an actual sentence.
+p931 l54316 fn27: This should be expanded, including the groups without norm-1 condition to make the contact with R Z
+# ?? occurrences
+p33 l1592: By far the most important difference directly affects the calculation in Caveat ??: let f ∈ S(AF )
+p69 l3570: both are separable, being second-countable (see Lemma ??). As such, [Bru, §9,Prop.11] applies and gives
+p88 l4655: (by Lemma ??) subgroup of GL1 (AF ).
+p178 l9823: on CF , respectively µS on JF,S , i.e. the Haar measures from Definition ?? on G, and ν1 is uniquely determined
+p234 l13131: we observe that the idempotent ΠS from (??)5 on H0,cont (F × , S(AF )) with range π S (H0,cont (O× F,S , S(AF,S )))
+p522 l31636: Upon combining Theorem 13.3.1.1 and Theorem ??, we obtain the following:
+p528 l31918: Formula combined with the Positivity Criterion (in its form from Theorem ??), asserts that if ρ ∈ C is a
+p533 l32153: to Theorem 13.3.1.2 through the Positivity Criterion of Weil, in its form of Theorem ??, it should rather be
+p626 l37782: application required in Chapter ?? of this work, the strong recurrence on vertical strips of the reciprocal Euler
+p723 l43283: Much as for the integral in the sense of Pettis in §??, we now discuss differentiability for vector-valued
+p776 l46117: Summation Formula (see Theorem D.1.2.7), with the aim of using it throughout Chapter ?? of this work.
+p897 l52607: where the last identity follows from (t ◦ T )(x) = f1 (x) and (??). For (E.5.1.34), we have:
+p908 l53172: a 6-tuple (X, A, s, t, c, e) from C, and the axioms (??), (??), (??) and (??) from Definition E.5.1.15 are seen
+p908 l53184: ??.
+# editorial footnotes: 76

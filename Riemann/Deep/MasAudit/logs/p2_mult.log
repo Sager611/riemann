@@ -1,0 +1,19 @@
+PARI stack size set to 250000000 bytes, maximum size set to 250003456
+P6 S3: K6 = x^6 - 3*x^5 + 5*x^4 - 5*x^3 + 5*x^2 - 3*x + 1  first zeros of L(rho)=zeta_F3/zeta: [5.11568332881511759855335642038, 7.15926229054170384129282782025, 8.88139657368917747496582449161, 10.2820274008521320537161800380, 11.4300363530481331189620599022]
+P6 S3: |zeta_K6(r1)|, |zeta_K6'(r1)|, |zeta_K6''(r1)| = [1.13878594546149871370617793275 E-67, 2.53502326284893114511900220542 E-33, 28.1350892761147969876711566906] (double zero expected)
+P6 A4: galois group of x^4+8x+12: [12, 1, 4, "A4"]
+P6 A4: zeros of L(rho3) with 0<t<10 (each a zero of multiplicity >=3 of zeta_K12, [K12:Q]=12): [1.81487947273257758490668747514, 2.70243983955799243330890250481, 3.72384203249112590598622874189, 4.40925788768461548791853137163, 5.24113208241388002004923534233, 6.41459899711993541513211336203, 6.84316568961232382165261931295, 7.69264719843763799247395350273, 8.35665801818528191746027505534, 8.82863194289665261777464250708, 9.46659501729584145703594062008]
+P7 L(s,(1/.)): zeros 0<t<100: 29, min |L'(rho)| = 7.932e-01
+P7 L(s,(-4/.)): zeros 0<t<100: 50, min |L'(rho)| = 1.309e+00
+P7 L(s,(-3/.)): zeros 0<t<100: 46, min |L'(rho)| = 1.167e+00
+P7 L(s,(5/.)): zeros 0<t<100: 54, min |L'(rho)| = 9.873e-01
+P7 L(s,(-7/.)): zeros 0<t<100: 59, min |L'(rho)| = 8.389e-01
+P7 L(s,(8/.)): zeros 0<t<100: 61, min |L'(rho)| = 1.672e+00
+P8 E_1254: root number -1  conductor 25160256
+P8 ellrank [lower, upper]: [3, 3]  points: [[-912, 25992], [-528, 26136], [1650, 43560]]
+P8 regulator of the found points (det of height matrix): 22.6880644236473605649453461152
+P8 ellanalyticrank: [3, 322.546346812144152448274390505]
+P9 Q(i), p=5: (1-5^-s)^2 and its derivative at s=2 pi i/log 5 (= 3.90396253166234279654730476450*I ): [0.E-75, 1.60894028857567294498281958157 E-38, 5.18058078796046989036034200999] -> double pole of prod_{v|5}L_v at a NON-central point
+P10 CM psi (E32): #split p<10^5 with coincident poles (a_p^2 = 4p): [4783, 0] -> m_p(psi)=1 for all p<10^5, m_F(psi)=1 < [F:Q]=2
+P10 chi=1 over Q(i): m_5 = 2 = [F:Q] (P9). Galois-type characters reach [F:Q] at completely split primes.
+memcap: peak 0 MB rc=0
