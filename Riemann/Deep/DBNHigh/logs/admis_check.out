@@ -1,0 +1,8 @@
+R_k closed form vs (1/k!)(-d/dh)^k K_h: max rel err 6.9e-16
+O_k = int v_k cosh(yu/2) du vs closed form: max rel err 1.9e-41
+k=1 far field d^2 R_k(1e6,0) = -2.0
+k=2 far field d^2 R_k(1e6,0) = -2.4e-11
+k=3 far field d^2 R_k(1e6,0) = 2.0e-12
+y=0.74 charge/own-pair-effect: k=10 0.00071, k=15 0.012, k=20 0.18, k=25 2.6, k=30 36, k=44 4.9e+04
+y=0.50 charge/own-pair-effect: k=10 0.0015, k=15 0.037, k=20 0.81, k=25 17, k=30 3.2e+02, k=44 1.2e+06
+y=0.12 charge/own-pair-effect: k=10 0.0032, k=15 0.14, k=20 5.5, k=25 2e+02, k=30 6.9e+03, k=44 1.2e+08

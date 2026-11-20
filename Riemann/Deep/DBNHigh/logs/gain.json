@@ -1,0 +1,23 @@
+{
+ "base": 0.10755086958424454,
+ "A_jets_gain_abs_v_model": {
+  "endpoint": 0.10752846735107133,
+  "gain": 2.2402233173207664e-05
+ },
+ "B_jets_gain_envelope_model": {
+  "endpoint": 0.10754439239648561,
+  "gain": 6.477187758924252e-06
+ },
+ "C_generous_upper": {
+  "endpoint": 0.1075068601261154,
+  "gain": 4.4009458129129486e-05
+ },
+ "D_jets_gain_rich_abs_v": {
+  "endpoint": 0.10752439695272495,
+  "gain": 2.647263151958623e-05
+ },
+ "E_twice_D": {
+  "endpoint": 0.10749795689335256,
+  "gain": 5.2912690891970815e-05
+ }
+}
