@@ -1,0 +1,7 @@
+== all:"isogeny primes"
+== all:Momose AND all:"Type 2"
+NEW  1306.5246 2013-06-21 First Systematic Search for Oxygen-Line Blobs at High Redshift: Uncovering AGN Feedback an
+== all:Larson AND all:Vaintrob AND all:unconditional
+== all:"isogenies of prime degree" AND all:unconditional
+SEEN 2203.06009 2022-03-11 Explicit isogenies of prime degree over number fields
+NEW  1705.10401 2017-05-29 Pursuing polynomial bounds on torsion

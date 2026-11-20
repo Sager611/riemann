@@ -1,0 +1,5 @@
+/Users/adriansager/playground/riemann/.scratch/lst.py:13: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+-- 0 title hits in 1 cats x (2026-11, 2026-10)
+-- zenodo total 0
+memcap: peak 0 MB rc=0

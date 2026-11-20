@@ -1,0 +1,12 @@
+/Users/adriansager/playground/riemann/.scratch/lst.py:13: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2611.03606  [math.NT 2026-11]  Isogeny rigidity under algebraic group actions and finite translation orbits
+2611.14873  [math.NT 2026-11]  Rational isogenies of rank-two Drinfeld modules
+2611.19007  [math.NT 2026-11]  On p-adic modularity of abelian threefolds with imaginary multiplication and rational p-isogeny
+2610.03100  [math.NT 2026-10]  Cubic arithmetic-geometric mean and isogenies of Hesse elliptic curves
+2610.12080  [math.NT 2026-10]  A uniform bound for the minimal degree of an isogeny between principally polarized superspecial abelian surfaces
+2610.21488  [math.NT 2026-10]  Smoothness of Shortest Isogenies to Frobenius Conjugates
+2611.06077  [math.CV 2026-11]  Odd and even fake quadrics isogenous to a product
+-- 7 title hits in 7 cats x (2026-11, 2026-10)
+-- zenodo total 0
+memcap: peak 0 MB rc=0
