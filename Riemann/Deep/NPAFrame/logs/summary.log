@@ -1,0 +1,52 @@
+N4_T2 :: FINAL N=4 S=T2 minSimple=0.815711 lb~0.815691 slack=0.0e+00 features=6 maxrss=96MB t=11s :: memcap: peak 25 MB rc=0 100892672  maximum resident
+N6_T3 :: FINAL N=6 S=T3 minSimple=0.778465 lb~0.778448 slack=0.0e+00 features=11 maxrss=119MB t=74s :: memcap: peak 90 MB rc=0 125140992  maximum resident
+N8_T4 :: FINAL N=8 S=T4 minSimple=0.757436 lb~0.757432 slack=0.0e+00 features=19 maxrss=131MB t=55s :: memcap: peak 107 MB rc=0 137347072  maximum resident
+N10_P :: FINAL N=10 S=P minSimple=0.743256 lb~0.743242 slack=0.0e+00 features=10 maxrss=125MB t=28s :: memcap: peak 102 MB rc=0 131547136  maximum resident
+N10_T5 :: FINAL N=10 S=T5 minSimple=0.743852 lb~0.743837 slack=0.0e+00 features=28 maxrss=159MB t=119s :: memcap: peak 134 MB rc=0 167149568  maximum resident
+N12_P :: FINAL N=12 S=P minSimple=0.733730 lb~0.733716 slack=0.0e+00 features=12 maxrss=143MB t=56s :: memcap: peak 119 MB rc=0 150142976  maximum resident
+N9_T6 :: it= 44 minSimple=0.750680 slack=0.00e+00 maxred=1.548e-05 lb~0.750664 cols=4690 t=257s :: memcap: peak 184 MB rc=1 223461376  maximum resident
+N8_T2 :: it= 10 minSimple=0.757078 slack=0.00e+00 maxred=1.483e-05 lb~0.757063 cols=5579 t=23s :: memcap: peak 89 MB rc=1 119046144  maximum resident
+N12_P :: FINAL N=12 S=P minSimple=0.733730 lb~0.733716 slack=0.0e+00 features=12 maxrss=148MB t=77s :: memcap: peak 122 MB rc=0 154664960  maximum resident
+N12_T3 :: FINAL N=12 S=T3 minSimple=0.733838 lb~0.733836 slack=0.0e+00 features=17 maxrss=144MB t=140s :: memcap: peak 122 MB rc=0 151437312  maximum resident
+N12_T6 :: FINAL N=12 S=T6 minSimple=0.734396 lb~0.734392 slack=0.0e+00 features=42 maxrss=318MB t=470s :: memcap: peak 258 MB rc=0 333594624  maximum resident
+N10_P_s2 :: FINAL N=10 S=P minSimple=0.743250 lb~0.743240 slack=0.0e+00 features=10 maxrss=124MB t=147s :: memcap: peak 98 MB rc=0 129761280  maximum resident
+N10_T5_s2 :: FINAL N=10 S=T5 minSimple=0.743846 lb~0.743835 slack=0.0e+00 features=28 maxrss=208MB t=632s :: memcap: peak 137 MB rc=0 217841664  maximum resident
+L_N6_M18_P_on ::  :: memcap: peak 0 MB rc=1
+L_N6_M18_T3_on ::  :: memcap: peak 0 MB rc=1
+L_N6_M18_T3_off-rays :: RESULT N=6 M=18 sets=T3 world=off rays=True: minSimpleOn=0.837345 slack=0.0e+00 supp=12 mass on/off=1.0000/0.00e+00 raycols=0 maxrss=99MB t=3s :: memcap: peak 0 MB rc=0
+L_N6_M18_T4_on :: RESULT N=6 M=18 sets=T4 world=on rays=False: minSimpleOn=0.838057 slack=0.0e+00 supp=18 mass on/off=1.0000/0.00e+00 raycols=0 maxrss=85MB t=1s :: memcap: peak 0 MB rc=0
+L_N6_M18_T4_off-rays :: RESULT N=6 M=18 sets=T4 world=off rays=True: minSimpleOn=0.838057 slack=0.0e+00 supp=18 mass on/off=1.0000/0.00e+00 raycols=0 maxrss=102MB t=3s :: memcap: peak 0 MB rc=0
+L_N7_M21_P_on :: RESULT N=7 M=21 sets=P world=on rays=False: minSimpleOn=0.824515 slack=0.0e+00 supp=8 mass on/off=1.0000/0.00e+00 raycols=0 maxrss=133MB t=13s :: memcap: peak 110 MB rc=0
+L_N7_M21_T5_on :: RESULT N=7 M=21 sets=T5 world=on rays=False: minSimpleOn=0.825180 slack=0.0e+00 supp=26 mass on/off=1.0000/0.00e+00 raycols=0 maxrss=161MB t=17s :: memcap: peak 136 MB rc=0
+L_N7_M21_T5_off-rays :: RESULT N=7 M=21 sets=T5 world=off rays=True: minSimpleOn=0.825180 slack=0.0e+00 supp=26 mass on/off=1.0000/0.00e+00 raycols=0 maxrss=275MB t=23s :: memcap: peak 144 MB rc=0
+N8_Dg4 :: FINAL N=8 S=Dg4 minSimple=0.757122 lb~0.757111 slack=0.0e+00 features=12 maxrss=120MB t=16s :: memcap: peak 96 MB rc=0 125681664  maximum resident
+N8_Ph4 :: FINAL N=8 S=Ph4 minSimple=0.757382 lb~0.757377 slack=0.0e+00 features=15 maxrss=126MB t=24s :: memcap: peak 102 MB rc=0 131874816  maximum resident
+N10_Dg5 :: FINAL N=10 S=Dg5 minSimple=0.743324 lb~0.743306 slack=0.0e+00 features=16 maxrss=137MB t=54s :: memcap: peak 112 MB rc=0 144130048  maximum resident
+N10_Ph5 :: FINAL N=10 S=Ph5 minSimple=0.743790 lb~0.743780 slack=0.0e+00 features=22 maxrss=155MB t=61s :: memcap: peak 132 MB rc=0 162447360  maximum resident
+N8_Po :: FINAL N=8 S=Po minSimple=0.685999 lb~0.685993 slack=0.0e+00 features=7 maxrss=108MB t=14s :: memcap: peak 85 MB rc=0 113770496  maximum resident
+N8_To4 :: FINAL N=8 S=To4 minSimple=0.686511 lb~0.686492 slack=0.0e+00 features=18 maxrss=132MB t=49s :: memcap: peak 104 MB rc=0 137936896  maximum resident
+N4_Po :: FINAL N=4 S=Po minSimple=0.698234 lb~0.698221 slack=0.0e+00 features=3 maxrss=85MB t=5s :: memcap: peak 22 MB rc=0 89292800  maximum resident
+N4_To3 :: FINAL N=4 S=To3 minSimple=0.731768 lb~0.731750 slack=0.0e+00 features=8 maxrss=102MB t=22s :: memcap: peak 79 MB rc=0 107413504  maximum resident
+N4_To2 :: FINAL N=4 S=To2 minSimple=0.699103 lb~0.699090 slack=0.0e+00 features=5 maxrss=94MB t=13s :: memcap: peak 71 MB rc=0 98435072  maximum resident
+N12_Po :: FINAL N=12 S=Po minSimple=0.683681 lb~0.683678 slack=0.0e+00 features=11 maxrss=147MB t=48s :: memcap: peak 124 MB rc=0 153714688  maximum resident
+N6_Po :: FINAL N=6 S=Po minSimple=0.688938 lb~0.688930 slack=0.0e+00 features=5 maxrss=95MB t=31s :: memcap: peak 72 MB rc=0 99909632  maximum resident
+N6_To3 :: FINAL N=6 S=To3 minSimple=0.689602 lb~0.689591 slack=0.0e+00 features=10 maxrss=114MB t=60s :: memcap: peak 91 MB rc=0 119455744  maximum resident
+N6_To4 :: FINAL N=6 S=To4 minSimple=0.691838 lb~0.691822 slack=0.0e+00 features=16 maxrss=137MB t=154s :: memcap: peak 105 MB rc=0 143818752  maximum resident
+N10_Po :: FINAL N=10 S=Po minSimple=0.684572 lb~0.684569 slack=0.0e+00 features=9 maxrss=125MB t=34s :: memcap: peak 101 MB rc=0 131235840  maximum resident
+N10_To5 :: FINAL N=10 S=To5 minSimple=0.685176 lb~0.685157 slack=0.0e+00 features=27 maxrss=163MB t=108s :: memcap: peak 133 MB rc=0 171245568  maximum resident
+N3_Po :: FINAL N=3 S=Po minSimple=0.711349 lb~0.711344 slack=0.0e+00 features=2 maxrss=82MB t=2s :: memcap: peak 0 MB rc=0 86556672  maximum resident
+N3_To2 :: FINAL N=3 S=To2 minSimple=0.750953 lb~0.750940 slack=0.0e+00 features=4 maxrss=86MB t=2s :: memcap: peak 0 MB rc=0 90701824  maximum resident
+N9_Po :: FINAL N=9 S=Po minSimple=0.685210 lb~0.685190 slack=0.0e+00 features=8 maxrss=115MB t=20s :: memcap: peak 92 MB rc=0 120619008  maximum resident
+N9_To6 :: FINAL N=9 S=To6 minSimple=0.687352 lb~0.687338 slack=0.0e+00 features=38 maxrss=219MB t=236s :: memcap: peak 157 MB rc=0 229638144  maximum resident
+N12_To6 :: FINAL N=12 S=To6 minSimple=0.684348 lb~0.684334 slack=0.0e+00 features=41 maxrss=342MB t=396s :: memcap: peak 278 MB rc=0 358727680  maximum resident
+N3_P :: FINAL N=3 S=P minSimple=0.847708 lb~0.847699 slack=0.0e+00 features=3 maxrss=84MB t=1s :: memcap: peak 0 MB rc=0 88440832  maximum resident
+N3_T2 :: FINAL N=3 S=T2 minSimple=0.847925 lb~0.847913 slack=0.0e+00 features=5 maxrss=87MB t=2s :: memcap: peak 0 MB rc=0 91815936  maximum resident
+N5_P :: FINAL N=5 S=P minSimple=0.793926 lb~0.793911 slack=0.0e+00 features=5 maxrss=94MB t=12s :: memcap: peak 24 MB rc=0 98844672  maximum resident
+N5_T4 :: FINAL N=5 S=T4 minSimple=0.795886 lb~0.795869 slack=0.0e+00 features=16 maxrss=137MB t=135s :: memcap: peak 95 MB rc=0 143589376  maximum resident
+N12_To9_cheap :: it=  1 minSimple=0.883906 slack=0.00e+00 maxred=1.477e+00 lb~-0.593122 cols=5688 t=29s :: memcap: peak 317 MB KILLED MEM>290MB rc=137 42074112  maximum resident
+N12_T9_cheap :: it=  0 minSimple=0.915858 slack=0.00e+00 maxred=1.131e+00 lb~-0.215320 cols=5400 t=14s :: memcap: peak 294 MB KILLED MEM>290MB rc=137 41107456  maximum resident
+N8_To2 :: FINAL N=8 S=To2 minSimple=0.686028 lb~0.686008 slack=0.0e+00 features=9 maxrss=115MB t=29s :: memcap: peak 90 MB rc=0 120389632  maximum resident
+N12_To3 :: FINAL N=12 S=To3 minSimple=0.683727 lb~0.683714 slack=0.0e+00 features=16 maxrss=151MB t=110s :: memcap: peak 128 MB rc=0 158629888  maximum resident
+N14_Po :: FINAL N=14 S=Po minSimple=0.683188 lb~0.683177 slack=0.0e+00 features=13 maxrss=116MB t=106s :: memcap: peak 90 MB rc=0 121176064  maximum resident
+N14_P :: FINAL N=14 S=P minSimple=0.726777 lb~0.726760 slack=0.0e+00 features=14 maxrss=119MB t=131s :: memcap: peak 95 MB rc=0 125075456  maximum resident
+N14_To7 :: stopped unconverged at it=20 (0.805195, 18 s/iteration) by npaframe at 02:26 UTC; T7 not started

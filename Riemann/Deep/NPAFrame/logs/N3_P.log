@@ -1,0 +1,4 @@
+N=3 S=P features=3 patterns=3 B=384 steps=300
+it=  0 minSimple=0.847761 slack=0.00e+00 maxred=6.381e-05 lb~0.847698 cols=3600 t=0s
+it=  1 minSimple=0.847708 slack=0.00e+00 maxred=8.562e-06 lb~0.847699 cols=3648 t=1s
+FINAL N=3 S=P minSimple=0.847708 lb~0.847699 slack=0.0e+00 features=3 maxrss=84MB t=1s

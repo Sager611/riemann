@@ -1,0 +1,18 @@
+N=14 S=Po features=13 patterns=14 B=192 steps=150
+it=  0 minSimple=0.791062 slack=0.00e+00 maxred=5.151e-01 lb~0.275946 cols=3800 t=6s
+it=  1 minSimple=0.768031 slack=0.00e+00 maxred=5.435e-01 lb~0.224544 cols=4136 t=11s
+it=  2 minSimple=0.707609 slack=0.00e+00 maxred=2.985e-01 lb~0.409065 cols=4424 t=17s
+it=  3 minSimple=0.705351 slack=0.00e+00 maxred=4.092e-01 lb~0.296157 cols=4664 t=23s
+it=  4 minSimple=0.698715 slack=0.00e+00 maxred=1.223e-01 lb~0.576425 cols=4928 t=30s
+it=  5 minSimple=0.689266 slack=0.00e+00 maxred=1.009e-01 lb~0.588379 cols=5096 t=36s
+it=  6 minSimple=0.687566 slack=0.00e+00 maxred=5.572e-02 lb~0.631846 cols=5264 t=45s
+it=  7 minSimple=0.685181 slack=0.00e+00 maxred=2.819e-02 lb~0.656987 cols=5432 t=52s
+it=  8 minSimple=0.684478 slack=0.00e+00 maxred=3.023e-03 lb~0.681454 cols=5600 t=58s
+it=  9 minSimple=0.683706 slack=0.00e+00 maxred=3.992e-03 lb~0.679714 cols=5698 t=68s
+it= 10 minSimple=0.683399 slack=0.00e+00 maxred=5.174e-04 lb~0.682882 cols=5837 t=76s
+it= 11 minSimple=0.683306 slack=0.00e+00 maxred=3.568e-04 lb~0.682949 cols=5915 t=82s
+it= 12 minSimple=0.683250 slack=0.00e+00 maxred=9.333e-05 lb~0.683156 cols=5995 t=88s
+it= 13 minSimple=0.683203 slack=0.00e+00 maxred=1.943e-04 lb~0.683009 cols=6044 t=96s
+it= 14 minSimple=0.683191 slack=0.00e+00 maxred=4.978e-05 lb~0.683141 cols=6092 t=101s
+it= 15 minSimple=0.683188 slack=0.00e+00 maxred=1.110e-05 lb~0.683177 cols=6145 t=106s
+FINAL N=14 S=Po minSimple=0.683188 lb~0.683177 slack=0.0e+00 features=13 maxrss=116MB t=106s

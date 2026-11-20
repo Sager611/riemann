@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/NPAFrame/cg_law.py", line 160, in <module>
+    main()
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/NPAFrame/cg_law.py", line 154, in main
+    val=val, rmax=rmax, sw=np.array([w for _, _, w in SUPP]), sm=np.array([m for m, _, _ in SUPP]),
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: setting an array element with a sequence. The requested array has an inhomogeneous shape after 1 dimensions. The detected shape was (11,) + inhomogeneous part.
+memcap: peak 89 MB rc=1
+       29.05 real        19.49 user        15.18 sys
+           119046144  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               35536  page reclaims
+                  52  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  34  messages sent
+                  35  messages received
+                  19  signals received
+                 694  voluntary context switches
+               73084  involuntary context switches
+            77978537  instructions retired
+            69166396  cycles elapsed
+             2244944  peak memory footprint

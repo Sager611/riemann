@@ -1,0 +1,11 @@
+N=5 S=P features=5 patterns=5 B=384 steps=300
+it=  0 minSimple=0.796935 slack=0.00e+00 maxred=7.782e-03 lb~0.789153 cols=4000 t=1s
+it=  1 minSimple=0.795180 slack=0.00e+00 maxred=7.148e-03 lb~0.788033 cols=4072 t=2s
+it=  2 minSimple=0.794485 slack=0.00e+00 maxred=2.052e-03 lb~0.792433 cols=4144 t=4s
+it=  3 minSimple=0.794161 slack=0.00e+00 maxred=1.251e-03 lb~0.792910 cols=4216 t=5s
+it=  4 minSimple=0.794020 slack=0.00e+00 maxred=3.317e-04 lb~0.793689 cols=4288 t=6s
+it=  5 minSimple=0.793999 slack=0.00e+00 maxred=4.253e-04 lb~0.793574 cols=4360 t=7s
+it=  6 minSimple=0.793942 slack=0.00e+00 maxred=1.361e-04 lb~0.793806 cols=4432 t=9s
+it=  7 minSimple=0.793936 slack=0.00e+00 maxred=3.263e-05 lb~0.793903 cols=4504 t=11s
+it=  8 minSimple=0.793926 slack=0.00e+00 maxred=1.483e-05 lb~0.793911 cols=4576 t=12s
+FINAL N=5 S=P minSimple=0.793926 lb~0.793911 slack=0.0e+00 features=5 maxrss=94MB t=12s

@@ -1,0 +1,26 @@
+N=7 M=21 sets=T5 world=off rows=25 rays=27937
+on it=1 val=0.835481 slack=0.0e+00 cols=3000 priced=21287 minrc=-3.17e-02 t=8s
+on it=2 val=0.825346 slack=0.0e+00 cols=3125 priced=21287 minrc=-1.40e-03 t=11s
+on it=3 val=0.825207 slack=0.0e+00 cols=3147 priced=21287 minrc=-4.92e-04 t=14s
+on it=4 val=0.825180 slack=0.0e+00 cols=3170 priced=21287 minrc=0.00e+00 t=18s
+off it=1 val=0.825180 slack=0.0e+00 cols=3170 priced=1801037 minrc=0.00e+00 t=23s
+RESULT N=7 M=21 sets=T5 world=off rays=True: minSimpleOn=0.825180 slack=0.0e+00 supp=26 mass on/off=1.0000/0.00e+00 raycols=0 maxrss=275MB t=23s
+memcap: peak 144 MB rc=0
+       30.61 real        24.66 user        19.28 sys
+           288063488  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               55486  page reclaims
+                  41  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  24  signals received
+                 105  voluntary context switches
+               38196  involuntary context switches
+            84797345  instructions retired
+            69561243  cycles elapsed
+             2179408  peak memory footprint

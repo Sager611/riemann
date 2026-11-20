@@ -1,0 +1,2 @@
+N=12 S=T9 features=95 patterns=12 B=96 steps=100
+it=  0 minSimple=0.915858 slack=0.00e+00 maxred=1.131e+00 lb~-0.215320 cols=5400 t=14s

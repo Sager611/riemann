@@ -1,0 +1,29 @@
+N=6 M=18 sets=T3 world=on rows=11 rays=0
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/NPAFrame/npa_cg_lean.py", line 68, in <module>
+    main()
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/NPAFrame/npa_cg_lean.py", line 27, in main
+    P0, ns0, lab0 = next(blocks(N, M, depths, 'on'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/NPAFrame/npa_cg.py", line 72, in blocks
+    from offline_lp import online_configs
+ModuleNotFoundError: No module named 'offline_lp'
+memcap: peak 0 MB rc=1
+        7.80 real         1.45 user         4.83 sys
+            71712768  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               17273  page reclaims
+                   9  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   6  signals received
+                  18  voluntary context switches
+                8727  involuntary context switches
+            60901158  instructions retired
+            45130937  cycles elapsed
+             2228560  peak memory footprint
