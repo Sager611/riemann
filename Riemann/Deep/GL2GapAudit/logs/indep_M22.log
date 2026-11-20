@@ -1,0 +1,40 @@
+(a) a == cert a: True ; phi == cert phi: True ; a1 = 1 ; a6 = 0.000875388 > 0: True
+    max |float - rational| = 3.10e-14
+(b) H exact = 94/97 digits ~ 0.0007704685930842703319520578; H by quadrature = 0.0007704685930842703319520578; diff = 3.80e-63
+    H(218/125) = 7.704686e-04
+    H(3489/2000) = 2.575273e-04
+    H(349/200) = -2.555189e-04
+    H(873/500) = -1.281926e-03
+(c) binomial recombination = 2/(2j+1) for j <= 6: True
+(d) g = 1/100        exact LDL: all pivots > 0: True (min pivot 5.577e+04); min eig of form/||f||^2 = 98474.737
+(d) g = 1/10         exact LDL: all pivots > 0: True (min pivot 5.906e+01); min eig of form/||f||^2 = 921.741
+(d) g = 1/2          exact LDL: all pivots > 0: True (min pivot 4.965e-05); min eig of form/||f||^2 = 34.64523
+(d) g = 1            exact LDL: all pivots > 0: True (min pivot 2.418e-08); min eig of form/||f||^2 = 6.9562676
+(d) g = 3/2          exact LDL: all pivots > 0: True (min pivot 2.784e-10); min eig of form/||f||^2 = 2.2563516
+(d) g = 2            exact LDL: all pivots > 0: True (min pivot 1.169e-11); min eig of form/||f||^2 = 1.0669454
+(d) g = 1054359/500000 exact LDL: all pivots > 0: True (min pivot 6.521e-12); min eig of form/||f||^2 = 0.91598693
+(d) g = 5/2          exact LDL: all pivots > 0: True (min pivot 9.966e-13); min eig of form/||f||^2 = 0.4784298
+(d) g = 3            exact LDL: all pivots > 0: True (min pivot 1.329e-13); min eig of form/||f||^2 = 0.085972201
+(d) g = 31/10        exact LDL: all pivots > 0: True (min pivot 9.246e-14); min eig of form/||f||^2 = 0.024604106
+(d) g = 157/50       exact LDL: all pivots > 0: True (min pivot 8.023e-14); min eig of form/||f||^2 = 0.0013862476
+(d) g = 392699/125000 exact LDL: all pivots > 0: True (min pivot 7.978e-14); min eig of form/||f||^2 = 0.00047724867
+(d) g = 15707963/5000000 exact LDL: all pivots > 0: True (min pivot 7.978e-14); min eig of form/||f||^2 = 0.0004769063
+memcap: peak 14 MB rc=0
+       17.91 real        12.42 user         9.48 sys
+            34504704  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               18032  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  12  signals received
+                  41  voluntary context switches
+               42158  involuntary context switches
+            68905630  instructions retired
+            62539806  cycles elapsed
+             2179408  peak memory footprint

@@ -1,0 +1,21 @@
+T = 200: max |Im Z| = 4.14 e-35 (phase check); sign changes on [T,2T] = 245; (T/pi)log(2T/(pi e)) = 244.89
+largest gap / (pi/log gamma) = 2.8860 (at gamma = 324.006); with log(gamma/2pi): 1.9807; mean gap * log(T)/pi = 1.4827
+memcap: peak 12 MB rc=0
+       31.32 real        23.52 user        18.78 sys
+            16252928  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               26659  page reclaims
+                 253  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                  20  signals received
+                  93  voluntary context switches
+               55093  involuntary context switches
+            83640231  instructions retired
+            76170037  cycles elapsed
+             2179408  peak memory footprint

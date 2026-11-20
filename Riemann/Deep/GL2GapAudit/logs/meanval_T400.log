@@ -1,0 +1,32 @@
+Laurent: c = 0.384084013 (D(0) = 0.35240), d = 0.7960286 [0.7960285], e = 0.051777 [0.051778], f = -0.00764 [-0.00764]  ([.] = fit from X = 1000, 2000)
+grid: 20011 values in 121.5 s
+T = 400, h = 1/50, log T = 5.9915
+mu=0 nu=0: I = 2049.548211 +0.000000 i | FD8-FD6 0.e-38 | I/Plead = 1.11329 | I/Prec = 1.008745 | (c,d only: 1.008745)
+mu=0 nu=1: I = -9309.668488 +4.252815 i | FD8-FD6 1.3 e-7 | I/Plead = 0.84402 | I/Prec = 1.007971 | (c,d only: 1.007971)
+mu=0 nu=2: I = 65584.812016 -41.551831 i | FD8-FD6 4.1 e-8 | I/Plead = 0.74430 | I/Prec = 1.005656 | (c,d only: 1.011299)
+mu=1 nu=1: I = 65532.417759 +0.000000 i | FD8-FD6 3.3 e-7 | I/Plead = 0.74371 | I/Prec = 1.004853 | (c,d only: 1.010491)
+mu=1 nu=2: I = -510225.653132 +263.354559 i | FD8-FD6 2.4 e-7 | I/Plead = 0.64429 | I/Prec = 1.003062 | (c,d only: 1.012950)
+mu=2 nu=2: I = 4187010.962238 +0.000000 i | FD8-FD6 1.0 e-7 | I/Plead = 0.55153 | I/Prec = 1.001717 | (c,d only: 1.016142)
+check Im I(1,0) = -(1/2)[|L|^2]: -4.252815 vs -4.244331
+j=0: int|g^(j)|^2 = 2049.5482 (Im 0.e-38) | / (2cT L^{2j+1}/(2j+1)) = 1.11329 | / recipe = 1.008745 | ratio G_j/(G_0 L^{2j}) = 1.00000 vs 1/(2j+1) = 1.00000
+j=1: int|g^(j)|^2 = 27549.2794 (Im 2.8 e-36) | / (2cT L^{2j+1}/(2j+1)) = 1.25059 | / recipe = 1.002627 | ratio G_j/(G_0 L^{2j}) = 0.37444 vs 1/(2j+1) = 0.33333
+j=2: int|g^(j)|^2 = 709392.0836 (Im 1.1 e-34) | / (2cT L^{2j+1}/(2j+1)) = 1.49512 | / recipe = 1.001888 | ratio G_j/(G_0 L^{2j}) = 0.26859 vs 1/(2j+1) = 0.20000
+memcap: peak 78 MB rc=0
+      148.79 real       136.51 user        87.08 sys
+            86720512  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              127583  page reclaims
+                 387  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                 101  signals received
+                 408  voluntary context switches
+              312709  involuntary context switches
+           191661731  instructions retired
+           216631609  cycles elapsed
+             2326864  peak memory footprint
