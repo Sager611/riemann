@@ -1,0 +1,21 @@
+mollifier: frozen EXP-010 P, r_P = 0.770700, P(1) = 1.000000, P(0.5) = 0.465042
+T=1e+06 theta=0.45 H=501.2 tau=3.981 nu_crit=0.0875 y_crit=3.35  pairs=555  setup+S 4s
+ y=  4 nu=0.1003 terms(g,p,q)=   9: sum|.| / (sqrt(pi)H) = 5.648e-01;  s=+1: Rn=0.462 Rpq=0.075 Rtot=0.0348 |D|/(sqrt(pi)H)=1.966e-02;  s=-1: Rtot=0.0164;  random-n model Rn=0.363;  per-pair |S|/A median 0.525 max 0.640
+ y= 12 nu=0.1799 terms(g,p,q)=  64: sum|.| / (sqrt(pi)H) = 2.516e+00;  s=+1: Rn=0.249 Rpq=0.056 Rtot=0.0140 |D|/(sqrt(pi)H)=3.529e-02;  s=-1: Rtot=0.0094;  random-n model Rn=0.231;  per-pair |S|/A median 0.138 max 0.640
+ y= 30 nu=0.2462 terms(g,p,q)= 324: sum|.| / (sqrt(pi)H) = 1.098e+01;  s=+1: Rn=0.130 Rpq=0.003 Rtot=0.0004 |D|/(sqrt(pi)H)=4.705e-03;  s=-1: Rtot=0.0005;  random-n model Rn=0.131;  per-pair |S|/A median 0.053 max 0.640
+done 4s
+memcap: peak 0 MB rc=0
+mollifier: frozen EXP-010 P, r_P = 0.770700, P(1) = 1.000000, P(0.5) = 0.465042
+T=1e+07 theta=0.45 H=1412.5 tau=5.012 nu_crit=0.0875 y_crit=4.10  pairs=555  setup+S 5s
+ y=  4 nu=0.0860 terms(g,p,q)=   9: sum|.| / (sqrt(pi)H) = 3.440e-01;  s=+1: Rn=0.354 Rpq=0.186 Rtot=0.0658 |D|/(sqrt(pi)H)=2.264e-02;  s=-1: Rtot=0.0544;  random-n model Rn=0.293;  per-pair |S|/A median 0.269 max 0.544
+ y= 12 nu=0.1542 terms(g,p,q)=  64: sum|.| / (sqrt(pi)H) = 1.751e+00;  s=+1: Rn=0.223 Rpq=0.031 Rtot=0.0070 |D|/(sqrt(pi)H)=1.217e-02;  s=-1: Rtot=0.0054;  random-n model Rn=0.190;  per-pair |S|/A median 0.162 max 0.544
+ y= 30 nu=0.2110 terms(g,p,q)= 324: sum|.| / (sqrt(pi)H) = 7.865e+00;  s=+1: Rn=0.120 Rpq=0.020 Rtot=0.0024 |D|/(sqrt(pi)H)=1.890e-02;  s=-1: Rtot=0.0006;  random-n model Rn=0.113;  per-pair |S|/A median 0.053 max 0.544
+done 5s
+memcap: peak 23 MB rc=0
+mollifier: frozen EXP-010 P, r_P = 0.770700, P(1) = 1.000000, P(0.5) = 0.465042
+T=1e+06 theta=0.4 H=251.2 tau=15.849 nu_crit=0.0500 y_crit=2.00  pairs=555  setup+S 13s
+ y=  4 nu=0.1003 terms(g,p,q)=   9: sum|.| / (sqrt(pi)H) = 2.525e+00;  s=+1: Rn=0.231 Rpq=0.043 Rtot=0.0099 |D|/(sqrt(pi)H)=2.495e-02;  s=-1: Rtot=0.0072;  random-n model Rn=0.199;  per-pair |S|/A median 0.247 max 0.277
+ y= 12 nu=0.1799 terms(g,p,q)=  64: sum|.| / (sqrt(pi)H) = 1.041e+01;  s=+1: Rn=0.138 Rpq=0.044 Rtot=0.0061 |D|/(sqrt(pi)H)=6.318e-02;  s=-1: Rtot=0.0036;  random-n model Rn=0.130;  per-pair |S|/A median 0.050 max 0.277
+ y= 30 nu=0.2462 terms(g,p,q)= 324: sum|.| / (sqrt(pi)H) = 4.178e+01;  s=+1: Rn=0.069 Rpq=0.000 Rtot=0.0000 |D|/(sqrt(pi)H)=1.436e-03;  s=-1: Rtot=0.0004;  random-n model Rn=0.075;  per-pair |S|/A median 0.020 max 0.277
+done 13s
+memcap: peak 117 MB rc=0

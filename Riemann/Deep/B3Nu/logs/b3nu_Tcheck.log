@@ -1,0 +1,5 @@
+T=1e+06 th=0.45 H=501.2 tau=3.98 nw=12717 nsub=4239: max|sub-full|/scale=2.7e-13 max|interp-full|/scale=9.2e-13  max|T|/scale=0.658  t=3s
+T=1e+06 th=0.4 H=251.2 tau=15.85 nw=44343 nsub=14781: max|sub-full|/scale=1.6e-12 max|interp-full|/scale=2.7e-12  max|T|/scale=0.521  t=12s
+T=1e+06 th=0.47 H=660.7 tau=2.29 nw=8263 nsub=2755: max|sub-full|/scale=1.3e-13 max|interp-full|/scale=5.1e-13  max|T|/scale=0.644  t=15s
+       16.28 real        12.13 user         0.45 sys
+memcap: peak 114 MB rc=0

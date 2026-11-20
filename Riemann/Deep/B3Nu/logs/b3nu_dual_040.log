@@ -1,0 +1,13 @@
+T=1e+06 theta=0.4 H=251.2 tau=15.849 nu_crit=0.0500 y_crit=2.00  pairs=555  setup+S 19s
+ y=  2 nu=0.0502 terms(g,p,q)=   1: sum|.| / (sqrt(pi)H) = 8.636e-01;  s=+1: Rn=0.277 Rpq=1.000 Rtot=0.2765 |D|/(sqrt(pi)H)=2.388e-01;  s=-1: Rtot=0.2765;  random-n model Rn=0.249;  per-pair |S|/A median 0.277 max 0.277
+ y=  3 nu=0.0795 terms(g,p,q)=   4: sum|.| / (sqrt(pi)H) = 1.635e+00;  s=+1: Rn=0.264 Rpq=0.195 Rtot=0.0513 |D|/(sqrt(pi)H)=8.397e-02;  s=-1: Rtot=0.0513;  random-n model Rn=0.222;  per-pair |S|/A median 0.262 max 0.277
+ y=  4 nu=0.1003 terms(g,p,q)=   9: sum|.| / (sqrt(pi)H) = 2.692e+00;  s=+1: Rn=0.229 Rpq=0.019 Rtot=0.0044 |D|/(sqrt(pi)H)=1.181e-02;  s=-1: Rtot=0.0035;  random-n model Rn=0.197;  per-pair |S|/A median 0.247 max 0.277
+ y=  6 nu=0.1297 terms(g,p,q)=  16: sum|.| / (sqrt(pi)H) = 4.289e+00;  s=+1: Rn=0.202 Rpq=0.063 Rtot=0.0127 |D|/(sqrt(pi)H)=5.468e-02;  s=-1: Rtot=0.0138;  random-n model Rn=0.174;  per-pair |S|/A median 0.165 max 0.277
+ y=  8 nu=0.1505 terms(g,p,q)=  36: sum|.| / (sqrt(pi)H) = 6.736e+00;  s=+1: Rn=0.169 Rpq=0.066 Rtot=0.0111 |D|/(sqrt(pi)H)=7.508e-02;  s=-1: Rtot=0.0089;  random-n model Rn=0.151;  per-pair |S|/A median 0.126 max 0.277
+ y= 12 nu=0.1799 terms(g,p,q)=  64: sum|.| / (sqrt(pi)H) = 1.149e+01;  s=+1: Rn=0.135 Rpq=0.046 Rtot=0.0062 |D|/(sqrt(pi)H)=7.128e-02;  s=-1: Rtot=0.0034;  random-n model Rn=0.127;  per-pair |S|/A median 0.050 max 0.277
+ y= 16 nu=0.2007 terms(g,p,q)= 121: sum|.| / (sqrt(pi)H) = 1.778e+01;  s=+1: Rn=0.108 Rpq=0.025 Rtot=0.0027 |D|/(sqrt(pi)H)=4.862e-02;  s=-1: Rtot=0.0010;  random-n model Rn=0.108;  per-pair |S|/A median 0.038 max 0.277
+ y= 24 nu=0.2300 terms(g,p,q)= 256: sum|.| / (sqrt(pi)H) = 3.364e+01;  s=+1: Rn=0.079 Rpq=0.005 Rtot=0.0004 |D|/(sqrt(pi)H)=1.302e-02;  s=-1: Rtot=0.0004;  random-n model Rn=0.084;  per-pair |S|/A median 0.025 max 0.277
+ y= 30 nu=0.2462 terms(g,p,q)= 324: sum|.| / (sqrt(pi)H) = 4.736e+01;  s=+1: Rn=0.066 Rpq=0.001 Rtot=0.0000 |D|/(sqrt(pi)H)=2.290e-03;  s=-1: Rtot=0.0004;  random-n model Rn=0.073;  per-pair |S|/A median 0.020 max 0.277
+done 19s
+       22.00 real        12.91 user         0.51 sys
+memcap: peak 101 MB rc=0
