@@ -1,0 +1,13 @@
+13:44:21 r7_00 [0,0.01] CERT sup <= 0.899777391 unres 367 | maxUB3 128 s
+13:44:21 row 7 done
+13:46:22 r7_01 [0.01,0.02] CERT sup <= 0.899865714 unres 0 | maxUB3 104 s
+13:49:12 r7_02 [0.02,0.035] CERT sup <= 0.903423428 unres 0 | maxUB3 150 s
+13:52:08 r7_03 [0.035,0.05] CERT sup <= 0.908759999 unres 0 | maxUB3 144 s
+13:55:41 r7_04 [0.05,0.07] CERT sup <= 0.914096570 unres 0 | maxUB3 183 s
+13:58:45 r7_05 [0.07,0.09] CERT sup <= 0.921211998 unres 0 | maxUB3 166 s
+14:01:33 r7_06 [0.09,0.11] CERT sup <= 0.928327426 unres 0 | maxUB3 147 s
+14:03:59 r7_07 [0.11,0.13] CERT sup <= 0.935442853 unres 0 | maxUB3 123 s
+14:06:01 r7_08 [0.13,0.15] CERT sup <= 0.942558281 unres 0 | maxUB3 104 s
+14:08:01 r7_09 [0.15,0.17] CERT sup <= 0.949673709 unres 0 | maxUB3 103 s
+14:09:04 r7_10 [0.17,0.1842] CERT sup <= 0.956789137 unres 0 | maxUB3 49 s
+14:09:04 row 7 done

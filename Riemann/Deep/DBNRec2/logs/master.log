@@ -1,0 +1,36 @@
+12:27:59 master2 start (NEWROW_DEADLINE 1795183731 SHELL_DEADLINE 1795184751)
+12:28:00 check.py rc=0 row 19: mode retained jet False | M = sum w = AFFINE mass: True | (1-beta)M = retained_main_mass: True | beta 1/512 | M c0 - main_lo = [3.1211124e-31 +/- 2.45e-39] OK
+12:28:00 row 4 T 0.834173 shells (tranche 1) 0.01 0.02 0.035 0.05 0.07 0.09 0.11 0.13 0.15 0.17 0.1714
+12:36:28 queue stopped after r4_07 (12:36:19) for the equivalence test
+12:39:33 equivalence PASS (logs/equiv.txt); .scratch/dbnrec2/bb_rec := bb_rec2 build (prefilter) from r4_08 on; restart
+12:39:33 master2 start (NEWROW_DEADLINE 1795183731 SHELL_DEADLINE 1795184751)
+12:39:34 check.py rc=0 row 19: mode retained jet False | M = sum w = AFFINE mass: True | (1-beta)M = retained_main_mass: True | beta 1/512 | M c0 - main_lo = [3.1211124e-31 +/- 2.45e-39] OK
+12:39:34 row 4 T 0.834173 shells (tranche 1) 0.01 0.02 0.035 0.05 0.07 0.09 0.11 0.13 0.15 0.17 0.1714
+12:44:29 cert row 4 rc=0 A 0.8606998814605432 B 0.834173 dA 0.04935260201737795 dB 0.04707849056861538
+12:44:29 hook start
+12:44:30 hook done rc=0
+12:44:37 row 5 T0 0.851119
+12:45:25 queue stopped during row 5 shell 0 (restart with file-read deadlines; row 5 restarts)
+12:45:25 master2 start (NEWROW_DEADLINE 1795184245 SHELL_DEADLINE 1795184725)
+12:45:25 check.py rc=0 row 19: mode retained jet False | M = sum w = AFFINE mass: True | (1-beta)M = retained_main_mass: True | beta 1/512 | M c0 - main_lo = [3.1211124e-31 +/- 2.45e-39] OK
+12:45:25 row 4 T 0.834173 shells (tranche 1) 0.01 0.02 0.035 0.05 0.07 0.09 0.11 0.13 0.15 0.17 0.1714
+12:45:32 row 5 T0 0.851119
+12:48:02 row 5 T 0.852524 shells 0.01 0.02 0.035 0.05 0.07 0.09 0.11 0.13 0.15 0.17 0.1756
+13:11:45 cert row 5 rc=0 A 0.8798262967236492 B 0.8525240000000001 dA 0.051373504206943935 dB 0.049024972403780176
+13:11:53 row 6 T0 0.871284
+13:14:19 row 6 T 0.872323 shells 0.01 0.02 0.035 0.05 0.07 0.09 0.11 0.13 0.15 0.17 0.1803
+13:41:06 cert row 6 rc=0 A 0.900470236921947 B 0.8723230000000001 dA 0.05361994187177141 dB 0.05118997412702697
+13:41:14 row 7 T0 0.895373
+13:44:22 row 7 T 0.896308 shells 0.01 0.02 0.035 0.05 0.07 0.09 0.11 0.13 0.15 0.17 0.1842
+14:09:18 cert row 7 rc=0 A 0.9254250900619297 B 0.896308 dA 0.055822398279950065 dB 0.053313090254996136
+14:09:26 row 8 T0 0.913118
+14:12:06 row 8 T 0.913695 shells 0.01 0.02 0.035 0.05 0.07 0.09 0.11 0.13 0.15 0.17 0.1868
+14:29:19 cert row 8 rc=0 A 0.9770236505457374 B 0.9472749251614312 dA 0.022603565003962947 dB 0.019954074344654717
+14:29:19 new-row deadline: stop before row 9
+14:29:19 master2 done
+14:29:24 final: chain F with Riemann/Deep/DBNRec/logs/cert_r1.json Riemann/Deep/DBNRec/logs/cert_r2.json Riemann/Deep/DBNRec/logs/cert_r3.json Riemann/Deep/DBNRec2/logs/cert_r4.json Riemann/Deep/DBNRec2/logs/cert_r5.json Riemann/Deep/DBNRec2/logs/cert_r6.json Riemann/Deep/DBNRec2/logs/cert_r7.json Riemann/Deep/DBNRec2/logs/cert_r8.json
+14:29:24 mkrec source F rc=0: {"source": ".scratch/dbnrec2/ws/dbnrec/MAIN_CLOCK_SOURCE_REC.json", "sha256": "6321ae690ef0760caa98808bb5fc05af5e08a0113b96046046a538e5e4109aab", "rows": [{"row": 1, "dA": "421960013248130330601273025655960251/9671406556917033397649408000000000000", "dB": "200602987794214576039517398448097313/483570
+14:31:09 make_flow F rc=0 "endpoint_decimal": 0.10747096286618181
+14:31:09 mkrec verifier F rc=0: {"flow_sha256": "bca7c24873395ffee60c21258d3e5b58216477e46681d93c1e07f9b5a9fceb4f", "source_sha256": "6321ae690ef0760caa98808bb5fc05af5e08a0113b96046046a538e5e4109aab", "steps": 219999, "endpoint": "2
+14:39:43 verify F rc=0 "PASS": true
+14:39:43 final: done

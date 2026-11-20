@@ -1,0 +1,9 @@
+14:12:05 r8_00 [0,0.01] CERT sup <= 0.917224317 unres 350 | maxUB3 125 s
+14:12:05 row 8 done
+14:14:10 r8_01 [0.01,0.02] CERT sup <= 0.917314957 unres 0 | maxUB3 107 s
+14:18:00 r8_02 [0.02,0.035] CERT sup <= 0.920934914 unres 0 | maxUB3 158 s
+14:20:46 r8_03 [0.035,0.05] CERT sup <= 0.926364849 unres 0 | maxUB3 145 s
+14:24:28 r8_04 [0.05,0.07] CERT sup <= 0.931794785 unres 0 | maxUB3 187 s
+14:29:11 r8_05 [0.07,0.09] CERT sup <= 0.939034699 unres 0 | maxUB3 183 s
+14:29:11 r8_06 skipped: shell deadline
+14:29:11 row 8 done

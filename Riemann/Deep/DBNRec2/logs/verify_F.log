@@ -1,0 +1,51 @@
+CHECKED 20000 row 3 elapsed 24.04
+CHECKED 40000 row 7 elapsed 44.48
+CHECKED 60000 row 11 elapsed 64.6
+CHECKED 80000 row 15 elapsed 118.82
+CHECKED 100000 row 19 elapsed 174.76
+CHECKED 120000 row 26 elapsed 204.0
+CHECKED 140000 row 34 elapsed 245.02
+CHECKED 160000 row 42 elapsed 288.51
+CHECKED 180000 row 50 elapsed 365.9
+CHECKED 200000 row 58 elapsed 399.46
+{
+  "PASS": true,
+  "arcs_checked": 219999,
+  "exact_checks": 5773362,
+  "terminal_t": "219999/2048000",
+  "terminal_q": "7855654131117049873834299/79228162514264337593543950336",
+  "exact_full_cleanup_endpoint": "2128681727881580061683701397967/19807040628566084398385987584000",
+  "all_arc_witnesses": {
+    "path": "ALL_221010_ARC_INEQUALITY_WITNESSES.jsonl.gz",
+    "bytes": 422202763,
+    "sha256": "54bc998bbf0ac29bef15ce1b0c857e57d140e60fb1f4b9e071c40d1177498ed0",
+    "uncompressed_canonical_transcript_sha256": "7f5f572012090917ee9d173dd6036c8a40e14dab0126a4c44c12d7b4879ad7d6"
+  },
+  "seconds": 502.46025666594505
+}
+memcap: peak 44 MB rc=0
+      513.18 real       311.89 user       218.42 sys
+            62652416  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              405084  page reclaims
+                 653  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 398  signals received
+                2064  voluntary context switches
+             1005826  involuntary context switches
+           533241178  instructions retired
+           618309187  cycles elapsed
+             2244944  peak memory footprint
+total 855216
+drwxr-xr-x@   6 adriansager  staff        192 Nov 20 15:39 .
+drwxr-xr-x@ 182 adriansager  staff       5824 Nov 20 15:31 ..
+-rw-r--r--@   1 adriansager  staff     442048 Nov 20 15:31 ACTUAL_67_ROW_ARC_INPUTS.json
+-rw-r--r--@   1 adriansager  staff  422202763 Nov 20 15:39 ALL_221010_ARC_INEQUALITY_WITNESSES.jsonl.gz
+-rw-r--r--@   1 adriansager  staff     762170 Nov 20 15:39 EXACT_ARC_VERIFICATION_FRESH_V1.json
+-rw-r--r--@   1 adriansager  staff      15195 Nov 20 15:31 verify_arcs_rec.py

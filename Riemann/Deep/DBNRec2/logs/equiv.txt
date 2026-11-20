@@ -1,0 +1,9 @@
+12:36:28 equivalence test start
+new on r4_00 (full shell, thr 0.832387): rc=0 128 s memcap: peak 39 MB rc=0             41091072  maximum resident set size
+  r4_00: bb.out (times stripped) and unres dump IDENTICAL to tranche 1 (     586 cells)
+bb_rec on r4_06 (K = 3e8): 10 s  14.45 real 11.47 user 8.47 sys
+bb_new on r4_06 (K = 3e8): 6 s  7.46 real 6.90 user 4.42 sys
+  r4_06 K=3e8: old and new IDENTICAL
+12:39:19 equivalence test end
+mkrec rc=0 sha256 04f16da4449d3d8a1cacacb1395a0b0f37ae73ec51f858aabb9b50922782e000 (tranche 1 chain B: 04f16da4449d3d8a1cacacb1395a0b0f37ae73ec51f858aabb9b50922782e000)
+make_flow_rec.py parses
