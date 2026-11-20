@@ -1,0 +1,19 @@
+dh bad   q=2: best SMT lower bound RHS/2pi =   -204.97 (X=0.5, lam*L=0.9999999999999999); actual sum_j [W(a_j)-W(inf)] =    -3.387; a=[0.6+0.j 2.5+0.j]
+dh bad   q=3: best SMT lower bound RHS/2pi =   -493.12 (X=0.5, lam*L=0.9999999999999999); actual sum_j [W(a_j)-W(inf)] =    -4.159; a=[0.6+0.j 1.5+0.j 2.5+0.j]
+dh bad   q=4: best SMT lower bound RHS/2pi =   -821.71 (X=0.5, lam*L=0.24999999999999997); actual sum_j [W(a_j)-W(inf)] =    -7.019; a=[0.6  +0.j    2.5  +0.j    0.681-0.466j 0.681+0.466j]
+dh bad   q=6: best SMT lower bound RHS/2pi =  -1394.10 (X=0.5, lam*L=0.24999999999999997); actual sum_j [W(a_j)-W(inf)] =    -9.060; a=[0.6  +0.j    1.   +0.j    1.5  +0.j    2.5  +0.j    0.681-0.466j
+ 0.681+0.466j]
+dh good  q=2: best SMT lower bound RHS/2pi =   -112.12 (X=0.5, lam*L=0.9999999999999999); actual sum_j [W(a_j)-W(inf)] =   144.017; a=[ 0.4+0.j -1. +0.j]
+dh good  q=3: best SMT lower bound RHS/2pi =   -400.37 (X=0.5, lam*L=0.9999999999999999); actual sum_j [W(a_j)-W(inf)] =   221.295; a=[ 0.338+0.252j  0.338-0.252j -1.   +0.j   ]
+dh good  q=4: best SMT lower bound RHS/2pi =   -562.61 (X=1, lam*L=0.24999999999999997); actual sum_j [W(a_j)-W(inf)] =   419.706; a=[ 0.338+0.252j  0.338-0.252j -1.   +0.j     0.   +0.j   ]
+dh good  q=6: best SMT lower bound RHS/2pi =  -1492.91 (X=1, lam*L=0.24999999999999997); actual sum_j [W(a_j)-W(inf)] =   606.817; a=[ 0.4  +0.j     0.25 +0.j     0.1  +0.j     0.338+0.252j  0.338-0.252j
+ -1.   +0.j   ]
+dh mixed q=2: best SMT lower bound RHS/2pi =   -244.85 (X=0.5, lam*L=0.9999999999999999); actual sum_j [W(a_j)-W(inf)] =    83.422; a=[1. +0.j 0.1+0.j]
+dh mixed q=3: best SMT lower bound RHS/2pi =   -573.86 (X=0.5, lam*L=0.24999999999999997); actual sum_j [W(a_j)-W(inf)] =   139.404; a=[0.75+0.j 0.4 +0.j 0.1 +0.j]
+dh mixed q=4: best SMT lower bound RHS/2pi =   -929.39 (X=0.5, lam*L=0.24999999999999997); actual sum_j [W(a_j)-W(inf)] =   138.133; a=[0.75+0.j 1.  +0.j 0.4 +0.j 0.1 +0.j]
+dh mixed q=6: best SMT lower bound RHS/2pi =  -1698.08 (X=1, lam*L=0.24999999999999997); actual sum_j [W(a_j)-W(inf)] =   338.284; a=[0.6 +0.j 0.75+0.j 1.  +0.j 0.4 +0.j 0.25+0.j 0.1 +0.j]
+dh: H=1000.0 L=7.4213 N~1181; slack scale H/2pi = 159.2
+memcap: peak 123 MB rc=0
+      345.20 real       263.59 user       173.50 sys
+           150814720  maximum resident set size
+             2310480  peak memory footprint

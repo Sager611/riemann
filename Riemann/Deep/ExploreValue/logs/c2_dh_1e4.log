@@ -1,0 +1,20 @@
+dh [10000.0,11000.0] dt=0.004 M=17834 line eval 61s; Im(chi'/chi) max 0.0e+00
+  line zeros N0bar=1301  all zeros N_tot=1437.000  N+=68.00
+  #zeros V_c right of 1/2: c=+2: 68.00 (step 0.98); c=+0.5: 68.00 (step 2.22); c=+0.2: 68.00 (step 2.75); c=-0.2: 1369.00 (step 2.72); c=-0.4: 1369.00 (step 2.35)
+  Levinson V_b = F+(b/L)F', L=7.4213, #zeros right of 1/2: b=1.03217: 68.00 (step 2.57); b=1.5: 68.00 (step 3.06); b=3.0: 1369.00 (step 2.66); b=6.0: 1369.00 (step 2.41)
+  check Re(F'/F)/|chi'/chi| on line: mean -0.499996 max|+0.5| 9.7e-01
+  Cauchy(1/2) test, Dlog = E log|c+i eta| - log(c+1/2), Dres = E c/(c^2+eta^2) - 1/(c+1/2):
+   c=0.05: Dlog=-0.06639 Dres=+0.07957
+   c=0.1: Dlog=-0.06257 Dres=+0.07319
+   c=0.25: Dlog=-0.05298 Dres=+0.05538
+   c=0.5: Dlog=-0.04183 Dres=+0.03568
+   c=1: Dlog=-0.02923 Dres=+0.01772
+   c=2: Dlog=-0.01817 Dres=+0.00689
+   c=4: Dlog=-0.01034 Dres=+0.00223
+  KS distance to Cauchy(0,1/2): 0.01237; median -0.0006; P(|eta|<1/2) = 0.5231 (Cauchy 0.5)
+  Littlewood weighted counts (sum of beta-1/2 right of the line): W(F)=11.5997; W(V_c=2)=8.7123; W(V_c=0.5)=4.9536; W(V_c=0.2)=2.7211
+  total 80s
+memcap: peak 192 MB rc=0
+       88.91 real        66.14 user        45.93 sys
+           254033920  maximum resident set size
+             2277712  peak memory footprint

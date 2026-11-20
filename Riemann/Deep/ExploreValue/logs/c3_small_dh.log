@@ -1,0 +1,15 @@
+dh bad   q=2: best SMT lower bound RHS/2pi =    -54.02 (X=0.5, lam*L=1.0); actual sum_j [W(a_j)-W(inf)] =    -0.663; a=[0.6+0.j 2.5+0.j]
+dh bad   q=3: best SMT lower bound RHS/2pi =   -119.26 (X=0.5, lam*L=0.25); actual sum_j [W(a_j)-W(inf)] =    -0.900; a=[0.6+0.j 1.5+0.j 2.5+0.j]
+dh bad   q=4: best SMT lower bound RHS/2pi =   -189.56 (X=0.5, lam*L=0.25); actual sum_j [W(a_j)-W(inf)] =    -1.563; a=[0.6  +0.j    2.5  +0.j    0.681-0.466j 0.681+0.466j]
+dh bad   q=6: best SMT lower bound RHS/2pi =   -320.88 (X=0.5, lam*L=0.25); actual sum_j [W(a_j)-W(inf)] =    -2.167; a=[0.6  +0.j    1.   +0.j    1.5  +0.j    2.5  +0.j    0.681-0.466j
+ 0.681+0.466j]
+dh good  q=2: best SMT lower bound RHS/2pi =    -25.77 (X=0.5, lam*L=1.0); actual sum_j [W(a_j)-W(inf)] =    45.642; a=[ 0.25+0.j -1.  +0.j]
+dh good  q=3: best SMT lower bound RHS/2pi =    -86.80 (X=0.5, lam*L=0.25); actual sum_j [W(a_j)-W(inf)] =    56.923; a=[ 0.338+0.252j  0.338-0.252j -1.   +0.j   ]
+dh good  q=4: best SMT lower bound RHS/2pi =   -123.25 (X=1, lam*L=0.25); actual sum_j [W(a_j)-W(inf)] =   107.922; a=[ 0.338+0.252j  0.338-0.252j -1.   +0.j     0.   +0.j   ]
+dh good  q=6: best SMT lower bound RHS/2pi =   -333.58 (X=1, lam*L=0.25); actual sum_j [W(a_j)-W(inf)] =   155.103; a=[ 0.4  +0.j     0.25 +0.j     0.1  +0.j     0.338+0.252j  0.338-0.252j
+ -1.   +0.j   ]
+dh mixed q=2: best SMT lower bound RHS/2pi =    -57.65 (X=0.5, lam*L=1.0); actual sum_j [W(a_j)-W(inf)] =    23.895; a=[1. +0.j 0.1+0.j]
+dh mixed q=3: best SMT lower bound RHS/2pi =   -126.56 (X=0.5, lam*L=0.25); actual sum_j [W(a_j)-W(inf)] =    37.698; a=[0.75+0.j 0.4 +0.j 0.1 +0.j]
+dh mixed q=4: best SMT lower bound RHS/2pi =   -208.70 (X=0.5, lam*L=0.25); actual sum_j [W(a_j)-W(inf)] =    37.331; a=[0.75+0.j 1.  +0.j 0.4 +0.j 0.1 +0.j]
+dh mixed q=6: best SMT lower bound RHS/2pi =   -382.25 (X=1, lam*L=0.25); actual sum_j [W(a_j)-W(inf)] =    92.918; a=[0.6 +0.j 0.75+0.j 1.  +0.j 0.4 +0.j 0.25+0.j 0.1 +0.j]
+dh: H=226.0 L=3.0063 N~108; slack scale H/2pi = 36.0

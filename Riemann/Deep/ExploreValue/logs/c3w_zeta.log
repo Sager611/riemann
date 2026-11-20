@@ -1,0 +1,5 @@
+zeta X=0.5: W(g') = 79.726
+zeta X=1: W(g') = 158.540
+zeta X=2: W(g') = 306.943
+zeta X=4: W(g') = 545.541
+memcap: peak 91 MB rc=0

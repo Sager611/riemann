@@ -1,0 +1,6 @@
+zero (0.8085171825 + 85.69934849j) |DH| 0.0 Carleman weight 2(beta-1/2)/gamma^2 = 8.4015e-5
+zero (0.6508300806 + 114.1633427j) |DH| 0.0 Carleman weight 2(beta-1/2)/gamma^2 = 2.3145e-5
+zero (0.5743560505 + 166.4793059j) |DH| 3.28e-25 Carleman weight 2(beta-1/2)/gamma^2 = 5.3657e-6
+zero (0.7242576946 + 176.7024612j) |DH| 5.16e-25 Carleman weight 2(beta-1/2)/gamma^2 = 1.4365e-5
+sum 0.00012689
+memcap: peak 0 MB rc=0

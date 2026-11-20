@@ -1,0 +1,5 @@
+zeta: A(inf) partial (t<= 3000) = 0.02960; tail <= 0.00079 (Hiary)
+dh: A(inf) partial (t<= 3000) = 0.12723; tail <= 0.00079 (Hiary-type, heuristic for DH)
+sum_{n<=100} 1/gamma^2 = 0.0199941; tail bound (1/pi)(log(T/2pi)+1)/T at T=gamma_100: 0.006229; Hadamard sum_(gamma>0) 1/(1/4+gamma^2) = 0.023095709 (RH to 3e12)
+sum 1/gamma^4 (n<=100) = 3.716e-05; sum_(gamma>3e12) 1/gamma^2 <= 2.96e-12
+memcap: peak 179 MB rc=0

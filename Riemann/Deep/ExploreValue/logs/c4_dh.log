@@ -1,0 +1,11 @@
+dh [10000.0,10500.0]: N0bar=650 Ntot=716.00 N+=33.00; (log2/2pi)H = 55.16
+  a=(0.5+0.3j): #a-points right of 1/2 = 5.00 (max phase step 3.12); predicted 683.00
+  a=(0.5-0.7j): #a-points right of 1/2 = 21.00 (max phase step 3.12); predicted 683.00
+  a=(0.8+0.1j): #a-points right of 1/2 = 33.00 (max phase step 1.70); predicted 33.00
+  a=(2+2j): #a-points right of 1/2 = 33.00 (max phase step 0.57); predicted 33.00
+  a=(0.45+0j): #a-points right of 1/2 = 684.00 (max phase step 2.82); predicted 683.00
+  a=(0.2+0.5j): #a-points right of 1/2 = 684.00 (max phase step 1.29); predicted 683.00
+  a=(-1-1j): #a-points right of 1/2 = 683.00 (max phase step 0.51); predicted 683.00
+  a=(0.1-0.3j): #a-points right of 1/2 = 683.00 (max phase step 1.26); predicted 683.00
+  a=0j: #a-points right of 1/2 = 616.00 (max phase step 1.47); predicted 627.84
+memcap: peak 89 MB rc=0

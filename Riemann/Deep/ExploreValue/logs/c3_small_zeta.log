@@ -1,0 +1,15 @@
+zeta bad   q=2: best SMT lower bound RHS/2pi =    -43.23 (X=0.5, lam*L=1.0); actual sum_j [W(a_j)-W(inf)] =     0.072; a=[0.6+0.j 2.5+0.j]
+zeta bad   q=3: best SMT lower bound RHS/2pi =   -107.41 (X=0.5, lam*L=1.0); actual sum_j [W(a_j)-W(inf)] =     0.100; a=[0.6+0.j 1.5+0.j 2.5+0.j]
+zeta bad   q=4: best SMT lower bound RHS/2pi =   -185.86 (X=0.5, lam*L=0.25); actual sum_j [W(a_j)-W(inf)] =     0.142; a=[0.6  +0.j    2.5  +0.j    0.681-0.466j 0.681+0.466j]
+zeta bad   q=6: best SMT lower bound RHS/2pi =   -314.40 (X=0.5, lam*L=0.25); actual sum_j [W(a_j)-W(inf)] =     0.206; a=[0.6  +0.j    1.   +0.j    1.5  +0.j    2.5  +0.j    0.681-0.466j
+ 0.681+0.466j]
+zeta good  q=2: best SMT lower bound RHS/2pi =    -26.63 (X=0.5, lam*L=1.0); actual sum_j [W(a_j)-W(inf)] =    28.807; a=[ 0.4+0.j -1. +0.j]
+zeta good  q=3: best SMT lower bound RHS/2pi =    -91.40 (X=1, lam*L=1.0); actual sum_j [W(a_j)-W(inf)] =    68.299; a=[0.338+0.252j 0.338-0.252j 0.   +0.j   ]
+zeta good  q=4: best SMT lower bound RHS/2pi =   -128.11 (X=1, lam*L=1.0); actual sum_j [W(a_j)-W(inf)] =    92.294; a=[ 0.338+0.252j  0.338-0.252j -1.   +0.j     0.   +0.j   ]
+zeta good  q=6: best SMT lower bound RHS/2pi =   -338.52 (X=2, lam*L=0.25); actual sum_j [W(a_j)-W(inf)] =   171.820; a=[ 0.4  +0.j     0.25 +0.j     0.338+0.252j  0.338-0.252j -1.   +0.j
+  0.   +0.j   ]
+zeta mixed q=2: best SMT lower bound RHS/2pi =    -56.19 (X=0.5, lam*L=1.0); actual sum_j [W(a_j)-W(inf)] =    16.539; a=[1. +0.j 0.1+0.j]
+zeta mixed q=3: best SMT lower bound RHS/2pi =   -131.31 (X=0.5, lam*L=1.0); actual sum_j [W(a_j)-W(inf)] =    16.588; a=[0.6+0.j 1. +0.j 0.1+0.j]
+zeta mixed q=4: best SMT lower bound RHS/2pi =   -215.37 (X=1, lam*L=0.25); actual sum_j [W(a_j)-W(inf)] =    45.684; a=[0.75+0.j 1.  +0.j 0.4 +0.j 0.1 +0.j]
+zeta mixed q=6: best SMT lower bound RHS/2pi =   -388.20 (X=1, lam*L=0.25); actual sum_j [W(a_j)-W(inf)] =    72.682; a=[0.6 +0.j 0.75+0.j 1.  +0.j 0.4 +0.j 0.25+0.j 0.1 +0.j]
+zeta: H=226.0 L=3.0063 N~108; slack scale H/2pi = 36.0

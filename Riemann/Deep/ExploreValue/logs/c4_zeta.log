@@ -1,0 +1,11 @@
+zeta [10000.0,10500.0]: N0bar=590 Ntot=590.00 N+=-0.00; (log2/2pi)H = 55.16
+  a=(0.5+0.3j): #a-points right of 1/2 = 0.00 (max phase step 3.13); predicted 590.00
+  a=(0.5-0.7j): #a-points right of 1/2 = 0.00 (max phase step 3.13); predicted 590.00
+  a=(0.8+0.1j): #a-points right of 1/2 = 0.00 (max phase step 0.50); predicted -0.00
+  a=(2+2j): #a-points right of 1/2 = -0.00 (max phase step 0.23); predicted -0.00
+  a=(0.45+0j): #a-points right of 1/2 = 589.00 (max phase step 2.02); predicted 590.00
+  a=(0.2+0.5j): #a-points right of 1/2 = 589.00 (max phase step 0.55); predicted 590.00
+  a=(-1-1j): #a-points right of 1/2 = 590.00 (max phase step 0.17); predicted 590.00
+  a=(0.1-0.3j): #a-points right of 1/2 = 589.00 (max phase step 0.43); predicted 590.00
+  a=0j: #a-points right of 1/2 = 534.00 (max phase step 0.33); predicted 534.84
+memcap: peak 21 MB rc=0
