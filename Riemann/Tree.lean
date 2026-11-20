@@ -498,3 +498,4 @@ import Riemann.Tree.R498
 import Riemann.Tree.R499
 import Riemann.Tree.R500
 import Riemann.Tree.R501
+import Riemann.Tree.R502
