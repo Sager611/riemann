@@ -1,0 +1,10 @@
+D 72 beta 25 imok True
+n=0  max ratio (code majorant) 4.865e-01 at (0, 0);  (sharper (2+M+N)^n) 4.865e-01 at (0, 0);  max over max(M,N) >= D-8: 1.941e-46
+n=1  max ratio (code majorant) 4.865e-02 at (0, 0);  (sharper (2+M+N)^n) 2.433e-01 at (0, 0);  max over max(M,N) >= D-8: 3.824e-47
+n=2  max ratio (code majorant) 5.610e-03 at (0, 0);  (sharper (2+M+N)^n) 1.403e-01 at (0, 0);  max over max(M,N) >= D-8: 2.577e-48
+n=3  max ratio (code majorant) 7.100e-04 at (0, 0);  (sharper (2+M+N)^n) 8.875e-02 at (0, 0);  max over max(M,N) >= D-8: 3.819e-49
+n=4  max ratio (code majorant) 9.587e-05 at (0, 0);  (sharper (2+M+N)^n) 5.992e-02 at (0, 0);  max over max(M,N) >= D-8: 3.924e-50
+n=5  max ratio (code majorant) 1.358e-05 at (0, 0);  (sharper (2+M+N)^n) 4.242e-02 at (0, 0);  max over max(M,N) >= D-8: 4.800e-51
+n=6  max ratio (code majorant) 1.993e-06 at (0, 0);  (sharper (2+M+N)^n) 3.114e-02 at (0, 0);  max over max(M,N) >= D-8: 6.555e-52
+n=7  max ratio (code majorant) 3.010e-07 at (0, 0);  (sharper (2+M+N)^n) 2.352e-02 at (0, 0);  max over max(M,N) >= D-8: 6.302e-53
+n=8  max ratio (code majorant) 4.651e-08 at (0, 0);  (sharper (2+M+N)^n) 1.817e-02 at (0, 0);  max over max(M,N) >= D-8: 1.110e-53
