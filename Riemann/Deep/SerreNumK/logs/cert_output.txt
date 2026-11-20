@@ -1,0 +1,71 @@
+R terms: {'ld': '384', 'rho': '382', 'nlog192': '384', 'nlog4': '192', 'nlogn': '384', 'nld': '96', 'nrho': '384'}
+PASS R: rho coeff 382, n*rho coeff 384
+PASS R: log d_K coeff 384 + 96 n_K
+PASS R: 384 n log192 + 192 n log4 = 384 n log384 (384^2 = 4*192^2) and 384 n log n
+pieces (upper): [5.3717, 29.3186, 151.1659, 1080.1187]
+PASS piece bounds 5.374, 29.32, 151.17, 1080.12
+PASS 0.108(1400 + log 3) > 151.17 (so G(R) <= 0.108(R+log3) for R >= 1400)
+PASS 0.094(11490 + log 3) > 1080.12 (so G(R) <= 0.094(R+log3) for R >= 11490)
+PASS ghat(R) = 0.108R + 152.3 >= G(R) for R >= 0: 152.3 > 151.17 (capped pieces), 0.108 log3 < 152.3, 0.094 log3 < 152.3, 1080.12 < 0.108e4 + 152.3
+
+Theorem A: N p <= (a rho + b)^32 [0.108], and (a1 rho + b1)^32 [0.094] once rho >= rho1;  rho = log N rad(2 O_K N1 N2)
+           K  d_K         a         b        a1        b1    rho1
+           Q    1    82.729   246.904    72.005   214.898  12.017 PASS
+   Q(sqrt 2)    8   124.201   680.540   108.101   592.322   4.513 PASS
+   Q(sqrt 3)   12   124.201   705.763   108.101   614.275   4.310 PASS
+   Q(sqrt 5)    5   124.201   651.302   108.101   566.874   4.749 PASS
+   Q(sqrt 6)   24   124.201   748.882   108.101   651.805   3.963 PASS
+   Q(sqrt 7)   28   124.201   758.471   108.101   660.151   3.886 PASS
+  Q(sqrt 10)   40   124.201   780.659   108.101   679.463   3.707 PASS
+  Q(sqrt 11)   44   124.201   786.589   108.101   684.623   3.660 PASS
+  Q(sqrt 13)   13   124.201   710.742   108.101   618.609   4.270 PASS
+  Q(sqrt 14)   56   124.201   801.591   108.101   697.681   3.539 PASS
+  Q(sqrt 15)   60   124.201   805.883   108.101   701.416   3.504 PASS
+  Q(sqrt 17)   17   124.201   727.430   108.101   633.134   4.136 PASS
+  Q(sqrt 19)   76   124.201   820.588   108.101   714.215   3.386 PASS
+  Q(sqrt 21)   21   124.201   740.575   108.101   644.575   4.030 PASS
+  Q(sqrt 22)   88   124.201   829.708   108.101   722.153   3.312 PASS
+  Q(sqrt 23)   92   124.201   832.473   108.101   724.560   3.290 PASS
+  Q(sqrt 26)  104   124.201   840.100   108.101   731.198   3.229 PASS
+  Q(sqrt 29)   29   124.201   760.654   108.101   662.051   3.868 PASS
+  Q(sqrt 30)  120   124.201   849.002   108.101   738.946   3.157 PASS
+  Q(sqrt 31)  124   124.201   851.042   108.101   740.722   3.141 PASS
+  Q(sqrt 33)   33   124.201   768.692   108.101   669.047   3.804 PASS
+  Q(sqrt 34)  136   124.201   856.788   108.101   745.723   3.094 PASS
+  Q(sqrt 35)  140   124.201   858.591   108.101   747.293   3.080 PASS
+  Q(sqrt 37)   37   124.201   775.810   108.101   675.242   3.746 PASS
+  Q(sqrt 38)  152   124.201   863.707   108.101   751.745   3.039 PASS
+  Q(sqrt 39)  156   124.201   865.323   108.101   753.152   3.026 PASS
+  Q(sqrt 41)   41   124.201   782.196   108.101   680.800   3.695 PASS
+  Q(sqrt 42)  168   124.201   869.933   108.101   757.164   2.988 PASS
+  Q(sqrt 43)  172   124.201   871.397   108.101   758.438   2.977 PASS
+  Q(sqrt 46)  184   124.201   875.592   108.101   762.090   2.943 PASS
+  Q(sqrt 47)  188   124.201   876.930   108.101   763.254   2.932 PASS
+PASS Theorem A constants, all fields
+
+Type 2 chain: d_K <= 188, intervals of width 1/4 on [150, 2000]: last failing interval ends at y* = 162.0
+PASS Type 2 chain passes on [162.0, 2000] (7352 intervals)
+PASS tail t1: 2 log d_K + log 16 <= Y0 (so R_F <= 3y)
+PASS tail t2: 0.108R + 152.3 <= R for R >= 171
+PASS tail t3: 6y + 4 log 4 + 128 log(3y) <= 7y at y = Y0 (difference increasing for y > 128)
+PASS tail t4: 32 log(7y) + log 4 < y at y = Y0 (difference increasing for y > 32)
+=> no Momose Type 2 isogeny prime p over any real quadratic K with d_K <= 188 has log p >= 162.0 (p >= 10^70.356)
+
+Table: log10 of the bounds (rho = log N rad(2 O_K N...)); A = N p (Thm A); B = 2 sqrt(A) (Thm B, l <= B); GRH = paper (C1 rho + C2)^2 and 2(C1 rho + C2)
+           K   N rad         A   A GRH        B  B GRH      Cor
+           Q    10^1    84.508   7.662   42.555  4.132   42.555
+           Q    10^6    98.645   8.537   49.624  4.570   49.624
+           Q  10^100   135.205  10.761   67.904  5.681   67.904
+   Q(sqrt 2)    10^1    95.527   8.332   48.064  4.467   70.356
+   Q(sqrt 2)    10^6   106.217   9.019   53.409  4.811   70.356
+   Q(sqrt 2)  10^100   141.000  11.124   70.801  5.863   70.801
+   Q(sqrt 5)    10^1    95.100   8.310   47.851  4.456   70.356
+   Q(sqrt 5)    10^6   106.046   9.010   53.324  4.806   70.356
+   Q(sqrt 5)  10^100   140.986  11.123   70.794  5.863   70.794
+  Q(sqrt 47)    10^1    97.071   8.465   48.837  4.534   70.356
+  Q(sqrt 47)    10^6   107.311   9.082   53.957  4.842   70.356
+  Q(sqrt 47)  10^100   141.093  11.130   70.848  5.866   70.848
+info Q(sqrt 5): 2G(R)^16 > e^y* once rho > 215.9 (N rad > 10^93.7) [float]
+info Q(sqrt 47): 2G(R)^16 > e^y* once rho > 214.0 (N rad > 10^93.0) [float]
+
+ALL CERTIFIED (0.6 s)

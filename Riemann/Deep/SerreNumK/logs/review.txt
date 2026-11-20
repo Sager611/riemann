@@ -1,0 +1,11 @@
+reviewer subagent ab9c4745 (gpt-6-astra, thinking xhigh), 2026-11-19 23:52–23:58 UTC, on pasted R1–R6 (exact formulas, no files):
+R1 CORRECT — Taking the supremum handles downward jumps; both envelope thresholds are valid.
+R2 CORRECT — Odd valuations force ramification, and the discriminant estimates combine to exactly the stated R.
+R3 GAP — General bound works, but K = Q gives b = 246.903698…, not an outward-rounded 246.9; use 246.904, or justify additional slack.
+R4 CORRECT — The normalizer's prime-to-ℓ order excludes the wild supersingular alternative; the ordinary-inertia exclusion and Hasse contradiction then work.
+R5 CORRECT — Ramification ensures q2 ≠ q1; two distinct roots of X²+X+1 cannot both lie below p/4. The certified bounds suffice.
+R6 CORRECT — Using the quoted unconditional paper/BD exclusions and R4, the maximal-subgroup cases are exhausted; the isolated R3 decimal issue does not affect this bound.
+Overall: ROUTINE — INCOMPLETE as written. Fix R3's decimal; the argument otherwise transfers the supplied inputs rather than establishes a new arithmetic input.
+
+Resolution of R3: the paste rounded for brevity; cert.py rounds every constant up to 3 decimals and certifies
+A > a_ex, B > b_ex in Arb: K = Q has b = 246.904 (logs/cert_output.txt), which REPORT.md and DERIVATION.md use.

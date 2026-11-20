@@ -1,0 +1,37 @@
+/Users/adriansager/playground/riemann/.scratch/lst.py:13: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.datetime.utcnow()
+2611.01464  [math.NT 2026-11]  Adelic Galois representations are maximal for almost all Drinfeld modules
+2611.03606  [math.NT 2026-11]  Isogeny rigidity under algebraic group actions and finite translation orbits
+2611.08316  [math.NT 2026-11]  $p$-parity conjecture for Panchishkin Galois representations
+2611.14873  [math.NT 2026-11]  Rational isogenies of rank-two Drinfeld modules
+2611.17255  [math.NT 2026-11]  The lifting problem for Galois representations of global fields
+2611.19007  [math.NT 2026-11]  On p-adic modularity of abelian threefolds with imaginary multiplication and rational p-isogeny
+2611.19556  [math.NT 2026-11]  An Explicit Version of Serre's Open Image Theorem for Galois Number Fields
+2610.03100  [math.NT 2026-10]  Cubic arithmetic-geometric mean and isogenies of Hesse elliptic curves
+2610.06521  [math.NT 2026-10]  $7$-adic Galois representations of elliptic curves over the rationals via Kummer descent
+2610.12080  [math.NT 2026-10]  A uniform bound for the minimal degree of an isogeny between principally polarized superspecial abelian surfaces
+2610.19293  [math.NT 2026-10]  Reductions of Galois representations of slope $2$
+2610.21488  [math.NT 2026-10]  Smoothness of Shortest Isogenies to Frobenius Conjugates
+2610.23579  [math.NT 2026-10]  Lifting mod $p^n$ Galois representations
+2610.37261  [math.NT 2026-10]  Explicit Serre weights for modular Galois representations of $U(2)$
+2610.38581  [math.NT 2026-10]  Lifting mod $p$ Galois representations over local fields
+2610.38884  [math.NT 2026-10]  Serre's conjectures for $\Q(\sqrt{13})$
+2610.41764  [math.NT 2026-10]  On the modularity of residually reducible Galois representations of rank 2
+-- 17 title hits in 1 cats x (2026-11, 2026-10)
+zenodo 24270693  2017-11-09  Digital Image Hiding Using Transformation Techniques
+zenodo 24208953  2026-11-13  Evaluating an open image-to-CAD model on photographed hand sketches of construction equipment parts
+zenodo 23224615  2026-09-06  Realization and rigidity of finite discriminant pairings
+zenodo 23102070  2026-10-02  On the Birch and Swinnerton-Dyer Conjecture: A Structural Framework for Ranks r≥2 via Higher Cycles and Iwasawa Theory
+zenodo 20074039  2026-05-07  FishAge: An open image repository for fish aging research
+zenodo 18056876  2025  Відкриті моделі генерації зображень у створенні навчального контенту для STEM-дисциплін
+zenodo 17165968  2026-01-21  MACO: An Open-Image Data Set with Multiannotation Strategies for Building Material Counting
+zenodo 13268358  2024-08-08  DsCGF: A large-scale open image dataset for deep learning enabled intelligent sorting and analyzing of raw coal (part 1)
+zenodo 13270674  2024-08-08  DsCGF: A large-scale open image dataset for deep learning enabled intelligent sorting and analyzing of raw coal (part 3)
+zenodo 13255355  2024-08-07  DsCGF: A large-scale open image dataset for deep learning enabled intelligent sorting and analyzing of raw coal (part 2)
+zenodo 8011889  2023-06-06  Extract marker genes of fluorescent cells in the mouse brain by combining scRNA Seq and MERFISH
+zenodo 8245232  2023-11-01  Vehicle detection and classification using three variations of you  only look once algorithm
+zenodo 7586950  2023-01-04  Guest Editorial Large-Scale Medical Image and Video Analytics for Clinical Decision Support
+zenodo 7271768  2022-11-01  Building a high-quality annotated image library to improve object detection
+zenodo 7064324  2022-09-09  SUTO-Solar through-turbulence open image dataset
+-- zenodo total 34
+memcap: peak 0 MB rc=0

@@ -1,0 +1,14 @@
+Q(sqrt5): 24 curves over K (8 base changes, 16 twists by d = 1/2*y + 1/2, y), 276 pairs, 276 with a separating degree-1 good prime <= 3000;
+   largest least separating prime p0 = 31, log(p0) - 32 log(a rho + b) = -233.03239385200816003875504897457670313
+   twist step: least good degree-1 p with chi_D(p) = -1, a_p != 0 is <= 31 for all 24 curves and 4 characters
+   [0, -1, 1, -10, -20]: isogeny degrees over K ellisomat n/a; known non-surjective l = 5 <= 2(a rho + b)^16 = 10^50.733351240797248361448173307231938522
+   [1, 0, 1, -190891, -36002922]: isogeny degrees over K ellisomat n/a; known non-surjective l = 17 <= 2(a rho + b)^16 = 10^52.098314146074562180567334389072863743
+   [1, 1, 1, -8, 6]: isogeny degrees over K ellisomat n/a; known non-surjective l = 37 <= 2(a rho + b)^16 = 10^51.149656532786118486521607135299831564
+   Hensel-Serre (4.4) on 8 fields K(E[2]): max(log d_L - bound) = 0.E-38 (must be <= 0)
+Q(sqrt2): 24 curves over K (8 base changes, 16 twists by d = y + 1, y), 276 pairs, 276 with a separating degree-1 good prime <= 3000;
+   largest least separating prime p0 = 41, log(p0) - 32 log(a rho + b) = -224.47512767566722516535098742716829560
+   twist step: least good degree-1 p with chi_D(p) = -1, a_p != 0 is <= 47 for all 24 curves and 4 characters
+   [0, -1, 1, -10, -20]: isogeny degrees over K ellisomat n/a; known non-surjective l = 5 <= 2(a rho + b)^16 = 10^50.449249007665215383330473234027372095
+   [1, 0, 1, -190891, -36002922]: isogeny degrees over K ellisomat n/a; known non-surjective l = 17 <= 2(a rho + b)^16 = 10^52.651212942649051793280651614510497603
+   [1, 1, 1, -8, 6]: isogeny degrees over K ellisomat n/a; known non-surjective l = 37 <= 2(a rho + b)^16 = 10^51.779868204587898918610259755377204503
+   Hensel-Serre (4.4) on 8 fields K(E[2]): max(log d_L - bound) = 0.E-37 (must be <= 0)

@@ -1,0 +1,2 @@
+2.2.5.1 curves 400 max cond norm 256 non-CM with nonmax primes 378 largest (7, '2.2.5.1-41.2-a2') | not base change: 340 largest (7, '2.2.5.1-41.2-a2')
+2.2.8.1 curves 0 max cond norm None non-CM with nonmax primes 0 largest None | not base change: 0 largest None
