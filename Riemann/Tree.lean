@@ -530,3 +530,4 @@ import Riemann.Tree.R530
 import Riemann.Tree.R531
 import Riemann.Tree.R532
 import Riemann.Tree.R533
+import Riemann.Tree.R534
