@@ -1,0 +1,7 @@
+time 0.0 s
+m=6 h=0.1 L=  10.0 n=950  L*U_all=0.080808  L*sum_g U_g=0.076484  ratio=1.05654
+m=6 h=0.1 L=  20.0 n=950  L*U_all=0.077185  L*sum_g U_g=0.076595  ratio=1.00771
+m=6 h=0.1 L=  40.0 n=950  L*U_all=0.075633  L*sum_g U_g=0.076565  ratio=0.98783
+m=6 h=0.1 L=  80.0 n=950  L*U_all=0.076610  L*sum_g U_g=0.076592  ratio=1.00023
+m=6 h=0.1 L= 160.0 n=950  L*U_all=0.074423  L*sum_g U_g=0.074549  ratio=0.99831
+time 1.3 s

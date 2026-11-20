@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/DbarNB/dbarnb_falsify.py", line 50, in <module>
+    ev = sl.eigh(B, G, eigvals_only=True)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/436Nob1Y6N5WJGYeBrS6M/lib/python3.12/site-packages/scipy/_lib/_util.py", line 1138, in wrapper
+    return f(*arrays, *other_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/436Nob1Y6N5WJGYeBrS6M/lib/python3.12/site-packages/scipy/linalg/_decomp.py", line 621, in eigh
+    raise LinAlgError(f'The leading minor of order {info-n} of B is not '
+numpy.linalg.LinAlgError: The leading minor of order 54 of B is not positive definite. The factorization of B could not be completed and no eigenvalues or eigenvectors were computed.
+memcap: peak 0 MB rc=1

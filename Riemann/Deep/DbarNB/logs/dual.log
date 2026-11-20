@@ -1,0 +1,5 @@
+time 0.0 s
+DUAL L=  5.0 max|K-N|/max|K| = 9.63e-17  L*U_K=0.0403698458  L*U_N=0.0403698458
+DUAL L= 20.0 max|K-N|/max|K| = 9.70e-17  L*U_K=0.0382192552  L*U_N=0.0382192552
+DUAL L= 80.0 max|K-N|/max|K| = 9.70e-17  L*U_K=0.0377548398  L*U_N=0.0377548398
+time 0.0 s

@@ -1,0 +1,7 @@
+time 0.0 s
+m=4 h=0.3 L=  10.0 n=810  L*U_all=0.064963  L*sum_g U_g=0.063431  ratio=1.02415  sup_p sum_g N(p_g)/N(p)=523.54172  inf=0.45813
+m=4 h=0.3 L=  20.0 n=810  L*U_all=0.064199  L*sum_g U_g=0.063442  ratio=1.01194  sup_p sum_g N(p_g)/N(p)=4.62558  inf=0.54623
+m=4 h=0.3 L=  40.0 n=810  L*U_all=0.063449  L*sum_g U_g=0.063447  ratio=1.00002  sup_p sum_g N(p_g)/N(p)=1.42559  inf=0.76428
+m=4 h=0.3 L=  80.0 n=810  L*U_all=0.063450  L*sum_g U_g=0.063450  ratio=0.99999  sup_p sum_g N(p_g)/N(p)=1.16090  inf=0.87611
+m=4 h=0.3 L= 160.0 n=810  L*U_all=0.063440  L*sum_g U_g=0.063451  ratio=0.99982  sup_p sum_g N(p_g)/N(p)=1.08338  inf=0.92725
+time 4.9 s

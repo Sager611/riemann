@@ -1,0 +1,7 @@
+time 0.0 s
+m=5 h=0.3 L=  10.0 n=880  L*U_all=0.080509  L*sum_g U_g=0.075693  ratio=1.06363
+m=5 h=0.3 L=  20.0 n=880  L*U_all=0.076798  L*sum_g U_g=0.075711  ratio=1.01436
+m=5 h=0.3 L=  40.0 n=880  L*U_all=0.075754  L*sum_g U_g=0.075720  ratio=1.00045
+m=5 h=0.3 L=  80.0 n=880  L*U_all=0.075814  L*sum_g U_g=0.075725  ratio=1.00118
+m=5 h=0.3 L= 160.0 n=880  L*U_all=0.075734  L*sum_g U_g=0.075727  ratio=1.00009
+time 1.0 s
