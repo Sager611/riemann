@@ -1,0 +1,4 @@
+gamma=0.030 z(0.7523)=1.1960e-03 theta=0.8733326616008 theta-theta_inf=-1.319e-05 cross=0.752127
+gamma=0.050 z(0.7523)=1.7669e-03 theta=0.8733082692589 theta-theta_inf=-3.759e-05 cross=0.751766
+gamma=0.100 z(0.7523)=3.5217e-03 theta=0.8732277837362 theta-theta_inf=-1.181e-04 cross=0.750579
+gamma=0.200 z(0.7523)=6.9952e-03 theta=0.8730626807935 theta-theta_inf=-2.832e-04 cross=0.758125

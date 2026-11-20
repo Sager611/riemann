@@ -1,0 +1,5 @@
+(1) max over r in [0.7335, 7/9) of z(r) - (7/6 - 3r/2) = -1.5000e-09 (negative <=> thr < 1/2); thr range [0.362614, 0.500000]
+(2) finite chain step 1/4000 sig=0.000000: z(0.7523)=8.797111e-04 z(0.7335)=3.130170e-03
+(2) finite chain step 1/4000 sig=0.028470: z(0.7523)=8.715642e-04 z(0.7335)=3.101632e-03
+(2) finite chain step 1/4000 sig=0.085409: z(0.7523)=8.557148e-04 z(0.7335)=3.046088e-03
+(3) gamma* = (1-2k)/3: range [0.0000, 0.0916]; at the contact crossing r=0.752322: k=0.425831 gamma*=0.04945

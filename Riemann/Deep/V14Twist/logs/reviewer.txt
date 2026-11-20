@@ -1,0 +1,6 @@
+- **A: CORRECT for PR137’s existing Cauchy/fibre/per-twist-max argument.** The residual \(Z^\tau\) gives \(xH_c'+\tau\le u'\); it also multiplies the diagonal, whose exponent becomes \(K'+\tau\), improving by \(3\tau\) relative to untwisted.
+- **B: CORRECT.** Substitution gives \(z_r=Hz+e(1/k-2)\); at fixed \(H\), \(e=(1-H)/6-\tau/3\). The threshold is unchanged. Strict negativity requires \(\tau>0\) and \(0<k<1/2\).
+- **C: CORRECT within the stated comparison domain** (\(R>2/3\), \(T\ge0\), \(e\ge0\), \(0<H\le1\)). Your sign split establishes exactly the existing per-stage comparison bound.
+- **Overall: CORRECT / COMPLETE as a conditional, method-specific reduction.** “Unavoidable” concerns the existing max-energy argument—not a hypothetical stronger joint-twist estimate. The asserted numerical chain margin was not independently certified.
+
+No file written: read-only reviewer constraint.
