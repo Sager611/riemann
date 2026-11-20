@@ -1,0 +1,29 @@
+ML092g8_e05_Bp s 0.91834586 t 14.1217 |1/zeta| = 3.553756226 ratio to C(1000) t^a = 
+ML092g8_e05_Bp s 0.91834586 t 1083.2225 |1/zeta| = 3.983703908 ratio to C(1000) t^a = 8.7890e-10
+ML093g5_e10_Bp s 0.92834586 t 14.1208 |1/zeta| = 3.484074752 ratio to C(1000) t^a = 
+ML093g5_e10_Bp s 0.92834586 t 1083.2247 |1/zeta| = 3.898092879 ratio to C(1000) t^a = 4.7012e-07
+sigma 0.85 t 1083.2099 |1/zeta| = 4.696125494 ratio to C_L t^a_L = 2.6508e-05
+max |1/zeta(0.918346 + i gamma_n)|, n <= 30: 3.552302 1.5 s
+t = 3e12 + 0.0 sigma 0.85 |1/zeta| = 0.496877 bound (RH strip, C_L t^a_L) = 1.0003e+08 ratio 4.967e-09 26.1 s
+t = 3e12 + 0.37 sigma 0.85 |1/zeta| = 0.602294 bound (RH strip, C_L t^a_L) = 1.0003e+08 ratio 6.021e-09 29.1 s
+t = 3e12 + 0.0 sigma 0.918345856106719 |1/zeta| = 0.48619 bound (final cert line, C_inf(T') t^a) = 4.4914e+10 ratio 1.082e-11 35.2 s
+t = 3e12 + 0.37 sigma 0.918345856106719 |1/zeta| = 0.59873 bound (final cert line, C_inf(T') t^a) = 4.4914e+10 ratio 1.333e-11 31.6 s
+memcap: peak 16 MB rc=0
+      124.80 real        79.98 user        54.69 sys
+            34701312  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               90570  page reclaims
+                 121  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  77  signals received
+                 357  voluntary context switches
+              294212  involuntary context switches
+           150724109  instructions retired
+           197222057  cycles elapsed
+             2310480  peak memory footprint

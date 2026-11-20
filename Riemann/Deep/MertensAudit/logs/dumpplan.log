@@ -1,0 +1,21 @@
+0.9409 plan log10c 4.1816 L0 240.25 L1 327.1 ranges 1737 fin ML092g8_e05_Bp used [('ML093g5_e10_Bp', 146), ('ML092g8_e05_Bp', 1591)] 40.0 s
+0.9382 plan log10c 4.986 L0 242.8 L1 333.65000000000003 ranges 1817 fin ML092g8_e05_Bp used [('ML093g5_e10_Bp', 95), ('ML092g8_e05_Bp', 1722)] 82.7 s
+memcap: peak 50 MB rc=0
+       84.92 real        73.95 user        47.02 sys
+            71991296  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               87267  page reclaims
+                 718  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  66  signals received
+                 428  voluntary context switches
+              202955  involuntary context switches
+           142136597  instructions retired
+           154052719  cycles elapsed
+             2277712  peak memory footprint

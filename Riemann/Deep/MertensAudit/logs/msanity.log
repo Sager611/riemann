@@ -1,0 +1,42 @@
+own sieve: M(10^k) = OEIS for k <= 7; max |M(x)|/sqrt(x) on [2, 1e7] = 0.89443 at x = 5
+bound 9.69e4 x^0.9382 : max |M(x)|/bound on [2, 1e7] = 4.560e-06 at x = 5 ; at x = 1: 1.032e-05
+bound 1.52e4 x^0.9409 : max |M(x)|/bound on [2, 1e7] = 2.894e-05 at x = 5 ; at x = 1: 6.579e-05
+bound 1.84e6 x^0.9382 : max |M(x)|/bound on [2, 1e7] = 2.401e-07 at x = 5 ; at x = 1: 5.435e-07
+bound 7.91e5 x^0.9409 : max |M(x)|/bound on [2, 1e7] = 5.562e-07 at x = 5 ; at x = 1: 1.264e-06
+bound 9.69e4 x^0.9382 : max |M|/bound over OEIS 10^8..10^23 and Hurst extremes = 6.211e-10
+bound 1.52e4 x^0.9409 : max |M|/bound over OEIS 10^8..10^23 and Hurst extremes = 3.768e-09
+M78 H093 theta 0.9409 C'(all x) = 7.908262e5 C(x>=xa) = 6.094734e5 xa = 1e163
+M78 ML093g5_e10 theta 0.9382 C'(all x) = 1.838317e6 C(x>=xa) = 1.494562e6 xa = 1e160
+M78 ML092g8_e10 theta 0.9296 C'(all x) = 1.848409e8 C(x>=xa) = 1.529661e8 xa = 1e169
+M78 ML092g8_e05 theta 0.9277 C'(all x) = 7.531913e8 C(x>=xa) = 6.216262e8 xa = 1e172
+M78 ML091g12_e03 theta 0.9192 C'(all x) = 3.536123e12 C(x>=xa) = 2.931237e12 xa = 1e200
+M78 S090g20_e01 theta 0.9121 C'(all x) = 3.344139e20 C(x>=xa) = 2.748432e20 xa = 1e275
+M78 S090g40_e005 theta 0.9092 C'(all x) = 1.224220e26 C(x>=xa) = 1.022685e26 xa = 1e326
+M78 S089g400_e005 theta 0.9024 C'(all x) = 6.690644e110 C(x>=xa) = 5.590547e110 xa = 1e1173
+M78 S089g3000_e005 theta 0.8992 C'(all x) = 1.007355e382 C(x>=xa) = 8.197305e381 xa = 1e3826
+HP141 0.9409 152e2 ['CH [15091.985595758106606', 'ranges [15192.688505436411022', 'final [15177.306484493521109']
+HP141 0.9382 969e2 ['CH [96607.619766254125358', 'ranges [96825.485485476207829', 'final [96776.936003268029528']
+theta141 = 0.8733458561067185768011847960650723567704
+0.87334585610671858 >= theta141 ? True  diff 3.1988152039349275e-18
+0.8733458561067185768 >= theta141 ? False  diff -1.1847960650723567e-21
+0.8733458561067185768011848 >= theta141 ? True  diff 3.934927643229558e-27
+D = 7/8 - Bprime = 82707194664071/50000000000000000
+memcap: peak 0 MB rc=0
+        8.10 real         4.50 user         4.82 sys
+           175816704  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20408  page reclaims
+                  11  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   5  signals received
+                  22  voluntary context switches
+               15179  involuntary context switches
+            61566798  instructions retired
+            50773994  cycles elapsed
+             2228560  peak memory footprint

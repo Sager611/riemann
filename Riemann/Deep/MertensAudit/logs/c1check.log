@@ -1,0 +1,24 @@
+A ML092g8 {'Y': 56.0, 'Y0': 56.0, 'uniform_last_hi_equals_Y0': True, 'balls': 28634, 'balls_missing_an_endpoint': 0, 'max_gap': 0.0, 'min_lower_F': 8.038734344850695e-09} 3.2 s
+A ML093g5 {'Y': 56.0, 'Y0': 56.0, 'uniform_last_hi_equals_Y0': True, 'balls': 18678, 'balls_missing_an_endpoint': 0, 'max_gap': 0.0, 'min_lower_F': 1.6567813218570926e-08} 4.4 s
+A J0_direct balls 95000 missing an endpoint 0 max gap 0.0
+B ML092g8 {'Y': 16.0, 'C2_lower': 0.39203922723666496, 'intervals': 27148, 'min_lower_F': 2.097876442127597e-08, 'float_min_F': 0.0001538243694835309, 'at_w': 3.0992000000000033} 83.7 s
+B ML093g5 {'Y': 16.0, 'C2_lower': 0.39361967154121974, 'intervals': 16694, 'min_lower_F': 1.3448472804698374e-08, 'float_min_F': 0.0001615526523091465, 'at_w': 2.9272000000000027} 116.1 s
+memcap: peak 39 MB rc=0
+      117.32 real        81.98 user        54.12 sys
+            58785792  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               94587  page reclaims
+                 560  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  21  messages received
+                  80  signals received
+                 538  voluntary context switches
+              289780  involuntary context switches
+           150404173  instructions retired
+           172762387  cycles elapsed
+             2310480  peak memory footprint

@@ -1,0 +1,24 @@
+RH strip: Lam_L 1.9714286 a_L 0.29142857 log C_L 10.048373 log RHP 20.347116
+ML093g5_e10_Bp s 0.928345856107 Lam 2.170725378 a 0.13267488 logCinf(T') 14.9866546 logCinf(1000) 15.00367661
+ML092g8_e05_Bp s 0.918345856107 Lam 2.205079136 a 0.10644111 logCinf(T') 21.46999417 logCinf(1000) 21.49078307
+theta 0.9409 CH 15091.9855958 ranges max 15192.6885054 (range 1114 of 1737 ) final 15177.3064845 => c 15192.689
+theta 0.9382 CH 96607.6197663 ranges max 96825.4854855 (range 1146 of 1817 ) final 96776.9360033 => c 96825.485
+memcap: peak 0 MB rc=0
+        9.78 real         2.41 user         4.85 sys
+            34701312  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               10966  page reclaims
+                   9  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   7  signals received
+                  89  voluntary context switches
+               15771  involuntary context switches
+            60751512  instructions retired
+            45223768  cycles elapsed
+             2228560  peak memory footprint

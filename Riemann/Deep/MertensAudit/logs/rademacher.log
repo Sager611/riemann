@@ -1,0 +1,34 @@
+eta 0.1 sigma -0.1 max |zeta|/RHS on t in [0.013, 1e4] (step 0.5) = 0.1122 at t = 4478.013 17 s
+eta 0.1 sigma 0.5 max |zeta|/RHS on t in [0.013, 1e4] (step 0.5) = 0.0700 at t = 371.513 38 s
+eta 0.1 sigma 0.85 max |zeta|/RHS on t in [0.013, 1e4] (step 0.5) = 0.0815 at t = 2447.513 57 s
+eta 0.1 sigma 0.92 max |zeta|/RHS on t in [0.013, 1e4] (step 0.5) = 0.0876 at t = 2447.513 78 s
+eta 0.1 sigma 1.1 max |zeta|/RHS on t in [0.013, 1e4] (step 0.5) = 0.1122 at t = 4478.013 95 s
+eta 0.05 sigma -0.05 max |zeta|/RHS on t in [0.013, 1e4] (step 0.5) = 0.0625 at t = 4478.013 112 s
+eta 0.05 sigma 0.5 max |zeta|/RHS on t in [0.013, 1e4] (step 0.5) = 0.0411 at t = 2447.513 129 s
+eta 0.05 sigma 0.85 max |zeta|/RHS on t in [0.013, 1e4] (step 0.5) = 0.0487 at t = 2447.513 146 s
+eta 0.05 sigma 0.92 max |zeta|/RHS on t in [0.013, 1e4] (step 0.5) = 0.0523 at t = 2447.513 163 s
+eta 0.05 sigma 1.05 max |zeta|/RHS on t in [0.013, 1e4] (step 0.5) = 0.0625 at t = 4478.013 180 s
+eta 0.5 sigma -0.5 max |zeta|/RHS on t in [0.013, 1e4] (step 0.5) = 0.9994 at t = 0.013 198 s
+eta 0.5 sigma 0.5 max |zeta|/RHS on t in [0.013, 1e4] (step 0.5) = 0.1752 at t = 17.513 216 s
+eta 0.5 sigma 0.85 max |zeta|/RHS on t in [0.013, 1e4] (step 0.5) = 0.1789 at t = 45.513 233 s
+eta 0.5 sigma 0.92 max |zeta|/RHS on t in [0.013, 1e4] (step 0.5) = 0.1816 at t = 45.513 250 s
+eta 0.5 sigma 1.5 max |zeta|/RHS on t in [0.013, 1e4] (step 0.5) = 0.2824 at t = 4478.013 266 s
+memcap: peak 18 MB rc=0
+      267.02 real       239.75 user       151.37 sys
+            38338560  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              257584  page reclaims
+                 872  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  22  messages received
+                 210  signals received
+                1020  voluntary context switches
+              636617  involuntary context switches
+           334031212  instructions retired
+           366072204  cycles elapsed
+             2326864  peak memory footprint

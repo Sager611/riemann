@@ -1,0 +1,27 @@
+C_inf(1000) logs {'ML092g8_e05_Bp': np.float64(21.490783), 'ML093g5_e10_Bp': np.float64(15.003677)} a {'ML092g8_e05_Bp': np.float64(0.106441), 'ML093g5_e10_Bp': np.float64(0.132675)} logC_L 10.048373 a_L 0.291429
+ML092g8_e05_Bp R1 |1/z|/Phi (t>=0) sigma 0.918346 {'grid_max': 1.249317449000598e-09, 'grid_tmax': 14.100000000000001, 'refined_max': 1.250968551179362e-09, 'refined_t': np.float64(14.121692284946217), 'n': 200001} 285 s
+ML092g8_e05_Bp R2 |1/z|/(C t^a) (t>=1000) sigma 0.918346 {'grid_max': 8.777015456585078e-10, 'grid_tmax': 1083.2, 'refined_max': np.float64(8.789007393558985e-10), 'refined_t': np.float64(1083.222490564856), 'n': 180001} 285 s
+ML093g5_e10_Bp R1 |1/z|/Phi (t>=0) sigma 0.928346 {'grid_max': 7.474594422659533e-07, 'grid_tmax': 14.100000000000001, 'refined_max': 7.48323178707438e-07, 'refined_t': np.float64(14.12077478482151), 'n': 100001} 395 s
+ML093g5_e10_Bp R2 |1/z|/(C t^a) (t>=1000) sigma 0.928346 {'grid_max': 4.693701640731079e-07, 'grid_tmax': 1083.2, 'refined_max': np.float64(4.701184587532853e-07), 'refined_t': np.float64(1083.2247164199484), 'n': 90001} 396 s
+R3 |1/z(0.85+it)|/(C_L t^a_L) (t>=1000) sigma 0.85 {'grid_max': 2.649960956294085e-05, 'grid_tmax': 1083.2, 'refined_max': np.float64(2.6508487474286544e-05), 'refined_t': np.float64(1083.2099412893967), 'n': 180001} 598 s
+R4 J_L0 trapezoid (step 0.05) 17.483098375181108 vs certified upper 19.5963 max|1/z| on [0,1000] 4.50043144203243
+R5 max over 160 t of v(s1) - sum lam_j v(s_j) (must be <= 0): -4.050663048888707 608 s
+memcap: peak 44 MB rc=0
+      610.85 real       403.14 user       273.10 sys
+            56328192  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              454937  page reclaims
+                1724  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 398  signals received
+                1762  voluntary context switches
+             1488457  involuntary context switches
+           526033245  instructions retired
+           730343443  cycles elapsed
+             2294096  peak memory footprint

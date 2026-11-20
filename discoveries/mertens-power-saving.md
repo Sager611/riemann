@@ -14,8 +14,10 @@
 
 **Caveat.** Uses 7/8; the Lean-checked 0.87338196661320752 would lower θ by less than 0.001 (not done).
 
+**Audit.** AUDIT PASSED (mertensaudit, 20 Nov 2026, [MertensAudit](../Riemann/Deep/MertensAudit/REPORT.md)): every step of the chain (Mertens78 PROOF.md, MertensCH DERIVATION.md, HP141's θ₁₄₁ rerun) holds as written against its fetched sources (Rademacher's bound as quoted by Kadiri–Lumley–Ng; Platt–Trudgian's height 3 000 175 332 800, which covers the Harnack discs; Chirre–Helfgott at statement level, refereed by CHAudit2); the scripts certify exactly the stated inequalities with no gap, and independent mpmath code gives 96 825.485 and 15 192.689 before rounding up to 9.69·10^4 and 1.52·10^4; the key lemma |1/ζ(σ₁ + it)| ≤ C|t|^a has no counterexample for t ≤ 10^4 (largest ratio 8.8·10⁻¹⁰, about 10^9 of slack). With θ₁₄₁ the certified run hands over from Chirre–Helfgott at 10^242.80 (θ = 0.9382) and 10^240.25 (θ = 0.9409). Orchestrator rerun of evalind.py identical.
+
 **RH relevance:** N10 (explicit prime-error bounds): RH ⟺ M(x) = O(x^{1/2+ε}); this is the first explicit exponent below 1 for M, from the proved half-plane alone.
 
 **Files.** [Riemann/Deep/Mertens78/](../Riemann/Deep/Mertens78/) (REPORT.md, PROOF.md, cert.py, run.py, batch.py, chk.py, all.json, c_*.json, results.json, verify.log).
 
-**Later (11 Nov 2026).** |M(x)| ≤ 9.77·10^4 x^0.9382 and 1.54·10^4 x^0.9409 for all x ≥ 1 (mertensch: Chirre–Helfgott 2511.14736 below 10^242.85, a hybrid contour with RH to 3·10^12, these certificates moved to the Lean-checked B′); reviewer: correct, routine (a record, RECORDS.md); certificate rerun by the orchestrator identical; [MertensCH](../Riemann/Deep/MertensCH/REPORT.md).
+**Later (11 Nov 2026).** |M(x)| ≤ 9.77·10^4 x^0.9382 and 1.54·10^4 x^0.9409 for all x ≥ 1 (mertensch: Chirre–Helfgott 2511.14736 below 10^242.8, a hybrid contour with RH to 3·10^12, these certificates moved to the Lean-checked B′); reviewer: correct, routine (a record, RECORDS.md); certificate rerun by the orchestrator identical; [MertensCH](../Riemann/Deep/MertensCH/REPORT.md).
