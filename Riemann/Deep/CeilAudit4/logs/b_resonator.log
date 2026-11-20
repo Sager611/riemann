@@ -1,0 +1,12 @@
+(i) AFE-summed error exponent theta+1/4 = 1.1233458561067184 > 1: fails already for |R| = 1 (nu = 0); GRH: 3/4
+   unbalanced AFE, L1 = X^(1/2+0.0), L2 = X^(1/2-0.0): error exponent 1.1233
+   unbalanced AFE, L1 = X^(1/2+0.1), L2 = X^(1/2-0.1): error exponent 1.1733
+   unbalanced AFE, L1 = X^(1/2+0.25), L2 = X^(1/2-0.25): error exponent 1.2483
+(ii) large sieve, l ~ X^0.1: block error exponent 1.0000 (needs < 1 - nu)
+(ii) large sieve, l ~ X^0.25: block error exponent 1.0000 (needs < 1 - nu)
+(ii) large sieve, l ~ X^0.5: block error exponent 1.0000 (needs < 1 - nu)
+(iii) untwisted first moment, l <= X^(1/2): max_s [s - 1/4 + 3(1-s)/(2(2-s))] = 0.80051 at s = 0.7753 (< 1: transfers, error X^0.80)
+   log N = 1e+02: max log m / log N = 7.56 (grows like log2 N / log3 N): twist conductor m n = N^(that)
+   log N = 1e+04: max log m / log N = 9.63 (grows like log2 N / log3 N): twist conductor m n = N^(that)
+   log N = 1e+08: max log m / log N = 13.13 (grows like log2 N / log3 N): twist conductor m n = N^(that)
+   log N = 1e+16: max log m / log N = 19.51 (grows like log2 N / log3 N): twist conductor m n = N^(that)

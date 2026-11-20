@@ -1,0 +1,12 @@
+mean of g2 on (0,2) = 1.570796326795  (pi/2 = 1.570796326795)
+mu=1e+01 eps=0.01: N(4 pi mu)=40.79, lost=0.08439 (= 0.0084 mu), extra -log lambda = 0.3845 = 0.0031 x 4 pi mu
+mu=1e+01 eps=0.1: N(4 pi mu)=40.79, lost=0.8439 (= 0.0844 mu), extra -log lambda = 3.845 = 0.0306 x 4 pi mu
+mu=4e+01 eps=0.01: N(4 pi mu)=315.9, lost=0.4984 (= 0.0111 mu), extra -log lambda = 2.549 = 0.0045 x 4 pi mu
+mu=4e+01 eps=0.1: N(4 pi mu)=315.9, lost=4.984 (= 0.1108 mu), extra -log lambda = 25.49 = 0.0451 x 4 pi mu
+mu=1e+03 eps=0.01: N(4 pi mu)=1.32e+04, lost=13.99 (= 0.0140 mu), extra -log lambda = 78.7 = 0.0063 x 4 pi mu
+mu=1e+03 eps=0.1: N(4 pi mu)=1.32e+04, lost=139.9 (= 0.1399 mu), extra -log lambda = 787 = 0.0626 x 4 pi mu
+mu=1e+06 eps=0.01: N(4 pi mu)=2.702e+07, lost=1.653e+04 (= 0.0165 mu), extra -log lambda = 9.852e+04 = 0.0078 x 4 pi mu
+mu=1e+06 eps=0.1: N(4 pi mu)=2.702e+07, lost=1.653e+05 (= 0.1653 mu), extra -log lambda = 9.852e+05 = 0.0784 x 4 pi mu
+mu=1e+12 eps=0.01: N(4 pi mu)=5.465e+13, lost=1.812e+10 (= 0.0181 mu), extra -log lambda = 1.11e+11 = 0.0088 x 4 pi mu
+mu=1e+12 eps=0.1: N(4 pi mu)=5.465e+13, lost=1.812e+11 (= 0.1812 mu), extra -log lambda = 1.11e+12 = 0.0883 x 4 pi mu
+delta* ~ e^{-3.24 mu + 3.6} (MoriRate l.79): mu = 10 -> 3.1068402375434344e-13 ; mean spacing at 4 pi mu=125.7: 2.0973787820249776

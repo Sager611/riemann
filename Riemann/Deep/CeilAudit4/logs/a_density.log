@@ -1,0 +1,7 @@
+inputs=M: sup c_eff = 2.662751489675 at sigma = 0.873346 (Montgomery 3/(2-s)); A0 = 1.331375744837; fraction 1/A0 = 0.751102762596
+inputs=L: sup c_eff = 2.499999387671 at sigma = 0.800000 (Montgomery large-s 2/s); A0 = 1.249999693836; fraction 1/A0 = 0.800000195945
+inputs=LH: sup c_eff = 2.400000000000 at sigma = 0.750002 (Huxley 12/5); A0 = 1.200000000000; fraction 1/A0 = 0.833333333333
+inputs=LHC: sup c_eff = 2.333333333333 at sigma = 0.714287 (Chen-Gupta-Li 2507.08296 k^{7/3(1-s)}T^{2(1-s)}+(kT)^{30/13(1-s)}); A0 = 1.166666666667; fraction 1/A0 = 0.857142857143
+check 2(2-theta)/3 = 0.751102762595521  6/7 = 0.8571428571428571  5/6 = 0.8333333333333334
+binding interval [5/7, 6/7] = 0.7142857142857143 0.8571428571428571 inside [1/2, theta]: True
+CGL usable for s >= 17/30 = 0.5666666666666667 ; Montgomery below: max 3/(2-s) on [1/2,17/30] = 2.0930232558139537

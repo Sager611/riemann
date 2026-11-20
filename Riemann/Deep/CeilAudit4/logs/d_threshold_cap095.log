@@ -1,0 +1,13 @@
+zeros loaded: 22491, max 19999.3; pairs at indices [10142, 10149], CAP_SP=0.95
+t=10000.36 gap=0.587 r=0.80 M=100 delta=0.1356 rho_hs=1.066e-02 rho_op=5.827e-03 maxeps/sp=0.586 nx=204 sec=2.2 rssMB=35
+t=10000.36 gap=0.587 r=0.80 M=400 delta=0.1356 rho_hs=3.812e-05 rho_op=2.153e-05 maxeps/sp=0.434 nx=504 sec=28.1 rssMB=63
+t=10000.36 gap=0.587 r=0.90 M=100 delta=0.1356 rho_hs=6.982e-02 rho_op=1.708e-02 maxeps/sp=0.454 nx=217 sec=2.4 rssMB=63
+t=10000.36 gap=0.587 r=0.90 M=400 delta=0.1356 rho_hs=3.391e-02 rho_op=4.574e-03 maxeps/sp=0.395 nx=555 sec=36.3 rssMB=87
+t=10000.36 gap=0.587 r=1.00 M=100 delta=0.1356 rho_hs=7.095e-02 rho_op=2.118e-02 maxeps/sp=0.269 nx=230 sec=2.0 rssMB=87
+t=10000.36 gap=0.587 r=1.00 M=400 delta=0.1356 rho_hs=4.147e-02 rho_op=9.966e-03 maxeps/sp=0.276 nx=605 sec=37.9 rssMB=93
+t=10005.68 gap=0.742 r=0.80 M=100 delta=0.1356 rho_hs=2.666e-02 rho_op=6.471e-03 maxeps/sp=0.475 nx=204 sec=1.7 rssMB=93
+t=10005.68 gap=0.742 r=0.80 M=400 delta=0.1356 rho_hs=1.111e-02 rho_op=1.785e-03 maxeps/sp=0.462 nx=503 sec=28.3 rssMB=93
+t=10005.68 gap=0.742 r=0.90 M=100 delta=0.1356 rho_hs=1.949e-01 rho_op=1.918e-01 maxeps/sp=0.461 nx=218 sec=1.9 rssMB=93
+t=10005.68 gap=0.742 r=0.90 M=400 delta=0.1356 rho_hs=1.328e-01 rho_op=1.328e-01 maxeps/sp=0.725 nx=554 sec=33.7 rssMB=93
+t=10005.68 gap=0.742 r=1.00 M=100 delta=0.1356 rho_hs=4.787e-01 rho_op=5.449e-01 maxeps/sp=0.380 nx=231 sec=2.0 rssMB=93
+t=10005.68 gap=0.742 r=1.00 M=400 delta=0.1356 rho_hs=4.498e-01 rho_op=5.179e-01 maxeps/sp=0.387 nx=604 sec=36.4 rssMB=93
