@@ -1,0 +1,8 @@
+DH evenness psi(0.3)-psi(-0.3) = 3.1115e-61  psi(0.3) = 1.016472625
+xi max rel diff deg6 vs deg7 over k<=K: 9.18e-60
+xi negative moments at k = []
+dh max rel diff deg6 vs deg7 over k<=K: 7.39e-60
+dh negative moments at k = []
+gamma_xi(0..3) = ['0.994241556376628219', '0.005742986078786359', '0.000030863004517579', '0.000000156066652759']
+gamma_dh(0..3) = ['1.433192168775008441', '0.140552549684599732', '0.011277985501350100', '0.000785608925766477']
+memcap: peak 31 MB rc=0

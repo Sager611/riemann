@@ -1,0 +1,9 @@
+d=  4 n=    0  rho3_orig = 0.0149013  *3sqrt(n+d) = 0.0894079   rho3_rev = 0.212046
+d=  4 n=  100  rho3_orig = 0.0162038  *3sqrt(n+d) = 0.495742   rho3_rev = 0.0548075
+d=  4 n= 1000  rho3_orig = 0.00681847  *3sqrt(n+d) = 0.64815   rho3_rev = 0.0188497
+d= 20 n=  100  rho3_orig = 0.0154627  *3sqrt(n+d) = 0.508158   rho3_rev = 0.0548075
+d= 20 n= 1000  rho3_orig = 0.00677302  *3sqrt(n+d) = 0.648939   rho3_rev = 0.0188497
+d= 60 n= 1000  rho3_orig = 0.00666353  *3sqrt(n+d) = 0.650846   rho3_rev = 0.0188497
+d=10: real-rooted at 14 points in (-r3, r3): True; real-rooted points among 1.125,1.5,2,4 x r3: []
+d=40: real-rooted at 14 points in (-r3, r3): True; real-rooted points among 1.125,1.5,2,4 x r3: []
+memcap: peak 0 MB rc=0

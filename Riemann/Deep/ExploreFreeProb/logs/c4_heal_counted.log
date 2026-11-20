@@ -1,0 +1,8 @@
+isolated-pair prediction floor(1/sin^2 theta) = 13516436
+A isolated pair                                         zeros   2  d_max = 13516228  ratio to isolated 1.000  (0 s)
+B pair, real neighbours both sides (spacing Delta)      zeros  82  d_max = 58594049  ratio to isolated 4.335  (207 s)
+C lattice of off-line pairs (spacing 2 Delta: 2 zeros each) zeros  82  d_max = 25485626  ratio to isolated 1.886  (239 s)
+D pair in S(T)-worst gap (half-width 7.42 Delta), real beyond zeros  82  d_max = 21571105  ratio to isolated 1.596  (116 s)
+D2 same gap, off-line pairs beyond (spacing 2 Delta)    zeros  82  d_max = 21717539  ratio to isolated 1.607  (116 s)
+E real below (spacing Delta), pairs from G0 up (2 Delta) zeros  80  d_max = 25846554  ratio to isolated 1.912  (95 s)
+memcap: peak 16 MB rc=0

@@ -1,0 +1,8 @@
+x-family J^{d,0} real-rooted for d in [2, 26] (gap-free: True)
+t-family P_m real-rooted for m in [4, 103] (gap-free: True)
+Spark criterion sin^2(arg w) = 1/26 <= (4m-6)/(m(m-1)) at m=103: True  m=104: False
+d=27: J^{27,0} real roots (0, 2)  P_54 real roots (4, 4)
+M_d not real-rooted for d in []  (coefficients > 0, so roots < 0)
+inverse multiplier real-rooted for d in [1]  (2..60 checked)
+identity P_{2d} = J^{d,0} (.) M_d (d=7, generic sequence): True
+memcap: peak 0 MB rc=0

@@ -1,0 +1,7 @@
+F double pair isolated                                                   zeros   4  d_max/d_iso = 1.500  (0 s)
+G double pair in S(T)-worst gap (4 zeros: half-width 8.42), real beyond  zeros  84  d_max/d_iso = 2.020  (140 s)
+H one-sided gap 14.84 Delta above, real below at spacing Delta           zeros  82  d_max/d_iso = 2.746  (161 s)
+I deficit spread: real zeros at spacing 2 Delta, |h| <= 25.7 Delta       zeros  68  d_max/d_iso = 2.285  (91 s)
+J beta/Delta = 0.21, isolated                                            zeros   2  d_max/d_iso = 1.000  (0 s)
+K beta/Delta = 0.21, real neighbours both sides                          zeros  82  d_max/d_iso = 1.132  (314 s)
+memcap: peak 15 MB rc=0

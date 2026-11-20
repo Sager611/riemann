@@ -1,0 +1,12 @@
+D3 worst gap, zeros beyond doubled                             zeros  62  d_max/d_iso = 1.611  (142 s)
+D5 worst gap, pair 3 Delta off-centre                          zeros  62  d_max/d_iso = 1.686  (61 s)
+R1 gap half-width 4.24 Delta, 21 real + 19 off-line pairs            d_max/d_iso = 2.133  (53 s)
+R2 gap half-width 1.44 Delta, 20 real + 20 off-line pairs            d_max/d_iso = 4.470  (55 s)
+R3 gap half-width 4.61 Delta, 22 real + 18 off-line pairs            d_max/d_iso = 2.133  (46 s)
+R4 gap half-width 5.06 Delta, 22 real + 18 off-line pairs            d_max/d_iso = 2.051  (40 s)
+R5 gap half-width 4.40 Delta, 17 real + 23 off-line pairs            d_max/d_iso = 2.141  (54 s)
+R6 gap half-width 0.80 Delta, 18 real + 22 off-line pairs            d_max/d_iso = 4.866  (90 s)
+R7 gap half-width 3.02 Delta, 18 real + 22 off-line pairs            d_max/d_iso = 2.660  (63 s)
+R8 gap half-width 6.85 Delta, 19 real + 21 off-line pairs            d_max/d_iso = 1.749  (81 s)
+min ratio over these configurations: 1.611
+memcap: peak 15 MB rc=0
