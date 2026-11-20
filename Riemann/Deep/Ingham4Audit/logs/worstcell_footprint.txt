@@ -1,0 +1,38 @@
+memcap: peak 20 MB rc=0
+      171.82 real       164.50 user       105.70 sys
+            34570240  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              175508  page reclaims
+                 247  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 138  signals received
+                 795  voluntary context switches
+              287142  involuntary context switches
+           240172234  instructions retired
+           250578984  cycles elapsed
+             2244944  peak memory footprint
+memcap: peak 20 MB KILLED TIME>400s rc=137
+      403.82 real        22.05 user       230.90 sys
+            37568512  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              388697  page reclaims
+                 554  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  20  messages sent
+                  21  messages received
+                 326  signals received
+                1408  voluntary context switches
+              351676  involuntary context switches
+           472153837  instructions retired
+           526993594  cycles elapsed
+             2244944  peak memory footprint

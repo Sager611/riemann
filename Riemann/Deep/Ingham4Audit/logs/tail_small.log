@@ -1,0 +1,7 @@
+sigma-cells 144; Amax = 9.5833899, Bmax = 6.1045476 (cert.py log: 9.58339, 6.10455)
+p_max = 1.39, p1 = 1.025, M* = 30.33782042, M1 = 8.921856309, Xi = 177.268319
+conditions: {'lam0_lt1': True, 'main': True, 'Bterm': True, 'Sterm': True, 'PP': True, 'kap': True, 'Xi': True, 'ydmax': True} all: True
+R_an(300) = 0.01417673856 (cert.py: 0.01419639346)
+R_an at L = 300, 310, 350, 500, 1000, 3000, 1e4: ['0.0141767', '0.00722319', '0.000471747', '1.2381e-8', '1.3494e-24', '8.53188e-91', '3.277e-326'] non-increasing: True
+1476^1000 <= 9999991^856: True ; 2 e^42 < 4e18: True  e^42 = 1.73927e+18
+worst record ratio log 4/log 7 = 0.712414374216 ; 7 + 7^0.856 - 11 = 1.28937 (x = 7: next prime 11 needs 7^theta >= 4)

@@ -1,0 +1,37 @@
+eta0 (root of b6(1e9, eta) = 1): 0.236212119113
+PART 1, H0 = 3.0610046e10: max |A/A_table - 1| = 4.42e-04, max |B/B_table - 1| = 3.55e-04 over 20 rows; all admissible: True
+  row 0.60: A 2.176038 (table 2.177)  B 5.662578 (table 5.663)  U(H0) 1.02946
+  row 0.85: A 8.974025 (table 8.975)  B 3.587921 (table 3.588)  U(H0) 1.80064
+  row 0.86: A 9.440287 (table 9.441)  B 3.513974 (table 3.514)  U(H0) 1.857
+  row 0.87: A 9.92554 (table 9.926)  B 3.429666 (table 3.43)  U(H0) 1.90753
+  row 0.98: A 16.54406 (table 16.544)  B 2.531102 (table 2.532)  U(H0) 2.94572
+  row 0.99: A 17.25296 (table 17.253)  B 2.445775 (table 2.446)  U(H0) 3.07755
+PART 2, H0 = 3e12 (H = H0 - 1, same Table 1 parameters):
+  row 0.60: A(s0) 2.0482568  B(s0) 5.4113689  U(H0) 0.976213  Vinf 8.54963  b9 48.1671  smin 0.511869  FAILS U_gt1
+  row 0.65: A(s0) 2.7921624  B(s0) 5.0032456  U(H0) 1.0657  Vinf 8.59924  b9 48.1671  smin 0.511834  admissible
+  row 0.70: A(s0) 3.7562782  B(s0) 4.5917333  U(H0) 1.1909  Vinf 8.46749  b9 48.1671  smin 0.5118  admissible
+  row 0.75: A(s0) 4.9832292  B(s0) 4.1785639  U(H0) 1.34457  Vinf 8.37492  b9 48.1671  smin 0.511765  admissible
+  row 0.80: A(s0) 6.547797  B(s0) 3.779156  U(H0) 1.50143  Vinf 8.44097  b9 48.1671  smin 0.51173  admissible
+  row 0.85: A(s0) 8.5122038  B(s0) 3.3773707  U(H0) 1.69788  Vinf 8.52098  b9 48.1671  smin 0.511695  admissible
+  row 0.86: A(s0) 8.9579856  B(s0) 3.3043687  U(H0) 1.75098  Vinf 8.54215  b9 48.1671  smin 0.51166  admissible
+  row 0.87: A(s0) 9.4219802  B(s0) 3.2215732  U(H0) 1.79858  Vinf 8.56097  b9 48.1671  smin 0.51166  admissible
+  row 0.88: A(s0) 9.9043534  B(s0) 3.1387777  U(H0) 1.86024  Vinf 8.58514  b9 48.1671  smin 0.51166  admissible
+  row 0.89: A(s0) 10.405783  B(s0) 3.0559822  U(H0) 1.91589  Vinf 8.60676  b9 48.1671  smin 0.51166  admissible
+  row 0.90: A(s0) 10.926319  B(s0) 2.9817994  U(H0) 1.98854  Vinf 8.63471  b9 48.1671  smin 0.511626  admissible
+  row 0.91: A(s0) 11.465618  B(s0) 2.898756  U(H0) 2.05467  Vinf 8.65991  b9 48.1671  smin 0.511626  admissible
+  row 0.92: A(s0) 12.023855  B(s0) 2.8157126  U(H0) 2.12663  Vinf 8.68706  b9 48.1671  smin 0.511626  admissible
+  row 0.93: A(s0) 12.600994  B(s0) 2.7405854  U(H0) 2.22192  Vinf 8.72263  b9 48.1671  smin 0.511591  admissible
+  row 0.94: A(s0) 13.196346  B(s0) 2.6572927  U(H0) 2.31004  Vinf 8.75513  b9 48.1671  smin 0.511591  admissible
+  row 0.95: A(s0) 13.809725  B(s0) 2.5739999  U(H0) 2.4075  Vinf 8.79067  b9 48.1671  smin 0.511591  admissible
+  row 0.96: A(s0) 14.441165  B(s0) 2.4979184  U(H0) 2.51599  Vinf 8.82976  b9 48.1671  smin 0.511556  admissible
+  row 0.97: A(s0) 15.088656  B(s0) 2.4143748  U(H0) 2.63764  Vinf 8.87302  b9 48.1671  smin 0.511556  admissible
+  row 0.98: A(s0) 15.752627  B(s0) 2.3375812  U(H0) 2.77518  Vinf 8.92126  b9 48.1671  smin 0.511521  admissible
+  row 0.99: A(s0) 16.431125  B(s0) 2.2537852  U(H0) 2.89902  Vinf 8.96411  b9 48.1671  smin 0.511521  admissible
+row 0.60: U(3.0610046e10) = 1.029461, U(3e12) = 0.97621271 (same k, alpha; U depends on H0 only via C1(k), C2(k), C3(k))
+KLN rows at H0 = 3e12: not admissible (dropped): ['0.60']
+KLN rows at H0 = 3e12: A(sigma0) = 0.65:2.7922 0.70:3.7563 0.75:4.9832 0.80:6.5478 0.85:8.5122 0.86:8.9580 0.87:9.4220 0.88:9.9044 0.89:10.406 0.90:10.926 0.91:11.466 0.92:12.024 0.93:12.601 0.94:13.196 0.95:13.810 0.96:14.441 0.97:15.089 0.98:15.753 0.99:16.431
+cert.py build_kln_H0(3e12) keeps rows: 19 ; dropped: ['0.60']
+cert.py vs independent at H0 = 3e12, 19 rows x sigma in {0.83, 0.86, B, sigma0}: max relative difference in A or B = 1.13e-37
+  row 0.85 at sigma0: A indep 8.51220384 cert 8.512203840; B indep 3.377370681 cert 3.377370681
+  row 0.87 at sigma0: A indep 9.421980202 cert 9.421980202; B indep 3.221573178 cert 3.221573178
+  row 0.98 at sigma0: A indep 15.75262659 cert 15.75262659; B indep 2.33758124 cert 2.337581240

@@ -1,0 +1,25 @@
+envelope: max |Phi~_a(z)|/(ab G_a(Im z)) over 9000 random z (3 dmax, lam in [1e-3, 1e4]) = 0.999999999382 (must be <= 1)
+G_a (dmax 0.025) non-increasing on lam = 0, 0.01, ..., 200: True; max G_a lam^2/C2 for lam >= 2pi/a: 1.0
+TrapKernel dmax=1e-9: N=6684, Lambda=630740.50, istore=2081, lam_istore=63.933504, C2=44.44444449, G0=1.000000002
+  T[p=201/200][i=0] (lam_i=1.0): stored 7.42892833426, 256-bit definition 7.42050289958, stored/def = 1.0011354; G stored >= G def: True
+  T[p=72/200][i=555] (lam_i=3.0309966): stored 0.431310527556, 256-bit definition 0.430772239636, stored/def = 1.0012496; G stored >= G def: True
+  T[p=100/200][i=2000] (lam_i=54.380483): stored 0.0319751955865, 256-bit definition 0.0319265159069, stored/def = 1.0015247; G stored >= G def: True
+  T[p=250/200][i=40] (lam_i=1.0832005): stored 17.1037123005, 256-bit definition 17.0810449346, stored/def = 1.001327; G stored >= G def: True
+  T[p=60/200][i=2081] (lam_i=63.933504): stored 0.00614187069086, 256-bit definition 0.00613214914136, stored/def = 1.0015853; G stored >= G def: True
+  mom(p=80/200, l0=0.5): cert 2.00850363398, definition 1.99919524818, ratio 1.0046561
+  mom(p=80/200, l0=3.0294): cert 1.63794140831, definition 1.63545201612, ratio 1.0015221
+  mom(p=120/200, l0=64.5): cert 0.185924165902, definition 0.143248832133, ratio 1.2979105
+  mom(p=300/200, l0=100): cert 17.7777777956, definition 17.7777777956, ratio 1.0
+  mom(p=60/200, l0=1000): cert 0.000415335025108, definition 0.000415335025108, ratio 1.0
+TrapKernel dmax=0.025: N=6684, Lambda=630740.50, istore=2081, lam_istore=63.933504, C2=45.55805556, G0=1.050225000
+  T[p=1/200][i=0] (lam_i=1.0): stored 0.00811647589174, 256-bit definition 0.00811135959731, stored/def = 1.0006308; G stored >= G def: True
+  T[p=80/200][i=555] (lam_i=3.0309966): stored 0.537387281808, 256-bit definition 0.53671498065, stored/def = 1.0012526; G stored >= G def: True
+  T[p=120/200][i=300] (lam_i=1.8210273): stored 1.68558220713, 256-bit definition 1.68377995721, stored/def = 1.0010704; G stored >= G def: True
+  T[p=208/200][i=1200] (lam_i=10.996788): stored 3.94671407175, 256-bit definition 3.94013360527, stored/def = 1.0016701; G stored >= G def: True
+  T[p=300/200][i=2081] (lam_i=63.933504): stored 16.6507158254, 256-bit definition 16.6201854417, stored/def = 1.0018369; G stored >= G def: True
+  mom(p=80/200, l0=0.5): cert 2.09285376601, definition 2.08346498569, ratio 1.0045063
+  mom(p=80/200, l0=3.0294): cert 1.68486932355, definition 1.68229869372, ratio 1.001528
+  mom(p=120/200, l0=64.5): cert 0.190582728093, definition 0.146947199353, ratio 1.296947
+  mom(p=300/200, l0=100): cert 18.2232222222, definition 18.2232222222, ratio 1.0
+  mom(p=60/200, l0=1000): cert 0.000425741762905, definition 0.000425741762905, ratio 1.0
+all stored/def >= 1 and all mom ratios >= 1: True

@@ -17,6 +17,8 @@ Theorem B (conditional): if the zero density of Chourasiya–Simonič (arXiv 250
 
 **Caveat.** Rests on Bebel's half-plane (Lean-kernel-checked, unrefereed) and on KLN (refereed) evaluated by us with RH(3·10^{12}). Theorem B is conditional on the unrefereed 2507.15184, whose b₄ = 0.54 is a private communication (we use 0.5501 from the unrefereed 2603.25961; [REFUTATIONS](../REFUTATIONS.md)). The explicit formula is classical; no Lean formalization.
 
+**Audit.** Line by line by ingham4audit (Orca, 20 Nov 2026): AUDIT PASSED. Every step new relative to the audited Ingham3 pipeline re-derived (the trapezoid kernel and its moment tables at 256 bits, real x, the δ-cells, the tail lemma with R_an(300) = 0.014177, the small-x step); KLN's argument re-read (94 H₀-lines) and re-run at H₀ = 3·10^{12} by independent 256-bit code (Table 1 at KLN's H₀ within 4.4·10⁻⁴; row 0.60 dropped, U = 0.976 < 1; cert.py agrees to 10⁻³⁷); the worst cell [191.82, 191.84] recomputed by direct σ-integration at 0.9509 ≤ 0.9711; certificate rerun identical. Findings: KLN's unstated b₉ ≥ 0 (true, 48.17); the row conditions must be re-checked at the new H₀ (cert.py does); the input is KLN's proof of Lemma 4.14 re-run with H₀ = 3·10^{12}, as Cully-Hugill–Johnston did, not the lemma as printed (that alone gives x^{0.857}); one far branch loose but valid. Orchestrator rerun of kln_indep.py identical. [Ingham4Audit](../Riemann/Deep/Ingham4Audit/REPORT.md)
+
 **RH relevance.** N10: an explicit all-x prime-interval exponent below 7/8 from a zero-free half-plane plus explicit zero density.
 
 **Files.** [Riemann/Deep/Ingham4/](../Riemann/Deep/Ingham4/REPORT.md): REPORT.md, DERIVATION.md, NOVELTY.md, AUDIT-2507.15184.md, CODE-AUDIT.md, cert.py, check.py, cs_repro.py, code_audit.py, logs/.
