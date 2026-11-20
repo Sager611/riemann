@@ -507,3 +507,4 @@ import Riemann.Tree.R507
 import Riemann.Tree.R508
 import Riemann.Tree.R509
 import Riemann.Tree.R510
+import Riemann.Tree.R511
