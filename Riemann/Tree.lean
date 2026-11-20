@@ -502,3 +502,4 @@ import Riemann.Tree.R502
 import Riemann.Tree.R503
 import Riemann.Tree.R504
 import Riemann.Tree.R505
+import Riemann.Tree.R506
