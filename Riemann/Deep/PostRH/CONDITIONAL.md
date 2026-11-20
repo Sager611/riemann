@@ -150,3 +150,5 @@ Masullo flags (orchestrator 64, 19:20 UTC): A. M. Masullo's unverified claim (18
 - COROLLARIES.md:72 "UNC": true but no gain (our entry is already full strength).
 - Our own trap: DPC Thm C assumes RH "for L(s,χ)", one Dirichlet L, not ζ alone; covered by D1 either way.
 
+## postrh2 (20 Nov 2026, 21:35 UTC): the five UNC? rows settled (TeX lines in DRAFT.md §3)
+- B16 (Λ_χ, Λ_K, Dobner): UNC. A13: UNC for exponents 3, 5 (EKN Thm 1 computed without hypothesis to 3.1·10^20, above the ERH bounds); exponents 6, 7 STAY (finite search to 2.5·10^25, 3.9·10^30 not done, ARSX l.268–269). B3: UNC (CGdL l.257: GRH = Dirichlet), 0.6845 superseded by B2; its 0.8486 distinct and 0.9350 Dirichlet average are new UNC results. A27: thm:fin already unconditional (COROLLARIES harvest4 (c)); thm2 (d = 2, 3 lists) UNC. D26 Brun: UNC (Johnston–Starichkova Lemma 5.1 = Grenié–Molteni for ℚ(ζ_q)/ℚ).

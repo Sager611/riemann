@@ -1,0 +1,63 @@
+apply.py DRY RUN  2026-11-20 21:39 UTC
+DRAFT.md sha 1c78bbad737396f3; TREE.md sha 1f0f30a14736d2e5 (582 lines); COROLLARIES.md sha 5d2b8b6eb133b1c0 (81 lines)
+TREE.md: 14 insertions, +2042 chars, line count unchanged
+  l.5   N1    count 1, after anchor: + 'If ROOT holds: Q(f) ≥ 0 for every f and every Dirichlet χ (Weil), > 0 for compac'
+  l.6   N2    count 1, after anchor: + 'If ROOT holds: Λ = 0 (Rodgers–Tao 1801.05914), Λ_χ = 0 for real primitive χ, Λ_K'
+  l.7   N3    count 1, after anchor: + 'If ROOT holds: λ_n > 0 for all n and Re λ_n(χ) > 0 for every primitive χ (Li; La'
+  l.8   N4    count 1, after anchor: + "If ROOT holds: Robin for n > 5040, Lagarias' H_n form, Nicolas for all primorial"
+  l.9   N5    count 1, after anchor: + 'If ROOT holds: d_N → 0; liminf d_N² log N ≥ C; L^p density for p < 2; d_N² ~ C/l'
+  l.10  N6    count 1, after anchor: + 'If ROOT holds: every J^{d,n} hyperbolic (Pólya), also for Ξ_t, t ≥ 0, and Ξ_χ of'
+  l.11  N7    count 1, after anchor: + 'If ROOT holds: no Dirichlet-L zero in Re s > 1/2; QRT PR 144, Dirichlet half-pla'
+  l.12  N8    count 1, after anchor: + 'If ROOT holds: all zeros on the line, ≥ 19/27 simple, ≥ 84.86% distinct; DPC gap'
+  l.13  N9    count 1, after anchor: + "If ROOT holds: Lindelöf (13/84 moot), GLH for Dirichlet L, Harper's moments; Sim"
+  l.14  N10   count 1, after anchor: + "If ROOT holds: Schoenfeld's bounds, a prime in [x, x + (22/25)√x log x] for x ≥ "
+  l.15  N11   count 1, after anchor: + "If ROOT holds: GRH for every Dirichlet L and abelian ζ_K; Kerr's Siegel-zero exc"
+  l.16  N12   count 1, after anchor: + 'If ROOT holds: nothing beyond degree 1; GL(2), elliptic-curve and Selberg-class '
+  l.17  N13   count 1, after anchor: + "If ROOT holds: no operator follows; QW_λ ≥ 0, but CCM's simple ground state and "
+  l.18  ROOT  count 1, after ROOT tag '[check: every decisive outside check pas'…: + 'If verified: RH and Dirichlet GRH proved; consequences in [CONSEQUENCES](Riemann'
+COROLLARIES.md: append heading '## If ROOT holds (Alpöge, verified 20 Nov 2026)' and 42 lines (+8252 chars)
+  + '- If ROOT holds: Λ = 0 (Rodgers–Tao [1801.05914](https://arxiv.org/abs/1801.0591'
+  + '- If ROOT holds: Λ_χ = 0 for every primitive real χ and Λ_K = 0 for every abelia'
+  + "- If ROOT holds: Weil's Q(f) ≥ 0 for every test function and every Dirichlet χ ("
+  + '- If ROOT holds: λ_n > 0 for all n and Re λ_n(χ) > 0 for every primitive χ, all '
+  + '- If ROOT holds: our Li-remainder theorems: mean square between N^{3/2}√log N an'
+  + "- If ROOT holds: Robin for every n ≥ 5041 and Lagarias' σ(n) ≤ H_n + e^{H_n} log"
+  + '- If ROOT holds: σ(n) < (e^γ/2) n log log n for every odd n > 277093800961598968'
+  + '- If ROOT holds: d_N → 0 ([math/0202141](https://arxiv.org/abs/math/0202141) l.4'
+  + '- If ROOT holds: natural-number L^p Nyman–Beurling density for every 1 < p < 2, '
+  + '- If ROOT holds: D(λ)² log(1/λ) → Σ_ρ m_ρ²/|ρ|² (continuous Nyman–Beurling), and'
+  + '- If ROOT holds: every Jensen polynomial J^{d,n} of ξ is hyperbolic (Pólya, [190'
+  + '- If ROOT holds: at least 19/27 of the zeros of ζ are simple (Bui–Heath-Brown [1'
+  + '- If ROOT holds: at least 84.86% of the zeros of ζ are distinct, and on average '
+  + '- If ROOT holds: a positive proportion of normalized gaps < 1/2 + ε, and λ > 3.6'
+  + '- If ROOT holds: log|ζ(1/2+it)| ≤ ((log 2)/2 + o(1)) log t/log log t (Chandee–So'
+  + '- If ROOT holds: |ζ(1/2+it)| ≤ exp((0.5 + 6.992/((log t)^{0.252} log log t)) log'
+  + '- If ROOT holds: ∫_T^{2T}|ζ(1/2+it)|^{2k} dt ≪_k T log^{k²} T for every fixed k '
+  + "- If ROOT holds: Schoenfeld's |ψ(x) − x| ≤ (√x/8π)log²x (x > 59) and |π(x) − li("
+  + '- If ROOT holds: a prime in [x, x + (22/25)√x log x] for x ≥ 4 (CMS [1708.04122]'
+  + "- If ROOT holds: Brun's constant B < 2.1594 (Dunn [2504.15658](https://arxiv.org"
+  + '- If ROOT holds: M(x) ≪ √x exp((log x)^{1/2}(log log x)^{5/2+ε}) (Soundararajan '
+  + '- If ROOT holds: the least prime p ≡ a mod q is ≤ (φ(q) log q)² for every q > 3 '
+  + '- If ROOT holds: the least quadratic non-residue mod a prime q ≥ 5 is below (log'
+  + '- If ROOT holds: for q ≥ 3000 the primes ≤ (log q + B(q))² generate (ℤ/q)* (LLS '
+  + '- If ROOT holds: 1/|L(1,χ)| ≤ (12e^γ/π²)(log log q − log 2 + 1/2 + …) and h(−q) '
+  + "- If ROOT holds: EKN's lists of the 17 and 27 imaginary quadratic fields with cl"
+  + '- If ROOT holds: every odd composite n has a strong Miller–Rabin witness ≤ 2 log'
+  + "- If ROOT holds: ĝ(p) < √p − 2 for p > 2791 and Grosswald's g(p) < √p − 2 for p "
+  + '- If ROOT holds: ĝ(p) ≤ ((8/5)(2^{ω(p−1)} − 1) log p)² for every prime p ≥ 10⁹ ('
+  + '- If ROOT holds: elite primes E(x) ≪ x^{3/4}(log x)^{1/2} ([2611.19610](https://'
+  + '- If ROOT holds: #{l : C(k,l) ≥ 0} ≪ φ(k)/log k for the Alladi–Johnson constants'
+  + "- If ROOT holds: Hua's PageRank bound Δ_q(1 − c/log q) ≍ 1/N_q on Lubotzky–Phill"
+  + '- If ROOT holds: 2s-th moments of short Legendre-symbol sums over primes with er'
+  + '- If ROOT holds: long quadratic character sums with the log₃ gain, √X/x ([2509.0'
+  + '- If ROOT holds: least Elkies prime ≤ (2 log 4q + 4)² and its counting asymptoti'
+  + '- If ROOT holds: Kim [2412.19975](https://arxiv.org/abs/2412.19975) Thm 1.2, who'
+  + '- If ROOT holds: the conditional exponents for Gauss mean values and the sphere '
+  + '- If ROOT holds: Λ^{(m)}(1/2, χ) ≥ 0 for every m ≥ 0 and every non-principal pri'
+  + '- If ROOT holds: the near-null spectrum statement for the windowed Weil form (CO'
+  + '- If ROOT holds: every large even N (effective N₀) is a + b with λ(a) = λ(b) = −'
+  + "- If ROOT holds: Gaillard–Jindal's GRH reduction of SSR-SLP to one dimension ([2"
+  + "- If ROOT holds: Martin's complete lists of degree-2 and -3 rationality fields o"
+ALL ASSERTIONS PASSED
+DRY RUN: nothing written. Apply with: python3 Riemann/Deep/PostRH/apply.py --write [--date '<d Mon YYYY>']
+exit 0; memcap: peak 0 MB rc=0

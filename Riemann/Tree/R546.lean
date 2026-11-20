@@ -1,0 +1,15 @@
+/-!
+# Round 546 — node ROOT (RH itself), round 12: the five unreviewed lines of the post-RH draft hold against their sources
+
+* Node: ROOT (RH itself), round 12: (A) falsification of the five lines of our post-RH draft (Riemann/Deep/PostRH/DRAFT.md §2) that postrh2 added without a reviewer verdict, each against its source's TeX; what the claimed proof gives: RH and GRH for every Dirichlet L-function, hence GRH for ζ_K of every abelian K, nothing for non-abelian fields, Hecke L of class-group characters or simple zeros; (B) three explorations. Five verdict-only reviewers (21:48 UTC) could not fetch sources (no shell in that agent type: give reviewers the evidence inline); scouts fetched the TeX.
+* p1 (postrh B16; Dobner 2005.05142): two scouts' time ran out; orchestrator's check of the fetched TeX: S♯ is the extended Selberg class with ξ^F(s) = conj ξ^F(1 − s̄) (l.194–217), containing ζ and every primitive Dirichlet L (l.110; complex χ after scaling α by ε^{−1/2}) and every Dedekind ζ_K; Theorem setupthm (l.113): all zeros of ξ^F_t on the line iff t ≥ Λ_F; Theorem newmansconj (l.119): Λ_F ≥ 0, unconditional. So GRH for F gives Λ_F = 0: HOLDS for primitive real χ and for ζ_K of abelian K.
+* p2 (postrh B3; Chirre–Gonçalves–de Laat 1810.08843): HOLDS: under GRH for Dirichlet L, N_d(T) ≥ (0.8486 + o(1))N(T) (l.302–310; RH alone gives 0.8477) and, for primitive χ mod q, Q ≤ q ≤ 2Q with the paper's weights, the simple proportion ≥ 0.9350 + o(1) (l.359–363).
+* p3 (postrh D26; Dunn 2504.15658, Johnston–Starichkova 2208.01229): scout's time ran out; orchestrator's check of the fetched TeX: Dunn's B < 2.1594 (l.43) uses GRH only through J–S Lemma 5.1 (Dunn l.187, 197, 214) and RH through Schoenfeld (l.247); J–S Lemma 5.1 (l.621–638) applies Grenié–Molteni's explicit Chebotarev Corollary 1 to K = ℚ, L = ℚ(ζ_q), whose hypothesis is RH for the Dedekind zeta functions (Grenié–Molteni l.180), here a product of Dirichlet L: HOLDS.
+* p4 (postrh A13; Elsenhans–Klüners–Nicolae 1803.02056, 2605.26020): HOLDS: the ERH is for the least split prime of an imaginary quadratic field (ζ_K = ζ·L(χ_D)); counts 17 (exponent 3) and 27 (exponent 5), unconditional to 3.1·10^20, ERH bounds 9.7·10^10 and 2.3·10^20 as drafted; 2605.26020 Thm 1 confirms the all-discriminant E = 3, 5 tables under ERH.
+* p5 (postrh A27; Martin 2509.24119): HOLDS: ERH only for quadratic Dirichlet characters (l.174), entering only the exponent-2 and -3 lists (l.620, 665); 23 quadratic and 18 cubic fields (thm2, l.188).
+* Conclusion (A): all 42 lines of DRAFT.md §2 now have a verdict; Riemann/Deep/PostRH/apply.py passes its dry run (orchestrator, 21:47 UTC; preview in /tmp).
+* (B) Explorations: e1 Sullivan's no-wandering-domains theorem → N1: already tried (R385); no rational self-map for ξ; e2 Gromov polynomial growth / Švarc–Milnor → N12: no transfer (no metric or action whose balls count zeros); e3 the Lax equivalence theorem → N2: no transfer (stability controls approximation error, not the reality of zeros).
+-/
+
+namespace Fayed.R546
+end Fayed.R546

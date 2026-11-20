@@ -580,5 +580,6 @@ Root: RH via Fayed (arXiv 2209.01890v55).
 - R543 ROOT r9: foundational automorphic definitions on the cone standard (GL_n automorphic and cusp forms, the archimedean embedding, l-adic automorphy over PadicAlgCl, Hecke eigensystems); four scout 'degenerate' flags withdrawn; three explorations negative. [R543.lean](Riemann/Tree/R543.lean)
 - R544 ROOT r10: the 68 TwistedTraceFormula and 7 single-file literature Props as published (272 of 398 checked, none stronger); SemiAbelianHomExtension = Faltings–Chai I.2.7 (scout flag withdrawn); outside: Yao Xu's annotated map (no RH claim); three explorations negative. [R544.lean](Riemann/Tree/R544.lean)
 - R545 ROOT r11: Yao Xu's annotated map (cadamcat) vs AlpCore/AlpChain/AlpKato/AlpAut/AlpToy: CONSISTENT on 84 claims, no disagreement; three explorations negative. [R545.lean](Riemann/Tree/R545.lean)
-- R546 FRONTIER (next)
+- R546 ROOT r12: the post-RH draft's five new COROLLARIES lines (Dobner Λ_F = 0, CGdL 84.86%/93.50%, Dunn's Brun bound, EKN exponents 3 and 5, Martin's CM rationality fields) hold against their TeX; three explorations negative. [R546.lean](Riemann/Tree/R546.lean)
+- R547 FRONTIER (next)
 - QRH: OpenAI quasi-RH 7/8 Lean proof ported (2943 files, Riemann/Deep/QRH/, LICENSE+NOTICE); Fayed.QRH.quasiRH_seven_eighths : QuasiRH (1/8), standard axioms. Separate build target (lake build Riemann.Deep.QRH.Bridge): its PrimeNumberTheoremAnd copy clashes with the zeta23 port in Riemann.lean.
