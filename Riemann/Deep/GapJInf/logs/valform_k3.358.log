@@ -1,0 +1,4 @@
+logs/form_k3.3580_J6.json: J=6 h=1.0076157 (LP 1.0076157); polynomial-basis check N=30: min rel eig -5.729e-04 at g/pi=0.0001
+memcap: peak 0 MB rc=0
+logs/form_k3.3580_J7.json: J=7 h=1.0103126 (LP 1.0103126); polynomial-basis check N=30: min rel eig -8.182e-01 at g/pi=0.0001
+memcap: peak 0 MB rc=0

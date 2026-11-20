@@ -1,0 +1,12 @@
+J= 4: Stieltjes H0 min/max 5.52e-03  H1 min/max 3.37e-02  ratio m_J/m_{J-1} 4.1493
+J= 5: Stieltjes H0 min/max 5.52e-03  H1 min/max 6.43e-04  ratio m_J/m_{J-1} 5.1576
+J= 6: Stieltjes H0 min/max 6.46e-05  H1 min/max 6.43e-04  ratio m_J/m_{J-1} 6.1719
+J= 7: Stieltjes H0 min/max 6.46e-05  H1 min/max 5.44e-06  ratio m_J/m_{J-1} 7.0906
+J= 8: Stieltjes H0 min/max 4.41e-07  H1 min/max 5.44e-06  ratio m_J/m_{J-1} 7.8544
+J= 9: Stieltjes H0 min/max 4.41e-07  H1 min/max 3.13e-08  ratio m_J/m_{J-1} 8.4659
+J=10: Stieltjes H0 min/max 2.09e-09  H1 min/max 3.13e-08  ratio m_J/m_{J-1} 8.9579
+J=11: Stieltjes H0 min/max 2.09e-09  H1 min/max 1.36e-10  ratio m_J/m_{J-1} 9.3641
+J=12: Stieltjes H0 min/max 9.16e-12  H1 min/max 1.36e-10  ratio m_J/m_{J-1} 9.7091
+J=13: Stieltjes H0 min/max 9.16e-12  H1 min/max 5.94e-13  ratio m_J/m_{J-1} 10.0091
+J=14: Stieltjes H0 min/max 3.88e-14  H1 min/max 5.94e-13  ratio m_J/m_{J-1} 10.2751
+memcap: peak 0 MB rc=0

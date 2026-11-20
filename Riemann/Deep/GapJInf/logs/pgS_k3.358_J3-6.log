@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/GapJInf/runpg.py", line 17, in <module>
+    P = PG.PerGap(m, J, K=K)
+        ^^^^^^^^^^^^^^^^^^^^
+TypeError: PerGap.__init__() got an unexpected keyword argument 'K'
+memcap: peak 0 MB rc=1

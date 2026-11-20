@@ -1,0 +1,6 @@
+logs/formC_k3.3580_J9.json: J=9 h=1.0104648 (LP 1.0104648); scaled polynomial-basis check N=30, g in [1e-6, 1] pi: min rel eig -9.214e-11 at g/pi=1.000e-06
+memcap: peak 0 MB rc=0
+logs/formC_k3.3580_J10.json: J=10 h=1.0111158 (LP 1.0111158); scaled polynomial-basis check N=30, g in [1e-6, 1] pi: min rel eig -2.375e-07 at g/pi=2.767e-05
+memcap: peak 0 MB rc=0
+logs/formC_k3.3580_J8.json: J=8 h=1.0103483 (LP 1.0103483); scaled polynomial-basis check N=30, g in [1e-6, 1] pi: min rel eig -1.617e-10 at g/pi=1.000e-06
+memcap: peak 0 MB rc=0

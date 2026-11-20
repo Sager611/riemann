@@ -1,0 +1,9 @@
+parity 1: max |beta_k| (numerical; exact 0 for this degree-5 piece) = 4.51e-14
+parity 0: max |beta_k| (numerical; exact 0 for this degree-5 piece) = 4.79e-14
+norms direct : 109.4771 305.03188 2610.2838 7959.2383 9755.9251 3499.2
+norms blocks : 109.4771 305.03188 2610.2838 7959.2383 9755.9251 3499.2
+T_01 direct 3568.9422 blocks 3568.9422
+T_02 direct 3912.3892 blocks 3912.3892
+T_11 direct 11871.627 blocks 11871.627
+T_12 direct 13031.176 blocks 13031.176
+memcap: peak 0 MB rc=0

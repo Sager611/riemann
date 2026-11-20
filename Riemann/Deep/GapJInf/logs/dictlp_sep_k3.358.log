@@ -1,0 +1,17 @@
+kappa=3.3580 v=1.361505 s=1.0000 (kappa_eff 3.3580) dict=sep: 12 patterns, 96 fibres, max dim 3 (0.0 s)
+J=1: h_dict = 0.973074  [0 rounds, 81 cuts, 0.0 s]  a/a1 = -1 1
+J=2: h_dict = 0.973197  [0 rounds, 81 cuts, 0.0 s]  a/a1 = -0.9999 1 -9.999e-05
+J=3: h_dict = 1.086812  [5 rounds, 160 cuts, 0.1 s]  a/a1 = -0.8075 1 -0.2241 0.03165
+J=4: h_dict = 1.086821  [5 rounds, 160 cuts, 0.1 s]  a/a1 = -0.8075 1 -0.2241 0.03167 -3.164e-06
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/GapJInf/rundictlp.py", line 48, in <module>
+    val, a, it = L.run(verbose=False)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/GapJInf/dictlp.py", line 80, in run
+    val, a = self.solve()
+             ^^^^^^^^^^^^
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/GapJInf/dictlp.py", line 55, in solve
+    return -res.fun, res.x
+           ^^^^^^^^
+TypeError: bad operand type for unary -: 'NoneType'
+memcap: peak 0 MB rc=1

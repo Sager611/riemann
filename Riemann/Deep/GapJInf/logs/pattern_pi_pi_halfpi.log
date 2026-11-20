@@ -1,0 +1,5 @@
+freq 0.4000 weight 0.005968
+freq 1.2000 weight 0.015625
+freq 780.4000 weight 0.000000
+freq 782.8000 weight 0.000000
+zeros [0.  1.  2.  2.5 3.5 4.5] gaps/pi [1.  1.  0.5 1.  1.  0.5]
