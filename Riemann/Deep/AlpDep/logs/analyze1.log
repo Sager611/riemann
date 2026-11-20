@@ -1,0 +1,61 @@
+reached 244687 of 1066193 ; max dist 51
+edges among reached 2276096
+TARGET Formalism.LFunctionChainParameters.LChain6.DivIn ids [958949] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LBrDiv.ThmConcl ids [960412] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LBrDiv.StepHyp ids [960417] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LBrDiv.StepNums ids [960414] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LBrDiv.ThmDiv ids [960411] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LBrDiv.divisibility_of_theorem ids [959287] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LChain6.DivOfDivIn ids [958950] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LChain6.Inputs6a ids [958951] NOT REACHED
+TARGET Formalism.L2.GlobalTheoryTheory.FamCol.RemainingInputsAfter ids [879533] NOT REACHED
+TARGET Formalism.L2.GlobalTheoryTheory.FamCol.FirstLayerInputsAfter ids [879534] NOT REACHED
+TARGET Formalism.L2.GlobalTheoryTheory.FamCol.FirstLayerInputsBefore ids [879535] NOT REACHED
+TARGET Formalism.L2.GlobalTheoryTheory.FamColC.Conc7In ids [879607] NOT REACHED
+TARGET Formalism.L2.GlobalTheoryTheory.ConcTop.ConcCoreAt ids [882431] NOT REACHED
+TARGET Formalism.L2.GlobalTheoryTheory.ConcTop.ConcreteMainReduction ids [882432] NOT REACHED
+TARGET Formalism.L2.Ker.chTh_ok ids [930279] NOT REACHED
+TARGET Formalism.L2.Col.ChTh ids [941816] NOT REACHED
+TARGET Formalism.L2.Ker.Amb.StepHyp ids [932462] NOT REACHED
+TARGET Formalism.L2.Ker.stepHyp_of_la ids [930364] NOT REACHED
+TARGET Formalism.L2.Ker.stepHyp_of ids [930463] NOT REACHED
+TARGET GlobalTheory.Fc.Hyps ids [540429] NOT REACHED
+TARGET UpperTheory.Top.TopG ids [625846] NOT REACHED
+TARGET UpperTheory.Top.HypV ids [625920] NOT REACHED
+TARGET UpperTheory.One.vwin_of_row dist 3 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.One.vwin_of_row [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean:4
+TARGET UpperTheory.One.Join.automorphic_window_of_inputs dist 4 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.One.vwin_of_row [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean:4
+    UpperTheory.One.Join.automorphic_window_of_inputs [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean:71
+TARGET UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm ids [645319] NOT REACHED
+TARGET UpperTheory.V.v_window_of_literal_automorphy_n ids [644068] NOT REACHED
+TARGET UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd ids [644067] NOT REACHED
+TARGET UpperTheory.V.HV.vwin_of_counts ids [657825] NOT REACHED
+TARGET UpperTheory.V.vwin_of_joint ids [632478] NOT REACHED
+TARGET GlobalTheory.Fc.shape_of ids [448817] NOT REACHED
+TARGET UpperTheory.Top.shapeWin ids [625879] NOT REACHED
+TARGET UpperTheory.Top.topDesWin ids [625950] NOT REACHED
+TARGET UpperTheory.Top.divinN_of_hypV ids [625925] NOT REACHED
+TARGET Formalism.MainNotions.DIVinN ids [1020269] NOT REACHED
+TARGET Formalism.MainNotions.LinkDIVt ids [1020276] NOT REACHED
+TARGET Formalism.L2.DIV.linkDIVt_closedK ids [927382] NOT REACHED
+TARGET Formalism.L2.DIV.BridgeRowsK ids [927379] NOT REACHED
+TARGET Formalism.L2.DIV.DivRows3G ids [927135] NOT REACHED
+TARGET Formalism.MainNotions.ChainTied ids [1024927] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LChain.SizeData₂ ids [958883] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LChain.ChainCore ids [958890] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LChain.chain_reduction_of_top ids [959473] NOT REACHED
+TARGET UpperTheory.Comparison₂.core_gm ids [696516] NOT REACHED
+TARGET UpperTheory.Comparison₂.level_gm_le_on_family_scales ids [696522] NOT REACHED
+TARGET Deduction.ch_top ids [620897] NOT REACHED
+TARGET Deduction.ch_core ids [620848] NOT REACHED
+TARGET UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound ids [700787] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LChain2.DivAt ids [958374] NOT REACHED
+TARGET Deduction.zeroFree_of_rpow_window ids [620881] NOT REACHED
+memcap: peak 0 MB rc=0

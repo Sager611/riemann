@@ -1,0 +1,379 @@
+reached 801610 of 1066193 ; max dist 49
+edges among reached 8424893
+TARGET Formalism.LFunctionChainParameters.LChain6.DivIn ids [958949] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LBrDiv.ThmConcl ids [960412] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LBrDiv.StepHyp ids [960417] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LBrDiv.StepNums ids [960414] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LBrDiv.ThmDiv ids [960411] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LBrDiv.divisibility_of_theorem ids [959287] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LChain6.DivOfDivIn ids [958950] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LChain6.Inputs6a ids [958951] NOT REACHED
+TARGET Formalism.L2.GlobalTheoryTheory.FamCol.RemainingInputsAfter ids [879533] NOT REACHED
+TARGET Formalism.L2.GlobalTheoryTheory.FamCol.FirstLayerInputsAfter ids [879534] NOT REACHED
+TARGET Formalism.L2.GlobalTheoryTheory.FamCol.FirstLayerInputsBefore ids [879535] NOT REACHED
+TARGET Formalism.L2.GlobalTheoryTheory.FamColC.Conc7In ids [879607] NOT REACHED
+TARGET Formalism.L2.GlobalTheoryTheory.ConcTop.ConcCoreAt ids [882431] NOT REACHED
+TARGET Formalism.L2.GlobalTheoryTheory.ConcTop.ConcreteMainReduction ids [882432] NOT REACHED
+TARGET Formalism.L2.Ker.chTh_ok ids [930279] NOT REACHED
+TARGET Formalism.L2.Col.ChTh dist 12 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:44
+    GlobalTheory.Fc.S0.NL [D] Development/AbelianVarietyTheory/Definitions/GlobalTwisting/GeometricWeakTiesOfStrong.lean:36
+    GlobalTheory.Fc.Bundle [S] Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ColumnCompatibleSelection.lean:63
+    GlobalTheory.Cp.SquareIntegrableColumnsCompatible [S] Development/AbelianVarietyTheory/Definitions/GlobalTwisting/SquareIntegrableColumnsCompatible.lean:86
+    GlobalTheory.Cp.ColRec3 [S] Development/AbelianVarietyTheory/Definitions/GlobalTwisting/SquareIntegrableColumnsCompatible.lean:25
+    Formalism.L2.Ker.KerEquivC [D] Formalism/LocalToGlobal/KernelLattices/ThDistC.lean:443
+    Formalism.L2.Ker.chTh [D] Formalism/LocalToGlobal/KernelLattices/ThDistC.lean:214
+    Formalism.L2.Col.ChTh [S] Formalism/LocalToGlobal/Columns/FiniteSumNonzeroLargeDepth.lean:1239
+TARGET Formalism.L2.Ker.Amb.StepHyp ids [932462] NOT REACHED
+TARGET Formalism.L2.Ker.stepHyp_of_la ids [930364] NOT REACHED
+TARGET Formalism.L2.Ker.stepHyp_of ids [930463] NOT REACHED
+TARGET GlobalTheory.Fc.Hyps ids [540429] NOT REACHED
+TARGET UpperTheory.Top.TopG dist 8 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.zeroFreeAll_of_topG [T] Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean:26
+    UpperTheory.Top.TopG [D] Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean:12
+TARGET UpperTheory.Top.HypV dist 9 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.zeroFreeAll_of_topG [T] Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean:26
+    UpperTheory.Top.TopG [D] Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean:12
+    UpperTheory.Top.HypV [D] Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean:10
+TARGET UpperTheory.One.vwin_of_row dist 3 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.One.vwin_of_row [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean:4
+TARGET UpperTheory.One.Join.automorphic_window_of_inputs dist 4 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.One.vwin_of_row [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean:4
+    UpperTheory.One.Join.automorphic_window_of_inputs [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean:71
+TARGET UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm dist 5 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.One.vwin_of_row [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean:4
+    UpperTheory.One.Join.automorphic_window_of_inputs [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean:71
+    UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean:55
+TARGET UpperTheory.V.v_window_of_literal_automorphy_n dist 6 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.One.vwin_of_row [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean:4
+    UpperTheory.One.Join.automorphic_window_of_inputs [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean:71
+    UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean:55
+    UpperTheory.V.v_window_of_literal_automorphy_n [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean:33
+TARGET UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd dist 7 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.One.vwin_of_row [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean:4
+    UpperTheory.One.Join.automorphic_window_of_inputs [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean:71
+    UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean:55
+    UpperTheory.V.v_window_of_literal_automorphy_n [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean:33
+    UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean:30
+TARGET UpperTheory.V.HV.vwin_of_counts dist 10 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.One.vwin_of_row [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean:4
+    UpperTheory.One.Join.automorphic_window_of_inputs [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean:71
+    UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean:55
+    UpperTheory.V.v_window_of_literal_automorphy_n [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean:33
+    UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean:30
+    UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean:25
+    UpperTheory.V.HV.Core.of_four_alt [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVCore.lean:18
+    UpperTheory.V.HV.vwin_of_counts [T] Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean:30
+TARGET UpperTheory.V.vwin_of_joint dist 11 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.One.vwin_of_row [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean:4
+    UpperTheory.One.Join.automorphic_window_of_inputs [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean:71
+    UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean:55
+    UpperTheory.V.v_window_of_literal_automorphy_n [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean:33
+    UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean:30
+    UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean:25
+    UpperTheory.V.HV.Core.of_four_alt [T] Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVCore.lean:18
+    UpperTheory.V.HV.vwin_of_counts [T] Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean:30
+    UpperTheory.V.vwin_of_joint [T] Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean:131
+TARGET GlobalTheory.Fc.shape_of ids [448817] NOT REACHED
+TARGET UpperTheory.Top.shapeWin ids [625879] NOT REACHED
+TARGET UpperTheory.Top.topDesWin dist 8 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.shape_closed_link_n_of_green [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean:33
+    UpperTheory.Top.topDesWin [T] Development/AutomorphicArithmetic/CharacterBoxes/DesWin.lean:11
+TARGET UpperTheory.Top.divinN_of_hypV dist 9 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.shape_closed_link_n_of_green [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean:33
+    UpperTheory.Top.topDesWin [T] Development/AutomorphicArithmetic/CharacterBoxes/DesWin.lean:11
+    UpperTheory.Top.divinN_of_hypV [T] Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean:117
+TARGET Formalism.MainNotions.DIVinN dist 7 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:44
+    GlobalTheory.BigTop.Fun.ConstantFunctionFits [D] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LeafInfinitePlaceBound.lean:52
+    Formalism.MainNotions.DIVinN [D] Formalism/SharpRestriction/GlobalTheoremInputs.lean:62
+TARGET Formalism.MainNotions.LinkDIVt dist 9 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.shape_closed_link_n_of_green [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean:33
+    UpperTheory.Top.topDesWin [T] Development/AutomorphicArithmetic/CharacterBoxes/DesWin.lean:11
+    Formalism.MainNotions.LinkDIVt [D] Formalism/SharpRestriction/GlobalTheoremInputs.lean:94
+TARGET Formalism.L2.DIV.linkDIVt_closedK ids [927382] NOT REACHED
+TARGET Formalism.L2.DIV.BridgeRowsK ids [927379] NOT REACHED
+TARGET Formalism.L2.DIV.DivRows3G dist 8 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:44
+    GlobalTheory.Fc.HypsAlt [S] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Hyps.lean:22
+    GlobalTheory.Cp.DivRows3G [S] Development/AbelianVarietyTheory/Definitions/GlobalTwisting/CountsIrreducibilityConstants.lean:91
+    Formalism.L2.DIV.DivRows3G [S] Formalism/LocalToGlobal/Divisibility/TupUsed.lean:112
+TARGET Formalism.MainNotions.ChainTied dist 8 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.zeroFreeAll_of_topG [T] Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean:26
+    Formalism.MainNotions.ChainTied [D] Formalism/SharpRestriction/GlobalSchurBounds/TieGlobal.lean:97
+TARGET Formalism.LFunctionChainParameters.LChain.SizeData₂ dist 9 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.zeroFreeAll_of_topG [T] Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean:26
+    Formalism.MainNotions.ChainTied [D] Formalism/SharpRestriction/GlobalSchurBounds/TieGlobal.lean:97
+    Formalism.LFunctionChainParameters.LChain.SizeData₂ [D] Formalism/SizeWindowBrackets/SChain.lean:17
+TARGET Formalism.LFunctionChainParameters.LChain.ChainCore ids [958890] NOT REACHED
+TARGET Formalism.LFunctionChainParameters.LChain.chain_reduction_of_top ids [959473] NOT REACHED
+TARGET UpperTheory.Comparison₂.core_gm dist 10 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.zeroFreeAll_of_topG [T] Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean:26
+    UpperTheory.Comparison₂.level_gm_le_on_family_scales [T] Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean:28
+    UpperTheory.Comparison₂.windowInequality_of_artinInputs [T] Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean:17
+    UpperTheory.Comparison₂.core_gm [T] Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean:12
+TARGET UpperTheory.Comparison₂.level_gm_le_on_family_scales dist 8 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.zeroFreeAll_of_topG [T] Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean:26
+    UpperTheory.Comparison₂.level_gm_le_on_family_scales [T] Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean:28
+TARGET Deduction.ch_top dist 11 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.zeroFreeAll_of_topG [T] Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean:26
+    UpperTheory.Comparison₂.level_gm_le_on_family_scales [T] Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean:28
+    UpperTheory.Comparison₂.windowInequality_of_artinInputs [T] Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean:17
+    UpperTheory.Comparison₂.core_gm [T] Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean:12
+    Deduction.ch_top [T] Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean:37
+TARGET Deduction.ch_core dist 11 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.zeroFreeAll_of_topG [T] Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean:26
+    UpperTheory.Comparison₂.level_gm_le_on_family_scales [T] Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean:28
+    UpperTheory.Comparison₂.windowInequality_of_artinInputs [T] Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean:17
+    UpperTheory.Comparison₂.core_gm [T] Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean:12
+    Deduction.ch_core [T] Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean:343
+TARGET UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound dist 5 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:44
+TARGET Formalism.LFunctionChainParameters.LChain2.DivAt ids [958374] NOT REACHED
+TARGET Deduction.zeroFree_of_rpow_window dist 9 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.zeroFreeAll_of_topG [T] Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean:26
+    UpperTheory.Comparison₂.formB [T] Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean:8
+    Deduction.zeroFree_of_rpow_window [T] Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean:11
+TARGET GlobalTheory.Fc.HypsAlt dist 6 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:44
+    GlobalTheory.Fc.HypsAlt [S] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Hyps.lean:22
+TARGET UpperTheory.Top.shape_closed_link_n_of_green dist 7 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.shape_closed_link_n_of_green [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean:33
+TARGET GlobalTheory.Fc.forall_goal_of_shape_of_hyps dist 7 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    GlobalTheory.Fc.forall_goal_of_shape_of_hyps [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ShapeOf.lean:31
+TARGET UpperTheory.Top.zero_free_all_of_green_v_win dist 6 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+TARGET UpperTheory.Top.zeroFreeAll_of_topG dist 7 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.zeroFreeAll_of_topG [T] Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean:26
+TARGET UpperTheory.Top.supplyChi dist 7 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.supplyChi [T] Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean:8
+TARGET Formalism.MainNotions.LinkDIV dist 10 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.shape_closed_link_n_of_green [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean:33
+    UpperTheory.Top.topDesWin [T] Development/AutomorphicArithmetic/CharacterBoxes/DesWin.lean:11
+    Formalism.MainNotions.LinkDIVt [D] Formalism/SharpRestriction/GlobalTheoremInputs.lean:94
+    Formalism.MainNotions.LinkDIV [D] Formalism/SharpRestriction/GlobalTheoremInputs.lean:91
+TARGET UpperTheory.Top.FamilyClassConnected dist 9 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.zeroFreeAll_of_topG [T] Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean:26
+    UpperTheory.Top.TopG [D] Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean:12
+    UpperTheory.Top.FamilyClassConnected [D] Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean:13
+TARGET UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin dist 3 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+TARGET UpperTheory.Lit.every_character_of_theta_integrals_local_matching dist 4 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+TARGET Formalism.L2.DIV.closed_linkDIVt_of_closed_bridge_kernel dist 8 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.shape_closed_link_n_of_green [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean:33
+    Formalism.L2.DIV.closed_linkDIVt_of_closed_bridge_kernel [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/DIVRecBridgeSel.lean:197
+TARGET GlobalTheory.Top.wire_sel_alt dist 8 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.shape_closed_link_n_of_green [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean:33
+    GlobalTheory.Top.wire_sel_alt [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/WireSel.lean:20
+TARGET GlobalTheory.Top.link_brest_alt dist 8 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Top.every_character_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16
+    UpperTheory.Top.zero_free_all_of_green_v_win [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12
+    UpperTheory.Top.shape_closed_link_n_of_green [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean:33
+    GlobalTheory.Top.link_brest_alt [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkBrest.lean:18
+TARGET Formalism.L2.DIV.linkDIVt_of_rowsK ids [927381] NOT REACHED
+memcap: peak 0 MB rc=0

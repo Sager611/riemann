@@ -1,0 +1,8 @@
+UpperTheory.FinalTheorems.everyCharacter_of_row (Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7, L8) <- mentions every_character_of_literature_of_vWin
+UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin (Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810, L7) <- mentions topCovolSlim2_use_alt_alt
+topCovolSlim2_use_alt_alt (Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean:16, L6) <- mentions topCovolG_alt_alt
+topCovolG_alt_alt (Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean:39, L5) <- mentions coreLe_of_gram_meas_liftRational
+_root_.GlobalTheory.T.coreLe_of_gram_meas_liftRational (Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CoreLeOfGramMeasRatStatement.lean:11, L4) <- mentions CoreBound'
+CoreBound' (Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean:41, L3) <- mentions CoreAt
+CoreAt (Formalism/LocalToGlobal/GlobalTheory/AnalyticConclusionOfProp25.lean:98, L2) <- mentions Inputs6d
+Inputs6d (Formalism/SizeWindowBrackets/SlopesFromSizeAndCount.lean:580, L1) <- mentions DivIn
