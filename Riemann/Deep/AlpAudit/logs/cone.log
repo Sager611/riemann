@@ -1,0 +1,5 @@
+project modules with imports: 175187 all module names seen: 175535
+cone project modules: 175187 bytes: 1030531854 import edges inside cone files: 909822
+cone by top dir: {'BuildAid': 5, 'CompanionTheory': 2027, 'Development': 141928, 'Formalism': 18254, 'GroundTheory': 8507, 'Lemmata': 167, 'Main': 1, 'PositivityTheory': 449, 'ReciprocityTheory': 3845, 'Statements': 1, 'Supplements': 3}
+external modules in cone: 348 Counter({'Mathlib': 344, 'Lean': 3, 'Batteries': 1})
+memcap: peak 112 MB rc=0

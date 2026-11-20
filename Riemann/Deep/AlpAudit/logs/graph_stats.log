@@ -1,0 +1,4 @@
+edges total 909822 internal 753569 internal distinct 753261 external 156253
+acyclic True roots (imported by nobody) 1 ['Main']
+longest import chain from Main (modules, project only): 203 => edges 202
+memcap: peak 251 MB rc=0
