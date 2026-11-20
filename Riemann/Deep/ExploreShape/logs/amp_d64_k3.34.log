@@ -1,0 +1,20 @@
+d=64 kappa=3.3400: float h4 = 1.00141933 at v = 1.362816; rounded amplifier: H/c0 (float) = 0.00136304
+       18.20 real        15.96 user         0.74 sys
+           161366016  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20649  page reclaims
+                1592  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  58  messages sent
+                  60  messages received
+                   1  signals received
+                1816  voluntary context switches
+               17691  involuntary context switches
+           554811503  instructions retired
+           293749949  cycles elapsed
+            40387112  peak memory footprint
+memcap: peak 125 MB rc=0
