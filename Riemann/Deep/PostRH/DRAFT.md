@@ -5,7 +5,7 @@ Exact-substring insertions; nothing here edits repo files. Every anchor below oc
 ## 1. TREE.md node lines: insert "<sentence> " immediately after the anchor
 | anchor (exact) | sentence (≤ 25 words) |
 |---|---|
-| `- N1 Weil/Connes positivity — ` | If ROOT holds: Q(f) ≥ 0 for every f and every Dirichlet χ, > 0 for f ≠ 0 (Weil); window records become quantitative only. |
+| `- N1 Weil/Connes positivity — ` | If ROOT holds: Q(f) ≥ 0 for every f and every Dirichlet χ (Weil), > 0 for compactly supported f ≠ 0; window records become quantitative only. |
 | `- N2 de Bruijn–Newman Λ — ` | If ROOT holds: Λ = 0 (Rodgers–Tao 1801.05914), Λ_χ = 0 for real primitive χ (Dobner 2005.05142, [check]); our Λ records moot. |
 | `- N3 Li/Keiper — ` | If ROOT holds: λ_n > 0 for all n and Re λ_n(χ) > 0 for every primitive χ (Li; Lagarias math/0404394); range records moot. |
 | `- N4 Robin/Lagarias — ` | If ROOT holds: Robin for all n ≥ 5041, Lagarias' H_n form, Nicolas for all primorials, our odd Robin beyond N₀; range records moot. |
@@ -23,13 +23,13 @@ Exact-substring insertions; nothing here edits repo files. Every anchor below oc
 
 ## 2. COROLLARIES.md block (one line per UNCONDITIONAL result; each conditional on ROOT's verification; A4, A20, B3 omitted as already unconditional or superseded, A12 + A14 and A18 + A19 share a line)
 - If ROOT holds: Λ = 0 (Rodgers–Tao [1801.05914](https://arxiv.org/abs/1801.05914) Thm, l.129, with RH ⟺ Λ ≤ 0, l.68); our Λ ≤ 0.1074 moot (postrh B1).
-- If ROOT holds: Weil's Q(f) ≥ 0 for every test function and every Dirichlet χ, Q(f) > 0 for f ≠ 0 (Weil's criterion; postrh CONSEQUENCES N1).
+- If ROOT holds: Weil's Q(f) ≥ 0 for every test function and every Dirichlet χ (Weil's criterion), Q(g∗g̃) > 0 for compactly supported g ≠ 0 (ĝ has exponential type, so O(T) zeros, against N(T) ~ (T/2π) log T; postrh CONSEQUENCES N1; R542).
 - If ROOT holds: λ_n > 0 for all n and Re λ_n(χ) > 0 for every primitive χ, all n (Lagarias [math/0404394](https://arxiv.org/abs/math/0404394) l.1096; postrh B15).
 - If ROOT holds: our Li-remainder theorems: mean square between N^{3/2}√log N and N^{3/2}√log N·log log N, limsup \|R(n)\|/(n log n)^{1/4} ≥ 0.289 ([page](discoveries/li-remainder.md); postrh A15).
 - If ROOT holds: Robin for every n ≥ 5041 and Lagarias' σ(n) ≤ H_n + e^{H_n} log H_n for every n ≥ 1 ([math/0008177](https://arxiv.org/abs/math/0008177) l.92–97, 171–176; postrh B12).
 - If ROOT holds: σ(n) < (e^γ/2) n log log n for every odd n > 277093800961598968947975375 ([page](discoveries/odd-robin.md); postrh A16).
-- If ROOT holds: d_N → 0 ([math/0202141](https://arxiv.org/abs/math/0202141) l.47) and liminf d_N² log N ≥ 2 + γ − log 4π exactly (Burnol math/0103058 Thm 1.3; postrh B13).
-- If ROOT holds: natural-number L^p Nyman–Beurling density for every 1 < p < 2, for ζ, every Dirichlet L and every abelian ζ_K ([page](discoveries/nyman-beurling-lp.md); postrh A17).
+- If ROOT holds: d_N → 0 ([math/0202141](https://arxiv.org/abs/math/0202141) l.47) and liminf d_N² log N ≥ 2 + γ − log 4π (Burnol math/0103058 Thm 1.3: ≥ Σ m_ρ²/|ρ|² ≥ Σ m_ρ/|ρ|² = 2 + γ − log 4π under RH; postrh B13; R542).
+- If ROOT holds: natural-number L^p Nyman–Beurling density for every 1 < p < 2, for ζ, every Dirichlet L and every abelian ζ_K ([page](discoveries/nyman-beurling-lp.md); abelian ζ_K by NBLpK's Theorem A_K, COROLLARIES R417 line; postrh A17).
 - If ROOT holds: D(λ)² log(1/λ) → Σ_ρ m_ρ²/\|ρ\|² (continuous Nyman–Beurling), and the analogue for primitive χ mod q ≥ 3 (DISCOVERIES N5; COROLLARIES nbdir; postrh A12, A14).
 - If ROOT holds: every Jensen polynomial J^{d,n} of ξ is hyperbolic (Pólya, [1902.07321](https://arxiv.org/abs/1902.07321) l.277), and of Ξ_χ for primitive real χ (postrh B14, CONSEQUENCES N6).
 - If ROOT holds: at least 19/27 of the zeros of ζ are simple (Bui–Heath-Brown [1302.5018](https://arxiv.org/abs/1302.5018) Thm, l.73–75, "Assuming RH"; postrh B2).
