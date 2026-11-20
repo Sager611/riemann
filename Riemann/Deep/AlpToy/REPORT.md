@@ -25,4 +25,4 @@ Scope: reproduce, independently of the Lean build, the toy settings of L. Alpög
 - Riemann/Deep/AlpToy/REPORT.md (this), TOY.md (statements, methods, numbers per item).
 - code/: item1_ff_toy.py, item2_cm_padic.py, item2b_d23.py, item2_analyze.py, item2_table.py, item2_recheck.py, item2_theta_char.py, item3_weil.py, item4_gz_sieve.py.
 - logs/: item1.log, item2_run1000.log, item2b_d23.log, item2_analysis.log, item2_table.log, item2_recheck.log, item2_theta_char.log, item3.log, item4_1e9.log.
-- Scratch (not in repo): .scratch/alptoy/ (zeros1.txt = Odlyzko's first 10⁵ zeros, JSON outputs, STATE.md).
+- logs/data/: the JSON outputs (copied from .scratch/alptoy/ by the orchestrator, 20 Nov; item2_recheck.py reads item2_1000.json); zeros1.txt (Odlyzko's first 10⁵ zeros, 1.8 MB) not kept: fetch from Odlyzko's tables.
