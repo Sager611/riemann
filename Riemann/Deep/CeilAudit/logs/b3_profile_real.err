@@ -1,0 +1,3 @@
+/Users/adriansager/playground/riemann/.scratch/ceilaudit/b3_profile.py:53: RuntimeWarning: invalid value encountered in sqrt
+  return np.array([-np.pi * (H / (2 * np.pi)) * dw * np.sum(A * Bfun(4 * np.pi * np.sqrt(n * xi / pq), d)) for n in ns])
+memcap: peak 432 MB KILLED MEM>290MB rc=137

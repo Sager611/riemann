@@ -1,0 +1,11 @@
+shifts alpha=(0.01+0j), beta=(0.02+0j)
+validate T=1e+06 H=3000.0 tau=0.111 N=262144 du=2.00e-03 |w|<=5.6: max|FFT-brute|/max|Phi| = 1.6e-05; |FFT-Taylor(J=8)|/max = 1.7e-05
+validate T=1e+06 H=250.0 tau=16 N=524288 du=7.55e-04 |w|<=171.8: max|FFT-brute|/max|Phi| = 3.4e-06
+T=1e+06 H=4000 theta=0.600 tau=T/H^2=0.0625 pq=6 N0=0.375: L1(A)/H=0.283 (sqrt(tau)=0.25); max_(n<=N0)|T(n)|/(H X0^-1/2)=0.006; decay >=2N0 1.0e+00 >=4N0 5.9e-03 >=8N0 1.7e-04; S/pred=0.003
+T=1e+06 H=4000 theta=0.600 tau=T/H^2=0.0625 pq=30 N0=1.88: L1(A)/H=0.283 (sqrt(tau)=0.25); max_(n<=N0)|T(n)|/(H X0^-1/2)=0.076; decay >=2N0 2.7e-01 >=4N0 5.3e-03 >=8N0 1.3e-05; S/pred=0.091
+T=1e+06 H=1000 theta=0.500 tau=T/H^2=1 pq=6 N0=6: L1(A)/H=0.422 (sqrt(tau)=1.00); max_(n<=N0)|T(n)|/(H X0^-1/2)=0.290; decay >=2N0 8.8e-02 >=4N0 3.0e-03 >=8N0 5.5e-06; S/pred=0.238
+T=1e+06 H=1000 theta=0.500 tau=T/H^2=1 pq=30 N0=30: L1(A)/H=0.422 (sqrt(tau)=1.00); max_(n<=N0)|T(n)|/(H X0^-1/2)=0.467; decay >=2N0 5.5e-02 >=4N0 1.9e-03 >=8N0 3.4e-06; S/pred=nan
+T=1e+06 H=500 theta=0.450 tau=T/H^2=4 pq=6 N0=24: L1(A)/H=0.801 (sqrt(tau)=2.00); max_(n<=N0)|T(n)|/(H X0^-1/2)=0.425; decay >=2N0 4.7e-02 >=4N0 2.0e-03 >=8N0 4.0e-06; S/pred=0.440
+T=1e+06 H=500 theta=0.450 tau=T/H^2=4 pq=30 N0=120: L1(A)/H=0.801 (sqrt(tau)=2.00); max_(n<=N0)|T(n)|/(H X0^-1/2)=0.526; decay >=2N0 3.7e-02 >=4N0 9.3e-04 >=8N0 1.6e-06; S/pred=nan
+T=1e+06 H=250 theta=0.400 tau=T/H^2=16 pq=6 N0=96: L1(A)/H=1.596 (sqrt(tau)=4.00); max_(n<=N0)|T(n)|/(H X0^-1/2)=0.371; decay >=2N0 3.0e-02 >=4N0 1.1e-03 >=8N0 5.4e-06; S/pred=nan
+T=1e+06 H=250 theta=0.400 tau=T/H^2=16 pq=30 N0=480: L1(A)/H=1.596 (sqrt(tau)=4.00); max_(n<=N0)|T(n)|/(H X0^-1/2)=0.542; decay >=2N0 2.0e-02 >=4N0 7.3e-04 >=8N0 3.7e-06; S/pred=nan

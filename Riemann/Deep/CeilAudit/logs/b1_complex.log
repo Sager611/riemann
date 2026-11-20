@@ -1,0 +1,7 @@
+R=9.5 deg(P)~5 K=3: real kappa=-0.0645254005  complex kappa=-0.0645254005  diff=0.00e+00  max|Im coeff| at complex optimum=0.0e+00
+R=9.5 deg(P)~7 K=5: real kappa=0.0326523548  complex kappa=0.0326523548  diff=0.00e+00  max|Im coeff| at complex optimum=0.0e+00
+R=9.867773 deg(P)~5 K=3: real kappa=-0.0746305531  complex kappa=-0.0746305531  diff=0.00e+00  max|Im coeff| at complex optimum=0.0e+00
+R=9.867773 deg(P)~7 K=5: real kappa=0.0279515753  complex kappa=0.0279515753  diff=0.00e+00  max|Im coeff| at complex optimum=0.0e+00
+R=10.3 deg(P)~5 K=3: real kappa=-0.0866115942  complex kappa=-0.0866115942  diff=0.00e+00  max|Im coeff| at complex optimum=0.0e+00
+R=10.3 deg(P)~7 K=5: real kappa=0.0219809480  complex kappa=0.0219809480  diff=0.00e+00  max|Im coeff| at complex optimum=0.0e+00
+certified ceiling 0.07005633 (float 0.0700563167 at R = 9.867773)

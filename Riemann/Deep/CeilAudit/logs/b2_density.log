@@ -1,0 +1,16 @@
+7/11-DPP form factor F(alpha) vs Montgomery min(|alpha|,1):
+  alpha=0.1000: F_DPP=0.100000  Montgomery=0.100000
+  alpha=0.3000: F_DPP=0.300000  Montgomery=0.300000
+  alpha=0.5000: F_DPP=0.500000  Montgomery=0.500000
+  alpha=0.5714: F_DPP=0.571429  Montgomery=0.571429
+  alpha=0.6000: F_DPP=0.571429  Montgomery=0.600000
+  alpha=0.7000: F_DPP=0.571429  Montgomery=0.700000
+  alpha=0.8000: F_DPP=0.571429  Montgomery=0.800000
+  alpha=0.9000: F_DPP=0.571429  Montgomery=0.900000
+  alpha=1.0000: F_DPP=0.571429  Montgomery=1.000000
+  => agrees exactly on |alpha| <= theta = 1/a - 1 = 4/7; equals 4/7 on [4/7, 1] (BGSTB's complex-gamma F ~ alpha there is the one input it violates)
+theta=0.56, q=2.02 (q*theta=1.1312 vs 8/7=1.1429): L=1e+02: log10 max_a = 0.00 at a=0; L=1e+03: log10 max_a = 0.00 at a=0; L=1e+04: log10 max_a = 0.00 at a=0; L=1e+06: log10 max_a = 0.00 at a=0; L=1e+08: log10 max_a = 0.00 at a=0
+theta=0.58, q=2.01 (q*theta=1.1658 vs 8/7=1.1429): L=1e+02: log10 max_a = 0.33 at a=33; L=1e+03: log10 max_a = 0.97 at a=98; L=1e+04: log10 max_a = 1.78 at a=178; L=1e+06: log10 max_a = 2.88 at a=289; L=1e+08: log10 max_a = 3.85 at a=387
+theta=0.6, q=2.01 (q*theta=1.2060 vs 8/7=1.1429): L=1e+02: log10 max_a = 0.90 at a=33; L=1e+03: log10 max_a = 2.68 at a=98; L=1e+04: log10 max_a = 4.89 at a=178; L=1e+06: log10 max_a = 7.94 at a=289; L=1e+08: log10 max_a = 10.60 at a=387
+theta=0.66, q=2.01 (q*theta=1.3266 vs 8/7=1.1429): L=1e+02: log10 max_a = 2.61 at a=33; L=1e+03: log10 max_a = 7.78 at a=98; L=1e+04: log10 max_a = 14.23 at a=178; L=1e+06: log10 max_a = 23.12 at a=290; L=1e+08: log10 max_a = 30.87 at a=387
+max_a e^{q theta a} n(a) must stay O(1) (sum over off-line zeros of X^{q(beta-1/2)} << T log T); growth with L = log T means the freedom fails.

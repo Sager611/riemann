@@ -1,0 +1,7 @@
+check xi = 3/25: kappa* = 0.0861106879 at R = 8.0148, lam = 0.7696 (frozen SL detector: 0.0844779080)
+nu = 0.1170: kappa* = 0.0839525197 (R = 8.2236, lam = 0.7698, Q(1) = beta - 1 = -1.19e-04); moment theta > 0.489333, detector theta > 0.495327 -> 0.495327
+nu = 0.1180: kappa* = 0.0846717896 (R = 8.1529, lam = 0.7697, Q(1) = beta - 1 = -1.27e-04); moment theta > 0.490667, detector theta > 0.494870 -> 0.494870
+nu = 0.1190: kappa* = 0.0853911775 (R = 8.0833, lam = 0.7697, Q(1) = beta - 1 = -1.36e-04); moment theta > 0.492000, detector theta > 0.494413 -> 0.494413
+nu = 0.1200: kappa* = 0.0861106879 (R = 8.0148, lam = 0.7696, Q(1) = beta - 1 = -1.46e-04); moment theta > 0.493333, detector theta > 0.493955 -> 0.493955
+nu = 0.1210: kappa* = 0.0868303258 (R = 7.9474, lam = 0.7695, Q(1) = beta - 1 = -1.55e-04); moment theta > 0.494667, detector theta > 0.493498 -> 0.494667
+one-piece detector limit on this grid: theta_c* ~ 0.493955

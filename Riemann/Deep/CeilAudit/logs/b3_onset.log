@@ -1,0 +1,17 @@
+check: nu=3/25 -> R 177/20 kappa 0.0844779079697484 (E1: R=177/20, kappa=0.0844779079697)
+nu=1180/10000 R=89/10 kappa=0.0833370104 theta_moment>(4nu+1)/3=0.490667 theta_detector=0.495719 -> onset 0.495719
+nu=1185/10000 R=89/10 kappa=0.0836247036 theta_moment>(4nu+1)/3=0.491333 theta_detector=0.495536 -> onset 0.495536
+nu=1190/10000 R=177/20 kappa=0.0839107780 theta_moment>(4nu+1)/3=0.492000 theta_detector=0.495354 -> onset 0.495354
+nu=1195/10000 R=177/20 kappa=0.0841955694 theta_moment>(4nu+1)/3=0.492667 theta_detector=0.495173 -> onset 0.495173
+nu=1200/10000 R=177/20 kappa=0.0844779080 theta_moment>(4nu+1)/3=0.493333 theta_detector=0.494993 -> onset 0.494993
+nu=1205/10000 R=44/5 kappa=0.0847592460 theta_moment>(4nu+1)/3=0.494000 theta_detector=0.494814 -> onset 0.494814
+nu=1210/10000 R=44/5 kappa=0.0850387604 theta_moment>(4nu+1)/3=0.494667 theta_detector=0.494637 -> onset 0.494667
+nu=1215/10000 R=44/5 kappa=0.0853158663 theta_moment>(4nu+1)/3=0.495333 theta_detector=0.494460 -> onset 0.495333
+nu=1220/10000 R=35/4 kappa=0.0855925066 theta_moment>(4nu+1)/3=0.496000 theta_detector=0.494285 -> onset 0.496000
+nu=1225/10000 R=35/4 kappa=0.0858668637 theta_moment>(4nu+1)/3=0.496667 theta_detector=0.494110 -> onset 0.496667
+nu=1230/10000 R=87/10 kappa=0.0861391744 theta_moment>(4nu+1)/3=0.497333 theta_detector=0.493937 -> onset 0.497333
+nu=1235/10000 R=87/10 kappa=0.0864108323 theta_moment>(4nu+1)/3=0.498000 theta_detector=0.493765 -> onset 0.498000
+nu=1240/10000 R=87/10 kappa=0.0866801480 theta_moment>(4nu+1)/3=0.498667 theta_detector=0.493594 -> onset 0.498667
+nu=1245/10000 R=173/20 kappa=0.0869477956 theta_moment>(4nu+1)/3=0.499333 theta_detector=0.493424 -> onset 0.499333
+nu=1250/10000 R=173/20 kappa=0.0872144840 theta_moment>(4nu+1)/3=0.500000 theta_detector=0.493254 -> onset 0.500000
+BEST onset on the nu grid: theta_c = 0.494667 at nu = 1210/10000 (R = 44/5); h(1/2; kappa) there would be positive for every theta > theta_c

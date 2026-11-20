@@ -1,0 +1,12 @@
+psi_0 = 1: A = 1.0000000, B = 0.3333316, R_1 = 1.3333316 (H = 2 - R = 0.6666684), lambda* = sqrt(A/B) = 1.7321 (> 1: lambda = 1 optimal)
+   lambda = 0.999: H loss 6.68e-04 (first order (A - B)(1 - lambda) = 6.67e-04)
+   lambda = 0.99: H loss 6.77e-03 (first order (A - B)(1 - lambda) = 6.67e-03)
+   lambda = 0.95: H loss 3.60e-02 (first order (A - B)(1 - lambda) = 3.33e-02)
+   lambda = 0.9: H loss 7.78e-02 (first order (A - B)(1 - lambda) = 6.67e-02)
+MT cos(sqrt2 s): A = 1.0061272, B = 0.3213703, R_1 = 1.3274975 (H = 2 - R = 0.6725025), lambda* = sqrt(A/B) = 1.7694 (> 1: lambda = 1 optimal)
+   lambda = 0.999: H loss 6.86e-04 (first order (A - B)(1 - lambda) = 6.85e-04)
+   lambda = 0.99: H loss 6.95e-03 (first order (A - B)(1 - lambda) = 6.85e-03)
+   lambda = 0.95: H loss 3.69e-02 (first order (A - B)(1 - lambda) = 3.42e-02)
+   lambda = 0.9: H loss 7.97e-02 (first order (A - B)(1 - lambda) = 6.85e-02)
+TEN's whole defect gain over H on any window <= 0.6740088 - 0.6725007 = 1.5e-3, so lambda < 1 can help only for 1 - lambda < 2.2e-3 and
+only if the defect gain grows faster than (A - B) = 0.685 per unit decrease of lambda; the rank cap d = lambda N (AF 7(e)) also caps kappa <= lambda.

@@ -1,0 +1,27 @@
+VERDICT: GAP — C1 lacks a uniform, summable dual-transform estimate; its stationary-phase mechanism is plausible.
+
+**(1)** Given your range audit, Taylor is the sole *explicit* \(\theta>1/2\) restriction.
+But every reused estimate must remain valid for the exact profile; the old Taylor-profile seminorm bounds cannot simply be inherited.
+
+**(2)** The joint phase \(\Phi_\sigma=2Ty/H-\lambda(y)\xi+\sigma b\sqrt{\xi}\) has exact saddles
+\[
+y_\sigma=\sigma H\,\operatorname{arsinh}\sqrt{\frac{\pi n}{2pqT}},\qquad \xi_\sigma=\frac{T}{2\pi}e^{-2y_\sigma/H}.
+\]
+Writing \(r=n/N_0\), this gives \(y_\sigma^2=\pi r/2+O(r^2/H^2)\): your Gaussian damping is asymptotic, not exact.
+More importantly, with \(u=2\pi\xi/T,\ K=T/H,\ s=y_\sigma/H\),
+\[
+\det D^2_{(u,y)}(\Phi_\sigma/K)=-2(e^{4s}+e^{2s}).
+\]
+For bounded \(r\), this stays away from zero independently of \(T/H^2\). Thus no local stationary-phase obstruction occurs at \(\theta=1/2\).
+Joint stationary phase is cleaner than successive second-derivative tests: taking absolute values after the first test destroys the needed cancellation.
+Both Hankel branches contribute; their interference prevents the asserted pointwise absolute-value asymptotic. An upper envelope suffices.
+
+A rigorous proof needs:
+- Justified localization and interchange; Gaussian \(y\)-decay alone does not make the unrestricted \(\xi\)-integral absolutely convergent.
+- Uniform Hankel/stationary-phase expansions for all \(p,q,n\), including small \(n/N_0\); here \(X_0\gg T^{1/2-\nu}\) helps.
+- Summable remainders, cutoff errors and large-\(n\) tails—not merely an estimate for \(n\le N_0\). Global Gaussian decay is unnecessary.
+- Uniform complex-shift and shift-derivative estimates; explicit residue evaluation and rechecking every profile-dependent step.
+
+**(3)** No intrinsic sub-\(1/2\) failure follows from the supplied assumptions; numerics cannot exclude omitted terms or nonuniform arithmetic tails.
+Zero counting is not an obstacle: \(N(T+H)-N(T)=\frac{H}{2\pi}\log(T/2\pi)+O(H^2/T+\log T)\), sufficient for every fixed \(\theta>0\).
+**C2 is conditional:** accepting the quoted detector value and threshold, \((1+4\nu)/3=0.494666\ldots\), so the claimed \(0.49467\) consequence follows **if C1 is proved**.
