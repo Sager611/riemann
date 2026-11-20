@@ -1,0 +1,11 @@
+Assembly::ClassMean.full: importers=1 using=0 e.g. []
+Assembly::KroneckerLimit.full: importers=1 using=0 e.g. []
+Quadratic::classNumber_eq_of_discr_neg: importers=4 using=0 e.g. []
+Quadratic::classNumber_mul_regulator_eq_of_discr_pos: importers=4 using=0 e.g. []
+QuadraticConductor::classNumber_eq_sum_of_discr_neg: importers=2 using=0 e.g. []
+PrimeMulBernoulliMem::prime_mul_bernoulli_mem: importers=1 using=1 e.g. ['Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsIntModLevelPrimePowEqAddMul.lean']
+ExistsIdealInClassOfNormLeSqrtDiscr::classNumber_le_sqrt_discr_mul_pow_pred: importers=9 using=2 e.g. ['Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ClassNumberLeAbsDiscrOfFinrankEqTwo.lean', 'Development/AutomorphicArithmetic/AutomorphicVarieties/LevelCohomology/HQuad.lean']
+GeneralizedBernoulliChangeLevel::genB: importers=2 using=2 e.g. ['Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/BernoulliNumbers/Primlevel.lean', 'Development/AutomorphicArithmetic/AutomorphicVarieties/PrimitiveFrobeniusFixed/ZeNorm.lean']
+BLval::BLval: importers=1 using=1 e.g. ['Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/BernoulliNumbers/BLprim.lean']
+GreenCuspidalCharsByRegularCharsProof::greenRegularCharacters_holds: importers=4 using=2 e.g. ['Development/WeilBound/CoreStatements/NefModelVolumes/TopCovolSlim2.lean', 'Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GreenCuspidalCharsByRegularCharsProofStatement.lean']
+memcap: peak 0 MB rc=0

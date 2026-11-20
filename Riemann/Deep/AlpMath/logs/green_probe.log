@@ -1,0 +1,9 @@
+GL_2(F_2): |G|=6 classes=3 orth_err=3.1e-16 cuspidal=1 regular_orbits=1 degree_ok=True (target 1) elliptic_classes=1 values_match=True PASS=True
+GL_2(F_3): |G|=48 classes=8 orth_err=7.6e-16 cuspidal=3 regular_orbits=3 degree_ok=True (target 2) elliptic_classes=3 values_match=True PASS=True
+GL_2(F_5): |G|=480 classes=24 orth_err=1.2e-14 cuspidal=10 regular_orbits=10 degree_ok=True (target 4) elliptic_classes=10 values_match=True PASS=True
+GL_2(F_7): |G|=2016 classes=48 orth_err=2.4e-14 cuspidal=21 regular_orbits=21 degree_ok=True (target 6) elliptic_classes=21 values_match=True PASS=True
+GL_3(F_2): |G|=168 classes=6 orth_err=1.2e-15 cuspidal=2 regular_orbits=2 degree_ok=True (target 3) elliptic_classes=2 values_match=True PASS=True
+GL_3(F_3): |G|=11232 classes=24 orth_err=1.7e-14 cuspidal=8 regular_orbits=8 degree_ok=True (target 16) elliptic_classes=8 values_match=True PASS=True
+GL_4(F_2): |G|=20160 classes=14 orth_err=4.8e-14 cuspidal=3 regular_orbits=3 degree_ok=True (target 21) elliptic_classes=3 values_match=True PASS=True
+GL_2(F_11): |G|=13200 classes=120 orth_err=5.3e-13 cuspidal=55 regular_orbits=55 degree_ok=True (target 10) elliptic_classes=55 values_match=True PASS=True
+memcap: peak 0 MB rc=0

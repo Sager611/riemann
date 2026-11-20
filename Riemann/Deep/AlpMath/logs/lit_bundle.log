@@ -1,0 +1,13 @@
+decls: 196 {'no O': 152, 'mentions O': 43}
+direct field uses of O:
+  283 local_langlands_recT_exists_of_literature :: O.localLanglandsExists
+  285 pair_u_of_literature :: _root_.UpperTheory.GalS.field_of_starFull_alt (_root_.UpperTheory.LiteratureTheorems.local_langlands_recT_exists_of_literature O) (_root_.UpperTheory.LiteratureTheorems.local_converse_gl_of_literature
+  459 carU_local_global_of_literature :: (_root_.UpperTheory.GalS.ofDual_star_alt (PositivityTheory.PRW.GKD.gelfandKazhdanDual_of_multiplicityOne (_root_.UpperTheory.LiteratureTheorems.jacquet_shalika_rigidity_of_literature O) (_root_.UpperT
+  609 literature_automorphy :: decay := (_root_.UpperTheory.LiteratureTheorems.cusp_rapid_decay_of_literature O) hc := (_root_.UpperTheory.LiteratureTheorems.harish_chandra_finite_of_literature O) fin := (_root_.UpperTheory.Literat
+noO 215 OpenLiteratureStatements :: caraianiLocalGlobalDual : _root_.UpperTheory.One.M.Row localLanglandsExists : _root_.UpperTheory.Zero.LLC.RecTExists galoisRepOfPolarizedPai
+noO 219 logDerivOne :: GlobalTheory.LogDerOneProof.logDerOne_holds
+noO 221 ellipticMainTheoremCM' :: PositivityTheory.Prw.ellipticMainTheoremCM_holds
+noO 223 heckeTateFunctionalEquation' :: GlobalTheory.Top.heckeTateFE
+noO 225 hilbertClassFieldJ' :: GlobalTheory.Laid.hcfj_holds
+noO 227 partial_zeta_functional_equation_of_literature :: PositivityTheory.Prw.partialZetaFunctionalEquation_holds
+memcap: peak 0 MB rc=0

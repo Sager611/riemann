@@ -1,0 +1,26 @@
+H1 class polynomials H_d integral (coeffs within max(1e-30, 1e-140*max|coef|) of Z): PASS 122 fundamental d in [-399,-3], h <= 19, failures 0
+H2 j(a) = j(b) iff same class (distinct j over classes): PASS 122 fields, failures 0
+H3 [Q(j):Q] = h (H_d irreducible over Q): PASS 122 fields, failures 0
+H3b H_d irreducible over K (h in 2..4, |d|<300): PASS 43 fields, failures 0
+H3c known values (j(rho)=0, j(i)=1728, -3375, 8000, -640320^3, H_-23): PASS 
+H4 split p: H_d splits completely mod p iff p = principal form: PASS 14 discriminants, 2957 (d,p) pairs p<3000, failures 0
+R1 RadfordShufflePolynomial graded dims (|A|=2,3, length<=10): PASS prod over Lyndon words (1-t^|w|)^-1 = 1/(1-|A|t)
+       15.55 real        13.55 user         0.35 sys
+            63062016  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6855  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 541  voluntary context switches
+               22447  involuntary context switches
+           417922721  instructions retired
+           187000535  cycles elapsed
+            15073808  peak memory footprint
+memcap: peak 50 MB rc=0

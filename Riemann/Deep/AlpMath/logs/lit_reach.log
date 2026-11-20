@@ -1,0 +1,14 @@
+decls 196 reachable from root 196
+unreachable: 0 []
+GreenRegularCharacters -> [('green_regular_characters_of_literature', 399, True)]
+HilbertClassFieldJ -> [("hilbertClassFieldJ'", 225, True)]
+ComplexMultiplicationJSt -> [('complex_multiplication_j_st_of_literature', 331, True)]
+RadfordShufflePolynomial -> [('radford_shuffle_polynomial_of_literature', 479, True)]
+SiegelKlingenDeligneRibet -> [('siegel_klingen_deligne_ribet_of_literature', 231, True)]
+DeligneRibet -> [('deligne_ribet_of_literature', 229, True)]
+UnusedSlot72 -> [('siegel_eisenstein_simple_pole', 505, True)]
+Linnik -> [('linnik_of_literature', 455, True)]
+WeylBranching -> [('weyl_branching_of_literature', 543, True)]
+QuadraticClassFieldTheory -> [('quadratic_class_field_theory_of_literature', 477, True)]
+GreenCuspidal -> [('green_cuspidal_of_literature', 397, True)]
+memcap: peak 0 MB rc=0

@@ -1,0 +1,23 @@
+Q1 product formula (Hilbert reciprocity) for L = Q(sqrt a), t = b: PASS 3000 random pairs |a|,|b| <= 1e5, failures 0
+W1 WeylBranching (multiplicity one on interlacing weights): PASS 65 dominant weights, N = 2..4, entries <= 3, max rel err 1.69e-28
+L1 L(1,chi) != 0 (nontrivial chi mod q <= 60): PASS 1042 characters (count = phi(q) for all q: True), min |L(1,chi)| = 0.3324
+S1 SiegelKlingen: zeta_F(1-k) rational, F = Q(sqrt d): PASS 9 fields x k in (2,4,6): max |numeric - Bernoulli rational| 2.02e-28; zeta_F(-1) = 1/30, 1/12, 1/6 for d = 5, 8, 13: True
+        5.21 real         4.55 user         0.23 sys
+            60014592  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6662  page reclaims
+                   7  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 594  voluntary context switches
+                4391  involuntary context switches
+           419470012  instructions retired
+           173366018  cycles elapsed
+            15139344  peak memory footprint
+memcap: peak 14 MB rc=0

@@ -1,0 +1,44 @@
+3 1 2.98e-31
+7 1 1.59e-31
+11 1 7.1e-32
+19 1 4.86e-31
+23 3 1.4e-31
+31 3 3.43e-31
+43 1 1.01e-30
+47 5 3.9e-31
+59 3 7.35e-31
+67 1 7.34e-31
+71 7 5.11e-31
+79 5 7.88e-31
+83 3 1.02e-30
+103 5 1.01e-30
+107 3 1.2e-30
+127 5 1.16e-30
+131 5 1.06e-30
+139 3 1.38e-30
+151 7 1.1e-30
+163 1 4.53e-30
+167 11 9.22e-31
+179 5 1.31e-30
+191 13 9.23e-31
+199 9 1.16e-30
+A7 ClassMean rerun: PASS 24 primes p = 3 mod 4, p < 200, dps 100, s-1 = 1e-30, max |err| 4.53e-30
+       39.99 real        33.51 user         0.85 sys
+            57376768  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                6513  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   2  voluntary context switches
+               78008  involuntary context switches
+           413822088  instructions retired
+           178165413  cycles elapsed
+            15172088  peak memory footprint
+memcap: peak 45 MB rc=0

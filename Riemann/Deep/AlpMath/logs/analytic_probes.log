@@ -1,0 +1,37 @@
+A1 CotangentSum: PASS 20 random (a,u), max rel err 3.48e-31
+A2 PowerIntegral: PASS 12 random (a,s), max rel err 1.36e-31
+A3 GammaZetaLimit: PASS y in {0.3,1,2.5,7}, s-1=1e-25, max abs err 1.14e-24
+A4 LogEta: PASS 10 random tau, max abs err 2.11e-31
+A5 DeltaEta: PASS 8 random tau, max rel err 5.17e-30
+A5b G4 lattice sum vs q-expansion (tau=i): PASS rel diff 2.89e-5 (cutoff 60)
+A8 KroneckerSplit (s=2, tau=0.3+1.1i): PASS split-fourier 7.89e-31, direct(R=300)-split 2.95e-5
+A6 KroneckerLimit: PASS 6 random tau, s-1=1e-20, max abs err 1.39e-20
+C1 classNumber_eq_sum_of_discr_neg: PASS 911 fundamental d in [-3000,-3], h by reduced forms, failures 0
+C2 classNumber_eq_of_discr_neg: PASS 911 fields, L(1,chi) by digamma, max |err| 9.47e-30
+C4 classNumber_le_sqrt_discr_mul_pow_pred (n=2, imaginary): PASS 911 fields, failures 0
+C3 classNumber_mul_regulator_eq_of_discr_pos: PASS 244 fundamental d<=800: predicted h integral (max dev 2.37e-30), table {5: 1, 40: 2, 60: 2, 316: 3, 328: 4} matches=True
+B1 prime_mul_bernoulli_mem (p*B_{k+2} p-integral): PASS k<=200, p<100, failures 0
+B2 hurwitzZeta_one_sub_eq_bernoulli: PASS k<=12, 5 values of x in (0,1], max err 3.08e-33
+B3 bernoulli_poly_reflection: PASS k<=40 exact, failures 0
+B4 generalized_bernoulli_change_level: PASS 775 cases (N<=11 cyclic, m<=6, k<=5), max |err| 2.41e-09
+A7 ClassMean (Chowla-Selberg, prime discriminants): FAIL 30 primes p=3 mod 4, p<270, max |err| 8.03e-20
+SUMMARY 16 pass of 17
+      503.99 real       423.32 user         8.17 sys
+           123928576  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               43313  page reclaims
+                2086  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  34  messages sent
+                  36  messages received
+                   1  signals received
+                1067  voluntary context switches
+              857659  involuntary context switches
+           562785622  instructions retired
+           362889986  cycles elapsed
+            15696400  peak memory footprint
+memcap: peak 125 MB rc=0

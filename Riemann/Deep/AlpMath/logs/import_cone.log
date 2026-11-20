@@ -1,0 +1,11 @@
+Main cone files: 175535 non-Mathlib: 175191 {'Development': 141928, 'Formalism': 18254, 'GroundTheory': 8507, 'ReciprocityTheory': 3845, 'CompanionTheory': 2027, 'PositivityTheory': 449, 'Mathlib': 344, 'Lemmata': 167, 'BuildAid': 5, 'Supplements': 3}
+Supplements.Kernels.MainTheorems cone files: 175527 non-Mathlib: 175183 {'Development': 141924, 'Formalism': 18254, 'GroundTheory': 8507, 'ReciprocityTheory': 3845, 'CompanionTheory': 2027, 'PositivityTheory': 449, 'Mathlib': 344, 'Lemmata': 167, 'BuildAid': 5, 'Lean': 3}
+Development.AutomorphicArithmetic.CharacterBoxes.MainConclusion cone files: 175522 non-Mathlib: 175178 {'Development': 141922, 'Formalism': 18252, 'GroundTheory': 8507, 'ReciprocityTheory': 3845, 'CompanionTheory': 2027, 'PositivityTheory': 449, 'Mathlib': 344, 'Lemmata': 167, 'BuildAid': 5, 'Lean': 3}
+Formalism.GammaFactorNonvanishing.CritLine cone files: 14361 non-Mathlib: 14301 {'Formalism': 11085, 'Development': 1992, 'ReciprocityTheory': 1119, 'Lemmata': 99, 'Mathlib': 60, 'CompanionTheory': 6}
+Development.AutomorphicArithmetic.CharacterBoxes.RiemannHypothesisOfEveryCharacter cone files: 102321 non-Mathlib: 102083 {'Development': 78979, 'Formalism': 17943, 'ReciprocityTheory': 3361, 'GroundTheory': 767, 'CompanionTheory': 669, 'Mathlib': 238, 'PositivityTheory': 201, 'Lemmata': 158, 'Lean': 3, 'BuildAid': 2}
+modules seen: 175535
+CorGKOf in MT cone: False
+ClassNumberThree in MT cone: False
+OnePoint in MT cone: False
+LenEqZeroIff in MT cone: False
+memcap: peak 72 MB rc=0

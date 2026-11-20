@@ -1,0 +1,22 @@
+N1 HasseNormSt (F = Q): local norms everywhere => global norm from Q(sqrt delta): PASS 893 pairs (delta, x) in [-30,30]^2 locally norms everywhere: rational solution of X^2 - delta Y^2 = x Z^2 found for all (|Y|,|Z| <= 120); 2407 pairs fail locally
+K1 ChebotarevDegreeOne instances: PASS Q(zeta_m), m <= 30: every class a mod m has a prime p > 500; splitting field of x^3-2 (S3): first p > 500 per Frobenius class {'transp': 503, '3-cycle': 523, 'id': 601}
+J1 BrauerDegreeZero: chi - chi(1) in Z-span{Ind_H lam - Ind_H 1}: PASS S3(6):ok, D4(8):ok, Q8(8):ok, A4(12):ok, S4(24):ok (all 2-generated subgroups, all linear characters)
+        3.48 real         1.23 user         0.38 sys
+            71352320  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7964  page reclaims
+                 489  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  35  messages sent
+                  38  messages received
+                   1  signals received
+                1270  voluntary context switches
+                8944  involuntary context switches
+           475271068  instructions retired
+           250547510  cycles elapsed
+            26329616  peak memory footprint
+memcap: peak 0 MB rc=0
