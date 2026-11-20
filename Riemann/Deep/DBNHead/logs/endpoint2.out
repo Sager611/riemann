@@ -1,0 +1,12 @@
+base endpoint 0.10755086958424454
+kappa 1.32 model endpoint 0.10698609691680967 (gain 5.648e-04)
+  row 0 certified window credit 0.057109 model cr* 0.057383 -> used 0.057109
+  row 30 certified window credit 0.148577 model cr* 0.137480 -> used 0.137480
+  row 66 certified window credit 0.255000 model cr* 0.237978 -> used 0.237978
+kappa 1.32 certified rows + model elsewhere: endpoint 0.10698616001539876 (gain 5.647e-04)
+kappa 7 model endpoint 0.10702914357417725 (gain 5.217e-04)
+  row 0 certified window credit 0.057109 model cr* 0.053813 -> used 0.053813
+  row 30 certified window credit 0.148577 model cr* 0.128867 -> used 0.128867
+  row 66 certified window credit 0.255000 model cr* 0.225021 -> used 0.225021
+kappa 7 certified rows + model elsewhere: endpoint 0.10702914357417725 (gain 5.217e-04)
+memcap: peak 19 MB rc=0

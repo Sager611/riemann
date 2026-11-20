@@ -1,0 +1,30 @@
+base endpoint 0.10755086958424454
+kappa 1.32 model endpoint 0.10698609691680967 (gain 5.648e-04)
+  row 0 certified window credit 0.059182 model cr* 0.057383 -> used 0.057383
+  row 30 certified window credit 0.148577 model cr* 0.137480 -> used 0.137480
+  row 66 certified window credit 0.255000 model cr* 0.237978 -> used 0.237978
+kappa 1.32 certified rows + model elsewhere: endpoint 0.10698609691680967 (gain 5.648e-04)
+kappa 7 model endpoint 0.10702914357417725 (gain 5.217e-04)
+  row 0 certified window credit 0.059182 model cr* 0.053813 -> used 0.053813
+  row 30 certified window credit 0.148577 model cr* 0.128867 -> used 0.128867
+  row 66 certified window credit 0.255000 model cr* 0.225021 -> used 0.225021
+kappa 7 certified rows + model elsewhere: endpoint 0.10702914357417725 (gain 5.217e-04)
+        8.54 real         7.04 user         0.17 sys
+            38912000  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                3605  page reclaims
+                 810  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  65  voluntary context switches
+               12745  involuntary context switches
+           481092153  instructions retired
+           210674412  cycles elapsed
+            18743752  peak memory footprint
+memcap: peak 18 MB rc=0
