@@ -1,0 +1,15 @@
+/-!
+# Round 536 — N1 (Weil/Connes positivity) round 19 and N3 (Li/Keiper) round 17: [check] of Ursachi v6 (Zenodo 24401189) and Schuster's Li-criterion no-go note (Zenodo 24404858): both hold as checked, no RH claim
+
+* Nodes: N1 (Weil/Connes positivity), round 19 (R529 before), and N3 (Li/Keiper), round 17 (R526 before). Round type: [check] of two fresh Zenodo records from the sweep (o44_zsweep.py 18:30 UTC), plus three explorations.
+* (u62) HOLDS: A. Ursachi, Zenodo 24401189 = v6 of the signed-prime-sums framework (v5 24400244 checked R528); the orchestrator's label diff: one new statement, Proposition 62.1 (freezing the spectral list at the exact prime threshold), and one changed, Theorem 60.1. Prop. 62.1's bookkeeping holds: 2(b_j − 1/2) + (D_j − 4)a_j = −2h with h = 10⁻⁴, the fixed Gram exponent 1 − 41/28000 < 1 − 2h, Cauchy–Schwarz gives Z^{1−h+o(1)}. No RH claim ('the unconditional cofinal saving on the full signed count is still open').
+* (u60) HOLDS: v6's Theorem 60.1 now cites the external zero-free theorem Θ ≤ 7/8 and uses only its consequence Θ < 1 qualitatively (7/8 enters one constant, 67/20), plus a normalisation change X̂(ξ)/L²(D₀) → X̂(ξ)/(2L²(D₀)); the scout's FLAW 'an unvalidated preprint' is answered by our N7 line: OpenAI's 7/8 is Lean-checked (Comparator match, third-party kernel replays; hpaudit).
+* (ard61) HOLDS: L. Schuster, 'The Asymptotic Resolution Dichotomy in Li's criterion', Zenodo 24404858 (no RH claim): Lemma 5.1 bounds |S_n| ≥ c R^n for an off-line quartet; the scout's sign FLAW was pdftotext dropping the absolute-value bars of (5.1) (the orchestrator's render of PDF page 9 shows them); the mechanism (S_n ≈ −R^n for cos nθ ≥ 1/2) is Bombieri–Lagarias's. Theorem 6.1 (no-go for finite-enrichment proofs of RH) leaves cancellation between unresolved modes to an informal step; it restates that finitely many zeros cannot decide λ_n > 0 for all n.
+* (ard62) HOLDS: Theorem 6.2 (no-go for positive RH proofs from η-approximation): the finite spectral tails converge uniformly by the stated bound (checked independently); it excludes only Li proofs that use the accuracy of the η_k alone (Coffey, Maślanka parametrisations): a restatement, not a new barrier. (coffey) timed out: Coffey's conjectures on η_k untested (low).
+* Explorations: Poincaré–Bendixson (N2: two-zero heat-flow trajectories w' = 4/w have Re w² = Re w₀² + 8t, no periodic limit, nothing new; R522 had Bendixson–Dulac), Hilbert irreducibility (N6: Galois groups of specialisations say nothing about real-rootedness), Furstenberg–Kesten (N13: no ζ-cocycle without re-encoding the explicit formula): no transfer.
+* Also processed (ROOT): alpaudit STATIC AUDIT PASSED, alpmath NO COUNTEREXAMPLE FOUND (39 probes), alpcore CORE MAPPED (with a follow-up on StepHyp and VWin); launched postrh (consequences if the ROOT claim is verified) and alpdep (name-level route of the hypothesis DivIn).
+* Verdict: both records hold as checked; no RH claim in either; no transfer.
+-/
+
+namespace Fayed.R536
+end Fayed.R536
