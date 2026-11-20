@@ -1,0 +1,12 @@
+Formalism.DivisionValues.jw [D] dist=8 Formalism/QuotientMetricDivisors/Statement.lean:89-92
+Formalism.L2.GlobalTheoryTheory.GenusMassVolumes.ClassItemsAt [D] dist=7 Formalism/LocalToGlobal/GlobalTheory/GL5/DiscreteSeriesOfFormalDegree.lean:171-172
+Formalism.L2.GlobalTheoryTheory.GenusMassVolumes.GenusMassAt [D] dist=7 Formalism/LocalToGlobal/GlobalTheory/GL5/DiscreteSeriesOfFormalDegree.lean:112-115
+Formalism.L2.GlobalTheoryTheory.GenusMassVolumes.VolSigIndep [D] dist=7 Formalism/LocalToGlobal/GlobalTheory/GL5/PNamed.lean:14-23
+Formalism.MainNotions.RT.MassRatioUnderVolume [D] dist=7 Formalism/SharpRestriction/GlobalSchurBounds/MassRatioUnfoldedOfTheoremTwo.lean:12-13
+Formalism.MainNotions.StandardLattice.ClassNumberFormula₂ [D] dist=7 Formalism/SharpRestriction/GlobalSchurBounds/StandardLattice.lean:453-457
+Formalism.MainNotions.StandardLattice.HarishChandraReduction.cTmin [D] dist=8 Formalism/SharpRestriction/GlobalSchurBounds/TheoremThreeFamilyOfFormalDegreeInput.lean:93-94
+Formalism.MainNotions.StandardLattice.SiegelMassRatioCM [D] dist=8 Formalism/SharpRestriction/GlobalSchurBounds/StandardLattice.lean:281-285
+GlobalTheory.Fc.ClassTwoEntries.H_hInstR [D] dist=8 Development/AbelianVarietyTheory/Definitions/GlobalTwisting/DivisionSecondComplementAtConstructedPoints.lean:22-25
+GlobalTheory.Fc.R0.ClassCountBoundAllPoints [D] dist=8 Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ClassCountBoundAtConstructedPoints.lean:13-16
+GlobalTheory.T.hTu_cTmin_of_genusMass [T] dist=8 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/RowHTuCTminStatement.lean:11-12
+memcap: peak 18 MB rc=0

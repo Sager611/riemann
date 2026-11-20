@@ -1,0 +1,16 @@
+PARI stack size set to 64000000 bytes, maximum size set to 64012288
+(i) cases l in {5,7,11,13}, 2 <= e <= 12 even, (l-1) | 2e:
+  l=5 h(Q(zeta_l))=1  e=2:quadratic Q(sqrt 5), e=4:trivial, e=6:quadratic Q(sqrt 5), e=8:trivial, e=10:quadratic Q(sqrt 5), e=12:trivial
+  l=7 h(Q(zeta_l))=1  e=6:trivial, e=12:trivial
+  l=11 h(Q(zeta_l))=1  e=10:trivial
+  l=13 h(Q(zeta_l))=1  e=6:quadratic Q(sqrt 13), e=12:trivial
+  l=5 h(Q(sqrt l))=1 B_{(l-1)/2} mod l = 1
+  l=13 h(Q(sqrt l))=1 B_{(l-1)/2} mod l = 9
+  l=17 h(Q(sqrt l))=1 B_{(l-1)/2} mod l = 13
+  l=29 h(Q(sqrt l))=1 B_{(l-1)/2} mod l = 6
+  l=37 h(Q(sqrt l))=1 B_{(l-1)/2} mod l = 31
+  l=41 h(Q(sqrt l))=1 B_{(l-1)/2} mod l = 4
+  l=53 h(Q(sqrt l))=1 B_{(l-1)/2} mod l = 38
+(ii) l = 1 mod 4, 5 <= l < 3000: 211 primes, max h = 11, primes with l | h: 0
+(iii) primes with l | B_{(l-1)/2}: 0 (Ankeny-Artin-Chowla / Mordell: none known below 2e11)
+memcap: peak 0 MB rc=0

@@ -1,0 +1,10 @@
+Formalism.L2.DIV.HLatTie [S] dist=8 Formalism/LocalToGlobal/Divisibility/RowSideTie.lean:19-26
+Formalism.L2.DIV.NumTieG [S] dist=8 Formalism/LocalToGlobal/Divisibility/TupUsed.lean:92-105
+Formalism.L2.DIV.RationalLiftSpanAtUsedTuples [D] dist=8 Formalism/LocalToGlobal/Divisibility/TupUsed.lean:49-55
+Formalism.L2.DIV.ThThetaG [D] dist=8 Formalism/LocalToGlobal/Divisibility/TupUsed.lean:61-65
+Formalism.L2.Rows.RowSideFamily [S] dist=8 Formalism/LocalToGlobal/HilbertRowConditions/ColumnsFunctionAtSubspaces.lean:43-67
+GlobalTheory.Cp.NumTieG [S] dist=8 Development/AbelianVarietyTheory/Definitions/GlobalTwisting/CountsIrreducibilityConstants.lean:80-90
+GlobalTheory.Cp.RationalLiftSpanAtUsedTuples [D] dist=8 Development/AbelianVarietyTheory/Definitions/GlobalTwisting/CountsIrreducibilityConstants.lean:60-66
+GlobalTheory.Cp.ThThetaG [D] dist=8 Development/AbelianVarietyTheory/Definitions/GlobalTwisting/CountsIrreducibilityConstants.lean:67-71
+GlobalTheory.Fc.R1.DivisorBundleCondition [D] dist=8 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CountsIrreducibilityConstants.lean:79-80
+memcap: peak 0 MB rc=0

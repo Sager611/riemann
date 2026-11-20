@@ -1,0 +1,6 @@
+Formalism.L2.Ker.chTh_ok [T] dist=-1 Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/ThDistC.lean:502-512
+GlobalTheory.ChainTheta.chTh_ok_of_colIn' [T] dist=18 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ChThOkOfColIn.lean:148-153
+GlobalTheory.LvT.Built.TrueLaws.laws_true_fam [T] dist=17 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/FivePointLawsTrueChains.lean:46-63
+GlobalTheory.Mem.Col2.KerRat.kernelsOver_of_family [T] dist=18 Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/KernelsOverOfFamily.lean:299-302
+GlobalTheory.Mem.Col2.KerRat.kernelsOver_of_ok [T] dist=19 Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/KernelsOverOfFamily.lean:256-282
+memcap: peak 0 MB rc=0

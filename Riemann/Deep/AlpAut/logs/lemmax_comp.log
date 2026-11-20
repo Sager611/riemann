@@ -1,0 +1,23 @@
+l 3 tests 0
+  ok l|f: l=3 f=(3, 5) orders=[2, 4] n=10 PhiM|P mod l=True v_l(Res)=128 phi(M)=128
+  ok l|f: l=3 f=(3, 13) orders=[2, 4] n=12 PhiM|P mod l=True v_l(Res)=512 phi(M)=512
+l 5 tests 43
+  ok l|f: l=5 f=(5, 11) orders=[4, 2] n=10 PhiM|P mod l=True v_l(Res)=128 phi(M)=128
+  ok l|f: l=5 f=(5, 23) orders=[4, 2] n=11 PhiM|P mod l=True v_l(Res)=256 phi(M)=256
+l 7 tests 105
+  ok l|f: l=7 f=(7,) orders=[6] n=11 PhiM|P mod l=True v_l(Res)=512 phi(M)=512
+l 11 tests 124
+  ok l|f: l=11 f=(3, 11) orders=[2, 2] n=12 PhiM|P mod l=True v_l(Res)=512 phi(M)=512
+  ok l|f: l=11 f=(5, 11) orders=[4, 2] n=12 PhiM|P mod l=True v_l(Res)=512 phi(M)=512
+l 13 tests 161
+  ok l|f: l=13 f=(13,) orders=[2] n=8 PhiM|P mod l=True v_l(Res)=32 phi(M)=32
+  ok l|f: l=13 f=(3, 13) orders=[2, 12] n=10 PhiM|P mod l=True v_l(Res)=256 phi(M)=256
+  ok l|f: l=13 f=(5, 13) orders=[4, 2] n=11 PhiM|P mod l=True v_l(Res)=256 phi(M)=256
+  ok l|f: l=13 f=(7, 13) orders=[6, 2] n=11 PhiM|P mod l=True v_l(Res)=512 phi(M)=512
+l 17 tests 223
+l 19 tests 241
+l 23 tests 277
+l 29 tests 296
+  ok l|f: l=29 f=(29,) orders=[28] n=9 PhiM|P mod l=True v_l(Res)=384 phi(M)=384
+tests 352 violations 0
+memcap: peak 20 MB rc=0

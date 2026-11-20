@@ -1,0 +1,11 @@
+Formalism.MainNotions.StandardLattice.Conclusion5Sharp [D] dist=13 Formalism/SharpRestriction/GlobalSchurBounds/TheoremThreeOfExplicitAndCompact.lean:146-149
+Formalism.MainNotions.product_first_zeroth_parts.Conclusion5Sharp [D] dist=7 Formalism/SharpRestriction/GlobalSchurBounds/ProductFirstZerothParts.lean:315-319
+GlobalTheory.KerT.hyp_of_colIn [T] dist=18 Development/AbelianVarietyTheory/Definitions/GlobalTwisting/JetsAllOfColIn.lean:96-105
+GlobalTheory.LvT.Conclusion5Sharp [D] dist=16 Development/AbelianVarietyTheory/Definitions/GlobalTwisting/LevelChainSharpColumnValuationOwnChainIff.lean:324-328
+GlobalTheory.T.kernelJets_levelPlace_integralMoments [T] dist=18 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/KernelJetsLevelPlaceIntegralMomentsStatement.lean:7-9
+GlobalTheory.T.normalisedThetaFamily_vectors_lattices_thetaZero [T] dist=18 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/NormalisedThetaFamilyVectorsLatticesThetaZeroStatement.lean:7-9
+GlobalTheory.T.trueChainKernel_eq_pointKernel_at_representatives [T] dist=18 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TrueChainKernelEqPointKernelAtRepresentativesStatement.lean:7-9
+GlobalTheory.T.trueChainKernels_bound_conjugatePrimePlaces [T] dist=18 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TrueChainKernelsBoundConjugatePrimePlacesStatement.lean:7-9
+GlobalTheory.T.trueChainKernels_bound_levelPrimePlaces [T] dist=18 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TrueChainKernelsBoundLevelPrimePlacesStatement.lean:7-9
+GlobalTheory.T.weylModule_simple_closedLowestAlcove [T] dist=18 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/WeylModuleSimpleClosedLowestAlcoveStatement.lean:7-9
+memcap: peak 0 MB rc=0

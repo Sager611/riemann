@@ -1,0 +1,7 @@
+a=1000000 p= 2 demand(w=0)=666666 cap=2e+06 demand/cap=0.3333  theta-slope gain=333333  needed wPart=333333  a/(p+1)=333333
+a=1000000 p= 3 demand(w=0)=375000 cap=1.33333e+06 demand/cap=0.2812  theta-slope gain=125000  needed wPart=250000  a/(p+1)=250000
+a=1000000 p= 5 demand(w=0)=208333 cap=800000 demand/cap=0.2604  theta-slope gain=41666.7  needed wPart=166667  a/(p+1)=166667
+a=1000000 p= 7 demand(w=0)=145833 cap=571429 demand/cap=0.2552  theta-slope gain=20833.3  needed wPart=125000  a/(p+1)=125000
+a=1000000 p=29 demand(w=0)=34523.8 cap=137931 demand/cap=0.2503  theta-slope gain=1190.48  needed wPart=33333.3  a/(p+1)=33333.3
+max demand/cap over a in {1e3,1e6,1e9}, p<=29: 0.3333333330228925 (<= 1/3: the row is internally consistent)
+memcap: peak 0 MB rc=0

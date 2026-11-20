@@ -1,0 +1,5 @@
+eps=0.01 c6=1.0: all listed Win_at conjuncts hold from log10 x = 3626 on (grid step 1); failing at x=1e10: ["k b'<=a (k<=X')", '2f(x+1)exp(-c6 x^(e/8))<=1/x']
+eps=0.01 c6=0.001: all listed Win_at conjuncts hold from log10 x = 6213 on (grid step 1); failing at x=1e10: ["k b'<=a (k<=X')", '2f(x+1)exp(-c6 x^(e/8))<=1/x']
+eps=0.01667 c6=1.0: all listed Win_at conjuncts hold from log10 x = 2061 on (grid step 1); failing at x=1e10: ["k b'<=a (k<=X')", '2f(x+1)exp(-c6 x^(e/8))<=1/x']
+eps=0.01667 c6=0.001: all listed Win_at conjuncts hold from log10 x = 3618 on (grid step 1); failing at x=1e10: ["k b'<=a (k<=X')", '2f(x+1)exp(-c6 x^(e/8))<=1/x']
+memcap: peak 0 MB rc=0

@@ -1,0 +1,9 @@
+Formalism.BasicNotions.budgetNc [D] dist=9 Formalism/LocalRingCardinality/DataArith.lean:204-206
+Formalism.BasicNotions.sizeBudget [D] dist=10 Formalism/LocalRingCardinality/DataArith.lean:200-201
+Formalism.L2.DIV.DGamSize [D] dist=7 Formalism/LocalToGlobal/Divisibility/ZscOfNum.lean:175-177
+Formalism.LFunctionChainParameters.LChain.RestSize [D] dist=12 Formalism/SizeWindowBrackets/SChain.lean:53-59
+Formalism.MainNotions.DGamSize [D] dist=7 Formalism/SharpRestriction/ParamsHeightRankConstant.lean:184-186
+Formalism.MainNotions.DesignExists [D] dist=9 Formalism/SharpRestriction/ParamsHeightRankConstant.lean:187-191
+Formalism.MainNotions.TestSideCounting.RestSize [D] dist=22 Formalism/SharpRestriction/GrowthBounds/DualFockLinear/RestCloudBOfThree.lean:105-106
+Formalism.MainNotions.TuSize [D] dist=7 Formalism/SharpRestriction/ParamsHeightRankConstant.lean:180-183
+memcap: peak 18 MB rc=0

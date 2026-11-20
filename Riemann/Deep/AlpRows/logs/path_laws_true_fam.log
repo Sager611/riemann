@@ -1,0 +1,22 @@
+reached 801610 of 1066193 ; max dist 49
+edges among reached 8424893
+TARGET GlobalTheory.LvT.Built.TrueLaws.laws_true_fam dist 17 path:
+    allChi [T] Supplements/Kernels/MainTheorems.lean:7
+    UpperTheory.FinalTheorems.everyCharacter [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10
+    UpperTheory.FinalTheorems.everyCharacter_of_row [T] Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7
+    UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:810
+    UpperTheory.Lit.every_character_of_theta_integrals_local_matching [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:69
+    UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:44
+    GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean:41
+    GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkROfIsLinked.lean:50
+    GlobalTheory.T.period_entries_tie_and_level_valuations_at_built [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SixRowsAtMemberStatement.lean:12
+    GlobalTheory.Fc.six_rows_at_member_alt [T] Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SixRowsAtMember.lean:11
+    GlobalTheory.T.levelPrimeColumnValuations_bundlePoints_overColumns [T] Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LevelPrimeColumnValuationsBundlePointsOverColumnStatement.lean:8
+    GlobalTheory.Fc.Cv.row_level_valuations [T] Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LevelPrimeColumnValuationsBundlePointsOverColumn.lean:11
+    GlobalTheory.LvT.Built.TrueCols.closing_true_cols [T] Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ClosingTrueCols.lean:12
+    GlobalTheory.T.trueColumns_row_sharp_bounds [T] Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TrueColumnsRowSharpBoundsStatement.lean:8
+    GlobalTheory.LvT.Built.TrueCols.row_true [T] Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TrueColumnsRowSharpBounds.lean:36
+    GlobalTheory.LvT.Built.TrueCols.trueColumns_chain_last_step_sharp_bound [T] Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TrueColumnsRowSharpBounds.lean:17
+    GlobalTheory.T.fivePointLaws_trueChains [T] Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/FivePointLawsTrueChainsStatement.lean:8
+    GlobalTheory.LvT.Built.TrueLaws.laws_true_fam [T] Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/FivePointLawsTrueChains.lean:46
+memcap: peak 0 MB rc=0

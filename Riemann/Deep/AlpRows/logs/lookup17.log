@@ -1,0 +1,4 @@
+GlobalTheory.EX.SzRow [D] dist=12 Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows.lean:124-127
+GlobalTheory.EX.szRow_numAt [T] dist=11 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowNumAt.lean:14-48
+GlobalTheory.EX.szRow_sizesAt [T] dist=12 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowElevenLeSplitBound.lean:38-47
+memcap: peak 0 MB rc=0

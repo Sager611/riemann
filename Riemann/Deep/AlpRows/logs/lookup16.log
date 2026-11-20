@@ -1,0 +1,5 @@
+GlobalTheory.Alc.inducedSimpleLowestAlcove [T] dist=6 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/WeylModuleSimpleClosedLowestAlcove.lean:33-49
+GlobalTheory.IndefiniteRowSideFullHecke.JetSumTable.JetMoments [D] dist=19 Development/AbelianVarietyTheory/BlockTheory/GlobalSignature/JetSumTable.lean:123-130
+GlobalTheory.MomTop.jetMoments [T] dist=19 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/KernelJetsLevelPlaceIntegralMoments.lean:13-17
+GlobalTheory.Published.InducedSimpleLowestAlcove [D] dist=6 Development/AbelianVarietyTheory/PublishedTheorems/GlobalTheta/WeylDualWeylLatticesAgreeOfLowestAlcove.lean:19-25
+memcap: peak 0 MB rc=0

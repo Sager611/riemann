@@ -1,0 +1,51 @@
+P1/P3a: IsCMUnram via |disc K| = d_F^2 (K/F unramified at all finite primes):
+  Q(zeta12)=Q(i,sqrt-3)    |da db| = 12, d_F = 12 -> unramified: True
+  Q(sqrt-3,sqrt-7)         |da db| = 21, d_F = 21 -> unramified: True
+  Q(sqrt-2,sqrt-3)         |da db| = 24, d_F = 24 -> unramified: True
+  Q(i,sqrt-7)              |da db| = 28, d_F = 28 -> unramified: True
+  Q(sqrt-3,sqrt-5)         |da db| = 60, d_F = 60 -> unramified: True
+  Q(i,sqrt5) [control]     |da db| = 80, d_F = 5 -> unramified: False
+P1: Lean massRatioRightSide K M (Euler product to 2e5) vs |L_F(1-M,chi^M)|/4 (exact)
+  Q(zeta12)=Q(i,sqrt-3)    M=3 exact=1/36  lean=0.027777777777778  rel.diff=7.57e-15
+  Q(zeta12)=Q(i,sqrt-3)    M=4 exact=23/240  lean=0.0958333333333329  rel.diff=4.04e-15
+  Q(zeta12)=Q(i,sqrt-3)    M=5 exact=5/12  lean=0.416666666666667  rel.diff=2.96e-21
+  Q(zeta12)=Q(i,sqrt-3)    M=6 exact=1681/504  lean=3.33531746031746  rel.diff=6.13e-24
+  Q(zeta12)=Q(i,sqrt-3)    M=7 exact=427/12  lean=35.5833333333333  rel.diff=5.73e-30
+  Q(zeta12)=Q(i,sqrt-3)    M=8 exact=257543/480  lean=536.547916666667  rel.diff=1.10e-32
+  Q(sqrt-3,sqrt-7)         M=3 exact=8/63  lean=0.126984126984128  rel.diff=5.66e-15
+  Q(sqrt-3,sqrt-7)         M=4 exact=77/120  lean=0.641666666666664  rel.diff=4.06e-15
+  Q(sqrt-3,sqrt-7)         M=5 exact=16/3  lean=5.33333333333333  rel.diff=5.60e-21
+  Q(sqrt-3,sqrt-7)         M=6 exact=17971/252  lean=71.3134920634921  rel.diff=6.15e-24
+  Q(sqrt-3,sqrt-7)         M=7 exact=4088/3  lean=1362.66666666667  rel.diff=1.13e-29
+  Q(sqrt-3,sqrt-7)         M=8 exact=8529317/240  lean=35538.8208333333  rel.diff=1.10e-32
+  Q(sqrt-2,sqrt-3)         M=3 exact=1/6  lean=0.166666666666667  rel.diff=4.68e-15
+  Q(sqrt-2,sqrt-3)         M=4 exact=87/80  lean=1.0875  rel.diff=4.05e-15
+  Q(sqrt-2,sqrt-3)         M=5 exact=19/2  lean=9.5  rel.diff=2.63e-21
+  Q(sqrt-2,sqrt-3)         M=6 exact=3623/24  lean=150.958333333333  rel.diff=6.13e-24
+  Q(sqrt-2,sqrt-3)         M=7 exact=6447/2  lean=3223.5  rel.diff=4.14e-30
+  Q(sqrt-2,sqrt-3)         M=8 exact=15540167/160  lean=97126.04375  rel.diff=1.09e-32
+  Q(i,sqrt-7)              M=3 exact=2/7  lean=0.285714285714287  rel.diff=2.97e-15
+  Q(i,sqrt-7)              M=4 exact=113/60  lean=1.88333333333333  rel.diff=4.11e-15
+  Q(i,sqrt-7)              M=5 exact=20  lean=20.0  rel.diff=5.94e-21
+  Q(i,sqrt-7)              M=6 exact=44461/126  lean=352.865079365079  rel.diff=6.26e-24
+  Q(i,sqrt-7)              M=7 exact=8906  lean=8906.0  rel.diff=1.28e-29
+  Q(i,sqrt-7)              M=8 exact=37040933/120  lean=308674.441666667  rel.diff=1.12e-32
+  Q(sqrt-3,sqrt-5)         M=3 exact=5/3  lean=1.66666666666667  rel.diff=2.35e-15
+  Q(sqrt-3,sqrt-5)         M=4 exact=537/20  lean=26.8499999999999  rel.diff=4.03e-15
+  Q(sqrt-3,sqrt-5)         M=5 exact=587  lean=587.0  rel.diff=7.11e-22
+  Q(sqrt-3,sqrt-5)         M=6 exact=978941/42  lean=23308.119047619  rel.diff=6.13e-24
+  Q(sqrt-3,sqrt-5)         M=7 exact=1244355  lean=1244355.0  rel.diff=4.21e-30
+  Q(sqrt-3,sqrt-5)         M=8 exact=3749253437/40  lean=93731335.925  rel.diff=1.10e-32
+  worst rel.diff 7.573185555945647e-15
+P2: GHY mass(I_n) = 2 prod_{r<=n}|L_F(1-r,chi^r)|/4 vs 1/|Aut(I_n)| = 1/(w^n n!); n=1 uses L_F(0,chi)=L(0,chi_da)L(0,chi_db)
+  Q(zeta12)=Q(i,sqrt-3): n=1 mass=1/12 h>=1; n=2 mass=1/288 h>=1; n=3 mass=1/10368 h>=1; n=4 mass=23/2488320 h>=23/5; n=5 mass=23/5971968 h>=115; n=6 mass=38663/3009871872 h>=193315/7; n=7 mass=2358443/5159780352 h>=82545505; n=8 mass=607400485549/2476694568960 h>=4251803398843
+    Lean ratio R(3)=1/36 vs |Aut(I_2)|/|Aut(I_3)| = 1/(3w) = 1/36
+  Q(sqrt-3,sqrt-7): n=1 mass=1/6 h>=1; n=2 mass=1/72 h>=1; n=3 mass=1/567 h>=16/7; n=4 mass=11/9720 h>=176/5; n=5 mass=22/3645 h>=5632; n=6 mass=197681/459270 h>=101212672/7; n=7 mass=57722852/98415 h>=827514806272; n=8 mass=123084125713021/5904900 h>=7058136104887476224/5
+    Lean ratio R(3)=8/63 vs |Aut(I_2)|/|Aut(I_3)| = 1/(3w) = 1/18
+  Q(sqrt-2,sqrt-3): n=1 mass=1/6 h>=1; n=2 mass=1/48 h>=3/2; n=3 mass=1/288 h>=9/2; n=4 mass=29/7680 h>=2349/20; n=5 mass=551/15360 h>=133893/4; n=6 mass=1996273/368640 h>=1455283017/8; n=7 mass=4289990677/245760 h>=197026401822579/8; n=8 mass=66667171549023059/39321600 h>=9185469563195946092079/80
+    Lean ratio R(3)=1/6 vs |Aut(I_2)|/|Aut(I_3)| = 1/(3w) = 1/18
+  Q(i,sqrt-7): n=1 mass=1/4 h>=1; n=2 mass=1/24 h>=4/3; n=3 mass=1/84 h>=32/7; n=4 mass=113/5040 h>=14464/105; n=5 mass=113/252 h>=1157120/21; n=6 mass=5024093/31752 h>=205786849280/441; n=7 mass=22372286129/15876 h>=7330950718750720/63; n=8 mass=828690351561118357/1905120 h>=217236203519637810577408/189
+    Lean ratio R(3)=2/7 vs |Aut(I_2)|/|Aut(I_3)| = 1/(3w) = 1/12
+  Q(sqrt-3,sqrt-5): n=1 mass=1/3 h>=2; n=2 mass=1/6 h>=12; n=3 mass=5/18 h>=360; n=4 mass=179/24 h>=231984; n=5 mass=105073/24 h>=4085238240; n=6 mass=102860267693/1008 h>=23995243247423040/7; n=7 mass=6094985162148715/48 h>=179151605466882581635200; n=8 mass=4570328813530014403776691/384 h>=806021727048933010645448016218880
+    Lean ratio R(3)=5/3 vs |Aut(I_2)|/|Aut(I_3)| = 1/(3w) = 1/18
+memcap: peak 47 MB rc=0

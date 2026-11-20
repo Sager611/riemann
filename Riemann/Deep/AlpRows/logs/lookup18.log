@@ -1,0 +1,3 @@
+GlobalTheory.EX.Val [S] dist=9 Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows.lean:107-123
+GlobalTheory.T.sizes_sizeN_sizeM_sizeK_sizeT_sizeTT_sizeDe2_sizeLw [T] dist=13 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/SzRowRankSizesStatement.lean:7-9
+memcap: peak 0 MB rc=0

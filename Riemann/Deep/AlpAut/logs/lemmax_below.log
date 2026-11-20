@@ -1,0 +1,34 @@
+below l 3 tests so far 0
+below l=3 d=2 v=3 f=5 m=4 j=1 n=5 nmin=9 xi(-1)=1 M=8 F=2 gcd_deg=2 DIVISIBLE
+below l 5 tests so far 166
+below l=5 d=2 v=3 f=7 m=3 j=1 n=5 nmin=9 xi(-1)=-1 M=24 F=2 gcd_deg=2 DIVISIBLE
+below l=5 d=2 v=3 f=7 m=3 j=2 n=5 nmin=9 xi(-1)=-1 M=24 F=2 gcd_deg=2 DIVISIBLE
+below l=5 d=1 v=2 f=11 m=2 j=1 n=4 nmin=8 xi(-1)=1 M=4 F=1 gcd_deg=1 DIVISIBLE
+below l=5 d=1 v=2 f=13 m=2 j=1 n=4 nmin=8 xi(-1)=-1 M=4 F=1 gcd_deg=1 DIVISIBLE
+below l=5 d=1 v=2 f=13 m=4 j=1 n=4 nmin=8 xi(-1)=1 M=4 F=1 gcd_deg=1 DIVISIBLE
+below l=5 d=1 v=2 f=13 m=4 j=3 n=4 nmin=8 xi(-1)=1 M=4 F=1 gcd_deg=1 DIVISIBLE
+below l=5 d=1 v=2 f=17 m=2 j=1 n=5 nmin=9 xi(-1)=-1 M=8 F=2 gcd_deg=2 DIVISIBLE
+below l=5 d=1 v=2 f=29 m=4 j=1 n=5 nmin=9 xi(-1)=1 M=8 F=2 gcd_deg=2 DIVISIBLE
+below l=5 d=1 v=2 f=31 m=2 j=1 n=5 nmin=9 xi(-1)=1 M=8 F=2 gcd_deg=2 DIVISIBLE
+below l 7 tests so far 419
+below l 11 tests so far 635
+below l 13 tests so far 917
+below l=13 d=1 v=2 f=7 m=6 j=1 n=4 nmin=7 xi(-1)=1 M=12 F=1 gcd_deg=1 DIVISIBLE
+below l=13 d=1 v=2 f=7 m=6 j=5 n=4 nmin=7 xi(-1)=1 M=12 F=1 gcd_deg=1 DIVISIBLE
+below l 17 tests so far 1185
+below l=17 d=1 v=4 f=1 m=1 j=0 n=6 nmin=8 xi(-1)=-1 M=16 F=1 gcd_deg=1 DIVISIBLE
+below l 19 tests so far 1333
+below l 23 tests so far 1615
+below l 29 tests so far 1855
+below l 31 tests so far 2129
+below l 37 tests so far 2194
+below l=37 d=1 v=2 f=13 m=6 j=1 n=4 nmin=8 xi(-1)=-1 M=12 F=1 gcd_deg=1 DIVISIBLE
+below l=37 d=1 v=2 f=13 m=6 j=5 n=4 nmin=8 xi(-1)=-1 M=12 F=1 gcd_deg=1 DIVISIBLE
+below l 41 tests so far 2438
+below l=41 d=1 v=3 f=5 m=4 j=3 n=5 nmin=9 xi(-1)=1 M=8 F=1 gcd_deg=1 DIVISIBLE
+below l 43 tests so far 2714
+below l 47 tests so far 3024
+below l 53 tests so far 3181
+below l 59 tests so far 3483
+below Lmax 60 Fmax 40 extra 4 tests 3801 divisible 16
+memcap: peak 23 MB rc=0

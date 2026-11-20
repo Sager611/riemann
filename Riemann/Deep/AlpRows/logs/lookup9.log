@@ -1,0 +1,16 @@
+Formalism.L2.DIV.BridgeRowsT [S] dist=11 Formalism/LocalToGlobal/Divisibility/RecBridgeTied.lean:168-180
+Formalism.L2.DIV.linkDIVt_of_rowsT [T] dist=10 Formalism/LocalToGlobal/Divisibility/RecBridgeTied.lean:200-204
+Formalism.MainNotions.RealPlaceSecondLayerConditions [D] dist=7 Formalism/SharpRestriction/GlobalSchurBounds/LinkTied.lean:51-54
+Formalism.MainNotions.Wire.FamGLmin [S] dist=10 Formalism/SharpRestriction/GlobalSchurBounds/LogXLowerFamilyOfTheorems.lean:39-51
+Formalism.MainNotions.Wire.famGLmin_of_realPlaceSecondLayer [T] dist=9 Formalism/SharpRestriction/GlobalSchurBounds/TuSizeOfRealPlaceSecondLayer.lean:14-32
+GlobalTheory.BigOn.SurjectiveOntoX [D] dist=7 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExportSt.lean:47-48
+GlobalTheory.BigTop.LambdaLowerBound₂ [D] dist=7 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Realised.lean:126-126
+GlobalTheory.Fc.AllRowsAlt [S] dist=8 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/AllRows.lean:12-39
+GlobalTheory.Fc.R0.classCountBound_paramsLambda_constructedPoints [T] dist=8 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ClassCountBoundParamsLambdaConstructedPoints.lean:17-26
+GlobalTheory.Fc.S0.OpenParameterStatements [S] dist=6 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/GeometricWeakTies.lean:39-51
+GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses' [T] dist=6 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SurjectiveAndLowWeightOfUnramifiedExponents.lean:16-29
+GlobalTheory.Fc.StageZeroRow.row_rRows_stage0_alt [T] dist=8 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TupAllUsedAtPart.lean:46-67
+GlobalTheory.LocalRows.lg1_sLp_sO_hTF [T] dist=8 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/AtChoice.lean:27-28
+GlobalTheory.T.open0_of_unitary_group_hypotheses [T] dist=6 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean:75-76
+GlobalTheory.T.period_entries_tie_and_level_valuations_at_built [T] dist=8 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SixRowsAtMemberStatement.lean:12-13
+memcap: peak 0 MB rc=0

@@ -1,0 +1,10 @@
+Formalism.L2.G.linkG_concrete_noKer [T] dist=10 Formalism/LocalToGlobal/GroupLattices/LinkGConcreteNoKer.lean:48-53
+Formalism.L2.G.loc_proved [T] dist=10 Formalism/LocalToGlobal/GroupLattices/AdmissibleFamilyNoKernel.lean:284-286
+Formalism.L2.GlobalTheoryTheory.ConcN.SizesAt [D] dist=10 Formalism/LocalToGlobal/GlobalTheory/IrreducibleOfCountSizes.lean:66-69
+Formalism.L2.SG.PoincareAmplitudeLowerBounds.SizesAt [D] dist=13 Formalism/LocalToGlobal/SiegelLatticeTheory/FlagStabilizerTensors/TheoremSRecursion.lean:113-125
+Formalism.LFunctionChainParameters.LChain.ModelEv.SizesAt [D] dist=-1 Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean:784-798
+Formalism.MainNotions.Lnk.size_window_at_five [T] dist=-1 Formalism/SharpRestriction/GlobalSchurBounds/QuadraticLogDerivCongr.lean:1807-1813
+Formalism.MainNotions.SizesAt [D] dist=8 Formalism/SharpRestriction/ElevenLe.lean:134-139
+Formalism.MainNotions.ThickSetDensityEventually [D] dist=-1 Formalism/SharpRestriction/GlobalSchurBounds/WeightVectorSmallSharesSeven.lean:41-41
+Formalism.MainNotions.ZetaZeroFreeRegion.SizesAt [D] dist=-1 Formalism/SharpRestriction/GlobalSchurBounds/ZetaZeroFreeRegion.lean:205-211
+memcap: peak 0 MB rc=0

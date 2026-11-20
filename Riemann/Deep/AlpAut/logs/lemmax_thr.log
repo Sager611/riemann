@@ -1,0 +1,18 @@
+thr l 3 tests so far 0
+thr l 5 tests so far 56
+thr l 7 tests so far 156
+thr l 11 tests so far 199
+thr l 13 tests so far 303
+thr l 17 tests so far 405
+thr l 19 tests so far 438
+thr l 23 tests so far 542
+thr l 29 tests so far 593
+thr l 31 tests so far 697
+thr l 37 tests so far 700
+thr l 41 tests so far 808
+thr l 43 tests so far 888
+thr l 47 tests so far 990
+thr l 53 tests so far 1004
+thr l 59 tests so far 1118
+thr Lmax 60 Fmax 40 extra 2 tests 1234 divisible 0
+memcap: peak 23 MB rc=0

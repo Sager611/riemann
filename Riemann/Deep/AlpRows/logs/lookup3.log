@@ -1,0 +1,17 @@
+CompanionTheory.Lime.BM.wuDecayOfGap [T] dist=9 CompanionTheory/AutomorphicTheory/LocalBesselUniqueness/BesselModels/UniqGapOfBmu.lean:12-14
+GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt [T] dist=7 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkROfIsLinked.lean:50-86
+GlobalTheory.Fc.nonempty_hyps_of_allRows_alt [T] dist=7 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/NonemptyHypsOfAllRows.lean:19-101
+GlobalTheory.Mem.Top.Bl.KPx [D] dist=7 Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/PositionOfIntro.lean:21-22
+GlobalTheory.T.hyps_e_third_layer_ser_n_of_geometric_galois [T] dist=7 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ThetaLiftHypothesesOfNonvanishing.lean:51-52
+GlobalTheory.T.large_unramified_exponent_bundles_exist_alt [T] dist=7 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MemberBundlesLargeUnramifiedExponents.lean:69-70
+GlobalTheory.ThinScaleLiterature.litThin [T] dist=7 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LitThin.lean:8-10
+GlobalTheory.VolRatioFromSecondClause.volumeRatio [T] dist=8 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/VolumeRatio.lean:14-19
+GlobalTheory.VolRatioFromSiegelWeil.volumeRatio [T] dist=7 Development/AbelianVarietyTheory/Proofs/FlagMeasures/UnitaryHyperplaneVolumeRatioSiegelWeil.lean:10-15
+GlobalTheory.genusMassAt_two [T] dist=7 Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/GenusMassAtTwo.lean:7-9
+GlobalTheory.rowMainEqP_of_siegelWeil [T] dist=7 Development/AbelianVarietyTheory/Proofs/FlagMeasures/RowMainEqPOfSiegelWeil.lean:10-17
+GlobalTheory.rowNGP_of_siegelWeil [T] dist=7 Development/AbelianVarietyTheory/Proofs/FlagMeasures/RowPositivityOfSiegelWeil.lean:10-16
+GlobalTheory.rowsFinDim_link [T] dist=7 Development/AbelianVarietyTheory/Proofs/FlagMeasures/RowsFinDimLink.lean:7-9
+GlobalTheory.rowsPos_typeP [T] dist=7 Development/AbelianVarietyTheory/Proofs/FlagMeasures/RowsPosTypeP.lean:9-11
+GlobalTheory.wuDecayOfGap [T] dist=7 Development/AbelianVarietyTheory/Proofs/FlagMeasures/WuDecayOfGap.lean:7-8
+UpperTheory.GalC.final_alt_alt [T] dist=7 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CFinal.lean:19-22
+memcap: peak 0 MB rc=0

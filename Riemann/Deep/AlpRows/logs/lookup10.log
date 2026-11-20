@@ -1,0 +1,13 @@
+Formalism.L2.G.GroupCompatibilityFamily [D] dist=9 Formalism/LocalToGlobal/GroupLattices/StdSubAtOfRing.lean:88-90
+Formalism.L2.G.linkG_concrete5 [T] dist=9 Formalism/LocalToGlobal/GroupLattices/LinkGConcreteNoKer.lean:54-57
+Formalism.L2.GlobalTheoryTheory.GenusMassVolumes.siegel_mass_ratio_family [T] dist=10 Formalism/LocalToGlobal/GlobalTheory/GL5/DiscreteSeriesOfFormalDegree.lean:23-25
+Formalism.L2.GlobalTheoryTheory.Loss7.loss_requirements_of_small_shares [T] dist=-1 Formalism/LocalToGlobal/GlobalTheory/LossRequirementsOfSmallShares.lean:337-341
+Formalism.L2.GlobalTheoryTheory.TraceIntegrality.lower_slope_inequality_family [T] dist=10 Formalism/LocalToGlobal/GlobalTheory/GL4/LowerSlopeInequalityFamily.lean:14-16
+Formalism.L2.GlobalTheoryTheory.TraceIntegrality.slope_inequality_family_four [T] dist=10 Formalism/LocalToGlobal/GlobalTheory/GL4/PStmtFree.lean:17-20
+Formalism.L2.group_compatibility_of_second_layer_family [T] dist=9 Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LayerTwoFamilyClass.lean:35-35
+Formalism.MainNotions.ChosenWall [D] dist=7 Formalism/SharpRestriction/GlobalSchurBounds/WeightVectorSmallSharesEight.lean:13-15
+Formalism.MainNotions.GappedMultiplicityBounds.explicit_bound_family [T] dist=10 Formalism/SharpRestriction/GlobalSchurBounds/TheoremThreeFamilyOfGappedMultiplicity.lean:200-202
+Formalism.MainNotions.LinkGLOBAL7 [D] dist=-1 Formalism/SharpRestriction/GlobalSchurBounds/LossesSmallShares.lean:464-467
+Formalism.MainNotions.Pk.admissible_tops_mertens [T] dist=9 Formalism/SharpRestriction/SmoothDesignExistence/AdmissibleTopsMertens.lean:73-143
+Formalism.MainNotions.linkGLOBAL7_min [T] dist=-1 Formalism/SharpRestriction/GlobalSchurBounds/LinkMin.lean:723-738
+memcap: peak 0 MB rc=0

@@ -1,0 +1,6 @@
+PARI stack size set to 64000000 bytes, maximum size set to 64012288
+fundamental -D, D < 200000 : 60800 fields
+l=3: max v_l(h(-D)) = 6 at D=178559 (h=729); max v_l(h)/log_l(sqrt(D) log D) = 0.772
+l=5: max v_l(h(-D)) = 3 at D=11519 (h=125); max v_l(h)/log_l(sqrt(D) log D) = 0.698
+l=7: max v_l(h(-D)) = 3 at D=52631 (h=343); max v_l(h)/log_l(sqrt(D) log D) = 0.746
+memcap: peak 15 MB rc=0
