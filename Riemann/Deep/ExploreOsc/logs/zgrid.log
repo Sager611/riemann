@@ -1,0 +1,23 @@
+zeta: n=200001 sign changes=1517 max|Im|/max|Z|=1.7e-12 max|Z-Zmp|=7.9e-13 Z(0)=-1.460355 7.3s
+dh: n=200001 sign changes=1861 max|Im|/max|Z|=1.9e-12 max|Z-Zmp|=2.8e-13 Z(0)=0.825383 24.1s
+chi8: n=200001 sign changes=2178 max|Im|/max|Z|=1.8e-12 max|Z-Zmp|=7.6e-13 Z(0)=0.373692 25.2s
+chim8: n=200001 sign changes=2178 max|Im|/max|Z|=2.0e-12 max|Z-Zmp|=6.6e-13 Z(0)=1.100421 27.1s
+       84.90 real        66.41 user         1.31 sys
+           254885888  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               29625  page reclaims
+                  14  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   7  voluntary context switches
+              160285  involuntary context switches
+           425666491  instructions retired
+           195840885  cycles elapsed
+            25805328  peak memory footprint
+memcap: peak 226 MB rc=0

@@ -1,0 +1,42 @@
+zeta T=10000 L=300 N=39 theta-count=352.7 Rice=0.6586 | true 0.9753 +- 0.0000 (n=1)  ind 0.7003 +- 0.0260 (n=6)  mult 0.7825 +- 0.0258 (n=6)
+dh   T=10000 L=300 N=89 theta-count=429.6 Rice=0.7211 | true 0.9056 +- 0.0000 (n=1)  ind 0.7818 +- 0.0153 (n=6)  mult 0.8458 +- 0.0162 (n=6)
+        2.31 real         1.66 user         0.19 sys
+            62341120  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               10038  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   1  voluntary context switches
+                4770  involuntary context switches
+           433632269  instructions retired
+           201909668  cycles elapsed
+            28197392  peak memory footprint
+memcap: peak 0 MB rc=0
+zeta T=1e+06 L=150 N=398 theta-count=285.9 Rice=0.6290 | true 0.9967 +- 0.0000 (n=1)  ind 0.6645 +- 0.0154 (n=4)  mult 0.7475 +- 0.0584 (n=4)
+dh   T=1e+06 L=150 N=892 theta-count=324.4 Rice=0.6798 | true 0.9095 +- 0.0000 (n=1)  ind 0.7145 +- 0.0211 (n=4)  mult 0.8177 +- 0.0164 (n=4)
+        6.64 real         5.06 user         0.26 sys
+            90685440  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12182  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   1  voluntary context switches
+               11440  involuntary context switches
+           432419878  instructions retired
+           201415624  cycles elapsed
+            25854456  peak memory footprint
+memcap: peak 70 MB rc=0
