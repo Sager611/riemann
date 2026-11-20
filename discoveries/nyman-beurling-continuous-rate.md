@@ -14,10 +14,10 @@
 
 **Caveat.** Ineffective (L₀ astronomically large: Turán constants e^{O(M)} against L^{3/4}); no rate for L·D(λ)² − Σ m²/|ρ|². Black boxes: Turán–Nazarov (absolute constant), Titchmarsh 9.7 and 14.13, Burnol's liminf; explore59's accepted pieces ((3i) window, (3ii) trivial zeros, §7 closure, Claim F). The mechanism is RH-blind beyond real ordinates and S-type cluster bounds; it does not touch d_N (explore38's integer-dilation penalty) and does not move toward RH itself.
 
-**Audit.** Pending: dbaraudit (Orca, line by line, falsification first).
+**Audit.** AUDIT PASSED (dbaraudit, Orca, 20 Nov 2026, 11:08–11:42 UTC; [DbarAudit](../Riemann/Deep/DbarAudit/REPORT.md), the chain with source line numbers in FULLPROOF.md): every step (dual form, grouping, Lemmas A, B, Λ, D, E, Theorems R″ and R′, the Corollary, the §6 tilings and (3v), explore59's (3i), (3ii) and §7, Claim F, and Burnol's liminf for the same D(λ), without constraint, TeX l.169–206) re-derived line by line; no false step and no counterexample in RH-allowed worst cases (s₀-chains, dense 4-clusters, coalescent jets; mpmath against double); a fresh reviewer on Lemmas Λ and D: CORRECT. Remarks that break nothing: the jet case of Turán–Nazarov rests on a continuity argument not written in Friedland–Yomdin; R″ and R′ are proved for Z(L⁶) and used for Z(T₂), T₂ ≤ L⁶ + 4 (same proof); Lemma B's 8/ℓ can be 4/ℓ; Lemma D is invisible at computable L (L₀ ≥ 10⁸ in practice). Novelty spot-check: zbMATH reviews of Balazard–Saias, Notes 4 (Zbl 1096.11032: the discrete sequence-space problem only) and BBLS, Notes III (Zbl 1008.11032); GXL: 0 supports. Consequence (COROLLARIES): since D(λ)√log(1/λ) → ∞ if RH fails (Burnol, TeX l.197–201), lim D(λ)² log(1/λ) = 2 + γ − log 4π ⟺ RH and all zeros simple. Orchestrator reran audit_chain.py from a copy: identical.
 
 **RH relevance:** N5 (the rate of the Nyman–Beurling distance under RH: the conjectured exact constant for the continuous problem; for the discrete d_N the remaining step is the integer-dilation penalty P(N) = o(1/log N)).
 
-**Lean.** Pending (after the audit; the memory-cap question for analysis-heavy formalizations is open with the user).
+**Lean.** Pending (the audit passed; the memory-cap question for analysis-heavy formalizations is open with the user).
 
 **Files.** [Riemann/Deep/DbarNB/](../Riemann/Deep/DbarNB/) (REPORT.md, DERIVATION.md, dbarnb_falsify.py, logs/); [Riemann/Deep/ExploreDbar/](../Riemann/Deep/ExploreDbar/) (the reduction, REPAIR.md).

@@ -1,0 +1,17 @@
+time 0.0 s
+chain m=6 L=  10.0 n=950 step*L=1.760  L*U_all=0.095883  L*sum_g U_g=0.087397  ratio=1.09710  cond=8.7e+10
+chain m=6 L=  20.0 n=950 step*L=2.094  L*U_all=0.087720  L*sum_g U_g=0.086190  ratio=1.01775  cond=3.9e+07
+chain m=6 L=  40.0 n=950 step*L=2.490  L*U_all=0.084570  L*sum_g U_g=0.084363  ratio=1.00245  cond=1.3e+06
+chain m=6 L=  80.0 n=950 step*L=2.961  L*U_all=0.081683  L*sum_g U_g=0.081676  ratio=1.00008  cond=1.6e+05
+chain m=6 L= 160.0 n=950 step*L=3.521  L*U_all=0.077742  L*sum_g U_g=0.077752  ratio=0.99986  cond=2.0e+04
+chain m=8 L=  10.0 n=1090 step*L=1.760  L*U_all=0.145847  L*sum_g U_g=0.122752  ratio=1.18814  cond=4.1e+14
+chain m=8 L=  20.0 n=1090 step*L=2.094  L*U_all=0.124991  L*sum_g U_g=0.120660  ratio=1.03589  cond=1.7e+11
+chain m=8 L=  40.0 n=1090 step*L=2.490  L*U_all=0.118037  L*sum_g U_g=0.117420  ratio=1.00525  cond=1.0e+08
+chain m=8 L=  80.0 n=1090 step*L=2.961  L*U_all=0.112695  L*sum_g U_g=0.112608  ratio=1.00077  cond=6.1e+06
+chain m=8 L= 160.0 n=1090 step*L=3.521  L*U_all=0.105548  L*sum_g U_g=0.105540  ratio=1.00007  cond=3.4e+05
+dense m=4 L=  10.0 n=690 step*L=0.300  L*U_all=0.133765  L*sum_g U_g=0.112565  ratio=1.18833  cond=5.8e+10
+dense m=4 L=  20.0 n=690 step*L=0.300  L*U_all=0.114895  L*sum_g U_g=0.112597  ratio=1.02041  cond=5.4e+09
+dense m=4 L=  40.0 n=690 step*L=0.300  L*U_all=0.112935  L*sum_g U_g=0.112613  ratio=1.00286  cond=5.1e+09
+dense m=4 L=  80.0 n=690 step*L=0.300  L*U_all=0.112676  L*sum_g U_g=0.112621  ratio=1.00050  cond=4.9e+09
+dense m=4 L= 160.0 n=690 step*L=0.300  L*U_all=0.112638  L*sum_g U_g=0.112625  ratio=1.00012  cond=4.9e+09
+time 27.8 s
