@@ -1,0 +1,4 @@
+recurrence vs 2F1 max err 9.41e-40
+lemma: 200 random real-rooted p (deg 2..10): max |Im root| of T[p] = 0
+control 1+z^2 -> T coeffs ['0.6', '0.0', '1.06667'] roots ['(0.0 - 0.75j)', '(0.0 + 0.75j)']
+memcap: peak 14 MB rc=0

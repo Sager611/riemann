@@ -1,0 +1,11 @@
+atom 0.5: t=0.0 exact=1.0  CH sum=4.0  ratio=0.25
+atom 0.5: t=1.0 exact=0.8775825619  CH sum=3.510330248  ratio=0.25
+atom 0.5: t=3.0 exact=0.07073720167  CH sum=0.2829488067  ratio=0.25
+memcap: peak 0 MB rc=0
+N=  2 deg=  4 real=  4 nonreal=  0 first real t>0: ['3.13164', '6.73257'] max real t: 6.7
+N=  3 deg=  6 real=  2 nonreal=  4 first real t>0: ['3.14158'] max real t: 3.1 min|Im t|=2.071e+00 at |Re t|=8.41 (edge 2.96 N^(2/3) = 6.2)
+N=  5 deg= 10 real=  6 nonreal=  4 first real t>0: ['3.14160', '9.44445', '12.09964'] max real t: 12.1 min|Im t|=6.630e+00 at |Re t|=12.26 (edge 2.96 N^(2/3) = 8.7)
+N= 10 deg= 20 real=  8 nonreal= 12 first real t>0: ['3.14159', '9.42478', '15.70756', '20.74152'] max real t: 20.7 min|Im t|=3.887e+00 at |Re t|=21.29 (edge 2.96 N^(2/3) = 13.7)
+N= 20 deg= 40 real= 12 nonreal= 28 first real t>0: ['3.14159', '9.42478', '15.70796', '21.99115'] max real t: 34.6 min|Im t|=1.570e+00 at |Re t|=39.12 (edge 2.96 N^(2/3) = 21.8)
+N= 40 deg= 80 real= 24 nonreal= 56 first real t>0: ['3.14159', '9.42478', '15.70796', '21.99115'] max real t: 72.3 min|Im t|=1.300e+00 at |Re t|=75.56 (edge 2.96 N^(2/3) = 34.6)
+memcap: peak 0 MB rc=0

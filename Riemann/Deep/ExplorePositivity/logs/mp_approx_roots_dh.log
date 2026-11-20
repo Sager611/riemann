@@ -1,0 +1,8 @@
+N=  2 deg=  4 real=  4 nonreal=  0  smallest real t>0: ['4.19033', '6.55482']  max real t: 6.55
+N=  3 deg=  6 real=  6 nonreal=  0  smallest real t>0: ['4.56483', '5.74552']  max real t: 9.57
+N=  5 deg= 10 real=  6 nonreal=  4  smallest real t>0: ['7.23531', '11.12760']  max real t: 16.23 first nonreal t=-5.5508+0.2578i min|Im t|=2.578e-01
+N= 10 deg= 20 real= 16 nonreal=  4  smallest real t>0: ['5.11336', '8.47619']  max real t: 34.03 first nonreal t=-7.3479+2.6877i min|Im t|=2.688e+00
+N= 20 deg= 40 real= 32 nonreal=  8  smallest real t>0: ['5.09402', '8.97321']  max real t: 71.30 first nonreal t=-8.9260+5.6695i min|Im t|=8.873e-01
+N= 50 deg=100 real= 88 nonreal= 12  smallest real t>0: ['5.09416', '8.93989']  max real t: 186.64 first nonreal t=-11.5864+12.0137i min|Im t|=1.567e+00
+N=100 deg=200 real=184 nonreal= 16  smallest real t>0: ['5.09416', '8.93991']  max real t: 382.08 first nonreal t=-14.0820+19.5640i min|Im t|=3.067e+00
+memcap: peak 0 MB rc=0

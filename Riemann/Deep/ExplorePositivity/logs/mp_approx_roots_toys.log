@@ -1,0 +1,24 @@
+toy:atom:0.5
+N=  2 deg=  4 real=  4 nonreal=  0  smallest real t>0: ['3.14556', '7.95599']  max real t: 7.96
+N=  3 deg=  6 real=  6 nonreal=  0  smallest real t>0: ['3.13765', '8.83232']  max real t: 10.73
+N=  5 deg= 10 real=  6 nonreal=  4  smallest real t>0: ['3.14118', '9.48060']  max real t: 16.77 first nonreal t=-13.6395+3.4685i min|Im t|=3.469e+00
+N= 10 deg= 20 real= 12 nonreal=  8  smallest real t>0: ['3.14159', '9.42476']  max real t: 34.87 first nonreal t=-20.8867+15.0532i min|Im t|=4.003e+00
+N= 20 deg= 40 real= 24 nonreal= 16  smallest real t>0: ['3.14159', '9.42478']  max real t: 72.27 first nonreal t=-31.5877+41.5463i min|Im t|=5.305e+00
+N= 40 deg= 80 real= 48 nonreal= 32  smallest real t>0: ['3.14159', '9.42478']  max real t: 148.96 first nonreal t=-46.9784+98.9907i min|Im t|=7.901e+00
+memcap: peak 0 MB rc=0
+toy:box:1
+N=  2 deg=  4 real=  4 nonreal=  0  smallest real t>0: ['3.10953', '6.40040']  max real t: 6.40
+N=  3 deg=  6 real=  6 nonreal=  0  smallest real t>0: ['3.07335', '5.77688']  max real t: 9.54
+N=  5 deg= 10 real= 10 nonreal=  0  smallest real t>0: ['3.10721', '5.78614']  max real t: 16.26
+N= 10 deg= 20 real= 16 nonreal=  4  smallest real t>0: ['3.14016', '6.29508']  max real t: 34.17 first nonreal t=-10.1904+1.6034i min|Im t|=1.603e+00
+N= 20 deg= 40 real= 32 nonreal=  8  smallest real t>0: ['3.14159', '6.28323']  max real t: 71.54 first nonreal t=-15.5027+9.1447i min|Im t|=3.341e-01
+N= 40 deg= 80 real= 68 nonreal= 12  smallest real t>0: ['3.14159', '6.28319']  max real t: 148.22 first nonreal t=-23.2316+25.9994i min|Im t|=5.109e+00
+memcap: peak 14 MB rc=0
+toy:gauss:0.3
+N=  2 deg=  4 real=  0 nonreal=  4  smallest real t>0: []  max real t: - first nonreal t=-6.6161+1.2618i min|Im t|=1.262e+00
+N=  3 deg=  6 real=  2 nonreal=  4  smallest real t>0: ['9.80083']  max real t: 9.80 first nonreal t=-6.7316+2.1062i min|Im t|=2.106e+00
+N=  5 deg= 10 real=  6 nonreal=  4  smallest real t>0: ['8.70596', '11.24304']  max real t: 16.38 first nonreal t=-7.0536+3.4582i min|Im t|=3.458e+00
+N= 10 deg= 20 real= 12 nonreal=  8  smallest real t>0: ['11.32342', '14.17783']  max real t: 34.10 first nonreal t=-7.4062+5.6126i min|Im t|=2.091e+00
+N= 20 deg= 40 real= 28 nonreal= 12  smallest real t>0: ['13.40363', '15.57920']  max real t: 71.30 first nonreal t=-7.7005+8.0613i min|Im t|=1.851e+00
+N= 40 deg= 80 real= 64 nonreal= 16  smallest real t>0: ['15.48467', '16.17494']  max real t: 147.87 first nonreal t=-7.9399+10.7364i min|Im t|=2.269e+00
+memcap: peak 23 MB rc=0

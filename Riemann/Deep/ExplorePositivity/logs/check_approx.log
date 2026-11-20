@@ -1,0 +1,6 @@
+N=10 polyroots(300 digits): real 12 nonreal 8; nonreal t = 2x: [('12.1296', '11.2487'), ('14.668', '5.10664')]
+N=20 polyroots(300 digits): real 24 nonreal 16; nonreal t = 2x: [('14.4513', '18.6656'), ('17.886', '11.609'), ('20.0418', '6.32533'), ('21.4327', '1.85429')]
+N=20 sign changes on (0, 84], step 0.01: 12  -> real zeros 24 of 40
+N=50 sign changes on (0, 210], step 0.01: 38  -> real zeros 76 of 100
+N=20 root refined t = (-14.4513151884342 + 18.6656344006612j)  |Xi_N(t0)| = 1.2783e-298  |Xi_N(t0+0.1)| = 3.1545
+memcap: peak 15 MB rc=0

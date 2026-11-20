@@ -1,0 +1,3 @@
+N=150 deg=300 real=252 nonreal= 48  smallest real t>0: ['14.13473', '21.02204']  max real t: 579.06 first nonreal t=-24.5416+66.3869i min|Im t|=2.051e+00 at |Re t|=56.50 (resolution edge 4.51 sqrt N = 55.2)
+N=200 deg=400 real=344 nonreal= 56  smallest real t>0: ['14.13473', '21.02204']  max real t: 776.51 first nonreal t=-26.4792+78.4544i min|Im t|=1.982e+00 at |Re t|=65.08 (resolution edge 4.51 sqrt N = 63.8)
+N=300 (degree 600, 3000 bits) stopped by hand after ~7 min to free the single compute slot; N = 150, 200 completed.

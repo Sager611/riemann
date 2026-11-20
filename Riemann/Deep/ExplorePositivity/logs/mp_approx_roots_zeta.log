@@ -1,0 +1,9 @@
+N=  2 deg=  4 real=  0 nonreal=  4  smallest real t>0: []  max real t: - first nonreal t=-8.4394+2.3206i min|Im t|=2.321e+00 at |Re t|=8.44 (resolution edge 4.51 sqrt N = 6.4)
+N=  5 deg= 10 real=  2 nonreal=  8  smallest real t>0: ['16.75160']  max real t: 16.75 first nonreal t=-10.2795+6.3038i min|Im t|=1.280e+00 at |Re t|=12.06 (resolution edge 4.51 sqrt N = 10.1)
+N= 10 deg= 20 real= 12 nonreal=  8  smallest real t>0: ['14.09403', '16.15930']  max real t: 34.50 first nonreal t=-12.1296+11.2487i min|Im t|=5.107e+00 at |Re t|=14.67 (resolution edge 4.51 sqrt N = 14.3)
+N= 20 deg= 40 real= 24 nonreal= 16  smallest real t>0: ['14.13470', '21.18582']  max real t: 71.68 first nonreal t=-14.4513+18.6656i min|Im t|=1.854e+00 at |Re t|=21.43 (resolution edge 4.51 sqrt N = 20.2)
+N= 30 deg= 60 real= 40 nonreal= 20  smallest real t>0: ['14.13473', '21.02223']  max real t: 109.72 first nonreal t=-16.0535+24.5588i min|Im t|=1.836e+00 at |Re t|=26.09 (resolution edge 4.51 sqrt N = 24.7)
+N= 50 deg=100 real= 76 nonreal= 24  smallest real t>0: ['14.13473', '21.02204']  max real t: 186.90 first nonreal t=-18.3565+34.1386i min|Im t|=4.541e+00 at |Re t|=32.32 (resolution edge 4.51 sqrt N = 31.9)
+N= 75 deg=150 real=118 nonreal= 32  smallest real t>0: ['14.13473', '21.02204']  max real t: 284.31 first nonreal t=-20.4307+43.8919i min|Im t|=3.084e+00 at |Re t|=39.94 (resolution edge 4.51 sqrt N = 39.1)
+N=100 deg=200 real=160 nonreal= 40  smallest real t>0: ['14.13473', '21.02204']  max real t: 382.27 first nonreal t=-22.0460+52.2281i min|Im t|=1.057e+00 at |Re t|=46.81 (resolution edge 4.51 sqrt N = 45.1)
+memcap: peak 0 MB rc=0

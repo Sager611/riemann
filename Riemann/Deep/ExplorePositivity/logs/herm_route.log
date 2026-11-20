@@ -1,0 +1,17 @@
+Xi(0) = 0.497120778188314  2 int_0^inf PhiT = 0.248560389094157
+b0 b2 b4 = ['0.245734423115', '0.00139059684314', '3.66916639571e-6']  Newton k=1 ratio b2^2/(b0 b4) = 2.14471 (needed >= 2N/(N-1) for real p_N)
+t=0.0 Xi=0.497120778188 Hermite sum=0.248560389094
+t=5.0 Xi=0.275549997344 Hermite sum=0.137774998672
+t=14.134725 Xi=-1.16246703166e-18 Hermite sum=-5.81233515829e-19
+N= 2  pre-image p_N: real 0 nonreal 4 (min|Im| 5.89)   Hermite approximant: real 0 nonreal 4 (min|Im| 2.85) first real t>0 []
+N= 3  pre-image p_N: real 2 nonreal 4 (min|Im| 10.4)   Hermite approximant: real 2 nonreal 4 (min|Im| 5.03) first real t>0 ['8.6647']
+N= 4  pre-image p_N: real 0 nonreal 8 (min|Im| 4.18)   Hermite approximant: real 0 nonreal 8 (min|Im| 2) first real t>0 []
+N= 5  pre-image p_N: real 2 nonreal 8 (min|Im| 7.73)   Hermite approximant: real 2 nonreal 8 (min|Im| 3.7) first real t>0 ['10.2935']
+N= 6  pre-image p_N: real 0 nonreal 12 (min|Im| 3.33)   Hermite approximant: real 0 nonreal 12 (min|Im| 1.58) first real t>0 []
+N= 8  pre-image p_N: real 0 nonreal 16 (min|Im| 2.74)   Hermite approximant: real 0 nonreal 16 (min|Im| 1.27) first real t>0 []
+N=10  pre-image p_N: real 0 nonreal 20 (min|Im| 2.19)   Hermite approximant: real 0 nonreal 20 (min|Im| 0.955) first real t>0 []
+N=15  pre-image p_N: real 2 nonreal 28 (min|Im| 2.78)   Hermite approximant: real 2 nonreal 28 (min|Im| 1.27) first real t>0 ['14.1341']
+N=20  pre-image p_N: real 4 nonreal 36 (min|Im| 4.07)   Hermite approximant: real 4 nonreal 36 (min|Im| 1.86) first real t>0 ['14.1347', '19.7972']
+N=30  pre-image p_N: real 4 nonreal 56 (min|Im| 1.53)   Hermite approximant: real 4 nonreal 56 (min|Im| 0.517) first real t>0 ['14.1347', '21.0220']
+N=40  pre-image p_N: real 8 nonreal 72 (min|Im| 3.07)   Hermite approximant: real 8 nonreal 72 (min|Im| 1.3) first real t>0 ['14.1347', '21.0220', '25.0109', '29.9454']
+memcap: peak 21 MB rc=0
