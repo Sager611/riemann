@@ -1,0 +1,20 @@
+== Z[i]: y^2=4x^3-4x k <= 1000
+  p=  3 inert: min_k (v - [a/p+a/p^3+..])/log_p a =    -0.91 | min (v - a/(p-1))/log_p a =   -36.30 | min v/log_p a =   0.00 | (a, v, odd, all) []
+  p=  7 inert: min_k (v - [a/p+a/p^3+..])/log_p a =    -0.91 | min (v - a/(p-1))/log_p a =   -10.95 | min v/log_p a =   0.00 | (a, v, odd, all) []
+  p= 11 inert: min_k (v - [a/p+a/p^3+..])/log_p a =    -0.94 | min (v - a/(p-1))/log_p a =    -5.65 | min v/log_p a =   0.00 | (a, v, odd, all) []
+  p= 19 inert: min_k (v - [a/p+a/p^3+..])/log_p a =    -0.95 | min (v - a/(p-1))/log_p a =    -2.71 | min v/log_p a =   0.00 | (a, v, odd, all) []
+  p= 23 inert: min_k (v - [a/p+a/p^3+..])/log_p a =    -0.96 | min (v - a/(p-1))/log_p a =    -2.09 | min v/log_p a =   0.00 | (a, v, odd, all) []
+  p=  5 split: min_k (v - [a/p+a/p^3+..])/log_p a =   -89.00 | min (v - a/(p-1))/log_p a =  -106.63 | min v/log_p a =  -1.11 | (a, v, odd, all) []
+  p= 13 split: min_k (v - [a/p+a/p^3+..])/log_p a =   -52.34 | min (v - a/(p-1))/log_p a =   -56.34 | min v/log_p a =  -1.02 | (a, v, odd, all) []
+  p= 17 split: min_k (v - [a/p+a/p^3+..])/log_p a =   -44.34 | min (v - a/(p-1))/log_p a =   -46.93 | min v/log_p a =  -1.01 | (a, v, odd, all) []
+  p= 29 split: min_k (v - [a/p+a/p^3+..])/log_p a =   -30.85 | min (v - a/(p-1))/log_p a =   -31.89 | min v/log_p a =  -1.01 | (a, v, odd, all) []
+== Z[w]: y^2=4x^3-4 k <= 1000
+  p=  5 inert: min_k (v - [a/p+a/p^3+..])/log_p a =    -0.90 | min (v - a/(p-1))/log_p a =   -17.90 | min v/log_p a =   0.00 | (a, v, odd, all) [(1000, 208, 208.3, 250.0)]
+  p= 11 inert: min_k (v - [a/p+a/p^3+..])/log_p a =    -0.94 | min (v - a/(p-1))/log_p a =    -5.65 | min v/log_p a =   0.00 | (a, v, odd, all) [(1000, 91, 91.7, 100.0)]
+  p= 17 inert: min_k (v - [a/p+a/p^3+..])/log_p a =    -0.94 | min (v - a/(p-1))/log_p a =    -2.99 | min v/log_p a =   0.00 | (a, v, odd, all) [(1000, 59, 59.0, 62.5)]
+  p= 23 inert: min_k (v - [a/p+a/p^3+..])/log_p a =    -0.96 | min (v - a/(p-1))/log_p a =    -2.09 | min v/log_p a =   0.00 | (a, v, odd, all) [(1000, 43, 43.6, 45.5)]
+  p=  7 split: min_k (v - [a/p+a/p^3+..])/log_p a =   -74.80 | min (v - a/(p-1))/log_p a =   -85.44 | min v/log_p a =  -1.06 | (a, v, odd, all) [(1000, -1, 145.8, 166.7)]
+  p= 13 split: min_k (v - [a/p+a/p^3+..])/log_p a =   -52.34 | min (v - a/(p-1))/log_p a =   -56.34 | min v/log_p a =  -1.02 | (a, v, odd, all) [(1000, 0, 77.4, 83.3)]
+  p= 19 split: min_k (v - [a/p+a/p^3+..])/log_p a =   -41.21 | min (v - a/(p-1))/log_p a =   -43.35 | min v/log_p a =  -1.01 | (a, v, odd, all) [(1000, 0, 52.8, 55.6)]
+  p= 31 split: min_k (v - [a/p+a/p^3+..])/log_p a =   -29.35 | min (v - a/(p-1))/log_p a =   -30.28 | min v/log_p a =  -1.01 | (a, v, odd, all) [(1000, 0, 32.3, 33.3)]
+memcap: peak 14 MB rc=0

@@ -1,0 +1,6 @@
+eps=0.04: all constraints hold from log x ~ 2.37e+03; at log x=1.38e+04 term exponents (t1,t2,t3)/log x = (0.5026, 0.5426, 0.3051); relative error exponent = -0.4974 (expected -1/2 + O(eps))
+eps=0.02: all constraints hold from log x ~ 4.22e+03; at log x=2.75e+04 term exponents (t1,t2,t3)/log x = (0.5013, 0.5213, 0.4025); relative error exponent = -0.4987 (expected -1/2 + O(eps))
+eps=0.01: all constraints hold from log x ~ 1e+04; at log x=5.5e+04 term exponents (t1,t2,t3)/log x = (0.5006, 0.5107, 0.4513); relative error exponent = -0.4993 (expected -1/2 + O(eps))
+linear cost (Lean bracket): optimal chain exponent mu = 0.500, relative error x^-0.500 -> Chebyshev error exponent 0.500
+quadratic cost (hypothetical): optimal chain exponent mu = 0.333, relative error x^-0.333 -> Chebyshev error exponent 0.667
+memcap: peak 0 MB rc=0
