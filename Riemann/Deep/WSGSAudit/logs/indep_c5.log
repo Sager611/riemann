@@ -1,0 +1,48 @@
+A even (0,0) quad 8.346169722224461e-02 closed 8.346169722224324e-02 diff 1.37e-15
+A even (0,1) quad -1.216095367342802e-01 closed -1.216095367343026e-01 diff 2.24e-14
+A even (0,2) quad 1.360074766409107e-01 closed 1.360074766409308e-01 diff 2.00e-14
+A even (0,5) quad -1.680248253766723e-01 closed -1.680248253766968e-01 diff 2.45e-14
+A even (0,9) quad -3.027848107932567e-02 closed -3.027848107934679e-02 diff 2.11e-14
+A even (1,1) quad 1.773721054213775e-01 closed 1.773721054213893e-01 diff 1.18e-14
+A even (1,2) quad -1.991308720117830e-01 closed -1.991308720118083e-01 diff 2.53e-14
+A even (1,5) quad 2.403580339755656e-01 closed 2.403580339755763e-01 diff 1.07e-14
+A even (1,9) quad 4.120571837079264e-02 closed 4.120571837080575e-02 diff 1.31e-14
+A even (2,2) quad 2.268008425040265e-01 closed 2.268008425040277e-01 diff 1.28e-15
+A even (2,5) quad -2.462476285418109e-01 closed -2.462476285418288e-01 diff 1.79e-14
+A even (2,9) quad -3.505279030684877e-02 closed -3.505279030687058e-02 diff 2.18e-14
+A even (5,5) quad 1.309921591117033e+00 closed 1.309921591117049e+00 diff 1.58e-14
+A even (5,9) quad -4.414527403125155e-02 closed -4.414527403123875e-02 diff 1.28e-14
+A even (9,9) quad 1.093760577875899e+00 closed 1.093760577875911e+00 diff 1.15e-14
+A odd (1,1) quad 5.390249257842039e-03 closed 5.390249257829458e-03 diff 1.26e-14
+A odd (1,2) quad -1.357450792412310e-02 closed -1.357450792412427e-02 diff 1.17e-15
+A odd (1,5) quad 1.367523556241451e-02 closed 1.367523556240329e-02 diff 1.12e-14
+A odd (1,9) quad -1.453068197695826e-02 closed -1.453068197697267e-02 diff 1.44e-14
+A odd (2,2) quad 3.445722445428356e-02 closed 3.445722445428152e-02 diff 2.04e-15
+A odd (2,5) quad -2.156160419683008e-02 closed -2.156160419683304e-02 diff 2.96e-15
+A odd (2,9) quad 3.495351727619114e-02 closed 3.495351727619458e-02 diff 3.45e-15
+A odd (5,5) quad 1.072298604253966e+00 closed 1.072298604253954e+00 diff 1.24e-14
+A odd (5,9) quad -1.565379227190570e-01 closed -1.565379227190746e-01 diff 1.76e-14
+A odd (9,9) quad 1.050940339285450e+00 closed 1.050940339285441e+00 diff 8.88e-15
+A done 0 s
+mu vs SymZeta.mu maxdiff 2.25e-37
+LAT even (lattice, matrix) ['6.674893046841396e-5', '6.674893046841583e-5'] odd ['0.000346067332895405', '0.000346067332895405']
+{"c": 5, "A_maxdiff": "2.531308496145357e-14", "mu_maxdiff": "2.25e-37", "LAT_even": ["6.674893046841396e-5", "6.674893046841583e-5"], "LAT_odd": ["0.000346067332895405", "0.000346067332895405"], "D_maxdiff": "1.97e-31", "sec": 19}
+       19.45 real        14.08 user         0.31 sys
+            47693824  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7643  page reclaims
+                   3  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  14  voluntary context switches
+               25667  involuntary context switches
+           423338643  instructions retired
+           175481488  cycles elapsed
+            22987256  peak memory footprint
+memcap: peak 28 MB rc=0

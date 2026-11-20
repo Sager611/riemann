@@ -1,0 +1,4 @@
+mode normal M=1 c 5 eps 2.443577e-17 U_up 1.22178215466e-17 rigorous True margin 3.07112413138e-12
+mode orth M=1 c 5 eps 2.443577e-17 U_up 0.148190342999 rigorous False margin -7.22091031288e-18
+orth check <g, xi> = [1e-57 +/- 5.48e-58]
+mode normal M=1e-40 c 5 eps 2.443577e-17 U_up 1.22178215466e-17 rigorous False margin -7.62782499124e-18

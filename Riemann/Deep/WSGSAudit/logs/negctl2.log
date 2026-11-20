@@ -1,0 +1,9 @@
+{"c": "9/4", "lambda1_odd_E60": "0.0127965", "eps": "2.670380e-03", "rigorous": true, "margin": "0.0290519951692", "consistent": true}
+{"c": "7/3", "lambda1_odd_E60": "0.00693862", "eps": "2.670380e-03", "rigorous": true, "margin": "0.00984355347714", "consistent": true}
+{"c": "19/8", "lambda1_odd_E60": "0.00503605", "eps": "2.670380e-03", "rigorous": true, "margin": "0.00479610852110", "consistent": true}
+{"c": "29/12", "lambda1_odd_E60": "0.00361280", "eps": "2.670380e-03", "rigorous": true, "margin": "0.00151665168799", "consistent": true}
+{"c": "5/2", "lambda1_odd_E60": "0.00178413", "eps": "2.670380e-03", "rigorous": false, "margin": "-0.00190208803467", "consistent": true}
+{"c": "21/8", "lambda1_odd_E60": "0.000549484", "eps": "2.670380e-03", "rigorous": false, "margin": "-0.00343109962954", "consistent": true}
+{"c": "11/4", "lambda1_odd_E60": "0.000149050", "eps": "2.670380e-03", "rigorous": false, "margin": "-0.00356885491218", "consistent": true}
+{"c": "3", "lambda1_odd_E60": "1.64818e-5", "eps": "2.670380e-03", "rigorous": false, "margin": "-0.00332462707852", "consistent": true}
+memcap: peak 24 MB rc=0

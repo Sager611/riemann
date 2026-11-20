@@ -1,0 +1,2 @@
+c=5 K=20001 lattice 0.0834617014113  matrix 0.0834616972222  diff 4.19e-9  (tail term 9.86e-5)
+c=5 K=100001 lattice 0.0834616974166  matrix 0.0834616972222  diff 1.94e-10  (tail term 2.3e-5)

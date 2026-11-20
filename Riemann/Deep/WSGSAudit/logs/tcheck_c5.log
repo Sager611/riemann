@@ -1,0 +1,2 @@
+c=5 t-quadrature -2.25608966853  closed form -2.25608966856  diff 2.86e-11 (T=3997.66)
+memcap: peak 74 MB rc=0

@@ -1,0 +1,12 @@
+{"c": "5", "N": 60, "e1": "1.1243509e-17", "e2": "5.7050823e-12", "o1": "1.0630992e-14"}
+{"tag": "odd eps=1.02*o1(N)", "c": "5", "kind": "odd", "eps": "1.084361e-14", "K2": 401, "NG": 30, "rigorous": false, "margin": "-3.47056455421e-15", "U_up": null, "rss": 64, "wall": 1.5, "expect": false, "PASS": true}
+{"tag": "defl eps=1.02*e2(N)", "c": "5", "kind": "defl", "eps": "5.819184e-12", "K2": 401, "NG": 30, "rigorous": false, "margin": "-8.00241601132e-13", "U_up": "1.22178215466e-17", "rss": 58, "wall": 1.2, "expect": false, "PASS": true}
+{"tag": "odd eps=0.5*o1(N)", "c": "5", "kind": "odd", "eps": "5.315496e-15", "K2": 401, "NG": 30, "rigorous": true, "margin": "3.76721613748e-15", "U_up": null, "rss": 58, "wall": 1.2, "expect": null, "PASS": false}
+{"c": "31/4", "N": 80, "e1": "9.7990905e-32", "e2": "3.9290270e-25", "o1": "2.8836331e-28"}
+{"tag": "odd eps=1.02*o1(N)", "c": "31/4", "kind": "odd", "eps": "2.941306e-28", "K2": 401, "NG": 60, "rigorous": false, "margin": "-2.51629228467e-28", "U_up": null, "rss": 59, "wall": 1.7, "expect": false, "PASS": true}
+{"tag": "defl eps=1.02*e2(N)", "c": "31/4", "kind": "defl", "eps": "4.007607e-25", "K2": 401, "NG": 60, "rigorous": false, "margin": "-8.78689268482e-26", "U_up": "1.08221871520e-31", "rss": 59, "wall": 1.9, "expect": false, "PASS": true}
+{"tag": "odd eps=0.5*o1(N)", "c": "31/4", "kind": "odd", "eps": "1.441817e-28", "K2": 401, "NG": 60, "rigorous": true, "margin": "1.54526829634e-28", "U_up": null, "rss": 59, "wall": 1.5, "expect": null, "PASS": false}
+{"tag": "stretched step 2->3 (eps = 2.00001 U(2))", "c": "3", "kind": "odd", "eps": "2.670380e-03", "K2": 401, "NG": 30, "rigorous": false, "margin": "-0.00332462707852", "U_up": null, "rss": 63, "wall": 1.5, "expect": false, "PASS": true}
+{"tag": "K2=201 at c=7 odd (logged failure)", "c": "7", "kind": "odd", "eps": "4.779037e-26", "K2": 201, "NG": 40, "rigorous": false, "margin": "-2.65664431662e-24", "U_up": null, "rss": 63, "wall": 1.2, "expect": false, "PASS": true}
+{"tag": "K2=401 at c=7 odd (logged success)", "c": "7", "kind": "odd", "eps": "4.779037e-26", "K2": 401, "NG": 40, "rigorous": true, "margin": "1.00772672362e-24", "U_up": null, "rss": 68, "wall": 1.6, "expect": true, "PASS": true}
+memcap: peak 21 MB rc=0
