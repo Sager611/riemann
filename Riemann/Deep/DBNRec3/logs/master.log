@@ -1,0 +1,27 @@
+14:56:58 master3 start (NEWROW_DEADLINE 1795193100 SHELL_DEADLINE 1795194180)
+14:57:06 check.py rc=0 memcap: peak 0 MB rc=0
+14:57:59 regen_r8: 6 of 6 prep lines identical
+14:58:00 row 8 T 0.913695 shells (tranche 2) 0.01 0.02 0.035 0.05 0.07 0.09 0.11 0.13 0.15 0.17 0.1868
+15:11:21 cert row 8 rc=0 A 0.9435220629628779 B 0.913695 dA 0.05610515258682241 dB 0.05353399950608589
+15:11:21 hook start
+15:13:46 hook done rc=0
+15:13:53 row 9 T0 0.937000
+15:15:53 row 9 T 0.937113 shells 0.01 0.02 0.035 0.05 0.07 0.09 0.11 0.13 0.15 0.17 0.19 0.1946
+15:39:39 cert row 9 rc=0 A 0.96806192805154 B 0.9371130000000001 dA 0.06088091305144168 dB 0.05820067205069073
+15:39:46 row 10 T0 0.963992
+15:41:36 row 10 T 0.964084 shells 0.01 0.02 0.035 0.05 0.07 0.09 0.11 0.13 0.15 0.17 0.19 0.1993
+16:03:38 cert row 10 rc=0 A 0.9961574029194395 B 0.964084 dA 0.06367243571107105 dB 0.06089485451878039
+16:03:45 row 11 T0 0.994391
+16:05:30 row 11 T 0.994393 shells 0.01 0.02 0.035 0.05 0.07 0.09 0.11 0.13 0.15 0.17 0.19 0.21 0.2149
+16:28:09 cert row 11 rc=0 A 1.028159891599498 B 0.9943930000000001 dA 0.06996088293922319 dB 0.06696822234574865
+16:28:16 row 12 T0 1.019367
+16:30:29 row 12 T 1.019369 shells 0.01 0.02 0.035 0.05 0.07 0.09 0.11 0.13 0.15 0.17 0.19 0.21 0.2191
+16:59:27 cert row 12 rc=0 A 1.0542276476421992 B 1.0193690000000002 dA 0.07275844860910649 dB 0.06965921476966408
+16:59:27 new-row deadline: stop before row 13
+16:59:27 master3 done
+16:59:28 final: chain G with Riemann/Deep/DBNRec/logs/cert_r1.json Riemann/Deep/DBNRec/logs/cert_r2.json Riemann/Deep/DBNRec/logs/cert_r3.json Riemann/Deep/DBNRec2/logs/cert_r4.json Riemann/Deep/DBNRec2/logs/cert_r5.json Riemann/Deep/DBNRec2/logs/cert_r6.json Riemann/Deep/DBNRec2/logs/cert_r7.json Riemann/Deep/DBNRec3/logs/cert_r8.json Riemann/Deep/DBNRec3/logs/cert_r9.json Riemann/Deep/DBNRec3/logs/cert_r10.json Riemann/Deep/DBNRec3/logs/cert_r11.json Riemann/Deep/DBNRec3/logs/cert_r12.json
+16:59:29 mkrec source G rc=0: {"source": ".scratch/dbnrec3/ws/dbnrec/MAIN_CLOCK_SOURCE_REC.json", "sha256": "0045c6f68e1f1fbe30c1c7b0b5ef646f9c167cfca1c6c4119c9dab6b3977fc97", "rows": [{"row": 1, "dA": "421960013248130330601273025655960251/9671406556917033397649408000000000000", "dB": "200602987794214576039517398448097313/483570
+17:01:16 make_flow G rc=0 "endpoint_decimal": 0.1074104394940699
+17:01:17 mkrec verifier G rc=0: {"flow_sha256": "b484ea2acb771e320309fc2e00b73c5f0217c0e2be82b39a262894ffa6fd7d09", "source_sha256": "0045c6f68e1f1fbe30c1c7b0b5ef646f9c167cfca1c6c4119c9dab6b3977fc97", "steps": 219875, "endpoint": "8
+17:06:51 verify G rc=0 "PASS": true
+17:06:51 final: done

@@ -1,0 +1,9 @@
+15:11:21 equivalence test start (bb_new sha256 a36207e0e6f7e636, bb_rec sha256 b6864793154f9ba8)
+bb_rec on r8_05 (K = 6e8): 15 s | user+sys 29.13 s | memcap: peak 39 MB rc=0
+bb_new on r8_05 (K = 6e8): 10 s | user+sys 20.44 s | memcap: peak 40 MB rc=0
+  r8_05 K=6e8: old and new IDENTICAL (7 lines)
+new on r8_00 (full shell): rc=0 90 s (tranche 2, bb_rec2 build: 125 s) | user+sys 154.64 s | memcap: peak 40 MB rc=0  42287104 maximum resident set size
+  r8_00: bb.out (times stripped) and unres dump IDENTICAL to tranche 2 (350 cells)
+mkrec rc=0 sha256 6321ae690ef0760caa98808bb5fc05af5e08a0113b96046046a538e5e4109aab (tranche 2 chain F: 6321ae690ef0760caa98808bb5fc05af5e08a0113b96046046a538e5e4109aab)
+15:13:46 ADOPTED: .scratch/dbnrec3/bb_rec is now the bb_rec3 build (sha256 a36207e0e6f7e636)
+15:13:46 equivalence test end
