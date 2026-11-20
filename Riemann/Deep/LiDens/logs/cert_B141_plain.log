@@ -1,0 +1,28 @@
+KLN rows at H0 = 3e12: not admissible (dropped): ['0.60']
+KLN rows at H0 = 3e12: A(sigma0) = 0.65:2.7922 0.70:3.7563 0.75:4.9832 0.80:6.5478 0.85:8.5122 0.86:8.9580 0.87:9.4220 0.88:9.9044 0.89:10.406 0.90:10.926 0.91:11.466 0.92:12.024 0.93:12.601 0.94:13.196 0.95:13.810 0.96:14.441 0.97:15.089 0.98:15.753 0.99:16.431
+lidens cert: B=141 (dyadic 0.8733458561067186), s*=0.8450000286102295, J=189 slabs, K=172 t-steps to 6000350665600, plain=True, nomin=True, delta1=False; prec 160
+rows: 0.85:A(s0)=8.51220,B(s0)=3.37737 0.86:A(s0)=8.95799,B(s0)=3.30437 0.87:A(s0)=9.42198,B(s0)=3.22157 0.88:A(s0)=9.90435,B(s0)=3.13878
+count bound at T0+1e10: U_0=[1.6031e+11 +/- 3.26e+6] U_J-1=[1.7648e+10 +/- 2.29e+5] (Nplus [4.2802e+10 +/- 3.03e+5]); setup 0.7 s
+chain 1 (Li200k bound, a = a_B): lambda_n > 0 for 89 <= n <= 956413498941653124095410176 = 106.255746 T0^2 (94 steps, 16.0 s)
+chain 2 (density bound) from 956413498941653124095410176: lambda_n > 0 for all n <= N = 989642813205584442678050816  (N/T0^2 = 109.947461; 12 steps, 190 evaluations, 58.7 s)
+at N: M_lo(N,N) = [2.9639171e+28 +/- 3.16e+20], Q = [2.9639163e+28 +/- 2.35e+20] (Qall(a*) [5.2743e+27 +/- 2.60e+22], density [2.4365e+28 +/- 1.64e+23], tail [2.54e+17 +/- 3.97e+14])
+total runtime 75.7 s
+memcap: peak 23 MB rc=0
+       76.44 real        75.89 user        47.02 sys
+            39698432  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               97632  page reclaims
+                 110  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  63  signals received
+                 304  voluntary context switches
+              111209  involuntary context switches
+           140225798  instructions retired
+           132271598  cycles elapsed
+             2261328  peak memory footprint

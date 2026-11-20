@@ -1,0 +1,31 @@
+KLN rows at H0 = 3e12: not admissible (dropped): ['0.60']
+KLN rows at H0 = 3e12: A(sigma0) = 0.65:2.7922 0.70:3.7563 0.75:4.9832 0.80:6.5478 0.85:8.5122 0.86:8.9580 0.87:9.4220 0.88:9.9044 0.89:10.406 0.90:10.926 0.91:11.466 0.92:12.024 0.93:12.601 0.94:13.196 0.95:13.810 0.96:14.441 0.97:15.089 0.98:15.753 0.99:16.431
+lidens cert: B=141 (dyadic 0.8733458561067186), s*=0.800000011920929, J=354 slabs, K=388 t-steps to 6000350665600, plain=False, nomin=False, delta1=False; prec 160
+rows: 0.85:A(s0)=8.51220,B(s0)=3.37737 0.86:A(s0)=8.95799,B(s0)=3.30437 0.87:A(s0)=9.42198,B(s0)=3.22157 0.88:A(s0)=9.90435,B(s0)=3.13878
+count bound at T0+1e10: U_0=[4.3182e+10 +/- 4.70e+5] U_J-1=[1.7007e+10 +/- 3.24e+5] (Nplus [4.2802e+10 +/- 3.03e+5]); setup 6.2 s
+falsify: per-zero inequality holds in 400 real-scale cases (min relative slack 3.42e-06); 200 monotonicity checks pass
+part 1: zero gamma* in (14.13,14.14) on the line (Z sign change [-0.0037463 +/- 3.84e-8], [0.0041856 +/- 1.90e-8]);
+        for 1 <= n <= 88: lambda_n >= [0.00335134 +/- 1.63e-9] - [2.13e-23 +/- 1.09e-26] > 0
+chain 1 (Li200k bound, a = a_B): lambda_n > 0 for 89 <= n <= 956413498941653124095410176 = 106.255746 T0^2 (94 steps, 16.1 s)
+chain 2 (density bound) from 956413498941653124095410176: lambda_n > 0 for all n <= N = 994397608026097376944979968  (N/T0^2 = 110.475709; 9 steps, 132 evaluations, 136.1 s)
+at N: M_lo(N,N) = [2.9783957e+28 +/- 4.89e+20], Q = [2.9783857e+28 +/- 1.77e+20] (Qall(a*) [5.0545e+25 +/- 3.54e+20], density [2.9733e+28 +/- 3.12e+23], tail [2.67e+17 +/- 2.55e+14])
+total runtime 159.5 s
+memcap: peak 48 MB rc=0
+      161.94 real       153.92 user        98.16 sys
+            66240512  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              235505  page reclaims
+                 222  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  34  messages sent
+                  36  messages received
+                 127  signals received
+                 620  voluntary context switches
+              304155  involuntary context switches
+           227515349  instructions retired
+           238137965  cycles elapsed
+             2326864  peak memory footprint

@@ -1,0 +1,28 @@
+KLN rows at H0 = 3e12: not admissible (dropped): ['0.60']
+KLN rows at H0 = 3e12: A(sigma0) = 0.65:2.7922 0.70:3.7563 0.75:4.9832 0.80:6.5478 0.85:8.5122 0.86:8.9580 0.87:9.4220 0.88:9.9044 0.89:10.406 0.90:10.926 0.91:11.466 0.92:12.024 0.93:12.601 0.94:13.196 0.95:13.810 0.96:14.441 0.97:15.089 0.98:15.753 0.99:16.431
+lidens cert: B=144 (dyadic 0.873332794), s*=0.8300000429153442, J=176 slabs, K=172 t-steps to 6000350665600, plain=False, nomin=False, delta1=False; prec 160
+rows: 0.85:A(s0)=8.51220,B(s0)=3.37737 0.86:A(s0)=8.95799,B(s0)=3.30437 0.87:A(s0)=9.42198,B(s0)=3.22157 0.88:A(s0)=9.90435,B(s0)=3.13878
+count bound at T0+1e10: U_0=[4.2001e+10 +/- 1.11e+5] U_J-1=[1.7269e+10 +/- 4.30e+4] (Nplus [4.2802e+10 +/- 3.03e+5]); setup 1.4 s
+chain 1 (Li200k bound, a = a_B): lambda_n > 0 for 89 <= n <= 956447831274852956086730752 = 106.259560 T0^2 (94 steps, 17.0 s)
+chain 2 (density bound) from 956447831274852956086730752: lambda_n > 0 for all n <= N = 994274622515645990570033152  (N/T0^2 = 110.462046; 13 steps, 196 evaluations, 58.1 s)
+at N: M_lo(N,N) = [2.9780212e+28 +/- 3.68e+20], Q = [2.9780102e+28 +/- 1.98e+20] (Qall(a*) [1.2524e+27 +/- 2.81e+22], density [2.8528e+28 +/- 2.71e+23], tail [2.67e+17 +/- 1.83e+14])
+total runtime 76.8 s
+memcap: peak 23 MB rc=0
+       78.62 real        75.00 user        47.98 sys
+            39501824  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               93991  page reclaims
+                 151  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  21  messages sent
+                  22  messages received
+                  63  signals received
+                 396  voluntary context switches
+              152317  involuntary context switches
+           141451669  instructions retired
+           134638291  cycles elapsed
+             2310480  peak memory footprint

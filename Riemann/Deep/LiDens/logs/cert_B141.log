@@ -1,0 +1,29 @@
+KLN rows at H0 = 3e12: not admissible (dropped): ['0.60']
+KLN rows at H0 = 3e12: A(sigma0) = 0.65:2.7922 0.70:3.7563 0.75:4.9832 0.80:6.5478 0.85:8.5122 0.86:8.9580 0.87:9.4220 0.88:9.9044 0.89:10.406 0.90:10.926 0.91:11.466 0.92:12.024 0.93:12.601 0.94:13.196 0.95:13.810 0.96:14.441 0.97:15.089 0.98:15.753 0.99:16.431
+lidens cert: B=141 (dyadic 0.8733458561067186), s*=0.8300000429153442, J=176 slabs, K=172 t-steps to 6000350665600, plain=False, nomin=False, delta1=False; prec 160
+rows: 0.85:A(s0)=8.51220,B(s0)=3.37737 0.86:A(s0)=8.95799,B(s0)=3.30437 0.87:A(s0)=9.42198,B(s0)=3.22157 0.88:A(s0)=9.90435,B(s0)=3.13878
+count bound at T0+1e10: U_0=[4.2001e+10 +/- 1.11e+5] U_J-1=[1.7252e+10 +/- 5.81e+4] (Nplus [4.2802e+10 +/- 3.03e+5]); setup 1.5 s
+falsify: per-zero inequality holds in 400 real-scale cases (min relative slack 3.42e-06); 200 monotonicity checks pass
+chain 1 (Li200k bound, a = a_B): lambda_n > 0 for 89 <= n <= 956413498941653124095410176 = 106.255746 T0^2 (94 steps, 16.0 s)
+chain 2 (density bound) from 956413498941653124095410176: lambda_n > 0 for all n <= N = 994258122450992374040494080  (N/T0^2 = 110.460213; 11 steps, 163 evaluations, 48.3 s)
+at N: M_lo(N,N) = [2.9779710e+28 +/- 8.79e+19], Q = [2.9779659e+28 +/- 9.50e+19] (Qall(a*) [1.2516e+27 +/- 3.64e+22], density [2.8528e+28 +/- 2.28e+22], tail [2.67e+17 +/- 1.32e+14])
+total runtime 66.1 s
+memcap: peak 23 MB rc=0
+       71.25 real        64.39 user        43.06 sys
+            39305216  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               82274  page reclaims
+                 144  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  59  signals received
+                 368  voluntary context switches
+              135333  involuntary context switches
+           128166805  instructions retired
+           124837203  cycles elapsed
+             2277712  peak memory footprint

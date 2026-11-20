@@ -1,0 +1,27 @@
+KLN rows at H0 = 3e12: not admissible (dropped): ['0.60']
+KLN rows at H0 = 3e12: A(sigma0) = 0.65:2.7922 0.70:3.7563 0.75:4.9832 0.80:6.5478 0.85:8.5122 0.86:8.9580 0.87:9.4220 0.88:9.9044 0.89:10.406 0.90:10.926 0.91:11.466 0.92:12.024 0.93:12.601 0.94:13.196 0.95:13.810 0.96:14.441 0.97:15.089 0.98:15.753 0.99:16.431
+lidens cert: B=141 (dyadic 0.8733458561067186), s*=0.8300000429153442, J=176 slabs, K=172 t-steps to 6000350665600, plain=False, nomin=False; prec 160
+rows: 0.85:A(s0)=8.51220,B(s0)=3.37737 0.86:A(s0)=8.95799,B(s0)=3.30437 0.87:A(s0)=9.42198,B(s0)=3.22157 0.88:A(s0)=9.90435,B(s0)=3.13878
+count bound at T0+1e10: U_0=[4.2001e+10 +/- 1.11e+5] U_J-1=[1.7252e+10 +/- 5.81e+4] (Nplus [4.2802e+10 +/- 3.03e+5]); setup 1.6 s
+test c=106.2557: M_lo=[2.86276e+28 +/- 2.94e+22] Q=[6.44848e+27 +/- 4.66e+21] (Qall(a*)=[3.255e+26 +/- 6.2e+19], dens=[6.123e+27 +/- 2.48e+22], tail=[1.80e+17 +/- 2.40e+14]) gap>0: True  [0.32 s]
+test c=110: M_lo=[2.96536e+28 +/- 2.89e+22] Q=[2.51842e+28 +/- 3.60e+22] (Qall(a*)=[1.080e+27 +/- 1.15e+22], dens=[2.410e+28 +/- 4.25e+24], tail=[2.56e+17 +/- 3.54e+14]) gap>0: True  [0.30 s]
+test c=110.4: M_lo=[2.97632e+28 +/- 5.83e+21] Q=[2.91337e+28 +/- 3.25e+22] (Qall(a*)=[1.228e+27 +/- 2.89e+23], dens=[2.791e+28 +/- 4.05e+24], tail=[2.65e+17 +/- 3.73e+14]) gap>0: True  [0.29 s]
+memcap: peak 0 MB rc=0
+        8.28 real         2.85 user         5.04 sys
+            39665664  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11510  page reclaims
+                1879  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  34  messages sent
+                  37  messages received
+                   6  signals received
+                 218  voluntary context switches
+               14130  involuntary context switches
+            61303154  instructions retired
+            37819630  cycles elapsed
+             2228560  peak memory footprint

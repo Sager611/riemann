@@ -1,0 +1,25 @@
+rows4 s*=0.800 J=489 mintot=0 logform=0: c = 109.3042
+rows4 s*=0.800 J=489 mintot=1 logform=1: c = 110.4884
+rows4 s*=0.830 J=289 mintot=0 logform=0: c = 109.7544
+rows4 s*=0.830 J=289 mintot=1 logform=1: c = 110.4866
+rows4 s*=0.845 J=189 mintot=0 logform=0: c = 109.9508
+rows4 s*=0.845 J=189 mintot=1 logform=1: c = 110.3633
+rows4 s*=0.850 J=156 mintot=0 logform=0: c = 109.8717
+rows4 s*=0.850 J=156 mintot=1 logform=1: c = 110.1738
+rows4 s*=0.855 J=122 mintot=0 logform=0: c = 109.6061
+rows4 s*=0.855 J=122 mintot=1 logform=1: c = 109.8023
+rows4 s*=0.860 J=89 mintot=0 logform=0: c = 109.0694
+rows4 s*=0.860 J=89 mintot=1 logform=1: c = 109.1756
+rowsAll s*=0.800 J=489 mintot=0 logform=0: c = 109.3050
+rowsAll s*=0.800 J=489 mintot=1 logform=1: c = 110.4884
+rowsAll s*=0.830 J=289 mintot=0 logform=0: c = 109.7544
+rowsAll s*=0.830 J=289 mintot=1 logform=1: c = 110.4866
+rowsAll s*=0.845 J=189 mintot=0 logform=0: c = 109.9508
+rowsAll s*=0.845 J=189 mintot=1 logform=1: c = 110.3633
+rowsAll s*=0.850 J=156 mintot=0 logform=0: c = 109.8717
+rowsAll s*=0.850 J=156 mintot=1 logform=1: c = 110.1738
+rowsAll s*=0.855 J=122 mintot=0 logform=0: c = 109.6061
+rowsAll s*=0.855 J=122 mintot=1 logform=1: c = 109.8023
+rowsAll s*=0.860 J=89 mintot=0 logform=0: c = 109.0694
+rowsAll s*=0.860 J=89 mintot=1 logform=1: c = 109.1756
+memcap: peak 37 MB rc=0
