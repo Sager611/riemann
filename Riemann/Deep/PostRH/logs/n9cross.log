@@ -1,0 +1,10 @@
+ours0.568 crossover log t = 108.03811  log10 t = 46.9204
+ours0.4821 crossover log t = 110.73923  log10 t = 48.0934
+fodge crossover log t = 116.98532  log10 t = 50.8061
+45 rh-fodge 0.80523 rh-0.4821 0.43002
+47 rh-fodge 0.53107 rh-0.4821 0.15287
+49 rh-fodge 0.25349 rh-0.4821 -0.12746
+51 rh-fodge -0.027374 rh-0.4821 -0.41086
+60 rh-fodge -1.3289 rh-0.4821 -1.7218
+100 rh-fodge -7.6862 rh-0.4821 -8.1007
+memcap: peak 0 MB rc=0

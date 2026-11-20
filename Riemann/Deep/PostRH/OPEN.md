@@ -1,0 +1,28 @@
+# OPEN — what stays open under RH + Dirichlet GRH (L1–L5), ranked for our loop
+
+Score = RH-programme relevance × chance × gain (each 1–5, my estimate). Each item: why L1–L5 do not settle it, one falsification target (the smallest case where the needed step could fail), a first round.
+
+| rank | problem (node) | R | C | G | score |
+|---|---|---|---|---|---|
+| 1 | GRH beyond Dirichlet: ζ_K of non-abelian K, Artin, Hecke of K ≠ Q (N11, ROOT successor) | 5 | 2 | 5 | 50 |
+| 2 | simple zeros: beat 19/27 now that Dirichlet GRH/GLH inputs are free (N8) | 4 | 3 | 4 | 48 |
+| 3 | pair correlation beyond \|α\| ≤ 1, GUE (N8) | 4 | 2 | 3 | 24 |
+| 4 | GRH for GL(2) and the Selberg class (N12) | 4 | 1 | 5 | 20 |
+| 5 | Hilbert–Pólya; CCM's simple ground state for all λ (N13, N1) | 3 | 2 | 3 | 18 |
+| 6 | Mertens beyond √x·exp(…): Ng's hypotheses, Gonek's (log log log x)^{5/4} (N10) | 2 | 3 | 2 | 12 |
+| 7 | Artin's primitive-root conjecture (needs HRH, CONDITIONAL.md E1) (N11) | 2 | 1 | 3 | 6 |
+| 8 | explicit constants that become unconditional records (N9–N11) | 1 | 5 | 1 | 5 |
+| 9 | Legendre, Cramér (N10; RH is too weak by log x, CONDITIONAL.md E9) | 1 | 1 | 2 | 2 |
+
+If Masullo's GRH for all Hecke L (claim of 18:18 UTC) is verified: item 1 shrinks to non-CM GL(n ≥ 2) and the Selberg class (its smallest case moves from ζ_K of discriminant −23, then covered, to L(E, s) for E = 11a1 or L(Δ, s)), item 7 (Artin, by Hooley's HRH) becomes a theorem; items 2–6, 8, 9 unchanged.
+
+1. **GRH beyond Dirichlet.** L1–L5 cover only L(χ, s) over ℚ; the first uncovered Dedekind ζ is ζ_K for the cubic field K of discriminant −23 (ζ_K = ζ·L(s, ρ), ρ the 2-dim S₃ representation = L(s, ψ) for a cubic class-group character ψ of ℚ(√−23), the weight-one form η(z)η(23z)). Alpöge's sketch (remark.pdf: Stepanov determinant, iterated theta lifts between definite unitary groups) is GL(1)-over-ℚ in form, but unitary theta lifts naturally carry Hecke characters of CM fields. Falsification target: the first step of the sketch that needs χ to factor through (ℤ/N)*, tested on ψ (order 3, conductor 1 over ℚ(√−23)). First round: 3 scouts read-only on .scratch/alp/lean/src (rg -l 'DirichletCharacter|ZMod' in the kernel modules feeding claimAll, allChi, critAll: is χ ever abstracted to a Hecke character?), 2 scouts on remark.pdf's lift chain, 2 on the literature of theta lifts for Hecke characters of imaginary quadratic fields, 1 Orca agent (audit-first) after alpaudit reports.
+2. **Simple zeros.** RH gives 19/27 (Bui–Heath-Brown 1302.5018), pair correlation 0.6792 (1810.08843); simplicity is open. Newly free inputs: GLH for Dirichlet L (Conrey–Ghosh–Gonek's twisted moments) and GRH for Dirichlet L (Goldston–Gonek–Özlük–Snyder's GRH inequality on F(α), 1 ≤ α ≤ 3/2, which gave 67.38%, 1810.08843 l.286). CGdL already add the GGOS constraint: 0.6845 under GRH (1810.08843 Corollary l.276–283) [check GGOS's GRH is Dirichlet-only]. Falsification target: the dual ceiling of the pair-correlation SDP with the full RH + GGOS information (as our TEN ceilings 31/46, 153/227); if it is below 19/27 = 0.7037, the route is a barrier (NOGO). Second target: Conjecture H of our 7/8 reduction (TREE N8, explore55) on the first 10⁵ zeros with a θ = 1/2 mollifier (one compute process, < 300 MB). First round: 2 scouts on 1810.08843/GGOS TeX for the exact GRH inequality, 1 on our LP code (Riemann/Deep/ExploreSchurWeyl, CGLUnc), 2 on the Conjecture H numerics, 3 exploration.
+3. **Pair correlation.** Montgomery's theorem (F(α) for \|α\| ≤ 1) is now unconditional; F = 1 on \|α\| ≥ 1 is not implied. Falsification target: our pivot-SOS 3-point SDP gain (0.017–0.020 at N = 8–14, TREE N8) at N = 16–20: if it decays like the LP gain (≈ 0.056/N), record the barrier. First round: rerun ExploreSchurWeyl's SDP at N = 16, 18, 20 under the memory cap.
+4. **GL(2) / Selberg class.** Nothing in L1–L5 touches degree 2; our GL(2) records (RECORDS.md l.29, l.35) stand. Falsification target: does any step of the theta-lift chain admit a GL(2) automorphic input (Shimura–Waldspurger), tested on L(Δ, s) (level 1, weight 12)? First round: literature scouts only.
+5. **Hilbert–Pólya / CCM.** RH gives QW_λ ≥ 0 (N1) but neither an operator nor the simple even ground state (2511.22755 §8). Falsification target: the smallest λ > e² where the ground state of QW_λ could be degenerate (near-crossing of the two lowest even eigenvalues); first round: extend our certified range (WeilSimple) one window beyond λ = e².
+6. **Mertens.** M(x) ≪ √x exp((log x)^{1/2}(log log x)^{5/2+ε}) is now unconditional (0810.3587); Ng's limiting distribution needs simple zeros and J₋₁(T) = Σ_{0<γ≤T} \|ζ′(ρ)\|⁻² ≪ T. Falsification target: J₋₁(T)/T to T = 10⁴ from computed zeros (a growing ratio would falsify the hypothesis numerically). First round: one compute scout.
+7. **Artin.** Needs GRH for Q(ζ_k, g^{1/k}) (E1). Falsification target: whether Hooley's error terms need only the abelian subfield Q(ζ_k) for k ≤ (log x)^A (they do not: the Kummer layer is non-abelian). First round: one scout; expect a clean negative.
+8. **Explicit records.** Targets: an explicit RH Mertens bound (none known to us), an explicit uniform polylog prime-primitive-root bound under GRH (Shoup–Martin with constants; would supersede RECORDS.md l.16), an explicit RH \|ζ(1/2+it)\| bound for 3 ≤ t < 10^40 (Simonič starts at 10^40; would supersede l.21–22). Falsification target: the smallest p where MTT's ((8/5)(2^{ω(p−1)} − 1) log p)² exceeds our (1.956 log p)^{26.85} (where our record still wins). Records only (AGENTS.md priority).
+9. **Legendre / Cramér.** Open under RH; not an RH-programme target.
+
