@@ -1,0 +1,7 @@
+Memory/time per process (memcap 290 MB; /usr/bin/time -l max RSS of the tree):
+cert8.py (copy, .scratch/lcaudit/run): memcap peak 0 MB (7.9 s run; sampler missed), max RSS 37.9 MB
+mainterm_sym.py: memcap peak 14 MB, max RSS 74.8 MB, 15.4 s
+mainterm_num.py (tiny y=1e3 test): max RSS 41.0 MB; full (y <= 1e6): memcap peak 100 MB, max RSS 116.9 MB, 32 s
+indep_p.py first attempt: KILLED by memcap at sampled 1919 MB (unchunked 3e5 x 400 outer product); fixed by 2000-point chunks; rerun: memcap peak 123 MB, max RSS 141.4 MB, 145 s
+zeros_F.py (tiny t<=130 test): peak 14 MB; full (t <= 1000): memcap peak 14 MB, max RSS 34.7 MB, 113 s
+zeros_F2.py (t in (1000,2000]): memcap peak 14 MB, max RSS 34.7 MB, 263 s

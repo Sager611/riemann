@@ -1,0 +1,9 @@
+step 1 residue formula: OK for i = 0..4
+step 2 Euler factor A_p(0) = 1 for p not | q: OK; p | q factors give (q/phi(q)) at leading order
+step 3 S(alpha,beta) ~ (q/phi) (1/(theta L)) int (P'+B theta P)(P'+A theta P): OK (general quartic P)
+step 4 q/phi(q) cancels in both terms; c(A,B) = [int(P'+A th P)(P'+B th P) - e^{-(A+B)} int(P'-A th P)(P'-B th P)]/((A+B) th): OK
+step 5 left shift a = b = -R: c = c_1 (Conrey): OK
+step 6 right shift a = b = +R: c = e^{-2R} c_1 =: c_+ : OK  (this is the hinge input)
+step 7 functional-equation symmetry c(A,B) = e^{-(A+B)} c(-B,-A): OK
+step 8 P = x, R -> 0: c -> 1 + 1/theta (Wu / Lamzouri LemmaWu l.1004): OK
+step 9 inf_P c_+ = e^{-2R} + (1-e^{-2R})(1+coth(theta R))/2 = 1 + (1-e^{-2R})/(e^{2 theta R}-1): OK

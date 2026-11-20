@@ -1,0 +1,17 @@
+chi_a(2) = 1.00000000000000000j, parity 1, eps = (0.85065080835204+0.5257311121191335j); chi_b(2) = -1.00000000000000000j, parity 1, eps = (0.8506508083520399-0.5257311121191337j); chi_q parity 0
+a_F(1) for b = (1, 1): (1.923876715567835+1.1102230246251565e-16j) ; for b = (1, -1): -0.5465330578253433j
+b2 = +1: |F(0.808517 + 85.699348 i)| = 1.25e-06  (|L_a| there = 0.702)
+b2 = -1: |F(0.808517 + 85.699348 i)| = 1.40e+00  (|L_a| there = 0.702)
+max |Im Z_j|/|Z_j| on the grid (reality of e^{i vartheta} e^{i theta_j} L_j): 5.7e-13
+block       N_main  #sgn L_a   frac  #sgn F(1,1)  frac  #sgn F(1,-1)  frac
+( 62.5, 125.0]    42.7     43   1.007        39   0.913         24   0.562
+(125.0, 250.0]    99.2     99   0.998        93   0.938         62   0.625
+(250.0, 500.0]   226.0    226   1.000       216   0.956        148   0.655
+(500.0,1000.0]   507.1    507   1.000       471   0.929        346   0.682
+opposite parity (chi_a odd + chi_q even, b = (1,1)), t in [10,500]: min |F|/(|L_a|+|L_q|) = 3.827e-01 at t = 216.00
+  vartheta_odd - vartheta_even mod pi at t = 200..500: 0.7854, 0.7854, 0.7854, 0.7854 (pi/4 = 0.7854)
+elapsed 113 s, step h = 0.04
+max |Im Z_j|/|Z_j| on the grid (reality of e^{i vartheta} e^{i theta_j} L_j): 5.7e-13
+memcap: peak 14 MB rc=0
+      117.65 real        97.34 user        64.09 sys
+            34701312  maximum resident set size

@@ -1,0 +1,7 @@
+C(f0) by quadrature = 1.32749929632059 ; closed form 1/2 + cot(1/sqrt2)/sqrt2 = 1.32749929632059 ; diff 0.0e+00
+c = 0.0001: lambda = 1.22382e-7 (betaT = -0.6667), thb = 4.935e-08, rho_max = 1.2236206, rho = 1.2036, y* = 1.3885676, alpha_rho = 0.6702740537, B(rho) = 1.403822e-5
+        p = 0.672491254144, 2p - 1 = 0.344982508288
+        rho scan (grid alpha): best p = 0.672491327 at rho = 1.210 (alpha 0.696370)
+c = 0.001: lambda = 1.22382e-5 (betaT = -0.6666), thb = 4.935e-06, rho_max = 1.2236523, rho = 1.2036, y* = 1.3887261, alpha_rho = 0.6701238842, B(rho) = 1.403822e-5
+        p = 0.672487288175, 2p - 1 = 0.344974576351
+        rho scan (grid alpha): best p = 0.672487361 at rho = 1.210 (alpha 0.696187)

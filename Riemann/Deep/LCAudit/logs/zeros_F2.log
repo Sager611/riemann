@@ -1,0 +1,12 @@
+chi_a(2) = 1.00000000000000000j, parity 1, eps = (0.85065080835204+0.5257311121191335j); chi_b(2) = -1.00000000000000000j, parity 1, eps = (0.8506508083520399-0.5257311121191337j); chi_q parity 0
+a_F(1) for b = (1, 1): (1.923876715567835+1.1102230246251565e-16j) ; for b = (1, -1): -0.5465330578253433j
+b2 = +1: |F(0.808517 + 85.699348 i)| = 1.25e-06  (|L_a| there = 0.702)
+b2 = -1: |F(0.808517 + 85.699348 i)| = 1.40e+00  (|L_a| there = 0.702)
+max |Im Z_j|/|Z_j| on the grid (reality of e^{i vartheta} e^{i theta_j} L_j): 1.0e-12
+block       N_main  #sgn L_a   frac  #sgn F(1,1)  frac  #sgn F(1,-1)  frac
+(1000.0,2000.0]  1124.5   1124   1.000      1011   0.899        781   0.695
+TypeError: must be real number, not NoneType
+memcap: peak 14 MB rc=1
+      263.22 real       205.73 user       138.07 sys
+            34652160  maximum resident set size
+NOTE: the run ended with 'TypeError: must be real number, not NoneType' at the opposite-parity summary line (no opposite-parity samples for t >= 1000, by design); the block table above is complete. Guard added to zeros_F2.py afterwards.

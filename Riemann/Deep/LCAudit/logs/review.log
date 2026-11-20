@@ -1,0 +1,9 @@
+Reviewer (verdict-only subagent, 2026-11-20 ~08:58 UTC), prompt: block hinge via Wu Prop 3.1 at a = b = R_T > 0 + Littlewood; full-range hinge from blocks; BH summed over dyadic blocks with full-range isolation (FULLPROOF G2). Inputs pasted: Wu Prop 3.1, GaPa Lemma 3.1 (full range), Pro:BombieriHejhal.
+Verdict: GAP. Findings:
+- Step 1 (positive shift, c(R,R), c*(R), Littlewood direction, order of limits): correct.
+- Step 2 (dyadic summation, uniformity: fixed rho/2 tail uniform for block heights >= sqrt T; head blocks by continuity/monotonicity of B): correct.
+- "The substantive unproved step is GP => |I_1|/N >= p(c)": the Hilbert-space inequality and the removal of W were not supplied in the paste.
+- Step 3 threshold comparison and H_j-complement bound: correct; only the top zero can have its neighbour outside (0,T].
+- BH uses closed intervals [T,2T]: adjacent blocks can double-count zeros at dyadic endpoints; subtract O(K) = O(log T) (negligible).
+- "Conditional on the missing isolation lemma, and with that endpoint correction, the final 2p(c) - 1 bound follows."
+Disposition (lcaudit): the "missing isolation lemma" was deliberately not pasted (not part of the reviewed step): it is DERIVATION §2 (Hilbert-space inequality for any finite conjugation-invariant multiset; audited, IsoZero/AUDIT.md) plus La 2609.02882 Lemma 3.2's proof, whose only input is BGST Lemma 5 (LamzAudit2/REPORT.md S3: "none beyond Lemma 3.1", re-derived line by line); GaPa Lemma 3.1 has the identical form (weight 4/(4-u^2), r real even L^1, supp [-1,1], Lipschitz at 0; error o(1)). Endpoint correction added to FULLPROOF G2(d).
