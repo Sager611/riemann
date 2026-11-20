@@ -1,0 +1,15 @@
+/-!
+# Round 512 — node N5 (Nyman–Beurling), round 20, falsification of dbarnb's THEOREM (RH alone ⇒ D(λ)² log(1/λ) → Σ m_ρ²/|ρ|²): Burnol's liminf applies to this D(λ), Turán–Nazarov covers the jets, Lemma B's single-group cost stays ≤ 1/(ℓγ²)·M², the constrained variant holds, Balazard–Saias Notes 4 is not prior art as far as found; Afriat's theorem and Kingman's bound transfer no tool
+
+* Node: N5 (20th round; R508 before). Round type: falsification of our fresh unaudited THEOREM (Riemann/Deep/DbarNB/, discoveries/nyman-beurling-continuous-rate.md; three independent block referees CORRECT, R511 stretch) by probes of its deltas from explore59's refereed reduction, while the Orca audit dbaraudit runs (lesson 342), plus three exploration scouts.
+* (1) Burnol math/0103058 Thm 1.3 (TeX l. 213–226): the liminf log(1/λ)·D(λ)² ≥ Σ m_ρ²/|ρ|² is stated for the distance in L²(0,∞), continuous dilations θ ∈ [λ, 1], without the constraint Σ c_k/θ_k = 0: it is the theorem's lower bound as used (scout n1). HOLDS.
+* (2) Turán–Nazarov as quoted in Friedland–Yomdin arXiv 1107.0039 Thm 1.1 (TeX l. 72–80, Nazarov's form): p(t) = Σ_{k=0}^m c_k e^{λ_k t}, sup_B|p| ≤ e^{μ(B) max|Re λ_k|}(cμ(B)/μ(Ω))^m sup_Ω|p|, c absolute; for λ_k = iγ_k the factor is 1; jets P(t)e^{iγt} are uniform limits on B of sums with distinct imaginary frequencies (divided differences) with the same m = number of terms counted with multiplicity minus 1, so the bound passes to the limit (orchestrator; scout n2 gave no answer). HOLDS.
+* (3) Lemma B (DERIVATION.md §4), exact single-group cost in the OU norm (Gram of dbarnb_falsify.py NGram, mpmath 50 digits): ℓγ²U_g/M² ∈ [0.8517, 0.999997] for M = 1–6 equally spaced frequencies with gaps h·L^{−3/4}, h ∈ {0.15, 0.3, 1}, γ ∈ {30, 100, 300}, L ∈ {20, 40, 80}, ℓ = L − √L (h = 0.3 vs 0.15 differ by ≤ 0.0097; an mp.inverse cross-check agrees to 9·10⁻⁴⁵): bounded uniformly, below the e^{O(M)} the proof allows (scout n3). HOLDS.
+* (4) Nyman's constrained variant (ExploreDbar REPAIR.md (3i)): subtracting G(1)·ρ₁ costs |G(1)|²‖ζ/s‖² with |G(1)| = |R(1)| ≪ e^{−5√L/2}, i.e. o(L^{−2}); constrained ≥ unconstrained gives the lower bound (scout n4). HOLDS.
+* (5) Novelty: the continuous liminf cited by Burnol (l. 189–194) is from BBLS's Notes III (bibliography l. 703–705), not Notes 4; no citing arXiv paper found describes an RH upper bound or exact limit for the continuous distance in Balazard–Saias's Notes 4 (2004; 1306.0856 discusses only the Balazard–Saias–Yor weighted integral) (scout n5). HOLDS as far as found.
+* (6) Explorations (3 of 8): Afriat's theorem (revealed preference) → N1: rationalizes finite data, imposes nothing like β = 1/2: no bound; Kingman's heavy-traffic bound and Lindley's recursion → N3/N8: need negative drift, normalized zero gaps have none: no transfer; Karle–Hauptman determinants (crystallography): scout gave no answer.
+* Files: scouts' checks in .scratch/r512/ (deleted after bookkeeping); this file.
+-/
+
+namespace Fayed.R512
+end Fayed.R512
