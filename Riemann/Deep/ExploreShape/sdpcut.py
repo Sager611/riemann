@@ -24,14 +24,26 @@ def scaled_form(av, phv, Gv, Bv, g, J):
     return M, Nrm
 
 
-def sdp_cut(m, J, N0=14, Nv=28, nsig=40, rounds=8, smin=1e-8, nfine=300, verbose=False):
+def sdp_cut(m, J, N0=14, Nv=28, nsig=40, rounds=8, smin=1e-8, nfine=300, verbose=False, margin=0.0):
     G, B = sdpJ.basis(N0, J)
     Gv, Bv = V.basis(Nv, J)
     a = cp.Variable(J + 1); ph = {k: cp.Variable() for k in B}
     cons = [a[1] == 1, a[J] >= 0] + [cp.abs(v) <= 1e3 for v in ph.values()] + [cp.abs(a) <= 1e3]
     for s in np.concatenate([[0.0], np.pi ** 2 * np.geomspace(smin, 1, nsig)]):
-        M = lmi(a, ph, G, B, s, J)
+        M = lmi(a, ph, G, B, s, J) - margin * sum(s ** (J - j) * G[j] for j in range(J + 1))
         cons.append(0.5 * (M + M.T) >> 0)
+    # exact small-gap conditions (Lemmas 3, 4): C >= 0 and the limit x R(x) -> L_inf >= 0 (Schur form for J = 6)
+    am = 1e-8
+    if J == 5:
+        C5 = cp.bmat([[a[3] + ph[(3, 2)], ph[(3, 4)] / 2], [ph[(3, 4)] / 2, a[5]]])
+        L5 = cp.bmat([[a[2] + ph[(1, 2)], (ph[(3, 2)] + ph[(1, 4)]) / 2], [(ph[(3, 2)] + ph[(1, 4)]) / 2, a[4] + ph[(3, 4)]]])
+        cons += [C5 >> am * np.eye(2), L5 >> am * np.eye(2)]
+    if J == 6:
+        C6 = cp.bmat([[a[3] + ph[(3, 2)], (ph[(3, 4)] + ph[(5, 2)]) / 2], [(ph[(3, 4)] + ph[(5, 2)]) / 2, a[5] + ph[(5, 4)]]])
+        L6 = cp.bmat([[a[2] + ph[(1, 2)], (ph[(1, 4)] + ph[(3, 2)]) / 2, ph[(5, 2)] / 2],
+                      [(ph[(1, 4)] + ph[(3, 2)]) / 2, a[4] + ph[(3, 4)], ph[(5, 4)] / 2],
+                      [ph[(5, 2)] / 2, ph[(5, 4)] / 2, a[6]]])
+        cons += [C6 >> am * np.eye(2), L6 >> am * np.eye(3)]
     fine = np.concatenate([np.pi ** 2 * np.geomspace(smin, 1, nfine), [np.pi ** 2]])
     cuts = []
     for rd in range(rounds):
@@ -44,7 +56,7 @@ def sdp_cut(m, J, N0=14, Nv=28, nsig=40, rounds=8, smin=1e-8, nfine=300, verbose
             M, Nrm = scaled_form(av, phv, Gv, Bv, g, J)
             L = np.linalg.cholesky(Nrm); Li = np.linalg.inv(L)
             ev, U = np.linalg.eigh(Li @ M @ Li.T)
-            if ev[0] < -1e-9:
+            if ev[0] < margin / 2 - 1e-9:
                 worst.append((ev[0], g, Li.T @ U[:, 0]))
         mn = min([w[0] for w in worst], default=0.0)
         if verbose:
@@ -58,5 +70,5 @@ def sdp_cut(m, J, N0=14, Nv=28, nsig=40, rounds=8, smin=1e-8, nfine=300, verbose
             for (p_, q), Bm in Bv.items():
                 Mexpr = Mexpr + ph[(p_, q)] * g ** (-p_ - q) * float(vv @ Bm @ vv)
             nrm = sum(g ** (1 - 2 * j) * float(vv @ Gv[j] @ vv) for j in range(J + 1))
-            cuts.append(Mexpr >= 1e-9 * nrm)
+            cuts.append(Mexpr >= (1e-9 + margin) * nrm)
     return pr.value, av, phv, mn, rounds

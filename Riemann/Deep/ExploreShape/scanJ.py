@@ -9,6 +9,7 @@ from sdpcut import sdp_cut
 from scipy.optimize import minimize_scalar
 NIT = int(os.environ.get('NIT', '2'))
 ROUNDS = int(os.environ.get('ROUNDS', '6'))
+MARGIN = float(os.environ.get('MARGIN', '0'))
 JMIN = int(os.environ.get('JMIN', '3'))
 
 r = int(sys.argv[1]); th = float(sys.argv[2]); d = int(sys.argv[3]); Jmax = int(sys.argv[4])
@@ -30,7 +31,7 @@ for kap in kaps:
             C = Jt.shift(CJ, dv, kap)
             n0 = y @ C[0] @ y
             m = [y @ C[2 * j] @ y / n0 for j in range(J + 1)]
-            val, a, ph, mnv, rds = sdp_cut(m, J, rounds=ROUNDS)
+            val, a, ph, mnv, rds = sdp_cut(m, J, rounds=ROUNDS, margin=MARGIN)
             line['minvalid%d' % J] = mnv
             def fa(dvv):
                 Cs = Jt.shift(CJ, dvv, kap)

@@ -1,4 +1,16 @@
-IDEA: per-gap Wirtinger inequalities of order 4 and 5, fed with BM's own mean values of |F''|², …, |F⁽⁵⁾|², push Bui–Milinovich's large-gap criterion past its Wirtinger ceiling (degree-64 amplifier, float mean values: 3.3235 → 3.3419 for order 4 with an Arb-certified per-gap inequality, 3.3584 for order 5; record 3.324; orders ≤ 2 provably give nothing) (node N8)
+RECORD: Λ > 3.367 (= 3367/1000) certified, unconditionally: Bui–Milinovich's criterion with an Arb-certified 6th-order per-gap inequality in place of Wirtinger and BM's mean values of |F^{(j)}|², j ≤ 6, evaluated in Arb (degree-80 amplifier, midpoint mollifier, r = 2; orders 4 and 5 give 3.34 and 3.358); was 3.324 (node N8; CERT.md)
+
+Earlier first line (exploration, 19 Nov): IDEA: per-gap Wirtinger inequalities of order 4 and 5, fed with BM's own mean values of |F''|², …, |F⁽⁵⁾|², push Bui–Milinovich's large-gap criterion past its Wirtinger ceiling (degree-64 amplifier, float mean values: 3.3235 → 3.3419 for order 4 with an Arb-certified per-gap inequality, 3.3584 for order 5; record 3.324; orders ≤ 2 provably give nothing) (node N8)
+
+## Certificate (20 Nov 2026, CERT.md)
+- Certified (Arb, every step reviewed): Λ > 3.34 (order 4, degree 64), 3.355 (order 5, degree 64), 3.358 (order 5, degree 80),
+  3.365 and 3.367 (order 6, degree 80). Ingredients: per-gap inequalities certified by Lemmas 2–4 (exact sine/cosine
+  reduction with the free curvatures f''(0), f''(g), f''''(0), f''''(g)); BM's Lemma main differentiated in the shifts (BM's own
+  Cauchy argument, l.417, valid for any fixed order); main terms c_0..c_6 in Arb with GapBar's Γ-arrays extended to τ-moments
+  ≤ 12 and the truncation majorant Lemma T'.
+- Suggested TREE N8 line: "large gaps Λ > 3.367 unconditionally (ours, explore53, 20 Nov 2026: Bui–Milinovich criterion with an
+  order-6 per-gap inequality and BM mean values of |F^{(j)}|², j ≤ 6; Arb; reviewers CORRECT; [CERT](Riemann/Deep/ExploreShape/CERT.md);
+  before 3.324)".
 
 # explore53: spectral shape optimisation → N8 large gaps (Bui–Milinovich criterion beyond Wirtinger)
 
