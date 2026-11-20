@@ -1,0 +1,37 @@
+kappa=3.3200 J=3: h1=0.994669 hJ=0.996045 (SDP 0.0039)
+kappa=3.3200 J=4: h1=0.994669 hJ=1.008756 (SDP -0.00838)
+kappa=3.3200 J=5: h1=0.994669 hJ=1.020759 (SDP -0.0187)
+kappa=3.3200 J=6: h1=0.994669 hJ=1.036769 (SDP -0.0337)
+kappa=3.3500 J=3: h1=0.971020 hJ=0.972493 (SDP 0.0275)
+kappa=3.3500 J=4: h1=0.971020 hJ=0.986417 (SDP 0.0131)
+kappa=3.3500 J=5: h1=0.971020 hJ=0.999031 (SDP 0.000885)
+kappa=3.3500 J=6: h1=0.971020 hJ=1.015596 (SDP -0.0144)
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreShape/joint.py:68: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  pr.solve(solver=cp.CLARABEL)
+kappa=3.3800 J=3: h1=0.948322 hJ=0.949575 (SDP 0.0507)
+kappa=3.3800 J=4: h1=0.948322 hJ=0.965000 (SDP 0.0342)
+kappa=3.3800 J=5: h1=0.948322 hJ=0.978258 (SDP 0.0201)
+kappa=3.3800 J=6: h1=0.948322 hJ=0.994647 (SDP 0.005)
+kappa=3.4200 J=3: h1=0.919469 hJ=0.919461 (SDP 0.0808)
+kappa=3.4200 J=4: h1=0.919469 hJ=0.937803 (SDP 0.0616)
+kappa=3.4200 J=5: h1=0.919469 hJ=0.951847 (SDP 0.0449)
+kappa=3.4200 J=6: h1=0.919469 hJ=0.968432 (SDP 0.0299)
+      366.14 real       220.20 user         4.43 sys
+           230572032  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               52910  page reclaims
+                 728  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 140  voluntary context switches
+              503596  involuntary context switches
+           471422851  instructions retired
+           224084903  cycles elapsed
+            35930664  peak memory footprint
+memcap: peak 209 MB rc=0

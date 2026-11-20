@@ -1,0 +1,24 @@
+N=3 S=L4o features=5 patterns=3 B=256 steps=200
+it=  0 minSimple=0.847951 slack=0.00e+00 maxred=6.121e-05 lb~0.847890 cols=3600 t=0s
+it=  1 minSimple=0.847936 slack=0.00e+00 maxred=3.849e-05 lb~0.847898 cols=3648 t=1s
+it=  2 minSimple=0.847925 slack=0.00e+00 maxred=1.232e-05 lb~0.847913 cols=3696 t=1s
+FINAL N=3 S=L4o minSimple=0.847925 lb~0.847913 slack=0.0e+00 features=5 maxrss=85MB t=1s
+memcap: peak 0 MB rc=0
+        7.62 real         2.46 user         4.69 sys
+            89554944  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               18416  page reclaims
+                   9  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   4  signals received
+                  19  voluntary context switches
+               13349  involuntary context switches
+            62141902  instructions retired
+            41117925  cycles elapsed
+             2163024  peak memory footprint

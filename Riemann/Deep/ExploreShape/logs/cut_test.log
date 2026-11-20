@@ -1,0 +1,15 @@
+    round 0: value -0.00822776, violations 152, min -3.87e-06
+    round 1: value -0.00815569, violations 149, min -1.79e-07
+    round 2: value -0.00815544, violations 79, min -4.37e-08
+    round 3: value -0.0081552, violations 58, min -1.24e-08
+    round 4: value -0.00815509, violations 46, min -6.28e-09
+    round 5: value -0.00815505, violations 35, min -3.48e-09
+    round 6: value -0.00815501, violations 121, min -1.66e-09
+    round 7: value -0.00815508, violations 149, min -5.02e-09
+J 4 value -0.008155075470028555 minval -5.019278538206483e-09 rounds 8 a [-0.96483274  1.          0.0162377  -0.02243995  0.00251853] {(1, 2): 0.03374682510448298, (3, 2): 0.02243995254803804}
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/ExploreShape/logs/cut_test.py", line 5, in <module>
+    m=[cen[2*j]*kap**(2*j)/cen[0] for j in range(J+1)]
+       ~~~^^^^^
+IndexError: list index out of range
+memcap: peak 128 MB rc=1

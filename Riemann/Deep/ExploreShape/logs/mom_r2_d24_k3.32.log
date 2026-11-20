@@ -1,0 +1,22 @@
+r=2 th=0.2499 d=24 kappa=3.3200: h1=0.99466937 v=1.362022 mean S=1.362022 var=0.0912106 (1/kappa^2=0.0907243) imag_rel=2.1e+00
+standardized central moments: 1.00000 0.00000 1.00000 -0.00053 2.19163 -0.13223 6.80853 -1.72933 27.43986
+hankel eigs: 1.358e-06 2.413e-04 2.410e-02 1.014e+00 5.074e+01
+       12.94 real        11.93 user         0.33 sys
+           121831424  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               16340  page reclaims
+                   6  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                   4  voluntary context switches
+               13649  involuntary context switches
+           421150111  instructions retired
+           177977481  cycles elapsed
+            24871440  peak memory footprint
+memcap: peak 90 MB rc=0

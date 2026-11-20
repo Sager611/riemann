@@ -1,0 +1,34 @@
+N=9 S=P features=9 patterns=9 B=192 steps=150
+it=  0 minSimple=0.781265 slack=0.00e+00 maxred=1.703e-01 lb~0.610916 cols=4800 t=2s
+it=  1 minSimple=0.779029 slack=0.00e+00 maxred=4.951e-01 lb~0.283928 cols=130 t=3s
+it=  2 minSimple=0.763959 slack=0.00e+00 maxred=2.825e-01 lb~0.481430 cols=322 t=4s
+it=  3 minSimple=0.762596 slack=0.00e+00 maxred=3.303e-02 lb~0.729569 cols=442 t=6s
+it=  4 minSimple=0.757915 slack=0.00e+00 maxred=3.616e-02 lb~0.721758 cols=562 t=7s
+it=  5 minSimple=0.751869 slack=0.00e+00 maxred=2.041e-02 lb~0.731462 cols=682 t=8s
+it=  6 minSimple=0.750774 slack=0.00e+00 maxred=3.722e-03 lb~0.747052 cols=802 t=10s
+it=  7 minSimple=0.749941 slack=0.00e+00 maxred=1.557e-03 lb~0.748384 cols=922 t=11s
+it=  8 minSimple=0.749770 slack=0.00e+00 maxred=1.047e-03 lb~0.748723 cols=1018 t=13s
+it=  9 minSimple=0.749660 slack=0.00e+00 maxred=3.224e-04 lb~0.749337 cols=1138 t=14s
+it= 10 minSimple=0.749546 slack=0.00e+00 maxred=1.667e-04 lb~0.749379 cols=1193 t=15s
+it= 11 minSimple=0.749500 slack=0.00e+00 maxred=8.979e-05 lb~0.749410 cols=1232 t=17s
+it= 12 minSimple=0.749498 slack=0.00e+00 maxred=9.312e-06 lb~0.749488 cols=1267 t=18s
+FINAL N=9 S=P minSimple=0.749498 lb~0.749488 slack=0.0e+00 features=9 maxrss=111MB t=18s
+memcap: peak 86 MB rc=0
+       22.63 real        19.28 user        14.08 sys
+           116457472  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               34710  page reclaims
+                  29  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  17  signals received
+                  75  voluntary context switches
+               35481  involuntary context switches
+            76619289  instructions retired
+            59257443  cycles elapsed
+             2244944  peak memory footprint

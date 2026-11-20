@@ -1,0 +1,81 @@
+N=6 S=L4o features=24 patterns=6 B=256 steps=200
+it=  0 minSimple=0.967590 slack=6.95e-03 maxred=2.267e+01 lb~-21.700092 cols=1200 t=4s
+it=  1 minSimple=0.922005 slack=0.00e+00 maxred=5.870e-01 lb~0.335041 cols=1248 t=9s
+it=  2 minSimple=0.896483 slack=0.00e+00 maxred=2.942e-01 lb~0.602256 cols=1308 t=13s
+it=  3 minSimple=0.842014 slack=0.00e+00 maxred=4.896e-01 lb~0.352438 cols=1356 t=17s
+it=  4 minSimple=0.836143 slack=0.00e+00 maxred=3.469e-01 lb~0.489240 cols=1404 t=22s
+it=  5 minSimple=0.833367 slack=0.00e+00 maxred=1.990e-01 lb~0.634358 cols=1452 t=26s
+it=  6 minSimple=0.826199 slack=0.00e+00 maxred=2.098e-01 lb~0.616373 cols=1500 t=31s
+it=  7 minSimple=0.814948 slack=0.00e+00 maxred=1.559e-01 lb~0.659085 cols=1548 t=38s
+it=  8 minSimple=0.810553 slack=0.00e+00 maxred=1.259e-01 lb~0.684650 cols=1596 t=46s
+it=  9 minSimple=0.803750 slack=0.00e+00 maxred=2.535e-01 lb~0.550247 cols=1644 t=54s
+it= 10 minSimple=0.794397 slack=0.00e+00 maxred=1.635e-01 lb~0.630922 cols=1692 t=62s
+it= 11 minSimple=0.793030 slack=0.00e+00 maxred=9.148e-02 lb~0.701550 cols=1728 t=72s
+it= 12 minSimple=0.790788 slack=0.00e+00 maxred=1.250e-01 lb~0.665832 cols=1776 t=81s
+it= 13 minSimple=0.790008 slack=0.00e+00 maxred=5.331e-02 lb~0.736695 cols=1824 t=89s
+it= 14 minSimple=0.788227 slack=0.00e+00 maxred=8.206e-02 lb~0.706170 cols=1872 t=97s
+it= 15 minSimple=0.787001 slack=0.00e+00 maxred=1.399e-01 lb~0.647147 cols=1920 t=105s
+it= 16 minSimple=0.786507 slack=0.00e+00 maxred=1.420e-01 lb~0.644551 cols=1956 t=112s
+it= 17 minSimple=0.786448 slack=0.00e+00 maxred=1.242e-01 lb~0.662211 cols=2004 t=117s
+it= 18 minSimple=0.785702 slack=0.00e+00 maxred=5.642e-02 lb~0.729278 cols=2052 t=122s
+it= 19 minSimple=0.785487 slack=0.00e+00 maxred=3.623e-02 lb~0.749256 cols=2100 t=127s
+it= 20 minSimple=0.785191 slack=0.00e+00 maxred=5.305e-02 lb~0.732137 cols=2148 t=131s
+it= 21 minSimple=0.784995 slack=0.00e+00 maxred=2.664e-02 lb~0.758355 cols=2196 t=135s
+it= 22 minSimple=0.784036 slack=0.00e+00 maxred=5.011e-02 lb~0.733926 cols=2244 t=140s
+it= 23 minSimple=0.783438 slack=0.00e+00 maxred=1.707e-02 lb~0.766363 cols=2292 t=144s
+it= 24 minSimple=0.783128 slack=0.00e+00 maxred=1.647e-02 lb~0.766660 cols=2340 t=148s
+it= 25 minSimple=0.782712 slack=0.00e+00 maxred=9.901e-03 lb~0.772811 cols=2388 t=152s
+it= 26 minSimple=0.782407 slack=0.00e+00 maxred=1.202e-02 lb~0.770387 cols=2436 t=156s
+it= 27 minSimple=0.782283 slack=0.00e+00 maxred=1.231e-02 lb~0.769972 cols=2484 t=159s
+it= 28 minSimple=0.782230 slack=0.00e+00 maxred=9.443e-03 lb~0.772787 cols=2532 t=162s
+it= 29 minSimple=0.782156 slack=0.00e+00 maxred=1.247e-02 lb~0.769682 cols=2580 t=165s
+it= 30 minSimple=0.782095 slack=0.00e+00 maxred=5.296e-03 lb~0.776799 cols=2628 t=170s
+it= 31 minSimple=0.781427 slack=0.00e+00 maxred=5.218e-03 lb~0.776209 cols=2676 t=174s
+it= 32 minSimple=0.781374 slack=0.00e+00 maxred=9.167e-03 lb~0.772207 cols=2724 t=178s
+it= 33 minSimple=0.781228 slack=0.00e+00 maxred=4.808e-03 lb~0.776420 cols=2772 t=182s
+it= 34 minSimple=0.781160 slack=0.00e+00 maxred=3.135e-03 lb~0.778025 cols=2820 t=186s
+it= 35 minSimple=0.781136 slack=0.00e+00 maxred=3.687e-03 lb~0.777449 cols=2868 t=190s
+it= 36 minSimple=0.781118 slack=0.00e+00 maxred=2.997e-03 lb~0.778121 cols=2916 t=194s
+it= 37 minSimple=0.781075 slack=0.00e+00 maxred=4.743e-03 lb~0.776332 cols=2964 t=198s
+it= 38 minSimple=0.781026 slack=0.00e+00 maxred=2.298e-03 lb~0.778728 cols=3012 t=202s
+it= 39 minSimple=0.780970 slack=0.00e+00 maxred=1.095e-03 lb~0.779874 cols=3060 t=207s
+it= 40 minSimple=0.780930 slack=0.00e+00 maxred=1.466e-03 lb~0.779463 cols=3108 t=211s
+it= 41 minSimple=0.780880 slack=0.00e+00 maxred=8.198e-04 lb~0.780060 cols=3156 t=215s
+it= 42 minSimple=0.780856 slack=0.00e+00 maxred=7.316e-04 lb~0.780124 cols=3204 t=219s
+it= 43 minSimple=0.780848 slack=0.00e+00 maxred=6.124e-04 lb~0.780236 cols=3252 t=224s
+it= 44 minSimple=0.780843 slack=0.00e+00 maxred=5.646e-04 lb~0.780279 cols=3300 t=230s
+it= 45 minSimple=0.780784 slack=0.00e+00 maxred=1.404e-03 lb~0.779379 cols=3348 t=236s
+it= 46 minSimple=0.780774 slack=0.00e+00 maxred=6.012e-04 lb~0.780173 cols=3396 t=244s
+it= 47 minSimple=0.780772 slack=0.00e+00 maxred=4.552e-04 lb~0.780317 cols=3444 t=251s
+it= 48 minSimple=0.780753 slack=0.00e+00 maxred=2.898e-04 lb~0.780463 cols=3492 t=257s
+it= 49 minSimple=0.780742 slack=0.00e+00 maxred=3.367e-04 lb~0.780405 cols=3540 t=265s
+it= 50 minSimple=0.780739 slack=0.00e+00 maxred=3.318e-04 lb~0.780407 cols=3588 t=273s
+it= 51 minSimple=0.780735 slack=0.00e+00 maxred=1.774e-04 lb~0.780557 cols=3636 t=280s
+it= 52 minSimple=0.780733 slack=0.00e+00 maxred=1.680e-04 lb~0.780565 cols=3684 t=287s
+it= 53 minSimple=0.780726 slack=0.00e+00 maxred=1.476e-04 lb~0.780578 cols=3732 t=293s
+it= 54 minSimple=0.780704 slack=0.00e+00 maxred=5.399e-04 lb~0.780164 cols=3780 t=299s
+it= 55 minSimple=0.780701 slack=0.00e+00 maxred=7.804e-05 lb~0.780623 cols=3828 t=305s
+it= 56 minSimple=0.780701 slack=0.00e+00 maxred=6.978e-05 lb~0.780631 cols=3876 t=314s
+it= 57 minSimple=0.780699 slack=0.00e+00 maxred=5.942e-05 lb~0.780639 cols=3924 t=320s
+it= 58 minSimple=0.780698 slack=0.00e+00 maxred=5.594e-05 lb~0.780642 cols=3972 t=326s
+it= 59 minSimple=0.780697 slack=0.00e+00 maxred=3.813e-05 lb~0.780659 cols=4020 t=331s
+FINAL N=6 S=L4o minSimple=0.780697 lb~0.780659 slack=0.0e+00 features=24 maxrss=113MB t=331s
+memcap: peak 83 MB rc=0
+      337.42 real       263.01 user       174.20 sys
+           118505472  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              304216  page reclaims
+                 403  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 251  signals received
+                1003  voluntary context switches
+              752709  involuntary context switches
+           374257315  instructions retired
+           454814414  cycles elapsed
+             2310480  peak memory footprint

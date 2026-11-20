@@ -1,0 +1,20 @@
+kappa = 3.34, degree 64, r = 2, theta = 0.2499: Wirtinger h1 = 0.98707445 ; rational Arb-valid J=4 form: h4 = 1.00141933 at v = 1.362816
+       36.13 real        18.54 user         1.05 sys
+           160776192  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               20052  page reclaims
+                1158  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  29  messages sent
+                  25  messages received
+                   1  signals received
+                1618  voluntary context switches
+               42927  involuntary context switches
+           533122778  instructions retired
+           322378601  cycles elapsed
+            38978088  peak memory footprint
+memcap: peak 125 MB rc=0

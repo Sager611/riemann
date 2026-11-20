@@ -1,0 +1,33 @@
+kappa=3.3300 J=3: h1=0.986678 hJ=0.988107 (SDP 0.0118)
+kappa=3.3300 J=4: h1=0.986678 hJ=1.001117 (SDP -0.00107)
+kappa=3.3300 J=5: h1=0.986678 hJ=1.012794 (SDP -0.0116)
+kappa=3.3300 J=6: h1=0.986678 hJ=1.022013 (SDP -0.0204)
+kappa=3.3600 J=3: h1=0.963350 hJ=0.964796 (SDP 0.0353)
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreShape/sdpcut.py:39: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  pr.solve(solver=cp.CLARABEL)
+kappa=3.3600 J=4: h1=0.963350 hJ=0.979091 (SDP 0.0203)
+kappa=3.3600 J=5: h1=0.963350 hJ=0.991470 (SDP 0.00783)
+kappa=3.3600 J=6: h1=0.963350 hJ=1.000699 (SDP -0.000636)
+kappa=3.3900 J=3: h1=0.940961 hJ=0.942023 (SDP 0.0583)
+kappa=3.3900 J=4: h1=0.940961 hJ=0.957971 (SDP 0.0413)
+kappa=3.3900 J=5: h1=0.940961 hJ=0.971038 (SDP 0.0269)
+kappa=3.3900 J=6: h1=0.940961 hJ=0.980376 (SDP 0.0186)
+      764.48 real       477.86 user         9.06 sys
+           260849664  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               72141  page reclaims
+                 826  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 204  voluntary context switches
+             1068158  involuntary context switches
+           477666990  instructions retired
+           243280910  cycles elapsed
+            38371904  peak memory footprint
+memcap: peak 216 MB rc=0

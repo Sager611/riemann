@@ -1,0 +1,22 @@
+N=6 M=18 sets=P world=on rows=6 rays=0
+on it=1 val=0.837345 slack=0.0e+00 cols=2920 priced=2920 minrc=0.00e+00 t=1s
+RESULT N=6 M=18 sets=P world=on rays=False: minSimpleOn=0.837345 slack=0.0e+00 supp=7 mass on/off=1.0000/0.00e+00 raycols=0 maxrss=83MB t=1s
+memcap: peak 0 MB rc=0
+        9.94 real         2.26 user         5.08 sys
+            86966272  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               17942  page reclaims
+                  47  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   7  signals received
+                 576  voluntary context switches
+               15143  involuntary context switches
+            61924505  instructions retired
+            43935363  cycles elapsed
+             2261328  peak memory footprint

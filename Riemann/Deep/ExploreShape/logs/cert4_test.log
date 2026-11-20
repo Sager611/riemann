@@ -1,0 +1,25 @@
+rational form: a = ['-5899179108889603/6134092019850000', '1', '14789027537/948575124080', '-4037122085/176350902122', '1982999731/771179571628'] phi12 = 29530908755/835123073244 phi32 = 4037122085/176350902122
+(1) p(1) = 0.03356589625505677 > 0: True ; roots of p: [('[-5.441011', '0'), ('[0.9655406', '0'), ('[6.6891401', '[5.1425882'), ('[6.6891401', '[-5.142588')] ; real roots >= 1: 0
+(2) n3 = -7.820259556775944e-10 > 0: False ; real roots of N: ['0', '[1.285642407', '[11082146.32'] ; X_N upper = [11082146.324287276483306402567052365610 +/- 9.63e-32]
+  FAIL cell 0 [+/- 0.0167] nan nan
+(3) g* = 0.000943708643138155 ; (4) cells 200 K 3330 : min lower S_odd (nan, 0.008795331005504793)  S_even (nan, 0.008795331005504793)
+CERTIFIED per-gap validity: False
+        0.75 real         0.28 user         0.14 sys
+            35045376  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                5461  page reclaims
+                 488  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  35  voluntary context switches
+                1368  involuntary context switches
+           409437964  instructions retired
+           185875634  cycles elapsed
+            14909944  peak memory footprint
+memcap: peak 0 MB rc=0

@@ -1,0 +1,9 @@
+N=5 S=L4 features=23 patterns=5 B=256 steps=200
+it=  0 minSimple=0.881879 slack=0.00e+00 maxred=1.796e-01 lb~0.702309 cols=1000 t=4s
+it=  1 minSimple=0.875537 slack=0.00e+00 maxred=1.745e-01 lb~0.701008 cols=1048 t=7s
+it=  2 minSimple=0.864902 slack=0.00e+00 maxred=2.664e-01 lb~0.598541 cols=1084 t=11s
+it=  3 minSimple=0.861702 slack=0.00e+00 maxred=1.612e-01 lb~0.700527 cols=1120 t=14s
+it=  4 minSimple=0.850782 slack=0.00e+00 maxred=3.036e-01 lb~0.547156 cols=1156 t=18s
+it=  5 minSimple=0.841012 slack=0.00e+00 maxred=1.554e-01 lb~0.685616 cols=1192 t=21s
+it=  6 minSimple=0.833359 slack=0.00e+00 maxred=6.489e-02 lb~0.768467 cols=1228 t=24s
+it=  7 minSimple=0.830621 slack=0.00e+00 maxred=1.046e-01 lb~0.726061 cols=1264 t=28s

@@ -1,0 +1,4 @@
+FINAL N=4 S=L4o minSimple=0.816569 lb~0.816569 slack=0.0e+00 features=9 maxrss=83MB t=59s memcap: peak 60 MB rc=0             87638016  maximum resident set size 
+FINAL N=4 S=L4 minSimple=0.841747 lb~0.841746 slack=0.0e+00 features=15 maxrss=90MB t=116s memcap: peak 67 MB rc=0             94519296  maximum resident set size 
+FINAL N=5 S=P minSimple=0.793924 lb~0.793924 slack=0.0e+00 features=5 maxrss=78MB t=16s memcap: peak 56 MB rc=0             82329600  maximum resident set size 
+FINAL N=5 S=L4o minSimple=0.795885 lb~0.795884 slack=0.0e+00 features=16 maxrss=97MB t=157s memcap: peak 75 MB rc=0            102268928  maximum resident set size 

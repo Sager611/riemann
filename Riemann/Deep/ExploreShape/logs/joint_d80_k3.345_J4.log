@@ -1,0 +1,22 @@
+  it 0: SDP value 0.00169643 -> h_J = 0.99836754 (v = 1.364160)
+  it 1: SDP value 0.0015716 -> h_J = 0.99837550 (v = 1.363136)
+r=2 d=80 kappa=3.3450 J=4: h1 (Wirtinger) = 0.98375802 ; h_J = 0.99837550  a = -0.96037 1 0.0149407 -0.0228412 0.00256012 phi = {(1, 2): 0.03592660344903162, (3, 2): 0.022841194146339536}
+       34.70 real        24.78 user         0.87 sys
+           179126272  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               21504  page reclaims
+                  44  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                  20  voluntary context switches
+               53895  involuntary context switches
+           471076750  instructions retired
+           246131157  cycles elapsed
+            37864000  peak memory footprint
+memcap: peak 126 MB rc=0

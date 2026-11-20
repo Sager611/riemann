@@ -1,0 +1,143 @@
+/Users/adriansager/playground/riemann/Riemann/Deep/NPAFals/b_cluster_search.py:27: RuntimeWarning: overflow encountered in exp
+  s = s0 / (1 + np.exp(-x[:J])); th = x[J:]; th = np.concatenate([[0.0], th[1:]])
+N=6 J=2 set=P word=(2, 4)|(6) s0=2: logQ=+3.038  s0=4: logQ=+4.982  s0=8: logQ=+8.973  s0=12: logQ=+12.969  [last shape s=[12.0, 12.0]]
+N=6 J=2 set=L4 word=(2, 4)|(6) s0=2: logQ=-0.000  s0=4: logQ=-0.000  s0=8: logQ=-0.000  s0=12: logQ=-0.000  [last shape s=[11.69, 10.84]]
+N=6 J=2 set=L4 word=(2, 2, 2)|(6) s0=2: logQ=+0.711  s0=4: logQ=+0.651  s0=8: logQ=+0.711  s0=12: logQ=+0.651  [last shape s=[11.53, 11.53]]
+N=6 J=2 set=L4 word=(1, 2, 3)|(6) s0=2: logQ=+1.678  s0=4: logQ=+1.678  s0=8: logQ=+1.516  s0=12: logQ=+1.516  [last shape s=[11.92, 11.92]]
+N=6 J=2 set=L4 word=(1, 1, 4)|(6) s0=2: logQ=+1.127  s0=4: logQ=+1.127  s0=8: logQ=+1.127  s0=12: logQ=+0.812  [last shape s=[10.76, 10.72]]
+memcap: peak 46 MB rc=0
+       46.42 real        30.13 user        23.54 sys
+            71335936  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               47991  page reclaims
+                  83  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  30  signals received
+                 632  voluntary context switches
+              100465  involuntary context switches
+            94509330  instructions retired
+            76684809  cycles elapsed
+             2163024  peak memory footprint
+/Users/adriansager/playground/riemann/Riemann/Deep/NPAFals/b_cluster_search.py:27: RuntimeWarning: overflow encountered in exp
+  s = s0 / (1 + np.exp(-x[:J])); th = x[J:]; th = np.concatenate([[0.0], th[1:]])
+N=6 J=3 set=L4 word=(2, 2, 2)|(6) s0=2: logQ=+1.747  s0=4: logQ=+1.746  s0=8: logQ=+1.746  s0=12: logQ=+1.746  [last shape s=[10.55, 10.55, 10.67]]
+N=6 J=3 set=L4 word=(1, 2, 3)|(6) s0=2: logQ=+2.409  s0=4: logQ=+2.409  s0=8: logQ=+2.354  s0=12: logQ=+2.353  [last shape s=[5.84, 5.71, 5.71]]
+N=6 J=3 set=L4 word=(1, 1, 4)|(6) s0=2: logQ=+1.878  s0=4: logQ=+1.878  s0=8: logQ=+1.774  s0=12: logQ=+1.774  [last shape s=[6.74, 6.72, 6.85]]
+memcap: peak 46 MB rc=0
+       80.91 real        64.46 user        42.06 sys
+            71352320  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               81654  page reclaims
+                  99  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  59  signals received
+                 226  voluntary context switches
+              207631  involuntary context switches
+           132737483  instructions retired
+           126566207  cycles elapsed
+             2277712  peak memory footprint
+/Users/adriansager/playground/riemann/Riemann/Deep/NPAFals/b_cluster_search.py:27: RuntimeWarning: overflow encountered in exp
+  s = s0 / (1 + np.exp(-x[:J])); th = x[J:]; th = np.concatenate([[0.0], th[1:]])
+N=7 J=2 set=L4 word=(2, 2, 2)|(6) s0=2: logQ=-0.530  s0=4: logQ=-0.530  s0=8: logQ=-0.530  s0=12: logQ=-0.530  [last shape s=[0.45, 0.0]]
+N=7 J=2 set=L4 word=(2, 2, 3)|(7) s0=2: logQ=+1.045  s0=4: logQ=+0.875  s0=8: logQ=+0.875  s0=12: logQ=+0.875  [last shape s=[11.51, 11.51]]
+memcap: peak 46 MB rc=0
+       28.96 real        19.32 user        14.29 sys
+            71352320  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               34098  page reclaims
+                  33  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  20  signals received
+                  75  voluntary context switches
+               69439  involuntary context switches
+            79854851  instructions retired
+            63744742  cycles elapsed
+             2179408  peak memory footprint
+/Users/adriansager/playground/riemann/Riemann/Deep/NPAFals/b_cluster_search.py:27: RuntimeWarning: overflow encountered in exp
+  s = s0 / (1 + np.exp(-x[:J])); th = x[J:]; th = np.concatenate([[0.0], th[1:]])
+N=7 J=3 set=L4 word=(2, 2, 2)|(6) s0=2: logQ=+0.272  s0=4: logQ=+0.272  s0=8: logQ=+0.272  s0=12: logQ=+0.272  [last shape s=[0.46, 0.37, 0.49]]
+N=7 J=3 set=L4 word=(2, 2, 3)|(7) s0=2: logQ=+2.057  s0=4: logQ=+1.485  s0=8: logQ=+2.060  s0=12: logQ=+1.355  [last shape s=[11.64, 11.92, 11.92]]
+memcap: peak 46 MB rc=0
+       63.45 real        48.83 user        31.90 sys
+            71254016  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               65737  page reclaims
+                  77  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  49  signals received
+                 177  voluntary context switches
+              171854  involuntary context switches
+           114283127  instructions retired
+           105633770  cycles elapsed
+             2228560  peak memory footprint
+/Users/adriansager/playground/riemann/Riemann/Deep/NPAFals/b_cluster_search.py:27: RuntimeWarning: overflow encountered in exp
+  s = s0 / (1 + np.exp(-x[:J])); th = x[J:]; th = np.concatenate([[0.0], th[1:]])
+N=8 J=4 set=L4 word=(2, 2, 3)|(7) s0=2: logQ=+1.059  s0=4: logQ=+1.059  s0=8: logQ=+1.059  s0=12: logQ=+0.533  [last shape s=[0.0, 0.46, 0.54, 0.0]]
+N=8 J=4 set=L4 word=(2, 3, 3)|(8) s0=2: logQ=+2.787  s0=4: logQ=+2.531  s0=8: logQ=+2.531  s0=12: logQ=+2.531  [last shape s=[11.91, 11.82, 11.53, 11.82]]
+N=8 J=4 set=L4 word=(1, 3, 4)|(8) s0=2: logQ=+2.839  s0=4: logQ=+2.852  s0=8: logQ=+2.386  s0=12: logQ=+2.547  [last shape s=[11.77, 11.69, 11.61, 11.69]]
+memcap: peak 46 MB rc=0
+      194.44 real       177.55 user       112.60 sys
+            71303168  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              200039  page reclaims
+                 326  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 160  signals received
+                1285  voluntary context switches
+              463404  involuntary context switches
+           260811056  instructions retired
+           316299806  cycles elapsed
+             2228560  peak memory footprint
+/Users/adriansager/playground/riemann/Riemann/Deep/NPAFals/b_cluster_search.py:27: RuntimeWarning: overflow encountered in exp
+  s = s0 / (1 + np.exp(-x[:J])); th = x[J:]; th = np.concatenate([[0.0], th[1:]])
+N=9 J=4 set=L4 word=(2, 3, 3)|(8) s0=2: logQ=+0.796  s0=4: logQ=+0.796  s0=8: logQ=+0.796  s0=12: logQ=+0.787  [last shape s=[0.43, 0.28, 0.0, 0.43]]
+N=9 J=4 set=L4 word=(2, 2, 4)|(8) s0=2: logQ=+1.933  s0=4: logQ=+1.933  s0=8: logQ=+1.924  s0=12: logQ=+1.933  [last shape s=[0.69, 0.65, 0.69, 0.65]]
+memcap: peak 46 MB rc=0
+      176.60 real       141.06 user        94.49 sys
+            71450624  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              166199  page reclaims
+                 372  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                 134  signals received
+                1140  voluntary context switches
+              414032  involuntary context switches
+           226565763  instructions retired
+           250179132  cycles elapsed
+             2326864  peak memory footprint

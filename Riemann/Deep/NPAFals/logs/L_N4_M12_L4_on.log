@@ -1,0 +1,22 @@
+N=4 M=12 sets=L4 world=on rows=15 rays=0
+on it=1 val=0.894590 slack=0.0e+00 cols=72 priced=72 minrc=0.00e+00 t=0s
+RESULT N=4 M=12 sets=L4 world=on rays=False: minSimpleOn=0.894590 slack=0.0e+00 supp=16 mass on/off=1.0000/0.00e+00 raycols=0 maxrss=70MB t=0s
+memcap: peak 0 MB rc=0
+        9.80 real         1.60 user         5.05 sys
+            73613312  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               17020  page reclaims
+                  82  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   6  signals received
+                 587  voluntary context switches
+               12561  involuntary context switches
+            62965151  instructions retired
+            45341132  cycles elapsed
+             2163024  peak memory footprint

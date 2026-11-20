@@ -1,0 +1,8 @@
+kappa=3.3200 J=4 N=16 nsig=30: Wirtinger m2-1 = 0.0053592 ; J-value = -0.0082227 (optimal)
+  a = -0.964866 1 0.0162092 -0.0224276 0.00251648  phi = {(1, 2): 0.033686, (3, 2): 0.022428}
+memcap: peak 33 MB rc=0
+memcap: peak 294 MB KILLED MEM>290MB rc=137
+memcap: peak 484 MB KILLED MEM>290MB rc=137
+kappa=3.3200 J=3 N=24 nsig=30: Wirtinger m2-1 = 0.0053592 ; J-value = 0.0038985 (optimal)
+  a = -0.981529 1 -0.0132794 0.00137093  phi = {(1, 2): 0.013279}
+memcap: peak 288 MB rc=0

@@ -1,0 +1,23 @@
+kappa=3.3200 J=4 N=10 nsig=80: Wirtinger m2-1 = 0.0053592 ; J-value = -0.0082384 (optimal)
+  a = -0.964837 1 0.0161828 -0.0224268 0.00251681  phi = {(1, 2): 0.033689, (3, 2): 0.022427}
+memcap: peak 31 MB rc=0
+memcap: peak 644 MB KILLED MEM>290MB rc=137
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreShape/sdpJ.py:34: RuntimeWarning: invalid value encountered in sqrt
+  T = U / np.sqrt(ev)
+Traceback (most recent call last):
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/ExploreShape/sdpJ.py", line 59, in <module>
+    main()
+  File "/Users/adriansager/playground/riemann/Riemann/Deep/ExploreShape/sdpJ.py", line 53, in main
+    pr.solve(solver=cp.CLARABEL)
+  File "/Users/adriansager/.cache/uv/archive-v0/5W4ZP5Xs-8Y62IKxzMyqA/lib/python3.12/site-packages/cvxpy/problems/problem.py", line 687, in solve
+    return solve_func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/5W4ZP5Xs-8Y62IKxzMyqA/lib/python3.12/site-packages/cvxpy/problems/problem.py", line 1144, in _solve
+    solution = solving_chain.solve_via_data(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/adriansager/.cache/uv/archive-v0/5W4ZP5Xs-8Y62IKxzMyqA/lib/python3.12/site-packages/cvxpy/reductions/solvers/solving_chain.py", line 564, in solve_via_data
+    _validate_problem_data(data)
+  File "/Users/adriansager/.cache/uv/archive-v0/5W4ZP5Xs-8Y62IKxzMyqA/lib/python3.12/site-packages/cvxpy/reductions/solvers/solving_chain.py", line 450, in _validate_problem_data
+    raise ValueError(
+ValueError: Problem data contains NaN or Inf. Check your parameter values and constants.
+memcap: peak 0 MB rc=1

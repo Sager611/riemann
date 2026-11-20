@@ -1,0 +1,6 @@
+RESULT N=4 M=48 sets=L4 world=on rays=False: minSimpleOn=0.844041 slack=0.0e+00 supp=16 mass on/off=1.0000/0.00e+00 raycols=0 maxrss=83MB t=1s
+memcap: peak 0 MB rc=0
+            87785472  maximum resident set size
+RESULT N=4 M=48 sets=L4 world=off rays=True: minSimpleOn=0.842988 slack=0.0e+00 supp=16 mass on/off=1.0000/0.00e+00 raycols=1 maxrss=91MB t=4s
+memcap: peak 0 MB rc=0
+            96206848  maximum resident set size

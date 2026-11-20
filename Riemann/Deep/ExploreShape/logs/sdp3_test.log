@@ -1,0 +1,23 @@
+Installed 16 packages in 253ms
+kappa=3.3200 m=(1.000000, 1.005359, 2.215188, 6.918582)  Wirtinger value m2-m0 = 0.005359
+N=12 nsig=30 smax=40 status=optimal  J=3 min value = 0.00335874
+  a = [-0.98165148  1.         -0.01335433  0.00133457] phi = 0.012856024131374095
+       33.19 real         6.73 user         1.65 sys
+           157089792  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               22829  page reclaims
+                 211  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  76  messages sent
+                 184  messages received
+                   1  signals received
+                2103  voluntary context switches
+               15081  involuntary context switches
+          1380228539  instructions retired
+           760573299  cycles elapsed
+            46236272  peak memory footprint
+memcap: peak 103 MB rc=0

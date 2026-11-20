@@ -1,0 +1,41 @@
+N=6 S=P features=6 patterns=6 B=256 steps=200
+it=  0 minSimple=0.869194 slack=0.00e+00 maxred=1.461e-01 lb~0.723093 cols=1200 t=1s
+it=  1 minSimple=0.781307 slack=0.00e+00 maxred=1.851e-02 lb~0.762796 cols=1236 t=3s
+it=  2 minSimple=0.780278 slack=0.00e+00 maxred=9.974e-03 lb~0.770304 cols=1284 t=5s
+it=  3 minSimple=0.779194 slack=0.00e+00 maxred=8.585e-03 lb~0.770608 cols=1332 t=6s
+it=  4 minSimple=0.778758 slack=0.00e+00 maxred=2.738e-03 lb~0.776020 cols=1380 t=7s
+it=  5 minSimple=0.778535 slack=0.00e+00 maxred=9.532e-04 lb~0.777582 cols=1416 t=8s
+it=  6 minSimple=0.778434 slack=0.00e+00 maxred=2.144e-03 lb~0.776291 cols=1452 t=9s
+it=  7 minSimple=0.778403 slack=0.00e+00 maxred=5.637e-04 lb~0.777840 cols=1488 t=10s
+it=  8 minSimple=0.778386 slack=0.00e+00 maxred=3.717e-04 lb~0.778014 cols=1524 t=11s
+it=  9 minSimple=0.778291 slack=0.00e+00 maxred=1.490e-04 lb~0.778142 cols=1560 t=12s
+it= 10 minSimple=0.778278 slack=0.00e+00 maxred=8.064e-05 lb~0.778197 cols=1589 t=13s
+it= 11 minSimple=0.778272 slack=0.00e+00 maxred=6.300e-05 lb~0.778209 cols=1621 t=14s
+it= 12 minSimple=0.778270 slack=0.00e+00 maxred=1.667e-05 lb~0.778253 cols=1648 t=15s
+it= 13 minSimple=0.778269 slack=0.00e+00 maxred=1.120e-05 lb~0.778258 cols=1677 t=16s
+it= 14 minSimple=0.778268 slack=0.00e+00 maxred=3.524e-06 lb~0.778265 cols=1712 t=17s
+it= 15 minSimple=0.778268 slack=0.00e+00 maxred=1.561e-06 lb~0.778267 cols=1745 t=18s
+it= 16 minSimple=0.778268 slack=0.00e+00 maxred=6.938e-07 lb~0.778267 cols=1774 t=19s
+it= 17 minSimple=0.778268 slack=0.00e+00 maxred=5.026e-07 lb~0.778267 cols=1803 t=20s
+it= 18 minSimple=0.778268 slack=0.00e+00 maxred=2.037e-07 lb~0.778267 cols=1827 t=21s
+it= 19 minSimple=0.778268 slack=0.00e+00 maxred=5.776e-08 lb~0.778268 cols=1852 t=22s
+FINAL N=6 S=P minSimple=0.778268 lb~0.778268 slack=0.0e+00 features=6 maxrss=79MB t=22s
+memcap: peak 56 MB rc=0
+       25.38 real        20.33 user        13.83 sys
+            83017728  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               34463  page reclaims
+                  33  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  20  signals received
+                  84  voluntary context switches
+               60790  involuntary context switches
+            78952790  instructions retired
+            63140417  cycles elapsed
+             2179408  peak memory footprint

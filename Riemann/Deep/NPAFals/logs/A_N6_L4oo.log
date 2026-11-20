@@ -1,0 +1,57 @@
+N=6 S=L4oo features=17 patterns=6 B=256 steps=200
+it=  0 minSimple=0.811187 slack=0.00e+00 maxred=2.692e-01 lb~0.541962 cols=4200 t=2s
+it=  1 minSimple=0.804874 slack=0.00e+00 maxred=6.096e+02 lb~-608.747140 cols=114 t=3s
+it=  2 minSimple=0.802766 slack=0.00e+00 maxred=7.618e+00 lb~-6.814767 cols=258 t=4s
+it=  3 minSimple=0.802644 slack=0.00e+00 maxred=8.869e+00 lb~-8.066714 cols=402 t=6s
+it=  4 minSimple=0.801063 slack=0.00e+00 maxred=1.176e+00 lb~-0.375278 cols=546 t=7s
+it=  5 minSimple=0.798603 slack=0.00e+00 maxred=6.189e-01 lb~0.179654 cols=690 t=9s
+it=  6 minSimple=0.797950 slack=0.00e+00 maxred=1.796e-01 lb~0.618398 cols=834 t=10s
+it=  7 minSimple=0.793381 slack=0.00e+00 maxred=6.148e-01 lb~0.178561 cols=954 t=11s
+it=  8 minSimple=0.790751 slack=0.00e+00 maxred=8.512e-02 lb~0.705633 cols=1074 t=13s
+it=  9 minSimple=0.787258 slack=0.00e+00 maxred=3.523e-01 lb~0.434929 cols=1170 t=14s
+it= 10 minSimple=0.785954 slack=0.00e+00 maxred=1.409e-01 lb~0.645021 cols=1290 t=16s
+it= 11 minSimple=0.785113 slack=0.00e+00 maxred=1.224e-01 lb~0.662751 cols=1386 t=17s
+it= 12 minSimple=0.784719 slack=0.00e+00 maxred=5.131e-02 lb~0.733413 cols=1482 t=19s
+it= 13 minSimple=0.783130 slack=0.00e+00 maxred=8.722e-02 lb~0.695912 cols=1578 t=20s
+it= 14 minSimple=0.781805 slack=0.00e+00 maxred=7.299e-02 lb~0.708811 cols=1674 t=22s
+it= 15 minSimple=0.781443 slack=0.00e+00 maxred=2.043e-02 lb~0.761017 cols=1770 t=23s
+it= 16 minSimple=0.780799 slack=0.00e+00 maxred=2.318e-02 lb~0.757621 cols=1866 t=25s
+it= 17 minSimple=0.780427 slack=0.00e+00 maxred=1.145e-02 lb~0.768977 cols=1962 t=26s
+it= 18 minSimple=0.780087 slack=0.00e+00 maxred=1.031e-02 lb~0.769777 cols=2058 t=28s
+it= 19 minSimple=0.779522 slack=0.00e+00 maxred=1.051e-02 lb~0.769017 cols=2154 t=29s
+it= 20 minSimple=0.779335 slack=0.00e+00 maxred=2.619e-03 lb~0.776716 cols=2250 t=31s
+it= 21 minSimple=0.779113 slack=0.00e+00 maxred=5.277e-03 lb~0.773836 cols=2346 t=32s
+it= 22 minSimple=0.779094 slack=0.00e+00 maxred=1.147e-03 lb~0.777947 cols=2442 t=34s
+it= 23 minSimple=0.779054 slack=0.00e+00 maxred=7.638e-04 lb~0.778290 cols=2538 t=35s
+it= 24 minSimple=0.779037 slack=0.00e+00 maxred=2.512e-03 lb~0.776525 cols=2634 t=37s
+it= 25 minSimple=0.779012 slack=0.00e+00 maxred=3.818e-04 lb~0.778631 cols=2730 t=38s
+it= 26 minSimple=0.779003 slack=0.00e+00 maxred=1.954e-04 lb~0.778808 cols=2826 t=40s
+it= 27 minSimple=0.778990 slack=0.00e+00 maxred=8.073e-04 lb~0.778183 cols=2922 t=42s
+it= 28 minSimple=0.778984 slack=0.00e+00 maxred=1.583e-04 lb~0.778826 cols=3018 t=43s
+it= 29 minSimple=0.778978 slack=0.00e+00 maxred=2.729e-04 lb~0.778705 cols=3114 t=45s
+it= 30 minSimple=0.778972 slack=0.00e+00 maxred=1.705e-04 lb~0.778801 cols=3186 t=46s
+it= 31 minSimple=0.778965 slack=0.00e+00 maxred=6.155e-05 lb~0.778903 cols=3282 t=48s
+it= 32 minSimple=0.778961 slack=0.00e+00 maxred=7.705e-05 lb~0.778884 cols=3354 t=50s
+it= 33 minSimple=0.778956 slack=0.00e+00 maxred=3.263e-05 lb~0.778924 cols=3450 t=51s
+it= 34 minSimple=0.778955 slack=0.00e+00 maxred=3.606e-05 lb~0.778919 cols=3546 t=53s
+it= 35 minSimple=0.778954 slack=0.00e+00 maxred=9.345e-06 lb~0.778945 cols=3642 t=56s
+FINAL N=6 S=L4oo minSimple=0.778954 lb~0.778945 slack=0.0e+00 features=17 maxrss=123MB t=56s
+memcap: peak 87 MB rc=0
+       61.79 real        56.56 user        37.48 sys
+           129564672  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               75343  page reclaims
+                  84  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                  48  signals received
+                 230  voluntary context switches
+               98355  involuntary context switches
+           120282050  instructions retired
+           118987606  cycles elapsed
+             2261328  peak memory footprint

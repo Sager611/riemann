@@ -1,0 +1,27 @@
+kappa=3.3400 J=3: h1=0.987074 hJ=0.988495 (SDP 0.0114)
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreShape/sdpcut.py:39: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  pr.solve(solver=cp.CLARABEL)
+kappa=3.3400 J=4: h1=0.987074 hJ=1.001440 (SDP -0.00138)
+kappa=3.3400 J=5: h1=0.987074 hJ=1.013200 (SDP -0.0119)
+kappa=3.3600 J=3: h1=0.971424 hJ=0.972889 (SDP 0.0271)
+kappa=3.3600 J=4: h1=0.971424 hJ=0.986656 (SDP 0.0129)
+kappa=3.3600 J=5: h1=0.971424 hJ=0.998872 (SDP 0.00105)
+      233.88 real       202.27 user         3.34 sys
+           237993984  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               29422  page reclaims
+                1070  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  30  messages sent
+                  27  messages received
+                   1  signals received
+                1400  voluntary context switches
+              328107  involuntary context switches
+           529618958  instructions retired
+           312904765  cycles elapsed
+            39715392  peak memory footprint
+memcap: peak 166 MB rc=0

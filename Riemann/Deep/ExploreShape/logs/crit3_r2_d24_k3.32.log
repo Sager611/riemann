@@ -1,0 +1,24 @@
+Wirtinger: h1 = 0.99466937 at v = 1.362022
+  start (0.00137, 4.84): h3 = 0.99604558
+  start (0.003, 4): h3 = 0.99604558
+  start (0.0007, 6): h3 = 0.99604558
+J=3: h3 = 0.99604558  a3=0.00132656 mu=4.85647 v=1.361787 gam=0.98659291
+      583.50 real       437.23 user         6.66 sys
+           117211136  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               13811  page reclaims
+                  73  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 486  voluntary context switches
+              856385  involuntary context switches
+           433463634  instructions retired
+           207515548  cycles elapsed
+            27263504  peak memory footprint
+memcap: peak 90 MB rc=0

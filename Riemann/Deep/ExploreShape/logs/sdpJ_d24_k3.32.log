@@ -1,0 +1,11 @@
+/Users/adriansager/playground/riemann/Riemann/Deep/ExploreShape/sdpJ.py:53: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  pr.solve(solver=cp.CLARABEL)
+kappa=3.3200 J=2 N=16 nsig=50: Wirtinger m2-1 = 0.0053592 ; J-value = 0.0053592 (optimal_inaccurate)
+  a = -1 1 2.41166e-11  phi = {}
+memcap: peak 40 MB rc=0
+kappa=3.3200 J=3 N=16 nsig=50: Wirtinger m2-1 = 0.0053592 ; J-value = 0.0038985 (optimal)
+  a = -0.981531 1 -0.0132782 0.00137079  phi = {(1, 2): 0.013277}
+memcap: peak 37 MB rc=0
+kappa=3.3200 J=4 N=16 nsig=50: Wirtinger m2-1 = 0.0053592 ; J-value = -0.0082265 (optimal)
+  a = -0.964845 1 0.0161632 -0.0224144 0.00251599  phi = {(1, 2): 0.033679, (3, 2): 0.022414}
+memcap: peak 34 MB rc=0
