@@ -1,0 +1,188 @@
+You are a statement-fidelity reviewer. Verdict-only task: do NOT run tools, do NOT read files, do NOT spawn subagents; everything needed is pasted below. Answer in <= 40 lines.
+Question: do the Lean definitions, named hypotheses and main theorem statements below faithfully formalize Theorem E1' as stated in REPORT.md (pasted), with the analytic inputs as named hypotheses matching FULLPROOF.md section 5 (pasted) and the SL / Wang statements as quoted? Check: ranges of theta and nu in each hypothesis vs the sources; whether any hypothesis is vacuous, contradictory or stronger than its source in a way not disclosed below; whether the conclusion matches the Theorem (liminf form, constants, direction of inequalities); the H4' interval vs the Arb ball; the compact-window step H1G/HCW and the eta arithmetic. Give verdict FAITHFUL or ISSUES (numbered, each with the exact fix).
+Disclosed design choices (judge whether acceptable): (a) conditional architecture: analytic inputs are hypotheses by design; (b) Fns: abstract elementary functions whose fields are Mathlib theorems (instance in an uncompiled file, as in the earlier E1Lean which a reviewer passed FAITHFUL); (c) Inputs.Moment and Inputs.cdet are opaque predicates/functions, meaning in docstrings; (d) H2' is applied wherever Thm 1.2's conclusion holds (MomentRange), not only in SL's printed nu-range (5): this is the audited content of SL section 4, as in E1Lean; (e) LiminfGe f a := forall eps>0, eventually a - eps <= f T.
+=== REPORT.md lines 1-17 (Theorem, Moment form, Inputs) ===
+THEOREM: a positive proportion of simple critical zeros in every (T, T + T^θ], θ > 371/750 = 0.494666… (< 1/2)
+
+# B3Cert — certificate below √T (node N8)
+b3cert (Orca), 20 Nov 2026, 04:23–05:25 UTC. Derivations FULLPROOF.md (§ numbers below); scripts code/, logs logs/; every run single-threaded under
+.scratch/memcap.sh 290 (peaks: float 139 MB, Λ-route 272/233 MB, Arb 18.6 MB; one float run killed at 309 MB, fixed, nothing from it used).
+
+## Theorem
+For every fixed θ ∈ (371/750, 1):  liminf_{T→∞} S(T, T^θ)/N(T, T^θ) ≥ h(θ; κ) ≥ h(371/750; κ) = 3.3546·10⁻⁵ > 0,
+S = simple zeros on β = 1/2 with T < γ ≤ T + T^θ, N = all zeros there (multiplicity), h(θ; k) = (3 + k − √((1 − k)(9 − k − 8c(θ))))/4,
+c(θ) = 2 − θ/2 − cot(θ/√2)/√2 (Wang), κ = κ(P, Q, R = 44/5, ν = 121/1000) = 0.08503876039176576024 (Arb), (P, Q) = SL's frozen EXP-010 detector (deg Q = 201).
+Moment form (E1-M′): SL Thm 1.2 (Gaussian-weighted shifted mollified second moment on windows T^θ, any fixed real Q with Q(0) = 1, error O(H/L))
+holds for every θ ∈ (1/3, 1) and 0 < ν < (3θ − 1)/4: the condition θ > 1/2 is removed.
+Before: E1 θ > 1/2; Wang 2609.07918 θ > 0.5501 (TeX l. 133); SL θ > 1/2; CeilAudit B3: θ > 0.49467 in floats only (reviewer GAP: uniform dual estimate unwritten).
+Inputs (audited earlier unless NEW): SL (10) exact Gaussian reduction, (12) Estermann FE, (14) dual Mellin form, residues l. 444–447 (E1Audit §1, end-to-end
+numerical Voronoi identity); E1 Steps 1, 2, 5 (E1Audit §2); Hankel bounds X^k∂^k a_± = O(1); Titchmarsh Lemma 4.4; SL l. 730–758 compact windows; SL Lemma 2.2
+(Young's diagonal, ν < 1/2); SL Lemma 4.2, Thm 1.3 (θ-free); SL Thm 5.1 with Wang's Thm local-pair (fixed 0 < λ < θ < 1, TeX l. 231–232) and the parity product.
+NEW: Lemma B (exact-profile dual bound, every θ), Lemma R (exact Mellin value of the exact profile), the §4 branch checks, the §8 Arb certificates.
+=== REPORT.md lines 36-39 (Arb step) ===
+5. Arb (§8; code/b3c_arb.py, logs/b3c_arb.log, 4000 bits, exact rationals, rerun identical): detector exactly admissible (P(0) = 0, P(1) = 1, Q(0) = 1,
+   Q(y) + Q(1 − y) ≡ 1); check κ(3/25, 177/20) = E1's κ1 to 30 digits; κ(121/1000, 44/5) = 0.0850387603917657602445070238 ± 5·10⁻³²;
+   (3·371/750 − 1)/4 = 121/1000 exactly; k*(371/750) = 0.0849914143497594430960, κ − k* = 4.7346·10⁻⁵ > 0; h(371/750; κ) = 3.354573606042305·10⁻⁵ > 0;
+   h(0.4947) = 7.0693·10⁻⁵, h(1/2) = 0.0059310; detector threshold θ_det = 0.494636567599178 ± 7·10⁻¹⁷ < 371/750 (the moment edge binds).
+=== FULLPROOF.md section 5 (lines 105-117) and section 8 conclusion (lines 179-181) ===
+## 5. Step (3): compact windows, and the chain to simple zeros
+SL l. 730–758 (profile-free): w_D = φ_{s0}*Σ_{j<D}(−s0²/4)^jw^{(2j)}/j!, s0 = T^{θ−η}; ‖w − w_D‖_∞ ≪_D T^{−2Dη}L^{2D+O(1)}; absolute coefficient norm O(H/s0);
+Gaussian moments of width s0 (centres T + O(H)) with error O(s0/L) or O(s0T^{−δ}) give O(H/L), O(HT^{−δ}); mass preserved exactly. The only input is the
+Gaussian moment at width s0 = T^{θ′}, θ′ := θ − η, which §§2–4 give whenever ν < (3θ′ − 1)/4 (θ′ > 1/3): E1-M at θ′ (all bounds of §§2–4 are uniform
+in the centre T′ ≍ T). Choice: ν = 121/1000; (3θ′ − 1)/4 > 121/1000 ⟺ θ′ > 371/750 = 0.494666…; for a given θ > 371/750 take η := (θ − 371/750)/2,
+D > (1 + ν − θ + δ)/(2η) fixed. SL's requirement "θ − η > 1/2" (l. 731) was only for the Taylor step and the j ≥ 1 residues: both are gone.
+Chain (E1 §3, E1A §3 rows unchanged, re-read for θ < 1/2): Thm 1.2 for Q = 1 and 1 + x^j ((Emean), l. 812–815: same P, R, Q(0) = 1) → Lemma 4.2 and Thm 1.3
+(l. 823–928: N(T, H) = (HL/2π)(1 + o(1)) and Backlund–Jensen O(L) hold for H = T^θ, every θ > 0; N(T+H) − N(T) = (H/2π)log(T/2π) + O(H²/T + log T)) → Thm 5.1
+(l. 932–963: Wang 2609.07918 Thm "local-pair", TeX l. 231–232, "Let 0 < λ < θ < 1 be fixed"; c(θ) defined for 0 < θ < 1, l. 125; c′(θ) = ½cot²(θ/√2) > 0,
+l. 129) → liminf S(T, T^θ)/N(T, T^θ) ≥ h(θ; κ), h(θ; k) = (3 + k − √((1 − k)(9 − k − 8c(θ))))/4, positive iff k > k*(θ) = 1 − 2/(2 − c(θ)).
+Detector: SL/EXP-010 frozen (P, Q) (exactly admissible: P(0) = 0, P(1) = 1, Q(0) = 1, Q(y) + Q(1 − y) ≡ 1), reused at ν = 121/1000, R = 44/5 (as nu12.py):
+κ = 1 − R^{−1}log c(P, Q, R, ν). Every input of this chain other than Thm 1.2 is θ-free on (0, 1).
+
+Conclusion. For fixed θ > 371/750: η := (θ − 371/750)/2 gives ν = 121/1000 < (3(θ − η) − 1)/4 (§5), so SL Thm 1.2 holds on (T, T + T^θ] with (P, Q, R = 44/5);
+SL Thm 5.1 then gives liminf S/N ≥ h(θ; κ) ≥ h(371/750; κ) = 3.3546·10⁻⁵ > 0 (h increasing in θ since c is).
+
+=== logs/b3c_arb.log line 3 ===
+nu = 121/1000, R = 44/5: c = [3138.99796501994347827760614809 +/- 1.36e-27]  kappa = [0.0850387603917657602445070238217 +/- 4.77e-32]
+=== E1Lean definitions reused unchanged (from its LEAN.md) ===
+## Definitions (verbatim; `variable (F : Fns) (I : Inputs)`; docstrings in the files)
+```lean
+noncomputable def cot (x : ℝ) : ℝ := F.cos x / F.sin x
+noncomputable def cW (θ : ℝ) : ℝ := 2 - θ / 2 - cot F (θ / F.sqrt 2) / F.sqrt 2
+noncomputable def hc (c k : ℝ) : ℝ := (3 + k - F.sqrt ((1 - k) * (9 - k - 8 * c))) / 4
+noncomputable def h (θ k : ℝ) : ℝ := hc F (cW F θ) k
+noncomputable def kstar (θ : ℝ) : ℝ := 1 - 2 / (2 - cW F θ)
+noncomputable def kappa (c R : ℝ) : ℝ := 1 - R⁻¹ * F.log c
+def LiminfGe (f : ℝ → ℝ) (a : ℝ) : Prop := ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, a - ε ≤ f T
+noncomputable def ratio (A N : ℝ → ℝ → ℝ) (θ : ℝ) : ℝ → ℝ := fun T => A T (F.rpow T θ) / N T (F.rpow T θ)
+noncomputable def qsum : List ℝ → ℕ → ℝ → ℝ
+  | [], _, _ => 0
+  | a :: as, j, y => a * (cheb (2 * j + 1) (1 - 2 * y) - (1 - 2 * y)) + qsum as (j + 1) y
+noncomputable def Qfam (xs : List ℝ) (y : ℝ) : ℝ := 1 - y + qsum xs 1 y
+noncomputable def Sfun (u : ℝ) : ℝ :=
+  u + u ^ 3 / 6 + u ^ 5 / 120 + u ^ 7 / 5040 + u ^ 9 / 362880 + u ^ 11 / 39916800 + u ^ 13 / 6227020800
+noncomputable def Pfam (r x : ℝ) : ℝ := Sfun (r * x) / Sfun r
+noncomputable def Q₁ : ℝ → ℝ := Qfam xs₁
+noncomputable def P₁ : ℝ → ℝ := Pfam (7707 / 10000)
+def Adm (R : ℝ) (P Q : ℝ → ℝ) : Prop := 0 < R ∧ IsPoly P ∧ IsPoly Q ∧ P 0 = 0 ∧ P 1 = 1 ∧ Q 0 = 1
+def MomentRange (θ ν : ℝ) : Prop := ∀ R P Q, Adm R P Q → I.Moment θ ν R P Q
+def H1 : Prop := ∀ θ ν : ℝ, 1 / 2 < θ → θ < 1 → 0 < ν → ν < (3 * θ - 1) / 4 → MomentRange I θ ν
+def H2 : Prop := ∀ (θ ν R : ℝ) (P Q : ℝ → ℝ), 1 / 2 < θ → θ < 1 → 0 < ν → ν < 1 / 2 → Adm R P Q →
+  (∃ C : ℝ, C ≠ 0 ∧ ∀ x, Q x + Q (1 - x) = C) → MomentRange I θ ν →
+  LiminfGe (ratio F I.O I.N θ) (kappa F (I.cdet P Q R ν) R)
+def H3 : Prop := ∀ θ k : ℝ, 1 / 2 < θ → θ < 1 → 0 ≤ k → k < 1 →
+  LiminfGe (ratio F I.O I.N θ) k → LiminfGe (ratio F I.S I.N θ) (h F θ k)
+def H4 : Prop := (3302286923204427565638 / 1000000000000000000 : ℝ) ≤ I.cdet P₁ Q₁ (177 / 20) (3 / 25) ∧
+  I.cdet P₁ Q₁ (177 / 20) (3 / 25) ≤ 3302286923204427565640 / 1000000000000000000
+noncomputable def κ₁ : ℝ := kappa F (I.cdet P₁ Q₁ (177 / 20) (3 / 25)) (177 / 20)
+noncomputable def Rroot (A b : ℝ) : ℝ := (4 - b - F.sqrt (b * (b + 8 * (A - 1)))) / 4
+def SL51Inputs (I : Inputs) (θ : ℝ) : Prop :=
+  ∃ (ι : Type) (Qf : ι → ℝ → ℝ → ℝ) (C : ι → ℝ),
+    (∃ T₀ : ℝ, ∀ T ≥ T₀, 0 < I.N T (F.rpow T θ) ∧ 0 ≤ I.S T (F.rpow T θ) ∧
+      I.O T (F.rpow T θ) ≤ I.N T (F.rpow T θ)) ∧
+    (∀ f, ∃ T₀ : ℝ, ∀ T ≥ T₀, 2 * (I.N T (F.rpow T θ) - I.S T (F.rpow T θ)) ^ 2 ≤
+      (Qf f T (F.rpow T θ) - I.S T (F.rpow T θ)) * (I.N T (F.rpow T θ) - I.O T (F.rpow T θ))) ∧
+    (∀ f, ∀ ε > 0, ∃ T₀ : ℝ, ∀ T ≥ T₀, ratio F (Qf f) I.N θ T ≤ C f + ε) ∧
+    (∀ δ > 0, ∃ f, C f ≤ 2 - cW F θ + δ)
+```
+`Inputs` = ⟨N, S, O : ℝ → ℝ → ℝ; Moment : ℝ → ℝ → ℝ → (ℝ → ℝ) → (ℝ → ℝ) → Prop; cdet : (ℝ → ℝ) → (ℝ → ℝ) → ℝ → ℝ → ℝ⟩ (abstract; meanings in Arch.lean docstrings). `IsPoly` = inductive closure of constants and x under +, × (= polynomial functions ℝ → ℝ). `cheb` = Chebyshev T_n by T₀ = 1, T₁ = x, T_{n+2} = 2xT_{n+1} − T_n. `xs₁` = the 100 x_j of params_exp010.json (set ν = 999/10000), verbatim.
+
+
+=== New Lean definitions with docstrings (E1PLean, Arch.lean and Window.lean) ===
+/-- (H1′) Theorem E1-M′ (REPORT 'Moment form'; FULLPROOF §§1–5, Lemma B, Lemma R, §4 branches): SL Thm 1.2's
+  conclusion for every θ ∈ (1/3, 1), 0 < ν < (3θ − 1)/4 and every admissible (R, P, Q). -/
+def H1P : Prop := ∀ θ ν : ℝ, 1 / 3 < θ → θ < 1 → 0 < ν → ν < (3 * θ - 1) / 4 → MomentRange I θ ν
+
+/-- (H2′) SL Thm 1.3 (Zenodo 23134787 v0.03, pdftotext l. 125–129) at every (θ, ν) where Thm 1.2's conclusion holds,
+  θ ∈ (0, 1): θ-free per FULLPROOF §5 l. 111–112, 116 (SL TeX l. 823–928: Lemma 4.2, Thm 1.3). -/
+def H2P : Prop := ∀ (θ ν R : ℝ) (P Q : ℝ → ℝ), 0 < θ → θ < 1 → 0 < ν → ν < 1 / 2 → Adm R P Q →
+  (∃ C : ℝ, C ≠ 0 ∧ ∀ x, Q x + Q (1 - x) = C) → MomentRange I θ ν →
+  LiminfGe (ratio F I.O I.N θ) (kappa F (I.cdet P Q R ν) R)
+
+/-- (H3′) SL Thm 5.1 (pdftotext l. 844–845; TeX l. 932–963), θ ∈ (0, 1): θ-free per FULLPROOF §5 l. 112–114, 116
+  (Wang 2609.07918 Thm local-pair, its TeX l. 231–232, 'Let 0 < λ < θ < 1 be fixed'). -/
+def H3P : Prop := ∀ θ k : ℝ, 0 < θ → θ < 1 → 0 ≤ k → k < 1 →
+  LiminfGe (ratio F I.O I.N θ) k → LiminfGe (ratio F I.S I.N θ) (h F θ k)
+
+/-- (H4′) Detector certificate (code/b3c_arb.py, logs/b3c_arb.log, Arb 4000 bits): c(P₁, Q₁, 44/5, 121/1000) ∈
+  [3138.997965019943478277, 3138.997965019943478278] ⊇ [3138.99796501994347827760614809 ± 1.36·10⁻²⁷]. -/
+def H4P : Prop := (3138997965019943478277 / 1000000000000000000 : ℝ) ≤ I.cdet P₁ Q₁ (44 / 5) (121 / 1000) ∧
+  I.cdet P₁ Q₁ (44 / 5) (121 / 1000) ≤ 3138997965019943478278 / 1000000000000000000
+
+/-- κ₂ = 1 − R⁻¹ log c(P₁, Q₁, R, ν) at R = 44/5, ν = 121/1000 (REPORT, Theorem). -/
+noncomputable def κ₂ : ℝ := kappa F (I.cdet P₁ Q₁ (44 / 5) (121 / 1000)) (44 / 5)
+
+
+/-- (H1G) E1-M′ in its Gaussian form (FULLPROOF §§2–4: Lemma B, Lemma R, branches; §5 l. 108–109): for θ′ ∈ (1/3, 1) and
+  0 < ν < (3θ′ − 1)/4, the Gaussian-weighted moment G θ′ ν R P Q (Gaussian of width T^θ′, uniformly in the centre
+  T′ ≍ T) holds for every admissible (R, P, Q). G is opaque; its meaning is this docstring. -/
+def H1G (G : ℝ → ℝ → ℝ → (ℝ → ℝ) → (ℝ → ℝ) → Prop) : Prop :=
+  ∀ θ ν : ℝ, 1 / 3 < θ → θ < 1 → 0 < ν → ν < (3 * θ - 1) / 4 → ∀ R P Q, Adm R P Q → G θ ν R P Q
+
+/-- (HCW) SL TeX l. 730–758, compact windows (profile-free; FULLPROOF §5 l. 106–110): the Gaussian moment at width
+  T^(θ − η), 0 < η < θ, gives SL Thm 1.2's conclusion at window T^θ (w_D = φ_{s0} * Σ_{j<D} …, D fixed). -/
+def HCW (G : ℝ → ℝ → ℝ → (ℝ → ℝ) → (ℝ → ℝ) → Prop) : Prop :=
+  ∀ θ η ν : ℝ, 0 < η → η < θ → θ < 1 → 0 < ν → ∀ R P Q, Adm R P Q → G (θ - η) ν R P Q → I.Moment θ ν R P Q
+
+
+=== New definitions verbatim (no docstrings) ===
+def H1P : Prop := ∀ θ ν : ℝ, 1 / 3 < θ → θ < 1 → 0 < ν → ν < (3 * θ - 1) / 4 → MomentRange I θ ν
+def H2P : Prop := ∀ (θ ν R : ℝ) (P Q : ℝ → ℝ), 0 < θ → θ < 1 → 0 < ν → ν < 1 / 2 → Adm R P Q →
+  (∃ C : ℝ, C ≠ 0 ∧ ∀ x, Q x + Q (1 - x) = C) → MomentRange I θ ν →
+  LiminfGe (ratio F I.O I.N θ) (kappa F (I.cdet P Q R ν) R)
+def H3P : Prop := ∀ θ k : ℝ, 0 < θ → θ < 1 → 0 ≤ k → k < 1 →
+  LiminfGe (ratio F I.O I.N θ) k → LiminfGe (ratio F I.S I.N θ) (h F θ k)
+def H4P : Prop := (3138997965019943478277 / 1000000000000000000 : ℝ) ≤ I.cdet P₁ Q₁ (44 / 5) (121 / 1000) ∧
+  I.cdet P₁ Q₁ (44 / 5) (121 / 1000) ≤ 3138997965019943478278 / 1000000000000000000
+noncomputable def κ₂ : ℝ := kappa F (I.cdet P₁ Q₁ (44 / 5) (121 / 1000)) (44 / 5)
+noncomputable def trivialInputsP : Inputs :=
+  ⟨fun _ _ => 1, fun _ _ => 1, fun _ _ => 1, fun _ _ _ _ _ => True,
+    fun _ _ _ _ => 6277995930039886956555 / 2000000000000000000⟩
+def H1G (G : ℝ → ℝ → ℝ → (ℝ → ℝ) → (ℝ → ℝ) → Prop) : Prop :=
+  ∀ θ ν : ℝ, 1 / 3 < θ → θ < 1 → 0 < ν → ν < (3 * θ - 1) / 4 → ∀ R P Q, Adm R P Q → G θ ν R P Q
+def HCW (G : ℝ → ℝ → ℝ → (ℝ → ℝ) → (ℝ → ℝ) → Prop) : Prop :=
+  ∀ θ η ν : ℝ, 0 < η → η < θ → θ < 1 → 0 < ν → ∀ R P Q, Adm R P Q → G (θ - η) ν R P Q → I.Moment θ ν R P Q
+
+=== Main statements (verbatim, proofs compile; variable (F : Fns) (I : Inputs); all sorry-free, #print axioms = [propext, Classical.choice, Quot.sound]) ===
+theorem nu_edge_iff (θ : ℝ) : (121 / 1000 : ℝ) < (3 * θ - 1) / 4 ↔ 371 / 750 < θ
+theorem nu_edge_eq : (3 * (371 / 750 : ℝ) - 1) / 4 = 121 / 1000
+theorem exponent_edge (θ : ℝ) : 1 / 2 + 2 * (121 / 1000 : ℝ) - 3 * θ / 2 < 0 ↔ 371 / 750 < θ
+theorem theoremE1P (h1 : H1P I) (h2 : H2P F I) (h3 : H3P F I) (h4 : H4P I) (θ : ℝ) (hθ1 : 371 / 750 < θ)
+    (hθ2 : θ < 1) :
+    LiminfGe (ratio F I.S I.N θ) (h F θ (κ₂ F I)) ∧ h F (371 / 750) (κ₂ F I) ≤ h F θ (κ₂ F I) ∧
+      (0.0000335 : ℝ) < h F (371 / 750) (κ₂ F I)
+theorem kappa2_gt_kstar (h4 : H4P I) {θ : ℝ} (hθ1 : 371 / 750 ≤ θ) (hθ2 : θ ≤ 1) :
+    0 < κ₂ F I - kstar F (371 / 750) ∧ kstar F θ < κ₂ F I
+theorem e1p_enclosures (h4 : H4P I) :
+    (-1857718405 / 10000000000 : ℝ) ≤ cW F (371 / 750) ∧ cW F (371 / 750) ≤ (-18577184 / 100000000 : ℝ) ∧
+    (850387602 / 10000000000 : ℝ) ≤ κ₂ F I ∧ κ₂ F I ≤ 850387611 / 10000000000 ∧
+    (849914142 / 10000000000 : ℝ) ≤ kstar F (371 / 750) ∧ kstar F (371 / 750) ≤ 849914146 / 10000000000 ∧
+    (0.000033545 : ℝ) < h F (371 / 750) (κ₂ F I) ∧ h F (371 / 750) (κ₂ F I) ≤ 0.000033547 ∧
+    (0.000047345 : ℝ) < κ₂ F I - kstar F (371 / 750) ∧ κ₂ F I - kstar F (371 / 750) ≤ 0.000047347
+theorem inputs_consistentP : H1P trivialInputsP ∧ H2P F trivialInputsP ∧ H3P F trivialInputsP ∧ H4P trivialInputsP
+theorem eta_edge {θ : ℝ} (hθ : 371 / 750 < θ) :
+    0 < (θ - 371 / 750) / 2 ∧ (θ - 371 / 750) / 2 < θ ∧ 371 / 750 < θ - (θ - 371 / 750) / 2 ∧
+      (121 / 1000 : ℝ) < (3 * (θ - (θ - 371 / 750) / 2) - 1) / 4
+theorem eta_step {θ ν : ℝ} (hν0 : 0 < ν) (hν : ν < (3 * θ - 1) / 4) :
+    0 < (θ - (4 * ν + 1) / 3) / 2 ∧ (θ - (4 * ν + 1) / 3) / 2 < θ ∧
+      1 / 3 < θ - (θ - (4 * ν + 1) / 3) / 2 ∧ ν < (3 * (θ - (θ - (4 * ν + 1) / 3) / 2) - 1) / 4
+theorem H1P_of_gauss (G : ℝ → ℝ → ℝ → (ℝ → ℝ) → (ℝ → ℝ) → Prop) (hG : H1G G) (hW : HCW I G) : H1P I
+theorem theoremE1P_gauss (F : Fns) (G : ℝ → ℝ → ℝ → (ℝ → ℝ) → (ℝ → ℝ) → Prop) (hG : H1G G) (hW : HCW I G)
+    (h2 : H2P F I) (h3 : H3P F I) (h4 : H4P I) (θ : ℝ) (hθ1 : 371 / 750 < θ) (hθ2 : θ < 1) :
+    LiminfGe (ratio F I.S I.N θ) (h F θ (κ₂ F I)) ∧ h F (371 / 750) (κ₂ F I) ≤ h F θ (κ₂ F I) ∧
+      (0.0000335 : ℝ) < h F (371 / 750) (κ₂ F I)
+theorem gauss_consistent : H1G (fun _ _ _ _ _ => True) ∧ HCW trivialInputsP (fun _ _ _ _ _ => True)
+theorem H3P_of_inputs (I : Inputs) (hin : ∀ θ : ℝ, 0 < θ → θ < 1 → SL51Inputs F I θ) : H3P F I
+theorem theoremE1P_parity (I : Inputs) (h1 : H1P I) (h2 : H2P F I) (hin : ∀ θ : ℝ, 0 < θ → θ < 1 → SL51Inputs F I θ)
+    (h4 : H4P I) (θ : ℝ) (hθ1 : 371 / 750 < θ) (hθ2 : θ < 1) :
+    LiminfGe (ratio F I.S I.N θ) (h F θ (κ₂ F I)) ∧ h F (371 / 750) (κ₂ F I) ≤ h F θ (κ₂ F I) ∧
+      (0.0000335 : ℝ) < h F (371 / 750) (κ₂ F I)
+theorem theoremE1P_fine (I : Inputs) (G : ℝ → ℝ → ℝ → (ℝ → ℝ) → (ℝ → ℝ) → Prop) (hG : H1G G) (hW : HCW I G)
+    (h2 : H2P F I) (hin : ∀ θ : ℝ, 0 < θ → θ < 1 → SL51Inputs F I θ) (h4 : H4P I) (θ : ℝ) (hθ1 : 371 / 750 < θ)
+    (hθ2 : θ < 1) :
+    LiminfGe (ratio F I.S I.N θ) (h F θ (κ₂ F I)) ∧ h F (371 / 750) (κ₂ F I) ≤ h F θ (κ₂ F I) ∧
+      (0.0000335 : ℝ) < h F (371 / 750) (κ₂ F I)
+theorem detector_threshold (h4 : H4P I) :
+    kstar F (4946366 / 10000000) < κ₂ F I ∧ κ₂ F I < kstar F (4946365 / 10000000) ∧
+    (∀ θ : ℝ, 4946366 / 10000000 ≤ θ → θ ≤ 1 → 0 < h F θ (κ₂ F I)) ∧
+    (∀ θ : ℝ, 0 < θ → θ ≤ 4946365 / 10000000 → h F θ (κ₂ F I) ≤ 0) ∧ (4946366 / 10000000 : ℝ) < 371 / 750
+

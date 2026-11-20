@@ -1,0 +1,16 @@
+def H1P : Prop := ∀ θ ν : ℝ, 1 / 3 < θ → θ < 1 → 0 < ν → ν < (3 * θ - 1) / 4 → MomentRange I θ ν
+def H2P : Prop := ∀ (θ ν R : ℝ) (P Q : ℝ → ℝ), 0 < θ → θ < 1 → 0 < ν → ν < 1 / 2 → Adm R P Q →
+  (∃ C : ℝ, C ≠ 0 ∧ ∀ x, Q x + Q (1 - x) = C) → MomentRange I θ ν →
+  LiminfGe (ratio F I.O I.N θ) (kappa F (I.cdet P Q R ν) R)
+def H3P : Prop := ∀ θ k : ℝ, 0 < θ → θ < 1 → 0 ≤ k → k < 1 →
+  LiminfGe (ratio F I.O I.N θ) k → LiminfGe (ratio F I.S I.N θ) (h F θ k)
+def H4P : Prop := (3138997965019943478277 / 1000000000000000000 : ℝ) ≤ I.cdet P₁ Q₁ (44 / 5) (121 / 1000) ∧
+  I.cdet P₁ Q₁ (44 / 5) (121 / 1000) ≤ 3138997965019943478278 / 1000000000000000000
+noncomputable def κ₂ : ℝ := kappa F (I.cdet P₁ Q₁ (44 / 5) (121 / 1000)) (44 / 5)
+noncomputable def trivialInputsP : Inputs :=
+  ⟨fun _ _ => 1, fun _ _ => 1, fun _ _ => 1, fun _ _ _ _ _ => True,
+    fun _ _ _ _ => 6277995930039886956555 / 2000000000000000000⟩
+def H1G (G : ℝ → ℝ → ℝ → (ℝ → ℝ) → (ℝ → ℝ) → Prop) : Prop :=
+  ∀ θ ν : ℝ, 1 / 3 < θ → θ < 1 → 0 < ν → ν < (3 * θ - 1) / 4 → ∀ R P Q, Adm R P Q → G θ ν R P Q
+def HCW (G : ℝ → ℝ → ℝ → (ℝ → ℝ) → (ℝ → ℝ) → Prop) : Prop :=
+  ∀ θ η ν : ℝ, 0 < η → η < θ → θ < 1 → 0 < ν → ∀ R P Q, Adm R P Q → G (θ - η) ν R P Q → I.Moment θ ν R P Q

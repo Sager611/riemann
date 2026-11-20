@@ -1,0 +1,19 @@
+Riemann/Deep/SantiAudit/Lean/Defs rc=0 15s footprint=243MiB memcap: peak 170 MB
+Riemann/Deep/SantiAudit/Lean/Detector rc=0 15s footprint=252MiB memcap: peak 204 MB
+Riemann/Deep/SantiAudit/Lean/AlgebraH rc=0 19s footprint=252MiB memcap: peak 233 MB
+Riemann/Deep/SantiAudit/Lean/AlgebraC rc=0 41s footprint=278MiB memcap: peak 264 MB
+Riemann/Deep/SantiAudit/Lean/Numeric rc=0 16s footprint=265MiB memcap: peak 248 MB
+Riemann/Deep/SantiAudit/Lean/Kappa rc=0 20s footprint=248MiB memcap: peak 188 MB
+Riemann/Deep/SantiAudit/Lean/Arch rc=0 23s footprint=249MiB memcap: peak 214 MB
+Riemann/Deep/SantiAudit/Lean/Parity rc=0 49s footprint=286MiB memcap: peak 274 MB
+Riemann/Deep/SantiAudit/Lean/Bounds2 rc=0 38s footprint=273MiB memcap: peak 251 MB
+Riemann/Deep/B3Cert/Lean/Trig rc=0 17s footprint=258MiB memcap: peak 189 MB
+Riemann/Deep/B3Cert/Lean/Exp rc=0 74s footprint=254MiB memcap: peak 240 MB
+Riemann/Deep/B3Cert/Lean/Num rc=0 126s footprint=273MiB memcap: peak 248 MB
+Riemann/Deep/B3Cert/Lean/Arch rc=0 45s footprint=255MiB memcap: peak 233 MB
+Riemann/Deep/B3Cert/Lean/Window rc=0 27s footprint=247MiB memcap: peak 207 MB
+Riemann/Deep/B3Cert/Lean/Parity rc=0 9s footprint=239MiB memcap: peak 0 MB
+Riemann/Deep/B3Cert/Lean/DetTrig rc=0 9s footprint=255MiB memcap: peak 235 MB
+Riemann/Deep/B3Cert/Lean/Det rc=0 30s footprint=267MiB memcap: peak 249 MB
+Riemann/Deep/B3Cert/Lean/Check rc=0 18s footprint=238MiB memcap: peak 144 MB
+DONE

@@ -1,0 +1,19 @@
+       16.04 real         9.64 user         3.08 sys
+          1571864576  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              110044  page reclaims
+               26248  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                1077  voluntary context switches
+               28073  involuntary context switches
+         26958733822  instructions retired
+         20006710798  cycles elapsed
+           287343752  peak memory footprint
+memcap: peak 252 MB rc=0
