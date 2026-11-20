@@ -1,0 +1,91 @@
+ 0 t0 0.00000 tri 0.83890 A 0.83091 ray 0.00799 | pp torus max 0.83646 comp 0.00138 | LDP gap 27.4 0.04974 30 0.04545 | far slope 0.202
+ 1 t0 0.00250 tri 0.85001 A 0.84170 ray 0.00831 | pp torus max 0.84655 comp 0.00258 | LDP gap 27.4 0.04647 30 0.04206 | far slope 0.205
+ 2 t0 0.00500 tri 0.86967 A 0.86083 ray 0.00885 | pp torus max 0.86479 comp 0.00400 | LDP gap 27.4 0.04813 30 0.04355 | far slope 0.209
+ 3 t0 0.00750 tri 0.89579 A 0.88633 ray 0.00946 | pp torus max 0.88941 comp 0.00553 | LDP gap 27.4 0.05037 30 0.04551 | far slope 0.212
+ 4 t0 0.01000 tri 0.92004 A 0.91005 ray 0.00999 | pp torus max 0.91213 comp 0.00712 | LDP gap 27.4 0.05219 30 0.04707 | far slope 0.216
+ 5 t0 0.01250 tri 0.94170 A 0.93120 ray 0.01050 | pp torus max 0.93208 comp 0.00882 | LDP gap 27.4 0.05408 30 0.04876 | far slope 0.220
+ 6 t0 0.01500 tri 0.96512 A 0.95409 ray 0.01103 | pp torus max 0.95369 comp 0.01063 | LDP gap 27.4 0.05619 30 0.05066 | far slope 0.224
+ 7 t0 0.01750 tri 0.99275 A 0.98125 ray 0.01150 | pp torus max 0.97953 comp 0.01249 | LDP gap 27.4 0.05837 30 0.05252 | far slope 0.228
+ 8 t0 0.02000 tri 1.01299 A 0.99963 ray 0.01337 | pp torus max 0.99793 comp 0.01436 | LDP gap 27.4 0.05991 30 0.05389 | far slope 0.232
+ 9 t0 0.02250 tri 1.04182 A 1.02894 ray 0.01287 | pp torus max 1.02433 comp 0.01677 | LDP gap 27.4 0.06338 30 0.05708 | far slope 0.237
+10 t0 0.02500 tri 1.07325 A 1.05983 ray 0.01342 | pp torus max 1.05359 comp 0.01902 | LDP gap 27.4 0.06625 30 0.05958 | far slope 0.242
+11 t0 0.02750 tri 1.11263 A 1.09812 ray 0.01451 | pp torus max 1.08919 comp 0.02271 | LDP gap 27.4 0.07312 30 0.06605 | far slope 0.247
+12 t0 0.03000 tri 1.14206 A 1.12699 ray 0.01507 | pp torus max 1.11595 comp 0.02541 | LDP gap 27.4 0.07610 30 0.06873 | far slope 0.252
+13 t0 0.03250 tri 1.16791 A 1.15239 ray 0.01552 | pp torus max 1.13921 comp 0.02802 | LDP gap 27.4 0.07847 30 0.07085 | far slope 0.257
+14 t0 0.03500 tri 1.20224 A 1.18614 ray 0.01610 | pp torus max 1.17046 comp 0.03113 | LDP gap 27.4 0.08224 30 0.07425 | far slope 0.262
+15 t0 0.03750 tri 1.21915 A 1.20328 ray 0.01587 | pp torus max 1.18635 comp 0.03229 | LDP gap 27.4 0.08093 30 0.07273 | far slope 0.267
+16 t0 0.04000 tri 1.24777 A 1.23151 ray 0.01626 | pp torus max 1.21203 comp 0.03525 | LDP gap 27.4 0.08391 30 0.07543 | far slope 0.272
+17 t0 0.04250 tri 1.28681 A 1.26994 ray 0.01687 | pp torus max 1.24732 comp 0.03902 | LDP gap 27.4 0.08870 30 0.07979 | far slope 0.278
+18 t0 0.04500 tri 1.32240 A 1.30506 ray 0.01734 | pp torus max 1.27924 comp 0.04272 | LDP gap 27.4 0.09305 30 0.08376 | far slope 0.284
+19 t0 0.04750 tri 1.35752 A 1.33976 ray 0.01775 | pp torus max 1.31059 comp 0.04652 | LDP gap 27.4 0.09730 30 0.08763 | far slope 0.290
+20 t0 0.05000 tri 1.38579 A 1.36694 ray 0.01885 | pp torus max 1.33642 comp 0.04898 | LDP gap 27.4 0.10045 30 0.09051 | far slope 0.296
+21 t0 0.05125 tri 1.39755 A 1.37861 ray 0.01894 | pp torus max 1.34658 comp 0.05059 | LDP gap 27.4 0.10167 30 0.09162 | far slope 0.299
+22 t0 0.05250 tri 1.41495 A 1.39568 ray 0.01927 | pp torus max 1.36183 comp 0.05274 | LDP gap 27.4 0.10373 30 0.09351 | far slope 0.302
+23 t0 0.05375 tri 1.43412 A 1.41451 ray 0.01960 | pp torus max 1.37868 comp 0.05505 | LDP gap 27.4 0.10612 30 0.09572 | far slope 0.305
+24 t0 0.05500 tri 1.44902 A 1.42931 ray 0.01971 | pp torus max 1.39162 comp 0.05703 | LDP gap 27.4 0.10805 30 0.09750 | far slope 0.309
+25 t0 0.05625 tri 1.47280 A 1.45278 ray 0.02003 | pp torus max 1.41270 comp 0.05974 | LDP gap 27.4 0.11137 30 0.10056 | far slope 0.312
+26 t0 0.05750 tri 1.49806 A 1.47772 ray 0.02034 | pp torus max 1.43507 comp 0.06265 | LDP gap 27.4 0.11501 30 0.10393 | far slope 0.316
+27 t0 0.05875 tri 1.49589 A 1.46764 ray 0.02824 | pp torus max 1.42766 comp 0.06740 | LDP gap 27.4 0.11628 30 0.10558 | far slope 0.318
+28 t0 0.06000 tri 1.51138 A 1.48460 ray 0.02678 | pp torus max 1.44112 comp 0.06947 | LDP gap 27.4 0.11796 30 0.10711 | far slope 0.322
+29 t0 0.06125 tri 1.52646 A 1.49867 ray 0.02779 | pp torus max 1.45429 comp 0.07141 | LDP gap 27.4 0.11946 30 0.10845 | far slope 0.325
+30 t0 0.06250 tri 1.54002 A 1.51184 ray 0.02819 | pp torus max 1.46595 comp 0.07334 | LDP gap 27.4 0.12073 30 0.10960 | far slope 0.328
+31 t0 0.06375 tri 1.55482 A 1.52841 ray 0.02641 | pp torus max 1.47869 comp 0.07542 | LDP gap 27.4 0.12231 30 0.11104 | far slope 0.332
+32 t0 0.06500 tri 1.58743 A 1.55900 ray 0.02843 | pp torus max 1.50729 comp 0.07943 | LDP gap 27.4 0.12700 30 0.11537 | far slope 0.336
+33 t0 0.06625 tri 1.60078 A 1.57219 ray 0.02860 | pp torus max 1.51864 comp 0.08145 | LDP gap 27.4 0.12828 30 0.11653 | far slope 0.340
+34 t0 0.06750 tri 1.61532 A 1.58674 ray 0.02858 | pp torus max 1.53102 comp 0.08363 | LDP gap 27.4 0.12988 30 0.11799 | far slope 0.343
+35 t0 0.06875 tri 1.62959 A 1.60082 ray 0.02877 | pp torus max 1.54323 comp 0.08573 | LDP gap 27.4 0.13136 30 0.11934 | far slope 0.347
+36 t0 0.07000 tri 1.66449 A 1.63524 ray 0.02925 | pp torus max 1.57364 comp 0.09021 | LDP gap 27.4 0.13650 30 0.12410 | far slope 0.352
+37 t0 0.07125 tri 1.68020 A 1.65097 ray 0.02923 | pp torus max 1.58701 comp 0.09258 | LDP gap 27.4 0.13836 30 0.12581 | far slope 0.355
+38 t0 0.07250 tri 1.69441 A 1.66585 ray 0.02856 | pp torus max 1.59903 comp 0.09481 | LDP gap 27.4 0.13987 30 0.12719 | far slope 0.359
+39 t0 0.07375 tri 1.70818 A 1.67970 ray 0.02847 | pp torus max 1.61060 comp 0.09703 | LDP gap 27.4 0.14133 30 0.12853 | far slope 0.363
+40 t0 0.07500 tri 1.74633 A 1.71722 ray 0.02911 | pp torus max 1.64364 comp 0.10215 | LDP gap 27.4 0.14714 30 0.13392 | far slope 0.368
+41 t0 0.07625 tri 1.76159 A 1.73453 ray 0.02706 | pp torus max 1.65648 comp 0.10461 | LDP gap 27.4 0.14889 30 0.13554 | far slope 0.372
+42 t0 0.07750 tri 1.77575 A 1.74786 ray 0.02789 | pp torus max 1.66825 comp 0.10703 | LDP gap 27.4 0.15049 30 0.13701 | far slope 0.376
+43 t0 0.07875 tri 1.78936 A 1.76196 ray 0.02740 | pp torus max 1.67942 comp 0.10948 | LDP gap 27.4 0.15207 30 0.13849 | far slope 0.380
+44 t0 0.08000 tri 1.83243 A 1.80583 ray 0.02659 | pp torus max 1.71666 comp 0.11532 | LDP gap 27.4 0.15857 30 0.14451 | far slope 0.386
+45 t0 0.08125 tri 1.84472 A 1.81845 ray 0.02627 | pp torus max 1.72664 comp 0.11767 | LDP gap 27.4 0.15998 30 0.14583 | far slope 0.390
+46 t0 0.08250 tri 1.85896 A 1.83346 ray 0.02549 | pp torus max 1.73820 comp 0.12037 | LDP gap 27.4 0.16174 30 0.14748 | far slope 0.394
+47 t0 0.08375 tri 1.87216 A 1.84737 ray 0.02479 | pp torus max 1.74893 comp 0.12286 | LDP gap 27.4 0.16323 30 0.14886 | far slope 0.398
+48 t0 0.08500 tri 1.91669 A 1.89106 ray 0.02563 | pp torus max 1.78698 comp 0.12935 | LDP gap 27.4 0.17025 30 0.15541 | far slope 0.404
+49 t0 0.08625 tri 1.92955 A 1.90515 ray 0.02439 | pp torus max 1.79728 comp 0.13194 | LDP gap 27.4 0.17170 30 0.15677 | far slope 0.408
+50 t0 0.08750 tri 1.94390 A 1.92032 ray 0.02358 | pp torus max 1.80884 comp 0.13476 | LDP gap 27.4 0.17350 30 0.15846 | far slope 0.412
+51 t0 0.08875 tri 1.95707 A 1.93407 ray 0.02300 | pp torus max 1.81924 comp 0.13756 | LDP gap 27.4 0.17515 30 0.16003 | far slope 0.417
+52 t0 0.09000 tri 2.00840 A 1.98331 ray 0.02509 | pp torus max 1.86274 comp 0.14559 | LDP gap 27.4 0.18617 30 0.17043 | far slope 0.423
+53 t0 0.09125 tri 2.02406 A 1.99880 ray 0.02526 | pp torus max 1.87518 comp 0.14881 | LDP gap 27.4 0.18786 30 0.17201 | far slope 0.428
+54 t0 0.09250 tri 2.02432 A 1.99915 ray 0.02517 | pp torus max 1.87419 comp 0.15006 | LDP gap 27.4 0.18692 30 0.17115 | far slope 0.431
+55 t0 0.09375 tri 2.04983 A 2.02443 ray 0.02541 | pp torus max 1.89492 comp 0.15485 | LDP gap 27.4 0.19070 30 0.17471 | far slope 0.437
+56 t0 0.09500 tri 2.07673 A 2.05107 ray 0.02565 | pp torus max 1.91671 comp 0.15997 | LDP gap 27.4 0.19480 30 0.17858 | far slope 0.442
+57 t0 0.09625 tri 2.09773 A 2.07190 ray 0.02584 | pp torus max 1.93338 comp 0.16431 | LDP gap 27.4 0.19779 30 0.18141 | far slope 0.447
+58 t0 0.09750 tri 2.10394 A 2.07817 ray 0.02578 | pp torus max 1.93715 comp 0.16675 | LDP gap 27.4 0.19829 30 0.18193 | far slope 0.451
+59 t0 0.09875 tri 2.12532 A 2.09932 ray 0.02600 | pp torus max 1.95426 comp 0.17103 | LDP gap 27.4 0.20103 30 0.18450 | far slope 0.457
+60 t0 0.10000 tri 2.12249 A 2.09663 ray 0.02586 | pp torus max 1.95063 comp 0.17183 | LDP gap 27.4 0.19946 30 0.18305 | far slope 0.460
+61 t0 0.10125 tri 2.12832 A 2.10246 ray 0.02586 | pp torus max 1.95463 comp 0.17366 | LDP gap 27.4 0.19917 30 0.18278 | far slope 0.464
+62 t0 0.10250 tri 2.20452 A 2.18831 ray 0.01621 | pp torus max 2.01830 comp 0.18615 | LDP gap 27.4 0.21141 30 0.19425 | far slope 0.475
+63 t0 0.10375 tri 2.21529 A 2.19966 ray 0.01564 | pp torus max 2.02585 comp 0.18940 | LDP gap 27.4 0.21276 30 0.19557 | far slope 0.480
+64 t0 0.10500 tri 2.22528 A 2.21035 ray 0.01494 | pp torus max 2.03260 comp 0.19264 | LDP gap 27.4 0.21404 30 0.19683 | far slope 0.485
+65 t0 0.10625 tri 2.19842 A 2.17207 ray 0.02634 | pp torus max 2.00843 comp 0.18997 | LDP gap 27.4 0.20844 30 0.19159 | far slope 0.485
+66 t0 0.10750 tri 2.22598 A 2.19942 ray 0.02656 | pp torus max 2.02983 comp 0.19614 | LDP gap 27.4 0.21290 30 0.19585 | far slope 0.492
+base endpoint 0.10755086958424454
+gap274 new credit beyond Raymond: mean dS 0.1086; endpoint 0.10707133628499327 gain 4.795e-04
+gap274 half of it: endpoint 0.10731010412884912 gain 2.408e-04
+gap30 new credit beyond Raymond: mean dS 0.0970; endpoint 0.10712641381493623 gain 4.245e-04
+gap30 half of it: endpoint 0.10733784737535904 gain 2.130e-04
+      175.73 real       134.86 user         1.82 sys
+            70254592  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                7956  page reclaims
+                 126  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 126  voluntary context switches
+              227009  involuntary context switches
+           418671699  instructions retired
+           185631738  cycles elapsed
+            18809360  peak memory footprint
+memcap: peak 56 MB rc=0

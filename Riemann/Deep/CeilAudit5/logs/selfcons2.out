@@ -1,0 +1,36 @@
+ 0 beta 0.0039 M 1.2610 s 0.3140 ray 0.00799 | cr*(k=30) 0.05106 at x/X = 1.0059 (logN 27.7) | cr*(k=100) 0.04900 at x/X = 1.0051 (logN 28.8)
+ 6 beta 0.0020 M 1.3989 s 0.3490 ray 0.01103 | cr*(k=30) 0.05756 at x/X = 1.0065 (logN 27.8) | cr*(k=100) 0.05494 at x/X = 1.0060 (logN 28.9)
+12 beta 0.0078 M 1.5733 s 0.3903 ray 0.01507 | cr*(k=30) 0.07740 at x/X = 1.0077 (logN 28.0) | cr*(k=100) 0.07395 at x/X = 1.0071 (logN 29.1)
+18 beta 0.0020 M 1.7728 s 0.4423 ray 0.01734 | cr*(k=30) 0.09430 at x/X = 1.0083 (logN 28.0) | cr*(k=100) 0.08998 at x/X = 1.0077 (logN 29.2)
+24 beta 0.0039 M 1.9260 s 0.4796 ray 0.01971 | cr*(k=30) 0.10927 at x/X = 1.0091 (logN 28.1) | cr*(k=100) 0.10438 at x/X = 1.0083 (logN 29.2)
+30 beta 0.0039 M 2.0609 s 0.5132 ray 0.02819 | cr*(k=30) 0.12209 at x/X = 1.0088 (logN 28.1) | cr*(k=100) 0.11693 at x/X = 1.0081 (logN 29.2)
+36 beta 0.0078 M 2.2066 s 0.5473 ray 0.02925 | cr*(k=30) 0.13780 at x/X = 1.0091 (logN 28.1) | cr*(k=100) 0.13206 at x/X = 1.0086 (logN 29.3)
+42 beta 0.0078 M 2.3622 s 0.5859 ray 0.02789 | cr*(k=30) 0.15183 at x/X = 1.0093 (logN 28.1) | cr*(k=100) 0.14560 at x/X = 1.0086 (logN 29.3)
+48 beta 0.0156 M 2.5213 s 0.6205 ray 0.02563 | cr*(k=30) 0.17149 at x/X = 1.0098 (logN 28.2) | cr*(k=100) 0.16465 at x/X = 1.0091 (logN 29.3)
+54 beta 0.0156 M 2.6915 s 0.6624 ray 0.02517 | cr*(k=30) 0.18828 at x/X = 1.0096 (logN 28.2) | cr*(k=100) 0.18100 at x/X = 1.0088 (logN 29.3)
+60 beta 0.0156 M 2.8723 s 0.7069 ray 0.02586 | cr*(k=30) 0.20104 at x/X = 1.0093 (logN 28.1) | cr*(k=100) 0.19345 at x/X = 1.0086 (logN 29.3)
+66 beta 0.0156 M 3.0687 s 0.7552 ray 0.02656 | cr*(k=30) 0.21473 at x/X = 1.0091 (logN 28.1) | cr*(k=100) 0.20683 at x/X = 1.0086 (logN 29.3)
+base endpoint 0.10755086958424454
+kappa 30 mean new credit 0.1099 (min 0.0395 row 1); endpoint 0.10706297108863143 gain 4.879e-04
+kappa 30 half credit: endpoint 0.10730589263563942 gain 2.450e-04
+kappa 100 mean new credit 0.1046 (min 0.0374 row 1); endpoint 0.1070886501100777 gain 4.622e-04
+kappa 100 half credit: endpoint 0.10731883186795749 gain 2.320e-04
+      322.06 real       279.03 user         3.27 sys
+            88981504  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               19815  page reclaims
+                 127  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   1  messages received
+                   1  signals received
+                 129  voluntary context switches
+              409797  involuntary context switches
+           419465013  instructions retired
+           166189564  cycles elapsed
+            18760184  peak memory footprint
+memcap: peak 74 MB rc=0
