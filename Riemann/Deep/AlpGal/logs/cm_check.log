@@ -1,0 +1,114 @@
+p  class  a_p(A)  a_p(B)  alpha(brute)  alpha(Cornacchia)  alpha+conj  check
+3 inert 0 0  psi((p))=-p  tr Frob_(p) = -6 = 2(-p)
+5 split -2 -2  (-1, -2)  (-1, 2)  -2  ok
+7 inert 0 0  psi((p))=-p  tr Frob_(p) = -14 = 2(-p)
+11 inert 0 0  psi((p))=-p  tr Frob_(p) = -22 = 2(-p)
+13 split 6 6  (3, -2)  (3, 2)  6  ok
+17 split 2 2  (1, 4)  (1, -4)  2  ok
+19 inert 0 0  psi((p))=-p  tr Frob_(p) = -38 = 2(-p)
+23 inert 0 0  psi((p))=-p  tr Frob_(p) = -46 = 2(-p)
+29 split -10 -10  (-5, 2)  (-5, -2)  -10  ok
+31 inert 0 0  psi((p))=-p  tr Frob_(p) = -62 = 2(-p)
+37 split -2 -2  (-1, -6)  (-1, 6)  -2  ok
+41 split 10 10  (5, -4)  (5, 4)  10  ok
+43 inert 0 0  psi((p))=-p  tr Frob_(p) = -86 = 2(-p)
+47 inert 0 0  psi((p))=-p  tr Frob_(p) = -94 = 2(-p)
+53 split 14 14  (7, -2)  (7, 2)  14  ok
+59 inert 0 0  psi((p))=-p  tr Frob_(p) = -118 = 2(-p)
+61 split -10 -10  (-5, -6)  (-5, 6)  -10  ok
+67 inert 0 0  psi((p))=-p  tr Frob_(p) = -134 = 2(-p)
+71 inert 0 0  psi((p))=-p  tr Frob_(p) = -142 = 2(-p)
+73 split -6 -6  (-3, -8)  (-3, 8)  -6  ok
+79 inert 0 0  psi((p))=-p  tr Frob_(p) = -158 = 2(-p)
+83 inert 0 0  psi((p))=-p  tr Frob_(p) = -166 = 2(-p)
+89 split 10 10  (5, 8)  (5, -8)  10  ok
+97 split 18 18  (9, -4)  (9, 4)  18  ok
+101 split -2 -2  (-1, -10)  (-1, 10)  -2  ok
+103 inert 0 0  psi((p))=-p  tr Frob_(p) = -206 = 2(-p)
+107 inert 0 0  psi((p))=-p  tr Frob_(p) = -214 = 2(-p)
+109 split 6 6  (3, 10)  (3, -10)  6  ok
+113 split -14 -14  (-7, -8)  (-7, 8)  -14  ok
+127 inert 0 0  psi((p))=-p  tr Frob_(p) = -254 = 2(-p)
+131 inert 0 0  psi((p))=-p  tr Frob_(p) = -262 = 2(-p)
+137 split -22 -22  (-11, 4)  (-11, -4)  -22  ok
+139 inert 0 0  psi((p))=-p  tr Frob_(p) = -278 = 2(-p)
+149 split 14 14  (7, 10)  (7, -10)  14  ok
+151 inert 0 0  psi((p))=-p  tr Frob_(p) = -302 = 2(-p)
+157 split 22 22  (11, -6)  (11, 6)  22  ok
+163 inert 0 0  psi((p))=-p  tr Frob_(p) = -326 = 2(-p)
+167 inert 0 0  psi((p))=-p  tr Frob_(p) = -334 = 2(-p)
+173 split -26 -26  (-13, 2)  (-13, -2)  -26  ok
+179 inert 0 0  psi((p))=-p  tr Frob_(p) = -358 = 2(-p)
+181 split -18 -18  (-9, -10)  (-9, 10)  -18  ok
+191 inert 0 0  psi((p))=-p  tr Frob_(p) = -382 = 2(-p)
+193 split -14 -14  (-7, -12)  (-7, 12)  -14  ok
+197 split -2 -2  (-1, -14)  (-1, 14)  -2  ok
+199 inert 0 0  psi((p))=-p  tr Frob_(p) = -398 = 2(-p)
+211 inert 0 0  psi((p))=-p  tr Frob_(p) = -422 = 2(-p)
+223 inert 0 0  psi((p))=-p  tr Frob_(p) = -446 = 2(-p)
+227 inert 0 0  psi((p))=-p  tr Frob_(p) = -454 = 2(-p)
+229 split 30 30  (15, -2)  (15, 2)  30  ok
+233 split 26 26  (13, -8)  (13, 8)  26  ok
+239 inert 0 0  psi((p))=-p  tr Frob_(p) = -478 = 2(-p)
+241 split -30 -30  (-15, 4)  (-15, -4)  -30  ok
+251 inert 0 0  psi((p))=-p  tr Frob_(p) = -502 = 2(-p)
+257 split 2 2  (1, 16)  (1, -16)  2  ok
+263 inert 0 0  psi((p))=-p  tr Frob_(p) = -526 = 2(-p)
+269 split -26 -26  (-13, 10)  (-13, -10)  -26  ok
+271 inert 0 0  psi((p))=-p  tr Frob_(p) = -542 = 2(-p)
+277 split -18 -18  (-9, -14)  (-9, 14)  -18  ok
+281 split 10 10  (5, 16)  (5, -16)  10  ok
+283 inert 0 0  psi((p))=-p  tr Frob_(p) = -566 = 2(-p)
+293 split -34 -34  (-17, 2)  (-17, -2)  -34  ok
+307 inert 0 0  psi((p))=-p  tr Frob_(p) = -614 = 2(-p)
+311 inert 0 0  psi((p))=-p  tr Frob_(p) = -622 = 2(-p)
+313 split 26 26  (13, -12)  (13, 12)  26  ok
+317 split 22 22  (11, 14)  (11, -14)  22  ok
+331 inert 0 0  psi((p))=-p  tr Frob_(p) = -662 = 2(-p)
+337 split 18 18  (9, 16)  (9, -16)  18  ok
+347 inert 0 0  psi((p))=-p  tr Frob_(p) = -694 = 2(-p)
+349 split -10 -10  (-5, -18)  (-5, 18)  -10  ok
+353 split 34 34  (17, -8)  (17, 8)  34  ok
+359 inert 0 0  psi((p))=-p  tr Frob_(p) = -718 = 2(-p)
+367 inert 0 0  psi((p))=-p  tr Frob_(p) = -734 = 2(-p)
+373 split 14 14  (7, 18)  (7, -18)  14  ok
+379 inert 0 0  psi((p))=-p  tr Frob_(p) = -758 = 2(-p)
+383 inert 0 0  psi((p))=-p  tr Frob_(p) = -766 = 2(-p)
+389 split -34 -34  (-17, 10)  (-17, -10)  -34  ok
+397 split 38 38  (19, -6)  (19, 6)  38  ok
+401 split 2 2  (1, 20)  (1, -20)  2  ok
+409 split -6 -6  (-3, -20)  (-3, 20)  -6  ok
+419 inert 0 0  psi((p))=-p  tr Frob_(p) = -838 = 2(-p)
+421 split 30 30  (15, -14)  (15, 14)  30  ok
+431 inert 0 0  psi((p))=-p  tr Frob_(p) = -862 = 2(-p)
+433 split 34 34  (17, -12)  (17, 12)  34  ok
+439 inert 0 0  psi((p))=-p  tr Frob_(p) = -878 = 2(-p)
+443 inert 0 0  psi((p))=-p  tr Frob_(p) = -886 = 2(-p)
+449 split -14 -14  (-7, -20)  (-7, 20)  -14  ok
+457 split 42 42  (21, -4)  (21, 4)  42  ok
+461 split 38 38  (19, -10)  (19, 10)  38  ok
+463 inert 0 0  psi((p))=-p  tr Frob_(p) = -926 = 2(-p)
+467 inert 0 0  psi((p))=-p  tr Frob_(p) = -934 = 2(-p)
+479 inert 0 0  psi((p))=-p  tr Frob_(p) = -958 = 2(-p)
+487 inert 0 0  psi((p))=-p  tr Frob_(p) = -974 = 2(-p)
+491 inert 0 0  psi((p))=-p  tr Frob_(p) = -982 = 2(-p)
+499 inert 0 0  psi((p))=-p  tr Frob_(p) = -998 = 2(-p)
+--- F_{p^2} point counts (p <= 60): trace of Frob^2 on H^1 vs alpha^2 + conj(alpha)^2 (split) or 2(-p) (inert)
+3 F_p2 trace -6 expected -6 ok
+5 F_p2 trace -6 expected -6 ok
+7 F_p2 trace -14 expected -14 ok
+11 F_p2 trace -22 expected -22 ok
+13 F_p2 trace 10 expected 10 ok
+17 F_p2 trace -30 expected -30 ok
+19 F_p2 trace -38 expected -38 ok
+23 F_p2 trace -46 expected -46 ok
+29 F_p2 trace 42 expected 42 ok
+31 F_p2 trace -62 expected -62 ok
+37 F_p2 trace -70 expected -70 ok
+41 F_p2 trace 18 expected 18 ok
+43 F_p2 trace -86 expected -86 ok
+47 F_p2 trace -94 expected -94 ok
+53 F_p2 trace 90 expected 90 ok
+59 F_p2 trace -118 expected -118 ok
+SUMMARY split=44 inert=50 Fp2=16 mismatches=0
+memcap: peak 0 MB rc=0

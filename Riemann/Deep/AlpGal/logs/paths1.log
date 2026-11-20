@@ -1,0 +1,19 @@
+PositivityTheory.Resplug.ResolutionBlowup.resolutionCharZero dist 5
+  resolutionCharZero[5] < resolution_char_zero_of_literature[4] < every_character_of_literature_of_vWin[3] < everyCharacter_of_row[2] < everyCharacter[1] < allChi[0]
+PositivityTheory.ResPlug.FromRes.resK dist 5
+  resK[5] < moriwakiBig_outright[4] < every_character_of_literature_of_vWin[3] < everyCharacter_of_row[2] < everyCharacter[1] < allChi[0]
+PositivityTheory.ResPlug.FromRes.resW dist 6
+  resW[6] < resK[5] < moriwakiBig_outright[4] < every_character_of_literature_of_vWin[3] < everyCharacter_of_row[2] < everyCharacter[1] < allChi[0]
+UpperTheory.Gal.Int.Geo.geoOne_holds dist 4
+  geoOne_holds[4] < galoisRepresentations_of_thetaLift[3] < galoisLocalGlobalStrong_recParameter[2] < everyCharacter[1] < allChi[0]
+UpperTheory.Gal.Int.Geo.Pl.planEx_holds dist 6
+  planEx_holds[6] < geometric_realization_of_weight_one[5] < geoOne_holds[4] < galoisRepresentations_of_thetaLift[3] < galoisLocalGlobalStrong_recParameter[2] < everyCharacter[1] < allChi[0]
+UpperTheory.Gal.LocalSmoothExtension.ksHodge_of_geo dist 7
+  ksHodge_of_geo[7] < kodaira_spencer_of_weight_one[6] < geometric_realization_of_weight_one[5] < geoOne_holds[4] < galoisRepresentations_of_thetaLift[3] < galoisLocalGlobalStrong_recParameter[2] < everyCharacter[1] < allChi[0]
+UpperTheory.Gal.G3.kSEx_holds dist 7
+  kSEx_holds[7] < kodaira_spencer_of_weight_one[6] < geometric_realization_of_weight_one[5] < geoOne_holds[4] < galoisRepresentations_of_thetaLift[3] < galoisLocalGlobalStrong_recParameter[2] < everyCharacter[1] < allChi[0]
+UpperTheory.Gal.Lim.limFinOdd_of dist 7
+  limFinOdd_of[7] < coreAll_of[6] < galoisLocalGlobal_of_geometry_lift[5] < galoisLocalGlobalStrong_of_geometry_lift[4] < galoisRepresentations_of_thetaLift[3] < galoisLocalGlobalStrong_recParameter[2] < everyCharacter[1] < allChi[0]
+UpperTheory.Gal.Int.Cong.congFinOdd_of_ex dist 6
+  congFinOdd_of_ex[6] < galoisLocalGlobal_of_geometry_lift[5] < galoisLocalGlobalStrong_of_geometry_lift[4] < galoisRepresentations_of_thetaLift[3] < galoisLocalGlobalStrong_recParameter[2] < everyCharacter[1] < allChi[0]
+memcap: peak 0 MB rc=0

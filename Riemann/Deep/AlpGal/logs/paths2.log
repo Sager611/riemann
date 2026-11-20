@@ -1,0 +1,7 @@
+GlobalTheory.T.kottwitz_pointCount_one_class_commensurable dist 14
+  kottwitz_pointCount_one_class_commensurable[14] < pointSum_zero[13] < termAt_zero[12] < vanPairs[11] < specOfF[10] < specData[9] < specTopG[8] < specTop_holds[7] < planEx_holds[6] < geometric_realization_of_weight_one[5] < geoOne_holds[4] < galoisRepresentations_of_thetaLift[3] < galoisLocalGlobalStrong_recParameter[2] < everyCharacter[1] < allChi[0]
+UpperTheory.Gal.Spc.specTopG dist 8
+  specTopG[8] < specTop_holds[7] < planEx_holds[6] < geometric_realization_of_weight_one[5] < geoOne_holds[4] < galoisRepresentations_of_thetaLift[3] < galoisLocalGlobalStrong_recParameter[2] < everyCharacter[1] < allChi[0]
+UpperTheory.Gal.Int.Geo.Pl.specTop_holds dist 7
+  specTop_holds[7] < planEx_holds[6] < geometric_realization_of_weight_one[5] < geoOne_holds[4] < galoisRepresentations_of_thetaLift[3] < galoisLocalGlobalStrong_recParameter[2] < everyCharacter[1] < allChi[0]
+memcap: peak 0 MB rc=0
