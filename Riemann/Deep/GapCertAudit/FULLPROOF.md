@@ -128,3 +128,63 @@ conj F = e^{−ivtL}G̃(β*;t), G̃(β;t) = ζ(½+β1−it)ζ(½+β2−it)M(½+�
   2.7707, 2, 1, 0.3, 0.05 (orch_vnum: 0.0241, 0.0850, 0.243, 1.10, 7.26, 92.5 at the common g).
 - λ_min(noshift) = −1.829137·10⁻⁶ = λ_min(cert) − 2·10⁻⁵; λ_min(sdp) = +1.92·10⁻⁹ at g = π; shifts.py: sdp has n3 = −7.8·10⁻¹⁰
   and S_odd(10⁻³) = −7.3·10⁻¹⁶, S_odd(10⁻⁴) = −9.4·10⁻¹⁷ (fails for tiny gaps); noshift has S_odd(π) = −1.15·10⁻⁶.
+
+# Follow-up (20 Nov, 02:00 UTC): the J = 5, 6 records (Λ > 3.358, 3.365, 3.367); audited files by sha256 prefix:
+cert5.py 0271dc508c4b5aa8, certJ5.py 49b566986a1077cf, certJ.py 9023b0588d88a589 (= HEAD), exact5.py 940bc3a0840718f2, exact6.py a2da4920ed882b7e.
+
+## (F1) Lemmas 3, 4 (own derivation; checked symbolically by lemma46.py)
+- f ∈ H⁶(0,g), f(0) = f(g) = 0; free data A = (f″(0), f″(g)), B = (f⁗(0), f⁗(g)); d_k = (2/g)((−1)^kA1 − A0), e_k likewise
+  with B. Integration by parts (boundary terms contain only f(0), f(g), sin 0, sin ω_kg, and the cosine endpoint values A, B):
+  f ~ b, f′ ~ ωb (cos, no constant), f″ ~ −ω²b, f‴ ~ d − ω³b (cos, constant δ_A/g), f⁗ ~ ω⁴b − ωd, f⁽⁵⁾ ~ e + ω⁵b − ω²d
+  (cos, constant δ_B/g), f⁽⁶⁾ ~ −(ωe + ω⁶b − ω³d) (sine). Brackets [F_pF_q]_0^g = const_p·δ_Q + (g/2)Σ coef_{p,k}q_k (q ∈ {d, e}).
+- f ∈ H⁶ ⇒ ε_k = ωe + ω⁶b − ω³d ∈ ℓ², so the cosine coefficients of f⁽⁵⁾ (= −ε_k/ω), f‴, f′ are in ℓ¹: endpoint values are the
+  series values. Per mode: p b² + b(ωq_d d + ωq_e e) + γ_dd d² + γ_de de + γ_ee e²; zero mode (1/g)δᵀCδ, δ = (δ_A, δ_B).
+- Minimum over b (p(x_k) > 0): (d, e)R(x_k)(d, e)ᵀ, R = [[N11, N12], [N12, N22]]/(4p), N11 = 4pγ_dd − xq_d², N12 = 2pγ_de − xq_dq_e,
+  N22 = 4pγ_ee − xq_e². Odd k: (d, e) = −(2/g)σ, σ = (A0+A1, B0+B1); even k: (2/g)δ. Total ≥ (2/g)[σᵀS_oddσ + δᵀ(S_even + C/2)δ].
+  σ, δ range over all of ℝ², so S_odd ⪰ 0, S_even + C/2 ⪰ 0 (with p > 0 on [1, ∞)) suffice; Σ_k R(x_k) converges (R = O(1/x)).
+- "Given deg p = 6 (a6 > 0)": needed only so that p > 0 on [1, ∞) is possible and the N's have positive leading terms; cert5.py
+  checks p > 0 on [1, ∞) directly (p(1) > 0, no real root ≥ 1), which forces a6 > 0 (a6 = 1.44·10⁻⁴ here).
+
+## (F2) cert5.py (JJ = 6) line by line
+- Inputs: the SDP floats → limit_denominator(10¹²) → exact Fractions; D0 = E12 = E32 = 0 (no repair for J = 6); numer6 exact.
+- (1) p(1) > 0 exact, Arb root isolation: no real root ≥ 1 ⇒ p > 0 on [1, ∞). (2) C11 > 0, det C > 0 exact ⇒ C ≻ 0.
+- (3) leading coefficients of N11, N22, DET > 0 (exact); X* = max upper end of all possibly-real roots of N11, N22, DET (and 1):
+  for x > X*, N11 > 0 and DET = N11N22 − N12² > 0, so R(x) ≻ 0 (p > 0). DET's root 6.8093865 ± 4.7·10⁻⁹ gives X* = 6.809387.
+- Small gaps g < π/√X*: every x_k > X*, S_odd ≻ 0, S_even + C/2 ≻ C/2 ≻ 0. (As g → 0 this contains the Schur/L∞ condition.)
+- Cover: lo = (π/√X*).lower() ≤ π/√X* (starts at or below its stated lower end: yes), hi = π.upper(); 100 initial cells,
+  bisection to depth ≤ 28; each cell is one Arb ball G; k ≤ 61 explicit; dropped k ≥ 62 have x_k ≥ 62²(π/π.upper())² ≫ X*, so they
+  are PSD and the truncated sums are Loewner lower bounds; psd() = S11 > 0, S22 > 0, det > 0 on the whole ball.
+- C enters S_even as C/2 (zero mode (1/g)δᵀCδ against (2/g)δᵀS_evenδ): right factor.
+
+## (F3) certJ5.py = certJ.py + Lemma T′ (diff: docstring, the tail block l.150-175; nothing else)
+- Changed lines only: base β → 3c⁺/2 (c⁺ = c.upper() ≥ c) in f(M) = C(M+2r−1, 2r−1)(3c⁺ϑ/2)^M/M!; A_M = (2r+M)^n instead of
+  (1+2r+M)^n, from (M+N+4r)^n ≤ 2^{n−1}((M+2r)^n + (N+2r)^n) (convexity); tails × V_n. β = 25 still scales the arrays and sets
+  the precision (no effect on validity). The arrays, the sums s_m, c_j, H and the decision are byte-identical code.
+- Own derivation of T′. h_k(y) = ∫_0^{1−y}t^ke^{zt}dt, z ∈ {0, ±ic}. n ≥ 1: h^{(n)}(0) = (−1)^n Σ_{i≤min(k,n−1)} C(n−1,i)(k!/(k−i)!)
+  z^{n−1−i}e^z, so for |z| = c ≥ 1: |h^{(n)}(0)| ≤ c^{n−1}Σ_iC(k,i)(n/c)^i = c^{n−1−k}(c+n)^k ≤ c^n(n+1)^k (as (c+n) ≤ c(n+1));
+  z = 0: |h^{(n)}(0)| = k!/(k−n+1)! ≤ k!; n = 0: |h(0)| ≤ 1/(k+1). Hence |h_k^{(n)}(0)| ≤ T_k(n+1)^kc^n with any T_k ≥ max(1, k!)
+  (the code's T_k = max(k!, max(1, k/c⁺)^k) = max(1, k!) for k ≤ 12, since (k/c)^k ≤ 1.14¹² < 12!; using c⁺ there is harmless).
+- Leibniz with phases |α1|, |α3| = c/2: |u_k[a][b]| ≤ T_k(a+b+1)^k Σ C(a,n1)C(b,n2)(c/2)^{a+b−n1−n2}c^{n1+n2} = T_k(a+b+1)^k(3c/2)^{a+b}.
+  conv2 over (a1,b1) + (a2,b2) = (M,N): (a1+b1+1)^k(a2+b2+1)^l ≤ (M+N+1)^{k+l}; Chu–Vandermonde for wr: |g_m[M][N]| ≤
+  4((r−1)!)⁴U_m(M+N+1)^m(3c/2)^{M+N}C(M+2r−1,2r−1)C(N+2r−1,2r−1), U_m = Σ_kC(m,k)T_kT_{m−k}. sh multiplies by ≤ (M+N) (needs
+  3c/2 ≥ 1); H_n = Σ_jC(n,j)sh^j(g_{n−j}) ⇒ |H_n| ≤ 4((r−1)!)⁴V_n(M+N+1)^n(3c/2)^{M+N}CC ≤ the code's (M+N+4r)^n form. Holds.
+- Inner products: ‖I^M‖ ≤ ϑ^M/M!: M = 0 trivially (identity); M ≥ 1 by Young (kernel (s−U)^{M−1}/(M−1)!, ∫_0^ϑ t^{M−1}/(M−1)! =
+  ϑ^M/M!) or by HS (ϑ^M/((M−1)!√(2M(2M−1))) ≤ ϑ^M/M! iff 3M² ≥ 2M, i.e. M ≥ 1): the reviewer's remark is right and harmless.
+- Tail sum: region {M ≥ D or N ≥ D} ⊂ {M ≥ D} ∪ {M < D ≤ N}; Σ f(M)f(N)(A_M + A_N) = 2(Fn_tF0 + Fn_DF0_t); cut at 700 (ratio
+  (3c/2)ϑ/M ≈ 0.0057, times (1 + 1/704)^12) + 10⁻³⁰⁰: covers the remainder (≪ 10⁻¹²⁰⁰). errs added to radii before c_j, H.
+
+## (F4) Follow-up runs (one process at a time, memcap 290 MB; logs/ with prefix as named)
+| run | result | time, peak |
+|---|---|---|
+| cert5.py J6m80_3.367 0 0 0 61, JJ = 6 (step 2) | JSON identical; CERTIFIED (J = 6) | 13 s, 18 MB |
+| certJ5.py amp_d80_k3.367_J6 (step 4, D = 72) | identical to the agent's JSON except timing | 643 s (loaded), 192 MB |
+| lemma46.py (sympy) | Lemma 4 coefficients, C, numerators of the certified form: identical to exact6/numer6; J = 5 to numer5 | 7 s, 72 MB RSS |
+| indep8.py MMAX = 12, n = 20, test amplifier | ⟨S^m⟩/⟨1⟩, m ≤ 12 (m ≤ 8 equal to the n = 20 run of REPORT.md) | 113 s, 160 MB |
+| certJ5.py test amplifier, J = 6 Wirtinger form, D = 60 | CERTIFIED; m ≤ 10 agree with indep8 to ≤ 6.8·10⁻¹², m = 11, 12 inside the balls | 251 s, 100 MB |
+| certJ5.py test amplifier, J = 6, D = 72 | CERTIFIED; m ≤ 12 agree with indep8 to ≤ 7.5·10⁻¹⁴ (m = 11, 12: 6.6·10⁻¹⁴, 7.5·10⁻¹⁴) | 365 s, 158 MB |
+| certJ5.py main amplifier at D = 70 (392 bits) | H = 1.144·10⁻³⁷ ± 7.50·10⁻⁴¹, CERTIFIED; overlaps D = 72 | 431 s, 148 MB |
+| margin.py (D = 72 vs D = 70) | terms ±10⁻³³, H/max term 1.4·10⁻⁵, rad(H) = 5.58·10⁻⁴³ (c_6's ball), H/rad 2.05·10⁵ | <1 s |
+| cert5.py JJ = 5 (3.358 form) | JSON identical; CERTIFIED (J = 5) | 9 s |
+| majcheck.py 30 12 (Lemma T′ entrywise) | max ratio 0.49 (n = 0) … 2.9·10⁻²⁰ (n = 12) | 26 s, 34 MB |
+- Printing note: Arb strings show only certain digits, and the printed radius includes the rounding of the printed midpoint
+  (c_6 prints ± 3.96·10⁻⁴⁵, while rad(H) = 5.58·10⁻⁴³ = 305·rad(c_6) gives the true rad(c_6) ≈ 1.8·10⁻⁴⁵).

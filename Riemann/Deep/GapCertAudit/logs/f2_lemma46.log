@@ -1,0 +1,15 @@
+(i) p: own derivation == exact6 formula: True
+(i) qd: own derivation == exact6 formula: True
+(i) qe: own derivation == exact6 formula: True
+(i) gdd: own derivation == exact6 formula: True
+(i) gde: own derivation == exact6 formula: True
+(i) gee: own derivation == exact6 formula: True
+(i) C: own == exact6: True
+(ii) N11: degree own 5, exact6 5, identical coefficients: True
+(ii) N12: degree own 5, exact6 5, identical coefficients: True
+(ii) N22: degree own 5, exact6 5, identical coefficients: True
+(ii) DET: degree own 10, exact6 10, identical coefficients: True
+(ii) J=5 N11: identical to exact5: True
+(ii) J=5 N12: identical to exact5: True
+(ii) J=5 N22: identical to exact5: True
+a6 = 0.0001438607541500907 ; C = [[0.0029000076217960136, 0.0007061620047891528], [0.0007061620047891528, 0.00017196359779591674]]

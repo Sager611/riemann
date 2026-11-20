@@ -1,0 +1,27 @@
+D 30 beta 29 imok True
+n=0  Lemma T' max ratio 4.865e-01 at (0, 0)
+n=1  Lemma T' max ratio 2.027e-02 at (0, 0)
+n=2  Lemma T' max ratio 7.969e-04 at (0, 0)
+n=3  Lemma T' max ratio 2.830e-05 at (0, 0)
+n=4  Lemma T' max ratio 8.968e-07 at (0, 0)
+n=5  Lemma T' max ratio 2.540e-08 at (0, 0)
+n=6  Lemma T' max ratio 6.475e-10 at (0, 0)
+n=7  Lemma T' max ratio 1.497e-11 at (0, 0)
+n=8  Lemma T' max ratio 3.161e-13 at (0, 0)
+n=9  Lemma T' max ratio 6.142e-15 at (0, 0)
+n=10  Lemma T' max ratio 1.104e-16 at (0, 0)
+n=11  Lemma T' max ratio 1.846e-18 at (0, 0)
+n=12  Lemma T' max ratio 2.885e-20 at (0, 0)
+n=0  max ratio (code majorant) 4.865e-01 at (0, 0);  (sharper (2+M+N)^n) 4.865e-01 at (0, 0);  max over max(M,N) >= D-8: 1.800e-19
+n=1  max ratio (code majorant) 4.865e-02 at (0, 0);  (sharper (2+M+N)^n) 2.433e-01 at (0, 0);  max over max(M,N) >= D-8: 5.605e-20
+n=2  max ratio (code majorant) 5.610e-03 at (0, 0);  (sharper (2+M+N)^n) 1.403e-01 at (0, 0);  max over max(M,N) >= D-8: 4.092e-21
+n=3  max ratio (code majorant) 7.100e-04 at (0, 0);  (sharper (2+M+N)^n) 8.875e-02 at (0, 0);  max over max(M,N) >= D-8: 2.030e-22
+n=4  max ratio (code majorant) 9.587e-05 at (0, 0);  (sharper (2+M+N)^n) 5.992e-02 at (0, 0);  max over max(M,N) >= D-8: 3.554e-23
+n=5  max ratio (code majorant) 1.358e-05 at (0, 0);  (sharper (2+M+N)^n) 4.242e-02 at (0, 0);  max over max(M,N) >= D-8: 6.030e-25
+n=6  max ratio (code majorant) 1.993e-06 at (0, 0);  (sharper (2+M+N)^n) 3.114e-02 at (0, 0);  max over max(M,N) >= D-8: 2.505e-25
+n=7  max ratio (code majorant) 3.010e-07 at (0, 0);  (sharper (2+M+N)^n) 2.352e-02 at (0, 0);  max over max(M,N) >= D-8: 9.786e-27
+n=8  max ratio (code majorant) 4.651e-08 at (0, 0);  (sharper (2+M+N)^n) 1.817e-02 at (0, 0);  max over max(M,N) >= D-8: 8.795e-28
+n=9  max ratio (code majorant) 7.318e-09 at (0, 0);  (sharper (2+M+N)^n) 1.429e-02 at (0, 0);  max over max(M,N) >= D-8: 9.738e-29
+n=10  max ratio (code majorant) 1.169e-09 at (0, 0);  (sharper (2+M+N)^n) 1.142e-02 at (0, 0);  max over max(M,N) >= D-8: 3.475e-30
+n=11  max ratio (code majorant) 1.893e-10 at (0, 0);  (sharper (2+M+N)^n) 9.241e-03 at (0, 0);  max over max(M,N) >= D-8: 1.390e-31
+n=12  max ratio (code majorant) 3.097e-11 at (0, 0);  (sharper (2+M+N)^n) 7.562e-03 at (0, 0);  max over max(M,N) >= D-8: 4.534e-32

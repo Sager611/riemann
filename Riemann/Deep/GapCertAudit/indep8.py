@@ -3,12 +3,12 @@ mollifier (alpha3 = -beta3 = i mu/L), from BM's TeX only (arXiv 1410.3635v3, Lem
 extends GapAudit/indep7.py (audited, which has m <= 2 through (v-S)^2) to the full S^m weight, S = theta(x+x1+..+x4)+tau1+tau2.
 t3, t4 integrated exactly: BM's two linear factors x the t3,t4-integral = (1-e^{-ia})(1-e^{ib})/c^2 (own derivation, FULLPROOF (d)).
 usage: indep8.py r theta kappa mu_over_c amp.json [n]   (amp.json: shifted-Legendre A_n, P(w) = sum (-1)^n A_n P_n(2w-1))"""
-import sys, json, math
+import sys, json, math, os
 from math import factorial
 import numpy as np
 from numpy.polynomial.legendre import leggauss, legval
 
-MMAX = 8
+MMAX = int(os.environ.get('MMAX', '8'))   # MMAX=12 for the J = 6 moments
 
 
 def gl01(n):
