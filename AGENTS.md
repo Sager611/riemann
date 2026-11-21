@@ -3,7 +3,7 @@
 > [!IMPORTANT]
 > Editing rules: ≤ 100 lines excluding the Changelog. Maximum deletion, minimum addition: each change leaves the fewest words with the densest information. Rules only; reasons, dates and anecdotes go to the Changelog. Every change appends one Changelog row.
 
-Goal: prove or disprove RH by endless Lean proof-tree search; never stop.
+Goal: ended 2026-11-20 (possible RH proofs, see README); do not resume.
 
 ## Priority
 
@@ -68,3 +68,4 @@ Goal: prove or disprove RH by endless Lean proof-tree search; never stop.
 | 2026/11/11 13:40 | orchestrator | Priority: falsify and audit inputs first, Orca on audit/falsification, tool-transfer exploration, deeper rounds; discovery gate, `RECORDS.md` | Adrian's discovery-quality review                                          |
 | 2026/11/20 18:16 | orchestrator | DISCOVERIES: record-only entries moved to RECORDS (small gaps 2/3, 7/11; large gaps 3.367; x^0.856; Linnik; consecutive powers; Littlewood); pointers kept for the √T crossing, primitive roots, discriminants | Adrian: discovery gate |
 | 2026/11/20 18:26 | orchestrator | DISCOVERIES: Chebotarev least-prime constants moved to RECORDS; the 18:16 move re-checked (10 candidates true records, no duplicates) | Adrian: discovery gate |
+| 2026/11/21 12:12 | orchestrator | Goal: ended; do not resume | Adrian: possible RH proofs by Alpöge and Masullo (README) |
