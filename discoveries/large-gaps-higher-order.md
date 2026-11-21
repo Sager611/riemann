@@ -1,5 +1,7 @@
 # Higher-order per-gap inequalities pass the Wirtinger ceiling for large gaps: Λ > 3.367
 
+> **Superseded (21 Nov 2026).** RH gives Λ > 3.63846723 (2610.28527) vs our 3.367. Assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). Kept as a record; see [SUPERSEDED.md](../SUPERSEDED.md).
+
 **Claim.** Λ := lim sup (γ_{n+1} − γ_n)/(2π/log γ_n) > 3.367 = 3367/1000 (order 6, degree-80 amplifier; 3.34 = 167/50 with order 4, degree 64), unconditionally, over consecutive ordinates of zeros of ζ on the critical line (was 3.324, ours). The tool: in Bui–Milinovich's large-gap method, Wirtinger's inequality ∫|f|² ≤ (g/π)²∫|f′|² on each gap is replaced by a per-gap inequality of order 4,
 (V) Σ_{j≤4} a_j‖f^{(j)}‖² + φ12[f′f″]_0^g + φ32[f‴f″]_0^g ≥ 0 for every g ∈ (0, π] and every real f ∈ H⁴(0, g) with f(0) = f(g) = 0,
 with exact rationals a_0, …, a_4, φ12, φ32 (φ32 = −a_3) whose boundary terms telescope across consecutive gaps. It passes the ceiling of the Wirtinger step (3.32658 in floats, certified failure at 3.335), and per-gap inequalities with derivatives of order ≤ 2 provably add nothing.

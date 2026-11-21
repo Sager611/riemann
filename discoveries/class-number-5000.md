@@ -1,5 +1,7 @@
 # Imaginary quadratic fields with class number at most 5000 (node N11)
 
+> **Superseded (21 Nov 2026).** Census stays true; GRH makes larger ranges available. Assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). Kept as a record; see [SUPERSEDED.md](../SUPERSEDED.md).
+
 **Superseded** (6 Nov 2026) by [class-number-10000](class-number-10000.md): h ≤ 10,000 with the same method (imqclass2).
 
 **Claim.** Every imaginary quadratic field K = Q(√−d) (d = |disc K|) with class number h(K) ≤ 5000 is known, without RH or GRH: there are 102,746,940 of them, and the largest d is 6,912,348,787 (h = 4967). Every h ≤ 5000 occurs. Counts, largest d and SHA-256 of the sorted lists for N = 1000, 2000, 2500, …, 5000 are in [REPORT](../Riemann/Deep/ImqClass/REPORT.md); the per-h table (h, number of fields, largest d) is perh_h5000.txt.

@@ -1,5 +1,7 @@
 # Explicit constant in Holland's Jensen hyperbolicity wedge (node N6)
 
+> **Superseded (21 Nov 2026).** RH ⇔ every Jensen polynomial of ξ is hyperbolic (Pólya). Assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). Kept as a record; see [SUPERSEDED.md](../SUPERSEDED.md).
+
 **Superseded** (6 Nov 2026) by the explicit two-thirds wedge n² log(n+2) ≥ 24 d³ ([page](jensen-two-thirds-wedge.md)); the complex saddle bound below is an input there.
 
 **Claim.** Let J^{d,n} be the degree-d Jensen polynomial of Riemann's Xi shifted by n. J^{d,n} has d distinct real (negative) zeros whenever n^3 log^2(n+2) >= 7000 d^5, for every d >= 1 (degrees d <= D_all = 9.0·10^24 are covered by the known all-n range from Chasse's sector lemma and RH to height 3·10^12; our d0 = 1.6141·10^25 also works). Without that range, K = 2.43·10^114 works for every d >= 1 (self-contained form of Holland's Theorem 1.1). With the all-n range this is the first explicit hyperbolic region unbounded in d.

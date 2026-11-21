@@ -1,5 +1,7 @@
 # Durkan–Pearce-Crump's small-gap method past length T^{1/2} without RH: D(λ) > 0 for every λ > 7/11
 
+> **Superseded (21 Nov 2026).** RH gives λ > 1/2 (2610.28527). Assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). Kept as a record; see [SUPERSEDED.md](../SUPERSEDED.md).
+
 **Claim.** (Theorem U′.) Let κ > 0 be a uniform density slope, N(σ, 3T) ≪ T^{1−κ(σ−½)} log T for all σ ≥ ½. For every φ ∈ (max{2/(2+κ), ½}, 1) there is c(φ) > 0 such that for all large T, #{n : T ≤ γ_n ≤ γ_{n+1} ≤ 2T, γ_{n+1} − γ_n < 2πφ/log T} ≥ c(φ) T log T (ordinates with multiplicity, as in Theorem U). With Conrey's slope κ = 8/7 − δ (proved in Baluyot's thesis): D(λ) > 0 for every λ > 7/11 = 0.6364, unconditionally.
 
 **Before.** Unconditional: λ > 2/3 (ours, Theorem U, dpcuncond, 12 Nov 2026, [small-gap-two-thirds](small-gap-two-thirds.md)), 0.768 (ours, explore40, [small-gap-hardcore](small-gap-hardcore.md)), 0.7892 (Lamzouri, arXiv 2611.14486). Under RH: 0.6878 (Soundararajan), 0.6553 (Wu), 0.6039 (Bui–Goldston–Milinovich–Montgomery), 1/2 (Durkan–Pearce-Crump, arXiv 2610.28527, Thm B). Theorem U's page called the needed (2 + δ)-th moment of R_T beyond length T^{1/2} open (Montgomery–Vaughan gives T^{2θ}).

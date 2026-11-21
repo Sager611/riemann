@@ -1,5 +1,7 @@
 # First explicit power-saving bound for the Mertens function (node N10)
 
+> **Superseded (21 Nov 2026).** RH ⇒ M(x) ≪ x^{1/2+ε}; our explicit x^0.9382 is a record only. Assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). Kept as a record; see [SUPERSEDED.md](../SUPERSEDED.md).
+
 **Claim.** For every x ≥ 1, |M(x)| ≤ 1.84·10^6 · x^0.9382, where M(x) = Σ_{n≤x} μ(n). Harnack-only version (one-line certificate): |M(x)| ≤ 7.91·10^5 · x^0.9409. Certified family down to |M(x)| ≤ 1.01·10^382 · x^0.8992; |M(x)| ≤ x^0.95 for x ≥ 10^395. The only input about zeros is the proved half-plane: ζ(s) ≠ 0 for Re s > 7/8.
 
 **Before.** No explicit bound C·x^θ with θ < 1. A power saving needs a zero-free half-plane (M(x) ≪ x^θ makes 1/ζ analytic on Re s > θ), available only since OpenAI's 7/8 theorem (Oct 2026). Explicit records: Ramaré |M(x)| ≤ 0.013 x/log x (x ≥ 1,078,853), Cohen–Dress–El Marraki x/4345, the sub-power savings of arXiv 2208.06141; non-explicit M(x) = O(x^{7/8+ε}) (Lean, [PNTError](../Riemann/Deep/PNTError/)). The ψ analogue is explicit (Fiori–Jaskari, arXiv 2609.23222, with 7/8); it needs ζ′/ζ, not 1/ζ. The new bound beats Ramaré's from x ≈ 10^174 on. Missed at first (flagged by harvest5, 6 Nov 2026): Chirre–Helfgott, arXiv 2511.14736 (Nov 2025, TeX l. 132, 393), |M(x)| ≤ 3x/(π·10^10) + 11.39√x for every x ≥ 1 (from Platt's residues to height 10^10 + 1); it is smaller than ours below x ≈ e^{607} ≈ 10^{263.5}, ours beats it from there on; it is not a power saving, so the first-power-saving claim stands.

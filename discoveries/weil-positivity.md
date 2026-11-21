@@ -1,5 +1,7 @@
 # Record: certified Weil positivity on half-width 1.55
 
+> **Superseded (21 Nov 2026).** RH ⇒ Weil's form is positive on all test functions. Assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). Kept as a record; see [SUPERSEDED.md](../SUPERSEDED.md).
+
 [Back to DISCOVERIES](../DISCOVERIES.md)
 
 **Superseded (5 Nov 2026).** V. Chekmachev (Zenodo 23848597, 1 Nov 2026) certifies half-width (ln 47)/2 = 1.925 for all f and (ln 71)/2 = 2.131 for even f; audited sound here ([ChekAudit](../Riemann/Deep/ChekAudit/REPORT.md)). This page was a record when made (R128).

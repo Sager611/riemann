@@ -22,6 +22,7 @@ If you found this repo, star it first so you can read it, then credit it properl
 
 - `TREE.md`: the proof-search tree
 - `NOGO.md`: dead ends
+- `SUPERSEDED.md`: results that now follow from Alpöge's proof
 - `DISCOVERIES.md`: findings that survived review (`RECORDS.md`: improved constants and ranges)
 - `Riemann/`: the Lean code
 

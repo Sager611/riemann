@@ -1,5 +1,7 @@
 # Unit-generated real quadratic orders with 2-torsion class group: Kopp–Lagarias Problem 1.7 solved (node N11)
 
+> **Superseded (21 Nov 2026).** Classification stays true; its zero-free input is now a theorem. Assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). Kept as a record; see [SUPERSEDED.md](../SUPERSEDED.md).
+
 **Claim.** Let O_Δ = ℤ[ε] run over the unit-generated real quadratic orders, i.e. Δ = n² − 4 (n ≥ 3) or Δ = n² + 4 (n ≥ 1) (Kopp–Lagarias Prop. 2.3). Then
 - Cl(O_Δ) = Cl(O_Δ)[2] holds exactly for the 53 discriminants n² − 4 and the 37 discriminants n² + 4 of Kopp–Lagarias Tables 2A/2B: 89 distinct orders (Δ = 5 in both families; 60 maximal, 29 non-maximal), the largest Δ = 68640 = 262² − 4 (conductor 2, Cl ≅ (ℤ/2)⁴, Cl⁺ ≅ (ℤ/2)⁵);
 - one class per genus, Cl⁺(O_Δ) = Cl⁺(O_Δ)[2], holds for exactly 84 of them: all except Δ = 221, 725, 1517 (Cl⁺ ≅ ℤ/4) and 3965, 7565 (Cl⁺ ≅ ℤ/2 × ℤ/4).

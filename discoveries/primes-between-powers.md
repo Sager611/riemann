@@ -1,5 +1,7 @@
 # Primes between consecutive seventh powers for every n, and a single-exponential threshold for cubes (node N10)
 
+> **Superseded (21 Nov 2026).** RH ⇒ primes in (x, x + c√x log x). Assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). Kept as a record; see [SUPERSEDED.md](../SUPERSEDED.md).
+
 **Claim.** (a) For every integer n ≥ 1 the interval (n^7, (n+1)^7) contains a prime. (b) For k = 3, 4, 5, 6 the interval (n^k, (n+1)^k) contains a prime for every n ≥ e^{627.01} ≈ 2.0·10^{272} (k = 3), n ≥ e^{117.21} ≈ 8.0·10^{50} (k = 4), n ≥ e^{57.746} ≈ 1.2·10^{25} (k = 5), n ≥ e^{36.242} ≈ 5.5·10^{15} (k = 6), i.e. log(n^k) ≥ 1881.03, 468.84, 288.73, 217.45. Inputs only: ζ(s) ≠ 0 for Re s > B = 0.8733819666132076 (Bebel's Lean-kernel-checked half-plane), RH up to 3·10^{12} (Platt–Trudgian 2021), Kadiri–Lumley–Ng's explicit zero density (J. Math. Anal. Appl. 465 (2018), Lemma 4.14, with Hiary–Patel–Yang's refereed subconvexity 0.618) and N(t) ≤ t log t (Hasanalizade–Shen–Wong 2022).
 
 **Before.** Cubes: n ≥ exp(e^{33.3}) (Dudek 2016), exp(e^{32.892}) (Cully-Hugill, J. Number Theory 2023), exp(e^{32.537}) (Cully-Hugill's thesis); computation to n³ ≤ 1.649·10^{40} (arXiv 2601.15564, which calls all n open). Every n: k ≥ 90 (Cully-Hugill–Johnston 2402.04272), k ≥ 86 (Lee 2602.14340), k = 8 from the 7/8 half-plane (Visser 2610.20058, whose theorem states k = 8 only) and every k ≥ 8 (our ShortPrimes, R323). The half-plane alone cannot give k = 7 (1/(1 − B) = 7.898 > 7); the zero density does. k = 4, 5, 6: only "sufficiently large".

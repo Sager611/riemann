@@ -1,5 +1,7 @@
 # NOGO — dead ends
 
+> Moot since 20 Nov 2026: barriers to proving RH, now that Alpöge's RH is assumed correct (see SUPERSEDED.md). Kept as method diagnostics (zero-proportion ceilings, GL(2), Davenport–Heilbronn).
+
 - R0 Thm 1 (L'Hôpital on gaps): false; F=cos2πu/u, G=u^-½ on D_γ. [Lean](Riemann/Fayed/Theorem1.lean)
 - FILTER: Euler-product-blind ⇒ dead (Davenport–Heilbronn: FE + off-line zeros).
 - R1.1 gap-aware L'Hôpital/Stolz: valid versions give F/G→0 only.

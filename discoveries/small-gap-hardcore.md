@@ -1,5 +1,7 @@
 # A hard-core inequality crosses the floor of Lamzouri's small-gap criterion: D(λ) > 0 for every λ ≥ 0.768
 
+> **Superseded (21 Nov 2026).** RH gives λ > 1/2 (2610.28527). Assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). Kept as a record; see [SUPERSEDED.md](../SUPERSEDED.md).
+
 **Claim.** (Computer-assisted.) Let D(λ) be the lower density of consecutive normalised gaps (γ_{n+1} − γ_n)·log T/2π that are ≤ λ. Theorem 1: let 1/2 < θ < 4/7, 0 < λ ≤ 1, λ < U ≤ 3λ, f even, f ≥ 0, Schwartz, f^ ≤ 0 on [U, ∞), A: [λ, ∞) → ℝ bounded, β ≥ 0, c ∈ ℝ with (H) f^(x) + f^(x + y) + A(x) − A(y) + β(1 − x) ≤ c for all x, y ≥ λ. If J_θ(f) = f(0) + 2∫_0^θ f(α)α dα > f^(0) + 2c, then D(λ) > 0. (A = β = c = 0, with any U ∈ (λ, 3λ], is Lamzouri's Thm Main2.) Corollary: D(λ) > 0 for every λ ≥ 0.768, unconditionally.
 
 **Before.** λ ≥ 0.7851 (ours, smallgap, 11 Nov 2026, Thm Main2 with an SDP-optimised test function), λ ≥ 0.7892 (Lamzouri, arXiv 2611.14486, Thm Main); Thm Main2 alone can never go below 0.775 (ours, [small-gap-floor](small-gap-floor.md)); under RH λ > 1/2 (Durkan–Pearce-Crump 2610.28527).

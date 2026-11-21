@@ -69,3 +69,4 @@ Goal: ended 2026-11-20 (possible RH proofs, see README); do not resume.
 | 2026/11/20 18:16 | orchestrator | DISCOVERIES: record-only entries moved to RECORDS (small gaps 2/3, 7/11; large gaps 3.367; x^0.856; Linnik; consecutive powers; Littlewood); pointers kept for the √T crossing, primitive roots, discriminants | Adrian: discovery gate |
 | 2026/11/20 18:26 | orchestrator | DISCOVERIES: Chebotarev least-prime constants moved to RECORDS; the 18:16 move re-checked (10 candidates true records, no duplicates) | Adrian: discovery gate |
 | 2026/11/21 12:12 | orchestrator | Goal: ended; do not resume | Adrian: possible RH proofs by Alpöge and Masullo (README) |
+| 2026/11/21 19:42 | orchestrator | Moot results (follow from Alpöge's RH + Dirichlet GRH) archived: SUPERSEDED.md, banners on 22 discovery pages, markers in DISCOVERIES/RECORDS, notes in NOGO/REFUTATIONS | Adrian |

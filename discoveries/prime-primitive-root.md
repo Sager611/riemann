@@ -1,5 +1,7 @@
 # Least prime primitive root of every prime without GRH, with numbers (node N11)
 
+> **Superseded (21 Nov 2026).** GRH ⇒ g*(p) ≪ (log p)^c with small c. Assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). Kept as a record; see [SUPERSEDED.md](../SUPERSEDED.md).
+
 **Claim.** Assume H: ζ(s) and every Dirichlet L(s, χ) are zero-free on Re s > B = 0.8733819666132076 (a theorem: Bebel's Lean-kernel-checked Re s > B₂ + 2.2·10⁻²⁵⁴, B₂ = (777 − √1081)/852 < B; TREE.md N7). Let g*(p) be the least prime that is a primitive root mod p, ω = ω(p − 1), 1/(1 − B) = 7.8978.
 - Theorem A: for every 1 ≤ ω ≤ 10⁴ and every prime p with ω(p − 1) = ω, g*(p) ≤ (κ_ω log p)^{1/(1−B)}, with κ₁ = 3.53 (p − 1 a power of 2), κ₂ = 11.1, κ₅ = 54.1, κ₁₀ = 216, κ₁₀₀ = 2.72·10⁴, κ₁₀₀₀ = 4.32·10⁶, κ₁₀⁴ = 6.85·10⁸ (all values in the certificate's kappa table).
 - Theorem B′: every prime p ≥ 5 with ω(p − 1) ≤ 10⁴ (in particular every p ≥ 5 below e^{104403}) has **g*(p) ≤ (0.814 log p)^{3/(1−B)} ≤ (0.814 log p)^{23.70}**.

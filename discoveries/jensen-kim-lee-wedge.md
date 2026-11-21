@@ -1,5 +1,7 @@
 # Explicit Kim–Lee wedge: Riemann's Jensen polynomials are hyperbolic for n ≥ 9.99·10^11 and d ≤ 6.45 n²/log² n (node N6)
 
+> **Superseded (21 Nov 2026).** RH ⇔ every Jensen polynomial of ξ is hyperbolic (Pólya). Assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). Kept as a record; see [SUPERSEDED.md](../SUPERSEDED.md).
+
 **Claim.** Let J^{d,n}(X) = Σ_j binom(d, j) γ(n + j) X^j, where 8ξ(1/2 + z) = Σ_m γ(m) z^{2m}/m! (the family of our N6 records; Θ(w) = 8ξ(1/2 + √w)). Let u(n) solve u(πe^{2u} − 9/4) = n, n_* = ⌈Z(12)⌉ = 998,616,377,771, R_n = (9/10)(n − 1/2)²/(u(n) + 1)², and a = 0.37338196661320752 (Lean-checked: every zero has |Re ρ − 1/2| ≤ a).
 1. For every n ≥ n_*, Θ^{(n)} has no zero w with (Im w)² ≤ 4a²(a² − Re w) and Re w ≥ −R_n.
 2. Hence J^{d,n} is hyperbolic for every d ≤ D_n = R_n²/(4a²(R_n + a²)), in particular for every d ≤ 6.45 n²/log² n.

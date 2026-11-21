@@ -1,5 +1,7 @@
 # Robin's and Nicolas' inequalities verified far beyond earlier ranges (node N4)
 
+> **Superseded (21 Nov 2026).** RH ⇒ Robin's inequality for all n > 5040, Nicolas's for all primorials. Assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). Kept as a record; see [SUPERSEDED.md](../SUPERSEDED.md).
+
 **Claim.** Robin's inequality σ(n) < e^γ n log log n holds for every 5041 ≤ n ≤ 10^(10^46.79), i.e. for every colossally abundant number whose largest prime is at most 1.43·10^47. Nicolas' inequality N_k/φ(N_k) > e^γ log log N_k holds for every primorial N_k with p_k ≤ 1.78·10^48. Inputs: RH to height 3·10^12 (Platt–Trudgian), Chirre–Helfgott's pointwise bound |ψ(x) − x| ≤ πx/(3·10^12) + 113.67√x (arXiv 2512.15709v1, a preprint; it needs only RH to that height) and the Lean-checked zero-free half-plane Re s > 0.87338196661320752 (Bebel, QuasiRiemannTracker). With 7/8: 10^(10^46.79) and 1.76·10^48; without any half-plane: 10^(10^46.44) and 6.30·10^47 (robinch, 5 Nov 2026). Previous version (robinh, R344): 10^(10^38.71) and 1.31·10^40.
 
 **Before.** Ours: 10^(10^38.71) and p_k ≤ 1.31·10^40 (robinh, R344). Robin: Polak (Zenodo 21808589, Aug 2026, unrefereed) n ≤ 10^(10^22.85) (largest prime 1.65·10^23); refereed: Morrill–Platt (arXiv 1809.10813) n ≤ 10^(10^13.11485). Nicolas: no verified height-tied range; floating-point computations to p_k ≤ 10^9 (Nicolas 2012, arXiv 1202.0729).

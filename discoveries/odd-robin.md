@@ -1,5 +1,7 @@
 # The odd Robin criterion made sharp (node N4)
 
+> **Superseded (21 Nov 2026).** Criterion moot; the odd inequality is now a consequence of RH. Assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). Kept as a record; see [SUPERSEDED.md](../SUPERSEDED.md).
+
 **Claim.** Every odd n with 277093800961598968947975375 < n < c0 = 3^4·5^3·7^2·11···67 = 18565284664427130919514350125 satisfies σ(n) < (e^γ/2) n log log n (unconditionally, by arithmetic and arb). Hence RH ⟺ σ(n) < (e^γ/2) n log log n for every odd n > N = 277093800961598968947975375, and the threshold is sharp (N fails). Unconditionally the inequality holds for every odd n with N < n ≤ 10^(10^46.44) (RH to height 3·10^12 + Chirre–Helfgott through our Robin certificate RobinCH; 10^(10^46.79) with the Lean-checked half-plane), and up to e^(5.0·10^8) with arithmetic alone. Under RH, f_{2,1}(n) stays below its limsup e^γ/2 for every n > N (Washington–Yang's question at TeX l. 85).
 
 **Before.** Washington–Yang (arXiv 2008.04787; Int. J. Number Theory 17 (2021) 843–870) proved RH ⟺ the inequality for odd n ≥ c0 and left the odd n in (N, c0) open ("we do not know", TeX l. 400). Koya (arXiv 2202.08390) quotes c0 unchanged.

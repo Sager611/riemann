@@ -1,5 +1,7 @@
 # Numeric Linnik bound and explicit power-saving prime number theorem in progressions, for every modulus (nodes N10, N11)
 
+> **Superseded (21 Nov 2026).** GRH ⇒ Linnik exponent 2 (explicit: Lamzouri–Li–Soundararajan). Assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). Kept as a record; see [SUPERSEDED.md](../SUPERSEDED.md).
+
 **Claim.** Assume H: ζ(s) and every Dirichlet L(s, χ) have no zeros with Re s > B = 0.8733819666132076. H is a Lean-kernel-checked theorem (J. Bebel's QuasiRiemannTracker submission of 1 Nov 2026: Re s > B₂ + 2.2·10⁻²⁵⁴, B₂ = (777 − √1081)/852 < B; unrefereed). Then, with 1/(1 − B) = 7.8978 and no other unproved input, for every q ≥ 1 and (a, q) = 1:
 1. |ψ(x; q, a) − x/φ(q)| ≤ 1.5 x^B log²(qx) for all x ≥ 2 (constant 0.174 for x ≥ 64, 0.0324 for x ≥ e¹⁰; limit 0.0076).
 2. The least prime p ≡ a (mod q) is ≤ (q log q)^{7.8978} for every q ≥ 2, ≤ (0.72 q log q)^{7.8978} for q ≥ 10⁴ (limit constant 0.45331), and ≤ (φ(q) log q)^{7.8978} for q ≥ 3.

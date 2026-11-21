@@ -1,5 +1,7 @@
 # Durkan–Pearce-Crump's small-gap method without RH: D(λ) > 0 for every λ > 2/3
 
+> **Superseded (21 Nov 2026).** RH gives λ > 1/2 (2610.28527). Assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). Kept as a record; see [SUPERSEDED.md](../SUPERSEDED.md).
+
 Superseded as a record by [small-gap-seven-elevenths](small-gap-seven-elevenths.md) (Theorem U′, λ > 7/11, which uses Theorem U verbatim outside Step 5a).
 
 **Claim.** (Theorem U.) For every φ ∈ (2/3, 1) there is c(φ) > 0 such that for all large T, #{n : T ≤ γ_n ≤ γ_{n+1} ≤ 2T, γ_{n+1} − γ_n < 2πφ/log T} ≥ c(φ) T log T (ordinates counted with multiplicity, an off-line pair giving two equal ordinates, as in Lamzouri 2611.14486). Hence D(λ) > 0 for every λ > 2/3, unconditionally.
