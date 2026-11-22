@@ -5,7 +5,7 @@ import Mathlib.MeasureTheory.Integral.Bochner.Set
 # Literature inputs (theorems of others, stated no stronger than their sources)
 
 Each input is a `def … : Prop`; the main theorem takes them as explicit hypotheses bundled in
-`LitInputs`, so `#print axioms` stays standard. Every docstring gives the citation and the source
+`LitInputs`, so the main theorem uses only propext, Classical.choice and Quot.sound. Every docstring gives the citation and the source
 statement verbatim (TeX copied from the arXiv e-print where one exists).
 -/
 
