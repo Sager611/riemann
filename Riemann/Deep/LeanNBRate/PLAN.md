@@ -22,12 +22,11 @@ MainClaim: RH → Summable ∧ Tendsto (log(1/λ)·nbDist²) (𝓝[>]0) (𝓝 S)
 ✓ HighR.highR: (1 − Cδ)|p_hi(0)|² ≤ (Σ_g 16(2κ)^{4(M_g−1)}/c_g²)/ℓ·(1+η')∫|p_hi′ψ|².
 ✓ Legendre.christoffel: deg P < m ⇒ |P(0)|² ≤ m²∫_0^1|P|²;  LowPart.christoffel_expSum (all nodes 0).
 ✓ LowPart: ibp_osc_bound, oubil (B(f,g) = ∫_0^ℓ f′ḡ′ + ¼fḡ), cross_bound (generic, sup bounds in, 1/|γ₁−γ₂| out).
-- TODO LowPart: diagonal Q(e^{iγu}r) ≥ (γ²+¼ − C/ℓ)∫|r|²; Claim F core: Q(p_lo) ≥ (1 − C/ℓ)Σ_j(γ_j²+¼)∫|r_j|²,
-  |p_lo(0)|² ≤ (S_lo/ℓ)·Q(p_lo)/(1 − C/ℓ) (norm_sum_sq_le_of_le + christoffel_expSum).
-- TODO LemmaE′ (no endpoint terms): |B(p_lo,p_hi)| ≤ θ_L (Q(p_lo)·Σ_g∫|Q_g|²)^{1/2}, via cross_bound per (j,g)
-  with group sups (Lemma B by-product, sup_sq_le, Bernstein η = s₀), C-S over g with Σ_g e^{βM_g}/Ω_g² ≤ C(H).
-- TODO U2.lean: Q(p) ≥ Q(p_lo) + ∫|p_hi′ψ|² − 2|B| ⇒ |p(0)|² ≤ ((S_lo + ε + S_hi)/ℓ)Q(p)/(1−θ). Inputs: GG ⇒ M_g ≤
-  A log t/log log t (grp_mult_le); Titchmarsh 9.2 ⇒ #zeros ≤ C T log T, Σ_ρ|γ|^{−3/2} < ∞ (tails → 0).
+✓ LowPart.claimF_core (Claim F core), LemmaE.lemmaE (Lemma E′, no endpoint terms), Counting (cluster_bound, shells),
+✓ ZeroConfig/GroupSums/U2grp/U2aux/U2asym/U2/U2props/U2main/U2final: U2final.u2 (RH, inputs TN, GG, T9.2):
+  ∀ε>0 ∃ℓ₀ ∀ℓ≥ℓ₀ ∀T≤ℓ⁷ ∀P (ZeroConfig P T: nodes = distinct ordinates of zeros on the line, 1 ≤ mult ≤ m_ρ):
+  ‖P.eval 0‖² ≤ (zeroSum+ε)/ℓ·Re oubil ℓ P P′ P P′ (= Q_ℓ(P)). Parameters: ℓ = q⁴, s₀ = q⁻³, η = q⁻², η′ = q⁻⁴,
+  N = 40, multiplicity cutoff Ku = ⌊30ε₁ log q⌋+1, split height Hs in a zero-free gap.
 - TODO Dual.lean: Hilbert space W = L²(0,ℓ)² × ℂ², T f = (f′, f/2, f(0)/√2, f(ℓ)/√2); f(0) = ⟨Tf, e⟩; p* := preimage of
   orthogonal projection of e on T(E_Z) ⇒ ⟨f,p*⟩_N = f(0) on E_Z. E_low(s) := ⟨e^{−(s−½)·}, p*⟩_N (entire, explicit),
   interpolates at Z with multiplicity (Z symmetric: needs mult(conj ρ) = mult ρ), ‖E_low‖²_w = N(p*) = p*(0) (OU kernel:
