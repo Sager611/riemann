@@ -77,6 +77,24 @@ n^{1−2k} (n → ∞) unconditionally"). Its first terms: `S̄_n = t(n) + 3/4 +
 def VorosTS : Prop :=
   ∃ C : ℝ, ∃ n₀ : ℕ, ∀ n : ℕ, n₀ ≤ n → |vorosTrend n - liTrend n - 3 / 4| ≤ C / n
 
+/-- **Off RH, `λ_n` grows exponentially along a subsequence** (A. Voros, Sharpenings of Li's
+criterion for the Riemann Hypothesis, Math. Phys. Anal. Geom. 9 (2006) 53–63, arXiv math/0506326,
+TeX l.55–60: "As a result, λ_n takes one of two sharply distinct and mutually exclusive asymptotic
+forms: if RH is true, λ_n will grow tamely according to (RER); if RH is false, λ_n will oscillate
+with an exponentially growing amplitude, in both + and − directions, as described by (RS)";
+TeX l.284–299: "This result can also be confirmed rigorously and more directly: ... implying that
+the Taylor coefficients of f (namely, the λ_n) indeed have the asymptotic form
+λ_n ∼ Σ_{|z_k|<1} z_k^{−n} + c.c. (mod o(e^{εn}) ∀ε > 0), n → ∞ ... Concretely, λ_n then
+oscillates between exponentially growing values of both signs"; E. Bombieri, J. C. Lagarias,
+Complements to Li's criterion for the Riemann hypothesis, J. Number Theory 77 (1999) 274–287,
+Theorem 1(c), as cited by J. C. Lagarias, arXiv math/0404394, TeX l.519–524: "If the Riemann
+hypothesis does not hold for L(s, π) then the incomplete Li coefficient term λ_n(√n, π) will
+sometimes be very large, of size exponential in n. This fact was already observed for the Riemann
+zeta function in [BL99, Theorem 1(c)]"). Stated weaker: one sign, `|λ_n| ≥ e^{cn}` infinitely
+often. -/
+def LiExpGrowth : Prop :=
+  ¬ RiemannHypothesis → ∃ c > (0 : ℝ), ∃ᶠ n : ℕ in atTop, Real.exp (c * n) ≤ |lam n|
+
 /-- The literature inputs, bundled. -/
 structure LiteratureInputs : Prop where
   zeta_unit_interval : ZetaNoZerosUnitInterval
@@ -87,5 +105,6 @@ structure LiteratureInputs : Prop where
   selberg : SelbergS2
   montgomery : MontgomeryPC
   voros : VorosTS
+  li_exp : LiExpGrowth
 
 end LeanLi
