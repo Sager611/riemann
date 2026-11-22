@@ -18,6 +18,6 @@
 
 **RH relevance:** N5 (the rate of the Nyman–Beurling distance under RH: the conjectured exact constant for the continuous problem; for the discrete d_N the remaining step is the integer-dilation penalty P(N) = o(1/log N)).
 
-**Lean.** BLOCKED-MEMCAP (22 Nov 2026): the statement's minimal import, Mathlib.NumberTheory.LSeries.RiemannZeta (riemannZeta, RiemannHypothesis), exceeds the 290 MB cap in every form; measurements and options in [LeanNBRate/STATUS.md](../Riemann/Deep/LeanNBRate/STATUS.md); Adrian decides.
+**Lean.** In progress (LeanNBRate, 22 Nov 2026): dual bound U2 (Theorem R′ + Corollary) formalized sorry-free; U1 construction, closure and assembly remain; [STATUS.md](../Riemann/Deep/LeanNBRate/STATUS.md).
 
 **Files.** [Riemann/Deep/DbarNB/](../Riemann/Deep/DbarNB/) (REPORT.md, DERIVATION.md, dbarnb_falsify.py, logs/); [Riemann/Deep/ExploreDbar/](../Riemann/Deep/ExploreDbar/) (the reduction, REPAIR.md).
