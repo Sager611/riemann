@@ -1,4 +1,4 @@
-# LeanNBRate — PLAN (lemma DAG, Lean interfaces) — revised 22 Nov 2026 (session 2)
+# LeanNBRate — PLAN (lemma DAG, Lean interfaces) — revised 22 Nov 2026 (session 4)
 
 Target: discoveries/nyman-beurling-continuous-rate.md, Claim (a)–(c). Proof sources: DbarNB/DERIVATION.md [N],
 ExploreDbar/REPAIR.md [R], ExploreDbar/DERIVATION.md [X], DbarAudit/FULLPROOF.md [F]. Restructured for Lean; every
@@ -32,39 +32,30 @@ MainClaim: RH → Summable ∧ Tendsto (log(1/λ)·nbDist²) (𝓝[>]0) (𝓝 S)
   interpolates at Z with multiplicity (Z symmetric: needs mult(conj ρ) = mult ρ), ‖E_low‖²_w = N(p*) = p*(0) (OU kernel:
   ∫e^{−ixt}w = e^{−|x|/2}, reproducing identity), |E_low(s)|² ≤ N(p*)·N(e_s) (C-S).
 
-## 3. U1 (to do) — design revised 22 Nov (session 3): single infinite contours, no tiles, no Stirling
-Constants: L large, ℓ = L − √L, T₁ = L², T₂ ∈ [L⁶, L⁶+1] good height (T9.7), T₂′ ∈ [T₂−2, T₂−1] good height.
-- Dual (Dual.lean): V = ℂ-span of u^k e^{iγu} (γ = ordinates of zeros with |γ| ≤ T₂, both signs, k < m_ρ), functions ℝ→ℂ.
-  N(f,g) = ∫_0^ℓ(f′ḡ′ + ¼fḡ) + ½(f(0)ḡ(0) + f(ℓ)ḡ(ℓ)); definite on V (N(f)=0 ⇒ f=0 on [0,ℓ] ⇒ f=0, identity thm
-  for real-analytic f). Type synonym EZ with InnerProductSpace.ofCore; Riesz (toDual) ⇒ p* with N(f,p*) = f(0) ∀f∈V.
-  p* is an ExpSum with ZeroConfig ⇒ U2: p*(0) = N(p*) ≤ (S+ε)/ℓ. E_low(s) := N(e_s, p*), e_s(u) = e^{−(s−½)u}.
-  Facts: entire; E_low^{(k)}(ρ) = δ_{k0} (k < m_ρ) ⇒ order(1−E_low, ρ) ≥ m_ρ; |E_low(w)|² ≤ N(e_w)·N(p*) (C–S);
-  ‖E_low‖²_w = N(p*) via E_low(½+it) = ∫e^{−itu}dν̄*, ν* = (−p*″+¼p*)du + (½p*(0)−p*′(0))δ₀ + (½p*(ℓ)+p*′(ℓ))δ_ℓ,
-  ∫e^{−ixt}w dt = e^{−|x|/2} (Fourier inversion of e^{−|x|/2}), Green identity ∫e^{−|u−v|/2}dν*(v) = p*(u).
-- Window (Window.lean): φ = twin(2/T₁)/∫twin ≥ 0 on [0,2/T₁], Φ(s) = ∫φ(u)e^{−(s−½)u}du. |Φ(½+it)| ≤ 1,
-  |1−Φ(½+it)| ≤ 2|t|/T₁, Gevrey decay |Φ(σ+it)| ≤ C e^{−c√(|t|/T₁)} for −2 ≤ σ ≤ 3 (IBP n times, n ≈ √(|t|/T₁)).
-- H := (1 − E_low)Φ. Kernel κ(x) = e^{−(L−1)x}. D(s,w) := dslope ζ w s (= ζ[s,w]).
-  Ω = [−½, 3/2]×[T₂,∞), Ω̄ its conjugate. K(s) = (2πi)⁻¹∫_{∂Ω}H(w)κ(s−w)D(s,w)/ζ(w)dw (+ Ω̄), analytic on ℂ∖{1}.
-  J(s) = (2πi)⁻¹∫_{∂Ω}H(w)κ(s−w)/((s−w)ζ(w))dw, analytic off ∂Ω. Cauchy (rectangles [−½,3/2]×[T₂,R], R→∞, H decays;
-  Goursat (Mathlib) + ∮1/(w−s) = 2πi (port PNT+ ResidueCalcOnRectangles)) ⇒ K = ζJ + H·1_Ω.
-  Trivial zeros: R_tr(s) = Σ_k r_k e^{−(L−1)(s+2k)}/(s+2k), r_k = (H−K)(−2k)/ζ′(−2k); ζ′(−2k) = Λ(2k+1)π^{−k}(−1)^k k!/2
-  (ζ = Λ/Γℝ, (1/Γ)′(−k) = (−1)^k k!), |r_k| super-exponentially small.
-  G₀ := (H − K)/ζ − R_tr; removable singularities at zeros (inside Ω: = −J − R_tr; low zeros: order(H) ≥ m_ρ;
-  −2k: simple pole cancelled; s = 1: 1/ζ → 0) ⇒ G entire (limUnder update / toMeromorphicNFOn).
-- Line bounds: 1 − ζG = (1−Φ) + ΦE_low + K + ζR_tr on σ = ½; |K(s)| ≤ (|ζ(s)|+1)·tiny (|H| ≤ e^{−cL²} on ∂Ω,
-  |1/ζ| ≤ ζ(3/2) on σ = 3/2, ≤ 4πζ(3/2) on σ = −½ (exact: ζ = Λ/Γℝ, Λ(s)=Λ(1−s), |Γ(¾+iy)| = |(−¼+iy)Γ(−¼+iy)|),
-  ≤ CT₂^A on the bottom side; D(s,w) near the crossing via ζ′ bound from (2.1.5): |ζ(z)| ≤ |z|(1/Re z + 1/(1−Re z))).
-  ∫|ζ(½+it)|²w < ∞ from the Mellin identity for ρ(1/x). ⇒ ‖1−ζG‖²_w ≤ (1+L^{−1/2})N(p*) + O(L^{−3/2}).
-- Growth (for PW; constants may depend on L): σ ≥ 7/4: H/ζ − J, |1/ζ| ≤ ζ(7/4); inside Ω off ∂Ω: −J; compact
-  |t| ≤ T₂+2, bounded σ: continuity; near ∂Ω sides: PL in vertical strips [−3/2, ½] (boundary: σ = −3/2 good line,
-  σ = ½ inside Ω / compact) and right side analog; left half-plane: PL in strips between good lines σ = ½−n
-  (|1/ζ(½−n+it)| = π^n/Π_{j<n}|s/2+j|·|1/ζ(½+n−it)|, elementary), crude a priori bounds (|Γ(z)| ≤ Γ(Re z), reflection,
-  duplication), max principle on discs around −2k. Result |G(s)| ≤ C(1+|s|)^N e^{(L−1)max(0,−σ)}.
-- PW (Rudin 19.3) on f(z) = e^{−i(a/2)z}·(G·M^{N+2})(c − iz), M(s) = (1−e^{−δs})/(δs); support [−ε, a+ε]; shift by e^{−εs}
-  ⇒ G̃ = ĝ, g ∈ L² supported in [0, L]; DCT as δ, ε → 0.
-- Closure (Mellin.lean): ‖χ − Σc_kρ_{θ_k}‖² = (2π)⁻¹∫|1 + ζ(s)Σc_kθ_k^s|²/|s|² (Plancherel L¹∩L² input + mellin_eq_fourier
-  + (2.1.5) ⇒ M[ρ_θ](s) = −θ^sζ(s)/s); continuous g: Riemann sums + DCT; L² g: L¹-density; constraint via G̃ − G̃(1)·1
-  (θ = 1 term), |G(1)| tiny (= −J(1) − R_tr(1)).
+## 3. U1 — design v4 (session 4): explicit g by inverse Laplace, no PW, no growth bounds, no entire G
+Constants: L = log(1/λ) large, ℓ = L − √L (dual/U2), T₁ = L², n ≈ L, a = 2/(nT₁), T₂ ∈ [L⁶, L⁶+1] good height (T9.7,
+σ ∈ [−1,2]); Ω = [−1,2]×[T₂,∞), Ω̄ mirror; line c = 3; κ(x) = e^{−Lx}; w = 1/(2π(¼+t²)).
+✓ Dual1–5: W = L²(0,ℓ)²×ℂ² (Temb), Riesz representer p* (ExpSum, ZeroConfig), N(p*) ≤ (S+ε)/ℓ (U2), E_low(s) = N(e_s,p*)
+  entire, Green form E_low(s) = ∫e^{−(s−½)u}conj(gDens) + conj(gA) + e^{−(s−½)ℓ}conj(gB), |E_low| ≤ √N(e_s)√N(p*).
+- Window: M_a(x) = ∫_0^1 e^{−axv}dv, Φ(s) = M_a(s−½)^n: |Φ| ≤ 1, |1−Φ| ≤ |t|/T₁ on the line; |Φ| ≤ (2e^{a|σ−½|}/(a|t|))^n.
+- H = (1−E_low)Φ (vanishes to order m_ρ at low zeros: E_low^{(k)}(ρ) = N((−u)^k e_ρ, p*) = δ_{k0}); F = H/ζ.
+- g(u) = (2π)⁻¹∫F(3+iy)e^{u(3+iy)}dy (continuous); Ĝ(s) = ∫_0^L g e^{−us} = (2π)⁻¹∫F(z)(1−κ(s−z))/(s−z)dy (Fubini).
+- Contour (σ_s > 3), Ψ₀ = F/(s−·), Ψ = Fκ(s−·)/(s−·): VI(Ψ₀,3) = 2πiF(s) (strip [3,c'], pole s, c'→∞);
+  VI(Ψ,3) = VI(Ψ,2) = VI(Ψ,−1) + Rect[−1,2]×[−T₂,T₂] (= 0: removable at low zeros, 1) + UpperU − LowerU (PNT+
+  DiffVertRect) and VI(Ψ,−1) = VI(Ψ,½−n) + 2πiΣ_{−2k>½−n}A_k, A_k = H(−2k)κ(s+2k)/((s+2k)ζ′(−2k)); n→∞ ⇒
+  Ĝ = F − R_tr − J, R_tr = ΣA_k, J = (2πi)⁻¹(UpperU − LowerU)(Ψ).
+- K(s) = (2πi)⁻¹(UpperU−LowerU)(w ↦ H(w)κ(s−w)dslope ζ w s/ζ(w)), analytic on ℂ∖{1} (parametric integral +
+  Cauchy estimates); K = ζJ off Ω̄∪Ω̄c (Cauchy–Goursat on the half-strip); identity theorem on ℂ∖({1}∪{−2k})
+  (countable complement, path-connected) ⇒ on the line 1 − ζĜ = (1−Φ) + ΦE_low + K + ζR_tr.
+- Line bounds: ‖1−Φ‖²_w ≤ 4/T₁; ‖ΦE_low‖²_w ≤ ‖E_low‖²_w = N(p*) (ŵ = e^{−|x|/2} by Fourier inversion; Green:
+  ∫e^{−|u−v|/2}dν = p*(v) by two FTCs); |K| ≤ tiny·(1+|ζ|) (split dslope = ζ(s)/(s−w) − ζ(w)/(s−w) for |s−w| ≥ 1/8,
+  |ζ′| ≤ C|z| near the line from (2.1.5) + Cauchy); |ζR_tr| ≤ |ζ|·C√L e^{−(5/4)√L}; Nyman: c₀ = Ĝ(1), |Ĝ(1)| tiny.
+- ζ/Γ facts: |Γ(z)| ≤ Γ(Re z); |Γ(½+it)|² = π/cosh πt; PL on [½,3/2] ⇒ |Γ(z)| ≤ √(2π)(|z|+1)e^{−π|Im z|/2};
+  1/ζ(s) = 2(2π)^{−s}Γ(s)cos(πs/2)/ζ(1−s) (Re s < 0, s ∉ −ℕ) ⇒ polynomial |1/ζ| on lines/strips left; zeros in Re < 0
+  are −2k, ζ′(−2k) = (−1)^k(2k)!ζ(2k+1)/(2(2π)^{2k}); |1/ζ| ≤ ζ(σ) (σ > 1, Möbius L-series).
+- Rect.lean: port PNT+ (ResidueTheoremInRectangle, DiffVertRect_eq_UpperLowerUs); Strip lemma (finite simple poles,
+  decay, T→∞), UpperU vanishing (holomorphic half-strip, decay), removable-point extension for Cauchy–Goursat.
+- Closure: nymanDist_sq_le_laplace with g̃ = −g, c₀ = Ĝ(1) (constraint exact), L·D_N(e^{−L})² ≤ L(√N(p*) + small)².
 
 ## 4. Literature inputs (LitInputs.lean)
 Burnol 2002; Nazarov/Friedland–Yomdin Turán; Goldston–Gonek 2007; Titchmarsh 9.2, 9.7, (2.1.5); Rudin 19.3 (PW);
