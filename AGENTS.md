@@ -70,3 +70,4 @@ Goal: ended 2026-11-20 (possible RH proofs, see README); do not resume.
 | 2026/11/20 18:26 | orchestrator | DISCOVERIES: Chebotarev least-prime constants moved to RECORDS; the 18:16 move re-checked (10 candidates true records, no duplicates) | Adrian: discovery gate |
 | 2026/11/21 12:12 | orchestrator | Goal: ended; do not resume | Adrian: possible RH proofs by Alpöge and Masullo (README) |
 | 2026/11/21 19:42 | orchestrator | Moot results (follow from Alpöge's RH + Dirichlet GRH) archived: SUPERSEDED.md, banners on 22 discovery pages, markers in DISCOVERIES/RECORDS, notes in NOGO/REFUTATIONS | Adrian |
+| 2026/11/21 20:05 | orchestrator | DISCOVERIES regrouped: ranked survivors after Alpöge (★ now unconditional, [Masullo-risk]), superseded, published first; linear combinations and GL(2) 7.005% promoted from RECORDS | Adrian |
