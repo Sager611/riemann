@@ -1,46 +1,48 @@
-# T4 plan (preliminary; blocked before the first compile, see STATUS.md)
+# T4 plan
 
-Page: discoveries/prefix-reversals.md (Claim); proofs: ../PrefixRev/NOTE.md; reusable Lean: ../PrefixRev/Lean (copy, namespace Riemann.Deep.LeanPrefix).
+Page: discoveries/prefix-reversals.md (Claim); proofs: ../PrefixRev/NOTE.md; reused Lean: ../PrefixRev/Lean (copied, namespace Riemann.Deep.LeanPrefix).
+Build: bash Riemann/Deep/LeanPrefix/tools/mk.sh <Mod>... (one lean at a time, leanrun.sh, .olean into .lake/build/lib/lean).
 
-## Main statement (sketch)
-
-~~~lean
-def rev (n i : ℕ) : Equiv.Perm (Fin n)          -- copy of PrefixRev.rev: x ↦ i-1-x (x < i ≤ n), 0-based
-def G (n m k : ℕ) : Subgroup (Equiv.Perm (Fin n)) := Subgroup.closure {rev n n, rev n m, rev n k}
-def dihedralPerm (q : ℕ) : DihedralGroup q →* Equiv.Perm (ZMod q)   -- r i • x = i + x, sr i • x = i - x
-abbrev Wreath (α q : ℕ) := (ZMod q → DihedralGroup α) ⋊[wreathAct α q] DihedralGroup q  -- D_{2α} ≀ D_{2q}, q-gon action
-
-theorem prefix_reversals (hOff : OffLineLZZW) :
-  (∀ n m k, 2 ≤ k → k < m → m < n → m + k < n →                       -- Theorem A
-    (G n m k = ⊤ ↔ n % 2 = 1 ∧ m + k = n - 1 ∧ Nat.gcd (m+1) (k+1) = 1 ∧ ¬ (k+1) ∣ m ∧ ¬ (n % 4 = 1 ∧ 4 ∣ k))) ∧
-  (∀ n m k, 2 ≤ k → k < m → m + k = n - 1 →                            -- B.1, any parity; g = gcd(m+1, k+1)
-    (∀ x y : Fin n, y ∈ MulAction.orbit (G n m k) x ↔
-        ((y:ℤ)+1 ≡ (x:ℤ)+1 [ZMOD g] ∨ (y:ℤ)+1 ≡ -((x:ℤ)+1) [ZMOD g])) ∧
-    Nat.card (MulAction.orbitRel.Quotient (G n m k) (Fin n)) = g / 2 + 1 ∧
-    (MulAction.IsPretransitive (G n m k) (Fin n) ↔ g = 1)) ∧
-  (∀ n m k, 2 ≤ k → k < m → m + k = n - 1 → n % 2 = 1 → (k+1) ∣ n →   -- B.3 (α | n forces g = 1)
-    ¬ MulAction.IsPreprimitive (G n m k) (Fin n) ∧ Nonempty (G n m k ≃* Wreath (k+1) (n/(k+1)))) ∧
-  (∀ n m k, 2 ≤ k → k < m → m + k = n - 1 → n % 2 = 1 → Nat.gcd (m+1) (k+1) = 1 → ¬ (k+1) ∣ n →   -- B.4
-    MulAction.IsPreprimitive (G n m k) (Fin n) ∧ alternatingGroup (Fin n) ≤ G n m k ∧
-    (G n m k = alternatingGroup (Fin n) ↔ n % 4 = 1 ∧ 4 ∣ k))
-~~~
-Deviation to argue: the Claim's "when α | n ... otherwise primitive ⊇ A_n" carries Theorem B's hypotheses (n odd; g = 1 for B.4); without them it is false (g > 1: intransitive; n even: two blocks, B.2). Optional extras: B.2; B.3 block sizes (NOTE, not in the Claim).
+## Main statement (Main.lean, prefix_reversals)
+Hypotheses: (hOff : LZZW2026_Thm3_1) (hJ : Jones2014_Thm1_2_k0). Conclusion, with g = gcd(m+1, k+1), α = k+1, q = n/α:
+1. Theorem A: 2 ≤ k < m < n, m + k < n ⇒ (G = ⊤ ↔ n odd ∧ m + k = n - 1 ∧ gcd = 1 ∧ ¬(k+1) ∣ m ∧ ¬(n % 4 = 1 ∧ 4 ∣ k)).
+2. B.1 (line, any parity): y ∈ orbit x ↔ y+1 ≡ ±(x+1) (mod g); card (orbitRel.Quotient) = g/2 + 1; IsPretransitive ↔ g = 1.
+3. B.2 (n even, g = 1): IsPretransitive ∧ ¬IsPreprimitive ∧ a block B with 2·|B| = n.
+4. B.3 (n odd, α ∣ n): ¬IsPreprimitive, interval blocks, G ≃* (ZMod q → DihedralGroup α) ⋊ DihedralGroup q (q-gon action), |G| = (2α)^q·2q.
+5. B.4 (n odd, g = 1, α ∤ n): IsPreprimitive ∧ alternatingGroup ≤ G ∧ (n % 4 = 1 ∧ 4 ∣ k → G = alternatingGroup) ∧ (¬… → G = ⊤).
+Reading of the Claim: "when α ∣ n … otherwise primitive ⊇ A_n" carries NOTE Thm B's hypotheses (n odd; g = 1): false without them,
+e.g. (12,8,3) (α ∣ n, |G| < 8^3·6), (10,6,3) (n even, g = 1, α ∤ n: two blocks), (11,8,2) (g = 3: intransitive).
 
 ## Lemma DAG
-| # | Lemma | Status |
+| Module | Content | Status |
 |---|---|---|
-| 1 | Lemma 1, Lemma 2, P n-cycle, parity, interval blocks, Lemma 3 + (★_d), necessity on the line | proved in ../PrefixRev/Lean (copy) |
-| 2 | Orbits for any g: P is transitive on each class x+1 ≡ c (mod g) (first return of x ↦ x+α on Z/(n+1)); r_n joins c, -c; orbit count g/2+1 via cls | new |
-| 3 | Prop5Core: (★_d), 1 < d < n, d ∣ n ⇒ (k+1) ∣ m (NOTE Steps 1-4, ℕ arithmetic, lap counting) | new, ours |
-| 4 | Bridge: PrefixRev.IsPrimitive ↔ MulAction.IsPreprimitive (IsBlock ↔ g•B = B ∨ Disjoint) | new |
-| 5 | A_n ≤ G (primitive case), route C or J below | new |
-| 6 | G = A_n ↔ n ≡ 1 (4) ∧ 4 ∣ k: sign_rev + alternatingGroup = sign.ker | easy |
-| 7 | B.3: interval blocks ⇒ ¬IsPreprimitive; Lemma 6: G = image of Wreath under its imprimitive action on ZMod q × ZMod α transported by x ↦ (x / α, x % α); faithful ⇒ G ≃* Wreath | new (Mathlib has only RegularWreathProduct, order (2α)^{2q}·2q: wrong object) |
-| 8 | Off the line: literature input OffLineLZZW = 2610.30892 Thm 3.1, first sentence (as in ../PrefixRev/LEAN.md), or prove NOTE §1 | input |
+| Defs … PrimB2, Small | copied: Lemmas 1-3, (★_d), parity, necessity, interval blocks, kernel G = ⊤ for (7,4,2), (11,6,4), (13,10,2) | compiled |
+| Prim0 | IsBlockOf, IsPrimitive, fix_rk_card, rk_ne_one, even_of_coprime | compiled |
+| Bridge | IsBlockOf ↔ MulAction.IsBlock; IsPrimitive ↔ MulAction.IsPreprimitive | todo |
+| OrbitsB | P^t reaches every y with y+1 ≡ x+1 (mod g) (first return); orbit = O_c; orbit count; transitivity | todo |
+| Prop5A | pure arithmetic: Star' (runs of y_s = sΔ mod N, Δ = αd mod N, constant on I = [1, α-1] for runs i ≤ d-2) ⇒ α ∣ n | todo |
+| Prop5B | StarD ⇒ Star'; Prop5Core; primitivity (α ∤ n) | todo |
+| Lemma7 | involution form: g² = 1, g ≠ 1 induced by a σ-semilinear bijection of F^d (d ≥ 2) on ℙ ⇒ 2·nfix ≤ |ℙ| unless (d,q) = (2,4) | todo |
+| Jones | literature input Jones2014_Thm1_2_k0 (verbatim TeX in docstring); A_n ≤ G on the odd primitive line | todo |
+| Small23 | kernel G = ⊤ for (23,18,4), (23,16,6), (23,12,10) (Jones case (c)) | todo |
+| Wreath | dihedralPerm (q-gon action), Wreath α q, faithful imprimitive action, image = G (Lemma 6), iso, order | todo |
+| Main, Check | assembly; #print axioms | todo |
 
-## A_n ≤ G
-- Route J (NOTE): Jones 2014 Thm 1.2, k = 0 (literature input; case (b) needs Mathlib's Projectivization and semilinear maps over a finite field) + Lemma 7 (ours: eigenspaces, Hilbert 90; must be proved). Statement cone grows to 683 MB .olean (memprobe.txt).
-- Route C (no CFSG, no Lemma 7): a 3-cycle in G, then Mathlib's Equiv.Perm.alternatingGroup_le_of_isPreprimitive_of_isThreeCycle_mem (GroupAction/Jordan.lean; the prime-cycle version is a Mathlib TODO). If h ∈ G and |h(I) ∩ I| = 1 for I = supp r_k = [1, k], then (r_k · h r_k h⁻¹)² is a 3-cycle. Numerics (n ≤ 301, 4259 primitive line triples): h = P^t works in 3453; the 806 failures (smallest (29,16,12)) need longer words, e.g. h = (r_m r_k)^4 r_m r_n r_m for (33,18,14), r_m r_n r_m r_k r_m r_k r_m r_k r_m r_n r_m r_n r_m for (29,16,12). A uniform construction is open: research before choosing route C.
+## Prop 5 core (Prop5A), proof used
+N = α + β, n = N - 1 = dL (d, L ≥ 3 odd), Δ = αd mod N, Y(s) = sΔ mod N (s ∈ [1, n], a bijection onto [1, n]), LΔ ≡ -α.
+Star': for i ≤ d-2 and s, s' ∈ (iL, (i+1)L]: Y(s) ∈ I ↔ Y(s') ∈ I (I = [1, α-1]).
+- Case 1 (no run i ≤ d-2 meets I): τ with Y(N-τ) = 1, τ ≤ L-1; induction xτ ≤ L-1 (x < α); ατ = L (Y injective) ⇒ α ∣ L.
+- Case 2 (run i ⊆ I): consecutive differences all equal D ≡ Δ, |D| ≤ (α-2)/(L-1); LD + α ∈ {0, N}.
+  LD = β: Δ = β/L, run 0 = {Δ, …, β} meets and misses I: contradiction. LD = -α: λ = α/L, Δ = N - λ.
+  For 1 ≤ t ≤ λ-1, ρ = tβ mod α, i = t-1 + ⌊tβ/α⌋ ≤ d-2: Y((i+1)L) = ρ ∈ I, Y(iL+1) = ρ + α - λ ⇒ ρ ≤ λ-1.
+  λ ≥ 2 ⇒ r = β mod α ∈ [1, λ-1]; r ≥ 2: t = ⌈λ/r⌉ gives ρ = tr ∈ [λ, 2λ-2]: contradiction. So λ = 1 or r = 1 ⇒ α ∣ n.
 
-## Memory plan
-Statement file imports Alternating, Primitive, Dihedral, SemidirectProduct (cone 555 MB .olean, ~320 MB footprint est.); proof files Perm.Sign/Closure only (246-281 MB footprint on 12 Nov); one lemma per small file; lean --threads=1, no lake.
+## Lemma 7 (involution form), proof used
+f̄² = id ⇒ f² = μ·id, σ² = id (d ≥ 2). σ = id: fixed points ⊆ ℙ(V_λ1) ∪ ℙ(V_λ2) (λ² = μ), V_λ1 ∩ V_λ2 = 0 ⇒ |V_λ1||V_λ2| ≤ q^d,
+each ≤ q^{d-1}: (q-1)|Fix| ≤ q^{d-1}+q-2 (q ≥ 3), ≤ 2^{d-1}-1 (q = 2). σ ≠ id: F₀ = Fix σ, |F| = |F₀|² (x = a + bω);
+W = {v : f v = λ₀v}: Hilbert 90 (c = y + ν⁻¹σ y) puts every fixed point in W; (a, b) ↦ a + ωb injective ⇒ |W| ≤ q₀^d;
+(q₀-1)|Fix| ≤ |W| - 1. Both ≤ n/2 = (q^d-1)/(2(q-1)) unless (d, q) = (2, 4).
+
+## A_n ≤ G (B.4)
+Primitive (Prop 5) + n-cycle P + ¬(A_n ≤ G) ⇒ Jones (a) n prime, G affine: r_k ≠ 1 fixes ≥ 2 points, impossible;
+(b) G ≤ PΓL_d(q): r_k involution ≠ 1 fixes m+1 > n/2 points, contradicts Lemma 7 ((d,q) = (2,4) ⇒ n = 5); (c) n ∈ {11, 23}: kernel G = ⊤.
