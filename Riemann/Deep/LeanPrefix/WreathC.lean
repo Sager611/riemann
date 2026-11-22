@@ -68,6 +68,8 @@ theorem line_B3 {n m k : ℕ} (hk : 2 ≤ k) (hkm : k < m) (hline : n = m + k + 
     (hodd : n % 2 = 1) (hdiv : (k + 1) ∣ n) :
     ¬ MulAction.IsPreprimitive (G n m k) (Fin n) ∧
     (∀ i : ℕ, MulAction.IsBlock (G n m k) {x : Fin n | x.val / (k + 1) = i}) ∧
+    (∃ e : Fin n ≃ ZMod (n / (k + 1)) × ZMod (k + 1),
+      (wreathPerm (k + 1) (n / (k + 1))).range.map e.symm.permCongrHom.toMonoidHom = G n m k) ∧
     Nonempty (G n m k ≃* Wreath (k + 1) (n / (k + 1))) ∧
     Nat.card (G n m k) = (2 * (k + 1)) ^ (n / (k + 1)) * (2 * (n / (k + 1))) := by
   obtain ⟨q, hq⟩ := hdiv
@@ -96,7 +98,10 @@ theorem line_B3 {n m k : ℕ} (hk : 2 ≤ k) (hkm : k < m) (hline : n = m + k + 
     rw [isBlock_iff_isBlockOf]
     exact isBlockOf_fibre (fun x : Fin n => x.val / (k + 1)) _ (G_le_intervals hline hkm ⟨q, hq⟩) i
   have hiso := G_mulEquiv_wreath hn hm rfl hq3 (by omega) hαodd
-  refine ⟨?_, hblocks, hiso, ?_⟩
+  have hperm : ∃ e : Fin n ≃ ZMod q × ZMod (k + 1),
+      (wreathPerm (k + 1) q).range.map e.symm.permCongrHom.toMonoidHom = G n m k :=
+    ⟨blockEquiv hn, by rw [← MonoidHom.range_comp]; exact wreath_range hn hm rfl hq3 (by omega) hαodd⟩
+  refine ⟨?_, hblocks, hperm, hiso, ?_⟩
   · intro hp
     have htriv := hp.isTrivialBlock_of_isBlock (hblocks 0)
     rcases htriv with h | h
