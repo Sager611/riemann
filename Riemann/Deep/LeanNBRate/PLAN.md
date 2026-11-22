@@ -1,53 +1,53 @@
-# LeanNBRate — PLAN (lemma DAG, Lean interfaces)
+# LeanNBRate — PLAN (lemma DAG, Lean interfaces) — revised 22 Nov 2026 (session 2)
 
-Target: discoveries/nyman-beurling-continuous-rate.md, Claim (a)–(c). Proof: DbarNB/DERIVATION.md [N], ExploreDbar/REPAIR.md [R],
-ExploreDbar/DERIVATION.md [X], audited chain DbarAudit/FULLPROOF.md [F]. Restructured below for Lean; every deviation from [N]/[R]
-is a re-proof, not an input. Notation: L = log(1/λ), ℓ = L − √L, s = ½ + it on the line, w(t) = 1/(2π(¼+t²)),
-‖F‖² = ∫|F|²w, N_ℓ(p) = ∫_0^ℓ(|p′|² + ¼|p|²) + ½|p(0)|² + ½|p(ℓ)|².
+Target: discoveries/nyman-beurling-continuous-rate.md, Claim (a)–(c). Proof sources: DbarNB/DERIVATION.md [N],
+ExploreDbar/REPAIR.md [R], ExploreDbar/DERIVATION.md [X], DbarAudit/FULLPROOF.md [F]. Restructured for Lean; every
+deviation from [N]/[R] is a re-proof, not an input. L = log(1/λ), ℓ = L − √L, s₀ = L^{−3/4}, T₂ ∈ [L⁶, L⁶+4] good height,
+w(t) = 1/(2π(¼+t²)), Q_ℓ(p) = ∫_0^ℓ(|p′|² + ¼|p|²) (≤ N_ℓ(p), endpoint terms dropped: they are ≥ 0).
 
-## 0. Statement (Defs.lean, Main.lean)
-- volPos = volume.restrict (Ioi 0); L2pos = Lp ℝ 2 volPos; nbFun θ x = Int.fract (θ/x); chiVec = class of 1_(0,1).
-- nbSet λ = {f | ∃ θ ∈ Icc λ 1, f =ᵐ nbFun θ}; nbDist λ = infDist chiVec (span ℝ (nbSet λ)).
-- nymanSet λ = {f | ∃ n c θ, (∀k, θ k ∈ Icc λ 1) ∧ Σ c k θ k = 0 ∧ f =ᵐ Σ c k nbFun (θ k)}; nymanDist λ = infDist chiVec (nymanSet λ).
-- NTZ = {ρ // ζ ρ = 0 ∧ 0 < re ρ < 1}; mult ρ = analyticOrderNatAt riemannZeta ρ; S = Σ' m²/‖ρ‖².
-- MainClaim: RH → Summable ∧ Tendsto (log(1/λ)·nbDist²) (𝓝[>]0) (𝓝 S) ∧ ((∀ρ, mult ρ = 1) → S = 2+γ−log 4π)
-  ∧ Tendsto (log(1/λ)·nymanDist²) (𝓝[>]0) (𝓝 S).
+## 0. Statement (Defs.lean; Main.lean to do)
+MainClaim: RH → Summable ∧ Tendsto (log(1/λ)·nbDist²) (𝓝[>]0) (𝓝 S) ∧ ((∀ρ, mult ρ = 1) → S = 2+γ−log 4π) ∧ same for nymanDist.
 
-## 1. Assembly (Main.lean)
-- lower: Burnol (input, complex L²) + nbDist_R = nbDist_C (ours) ⇒ liminf ≥ S; nymanDist ≥ nbDist (nymanSet ⊆ span).
-- upper: U1 + U2 ⇒ limsup L·nymanDist² ≤ S; nbDist ≤ nymanDist.  value: Davenport input + RH.  summable: zero-count input.
+## 1. Assembly (Main.lean, to do)
+- lower: Burnol input (complex L², Ioc) ⇒ nbDist ≥ nbDistC (real span embeds isometrically) ⇒ liminf ≥ S; nymanDist ≥ nbDist.
+- upper: limsup L·nymanDist² ≤ S from U1 + U2 (real part of a complex Nyman approximant is a real one).
+- value: Davenport + RH (Re 1/ρ = ½/|ρ|²). summable: Titchmarsh 9.2 count.
 
-## 2. U1 reduction (Mellin, closure, construction)  — [R](3i)(3ii)(3iii)(3v), [N]§6, [X]§7
-- Closure.lean: G entire, |G s| ≤ C(1+|s|)^K e^{a max(0,−σ)}, a ≤ L − ½ ⇒ nymanDist(e^{−L}) ≤ ‖1 − ζG‖ + |G 1|·‖ζ‖.
-  (mollify G·φ̂_δ^K, L² Paley–Wiener [input Rudin 19.3] ⇒ Laplace of h ∈ L²(0,b), b ≤ L; Bochner integral of
-  ρ_{e^{-u}} − e^{-u}ρ_1 lies in closure(nymanSet); Mellin–Plancherel; dominated convergence δ → 0.)
-- Mellin.lean: M(ρ_θ)(s) = −θ^s ζ(s)/s (0<σ<1); Mellin–Plancherel for the L¹∩L² functions used.
-- Window.lean: Φ (spectrum [0,2/T₁]), bounds; Kernel B; Trivial.lean: R_tr; Contour.lean: J (divided-difference contour
-  sums over good-height rectangles), tiling independence; Entire.lean: G := (H − J)/ζ − R_tr extends to an entire
-  function; Growth.lean: (G2); LineBounds.lean: ‖J‖² ≤ e^{−cL²}, ‖ζR_tr‖², ‖1−Φ‖² ≤ C/L², |G 1| small.
-- U1: nymanDist(e^{−L})² ≤ (1 + L^{−1/2})·Ustar + C·L^{−3/2}.
+## 2. U2 (DONE pieces marked ✓)
+✓ ExpSum (jets), turan_expSum, Nikolskii, turan_middle, sup_sq_le, Kernel/Multiplier/MLBound, Bernstein, Markov (w=0).
+✓ LemmaB (one group, γ² gain), LemmaLambda (frequency leakage, polynomial decay order N), tail_bound,
+✓ LemmaD crude-count form: (1 − ((1+η⁻¹)G+1)2πδ)Σ_g∫|Q_g|² ≤ (1+η)∫|ΣQ_g|² (G = #groups ≤ #zeros ≤ poly(L)).
+✓ Groups.lean (components of the s₀/2-nbhd: separation, width ≤ #g·s₀, grp_mult_le from a short-interval count),
+✓ Config.lean (ExpSum.part T c, nodeSet, groups, gC/gW, groups_sep, part_eval_groups),
+✓ HighR.highR: (1 − Cδ)|p_hi(0)|² ≤ (Σ_g 16(2κ)^{4(M_g−1)}/c_g²)/ℓ·(1+η')∫|p_hi′ψ|².
+✓ Legendre.christoffel: deg P < m ⇒ |P(0)|² ≤ m²∫_0^1|P|²;  LowPart.christoffel_expSum (all nodes 0).
+✓ LowPart: ibp_osc_bound, oubil (B(f,g) = ∫_0^ℓ f′ḡ′ + ¼fḡ), cross_bound (generic, sup bounds in, 1/|γ₁−γ₂| out).
+- TODO LowPart: diagonal Q(e^{iγu}r) ≥ (γ²+¼ − C/ℓ)∫|r|²; Claim F core: Q(p_lo) ≥ (1 − C/ℓ)Σ_j(γ_j²+¼)∫|r_j|²,
+  |p_lo(0)|² ≤ (S_lo/ℓ)·Q(p_lo)/(1 − C/ℓ) (norm_sum_sq_le_of_le + christoffel_expSum).
+- TODO LemmaE′ (no endpoint terms): |B(p_lo,p_hi)| ≤ θ_L (Q(p_lo)·Σ_g∫|Q_g|²)^{1/2}, via cross_bound per (j,g)
+  with group sups (Lemma B by-product, sup_sq_le, Bernstein η = s₀), C-S over g with Σ_g e^{βM_g}/Ω_g² ≤ C(H).
+- TODO U2.lean: Q(p) ≥ Q(p_lo) + ∫|p_hi′ψ|² − 2|B| ⇒ |p(0)|² ≤ ((S_lo + ε + S_hi)/ℓ)Q(p)/(1−θ). Inputs: GG ⇒ M_g ≤
+  A log t/log log t (grp_mult_le); Titchmarsh 9.2 ⇒ #zeros ≤ C T log T, Σ_ρ|γ|^{−3/2} < ∞ (tails → 0).
+- TODO Dual.lean: Hilbert space W = L²(0,ℓ)² × ℂ², T f = (f′, f/2, f(0)/√2, f(ℓ)/√2); f(0) = ⟨Tf, e⟩; p* := preimage of
+  orthogonal projection of e on T(E_Z) ⇒ ⟨f,p*⟩_N = f(0) on E_Z. E_low(s) := ⟨e^{−(s−½)·}, p*⟩_N (entire, explicit),
+  interpolates at Z with multiplicity (Z symmetric: needs mult(conj ρ) = mult ρ), ‖E_low‖²_w = N(p*) = p*(0) (OU kernel:
+  ∫e^{−ixt}w = e^{−|x|/2}, reproducing identity), |E_low(s)|² ≤ N(p*)·N(e_s) (C-S).
 
-## 3. Dual form (Dual.lean) — [N]§1
-- E_Z = span{u^k e^{iγu}}; Ustar Z ℓ := sup |p 0|²/N_ℓ p ≤ 1; p* representer; μ = ν_{p*};
-  E_low(s) = ∫ e^{−u(s−½)} dμ interpolates Z with multiplicities, ‖E_low‖² = Ustar; |E_low z|² ≤ Ustar·N_ℓ(e_z).
-- OU: ∫ e^{−ixt} w(t) dt = e^{−|x|/2}; ‖∫e^{−u(s−½)}dμ‖² = ∫∫e^{−|u−v|/2}dμdμ̄; representer identity.
+## 3. U1 (to do) — design decided
+- Φ: Laplace transform of a Gevrey bump on [0, 2/T₁], ∫φ = 1; |Φ| ≤ 1 on the line, ‖1−Φ‖²_w ≪ L⁻², |Φ| ≤ (CN²/(δ₁|t|))^N.
+- Tiles Q_n = [−½,3/2]×[t_n,t_{n+1}] (good heights from Titchmarsh 9.7, gaps ≥ 2 by choosing t_n ∈ [3n,3n+1]) + mirrors.
+  K_n(s) := (2πi)⁻¹∮_{∂Q_n} H(w)B(s−w)ζ[s,w]/ζ(w)dw, H = ΨΦ, B(x) = ((1−e^{−ax})/(ax))², a = (L−1)/2.
+  Cauchy formula on rectangles (port PNT+/zeta23 ResidueTheoremAtOrigin' for ∮1/(w−s) = 2πi) ⇒ near any high zero
+  H − ΣK = −ζ·ΣJ ⇒ G₀ := (H − ΣK)/ζ − R_tr has nonnegative meromorphic order everywhere; G := toMeromorphicNFOn G₀.
+- R_tr(s) = Σ_k r_k e^{−(L−1)(s+2k)}/(s+2k), r_k = H(−2k)/ζ′(−2k), ζ′(−2k) from Mathlib's functional equation.
+- Growth for PW: maximum principle on rectangles [−¾,7/4]×[t_n,t_{n+1}] (K-form on good heights, J-form on σ = −¾, 7/4);
+  compactness for |t| ≤ T₂+4; σ > 7/4 Dirichlet bound; σ < −¾ functional equation + Gamma bound (input).
+- PW: prove by contour shift (Cauchy on rectangles + Fourier inversion) for mollified G (decay (1+|s|)^{−2}).
+- Closure: Riemann sums Σh(u_k)Δ(ρ_{e^{−u_k}} − e^{−u_k}ρ₁) ∈ nymanSet; dominated convergence on the Mellin side
+  (needs Mellin–Plancherel for these functions: L¹∩L² Plancherel input if Mathlib lacks it) ⇒ nymanDist ≤ ‖1 − ζA‖_w.
 
-## 4. U2 interpolation asymptotics (RH)
-- ClaimF.lean (finite Z_lo, ℓ → ∞): |p(0)|² ≤ ((S_lo+ε)/ℓ)N(p). Christoffel: deg q < m ⇒ |q 0|² ≤ (m²/ℓ)∫_0^ℓ|q|²
-  (explicit dual polynomial, Lagrange); polynomial Nikolskii/Markov constants by finite-dim norm equivalence.
-- Groups.lean: groups at scale s₀ = L^{−3/4}; M_g ≤ M*(|γ_g|) from the RH short-interval count (input Littlewood).
-- Multiplier.lean (replaces [N] Lemma A): r ∈ E_g (M nodes in [−w,w], W = max(w, KM²/ℓ)), Θ = e^{iθx}P(θ) near nodes,
-  |Λ_r(Θ)| ≤ C^{M+deg P}·sup_{[−2W,2W]}|P|·sup_{[0,ℓ]}|r| (Fourier multiplier + Turán–Nazarov tails). Gives r′ bound,
-  Newton coefficients c_k bound.
-- TuranJets.lean: Turán–Nazarov (input, pure exponentials) ⇒ jets by forward-difference limits.
-- LemmaB.lean, Newton.lean (Newton–Hermite expansion; Hermite–Genocchi input or proof), LemmaLambda.lean,
-  LemmaD.lean (constant-C almost orthogonality suffices), LemmaE.lean, HighR.lean (R″ high part), U2.lean.
+## 4. Literature inputs (LitInputs.lean)
+Burnol 2002; Nazarov/Friedland–Yomdin Turán; Goldston–Gonek 2007; Titchmarsh 9.2, 9.7, (2.1.5); Rudin 19.3 (may be
+dropped if PW is proved); Davenport ch.12. Likely additions for U1: convexity |ζ|,|ζ′| ≪ (2+|t|)^B in −1 ≤ σ ≤ 2;
+|1/ζ| bounded on σ = −¾ (|t| ≥ 1) via functional equation/Stirling; L¹∩L² Plancherel (Rudin 9.13) if needed.
 
-## 5. Literature inputs (LitInputs.lean; each a def … : Prop with citation + verbatim statement)
-Burnol 2002 (math/0103058, Thm, TeX l.197–206); Friedland–Yomdin 1107.0039 Thm 1.1 (Nazarov); Goldston–Gonek math/0511092
-(Littlewood, RH: N(t+h)−N(t) − (h/2π)log(t/2π) ≪ log t/log log t); Titchmarsh 9.7 (good heights); Titchmarsh 9.2/9.4
-(zero counts) or zeta23's proofs; Rudin RCA 19.3 (Paley–Wiener); Davenport ch.12 (Σ Re 1/ρ); convexity |ζ| bounds in −1≤σ≤2.
-
-## 6. Order of work
-Defs → LitInputs → Main skeleton (sorry interfaces) → high-zero core (Multiplier, TuranJets, LemmaB, Newton, Λ, D, E) →
-ClaimF → Dual → Contour/Entire/Growth/LineBounds → Mellin/Closure → U1/U2 → remove sorries → reviewers.
