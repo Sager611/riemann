@@ -71,9 +71,12 @@ def Part4 : Prop :=
         |∑' n : ℕ, φ (n / N) * R n - (7 / 4) * ∑' n : ℕ, φ (n / N)| ≤ C * Real.log N
 
 /-- Claim 5. Merlini–Sala–Sala's conjecture `|λ_tiny(n)| ≤ a log n` is false for every `a`, and
-`λ_tiny = O(n^ε)` fails for every `ε < 1/4`: for every trend within `O(1)` of
-`(n/2)(log n - 1 - log 2π + γ)` (their eq. (2): `(n/2) log n - 1.13…·n`), in particular for
-Maślanka's trend `S̄_n` (Voros's `vorosTrend`). -/
+`λ_tiny = O(n^ε)` fails for every `ε < 1/4`. MSS (arXiv 1903.06233): eq. (2) "λ(n) = λ trend(n) +
+λ tiny(n) = (n/2)·log(n) -1.13...(n) ± a·log(n)", with "c =(1/2).( γ-log(2π)-1) = -1.13...", so their
+trend `(n/2) log n + c·n` is exactly `liTrend`; and "the tiny fluctuations connected with the expansion of
+log((s-1)·ζ(s))", i.e. `λ_tiny = λ_n - λ̄_n`, `λ̄_n` the Li coefficients of `π^{-s/2} Γ(1 + s/2)` =
+Voros's `S̄_n` (`vorosTrend`; Bombieri–Lagarias 1999's `S₁(n)`), which is `liTrend + 3/4 + O(1/n)`.
+Both readings are covered: every trend within `O(1)` of `liTrend`, and `vorosTrend` itself. -/
 def Part5 : Prop :=
   (∀ trend : ℕ → ℝ, (∃ C : ℝ, ∀ n, |trend n - liTrend n| ≤ C) →
     (∀ a : ℝ, ¬ ∀ᶠ n : ℕ in atTop, |lam n - trend n| ≤ a * Real.log n) ∧

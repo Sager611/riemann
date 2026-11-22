@@ -35,7 +35,7 @@ noncomputable def liPartial (n : ℕ) (T : ℝ) : ℂ :=
   ∑ᶠ ρ ∈ {ρ : ℂ | ρ ∈ NontrivialZeros ∧ ‖ρ‖ ≤ T}, (mult ρ : ℂ) * (1 - (1 - 1 / ρ) ^ n)
 
 /-- The Li coefficient `λ_n = Σ_ρ [1 - (1 - 1/ρ)ⁿ] := lim_{T → ∞} liPartial n T`
-(the limit exists and is real: see `Zeros.lean`). -/
+(the limit exists and is real: `LeanLi.part0`, LiCoeff.lean). -/
 noncomputable def liCoeff (n : ℕ) : ℂ := limUnder atTop (liPartial n)
 
 /-- `λ_n` as a real number (`liCoeff n` is real). -/
@@ -94,4 +94,3 @@ noncomputable def montgomeryF (α T : ℝ) : ℂ :=
       ((4 / (4 + (ρ.im - ρ'.im) ^ 2) : ℝ) : ℂ)
 
 end LeanLi
-
