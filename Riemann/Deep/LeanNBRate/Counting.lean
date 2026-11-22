@@ -211,6 +211,95 @@ theorem summable_NTZ_of_shells (F : ℝ → ℝ) (hF0 : ∀ t, 0 ≤ F t) (hFa :
   refine (Finset.sum_le_sum hterm).trans ?_
   exact hS.sum_le_tsum _ fun k _ => mul_nonneg (hF0 k) (Nat.cast_nonneg _)
 
+/-- Titchmarsh 9.2 gives shellC k ≤ 4A log(k+1) for large k. -/
+theorem shellC_le (hc : Titchmarsh_Thm9_2) : ∃ A : ℝ, 0 ≤ A ∧ ∃ k₀ : ℕ, ∀ k ≥ k₀,
+    (shellC k : ℝ) ≤ 4 * A * Real.log (k + 1) := by
+  obtain ⟨A, T₀, hT₀, hA⟩ := hc
+  refine ⟨max A 0, le_max_right _ _, ⌈T₀⌉₊ + 3, fun k hk => ?_⟩
+  have hk' : (⌈T₀⌉₊ : ℝ) + 3 ≤ k := by exact_mod_cast hk
+  have hT : T₀ ≤ (k : ℝ) - 1 := by have := Nat.le_ceil T₀; linarith
+  have hk2 : (2 : ℝ) ≤ (k : ℝ) - 1 := by have : (0 : ℝ) ≤ ⌈T₀⌉₊ := Nat.cast_nonneg _; linarith
+  have h1 := hA ((k : ℝ) - 1) hT
+  rw [show (k : ℝ) - 1 + 1 = k by ring] at h1
+  have h2 := hA (k : ℝ) (by linarith)
+  have hl1 : 0 ≤ Real.log ((k : ℝ) - 1) := Real.log_nonneg (by linarith)
+  have hl2 : Real.log ((k : ℝ) - 1) ≤ Real.log (k + 1) := Real.log_le_log (by linarith) (by linarith)
+  have hl3 : Real.log (k : ℝ) ≤ Real.log (k + 1) := Real.log_le_log (by linarith) (by linarith)
+  have hl4 : 0 ≤ Real.log (k : ℝ) := Real.log_nonneg (by linarith)
+  have hm1 : (Ncount ((k : ℝ) - 1) k : ℝ) ≤ max A 0 * Real.log (k + 1) := by
+    refine h1.trans ?_
+    calc A * Real.log ((k : ℝ) - 1) ≤ max A 0 * Real.log ((k : ℝ) - 1) :=
+          mul_le_mul_of_nonneg_right (le_max_left _ _) hl1
+      _ ≤ max A 0 * Real.log (k + 1) := mul_le_mul_of_nonneg_left hl2 (le_max_right _ _)
+  have hm2 : (Ncount (k : ℝ) ((k : ℝ) + 1) : ℝ) ≤ max A 0 * Real.log (k + 1) := by
+    refine h2.trans ?_
+    calc A * Real.log (k : ℝ) ≤ max A 0 * Real.log (k : ℝ) :=
+          mul_le_mul_of_nonneg_right (le_max_left _ _) hl4
+      _ ≤ max A 0 * Real.log (k + 1) := mul_le_mul_of_nonneg_left hl3 (le_max_right _ _)
+  unfold shellC
+  push_cast
+  linarith
+
+theorem summable_shell (hc : Titchmarsh_Thm9_2) (F : ℝ → ℝ) (hF0 : ∀ t, 0 ≤ F t)
+    (hFs : Summable fun k : ℕ => F k * Real.log (k + 1)) : Summable fun k : ℕ => F k * shellC k := by
+  obtain ⟨A, hA, k₀, hk⟩ := shellC_le hc
+  refine Summable.of_norm_bounded_eventually_nat (g := fun k : ℕ => 4 * A * (F k * Real.log (k + 1)))
+    (hFs.mul_left (4 * A)) ?_
+  filter_upwards [Filter.eventually_ge_atTop k₀] with k hk'
+  rw [Real.norm_eq_abs, abs_of_nonneg (mul_nonneg (hF0 _) (Nat.cast_nonneg _))]
+  have := hk k hk'
+  calc F k * shellC k ≤ F k * (4 * A * Real.log (k + 1)) := mul_le_mul_of_nonneg_left this (hF0 _)
+    _ = _ := by ring
+
+/-- **RH cluster bound** (from Goldston–Gonek): ordinates in (t, t+h], h ≤ ε₁, number ≤ ε₁ log t. -/
+theorem cluster_bound (hGG : GoldstonGonek2007_Thm1) (hRH : RiemannHypothesis) :
+    ∀ ε₁ : ℝ, 0 < ε₁ → ∃ t₁ : ℝ, 3 ≤ t₁ ∧ ∀ t ≥ t₁, ∀ h, 0 < h → h ≤ ε₁ →
+      (Ncount t (t + h) : ℝ) ≤ ε₁ * Real.log t := by
+  intro ε₁ hε₁
+  obtain ⟨t₀, ht₀⟩ := hGG hRH (1 / 2) (by norm_num)
+  refine ⟨max (max t₀ (2 * Real.pi)) (max (ε₁ ^ 2) (max (Real.exp (Real.exp (2 / ε₁))) 3)),
+    le_trans (le_max_right _ _) (le_trans (le_max_right _ _) (le_max_right _ _)), fun t ht h hh hhε => ?_⟩
+  have ht0 : t₀ ≤ t := le_trans (le_trans (le_max_left _ _) (le_max_left _ _)) ht
+  have ht2π : 2 * Real.pi ≤ t := le_trans (le_trans (le_max_right _ _) (le_max_left _ _)) ht
+  have htε : ε₁ ^ 2 ≤ t := le_trans (le_trans (le_max_left _ _) (le_max_right _ _)) ht
+  have htee : Real.exp (Real.exp (2 / ε₁)) ≤ t :=
+    le_trans (le_trans (le_max_left _ _) (le_trans (le_max_right _ _) (le_max_right _ _))) ht
+  have ht3 : 3 ≤ t := le_trans (le_trans (le_max_right _ _) (le_trans (le_max_right _ _) (le_max_right _ _))) ht
+  have hsq : h ≤ Real.sqrt t := by
+    refine hhε.trans ?_
+    rw [← Real.sqrt_sq hε₁.le]
+    exact Real.sqrt_le_sqrt htε
+  have hb := ht₀ t ht0 h hh hsq
+  have hlog : 0 < Real.log t := Real.log_pos (by linarith)
+  have hloglog : 2 / ε₁ ≤ Real.log (Real.log t) := by
+    have h1 : Real.exp (2 / ε₁) ≤ Real.log t := by
+      rw [← Real.log_exp (Real.exp (2 / ε₁))]
+      exact Real.log_le_log (Real.exp_pos _) htee
+    calc 2 / ε₁ = Real.log (Real.exp (2 / ε₁)) := (Real.log_exp _).symm
+      _ ≤ Real.log (Real.log t) := Real.log_le_log (Real.exp_pos _) h1
+  have hll : 0 < Real.log (Real.log t) := lt_of_lt_of_le (by positivity) hloglog
+  have hq : Real.log t / Real.log (Real.log t) ≤ ε₁ / 2 * Real.log t := by
+    rw [div_le_iff₀ hll]
+    have h4 : 1 ≤ ε₁ / 2 * Real.log (Real.log t) := by
+      calc (1 : ℝ) = ε₁ / 2 * (2 / ε₁) := by field_simp
+        _ ≤ ε₁ / 2 * Real.log (Real.log t) := by gcongr
+    have := mul_le_mul_of_nonneg_left h4 hlog.le
+    nlinarith
+  have hmain : h / (2 * Real.pi) * Real.log (t / (2 * Real.pi)) ≤ ε₁ / 2 * Real.log t := by
+    have hπ : 0 < 2 * Real.pi := by positivity
+    have h1 : Real.log (t / (2 * Real.pi)) ≤ Real.log t :=
+      Real.log_le_log (by positivity) (div_le_self (by linarith) (by linarith [Real.two_le_pi]))
+    have h2 : 0 ≤ Real.log (t / (2 * Real.pi)) := Real.log_nonneg (by rw [le_div_iff₀ hπ]; linarith)
+    have h3 : h / (2 * Real.pi) ≤ ε₁ / 2 := by
+      rw [div_le_iff₀ hπ]; nlinarith [Real.two_le_pi]
+    calc h / (2 * Real.pi) * Real.log (t / (2 * Real.pi)) ≤ ε₁ / 2 * Real.log (t / (2 * Real.pi)) :=
+          mul_le_mul_of_nonneg_right h3 h2
+      _ ≤ ε₁ / 2 * Real.log t := mul_le_mul_of_nonneg_left h1 (by positivity)
+  have := (abs_le.mp hb).2
+  norm_num at this
+  linarith
+
 end Riemann.Deep.LeanNBRate
+
 
 
