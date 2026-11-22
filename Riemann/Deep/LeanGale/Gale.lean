@@ -6,8 +6,8 @@ import Riemann.Deep.LeanGale.Row
 
 Objects (Mathlib): ℝⁿ = `EuclideanSpace ℝ (Fin n)`, `Metric.diam`, `Bornology.IsBounded`.
 * `beta k V` = β_k(V): the least possible largest part diameter over partitions of V into k parts
-  (NOTE `1; Voronov arXiv 2610.28828, l. 59–64, there divided by diam V).
-* `sigma n` = σₙ (Gale7, the closed forms of NOTE `1 and Voronov l. 96–107).
+  (NOTE §1; Voronov arXiv 2610.28828, l. 59–64, there divided by diam V).
+* `sigma n` = σₙ (Gale7, the closed forms of NOTE §1 and Voronov l. 96–107).
 * `GaleConjecture n`: every bounded V ⊂ ℝⁿ has β_{n+1}(V) ≤ σₙ · diam V (Gale 1953 with the simplex value σₙ;
   `GaleConjectureBall n`: with β_{n+1} of the ball of diameter 1, Voronov l. 90–92).
 Results: `claim1_n7`, `claim1_n8` (the sets points7.txt, points8.txt, exact ratios), `claim2` (the family for

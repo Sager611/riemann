@@ -1,0 +1,45 @@
+Cert:  | memcap: peak 670 MB, rc 0, 4 s | errors: 0
+Splx:  | memcap: peak 669 MB, rc 0, 5 s | errors: 0
+Row: Built Riemann.Deep.LeanGale.Row (8.8s) | memcap: peak 1861 MB, rc 0, 13 s | errors: 0
+Data.Rows00: Built Riemann.Deep.LeanGale.Data.Rows00 (18s) | memcap: peak 2410 MB, rc 0, 23 s | errors: 0
+Data.Rows01: Built Riemann.Deep.LeanGale.Data.Rows01 (17s) | memcap: peak 2409 MB, rc 0, 23 s | errors: 0
+Data.Rows02: Built Riemann.Deep.LeanGale.Data.Rows02 (16s) | memcap: peak 2410 MB, rc 0, 22 s | errors: 0
+Data.Rows03: Built Riemann.Deep.LeanGale.Data.Rows03 (13s) | memcap: peak 2409 MB, rc 0, 18 s | errors: 0
+Data.Rows04: Built Riemann.Deep.LeanGale.Data.Rows04 (15s) | memcap: peak 2412 MB, rc 0, 19 s | errors: 0
+Data.Rows05: Built Riemann.Deep.LeanGale.Data.Rows05 (18s) | memcap: peak 2412 MB, rc 0, 23 s | errors: 0
+Data.Rows06: Built Riemann.Deep.LeanGale.Data.Rows06 (17s) | memcap: peak 2412 MB, rc 0, 24 s | errors: 0
+Data.Rows07: Built Riemann.Deep.LeanGale.Data.Rows07 (16s) | memcap: peak 2412 MB, rc 0, 21 s | errors: 0
+Data.Rows08: Built Riemann.Deep.LeanGale.Data.Rows08 (14s) | memcap: peak 2413 MB, rc 0, 19 s | errors: 0
+Data.Rows09: Built Riemann.Deep.LeanGale.Data.Rows09 (14s) | memcap: peak 2412 MB, rc 0, 18 s | errors: 0
+Data.Rows10: Built Riemann.Deep.LeanGale.Data.Rows10 (18s) | memcap: peak 2411 MB, rc 0, 24 s | errors: 0
+Data.Rows11: Built Riemann.Deep.LeanGale.Data.Rows11 (17s) | memcap: peak 2410 MB, rc 0, 22 s | errors: 0
+Data.Rows12: Built Riemann.Deep.LeanGale.Data.Rows12 (17s) | memcap: peak 2414 MB, rc 0, 22 s | errors: 0
+Data.Rows13: Built Riemann.Deep.LeanGale.Data.Rows13 (17s) | memcap: peak 2412 MB, rc 0, 22 s | errors: 0
+Data.Rows14: Built Riemann.Deep.LeanGale.Data.Rows14 (17s) | memcap: peak 2412 MB, rc 0, 22 s | errors: 0
+Data.Rows15: Built Riemann.Deep.LeanGale.Data.Rows15 (16s) | memcap: peak 2412 MB, rc 0, 22 s | errors: 0
+Data.Rows16: Built Riemann.Deep.LeanGale.Data.Rows16 (18s) | memcap: peak 2413 MB, rc 0, 24 s | errors: 0
+Data.Rows17: Built Riemann.Deep.LeanGale.Data.Rows17 (17s) | memcap: peak 2412 MB, rc 0, 23 s | errors: 0
+Data.Rows18: Built Riemann.Deep.LeanGale.Data.Rows18 (20s) | memcap: peak 2413 MB, rc 0, 24 s | errors: 0
+Data.Rows19: Built Riemann.Deep.LeanGale.Data.Rows19 (17s) | memcap: peak 2359 MB, rc 0, 23 s | errors: 0
+Family: Built Riemann.Deep.LeanGale.Family (6.0s) | memcap: peak 1746 MB, rc 0, 12 s | errors: 0
+Pts:  | memcap: peak 687 MB, rc 0, 5 s | errors: 0
+Data.P3:  | memcap: peak 673 MB, rc 0, 4 s | errors: 0
+P3:  | memcap: peak 679 MB, rc 0, 4 s | errors: 0
+Data.P4:  | memcap: peak 676 MB, rc 0, 4 s | errors: 0
+P4:  | memcap: peak 682 MB, rc 0, 4 s | errors: 0
+Data.P7:  | memcap: peak 671 MB, rc 0, 3 s | errors: 0
+P7:  | memcap: peak 674 MB, rc 0, 4 s | errors: 0
+Data.P8:  | memcap: peak 661 MB, rc 0, 3 s | errors: 0
+P8:  | memcap: peak 678 MB, rc 0, 4 s | errors: 0
+Gale: Built Riemann.Deep.LeanGale.Gale (7.2s) | memcap: peak 2396 MB, rc 0, 12 s | errors: 0
+Main: Built Riemann.Deep.LeanGale.Main (7.7s) | memcap: peak 2425 MB, rc 0, 12 s | errors: 0
+== Check
+'LeanGale.gale_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanGale.gale_fails_le_1000' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanGale.gale_ball_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanGale.claim1_n7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanGale.claim1_n8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanGale.claim2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanGale.splx_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+memcap: peak 2272 MB, rc 0, 10 s
+ALLDONE

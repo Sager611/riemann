@@ -124,7 +124,7 @@ theorem chunkOK_getD {n : ℕ} {ps : List Params} (h : chunkOK n ps = true) {i :
           rw [show n + 1 + i = n + (i + 1) by omega] at this
           simpa using this
 
-/-- the family member of a row (NOTE `2), parameters `prm` (rational, cast to ℝ) -/
+/-- the family member of a row (NOTE §2), parameters `prm` (rational, cast to ℝ) -/
 noncomputable def famRow {m₁ m₂ : ℕ} (U : Fin (m₁ + 1) → Fin m₁ → ℝ) (W : Fin (m₂ + 1) → Fin m₂ → ℝ)
     (p : Params) : Vx (m₁ + 1) (m₂ + 1) → Fin (m₁ + m₂) → ℝ :=
   famPt U W (prm p.rA) (prm p.rB) (prm p.a) (prm p.b) (prm p.c) (prm p.d) (prm p.e) (prm p.f)

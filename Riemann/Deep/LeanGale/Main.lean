@@ -175,7 +175,7 @@ theorem transport {k n : ℕ} (h : k = n) {X : Finset (Fin k → ℝ)} {t D2 : �
   rw [e]
   exact ⟨hD, hlow, rfl⟩
 
-/-- **The family member Vₙ ⊂ ℝⁿ** (NOTE `2): ℝⁿ = ℝ^⌊n/2⌋ ⊕ ℝ^⌈n/2⌉ (the first ⌊n/2⌋ coordinates, then the last
+/-- **The family member Vₙ ⊂ ℝⁿ** (NOTE §2): ℝⁿ = ℝ^⌊n/2⌋ ⊕ ℝ^⌈n/2⌉ (the first ⌊n/2⌋ coordinates, then the last
 ⌈n/2⌉), U, W the vertex vectors of the two regular simplices, parameters family_params.txt row n:
 P_i = r_A u_i, Q_j = r_B v_j, A_ij = a u_i − b v_j, B_ij = −c u_i + d v_j, C_ij = e u_i + f v_j. -/
 noncomputable def famV (n : ℕ) (U : Fin (n / 2 + 1) → Fin (n / 2) → ℝ)
@@ -199,9 +199,9 @@ theorem famV_facts {n : ℕ} (h5 : 5 ≤ n) (h1000 : n ≤ 1000)
   · rw [famV, coe_image_toE]
     exact sigma_mul_diam_lt_beta hD' hlow' hσ
 
-/-- **Claim (2).** For every n = 5…1000 and all unit simplices U ⊂ ℝ^⌊n/2⌋, W ⊂ ℝ^⌈n/2⌉ (NOTE `2), Vₙ has
+/-- **Claim (2).** For every n = 5…1000 and all unit simplices U ⊂ ℝ^⌊n/2⌋, W ⊂ ℝ^⌈n/2⌉ (NOTE §2), Vₙ has
 (⌊n/2⌋+1) + (⌈n/2⌉+1) + 3(⌊n/2⌋+1)(⌈n/2⌉+1) points, cannot be split into n + 1 parts of diameter ≤ σₙ · D, and
-β_{n+1}(Vₙ)/D(Vₙ) > σₙ; the colouring part is the hand lemma of NOTE `3 (Gale7 `Vx.not_colourable`), the
+β_{n+1}(Vₙ)/D(Vₙ) > σₙ; the colouring part is the hand lemma of NOTE §3 (Gale7 `Vx.not_colourable`), the
 metric part the exact integer row check `rowOK`. -/
 theorem claim2 (n : ℕ) (h5 : 5 ≤ n) (h1000 : n ≤ 1000)
     (U : Fin (n / 2 + 1) → Fin (n / 2) → ℝ) (W : Fin (n - n / 2 + 1) → Fin (n - n / 2) → ℝ)
