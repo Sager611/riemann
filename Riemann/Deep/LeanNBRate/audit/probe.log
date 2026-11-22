@@ -1,0 +1,34 @@
+Sun Nov 22 11:33:20 UTC 2026
+== lake env true
+memcap: killed at 660 MB > 290 MB (peak 660 MB)
+== lake_zeta: import Mathlib.NumberTheory.LSeries.RiemannZeta;#check RiemannHypothesis;
+memcap: killed at 660 MB > 290 MB (peak 660 MB)
+== lake_zeta_mod: module;import Mathlib.NumberTheory.LSeries.RiemannZeta;#check RiemannHypothesis;
+memcap: killed at 660 MB > 290 MB (peak 660 MB)
+== init: #check Nat;
+memcap: peak 49 MB, rc 0, 1 s
+fp: 6 samples over 0.7 s: max RSS 379 MB, max physical footprint 75 MB
+== init_mod: module;#check Nat;
+memcap: peak 53 MB, rc 0, 1 s
+fp: 5 samples over 0.6 s: max RSS 230 MB, max physical footprint 74 MB
+== lean_mod: module;import Lean;
+memcap: killed at 464 MB > 290 MB (peak 464 MB)
+fp: 21 samples over 2.1 s: max RSS 491 MB, max physical footprint 136 MB
+== order_mod: module;import Mathlib.Order.Basic;
+memcap: killed at 312 MB > 290 MB (peak 312 MB)
+fp: 8 samples over 0.8 s: max RSS 312 MB, max physical footprint 98 MB
+== zeta: import Mathlib.NumberTheory.LSeries.RiemannZeta;#check RiemannHypothesis;
+memcap: killed at 385 MB > 290 MB (peak 385 MB)
+fp: 13 samples over 1.5 s: max RSS 402 MB, max physical footprint 159 MB
+== zeta_mod: module;import Mathlib.NumberTheory.LSeries.RiemannZeta;#check RiemannHypothesis;
+memcap: killed at 362 MB > 290 MB (peak 362 MB)
+fp: 17 samples over 1.6 s: max RSS 376 MB, max physical footprint 158 MB
+== Mathlib_MeasureTheory_Function_LpSpace_Basic_mod: module;import Mathlib.MeasureTheory.Function.LpSpace.Basic;
+memcap: killed at 343 MB > 290 MB (peak 343 MB)
+fp: 15 samples over 1.6 s: max RSS 343 MB, max physical footprint 146 MB
+== Mathlib_NumberTheory_Harmonic_EulerMascheroni_mod: module;import Mathlib.NumberTheory.Harmonic.EulerMascheroni;
+memcap: killed at 464 MB > 290 MB (peak 464 MB)
+fp: 14 samples over 1.6 s: max RSS 541 MB, max physical footprint 178 MB
+== Mathlib_Topology_MetricSpace_HausdorffDistance_mod: module;import Mathlib.Topology.MetricSpace.HausdorffDistance;
+memcap: killed at 572 MB > 290 MB (peak 572 MB)
+fp: 16 samples over 1.6 s: max RSS 614 MB, max physical footprint 174 MB
