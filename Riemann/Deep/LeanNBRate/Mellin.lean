@@ -132,6 +132,7 @@ theorem ofReal_exp_cpow (a : ℝ) (z : ℂ) : ((Real.exp a : ℝ) : ℂ) ^ z = C
 theorem mellin_plancherel (hP : Rudin1987_Thm9_13) (F : ℝ → ℂ)
     (hi : Integrable (fun v : ℝ => (Real.exp (-v / 2) : ℂ) * F (Real.exp (-v))))
     (h2 : MemLp (fun v : ℝ => (Real.exp (-v / 2) : ℂ) * F (Real.exp (-v))) 2) :
+    MemLp (fun t : ℝ => mellin F (1 / 2 + t * I)) 2 ∧
     ∫ t : ℝ, ‖mellin F (1 / 2 + t * I)‖ ^ 2 = 2 * Real.pi * ∫ x in Ioi (0 : ℝ), ‖F x‖ ^ 2 := by
   set h := fun v : ℝ => (Real.exp (-v / 2) : ℂ) * F (Real.exp (-v))
   have e1 : ∀ t : ℝ, mellin F (1 / 2 + t * I) = ∫ v : ℝ, h v * Complex.exp (-(v * t * I)) := by
@@ -157,8 +158,11 @@ theorem mellin_plancherel (hP : Rudin1987_Thm9_13) (F : ℝ → ℂ)
     simp only [h, smul_eq_mul, norm_mul, Complex.norm_real, Real.norm_eq_abs, mul_pow, sq_abs]
     have hx : Real.exp (-v / 2) ^ 2 = Real.exp (-v) := by rw [sq, ← Real.exp_add]; ring_nf
     rw [hx]
-  simp_rw [e1, e2]
-  exact hP h hi h2
+  have he1 : (fun t : ℝ => mellin F (1 / 2 + t * I)) =
+      fun t : ℝ => ∫ v : ℝ, h v * Complex.exp (-(v * t * I)) := funext e1
+  refine ⟨?_, ?_⟩
+  · rw [he1]; exact (hP h hi h2).1
+  · simp_rw [e1]; rw [e2]; exact (hP h hi h2).2
 
 
 /-! ## The Nyman–Beurling functions -/
@@ -294,7 +298,7 @@ theorem integral_nbF_sq (hP : Rudin1987_Thm9_13) (h215 : Titchmarsh_2_1_5) {n : 
     (θ : Fin n → ℝ) (hθ : ∀ k, θ k ∈ Ioc (0 : ℝ) 1) :
     ∫ x in Ioi (0 : ℝ), ‖nbF c θ x‖ ^ 2 = (2 * Real.pi)⁻¹ * ∫ t : ℝ,
       ‖(1 + riemannZeta (1 / 2 + t * I) * ∑ k, c k * (θ k : ℂ) ^ (1 / 2 + t * I)) / (1 / 2 + t * I)‖ ^ 2 := by
-  have h := mellin_plancherel hP (nbF c θ) (integrable_nbF_exp c θ hθ) (memLp_nbF_exp c θ hθ)
+  have h := (mellin_plancherel hP (nbF c θ) (integrable_nbF_exp c θ hθ) (memLp_nbF_exp c θ hθ)).2
   have e : ∀ t : ℝ, mellin (nbF c θ) (1 / 2 + t * I) =
       (1 + riemannZeta (1 / 2 + t * I) * ∑ k, c k * (θ k : ℂ) ^ (1 / 2 + t * I)) / (1 / 2 + t * I) := by
     intro t
@@ -302,6 +306,17 @@ theorem integral_nbF_sq (hP : Rudin1987_Thm9_13) (h215 : Titchmarsh_2_1_5) {n : 
   simp_rw [e] at h
   rw [h]
   field_simp
+
+theorem memLp_line_nbF (hP : Rudin1987_Thm9_13) (h215 : Titchmarsh_2_1_5) {n : ℕ} (c : Fin n → ℂ)
+    (θ : Fin n → ℝ) (hθ : ∀ k, θ k ∈ Ioc (0 : ℝ) 1) :
+    MemLp (fun t : ℝ =>
+      (1 + riemannZeta (1 / 2 + t * I) * ∑ k, c k * (θ k : ℂ) ^ (1 / 2 + t * I)) / (1 / 2 + t * I)) 2 := by
+  have h := (mellin_plancherel hP (nbF c θ) (integrable_nbF_exp c θ hθ) (memLp_nbF_exp c θ hθ)).1
+  have e : (fun t : ℝ => mellin (nbF c θ) (1 / 2 + t * I)) = fun t : ℝ =>
+      (1 + riemannZeta (1 / 2 + t * I) * ∑ k, c k * (θ k : ℂ) ^ (1 / 2 + t * I)) / (1 / 2 + t * I) := by
+    funext t
+    exact (hasMellin_nbF h215 c θ hθ (by simp) (by simp; norm_num)).2
+  rwa [e] at h
 
 end Riemann.Deep.LeanNBRate
 
