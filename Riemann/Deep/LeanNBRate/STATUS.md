@@ -1,5 +1,5 @@
-REVIEW
-UTC: 2026-11-22 23:25
+DONE
+UTC: 2026-11-22 23:31
 sorry count: 0 (rg 'sorry|admit|native_decide|axiom|implemented_by|extern|unsafe': one hit, Main.lean:37 '#print axioms nb_rate', the check command itself)
 main theorem: Riemann.Deep.LeanNBRate.nb_rate (Main.lean) : NBInputs → (hRH : RiemannHypothesis) →
   Summable (m_ρ²/|ρ|² over NTZ) ∧ L·D(λ)² → zeroSum (λ → 0⁺) ∧ (all m_ρ = 1 → zeroSum = 2 + γ − log 4π) ∧ L·D_c(λ)² → zeroSum
@@ -23,6 +23,8 @@ proof outline: lower bound from Burnol (Bridge); D ≤ D_c; upper bound for D_c 
   contour shifts give ζG = H − K − ζR_tr on the line (KJ5); closure (LaplaceClosure) with c₀ = G(1); line bounds:
   ∫|E_low/s|² = 2πN(p*) (LineE, Plancherel), 1 − Φ, K, R_tr, G(1) tiny (KBd, RtrBd, GF1, Final1–4).
 NOT-FORMALIZED: the decimal "= 0.0461…" (numerical value of 2 + γ − log 4π; needs a 5-digit enclosure of γ, absent from Mathlib)
-last reviewer verdict: none yet (round 1)
-next step: reviewer rounds (statement faithfulness + vacuity; literature inputs), then DONE
+last reviewer verdict (round 1, 22 Nov 2026, two fresh reviewers, briefs and replies in review/):
+  statement + vacuity: "VERDICT: FULLY-PROVED-AND-FAITHFUL" / "Complete for the requested statement, definitions, and vacuity review, using the supplied compilation evidence."
+  literature inputs: "VERDICT: FULLY-PROVED-AND-FAITHFUL" / "All eight supplied statements pass. No degenerate counterexample or additional research claim is hidden in their translations."
+next step: none (DONE)
 

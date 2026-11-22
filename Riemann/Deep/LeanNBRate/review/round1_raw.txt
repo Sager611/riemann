@@ -1,0 +1,39 @@
+2/2 succeeded
+
+=== Task 1: reviewer ===
+VERDICT: FULLY-PROVED-AND-FAITHFUL
+
+Complete for the requested statement, definitions, and vacuity review, using the supplied compilation evidence.
+
+- **Distances match.** `chiVec` represents \(1_{(0,1)}\); `nbSet` represents the actual fractional-part functions; `Submodule.span ℝ` gives finite real linear combinations. Real versus complex coefficients do not change the distance for these real generators and target.
+- **No empty-set shortcut.** The span contains zero. `nymanSet` contains zero via `n = 0` and imposes precisely `∑ k, c k * θ k = 0`. For positive θ, `nbFun θ` genuinely belongs to L²: it is bounded near zero and equals θ/x for x > θ.
+- **Zeros and multiplicities match.** `NTZ` indexes distinct nontrivial zeros, and the supplied finite-order and positivity results make `mult` their genuine multiplicity. Explicit `Summable` rules out exploiting the divergent-`tsum` convention.
+- **Limit and constants match.** `𝓝[>] 0` is a nontrivial right-neighbourhood filter, eventually contained in \(0<λ<1\). Both limits have exactly the claimed normalization and zero sum. The simple-zero implication preserves the exact closed form. Its decimal approximation is not separately certified, as disclosed; the exact constant is not weakened.
+- **Inputs show no evident inconsistency.** In Turán’s input, Ω has finite positive measure, so its denominator cannot vanish; its pointwise hypothesis forces \(K≥0\). The large-height inputs can choose positive, sufficiently large thresholds. The Mellin integral converges throughout the stated strip, and the unnormalized Fourier identity has the correct \(2π\) factor. No input visibly assumes the new upper bound or a derivative condition.
+- **Proof evidence matches this statement.** The supplied successful build and axiom report establish the theorem conditional on exactly `NBInputs` and RH, without `sorryAx` or additional axioms.
+
+Detailed source fidelity remains the separate literature reviewer’s remit.
+
+=== Task 2: reviewer ===
+VERDICT: FULLY-PROVED-AND-FAITHFUL
+
+All eight supplied statements pass. No degenerate counterexample or additional research claim is hidden in their translations.
+
+1. **`Burnol2002_Thm` — faithful.** Under RH, the zeros, multiplicities, complex Hilbert space, and distance match Burnol’s setting. A liminf lower bound implies the stated eventual inequality for every strictly smaller real threshold. The nonnegative `ENNReal` sum correctly represents the source’s sum; it does not substitute the junk-valued real `tsum` of a nonsummable family. Using `ENNReal.ofReal c` can discard negative thresholds when the sum is zero, making the statement weaker, not stronger.
+
+2. **`Nazarov1993_Turan` — faithful.** There are `m + 1` terms, hence exponent `m`. The exponential factor and absolute constant have the correct dependence and quantifier order. Positive measure and containment in `[a,b]` ensure
+   `0 < (volume Ω).toReal < ∞`; thus the denominator cannot acquire a junk zero. The pointwise hypothesis makes `K` an upper bound for the source supremum and forces `K ≥ 0`. The finite exponential polynomial is continuous and bounded on the interval. The `m = 0` case is valid.
+
+3. **`GoldstonGonek2007_Thm1` — faithful.** The quoted error is uniform for `0 < h ≤ √t`; its `o(1)` gives precisely `∀ ε > 0, ∃ t₀, ∀ t ≥ t₀, ∀ h …`. The threshold may be enlarged beyond `e`, avoiding problematic logarithms. `Ncount t (t+h)` matches the source’s multiplicity-weighted count on `(t,t+h]`. Finiteness prevents `finsum`’s infinite-support default from intervening.
+
+4. **`Titchmarsh_Thm9_2` — faithful.** This is the upper-bound consequence of `N(T+1) − N(T) = O(log T)`. The existential threshold can be chosen sufficiently large. Not requiring `A > 0` merely weakens the formulation.
+
+5. **`Titchmarsh_Thm9_7` — faithful.** One height works uniformly for every `σ ∈ [−1,2]`, matching the quoted theorem. The constants are independent of `T` and `σ`. Explicit nonvanishing correctly prevents Lean’s inverse-at-zero convention from weakening the intended reciprocal bound. Since `t ≥ T ≥ T₀ > 0`, real powers have their usual meaning. Negative heights are not asserted by this input; obtaining them by conjugation is standard.
+
+6. **`Davenport_Ch12` — faithful.** Grouping repeated zeros into distinct zeros weighted by `mult` preserves the sum. Here `Re(1/ρ) = Re ρ / |ρ|² > 0`; the source’s convergent real-part sum therefore supports unordered `HasSum`, not merely a conditionally convergent ordering prescription. The constant and signs are correct. The analytic order agrees with ordinary zero multiplicity because ζ is analytic and not identically zero in the strip.
+
+7. **`Titchmarsh_2_1_5` — faithful.** The strip and sign match the integral formula. The integral is absolutely convergent: near zero its integrand has magnitude `x^(−Re s)`, and at infinity it is bounded by `x^(−Re s−1)`. Consequently, the Bochner integral cannot silently become zero through nonintegrability. Positive integration variables also remove complex-power branch ambiguity.
+
+8. **`Rudin1987_Thm9_13` — faithful.** `Integrable f` and `MemLp f 2` supply the required measurability and integrability. Multiplying by the Fourier kernel preserves absolute integrability for every frequency. Converting Rudin’s normalized transform and measure to unnormalized Lebesgue integrals gives exactly the factor `2 * Real.pi`. Both the transformed function’s `MemLp` assertion and the integral identity follow from the quoted parts of Plancherel.
+
+The cited authors, venues, and theorem/equation identifiers agree with the standard references as far as I know. This verdict covers the supplied literature inputs—not the intervening proof of `nb_rate`.

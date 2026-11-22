@@ -1,14 +1,14 @@
-# LeanNBRate — PLAN (lemma DAG, Lean interfaces) — revised 22 Nov 2026 (session 4)
+# LeanNBRate — PLAN (lemma DAG, Lean interfaces) — revised 22 Nov 2026 (session 5: DONE, Main.nb_rate proved)
 
 Target: discoveries/nyman-beurling-continuous-rate.md, Claim (a)–(c). Proof sources: DbarNB/DERIVATION.md [N],
 ExploreDbar/REPAIR.md [R], ExploreDbar/DERIVATION.md [X], DbarAudit/FULLPROOF.md [F]. Restructured for Lean; every
 deviation from [N]/[R] is a re-proof, not an input. L = log(1/λ), ℓ = L − √L, s₀ = L^{−3/4}, T₂ ∈ [L⁶, L⁶+4] good height,
 w(t) = 1/(2π(¼+t²)), Q_ℓ(p) = ∫_0^ℓ(|p′|² + ¼|p|²) (≤ N_ℓ(p), endpoint terms dropped: they are ≥ 0).
 
-## 0. Statement (Defs.lean; Main.lean to do)
+## 0. Statement (Defs.lean; Main.lean ✓ nb_rate : NBInputs → RH → claim)
 MainClaim: RH → Summable ∧ Tendsto (log(1/λ)·nbDist²) (𝓝[>]0) (𝓝 S) ∧ ((∀ρ, mult ρ = 1) → S = 2+γ−log 4π) ∧ same for nymanDist.
 
-## 1. Assembly (Main.lean, to do)
+## 1. Assembly ✓ (Assembly.mainClaim_of_upper, Final5.upper_bound, Main.nb_rate)
 - lower: Burnol input (complex L², Ioc) ⇒ nbDist ≥ nbDistC (real span embeds isometrically) ⇒ liminf ≥ S; nymanDist ≥ nbDist.
 - upper: limsup L·nymanDist² ≤ S from U1 + U2 (real part of a complex Nyman approximant is a real one).
 - value: Davenport + RH (Re 1/ρ = ½/|ρ|²). summable: Titchmarsh 9.2 count.
@@ -32,7 +32,8 @@ MainClaim: RH → Summable ∧ Tendsto (log(1/λ)·nbDist²) (𝓝[>]0) (𝓝 S)
   interpolates at Z with multiplicity (Z symmetric: needs mult(conj ρ) = mult ρ), ‖E_low‖²_w = N(p*) = p*(0) (OU kernel:
   ∫e^{−ixt}w = e^{−|x|/2}, reproducing identity), |E_low(s)|² ≤ N(p*)·N(e_s) (C-S).
 
-## 3. U1 — design v4 (session 4): explicit g by inverse Laplace, no PW, no growth bounds, no entire G
+## 3. U1 ✓ — design v4 (session 4): explicit g by inverse Laplace, no PW, no growth bounds, no entire G
+(✓ session 5: KJ1–5 identity theorem, ContourBd/KBd/RtrBd/GF1 bounds, LineE Plancherel identity, HConc1–3 concrete H, Final1–5)
 Constants: L = log(1/λ) large, ℓ = L − √L (dual/U2), T₁ = L², n ≈ L, a = 2/(nT₁), T₂ ∈ [L⁶, L⁶+1] good height (T9.7,
 σ ∈ [−1,2]); Ω = [−1,2]×[T₂,∞), Ω̄ mirror; line c = 3; κ(x) = e^{−Lx}; w = 1/(2π(¼+t²)).
 ✓ Dual1–5: W = L²(0,ℓ)²×ℂ² (Temb), Riesz representer p* (ExpSum, ZeroConfig), N(p*) ≤ (S+ε)/ℓ (U2), E_low(s) = N(e_s,p*)
