@@ -1,0 +1,32 @@
+T4 memory probes, 2026-11-22 11:23-11:41 UTC (rerun: bash Riemann/Deep/LeanPrefix/tools/probe.sh)
+
+lean --threads=1 called directly (no lake), one 2-line file per import, under .scratch/memcap.sh 290 600,
+sampled every 20 ms by tools/fpsamp.py (proc_pid_rusage: resident size = ps RSS; physical footprint = top's MEM).
+
+| file: import | memcap.sh (ps RSS) | fpsamp at the kill: RSS / footprint |
+|---|---|---|
+| module, Init | passed, peak 155 MB | 233 / 64 MB |
+| module, Mathlib.GroupTheory.Perm.Sign | killed at 381, 435, 495, 639 MB (4 runs) | 500 / 139 MB (3.7 s); 639 / 162 MB (2.3 s) |
+| non-module, Mathlib.GroupTheory.Perm.Sign | killed at 449, 737, 1174 MB | 475 / 134 MB |
+| non-module, Mathlib.GroupTheory.SpecificGroups.Alternating | killed at 317, 324 MB | 318 / 125 MB |
+| non-module, Mathlib.GroupTheory.GroupAction.Primitive | killed at 322, 325 MB | 326 / 128 MB |
+| non-module, Mathlib.GroupTheory.GroupAction.Jordan | killed at 308, 353 MB | 358 / 139 MB |
+| non-module, Mathlib.GroupTheory.SpecificGroups.Dihedral | killed at 353, 488 MB | 353 / 137 MB |
+| non-module, Mathlib.GroupTheory.SemidirectProduct | killed at 396, 720 MB | 713 / 152 MB |
+| module, Mathlib.Logic.Equiv.Defs / Algebra.Group.End / Order.Basic / Data.Nat.Basic | killed at 430 / 468 / 430 / 435 MB | - |
+
+Every kill came 1.2-3.7 s after start, before the import finished: true peaks are not measurable under the cap.
+The RSS-footprint gap is clean, file-backed, mmapped .olean pages.
+
+Import cones (tools/cone.py; public .olean bytes):
+| modules imported | modules | .olean |
+|---|---|---|
+| Init | 653 | 95 MB |
+| Mathlib.GroupTheory.Perm.Sign | 2238 | 418 MB |
+| statement file: Alternating + Primitive + Dihedral + SemidirectProduct | 2880 | 555 MB |
+| same + Jordan (Mathlib's 3-cycle theorem) | 2891 | 557 MB |
+| same + Projectivization.Cardinality + GaloisField (Jones route) | 3406 | 683 MB |
+
+Footprint estimate (calibration: Init 95 MB .olean -> 64 MB footprint today; Perm.Sign 418 MB -> 246 MB footprint,
+time -l, PrefixRev/LEAN.md, 12 Nov): footprint ~ 12 MB + 0.56 x cone. Statement file ~ 320 MB; Jones route ~ 395 MB;
+tactics add 30-260 MB (12 Nov: Perm.Sign files 246-281 MB; NBLp: 130-260 MB).
