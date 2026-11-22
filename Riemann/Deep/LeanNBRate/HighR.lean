@@ -281,6 +281,140 @@ theorem highR (hT : Nazarov1993_Turan) : ∃ κ : ℝ, 1 ≤ κ ∧
       mul_nonpos_of_nonpos_of_nonneg hA.le (by positivity)
     linarith
 
+/-- **Theorem R″, high part**, the two halves separately. -/
+theorem highR_parts (hT : Nazarov1993_Turan) : ∃ κ : ℝ, 1 ≤ κ ∧
+    ∀ (P : ExpSum) (T : Set ℝ) (s₀ ℓ H η η' wmax : ℝ) (N Mmax : ℕ),
+      0 < s₀ → 0 < ℓ → s₀ < 2 * H → 0 < η → 0 < η' → 1 ≤ N →
+      (∀ j, P.node j ∈ T → H ≤ |P.node j|) → (∀ j, P.node j ∈ T → 1 ≤ P.mult j) →
+      (∀ g ∈ groups P T s₀, (P.part ↑g (gC g)).M ≤ Mmax ∧ gW g ≤ wmax) →
+      4 * A₀ / η * ((Mmax : ℝ) + 1) ^ 2 ≤ ℓ →
+      (Mmax : ℝ) * (4 * A₀ / (s₀ / 4)) * ((Mmax : ℝ) + 1) ^ 2 ≤ ℓ →
+      smallB κ Mmax wmax η ≤ H ^ 2 / 2 →
+      ‖(P.part T 0).eval 0‖ ^ 2 ≤
+        ((∑ g ∈ groups P T s₀, 16 * (2 * κ) ^ (4 * ((P.part ↑g (gC g)).M - 1)) / (gC g) ^ 2) / ℓ) *
+          (∑ g ∈ groups P T s₀, ∫ x : ℝ, ‖grpQ (P.part ↑g (gC g)) (gC g) ℓ x‖ ^ 2) ∧
+      (1 - ((1 + η'⁻¹) * ((groups P T s₀).card : ℝ) + 1) * (2 * Real.pi) *
+          tailC κ Mmax wmax ℓ s₀ N) *
+          (∑ g ∈ groups P T s₀, ∫ x : ℝ, ‖grpQ (P.part ↑g (gC g)) (gC g) ℓ x‖ ^ 2) ≤
+        (1 + η') * ∫ u : ℝ, ‖((P.part T 0).dmod 0).eval u * psiC ℓ u‖ ^ 2 := by
+  obtain ⟨κB, hκB, hB⟩ := lemmaB hT
+  obtain ⟨κT, hκT, hTl⟩ := tail_bound hT
+  set κ := max (max κB κT) 1 with hκdef
+  have hκ1 : 1 ≤ κ := le_max_right _ _
+  have hκB' : κB ≤ κ := le_trans (le_max_left _ _) (le_max_left _ _)
+  have hκT' : κT ≤ κ := le_trans (le_max_right _ _) (le_max_left _ _)
+  refine ⟨κ, hκ1, fun P T s₀ ℓ H η η' wmax N Mmax hs₀ hℓ hsH hη hη' hN hTH hTm hgrp hbern htail
+    hsmall => ?_⟩
+  classical
+  set 𝒢 := groups P T s₀
+  have hH : 0 < H := by linarith
+  have hA0 := A₀_pos
+  have hTH' : ∀ x ∈ nodeSet P T, H ≤ |x| := by
+    intro x hx
+    obtain ⟨⟨j, hjx⟩, hj⟩ := mem_nodeSet.mp hx
+    rw [← hjx] at hj ⊢
+    exact hTH j hj
+  have hg_ne : ∀ g ∈ 𝒢, g.Nonempty := fun g hg => groups_nonempty hg
+  have hg_w : ∀ g ∈ 𝒢, 0 ≤ gW g := fun g hg => gW_nonneg (hg_ne g hg)
+  have hg_nodes : ∀ g ∈ 𝒢, ∀ j, (P.part ↑g (gC g)).node j ∈ Icc (-gW g) (gW g) := by
+    intro g hg
+    exact P.part_node_mem (↑g) (hg_w g hg) fun j hj => abs_sub_gC_le (by exact_mod_cast hj)
+  have hg_M : ∀ g ∈ 𝒢, 1 ≤ (P.part ↑g (gC g)).M := by
+    intro g hg
+    refine part_M_pos P (hg_ne g hg) (fun x hx => (mem_nodeSet.mp (groups_subset hg hx)).1)
+      (fun j hj => ?_) _
+    exact hTm j (mem_nodeSet.mp (groups_subset hg (by exact_mod_cast hj))).2
+  have hg_C : ∀ g ∈ 𝒢, H ≤ |gC g| := fun g hg => groups_center P T hs₀ hsH hTH' hg
+  have hg_C0 : ∀ g ∈ 𝒢, gC g ≠ 0 := by
+    intro g hg h
+    have := hg_C g hg
+    rw [h, abs_zero] at this; linarith
+  set Q : Finset ℝ → ℝ → ℂ := fun g => grpQ (P.part ↑g (gC g)) (gC g) ℓ
+  have hQt : ∀ g, IsTest (Q g) := fun g => grpQ_isTest _ _ hℓ
+  set X : Finset ℝ → ℝ := fun g => ∫ u : ℝ, ‖Q g u‖ ^ 2
+  have hX0 : ∀ g, 0 ≤ X g := fun g => integral_nonneg fun u => by positivity
+  set β : Finset ℝ → ℝ := fun g =>
+    16 * (2 * κ) ^ (4 * ((P.part ↑g (gC g)).M - 1)) / (gC g) ^ 2 / ℓ
+  have hβ0 : ∀ g, 0 ≤ β g := fun g => by simp only [β]; positivity
+  -- Lemma B per group
+  have hval : ∀ g ∈ 𝒢, ‖(P.part ↑g (gC g)).eval 0‖ ^ 2 ≤ β g * X g := by
+    intro g hg
+    obtain ⟨hMg, hwg⟩ := hgrp g hg
+    have hsm : smallB κB (P.part ↑g (gC g)).M (gW g) η ≤ (gC g) ^ 2 / 2 := by
+      have h1 := smallB_mono hκB hκB' hκ1 hMg (hg_w g hg) hwg hη
+      have h2 : H ^ 2 ≤ (gC g) ^ 2 := by
+        have h3 := hg_C g hg
+        rw [← sq_abs (gC g)]
+        exact pow_le_pow_left₀ hH.le h3 2
+      linarith
+    have hbern' : 4 * A₀ / η * (((P.part ↑g (gC g)).M : ℝ) + 1) ^ 2 ≤ ℓ := by
+      have hc : ((P.part ↑g (gC g)).M : ℝ) ≤ Mmax := by exact_mod_cast hMg
+      calc 4 * A₀ / η * (((P.part ↑g (gC g)).M : ℝ) + 1) ^ 2 ≤ 4 * A₀ / η * ((Mmax : ℝ) + 1) ^ 2 := by
+            gcongr
+        _ ≤ ℓ := hbern
+    have h := hB (P.part ↑g (gC g)) (gC g) (gW g) η ℓ (hg_w g hg) hη hℓ (hg_M g hg) (hg_C0 g hg)
+      (hg_nodes g hg) hbern' hsm 0 ⟨le_rfl, hℓ.le⟩
+    have hmid := integral_mid_le_grpQ (P.part ↑g (gC g)) (gC g) hℓ
+    set M := (P.part ↑g (gC g)).M
+    have hc2 : 0 < (gC g) ^ 2 := by have := hg_C0 g hg; positivity
+    have hp1 : ((2 * κB) ^ (M - 1)) ^ 2 * (2 * κB) ^ (2 * (M - 1)) ≤ (2 * κ) ^ (4 * (M - 1)) := by
+      rw [← pow_mul, ← pow_add]
+      exact pow_mono_two hκB hκB' hκ1 (by omega)
+    have hcoef : 4 * ((2 * κB) ^ (M - 1)) ^ 2 * (4 * (2 * κB) ^ (2 * (M - 1))) / (ℓ * gC g ^ 2) ≤
+        β g := by
+      have e : β g = 16 * (2 * κ) ^ (4 * (M - 1)) / (ℓ * gC g ^ 2) := by
+        simp only [β, M]; rw [div_div, mul_comm (gC g ^ 2) ℓ]
+      rw [e]
+      have e2 : 4 * ((2 * κB) ^ (M - 1)) ^ 2 * (4 * (2 * κB) ^ (2 * (M - 1))) =
+          16 * (((2 * κB) ^ (M - 1)) ^ 2 * (2 * κB) ^ (2 * (M - 1))) := by ring
+      rw [e2]
+      gcongr
+    calc ‖(P.part ↑g (gC g)).eval 0‖ ^ 2
+        ≤ 4 * ((2 * κB) ^ (M - 1)) ^ 2 * (4 * (2 * κB) ^ (2 * (M - 1))) / (ℓ * gC g ^ 2) *
+          ∫ x in Icc (ℓ / 4) (3 * ℓ / 4), ‖((P.part ↑g (gC g)).dmod (gC g)).eval x‖ ^ 2 := h
+      _ ≤ β g * X g := by
+          have hI0 : 0 ≤ ∫ x in Icc (ℓ / 4) (3 * ℓ / 4), ‖((P.part ↑g (gC g)).dmod (gC g)).eval x‖ ^ 2 :=
+            setIntegral_nonneg measurableSet_Icc fun x _ => by positivity
+          exact mul_le_mul hcoef hmid hI0 (hβ0 g)
+  -- frequency tails per group
+  have htailg : ∀ g ∈ 𝒢, ∫ ξ : ℝ, (farSet (gC g) (gW g) s₀).indicator
+      (fun ξ => ‖kern (Q g) ξ‖ ^ 2) ξ ≤ tailC κ Mmax wmax ℓ s₀ N * X g := by
+    intro g hg
+    obtain ⟨hMg, hwg⟩ := hgrp g hg
+    have hc : ((P.part ↑g (gC g)).M : ℝ) ≤ Mmax := by exact_mod_cast hMg
+    have htail' : ((P.part ↑g (gC g)).M : ℝ) * (4 * A₀ / (s₀ / 4)) *
+        (((P.part ↑g (gC g)).M : ℝ) + 1) ^ 2 ≤ ℓ := by
+      calc ((P.part ↑g (gC g)).M : ℝ) * (4 * A₀ / (s₀ / 4)) * (((P.part ↑g (gC g)).M : ℝ) + 1) ^ 2
+          ≤ (Mmax : ℝ) * (4 * A₀ / (s₀ / 4)) * ((Mmax : ℝ) + 1) ^ 2 := by gcongr
+        _ ≤ ℓ := htail
+    have h := hTl (P.part ↑g (gC g)) (gC g) (gW g) ℓ s₀ N (hg_w g hg) hs₀ hℓ (hg_M g hg) hN
+      (hg_nodes g hg) htail'
+    exact h.trans (mul_le_mul_of_nonneg_right
+      (tailC_mono hκT hκT' hκ1 hMg (hg_w g hg) hwg hℓ hs₀ N) (hX0 g))
+  -- Lemma D
+  have hD := lemmaD (ι := 𝒢) (fun g => Q g.1) (fun g => hQt g.1) (fun g => gC g.1)
+    (fun g => gW g.1) hs₀ (fun g g' hne => groups_sep hs₀ g.2 g'.2 (fun h => hne (Subtype.ext h)))
+    (δ := tailC κ Mmax wmax ℓ s₀ N) (fun g => htailg g.1 g.2) hη'
+  rw [Fintype.card_coe] at hD
+  rw [Finset.sum_coe_sort 𝒢 (fun g => ∫ u : ℝ, ‖Q g u‖ ^ 2)] at hD
+  have hsumQ : ∀ u, ∑ g : 𝒢, Q g.1 u = ((P.part T 0).dmod 0).eval u * psiC ℓ u := by
+    intro u
+    rw [Finset.sum_coe_sort 𝒢 (fun g => Q g u), ← part_dmod_eval_groups P T s₀ u, Finset.sum_mul]
+    rfl
+  simp_rw [hsumQ] at hD
+  -- value at 0
+  have hp0 : (P.part T 0).eval 0 = ∑ g ∈ 𝒢, (P.part ↑g (gC g)).eval 0 := by
+    rw [← part_eval_groups (P := P) (T := T) s₀ 0]
+    exact Finset.sum_congr rfl fun g _ => (P.part_eval_zero_eq _ _).symm
+  have hCS := norm_sum_sq_le_of_le 𝒢 (fun g => (P.part ↑g (gC g)).eval 0) β X
+    (fun g _ => hβ0 g) (fun g _ => hX0 g) hval
+  rw [← hp0] at hCS
+  have hsumβ : ∑ g ∈ 𝒢, β g =
+      (∑ g ∈ 𝒢, 16 * (2 * κ) ^ (4 * ((P.part ↑g (gC g)).M - 1)) / (gC g) ^ 2) / ℓ := by
+    simp only [β]; rw [Finset.sum_div]
+  rw [← hsumβ]
+  exact ⟨hCS, hD⟩
+
 end Riemann.Deep.LeanNBRate
 
 
