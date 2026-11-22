@@ -9,7 +9,8 @@ Hypotheses: (hOff : LZZW2026_Thm3_1) (hJ : Jones2014_Thm1_2_k0). Conclusion, wit
 2. B.1 (line, any parity): y ∈ orbit x ↔ y+1 ≡ ±(x+1) (mod g); card (orbitRel.Quotient) = g/2 + 1; IsPretransitive ↔ g = 1.
 3. B.2 (n even, g = 1): IsPretransitive ∧ ¬IsPreprimitive ∧ a block B with 2·|B| = n.
 4. B.3 (n odd, α ∣ n): ¬IsPreprimitive, interval blocks, G ≃* (ZMod q → DihedralGroup α) ⋊ DihedralGroup q (q-gon action), |G| = (2α)^q·2q.
-5. B.4 (n odd, g = 1, α ∤ n): IsPreprimitive ∧ alternatingGroup ≤ G ∧ (n % 4 = 1 ∧ 4 ∣ k → G = alternatingGroup) ∧ (¬… → G = ⊤).
+5. B.4 (n odd, g = 1, α ∤ n): IsPreprimitive ∧ alternatingGroup ≤ G ∧ (G = alternatingGroup ↔ n ≡ 1 [MOD 4] ∧ 4 ∣ k) ∧ (¬… → G = ⊤).
+B.3 also states the permutation form: ∃ e : Fin n ≃ ZMod q × ZMod α, (range wreathPerm).map e.symm.permCongrHom = G.
 Reading of the Claim: "when α ∣ n … otherwise primitive ⊇ A_n" carries NOTE Thm B's hypotheses (n odd; g = 1): false without them,
 e.g. (12,8,3) (α ∣ n, |G| < 8^3·6), (10,6,3) (n even, g = 1, α ∤ n: two blocks), (11,8,2) (g = 3: intransitive).
 
@@ -18,15 +19,15 @@ e.g. (12,8,3) (α ∣ n, |G| < 8^3·6), (10,6,3) (n even, g = 1, α ∤ n: two b
 |---|---|---|
 | Defs … PrimB2, Small | copied: Lemmas 1-3, (★_d), parity, necessity, interval blocks, kernel G = ⊤ for (7,4,2), (11,6,4), (13,10,2) | compiled |
 | Prim0 | IsBlockOf, IsPrimitive, fix_rk_card, rk_ne_one, even_of_coprime | compiled |
-| Bridge | IsBlockOf ↔ MulAction.IsBlock; IsPrimitive ↔ MulAction.IsPreprimitive | todo |
-| OrbitsB | P^t reaches every y with y+1 ≡ x+1 (mod g) (first return); orbit = O_c; orbit count; transitivity | todo |
-| Prop5A | pure arithmetic: Star' (runs of y_s = sΔ mod N, Δ = αd mod N, constant on I = [1, α-1] for runs i ≤ d-2) ⇒ α ∣ n | todo |
-| Prop5B | StarD ⇒ Star'; Prop5Core; primitivity (α ∤ n) | todo |
-| Lemma7 | involution form: g² = 1, g ≠ 1 induced by a σ-semilinear bijection of F^d (d ≥ 2) on ℙ ⇒ 2·nfix ≤ |ℙ| unless (d,q) = (2,4) | todo |
-| Jones | literature input Jones2014_Thm1_2_k0 (verbatim TeX in docstring); A_n ≤ G on the odd primitive line | todo |
-| Small23 | kernel G = ⊤ for (23,18,4), (23,16,6), (23,12,10) (Jones case (c)) | todo |
-| Wreath | dihedralPerm (q-gon action), Wreath α q, faithful imprimitive action, image = G (Lemma 6), iso, order | todo |
-| Main, Check | assembly; #print axioms | todo |
+| Bridge | IsBlockOf ↔ MulAction.IsBlock; IsPrimitive ↔ MulAction.IsPreprimitive | done (Bridge.lean) |
+| OrbitsB | P^t reaches every y with y+1 ≡ x+1 (mod g) (first return); orbit = O_c; orbit count; transitivity | done (OrbitsB.lean: mem_orbit_iff_mod, card_orbits, isPretransitive_iff_gcd) |
+| Prop5A | pure arithmetic: Star' (runs of y_s = sΔ mod N, Δ = αd mod N, constant on I = [1, α-1] for runs i ≤ d-2) ⇒ α ∣ n | done (Prop5A/Prop5B.lean) |
+| Prop5B | StarD ⇒ Star'; Prop5Core; primitivity (α ∤ n) | done (Prop5C.lean: prop5_core, isPreprimitive_of_line) |
+| Lemma7 | involution form: g² = 1, g ≠ 1 induced by a σ-semilinear bijection of F^d (d ≥ 2) on ℙ ⇒ 2·nfix ≤ |ℙ| unless (d,q) = (2,4) | done (Lemma7A-C.lean: lemma7_invol) |
+| Jones | literature input Jones2014_Thm1_2_k0 (verbatim TeX in docstring); A_n ≤ G on the odd primitive line | done (Inputs.lean, Alt.lean: alt_le_line) |
+| Small23 | kernel G = ⊤ for (23,18,4), (23,16,6), (23,12,10) (Jones case (c)) | done (Small23.lean) |
+| Wreath | dihedralPerm (q-gon action), Wreath α q, faithful imprimitive action, image = G (Lemma 6), iso, order | done (Wreath, WreathA-C.lean: wreath_range, G_mulEquiv_wreath, line_B3) |
+| Main, Check | assembly; #print axioms | done (B2.lean line_B2; Main.lean prefix_reversals; Check.lean axioms) |
 
 ## Prop 5 core (Prop5A), proof used
 N = α + β, n = N - 1 = dL (d, L ≥ 3 odd), Δ = αd mod N, Y(s) = sΔ mod N (s ∈ [1, n], a bijection onto [1, n]), LΔ ≡ -α.

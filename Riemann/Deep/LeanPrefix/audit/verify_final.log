@@ -1,0 +1,59 @@
+Sun Nov 22 13:59:29 UTC 2026
+Defs rc=0 12s memcap: peak 1406 MB, rc 0, 12 s
+CycleA rc=0 10s memcap: peak 1432 MB, rc 0, 10 s
+CycleB rc=0 10s memcap: peak 1422 MB, rc 0, 10 s
+CycleC rc=0 9s memcap: peak 1397 MB, rc 0, 9 s
+IsCycleP rc=0 9s memcap: peak 1502 MB, rc 0, 9 s
+Parity rc=0 10s memcap: peak 1450 MB, rc 0, 10 s
+BlocksA rc=0 10s memcap: peak 1424 MB, rc 0, 9 s
+BlocksB rc=0 11s memcap: peak 1437 MB, rc 0, 11 s
+Orbits rc=0 11s memcap: peak 1424 MB, rc 0, 11 s
+Prim0 rc=0 8s memcap: peak 1407 MB, rc 0, 8 s
+Bridge rc=0 9s memcap: peak 1574 MB, rc 0, 9 s
+OrbitsB rc=0 13s memcap: peak 1642 MB, rc 0, 13 s
+PrimA rc=0 8s memcap: peak 1393 MB, rc 0, 8 s
+PrimB1 rc=0 8s memcap: peak 1416 MB, rc 0, 8 s
+PrimB2 rc=0 9s memcap: peak 1437 MB, rc 0, 9 s
+Prop5A rc=0 10s memcap: peak 1624 MB, rc 0, 10 s
+Prop5B rc=0 46s memcap: peak 1693 MB, rc 0, 46 s
+Prop5C rc=0 11s memcap: peak 1652 MB, rc 0, 11 s
+Small rc=0 10s memcap: peak 1584 MB, rc 0, 10 s
+Small23 rc=0 20s memcap: peak 1761 MB, rc 0, 20 s
+Lemma7A rc=0 11s memcap: peak 1833 MB, rc 0, 11 s
+Lemma7B rc=0 10s memcap: peak 1846 MB, rc 0, 10 s
+Lemma7C rc=0 22s memcap: peak 1900 MB, rc 0, 22 s
+Inputs rc=0 9s memcap: peak 1867 MB, rc 0, 9 s
+Alt rc=0 10s memcap: peak 1897 MB, rc 0, 10 s
+Wreath rc=0 10s memcap: peak 1747 MB, rc 0, 10 s
+WreathA rc=0 11s memcap: peak 1780 MB, rc 0, 11 s
+WreathB rc=0 13s memcap: peak 1775 MB, rc 0, 13 s
+WreathC rc=0 12s memcap: peak 1776 MB, rc 0, 12 s
+B2 rc=0 12s memcap: peak 1800 MB, rc 0, 12 s
+Main rc=0 11s memcap: peak 1918 MB, rc 0, 11 s
+Check rc=0 10s memcap: peak 1876 MB, rc 0, 10 s
+== axioms
+'Riemann.Deep.LeanPrefix.prefix_reversals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.prop5_arith' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.isPreprimitive_of_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.lemma7_invol' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.alt_le_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.line_B3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.line_B2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.mem_orbit_iff_mod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.card_orbits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.G_23_18_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.G_7_4_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+== static scan
+Riemann/Deep/LeanPrefix/Check.lean:4:Quot.sound (the two literature inputs are hypotheses, not axioms). -/
+Riemann/Deep/LeanPrefix/Check.lean:6:#print axioms Riemann.Deep.LeanPrefix.prefix_reversals
+Riemann/Deep/LeanPrefix/Check.lean:7:#print axioms Riemann.Deep.LeanPrefix.prop5_arith
+Riemann/Deep/LeanPrefix/Check.lean:8:#print axioms Riemann.Deep.LeanPrefix.isPreprimitive_of_line
+Riemann/Deep/LeanPrefix/Check.lean:9:#print axioms Riemann.Deep.LeanPrefix.lemma7_invol
+Riemann/Deep/LeanPrefix/Check.lean:10:#print axioms Riemann.Deep.LeanPrefix.alt_le_line
+Riemann/Deep/LeanPrefix/Check.lean:11:#print axioms Riemann.Deep.LeanPrefix.line_B3
+Riemann/Deep/LeanPrefix/Check.lean:12:#print axioms Riemann.Deep.LeanPrefix.line_B2
+Riemann/Deep/LeanPrefix/Check.lean:13:#print axioms Riemann.Deep.LeanPrefix.mem_orbit_iff_mod
+Riemann/Deep/LeanPrefix/Check.lean:14:#print axioms Riemann.Deep.LeanPrefix.card_orbits
+Riemann/Deep/LeanPrefix/Check.lean:15:#print axioms Riemann.Deep.LeanPrefix.G_23_18_4
+Riemann/Deep/LeanPrefix/Check.lean:16:#print axioms Riemann.Deep.LeanPrefix.G_7_4_2
+Sun Nov 22 14:05:54 UTC 2026
