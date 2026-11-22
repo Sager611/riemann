@@ -108,7 +108,7 @@ lemma abs_upperTerm_le {n : ℕ} {c : ℝ} (hc : 0 < c) {ρ : ℂ} (hρ : ρ ∈
         gcongr
     _ = 2 * (n + n ^ 2 * (1 + 1 / c) ^ n) * ((mult ρ : ℝ) / ρ.im ^ 2) := by ring
 
-lemma summable_upperTerm (L : LiteratureInputs) (n : ℕ) :
+lemma summable_upperTerm (L : LitCore) (n : ℕ) :
     Summable (fun ρ : UpperZeros => upperTerm n ρ) := by
   obtain ⟨c, hc0, _, hc⟩ := exists_im_lower
   refine Summable.of_norm_bounded ((summable_mult_div_sq L).mul_left (2 * (n + n ^ 2 * (1 + 1 / c) ^ n)))
@@ -124,7 +124,7 @@ lemma mem_upperFin {T : ℝ} {ρ : UpperZeros} : ρ ∈ upperFin T ↔ ‖(ρ : 
   simp [upperFin, ρ.2.1]
 
 /-- Pairing `ρ ↔ ρ̄`: the partial Li sum is real and equals the sum of the paired terms. -/
-lemma liPartial_eq (L : LiteratureInputs) (n : ℕ) (T : ℝ) :
+lemma liPartial_eq (L : LitCore) (n : ℕ) (T : ℝ) :
     liPartial n T = ((∑ ρ ∈ upperFin T, upperTerm n ρ : ℝ) : ℂ) := by
   set F : ℂ → ℂ := fun ρ => (mult ρ : ℂ) * (1 - (1 - 1 / ρ) ^ n) with hF
   set S := (finite_norm_le T).toFinset with hS
@@ -181,7 +181,7 @@ lemma tendsto_upperFin : Tendsto upperFin atTop atTop := by
   · exact mem_upperFin.2 le_rfl
 
 /-- **Part 0**: the partial Li sums converge, to a real number: `λ_n = Σ_{γ>0} 2 m Re(1-(1-1/ρ)ⁿ)`. -/
-theorem tendsto_liPartial (L : LiteratureInputs) (n : ℕ) :
+theorem tendsto_liPartial (L : LitCore) (n : ℕ) :
     Tendsto (liPartial n) atTop (𝓝 ((∑' ρ : UpperZeros, upperTerm n ρ : ℝ) : ℂ)) := by
   have h := ((summable_upperTerm L n).hasSum.comp tendsto_upperFin)
   have h2 := (Complex.continuous_ofReal.tendsto _).comp h
@@ -189,14 +189,14 @@ theorem tendsto_liPartial (L : LiteratureInputs) (n : ℕ) :
   simp only [Function.comp]
   rw [liPartial_eq L n T]
 
-theorem liCoeff_eq (L : LiteratureInputs) (n : ℕ) :
+theorem liCoeff_eq (L : LitCore) (n : ℕ) :
     liCoeff n = ((∑' ρ : UpperZeros, upperTerm n ρ : ℝ) : ℂ) :=
   (tendsto_liPartial L n).limUnder_eq
 
-theorem lam_eq (L : LiteratureInputs) (n : ℕ) : lam n = ∑' ρ : UpperZeros, upperTerm n ρ := by
+theorem lam_eq (L : LitCore) (n : ℕ) : lam n = ∑' ρ : UpperZeros, upperTerm n ρ := by
   unfold lam; rw [liCoeff_eq L n, Complex.ofReal_re]
 
-theorem part0 (L : LiteratureInputs) : Part0 := by
+theorem part0 (L : LitCore) : Part0 := by
   intro n
   refine ⟨?_, ?_⟩
   · rw [liCoeff_eq L n]; exact tendsto_liPartial L n

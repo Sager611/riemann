@@ -1,6 +1,7 @@
 module
 
 public import Riemann.Deep.LeanLi.Thm1
+public import Riemann.Deep.LeanLi.Lemma0
 public import Riemann.Deep.LeanLi.LR.Cor3
 public import Riemann.Deep.LeanLi.Statement
 
@@ -54,10 +55,10 @@ lemma abs_liTrend_le (n : ℕ) : |liTrend n| ≤ 5 * (n : ℝ) ^ 2 := by
       ≤ (n : ℝ) / 2 * ((n : ℝ) + 8) := mul_le_mul_of_nonneg_left h (by positivity)
     _ ≤ 5 * (n : ℝ) ^ 2 := by nlinarith
 
-/-- **Lemma 0** for `R` (from the literature input `LiExpGrowth`). -/
-theorem lemma0_R (L : LiteratureInputs) : ¬ RiemannHypothesis → LR.Lemma0 R := by
+/-- **Lemma 0** for `R` (from `lam_exp_growth`). -/
+theorem lemma0_R (L : LitCore) : ¬ RiemannHypothesis → LR.Lemma0 R := by
   intro hRH
-  obtain ⟨c, hc, hf⟩ := L.li_exp hRH
+  obtain ⟨c, hc, hf⟩ := lam_exp_growth L hRH
   refine ⟨c / 2, by positivity, ?_⟩
   have hev : ∀ᶠ n : ℕ in atTop, 80 / c ^ 3 ≤ (n : ℝ) := tendsto_natCast_atTop_atTop.eventually_ge_atTop _
   refine (hf.and_eventually (hev.and (eventually_ge_atTop 1))).mono fun n ⟨h1, h2, h3⟩ => ?_
@@ -99,7 +100,7 @@ lemma rpow_quarter_nlogn (n : ℕ) :
     exact LR.rpow_quarter (mul_nonneg (by linarith) (Real.log_nonneg hn1))
 
 /-- **Claim part 2.** -/
-theorem part2 (L : LiteratureInputs) : Part2 := by
+theorem part2 (L : LitCore) : Part2 := by
   have hRq : ∀ n : ℕ, ∀ c : ℝ, c * √(√((n : ℝ) * Real.log n)) ≤ |R n| →
       c * ((n : ℝ) * Real.log n) ^ (1 / 4 : ℝ) ≤ |R n| := fun n c h => by
     rw [rpow_quarter_nlogn]; exact h
@@ -122,7 +123,7 @@ theorem part2 (L : LiteratureInputs) : Part2 := by
     exact h
 
 /-- Maślanka's trend is within `O(1)` of `t(n)`. -/
-lemma vorosTrend_bdd (L : LiteratureInputs) : ∃ C : ℝ, ∀ n, |vorosTrend n - liTrend n| ≤ C := by
+lemma vorosTrend_bdd (L : LitCore) : ∃ C : ℝ, ∀ n, |vorosTrend n - liTrend n| ≤ C := by
   obtain ⟨C, n₀, hC⟩ := L.voros
   refine ⟨3 / 4 + |C| + ∑ n ∈ Finset.range n₀, |vorosTrend n - liTrend n|, fun n => ?_⟩
   have hs0 : 0 ≤ ∑ n ∈ Finset.range n₀, |vorosTrend n - liTrend n| :=
@@ -148,7 +149,7 @@ lemma vorosTrend_bdd (L : LiteratureInputs) : ∃ C : ℝ, ∀ n, |vorosTrend n 
     linarith
 
 /-- **Claim part 5.** -/
-theorem part5 (L : LiteratureInputs) : Part5 := by
+theorem part5 (L : LitCore) : Part5 := by
   have key : ∀ trend : ℕ → ℝ, (∃ C : ℝ, ∀ n, |trend n - liTrend n| ≤ C) →
       (∀ a : ℝ, ¬ ∀ᶠ n : ℕ in atTop, |lam n - trend n| ≤ a * Real.log n) ∧
       (∀ ε : ℝ, ε < 1 / 4 →
@@ -184,7 +185,7 @@ lemma summable_keiper_iff (δ : ℝ) :
   simp only [this]
 
 /-- **Claim part 3, last clause.** -/
-theorem part3_half (L : LiteratureInputs) :
+theorem part3_half (L : LitCore) :
     RiemannHypothesis → ¬ Summable (fun m : ℕ => (m : ℝ) ^ (1 / 2 : ℝ) * keiperY m ^ 2) := by
   intro hRH
   rw [summable_keiper_iff]
@@ -195,7 +196,7 @@ lemma rpow_three_halves (x : ℝ) (hx : 0 ≤ x) : x ^ (3 / 2 : ℝ) = x * √x 
     Real.sqrt_eq_rpow]
 
 /-- **Claim part 1, first clause** (Theorem 1). -/
-theorem part1_lower (L : LiteratureInputs) (hRH : RiemannHypothesis) :
+theorem part1_lower (L : LitCore) (hRH : RiemannHypothesis) :
     ∀ ε > (0 : ℝ), ∀ᶠ N : ℕ in atTop,
       (c₁ - ε) * ((N : ℝ) ^ (3 / 2 : ℝ) * Real.log N ^ (1 / 2 : ℝ)) ≤ ∑ n ∈ Finset.Icc 1 N, R n ^ 2 := by
   intro ε hε

@@ -16,7 +16,7 @@ namespace LeanLi
 
 open Classical in
 /-- **(H_tiny)** with `X = N⁸`. -/
-theorem tiny_terms (L : LiteratureInputs) (hRH : RiemannHypothesis) (w : ℕ → ℕ → ℝ) (C : ℝ)
+theorem tiny_terms (L : LitCore) (hRH : RiemannHypothesis) (w : ℕ → ℕ → ℝ) (C : ℝ)
     (hgood : ∀ N : ℕ, 1 ≤ N → PhiGood N (w N) C) (η : ℝ) (hη : 0 < η) :
     LR.TinyTerms w thK lam ZK (fun N => ZK ((N : ℝ) ^ 8)) η := by
   have hπ := pi_gt_three

@@ -87,7 +87,7 @@ lemma bessel_a {T X : ℝ} (hT : 0 ≤ T) (hTX : T ≤ X) (s : Finset ℕ) (hs :
   exact hb
 
 section
-variable (L : LiteratureInputs)
+variable (L : LitCore)
 include L
 
 set_option maxHeartbeats 2000000 in

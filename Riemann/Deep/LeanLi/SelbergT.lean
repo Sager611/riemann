@@ -45,7 +45,7 @@ lemma intervalIntegrable_zetaS_sq (a b : ℝ) : IntervalIntegrable (fun t => zet
   simp only [zetaS_eq]; ring
 
 section
-variable (L : LiteratureInputs)
+variable (L : LitCore)
 include L
 
 /-- **Selberg, dyadically.** -/

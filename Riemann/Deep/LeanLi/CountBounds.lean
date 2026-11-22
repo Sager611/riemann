@@ -40,7 +40,7 @@ lemma mainN_sub_le {s t : ℝ} (hs : 0 < s) (hst : s ≤ t) :
   rw [div_mul_eq_mul_div, div_mul_eq_mul_div, div_mul_eq_mul_div, ← sub_div, div_le_div_iff_of_pos_right hπ]
   nlinarith [this]
 
-variable (L : LiteratureInputs)
+variable (L : LitCore)
 include L
 
 /-- Titchmarsh's averaged count: `N(T) = (T/2π) log(T/2πe) + O(log T)`. -/

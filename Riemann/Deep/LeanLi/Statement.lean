@@ -7,6 +7,11 @@ public import Riemann.Deep.LeanLi.Lit
 
 `R n = λ_n - (n/2)(log n - 1 - log 2π + γ)` with `λ_n = lim_{T→∞} Σ_{|ρ|≤T} m_ρ [1 - (1-1/ρ)ⁿ]`
 (`Defs.lean`). "Under RH" is Mathlib's `RiemannHypothesis`; `≪`, `O`, `Ω`, `o(1)` are explicit.
+
+Scope. Not formalized: Claim 5's last sentence "Numerically a = 2 first fails at n = 5083" (a numerical
+computation of `λ_n`, not a theorem; out of scope). The parenthetical "(Li: RH ⟺ λ_n > 0 for all n)" is
+cited background, not part of the Claim. Zeros are counted with multiplicity throughout (no simplicity).
+Sums `Σ_{n≤N}`, `Σ_{N<n≤2N}` run over integers `N` (`∀ᶠ N : ℕ`); Claim 4's scale `N` is real.
 -/
 
 @[expose] public section
@@ -57,11 +62,12 @@ def Part3 : Prop :=
   (RiemannHypothesis → ¬ Summable (fun m : ℕ => (m : ℝ) ^ (1 / 2 : ℝ) * keiperY m ^ 2))
 
 /-- Claim 4. Under RH, for `φ ∈ C_c^∞(0, ∞)`:
-`Σ_n φ(n/N) R(n) = (7/4) Σ_n φ(n/N) + O(log N)`. -/
+`Σ_n φ(n/N) R(n) = (7/4) Σ_n φ(n/N) + O(log N)`, for every real scale `N ≥ 2` (the sums are finite;
+`O(log N)` is uniform in `N`, its constant depends on `φ`). -/
 def Part4 : Prop :=
   RiemannHypothesis → ∀ φ : ℝ → ℝ, ContDiff ℝ ∞ φ → HasCompactSupport φ →
     tsupport φ ⊆ Set.Ioi 0 →
-      ∃ C : ℝ, ∀ N : ℕ, 2 ≤ N →
+      ∃ C : ℝ, ∀ N : ℝ, 2 ≤ N →
         |∑' n : ℕ, φ (n / N) * R n - (7 / 4) * ∑' n : ℕ, φ (n / N)| ≤ C * Real.log N
 
 /-- Claim 5. Merlini–Sala–Sala's conjecture `|λ_tiny(n)| ≤ a log n` is false for every `a`, and

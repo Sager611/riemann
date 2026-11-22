@@ -14,12 +14,12 @@ open scoped ContDiff
 namespace LeanLi
 
 section
-variable (L : LiteratureInputs)
+variable (L : LitCore)
 include L
 
 /-- The zero term `∫_{T₀}^X S G = O(log X)`. -/
 lemma zero_term {φ : ℝ → ℝ} {B : ℕ} (h : TestFn φ B) : ∃ K₁ K₂ X₀ : ℝ, 1 ≤ X₀ ∧ 0 ≤ K₁ ∧ 0 ≤ K₂ ∧
-    ∀ N : ℕ, 1 ≤ N → ∀ T₀ X : ℝ, 0 ≤ T₀ → T₀ ≤ X → X₀ ≤ X →
+    ∀ N : ℝ, 1 ≤ N → ∀ T₀ X : ℝ, 0 ≤ T₀ → T₀ ≤ X → X₀ ≤ X →
       |∫ t in T₀..X, zetaS t * Gf φ B N t| ≤ K₁ + K₂ * Real.log X := by
   obtain ⟨S₁, S₂, X₁, hX₁, hS₁0, hS₂0, hS⟩ := S1_sup L
   obtain ⟨CG, hCG0, hG⟩ := Gf_bound h
@@ -73,7 +73,7 @@ lemma zero_term {φ : ℝ → ℝ} {B : ℕ} (h : TestFn φ B) : ∃ K₁ K₂ X
 
 /-- The `r` term `∫_{T₀}^X F₀ r = O(log X)`. -/
 lemma r_term {φ : ℝ → ℝ} {B : ℕ} (h : TestFn φ B) : ∃ K₁ K₂ X₀ : ℝ, 1 ≤ X₀ ∧ 0 ≤ K₁ ∧ 0 ≤ K₂ ∧
-    ∀ N : ℕ, 1 ≤ N → ∀ T₀ X : ℝ, 0 ≤ T₀ → T₀ ≤ 1 → X₀ ≤ X →
+    ∀ N : ℝ, 1 ≤ N → ∀ T₀ X : ℝ, 0 ≤ T₀ → T₀ ≤ 1 → X₀ ≤ X →
       |∫ t in T₀..X, F0 φ B N t * rfun t| ≤ K₁ + K₂ * Real.log X := by
   obtain ⟨C₀, hC₀0, hF⟩ := F0_bound h
   obtain ⟨K₁, K₂, X₁, hX₁, hW⟩ := int_weighted_r L
@@ -104,7 +104,7 @@ lemma r_term {φ : ℝ → ℝ} {B : ℕ} (h : TestFn φ B) : ∃ K₁ K₂ X₀
 end
 
 /-- The `log` term on `[0, T₀]`. -/
-lemma log_term {φ : ℝ → ℝ} {B : ℕ} (h : TestFn φ B) : ∃ K : ℝ, ∀ N : ℕ, 1 ≤ N → ∀ T₀ : ℝ, 0 ≤ T₀ → T₀ ≤ 1 →
+lemma log_term {φ : ℝ → ℝ} {B : ℕ} (h : TestFn φ B) : ∃ K : ℝ, ∀ N : ℝ, 1 ≤ N → ∀ T₀ : ℝ, 0 ≤ T₀ → T₀ ≤ 1 →
     |1 / Real.pi * ∫ t in (0 : ℝ)..T₀, F0 φ B N t * Real.log (t / (2 * Real.pi))| ≤ K := by
   obtain ⟨C₀, hC₀0, hF⟩ := F0_bound h
   set J := ∫ t in (0 : ℝ)..1, |Real.log (t / (2 * Real.pi))| with hJ
@@ -138,32 +138,34 @@ lemma log_term {φ : ℝ → ℝ} {B : ℕ} (h : TestFn φ B) : ∃ K : ℝ, ∀
 
 section
 variable {φ : ℝ → ℝ} {B : ℕ} (hB : 1 ≤ B) {M : ℝ} (hM0 : 0 ≤ M) (hM : ∀ y, |φ y| ≤ M)
-  {N : ℕ} (hN : 1 ≤ N)
+  {N : ℝ} (hN : 1 ≤ N)
 include hB hM0 hM hN
 
-lemma card_le_two : ((B * N + 1 : ℕ) : ℝ) ≤ 2 * B * N := by
+lemma card_le_two : ((⌊(B : ℝ) * N⌋₊ + 1 : ℕ) : ℝ) ≤ 2 * B * N := by
   have h1 : (1 : ℝ) ≤ B := by exact_mod_cast hB
-  have h2 : (1 : ℝ) ≤ N := by exact_mod_cast hN
+  have h3 : (⌊(B : ℝ) * N⌋₊ : ℝ) ≤ B * N := Nat.floor_le (by positivity)
   push_cast; nlinarith
 
-lemma mem_range_le {n : ℕ} (hn : n ∈ range (B * N + 1)) : (n : ℝ) ≤ B * N := by
-  have := Finset.mem_range.1 hn
-  have : n ≤ B * N := by omega
-  exact_mod_cast this
+lemma mem_range_le {n : ℕ} (hn : n ∈ range (⌊(B : ℝ) * N⌋₊ + 1)) : (n : ℝ) ≤ B * N := by
+  have h1 := Finset.mem_range.1 hn
+  have h2 : n ≤ ⌊(B : ℝ) * N⌋₊ := by omega
+  have h3 : (⌊(B : ℝ) * N⌋₊ : ℝ) ≤ B * N := Nat.floor_le (by positivity)
+  have h4 : (n : ℝ) ≤ ⌊(B : ℝ) * N⌋₊ := by exact_mod_cast h2
+  linarith
 
-lemma const_term (c : ℝ) : |∑ n ∈ range (B * N + 1), φ (n / N) * c| ≤ 2 * B * N * M * |c| := by
+lemma const_term (c : ℝ) : |∑ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), φ (n / N) * c| ≤ 2 * B * N * M * |c| := by
   refine (Finset.abs_sum_le_sum_abs _ _).trans ?_
-  have hpt : ∀ n ∈ range (B * N + 1), |φ (n / N) * c| ≤ M * |c| := fun n _ => by
+  have hpt : ∀ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), |φ (n / N) * c| ≤ M * |c| := fun n _ => by
     rw [abs_mul]; exact mul_le_mul_of_nonneg_right (hM _) (abs_nonneg _)
   refine (Finset.sum_le_sum hpt).trans ?_
   rw [Finset.sum_const, Finset.card_range, nsmul_eq_mul]
   have := card_le_two hB hM0 hM hN
   have h0 : 0 ≤ M * |c| := by positivity
-  calc ((B * N + 1 : ℕ) : ℝ) * (M * |c|) ≤ 2 * B * N * (M * |c|) := mul_le_mul_of_nonneg_right this h0
+  calc ((⌊(B : ℝ) * N⌋₊ + 1 : ℕ) : ℝ) * (M * |c|) ≤ 2 * B * N * (M * |c|) := mul_le_mul_of_nonneg_right this h0
     _ = 2 * B * N * M * |c| := by ring
 
 lemma itail_term {X : ℝ} (hX : 2 * Real.pi ≤ X) (hXN : (N : ℝ) ^ 8 ≤ X) :
-    |∑ n ∈ range (B * N + 1), φ (n / N) * (-∫ t in Ioi X, hI n t)| ≤ 4 * M * (B : ℝ) ^ 3 := by
+    |∑ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), φ (n / N) * (-∫ t in Ioi X, hI n t)| ≤ 4 * M * (B : ℝ) ^ 3 := by
   have hN1 : (1 : ℝ) ≤ N := by exact_mod_cast hN
   have hB1 : (1 : ℝ) ≤ B := by exact_mod_cast hB
   have hπ := Real.pi_gt_three
@@ -172,7 +174,7 @@ lemma itail_term {X : ℝ} (hX : 2 * Real.pi ≤ X) (hXN : (N : ℝ) ^ 8 ≤ X) 
     rw [Real.le_sqrt (by positivity) hX0.le]
     calc ((N : ℝ) ^ 4) ^ 2 = (N : ℝ) ^ 8 := by ring
       _ ≤ X := hXN
-  have hpt : ∀ n ∈ range (B * N + 1), |φ (n / N) * (-∫ t in Ioi X, hI n t)| ≤
+  have hpt : ∀ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), |φ (n / N) * (-∫ t in Ioi X, hI n t)| ≤
       M * (2 * ((B : ℝ) * N) ^ 2 / (Real.pi * (N : ℝ) ^ 4)) := by
     intro n hn
     have hnB := mem_range_le hB hM0 hM hN hn
@@ -192,7 +194,7 @@ lemma itail_term {X : ℝ} (hX : 2 * Real.pi ≤ X) (hXN : (N : ℝ) ^ 8 ≤ X) 
   have h2 : 2 * (B : ℝ) ^ 2 / (Real.pi * (N : ℝ) ^ 2) ≤ 2 * (B : ℝ) ^ 2 / N := by
     apply div_le_div_of_nonneg_left (by positivity) (by positivity)
     nlinarith
-  calc ((B * N + 1 : ℕ) : ℝ) * (M * (2 * (B : ℝ) ^ 2 / (Real.pi * (N : ℝ) ^ 2))) ≤
+  calc ((⌊(B : ℝ) * N⌋₊ + 1 : ℕ) : ℝ) * (M * (2 * (B : ℝ) ^ 2 / (Real.pi * (N : ℝ) ^ 2))) ≤
         (2 * B * N) * (M * (2 * (B : ℝ) ^ 2 / N)) :=
         mul_le_mul hc (mul_le_mul_of_nonneg_left h2 hM0) (by positivity) (by positivity)
     _ = 4 * M * (B : ℝ) ^ 3 := by field_simp; ring
@@ -212,12 +214,12 @@ lemma gfun_abs_le (n : ℕ) {t : ℝ} (ht : 0 < t) : |gfun n t| ≤ (n : ℝ) ^ 
   linarith
 
 lemma gX_term {X : ℝ} (hX1 : 1 ≤ X) (hXN : (N : ℝ) ^ 8 ≤ X) {D K : ℝ} (hK : 0 ≤ K) (hD : |D| ≤ K * X) :
-    |∑ n ∈ range (B * N + 1), φ (n / N) * (gfun n X * D)| ≤ 2 * M * K * (B : ℝ) ^ 3 := by
+    |∑ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), φ (n / N) * (gfun n X * D)| ≤ 2 * M * K * (B : ℝ) ^ 3 := by
   have hN1 : (1 : ℝ) ≤ N := by exact_mod_cast hN
   have hB1 : (1 : ℝ) ≤ B := by exact_mod_cast hB
   have hX0 : 0 < X := by linarith
   have hN3 : (N : ℝ) ^ 3 ≤ X := le_trans (pow_le_pow_right₀ hN1 (by norm_num)) hXN
-  have hpt : ∀ n ∈ range (B * N + 1), |φ (n / N) * (gfun n X * D)| ≤ M * (((B : ℝ) * N) ^ 2 * K / X) := by
+  have hpt : ∀ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), |φ (n / N) * (gfun n X * D)| ≤ M * (((B : ℝ) * N) ^ 2 * K / X) := by
     intro n hn
     have hnB := mem_range_le hB hM0 hM hN hn
     rw [abs_mul, abs_mul]
@@ -236,13 +238,13 @@ lemma gX_term {X : ℝ} (hX1 : 1 ≤ X) (hXN : (N : ℝ) ^ 8 ≤ X) {D K : ℝ} 
     rw [div_le_div_iff₀ hX0 (by positivity)]
     have : (B : ℝ) ^ 2 * K * X ≥ (B : ℝ) ^ 2 * K * (N : ℝ) ^ 3 := mul_le_mul_of_nonneg_left hN3 (by positivity)
     nlinarith
-  calc ((B * N + 1 : ℕ) : ℝ) * (M * (((B : ℝ) * N) ^ 2 * K / X)) ≤ (2 * B * N) * (M * ((B : ℝ) ^ 2 * K / N)) :=
+  calc ((⌊(B : ℝ) * N⌋₊ + 1 : ℕ) : ℝ) * (M * (((B : ℝ) * N) ^ 2 * K / X)) ≤ (2 * B * N) * (M * ((B : ℝ) ^ 2 * K / N)) :=
         mul_le_mul hc (mul_le_mul_of_nonneg_left h3 hM0) (by positivity) (by positivity)
     _ = 2 * M * K * (B : ℝ) ^ 3 := by field_simp
 
 lemma ztail_term {X : ℝ} (hX1 : 1 ≤ X) (hXN : (N : ℝ) ^ 8 ≤ X) {Kt : ℝ} (hKt0 : 0 ≤ Kt)
     (hKt : ∀ n : ℕ, ∑' k : ↑((ZK X : Set ZeroIdx)ᶜ), gfun n (ordK k) ≤ (n : ℝ) ^ 2 * (Kt / X ^ 2 + 10 / √X)) :
-    |∑ n ∈ range (B * N + 1), φ (n / N) * ∑' k : ↑((ZK X : Set ZeroIdx)ᶜ), gfun n (ordK k)| ≤
+    |∑ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), φ (n / N) * ∑' k : ↑((ZK X : Set ZeroIdx)ᶜ), gfun n (ordK k)| ≤
       2 * M * (B : ℝ) ^ 3 * (Kt + 10) := by
   have hN1 : (1 : ℝ) ≤ N := by exact_mod_cast hN
   have hB1 : (1 : ℝ) ≤ B := by exact_mod_cast hB
@@ -260,7 +262,7 @@ lemma ztail_term {X : ℝ} (hX1 : 1 ≤ X) (hXN : (N : ℝ) ^ 8 ≤ X) {Kt : ℝ
     have h2 : 10 / √X ≤ 10 / (N : ℝ) ^ 4 := div_le_div_of_nonneg_left (by norm_num) (by positivity) hsX
     have e : (Kt + 10) / (N : ℝ) ^ 4 = Kt / (N : ℝ) ^ 4 + 10 / (N : ℝ) ^ 4 := by ring
     linarith
-  have hpt : ∀ n ∈ range (B * N + 1), |φ (n / N) * ∑' k : ↑((ZK X : Set ZeroIdx)ᶜ), gfun n (ordK k)| ≤
+  have hpt : ∀ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), |φ (n / N) * ∑' k : ↑((ZK X : Set ZeroIdx)ᶜ), gfun n (ordK k)| ≤
       M * ((B : ℝ) ^ 2 * (Kt + 10) / (N : ℝ) ^ 2) := by
     intro n hn
     have hnB := mem_range_le hB hM0 hM hN hn
@@ -276,7 +278,7 @@ lemma ztail_term {X : ℝ} (hX1 : 1 ≤ X) (hXN : (N : ℝ) ^ 8 ≤ X) {Kt : ℝ
   refine (Finset.abs_sum_le_sum_abs _ _).trans ((Finset.sum_le_sum hpt).trans ?_)
   rw [Finset.sum_const, Finset.card_range, nsmul_eq_mul]
   have hc := card_le_two hB hM0 hM hN
-  calc ((B * N + 1 : ℕ) : ℝ) * (M * ((B : ℝ) ^ 2 * (Kt + 10) / (N : ℝ) ^ 2)) ≤
+  calc ((⌊(B : ℝ) * N⌋₊ + 1 : ℕ) : ℝ) * (M * ((B : ℝ) ^ 2 * (Kt + 10) / (N : ℝ) ^ 2)) ≤
         (2 * B * N) * (M * ((B : ℝ) ^ 2 * (Kt + 10) / (N : ℝ) ^ 2)) :=
         mul_le_mul_of_nonneg_right hc (by positivity)
     _ = 2 * M * (B : ℝ) ^ 3 * (Kt + 10) / N := by field_simp
@@ -284,9 +286,10 @@ lemma ztail_term {X : ℝ} (hX1 : 1 ≤ X) (hXN : (N : ℝ) ^ 8 ≤ X) {Kt : ℝ
 
 end
 
-lemma trend_term {φ : ℝ → ℝ} {B : ℕ} (h : TestFn φ B) {M : ℝ} (hM0 : 0 ≤ M) (hM : ∀ y, |φ y| ≤ M) (N : ℕ) :
-    |∑ n ∈ range (B * N + 1), φ (n / N) * (Iclosed n - liTrend n)| ≤ 4 * M * (1 + Real.log (B * N)) := by
-  have hpt : ∀ n ∈ range (B * N + 1), |φ (n / N) * (Iclosed n - liTrend n)| ≤ 4 * M * (1 / (n : ℝ)) := by
+lemma trend_term {φ : ℝ → ℝ} {B : ℕ} (hB : 1 ≤ B) (h : TestFn φ B) {M : ℝ} (hM0 : 0 ≤ M) (hM : ∀ y, |φ y| ≤ M)
+    {N : ℝ} (hN : 1 ≤ N) :
+    |∑ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), φ (n / N) * (Iclosed n - liTrend n)| ≤ 4 * M * (1 + Real.log (B * N)) := by
+  have hpt : ∀ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), |φ (n / N) * (Iclosed n - liTrend n)| ≤ 4 * M * (1 / (n : ℝ)) := by
     intro n _
     rcases Nat.eq_zero_or_pos n with h0 | h0
     · subst h0
@@ -300,16 +303,23 @@ lemma trend_term {φ : ℝ → ℝ} {B : ℕ} (h : TestFn φ B) {M : ℝ} (hM0 :
   apply mul_le_mul_of_nonneg_left _ (by positivity)
   rw [Finset.sum_range_succ']
   simp only [Nat.cast_zero, div_zero, add_zero]
-  have e : ∑ i ∈ range (B * N), 1 / ((i + 1 : ℕ) : ℝ) = (harmonic (B * N) : ℝ) := by
+  set F := ⌊(B : ℝ) * N⌋₊ with hF
+  have e : ∑ i ∈ range F, 1 / ((i + 1 : ℕ) : ℝ) = (harmonic F : ℝ) := by
     simp only [harmonic]; push_cast; simp only [one_div]
   rw [e]
-  have := harmonic_le_one_add_log (B * N)
-  push_cast at this ⊢
-  exact this
+  have h1 := harmonic_le_one_add_log F
+  have hB1 : (1 : ℝ) ≤ B := by exact_mod_cast hB
+  have hBN : 1 ≤ (B : ℝ) * N := by nlinarith
+  have hF1 : 1 ≤ F := Nat.le_floor (by push_cast; linarith)
+  have hF2 : (F : ℝ) ≤ B * N := Nat.floor_le (by linarith)
+  have hF0 : (0 : ℝ) < F := by exact_mod_cast hF1
+  have h2 : Real.log F ≤ Real.log ((B : ℝ) * N) := Real.log_le_log hF0 hF2
+  have h3 : ((harmonic F : ℚ) : ℝ) ≤ 1 + Real.log (F : ℝ) := h1
+  linarith
 
 set_option maxHeartbeats 8000000 in
 /-- **Claim part 4** (Theorem 4, RH): `Σ φ(n/N) R(n) = (7/4) Σ φ(n/N) + O(log N)` for `φ ∈ C_c^∞(0, ∞)`. -/
-theorem part4 (L : LiteratureInputs) : Part4 := by
+theorem part4 (L : LitCore) : Part4 := by
   intro hRH φ hφ hc hs
   obtain ⟨B, hB1, h⟩ := testFn_of hφ hc hs
   obtain ⟨M, hM0, hM⟩ := h.bound
@@ -337,8 +347,8 @@ theorem part4 (L : LiteratureInputs) : Part4 := by
   have hQ₀0 : 0 ≤ Q₀ := by positivity
   have hQ₁0 : 0 ≤ Q₁ := by positivity
   refine ⟨Q₀ / Real.log 2 + Q₁, fun N hN => ?_⟩
-  have hN1 : 1 ≤ N := by omega
-  have hNr : (2 : ℝ) ≤ N := by exact_mod_cast hN
+  have hNr : (2 : ℝ) ≤ N := hN
+  have hN1 : (1 : ℝ) ≤ N := by linarith
   have hN1r : (1 : ℝ) ≤ N := by linarith
   have hlN : Real.log 2 ≤ Real.log N := Real.log_le_log (by norm_num) hNr
   set X := X₀ * (N : ℝ) ^ 8 with hXdef
@@ -356,15 +366,15 @@ theorem part4 (L : LiteratureInputs) : Part4 := by
   have hXrX : Xr ≤ X := le_trans (le_trans (le_max_left _ _) (le_max_right _ _)) hX₀X
   have hT₁X : T₁ ≤ X := le_trans (le_trans (le_max_left _ _) (le_trans (le_max_right _ _) (le_max_right _ _))) hX₀X
   -- finite sums
-  have hts1 : ∑' n : ℕ, φ (n / N) * R n = ∑ n ∈ range (B * N + 1), φ (n / N) * R n := by
+  have hts1 : ∑' n : ℕ, φ (n / N) * R n = ∑ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), φ (n / N) * R n := by
     apply tsum_eq_sum; intro n hn
     rw [Finset.mem_range, not_lt] at hn
-    rw [h.vanish hN1 (by omega), zero_mul]
-  have hts2 : ∑' n : ℕ, φ (n / N) = ∑ n ∈ range (B * N + 1), φ (n / N) := by
+    rw [h.vanish (by linarith) (by omega), zero_mul]
+  have hts2 : ∑' n : ℕ, φ (n / N) = ∑ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), φ (n / N) := by
     apply tsum_eq_sum; intro n hn
     rw [Finset.mem_range, not_lt] at hn
-    exact h.vanish hN1 (by omega)
-  set S := range (B * N + 1) with hS
+    exact h.vanish (by linarith) (by omega)
+  set S := range (⌊(B : ℝ) * N⌋₊ + 1) with hS
   have key : ∑ n ∈ S, φ (n / N) * R n - 7 / 4 * ∑ n ∈ S, φ (n / N) =
       (∑ n ∈ S, φ (n / N) * (2 * n * aCoef T₀ X n)) +
       (∑ n ∈ S, φ (n / N) * (-2 * Afun T₀ * Real.cos (n * liTheta T₀))) +
@@ -411,7 +421,7 @@ theorem part4 (L : LiteratureInputs) : Part4 := by
       exact Finset.sum_congr rfl fun n _ => by ring
     rw [e, abs_mul, abs_neg, abs_two]
     exact mul_le_mul_of_nonneg_left (hW N hN1 T₀ X hT₀0.le hT₀1 hXWX) (by norm_num)
-  have b5 := trend_term h hM0 hM N
+  have b5 := trend_term hB1 h hM0 hM hN1
   have b6 := itail_term hB1 hM0 hM hN1 (X := X) (by linarith) hXN
   have b7 : |∑ n ∈ S, φ (n / N) * (1 / Real.pi *
       (∫ t in (0 : ℝ)..T₀, Real.cos (n * liTheta t) * Real.log (t / (2 * Real.pi))))| ≤ |K7| := by

@@ -56,7 +56,7 @@ theorem zsum_abel {a b : ℝ} (hab : a ≤ b) {f f' : ℝ → ℝ}
   rw [hsplit t ht.1 ht.2]
 
 /-- `N(t) ≤ K + 2 t √t` for all `t ≥ 0`. -/
-lemma count_le_poly (L : LiteratureInputs) : ∃ K : ℝ, 0 ≤ K ∧ ∀ t, 0 ≤ t → (zeroCount t : ℝ) ≤ K + 2 * t * √t := by
+lemma count_le_poly (L : LitCore) : ∃ K : ℝ, 0 ≤ K ∧ ∀ t, 0 ≤ t → (zeroCount t : ℝ) ≤ K + 2 * t * √t := by
   obtain ⟨T₀, hT₀, h⟩ := count_le L
   refine ⟨zeroCount T₀, Nat.cast_nonneg _, fun t ht => ?_⟩
   by_cases htT : t ≤ T₀
@@ -81,7 +81,7 @@ lemma hasDerivAt_inv_sq {t : ℝ} (ht : t ≠ 0) : HasDerivAt (fun t : ℝ => 1 
   · field_simp; ring
 
 /-- The positive ordinates: `Σ_{0<γ≤b} m/γ² ≤ B` uniformly in `b`. -/
-lemma sum_inv_sq_le (L : LiteratureInputs) : ∃ B : ℝ, ∀ b : ℝ,
+lemma sum_inv_sq_le (L : LitCore) : ∃ B : ℝ, ∀ b : ℝ,
     ∑ ρ ∈ zset b, (mult ρ : ℝ) / ρ.im ^ 2 ≤ B := by
   obtain ⟨c, hc0, hc1, hc⟩ := exists_im_lower
   obtain ⟨K, hK0, hK⟩ := count_le_poly L
@@ -210,7 +210,7 @@ lemma sum_inv_sq_le (L : LiteratureInputs) : ∃ B : ℝ, ∀ b : ℝ,
 /-- The zeros in the upper half plane. -/
 def UpperZeros : Set ℂ := {ρ | ρ ∈ NontrivialZeros ∧ 0 < ρ.im}
 
-lemma summable_mult_div_sq (L : LiteratureInputs) :
+lemma summable_mult_div_sq (L : LitCore) :
     Summable (fun ρ : UpperZeros => (mult (ρ : ℂ) : ℝ) / (ρ : ℂ).im ^ 2) := by
   obtain ⟨B, hB⟩ := sum_inv_sq_le L
   refine summable_of_sum_le (c := B) (fun ρ => by positivity) fun u => ?_

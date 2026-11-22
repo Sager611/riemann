@@ -13,7 +13,7 @@ open Real Finset Filter Set MeasureTheory
 namespace LeanLi
 
 section
-variable (L : LiteratureInputs)
+variable (L : LitCore)
 include L
 
 /-- `Σ_{a < γ ≤ b} m/γ² ≤ K/a² + 10/√a` uniformly in `b`. -/

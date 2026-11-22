@@ -111,7 +111,7 @@ lemma card_ZK (T : ℝ) : ((ZK T).card : ℝ) = zeroCount T := by
 
 /-- **Li's formula under RH**, in the form `λ_n = Σ_k 2(1 - cos nθ_k)` over the zeros with `γ > 0`
 counted with multiplicity. -/
-theorem hasSum_lam (L : LiteratureInputs) (hRH : RiemannHypothesis) (n : ℕ) :
+theorem hasSum_lam (L : LitCore) (hRH : RiemannHypothesis) (n : ℕ) :
     HasSum (fun k : ZeroIdx => 2 * (1 - Real.cos (n * thK k))) (lam n) := by
   have hnn : ∀ k : ZeroIdx, 0 ≤ 2 * (1 - Real.cos (n * thK k)) := fun k => by
     have := Real.cos_le_one (n * thK k); linarith

@@ -53,7 +53,7 @@ lemma integral_inv_sq_le' {a b C : ℝ} (ha : 0 < a) (hab : a ≤ b) (hC : 0 ≤
   linarith
 
 section
-variable (L : LiteratureInputs)
+variable (L : LitCore)
 include L
 
 /-- `|N(T) - A(T)| ≤ C log T`. -/

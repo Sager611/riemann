@@ -42,6 +42,13 @@ theorem part1_mont (L : LiteratureInputs) (hRH : RiemannHypothesis) :
 theorem part1 (L : LiteratureInputs) : Part1 :=
   ⟨c₁_num, fun hRH => ⟨part1_lower L hRH, part1_upper L hRH, part1_mont L hRH⟩⟩
 
+/-- Claim 1's lower bound from RH and `LitCore` alone: no pair correlation (`MontgomeryPC` is not a field
+of `LitCore`), no simplicity (zeros counted with multiplicity). -/
+theorem part1_lower_rh_only (L : LitCore) (hRH : RiemannHypothesis) :
+    ∀ ε > (0 : ℝ), ∀ᶠ N : ℕ in atTop,
+      (c₁ - ε) * ((N : ℝ) ^ (3 / 2 : ℝ) * Real.log N ^ (1 / 2 : ℝ)) ≤ ∑ n ∈ Finset.Icc 1 N, R n ^ 2 :=
+  part1_lower L hRH
+
 /-- **Main theorem: the Li-coefficient remainder laws** (parts 0–5 of the Claim). -/
 theorem li_remainder_laws (L : LiteratureInputs) : LiRemainderLaws :=
   ⟨part0 L, part1 L, part2 L, part3 L, part4 L, part5 L⟩

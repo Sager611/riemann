@@ -56,7 +56,7 @@ noncomputable def Rest (n : ℕ) (T X : ℝ) : ℝ :=
     gfun n X * ((zeroCount X : ℝ) - Afun X) + ∑' k : ↑((ZK X : Set ZeroIdx)ᶜ), gfun n (ordK k)
 
 /-- **Lemma A** (exact decomposition). -/
-theorem decomp (L : LiteratureInputs) (hRH : RiemannHypothesis) (n : ℕ) {T X : ℝ} (hT : 0 < T)
+theorem decomp (L : LitCore) (hRH : RiemannHypothesis) (n : ℕ) {T X : ℝ} (hT : 0 < T)
     (hTX : T ≤ X) :
     R n = -2 * Wv T n + 2 * n * aCoef T X n + Rest n T X := by
   have hπ := Real.pi_pos

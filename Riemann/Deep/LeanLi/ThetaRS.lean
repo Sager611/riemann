@@ -68,7 +68,7 @@ lemma integral_Ad (a b : ℝ) : ∫ t in a..b, Ad t = Afun b - Afun a :=
 noncomputable def rfun (t : ℝ) : ℝ := Ad t - 1 / (2 * Real.pi) * Real.log (t / (2 * Real.pi))
 
 /-- **`|r(t)| ≤ C/t²`** for large `t` (DLMF 5.11.2). -/
-lemma rfun_bound (L : LiteratureInputs) : ∃ C t₀ : ℝ, 1 ≤ t₀ ∧ ∀ t, t₀ ≤ t → |rfun t| ≤ C / t ^ 2 := by
+lemma rfun_bound (L : LitCore) : ∃ C t₀ : ℝ, 1 ≤ t₀ ∧ ∀ t, t₀ ≤ t → |rfun t| ≤ C / t ^ 2 := by
   obtain ⟨C, R₀, hC⟩ := L.digamma
   refine ⟨(|C| * 4 + 1) / Real.pi, max 1 (2 * |R₀| + 2), le_max_left _ _, fun t ht => ?_⟩
   have ht1 : 1 ≤ t := le_trans (le_max_left _ _) ht

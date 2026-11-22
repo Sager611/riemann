@@ -14,7 +14,7 @@ namespace LeanLi
 
 lemma trendT_eq_liTrend : trendT = liTrend := by funext n; rfl
 
-lemma rvm_ZK (L : LiteratureInputs) : LR.RvM ZK := by
+lemma rvm_ZK (L : LitCore) : LR.RvM ZK := by
   obtain ⟨C, T₀, _, h⟩ := count_asymp L
   exact ⟨C, T₀, fun T hT => by rw [card_ZK]; exact h T hT⟩
 
@@ -89,7 +89,7 @@ lemma trendPt_wη (η : ℝ) (hη : 0 < η) : TrendPt' (wη η hη) thK liTrend 
 open Classical in
 /-- **Theorem 1** (RH; proofs.md Theorem 1): for every `ε > 0`, eventually
 `Σ_{n≤N} R(n)² ≥ (c₁ - ε) N^{3/2} (log N)^{1/2}`. -/
-theorem thm1_li (L : LiteratureInputs) (hRH : RiemannHypothesis) : LR.Thm1Bound R := by
+theorem thm1_li (L : LitCore) (hRH : RiemannHypothesis) : LR.Thm1Bound R := by
   have h := thm1_of_lemmas' thK lam liTrend (hasSum_lam L hRH) (by simp [liTrend]) ZK (rvm_ZK L)
     (tauT L) (fun η hη => by
       obtain ⟨C, hC⟩ := phiGood_wη η hη

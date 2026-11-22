@@ -36,16 +36,16 @@ lemma ZK_eq_empty {T : ℝ} (h : zset T = ∅) : ZK T = ∅ := by
 lemma zeroCount_eq_zero {T : ℝ} (h : zset T = ∅) : (zeroCount T : ℝ) = 0 := by
   rw [zeroCount_eq, h, Finset.sum_empty]
 
-lemma Ej_re (φ : ℝ → ℝ) (B N j : ℕ) (x : ℝ) :
-    (Ej φ B N j x).re = ∑ n ∈ range (B * N + 1), φ (n / N) * (n : ℝ) ^ j * Real.cos (n * x) := by
+lemma Ej_re (φ : ℝ → ℝ) (B : ℕ) (N : ℝ) (j : ℕ) (x : ℝ) :
+    (Ej φ B N j x).re = ∑ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), φ (n / N) * (n : ℝ) ^ j * Real.cos (n * x) := by
   unfold Ej
   rw [Complex.re_sum]
   refine Finset.sum_congr rfl fun n _ => ?_
   have e : Complex.I * (((n : ℝ) : ℂ) * (x : ℂ)) = (((n : ℝ) * x : ℝ) : ℂ) * Complex.I := by push_cast; ring
   rw [Complex.re_ofReal_mul, e, Complex.exp_ofReal_mul_I_re]
 
-lemma Ej_im (φ : ℝ → ℝ) (B N j : ℕ) (x : ℝ) :
-    (Ej φ B N j x).im = ∑ n ∈ range (B * N + 1), φ (n / N) * (n : ℝ) ^ j * Real.sin (n * x) := by
+lemma Ej_im (φ : ℝ → ℝ) (B : ℕ) (N : ℝ) (j : ℕ) (x : ℝ) :
+    (Ej φ B N j x).im = ∑ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), φ (n / N) * (n : ℝ) ^ j * Real.sin (n * x) := by
   unfold Ej
   rw [Complex.im_sum]
   refine Finset.sum_congr rfl fun n _ => ?_
@@ -53,28 +53,28 @@ lemma Ej_im (φ : ℝ → ℝ) (B N j : ℕ) (x : ℝ) :
   rw [Complex.im_ofReal_mul, e, Complex.exp_ofReal_mul_I_im]
 
 /-- `F₀(t) = Σ φ(n/N) cos nθ(t)`, `F₁ = Σ φ n sin nθ`, `F₂ = Σ φ n² cos nθ`. -/
-noncomputable def F0 (φ : ℝ → ℝ) (B N : ℕ) (t : ℝ) : ℝ :=
-  ∑ n ∈ range (B * N + 1), φ (n / N) * Real.cos (n * liTheta t)
-noncomputable def F1 (φ : ℝ → ℝ) (B N : ℕ) (t : ℝ) : ℝ :=
-  ∑ n ∈ range (B * N + 1), φ (n / N) * n * Real.sin (n * liTheta t)
-noncomputable def F2 (φ : ℝ → ℝ) (B N : ℕ) (t : ℝ) : ℝ :=
-  ∑ n ∈ range (B * N + 1), φ (n / N) * (n : ℝ) ^ 2 * Real.cos (n * liTheta t)
+noncomputable def F0 (φ : ℝ → ℝ) (B : ℕ) (N : ℝ) (t : ℝ) : ℝ :=
+  ∑ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), φ (n / N) * Real.cos (n * liTheta t)
+noncomputable def F1 (φ : ℝ → ℝ) (B : ℕ) (N : ℝ) (t : ℝ) : ℝ :=
+  ∑ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), φ (n / N) * n * Real.sin (n * liTheta t)
+noncomputable def F2 (φ : ℝ → ℝ) (B : ℕ) (N : ℝ) (t : ℝ) : ℝ :=
+  ∑ n ∈ range (⌊(B : ℝ) * N⌋₊ + 1), φ (n / N) * (n : ℝ) ^ 2 * Real.cos (n * liTheta t)
 
-lemma F0_eq (φ : ℝ → ℝ) (B N : ℕ) (t : ℝ) : F0 φ B N t = (Ej φ B N 0 (liTheta t)).re := by
+lemma F0_eq (φ : ℝ → ℝ) (B : ℕ) (N : ℝ) (t : ℝ) : F0 φ B N t = (Ej φ B N 0 (liTheta t)).re := by
   rw [Ej_re]; unfold F0; simp
 
-lemma F1_eq (φ : ℝ → ℝ) (B N : ℕ) (t : ℝ) : F1 φ B N t = (Ej φ B N 1 (liTheta t)).im := by
+lemma F1_eq (φ : ℝ → ℝ) (B : ℕ) (N : ℝ) (t : ℝ) : F1 φ B N t = (Ej φ B N 1 (liTheta t)).im := by
   rw [Ej_im]; unfold F1; simp
 
-lemma F2_eq (φ : ℝ → ℝ) (B N : ℕ) (t : ℝ) : F2 φ B N t = (Ej φ B N 2 (liTheta t)).re := by
+lemma F2_eq (φ : ℝ → ℝ) (B : ℕ) (N : ℝ) (t : ℝ) : F2 φ B N t = (Ej φ B N 2 (liTheta t)).re := by
   rw [Ej_re]; unfold F2; simp
 
 /-- The kernel `G = 2F₁/(t² + ¼)` and its derivative. -/
-noncomputable def Gf (φ : ℝ → ℝ) (B N : ℕ) (t : ℝ) : ℝ := 2 / (t ^ 2 + 1 / 4) * F1 φ B N t
-noncomputable def Gd (φ : ℝ → ℝ) (B N : ℕ) (t : ℝ) : ℝ :=
+noncomputable def Gf (φ : ℝ → ℝ) (B : ℕ) (N : ℝ) (t : ℝ) : ℝ := 2 / (t ^ 2 + 1 / 4) * F1 φ B N t
+noncomputable def Gd (φ : ℝ → ℝ) (B : ℕ) (N : ℝ) (t : ℝ) : ℝ :=
   -(4 * t) / (t ^ 2 + 1 / 4) ^ 2 * F1 φ B N t - 2 / (t ^ 2 + 1 / 4) ^ 2 * F2 φ B N t
 
-lemma hasDerivAt_F1 (φ : ℝ → ℝ) (B N : ℕ) (t : ℝ) :
+lemma hasDerivAt_F1 (φ : ℝ → ℝ) (B : ℕ) (N : ℝ) (t : ℝ) :
     HasDerivAt (F1 φ B N) (-(1 / (t ^ 2 + 1 / 4)) * F2 φ B N t) t := by
   unfold F1 F2
   rw [Finset.mul_sum]
@@ -84,7 +84,7 @@ lemma hasDerivAt_F1 (φ : ℝ → ℝ) (B N : ℕ) (t : ℝ) :
   convert h using 1
   ring
 
-lemma hasDerivAt_Gf (φ : ℝ → ℝ) (B N : ℕ) (t : ℝ) : HasDerivAt (Gf φ B N) (Gd φ B N t) t := by
+lemma hasDerivAt_Gf (φ : ℝ → ℝ) (B : ℕ) (N : ℝ) (t : ℝ) : HasDerivAt (Gf φ B N) (Gd φ B N t) t := by
   have hw : t ^ 2 + 1 / 4 ≠ 0 := by positivity
   have h1 : HasDerivAt (fun t : ℝ => 2 / (t ^ 2 + 1 / 4)) (-(4 * t) / (t ^ 2 + 1 / 4) ^ 2) t := by
     have := ((hasDerivAt_pow 2 t).add_const (1 / 4 : ℝ)).inv hw
@@ -98,16 +98,16 @@ lemma hasDerivAt_Gf (φ : ℝ → ℝ) (B N : ℕ) (t : ℝ) : HasDerivAt (Gf φ
   field_simp
   ring
 
-lemma continuous_F1 (φ : ℝ → ℝ) (B N : ℕ) : Continuous (F1 φ B N) := by
+lemma continuous_F1 (φ : ℝ → ℝ) (B : ℕ) (N : ℝ) : Continuous (F1 φ B N) := by
   unfold F1; have := continuous_liTheta; fun_prop
 
-lemma continuous_F2 (φ : ℝ → ℝ) (B N : ℕ) : Continuous (F2 φ B N) := by
+lemma continuous_F2 (φ : ℝ → ℝ) (B : ℕ) (N : ℝ) : Continuous (F2 φ B N) := by
   unfold F2; have := continuous_liTheta; fun_prop
 
-lemma continuous_F0 (φ : ℝ → ℝ) (B N : ℕ) : Continuous (F0 φ B N) := by
+lemma continuous_F0 (φ : ℝ → ℝ) (B : ℕ) (N : ℝ) : Continuous (F0 φ B N) := by
   unfold F0; have := continuous_liTheta; fun_prop
 
-lemma continuous_Gd (φ : ℝ → ℝ) (B N : ℕ) : Continuous (Gd φ B N) := by
+lemma continuous_Gd (φ : ℝ → ℝ) (B : ℕ) (N : ℝ) : Continuous (Gd φ B N) := by
   unfold Gd
   have h1 := continuous_F1 φ B N
   have h2 := continuous_F2 φ B N
@@ -120,7 +120,7 @@ variable {φ : ℝ → ℝ} {B : ℕ} (h : TestFn φ B)
 include h
 
 /-- `|F₀(t)| ≤ C (2t + 1)`. -/
-lemma F0_bound : ∃ C : ℝ, 0 ≤ C ∧ ∀ N : ℕ, 1 ≤ N → ∀ t : ℝ, 0 ≤ t → |F0 φ B N t| ≤ C * (2 * t + 1) := by
+lemma F0_bound : ∃ C : ℝ, 0 ≤ C ∧ ∀ N : ℝ, 1 ≤ N → ∀ t : ℝ, 0 ≤ t → |F0 φ B N t| ≤ C * (2 * t + 1) := by
   obtain ⟨C, hC0, hC⟩ := Ej_theta h 0
   refine ⟨C, hC0, fun N hN t ht => ?_⟩
   have hN1 : (1 : ℝ) ≤ N := by exact_mod_cast hN
@@ -139,7 +139,7 @@ lemma F0_bound : ∃ C : ℝ, 0 ≤ C ∧ ∀ N : ℕ, 1 ≤ N → ∀ t : ℝ, 
   exact mul_le_mul_of_nonneg_left h3 (by positivity)
 
 /-- `|G(t)| ≤ 16 C`. -/
-lemma Gf_bound : ∃ C : ℝ, 0 ≤ C ∧ ∀ N : ℕ, 1 ≤ N → ∀ t : ℝ, 0 ≤ t → |Gf φ B N t| ≤ C := by
+lemma Gf_bound : ∃ C : ℝ, 0 ≤ C ∧ ∀ N : ℝ, 1 ≤ N → ∀ t : ℝ, 0 ≤ t → |Gf φ B N t| ≤ C := by
   obtain ⟨C, hC0, hC⟩ := Ej_theta h 1
   refine ⟨16 * C, by positivity, fun N hN t ht => ?_⟩
   have hN1 : (1 : ℝ) ≤ N := by exact_mod_cast hN
@@ -157,7 +157,7 @@ lemma Gf_bound : ∃ C : ℝ, 0 ≤ C ∧ ∀ N : ℕ, 1 ≤ N → ∀ t : ℝ, 
     _ ≤ 16 * C := by
         rw [div_mul_div_comm, div_le_iff₀ (by positivity)]
         have h1 : (N : ℝ) ^ 2 * (2 * t + 1) ^ 2 ≤ (2 * t + 1 + N) ^ 4 := by
-          have := mul_le_mul (pow_le_pow_left₀ (Nat.cast_nonneg _) hNv 2) (pow_le_pow_left₀ (by linarith) huv 2)
+          have := mul_le_mul (pow_le_pow_left₀ (by linarith) hNv 2) (pow_le_pow_left₀ (by linarith) huv 2)
             (by positivity) (by positivity)
           calc (N : ℝ) ^ 2 * (2 * t + 1) ^ 2 ≤ (2 * t + 1 + N) ^ 2 * (2 * t + 1 + N) ^ 2 := this
             _ = (2 * t + 1 + N) ^ 4 := by ring
@@ -171,7 +171,7 @@ lemma Gf_bound : ∃ C : ℝ, 0 ≤ C ∧ ∀ N : ℕ, 1 ≤ N → ∀ t : ℝ, 
               rw [mul_assoc (16 * C)]; exact mul_le_mul_of_nonneg_left (mul_le_mul_of_nonneg_left h1 hw.le) (by positivity)
 
 /-- `|G'(t)| ≤ C N²/(t + N)³`. -/
-lemma Gd_bound : ∃ C : ℝ, 0 ≤ C ∧ ∀ N : ℕ, 1 ≤ N → ∀ t : ℝ, 0 ≤ t →
+lemma Gd_bound : ∃ C : ℝ, 0 ≤ C ∧ ∀ N : ℝ, 1 ≤ N → ∀ t : ℝ, 0 ≤ t →
     |Gd φ B N t| ≤ C * (N : ℝ) ^ 2 / (t + N) ^ 3 := by
   obtain ⟨C₁, hC₁0, hC₁⟩ := Ej_theta h 1
   obtain ⟨C₂, hC₂0, hC₂⟩ := Ej_theta h 2

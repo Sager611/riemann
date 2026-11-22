@@ -121,7 +121,7 @@ lemma sumW_psi (hRH : RiemannHypothesis) : ∃ C : ℝ, ∃ N₀ : ℕ, 3 ≤ N�
           ∑ n ∈ range (3 * N + 1), psi (n / N) * ∑ j ∈ ZK T, ∑ k ∈ ZK T, Real.cos (n * (thK j - thK k)) :=
           Finset.sum_le_sum fun n _ => mul_le_mul_of_nonneg_left (Wv_sq_le T n) (psi_nonneg _)
       _ = ∑ j ∈ ZK T, ∑ k ∈ ZK T, (Ej psi 3 N 0 (thK j - thK k)).re := by
-          simp only [Ej_re, pow_zero, mul_one, Finset.mul_sum]
+          simp only [Ej_re, floor_cast_mul, pow_zero, mul_one, Finset.mul_sum]
           rw [Finset.sum_comm]
           refine Finset.sum_congr rfl fun j _ => ?_
           rw [Finset.sum_comm]
@@ -145,7 +145,7 @@ lemma sumW_psi (hRH : RiemannHypothesis) : ∃ C : ℝ, ∃ N₀ : ℕ, 3 ≤ N�
       have := liTheta_pos hj0; have := liTheta_lt_pi hj0
       have := liTheta_pos hk0; have := liTheta_lt_pi hk0
       unfold thK; rw [abs_le]; constructor <;> linarith
-    have hd := hCE N hN1 (thK j - thK k) hxπ
+    have hd := hCE N hN1r (thK j - thK k) hxπ
     have hsep := liTheta_sep hj0.le hjT hk0.le hkT
     have hNsep : Real.log T * |ordK j - ordK k| ≤ N * |thK j - thK k| := by
       have hw : 0 < T ^ 2 + 1 / 4 := by positivity

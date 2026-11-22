@@ -14,7 +14,7 @@ open Real Finset Filter
 namespace LeanLi
 
 /-- **Claim part 1, second clause** (Theorem 2). -/
-theorem part1_upper (L : LiteratureInputs) (hRH : RiemannHypothesis) :
+theorem part1_upper (L : LitCore) (hRH : RiemannHypothesis) :
     ∃ C : ℝ, ∀ᶠ N : ℕ in atTop,
       ∑ n ∈ Finset.Ioc N (2 * N), R n ^ 2 ≤ C * ((N : ℝ) ^ (3 / 2 : ℝ) * Real.log N ^ (3 / 2 : ℝ)) := by
   obtain ⟨C, N₀, h⟩ := thm2_upper L hRH
@@ -27,7 +27,7 @@ theorem part1_upper (L : LiteratureInputs) (hRH : RiemannHypothesis) :
     _ = C * (N * √(N : ℝ) * (Real.log N * √(Real.log N))) := by ring
 
 /-- **Claim part 3.** -/
-theorem part3 (L : LiteratureInputs) : Part3 := by
+theorem part3 (L : LitCore) : Part3 := by
   refine ⟨?_, ?_, part3_half L⟩
   · simp only [summable_keiper_iff]
     exact LR.rh_iff_exists R RiemannHypothesis (thm2_upper L) (lemma0_R L)

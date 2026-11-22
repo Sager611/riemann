@@ -213,7 +213,7 @@ lemma zset_filter_le {T₀ T : ℝ} (h : T₀ ≤ T) :
 
 set_option maxHeartbeats 2000000 in
 /-- **(H7)** `τ_T ≤ (1 + η) T³L²/(6π)` eventually. -/
-theorem tauT (L : LiteratureInputs) : LR.TauT thK ZK := by
+theorem tauT (L : LitCore) : LR.TauT thK ZK := by
   intro η hη
   have hπ := pi_gt_three
   have hπ0 := pi_pos

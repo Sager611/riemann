@@ -109,7 +109,7 @@ lemma liTheta_sep {T a b : ℝ} (ha : 0 ≤ a) (haT : a ≤ T) (hb : 0 ≤ b) (h
     exact this
 
 section
-variable (L : LiteratureInputs)
+variable (L : LitCore)
 include L
 
 /-- **Local zero count**: `#{ρ : u ≤ γ ≤ u + 1, γ ≤ T} ≤ C log T`. -/
@@ -363,7 +363,7 @@ lemma harmonic_sum_le (M : ℕ) {T : ℝ} (hM : (M : ℝ) ≤ T) :
   linarith
 
 section
-variable (L : LiteratureInputs)
+variable (L : LitCore)
 include L
 
 /-- **Unconditional mean square of `W_T`**: `Σ_{N<n≤2N} W_T(n)² ≤ N(T)·2B(N + 2Q(1 + log(T+1)))`. -/

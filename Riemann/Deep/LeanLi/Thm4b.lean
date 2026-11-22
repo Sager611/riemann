@@ -33,7 +33,7 @@ lemma integral_rfun_eq (X : ℝ) (hX : 0 ≤ X) :
   ring
 
 section
-variable (L : LiteratureInputs)
+variable (L : LitCore)
 include L
 
 /-- **`∫_0^∞ r = -1/8`** (the `-π/8` of `θ_RS`), with rate. -/
