@@ -46,7 +46,7 @@
 - Pointwise only (0.202 + o(1))·√n log n/√(log log n) is proved, under RH.
 - The constant of the mean square (2√2/(3π) under GUE pair correlation) is a heuristic prediction.
 - Positivity of λ_n is not advanced. The pointwise-exponent 'barrier' of proofs.md is a heuristic remark; proved is the range [1/4, 1/2] for the pointwise exponent under RH.
-- Lean: Theorem 1 and Corollaries 1–4 in Lean 4 + Mathlib (LiRate.thm1_of_lemmas, li_cor1–4, li_rh_iff; inputs as named hypotheses: Li's formula, Riemann–von Mangoldt, Theorem 2's bound, ¬RH ⇒ radius < 1, the Fourier estimates of the weights; sorry-free, standard axioms; reviewer: faithful with caveats; [LEAN.md](../Riemann/Deep/LiRate/LEAN.md)).
+- Lean: the whole Claim (parts 1–5; part 5's "first fails at n = 5083" NOT-FORMALIZED: needs certified λ_n for all n ≤ 5083) proved in Lean 4 + Mathlib: `LeanLi.li_remainder_laws : LiteratureInputs → LiRemainderLaws` ([Riemann/Deep/LeanLi/](../Riemann/Deep/LeanLi/), 54 files, Main.lean), sorry-free, standard axioms; Li's formula, Lemma 0, Lemma A (7/4), Theorems 1, 2, 4 proved; literature inputs: ζ ≠ 0 on (0,1), θ_RS Stirling, digamma (DLMF 5.11.2), S, S₁ = O(log T) (Titchmarsh 9.4, 9.9), Selberg ∫S², Voros (TS), and Montgomery 1973 only for the log log N bound (`part1_lower_rh_only` uses RH alone); reviewers: FULLY-PROVED-AND-FAITHFUL (2026-11-22).
 
 **RH relevance.** N3, the rate of Li's criterion: the sharp mean-square exponent of the remainder, an unconditional Ω-bound, and the sharp weighted form of Arias de Reyna's equivalence.
 
