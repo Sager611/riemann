@@ -160,5 +160,148 @@ theorem mellin_plancherel (hP : Rudin1987_Thm9_13) (F : ℝ → ℂ)
   simp_rw [e1, e2]
   exact hP h hi h2
 
+
+/-! ## The Nyman–Beurling functions -/
+
+/-- χ_{(0,1]} − Σ c_k {θ_k/x} (complex coefficients). -/
+def nbF {n : ℕ} (c : Fin n → ℂ) (θ : Fin n → ℝ) (x : ℝ) : ℂ :=
+  (Ioc (0 : ℝ) 1).indicator (fun _ => (1 : ℂ)) x - ∑ k, c k * ((Int.fract (θ k / x) : ℝ) : ℂ)
+
+theorem fract_div_eq {θ x : ℝ} (hθ : 0 < θ) (hθx : θ < x) : Int.fract (θ / x) = θ / x := by
+  have hx : 0 < x := by linarith
+  exact Int.fract_eq_self.mpr ⟨by positivity, (div_lt_one hx).mpr hθx⟩
+
+theorem measurable_nbF {n : ℕ} (c : Fin n → ℂ) (θ : Fin n → ℝ) : Measurable (nbF c θ) := by
+  unfold nbF
+  refine (measurable_const.indicator measurableSet_Ioc).sub ?_
+  refine Finset.measurable_sum _ fun k _ => measurable_const.mul ?_
+  exact Complex.measurable_ofReal.comp (measurable_fract.comp (measurable_const.div measurable_id))
+
+theorem norm_nbF_exp_le {n : ℕ} (c : Fin n → ℂ) (θ : Fin n → ℝ) (hθ : ∀ k, θ k ∈ Ioc (0 : ℝ) 1)
+    (v : ℝ) : ‖(Real.exp (-v / 2) : ℂ) * nbF c θ (Real.exp (-v))‖ ≤
+      (1 + ∑ k, ‖c k‖) * Real.exp (-|v| / 2) := by
+  have hS : 0 ≤ ∑ k, ‖c k‖ := Finset.sum_nonneg fun k _ => norm_nonneg _
+  rw [norm_mul, Complex.norm_real, Real.norm_eq_abs, abs_of_pos (Real.exp_pos _)]
+  rcases le_or_gt 0 v with hv | hv
+  · rw [abs_of_nonneg hv]
+    have hb : ‖nbF c θ (Real.exp (-v))‖ ≤ 1 + ∑ k, ‖c k‖ := by
+      unfold nbF
+      refine (norm_sub_le _ _).trans (add_le_add ?_ ?_)
+      · by_cases hx : Real.exp (-v) ∈ Ioc (0 : ℝ) 1
+        · rw [indicator_of_mem hx]; simp
+        · rw [indicator_of_notMem hx]; simp
+      · refine (norm_sum_le _ _).trans (Finset.sum_le_sum fun k _ => ?_)
+        rw [norm_mul, Complex.norm_real, Real.norm_eq_abs, abs_of_nonneg (Int.fract_nonneg _)]
+        calc ‖c k‖ * Int.fract (θ k / Real.exp (-v)) ≤ ‖c k‖ * 1 :=
+              mul_le_mul_of_nonneg_left (Int.fract_lt_one _).le (norm_nonneg _)
+          _ = ‖c k‖ := mul_one _
+    calc Real.exp (-v / 2) * ‖nbF c θ (Real.exp (-v))‖ ≤ Real.exp (-v / 2) * (1 + ∑ k, ‖c k‖) :=
+          mul_le_mul_of_nonneg_left hb (Real.exp_pos _).le
+      _ = _ := by ring
+  · rw [abs_of_neg hv]
+    have hx1 : 1 < Real.exp (-v) := by rw [← Real.exp_zero]; exact Real.exp_lt_exp.mpr (by linarith)
+    have hval : nbF c θ (Real.exp (-v)) = -((∑ k, c k * (θ k : ℂ)) * (Real.exp v : ℂ)) := by
+      unfold nbF
+      rw [indicator_of_notMem (fun h => by have := h.2; linarith)]
+      have e : ∀ k, ((Int.fract (θ k / Real.exp (-v)) : ℝ) : ℂ) = (θ k : ℂ) * (Real.exp v : ℂ) := by
+        intro k
+        rw [fract_div_eq (hθ k).1 (by linarith [(hθ k).2]), div_eq_mul_inv, ← Real.exp_neg, neg_neg]
+        push_cast; ring
+      simp_rw [e, Finset.sum_mul]
+      rw [zero_sub, neg_inj]
+      refine Finset.sum_congr rfl fun k _ => by ring
+    rw [hval, norm_neg, norm_mul, Complex.norm_real, Real.norm_eq_abs, abs_of_pos (Real.exp_pos _)]
+    have hsum : ‖∑ k, c k * (θ k : ℂ)‖ ≤ ∑ k, ‖c k‖ := by
+      refine (norm_sum_le _ _).trans (Finset.sum_le_sum fun k _ => ?_)
+      rw [norm_mul, Complex.norm_real, Real.norm_eq_abs, abs_of_pos (hθ k).1]
+      calc ‖c k‖ * θ k ≤ ‖c k‖ * 1 := mul_le_mul_of_nonneg_left (hθ k).2 (norm_nonneg _)
+        _ = ‖c k‖ := mul_one _
+    have e2 : Real.exp (-v / 2) * Real.exp v = Real.exp (- -v / 2) := by
+      rw [← Real.exp_add]; ring_nf
+    calc Real.exp (-v / 2) * (‖∑ k, c k * (θ k : ℂ)‖ * Real.exp v)
+        = ‖∑ k, c k * (θ k : ℂ)‖ * (Real.exp (-v / 2) * Real.exp v) := by ring
+      _ = ‖∑ k, c k * (θ k : ℂ)‖ * Real.exp (- -v / 2) := by rw [e2]
+      _ ≤ (1 + ∑ k, ‖c k‖) * Real.exp (- -v / 2) := by
+          apply mul_le_mul_of_nonneg_right _ (Real.exp_pos _).le; linarith
+
+theorem integrable_nbF_exp {n : ℕ} (c : Fin n → ℂ) (θ : Fin n → ℝ) (hθ : ∀ k, θ k ∈ Ioc (0 : ℝ) 1) :
+    Integrable (fun v : ℝ => (Real.exp (-v / 2) : ℂ) * nbF c θ (Real.exp (-v))) := by
+  refine (integrable_exp_neg_abs_half.const_mul (1 + ∑ k, ‖c k‖)).mono' ?_ ?_
+  · exact ((Complex.measurable_ofReal.comp (Real.measurable_exp.comp
+      ((measurable_id.neg).div_const 2))).mul ((measurable_nbF c θ).comp
+      (Real.measurable_exp.comp measurable_id.neg))).aestronglyMeasurable
+  · exact Filter.Eventually.of_forall fun v => norm_nbF_exp_le c θ hθ v
+
+theorem memLp_nbF_exp {n : ℕ} (c : Fin n → ℂ) (θ : Fin n → ℝ) (hθ : ∀ k, θ k ∈ Ioc (0 : ℝ) 1) :
+    MemLp (fun v : ℝ => (Real.exp (-v / 2) : ℂ) * nbF c θ (Real.exp (-v))) 2 := by
+  have hm := (integrable_nbF_exp c θ hθ).aestronglyMeasurable
+  rw [memLp_two_iff_integrable_sq_norm hm]
+  set C := 1 + ∑ k, ‖c k‖
+  have hC : 0 ≤ C := by have := Finset.sum_nonneg fun k (_ : k ∈ Finset.univ) => norm_nonneg (c k); linarith
+  refine (integrable_exp_neg_abs_half.const_mul (C ^ 2)).mono' (hm.norm.pow 2) ?_
+  refine Filter.Eventually.of_forall fun v => ?_
+  have h1 := norm_nbF_exp_le c θ hθ v
+  have h0 : 0 ≤ ‖(Real.exp (-v / 2) : ℂ) * nbF c θ (Real.exp (-v))‖ := norm_nonneg _
+  have h2 : Real.exp (-|v| / 2) ^ 2 ≤ Real.exp (-|v| / 2) := by
+    have : Real.exp (-|v| / 2) ≤ 1 := Real.exp_le_one_iff.mpr (by have := abs_nonneg v; linarith)
+    have : 0 ≤ Real.exp (-|v| / 2) := (Real.exp_pos _).le
+    nlinarith
+  rw [Real.norm_eq_abs, abs_of_nonneg (by positivity)]
+  calc ‖(Real.exp (-v / 2) : ℂ) * nbF c θ (Real.exp (-v))‖ ^ 2 ≤ (C * Real.exp (-|v| / 2)) ^ 2 :=
+        pow_le_pow_left₀ h0 h1 2
+    _ = C ^ 2 * Real.exp (-|v| / 2) ^ 2 := by ring
+    _ ≤ C ^ 2 * Real.exp (-|v| / 2) := mul_le_mul_of_nonneg_left h2 (sq_nonneg _)
+
+theorem hasMellin_sum {n : ℕ} {s : ℂ} (c : Fin n → ℂ) (f : Fin n → ℝ → ℂ) (m : Fin n → ℂ)
+    (hf : ∀ k, HasMellin (f k) s (m k)) :
+    HasMellin (fun x => ∑ k, c k * f k x) s (∑ k, c k * m k) := by
+  classical
+  have key : ∀ S : Finset (Fin n), HasMellin (fun x => ∑ k ∈ S, c k * f k x) s (∑ k ∈ S, c k * m k) := by
+    intro S
+    induction S using Finset.induction_on with
+    | empty =>
+      refine ⟨?_, ?_⟩
+      · simp [MellinConvergent]
+      · simp [mellin]
+    | insert a S ha ih =>
+      simp only [Finset.sum_insert ha]
+      have h1 := hasMellin_const_smul (hf a).1 (c a)
+      have h2 := hasMellin_add h1.1 ih.1
+      simp only [smul_eq_mul] at h1 h2
+      refine ⟨h2.1, ?_⟩
+      rw [h2.2, h1.2, (hf a).2, ih.2]
+  simpa using key Finset.univ
+
+/-- The Mellin transform of nbF on the critical strip. -/
+theorem hasMellin_nbF (h215 : Titchmarsh_2_1_5) {n : ℕ} (c : Fin n → ℂ) (θ : Fin n → ℝ)
+    (hθ : ∀ k, θ k ∈ Ioc (0 : ℝ) 1) {s : ℂ} (h0 : 0 < s.re) (h1 : s.re < 1) :
+    HasMellin (nbF c θ) s ((1 + riemannZeta s * ∑ k, c k * (θ k : ℂ) ^ s) / s) := by
+  have hs0 : s ≠ 0 := fun h => by simp [h] at h0
+  have hI := hasMellin_one_Ioc h0
+  have hS := hasMellin_sum (s := s) c (fun k x => ((Int.fract (θ k / x) : ℝ) : ℂ))
+    (fun k => -((θ k : ℂ) ^ s) * riemannZeta s / s) (fun k => hasMellin_fract_div h215 h0 h1 (hθ k).1)
+  have h := hasMellin_sub hI.1 hS.1
+  refine ⟨h.1, ?_⟩
+  unfold nbF
+  rw [h.2, hI.2, hS.2, eq_div_iff hs0, sub_mul, Finset.sum_mul, Finset.mul_sum, one_div,
+    inv_mul_cancel₀ hs0, sub_eq_add_neg, ← Finset.sum_neg_distrib]
+  congr 1
+  refine Finset.sum_congr rfl fun k _ => ?_
+  field_simp
+
+/-- **The Mellin–Plancherel identity for Nyman–Beurling combinations.** -/
+theorem integral_nbF_sq (hP : Rudin1987_Thm9_13) (h215 : Titchmarsh_2_1_5) {n : ℕ} (c : Fin n → ℂ)
+    (θ : Fin n → ℝ) (hθ : ∀ k, θ k ∈ Ioc (0 : ℝ) 1) :
+    ∫ x in Ioi (0 : ℝ), ‖nbF c θ x‖ ^ 2 = (2 * Real.pi)⁻¹ * ∫ t : ℝ,
+      ‖(1 + riemannZeta (1 / 2 + t * I) * ∑ k, c k * (θ k : ℂ) ^ (1 / 2 + t * I)) / (1 / 2 + t * I)‖ ^ 2 := by
+  have h := mellin_plancherel hP (nbF c θ) (integrable_nbF_exp c θ hθ) (memLp_nbF_exp c θ hθ)
+  have e : ∀ t : ℝ, mellin (nbF c θ) (1 / 2 + t * I) =
+      (1 + riemannZeta (1 / 2 + t * I) * ∑ k, c k * (θ k : ℂ) ^ (1 / 2 + t * I)) / (1 / 2 + t * I) := by
+    intro t
+    exact (hasMellin_nbF h215 c θ hθ (by simp) (by simp; norm_num)).2
+  simp_rw [e] at h
+  rw [h]
+  field_simp
+
 end Riemann.Deep.LeanNBRate
 
