@@ -3,7 +3,7 @@
 > [!IMPORTANT]
 > Editing rules: ≤ 100 lines excluding the Changelog. Maximum deletion, minimum addition: each change leaves the fewest words with the densest information. Rules only; reasons, dates and anecdotes go to the Changelog. Every change appends one Changelog row.
 
-Goal: ended 2026-11-20 (possible RH proofs, see README); do not resume.
+Goal: ended 2026-11-20 (possible RH proofs, see README); do not resume, except Lean proofs of DISCOVERIES #1–#4 (Orca agents, briefs `.scratch/lean4/`, `Riemann/Deep/Lean*/STATUS.md`).
 
 ## Priority
 
@@ -71,3 +71,4 @@ Goal: ended 2026-11-20 (possible RH proofs, see README); do not resume.
 | 2026/11/21 12:12 | orchestrator | Goal: ended; do not resume | Adrian: possible RH proofs by Alpöge and Masullo (README) |
 | 2026/11/21 19:42 | orchestrator | Moot results (follow from Alpöge's RH + Dirichlet GRH) archived: SUPERSEDED.md, banners on 22 discovery pages, markers in DISCOVERIES/RECORDS, notes in NOGO/REFUTATIONS | Adrian |
 | 2026/11/21 20:05 | orchestrator | DISCOVERIES regrouped: ranked survivors after Alpöge (★ now unconditional, [Masullo-risk]), superseded, published first; linear combinations and GL(2) 7.005% promoted from RECORDS | Adrian |
+| 2026/11/22 11:30 | orchestrator | Exception to the ended goal: Lean proofs of DISCOVERIES #1–#4, one Orca agent each (anthropic/claude-opus-5-5, max), literature inputs as named hypotheses, reviewer rounds, agents commit own paths | Adrian |
