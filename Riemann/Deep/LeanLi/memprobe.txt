@@ -1,0 +1,28 @@
+Sun Nov 22 11:32:26 UTC 2026
+== lean --threads=1, module file: public import Init
+max rss=220 MB max fp=67 MB
+exit 0; memcap: peak 49 MB, rc 0, 2 s
+== lean --threads=1, module file: public import Mathlib.Order.Basic
+max rss=443 MB max fp=118 MB
+exit 137; memcap: killed at 430 MB > 290 MB (peak 430 MB)
+== lean --threads=1, module file: public import Mathlib.Data.Real.Basic
+max rss=601 MB max fp=159 MB
+exit 137; memcap: killed at 596 MB > 290 MB (peak 596 MB)
+== lean --threads=1, module file: public import Mathlib.NumberTheory.LSeries.RiemannZeta
+max rss=332 MB max fp=138 MB
+exit 137; memcap: killed at 319 MB > 290 MB (peak 319 MB)
+== lean --threads=1, non-module file: import Mathlib.NumberTheory.LSeries.RiemannZeta
+max rss=364 MB max fp=133 MB
+exit 137; memcap: killed at 340 MB > 290 MB (peak 340 MB)
+== lake env true
+max rss=620 MB max fp=103 MB
+exit 137; memcap: killed at 597 MB > 290 MB (peak 597 MB)
+Init modules 653 {'olean': 95.1, 'olean.server': 11.1, 'olean.private': 246.4}
+Mathlib.Order.Basic modules 1197 {'olean': 221.9, 'olean.server': 18.6, 'olean.private': 638.4}
+Mathlib.Data.Real.Basic modules 2109 {'olean': 395.3, 'olean.server': 31.4, 'olean.private': 1049.2}
+Mathlib.NumberTheory.LSeries.RiemannZeta modules 4596 {'olean': 945.8, 'olean.server': 70.1, 'olean.private': 2164.0}
+
+== memcap_fp.sh self-test (nested in memcap.sh 290), public import Init:
+Nat : Type
+memcap_fp: peak footprint 62 MB, peak RSS 206 MB, rc 0, 1 s
+memcap: peak 6 MB, rc 0, 1 s
