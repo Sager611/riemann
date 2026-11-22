@@ -16,7 +16,6 @@ Next step: none (orchestrator: shared files).
 - 2026-11-22 11:40 BLOCKED-MEMCAP under memcap.sh 290 (RSS): no Mathlib import fits. Lifted by Adrian 12:08.
 - 2026-11-22 15:15 Theorem 1 proved (thm1_li), axioms standard.
 - 2026-11-22 17:27 li_remainder_laws assembled, 0 sorry, axioms standard.
-- 2026-11-22 19:00 Lemma 0 proved (LiExpGrowth no longer an input); LitCore split; Claim 4 at real scales.
-- 2026-11-22 19:15 round 2: A GAPS (5083 sentence; MSS trend identification), B FAITHFUL. Fixed: target per brief excludes the numerical sentence; MSS verbatim definitions (c = (γ − log 2π − 1)/2; λ_tiny from log((s−1)ζ(s))) in Part5 docstring.
+- 2026-11-22 18:27 Lemma 0 proved (LiExpGrowth no longer an input); LitCore split; Claim 4 at real scales.
+- 2026-11-22 18:35 round 2: A GAPS (5083 sentence; MSS trend identification), B FAITHFUL. Fixed: target per brief excludes the numerical sentence; MSS verbatim definitions (c = (γ − log 2π − 1)/2; λ_tiny from log((s−1)ζ(s))) in Part5 docstring.
 - 2026-11-22 18:45 round 3: A and B FULLY-PROVED-AND-FAITHFUL. DONE.
-
