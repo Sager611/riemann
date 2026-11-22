@@ -1,10 +1,11 @@
 WORKING
-UTC: 2026-11-22 18:57
+UTC: 2026-11-22 20:32
 sorry count: 0 (all committed modules sorry-free; remaining obligations are unwritten modules, see PLAN.md)
 files: Riemann/Deep/LeanNBRate/: Defs (statement), LitInputs, ExpSum, ExpSumOps, Kernel, Multiplier, MLBound,
   Gevrey (port, Apache-2.0), Windows, Nikolskii, Bernstein, LemmaB, FourierDeriv, LemmaLambda, LemmaD, Groups, Config,
   HighR, Legendre, LowPart, LemmaE, Counting, U2parts, ZeroConfig, GroupSums, U2grp, U2aux, U2asym, U2, U2props,
-  U2main, U2final, LitInputsU1, Mellin, Closure, LaplaceClosure, Bridge, Assembly, Dual1, Dual2, Dual3;
+  U2main, U2final, LitInputsU1, Mellin, Closure, LaplaceClosure, Bridge, Assembly, Dual1–5, GammaBd, ZetaBd,
+  Window, Rect (part ported from PNT+, Apache-2.0), Strip, Contour1–3;
   PLAN.md (lemma DAG); audit/ (22 Nov memory probes, superseded)
 main theorem: (planned) Riemann.Deep.LeanNBRate.nb_rate : LitInputs → MainClaim (Defs.lean)
 literature inputs (LitInputs.lean, def … : Prop bundled in structure LitInputs): Burnol2002_Thm (math/0103058);
@@ -18,8 +19,14 @@ proved (ours, sorry-free): Turán for jets; Nikolskii/Bernstein/Markov for expon
   Mellin–Plancherel; closure: nymanDist(e^{−L})² ≤ (2π)⁻¹∫|(1+ζ(s)(c₀+∫_0^L g e^{−us}))/s|² for continuous g with
   c₀+∫g e^{−u} = 0 (LaplaceClosure.nymanDist_sq_le_laplace); Bridge: Burnol lower bound, D ≤ D_c, value;
   Assembly.mainClaim_of_upper: MainClaim from Burnol + T9.2 + Davenport + UpperBoundNyman (the only open part);
-  Dual1–3: OU form as inner product, Riesz representer p*, N(p*) ≤ (S+ε)/ℓ from U2, |E_low| ≤ √N(e_s)√N(p*)
+  Dual1–5: OU form as inner product, Riesz representer p*, N(p*) ≤ (S+ε)/ℓ from U2, |E_low| ≤ √N(e_s)√N(p*),
+  Green form, E_low entire; GammaBd: |Γ(z)| ≤ √(2π)|z+1|e^{−π|Im z|/2} on ½ ≤ Re ≤ 3/2 (Phragmén–Lindelöf);
+  ZetaBd: trivial zeros, ζ′(−2k), |1/ζ| left/right, |ζ| from (2.1.5), ζ′ Cauchy bound; Window Φ = M_a(s−½)^n;
+  Rect/Strip: residue theorem on rectangles (finitely many simple poles), contour shifts across strips,
+  half-strip Cauchy; Contour1–3: g = inverse Laplace of H/ζ on Re = 3, G = ∫_0^L g e^{−us} (Fubini),
+  Cauchy formula on the right half-plane
 NOT-FORMALIZED: none decided
 last reviewer verdict: none
-next step: prove Assembly.UpperBoundNyman: Dual4 (interpolation |E_low−1| ≤ C|s−ρ|^m, holomorphy, N(e_s) bound),
-  Dual5 (‖E_low‖²_w = N(p*), OU kernel), window Φ, contours/Cauchy, K/J, trivial zeros, entire G, growth, PW (PLAN §3)
+next step (PLAN §3 v4, design changed: explicit g by inverse Laplace, no Paley–Wiener): Contour4–5 (strips [2,3],
+  middle rectangle, left strips with trivial-zero residues, n → ∞ ⇒ G = F − R_tr − J on Re s > 3), K and identity
+  theorem (line formula), interpolation of E_low at low zeros, OU identity ‖E_low‖²_w = N(p*), line bounds, assembly
