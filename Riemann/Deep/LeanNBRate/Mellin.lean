@@ -101,5 +101,64 @@ theorem hasMellin_fract_div (h215 : Titchmarsh_2_1_5) {s : ℂ} (h0 : 0 < s.re) 
     rw [hθc, smul_eq_mul]
     ring
 
+
+theorem integrable_exp_neg_abs_half : Integrable (fun v : ℝ => Real.exp (-|v| / 2)) := by
+  have hI : IntegrableOn (fun v : ℝ => Real.exp (-|v| / 2)) (Ioi 0) := by
+    refine (exp_neg_integrableOn_Ioi 0 (by norm_num : (0 : ℝ) < 1 / 2)).congr_fun (fun v hv => ?_)
+      measurableSet_Ioi
+    have hv' : (0 : ℝ) < v := hv
+    simp only [abs_of_pos hv']
+    ring_nf
+  have int_Iic : IntegrableOn (fun v : ℝ => Real.exp (-|v| / 2)) (Iic 0) := by
+    rw [← Measure.map_neg_eq_self (volume : Measure ℝ)]
+    let m : MeasurableEmbedding fun x : ℝ => -x := (Homeomorph.neg ℝ).measurableEmbedding
+    rw [m.integrableOn_map_iff]
+    simp_rw [Function.comp_def, abs_neg, neg_preimage, neg_Iic, neg_zero]
+    exact Iff.mpr integrableOn_Ici_iff_integrableOn_Ioi hI
+  have := int_Iic.union hI
+  rwa [Iic_union_Ioi, integrableOn_univ] at this
+
+/-- Substitution x = e^{-v} for integrals over (0, ∞). -/
+theorem integral_Ioi_eq_exp_neg {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E] (g : ℝ → E) :
+    ∫ x in Ioi (0 : ℝ), g x = ∫ v : ℝ, Real.exp (-v) • g (Real.exp (-v)) := by
+  rw [← integral_comp_exp g]
+  exact (integral_neg_eq_self (fun x : ℝ => Real.exp x • g (Real.exp x)) volume).symm
+
+theorem ofReal_exp_cpow (a : ℝ) (z : ℂ) : ((Real.exp a : ℝ) : ℂ) ^ z = Complex.exp (a * z) := by
+  rw [Complex.ofReal_exp, Complex.cpow_def_of_ne_zero (Complex.exp_ne_zero _),
+    Complex.log_exp (by simp [Real.pi_pos]) (by simp [Real.pi_pos.le])]
+
+/-- **Mellin–Plancherel** on the critical line (from Rudin 9.13). -/
+theorem mellin_plancherel (hP : Rudin1987_Thm9_13) (F : ℝ → ℂ)
+    (hi : Integrable (fun v : ℝ => (Real.exp (-v / 2) : ℂ) * F (Real.exp (-v))))
+    (h2 : MemLp (fun v : ℝ => (Real.exp (-v / 2) : ℂ) * F (Real.exp (-v))) 2) :
+    ∫ t : ℝ, ‖mellin F (1 / 2 + t * I)‖ ^ 2 = 2 * Real.pi * ∫ x in Ioi (0 : ℝ), ‖F x‖ ^ 2 := by
+  set h := fun v : ℝ => (Real.exp (-v / 2) : ℂ) * F (Real.exp (-v))
+  have e1 : ∀ t : ℝ, mellin F (1 / 2 + t * I) = ∫ v : ℝ, h v * Complex.exp (-(v * t * I)) := by
+    intro t
+    unfold mellin
+    rw [integral_Ioi_eq_exp_neg]
+    congr 1; ext v
+    simp only [h, Complex.real_smul, smul_eq_mul, ofReal_exp_cpow]
+    rw [Complex.ofReal_exp, Complex.ofReal_exp]
+    rw [show (Complex.exp ((-v : ℝ) : ℂ)) * (Complex.exp (((-v : ℝ) : ℂ) * (1 / 2 + t * I - 1)) *
+        F (Real.exp (-v))) = (Complex.exp ((-v : ℝ) : ℂ) * Complex.exp (((-v : ℝ) : ℂ) * (1 / 2 + t * I - 1))) *
+        F (Real.exp (-v)) by ring]
+    rw [← Complex.exp_add]
+    rw [show Complex.exp (((-v / 2 : ℝ) : ℂ)) * F (Real.exp (-v)) * Complex.exp (-(v * t * I)) =
+        (Complex.exp (((-v / 2 : ℝ) : ℂ)) * Complex.exp (-(v * t * I))) * F (Real.exp (-v)) by ring]
+    rw [← Complex.exp_add]
+    congr 2
+    push_cast
+    ring
+  have e2 : ∫ x in Ioi (0 : ℝ), ‖F x‖ ^ 2 = ∫ v : ℝ, ‖h v‖ ^ 2 := by
+    rw [integral_Ioi_eq_exp_neg]
+    congr 1; ext v
+    simp only [h, smul_eq_mul, norm_mul, Complex.norm_real, Real.norm_eq_abs, mul_pow, sq_abs]
+    have hx : Real.exp (-v / 2) ^ 2 = Real.exp (-v) := by rw [sq, ← Real.exp_add]; ring_nf
+    rw [hx]
+  simp_rw [e1, e2]
+  exact hP h hi h2
+
 end Riemann.Deep.LeanNBRate
 
