@@ -1,0 +1,334 @@
+You are a fresh, independent reviewer of a Lean 4 + Mathlib formalization. Do NOT run tools, read files or delegate: answer only from the text below (everything needed is inline). Machine-checked facts you may rely on: all files compiled (rc 0) with the #print axioms output shown; you judge the STATEMENTS. Output format: first line exactly `VERDICT: FULLY-PROVED-AND-FAITHFUL` or `VERDICT: GAPS`; then, if GAPS, numbered gaps, each with category (statement mismatch | vacuity | literature input stronger than its source | step of ours hidden in an input), the exact Lean text concerned, why it is a gap, and the fix. Minor remarks that are not gaps: list separately under "Remarks". At most 80 lines.
+
+YOUR FOCUS: STATEMENT FAITHFULNESS. Does the main theorem prefix_reversals state the page's Claim exactly (same quantifiers, ranges, constants, hypotheses; Mathlib objects where they exist; no weakening; no hypotheses beyond the page's own and the two literature inputs)? Judge each deviation in (f): is the argument correct, i.e. is the Lean statement equivalent to (or stronger than) the intended Claim? In particular: is reading the second sentence with NOTE Theorem B's hypotheses (B.3: n odd; B.4: n odd, gcd = 1) forced (is the literal reading false?), does the orbit statement say what NOTE B.1 says, is Wreath α q really D_{2α} ≀ D_{2q} (the permutational wreath product for the q-gon action) and is the permutation-form conjunct correct, and is the Theorem A iff exactly the Claim's first sentence?
+
+# Material (everything inline; do NOT run commands or read files)
+
+## (a) The page's Claim (discoveries/prefix-reversals.md), verbatim
+**Claim.** Let r_i reverse the first i positions of a permutation of n letters. For 2 ≤ k < m < n with m + k < n, the reversals r_n, r_m, r_k generate all of S_n if and only if n is odd, m + k = n − 1, gcd(m+1, k+1) = 1, (k+1) does not divide m, and not (n ≡ 1 mod 4 and 4 | k). On the line m + k = n − 1 the full structure is determined: the orbits, an imprimitive wreath product D_{2α} ≀ D_{2n/α} when α = k + 1 divides n, and otherwise a primitive group containing A_n (A_n exactly when n ≡ 1 mod 4 and 4 | k).
+
+
+The page summarizes NOTE.md (the paper). NOTE.md "Main results", verbatim:
+## Main results
+
+**Theorem A (answer below the diagonal).** Let 2 ≤ k < m < n and m + k < n. Then
+⟨r_n, r_m, r_k⟩ = S_n if and only if
+
+  n is odd, m + k = n − 1, gcd(m+1, k+1) = 1, (k+1) ∤ m, and not (n ≡ 1 mod 4 and 4 | k).
+
+Equivalently: n is odd, α + β = n + 1 with α, β coprime (both are then odd, because α + β = n + 1 is
+even; coprimality alone would not force this), β ≢ 1 (mod α), and not α ≡ β ≡ 1 (mod 4).
+
+**Theorem B (the whole line n = m + k + 1, 2 ≤ k < m, any parity).**
+1. The orbits of G are O_c = {x : x ≡ ±c (mod g)}, 0 ≤ c ≤ g/2; there are ⌊g/2⌋ + 1 of them.
+   G is transitive iff g = 1. (That g = 1 is necessary for G = S_n is known: 2610.30892, Lemma at
+   TeX l. 277; new here is the exact orbit decomposition.)
+2. n even, g = 1: G is transitive and imprimitive with two blocks (known: 2610.30892, Thm 3.1, and
+   earlier in Lean, see §1).
+3. n odd, g = 1, α | n: G is imprimitive, the intervals [iα+1, (i+1)α] are blocks, and
+   G ≅ D_{2α} ≀ D_{2q} with q = n/α, |G| = (2α)^q · 2q. The nontrivial block sizes are exactly the
+   divisors L of n with L | α or α | L.
+4. n odd, g = 1, α ∤ n: G is primitive and contains A_n; G = A_n if n ≡ 1 (mod 4) and 4 | k
+   (equivalently α ≡ β ≡ 1 mod 4), otherwise G = S_n.
+
+**Corollary (Conjecture 4).** Read literally, Conjecture 4 of 2511.16959v3 (the published DMTCS
+text; v1 and v2 state the parity-split form) says m + k < n ⇒ G < S_n.
+It fails exactly at the triples of B.4 with G = S_n: infinitely many, e.g. (n, n−3, 2) for every
+n ≡ 1 (mod 6) and (n, n−5, 4) for every n ≥ 11 with n ≡ 3, 7, 11 (mod 20); the smallest are (7,4,2), (11,6,4), (13,10,2), (15,8,6),
+(17,10,6), (19,16,2), (19,12,6), (19,10,8); there are 318 with n ≤ 101. The parity-split form
+(n even: m+k < n; n odd: m+k < n−1), proved in 2610.30892, is therefore sharp, and Theorem B
+decides the one remaining line. Theorem A is consistent with Theorem 1 of 2511.16959 (k = 2,
+n odd: (n, n−3, 2) generates iff n ≡ 1 mod 3). Its condition g = 1 is necessary by the Lemma of
+2610.30892 at TeX l. 277 (G = S_n ⇒ gcd(n−m, n−k) = 1, and here n−m = α, n−k = β), whose special
+case n−m | n+1 is Proposition 2 of 2511.16959.
+
+## 1. Off the line (known)
+
+
+The formalization brief (T4) says: "Formalize the whole Claim on Equiv.Perm (Fin n) with Subgroup.closure, alternatingGroup and Mathlib's primitivity notion: the iff for every such (n, m, k); on the line: the orbit structure exactly as NOTE.md states it (orbits of what action, how many), the wreath-product isomorphism when α = k + 1 divides n (as NOTE.md states it), primitivity and A_n ≤ G otherwise, and G = A_n exactly when n ≡ 1 mod 4 and 4 | k."
+
+## (b) Main theorem (Lean 4 v4.35.0-rc2, Mathlib v4.35.0-rc2), namespace Riemann.Deep.LeanPrefix, statement verbatim
+```lean
+/-- **Main theorem** (discoveries/prefix-reversals.md, Claim), from the two literature inputs.
+
+1. Theorem A: for 2 ≤ k < m < n with m + k < n, ⟨r_n, r_m, r_k⟩ = S_n iff n is odd,
+   m + k = n - 1, gcd(m+1, k+1) = 1, (k+1) ∤ m and not (n ≡ 1 mod 4 and 4 ∣ k).
+2. On the line m + k = n - 1 (2 ≤ k < m), with g = gcd(m+1, k+1), α = k + 1:
+   B.1 the orbits are {y : y ≡ ±x (mod g)} (positions 1-based), there are g/2 + 1 of them,
+   and G is transitive iff g = 1;
+   B.2 n even, g = 1: transitive, imprimitive, with a block of n/2 points (two blocks);
+   B.3 n odd, α ∣ n: imprimitive, the intervals of length α are blocks, G is the imprimitive
+   wreath product D_{2α} ≀ D_{2n/α} in its action on ZMod (n/α) × ZMod α (up to a bijection with
+   Fin n), G ≅ D_{2α} ≀ D_{2n/α} (Wreath α (n/α)) and |G| = (2α)^{n/α}·2(n/α);
+   B.4 n odd, g = 1, α ∤ n: primitive, A_n ≤ G, G = A_n iff n ≡ 1 (mod 4) and 4 ∣ k,
+   and G = S_n otherwise. -/
+theorem prefix_reversals (hOff : LZZW2026_Thm3_1) (hJ : Jones2014_Thm1_2_k0) :
+    (∀ n m k : ℕ, 2 ≤ k → k < m → m < n → m + k < n →
+      (G n m k = ⊤ ↔ (Odd n ∧ m + k = n - 1 ∧ Nat.gcd (m + 1) (k + 1) = 1 ∧ ¬ (k + 1) ∣ m ∧
+        ¬ (n ≡ 1 [MOD 4] ∧ 4 ∣ k)))) ∧
+    (∀ n m k : ℕ, 2 ≤ k → k < m → m + k = n - 1 →
+      (∀ x y : Fin n, y ∈ MulAction.orbit (G n m k) x ↔
+          ((y : ℤ) + 1 ≡ (x : ℤ) + 1 [ZMOD (Nat.gcd (m + 1) (k + 1))] ∨
+            (y : ℤ) + 1 ≡ -((x : ℤ) + 1) [ZMOD (Nat.gcd (m + 1) (k + 1))])) ∧
+      Nat.card (MulAction.orbitRel.Quotient (G n m k) (Fin n)) = Nat.gcd (m + 1) (k + 1) / 2 + 1 ∧
+      (MulAction.IsPretransitive (G n m k) (Fin n) ↔ Nat.gcd (m + 1) (k + 1) = 1) ∧
+      (Even n → Nat.gcd (m + 1) (k + 1) = 1 →
+        MulAction.IsPretransitive (G n m k) (Fin n) ∧ ¬ MulAction.IsPreprimitive (G n m k) (Fin n) ∧
+        ∃ B : Set (Fin n), MulAction.IsBlock (G n m k) B ∧ 2 * B.ncard = n) ∧
+      (Odd n → (k + 1) ∣ n →
+        ¬ MulAction.IsPreprimitive (G n m k) (Fin n) ∧
+        (∀ i : ℕ, MulAction.IsBlock (G n m k) {x : Fin n | x.val / (k + 1) = i}) ∧
+        (∃ e : Fin n ≃ ZMod (n / (k + 1)) × ZMod (k + 1),
+          (wreathPerm (k + 1) (n / (k + 1))).range.map e.symm.permCongrHom.toMonoidHom = G n m k) ∧
+        Nonempty (G n m k ≃* Wreath (k + 1) (n / (k + 1))) ∧
+        Nat.card (G n m k) = (2 * (k + 1)) ^ (n / (k + 1)) * (2 * (n / (k + 1)))) ∧
+      (Odd n → Nat.gcd (m + 1) (k + 1) = 1 → ¬ (k + 1) ∣ n →
+        MulAction.IsPreprimitive (G n m k) (Fin n) ∧ alternatingGroup (Fin n) ≤ G n m k ∧
+        (G n m k = alternatingGroup (Fin n) ↔ (n ≡ 1 [MOD 4] ∧ 4 ∣ k)) ∧
+        (¬ (n ≡ 1 [MOD 4] ∧ 4 ∣ k) → G n m k = ⊤))) := by ...
+```
+Definitions used (verbatim), down to Mathlib names:
+```lean
+/-- The underlying function of the prefix reversal r_i on Fin n. -/
+def revFun (n i : ℕ) (x : Fin n) : Fin n :=
+  if h : x.val < i ∧ i ≤ n then ⟨i - 1 - x.val, by omega⟩ else x
+
+/-- The prefix reversal r_i as a permutation of Fin n. -/
+def rev (n i : ℕ) : Perm (Fin n) where
+  toFun := revFun n i
+  invFun := revFun n i
+  left_inv := revFun_revFun n i
+  right_inv := revFun_revFun n i
+
+/-- G(n; m, k) = ⟨r_n, r_m, r_k⟩ ≤ S_n. -/
+def G (n m k : ℕ) : Subgroup (Perm (Fin n)) :=
+  Subgroup.closure {rev n n, rev n m, rev n k}
+
+/-- The underlying permutations of the q-gon action. -/
+def dihedralPermFun (q : ℕ) : DihedralGroup q → Perm (ZMod q)
+  | r i => Equiv.addRight i
+  | sr i => (Equiv.neg (ZMod q)).trans (Equiv.subRight i)
+
+/-- D_{2q} = DihedralGroup q acting on the vertices ZMod q of the q-gon:
+r i : x ↦ x + i (rotations), sr i : x ↦ -x - i (reflections). -/
+def dihedralPerm (q : ℕ) : DihedralGroup q →* Perm (ZMod q) where
+  toFun := dihedralPermFun q
+  map_one' := by
+    rw [DihedralGroup.one_def]; ext x; rw [dihedralPermFun_r, Perm.one_apply, add_zero]
+  map_mul' := by
+    rintro (i | i) (j | j) <;> ext x <;>
+      simp only [r_mul_r, r_mul_sr, sr_mul_r, sr_mul_sr, Perm.mul_apply, dihedralPermFun_r,
+        dihedralPermFun_sr] <;> ring
+
+/-- DihedralGroup q acting on the base ZMod q → DihedralGroup α by f ↦ f ∘ (d⁻¹ · ). -/
+def wreathAct (α q : ℕ) : DihedralGroup q →* MulAut (ZMod q → DihedralGroup α) where
+  toFun d :=
+    { toFun := fun f i => f ((dihedralPerm q d)⁻¹ i)
+      invFun := fun f i => f (dihedralPerm q d i)
+      left_inv := fun f => by funext i; simp
+      right_inv := fun f => by funext i; simp
+      map_mul' := fun f g => rfl }
+  map_one' := by ext f i; simp
+  map_mul' := by intro a b; ext f i; simp [mul_inv_rev, Perm.mul_apply]
+
+/-- The wreath product D_{2α} ≀ D_{2q} for the q-gon action. -/
+abbrev Wreath (α q : ℕ) := (ZMod q → DihedralGroup α) ⋊[wreathAct α q] DihedralGroup q
+
+/-- The imprimitive action of D_{2α} ≀ D_{2q} on ZMod q × ZMod α:
+(f, d) · (i, u) = (d i, f (d i) u). -/
+def wreathPerm (α q : ℕ) : Wreath α q →* Perm (ZMod q × ZMod α) where
+  toFun w := Equiv.prodShear (dihedralPerm q w.right) (fun i => dihedralPerm α (w.left (dihedralPerm q w.right i)))
+  map_one' := by
+    ext ⟨i, u⟩ <;> simp [Equiv.prodShear]
+  map_mul' := by
+    intro a b
+    ext ⟨i, u⟩ <;> simp [Equiv.prodShear, SemidirectProduct.mul_left, SemidirectProduct.mul_right,
+      wreathAct_apply, Perm.mul_apply]
+```
+Mathlib objects used in the statement: Equiv.Perm (Fin n), Subgroup.closure, ⊤ (= all of Perm (Fin n) = S_n), alternatingGroup (Fin n) (= ker of Perm.sign), MulAction.orbit, MulAction.orbitRel.Quotient, MulAction.IsPretransitive, MulAction.IsPreprimitive (pretransitive + every block trivial), MulAction.IsBlock, for the subgroup action (h • x = h x) of G on Fin n; Int.ModEq ([ZMOD]), Nat.ModEq ([MOD]), Odd/Even, Nat.gcd, Set.ncard, ZMod, DihedralGroup n (Mathlib: elements r i, sr i, i : ZMod n, order 2n, i.e. D_{2n}), SemidirectProduct (N ⋊[φ] G with (n₁,g₁)(n₂,g₂) = (n₁ φ(g₁)(n₂), g₁g₂)), MulAut, Equiv.permCongrHom (e.permCongrHom p = e ∘ p ∘ e⁻¹), MonoidHom.range, Subgroup.map, MulEquiv (≃*), Nat.card.
+Positions: x : Fin n is the NOTE's position x.val + 1; rev n i is r_i (x ↦ i-1-x for x < i ≤ n, 0-based ↔ r_i(j) = i+1-j for j ≤ i, 1-based). In B.1 the congruences use the 1-based positions x+1, y+1.
+
+## (c) Literature inputs (the two hypotheses of the main theorem; Props, not axioms), Lean verbatim
+```lean
+/-- g is induced, through e, by a σ-semilinear bijection f of F^d (an element of ΓL_d(F)):
+f maps the line e x into the line e (g x). -/
+def IsCollineationVia {n d : ℕ} {F : Type} [Field F] (e : Fin n ≃ ℙ F (Fin d → F))
+    (g : Perm (Fin n)) : Prop :=
+  ∃ (σ : F ≃+* F) (f : (Fin d → F) ≃+ (Fin d → F)),
+    (∀ (c : F) (v : Fin d → F), f (c • v) = σ c • f v) ∧
+    ∀ (x : Fin n) (v : Fin d → F), v ∈ (e x).submodule → f v ∈ (e (g x)).submodule
+
+/-- **Literature input** (unrefereed preprint by others). Yexiao Lei, Jinxing Zhao, Ziyu Zhu,
+Yang Wu, *On the generation of the symmetric group by index relations of three prefix reversals*,
+arXiv:2610.30892v1 (Oct 2026), Theorem 3.1 (TeX lines 221-223), first sentence, verbatim:
+"If $m+k<n-1$, then $\left \langle r_{n},r_{m},r_{k} \right \rangle <S_{n}$."
+Definition (TeX lines 87-95): $r_i(j)=i+1-j$ for $1\le j\le i$, $r_i(j)=j$ for $i<j\le n$, which
+is rev n i on Fin n (0-based: x ↦ i-1-x for x < i). Standing assumption (TeX lines 109-112):
+$G_{n}:=\langle r_n,r_m,r_k\rangle$, $2\le k<m<n$. "< S_n" is ≠ ⊤ (G is a subgroup of S_n).
+The second sentence of the theorem is not used. -/
+def LZZW2026_Thm3_1 : Prop :=
+  ∀ n m k : ℕ, 2 ≤ k → k < m → m < n → m + k < n - 1 → G n m k ≠ ⊤
+
+/-- **Literature input** (published). Gareth A. Jones, *Primitive permutation groups containing a
+cycle*, Bull. Aust. Math. Soc. 89 (2014), 159-165, arXiv:1209.5169, Theorem 1.2 (TeX lines 54-72),
+used for k = 0 only. Verbatim: "Let $G$ be a primitive permutation group of finite degree $n$, not
+containing the alternating group $A_n$. Suppose that $G$ contains a cycle fixing $k$ points, where
+$0\le k\le n-2$. Then one of the following holds: 1. $k=0$ and either (a) $C_p\le G\le AGL_1(p)$
+with $n=p$ prime, or (b) $PGL_d(q)\le G\le P\Gamma L_d(q)$ with $n=(q^d-1)/(q-1)$ and $d\ge 2$
+for some prime power $q$, or (c) $G=L_2(11)$, $M_{11}$ or $M_{23}$ with $n=11, 11$ or $23$
+respectively. 2. $k=1$ and … 3. $k=2$ and …" (cases k = 1, 2 not used).
+
+Lean form, k = 0 (a cycle fixing 0 points: an n-cycle), with weaker conclusions:
+(a) n prime and, under a bijection with ZMod n, every element of G is affine x ↦ a x + b, a ≠ 0
+(G ≤ AGL_1(p); the lower bound C_p ≤ G is dropped);
+(b) a field F with q elements, d ≥ 2, n = (q^d - 1)/(q - 1), and a bijection with the points of
+PG(d-1, F) = ℙ F (Fin d → F) under which every element of G is induced by a semilinear bijection
+of F^d (G ≤ PΓL_d(q); the lower bound PGL_d(q) ≤ G is dropped);
+(c) n = 11 or n = 23 (the identification of G is dropped). -/
+def Jones2014_Thm1_2_k0 : Prop :=
+  ∀ (n : ℕ) (H : Subgroup (Perm (Fin n))),
+    MulAction.IsPreprimitive H (Fin n) →
+    ¬ alternatingGroup (Fin n) ≤ H →
+    (∃ c ∈ H, Perm.IsCycle c ∧ c.support = Finset.univ) →
+    (n.Prime ∧ ∃ e : Fin n ≃ ZMod n, ∀ h ∈ H, ∃ a b : ZMod n, a ≠ 0 ∧ ∀ x, e (h x) = a * e x + b) ∨
+    (∃ (q d : ℕ) (F : Type) (_ : Field F) (_ : Fintype F), Fintype.card F = q ∧ 2 ≤ d ∧
+      n = (q ^ d - 1) / (q - 1) ∧
+      ∃ e : Fin n ≃ ℙ F (Fin d → F), ∀ h ∈ H, IsCollineationVia e h) ∨
+    (n = 11 ∨ n = 23)
+```
+Source text, arXiv 1209.5169 (Jones), TeX lines 54-72, verbatim:
+```
+\begin{thm}
+Let $G$ be a primitive permutation group of finite degree $n$, not containing the alternating group $A_n$. Suppose that $G$ contains a cycle fixing $k$ points, where $0\le k\le n-2$. Then one of the following holds:
+\begin{enumerate}
+\item $k=0$ and either
+\begin{description}
+\item {\rm (a)} $C_p\le G\le AGL_1(p)$ with $n=p$ prime, or
+\item {\rm (b)} $PGL_d(q)\le G\le P\Gamma L_d(q)$ with $n=(q^d-1)/(q-1)$ and $d\ge 2$ for some prime power $q$, or
+\item {\rm (c)} $G=L_2(11)$, $M_{11}$ or $M_{23}$ with $n=11, 11$ or $23$ respectively.
+\end{description}
+\item $k=1$ and either
+\begin{description}
+\item {\rm (a)} $AGL_d(q)\le G\le A\Gamma L_d(q)$ with $n=q^d$ and $d\ge 1$ for some prime power $q$, or
+\item {\rm (b)} $G=L_2(p)$ or $PGL_2(p)$ with $n=p+1$ for some prime $p\ge 5$, or
+\item {\rm (c)} $G=M_{11}$, $M_{12}$ or $M_{24}$ with $n=12, 12$ or $24$ respectively.
+\end{description}
+\item $k=2$ and $PGL_2(q)\le G\le P\Gamma L_2(q)$ with $n=q+1$ for some prime power $q$.
+\end{enumerate}
+\end{thm}
+
+
+```
+Source text, arXiv 2610.30892v1 (Lei-Zhao-Zhu-Wu), TeX lines 87-99, 109-112, 221-223 (Theorem 3.1 = the first theorem of Section 3 "Main results", label m+k<n), verbatim:
+```
+Prefix reversals are a classical family of involutions arising in permutation sorting and the study of Cayley graphs. Let \(S_n\) denote the symmetric group on \(\{1,\ldots,n\}\). For each \(2\le i\le n\), define the prefix reversal \(r_i\in S_n\) by
+\[
+r_i(j)=
+\begin{cases}
+i+1-j, & 1\le j\le i,\\
+j, & i<j\le n.
+\end{cases}
+\]
+Equivalently,
+\[
+r_i=\prod_{j=1}^{\lfloor i/2\rfloor}(j\;\;i+1-j).
+\]
+Thus, \(r_i\) reverses the first \(i\) positions and fixes all remaining positions. The problem of sorting a permutation using as few prefix reversals as possible has attracted considerable attention. Gates and Papadimitriou \cite{William1979} established bounds on the maximum number of reversals required, and Chitturi et al. \cite{Chitturi2009} subsequently improved the upper bound. Bulteau, Fertin, and Rusu \cite{Laurent2015} proved that finding an optimal sorting sequence is NP-hard. These results concern the length of a sorting sequence when all prefix reversal lengths are available.
+[...]
+Since every prefix reversal of length less than \(n\) fixes the position \(n\), any generating triple must contain \(r_n\). The problem therefore reduces to determining when
+\[
+G_{n}:=\langle r_n,r_m,r_k\rangle=S_n,
+\qquad 2\le k<m<n.
+[...]
+\begin{theorem}\label{m+k<n}
+    If $m+k<n-1$, then $\left \langle r_{n},r_{m},r_{k} \right \rangle <S_{n}$. Moreover, if n is even and $m+k<n$, then $\left \langle r_{n},r_{m},r_{k} \right \rangle <S_{n}$.
+\end{theorem}
+
+```
+(Theorem 3.1's proof, TeX l. 224ff., is the edge-count/graph argument; NOTE §1 reproduces it.)
+
+## (d) Compile log (clean rebuild, one `lake env lean --threads=1 -D autoImplicit=false` per module in dependency order, all rc 0) and #print axioms
+```
+Defs: memcap: peak 1413 MB, rc 0, 9 s
+CycleA: memcap: peak 1442 MB, rc 0, 11 s
+CycleB: memcap: peak 1421 MB, rc 0, 12 s
+CycleC: memcap: peak 1416 MB, rc 0, 10 s
+IsCycleP: memcap: peak 1501 MB, rc 0, 8 s
+Parity: memcap: peak 1443 MB, rc 0, 13 s
+BlocksA: memcap: peak 1425 MB, rc 0, 10 s
+BlocksB: memcap: peak 1437 MB, rc 0, 10 s
+Orbits: memcap: peak 1423 MB, rc 0, 9 s
+Prim0: memcap: peak 1416 MB, rc 0, 10 s
+Bridge: memcap: peak 1574 MB, rc 0, 8 s
+OrbitsB: memcap: peak 1641 MB, rc 0, 13 s
+PrimA: memcap: peak 1418 MB, rc 0, 12 s
+PrimB1: memcap: peak 1406 MB, rc 0, 10 s
+PrimB2: memcap: peak 1429 MB, rc 0, 11 s
+Prop5A: memcap: peak 1627 MB, rc 0, 17 s
+Prop5B: memcap: peak 1679 MB, rc 0, 54 s
+Prop5C: memcap: peak 1653 MB, rc 0, 11 s
+Small: memcap: peak 1593 MB, rc 0, 9 s
+Small23: memcap: peak 1761 MB, rc 0, 15 s
+Lemma7A: memcap: peak 1831 MB, rc 0, 10 s
+Lemma7B: memcap: peak 1847 MB, rc 0, 10 s
+Lemma7C: memcap: peak 1900 MB, rc 0, 24 s
+Inputs: memcap: peak 1790 MB, rc 0, 10 s
+Alt: memcap: peak 1897 MB, rc 0, 12 s
+Wreath: memcap: peak 1737 MB, rc 0, 57 s
+WreathA: memcap: peak 1780 MB, rc 0, 11 s
+WreathB: memcap: peak 1777 MB, rc 0, 12 s
+WreathC: memcap: peak 1777 MB, rc 0, 11 s
+B2: memcap: peak 1789 MB, rc 0, 10 s
+Main: memcap: peak 1919 MB, rc 0, 12 s
+Check: memcap: peak 1877 MB, rc 0, 9 s
+'Riemann.Deep.LeanPrefix.prefix_reversals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.prop5_arith' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.isPreprimitive_of_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.lemma7_invol' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.alt_le_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.line_B3' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.line_B2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.mem_orbit_iff_mod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.card_orbits' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.G_23_18_4' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Riemann.Deep.LeanPrefix.G_7_4_2' depends on axioms: [propext, Classical.choice, Quot.sound]
+== static scan:
+Riemann/Deep/LeanPrefix/Check.lean:4:Quot.sound (the two literature inputs are hypotheses, not axioms). -/
+Riemann/Deep/LeanPrefix/Check.lean:6:#print axioms Riemann.Deep.LeanPrefix.prefix_reversals
+Riemann/Deep/LeanPrefix/Check.lean:7:#print axioms Riemann.Deep.LeanPrefix.prop5_arith
+Riemann/Deep/LeanPrefix/Check.lean:8:#print axioms Riemann.Deep.LeanPrefix.isPreprimitive_of_line
+Riemann/Deep/LeanPrefix/Check.lean:9:#print axioms Riemann.Deep.LeanPrefix.lemma7_invol
+Riemann/Deep/LeanPrefix/Check.lean:10:#print axioms Riemann.Deep.LeanPrefix.alt_le_line
+Riemann/Deep/LeanPrefix/Check.lean:11:#print axioms Riemann.Deep.LeanPrefix.line_B3
+Riemann/Deep/LeanPrefix/Check.lean:12:#print axioms Riemann.Deep.LeanPrefix.line_B2
+Riemann/Deep/LeanPrefix/Check.lean:13:#print axioms Riemann.Deep.LeanPrefix.mem_orbit_iff_mod
+Riemann/Deep/LeanPrefix/Check.lean:14:#print axioms Riemann.Deep.LeanPrefix.card_orbits
+Riemann/Deep/LeanPrefix/Check.lean:15:#print axioms Riemann.Deep.LeanPrefix.G_23_18_4
+Riemann/Deep/LeanPrefix/Check.lean:16:#print axioms Riemann.Deep.LeanPrefix.G_7_4_2
+
+```
+(The static-scan matches are only the "#print axioms" lines and the doc comment of Check.lean; no sorry/admit/native_decide/axiom declaration/implemented_by/extern/unsafe anywhere.)
+
+## (f) Deviations of the Lean statement from the Claim, with arguments
+1. Reading of the second sentence. Lean B.3 assumes n odd (and α ∣ n, which forces gcd = 1); Lean B.4 assumes n odd and gcd = 1 (and α ∤ n). These are exactly the hypotheses of NOTE Thm B.3/B.4, which the Claim's sentence summarizes, and the brief says "as NOTE.md states it". Read literally without them the sentence is false (checked with sympy): (12,8,3): α = 4 ∣ 12, n even, |G| = 768 ≠ 3072 = |D_8 ≀ D_6|; (6,3,2): α ∣ n, |G| = 72 ≠ 144; (10,6,3): gcd = 1, α ∤ n, G transitive but imprimitive (B.2); (11,8,2): gcd = 3, α ∤ 11, G intransitive. So "when α ∣ n … otherwise primitive ⊇ A_n" can only mean the odd transitive part of the line, i.e. NOTE's B.3/B.4. To leave no case of the line unstated, B.2 (n even, gcd = 1: transitive, imprimitive, a block of n/2 points) is also proved, and B.1 covers every line triple.
+2. The orbits ("O_c = {x : x ≡ ±c (mod g)}, 0 ≤ c ≤ g/2; there are ⌊g/2⌋+1 of them; transitive iff g = 1"): stated as (i) y ∈ orbit(x) ↔ y+1 ≡ ±(x+1) (mod g) (1-based positions), i.e. the orbit of x is O_c with c the class of ±(x+1); (ii) the number of orbits Nat.card (orbitRel.Quotient) = g/2 + 1 (= ⌊g/2⌋ + 1); (iii) IsPretransitive ↔ g = 1. Orbits of G acting on the n positions.
+3. Wreath product. Mathlib has no permutational wreath product (its RegularWreathProduct is the regular one, of order (2α)^{2q}·2q: wrong object). Wreath α q := (ZMod q → DihedralGroup α) ⋊ DihedralGroup q, where DihedralGroup q acts on ZMod q as on the vertices of the q-gon (dihedralPerm: r i : x ↦ x+i, sr i : x ↦ -x-i) and on the base by f ↦ f ∘ (d⁻¹ ·): this is D_{2α} ≀ D_{2q} for the natural action of D_{2q} on the q blocks, as in NOTE Lemma 6 ("dihedral on positions u, dihedral ⟨rev_q, rev_{q−1}⟩ on blocks"). Lean states both the abstract isomorphism (Nonempty (G ≃* Wreath α q)) and the imprimitive permutation form (G is, up to a bijection Fin n ≃ ZMod q × ZMod α, the image of the faithful imprimitive action wreathPerm: (f,d)·(i,u) = (d i, f(d i) u)), plus |G| = (2α)^q·2q, the interval blocks {x : x/α = i} and ¬IsPreprimitive.
+4. "(k+1) does not divide m" (Theorem A) vs "α ∤ n" (B.4): equivalent on the line n = m + α.
+5. "generate all of S_n" is G n m k = ⊤ in Perm (Fin n); "A_n" is Mathlib's alternatingGroup (Fin n); "A_n exactly when …" is the iff G = alternatingGroup ↔ (n ≡ 1 [MOD 4] ∧ 4 ∣ k), plus G = ⊤ otherwise.
+6. The literature inputs are hypotheses of the theorem (named Props), so #print axioms stays standard. Everything else is proved in Lean, including our Proposition 5 (primitivity), our Lemma 7 (in the form used: a nonidentity involution of PΓL_d(q) on points, (d,q) ≠ (2,4), fixes ≤ n/2 points; applied to r_k, which fixes m+1 > n/2 points), Proposition 8 (A_n ≤ G from Jones), Lemma 6 (wreath), B.1 for every g, and kernel computations G = S_n for (11,6,4), (23,18,4), (23,16,6), (23,12,10) (Jones's case (c), n ∈ {11, 23}) and (7,4,2), (13,10,2).
+
+
+## (g) Independent numerical sanity checks (sympy PermutationGroup, positions 0-based, rev as in (b)); not part of the proof
+```
+(7,4,2) line=True g=1 |G|=5040 type=S orbits=1 transitive=True primitive=True
+(9,4,2) line=False (m+k<n-1) |G|=128 (G ≠ S_9, consistent with LZZW)
+(9,5,3) line=True g=2 |G|=960 orbits=2 (g/2+1=2) transitive=False
+(13,8,4) line=True g=1 |G|=13!/2 type=A (n≡1 mod 4, 4|k) primitive=True
+(11,8,2) line=True g=3 |G|=384 orbits=2 (g/2+1=2) transitive=False
+(19,14,4) line=True g=5 orbits=3 (g/2+1=3); (27,20,6) g=7 orbits=4 (g/2+1=4)
+(10,6,3) line=True n even g=1 |G|=28800 transitive=True primitive=False (B.2)
+(12,8,3) line=True n even, α=4 | 12, |G|=768 ≠ (2α)^q·2q=3072, primitive=False
+(6,3,2)  line=True n even, α=3 | 6,  |G|=72  ≠ 144
+(9,6,2)  n odd α|n |G|=1296 = (2α)^q·2q; (15,10,4) 6000 = 6000; (15,12,2) 77760 = 77760; (21,14,6) 16464 = 16464
+orbit criterion "y ∈ orbit x ↔ y+1 ≡ ±(x+1) mod g" verified on every line triple above.
+```
