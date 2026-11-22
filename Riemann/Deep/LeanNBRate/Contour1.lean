@@ -27,7 +27,7 @@ def Psi0 (H : ℂ → ℂ) (s z : ℂ) : ℂ := Fq H z / (s - z)
 def Psi (H : ℂ → ℂ) (L : ℝ) (s z : ℂ) : ℂ := Fq H z * kap L (s - z) / (s - z)
 
 /-- g(u) = (2 pi)^{-1} int F(3+iy) e^{u(3+iy)} dy. -/
-def gF (H : ℂ → ℂ) (u : ℝ) : ℂ := (2 * π)⁻¹ * ∫ y : ℝ, Fq H (3 + y * I) * cexp (u * (3 + y * I))
+def gF (H : ℂ → ℂ) (u : ℝ) : ℂ := (2 * (π : ℂ))⁻¹ * ∫ y : ℝ, Fq H (3 + y * I) * cexp (u * (3 + y * I))
 
 /-- G(s) = int_0^L g(u) e^{-us} du. -/
 def GF (H : ℂ → ℂ) (L : ℝ) (s : ℂ) : ℂ := ∫ u in (0 : ℝ)..L, gF H u * cexp (-(u * s))
@@ -47,8 +47,8 @@ structure HBound (H : ℂ → ℂ) (M β D : ℝ) (N : ℕ) : Prop where
   M_nonneg : 0 ≤ M
   β_nonneg : 0 ≤ β
   D_pos : 0 < D
-  N_ge : 4 ≤ N
-  bound : ∀ z, ‖H z‖ ≤ M * (1 + ‖z‖) * Real.exp (β * max 0 (1 / 2 - z.re)) * (D / (D + ‖z - 1 / 2‖)) ^ N
+  N_ge : 6 ≤ N
+  bound : ∀ z, ‖H z‖ ≤ M * Real.exp (β * max 0 (1 / 2 - z.re)) * (D / (D + ‖z - 1 / 2‖)) ^ N
 
 theorem norm_kap (L : ℝ) (x : ℂ) : ‖kap L x‖ = Real.exp (-(L * x.re)) := by
   rw [kap, Complex.norm_exp]; congr 1; simp
@@ -82,6 +82,23 @@ theorem weight_le {D : ℝ} (hD : 0 < D) {N : ℕ} (hN : 4 ≤ N) (y : ℝ) :
         gcongr
     _ = (D / c) ^ N * ((1 + |y|) ^ 2)⁻¹ := by
         rw [div_pow]; first | (field_simp; done) | (field_simp; ring)
+
+theorem weight_le_inv_sq {D : ℝ} (hD : 0 < D) {N : ℕ} (hN : 2 ≤ N) (y : ℝ) :
+    (D / (D + |y|)) ^ N ≤ (D / min D 1) ^ 2 * ((1 + |y|) ^ 2)⁻¹ := by
+  have h1 : (D / (D + |y|)) ^ N ≤ (D / (D + |y|)) ^ 2 :=
+    pow_le_pow_of_le_one (by positivity) (div_le_one_of_le₀ (by linarith [abs_nonneg y]) (by positivity)) hN
+  refine h1.trans ?_
+  have h2 : (1 + |y|) ^ 2 * (D / (D + |y|)) ^ 2 ≤ (D / min D 1) ^ 2 := by
+    rw [← mul_pow]
+    apply pow_le_pow_left₀ (by positivity)
+    have hc0 : 0 < min D 1 := lt_min hD one_pos
+    rw [mul_div_assoc', div_le_div_iff₀ (by positivity) hc0]
+    have : min D 1 * (1 + |y|) ≤ D + |y| := by
+      have := min_le_left D 1; have := min_le_right D 1; nlinarith [abs_nonneg y]
+    nlinarith
+  have hp : 0 < (1 + |y|) ^ 2 := by positivity
+  rw [← div_eq_mul_inv, le_div_iff₀ hp, mul_comm]
+  exact h2
 
 theorem integrable_inv_one_add_abs_sq : Integrable (fun y : ℝ => ((1 + |y|) ^ 2)⁻¹) := by
   have h := integrable_one_add_norm (E := ℝ) (μ := volume) (r := 2) (by norm_num)
