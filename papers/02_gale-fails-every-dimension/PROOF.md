@@ -38,7 +38,7 @@
 
 🎯 Each dimension gets one witness or citation.
 
-| $n$ | Witness $X$ | $\lvert X\rvert$ | Long pair forced by | Lean |
+| $n$ | Witness $X$ | $\left\lvert X\right\rvert $ | Long pair forced by | Lean |
 |---|---|---|---|---|
 | 3 | [our set](../../Riemann/Deep/Gale/points.txt) | 170 | certificate (2) | [`P3.lower`](../../Riemann/Deep/LeanGale/P3.lean#L42-L46) |
 | 4 | [our set](../../Riemann/Deep/Gale45/points4.txt) | 126 | certificate (2) | [`P4.lower`](../../Riemann/Deep/LeanGale/P4.lean#L42-L46) |
@@ -99,7 +99,7 @@ G_{\ge t}(X)&=\big(X,\ \lbrace xy:\lVert x-y\rVert^2\ge t\rbrace\big)\\
 \end{aligned}
 ```
 
-| $n$ | $\lvert X\rvert$ | $D^2\cdot 10^{16}$ | $t\cdot 10^{16}$ | tokens | kernel run |
+| $n$ | $\left\lvert X\right\rvert $ | $D^2\cdot 10^{16}$ | $t\cdot 10^{16}$ | tokens | kernel run |
 |---|---|---|---|---|---|
 | 3 | 170 | 10000000211897483 | 7932058815501876 | 2834 | [`P3.run_ok`](../../Riemann/Deep/LeanGale/P3.lean#L24) |
 | 4 | 126 | 10000000179265409 | 8399124363373578 | 2936 | [`P4.run_ok`](../../Riemann/Deep/LeanGale/P4.lean#L24) |
@@ -151,7 +151,7 @@ G_{\ge t}(X)&=\big(X,\ \lbrace xy:\lVert x-y\rVert^2\ge t\rbrace\big)\\
 |---|---|---|
 | 3.1 | 🎯 Regular simplices exist in every dimension recursively.<br>$u^{(m+1)}_{m+1}=(0,\dots,0,-1)$, $u^{(m+1)}_j=\big(\alpha\thinspace u^{(m)}_j,\tfrac1{m+1}\big)$, $\alpha=\tfrac{\sqrt{m(m+2)}}{m+1}$ | [`splx`](../../Riemann/Deep/LeanGale/Splx.lean#L17-L21), [`splx_simplex_succ`](../../Riemann/Deep/LeanGale/Splx.lean#L43-L87), [`splx_simplex`](../../Riemann/Deep/LeanGale/Splx.lean#L89-L92) |
 | 3.2 | 🎯 Parameters are rationals with twelve decimal digits.<br>$r_A,\dots,f\in10^{-12}ℕ$: row $n$ of [family_params.txt](../../Riemann/Deep/Gale7/family_params.txt) | [`Params`](../../Riemann/Deep/LeanGale/Row.lean#L19-L32), [`prm`](../../Riemann/Deep/LeanGale/Row.lean#L55-L56), [`table`](../../Riemann/Deep/LeanGale/Family.lean#L99-L101), [`params`](../../Riemann/Deep/LeanGale/Family.lean#L127-L128) |
-| 3.3 | 🎯 Distinct labels give distinct points; count follows.<br>$\lvert V_n\rvert=p+q+3pq$ | [`famRow_injective`](../../Riemann/Deep/LeanGale/Row.lean#L209-L229), [`card_Vx'`](../../Riemann/Deep/LeanGale/Family.lean#L35-L55), [`card_famSet`](../../Riemann/Deep/LeanGale/Family.lean#L146-L153) |
+| 3.3 | 🎯 Distinct labels give distinct points; count follows.<br>$\left\lvert V_n\right\rvert =p+q+3pq$ | [`famRow_injective`](../../Riemann/Deep/LeanGale/Row.lean#L209-L229), [`card_Vx'`](../../Riemann/Deep/LeanGale/Family.lean#L35-L55), [`card_famSet`](../../Riemann/Deep/LeanGale/Family.lean#L146-L153) |
 | 3.4 | 🎯 Reindexing places the direct sum inside ℝⁿ.<br>$ℝ^{m_1+m_2}\toℝ^n$, coordinates kept | [`reidx`](../../Riemann/Deep/LeanGale/Main.lean#L162-L163), [`transport`](../../Riemann/Deep/LeanGale/Main.lean#L165-L176) |
 
 </details>
@@ -203,7 +203,7 @@ g_s=\begin{cases}1&\text{index } s \text{ of } v,w \text{ equal}\\-1/m_s&\text{e
 ```math
 \begin{gathered}
 V\big(H(p,q)\big)=\lbrace P_i,\,Q_j,\,A_{ij},\,B_{ij},\,C_{ij}:\ i\lt p,\ j\lt q\rbrace\\
-c:V\big(H(p,q)\big)\to K\ \text{proper}\ \Longrightarrow\ \lvert K\rvert\ge p+q
+c:V\big(H(p,q)\big)\to K\ \text{proper}\ \Longrightarrow\ \left\lvert K\right\rvert \ge p+q
 \end{gathered}
 ```
 
@@ -224,17 +224,17 @@ c:V\big(H(p,q)\big)\to K\ \text{proper}\ \Longrightarrow\ \lvert K\rvert\ge p+q
 | 5.1 | 🎯 One colour never spans two parallel blocks.<br>$X_i=\lbrace P_i,A_{ij}\rbrace_j$, $Y_j=\lbrace Q_j,B_{ij}\rbrace_i$; a colour meets $X_i,X_k\Rightarrow i=k$; $Y$ alike | [`InX`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L81-L82), [`InY`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L84-L85), [`inX_unique`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L187-L194), [`inY_unique`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L196-L203) |
 | 5.2 | 🎯 $C_{ij}$ confines its colour to its lines.<br>$c(C_{ij})$ meets $X_k\Rightarrow k=i$, meets $Y_l\Rightarrow l=j$ | [`inX_of_C`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L205-L211), [`inY_of_C`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L213-L219) |
 | 5.3 | 🎯 Each colour's C-vertices lie on one line.<br>one row or one column | [`RowT`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L87-L88), [`C_line`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L221-L244) |
-| 5.4 | 🎯 Four disjoint colour types bound the palette.<br>types X, Y, XY, L (meets row block / column block / both / none): $\lvert K_X\rvert+\lvert K_Y\rvert+\lvert K_{XY}\rvert+\lvert K_L\rvert\le\lvert K\rvert$ | [`Kx`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L93-L94), [`Ky`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L95-L96), [`Kxy`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L97-L98), [`Kl`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L99-L100), [`card_split`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L116-L141) |
-| 5.5 | 🎯 Uncovered rows, columns each demand XY colours.<br>$R_0$ = rows without type-X colour: $p\le\lvert K_X\rvert+\lvert R_0\rvert$, $\lvert R_0\rvert\le\lvert K_{XY}\rvert$; columns alike | [`R0`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L101-L102), [`C0`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L103-L104), [`p_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L248-L263), [`q_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L265-L280), [`R0_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L282-L287), [`C0_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L289-L294) |
-| 5.6 | 🎯 Each L colour covers a single line.<br>$R_1,C_1$ = lines of L colours: $\lvert R_1\rvert+\lvert C_1\rvert\le\lvert K_L\rvert$ | [`rowsL`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L105-L107), [`colsL`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L108-L110), [`R1`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L111-L112), [`C1`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L113-L114), [`cover`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L157-L170), [`R1C1_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L314-L338) |
-| 5.7 | 🎯 Free cells exhaust XY colours; contradiction follows.<br>$a=\lvert R_0\setminus R_1\rvert$, $b=\lvert C_0\setminus C_1\rvert$; Level 3 | [`card_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L435-L460) |
+| 5.4 | 🎯 Four disjoint colour types bound the palette.<br>types X, Y, XY, L (meets row block / column block / both / none): $\left\lvert K_X\right\rvert +\left\lvert K_Y\right\rvert +\left\lvert K_{XY}\right\rvert +\left\lvert K_L\right\rvert \le\left\lvert K\right\rvert $ | [`Kx`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L93-L94), [`Ky`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L95-L96), [`Kxy`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L97-L98), [`Kl`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L99-L100), [`card_split`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L116-L141) |
+| 5.5 | 🎯 Uncovered rows, columns each demand XY colours.<br>$R_0$ = rows without type-X colour: $p\le\left\lvert K_X\right\rvert +\left\lvert R_0\right\rvert $, $\left\lvert R_0\right\rvert \le\left\lvert K_{XY}\right\rvert $; columns alike | [`R0`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L101-L102), [`C0`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L103-L104), [`p_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L248-L263), [`q_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L265-L280), [`R0_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L282-L287), [`C0_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L289-L294) |
+| 5.6 | 🎯 Each L colour covers a single line.<br>$R_1,C_1$ = lines of L colours: $\left\lvert R_1\right\rvert +\left\lvert C_1\right\rvert \le\left\lvert K_L\right\rvert $ | [`rowsL`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L105-L107), [`colsL`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L108-L110), [`R1`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L111-L112), [`C1`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L113-L114), [`cover`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L157-L170), [`R1C1_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L314-L338) |
+| 5.7 | 🎯 Free cells exhaust XY colours; contradiction follows.<br>$a=\left\lvert R_0\setminus R_1\right\rvert $, $b=\left\lvert C_0\setminus C_1\right\rvert $; Level 3 | [`card_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L435-L460) |
 
 <details><summary>Level 3 · step 5.7</summary>
 
 | # | Goal → fact | Lean |
 |---|---|---|
-| 5.7a | 🎯 Free cells force distinct XY colours injectively.<br>$(i,j)\in(R_0\setminus R_1)\times(C_0\setminus C_1)\Rightarrow c(C_{ij})\in K_{XY}$, injective: $ab\le\lvert K_{XY}\rvert$ | [`cell`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L296-L312), [`mem_S_Kxy`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L340-L347), [`S_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L349-L365) |
-| 5.7b | 🎯 Counting forces one free row or column.<br>$\lvert K\rvert\lt p+q\Rightarrow\lvert K_{XY}\rvert+1\le a+b$, $a,b\ge1$; $a,b\ge2\Rightarrow ab+1\le a+b$, impossible | [`card_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L437-L457), [`nat_aux`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L174-L180) |
+| 5.7a | 🎯 Free cells force distinct XY colours injectively.<br>$(i,j)\in(R_0\setminus R_1)\times(C_0\setminus C_1)\Rightarrow c(C_{ij})\in K_{XY}$, injective: $ab\le\left\lvert K_{XY}\right\rvert $ | [`cell`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L296-L312), [`mem_S_Kxy`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L340-L347), [`S_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L349-L365) |
+| 5.7b | 🎯 Counting forces one free row or column.<br>$\left\lvert K\right\rvert \lt p+q\Rightarrow\left\lvert K_{XY}\right\rvert +1\le a+b$, $a,b\ge1$; $a,b\ge2\Rightarrow ab+1\le a+b$, impossible | [`card_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L437-L457), [`nat_aux`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L174-L180) |
 | 5.7c | 🎯 A single free line forces monochromatic edge.<br>$a=1$: $c(P_{i^\star})=c(B_{i^\star j_0})$; $b=1$: $c(Q_{j^\star})=c(A_{i_0 j^\star})$ | [`case_a`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L367-L399), [`case_b`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L401-L433) |
 
 </details>
@@ -294,7 +294,7 @@ n+1\lt p+q\ &\overset{5}{\Longrightarrow}\ \forall c\ \exists\,vw\in E(H):\ c(x_
 |---|---|---|
 | $ℝ^7$ | 84 points; $\beta_8/D=\sqrt{8900856812318928/10000000213244525}=0.9434435130\ldots\gt \sigma_7=0.9419651451\ldots$ | [`claim1_n7`](../../Riemann/Deep/LeanGale/Main.lean#L93-L124) |
 | $ℝ^8$ | 85 points; $\beta_9/D=\sqrt{9023994457279939/10000000157507010}=0.9499470677\ldots\gt \sigma_8=0.9486832981\ldots$ | [`claim1_n8`](../../Riemann/Deep/LeanGale/Main.lean#L137-L156) |
-| family | $\forall n\in[5,1000]$, all unit simplices: $\lvert V_n\rvert=p+q+3pq$, $\beta_{n+1}/D\gt \sigma_n$ | [`claim2`](../../Riemann/Deep/LeanGale/Main.lean#L202-L215) |
+| family | $\forall n\in[5,1000]$, all unit simplices: $\left\lvert V_n\right\rvert =p+q+3pq$, $\beta_{n+1}/D\gt \sigma_n$ | [`claim2`](../../Riemann/Deep/LeanGale/Main.lean#L202-L215) |
 | ball | $`\forall n\ge3:\ \neg\,\mathrm{Gale}_B(n)`$, given $`\beta_{n+1}(B^n)\le\sigma_n`$ | [`gale_ball_fails`](../../Riemann/Deep/LeanGale/Main.lean#L283-L289) |
 
 <details><summary>Level 2</summary>
@@ -304,7 +304,7 @@ n+1\lt p+q\ &\overset{5}{\Longrightarrow}\ \forall c\ \exists\,vw\in E(H):\ c(x_
 | A.1 | 🎯 Matching lower and upper bounds fix beta.<br>$\sqrt t\le\beta\le\sqrt t$ | [`beta_eq`](../../Riemann/Deep/LeanGale/Main.lean#L30-L34), [`beta_le_sqrt`](../../Riemann/Deep/LeanGale/Gale.lean#L110-L121) |
 | A.2 | 🎯 An explicit colouring gives the upper bound.<br>stored colouring: same colour $\Rightarrow\lVert x-y\rVert^2\le t$ | [`PtSet.upper`](../../Riemann/Deep/LeanGale/Pts.lean#L162-L189), [`P7.upper`](../../Riemann/Deep/LeanGale/P7.lean#L48-L52), [`P8.upper`](../../Riemann/Deep/LeanGale/P8.lean#L59-L63) |
 | A.3 | 🎯 Labels send H's edges to long pairs.<br>`idx`: $V(H(5,5))\to$ points, every edge $\mapsto$ pair at $\ge t$ | [`P8.idx`](../../Riemann/Deep/LeanGale/P8.lean#L23-L29), [`P8.H_ok`](../../Riemann/Deep/LeanGale/P8.lean#L33-L35), [`lower_of_labels`](../../Riemann/Deep/LeanGale/Pts.lean#L219-L241) |
-| A.4 | 🎯 The decimal values hold to ten places.<br>$\lvert x-d\rvert\lt 5\cdot10^{-11}$; $\sigma_7=\sqrt{\tfrac12+\tfrac12\sqrt{3/5}}$, $\sigma_8=\sqrt{9/10}$ | [`sqrt_near`](../../Riemann/Deep/LeanGale/Main.lean#L70-L78), [`claim1_n7`](../../Riemann/Deep/LeanGale/Main.lean#L110-L124) |
+| A.4 | 🎯 The decimal values hold to ten places.<br>$\left\lvert x-d\right\rvert \lt 5\cdot10^{-11}$; $\sigma_7=\sqrt{\tfrac12+\tfrac12\sqrt{3/5}}$, $\sigma_8=\sqrt{9/10}$ | [`sqrt_near`](../../Riemann/Deep/LeanGale/Main.lean#L70-L78), [`claim1_n7`](../../Riemann/Deep/LeanGale/Main.lean#L110-L124) |
 | A.5 | 🎯 Cited ball bound turns σ-form into ball-form.<br>$\beta_{n+1}(B^n)\le\sigma_n\Rightarrow(\mathrm{Gale}_B\Rightarrow\mathrm{Gale})$ | [`SimplexPartitionBound`](../../Riemann/Deep/LeanGale/Main.lean#L275-L281), [`gale_ball_fails`](../../Riemann/Deep/LeanGale/Main.lean#L283-L289) |
 
 </details>
