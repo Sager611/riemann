@@ -3,7 +3,7 @@
 Gate (AGENTS.md): someone gets a new theorem, tool or barrier from it; dependents of one input count once. One line each; the linked page has the statement, what was known before, the review and the novelty checks.
 See [RECORDS.md](RECORDS.md) (constants, ranges, exponents, proportions), [REFUTATIONS.md](REFUTATIONS.md) (broken claimed proofs), [COROLLARIES.md](COROLLARIES.md) (routine conditional deductions), [FORMALIZATIONS.md](FORMALIZATIONS.md) (machine-checked known mathematics).
 
-Status (21 Nov 2026): assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). ★ = RH-conditional before, unconditional now. [Masullo-risk] = weakens if Masullo's unverified Hecke-GRH is completed. All audits are internal agent audits, not human referees.
+Status (21 Nov 2026): assumes Alpöge's RH + Dirichlet GRH (Lean, 20 Nov 2026). ★ = RH-conditional before, unconditional now. [Masullo-risk] = weakens if Masullo's unverified Hecke-GRH is completed. #1–#4: whole Claims proved in Lean from cited theorems ([FORMALIZATIONS](FORMALIZATIONS.md)). All audits are internal agent audits, not human referees.
 
 ## Important, still alive after Alpöge (ranked; node in parentheses, list at the top of TREE.md)
 
