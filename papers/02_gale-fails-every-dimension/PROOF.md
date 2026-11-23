@@ -27,11 +27,11 @@
 
 | | Definition | Lean |
 |---|---|---|
-| $\mathbb{R}^n$ | $d(x,y)=\sqrt{\textstyle\sum_k (x_k-y_k)^2}$ | [`E`](../../Riemann/Deep/LeanGale/Gale.lean#L22-L23), [`dist_toE`](../../Riemann/Deep/LeanGale/Gale.lean#L48-L52) |
+| $ℝ^n$ | $d(x,y)=\sqrt{\textstyle\sum_k (x_k-y_k)^2}$ | [`E`](../../Riemann/Deep/LeanGale/Gale.lean#L22-L23), [`dist_toE`](../../Riemann/Deep/LeanGale/Gale.lean#L48-L52) |
 | $\mathrm{diam}\thinspace V$ | $\sup_{x,y\in V}d(x,y)$ | Mathlib `Metric.diam` |
-| $\beta_k(V)$ | $\inf_{c:\mathbb{R}^n\to\mathrm{Fin}\thinspace k}\enspace \sup_{i}\enspace \mathrm{diam}\thinspace \big(V\cap c^{-1}(i)\big)$; parts = colour classes | [`beta`](../../Riemann/Deep/LeanGale/Gale.lean#L25-L28) |
+| $\beta_k(V)$ | $\inf_{c:ℝ^n\to\mathrm{Fin}\thinspace k}\enspace \sup_{i}\enspace \mathrm{diam}\thinspace \big(V\cap c^{-1}(i)\big)$; parts = colour classes | [`beta`](../../Riemann/Deep/LeanGale/Gale.lean#L25-L28) |
 | $\sigma_n$ | $\sqrt{\tfrac{n+1}{n+2}}$ ($n$ even), $\sqrt{\tfrac12+\tfrac12\sqrt{\tfrac{n-1}{n+3}}}$ ($n$ odd) | [`sigma`](../../Riemann/Deep/Gale7/Lean/Defs.lean#L22-L26) |
-| $\mathrm{Gale}(n)$ | $\forall V\subset\mathbb{R}^n$ bounded: $\beta_{n+1}(V)\le\sigma_n\mathrm{diam}\thinspace V$ | [`GaleConjecture`](../../Riemann/Deep/LeanGale/Gale.lean#L30-L33) |
+| $\mathrm{Gale}(n)$ | $\forall V\subsetℝ^n$ bounded: $\beta_{n+1}(V)\le\sigma_n\mathrm{diam}\thinspace V$ | [`GaleConjecture`](../../Riemann/Deep/LeanGale/Gale.lean#L30-L33) |
 | $\mathrm{Gale}_B(n)$ | same, with $\beta_{n+1}\big(\bar B(0,\tfrac12)\big)$ for $\sigma_n$ | [`GaleConjectureBall`](../../Riemann/Deep/LeanGale/Gale.lean#L35-L39) |
 
 ## Coverage
@@ -66,11 +66,12 @@ flowchart LR
 🎯 One long monochromatic pair defeats every partition.
 
 ```math
-\left.\begin{aligned}
-&\forall x,y\in X:\enspace \lVert x-y\rVert^2\le D^2\\
-&\forall c:\mathbb{R}^n\to\mathrm{Fin}(n+1)\enspace \enspace \exists x,y\in X:\enspace c(x)=c(y),\enspace \lVert x-y\rVert^2\ge t\\
-&\sigma_n^2D^2\lt t
-\end{aligned}\enspace \right\}\enspace \Longrightarrow\enspace \sigma_n\mathrm{diam}\thinspace X\lt \beta_{n+1}(X)\enspace \Longrightarrow\enspace \neg\thinspace \mathrm{Gale}(n)
+\begin{aligned}
+\text{(H1)}&\quad \forall x,y\in X:\ \lVert x-y\rVert^2\le D^2\\
+\text{(H2)}&\quad \forall c:ℝ^n\to\mathrm{Fin}(n+1)\ \ \exists x,y\in X:\ c(x)=c(y),\ \lVert x-y\rVert^2\ge t\\
+\text{(H3)}&\quad \sigma_n^2D^2\lt t\\
+\Longrightarrow&\quad \sigma_n\,\mathrm{diam}\,X\lt\beta_{n+1}(X)\ \Longrightarrow\ \neg\,\mathrm{Gale}(n)
+\end{aligned}
 ```
 
 [`sigma_mul_diam_lt_beta`](../../Riemann/Deep/LeanGale/Gale.lean#L137-L155) → [`not_gale_of`](../../Riemann/Deep/LeanGale/Gale.lean#L157-L159)
@@ -79,9 +80,9 @@ flowchart LR
 
 | # | Goal → fact | Lean |
 |---|---|---|
-| 1.1 | 🎯 Mathlib's distance equals the explicit coordinate formula.<br>$d(\iota x,\iota y)=\sqrt{\sum_k(x_k-y_k)^2}$, $\iota$: coordinates $\to\mathbb{R}^n$ | [`toE`](../../Riemann/Deep/LeanGale/Gale.lean#L43-L44), [`dist_toE`](../../Riemann/Deep/LeanGale/Gale.lean#L48-L52) |
+| 1.1 | 🎯 Mathlib's distance equals the explicit coordinate formula.<br>$d(\iota x,\iota y)=\sqrt{\sum_k(x_k-y_k)^2}$, $\iota$: coordinates $\toℝ^n$ | [`toE`](../../Riemann/Deep/LeanGale/Gale.lean#L43-L44), [`dist_toE`](../../Riemann/Deep/LeanGale/Gale.lean#L48-L52) |
 | 1.2 | 🎯 Finite diameter is the largest pairwise distance.<br>$\mathrm{diam}\thinspace \iota X=\max_{x,y\in X}d(x,y)$ | [`diam_XE`](../../Riemann/Deep/LeanGale/Gale.lean#L60-L71) |
-| 1.3 | 🎯 A long monochromatic pair lower-bounds every partition.<br>line 2 $\Rightarrow\sqrt t\le\beta_{n+1}(\iota X)$ | [`sqrt_le_beta`](../../Riemann/Deep/LeanGale/Gale.lean#L94-L108) |
+| 1.3 | 🎯 A long monochromatic pair lower-bounds every partition.<br>(H2) $\Rightarrow\sqrt t\le\beta_{n+1}(\iota X)$ | [`sqrt_le_beta`](../../Riemann/Deep/LeanGale/Gale.lean#L94-L108) |
 | 1.4 | 🎯 Squared bounds become a strict distance gap.<br>$\mathrm{diam}\thinspace X\le\sqrt{D^2}$, $\sigma_n\sqrt{D^2}\lt \sqrt t$ | [`sigma_mul_diam_lt_beta`](../../Riemann/Deep/LeanGale/Gale.lean#L147-L155) |
 | 1.5 | 🎯 Bounded witness with gap contradicts Gale's inequality.<br>$V$ bounded, $\sigma_n\mathrm{diam}\thinspace V\lt \beta_{n+1}(V)\Rightarrow\neg\thinspace \mathrm{Gale}(n)$ | [`not_gale_of`](../../Riemann/Deep/LeanGale/Gale.lean#L157-L159) |
 
@@ -92,7 +93,10 @@ flowchart LR
 🎯 Kernel replays a refutation tree over colourings.
 
 ```math
-G_{\ge t}(X)=\big(X,\enspace \lbrace xy:\lVert x-y\rVert^2\ge t\rbrace\big):\qquad \mathtt{run}(\text{tokens})=\mathtt{true}\enspace \Longrightarrow\enspace \forall c:X\to\mathrm{Fin}(n+1)\enspace \enspace \exists\thinspace  xy\in G_{\ge t}(X):\enspace c(x)=c(y)
+\begin{aligned}
+G_{\ge t}(X)&=\big(X,\ \lbrace xy:\lVert x-y\rVert^2\ge t\rbrace\big)\\
+\mathtt{run}(\text{tokens})=\mathtt{true}\ &\Longrightarrow\ \forall c:X\to\mathrm{Fin}(n+1)\ \ \exists\,xy\in G_{\ge t}(X):\ c(x)=c(y)
+\end{aligned}
 ```
 
 | $n$ | $\lvert X\rvert$ | $D^2\cdot 10^{16}$ | $t\cdot 10^{16}$ | tokens | kernel run |
@@ -107,7 +111,7 @@ G_{\ge t}(X)=\big(X,\enspace \lbrace xy:\lVert x-y\rVert^2\ge t\rbrace\big):\qqu
 
 | # | Goal → fact | Lean |
 |---|---|---|
-| 2.1 | 🎯 Coordinates are integers; kernel checks all distances.<br>$x=a/10^8$, $a\in\mathbb{Z}^n$; all $\lVert x-y\rVert^2\le D^2$, attained; points distinct | [`PtSet`](../../Riemann/Deep/LeanGale/Pts.lean#L56-L65), [`ok`](../../Riemann/Deep/LeanGale/Pts.lean#L77-L83), [`sqd_toPt`](../../Riemann/Deep/LeanGale/Pts.lean#L40-L45) |
+| 2.1 | 🎯 Coordinates are integers; kernel checks all distances.<br>$x=a/10^8$, $a\inℤ^n$; all $\lVert x-y\rVert^2\le D^2$, attained; points distinct | [`PtSet`](../../Riemann/Deep/LeanGale/Pts.lean#L56-L65), [`ok`](../../Riemann/Deep/LeanGale/Pts.lean#L77-L83), [`sqd_toPt`](../../Riemann/Deep/LeanGale/Pts.lean#L40-L45) |
 | 2.2 | 🎯 One natural number stores all colour domains.<br>bit $8u+i$ set $\iff$ colour $i$ still allowed at vertex $u$ | [`Inv`](../../Riemann/Deep/LeanGale/Cert.lean#L64-L65), [`assign`](../../Riemann/Deep/LeanGale/Cert.lean#L31-L34) |
 | 2.3 | 🎯 Four tokens branch, propagate, break symmetry, close.<br>`br v k`: $c(v)=k$ or $c(v)\ne k$ · `unit v k`: forced · `cut v a b`: w.l.o.g. $c(v)\ne b$ · `wipe u`: empty domain | [`Tok`](../../Riemann/Deep/LeanGale/Cert.lean#L39-L44), [`run`](../../Riemann/Deep/LeanGale/Cert.lean#L46-L59) |
 | 2.4 | 🎯 Colour swap keeps proper colourings inside domains.<br>domains symmetric in $a,b$ $\Rightarrow$ swap $a\leftrightarrow b$ | [`good_cut`](../../Riemann/Deep/LeanGale/Cert.lean#L151-L174) |
@@ -122,9 +126,11 @@ G_{\ge t}(X)=\big(X,\enspace \lbrace xy:\lVert x-y\rVert^2\ge t\rbrace\big):\qqu
 🎯 Two orthogonal simplices carry five point orbits.
 
 ```math
-\mathbb{R}^n=\mathbb{R}^{m_1}\oplus\mathbb{R}^{m_2},\enspace \enspace m_1=\lfloor n/2\rfloor,\enspace m_2=\lceil n/2\rceil;\qquad
+\begin{gathered}
+ℝ^n=ℝ^{m_1}\oplus ℝ^{m_2},\qquad m_1=\lfloor n/2\rfloor,\ \ m_2=\lceil n/2\rceil\\
 \langle u_i,u_k\rangle=\begin{cases}1&i=k\\-1/m_1&i\ne k\end{cases}\qquad
 \langle v_j,v_l\rangle=\begin{cases}1&j=l\\-1/m_2&j\ne l\end{cases}
+\end{gathered}
 ```
 
 | Orbit | Point | Count |
@@ -144,9 +150,9 @@ G_{\ge t}(X)=\big(X,\enspace \lbrace xy:\lVert x-y\rVert^2\ge t\rbrace\big):\qqu
 | # | Goal → fact | Lean |
 |---|---|---|
 | 3.1 | 🎯 Regular simplices exist in every dimension recursively.<br>$u^{(m+1)}_{m+1}=(0,\dots,0,-1)$, $u^{(m+1)}_j=\big(\alpha\thinspace u^{(m)}_j,\tfrac1{m+1}\big)$, $\alpha=\tfrac{\sqrt{m(m+2)}}{m+1}$ | [`splx`](../../Riemann/Deep/LeanGale/Splx.lean#L17-L21), [`splx_simplex_succ`](../../Riemann/Deep/LeanGale/Splx.lean#L43-L87), [`splx_simplex`](../../Riemann/Deep/LeanGale/Splx.lean#L89-L92) |
-| 3.2 | 🎯 Parameters are rationals with twelve decimal digits.<br>$r_A,\dots,f\in10^{-12}\mathbb{N}$: row $n$ of [family_params.txt](../../Riemann/Deep/Gale7/family_params.txt) | [`Params`](../../Riemann/Deep/LeanGale/Row.lean#L19-L32), [`prm`](../../Riemann/Deep/LeanGale/Row.lean#L55-L56), [`table`](../../Riemann/Deep/LeanGale/Family.lean#L99-L101), [`params`](../../Riemann/Deep/LeanGale/Family.lean#L127-L128) |
+| 3.2 | 🎯 Parameters are rationals with twelve decimal digits.<br>$r_A,\dots,f\in10^{-12}ℕ$: row $n$ of [family_params.txt](../../Riemann/Deep/Gale7/family_params.txt) | [`Params`](../../Riemann/Deep/LeanGale/Row.lean#L19-L32), [`prm`](../../Riemann/Deep/LeanGale/Row.lean#L55-L56), [`table`](../../Riemann/Deep/LeanGale/Family.lean#L99-L101), [`params`](../../Riemann/Deep/LeanGale/Family.lean#L127-L128) |
 | 3.3 | 🎯 Distinct labels give distinct points; count follows.<br>$\lvert V_n\rvert=p+q+3pq$ | [`famRow_injective`](../../Riemann/Deep/LeanGale/Row.lean#L209-L229), [`card_Vx'`](../../Riemann/Deep/LeanGale/Family.lean#L35-L55), [`card_famSet`](../../Riemann/Deep/LeanGale/Family.lean#L146-L153) |
-| 3.4 | 🎯 Reindexing places the direct sum inside ℝⁿ.<br>$\mathbb{R}^{m_1+m_2}\to\mathbb{R}^n$, coordinates kept | [`reidx`](../../Riemann/Deep/LeanGale/Main.lean#L162-L163), [`transport`](../../Riemann/Deep/LeanGale/Main.lean#L165-L176) |
+| 3.4 | 🎯 Reindexing places the direct sum inside ℝⁿ.<br>$ℝ^{m_1+m_2}\toℝ^n$, coordinates kept | [`reidx`](../../Riemann/Deep/LeanGale/Main.lean#L162-L163), [`transport`](../../Riemann/Deep/LeanGale/Main.lean#L165-L176) |
 
 </details>
 
@@ -155,8 +161,10 @@ G_{\ge t}(X)=\big(X,\enspace \lbrace xy:\lVert x-y\rVert^2\ge t\rbrace\big):\qqu
 🎯 Every squared distance is one exact rational.
 
 ```math
-\lVert x_v-x_w\rVert^2=\sum_{s=1,2}\Big(\kappa_s(v)^2+\kappa_s(w)^2-2\thinspace \kappa_s(v)\thinspace \kappa_s(w)\thinspace g_s\Big)=\mathrm{cls}\big(\mathrm{orb}\thinspace v,\enspace \mathrm{orb}\thinspace w,\enspace [i_v=i_w],\enspace [j_v=j_w]\big),\qquad
+\begin{gathered}
+\lVert x_v-x_w\rVert^2=\sum_{s=1,2}\Big(\kappa_s(v)^2+\kappa_s(w)^2-2\,\kappa_s(v)\,\kappa_s(w)\,g_s\Big)=\mathrm{cls}\big(\mathrm{orb}\,v,\ \mathrm{orb}\,w,\ [i_v=i_w],\ [j_v=j_w]\big)\\
 g_s=\begin{cases}1&\text{index } s \text{ of } v,w \text{ equal}\\-1/m_s&\text{else}\end{cases}
+\end{gathered}
 ```
 
 | | $P$ | $Q$ | $A$ | $B$ | $C$ |
@@ -180,11 +188,11 @@ g_s=\begin{cases}1&\text{index } s \text{ of } v,w \text{ equal}\\-1/m_s&\text{e
 |---|---|---|
 | 4.1 | 🎯 Direct sums add their squared distances blockwise.<br>$\lVert(x,y)-(x',y')\rVert^2=\lVert x-x'\rVert^2+\lVert y-y'\rVert^2$ | [`sqd_append`](../../Riemann/Deep/Gale7/Lean/Fam.lean#L73-L75) |
 | 4.2 | 🎯 Scaled simplex vectors expand by Gram matrix.<br>$\lVert\alpha u-\alpha'u'\rVert^2=\alpha^2\lVert u\rVert^2+\alpha'^2\lVert u'\rVert^2-2\alpha\alpha'\langle u,u'\rangle$ | [`sqd_smul`](../../Riemann/Deep/Gale7/Lean/Fam.lean#L77-L83), [`sqd_famPt`](../../Riemann/Deep/Gale7/Lean/Fam.lean#L85-L96) |
-| 4.3 | 🎯 Rational parameters give integer class values exactly.<br>$\mathrm{cls}=\mathrm{clsZ}/(m_1m_2\thinspace 10^{24})$, $\mathrm{clsZ}\in\mathbb{Z}$ | [`clsQ`](../../Riemann/Deep/Gale7/Lean/Desc.lean#L65-L71), [`clsZ`](../../Riemann/Deep/LeanGale/Row.lean#L50-L53), [`clsQ_eq`](../../Riemann/Deep/LeanGale/Row.lean#L66-L73), [`sqd_famRow`](../../Riemann/Deep/LeanGale/Row.lean#L132-L140) |
+| 4.3 | 🎯 Rational parameters give integer class values exactly.<br>$\mathrm{cls}=\mathrm{clsZ}/(m_1m_2\thinspace 10^{24})$, $\mathrm{clsZ}\inℤ$ | [`clsQ`](../../Riemann/Deep/Gale7/Lean/Desc.lean#L65-L71), [`clsZ`](../../Riemann/Deep/LeanGale/Row.lean#L50-L53), [`clsQ_eq`](../../Riemann/Deep/LeanGale/Row.lean#L66-L73), [`sqd_famRow`](../../Riemann/Deep/LeanGale/Row.lean#L132-L140) |
 | 4.4 | 🎯 Edges of H have computable descriptor classes.<br>$\mathrm{Adj}(v,w)\Rightarrow\mathrm{adjD}(\mathrm{desc}(v,w))$ | [`adjD`](../../Riemann/Deep/Gale7/Lean/Desc.lean#L73-L96), [`adj_adjD`](../../Riemann/Deep/Gale7/Lean/Desc.lean#L98-L103) |
 | 4.5 | 🎯 Integer inequality certifies the strict sigma gap.<br>$n$ even: $(n+1)D^2\lt (n+2)t$; $n$ odd: $D^2\lt 2t$, $(n-1)D^4\lt (n+3)(2t-D^2)^2$ | [`sigmaOK`](../../Riemann/Deep/LeanGale/Row.lean#L86-L89), [`sigma_sq_mul_lt`](../../Riemann/Deep/LeanGale/Row.lean#L142-L176) |
 | 4.6 | 🎯 Kernel evaluates all rows in twenty chunks.<br>20 × `rows_ok := by decide +kernel`, chained | [`Rows00.rows_ok`](../../Riemann/Deep/LeanGale/Data/Rows00.lean#L62), [`table_ok`](../../Riemann/Deep/LeanGale/Family.lean#L103-L123), [`chunkOK_getD`](../../Riemann/Deep/LeanGale/Row.lean#L114-L125), [`params_ok`](../../Riemann/Deep/LeanGale/Family.lean#L130-L132) |
-| 4.7 | 🎯 Accepted row yields bounded, long, gapped distances.<br>the three hypotheses of 1 | [`rowOK_facts`](../../Riemann/Deep/LeanGale/Family.lean#L57-L92) |
+| 4.7 | 🎯 Accepted row yields bounded, long, gapped distances.<br>(H1)–(H3) of 1 | [`rowOK_facts`](../../Riemann/Deep/LeanGale/Family.lean#L57-L92) |
 
 </details>
 
@@ -193,7 +201,10 @@ g_s=\begin{cases}1&\text{index } s \text{ of } v,w \text{ equal}\\-1/m_s&\text{e
 🎯 Fewer than $p+q$ colours force monochromatic edges.
 
 ```math
-V\big(H(p,q)\big)=\lbrace P_i,\thinspace Q_j,\thinspace A_{ij},\thinspace B_{ij},\thinspace C_{ij}:\enspace i\lt p,\enspace j\lt q\rbrace;\qquad c:V\big(H(p,q)\big)\to K\enspace \text{proper}\enspace \Longrightarrow\enspace \lvert K\rvert\ge p+q
+\begin{gathered}
+V\big(H(p,q)\big)=\lbrace P_i,\,Q_j,\,A_{ij},\,B_{ij},\,C_{ij}:\ i\lt p,\ j\lt q\rbrace\\
+c:V\big(H(p,q)\big)\to K\ \text{proper}\ \Longrightarrow\ \lvert K\rvert\ge p+q
+\end{gathered}
 ```
 
 | edge if | $P_k$ | $Q_l$ | $A_{kl}$ | $B_{kl}$ | $C_{kl}$ |
@@ -235,7 +246,10 @@ V\big(H(p,q)\big)=\lbrace P_i,\thinspace Q_j,\thinspace A_{ij},\thinspace B_{ij}
 🎯 Each H-edge maps to a long pair.
 
 ```math
-n+1\lt p+q\enspace \overset{5}{\Longrightarrow}\enspace \forall c\enspace \exists\thinspace  vw\in E(H):\enspace c(x_v)=c(x_w),\enspace \lVert x_v-x_w\rVert^2\overset{4}{\ge}t\enspace \overset{1}{\Longrightarrow}\enspace \sigma_n\mathrm{diam}\thinspace V_n\lt \beta_{n+1}(V_n)
+\begin{aligned}
+n+1\lt p+q\ &\overset{5}{\Longrightarrow}\ \forall c\ \exists\,vw\in E(H):\ c(x_v)=c(x_w),\ \lVert x_v-x_w\rVert^2\overset{4}{\ge}t\\
+&\overset{1}{\Longrightarrow}\ \sigma_n\,\mathrm{diam}\,V_n\lt\beta_{n+1}(V_n)
+\end{aligned}
 ```
 
 [`long_pair`](../../Riemann/Deep/Gale7/Lean/Crit.lean#L12-L20) → [`rowOK_facts`](../../Riemann/Deep/LeanGale/Family.lean#L57-L92) → [`famV_facts`](../../Riemann/Deep/LeanGale/Main.lean#L185-L200) → [`claim2`](../../Riemann/Deep/LeanGale/Main.lean#L202-L215)
@@ -245,7 +259,7 @@ n+1\lt p+q\enspace \overset{5}{\Longrightarrow}\enspace \forall c\enspace \exist
 | # | Goal → fact | Lean |
 |---|---|---|
 | 6.1 | 🎯 The colouring lemma applies with $n+1$ colours.<br>$n+2\le p+q$ | [`long_pair`](../../Riemann/Deep/Gale7/Lean/Crit.lean#L12-L20) |
-| 6.2 | 🎯 Row check supplies bounds, edge lengths, gap.<br>the three hypotheses of 1 for $V_n$ | [`rowOK_facts`](../../Riemann/Deep/LeanGale/Family.lean#L57-L92), [`params_ok`](../../Riemann/Deep/LeanGale/Family.lean#L130-L132) |
+| 6.2 | 🎯 Row check supplies bounds, edge lengths, gap.<br>(H1)–(H3) of 1 for $V_n$ | [`rowOK_facts`](../../Riemann/Deep/LeanGale/Family.lean#L57-L92), [`params_ok`](../../Riemann/Deep/LeanGale/Family.lean#L130-L132) |
 | 6.3 | 🎯 Transport to ℝⁿ, then apply the criterion.<br>$\sigma_n\mathrm{diam}\thinspace V_n\lt \beta_{n+1}(V_n)$ | [`transport`](../../Riemann/Deep/LeanGale/Main.lean#L165-L176), [`famV_facts`](../../Riemann/Deep/LeanGale/Main.lean#L185-L200) |
 | 6.4 | 🎯 Ratio form and partition form follow directly.<br>$\sigma_n\lt \beta_{n+1}/\mathrm{diam}\thinspace $; $\forall c\thinspace \exists k:\enspace \sigma_n\mathrm{diam}\thinspace V_n\lt \mathrm{diam}\thinspace (V_n\cap c^{-1}k)$ | [`sigma_lt_ratio`](../../Riemann/Deep/LeanGale/Main.lean#L43-L53), [`exists_part_gt`](../../Riemann/Deep/LeanGale/Gale.lean#L161-L165), [`claim2`](../../Riemann/Deep/LeanGale/Main.lean#L202-L215) |
 
@@ -278,10 +292,10 @@ n+1\lt p+q\enspace \overset{5}{\Longrightarrow}\enspace \forall c\enspace \exist
 
 | Claim | Statement | Lean |
 |---|---|---|
-| $\mathbb{R}^7$ | 84 points; $\beta_8/D=\sqrt{8900856812318928/10000000213244525}=0.9434435130\ldots\gt \sigma_7=0.9419651451\ldots$ | [`claim1_n7`](../../Riemann/Deep/LeanGale/Main.lean#L93-L124) |
-| $\mathbb{R}^8$ | 85 points; $\beta_9/D=\sqrt{9023994457279939/10000000157507010}=0.9499470677\ldots\gt \sigma_8=0.9486832981\ldots$ | [`claim1_n8`](../../Riemann/Deep/LeanGale/Main.lean#L137-L156) |
+| $ℝ^7$ | 84 points; $\beta_8/D=\sqrt{8900856812318928/10000000213244525}=0.9434435130\ldots\gt \sigma_7=0.9419651451\ldots$ | [`claim1_n7`](../../Riemann/Deep/LeanGale/Main.lean#L93-L124) |
+| $ℝ^8$ | 85 points; $\beta_9/D=\sqrt{9023994457279939/10000000157507010}=0.9499470677\ldots\gt \sigma_8=0.9486832981\ldots$ | [`claim1_n8`](../../Riemann/Deep/LeanGale/Main.lean#L137-L156) |
 | family | $\forall n\in[5,1000]$, all unit simplices: $\lvert V_n\rvert=p+q+3pq$, $\beta_{n+1}/D\gt \sigma_n$ | [`claim2`](../../Riemann/Deep/LeanGale/Main.lean#L202-L215) |
-| ball | $\forall n\ge3:\enspace \neg\thinspace \mathrm{Gale}_B(n)$, given $\beta_{n+1}(B^n)\le\sigma_n$ | [`gale_ball_fails`](../../Riemann/Deep/LeanGale/Main.lean#L283-L289) |
+| ball | $`\forall n\ge3:\ \neg\,\mathrm{Gale}_B(n)`$, given $`\beta_{n+1}(B^n)\le\sigma_n`$ | [`gale_ball_fails`](../../Riemann/Deep/LeanGale/Main.lean#L283-L289) |
 
 <details><summary>Level 2</summary>
 
