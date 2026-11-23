@@ -76,7 +76,7 @@ flowchart LR
 
 [`sigma_mul_diam_lt_beta`](../../Riemann/Deep/LeanGale/Gale.lean#L137-L155) → [`not_gale_of`](../../Riemann/Deep/LeanGale/Gale.lean#L157-L159)
 
-<details><summary>Level 2</summary>
+<details><summary>More detail</summary>
 
 | # | Goal → fact | Lean |
 |---|---|---|
@@ -107,7 +107,7 @@ G_{\ge t}(X)&=\big(X,\ \lbrace xy:\lVert x-y\rVert^2\ge t\rbrace\big)\\
 
 [`exists_mono`](../../Riemann/Deep/LeanGale/Cert.lean#L284-L306) → [`lower_of_cert`](../../Riemann/Deep/LeanGale/Pts.lean#L191-L201)
 
-<details><summary>Level 2</summary>
+<details><summary>More detail</summary>
 
 | # | Goal → fact | Lean |
 |---|---|---|
@@ -145,7 +145,7 @@ G_{\ge t}(X)&=\big(X,\ \lbrace xy:\lVert x-y\rVert^2\ge t\rbrace\big)\\
 
 [`famPt`](../../Riemann/Deep/Gale7/Lean/Fam.lean#L41-L47) · [`IsUnitSimplex`](../../Riemann/Deep/Gale7/Lean/Fam.lean#L31-L34) · [`famV`](../../Riemann/Deep/LeanGale/Main.lean#L178-L183) · figure data: [row n = 8](../../Riemann/Deep/LeanGale/Data/Rows00.lean#L14)
 
-<details><summary>Level 2</summary>
+<details><summary>More detail</summary>
 
 | # | Goal → fact | Lean |
 |---|---|---|
@@ -182,7 +182,7 @@ g_s=\begin{cases}1&\text{index } s \text{ of } v,w \text{ equal}\\-1/m_s&\text{e
 
 [`sqd_famPt`](../../Riemann/Deep/Gale7/Lean/Fam.lean#L85-L96)
 
-<details><summary>Level 2</summary>
+<details><summary>More detail</summary>
 
 | # | Goal → fact | Lean |
 |---|---|---|
@@ -217,7 +217,7 @@ c:V\big(H(p,q)\big)\to K\ \text{proper}\ \Longrightarrow\ \left\lvert K\right\rv
 
 [`Vx`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L19-L26) · [`Adj`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L32-L60) · [`card_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L435-L460) · [`not_colourable`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L464-L470)
 
-<details><summary>Level 2</summary>
+<details><summary>More detail</summary>
 
 | # | Goal → fact | Lean |
 |---|---|---|
@@ -227,9 +227,9 @@ c:V\big(H(p,q)\big)\to K\ \text{proper}\ \Longrightarrow\ \left\lvert K\right\rv
 | 5.4 | 🎯 Four disjoint colour types bound the palette.<br>types X, Y, XY, L (meets row block / column block / both / none): $\left\lvert K_X\right\rvert +\left\lvert K_Y\right\rvert +\left\lvert K_{XY}\right\rvert +\left\lvert K_L\right\rvert \le\left\lvert K\right\rvert $ | [`Kx`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L93-L94), [`Ky`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L95-L96), [`Kxy`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L97-L98), [`Kl`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L99-L100), [`card_split`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L116-L141) |
 | 5.5 | 🎯 Uncovered rows, columns each demand XY colours.<br>$R_0$ = rows without type-X colour: $p\le\left\lvert K_X\right\rvert +\left\lvert R_0\right\rvert $, $\left\lvert R_0\right\rvert \le\left\lvert K_{XY}\right\rvert $; columns alike | [`R0`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L101-L102), [`C0`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L103-L104), [`p_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L248-L263), [`q_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L265-L280), [`R0_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L282-L287), [`C0_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L289-L294) |
 | 5.6 | 🎯 Each L colour covers a single line.<br>$R_1,C_1$ = lines of L colours: $\left\lvert R_1\right\rvert +\left\lvert C_1\right\rvert \le\left\lvert K_L\right\rvert $ | [`rowsL`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L105-L107), [`colsL`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L108-L110), [`R1`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L111-L112), [`C1`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L113-L114), [`cover`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L157-L170), [`R1C1_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L314-L338) |
-| 5.7 | 🎯 Free cells exhaust XY colours; contradiction follows.<br>$a=\left\lvert R_0\setminus R_1\right\rvert $, $b=\left\lvert C_0\setminus C_1\right\rvert $; Level 3 | [`card_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L435-L460) |
+| 5.7 | 🎯 Free cells exhaust XY colours; contradiction follows.<br>$a=\left\lvert R_0\setminus R_1\right\rvert $, $b=\left\lvert C_0\setminus C_1\right\rvert $; see 5.7a–c | [`card_le`](../../Riemann/Deep/Gale7/Lean/Lemma.lean#L435-L460) |
 
-<details><summary>Level 3 · step 5.7</summary>
+<details><summary>More detail · step 5.7</summary>
 
 | # | Goal → fact | Lean |
 |---|---|---|
@@ -254,7 +254,7 @@ n+1\lt p+q\ &\overset{5}{\Longrightarrow}\ \forall c\ \exists\,vw\in E(H):\ c(x_
 
 [`long_pair`](../../Riemann/Deep/Gale7/Lean/Crit.lean#L12-L20) → [`rowOK_facts`](../../Riemann/Deep/LeanGale/Family.lean#L57-L92) → [`famV_facts`](../../Riemann/Deep/LeanGale/Main.lean#L185-L200) → [`claim2`](../../Riemann/Deep/LeanGale/Main.lean#L202-L215)
 
-<details><summary>Level 2</summary>
+<details><summary>More detail</summary>
 
 | # | Goal → fact | Lean |
 |---|---|---|
@@ -275,7 +275,7 @@ n+1\lt p+q\ &\overset{5}{\Longrightarrow}\ \forall c\ \exists\,vw\in E(H):\ c(x_
 | 5…1000 | 6, simplices from 3.1 | [`gale_fails_le_1000`](../../Riemann/Deep/LeanGale/Main.lean#L227-L236) |
 | > 1000 | Hinrichs set $S$ + $\sigma_n\lt 1$ | [`not_gale_of_borsuk`](../../Riemann/Deep/LeanGale/Main.lean#L249-L264), [`gale_fails`](../../Riemann/Deep/LeanGale/Main.lean#L266-L273) |
 
-<details><summary>Level 2</summary>
+<details><summary>More detail</summary>
 
 | # | Goal → fact | Lean |
 |---|---|---|
@@ -297,7 +297,7 @@ n+1\lt p+q\ &\overset{5}{\Longrightarrow}\ \forall c\ \exists\,vw\in E(H):\ c(x_
 | family | $\forall n\in[5,1000]$, all unit simplices: $\left\lvert V_n\right\rvert =p+q+3pq$, $\beta_{n+1}/D\gt \sigma_n$ | [`claim2`](../../Riemann/Deep/LeanGale/Main.lean#L202-L215) |
 | ball | $`\forall n\ge3:\ \neg\,\mathrm{Gale}_B(n)`$, given $`\beta_{n+1}(B^n)\le\sigma_n`$ | [`gale_ball_fails`](../../Riemann/Deep/LeanGale/Main.lean#L283-L289) |
 
-<details><summary>Level 2</summary>
+<details><summary>More detail</summary>
 
 | # | Goal → fact | Lean |
 |---|---|---|
