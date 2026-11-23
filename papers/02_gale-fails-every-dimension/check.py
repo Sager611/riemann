@@ -106,7 +106,7 @@ def main() -> int:
         m.groups() for m in LINK.finditer(text) if not m.group(2).startswith("http")
     ]
     errors = [e for e in (check_link(*g) for g in links) if e]
-    goals = re.findall(r"🎯 ([^|\n]+)", text)
+    goals = re.findall(r"🎯 ((?:(?!<br>)[^|\n])+)", text)
     errors += [
         f"goal not 7 words: {g.strip()}" for g in goals if len(g.split()) != GOAL_WORDS
     ]
