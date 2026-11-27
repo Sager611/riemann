@@ -154,3 +154,11 @@ R4, R5: VERDICT: CLEAR. Math: VERDICT: CORRECT. R1: §1's last sentence nests qu
 §1, after the Borsuk sentences, Adrian's wording verbatim with one factual fix: "Even for large n some sets cannot be split into n + 1 smaller diameter parts [6], in fact it was proven for all n > 322 [4], and then for a smaller n = 64 [5]. Recently, there has appeared a preprint from OpenAI for all n ≥ 9 [8, Cor. 7.1]." Factual fix: "there have appeared preprints" → "there has appeared a preprint": openai/math has one Borsuk preprint (item 156, cited as [8]; Riemann/Deep/Gale7/NOVELTY.md). Not reworded otherwise; reviewer flags on this paragraph are reported, not applied. Voronov [9]: all citations already in Gale contexts.
 
 Round-17 fixes: §1 "With our sets for n = 3, 4, the family for 5 ≤ n ≤ 1000 and Hinrichs's theorem [4] for n > 1000, the conjecture fails for every n ≥ 3 (Theorem 1)"; §5 Construction "…: the vertices of two regular simplices centred at 0; scaled by r_A and r_B (Table 2) they give the poles"; Lemma 2 "so they make up K₁₂". p-1, p-3, p-5 checked; no TeX warnings.
+
+### Round 18 (v18, final): six fresh reviewers
+
+R1, R2, R3, R4, R5: VERDICT: CLEAR, no [AUTHOR WORDING] flags on Adrian's paragraph. Math: VERDICT: CORRECT (incl. the facts in Adrian's paragraph). No open flags.
+
+### no-ai-slop detection mode on the final text (v18)
+
+Banned words 0; empty adverbs 0; empty phrases 0; binary contrasts 0; puffery 0; trailing -ing clauses 0; weasel attribution 0; recap endings 0; hedges 0. Em dashes: 1, the empty cell of Table 1. Colons followed by lowercase: 24, all introducing lists, definitions or glosses; one is in Adrian's Borsuk sentence ("not always enough: a ball …"). Visual check: every page re-rendered after each change; p-1, p-3, p-5 of v18 viewed, other pages unchanged since viewed.
