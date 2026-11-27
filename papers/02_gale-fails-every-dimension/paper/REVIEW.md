@@ -16,3 +16,27 @@ Reader reviewers: fresh `reviewer` subagents, role "average STEM reader (BSc eng
 | Citations | Crossref DOIs (Gale, Borsuk, Kahn–Kalai, Hinrichs, Jenrich–Brouwer, DRAT-trim, Lean 4, mathlib); Voronov TeX (Gale's conjecture, σₙ, β₂,₃ = √3/2, Problem) |
 
 ## Rounds
+
+### Round 1 (v1, 7 pages): six fresh reviewers
+
+Split: R1 §1–3, R2 §4–5 + Fig. 2, R3 §6, R4 §7–8 + references, R5 global order + slop detection, M mathematics. Flags: R1 31, R2 32, R3 31, R4 18, R5 49, M 7. Verdicts: none CLEAR.
+
+Fixed in v2:
+- Title without "hence" (R1.1). Abstract: equal-diameter comparison, n ≥ 9 marked unrefereed, how the family is proved (R1.3, R1.5, R1.6, R5.1, R5.3). Note names the two cited hypotheses (R1.7, R1.8).
+- §1: "smaller diameter than the set"; "cannot be lowered"; Fig. 1 caption states the lower bound with citations; why Hinrichs is used only above 1000; hand step vs exact arithmetic; X₃, X₄ provenance; shorter; "only n = 7, 8 open" tied to [8] (R1.9–14, R4.1, R4.3, R5.4–6, R5.11, M.6).
+- §2: partition before the formula, φ⁻¹(i) written out, infimum wording, scaling, regular simplex, facets, cones as rays, shared boundary points, σₙ is the value of one partition, "counterexample" defined as the stronger σ-condition (R1.15–23, R5.7–10).
+- Table 1: proof pointer, "points" column, V_n pointer, why X₇, X₈ are listed beside the family, lower bound vs exact ratio, blank cells explained (R1.24–31, R5.12).
+- §4: purpose first, s is a pairwise distance, odd-n condition explained (R2.1–2, R5.13–14).
+- §5: Idea paragraph before the construction; orthogonal blocks 3+4 and 4+4; regular simplex; 69/85 counts; statements about positions restricted to θ₇, θ₈; "between the directions"; cell defined, shared poles; coefficient example; counting rule for the 36 classes; files define X₇, X₈; X₇ history and objective; "diameter about 1"; proof: D² as maximum, where the colouring lives, symmetry breaking, CNF encoding incl. fixed 6-clique, H(5,5) ⊆ G≥s(X₈) (2170 edges, re-checked exactly); Table 4 next to Theorem 2 (R2.3–24, R5.15–25, M.3, M.4).
+- Fig. 2: panel headings, larger poles, dotted pole polygons, axes and labels in (b), duplicate highlighted points explained, block norms drop signs, X₈ norms 0.6166–0.6325 (R2.25–32, R5.26–28, M.2, M.5).
+- §6: θₙ source and search; Table 5 and Fig. 3 before Lemma 2; "and" in Table 5; Fig. 3 bands instead of lines, A₀₀/B₀₀/C₀₀ labelled, "colours mark types"; proof: colours per index, plan sentence, K = used colours, pairwise-to-line argument, meaning of g, h, |I₀| ≤ g + |I₁|, order of exclusions, distinctness reason, |K₁₂| = h, identification of the colour of B, explicit h = 1 symmetry; Theorem 3 wording; hand vs computer; 17 classes explained; gaps "about" 2.898·10⁻⁷ / 1.433·10⁻³; 0.29/n² an observation; n = 3, 4 with ≈ (R3.1–31, R5.29–43, M.1).
+- §7: exact ratios and certificates for X₃, X₄; Borsuk ⇒ Gale argued via "every partition has largest part diam S", no infimum step (R4.1–4, R5.44–45).
+- §8: Lean and Mathlib explained; σ-form vs ball form; hypotheses; sorry, axioms and kernel explained; Mathlib revision; separate table rows; Lemma 2 lower bound; data paragraph with pinned commit (R4.5–15, R5.46–49).
+- References: OpenAI preprint path, venue names expanded, LNCS 8561 (R4.16–18).
+- Layout: 10 pt; 6 pages plus references.
+
+Not changed:
+- R1.2 author line: the brief prescribes "github.com/Sager611/riemann", no personal names.
+- R2.11, R3.25, R5.19, R5.41 list of all 36 classes: a one-sentence counting rule instead; the list is in family.py.
+- R2.14 which 15 points were copied: discovery history; X₇ is defined by its file.
+- M.7 details the reviewer could not verify: verified here (max displacement 0.1757; 18887 certificate tokens, P7; timings from today's verify.py runs; lean-toolchain; PROOF.md).

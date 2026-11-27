@@ -1,5 +1,5 @@
-\documentclass[11pt,a4paper]{article}
-\usepackage[margin=2.4cm]{geometry}
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=2.7cm]{geometry}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{graphicx}
 \usepackage{booktabs}
@@ -15,14 +15,18 @@
 \newcommand{\R}{\mathbb R}
 \newcommand{\Z}{\mathbb Z}
 \DeclareMathOperator{\diam}{diam}
-\newcommand{\repo}{https://github.com/Sager611/riemann/blob/main/}
+\newcommand{\repo}{https://github.com/Sager611/riemann/blob/a85a25ee1578748e7fa014f51dd762a6195fe923/}
 \newcommand{\lean}[2]{\href{\repo #2}{\texttt{#1}}}
+\newcommand{\file}[2]{\href{\repo #2}{\texttt{#1}}}
 \newcommand{\RB}{\mathcal A}
 \newcommand{\CB}{\mathcal B}
 \setlength{\abovecaptionskip}{4pt}
 \captionsetup[table]{skip=3pt}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.8}
 
-\title{Gale's conjecture fails in dimensions 7 and 8,\\ hence in every dimension $n\ge 3$}
+\title{Gale's conjecture fails in every dimension $n\ge 3$}
 \author{\href{https://github.com/Sager611/riemann}{github.com/Sager611/riemann}}
 \date{November 2026}
 
@@ -30,9 +34,9 @@
 \maketitle
 
 \begin{abstract}
-\noindent Gale (1953) conjectured that the ball is the hardest bounded set in $\R^n$ to split into $n+1$ parts of small diameter. Counterexamples were known for $n=3,\dots,6$ and $n\ge 9$. We give finite counterexamples in $\R^7$ (84 points) and $\R^8$ (85 points), and a family, built from two regular simplices in orthogonal subspaces, that is a counterexample in every dimension $5\le n\le 1000$, with a proof that needs no search over colourings. Hence Gale's conjecture fails in every dimension $n\ge 3$.
+\noindent Gale (1953) conjectured that, among bounded sets in $\R^n$ of equal diameter, the ball is the hardest to split into $n+1$ parts of small diameter. Counterexamples were known for $n=3,\dots,6$ and, via Borsuk's problem, for $n>322$ ($n\ge 9$ by an unrefereed preprint). We give finite counterexamples in $\R^7$ (84 points) and $\R^8$ (85 points), and a family built from two regular simplices in orthogonal subspaces that is a counterexample for every $5\le n\le 1000$, proved by a colouring argument by hand and exact arithmetic. Hence Gale's conjecture fails in every dimension $n\ge 3$.
 
-\smallskip\noindent\emph{Note.} The results were found and checked with AI agents, with computer certificates and a Lean~4/Mathlib formalization (\S\ref{sec:lean}); this paper has not been peer reviewed.
+\smallskip\noindent\emph{Note.} We found and checked these results with AI agents, using computer certificates and a Lean~4/Mathlib formalization with two cited facts as hypotheses (\S\ref{sec:lean}); the paper has not been peer reviewed.
 \end{abstract}
 
 \section{Motivation}
@@ -42,69 +46,65 @@
 \centering
 \includegraphics[width=0.22\textwidth]{figs/disk.pdf}
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{A disk of diameter $D$ cut into three $120^\circ$ sectors, each of diameter $\frac{\sqrt3}{2}D$ (chord). No split into 3 parts does better~\cite{Ga53}.}
+\caption{A disk of diameter $D$ cut into three $120^\circ$ sectors, each of diameter $\frac{\sqrt3}{2}D$ (the chord). Every split of the disk into 3 parts has a part of diameter $\ge\frac{\sqrt3}{2}D$~\cite{Ga53,Vo26}.}
 \label{fig:disk}
 \vspace{-10pt}
 \end{wrapfigure}
 
-Borsuk asked in 1933 whether every bounded set in $\R^n$ splits into $n+1$ parts of smaller diameter; the ball shows that $n$ parts are not enough~\cite{Bo33}. Kahn and Kalai showed that the answer is no for large $n$~\cite{KK93}, and Hinrichs for every $n>322$~\cite{Hi02}. The lowest dimension with a known counterexample is 64~\cite{JB14}, or 9 in an unrefereed preprint~\cite{OAI26}.
+Borsuk asked in 1933 whether every bounded set in $\R^n$ splits into $n+1$ parts of smaller diameter than the set; a ball cannot be split into $n$ such parts~\cite{Bo33}. The answer is no for large $n$~\cite{KK93}, in fact for every $n>322$~\cite{Hi02}; the lowest dimension of a known counterexample is 64~\cite{JB14}, or 9 by an unrefereed preprint that covers every $n\ge 9$~\cite[Cor.~7.1]{OAI26}.
 
-Gale asked how small the $n+1$ parts can be~\cite{Ga53}. A set of diameter $D$ on a line splits into two parts of diameter at most $D/2$, and a planar set into three parts of diameter at most $\frac{\sqrt3}{2}D$; a segment and a disk (Fig.~\ref{fig:disk}) show that both bounds are sharp~\cite{Ga53}. Gale conjectured that in every dimension the ball is the hardest set to split (\S\ref{sec:def} states this precisely).
+Gale asked how much smaller the parts can be~\cite{Ga53}. A set of diameter $D$ splits into two parts of diameter at most $D/2$ on a line, and into three parts of diameter at most $\frac{\sqrt3}{2}D$ in the plane~\cite{Ga53}; a segment and a disk (Fig.~\ref{fig:disk}) show that these bounds cannot be lowered. Gale conjectured that in every dimension the ball is the hardest set to split (\S\ref{sec:def}).
 
-Before this paper the conjecture was known to fail for $n=3,\dots,6$, by point sets found by computer search~\cite{Vo26}, and in every dimension in which Borsuk's conjecture fails (\S\ref{sec:all}). Dimensions 7 and 8 were open. Voronov asked for counterexamples in every dimension $n\ge 3$, described geometrically and proved without enumerating graph colourings~\cite{Vo26}.
-
-We give finite counterexamples in $\R^7$ and $\R^8$ (Theorem~\ref{thm:x78}, Fig.~\ref{fig:sets}) and one family that is a counterexample in every dimension $5\le n\le 1000$, with a proof by hand of its combinatorial step (Theorem~\ref{thm:family}); this answers Voronov's question for these $n$. With our earlier sets for $n=3,4$ and Hinrichs's sets for $n>1000$, Gale's conjecture fails in every dimension $n\ge 3$ (Theorem~\ref{thm:main}).
+Before this paper the conjecture was known to fail for $n=3,\dots,6$, by point sets found by computer search~\cite{Vo26}, and wherever Borsuk's conjecture fails (\S\ref{sec:all}); with~\cite{OAI26}, only $n=7,8$ were open. Voronov asked for counterexamples in every dimension $n\ge 3$, described geometrically and proved without enumerating graph colourings~\cite{Vo26}. We give counterexamples in $\R^7$ and $\R^8$ (Theorem~\ref{thm:x78}) and a family for $5\le n\le 1000$ whose colouring step is proved by hand (Theorem~\ref{thm:family}), which answers Voronov's question for these $n$; with our sets for $n=3,4$ and Hinrichs's theorem for $n>1000$, the conjecture fails for every $n\ge 3$ (Theorem~\ref{thm:main}).
 
 \section{Definitions}\label{sec:def}
 
-For bounded $V\subset\R^n$ and integers $k\ge 1$, with $\|\cdot\|$ the Euclidean norm and $[k]=\{1,\dots,k\}$:
+A \emph{partition} of a set $V$ into $k$ parts is a map $\varphi:V\to[k]=\{1,\dots,k\}$, with parts $\varphi^{-1}(i)=\{x\in V:\varphi(x)=i\}$, possibly empty; we also call $\varphi$ a \emph{$k$-colouring} and $\varphi(x)$ the \emph{colour} of $x$. For bounded $V\subset\R^n$, with $\|\cdot\|$ the Euclidean norm,
 \[
-\diam V=\sup_{x,y\in V}\|x-y\|,\qquad
-\beta_k(V)=\inf_{\varphi:\,V\to[k]}\ \max_{i\in[k]}\ \diam \varphi^{-1}(i).
+\diam V=\sup_{x,y\in V}\|x-y\|\ \ (\diam\emptyset=0),\qquad
+\beta_k(V)=\inf_{\varphi:\,V\to[k]}\ \max_{i\in[k]}\ \diam \varphi^{-1}(i):
 \]
-A map $\varphi:V\to[k]$ is a \emph{partition} of $V$ into the $k$ parts $\varphi^{-1}(1),\dots,\varphi^{-1}(k)$ (empty parts allowed, $\diam\emptyset=0$); we also call $\varphi$ a \emph{$k$-colouring} and $\varphi(x)$ the \emph{colour} of $x$. So $\beta_k(V)$ is the least possible largest part diameter.
+the infimum, over partitions, of the largest part diameter (a minimum if $V$ is finite). Scaling $V$ by $t>0$ scales both by $t$.
 
-Let $B^n$ be the closed ball of diameter 1 centred at $0$. The cones $\{\lambda y:\lambda\ge0,\ y\in F\}$ over the $n+1$ facets $F$ of a regular simplex inscribed in $B^n$ cut $B^n$ into $n+1$ congruent parts of diameter~\cite[\S1]{Vo26}
+Let $B^n$ be the closed ball of diameter 1 centred at $0$. A \emph{regular simplex} in $\R^n$ is a set of $n+1$ points at equal pairwise distances (an equilateral triangle in $\R^2$, a regular tetrahedron in $\R^3$). Put one with its vertices on the boundary of $B^n$. The $n+1$ cones $\{\lambda y:\lambda\ge0,\ y\in F\}$ over its \emph{facets} $F$ (the faces opposite the vertices) cut $B^n$ into $n+1$ congruent parts, the sectors of Fig.~\ref{fig:disk} for $n=2$; shared boundary points go to either part. Each part has diameter~\cite[\S1]{Vo26}
 \begin{equation}\label{eq:sigma}
 \sigma_n=\sqrt{\frac{n+1}{n+2}}\ \ (n\text{ even}),\qquad
 \sigma_n=\sqrt{\frac12+\frac12\sqrt{\frac{n-1}{n+3}}}\ \ (n\text{ odd}),\qquad n\ge 2,
 \end{equation}
-so $\beta_{n+1}(B^n)\le\sigma_n$, with equality for $n=2,3$~\cite{Vo26}. For example $\sigma_2=\frac{\sqrt3}{2}$ (Fig.~\ref{fig:disk}), $\sigma_7=0.9419651451\ldots$ and $\sigma_8=0.9486832980\ldots$
+so $\beta_{n+1}(B^n)\le\sigma_n$, with equality known only for $n=2,3$~\cite{Vo26}. For example $\sigma_2=\frac{\sqrt3}{2}$, $\sigma_7=0.9419651451\ldots$, $\sigma_8=0.9486832980\ldots$
 
 \smallskip
-\noindent\textbf{Gale's conjecture in $\R^n$~\cite{Ga53,Vo26}.} Every bounded $V\subset\R^n$ satisfies $\beta_{n+1}(V)\le\beta_{n+1}(B^n)\diam V$.
+\noindent\textbf{Gale's conjecture in $\R^n$~\cite{Ga53,Vo26}.} Every bounded $V\subset\R^n$ satisfies $\beta_{n+1}(V)\le\beta_{n+1}(B^n)\diam V$; the right side is $\beta_{n+1}$ of a ball with the diameter of $V$.
 
 \smallskip
-\noindent A \emph{counterexample} in $\R^n$ is a bounded $V\subset\R^n$ with $\beta_{n+1}(V)>\sigma_n\diam V$. Since $\beta_{n+1}(B^n)\le\sigma_n$, it refutes Gale's conjecture in $\R^n$.
+\noindent In this paper a \emph{counterexample} in $\R^n$ is a bounded $V\subset\R^n$ with $\beta_{n+1}(V)>\sigma_n\diam V$. This is stronger than violating Gale's conjecture and implies it, because $\beta_{n+1}(B^n)\le\sigma_n$.
 
 \section{Main result}\label{sec:main}
 
 \begin{theorem}\label{thm:main}
-For every $n\ge 3$ there is a counterexample in $\R^n$; for $n\le 1000$ it is an explicit finite set. Hence Gale's conjecture fails in every dimension $n\ge 3$.
+For every $n\ge 3$ there is a counterexample in $\R^n$; for $n\le 1000$ it is a finite set with given coordinates or parameters (Table~\ref{tab:main}). Hence Gale's conjecture fails in every dimension $n\ge 3$. \textup{(Proof in \S\ref{sec:all}.)}
 \end{theorem}
 
-\begin{table}[h]
-\centering\small
-\caption{The counterexamples $X$ of Theorem~\ref{thm:main}. All rows with $n\le1000$ are also proved in Lean (\S\ref{sec:lean}).}
-\label{tab:main}
+\begin{center}\small
+\captionof{table}{The counterexamples $X$ of Theorem~\ref{thm:main}. For $X_3,\dots,X_8$ an explicit partition also bounds $\beta_{n+1}(X)$ from above, so the ratio is exact; $X_7$, $X_8$ are listed besides $V_7$, $V_8$ for their exact rational data. Rows with $n\le1000$ are also proved in Lean (\S\ref{sec:lean}).}\label{tab:main}
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{@{}llrlll@{}}
 \toprule
-$n$ & $X$ & $|X|$ & $\beta_{n+1}(X)/\diam X$ & $\sigma_n$ & certified by\\
+$n$ & $X$ & points & $\beta_{n+1}(X)/\diam X$ & $\sigma_n$ & lower bound by\\
 \midrule
-3 & $X_3$ & 170 & $0.8906210556\ldots$ & $0.8880738339\ldots$ & computer search, \S\ref{sec:all}\\
-4 & $X_4$ & 126 & $0.9164673596\ldots$ & $0.9128709291\ldots$ & computer search, \S\ref{sec:all}\\
-7 & $X_7$ & 84 & $0.9434435130\ldots$ & $0.9419651451\ldots$ & computer search, \S\ref{sec:sets}\\
-8 & $X_8$ & 85 & $0.9499470677\ldots$ & $0.9486832980\ldots$ & colouring lemma, \S\ref{sec:family}\\
-$5,\dots,1000$ & $V_n(\theta_n)$ & 43 to 754005 & $>\sigma_n$ & & colouring lemma, \S\ref{sec:family}\\
-$>1000$ & Hinrichs's set~\cite{Hi02} & & $1$ & $<1$ & citation, \S\ref{sec:all}\\
+3 & $X_3$ & 170 & $0.8906210556\ldots$ & $0.8880738339\ldots$ & search, \S\ref{sec:all}\\
+4 & $X_4$ & 126 & $0.9164673596\ldots$ & $0.9128709291\ldots$ & search, \S\ref{sec:all}\\
+7 & $X_7$ & 84 & $0.9434435130\ldots$ & $0.9419651451\ldots$ & search, \S\ref{sec:sets}\\
+8 & $X_8$ & 85 & $0.9499470677\ldots$ & $0.9486832980\ldots$ & Lemma~\ref{lem:colour}, \S\ref{sec:sets}\\
+$5,\dots,1000$ & $V_n(\theta_n)$, \S\ref{sec:family} & 43 to 754\,005 & $>\sigma_n$ & by \eqref{eq:sigma} & Lemma~\ref{lem:colour}, \S\ref{sec:family}\\
+$>1000$ & Hinrichs's set~\cite{Hi02} & --- & $1$ & $<1$ & citation, \S\ref{sec:all}\\
 \bottomrule
 \end{tabular}
-\end{table}
+\end{center}
 
 \section{A finite criterion}\label{sec:crit}
 
-For finite $X\subset\R^n$ and $s>0$ let $G_{\ge s}(X)$ and $G_{>s}(X)$ be the graphs on the vertex set $X$ in which $x\ne y$ are adjacent when $\|x-y\|\ge s$, respectively $\|x-y\|>s$. A colouring of a graph is \emph{proper} if adjacent vertices get different colours; the \emph{chromatic number} $\chi(G)$ is the least $k$ for which $G$ has a proper $k$-colouring.
+To bound $\beta_k(X)$ from below, join every two points that are too far apart to share a part; partitions with small parts then become proper colourings. For finite $X\subset\R^n$ and $s>0$ let $G_{\ge s}(X)$ and $G_{>s}(X)$ be the graphs on the vertex set $X$ in which $x\ne y$ are adjacent when $\|x-y\|\ge s$, respectively $\|x-y\|>s$. A colouring of a graph gives each vertex a colour from a finite set; it is \emph{proper} if adjacent vertices get different colours. The \emph{chromatic number} $\chi(G)$ is the least number of colours of a proper colouring.
 
 \begin{lemma}\label{lem:crit}
 Let $X\subset\R^n$ be finite, $k\ge 1$ and $s>0$. Then
@@ -116,23 +116,25 @@ Let $X\subset\R^n$ be finite, $k\ge 1$ and $s>0$. Then
 A $k$-colouring $\varphi$ of $X$ has a part of diameter $\ge s$ if and only if two points $x\ne y$ with $\varphi(x)=\varphi(y)$ have $\|x-y\|\ge s$, that is, if and only if $\varphi$ is not proper on $G_{\ge s}(X)$. Applying this to every $\varphi$ gives (a). For (b): $X$ is finite, so the infimum defining $\beta_k(X)$ is attained, and a $\varphi$ whose parts all have diameter $\le s$ is the same as a proper colouring of $G_{>s}(X)$.
 \end{proof}
 
-So $\beta_k(X)=s$ has a certificate in two parts: a proof that $G_{\ge s}(X)$ has no proper $k$-colouring, and one proper $k$-colouring of $G_{>s}(X)$. Our sets $X_3$, $X_4$, $X_7$, $X_8$ have coordinates in $10^{-8}\Z$, so every squared distance is an integer multiple of $10^{-16}$. With $D=\diam X$, the inequality $s>\sigma_n D$ is, by~\eqref{eq:sigma}, equivalent to a test on these integers:
+So $\beta_k(X)=s$ has a certificate in two parts: a proof that $G_{\ge s}(X)$ has no proper $k$-colouring, and one proper $k$-colouring of $G_{>s}(X)$. Our sets $X_3$, $X_4$, $X_7$, $X_8$ have coordinates in $10^{-8}\Z$, so all squared distances are integer multiples of $10^{-16}$. For $D=\diam X$ and $s$ a distance between two points of $X$, the inequality $s>\sigma_nD$ is then, by~\eqref{eq:sigma}, a test on integers ($D^2<2s^2$ makes $2s^2-D^2$ positive before squaring):
 \begin{equation}\label{eq:test}
 (n+1)D^2<(n+2)s^2\ \ (n\text{ even});\qquad D^2<2s^2\ \text{ and }\ (n-1)D^4<(n+3)(2s^2-D^2)^2\ \ (n\text{ odd}).
 \end{equation}
 
 \section{The sets $X_7$ and $X_8$}\label{sec:sets}
 
-Both sets come from one construction. Write $\R^n=\R^{m_1}\oplus\R^{m_2}$ and $x=(x',x'')$, with $m_1=\lfloor n/2\rfloor$, $m_2=\lceil n/2\rceil$. Let $p=m_1+1$, $q=m_2+1$, $I=\{0,\dots,m_1\}$, $J=\{0,\dots,m_2\}$, and fix unit vectors $u_i\in\R^{m_1}$ ($i\in I$) and $v_j\in\R^{m_2}$ ($j\in J$) with
+\noindent\textbf{Idea.} Take two regular simplices with edge length 1 in orthogonal subspaces. Their $n+2$ vertices, the \emph{poles}, are at distance 1 within a simplex and about $0.89$ across. A partition into parts of diameter less than 1 puts the poles of each simplex into different parts, so with $n+1$ parts some part contains one pole of each simplex. We add points near the poles so that every such sharing forces a part of diameter about $0.95$ (\S\ref{sec:family}).
+
+\smallskip
+\noindent\textbf{Construction.} Split $\R^n=\R^{m_1}\oplus\R^{m_2}$, $x=(x',x'')$, into the first $m_1=\lfloor n/2\rfloor$ and the last $m_2=\lceil n/2\rceil$ coordinates, two orthogonal subspaces ($3+4$ for $n=7$, $4+4$ for $n=8$). Let $p=m_1+1$, $q=m_2+1$, $I=\{0,\dots,m_1\}$, $J=\{0,\dots,m_2\}$, and fix unit vectors $u_i\in\R^{m_1}$ ($i\in I$) and $v_j\in\R^{m_2}$ ($j\in J$) with
 \[
 \langle u_i,u_{i'}\rangle=-\tfrac{1}{m_1}\ \ (i\ne i'),\qquad \langle v_j,v_{j'}\rangle=-\tfrac{1}{m_2}\ \ (j\ne j'):
 \]
-the vertices of two regular simplices centred at $0$. For parameters $\theta=(r_A,r_B,a,b,c,d,e,f)$, all positive, the set $V_n(\theta)$ consists of the following $p+q+3pq$ points of five types.
+the vertices of two regular simplices centred at $0$. For positive parameters $\theta=(r_A,r_B,a,b,c,d,e,f)$ the set $V_n(\theta)$ consists of the $p+q+3pq$ points of Table~\ref{tab:construction}: 69 points for $n=7$, 85 for $n=8$.
 
-\begin{table}[h]
-\centering\small
+\begin{center}\small
 \begin{minipage}[t]{0.42\textwidth}\centering
-\caption{The points of $V_n(\theta)$, $i\in I$, $j\in J$.}\label{tab:construction}
+\captionof{table}{The points of $V_n(\theta)$; $i\in I$, $j\in J$.}\label{tab:construction}
 \begin{tabular}{@{}lccr@{}}
 \toprule
 point & $x'$ & $x''$ & number\\
@@ -146,7 +148,7 @@ $C_{ij}$ & $e\,u_i$ & $f\,v_j$ & $pq$\\
 \end{tabular}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.53\textwidth}\centering
-\caption{The parameters $\theta_7$, $\theta_8$, rounded; exact 12-decimal values in \href{\repo Riemann/Deep/Gale7/family_params.txt}{\texttt{family\_params.txt}}.}\label{tab:params}
+\captionof{table}{The parameters $\theta_7$, $\theta_8$, rounded; exact 12-decimal values in \file{family\_params.txt}{Riemann/Deep/Gale7/family_params.txt}.}\label{tab:params}
 \setlength{\tabcolsep}{3.2pt}
 \begin{tabular}{@{}lcccccccc@{}}
 \toprule
@@ -157,25 +159,25 @@ $n$ & $r_A$ & $r_B$ & $a$ & $b$ & $c$ & $d$ & $e$ & $f$\\
 \bottomrule
 \end{tabular}
 \end{minipage}
-\end{table}
+\end{center}
 
-$P_i$ and $Q_j$, the \emph{poles}, are the vertices of the two simplices, scaled by $r_A$ and $r_B$; $A_{ij}$ lies near $P_i$ and $B_{ij}$ near $Q_j$; $C_{ij}$ lies between $P_i$ and $Q_j$. The five points $P_i$, $A_{ij}$, $C_{ij}$, $Q_j$, $B_{ij}$ of \emph{cell} $(i,j)$ lie in the plane spanned by $(u_i,0)$ and $(0,v_j)$ (Fig.~\ref{fig:sets}b). For scalars $\lambda_1$, $\lambda_2$, $\mu_1$, $\mu_2$,
+For $\theta_7$ and $\theta_8$, $r_A$ and $r_B$ give the two simplices edge length 1 (to 12 decimals), $A_{ij}$ lies near $P_i$, $B_{ij}$ near $Q_j$, and $C_{ij}$ between the directions of $P_i$ and $Q_j$. \emph{Cell} $(i,j)$ consists of $P_i$, $A_{ij}$, $C_{ij}$, $Q_j$, $B_{ij}$, all in the plane spanned by $(u_i,0)$ and $(0,v_j)$ (Fig.~\ref{fig:sets}b); $P_i$ belongs to every cell of row $i$, and $Q_j$ to every cell of column $j$. If two points have coefficients $(\lambda_1,\lambda_2)$ and $(\mu_1,\mu_2)$ in Table~\ref{tab:construction}, for example $(a,-b)$ for $A_{ij}$, then
 \begin{equation}\label{eq:dist}
 \begin{split}
 \big\|(\lambda_1 u_i,\lambda_2 v_j)-(\mu_1 u_{i'},\mu_2 v_{j'})\big\|^2
 ={}&\lambda_1^2+\mu_1^2-2\lambda_1\mu_1\langle u_i,u_{i'}\rangle\\
-&+\lambda_2^2+\mu_2^2-2\lambda_2\mu_2\langle v_j,v_{j'}\rangle,
+&+\lambda_2^2+\mu_2^2-2\lambda_2\mu_2\langle v_j,v_{j'}\rangle.
 \end{split}
 \end{equation}
-so a squared distance in $V_n(\theta)$ depends only on the two types and on whether $i=i'$ and whether $j=j'$. There are 36 such \emph{distance classes}, each a quadratic polynomial in $\theta$, and rational for rational $\theta$.
+So a squared distance depends only on the two types and on whether $i=i'$ and whether $j=j'$ (for the indices both points carry). These \emph{distance classes} number 36: one each for $P$--$P$, $Q$--$Q$, $P$--$Q$; two each for a pole with $A$, $B$ or $C$; three each for $A$--$A$, $B$--$B$, $C$--$C$; four each for $A$--$B$, $A$--$C$, $B$--$C$. Each class is a quadratic polynomial in $\theta$, rational for rational $\theta$.
 
 \smallskip
-\noindent\textbf{The sets.} $X_8$ is $V_8(\theta_8)$ with coordinates rounded to 8 decimals (85 points, \href{\repo Riemann/Deep/Gale7/points8.txt}{\texttt{points8.txt}}). $X_7$ has 84 points (\href{\repo Riemann/Deep/Gale7/points7.txt}{\texttt{points7.txt}}): we added near-copies of 15 points to $V_7(\theta_7)$ (69 points) and optimized all coordinates numerically; every point of $X_7$ lies within $0.18$ of a point of $V_7(\theta_7)$. Both sets have diameter $1.0000000\ldots$
+\noindent\textbf{The sets.} $X_8$ is defined by the file \file{points8.txt}{Riemann/Deep/Gale7/points8.txt}: the 85 points of $V_8(\theta_8)$, for one choice of the simplex vectors, rounded to 8 decimals. $X_7$ is defined by \file{points7.txt}{Riemann/Deep/Gale7/points7.txt} (84 points). We obtained it from $V_7(\theta_7)$, itself a counterexample (Theorem~\ref{thm:family}), by adding shifted copies of 15 points and running a local numerical search that increased $\beta_8/\diam$; every point of $X_7$ lies within $0.18$ of a point of $V_7(\theta_7)$. Both sets have diameter about 1 (exact squares in Theorem~\ref{thm:x78}).
 
-\begin{figure}[t]
+\begin{figure}[!t]
 \centering
 \includegraphics[width=\textwidth]{figs/sets.pdf}
-\caption{$X_7$ (top, 84 points in $\R^7$) and $X_8$ (bottom, 85 points in $\R^8$) in three views; $x=(x',x'')\in\R^{m_1}\oplus\R^{m_2}$. Marker: the type of the point (for $X_7$: of the nearest point of $V_7(\theta_7)$). (a)~$x\mapsto\cos\alpha\,\Pi'x'+\sin\alpha\,\Pi''x''$, where $\Pi':\R^{m_1}\to\R^2$ and $\Pi'':\R^{m_2}\to\R^2$ are orthogonal projections that map the $u_i$ and the $v_j$ to regular polygons; $\alpha=50^\circ$ ($n=7$), $45^\circ$ ($n=8$). The $P_i$ form a square ($n=7$) or a pentagon ($n=8$), the $Q_j$ a pentagon; the $A_{ij}$ surround $P_i$, the $B_{ij}$ surround $Q_j$. (b)~$x\mapsto(\langle x',u_0\rangle,\langle x'',v_0\rangle)$, the plane of cell $(0,0)$ (large markers). Lines ($X_8$): the pairs $P_0B_{00}$ and $Q_0A_{00}$, both at distance $\ge s$ (Theorem~\ref{thm:x78}). (c)~$x\mapsto(\|x'\|,\|x''\|)$; in $X_8$ each type is a single point, labelled with its coordinates. Dotted arcs: radius $0.62$; every point of $X_8$ has norm $0.617$ to $0.633$.}
+\caption{$X_7$ (top) and $X_8$ (bottom) in three plane views of $x=(x',x'')\in\R^{m_1}\oplus\R^{m_2}$; projections shorten distances. Marker: point type ($X_7$: type of the nearest point of $V_7(\theta_7)$). (a)~$x\mapsto\cos\alpha\,\Pi'x'+\sin\alpha\,\Pi''x''$ ($\alpha=50^\circ$, $45^\circ$), with orthogonal projections $\Pi'$, $\Pi''$ to $\R^2$ that map the $u_i$ and the $v_j$ to regular polygons; dotted: the pole polygons of $V_n(\theta_n)$. The $A_{ij}$ surround $P_i$, the $B_{ij}$ surround $Q_j$. (b)~$x\mapsto(\langle x',u_0\rangle,\langle x'',v_0\rangle)$, the plane of cell $(0,0)$ (large markers; $X_7$ has two points each nearest to $A_{00}$ and $B_{00}$). Lines: the pairs $P_0B_{00}$, $Q_0A_{00}$ of $X_8$, at distance $\ge s$ (Theorem~\ref{thm:x78}). (c)~$x\mapsto(\|x'\|,\|x''\|)$, signs dropped; in $X_8$ each type is one dot at this resolution, labelled by its parameters. Dashed: radius $0.62$; $X_8$ has norms $0.6166$ to $0.6325$.}
 \label{fig:sets}
 \end{figure}
 
@@ -186,14 +188,8 @@ so a squared distance in $V_n(\theta)$ depends only on the two types and on whet
 \end{align*}
 \end{theorem}
 
-\begin{proof}
-In each fraction the numerator is $10^{16}s^2$ and the denominator $10^{16}D^2$, where $D=\diam X$ and $s$ is the claimed value of $\beta_{n+1}(X)$. By Lemma~\ref{lem:crit} we need three facts: (i)~$G_{\ge s}(X)$ has no proper $(n+1)$-colouring; (ii)~$G_{>s}(X)$ has one; (iii)~the test~\eqref{eq:test}. Table~\ref{tab:cert} lists the checks. (ii) is an explicit colouring, checked edge by edge, and (iii) is integer arithmetic. (i) is checked three ways: by two exhaustive backtracking searches with different symmetry breaking; by a DRAT proof~\cite{WHH14}, a certificate, checked by the program \texttt{drat-trim}, that the Boolean formula ``$G_{\ge s}(X)$ has a proper $(n+1)$-colouring'' is unsatisfiable; and in Lean (\S\ref{sec:lean}). For $X_8$, (i) also follows by hand from Lemma~\ref{lem:colour} (\S\ref{sec:family}).
-\end{proof}
-
-\begin{table}[h]
-\centering\small
-\caption{Certificates for Theorem~\ref{thm:x78}: \href{\repo Riemann/Deep/Gale7/verify.py}{\texttt{verify.py}} (Python standard library, exact integers; search nodes of its two searches), DRAT proofs \href{\repo Riemann/Deep/Gale7/cert7.drat}{\texttt{cert7.drat}}, \href{\repo Riemann/Deep/Gale7/cert8.drat}{\texttt{cert8.drat}}.}
-\label{tab:cert}
+\begin{center}\small
+\captionof{table}{Checks for Theorem~\ref{thm:x78}. \file{verify.py}{Riemann/Deep/Gale7/verify.py} (Python standard library, exact integers) passes (i)--(iii); DRAT proofs \file{cert7.drat}{Riemann/Deep/Gale7/cert7.drat}, \file{cert8.drat}{Riemann/Deep/Gale7/cert8.drat}; the colourings for (ii) are also stored in the Lean files.}\label{tab:cert}
 \begin{tabular}{@{}lrrrrl@{}}
 \toprule
  & edges of $G_{\ge s}(X)$ & search nodes & DRAT proof & \texttt{verify.py} & Lean proof of (i)\\
@@ -202,112 +198,122 @@ $X_7$ & 1765 & 1327; 23097 & 188 KB & 1 s & replay of an 18887-step case split\\
 $X_8$ & 2195 & 169807; 801496 & 1.2 MB & 37 s & Lemma~\ref{lem:colour}\\
 \bottomrule
 \end{tabular}
-\end{table}
+\end{center}
+
+\begin{proof}
+The fractions are $s^2/D^2$, with $D=\diam X$ and $s$ the claimed $\beta_{n+1}(X)$, both squares times $10^{16}$. By Lemma~\ref{lem:crit} we need (i)~$\chi(G_{\ge s}(X))>n+1$, (ii)~a proper $(n+1)$-colouring of $G_{>s}(X)$, (iii)~test~\eqref{eq:test}. \texttt{verify.py} computes all squared distances exactly ($D^2$ is their maximum), checks (iii), and finds a colouring for (ii) and checks every edge. For (i) it runs two exhaustive backtracking searches over partial colourings (\emph{search nodes}), each fixing first the colours of a different clique (pairwise adjacent vertices), which loses nothing since colours can be renamed. Independently, a DRAT proof~\cite{WHH14}, checked by the program \texttt{drat-trim}, shows that the Boolean formula with variables ``vertex $v$ has colour $c$'', stating that every vertex has a colour, adjacent vertices differ and a 6-clique has fixed colours, is unsatisfiable; Lean checks (i) too (\S\ref{sec:lean}). For $X_8$, (i) also follows from Lemma~\ref{lem:colour}: labelled as in $V_8(\theta_8)$, each of the 2170 edges of $H(5,5)$ (\S\ref{sec:family}) joins points of $X_8$ at squared distance $\ge s^2$, checked exactly.
+\end{proof}
 
 \section{The family $V_n$ and the colouring lemma}\label{sec:family}
 
-For $5\le n\le 1000$ let $\theta_n$ be row $n$ of \href{\repo Riemann/Deep/Gale7/family_params.txt}{\texttt{family\_params.txt}} (12 decimals, read as exact rationals; $\theta_7,\theta_8$ in Table~\ref{tab:params}). In $V_n(\theta_n)$ the poles $P_i$ are pairwise at distance about $1\approx\diam V_n(\theta_n)$, so a partition into parts of diameter $<1$ puts them in different parts, and likewise the $Q_j$. With $n+1=p+q-1$ parts, some part then contains a $P_i$ and a $Q_j$, which is allowed: $\|P_i-Q_j\|^2=r_A^2+r_B^2\approx 0.8$. The points $A_{ij}$, $B_{ij}$, $C_{ij}$ are placed so that such a part, or another one, gets two points far apart. Table~\ref{tab:H} lists the far pairs that we use; they form the graph $H(p,q)$ (Fig.~\ref{fig:H}).
+For $5\le n\le 1000$, $\theta_n$ is row $n$ of \file{family\_params.txt}{Riemann/Deep/Gale7/family_params.txt}: parameters chosen separately for each $n$, with 12 decimals, read as exact rationals ($\theta_7$, $\theta_8$ in Table~\ref{tab:params}). We found them by a numerical search that makes the ratio $s_n/D_n$ of Theorem~\ref{thm:family} large; optimality is not needed. The graph $H(p,q)$ of Table~\ref{tab:H} and Fig.~\ref{fig:H} makes the idea of \S\ref{sec:sets} exact: its edges are pairs that are far apart in $V_n(\theta_n)$, and Lemma~\ref{lem:colour} shows that it has no proper colouring with $p+q-1=n+1$ colours.
 
-\begin{table}[h]
-\centering\small
+\begin{center}\small
 \begin{minipage}[c]{0.55\textwidth}\centering
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{$H(p,q)$: the graph on the vertices $P_i,Q_j,A_{ij},B_{ij},C_{ij}$ ($i\in I$, $j\in J$, $|I|=p$, $|J|=q$). Two vertices are adjacent exactly when the entry for their types holds (---: never).}\label{tab:H}
-\setlength{\tabcolsep}{4pt}
+\captionof{table}{$H(p,q)$: graph on the vertices $P_i,Q_j,A_{ij},B_{ij},C_{ij}$ ($i\in I$, $j\in J$; $|I|=p$, $|J|=q$). Two vertices are adjacent exactly when the entry for their types holds.}\label{tab:H}
+\setlength{\tabcolsep}{3.5pt}
 \begin{tabular}{@{}lccccc@{}}
 \toprule
  & $P_{i'}$ & $Q_{j'}$ & $A_{i'j'}$ & $B_{i'j'}$ & $C_{i'j'}$\\
 \midrule
-$P_i$ & $i\ne i'$ & --- & $i\ne i'$ & $i=i'$ & $i\ne i'$\\
-$Q_j$ & --- & $j\ne j'$ & $j=j'$ & $j\ne j'$ & $j\ne j'$\\
-$A_{ij}$ & $i\ne i'$ & $j=j'$ & $i\ne i'$ & --- & $i\ne i'$\\
-$B_{ij}$ & $i=i'$ & $j\ne j'$ & --- & $j\ne j'$ & $j\ne j'$\\
-$C_{ij}$ & $i\ne i'$ & $j\ne j'$ & $i\ne i'$ & $j\ne j'$ & $i\ne i',\ j\ne j'$\\
+$P_i$ & $i\ne i'$ & never & $i\ne i'$ & $i=i'$ & $i\ne i'$\\
+$Q_j$ & never & $j\ne j'$ & $j=j'$ & $j\ne j'$ & $j\ne j'$\\
+$A_{ij}$ & $i\ne i'$ & $j=j'$ & $i\ne i'$ & never & $i\ne i'$\\
+$B_{ij}$ & $i=i'$ & $j\ne j'$ & never & $j\ne j'$ & $j\ne j'$\\
+$C_{ij}$ & $i\ne i'$ & $j\ne j'$ & $i\ne i'$ & $j\ne j'$ & $i\ne i'$ and $j\ne j'$\\
 \bottomrule
 \end{tabular}
 \end{minipage}\hfill
-\begin{minipage}[c]{0.4\textwidth}\centering
+\begin{minipage}[c]{0.41\textwidth}\centering
 \includegraphics[width=\textwidth]{figs/hgraph.pdf}
-\captionof{figure}{$H(3,4)$, vertices only. Blue lines: row blocks $\RB_i=\{P_i\}\cup\{A_{ij}\}_{j}$; orange lines: column blocks $\CB_j=\{Q_j\}\cup\{B_{ij}\}_{i}$; $C_{ij}$ (green) in cell $(i,j)$.}\label{fig:H}
+\captionsetup{justification=raggedright,singlelinecheck=false}
+\captionof{figure}{$H(3,4)$, vertices only, markers as in Fig.~\ref{fig:sets}. Blue bands: row blocks $\RB_i=\{P_i\}\cup\{A_{ij}\}_{j}$; orange bands: column blocks $\CB_j=\{Q_j\}\cup\{B_{ij}\}_{i}$. Colours mark types, not a colouring.}\label{fig:H}
 \end{minipage}
-\end{table}
+\end{center}
 
 \begin{lemma}[colouring lemma]\label{lem:colour}
 $\chi(H(p,q))=p+q$ for all $p,q\ge 1$.
 \end{lemma}
 
 \begin{proof}
-\emph{At most $p+q$.} Colour $P_i$, all $A_{ij}$ and all $C_{ij}$ with colour $i$, and $Q_j$ and all $B_{ij}$ with colour $p+j$; by Table~\ref{tab:H} no two vertices of one colour are adjacent.
+\emph{At most $p+q$.} For each $i$, give $P_i$ and all $A_{ij}$, $C_{ij}$ ($j\in J$) the colour $i$; for each $j$, give $Q_j$ and all $B_{ij}$ ($i\in I$) the colour $p+j$. By Table~\ref{tab:H} no two vertices of one colour are adjacent.
 
-\emph{At least $p+q$.} Vertex $C_{ij}$ lies in \emph{row} $i$ and \emph{column} $j$. Let $\RB_i=\{P_i\}\cup\{A_{ij}:j\in J\}$ (row blocks) and $\CB_j=\{Q_j\}\cup\{B_{ij}:i\in I\}$ (column blocks), as in Fig.~\ref{fig:H}. Let $\varphi$ be a proper colouring of $H(p,q)$ with colour set $K$. A colour \emph{meets} a set if some vertex of the set has that colour. Table~\ref{tab:H} gives three facts.
-(i)~For $i\ne i'$ every vertex of $\RB_i$ is adjacent to every vertex of $\RB_{i'}$; so a colour meets at most one row block, and likewise at most one column block.
+\emph{At least $p+q$.} Vertex $C_{ij}$ lies in \emph{row} $i$ and \emph{column} $j$. Let $\RB_i=\{P_i\}\cup\{A_{ij}:j\in J\}$ (row blocks) and $\CB_j=\{Q_j\}\cup\{B_{ij}:i\in I\}$ (column blocks). Let $\varphi$ be a proper colouring and $K$ the set of colours it uses; a colour \emph{meets} a set if some vertex of the set has that colour. Plan: colours that meet only row blocks or only column blocks are paid for by rows and columns; the rows and columns left over need colours that meet both kinds of block, one for each left-over cell, and there are too few. Table~\ref{tab:H} gives three facts.
+(i)~For $i\ne i'$, every vertex of $\RB_i$ is adjacent to every vertex of $\RB_{i'}$; so a colour meets at most one row block, and likewise at most one column block.
 (ii)~$C_{ij}$ is adjacent to every vertex of $\RB_{i'}$ ($i'\ne i$) and of $\CB_{j'}$ ($j'\ne j$); so the colour of $C_{ij}$ meets no row block other than $\RB_i$ and no column block other than $\CB_j$.
-(iii)~$C_{ij}$ and $C_{i'j'}$ are adjacent if and only if $i\ne i'$ and $j\ne j'$; so any two $C$-vertices of one colour share a row or a column, and hence all of them lie in one row or in one column.
+(iii)~$C_{ij}$ and $C_{i'j'}$ are adjacent if and only if $i\ne i'$ and $j\ne j'$; so two $C$-vertices of one colour share a row or a column. If two of them lie in different columns, they share a row, and any third one shares a row or column with both, hence lies in that row. So the $C$-vertices of one colour lie in one row or in one column.
 
-Split $K$ into $K_1$ (colours that meet a row block but no column block), $K_2$ (a column block but no row block), $K_{12}$ (both) and $K_0$ (neither). A colour in $K_0$ is used only on $C$-vertices; by (iii) choose a row or a column that contains them. Let $I_1$ and $J_1$ be the chosen rows and columns, so $|I_1|+|J_1|\le|K_0|$. Let $I_0$ be the set of rows $i$ such that no colour of $K_1$ meets $\RB_i$, let $J_0$ be the set of columns $j$ such that no colour of $K_2$ meets $\CB_j$, and put $g=|I_0\setminus I_1|$, $h=|J_0\setminus J_1|$.
+Split $K$ into $K_1$ (colours that meet a row block but no column block), $K_2$ (a column block but no row block), $K_{12}$ (both) and $K_0$ (neither). A colour in $K_0$ is used only on $C$-vertices; by (iii) choose a row or a column that contains them, and let $I_1$ and $J_1$ be the chosen rows and columns, so $|I_1|+|J_1|\le|K_0|$. Let $I_0$ be the set of rows $i$ whose block $\RB_i$ meets no colour of $K_1$, and $J_0$ the set of columns $j$ whose block $\CB_j$ meets no colour of $K_2$. The left-over rows and columns are those in $I_0\setminus I_1$ and $J_0\setminus J_1$; let $g$ and $h$ be their numbers.
 
-The rows outside $I_0$ meet distinct colours of $K_1$ by (i), so $|K_1|\ge p-|I_0|\ge p-g-|I_1|$; likewise $|K_2|\ge q-h-|J_1|$. Hence
+The rows outside $I_0$ meet colours of $K_1$, different rows different colours by (i); so $|K_1|\ge p-|I_0|\ge p-g-|I_1|$, since $|I_0|\le g+|I_1|$. Likewise $|K_2|\ge q-h-|J_1|$. Hence
 \begin{equation}\label{eq:count}
 |K|=|K_1|+|K_2|+|K_{12}|+|K_0|\ \ge\ p+q-g-h+|K_{12}|.
 \end{equation}
-For $i\in I_0$ the colour of $P_i$ meets $\RB_i$ and is not in $K_1$, so it is in $K_{12}$; by (i) different rows give different colours, so $|K_{12}|\ge|I_0|\ge g$, and likewise $|K_{12}|\ge h$. For $i\in I_0\setminus I_1$ and $j\in J_0\setminus J_1$ the colour of $C_{ij}$ is in $K_{12}$ and meets $\RB_i$ and $\CB_j$: by (ii) it meets no other blocks; it is not in $K_1$ as $i\in I_0$, not in $K_2$ as $j\in J_0$, and not in $K_0$ as $i\notin I_1$ and $j\notin J_1$. By (i) these $gh$ colours are distinct, so $|K_{12}|\ge gh$.
+For $i\in I_0$, the colour of $P_i$ meets $\RB_i$ and is not in $K_1$, so it is in $K_{12}$; different rows give different colours by (i), so $|K_{12}|\ge|I_0|\ge g$, and likewise $|K_{12}|\ge h$. For $i\in I_0\setminus I_1$ and $j\in J_0\setminus J_1$, the colour of $C_{ij}$ is not in $K_1$ (by (ii) it could meet only $\RB_i$, and $i\in I_0$), not in $K_2$ (likewise), and not in $K_0$ ($i\notin I_1$, $j\notin J_1$). So it is in $K_{12}$ and, by (ii), meets exactly $\RB_i$ and $\CB_j$. Two different cells differ in their row or column, so by (i) these $gh$ colours are distinct: $|K_{12}|\ge gh$.
 
-Now suppose $|K|\le p+q-1$. Then $|K_{12}|\le g+h-1$ by~\eqref{eq:count}. With $|K_{12}|\ge g$ and $|K_{12}|\ge h$ this gives $g,h\ge 1$, and with $|K_{12}|\ge gh$ it gives $(g-1)(h-1)\le 0$, so $g=1$ or $h=1$. Let $g=1$ and $I_0\setminus I_1=\{i^*\}$. Then $|K_{12}|\le h$, so $K_{12}$ consists of the $h$ colours of the $C_{i^*j}$ with $j\in J_0\setminus J_1$, and the colour of $C_{i^*j}$ meets no column block other than $\CB_j$. The colour of $P_{i^*}$ is in $K_{12}$ (as $i^*\in I_0$), so it is the colour of some $C_{i^*j_0}$. The colour of $B_{i^*j_0}$ meets $\CB_{j_0}$ and is not in $K_2$ (as $j_0\in J_0$), so it is in $K_{12}$, hence also the colour of $C_{i^*j_0}$. So $P_{i^*}$ and $B_{i^*j_0}$ have the same colour, but they are adjacent. The case $h=1$ is the same with $Q$, $A$ in place of $P$, $B$.
+Now suppose $|K|\le p+q-1$. By~\eqref{eq:count}, $|K_{12}|\le g+h-1$. With $|K_{12}|\ge g$ and $|K_{12}|\ge h$ this gives $g,h\ge 1$, and with $|K_{12}|\ge gh$ it gives $(g-1)(h-1)\le 0$, so $g=1$ or $h=1$. Let $g=1$ and $I_0\setminus I_1=\{i^*\}$. Then $|K_{12}|\le h$, and the $h$ colours of the $C_{i^*j}$ ($j\in J_0\setminus J_1$) are distinct and in $K_{12}$, so they are all of $K_{12}$; the colour of $C_{i^*j}$ meets the column block $\CB_j$ and no other. The colour of $P_{i^*}$ is in $K_{12}$ ($i^*\in I_0$), so it is the colour of some $C_{i^*j_0}$. The colour of $B_{i^*j_0}$ meets $\CB_{j_0}$ and is not in $K_2$ ($j_0\in J_0$), so it is in $K_{12}$; the only colour of $K_{12}$ that meets $\CB_{j_0}$ is that of $C_{i^*j_0}$. So $P_{i^*}$ and $B_{i^*j_0}$ have the same colour, but they are adjacent. If $h=1$, exchange rows and columns ($P\leftrightarrow Q$, $A\leftrightarrow B$): then some $Q_{j^*}$ and $A_{i_0j^*}$ have the same colour, but they are adjacent.
 \end{proof}
 
 \begin{theorem}\label{thm:family}
-Let $5\le n\le 1000$. Read each point $P_i,\dots,C_{ij}$ of $V_n(\theta_n)$ as the vertex of $H(p,q)$ with the same name, let $s_n$ be the least distance between two adjacent ones, and let $D_n=\diam V_n(\theta_n)$. Then $\beta_{n+1}(V_n(\theta_n))\ge s_n>\sigma_n D_n$.
+Let $5\le n\le 1000$ and $D_n=\diam V_n(\theta_n)$. Label the points of $V_n(\theta_n)$ as the vertices of $H(p,q)$, and let $s_n$ be the least distance between two points whose labels are adjacent: the shortest edge of $H(p,q)$ drawn on $V_n(\theta_n)$. Then $\beta_{n+1}(V_n(\theta_n))\ge s_n>\sigma_n D_n$.
 \end{theorem}
 
 \begin{proof}
-Every edge of $H(p,q)$ joins two points at distance $\ge s_n$, so a proper $(n+1)$-colouring of $G_{\ge s_n}(V_n(\theta_n))$ would give one of $H(p,q)$. As $p+q=n+2$, Lemma~\ref{lem:colour} excludes this, and Lemma~\ref{lem:crit}(a) gives $\beta_{n+1}\ge s_n$. By~\eqref{eq:dist}, $D_n^2$ is the largest of the 36 class values and $s_n^2$ the least of the 17 classes that contain edges of $H(p,q)$; for each $n$, exact rational arithmetic confirms the test~\eqref{eq:test} (\href{\repo Riemann/Deep/Gale7/family.py}{\texttt{family.py}}, 2~s for all 996 rows).
+Every edge of $H(p,q)$ joins two points at distance $\ge s_n$, so a proper $(n+1)$-colouring of $G_{\ge s_n}(V_n(\theta_n))$ would give one of $H(p,q)$ with $n+1=p+q-1$ colours. Lemma~\ref{lem:colour} excludes this, and Lemma~\ref{lem:crit}(a) gives $\beta_{n+1}\ge s_n$. Only $s_n>\sigma_nD_n$ is checked by computer, separately for each $n$: by~\eqref{eq:dist}, $D_n^2$ is the largest of the 36 class values and $s_n^2$ the least of the 17 classes in Table~\ref{tab:H} (each entry is one class, or two when an index is not constrained), and \file{family.py}{Riemann/Deep/Gale7/family.py} confirms~\eqref{eq:test} in exact rational arithmetic for all 996 values of $n$.
 \end{proof}
 
-The gap $s_n/D_n-\sigma_n$ lies between $2.9\cdot10^{-7}$ ($n=1000$) and $1.4\cdot10^{-3}$ ($n=7$); near $n=1000$ it is about $0.29/n^2$. The parameters $\theta_n$ come from a numerical maximization of $s_n/D_n$; any $\theta$ that passes~\eqref{eq:test} works. For $n=3,4$ the best parameters we found give only $s_n/D_n=0.8752<\sigma_3$ and $0.9106<\sigma_4$.
+We stopped the check at $n=1000$; Hinrichs's theorem covers larger $n$ (\S\ref{sec:all}). The gap $s_n/D_n-\sigma_n$ is smallest at $n=1000$ (about $2.898\cdot10^{-7}$) and largest at $n=7$ (about $1.433\cdot10^{-3}$); near $n=1000$ it is about $0.29/n^2$, an observation, not a proved rate. For $n=3,4$ the best parameters we found give only $s/D\approx0.8752<\sigma_3$ and $\approx0.9106<\sigma_4$, so \S\ref{sec:all} uses other sets there.
 
 \section{Every dimension $n\ge 3$}\label{sec:all}
 
 \begin{proof}[Proof of Theorem~\ref{thm:main}]
-For $n=3,4$ we use our point sets $X_3$ (170 points, \href{\repo Riemann/Deep/Gale/points.txt}{\texttt{Gale/points.txt}}) and $X_4$ (126 points, \href{\repo Riemann/Deep/Gale45/points4.txt}{\texttt{Gale45/points4.txt}}), certified as in Theorem~\ref{thm:x78}; Table~\ref{tab:main} gives the ratios. For $5\le n\le 1000$ we use Theorem~\ref{thm:family}. For $n>1000$, Borsuk's conjecture fails~\cite[Thm.~1]{Hi02}: there is a bounded $S\subset\R^n$ with at least two points such that every partition of $S$ into $n+1$ parts has a part of diameter $\diam S$. If $\beta_{n+1}(S)\le\sigma_n\diam S$, then, as $\sigma_n<1$, some partition of $S$ into $n+1$ parts would have all parts of diameter less than $\diam S$. So $S$ is a counterexample.
+For $n=3,4$ we use our sets $X_3$ (170 points, \file{Gale/points.txt}{Riemann/Deep/Gale/points.txt}) and $X_4$ (126 points, \file{Gale45/points4.txt}{Riemann/Deep/Gale45/points4.txt}), found by a computer search that refined Voronov's sets~\cite{Vo26} and certified like $X_7$ (search, DRAT, Lean):
+\[
+\frac{\beta_4(X_3)}{\diam X_3}=\sqrt{\frac{7932058815501876}{10000000211897483}},\qquad
+\frac{\beta_5(X_4)}{\diam X_4}=\sqrt{\frac{8399124363373578}{10000000179265409}}.
+\]
+For $5\le n\le 1000$ we use Theorem~\ref{thm:family}. For $n>1000$, Borsuk's conjecture fails~\cite[Thm.~1]{Hi02}: there is a bounded $S\subset\R^n$ with at least two points such that every partition of $S$ into $n+1$ parts has a part of diameter $\diam S$. So every partition has largest part diameter $\diam S$, hence $\beta_{n+1}(S)=\diam S>\sigma_n\diam S$, as $\sigma_n<1$ by~\eqref{eq:sigma} and $\diam S>0$.
 \end{proof}
 
-The same argument shows that every counterexample to Borsuk's conjecture is a counterexample to Gale's.
+The same argument makes every counterexample to Borsuk's conjecture a counterexample to Gale's.
 
 \section{Lean formalization}\label{sec:lean}
 
-All results are formalized in Lean~4 (v4.35.0-rc2) with Mathlib~\cite{dMU21,mC20}, on $\R^n$ as \texttt{EuclideanSpace} with Mathlib's diameter (Table~\ref{tab:lean}). There, \texttt{GaleConjecture n} states that $\R^n$ has no counterexample. The proofs contain no \texttt{sorry} and use only the axioms \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}; the finite checks run in the Lean kernel (\texttt{decide +kernel}). Two cited facts enter as hypotheses: Hinrichs's theorem~\cite{Hi02}, used only for $n>1000$, and $\beta_{n+1}(B^n)\le\sigma_n$~\cite{Vo26}, used only to pass from counterexamples to Gale's conjecture itself. \href{\repo papers/02_gale-fails-every-dimension/PROOF.md}{\texttt{PROOF.md}} maps every step of this paper to Lean.
+Lean~4~\cite{dMU21} is a proof assistant, a program that accepts a proof only after checking every step; Mathlib~\cite{mC20} is its library. We formalized \S\S\ref{sec:def}--\ref{sec:all} (Table~\ref{tab:lean}; Lean v4.35.0-rc2, Mathlib \texttt{06535612}). There, \texttt{GaleConjecture n} says that $\R^n$ has no counterexample, and \texttt{GaleConjectureBall n} is the conjecture of \S\ref{sec:def}. Two cited facts enter as explicit hypotheses: Hinrichs's theorem~\cite{Hi02} for $n>1000$, and $\beta_{n+1}(B^n)\le\sigma_n$~\cite{Vo26} to reach the ball form. There are no admitted gaps (\texttt{sorry}), only Lean's standard axioms are used (\texttt{propext}, \texttt{Classical.choice}, \texttt{Quot.sound}), and the finite computations run in Lean's trusted kernel (\texttt{decide +kernel}).
 
-\begin{table}[h]
-\centering\small
+\begin{center}\small
 \captionsetup{justification=raggedright,singlelinecheck=false}
-\caption{Lean names (links). Files are in \href{\repo Riemann/Deep/LeanGale}{\texttt{Riemann/Deep/LeanGale}}, except \texttt{Lemma.lean} (in \href{\repo Riemann/Deep/Gale7/Lean}{\texttt{Riemann/Deep/Gale7/Lean}}).}
-\label{tab:lean}
+\captionof{table}{Lean names (links); files in \file{Riemann/Deep/LeanGale}{Riemann/Deep/LeanGale}, except \texttt{Lemma.lean} in \file{Riemann/Deep/Gale7/Lean}{Riemann/Deep/Gale7/Lean}.}\label{tab:lean}
 \begin{tabular}{@{}lll@{}}
 \toprule
 statement & Lean & file\\
 \midrule
-$\beta_k$; no counterexample & \lean{beta}{Riemann/Deep/LeanGale/Gale.lean\#L25-L28}; \lean{GaleConjecture}{Riemann/Deep/LeanGale/Gale.lean\#L30-L33} & \texttt{Gale.lean}\\
+$\beta_k$; no counterexample in $\R^n$ & \lean{beta}{Riemann/Deep/LeanGale/Gale.lean\#L25-L28}; \lean{GaleConjecture}{Riemann/Deep/LeanGale/Gale.lean\#L30-L33} & \texttt{Gale.lean}\\
 Lemma~\ref{lem:crit}(a) with~\eqref{eq:test} & \lean{sigma\_mul\_diam\_lt\_beta}{Riemann/Deep/LeanGale/Gale.lean\#L137-L155} & \texttt{Gale.lean}\\
 Theorem~\ref{thm:x78} & \lean{claim1\_n7}{Riemann/Deep/LeanGale/Main.lean\#L93-L124}, \lean{claim1\_n8}{Riemann/Deep/LeanGale/Main.lean\#L137-L156} & \texttt{Main.lean}\\
-Lemma~\ref{lem:colour} & \lean{card\_le}{Riemann/Deep/Gale7/Lean/Lemma.lean\#L435-L460} & \texttt{Lemma.lean}\\
+Lemma~\ref{lem:colour}, lower bound & \lean{card\_le}{Riemann/Deep/Gale7/Lean/Lemma.lean\#L435-L460} & \texttt{Lemma.lean}\\
 Theorem~\ref{thm:family} & \lean{claim2}{Riemann/Deep/LeanGale/Main.lean\#L202-L215} & \texttt{Main.lean}\\
 Theorem~\ref{thm:main}, $n\le 1000$ & \lean{gale\_fails\_le\_1000}{Riemann/Deep/LeanGale/Main.lean\#L227-L236} & \texttt{Main.lean}\\
-Theorem~\ref{thm:main}, all $n\ge 3$ & \lean{gale\_fails}{Riemann/Deep/LeanGale/Main.lean\#L266-L273}, \lean{gale\_ball\_fails}{Riemann/Deep/LeanGale/Main.lean\#L283-L289} & \texttt{Main.lean}\\
+Theorem~\ref{thm:main}, all $n\ge 3$; uses~\cite{Hi02} & \lean{gale\_fails}{Riemann/Deep/LeanGale/Main.lean\#L266-L273} & \texttt{Main.lean}\\
+Gale's conjecture fails; uses~\cite{Hi02}, $\beta_{n+1}(B^n)\le\sigma_n$ & \lean{gale\_ball\_fails}{Riemann/Deep/LeanGale/Main.lean\#L283-L289} & \texttt{Main.lean}\\
 \bottomrule
 \end{tabular}
-\end{table}
+\end{center}
+
+\noindent\textbf{Data and code.} \href{https://github.com/Sager611/riemann/tree/a85a25ee1578748e7fa014f51dd762a6195fe923}{github.com/Sager611/riemann}, commit \texttt{a85a25e} (file names in this paper are links): \texttt{Riemann/Deep/Gale7} holds $X_7$, $X_8$, $\theta_n$, \texttt{verify.py} and \texttt{family.py}; \texttt{Riemann/Deep/Gale} and \texttt{Gale45} hold $X_3$, $X_4$; \file{PROOF.md}{papers/02_gale-fails-every-dimension/PROOF.md} maps each step to Lean.
 
 \begin{thebibliography}{99}\small\raggedright
 \bibitem{Bo33} K.~Borsuk, Drei S\"atze \"uber die $n$-dimensionale euklidische Sph\"are, \emph{Fund.\ Math.}\ 20 (1933) 177--190, doi:10.4064/fm-20-1-177-190.
-\bibitem{dMU21} L.~de~Moura, S.~Ullrich, The Lean~4 theorem prover and programming language, \emph{CADE-28}, LNCS 12699 (2021) 625--635, doi:10.1007/978-3-030-79876-5\_37.
+\bibitem{dMU21} L.~de~Moura, S.~Ullrich, The Lean~4 theorem prover and programming language, in: \emph{Automated Deduction -- CADE 28}, Lecture Notes in Computer Science 12699, Springer (2021) 625--635, doi:10.1007/978-3-030-79876-5\_37.
 \bibitem{Ga53} D.~Gale, On inscribing $n$-dimensional sets in a regular $n$-simplex, \emph{Proc.\ Amer.\ Math.\ Soc.}\ 4 (1953) 222--225, doi:10.1090/S0002-9939-1953-0053534-7.
 \bibitem{Hi02} A.~Hinrichs, Spherical codes and Borsuk's conjecture, \emph{Discrete Math.}\ 243 (2002) 253--256, doi:10.1016/S0012-365X(01)00202-3.
 \bibitem{JB14} T.~Jenrich, A.~E.~Brouwer, A 64-dimensional counterexample to Borsuk's conjecture, \emph{Electron.\ J.\ Combin.}\ 21(4) (2014) P4.29, doi:10.37236/4069.
 \bibitem{KK93} J.~Kahn, G.~Kalai, A counterexample to Borsuk's conjecture, \emph{Bull.\ Amer.\ Math.\ Soc.}\ 29 (1993) 60--62, doi:10.1090/S0273-0979-1993-00398-7.
-\bibitem{mC20} The mathlib Community, The Lean mathematical library, \emph{CPP 2020}, 367--381, doi:10.1145/3372885.3373824.
-\bibitem{OAI26} OpenAI, A nine-dimensional counterexample to Borsuk's covering assertion, preprint (2026), \url{https://github.com/openai/math}.
+\bibitem{mC20} The mathlib Community, The Lean mathematical library, in: \emph{Proc.\ 9th ACM SIGPLAN Int.\ Conf.\ on Certified Programs and Proofs (CPP 2020)}, ACM (2020) 367--381, doi:10.1145/3372885.3373824.
+\bibitem{OAI26} OpenAI, A nine-dimensional counterexample to Borsuk's covering assertion, unrefereed preprint, 23 September 2026, \url{https://github.com/openai/math/tree/main/preprints/A-nine-dimensional-counterexample-to-Borsuks-covering-assertion-September-23-2026}.
 \bibitem{Vo26} V.~Voronov, A counterexample to Gale's conjecture in $\R^3$, arXiv:2610.28828 (2026).
-\bibitem{WHH14} N.~Wetzler, M.~J.~H.~Heule, W.~A.~Hunt~Jr., DRAT-trim: efficient checking and trimming using expressive clausal proofs, \emph{SAT 2014}, LNCS (2014) 422--429, doi:10.1007/978-3-319-09284-3\_31.
+\bibitem{WHH14} N.~Wetzler, M.~J.~H.~Heule, W.~A.~Hunt~Jr., DRAT-trim: efficient checking and trimming using expressive clausal proofs, in: \emph{Theory and Applications of Satisfiability Testing -- SAT 2014}, Lecture Notes in Computer Science 8561, Springer (2014) 422--429, doi:10.1007/978-3-319-09284-3\_31.
 \end{thebibliography}
 
 \end{document}

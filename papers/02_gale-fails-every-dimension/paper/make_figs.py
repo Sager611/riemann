@@ -106,12 +106,12 @@ def load():
     return sets
 
 
-def scatter(ax, P2, lab, emph=None, alpha=1.0):
+def scatter(ax, P2, lab, emph=None, big=1.0):
     for orb in "CBAQP":
         idx = [k for k, L in enumerate(lab) if L[0] == orb]
         col, mk = STYLE[orb]
-        ax.scatter(P2[idx, 0], P2[idx, 1], s=SIZE[orb], c=col, marker=mk, linewidths=0.3, edgecolors="white",
-                   alpha=alpha, zorder=3)
+        s = SIZE[orb] * (big if orb in "PQ" else 1.0)
+        ax.scatter(P2[idx, 0], P2[idx, 1], s=s, c=col, marker=mk, linewidths=0.3, edgecolors="white", zorder=3)
     if emph:
         for k, L in enumerate(lab):
             if L in emph:
@@ -128,24 +128,41 @@ def clean(ax, lim):
         s.set_visible(False)
 
 
+def axes_style(ax, lo, hi, xlabel, ylabel):
+    ax.set_aspect("equal"); ax.set_xlim(lo, hi); ax.set_ylim(lo, hi)
+    ax.set_xticks([0, 0.3, 0.6]); ax.set_yticks([0, 0.3, 0.6])
+    ax.tick_params(labelsize=6.5, pad=1.5)
+    for s in ("top", "right"):
+        ax.spines[s].set_visible(False)
+    if xlabel:
+        ax.set_xlabel(xlabel, fontsize=7.5, labelpad=1)
+    ax.set_ylabel(ylabel, fontsize=7.5, labelpad=0)
+
+
 def fig_sets(sets):
-    fig, axes = plt.subplots(2, 3, figsize=(6.3, 4.35), gridspec_kw=dict(wspace=0.16, hspace=0.12))
+    fig, axes = plt.subplots(2, 3, figsize=(6.3, 4.5), gridspec_kw=dict(wspace=0.22, hspace=0.16))
     cfg = {7: dict(ph1=np.pi / 2, ph2=np.pi / 2 + np.pi / 10, alpha=np.deg2rad(50)),
            8: dict(ph1=np.pi / 2, ph2=np.pi / 2 + np.pi / 5, alpha=np.pi / 4)}
     for row, n in enumerate((7, 8)):
         S = sets[n]; X, lab, U, W, m1 = S["X"], S["lab"], S["U"], S["W"], S["m1"]
         x1, x2 = X[:, :m1], X[:, m1:]
-        # (a) polygon projection: u_i -> regular p-gon, v_j -> regular q-gon
+        _, _, (rA, rB, a, b, c_, d, e, f) = params(n)
+        # (a) polygon view: u_i -> regular p-gon, v_j -> regular q-gon; dotted: ideal pole polygons of V_n
         c = cfg[n]
         M1, M2 = polygon_map(U, c["ph1"]), polygon_map(W, c["ph2"])
         Pa = np.cos(c["alpha"]) * x1 @ M1.T + np.sin(c["alpha"]) * x2 @ M2.T
         ax = axes[row, 0]
-        scatter(ax, Pa, lab)
+        for V, r, wt, orb in ((U, rA, np.cos(c["alpha"]), "P"), (W, rB, np.sin(c["alpha"]), "Q")):
+            M = M1 if orb == "P" else M2
+            poly = wt * r * V @ M.T
+            poly = np.r_[poly, poly[:1]]
+            ax.plot(poly[:, 0], poly[:, 1], ls=(0, (1, 1.5)), lw=0.6, color=STYLE[orb][0], alpha=0.7, zorder=1)
+        scatter(ax, Pa, lab, big=1.9)
         clean(ax, 0.62)
-        # (b) cell plane span((u_0, 0), (0, v_0))
+        # (b) cell view: the plane spanned by (u_0, 0) and (0, v_0)
         Pb = np.c_[x1 @ U[0], x2 @ W[0]]
         ax = axes[row, 1]
-        ax.axhline(0, color="0.8", lw=0.4, zorder=0); ax.axvline(0, color="0.8", lw=0.4, zorder=0)
+        ax.axhline(0, color="0.85", lw=0.4, zorder=0); ax.axvline(0, color="0.85", lw=0.4, zorder=0)
         th = np.linspace(-0.25, np.pi / 2 + 0.25, 100)
         ax.plot(0.62 * np.cos(th), 0.62 * np.sin(th), ls=(0, (2, 2)), lw=0.4, color="0.6", zorder=0)
         cell = [("P", 0, None), ("Q", None, 0), ("A", 0, 0), ("B", 0, 0), ("C", 0, 0)]
@@ -162,37 +179,26 @@ def fig_sets(sets):
                  ("C", 0, 0): ("$C_{00}$", (5, 2))}
         for L, (txt, off) in names.items():
             ax.annotate(txt, pos[L], xytext=off, textcoords="offset points", fontsize=7, zorder=6)
-        ax.set_aspect("equal"); ax.set_xlim(-0.3, 0.78); ax.set_ylim(-0.3, 0.78)
-        ax.set_xticks([]); ax.set_yticks([])
-        for s in ax.spines.values():
-            s.set_visible(False)
-        # (c) radii in the two summands
+        axes_style(ax, -0.3, 0.78, r"$\langle x',u_0\rangle$" if row == 1 else None, r"$\langle x'',v_0\rangle$")
+        # (c) block norms
         ax = axes[row, 2]
         Pc = np.c_[np.linalg.norm(x1, axis=1), np.linalg.norm(x2, axis=1)]
         th = np.linspace(0, np.pi / 2, 100)
         ax.plot(0.62 * np.cos(th), 0.62 * np.sin(th), ls=(0, (2, 2)), lw=0.4, color="0.6", zorder=0)
         scatter(ax, Pc, lab)
-        ax.set_aspect("equal"); ax.set_xlim(-0.03, 0.72); ax.set_ylim(-0.03, 0.72)
-        ax.set_xticks([0, 0.3, 0.6]); ax.set_yticks([0, 0.3, 0.6])
-        ax.tick_params(labelsize=6.5, pad=1.5)
-        for s in ("top", "right"):
-            ax.spines[s].set_visible(False)
-        if row == 1:
-            ax.set_xlabel(r"$\Vert x'\Vert$", fontsize=7.5, labelpad=1)
-        ax.set_ylabel(r"$\Vert x''\Vert$", fontsize=7.5, labelpad=1)
+        axes_style(ax, -0.03, 0.72, r"$\Vert x'\Vert$" if row == 1 else None, r"$\Vert x''\Vert$")
         if n == 8:
-            m1_, _, (rA, rB, a, b, c_, d, e, f) = params(8)
             for (x, y), txt, off in (((rA, 0), r"$(r_A,0)$", (-30, 3)), ((a, b), r"$(a,b)$", (-26, 1)),
                                      ((e, f), r"$(e,f)$", (-27, -3)), ((c_, d), r"$(c,d)$", (2, -10)),
                                      ((0, rB), r"$(0,r_B)$", (4, 2))):
                 ax.annotate(txt, (x, y), xytext=off, textcoords="offset points", fontsize=6.5, color="0.25")
         axes[row, 0].text(-0.62, 0.62, "$X_%d$" % n, fontsize=10, va="top")
-    for j, t in enumerate(("(a)", "(b)", "(c)")):
-        axes[0, j].set_title(t, fontsize=8, pad=2)
+    for j, t in enumerate(("(a) polygon view", "(b) cell view", "(c) block norms")):
+        axes[0, j].set_title(t, fontsize=8, pad=3)
     handles = [plt.Line2D([], [], ls="", marker=STYLE[o][1], color=STYLE[o][0], markeredgecolor="white",
                           markeredgewidth=0.3, markersize=5, label="$%s$" % o) for o in "PAQBC"]
     fig.legend(handles=handles, loc="lower center", ncol=5, frameon=False, fontsize=8, handletextpad=0.2,
-               columnspacing=1.2, bbox_to_anchor=(0.5, -0.01))
+               columnspacing=1.2, bbox_to_anchor=(0.5, -0.02))
     fig.savefig(OUT / "sets.pdf", bbox_inches="tight", pad_inches=0.02)
     plt.close(fig)
 
@@ -219,18 +225,20 @@ def fig_disk():
 
 
 def fig_hgraph(p=3, q=4):
-    """the vertex layout of H(p, q): row blocks X_i as blue lines, column blocks Y_j as orange lines"""
-    fig, ax = plt.subplots(figsize=(2.5, 1.95))
+    """the vertex layout of H(p, q): bands mark the row blocks (P_i and the A_ij) and column blocks (Q_j and the B_ij)"""
+    fig, ax = plt.subplots(figsize=(2.55, 2.1))
     dx, dy, top = 1.0, 0.85, 0.75
-    xa, xb, yb, yc = -0.22, 0.22, 0.27, -0.27
+    xa, xb, yb, yc = -0.24, 0.22, 0.26, -0.27
+    w = 0.13
     for i in range(p):
         y = -i * dy
-        ax.plot([-0.55, (q - 1) * dx + xa + 0.16], [y, y], color=STYLE["P"][0], lw=0.9, alpha=0.6, zorder=1)
+        ax.add_patch(Rectangle((-0.68, y - w / 2), (q - 1) * dx + xa + 0.86, w, fc=STYLE["P"][0], alpha=0.16, lw=0))
         ax.scatter([-0.55], [y], s=24, c=STYLE["P"][0], marker="o", zorder=3)
         ax.text(-0.72, y, "$P_%d$" % i, ha="right", va="center", fontsize=7.5)
     for j in range(q):
         x = j * dx
-        ax.plot([x + xb, x + xb], [top, -(p - 1) * dy + yb - 0.16], color=STYLE["Q"][0], lw=0.9, alpha=0.6, zorder=1)
+        ax.add_patch(Rectangle((x + xb - w / 2, -(p - 1) * dy + yb - 0.12), w, top + (p - 1) * dy - yb + 0.25,
+                               fc=STYLE["Q"][0], alpha=0.16, lw=0))
         ax.scatter([x + xb], [top], s=20, c=STYLE["Q"][0], marker="s", zorder=3)
         ax.text(x + xb, top + 0.15, "$Q_%d$" % j, ha="center", va="bottom", fontsize=7.5)
         for i in range(p):
@@ -238,7 +246,9 @@ def fig_hgraph(p=3, q=4):
             for orb, (px, py) in (("A", (x + xa, y)), ("B", (x + xb, y + yb)), ("C", (x, y + yc))):
                 col, mk = STYLE[orb]
                 ax.scatter([px], [py], s=13, c=col, marker=mk, zorder=3, linewidths=0.3, edgecolors="white")
-    ax.text(-0.55, -(p - 1) * dy - 0.55, "", fontsize=1)
+    for txt, (px, py), off in (("$A_{00}$", (xa, 0), (-9, 4)), ("$B_{00}$", (xb, yb), (4, -1)),
+                               ("$C_{00}$", (0, yc), (4, -6))):
+        ax.annotate(txt, (px, py), xytext=off, textcoords="offset points", fontsize=6.5, color="0.15", zorder=6)
     ax.set_xlim(-1.05, (q - 1) * dx + 0.45); ax.set_ylim(-(p - 1) * dy - 0.45, top + 0.42)
     ax.set_aspect("equal"); ax.axis("off")
     fig.savefig(OUT / "hgraph.pdf", bbox_inches="tight", pad_inches=0.01)
