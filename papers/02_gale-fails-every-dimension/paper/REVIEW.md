@@ -144,3 +144,13 @@ Fixed in v17: Fig. 2 "Grey arcs in (b), (c): radius 0.62 about 0"; Theorem 2's p
 ### v17: Adrian's wording (27 Nov), second sentence of §1
 
 Replaced verbatim: "The answer is no for large n: some sets in ℝⁿ cannot be split into n + 1 parts of smaller diameter [6]. This holds for every n > 322 [4], with a refereed counterexample in ℝ⁶⁴ [5]; an unrefereed OpenAI preprint gives counterexamples for every n ≥ 9 [8, Cor. 7.1]." Voronov [9] checked: all 8 citations are in Gale contexts (Fig. 1 disk, Gale's n = 3–6 counterexamples and Voronov's question in §1, σₙ bound and its optimality, Gale's conjecture, refined sets in §7, ball bound in §8); none in a Borsuk sentence, so none removed. \looseness=-1 on the last paragraph of §1 (avoids "(Theo-/rem 1)."). Pages 1, 3, 4, 6 re-rendered and checked.
+
+### Round 17 (v17): six fresh reviewers
+
+R4, R5: VERDICT: CLEAR. Math: VERDICT: CORRECT. R1: §1's last sentence nests qualifications and does not name Hinrichs's theorem. R2: the unit vectors u_i, v_j can be mistaken for the poles (edge length 1). R3: "so they are all of K₁₂" is ambiguous.
+
+### v18: Adrian's own wording (27 Nov, supersedes v17's sentence) and round-17 fixes
+
+§1, after the Borsuk sentences, Adrian's wording verbatim with one factual fix: "Even for large n some sets cannot be split into n + 1 smaller diameter parts [6], in fact it was proven for all n > 322 [4], and then for a smaller n = 64 [5]. Recently, there has appeared a preprint from OpenAI for all n ≥ 9 [8, Cor. 7.1]." Factual fix: "there have appeared preprints" → "there has appeared a preprint": openai/math has one Borsuk preprint (item 156, cited as [8]; Riemann/Deep/Gale7/NOVELTY.md). Not reworded otherwise; reviewer flags on this paragraph are reported, not applied. Voronov [9]: all citations already in Gale contexts.
+
+Round-17 fixes: §1 "With our sets for n = 3, 4, the family for 5 ≤ n ≤ 1000 and Hinrichs's theorem [4] for n > 1000, the conjecture fails for every n ≥ 3 (Theorem 1)"; §5 Construction "…: the vertices of two regular simplices centred at 0; scaled by r_A and r_B (Table 2) they give the poles"; Lemma 2 "so they make up K₁₂". p-1, p-3, p-5 checked; no TeX warnings.
