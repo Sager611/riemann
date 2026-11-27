@@ -140,7 +140,7 @@ def axes_style(ax, lo, hi, xlabel, ylabel):
 
 
 def fig_sets(sets):
-    fig, axes = plt.subplots(2, 3, figsize=(6.3, 4.5), gridspec_kw=dict(wspace=0.22, hspace=0.16))
+    fig, axes = plt.subplots(2, 3, figsize=(6.3, 4.15), gridspec_kw=dict(wspace=0.22, hspace=0.14))
     cfg = {7: dict(ph1=np.pi / 2, ph2=np.pi / 2 + np.pi / 10, alpha=np.deg2rad(50)),
            8: dict(ph1=np.pi / 2, ph2=np.pi / 2 + np.pi / 5, alpha=np.pi / 4)}
     for row, n in enumerate((7, 8)):
@@ -204,17 +204,22 @@ def fig_sets(sets):
 
 
 def fig_disk():
+    """the disk of diameter D cut by the rays through the vertices of an inscribed equilateral triangle"""
     fig, ax = plt.subplots(figsize=(1.75, 1.75))
     cols = ["#56B4E9", "#E69F00", "#009E73"]
     for k in range(3):
         ax.add_patch(Wedge((0, 0), 0.5, 90 + 120 * k, 210 + 120 * k, fc=cols[k], alpha=0.35, ec="white", lw=1.0))
     ax.add_patch(Circle((0, 0), 0.5, fill=False, lw=0.6, color="0.3"))
-    a, b = np.deg2rad(90), np.deg2rad(210)
-    pa, pb = 0.5 * np.array([np.cos(a), np.sin(a)]), 0.5 * np.array([np.cos(b), np.sin(b)])
-    ax.plot(*zip(pa, pb), color="black", lw=0.8)
-    ax.plot(*zip(pa, pb), ls="", marker="o", ms=2.5, color="black")
-    mid = (pa + pb) / 2
-    ax.text(mid[0] + 0.045, mid[1] - 0.03, r"$\sqrt{3}\,D/2$", fontsize=8, rotation=60, ha="center", va="center",
+    ang = np.deg2rad([90, 210, 330])
+    tri = 0.5 * np.c_[np.cos(ang), np.sin(ang)]
+    for k in range(3):
+        ax.plot([0, tri[k, 0]], [0, tri[k, 1]], color="white", lw=1.0, zorder=2)
+    ax.plot([tri[1, 0], tri[2, 0], tri[0, 0]], [tri[1, 1], tri[2, 1], tri[0, 1]], color="0.35", lw=0.6,
+            ls=(0, (3, 2)), zorder=3)
+    ax.plot([tri[0, 0], tri[1, 0]], [tri[0, 1], tri[1, 1]], color="black", lw=0.9, zorder=4)
+    ax.plot(tri[:, 0], tri[:, 1], ls="", marker="o", ms=2.5, color="black", zorder=5)
+    mid = (tri[0] + tri[1]) / 2
+    ax.text(mid[0] + 0.065, mid[1] - 0.04, r"$\sqrt{3}\,D/2$", fontsize=8, rotation=60, ha="center", va="center",
             rotation_mode="anchor")
     ax.annotate("", xy=(0.5, -0.62), xytext=(-0.5, -0.62), arrowprops=dict(arrowstyle="<->", lw=0.5, color="0.3",
                                                                           shrinkA=0, shrinkB=0))
