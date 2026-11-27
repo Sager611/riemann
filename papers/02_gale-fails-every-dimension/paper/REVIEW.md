@@ -212,3 +212,7 @@ Kept the intro sentence "Consider splitting a bounded set in ℝⁿ into parts t
 ### v23 (Adrian, 27 Nov)
 
 "Since the segment (n = 1) and the disk (n = 2) are the worst cases …". Page 1 checked; pages 2–7 unchanged.
+
+### v24 (Adrian, 27 Nov)
+
+"However, in 1993, a set was found …" (plain text). Fact check: correct (Kahn–Kalai n = 1325 answers Borsuk's question no). Page 1 checked; pages 2–7 unchanged.
