@@ -35,7 +35,7 @@
 \maketitle
 
 \begin{abstract}
-\noindent Gale (1953) conjectured that, among bounded sets in $\R^n$ with the same diameter (largest distance between two points), the ball is the hardest to split into $n+1$ parts of small diameter. Counterexamples were known for $n=3,\dots,6$ and, via Borsuk's problem, for $n>322$ ($n\ge 9$ by an unrefereed preprint). We give finite counterexamples in $\R^7$ (84 points) and $\R^8$ (85 points), and a family built from two regular simplices (higher-dimensional equilateral triangles) in orthogonal subspaces that is a counterexample for every $5\le n\le 1000$; its proof combines a short colouring argument by hand with exact arithmetic checks. Hence Gale's conjecture fails in every dimension $n\ge 3$.
+\noindent Gale (1953) conjectured that, among bounded sets in $\R^n$ with the same diameter (supremum of the distances between their points), the ball is the hardest to split into $n+1$ parts of small diameter. Counterexamples were known for $n=3,\dots,6$ and, via Borsuk's problem, for $n>322$ ($n\ge 9$ by an unrefereed preprint). We give finite counterexamples in $\R^7$ (84 points) and $\R^8$ (85 points), and a family built from two regular simplices (higher-dimensional equilateral triangles) in orthogonal subspaces that is a counterexample for every $5\le n\le 1000$; its proof combines a short colouring argument by hand with exact arithmetic checks. Hence Gale's conjecture fails in every dimension $n\ge 3$.
 
 \smallskip\noindent\emph{Note.} We found and checked these results with AI agents, using computer-checkable certificates and computer-checked proofs in Lean (\S\ref{sec:lean}) that assume two cited results; the paper has not been peer reviewed.
 \end{abstract}
@@ -65,9 +65,9 @@ A \emph{partition} of a set $V$ into $k$ parts is a map $\varphi:V\to[k]=\{1,\do
 \diam V=\sup_{x,y\in V}\|x-y\|\ \ (\diam\emptyset=0),\qquad
 \beta_k(V)=\inf_{\varphi:\,V\to[k]}\ \max_{i\in[k]}\ \diam \varphi^{-1}(i):
 \]
-the infimum, over partitions, of the largest part diameter (a minimum if $V$ is finite). Scaling $V$ by $t>0$ scales both by $t$.
+the infimum (greatest lower bound), over partitions, of the largest part diameter; for finite $V$ a best partition exists. Scaling $V$ by $t>0$ scales both by $t$.
 
-Let $B^n$ be the closed ball of diameter 1 centred at $0$. A \emph{regular simplex} in $\R^n$ is the convex hull (smallest convex set containing them) of $n+1$ points at equal pairwise distances, its \emph{vertices}: a filled equilateral triangle in $\R^2$, a regular tetrahedron in $\R^3$. Its \emph{facets} are the convex hulls of $n$ of its vertices (for a triangle, its sides). To bound $\beta_{n+1}(B^n)$ from above, take a regular simplex with its vertices on the boundary of $B^n$, like the triangle in Fig.~\ref{fig:disk}. The $n+1$ cones $\{\lambda y:\lambda\ge0,\ y\in F\}$ over its facets $F$ cut $B^n$ into $n+1$ congruent parts, the sectors of Fig.~\ref{fig:disk} for $n=2$ (a point in several cones goes to any one of them). Each part has diameter~\cite[\S1]{Vo26}
+Let $B^n$ be the closed ball of diameter 1 centred at $0$. A \emph{regular simplex} in $\R^n$ is the convex hull (smallest convex set containing them) of $n+1$ points at equal pairwise distances, its \emph{vertices}: a filled equilateral triangle in $\R^2$, a regular tetrahedron in $\R^3$. Its \emph{facets} are the convex hulls of $n$ of its vertices (for a triangle, its sides). To bound $\beta_{n+1}(B^n)$ from above, take a regular simplex with its vertices on the boundary of $B^n$, like the triangle in Fig.~\ref{fig:disk}. The $n+1$ cones $\{\lambda y:\lambda\ge0,\ y\in F\}$ over its facets $F$ cover $B^n$ by $n+1$ congruent pieces, the sectors of Fig.~\ref{fig:disk} for $n=2$; giving each point shared by several pieces to one of them yields a partition. Each piece has diameter~\cite[\S1]{Vo26}
 \begin{equation}\label{eq:sigma}
 \sigma_n=\sqrt{\frac{n+1}{n+2}}\ \ (n\text{ even}),\qquad
 \sigma_n=\sqrt{\frac12+\frac12\sqrt{\frac{n-1}{n+3}}}\ \ (n\text{ odd}),\qquad n\ge 2,
@@ -131,7 +131,7 @@ So $\beta_k(X)=s$ has a certificate in two parts: a proof that $G_{\ge s}(X)$ ha
 
 \section{The sets $X_7$ and $X_8$}\label{sec:sets}
 
-\noindent\textbf{Idea.} Take two regular simplices with edge length 1, centred at $0$, in orthogonal subspaces of dimensions $\lfloor n/2\rfloor$ and $\lceil n/2\rceil$. Their $n+2$ vertices, the \emph{poles} $P_i$ of one and $Q_j$ of the other, are at distance 1 within a simplex and $0.88$ to $0.89$ across. A partition into parts of diameter less than 1 puts the poles of each simplex into different parts, so with $n+1$ parts some part contains a pair $P_i$, $Q_j$. For each such pair we add three points, $A_{ij}$ near $P_i$, $B_{ij}$ near $Q_j$ and $C_{ij}$ between them, so that every such sharing forces some part to contain two points farther apart than $\sigma_n$ times the diameter of the set (\S\ref{sec:family}).
+\noindent\textbf{Idea.} Take two regular simplices with edge length 1, centred at $0$, in orthogonal subspaces of dimensions $\lfloor n/2\rfloor$ and $\lceil n/2\rceil$. Their $n+2$ vertices, the \emph{poles} $P_i$ of one and $Q_j$ of the other, are at distance 1 within a simplex and $0.88$ to $0.89$ across. A partition into parts of diameter less than 1 puts the poles of each simplex into different parts, so with $n+1$ parts some part contains a pair $P_i$, $Q_j$. For each such pair we add three points, $A_{ij}$ near $P_i$, $B_{ij}$ near $Q_j$ and $C_{ij}$ in the angle between them at $0$, so that every such sharing forces some part to contain two points farther apart than $\sigma_n$ times the diameter of the set (\S\ref{sec:family}). These points form a set $V_n(\theta)$ with parameters $\theta$; $X_8$ is such a set with rounded coordinates, and $X_7$ arises from one by adding and moving points.
 
 \smallskip
 \noindent\textbf{Construction.} Split $\R^n=\R^{m_1}\oplus\R^{m_2}$, $x=(x',x'')$, into the first $m_1=\lfloor n/2\rfloor$ and the last $m_2=\lceil n/2\rceil$ coordinates, two orthogonal subspaces ($3+4$ for $n=7$, $4+4$ for $n=8$). Let $p=m_1+1$, $q=m_2+1$, $I=\{0,\dots,m_1\}$, $J=\{0,\dots,m_2\}$, and fix unit vectors $u_i\in\R^{m_1}$ ($i\in I$) and $v_j\in\R^{m_2}$ ($j\in J$) with
@@ -177,7 +177,7 @@ For $\theta_7$ and $\theta_8$, $r_A$ and $r_B$ give the two simplices edge lengt
 &+\lambda_2^2+\mu_2^2-2\lambda_2\mu_2\langle v_j,v_{j'}\rangle.
 \end{split}
 \end{equation}
-So a squared distance depends only on the two types and on whether $i=i'$ and whether $j=j'$ (for the indices both points carry); we call these cases \emph{distance classes} (\S\ref{sec:family}). Each class is a quadratic polynomial in $\theta$, rational for rational $\theta$.
+So a squared distance depends only on the two types and on whether $i=i'$ and whether $j=j'$ (for the indices both points carry); we call these cases \emph{distance classes} (\S\ref{sec:family}). In each class the squared distance is a quadratic polynomial in $\theta$ with rational coefficients.
 
 \smallskip
 \noindent\textbf{The sets.} $X_8$ is defined by the file \file{points8.txt}{Riemann/Deep/Gale7/points8.txt}: the 85 points of $V_8(\theta_8)$, for one choice of the simplex vectors, rounded to 8 decimals. $X_7$ is defined by \file{points7.txt}{Riemann/Deep/Gale7/points7.txt} (84 points). We obtained it from $V_7(\theta_7)$, itself a counterexample (Theorem~\ref{thm:family}), by adding shifted copies of 15 points and then moving all 84 points by a local numerical search that increased $\beta_8/\diam$; every point of $X_7$ lies within $0.18$ of a point of $V_7(\theta_7)$, so Table~\ref{tab:construction} describes $X_7$ only approximately. Both sets have diameter about 1 (exact squares in Theorem~\ref{thm:x78}).
@@ -190,7 +190,7 @@ So a squared distance depends only on the two types and on whether $i=i'$ and wh
 \end{theorem}
 
 \begin{proof}
-In each fraction the numerator is $10^{16}s^2$ and the denominator $10^{16}D^2$, where $D=\diam X$ and $s$ is the claimed value of $\beta_{n+1}(X)$. By Lemma~\ref{lem:crit} we need (i)~$\chi(G_{\ge s}(X))>n+1$, (ii)~a proper $(n+1)$-colouring of $G_{>s}(X)$, (iii)~test~\eqref{eq:test}; Table~\ref{tab:cert} lists the checks. \texttt{verify.py} computes all squared distances exactly ($D^2$ is their maximum), checks (iii), and finds a colouring for (ii) and checks every edge. For (i) it runs two exhaustive backtracking searches over partial colourings (\emph{search nodes}), each fixing first the colours of a different clique (pairwise adjacent vertices), which loses nothing since colours can be renamed. Independently, a DRAT certificate~\cite{WHH14}, checked by the program \texttt{drat-trim}, proves that a Boolean encoding of these colourings, with the colours of one 6-clique fixed, has no solution. Lean checks (i) as well (\S\ref{sec:lean}); for $X_8$ by Lemma~\ref{lem:colour} (\S\ref{sec:family}).
+In each fraction the numerator is $10^{16}s^2$ and the denominator $10^{16}D^2$, where $D=\diam X$ and $s$ is the claimed value of $\beta_{n+1}(X)$. By Lemma~\ref{lem:crit} we need (i)~$\chi(G_{\ge s}(X))>n+1$, (ii)~a proper $(n+1)$-colouring of $G_{>s}(X)$, (iii)~test~\eqref{eq:test}; Table~\ref{tab:cert} lists the checks. \texttt{verify.py} computes all squared distances exactly ($D^2$ is their maximum), checks (iii), and finds a colouring for (ii) and checks every edge. For (i) it runs two exhaustive backtracking searches over partial colourings (\emph{search nodes}), each fixing first the colours of a different clique (pairwise adjacent vertices), which loses nothing since colours can be renamed. Independently, a DRAT certificate~\cite{WHH14}, checked by the program \texttt{drat-trim}, proves that a Boolean formula whose solutions are the proper $(n+1)$-colourings of $G_{\ge s}(X)$, with the colours of one 6-clique fixed, has no solution. Lean checks (i) as well (\S\ref{sec:lean}); for $X_8$ by Lemma~\ref{lem:colour} (\S\ref{sec:family}).
 \end{proof}
 
 \begin{center}\small
@@ -199,7 +199,7 @@ In each fraction the numerator is $10^{16}s^2$ and the denominator $10^{16}D^2$,
 \toprule
  & edges of $G_{\ge s}(X)$ & search nodes & DRAT & \texttt{verify.py} & Lean proof of (i)\\
 \midrule
-$X_7$ & 1765 & 1327; 23097 & 188 KB & 1 s & replays an 18887-token search certificate\\
+$X_7$ & 1765 & 1327; 23097 & 188 KB & 1 s & checks an exhaustive-search certificate\\
 $X_8$ & 2195 & 169807; 801496 & 1.2 MB & 37 s & Lemma~\ref{lem:colour}\\
 \bottomrule
 \end{tabular}
@@ -267,7 +267,7 @@ Every edge of $H(p,q)$ joins two points at distance $\ge s_n$, so a proper $(n+1
 
 For $X_8$, Lemma~\ref{lem:colour} also gives (i) of Theorem~\ref{thm:x78}: labelled as in $V_8(\theta_8)$, all 2170 edges of $H(5,5)$ join points of $X_8$ at squared distance $\ge s^2$ (checked exactly), so $H(5,5)$ is a subgraph of $G_{\ge s}(X_8)$ and $\chi(G_{\ge s}(X_8))\ge 10$.
 
-We stopped the check at $n=1000$; Hinrichs's theorem covers larger $n$ (\S\ref{sec:all}). The gap $s_n/D_n-\sigma_n$ is smallest at $n=1000$ (about $2.898\cdot10^{-7}$) and largest at $n=7$ (about $1.433\cdot10^{-3}$); near $n=1000$ it is about $0.29/n^2$, a rate we have not proved. For $n=3,4$ the best parameters we found give only $s_n/D_n\approx0.8752<\sigma_3$ and $\approx0.9106<\sigma_4$, so \S\ref{sec:all} uses other sets there.
+We stopped the check at $n=1000$; Hinrichs's theorem covers larger $n$ (\S\ref{sec:all}). The gap $s_n/D_n-\sigma_n$ is smallest at $n=1000$ (about $2.898\cdot10^{-7}$) and largest at $n=7$ (about $1.433\cdot10^{-3}$); near $n=1000$ it is about $0.29/n^2$, a rate we have not proved. For $n=3,4$ the same construction with the best parameters we found has ratio of shortest $H$-edge to diameter only $\approx0.8752<\sigma_3$ and $\approx0.9106<\sigma_4$, so \S\ref{sec:all} uses other sets there.
 
 \section{Every dimension $n\ge 3$}\label{sec:all}
 

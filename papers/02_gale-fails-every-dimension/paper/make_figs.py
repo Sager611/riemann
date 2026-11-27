@@ -219,7 +219,7 @@ def fig_disk():
     ax.plot([tri[0, 0], tri[1, 0]], [tri[0, 1], tri[1, 1]], color="black", lw=0.9, zorder=4)
     ax.plot(tri[:, 0], tri[:, 1], ls="", marker="o", ms=2.5, color="black", zorder=5)
     mid = (tri[0] + tri[1]) / 2
-    ax.text(mid[0] + 0.065, mid[1] - 0.04, r"$\sqrt{3}\,D/2$", fontsize=8, rotation=60, ha="center", va="center",
+    ax.text(mid[0] + 0.09, mid[1] - 0.052, r"$\sqrt{3}\,D/2$", fontsize=8, rotation=60, ha="center", va="center",
             rotation_mode="anchor")
     ax.annotate("", xy=(0.5, -0.62), xytext=(-0.5, -0.62), arrowprops=dict(arrowstyle="<->", lw=0.5, color="0.3",
                                                                           shrinkA=0, shrinkB=0))
