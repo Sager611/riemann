@@ -122,3 +122,11 @@ Fixed in v14: Note "using computer-checkable certificates (§4) and proofs verif
 R3, R4, R5: VERDICT: CLEAR. Math: VERDICT: CORRECT. R1: "supremum" unexplained in the abstract; §1 "whose splitting step is proved by hand" vague. R2: the move from colourings to a Boolean formula is unexplained.
 
 Fixed in v15: abstract "diameter (least upper bound of the distances between their points)" (matches §2's gloss of infimum); §1 "in which a proof by hand replaces the search over splits and exact arithmetic checks the distances"; Theorem 2's proof "a Boolean formula with one true/false variable for each vertex and colour has a solution exactly when G≥s(X) has a proper (n+1)-colouring in which one 6-clique has fixed colours; a DRAT certificate … proves that the formula has no solution" (checked against verify.py's CNF: variable k·i+c+1 = vertex i gets colour c); \looseness=-1 on that proof (no one-word last line).
+
+### Round 15 (v15, final): six fresh reviewers
+
+R1, R2, R3, R4, R5: VERDICT: CLEAR. Math: VERDICT: CORRECT. No open flags.
+
+### no-ai-slop detection mode on the final text (v15)
+
+Banned words 0; empty adverbs 0; empty phrases 0; binary contrasts 0; puffery 0; trailing -ing clauses 0; weasel attribution 0; recap endings 0; hedges 0. Em dashes: 1, the empty cell of Table 1 (not prose). Colons followed by lowercase: 23, all introducing lists, definitions or glosses (e.g. "a certificate in two parts: a proof that …"), none a colon reveal. Visual check of all 7 pages and of each figure at full size: clean.
