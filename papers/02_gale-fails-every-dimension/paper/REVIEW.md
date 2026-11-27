@@ -72,3 +72,9 @@ Fixed in v6: "Intersecting B^n with the n+1 cones … gives n+1 congruent pieces
 R4, R5: VERDICT: CLEAR. Math: VERDICT: CORRECT. R1: 1 flag (convex hull glossed via the undefined "convex set"). R2: 1 flag (pole distance across is 0.8944 for n = 8, outside "0.88 to 0.89"). R3: 1 flag (the purpose clause for left-over lines skipped the final pole step).
 
 Fixed in v7: convex hull = all weighted averages with nonnegative weights summing to 1; "0.880 (n = 7) or 0.894 (n = 8) across"; "Counting the colours that the Cᵢⱼ in left-over rows and columns need forces g = 1 or h = 1; then a pole shares its colour with an adjacent vertex."
+
+### Round 7 (v7): six fresh reviewers
+
+R1, R3, R4, R5: VERDICT: CLEAR. Math: VERDICT: CORRECT. R2: 4 flags (why the threshold 1 in the Idea; "about" for the rounded pole distances; backtracking and search nodes; DRAT certificate unexplained).
+
+Fixed in v8: "A partition into parts of diameter at most σₙ times the diameter of the set, which is less than 1, puts the poles of each simplex into different parts"; "about 0.880 (n = 7) or 0.894 (n = 8)"; searches "colour one vertex at a time and step back when two adjacent vertices get the same colour (search nodes: partial colourings visited)"; "a DRAT certificate, a machine-checkable list of logical steps checked by the program drat-trim".
