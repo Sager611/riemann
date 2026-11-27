@@ -232,3 +232,7 @@ Dropped "(§7)" after "So Gale's conjecture fails in these dimensions too". Page
 ### v28 (Adrian, 27 Nov)
 
 "Thus, we will show that Gale's conjecture fails in every dimension n ≥ 3 (Theorem 1)." Page 1 checked; pages 2–7 unchanged.
+
+### v29 (Adrian, 27 Nov)
+
+Dropped "proved by hand up to exact distance checks" from §1 ("… and a family for 5 ≤ n ≤ 1000 (Theorem 3)."). Text reflows on pages 1–5 (§5 now starts at the foot of p-2); pages 1–5 checked; 7 pages.
