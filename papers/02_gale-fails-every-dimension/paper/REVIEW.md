@@ -134,3 +134,13 @@ Banned words 0; empty adverbs 0; empty phrases 0; binary contrasts 0; puffery 0;
 ### v16: Adrian's wording (27 Nov)
 
 §1 opening replaced verbatim: "In 1933, Borsuk asked whether every bounded set in ℝⁿ can be split into n + 1 parts, each with a smaller diameter than the set. He proved that n parts are not always enough: a ball in ℝⁿ cannot be split into n such parts [1]." Citation kept. p-1 and p-2 re-rendered and checked (one line moves to p-2; pages 3–7 unchanged).
+
+### Round 16 (v16): six fresh reviewers
+
+R1, R3, R5: VERDICT: CLEAR. Math: VERDICT: CORRECT (incl. the Borsuk 1933 sentences). R2: Fig. 2 "Dashed: radius 0.62" names neither style nor panels; the Boolean variables' meaning is unstated. R4: "commit" is Git jargon.
+
+Fixed in v17: Fig. 2 "Grey arcs in (b), (c): radius 0.62 about 0"; Theorem 2's proof "a Boolean formula whose true/false variables say which vertex has which colour has a solution exactly when …" (not "exactly one colour per vertex": verify.py's CNF has only at-least-one clauses); §8 "The file links point to version a85a25e of the repository".
+
+### v17: Adrian's wording (27 Nov), second sentence of §1
+
+Replaced verbatim: "The answer is no for large n: some sets in ℝⁿ cannot be split into n + 1 parts of smaller diameter [6]. This holds for every n > 322 [4], with a refereed counterexample in ℝ⁶⁴ [5]; an unrefereed OpenAI preprint gives counterexamples for every n ≥ 9 [8, Cor. 7.1]." Voronov [9] checked: all 8 citations are in Gale contexts (Fig. 1 disk, Gale's n = 3–6 counterexamples and Voronov's question in §1, σₙ bound and its optimality, Gale's conjecture, refined sets in §7, ball bound in §8); none in a Borsuk sentence, so none removed. \looseness=-1 on the last paragraph of §1 (avoids "(Theo-/rem 1)."). Pages 1, 3, 4, 6 re-rendered and checked.
