@@ -40,3 +40,9 @@ Not changed:
 - R2.11, R3.25, R5.19, R5.41 list of all 36 classes: a one-sentence counting rule instead; the list is in family.py.
 - R2.14 which 15 points were copied: discovery history; X₇ is defined by its file.
 - M.7 details the reviewer could not verify: verified here (max displacement 0.1757; 18887 certificate tokens, P7; timings from today's verify.py runs; lean-toolchain; PROOF.md).
+
+### Round 2 (v2, 7 pages): six fresh reviewers
+
+Flags: R1 12, R2 10, R3 4, R4 2, R5 9, M 1 (Table 4 "18887-step case split": the certificate has 18887 tokens). No CLEAR.
+
+Fixed in v3: regular simplex glossed in the abstract; "colouring argument by hand with exact arithmetic checks"; "computer-checkable certificates and machine-checked proofs"; Voronov's ask as "without exhaustive computer search"; family scope "for 5 ≤ n ≤ 1000"; simplex = convex hull, facets = convex hulls of n vertices, purpose of the cone partition first, points in several cones; "this stronger inequality violates"; X₃, X₄, X₇, X₈ listed explicitly; V_n pointer in Table 1; "exhaustive search"; Idea paragraph gives dimensions, centre, pole distances 0.88–0.89, "at least about 0.94"; P–A … Q–C class count; proof of Theorem 2 before Table 4, 10¹⁶s² and 10¹⁶D², DRAT glossed and tied back to colourings, H(5,5) ⊆ G≥s(X₈) ⇒ χ ≥ 10; Fig. 2 caption: small markers, block lengths, purpose of the circle, α per n; §6 search sentence after H is defined; Lemma 2 grid sentence (blocks contain no C-vertices), plain plan sentence; 17-class rule spelled out; Lean: plain words for sorry, axioms, kernel; Lean scope stated exactly (Theorems 1–3, Lemma 2 lower bound, the parts of Lemma 1 used); "replays an 18887-token search certificate".
