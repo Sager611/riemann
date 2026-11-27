@@ -162,3 +162,13 @@ R1, R2, R3, R4, R5: VERDICT: CLEAR, no [AUTHOR WORDING] flags on Adrian's paragr
 ### no-ai-slop detection mode on the final text (v18)
 
 Banned words 0; empty adverbs 0; empty phrases 0; binary contrasts 0; puffery 0; trailing -ing clauses 0; weasel attribution 0; recap endings 0; hedges 0. Em dashes: 1, the empty cell of Table 1. Colons followed by lowercase: 24, all introducing lists, definitions or glosses; one is in Adrian's Borsuk sentence ("not always enough: a ball …"). Visual check: every page re-rendered after each change; p-1, p-3, p-5 of v18 viewed, other pages unchanged since viewed.
+
+### v19: Adrian's Borsuk passage (27 Nov, final wording) and standing rule
+
+§1 first paragraph replaced by Adrian's text, verbatim (two messages; the second replaced its last sentence): "In 1933, Borsuk found out you cannot split a ball in ℝⁿ into n parts such that all parts have a smaller diameter than the ball [1]. This raised the question on whether the ball is the worst case, i.e. whether every set can be split into n + 1 such parts. In 1993, a set was found that cannot be split into n + 1 parts in such a way for n = 1325 [6], then for all n > 322 [4], n = 64 [5], and recently OpenAI showed it for all n ≥ 9 in an unrefereed preprint [8]." The relayed messages had lost every "$n" to shell expansion ("into $ parts", "+1$", " = 1325$"); restored as $n…$. Typesetting only: "i.e.\ " (normal space), tie "unrefereed~preprint". Our own text: tie "every~$n\ge 3$~(Theorem 1)" (no short last line).
+
+Standing rule (BRIEF "Adrian's text"): Adrian's passages are final; reviewers only fact-check them; prompts quote them as "AUTHOR TEXT: fact-check only, do not suggest rewording"; a wrong fact is changed alone and listed under "For Adrian".
+
+Fact check of Adrian's paragraph: Borsuk 1933 (ball in ℝⁿ not splittable into n parts of smaller diameter), Kahn–Kalai 1993 (n = 1325), Hinrichs 2002 (n > 322), Jenrich–Brouwer 2014 (n = 64), OpenAI preprint (n ≥ 9, unrefereed): all correct.
+
+For Adrian: none.
