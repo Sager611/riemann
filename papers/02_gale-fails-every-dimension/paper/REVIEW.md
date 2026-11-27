@@ -102,3 +102,11 @@ Fixed in v11: §7 now states "β₄(X₃)/diam X₃ > σ₃ and β₅(X₄)/diam
 R1, R2, R3, R4, R5: VERDICT: CLEAR. Math: 1 scope flag: §8 "Theorems 1–3 … are formalized" and Table 6 "Theorem 3 → claim2", but claim2 states β_{n+1}(Vₙ)/Dₙ > σₙ, not the intermediate bound β_{n+1} ≥ sₙ (checked: Family.lean rowOK_facts uses a stored threshold tZ, not "the shortest H-edge").
 
 Fixed in v12: §8 "Theorems 1 and 2, the inequality β_{n+1} > σₙDₙ of Theorem 3, the lower bound of Lemma 2 and the parts of Lemma 1 that we use are formalized"; Table 6 row "Theorem 3, β_{n+1} > σₙDₙ | claim2".
+
+### Round 12 (v12): six fresh reviewers
+
+R1–R5: VERDICT: CLEAR. Math: VERDICT: CORRECT.
+
+### v13: author block (Adrian, 27 Nov)
+
+Class article → amsart (reqno; caption margin 0): \author{Adrián Sager}, \address{Independent researcher}, \urladdr{https://www.linkedin.com/in/a-sager/} (printed after the references, clickable); abstract before \maketitle; date as amsart footnote. github.com/Sager611/riemann now only as availability link: Note adds "Code, certificates and Lean files are at github.com/Sager611/riemann; file names in this paper link there"; §8 "The file links point to commit a85a25e". Provenance sentence unchanged. Visual check of all 7 pages: title block, running heads, equation numbers right, Table 6 spacing; main text ends on p-6.

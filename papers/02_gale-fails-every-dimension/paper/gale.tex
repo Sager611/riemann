@@ -1,10 +1,10 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[10pt,a4paper,reqno]{amsart}
 \usepackage[hmargin=2.7cm,top=2.3cm,bottom=2.6cm]{geometry}
-\usepackage{amsmath,amssymb,amsthm}
+\usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{array}
-\usepackage[font=small,labelfont=bf,labelsep=period]{caption}
+\usepackage[font=small,labelfont=bf,labelsep=period,margin=0pt]{caption}
 \usepackage{wrapfig}
 \usepackage{enumitem}
 \usepackage{microtype}
@@ -27,18 +27,20 @@
 \renewcommand{\textfraction}{0.08}
 \renewcommand{\floatpagefraction}{0.8}
 
-\title{Gale's conjecture fails in every dimension $n\ge 3$}
-\author{\href{https://github.com/Sager611/riemann}{github.com/Sager611/riemann}}
+\title[Gale's conjecture fails in every dimension]{Gale's conjecture fails in every dimension $n\ge 3$}
+\author{Adri\'an Sager}
+\address{Independent researcher}
+\urladdr{\url{https://www.linkedin.com/in/a-sager/}}
 \date{November 2026}
 
 \begin{document}
-\maketitle
-
 \begin{abstract}
-\noindent Gale (1953) conjectured that, among bounded sets in $\R^n$ with the same diameter (supremum of the distances between their points), the ball is the hardest to split into $n+1$ parts of small diameter. Counterexamples were known for $n=3,\dots,6$ and, via Borsuk's problem, for $n>322$ ($n\ge 9$ by an unrefereed preprint). We give finite counterexamples in $\R^7$ (84 points) and $\R^8$ (85 points), and a family built from two regular simplices (higher-dimensional equilateral triangles) in orthogonal subspaces that is a counterexample for every $5\le n\le 1000$; its proof combines a short colouring argument by hand with exact arithmetic checks. Hence Gale's conjecture fails in every dimension $n\ge 3$.
+Gale (1953) conjectured that, among bounded sets in $\R^n$ with the same diameter (supremum of the distances between their points), the ball is the hardest to split into $n+1$ parts of small diameter. Counterexamples were known for $n=3,\dots,6$ and, via Borsuk's problem, for $n>322$ ($n\ge 9$ by an unrefereed preprint). We give finite counterexamples in $\R^7$ (84 points) and $\R^8$ (85 points), and a family built from two regular simplices (higher-dimensional equilateral triangles) in orthogonal subspaces that is a counterexample for every $5\le n\le 1000$; its proof combines a short colouring argument by hand with exact arithmetic checks. Hence Gale's conjecture fails in every dimension $n\ge 3$.
 
-\smallskip\noindent\emph{Note.} We found and checked these results with AI agents, using computer-checkable certificates and computer-checked proofs in Lean (\S\ref{sec:lean}) that assume two cited results; the paper has not been peer reviewed.
+\smallskip\noindent\emph{Note.} We found and checked these results with AI agents, using computer-checkable certificates and computer-checked proofs in Lean (\S\ref{sec:lean}) that assume two cited results; the paper has not been peer reviewed. Code, certificates and Lean files are at \href{https://github.com/Sager611/riemann}{github.com/Sager611/riemann}; file names in this paper link there.
 \end{abstract}
+
+\maketitle
 
 \section{Motivation}
 
@@ -277,8 +279,9 @@ For $n=3,4$ we use our sets $X_3$ (170 points, \file{Gale/points.txt}{Riemann/De
 
 \section{Lean formalization}\label{sec:lean}
 
-Lean~4~\cite{dMU21} is a proof assistant, a program that accepts a proof only after checking every step; Mathlib~\cite{mC20} is its library. Theorems~\ref{thm:main} and~\ref{thm:x78}, the inequality $\beta_{n+1}>\sigma_nD_n$ of Theorem~\ref{thm:family}, the lower bound of Lemma~\ref{lem:colour} and the parts of Lemma~\ref{lem:crit} that we use are formalized (Table~\ref{tab:lean}; Lean v4.35.0-rc2, Mathlib \texttt{06535612}). There, \texttt{GaleConjecture n} states $\beta_{n+1}(V)\le\sigma_n\diam V$ for every bounded $V\subset\R^n$, that is, no counterexample; \texttt{GaleConjectureBall n} is Gale's conjecture of \S\ref{sec:def}, with $\beta_{n+1}(B^n)$. Two cited facts enter as explicit hypotheses: Hinrichs's theorem~\cite{Hi02} for $n>1000$, and $\beta_{n+1}(B^n)\le\sigma_n$~\cite{Vo26} to reach the ball form. Otherwise the proofs contain no placeholders for missing proofs (\texttt{sorry}) and assume nothing beyond the three standard axioms of Lean's logic; Lean's proof checker also verifies the finite computations. All files are in \href{https://github.com/Sager611/riemann/tree/a85a25ee1578748e7fa014f51dd762a6195fe923}{github.com/Sager611/riemann} at commit \texttt{a85a25e} (file names in this paper are links); \file{PROOF.md}{papers/02_gale-fails-every-dimension/PROOF.md} maps each step to Lean.
+Lean~4~\cite{dMU21} is a proof assistant, a program that accepts a proof only after checking every step; Mathlib~\cite{mC20} is its library. Theorems~\ref{thm:main} and~\ref{thm:x78}, the inequality $\beta_{n+1}>\sigma_nD_n$ of Theorem~\ref{thm:family}, the lower bound of Lemma~\ref{lem:colour} and the parts of Lemma~\ref{lem:crit} that we use are formalized (Table~\ref{tab:lean}; Lean v4.35.0-rc2, Mathlib \texttt{06535612}). There, \texttt{GaleConjecture n} states $\beta_{n+1}(V)\le\sigma_n\diam V$ for every bounded $V\subset\R^n$, that is, no counterexample; \texttt{GaleConjectureBall n} is Gale's conjecture of \S\ref{sec:def}, with $\beta_{n+1}(B^n)$. Two cited facts enter as explicit hypotheses: Hinrichs's theorem~\cite{Hi02} for $n>1000$, and $\beta_{n+1}(B^n)\le\sigma_n$~\cite{Vo26} to reach the ball form. Otherwise the proofs contain no placeholders for missing proofs (\texttt{sorry}) and assume nothing beyond the three standard axioms of Lean's logic; Lean's proof checker also verifies the finite computations. The file links point to commit \href{https://github.com/Sager611/riemann/tree/a85a25ee1578748e7fa014f51dd762a6195fe923}{\texttt{a85a25e}}; \file{PROOF.md}{papers/02_gale-fails-every-dimension/PROOF.md} maps each step to Lean.
 
+\vspace{4pt}
 \begin{center}\small
 \begin{minipage}{\textwidth}\centering
 \captionsetup{justification=raggedright,singlelinecheck=false}
