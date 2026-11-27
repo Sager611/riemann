@@ -130,3 +130,7 @@ R1, R2, R3, R4, R5: VERDICT: CLEAR. Math: VERDICT: CORRECT. No open flags.
 ### no-ai-slop detection mode on the final text (v15)
 
 Banned words 0; empty adverbs 0; empty phrases 0; binary contrasts 0; puffery 0; trailing -ing clauses 0; weasel attribution 0; recap endings 0; hedges 0. Em dashes: 1, the empty cell of Table 1 (not prose). Colons followed by lowercase: 23, all introducing lists, definitions or glosses (e.g. "a certificate in two parts: a proof that …"), none a colon reveal. Visual check of all 7 pages and of each figure at full size: clean.
+
+### v16: Adrian's wording (27 Nov)
+
+§1 opening replaced verbatim: "In 1933, Borsuk asked whether every bounded set in ℝⁿ can be split into n + 1 parts, each with a smaller diameter than the set. He proved that n parts are not always enough: a ball in ℝⁿ cannot be split into n such parts [1]." Citation kept. p-1 and p-2 re-rendered and checked (one line moves to p-2; pages 3–7 unchanged).
