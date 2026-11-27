@@ -87,7 +87,7 @@ For every $n\ge 3$ there is a counterexample in $\R^n$; for $n\le 1000$ it is a 
 \end{theorem}
 
 \begin{center}\small
-\captionof{table}{The counterexamples $X$ of Theorem~\ref{thm:main}. For $X_3$, $X_4$, $X_7$, $X_8$ matching lower and upper bounds give the exact ratio, shown truncated. The family $V_n(\theta_n)$ of \S\ref{sec:family} also covers $n=7,8$; $X_7$, $X_8$ are listed for their exact ratios. Rows with $n\le1000$ are also proved in Lean (\S\ref{sec:lean}).}\label{tab:main}
+\captionof{table}{The counterexamples $X$ of Theorem~\ref{thm:main}. For $X_3$, $X_4$, $X_7$, $X_8$ matching lower and upper bounds give the exact ratio, shown truncated. The family $V_n(\theta_n)$ of \S\ref{sec:family} also covers $n=7,8$; $X_7$, $X_8$ are listed for their exact ratios. For $n\le1000$, Lean (\S\ref{sec:lean}) also proves the bounds in each row.}\label{tab:main}
 \setlength{\tabcolsep}{4pt}
 \begin{tabular}{@{}llrlll@{}}
 \toprule
@@ -131,7 +131,7 @@ So $\beta_k(X)=s$ has a certificate in two parts: a proof that $G_{\ge s}(X)$ ha
 
 \section{The sets $X_7$ and $X_8$}\label{sec:sets}
 
-\noindent\textbf{Idea.} Take two regular simplices with edge length 1, centred at $0$, in orthogonal subspaces of dimensions $\lfloor n/2\rfloor$ and $\lceil n/2\rceil$. Their $n+2$ vertices, the \emph{poles} $P_i$ of one and $Q_j$ of the other, are at distance 1 within a simplex and about $0.880$ ($n=7$) or $0.894$ ($n=8$) across. If $D\approx1$ is the diameter of the set, a partition into parts of diameter at most $\sigma_nD<1$ puts the poles of each simplex into different parts, so with $n+1$ parts some part contains a pair $P_i$, $Q_j$. For each such pair we add three points, $A_{ij}$ near $P_i$, $B_{ij}$ near $Q_j$ and $C_{ij}$ in the angle between them at $0$, so that every such sharing forces some part to contain two points farther apart than $\sigma_nD$ (\S\ref{sec:family}). These points form a set $V_n(\theta)$ with parameters $\theta$; $X_8$ is such a set with rounded coordinates, and $X_7$ arises from one by adding and moving points.
+\noindent\textbf{Idea.} Take two regular simplices with edge length 1, centred at $0$, in orthogonal subspaces of dimensions $\lfloor n/2\rfloor$ and $\lceil n/2\rceil$. Their $n+2$ vertices, the \emph{poles} $P_i$ of one and $Q_j$ of the other, are at distance 1 within a simplex and about $0.880$ ($n=7$) or $0.894$ ($n=8$) across. If $D\approx1$ is the diameter of the set, a partition into parts of diameter at most $\sigma_nD<1$ puts the poles of each simplex into different parts, so with $n+1$ parts some part contains a pair $P_i$, $Q_j$. For every pair $P_i$, $Q_j$ we add three points, $A_{ij}$ near $P_i$, $B_{ij}$ near $Q_j$ and $C_{ij}$ in the angle between them at $0$, placed so that, together with the poles, they rule out every partition into $n+1$ parts of diameter at most $\sigma_nD$ (\S\ref{sec:family}). These points form a set $V_n(\theta)$ with parameters $\theta$; $X_8$ is such a set with rounded coordinates, and $X_7$ arises from one by adding and moving points.
 
 \smallskip
 \noindent\textbf{Construction.} Split $\R^n=\R^{m_1}\oplus\R^{m_2}$, $x=(x',x'')$, into the first $m_1=\lfloor n/2\rfloor$ and the last $m_2=\lceil n/2\rceil$ coordinates, two orthogonal subspaces ($3+4$ for $n=7$, $4+4$ for $n=8$). Let $p=m_1+1$, $q=m_2+1$, $I=\{0,\dots,m_1\}$, $J=\{0,\dots,m_2\}$, and fix unit vectors $u_i\in\R^{m_1}$ ($i\in I$) and $v_j\in\R^{m_2}$ ($j\in J$) with
@@ -292,6 +292,7 @@ Lemma~\ref{lem:crit}(a) with~\eqref{eq:test} & \lean{sigma\_mul\_diam\_lt\_beta}
 Theorem~\ref{thm:x78} & \lean{claim1\_n7}{Riemann/Deep/LeanGale/Main.lean\#L93-L124}, \lean{claim1\_n8}{Riemann/Deep/LeanGale/Main.lean\#L137-L156} & \texttt{Main.lean}\\
 Lemma~\ref{lem:colour}, lower bound & \lean{card\_le}{Riemann/Deep/Gale7/Lean/Lemma.lean\#L435-L460} & \texttt{Lemma.lean}\\
 Theorem~\ref{thm:family} & \lean{claim2}{Riemann/Deep/LeanGale/Main.lean\#L202-L215} & \texttt{Main.lean}\\
+lower and upper bounds for $X_3$, $X_4$ & \lean{lower}{Riemann/Deep/LeanGale/P3.lean\#L42-L46}, \lean{upper}{Riemann/Deep/LeanGale/P3.lean\#L48-L52} & \texttt{P3.lean}, \texttt{P4.lean}\\
 Theorem~\ref{thm:main}, $n\le 1000$ & \lean{gale\_fails\_le\_1000}{Riemann/Deep/LeanGale/Main.lean\#L227-L236} & \texttt{Main.lean}\\
 Theorem~\ref{thm:main}, all $n\ge 3$; uses~\cite{Hi02} & \lean{gale\_fails}{Riemann/Deep/LeanGale/Main.lean\#L266-L273} & \texttt{Main.lean}\\
 Gale's conjecture fails; uses~\cite{Hi02}, $\beta_{n+1}(B^n)\le\sigma_n$ & \lean{gale\_ball\_fails}{Riemann/Deep/LeanGale/Main.lean\#L283-L289} & \texttt{Main.lean}\\

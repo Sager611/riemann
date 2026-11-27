@@ -84,3 +84,9 @@ Fixed in v8: "A partition into parts of diameter at most σₙ times the diamete
 R1, R3, R4: VERDICT: CLEAR. Math: VERDICT: CORRECT. R2 and R5: the same flag ("which is less than 1" seems to say the diameter is below 1).
 
 Fixed in v9: "If D ≈ 1 is the diameter of the set, a partition into parts of diameter at most σₙD < 1 puts the poles of each simplex into different parts". make_figs.py: ruff clean (no unused import, context managers, literals, f-strings), deterministic PDFs (no CreationDate; two runs give identical checksums).
+
+### Round 9 (v9): six fresh reviewers
+
+R1, R3, R4, R5: VERDICT: CLEAR. R2: the Idea paragraph's "every such sharing forces some part to contain two points farther apart than σₙD" suggests each pair's three points act alone. Math: "Rows with n ≤ 1000 are also proved in Lean" overstated for X₃, X₄ (raised because the evidence we gave it listed only their Lean lower bounds).
+
+Fixed in v10: Idea: "For every pair Pᵢ, Qⱼ we add three points … placed so that, together with the poles, they rule out every partition into n+1 parts of diameter at most σₙD (§6)". Lean actually proves both bounds for X₃, X₄ (P3.lean, P4.lean: lower, upper, diam_X; Main.lean beta_eq combines them); Table 1 caption now "For n ≤ 1000, Lean (§8) also proves the bounds in each row", and Table 6 gains the row "lower and upper bounds for X₃, X₄ | lower, upper | P3.lean, P4.lean" (links pinned to a85a25e, L42–L46, L48–L52). Evidence for the next math reviewer corrected.
