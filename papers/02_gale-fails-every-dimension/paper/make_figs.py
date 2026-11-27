@@ -12,9 +12,9 @@ from pathlib import Path
 import matplotlib
 
 matplotlib.use("pdf")
-import matplotlib.pyplot as plt  # noqa: E402
-import numpy as np  # noqa: E402
-from matplotlib.patches import Circle, Polygon, Rectangle, Wedge  # noqa: E402
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.patches import Circle, Rectangle, Wedge
 
 HERE = Path(__file__).resolve().parent
 DATA = HERE.parents[2] / "Riemann" / "Deep" / "Gale7"
@@ -33,18 +33,20 @@ SIZE = {"P": 13, "Q": 11, "A": 11, "B": 11, "C": 9}
 
 def read_points(name):
     rows = []
-    for line in open(DATA / name):
-        line = line.split("#")[0].strip()
-        if line:
-            rows.append([float(Fraction(s)) for s in line.replace(",", " ").split()])
+    with (DATA / name).open() as fh:
+        for raw in fh:
+            line = raw.split("#")[0].strip()
+            if line:
+                rows.append([float(Fraction(s)) for s in line.replace(",", " ").split()])
     return np.array(rows)
 
 
 def params(n):
-    for line in open(DATA / "family_params.txt"):
-        w = line.split("#")[0].split()
-        if w and int(w[0]) == n:
-            return int(w[1]), int(w[2]), [float(x) for x in w[3:11]]
+    with (DATA / "family_params.txt").open() as fh:
+        for line in fh:
+            w = line.split("#")[0].split()
+            if w and int(w[0]) == n:
+                return int(w[1]), int(w[2]), [float(x) for x in w[3:11]]
     raise KeyError(n)
 
 
@@ -94,15 +96,15 @@ def load():
     Y8, lab8 = family(8, U, W)
     l8, err8 = label_by_nearest(X8, Y8, lab8)
     assert err8.max() < 1e-7 and len(X8) == 85
-    sets[8] = dict(X=X8, lab=l8, U=U, W=W, m1=m1)
+    sets[8] = {"X": X8, "lab": l8, "U": U, "W": W, "m1": m1}
     S7 = read_points("points7_sym69.txt")
     m1, _, prm = params(7)
     U, W = simplices(S7, m1, prm[0], prm[1])
     Y7, lab7 = family(7, U, W)
     X7 = read_points("points7.txt")
-    l7, err7 = label_by_nearest(X7, Y7, lab7)
+    l7, _ = label_by_nearest(X7, Y7, lab7)
     assert len(X7) == 84
-    sets[7] = dict(X=X7, lab=l7, U=U, W=W, m1=m1)
+    sets[7] = {"X": X7, "lab": l7, "U": U, "W": W, "m1": m1}
     return sets
 
 
@@ -140,9 +142,9 @@ def axes_style(ax, lo, hi, xlabel, ylabel):
 
 
 def fig_sets(sets):
-    fig, axes = plt.subplots(2, 3, figsize=(6.3, 4.15), gridspec_kw=dict(wspace=0.22, hspace=0.14))
-    cfg = {7: dict(ph1=np.pi / 2, ph2=np.pi / 2 + np.pi / 10, alpha=np.deg2rad(50)),
-           8: dict(ph1=np.pi / 2, ph2=np.pi / 2 + np.pi / 5, alpha=np.pi / 4)}
+    fig, axes = plt.subplots(2, 3, figsize=(6.3, 4.15), gridspec_kw={"wspace": 0.22, "hspace": 0.14})
+    cfg = {7: {"ph1": np.pi / 2, "ph2": np.pi / 2 + np.pi / 10, "alpha": np.deg2rad(50)},
+           8: {"ph1": np.pi / 2, "ph2": np.pi / 2 + np.pi / 5, "alpha": np.pi / 4}}
     for row, n in enumerate((7, 8)):
         S = sets[n]; X, lab, U, W, m1 = S["X"], S["lab"], S["U"], S["W"], S["m1"]
         x1, x2 = X[:, :m1], X[:, m1:]
@@ -192,14 +194,14 @@ def fig_sets(sets):
                                      ((e, f), r"$(e,f)$", (-27, -3)), ((c_, d), r"$(c,d)$", (2, -10)),
                                      ((0, rB), r"$(0,r_B)$", (4, 2))):
                 ax.annotate(txt, (x, y), xytext=off, textcoords="offset points", fontsize=6.5, color="0.25")
-        axes[row, 0].text(-0.62, 0.62, "$X_%d$" % n, fontsize=10, va="top")
+        axes[row, 0].text(-0.62, 0.62, f"$X_{n}$", fontsize=10, va="top")
     for j, t in enumerate(("(a) polygon view", "(b) cell view", "(c) block norms")):
         axes[0, j].set_title(t, fontsize=8, pad=3)
     handles = [plt.Line2D([], [], ls="", marker=STYLE[o][1], color=STYLE[o][0], markeredgecolor="white",
-                          markeredgewidth=0.3, markersize=5, label="$%s$" % o) for o in "PAQBC"]
+                          markeredgewidth=0.3, markersize=5, label=f"${o}$") for o in "PAQBC"]
     fig.legend(handles=handles, loc="lower center", ncol=5, frameon=False, fontsize=8, handletextpad=0.2,
                columnspacing=1.2, bbox_to_anchor=(0.5, -0.02))
-    fig.savefig(OUT / "sets.pdf", bbox_inches="tight", pad_inches=0.02)
+    fig.savefig(OUT / "sets.pdf", bbox_inches="tight", pad_inches=0.02, metadata={"CreationDate": None})
     plt.close(fig)
 
 
@@ -221,11 +223,11 @@ def fig_disk():
     mid = (tri[0] + tri[1]) / 2
     ax.text(mid[0] + 0.09, mid[1] - 0.052, r"$\sqrt{3}\,D/2$", fontsize=8, rotation=60, ha="center", va="center",
             rotation_mode="anchor")
-    ax.annotate("", xy=(0.5, -0.62), xytext=(-0.5, -0.62), arrowprops=dict(arrowstyle="<->", lw=0.5, color="0.3",
-                                                                          shrinkA=0, shrinkB=0))
+    ax.annotate("", xy=(0.5, -0.62), xytext=(-0.5, -0.62),
+                arrowprops={"arrowstyle": "<->", "lw": 0.5, "color": "0.3", "shrinkA": 0, "shrinkB": 0})
     ax.text(0, -0.66, "$D$", ha="center", va="top", fontsize=8)
     ax.set_aspect("equal"); ax.set_xlim(-0.56, 0.56); ax.set_ylim(-0.74, 0.54); ax.axis("off")
-    fig.savefig(OUT / "disk.pdf", bbox_inches="tight", pad_inches=0.01)
+    fig.savefig(OUT / "disk.pdf", bbox_inches="tight", pad_inches=0.01, metadata={"CreationDate": None})
     plt.close(fig)
 
 
@@ -239,13 +241,13 @@ def fig_hgraph(p=3, q=4):
         y = -i * dy
         ax.add_patch(Rectangle((-0.68, y - w / 2), (q - 1) * dx + xa + 0.86, w, fc=STYLE["P"][0], alpha=0.16, lw=0))
         ax.scatter([-0.55], [y], s=24, c=STYLE["P"][0], marker="o", zorder=3)
-        ax.text(-0.72, y, "$P_%d$" % i, ha="right", va="center", fontsize=7.5)
+        ax.text(-0.72, y, f"$P_{i}$", ha="right", va="center", fontsize=7.5)
     for j in range(q):
         x = j * dx
         ax.add_patch(Rectangle((x + xb - w / 2, -(p - 1) * dy + yb - 0.12), w, top + (p - 1) * dy - yb + 0.25,
                                fc=STYLE["Q"][0], alpha=0.16, lw=0))
         ax.scatter([x + xb], [top], s=20, c=STYLE["Q"][0], marker="s", zorder=3)
-        ax.text(x + xb, top + 0.15, "$Q_%d$" % j, ha="center", va="bottom", fontsize=7.5)
+        ax.text(x + xb, top + 0.15, f"$Q_{j}$", ha="center", va="bottom", fontsize=7.5)
         for i in range(p):
             y = -i * dy
             for orb, (px, py) in (("A", (x + xa, y)), ("B", (x + xb, y + yb)), ("C", (x, y + yc))):
@@ -256,7 +258,7 @@ def fig_hgraph(p=3, q=4):
         ax.annotate(txt, (px, py), xytext=off, textcoords="offset points", fontsize=6.5, color="0.15", zorder=6)
     ax.set_xlim(-1.05, (q - 1) * dx + 0.45); ax.set_ylim(-(p - 1) * dy - 0.45, top + 0.42)
     ax.set_aspect("equal"); ax.axis("off")
-    fig.savefig(OUT / "hgraph.pdf", bbox_inches="tight", pad_inches=0.01)
+    fig.savefig(OUT / "hgraph.pdf", bbox_inches="tight", pad_inches=0.01, metadata={"CreationDate": None})
     plt.close(fig)
 
 

@@ -78,3 +78,9 @@ Fixed in v7: convex hull = all weighted averages with nonnegative weights summin
 R1, R3, R4, R5: VERDICT: CLEAR. Math: VERDICT: CORRECT. R2: 4 flags (why the threshold 1 in the Idea; "about" for the rounded pole distances; backtracking and search nodes; DRAT certificate unexplained).
 
 Fixed in v8: "A partition into parts of diameter at most σₙ times the diameter of the set, which is less than 1, puts the poles of each simplex into different parts"; "about 0.880 (n = 7) or 0.894 (n = 8)"; searches "colour one vertex at a time and step back when two adjacent vertices get the same colour (search nodes: partial colourings visited)"; "a DRAT certificate, a machine-checkable list of logical steps checked by the program drat-trim".
+
+### Round 8 (v8): six fresh reviewers
+
+R1, R3, R4: VERDICT: CLEAR. Math: VERDICT: CORRECT. R2 and R5: the same flag ("which is less than 1" seems to say the diameter is below 1).
+
+Fixed in v9: "If D ≈ 1 is the diameter of the set, a partition into parts of diameter at most σₙD < 1 puts the poles of each simplex into different parts". make_figs.py: ruff clean (no unused import, context managers, literals, f-strings), deterministic PDFs (no CreationDate; two runs give identical checksums).
