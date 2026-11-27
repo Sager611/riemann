@@ -43,3 +43,17 @@ Main: Built Riemann.Deep.LeanGale.Main (7.7s) | memcap: peak 2425 MB, rc 0, 12 s
 'LeanGale.splx_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
 memcap: peak 2272 MB, rc 0, 10 s
 ALLDONE
+T6 BallAlg (lake env lean): memcap: peak 1025 MB, rc 0, 62 s | errors: 0 | warnings: 0
+T6 BallGeo (lake env lean): memcap: peak 1630 MB, rc 0, 77 s | errors: 0 | warnings: 0
+T6 Ball (lake env lean): memcap: peak 1798 MB, rc 0, 51 s | errors: 0 | warnings: 0
+== Check (T6)
+'LeanGale.gale_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanGale.gale_fails_le_1000' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanGale.gale_ball_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanGale.claim1_n7' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanGale.claim1_n8' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanGale.claim2' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanGale.splx_simplex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanGale.simplexPartitionBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'LeanGale.gale_ball_fails'' depends on axioms: [propext, Classical.choice, Quot.sound]
+memcap: peak 1485 MB, rc 0, 59 s

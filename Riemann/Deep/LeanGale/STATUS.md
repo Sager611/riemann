@@ -20,3 +20,17 @@ Final sequential rebuild: 35 modules, errors 0; peaks ≤ 2.4 GB (Rows00–19 13
 
 ## History
 - 22 Nov 11:44 UTC BLOCKED-MEMCAP (the 290 MB cap; .scratch/memcap.sh measured RSS of mmapped oleans); lifted by Adrian the same day.
+
+## T6 SimplexPartitionBound
+REVIEW
+UTC: 2026-11-27T18:58:20Z
+sorry count: 0 (rg -n 'sorry|admit|native_decide|axiom|implemented_by|extern|unsafe' Riemann/Deep/LeanGale/Ball*.lean: no match)
+files: BallAlg.lean (psi, psi_split, base_real, psi_nonneg_disjoint, psi_nonneg, psi_shift, kappa, kappa_int), BallGeo.lean (sigma_eq_sqrt_kappa, IsGram, frame, inner_eq_frame, cell, cone_ineq, dist_le_sigma, beta_ball_le_sigma, splxE, isGram_splxE, beta_closedBall_le_sigma), Ball.lean (simplexPartitionBound, gale_ball_fails'); Check.lean: + import Ball, + 2 #print axioms lines; PLAN.md: T6 section (derivation); build.log: T6 lines. Gale.lean, Main.lean and the other existing files unchanged.
+theorems: LeanGale.simplexPartitionBound : SimplexPartitionBound; LeanGale.gale_ball_fails' (hHin : Hinrichs2002) : ∀ n : ℕ, 3 ≤ n → ¬ GaleConjectureBall n (gale_ball_fails unchanged)
+#print axioms (simplexPartitionBound, gale_ball_fails'): [propext, Classical.choice, Quot.sound]
+literature inputs: none new; Voronov's SimplexPartitionBound is now a theorem, so the ball form needs only Hinrichs2002
+method: colouring by the nearest vertex of the regular simplex splx n (argmax ⟪U_j, x⟫); frame identity ⟪x,y⟫ = n/(n+1)·Σ⟪U_j,x⟫⟪U_j,y⟫; same cell ⇒ ⟪x,y⟫ + κₙ/2·(‖x‖²+‖y‖²) ≥ 0 by a copositivity lemma (concavity along (e_j, −e_j) reduces to disjoint supports; Cauchy–Schwarz plus the integer bound st ≤ κₙ²(n+1−s)(n+1−t)); then ‖x−y‖² ≤ (1+κₙ)/2 = σₙ² (PLAN.md T6)
+build: lake env lean BallAlg 1.0 GB 62 s, BallGeo 1.6 GB 77 s, Ball 1.8 GB 51 s, Check 1.5 GB 59 s; errors 0, warnings 0; check.py passes
+NOT-FORMALIZED: none
+last reviewer verdict: pending
+next step: reviewer round
