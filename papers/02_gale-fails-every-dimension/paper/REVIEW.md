@@ -66,3 +66,9 @@ Fixed in v5: diameter glossed as a supremum; infimum glossed, best partition for
 R2, R4, R5: VERDICT: CLEAR. R1: 1 flag (cones are unbounded: intersect them with B^n). R3: 1 flag (say why left-over rows and columns matter when they are defined). Math: 1 flag, the history "counterexamples for n = 3,…,6" was not in the supplied evidence; checked in Voronov's TeX (Table 2: n = 3, 4, 5, 6 with 101, 61, 87, 64 points, each above σₙ; the n = 7 row is commented out), so the text stays and the evidence is added for the next math reviewer.
 
 Fixed in v6: "Intersecting B^n with the n+1 cones … gives n+1 congruent pieces that cover B^n"; purpose clause after the definition of left-over rows and columns.
+
+### Round 6 (v6): six fresh reviewers
+
+R4, R5: VERDICT: CLEAR. Math: VERDICT: CORRECT. R1: 1 flag (convex hull glossed via the undefined "convex set"). R2: 1 flag (pole distance across is 0.8944 for n = 8, outside "0.88 to 0.89"). R3: 1 flag (the purpose clause for left-over lines skipped the final pole step).
+
+Fixed in v7: convex hull = all weighted averages with nonnegative weights summing to 1; "0.880 (n = 7) or 0.894 (n = 8) across"; "Counting the colours that the Cᵢⱼ in left-over rows and columns need forces g = 1 or h = 1; then a pole shares its colour with an adjacent vertex."
