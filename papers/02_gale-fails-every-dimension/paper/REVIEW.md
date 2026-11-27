@@ -228,3 +228,7 @@ Dropped "(§7)" after "So Gale's conjecture fails in these dimensions too". Page
 ### v27 (Adrian, 27 Nov)
 
 "In this work, we give explicit sets in ℝ⁷ and ℝ⁸ …". Page 1 checked; pages 2–7 unchanged.
+
+### v28 (Adrian, 27 Nov)
+
+"Thus, we will show that Gale's conjecture fails in every dimension n ≥ 3 (Theorem 1)." Page 1 checked; pages 2–7 unchanged.
