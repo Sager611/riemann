@@ -216,3 +216,7 @@ Kept the intro sentence "Consider splitting a bounded set in ℝⁿ into parts t
 ### v24 (Adrian, 27 Nov)
 
 "However, in 1993, a set was found …" (plain text). Fact check: correct (Kahn–Kalai n = 1325 answers Borsuk's question no). Page 1 checked; pages 2–7 unchanged.
+
+### v25 (Adrian, 27 Nov)
+
+Dropped "(§7)" after "So Gale's conjecture fails in these dimensions too". Page 1 checked; pages 2–7 unchanged.
