@@ -116,3 +116,9 @@ Class article → amsart (reqno; caption margin 0): \author{Adrián Sager}, \add
 R2, R3, R4, R5: VERDICT: CLEAR. Math: VERDICT: CORRECT. R1: 2 flags (Note: "certificates" and Lean unexplained at first use; §1 "the lowest dimension of a known counterexample is 64 [5], or 9 by an unrefereed preprint" reads as two competing minima).
 
 Fixed in v14: Note "using computer-checkable certificates (§4) and proofs verified by the program Lean (§8) that assume two cited results" (still one provenance sentence); §1 "the lowest dimension with a refereed counterexample is 64 [5], and an unrefereed preprint gives counterexamples in every n ≥ 9 [8, Cor. 7.1]". Pages 2–7 unchanged.
+
+### Round 14 (v14): six fresh reviewers
+
+R3, R4, R5: VERDICT: CLEAR. Math: VERDICT: CORRECT. R1: "supremum" unexplained in the abstract; §1 "whose splitting step is proved by hand" vague. R2: the move from colourings to a Boolean formula is unexplained.
+
+Fixed in v15: abstract "diameter (least upper bound of the distances between their points)" (matches §2's gloss of infimum); §1 "in which a proof by hand replaces the search over splits and exact arithmetic checks the distances"; Theorem 2's proof "a Boolean formula with one true/false variable for each vertex and colour has a solution exactly when G≥s(X) has a proper (n+1)-colouring in which one 6-clique has fixed colours; a DRAT certificate … proves that the formula has no solution" (checked against verify.py's CNF: variable k·i+c+1 = vertex i gets colour c); \looseness=-1 on that proof (no one-word last line).
