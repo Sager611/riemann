@@ -208,3 +208,7 @@ Adrian (27 Nov): no more reviewers unless he asks. Run paused, no reviewer proce
 ### v22: Adrian's wording (27 Nov)
 
 Kept the intro sentence "Consider splitting a bounded set in ℝⁿ into parts that each have a smaller diameter than the set." (now author-approved, verbatim), followed by "In 1933, Borsuk found out …". Gale sentence verbatim: "In 1953, Gale asked how much smaller than the original set the n + 1 parts can be [3]." p-1 re-rendered and checked; pages 2–7 unchanged; 7 pages; no TeX warnings; slop scan clean. Last full reviewer round: 20 (v20, all CLEAR, math CORRECT); v21–v22 (Motivation outline, Adrian's wording) not reviewed. For Adrian: none.
+
+### v23 (Adrian, 27 Nov)
+
+"Since the segment (n = 1) and the disk (n = 2) are the worst cases …". Page 1 checked; pages 2–7 unchanged.
