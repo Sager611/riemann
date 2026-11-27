@@ -96,3 +96,9 @@ Fixed in v10: Idea: "For every pair Pᵢ, Qⱼ we add three points … placed so
 R1, R2, R3, R5: VERDICT: CLEAR. Math: VERDICT: CORRECT. R4: 2 flags (the long exact fractions for X₃, X₄ in §7 hide why they are counterexamples; "use only Lean's three standard logical axioms" leaves a non-Lean reader unsure whether geometric facts are assumed).
 
 Fixed in v11: §7 now states "β₄(X₃)/diam X₃ > σ₃ and β₅(X₄)/diam X₄ > σ₄ (Table 1)" (the exact values stay in Table 1, truncated, and in P3.lean, P4.lean); §8 "assume nothing beyond the three standard axioms of Lean's logic"; "This applies to every counterexample to Borsuk's conjecture" (avoids a one-word last line).
+
+### Round 11 (v11): six fresh reviewers
+
+R1, R2, R3, R4, R5: VERDICT: CLEAR. Math: 1 scope flag: §8 "Theorems 1–3 … are formalized" and Table 6 "Theorem 3 → claim2", but claim2 states β_{n+1}(Vₙ)/Dₙ > σₙ, not the intermediate bound β_{n+1} ≥ sₙ (checked: Family.lean rowOK_facts uses a stored threshold tZ, not "the shortest H-edge").
+
+Fixed in v12: §8 "Theorems 1 and 2, the inequality β_{n+1} > σₙDₙ of Theorem 3, the lower bound of Lemma 2 and the parts of Lemma 1 that we use are formalized"; Table 6 row "Theorem 3, β_{n+1} > σₙDₙ | claim2".
