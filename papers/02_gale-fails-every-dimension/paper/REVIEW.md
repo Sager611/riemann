@@ -110,3 +110,9 @@ R1–R5: VERDICT: CLEAR. Math: VERDICT: CORRECT.
 ### v13: author block (Adrian, 27 Nov)
 
 Class article → amsart (reqno; caption margin 0): \author{Adrián Sager}, \address{Independent researcher}, \urladdr{https://www.linkedin.com/in/a-sager/} (printed after the references, clickable); abstract before \maketitle; date as amsart footnote. github.com/Sager611/riemann now only as availability link: Note adds "Code, certificates and Lean files are at github.com/Sager611/riemann; file names in this paper link there"; §8 "The file links point to commit a85a25e". Provenance sentence unchanged. Visual check of all 7 pages: title block, running heads, equation numbers right, Table 6 spacing; main text ends on p-6.
+
+### Round 13 (v13): six fresh reviewers
+
+R2, R3, R4, R5: VERDICT: CLEAR. Math: VERDICT: CORRECT. R1: 2 flags (Note: "certificates" and Lean unexplained at first use; §1 "the lowest dimension of a known counterexample is 64 [5], or 9 by an unrefereed preprint" reads as two competing minima).
+
+Fixed in v14: Note "using computer-checkable certificates (§4) and proofs verified by the program Lean (§8) that assume two cited results" (still one provenance sentence); §1 "the lowest dimension with a refereed counterexample is 64 [5], and an unrefereed preprint gives counterexamples in every n ≥ 9 [8, Cor. 7.1]". Pages 2–7 unchanged.

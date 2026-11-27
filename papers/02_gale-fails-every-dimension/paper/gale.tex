@@ -37,7 +37,7 @@
 \begin{abstract}
 Gale (1953) conjectured that, among bounded sets in $\R^n$ with the same diameter (supremum of the distances between their points), the ball is the hardest to split into $n+1$ parts of small diameter. Counterexamples were known for $n=3,\dots,6$ and, via Borsuk's problem, for $n>322$ ($n\ge 9$ by an unrefereed preprint). We give finite counterexamples in $\R^7$ (84 points) and $\R^8$ (85 points), and a family built from two regular simplices (higher-dimensional equilateral triangles) in orthogonal subspaces that is a counterexample for every $5\le n\le 1000$; its proof combines a short colouring argument by hand with exact arithmetic checks. Hence Gale's conjecture fails in every dimension $n\ge 3$.
 
-\smallskip\noindent\emph{Note.} We found and checked these results with AI agents, using computer-checkable certificates and computer-checked proofs in Lean (\S\ref{sec:lean}) that assume two cited results; the paper has not been peer reviewed. Code, certificates and Lean files are at \href{https://github.com/Sager611/riemann}{github.com/Sager611/riemann}; file names in this paper link there.
+\smallskip\noindent\emph{Note.} We found and checked these results with AI agents, using computer-checkable certificates (\S\ref{sec:crit}) and proofs verified by the program Lean (\S\ref{sec:lean}) that assume two cited results; the paper has not been peer reviewed. Code, certificates and Lean files are at \href{https://github.com/Sager611/riemann}{github.com/Sager611/riemann}; file names in this paper link there.
 \end{abstract}
 
 \maketitle
@@ -54,7 +54,7 @@ Gale (1953) conjectured that, among bounded sets in $\R^n$ with the same diamete
 \vspace{-10pt}
 \end{wrapfigure}
 
-Borsuk asked in 1933 whether every bounded set in $\R^n$ splits into $n+1$ parts of smaller diameter than the set; a ball cannot be split into $n$ such parts~\cite{Bo33}. The answer is no for large $n$~\cite{KK93}, in fact for every $n>322$~\cite{Hi02}; the lowest dimension of a known counterexample is 64~\cite{JB14}, or 9 by an unrefereed preprint that covers every $n\ge 9$~\cite[Cor.~7.1]{OAI26}.
+Borsuk asked in 1933 whether every bounded set in $\R^n$ splits into $n+1$ parts of smaller diameter than the set; a ball cannot be split into $n$ such parts~\cite{Bo33}. The answer is no for large $n$~\cite{KK93}, in fact for every $n>322$~\cite{Hi02}; the lowest dimension with a refereed counterexample is 64~\cite{JB14}, and an unrefereed preprint gives counterexamples in every $n\ge 9$~\cite[Cor.~7.1]{OAI26}.
 
 Gale asked how much smaller the parts can be~\cite{Ga53}. A set of diameter $D$ splits into two parts of diameter at most $D/2$ on a line, and into three parts of diameter at most $\frac{\sqrt3}{2}D$ in the plane~\cite{Ga53}; a segment and a disk (Fig.~\ref{fig:disk}) show that these bounds cannot be lowered. Gale conjectured that in every dimension the ball is the hardest set to split (\S\ref{sec:def}).
 
