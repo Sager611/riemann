@@ -224,3 +224,7 @@ Dropped "(§7)" after "So Gale's conjecture fails in these dimensions too". Page
 ### v26 (Adrian, 27 Nov)
 
 "This has left only n = 7 and n = 8 open." Page 1 checked; pages 2–7 unchanged.
+
+### v27 (Adrian, 27 Nov)
+
+"In this work, we give explicit sets in ℝ⁷ and ℝ⁸ …". Page 1 checked; pages 2–7 unchanged.
