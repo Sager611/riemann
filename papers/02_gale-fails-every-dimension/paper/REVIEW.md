@@ -60,3 +60,9 @@ AI-slop detection on v4 (no-ai-slop detect mode, by the author): binary contrast
 R4 (§7, §8, references): VERDICT: CLEAR. Math reviewer: VERDICT: CORRECT. Flags: R1 3, R2 4, R3 1, R5 2.
 
 Fixed in v5: diameter glossed as a supremum; infimum glossed, best partition for finite V; cones "cover B^n by congruent pieces", shared points assigned to one piece; Idea: Cᵢⱼ "in the angle between them at 0", how V_n(θ), X₇ and X₈ relate; classes: "the squared distance is a quadratic polynomial in θ with rational coefficients"; DRAT: "a Boolean formula whose solutions are the proper (n+1)-colourings"; Table 4: "checks an exhaustive-search certificate"; n = 3, 4: "ratio of shortest H-edge to diameter"; Fig. 1 label moved off the chord.
+
+### Round 5 (v5): six fresh reviewers
+
+R2, R4, R5: VERDICT: CLEAR. R1: 1 flag (cones are unbounded: intersect them with B^n). R3: 1 flag (say why left-over rows and columns matter when they are defined). Math: 1 flag, the history "counterexamples for n = 3,…,6" was not in the supplied evidence; checked in Voronov's TeX (Table 2: n = 3, 4, 5, 6 with 101, 61, 87, 64 points, each above σₙ; the n = 7 row is commented out), so the text stays and the evidence is added for the next math reviewer.
+
+Fixed in v6: "Intersecting B^n with the n+1 cones … gives n+1 congruent pieces that cover B^n"; purpose clause after the definition of left-over rows and columns.
