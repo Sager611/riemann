@@ -190,3 +190,13 @@ R1–R5: VERDICT: CLEAR. Math: VERDICT: CORRECT (incl. the facts of Adrian's par
 Banned words 0; empty adverbs 0; empty phrases 0; binary contrasts 0; puffery 0; trailing -ing clauses 0; weasel attribution 0; recap endings 0; hedges 0. Em dashes: 1, the empty cell of Table 1. Colons followed by lowercase: 23, all introducing lists, definitions or glosses. Adrian's paragraph is his final wording and was only fact-checked. Visual check: p-1 of v20 viewed; pages 2–7 unchanged since last viewed.
 
 For Adrian: none.
+
+### Round 20 (v20): six fresh reviewers
+
+R1–R5: VERDICT: CLEAR. Math: VERDICT: CORRECT. No [FACT] flags.
+
+### v21: Motivation rewritten to Adrian's 12-point outline (BRIEF "Motivation outline", 27 Nov)
+
+One sentence or clause per point, in order: (1) "Consider splitting a bounded set in ℝⁿ into parts that each have a smaller diameter than the set." (2), (3) Adrian's two Borsuk sentences verbatim. (4) "In 1953, Gale asked how much smaller than the set the n + 1 parts can be [3]." (5) one clause: "Since the segment and the disk are the worst cases on a line and in the plane (parts of diameter D/2 and (√3/2)D for a set of diameter D; Fig. 1)," (6) "Gale conjectured that the ball is the worst case in every dimension (§2)." (7) "His conjecture would answer Borsuk's question with yes, since the ball splits into n + 1 parts of smaller diameter." (8) Adrian's 1993 sentence verbatim, then "So Gale's conjecture fails in these dimensions too (§7)." (9) "In 2026, Voronov showed by computer search that it also fails for n = 3, …, 6 [9]." (10) "This left only n = 7 and n = 8 open." (11) "We give explicit sets in ℝ⁷ and ℝ⁸ (Theorem 2) and a family for 5 ≤ n ≤ 1000 proved by hand up to exact distance checks (Theorem 3)." (12) "We will show that Gale's conjecture fails in every dimension n ≥ 3 (Theorem 1)."
+
+Moved out of §1: Voronov's request for search-free counterexamples, now the last sentence of §6's first paragraph ("Voronov asked for counterexamples in every dimension n ≥ 3 that are described geometrically and proved without a computer search over all splits [9]; the family gives such counterexamples for 5 ≤ n ≤ 1000, with Lemma 2 in place of the search."). Dropped from §1: the n = 3, 4 / Hinrichs breakdown (in §7) and "answers Voronov's question" (now in §6). Fig. 1 still wraps beside §1 with no overlap; pages 1, 2, 4, 5 checked; 7 pages, main text ends on p-6. For Adrian: none.
