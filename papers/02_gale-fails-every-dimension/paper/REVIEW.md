@@ -176,3 +176,17 @@ For Adrian: none.
 ### v20: Adrian's first Borsuk sentence (27 Nov, final wording)
 
 First sentence replaced verbatim (relayed "$n" restored): "In 1933, Borsuk found out you cannot split a ball in ℝⁿ into n parts such that all parts have a smaller diameter than the ball, and you must split it into at least n + 1 parts [1]." The following sentences unchanged. Fact check: Borsuk 1933 (no split of the n-ball into n parts of smaller diameter, so at least n + 1 are needed): correct. For Adrian: none. p-1 re-rendered and checked; pages 2–7 unchanged.
+
+### Round 19 (v19): six fresh reviewers
+
+R1–R5: VERDICT: CLEAR. Math: VERDICT: CORRECT (incl. the facts of Adrian's paragraph). No [FACT] flags. v20 changes only Adrian's first sentence; round 20 reviews v20.
+
+### Round 20 (v20, final): six fresh reviewers
+
+R1–R5: VERDICT: CLEAR. Math: VERDICT: CORRECT (incl. the facts of Adrian's paragraph). No [FACT] flags; no open flags.
+
+### no-ai-slop detection mode on the final text (v20)
+
+Banned words 0; empty adverbs 0; empty phrases 0; binary contrasts 0; puffery 0; trailing -ing clauses 0; weasel attribution 0; recap endings 0; hedges 0. Em dashes: 1, the empty cell of Table 1. Colons followed by lowercase: 23, all introducing lists, definitions or glosses. Adrian's paragraph is his final wording and was only fact-checked. Visual check: p-1 of v20 viewed; pages 2–7 unchanged since last viewed.
+
+For Adrian: none.
