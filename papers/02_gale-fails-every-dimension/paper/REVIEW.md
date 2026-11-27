@@ -172,3 +172,7 @@ Standing rule (BRIEF "Adrian's text"): Adrian's passages are final; reviewers on
 Fact check of Adrian's paragraph: Borsuk 1933 (ball in ℝⁿ not splittable into n parts of smaller diameter), Kahn–Kalai 1993 (n = 1325), Hinrichs 2002 (n > 322), Jenrich–Brouwer 2014 (n = 64), OpenAI preprint (n ≥ 9, unrefereed): all correct.
 
 For Adrian: none.
+
+### v20: Adrian's first Borsuk sentence (27 Nov, final wording)
+
+First sentence replaced verbatim (relayed "$n" restored): "In 1933, Borsuk found out you cannot split a ball in ℝⁿ into n parts such that all parts have a smaller diameter than the ball, and you must split it into at least n + 1 parts [1]." The following sentences unchanged. Fact check: Borsuk 1933 (no split of the n-ball into n parts of smaller diameter, so at least n + 1 are needed): correct. For Adrian: none. p-1 re-rendered and checked; pages 2–7 unchanged.
