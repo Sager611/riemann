@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 10:56
-Node: P8 certifier v2 (support functions + Lagrange duality, Borsuk/code/cert2.py) → C port; D10 pipeline in background (Borsuk/.scratch/d10_run.sh, outputs d10_*.out)
-Last round: R016 (certifier v2 rigorous in principle, Python too slow)
-Next: todo #16: write Borsuk/code/cert2.c (dual bound with Newton on ≤ 6 multipliers, exact check in __int128-scaled rationals or long double + outward error bound), test on ball 0.29 ∩ simplex cone (must certify < 1), then on Ω₅ aligned cones; todo #17 D10 summary
+UTC: 2026-11-28 11:15
+Node: P8 (C certifier works: Borsuk/code/cert2.c); D10 pipeline in background (Borsuk/.scratch/d10_run.sh)
+Last round: R017 (ball 0.29 ∩ simplex cone certified < 0.985, 0.4 ms per direction box)
+Next: todo #18: close rigour gaps (small Σλ guard, interval/exact re-evaluation); certify Ω₅ aligned cones at the Jung corner (expect ≈ 0.874); then a driver: parameter boxes Q of Tolmachev's family → Ω_Q (rational) → partition (from p6_pd/p6_cones optimisers) → cert2 on all cells; first run on a small u-region
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
