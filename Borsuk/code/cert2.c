@@ -76,7 +76,7 @@ int main(void) {
       LD chord = B.s * sqrtl(3.0L) * 2 / nv;                     // directions of the sub-cube lie within this chord of u0
       LD theta = 2 * asinl(fminl(1, chord / 2)) * (1 + 1e-12L);
       LD quad = C + zn * cosl(fmaxl(0, phi0 - theta)), lip = C + zu + 2 * Rmax * chord;
-      LD bound = fminl(quad, lip) + 1e-12L;
+      LD bound = ((L1 < 1e-6L || L2 < 1e-6L) ? lip : fminl(quad, lip)) + 1e-12L;
       if (bound < target) { if (bound > worst) worst = bound; continue; }
       if (B.s < 1.0L / 65536) { ok = 0; worst = bound; break; }
       if (top + 8 >= cap) { ok = 0; break; }

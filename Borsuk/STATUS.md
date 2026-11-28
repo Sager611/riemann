@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 11:15
-Node: P8 (C certifier works: Borsuk/code/cert2.c); D10 pipeline in background (Borsuk/.scratch/d10_run.sh)
-Last round: R017 (ball 0.29 ∩ simplex cone certified < 0.985, 0.4 ms per direction box)
-Next: todo #18: close rigour gaps (small Σλ guard, interval/exact re-evaluation); certify Ω₅ aligned cones at the Jung corner (expect ≈ 0.874); then a driver: parameter boxes Q of Tolmachev's family → Ω_Q (rational) → partition (from p6_pd/p6_cones optimisers) → cert2 on all cells; first run on a small u-region
+UTC: 2026-11-28 11:21
+Node: P8 middle range: find convex (or union) 5-cell partitions of Ω(contacts) for ρ ∈ [0.3, 0.39]; certifier ready (cert2.c); D10 in background
+Last round: R018 (Jung-corner piece certified < 0.88)
+Next: todo #19: partition search in the middle range with the certifier in the loop (optimise power-diagram sites against cert2's worst direction, warm-started), starting at the all-contact type-3 bodies near ρ = 0.31 (room 3–6%); then types 4, 5
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
