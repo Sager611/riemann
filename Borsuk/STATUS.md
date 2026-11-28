@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 12:01
-Node: P8 type-3 crux: extreme body Ω₃ (ρ = 1/3, unit equilateral contact triangle on a great circle, slab cuts); decides proof (5-partition with margin) vs disproof lead (no partition even relaxed)
-Last round: R020 (type 3 hardest: β₅ sample (0.97, 0.99]; type 4 extreme ≤ 0.95)
-Next: read Borsuk/.scratch/p8x_3_0.33333333_30000_{11,12}.out (30k-sample brackets at 0.985–1.0); then relaxed (cluster-consistent) β₅ of Ω₃; build an explicit structured partition of Ω₃ and certify with cert2
+UTC: 2026-11-28 12:46
+Node: P8 type-3 crux; relaxed (cluster-consistent) vs plain SAT on the extreme body (Borsuk/code/p8_relsat2.py); H(u) brackets with SAT fallback (p8_hgrid.py, outputs Borsuk/.scratch/p8h_*.out)
+Last round: R021 (tabu failures ≠ UNSAT; certified sample brackets: extreme type 3 ≥ 0.97)
+Next: read Borsuk/.scratch/rel2_ext3_00{3,5}.out (plain vs relaxed at ε = 0.03, 0.05) and p8h_*.out; if the relaxation buys ≥ 3%, build P11 (relaxed partitions as proof objects)
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
@@ -22,3 +22,4 @@ Next: read Borsuk/.scratch/p8x_3_0.33333333_30000_{11,12}.out (30k-sample bracke
 - 2026-11-28 09:00 Relaxation adopted for all future partition searches: parts may contain pairs at distance > 1 (unions of mutually far clusters); only unit pairs are forbidden.
 - 2026-11-28 10:15 D10 (background): CaDiCaL proposer + 3600 s limit now resolves H4:01 thresholds that timed out before (s = 181.4, 185.4: UNSAT); pipeline continues (d10_cegar.out).
 - 2026-11-28 12:01 Type 3 (0 inside a contact triangle on a great circle, 3 parameters) is the crux of the contact-type split; work on its extreme body first, both as proof bottleneck and as disproof lead.
+- 2026-11-28 12:46 Correction recorded (R021): CEGAR "NOT" verdicts were tabu failures; all future brackets use the kissat fallback.

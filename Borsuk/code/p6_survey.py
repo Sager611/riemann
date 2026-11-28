@@ -38,7 +38,36 @@ def random_config(typ, rng):
         if np.allclose(A @ lam, b, atol=1e-9) and np.all(lam > 0.02): return rho, P, cuts, lam
     raise RuntimeError('no config')
 
-def cegar(C, thr, B=100, TL=300, rng=None, want=False):
+def kissat_colour(N, U, V, k=5, tl=1800):
+    import subprocess, os, tempfile
+    U = np.asarray(U, np.int64); V = np.asarray(V, np.int64)
+    ncl = N + k * len(U) + (2 if len(U) else 0)
+    fd, fn = tempfile.mkstemp(suffix='.cnf', dir='/tmp'); os.close(fd)
+    with open(fn, 'w') as f:
+        f.write('p cnf %d %d\n' % (k * N, ncl))
+        base = (k * np.arange(N))[:, None] + np.arange(1, k + 1)[None, :]
+        np.savetxt(f, np.c_[base, np.zeros(N, np.int64)], fmt='%d')
+        for c in range(k):
+            for s in range(0, len(U), 200000):
+                u = U[s:s + 200000]; v = V[s:s + 200000]
+                np.savetxt(f, np.c_[-(k * u + c + 1), -(k * v + c + 1), np.zeros(len(u), np.int64)], fmt='%d')
+        if len(U): f.write('%d 0\n%d 0\n' % (k * U[0] + 1, k * V[0] + 2))
+    try:
+        r = subprocess.run(['Borsuk/.scratch/tools/kissat/build/kissat', '-q', fn], capture_output=True, text=True, timeout=tl)
+    except subprocess.TimeoutExpired:
+        os.remove(fn); return 'TIME', None
+    os.remove(fn)
+    if r.returncode == 20: return 'UNSAT', None
+    if r.returncode != 10: return 'ERR', None
+    col = np.full(N, -1)
+    for l in r.stdout.split('\n'):
+        if l.startswith('v'):
+            for t in l[1:].split():
+                t = int(t)
+                if t > 0: col[(t - 1) // k] = (t - 1) % k
+    return 'SAT', col
+
+def cegar(C, thr, B=100, TL=300, rng=None, want=False, sat=True):
     M = len(C); Y = list(rng.choice(M, 300, replace=False)); t0 = time.time(); prev = None
     while time.time() - t0 < TL:
         X = C[Y]; N = len(X); UU = []; VV = []
@@ -50,7 +79,11 @@ def cegar(C, thr, B=100, TL=300, rng=None, want=False):
         for sd in range(1, 7):
             c_, conf = colour_tabu(N, U, V, 5, iters=400000 * sd, seed=N + sd, init=init if sd % 2 else None)
             if conf == 0: col = c_; break
-        if col is None: return ('NOT', N)
+        if col is None and sat:
+            st_, c_ = kissat_colour(N, U, V)
+            if st_ == 'SAT': col = c_
+            elif st_ == 'UNSAT': return ('UNSAT', N, X) if want else ('UNSAT', N)
+        if col is None: return ('NOT', N, X) if want else ('NOT', N)
         prev = col
         worst = np.full(M, np.inf)
         for j in range(5):
