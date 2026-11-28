@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 08:42
-Node: P6/P8 (5-part proof via contact-type case analysis + certified computation); P7 analytic large r; D10, D11 in background
-Last round: R006 (P5 barrier), R005 (D1, D2)
-Next: R007 margin survey of all-contact outer bodies (todo #2), then explicit 5-partition schemes (#3), C certifier (#4)
+UTC: 2026-11-28 09:00
+Node: P6 (explicit 5-partitions per contact type), then P8 certifier
+Last round: R007 (all-contact room 3–6% near ρ = 0.3; no-unit-pair relaxation; Petersen critical pairs)
+Next: todo #3: rotated/aligned simplex partitions killing the Petersen critical pairs (3/4/5 contacts), then deformations; measure room over random configurations
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
@@ -19,3 +19,4 @@ Next: R007 margin survey of all-contact outer bodies (todo #2), then explicit 5-
 - 2026-11-28 04:03 D1, D2 closed with explicit unresolved remainders (2-level search stalls on large local sets); declared dead because the remaining checks cannot finish with our solver and carry no structure beyond D7.
 - 2026-11-28 04:03 STOPPED.
 - 2026-11-28 08:42 Reopened (Adrian, 28 Nov): STOPPED is not allowed; dead nodes spawn new nodes. New nodes P6 (contact-type case analysis with explicit 5-partitions), P7 (analytic large-r argument), P8 (C certifier + adaptive branch-and-bound adding contacts only where needed), D10 (stronger 2QBF solver for D1/D2 remainders), D11 (rigidity gadgets). Todo goal set; one task in progress at a time.
+- 2026-11-28 09:00 Relaxation adopted for all future partition searches: parts may contain pairs at distance > 1 (unions of mutually far clusters); only unit pairs are forbidden.
