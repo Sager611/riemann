@@ -12,7 +12,7 @@ if kind == 'tri':
 else:
     rho, P, cuts, lam = random_config(int(kind[1]), rng); X = P.copy(); R = np.sqrt(rho)
 rho = R * R; smin = (-(4 / 3) * R + np.sqrt((16 / 9) * rho - 4 * (rho - 1))) / 2
-pool = rng.normal(size=(120000, 4)); pool /= np.linalg.norm(pool, axis=1, keepdims=True); pool *= rng.uniform(smin, R, (len(pool), 1))
+pool = rng.normal(size=(100000, 4)); pool /= np.linalg.norm(pool, axis=1, keepdims=True); pool *= rng.uniform(smin, R, (len(pool), 1))
 for x in X: pool = pool[((pool - x) ** 2).sum(1) <= 1]
 Qs = []
 for k in range(K):
@@ -37,8 +37,8 @@ for step in range(400):
         for j in range(5):
             idx = np.flatnonzero(Lp[k] == j)
             if len(idx) < 2: continue
-            sub = idx if len(idx) <= 3000 else rng.choice(idx, 3000, replace=False)
-            M = d2(pool[sub], pool[sub]); a, b = np.nonzero(np.triu((M >= (1 - tol) ** 2) & (M <= 1.0), 1))
+            sub = idx if len(idx) <= 1400 else rng.choice(idx, 1400, replace=False)
+            M = d2(pool[sub], pool[sub]).astype(np.float32); a, b = np.nonzero(np.triu((M >= (1 - tol) ** 2) & (M <= 1.0), 1)); del M
             if len(a): s = rng.choice(len(a), min(15, len(a)), replace=False); cands += list(zip(sub[a[s]], sub[b[s]]))
     if not cands: break
     best = None
