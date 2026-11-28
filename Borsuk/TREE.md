@@ -43,3 +43,4 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | R006 | P5 barrier; P1–P4, D4b, D5, D7, D9 | β₅(H(1,0,0,0)) ≥ 0.9849 certified; all dead |
 | R007 | P6: all-contact margins; no-unit-pair relaxation; Petersen critical pairs | room 3–6% near ρ = 0.3 for all contact types |
 | R008 | P6: density bounds on S³; thin-shell lemma | no density obstruction; cone failures need near-contact diametral pairs |
+| R009 | P9: normal cones, rotation avoidance | at most a small analytic extension 3/10 + ε₀; middle range needs adapted partitions |
