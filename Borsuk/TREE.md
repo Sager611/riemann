@@ -64,3 +64,4 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | R023 | P12: fans on diameter-1 sets | optimised simplex fans give 0.88 (4D) on sets whose outer bodies need ≥ 0.97; fan conjecture; blocking measure ≤ 0.31% per chord at ρ ≤ 1/3 |
 | R024 | P12: random rotations | 90–100% of random fan rotations work on all test sets (incl. the 4D rotated Reuleaux triangle); spherical analogue has huge room |
 | R025 | P12: adversaries | set-cover adversaries block ≤ 36/300 rotations before running out of unit pairs; pairwise compatibility relaxation useless |
+| R026 | P5/P8: H(u) brackets | β₅(H(0.8,0,0,0)) ≥ 0.99 (sample); middle of Tolmachev's family tighter than u* |

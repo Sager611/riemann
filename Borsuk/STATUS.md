@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 14:54
-Node: P12 fan conjecture; set-cover adversary (Borsuk/code/p12_adv2.py, outputs Borsuk/.scratch/adv2_*.out)
-Last round: R024 (90–100% of random fan rotations work on every test set)
-Next: read adv2 outputs (can a diameter-1 set block all of 300 random rotations?); then proof design (todo #21): thin-shell Petersen occupancy for ρ ∈ [0.3, 0.33], Jung corner, middle range
+UTC: 2026-11-28 15:40
+Node: P11 × P12 (branching tree with X-dependent fans; Borsuk/code/p11_tree.py → Borsuk/.scratch/p11tree_ext3.out) + H(u) barrier at u = (0.8,0,0,0) (Borsuk/.scratch/p8h_08_30k.out, p8h_3.out)
+Last round: R026 (β₅(H(0.8,0,0,0)) ≥ 0.99 on samples)
+Next: read the tree probe (nodes/leaves/depth for the extreme type-3 body) and the H(u) barrier runs; if UNSAT at 1.0, build an exact certificate (rational points + DRAT, as R006)
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
