@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 09:56
-Node: P8 (relaxed partitions; 4-contact normal form where the 3-contact form fails); D10 pipeline in background (Borsuk/.scratch/d10_run.sh)
-Last round: R011 (Jung corner passes the relaxed band test; u = (0.6,1,0,0) fails it)
-Next: kissat on the ε = 0.015 band graph at u = (0.6,1,0,0) (exact SAT); if UNSAT, build the 4-contact normal form there (P4 below the triangle, 0 ∈ conv) and rerun the band test; check D10 outputs (Borsuk/.scratch/d10_*.out)
+UTC: 2026-11-28 09:58
+Node: P8 (relaxed partitions with a cluster-consistent SAT encoding; 4-contact normal form); D10 pipeline in background (Borsuk/.scratch/d10_run.sh, outputs d10_*.out)
+Last round: R012 (band graph at u = (0.6,1,0,0) SAT but cluster-inconsistent)
+Next: todo #14 cluster-consistent encoding (far regions A, B with type indicators per colour); #15 4-contact normal form; #4 C certifier; check D10 outputs
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
