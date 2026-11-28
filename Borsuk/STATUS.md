@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 10:08
-Node: P8 (certified computation: C certifier first, todo #4); D10 pipeline in background (Borsuk/.scratch/d10_run.sh, outputs d10_*.out)
-Last round: R014 (a 4th contact buys little: room 3–6% on 8k samples)
-Next: todo #4: write Borsuk/code/cert.c (enclose cell ∩ Ω in a polytope by tangent halfspaces; exact/interval vertex enumeration; max vertex distance < 1) and test on 5 simplex cones (ρ < 0.3) and on Ω₅ aligned cones (0.874); then warm-started partition search over boxes
+UTC: 2026-11-28 10:15
+Node: P8 certifier (Borsuk/code/cert.py prototype); D10 pipeline in background (Borsuk/.scratch/d10_run.sh, outputs d10_*.out)
+Last round: R015 (certifier prototype correct but loose and slow)
+Next: todo #16: tighten the enclosure (adaptive planes until vertices within 1e-3 of balls) and port pivoting to C; alternatively pairwise interval branch-and-bound on boundary patches; then certify ρ < 0.3 simplex cones and Ω₅ aligned cones as tests; check D10 outputs and write a round
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
