@@ -9,8 +9,13 @@ Only a complete, checkable final answer counts. Incremental results (bounds, spe
 ## Done
 - Disproof: an explicit finite X ⊂ ℝ⁴ with exact coordinates (rationals, or a stated number field such as ℚ(√5)) whose diameter graph (pairs at distance exactly diam X) is not 5-colourable; certified by exact-arithmetic distances plus a DRAT proof checked by drat-trim (or an exhaustive-search certificate); one script reproduces every check.
 - Proof: a complete rigorous proof; every computer step exact (integer, rational or interval arithmetic) with a reproducible script.
-- Then: Borsuk/RESULT.md (statement, proof or certificate, how to check it), one fresh `reviewer` subagent on it (only then), first line of Borsuk/STATUS.md `DONE`, commit, push, stop.
-- Otherwise stop only when every node of Borsuk/TREE.md is dead (barrier in Borsuk/NOGO.md) and no new route remains: first line `STOPPED` and the reason.
+- Then: Borsuk/RESULT.md (statement, proof or certificate, how to check it), one fresh `reviewer` subagent on it (only then), first line of Borsuk/STATUS.md `DONE`, commit, push, notify the orchestrator (below), stop.
+- No other stop (Adrian, 28 Nov): never write STOPPED. A dead node means: open new nodes (new ideas, stronger tools, larger searches) and go down the best one. "Beyond reach" is a task, not a reason: build the faster solver or the larger certified computation.
+- Notify the orchestrator if and only if you reach DONE: `orca terminal send --terminal term_15386c8f-8812-4c8f-9018-7f009c48d9e9 --text 'Borsuk agent DONE: <one-line result>, see Borsuk/RESULT.md' --json`, then `orca terminal send --terminal term_15386c8f-8812-4c8f-9018-7f009c48d9e9 --enter --json`. No other notifications or progress reports.
+
+## Persistence (Adrian, 28 Nov)
+- Use the todo tool: `set-goal` = "Final proof or certified disproof of Borsuk in R^4 (Borsuk/BRIEF.md)"; keep a todo list of concrete next tasks (each < 1 h, one in_progress at a time); add the next tasks before completing the last one, so the list is never empty; keep auto-continue on; `clear-goal` only after DONE.
+- Open leads from R001-R006 (STATUS of 28 Nov 04:03): (1) a 4-5-contact normal form with a much faster certified 5-part search (C, exact or interval arithmetic, branch and bound); (2) the 56 unresolved 600-cell-symmetry cases, the 7 unfinished polytopes and the next A4 lattice case, with a stronger solver (CaDiCaL/kissat, symmetry breaking, cube-and-conquer); (3) a counterexample from a non-topological, non-counting obstruction; (4) any new route a scout swarm finds.
 
 ## Known (verify before use)
 - True for n ≤ 3 (n = 2: Borsuk 1933; n = 3: Perkal 1947, Eggleston 1955; simpler proofs Grünbaum 1957, Heppes 1957). False for n ≥ 64 (Jenrich–Brouwer 2014; before: Kahn–Kalai 1993 n = 1325, Hinrichs 2002 n > 322) and for n ≥ 9 by an unrefereed OpenAI preprint (github.com/openai/math, item 156, Cor. 7.1). Open for 4 ≤ n ≤ 8.
@@ -28,5 +33,4 @@ Only a complete, checkable final answer counts. Incremental results (bounds, spe
 ## Rules
 - Write only under Borsuk/ (scratch: Borsuk/.scratch/, gitignored). Commit only Borsuk/ paths and push every commit: `git add Borsuk && git commit -m 'Borsuk: <what>' -- Borsuk && git push origin main`. Never `git add -A` or `.`, stash, pull, rebase or reset; never add .DS_Store; never edit AGENTS.md, DISCOVERIES.md or other agents' files.
 - Every process < 300 MB, single-threaded, with a hard time limit: `bash .scratch/memcap.sh 300 <seconds> <cmd>`; check with `top -l 1 -pid <pid> -stats mem`. Python: `uv run --no-project --with <pkg> python …`. `rg`, never grep. No Docker. Kill your orphans; keep only active files on disk.
-- Borsuk/STATUS.md stays current: first line WORKING, DONE or STOPPED; UTC time; current node; last round; next step.
-- A watchdog (Borsuk/.scratch/watchdog.py) sends "continue" when you sit idle; resume from Borsuk/STATUS.md and Borsuk/TREE.md.
+- Borsuk/STATUS.md stays current: first line WORKING or DONE; UTC time; current node; last round; next step.
