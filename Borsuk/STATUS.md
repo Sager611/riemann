@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 09:49
-Node: P6/P8 relaxed partitions (band test), P10 framework; D10 pipeline running in background (Borsuk/.scratch/d10_run.sh)
-Last round: R010 (Hadwiger colouring: monochromatic edges only among bad edges θ_x + θ_y ≥ 48.2°)
-Next: read Borsuk/.scratch/p6band.out (band [1−ε, 1+ε] colourability + cluster consistency at u = (1,0,0,0), (0.6,1,0,0), ε = 0.03/0.015); if relaxed partitions exist with room, fit coloured power cells (unions) and build the C certifier (todo #4); else open the 4-contact normal form
+UTC: 2026-11-28 09:56
+Node: P8 (relaxed partitions; 4-contact normal form where the 3-contact form fails); D10 pipeline in background (Borsuk/.scratch/d10_run.sh)
+Last round: R011 (Jung corner passes the relaxed band test; u = (0.6,1,0,0) fails it)
+Next: kissat on the ε = 0.015 band graph at u = (0.6,1,0,0) (exact SAT); if UNSAT, build the 4-contact normal form there (P4 below the triangle, 0 ∈ conv) and rerun the band test; check D10 outputs (Borsuk/.scratch/d10_*.out)
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
