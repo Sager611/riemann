@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 12:46
-Node: P8 type-3 crux; relaxed (cluster-consistent) vs plain SAT on the extreme body (Borsuk/code/p8_relsat2.py); H(u) brackets with SAT fallback (p8_hgrid.py, outputs Borsuk/.scratch/p8h_*.out)
-Last round: R021 (tabu failures ≠ UNSAT; certified sample brackets: extreme type 3 ≥ 0.97)
-Next: read Borsuk/.scratch/rel2_ext3_00{3,5}.out (plain vs relaxed at ε = 0.03, 0.05) and p8h_*.out; if the relaxation buys ≥ 3%, build P11 (relaxed partitions as proof objects)
+UTC: 2026-11-28 13:31
+Node: P8 (computer-assisted proof: explicit partitions with margin) and D12 (new: 2-level search for diameter-1 sets with large β₅ inside the extreme type-3 body)
+Last round: R022 (relaxation useless at the type-3 extreme; fitted partitions ≥ 1.03; Jung near-regularity only for ρ ≥ 0.395)
+Next: (1) regularised colourings (colour_smooth) + cell fits for the extreme type-3 body; (2) memory-lean 2-level CEGAR (D12) for diameter-≤1 subsets with β₅ ≥ 0.93; (3) read Borsuk/.scratch/p8h_{1,2}.out, rel2_ext3_003.out, d10_d1v3big.out
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.

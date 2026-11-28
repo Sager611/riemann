@@ -61,7 +61,7 @@ def run(relaxed):
     with open(fn, 'w') as f:
         f.write('p cnf %d %d\n' % (nv + k * R, lines)); f.write(rest)
     r = subprocess.run(['Borsuk/.scratch/tools/kissat/build/kissat', '-q', fn], capture_output=True, text=True, timeout=7200)
-    os.remove(fn)
+    (os.path.exists(fn) and os.remove(fn))
     return {10: 'SAT', 20: 'UNSAT'}.get(r.returncode, r.returncode)
 out = {'N': N, 'eps': eps, 'pairs': int(len(I)), 'regions': R, 'exempt': int(((mA[I] & mB[J]) | (mB[I] & mA[J]) != 0).sum())}
 if mode in ('both', 'plain'): out['plain'] = run(False)

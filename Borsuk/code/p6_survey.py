@@ -55,8 +55,8 @@ def kissat_colour(N, U, V, k=5, tl=1800):
     try:
         r = subprocess.run(['Borsuk/.scratch/tools/kissat/build/kissat', '-q', fn], capture_output=True, text=True, timeout=tl)
     except subprocess.TimeoutExpired:
-        os.remove(fn); return 'TIME', None
-    os.remove(fn)
+        (os.path.exists(fn) and os.remove(fn)); return 'TIME', None
+    (os.path.exists(fn) and os.remove(fn))
     if r.returncode == 20: return 'UNSAT', None
     if r.returncode != 10: return 'ERR', None
     col = np.full(N, -1)
