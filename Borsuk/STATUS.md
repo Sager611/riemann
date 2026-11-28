@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 11:21
-Node: P8 middle range: find convex (or union) 5-cell partitions of Ω(contacts) for ρ ∈ [0.3, 0.39]; certifier ready (cert2.c); D10 in background
-Last round: R018 (Jung-corner piece certified < 0.88)
-Next: todo #19: partition search in the middle range with the certifier in the loop (optimise power-diagram sites against cert2's worst direction, warm-started), starting at the all-contact type-3 bodies near ρ = 0.31 (room 3–6%); then types 4, 5
+UTC: 2026-11-28 11:36
+Node: P8 middle range: partition search against true diameters (certifier in the loop); D10 in background (Borsuk/.scratch/d10_run.sh)
+Last round: R019 (end-to-end: 2 of 5 cone cells certified at ρ = 0.3007; sampled diameters underestimate by ≈ 1%)
+Next: todo #19: optimise power-diagram/cone parameters with the exact local maximum of each piece's diameter (SLSQP from worst sampled pairs, or cert2's worst direction) as objective; first target: certify all 5 cells for the ρ = 0.3007 type-5 body; then scan ρ upward to find where 5 convex cells stop working
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.

@@ -54,3 +54,4 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | R016 | P8: certifier v2 (support functions + duality) | rigorous in principle; Python 28 ms/box too slow; port to C |
 | R017 | P8: certifier v2 in C | ball 0.29 ∩ simplex cone certified < 0.985 in 48k boxes (0.4 ms/box) |
 | R018 | P8: Jung-corner piece | Ω₅ aligned cone certified < 0.88 |
+| R019 | P8: end-to-end cones + certifier | 2 of 5 cells certified; sampled diameters underestimate by ≈ 1% |
