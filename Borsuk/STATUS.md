@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 09:21
-Node: P9 (rotation-avoidance near ρ = 3/10, thin-shell lemma), P8 certifier next
-Last round: R008 (no density obstruction on S³; thin-shell lemma)
-Next: todo #10: bound the near-contact set of constant-width bodies with ρ ∈ [0.30, 0.31] and the bad-rotation measure per diametral pair; then extend ρ range
+UTC: 2026-11-28 09:23
+Node: P10 (Hadwiger partition with canonical normals; repair of singular–singular diametral pairs)
+Last round: R009 (normal-cone bound arccos(1/(2R)); cones exactly critical at ρ = 3/10; rotation gives only ρ ≤ 3/10 + ε₀)
+Next: todo #11: (a) for finite diameter graphs, colour by canonical partner-direction normals + best rotation, list the bad edges (θ_x + θ_y ≥ 48.2°) on the D1/D2 sets and the P5 certificate set; (b) characterise singular–singular diametral pairs of constant-width bodies in ℝ⁴; (c) Jung stability is only quadratic (ρ ≥ 0.395 still allows edges 0.707), so the near-Jung regime is small
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
