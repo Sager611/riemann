@@ -30,6 +30,7 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | P6 | case analysis by contact type (3, 4, 5 contacts) with explicit 5-partitions of the all-contact outer bodies Ω = B(0,√ρ) ∩ ⋂ B(pᵢ,1) | active | 2×5 | R007 |
 | P7 | analytic large-r argument: contact-aligned cones/power cells + moment bound M ⪯ (1/2 − r)I (Chalmers/ABPR Lemma 6) | open | 2×5 | |
 | P8 | fast C certifier + adaptive branch-and-bound that adds contacts only where the 3-contact form is near-critical | open | 2×5 | |
+| P9 | rotation-avoidance near ρ = 3/10: rotate the 5 simplex cones away from the near-contact diametral pairs (thin-shell lemma) | active | 2×4 | R008 |
 
 ## Rounds
 | round | node | verdict |
@@ -41,3 +42,4 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | R005 | D1, D2: exhaustive colouring checks | no counterexample where complete (regular polytopes, root systems, A4/B4/F4 families, 8 H4 orbits, lattices to s ≤ 12–32); rest stalls |
 | R006 | P5 barrier; P1–P4, D4b, D5, D7, D9 | β₅(H(1,0,0,0)) ≥ 0.9849 certified; all dead |
 | R007 | P6: all-contact margins; no-unit-pair relaxation; Petersen critical pairs | room 3–6% near ρ = 0.3 for all contact types |
+| R008 | P6: density bounds on S³; thin-shell lemma | no density obstruction; cone failures need near-contact diametral pairs |
