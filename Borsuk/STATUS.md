@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 10:15
-Node: P8 certifier (Borsuk/code/cert.py prototype); D10 pipeline in background (Borsuk/.scratch/d10_run.sh, outputs d10_*.out)
-Last round: R015 (certifier prototype correct but loose and slow)
-Next: todo #16: tighten the enclosure (adaptive planes until vertices within 1e-3 of balls) and port pivoting to C; alternatively pairwise interval branch-and-bound on boundary patches; then certify ρ < 0.3 simplex cones and Ω₅ aligned cones as tests; check D10 outputs and write a round
+UTC: 2026-11-28 10:56
+Node: P8 certifier v2 (support functions + Lagrange duality, Borsuk/code/cert2.py) → C port; D10 pipeline in background (Borsuk/.scratch/d10_run.sh, outputs d10_*.out)
+Last round: R016 (certifier v2 rigorous in principle, Python too slow)
+Next: todo #16: write Borsuk/code/cert2.c (dual bound with Newton on ≤ 6 multipliers, exact check in __int128-scaled rationals or long double + outward error bound), test on ball 0.29 ∩ simplex cone (must certify < 1), then on Ω₅ aligned cones; todo #17 D10 summary
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
