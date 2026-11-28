@@ -26,11 +26,23 @@ n = len(pts); k = 5; E = []
 for i in range(n):
     for j in range(i + 1, n):
         if sum((a - b) ** 2 for a, b in zip(pts[i], pts[j])) >= t2: E.append((i, j))
+# symmetry breaking (sound): a clique Q of the far graph gets colours 1..|Q| in every colouring up to a permutation
+adj = [set() for _ in range(n)]
+for i, j in E: adj[i].add(j); adj[j].add(i)
+best = []
+for v0 in sorted(range(n), key=lambda v: -len(adj[v]))[:200]:
+    Q = [v0]; cand = set(adj[v0])
+    while cand and len(Q) < k:
+        w = max(cand, key=lambda w: len(adj[w] & cand)); Q.append(w); cand &= adj[w]
+    if len(Q) > len(best): best = Q
+    if len(best) == k: break
 with open('/tmp/hbar.cnf', 'w') as f:
-    f.write('p cnf %d %d\n' % (n * k, n + k * len(E)))
+    f.write('p cnf %d %d\n' % (n * k, n + k * len(E) + len(best)))
     for v in range(n): f.write(' '.join(str(v * k + c + 1) for c in range(k)) + ' 0\n')
     for i, j in E:
         for c in range(k): f.write('-%d -%d 0\n' % (i * k + c + 1, j * k + c + 1))
+    for c, v in enumerate(best): f.write('%d 0\n' % (v * k + c + 1))
+print('symmetry-breaking clique', len(best), best, flush=True)
 T = 'Borsuk/.scratch/tools'
 r = subprocess.run([T + '/kissat/build/kissat', '-q', '/tmp/hbar.cnf', '/tmp/hbar.drat', '--no-binary'], capture_output=True, text=True)
 print('points', n, 'edges', len(E), 'rho', str(rho)[:12], 'min membership slack %.3e' % worst, 'kissat', {10: 'SAT', 20: 'UNSAT'}.get(r.returncode, r.returncode), flush=True)

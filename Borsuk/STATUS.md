@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 15:40
-Node: P11 × P12 (branching tree with X-dependent fans; Borsuk/code/p11_tree.py → Borsuk/.scratch/p11tree_ext3.out) + H(u) barrier at u = (0.8,0,0,0) (Borsuk/.scratch/p8h_08_30k.out, p8h_3.out)
-Last round: R026 (β₅(H(0.8,0,0,0)) ≥ 0.99 on samples)
-Next: read the tree probe (nodes/leaves/depth for the extreme type-3 body) and the H(u) barrier runs; if UNSAT at 1.0, build an exact certificate (rational points + DRAT, as R006)
+UTC: 2026-11-28 17:50
+Node: P5 barrier certificate for H(0.8,0,0,0) at t = 0.9899 (2,488 exact points kissat-UNSAT; drat-trim needs more than 300 MB → shrinking the set: Borsuk/code/p8_shrink.py → Borsuk/certs/h08_0989.txt, log Borsuk/.scratch/hbar3.out); P12 fan conjecture (spherical version next)
+Last round: R028 (merging lemma; 6-piece merging fails)
+Next: finish the certificate (DRAT verified) and write R029; then spherical fan conjecture (all-contact sets X = R·D, D ⊂ S³ with angular diameter θ_c(ρ), 0 ∈ conv D) as the 3-dimensional core of P12
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
@@ -24,3 +24,4 @@ Next: read the tree probe (nodes/leaves/depth for the extreme type-3 body) and t
 - 2026-11-28 12:01 Type 3 (0 inside a contact triangle on a great circle, 3 parameters) is the crux of the contact-type split; work on its extreme body first, both as proof bottleneck and as disproof lead.
 - 2026-11-28 12:46 Correction recorded (R021): CEGAR "NOT" verdicts were tabu failures; all future brackets use the kissat fallback.
 - 2026-11-28 14:09 Pivot to P12 (fan conjecture): diameter-1 sets are ≥ 9% easier than their outer bodies, so the proof must use X's own diametral structure; fans are the simplest X-dependent partitions.
+- 2026-11-28 17:50 Barrier certificates use symmetry breaking by a clique of the far graph (sound: any colouring can be permuted to colour the clique 1..|Q|); shrink point sets before DRAT so that drat-trim fits in 300 MB.
