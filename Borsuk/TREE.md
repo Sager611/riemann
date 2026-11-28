@@ -18,6 +18,7 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | D9 | optimisation of β₅/diam over finite sets (Gale-type multistart search) | dead | – | R004, R006 |
 | D10 | D1/D2 remainders with a stronger 2-level solver (incremental CaDiCaL proposer, kissat checks, stabilizer symmetry breaking) | open | 1×5 | |
 | D11 | colour-forcing rigidity gadgets (K5/K4 sharing patterns; non-topological, non-counting obstructions) | open | 1×5 | |
+| D12 | 2-level search inside the tightest outer bodies: diameter-≤1 subsets with large β₅ (fuzzy graphs, CEGAR over compatible sets) | open | 1×5 | R022 |
 
 ## Proof
 | id | node | status | rank | rounds |
@@ -27,11 +28,13 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | P2 | constant-width bodies: extend the smooth / centrally symmetric / revolution / belt cases | dead | – | R004, R006 |
 | P3 | reduction to finitely many configurations + exact computation (= P5's method) | dead | – | R006 |
 | P4 | topological (Lyusternik–Schnirelmann, genus, equivariant maps) | dead | – | R001, R004, R006 |
-| P6 | case analysis by contact type (3, 4, 5 contacts) with explicit 5-partitions of the all-contact outer bodies Ω = B(0,√ρ) ∩ ⋂ B(pᵢ,1) | active | 2×5 | R007 |
+| P6 | case analysis by contact type (3, 4, 5 contacts) with explicit 5-partitions of the all-contact outer bodies Ω = B(0,√ρ) ∩ ⋂ B(pᵢ,1) | open | 1×5 | R007, R020–R022 |
 | P7 | analytic large-r argument: contact-aligned cones/power cells + moment bound M ⪯ (1/2 − r)I (Chalmers/ABPR Lemma 6) | open | 2×5 | |
-| P8 | fast C certifier + adaptive branch-and-bound that adds contacts only where the 3-contact form is near-critical | open | 2×5 | |
+| P8 | fast C certifier + adaptive branch-and-bound that adds contacts only where the 3-contact form is near-critical | active | 2×5 | R015–R022 |
 | P9 | rotation-avoidance near ρ = 3/10: rotate the 5 simplex cones away from the near-contact diametral pairs (thin-shell lemma) | open | 1×4 | R008, R009 |
-| P10 | Hadwiger partition with canonical normals + repair of bad (singular–singular) diametral pairs | active | 2×5 | R010 |
+| P10 | Hadwiger partition with canonical normals + repair of bad (singular–singular) diametral pairs | open | 2×5 | R010 |
+| P11 | X-dependent partitions: case splits on whether X meets critical cells of the outer body (adds balls B(c, 1+δ) or removes cells), leaf partitions certified (cert2) | active | 2×5 | R023 |
+| P12 | two-layer partition: radial simplex fan inside radius s_min(ρ), spherical Borsuk-type partition of X's shell directions (angular diameter ≤ θ_c(ρ)) | open | 2×4 | R023 |
 
 ## Rounds
 | round | node | verdict |
