@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 11:36
-Node: P8 middle range: partition search against true diameters (certifier in the loop); D10 in background (Borsuk/.scratch/d10_run.sh)
-Last round: R019 (end-to-end: 2 of 5 cone cells certified at ρ = 0.3007; sampled diameters underestimate by ≈ 1%)
-Next: read Borsuk/.scratch/p8opt_5_15.out and p8opt_3_13.out (cone optimisation against SLSQP-refined true diameters + cert2 on all 5 cells; background jobs started); if all 5 cells certify for the type-5 ρ = 0.3007 body, scan ρ upward; else switch to power diagrams with more cells (unions)
+UTC: 2026-11-28 12:01
+Node: P8 type-3 crux: extreme body Ω₃ (ρ = 1/3, unit equilateral contact triangle on a great circle, slab cuts); decides proof (5-partition with margin) vs disproof lead (no partition even relaxed)
+Last round: R020 (type 3 hardest: β₅ sample (0.97, 0.99]; type 4 extreme ≤ 0.95)
+Next: read Borsuk/.scratch/p8x_3_0.33333333_30000_{11,12}.out (30k-sample brackets at 0.985–1.0); then relaxed (cluster-consistent) β₅ of Ω₃; build an explicit structured partition of Ω₃ and certify with cert2
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
@@ -21,3 +21,4 @@ Next: read Borsuk/.scratch/p8opt_5_15.out and p8opt_3_13.out (cone optimisation 
 - 2026-11-28 08:42 Reopened (Adrian, 28 Nov): STOPPED is not allowed; dead nodes spawn new nodes. New nodes P6 (contact-type case analysis with explicit 5-partitions), P7 (analytic large-r argument), P8 (C certifier + adaptive branch-and-bound adding contacts only where needed), D10 (stronger 2QBF solver for D1/D2 remainders), D11 (rigidity gadgets). Todo goal set; one task in progress at a time.
 - 2026-11-28 09:00 Relaxation adopted for all future partition searches: parts may contain pairs at distance > 1 (unions of mutually far clusters); only unit pairs are forbidden.
 - 2026-11-28 10:15 D10 (background): CaDiCaL proposer + 3600 s limit now resolves H4:01 thresholds that timed out before (s = 181.4, 185.4: UNSAT); pipeline continues (d10_cegar.out).
+- 2026-11-28 12:01 Type 3 (0 inside a contact triangle on a great circle, 3 parameters) is the crux of the contact-type split; work on its extreme body first, both as proof bottleneck and as disproof lead.

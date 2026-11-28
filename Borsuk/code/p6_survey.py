@@ -38,7 +38,7 @@ def random_config(typ, rng):
         if np.allclose(A @ lam, b, atol=1e-9) and np.all(lam > 0.02): return rho, P, cuts, lam
     raise RuntimeError('no config')
 
-def cegar(C, thr, B=100, TL=300, rng=None):
+def cegar(C, thr, B=100, TL=300, rng=None, want=False):
     M = len(C); Y = list(rng.choice(M, 300, replace=False)); t0 = time.time(); prev = None
     while time.time() - t0 < TL:
         X = C[Y]; N = len(X); UU = []; VV = []
@@ -79,7 +79,11 @@ def cegar(C, thr, B=100, TL=300, rng=None):
                     if al.any(): cb[t] = int(np.flatnonzero(al)[0])
                     else: fail.append(int(idx[t]))
                 ok = cb >= 0; q = int(ok.sum()); Zb[nz:nz + q] = Cb[ok]; Zn[nz:nz + q] = (Cb[ok] ** 2).sum(1); zc[nz:nz + q] = cb[ok]; nz += q
-            if not fail: return ('COL', N)
+            if not fail:
+                if want:
+                    full = np.full(M, -1); full[np.arange(M)] = -1
+                    return ('COL', N, X, col, Zb[:nz], zc[:nz])
+                return ('COL', N)
             Y.extend(fail[:B]); continue
         Y.extend(bad[np.argsort(-worst[bad])][:B].tolist())
     return ('TIME', len(Y))
