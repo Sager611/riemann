@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 09:58
-Node: P8 (relaxed partitions with a cluster-consistent SAT encoding; 4-contact normal form); D10 pipeline in background (Borsuk/.scratch/d10_run.sh, outputs d10_*.out)
-Last round: R012 (band graph at u = (0.6,1,0,0) SAT but cluster-inconsistent)
-Next: todo #14 cluster-consistent encoding (far regions A, B with type indicators per colour); #15 4-contact normal form; #4 C certifier; check D10 outputs
+UTC: 2026-11-28 10:01
+Node: P8 → 4-/5-contact normal forms (todo #15); D10 pipeline in background (Borsuk/.scratch/d10_run.sh, outputs d10_*.out)
+Last round: R013 (relaxed far-cluster encoding does not remove the Jung-corner obstruction of the 3-contact body)
+Next: todo #15: outer body with triangle + 4th contact P4 (and 5th near ρ > 3/8); rerun strict CEGAR margins at the hard u's; estimate parameter dimension and box counts; then C certifier (#4)
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.

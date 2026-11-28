@@ -48,3 +48,4 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | R010 | P10: Hadwiger colouring with canonical normals | monochromatic edges only among bad edges (θ_x + θ_y ≥ 48.2°); necessary condition for counterexamples |
 | R011 | P6/P8: relaxed partitions on samples | Jung corner passes the band test; u = (0.6,1,0,0) fails it (tabu) |
 | R012 | P8: exact SAT for the band graph | SAT but cluster-inconsistent (components 1.02–1.06); needs a consistent encoding |
+| R013 | P8: cluster-consistent relaxed SAT | Jung-corner certificate stays UNSAT with 37 far region pairs |
