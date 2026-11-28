@@ -34,7 +34,7 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | P9 | rotation-avoidance near ρ = 3/10: rotate the 5 simplex cones away from the near-contact diametral pairs (thin-shell lemma) | open | 1×4 | R008, R009 |
 | P10 | Hadwiger partition with canonical normals + repair of bad (singular–singular) diametral pairs | open | 2×5 | R010 |
 | P11 | X-dependent partitions: case splits on whether X meets critical cells of the outer body (adds balls B(c, 1+δ) or removes cells), leaf partitions certified (cert2) | active | 2×5 | R023 |
-| P12 | two-layer partition: radial simplex fan inside radius s_min(ρ), spherical Borsuk-type partition of X's shell directions (angular diameter ≤ θ_c(ρ)) | open | 2×4 | R023 |
+| P12 | fan conjecture: an X-dependent simplex fan (rotation Q, apex c) splits every diameter-1 set; prove via the diametral-chord family of the completion (blocking measure, adversarial game) | active | 2×5 | R023 |
 
 ## Rounds
 | round | node | verdict |
@@ -61,3 +61,4 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | R020 | P8: extreme contact configurations | type 3 at ρ = 1/3 is the crux (β₅ sample (0.97, 0.99]); regular tetrahedron ≤ 0.95; cones fail for type 3 |
 | R021 | P8: SAT-certified brackets | tabu NOT ≠ UNSAT (corrected); extreme type 3 ≥ 0.97, type 4 at 0.36 ∈ [0.95, 0.97] |
 | R022 | P8: relaxation, explicit partitions, Jung stability | relaxation useless at type-3 extreme; LP-fitted cell partitions 1.03–1.10; type-5 near-regular only for ρ ≥ 0.395 |
+| R023 | P12: fans on diameter-1 sets | optimised simplex fans give 0.88 (4D) on sets whose outer bodies need ≥ 0.97; fan conjecture; blocking measure ≤ 0.31% per chord at ρ ≤ 1/3 |

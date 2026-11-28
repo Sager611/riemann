@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 13:31
-Node: P8 (computer-assisted proof: explicit partitions with margin) and D12 (new: 2-level search for diameter-1 sets with large β₅ inside the extreme type-3 body)
-Last round: R022 (relaxation useless at the type-3 extreme; fitted partitions ≥ 1.03; Jung near-regularity only for ρ ≥ 0.395)
-Next: (1) regularised colourings (colour_smooth) + cell fits for the extreme type-3 body; (2) memory-lean 2-level CEGAR (D12) for diameter-≤1 subsets with β₅ ≥ 0.93; (3) read Borsuk/.scratch/p8h_{1,2}.out, rel2_ext3_003.out, d10_d1v3big.out
+UTC: 2026-11-28 14:09
+Node: P12 fan conjecture (X-dependent simplex fans; Borsuk/code/p12_fan.py, p12_fan3.py, p12_adv.py)
+Last round: R023 (fans give 0.88 on diameter-1 sets whose outer bodies need ≥ 0.97; blocking measure ≤ 0.31% per diametral chord at ρ ≤ 1/3)
+Next: read Borsuk/.scratch/adv_*.out (adversarial fan game: does the best fan value climb to 1?); if FC survives, design a proof: chord family + rotation averaging or a finite rotation net with a certified blocking bound
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
@@ -23,3 +23,4 @@ Next: (1) regularised colourings (colour_smooth) + cell fits for the extreme typ
 - 2026-11-28 10:15 D10 (background): CaDiCaL proposer + 3600 s limit now resolves H4:01 thresholds that timed out before (s = 181.4, 185.4: UNSAT); pipeline continues (d10_cegar.out).
 - 2026-11-28 12:01 Type 3 (0 inside a contact triangle on a great circle, 3 parameters) is the crux of the contact-type split; work on its extreme body first, both as proof bottleneck and as disproof lead.
 - 2026-11-28 12:46 Correction recorded (R021): CEGAR "NOT" verdicts were tabu failures; all future brackets use the kissat fallback.
+- 2026-11-28 14:09 Pivot to P12 (fan conjecture): diameter-1 sets are ≥ 9% easier than their outer bodies, so the proof must use X's own diametral structure; fans are the simplest X-dependent partitions.
