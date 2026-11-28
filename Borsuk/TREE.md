@@ -66,3 +66,4 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | R025 | P12: adversaries | set-cover adversaries block ≤ 36/300 rotations before running out of unit pairs; pairwise compatibility relaxation useless |
 | R026 | P5/P8: H(u) brackets | β₅(H(0.8,0,0,0)) ≥ 0.99 (sample); middle of Tolmachev's family tighter than u* |
 | R027 | P8: large-ρ end | contact-aligned cones ≤ 0.89 for near-regular contacts at ρ ≥ 0.385; split vertices need optimised fans (0.97–0.98 near type 4) |
+| R028 | merging lemma (6 → 5 pieces) | K₆ of pieces is realised by 23–27-point diameter-1 sets; dead as a shortcut |
