@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 09:23
-Node: P10 (Hadwiger partition with canonical normals; repair of singular–singular diametral pairs)
-Last round: R009 (normal-cone bound arccos(1/(2R)); cones exactly critical at ρ = 3/10; rotation gives only ρ ≤ 3/10 + ε₀)
-Next: todo #11: (a) for finite diameter graphs, colour by canonical partner-direction normals + best rotation, list the bad edges (θ_x + θ_y ≥ 48.2°) on the D1/D2 sets and the P5 certificate set; (b) characterise singular–singular diametral pairs of constant-width bodies in ℝ⁴; (c) Jung stability is only quadratic (ρ ≥ 0.395 still allows edges 0.707), so the near-Jung regime is small
+UTC: 2026-11-28 09:49
+Node: P6/P8 relaxed partitions (band test), P10 framework; D10 pipeline running in background (Borsuk/.scratch/d10_run.sh)
+Last round: R010 (Hadwiger colouring: monochromatic edges only among bad edges θ_x + θ_y ≥ 48.2°)
+Next: read Borsuk/.scratch/p6band.out (band [1−ε, 1+ε] colourability + cluster consistency at u = (1,0,0,0), (0.6,1,0,0), ε = 0.03/0.015); if relaxed partitions exist with room, fit coloured power cells (unions) and build the C certifier (todo #4); else open the 4-contact normal form
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
