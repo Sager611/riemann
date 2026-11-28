@@ -1,28 +1,33 @@
 # Borsuk in ℝ⁴: approach tree
 
-Root B: every bounded X ⊂ ℝ⁴ with diam X > 0 splits into 5 parts of diameter < diam X.
-Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff.
+Root B: every bounded X ⊂ ℝ⁴ with diam X > 0 splits into 5 parts of diameter < diam X. Known: 5 ≤ b(4) ≤ 6 (arXiv:2611.17375, 2611.16775; R001).
+Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1–5 each).
 
-## Disproof: finite X whose diameter graph G(X) is not 5-colourable
+## Disproof: finite X whose diameter graph G(X) is not 5-colourable (≥ 11 points: R001 L4)
 | id | node | status | rank | rounds |
 |---|---|---|---|---|
-| D1 | subsets of 4-polytope vertex sets and root-system shells (5-cell, 16-cell, 8-cell, 24-cell, 600-cell, 120-cell; A4, D4, F4, H4) | open | | |
-| D2 | lattice subsets (ℤ⁴, D4, A4, A4*, icosians) in bounded regions, every squared-distance threshold | open | | |
-| D3 | few-distance sets (2-distance ≤ 10 points, 3-distance ≤ 16) | open | | |
-| D4 | spherical sets: acute (circumradius > D/√2) and obtuse | open | | |
-| D5 | algebraic embeddings (strongly regular graphs, Kneser/Frankl–Wilson: Kahn–Kalai, Bondarenko, Jenrich–Brouwer) pushed to d = 4 | open | | |
-| D6 | OpenAI projector construction (openai/math #156) pushed to d = 4 | open | | |
-| D7 | small counterexample: 6-critical graphs obeying the local laws of ℝ⁴ diameter graphs, then realizability | open | | |
-| D8 | joins and products: Lenz-type orthogonal pairs, A ∨ B | open | | |
+| D1 | subsets of uniform 4-polytope vertex sets and root systems (A4, B4, F4, H4 families; F4/B4/C4 roots) | active | 1×5 | R002 |
+| D2 | lattice subsets (ℤ⁴, D4, A4, A4*, icosians) in bounded regions, every squared-distance threshold | open | 1×5 | |
+| D3 | two-distance sets (≤ 10 points) | dead* | – | R001 |
+| D4a | spherical sets, circumradius > D/√2 | dead | – | R001 |
+| D4b | spherical sets, circumradius ≤ D/√2 (vertex links in 3-flats, edge links in 2-flats, triangle links ≤ 2 points) | open | 1×5 | |
+| D5 | algebraic embeddings (strongly regular graphs, Frankl–Wilson counting: Kahn–Kalai, Bondarenko, Jenrich–Brouwer) at d = 4 | open | 1×5 | |
+| D6 | OpenAI projector construction pushed to d = 4 | dead | – | R001 |
+| D7 | small counterexamples (11–16 points; includes three-distance sets): 6-critical graphs obeying L1–L3, then realizability | open | 1×5 | |
+| D8 | complete joins A ∨ B (Lenz-type) | dead | – | R001 |
 
 ## Proof
 | id | node | status | rank | rounds |
 |---|---|---|---|---|
-| P1 | universal cover of diameter-1 sets in ℝ⁴ cut into 5 parts of diameter < 1 | open | | |
-| P2 | constant-width bodies: extend the smooth / centrally symmetric / revolution cases | open | | |
-| P3 | reduction to finitely many configurations + exact computation | open | | |
-| P4 | topological (Lyusternik–Schnirelmann, equivariant maps) | open | | |
+| P5 | push the b(4) ≤ 6 proofs (Chalmers; Tolmachev; ABPR seven balls) to 5 parts | active | 2×5 | R002 |
+| P1 | universal cover of diameter-1 sets in ℝ⁴ cut into 5 parts of diameter < 1 (Langi ≤ 14-facet covers) | open | 1×5 | |
+| P2 | constant-width bodies: extend smooth / centrally symmetric / revolution / belt cases | open | 1×5 | |
+| P3 | reduction to finitely many configurations + exact computation | open | 1×5 | |
+| P4 | topological (Lyusternik–Schnirelmann, equivariant maps; Musin arXiv:2609.09688) | open | 1×5 | |
+
+\* pending verification of g(4) = 10.
 
 ## Rounds
 | round | node | verdict |
 |---|---|---|
+| R001 | root: literature | b(4) ∈ {5, 6}; P5 opened; D4a, D6, D8 dead; D3 dead pending g(4) = 10 |
