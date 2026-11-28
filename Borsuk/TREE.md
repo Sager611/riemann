@@ -36,6 +36,7 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | P11 | X-dependent partitions: case splits on whether X meets critical cells of the outer body (adds balls B(c, 1+δ) or removes cells), leaf partitions certified (cert2) | active | 2×5 | R023 |
 | P12 | fan conjecture: an X-dependent simplex fan (rotation Q, apex c) splits every diameter-1 set; prove via the diametral-chord family of the completion (blocking measure, adversarial game) | active | 2×5 | R023–R025 |
 | P13 | illumination of constant-width bodies by 5 directions (⇒ 5 smaller homothets) | open | 1×5 | R029 |
+| P14 | multi-fan certificates: m fans per outer-body box whose critical zones cannot be blocked jointly by a diameter-1 set (CSP over region pairs) | active | 3×5 | R030 |
 
 ## Rounds
 | round | node | verdict |
@@ -69,3 +70,4 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | R027 | P8: large-ρ end | contact-aligned cones ≤ 0.89 for near-regular contacts at ρ ≥ 0.385; split vertices need optimised fans (0.97–0.98 near type 4) |
 | R028 | merging lemma (6 → 5 pieces) | K₆ of pieces is realised by 23–27-point diameter-1 sets; dead as a shortcut |
 | R029 | P13: illumination | test bodies illuminated by a rotated simplex; but constant-width illumination is open even in ℝ³ (bound 6) |
+| R030 | P14: multi-fan lemma | 12 fans jointly unblockable on the extreme type-3 body (sampled CSP UNSAT) |

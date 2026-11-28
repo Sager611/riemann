@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 17:50
-Node: P5 barrier certificate for H(0.8,0,0,0) at t = 0.9899 (2,488 exact points kissat-UNSAT; drat-trim needs more than 300 MB → shrinking the set: Borsuk/code/p8_shrink.py → Borsuk/certs/h08_0989.txt, log Borsuk/.scratch/hbar3.out); P12 fan conjecture (spherical version next)
-Last round: R028 (merging lemma; 6-piece merging fails)
-Next: finish the certificate (DRAT verified) and write R029; then spherical fan conjecture (all-contact sets X = R·D, D ⊂ S³ with angular diameter θ_c(ρ), 0 ∈ conv D) as the 3-dimensional core of P12
+UTC: 2026-11-28 18:27
+Node: P14 multi-fan certificates (Borsuk/code/p14_twofan.py; outputs Borsuk/.scratch/mfan_*.out); barrier certificate shrink in background (Borsuk/.scratch/hbar3.out)
+Last round: R030 (multi-fan lemma; 12 fans jointly unblockable on the extreme type-3 body, sampled)
+Next: read mfan outputs (fuzz robustness; H(0.8,0,0,0), u*, H(0.6,1,0,0)); if robust, build the rigorous pipeline: certified zone enclosure (pair branch-and-bound, C) + region-pair CSP (kissat + DRAT) per parameter box
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
@@ -25,3 +25,4 @@ Next: finish the certificate (DRAT verified) and write R029; then spherical fan 
 - 2026-11-28 12:46 Correction recorded (R021): CEGAR "NOT" verdicts were tabu failures; all future brackets use the kissat fallback.
 - 2026-11-28 14:09 Pivot to P12 (fan conjecture): diameter-1 sets are ≥ 9% easier than their outer bodies, so the proof must use X's own diametral structure; fans are the simplest X-dependent partitions.
 - 2026-11-28 17:50 Barrier certificates use symmetry breaking by a clique of the far graph (sound: any colouring can be permuted to colour the clique 1..|Q|); shrink point sets before DRAT so that drat-trim fits in 300 MB.
+- 2026-11-28 18:27 P14 is the main line: multi-fan certificates are finite, use diam X = 1, and need no extra contact parameters beyond Tolmachev's 4.
