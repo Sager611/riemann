@@ -8,7 +8,7 @@ that fit in memory.  Exact integer keys; colourings (tabu) checked edge by edge;
 """
 import sys, json, time
 import numpy as np
-sys.path.insert(0, 'Borsuk/code'); sys.path.insert(0, 'Borsuk/.scratch')
+sys.path.insert(0, 'Borsuk/code'); sys.path.insert(0, 'Borsuk/code')
 import d1
 from tabu import colour_tabu
 

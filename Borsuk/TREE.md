@@ -6,8 +6,8 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 ## Disproof: finite X whose diameter graph G(X) is not 5-colourable (≥ 11 points: R001 L4)
 | id | node | status | rank | rounds |
 |---|---|---|---|---|
-| D1 | subsets of uniform 4-polytope vertex sets and root systems (A4, B4, F4, H4 families; F4/B4/C4 roots) | active | 1×5 | R002, R005 |
-| D2 | lattice subsets (ℤ⁴, D4, A4, A4*) in bounded regions, every squared-distance threshold | active | 1×5 | R005 |
+| D1 | subsets of uniform 4-polytope vertex sets and root systems (A4, B4, F4, H4 families; F4/B4/C4 roots) | dead | – | R005 |
+| D2 | lattice subsets (ℤ⁴, D4, A4, A4*) in bounded regions, every squared-distance threshold | dead | – | R005 |
 | D3 | two-distance sets (≤ 10 points) | dead | – | R001, R002 |
 | D4a | spherical sets, circumradius > D/√2 | dead | – | R001 |
 | D4b | spherical sets, circumradius ≤ D/√2 | dead | – | R006 |
@@ -33,5 +33,5 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | R002 | P5: audit of the three proofs | no stated obstruction to 5; same contact-triangle reduction; g(4) = 10 ⇒ D3 dead |
 | R003 | P5: obstructions in H(u) | no clique, topological or volume obstruction; 40k-point far graph of the hardest-looking H(u) 5-colourable |
 | R004 | root: new routes + regular-simplex case | no new route; sets containing a regular unit simplex split into 5 (0.874) |
-| R005 | D1, D2: exhaustive colouring checks | see file |
+| R005 | D1, D2: exhaustive colouring checks | no counterexample where complete (regular polytopes, root systems, A4/B4/F4 families, 8 H4 orbits, lattices to s ≤ 12–32); rest stalls |
 | R006 | P5 barrier; P1–P4, D4b, D5, D7, D9 | β₅(H(1,0,0,0)) ≥ 0.9849 certified; all dead |

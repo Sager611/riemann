@@ -9,7 +9,7 @@ sqrt(s) and a non-5-colourable diameter graph.  Exact keys throughout; colouring
 import sys, json, time
 import numpy as np
 from pysat.solvers import Solver
-sys.path.insert(0, 'Borsuk/code'); sys.path.insert(0, 'Borsuk/.scratch')
+sys.path.insert(0, 'Borsuk/code'); sys.path.insert(0, 'Borsuk/code')
 import d1
 from tabu import colour_tabu
 sys.path.insert(0, 'Borsuk/code'); import cegar as cg

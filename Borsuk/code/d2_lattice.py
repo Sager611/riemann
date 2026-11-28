@@ -9,7 +9,7 @@ Usage: python d2_lattice.py LATTICE SMAX
 import sys, json, time, itertools
 import numpy as np
 from pysat.solvers import Solver
-sys.path.insert(0, 'Borsuk/.scratch')
+sys.path.insert(0, 'Borsuk/code')
 from tabu import colour_tabu
 sys.path.insert(0, 'Borsuk/code'); import cegar as cg
 

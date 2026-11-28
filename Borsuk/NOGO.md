@@ -15,3 +15,5 @@ One line per dead node: id — smallest reason it cannot work — evidence (roun
 - D5 — known algebraic constructions are two-distance sets (D3), tensor/projector squares (D6) or cube/lattice subsets (D2) — R006.
 - D7 — counterexamples need ≥ 11 points (L4) and the 11-vertex Mycielskian M(K₅) is unrealizable; larger 6-critical graphs are not enumerated and each needs a real-algebraic realizability test — R006.
 - D9 — multistart optimisation of β₅/diam in ℝ⁴ peaks at 0.913149 (ball 0.912871); a counterexample needs 1 — R004.
+- D1 — no counterexample among subsets of the six regular 4-polytopes, all A4/B4/F4 uniform polytopes and the root systems (every threshold resolved) or of 8 of 15 H4 orbits (56 thresholds unresolved); what remains are 2-level searches (∃ compatible S, ∀ 5-colourings fail) on 300–14,400-point local sets, where our solver stalls — R005.
+- D2 — ℤ⁴ (s ≤ 24), D4 (s ≤ 32), A4 (s ≤ 12), A4* (s ≤ 12): no counterexample; at A4, s = 14 the 2-level search stalls (511 points, ≈ 600 conflicts per near-colouring); for large s lattice subsets are as general as arbitrary finite sets (D7) — R005.

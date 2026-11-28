@@ -1,8 +1,8 @@
-WORKING
-UTC: 2026-11-28 03:40
-Node: D1, D2 (last computations); all other nodes dead
-Last round: R006 (P5 barrier certified: β₅(H(1,0,0,0)) ≥ 0.9849)
-Next: finish d1v2 + d1_cegar (H4 orbits) and d2 (A4 to s = 22); write R005; then STOPPED unless a check fails
+STOPPED — every node of TREE.md is dead (NOGO.md) and no route remains within reach: Borsuk in ℝ⁴ stays open (5 ≤ b(4) ≤ 6). No counterexample in any structured family; the only working proof machinery (contact-point normal forms + certified boxes) is near-critical for 5 parts (Tolmachev's outer body at the Jung corner forces a part of diameter ≥ 0.9849, certified), so a 5-part proof needs 6–10-parameter normal forms far beyond the 6-part computations.
+UTC: 2026-11-28 04:03
+Node: none (all dead)
+Last round: R006 (P5 barrier) and R005 (D1, D2 checks)
+Next: none. Reopening would need a new idea: a 4–5-contact normal form with a far faster certified partition search, or a counterexample construction with a non-topological, non-counting obstruction (R001 L5, R006 D5)
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
@@ -16,3 +16,5 @@ Next: finish d1v2 + d1_cegar (H4 orbits) and d2 (A4 to s = 22); write R005; then
 - 2026-11-28 03:00 P5 declared dead: certified ≥ 0.9699 at the Jung corner of the 4-parameter normal form, no convex 5-cell partition below 1 found; 6–10-parameter refinements judged beyond reach (R006).
 - 2026-11-28 03:00 macOS: run every numpy job with MallocLargeCache=0 (the large-allocation cache kept growing-size buffers past 300 MB).
 - 2026-11-28 03:00 Route check before stopping: 8 scouts (R004) found no new route; the only concrete candidate (4D Meissner-type bodies) is 5-partitionable (0.874).
+- 2026-11-28 04:03 D1, D2 closed with explicit unresolved remainders (2-level search stalls on large local sets); declared dead because the remaining checks cannot finish with our solver and carry no structure beyond D7.
+- 2026-11-28 04:03 STOPPED.

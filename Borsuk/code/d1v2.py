@@ -11,7 +11,7 @@ Usage: python d1v2.py [group ...]   groups: ROOTS A4 B4 F4 H4
 """
 import sys, json, time
 import numpy as np
-sys.path.insert(0, 'Borsuk/code'); sys.path.insert(0, 'Borsuk/.scratch')
+sys.path.insert(0, 'Borsuk/code'); sys.path.insert(0, 'Borsuk/code')
 import d1
 from tabu import colour_tabu
 

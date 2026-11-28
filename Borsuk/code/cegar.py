@@ -8,16 +8,29 @@ import numpy as np
 from pysat.solvers import Solver
 from tabu import colour_tabu
 
+def has_clique(C, cand, k):
+    """is there a k-clique inside cand (list) in the boolean matrix C?"""
+    if k == 0: return True
+    if len(cand) < k: return False
+    for i, v in enumerate(cand):
+        nxt = [w for w in cand[i + 1:] if C[v, w]]
+        if len(nxt) >= k - 1 and has_clique(C, nxt, k - 1): return True
+    return False
+
 def prune(m, U, V, BAD, root=0):
-    """drop vertices that cannot lie in a 6-critical compatible S: fewer than 5 compatible H_s-neighbours alive"""
+    """drop vertices that cannot lie in a 6-critical compatible S: in S every vertex has >= 5 H_s-neighbours, and
+    they are pairwise compatible (all of S is), so its alive compatible neighbours must contain a compatible 5-set"""
     alive = np.ones(m, bool); adj = [[] for _ in range(m)]
     for a, b in zip(U.tolist(), V.tolist()):
         if not BAD[a, b]: adj[a].append(b); adj[b].append(a)
+    C = ~BAD
     changed = True
     while changed:
         changed = False
         for v in range(m):
-            if alive[v] and sum(1 for w in adj[v] if alive[w]) < 5: alive[v] = False; changed = True
+            if not alive[v]: continue
+            nb = [w for w in adj[v] if alive[w]]
+            if len(nb) < 5 or not has_clique(C, nb, 5): alive[v] = False; changed = True
     return alive
 
 def cegar(m, U, V, BAD, tl=1800, root=0):
