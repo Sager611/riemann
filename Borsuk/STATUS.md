@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 10:01
-Node: P8 → 4-/5-contact normal forms (todo #15); D10 pipeline in background (Borsuk/.scratch/d10_run.sh, outputs d10_*.out)
-Last round: R013 (relaxed far-cluster encoding does not remove the Jung-corner obstruction of the 3-contact body)
-Next: todo #15: outer body with triangle + 4th contact P4 (and 5th near ρ > 3/8); rerun strict CEGAR margins at the hard u's; estimate parameter dimension and box counts; then C certifier (#4)
+UTC: 2026-11-28 10:08
+Node: P8 (certified computation: C certifier first, todo #4); D10 pipeline in background (Borsuk/.scratch/d10_run.sh, outputs d10_*.out)
+Last round: R014 (a 4th contact buys little: room 3–6% on 8k samples)
+Next: todo #4: write Borsuk/code/cert.c (enclose cell ∩ Ω in a polytope by tangent halfspaces; exact/interval vertex enumeration; max vertex distance < 1) and test on 5 simplex cones (ρ < 0.3) and on Ω₅ aligned cones (0.874); then warm-started partition search over boxes
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.

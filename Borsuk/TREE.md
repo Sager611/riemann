@@ -49,3 +49,4 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | R011 | P6/P8: relaxed partitions on samples | Jung corner passes the band test; u = (0.6,1,0,0) fails it (tabu) |
 | R012 | P8: exact SAT for the band graph | SAT but cluster-inconsistent (components 1.02–1.06); needs a consistent encoding |
 | R013 | P8: cluster-consistent relaxed SAT | Jung-corner certificate stays UNSAT with 37 far region pairs |
+| R014 | P8: a fourth contact | room stays 3–6% (8k samples); certified computation needs adaptive boxes + ms-cost C certifier |
