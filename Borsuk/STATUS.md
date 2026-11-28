@@ -1,8 +1,8 @@
 WORKING
-UTC: 2026-11-28 14:09
-Node: P12 fan conjecture (X-dependent simplex fans; Borsuk/code/p12_fan.py, p12_fan3.py, p12_adv.py)
-Last round: R023 (fans give 0.88 on diameter-1 sets whose outer bodies need ≥ 0.97; blocking measure ≤ 0.31% per diametral chord at ρ ≤ 1/3)
-Next: read Borsuk/.scratch/adv_*.out (adversarial fan game: does the best fan value climb to 1?); if FC survives, design a proof: chord family + rotation averaging or a finite rotation net with a certified blocking bound
+UTC: 2026-11-28 14:54
+Node: P12 fan conjecture; set-cover adversary (Borsuk/code/p12_adv2.py, outputs Borsuk/.scratch/adv2_*.out)
+Last round: R024 (90–100% of random fan rotations work on every test set)
+Next: read adv2 outputs (can a diameter-1 set block all of 300 random rotations?); then proof design (todo #21): thin-shell Petersen occupancy for ρ ∈ [0.3, 0.33], Jung corner, middle range
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.

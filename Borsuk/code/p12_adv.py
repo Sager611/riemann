@@ -43,15 +43,27 @@ for r in range(rounds):
     f, zbest = best_fan(X, starts)
     # adversary: pool points z with a partner in X at distance >= 1 - tol in the same cone of the current fan
     Q = rot(zbest[:6]); Dir = SIMP @ Q.T; labX = np.argmax((X - zbest[6:]) @ Dir.T, 1); labP = np.argmax((pool - zbest[6:]) @ Dir.T, 1)
-    cand = []
+    cand = []; pairs = []
     for j in range(5):
         Pj = np.flatnonzero(labP == j); Xj = X[labX == j]
-        if len(Pj) == 0 or len(Xj) == 0: continue
-        for i0 in range(0, len(Pj), 2000):
-            M = d2(pool[Pj[i0:i0 + 2000]], Xj).max(1); cand += Pj[i0:i0 + 2000][M >= (1 - tol) ** 2].tolist()
-    print(json.dumps({'round': r, 'n': len(X), 'best_fan': round(float(f), 5), 'adversary_candidates': len(cand), 'pool': len(pool), 'sec': round(time.time() - t0)}), flush=True)
-    if not cand: break
-    cand = rng.choice(cand, min(60, len(cand)), replace=False)
-    keep = [int((((pool - pool[c]) ** 2).sum(1) <= 1).sum()) for c in cand]; c = cand[int(np.argmax(keep))]
-    z = pool[c]; X = np.vstack([X, z]); pool = pool[((pool - z) ** 2).sum(1) <= 1]
+        if len(Pj) == 0: continue
+        if len(Xj):
+            for i0 in range(0, len(Pj), 2000):
+                M = d2(pool[Pj[i0:i0 + 2000]], Xj).max(1); cand += Pj[i0:i0 + 2000][M >= (1 - tol) ** 2].tolist()
+        sub = Pj if len(Pj) <= 6000 else rng.choice(Pj, 6000, replace=False)
+        for i0 in range(0, len(sub), 1000):
+            M = d2(pool[sub[i0:i0 + 1000]], pool[sub]); a, b = np.nonzero((M >= (1 - tol) ** 2) & (M <= 1.0))
+            pairs += list(zip(sub[i0:i0 + 1000][a].tolist(), sub[b].tolist()))
+            if len(pairs) > 20000: break
+    print(json.dumps({'round': r, 'n': len(X), 'best_fan': round(float(f), 5), 'adversary_candidates': len(cand), 'adversary_pairs': len(pairs), 'pool': len(pool), 'sec': round(time.time() - t0)}), flush=True)
+    if not cand and not pairs: break
+    if cand:
+        cand = rng.choice(cand, min(60, len(cand)), replace=False)
+        keep = [int((((pool - pool[c]) ** 2).sum(1) <= 1).sum()) for c in cand]; c = cand[int(np.argmax(keep))]
+        add = [pool[c]]
+    else:
+        pick = [pairs[i] for i in rng.choice(len(pairs), min(40, len(pairs)), replace=False)]
+        keep = [int(((((pool - pool[a]) ** 2).sum(1) <= 1) & (((pool - pool[b]) ** 2).sum(1) <= 1)).sum()) for a, b in pick]
+        a, b = pick[int(np.argmax(keep))]; add = [pool[a], pool[b]]
+    for z in add: X = np.vstack([X, z]); pool = pool[((pool - z) ** 2).sum(1) <= 1]
 np.save('Borsuk/.scratch/adv_%s_%d.npy' % (seed_kind, seed), X)

@@ -62,3 +62,4 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | R021 | P8: SAT-certified brackets | tabu NOT ≠ UNSAT (corrected); extreme type 3 ≥ 0.97, type 4 at 0.36 ∈ [0.95, 0.97] |
 | R022 | P8: relaxation, explicit partitions, Jung stability | relaxation useless at type-3 extreme; LP-fitted cell partitions 1.03–1.10; type-5 near-regular only for ρ ≥ 0.395 |
 | R023 | P12: fans on diameter-1 sets | optimised simplex fans give 0.88 (4D) on sets whose outer bodies need ≥ 0.97; fan conjecture; blocking measure ≤ 0.31% per chord at ρ ≤ 1/3 |
+| R024 | P12: random rotations | 90–100% of random fan rotations work on all test sets (incl. the 4D rotated Reuleaux triangle); spherical analogue has huge room |
