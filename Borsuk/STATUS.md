@@ -1,8 +1,8 @@
-STOPPED — every node of TREE.md is dead (NOGO.md) and no route remains within reach: Borsuk in ℝ⁴ stays open (5 ≤ b(4) ≤ 6). No counterexample in any structured family; the only working proof machinery (contact-point normal forms + certified boxes) is near-critical for 5 parts (Tolmachev's outer body at the Jung corner forces a part of diameter ≥ 0.9849, certified), so a 5-part proof needs 6–10-parameter normal forms far beyond the 6-part computations.
-UTC: 2026-11-28 04:03
-Node: none (all dead)
-Last round: R006 (P5 barrier) and R005 (D1, D2 checks)
-Next: none. Reopening would need a new idea: a 4–5-contact normal form with a far faster certified partition search, or a counterexample construction with a non-topological, non-counting obstruction (R001 L5, R006 D5)
+WORKING
+UTC: 2026-11-28 08:42
+Node: P6/P8 (5-part proof via contact-type case analysis + certified computation); P7 analytic large r; D10, D11 in background
+Last round: R006 (P5 barrier), R005 (D1, D2)
+Next: R007 margin survey of all-contact outer bodies (todo #2), then explicit 5-partition schemes (#3), C certifier (#4)
 
 ## Decisions
 - 2026-11-28 00:00 Tree seeded with 8 disproof nodes (D1–D8) and 4 proof nodes (P1–P4); ranks set after R001.
@@ -18,3 +18,4 @@ Next: none. Reopening would need a new idea: a 4–5-contact normal form with a 
 - 2026-11-28 03:00 Route check before stopping: 8 scouts (R004) found no new route; the only concrete candidate (4D Meissner-type bodies) is 5-partitionable (0.874).
 - 2026-11-28 04:03 D1, D2 closed with explicit unresolved remainders (2-level search stalls on large local sets); declared dead because the remaining checks cannot finish with our solver and carry no structure beyond D7.
 - 2026-11-28 04:03 STOPPED.
+- 2026-11-28 08:42 Reopened (Adrian, 28 Nov): STOPPED is not allowed; dead nodes spawn new nodes. New nodes P6 (contact-type case analysis with explicit 5-partitions), P7 (analytic large-r argument), P8 (C certifier + adaptive branch-and-bound adding contacts only where needed), D10 (stronger 2QBF solver for D1/D2 remainders), D11 (rigidity gadgets). Todo goal set; one task in progress at a time.

@@ -16,6 +16,8 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | D7 | small counterexamples (11–16 points; includes three-distance sets) | dead | – | R001, R006 |
 | D8 | complete joins A ∨ B (Lenz-type) | dead | – | R001 |
 | D9 | optimisation of β₅/diam over finite sets (Gale-type multistart search) | dead | – | R004, R006 |
+| D10 | D1/D2 remainders with a stronger 2-level solver (incremental CaDiCaL proposer, kissat checks, stabilizer symmetry breaking) | open | 1×5 | |
+| D11 | colour-forcing rigidity gadgets (K5/K4 sharing patterns; non-topological, non-counting obstructions) | open | 1×5 | |
 
 ## Proof
 | id | node | status | rank | rounds |
@@ -25,6 +27,9 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | P2 | constant-width bodies: extend the smooth / centrally symmetric / revolution / belt cases | dead | – | R004, R006 |
 | P3 | reduction to finitely many configurations + exact computation (= P5's method) | dead | – | R006 |
 | P4 | topological (Lyusternik–Schnirelmann, genus, equivariant maps) | dead | – | R001, R004, R006 |
+| P6 | case analysis by contact type (3, 4, 5 contacts) with explicit 5-partitions of the all-contact outer bodies Ω = B(0,√ρ) ∩ ⋂ B(pᵢ,1) | active | 2×5 | |
+| P7 | analytic large-r argument: contact-aligned cones/power cells + moment bound M ⪯ (1/2 − r)I (Chalmers/ABPR Lemma 6) | open | 2×5 | |
+| P8 | fast C certifier + adaptive branch-and-bound that adds contacts only where the 3-contact form is near-critical | open | 2×5 | |
 
 ## Rounds
 | round | node | verdict |
