@@ -33,7 +33,7 @@ def points(name, smax):
 
 def sqd(A, B): return (A * A).sum(1)[:, None] + (B * B).sum(1)[None] - 2 * sum(A[:, k, None] * B[None, :, k] for k in range(A.shape[1]))
 
-def solve(P, s, tl=1200):
+def solve(P, s, tl=3600):
     n2 = (P * P).sum(1); L = P[n2 <= s]; m = len(L)
     D = np.empty((m, m), np.int16)
     for i0 in range(0, m, 256): D[i0:i0 + 256] = sqd(L[i0:i0 + 256], L)

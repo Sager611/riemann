@@ -39,7 +39,7 @@ def cegar(m, U, V, BAD, tl=1800, root=0):
     idx = np.flatnonzero(alive); loc = -np.ones(m, int); loc[idx] = np.arange(len(idx))
     keep = alive[U] & alive[V]; U, V = loc[U[keep]].astype(np.int32), loc[V[keep]].astype(np.int32)
     BAD = BAD[np.ix_(idx, idx)]; m = len(idx); r0 = int(loc[root])
-    A = Solver(name='g4'); A.add_clause([r0 + 1])
+    A = Solver(name='cd153'); A.add_clause([r0 + 1])
     bi, bj = np.nonzero(np.triu(BAD, 1))
     for a, b in zip(bi.tolist(), bj.tolist()): A.add_clause([-(a + 1), -(b + 1)])
     nxt = m + 1; t0 = time.time(); it = 0; col = None
@@ -93,7 +93,7 @@ def cegar_forced(m, U, V, BAD, r0, y0, tl=600):
     idx = np.flatnonzero(alive); loc = -np.ones(m, int); loc[idx] = np.arange(len(idx))
     keep = alive[U] & alive[V]; U, V = loc[U[keep]].astype(np.int32), loc[V[keep]].astype(np.int32)
     BAD = BAD[np.ix_(idx, idx)]; m = len(idx); r0, y0 = int(loc[r0]), int(loc[y0])
-    A = Solver(name='g4'); A.add_clause([r0 + 1]); A.add_clause([y0 + 1])
+    A = Solver(name='cd153'); A.add_clause([r0 + 1]); A.add_clause([y0 + 1])
     bi, bj = np.nonzero(np.triu(BAD, 1))
     for a, b in zip(bi.tolist(), bj.tolist()): A.add_clause([-(a + 1), -(b + 1)])
     nxt = m + 1; t0 = time.time(); it = 0
