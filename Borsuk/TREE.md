@@ -34,4 +34,4 @@ Status: open | active | dead (one line in NOGO.md). Rank = chance × payoff (1�
 | R003 | P5: obstructions in H(u) | no clique, topological or volume obstruction; 40k-point far graph of the hardest-looking H(u) 5-colourable |
 | R004 | root: new routes + regular-simplex case | no new route; sets containing a regular unit simplex split into 5 (0.874) |
 | R005 | D1, D2: exhaustive colouring checks | see file |
-| R006 | P5 barrier; P1–P4, D4b, D5, D7, D9 | β₅(H(1,0,0,0)) ≥ 0.9699 certified; all dead |
+| R006 | P5 barrier; P1–P4, D4b, D5, D7, D9 | β₅(H(1,0,0,0)) ≥ 0.9849 certified; all dead |

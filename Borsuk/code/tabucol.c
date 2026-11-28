@@ -1,15 +1,16 @@
 // tabucol.c: k-colouring by tabu search (Hertz & de Werra).  Input (stdin, binary): int32 n, int32 m, int32 k, int32 iters,
-// int32 seed, n x int32 initial colours, m x (int32 u, int32 v).  Output (stdout, binary): int32 conflicts, n x int32 colours.
+// int32 seed, int32 hasfrozen, n x int32 initial colours, [n x int32 frozen flags], m x (int32 u, int32 v).  Output (stdout, binary): int32 conflicts, n x int32 colours.
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 static unsigned long long rs = 88172645463325252ULL;
 static unsigned rnd(void) { rs ^= rs << 13; rs ^= rs >> 7; rs ^= rs << 17; return (unsigned)(rs >> 11); }
 int main(void) {
-  int h[5]; if (fread(h, 4, 5, stdin) != 5) return 1;
+  int h[6]; if (fread(h, 4, 6, stdin) != 6) return 1;
   int n = h[0], m = h[1], k = h[2], iters = h[3]; rs ^= (unsigned long long)h[4] * 2654435761ULL;
   int *col = malloc(4 * (size_t)n), *U = malloc(4 * (size_t)m), *V = malloc(4 * (size_t)m);
   if (fread(col, 4, n, stdin) != (size_t)n) return 1;
+  int *frz = calloc(n, 4); if (h[5] && fread(frz, 4, n, stdin) != (size_t)n) return 1;
   for (int e = 0; e < m; e++) { int uv[2]; if (fread(uv, 4, 2, stdin) != 2) return 1; U[e] = uv[0]; V[e] = uv[1]; }
   int *deg = calloc(n + 1, 4), *ptr = malloc(4 * (size_t)(n + 1)), *nbr = malloc(8 * (size_t)m);
   for (int e = 0; e < m; e++) { deg[U[e]]++; deg[V[e]]++; }
@@ -23,7 +24,7 @@ int main(void) {
   for (long long it = 0; it < iters && conf > 0; it++) {
     int bd = 1 << 30, bv = -1, bc = -1, cnt = 0;
     for (int v = 0; v < n; v++) {
-      int g = gam[(size_t)v * k + col[v]]; if (!g) continue;
+      int g = gam[(size_t)v * k + col[v]]; if (!g || frz[v]) continue;
       for (int c = 0; c < k; c++) { if (c == col[v]) continue;
         int d = gam[(size_t)v * k + c] - g;
         if (tabu[(size_t)v * k + c] > it && !(conf + d < best)) continue;

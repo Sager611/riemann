@@ -11,6 +11,7 @@ import numpy as np
 from pysat.solvers import Solver
 sys.path.insert(0, 'Borsuk/.scratch')
 from tabu import colour_tabu
+sys.path.insert(0, 'Borsuk/code'); import cegar as cg
 
 def points(name, smax):
     if name in ('Z4', 'D4'):
@@ -42,39 +43,11 @@ def solve(P, s, tl=1200):
         col, c = colour_tabu(m, U, V, 5, iters=400000 * sd, seed=sd)
         if c == 0:
             assert (col[U] != col[V]).all(); return {'s': int(s), 'L': m, 'edges': len(U), 'res': 'tabu'}
-    # CEGAR (selection of compatible S containing 0 = index 0)
-    bad = np.triu(D > s, 1); A = Solver(name='g4'); A.add_clause([1])
-    for a, b in zip(*np.nonzero(bad)): A.add_clause([-(int(a) + 1), -(int(b) + 1)])
-    compat = ~(bad | bad.T); adj = [[] for _ in range(m)]
-    for a, b in zip(U.tolist(), V.tolist()): adj[a].append(b); adj[b].append(a)
-    nxt = m + 1; t0 = time.time(); it = 0
-    while True:
-        it += 1
-        if time.time() - t0 > tl: return {'s': int(s), 'L': m, 'res': 'TIMEOUT', 'iters': it}
-        if not A.solve(): return {'s': int(s), 'L': m, 'edges': len(U), 'res': 'CEGAR UNSAT (dead)', 'iters': it}
-        mod = A.get_model(); inS = np.zeros(m, bool); inS[[v for v in range(m) if mod[v] > 0]] = True
-        for v in np.random.default_rng(it).permutation(m):
-            if not inS[v] and compat[v, inS].all(): inS[v] = True
-        S = np.flatnonzero(inS); idx = -np.ones(m, int); idx[S] = np.arange(len(S))
-        sel = inS[U] & inS[V]; Us, Vs = idx[U[sel]].astype(np.int32), idx[V[sel]].astype(np.int32)
-        col = np.zeros(len(S), int) if len(Us) == 0 else None
-        for sd in range(1, 4):
-            if col is not None: break
-            c_, conf = colour_tabu(len(S), Us, Vs, 5, iters=300000 * sd, seed=sd)
-            if conf == 0: col = c_
-        if col is None:
-            return {'s': int(s), 'L': m, 'res': 'CANDIDATE (tabu failed on compatible S)', 'S': L[S].tolist()}
-        full = -np.ones(m, int); full[S] = col
-        for v in range(m):
-            if full[v] < 0:
-                cnt = np.zeros(5, int)
-                for w in adj[v]:
-                    if full[w] >= 0: cnt[full[w]] += 1
-                full[v] = int(np.argmin(cnt))
-        cl = []
-        for e in np.flatnonzero(full[U] == full[V]):
-            y = nxt; nxt += 1; A.add_clause([-y, int(U[e]) + 1]); A.add_clause([-y, int(V[e]) + 1]); cl.append(y)
-        A.add_clause(cl)
+    BAD = D > s
+    res = cg.cegar(m, U, V, BAD, tl=tl, root=0)
+    out = {'s': int(s), 'L': m, 'edges': len(U), 'res': 'CEGAR ' + res[0]}
+    if res[0] == 'CANDIDATE': out['S'] = L[res[1]].tolist()
+    return out
 
 if __name__ == '__main__':
     name, smax = sys.argv[1], int(sys.argv[2]); P = points(name, smax)
